@@ -1,6 +1,14 @@
 
-### 配置git (git config)
+### 背景
 
+|标号|含义|英文|
+|:---|---:|:---:|
+|<1>|工作目录/工作区  | Working Directory/workplace | 
+|<2>|暂存区域/索引    | Staging Area/index |
+|<3>|git仓库/本地仓库 | .git Directory/repository |
+|<4>|远端(仓库)|remote(repository)|
+
+### 配置git (git config)
 ```
 设置用户名
 git config --global user.name "Scott Chacon"
@@ -15,8 +23,8 @@ git clone address
 git init
 ```
 
-### 比较版本差异 (git diff)
 
+### 比较版本差异 (git diff)
 ```
 git diff //比较工作区和暂存区，也就是<1>和<2>
 
@@ -31,6 +39,7 @@ git diff HEAD^ HEAD
 http://blog.csdn.net/gw569453350game/article/details/46998395
 
 
+
 ### 更改提交
 ```
 git commit --amend
@@ -39,6 +48,7 @@ git commit --amend
 
 <<Git 的 commit message 写错了，有办法进行修改么？>>
 https://segmentfault.com/q/1010000000761908
+
 
 
 ### 撤销工作区和暂存区的修改
@@ -56,6 +66,8 @@ git rm --cached file //去除已加入追踪的file。此外，git rm -f file是
 ```
 
 PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。
+
+
 
 ### gitignore文件忽略
 
@@ -83,8 +95,6 @@ PS：切换分支（在未冲突的情况下），untracked文件，工作区和
 http://www.cnblogs.com/kevingrace/p/5690241.html
 
 
-
-
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
 ----------------------------------------------------------------------------------------------------
@@ -94,3 +104,11 @@ http://www.yangzhiping.com/tech/github.html
 
 <<图解Git>>
 https://my.oschina.net/xdev/blog/114383
+
+### 阮一峰git系列
+
+<<常用 Git 命令清单>>
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+
+<<Git远程操作详解>>
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html
