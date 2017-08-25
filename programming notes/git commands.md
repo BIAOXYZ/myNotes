@@ -32,6 +32,11 @@ git clone address
 git init
 ```
 
+配置密钥等：
+
+<<git/github初级运用自如>>
+https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
+
 
 ### 比较版本差异 (git diff)
 ```
