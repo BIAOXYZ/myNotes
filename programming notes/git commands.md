@@ -3,9 +3,9 @@
 
 |标号|含义|英文|
 |:---|---:|:---:|
-|<1>|工作目录/工作区  | Working Directory/workplace | 
-|<2>|暂存区域/索引    | Staging Area/index |
-|<3>|git仓库/本地仓库 | .git Directory/repository |
+|<1>|工作目录 / 工作区  | Working Directory / workspace | 
+|<2>|暂存区域 / 索引    | Staging Area / index |
+|<3>|git仓库 / 本地仓库 | .git Directory / local repository |
 |<4>|远端(仓库)|remote(repository)|
 
 ### 配置git (git config)
