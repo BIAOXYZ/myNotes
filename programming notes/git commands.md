@@ -8,6 +8,15 @@
 |<3>|git仓库 / 本地仓库 | .git Directory / local repository |
 |<4>|远端(仓库)|remote(repository)|
 
+这两种叫法的出处分别如下:
+
+<<Pro Git 第二版 简体中文: Git 基础>>之"三种状态"部分
+https://bingohuang.gitbooks.io/progit2/content/01-introduction/sections/basics.html
+
+<<git: 提交前查看修改 git diff，HEAD^, HEAD~i>>
+http://blog.csdn.net/gw569453350game/article/details/46998395
+
+
 ### 配置git (git config)
 ```
 设置用户名
@@ -35,8 +44,7 @@ git diff HEAD //比较工作区和本地仓库，也就是<1>和<3>
 git diff HEAD^ HEAD
 ```
 
-<<git: 提交前查看修改 git diff，HEAD^, HEAD~i>>
-http://blog.csdn.net/gw569453350game/article/details/46998395
+[<<git: 提交前查看修改 git diff，HEAD^, HEAD~i>>](http://blog.csdn.net/gw569453350game/article/details/46998395)
 
 
 
