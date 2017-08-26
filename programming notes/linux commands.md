@@ -27,8 +27,14 @@ ctrl + z, fg, ctrl + z, fg, ...
 diff file1 file2 -y -W 200 > differencefile
 
 
-# 查看网卡信息
+### 查看网卡信息
 /sbin/ifconfig
+
+
+## 非通用类
+
+### 查看core_dump文件的位置
+vi /proc/sys/kernel/core_pattern
 
 ----------------------------------------------------------------------------------------------------
 # 2.vim part：
