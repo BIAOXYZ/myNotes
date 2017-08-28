@@ -7,8 +7,12 @@
 ### ps
 ps ufx
 
-### mv
+## mv
+
+### 这个可以用来重命名
 mv source destination
+
+### 移动多个文件到一个目的地，此时需要把destination放到前面
 mv -t destination source1 source2 ...
 
 ### mkdir
