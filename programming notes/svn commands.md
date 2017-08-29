@@ -10,12 +10,13 @@ svn log -r {2017-08-21}:{2017-08-28}
 http://blog.csdn.net/xuanwenchao/article/details/8875103
 
 
-## svn的patch(顺便包含了git的)
+## svn patch
+
 ### svn 及git patch文件使用
 
-使用svn command 生成和应用patch文件
+#### 使用svn command 生成和应用patch文件
 
-1)       生成patch文件
+1)生成patch文件
 
 在当前目录下用命令生成patch文件。
 
@@ -28,8 +29,7 @@ svn diff . > xxxx.patch
 用svn diff file1 … fileN > xxxx.patch生成file1 … fileN的patch
 
  
-
-2)       应用patch 文件 
+2)应用patch 文件 
 
 svn patch patchfile [path]
 
@@ -44,8 +44,7 @@ Apply a unidiff patch in PATCHFILE to the working copy WCPATH.
   If WCPATH is omitted, '.' is assumed.
 
  
-
-3)       代码已经提交过，怎么用命令生成patch文件?
+3)代码已经提交过，怎么用命令生成patch文件?
 
 如提交的revision号为 rev1
 
@@ -56,7 +55,7 @@ svn log . --diff -r rev1 > xxxx.patch  #查看详细diff信息  #类似git log -
 
 
  
-使用tortoiseSVN GUI生成及应用patch文件
+#### 使用tortoiseSVN GUI生成及应用patch文件
 
 
 1) 创建patch方法——
@@ -70,7 +69,6 @@ svn log . --diff -r rev1 > xxxx.patch  #查看详细diff信息  #类似git log -
 四、起一个名字，选择一个路径保存下来。
 
 
-
 2) 应用patch方法——
 
 一、在要同步的目的工程里面右键，apply patch
@@ -80,15 +78,12 @@ svn log . --diff -r rev1 > xxxx.patch  #查看详细diff信息  #类似git log -
 三、确定即可，然后你的修改就全部被同步到了目的工程里面来了。
 
  
-
 PS:生成patch的文件路径和apply patch的patch文件路径应该在同一级目录，否则会出错。
 
 
+#### git patch文件使用
 
- 
-git patch文件使用
-
-1)       生成patch文件
+1)生成patch文件
 
 git diff > xxx.patch
 
@@ -96,7 +91,7 @@ git diff --cached > patch  #只生成stage的文件的patch（即git add之后�
 
  
 
-2)      应用patch文件
+2)应用patch文件
 
 git apply --check patch   #查看能否patch 成功，不应用
 
@@ -104,7 +99,7 @@ git apply patch  应用patch
 
  
 
-3)    git提交后生成patch文件：
+3)git提交后生成patch文件：
 
 git format-patch -n  节点N  [-M branch]  #-n  表示生成提交节点最近n次提交，一般选取n=1，可生成当前提交节点的patch文件， [-M branch 表示与哪个分支比对]
 
