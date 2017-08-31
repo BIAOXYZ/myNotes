@@ -15,11 +15,19 @@ mv source destination
 ### 移动多个文件到一个目的地，此时需要把destination放到前面
 mv -t destination source1 source2 ...
 
-### mkdir
-mkdir dir
+## cp
+
+### 复制多个文件到一个目的地
+cp -r source destination
+
+## mkdir
+
+### 递归创建目录
 mkdir -p dir1/dir2/dir3/...
 
-### 查找类
+
+
+## 查找类
 find dir -name filename
 
 grep -n -r "string" dir
