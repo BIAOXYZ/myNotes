@@ -66,3 +66,15 @@ http://blog.sina.com.cn/s/blog_545f2b4701010t8i.html
 
 <<yum与rpm、apt的区别：rpm的缺陷及yum的优势>>
 http://www.aboutyun.com/thread-9226-1-1.html
+
+linux里目录有空格的时候得用反斜杠加空格才能进去
+```
+SZX1000126633:/home/liuliang/svndir # ll
+total 8
+drwxr-xr-x 2 root root 4096 Aug 31 15:26 svn on linux
+drwxr-xr-x 2 root root 4096 Aug 31 15:24 svnonlinux
+SZX1000126633:/home/liuliang/svndir # cd svn
+svn on linux/ svnonlinux/   
+SZX1000126633:/home/liuliang/svndir # cd svn\ on\ linux/
+SZX1000126633:/home/liuliang/svndir/svn on linux # 
+```
