@@ -1,5 +1,7 @@
 
+# PostgreSQL
 
+<<The Internals of PostgreSQL: for database administrators and system developers>>
 http://www.interdb.jp/pg/
 
 
@@ -17,3 +19,6 @@ http://bbs.csdn.net/topics/320169443
 
 <<oracle 体系结构 >>
 http://blog.csdn.net/wanghai__/article/details/4683983
+
+<<Oracle表空间（tablespaces）>>
+http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
