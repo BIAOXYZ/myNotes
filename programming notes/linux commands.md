@@ -49,8 +49,11 @@ diff file1 file2 -y -W 200 > differencefile
 ### 查看数据库core_dump文件的位置
 vi /proc/sys/kernel/core_pattern
 
-
-
+### Xshell自动断连
+在 /etc/profile 末尾加上 
+```
+export TMOUT=0
+```
 
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
