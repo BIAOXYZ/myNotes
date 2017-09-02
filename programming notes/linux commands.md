@@ -35,7 +35,8 @@ grep -n -r "string" dir
 
 ctrl + z, fg, ctrl + z, fg, ...
 
-### -y 是以并列方式显示; -W 指定宽度
+## diff
+### diff参数-y 是以并列方式显示; -W 指定宽度
 diff file1 file2 -y -W 200 > differencefile
 
 
@@ -54,6 +55,22 @@ vi /proc/sys/kernel/core_pattern
 ```
 export TMOUT=0
 ```
+
+### 删除除了某个特定文件外的文件
+
+http://jingyan.baidu.com/article/e75aca851ff15c142fdac64c.html
+
+
+在test文件夹下有1.tt、1.png、index.html，现在要删除除1.tt之外的所有文件，则可以编写如下脚本：
+
+for i in `ls`;do if [ "$i" != 1.tt ];then rm -rf $i;fi;done;
+
+或者用find命令(两个都可以，第二个好像更好点)
+
+find . -not -name "1.tt" -exec rm -rf {} \;
+
+find . -not -name "1.tt" | xargs rm -rf
+
 
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
