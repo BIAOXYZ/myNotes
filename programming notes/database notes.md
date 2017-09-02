@@ -3,13 +3,13 @@
 
 ### 关于postgresql.auto.conf文件
 
-<<PostgreSQL9.4: 新增 ALTER SYSTEM 命令>>
+<<PostgreSQL9.4: 新增 ALTER SYSTEM 命令>> by francs
 
 http://francs3.blog.163.com/blog/static/4057672720144194492582/
 
 ## books
 
-<<The Internals of PostgreSQL - for database administrators and system developers>>
+<<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
 
 http://www.interdb.jp/pg/
 
