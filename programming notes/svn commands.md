@@ -31,7 +31,7 @@ svn diff . > xxxx.patch
  
 2)应用patch 文件 
 
-svn patch patchfile [path]
+svn patch patchfile [path]   {补：旧版svn应用patch的命令：patch -p0 < aaa.patch}
 
 查看说明：# svn patch –help
 
