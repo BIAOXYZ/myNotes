@@ -71,6 +71,11 @@ find . -not -name "1.tt" -exec rm -rf {} \;
 
 find . -not -name "1.tt" | xargs rm -rf
 
+PS: 查找多个时可以考虑-o选项或正则表达式，而且-name选项似乎也可以多次使用
+
+http://dingding830106.blog.163.com/blog/static/35119170201482383419925/
+
+http://blog.csdn.net/pcyph/article/details/41683383
 
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
