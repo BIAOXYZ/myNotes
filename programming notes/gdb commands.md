@@ -6,9 +6,11 @@ handle all nostop // 应该是这句？
 
 一个小技巧，大家在gdb调试mppdb时，总需要屏蔽信号：
 可以这样让gdb每次自动加载这个屏蔽功能，不用每次自己输入
+```
 alias gdb="gdb -x ~/.gdbinit"
 wangct@linux207:~> cat ~/.gdbinit 
 handle SIGUSR2 noprint nostop
+```
 
 ```
 save breakpoints bps.cfg
@@ -34,3 +36,9 @@ off: gdb将控制父进程和子进程。follow-fork-mode指定的进程将被�
 ```
 set scheduler-locking on
 ```
+
+
+其他参考链接：
+
+<<gdb学习笔记(一)>>
+http://simohayha.iteye.com/blog/493091
