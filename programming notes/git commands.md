@@ -41,11 +41,8 @@ https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 ### 比较版本差异 (git diff)
 ```
 git diff //比较工作区和暂存区，也就是<1>和<2>
-
 git diff --cached //比较暂存区和本地仓库，也就是<2>和<3>
-
 git diff HEAD //比较工作区和本地仓库，也就是<1>和<3>
-
 git diff HEAD^ HEAD
 ```
 
@@ -78,8 +75,16 @@ https://my.oschina.net/xdev/blog/114383 （以上那俩可以参照这个页面�
 git rm --cached file //去除已加入追踪的file。此外，git rm -f file是连file都直接删除了
 ```
 
-PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。
+*PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。*
 
+```
+git clean -xdf命令待完成
+```
+<<git如何删除本地所有未提交的更改>>
+https://www.v2ex.com/t/66718
+
+<<Git常用的撤销操作>>
+http://www.netpi.me/uncategorized/gitrevoke/
 
 
 ### gitignore文件忽略
