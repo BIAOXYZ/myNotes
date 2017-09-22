@@ -10,6 +10,9 @@ http://francs3.blog.163.com/blog/static/4057672720144194492582/
 <<postgresql之ctid的浅谈>>
 http://www.cnblogs.com/lottu/p/5613098.html
 
+<<PostgreSQL的autovacuum 与 vacuum full>> by 技术者高健
+http://www.cnblogs.com/gaojian/p/3272620.html
+
 ## books
 
 <<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
