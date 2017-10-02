@@ -16,7 +16,15 @@ http://www.cnblogs.com/woxing/articles/3427131.html
 << linux使用脚本杀死指定名称的进程 [问题点数：40分，结帖人mervyn807] >>
 http://bbs.csdn.net/topics/360151075
 
-*自己改进了一个*
+```
+#!/bin/sh
+ps -ef|grep -v grep|grep postgres|while read u p o
+do
+kill -9 $p
+done 
+```
+
+**自己改进了一个**
 ```
 #!/bin/sh
 
