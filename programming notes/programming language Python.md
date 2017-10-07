@@ -13,5 +13,5 @@ func(3,c= 5,b = 6)
 func(c= 5,b = 6,3)   #错误写法，报错
 #SyntaxError: positional argument follows keyword argument
 ```
-<<ython学习笔记-函数基础>>
+<<Python学习笔记-函数基础>>
 http://www.cnblogs.com/dukeidea/p/6396980.html
