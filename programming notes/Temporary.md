@@ -1,4 +1,6 @@
 
-"unbound method __init__() must be called with"
+About CRC:
 
-unbound method __init__() must be called with ParallelCommand instance as first argument (got ResourceControl instance instead)
+http://blog.csdn.net/authorlcy/article/details/39941521
+
+https://stackoverflow.com/questions/12428575/multiple-small-crc-checks-or-a-single-large-crc-check
