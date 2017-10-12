@@ -43,3 +43,23 @@ http://blog.csdn.net/wanghai__/article/details/4683983
 
 <<Oracle表空间（tablespaces）>>
 http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
+
+
+# 一般性的
+
+## 事务
+
+### 两阶段提交
+
+http://blog.jobbole.com/95632/
+
+https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
+
+## 并发管理
+
+### 两阶段锁
+
+https://www.cnblogs.com/zszmhd/p/3365220.html
+
+
+https://www.2cto.com/database/201403/286730.html
