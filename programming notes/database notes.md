@@ -13,11 +13,17 @@ http://www.cnblogs.com/lottu/p/5613098.html
 <<PostgreSQL的autovacuum 与 vacuum full>> by 技术者高健
 http://www.cnblogs.com/gaojian/p/3272620.html
 
+### coredump文件
+
+<<详解coredump>>
+http://blog.csdn.net/tenfyguo/article/details/8159176
+
 ## books
 
 <<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
 
 http://www.interdb.jp/pg/
+
 
 
 # Oracle
