@@ -1,5 +1,12 @@
 
 
+## svn 一般使用
+
+<<linux svn 使用>>
+http://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076783.html
+
+
+
 ## svn log
 
 ### 查看某一时间段的svn log
