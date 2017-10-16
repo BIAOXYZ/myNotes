@@ -100,6 +100,13 @@ http://blog.csdn.net/pcyph/article/details/41683383
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
 ----------------------------------------------------------------------------------------------------
+
+<<每天一个linux命令>>
+http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
+
+<<Linux命令大全>>之kill
+http://man.linuxde.net/kill
+
 <<shell基础十二篇>>
 http://www.cnblogs.com/woxing/articles/3427131.html
 
