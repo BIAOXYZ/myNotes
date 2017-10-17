@@ -16,6 +16,11 @@ http://www.cnblogs.com/gaojian/p/3272620.html
 http://blog.itpub.net/22818880/viewspace-1966636/
 
 
+# PGXC
+
+<<PGXC两阶段提交与事务一致性（1）>>
+http://www.cnblogs.com/databaseaffair/p/6864070.html
+
 # Oracle
 
 
