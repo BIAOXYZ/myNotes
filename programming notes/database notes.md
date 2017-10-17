@@ -63,3 +63,18 @@ https://www.cnblogs.com/zszmhd/p/3365220.html
 
 
 https://www.2cto.com/database/201403/286730.html
+
+## 索引
+
+<<深入 聚集索引与非聚集索引(一)>>
+http://www.cnblogs.com/lwzz/archive/2012/08/05/2620824.html
+
+<<聚集索引和非聚集索引（整理）>>
+http://www.cnblogs.com/aspnethot/articles/1504082.html
+
+<<唯一性索引（Unique Index）与普通索引（Normal Index）差异（上）>>
+http://blog.itpub.net/17203031/viewspace-700089/
+
+
+
+
