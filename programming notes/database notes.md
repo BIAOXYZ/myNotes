@@ -100,3 +100,6 @@ http://blog.itpub.net/17203031/viewspace-700089/
 
 <<对PostgreSQL中 pg_各表的RelationId的认识>> by 健哥的数据花园
 http://www.cnblogs.com/gaojian/p/3169560.html
+
+<<PostgreSQL建表动作分析>> by 健哥的数据花园
+http://www.cnblogs.com/gaojian/archive/2013/07/05/3171433.html
