@@ -7,12 +7,26 @@
 
 http://francs3.blog.163.com/blog/static/4057672720144194492582/
 
+### ctid
+
 <<postgresql之ctid的浅谈>>
 http://www.cnblogs.com/lottu/p/5613098.html
+
+
+### pg_depend
+
+http://blog.csdn.net/prettyshuang/article/details/49638641
+
+http://blog.csdn.net/yibei8811/article/details/46623253
+
+
+
+### vacuum
 
 <<PostgreSQL的autovacuum 与 vacuum full>> by 技术者高健
 http://www.cnblogs.com/gaojian/p/3272620.html
 
+<<PostgreSQL的information_schema>>
 http://blog.itpub.net/22818880/viewspace-1966636/
 
 
@@ -82,5 +96,7 @@ http://www.cnblogs.com/aspnethot/articles/1504082.html
 http://blog.itpub.net/17203031/viewspace-700089/
 
 
+###
 
-
+<<对PostgreSQL中 pg_各表的RelationId的认识>> by 健哥的数据花园
+http://www.cnblogs.com/gaojian/p/3169560.html
