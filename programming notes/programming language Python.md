@@ -26,3 +26,6 @@ __bases__ : 类的所有父类构成元素（包含了一个由所有父类组�
 ```
 <<Python基础教程 --> Python 面向对象 --> Python内置类属性>>
 http://www.runoob.com/python/python-object.html
+
+<<Python中的作用域及global用法>>
+http://www.cnblogs.com/summer-cool/p/3884595.html
