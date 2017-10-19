@@ -26,6 +26,8 @@ http://blog.csdn.net/yibei8811/article/details/46623253
 <<PostgreSQL的autovacuum 与 vacuum full>> by 技术者高健
 http://www.cnblogs.com/gaojian/p/3272620.html
 
+### information_schema
+
 <<PostgreSQL的information_schema>>
 http://blog.itpub.net/22818880/viewspace-1966636/
 
