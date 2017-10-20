@@ -32,6 +32,13 @@ http://www.cnblogs.com/gaojian/p/3272620.html
 http://blog.itpub.net/22818880/viewspace-1966636/
 
 
+```
+select * from information_schema.tables where table_schema='public';
+```
+<<查询schema下面所有表>>
+http://blog.csdn.net/chang1976272446/article/details/75050383
+
+
 # PGXC
 
 <<PGXC两阶段提交与事务一致性（1）>>
