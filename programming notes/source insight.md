@@ -8,3 +8,6 @@ Option --> Preferences --> Colors --> Window Background
 
 <<Source Insight如何改变背景颜色>>
 http://www.360doc.com/content/14/0531/20/12144668_382602527.shtml
+
+<<Source insight标题栏中路径显示完整路径的方法>>
+http://www.cnblogs.com/zhuyijie/p/6465765.html
