@@ -130,3 +130,6 @@ svn on linux/ svnonlinux/
 SZX1000126633:/home/liuliang/svndir # cd svn\ on\ linux/
 SZX1000126633:/home/liuliang/svndir/svn on linux # 
 ```
+
+<<linux运维常用命令一句话（持续更新中）>>
+http://www.linuxde.net/2011/09/721.html
