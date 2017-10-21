@@ -133,3 +133,6 @@ SZX1000126633:/home/liuliang/svndir/svn on linux #
 
 <<linux运维常用命令一句话（持续更新中）>>
 http://www.linuxde.net/2011/09/721.html
+
+<<Linux最常用命令及快捷键整理>>
+http://www.cnblogs.com/wqsbk/p/5649037.html
