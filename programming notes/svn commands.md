@@ -145,3 +145,31 @@ git diff comit_id_start commit_id_end
 
 查看某个区间的提交diff 
 
+
+## svn 统计代码行数
+
+使用方法：
+
+1. 正常 checkout 需要统计的svn的代码，此路径为记作：svn_code_local_path
+
+2. 解压缩附件的 statsvn-0.7.0.zip 得到statsvn.jar
+
+3. 收集提交记录
+
+ svn log -r {2014-9-15}:{2014-10-8} --xml -v svn_code_local_path > svn.log
+
+4. 统计代码修改量：
+
+java -jar statsvn.jar svn.log svn_code_local_path
+
+5. 当前目录下产生一堆文件，直接打开index.html 即可查看。
+
+打开developers.html 可以查看按提交作者统计。
+
+注意：所谓的"当前目录"是指在dos命令行里的目录。
+```
+svn log -r {2017-7-15}:{2017-10-26} --xml -v D:\mySyncFiles\20170831_ap_onlineexpansion > D:\LLchromedownload\statsvnlogs\20171026\svn.log
+
+java -jar D:\LLchromedownload\statsvn-0.7.0\statsvn.jar D:\LLchromedownload\statsvnlogs\20171026\svn.log D:\mySyncFiles\20170831_ap_onlineexpansion
+```
+
