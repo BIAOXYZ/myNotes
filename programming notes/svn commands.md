@@ -147,6 +147,7 @@ git diff comit_id_start commit_id_end
 
 
 ## svn 统计代码行数
+### windows下
 
 使用方法：
 
@@ -164,9 +165,15 @@ java -jar statsvn.jar svn.log svn_code_local_path
 
 5. 当前目录下产生一堆文件，直接打开index.html 即可查看。
 
-打开developers.html 可以查看按提交作者统计。
-
-注意：所谓的"当前目录"是指在dos命令行里的目录。
+打开developers.html 可以查看按提交作者统计。或者index.html查看综合统计结果。
+```
+注意：所谓的"当前目录"是指在dos命令行里执行命令的目录。需要安装 svn.exe 且其路径要在PATH环境变量中配置。
+优点：
+StatSVN会把当前SVN库的状态用图片和图表的方式展现出来，可以按不同分类分别展开，功能强大。
+缺点：
+StatSVN统计的是所有代码行，包括注释和空行，但一般度量要求是有效代码行，在分析时需要注意这一点。
+StatSVN不考虑修改的代码行数，只考虑与上一版本相比新增(+)与删除(-)的代码行数。
+```
 ```
 svn log -r {2017-7-15}:{2017-10-26} --xml -v D:\mySyncFiles\20170831_ap_onlineexpansion > D:\LLchromedownload\statsvnlogs\20171026\svn.log
 
