@@ -5,7 +5,8 @@
 <<linux svn 使用>>
 http://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076783.html
 
-
+<<随笔分类 - SVN与TortoiseSVN实战>>
+http://www.cnblogs.com/ym123/category/636508.html
 
 ## svn log
 
