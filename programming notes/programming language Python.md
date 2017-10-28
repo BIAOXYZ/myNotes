@@ -6,12 +6,12 @@
 
 <<pycharm快捷键、常用设置、配置管理>>
 http://blog.csdn.net/pipisorry/article/details/39909057
->
+```
 Ctrl + /    行注释/取消行注释
 Ctrl + Shift + F  或者连续2次敲击shift   全局查找{可以在整个项目中查找某个字符串什么的，如查找某个函数名字符串看之前是怎么使用这个函数的}
 Ctrl + Y 删除当前插入符所在的行
-Ctrl + G    查看当前行号、字符号
-
+Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
+```
 
 # 语法
 
