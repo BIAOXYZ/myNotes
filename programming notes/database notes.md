@@ -1,6 +1,10 @@
 
 # PostgreSQL
 
+![PostgreSQL](https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png)
+
+https://github.com/ty4z2008/Qix/blob/master/pg.md
+
 ### 关于postgresql.auto.conf文件
 
 <<PostgreSQL9.4: 新增 ALTER SYSTEM 命令>> by francs
