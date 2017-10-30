@@ -9,6 +9,7 @@ https://stackoverflow.com/questions/12428575/multiple-small-crc-checks-or-a-sing
 http://blog.csdn.net/wanghai__/article/details/5516938
 
 
+:couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:
 
 http://www.cnblogs.com/gaojian/p/3164792.html
 
@@ -20,3 +21,5 @@ https://www.cnblogs.com/biterror/p/7161631.html
 
 
 http://blog.csdn.net/hunanchenxingyu/article/details/8101795
+
+
