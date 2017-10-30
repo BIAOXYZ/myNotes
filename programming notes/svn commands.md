@@ -10,8 +10,7 @@ http://www.cnblogs.com/ym123/category/636508.html
 
 <<SVN怎样对比历史版本？>>
 https://zhidao.baidu.com/question/265427496.html
->选择右键菜单中的 Show log，出现对话框，选择你想要的特定版本，然后右键-> Compare with working copy搜索
-working copy就是你本地的当前版本。
+>选择右键菜单中的 Show log，出现对话框，选择你想要的特定版本，然后右键-> Compare with working copy。working copy就是你本地的当前版本。
 
 
 ## svn log
