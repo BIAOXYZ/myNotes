@@ -22,4 +22,6 @@ https://www.cnblogs.com/biterror/p/7161631.html
 
 http://blog.csdn.net/hunanchenxingyu/article/details/8101795
 
+<<pthread的pthread_join()函数理解实验>>
+http://blog.csdn.net/dinghqalex/article/details/42921931
 
