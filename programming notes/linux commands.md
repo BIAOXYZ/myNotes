@@ -136,3 +136,33 @@ http://www.linuxde.net/2011/09/721.html
 
 <<Linux最常用命令及快捷键整理>>
 http://www.cnblogs.com/wqsbk/p/5649037.html
+
+<<linux反向搜索执行过的命令>>
+http://blog.csdn.net/rangf/article/details/6399897
+```
+linux命令行的history是一个熟知但不常用的命令，原因是要查某个命令的编号需要输入 history|grep xxx ，
+又因为!?xxx,!xxx 属于运行即执行也不方便，ctrl+r则方便多了。
+
+ctrl+r
+用途：反向搜索执行过的命令。(reverse-i-search)
+
+若对于现有history
+611 ruby foo.rb
+612 ruby bar.rb
+613 ruby fo.rb
+614 ruby ba.rb
+615 ...
+...
+700 ...
+
+在不知道序号的情况下，若要运行ruby foo.rb。
+1、ctrl+r
+2、foo
+或
+1、ctrl+r
+2、fo
+3、ctrl+r (继续反向搜索)
+只需要寥寥几键。当然若仅是上几个命令还是[上]键更有效率
+```
+
+
