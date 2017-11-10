@@ -51,6 +51,10 @@ http://blog.csdn.net/zdy0_2004/article/details/53106260
 <<postgresql----TEMPORARY TABLE和UNLOGGED TABLE>>
 https://www.cnblogs.com/alianbog/p/5605068.html
 
+## PG存储
+
+<<数据库系统概念笔记之存储和文件系统及PostgreSQL实现>>
+http://www.postgres.cn/news/viewone/1/220
 
 # PGXC
 
