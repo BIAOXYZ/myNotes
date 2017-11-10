@@ -129,3 +129,7 @@ http://www.cnblogs.com/gaojian/p/3169560.html
 
 <<PostgreSQL建表动作分析>> by 健哥的数据花园
 http://www.cnblogs.com/gaojian/archive/2013/07/05/3171433.html
+
+<<>>
+http://beigang.iteye.com/blog/1680797
+
