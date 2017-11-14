@@ -25,3 +25,8 @@ http://blog.csdn.net/hunanchenxingyu/article/details/8101795
 <<pthread的pthread_join()函数理解实验>>
 http://blog.csdn.net/dinghqalex/article/details/42921931
 
+
+查看80端口被哪个程序占用
+```
+netstat -anp | grep 80
+```
