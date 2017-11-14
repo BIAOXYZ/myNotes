@@ -41,7 +41,17 @@ diff file1 file2 -y -W 200 > differencefile
 
 
 ### 查看网卡信息
+```
 /sbin/ifconfig
+```
+
+### 查看80端口被哪个程序占用
+```
+netstat -anp | grep 80
+```
+
+<<Linux查看物理CPU个数、核数、逻辑CPU个数>>
+http://www.cnblogs.com/emanlee/p/3587571.html
 
 ### 查看CPU信息
 ```
@@ -60,8 +70,6 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 # 查看CPU信息（型号）
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
-<<Linux查看物理CPU个数、核数、逻辑CPU个数>>
-http://www.cnblogs.com/emanlee/p/3587571.html
 
 ----------------------------------------------------------------------------------------------------
 
