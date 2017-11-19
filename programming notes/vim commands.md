@@ -22,7 +22,7 @@ set nu
 <<vim 常用命令>>
 http://blog.chinaunix.net/uid-20769502-id-112737.html
 ```
-:set hlsearch 高亮显示搜索结果
+:set hlsearch 高亮显示搜索结果 (自己试了下取消高亮显示搜索果然是 :set nohlsearch )
 ```
 
 ### vim显示当前正在编辑的文件名和路径
