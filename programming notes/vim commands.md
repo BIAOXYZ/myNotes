@@ -4,17 +4,32 @@
 
 ## vim一般性命令
 
-### vim设置和取消显示行号
+### 设置类命令
+
+#### vim设置和取消显示行号
+```
 :set nu  
 :set nonu
+```
 
 ```
 最好的办法是直接修改/etc/vimrc文件，在末尾添加
 set nu
 ```
 
+#### 其他设置类
+
+<<vim 常用命令>>
+http://blog.chinaunix.net/uid-20769502-id-112737.html
+```
+:set hlsearch 高亮显示搜索结果
+```
+
 ### vim显示当前正在编辑的文件名和路径
+```
 :f 或 ctrl+G
+```
+
 ```
 :args 只显示文件名不显示路径
 ```
@@ -32,6 +47,7 @@ u{n}	撤销一次或n次操作
 U(大写)	撤销当前行的所有修改
 Ctrl+r	redo，即撤销undo的操作
 ```
+R 大写R会直接进入REPLACE模式，然后可以方便连续替换
 
 :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:
 
@@ -91,7 +107,7 @@ cw	替换从光标所在位置后到一个单词结尾的字符
 :x	保存并退出
 :wq	保存并退出
 ```
-shift + zz 普通模式下输入Shift+zz即可保存退出vim
+**shift + zz 普通模式下输入Shift+zz即可保存退出vim**
 
 ```
 x	删除游标所在的字符
@@ -140,3 +156,7 @@ ddp 实现了快速交换光标所在行与它下面的行
 
 <<vim常用命令总结>>
 http://www.cnblogs.com/Nice-Boy/p/6124177.html
+
+
+
+
