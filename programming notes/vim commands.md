@@ -2,7 +2,7 @@
 # 1.general vim commands part:
 ----------------------------------------------------------------------------------------------------
 
-### vim一般性命令
+## vim一般性命令
 
 ### vim设置和取消显示行号
 :set nu  
@@ -18,6 +18,23 @@ set nu
 ```
 :args 只显示文件名不显示路径
 ```
+
+### 替换和撤销(Undo)命令
+
+```
+r+<待替换字母>	将游标所在字母替换为指定字母
+R	连续替换，直到按下Esc
+cc	替换整行，即删除游标所在行，并进入插入模式
+cw	替换一个单词，即删除一个单词，并进入插入模式
+C(大写)	替换游标以后至行末
+~	反转游标所在字母大小写
+u{n}	撤销一次或n次操作
+U(大写)	撤销当前行的所有修改
+Ctrl+r	redo，即撤销undo的操作
+```
+
+:couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:
+
 
 ## vim移动命令
 
@@ -48,6 +65,8 @@ F<字母>	向前搜索<字母>并跳转到第一个匹配的位置
 t<字母>	向后搜索<字母>并跳转到第一个匹配位置之前的一个字母(不常用)
 T<字母>	向前搜索<字母>并跳转到第一个匹配位置之后的一个字母(不常用)
 ```
+
+:couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:
 
 ## vim编辑命令
 
@@ -85,6 +104,8 @@ d^	删除至行首
 dG	删除到文档结尾处
 d1G	删至文档首部
 ```
+2dd 删除两行
+d3w 删除三个单词
 
 
 ### 复制及粘贴文本
