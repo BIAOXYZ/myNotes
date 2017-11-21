@@ -3,6 +3,7 @@
 
 http://job.freebuf.com/
 
+http://www.miitjob.cn/
  
 # COMPANY
 
