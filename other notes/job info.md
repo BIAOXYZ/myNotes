@@ -14,6 +14,9 @@ http://www.miitjob.cn/
 技术管理部_技术专家
 http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/2746
 
+安全事业部_大数据挖掘工程师
+http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/320648088
+
 ### Alibaba
 
 蚂蚁金服-数据安全技术专家-信用
