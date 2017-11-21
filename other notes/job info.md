@@ -11,6 +11,9 @@ http://www.miitjob.cn/
 
 ### Baidu
 
+技术管理部_技术专家
+http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/2746
+
 ### Alibaba
 
 蚂蚁金服-数据安全技术专家-信用
