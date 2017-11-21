@@ -15,6 +15,8 @@ https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40205
 22989-金融云区块链高级研发工程师（深圳）
 http://hr.tencent.com/position_detail.php?id=33824
 
+18428-腾讯区块链高级研发工程师(深圳)
+http://hr.tencent.com/position_detail.php?id=30566
 
 SNG11-AI大数据研究员/高级工程师（深圳）
 http://hr.tencent.com/position_detail.php?id=33032
