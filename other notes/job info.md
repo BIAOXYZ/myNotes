@@ -12,8 +12,20 @@ http://job.freebuf.com/
 
 ### Alibaba
 
+蚂蚁金服-数据安全技术专家-信用
+https://job.alibaba.com/zhaopin/position_detail.htm?positionId=43973
+
 蚂蚁金服-密码算法（高级）专家-安全管理部
 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40205
+
+阿里云-信息安全研发专家-企业应用
+https://job.alibaba.com/zhaopin/position_detail.htm?positionId=32696
+
+集团安全-数据安全开发专家／高级专家
+https://job.alibaba.com/zhaopin/position_detail.htm?positionId=42817
+
+蚂蚁金服-开发工程师-安全管理部
+https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40155
 
 ### Tencent
 
