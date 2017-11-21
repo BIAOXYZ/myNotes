@@ -1,7 +1,12 @@
  
-# Company
+# JOB WEBSITE
 
-## giant
+http://job.freebuf.com/
+
+ 
+# COMPANY
+
+## giant (BAT)
 
 ### Baidu
 
@@ -34,18 +39,18 @@ MIG07-系统安全研究员（北京）
 http://hr.tencent.com/position_detail.php?id=25711
 
 
-## challenger
+## challenger ()
 
 
 
-## startup
+## startup (炼石)
 
 密码算法研究员 - 北京炼石网络技术有限公司
 https://www.liepin.com/job/1910643716.shtml
 
  
-# Academic
+# ACADEMIC
 
 
-# State-backed
+# STATE-BACKED
 
