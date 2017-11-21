@@ -17,6 +17,9 @@ http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/2746
 安全事业部_大数据挖掘工程师
 http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/320648088
 
+大数据部_NewSQL系统研发工程师（北京）
+http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/1323972949
+
 ### Alibaba
 
 蚂蚁金服-数据安全技术专家-信用
