@@ -39,16 +39,21 @@ https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
 
 ### 比较版本差异 (git diff)
+
+[<<git: 提交前查看修改 git diff，HEAD^, HEAD~i>>](http://blog.csdn.net/gw569453350game/article/details/46998395)
 ```
 git diff //比较工作区和暂存区，也就是<1>和<2>
 git diff --cached //比较暂存区和本地仓库，也就是<2>和<3>
 git diff HEAD //比较工作区和本地仓库，也就是<1>和<3>
+
 git diff HEAD^ HEAD
 ```
 
-[<<git: 提交前查看修改 git diff，HEAD^, HEAD~i>>](http://blog.csdn.net/gw569453350game/article/details/46998395)
-
-
+<<如何在git中对比当前工作区和远程仓库的区别？>>
+https://www.zhihu.com/question/53601264
+```
+git diff <local branch> <remote>/<remote branch>
+```
 
 ### 更改提交
 ```
