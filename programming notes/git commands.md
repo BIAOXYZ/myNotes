@@ -117,6 +117,13 @@ http://www.netpi.me/uncategorized/gitrevoke/
 <<Git忽略规则.gitignore梳理>>
 http://www.cnblogs.com/kevingrace/p/5690241.html
 
+### git log
+
+<<Git代码行统计命令集>>
+https://segmentfault.com/a/1190000002434755
+```
+提交数统计：git log --oneline | wc -l 
+```
 
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
