@@ -30,3 +30,6 @@ http://blog.csdn.net/dinghqalex/article/details/42921931
 ```
 netstat -anp | grep 80
 ```
+
+<<基于 Raft 构建分布式系统 TiKV>>
+https://toutiao.io/posts/17r5g9/preview
