@@ -42,6 +42,16 @@ select * from information_schema.tables where table_schema='public';
 <<查询schema下面所有表>>
 http://blog.csdn.net/chang1976272446/article/details/75050383
 
+
+```
+select * from INFORMATION_SCHEMA.role_table_grants where grantee='dwetl';
+```
+<<PostgreSQL的权限查询>>
+https://www.cnblogs.com/xiaotengyi/p/5404733.html
+
+
+
+
 <<跟我一起读postgresql源码(二)——Parser(查询分析模块)>>
 http://blog.csdn.net/zdy0_2004/article/details/53106260
 
@@ -51,15 +61,32 @@ http://blog.csdn.net/zdy0_2004/article/details/53106260
 <<postgresql----TEMPORARY TABLE和UNLOGGED TABLE>>
 https://www.cnblogs.com/alianbog/p/5605068.html
 
+### GUC
+
+<<PostgreSQL GUC 参数级别介绍>>
+http://blog.csdn.net/yunqishequ1/article/details/78084592
+
+
+
+
 ## PG存储
 
 <<数据库系统概念笔记之存储和文件系统及PostgreSQL实现>>
 http://www.postgres.cn/news/viewone/1/220
 
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 # PGXC
 
 <<PGXC两阶段提交与事务一致性（1）>>
 http://www.cnblogs.com/databaseaffair/p/6864070.html
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 # Oracle
 
@@ -80,6 +107,9 @@ http://blog.csdn.net/wanghai__/article/details/4683983
 http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 # 一般性的
 
 ### coredump文件
@@ -90,8 +120,8 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
 ## books
 
 <<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
-
 http://www.interdb.jp/pg/
+
 
 ## 事务
 
