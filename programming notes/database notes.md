@@ -84,6 +84,11 @@ http://www.postgres.cn/news/viewone/1/220
 <<PGXC两阶段提交与事务一致性（1）>>
 http://www.cnblogs.com/databaseaffair/p/6864070.html
 
+<<Postgres-XC 1.1 Documentation>>
+http://postgres-xc.sourceforge.net/docs/1_1/index.html
+
+<<PostgreSQL-XC : Data Replication or Distribution ? >>
+http://francs3.blog.163.com/blog/static/4057672720125453315201/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
