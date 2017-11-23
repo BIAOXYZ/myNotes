@@ -4,3 +4,6 @@ http://www.cnblogs.com/clover-toeic/p/3755401.html
 
 <<循环结构中break、continue、return和exit的区别>>
 http://blog.csdn.net/hunanchenxingyu/article/details/8101795
+
+<<C 和 C++ 中的指针>>
+https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
