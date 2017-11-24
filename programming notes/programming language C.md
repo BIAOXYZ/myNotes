@@ -7,3 +7,6 @@ http://blog.csdn.net/hunanchenxingyu/article/details/8101795
 
 <<C 和 C++ 中的指针>>
 https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
+
+<<"undefined reference to" 问题解决方法>>
+http://blog.csdn.net/aiwoziji13/article/details/7330333
