@@ -5,13 +5,17 @@
 
 ### 字节对齐
 
-<<Data structure alignment>>
+<< Data structure alignment >>
 https://en.wikipedia.org/wiki/Data_structure_alignment
-  
 
-http://www.jb51.net/article/36726.htm
+- <<数据对齐详解>> https://www.cnblogs.com/bakari/archive/2012/08/27/2658956.html
+- <<>> http://blog.csdn.net/hemengsi123/article/details/49814881
+- <<>> https://www.cnblogs.com/Qwells/p/5750350.html
+- <<>> http://blog.csdn.net/Microsues/article/details/6140329
+- <<>> https://yq.aliyun.com/articles/10508
 
-http://www.alongsky.com/?p=578
+- <<>> http://www.jb51.net/article/36726.htm
+- <<>> http://www.alongsky.com/?p=578
 
 
 ## 编程题目
