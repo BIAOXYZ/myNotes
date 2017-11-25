@@ -9,5 +9,16 @@ Option --> Preferences --> Colors --> Window Background
 <<Source Insight如何改变背景颜色>>
 http://www.360doc.com/content/14/0531/20/12144668_382602527.shtml
 
+
+### 标题栏显示完整路径
 <<Source insight标题栏中路径显示完整路径的方法>>
 http://www.cnblogs.com/zhuyijie/p/6465765.html
+
+
+### 有些变量或者函数是黑色的，没有同步
+<<Source Insight基本使用和快捷键>>
+https://www.cnblogs.com/mengdd/p/3506526.html
+```
+如果某个变量或者方法是黑色字体表示的，说明它还没有被定义。
+当然有时候也不是因为没定义，需要同步一下，Project->Synchronizing Files。
+```
