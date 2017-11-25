@@ -128,9 +128,28 @@ https://segmentfault.com/a/1190000002434755
 ### git rebase
 <<Git Community Book 中文版 - rebase>>
 http://gitbook.liuhui998.com/4_2.html
+
+不使用rebase，直接使用merge
+```
+*   bd65d00 Merge branch '1111' into 2222
+|\  
+| * 5783c0c 111_2
+| * a18e755 111_1
+* | 0281750 222_2
+* | 927481e 222_1
+|/  
+* fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
 ```
 
+使用rebase
 ```
+* ca04343 222_2
+* c148b23 222_1
+* 5783c0c 111_2
+* a18e755 111_1
+* fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
+```
+
 
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
