@@ -110,16 +110,11 @@ http://blog.csdn.net/pcyph/article/details/41683383
 ----------------------------------------------------------------------------------------------------
 
 <<Linux命令大全>>系列
-http://man.linuxde.net/kill
-http://man.linuxde.net/ldconfig
+- http://man.linuxde.net/kill 
+- http://man.linuxde.net/ldconfig
 
 <<每天一个linux命令>>
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
-
-
-
-<<shell基础十二篇>>
-http://www.cnblogs.com/woxing/articles/3427131.html
 
 <<linux 怎么把^M去掉>> 
 http://blog.csdn.net/yangzhenzhen/article/details/8862236
@@ -147,6 +142,14 @@ http://www.linuxde.net/2011/09/721.html
 
 <<Linux最常用命令及快捷键整理>>
 http://www.cnblogs.com/wqsbk/p/5649037.html
+```
+Ctrl + a            光标移动到行首（ahead of line），相当于通常的Home键
+Ctrl + e            光标移动到行尾（end of line）
+Ctrl + u            删除光标之前到行首的字符
+Ctrl + k            删除光标之前到行尾的字符
+Ctrl + f            光标向前（forward）移动一个字符位置
+Ctrl + b            光标往回（backward）移动一个字符位置
+```
 
 <<linux反向搜索执行过的命令>>
 http://blog.csdn.net/rangf/article/details/6399897
