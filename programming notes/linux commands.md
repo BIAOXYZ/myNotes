@@ -4,8 +4,11 @@
 ----------------------------------------------------------------------------------------------------
 
 ## 显示类
-### ps
+
+## ps
 ps ufx
+
+## 移动类
 
 ## mv
 
@@ -30,8 +33,7 @@ mkdir -p dir1/dir2/dir3/...
 ## 查找类
 find dir -name filename
 
-grep -n -r "string" dir
-
+grep -n -r -i "string" dir --color=auto
 
 ctrl + z, fg, ctrl + z, fg, ...
 
@@ -39,6 +41,20 @@ ctrl + z, fg, ctrl + z, fg, ...
 ### diff参数-y 是以并列方式显示; -W 指定宽度
 diff file1 file2 -y -W 200 > differencefile
 
+
+----------------------------------------------------------------------------------------------------
+
+## 非一般性命令类
+
+### coredump文件
+
+<<详解coredump>>
+http://blog.csdn.net/tenfyguo/article/details/8159176
+
+```
+查看数据库core_dump文件的位置
+vi /proc/sys/kernel/core_pattern
+```
 
 ### 查看网卡信息
 ```
@@ -72,40 +88,6 @@ cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
 
 ----------------------------------------------------------------------------------------------------
-
-## 非通用类
-
-### 查看数据库core_dump文件的位置
-vi /proc/sys/kernel/core_pattern
-
-### Xshell自动断连
-在 /etc/profile 末尾加上 
-```
-export TMOUT=0
-```
-
-### 删除除了某个特定文件外的文件
-
-http://jingyan.baidu.com/article/e75aca851ff15c142fdac64c.html
-
-
-在test文件夹下有1.tt、1.png、index.html，现在要删除除1.tt之外的所有文件，则可以编写如下脚本：
-
-for i in `ls`;do if [ "$i" != 1.tt ];then rm -rf $i;fi;done;
-
-或者用find命令(两个都可以，第二个好像更好点)
-
-find . -not -name "1.tt" -exec rm -rf {} \;
-
-find . -not -name "1.tt" | xargs rm -rf
-
-PS: 查找多个时可以考虑-o选项或正则表达式，而且-name选项似乎也可以多次使用
-
-http://dingding830106.blog.163.com/blog/static/35119170201482383419925/
-
-http://blog.csdn.net/pcyph/article/details/41683383
-
-----------------------------------------------------------------------------------------------------
 # 2.other part:
 ----------------------------------------------------------------------------------------------------
 
@@ -119,13 +101,10 @@ http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB
 <<linux 怎么把^M去掉>> 
 http://blog.csdn.net/yangzhenzhen/article/details/8862236
 
-<<Samba 的多用户共享目录配置>>
-http://blog.sina.com.cn/s/blog_545f2b4701010t8i.html
+<<linux运维常用命令一句话（持续更新中）>>
+http://www.linuxde.net/2011/09/721.html
 
-<<yum与rpm、apt的区别：rpm的缺陷及yum的优势>>
-http://www.aboutyun.com/thread-9226-1-1.html
-
-linux里目录有空格的时候得用反斜杠加空格才能进去
+**linux里目录有空格的时候得用反斜杠加空格才能进去**
 ```
 SZX1000126633:/home/liuliang/svndir # ll
 total 8
@@ -136,9 +115,6 @@ svn on linux/ svnonlinux/
 SZX1000126633:/home/liuliang/svndir # cd svn\ on\ linux/
 SZX1000126633:/home/liuliang/svndir/svn on linux # 
 ```
-
-<<linux运维常用命令一句话（持续更新中）>>
-http://www.linuxde.net/2011/09/721.html
 
 <<Linux最常用命令及快捷键整理>>
 http://www.cnblogs.com/wqsbk/p/5649037.html
@@ -178,5 +154,4 @@ ctrl+r
 3、ctrl+r (继续反向搜索)
 只需要寥寥几键。当然若仅是上几个命令还是[上]键更有效率
 ```
-
 

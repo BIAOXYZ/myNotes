@@ -118,7 +118,8 @@ http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
 
 # 一般性的
 
-### coredump文件
+### 查看数据库core_dump文件的位置
+vi /proc/sys/kernel/core_pattern
 
 <<详解coredump>>
 http://blog.csdn.net/tenfyguo/article/details/8159176

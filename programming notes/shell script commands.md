@@ -12,6 +12,7 @@ http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html
 <<shell基础十二篇>>
 http://www.cnblogs.com/woxing/articles/3427131.html
 
+### Linux杀进程小脚本
 
 << linux使用脚本杀死指定名称的进程 [问题点数：40分，结帖人mervyn807] >>
 http://bbs.csdn.net/topics/360151075
@@ -38,3 +39,23 @@ while true;
         done
 ```
 
+### 删除除了某个特定文件外的文件
+
+http://jingyan.baidu.com/article/e75aca851ff15c142fdac64c.html
+
+
+在test文件夹下有1.tt、1.png、index.html，现在要删除除1.tt之外的所有文件，则可以编写如下脚本：
+
+for i in `ls`;do if [ "$i" != 1.tt ];then rm -rf $i;fi;done;
+
+或者用find命令(两个都可以，第二个好像更好点)
+
+find . -not -name "1.tt" -exec rm -rf {} \;
+
+find . -not -name "1.tt" | xargs rm -rf
+
+PS: 查找多个时可以考虑-o选项或正则表达式，而且-name选项似乎也可以多次使用
+
+http://dingding830106.blog.163.com/blog/static/35119170201482383419925/
+
+http://blog.csdn.net/pcyph/article/details/41683383
