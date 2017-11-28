@@ -87,6 +87,12 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
 
+### MTU
+
+http://blog.csdn.net/su377486/article/details/51566642
+
+https://www.cnblogs.com/bluefrog/archive/2012/07/07/2580928.html
+
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
 ----------------------------------------------------------------------------------------------------
