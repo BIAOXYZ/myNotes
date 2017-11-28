@@ -129,7 +129,42 @@ https://segmentfault.com/a/1190000002434755
 <<Git Community Book 中文版 - rebase>>
 http://gitbook.liuhui998.com/4_2.html
 
-不使用rebase，直接使用merge
+```
+# git rebase 实验过程
+
+1.以某个分支如basebranch为起点创建并切换两个一模一样的分支111,222:
+git checkout -b 111
+git checkout -b 222
+
+2.在这两个分支上分别做两次不同的修改和提交(为了简单起见，这两次不会有冲突，后续无需merge):
+git commit -m 111_1
+git commit -m 111_2
+此时111分支的路线是basebranch --> 111_1 --> 111_2
+
+git commit -m 222_1
+git commit -m 222_2
+此时222分支的路线是basebranch --> 222_1 --> 222_2
+
+3.从111创建一模一样的分支1111，从222创建一模一样的分支2222
+git checkout -b 1111
+git checkout -b 2222
+
+4.在分支2222上merge分支1111，在分支222上rebase分支111，观察log图
+4.1.切换到2222，执行
+git merge 1111
+4.2.切换到222，执行
+git rebase 111
+
+提示如下：
+First, rewinding head to replay your work on top of it...
+Applying: 222_1
+Applying: 222_2
+
+4.3.分别在分支2222和分支222上查看log图
+git log --graph --oneline
+```
+
+*不使用rebase，直接使用merge*
 ```
 *   bd65d00 Merge branch '1111' into 2222
 |\  
@@ -141,7 +176,7 @@ http://gitbook.liuhui998.com/4_2.html
 * fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
 ```
 
-使用rebase
+*使用rebase*
 ```
 * ca04343 222_2
 * c148b23 222_1
