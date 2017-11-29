@@ -83,6 +83,11 @@ git rm --cached file //去除已加入追踪的file。此外，git rm -f file是
 *PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。*
 
 ```
+git reset --hard versionnum
+```
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
+
+```
 git clean -xdf命令待完成
 ```
 <<git如何删除本地所有未提交的更改>>
