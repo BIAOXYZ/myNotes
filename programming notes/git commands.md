@@ -87,9 +87,16 @@ git reset --hard versionnum
 ```
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
 
+<<github总结(4)--关于git reset --hard这个命令的惨痛教训>>
+https://www.cnblogs.com/hope-markup/p/6683522.html
+```
+git fsck --lost-found
+```
+
 ```
 git clean -xdf命令待完成
 ```
+
 <<git如何删除本地所有未提交的更改>>
 https://www.v2ex.com/t/66718
 
