@@ -65,7 +65,7 @@ git commit --amend
 https://segmentfault.com/q/1010000000761908
 
 
-
+## 撤销修改
 ### 撤销工作区和暂存区的修改
 ```
 git checkout -- file //是把当前最新的编辑去掉，使file变为一个次新的版本。也就是说，当前file如果<1><2>都有，则会去除工作区的修改，变到和暂存区一样；否则（也就是只有更改但是未add）会去除工作区的修改，变到和本地仓库一样。
@@ -82,16 +82,27 @@ git rm --cached file //去除已加入追踪的file。此外，git rm -f file是
 
 *PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。*
 
+### 撤销提交
+
 ```
 git reset --hard versionnum
 ```
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
+
+## 高级命令
+
+### git fsck
 
 <<github总结(4)--关于git reset --hard这个命令的惨痛教训>>
 https://www.cnblogs.com/hope-markup/p/6683522.html
 ```
 git fsck --lost-found
 ```
+
+### git stash
+
+
+### git clean
 
 ```
 git clean -xdf命令待完成
@@ -215,3 +226,7 @@ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 <<Git远程操作详解>>
 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+
+
+### 其他高级技巧
+http://blog.jobbole.com/75348/
