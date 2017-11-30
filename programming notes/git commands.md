@@ -101,6 +101,9 @@ git fsck --lost-found
 
 ### git stash
 
+https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89
+
+https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
 
 ### git clean
 
