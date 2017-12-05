@@ -173,3 +173,7 @@ http://beigang.iteye.com/blog/1680797
 http://momjian.us/main/blogs/pgblog.html
 
 http://momjian.us/main/writings/pgsql/aw_pgsql_book/
+
+# firebird
+
+https://www.viva64.com/en/b/0542/
