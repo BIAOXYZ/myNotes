@@ -46,6 +46,12 @@ diff file1 file2 -y -W 200 > differencefile
 
 ## 非一般性命令类
 
+### 查看空间类
+
+df -h 
+
+du -sh
+
 ### coredump文件
 
 <<详解coredump>>
