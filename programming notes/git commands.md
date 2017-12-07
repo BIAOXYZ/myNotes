@@ -143,6 +143,16 @@ http://www.netpi.me/uncategorized/gitrevoke/
 <<Git忽略规则.gitignore梳理>>
 http://www.cnblogs.com/kevingrace/p/5690241.html
 
+### git自动补全和别名
+
+http://blog.csdn.net/kuaileboy1989/article/details/43022979
+
+https://www.cnblogs.com/eddy-he/archive/2012/03/08/git_auto_comple.html
+
+https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
+
+
+
 ### git log
 
 <<Git代码行统计命令集>>
