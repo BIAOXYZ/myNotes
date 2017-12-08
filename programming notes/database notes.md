@@ -118,9 +118,15 @@ http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
 
 # MySQL
 
-## MyCAT
+
+# 中间件
+
+## MyCAT, DRDS等
 
 https://www.cnblogs.com/ivictor/p/5111495.html
+
+<<数据库相关中间件介绍>>
+http://www.cnblogs.com/grefr/p/6087942.html
 
 # 一般性的
 
