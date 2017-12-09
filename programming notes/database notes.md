@@ -19,8 +19,10 @@ http://www.cnblogs.com/lottu/p/5613098.html
 
 ### pg_depend
 
+<<PostgreSQL的依赖约束（系统表pg_depend和pg_constraint）详解>>
 http://blog.csdn.net/prettyshuang/article/details/49638641
 
+<<postgres中pg_depend表实验性分析>>
 http://blog.csdn.net/yibei8811/article/details/46623253
 
 http://www.codeweblog.com/postgresql%E7%9A%84pg_depend%E8%AF%A6%E8%A7%A3/
