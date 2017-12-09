@@ -91,34 +91,15 @@ http://blog.csdn.net/leedaning/article/details/50125375
 https://www.cnblogs.com/xuange306/p/6838964.html
 
 
+### git log
+
+<<Git代码行统计命令集>>
+https://segmentfault.com/a/1190000002434755
+```
+提交数统计：git log --oneline | wc -l 
+```
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-### git show
-
-
-## 高级命令
-
-### git fsck
-
-<<github总结(4)--关于git reset --hard这个命令的惨痛教训>>
-https://www.cnblogs.com/hope-markup/p/6683522.html
-```
-git fsck --lost-found
-```
-
-### git stash
-
-https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89
-
-https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
-
-### gittjk
-<<gitjk：撤销刚在 Git 中的操作>>
-http://hao.jobbole.com/gitjk/
-
-
-http://www.jb51.net/article/55442.htm
-
 
 
 ## git设置
@@ -180,17 +161,36 @@ https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-### git log
+## git非常用命令
 
-<<Git代码行统计命令集>>
-https://segmentfault.com/a/1190000002434755
+### git fsck
+
+<<github总结(4)--关于git reset --hard这个命令的惨痛教训>>
+https://www.cnblogs.com/hope-markup/p/6683522.html
 ```
-提交数统计：git log --oneline | wc -l 
+git fsck --lost-found
 ```
+
+### git blame
+
+### git show
+
+### git stash
+
+https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89
+
+https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
+
+### gittjk
+<<gitjk：撤销刚在 Git 中的操作>>
+http://hao.jobbole.com/gitjk/
 
 ### git rebase
 <<Git Community Book 中文版 - rebase>>
 http://gitbook.liuhui998.com/4_2.html
+
+<<git merge, rebase和*(no branch)>>
+http://blog.csdn.net/xiaoputao0903/article/details/23995055
 
 ```
 # git rebase 实验过程
@@ -288,6 +288,9 @@ http://blog.jobbole.com/75348/
 
 <<趣文：那些会用 Git 的动物>>
 http://blog.jobbole.com/20123/
+
+<<Git 常用命令速查表(图文+表格)>>
+http://www.jb51.net/article/55442.htm
 
 
 ## git push -u origin master 
