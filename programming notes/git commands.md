@@ -175,11 +175,11 @@ git checkout -b 222
 2.在这两个分支上分别做两次不同的修改和提交(为了简单起见，这两次不会有冲突，后续无需merge):
 git commit -m 111_1
 git commit -m 111_2
-此时111分支的路线是basebranch --> 111_1 --> 111_2
+此时111分支的路线是basebranch <-- 111_1 <-- 111_2
 
 git commit -m 222_1
 git commit -m 222_2
-此时222分支的路线是basebranch --> 222_1 --> 222_2
+此时222分支的路线是basebranch <-- 222_1 <-- 222_2
 
 3.从111创建一模一样的分支1111，从222创建一模一样的分支2222
 git checkout -b 1111
@@ -239,7 +239,62 @@ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 <<Git远程操作详解>>
 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+```
+git branch --set-upstream master origin/next
+
+上面命令指定master分支追踪origin/next分支。
+```
+```
+git push --all origin
+git push --force origin  //感觉这个比较实用，看描述能删远程仓库的commit
+git push origin --tags
+```
+
+<<Git push与pull的默认行为>>
+https://segmentfault.com/a/1190000002783245
 
 
 ### 其他高级技巧
 http://blog.jobbole.com/75348/
+
+## git push -u origin master 
+
+```
+上面命令将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了。
+
+不带任何参数的git push，默认只推送当前分支，这叫做simple方式。此外，还有一种matching方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。如果要修改这个设置，可以采用git config命令。
+```
+http://www.yiibai.com/git/git_push.html
+
+
+**Command line instructions**
+- Git global setup
+```
+git config --global user.name "liuliang 00384038"
+git config --global user.email "liuliang21@huawei.com"
+```
+- Create a new repository
+```
+git clone http://code.huawei.com/l00384038/DBATG_Work_Progress.git
+cd DBATG_Work_Progress
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+```
+- Existing folder
+```
+cd existing_folder
+git init
+git remote add origin http://code.huawei.com/l00384038/DBATG_Work_Progress.git
+git add .
+git commit
+git push -u origin master
+```
+- Existing Git repository
+```
+cd existing_repo
+git remote add origin http://code.huawei.com/l00384038/DBATG_Work_Progress.git
+git push -u origin --all
+git push -u origin --tags
+```
