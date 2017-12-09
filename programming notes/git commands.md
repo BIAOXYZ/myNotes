@@ -83,9 +83,12 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 ```
 git clean -xdf命令待完成
 ```
-
 <<git如何删除本地所有未提交的更改>>
 https://www.v2ex.com/t/66718
+
+http://blog.csdn.net/leedaning/article/details/50125375
+
+https://www.cnblogs.com/xuange306/p/6838964.html
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
