@@ -17,26 +17,6 @@ https://bingohuang.gitbooks.io/progit2/content/01-introduction/sections/basics.h
 http://blog.csdn.net/gw569453350game/article/details/46998395
 
 
-### 配置git (git config)
-```
-设置用户名
-git config --global user.name "Scott Chacon"
-设置邮箱
-git config --global user.email "schacon@gmail.com"
-```
-
-```
-克隆仓库 (从远程拉取)
-git clone address
-或初始化仓库 (把本地的用git开始追踪)
-git init
-```
-
-配置密钥等：
-
-<<git/github初级运用自如>>
-https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
-
 
 ### 比较版本差异 (git diff)
 
@@ -65,7 +45,15 @@ git commit --amend
 https://segmentfault.com/q/1010000000761908
 
 
-## 撤销修改
+## 撤销类
+
+<<Git常用的撤销操作>>
+http://www.netpi.me/uncategorized/gitrevoke/
+
+<<如何在 Git 里撤销(几乎)任何操作>>
+http://blog.jobbole.com/87700/
+
+
 ### 撤销工作区和暂存区的修改
 ```
 git checkout -- file //是把当前最新的编辑去掉，使file变为一个次新的版本。也就是说，当前file如果<1><2>都有，则会去除工作区的修改，变到和暂存区一样；否则（也就是只有更改但是未add）会去除工作区的修改，变到和本地仓库一样。
@@ -82,12 +70,28 @@ git rm --cached file //去除已加入追踪的file。此外，git rm -f file是
 
 *PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。*
 
-### 撤销提交
+### 撤销提交 git reset 和 git revert
 
 ```
 git reset --hard versionnum
 ```
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
+
+
+### 清理类撤销 git clean
+
+```
+git clean -xdf命令待完成
+```
+
+<<git如何删除本地所有未提交的更改>>
+https://www.v2ex.com/t/66718
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+### git show
+
 
 ## 高级命令
 
@@ -105,18 +109,36 @@ https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%8
 
 https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
 
-### git clean
+### gittjk
+<<gitjk：撤销刚在 Git 中的操作>>
+http://hao.jobbole.com/gitjk/
+
+
+http://www.jb51.net/article/55442.htm
+
+
+
+## git设置
+
+### 配置git (git config)
+```
+设置用户名
+git config --global user.name "Scott Chacon"
+设置邮箱
+git config --global user.email "schacon@gmail.com"
+```
 
 ```
-git clean -xdf命令待完成
+克隆仓库 (从远程拉取)
+git clone address
+或初始化仓库 (把本地的用git开始追踪)
+git init
 ```
 
-<<git如何删除本地所有未提交的更改>>
-https://www.v2ex.com/t/66718
+配置密钥等：
 
-<<Git常用的撤销操作>>
-http://www.netpi.me/uncategorized/gitrevoke/
-
+<<git/github初级运用自如>>
+https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
 ### gitignore文件忽略
 
@@ -151,6 +173,8 @@ https://www.cnblogs.com/eddy-he/archive/2012/03/08/git_auto_comple.html
 
 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
 
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 ### git log
@@ -253,9 +277,15 @@ git push origin --tags
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
 
+<<Git远程分支和refs文件详解>>
+http://blog.csdn.net/forever_wind/article/details/37506389
 
 ### 其他高级技巧
 http://blog.jobbole.com/75348/
+
+<<趣文：那些会用 Git 的动物>>
+http://blog.jobbole.com/20123/
+
 
 ## git push -u origin master 
 
