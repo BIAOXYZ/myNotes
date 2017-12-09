@@ -283,7 +283,7 @@ https://segmentfault.com/a/1190000002783245
 <<Git远程分支和refs文件详解>>
 http://blog.csdn.net/forever_wind/article/details/37506389
 
-### 其他高级技巧
+### 其他高级技巧或知识
 http://blog.jobbole.com/75348/
 
 <<趣文：那些会用 Git 的动物>>
@@ -291,6 +291,9 @@ http://blog.jobbole.com/20123/
 
 <<Git 常用命令速查表(图文+表格)>>
 http://www.jb51.net/article/55442.htm
+
+<<Git HEAD detached from XXX (git HEAD 游离) 解决办法>>
+http://blog.csdn.net/u011240877/article/details/76273335
 
 
 ## git push -u origin master 
