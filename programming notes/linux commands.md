@@ -8,10 +8,12 @@
 ## ps
 ps ufx
 
+<<Linux文件内容查阅 - cat, tac, nl, more, less, head, tail, od>>
+http://www.linuxidc.com/Linux/2015-08/120978.htm
+
 ## 移动类
 
 ## mv
-
 ### 这个可以用来重命名
 mv source destination
 
@@ -19,22 +21,23 @@ mv source destination
 mv -t destination source1 source2 ...
 
 ## cp
-
 ### 复制多个文件到一个目的地
 cp -r source destination
 
 ## mkdir
-
 ### 递归创建目录
 mkdir -p dir1/dir2/dir3/...
 
 
-
 ## 查找类
+```
 find dir -name filename
 
-grep -n -r -i "string" dir --color=auto
+grep -n -r -i "string" dir --color=auto 
+(-nir可以合一起，并且可以用alias让grep就等于grep --color=auto)
+```
 
+### 暂停和放到前台继续执行，bg是放到后台
 ctrl + z, fg, ctrl + z, fg, ...
 
 ## diff
@@ -44,13 +47,30 @@ diff file1 file2 -y -W 200 > differencefile
 
 ----------------------------------------------------------------------------------------------------
 
-## 非一般性命令类
+## 非一般性命令类(运维类)
+
+http://os.51cto.com/art/200912/173050.htm
+
+### 创建修改用户，密码等
+
+*创建用户*
+```
+su - root
+useradd -d /home/liuliang -m liuliang
+passwd liuliang
+(输入并确认密码即可)
+```
+
+*更改用户:将liuliang添加到dbgrp用户组中*
+```
+usermod -g dbgrp liuliang
+```
 
 ### 查看空间类
-
+```
 df -h 
-
 du -sh
+```
 
 ### coredump文件
 
@@ -110,6 +130,9 @@ http://blog.csdn.net/ohmygirl/article/details/40385083
 <<已解决：登录Linux的 -bash-4.2$ 问题 >>
 http://blog.csdn.net/fly43108622/article/details/48155953
 
+<<linux 怎么把^M去掉>> 
+http://blog.csdn.net/yangzhenzhen/article/details/8862236
+
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
 ----------------------------------------------------------------------------------------------------
@@ -117,16 +140,19 @@ http://blog.csdn.net/fly43108622/article/details/48155953
 <<Linux命令大全>>系列
 - http://man.linuxde.net/kill 
 - http://man.linuxde.net/ldconfig
-- http://man.linuxde.net/od (http://www.runoob.com/linux/linux-comm-od.html)
+- http://man.linuxde.net/od 
+(http://www.runoob.com/linux/linux-comm-od.html) 
+(https://www.cnblogs.com/Vivian517/p/7612255.html)
+- http://man.linuxde.net/usermod
+
+<<linux运维常用命令一句话（持续更新中）>>
+http://www.linuxde.net/2011/09/721.html
+
 
 <<每天一个linux命令>>
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
 
-<<linux 怎么把^M去掉>> 
-http://blog.csdn.net/yangzhenzhen/article/details/8862236
 
-<<linux运维常用命令一句话（持续更新中）>>
-http://www.linuxde.net/2011/09/721.html
 
 **linux里目录有空格的时候得用反斜杠加空格才能进去**
 ```
