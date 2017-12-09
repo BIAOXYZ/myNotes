@@ -99,6 +99,12 @@ http://blog.csdn.net/su377486/article/details/51566642
 
 https://www.cnblogs.com/bluefrog/archive/2012/07/07/2580928.html
 
+### /dev/random
+
+<</dev/random和/dev/urandom的一点备忘>>
+http://blog.csdn.net/ohmygirl/article/details/40385083
+
+
 ## 问题处理
 
 <<已解决：登录Linux的 -bash-4.2$ 问题 >>
@@ -111,6 +117,7 @@ http://blog.csdn.net/fly43108622/article/details/48155953
 <<Linux命令大全>>系列
 - http://man.linuxde.net/kill 
 - http://man.linuxde.net/ldconfig
+- http://man.linuxde.net/od (http://www.runoob.com/linux/linux-comm-od.html)
 
 <<每天一个linux命令>>
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
