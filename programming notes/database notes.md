@@ -77,7 +77,7 @@ http://www.postgres.cn/news/viewone/1/220
 
 
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # PGXC
@@ -91,7 +91,7 @@ http://postgres-xc.sourceforge.net/docs/1_1/index.html
 <<PostgreSQL-XC : Data Replication or Distribution ? >>
 http://francs3.blog.163.com/blog/static/4057672720125453315201/
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # Oracle
@@ -127,6 +127,8 @@ https://www.cnblogs.com/ivictor/p/5111495.html
 
 <<数据库相关中间件介绍>>
 http://www.cnblogs.com/grefr/p/6087942.html
+
+http://www.cnblogs.com/leejean/p/4914228.html
 
 # 一般性的
 
