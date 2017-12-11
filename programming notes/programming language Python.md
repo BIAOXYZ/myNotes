@@ -13,6 +13,11 @@ Ctrl + Y 删除当前插入符所在的行
 Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
 ```
 
+### linux下安装pycharm有问题，目前还没时间看
+
+https://stackoverflow.com/questions/27727826/problems-installing-pycharm
+
+
 # 语法
 
 ```
