@@ -4,5 +4,20 @@ http://www.freebuf.com/articles/database/148394.html
 
 <<合法练习黑客技术？这15个网站也许可以帮到你>>
 http://www.freebuf.com/special/123961.html
+[http://overthewire.org/wargames/bandit/bandit0.html]
 
-http://overthewire.org/wargames/bandit/bandit0.html
+<<使用Shell脚本掩盖Linux服务器上的操作痕迹 >>
+http://www.freebuf.com/articles/system/155579.html
+
+认证云安全专家（CCSP）考试攻略 
+http://www.freebuf.com/articles/others-articles/156324.html
+
+http://www.freebuf.com/sectool/155754.html
+
+二进制之图论与威胁情报
+http://www.freebuf.com/articles/network/155924.html
+
+从安全角度深入理解MySQL编码转换机制 
+http://www.freebuf.com/articles/web/154932.html
+
+http://www.freebuf.com/articles/rookie/155971.html
