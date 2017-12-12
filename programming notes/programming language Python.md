@@ -49,3 +49,12 @@ http://www.runoob.com/python/python-object.html
 
 <<Python中的作用域及global用法>>
 http://www.cnblogs.com/summer-cool/p/3884595.html
+
+### python异常
+
+https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
+
+http://www.runoob.com/python/python-exceptions.html
+
+http://www.yiibai.com/python/python_exceptions.html
+
