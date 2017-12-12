@@ -59,3 +59,13 @@ PS: 查找多个时可以考虑-o选项或正则表达式，而且-name选项似
 http://dingding830106.blog.163.com/blog/static/35119170201482383419925/
 
 http://blog.csdn.net/pcyph/article/details/41683383
+
+### 删除某个目录里所有文件，但是保留目录
+发现其实可以进入到需要清空内容的目录，然后执行
+```
+ls | xargs rm -rf
+```
+然后发现想在目录外执行不行，原因发现了：比如在test目录上一层执行下述命令，没有反应。应该是因为此时xargs rm -rf也默认在test的上级目录执行了，但是上级目录明显没有要删的文件。
+```
+ls test | xargs rm -rf
+```
