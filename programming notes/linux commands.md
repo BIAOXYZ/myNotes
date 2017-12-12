@@ -144,6 +144,9 @@ http://blog.csdn.net/yangzhenzhen/article/details/8862236
 (http://www.runoob.com/linux/linux-comm-od.html) 
 (https://www.cnblogs.com/Vivian517/p/7612255.html)
 - http://man.linuxde.net/usermod
+- http://man.linuxde.net/lsof
+(https://www.cnblogs.com/the-study-of-linux/p/5501593.html)
+(https://www.cnblogs.com/peter9/archive/2011/07/28/2362156.html)
 
 <<linux运维常用命令一句话（持续更新中）>>
 http://www.linuxde.net/2011/09/721.html
