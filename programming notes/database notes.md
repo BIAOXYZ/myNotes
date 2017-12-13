@@ -123,6 +123,7 @@ http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
 # MySQL
 
 
+
 # 中间件
 
 ## MyCAT, DRDS等
@@ -133,6 +134,7 @@ https://www.cnblogs.com/ivictor/p/5111495.html
 http://www.cnblogs.com/grefr/p/6087942.html
 
 http://www.cnblogs.com/leejean/p/4914228.html
+
 
 # 一般性的
 
@@ -147,6 +149,8 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
 <<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
 http://www.interdb.jp/pg/
 
+<<PostgreSQL: Introduction and Concepts >>
+http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
 ## 事务
 
