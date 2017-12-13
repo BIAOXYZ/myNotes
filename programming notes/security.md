@@ -21,3 +21,6 @@ http://www.freebuf.com/articles/network/155924.html
 http://www.freebuf.com/articles/web/154932.html
 
 http://www.freebuf.com/articles/rookie/155971.html
+
+SQL和NoSQL注入原理剖析（上） 
+https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
