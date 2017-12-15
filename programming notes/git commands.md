@@ -77,6 +77,12 @@ git reset --hard versionnum
 ```
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
 
+https://segmentfault.com/a/1190000009658888
+
+https://www.cnblogs.com/qianqiannian/p/6010238.html
+
+https://www.cnblogs.com/kidsitcn/p/4513297.html
+
 
 ### 清理类撤销 git clean
 
