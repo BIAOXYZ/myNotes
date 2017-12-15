@@ -343,3 +343,8 @@ git remote add origin http://code.huawei.com/l00384038/DBATG_Work_Progress.git
 git push -u origin --all
 git push -u origin --tags
 ```
+
+## Github相关
+
+<<为什么我pull request后全部放在一个未关闭的pull request里面了>>
+https://segmentfault.com/q/1010000005178786
