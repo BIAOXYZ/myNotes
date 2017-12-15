@@ -42,3 +42,8 @@ set scheduler-locking on
 
 <<gdb学习笔记(一)>>
 http://simohayha.iteye.com/blog/493091
+
+
+http://blog.csdn.net/pbymw8iwm/article/details/7876797
+
+http://blog.csdn.net/lhl_blog/article/details/8888010
