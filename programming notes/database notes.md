@@ -80,8 +80,16 @@ http://blog.csdn.net/yunqishequ1/article/details/78084592
 http://www.postgres.cn/news/viewone/1/220
 
 
+## PG BUGs
+
+https://stackoverflow.com/questions/25071360/row-number-0-is-out-of-range-0-1-returned-when-using-setsinglerowmode-libpq
+
+http://grokbase.com/t/postgresql/pgsql-bugs/056wfat3ar/bug-1735-row-number-1-is-out-of-range-0-1-error
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 
 
 # PGXC
