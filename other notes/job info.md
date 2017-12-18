@@ -20,6 +20,7 @@ http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/320648088
 大数据部_NewSQL系统研发工程师（北京）
 http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/1323972949
 
+
 ### Alibaba
 
 蚂蚁金服-数据安全技术专家-信用
@@ -39,6 +40,12 @@ https://job.alibaba.com/zhaopin/position_detail.htm?positionId=42817
 
 蚂蚁金服-开发工程师-安全管理部
 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40155
+
+蚂蚁金服-区块链研发工程师
+https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45457
+
+蚂蚁金服-区块链专家
+https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45586
 
 
 
@@ -67,6 +74,16 @@ http://hr.tencent.com/position_detail.php?id=25711
 
 
 ## challenger ()
+
+### 众安保险信息科技招聘
+
+密码学信息安全学专家
+https://www.lagou.com/jobs/3427662.html
+
+深圳—复旦联合实验室—密码学算法专家
+https://www.lagou.com/jobs/3810250.html
+
+
 
 
 
