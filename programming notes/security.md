@@ -1,4 +1,6 @@
 
+## FreeBuf
+
 <<pyDHE：一个完整的PythonDiffie-Hellman库 >>
 http://www.freebuf.com/articles/database/148394.html
 
@@ -22,5 +24,12 @@ http://www.freebuf.com/articles/web/154932.html
 
 http://www.freebuf.com/articles/rookie/155971.html
 
+## WeChat
+
 SQL和NoSQL注入原理剖析（上） 
 https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
+
+## Others
+
+Linux下pwn从入门到放弃
+https://paper.seebug.org/481/
