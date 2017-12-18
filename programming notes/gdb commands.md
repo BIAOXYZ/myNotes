@@ -37,8 +37,12 @@ off: gdb将控制父进程和子进程。follow-fork-mode指定的进程将被�
 set scheduler-locking on
 ```
 
+### gdb插件
 
-其他参考链接：
+http://blog.csdn.net/gatieme/article/details/63254211
+
+
+## 其他参考链接：
 
 <<gdb学习笔记(一)>>
 http://simohayha.iteye.com/blog/493091
