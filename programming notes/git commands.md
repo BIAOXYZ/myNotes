@@ -130,6 +130,9 @@ git init
 <<git/github初级运用自如>>
 https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
+git diff ^M的消除
+https://www.cnblogs.com/chunguang/p/5541896.html
+
 ### gitignore文件忽略
 
 如果要忽略 .gitignore 文件本身。应该在repository的主目录（也就是 .git 所在的目录）下所创建的 .gitignore 文件内容里加上 .gitignore 文件本身。听起来有点绕，比如我的git仓库在用户主目录下的gitproject目录里（也就是~/gitproject），我现在如果只是忽略html文件，那么很简单，在该目录（也就是~/gitproject） 下新建个.gitignore 文件，里面内容是：
