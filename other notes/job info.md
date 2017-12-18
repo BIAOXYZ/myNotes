@@ -4,6 +4,18 @@
 http://job.freebuf.com/
 
 http://www.miitjob.cn/
+
+
+http://zhaopin.baidu.com/
+[百度这个聚合的招聘功能确实不错]
+
+[拉勾网](https://www.lagou.com/)
+
+http://www.highpin.cn
+[这个很多密码学和区块链的，相当不错]
+
+https://www.zhipin.com/
+[BOSS直聘一般般]
  
 # COMPANY
 
@@ -47,7 +59,8 @@ https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45457
 蚂蚁金服-区块链专家
 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45586
 
-
+数据安全技术专家
+http://www.highpin.cn/job/h3214142.html
 
 ### Tencent
 
@@ -83,14 +96,19 @@ https://www.lagou.com/jobs/3427662.html
 深圳—复旦联合实验室—密码学算法专家
 https://www.lagou.com/jobs/3810250.html
 
-
-
-
+密码算法专家  
+http://www.highpin.cn/job/h3246748.html
+【猜测这个也是众安保险的】
 
 ## startup (炼石)
 
 密码算法研究员 - 北京炼石网络技术有限公司
 https://www.liepin.com/job/1910643716.shtml
+
+##
+
+网络安全工程师/经理（资深密码学）
+http://www.highpin.cn/job/h2337217.html
 
  
 # ACADEMIC
