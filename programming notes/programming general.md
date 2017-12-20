@@ -3,6 +3,9 @@
 
 ## 编程知识
 
+随笔分类 - UNIX环境高级编程学习笔记
+https://www.cnblogs.com/lienhua34/category/607035.html
+
 ### 字节对齐
 
 << Data structure alignment >>
