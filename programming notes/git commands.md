@@ -270,10 +270,10 @@ https://my.oschina.net/xdev/blog/114383
 
 ### 阮一峰git系列
 
-<<常用 Git 命令清单>>
+- <<常用 Git 命令清单>>
 http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
-<<Git远程操作详解>>
+- <<Git远程操作详解>>
 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
 ```
 git branch --set-upstream master origin/next
@@ -285,7 +285,10 @@ git push --all origin
 git push --force origin  //感觉这个比较实用，看描述能删远程仓库的commit
 git push origin --tags
 ```
+- <<Git 使用规范流程>>
+http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
 
+### 
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
 
