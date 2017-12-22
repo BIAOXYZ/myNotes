@@ -108,7 +108,7 @@ https://segmentfault.com/a/1190000002434755
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-## git设置
+## git设置类and插件类等（非原生git包含有）
 
 ### 配置git (git config)
 ```
@@ -167,7 +167,20 @@ https://www.cnblogs.com/eddy-he/archive/2012/03/08/git_auto_comple.html
 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
 
 
+### gittjk
+<<gitjk：撤销刚在 Git 中的操作>>
+http://hao.jobbole.com/gitjk/
+
+### git flow
+http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
+
+
+### git lfs
+
+
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 
 ## git非常用命令
@@ -189,10 +202,6 @@ git fsck --lost-found
 https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89
 
 https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
-
-### gittjk
-<<gitjk：撤销刚在 Git 中的操作>>
-http://hao.jobbole.com/gitjk/
 
 ### git rebase
 <<Git Community Book 中文版 - rebase>>
@@ -256,6 +265,10 @@ git log --graph --oneline
 * a18e755 111_1
 * fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
 ```
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 
 ----------------------------------------------------------------------------------------------------
