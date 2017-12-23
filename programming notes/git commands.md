@@ -35,15 +35,34 @@ https://www.zhihu.com/question/53601264
 git diff <local branch> <remote>/<remote branch>
 ```
 
-### 更改提交
+### git merge
+
+https://www.jianshu.com/p/58a166f24c81
+
+#### 更改提交信息
 ```
 git commit --amend
-如果想更改一次提交，使用git commit --amend, git会使用与当前提交相同的父节点进行一次新提交，旧的提交会被取消。
 ```
+>如果想更改一次最新的提交，使用git commit --amend。会弹出一个文本，然后修改提交信息（即修改文本内容）再提交一次。git会使用与当前提交相同的父节点进行一次新提交，旧的提交会被取消。
+>如果想修改提交信息的提交不是最新一次，且需要保持历史提交记录，可以按如下思路：
+```
+1.先复制一个当前分支(cherry-pick时好取commit_id)
+2.把要修改提交信息的分支 git reset --hard HEAD~x 到该提交为最新提交 
+3.用 git commit --amend 把提交信息改了。
+4.用 git cherry-pick commit_id 的办法把后续提交一个个取回来。
+```
+如果不需要保持历史提交记录(这个应该比较少见，不然为改个提交信息把历史都改了- -)，可以git reset --soft全部恢复到暂存区，然后一次提交。
 
 <<Git 的 commit message 写错了，有办法进行修改么？>>
 https://segmentfault.com/q/1010000000761908
 
+
+#### 压缩多次（无意义）提交为一次
+
+```
+git merge --squash branch1
+```
+>（无冲突情况下）执行后branch1上所有的提交都会变成在当前分支的暂存区的内容，然后提交一次就可以。
 
 ## 撤销类
 
