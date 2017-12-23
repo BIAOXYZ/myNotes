@@ -202,7 +202,7 @@ http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 
 ### git lfs
 
-
+### gitk
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -326,24 +326,33 @@ git push origin --tags
 - <<Git 使用规范流程>>
 http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
 
-### 
+### 伯乐在线git系列
+
+http://blog.jobbole.com/75348/
+
+<<趣文：那些会用 Git 的动物>>
+http://blog.jobbole.com/20123/
+
+### 其他高级技巧或知识
+
+####  git的refs
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
 
 <<Git远程分支和refs文件详解>>
 http://blog.csdn.net/forever_wind/article/details/37506389
 
-### 其他高级技巧或知识
-http://blog.jobbole.com/75348/
+<<Git HEAD detached from XXX (git HEAD 游离) 解决办法>>
+http://blog.csdn.net/u011240877/article/details/76273335
 
-<<趣文：那些会用 Git 的动物>>
-http://blog.jobbole.com/20123/
+
+### git常用命令综合类
 
 <<Git 常用命令速查表(图文+表格)>>
 http://www.jb51.net/article/55442.htm
 
-<<Git HEAD detached from XXX (git HEAD 游离) 解决办法>>
-http://blog.csdn.net/u011240877/article/details/76273335
+<<Git 常用命令整理>>
+http://justcoding.iteye.com/blog/1830388
 
 
 ## git push -u origin master 
