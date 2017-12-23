@@ -124,6 +124,12 @@ https://segmentfault.com/a/1190000002434755
 提交数统计：git log --oneline | wc -l 
 ```
 
+<<[译]git log>>
+https://www.cnblogs.com/irocker/p/git-log.html
+```
+git log -p
+```
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
