@@ -24,6 +24,9 @@ http://www.freebuf.com/articles/web/154932.html
 
 http://www.freebuf.com/articles/rookie/155971.html
 
+CryKeX：Linux内存加密密钥提取工具 
+http://www.freebuf.com/sectool/157285.html
+
 ## WeChat
 
 SQL和NoSQL注入原理剖析（上） 
