@@ -8,6 +8,9 @@ http://www.freebuf.com/articles/database/148394.html
 http://www.freebuf.com/special/123961.html
 [http://overthewire.org/wargames/bandit/bandit0.html]
 
+新手科普|探索机器学习模型，保障账户安全 
+http://www.freebuf.com/articles/rookie/150179.html
+
 <<使用Shell脚本掩盖Linux服务器上的操作痕迹 >>
 http://www.freebuf.com/articles/system/155579.html
 
