@@ -73,6 +73,11 @@ http://www.leehao.org/postgresql-executioneng/
 Pgsrcstructure
 https://wiki.postgresql.org/wiki/Pgsrcstructure
 
+postgres 源码分析 之 insert (1)
+http://blog.csdn.net/huguangshanse00/article/details/37045847
+
+
+
 ### 临时表和unlogged table
 
 <<postgresql----TEMPORARY TABLE和UNLOGGED TABLE>>
