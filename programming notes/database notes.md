@@ -53,13 +53,25 @@ select * from INFORMATION_SCHEMA.role_table_grants where grantee='dwetl';
 https://www.cnblogs.com/xiaotengyi/p/5404733.html
 
 
+# PG代码
 
+跟我一起读postgresql源码(一)——psql命令
+http://www.cnblogs.com/flying-tiger/p/6004314.html
 
 <<跟我一起读postgresql源码(二)——Parser(查询分析模块)>>
 http://blog.csdn.net/zdy0_2004/article/details/53106260
 
 <<PG 内存上下文>>
 http://www.zhangxiaojian.name/pg-%E5%86%85%E5%AD%98%E4%B8%8A%E4%B8%8B%E6%96%87/
+
+postgresql源码阅读快速上手
+http://blog.csdn.net/postgres20/article/details/53354330
+
+PostgreSQL执行引擎简介
+http://www.leehao.org/postgresql-executioneng/
+
+Pgsrcstructure
+https://wiki.postgresql.org/wiki/Pgsrcstructure
 
 ### 临时表和unlogged table
 
