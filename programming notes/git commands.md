@@ -192,11 +192,14 @@ git config --global color.ui true
 http://www.cnblogs.com/kevingrace/p/5690241.html
 
 ### git自动补全和别名
+*注:还是第一个链接里那种从个人bashrc来的方式比较靠谱，第三个链接里git book提到的利用/etc/bash_completion.d/的方法有些机器不行。*
+
+<<git-自动补全>>
+https://www.cnblogs.com/eddy-he/archive/2012/03/08/git_auto_comple.html
 
 http://blog.csdn.net/kuaileboy1989/article/details/43022979
 
-https://www.cnblogs.com/eddy-he/archive/2012/03/08/git_auto_comple.html
-
+<<.7 Git 基础 - 技巧和窍门>>
 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
 
 
