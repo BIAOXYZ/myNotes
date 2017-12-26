@@ -158,6 +158,14 @@ https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 git diff ^M的消除
 https://www.cnblogs.com/chunguang/p/5541896.html
 
+### git彩色显示
+
+<<.1 自定义 Git - 配置 Git>>
+https://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git
+```
+git config --global color.ui true
+```
+
 ### gitignore文件忽略
 
 如果要忽略 .gitignore 文件本身。应该在repository的主目录（也就是 .git 所在的目录）下所创建的 .gitignore 文件内容里加上 .gitignore 文件本身。听起来有点绕，比如我的git仓库在用户主目录下的gitproject目录里（也就是~/gitproject），我现在如果只是忽略html文件，那么很简单，在该目录（也就是~/gitproject） 下新建个.gitignore 文件，里面内容是：
@@ -221,6 +229,8 @@ git fsck --lost-found
 ### git blame
 
 ### git show
+
+### git tag
 
 ### git stash
 
