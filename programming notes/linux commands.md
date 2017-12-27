@@ -95,6 +95,26 @@ netstat -anp | grep 80
 <<Linux查看物理CPU个数、核数、逻辑CPU个数>>
 http://www.cnblogs.com/emanlee/p/3587571.html
 
+### 查看操作系统信息
+
+<<查看Linux版本系统信息方法汇总>>
+https://www.cnblogs.com/lanxuezaipiao/archive/2012/10/22/2732857.html
+
+```
+1、# uname －a   （Linux查看版本当前操作系统内核信息）
+ 
+Linux localhost.localdomain 2.4.20-8 #1 Thu Mar 13 17:54:28 EST 2003 i686 athlon i386 GNU/Linux
+ 
+2、# cat /proc/version （Linux查看当前操作系统版本信息）
+ 
+Linux version 2.4.20-8 (bhcompile@porky.devel.redhat.com)
+(gcc version 3.2.2 20030222 (Red Hat Linux 3.2.2-5)) #1 Thu Mar 13 17:54:28 EST 2003
+ 
+3、# cat /etc/issue  或cat /etc/redhat-release（Linux查看版本当前操作系统发行版信息）
+ 
+Red Hat Linux release 9 (Shrike)
+```
+
 ### 查看CPU信息
 ```
 # 总核数 = 物理CPU个数 X 每颗物理CPU的核数 
