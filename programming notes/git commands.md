@@ -378,7 +378,7 @@ http://justcoding.iteye.com/blog/1830388
 http://www.yiibai.com/git/git_push.html
 
 
-**Command line instructions**
+**Command line instructions** (https://gitlab.com/BIAOXYZ/testproject)
 - Git global setup
 ```
 git config --global user.name "liuliang 00384038"
