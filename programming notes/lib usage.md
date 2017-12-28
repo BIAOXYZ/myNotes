@@ -15,6 +15,11 @@ https://www.cnblogs.com/findumars/p/6009249.html
 
 # PYTHON Lib
 
+
+pwd
+- http://blog.sina.com.cn/s/blog_a04184c101010kt6.html
+- https://docs.python.org/2/library/pwd.html
+
 pycrypto
 - https://pypi.python.org/pypi/pycrypto
 - https://www.dlitz.net/software/pycrypto/
@@ -26,4 +31,6 @@ pyca/cryptography
 
 hmac
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0015108777177966ef0f4f8510a41b3b8c48cdcf7047b2d000
+
+
 
