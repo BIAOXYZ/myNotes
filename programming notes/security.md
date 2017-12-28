@@ -30,6 +30,11 @@ http://www.freebuf.com/articles/rookie/155971.html
 CryKeX：Linux内存加密密钥提取工具 
 http://www.freebuf.com/sectool/157285.html
 
+### FreeBuf专栏
+
+AI安全如何入门（上）
+http://www.freebuf.com/column/158250.html
+
 ## 安全牛
 
 2017年网络安全大事记
