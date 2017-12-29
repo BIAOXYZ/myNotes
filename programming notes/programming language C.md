@@ -13,3 +13,6 @@ http://blog.csdn.net/aiwoziji13/article/details/7330333
 
 <<一个简单的通用Makefile实现>>
 http://www.cnblogs.com/fanzhidongyzby/p/3141041.html
+
+C语言变量作用域
+http://blog.csdn.net/r91987/article/details/6887731
