@@ -10,8 +10,6 @@ http://www.cnblogs.com/woxing/articles/3427131.html
 Linux Shell脚本攻略
 http://man.linuxde.net/shell-script
 
-Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
-http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
 
 ### 简单型的
 
@@ -28,6 +26,13 @@ https://www.zhihu.com/question/53295083
 
 <<学习 shell 有什么好书推荐？>>
 https://www.zhihu.com/question/19745611
+```
+答案包括:
+
+[Classic Shell Scripting][Shell脚本学习指南]
+[Linux Shell Scripting Cookbook][Linux Shell脚本攻略]
+[Linux Command Line and Shell Scripting Bible][Linux命令行与shell脚本编程大全(第一版把大全翻译成宝典)]
+```
 
 - http://www.tldp.org/LDP/abs/html/
 - http://www.tldp.org/LDP/Bash-Beginners-Guide/html/
