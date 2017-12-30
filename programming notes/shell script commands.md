@@ -1,4 +1,5 @@
 
+### 综合类的
 
 <<Linux Shell常用技巧(目录)>>
 http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html
@@ -12,6 +13,13 @@ http://man.linuxde.net/shell-script
 Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
 http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
 
+### 简单型的
+
+shell 脚本关键字&符号
+http://www.cnblogs.com/xiaojiang1025/p/5863984.html
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## 知乎shell相关
 
@@ -29,11 +37,7 @@ http://www.cnblogs.com/me115/p/3428147.html
 http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
 
 
-### 简单型的
-
-shell 脚本关键字&符号
-http://www.cnblogs.com/xiaojiang1025/p/5863984.html
-
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## 小脚本
 
