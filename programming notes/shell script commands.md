@@ -1,25 +1,41 @@
 
 
-shell 脚本关键字&符号
-http://www.cnblogs.com/xiaojiang1025/p/5863984.html
-
-
-Linux编程基础——后台进程
-http://www.cnblogs.com/TianFang/archive/2013/01/23/2872645.html
-
-
 <<Linux Shell常用技巧(目录)>>
 http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html
 
 <<shell基础十二篇>>
 http://www.cnblogs.com/woxing/articles/3427131.html
 
-Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
-http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
-
 Linux Shell脚本攻略
 http://man.linuxde.net/shell-script
 
+Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
+http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
+
+
+## 知乎shell相关
+
+<<shell程序中 2> /dev/null 代表什么意思？>>
+https://www.zhihu.com/question/53295083
+
+<<学习 shell 有什么好书推荐？>>
+https://www.zhihu.com/question/19745611
+
+- http://www.tldp.org/LDP/abs/html/
+- http://www.tldp.org/LDP/Bash-Beginners-Guide/html/
+- Linux Shell脚本攻略 读书笔记
+http://www.cnblogs.com/me115/p/3428147.html
+- Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
+http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
+
+
+### 简单型的
+
+shell 脚本关键字&符号
+http://www.cnblogs.com/xiaojiang1025/p/5863984.html
+
+
+## 小脚本
 
 ### Linux杀进程小脚本
 
