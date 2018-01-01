@@ -24,6 +24,11 @@ http://www.cnblogs.com/xiaojiang1025/p/5863984.html
 <<shell程序中 2> /dev/null 代表什么意思？>>
 https://www.zhihu.com/question/53295083
 
+- [Linux] 文件描述符 
+https://www.jianshu.com/p/b1c10674a789
+- 每天进步一点点——Linux中的文件描述符与打开文件之间的关系
+http://blog.csdn.net/cywosp/article/details/38965239
+
 <<学习 shell 有什么好书推荐？>>
 https://www.zhihu.com/question/19745611
 ```
