@@ -4,11 +4,17 @@
 <<Linux Shell常用技巧(目录)>>
 http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html
 
-<<shell基础十二篇>>
+<<shell基础十二篇>> -- 其实是20篇
 http://www.cnblogs.com/woxing/articles/3427131.html
 
 Linux Shell脚本攻略
 http://man.linuxde.net/shell-script
+
+Shell编程基础
+https://wiki.ubuntu.com.cn/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80
+
+Shell脚本调试技术
+https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 
 
 ### 简单型的
@@ -18,6 +24,7 @@ http://www.cnblogs.com/xiaojiang1025/p/5863984.html
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 ## 知乎shell相关
 
@@ -49,6 +56,7 @@ http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 ## 小脚本
 
