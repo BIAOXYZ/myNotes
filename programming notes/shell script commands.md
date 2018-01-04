@@ -38,6 +38,10 @@ ${#var} 可计算出变量值的长度
 Shell中#*/和%/*是什么意思？
 http://blog.csdn.net/hongchangfirst/article/details/28436947
 
+linux bash shell之变量替换：:=句法、=句法、:-句法、-句法、=?句法、?句法、:+句法、+句法
+https://www.cnblogs.com/fhefh/archive/2011/04/22/2024750.html
+
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
