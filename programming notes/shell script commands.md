@@ -22,6 +22,21 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 shell 脚本关键字&符号
 http://www.cnblogs.com/xiaojiang1025/p/5863984.html
 
+<<shell中$(( ))与$( )还有${ }的区别>>
+http://blog.csdn.net/tg5156/article/details/19406275
+```
+$( )与` `(反引号)
+在bash shell中，$( )与` `(反引号)都是用来做命令替换(command substitution)用的。
+
+${ }用来作变量替换
+
+${file:+my.file.txt} 若 $file 为非空值，则使用 my.file.txt 作传回值。(未设定及空值时不作处理)
+
+${#var} 可计算出变量值的长度
+```
+
+Shell中#*/和%/*是什么意思？
+http://blog.csdn.net/hongchangfirst/article/details/28436947
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
