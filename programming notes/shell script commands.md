@@ -56,6 +56,25 @@ https://www.jianshu.com/p/b1c10674a789
 - 每天进步一点点——Linux中的文件描述符与打开文件之间的关系
 http://blog.csdn.net/cywosp/article/details/38965239
 
+<<shell中2>&1之类的命令中'&'是什么意思?>>
+https://segmentfault.com/q/1010000002454596
+```
+放在>后面的&，表示重定向的目标不是一个文件，而是一个文件描述符，内置的文件描述符如下
+
+1 => stdout
+2 => stderr
+0 => stdin
+
+换言之 2>1 代表将stderr重定向到当前路径下文件名为1的regular file中，
+而2>&1代表将stderr重定向到文件描述符为1的文件(即/dev/stdout)中，这个文件就是stdout在file system中的映射
+而&>file是一种特殊的用法，也可以写成>&file，二者的意思完全相同，都等价于
+
+>file 2>&1
+
+此处&>或者>&视作整体，分开没有单独的含义
+```
+
+
 <<学习 shell 有什么好书推荐？>>
 https://www.zhihu.com/question/19745611
 ```
