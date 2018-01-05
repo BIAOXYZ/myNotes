@@ -73,6 +73,7 @@ https://segmentfault.com/q/1010000002454596
 
 此处&>或者>&视作整体，分开没有单独的含义
 ```
+https://www.gnu.org/software/bash/manual/
 
 
 <<学习 shell 有什么好书推荐？>>
