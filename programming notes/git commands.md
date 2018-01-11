@@ -97,6 +97,11 @@ git reset --hard versionnum
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
 
 https://segmentfault.com/a/1190000009658888
+```
+soft就是只动repo
+mixed就是动repo还有staging(这个是默认参数)
+hard就是动repo还有staging还有working
+```
 
 https://www.cnblogs.com/qianqiannian/p/6010238.html
 
@@ -150,13 +155,42 @@ git clone address
 git init
 ```
 
-配置密钥等：
+#### 配置密钥等：
 
 <<git/github初级运用自如>>
 https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
+#### 
+
 git diff ^M的消除
 https://www.cnblogs.com/chunguang/p/5541896.html
+
+
+### git config --list
+<<.5 起步 - 初次运行 Git 前的配置>>
+https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE
+
+```
+Git 提供了一个叫做 git config 的工具（译注：实际是 git-config 命令，只不过可以通过 git 加一个名字来呼叫此命令。），
+专门用来配置或读取相应的工作环境变量。而正是由这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的地方：
+
+-- /etc/gitconfig 文件：系统中对所有用户都普遍适用的配置。若使用 git config 时用 --system 选项，读写的就是这个文件。
+-- ~/.gitconfig 文件：用户目录下的配置文件只适用于该用户。若使用 git config 时用 --global 选项，读写的就是这个文件。
+-- 当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的
+相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。
+-- 在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings\$USER。
+此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。
+```
+
+```
+要检查已有的配置信息，可以使用 git config --list 命令
+有时候会看到重复的变量名，那就说明它们来自不同的配置文件（比如 /etc/gitconfig 和 ~/.gitconfig），不过最终 Git 实际采用的是最后一个。
+
+也可以直接查阅某个环境变量的设定，只要把特定的名字跟在后面即可，像这样：
+
+$ git config user.name
+Scott Chacon
+```
 
 ### git彩色显示
 
