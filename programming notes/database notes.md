@@ -96,6 +96,18 @@ http://blog.csdn.net/yunqishequ1/article/details/78084592
 <<数据库系统概念笔记之存储和文件系统及PostgreSQL实现>>
 http://www.postgres.cn/news/viewone/1/220
 
+## PG日志
+
+漫谈postgresql的日志实现机制
+http://blog.csdn.net/xabc3000/article/details/7658439
+
+## PG锁
+
+PostgreSQL中的锁
+http://www.postgres.cn/news/viewone/1/241
+
+
+
 
 ## PG BUGs
 
@@ -140,6 +152,9 @@ http://blog.csdn.net/wanghai__/article/details/4683983
 
 <<Oracle表空间（tablespaces）>>
 http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
+
+Oracle数据安全解决方案透明数据加密TDE
+http://www.linuxidc.com/Linux/2011-12/48689.htm
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
