@@ -192,6 +192,15 @@ $ git config user.name
 Scott Chacon
 ```
 
+<<通过SSH 密钥连接GitHub/Bitbucket>>
+http://blog.csdn.net/lue2009/article/details/46551201
+```
+4. 分别打开 github.com和bitbucket.org 用之前注册过的账号登录。
+在账号设置里有个SSH KEY 相关的，Add Key ，然后将公钥文件id_rsa.pub文件里的内容复制到各自里面。
+(bigbucket.org github.com可以公用一套公钥和私钥)
+```
+*说是这么说，其实我发现如果用github的windows客户端，生成的公钥私钥名字叫github_rsa.pub，github_rsa。然后我贴了公钥到bitbucket发现咋都不行。后来才想到是名字不对！于是把github_rsa另存一份，重命名成id_rsa，然后就解决了。*
+
 ### git彩色显示
 
 <<.1 自定义 Git - 配置 Git>>
