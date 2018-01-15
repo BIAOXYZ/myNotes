@@ -50,6 +50,28 @@ http://www.runoob.com/python/python-object.html
 <<Python中的作用域及global用法>>
 http://www.cnblogs.com/summer-cool/p/3884595.html
 
+### string类型
+
+<<Python基本数据类型之str>>
+https://www.cnblogs.com/whatisfantasy/p/5956747.html
+```
+url = "www.google.com/login/ex"
+
+a, b, c = url.split("/")
+print(a, b, c)  #www.google.com login ex
+
+x = url.split("/")
+print(x)        #['www.google.com', 'login', 'ex']
+p = url.split("/", -1)
+print(p)        #['www.google.com', 'login', 'ex']
+
+y = url.split("/")[-1]
+print(y)        #ex
+
+z = url.split("/", 1)
+print(z)        #['www.google.com', 'login/ex']
+```
+
 ### python异常
 
 https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
