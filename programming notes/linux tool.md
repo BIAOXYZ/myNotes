@@ -41,6 +41,24 @@ http://www.linuxidc.com/Linux/2016-03/129195.htm
 export TMOUT=0
 ```
 
+### MobaXterm
+
+<<MobaXTerm的复制/粘贴没有Ctrl+Ins/Shift+Ins快捷键，怎么设置呢？>>
+https://www.zhihu.com/question/34830447
+```
+在 Linux/BSD 的图形环境（X Window）里，鼠标选中对象之后，点击鼠标中键就可以粘贴了。
+```
+```
+Settings->Configuration->Terminal
+
+可以修改字体，字号
+
+勾选Paste using right-click，启用右键复制功能，此时如果要用右键菜单，用Ctrl+右键即可。
+```
+
+全功能的终端软件MobaXterm推荐配置
+https://www.jianshu.com/p/161b9be14494
+
 ### 包管理工具
 
 <<yum与rpm、apt的区别：rpm的缺陷及yum的优势>>
