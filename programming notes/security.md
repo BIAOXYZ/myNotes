@@ -17,6 +17,7 @@ http://www.freebuf.com/articles/system/155579.html
 认证云安全专家（CCSP）考试攻略 
 http://www.freebuf.com/articles/others-articles/156324.html
 
+如何DIY一个简单的反弹Shell脚本
 http://www.freebuf.com/sectool/155754.html
 
 二进制之图论与威胁情报
@@ -30,6 +31,9 @@ http://www.freebuf.com/articles/rookie/155971.html
 CryKeX：Linux内存加密密钥提取工具 
 http://www.freebuf.com/sectool/157285.html
 
+从理论层面谈Meltdown与Spectre攻击 | 核武按钮终被劫持？
+http://www.freebuf.com/articles/terminal/160424.html
+
 ### FreeBuf专栏
 
 AI安全如何入门（上）
@@ -39,6 +43,11 @@ http://www.freebuf.com/column/158250.html
 
 2017年网络安全大事记
 http://www.aqniu.com/industry/30413.html
+
+## MottoIN
+
+安全相关的免费电子书集合
+http://www.mottoin.com/101105.html
 
 ## WeChat
 
