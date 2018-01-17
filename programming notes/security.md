@@ -34,6 +34,9 @@ http://www.freebuf.com/sectool/157285.html
 从理论层面谈Meltdown与Spectre攻击 | 核武按钮终被劫持？
 http://www.freebuf.com/articles/terminal/160424.html
 
+基于约束的SQL攻击 
+http://www.freebuf.com/articles/web/124537.html
+
 ### FreeBuf专栏
 
 AI安全如何入门（上）
