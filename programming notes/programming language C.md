@@ -16,3 +16,16 @@ http://www.cnblogs.com/fanzhidongyzby/p/3141041.html
 
 C语言变量作用域
 http://blog.csdn.net/r91987/article/details/6887731
+
+### C长跳转
+
+C语言的异常机制 setjump longjump函数
+http://blog.csdn.net/wanglang3081/article/details/18664919
+
+C语言中的异常处理机制
+http://blog.csdn.net/tian_dao_chou_qin/article/details/6386621
+
+linux C 长跳转setjmp/longjump以及sigsetjump/siglongjump
+http://www.cppblog.com/cxf20090520biancheng/archive/2012/05/14/174833.html
+
+
