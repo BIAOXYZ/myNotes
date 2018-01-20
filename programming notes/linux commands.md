@@ -82,6 +82,9 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
 vi /proc/sys/kernel/core_pattern
 ```
 
+gdb调试coredump(使用篇)
+http://blog.csdn.net/sunxiaopengsun/article/details/72974548
+
 ### 查看网卡信息
 ```
 /sbin/ifconfig
