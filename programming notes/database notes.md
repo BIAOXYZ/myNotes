@@ -239,3 +239,10 @@ http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 # firebird
 
 https://www.viva64.com/en/b/0542/
+
+
+# DATABASE SECURITY
+
+Thread: Explain the difference between HSM and HSA
+https://forums.aws.amazon.com/thread.jspa?threadID=232163
+
