@@ -66,6 +66,34 @@ passwd liuliang
 usermod -g dbgrp liuliang
 ```
 
+### 修改主机名
+
+查询linux机器的hostname命令很简单，大家应该都会用：使用root用户登录时，前面的登录符就是了
+
+修改分为两种：1.暂时修改；2.永久修改
+
+1.暂时修改
+
+#hostname newname
+
+newname即要设置的新的hostname，运行后立即生效，但是在系统重启后会丢失所做的修改，如果要永久更改系统的hostname，就要修改相关的设置文件。
+
+2.永久修改
+
+suse操作系统是保存在/etc/HOSTNAME中的，修改该文件中的内容，重启之后就会生效。（重启时其实执行的/etc/rc.d/boot.localnet脚本，生效hostname）
+
+
+如果想不重启永久修改主机名，需要做如下操作：
+
+1.修改/etc/HOSTNAME文件
+
+2.修改当前的$HOSTNAME变量
+
+3.停掉/etc/rc.d/boot.localnet
+
+4.启动/etc/rc.d/boot.localnet
+
+
 ### 查看空间类
 ```
 df -h 
