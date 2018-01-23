@@ -52,6 +52,11 @@ select * from INFORMATION_SCHEMA.role_table_grants where grantee='dwetl';
 <<PostgreSQL的权限查询>>
 https://www.cnblogs.com/xiaotengyi/p/5404733.html
 
+### xmax xmin
+
+对PostgreSQL xmax的理解
+http://www.cnblogs.com/gaojian/p/3164792.html
+
 
 # PG代码
 
