@@ -18,6 +18,12 @@ Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
 https://stackoverflow.com/questions/27727826/problems-installing-pycharm
 
 
+## DEBUG
+
+<<用PDB库调试Python程序>>
+http://www.cnblogs.com/dkblog/archive/2010/12/07/1980682.html
+
+
 # 语法
 
 ```
