@@ -457,3 +457,9 @@ git push -u origin --tags
 
 <<为什么我pull request后全部放在一个未关闭的pull request里面了>>
 https://segmentfault.com/q/1010000005178786
+
+### Github Gist
+
+### Github CI
+
+https://travis-ci.org/getting_started
