@@ -11,6 +11,8 @@ http://usyiyi.cn/translate/python_278/index.html
 <<Python 2.7.14 documentation>>
 https://docs.python.org/2/
 
+# IDE
+
 ## IDE pycharm
 
 ### pycharm日常
@@ -28,7 +30,7 @@ Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
 
 https://stackoverflow.com/questions/27727826/problems-installing-pycharm
 
-## IDE 
+## IDE Anaconda
 
 http://python.jobbole.com/tag/anaconda/
 >Anaconda使用总结 http://python.jobbole.com/86236/
@@ -40,8 +42,16 @@ https://jingyan.baidu.com/article/1876c8527be1c3890a137645.html
 <<清华大学开源软件镜像站 - Anaconda>>
 https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 
+### 安装使用
+
 <python 科学计算 发行版 Anaconda安装使用教程>
 http://blog.csdn.net/bitcarmanlee/article/details/51917642
+
+<最省心的Python版本和第三方库管理——初探Anaconda>
+https://zhuanlan.zhihu.com/p/25198543
+
+<python anaconda 怎么安装？>
+https://www.zhihu.com/question/30123965
 
 
 ## DEBUG
