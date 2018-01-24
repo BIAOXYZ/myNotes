@@ -28,6 +28,21 @@ Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
 
 https://stackoverflow.com/questions/27727826/problems-installing-pycharm
 
+## IDE 
+
+http://python.jobbole.com/tag/anaconda/
+>Anaconda使用总结 http://python.jobbole.com/86236/
+>致Python初学者：Anaconda入门使用指南 http://python.jobbole.com/87522/
+
+<<Anaconda修改国内镜像源>>
+https://jingyan.baidu.com/article/1876c8527be1c3890a137645.html
+
+<<清华大学开源软件镜像站 - Anaconda>>
+https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+
+<python 科学计算 发行版 Anaconda安装使用教程>
+http://blog.csdn.net/bitcarmanlee/article/details/51917642
+
 
 ## DEBUG
 
