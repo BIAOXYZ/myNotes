@@ -67,6 +67,31 @@ http://www.runoob.com/python/python-object.html
 <<Python中的作用域及global用法>>
 http://www.cnblogs.com/summer-cool/p/3884595.html
 
+### module
+
+#### __init__.py 
+
+python 在不同层级目录import 模块的方法
+https://www.cnblogs.com/kex1n/p/5971590.html
+
+https://stackoverflow.com/questions/279237/import-a-module-from-a-relative-path
+
+#### 'module' object is not callable
+
+http://blog.csdn.net/kenkywu/article/details/6743520
+```
+原因分析：
+Python导入模块的方法有两种：import module 和 from module import，区别是前者所有导入的东西使用时需加上模块名的限定，而后者不要。
+正确的代码：
+>>> import Person
+>>> person = Person.Person('dnawo','man')
+>>> print person.Name
+或
+>>> from Person import *
+>>> person = Person('dnawo','man')
+>>> print person.Name
+```
+
 ### string类型
 
 <<Python基本数据类型之str>>
