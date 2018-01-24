@@ -2,7 +2,18 @@
 
 # general
 
+Python Tutorials
+https://gist.github.com/reorx/8aa83ad55591987dc286
+
+<<Python v2.7.8 文档>>
+http://usyiyi.cn/translate/python_278/index.html
+
+<<Python 2.7.14 documentation>>
+https://docs.python.org/2/
+
 ## IDE pycharm
+
+### pycharm日常
 
 <<pycharm快捷键、常用设置、配置管理>>
 http://blog.csdn.net/pipisorry/article/details/39909057
@@ -85,4 +96,15 @@ https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
 http://www.runoob.com/python/python-exceptions.html
 
 http://www.yiibai.com/python/python_exceptions.html
+
+
+## 伯乐在线python
+
+27 个机器学习、数学、Python 速查表
+http://blog.jobbole.com/112009/
+>http://datasciencefree.com/python.pdf
+>https://www.datacamp.com/community/tutorials/python-data-science-cheat-sheet-basics
+>http://www.wzchen.com/s/probability_cheatsheet.pdf
+>https://minireference.com/static/tutorials/linear_algebra_in_4_pages.pdf
+>http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf
 
