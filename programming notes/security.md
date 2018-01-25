@@ -61,3 +61,7 @@ https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
 
 Linux下pwn从入门到放弃
 https://paper.seebug.org/481/
+
+用户chybeta的安全总结
+- https://github.com/CHYbeta/Web-Security-Learning
+- https://github.com/CHYbeta/Software-Security-Learning
