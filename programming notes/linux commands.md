@@ -38,10 +38,6 @@ grep -n -r -i "string" dir --color=auto
 (-nir可以合一起，并且可以用alias让grep就等于grep --color=auto)
 ```
 
-### dirs, pushd, popd
-<<方便的目录转换－－－－－pushd、popd、dirs>>
-http://blog.csdn.net/houqizhixiu12/article/details/45119407
-
 ### 暂停和放到前台继续执行，bg是放到后台
 ```
 ctrl + z, fg, ctrl + z, fg, ...
@@ -62,6 +58,12 @@ diff file1 file2 -y -W 200 > differencefile
 <<【Bash百宝箱】xargs>> 
 http://blog.csdn.net/iEearth/article/details/53941920
 
+### dirs, pushd, popd
+<<方便的目录转换－－－－－pushd、popd、dirs>>
+http://blog.csdn.net/houqizhixiu12/article/details/45119407
+
+<<linux 命令之 pushd、popd、dirs，以及栈的基础知识>>
+http://blog.csdn.net/u011641885/article/details/45576533
 
 ## 非一般性命令类(运维类)
 
