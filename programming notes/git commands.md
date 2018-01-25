@@ -460,12 +460,31 @@ https://segmentfault.com/q/1010000005178786
 
 ### Github Gist
 
-如何看待 Github Gist 这个服务，怎样更好的利用？
-https://www.zhihu.com/question/21343711
+如何看待 Github Gist 这个服务，怎样更好的利用？ - 知乎用户的回答 - 知乎
+https://www.zhihu.com/question/21343711/answer/32023379
 >GistBox http://www.gistboxapp.com/ (后改名cacher https://www.cacher.io/)
 
-### Github CI
+学习编程用什么做笔记比较好？ - pezy的回答 - 知乎
+https://www.zhihu.com/question/21438053/answer/18790164
+
+### Github相关第三方工具
+
+#### gitbook
+
+>http://blog.csdn.net/hk2291976/article/details/51173850
+>https://www.jianshu.com/p/5d0b25cd9495
+
+#### Travis CI
 
 https://travis-ci.org/getting_started
 >需要在项目根目录下加一个文件.travis.yml，然后在项目配置里面配一下就可以了。
+
+#### 
+
+https://david-dm.org/
+
+#### gitter (https://gitter.im/)
+
+<GitLab收购公共聊天软件Gitter>
+http://www.infoq.com/cn/news/2017/03/gitlab-gitter-acquisition
 
