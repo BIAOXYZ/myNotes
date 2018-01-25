@@ -460,6 +460,12 @@ https://segmentfault.com/q/1010000005178786
 
 ### Github Gist
 
+如何看待 Github Gist 这个服务，怎样更好的利用？
+https://www.zhihu.com/question/21343711
+>GistBox http://www.gistboxapp.com/ (后改名cacher https://www.cacher.io/)
+
 ### Github CI
 
 https://travis-ci.org/getting_started
+>需要在项目根目录下加一个文件.travis.yml，然后在项目配置里面配一下就可以了。
+
