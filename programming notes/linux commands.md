@@ -30,6 +30,7 @@ mkdir -p dir1/dir2/dir3/...
 
 
 ## 查找类
+### find
 ```
 find dir -name filename
 
@@ -37,8 +38,16 @@ grep -n -r -i "string" dir --color=auto
 (-nir可以合一起，并且可以用alias让grep就等于grep --color=auto)
 ```
 
+### dirs, pushd, popd
+<<方便的目录转换－－－－－pushd、popd、dirs>>
+http://blog.csdn.net/houqizhixiu12/article/details/45119407
+
 ### 暂停和放到前台继续执行，bg是放到后台
+```
 ctrl + z, fg, ctrl + z, fg, ...
+```
+>其他参考：<<【Bash百宝箱】shell作业控制（jobs、bg、fg）>>http://blog.csdn.net/iEearth/article/details/52703576
+
 
 ## diff
 ### diff参数-y 是以并列方式显示; -W 指定宽度
@@ -46,6 +55,13 @@ diff file1 file2 -y -W 200 > differencefile
 
 
 ----------------------------------------------------------------------------------------------------
+
+## 不常用命令
+
+### xargs
+<<【Bash百宝箱】xargs>> 
+http://blog.csdn.net/iEearth/article/details/53941920
+
 
 ## 非一般性命令类(运维类)
 
@@ -200,6 +216,7 @@ https://www.zhihu.com/question/22130727
 - http://man.linuxde.net/lsof
 (https://www.cnblogs.com/the-study-of-linux/p/5501593.html)
 (https://www.cnblogs.com/peter9/archive/2011/07/28/2362156.html)
+
 
 <<linux运维常用命令一句话（持续更新中）>>
 http://www.linuxde.net/2011/09/721.html
