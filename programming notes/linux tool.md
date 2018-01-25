@@ -12,6 +12,16 @@ http://www.codeweblog.com/ssh%E7%94%A8%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95%E8%BF
 <<Samba 的多用户共享目录配置>>
 http://blog.sina.com.cn/s/blog_545f2b4701010t8i.html
 
+http://www.linuxidc.com/Linux/2011-07/38996.htm
+
+http://www.linuxidc.com/Linux/2014-02/97349.htm
+
+http://www.linuxidc.com/Linux/2016-12/138498.htm
+
+http://www.linuxidc.com/Linux/2016-03/129195.htm
+
+### 忘记密码
+
 **后来配置windows笔记本和xubuntu本互联时**
 
 <<Ubuntu 14.04 文件服务器--samba的安装和配置>> 
@@ -24,16 +34,6 @@ https://jingyan.baidu.com/article/e2284b2b3cea8ae2e6118de1.html
 ```
 进入终端 #sudo su root然后输入普通用户的密码，就暂时获得了root帐号的权限了，同时也进入了root账号下了；
 ```
-
-http://www.linuxidc.com/Linux/2011-07/38996.htm
-
-http://www.linuxidc.com/Linux/2014-02/97349.htm
-
-http://www.linuxidc.com/Linux/2016-12/138498.htm
-
-http://www.linuxidc.com/Linux/2016-03/129195.htm
-
-
 
 ### Xshell自动断连
 在 /etc/profile 末尾加上 
@@ -58,6 +58,10 @@ Settings->Configuration->Terminal
 
 全功能的终端软件MobaXterm推荐配置
 https://www.jianshu.com/p/161b9be14494
+
+### CMake
+<<find_package与CMake如何查找链接库详解>>
+http://blog.csdn.net/bytxl/article/details/50637277
 
 ### 包管理工具
 
