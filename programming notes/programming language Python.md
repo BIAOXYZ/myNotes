@@ -174,3 +174,6 @@ http://blog.jobbole.com/112009/
 >https://minireference.com/static/tutorials/linear_algebra_in_4_pages.pdf
 >http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf
 
+Python 资源大全
+http://python.jobbole.com/84464/
+>awesome-python-cn https://github.com/jobbole/awesome-python-cn
