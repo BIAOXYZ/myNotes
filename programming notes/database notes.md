@@ -200,6 +200,14 @@ http://www.interdb.jp/pg/
 <<PostgreSQL: Introduction and Concepts >>
 http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
+PostgreSQL 有哪些经典入门书籍？
+https://www.zhihu.com/question/28085660
+> https://github.com/ty4z2008/Qix/blob/master/pg.md
+> PostgreSQL数据库从入门到精通 - 阿里云大学 https://edu.aliyun.com/course/52
+
+PostgreSQL 9 Administration Cookbook
+http://download.chekiang.info/blog/PostgreSQL-9-Admin-Cookbook.pdf
+
 ## 事务
 
 ### 两阶段提交
