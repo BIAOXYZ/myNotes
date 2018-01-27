@@ -33,7 +33,7 @@ http://www.codeweblog.com/postgresql%E7%9A%84pg_depend%E8%AF%A6%E8%A7%A3/
 <<PostgreSQL的autovacuum 与 vacuum full>> by 技术者高健
 http://www.cnblogs.com/gaojian/p/3272620.html
 
-### information_schema
+### information_schema & schema
 
 <<PostgreSQL的information_schema>>
 http://blog.itpub.net/22818880/viewspace-1966636/
@@ -51,6 +51,9 @@ select * from INFORMATION_SCHEMA.role_table_grants where grantee='dwetl';
 ```
 <<PostgreSQL的权限查询>>
 https://www.cnblogs.com/xiaotengyi/p/5404733.html
+
+<<Postgresql的Schema(模式)的出现是出于什么目的，不理解schema的具体用途？>>
+https://segmentfault.com/q/1010000010303335
 
 ### xmax xmin
 
