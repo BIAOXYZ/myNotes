@@ -63,6 +63,17 @@ http://www.cnblogs.com/gaojian/p/3164792.html
 
 # PG代码
 
+
+https://doxygen.postgresql.org/reloptions_8c_source.html
+
+<postgres /src/include/access/reloptions.h>
+https://searchcode.com/codesearch/view/5324466/
+
+Pgsrcstructure
+https://wiki.postgresql.org/wiki/Pgsrcstructure
+
+----------------------------------------------------------------------------------------------------
+
 跟我一起读postgresql源码(一)——psql命令
 http://www.cnblogs.com/flying-tiger/p/6004314.html
 
@@ -78,8 +89,7 @@ http://blog.csdn.net/postgres20/article/details/53354330
 PostgreSQL执行引擎简介
 http://www.leehao.org/postgresql-executioneng/
 
-Pgsrcstructure
-https://wiki.postgresql.org/wiki/Pgsrcstructure
+
 
 postgres 源码分析 之 insert (1)
 http://blog.csdn.net/huguangshanse00/article/details/37045847
