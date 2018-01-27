@@ -63,6 +63,7 @@ http://www.cnblogs.com/gaojian/p/3164792.html
 
 # PG代码
 
+https://doxygen.postgresql.org/snapbuild_8c.html
 
 https://doxygen.postgresql.org/reloptions_8c_source.html
 
@@ -133,6 +134,10 @@ https://stackoverflow.com/questions/25071360/row-number-0-is-out-of-range-0-1-re
 
 http://grokbase.com/t/postgresql/pgsql-bugs/056wfat3ar/bug-1735-row-number-1-is-out-of-range-0-1-error
 
+## PG其他
+
+https://www.ibm.com/developerworks/cn/opensource/os-postgresecurity/
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -173,6 +178,20 @@ http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
 
 Oracle数据安全解决方案透明数据加密TDE
 http://www.linuxidc.com/Linux/2011-12/48689.htm
+
+
+## Oracle连接
+
+- <<ORA-12560:TNS:协议器错误>>
+https://jingyan.baidu.com/article/d71306350fa53b13fdf4753d.html
+- <<ORA-01031: insufficient privileges>>
+https://jingyan.baidu.com/article/8cdccae946893f315413cdf4.html
+```
+C:\Users\l00384038>sqlplus /nolog
+
+SQL> conn /as sysdba
+```
+
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
