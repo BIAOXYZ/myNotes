@@ -262,3 +262,7 @@ https://forums.aws.amazon.com/thread.jspa?threadID=232163
 https://info.townsendsecurity.com/sql-server-column-level-encryption
 >https://info.townsendsecurity.com/definitive-guide-to-encryption-key-management-fundamentals  
 
+<<Getting Started with Always Encrypted with SSMS>>
+https://channel9.msdn.com/Shows/Data-Exposed/Getting-Started-with-Always-Encrypted-with-SSMS
+
+
