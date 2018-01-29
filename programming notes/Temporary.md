@@ -33,3 +33,15 @@ netstat -anp | grep 80
 
 <<基于 Raft 构建分布式系统 TiKV>>
 https://toutiao.io/posts/17r5g9/preview
+
+关于git pull在branch1上往branch2拉代码的问题（测试版本为git 2.1.3）：
+```
+当前处于master分支: 
+git pull remoterepo master:branch2 -- 除了把最新代码拉到branch2上，会把master也更新到最新。
+
+当前处于branch1分支: 
+git pull remoterepo master:branch2 -- 除了把最新代码拉到branch2上，会把branch1也更新到最新。
+
+当前处于branch2分支: 
+git pull remoterepo master:branch2 -- 只会把branch2更新到最新。
+```
