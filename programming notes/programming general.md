@@ -25,6 +25,9 @@ https://en.wikipedia.org/wiki/Data_structure_alignment
 - <<>> http://www.jb51.net/article/36726.htm
 - <<>> http://www.alongsky.com/?p=578
 
+### 信号量
+
+https://www.zhihu.com/question/47411729
 
 ## 编程题目
 
