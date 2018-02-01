@@ -486,6 +486,20 @@ https://travis-ci.org/getting_started
 http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
 >YAML 语言教程 http://www.ruanyifeng.com/blog/2016/07/yaml.html
 
+<类似Travis CI 这种持续集成「自动编译测试」的网站有哪些？>
+https://www.zhihu.com/question/42991087
+https://github.com/blog/2463-github-welcomes-all-ci-tools
+
+#### Codecov
+
+Github装逼指南——Travis CI 和 Codecov
+https://segmentfault.com/a/1190000004415437
+
+#### Heroku
+
+<<国内有没有类似heroku的云服务平台？>>
+https://www.zhihu.com/question/19902966
+
 #### 
 
 https://david-dm.org/
