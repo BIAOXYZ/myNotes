@@ -477,7 +477,14 @@ https://www.zhihu.com/question/21438053/answer/18790164
 #### Travis CI
 
 https://travis-ci.org/getting_started
->需要在项目根目录下加一个文件.travis.yml，然后在项目配置里面配一下就可以了。
+>https://docs.travis-ci.com/user/language-specific/
+>>https://docs.travis-ci.com/user/getting-started/
+>>>https://docs.travis-ci.com/user/deployment/heroku/
+>>>>https://www.heroku.com/
+
+<持续集成服务 Travis CI 教程>
+http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
+>YAML 语言教程 http://www.ruanyifeng.com/blog/2016/07/yaml.html
 
 #### 
 
