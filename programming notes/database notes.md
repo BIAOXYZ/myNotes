@@ -295,11 +295,13 @@ https://forums.aws.amazon.com/thread.jspa?threadID=232163
 
 ## SQL Server and Azure
 
-<<SQL SERVER COLUMN LEVEL ENCRYPTION>>
+<< SQL SERVER COLUMN LEVEL ENCRYPTION >>
 https://info.townsendsecurity.com/sql-server-column-level-encryption
 >https://info.townsendsecurity.com/definitive-guide-to-encryption-key-management-fundamentals  
 
-<<Getting Started with Always Encrypted with SSMS>>
+- << Getting Started with Always Encrypted with SSMS >>
 https://channel9.msdn.com/Shows/Data-Exposed/Getting-Started-with-Always-Encrypted-with-SSMS
+- << Always Encrypted in SQL Server and Azure SQL Database >>
+https://channel9.msdn.com/Events/Community-Poland/Data-Community-106/Always-Encrypted
 
 
