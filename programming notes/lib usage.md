@@ -32,6 +32,9 @@ pyca/cryptography
 hmac
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0015108777177966ef0f4f8510a41b3b8c48cdcf7047b2d000
 
+ansible
+http://www.ansible.com.cn/
+
 # Go Libs
 
 crypto
