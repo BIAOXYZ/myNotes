@@ -237,6 +237,9 @@ https://www.zhihu.com/question/28085660
 PostgreSQL 9 Administration Cookbook
 http://download.chekiang.info/blog/PostgreSQL-9-Admin-Cookbook.pdf
 
+Become a Postgres Expert with Free Training
+https://www.enterprisedb.com/free-postgres-training
+
 ## 事务
 
 ### 两阶段提交
