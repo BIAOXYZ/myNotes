@@ -67,3 +67,8 @@ http://blog.csdn.net/bytxl/article/details/50637277
 
 <<yum与rpm、apt的区别：rpm的缺陷及yum的优势>>
 http://www.aboutyun.com/thread-9226-1-1.html
+
+### 性能
+
+宋宝华：火焰图：全局视野的Linux性能剖析
+http://blog.csdn.net/21cnbao/article/details/78527777  -- by 21cnbao
