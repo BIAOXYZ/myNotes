@@ -182,6 +182,11 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
 
+### tty
+
+终端、虚拟终端、shell、控制台、tty的区别
+http://blog.csdn.net/ltx06/article/details/52170852
+
 ### MTU
 
 http://blog.csdn.net/su377486/article/details/51566642
