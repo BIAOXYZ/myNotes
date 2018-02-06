@@ -33,9 +33,14 @@ Ctrl + Y 删除当前插入符所在的行
 Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
 ```
 
+Pycharm下运行程序查看每个变量的值的方法（类似于Spyder和MATLAB）
+https://www.cnblogs.com/tq007/p/7285239.html
+
+
 ### linux下安装pycharm有问题，目前还没时间看
 
 https://stackoverflow.com/questions/27727826/problems-installing-pycharm
+
 
 ## IDE Anaconda
 
@@ -49,7 +54,19 @@ https://jingyan.baidu.com/article/1876c8527be1c3890a137645.html
 <<清华大学开源软件镜像站 - Anaconda>>
 https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 
+### Anaconda问题解决
+
+- anaconda没有创建启动快捷方式的解决办法
+http://blog.csdn.net/w371500241/article/details/78582403
+
+- Python，Pycharm，Anaconda等的关系与安装过程~为初学者跳过各种坑
+https://www.cnblogs.com/tq007/p/7281105.html
+
+
 ### 安装使用
+
+<Pycharm，Anaconda的安装，集成开发环境，包安装>
+https://www.jianshu.com/p/98b2fbb3a45c
 
 <python 科学计算 发行版 Anaconda安装使用教程>
 http://blog.csdn.net/bitcarmanlee/article/details/51917642
@@ -59,6 +76,9 @@ https://zhuanlan.zhihu.com/p/25198543
 
 <python anaconda 怎么安装？>
 https://www.zhihu.com/question/30123965
+
+<Anaconda介绍、安装及使用教程>
+https://zhuanlan.zhihu.com/p/32925500
 
 
 ## DEBUG
