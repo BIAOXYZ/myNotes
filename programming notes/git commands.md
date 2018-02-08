@@ -410,6 +410,14 @@ http://www.jb51.net/article/55442.htm
 <<Git 常用命令整理>>
 http://justcoding.iteye.com/blog/1830388
 
+### git书籍
+
+<Pro Git>
+https://www.gitbook.com/book/bingohuang/progit2/details
+>远程分支 https://bingohuang.gitbooks.io/progit2/content/03-git-branching/sections/remote-branches.html
+
+
+
 
 ## git push -u origin master 
 
