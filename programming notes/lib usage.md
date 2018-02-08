@@ -15,25 +15,29 @@ https://www.cnblogs.com/findumars/p/6009249.html
 
 # PYTHON Libs
 
-
-pwd
+### pwd
 - http://blog.sina.com.cn/s/blog_a04184c101010kt6.html
 - https://docs.python.org/2/library/pwd.html
 
-pycrypto
+### pycrypto
 - https://pypi.python.org/pypi/pycrypto
 - https://www.dlitz.net/software/pycrypto/
 - http://python.jobbole.com/84094/
 
-pyca/cryptography
+### pyca/cryptography
 - https://cryptography.io/en/latest/
 - https://cryptography.io/en/latest/development/
 
-hmac
+### hmac
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0015108777177966ef0f4f8510a41b3b8c48cdcf7047b2d000
 
-ansible
+### ansible
 http://www.ansible.com.cn/
+
+### pbd
+
+<零基础学习PDB命令行调试Python代码>
+http://python.jobbole.com/81184/
 
 # Go Libs
 
