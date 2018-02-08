@@ -3,7 +3,11 @@
 
 ![PostgreSQL](https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png)
 
+PostgreSQL(数据库)资料
 https://github.com/ty4z2008/Qix/blob/master/pg.md
+
+<<PostgreSQL 中文资料汇总>>
+https://github.com/francs/PostgreSQL
 
 ### 关于postgresql.auto.conf文件
 
