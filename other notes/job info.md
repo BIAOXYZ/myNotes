@@ -1,6 +1,8 @@
  
 # JOB WEBSITE
 
+## home
+
 http://job.freebuf.com/
 
 http://www.miitjob.cn/
@@ -16,6 +18,44 @@ http://www.highpin.cn
 
 https://www.zhipin.com/
 [BOSS直聘一般般]
+
+## aboard
+
+- 国外有哪些著名的求职网站？ - Kris的回答 - 知乎
+https://www.zhihu.com/question/20406967/answer/126551266
+
+- 国外都有哪些招聘网站？ - xiaojun fan的回答 - 知乎
+https://www.zhihu.com/question/19895362/answer/150333620
+
+Glassdoor
+https://www.glassdoor.com/index.htm
+
+## part time
+
+- 国内有类似Freelancer的网站？ - 知乎
+https://www.zhihu.com/question/26478092
+
+- 国内有类似upwork或者freelancer平台么？ - 知乎
+https://www.zhihu.com/question/46981882
+
+- 国内现在有多少个软件众包平台？ - IT男的回答 - 知乎
+https://www.zhihu.com/question/41507682/answer/246906031
+
+### Freelancer
+
+- https://www.freelancer.com/
+- https://www.freelancer.cn/
+
+### Elance (似乎已和upwork合并？)
+
+https://www.elance.com/php/landing/main/login.php
+
+### Upwork
+
+https://www.upwork.com/ 
+
+
+
  
 # COMPANY
 
