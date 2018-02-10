@@ -33,9 +33,16 @@ Ctrl + Y 删除当前插入符所在的行
 Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
 ```
 
+你有哪些想要分享的 PyCharm 使用技巧？ - 知乎
+https://www.zhihu.com/question/37787004
+
+
 Pycharm下运行程序查看每个变量的值的方法（类似于Spyder和MATLAB）
 https://www.cnblogs.com/tq007/p/7285239.html
 
+
+为什么用pycharm在同目录下import，pycharm会报错，但是实际可以运行？ - regin的回答 - 知乎
+https://www.zhihu.com/question/52880389/answer/134369870
 
 ### linux下安装pycharm有问题，目前还没时间看
 
