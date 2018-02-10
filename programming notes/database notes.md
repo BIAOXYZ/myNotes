@@ -9,6 +9,26 @@ https://github.com/ty4z2008/Qix/blob/master/pg.md
 <<PostgreSQL 中文资料汇总>>
 https://github.com/francs/PostgreSQL
 
+## pgcon and pgcon China
+
+### PGCon (https://www.pgcon.org/)
+
+http://www.pgcon.org/2016/
+>[Index Internals http://www.pgcon.org/2016/schedule/events/934.en.html]
+
+
+### PGconChina
+
+https://wiki.postgresql.org/wiki/Pgconchina2011
+
+数据库多版本实现内幕 
+http://www.postgres.cn/downfiles/pg2016conf_day2_s1_pm3.pdf
+
+###  PGConf APAC
+
+http://2018.pgconfapac.org/
+
+
 ### 关于postgresql.auto.conf文件
 
 <<PostgreSQL9.4: 新增 ALTER SYSTEM 命令>> by francs
