@@ -241,6 +241,9 @@ https://www.zhihu.com/question/28085660
 PostgreSQL 9 Administration Cookbook
 http://download.chekiang.info/blog/PostgreSQL-9-Admin-Cookbook.pdf
 
+PostgreSQL修炼之道 - 从小工到专家
+http://www.gaofi.cn/book/detail/892
+
 Become a Postgres Expert with Free Training
 https://www.enterprisedb.com/free-postgres-training
 
@@ -310,5 +313,9 @@ https://info.townsendsecurity.com/sql-server-column-level-encryption
 https://channel9.msdn.com/Shows/Data-Exposed/Getting-Started-with-Always-Encrypted-with-SSMS
 - << Always Encrypted in SQL Server and Azure SQL Database >>
 https://channel9.msdn.com/Events/Community-Poland/Data-Community-106/Always-Encrypted
+- << Enabling Confidential Computing with Always Encrypted using Enclaves (Early Access Preview) >>
+https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-computing-with-always-encrypted-using-enclaves-early-access-preview/
+
+
 
 
