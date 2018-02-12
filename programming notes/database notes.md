@@ -9,6 +9,9 @@ https://github.com/ty4z2008/Qix/blob/master/pg.md
 <<PostgreSQL 中文资料汇总>>
 https://github.com/francs/PostgreSQL
 
+给PostgreSQL爱好者的参考资料
+http://blog.csdn.net/postgrechina/article/details/49132791
+
 <PostgreSQL Tutorial>
 http://www.postgresqltutorial.com/
 
