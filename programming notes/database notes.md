@@ -9,6 +9,9 @@ https://github.com/ty4z2008/Qix/blob/master/pg.md
 <<PostgreSQL 中文资料汇总>>
 https://github.com/francs/PostgreSQL
 
+<PostgreSQL Tutorial>
+http://www.postgresqltutorial.com/
+
 ## pgcon and pgcon China
 
 ### PGCon (https://www.pgcon.org/)
