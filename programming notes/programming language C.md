@@ -17,6 +17,14 @@ http://www.cnblogs.com/fanzhidongyzby/p/3141041.html
 C语言变量作用域
 http://blog.csdn.net/r91987/article/details/6887731
 
+C语言运算符优先级（超详细）
+http://blog.csdn.net/yuliying/article/details/72898132
+
+### stackoverflow
+
+Arrow operator (->) usage in C
+https://stackoverflow.com/questions/2575048/arrow-operator-usage-in-c
+
 ### C长跳转
 
 C语言的异常机制 setjump longjump函数
