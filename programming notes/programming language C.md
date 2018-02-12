@@ -25,6 +25,13 @@ http://blog.csdn.net/yuliying/article/details/72898132
 Arrow operator (->) usage in C
 https://stackoverflow.com/questions/2575048/arrow-operator-usage-in-c
 
+
+https://www.cnblogs.com/lidabo/p/5225868.html
+
+https://www.cnblogs.com/zfyouxi/p/4498759.html
+
+http://bbs.bccn.net/thread-473106-1-1.html
+
 ### C长跳转
 
 C语言的异常机制 setjump longjump函数
