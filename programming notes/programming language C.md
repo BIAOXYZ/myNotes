@@ -25,12 +25,34 @@ http://blog.csdn.net/yuliying/article/details/72898132
 Arrow operator (->) usage in C
 https://stackoverflow.com/questions/2575048/arrow-operator-usage-in-c
 
+if(null!=variable) why not if(variable!=null)
+https://stackoverflow.com/questions/4985074/ifnull-variable-why-not-ifvariable-null
+>https://www.zhihu.com/question/27336966
 
+
+### C字符串操作函数
 https://www.cnblogs.com/lidabo/p/5225868.html
 
-https://www.cnblogs.com/zfyouxi/p/4498759.html
+#### strtok
 
-http://bbs.bccn.net/thread-473106-1-1.html
+<<strtok、strtok_s、strtok_r 字符串切割函数>>
+https://www.cnblogs.com/zfyouxi/p/4498759.html
+> <<怎么用c语言判断一个字符串里是否由某个字符呢？>> http://bbs.bccn.net/thread-473106-1-1.html
+
+关于函数strtok和strtok_r的使用要点和实现原理（二）
+http://blog.csdn.net/liuintermilan/article/details/6283705
+
+#### strdup
+
+https://stackoverflow.com/questions/252782/strdup-what-does-it-do-in-c
+
+
+### 内存管理
+
+C语言malloc和free【转载】
+http://blog.csdn.net/r91987/article/details/6337032
+
+
 
 ### C长跳转
 
@@ -42,5 +64,17 @@ http://blog.csdn.net/tian_dao_chou_qin/article/details/6386621
 
 linux C 长跳转setjmp/longjump以及sigsetjump/siglongjump
 http://www.cppblog.com/cxf20090520biancheng/archive/2012/05/14/174833.html
+
+
+### 报错信息解决
+
+#### crosses initialization of ...
+
+- http://blog.csdn.net/zzwdkxx/article/details/27561393
+- https://stackoverflow.com/questions/12992108/crosses-initialization-of-variable-only-when-initialization-combined-with-decl
+
+### 其他
+
+
 
 
