@@ -86,6 +86,8 @@ usermod -g dbgrp liuliang
 
 ### 修改主机名
 
+*总结*
+```
 查询linux机器的hostname命令很简单，大家应该都会用：使用root用户登录时，前面的登录符就是了
 
 修改分为两种：1.暂时修改；2.永久修改
@@ -110,7 +112,12 @@ suse操作系统是保存在/etc/HOSTNAME中的，修改该文件中的内容，
 3.停掉/etc/rc.d/boot.localnet
 
 4.启动/etc/rc.d/boot.localnet
+```
 
+- Linux hostname主机名配置文件/etc/hosts详解
+http://www.jb51.net/LINUXjishu/77329.html
+- IP、主机名和域名
+http://blog.csdn.net/houjixin/article/details/52604941
 
 ### 查看空间类
 ```
@@ -206,8 +213,7 @@ http://blog.csdn.net/fly43108622/article/details/48155953
 
 <<linux 怎么把^M去掉>> 
 http://blog.csdn.net/yangzhenzhen/article/details/8862236
-
-https://www.zhihu.com/question/22130727
+> https://www.zhihu.com/question/22130727
 
 ----------------------------------------------------------------------------------------------------
 # 2.other part:
@@ -233,6 +239,8 @@ http://www.linuxde.net/2011/09/721.html
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
 
 
+有哪些高效但是不常见的CLI命令？ - 知乎
+https://www.zhihu.com/question/25910725
 
 **linux里目录有空格的时候得用反斜杠加空格才能进去**
 ```
@@ -285,3 +293,5 @@ ctrl+r
 只需要寥寥几键。当然若仅是上几个命令还是[上]键更有效率
 ```
 
+Linux目录多个斜杠是否完全等同单个斜杠？
+https://unix.stackexchange.com/questions/12283/unix-difference-between-path-starting-with-and/12285
