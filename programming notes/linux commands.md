@@ -143,6 +143,10 @@ http://blog.csdn.net/sunxiaopengsun/article/details/72974548
 /sbin/ifconfig
 ```
 
+#### firefox上网
+https://zhidao.baidu.com/question/364840654.html
+
+
 ### 查看80端口被哪个程序占用
 ```
 netstat -anp | grep 80
