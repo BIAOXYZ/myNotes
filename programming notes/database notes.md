@@ -12,8 +12,11 @@ https://github.com/francs/PostgreSQL
 给PostgreSQL爱好者的参考资料
 http://blog.csdn.net/postgrechina/article/details/49132791
 
-<PostgreSQL Tutorial>
+PostgreSQL Tutorial
 http://www.postgresqltutorial.com/
+
+<<Postgres Changelog - All Versions>>
+https://bucardo.org/postgres_all_versions.html
 
 ## pgcon and pgcon China
 
