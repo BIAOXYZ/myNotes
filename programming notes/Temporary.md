@@ -26,13 +26,11 @@ http://blog.csdn.net/hunanchenxingyu/article/details/8101795
 http://blog.csdn.net/dinghqalex/article/details/42921931
 
 
-查看80端口被哪个程序占用
-```
-netstat -anp | grep 80
-```
 
 <<基于 Raft 构建分布式系统 TiKV>>
 https://toutiao.io/posts/17r5g9/preview
+
+## git相关临时记录
 
 关于git pull在branch1上往branch2拉代码的问题（测试版本为git 2.1.3）：
 ```
@@ -45,3 +43,10 @@ git pull remoterepo master:branch2 -- 除了把最新代码拉到branch2上，�
 当前处于branch2分支: 
 git pull remoterepo master:branch2 -- 只会把branch2更新到最新。
 ```
+
+How to remove local (untracked) files from the current Git working tree?
+https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+
+
+https://segmentfault.com/p/1210000008626219
+>http://www.worldhello.net/gotgit/
