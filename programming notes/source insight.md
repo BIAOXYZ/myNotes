@@ -1,5 +1,11 @@
 
 
+### 一般性的source insight相关
+
+<<Source Insight 常用设置和快捷键大全>>
+http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
+
+
 ### SI改变背景色为淡绿色(其实主要问题是那个颜色难选)
 ```
 Option --> Preferences --> Colors --> Window Background
