@@ -7,6 +7,12 @@ http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
 <<SSH用私钥登录远程服务器时提示私钥不安全>>
 http://www.codeweblog.com/ssh%E7%94%A8%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6%E6%8F%90%E7%A4%BA%E7%A7%81%E9%92%A5%E4%B8%8D%E5%AE%89%E5%85%A8/
 
+#### SSH建互信
+
+- http://blog.csdn.net/seeyouc/article/details/53102280
+- http://www.cnblogs.com/jyzhao/p/3781072.html
+- https://www.linuxdaxue.com/linux-auto-make-ssh-authon.html
+
 ### samba
 
 <<Samba 的多用户共享目录配置>>
