@@ -55,7 +55,16 @@ https://www.elance.com/php/landing/main/login.php
 https://www.upwork.com/ 
 
 
+### IBM
 
+Research Scientist (IBM Center for Blockchain Innovation) - SINGAPORE, CENTRAL SINGAPORE
+http://ibm-research.jobs/job/research-scientist-ibm-center-for-blockchain-innovation-research-singapore-central-singapore-85213br/eb3539ab-f7f9-11e6-b9e2-bc764e10a8d2
+ 
+Sr. Blockchain Researcher - SHANGHAI, SHANGHAI
+http://ibm-research.jobs/job/sr-blockchain-researcher-research-shanghai-shanghai-79447br/3db86cc1-fdea-11e6-99c3-bc764e1156ea
+
+Research Staff Member, Blockchain & Blockchain Solutions - YORKTOWN HEIGHTS, NY
+http://ibm-research.jobs/job/research-staff-member-blockchain-blockchain-solutions-research-yorktown-heights-ny-81931br/2913106d-e80e-11e6-956a-bc764e1156ea
  
 # COMPANY
 
