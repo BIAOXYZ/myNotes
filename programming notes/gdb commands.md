@@ -5,12 +5,57 @@
 
 ## 旧的GDB知识总结
 
+<<使用GDB命令行调试器调试C/C++程序>>
+https://linux.cn/article-4302-1.html
+```
+info locals
+ptype [变量]
+```
+
+<<GDB命令使用总结（二）>>
+http://blog.chinaunix.net/uid-20788636-id-1841301.html
+```
+finish
+until
+```
+
+<<gdb 调试时指定跳到第几行>>
+http://blog.csdn.net/yasi_xi/article/details/40075267
+
+<gdb signal>
+http://blog.csdn.net/maotianwang/article/details/21451271
+  
+  
+
+### 调试实战
+
+- linux下C的GBD调试学习笔记
+http://blog.csdn.net/risingsun001/article/details/50464366
+```
+我们做一个实验，把源代码改名或移到别处再用gdb调试，这样就列不出源代码了：
+.
+.
+.
+可见gcc的-g选项并不是把源代码嵌入到可执行文件中的，在调试时也需要源文件。
+```
+
+- LINUX下GDB调试
+http://blog.csdn.net/yeyuangen/article/details/6825542
+
+- GDB 命令行调试之路(全 1-9)
+http://www.cnblogs.com/syncg/archive/2012/12/26/2834503.html
+
+
+## 用了一阵VS后又回头用GDB（因为kernel停摆，虽然后面又很快局部的恢复）
+
+```
 handle SIGPIPE nostop
 handle all nostop // 应该是这句？
+```
 
 
-一个小技巧，大家在gdb调试mppdb时，总需要屏蔽信号：
-可以这样让gdb每次自动加载这个屏蔽功能，不用每次自己输入
+*一个小技巧，大家在gdb调试mppdb时，总需要屏蔽信号：
+可以这样让gdb每次自动加载这个屏蔽功能，不用每次自己输入*
 ```
 alias gdb="gdb -x ~/.gdbinit"
 wangct@linux207:~> cat ~/.gdbinit 
@@ -23,6 +68,9 @@ handle SIGUSR2 noprint nostop
 save breakpoints bps.cfg
 source bps.cfg
 ```
+
+<<gdb调试断点的保存>>
+http://blog.csdn.net/yang15225094594/article/details/29599117
 
 ### GDB的set用法
 
@@ -50,21 +98,32 @@ set scheduler-locking on
 
 http://blog.csdn.net/gatieme/article/details/63254211
 
+### GDB多进程多线程调试
+
+gdb调试多进程和多线程命令
+http://blog.csdn.net/pbymw8iwm/article/details/7876797
+
+linux gdb-多线程调试
+http://blog.csdn.net/lhl_blog/article/details/8888010
+
+***旧的:***
+
+fork 多进程调试
+http://blog.csdn.net/fingding/article/details/46459095
+
+用gdb调试程序的子进程
+http://blog.csdn.net/cjfeii/article/details/21647663
 
 ## 其他参考链接：
 
 <<gdb学习笔记(一)>>
 http://simohayha.iteye.com/blog/493091
 
-
-http://blog.csdn.net/pbymw8iwm/article/details/7876797
-
-http://blog.csdn.net/lhl_blog/article/details/8888010
-
 <Linux gdb调试器用法全面解析>
 http://blog.csdn.net/21cnbao/article/details/7385161
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # 其他调试工具
