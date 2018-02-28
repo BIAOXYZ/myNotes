@@ -65,6 +65,9 @@ http://ibm-research.jobs/job/sr-blockchain-researcher-research-shanghai-shanghai
 
 Research Staff Member, Blockchain & Blockchain Solutions - YORKTOWN HEIGHTS, NY
 http://ibm-research.jobs/job/research-staff-member-blockchain-blockchain-solutions-research-yorktown-heights-ny-81931br/2913106d-e80e-11e6-956a-bc764e1156ea
+
+[IBM Japan] Postdoctoral Researcher - Security Researcher - TOKYO, TOKYO
+http://ibm-research.jobs/job/ibm-japan-postdoctoral-researcher-security-researcher-research-tokyo-tokyo-84341br/726f7bf2-f43d-11e6-88f5-bc764e1156ea
  
 # COMPANY
 
