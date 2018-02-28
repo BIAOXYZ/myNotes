@@ -1,6 +1,8 @@
 
 ## GDB一般性知识
 
+《100个gdb小技巧》
+https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details
 
 
 ## 旧的GDB知识总结
@@ -22,10 +24,11 @@ until
 <<gdb 调试时指定跳到第几行>>
 http://blog.csdn.net/yasi_xi/article/details/40075267
 
-<gdb signal>
+<<gdb signal>>
 http://blog.csdn.net/maotianwang/article/details/21451271
   
-  
+GNU Debugger or GDB: A Powerful Source Code Debugging tool for Linux Programs
+https://www.tecmint.com/debug-source-code-in-linux-using-gdb/
 
 ### 调试实战
 
@@ -105,6 +108,10 @@ http://blog.csdn.net/pbymw8iwm/article/details/7876797
 
 linux gdb-多线程调试
 http://blog.csdn.net/lhl_blog/article/details/8888010
+
+使用 GDB 调试多进程程序
+https://www.ibm.com/developerworks/cn/linux/l-cn-gdbmp/index.html
+
 
 ***旧的:***
 
