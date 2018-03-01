@@ -48,5 +48,6 @@ waiting for 谭焜 t00396593 郑凯 z00324674 陈海波 c00405015
 - http://madsys.cs.tsinghua.edu.cn/people.html
 - http://www.chenyineng.info/
 - http://cs.ustc.edu.cn/szdw/bdjs/201006/t20100614_22073.html
+- http://www.sklois.cn/xwdt/kydt/201511/t20151130_316746.html http://dacas.iie.cas.cn/xwdt/xshd/201601/t20160104_321562.html http://dacas.cn/thread.aspx?ID=2542
 
 
