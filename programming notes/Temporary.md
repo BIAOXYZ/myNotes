@@ -50,3 +50,6 @@ https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-fr
 
 https://segmentfault.com/p/1210000008626219
 >http://www.worldhello.net/gotgit/
+
+猴子都能懂的GIT入门
+https://backlog.com/git-tutorial/cn/contents/
