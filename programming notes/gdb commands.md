@@ -24,11 +24,9 @@ until
 <<gdb 调试时指定跳到第几行>>
 http://blog.csdn.net/yasi_xi/article/details/40075267
 
-<<gdb signal>>
+<< gdb signal >>
 http://blog.csdn.net/maotianwang/article/details/21451271
-  
-GNU Debugger or GDB: A Powerful Source Code Debugging tool for Linux Programs
-https://www.tecmint.com/debug-source-code-in-linux-using-gdb/
+
 
 ### 调试实战
 
@@ -48,6 +46,30 @@ http://blog.csdn.net/yeyuangen/article/details/6825542
 - GDB 命令行调试之路(全 1-9)
 http://www.cnblogs.com/syncg/archive/2012/12/26/2834503.html
 
+GNU Debugger or GDB: A Powerful Source Code Debugging tool for Linux Programs
+https://www.tecmint.com/debug-source-code-in-linux-using-gdb/
+
+
+### 调试实战2
+
+```
+调试已启动的dn:
+
+postgres=# alter table row_type_tbl_001 add column id int;
+ERROR:  dn_6017_6018: role 16760 was concurrently dropped
+
+- 用 "select * from pgxc_node_env;" 查到报错dn的主dn所在的主机ip和目录。
+- 连上该主机，用 "ps aux | grep gaussdb" 找到该主dn的进程号dnpid。
+- "gdb attach dnpid" 或 "gdb" 启动，然后在gdb内 "att dnpid"。
+- gdb内: "handle SIGUSR2 nostop noprint"
+- gdb内: "b elog.cpp:271"
+- 到另一个已经连上cn的窗口执行语句，然后回到该窗口gdb内 "c"，有时候"c"一下不行，可以多"c"几次，注意看堆栈，在正确位置停下就行。
+（注：也可以先在gdb内按 "c" 继续运行，然后到另一个已经连上cn的窗口执行语句。但这样有时候断不住，不知道为啥，回来再研究下。）
+- 调试完成后gdb内执行 "detach"，然后 "q" 退出gdb。
+
+cn和dn一起调试的话和该过程类似，只是除了执行语句的窗口，要额外开两个gdb，一个挂cn进程，一个挂dn进程。
+各自打好断点，屏蔽好信号。
+```
 
 ## 用了一阵VS后又回头用GDB（因为kernel停摆，虽然后面又很快局部的恢复）
 
