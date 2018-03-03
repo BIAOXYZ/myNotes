@@ -2,6 +2,9 @@
 ## mingjie 
 
 
+http://blog.csdn.net/u014539401/article/details/70992923
+http://mutex73.github.io/
+
 =======================================================================================
 [pgenv.sh]
 if [ ${#} -ne 1 ]; then
