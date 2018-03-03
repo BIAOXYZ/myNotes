@@ -11,6 +11,9 @@ https://aws.amazon.com/cloud9/
 随笔分类 - UNIX环境高级编程学习笔记
 https://www.cnblogs.com/lienhua34/category/607035.html
 
+弱类型、强类型、动态类型、静态类型语言的区别是什么？ - 知乎
+https://www.zhihu.com/question/19918532
+
 ### 字节对齐
 
 << Data structure alignment >>
