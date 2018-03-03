@@ -20,6 +20,17 @@ http://www.jb51.net/article/89425.htm
 
 # IDE
 
+## IDE Jupyter
+
+http://codingpy.com/article/getting-started-with-jupyter-notebook-part-2/
+
+### Jupter官网
+
+- http://jupyter.org/documentation
+- https://nbviewer.jupyter.org/
+
+
+
 ## IDE pycharm
 
 ### pycharm日常
