@@ -21,6 +21,12 @@ https://www.zhipin.com/
 
 ## aboard
 
+### Linkedin
+
+Alibaba-Quantum Positions-Aliyun Quantum Laboratory (AQL)
+https://www.linkedin.com/jobs/view/492948751/
+
+
 - 国外有哪些著名的求职网站？ - Kris的回答 - 知乎
 https://www.zhihu.com/question/20406967/answer/126551266
 
