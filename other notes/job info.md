@@ -93,6 +93,9 @@ http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/1323972949
 
 ### Alibaba
 
+Alibaba Cloud-Quantum Positions-Aliyun Quantum Laboratory (AQL)
+https://bbs.aliyun.com/read/538006.html?spm=a2c4e.11155515.0.0.F9pmaw
+
 蚂蚁金服-数据安全技术专家-信用
 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=43973
 
