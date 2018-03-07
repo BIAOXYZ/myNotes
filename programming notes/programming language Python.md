@@ -5,8 +5,10 @@
 Python Tutorials
 https://gist.github.com/reorx/8aa83ad55591987dc286
 
-<<Python v2.7.8 文档>>
+- Python v2.7.8 文档
 http://usyiyi.cn/translate/python_278/index.html
+- Python 3.5.2文档
+http://usyiyi.cn/translate/python_352/index.html
 
 <<Python 2.7.14 documentation>>
 https://docs.python.org/2/
@@ -81,7 +83,7 @@ http://blog.csdn.net/w371500241/article/details/78582403
 https://www.cnblogs.com/tq007/p/7281105.html
 
 
-### 安装使用
+### Anaconda安装使用
 
 <Pycharm，Anaconda的安装，集成开发环境，包安装>
 https://www.jianshu.com/p/98b2fbb3a45c
@@ -103,6 +105,9 @@ https://zhuanlan.zhihu.com/p/32925500
 
 <<用PDB库调试Python程序>>
 http://www.cnblogs.com/dkblog/archive/2010/12/07/1980682.html
+
+Python 程序如何高效地调试？ - 知乎用户的回答 - 知乎
+https://www.zhihu.com/question/21572891/answer/149974828
 
 
 # 语法
