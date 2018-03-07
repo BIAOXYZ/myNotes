@@ -1,4 +1,11 @@
 
+## OJ's
+
+算法珠玑——一个最精简的题库
+https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
+
+
+
 ## Online IDE/Platform
 
 https://www.heroku.com/postgres
@@ -31,6 +38,11 @@ https://en.wikipedia.org/wiki/Data_structure_alignment
 ### 信号量
 
 https://www.zhihu.com/question/47411729
+
+### 多进程多线程编程
+
+Linux下的多线程编程和fork()函数详解
+http://www.jb51.net/LINUXjishu/597423.html
 
 ## 编程题目
 
