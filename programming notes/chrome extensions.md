@@ -5,3 +5,6 @@ http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1009/8575.html
 
 值得推荐的chrome书签同步插件汇总
 http://www.cnplugins.com/zhuanti/bookmark-sync.html
+
+VIP看看
+http://chromecj.com/fun/2018-02/1352.html
