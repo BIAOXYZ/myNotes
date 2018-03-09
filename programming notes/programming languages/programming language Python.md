@@ -16,6 +16,10 @@ https://docs.python.org/2/
 <<Python 2.7教程>>
 https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000
 
+这些是 Python 官方推荐的最好书籍（推荐）
+https://zhuanlan.zhihu.com/p/34378860
+> https://pythonbooks.org/
+
 http://www.jb51.net/article/89425.htm
 >更多关于Python相关内容感兴趣的读者可查看本站专题：《Python字符串操作技巧汇总》、《Python编码操作技巧总结》、《Python图片操作技巧总结》、《Python数据结构与算法教程》、《Python Socket编程技巧总结》、《Python函数使用技巧总结》、《Python入门与进阶经典教程》及《Python文件与目录操作技巧汇总》
 
