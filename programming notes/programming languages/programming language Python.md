@@ -42,8 +42,9 @@ http://blog.csdn.net/pipisorry/article/details/39909057
 ```
 Ctrl + /    行注释/取消行注释
 Ctrl + Shift + F  或者连续2次敲击shift   全局查找{可以在整个项目中查找某个字符串什么的，如查找某个函数名字符串看之前是怎么使用这个函数的}
-Ctrl + Y 删除当前插入符所在的行
-Ctrl + G    查看当前行号、字符号 (跳转到输入的指定行)
+Ctrl + Y  删除当前插入符所在的行
+Ctrl + G  查看当前行号、字符号 (跳转到输入的指定行)
+Ctrl + D  复制选定的区域或行
 ```
 
 你有哪些想要分享的 PyCharm 使用技巧？ - 知乎
@@ -108,6 +109,9 @@ http://www.cnblogs.com/dkblog/archive/2010/12/07/1980682.html
 
 Python 程序如何高效地调试？ - 知乎用户的回答 - 知乎
 https://www.zhihu.com/question/21572891/answer/149974828
+
+Python 代码调试技巧
+https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/
 
 
 # 语法
