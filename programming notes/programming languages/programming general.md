@@ -5,13 +5,25 @@
 https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
 
 
-
 ## Online IDE/Platform
 
 https://www.heroku.com/postgres
 
 c9.io
 https://aws.amazon.com/cloud9/
+
+Koding
+https://koding.com/
+
+Codiad
+http://codiad.com/
+
+CODENVY
+https://codenvy.com/
+
+Eclipse Che
+https://www.eclipse.org/che/
+
 
 ## 编程知识
 
@@ -20,6 +32,9 @@ https://www.cnblogs.com/lienhua34/category/607035.html
 
 弱类型、强类型、动态类型、静态类型语言的区别是什么？ - 知乎
 https://www.zhihu.com/question/19918532
+
+堆栈、堆、队列的区别
+http://bbs.csdn.net/topics/290054298
 
 ### 字节对齐
 
@@ -39,10 +54,20 @@ https://en.wikipedia.org/wiki/Data_structure_alignment
 
 https://www.zhihu.com/question/47411729
 
+### 锁
+
+自旋锁spinlock剖析与改进
+https://kb.cnblogs.com/page/105657/
+
+Pthreads并行编程之spin lock与mutex性能对比分析
+http://www.parallellabs.com/2010/01/31/pthreads-programming-spin-lock-vs-mutex-performance-analysis/
+
 ### 多进程多线程编程
 
 Linux下的多线程编程和fork()函数详解
 http://www.jb51.net/LINUXjishu/597423.html
+
+
 
 ## 编程题目
 
