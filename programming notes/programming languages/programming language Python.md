@@ -54,6 +54,11 @@ Ctrl + D  复制选定的区域或行
 你有哪些想要分享的 PyCharm 使用技巧？ - 知乎
 https://www.zhihu.com/question/37787004
 
+喏，你们要的 PyCharm 快速上手指南
+https://zhuanlan.zhihu.com/p/26066151
+
+
+### pycharm问题
 
 Pycharm下运行程序查看每个变量的值的方法（类似于Spyder和MATLAB）
 https://www.cnblogs.com/tq007/p/7285239.html
@@ -62,8 +67,8 @@ https://www.cnblogs.com/tq007/p/7285239.html
 为什么用pycharm在同目录下import，pycharm会报错，但是实际可以运行？ - regin的回答 - 知乎
 https://www.zhihu.com/question/52880389/answer/134369870
 
-### linux下安装pycharm有问题，目前还没时间看
 
+{linux下安装pycharm有问题，目前还没时间看}
 https://stackoverflow.com/questions/27727826/problems-installing-pycharm
 
 
