@@ -74,6 +74,11 @@ http://ibm-research.jobs/job/research-staff-member-blockchain-blockchain-solutio
 
 [IBM Japan] Postdoctoral Researcher - Security Researcher - TOKYO, TOKYO
 http://ibm-research.jobs/job/ibm-japan-postdoctoral-researcher-security-researcher-research-tokyo-tokyo-84341br/726f7bf2-f43d-11e6-88f5-bc764e1156ea
+
+http://www.research.ibm.com/labs/china/
+
+IBM to open Blockchain Innovation Center in Singapore
+https://www.ibtimes.co.uk/ibm-open-blockchain-innovation-center-singapore-1570117
  
 # COMPANY
 
