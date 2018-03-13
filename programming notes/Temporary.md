@@ -46,10 +46,37 @@ git pull remoterepo master:branch2 -- 只会把branch2更新到最新。
 
 How to remove local (untracked) files from the current Git working tree?
 https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+```
+If untracked directory is a git repository of its own (e.g. submodule), you need to use -f twice:
 
+git clean -d -f -f
+```
 
+《Git权威指南》GotGit 书稿开源
 https://segmentfault.com/p/1210000008626219
 >http://www.worldhello.net/gotgit/
 
 猴子都能懂的GIT入门
 https://backlog.com/git-tutorial/cn/contents/
+
+Git 常用命令整理
+http://justcoding.iteye.com/blog/1830388
+
+
+- 猴子都能懂的GIT入门 -- 教程2 操作标签
+https://backlog.com/git-tutorial/cn/stepup/stepup5_2.html
+- 易百教程 -- git tag命令 
+https://www.yiibai.com/git/git_tag.html
+
+#### Gerrit
+
+易百教程 -- Gerrit概述
+https://www.yiibai.com/gerrit/gerrit_overview.html
+
+[原创]CI持续集成系统环境---部署gerrit环境完整记录
+https://www.cnblogs.com/kevingrace/p/5624122.html
+
+Gerrit代码Review入门实战
+http://geek.csdn.net/news/detail/85681
+
+#### Jenkins
