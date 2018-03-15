@@ -224,6 +224,16 @@ http://www.runoob.com/python/python-exceptions.html
 http://www.yiibai.com/python/python_exceptions.html
 
 
+### python错误处理
+
+“Too many values to unpack” Exception
+https://stackoverflow.com/questions/1479776/too-many-values-to-unpack-exception
+
+TypeError: 'NoneType' object is not iterable in Python
+https://stackoverflow.com/questions/3887381/typeerror-nonetype-object-is-not-iterable-in-python
+> 【Python】python "TypeError: 'NoneType' object is not iterable"错误分析 http://blog.csdn.net/dataspark/article/details/9953225
+
+
 ## 伯乐在线python
 
 27 个机器学习、数学、Python 速查表

@@ -1,12 +1,23 @@
+
+# JOB news
+
+IBM to open Blockchain Innovation Center in Singapore
+https://www.ibtimes.co.uk/ibm-open-blockchain-innovation-center-singapore-1570117
+
+Visa, Microsoft, and IBM Are All Hiring Blockchain Developers
+https://futurism.com/visa-microsoft-and-ibm-are-all-hiring-blockchain-developers/
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
  
 # JOB WEBSITE
 
-## home
+## job website home
 
 http://job.freebuf.com/
 
 http://www.miitjob.cn/
-
 
 http://zhaopin.baidu.com/
 [百度这个聚合的招聘功能确实不错]
@@ -19,13 +30,8 @@ http://www.highpin.cn
 https://www.zhipin.com/
 [BOSS直聘一般般]
 
-## aboard
 
-### Linkedin
-
-Alibaba-Quantum Positions-Aliyun Quantum Laboratory (AQL)
-https://www.linkedin.com/jobs/view/492948751/
-
+## job website aboard
 
 - 国外有哪些著名的求职网站？ - Kris的回答 - 知乎
 https://www.zhihu.com/question/20406967/answer/126551266
@@ -33,10 +39,17 @@ https://www.zhihu.com/question/20406967/answer/126551266
 - 国外都有哪些招聘网站？ - xiaojun fan的回答 - 知乎
 https://www.zhihu.com/question/19895362/answer/150333620
 
-Glassdoor
-https://www.glassdoor.com/index.htm
 
-## part time
+### Linkedin
+
+Alibaba-Quantum Positions-Aliyun Quantum Laboratory (AQL)
+https://www.linkedin.com/jobs/view/492948751/
+
+### Glassdoor (https://www.glassdoor.com/index.htm)
+
+
+
+## job website part time
 
 - 国内有类似Freelancer的网站？ - 知乎
 https://www.zhihu.com/question/26478092
@@ -61,6 +74,12 @@ https://www.elance.com/php/landing/main/login.php
 https://www.upwork.com/ 
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# COMPANY
+
+## foreign company
+
 ### IBM
 
 Research Scientist (IBM Center for Blockchain Innovation) - SINGAPORE, CENTRAL SINGAPORE
@@ -75,12 +94,15 @@ http://ibm-research.jobs/job/research-staff-member-blockchain-blockchain-solutio
 [IBM Japan] Postdoctoral Researcher - Security Researcher - TOKYO, TOKYO
 http://ibm-research.jobs/job/ibm-japan-postdoctoral-researcher-security-researcher-research-tokyo-tokyo-84341br/726f7bf2-f43d-11e6-88f5-bc764e1156ea
 
+#### IBM China
+
 http://www.research.ibm.com/labs/china/
 
-IBM to open Blockchain Innovation Center in Singapore
-https://www.ibtimes.co.uk/ibm-open-blockchain-innovation-center-singapore-1570117
- 
-# COMPANY
+
+### SAP
+
+### VISA
+
 
 ## giant (BAT)
 
@@ -176,9 +198,13 @@ https://www.liepin.com/job/1910643716.shtml
 网络安全工程师/经理（资深密码学）
 http://www.highpin.cn/job/h2337217.html
 
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
  
 # ACADEMIC
 
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # STATE-BACKED
 

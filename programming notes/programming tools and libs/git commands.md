@@ -110,15 +110,32 @@ https://www.cnblogs.com/kidsitcn/p/4513297.html
 
 ### 清理类撤销 git clean
 
-```
-git clean -xdf命令待完成
-```
 <<git如何删除本地所有未提交的更改>>
 https://www.v2ex.com/t/66718
+```
+git clean -df 一般用这个就可以，但是注意要选对目录:目录太低删不干净。
+git clean -ndf 有-n参数就是只是显示哪些会被删，但不做删除
+git clean -xdf -x参数的意义如下：
+
+默认情况下，git clean 命令只会移除没有忽略的未跟踪文件。 任何与 .gitiignore 
+或其他忽略文件中的模式匹配的文件都不会被移除。 如果你也想要移除那些文件，例如
+为了做一次完全干净的构建而移除所有由构建生成的 .o 文件，可以给 clean 命令增加一个 -x 选项。
+(https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%E4%B8%8E%E6%B8%85%E7%90%86)
+```
 
 http://blog.csdn.net/leedaning/article/details/50125375
 
 https://www.cnblogs.com/xuange306/p/6838964.html
+
+
+How to remove local (untracked) files from the current Git working tree?
+https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+```
+If untracked directory is a git repository of its own (e.g. submodule), you need to use -f twice:
+
+git clean -d -f -f
+```
+*这个里面提供了不少达到git clean目的的技巧，但是最稳妥还是git clean -df*
 
 
 ### git log
@@ -201,6 +218,7 @@ http://blog.csdn.net/lue2009/article/details/46551201
 ```
 *说是这么说，其实我发现如果用github的windows客户端，生成的公钥私钥名字叫github_rsa.pub，github_rsa。然后我贴了公钥到bitbucket发现咋都不行。后来才想到是名字不对！于是把github_rsa另存一份，重命名成id_rsa，然后就解决了。*
 
+
 ### git彩色显示
 
 <<.1 自定义 Git - 配置 Git>>
@@ -278,6 +296,34 @@ git fsck --lost-found
 
 ### git tag
 
+易百教程 -- git tag命令 
+https://www.yiibai.com/git/git_tag.html
+
+廖雪峰git教程 -- 标签管理
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013762144381812a168659b3dd4610b4229d81de5056cc000
+```
+git tag   查看当前所有tag
+git show tagname    查看名为tagname的tag的信息
+git tag -a tagname -m "tag message" [commit id]   在commit id上增加名为tagname，信息为tag message的tag
+git tag -d tagname  删除名为tagname的tag
+git push origin v1.0  推送v1.0标签到origin
+git push origin --tags 推送所有标签到origin
+git push origin :refs/tags/v0.9 将本地的v0.9标签删除操作推送到远程
+                              （之前当然要先本地执行删除tag操作: git tag -d v0.9）
+```
+
+Git查看、删除、重命名远程分支和tag  
+https://yq.aliyun.com/articles/382627
+```
+git push origin --delete tag v1.0  删除远程tag的另一种（更自然的）方式
+git fetch origin tag v1.0  从远程获取tag
+
+另外这个贴里面关于分支的操作也不错，补一些：
+git remote show branchname (以前只是用git remote show，这样只会显示所有分支名。加了分支名称后显示信息很详细)
+git remote prune origin 或 git fetch -p (删除不存在对应远程分支的本地分支————这个回来再研究下吧) 
+git branch -av 比git branch -a显示信息全多了
+```
+
 ### git stash
 
 https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89
@@ -347,6 +393,20 @@ git log --graph --oneline
 * fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
 ```
 
+### git fetch(也包含部分git pull的内容)
+
+*关于git pull在branch1上往branch2拉代码的问题(测试版本为git 2.1.3):*
+```
+当前处于master分支: 
+git pull remoterepo master:branch2 -- 除了把最新代码拉到branch2上，会把master也更新到最新。
+
+当前处于branch1分支: 
+git pull remoterepo master:branch2 -- 除了把最新代码拉到branch2上，会把branch1也更新到最新。
+
+当前处于branch2分支: 
+git pull remoterepo master:branch2 -- 只会把branch2更新到最新。
+```
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -410,13 +470,19 @@ http://www.jb51.net/article/55442.htm
 <<Git 常用命令整理>>
 http://justcoding.iteye.com/blog/1830388
 
-### git书籍
+
+### git书籍和系列教程(易百教程git部分就不再重复贴了)
 
 <Pro Git>
 https://www.gitbook.com/book/bingohuang/progit2/details
 >远程分支 https://bingohuang.gitbooks.io/progit2/content/03-git-branching/sections/remote-branches.html
 
+《Git权威指南》GotGit 书稿开源
+https://segmentfault.com/p/1210000008626219
+>http://www.worldhello.net/gotgit/
 
+猴子都能懂的GIT入门
+https://backlog.com/git-tutorial/cn/contents/
 
 
 ## git push -u origin master 
@@ -517,3 +583,13 @@ https://david-dm.org/
 <GitLab收购公共聊天软件Gitter>
 http://www.infoq.com/cn/news/2017/03/gitlab-gitter-acquisition
 
+#### Gerrit
+
+易百教程 -- Gerrit概述
+https://www.yiibai.com/gerrit/gerrit_overview.html
+
+[原创]CI持续集成系统环境---部署gerrit环境完整记录
+https://www.cnblogs.com/kevingrace/p/5624122.html
+
+Gerrit代码Review入门实战
+http://geek.csdn.net/news/detail/85681
