@@ -20,6 +20,15 @@ http://www.360doc.com/content/14/0531/20/12144668_382602527.shtml
 <<Source insight标题栏中路径显示完整路径的方法>>
 http://www.cnblogs.com/zhuyijie/p/6465765.html
 
+<<Source Insight窗口顶部显示文件全路径>>
+http://blog.csdn.net/pz0605/article/details/64457402
+```
+Options-->Preferences-->Display-->取消勾选Trim long path names with ellipsis
+
+注:上面那个cnblogs里的帖子最后一步恰好说反了。不过影响不大，改的时候试一试就知道该勾选还是不勾选了。
+```
+> 这个帖子的作者有个关于blockchain的资源不错，这里也记一下。回头在blockchain专门的页面也会记一下。
+>> https://github.com/LiuBoyu/blockchain ; https://liuboyu.github.io/blockchain/
 
 ### 有些变量或者函数是黑色的，没有同步
 <<Source Insight基本使用和快捷键>>
