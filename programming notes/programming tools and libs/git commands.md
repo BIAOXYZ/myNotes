@@ -593,3 +593,11 @@ https://www.cnblogs.com/kevingrace/p/5624122.html
 
 Gerrit代码Review入门实战
 http://geek.csdn.net/news/detail/85681
+
+### GitLab相关
+
+GitLab安装、使用教程（Docker版） - 慕课网的文章 - 知乎
+https://zhuanlan.zhihu.com/p/33592623
+
+Git使用教程,最详细，最傻瓜，最浅显，真正手把手教 - 慕课网的文章 - 知乎
+https://zhuanlan.zhihu.com/p/30044692

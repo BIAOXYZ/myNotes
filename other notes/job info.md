@@ -208,3 +208,41 @@ http://www.highpin.cn/job/h2337217.html
 
 # STATE-BACKED
 
+
+
+# 工作相关八卦
+
+## 工作需注意点
+
+北京长租公寓数据大盘点（最全）
+https://zhuanlan.zhihu.com/p/31251759
+
+北京长租公寓大盘点（第二弹）
+https://zhuanlan.zhihu.com/p/28469656
+
+五险一金及税后工资计算器
+http://salarycalculator.sinaapp.com/
+
+## 一般性八卦
+
+哪家 IT 公司不加班？ - 知乎
+https://www.zhihu.com/question/25708912
+
+国内哪家互联网公司不加班？ - 知乎
+https://www.zhihu.com/question/21815819
+
+中国知名 IT 企业加班情况分别是怎样的？ - 知乎
+https://www.zhihu.com/question/67317889
+
+
+## 特定公司八卦
+
+阿里巴巴公司根据截图查到泄露信息的具体员工的技术是什么？ - AmeliaAn的回答 - 知乎
+https://www.zhihu.com/question/50735753/answer/338013283
+
+你为什么选择离开BAT(百度，阿里，腾讯)一类的巨头互联网公司？ - 杨林的回答 - 知乎
+https://www.zhihu.com/question/64177506/answer/220262260
+
+如何看待疑似京东离职竞业限制条款被曝光？ - 知乎
+https://www.zhihu.com/question/268631439
+

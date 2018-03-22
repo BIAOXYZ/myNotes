@@ -18,13 +18,15 @@ http://www.postgresqltutorial.com/
 <<Postgres Changelog - All Versions>>
 https://bucardo.org/postgres_all_versions.html
 
+
+
+
 ## pgcon and pgcon China
 
 ### PGCon (https://www.pgcon.org/)
 
 http://www.pgcon.org/2016/
 >[Index Internals http://www.pgcon.org/2016/schedule/events/934.en.html]
-
 
 ### PGconChina
 
@@ -36,6 +38,8 @@ http://www.postgres.cn/downfiles/pg2016conf_day2_s1_pm3.pdf
 ###  PGConf APAC
 
 http://2018.pgconfapac.org/
+
+
 
 
 ### 关于postgresql.auto.conf文件
@@ -123,10 +127,9 @@ http://blog.csdn.net/postgres20/article/details/53354330
 PostgreSQL执行引擎简介
 http://www.leehao.org/postgresql-executioneng/
 
-
-
 postgres 源码分析 之 insert (1)
 http://blog.csdn.net/huguangshanse00/article/details/37045847
+
 
 
 
@@ -171,6 +174,40 @@ http://grokbase.com/t/postgresql/pgsql-bugs/056wfat3ar/bug-1735-row-number-1-is-
 
 https://www.ibm.com/developerworks/cn/opensource/os-postgresecurity/
 
+#### PG自定义函数
+```
+<<使用C语言写PostgreSQL函数>>
+http://blog.csdn.net/bqw2008/article/details/50957507
+
+按照上面帖子写的在PG10 beta1版本的过程为：
+1. gcc -I`pg_config --includedir-server` -fPIC  -c cfunc.c
+2. gcc -shared -o cfunc.so cfunc.o
+3. cp cfunc.so `pg_config --libdir`
+4. load cfunc.so
+5. CREATE OR REPLACE FUNCTION add_one(integer) RETURNS integer AS '$libdir/cfunc', 'add_one' LANGUAGE C STRICT;
+
+但是会报错：
+postgres=# CREATE FUNCTION add_one(integer) RETURNS integer AS '$libdir/cfunc', 'add_one' LANGUAGE C STRICT;
+ERROR:  could not find function information for function "add_one"
+HINT:  SQL-callable functions need an accompanying PG_FUNCTION_INFO_V1(funcname).
+
+然后查了下，在这个帖子里（https://stackoverflow.com/questions/48892087/using-c-functions-in-postresql）提到
+是因为version-1的调用要用PG内部的宏来处理，从而避免复杂的细节问题。然后再查找手册（PG 9.6.0 中文版 36.9.4部分）
+用version-1格式就可以了。最后再附几个例子（没有验证，不一定靠谱）。
+
+PostgreSQL扩展函数和触发器
+http://valleylord.github.io/post/201410-postgres-trigger-example/
+
+Writing Postgres Extensions - the Basics
+http://big-elephants.com/2015-10/writing-postgres-extensions-part-i/
+
+使用C编写的动态链接库为PostgreSQL数据库添加自定义函数
+http://blog.csdn.net/iihero/article/details/8218753
+
+C 中调用 PostgreSQL 内置动态加载函数的方法
+http://blog.csdn.net/davidzwb/article/details/53172453
+```
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -188,11 +225,12 @@ http://postgres-xc.sourceforge.net/docs/1_1/index.html
 <<PostgreSQL-XC : Data Replication or Distribution ? >>
 http://francs3.blog.163.com/blog/static/4057672720125453315201/
 
+
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # Oracle
-
 
 <<oracle数据库，表空间和表之间是什么关系？>>
 http://bbs.csdn.net/topics/320169443
@@ -227,10 +265,16 @@ SQL> conn /as sysdba
 
 
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # MySQL
+
+HBase vs. MongoDB vs. MySQL vs. Oracle vs. Redis，三大主流开源 NoSQL 数据库的 PK 两大主流传统 SQL 数据库 
+http://blog.csdn.net/defonds/article/details/48471087
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 
@@ -244,6 +288,10 @@ https://www.cnblogs.com/ivictor/p/5111495.html
 http://www.cnblogs.com/grefr/p/6087942.html
 
 http://www.cnblogs.com/leejean/p/4914228.html
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 
 # 一般性的
@@ -320,9 +368,15 @@ http://momjian.us/main/blogs/pgblog.html
 
 http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # firebird
 
 https://www.viva64.com/en/b/0542/
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # DATABASE SECURITY

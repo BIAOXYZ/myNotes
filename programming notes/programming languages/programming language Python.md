@@ -23,6 +23,8 @@ https://zhuanlan.zhihu.com/p/34378860
 http://www.jb51.net/article/89425.htm
 >更多关于Python相关内容感兴趣的读者可查看本站专题：《Python字符串操作技巧汇总》、《Python编码操作技巧总结》、《Python图片操作技巧总结》、《Python数据结构与算法教程》、《Python Socket编程技巧总结》、《Python函数使用技巧总结》、《Python入门与进阶经典教程》及《Python文件与目录操作技巧汇总》
 
+Python 的练手项目有哪些值得推荐？ - 刘志军的回答 - 知乎
+https://www.zhihu.com/question/29372574/answer/192385626
 
 # IDE
 

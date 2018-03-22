@@ -5,6 +5,12 @@
 <<Source Insight 常用设置和快捷键大全>>
 http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
 
+Source Insight函数调用关系显示设置
+http://blog.csdn.net/duanbeibei/article/details/24395777
+
+Source Insight常用快捷键及注释快捷键设置
+http://blog.csdn.net/quincyfang/article/details/6536610
+
 
 ### SI改变背景色为淡绿色(其实主要问题是那个颜色难选)
 ```
