@@ -1,4 +1,5 @@
 
+# 0. Copy pgenv.sh to ~/bin
 # 1. Write this command (alias pp='source $HOME/bin/pgenv.sh') into ~/.bashrc
 # 2. Use "pp 10/11/20" and so on to change PG environment variables
 
