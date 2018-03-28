@@ -1,3 +1,7 @@
+
+# 1. Write this command (alias pp='source $HOME/bin/pgenv.sh') into ~/.bashrc
+# 2. Use "pp 10/11/20" and so on to change PG environment variables
+
 if [ ${#} -ne 1 ]; then
   echo "${0} ver"
 else
