@@ -1,11 +1,22 @@
 
 # C Libs
 
+### Libevent
 <<libevent源码深度剖析一>>
 http://blog.csdn.net/sparkliang/article/details/4957667
 
+### GnuTLS
 The GnuTLS Transport Layer Security Library
 https://www.gnutls.org/
+- Git Repository: https://gitlab.com/gnutls/gnutls
+> https://gitlab.com/gnutls/gnutls/blob/master/doc/TODO
+>> https://gitlab.com/gnutls/gnutls/issues
+- Document: https://www.gnutls.org/documentation.html
+> https://www.gnutls.org/manual/gnutls.pdf
+
+### OpenSSL
+https://www.openssl.org/
+- https://github.com/openssl/openssl
 
 # C++ Libs
 

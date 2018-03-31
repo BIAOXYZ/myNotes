@@ -246,3 +246,21 @@ https://www.zhihu.com/question/64177506/answer/220262260
 如何看待疑似京东离职竞业限制条款被曝光？ - 知乎
 https://www.zhihu.com/question/268631439
 
+
+在 SAP 工作是什么样的体验？ - 知乎
+https://www.zhihu.com/question/24717198/answer/86431800
+
+SAP上海labs工作体验？ - 知乎
+https://www.zhihu.com/question/36495615
+
+在IBM工作是怎样一番体验？ - 知乎
+https://www.zhihu.com/question/24759809/answer/127323061
+```
+现员工，已加入一年，准备离职。 现在的IBM已经不是以前的IBM了，不要来。
+特别是新人，学习晋升空间都非常有限，而且晋升都是会拍马屁的，认真做事的人只有一个下场，就是功劳被抢但是锅都算你的。
+点名：上海张江GCC 谁去谁倒霉
+```
+
+在英特尔 (Intel) 工作是怎样的一番体验？ - 知乎
+https://www.zhihu.com/question/24694855
+
