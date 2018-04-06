@@ -1,4 +1,21 @@
 
+### 环境变量
+
+<<Windows下PATH等环境变量详解>>
+https://www.cnblogs.com/sunada2005/articles/2725277.html
+
+> 虽然长，不过写的很好。绝大部分知识其实都知道了，但这个帖好的地方在于讲出了通用性。Linux下的环境变量也是这么一套方法。其实主要目的是搜索Windows下两个百分号括住一个变量名（比如 %GOROOT% ）是啥意思，也得到了解答:
+```
+set path=%path%;D:\Java\jdk1.6.0_24\bin
+
+     把PATH放在两个百分号之间，指把PATH原有的值取出。
+```
+> 也就是Windows下的%var%等于Linux下的$var呗。
+
+~顺便记几个Linux下的环境变量相关的帖子~
+
+- Linux环境变量详解 - CSDN博客 https://blog.csdn.net/gatieme/article/details/25975465
+- 【Linux】完全解读Linux环境变量 - CSDN博客 https://blog.csdn.net/xyw591238/article/details/51770247
 
 ### VPNs
 
