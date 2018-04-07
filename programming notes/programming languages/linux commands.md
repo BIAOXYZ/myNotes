@@ -234,17 +234,21 @@ http://blog.csdn.net/yangzhenzhen/article/details/8862236
 (https://www.cnblogs.com/the-study-of-linux/p/5501593.html)
 (https://www.cnblogs.com/peter9/archive/2011/07/28/2362156.html)
 
+<<每天一个linux命令>>
+http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
+
+有哪些高效但是不常见的CLI命令？ - 知乎
+https://www.zhihu.com/question/25910725
+
+## Linux运维类
 
 <<linux运维常用命令一句话（持续更新中）>>
 http://www.linuxde.net/2011/09/721.html
 
+【Linux运维入门】PSSH-轻量集群管理工具
+https://blog.csdn.net/u010028869/article/details/51547926
 
-<<每天一个linux命令>>
-http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
-
-
-有哪些高效但是不常见的CLI命令？ - 知乎
-https://www.zhihu.com/question/25910725
+## Linux小技巧
 
 **linux里目录有空格的时候得用反斜杠加空格才能进去**
 ```

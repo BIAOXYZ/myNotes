@@ -24,6 +24,33 @@ https://codenvy.com/
 Eclipse Che
 https://www.eclipse.org/che/
 
+### local IDE
+
+#### Atom
+
+Atom使用纪要
+http://www.cnblogs.com/Darren_code/p/atom.html
+
+使用Atom打造无懈可击的Markdown编辑器
+http://www.cnblogs.com/libin-1/p/6638165.html
+> 这么一番配置后确实写markdown好叼。。。但是基本的markdown预览不如VS CODE。再加VSC的其他优势，还是选后者吧
+
+Register as default atom:// URI handler?
+https://discuss.atom.io/t/register-as-default-atom-uri-handler/50982
+
+#### Visual Studio Code
+
+VS Code 使用小技巧 - 赵吉彤的文章 - 知乎
+http://zhuanlan.zhihu.com/p/22880087
+```
+- 预览markdown Ctrl+Shift+V  //所以Typora彻底没用了
+- 自动保存：File -> AutoSave ，或者Ctrl+Shift+P，输入 auto
+```
+
+VS Code 与 LaTeX 真乃天作之合
+https://www.jianshu.com/p/57f8d1e026f5
+
+
 ## Online Games
 
 学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎
@@ -71,6 +98,14 @@ http://www.parallellabs.com/2010/01/31/pthreads-programming-spin-lock-vs-mutex-p
 
 Linux下的多线程编程和fork()函数详解
 http://www.jb51.net/LINUXjishu/597423.html
+
+### 编码
+
+网络传输——Base64详解
+https://blog.csdn.net/wanghaobo920/article/details/8009575
+
+UniCode编码表及部分不可见字符过滤方案
+https://www.cnblogs.com/fan-yuan/p/8176886.html
 
 
 

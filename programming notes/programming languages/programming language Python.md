@@ -159,6 +159,10 @@ http://www.cnblogs.com/summer-cool/p/3884595.html
 
 ### module
 
+if __name__ == '__main__' 如何正确理解? - 旷修的回答 - 知乎
+https://www.zhihu.com/question/49136398/answer/114438004
+> http://blog.konghy.cn/2017/04/24/python-entry-program/
+
 #### __init__.py 
 
 python 在不同层级目录import 模块的方法

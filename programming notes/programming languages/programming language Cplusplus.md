@@ -16,13 +16,17 @@ http://www.gitbook.net/cplusplus/index.html
 - C++基础教程-多线程
 http://wiki.jikexueyuan.com/project/cplusplus/multithreading.html
 
-# 语法知识
+## C++优秀博客
 
-C++重载、重写、重定义区别
-http://glgjing.github.io/blog/2014/12/27/c-plus-plus-zhong-zai-,-zhong-xie-,-zhong-ding-yi-qu-bie/
+### L_XRUI的博客
+- 多态概念总结
+https://blog.csdn.net/l_xrui/article/details/52965676
+- 继承与多态虚函数分析
+https://blog.csdn.net/l_xrui/article/details/62238442
+- C语言实现继承与多态
+https://blog.csdn.net/L_XRUI/article/details/70231250
 
-C++的函数重载
-https://www.cnblogs.com/skynet/archive/2010/09/05/1818636.html
+### skynet
 
 - C++静态库与动态库
 http://www.cnblogs.com/skynet/p/3372855.html
@@ -32,6 +36,27 @@ http://www.cnblogs.com/skynet/p/3372855.html
 - 介绍linux/windows OS下静态库（.a、.lib）和动态库（.so、.dll）的 link & load
 http://www.cnblogs.com/scotth/p/3977928.html
 
+
+你可能不知道的 C++（一）
+https://segmentfault.com/a/1190000004301563
+
+
+# 语法知识
+
+## 重载重写重定义多态等等
+
+C++重载、重写、重定义区别
+http://glgjing.github.io/blog/2014/12/27/c-plus-plus-zhong-zai-,-zhong-xie-,-zhong-ding-yi-qu-bie/
+
+C++的函数重载
+https://www.cnblogs.com/skynet/archive/2010/09/05/1818636.html
+
+
+C++重写（覆盖）、重载、重定义、多态
+https://www.cnblogs.com/DannyShi/p/4593735.html
+> C++局部变量、全局变量、静态变量（堆、栈、静态存储区） http://www.cnblogs.com/DannyShi/p/4584750.html
+
+## 继承相关
 
 关于C++中的友元函数的总结
 http://www.cnblogs.com/BeyondAnyTime/archive/2012/06/04/2535305.html
@@ -58,13 +83,30 @@ Destructor called. The num is 10010.    (执行stud1的析构函数)
 栈是后进先出原则，所以先调用stud2？
 ```
 
+- c++虚函数的作用是什么？ - 郭无心的回答 - 知乎
+https://www.zhihu.com/question/23971699/answer/69592611
+> https://my.csdn.net/Hackbuteer1 (这个地址里好多面试题目)
+- c++虚函数的作用是什么？ - afraid的回答 - 知乎
+https://www.zhihu.com/question/23971699/answer/84337233
+> C++ 对象的内存布局 https://coolshell.cn/articles/12176.html
+
+
+
+## 其他语法
+
 C++项目中的extern "C" {}
 http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html
 
 How can I profile C++ code running in Linux?
 https://stackoverflow.com/questions/375913/how-can-i-profile-c-code-running-in-linux
 
-### 实战过程
+ofstream和ifstream详细用法
+https://blog.csdn.net/Augusdi/article/details/8865378
+
+C++委员会决定在C++20 中弃用原始指针
+https://www.cnbeta.com/articles/soft/712627.htm
+
+# 实战过程
 
 <<linux环境下编译C++ 程序 -- 易百教程>>
 https://www.yiibai.com/cplusplus/cpp-linux-gnu-compiler-collection.html

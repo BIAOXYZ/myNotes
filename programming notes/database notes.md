@@ -110,6 +110,9 @@ https://searchcode.com/codesearch/view/5324466/
 Pgsrcstructure
 https://wiki.postgresql.org/wiki/Pgsrcstructure
 
+Pgkernel
+https://wiki.postgresql.org/wiki/Pgkernel
+
 ----------------------------------------------------------------------------------------------------
 
 跟我一起读postgresql源码(一)——psql命令
@@ -143,8 +146,17 @@ https://www.cnblogs.com/alianbog/p/5605068.html
 <<PostgreSQL GUC 参数级别介绍>>
 http://blog.csdn.net/yunqishequ1/article/details/78084592
 
+PostgreSQL数据库配置文件之postgresql.conf全部参数详解
+https://blog.csdn.net/prettyshuang/article/details/50495347
 
 
+## PG SQL
+
+PostgreSQL 动态表复制（CREATE TABLE...LIKE）
+https://blog.csdn.net/wlwlwlwl015/article/details/52493197
+
+postgreSQL常用维护命令
+https://blog.csdn.net/aoerqileng/article/details/39721845
 
 ## PG存储
 
@@ -173,6 +185,43 @@ http://grokbase.com/t/postgresql/pgsql-bugs/056wfat3ar/bug-1735-row-number-1-is-
 ## PG其他
 
 https://www.ibm.com/developerworks/cn/opensource/os-postgresecurity/
+
+Postgresql数据库的一些字符串操作函数
+https://www.cnblogs.com/wuhenke/archive/2010/08/02/1790750.html
+
+
+### PG扩展
+
+- postgresql模块——pg_stat_statements详解和安装测试
+https://blog.csdn.net/lengzijian/article/details/8133471
+- PostgreSQL每日一贴-pg_stat_statements工具安装使用
+https://blog.csdn.net/enzesheng/article/details/42807367
+```
+实际上现在已经不需要手动做这些拷贝操作了
+拷贝 .so 文件到数据库服务器的 XXX/lib 目录
+拷贝 .control 和 .sql 文件到数据库服务器的 XXX/share/extension目录
+```
+- PostgreSQL之使用扩展Extension
+https://blog.csdn.net/pg_hgdb/article/details/79490509
+- 为PostgreSQL添加插件
+https://my.oschina.net/Suregogo/blog/550201
+
+#### pgcrypto扩展实战
+
+```
+/* 编译安装PG */ 
+//如果是已安装的PG数据库，前两步忽略。这种情况下要注意第三步配置正确的prefix。
+1. 进入代码主目录，后续用当前目录"./"表示。执行下述语句：
+./configure --prefix=/home/liuliang3/app/pgsql20 --without-zlib --enable-debug --enable-cassert --enable-thread-safety CFLAGS='-O0' --with-pgport=6920 --enable-depend
+2. 接着依然在该目录执行：
+make;make install
+
+/* 编译安装pgcrypto */
+3. ./configure --prefix=/home/liuliang3/app/pgsql20 
+(第3步为可选，如果是一个刚装的数据库接着装扩展，由于刚配过prefix，可以省略这步;但如果是一个之前已经安装好的数据库，可能需要再配一下，不然下一步可能把扩展装到别的PG里了)
+4. 进入./contrib/pgcrypto目录，执行下述语句：make;make install
+(成功后会自动将pgcrypto.so拷贝到数据库服务器的XXX/lib目录，将pgcrypto.control和几个pgcrypto相关的.sql文件拷贝到数据库服务器的XXX/share/extension目录)
+```
 
 #### PG自定义函数
 ```
@@ -304,6 +353,9 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
 
 ## books
 
+Become a Postgres Expert with Free Training
+https://www.enterprisedb.com/free-postgres-training
+
 <<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
 http://www.interdb.jp/pg/
 
@@ -321,8 +373,8 @@ http://download.chekiang.info/blog/PostgreSQL-9-Admin-Cookbook.pdf
 PostgreSQL修炼之道 - 从小工到专家
 http://www.gaofi.cn/book/detail/892
 
-Become a Postgres Expert with Free Training
-https://www.enterprisedb.com/free-postgres-training
+PostgreSQL Server Programming
+http://pdf.th7.cn/down/files/1312/PostgreSQL%20Server%20Programming.pdf
 
 ## 事务
 

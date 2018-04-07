@@ -50,6 +50,11 @@ http://www.ansible.com.cn/
 <零基础学习PDB命令行调试Python代码>
 http://python.jobbole.com/81184/
 
+### getopt
+
+python getopt
+http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
+
 ### python bitcoin related libs
 
 https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin

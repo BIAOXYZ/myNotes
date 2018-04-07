@@ -157,6 +157,9 @@ ddp 实现了快速交换光标所在行与它下面的行
 <<vim常用命令总结>>
 http://www.cnblogs.com/Nice-Boy/p/6124177.html
 
+## Vim配置
 
+有哪些编程必备的 Vim 配置？ - 知乎
+https://www.zhihu.com/question/19989337
 
 

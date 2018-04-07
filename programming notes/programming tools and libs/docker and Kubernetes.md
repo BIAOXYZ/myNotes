@@ -11,6 +11,9 @@ https://docs.docker.com/engine/swarm/swarm-tutorial/
 kubernetes中文社区
 https://www.kubernetes.org.cn/
 
+Kubernetes中文社区 | 中文文档
+http://docs.kubernetes.org.cn/
+
 
 # docker general
 

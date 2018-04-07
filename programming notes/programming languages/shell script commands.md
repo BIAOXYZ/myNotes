@@ -41,6 +41,13 @@ http://blog.csdn.net/hongchangfirst/article/details/28436947
 linux bash shell之变量替换：:=句法、=句法、:-句法、-句法、=?句法、?句法、:+句法、+句法
 https://www.cnblogs.com/fhefh/archive/2011/04/22/2024750.html
 
+#### Linux符号``的使用
+Linux—shell中$(( ))、$( )、``与${ }的区别
+https://blog.csdn.net/number_0_0/article/details/73291182
+
+linux shell中'',""和``的区别
+https://www.cnblogs.com/Skyar/p/5914942.html
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 

@@ -97,6 +97,45 @@ source bps.cfg
 <<gdb调试断点的保存>>
 http://blog.csdn.net/yang15225094594/article/details/29599117
 
+
+#### 后来发现用.gdbinit加断点文件的办法更好
+
+gdb中忽略信号处理
+https://blog.csdn.net/brucexu1978/article/details/7721321
+```
+info signals
+info handle
+查看有哪些信号在被GDB检测中。
+```
+```
+启动配置文件
+GDB使用中比较麻烦的事情，就是每次启动，还要手动敲一把命令，特别是断点比较多的情况，这个特便影响，工作效率。
+查了一下gdb info，gdb支持自动读取一个启动脚本文件.gdbinit，所以经常输入的启动命令，就都可以写在gdb启动目录的.gdbinit里面。
+比如
+.gdbinit:
+   file myapp
+   handle SIGPIPE nostop
+   break ss.c:100
+   break ss.c:200
+   run
+GDB和bash类似，也支持source这个命令，执行另外一个脚本文件。所以可以修改一下.gdbinit:
+.gdbinit:
+   file myapp
+   handle SIGPIPE nostop
+   source gdb.break
+   run
+gdb.break:
+   break ss.c:100
+   break ss.c:200
+这样修改的断点配置，只需要编辑gdb.break就可以了。再后来，偶而还是需要单独启动GDB，不想执行自动脚本，于是又改进了一下。
+首先把.gdbinit命名为gdb.init，然后定义一个shell alias:
+   $ alias .gdb=”gdb -x gdb.init”
+
+这样如果需要使用自动脚本，就用.gdb命令，否则用gdb进入交互状态的gdb。这样配置以后可以一个简单命令就开始调试，整个效率就能提高不少。
+```
+
+
+
 ### GDB的set用法
 
 follow-fork-mode的用法为：
@@ -122,6 +161,24 @@ set scheduler-locking on
 ### GDB插件
 
 http://blog.csdn.net/gatieme/article/details/63254211
+
+GDB实用插件(peda, gef, gdbinit)全解
+https://blog.csdn.net/gatieme/article/details/63254211
+
+终端调试哪家强？ - 韦易笑的文章 - 知乎
+http://zhuanlan.zhihu.com/p/32843449
+- gdbgui
+- Emacs GDB
+- .gdbinit 上配置 peda
+
+存在实现了后退功能的调试器吗？这种功能在实现上有什么难点呢？ - 知乎
+https://www.zhihu.com/question/57574574
+> 常用 GDB 命令中文速览 - Linux中国的文章 - 知乎 http://zhuanlan.zhihu.com/p/29663631
+>> reverse-next -- 反向单步跟踪，如果有函数调用，不会进入该函数
+
+gdb Debugging Full Example (Tutorial): ncurses - ETIN的文章 - 知乎
+http://zhuanlan.zhihu.com/p/28769268
+> gdb 调试入门，大牛写的高质量指南 http://blog.jobbole.com/107759/
 
 ### GDB多进程多线程调试
 
@@ -150,6 +207,11 @@ http://simohayha.iteye.com/blog/493091
 
 <Linux gdb调试器用法全面解析>
 http://blog.csdn.net/21cnbao/article/details/7385161
+
+Windows远程调试Linux上的C++程序
+http://www.heimizhou.com/windows-remote-debug-linux-c-plus-plus.html
+- 如何查看和停止Linux启动的服务 https://www.linuxidc.com/Linux/2016-05/131748.htm
+- Linux 查看服务状态（服务与进程）https://blog.csdn.net/tanga842428/article/details/79040089
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
