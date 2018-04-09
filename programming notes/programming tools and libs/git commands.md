@@ -330,6 +330,146 @@ https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%8
 
 https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
 
+
+
+你可能不知道的关于 Git stash 的技巧 - KenChoi的文章 - 知乎
+http://zhuanlan.zhihu.com/p/33435204
+
+**--------------------------------------------------**
+`#` ***git stash 个人实战***
+**--------------------------------------------------**
+
+##### -----开始阶段
+
+- 原始文件:
+```
+xxx,yyy,zzz
+```
+
+##### -----编辑内容，存储stash的阶段
+
+- 第一次编辑后:
+```
+xxx,yyy,zzz
+111
+```
+
+- 执行git stash存储(存储完成后工作区就干净了):
+```
+liuliang@SZX1000126633:script {dev}\> git stash
+Saved working directory and index state WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+```
+
+- 执行git stash list查看存储：
+```
+liuliang@SZX1000126633:script {dev}\> git stash list
+stash@{0}: WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+(END)
+```
+
+- 第二次编辑后:
+```
+xxx,yyy,zzz
+222
+```
+
+- 这次执行git stash save "2nd-cunchu"存储(存储完成后工作区干净，且信息是save参数后的信息)：
+```
+liuliang@SZX1000126633:script {dev}\> git stash save "2nd-cunchu"
+Saved working directory and index state On dev: 2nd-cunchu
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+```
+
+- 再次执行git stash list查看存储：
+```
+liuliang@SZX1000126633:script {dev}\> git stash list
+stash@{0}: On dev: 2nd-cunchu
+stash@{1}: WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+(END)
+```
+
+##### -----应用stash的阶段
+
+- 执行git stash apply，完成后文件把第二次的存储222写上去了，并且存储栈里的内容都还在：
+```
+xxx,yyy,zzz
+222
+```
+
+- 恢复回去(直接用git reset --hard即可)后，这次执行git stash apply stash@{1}，存储在栈里的内容也都在，但是文件是把第一次存储的111写上去了。
+```
+xxx,yyy,zzz
+111
+```
+
+- 恢复回去(直接用git reset --hard即可)后，这次试试git stash pop。成功后文件内容是恢复栈顶的222，不同于git stash apply的是，栈里的222那次stash的内容没了。其实从字面意思也比较好区分apply和pop。
+```
+xxx,yyy,zzz
+222
+```
+```
+liuliang@SZX1000126633:script {dev}\> git stash list
+stash@{0}: WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+(END)
+```
+
+- 再次恢复回去(这次是用git stash save "message"再存一次)，本次验证带参数的情况，git stash pop stash@{XXX}。其效果和对应的带参数的git stash apply stash@{XXX}类似，除了一点区别：pop应用完改动后会从栈里弹出(删除掉)那个存储。
+```
+liuliang@SZX1000126633:script {dev}\> git stash save "2nd-cunchu-2"
+Saved working directory and index state On dev: 2nd-cunchu-2
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+
+liuliang@SZX1000126633:script {dev}\> git stash list
+stash@{0}: On dev: 2nd-cunchu-2
+stash@{1}: WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+(END)
+```
+
+```
+liuliang@SZX1000126633:script {dev}\> git stash pop stash@{1}
+```
+```
+xxx,yyy,zzz
+111
+```
+```
+liuliang@SZX1000126633:script {dev}\> git stash list
+stash@{0}: On dev: 2nd-cunchu-2
+(END)
+```
+
+##### -----其他stash相关命令
+- 还有一些如下(有了上面的例子比较直观，不在列举了。但是都本地试了)：
+```
+git stash clear 这条命令会删除仓库中创建的所有的 stash。有可能不能恢复。
+git stash drop 这条命令会删除工作栈中最近的 stash。但是要谨慎地使用，有可能很难恢复。
+git stash drop stash@{1} 可以声明stash id来删除。
+
+你也可以存储没有追踪的文件。
+git stash save -u
+or
+git stash save --include-untracked
+
+PS：实际上save参数不是必须的，参见下面例子。
+
+liuliang@SZX1000126633:script {dev}\> git stash -u
+Saved working directory and index state WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+
+liuliang@SZX1000126633:script {dev}\> git stash save -u
+Saved working directory and index state WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+
+liuliang@SZX1000126633:script {dev}\> git stash --include-untracked
+Saved working directory and index state WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+
+liuliang@SZX1000126633:script {dev}\> git stash save --include-untracked
+Saved working directory and index state WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
+```
+
 ### git rebase
 <<Git Community Book 中文版 - rebase>>
 http://gitbook.liuhui998.com/4_2.html

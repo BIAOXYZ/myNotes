@@ -53,6 +53,8 @@ Go项目目录管理
 https://studygolang.com/articles/2233
 > 这个主要是因为本地的hello.go和package.go俩放一个文件夹下就报错才想到去查的
 
+为什么 Go 语言把类型放在后面？ - 林建入的回答 - 知乎
+https://www.zhihu.com/question/21656696/answer/19027040
 
 ### go环境变量
 

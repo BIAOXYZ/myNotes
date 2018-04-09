@@ -29,10 +29,22 @@ http://www.infoq.com/cn/profile/%E8%82%96%E5%BE%B7%E6%97%B6
 - 深入浅出Docker（五）：基于Fig搭建开发环境 http://www.infoq.com/cn/articles/docker-build-development-environment-based-on-fig
 - 深入浅出Docker（六）：像谷歌一样部署你的应用 http://www.infoq.com/cn/articles/deploy-your-application-like-google
 
+易百教程 -- Docker教程
+https://www.yiibai.com/docker/
+
 ## DaoCloud
 
 Docker 核心技术与实现原理
 http://blog.daocloud.io/edu171201/
+
+
+## docker微信帖子
+
+Docker新手指南
+http://mp.weixin.qq.com/s/Fycfuu2OhxblCBNUOH96jA
+
+手把手教你写Docker
+https://mp.weixin.qq.com/s/26pQoikXyNC7aUFJbCkbjA
 
 
 

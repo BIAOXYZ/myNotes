@@ -303,3 +303,104 @@ ctrl+r
 
 Linux目录多个斜杠是否完全等同单个斜杠？
 https://unix.stackexchange.com/questions/12283/unix-difference-between-path-starting-with-and/12285
+
+
+
+### 碰到了一个自己造成的搞笑问题，记一下吧~还挺有意思。
+
+- 问题症状：
+1. 用liuliang用户直接登录，或者从root用户su - liuliang切到该用户时，Linux系统命令提示符卡死，等了一阵以后或者登录不上，或者切换不过去还留在root用户。
+2. 但是我发现在切到liuliang用户卡死的过程中按下ctrl+c终止，竟然可以切过去。但此时liuliang用户下的很多东西没法用，比如git会提示command not found。
+
+- DEBUG(如果这也能算DEBUG的话，哈哈)过程：
+1. 这个问题就昨天才出现，想想昨天就只是在.bashrc里加了一行```source /home/liuliang/bashrcfiles/bashrcap3```。**参见下面的Part I**。
+2. 把这句注释掉，再切换到liuliang用户就没有这个问题了。奇怪了。。。此时改动方法肯定有了，就是每次登陆上去以后用个alias手动source那个新环境变量文件（其实这样也不对，同样会卡死，不过当时根本没有试，而是直接按下面步骤找根因去了），比如加一句```alias AP3='source /home/liuliang/bashrcfiles/bashrcap3'```。尽管不麻烦，但是根因没找到啊。
+3. 试着在```source /home/liuliang/bashrcfiles/bashrcap3```前面加上```echo 12345```，后面加上```echo 67890```。再次用root切liuliang用户，还是卡死，并且在我手动ctrl+c终止前，一直在不停地往屏幕上打印12345。手动终止后，git还是用不了。**如下面的Part II所示**。
+4. 想了想为啥会重复打这么多12345，再仔细看了看bashrcap3的内容（**参见下面的Part III**），明白了。。。就是那句```source ~/.bashrc```造成了脚本循环调用，所以卡死了。。。之所以会这么做是因为当时bashrcap3是从bashrcap2改过来的，改完顺手加了```source ~/.bashrc```这句。之前没出问题是因为之前每次启动的时候都是手动去source这个bashrcap3的，尽管它里面又source了一下.bashrc，但是.bashrc里没有bashrcap3相关的内容，所以到此就结束了。但是一旦.bashrc里加了bashrcap3相关的内容，就循环调用了。。。
+
+PS：那个bashrcap3里主要是ap新版本需要的各种环境变量，它的内容里那一堆export ...跟这个问题没啥关系，就省略了。
+
+
+```bash
+--------------------------------------------------
+### Part I
+### contents of .bashrc at /home/liuliang/.bashrc
+--------------------------------------------------
+
+export LESS='R'
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+####################
+# for automatically displaying branch information in linux shell
+
+function parse_git_branch_and_add_brackets {
+git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \{\1\}/'
+}
+PS1="\u@\h:\033[1;33m\]\W\[\033[1;32m\]\$(parse_git_branch_and_add_brackets)\[\033[0m\]\> "
+####################
+
+####################
+# for git auto completion
+
+source ~/.git-completion.bash
+####################
+
+####################
+# problem reason and DEBUG!!! 
+
+echo 12345                                     // added today for DEBUG
+source /home/liuliang/bashrcfiles/bashrcap3    // added yesterday, incurring dead loop
+echo 67890                                     // added today for DEBUG
+####################
+
+```
+
+```
+--------------------------------------------------
+### Part II
+--------------------------------------------------
+
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+12345
+^Cliuliang@SZX1000126633:~\> git
+If 'git' is not a typo you can run the following command to lookup the package that contains the binary:
+    command-not-found git
+-bash: git: command not found
+liuliang@SZX1000126633:~\> which git
+which: no git in (/home/liuliang/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/lib/mit/bin:/usr/lib/mit/sbin)
+liuliang@SZX1000126633:~\> whereis git
+git: /usr/local/git
+```
+
+```bash
+--------------------------------------------------
+### Part III
+### contents of bashrcap3 at /home/liuliang/bashrcfiles/bashrcap3
+--------------------------------------------------
+
+source ~/.bashrc
+
+#### enviroment variables for new mppdb cluster
+export ...
+export ...
+.
+.
+.
+```

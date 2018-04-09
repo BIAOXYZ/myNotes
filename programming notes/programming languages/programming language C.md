@@ -25,6 +25,19 @@ https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
 函数指针及其的运用（上）——何为函数指针
 https://www.cnblogs.com/uniqueliu/archive/2011/07/27/2118619.html
 
+
+### C结构体
+
+#### struct和typedef struct
+
+struct和typedef struct彻底明白了
+http://www.cnblogs.com/qyaizs/articles/2039101.html
+
+https://stackoverflow.com/questions/612328/difference-between-struct-and-typedef-struct-in-c
+```
+注意最高票答案里的tag namespace 和 identifier namespace。说明C语言其实底层（对编程者透明）也是有名字空间的。
+```
+
 ### stackoverflow
 
 Arrow operator (->) usage in C

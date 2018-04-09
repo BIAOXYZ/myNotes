@@ -103,6 +103,19 @@ http://www.research.ibm.com/labs/china/
 
 ### VISA
 
+### PolySwarm
+
+https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm-technologies-inc
+- https://polyswarm.io/
+- https://icobench.com/ico/polyswarm
+- https://www.tokendesk.io/ico/polyswarm/
+- https://remotees.com/remote-companies/poly-swarm-technologies-inc
+- https://remotelist.io/remote-companies/polyswarm-technologies-inc
+- https://www.linkedin.com/in/i-ting-yu-%E4%BD%99%E5%A5%95%E9%9C%86-9a083768/
+- https://srejobs.com/2018/03/11/Blockchain-Security-Engineer-at-Poly-Swarm-Technologies-Inc-Tokyo-Japan-allows-remote-Pol.html
+- https://srejobs.com/2018/03/11/Blockchain-Security-Engineer-at-Poly-Swarm-Technologies-Inc-San-Diego-CA-allows-remote-Po.html
+- https://www.reddit.com/r/PolySwarm/comments/7z2o1q/polyswarm_team_overview_nct_looking_good/
+
 
 ## giant (BAT)
 

@@ -4,6 +4,9 @@
 算法珠玑——一个最精简的题库
 https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
 
+《剑指Offer》第二版源代码
+https://github.com/zhedahht/CodingInterviewChinese2
+
 
 ## Online IDE/Platform
 
@@ -51,11 +54,18 @@ VS Code 与 LaTeX 真乃天作之合
 https://www.jianshu.com/p/57f8d1e026f5
 
 
-## Online Games
+
+
+## Online Games or Others
 
 学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎
 https://zhuanlan.zhihu.com/p/33783827
 
+2018 编程挑战网页 Top 10 - KenChoi的文章 - 知乎
+http://zhuanlan.zhihu.com/p/32965070
+
+今天开始你的技术生涯：40 个在线学习编程的工具 - KenChoi的文章 - 知乎
+http://zhuanlan.zhihu.com/p/34280674
 
 ## 编程知识
 
@@ -67,6 +77,23 @@ https://www.zhihu.com/question/19918532
 
 堆栈、堆、队列的区别
 http://bbs.csdn.net/topics/290054298
+
+### 不太技术性编程知识
+
+史上最难编程的软件是什么？ - 园长的文章 - 知乎
+http://zhuanlan.zhihu.com/p/35057341
+> 阿波罗 11 号火箭制导系统代码 https://github.com/chrislgarry/Apollo-11
+
+
+### 回调函数
+
+回调函数（callback）是什么？ - no.body的回答 - 知乎
+https://www.zhihu.com/question/19801131/answer/27459821
+
+### JIT(Just-in-time compilation) 即时编译
+
+JIT编译的结果能不能cache起来，下次直接利用呢？ - RednaxelaFX的回答 - 知乎
+https://www.zhihu.com/question/54984557/answer/142045332
 
 ### 字节对齐
 
