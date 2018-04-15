@@ -19,14 +19,26 @@ http://www.postgresqltutorial.com/
 https://bucardo.org/postgres_all_versions.html
 
 
-
-
 ## pgcon and pgcon China
 
 ### PGCon (https://www.pgcon.org/)
 
-http://www.pgcon.org/2016/
->[Index Internals http://www.pgcon.org/2016/schedule/events/934.en.html]
+#### PGCon 2012 (http://www.pgcon.org/2012/)
+
+WAL Internals Of PostgreSQL
+http://www.pgcon.org/2012/schedule/events/408.en.html
+
+#### PGCon 2016 (http://www.pgcon.org/2016/)
+
+Index Internals http://www.pgcon.org/2016/schedule/events/934.en.html
+
+#### PGCon 2017 (http://www.pgcon.org/2017/)
+
+Pgcrypto avast!
+http://www.pgcon.org/2017/schedule/events/1029.en.html
+
+Logical Replication in PostgreSQL 10
+http://www.pgcon.org/2017/schedule/events/1077.en.html
 
 ### PGconChina
 
@@ -40,6 +52,15 @@ http://www.postgres.cn/downfiles/pg2016conf_day2_s1_pm3.pdf
 http://2018.pgconfapac.org/
 
 
+### Postgres Wiki
+
+https://wiki.postgresql.org/wiki/Developer_FAQ
+
+Pgsrcstructure
+https://wiki.postgresql.org/wiki/Pgsrcstructure
+
+Pgkernel
+https://wiki.postgresql.org/wiki/Pgkernel
 
 
 ### 关于postgresql.auto.conf文件
@@ -106,12 +127,6 @@ https://doxygen.postgresql.org/reloptions_8c_source.html
 
 <postgres /src/include/access/reloptions.h>
 https://searchcode.com/codesearch/view/5324466/
-
-Pgsrcstructure
-https://wiki.postgresql.org/wiki/Pgsrcstructure
-
-Pgkernel
-https://wiki.postgresql.org/wiki/Pgkernel
 
 ----------------------------------------------------------------------------------------------------
 

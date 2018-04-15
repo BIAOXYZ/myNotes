@@ -49,6 +49,9 @@ ctrl + z, fg, ctrl + z, fg, ...
 ### diff参数-y 是以并列方式显示; -W 指定宽度
 diff file1 file2 -y -W 200 > differencefile
 
+### tar
+linux下tar.gz、tar、bz2、zip等解压缩、压缩命令小结
+http://www.jb51.net/LINUXjishu/43356.html
 
 ----------------------------------------------------------------------------------------------------
 
@@ -64,6 +67,14 @@ http://blog.csdn.net/houqizhixiu12/article/details/45119407
 
 <<linux 命令之 pushd、popd、dirs，以及栈的基础知识>>
 http://blog.csdn.net/u011641885/article/details/45576533
+
+### read
+Linux之read命令使用
+https://www.linuxidc.com/Linux/2013-01/77875.htm
+
+### fdisk
+linux磁盘分区fdisk命令详解
+https://my.oschina.net/acmfly/blog/116167
 
 ## 非一般性命令类(运维类)
 
@@ -193,6 +204,11 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
 
+### .bashrc & /etc/profile
+
+- Linux 之 /etc/profile、~/.bash_profile 等几个文件的执行过程 https://blog.csdn.net/ithomer/article/details/6322892
+- Linux环境变量设置/etc/profile、/etc/bashrc、~/.profile、~/.bashrc区别 https://blog.csdn.net/c406495762/article/details/62902871
+
 ### tty
 
 终端、虚拟终端、shell、控制台、tty的区别
@@ -236,6 +252,7 @@ http://blog.csdn.net/yangzhenzhen/article/details/8862236
 
 <<每天一个linux命令>>
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
+- 每天一个linux命令（13）：less 命令 http://www.cnblogs.com/peida/archive/2012/11/05/2754477.html
 
 有哪些高效但是不常见的CLI命令？ - 知乎
 https://www.zhihu.com/question/25910725
@@ -404,3 +421,4 @@ export ...
 .
 .
 ```
+

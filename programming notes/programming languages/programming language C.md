@@ -25,6 +25,12 @@ https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
 函数指针及其的运用（上）——何为函数指针
 https://www.cnblogs.com/uniqueliu/archive/2011/07/27/2118619.html
 
+### C内联函数
+C语言的inline关键字 - CSDN博客
+https://blog.csdn.net/lidh04/article/details/3795802
+
+内联函数 —— C 中关键字 inline 用法解析 - CSDN博客
+https://blog.csdn.net/zqixiao_09/article/details/50877383
 
 ### C结构体
 

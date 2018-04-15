@@ -1,4 +1,10 @@
 
+
+## English others
+
+多邻国新增王冠等级：让用户学习更多高级词汇
+https://www.cnbeta.com/articles/soft/715023.htm
+
 ## a 
 
 #### at one's discretion 

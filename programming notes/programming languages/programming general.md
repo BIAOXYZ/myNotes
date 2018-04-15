@@ -27,6 +27,17 @@ https://codenvy.com/
 Eclipse Che
 https://www.eclipse.org/che/
 
+## Code Learning Website 
+
+### freeCodeCamp
+
+https://www.freecodecamp.cn/about
+- 中文站 https://www.freecodecamp.cn/
+- 英文站 https://www.freecodecamp.org/
+- 使用 freeCodeCamp 编程 是一番怎样的体验？ - 知乎 https://www.zhihu.com/question/46711186
+
+
+
 ### local IDE
 
 #### Atom
@@ -125,6 +136,9 @@ http://www.parallellabs.com/2010/01/31/pthreads-programming-spin-lock-vs-mutex-p
 
 Linux下的多线程编程和fork()函数详解
 http://www.jb51.net/LINUXjishu/597423.html
+
+父进程，子进程，线程之间的关系 - CSDN博客
+https://blog.csdn.net/wang664626482/article/details/52523303
 
 ### 编码
 

@@ -45,6 +45,10 @@ https://www.zhihu.com/question/19895362/answer/150333620
 Alibaba-Quantum Positions-Aliyun Quantum Laboratory (AQL)
 https://www.linkedin.com/jobs/view/492948751/
 
+https://www.linkedin.com/company/ethereum/
+
+https://www.linkedin.com/company/onchain/
+
 ### Glassdoor (https://www.glassdoor.com/index.htm)
 
 

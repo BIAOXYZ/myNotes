@@ -38,12 +38,28 @@ https://www.zhihu.com/question/20730157/answer/82034823
 https://www.zhihu.com/question/19939011/answer/82075566
 - https://github.com/VVictorQi/APUE
 
-Advanced Programming in the UNIX Environment (Third Edition)
-http://www.codeman.net/wp-content/uploads/2014/04/APUE-3rd.pdf
-
 UNIX环境高级编程(第3版)(英文版)
 http://bestcbooks.com/B00KMR129E/
 
+《apue》 首次拜读完经典之作，两三记录 - CSDN博客
+https://blog.csdn.net/jiange_zh/article/details/50370216
+> 正好偶然发现一本《Unix/Linux编程实践教程》（Bruce Molay 著， 杨宗源 黄海涛 译），该书作者用生活化的例子，来跟我们的编程做一些形象化的比较，在类比中学习，实践，而且该书的总体知识框架与《apue》类似，所以两书结合起来学习效果特别好～
+
+[单刷APUE系列]第一章——Unix基础知识[1]
+https://segmentfault.com/a/1190000004359057
+
+(一) 一起学 Unix 环境高级编程 (APUE) 之 标准IO
+https://www.cnblogs.com/0xcafebabe/p/4423699.html
+
+linux学习路线（转） - CSDN博客
+https://blog.csdn.net/plo154100/article/details/5889822
+
+#### APUE online
+
+Advanced Programming in the UNIX Environment (Third Edition)
+http://www.codeman.net/wp-content/uploads/2014/04/APUE-3rd.pdf
+
+http://vdisk.weibo.com/s/AcSJGKVz_XjEh
 
 ### 程序员的自我修养：链接、装载与库
 
