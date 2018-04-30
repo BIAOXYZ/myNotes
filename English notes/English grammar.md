@@ -32,6 +32,24 @@ n. 敲去；停止工作
 <<聊聊thereof的用法>>
 [http://www.360doc.com/content/15/1109/01/22998329_511789428.shtml]
 
+#### throw the baby out with the bath water
 
+[网络] 把洗澡水连同婴儿一起倒掉；不分良莠；良莠不分地一并丢弃
 
+When you attempt to design a new policy, don't throw the baby out with the bath water.
+当你拟定新的政策时，不要把好的部份，连同不好的，一起扔掉。
+
+You mustn't buy the cheap make-up, or you will throw the baby out with the bath water.
+你一定不要买廉价的化妆品，否则的话你会得不偿失的。
+
+#### toe the line
+
+na.准备起跑；服从纪律；(赛跑等时)将脚尖抵在起步线上站着；服从规定
+[网络] 循规蹈矩；听从命令；听话
+
+With a pistol pointing at the back of his head, he could do nothing but toe the line.
+被一把手枪顶着他的后脑勺，他只能乖乖地服从了。
+
+With pleas going unheard, the city government is now moving toward legislation to force manufacturers to toe the line on packaging.
+随着要求被置若罔闻，市政府正试图通过立法来使制造商在包装上遵守规定。
 
