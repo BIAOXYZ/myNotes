@@ -1,4 +1,5 @@
 
+# chrome extension
 
 <<推荐两款Chrome上的github源码阅读插件>> {另外有人评论提到了 Octotree 和 Avatars for Github, 不过这俩暂时没试，回来再说吧。感觉第一个已经不错了~}
 http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1009/8575.html
@@ -8,3 +9,11 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
 VIP看看
 http://chromecj.com/fun/2018-02/1352.html
+
+
+# firefox extensions
+
+# others
+
+Setup VPN
+http://desktopclient.net/gw/index.html#/setupvpn
