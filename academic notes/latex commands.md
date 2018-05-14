@@ -1,4 +1,26 @@
 
+
+
+# Latex基本类
+
+## list, itemize, enumerate, description
+
+http://troubleshooters.com/linux/lyx/ownlists.htm
+
+```latex
+当后三个环境定制效果不太理想时，用最基本的list环境。list环境里这两个变量比较有用。
+\setlength\labelwidth{3in}
+\setlength\leftmargin{1.27in}
+```
+
+
+# Latex宏包类
+
+
+
+
+## Tikz
+
 ### Latex批注功能
 
 <<使用 TikZ 对 LaTeX 文档添加批注>>
