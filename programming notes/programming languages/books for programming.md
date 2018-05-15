@@ -20,6 +20,19 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 - 机器学习资源大全中文版 https://github.com/jobbole/awesome-machine-learning-cn
 
 
+[转]程序员资料整理 https://yq.aliyun.com/articles/239530
+- free-programming-books https://github.com/EbookFoundation/free-programming-books
+- 免费的编程中文书籍索引 https://github.com/justjavac/free-programming-books-zh_CN
+- Papers we love https://github.com/papers-we-love/papers-we-love
+> 开源电子书 https://yq.aliyun.com/articles/346784
+- The Linux Command Line (中英文版) http://billie66.github.io/TLCL/index.html
+- 命令行的艺术 https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md
+- 《计算机程序的结构和解释》公开课 翻译项目 https://github.com/DeathKing/Learning-SICP
+- 沉浸式学 Git http://igit.linuxtoy.org/
+- Boost 库中文教程 http://zh.highscore.de/cpp/boost/
+- leetcode/lintcode题解/算法学习笔记 https://legacy.gitbook.com/book/yuanbin/algorithm/details
+
+
 ## books and learning methods
 
 你是如何学习 Linux 编程的？ - Kerr Wang的回答 - 知乎
@@ -29,6 +42,28 @@ https://www.zhihu.com/question/20730157/answer/82034823
 - 如何通过自学找到一份开发的工作？ - Chenper的回答 - 知乎 https://www.zhihu.com/question/26421707/answer/123823017
   - VisuAlgo：通过动画学习算法和数据结构 http://hao.jobbole.com/visualgo/
   - https://visualgo.net/zh
+
+
+# books by languages
+
+## books for C and C++
+
+通过这 9 本开源好书学习 C 语言 http://blog.jobbole.com/110148/
+
+
+### CSAPP
+
+- 《深入理解计算机系统》读书笔记 & 要点总结<上> https://yq.aliyun.com/articles/15234
+- 《深入理解计算机系统》读书笔记 & 要点总结<中> https://yq.aliyun.com/articles/15232
+- 《深入理解计算机系统》读书笔记 & 要点总结<下> https://yq.aliyun.com/articles/15230
+
+
+《深入理解计算机系统》这本书需要什么水平能看懂？ - 知乎
+https://www.zhihu.com/question/20354069
+
+如何阅读《深入理解计算机系统》这本书？ - 知乎
+https://www.zhihu.com/question/20402534
+
 
 
  

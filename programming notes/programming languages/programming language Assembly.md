@@ -6,3 +6,5 @@
 易百教程 - Assembly汇编 https://www.yiibai.com/html/assembly/
 
 Assembly Language教程 https://www.w3cschool.cn/assembly/
+
+Assembly Programming Tutorial https://www.tutorialspoint.com/assembly_programming/index.htm

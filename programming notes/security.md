@@ -198,3 +198,6 @@ https://paper.seebug.org/481/
 用户chybeta的安全总结
 - https://github.com/CHYbeta/Web-Security-Learning
 - https://github.com/CHYbeta/Software-Security-Learning
+
+Burp Suite 实战指南
+https://legacy.gitbook.com/book/t0data/burpsuite/details

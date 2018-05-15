@@ -26,3 +26,33 @@ http://mathjax-chinese-doc.readthedocs.io/en/latest/start.html
 如果浏览器原生支持MathML格式，MathJax就会生成用MathML输出，不然的话就用HTML和CSS去显示公式。
 这是最常见的配置，它可以满足大部分人的需求。
 ```
+
+### markdown数学公式2
+
+***总结：【1】里的办法必须在网页上生成，【2】的办法可以生成以后自己看情况改，就是注意markdown斜杠要转义——所以数学公式里有的地方用了两个斜杠。这两个的网址是同一个网站的，但是【2】的不太好用，统一用【1】的吧。***
+> https://www.codecogs.com/latex/eqneditor.php
+
+- 关于 Markdown 的一些奇技淫巧 - mzlogin的文章 - 知乎 http://zhuanlan.zhihu.com/p/28987530  【1】
+  * 复制生成图片地址时，选项用URL Encoded （这是原文里的方法）
+`![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B1&plus;sin%28x%29%7D)`
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B1&plus;sin%28x%29%7D)
+  * 复制生成图片地址时，选项用URL （这是我自己试出来的方法，这个和下面那个帖子里的方法类似，但还是不如那个方便）
+`![](https://latex.codecogs.com/gif.latex?\frac{1}{1&plus;sin(x)})`
+![](https://latex.codecogs.com/gif.latex?\frac{1}{1&plus;sin(x)})
+- github上Markdown不支持LaTeX吗？ - Alex dcrozz的回答 - 知乎 https://www.zhihu.com/question/26887527/answer/127906478 【2】
+`![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})`
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+
+***还有一些奇怪的问题（不知道是不是github的原因），比如双$$符号的公式不换行，单个$符号的公式是非斜体：***
+```
+![](http://latex.codecogs.com/gif.latex?$$y=g^x$$);![](http://latex.codecogs.com/gif.latex?$$y=g^x$$)
+
+![](http://latex.codecogs.com/gif.latex?y=g^x);![](http://latex.codecogs.com/gif.latex?y=g^x)
+
+![](http://latex.codecogs.com/gif.latex?$y=g^x$)
+```
+![](http://latex.codecogs.com/gif.latex?$$y=g^x$$);![](http://latex.codecogs.com/gif.latex?$$y=g^x$$)
+
+![](http://latex.codecogs.com/gif.latex?y=g^x);![](http://latex.codecogs.com/gif.latex?y=g^x)
+
+![](http://latex.codecogs.com/gif.latex?$y=g^x$)

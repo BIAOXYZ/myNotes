@@ -8,6 +8,9 @@ https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
 https://github.com/zhedahht/CodingInterviewChinese2
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 ## Online IDE/Platform
 
 https://www.heroku.com/postgres
@@ -27,15 +30,16 @@ https://codenvy.com/
 Eclipse Che
 https://www.eclipse.org/che/
 
-## Code Learning Website 
 
-### freeCodeCamp
+Mozilla 释出在线 IDE：WebAssembly Studio 测试版 - Mozilla - cnBeta.COM
+https://www.cnbeta.com/articles/soft/717311.htm
+> https://webassembly.studio/
 
-https://www.freecodecamp.cn/about
-- 中文站 https://www.freecodecamp.cn/
-- 英文站 https://www.freecodecamp.org/
-- 使用 freeCodeCamp 编程 是一番怎样的体验？ - 知乎 https://www.zhihu.com/question/46711186
+轻松搞定IPython + Notebook 基于云的科学计算环境
+https://www.jianshu.com/p/e758e00f24ef
 
+畅享云时代：开发者必备的8个最佳云端集成开发环境
+http://www.cnblogs.com/lhb25/archive/2012/11/20/cloud-ide-for-developers.html
 
 
 ### local IDE
@@ -65,7 +69,17 @@ VS Code 与 LaTeX 真乃天作之合
 https://www.jianshu.com/p/57f8d1e026f5
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+
+## Code Learning Website 
+
+### freeCodeCamp
+
+https://www.freecodecamp.cn/about
+- 中文站 https://www.freecodecamp.cn/
+- 英文站 https://www.freecodecamp.org/
+- 使用 freeCodeCamp 编程 是一番怎样的体验？ - 知乎 https://www.zhihu.com/question/46711186
 
 ## Online Games or Others
 
@@ -77,6 +91,38 @@ http://zhuanlan.zhihu.com/p/32965070
 
 今天开始你的技术生涯：40 个在线学习编程的工具 - KenChoi的文章 - 知乎
 http://zhuanlan.zhihu.com/p/34280674
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
+### makefile
+
+GNU make
+https://www.gnu.org/software/make/manual/html_node/index.html
+
+make makefile cmake qmake都是什么，有什么区别？ - 知乎
+https://www.zhihu.com/question/27455963
+
+
+【原来如此】为什么很多应用都安装在/usr/local目录下? - CSDN博客
+https://blog.csdn.net/maray/article/details/9737549
+> https://www.gnu.org/software/automake/manual/html_node/Standard-Directory-Variables.html#Standard-Directory-Variables
+
+
+### Troubleshooters.com
+
+```Linux Library -> Linux Programming -> Bash/shellscript```
+- http://troubleshooters.com/codecorn/shellscript/index.htm
+- http://troubleshooters.com/linux/xargs.htm
+
+```Linux Library -> Linux Programming -> C and C++```
+- http://troubleshooters.com/codecorn/sockets/index.htm
+
+#### Code Corner http://troubleshooters.com/codecorn/index.htm
+
+http://troubleshooters.com/codecorn/awk/index.htm
+
 
 ## 编程知识
 

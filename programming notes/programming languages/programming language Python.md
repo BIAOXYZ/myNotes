@@ -26,6 +26,13 @@ http://www.jb51.net/article/89425.htm
 Python 的练手项目有哪些值得推荐？ - 刘志军的回答 - 知乎
 https://www.zhihu.com/question/29372574/answer/192385626
 
+【循序渐进学Python】系列 http://www.cnblogs.com/IPrograming/category/476786.html
+- 【循序渐进学Python】10.模块和包 http://www.cnblogs.com/IPrograming/archive/2013/11/24/Python_module_package.html
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 # IDE
 
 ## IDE Jupyter
@@ -37,6 +44,8 @@ http://codingpy.com/article/getting-started-with-jupyter-notebook-part-2/
 - http://jupyter.org/documentation
 - https://nbviewer.jupyter.org/
 
+jupyter notebook 可以做哪些事情？ - 猴子的回答 - 知乎
+https://www.zhihu.com/question/46309360/answer/254638807
 
 
 ## IDE pycharm
@@ -72,6 +81,10 @@ https://www.zhihu.com/question/52880389/answer/134369870
 
 {linux下安装pycharm有问题，目前还没时间看}
 https://stackoverflow.com/questions/27727826/problems-installing-pycharm
+
+pycharm的configuration相关
+- https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html
+- https://www.jetbrains.com/help/pycharm/running-without-any-previous-configuring.html
 
 
 ## IDE Anaconda
@@ -113,6 +126,9 @@ https://www.zhihu.com/question/30123965
 https://zhuanlan.zhihu.com/p/32925500
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 ## DEBUG
 
 <<用PDB库调试Python程序>>
@@ -123,6 +139,9 @@ https://www.zhihu.com/question/21572891/answer/149974828
 
 Python 代码调试技巧
 https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # 语法
@@ -238,6 +257,25 @@ https://stackoverflow.com/questions/1479776/too-many-values-to-unpack-exception
 TypeError: 'NoneType' object is not iterable in Python
 https://stackoverflow.com/questions/3887381/typeerror-nonetype-object-is-not-iterable-in-python
 > 【Python】python "TypeError: 'NoneType' object is not iterable"错误分析 http://blog.csdn.net/dataspark/article/details/9953225
+
+
+#### TypeError: Unicode-objects must be encoded before hashing
+Python 用hashlib求中文字符串的MD5值 - CSDN博客 https://blog.csdn.net/haungrui/article/details/6959340
+> 其实是在用pycrypto的哈希函数时碰到的这个错，我估计任何python（指python3版本，python2系列不清楚情况）里的哈希函数都是一样的。就是要对某个字符串求哈希，必须先把这个字符串从unicode形式encode成一个其他形式比如utf-8。
+
+#### UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 3: inval
+
+- Python3解决UnicodeDecodeError: 'utf-8' codec can't decode byte问题终极解决方案 https://blog.csdn.net/wang7807564/article/details/78164855
+- UnicodeDecodeError: 'utf8' codec can't decode byte 0xc9 in position 0: inval https://blog.csdn.net/a2011480169/article/details/68947804
+
+- python编码总结(编码类型、格式、转码) http://www.jb51.net/article/87739.htm
+- Python编码问题整理 https://www.cnblogs.com/fnng/p/5008884.html
+- 字符编码笔记：ASCII，Unicode 和 UTF-8 http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html
+- Python 编码为什么那么蛋疼？ - 知乎 https://www.zhihu.com/question/31833164
+- Unicode 和 UTF-8 有何区别？ - 于洋的回答 - 知乎 https://www.zhihu.com/question/23374078/answer/69732605
+
+- Python2.x与3​​.x版本区别 http://www.runoob.com/python/python-2x-3x.html
+- Python 3中bytes/string的区别 https://www.cnblogs.com/abclife/p/7445222.html
 
 
 ## 伯乐在线python

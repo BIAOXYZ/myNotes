@@ -15,6 +15,9 @@ https://www.zhihu.com/question/23486344/answer/130837179
   - Go語言聖經（中文版） https://www.gitbook.com/book/wizardforcel/gopl-zh/details
     - https://www.gitbook.com/@wizardforcel
 
+https://tour.go-zh.org/basics/4
+> Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax 
+
 --------------------------------------------------
 
 极客学院 -- Go 语言

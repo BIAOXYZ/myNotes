@@ -5,6 +5,7 @@
 <<libevent源码深度剖析一>>
 http://blog.csdn.net/sparkliang/article/details/4957667
 
+
 ### GnuTLS
 The GnuTLS Transport Layer Security Library
 https://www.gnutls.org/
@@ -14,7 +15,12 @@ https://www.gnutls.org/
 - Document: https://www.gnutls.org/documentation.html
 > https://www.gnutls.org/manual/gnutls.pdf
 
-### OpenSSL
+
+- TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p/26684020
+> https://www.feistyduck.com/library/openssl-cookbook/
+
+
+### OpenSSL [https://git.openssl.org/gitweb/?p=openssl.git;a=tree]
 https://www.openssl.org/
 - https://github.com/openssl/openssl
 
@@ -49,6 +55,15 @@ HTTPS科普扫盲帖
 http://www.cnblogs.com/chyingp/p/https-introduction.html
 
 
+- Openssl及加密解密（二）openssl https://yq.aliyun.com/articles/546160
+- 加密、解密详解及CA的实现 https://yq.aliyun.com/articles/475842
+
+openssl编程.pdf http://vdisk.weibo.com/s/uwUzBqyZXMBm_
+
+Linux安全体系学习笔记 OpenSSL源代码分析(1) https://www.linuxidc.com/Linux/2012-02/53190p2.htm
+
+
+
 ### PBC
 
 https://crypto.stanford.edu/pbc/manual/
@@ -80,6 +95,9 @@ https://www.cnblogs.com/findumars/p/6009249.html
 - https://pypi.python.org/pypi/pycrypto
 - https://www.dlitz.net/software/pycrypto/
 - http://python.jobbole.com/84094/
+
+### pycryptodome
+https://www.pycryptodome.org/en/latest/
 
 ### pyca/cryptography
 - https://cryptography.io/en/latest/

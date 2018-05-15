@@ -25,6 +25,16 @@ https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
 函数指针及其的运用（上）——何为函数指针
 https://www.cnblogs.com/uniqueliu/archive/2011/07/27/2118619.html
 
+#### 右左法则
+- 右左法则----复杂指针解析(函数指针与数组指针) https://blog.csdn.net/hyqsong/article/details/52564046
+- 【C语言】右左法则——准确理解所有声明 https://blog.csdn.net/newcong0123/article/details/51883352
+
+C 语言中指针数组和数组指针、函数指针、指向函数的指针等等该怎么理解？ - vczh的回答 - 知乎
+https://www.zhihu.com/question/59605233/answer/166935479
+
+C语言函数指针基础 http://blog.jobbole.com/44639/
+
+
 ### C内联函数
 C语言的inline关键字 - CSDN博客
 https://blog.csdn.net/lidh04/article/details/3795802

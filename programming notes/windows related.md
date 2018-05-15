@@ -50,13 +50,7 @@ C:\Users\l00384038>echo GOROOT
 GOROOT
 ```
 
-
-### VPNs
-
-SetupVPN
-http://desktopclient.net/gw/index.html#/
-
-###
+#### 
 
 <<解决Windows下修改环境变量后需重启才能生效的问题>>
 http://blog.sina.com.cn/s/blog_49370c500100ov36.html
@@ -71,7 +65,7 @@ http://blog.sina.com.cn/s/blog_49370c500100ov36.html
 但是对副本的修改却会引发Windows环境变量的刷新，这正是我们想要的！
 ```
 
-###
+### 环境变量立即刷新
 
 狗日的2345劫持，真TM服了，用了一堆知乎上的办法，下了好多软件，都不管用。最后是V2EX的办法——360杀毒的急救箱搞定的。。。
 
@@ -83,3 +77,26 @@ https://www.zhihu.com/question/23157265
 
 为什么 Chrome 浏览器的主页会被篡改为 hao123 ？遇到这种情况要如何修复？ - 知乎
 https://www.zhihu.com/question/21883209
+
+
+### VPNs
+
+SetupVPN
+http://desktopclient.net/gw/index.html#/
+
+### teamviewer
+- https://login.teamviewer.com/
+- https://community.teamviewer.com/t5/Knowledge-Base/All-about-passwords/ta-p/28442#toc-hId-585378451
+> 用easyaccess解决电脑连接的问题。Extras --> Options --> General 里先把当前电脑assign给teamviewer账户；然后 Extras --> Options --> Security 设置启用easyaccess
+
+办公汪必备软件及技巧：两款远程控制软件助你下班不再往单位跑 - 什么值得买的文章 - 知乎
+https://zhuanlan.zhihu.com/p/33211414
+
+### tools general
+ 
+https://www.appinn.com/windows-apps-that-amaze-us/
+- qdir https://www.appinn.com/q-dir/
+- everything https://www.appinn.com/everything/
+
+代码界的美图秀秀 - 陈龙的文章 - 知乎
+https://zhuanlan.zhihu.com/p/35811981
