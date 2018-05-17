@@ -26,6 +26,10 @@ http://www.jb51.net/article/89425.htm
 Python 的练手项目有哪些值得推荐？ - 刘志军的回答 - 知乎
 https://www.zhihu.com/question/29372574/answer/192385626
 
+如何系统地自学 Python？ - 彭猫的回答 - 知乎 https://www.zhihu.com/question/29138020/answer/72193349
+> VISUALIZE CODE AND GET LIVE HELP http://www.pythontutor.com/
+>> Philip Guo Assistant Professor of Cognitive Science UC San Diego http://pgbovine.net/
+
 【循序渐进学Python】系列 http://www.cnblogs.com/IPrograming/category/476786.html
 - 【循序渐进学Python】10.模块和包 http://www.cnblogs.com/IPrograming/archive/2013/11/24/Python_module_package.html
 
