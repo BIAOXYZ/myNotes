@@ -33,6 +33,10 @@ He is dull sometimes, and yet once in a while he surprises us with his exception
 Attaching probabilities to forecasts is certainly better than clairvoyance.
 利用概率进行预测当然要比凭空猜测好。
 
+## e
+
+except for与except的区别
+https://zhidao.baidu.com/question/6292160.html
 
 ## k
 
