@@ -80,6 +80,12 @@ https://www.elance.com/php/landing/main/login.php
 
 https://www.upwork.com/ 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+### job知乎
+
+蚂蚁金服资深算法工程师/算法专家（33K-250K/月） - 娄军师的文章 - 知乎
+https://zhuanlan.zhihu.com/p/27778873
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
