@@ -1,5 +1,5 @@
 
-## English others
+# English others
 
 多邻国新增王冠等级：让用户学习更多高级词汇
 https://www.cnbeta.com/articles/soft/715023.htm
@@ -7,6 +7,8 @@ https://www.cnbeta.com/articles/soft/715023.htm
 写作C#读作C井 这些程序员常用词汇你读对了吗？ - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/soft/724029.htm
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# alpha-beta order 
 
 ## a 
 
@@ -23,9 +25,7 @@ Talks will probably be at an impasse for some time until some of the dust settle
 
 ## c
 
-#### clairvoyance
-n.预见力；洞察力；神视力
-[网络]透视；千里眼；透视力
+#### clairvoyance n.预见力；洞察力；神视力 [网络]透视；千里眼；透视力
 
 He is dull sometimes, and yet once in a while he surprises us with his exceptional clairvoyance!
 他有时候表现的很迟钝，但是有时候他以异常的洞察力让我们感到惊奇！
@@ -40,9 +40,7 @@ https://zhidao.baidu.com/question/6292160.html
 
 ## k
 
-#### knockoff
-n. 敲去；停止工作
-[网络.] 仿冒品；冒牌货；翻印本
+#### knockoff n. 敲去；停止工作 [网络.] 仿冒品；冒牌货；翻印本
 [http://searchsecurity.techtarget.com/news/252437212/IBM-outlines-visions-for-crypto-anchors-lattice-cryptography]
 > The global supply chain has been poisoned with knockoffs and counterfeit goods, ...
 
@@ -52,6 +50,16 @@ n. 敲去；停止工作
 #### not only ... but also
 [https://zhidao.baidu.com/question/56106911.html]
 [http://gmat.koolearn.com/20140905/788248.html]
+
+## o
+
+#### one-size-fits-all adj.通用的；一体适用的 [网络] 一刀切；均码；一成不变
+[https://arxiv.org/pdf/1801.10228.pdf]
+> Consensus is hard-coded within the platform, which contradicts the well-established understanding that there is no
+“one-size-fits-all” (BFT) consensus protocol [52];
+
+Yet the United States has never been a leveler society; neither the well-to-do nor the poor have ever sought a one-size-fits-all status.
+但是，美国从来不是一个平均主义社会；无论有钱人还是穷人都从不曾要求地位全然划一。
 
 ## t 
 
