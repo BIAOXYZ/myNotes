@@ -225,6 +225,12 @@ https://www.cnblogs.com/bluefrog/archive/2012/07/07/2580928.html
 <</dev/random和/dev/urandom的一点备忘>>
 http://blog.csdn.net/ohmygirl/article/details/40385083
 
+***延伸：*** 
+使用dd命令快速生成大文件或者小文件的方法 - CSDN博客 https://blog.csdn.net/cywosp/article/details/9674757
+```
+dd if=/dev/zero of=test bs=1M count=1000
+在当前目录下会生成一个1000M的test文件，文件内容为全0
+```
 
 ## 问题处理
 
