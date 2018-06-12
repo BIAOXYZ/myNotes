@@ -327,6 +327,10 @@ C:\Users\l00384038>sqlplus /nolog
 SQL> conn /as sysdba
 ```
 
+## Oralce FLASHBACK(闪回)
+
+Oracle 闪回特性(FLASHBACK DATABASE) - CSDN博客
+https://blog.csdn.net/leshami/article/details/6100429
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
