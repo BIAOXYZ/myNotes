@@ -48,6 +48,9 @@ https://www.zhihu.com/question/21409296/answer/18184584
 
 深入解析Go https://legacy.gitbook.com/book/tiancaiamao/go-internals/details
 
+go-internals https://github.com/go-internals-cn/go-internals
+> https://go-internals-cn.gitbook.io/go-internals/
+
 ### 开发环境搭建
 
 VS code golang 开发环境搭建 - CSDN博客
