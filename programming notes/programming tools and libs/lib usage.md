@@ -67,9 +67,23 @@ http://www.cnblogs.com/chyingp/p/https-introduction.html
 
 openssl编程.pdf http://vdisk.weibo.com/s/uwUzBqyZXMBm_
 
+
+OpenSSL命令使用指南 https://www.jianshu.com/p/115dac580bad
+- OpenSSL命令详解（一）——标准命令 - CSDN博客 https://blog.csdn.net/scuyxi/article/details/54884976
+
+OpenSSL编程初探1 --- 使用OpenSSL API建立SSL通信的一般流程简介
+https://blog.csdn.net/howeverpf/article/details/18993945
+
+https://crypto.stackexchange.com/questions/8776/what-is-u2fsdgvkx1
+> 用openssl的 aes-128-cbc (别的算法不知道是不是这情况，估计差不多) 加密文件，密文开头总是 "U2FsdGVkX1" 。原来是base64编码的"Salted__"
+
+#### OpenSSL源码
+
 Linux安全体系学习笔记 OpenSSL源代码分析(1) https://www.linuxidc.com/Linux/2012-02/53190p2.htm
 
+高级加密标准AES的工作模式（ECB、CBC、CFB、OFB） https://blog.poxiao.me/p/advanced-encryption-standard-and-block-cipher-mode/
 
+---
 
 ### PBC
 
@@ -139,6 +153,11 @@ https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 
 # Go Libs
 
-crypto
+### crypto
 https://github.com/golang/crypto
 
+
+### gRPC
+
+谁能用通俗的语言解释一下什么是 RPC 框架？ - 洪春涛的回答 - 知乎
+https://www.zhihu.com/question/25536695/answer/221638079

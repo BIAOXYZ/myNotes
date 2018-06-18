@@ -43,3 +43,9 @@ https://www.cnblogs.com/mengdd/p/3506526.html
 如果某个变量或者方法是黑色字体表示的，说明它还没有被定义。
 当然有时候也不是因为没定义，需要同步一下，Project->Synchronizing Files。
 ```
+
+### source insight统计工程的代码总行数
+https://blog.csdn.net/wangjinzhouqw/article/details/41251795
+```
+project -> project report -> Files - Line Count
+```

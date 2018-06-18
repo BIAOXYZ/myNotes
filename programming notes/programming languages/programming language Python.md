@@ -33,6 +33,8 @@ https://www.zhihu.com/question/29372574/answer/192385626
 【循序渐进学Python】系列 http://www.cnblogs.com/IPrograming/category/476786.html
 - 【循序渐进学Python】10.模块和包 http://www.cnblogs.com/IPrograming/archive/2013/11/24/Python_module_package.html
 
+开源项目精选：python教程full-speed-python https://openingsource.org/1672/ 
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 

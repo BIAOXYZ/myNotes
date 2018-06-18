@@ -15,8 +15,15 @@ https://www.zhihu.com/question/23486344/answer/130837179
   - Go語言聖經（中文版） https://www.gitbook.com/book/wizardforcel/gopl-zh/details
     - https://www.gitbook.com/@wizardforcel
 
-https://tour.go-zh.org/basics/4
+Go指南 -- 函数 https://tour.go-zh.org/basics/4
 > Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax 
+Go指南 -- 练习：循环与函数 https://tour.go-zh.org/flowcontrol/8
+```
+计算机通常使用循环来计算 x 的平方根。从某个猜测的值 z 开始，我们可以根据 z² 与 x 的近似度来调整 z，产生一个更好的猜测：
+z -= (z*z - x) / (2*z)
+（注：如果你对该算法的细节感兴趣，上面的 z² − x 是 z² 到它所要到达的值（即 x）的距离，除以的 2z 为 z² 的导数，我们通过 z² 的
+变化速度来改变 z 的调整量。这种通用方法叫做牛顿法。它对很多函数，特别是平方根而言非常有效。） 
+```
 
 --------------------------------------------------
 
@@ -34,6 +41,12 @@ https://www.zhihu.com/question/30461290/answer/210414739
 https://www.zhihu.com/question/21409296/answer/18184584
 > (这个就是Go Web 编程的开源版) https://github.com/astaxie/build-web-application-with-golang
 >> (在网上搜到gitbook版本，虽然不是原作者搞的) https://www.gitbook.com/book/wizardforcel/build-web-application-with-golang/details
+
+--------------------------------------------------
+
+《深入解析Go语言》 https://www.w3cschool.cn/go_internals/
+
+深入解析Go https://legacy.gitbook.com/book/tiancaiamao/go-internals/details
 
 ### 开发环境搭建
 
@@ -58,6 +71,55 @@ https://studygolang.com/articles/2233
 
 为什么 Go 语言把类型放在后面？ - 林建入的回答 - 知乎
 https://www.zhihu.com/question/21656696/answer/19027040
+
+#### goroutine
+
+理解 goroutine 的并发 - CSDN博客
+https://blog.csdn.net/pmlpml/article/details/78850661
+
+golang技术随笔（二）理解goroutine - CSDN博客
+https://blog.csdn.net/justaipanda/article/details/44064811
+
+#### defer, panic, recover
+
+Defer, Panic, and Recover
+https://blog.go-zh.org/defer-panic-and-recover
+
+go语言之 panic, recover ——如何在go语言中优雅的处理错误 - CSDN博客
+https://blog.csdn.net/hellolingyun/article/details/52433167
+
+Go的异常处理 defer, panic, recover
+http://www.cnblogs.com/ghj1976/archive/2013/02/11/2910114.html
+
+#### slice
+
+Go指南 -- 向切片追加元素 https://tour.go-zh.org/moretypes/15
+> Go 切片：用法和本质 https://blog.go-zh.org/go-slices-usage-and-internals
+
+Go语言中的Slice学习总结
+http://www.jb51.net/article/57121.htm
+
+Go语言中的Array、Slice、Map和Set使用详解
+http://www.jb51.net/article/56828.htm
+
+#### go语言闭包
+
+理解Go语言中的函数闭包 - CSDN博客
+https://blog.csdn.net/u012296101/article/details/48525605
+
+Go语言闭包的实现
+https://www.w3cschool.cn/go_internals/go_internals-d67w282q.html
+
+深入理解Go语言中的闭包
+http://www.jb51.net/article/108972.htm
+
+#### go语言interface
+
+【GoLang笔记】浅析Go语言Interface类型的语法行为及用法 
+https://studygolang.com/articles/2652
+
+
+--------------------------------------------------
 
 ### go环境变量
 

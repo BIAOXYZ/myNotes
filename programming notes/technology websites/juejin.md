@@ -10,3 +10,5 @@ https://juejin.im/post/5ae55861f265da0ba062ec71
 
 Go 内存逃逸详细分析
 https://juejin.im/entry/5af532836fb9a07ac363847b
+
+【译】Golang 新手可能会踩的 50 个坑 https://juejin.im/entry/5aa9dcba51882555872344f8

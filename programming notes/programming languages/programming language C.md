@@ -25,6 +25,8 @@ https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
 函数指针及其的运用（上）——何为函数指针
 https://www.cnblogs.com/uniqueliu/archive/2011/07/27/2118619.html
 
+《深入理解C指针》笔记 - 第五章 字符串与指针 https://laoshuterry.gitbooks.io/noteofcpointer/content/Chapter05.html
+
 #### 右左法则
 - 右左法则----复杂指针解析(函数指针与数组指针) https://blog.csdn.net/hyqsong/article/details/52564046
 - 【C语言】右左法则——准确理解所有声明 https://blog.csdn.net/newcong0123/article/details/51883352

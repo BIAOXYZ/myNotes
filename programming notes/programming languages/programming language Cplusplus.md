@@ -90,7 +90,9 @@ https://www.zhihu.com/question/23971699/answer/69592611
 https://www.zhihu.com/question/23971699/answer/84337233
 > C++ 对象的内存布局 https://coolshell.cn/articles/12176.html
 
+### 模板
 
+C++ 模板 - 菜鸟教程 http://www.runoob.com/cplusplus/cpp-templates.html
 
 ## 其他语法
 
@@ -105,6 +107,9 @@ https://blog.csdn.net/Augusdi/article/details/8865378
 
 C++委员会决定在C++20 中弃用原始指针
 https://www.cnbeta.com/articles/soft/712627.htm
+
+介绍一个C++奇巧淫技 - CSDN博客
+https://blog.csdn.net/maray/article/details/11096459
 
 # 实战过程
 

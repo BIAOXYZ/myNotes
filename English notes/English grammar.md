@@ -10,9 +10,9 @@ https://www.cnbeta.com/articles/soft/715023.htm
 
 # alpha-beta order 
 
+------------------------------------------------------------
 ## a 
-
-#### at one's discretion 自行决定;自行处理
+------------------------------------------------------------
 
 #### at an impasse 陷入僵局
 
@@ -22,8 +22,35 @@ The two parties have been at an impasse over the judges since the beginning of t
 Talks will probably be at an impasse for some time until some of the dust settles. 
 在尘埃落定前，谈判在一段时间内可能陷入僵局。
 
+#### at odds with [网络]与…不一致；与…不和；差异
+> Every smart contract runs on all peers, which is at odds with confidentiality, and prohibits the dissemination of contract code and state to a subset of peers. 
+https://arxiv.org/pdf/1801.10228.pdf
 
+China's culture of secrecy is at odds with its invitation to foreign companies to help modernize its business sector.
+中国的保密文化与其邀请外国公司助推其商业领域走向现代化的努力背道而驰。
+
+Some of the statistics seem to paint a surprisingly benign picture of the industry at the moment, but the reality seems at odds with this.
+一些统计数据似乎为当前的私人股本行业勾勒出了一幅出人意料的美好图景，但现实似乎并非如此。
+
+#### at one's discretion 自行决定;自行处理
+
+------------------------------------------------------------
+## b
+------------------------------------------------------------
+
+#### by sheer luck [网络]万幸；全凭运气
+> If by sheer luck, I challenge them on a pair of vertices that happen to be different colors, everyone will heave a sigh of relief and we’ll continue with the protocol. 
+https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/
+
+He escaped death in the car accident by sheer luck.
+他在车祸中幸免于难。
+
+And by sheer luck, tax cuts, planned when the economy was still strong, inflated demand at exactly the right time.
+特别幸运的是在经济依旧强劲的时候减税，适时的刺激了需求。
+
+------------------------------------------------------------
 ## c
+------------------------------------------------------------
 
 #### clairvoyance n.预见力；洞察力；神视力 [网络]透视；千里眼；透视力
 
@@ -33,25 +60,47 @@ He is dull sometimes, and yet once in a while he surprises us with his exception
 Attaching probabilities to forecasts is certainly better than clairvoyance.
 利用概率进行预测当然要比凭空猜测好。
 
+------------------------------------------------------------
 ## e
+------------------------------------------------------------
 
 except for与except的区别
 https://zhidao.baidu.com/question/6292160.html
 
+------------------------------------------------------------
+## f
+------------------------------------------------------------
+
+#### first off 替换 at first，句中也能用似乎。
+
+First off, let's see how much it'll cost.
+首先，让我们看看要花多少钱。
+
+"We were really surprised to see that it was wolf DNA, and first off we assumed we had something wrong, " Dr. Stenseth said.
+“当我们发现这是狼的DNA时，真的是非常的惊讶，一开始我们甚至觉得可能是弄错了样本”，斯滕塞斯博士说。
+
+
+------------------------------------------------------------
 ## k
+------------------------------------------------------------
+
 
 #### knockoff n. 敲去；停止工作 [网络.] 仿冒品；冒牌货；翻印本
 [http://searchsecurity.techtarget.com/news/252437212/IBM-outlines-visions-for-crypto-anchors-lattice-cryptography]
 > The global supply chain has been poisoned with knockoffs and counterfeit goods, ...
 
-
+------------------------------------------------------------
 ## n
+------------------------------------------------------------
 
 #### not only ... but also
 [https://zhidao.baidu.com/question/56106911.html]
 [http://gmat.koolearn.com/20140905/788248.html]
 
+------------------------------------------------------------
 ## o
+------------------------------------------------------------
+
 
 #### one-size-fits-all adj.通用的；一体适用的 [网络] 一刀切；均码；一成不变
 [https://arxiv.org/pdf/1801.10228.pdf]
@@ -61,7 +110,21 @@ https://zhidao.baidu.com/question/6292160.html
 Yet the United States has never been a leveler society; neither the well-to-do nor the poor have ever sought a one-size-fits-all status.
 但是，美国从来不是一个平均主义社会；无论有钱人还是穷人都从不曾要求地位全然划一。
 
+------------------------------------------------------------
 ## t 
+------------------------------------------------------------
+
+#### take a crack at [网络]尝试；尝试一下；试一试
+> Initially the plan is to travel backwards a few years and use the extra working time to take another crack at solving the problem. https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/
+
+Now that you're done with her, you mind if I take a crack at her?
+既然你和她已经分手了，你介意我去追吗？
+
+After that, the EU's Council of Ministers as well as the European Parliament will take a crack at modifying them.
+在那之后，欧盟部长理事会以及欧盟议会可能会试图修改提案。
+
+He said he didn't know how to swim but would take a crack at it.
+他说他不会游泳，但将尽力尝试。
 
 #### thereof
 <<聊聊thereof的用法>>

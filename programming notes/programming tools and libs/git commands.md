@@ -601,6 +601,15 @@ http://blog.csdn.net/forever_wind/article/details/37506389
 <<Git HEAD detached from XXX (git HEAD 游离) 解决办法>>
 http://blog.csdn.net/u011240877/article/details/76273335
 
+#### git本地分支与远程分支关联关系查询
+git 如何查看当前分支的upstream? - 知乎 https://www.zhihu.com/question/27324031
+```
+这个帖子，包括下面的stackoverflow里的帖子基本都没有特别好的办法，回头再研究下吧。
+https://stackoverflow.com/questions/171550/find-out-which-remote-branch-a-local-branch-is-tracking
+
+目前最好的办法就是上面stackoverflow帖子里的：
+git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)
+```
 
 ### git常用命令综合类
 
@@ -741,3 +750,13 @@ https://zhuanlan.zhihu.com/p/33592623
 
 Git使用教程,最详细，最傻瓜，最浅显，真正手把手教 - 慕课网的文章 - 知乎
 https://zhuanlan.zhihu.com/p/30044692
+
+GitLab发布Web IDE 在Web端为你提供集成开发体验 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/soft/737313.htm
+- https://about.gitlab.com/2018/06/15/introducing-gitlab-s-integrated-development-environment/
+- https://docs.gitlab.com/ee/user/project/web_ide/
+```
+试了一下，可以在线同时commit多个change，并且可以先stage然后选择性commit部分change。无敌，就是这么寂寞！
+这么一比的话，Github你的心不会痛嘛？！
+```
+
+https://gitlab.com/help/ci/quick_start/README

@@ -1,32 +1,132 @@
 
 ## GDB一般性知识
 
-《100个gdb小技巧》
-https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details
+《100个gdb小技巧》 https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details
+- 配置gdb init文件 https://github.com/hellogcc/100-gdb-tips/blob/master/src/config-gdbinit.md
+> 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
+- 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
+> set print pretty on
 
-
-## 旧的GDB知识总结
-
-<<使用GDB命令行调试器调试C/C++程序>>
-https://linux.cn/article-4302-1.html
+## 我的gdb配置(.gdbinit， bps.cfg， .gdb_history全都在~目录下)和调试
 ```
-info locals
-ptype [变量]
+# .gdbinit 
+
+# for postgres debug
+handle SIGUSR2 noprint nostop
+
+# for breakpoints
+source ~/bps.cfg
+
+# 保存历史命令
+set history filename ~/.gdb_history
+set history save on
+
+# 退出时不显示提示信息
+set confirm off
+
+# 每行打印一个结构体成员
+set print pretty on
 ```
 
-<<GDB命令使用总结（二）>>
-http://blog.chinaunix.net/uid-20788636-id-1841301.html
+### 这个新浪博客的帖子基本是最全的。下面笔记有我自己实验的一部分。
+
+[GDB]GDB几个知识实例 http://blog.sina.com.cn/s/blog_54f82cc201013kce.html
 ```
-finish
-until
+info frame 
+info f
+这个命令会打印出更为详细的当前栈层的信息，只不过，大多数都是运行时的内内地址。比如：函数地址，调用函数的地址，
+被调用函数的地址，目前的函数是由什么样的程序语言写成的、函数参数地址及值、局部变量的地址等等。
+
+info args 打印出当前函数的参数名及其值。
+info locals 打印出当前函数中所有局部变量及其值。 
+info catch 打印出当前的函数中的异常处理信息。 
+set listsize 设置一次显示源代码的行数。 
+show listsize 查看当前 listsize的设置。
+```
+> 原文中问到：“whatis和ptype的区别？”
+```
+自己试了试发现ptype会把结构体展开，whatis不会：
+(gdb) ptype edata
+type = struct ErrorData {
+    int elevel;
+    bool output_to_server;
+    bool output_to_client;
+    bool show_funcname;
+    bool hide_stmt;
+    const char *filename;
+    int lineno;
+    const char *funcname;
+    const char *domain;
+    int sqlerrcode;
+    char *message;
+    char *detail;
+    char *detail_log;
+    char *hint;
+    char *context;
+    int cursorpos;
+    int internalpos;
+    char *internalquery;
+    int saved_errno;
+} *
+(gdb) whatis edata
+type = ErrorData *
 ```
 
-<<gdb 调试时指定跳到第几行>>
-http://blog.csdn.net/yasi_xi/article/details/40075267
+```
+另外再总结一下，虽然一直知道gdb可以用无歧义的简写指令，但是除了b(r)，bt，d，i，l，s，n等寥寥的几个，大部分还是用全拼。
+下面总结一些其他常用的缩写，有的已经习惯，有的要多用用
 
-<< gdb signal >>
-http://blog.csdn.net/maotianwang/article/details/21451271
+i b 这个不用说了
+i f 这个也不用说了
 
+d br 这是因为仅用d b会有下述歧义
+(gdb) d b
+Ambiguous delete command "b": bookmark, breakpoints.
+
+i lo = i loc = i local
+i ar = i arg = i args
+(gdb) i l
+Ambiguous info command "l": line, locals.
+(gdb) i a
+Ambiguous info command "a": address, all-registers, args, auto-load, auto-load-scripts, auxv.
+
+fin = finish
+(gdb) f
+#0  ReadBufferExtended (reln=0x7fb189daaf18, forkNum=MAIN_FORKNUM, blockNum=1, mode=RBM_NORMAL, strategy=0x0) at bufmgr.c:251
+(gdb) fi
+Ambiguous command "fi": file, files, fin, find, finish.
+(gdb) fin
+Run till exit from #0  ReadBufferExtended (reln=0x7fb189daaf18, forkNum=MAIN_FORKNUM, blockNum=1, mode=RBM_NORMAL, strategy=0x0) at bufmgr.c:251
+ReadBuffer (reln=0x7fb189daaf18, blockNum=1) at bufmgr.c:198
+Value returned is $241 = 82
+
+u = until
+
+//下面这俩我觉得有些疑点。使用enable时明明en也有可能是end，同理disable时dis也有可能是display等，
+//但是确实断点开启，断点屏蔽操作都成功了（可能因为参数gdb能够确定）。不过感觉这两个命令还是别偷懒了，反正不是很常用。
+
+(gdb) e
+Ambiguous command "e": echo, edit, en, enable, end, eval, exec-file, explore.
+(gdb) en
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00000000008109ba in exec_simple_query at postgres.c:4243
+        breakpoint already hit 2 times
+2       breakpoint     keep y   0x000000000059bc89 in ProcedureCreate at pg_proc.c:105
+3       breakpoint     keep y   0x0000000000817660 in PortalRun at pquery.c:722
+
+(gdb) di
+Ambiguous command "di": directory, dis, disa, disable, disassemble, disconnect, display.
+(gdb) dis
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep n   0x00000000008109ba in exec_simple_query at postgres.c:4243
+        breakpoint already hit 2 times
+2       breakpoint     keep n   0x000000000059bc89 in ProcedureCreate at pg_proc.c:105
+3       breakpoint     keep n   0x0000000000817660 in PortalRun at pquery.c:722
+```
+
+## 其他实战或配置参考部分(包含了一个.gdbinit设置的例子，看起来设置得更整洁，不过还是习惯了断点文件叫bps.cfg- -)
 
 ### 调试实战
 
@@ -71,13 +171,12 @@ cn和dn一起调试的话和该过程类似，只是除了执行语句的窗口�
 各自打好断点，屏蔽好信号。
 ```
 
-## 用了一阵VS后又回头用GDB（因为kernel停摆，虽然后面又很快局部的恢复）
+### 用了一阵VS后又回头用GDB（因为kernel停摆，虽然后面又很快局部的恢复）
 
 ```
 handle SIGPIPE nostop
 handle all nostop // 应该是这句？
 ```
-
 
 *一个小技巧，大家在gdb调试mppdb时，总需要屏蔽信号：
 可以这样让gdb每次自动加载这个屏蔽功能，不用每次自己输入*
@@ -88,20 +187,17 @@ handle SIGUSR2 noprint nostop
 ```
 
 ### 保存断点
-
 ```
 save breakpoints bps.cfg
 source bps.cfg
 ```
 
-<<gdb调试断点的保存>>
-http://blog.csdn.net/yang15225094594/article/details/29599117
+<<gdb调试断点的保存>> http://blog.csdn.net/yang15225094594/article/details/29599117
 
 
 #### 后来发现用.gdbinit加断点文件的办法更好
 
-gdb中忽略信号处理
-https://blog.csdn.net/brucexu1978/article/details/7721321
+gdb中忽略信号处理 https://blog.csdn.net/brucexu1978/article/details/7721321
 ```
 info signals
 info handle
@@ -133,6 +229,49 @@ gdb.break:
 
 这样如果需要使用自动脚本，就用.gdb命令，否则用gdb进入交互状态的gdb。这样配置以后可以一个简单命令就开始调试，整个效率就能提高不少。
 ```
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+--------------------------------------------------
+
+## gdb stackexchange/stackoverflow
+
+https://www.systutorials.com/docs/linux/man/5-gdbinit/
+```
+~/.gdbinit
+User initialization file. It is executed unless user specified GDB options "-nx", "-n" or "-nh".
+
+从这一句以及我个人的实践结果来看。放在~目录下的.gdbinit是不会自动随着gdb启动的。
+还是必须得用alias来实现，比如：
+alias gdb='gdb -x ~/.gdbinit'
+```
+https://stackoverflow.com/questions/9573683/where-is-gdbinit-is-located-and-how-can-i-edit-it
+```
+上面那个帖子和这个帖子都说了可以对不同程序使用不同的.gdbinit文件。但是我没有自己试过。
+```
+
+
+## 旧的GDB知识总结
+
+<<使用GDB命令行调试器调试C/C++程序>>
+https://linux.cn/article-4302-1.html
+```
+info locals
+ptype [变量]
+```
+
+<<GDB命令使用总结（二）>>
+http://blog.chinaunix.net/uid-20788636-id-1841301.html
+```
+finish
+until
+```
+
+<<gdb 调试时指定跳到第几行>>
+http://blog.csdn.net/yasi_xi/article/details/40075267
+
+<< gdb signal >>
+http://blog.csdn.net/maotianwang/article/details/21451271
+
 
 
 
@@ -214,6 +353,8 @@ http://www.heimizhou.com/windows-remote-debug-linux-c-plus-plus.html
 - Linux 查看服务状态（服务与进程）https://blog.csdn.net/tanga842428/article/details/79040089
 
 
+GDB 7.0 与 回溯调试 - CSDN博客 https://blog.csdn.net/haoel/article/details/4674547
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
@@ -221,6 +362,18 @@ http://www.heimizhou.com/windows-remote-debug-linux-c-plus-plus.html
 
 Linux调试工具
 http://blog.csdn.net/hzrandd/article/details/50849329
+
+### cgdb
+
+cgdb - the curses debugger http://cgdb.github.io/
+```
+$ ./configure --prefix=/usr/local
+$ make
+$ sudo make install
+```
+
+CGDB中文手册 https://legacy.gitbook.com/book/leeyiw/cgdb-manual-in-chinese/details
+> 这个手册不全，看的时候注意。不过其实cgdb也不太需要手册。命令和gdb通用，主要就是按ESC键进入上层代码窗口，按i键进入下层gdb命令窗口。然后按/键搜索之类的。可以参见这个书的"CGDB命令部分"
 
 ## DDD (Data Display Debugger)
 
