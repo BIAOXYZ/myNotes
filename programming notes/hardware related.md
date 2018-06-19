@@ -3,6 +3,7 @@
 
 https://zh.wikipedia.org/wiki/RAID
 
+大容量SSD有什么用途 是对系统有特别加成吗？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/tech/718891.htm
 
 ### 笔记本
 
