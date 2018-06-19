@@ -111,6 +111,9 @@ http://ibm-research.jobs/job/ibm-japan-postdoctoral-researcher-security-research
 
 http://www.research.ibm.com/labs/china/
 
+### Microsoft
+
+https://careers.microsoft.com/us/en/actioncenter
 
 ### SAP
 
