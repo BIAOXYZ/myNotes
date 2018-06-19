@@ -50,3 +50,11 @@ http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 - Py Complexity圈复杂度检测	
 - Simian代码重复度	
 - LLT覆盖率检测
+
+# 其他
+
+### 一套简单的开发工具
+- gerrit代码检视
+- sanity 自验
+- Jenkins 持续集成
+- JIRA 问题单，记录任务
