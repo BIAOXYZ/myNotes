@@ -238,6 +238,62 @@ make;make install
 (成功后会自动将pgcrypto.so拷贝到数据库服务器的XXX/lib目录，将pgcrypto.control和几个pgcrypto相关的.sql文件拷贝到数据库服务器的XXX/share/extension目录)
 ```
 
+```
+testdb=# create table employee (id int, name varchar, sal int);
+CREATE TABLE
+
+//test hash
+
+testdb=# insert into employee values (1,'alice',10000);
+INSERT 0 1
+testdb=# select * from employee;
+ id | name  |  sal
+----+-------+-------
+  1 | alice | 10000
+(1 row)
+
+testdb=# insert into employee values (2,digest('bob','md5'),10002);
+INSERT 0 1
+testdb=# select * from employee ;
+ id |                name                |  sal
+----+------------------------------------+-------
+  1 | alice                              | 10000
+  2 | \x9f9d51bc70ef21ca5c14f307980a29d8 | 10002
+(2 rows)
+
+testdb=# select digest('bob','md5');
+               digest
+------------------------------------
+ \x9f9d51bc70ef21ca5c14f307980a29d8
+(1 row)
+
+//test encryption
+
+testdb=# insert into employee values (3,pgp_sym_encrypt('carol', 'pwd', 'cipher-algo=bf, compress-algo=2, compress-level=9'),10003);
+ERROR:  Unsupported compression algorithm
+testdb=# insert into employee values (3,pgp_sym_encrypt('carol', 'pwd', 'cipher-algo=bf'),10003);
+INSERT 0 1
+testdb=# select * from employee ;
+ id |                                                               name                                                               |  sal
+----+----------------------------------------------------------------------------------------------------------------------------------+-------
+  1 | alice                                                                                                                            | 10000
+  2 | \x9f9d51bc70ef21ca5c14f307980a29d8                                                                                               | 10002
+  3 | \xc30d04040302fd924bb772a27a0771d22e01be9e65e361e050d34dfaea618d677260013de1faf7bc969ecbd860a38c0fa5fbe2405d0d8bae5a0ff2c8254731 | 10003
+(3 rows)
+
+testdb=# select pgp_sym_decrypt('\xc30d04040302fd924bb772a27a0771d22e01be9e65e361e050d34dfaea618d677260013de1faf7bc969ecbd860a38c0fa5fbe2405d0d8bae5a0ff2c8254731','pwd');
+ pgp_sym_decrypt
+-----------------
+ carol
+(1 row)
+
+testdb=# select pgp_sym_decrypt('\xc30d04040302fd924bb772a27a0771d22e01be9e65e361e050d34dfaea618d677260013de1faf7bc969ecbd860a38c0fa5fbe2405d0d8bae5a0ff2c8254731'::bytea,'pwd');
+ pgp_sym_decrypt
+-----------------
+ carol
+(1 row)
+```
+
 #### PG自定义函数
 ```
 <<使用C语言写PostgreSQL函数>>
