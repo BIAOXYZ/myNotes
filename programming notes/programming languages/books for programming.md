@@ -1,4 +1,9 @@
 
+# books download
+
+计算机电子书pdf整理 https://github.com/fuhmmin/it-ebooks-cn
+
+计算机书籍控 http://bestcbooks.com/
 
 # books general
 
