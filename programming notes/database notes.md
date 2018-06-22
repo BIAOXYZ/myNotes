@@ -18,6 +18,7 @@ http://www.postgresqltutorial.com/
 <<Postgres Changelog - All Versions>>
 https://bucardo.org/postgres_all_versions.html
 
+--------------------------------------------------
 
 ## pgcon and pgcon China
 
@@ -25,8 +26,9 @@ https://bucardo.org/postgres_all_versions.html
 
 #### PGCon 2012 (http://www.pgcon.org/2012/)
 
-WAL Internals Of PostgreSQL
-http://www.pgcon.org/2012/schedule/events/408.en.html
+WAL Internals Of PostgreSQL http://www.pgcon.org/2012/schedule/events/408.en.html
+
+Configuring Write-Scalable PostgreSQL Cluster https://www.pgcon.org/2012/schedule/attachments/224_Postgres-XC_tutorial.pdf (PGXC构架)
 
 #### PGCon 2016 (http://www.pgcon.org/2016/)
 
@@ -51,6 +53,7 @@ http://www.postgres.cn/downfiles/pg2016conf_day2_s1_pm3.pdf
 
 http://2018.pgconfapac.org/
 
+--------------------------------------------------
 
 ### Postgres Wiki
 
