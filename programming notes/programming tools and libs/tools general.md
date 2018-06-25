@@ -7,3 +7,6 @@ https://zhuanlan.zhihu.com/p/21635987
 
 DocFetcher - 免费桌面文档全文搜索引擎工具，直接查找文档的全部文字内容！
 https://www.iplaysoft.com/docfetcher.html
+
+你的开源项目缺个好看的 logo？这里有人免费帮你画好了 - Open Source 开源 - cnBeta.COM
+https://www.cnbeta.com/articles/tech/738117.htm
