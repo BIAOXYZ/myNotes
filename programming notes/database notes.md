@@ -20,6 +20,11 @@ https://bucardo.org/postgres_all_versions.html
 
 --------------------------------------------------
 
+## PG blog
+
+健哥的数据花园
+- PostgreSQL索引页 http://www.cnblogs.com/gaojian/p/topindex.html
+
 ## pgcon and pgcon China
 
 ### PGCon (https://www.pgcon.org/)
@@ -151,7 +156,7 @@ http://www.leehao.org/postgresql-executioneng/
 postgres 源码分析 之 insert (1)
 http://blog.csdn.net/huguangshanse00/article/details/37045847
 
-
+PostgreSQL中page页结构源码解析 https://www.linuxidc.com/Linux/2015-05/117974.htm
 
 
 ### 临时表和unlogged table
@@ -372,6 +377,10 @@ http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
 
 Oracle数据安全解决方案透明数据加密TDE
 http://www.linuxidc.com/Linux/2011-12/48689.htm
+
+## Oracle日志相关
+
+RedoLog Checkpoint 和 SCN关系 https://blog.csdn.net/xujinyang/article/details/6829693
 
 
 ## Oracle连接
