@@ -519,6 +519,19 @@ http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
 https://www.viva64.com/en/b/0542/
 
+# [LevelDB](http://leveldb.org/)
+
+- http://leveldb.org/
+- https://github.com/google/leveldb
+
+LevelDB详解 - CSDN博客
+https://blog.csdn.net/linuxheik/article/details/52768223
+
+# [RocksDB](https://rocksdb.org/)
+
+- https://rocksdb.org/
+- https://github.com/facebook/rocksdb/
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
