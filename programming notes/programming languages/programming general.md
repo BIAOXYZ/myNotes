@@ -123,6 +123,11 @@ https://blog.csdn.net/maray/article/details/9737549
 
 http://troubleshooters.com/codecorn/awk/index.htm
 
+### 伯乐在线
+
+简明解释算法中的大O符号 http://blog.jobbole.com/55184/
+
+堆和堆的应用：堆排序和优先队列 http://blog.jobbole.com/113552/
 
 ## 编程知识
 
