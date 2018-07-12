@@ -1,9 +1,13 @@
 
-### Storage
+## Storage
 
 https://zh.wikipedia.org/wiki/RAID
 
+### SSD
+
 大容量SSD有什么用途 是对系统有特别加成吗？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/tech/718891.htm
+
+异常断电为什么对SSD伤害这么大？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/soft/746109.htm
 
 ### 笔记本
 
