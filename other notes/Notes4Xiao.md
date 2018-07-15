@@ -35,7 +35,14 @@ http://www.csc.edu.cn/chuguo/s/1224
 2017年国家建设高水平大学公派研究生项目录取结果确定
 http://www.csc.edu.cn/chuguo/s/934
 
+
+
+
+***--------------------------------------------------tooth extraction--------------------------------------------------***
+
 ### 拔牙(2018/07/14 11:10:00--11:29:00)
+
+#### 知乎系答案
 
 拔牙后几天可以吃海鲜？几天能吃火锅？ - 知乎 https://www.zhihu.com/question/48815342
 - 拔牙后几天可以吃海鲜？几天能吃火锅？ - kun yu的回答 - 知乎 https://www.zhihu.com/question/48815342/answer/112816847
@@ -63,3 +70,11 @@ http://www.csc.edu.cn/chuguo/s/934
 拔完智齿后，吃这些东西能让伤口愈合更快！ http://www.sohu.com/a/40462435_121156
 
 智齿拔完之后能吃什么食物，有见什么建议 http://ask.39.net/question/23671180.html
+
+
+
+拔牙术后食谱 https://www.xiachufang.com/recipe/102815538/
+
+拔牙后食谱｜好好吃饭，打倒一切 https://www.thechihuo.com/article/foods-to-eat-after-teeth-removed
+
+***--------------------------------------------------tooth extraction--------------------------------------------------***
