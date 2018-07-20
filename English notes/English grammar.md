@@ -149,3 +149,30 @@ With a pistol pointing at the back of his head, he could do nothing but toe the 
 With pleas going unheard, the city government is now moving toward legislation to force manufacturers to toe the line on packaging.
 随着要求被置若罔闻，市政府正试图通过立法来使制造商在包装上遵守规定。
 
+
+# Others
+
+## 单射满射总结
+
+1.以名词形式为例，最标准的用法还是：
+surjection = surjective function = onto mapping ; injection = injective function = one-to-one mapping
+2.单射也有翻译成“嵌射”，满射也有翻译成“盖射”。没有去找最开始出处，猜测是从“onto”翻译过去所以是“盖”；但是单射那个“嵌”好像是因为有类似into map的说法？以前依稀在论文里见过，但是不确定了。
+补：但是后来在Quora里找到了类似的：https://www.quora.com/What-is-the-difference-between-mapping-into-versus-mapping-onto
+> The function f is an injection (or, you’d say f maps X into Y) ......
+
+***参考链接：***
+
+- https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection
+```
+维基百科里的这个提供了最标准的用法：
+injective (one-to-one)
+surjective (onto)
+bijective (one-to-one and onto or one-to-one correspondence)
+```
+- https://www.quora.com/When-is-an-onto-function-called-a-surjective-function
+- https://math.stackexchange.com/questions/63154/how-did-one-to-one-come-to-mean-injective
+>这两个帖子主要说明了两大类用法的部分历史，概括一下就是：
+1.最早出现的是onto形式的用法，但是Bourbaki（其实是一组法国数学家的化名）比较精益求精，就提出surjective形式的用法。后来英语系的数学家们觉得这个更符合语法规则啊，不然说一个function是onto多别扭，于是也支持这种用法。
+2.最早其实是只有定义域（domain）和值域（range）的。Bourbaki从集合论的角度定义函数，引入了一个"codomain"（陪域）的概念。range一定是codomain的子集或真子集。但是引入这个概念后，就会造成one-to-one看起来既像单射又像一一映射，其实区别主要在于目标集合是range还是codomain。
+
+
