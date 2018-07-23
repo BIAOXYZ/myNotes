@@ -1,4 +1,10 @@
 
+# From CB
+
+网友花了14个小时制作长春长生销售分布图 - 人物 - cnBeta.COM https://www.cnbeta.com/articles/tech/749691.htm
+- https://github.com/fuckcqcs/fuckcqcs
+
+
 # From Zhihu
 
 中国真的有很多穷人吗？ - 知乎 https://www.zhihu.com/question/30277318
