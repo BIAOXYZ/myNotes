@@ -9,3 +9,13 @@ http://www.matrix67.com/blog/archives/901
 
 云来了，安全盒子怎么办
 http://www.valleytalk.org/2017/07/27/%e4%ba%91%e6%9d%a5%e4%ba%86%ef%bc%8c%e5%ae%89%e5%85%a8%e7%9b%92%e5%ad%90%e6%80%8e%e4%b9%88%e5%8a%9e/
+
+## Miskcoo's Space  ||  [About](http://blog.miskcoo.com/about)
+
+- 扩展欧几里得算法与中国剩余定理 http://blog.miskcoo.com/2014/09/chinese-remainder-theorem
+- 从多项式乘法到快速傅里叶变换 http://blog.miskcoo.com/2015/04/polynomial-multiplication-and-fast-fourier-transform
+- 扩展大步小步法解决离散对数问题 http://blog.miskcoo.com/2015/05/discrete-logarithm-problem
+- Codeforces 上的一些组合计数问题 http://blog.miskcoo.com/2015/06/codeforces-combinatorics-and-probabilities-problem
+
+
+
