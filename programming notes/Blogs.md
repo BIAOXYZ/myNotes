@@ -23,9 +23,17 @@ http://www.valleytalk.org/2017/07/27/%e4%ba%91%e6%9d%a5%e4%ba%86%ef%bc%8c%e5%ae%
 - 扩展大步小步法解决离散对数问题 http://blog.miskcoo.com/2015/05/discrete-logarithm-problem
 - Codeforces 上的一些组合计数问题 http://blog.miskcoo.com/2015/06/codeforces-combinatorics-and-probabilities-problem
 
-### 0.肆玖 http://dna049.com/
+### [0.肆玖](http://dna049.com/)
 
 《Lecture on Modules and Rings》读书笔记 http://dna049.com/2017/05/06/Note-on-Lecture-of-Modules-and-Rings/
+
+### [hzwer](http://hzwer.com/) 
+
+http://hzwer.com/2048/
+
+深度强化学习介绍 http://hzwer.com/8908.html
+
+
 
 
 --------------------------------------------------
