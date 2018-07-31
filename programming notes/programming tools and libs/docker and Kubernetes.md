@@ -17,6 +17,8 @@ http://docs.kubernetes.org.cn/
 
 # docker general
 
+易百教程 -- Docker教程 https://www.yiibai.com/docker/
+
 Linux容器技术进化史
 http://www.infoq.com/cn/articles/how-linux-containers-evolved
 
@@ -29,8 +31,8 @@ http://www.infoq.com/cn/profile/%E8%82%96%E5%BE%B7%E6%97%B6
 - 深入浅出Docker（五）：基于Fig搭建开发环境 http://www.infoq.com/cn/articles/docker-build-development-environment-based-on-fig
 - 深入浅出Docker（六）：像谷歌一样部署你的应用 http://www.infoq.com/cn/articles/deploy-your-application-like-google
 
-易百教程 -- Docker教程
-https://www.yiibai.com/docker/
+世民谈云计算 -- 随笔分类 - Docker
+- 理解Docker（7）：Docker 存储 - AUFS https://www.cnblogs.com/sammyliu/p/5931383.html
 
 
 Docker实战（一）：Docker基础命令 - CSDN博客
@@ -42,11 +44,18 @@ https://blog.csdn.net/opensure/article/details/46490749
 Docker入门与实战讲解 - CSDN博客
 https://blog.csdn.net/relax_hb/article/details/69668815
 
+
+
+## 阮一峰docker
+
+- Docker 入门教程 http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html
+- Docker 微服务教程 http://www.ruanyifeng.com/blog/2018/02/docker-wordpress-tutorial.html
+
 ## DaoCloud
 
-Docker 核心技术与实现原理
-http://blog.daocloud.io/edu171201/
-
+- Docker 核心技术与实现原理 http://blog.daocloud.io/edu171201/
+- Docker简明教程 http://open.daocloud.io/learning-docker/ (这个是某个人在DaoCloud上的实战过程)
+> Docker简明教程 https://jiajially.gitbooks.io/dockerguide/content/ (这个是个某个gitbook，名字一样，开始还弄混了)
 
 ## docker微信帖子
 
@@ -56,6 +65,9 @@ http://mp.weixin.qq.com/s/Fycfuu2OhxblCBNUOH96jA
 手把手教你写Docker
 https://mp.weixin.qq.com/s/26pQoikXyNC7aUFJbCkbjA
 
+## docker知乎帖子
+
+如何通俗解释Docker是什么？ - 知乎 https://www.zhihu.com/question/28300645
 
 
 # docker-machine
