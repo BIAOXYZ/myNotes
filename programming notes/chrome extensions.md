@@ -7,8 +7,14 @@ http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1009/8575.html
 值得推荐的chrome书签同步插件汇总
 http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
-VIP看看
-http://chromecj.com/fun/2018-02/1352.html
+强力推荐！那些你不能错过的 GitHub 插件和工具 https://juejin.im/post/59ade28051882538fd72fa2c
+
+## From chromecj
+
+- Octotree：树形展示 Github 项目代码 http://chromecj.com/web-development/2017-10/840.html
+- VIP看看 http://chromecj.com/fun/2018-02/1352.html
+
+
 
 
 # firefox extensions
