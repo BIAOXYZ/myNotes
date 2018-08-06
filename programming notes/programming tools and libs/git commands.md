@@ -743,6 +743,13 @@ https://www.cnblogs.com/kevingrace/p/5624122.html
 Gerrit代码Review入门实战
 http://geek.csdn.net/news/detail/85681
 
+#### [GitHub开发者](https://githuber.cn/)
+
+- https://githuber.cn/stat
+- https://githuber.cn/rank
+- https://githuber.cn/search
+- http://blog.githuber.cn/
+
 ### GitLab相关
 
 GitLab安装、使用教程（Docker版） - 慕课网的文章 - 知乎
