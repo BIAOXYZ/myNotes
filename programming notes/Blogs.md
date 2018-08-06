@@ -3,9 +3,12 @@
 ## Matrix67
 --------------------------------------------------
 
-停机问题、Chaitin常数与万能证明方法
-http://www.matrix67.com/blog/archives/901
+停机问题、Chaitin常数与万能证明方法 http://www.matrix67.com/blog/archives/901
 > 我写一个程序从小到大枚举所有的偶数，看是不是有两个质数加起来等于它：如果找到了，继续枚举下一个偶数；否则输出这个反例并结束程序。然后我编译它。这个编译器不是可以判断我这程序能否终止么？如果编译器说我这个程序会无限执行下去的话……我不就相当于把Goldbach猜想证到了吗？或者，编译器说程序最终会终止，那Goldbach猜想不就直接被推翻了吗？反正，那个证Goldbach猜想的奖金肯定是我的了。
+
+Buffon投针实验：究竟为什么是pi？ http://www.matrix67.com/blog/archives/2494
+- Buffon's Needle, the Easy Way http://blog.sigfpe.com/2009/10/buffons-needle-easy-way.html
+- Math Surprises: An Example http://www.cut-the-knot.org/ctk/August2001.shtml
 
 --------------------------------------------------
 ## 弯曲评论
