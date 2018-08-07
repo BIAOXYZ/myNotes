@@ -1,5 +1,6 @@
 
-## Storage
+
+## `##` Storage
 
 https://zh.wikipedia.org/wiki/RAID
 
@@ -9,7 +10,11 @@ https://zh.wikipedia.org/wiki/RAID
 
 异常断电为什么对SSD伤害这么大？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/soft/746109.htm
 
-### 笔记本
+## `##` CPU
+
+服务器中的u是什么意思 http://blog.chinaunix.net/uid-21505614-id-289333.html
+
+## `##` 笔记本
 
 <<联想笔记本电脑 怎么能将第一排默认的是F1 F2............F12 按FN后才是设置功能 我打游戏不方便啊>>
 https://zhidao.baidu.com/question/486620110.html
