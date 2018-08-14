@@ -68,6 +68,9 @@ http://zhuanlan.zhihu.com/p/22880087
 VS Code 与 LaTeX 真乃天作之合
 https://www.jianshu.com/p/57f8d1e026f5
 
+Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio - cnBeta.COM
+https://www.cnbeta.com/articles/soft/756969.htm
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
