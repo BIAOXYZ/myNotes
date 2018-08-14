@@ -13,6 +13,9 @@ https://www.tutorialspoint.com/cplusplus/index.htm
 - C++在线教程
 http://www.gitbook.net/cplusplus/index.html
 
+鱼C工作室 https://ilovefishc.com/
+- 【C++语法】《C++快速入门》（小甲鱼） https://www.bilibili.com/video/av28127959/
+
 - C++基础教程-多线程
 http://wiki.jikexueyuan.com/project/cplusplus/multithreading.html
 
