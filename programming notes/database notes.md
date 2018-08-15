@@ -22,8 +22,17 @@ https://bucardo.org/postgres_all_versions.html
 
 ## PG blog
 
-健哥的数据花园
+健哥的数据花园 https://www.cnblogs.com/gaojian/
 - PostgreSQL索引页 http://www.cnblogs.com/gaojian/p/topindex.html
+
+深入理解PostgreSQL https://blog.csdn.net/beiigang 或 http://beigang.iteye.com/
+- PostgreSQL内核 https://blog.csdn.net/beiigang/article/category/947307
+- PostgreSQL接口编程 https://blog.csdn.net/beiigang/article/category/947320
+- PostgreSQL其他 https://blog.csdn.net/beiigang/article/category/947308
+
+http://www.cnblogs.com/stephen-liu74/
+- PostgreSQL学习手册(目录) http://www.cnblogs.com/stephen-liu74/archive/2012/06/08/2315679.html
+
 
 ## pgcon and pgcon China
 
@@ -128,7 +137,12 @@ http://www.cnblogs.com/gaojian/p/3164792.html
 
 SQL优化（六） MVCC PostgreSQL实现事务和多版本并发控制的精华 http://www.jasongj.com/sql/mvcc/
 
-# PG代码
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+--------------------------------------------------
+## `##` PG代码
+--------------------------------------------------
 
 https://doxygen.postgresql.org/snapbuild_8c.html
 
@@ -155,6 +169,9 @@ postgres 源码分析 之 insert (1)
 http://blog.csdn.net/huguangshanse00/article/details/37045847
 
 PostgreSQL中page页结构源码解析 https://www.linuxidc.com/Linux/2015-05/117974.htm
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 ### 临时表和unlogged table
@@ -210,6 +227,10 @@ https://www.ibm.com/developerworks/cn/opensource/os-postgresecurity/
 Postgresql数据库的一些字符串操作函数
 https://www.cnblogs.com/wuhenke/archive/2010/08/02/1790750.html
 
+
+### PG组件
+
+Pgpool http://www.pgpool.net/mediawiki/index.php/Main_Page
 
 ### PG扩展
 
