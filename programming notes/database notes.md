@@ -470,9 +470,17 @@ http://pdf.th7.cn/down/files/1312/PostgreSQL%20Server%20Programming.pdf
 
 ### 两阶段提交
 
-http://blog.jobbole.com/95632/
+http://www.jobbole.com/members/hollischuang/
+- 关于分布式事务、两阶段提交协议、三阶提交协议 http://blog.jobbole.com/95632/
+- 分布式系统的一致性探讨 http://blog.jobbole.com/95618/
 
-https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
+http://www.hollischuang.com/
+- 分布式系统的CAP理论 http://www.hollischuang.com/archives/666
+- 分布式系统的BASE理论 http://www.hollischuang.com/archives/672
+- 深入分析事务的隔离级别 http://www.hollischuang.com/archives/943
+
+- 二阶段提交 https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
+- 事务隔离 https://zh.wikipedia.org/wiki/%E4%BA%8B%E5%8B%99%E9%9A%94%E9%9B%A2
 
 ## 并发管理
 
