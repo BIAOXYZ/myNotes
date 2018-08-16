@@ -36,8 +36,8 @@ http://www.cnblogs.com/skynet/p/3372855.html
 > C++对象模型 http://www.cnblogs.com/skynet/p/3343726.html
 > C/C++ Memory Layout http://www.cnblogs.com/skynet/archive/2011/03/07/1975479.html
 > {PS:这个叫skynet博主的博文那图真是详细！}
-- 介绍linux/windows OS下静态库（.a、.lib）和动态库（.so、.dll）的 link & load
-http://www.cnblogs.com/scotth/p/3977928.html
+>> 介绍linux/windows OS下静态库（.a、.lib）和动态库（.so、.dll）的 link & load http://www.cnblogs.com/scotth/p/3977928.html
+- C/C++内存泄漏及检测 http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html
 
 
 你可能不知道的 C++（一）
