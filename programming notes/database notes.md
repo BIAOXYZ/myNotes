@@ -168,7 +168,8 @@ http://www.leehao.org/postgresql-executioneng/
 postgres 源码分析 之 insert (1)
 http://blog.csdn.net/huguangshanse00/article/details/37045847
 
-PostgreSQL中page页结构源码解析 https://www.linuxidc.com/Linux/2015-05/117974.htm
+- PostgreSQL中page页结构源码解析 https://www.linuxidc.com/Linux/2015-05/117974.htm
+- PostgreSQL的Page分析记录 https://my.oschina.net/Suregogo/blog/176279
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
