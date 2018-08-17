@@ -107,6 +107,8 @@ https://blog.csdn.net/zhiaini06/article/details/45287663
 
 # Kubernetes
 
+Docker 和 Kubernetes：给程序员的快速指南 - 江宏的文章 - 知乎 https://zhuanlan.zhihu.com/p/39937913
+
 Docker官方将支持Kubernetes，容器编排大战宣告结束
 http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
 
@@ -115,5 +117,7 @@ http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction
 
 Kubernetes初探 - CSDN博客
 https://blog.csdn.net/zhangjun2915/article/details/40598151
+
+
 
 
