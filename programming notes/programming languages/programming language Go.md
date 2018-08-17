@@ -1,6 +1,8 @@
 
 # Go general
 
+Go语言教程 https://www.yiibai.com/go/
+
 怎么学习 Golang？
 https://www.zhihu.com/question/23486344
 
