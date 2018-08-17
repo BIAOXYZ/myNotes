@@ -13,6 +13,7 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
 - Octotree：树形展示 Github 项目代码 http://chromecj.com/web-development/2017-10/840.html
 - VIP看看 http://chromecj.com/fun/2018-02/1352.html
+- Sourcegraph Chrome extension for GitHub：GitHub源代码浏览插件 Chrome插件 http://www.cnplugins.com/devtool/sourcegraph/
 
 
 
