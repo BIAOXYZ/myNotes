@@ -26,3 +26,6 @@ https://www.zhihu.com/question/20106821
 在线PPT制作网站？ - 知乎
 https://www.zhihu.com/question/22603002
 
+## PPT模板
+
+千库网 http://588ku.com/ppt/
