@@ -90,9 +90,25 @@ passwd liuliang
 (输入并确认密码即可)
 ```
 
+#### 用户组相关
+
 *更改用户:将liuliang添加到dbgrp用户组中*
 ```
 usermod -g dbgrp liuliang
+```
+
+*或者用如下方法添加test用户到docker用户组*
+```
+gpasswd -a test docker
+```
+
+*查看user用户所在的组,以及组内成员*
+`groups ${user}` 
+```
+[root@dhcp-9-186-54-39 ~]# groups test
+test : test wheel docker
+[root@dhcp-9-186-54-39 ~]# groups root
+root : root
 ```
 
 ### 修改主机名
