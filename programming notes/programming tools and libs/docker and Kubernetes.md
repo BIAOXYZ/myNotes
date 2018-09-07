@@ -74,6 +74,12 @@ https://mp.weixin.qq.com/s/26pQoikXyNC7aUFJbCkbjA
 
 如何通俗解释Docker是什么？ - 知乎 https://www.zhihu.com/question/28300645
 
+## docker具体问题
+
+Docker---(2)docker pull 下来的镜像存储在哪里 https://blog.csdn.net/weixin_39800144/article/details/79019503
+
+两个修改Docker本地镜像与容器的存储位置的方法 https://www.jianshu.com/p/e98ef6d6cfb4
+
 
 # docker-machine
 
