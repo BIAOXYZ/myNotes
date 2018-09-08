@@ -9,6 +9,11 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
 强力推荐！那些你不能错过的 GitHub 插件和工具 https://juejin.im/post/59ade28051882538fd72fa2c
 
+## From CB
+
+Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 谷歌浏览器 - cnBeta.COM https://www.cnbeta.com/articles/tech/765787.htm
+> "Chrome远程桌面：使用Chrome遥控电脑"（英文名：Chrome Remote Desktop）
+
 ## From chromecj
 
 - Octotree：树形展示 Github 项目代码 http://chromecj.com/web-development/2017-10/840.html
@@ -24,3 +29,4 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
 Setup VPN
 http://desktopclient.net/gw/index.html#/setupvpn
+
