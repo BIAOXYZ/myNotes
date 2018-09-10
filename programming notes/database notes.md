@@ -554,8 +554,10 @@ https://www.viva64.com/en/b/0542/
 - http://leveldb.org/
 - https://github.com/google/leveldb
 
-LevelDB详解 - CSDN博客
-https://blog.csdn.net/linuxheik/article/details/52768223
+LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
+
+浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
+
 
 # [RocksDB](https://rocksdb.org/)
 
