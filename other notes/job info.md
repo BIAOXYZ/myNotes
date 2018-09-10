@@ -80,6 +80,10 @@ https://www.elance.com/php/landing/main/login.php
 
 https://www.upwork.com/ 
 
+### Fiverr
+
+网络零工经济发展迅猛 平均工资却日渐下降 - 视点·观察 - cnBeta.COM https://www.cnbeta.com/articles/tech/766037.htm
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ### job知乎
