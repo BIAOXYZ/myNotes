@@ -1,5 +1,19 @@
 
 
+# Java基础
+
+## 教程系列
+
+Java教程 https://www.w3cschool.cn/java/
+
+- Java教程 - 易百教程 https://www.yiibai.com/java/
+- Java9教程 - 易百教程 https://www.yiibai.com/java/java9/
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
+
 # Java框架
 
 ## Spring
@@ -7,6 +21,10 @@
 Spring教程 https://www.w3cschool.cn/wkspring/
 
 ### Spring Boot
+
+Spring Boot教程 - 易百教程 https://www.yiibai.com/spring-boot/
+
+--------------------------------------------------
 
 Spring Boot干货系列：（一）优雅的入门篇 http://tengj.top/2017/02/26/springboot1/
 
