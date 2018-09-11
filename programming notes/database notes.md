@@ -437,6 +437,9 @@ http://blog.csdn.net/defonds/article/details/48471087
 - MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
 - A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
 
+MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
+> 伯乐在线资源频道 http://hao.jobbole.com/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
