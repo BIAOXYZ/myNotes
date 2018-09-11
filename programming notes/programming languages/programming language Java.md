@@ -2,13 +2,17 @@
 
 # Java基础
 
-## 教程系列
+## Java教程系列
 
 Java教程 https://www.w3cschool.cn/java/
 
 - Java教程 - 易百教程 https://www.yiibai.com/java/
 - Java9教程 - 易百教程 https://www.yiibai.com/java/java9/
 
+
+## Java知识
+
+JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
