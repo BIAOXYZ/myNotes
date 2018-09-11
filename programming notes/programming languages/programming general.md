@@ -1,12 +1,13 @@
 
 ## OJ's
 
-算法珠玑——一个最精简的题库
-https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
+算法珠玑——一个最精简的题库 https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
 
-《剑指Offer》第二版源代码
-https://github.com/zhedahht/CodingInterviewChinese2
+《剑指Offer》第二版源代码 https://github.com/zhedahht/CodingInterviewChinese2
 
+BAT机器学习面试1000题系列 https://github.com/julycoding/BAT-ML-1000
+> BAT机器学习面试1000题系列（第1~305题） https://blog.csdn.net/v_july_v/article/details/78121924
+>> 七月在线 - 面试题库 https://www.julyedu.com/question/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
