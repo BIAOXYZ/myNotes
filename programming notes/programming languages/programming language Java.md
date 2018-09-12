@@ -16,6 +16,8 @@ JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.c
 
 Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
 
+servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
