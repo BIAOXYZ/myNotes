@@ -4,7 +4,9 @@
 
 ## Java教程系列
 
-Java教程 https://www.w3cschool.cn/java/
+w3cschool.cn里Java相关教程
+- Java教程 - w3cschool.cn https://www.w3cschool.cn/java/
+- Servlet教程 - w3cschool.cn https://www.w3cschool.cn/servlet/
 
 易百教程里Java相关教程
 - Java教程 - 易百教程 https://www.yiibai.com/java/
@@ -12,6 +14,7 @@ Java教程 https://www.w3cschool.cn/java/
 
 菜鸟教程里Java相关教程
 - Java教程 - 菜鸟教程 http://www.runoob.com/java/java-tutorial.html
+- Servlet教程 - 菜鸟教程 http://www.runoob.com/servlet/servlet-tutorial.html
 
 
 ## Java知识
