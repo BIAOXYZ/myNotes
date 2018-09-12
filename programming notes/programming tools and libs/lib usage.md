@@ -77,7 +77,11 @@ Linux安全体系学习笔记 OpenSSL源代码分析(1) https://www.linuxidc.com
 
 高级加密标准AES的工作模式（ECB、CBC、CFB、OFB） https://blog.poxiao.me/p/advanced-encryption-standard-and-block-cipher-mode/
 
----
+#### OpenSSL新闻
+
+OpenSSL 1.1.1 LTS 版本发布 支持TLS v1.3 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/tech/766921.htm
+
+--------------------------------------------------
 
 ### PBC
 
