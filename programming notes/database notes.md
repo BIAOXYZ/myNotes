@@ -470,28 +470,24 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
 
 ## books
 
-Become a Postgres Expert with Free Training
-https://www.enterprisedb.com/free-postgres-training
+Become a Postgres Expert with Free Training https://www.enterprisedb.com/free-postgres-training
 
-<<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu
-http://www.interdb.jp/pg/
+<<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu http://www.interdb.jp/pg/
 
-<<PostgreSQL: Introduction and Concepts >>
-http://momjian.us/main/writings/pgsql/aw_pgsql_book/
+<<PostgreSQL: Introduction and Concepts >> http://momjian.us/main/writings/pgsql/aw_pgsql_book/
+
+CS-Notes 数据库系统原理.md https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md
 
 PostgreSQL 有哪些经典入门书籍？
 https://www.zhihu.com/question/28085660
 > https://github.com/ty4z2008/Qix/blob/master/pg.md
 > PostgreSQL数据库从入门到精通 - 阿里云大学 https://edu.aliyun.com/course/52
 
-PostgreSQL 9 Administration Cookbook
-http://download.chekiang.info/blog/PostgreSQL-9-Admin-Cookbook.pdf
+PostgreSQL 9 Administration Cookbook http://download.chekiang.info/blog/PostgreSQL-9-Admin-Cookbook.pdf
 
-PostgreSQL修炼之道 - 从小工到专家
-http://www.gaofi.cn/book/detail/892
+PostgreSQL修炼之道 - 从小工到专家 http://www.gaofi.cn/book/detail/892
 
-PostgreSQL Server Programming
-http://pdf.th7.cn/down/files/1312/PostgreSQL%20Server%20Programming.pdf
+PostgreSQL Server Programming http://pdf.th7.cn/down/files/1312/PostgreSQL%20Server%20Programming.pdf
 
 ## 事务
 
