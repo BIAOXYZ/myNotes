@@ -86,10 +86,15 @@ https://www.upwork.com/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-### job知乎
+### job from 知乎
 
 蚂蚁金服资深算法工程师/算法专家（33K-250K/月） - 娄军师的文章 - 知乎
 https://zhuanlan.zhihu.com/p/27778873
+
+### job from Github
+
+- AI_Freelancing https://github.com/llSourcell/AI_Freelancing
+- 知名互联网企业内推资料整理 https://github.com/BestDingSheng/resources
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
