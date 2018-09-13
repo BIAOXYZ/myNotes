@@ -55,6 +55,10 @@ https://www.zhihu.com/question/20730157/answer/82034823
 
 通过这 9 本开源好书学习 C 语言 http://blog.jobbole.com/110148/
 
+## books for Java
+
+Java编程书籍收集分享 https://github.com/RongleXie/java-books-collections
+
 
 ### CSAPP
 
