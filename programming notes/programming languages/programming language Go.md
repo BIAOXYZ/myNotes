@@ -3,15 +3,10 @@
 
 Go语言教程 https://www.yiibai.com/go/
 
-怎么学习 Golang？
-https://www.zhihu.com/question/23486344
-
-- 怎么学习 Golang？ - 知乎用户的回答 - 知乎
-https://www.zhihu.com/question/23486344/answer/24785991
+怎么学习 Golang？ https://www.zhihu.com/question/23486344
+- 怎么学习 Golang？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/23486344/answer/24785991
   - Project Euler https://projecteuler.net/
-
-- 怎么学习 Golang？ - cholerae的回答 - 知乎
-https://www.zhihu.com/question/23486344/answer/130837179
+- 怎么学习 Golang？ - cholerae的回答 - 知乎 https://www.zhihu.com/question/23486344/answer/130837179
   - The Go Programming Language https://golang.org/doc/
     - A Tour of Go https://tour.golang.org/welcome/
   - Go語言聖經（中文版） https://www.gitbook.com/book/wizardforcel/gopl-zh/details
@@ -66,6 +61,8 @@ https://blog.csdn.net/chszs/article/details/50076641
 
  
 # Go语法细节
+
+Go语法速览与实践清单(V0.5) - 王下邀月熊的文章 - 知乎 https://zhuanlan.zhihu.com/p/35085639
 
 GoLang之”奇怪用法“实践总结 - CSDN博客
 https://blog.csdn.net/delphiwcdj/article/details/16903649
