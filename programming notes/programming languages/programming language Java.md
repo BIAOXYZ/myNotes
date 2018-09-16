@@ -29,6 +29,11 @@ Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/dif
 
 servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
 
+### Java注解
+
+- 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
+- Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
