@@ -159,3 +159,7 @@ https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/01.2
 > “下载相关内容(推荐使用http://gopm.io下载)” http://gopm.io
 - https://studygolang.com/articles/7250
 > “我今天安装的go1.8 windows 版本，貌似已经集成进来了， 不用在安装了，目录在%GOPATH%\pkg\tool\windows_amd64\tour.exe”
+
+### CGO
+
+CGO，GOLANG调用C库，调用代码、静态库或动态库 https://blog.csdn.net/win_lin/article/details/51734588
