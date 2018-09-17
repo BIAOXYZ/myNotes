@@ -54,6 +54,17 @@ spring-boot-examples https://github.com/ityouknow/spring-boot-examples
 
 Spring Boot教程 - 易百教程 https://www.yiibai.com/spring-boot/
 
+Spring Boot项目使用Eclipse进行断点调试Debug  https://www.cnblogs.com/EasonJim/p/7373345.html
+
+#### CSDN Spring Boot
+
+lxhjh - springboot https://blog.csdn.net/lxhjh/article/category/6277040/
+- SpringBoot入门系列：第一篇 Hello World https://blog.csdn.net/lxhjh/article/details/51711148
+
+SpringBoot学习系列目录 https://blog.csdn.net/u011961421/article/details/79416510
+
+springboot教程目录 https://blog.csdn.net/qq_31463999/article/details/81627799
+
 
 
 --------------------------------------------------
