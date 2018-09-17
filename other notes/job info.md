@@ -56,6 +56,9 @@ https://www.linkedin.com/company/onchain/
 
 ### TheLayoff.com (https://www.thelayoff.com/)
 
+高通酝酿裁员：或年底前公布 - Qualcomm 高通 - cnBeta.COM https://www.cnbeta.com/articles/tech/768547.htm
+> Qualcomm Inc. Layoffs https://www.thelayoff.com/qualcomm
+
 ## job website part time
 
 - 国内有类似Freelancer的网站？ - 知乎
