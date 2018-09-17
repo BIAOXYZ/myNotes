@@ -7,6 +7,7 @@
 w3cschool.cn里Java相关教程
 - Java教程 - w3cschool.cn https://www.w3cschool.cn/java/
 - Servlet教程 - w3cschool.cn https://www.w3cschool.cn/servlet/
+- Java面试问题 - w3cschool.cn https://www.w3cschool.cn/java_interview_question/
 
 易百教程里Java相关教程
 - Java教程 - 易百教程 https://www.yiibai.com/java/
@@ -33,6 +34,25 @@ servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 
 
 - 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
 - Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
+
+### Java bean
+
+Java bean 是个什么概念？ - 知乎 https://www.zhihu.com/question/19773379
+- Java bean 是个什么概念？ - 杨博的回答 - 知乎 https://www.zhihu.com/question/19773379/answer/31625054
+- Java bean 是个什么概念？ - 刘欣的回答 - 知乎 https://www.zhihu.com/question/19773379/answer/112322794
+
+什么是JavaBean、bean? 什么是POJO、PO、DTO、VO、BO ? 什么是EJB、EntityBean？ https://blog.csdn.net/chenchunlin526/article/details/69939337
+
+#### 
+
+Spring读书笔记-----Spring的Bean之Bean的基本概念 https://blog.csdn.net/chenssy/article/details/8222744
+
+12.Spring Bean是什么 https://blog.csdn.net/u014590757/article/details/79998914
+
+- 7.5.10: Spring的Bean和JavaBean的比较 https://blog.csdn.net/confirmaname/article/details/9362385
+- 传统javabean与spring中的bean的区别 https://blog.csdn.net/haibin_hu/article/details/51793606
+- Difference between JavaBean and Spring bean https://stackoverflow.com/questions/21866571/difference-between-javabean-and-spring-bean
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
