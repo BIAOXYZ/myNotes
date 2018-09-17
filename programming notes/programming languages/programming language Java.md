@@ -58,10 +58,15 @@ Spring Boot项目使用Eclipse进行断点调试Debug  https://www.cnblogs.com/E
 
 #### CSDN Spring Boot
 
+SpringBoot非官方教程|终章：文章汇总 https://blog.csdn.net/forezp/article/details/70341818
+
+SpringBoot学习系列目录 https://blog.csdn.net/u011961421/article/details/79416510
+
 lxhjh - springboot https://blog.csdn.net/lxhjh/article/category/6277040/
 - SpringBoot入门系列：第一篇 Hello World https://blog.csdn.net/lxhjh/article/details/51711148
 
-SpringBoot学习系列目录 https://blog.csdn.net/u011961421/article/details/79416510
+zhulier1124 - springboot https://blog.csdn.net/zhulier1124/article/category/7965029
+- SpringBoot基本操作（一）——环境搭建及项目创建（有demo） https://blog.csdn.net/zhulier1124/article/details/81988471
 
 springboot教程目录 https://blog.csdn.net/qq_31463999/article/details/81627799
 
