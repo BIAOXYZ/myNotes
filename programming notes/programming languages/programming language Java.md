@@ -52,6 +52,7 @@ Spring读书笔记-----Spring的Bean之Bean的基本概念 https://blog.csdn.net
 - 7.5.10: Spring的Bean和JavaBean的比较 https://blog.csdn.net/confirmaname/article/details/9362385
 - 传统javabean与spring中的bean的区别 https://blog.csdn.net/haibin_hu/article/details/51793606
 - Difference between JavaBean and Spring bean https://stackoverflow.com/questions/21866571/difference-between-javabean-and-spring-bean
+- JavaBeans vs Spring beans vs POJOs http://www.importnew.com/14019.html
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
