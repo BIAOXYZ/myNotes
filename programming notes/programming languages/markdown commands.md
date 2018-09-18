@@ -1,15 +1,13 @@
 
+# markdown general
 
-<<markdown总结>>
-http://www.jianshu.com/p/cd044443a1a6
+<<markdown总结>> http://www.jianshu.com/p/cd044443a1a6
 
-<<Learning-Markdown (Markdown 入门参考)>>
-http://xianbai.me/learn-md/index.html
+<<Learning-Markdown (Markdown 入门参考)>> http://xianbai.me/learn-md/index.html
 
 ### markdown数学公式
 
-MathJax Chinese Doc 2.0 documentation - 入门指南
-http://mathjax-chinese-doc.readthedocs.io/en/latest/start.html
+MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.readthedocs.io/en/latest/start.html
 ```
 使用我们的服务器使用MathJax，你需要做两件事情：
 
@@ -56,3 +54,14 @@ http://mathjax-chinese-doc.readthedocs.io/en/latest/start.html
 ![](http://latex.codecogs.com/gif.latex?y=g^x);![](http://latex.codecogs.com/gif.latex?y=g^x)
 
 ![](http://latex.codecogs.com/gif.latex?$y=g^x$)
+
+
+# markdown相关工具（主要是博客，公众号相关）
+
+### Md2All
+
+Md2All,让公众号完美显示Latex数学公式 https://www.cnblogs.com/garyyan/p/9228994.html
+> http://md.aclickall.com
+
+- 玩转各博客平台、公众号的排版，你不知到的方法 https://segmentfault.com/a/1190000012952170
+- 公众号的Markdown排版利器:Md2All https://segmentfault.com/a/1190000012751767
