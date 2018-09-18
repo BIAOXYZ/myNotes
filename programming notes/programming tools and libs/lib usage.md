@@ -83,6 +83,28 @@ OpenSSL 1.1.1 LTS 版本发布 支持TLS v1.3 - Open Source 开源 - cnBeta.COM 
 
 --------------------------------------------------
 
+### [BoringSSL](https://github.com/google/boringssl)
+
+Google 宣布创建 OpenSSL 分支：BoringSSL https://www.oschina.net/news/53040/google-create-openssl-patch-boringssl
+
+使用 BoringSSL 优化 HTTPS 加密算法选择 http://blog.jobbole.com/94319/
+
+
+
+--------------------------------------------------
+
+### [GmSSL](https://github.com/guanzhi/GmSSL)
+
+The GmSSL Project - 支持国密SM2/SM3/SM4/SM9的密码工具箱 http://gmssl.org/
+> "GmSSL项目由北京大学关志副研究员的密码学研究组开发维护" 
+>> https://github.com/guanzhi
+
+GmSSL的命令行接口和SDK接口使用方式是怎样的？ - 李安然的回答 - 知乎 https://www.zhihu.com/question/43567665/answer/101573864
+
+
+
+--------------------------------------------------
+
 ### PBC
 
 https://crypto.stanford.edu/pbc/manual/
@@ -138,6 +160,7 @@ http://python.jobbole.com/81184/
 python getopt
 http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
 
+
 ### python bitcoin related libs
 
 https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
@@ -159,3 +182,13 @@ https://github.com/golang/crypto
 
 谁能用通俗的语言解释一下什么是 RPC 框架？ - 洪春涛的回答 - 知乎
 https://www.zhihu.com/question/25536695/answer/221638079
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
+# Java Libs
+
+Google的Tink库让你丢掉手中成百上千页的密码学书籍 - Google 谷歌 - cnBeta.COM https://www.cnbeta.com/articles/tech/763999.htm
+- https://github.com/google/tink
+- https://github.com/google/wycheproof
