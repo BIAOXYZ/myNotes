@@ -101,7 +101,7 @@ Spring Boot项目使用Eclipse进行断点调试Debug  https://www.cnblogs.com/E
 
 #### CSDN Spring Boot
 
-SpringBoot非官方教程|终章：文章汇总 https://blog.csdn.net/forezp/article/details/70341818
+方志朋 - SpringBoot非官方教程 | 终章：文章汇总 https://blog.csdn.net/forezp/article/details/70341818
 
 SpringBoot学习系列目录 https://blog.csdn.net/u011961421/article/details/79416510
 
@@ -113,8 +113,6 @@ zhulier1124 - springboot https://blog.csdn.net/zhulier1124/article/category/7965
 
 springboot教程目录 https://blog.csdn.net/qq_31463999/article/details/81627799
 
-
-
 --------------------------------------------------
 
 Spring Boot干货系列：（一）优雅的入门篇 http://tengj.top/2017/02/26/springboot1/
@@ -124,3 +122,7 @@ Spring Boot干货系列：（一）优雅的入门篇 http://tengj.top/2017/02/2
 Spring Boot基础 https://www.ibm.com/developerworks/cn/java/j-spring-boot-basics-perry/index.html
 
 Spring Boot快速开始指南 https://jimmysong.io/posts/spring-boot-quick-start-guide/
+
+### Spring Cloud
+
+方志朋 - 史上最简单的 SpringCloud 教程 | 终章 https://blog.csdn.net/forezp/article/details/70148833
