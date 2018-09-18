@@ -146,6 +146,14 @@ https://www.zhihu.com/question/19918532
 堆栈、堆、队列的区别
 http://bbs.csdn.net/topics/290054298
 
+
+### OOP programming
+
+#### Ioc & DI
+
+- 透彻理解IoC(控制反转) https://blog.csdn.net/u014563989/article/details/55188673
+- 深入理解DIP、IoC、DI以及IoC容器 https://www.cnblogs.com/liuhaorain/p/3747470.html
+
 ### 不太技术性编程知识
 
 史上最难编程的软件是什么？ - 园长的文章 - 知乎
