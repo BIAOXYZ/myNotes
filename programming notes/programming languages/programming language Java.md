@@ -24,11 +24,22 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 ## Java零散知识
 
+servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
+
+### JDK JRE JVM等相关
+
 JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
 
 Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
 
-servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
+### Java关键字
+
+#### 关键字final
+
+- 深入浅出Java final关键字 - 陈大侠的文章 - 知乎 https://zhuanlan.zhihu.com/p/33083924
+- Final of Java，这一篇差不多了 https://juejin.im/entry/58c4811161ff4b005d94fed2
+- 深入理解Java中的final关键字 http://www.importnew.com/7553.html
+- 浅析Java中的final关键字 https://www.cnblogs.com/dolphin0520/p/3736238.html
 
 ### Java注解
 
