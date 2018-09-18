@@ -56,7 +56,7 @@ Java bean 是个什么概念？ - 知乎 https://www.zhihu.com/question/19773379
 
 什么是JavaBean、bean? 什么是POJO、PO、DTO、VO、BO ? 什么是EJB、EntityBean？ https://blog.csdn.net/chenchunlin526/article/details/69939337
 
-#### 
+#### Spring bean
 
 Spring读书笔记-----Spring的Bean之Bean的基本概念 https://blog.csdn.net/chenssy/article/details/8222744
 
@@ -67,6 +67,15 @@ Spring读书笔记-----Spring的Bean之Bean的基本概念 https://blog.csdn.net
 - Difference between JavaBean and Spring bean https://stackoverflow.com/questions/21866571/difference-between-javabean-and-spring-bean
 - JavaBeans vs Spring beans vs POJOs http://www.importnew.com/14019.html
 
+## Java问题
+
+调试的时候提示Source not found。
+- 启动debug时Source not found for Class<T>.getDeclaredMethods0(boolean) line: https://blog.csdn.net/leidijava/article/details/8625472
+- https://stackoverflow.com/questions/19547535/source-not-found-when-debugging-all-projects
+```
+我的和第一个帖子里的情况一样，就是多打了个断点，然后这个断点涉及的类或者方法没有源码，eclipse就报这个错。把断点去掉就好了。
+第二个帖子那种把相应源码下载下来的方法估计肯定也可以，但是费时间，项目没那么多时间仔细搞这些。
+```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
