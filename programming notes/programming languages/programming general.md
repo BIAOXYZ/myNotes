@@ -87,6 +87,11 @@ https://www.freecodecamp.cn/about
 - 英文站 https://www.freecodecamp.org/
 - 使用 freeCodeCamp 编程 是一番怎样的体验？ - 知乎 https://www.zhihu.com/question/46711186
 
+Interactive Tutorials https://github.com/ronreiter/interactive-tutorials
+- http://www.learnjavaonline.org/
+- https://www.learn-c.org/
+- https://www.learnpython.org/
+
 ## Online Games or Others
 
 学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎
