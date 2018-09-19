@@ -11,6 +11,8 @@
 - 中国真的有很多穷人吗？ - 禁止禁止的回答 - 知乎 https://www.zhihu.com/question/30277318/answer/48937230
 - 中国真的有很多穷人吗？ - 知乎 https://www.zhihu.com/question/30277318/answer/48152465
 
+最近热文《流感下的北京中年》中，如果可以预知，哪些事情能够做得更好？结局能改变吗？ - 知乎 https://www.zhihu.com/question/267047518
+- 流感下的北京中年 https://mp.weixin.qq.com/s/fqJ0NYpumVKPQhkOMQd8Hg
 
 # From Huxiu
 
