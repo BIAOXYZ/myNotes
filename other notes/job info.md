@@ -305,3 +305,5 @@ https://www.zhihu.com/question/24759809/answer/127323061
 在英特尔 (Intel) 工作是怎样的一番体验？ - 知乎
 https://www.zhihu.com/question/24694855
 
+华为18+，偶然有闲，谁有兴趣，我可以回答不敏感的问题 http://www.txrjy.com/thread-900834-1-1.html
+
