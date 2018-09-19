@@ -69,13 +69,18 @@ Spring读书笔记-----Spring的Bean之Bean的基本概念 https://blog.csdn.net
 
 ## Java问题
 
-调试的时候提示Source not found。
+Eclipse调试的时候提示Source not found。
 - 启动debug时Source not found for Class<T>.getDeclaredMethods0(boolean) line: https://blog.csdn.net/leidijava/article/details/8625472
 - https://stackoverflow.com/questions/19547535/source-not-found-when-debugging-all-projects
 ```
 我的和第一个帖子里的情况一样，就是多打了个断点，然后这个断点涉及的类或者方法没有源码，eclipse就报这个错。把断点去掉就好了。
 第二个帖子那种把相应源码下载下来的方法估计肯定也可以，但是费时间，项目没那么多时间仔细搞这些。
 ```
+
+为什么一个Java只能有一个
+- 为什么java源文件中只允许一个public类存在 https://blog.csdn.net/y_love_f/article/details/10553929
+- https://stackoverflow.com/questions/1318712/why-is-each-public-class-in-a-separate-file
+- https://www.quora.com/Why-there-is-only-one-public-class-in-java-source-code
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
