@@ -21,16 +21,7 @@ w3cschool.cn里Java相关教程
 
 JavaGuide https://github.com/Snailclimb/JavaGuide
 
-
-## Java零散知识
-
-servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
-
-### JDK JRE JVM等相关
-
-JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
-
-Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
+## Java语法知识
 
 ### Java关键字
 
@@ -47,6 +38,20 @@ Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/dif
 
 - 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
 - Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
+
+### Java String
+
+java 中,方法参数为(string...names)什么意思_百度知道 - https://zhidao.baidu.com/question/500414172336052404.html
+
+## Java零散知识
+
+servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
+
+### JDK JRE JVM等相关
+
+JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
+
+Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
 
 ### Java bean
 
@@ -77,10 +82,11 @@ Eclipse调试的时候提示Source not found。
 第二个帖子那种把相应源码下载下来的方法估计肯定也可以，但是费时间，项目没那么多时间仔细搞这些。
 ```
 
-为什么一个Java只能有一个
+为什么一个java文件只能有一个public类?
 - 为什么java源文件中只允许一个public类存在 https://blog.csdn.net/y_love_f/article/details/10553929
 - https://stackoverflow.com/questions/1318712/why-is-each-public-class-in-a-separate-file
 - https://www.quora.com/Why-there-is-only-one-public-class-in-java-source-code
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
