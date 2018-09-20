@@ -38,8 +38,14 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 ### Java注解
 
+- 深入理解Java注解类型(@Annotation) https://blog.csdn.net/javazejian/article/details/71860633
+- 深入浅出Java注解 https://www.jianshu.com/p/5cac4cb9be54
 - 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
+
+#### @Autowired注解
+
 - Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
+- Spring@Autowired注解与自动装配 https://blog.csdn.net/HEYUTAO007/article/details/5981555
 
 ### Java String
 
@@ -48,11 +54,9 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 
 ### Java泛型
 
-Java泛型详解：<T>和Class<T>的使用。泛型类，泛型方法的详细使用实例 https://blog.csdn.net/qq_27093465/article/details/73229016
-  
-Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
-
-Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
+- Java泛型详解：<T>和Class<T>的使用。泛型类，泛型方法的详细使用实例 https://blog.csdn.net/qq_27093465/article/details/73229016
+- Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
+- Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
 
 ## Java零散知识
 
