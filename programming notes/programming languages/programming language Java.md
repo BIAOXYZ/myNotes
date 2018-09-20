@@ -38,6 +38,8 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 - 深入理解Java中的final关键字 http://www.importnew.com/7553.html
 - 浅析Java中的final关键字 https://www.cnblogs.com/dolphin0520/p/3736238.html
 
+------
+
 ### Java注解
 
 - 深入理解Java注解类型(@Annotation) https://blog.csdn.net/javazejian/article/details/71860633
@@ -48,6 +50,8 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 - Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
 - Spring@Autowired注解与自动装配 https://blog.csdn.net/HEYUTAO007/article/details/5981555
+
+-----
 
 ### Java String
 
@@ -60,13 +64,18 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 - Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
 - Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
 
-### Java接口
+### Java接口，类及继承等
 
 - Java接口 - 易百教程 https://www.yiibai.com/java/interface-in-java.html
 - java提高篇(五)-----抽象类与接口 https://www.cnblogs.com/chenssy/p/3376708.html
 - 深入理解Java的接口和抽象类 http://www.importnew.com/18780.html
 - Java 中的接口有什么作用？ - 知乎 https://www.zhihu.com/question/20111251
 
+#### 
+
+- C++的继承和Java继承的比较 https://blog.csdn.net/dawanganban/article/details/41924213
+- 为什么Java不支持多重继承? http://www.importnew.com/4604.html
+- Java 内部类的意义及应用 https://juejin.im/post/5ad5d8cd6fb9a028c42eb520
 
 
 ## Java零散知识
@@ -78,6 +87,8 @@ servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 
 JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
 
 Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
+
+Java虚拟机（JVM）概述 http://www.importnew.com/29224.html
 
 
 
@@ -138,6 +149,8 @@ spring-boot-examples https://github.com/ityouknow/spring-boot-examples
 Spring Boot教程 - 易百教程 https://www.yiibai.com/spring-boot/
 
 Spring Boot项目使用Eclipse进行断点调试Debug  https://www.cnblogs.com/EasonJim/p/7373345.html
+
+SpringBoot | 番外：使用小技巧合集 http://www.importnew.com/29886.html
 
 #### CSDN Spring Boot
 
