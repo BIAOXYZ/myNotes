@@ -4,6 +4,8 @@
 后端架构师技术图谱
 https://juejin.im/entry/5aee993b5188256731241a94
 
+[译] Google Interview University - 坚持完成这套学习手册，你就可以去 Google 面试了 https://juejin.im/entry/57fc9ea40bd1d00058d170f9
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
