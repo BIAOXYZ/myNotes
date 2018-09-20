@@ -54,7 +54,7 @@ C:\Users\l00384038>echo GOROOT
 GOROOT
 ```
 
-#### 
+#### 环境变量修改后立刻生效
 
 <<解决Windows下修改环境变量后需重启才能生效的问题>>
 http://blog.sina.com.cn/s/blog_49370c500100ov36.html
@@ -104,3 +104,7 @@ https://www.appinn.com/windows-apps-that-amaze-us/
 
 代码界的美图秀秀 - 陈龙的文章 - 知乎
 https://zhuanlan.zhihu.com/p/35811981
+
+### PDF related
+
+PDF文档打开后的显示名与文件名不一样 https://jingyan.baidu.com/article/925f8cb8b32fe5c0dde05601.html （IEEE好多论文都这鸟样，改了PDF文件名，一打开标题没变。。。）
