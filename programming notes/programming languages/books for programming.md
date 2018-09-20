@@ -57,10 +57,9 @@ https://www.zhihu.com/question/20730157/answer/82034823
 
 ## books for Java
 
-Java编程书籍收集分享 https://github.com/RongleXie/java-books-collections
-
-Thinking in Java (Java 编程思想) https://legacy.gitbook.com/book/quanke/think-in-java/details
-
+- Java编程书籍收集分享 https://github.com/RongleXie/java-books-collections
+- Thinking in Java (Java 编程思想) https://legacy.gitbook.com/book/quanke/think-in-java/details
+- Java - wikibooks https://zh.wikibooks.org/wiki/Java
 
 ### CSAPP
 
