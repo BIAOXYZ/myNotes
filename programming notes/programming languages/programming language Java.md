@@ -17,6 +17,8 @@ w3cschool.cn里Java相关教程
 - Java教程 - 菜鸟教程 http://www.runoob.com/java/java-tutorial.html
 - Servlet教程 - 菜鸟教程 http://www.runoob.com/servlet/servlet-tutorial.html
 
+Java Tutorial - tutorialspoint https://www.tutorialspoint.com/java/
+
 ## Java进阶教程
 
 JavaGuide https://github.com/Snailclimb/JavaGuide
@@ -42,6 +44,15 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 ### Java String
 
 java 中,方法参数为(string...names)什么意思_百度知道 - https://zhidao.baidu.com/question/500414172336052404.html
+> 为字符串类型的可变长参数，意思是，形参可以是1个也可以是多个，处理类似与数组
+
+### Java泛型
+
+Java泛型详解：<T>和Class<T>的使用。泛型类，泛型方法的详细使用实例 https://blog.csdn.net/qq_27093465/article/details/73229016
+  
+Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
+
+Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
 
 ## Java零散知识
 
@@ -52,6 +63,9 @@ servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 
 JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
 
 Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
+
+
+
 
 ### Java bean
 
