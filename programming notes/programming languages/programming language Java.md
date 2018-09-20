@@ -60,6 +60,15 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 - Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
 - Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
 
+### Java接口
+
+- Java接口 - 易百教程 https://www.yiibai.com/java/interface-in-java.html
+- java提高篇(五)-----抽象类与接口 https://www.cnblogs.com/chenssy/p/3376708.html
+- 深入理解Java的接口和抽象类 http://www.importnew.com/18780.html
+- Java 中的接口有什么作用？ - 知乎 https://www.zhihu.com/question/20111251
+
+
+
 ## Java零散知识
 
 servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
