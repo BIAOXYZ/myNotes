@@ -10,6 +10,10 @@ BAT机器学习面试1000题系列 https://github.com/julycoding/BAT-ML-1000
 >> 七月在线 - 面试题库 https://www.julyedu.com/question/
 
 LeetCode题解{from Apachecn} https://github.com/apachecn/awesome-leetcode
+- 推荐 LeetCode 网站
+  * 【小姐姐】刷题博客 https://www.liuchuo.net/
+    - 浙大pat考试的难度和acm竞赛水平能否对应？ - 知乎 https://www.zhihu.com/question/29369723
+    - PAT(Programming Ability Test)练兵场 https://www.nowcoder.com/pat
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
