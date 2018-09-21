@@ -38,7 +38,7 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 - 深入理解Java中的final关键字 http://www.importnew.com/7553.html
 - 浅析Java中的final关键字 https://www.cnblogs.com/dolphin0520/p/3736238.html
 
-------
+--------------------------------------------------
 
 ### Java注解
 
@@ -50,19 +50,24 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 - Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
 - Spring@Autowired注解与自动装配 https://blog.csdn.net/HEYUTAO007/article/details/5981555
+- @Resource与@Autowired注解的区别 https://blog.csdn.net/wangzuojia001/article/details/54312074
 
------
+--------------------------------------------------
 
-### Java String
+### Java类型
+
+#### Java String
 
 java 中,方法参数为(string...names)什么意思_百度知道 - https://zhidao.baidu.com/question/500414172336052404.html
 > 为字符串类型的可变长参数，意思是，形参可以是1个也可以是多个，处理类似与数组
 
-### Java泛型
+#### Java泛型
 
 - Java泛型详解：<T>和Class<T>的使用。泛型类，泛型方法的详细使用实例 https://blog.csdn.net/qq_27093465/article/details/73229016
 - Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
 - Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
+
+--------------------------------------------------
 
 ### Java接口，类及继承等
 
@@ -71,7 +76,7 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 - 深入理解Java的接口和抽象类 http://www.importnew.com/18780.html
 - Java 中的接口有什么作用？ - 知乎 https://www.zhihu.com/question/20111251
 
-#### 
+#### 待命题
 
 - C++的继承和Java继承的比较 https://blog.csdn.net/dawanganban/article/details/41924213
 - 为什么Java不支持多重继承? http://www.importnew.com/4604.html
@@ -91,7 +96,7 @@ Difference between Java SE/EE/ME https://stackoverflow.com/questions/2857376/dif
 Java虚拟机（JVM）概述 http://www.importnew.com/29224.html
 
 
-
+--------------------------------------------------
 
 ### Java bean
 
@@ -179,3 +184,13 @@ Spring Boot快速开始指南 https://jimmysong.io/posts/spring-boot-quick-start
 ### Spring Cloud
 
 方志朋 - 史上最简单的 SpringCloud 教程 | 终章 https://blog.csdn.net/forezp/article/details/70148833
+
+
+## `##` [Swagger](https://swagger.io/)
+
+- Java项目怎么使用Swagger生成API文档？ - 知乎 https://www.zhihu.com/question/28119576
+- Swagger Annotation 详解（建议收藏） https://www.jianshu.com/p/b0b19368e4a8
+- RESTful API 利器 Swagger https://juejin.im/entry/580457030bd1d0005812a700
+- 使用Swagger生成JAVA Mock Server（Springboot）代码 https://blog.csdn.net/a78270528/article/details/78530702
+- Swagger简介 https://blog.csdn.net/wangnan9279/article/details/44541665
+
