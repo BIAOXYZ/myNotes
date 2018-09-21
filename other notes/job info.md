@@ -287,6 +287,9 @@ https://www.zhihu.com/question/64177506/answer/220262260
 如何看待疑似京东离职竞业限制条款被曝光？ - 知乎
 https://www.zhihu.com/question/268631439
 
+当下（2018 年）腾讯的技术建设是否处于落后同体量公司的状态？ - 知乎
+https://www.zhihu.com/question/278473776
+
 
 在 SAP 工作是什么样的体验？ - 知乎
 https://www.zhihu.com/question/24717198/answer/86431800
