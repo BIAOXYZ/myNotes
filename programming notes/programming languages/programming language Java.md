@@ -23,6 +23,9 @@ Java - 极客学院 http://wiki.jikexueyuan.com/list/java/
 
 ## Java进阶教程
 
+stackoverflow上Java相关回答整理翻译 https://github.com/giantray/stackoverflow-java-top-qa
+- @Component, @Repository, @Service的区别 https://github.com/giantray/stackoverflow-java-top-qa/blob/master/contents/whats-the-difference-between-component-repository-service-annotations-in.md
+
 JavaGuide https://github.com/Snailclimb/JavaGuide
 
 ## Java语法知识
@@ -51,6 +54,10 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 - Spring@Autowired注解、@Override注解 https://blog.csdn.net/ljj821061514/article/details/51799672
 - Spring@Autowired注解与自动装配 https://blog.csdn.net/HEYUTAO007/article/details/5981555
 - @Resource与@Autowired注解的区别 https://blog.csdn.net/wangzuojia001/article/details/54312074
+
+#### @Component注解
+
+Spring @Configuration 和 @Component 区别 https://blog.csdn.net/isea533/article/details/78072133
 
 --------------------------------------------------
 
