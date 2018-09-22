@@ -6,6 +6,8 @@ https://www.cnbeta.com/articles/soft/715023.htm
 
 写作C#读作C井 这些程序员常用词汇你读对了吗？ - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/soft/724029.htm
 
+英文文献中常见拉丁字母缩写 https://blog.csdn.net/pipisorry/article/details/40833737
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # alpha-beta order 
