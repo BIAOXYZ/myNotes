@@ -1,4 +1,12 @@
 
+# General
+
+郭威gowill - 数据结构和算法 https://blog.csdn.net/guoweimelon/article/category/6136821
+- 经典排序算法（1）——冒泡排序算法详解 https://blog.csdn.net/guoweimelon/article/details/50902597
+- 经典排序算法（12）——总结 https://blog.csdn.net/guoweimelon/article/details/50904276
+- 
+
+
 # Algorithm
 
 - 最短路径—Dijkstra算法和Floyd算法 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/31/2615833.html
@@ -13,3 +21,4 @@
 
 - 看图轻松理解数据结构与算法系列(Trie树) https://juejin.im/post/5ba198ba5188255c7c6555c9
 - Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
+
