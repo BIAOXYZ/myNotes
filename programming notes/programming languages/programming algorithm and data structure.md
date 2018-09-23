@@ -22,3 +22,7 @@
 - 看图轻松理解数据结构与算法系列(Trie树) https://juejin.im/post/5ba198ba5188255c7c6555c9
 - Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
 
+### Min-Max Tree
+
+【Gym - 100796C 】Minimax Tree https://www.cnblogs.com/flipped/p/7113756.html
+
