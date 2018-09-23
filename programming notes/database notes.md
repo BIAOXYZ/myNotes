@@ -525,6 +525,10 @@ http://www.cnblogs.com/aspnethot/articles/1504082.html
 <<唯一性索引（Unique Index）与普通索引（Normal Index）差异（上）>>
 http://blog.itpub.net/17203031/viewspace-700089/
 
+## SQL
+
+SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
+
 
 ###
 
