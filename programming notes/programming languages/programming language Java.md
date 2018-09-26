@@ -154,9 +154,7 @@ Spring教程 - w3cschool.cn https://www.w3cschool.cn/wkspring/
 
 Spring教程 - 易百教程 https://www.yiibai.com/spring/
 
-### Spring Boot
-
-Spring Boot https://github.com/spring-projects/spring-boot
+### [Spring Boot](https://github.com/spring-projects/spring-boot)
 
 spring-boot-examples https://github.com/ityouknow/spring-boot-examples
 
@@ -165,6 +163,10 @@ Spring Boot教程 - 易百教程 https://www.yiibai.com/spring-boot/
 Spring Boot项目使用Eclipse进行断点调试Debug  https://www.cnblogs.com/EasonJim/p/7373345.html
 
 SpringBoot | 番外：使用小技巧合集 http://www.importnew.com/29886.html
+
+#### 知乎 Spring Boot
+
+Spring Boot系列(一)：Spring Boot 入门篇 - 极乐君的文章 - 知乎 https://zhuanlan.zhihu.com/p/24957789
 
 #### CSDN Spring Boot
 
@@ -180,15 +182,17 @@ zhulier1124 - springboot https://blog.csdn.net/zhulier1124/article/category/7965
 
 springboot教程目录 https://blog.csdn.net/qq_31463999/article/details/81627799
 
+随笔分类 - springboot https://www.cnblogs.com/ityouknow/category/914493.html
+- 为什么说 Java 程序员到了必须掌握 Spring Boot 的时候 http://www.ityouknow.com/springboot/2018/06/12/spring-boo-java-simple.html
+
 --------------------------------------------------
 
 Spring Boot干货系列：（一）优雅的入门篇 http://tengj.top/2017/02/26/springboot1/
 
-随笔分类 - springboot https://www.cnblogs.com/ityouknow/category/914493.html
-
 Spring Boot基础 https://www.ibm.com/developerworks/cn/java/j-spring-boot-basics-perry/index.html
 
 Spring Boot快速开始指南 https://jimmysong.io/posts/spring-boot-quick-start-guide/
+
 
 ### Spring Cloud
 
