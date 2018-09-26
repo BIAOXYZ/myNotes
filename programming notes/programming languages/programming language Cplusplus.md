@@ -93,6 +93,12 @@ https://www.zhihu.com/question/23971699/answer/69592611
 https://www.zhihu.com/question/23971699/answer/84337233
 > C++ 对象的内存布局 https://coolshell.cn/articles/12176.html
 
+### 拷贝构造函数/深拷贝浅拷贝
+
+C++构造函数详解（复制构造函数） https://www.cnblogs.com/raichen/p/4752025.html
+
+c++拷贝构造函数详解 https://www.cnblogs.com/alantu2018/p/8459250.html
+
 ### 模板
 
 C++ 模板 - 菜鸟教程 http://www.runoob.com/cplusplus/cpp-templates.html
