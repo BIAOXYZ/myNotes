@@ -167,6 +167,13 @@ SpringBoot | 番外：使用小技巧合集 http://www.importnew.com/29886.html
 #### 知乎 Spring Boot
 
 Spring Boot系列(一)：Spring Boot 入门篇 - 极乐君的文章 - 知乎 https://zhuanlan.zhihu.com/p/24957789
+```
+下面有人评论：
+
+文章好面熟.....原来是抄程序猿DD的文章，拼拼改改做原创，知乎也沦陷了，哎...
+Spring Boot快速入门 https://www.jianshu.com/p/d24bceea7665
+Spring Boot工程结构推荐 https://www.jianshu.com/p/8476326ba7b6
+```
 
 #### CSDN Spring Boot
 
