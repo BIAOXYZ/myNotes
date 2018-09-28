@@ -16,6 +16,11 @@ LeetCode题解{from Apachecn} https://github.com/apachecn/awesome-leetcode
     - 浙大pat考试的难度和acm竞赛水平能否对应？ - 知乎 https://www.zhihu.com/question/29369723
     - PAT(Programming Ability Test)练兵场 https://www.nowcoder.com/pat
 
+The Algorithms https://github.com/TheAlgorithms/
+- https://github.com/TheAlgorithms/Python
+- https://github.com/TheAlgorithms/C
+- https://github.com/TheAlgorithms/C-Plus-Plus
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
