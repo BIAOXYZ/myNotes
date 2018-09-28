@@ -552,6 +552,8 @@ http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
 Windows 下 MongoDB 的安装与环境配置 https://blog.csdn.net/klxh2009/article/details/78340422
 
+MongoDB基本操作 https://segmentfault.com/a/1190000012096666
+
 # firebird
 
 https://www.viva64.com/en/b/0542/
