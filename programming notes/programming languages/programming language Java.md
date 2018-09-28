@@ -48,6 +48,7 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 ### Java注解
 
 - 深入理解Java注解类型(@Annotation) https://blog.csdn.net/javazejian/article/details/71860633
+- 一小时搞明白自定义注解（Annotation） https://blog.csdn.net/u013045971/article/details/53433874
 - 深入浅出Java注解 https://www.jianshu.com/p/5cac4cb9be54
 - 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
 
