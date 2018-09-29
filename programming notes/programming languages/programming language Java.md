@@ -11,8 +11,9 @@ w3cschool.cn里Java相关教程
 
 易百教程里Java相关教程
 - Java教程 - 易百教程 https://www.yiibai.com/java/
-  * Java for循环 -- 2. Java for-each循环 https://www.yiibai.com/java/java-for-loop.html
-  * Java注释 -- 3)Java文档注释 https://www.yiibai.com/java/java-comments.html 
+  * Java for循环 -- `2. Java for-each循环` https://www.yiibai.com/java/java-for-loop.html
+  * Java注释 -- `3)Java文档注释` https://www.yiibai.com/java/java-comments.html 
+  * Java static关键字 -- `创建对象示例图如下所示` https://www.yiibai.com/java/static-keyword-in-java.html
 - Java9教程 - 易百教程 https://www.yiibai.com/java/java9/
 
 菜鸟教程里Java相关教程
