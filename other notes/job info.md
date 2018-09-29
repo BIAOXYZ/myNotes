@@ -61,14 +61,19 @@ https://www.linkedin.com/company/onchain/
 
 ## job website part time
 
-- 国内有类似Freelancer的网站？ - 知乎
-https://www.zhihu.com/question/26478092
+- 国内有类似Freelancer的网站？ - 知乎 https://www.zhihu.com/question/26478092
 
-- 国内有类似upwork或者freelancer平台么？ - 知乎
-https://www.zhihu.com/question/46981882
+- 国内有类似upwork或者freelancer平台么？ - 知乎 https://www.zhihu.com/question/46981882
 
-- 国内现在有多少个软件众包平台？ - IT男的回答 - 知乎
-https://www.zhihu.com/question/41507682/answer/246906031
+- 国内现在有多少个软件众包平台？ - IT男的回答 - 知乎 https://www.zhihu.com/question/41507682/answer/246906031
+
+如何开始 Freelancer 生涯？ - 知乎 https://www.zhihu.com/question/20140772 （这个里面的有些回答说明Freelancer不如Upwork）
+
+国外有哪些威客网站？ - Jim Green的回答 - 知乎 https://www.zhihu.com/question/20275245/answer/127455482
+> 正文完，另做个广告：
+>> 高端跨境工作站：http://www.topworker.cn
+>> Topworker跨境收付款专业博客: pay.topworker.cn
+
 
 ### Freelancer
 
