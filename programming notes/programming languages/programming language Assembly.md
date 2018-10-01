@@ -8,3 +8,7 @@
 Assembly Language教程 https://www.w3cschool.cn/assembly/
 
 Assembly Programming Tutorial https://www.tutorialspoint.com/assembly_programming/index.htm
+
+# 其他
+
+Curated list of awesome things regarding WebAssembly (wasm) ecosystem. https://github.com/mbasso/awesome-wasm
