@@ -85,8 +85,9 @@ https://www.zhihu.com/question/21883209
 
 ### VPNs
 
-SetupVPN
-http://desktopclient.net/gw/index.html#/
+SetupVPN http://desktopclient.net/gw/index.html#/
+
+Lantern https://github.com/getlantern/download
 
 ### teamviewer
 - https://login.teamviewer.com/
