@@ -63,6 +63,12 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 Spring @Configuration 和 @Component 区别 https://blog.csdn.net/isea533/article/details/78072133
 
+#### 注解与反射
+
+- 简单谈谈java自定义注解 https://www.jb51.net/article/118643.htm
+- Java注解Annotation与自定义注解详解 https://www.jb51.net/article/136853.htm
+- Java 自定义注解及利用反射读取注解的实例 https://www.jb51.net/article/122484.htm
+
 --------------------------------------------------
 
 ### Java类型
