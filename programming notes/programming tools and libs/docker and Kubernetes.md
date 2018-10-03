@@ -15,11 +15,13 @@ Kubernetes中文社区 | 中文文档
 http://docs.kubernetes.org.cn/
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 # docker general
 
 - Docker — 从入门到实践 https://legacy.gitbook.com/book/yeasy/docker_practice/details
 > https://github.com/yeasy/docker_practice
-
 
 
 易百教程 -- Docker教程 https://www.yiibai.com/docker/
@@ -81,18 +83,24 @@ Docker---(2)docker pull 下来的镜像存储在哪里 https://blog.csdn.net/wei
 两个修改Docker本地镜像与容器的存储位置的方法 https://www.jianshu.com/p/e98ef6d6cfb4
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 # docker-machine
 
 Docker Machine + Compose + Swarm
 http://www.cnblogs.com/kevinX/p/5458251.html
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # docker swarm
 
 深入浅出Docker Swarm
 https://www.csdn.net/article/2015-01-26/2823714
 
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # docker-compose
@@ -109,6 +117,7 @@ https://blog.csdn.net/wanghailong041/article/details/52162293
 Docker-compose使用全解 - CSDN博客
 https://blog.csdn.net/zhiaini06/article/details/45287663
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # Kubernetes
@@ -126,6 +135,10 @@ http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction
 Kubernetes初探 - CSDN博客
 https://blog.csdn.net/zhangjun2915/article/details/40598151
 
+Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-basic1/
+> Docker入门与实战 https://www.fangzhipeng.com/docker/2018/09/12/docker-action/
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Prometheus
 
