@@ -94,6 +94,7 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 - 深入理解Java的接口和抽象类 http://www.importnew.com/18780.html
 - Java 中的接口有什么作用？ - 知乎 https://www.zhihu.com/question/20111251
 
+
 #### 待命题
 
 - C++的继承和Java继承的比较 https://blog.csdn.net/dawanganban/article/details/41924213
@@ -149,6 +150,8 @@ Eclipse调试的时候提示Source not found。
 - 为什么java源文件中只允许一个public类存在 https://blog.csdn.net/y_love_f/article/details/10553929
 - https://stackoverflow.com/questions/1318712/why-is-each-public-class-in-a-separate-file
 - https://www.quora.com/Why-there-is-only-one-public-class-in-java-source-code
+
+Java中，一个类实现某个接口，必须重写接口中的所有方法吗 https://blog.csdn.net/y505772146/article/details/51046010
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
