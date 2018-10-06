@@ -82,6 +82,9 @@ https://crypto.stackexchange.com/questions/8776/what-is-u2fsdgvkx1
 OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
 
 openssl 证书请求和自签名命令req详解 https://www.cnblogs.com/gordon0918/p/5409286.html
+```
+What you are about to enter is what is called a Distinguished Name or a DN.
+```
 
 What books will help me learn everything I can about SSL/PKI? https://stackoverflow.com/questions/3938824/what-books-will-help-me-learn-everything-i-can-about-ssl-pki
 
