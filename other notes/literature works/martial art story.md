@@ -6,7 +6,11 @@
 
 # 凤歌
 
-凤歌作品集 http://www.my285.com/wuxia/fengge/index.htm
+凤歌作品集 -- 梦远书城 http://www.my285.com/wuxia/fengge/index.htm
+
+凤歌作品集 -- 努努书坊 http://www.kanunu8.com/files/writer/375.html
+
+凤歌小说全集 -- 武侠小说网 http://www.qxtxt.com/zuojia/fengge/
 
 ## 《昆仑》
 
