@@ -31,6 +31,14 @@ stackoverflow上Java相关回答整理翻译 https://github.com/giantray/stackov
 
 JavaGuide https://github.com/Snailclimb/JavaGuide
 
+## Java优秀blog
+
+菜鸟-翡青 https://blog.csdn.net/zjf280441589
+- Java研发进阶之路 https://blog.csdn.net/column/details/13901.html
+- Java基础 https://blog.csdn.net/zjf280441589/article/category/5889187
+  * Java 反射 https://blog.csdn.net/zjf280441589/article/details/50453776
+  * Java注解实践 https://blog.csdn.net/zjf280441589/article/details/50444343
+
 ## Java语法知识
 
 ### Java关键字
@@ -50,6 +58,9 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 - 深入理解Java注解类型(@Annotation) https://blog.csdn.net/javazejian/article/details/71860633
   * 深入理解Java类型信息(Class对象)与反射机制 https://blog.csdn.net/javazejian/article/details/70768369
+
+
+
 - 一小时搞明白自定义注解（Annotation） https://blog.csdn.net/u013045971/article/details/53433874
 - 深入浅出Java注解 https://www.jianshu.com/p/5cac4cb9be54
 - 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
