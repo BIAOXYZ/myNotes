@@ -221,6 +221,10 @@ https://github.com/golang/crypto
 谁能用通俗的语言解释一下什么是 RPC 框架？ - 洪春涛的回答 - 知乎
 https://www.zhihu.com/question/25536695/answer/221638079
 
+### gorgonia
+
+Gorgonia is a library that helps facilitate machine learning in Go https://github.com/gorgonia/gorgonia
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
