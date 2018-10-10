@@ -60,7 +60,6 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
   * 深入理解Java类型信息(Class对象)与反射机制 https://blog.csdn.net/javazejian/article/details/70768369
 
 
-
 - 一小时搞明白自定义注解（Annotation） https://blog.csdn.net/u013045971/article/details/53433874
 - 深入浅出Java注解 https://www.jianshu.com/p/5cac4cb9be54
 - 请问java再方法前加@xxx的是什么意思？ https://bbs.csdn.net/topics/390373674
@@ -80,6 +79,18 @@ Spring @Configuration 和 @Component 区别 https://blog.csdn.net/isea533/articl
 - 简单谈谈java自定义注解 https://www.jb51.net/article/118643.htm
 - Java注解Annotation与自定义注解详解 https://www.jb51.net/article/136853.htm
 - Java 自定义注解及利用反射读取注解的实例 https://www.jb51.net/article/122484.htm
+
+--------------------------------------------------
+
+### Java反射
+
+#### class.forname()
+
+- Class.forName()的作用与使用总结 https://blog.csdn.net/fengyuzhengfan/article/details/38086743
+- java中Class对象详解和类名.class, class.forName(), getClass()区别 https://www.cnblogs.com/Seachal/p/5371733.html
+
+
+
 
 --------------------------------------------------
 
