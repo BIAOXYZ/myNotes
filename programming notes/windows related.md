@@ -109,3 +109,7 @@ https://zhuanlan.zhihu.com/p/35811981
 ### PDF related
 
 PDF文档打开后的显示名与文件名不一样 https://jingyan.baidu.com/article/925f8cb8b32fe5c0dde05601.html （IEEE好多论文都这鸟样，改了PDF文件名，一打开标题没变。。。）
+
+### other tools
+
+Qwant https://www.qwant.com/
