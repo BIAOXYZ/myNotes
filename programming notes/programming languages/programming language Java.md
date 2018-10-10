@@ -38,6 +38,9 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 - Java基础 https://blog.csdn.net/zjf280441589/article/category/5889187
   * Java 反射 https://blog.csdn.net/zjf280441589/article/details/50453776
   * Java注解实践 https://blog.csdn.net/zjf280441589/article/details/50444343
+  
+Java by 拭心 https://blog.csdn.net/u011240877/article/category/2704181
+- 深入理解 Java 反射：Field （成员变量） https://blog.csdn.net/u011240877/article/details/54604212
 
 ## Java语法知识
 
@@ -189,6 +192,12 @@ Eclipse调试的时候提示Source not found。
 - https://www.quora.com/Why-there-is-only-one-public-class-in-java-source-code
 
 Java中，一个类实现某个接口，必须重写接口中的所有方法吗 https://blog.csdn.net/y505772146/article/details/51046010
+
+IllegalArgumentException: wrong number of arguments
+- 解析Java反射java.lang.IllegalArgumentException: wrong number of arguments https://blog.csdn.net/Z0157/article/details/47863253
+- Java 反射 不定参数bug http://www.cnblogs.com/france/p/4808577.html
+
+java中，遇到“Unhandled exception type……”怎么处理？ https://blog.csdn.net/magicwizard/article/details/1815725
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
