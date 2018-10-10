@@ -106,6 +106,9 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 - Java泛型详解：<T>和Class<T>的使用。泛型类，泛型方法的详细使用实例 https://blog.csdn.net/qq_27093465/article/details/73229016
 - Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
 - Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？ - 知乎 https://www.zhihu.com/question/20400700
+- Java中的泛型<T>类与方法 https://blog.csdn.net/songkai320/article/details/51822497
+> 强制类型转换很麻烦，我还要事先知道各个Object具体类型是什么，才能做出正确转换。否则，要是转换的类型不对，比如将“Hello Generics!”字符串强制转换为Double,那么编译的时候不会报错，可是运行的时候就挂了。那有没有不强制转换的办法----有，改用Java5泛型来实现。
+
 
 --------------------------------------------------
 
