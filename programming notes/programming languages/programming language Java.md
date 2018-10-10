@@ -52,13 +52,17 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 - 深入理解Java中的final关键字 http://www.importnew.com/7553.html
 - 浅析Java中的final关键字 https://www.cnblogs.com/dolphin0520/p/3736238.html
 
+### String... (可变长参数)
+
+java 中,方法参数为(string...names)什么意思_百度知道 - https://zhidao.baidu.com/question/500414172336052404.html
+> 为字符串类型的可变长参数，意思是，形参可以是1个也可以是多个，处理类似与数组
+
 --------------------------------------------------
 
-### Java注解
+### `###` Java注解
 
 - 深入理解Java注解类型(@Annotation) https://blog.csdn.net/javazejian/article/details/71860633
   * 深入理解Java类型信息(Class对象)与反射机制 https://blog.csdn.net/javazejian/article/details/70768369
-
 
 - 一小时搞明白自定义注解（Annotation） https://blog.csdn.net/u013045971/article/details/53433874
 - 深入浅出Java注解 https://www.jianshu.com/p/5cac4cb9be54
@@ -82,26 +86,27 @@ Spring @Configuration 和 @Component 区别 https://blog.csdn.net/isea533/articl
 
 --------------------------------------------------
 
-### Java反射
+### `###` Java反射
 
 #### class.forname()
 
 - Class.forName()的作用与使用总结 https://blog.csdn.net/fengyuzhengfan/article/details/38086743
 - java中Class对象详解和类名.class, class.forName(), getClass()区别 https://www.cnblogs.com/Seachal/p/5371733.html
 
+#### getClass() getInstance()
 
-
+- java-----instanceof与getClass的区别 https://blog.csdn.net/hzw19920329/article/details/51095413
+- java中的instance方法 https://blog.csdn.net/zrds2e/article/details/56958388
+> 总结：
+getInstance这个方法在单例模式用的甚多，为了避免对内存造成浪费，直到需要实例化该类的时候才将其实例化，所以用getInstance来获取该对象，
+至于其他时候，也就是为了简便而已，为了不让程序在实例化对象的时候，不用每次都用new关键字，索性提供一个instance方法，不必一执行这个类就
+初始化，这样做到不浪费系统资源！
+单例模式 可以防止 数据的冲突，节省内存空间
+- JAVA设计模式之单例模式 https://blog.csdn.net/jason0539/article/details/23297037
 
 --------------------------------------------------
 
-### Java类型
-
-#### Java String
-
-java 中,方法参数为(string...names)什么意思_百度知道 - https://zhidao.baidu.com/question/500414172336052404.html
-> 为字符串类型的可变长参数，意思是，形参可以是1个也可以是多个，处理类似与数组
-
-#### Java泛型
+### `###` Java泛型
 
 - Java泛型详解：<T>和Class<T>的使用。泛型类，泛型方法的详细使用实例 https://blog.csdn.net/qq_27093465/article/details/73229016
 - Java - Generics https://www.tutorialspoint.com/java/java_generics.htm
@@ -109,10 +114,17 @@ java 中,方法参数为(string...names)什么意思_百度知道 - https://zhid
 - Java中的泛型<T>类与方法 https://blog.csdn.net/songkai320/article/details/51822497
 > 强制类型转换很麻烦，我还要事先知道各个Object具体类型是什么，才能做出正确转换。否则，要是转换的类型不对，比如将“Hello Generics!”字符串强制转换为Double,那么编译的时候不会报错，可是运行的时候就挂了。那有没有不强制转换的办法----有，改用Java5泛型来实现。
 
+JAVA泛型通配符T，E，K，V区别，T以及Class<T>，Class<?>的区别 https://www.jianshu.com/p/95f349258afb
+
+#### Class clazz
+
+https://stackoverflow.com/questions/2529974/why-do-java-programmers-like-to-name-a-variable-clazz
+
+封装篇——获取泛型<T>的Class<T> clazz https://blog.csdn.net/sinat_15877283/article/details/50971262
 
 --------------------------------------------------
 
-### Java接口，类及继承等
+### `###` Java接口，类及继承等
 
 - Java接口 - 易百教程 https://www.yiibai.com/java/interface-in-java.html
 - java提高篇(五)-----抽象类与接口 https://www.cnblogs.com/chenssy/p/3376708.html
