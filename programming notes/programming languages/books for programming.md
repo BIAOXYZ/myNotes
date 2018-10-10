@@ -61,6 +61,11 @@ https://www.zhihu.com/question/20730157/answer/82034823
 - Thinking in Java (Java 编程思想) https://legacy.gitbook.com/book/quanke/think-in-java/details
 - Java - wikibooks https://zh.wikibooks.org/wiki/Java
 
+## books for python
+
+有哪些 Python 经典书籍？ - 伟哥-Wayne的回答 - 知乎 https://www.zhihu.com/question/20668576/answer/203592170
+> 5.《Python核心编程》
+
 ### CSAPP
 
 - 《深入理解计算机系统》读书笔记 & 要点总结<上> https://yq.aliyun.com/articles/15234
