@@ -107,6 +107,11 @@ getInstance这个方法在单例模式用的甚多，为了避免对内存造成
 单例模式 可以防止 数据的冲突，节省内存空间
 - JAVA设计模式之单例模式 https://blog.csdn.net/jason0539/article/details/23297037
 
+#### 使用反射访问对象成员
+
+- 【Java】java使用反射访问对象方法和成员变量 https://blog.csdn.net/leilba/article/details/50639065
+- Java反射之Field用法 https://blog.csdn.net/VipMao/article/details/51638547
+
 --------------------------------------------------
 
 ### `###` Java泛型
