@@ -35,6 +35,8 @@ https://www.zhihu.com/question/29372574/answer/192385626
 
 开源项目精选：python教程full-speed-python https://openingsource.org/1672/ 
 
+Project Python http://projectpython.net/
+- 这次拿下Python全靠它了！一个交互式的学习资源！ https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/82976127
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
