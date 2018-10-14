@@ -154,6 +154,18 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/
 
 # 语法
 
+Python学习--函数调用与声明问题 https://blog.csdn.net/no_superintendent/article/details/80245294
+```
+def test1():   #这是定义函数test1()
+    test()     #函数test1()中调用了test()，此时函数test()还没有定义，不过没关系，因为这里只是定义函数test1()，只要在调用test1()的地方之前定义了test()函数就可以！！！ 
+ 
+def test():    #这是定义函数test()
+    print('test')
+ 
+test1()        #这里是调用函数test1()的语句，只要在这句之前定义了test()，程序就不会报错！！！
+```
+
+<<Python学习笔记-函数基础>> http://www.cnblogs.com/dukeidea/p/6396980.html
 ```
 #正常情况下，给函数传参数要按顺序，不想按顺序就可以用关键参数，只需指定参数名即可。关键字参数必须在位置参数之后。
 
@@ -167,10 +179,8 @@ func(3,c= 5,b = 6)
 func(c= 5,b = 6,3)   #错误写法，报错
 #SyntaxError: positional argument follows keyword argument
 ```
-<<Python学习笔记-函数基础>>
-http://www.cnblogs.com/dukeidea/p/6396980.html
 
-
+<<Python基础教程 --> Python 面向对象 --> Python内置类属性>> http://www.runoob.com/python/python-object.html
 ```
 __dict__ : 类的属性（包含一个字典，由类的数据属性组成）
 __doc__ :类的文档字符串
@@ -178,8 +188,6 @@ __name__: 类名
 __module__: 类定义所在的模块（类的全名是'__main__.className'，如果类位于一个导入模块mymod中，那么className.__module__ 等于 mymod）
 __bases__ : 类的所有父类构成元素（包含了一个由所有父类组成的元组）
 ```
-<<Python基础教程 --> Python 面向对象 --> Python内置类属性>>
-http://www.runoob.com/python/python-object.html
 
 <<Python中的作用域及global用法>>
 http://www.cnblogs.com/summer-cool/p/3884595.html
