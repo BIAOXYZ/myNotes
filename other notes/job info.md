@@ -260,14 +260,16 @@ http://www.highpin.cn/job/h2337217.html
 
 ## 工作需注意点
 
-北京长租公寓数据大盘点（最全）
-https://zhuanlan.zhihu.com/p/31251759
+五险一金及税后工资计算器 http://salarycalculator.sinaapp.com/
 
-北京长租公寓大盘点（第二弹）
-https://zhuanlan.zhihu.com/p/28469656
+### 租房
 
-五险一金及税后工资计算器
-http://salarycalculator.sinaapp.com/
+- 北京长租公寓数据大盘点（最全） https://zhuanlan.zhihu.com/p/31251759
+- 北京长租公寓大盘点（第二弹） https://zhuanlan.zhihu.com/p/28469656
+
+### 五险一金相关
+
+换城市工作，之前交的社保，公积金怎么办？ - 知乎 https://www.zhihu.com/question/20335745
 
 ## 一般性八卦
 
