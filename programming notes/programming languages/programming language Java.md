@@ -55,10 +55,15 @@ Java by 拭心 https://blog.csdn.net/u011240877/article/category/2704181
 - 深入理解Java中的final关键字 http://www.importnew.com/7553.html
 - 浅析Java中的final关键字 https://www.cnblogs.com/dolphin0520/p/3736238.html
 
-### String... (可变长参数)
+#### String... (可变长参数)
 
 java 中,方法参数为(string...names)什么意思_百度知道 - https://zhidao.baidu.com/question/500414172336052404.html
 > 为字符串类型的可变长参数，意思是，形参可以是1个也可以是多个，处理类似与数组
+
+#### 关键字super
+
+- Java中this和super的用法总结 https://www.cnblogs.com/hasse/p/5023392.html
+- Java中this与super的区别 https://blog.csdn.net/zuoyang1990/article/details/53471494
 
 --------------------------------------------------
 
