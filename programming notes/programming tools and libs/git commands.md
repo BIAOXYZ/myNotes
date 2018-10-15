@@ -206,6 +206,15 @@ $ git config --global user.name "Liang Liu"
 $ git config --global user.email "liulliu@cn.ibm.com"
 ```
 
+#### git的http使用方式
+
+https://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-on-github
+```
+总结：
+
+1. git clone https://you:password@github.com/you/example.git
+2. git push   //看到有的攻略上说要push时候也要密码，但是我这边就直接git push就推上去了。
+```
 
 #### git diff会有些^M
 
