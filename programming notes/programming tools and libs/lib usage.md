@@ -110,6 +110,7 @@ Linux安全体系学习笔记 OpenSSL源代码分析(1) https://www.linuxidc.com
 
 艾-小小雨 -- openssl https://blog.csdn.net/aixiaoxiaoyu/article/category/7346344
 - 13.openssl编程——ASN1库 https://blog.csdn.net/aixiaoxiaoyu/article/details/79175837
+- 20.openssl编程——椭圆曲线 https://blog.csdn.net/aixiaoxiaoyu/article/details/79175848
 
 openssl中ASN.1源码解读 https://blog.csdn.net/u010129119/article/details/53940865
 
