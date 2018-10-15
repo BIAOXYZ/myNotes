@@ -137,6 +137,7 @@ https://stackoverflow.com/questions/2529974/why-do-java-programmers-like-to-name
 - Java接口 - 易百教程 https://www.yiibai.com/java/interface-in-java.html
 - java提高篇(五)-----抽象类与接口 https://www.cnblogs.com/chenssy/p/3376708.html
 - 深入理解Java的接口和抽象类 http://www.importnew.com/18780.html
+> 下面要注意一个问题：在《JAVA编程思想》一书中，将抽象类定义为“包含抽象方法的类”，但是后面发现如果一个类不包含抽象方法，只是用abstract修饰的话也是抽象类。也就是说抽象类不一定必须含有抽象方法。
 - Java 中的接口有什么作用？ - 知乎 https://www.zhihu.com/question/20111251
 
 
