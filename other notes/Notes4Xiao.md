@@ -78,3 +78,7 @@ http://www.csc.edu.cn/chuguo/s/934
 拔牙后食谱｜好好吃饭，打倒一切 https://www.thechihuo.com/article/foods-to-eat-after-teeth-removed
 
 ***--------------------------------------------------tooth extraction--------------------------------------------------***
+
+### paper
+
+- Practical Secure Aggregation for Privacy-Preserving Machine Learning [https://eprint.iacr.org/2017/281.pdf] [https://dl.acm.org/citation.cfm?id=3133982] (CCS 2017)
