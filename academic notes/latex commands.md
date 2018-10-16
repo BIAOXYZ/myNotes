@@ -99,3 +99,5 @@ http://www.latexstudio.net/archives/8903
 
 <<让latex写论文更方便的几个工具>> (未验证)
 http://blog.csdn.net/garfielder007/article/details/51620626
+
+PC -> LaTeX Converter Quick Comparison List http://tug.org/utilities/texconv/pc2txtbl.html
