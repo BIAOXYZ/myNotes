@@ -18,6 +18,7 @@ http://troubleshooters.com/linux/lyx/ownlists.htm
 https://www.overleaf.com/learn/latex/Defining_your_own_commands
 - https://www.overleaf.com/learn/latex/Commands
 - https://www.overleaf.com/learn/latex/Environments
+- https://www.overleaf.com/learn/latex/Theorems_and_proofs
 
 # Latex宏包类
 
