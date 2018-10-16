@@ -16,7 +16,34 @@ http://troubleshooters.com/linux/lyx/ownlists.htm
 
 # Latex宏包类
 
+## Latex使用中文
 
+***总结：1，2是旧方法，3，4是新方法。排版效果 3>4>2>1; 方便程度 1>2>4>3。
+(原因：3，4得换成XeLaTeX，经常会出你这儿环境可以到别人那不行了。而且应该是在哪看过，XeLaTeX对某些图片格式支持不太好。所以总体来说用后两者有一定风险。)***
+
+- 1.只需要在导言区加上宏包`\usepackage{ctex}`
+> 我的 beamer 幻灯片模板 http://bbs.ctex.org/forum.php?mod=viewthread&tid=27695
+- 2.导言区加宏包`\usepackage{CJKutf8}`，正文部分：
+```
+\begin{document}
+\begin{CJK}{UTF8}{gkai}
+...
+\end{CJK}
+\end{document}
+
+注: 或者各种参数不同但类似的版本，比如：
+导言区加\usepackage{CJK}，然后正文部分：
+
+\begin{document}
+\begin{CJK*}{GBK}{kai}
+...
+\end{CJK*}
+\end{document}
+```
+- 3.文章类型要换成`\documentclass[UTF8]{ctexart}`，然后以 UTF-8 编码保存，使用 XeLaTeX 编译。
+> 一份其实很短的 LaTeX 入门文档 https://liam0205.me/2014/09/08/latex-introduction/
+- 4.(文章类型不用换)只需要在导言区加上宏包`\usepackage{xeCJK}`，但是依然必须使用 XeLaTeX 编译。
+> Chinese https://www.overleaf.com/learn/latex/Chinese
 
 
 ## Tikz
