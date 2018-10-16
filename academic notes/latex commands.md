@@ -3,7 +3,7 @@
 
 # Latex基本类
 
-## list, itemize, enumerate, description
+### list, itemize, enumerate, description
 
 http://troubleshooters.com/linux/lyx/ownlists.htm
 
@@ -13,10 +13,15 @@ http://troubleshooters.com/linux/lyx/ownlists.htm
 \setlength\leftmargin{1.27in}
 ```
 
+### \newenvironment(\renewenvironment) \newcommand(\renewcommand)
+
+https://www.overleaf.com/learn/latex/Defining_your_own_commands
+- https://www.overleaf.com/learn/latex/Commands
+- https://www.overleaf.com/learn/latex/Environments
 
 # Latex宏包类
 
-## Latex使用中文
+### Latex使用中文
 
 ***总结：1，2是旧方法，3，4是新方法。排版效果 3>4>2>1; 方便程度 1>2>4>3。
 (原因：3，4得换成XeLaTeX，经常会出你这儿环境可以到别人那不行了。而且应该是在哪看过，XeLaTeX对某些图片格式支持不太好。所以总体来说用后两者有一定风险。)***
