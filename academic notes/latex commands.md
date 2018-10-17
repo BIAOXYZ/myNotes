@@ -6,7 +6,7 @@
 
 # Latex基本类
 
-### list, itemize, enumerate, description
+## list, itemize, enumerate, description
 
 http://troubleshooters.com/linux/lyx/ownlists.htm
 
@@ -16,7 +16,11 @@ http://troubleshooters.com/linux/lyx/ownlists.htm
 \setlength\leftmargin{1.27in}
 ```
 
-### \newenvironment(\renewenvironment) \newcommand(\renewcommand)
+## Latex数学公式
+
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+## \newenvironment(\renewenvironment) \newcommand(\renewcommand)
 
 https://www.overleaf.com/learn/latex/Defining_your_own_commands
 - https://www.overleaf.com/learn/latex/Commands
@@ -25,7 +29,7 @@ https://www.overleaf.com/learn/latex/Defining_your_own_commands
 
 # Latex宏包类
 
-### Latex使用中文
+## latex使用中文
 
 ***总结：1，2是旧方法，3，4是新方法。排版效果 3>4>2>1; 方便程度 1>2>4>3。
 (原因：3，4得换成XeLaTeX，经常会出你这儿环境可以到别人那不行了。而且应该是在哪看过，XeLaTeX对某些图片格式支持不太好。所以总体来说用后两者有一定风险。)***
@@ -55,7 +59,7 @@ https://www.overleaf.com/learn/latex/Defining_your_own_commands
 > Chinese https://www.overleaf.com/learn/latex/Chinese
 
 
-## Tikz
+## Tikz宏包
 
 Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！ http://www.cnblogs.com/tsingke/p/6649800.html
 
@@ -100,7 +104,7 @@ http://blog.csdn.net/xiaokun19870825/article/details/50813604
 http://www.latexstudio.net/archives/8903
 
 
-## latex其他
+# Latex其他
 
 <<让latex写论文更方便的几个工具>> (未验证)
 http://blog.csdn.net/garfielder007/article/details/51620626
