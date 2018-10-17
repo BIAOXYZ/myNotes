@@ -1,5 +1,8 @@
 
+# Latex攻略集合
 
+- TeX/LaTeX Resources http://texblog.org/tex-resources/
+- awesome-LaTeX https://github.com/egeerardyn/awesome-LaTeX
 
 # Latex基本类
 
@@ -53,6 +56,8 @@ https://www.overleaf.com/learn/latex/Defining_your_own_commands
 
 
 ## Tikz
+
+Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！ http://www.cnblogs.com/tsingke/p/6649800.html
 
 ### Latex批注功能
 
