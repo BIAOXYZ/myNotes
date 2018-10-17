@@ -48,6 +48,8 @@ https://www.zhihu.com/question/21409296/answer/18184584
 go-internals https://github.com/go-internals-cn/go-internals
 > https://go-internals-cn.gitbook.io/go-internals/
 
+《Go语言高级编程》开源图书，涵盖CGO、Go汇编语言、RPC实现、Protobuf插件实现、Web框架实现、分布式系统等高阶主题 https://github.com/chai2010/advanced-go-programming-book
+
 ### 开发环境搭建
 
 VS code golang 开发环境搭建 - CSDN博客
