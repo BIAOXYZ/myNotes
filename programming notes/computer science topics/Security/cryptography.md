@@ -2,6 +2,7 @@
 # ECC
 
 椭圆曲线密码学的简单介绍 https://www.jianshu.com/p/dfebdf6a2400
+> 包括最近新闻也提到的一点就是双椭圆曲线确定性随机比特生成器（Dual_EC_DRBG）问题。这是一个由美国国家标准协会（NIST）制定并被美国国家安全局（NSA）大力提倡的随机数发生器。Dual_EC_DRBG利用椭圆曲线算法的机制生成随机数。
 
 Secp256k1 https://en.bitcoin.it/wiki/Secp256k1
 - Standards for Efficient Cryptography (SEC) http://www.secg.org/sec2-v2.pdf
