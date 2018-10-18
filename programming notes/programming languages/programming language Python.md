@@ -3,8 +3,12 @@
 # general
 
 Python 基础教程 by 菜鸟教程 http://www.runoob.com/python/python-tutorial.html
+- Python 列表(List) http://www.runoob.com/python/python-lists.html
+  * Python List list()方法 http://www.runoob.com/python/att-list-list.html
+  > 描述：list() 方法用于将元组转换为列表。注：元组与列表是非常类似的，区别在于元组的元素值不能修改，元组是放在括号中，列表是放于方括号中。
 - Python 内置函数 http://www.runoob.com/python/python-built-in-functions.html
   * Python enumerate() 函数 http://www.runoob.com/python/python-func-enumerate.html
+  > 描述：enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。Python 2.3. 以上版本可用，2.6 添加 start 参数。
 
 Python Tutorials
 https://gist.github.com/reorx/8aa83ad55591987dc286
