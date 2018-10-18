@@ -2,6 +2,10 @@
 
 # general
 
+Python 基础教程 by 菜鸟教程 http://www.runoob.com/python/python-tutorial.html
+- Python 内置函数 http://www.runoob.com/python/python-built-in-functions.html
+  * Python enumerate() 函数 http://www.runoob.com/python/python-func-enumerate.html
+
 Python Tutorials
 https://gist.github.com/reorx/8aa83ad55591987dc286
 
