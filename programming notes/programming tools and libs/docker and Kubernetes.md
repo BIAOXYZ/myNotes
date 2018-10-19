@@ -20,9 +20,9 @@ http://docs.kubernetes.org.cn/
 
 # docker general
 
-- Docker — 从入门到实践 https://legacy.gitbook.com/book/yeasy/docker_practice/details
-> https://github.com/yeasy/docker_practice
-
+Docker — 从入门到实践 https://legacy.gitbook.com/book/yeasy/docker_practice/details  (or https://github.com/yeasy/docker_practice)
+- CentOS 安装 Docker CE https://yeasy.gitbooks.io/docker_practice/content/install/centos.html
+> 警告：切勿在没有配置 Docker YUM 源的情况下直接使用 yum 命令安装 Docker.
 
 易百教程 -- Docker教程 https://www.yiibai.com/docker/
 
