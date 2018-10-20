@@ -16,11 +16,19 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 ## From chromecj
 
+### 工具和生产力插件
+
 - Octotree：树形展示 Github 项目代码 http://chromecj.com/web-development/2017-10/840.html
+- 撤销关闭的标签：SimpleUndoRecents http://chromecj.com/productivity/2015-02/376.html
+
+### 休闲娱乐插件
+
 - VIP看看 http://chromecj.com/fun/2018-02/1352.html
+- Chrome视频下载插件：Video download helper http://chromecj.com/fun/2014-09/61.html
+
+## From cnplugins
+
 - Sourcegraph Chrome extension for GitHub：GitHub源代码浏览插件 Chrome插件 http://www.cnplugins.com/devtool/sourcegraph/
-
-
 
 
 # firefox extensions
