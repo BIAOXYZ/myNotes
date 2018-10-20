@@ -15,12 +15,18 @@
 
 # Data Structure
 
+## [Linked List](https://en.wikipedia.org/wiki/Linked_list)
+
+Python数据结构——链表的实现 http://python.jobbole.com/83953/
+
 ## Tree
 
-### Trie Tree
+### [Trie (Tree)](https://en.wikipedia.org/wiki/Trie)
 
 - 看图轻松理解数据结构与算法系列(Trie树) https://juejin.im/post/5ba198ba5188255c7c6555c9
 - Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
+
+#### Patricia trie/tree = [Radix tree](https://en.wikipedia.org/wiki/Radix_tree)
 
 ### Min-Max Tree
 
