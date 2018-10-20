@@ -199,6 +199,11 @@ __bases__ : 类的所有父类构成元素（包含了一个由所有父类组�
 <<Python中的作用域及global用法>>
 http://www.cnblogs.com/summer-cool/p/3884595.html
 
+### python文件前面的 `#!/usr/bin/env python` 或者 `#!/usr/bin/python`
+
+- #!/usr/bin/env python与#!/usr/bin/python的区别 https://blog.csdn.net/wh_19910525/article/details/8040494
+- Why do people write the #!/usr/bin/env python shebang on the first line of a Python script https://stackoverflow.com/questions/2429511/why-do-people-write-the-usr-bin-env-python-shebang-on-the-first-line-of-a-pyt
+
 ### module
 
 if __name__ == '__main__' 如何正确理解? - 旷修的回答 - 知乎
@@ -256,7 +261,7 @@ http://blog.csdn.net/programmer_at/article/details/77409507
 <Python正则表达式操作指南>
 http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97
 
-
+--------------------------------------------------
 
 ### 静态方法
 
