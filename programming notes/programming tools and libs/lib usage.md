@@ -152,6 +152,13 @@ CP-ABE环境配置
 http://www.cnblogs.com/rockorange/p/3757805.html
 
 
+--------------------------------------------------
+
+### libhydrogen
+
+A lightweight, secure, easy-to-use crypto library suitable for constrained environments.  https://github.com/jedisct1/libhydrogen 
+
+--------------------------------------------------
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -166,6 +173,27 @@ https://www.cnblogs.com/findumars/p/6009249.html
 
 
 # PYTHON Libs
+
+--------------------------------------------------
+## other python libs
+--------------------------------------------------
+
+### ansible
+http://www.ansible.com.cn/
+
+### pbd
+
+<零基础学习PDB命令行调试Python代码>
+http://python.jobbole.com/81184/
+
+### getopt
+
+python getopt
+http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
+
+--------------------------------------------------
+## python security related libs
+--------------------------------------------------
 
 ### pwd
 - http://blog.sina.com.cn/s/blog_a04184c101010kt6.html
@@ -186,26 +214,22 @@ https://www.pycryptodome.org/en/latest/
 ### hmac
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0015108777177966ef0f4f8510a41b3b8c48cdcf7047b2d000
 
-### ansible
-http://www.ansible.com.cn/
-
-### pbd
-
-<零基础学习PDB命令行调试Python代码>
-http://python.jobbole.com/81184/
-
-### getopt
-
-python getopt
-http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
-
-
-### python bitcoin related libs
+--------------------------------------------------
+## python bitcoin related libs
+--------------------------------------------------
 
 https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 
 - https://pypi.python.org/pypi/bitcoin
 - https://pypi.python.org/pypi/python-bitcoinlib
+
+--------------------------------------------------
+## python machine learning related libs
+--------------------------------------------------
+
+### pytorch
+
+PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
