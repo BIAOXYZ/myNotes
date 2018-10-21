@@ -20,9 +20,13 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 - Octotree：树形展示 Github 项目代码 http://chromecj.com/web-development/2017-10/840.html
 - 撤销关闭的标签：SimpleUndoRecents http://chromecj.com/productivity/2015-02/376.html
+- Chrome浏览器扩展管理器:Extension Manager http://chromecj.com/productivity/2017-06/757.html
 
 ### 休闲娱乐插件
 
+- 如何利用Separate Window开启小窗播放视屏或小窗打游戏？ http://chromecj.com/utilities/2018-07/1474.html (完全抄袭百度百科里的，而且怎样把弹出的窗口置顶的链接还没贴过去，差评！不过这个插件就一点不好，弹出窗口不能置顶。)
+> Chrome如何开启小窗播放视屏或小窗打游戏？ https://jingyan.baidu.com/article/72ee561a71d573e16138df86.html
+>> 如何快速将窗口置顶或保持在最前面显示？ https://jingyan.baidu.com/article/4b07be3caf3a6448b280f351.html
 - VIP看看 http://chromecj.com/fun/2018-02/1352.html
 - Chrome视频下载插件：Video download helper http://chromecj.com/fun/2014-09/61.html
 
