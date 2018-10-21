@@ -58,7 +58,17 @@ http://hzwer.com/2048/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-### [阮一峰的网络日志] (http://www.ruanyifeng.com/blog/)
+--------------------------------------------------
+[飞龙] (https://blog.csdn.net/wizardforcel)
+--------------------------------------------------
+
+飞龙的计算机公开课推荐 https://blog.csdn.net/wizardforcel/article/details/79350545
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+--------------------------------------------------
+## [阮一峰的网络日志] (http://www.ruanyifeng.com/blog/)
+--------------------------------------------------
 
 ***阮一峰的网络日志其他版本：***
 - 阮一峰的网络日志(搜狗微信版) https://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97
