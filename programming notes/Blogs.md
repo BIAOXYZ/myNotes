@@ -58,6 +58,13 @@ http://hzwer.com/2048/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+- 阮一峰的网络日志 http://www.ruanyifeng.com/blog/ 
+- 阮一峰的网络日志 https://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97 -- by [搜狗微信] (https://weixin.sogou.com/)
+- 技术分享周刊，每周五发布 https://github.com/ruanyf/weekly
+
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 --------------------------------------------------
 --------------------------------------------------
