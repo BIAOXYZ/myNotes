@@ -5,6 +5,8 @@
 
 计算机书籍控 http://bestcbooks.com/
 
+一些经典且高质量的电子书分享 https://github.com/threerocks/studyFiles
+
 # books general
 
 雨痕的github上的几本编程书 https://github.com/qyuhen/book
