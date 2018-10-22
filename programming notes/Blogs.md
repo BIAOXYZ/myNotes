@@ -67,6 +67,19 @@ http://hzwer.com/2048/
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 --------------------------------------------------
+[虫师 测试教程网 主要维护者之一，致力于软件测试技术的分享与推广。](https://www.cnblogs.com/fnng/)
+--------------------------------------------------
+
+maven环境快速搭建 https://www.cnblogs.com/fnng/archive/2011/12/02/2272610.html
+
+随笔分类 -linux https://www.cnblogs.com/fnng/category/355466.html by 虫师
+- linux那点事儿（四）----用户管理详解 http://www.cnblogs.com/fnng/archive/2012/05/06/2485973.html
+- linux那点事儿（五）----用户管理常用命令 https://www.cnblogs.com/fnng/archive/2012/05/13/2498366.html
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+--------------------------------------------------
 ## [阮一峰的网络日志] (http://www.ruanyifeng.com/blog/)
 --------------------------------------------------
 
