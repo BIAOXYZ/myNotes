@@ -94,7 +94,15 @@ passwd liuliang
 
 *更改用户:将liuliang添加到dbgrp用户组中*
 ```
-usermod -g dbgrp liuliang
+usermod -g dbgrp liuliang  
+
+// 最近看的比较多的是用-aG参数的，比如 usermod -aG docker test2。但是我明明记得我用-g参数没问题啊。
+// 还有说-a，-G单独用也可以的，比如这个帖子：https://www.cnblogs.com/fnng/archive/2012/05/13/2498366.html
+
+[root@bogon hzh]# usermod -G testing chongshi      用户chongshi添加到组testing
+[root@bogon hzh]# gpasswd -a bugmaster testing     用户bugmaster添加到组testing
+Adding user bugmaster to group testing
+注意：上面两种方式不同，但作用是一样的，都是将用户添加到组中。
 ```
 
 *或者用如下方法添加test用户到docker用户组*
@@ -102,7 +110,7 @@ usermod -g dbgrp liuliang
 gpasswd -a test docker
 ```
 
-*查看user用户所在的组,以及组内成员*
+*查看某个user所在的组,以及组内成员*
 `groups ${user}` 
 ```
 [root@dhcp-9-186-54-39 ~]# groups test
@@ -110,6 +118,7 @@ test : test wheel docker
 [root@dhcp-9-186-54-39 ~]# groups root
 root : root
 ```
+*查看某个组有哪些user的话灵活点，想想就明白了*：`cat /etc/group`
 
 ### 修改主机名
 
