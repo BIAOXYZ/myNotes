@@ -45,7 +45,7 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 ### 休闲娱乐插件
 
 - Floating Player for YouTube™ Chrome插件 http://www.cnplugins.com/fuzhu/floating-player-for-youtu/
-> 这个插件没有前面提到的Separate Window好用，而且同样无法置顶。但是呢，这个插件的说明里提到了这点，他们也说得另外下载置顶软件，但是好处在于他们推荐了一个：[`Deskpins`](https://www.appinn.com/deskpins/)。然后搜了搜，发现国内的绿色版什么的现在真是不想下了，虽然软件很小，还是跑国外官网下了个安装版。
+> 这个插件没有前面提到的Separate Window好用，而且同样无法置顶。但是呢，这个插件的说明里提到了这点，他们也说得另外下载置顶软件，但是好处在于他们推荐了一个：[`Deskpins`](https://www.appinn.com/deskpins/)。然后搜了搜，发现国内的绿色版什么的现在真是不想下了，虽然软件很小，还是跑国外某个确定不会动手脚的网站( https://deskpins.en.softonic.com/ )下了个安装版。
 >> 另外在搜的过程中还发现了一个类似的，叫[`Window On Top`](https://www.appinn.com/wintop/)，也不知道怎么样。因为`Deskpins`可以，这个就没再试了，看着似乎功能是比`Deskpins`多点？但是大小也是很小的。
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
