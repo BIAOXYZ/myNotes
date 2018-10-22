@@ -9,12 +9,16 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
 强力推荐！那些你不能错过的 GitHub 插件和工具 https://juejin.im/post/59ade28051882538fd72fa2c
 
+--------------------------------------------------
 ## From CB
+--------------------------------------------------
 
 Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 谷歌浏览器 - cnBeta.COM https://www.cnbeta.com/articles/tech/765787.htm
 > "Chrome远程桌面：使用Chrome遥控电脑"（英文名：Chrome Remote Desktop）
 
+--------------------------------------------------
 ## From chromecj
+--------------------------------------------------
 
 ### 工具和生产力插件
 
@@ -30,9 +34,21 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 - VIP看看 http://chromecj.com/fun/2018-02/1352.html
 - Chrome视频下载插件：Video download helper http://chromecj.com/fun/2014-09/61.html
 
+--------------------------------------------------
 ## From cnplugins
+--------------------------------------------------
+
+### 工具和生产力插件
 
 - Sourcegraph Chrome extension for GitHub：GitHub源代码浏览插件 Chrome插件 http://www.cnplugins.com/devtool/sourcegraph/
+
+### 休闲娱乐插件
+
+- Floating Player for YouTube™ Chrome插件 http://www.cnplugins.com/fuzhu/floating-player-for-youtu/
+> 这个插件没有前面提到的Separate Window好用，而且同样无法置顶。但是呢，这个插件的说明里提到了这点，他们也说得另外下载置顶软件，但是好处在于他们推荐了一个：[`Deskpins`](https://www.appinn.com/deskpins/)。然后搜了搜，发现国内的绿色版什么的现在真是不想下了，虽然软件很小，还是跑国外官网下了个安装版。
+>> 另外在搜的过程中还发现了一个类似的，叫[`Window On Top`](https://www.appinn.com/wintop/)，也不知道怎么样。因为`Deskpins`可以，这个就没再试了，看着似乎功能是比`Deskpins`多点？但是大小也是很小的。
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # firefox extensions
