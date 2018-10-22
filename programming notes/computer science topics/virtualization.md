@@ -4,6 +4,7 @@
 
 - 在VirtualBox中安装CentOS 7 https://www.linuxidc.com/Linux/2016-09/135593.htm  【1】
 - VirtualBox下安装CentOS7系统 https://www.cnblogs.com/hihtml5/p/8217062.html  【2】
+> 为什么ifconfig 及 netstat程序centos7默认没有安装：你对 ifconfig／netstat 做了甚手脚？ https://wiki.centos.org/zh/FAQ/CentOS7#head-92797389f35e14847625dd0d1ceb5ed957e8cbec
 
 How can I fix “cannot find a valid baseurl for repo” errors on CentOS? https://unix.stackexchange.com/questions/22924/how-can-i-fix-cannot-find-a-valid-baseurl-for-repo-errors-on-centos
 > If pinging a well known host by its name (e.g. ping www.google.com) returns ping: unknown host but pinging an ip (e.g. ping 8.8.8.8) works fine then you have a DNS resolution issue -- try adding these entries to /etc/resolv.conf:
