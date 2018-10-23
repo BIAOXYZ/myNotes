@@ -23,3 +23,15 @@ nameserver 8.8.4.4
 此外还有其他连接方式（比如桥接，有的帖子里号称最好，可以同时解决虚拟机连外网和局域网互相访问。但是也有的帖子说不行，我没试这种方式。还有端口转发什么的，也是没时间不试了），并且在有的帖子设置完还要改一些参数，但是我这边就是在VB里把网络1网络2一设置就好了。
 - Window下使用Xshell连接VirtualBox中CentOS SSH最佳实践 https://blog.csdn.net/donglynn/article/details/47784393
 - 宿主机SSH登录VirtualBox中的Linux CentOS 7（主宿互访） https://blog.csdn.net/wlwlwlwl015/article/details/50417839
+
+
+# [WSL(Windows Subsystem for Linux)](https://blogs.msdn.microsoft.com/wsl/)
+
+## WSL安装
+
+- Windows 10 Installation Guide https://docs.microsoft.com/zh-cn/windows/wsl/install-win10
+- 不用装双系统，直接在 Windows 上体验 Linux：Windows Subsystem for Linux https://sspai.com/post/43813 【这个比官方的更好】
+
+## WSL其他
+
+windows linux子系统(Windows Subsystem for Linux)的存放目录 https://www.cnblogs.com/lynsyklate/p/7911189.html
