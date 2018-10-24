@@ -15,6 +15,12 @@ nameserver 8.8.4.4
 
 如何开启VirtualBox的共享粘贴板功能 https://jingyan.baidu.com/article/cbf0e500f88a4f2eaa289338.html
 
+
+--------------------------------------------------
+
+- 基于VirtualBox安装Ubuntu图文教程 http://www.cnblogs.com/rocedu/p/6012545.html 【基本是按照这个来的，因为之前已经安了CentOS了，所以只是把系统安装好，进去看了看，网什么的都没来及管。】
+- VirtualBox安装部署Ubuntu 16.04 图文详解 https://www.linuxidc.com/Linux/2016-08/134580.htm
+
 ## VirtualBox网络问题
 
 - `1.连外网需用网络地址转换(NAT)方式。`按照【1】的步骤把linux在虚拟机装下来（不用装图形界面！），设置网络连接时网卡1用`NAT`方式就可以连外网了。
