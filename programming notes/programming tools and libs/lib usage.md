@@ -231,6 +231,7 @@ https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
 
+Simple examples to introduce PyTorch https://github.com/jcjohnson/pytorch-examples
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
