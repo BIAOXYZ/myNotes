@@ -68,6 +68,12 @@ https://www.zhihu.com/question/20730157/answer/82034823
 有哪些 Python 经典书籍？ - 伟哥-Wayne的回答 - 知乎 https://www.zhihu.com/question/20668576/answer/203592170
 > 5.《Python核心编程》
 
+[译] 利用 Python 进行数据分析 · 第 2 版 https://github.com/apachecn/pyda-2e-zh
+> 利用 Python 进行数据分析 · 第 2 版 https://legacy.gitbook.com/book/wizardforcel/pyda-2e/details
+
+
+--------------------------------------------------
+
 ### CSAPP
 
 - 《深入理解计算机系统》读书笔记 & 要点总结<上> https://yq.aliyun.com/articles/15234
