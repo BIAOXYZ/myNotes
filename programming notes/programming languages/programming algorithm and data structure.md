@@ -12,10 +12,20 @@
 - 最短路径—Dijkstra算法和Floyd算法 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/31/2615833.html
 - 数据结构与算法（14）：最短路算法 https://plushunter.github.io/2017/07/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%8814%EF%BC%89%EF%BC%9A%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95/
 
+## Hash related algorithms
+
+### [Cuckoo hashing](https://en.wikipedia.org/wiki/Cuckoo_hashing)
+
+- DPDK中的cuckoo hash算法 https://www.jianshu.com/p/b09b26c9052a
+- 随机算法 (Fall 2011)/Cuckoo hashing http://tcs.nju.edu.cn/wiki/index.php/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95_(Fall_2011)/Cuckoo_hashing
+- Cuckoo hash算法分析——其根本思想和bloom filter一致 增加hash函数来解决碰撞 节省了空间但代价是查找次数增加 https://yq.aliyun.com/articles/398211
+- Cuckoo Hashing的应用及性能优化 https://yq.aliyun.com/articles/563053
+
+
 
 # Data Structure
 
-## [Linked List](https://en.wikipedia.org/wiki/Linked_list)
+## [Linked list](https://en.wikipedia.org/wiki/Linked_list)
 
 Python数据结构——链表的实现 http://python.jobbole.com/83953/
 
