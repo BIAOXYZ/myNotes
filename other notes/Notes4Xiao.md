@@ -81,4 +81,12 @@ http://www.csc.edu.cn/chuguo/s/934
 
 ### paper
 
-- Practical Secure Aggregation for Privacy-Preserving Machine Learning [https://eprint.iacr.org/2017/281.pdf] [https://dl.acm.org/citation.cfm?id=3133982] (CCS 2017)
+- Practical Secure Aggregation for Privacy-Preserving Machine Learning
+[https://eprint.iacr.org/2017/281.pdf]
+[https://dl.acm.org/citation.cfm?id=3133982]
+(CCS 2017)
+
+- Practical Multi-party Private Set Intersection from Symmetric-Key Techniques
+[https://eprint.iacr.org/2017/799.pdf]
+[https://dl.acm.org/citation.cfm?id=3134065]
+(CCS 2017)
