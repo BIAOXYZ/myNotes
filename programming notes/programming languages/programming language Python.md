@@ -1,5 +1,4 @@
 
-
 # general
 
 Python 基础教程 by 菜鸟教程 http://www.runoob.com/python/python-tutorial.html
@@ -207,6 +206,8 @@ __bases__ : 类的所有父类构成元素（包含了一个由所有父类组�
 
 <<Python中的作用域及global用法>>
 http://www.cnblogs.com/summer-cool/p/3884595.html
+
+python对象引用_一切都是对象 https://blog.csdn.net/qinyushuang/article/details/71412862
 
 ### python文件前面的 `#!/usr/bin/env python` 或者 `#!/usr/bin/python`
 
