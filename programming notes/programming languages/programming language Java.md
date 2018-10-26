@@ -210,6 +210,8 @@ IllegalArgumentException: wrong number of arguments
 
 java中，遇到“Unhandled exception type……”怎么处理？ https://blog.csdn.net/magicwizard/article/details/1815725
 
+spring-boot项目在外部tomcat环境下部署遇到的问题 https://www.jianshu.com/p/a30331fe5885
+> spring-boot默认提供内嵌的tomcat，所以打包直接生成jar包，用java -jar命令就可以启动。但是，有时候我们更希望一个tomcat来管理多个项目，这种情况下就需要项目是war格式的包而不是jar格式的包。
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
