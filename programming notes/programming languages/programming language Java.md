@@ -225,7 +225,8 @@ Spring教程 - 易百教程 https://www.yiibai.com/spring/
 
 ### [Spring Boot](https://github.com/spring-projects/spring-boot)
 
-spring-boot-examples https://github.com/ityouknow/spring-boot-examples
+- spring-boot-examples https://github.com/ityouknow/spring-boot-examples
+- Spring Boot Reference Guide中文翻译 -《Spring Boot参考指南》 https://github.com/qibaoguang/Spring-Boot-Reference-Guide
 
 Spring Boot教程 - 易百教程 https://www.yiibai.com/spring-boot/
 
