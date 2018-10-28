@@ -227,11 +227,17 @@ https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 ## python machine learning related libs
 --------------------------------------------------
 
-### pytorch
+### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
 
 Simple examples to introduce PyTorch https://github.com/jcjohnson/pytorch-examples
+
+
+### [Pandas](https://github.com/pandas-dev/pandas) (https://pandas.pydata.org/)
+
+Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code-notes
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
