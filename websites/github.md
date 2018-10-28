@@ -5,6 +5,8 @@ What is “Developer Program Member” on Github.com https://stackoverflow.com/q
 
 # Github项目
 
+:octocat: GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目:star: https://github.com/521xueweihan/HelloGitHub
+
 微软开源 MS-DOS 1.25 和 2.0 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/tech/773103.htm
 > The original sources of MS-DOS 1.25 and 2.0, for reference purposes https://github.com/Microsoft/MS-DOS
 
