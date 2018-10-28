@@ -272,6 +272,12 @@ http://blog.csdn.net/programmer_at/article/details/77409507
 <Python正则表达式操作指南>
 http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97
 
+### Lambda表达式
+
+- 关于Python中的lambda，这可能是你见过的最完整的讲解 https://blog.csdn.net/zjuxsl/article/details/79437563
+- Python学习笔记（十二）：lambda表达式与函数式编程 https://blog.csdn.net/mathboylinlin/article/details/9413551
+> python by mathboylinlin的专栏 https://blog.csdn.net/mathboylinlin/article/category/1505225
+
 --------------------------------------------------
 
 ### 静态方法
