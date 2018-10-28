@@ -6,6 +6,11 @@ https://www.cnbeta.com/articles/soft/751203.htm
 
 最受欢迎的10个Linux发行版 https://www.linuxprobe.com/linux-welcome.html
 
+# Windows系
+
+微软团队成员谈Windows Kernel的结构 - Windows - cnBeta.COM
+https://www.cnbeta.com/articles/tech/781961.htm
+
 # RedHat系
 
 浅析CentOS和RedHat Linux的区别 https://www.cnblogs.com/zjoch/p/6394150.html
@@ -21,3 +26,8 @@ DNS3=114.114.114.114`
 - CentOS修改DNS重启或者重启network服务后丢失问题处理 https://www.linuxidc.com/Linux/2015-09/122761.htm
 - /etc/resolv.conf 的更改在重启后丢失的解决办法 https://blog.csdn.net/qq_29350001/article/details/51785176
 - linux resolv.conf 配置信息丢失解决方法 https://blog.csdn.net/wt346326775/article/details/56840619
+
+# 其他OS
+
+用于年幼学童教学的 Linux 发行版 PrimTux 发布第 4 版 - Linux - cnBeta.COM
+https://www.cnbeta.com/articles/soft/781939.htm
