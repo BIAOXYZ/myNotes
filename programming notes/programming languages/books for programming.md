@@ -39,7 +39,6 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 - Boost 库中文教程 http://zh.highscore.de/cpp/boost/
 - leetcode/lintcode题解/算法学习笔记 https://legacy.gitbook.com/book/yuanbin/algorithm/details
 
-
 ## books and learning methods
 
 你是如何学习 Linux 编程的？ - Kerr Wang的回答 - 知乎
@@ -50,6 +49,12 @@ https://www.zhihu.com/question/20730157/answer/82034823
   - VisuAlgo：通过动画学习算法和数据结构 http://hao.jobbole.com/visualgo/
   - https://visualgo.net/zh
 
+## books from ApacheCN
+
+[译] 利用 Python 进行数据分析 · 第 2 版 https://github.com/apachecn/pyda-2e-zh
+> 利用 Python 进行数据分析 · 第 2 版 https://legacy.gitbook.com/book/wizardforcel/pyda-2e/details
+
+《python数据分析与挖掘实战》的代码笔记 https://github.com/apachecn/python_data_analysis_and_mining_action
 
 # books by languages
 
@@ -67,10 +72,6 @@ https://www.zhihu.com/question/20730157/answer/82034823
 
 有哪些 Python 经典书籍？ - 伟哥-Wayne的回答 - 知乎 https://www.zhihu.com/question/20668576/answer/203592170
 > 5.《Python核心编程》
-
-[译] 利用 Python 进行数据分析 · 第 2 版 https://github.com/apachecn/pyda-2e-zh
-> 利用 Python 进行数据分析 · 第 2 版 https://legacy.gitbook.com/book/wizardforcel/pyda-2e/details
-
 
 --------------------------------------------------
 
