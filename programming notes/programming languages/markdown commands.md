@@ -1,6 +1,8 @@
 
 # markdown general
 
+GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/article/details/23690801
+
 <<markdown总结>> http://www.jianshu.com/p/cd044443a1a6
 
 <<Learning-Markdown (Markdown 入门参考)>> http://xianbai.me/learn-md/index.html
