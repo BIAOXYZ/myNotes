@@ -117,6 +117,7 @@ Spring Boot 2.0(四)：使用 Docker 部署 Spring Boot http://www.ityouknow.com
 - 将Spring Boot程序打包成docker镜像 https://yq.aliyun.com/articles/42283
 - 将Spring Boot程序打包成docker镜像-超简版 https://yq.aliyun.com/articles/42305
 
+Maven 插件之 docker-maven-plugin 的使用 https://blog.csdn.net/aixiaoyang168/article/details/77453974 【这个给出了另外一种spring boot项目打包成docker镜像的方式，不用单独的Dockerfile，而是把Dockerfile的内容嵌入到pom.xml中】
 
 :octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat:
 
