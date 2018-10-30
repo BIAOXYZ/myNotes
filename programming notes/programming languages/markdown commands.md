@@ -2,6 +2,8 @@
 # markdown general
 
 GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/article/details/23690801
+- EMOJI CHEAT SHEET https://www.webpagefx.com/tools/emoji-cheat-sheet/
+- https://github.com/guodongxiaren/README/blob/master/emoji.md
 
 <<markdown总结>> http://www.jianshu.com/p/cd044443a1a6
 
