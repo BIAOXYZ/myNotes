@@ -195,6 +195,10 @@ http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
 ## python security related libs
 --------------------------------------------------
 
+### Charm
+
+Charm: A Framework for Rapidly Prototyping Cryptosystems http://charm-crypto.io https://github.com/JHUISI/charm
+
 ### pwd
 - http://blog.sina.com.cn/s/blog_a04184c101010kt6.html
 - https://docs.python.org/2/library/pwd.html
