@@ -5,6 +5,10 @@ https://zhuanlan.zhihu.com/p/22594180
 
 两阶段提交及JTA http://www.cnblogs.com/Leo_wl/p/5728027.html
 
+# Quorum
+
+Quorum (distributed computing) https://en.wikipedia.org/wiki/Quorum_(distributed_computing)
+
 # Paxos
 
 Paxos算法详解 - 祥光的文章 - 知乎 https://zhuanlan.zhihu.com/p/31780743
