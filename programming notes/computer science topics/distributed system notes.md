@@ -35,6 +35,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 # Raft实现
 
+一个Raft开源项目的结构分析 https://mp.weixin.qq.com/s/1_KAMAx6je8fLsMG1cM-wQ
+
 ## ETCD
 
 raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
