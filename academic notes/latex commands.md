@@ -6,6 +6,10 @@
 - LaTeXStudio https://github.com/latexstudio
   - 常用宏包说明的中文本地化项目 https://github.com/latexstudio/LaTeXPackages-CN
   - 给大家普及本已普及了的LaTeX知识。 https://github.com/latexstudio/LaTeX-TeXWiki
+  
+## Latex个人博客
+
+yhl_leo https://blog.csdn.net/yhl_leo/article/category/5798949
 
 # Latex基本类
 
