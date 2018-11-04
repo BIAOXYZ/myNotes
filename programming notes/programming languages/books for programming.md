@@ -141,3 +141,7 @@ http://vdisk.weibo.com/s/up8PEhSmnrug2
 
 组合数学
 http://www.downcc.com/soft/301505.html
+
+### other books
+
+Bartosz Milewski's 'Category Theory for Programmers' unofficial PDF and LaTeX source https://github.com/hmemcpy/milewski-ctfp-pdf
