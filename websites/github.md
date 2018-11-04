@@ -20,5 +20,8 @@ Trillian implements a Merkle tree whose contents are served from a data storage 
 https://github.com/retejs/rete
 
 
-程序员成功研发去马赛克神器 高清无码效果感人 - AI 人工智能 - cnBeta.COM https://www.cnbeta.com/articles/tech/784263.htm
+- AI算法把女星面部嫁接到成人电影上 效果以假乱真 - AI 人工智能 - cnBeta.COM https://www.cnbeta.com/articles/tech/679039.htm
+> Non official project based on original /r/Deepfakes thread. Many thanks to him! https://www.reddit.com/r/deepfakes/ https://github.com/deepfakes/faceswap
+>> deepfakes 中文站 https://deepfakes.com.cn/
+- 程序员成功研发去马赛克神器 高清无码效果感人 - AI 人工智能 - cnBeta.COM https://www.cnbeta.com/articles/tech/784263.htm
 > Decensoring Hentai with Deep Neural Networks https://github.com/deeppomf/DeepCreamPy/
