@@ -15,8 +15,8 @@ https://www.zhihu.com/question/21149650
 如何做出高大上的 PPT？ - 知乎
 https://www.zhihu.com/question/29386330
 
-有哪些制作好 PPT 的习惯？ - 知乎
-https://www.zhihu.com/question/20274574
+有哪些制作好 PPT 的习惯？ - 知乎 https://www.zhihu.com/question/20274574
+- 有哪些制作好 PPT 的习惯？ - 邵云蛟的回答 - 知乎 https://www.zhihu.com/question/20274574/answer/64240162
 
 ## 知乎PPT_PPT模板
 
