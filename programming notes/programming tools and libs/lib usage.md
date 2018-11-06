@@ -141,7 +141,6 @@ The GmSSL Project - 支持国密SM2/SM3/SM4/SM9的密码工具箱 http://gmssl.o
 GmSSL的命令行接口和SDK接口使用方式是怎样的？ - 李安然的回答 - 知乎 https://www.zhihu.com/question/43567665/answer/101573864
 
 
-
 --------------------------------------------------
 
 ### PBC
@@ -152,7 +151,21 @@ CP-ABE环境配置
 http://www.cnblogs.com/rockorange/p/3757805.html
 
 
+### miracl
+
+MIRACL Cryptographic SDK: Multiprecision Integer and Rational Arithmetic Cryptographic Library is a C software library that is widely regarded by developers as the gold standard open source SDK for elliptic curve cryptography (ECC). http://miracl.com 
+
+https://github.com/miracl/MIRACL
+
+#### acml
+
+> 这个过去是从miracl代码fork出来的，但是后来不知道为啥独立了。而且miracl的go包装版本【[Golang wrapper for Milagro Crypto](https://github.com/miracl/gomiracl)】写着“Milagro”。难道这俩其实是一个组织？Milagro不过是MIRACL的下属分部之类的？
+
+amcl - The Apache Milagro Cryptographic Library https://github.com/milagro-crypto/amcl
+
+
 --------------------------------------------------
+
 
 ### libhydrogen
 
@@ -250,6 +263,10 @@ Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code
 
 ### crypto
 https://github.com/golang/crypto
+
+### gomiracl
+
+Golang wrapper for Milagro Crypto https://github.com/miracl/gomiracl
 
 
 ### gRPC
