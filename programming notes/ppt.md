@@ -37,6 +37,13 @@ https://www.zhihu.com/question/22603002
 
 :octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat:
 
+# 其他
+
+Powerpoint的`设计理念`功能：
+- 图片排版 PowerPoint 自带设计器一键搞定！ https://www.jianshu.com/p/09f24dbb3be7
+
+:octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat:
+
 # PPT模板
 
 千库网 http://588ku.com/ppt/
