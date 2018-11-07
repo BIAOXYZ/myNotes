@@ -26,6 +26,9 @@ https://www.zhihu.com/question/29386330
 
 PPT 模板的下载资源有哪些？ - 知乎 https://www.zhihu.com/question/19644160
 
+有哪些必备的知识技能？ - 邵云蛟的回答 - 知乎 https://www.zhihu.com/question/35112627/answer/153008966
+- 阿里巴巴图标素材库 http://www.iconfont.cn/
+
 ## 知乎PPT_其他
 
 幻灯片软件除了 PowerPoint 和 Keynote 还有没有什么别的选择？ - 知乎
