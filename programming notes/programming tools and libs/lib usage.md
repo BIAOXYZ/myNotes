@@ -292,3 +292,7 @@ Google的Tink库让你丢掉手中成百上千页的密码学书籍 - Google 谷
 
 每次New一个BouncyCastleProvider导致的内存泄漏 https://blog.csdn.net/shenhaiwen/article/details/78400525
 
+### jsnark & xjsnark
+
+- A high-level framework for developing efficient zk-SNARK circuits https://github.com/akosba/xjsnark
+- A Java library for writing circuits/constraints for zk-SNARKs. https://github.com/akosba/jsnark
