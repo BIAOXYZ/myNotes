@@ -6,8 +6,10 @@
 持续集成（CI）- 各种工具的资料总结
 http://www.cnblogs.com/2018/archive/2011/06/17/2055064.html
 
-GitHub 欢迎一切 CI 工具
-https://www.linuxidc.com/Linux/2017-12/149865.htm
+GitHub 欢迎一切 CI 工具 https://www.linuxidc.com/Linux/2017-12/149865.htm
+- Travis CI https://travis-ci.org/
+- CircleCI https://circleci.com/
+- Jenkins https://jenkins.io/
 
 ## CI specific tools
 
