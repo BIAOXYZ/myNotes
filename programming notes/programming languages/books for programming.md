@@ -7,6 +7,8 @@
 
 一些经典且高质量的电子书分享 https://github.com/threerocks/studyFiles
 
+"我的阅历" https://github.com/yuanliangding/books
+
 # books general
 
 雨痕的github上的几本编程书 https://github.com/qyuhen/book
