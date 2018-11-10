@@ -244,6 +244,10 @@ https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 ## python machine learning related libs
 --------------------------------------------------
 
+### [TensorFlow](https://github.com/tensorflow/tensorflow) (https://tensorflow.org/)
+
+TensorFlow Tutorials with YouTube Videos https://github.com/Hvass-Labs/TensorFlow-Tutorials
+
 ### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
