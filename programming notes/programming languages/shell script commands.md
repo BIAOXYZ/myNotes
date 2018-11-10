@@ -1,6 +1,8 @@
 
 ### 综合类的
 
+From finding text to search and replace, from sorting to beautifying text and more https://github.com/learnbyexample/Command-line-text-processing
+
 <<Linux Shell常用技巧(目录)>>
 http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html
 
