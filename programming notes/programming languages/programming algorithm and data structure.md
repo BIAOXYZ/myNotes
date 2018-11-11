@@ -20,6 +20,9 @@
 
 ## Hash related algorithms
 
+Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
+> CCS 2017一篇做PSI论文（Practical Multi-party Private Set Intersection from Symmetric-Key Techniques）提到过这个。利用wiki中提到的，每次随机抽2个（或多个），然后选择其中最少的那个bin把ball放进去，可以大大减少load。也就是让hash table少碰撞。
+
 ### [Cuckoo hashing](https://en.wikipedia.org/wiki/Cuckoo_hashing)
 
 - DPDK中的cuckoo hash算法 https://www.jianshu.com/p/b09b26c9052a
