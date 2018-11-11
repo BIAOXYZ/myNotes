@@ -86,6 +86,7 @@ http://www.csc.edu.cn/chuguo/s/934
 [https://dl.acm.org/citation.cfm?id=3133982]
 (CCS 2017)
 > Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
+> Efficient Batched Oblivious PRF with Applications to Private Set Intersection https://eprint.iacr.org/2016/799.pdf (CCS 2016)
 
 - Practical Multi-party Private Set Intersection from Symmetric-Key Techniques
 [https://eprint.iacr.org/2017/799.pdf]
