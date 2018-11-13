@@ -114,7 +114,8 @@ Linux安全体系学习笔记 OpenSSL源代码分析(1) https://www.linuxidc.com
 
 openssl中ASN.1源码解读 https://blog.csdn.net/u010129119/article/details/53940865
 
-
+https://blog.csdn.net/yyfzy/article/category/5570231   by yyfzy
+- 通过OpenSSL解析X509证书基本项 https://blog.csdn.net/yyfzy/article/details/46798965
 
 #### OpenSSL新闻
 
