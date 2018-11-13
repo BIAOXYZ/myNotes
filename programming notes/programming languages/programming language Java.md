@@ -31,6 +31,8 @@ stackoverflow上Java相关回答整理翻译 https://github.com/giantray/stackov
 
 JavaGuide https://github.com/Snailclimb/JavaGuide
 
+📖 [译] UCB CS61b Java 中的数据结构 https://github.com/apachecn/cs61b-textbook-zh
+
 ## Java优秀blog
 
 菜鸟-翡青 https://blog.csdn.net/zjf280441589
