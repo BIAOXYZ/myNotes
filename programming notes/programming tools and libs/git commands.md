@@ -630,6 +630,11 @@ http://blog.jobbole.com/20123/
 
 ### 其他高级技巧或知识
 
+🥡 Git recipes in Chinese by Zhongyi Tong. 高质量的Git中文教程.  https://geeeeeeeeek.github.io/git-recipes/  https://github.com/geeeeeeeeek/git-recipes
+- 第5篇 Git 实用贴士
+  * 第3章 Git log 高级用法 https://github.com/geeeeeeeeek/git-recipes/wiki/5.3-Git-log-%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95
+  * 第4章 Git 钩子：自定义你的工作流 https://github.com/geeeeeeeeek/git-recipes/wiki/5.4-Git-%E9%92%A9%E5%AD%90%EF%BC%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81
+
 ####  git的refs
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
