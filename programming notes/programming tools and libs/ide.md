@@ -38,3 +38,6 @@ This is a tutorial of IntelliJ IDEA, you can know how to use IntelliJ IDEA bette
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# IDEs for TeX/LaTeX
+
+TexStudio / TexMaker and Github https://tex.stackexchange.com/questions/112396/texstudio-texmaker-and-github
