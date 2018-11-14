@@ -1,6 +1,14 @@
 
 # general
 
+Python官方教程
+- <<Python 2.7.14 documentation>> https://docs.python.org/2/
+- <<Python 3.7.1 documentation>> https://docs.python.org/3.7/
+
+Python中文学习大本营 http://www.pythondoc.com/
+- Python 入门指南 (Release:	3.6.3 Date:	Dec 10, 2017) http://www.pythondoc.com/pythontutorial3/index.html
+- Python 入门指南 (Release:	2.7.14 Date:	Dec 10, 2017) http://www.pythondoc.com/pythontutorial27/index.html
+
 Python 基础教程 by 菜鸟教程 http://www.runoob.com/python/python-tutorial.html
 - Python 列表(List) http://www.runoob.com/python/python-lists.html
   * Python List list()方法 http://www.runoob.com/python/att-list-list.html
@@ -16,9 +24,6 @@ https://gist.github.com/reorx/8aa83ad55591987dc286
 http://usyiyi.cn/translate/python_278/index.html
 - Python 3.5.2文档
 http://usyiyi.cn/translate/python_352/index.html
-
-<<Python 2.7.14 documentation>>
-https://docs.python.org/2/
 
 <<Python 2.7教程>>
 https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000
