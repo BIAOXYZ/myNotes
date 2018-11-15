@@ -25,6 +25,8 @@ https://zhuanlan.zhihu.com/p/20872811
 
 # Paxos实现
 
+C++ Paxos library that has been used in Wechat production environment. https://github.com/Tencent/phxpaxos
+
 # Raft
 
 The Raft Consensus Algorithm https://raft.github.io/
