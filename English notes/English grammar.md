@@ -107,6 +107,17 @@ https://hyperledger-fabric.readthedocs.io/en/release-1.3/peers/peers.html
 - Yet the United States has never been a leveler society; neither the well-to-do nor the poor have ever sought a one-size-fits-all status. 但是，美国从来不是一个平均主义社会；无论有钱人还是穷人都从不曾要求地位全然划一。
 
 ------------------------------------------------------------
+## r
+------------------------------------------------------------
+
+#### rundown n.紧缩；解释；描述 adj.破旧的；衰竭的 [网络]裁减；纲要；扼要报告
+> A quick rundown of the new features and documentation in the v1.3 release of Hyperledger Fabric:
+https://hyperledger-fabric.readthedocs.io/en/release-1.3/whatsnew.html
+
+- On Tuesdays through Saturdays, her grandmother takes her to the program site, a covered area outside a rundown warehouse. 从星期二到星期六，她奶奶都带着他来到这个项目点，一个破旧仓库外的雨棚区。
+- Here's a rundown of the terms you're likely to hear, and what each of them mean. 这里有份术语总结以及它们的含义，有些你可能听过。
+
+------------------------------------------------------------
 ## t 
 ------------------------------------------------------------
 
