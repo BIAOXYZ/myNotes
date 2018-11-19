@@ -1,11 +1,17 @@
 
 # General
 
-郭威gowill - 数据结构和算法 https://blog.csdn.net/guoweimelon/article/category/6136821
+郭威gowill -- 数据结构和算法 https://blog.csdn.net/guoweimelon/article/category/6136821
 - 经典排序算法（1）——冒泡排序算法详解 https://blog.csdn.net/guoweimelon/article/details/50902597
 - 经典排序算法（12）——总结 https://blog.csdn.net/guoweimelon/article/details/50904276
 - 
 
+eudiwffe -- 数据结构与算法 https://www.cnblogs.com/eudiwffe/category/927819.html
+- [算法]——归并排序（Merge Sort） https://www.cnblogs.com/eudiwffe/p/6254394.html
+> "归并排序（Merge Sort）与快速排序思想类似：将待排序数据分成两部分，继续将两个子部分进行递归的归并排序；然后将已经有序的两个子部分进行合并，最终完成排序。其时间复杂度与快速排序均为O(nlogn)，但是归并排序除了递归调用间接使用了辅助空间栈，还需要额外的O(n)空间进行临时存储。从此角度归并排序略逊于快速排序，但是归并排序是一种稳定的排序算法，快速排序则不然。
+> 
+> 所谓稳定排序，表示对于具有相同值的多个元素，其间的先后顺序保持不变。对于基本数据类型而言，一个排序算法是否稳定，影响很小，但是对于结构体数组，稳定排序就十分重要。"
+- 
 
 # Algorithm
 
@@ -17,6 +23,8 @@
 - 找工作知识储备(3)---从头说12种排序算法：原理、图解、动画视频演示、代码以及笔试面试题目中的应用 https://blog.csdn.net/han_xiaoyang/article/details/12163251
 - 十种排序算法 https://blog.csdn.net/coolwriter/article/details/78732728
 - 九大排序算法再总结 https://blog.csdn.net/xiazdong/article/details/8462393
+
+### [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
 
 ## Hash related algorithms
 
