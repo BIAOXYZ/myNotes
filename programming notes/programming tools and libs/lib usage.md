@@ -1,6 +1,12 @@
 
 # C Libs
 
+### glibc
+
+glibc源码分析（一）系统调用 - pk2017的文章 - 知乎 https://zhuanlan.zhihu.com/p/28984642
+
+libc、glibc和glib的关系 https://blog.csdn.net/yasi_xi/article/details/9899599
+
 ### Libevent
 <<libevent源码深度剖析一>>
 http://blog.csdn.net/sparkliang/article/details/4957667
