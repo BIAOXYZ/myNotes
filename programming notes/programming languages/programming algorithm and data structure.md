@@ -13,10 +13,14 @@ eudiwffe -- 数据结构与算法 https://www.cnblogs.com/eudiwffe/category/9278
 > 所谓稳定排序，表示对于具有相同值的多个元素，其间的先后顺序保持不变。对于基本数据类型而言，一个排序算法是否稳定，影响很小，但是对于结构体数组，稳定排序就十分重要。"
 - 
 
+:star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star:
+
 # Algorithm
 
 - 最短路径—Dijkstra算法和Floyd算法 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/31/2615833.html
 - 数据结构与算法（14）：最短路算法 https://plushunter.github.io/2017/07/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%8814%EF%BC%89%EF%BC%9A%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95/
+
+***--------------------------------------------------分割线--------------------------------------------------***
 
 ## Sort Algorithm
 
@@ -25,6 +29,9 @@ eudiwffe -- 数据结构与算法 https://www.cnblogs.com/eudiwffe/category/9278
 - 九大排序算法再总结 https://blog.csdn.net/xiazdong/article/details/8462393
 
 ### [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+
+
+***--------------------------------------------------分割线--------------------------------------------------***
 
 ## Hash related algorithms
 
@@ -38,6 +45,15 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 - Cuckoo hash算法分析——其根本思想和bloom filter一致 增加hash函数来解决碰撞 节省了空间但代价是查找次数增加 https://yq.aliyun.com/articles/398211
 - Cuckoo Hashing的应用及性能优化 https://yq.aliyun.com/articles/563053
 
+### [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
+
+- Bloom Filters by Example https://llimllib.github.io/bloomfilter-tutorial/zh_CN/
+> A Bloom Filter Tutorial https://github.com/llimllib/bloomfilter-tutorial
+- 深夜学算法之Bloom Filter：概率游戏 https://www.jianshu.com/p/8193d7dc8348
+- 布隆过滤器(Bloom Filter)详解 https://www.cnblogs.com/liyulong1982/p/6013002.html
+- 那些优雅的数据结构(1) : BloomFilter——大规模数据处理利器 http://www.cnblogs.com/heaad/archive/2011/01/02/1924195.html
+
+:star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star:
 
 
 # Data Structure
@@ -45,6 +61,8 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 ## [Linked list](https://en.wikipedia.org/wiki/Linked_list)
 
 Python数据结构——链表的实现 http://python.jobbole.com/83953/
+
+***--------------------------------------------------分割线--------------------------------------------------***
 
 ## Tree
 
