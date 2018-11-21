@@ -9,6 +9,8 @@
 
 "我的阅历" https://github.com/yuanliangding/books
 
+程序人生 阅读快乐 https://www.yuque.com/winforlife/vgzph9
+
 # books general
 
 雨痕的github上的几本编程书 https://github.com/qyuhen/book
