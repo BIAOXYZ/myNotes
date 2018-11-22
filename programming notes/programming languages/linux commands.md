@@ -274,12 +274,14 @@ http://blog.csdn.net/yangzhenzhen/article/details/8862236
 - http://man.linuxde.net/kill 
 - http://man.linuxde.net/ldconfig
 - http://man.linuxde.net/od 
-(http://www.runoob.com/linux/linux-comm-od.html) 
-(https://www.cnblogs.com/Vivian517/p/7612255.html)
+  * 课后练习：C语言实现Linux命令——od https://www.cnblogs.com/Vivian517/p/7612255.html
 - http://man.linuxde.net/usermod
 - http://man.linuxde.net/lsof
-(https://www.cnblogs.com/the-study-of-linux/p/5501593.html)
-(https://www.cnblogs.com/peter9/archive/2011/07/28/2362156.html)
+  * lsof命令详解 https://www.cnblogs.com/the-study-of-linux/p/5501593.html
+  * Linux下通过端口杀死进程 https://www.cnblogs.com/peter9/archive/2011/07/28/2362156.html
+
+Linux 命令大全 -- 菜鸟教程 http://www.runoob.com/linux/linux-command-manual.html
+- Linux od命令 http://www.runoob.com/linux/linux-comm-od.html
 
 <<每天一个linux命令>>
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
