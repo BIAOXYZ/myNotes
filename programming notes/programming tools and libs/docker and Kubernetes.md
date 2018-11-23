@@ -173,6 +173,10 @@ https://blog.csdn.net/wanghailong041/article/details/52162293
 Docker-compose使用全解 - CSDN博客
 https://blog.csdn.net/zhiaini06/article/details/45287663
 
+docker-compose教程（安装，使用, 快速入门） https://blog.csdn.net/pushiqiang/article/details/78682323
+
+docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/article/details/79427878
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
