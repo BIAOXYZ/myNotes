@@ -129,8 +129,9 @@ https://studygolang.com/articles/2652
 
 ### go环境变量
 
-go环境变量配置 (GOROOT和GOPATH)
-https://www.jianshu.com/p/4e699ff478a5
+聊聊GOPATH、GOROOT https://studygolang.com/articles/10194
+
+go环境变量配置 (GOROOT和GOPATH) https://www.jianshu.com/p/4e699ff478a5
 ```go
 简单总结就是：
 - GOROOT就是go的安装路径
@@ -141,16 +142,16 @@ https://www.jianshu.com/p/4e699ff478a5
 PS: 此外在其他帖子看过GOROOT和GOPATH必须是绝对路径。
 ```
 
+- 开始编写Golang代码 http://www.cnblogs.com/sunshine-anycall/p/4948533.html
+- 【Go入门教程1】Go 安装，GOROOT，GOPATH，Go工作空间 https://www.cnblogs.com/52php/p/6030990.html
+
 2.2 Go 环境变量 - Go 入门指南 - 极客学院Wiki
 http://wiki.jikexueyuan.com/project/the-way-to-go/02.2.html
 
-聊聊GOPATH、GOROOT
-https://studygolang.com/articles/10194
-
-Go Web 编程 - 1.2 GOPATH与工作空间
-https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/01.2.md
+Go Web 编程 - 1.2 GOPATH与工作空间 https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/01.2.md
 - Go Web 编程 https://legacy.gitbook.com/book/astaxie/build-web-application-with-golang/details/zh
 - Go Web 编程 https://legacy.gitbook.com/book/wizardforcel/build-web-application-with-golang/details
+
 
 # Go其他
 
