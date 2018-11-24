@@ -173,3 +173,20 @@ bijective (one-to-one and onto or one-to-one correspondence)
 2.最早其实是只有定义域（domain）和值域（range）的。Bourbaki从集合论的角度定义函数，引入了一个"codomain"（陪域）的概念。range一定是codomain的子集或真子集。但是引入这个概念后，就会造成one-to-one看起来既像单射又像一一映射，其实区别主要在于目标集合是range还是codomain。
 
 
+***今天看wiki关于二元关系的英文词条时，偶然发现原来其实有更多的分类和叫法：***
+https://en.wikipedia.org/wiki/Binary_relation
+```
+Special types of binary relations
+    Uniqueness properties:
+        injective (also called left-unique[8]): 
+        functional (also called univalent[9] or right-unique[8] or right-definite[10]): 
+        one-to-one (also written 1-to-1): 
+    Totality properties (only definable if the sets of departure X resp. destination Y are specified):
+        left-total[8]: 
+        surjective (also called right-total[8] or onto): 
+    Uniqueness and totality properties:
+        A function:
+        An injective function or injection:
+        A surjective function or surjection: 
+        A bijection: 
+```
