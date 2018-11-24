@@ -3,11 +3,15 @@
 
 What is “Developer Program Member” on Github.com https://stackoverflow.com/questions/28255341/what-is-developer-program-member-on-github-com
 
-# Github组织和用户
+# Github用户
 
 https://github.com/kunxian-xia
 > 从匿名证书的wiki页面发现的 https://github.com/ontio/ontology-crypto/wiki/Anonymous-Credential
 >> https://www.linkedin.com/in/kunxian-xia-65633839
+
+## Github组织
+
+伯乐在线 https://github.com/jobbole 【组织下面有一些仓库，是关于各个语言学习资源的。类似awesome xxx的中文版】
 
 # Github项目
 
