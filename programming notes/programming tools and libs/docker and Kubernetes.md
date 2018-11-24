@@ -182,6 +182,8 @@ docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/ar
 
 # Kubernetes
 
+A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ https://github.com/ramitsurana/awesome-kubernetes
+
 Docker 和 Kubernetes：给程序员的快速指南 - 江宏的文章 - 知乎 https://zhuanlan.zhihu.com/p/39937913
 
 Kubernetes中文指南/云原生应用架构实践手册 https://github.com/rootsongjc/kubernetes-handbook
