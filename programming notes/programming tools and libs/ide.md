@@ -42,10 +42,42 @@ VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u0136002
 
 ## [Eclipse](https://github.com/eclipse)
 
+Eclipse教程 http://www.runoob.com/eclipse/eclipse-tutorial.html
+
+Eclipse使用技巧 - 2. Eclipse自动补全功能轻松设置 https://blog.csdn.net/u012812482/article/details/51121377
+
+Eclipse 的 Workspace 下边有一个 .metadata 的目录，是做什么用的？ https://bbs.csdn.net/topics/300034735
+
+怎样从Eclipse当中打开一个存在的项目？ https://blog.csdn.net/samxx8/article/details/6562572
+> "多么常见又难以解决的问题！我花了三天时间才解决掉。"
+> "第五、在新的对话框当中，设置Select root directory为c:/test‍，也就是要导入工程的上一级目录"
+```
+notes: 正如作者原文里那句，其实还真是会把人绊一阵子，不过三天倒不至于。。。
+总结下核心的点就是，假设你的工程代码目录结构为：
+D:\projects\hyperledgerSCF\CAproject
+其中.project和.classpath在CAproject文件夹中(也就是CAproject是真正的工程代码的总目录)。
+这个时候eclipse的workspace一定得设置到D:\projects\hyperledgerSCF
+
+- D：
+  -- projects
+    --- hyperledgerSCF
+      ---- CAproject
+        ----- .project
+        ----- .classpath
+        ----- src
+        .
+        .
+        .
+```
+
+
 ## [IntelliJ IDEA](https://github.com/JetBrains/intellij-community)
 
 This is a tutorial of IntelliJ IDEA, you can know how to use IntelliJ IDEA better and better. https://github.com/guobinhit/intellij-idea-tutorial
 
+## Maven
+
+Maven 项目构建基础 - 王下邀月熊的文章 - 知乎 https://zhuanlan.zhihu.com/p/28371336
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
