@@ -11,6 +11,27 @@ ps ufx
 <<Linux文件内容查阅 - cat, tac, nl, more, less, head, tail, od>>
 http://www.linuxidc.com/Linux/2015-08/120978.htm
 
+## ls
+
+ls实现列文件按时间排序 https://blog.csdn.net/gtuu0123/article/details/4420424
+```
+1) ls -lt  时间最近的在前面
+2) ls -ltr 时间从前到后
+3) 利用sort
+    ls -l | sort +7 (日期为第8列)   时间从前到后
+    ls -l | sort -r +7      时间最近的在前面
+```
+//注："+7"不是命令本身的内容，可能只是作者笔误。
+
+linux ls 按文件大小排序 https://blog.csdn.net/0210/article/details/41659647
+```
+ls -Sl
+其是按照由大到小排序，如果想要反过来，从小到大，那么用:
+ls -Slr
+再者，如果想要输入是按照“便于人类阅读的方式”，那么就再加一个-h，表示"--human-readable"
+这样单位就是k或者M ，比较容易看清楚结果。
+```
+
 ## 移动类
 
 ## mv
