@@ -10,3 +10,11 @@
 # Modern Literature
 
 # Contemporary Literature
+
+## 老舍
+
+《骆驼祥子》（校注本）的注释 http://blog.sina.com.cn/s/blog_b36368230102xapz.html
+
+老舍经典语录/名句 https://www.juzimi.com/writer/%E8%80%81%E8%88%8D
+- 《骆驼祥子》 
+  * 雨下给富人，也下给穷人，下给义人，也下给不义的人；其实，雨并不公道，因为下落在一个没有公道的世界上。
