@@ -46,6 +46,14 @@ Eclipse教程 http://www.runoob.com/eclipse/eclipse-tutorial.html
 
 Eclipse使用技巧 - 2. Eclipse自动补全功能轻松设置 https://blog.csdn.net/u012812482/article/details/51121377
 
+Eclipse详细设置护眼背景色和字体颜色并导出 https://jingyan.baidu.com/article/d5a880eb6c4f7813f147ccef.html
+```
+1.Windows -> Preference -> General -> Editors -> Text Editors 
+2.Appearance color options -> Background color
+3.勾掉System Default，点击'Color'颜色块，将出现颜色选择面板
+4.色调：85。饱和度：120。亮度：208
+```
+
 Eclipse 的 Workspace 下边有一个 .metadata 的目录，是做什么用的？ https://bbs.csdn.net/topics/300034735
 ```
 不用放到svn里。
@@ -82,6 +90,19 @@ D:\projects\hyperledgerSCF\CAproject
         .
 ```
 
+eclipse 创建项目报项目存在的解决方案：eclipse Invalid project name: Project "xxx" already exists.
+```
+因为某种原因，自己手动去删了了工作空间的某个项目，或者因为创建项目时发生异常，在eclipse上看不到某个项目的名称，但是再次新建同样的项目都会报，无效名称，项目XXX已经存在。
+
+Invalid project name: Project "xxx" already exists.
+
+我们可以手段去工作空间去把的项目信息路径下（workspace\.metadata\.plugins\org.eclipse.core.resources\.projects）去删除xxx这个项目的信息，然后去刷新Project Explorer，这样eclipse会自动重新构建以下项目空间，然后就真的没有了xxx这个项目了，就可以重新创建xxx这个项目了。
+
+eclipse打开过的工程信息保存路径
+
+workspace\.metadata\.plugins\org.eclipse.core.resources\.projects
+```
+***//注：其实不用刷新，全删除再重新建一下就OK。***
 
 ## [IntelliJ IDEA](https://github.com/JetBrains/intellij-community)
 
