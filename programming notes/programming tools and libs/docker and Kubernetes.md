@@ -2,17 +2,13 @@
 
 # 官方连接
 
-docker中文社区站  
-http://www.docker.org.cn/
+docker中文社区站  http://www.docker.org.cn/
 
-Docker Swarm
-https://docs.docker.com/engine/swarm/swarm-tutorial/
+Docker Swarm https://docs.docker.com/engine/swarm/swarm-tutorial/
 
-kubernetes中文社区
-https://www.kubernetes.org.cn/
+kubernetes中文社区 https://www.kubernetes.org.cn/
 
-Kubernetes中文社区 | 中文文档
-http://docs.kubernetes.org.cn/
+Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 
 docker官方文档
 - https://docs.docker.com/
@@ -24,6 +20,10 @@ docker官方文档
 # docker常用命令总结
 
 - 15 个 Docker 技巧和提示 https://blog.csdn.net/liyingke112/article/details/73920837
+```
+删除已退出的容器： docker rm $(docker ps -q -f "status=exited") 
+//注：有时运行一段时间有不少不用的container，此时用这个删比较好。
+```
 - 这20个Docker Command，有几个是你会的？ https://blog.csdn.net/mingongge/article/details/80524241
 
 # docker general
