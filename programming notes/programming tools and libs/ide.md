@@ -47,6 +47,18 @@ Eclipse教程 http://www.runoob.com/eclipse/eclipse-tutorial.html
 Eclipse使用技巧 - 2. Eclipse自动补全功能轻松设置 https://blog.csdn.net/u012812482/article/details/51121377
 
 Eclipse 的 Workspace 下边有一个 .metadata 的目录，是做什么用的？ https://bbs.csdn.net/topics/300034735
+```
+不用放到svn里。
+.metadata 里保存的是你当前正在使用的eclipse的配置，包括workspace的布局、log等。
+所以，.metadata 是跟项目本身无关的，只跟各自机器中的eclipse设定有关，不需要放到svn里。
+别人从svn里打包项目时，就不会造成连你个人eclipse的自定义配置也打包进去了。
+
+如果你尝试着将.metadata 删除，你的eclipse打开后，就恢复到最原始的欢迎界面了，workspace的配置在.metadata 里，被你删了。
+
+另外，一个workspace里有可能建了多个项目，比如一个是你个人自己的练习项目，一个是公司的实际项目，你需要放到svn里的应该是
+公司的项目，而不包括你个人的那个项目，这个时候，如果你把.metadata 也放到svn里，然后被别人打包到他本地上后，运行时，
+会连你个人的项目里的错误或配置也报出来，或找不到项目这个你个人的项目的错误提示。
+```
 
 怎样从Eclipse当中打开一个存在的项目？ https://blog.csdn.net/samxx8/article/details/6562572
 > "多么常见又难以解决的问题！我花了三天时间才解决掉。"
