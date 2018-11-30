@@ -77,7 +77,7 @@ https://www.zhihu.com/question/20730157/answer/82034823
 有哪些 Python 经典书籍？ - 伟哥-Wayne的回答 - 知乎 https://www.zhihu.com/question/20668576/answer/203592170
 > 5.《Python核心编程》
 
---------------------------------------------------
+***--------------------------------------------------分割线--------------------------------------------------***
 
 ### CSAPP
 
@@ -92,8 +92,10 @@ https://www.zhihu.com/question/20354069
 如何阅读《深入理解计算机系统》这本书？ - 知乎
 https://www.zhihu.com/question/20402534
 
+
+***--------------------------------------------------分割线--------------------------------------------------***
  
-###  APUE
+###  APUE (Advanced Programming in the UNIX Environment)
 
 《UNIX环境高级编程》这本书怎么看？怎么学习？ - 齐庆的回答 - 知乎
 https://www.zhihu.com/question/19939011/answer/82075566
@@ -122,6 +124,7 @@ http://www.codeman.net/wp-content/uploads/2014/04/APUE-3rd.pdf
 
 http://vdisk.weibo.com/s/AcSJGKVz_XjEh
 
+***--------------------------------------------------分割线--------------------------------------------------***
 
 ### PLKA
 
@@ -129,7 +132,9 @@ PLKA中文版2010年6月第一版的引言推荐了几本经典书籍，包括�
 - C Programming Language 【K&R不用说，书名还少了一个The，要么就是老外不细心，要么就是翻译版不细心】
 - Modern operating Systems
 - Operating Systems: Design and Implementation
-- 
+- APUE
+- Computer Architecture
+- Computer Organization and Design
 
 
 https://blog.csdn.net/lxhscx
@@ -140,7 +145,7 @@ https://blog.csdn.net/lxhscx
   >
   > 3.《Operating Systems-Design and Implementation》-《操作系统设计与实现》-Andrew S. Tanenbaum-陈渝等-第3版-电子工业出版社；OS书的又一崇山峻岭啊！此书结合源码讲解实际的操作系统，木有了传统OS远离实践的毛病，不过相对，OS理论的讲解就没有那么完备了；Minix是Linus最初实现Linux的起源，如果您想研究Linux，那么此书更值得一读了！如果您只是想对操作系统理论有所了解，还是书1和上文的恐龙书更适合。评价：4；
 
-
+***--------------------------------------------------分割线--------------------------------------------------***
 
 ### 程序员的自我修养：链接、装载与库
 
