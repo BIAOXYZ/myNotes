@@ -92,8 +92,6 @@ https://www.zhihu.com/question/20354069
 如何阅读《深入理解计算机系统》这本书？ - 知乎
 https://www.zhihu.com/question/20402534
 
-
-
  
 ###  APUE
 
@@ -123,6 +121,26 @@ Advanced Programming in the UNIX Environment (Third Edition)
 http://www.codeman.net/wp-content/uploads/2014/04/APUE-3rd.pdf
 
 http://vdisk.weibo.com/s/AcSJGKVz_XjEh
+
+
+### PLKA
+
+PLKA中文版2010年6月第一版的引言推荐了几本经典书籍，包括：
+- C Programming Language 【K&R不用说，书名还少了一个The，要么就是老外不细心，要么就是翻译版不细心】
+- Modern operating Systems
+- Operating Systems: Design and Implementation
+- 
+
+
+https://blog.csdn.net/lxhscx
+- 八年程序员之书籍篇--OS/Linux(二):Kernel https://blog.csdn.net/lxhscx/article/details/8897392
+  > 7.《Professional Linux Kernel Architecture》-《深入Linux内核架构》-Wolfgang Mauerer-郭旭-人民邮电出版社(中)，简称PLKA；又一本厚达千页的书，跟ULK类似，我只在书店翻过一会，其中对数据结构/代码/图表的讲述方式，我感觉很不错，没看过的书，不说太多，应该不会差就是；
+- 八年程序员之书籍篇--OS/Linux(三):OS理论 https://blog.csdn.net/lxhscx/article/details/8902873
+  > 1.《Modern operating Systems》-《现代操作系统》-Andrew S. Tanenbaum-陈向群等-第2版-机械工业出版社；作者极其牛叉，在这个书单中，还有他的另一本书，同一领域竞争关系的两本书却都是经典，如何牛就不用我说了吧！传统操作系统的内容不外乎进程/线程、死锁、存储管理、I/O、FS等(分布式操作系统、实时操作系统等算新一点的，而且专题很大，可以另外看书)，这些内容各书常有互相抄袭的感觉，在此特别推荐本书的安全和操作系统设计两章，前者在我读的时候关于病毒隐身的描述觉得相当牛叉，所以后面还专门去瞅了可执行文件的格式等等相关内容，后者更是对操作系统设计原则做了一个总结，我觉得有这章就值这本书的价钱了！可能是先入为主的因素，后来看其它操作系统理论书时，我会不时不时地用这本书来对比。总的来说，书的内容比较全，很多地方不很深，但对进一步学习做了适度的参考，我个人认为这是《操作系统》的最佳教材。该书已有第3版，应该依然有品质。评价：4.5。
+  >
+  > 3.《Operating Systems-Design and Implementation》-《操作系统设计与实现》-Andrew S. Tanenbaum-陈渝等-第3版-电子工业出版社；OS书的又一崇山峻岭啊！此书结合源码讲解实际的操作系统，木有了传统OS远离实践的毛病，不过相对，OS理论的讲解就没有那么完备了；Minix是Linus最初实现Linux的起源，如果您想研究Linux，那么此书更值得一读了！如果您只是想对操作系统理论有所了解，还是书1和上文的恐龙书更适合。评价：4；
+
+
 
 ### 程序员的自我修养：链接、装载与库
 
