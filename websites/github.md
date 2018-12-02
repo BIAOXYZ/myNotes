@@ -35,3 +35,6 @@ https://github.com/retejs/rete
 >> deepfakes 中文站 https://deepfakes.com.cn/
 - 程序员成功研发去马赛克神器 高清无码效果感人 - AI 人工智能 - cnBeta.COM https://www.cnbeta.com/articles/tech/784263.htm
 > Decensoring Hentai with Deep Neural Networks https://github.com/deeppomf/DeepCreamPy/
+
+拥抱开源，这个城市的法典都通过 GitHub 发布 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/tech/791993.htm
+> https://github.com/DCCouncil/dc-law-xml
