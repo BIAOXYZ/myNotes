@@ -52,6 +52,11 @@ Project Python http://projectpython.net/
 
 Python - 100天从新手到大师 https://github.com/jackfrued/Python-100-Days
 
+Python最佳实践指南中文版 https://github.com/Prodesire/Python-Guide-CN
+- Python最佳实践指南！ https://pythonguidecn.readthedocs.io/zh/latest/
+
+wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译 https://github.com/leisurelicht/wtfpython-cn
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
