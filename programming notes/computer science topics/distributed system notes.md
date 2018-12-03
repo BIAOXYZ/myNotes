@@ -1,5 +1,12 @@
 
 
+
+# distributed system general
+
+Scalable, Available, Stable, Performant, and Intelligent System Design Patterns https://github.com/binhnguyennus/awesome-scalability
+
+# transaction system
+
 两阶段提交的工程实践 - 郁白的文章 - 知乎
 https://zhuanlan.zhihu.com/p/22594180
 
