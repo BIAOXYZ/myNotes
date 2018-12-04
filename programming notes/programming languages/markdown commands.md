@@ -9,11 +9,12 @@ GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/arti
 
 <<Learning-Markdown (Markdown 入门参考)>> http://xianbai.me/learn-md/index.html
 
-# markdown技巧
+# markdown小技巧
 
 markdown表格内如何进行换行？ https://blog.csdn.net/microcosmv/article/details/51868178
 > "可以用html的代码，插入代码`<br>`"
 
+**原始表格代码和效果：**
 ```
 |姓名|爱好|
 --|--|
@@ -25,6 +26,7 @@ markdown表格内如何进行换行？ https://blog.csdn.net/microcosmv/article/
 张三|足球、篮球
 李四|羽毛球、乒乓球
 
+**使用`<br>`在表格内换行的代码和效果：**
 ```
 |姓名|爱好|
 --|--|
@@ -35,6 +37,19 @@ markdown表格内如何进行换行？ https://blog.csdn.net/microcosmv/article/
 --|--|
 张三|足球<br>篮球
 李四|羽毛球<br>乒乓球
+
+***--------------------------------------------------分割线--------------------------------------------------***
+
+Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
+```
+这是一个脚注的例子[^1]
+
+[^1]: 这里是脚注
+```
+这是一个脚注的例子[^1]
+
+[^1]: 这里是脚注
+
 
 ### markdown数学公式
 
