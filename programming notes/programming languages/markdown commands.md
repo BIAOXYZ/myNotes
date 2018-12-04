@@ -11,6 +11,8 @@ GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/arti
 
 # markdown小技巧
 
+## markdown中使用html
+
 markdown表格内如何进行换行？ https://blog.csdn.net/microcosmv/article/details/51868178
 > "可以用html的代码，插入代码`<br>`"
 
@@ -41,6 +43,8 @@ markdown表格内如何进行换行？ https://blog.csdn.net/microcosmv/article/
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
+
+**markdown脚注：**
 ```
 这是一个脚注的例子[^1]
 
@@ -50,6 +54,17 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
 [^1]: 这里是脚注
 
+**字体大小及颜色：**
+```
+<font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
+<font color="#0000ff">字体颜色</font>
+```
+<font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
+<font color="#0000ff">字体颜色</font>
+
+***--------------------------------------------------分割线--------------------------------------------------***
+
+## markdown中数学公式
 
 ### markdown数学公式
 
