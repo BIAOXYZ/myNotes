@@ -60,7 +60,10 @@ http://www.cnblogs.com/lhb25/archive/2012/11/20/cloud-ide-for-developers.html
 
 The Go Playground https://play.golang.org/
 
+### 可作为插件的online ide
 
+RunMyCode https://runmycode.online/
+> 这里可以直接在github上执行代码，美滋滋。
 
 
 ### local IDE
