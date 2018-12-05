@@ -196,7 +196,11 @@ Special types of binary relations
 谓词`P iff Q`等于`P if and only if Q`，实际上更准确且有点啰嗦的说法是`P is true if and only if Q is true`。这个谓词的证明可以拆解为分别证明如下两部分：
 - `P is true` if `Q is true`
 - `P is true` only if `Q is true`
+> 第一个很好理解。用汉语直译是：**P为真 如果 Q为真**，美化一下的翻译是：**如果 Q为真的话，则 P亦为真**。意思上很自然。但第二个就龊了，按only if的英语意思去翻译会发现怎么都不顺不自然，比如：**P为真 只有当/只要/除非 Q为真**，这还是第一个的意思啊。这里参考wiki的英文词条就明白了：("only if", equal to "if ... then")
+>> 也就是此处的only if和常规英语里的only if并不一样，而是等于if then。即，**if...then "条件；条件语句；若则"**
+>>> 那么第二个的翻译就是：**若P为真，则Q为真**。这种就比较自然了。
 
 If and only if https://en.wikipedia.org/wiki/If_and_only_if 【[当且仅当](https://zh.wikipedia.org/wiki/%E5%BD%93%E4%B8%94%E4%BB%85%E5%BD%93)】
 > In that it is biconditional (a statement of material equivalence), the connective can be likened to the standard material conditional ("only if", equal to "if ... then") combined with its reverse ("if"); hence the name. The result is that the truth of either one of the connected statements requires the truth of the other (i.e. either both statements are true, or both are false). It is controversial whether the connective thus defined is properly rendered by the English "if and only if", with its pre-existing meaning.
+> 
 > 在数学、哲学、逻辑学以及其他一些技术性领域中被用来表示“在这个条件成立，并且仅在这个条件成立时”之意。当命题P, Q满足“当P则Q”且“仅当P则Q”时，称为“当且仅当P则Q”，其他等价的说法有“Q当且仅当P”；“P是Q的充分必要条件（充要条件）”；“P等价于Q”。
