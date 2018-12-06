@@ -54,6 +54,7 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
 [^1]: 这里是脚注
 
+
 **字体大小及颜色：**
 ```
 <font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
@@ -61,6 +62,25 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 ```
 <font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
 <font color="#0000ff">字体颜色</font>
+
+
+**文本对齐方式：**
+```
+<p align="left">居左文本</p>
+<p align="center">居中文本</p>
+<p align="right">居右文本</p>
+```
+<p align="left">居左文本</p>
+<p align="center">居中文本</p>
+<p align="right">居右文本</p>
+
+
+**下划线：**
+```
+<u>下划线文本</u>
+```
+<u>下划线文本</u>
+
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
