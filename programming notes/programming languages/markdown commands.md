@@ -86,8 +86,12 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
 ## markdown中数学公式
 
-### markdown数学公式
+How to show math equations in general github's markdown(not github's blog) https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog
+```
+本来mathjax挺好的解决方案，github偏偏不支持，垃圾！
+```
 
+### markdown数学公式
 MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.readthedocs.io/en/latest/start.html
 ```
 使用我们的服务器使用MathJax，你需要做两件事情：
