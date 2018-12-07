@@ -71,7 +71,11 @@ http://2018.pgconfapac.org/
 
 ### Postgres Wiki
 
-https://wiki.postgresql.org/wiki/Developer_FAQ
+https://wiki.postgresql.org/wiki/Main_Page
+- https://wiki.postgresql.org/wiki/Development_information
+  * https://wiki.postgresql.org/wiki/Todo
+  * https://wiki.postgresql.org/wiki/Developer_FAQ
+  * https://wiki.postgresql.org/wiki/Working_with_Git
 
 Pgsrcstructure
 https://wiki.postgresql.org/wiki/Pgsrcstructure
