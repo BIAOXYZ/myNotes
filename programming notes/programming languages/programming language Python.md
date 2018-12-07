@@ -105,13 +105,23 @@ c.NotebookApp.notebook_dir = 'D:\\mytestcodes\\testpycodes'
 Jupyter NoteBook功能介绍 https://www.cnblogs.com/lvpengbo/p/8662290.html
 ```
 类似于 Linux 的 Vim 编辑器，在 notebook 中也有两种模式：
-
     编辑模式：编辑文本和代码。选中单元并按 Enter 键进入编辑模式，此时单元左侧显示绿色竖线。
-
     命令模式：用于执行键盘输入的快捷命令。通过 Esc 键进入命令模式，此时单元左侧显示蓝色竖线。
-
 如果要使用快捷键，首先按 Esc 键进入命令模式，然后按相应的键实现对文档的操作。比如切换成代码单元（Y）或 markdown 单元（M），
 或者在本单元的下方增加一单元（B）。查看所有快捷命令可以按H。
+
+----------
+
+那么如何用 Jupyter Notebook 制作幻灯片呢？首先在 notebook 的菜单栏选择 View > Cell Toolbar > Slideshow，这时在
+文档的每个单元右上角显示了 Slide Type 的选项。通过设置不同的类型，来控制幻灯片的格式。有如下5中类型：
+    Slide：主页面，通过按左右方向键进行切换。
+    Sub-Slide：副页面，通过按上下方向键进行切换。
+    Fragment：一开始是隐藏的，按空格键或方向键后显示，实现动态效果。
+    Skip：在幻灯片中不显示的单元。
+    Notes：作为演讲者的备忘笔记，也不在幻灯片中显示。
+当编写好了幻灯片形式的 notebook，如何来演示呢？这时需要使用 nbconvert：
+jupyter nbconvert notebook.ipynb --to slides --post serve
+在命令行中敲入上述代码后，浏览器会自动打开相应的幻灯片
 ```
 
 [译]27个Jupyter Notebook小提示与技巧 https://cloud.tencent.com/developer/article/1194156
