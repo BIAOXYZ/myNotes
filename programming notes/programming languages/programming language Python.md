@@ -68,11 +68,18 @@ http://codingpy.com/article/getting-started-with-jupyter-notebook-part-2/
 
 ### Jupter官网
 
+- https://jupyter-notebook.readthedocs.io/en/latest/
 - http://jupyter.org/documentation
 - https://nbviewer.jupyter.org/
 
-jupyter notebook 可以做哪些事情？ - 猴子的回答 - 知乎
-https://www.zhihu.com/question/46309360/answer/254638807
+jupyter notebook 可以做哪些事情？ - 知乎 https://www.zhihu.com/question/46309360
+- jupyter notebook 可以做哪些事情？ - 猴子的回答 - 知乎 https://www.zhihu.com/question/46309360/answer/254638807
+
+#### 已实践过的Jupyter Notebook教程
+
+Jupyter Notebook 快速入门
+- Jupyter notebook入门教程（上） https://blog.csdn.net/red_stone1/article/details/72858962
+- Jupyter notebook入门教程（下） https://blog.csdn.net/red_stone1/article/details/72863749
 
 
 ## IDE pycharm
