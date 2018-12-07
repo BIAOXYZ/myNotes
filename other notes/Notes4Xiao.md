@@ -31,15 +31,15 @@ Management Development Institute of Singapore (MDIS)
 
 ### CSC
 
-2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定
-http://www.csc.edu.cn/chuguo/s/1224
+2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
 
-2017年国家建设高水平大学公派研究生项目录取结果确定
-http://www.csc.edu.cn/chuguo/s/934
+2017年国家建设高水平大学公派研究生项目录取结果确定 http://www.csc.edu.cn/chuguo/s/934
+
+【名单公示】2018年“国家建设高水平大学公派研究生项目”及“国家公派硕士研究生项目”拟推荐人员名单公示 http://guoji.nwpu.edu.cn/info/1293/6296.htm
 
 ### 傻乎乎
 
-这个又有你小时的影子 https://www.iesdouyin.com/share/video/6630692598996536589/?region=CN&mid=6630692623805844228
+“这个又有你小时的影子” https://www.iesdouyin.com/share/video/6630692598996536589/?region=CN&mid=6630692623805844228
 
 
 ***--------------------------------------------------tooth extraction--------------------------------------------------***
