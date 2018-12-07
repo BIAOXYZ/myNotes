@@ -122,6 +122,18 @@ Jupyter NoteBook功能介绍 https://www.cnblogs.com/lvpengbo/p/8662290.html
 当编写好了幻灯片形式的 notebook，如何来演示呢？这时需要使用 nbconvert：
 jupyter nbconvert notebook.ipynb --to slides --post serve
 在命令行中敲入上述代码后，浏览器会自动打开相应的幻灯片
+
+注：个人实验过程如下（因为之前已经修改过默认工作目录了）。不过有个问题是最后Ctrl+C结束不了，其它都正常。
+(base) C:\Users\LiangLiu>d:
+(base) D:\>cd mytestcodes\testpycodes
+(base) D:\mytestcodes\testpycodes>jupyter nbconvert untitled.ipynb --to slides --post serve
+[NbConvertApp] Converting notebook untitled.ipynb to slides
+[NbConvertApp] Writing 282014 bytes to untitled.slides.html
+[NbConvertApp] Redirecting reveal.js requests to https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0
+Serving your slides at http://127.0.0.1:8000/untitled.slides.html
+Use Control-C to stop this server
+WARNING:tornado.access:404 GET /custom.css (127.0.0.1) 0.50ms
+.
 ```
 
 [译]27个Jupyter Notebook小提示与技巧 https://cloud.tencent.com/developer/article/1194156
