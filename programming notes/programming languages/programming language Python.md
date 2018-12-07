@@ -77,9 +77,40 @@ jupyter notebook 可以做哪些事情？ - 知乎 https://www.zhihu.com/questio
 
 #### 已实践过的Jupyter Notebook教程
 
-Jupyter Notebook 快速入门
+Jupyter Notebook 快速入门 https://www.cnblogs.com/nxld/p/6566380.html
 - Jupyter notebook入门教程（上） https://blog.csdn.net/red_stone1/article/details/72858962
 - Jupyter notebook入门教程（下） https://blog.csdn.net/red_stone1/article/details/72863749
+> 注：第一个链接就是下面那俩链接(上)(下)综合起来了，直接看第一个就可以。之所以把那俩链接也记一下是因为一来多个备份，二来下面俩链接的作者还有不少机器学习相关的博文不错。
+
+Jupyter notebook改变默认的的工作目录 https://blog.csdn.net/liwei1205/article/details/78818568
+> 注：以我自己机器修改过程为例：
+```
+找到配置文件的位置：
+(base) C:\Users\LiangLiu>jupyter notebook --generate-config
+Writing default config to: C:\Users\LiangLiu\.jupyter\jupyter_notebook_config.py
+
+然后在对应的配置文件里进行如下修改：
+## The directory to use for notebooks and kernels.
+#c.NotebookApp.notebook_dir = ''
+c.NotebookApp.notebook_dir = 'D:\\mytestcodes\\testpycodes'
+
+这样就把默认工作目录改到了 D:\mytestcodes\testpycodes
+```
+
+Jupyter NoteBook功能介绍 https://www.cnblogs.com/lvpengbo/p/8662290.html
+```
+类似于 Linux 的 Vim 编辑器，在 notebook 中也有两种模式：
+
+    编辑模式：编辑文本和代码。选中单元并按 Enter 键进入编辑模式，此时单元左侧显示绿色竖线。
+
+    命令模式：用于执行键盘输入的快捷命令。通过 Esc 键进入命令模式，此时单元左侧显示蓝色竖线。
+
+如果要使用快捷键，首先按 Esc 键进入命令模式，然后按相应的键实现对文档的操作。比如切换成代码单元（Y）或 markdown 单元（M），
+或者在本单元的下方增加一单元（B）。查看所有快捷命令可以按H。
+```
+
+机器学习新手必看：Jupyter Notebook入门指南 https://blog.csdn.net/guleileo/article/details/80490921
+
 
 
 ## IDE pycharm
