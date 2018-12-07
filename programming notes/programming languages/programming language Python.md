@@ -75,6 +75,11 @@ http://codingpy.com/article/getting-started-with-jupyter-notebook-part-2/
 jupyter notebook 可以做哪些事情？ - 知乎 https://www.zhihu.com/question/46309360
 - jupyter notebook 可以做哪些事情？ - 猴子的回答 - 知乎 https://www.zhihu.com/question/46309360/answer/254638807
 
+数据分析为什么常用Jupyter而不是直接使用Python脚本或Excel? - 知乎 https://www.zhihu.com/question/37490497
+- 数据分析为什么常用Jupyter而不是直接使用Python脚本或Excel? - Michael翔的回答 - 知乎 https://www.zhihu.com/question/37490497/answer/101293910
+  * > "如果通过github + nbviewer.jupyter.org/ 还能将.ipynb文件可视化的分享给别人"
+
+
 #### 已实践过的Jupyter Notebook教程
 
 Jupyter Notebook 快速入门 https://www.cnblogs.com/nxld/p/6566380.html
@@ -109,9 +114,15 @@ Jupyter NoteBook功能介绍 https://www.cnblogs.com/lvpengbo/p/8662290.html
 或者在本单元的下方增加一单元（B）。查看所有快捷命令可以按H。
 ```
 
+[译]27个Jupyter Notebook小提示与技巧 https://cloud.tencent.com/developer/article/1194156
+
 机器学习新手必看：Jupyter Notebook入门指南 https://blog.csdn.net/guleileo/article/details/80490921
 
+#### 未实践过的Jupyter Notebook教程
 
+如何在Jupyter Notebook中使用Python虚拟环境？ - 王树义的文章 - 知乎 https://zhuanlan.zhihu.com/p/29564719
+
+Jupyter notebook远程访问服务器 https://blog.csdn.net/a819825294/article/details/55657496
 
 ## IDE pycharm
 
