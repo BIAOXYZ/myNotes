@@ -191,14 +191,6 @@ Spring读书笔记-----Spring的Bean之Bean的基本概念 https://blog.csdn.net
 
 ## Java问题
 
-Eclipse调试的时候提示Source not found。
-- 启动debug时Source not found for Class<T>.getDeclaredMethods0(boolean) line: https://blog.csdn.net/leidijava/article/details/8625472
-- https://stackoverflow.com/questions/19547535/source-not-found-when-debugging-all-projects
-```
-我的和第一个帖子里的情况一样，就是多打了个断点，然后这个断点涉及的类或者方法没有源码，eclipse就报这个错。把断点去掉就好了。
-第二个帖子那种把相应源码下载下来的方法估计肯定也可以，但是费时间，项目没那么多时间仔细搞这些。
-```
-
 为什么一个java文件只能有一个public类?
 - 为什么java源文件中只允许一个public类存在 https://blog.csdn.net/y_love_f/article/details/10553929
 - https://stackoverflow.com/questions/1318712/why-is-each-public-class-in-a-separate-file
@@ -289,10 +281,4 @@ Spring Boot快速开始指南 https://jimmysong.io/posts/spring-boot-quick-start
 - RESTful API 利器 Swagger https://juejin.im/entry/580457030bd1d0005812a700
 - 使用Swagger生成JAVA Mock Server（Springboot）代码 https://blog.csdn.net/a78270528/article/details/78530702
 - Swagger简介 https://blog.csdn.net/wangnan9279/article/details/44541665
-
-## `##` [Maven](https://github.com/apache/maven)
-
-***第一个排版更好也更全些，但是第二个还是有些内容第一个里没有***
-- Maven常用命令：https://www.cnblogs.com/wkrbky/p/6352188.html
-- mvn常用命令 http://www.cnblogs.com/holly/archive/2013/06/15/3137041.html
 

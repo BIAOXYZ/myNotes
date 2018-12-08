@@ -52,17 +52,6 @@ go-internals https://github.com/go-internals-cn/go-internals
 
 Golang语言社区--腾讯课堂、网易云课堂课程PPT及代码 https://github.com/Golangltd/codeclass
 
-### 开发环境搭建
-
-VS code golang 开发环境搭建 - CSDN博客
-https://blog.csdn.net/hil2000/article/details/51714607
-> https://github.com/golang/tools
-
-在Visual Studio Code配置GoLang开发环境 - CSDN博客
-https://blog.csdn.net/chszs/article/details/50076641
-> "要注意，GoLang的安装要确保两个环境变量，一个是GOROOT环境变量；二是PATH环境变量要包含$GOROOT\bin值。"
-
-
  
 # Go语法细节
 
