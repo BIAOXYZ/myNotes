@@ -1,6 +1,14 @@
 
 Databases vs. encryption https://blog.2ndquadrant.com/databases-vs-encryption/
 
+## CryptDB
+
+CryptDB代码分析1-lua与加密库 - CSDN博客
+https://blog.csdn.net/shaoyiwenet/article/details/79377068
+
+Cryptdb学习笔记（0）——初识 - CSDN博客
+https://blog.csdn.net/liuyueyi1995/article/details/54892399
+
 ## DB Security of Oracle
 
 Oracle数据安全解决方案透明数据加密TDE
