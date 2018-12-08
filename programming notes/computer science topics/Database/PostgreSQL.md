@@ -220,7 +220,6 @@ http://www.postgres.cn/news/viewone/1/241
 
 
 
-
 ## PG BUGs
 
 https://stackoverflow.com/questions/25071360/row-number-0-is-out-of-range-0-1-returned-when-using-setsinglerowmode-libpq
@@ -366,8 +365,6 @@ http://blog.csdn.net/davidzwb/article/details/53172453
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-
-
 # PGXC
 
 <<PGXC两阶段提交与事务一致性（1）>>
@@ -380,99 +377,10 @@ http://postgres-xc.sourceforge.net/docs/1_1/index.html
 http://francs3.blog.163.com/blog/static/4057672720125453315201/
 
 
-
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-# Oracle
-
-<<oracle数据库，表空间和表之间是什么关系？>>
-http://bbs.csdn.net/topics/320169443
-
->在sqlserver2000(不好意思,本人只用过2000)服务运行后,里面可以有好几个数据库(包括temp,pubs什么的)
-我们可以自己建库和这些并列,一个库可以有好几个不同的数据文件,可以放在不同的驱动器里面,然后在库里面建表,根据我个人的理解,谁建的表关系不大,反正都在这个库里面
-
->而oracle就不同了,他一个服务就是一个库,库下面是表空间,一个表空间可以有几个不同的数据文件,这点有点象sqlserver的库,然后就是表了,oracle里的表,每个用户有个缺省的表空间,也就是说这个用户建的表会在这个表空间里面,a用户建的表ta,用a用户登录可以直接select * from ta这样访问,而其他用户(有权限的)要用select * from a.ta这样来访问
-
-
-<<oracle 体系结构 >>
-http://blog.csdn.net/wanghai__/article/details/4683983
-
-<<Oracle表空间（tablespaces）>>
-http://www.cnblogs.com/fnng/archive/2012/08/12/2634485.html
-
-Oracle数据安全解决方案透明数据加密TDE
-http://www.linuxidc.com/Linux/2011-12/48689.htm
-
-## Oracle日志相关
-
-RedoLog Checkpoint 和 SCN关系 https://blog.csdn.net/xujinyang/article/details/6829693
-
-
-## Oracle连接
-
-- <<ORA-12560:TNS:协议器错误>>
-https://jingyan.baidu.com/article/d71306350fa53b13fdf4753d.html
-- <<ORA-01031: insufficient privileges>>
-https://jingyan.baidu.com/article/8cdccae946893f315413cdf4.html
-```
-C:\Users\l00384038>sqlplus /nolog
-
-SQL> conn /as sysdba
-```
-
-## Oralce FLASHBACK(闪回)
-
-Oracle 闪回特性(FLASHBACK DATABASE) - CSDN博客
-https://blog.csdn.net/leshami/article/details/6100429
-
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
-# MySQL
-
-HBase vs. MongoDB vs. MySQL vs. Oracle vs. Redis，三大主流开源 NoSQL 数据库的 PK 两大主流传统 SQL 数据库 
-http://blog.csdn.net/defonds/article/details/48471087
-
-
-“王者对战”之 MySQL 8 vs PostgreSQL 10 - MySQL - cnBeta.COM https://www.cnbeta.com/articles/tech/737331.htm
-- Why Uber Engineering Switched from Postgres to MySQL https://eng.uber.com/mysql-migration/
-- MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
-- A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
-
-MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
-> 伯乐在线资源频道 http://hao.jobbole.com/
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
-
-# 中间件
-
-## MyCAT, DRDS等
-
-https://www.cnblogs.com/ivictor/p/5111495.html
-
-<<数据库相关中间件介绍>>
-http://www.cnblogs.com/grefr/p/6087942.html
-
-http://www.cnblogs.com/leejean/p/4914228.html
-
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
-
-# 一般性的
-
-### 查看数据库core_dump文件的位置
-vi /proc/sys/kernel/core_pattern
-
-<<详解coredump>>
-http://blog.csdn.net/tenfyguo/article/details/8159176
-
-## books
+## PG books
 
 Become a Postgres Expert with Free Training https://www.enterprisedb.com/free-postgres-training
 
@@ -493,48 +401,8 @@ PostgreSQL修炼之道 - 从小工到专家 http://www.gaofi.cn/book/detail/892
 
 PostgreSQL Server Programming http://pdf.th7.cn/down/files/1312/PostgreSQL%20Server%20Programming.pdf
 
-## 事务
 
-### 两阶段提交
-
-http://www.jobbole.com/members/hollischuang/
-- 关于分布式事务、两阶段提交协议、三阶提交协议 http://blog.jobbole.com/95632/
-- 分布式系统的一致性探讨 http://blog.jobbole.com/95618/
-
-http://www.hollischuang.com/
-- 分布式系统的CAP理论 http://www.hollischuang.com/archives/666
-- 分布式系统的BASE理论 http://www.hollischuang.com/archives/672
-- 深入分析事务的隔离级别 http://www.hollischuang.com/archives/943
-
-- 二阶段提交 https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
-- 事务隔离 https://zh.wikipedia.org/wiki/%E4%BA%8B%E5%8B%99%E9%9A%94%E9%9B%A2
-
-## 并发管理
-
-### 两阶段锁
-
-https://www.cnblogs.com/zszmhd/p/3365220.html
-
-
-https://www.2cto.com/database/201403/286730.html
-
-## 索引
-
-<<深入 聚集索引与非聚集索引(一)>>
-http://www.cnblogs.com/lwzz/archive/2012/08/05/2620824.html
-
-<<聚集索引和非聚集索引（整理）>>
-http://www.cnblogs.com/aspnethot/articles/1504082.html
-
-<<唯一性索引（Unique Index）与普通索引（Normal Index）差异（上）>>
-http://blog.itpub.net/17203031/viewspace-700089/
-
-## SQL
-
-SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
-
-
-###
+### PG待整理？
 
 <<对PostgreSQL中 pg_各表的RelationId的认识>> by 健哥的数据花园
 http://www.cnblogs.com/gaojian/p/3169560.html
@@ -551,93 +419,4 @@ http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-# [MongoDB](https://www.mongodb.com/)
-
-## MongoDB安装与配置
-
-Windows 下 MongoDB 的安装与环境配置 https://blog.csdn.net/klxh2009/article/details/78340422
-
-## MongoDB操作
-
-***下面这个几个标题一模一样，全都叫"MongoDB基本操作"。我都忍不住吐槽了。。。不然还以为我复制错了呢- -***
-- MongoDB基本操作 https://segmentfault.com/a/1190000012096666
-- MongoDB基本操作 https://www.jianshu.com/p/d5031110f936
-```
-mongo    #连接mongodb
-
->show dbs    #查看所有数据库
-local 0.078125GB
-test 0.203125GB
-
->use local    #切换到local
-switched to db local
-
-> show collections    #查看local的所有collection
-startup_log
-
->db.startup_log.find()    #产看startup_log
-{ "_id" : "jlan-pc-1466044795232", "hostname" : "jlan-pc", "startTime",...}
-
-> db.createCollection('startup_log2')    #创建collection
-{ "ok" : 1 }
-
->db.startup_log.remove()    #清空collection
-
-作者：Jlan
-链接：https://www.jianshu.com/p/d5031110f936
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
-```
-- MongoDB 基本操作 https://blog.csdn.net/jeanette_zlj/article/details/79564315
-- MongoDB数据库的基本操作命令以及和mysql进行比较 https://blog.csdn.net/rocky1996/article/details/75646399
-
-zhengcongyi -- MongoDB https://blog.csdn.net/congcong68/article/category/2938211
-- 学习MongoDB 二：MongoDB添加、删除、修改 https://blog.csdn.net/congcong68/article/details/46781777
-
-# firebird
-
-https://www.viva64.com/en/b/0542/
-
-# [LevelDB](http://leveldb.org/)
-
-- http://leveldb.org/
-- https://github.com/google/leveldb
-
-LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
-
-浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
-
-
-# [RocksDB](https://rocksdb.org/)
-
-- https://rocksdb.org/
-- https://github.com/facebook/rocksdb/
-
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
-# DATABASE SECURITY
-
-## AWS
-
-Thread: Explain the difference between HSM and HSA
-https://forums.aws.amazon.com/thread.jspa?threadID=232163
-
-## SQL Server and Azure
-
-<< SQL SERVER COLUMN LEVEL ENCRYPTION >>
-https://info.townsendsecurity.com/sql-server-column-level-encryption
->https://info.townsendsecurity.com/definitive-guide-to-encryption-key-management-fundamentals  
-
-- << Getting Started with Always Encrypted with SSMS >>
-https://channel9.msdn.com/Shows/Data-Exposed/Getting-Started-with-Always-Encrypted-with-SSMS
-- << Always Encrypted in SQL Server and Azure SQL Database >>
-https://channel9.msdn.com/Events/Community-Poland/Data-Community-106/Always-Encrypted
-- << Enabling Confidential Computing with Always Encrypted using Enclaves (Early Access Preview) >>
-https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-computing-with-always-encrypted-using-enclaves-early-access-preview/
-
-
-
 
