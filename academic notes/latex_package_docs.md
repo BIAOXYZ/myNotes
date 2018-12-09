@@ -10,6 +10,9 @@ Using the amsthm Package - CTEX http://www.ctex.org/documents/packages/math/amst
 
 Graphics with TikZ http://www.tug.org/pracjourn/2007-1/mertz/mertz.pdf
 
+## xecjk
+
+xecjk – Support for CJK documents in XELATEX https://ctan.org/pkg/xecjk
 
 # 不成熟的package
 
