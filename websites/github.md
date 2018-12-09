@@ -26,6 +26,8 @@ The Apache Software Foundation https://github.com/apache
 - projects in Python
   - explainshell: match command-line arguments to their help text https://github.com/idank/explainshell
     > 一个可以解析 Linux 命令的网站，它可以给出命令的解释和其参数的解释，例如：ps -aux|grep python，在线演示: https://www.explainshell.com/
+  - 以撸代码的形式学习Python https://github.com/xianhu/LearnPython
+    > 这一个以”撸代码“的形式学习 Python 的编程技巧的项目，针对 Python 的一些语法特性力求通过代码例子解释该知识点、同时还有一些实践项目，通过动手实践有助于知识的融会贯通。同时可以关注作者的知乎专栏学习更多的 Python 编程技巧  
 
 微软开源 MS-DOS 1.25 和 2.0 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/tech/773103.htm
 > The original sources of MS-DOS 1.25 and 2.0, for reference purposes https://github.com/Microsoft/MS-DOS
