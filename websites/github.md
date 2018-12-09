@@ -19,7 +19,7 @@ The Apache Software Foundation https://github.com/apache
 
 # Github项目
 
-:octocat: GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目:star: https://github.com/521xueweihan/HelloGitHub
+:octocat: GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目:star: https://github.com/521xueweihan/HelloGitHub || https://hellogithub.com/
 - projects in C
   - Writing a sqlite clone from scratch in C https://cstack.github.io/db_tutorial https://github.com/cstack/db_tutorial
 
