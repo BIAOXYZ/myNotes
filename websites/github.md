@@ -16,6 +16,7 @@ The Apache Software Foundation https://github.com/apache
 ## 非著名组织
 
 伯乐在线 https://github.com/jobbole 【组织下面有一些仓库，是关于各个语言学习资源的。类似awesome xxx的中文版】
+- C 资源大全中文版，包括了：构建系统、编译器、数据库、加密、初中高的教程/指南、书籍、库等。 https://github.com/jobbole/awesome-c-cn
 
 # Github项目
 
