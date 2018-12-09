@@ -23,6 +23,9 @@ The Apache Software Foundation https://github.com/apache
 :octocat: GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目:star: https://github.com/521xueweihan/HelloGitHub || https://hellogithub.com/
 - projects in C
   - Writing a sqlite clone from scratch in C https://cstack.github.io/db_tutorial https://github.com/cstack/db_tutorial
+- projects in Python
+  - explainshell: match command-line arguments to their help text https://github.com/idank/explainshell
+    > 一个可以解析 Linux 命令的网站，它可以给出命令的解释和其参数的解释，例如：ps -aux|grep python，在线演示: https://www.explainshell.com/
 
 微软开源 MS-DOS 1.25 和 2.0 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/tech/773103.htm
 > The original sources of MS-DOS 1.25 and 2.0, for reference purposes https://github.com/Microsoft/MS-DOS
