@@ -7,6 +7,9 @@
   - 常用宏包说明的中文本地化项目 https://github.com/latexstudio/LaTeXPackages-CN
   - 给大家普及本已普及了的LaTeX知识。 https://github.com/latexstudio/LaTeX-TeXWiki
   
+TeXample.net http://www.texample.net/tikz/
+- Example: A Venn diagram with PDF blending http://www.texample.net/tikz/examples/venn/
+  
 ## Latex个人博客
 
 yhl_leo https://blog.csdn.net/yhl_leo/article/category/5798949
