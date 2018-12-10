@@ -9,6 +9,13 @@ https://blog.csdn.net/shaoyiwenet/article/details/79377068
 Cryptdb学习笔记（0）——初识 - CSDN博客
 https://blog.csdn.net/liuyueyi1995/article/details/54892399
 
+## Database Firewall
+
+- KalepsoDB: 1st End-to-End Encrypted DBMS https://www.kalepso.com/
+- Imperva https://www.imperva.com/
+- HexaTier http://www.hexatier.com/
+- 安华云安全(其实就是安华金和) http://www.dbscloud.cn/
+
 ## DB Security of Oracle
 
 Oracle数据安全解决方案透明数据加密TDE
@@ -19,6 +26,8 @@ http://www.linuxidc.com/Linux/2011-12/48689.htm
 
 Thread: Explain the difference between HSM and HSA
 https://forums.aws.amazon.com/thread.jspa?threadID=232163
+
+破解云中数据管理难题 AWS推新服务亚马逊Macie http://www.techweb.com.cn/cloud/2017-08-16/2574110.shtml 
 
 ## DB Security of SQL Server and Azure 
 
