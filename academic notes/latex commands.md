@@ -1,14 +1,19 @@
 
+# Latex服务
+
+TeXample.net http://www.texample.net/tikz/
+- Example: A Venn diagram with PDF blending http://www.texample.net/tikz/examples/venn/
+
+LaTeX.Online https://latexonline.cc/
+> https://github.com/aslushnikov/latex-online
+
 # Latex攻略集合
 
 - TeX/LaTeX Resources http://texblog.org/tex-resources/
 - awesome-LaTeX https://github.com/egeerardyn/awesome-LaTeX
 - LaTeXStudio https://github.com/latexstudio
   - 常用宏包说明的中文本地化项目 https://github.com/latexstudio/LaTeXPackages-CN
-  - 给大家普及本已普及了的LaTeX知识。 https://github.com/latexstudio/LaTeX-TeXWiki
-  
-TeXample.net http://www.texample.net/tikz/
-- Example: A Venn diagram with PDF blending http://www.texample.net/tikz/examples/venn/
+  - 给大家普及本已普及了的LaTeX知识。 https://github.com/latexstudio/LaTeX-TeXWiki 
   
 ## Latex个人博客
 
@@ -26,7 +31,7 @@ http://troubleshooters.com/linux/lyx/ownlists.htm
 \setlength\leftmargin{1.27in}
 ```
 
-## Latex数学公式
+# Latex数学公式
 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
@@ -39,7 +44,7 @@ https://www.overleaf.com/learn/latex/Defining_your_own_commands
 
 # Latex宏包类
 
-## latex使用中文
+## latex使用中文的宏包或解决方案
 
 ***总结：1，2是旧方法，3，4是新方法。排版效果 3>4>2>1; 方便程度 1>2>4>3。
 (原因：3，4得换成XeLaTeX，经常会出你这儿环境可以到别人那不行了。而且应该是在哪看过，XeLaTeX对某些图片格式支持不太好。所以总体来说用后两者有一定风险。)***
