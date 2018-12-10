@@ -11,3 +11,8 @@
 
 我们是兼职在辟谣，别人是全职在传播伪科学 https://www.huxiu.com/article/261944.html
 > zhizhongli的个人博客 http://blog.sciencenet.cn/u/zhizhongli
+
+
+# 其他
+
+无码科技发布了一个希望你永远用不到的小工具 https://mp.weixin.qq.com/s/LKu4MFB_eNeDsnp6nwPtIw
