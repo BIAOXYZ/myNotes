@@ -204,3 +204,9 @@ If and only if https://en.wikipedia.org/wiki/If_and_only_if 【[当且仅当](ht
 > In that it is biconditional (a statement of material equivalence), the connective can be likened to the standard material conditional ("only if", equal to "if ... then") combined with its reverse ("if"); hence the name. The result is that the truth of either one of the connected statements requires the truth of the other (i.e. either both statements are true, or both are false). It is controversial whether the connective thus defined is properly rendered by the English "if and only if", with its pre-existing meaning.
 > 
 > 在数学、哲学、逻辑学以及其他一些技术性领域中被用来表示“在这个条件成立，并且仅在这个条件成立时”之意。当命题P, Q满足“当P则Q”且“仅当P则Q”时，称为“当且仅当P则Q”，其他等价的说法有“Q当且仅当P”；“P是Q的充分必要条件（充要条件）”；“P等价于Q”。
+
+### 主要是inverse和reverse
+
+What are the differences between “inverse”, “reverse”, and “converse”? https://english.stackexchange.com/questions/22621/what-are-the-differences-between-inverse-reverse-and-converse
+
+
