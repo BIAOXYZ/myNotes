@@ -48,6 +48,12 @@ https://www.overleaf.com/learn/latex/Defining_your_own_commands
 - https://www.overleaf.com/learn/latex/Environments
 - https://www.overleaf.com/learn/latex/Theorems_and_proofs
 
+## latex数学公式对齐
+
+https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath
+
+
+
 # Latex宏包类
 
 ## latex使用中文的宏包或解决方案
