@@ -260,6 +260,9 @@ https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 
 TensorFlow Tutorials with YouTube Videos https://github.com/Hvass-Labs/TensorFlow-Tutorials
 
+开源书：TensorFlow 内核剖析(中文) https://mp.weixin.qq.com/s/CBgqPDxRLe5asL0rLS4dqQ
+> https://github.com/horance-liu/tensorflow-internals
+
 ### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
