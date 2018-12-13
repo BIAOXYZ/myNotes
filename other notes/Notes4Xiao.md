@@ -34,6 +34,8 @@ Management Development Institute of Singapore (MDIS)
 - Cai Mingjie https://en.wikipedia.org/wiki/Cai_Mingjie
 - Update on Dr Cai Mingjie – Singapore’s most highly educated taxi driver https://alvinology.com/2009/08/20/update-on-dr-cai-mingjie-singapores-most-highly-educated-taxi-driver/
 
+Zhenkai Liang https://www.comp.nus.edu.sg/~liangzk/
+
 Jian Huang http://jianh.web.engr.illinois.edu/
 
 ### CSC
