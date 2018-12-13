@@ -29,6 +29,11 @@ Management Development Institute of Singapore (MDIS)
 - http://www.mdis.org.cn/
 - https://www.mdis.edu.sg/about-mdis/overview
 
+“40岁，月入8000新币，在新加坡失业了！我该怎么办？” https://mp.weixin.qq.com/s/hNy7ToMZRXlq119RUoQRzg
+- 新加坡华裔科学家转行开出租引关注 http://news.sciencenet.cn/htmlnews/2009/9/223257.shtm
+- Cai Mingjie https://en.wikipedia.org/wiki/Cai_Mingjie
+- Update on Dr Cai Mingjie – Singapore’s most highly educated taxi driver https://alvinology.com/2009/08/20/update-on-dr-cai-mingjie-singapores-most-highly-educated-taxi-driver/
+
 ### CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
