@@ -38,6 +38,10 @@ Zhenkai Liang https://www.comp.nus.edu.sg/~liangzk/
 
 Jian Huang http://jianh.web.engr.illinois.edu/
 
+### 游戏
+
+独·数之道 | 数独爱好者 http://www.sudokufans.org.cn/
+
 ### CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
