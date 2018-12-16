@@ -23,7 +23,7 @@ GitBook 上有哪些十分优秀的已经完成的书？ - 知乎 https://www.zh
 - 鸟哥的 Linux 私房菜：基础学习篇 第四版 · GitBook https://www.gitbook.com/book/wizardforcel/vbird-linux-basic-4e/details
 - 廖雪峰 JavaScript Python Git 教程 https://www.gitbook.com/book/wizardforcel/liaoxuefeng/details
 - 《编程之法：面试和算法心得》 https://www.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details
-  > https://github.com/julycoding/The-Art-Of-Programming-B
+  > https://github.com/julycoding/The-Art-Of-Programming-By-July
 
 GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回答 - 知乎 https://www.zhihu.com/question/27410763/answer/88742983
 - C 语言资源大全中文版 https://github.com/jobbole/awesome-c-cn
