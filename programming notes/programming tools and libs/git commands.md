@@ -335,7 +335,29 @@ drwxr-xr-x 1 LL 197121   0 Dec 16 03:26 MIT_18.06_Linear_Algebra/
 drwxr-xr-x 1 LL 197121   0 Dec 16 03:33 notesFromOtherPlaces/
 -rw-r--r-- 1 LL 197121  91 Dec 16 03:26 README.md
 ```
-3. 在该文件夹下执行`git submodule add https://github.com/apachecn/math.git`，然后
+3. 进入到`notesFromOtherPlaces`目录，并在该文件夹下执行`git submodule add https://github.com/apachecn/math.git`。然后项目根目录会多出来一个`.gitmodules`文件；`notesFromOtherPlaces`目录会把apachecn的那个项目包括进来。
+```
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:34 ./
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:26 ../
+drwxr-xr-x 1 LL 197121   0 Dec 16 15:43 .git/
+-rw-r--r-- 1 LL 197121 118 Dec 16 03:34 .gitmodules
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:26 MIT_18.06_Linear_Algebra/
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:33 notesFromOtherPlaces/
+-rw-r--r-- 1 LL 197121  91 Dec 16 03:26 README.md
+```
+4. 执行下git status会发现
+```
+LL@daxian-pc MINGW64 /e/githubrep/onlineCoursesAndSubmodules/notesFromOtherPlaces (master) 
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   ../.gitmodules
+        new file:   math
+```
 
 ### git fsck
 
