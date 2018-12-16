@@ -345,7 +345,7 @@ drwxr-xr-x 1 LL 197121   0 Dec 16 03:26 MIT_18.06_Linear_Algebra/
 drwxr-xr-x 1 LL 197121   0 Dec 16 03:33 notesFromOtherPlaces/
 -rw-r--r-- 1 LL 197121  91 Dec 16 03:26 README.md
 ```
-4. 执行下git status会发现
+4. 执行下git status会发现：仓库根目录下多了`.gitmodules`文件；你自己设定好的子模块位置下多了需要添加为子模块的某个仓库（这里是apachecn里MIT线性代数笔记仓库）。
 ```
 LL@daxian-pc MINGW64 /e/githubrep/onlineCoursesAndSubmodules/notesFromOtherPlaces (master) 
 $ git status
@@ -358,6 +358,8 @@ Changes to be committed:
         new file:   ../.gitmodules
         new file:   math
 ```
+5. 再commit一次，此时远程的仓库算是好了。
+6. （这步过去工作的时候用过，但和前面5个步骤不同的是，这步没在自己机器再试了(/ □ \)）别人或者自己的其他电脑从这个远程仓库clone到本地时需注意子模块的更新要单独更新。
 
 ### git fsck
 
@@ -413,7 +415,7 @@ https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
 http://zhuanlan.zhihu.com/p/33435204
 
 **--------------------------------------------------**
-`#` ***git stash 个人实战***
+`#` ***git stash 个人实战：开始***
 **--------------------------------------------------**
 
 ##### -----开始阶段
@@ -546,6 +548,10 @@ liuliang@SZX1000126633:script {dev}\> git stash save --include-untracked
 Saved working directory and index state WIP on dev: 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
 HEAD is now at 27e1b24 Merge MR-1590 from branch 'y00383491/GAUSS200_OLAP_TRUNK.git::master' into 'master'
 ```
+
+**--------------------------------------------------**
+`#` ***git stash 个人实战：结束***
+**--------------------------------------------------**
 
 ### git rebase
 <<Git Community Book 中文版 - rebase>>
