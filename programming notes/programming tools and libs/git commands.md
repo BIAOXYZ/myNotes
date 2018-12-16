@@ -321,6 +321,22 @@ http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 
 ## git非常用命令
 
+### git submodule
+
+7.11 Git 工具 - 子模块 https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
+> 感觉官方文档就已经够了，我是大概走了建主仓并在主仓里添加子模块的步骤。此外在过去的工作中用到过从远程仓库更新子模块等的步骤。所以基本就差不多了，没啥难的，顶多到时候再看一遍就知道了。
+1. 先在github建了个仓库`https://github.com/BIAOXYZ/onlineCoursesAndSubmodules`。
+2. 把该仓库clone到本地，并在仓库主目录建一个文件夹`notesFromOtherPlaces`。此时目录结构为：
+```
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:34 ./
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:26 ../
+drwxr-xr-x 1 LL 197121   0 Dec 16 15:43 .git/
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:26 MIT_18.06_Linear_Algebra/
+drwxr-xr-x 1 LL 197121   0 Dec 16 03:33 notesFromOtherPlaces/
+-rw-r--r-- 1 LL 197121  91 Dec 16 03:26 README.md
+```
+3. 在该文件夹下执行`git submodule add https://github.com/apachecn/math.git`，然后
+
 ### git fsck
 
 <<github总结(4)--关于git reset --hard这个命令的惨痛教训>>
