@@ -39,22 +39,22 @@ w3school和w3cschool两个网站有什么关系和区别？ - 知乎 https://www
   W3School 是 W3C 中国社区成员，为社区的建设提供教程、资料翻译等服务。
   W3School 将与其他社区成员一道，协助 W3C 中国总部推广和发展 WEB 技术标准，以尽展其全部潜能。
   ```
-  
+
+***个人简要总结：***
 ```
-个人简要总结：即使[1]也不是W3C官方的，但好歹相对最正规。[2]和[3]目前都商业化(此处商业化是指有广告)了，但[2]还有收费课程！
+即使[1]也不是W3C官方的，但好歹相对最正规。[2]和[3]目前都商业化(此处商业化是指有广告)了，但[2]还有收费课程！
 [3]好歹课程都免费。所以硬要选择的话就尽量[1]吧，[3]也凑合并且好歹是W3C中国支持的，[2]就算了。。。
 幸好中文世界里[3]也比[2]广泛点————看看[2]那aboutme页面写的。。。嘴上慷慨激昂，挣钱绝不耽误。
 
 此外，如果要学习web相关的知识，直接去 MDN Web Docs最好。链接在下面：
 ````
-
-- MDN Web 文档
-  * https://developer.mozilla.org/zh-CN/
-  * https://developer.mozilla.org/zh-CN/docs/Web
 - MDN Web Docs
   * https://developer.mozilla.org/en-US/
   * https://developer.mozilla.org/en-US/docs/Web
-
+- MDN Web 文档
+  * https://developer.mozilla.org/zh-CN/
+  * https://developer.mozilla.org/zh-CN/docs/Web
+    - https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics
 
 # XML
 
