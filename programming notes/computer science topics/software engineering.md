@@ -1,5 +1,11 @@
 
-# CI ()
+# issue or bug tracking/agile project management
+
+Jira (software) https://en.wikipedia.org/wiki/Jira_(software)
+
+Bugzilla https://en.wikipedia.org/wiki/Bugzilla
+
+# CICD (Continuous Integration Continuous Delivery)
 
 ## CI general
 
@@ -60,3 +66,12 @@ http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 - sanity 自验
 - Jenkins 持续集成
 - JIRA 问题单，记录任务
+
+### 关于看板/Kanban
+
+我一直以为"看板"这个词是根据某个英文"xxx board"**意译**过来的，结果竟然他妹的是**音译**过来的。。。
+- Kanban board https://en.wikipedia.org/wiki/Kanban_board
+  * Jira (software) https://en.wikipedia.org/wiki/Jira_(software)
+    - Bugzilla https://en.wikipedia.org/wiki/Bugzilla
+- Kanban https://en.wikipedia.org/wiki/Kanban_(development)
+  * Scrum (software development) https://en.wikipedia.org/wiki/Scrum_(software_development)
