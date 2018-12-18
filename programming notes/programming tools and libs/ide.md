@@ -53,6 +53,8 @@ http://www.cnblogs.com/libin-1/p/6638165.html
 Register as default atom:// URI handler?
 https://discuss.atom.io/t/register-as-default-atom-uri-handler/50982
 
+Facebook 宣布停止维护 Nuclide 和 Atom IDE - SNS 社交网络 - cnBeta.COM https://www.cnbeta.com/articles/tech/798313.htm
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
