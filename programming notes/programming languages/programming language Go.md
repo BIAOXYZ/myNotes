@@ -45,11 +45,18 @@ https://www.zhihu.com/question/21409296/answer/18184584
 
 深入解析Go https://legacy.gitbook.com/book/tiancaiamao/go-internals/details
 
-go-internals https://github.com/go-internals-cn/go-internals
+--------------------------------------------------
+
+- A book about the internals of the Go programming language. https://github.com/teh-cmc/go-internals
+- go-internals 本书是关于 Go 程序设计语言内部实现原理的阐释，当前正在进行中。 https://github.com/go-internals-cn/go-internals
 > https://go-internals-cn.gitbook.io/go-internals/
+
+--------------------------------------------------
 
 - Go语言圣经 https://github.com/golang-china/gopl-zh 【这个是golang-china的，感觉能更权威点？】
 - 《Go语言高级编程》开源图书，涵盖CGO、Go汇编语言、RPC实现、Protobuf插件实现、Web框架实现、分布式系统等高阶主题 https://github.com/chai2010/advanced-go-programming-book
+
+--------------------------------------------------
 
 Golang语言社区--腾讯课堂、网易云课堂课程PPT及代码 https://github.com/Golangltd/codeclass
 
