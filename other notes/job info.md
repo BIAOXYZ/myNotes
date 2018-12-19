@@ -205,27 +205,13 @@ http://www.highpin.cn/job/h3214142.html
 
 ### Tencent
 
-22989-金融云区块链高级研发工程师（深圳）
-http://hr.tencent.com/position_detail.php?id=33824
-
-18428-腾讯区块链高级研发工程师(深圳)
-http://hr.tencent.com/position_detail.php?id=30566
-
-SNG11-AI大数据研究员/高级工程师（深圳）
-http://hr.tencent.com/position_detail.php?id=33032
-
-MIG07-安全大数据分析工程师（深圳）
-http://hr.tencent.com/position_detail.php?id=32865
-
-MIG07-数据安全研究（深圳）
-http://hr.tencent.com/position_detail.php?id=33077
-
-MIG07-系统安全研究员（北京）
-http://hr.tencent.com/position_detail.php?id=32114
-
-MIG07-系统安全研究员（北京）
-http://hr.tencent.com/position_detail.php?id=25711
-
+- 22989-金融云区块链高级研发工程师（深圳） http://hr.tencent.com/position_detail.php?id=33824
+- 18428-腾讯区块链高级研发工程师(深圳) http://hr.tencent.com/position_detail.php?id=30566
+- SNG11-AI大数据研究员/高级工程师（深圳） http://hr.tencent.com/position_detail.php?id=33032
+- MIG07-安全大数据分析工程师（深圳） http://hr.tencent.com/position_detail.php?id=32865
+- MIG07-数据安全研究（深圳） http://hr.tencent.com/position_detail.php?id=33077
+- MIG07-系统安全研究员（北京） http://hr.tencent.com/position_detail.php?id=32114
+- MIG07-系统安全研究员（北京） http://hr.tencent.com/position_detail.php?id=25711
 
 ## challenger ()
 
@@ -251,6 +237,10 @@ https://www.liepin.com/job/1910643716.shtml
 网络安全工程师/经理（资深密码学）
 http://www.highpin.cn/job/h2337217.html
 
+## DiDi
+
+滴滴今年全员年终奖减半高管无奖：表现不如预期 http://news.sina.cn/2018-12-15/detail-ihmutuec9465980.d.html
+> "澎湃新闻记者获悉，在12月14日的滴滴出行全员大会上， 滴滴CEO程维表示，今年员工年终奖的力度比去年缩减一半，滴滴高管集体不拿年终奖。程维表示，公司表现不如预期，主要是因为在安全上投入比较大，以后还会持续投入。因为高管没有年终奖，滴滴总裁柳青在讲话时打趣说，“有些人刚升成VP，是不是特别想回去。”据悉，去年滴滴普通员工年终奖分为ABC三档，A级别是6个月工资，B级别是4个月工资，C级别是2个月工资。"
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
  
