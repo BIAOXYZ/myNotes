@@ -39,6 +39,9 @@ https://www.gnutls.org/
   
  https://wiki.openssl.org/
   - https://wiki.openssl.org/index.php/Compilation_and_Installation#Windows
+  - https://wiki.openssl.org/index.php/Contributions
+    > "With OpenSSL there is usually a preferred general high-level API (EVP) and then many lower level function calls that can be used to achieve similar outcomes."
+  - EVP https://wiki.openssl.org/index.php/EVP
 
 #### OpenSSL其他
 
