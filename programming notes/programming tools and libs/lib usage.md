@@ -152,6 +152,7 @@ The GmSSL Project - 支持国密SM2/SM3/SM4/SM9的密码工具箱 http://gmssl.o
 
 GmSSL的命令行接口和SDK接口使用方式是怎样的？ - 李安然的回答 - 知乎 https://www.zhihu.com/question/43567665/answer/101573864
 
+有人把国密算法集成到 OpenSSL 里的么？ - 自由无用的蔬菜的回答 - 知乎 https://www.zhihu.com/question/26236094/answer/377505665
 
 --------------------------------------------------
 
