@@ -62,3 +62,8 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 - https://rocksdb.org/
 - https://github.com/facebook/rocksdb/
 
+
+# not full-fledged DBs
+
+Fast, Distributed Graph DB https://dgraph.io https://github.com/dgraph-io/dgraph
+
