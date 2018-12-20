@@ -100,9 +100,20 @@ maven环境快速搭建 https://www.cnblogs.com/fnng/archive/2011/12/02/2272610.
   * 2、程序员月薪 7 万可落户北京
   * 4、[文章] Low Level Bit Hacks You Absolutely Must Know, by Peter Krumins
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+--------------------------------------------------
+## [编程随想的博客] (https://program-think.blogspot.com/)
+--------------------------------------------------
+
+- 扫盲 HTTPS 和 SSL/TLS 协议[4]：历史版本的演变及 Record 协议的细节 https://program-think.blogspot.com/2018/09/https-ssl-tls-4.html
+- 扫盲 HTTPS 和 SSL/TLS 协议[3]：密钥交换（密钥协商）算法及其原理 https://program-think.blogspot.com/2016/09/https-ssl-tls-3.html
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
+
 
 --------------------------------------------------
 --------------------------------------------------
