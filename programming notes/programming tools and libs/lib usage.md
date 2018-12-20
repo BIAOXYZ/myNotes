@@ -22,8 +22,10 @@ https://www.gnutls.org/
 > https://www.gnutls.org/manual/gnutls.pdf
 
 
-- TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p/26684020
-> https://www.feistyduck.com/library/openssl-cookbook/
+TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p/26684020
+- TLS和安全通信 https://github.com/k8sp/tls/blob/master/tls.md
+  > "现实中，很多操作系统（Windows、Mac OS X）和浏览器（Chrome、 Firefox、IE）会内置一些靠谱的 CA 的身份证。但是有没有 CA 冒天下之大不韪说谎呢？据传说有一个自称 CNNIC 的机构说过谎。"
+  * CNNIC 证书的危害及各种清除方法 https://program-think.blogspot.com/2010/02/remove-cnnic-cert.html
 
 
 ### OpenSSL [https://git.openssl.org/gitweb/?p=openssl.git;a=tree]
