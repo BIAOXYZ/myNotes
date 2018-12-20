@@ -35,10 +35,12 @@ https://www.gnutls.org/
 - https://www.openssl.org/community/
   - https://www.openssl.org/community/getting-started.html
 - https://www.openssl.org/docs/
-  * https://www.openssl.org/docs/faq.html
-  * OpenSSL Cookbook https://www.feistyduck.com/books/openssl-cookbook/
+  * Frequently Asked Questions https://www.openssl.org/docs/faq.html
   * Standards https://www.openssl.org/docs/standards.html
-    - RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2
+    - RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2 https://tools.ietf.org/html/rfc5246
+  * Manpages https://www.openssl.org/docs/manpages.html
+  * OpenSSL Cookbook https://www.feistyduck.com/books/openssl-cookbook/
+
   
  https://wiki.openssl.org/
   - https://wiki.openssl.org/index.php/Compilation_and_Installation#Windows
