@@ -1,13 +1,19 @@
 
 # markdown general
 
+<<markdown总结>> http://www.jianshu.com/p/cd044443a1a6
+
+<<Learning-Markdown (Markdown 入门参考)>> http://xianbai.me/learn-md/index.html
+
+***--------------------------------------------------分割线--------------------------------------------------***
+
 GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/article/details/23690801
 - EMOJI CHEAT SHEET https://www.webpagefx.com/tools/emoji-cheat-sheet/
 - https://github.com/guodongxiaren/README/blob/master/emoji.md
 
-<<markdown总结>> http://www.jianshu.com/p/cd044443a1a6
-
-<<Learning-Markdown (Markdown 入门参考)>> http://xianbai.me/learn-md/index.html
+如何实现Github markdown 目录/页内跳转？ - 知乎 https://www.zhihu.com/question/58630229
+- 如何实现Github markdown 目录/页内跳转？ - 鉴津Jackie的回答 - 知乎 https://www.zhihu.com/question/58630229/answer/191984051
+  * https://github.com/guodongxiaren/README
 
 # markdown小技巧
 
