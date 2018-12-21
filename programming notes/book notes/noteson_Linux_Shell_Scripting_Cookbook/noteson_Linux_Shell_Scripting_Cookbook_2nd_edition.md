@@ -36,3 +36,11 @@ A shell script is a text file that typically begins with a shebang, as follows:
 Shebang is a line on which #! is prefixed to the interpreter path. /bin/bash is the
 interpreter command path for Bash.
 ```
+
+#### page 9
+
+> "Execution of a script can be done in two ways. Either we can run the script as a command-line argument to bash or we can grant execution permission to the script so it becomes executable."
+
+> "When a shell is started, it initially executes a set of commands to define various settings such as prompt text, colors, and much more. This set of commands are read from a shell script at ~/.bashrc (or ~/.bash_profile for login shells) located in the home directory of the user. The Bash shell also maintains a history of commands run by the user. It is available in the ~/.bash_history file."
+
+> [Tips] "A login shell is the shell which you get just after logging in to a machine. However, if you open up a shell while logged in to a graphical environment (such as GNOME, KDE, and so on), then it is not a login shell."
