@@ -23,3 +23,16 @@ In this chapter, we will cover:
    Field separators and iterators
    Comparisons and tests
 ```
+
+## Introduction
+
+#### page 8
+
+> "$ represents regular users and # represents the administrative user root."
+
+```
+A shell script is a text file that typically begins with a shebang, as follows:
+    #!/bin/bash
+Shebang is a line on which #! is prefixed to the interpreter path. /bin/bash is the
+interpreter command path for Bash.
+```
