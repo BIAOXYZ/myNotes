@@ -238,10 +238,12 @@ WARNING:tornado.access:404 GET /custom.css (127.0.0.1) 0.50ms
 
 机器学习新手必看：Jupyter Notebook入门指南 https://blog.csdn.net/guleileo/article/details/80490921
 
-关于jupyter notebook的/./
-> notes: 总结下就是，每当你手动save当前的.ipynb文件的时候，系统就会在当前目录(比如currentdir)下新建一个`.ipynb_checkpoints`目录，里面存有一个类似备份的.ipynb文件，不过名字是原来名字加`-checkpoint`，如下所示：
+关于jupyter notebook手动保存时生成的`.ipynb_checkpoints\`目录（windows下为例）：
+> notes: 总结下就是，每当你手动save当前的.ipynb文件的时候（如果是自动保存的则不会生成该目录及目录中的文件），系统就会在当前目录（也就是原始文件或者说正在编辑的文件所在的目录）下新建（如果已经有这个备份了就在原来的备份之上进行，不再新建）一个名为`.ipynb_checkpoints`的目录，里面存有一个类似备份的.ipynb文件（**所以个人认为无需进行版本控制**），不过名字是原来名字加`-checkpoint`，如下所示：
 ```
-noteson_Advanced_Mathematics_6th_edition_1st_volume-checkpoint
+noteson_Advanced_Mathematics_6th_edition_1st_volume.ipynb             //原始文件or正在编辑的文件
+.ipynb_checkpoints\                                                   //每当手动保存就会有这个目录，及目录下的文件
+    noteson_Advanced_Mathematics_6th_edition_1st_volume-checkpoint.ipynb
 ```
 - What are Jupyter Notebook checkpoint files for? https://stackoverflow.com/questions/46421663/what-are-jupyter-notebook-checkpoint-files-for
 - Should ipynb checkpoints be stored in git? https://stackoverflow.com/questions/36306017/should-ipynb-checkpoints-be-stored-in-git
