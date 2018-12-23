@@ -238,6 +238,15 @@ WARNING:tornado.access:404 GET /custom.css (127.0.0.1) 0.50ms
 
 机器学习新手必看：Jupyter Notebook入门指南 https://blog.csdn.net/guleileo/article/details/80490921
 
+关于jupyter notebook的/./
+> notes: 总结下就是，每当你手动save当前的.ipynb文件的时候，系统就会在当前目录(比如currentdir)下新建一个`.ipynb_checkpoints`目录，里面存有一个类似备份的.ipynb文件，不过名字是原来名字加`-checkpoint`，如下所示：
+```
+noteson_Advanced_Mathematics_6th_edition_1st_volume-checkpoint
+```
+- What are Jupyter Notebook checkpoint files for? https://stackoverflow.com/questions/46421663/what-are-jupyter-notebook-checkpoint-files-for
+- Should ipynb checkpoints be stored in git? https://stackoverflow.com/questions/36306017/should-ipynb-checkpoints-be-stored-in-git
+  * > "Also, I use https://www.gitignore.io/ to create .gitignore files and according to them the checkpoints are temporary data." ———— 还有这种网站，专门搞.gitignore的。
+
 #### 未实践过的Jupyter Notebook教程
 
 如何在Jupyter Notebook中使用Python虚拟环境？ - 王树义的文章 - 知乎 https://zhuanlan.zhihu.com/p/29564719
