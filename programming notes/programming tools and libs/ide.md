@@ -184,7 +184,7 @@ Jupyter Notebook 快速入门 https://www.cnblogs.com/nxld/p/6566380.html
 > 注：第一个链接就是下面那俩链接(上)(下)综合起来了，直接看第一个就可以。之所以把那俩链接也记一下是因为一来多个备份，二来下面俩链接的作者还有不少机器学习相关的博文不错。
 
 Jupyter notebook改变默认的的工作目录 https://blog.csdn.net/liwei1205/article/details/78818568
-> 注：以我自己机器修改过程为例：
+> 注：以我自己单位的机器修改过程为例：
 ```
 找到配置文件的位置：
 (base) C:\Users\LiangLiu>jupyter notebook --generate-config
@@ -197,6 +197,8 @@ c.NotebookApp.notebook_dir = 'D:\\mytestcodes\\testpycodes'
 
 这样就把默认工作目录改到了 D:\mytestcodes\testpycodes
 ```
+**补充：1.后来在自己电脑上试了下，发现那句`jupyter notebook --generate-config`是必不可少的，如果不执行这句，相应目录下根本就没有`jupyter_notebook_config.py`这个配置文件————其实看语句也看出来了执行这句的目的就是为了生成一下这个配置文件。。。2.普通的windows命令行工具可能没有把`jupyter notebook`加进环境变量里，所以请用`Anaconda Prompt`执行上述命令~**
+
 
 Jupyter NoteBook功能介绍 https://www.cnblogs.com/lvpengbo/p/8662290.html
 ```
