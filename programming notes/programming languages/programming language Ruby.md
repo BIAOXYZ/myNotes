@@ -2,13 +2,19 @@
 
 # Jekyll
 
-https://jekyllrb.com/
+## Jekyll官网
 
+- Transform your plain text into static websites and blogs. https://jekyllrb.com/
+  * Step by Step Tutorial https://jekyllrb.com/docs/step-by-step/01-setup/
+- 将纯文本转换为静态博客网站 http://jekyllcn.com/ 【其实这个应该不是官网的，但是翻译的很好，基本照官网来，除了内容没有即使更新以外。总之这上面的教程也很不错】
+
+## Jekyll非官网教程
+
+搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门 http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html
 
 ## Jekyll实战
 
-
-Step by Step Tutorial https://jekyllrb.com/docs/step-by-step/01-setup/
+> 总结：整个实战过程其实就是按照Jekyll官网的[`Step by Step Tutorial`](https://jekyllrb.com/docs/step-by-step/01-setup/)来的，这个教程写得挺好的，基本一步一步来就可以（当然还是有几个小问题，会在下面一一记述解决方案）。不过，有的步骤（比如Step 9）内容比较多，就commit了不止一次，但是保证每次commit都是一个能用的blog。
 
 
 - 谁占了我的端口 for Windows http://www.cnblogs.com/lxconan/archive/2016/01/11/who-is-using-my-port.html
