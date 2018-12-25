@@ -4,6 +4,7 @@
 计算机电子书pdf整理 https://github.com/fuhmmin/it-ebooks-cn
 
 计算机书籍控 http://bestcbooks.com/
+- C++ Primer(中文版)(第5版) http://bestcbooks.com/B00ESUIL0O/
 
 一些经典且高质量的电子书分享 https://github.com/threerocks/studyFiles
 
