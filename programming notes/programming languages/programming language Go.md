@@ -138,9 +138,27 @@ go环境变量配置 (GOROOT和GOPATH) https://www.jianshu.com/p/4e699ff478a5
 
 PS: 此外在其他帖子看过GOROOT和GOPATH必须是绝对路径。
 ```
+开始编写Golang代码 http://www.cnblogs.com/sunshine-anycall/p/4948533.html
 
-- 开始编写Golang代码 http://www.cnblogs.com/sunshine-anycall/p/4948533.html
-- 【Go入门教程1】Go 安装，GOROOT，GOPATH，Go工作空间 https://www.cnblogs.com/52php/p/6030990.html
+【Go入门教程1】Go 安装，GOROOT，GOPATH，Go工作空间 https://www.cnblogs.com/52php/p/6030990.html
+```
+原文中有这么句话:
+"当有多个GOPATH时，默认会将 go get 的内容放在第一个目录下。"
+
+下面是实战：
+
+以单位windows笔记本为例，在VS Code里打开命令行测试执行下述语句并观察效果：
+    go get github.com/astaxie/beedb
+    
+1.当GOPATH为"GOPATH=C:\Users\LiangLiu\go;E:\go;"时执行上述语句，会在
+C:\Users\LiangLiu\go\src\github.com目录下下载这个包的代码。
+
+2.把GOPATH变为"GOPATH=E:\go;C:\Users\LiangLiu\go;"时执行上述语句，此时
+因为已经有这个包的代码了，所以不会再下载了。
+
+2.把C:\Users\LiangLiu\go\src\github.com目录下刚下载的代码删除，再次执行上述语句，
+此时因为当前所有GOPATH下都没有这个包的代码，会把代码下载到E:\go\src\github.com目录下。
+```
 
 2.2 Go 环境变量 - Go 入门指南 - 极客学院Wiki
 http://wiki.jikexueyuan.com/project/the-way-to-go/02.2.html
