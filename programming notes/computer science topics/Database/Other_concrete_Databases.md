@@ -31,11 +31,6 @@ startup_log
 { "ok" : 1 }
 
 >db.startup_log.remove()    #清空collection
-
-作者：Jlan
-链接：https://www.jianshu.com/p/d5031110f936
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
 ```
 - MongoDB 基本操作 https://blog.csdn.net/jeanette_zlj/article/details/79564315
 - MongoDB数据库的基本操作命令以及和mysql进行比较 https://blog.csdn.net/rocky1996/article/details/75646399
@@ -67,3 +62,5 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 
 Fast, Distributed Graph DB https://dgraph.io https://github.com/dgraph-io/dgraph
 
+SQLite compiled to JavaScript through Emscripten https://github.com/kripken/sql.js
+> Emscripten: An LLVM-to-JavaScript Compiler https://github.com/kripken/emscripten
