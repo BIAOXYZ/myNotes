@@ -9,6 +9,8 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 
 强力推荐！那些你不能错过的 GitHub 插件和工具 https://juejin.im/post/59ade28051882538fd72fa2c
 
+超好用的谷歌浏览器、Sublime Text、Phpstorm、油猴插件合集 https://juejin.im/entry/5ab9bf30f265da237506e930
+
 --------------------------------------------------
 ## From CB
 --------------------------------------------------
