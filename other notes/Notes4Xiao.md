@@ -54,6 +54,8 @@ Jian Huang http://jianh.web.engr.illinois.edu/
 
 “这个又有你小时的影子” https://www.iesdouyin.com/share/video/6630692598996536589/?region=CN&mid=6630692623805844228
 
+寻找三原南中校友！三原县南郊中学百年校庆通知 https://mp.weixin.qq.com/s/yhI8Rxcx5xH0ew5RfZx3cQ
+
 
 ***--------------------------------------------------tooth extraction--------------------------------------------------***
 
