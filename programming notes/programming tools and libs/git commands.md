@@ -707,6 +707,8 @@ http://www.jb51.net/article/55442.htm
 <<Git 常用命令整理>>
 http://justcoding.iteye.com/blog/1830388
 
+今年下半年，中日合拍的《Git游记》即将正式开机，我将...（上集） https://juejin.im/post/5c22056551882518fc5fe294 [`*`][:star:]
+
 
 ### git书籍和系列教程(易百教程git部分就不再重复贴了)
 
