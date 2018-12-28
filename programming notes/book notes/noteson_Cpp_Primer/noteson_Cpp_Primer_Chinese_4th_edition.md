@@ -1,6 +1,8 @@
 
 - 《C++ Primer》中文第四版。
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # 第一章快速入门
 
 ### 1.2.2. 一个使用IO 库的程序
@@ -68,7 +70,7 @@ std::cin >> value
 标准库的头文件用尖括号 < > 括起来，非标准库的头文件用双引号 " " 括起来。
 ```
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 第二章变量和基本类型
 
@@ -103,3 +105,42 @@ C++ 定义了一组表示整数、浮点数、单个字符和布尔值的算术�
 下：
 ```
 
+#### page 58
+```
+和其他整型不同，char 有三种不同的类型：plain char 、unsigned char 和
+signed char。虽然 char 有三种不同的类型，但只有两种表示方式。可以使用
+unsigned char 或 signed char 表示 char 类型。使用哪种 char 表示方式由
+编译器而定。
+```
+```
+C++ 标准并未定义 signed 类型如何用位来表示，而是由每个编译器自由决
+定如何表示 signed 类型。这些表示方式会影响 signed 类型的取值范围。8 位
+signed 类型的取值肯定至少是从 -127 到 127，但也有许多实现允许取值从
+-128 到 127。
+```
+```
+对象的类型决定对象的取值。这会引起一个疑问：当我们试着把一个超出其
+取值范围的值赋给一个指定类型的对象时，结果会怎样呢？答案取决于这种类型
+是 signed 还是 unsigned 的。
+
+对于 unsigned 类型来说，编译器必须调整越界值使其满足要求。编译器会
+将该值对 unsigned 类型的可能取值数目求模，然后取所得值。比如 8 位的
+unsigned char，其取值范围从 0 到 255（包括 255）。如果赋给超出这个范围
+的值，那么编译器将会取该值对 256 求模后的值。例如，如果试图将 336 存储
+到 8 位的 unsigned char 中，则实际赋值为 80，因为 80 是 336 对 256 求
+模后的值。
+
+对于 unsigned 类型来说，负数总是超出其取值范围。unsigned 类型的对
+象可能永远不会保存负数。有些语言中将负数赋给 unsigned 类型是非法的，但
+在 C++ 中这是合法的。
+
+C++ 中，把负值赋给 unsigned 对象是完全合法的，其结果是
+该负数对该类型的取值个数求模后的值。所以，如果把 -1 赋
+给8 位的 unsigned char，那么结果是 255，因为 255 是 -1 对
+256 求模后的值。
+
+当将超过取值范围的值赋给 signed 类型时，由编译器决定实际赋的值。在
+实际操作中，很多的编译器处理 signed 类型的方式和 unsigned 类型类似。也
+就是说，赋值时是取该值对该类型取值数目求模后的值。然而我们不能保证编译
+器都会这样处理 signed 类型。
+```
