@@ -58,6 +58,10 @@ https://www.zhihu.com/question/21409296/answer/18184584
 
 --------------------------------------------------
 
+《The Way to Go》中文译本，中文正式名《Go 入门指南》 https://github.com/Unknwon/the-way-to-go_ZH_CN
+
+--------------------------------------------------
+
 Golang语言社区--腾讯课堂、网易云课堂课程PPT及代码 https://github.com/Golangltd/codeclass
 
 # Go优秀博客
