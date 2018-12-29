@@ -1,7 +1,11 @@
 
 # 综合类
 
+## 企鹅医典 or 腾讯医典
+
 腾讯打造了一款企鹅医典：有病先看它 - Tencent Cloud 腾讯云 - cnBeta.COM https://www.cnbeta.com/articles/tech/765513.htm
+
+2018年，腾讯医典的这些好文，值得每个人收藏！ https://mp.weixin.qq.com/s/AcLN0l6rQuhxVTfew3qUDQ
 
 # 大病
 
