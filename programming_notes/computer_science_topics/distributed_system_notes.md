@@ -1,9 +1,12 @@
 
 
-
 # distributed system general
 
 Scalable, Available, Stable, Performant, and Intelligent System Design Patterns https://github.com/binhnguyennus/awesome-scalability
+
+Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # transaction system
 
@@ -12,9 +15,15 @@ https://zhuanlan.zhihu.com/p/22594180
 
 两阶段提交及JTA http://www.cnblogs.com/Leo_wl/p/5728027.html
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # Quorum
 
 Quorum (distributed computing) https://en.wikipedia.org/wiki/Quorum_(distributed_computing)
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 # Paxos
 
@@ -33,6 +42,9 @@ https://zhuanlan.zhihu.com/p/20872811
 # Paxos实现
 
 C++ Paxos library that has been used in Wechat production environment. https://github.com/Tencent/phxpaxos
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Raft
 

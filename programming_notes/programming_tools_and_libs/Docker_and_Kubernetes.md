@@ -77,11 +77,15 @@ https://blog.csdn.net/relax_hb/article/details/69668815
 
 ## docker微信帖子
 
-Docker新手指南
-http://mp.weixin.qq.com/s/Fycfuu2OhxblCBNUOH96jA
+### from 公众号Docker
 
-手把手教你写Docker
-https://mp.weixin.qq.com/s/26pQoikXyNC7aUFJbCkbjA
+Docker新手指南 http://mp.weixin.qq.com/s/Fycfuu2OhxblCBNUOH96jA
+
+手把手教你写Docker https://mp.weixin.qq.com/s/26pQoikXyNC7aUFJbCkbjA
+
+这可能是最为详细的Docker入门总结 https://mp.weixin.qq.com/s/3jp9lRORF8Aj6HOxsXRbsQ
+
+Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 
 ## docker知乎帖子
 
@@ -199,6 +203,9 @@ https://blog.csdn.net/zhangjun2915/article/details/40598151
 
 Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-basic1/
 > Docker入门与实战 https://www.fangzhipeng.com/docker/2018/09/12/docker-action/
+
+Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqjFDsQ
+
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
