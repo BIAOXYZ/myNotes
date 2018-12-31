@@ -33,6 +33,6 @@
 
 快压发布告用户书 称国产软件生存实乃不易 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/745899.htm
 
-权健旗下公众号发起微信投票请网友站队，结果…… https://hot.cnbeta.com/articles/funny/803141
+权健旗下公众号发起微信投票请网友站队，结果…… https://hot.cnbeta.com/articles/funny/803141 || 大型翻车现场！权健系公号问“你支持谁”？结果被打脸了 http://www.sohu.com/a/285555220_151792
 > “国人们醒一醒，不要跟着起哄好不好？就等着权健让惹事生非的人负出代价吧！支持权健，支持中医药，支持民族企业。国人都不团结，外国不来欺负才怪！权健威武，权健必胜我为权健正名！”
 
