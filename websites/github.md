@@ -50,3 +50,6 @@ https://github.com/retejs/rete
 > https://github.com/DCCouncil/dc-law-xml
 
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.ee https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+:video_game: Chinese DOS games in browser. https://github.com/rwv/chinese-dos-games
+> https://dos.zczc.cz/

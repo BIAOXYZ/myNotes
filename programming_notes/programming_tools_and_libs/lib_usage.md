@@ -277,6 +277,8 @@ TensorFlow Tutorials with YouTube Videos https://github.com/Hvass-Labs/TensorFlo
 开源书：TensorFlow 内核剖析(中文) https://mp.weixin.qq.com/s/CBgqPDxRLe5asL0rLS4dqQ
 > https://github.com/horance-liu/tensorflow-internals
 
+Library for training machine learning models with privacy for training data https://github.com/tensorflow/privacy
+
 ### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
