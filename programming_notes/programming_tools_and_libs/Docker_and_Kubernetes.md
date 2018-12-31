@@ -6,13 +6,18 @@ docker中文社区站  http://www.docker.org.cn/
 
 Docker Swarm https://docs.docker.com/engine/swarm/swarm-tutorial/
 
-kubernetes中文社区 https://www.kubernetes.org.cn/
-
-Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
-
 docker官方文档
 - https://docs.docker.com/
 - https://docs.docker-cn.com/
+
+***--------------------------------------------------分割线--------------------------------------------------***
+
+kubernetes中文社区 https://www.kubernetes.org.cn/
+- 名词解释 Pods https://www.kubernetes.org.cn/kubernetes-pod
+
+Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
+
+
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
@@ -205,6 +210,9 @@ Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-
 > Docker入门与实战 https://www.fangzhipeng.com/docker/2018/09/12/docker-action/
 
 Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqjFDsQ
+
+##
+
 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
