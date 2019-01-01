@@ -1,3 +1,15 @@
 
+# hosts
 
 镜像：https://coding.net/u/scaffrey/p/hosts/git https://github.com/googlehosts/hosts
+
+# extensions
+
+SetupVPN - Lifetime Free VPN https://chrome.google.com/webstore/detail/setupvpn-lifetime-free-vp/oofgbpoabipfcfjapgnbbjjaenockbdp
+> http://desktopclient.net/gw/index.html#/setupvpn
+
+uVPN - free and unlimited VPN for everyone https://chrome.google.com/webstore/detail/uvpn-free-and-unlimited-v/coahpcpgfnnaddeelpphpifmgfobflog
+> Secure your everyday Web routine with Unlimited VPN http://unlimitedvpn.net/
+
+Betternet Unlimited Free VPN Proxy https://chrome.google.com/webstore/detail/betternet-unlimited-free/gjknjjomckknofjidppipffbpoekiipm
+> http://betternet.co/
