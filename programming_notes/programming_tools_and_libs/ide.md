@@ -176,6 +176,8 @@ jupyter notebook 可以做哪些事情？ - 知乎 https://www.zhihu.com/questio
 - 数据分析为什么常用Jupyter而不是直接使用Python脚本或Excel? - Michael翔的回答 - 知乎 https://www.zhihu.com/question/37490497/answer/101293910
   * > "如果通过github + nbviewer.jupyter.org/ 还能将.ipynb文件可视化的分享给别人"
 
+你真的会用Jupyter吗？这里有7个进阶功能助你效率翻倍 https://mp.weixin.qq.com/s/N6DTOCGKU7cy3n9EmdLoCw
+
 #### 已实践过的Jupyter Notebook教程
 
 Jupyter Notebook 快速入门 https://www.cnblogs.com/nxld/p/6566380.html
