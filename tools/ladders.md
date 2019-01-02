@@ -13,3 +13,7 @@ uVPN - free and unlimited VPN for everyone https://chrome.google.com/webstore/de
 
 Betternet Unlimited Free VPN Proxy https://chrome.google.com/webstore/detail/betternet-unlimited-free/gjknjjomckknofjidppipffbpoekiipm
 > http://betternet.co/
+
+# others
+
+shadowsocks-windows https://github.com/shadowsocks/shadowsocks-windows/releases
