@@ -1,4 +1,11 @@
 
+# articles
+
+2019年翻墙方法大合集，包含安卓及IOS翻墙 https://www.hwboke.com/24689.html
+
+翻墙方法简介 https://wordpresshi.com/shawdowsocks-centos/
+
+
 # hosts
 
 镜像：https://coding.net/u/scaffrey/p/hosts/git https://github.com/googlehosts/hosts
@@ -17,3 +24,5 @@ Betternet Unlimited Free VPN Proxy https://chrome.google.com/webstore/detail/bet
 # others
 
 shadowsocks-windows https://github.com/shadowsocks/shadowsocks-windows/releases
+
+firefly-proxy https://github.com/yinghuocho/firefly-proxy/releases
