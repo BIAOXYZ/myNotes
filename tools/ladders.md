@@ -23,6 +23,8 @@ Betternet Unlimited Free VPN Proxy https://chrome.google.com/webstore/detail/bet
 
 # others
 
+蓝灯最新版本下载 (https://github.com/getlantern/download) https://github.com/getlantern/lantern
+
 shadowsocks-windows https://github.com/shadowsocks/shadowsocks-windows/releases
 
 firefly-proxy https://github.com/yinghuocho/firefly-proxy/releases
