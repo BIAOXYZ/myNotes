@@ -76,6 +76,12 @@ Tony Bai 一个程序员的心路历程 https://tonybai.com/
   * > "根据上面一、二两节中得出的结论，我们尝试理解一下m：(4)m指代的是lib/math路径下唯一的那个包。"
   
 飞雪无情的博客 专注于Android、Java、Go语言(golang)、移动互联网、项目管理、软件架构 https://www.flysnow.org/
+- Go语言环境搭建详解 https://www.flysnow.org/2017/01/05/install-golang.html
+  * ```
+    如果我们要生成不同平台架构的可执行程序，只要改变这两个环境变量就可以了，比如要生成linux 64位的程序，命令如下：
+    GOOS=linux GOARCH=amd64 go build flysnow.org/hello
+    前面两个赋值，是更改环境变量，这样的好处是只针对本次运行有效，不会更改我们默认的配置。
+    ```
 - Go语言实战笔记（一）| Go包管理 http://www.flysnow.org/2017/03/04/go-in-action-go-package.html
 
 
