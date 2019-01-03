@@ -204,9 +204,17 @@ A lightweight, secure, easy-to-use crypto library suitable for constrained envir
 
 # C++ Libs
 
+### Crypto++
+
 <<Crypto++编译使用>>
 https://www.cnblogs.com/findumars/p/6009249.html
 
+### Botan
+
+Botan (programming library) https://en.wikipedia.org/wiki/Botan_(programming_library)
+
+Crypto and TLS for Modern C++ https://github.com/randombit/botan
+> Botan: Crypto and TLS for Modern C++ https://botan.randombit.net/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
