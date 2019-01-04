@@ -49,13 +49,14 @@ interpreter command path for Bash.
 
 #### page 10-11 
 
-总结：书中原文内容主要在11页上，大致是叙述了echo命令打印时无引号，单引号，双引号情况下的局限性，说实话，我在两个系统里（`Windows 10 上的 WSL Ubuntu 18.04.1 LTS \n \l` ; `VitualBox 5.2.20 r125813 上的 CentOS 7.5.2`）实战了下之后发现不论哪个系统**echo+双引号字符串**的打印方式都和原文的叙述并不完全相符（其他两种是符合的），先列出原文如下：
+总结：书中原文内容主要在11页上，大致是叙述了echo命令打印时`加无引号字符串`，`加单引号字符串`，`加双引号字符串`情况下的局限性。说实话，我在两个系统里（`Windows 10 上的 WSL Ubuntu 18.04.1 LTS \n \l` 以及 `VitualBox 5.2.20 r125813 上的 CentOS 7.5.2`）实战了下之后发现不论哪个系统`echo+双引号字符串`的打印方式都和原文的叙述并不完全相符（其他两种是符合的），先列出原文然后是实战：
 
-> "Hence, if you want to print special characters such as !, either do not use them within double
+> 原文："Hence, if you want to print special characters such as !, either do not use them within double
 quotes or escape them with a special escape character (\) prefixed with it"
 >> 这段的意思是说想打印诸如叹号之类的特殊字符的话，或者别用双引号，或者在双引号里加斜杠转义该字符。
 
 ```
+原文：
 The side effects of each of the methods are as follows:
     ● When using echo without quotes, we cannot use a semicolon, as it acts as a
     delimiter between commands in the Bash shell
@@ -64,10 +65,12 @@ The side effects of each of the methods are as follows:
     ● Variable substitution, which is discussed in the next recipe, will not work within
     single quotes
 ```
->> 这段的意思是说**echo+不带引号字符串**的打印方式**无法处理中间有分号的情形**。**echo+单引号字符串**的打印方式无法做变量替换。
+>> 这段的意思是说`echo+不带引号字符串`的打印方式**无法处理中间有分号的情形**。`echo+单引号字符串`的打印方式无法做变量替换。
 
-`(1)`**echo+不带引号字符串**的打印方式**无法处理中间有分号的情形**：
+
+`(1)echo+不带引号字符串`的打印方式**无法处理中间有分号的情形**：
 ```shell
+两个系统的实战结果均和书上的叙述是一致的。
 
 1.WSL Ubuntu 18.04.1
 
@@ -86,8 +89,9 @@ hello
 -bash: hello: 未找到命令
 ```
 
-`(2)`**echo+单引号字符串**的打印方式**无法做变量替换**。
+`(2)echo+单引号字符串`的打印方式**无法做变量替换**。
 ```shell
+两个系统的实战结果均和书上的叙述是一致的。
 
 1.WSL Ubuntu 18.04.1
 
@@ -110,7 +114,8 @@ test2@localhost:~\> echo "$PWD"
 
 `(3)`**echo+双引号字符串**的打印方式**对特殊符号（如叹号）必须转义**。
 ```shell
-关于echo命令的无引号，单引号，双引号的实战情况：
+全部都用书上的例子，首先实验不加转义的情况下打印叹号。书上认为最后两个例子都不可能打印成功，
+但是实际上Ubuntu全部打印成功；CentOS一个成功一个失败。。。
 
 1.WSL Ubuntu 18.04.1
 
@@ -133,4 +138,9 @@ test2@localhost:~\> echo "hello world!"
 -bash: !": event not found
 test2@localhost:~\> echo "cannot include exclamation - ! within double quotes"
 cannot include exclamation - ! within double quotes
+
+再实验一下有转义字符的情况。
+
+1.WSL Ubuntu 18.04.1
+2. VitualBox CentOS 7.5.2
 ```
