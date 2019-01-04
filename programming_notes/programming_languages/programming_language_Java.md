@@ -33,6 +33,8 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 📖 [译] UCB CS61b Java 中的数据结构 https://github.com/apachecn/cs61b-textbook-zh
 
+Effective Java（第3版）各章节的中英文对照（进行中） https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual
+
 ## Java优秀blog
 
 菜鸟-翡青 https://blog.csdn.net/zjf280441589
