@@ -44,3 +44,46 @@ interpreter command path for Bash.
 > "When a shell is started, it initially executes a set of commands to define various settings such as prompt text, colors, and much more. This set of commands are read from a shell script at ~/.bashrc (or ~/.bash_profile for login shells) located in the home directory of the user. The Bash shell also maintains a history of commands run by the user. It is available in the ~/.bash_history file."
 
 > [Tips] "A login shell is the shell which you get just after logging in to a machine. However, if you open up a shell while logged in to a graphical environment (such as GNOME, KDE, and so on), then it is not a login shell."
+
+## Printing in the terminal
+
+#### page 10-11 
+```shell
+关于echo命令的无引号，单引号，双引号的实战情况：
+
+1.WSL Ubuntu
+
+wsl@DESKTOP-5LVLGG9:~$ echo hello world!
+hello world!
+wsl@DESKTOP-5LVLGG9:~$ echo 'hello world!'
+hello world!
+wsl@DESKTOP-5LVLGG9:~$ echo "hello world!"
+hello world!
+wsl@DESKTOP-5LVLGG9:~$ echo "cannot include exclamation - ! within double quotes"
+cannot include exclamation - ! within double quotes
+
+
+wsl@DESKTOP-5LVLGG9:~$ echo hello; hello
+hello
+
+Command 'hello' not found, but can be installed with:
+
+sudo apt install hello
+sudo apt install hello-traditional
+
+2. VitualBox CentOS 7.5.2
+
+test2@localhost:~\> echo hello world!
+hello world!
+test2@localhost:~\> echo 'hello world!'
+hello world!
+test2@localhost:~\> echo "hello world!"
+-bash: !": event not found
+test2@localhost:~\> echo "cannot include exclamation - ! within double quotes"
+cannot include exclamation - ! within double quotes
+
+test2@localhost:~\> echo hello; hello
+hello
+-bash: hello: 未找到命令
+
+```
