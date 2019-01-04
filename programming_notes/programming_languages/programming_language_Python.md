@@ -63,6 +63,8 @@ wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译 h
 《Python 3 源码剖析》 https://github.com/flaggo/python3-source-code-analysis
 > https://flaggo.github.io/python3-source-code-analysis/
 
+关于Python的面试题 https://github.com/taizilongxu/interview_python
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
