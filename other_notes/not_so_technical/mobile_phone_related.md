@@ -6,7 +6,9 @@
 > "所以结论是，手机边充电边使用，消耗的电量来自充电器，除非你的充电器功率低或者数据线质量差，才会需要电池也提供电量。另外，虽然现在手机完全可以边使用边充电，但这个过程中产生的热量也会损伤电池，降低电池的寿命；同时也存在着爆炸等不确定的危险因素。"
 
 
-Verify your account https://support.google.com/accounts/answer/114129
+谷歌邮箱申请手机号问题
+- This phone number cannot be used for verification. https://medium.com/around25/this-phone-number-cannot-be-used-for-verification-c52d88bdd9eb
+- Verify your account https://support.google.com/accounts/answer/114129
 ```
 "This phone number cannot be used for verification"
 
@@ -14,3 +16,4 @@ If you see this error message, you'll have to use a different number. In an effo
 we limit the number of accounts each phone number can create.
 ```
 > 傻死了这政策！服了！
+
