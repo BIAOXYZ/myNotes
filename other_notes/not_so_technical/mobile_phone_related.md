@@ -4,3 +4,13 @@
 
 【科普】手机边充电边玩，消耗的电量来自电池还是充电器？ https://mp.weixin.qq.com/s/WufKF-cmP38it6qmvPnIXw
 > "所以结论是，手机边充电边使用，消耗的电量来自充电器，除非你的充电器功率低或者数据线质量差，才会需要电池也提供电量。另外，虽然现在手机完全可以边使用边充电，但这个过程中产生的热量也会损伤电池，降低电池的寿命；同时也存在着爆炸等不确定的危险因素。"
+
+
+Verify your account https://support.google.com/accounts/answer/114129
+```
+"This phone number cannot be used for verification"
+
+If you see this error message, you'll have to use a different number. In an effort to protect you from abuse, 
+we limit the number of accounts each phone number can create.
+```
+> 傻死了这政策！服了！
