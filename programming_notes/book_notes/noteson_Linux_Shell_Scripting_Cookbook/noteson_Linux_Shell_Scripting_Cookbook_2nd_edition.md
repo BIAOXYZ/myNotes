@@ -2,7 +2,7 @@
 - 《Linux Shell Scripting Cookbook》 2nd edition 2013
 - 《LINUX SHELL脚本攻略》2011年翻译，所以应该是第一版————确定是第一版，因为翻译版第一章开头部分只有14个任务，英文版第一章开头有16个。
 
-# 1 Shell Something Out
+# 1 Shell Something Out 小试牛刀 (即使意译，也不能这么过分。。。这是我选择用英文版记笔记的原因之一。)
 
 ```
 In this chapter, we will cover:
@@ -24,7 +24,7 @@ In this chapter, we will cover:
    Comparisons and tests
 ```
 
-## Introduction
+## Introduction 简介
 
 #### page 8
 
@@ -45,7 +45,7 @@ interpreter command path for Bash.
 
 > [Tips] "A login shell is the shell which you get just after logging in to a machine. However, if you open up a shell while logged in to a graphical environment (such as GNOME, KDE, and so on), then it is not a login shell."
 
-## Printing in the terminal
+## Printing in the terminal 终端打印
 
 #### page 10-11 
 
@@ -201,3 +201,4 @@ wsl@DESKTOP-5LVLGG9:~$ echo -e "\e[1;42m Green Background \e[0m"
  Green Background
 ```
 
+## Playing with variables and environment variables 玩转变量和环境变量
