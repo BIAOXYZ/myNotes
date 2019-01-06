@@ -154,19 +154,50 @@ Hello world \!
 
 总结(下)：浪费了不少时间（主要是记录，实验的时间其实用的不多），实际还有不少点没有覆盖到，比如：`其他特殊符号是什么情况？单引号双引号混合是什么情况？反引号是什么情况？`等等。网上也能查到不少，但是不在这里记了，因为一旦展开就没完没了了，所以这里只记录和书上直接相关的吧。最后的结论就是要用的时候根据系统和脚本多查查多试试吧。。。
 
-#### page 12
-
+#### page 12-13
 ```shell
 %-5s can be described as a string substitution with left alignment (- represents left
 alignment) with width equal to 5. If - was not specified, the string would have been aligned to
 the right. The width specifies the number of characters reserved for that variable.
 ```
-
 ```shell
 By default, echo has a newline appended at the end of its output text. This can be avoided
 by using the -n flag. echo can also accept escape sequences in double-quoted strings as an
 argument. When using escape sequences, use echo as echo -e "string containing
 escape sequences".
 ```
+```shell
+Colors are represented by color codes, some examples being, reset = 0, black = 30, red = 31,
+green = 32, yellow = 33, blue = 34, magenta = 35, cyan = 36, and white = 37.
 
+For a colored background, reset = 0, black = 40, red = 41, green = 42, yellow = 43, blue = 44,
+magenta = 45, cyan = 46, and white=47, are the color codes that are commonly used.
+```
+```shell
+echo命令和其flag在 WSL Ubuntu 18.04.1 上的实战：
+
+(1)echo -e 将 \t 转义序列转义为tab：
+wsl@DESKTOP-5LVLGG9:~$ echo -e "1\t2\t3"
+1       2       3
+wsl@DESKTOP-5LVLGG9:~$ echo "1\t2\t3"
+1\t2\t3
+
+(2)echo打印默认带换行符，用 -n 标志忽略结尾的换行符：
+wsl@DESKTOP-5LVLGG9:~$ echo 123
+123
+wsl@DESKTOP-5LVLGG9:~$ echo -n 123
+123wsl@DESKTOP-5LVLGG9:~$
+
+(3)echo的flag必须在字符串之前，不然会被当成字符串的一部分：
+wsl@DESKTOP-5LVLGG9:~$ echo "1\t2\t3" -n
+1\t2\t3 -n
+wsl@DESKTOP-5LVLGG9:~$ echo "1\t2\t3" -e
+1\t2\t3 -e
+
+(4)echo打印彩色字体和彩色背景——不过这边应该显示不出来吧：
+wsl@DESKTOP-5LVLGG9:~$ echo -e "\e[1;31m This is red text \e[0m"
+ This is red text
+wsl@DESKTOP-5LVLGG9:~$ echo -e "\e[1;42m Green Background \e[0m"
+ Green Background
+```
 
