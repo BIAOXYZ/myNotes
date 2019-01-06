@@ -74,7 +74,6 @@ https://www.linkedin.com/company/onchain/
 >> 高端跨境工作站：http://www.topworker.cn
 >> Topworker跨境收付款专业博客: pay.topworker.cn
 
-
 ### Freelancer
 
 - https://www.freelancer.com/
@@ -91,6 +90,10 @@ https://www.upwork.com/
 ### Fiverr
 
 网络零工经济发展迅猛 平均工资却日渐下降 - 视点·观察 - cnBeta.COM https://www.cnbeta.com/articles/tech/766037.htm
+
+### remote work others
+
+收集整理远程工作相关的资料 https://github.com/greatghoul/remote-working
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
