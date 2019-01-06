@@ -154,4 +154,19 @@ Hello world \!
 
 总结(下)：浪费了不少时间（主要是记录，实验的时间其实用的不多），实际还有不少点没有覆盖到，比如：`其他特殊符号是什么情况？单引号双引号混合是什么情况？反引号是什么情况？`等等。网上也能查到不少，但是不在这里记了，因为一旦展开就没完没了了，所以这里只记录和书上直接相关的吧。最后的结论就是要用的时候根据系统和脚本多查查多试试吧。。。
 
-####
+#### page 12
+
+```shell
+%-5s can be described as a string substitution with left alignment (- represents left
+alignment) with width equal to 5. If - was not specified, the string would have been aligned to
+the right. The width specifies the number of characters reserved for that variable.
+```
+
+```shell
+By default, echo has a newline appended at the end of its output text. This can be avoided
+by using the -n flag. echo can also accept escape sequences in double-quoted strings as an
+argument. When using escape sequences, use echo as echo -e "string containing
+escape sequences".
+```
+
+
