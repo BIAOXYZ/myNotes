@@ -10,6 +10,8 @@
 
 最强大的本地电子书管理工具：Calibre 使用指南 https://sspai.com/post/43843
 
+安装夸克 3.0 后，我再也不想「百度一下」了 https://mp.weixin.qq.com/s/x4z2g9SZdcjwiPC_1y6sLA
+
 ## 休闲娱乐
 
 ### 视频
