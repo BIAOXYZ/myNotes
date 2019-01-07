@@ -203,6 +203,10 @@ wsl@DESKTOP-5LVLGG9:~$ echo -e "\e[1;42m Green Background \e[0m"
 
 ## Playing with variables and environment variables 玩转变量和环境变量
 
+#### page 13
+
+> "In Bash, the value for every variable is string, regardless of whether we assign variables with quotes or without quotes."
+
 #### page 13-14
 
 > "To view all the environment variables related to a terminal, issue the env command."
@@ -240,3 +244,13 @@ test2@localhost:~\> cat /proc/`pgrep vi`/environ | tr '\0' '\n'
 ...
 ...      //结果太多，不复制了。用tr过滤后一个键值对独占一行。
 ```
+
+#### page 14
+
+> "If value does not contain any space character (such as space), it need not be enclosed in quotes, Otherwise it is to be enclosed in single or double quotes."
+
+> "Note that var = value and var=value are different. It is a usual mistake to write var = value instead of var=value. The later one is the assignment operation, whereas the earlier one is an equality operation."
+>> 给shell变量赋值不能有空格，再记一次~
+
+
+
