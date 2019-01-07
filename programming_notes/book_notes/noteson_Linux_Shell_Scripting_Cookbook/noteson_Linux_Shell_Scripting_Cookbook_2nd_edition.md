@@ -274,7 +274,12 @@ wsl@DESKTOP-5LVLGG9:~$ echo $SHELL
 wsl@DESKTOP-5LVLGG9:~$ echo $0
 -bash
 
-所以也就是说 $SHELL 等于 $0，但是 WSL Ubuntu 18.04.1 下显示和书上的不太一样啊。
+test2@localhost:~\> echo $SHELL
+/bin/bash
+test2@localhost:~\> echo $0
+-bash
+
+所以也就是说 $SHELL 等于 $0，但是我这边两个系统下echo $0显示的都和书上的不太一样啊。
 ```
 
 #### page 17
@@ -290,12 +295,25 @@ fi
 
 > "We can customize the prompt text using the `PS1` environment variable. The default prompt text for the shell is set using a line in the `~/.bashrc` file."
 ```shell
+1.WSL Ubuntu 18.04.1
+
 wsl@DESKTOP-5LVLGG9:~$ cat ~/.bashrc | grep PS1
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    
+
+2. VitualBox CentOS 7.5.2
+
+test2@localhost:~\> cat ~/.bashrc | grep PS1
+PS1="\u@\h:\033[1;33m\]\W\[\033[1;32m\]\$(parse_git_branch_and_add_brackets)\[\033[0m\]\> "
+```
+>> 不知道为啥 WSL Ubuntu 18.04.1 里会有三个。。。然后修改命令提示符样式回头再研究，这里就不展开了。
 
 ```
->> 不知道为啥 WSL Ubuntu 18.04.1 里会有三个。。。
+"There are also certain special characters that expand to system parameters. For example,
+\u expands to username, \h expands to hostname, and \w expands to the current
+working directory."
+```
+
+## Function to prepend to environment variables (中文版无该部分，应该是英文第二版新加的所以中文版第一版没有)
 
