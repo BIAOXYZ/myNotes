@@ -33,6 +33,8 @@ Wiki for OI / ACM-ICPC. （某大型游戏线上攻略，内含炫酷算术魔�
 https://www.heroku.com/postgres
 
 - c9.io https://aws.amazon.com/cloud9/
+> c9.io是可以反向推送到github相应的仓库的，但是我懒得试了实在是，这个帖子里有方法，记录一下就好：
+>> Push to github from cloud9 https://gist.github.com/jboulhous/6007980
 - Koding https://koding.com/
 
 Codiad
