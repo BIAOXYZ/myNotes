@@ -202,3 +202,41 @@ wsl@DESKTOP-5LVLGG9:~$ echo -e "\e[1;42m Green Background \e[0m"
 ```
 
 ## Playing with variables and environment variables 玩转变量和环境变量
+
+#### page 13-14
+
+> "To view all the environment variables related to a terminal, issue the env command."
+>> 命令`env`可以查看所有的环境变量。
+
+> "For every process, environment variables in its runtime can be viewed by: cat /proc/$PID/environ"
+>> 命令`cat /proc/$PID/environ`可以查看进程相关的环境变量。
+
+```shell
+然后书上用gedit做了示范：
+
+$ pgrep gedit
+12501
+$ cat /proc/12501/environ
+GDM_KEYBOARD_LAYOUT=usGNOME_KEYRING_PID=1560USER=slynuxHOME=/home/slynux
+$ cat /proc/12501/environ | tr '\0' '\n'
+...
+...   //使用tr命令，把结果中的'\0'用'\n'代替，从而做到每一个var=value独占一行。
+
+
+我自己实战的话用vi试了下：
+test2@localhost:~\> pgrep vi
+1692
+test2@localhost:~\> cat /proc/1692/environ
+...
+...      //结果太多，不复制了。
+test2@localhost:~\> cat /proc/1692/environ | tr '\0' '\n'
+...
+...      //结果太多，不复制了。用tr过滤后一个键值对独占一行。
+
+notes:
+1.在讲这段的时候涉及了两个新命令，pgrep和tr。
+2.pgrep结合反引号有时能更省事，比如：
+test2@localhost:~\> cat /proc/`pgrep vi`/environ | tr '\0' '\n'
+...
+...      //结果太多，不复制了。用tr过滤后一个键值对独占一行。
+```
