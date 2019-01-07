@@ -257,3 +257,21 @@ test2@localhost:~\> cat /proc/`pgrep vi`/environ | tr '\0' '\n'
 > "Environment variables are variables that are not defined in the current process, but are received from the parent processes."
 
 > 『When given a command for execution, the shell automatically searches for the executable in the list of directories in the PATH environment variable (directory paths are delimited by the ":" character).』
+
+#### page 16
+
+> "Get the length of a variable value using the following command: `length=${#var}`"
+```
+wsl@DESKTOP-5LVLGG9:~$ var=12345678901234567890
+wsl@DESKTOP-5LVLGG9:~$ echo ${#var}
+20
+```
+
+> "To identify the shell which is currently being used, we can use the `SHELL` variable"
+```
+wsl@DESKTOP-5LVLGG9:~$ echo $SHELL
+/bin/bash
+wsl@DESKTOP-5LVLGG9:~$ echo $0
+-bash
+```
+
