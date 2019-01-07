@@ -261,17 +261,29 @@ test2@localhost:~\> cat /proc/`pgrep vi`/environ | tr '\0' '\n'
 #### page 16
 
 > "Get the length of a variable value using the following command: `length=${#var}`"
-```
+```shell
 wsl@DESKTOP-5LVLGG9:~$ var=12345678901234567890
 wsl@DESKTOP-5LVLGG9:~$ echo ${#var}
 20
 ```
 
 > "To identify the shell which is currently being used, we can use the `SHELL` variable"
-```
+```shell
 wsl@DESKTOP-5LVLGG9:~$ echo $SHELL
 /bin/bash
 wsl@DESKTOP-5LVLGG9:~$ echo $0
 -bash
+
+所以也就是说 $SHELL 等于 $0，但是 WSL Ubuntu 18.04.1 下显示和书上的不太一样啊。
 ```
 
+#### page 17
+
+> "The `UID` value for the root user is 0."
+```shell
+if [ $UID -ne 0 ]; then
+echo Non root user. Please run as root.
+else
+echo Root user
+fi
+```
