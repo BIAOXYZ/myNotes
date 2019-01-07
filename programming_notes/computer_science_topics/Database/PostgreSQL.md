@@ -418,5 +418,8 @@ http://momjian.us/main/blogs/pgblog.html
 http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
 
+PostgreSQL mailing lists Unsubscribe https://lists.postgresql.org/unsubscribe/
+> gmail退订pg的mailing list还略麻烦，不过参考这页就行。
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
