@@ -287,3 +287,15 @@ else
 echo Root user
 fi
 ```
+
+> "We can customize the prompt text using the `PS1` environment variable. The default prompt text for the shell is set using a line in the `~/.bashrc` file."
+```shell
+wsl@DESKTOP-5LVLGG9:~$ cat ~/.bashrc | grep PS1
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    
+
+```
+>> 不知道为啥 WSL Ubuntu 18.04.1 里会有三个。。。
+
