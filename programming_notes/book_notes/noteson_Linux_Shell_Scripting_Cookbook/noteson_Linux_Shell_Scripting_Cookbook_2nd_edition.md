@@ -252,5 +252,8 @@ test2@localhost:~\> cat /proc/`pgrep vi`/environ | tr '\0' '\n'
 > "Note that var = value and var=value are different. It is a usual mistake to write var = value instead of var=value. The later one is the assignment operation, whereas the earlier one is an equality operation."
 >> 给shell变量赋值不能有空格，再记一次~
 
+#### page 15
 
+> "Environment variables are variables that are not defined in the current process, but are received from the parent processes."
 
+> 『When given a command for execution, the shell automatically searches for the executable in the list of directories in the PATH environment variable (directory paths are delimited by the ":" character).』
