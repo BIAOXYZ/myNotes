@@ -2,7 +2,10 @@
 # Latex服务
 
 TeXample.net http://www.texample.net/tikz/
-- Example: A Venn diagram with PDF blending http://www.texample.net/tikz/examples/venn/
+- TikZ and PGF Resources http://www.texample.net/tikz/resources/
+  * TikZiT https://tikzit.github.io/ || https://github.com/tikzit/tikzit
+- TikZ and PGF examples http://www.texample.net/tikz/examples/
+  * Example: A Venn diagram with PDF blending http://www.texample.net/tikz/examples/venn/
 
 ## Latex Online Service
 
