@@ -25,6 +25,13 @@ Online Latex Editor (TeX Live 2016) https://www.tutorialspoint.com/online_latex_
 
 yhl_leo https://blog.csdn.net/yhl_leo/article/category/5798949
 
+LaTeX开源小屋 http://www.latexstudio.net/
+- LaTeX 排版的《具体代数》教科书 https://mp.weixin.qq.com/s/LZiF9LEB3fbTaEo6rIizaQ || http://www.latexstudio.net/archives/51564.html
+  * Ben McKay https://github.com/Ben-McKay {这哥们个人主页下有不少笔记，大概看了下感觉还可以}
+    + Benjamin McKay https://euclid.ucc.ie/Mckay/
+      - https://euclid.ucc.ie/Mckay/linear-algebra/LinearAlgebra.pdf
+      - https://euclid.ucc.ie/Mckay/algebra/algebra.pdf
+
 # Latex基本类
 
 ## list, itemize, enumerate, description
