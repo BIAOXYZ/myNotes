@@ -254,11 +254,9 @@ http://www.highpin.cn/job/h2337217.html
 
 # STATE-BACKED
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-
-# 工作相关八卦
-
-## 工作需注意点
+# 工作需注意点
 
 五险一金及税后工资计算器 http://salarycalculator.sinaapp.com/
 
@@ -271,17 +269,29 @@ http://www.highpin.cn/job/h2337217.html
 
 换城市工作，之前交的社保，公积金怎么办？ - 知乎 https://www.zhihu.com/question/20335745
 
+### 税
+
+新个税改革来了，我到底可以省多少？ https://www.zhihu.com/special/19569604
+
+个税专项扣除细则看的好头大？这篇干货解决你的所有疑问！ https://www.rong360.com/gl/2018/12/27/174907.html
+```
+4、我在老家有个人名下的首套住房，还有贷款没还完，现在租房在北京工作，可以同时享受住房贷款利息和住房租金专项扣除么？
+
+不可以哦，规定中明确要求房租抵扣和房贷抵扣不能同时享受。你这种情况选择房租进行抵扣更划算哦。实际上，只要纳税人在
+主要工作城市没有自有住房，并且有实际的租金支出，就可以享受住房租金专项扣除。
+```
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# 工作相关八卦
+
 ## 一般性八卦
 
-哪家 IT 公司不加班？ - 知乎
-https://www.zhihu.com/question/25708912
+哪家 IT 公司不加班？ - 知乎 https://www.zhihu.com/question/25708912
 
-国内哪家互联网公司不加班？ - 知乎
-https://www.zhihu.com/question/21815819
+国内哪家互联网公司不加班？ - 知乎 https://www.zhihu.com/question/21815819
 
-中国知名 IT 企业加班情况分别是怎样的？ - 知乎
-https://www.zhihu.com/question/67317889
-
+中国知名 IT 企业加班情况分别是怎样的？ - 知乎 https://www.zhihu.com/question/67317889
 
 ## 特定公司八卦
 
