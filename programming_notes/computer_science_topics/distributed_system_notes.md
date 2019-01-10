@@ -17,6 +17,22 @@ https://zhuanlan.zhihu.com/p/22594180
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# Chandy-Lamport algorithm
+
+Chandy-Lamport algorithm https://en.wikipedia.org/wiki/Chandy-Lamport_algorithm
+
+用谁都能看懂的方法解释分布式系统, 大概.. https://zhuanlan.zhihu.com/c_158208519
+- (十)简单解释: 分布式数据流的异步快照(Flink的核心) - 阿莱克西斯的文章 - 知乎 https://zhuanlan.zhihu.com/p/43536305
+- 简单解释: 分布式快照(Chandy-Lamport算法) - 阿莱克西斯的文章 - 知乎 https://zhuanlan.zhihu.com/p/44454670
+
+Distributed Snapshots http://courses.washington.edu/css434/students/DistributedSnapshots.pdf
+
+Chandy-Lamport Snapshotting https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P8-chandy-lamport.pdf
+
+chandy--lamport-snapshot-algorithm https://github.com/topics/chandy--lamport-snapshot-algorithm
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # Quorum
 
 Quorum (distributed computing) https://en.wikipedia.org/wiki/Quorum_(distributed_computing)
@@ -63,3 +79,5 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
 
 ETCD实现技术总结 https://www.jianshu.com/p/d63265949e52
+
+
