@@ -14,6 +14,8 @@
 
 # books general
 
+`BOOKSTORE1` https://github.com/BIAOXYZ/BOOKSTORE1
+
 雨痕的github上的几本编程书 https://github.com/qyuhen/book
 - C 学习笔记.pdf
 - Python 学习笔记 第二版.pdf
