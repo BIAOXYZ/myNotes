@@ -18,6 +18,8 @@ https://wiki.ubuntu.com.cn/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80
 Shell脚本调试技术
 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 
+《Linux命令行与shell脚本编程大全案例》 https://github.com/fengyuhetao/shell
+
 
 ### 简单型的
 
