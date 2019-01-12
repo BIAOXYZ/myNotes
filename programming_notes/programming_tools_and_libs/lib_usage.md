@@ -220,6 +220,13 @@ Botan (programming library) https://en.wikipedia.org/wiki/Botan_(programming_lib
 Crypto and TLS for Modern C++ https://github.com/randombit/botan
 > Botan: Crypto and TLS for Modern C++ https://botan.randombit.net/
 
+### libsnark
+
+C++ library for zkSNARKs https://github.com/scipr-lab/libsnark
+
+A system for verifying outsourced computations, and applying SNARKs. Simplified release of the main Pepper codebase. https://github.com/pepper-project/pequin
+> The Pepper Project - toward practical verifiable computation https://github.com/pepper-project
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
