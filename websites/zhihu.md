@@ -7,6 +7,13 @@ coursera 视频总是缓冲或者无法观看，有什么方法解决？ - 知�
 - coursera 视频总是缓冲或者无法观看，有什么方法解决？ - 我是谁的回答 - 知乎 https://www.zhihu.com/question/29433255/answer/289162035
 > DNS Chooser找到最快IP的上网加速工具 https://www.jianshu.com/p/ad63fe00858c
 
+大家都见过哪些让你虎躯一震的代码？ - 知乎 https://www.zhihu.com/question/287421003
+- 大家都见过哪些让你虎躯一震的代码？ - 胖君的回答 - 知乎 https://www.zhihu.com/question/287421003/answer/454958782
+
+你看过/写过哪些有意思的代码？ - 知乎 https://www.zhihu.com/question/275611095
+- 你看过/写过哪些有意思的代码？ - 景略集智的回答 - 知乎 https://www.zhihu.com/question/275611095/answer/482646185
+  * An uroboros program with 100+ programming languages https://github.com/mame/quine-relay
+
 #  (non-academic) users of zhihu
 
 知乎封神榜 http://www.zhihufans.com/  --> 好middle2的名字...
