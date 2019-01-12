@@ -5,6 +5,15 @@
 
 翻墙方法简介 https://wordpresshi.com/shawdowsocks-centos/
 
+# DNS
+
+谷歌公共DNS正式支持DoH加密 更安全并且不影响速度 - Google 谷歌 - cnBeta.COM https://www.cnbeta.com/articles/tech/807293.htm
+-  ```
+   附谷歌公共DNS地址：
+
+   IPv4：8.8.8.8 / 8.8.4.4 IPv6：2001:4860:4860::8888 / 2001:4860:4860::8844 斜杠前后分别为主要DNS和备用DNS，
+   用户使用时请在DNS配置的第一栏和第二栏里分别填写主要地址和备用地址。
+   ```
 
 # hosts
 
