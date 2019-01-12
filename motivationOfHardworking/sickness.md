@@ -4,6 +4,8 @@
 - 这届年轻人真敢穷！调查称90后人均负债超12万 https://mp.weixin.qq.com/s/62FkXp9E98pPjWUTi5QnXA
 - 那些光鲜负债的年轻人 https://mp.weixin.qq.com/s/ipg8jvYId3R7Kjlqz0UMIQ
 
+90后已经“穷”得叮个啷铛咚隆呛了 https://www.huxiu.com/article/261585.html
+
 ----------------------------------------------------------------------------------------------------
 
 揭秘现金贷老哥的撸口子人生：个个欠了十万八万，甚至有人欠了一百万，照样该吃吃该喝喝 https://mp.weixin.qq.com/s/Dh3-mQHqoGFvH2Fiyhs4Og
