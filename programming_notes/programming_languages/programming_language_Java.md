@@ -46,6 +46,9 @@ Effective Java（第3版）各章节的中英文对照（进行中） https://gi
 Java by 拭心 https://blog.csdn.net/u011240877/article/category/2704181
 - 深入理解 Java 反射：Field （成员变量） https://blog.csdn.net/u011240877/article/details/54604212
 
+Java学习指南 https://zhuanlan.zhihu.com/javaer
+- Java工程师学习指南（2019最新版） - 陆小凤的文章 - 知乎 https://zhuanlan.zhihu.com/p/54384657
+
 ## Java语法知识
 
 ### Java关键字
@@ -242,6 +245,8 @@ Spring Boot系列(一)：Spring Boot 入门篇 - 极乐君的文章 - 知乎 htt
 Spring Boot快速入门 https://www.jianshu.com/p/d24bceea7665
 Spring Boot工程结构推荐 https://www.jianshu.com/p/8476326ba7b6
 ```
+
+SpringBoot 究竟是如何跑起来的? - 老钱的文章 - 知乎 https://zhuanlan.zhihu.com/p/54146400
 
 #### CSDN Spring Boot
 
