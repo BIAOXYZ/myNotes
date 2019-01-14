@@ -30,22 +30,23 @@ Wiki for OI / ACM-ICPC. （某大型游戏线上攻略，内含炫酷算术魔�
 
 ## Online IDE/Platform
 
-https://www.heroku.com/postgres
-
 - c9.io https://aws.amazon.com/cloud9/
 > c9.io是可以反向推送到github相应的仓库的，但是我懒得试了实在是，这个帖子里有方法，记录一下就好：
 >> Push to github from cloud9 https://gist.github.com/jboulhous/6007980
 - Koding https://koding.com/
 
-Codiad
-http://codiad.com/
+在不到30s内得到一个干净的开箱即用的临时linux系统. https://github.com/super-inspire/super-inspire-end
+> Super Inspire http://60.190.81.133:8888/
 
-CODENVY
-https://codenvy.com/
+### 未用过或不常用Online IDE/Platform
 
-Eclipse Che
-https://www.eclipse.org/che/
+Codiad http://codiad.com/
 
+CODENVY https://codenvy.com/
+
+Eclipse Che https://www.eclipse.org/che/
+
+https://www.heroku.com/postgres
 
 Mozilla 释出在线 IDE：WebAssembly Studio 测试版 - Mozilla - cnBeta.COM
 https://www.cnbeta.com/articles/soft/717311.htm
