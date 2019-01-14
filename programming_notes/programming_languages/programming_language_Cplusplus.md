@@ -1,4 +1,8 @@
 
+# official
+
+Slides and other materials from CppCon 2018 https://github.com/CppCon/CppCon2018
+
 # 基本教程
 
 - C++教程 -- 易百教程
