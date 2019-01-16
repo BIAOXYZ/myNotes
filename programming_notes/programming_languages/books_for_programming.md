@@ -11,6 +11,7 @@
 "我的阅历" https://github.com/yuanliangding/books
 
 程序人生 阅读快乐 https://www.yuque.com/winforlife/vgzph9
+- 数据库系统实现(第二版).pdf https://www.yuque.com/winforlife/vgzph9/vn7z6g
 
 # books general
 
