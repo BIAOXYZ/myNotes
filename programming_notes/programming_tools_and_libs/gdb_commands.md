@@ -249,7 +249,6 @@ https://stackoverflow.com/questions/9573683/where-is-gdbinit-is-located-and-how-
 上面那个帖子和这个帖子都说了可以对不同程序使用不同的.gdbinit文件。但是我没有自己试过。
 ```
 
-
 ## 旧的GDB知识总结
 
 <<使用GDB命令行调试器调试C/C++程序>>
@@ -271,9 +270,6 @@ http://blog.csdn.net/yasi_xi/article/details/40075267
 
 << gdb signal >>
 http://blog.csdn.net/maotianwang/article/details/21451271
-
-
-
 
 ### GDB的set用法
 
@@ -352,8 +348,11 @@ http://www.heimizhou.com/windows-remote-debug-linux-c-plus-plus.html
 - 如何查看和停止Linux启动的服务 https://www.linuxidc.com/Linux/2016-05/131748.htm
 - Linux 查看服务状态（服务与进程）https://blog.csdn.net/tanga842428/article/details/79040089
 
-
 GDB 7.0 与 回溯调试 - CSDN博客 https://blog.csdn.net/haoel/article/details/4674547
+
+### Newly added
+
+使用gdb调试程序完全教程 https://blog.csdn.net/gatieme/article/details/51671430
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
