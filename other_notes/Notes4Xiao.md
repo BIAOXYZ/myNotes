@@ -38,6 +38,8 @@ Zhenkai Liang https://www.comp.nus.edu.sg/~liangzk/
 
 Jian Huang http://jianh.web.engr.illinois.edu/
 
+Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
+
 ### 游戏
 
 独·数之道 | 数独爱好者 http://www.sudokufans.org.cn/
