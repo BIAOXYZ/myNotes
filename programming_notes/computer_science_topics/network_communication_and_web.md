@@ -15,3 +15,14 @@ Tomcat那些事儿 https://zhuanlan.zhihu.com/tomcat
 ### QUIC and HTTP/3
 
 下一代HTTP底层协议将弃用TCP协议 改用QUIC技术 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/787877.htm
+
+# http
+
+一次完整的HTTP请求与响应涉及了哪些知识？ https://www.jianshu.com/p/c1d6a294d3c0
+
+TCP 连接断连问题剖析 https://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/index.html
+
+HTTP长连接和短连接 https://www.cnblogs.com/0201zcr/p/4694945.html
+
+HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.html
+
