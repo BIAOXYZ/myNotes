@@ -1,8 +1,8 @@
 
 
-# 零、 VirtualBox CentOS 7.5.2下PostgresSQL调试环境的搭建
+# 零、 VirtualBox CentOS 7.5.2下PostgreSQL调试环境的搭建
 
-# 一、 PostgresSQL的安装过程
+# 一、 PostgreSQL的安装过程
 
 ## 其他环境条件说明
 
@@ -60,19 +60,19 @@
 --------------------------------------------------
 
 - 至此调试是没问题了，但是为了方便，还是添加两个环境变量吧：
-```
-export PGHOME=/home/pguser/pg/pgsql
-export PGDATA=/home/pguser/pg/pgdata
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
-export PATH=$PATH:${PGHOME}/bin
-```
+  ```
+  export PGHOME=/home/pguser/pg/pgsql
+  export PGDATA=/home/pguser/pg/pgdata
+  export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
+  export PATH=$PATH:${PGHOME}/bin
+  ```
 
 - 此后可以直接执行下述命令，比上面的方便多了：
-```
-pg_ctl start -D $PGDATA
-pg_ctl stop -D $PGDATA
-psql -d postgres
-```
+  ```
+  pg_ctl start -D $PGDATA
+  pg_ctl stop -D $PGDATA
+  psql -d postgres
+  ```
 
 ***不过以后还是脚本安装吧，方便快速。。。***
 
