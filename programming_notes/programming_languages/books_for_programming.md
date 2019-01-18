@@ -80,7 +80,9 @@ https://www.zhihu.com/question/20730157/answer/82034823
 ## books for python
 
 有哪些 Python 经典书籍？ - 伟哥-Wayne的回答 - 知乎 https://www.zhihu.com/question/20668576/answer/203592170
-> 5.《Python核心编程》
+> 5.《Python核心编程》 
+>> 自己补充一个在线链接: 
+>>> Python 核心编程 第二版 https://legacy.gitbook.com/book/wizardforcel/core-python-2e/details
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
