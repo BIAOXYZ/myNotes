@@ -306,6 +306,7 @@ Simple examples to introduce PyTorch https://github.com/jcjohnson/pytorch-exampl
 
 pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用PyTorch进行深度学习开发和研究的朋友快速入门，其中包含的Pytorch教程全部通过测试保证可以成功运行 https://github.com/zergtant/pytorch-handbook
 
+A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc. https://github.com/pytorch/examples
 
 ### [Pandas](https://github.com/pandas-dev/pandas) (https://pandas.pydata.org/)
 
