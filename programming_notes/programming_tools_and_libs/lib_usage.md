@@ -308,6 +308,16 @@ pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用P
 
 A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc. https://github.com/pytorch/examples
 
+### numpy
+
+python: numpy--函数 shape用法 https://blog.csdn.net/xingchengmeng/article/details/62881859
+
+Python 中的range(),arange()函数 https://blog.csdn.net/qianwenhong/article/details/41414809
+
+python numpy-tile函数 https://www.jianshu.com/p/4b74a367833c
+
+numpy 辨异（四）—— np.repeat 与 np.tile https://blog.csdn.net/lanchunhui/article/details/56017472
+
 ### [Pandas](https://github.com/pandas-dev/pandas) (https://pandas.pydata.org/)
 
 Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code-notes
