@@ -326,6 +326,8 @@ Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code
 
 matplotlib中文文档 (http://www.matplotlib.org.cn/) https://github.com/teadocs/matplotlib-cn
 
+python matplotlib从文件中读取数据绘制散点图 https://blog.csdn.net/vinsuan1993/article/details/78511782
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
