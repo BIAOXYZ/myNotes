@@ -1,4 +1,8 @@
 
+# Redis
+
+深入学习 Redis（5）：集群 https://mp.weixin.qq.com/s/oDllfcVc5_ekIFP66kRP9w
+> 来源：编程迷思 www.cnblogs.com/kismetv/p/9853040.html
 
 # [MongoDB](https://www.mongodb.com/)
 
