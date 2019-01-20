@@ -9,8 +9,6 @@
 
 > Hyperledger Fabric 1.0 从零开始（四）——Fabric源码及镜像文件处理 https://www.cnblogs.com/aberic/p/7532114.html 【0-1】
 
-> Hyperledger Fabric 1.0 从零开始（四）——Fabric源码及镜像文件处理 https://www.cnblogs.com/aberic/p/7532114.html 【0-2】
-
 > 搭建和运行hyperledger fabric1.0alpha版本过程分析 - CSDN博客 https://blog.csdn.net/kojhliang/article/details/66971404
 
 > https://cn.aliyun.com/jiaocheng/125437.html
@@ -66,7 +64,7 @@ sudo python -m pip install --upgrade pip
 
 然后安装docker-compose用的是【3】里的语句，因为看起来这个语句相比【1】明显保证了版本大于1.8.0，比较靠谱：
 sudo pip install docker-compose>=1.8.0
-但是上面那个语句会报错
+但是上面那个语句会报错：
 "The directory '/home/ts/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. 
 Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
 The directory '/home/ts/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. 
@@ -95,7 +93,7 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.37/images/hyperledger/fabric-peer:x86_64-1.0.0/tag?repo=hyperledger%2Ffabric-peer&tag=latest: dial unix /var/run/docker.sock: connect: permission denied
 ==> FABRIC IMAGE: orderer"
 
-感觉上面那种拖镜像的办法不行。所以最终决定按【0-2】第2.2部分的方法执行。
+感觉上面那种拖镜像的办法不行。所以最终决定按【0-1】第2.2部分的方法执行。
 和原帖子不同的是，之所以加sudo在前面是因为没sudo不能正确执行。
 原因参见该帖（免sudo使用docker命令 https://blog.csdn.net/baidu_36342103/article/details/69357438 【6】）
 PS:没sudo的话查个docker version都报错的。。。
