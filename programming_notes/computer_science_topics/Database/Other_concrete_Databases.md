@@ -70,4 +70,8 @@ SQLite compiled to JavaScript through Emscripten https://github.com/kripken/sql.
 > Emscripten: An LLVM-to-JavaScript Compiler https://github.com/kripken/emscripten
 
 重磅！谷歌等推出基于机器学习的数据库SageDB https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
+- SageDB: a learned database system 
+  * https://blog.acolyer.org/2019/01/16/sagedb-a-learned-database-system/
+  * http://cidrdb.org/cidr2019/papers/p117-kraska-cidr19.pdf
+
 
