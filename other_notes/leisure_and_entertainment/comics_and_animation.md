@@ -19,3 +19,5 @@
 ## 萌战
 
 日本萌战历代萌王，谁才是你的女神？ https://chuansongme.com/n/2582489952017
+
+萌王 https://zh.moegirl.org/zh/%E8%90%8C%E7%8E%8B
