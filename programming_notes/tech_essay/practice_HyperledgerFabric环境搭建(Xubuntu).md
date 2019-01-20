@@ -268,3 +268,20 @@ Pulling peer0.org2.example.com (hyperledger/fabric-peer:latest)...
 ERROR: manifest for hyperledger/fabric-peer:latest not found
 ERROR !!!! Unable to pull the images 
 ```
+
+
+# 这是当时为了解决“Couldn't connect to Docker daemon”那个报错查询了下记下来的链接，也没有实践，权且一起记下来吧。可能有用。
+
+ERROR: Couldn't connect to Docker daemon at http+docker://localunixsocket - is it running? #4181
+https://github.com/docker/compose/issues/4181
+
+Couldn't connect to Docker daemon at http+unix://var/run/docker.sock - is it running? #1214
+https://github.com/docker/compose/issues/1214
+
+
+[test@dhcp-9-186-54-39 basic-network]$ docker-compose up -d
+ERROR: Couldn't connect to Docker daemon at http+docker://localunixsocket - is it running?
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+
+解决 ERROR: Couldn't connect to Docker daemon at http+docker://localunixsocket - is it running? https://blog.csdn.net/xiojing825/article/details/79494408
+
