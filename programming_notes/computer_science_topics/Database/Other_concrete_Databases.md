@@ -68,3 +68,6 @@ Fast, Distributed Graph DB https://dgraph.io https://github.com/dgraph-io/dgraph
 
 SQLite compiled to JavaScript through Emscripten https://github.com/kripken/sql.js
 > Emscripten: An LLVM-to-JavaScript Compiler https://github.com/kripken/emscripten
+
+重磅！谷歌等推出基于机器学习的数据库SageDB https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
+
