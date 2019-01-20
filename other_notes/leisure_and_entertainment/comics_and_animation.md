@@ -15,3 +15,7 @@
 ## 搞笑类
 
 鬼畜全明星 Wiki http://guichu.wikia.com/wiki/%E9%AC%BC%E7%95%9C%E5%85%A8%E6%98%8E%E6%98%9F_Wiki
+
+## 萌战
+
+日本萌战历代萌王，谁才是你的女神？ https://chuansongme.com/n/2582489952017
