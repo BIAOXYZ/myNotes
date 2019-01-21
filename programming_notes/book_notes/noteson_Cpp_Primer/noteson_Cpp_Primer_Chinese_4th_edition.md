@@ -1,9 +1,12 @@
 
-- 《C++ Primer》中文第四版。
+# `#` 《C++ Primer》中文第四版
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 第一章快速入门
+
+## ~~1.1. 编写简单的 C++ 程序~~
+## 1.2. 初窥输入/输出
 
 ### 1.2.2. 一个使用IO 库的程序
 
@@ -43,6 +46,9 @@ cout。我们将在第 3.1 节学习到程序中经常使用的避免这种冗�
 句。
 ```
 
+## ~~1.3. 关于注释~~
+## 1.4. 控制结构
+
 ### 1.4.4. 读入未知数目的输入
 
 #### page 38
@@ -63,12 +69,16 @@ std::cin >> value
 处于无效状态的 istream 对象将导致条件失败。
 ```
 
+## 1.5. 类的简介
+
 ### 1.5.1. Sales_item 类
 
 #### page 41
 ```c++
 标准库的头文件用尖括号 < > 括起来，非标准库的头文件用双引号 " " 括起来。
 ```
+
+## ~~1.6. C++ 程序~~
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -191,3 +201,62 @@ C++ 中，把负值赋给 unsigned 对象是完全合法的，其结果是
 L'a'
 ```
 
+#### page 64
+```c++
+两个相邻的仅由空格、制表符或换行符分开的字符串字面值（或宽字符串字
+面值），可连接成一个新字符串字面值。这使得多行书写长字符串字面值变得简
+单：
+```
+
+#### page 66
+```c++
+注意反斜线符号必须是该行的尾字符——不允许有注释或空格符。同样，后
+继行行首的任何空格和制表符都是字符串字面值的一部分。正因如此，长字符串
+字面值的后继行才不会有正常的缩进。
+```
+
+```c++
+建议：不要依赖未定义行为
+
+使用了未定义行为的程序都是错误的，即使程序能够运行，也只是巧合。
+未定义行为源于编译器不能检测到的程序错误或太麻烦以至无法检测的
+错误。
+```
+
+## 2.3. 变量
+
+#### page 69
+```c++
+关键概念：强静态类型
+
+C++ 是一门静态类型语言，在编译时会作类型检查。
+
+在大多数语言中，对象的类型限制了对象可以执行的操作。如果某种类
+型不支持某种操作，那么这种类型的对象也就不能执行该操作。
+
+在 C++ 中，操作是否合法是在编译时检查的。当编写表达式时，编译器
+检查表达式中的对象是否按该对象的类型定义的使用方式使用。如果不
+是的话，那么编译器会提示错误，而不产生可执行文件。
+
+随着程序和使用的类型变得越来越复杂，我们将看到静态类型检查能帮
+助我们更早地发现错误。静态类型检查使得编译器必须能识别程序中的
+每个实体的类型。因此，程序中使用变量前必须先定义变量的类型。
+```
+
+### 2.3.1. 什么是变量
+
+#### page 69
+```c++
+变量提供了程序可以操作的有名字的存储区。C++ 中的每一个变量都有特定
+的类型，该类型决定了变量的内存大小和布局、能够存储于该内存中的值的取值
+范围以及可应用在该变量上的操作集。
+```
+
+
+
+
+
+#### page xx
+```c++
+
+```
