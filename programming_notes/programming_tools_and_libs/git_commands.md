@@ -1,5 +1,5 @@
 
-### 背景
+# 0.背景
 
 |标号|含义|英文|
 |:---|---:|:---:|
@@ -16,7 +16,7 @@ https://bingohuang.gitbooks.io/progit2/content/01-introduction/sections/basics.h
 <<git: 提交前查看修改 git diff，HEAD^, HEAD~i>>
 http://blog.csdn.net/gw569453350game/article/details/46998395
 
-
+# 1.Git常用命令
 
 ### 比较版本差异 (git diff)
 
@@ -35,9 +35,13 @@ https://www.zhihu.com/question/53601264
 git diff <local branch> <remote>/<remote branch>
 ```
 
+----------------------------------------------------------------------------------------------------
+
 ### git merge
 
 https://www.jianshu.com/p/58a166f24c81
+
+----------------------------------------------------------------------------------------------------
 
 #### 更改提交信息
 ```
@@ -56,6 +60,7 @@ git commit --amend
 <<Git 的 commit message 写错了，有办法进行修改么？>>
 https://segmentfault.com/q/1010000000761908
 
+----------------------------------------------------------------------------------------------------
 
 #### 压缩多次（无意义）提交为一次
 
@@ -63,6 +68,8 @@ https://segmentfault.com/q/1010000000761908
 git merge --squash branch1
 ```
 >（无冲突情况下）执行后branch1上所有的提交都会变成在当前分支的暂存区的内容，然后提交一次就可以。
+
+----------------------------------------------------------------------------------------------------
 
 ## 撤销类
 
@@ -110,6 +117,7 @@ https://www.cnblogs.com/qianqiannian/p/6010238.html
 
 https://www.cnblogs.com/kidsitcn/p/4513297.html
 
+----------------------------------------------------------------------------------------------------
 
 ### 清理类撤销 git clean
 
@@ -140,6 +148,7 @@ git clean -d -f -f
 ```
 *这个里面提供了不少达到git clean目的的技巧，但是最稳妥还是git clean -df*
 
+----------------------------------------------------------------------------------------------------
 
 ### git log
 
@@ -158,7 +167,7 @@ git log -p
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-## git设置类and插件类等（非原生git包含有）
+# 2.Git设置类and插件类等（非原生git包含有）
 
 ### 配置git (git config)
 ```
@@ -175,12 +184,14 @@ git clone address
 git init
 ```
 
-#### 配置密钥等：
+### 配置密钥等：
 
 <<git/github初级运用自如>>
 https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
-#### 如何把本地已有代码上传到远端（以GitHub为例）
+----------------------------------------------------------------------------------------------------
+
+### 如何把本地已有代码上传到远端（以GitHub为例）
 
 Git--将已有的项目添加到github https://blog.csdn.net/north1989/article/details/53471439
 ```
@@ -206,7 +217,9 @@ $ git config --global user.name "Liang Liu"
 $ git config --global user.email "liulliu@cn.ibm.com"
 ```
 
-#### git的http使用方式
+----------------------------------------------------------------------------------------------------
+
+### git的http使用方式
 
 https://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-on-github
 ```
@@ -216,11 +229,14 @@ https://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typi
 2. git push   //看到有的攻略上说要push时候也要密码，但是我这边就直接git push就推上去了。
 ```
 
+----------------------------------------------------------------------------------------------------
+
 #### git diff会有些^M
 
 git diff ^M的消除
 https://www.cnblogs.com/chunguang/p/5541896.html
 
+----------------------------------------------------------------------------------------------------
 
 ### git config --list
 <<.5 起步 - 初次运行 Git 前的配置>>
@@ -248,6 +264,8 @@ $ git config user.name
 Scott Chacon
 ```
 
+----------------------------------------------------------------------------------------------------
+
 <<通过SSH 密钥连接GitHub/Bitbucket>>
 http://blog.csdn.net/lue2009/article/details/46551201
 ```
@@ -257,6 +275,7 @@ http://blog.csdn.net/lue2009/article/details/46551201
 ```
 *说是这么说，其实我发现如果用github的windows客户端，生成的公钥私钥名字叫github_rsa.pub，github_rsa。然后我贴了公钥到bitbucket发现咋都不行。后来才想到是名字不对！于是把github_rsa另存一份，重命名成id_rsa，然后就解决了。*
 
+----------------------------------------------------------------------------------------------------
 
 ### git彩色显示
 
@@ -265,6 +284,8 @@ https://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%A
 ```
 git config --global color.ui true
 ```
+
+----------------------------------------------------------------------------------------------------
 
 ### gitignore文件忽略
 
@@ -291,6 +312,8 @@ git config --global color.ui true
 <<Git忽略规则.gitignore梳理>>
 http://www.cnblogs.com/kevingrace/p/5690241.html
 
+----------------------------------------------------------------------------------------------------
+
 ### git自动补全和别名
 *注:还是第一个链接里那种从个人bashrc来的方式比较靠谱，第三个链接里git book提到的利用/etc/bash_completion.d/的方法有些机器不行。*
 
@@ -302,6 +325,7 @@ http://blog.csdn.net/kuaileboy1989/article/details/43022979
 <<.7 Git 基础 - 技巧和窍门>>
 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
 
+----------------------------------------------------------------------------------------------------
 
 ### gittjk
 <<gitjk：撤销刚在 Git 中的操作>>
@@ -310,7 +334,6 @@ http://hao.jobbole.com/gitjk/
 ### git flow
 http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 
-
 ### git lfs
 
 ### gitk
@@ -318,8 +341,7 @@ http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-
-## git非常用命令
+# 3.Git非常用命令
 
 ### git submodule
 
@@ -361,6 +383,10 @@ Changes to be committed:
 5. 再commit一次，此时远程的仓库算是好了。
 6. （这步过去工作的时候用过，但和前面5个步骤不同的是，这步没在自己机器再试了(/ □ \)）别人或者自己的其他电脑从这个远程仓库clone到本地时需注意子模块的更新要单独更新。
 
+### git subtree
+
+git subtree教程 https://segmentfault.com/a/1190000012002151
+
 ### git fsck
 
 <<github总结(4)--关于git reset --hard这个命令的惨痛教训>>
@@ -378,8 +404,7 @@ git fsck --lost-found
 易百教程 -- git tag命令 
 https://www.yiibai.com/git/git_tag.html
 
-廖雪峰git教程 -- 标签管理
-https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013762144381812a168659b3dd4610b4229d81de5056cc000
+廖雪峰git教程 -- 标签管理https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013762144381812a168659b3dd4610b4229d81de5056cc000
 ```
 git tag   查看当前所有tag
 git show tagname    查看名为tagname的tag的信息
@@ -391,8 +416,7 @@ git push origin :refs/tags/v0.9 将本地的v0.9标签删除操作推送到远�
                               （之前当然要先本地执行删除tag操作: git tag -d v0.9）
 ```
 
-Git查看、删除、重命名远程分支和tag  
-https://yq.aliyun.com/articles/382627
+Git查看、删除、重命名远程分支和tag https://yq.aliyun.com/articles/382627
 ```
 git push origin --delete tag v1.0  删除远程tag的另一种（更自然的）方式
 git fetch origin tag v1.0  从远程获取tag
@@ -410,9 +434,7 @@ https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%8
 https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
 
 
-
-你可能不知道的关于 Git stash 的技巧 - KenChoi的文章 - 知乎
-http://zhuanlan.zhihu.com/p/33435204
+你可能不知道的关于 Git stash 的技巧 - KenChoi的文章 - 知乎 http://zhuanlan.zhihu.com/p/33435204
 
 **--------------------------------------------------**
 `#` ***git stash 个人实战：开始***
@@ -630,13 +652,11 @@ git pull remoterepo master:branch2 -- 除了把最新代码拉到branch2上，�
 git pull remoterepo master:branch2 -- 只会把branch2更新到最新。
 ```
 
-
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-
 ----------------------------------------------------------------------------------------------------
-# 2.other part:
+# 4.other part:
 ----------------------------------------------------------------------------------------------------
 
 <<如何高效利用GitHub>> 
