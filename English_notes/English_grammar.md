@@ -98,13 +98,18 @@ https://hyperledger-fabric.readthedocs.io/en/release-1.3/peers/peers.html
 ## o
 ------------------------------------------------------------
 
-
 #### one-size-fits-all adj.通用的；一体适用的 [网络] 一刀切；均码；一成不变
 [https://arxiv.org/pdf/1801.10228.pdf]
-> Consensus is hard-coded within the platform, which contradicts the well-established understanding that there is no
-“one-size-fits-all” (BFT) consensus protocol [52];
+> Consensus is hard-coded within the platform, which contradicts the well-established understanding that there is no **“one-size-fits-all”** (BFT) consensus protocol [52];
 
 - Yet the United States has never been a leveler society; neither the well-to-do nor the poor have ever sought a one-size-fits-all status. 但是，美国从来不是一个平均主义社会；无论有钱人还是穷人都从不曾要求地位全然划一。
+
+#### on the verge of na.将近(几岁)；即将… [网络] 濒于；接近于；濒临于
+> "There are articles about how quantum computing is **on the verge of** cracking our encryption technology published on a regular basis, but these articles are a little **overhyped** - for the moment."
+https://www.forbes.com/sites/tiriasresearch/2019/01/17/ibm-lattice-cryptography-is-needed-now-to-defend-against-quantum-computing-future/
+
+- The matter is pressing in its own right, but also because most of the advanced economies are either already in or on the verge of recession. 问题本身就已十分紧迫，但另一个原因是大多数发达经济体不是已经进入衰退，就是处在衰退的边缘。
+- The shoot took place four months before Marilyn tragically died, and yet we see nothing of a woman on the verge of a breakdown. 这张照片拍摄于梦露死前四个月，从照片中我们看不出一点崩溃的迹象。
 
 ------------------------------------------------------------
 ## r
