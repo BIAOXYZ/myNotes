@@ -382,6 +382,14 @@ Changes to be committed:
 ```
 5. 再commit一次，此时远程的仓库算是好了。
 6. （这步过去工作的时候用过，但和前面5个步骤不同的是，这步没在自己机器再试了(/ □ \)）别人或者自己的其他电脑从这个远程仓库clone到本地时需注意子模块的更新要单独更新。
+7. 最后看一眼`.gitmodules`里的内容。
+```
+LL@daxian-pc MINGW64 /e/githubrep/onlineCoursesAndSubmodules (master)
+$ cat .gitmodules
+[submodule "notesFromOtherPlaces/math"]
+        path = notesFromOtherPlaces/math
+        url = https://github.com/apachecn/math.git
+```
 
 ### git subtree
 
