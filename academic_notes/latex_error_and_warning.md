@@ -18,3 +18,7 @@ You need:
 3.pdflatex -shell-escape or enabling write18 on windows
 ```
 
+### “job aborted, file error in nonstop mode” error in Texmaker
+
+How to resove “job aborted, file error in nonstop mode” error in Texmaker (64-bit)? https://tex.stackexchange.com/questions/160532/how-to-resove-job-aborted-file-error-in-nonstop-mode-error-in-texmaker-64-bi
+>> 把.tex文件里的空格全部改成下划线，编译通过。
