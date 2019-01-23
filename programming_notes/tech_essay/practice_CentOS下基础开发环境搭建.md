@@ -71,3 +71,14 @@ wget http://mirrors.hust.edu.cn/apache/maven/maven-3/3.5.4/binaries/apache-maven
 export MAVEN_HOME=/usr/local/maven3
 export PATH=${PATH}:${MAVEN_HOME}/bin
 ```
+
+# Go语言环境
+```
+wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+```
