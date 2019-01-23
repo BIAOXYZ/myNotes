@@ -1,5 +1,7 @@
 
-# 0.
+# 0.HyperledgerFabric之Idemix实战
+
+https://github.com/BIAOXYZ/MATERIALSTORE1/tree/master/2018/20181120_Hyperledger%20Idemix%E5%AE%9E%E6%88%98
 
 # 1. 安装docker，docker-compose，go语言环境
 
@@ -9,6 +11,8 @@
 
 - Docs » 快速入门 https://hyperledger-fabric.readthedocs.io/en/latest/dev-setup/build.html
 - Building Hyperledger Fabric https://hyperledgercn.github.io/hyperledgerDocs/getting_started/
+
+## 过程
 
 在 GOPATH/src/github.com/hyperledger/ 目录下执行：
 ```
@@ -44,3 +48,31 @@ unit-tests_1_de8bd23ee673 | ok          github.com/hyperledger/fabric/common/too
 
 - 1-HyperLedger实战-快速搭建一个Fabric1.0环境 - 苏小乐的文章 - 知乎 https://zhuanlan.zhihu.com/p/35063055
 
+## 过程
+
+进入`fabric/examples/e2e_cli`目录并执行:
+```
+./network_setup.sh up
+```
+
+我们首先进入CLI，我们重新打开一个命令行窗口，输入：
+```
+docker exec -it cli bash
+```
+
+运行以下命令可以查询a账户的余额：
+```
+peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
+```
+
+然后，我们试一试把a账户的余额再转20元给b账户，运行命令：
+```
+peer chaincode invoke -o orderer.example.com:7050 --tls true --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n mycc -c '{"Args":["invoke","a","b","20"]}'
+```
+
+再次查询a账户：
+```
+peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
+```
+
+# 4.
