@@ -99,6 +99,8 @@ http://zhuanlan.zhihu.com/p/32965070
 今天开始你的技术生涯：40 个在线学习编程的工具 - KenChoi的文章 - 知乎
 http://zhuanlan.zhihu.com/p/34280674
 
+日本TI求职网站上线编程游戏：陪二次元妹纸用编程拯救世界 https://hot.cnbeta.com/articles/funny/811479
+> 评论：https://paiza.jp/botchi 在这里
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
