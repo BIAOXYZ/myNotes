@@ -78,7 +78,7 @@ peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
 ****************************************************************************************************
 ****************************************************************************************************
 ****************************************************************************************************
-至此，Fabric区块链网络搭建成功，不过其实大部分步骤是通过运行e2e_cli脚本自动完成的。后面会手动完成这一步骤，并在该过程中带上idemix。
+**至此，Fabric区块链网络搭建成功，不过其实大部分步骤是通过运行e2e_cli脚本自动完成的。后面会手动完成这一步骤，并在该过程中带上idemix。**
 ****************************************************************************************************
 ****************************************************************************************************
 ****************************************************************************************************
@@ -90,6 +90,8 @@ peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
 - 注：另外，该过程还需参考代码对应目录下的一些（最新的）shell脚本，应该是攻略还是会慢慢过时的原因。
 
 ## 过程
+
+### 准备需要的密码相关文件和配置文件
 
 ```
 cd examples/e2e_cli/
@@ -118,6 +120,8 @@ cd examples/e2e_cli/
 ../../.build/bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org1MSPanchors.tx -channelID mychannel -asOrg Org1MSP
 ../../.build/bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org2MSPanchors.tx -channelID mychannel -asOrg Org2MSP
 ```
+
+### 手动启动运行各个容器
 
 ```
 修改docker-compose-cli.yaml并注释掉cli中command这一行
@@ -164,3 +168,131 @@ CLI默认连接的是peer0.org1，所以只要这一句就可以：
 peer channel join -b mychannel.block
 ```
 
+```
+其他三个peer加入，涉及环境变量修改：
+
+CORE_PEER_LOCALMSPID="Org1MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp 
+CORE_PEER_ADDRESS=peer1.org1.example.com:7051
+peer channel join -b mychannel.block
+
+
+CORE_PEER_LOCALMSPID="Org2MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp 
+CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+peer channel join -b mychannel.block
+
+
+CORE_PEER_LOCALMSPID="Org2MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp 
+CORE_PEER_ADDRESS=peer1.org2.example.com:7051
+peer channel join -b mychannel.block
+```
+
+```
+更新锚节点
+
+CORE_PEER_LOCALMSPID="Org1MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp 
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+peer channel update -o orderer.example.com:7050 -c mychannel -f ./channel-artifacts/Org1MSPanchors.tx --tls true --cafile $ORDERER_CA
+
+
+CORE_PEER_LOCALMSPID="Org2MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp 
+CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+peer channel update -o orderer.example.com:7050 -c mychannel -f ./channel-artifacts/Org2MSPanchors.tx --tls true --cafile $ORDERER_CA
+```
+
+```
+安装链码
+
+CORE_PEER_LOCALMSPID="Org1MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp 
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+
+//peer chaincode install -n mycc -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+Error: Must supply value for chaincode name, path and version parameters.
+
+//peer chaincode install -n mycc -v 1.0 -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+//peer chaincode install -n mycc -v 1.3 -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+peer chaincode install -n mycc -v 1.0 -p github.com/hyperledger/fabric/examples/chaincode/go/example02/cmd
+```
+
+```
+实例化链码
+
+peer chaincode instantiate -o orderer.example.com:7050 --tls true --cafile $ORDERER_CA -C mychannel -n mycc -v 1.0 -c '{"Args":["init","a","100","b","200"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
+```
+
+```
+进行一些操作：
+
+//100
+peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
+
+peer chaincode invoke -o orderer.example.com:7050  --tls true --cafile $ORDERER_CA -C mychannel -n mycc -c '{"Args":["invoke","a","b","10"]}'
+
+//90
+peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
+```
+
+```
+换个节点进行些操作：
+
+CORE_PEER_LOCALMSPID="Org2MSP" 
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt 
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp 
+CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+//peer chaincode install -n mycc -v 1.0 -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+peer chaincode install -n mycc -v 1.0 -p github.com/hyperledger/fabric/examples/chaincode/go/example02/cmd
+
+//90
+peer chaincode query -C mychannel -n mycc -c '{"Args":["query","a"]}'
+```
+
+关闭整个Fabric网络：
+```
+test2@localhost:e2e_cli {release-1.3}\> docker-compose -f docker-compose-cli.yaml down
+Stopping cli                    ... done
+Stopping orderer.example.com    ... done
+Stopping kafka1                 ... done
+Stopping kafka0                 ... done
+Stopping kafka2                 ... done
+Stopping kafka3                 ... done
+Stopping peer1.org2.example.com ... done
+Stopping peer0.org1.example.com ... done
+Stopping zookeeper2             ... done
+Stopping zookeeper1             ... done
+Stopping peer1.org1.example.com ... done
+Stopping peer0.org2.example.com ... done
+Stopping zookeeper0             ... done
+Removing cli                    ... done
+Removing orderer.example.com    ... done
+Removing kafka1                 ... done
+Removing kafka0                 ... done
+Removing kafka2                 ... done
+Removing kafka3                 ... done
+Removing peer1.org2.example.com ... done
+Removing peer0.org1.example.com ... done
+Removing zookeeper2             ... done
+Removing zookeeper1             ... done
+Removing peer1.org1.example.com ... done
+Removing peer0.org2.example.com ... done
+Removing zookeeper0             ... done
+Removing network e2e_default
+```
+
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
+**至此，手动搭建Fabirc网络的过程结束，可以参考最开头的整理过的另一个仓库的word文档和那两个带:star:的链接。具体问题还得具体解决。**
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
