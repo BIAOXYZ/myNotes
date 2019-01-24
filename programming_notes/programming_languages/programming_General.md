@@ -115,6 +115,7 @@ make makefile cmake qmake都是什么，有什么区别？ - 知乎 https://www.
   > https://www.gnu.org/software/automake/manual/html_node/Standard-Directory-Variables.html#Standard-Directory-Variables
 
 Difference between “make install” and “sudo make install” https://unix.stackexchange.com/questions/20953/difference-between-make-install-and-sudo-make-install
+> "So, if you are getting permission errors with make install, check and see whether you are trying to install into system directories, and install into /usr/local or similar instead. /usr/local is reserved for local installations. You may need to give yourself permission to write to /usr/local, but this is usually easily done. On Debian this can be done by adding yourself to the staff group. Better still, find or create a binary package, and install that instead. That way you can easily keep track of installed packages and obtain the other benefits of package management."
 
 why “make” before “make install” https://stackoverflow.com/questions/16637860/why-make-before-make-install
 
