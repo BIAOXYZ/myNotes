@@ -107,17 +107,16 @@ http://zhuanlan.zhihu.com/p/34280674
 
 ### makefile
 
-GNU make
-https://www.gnu.org/software/make/manual/html_node/index.html
+GNU make https://www.gnu.org/software/make/manual/html_node/index.html
 
-make makefile cmake qmake都是什么，有什么区别？ - 知乎
-https://www.zhihu.com/question/27455963
+make makefile cmake qmake都是什么，有什么区别？ - 知乎 https://www.zhihu.com/question/27455963
 
+【原来如此】为什么很多应用都安装在/usr/local目录下? - CSDN博客 https://blog.csdn.net/maray/article/details/9737549
+  > https://www.gnu.org/software/automake/manual/html_node/Standard-Directory-Variables.html#Standard-Directory-Variables
 
-【原来如此】为什么很多应用都安装在/usr/local目录下? - CSDN博客
-https://blog.csdn.net/maray/article/details/9737549
-> https://www.gnu.org/software/automake/manual/html_node/Standard-Directory-Variables.html#Standard-Directory-Variables
+Difference between “make install” and “sudo make install” https://unix.stackexchange.com/questions/20953/difference-between-make-install-and-sudo-make-install
 
+why “make” before “make install” https://stackoverflow.com/questions/16637860/why-make-before-make-install
 
 ### Troubleshooters.com
 
