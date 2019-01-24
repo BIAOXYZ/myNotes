@@ -19,6 +19,10 @@
 
 镜像：https://coding.net/u/scaffrey/p/hosts/git https://github.com/googlehosts/hosts
 
+# IPV6
+
+IT之家网友：快速获取教育网IPv6独享地址教程 https://www.ithome.com/0/406/684.htm
+
 # extensions
 
 SetupVPN - Lifetime Free VPN https://chrome.google.com/webstore/detail/setupvpn-lifetime-free-vp/oofgbpoabipfcfjapgnbbjjaenockbdp
