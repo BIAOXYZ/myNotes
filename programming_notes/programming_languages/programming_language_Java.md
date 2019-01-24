@@ -35,6 +35,8 @@ JavaGuide https://github.com/Snailclimb/JavaGuide
 
 Effective Java（第3版）各章节的中英文对照（进行中） https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual
 
+😮 互联网 Java 工程师进阶知识完全扫盲 https://github.com/doocs/advanced-java {其实java的东西就占了一部分，主要是数据库分布式之类的。。。}
+
 ## Java优秀blog
 
 菜鸟-翡青 https://blog.csdn.net/zjf280441589
