@@ -100,6 +100,8 @@ https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath
 
 Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！ http://www.cnblogs.com/tsingke/p/6649800.html
 
+TiKZ学习笔记更新版本 http://www.latexstudio.net/archives/11825.html
+
 ### Latex批注功能
 
 <<使用 TikZ 对 LaTeX 文档添加批注>>
