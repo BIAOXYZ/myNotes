@@ -118,6 +118,9 @@ Difference between “make install” and “sudo make install” https://unix.s
 
 why “make” before “make install” https://stackoverflow.com/questions/16637860/why-make-before-make-install
 
+What does 'make install' do? https://superuser.com/questions/360178/what-does-make-install-do
+> "When you do "make install", the make program takes the binaries from the previous step and copies them into some appropriate locations so that they can be accessed. Unlike on Windows, installation just requires copying some libraries and executables and there is no registry requirement as such. In short, "make install" just copies compiled files into appropriate locations."
+
 ### Troubleshooters.com
 
 ```Linux Library -> Linux Programming -> Bash/shellscript```
