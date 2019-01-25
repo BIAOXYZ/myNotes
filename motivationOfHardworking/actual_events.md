@@ -4,6 +4,11 @@
 网友花了14个小时制作长春长生销售分布图 - 人物 - cnBeta.COM https://www.cnbeta.com/articles/tech/749691.htm
 - https://github.com/fuckcqcs/fuckcqcs
 
+# From Acfun
+
+九旬老太生了17个儿女均夭折 从没吃过香蕉 http://news.sina.com.cn/s/2015-02-16/000331525059.shtml {A站收藏链接已死，所以换了新浪的}
+
+女子欲从南昌走回赣州 2个月后发现方向搞错 http://www.acfun.cn/a/ac1723506
 
 # From Zhihu
 
