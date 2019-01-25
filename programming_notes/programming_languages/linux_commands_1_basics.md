@@ -5,13 +5,14 @@
 
 ## 显示类
 
-## ps
+### ps
+```
 ps ufx
-
+```
 <<Linux文件内容查阅 - cat, tac, nl, more, less, head, tail, od>>
 http://www.linuxidc.com/Linux/2015-08/120978.htm
 
-## ls
+### ls
 
 ls实现列文件按时间排序 https://blog.csdn.net/gtuu0123/article/details/4420424
 ```
@@ -21,7 +22,7 @@ ls实现列文件按时间排序 https://blog.csdn.net/gtuu0123/article/details/
     ls -l | sort +7 (日期为第8列)   时间从前到后
     ls -l | sort -r +7      时间最近的在前面
 ```
-//注："+7"不是命令本身的内容，可能只是作者笔误。
+**//注："+7"不是命令本身的内容，可能只是作者笔误。**
 
 linux ls 按文件大小排序 https://blog.csdn.net/0210/article/details/41659647
 ```
@@ -34,23 +35,29 @@ ls -Slr
 
 ## 移动类
 
-## mv
-### 这个可以用来重命名
+### mv
+```
+这个可以用来重命名文件:
 mv source destination
 
-### 移动多个文件到一个目的地，此时需要把destination放到前面
+移动多个文件到一个目的地，此时需要把destination放到前面:
 mv -t destination source1 source2 ...
+```
 
-## cp
-### 复制多个文件到一个目的地
+### cp
+```
+复制多个文件到一个目的地:
 cp -r source destination
+```
 
-## mkdir
-### 递归创建目录
+### mkdir
+```
+递归创建目录:
 mkdir -p dir1/dir2/dir3/...
-
+```
 
 ## 查找类
+
 ### find
 ```
 find dir -name filename
@@ -63,12 +70,13 @@ grep -n -r -i "string" dir --color=auto
 ```
 ctrl + z, fg, ctrl + z, fg, ...
 ```
->其他参考：<<【Bash百宝箱】shell作业控制（jobs、bg、fg）>>http://blog.csdn.net/iEearth/article/details/52703576
+> 其他参考：<<【Bash百宝箱】shell作业控制（jobs、bg、fg）>>http://blog.csdn.net/iEearth/article/details/52703576
 
-
-## diff
-### diff参数-y 是以并列方式显示; -W 指定宽度
+### diff
+```
+diff参数-y 是以并列方式显示; -W 指定宽度：
 diff file1 file2 -y -W 200 > differencefile
+```
 
 ### tar
 linux下tar.gz、tar、bz2、zip等解压缩、压缩命令小结
@@ -96,6 +104,16 @@ https://www.linuxidc.com/Linux/2013-01/77875.htm
 ### fdisk
 linux磁盘分区fdisk命令详解
 https://my.oschina.net/acmfly/blog/116167
+
+### ln
+```
+ln file hardlink      //为文件file创建一个硬链接hardlink，file和hardlink都可以加上一些路径名之类的
+ln -s file softlink   //为文件file创建一个符号链接softlink，创建完成后一般这么显示：softlink -> file
+```
+
+linux 创建连接命令 ln -s 软链接 https://www.cnblogs.com/kex1n/p/5193826.html
+
+----------------------------------------------------------------------------------------------------
 
 ## 非一般性命令类(运维类)
 
