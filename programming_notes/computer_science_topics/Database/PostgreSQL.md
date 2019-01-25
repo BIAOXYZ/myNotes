@@ -254,6 +254,10 @@ https://blog.csdn.net/pg_hgdb/article/details/79490509
 - 为PostgreSQL添加插件
 https://my.oschina.net/Suregogo/blog/550201
 
+#### Citus
+
+微软收购Citus Data | 再次肯定对开源的承诺，并加速了Azure PostgreSQL的性能和扩展 https://mp.weixin.qq.com/s/gu4H2JNV4SIbTOGv3kDPPg
+
 #### pgcrypto扩展实战
 
 ```
