@@ -307,12 +307,14 @@ Linux 命令大全 -- 菜鸟教程 http://www.runoob.com/linux/linux-command-man
 <<每天一个linux命令>>系列
 http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB%A4/
 - 每天一个linux命令（13）：less 命令 http://www.cnblogs.com/peida/archive/2012/11/05/2754477.html
+- 每天一个linux命令（35）：ln 命令 http://www.cnblogs.com/peida/archive/2012/12/11/2812294.html
 - 每天一个linux命令（40）：wc命令 http://www.cnblogs.com/peida/archive/2012/12/18/2822758.html
-```
-实例3：用来统计当前目录下的文件数
-ls -l | wc -l 
-(个人注解：实际上"wc -l"部分是关键，比如也可以写成 ll | wc -l)
-```
+  ```
+  实例3：用来统计当前目录下的文件数
+  ls -l | wc -l 
+  
+  (个人注解：实际上"wc -l"部分是关键，比如也可以写成 ll | wc -l)
+  ```
 
 有哪些高效但是不常见的CLI命令？ - 知乎
 https://www.zhihu.com/question/25910725
