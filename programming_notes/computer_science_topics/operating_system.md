@@ -6,6 +6,11 @@ https://www.cnbeta.com/articles/soft/751203.htm
 
 最受欢迎的10个Linux发行版 https://www.linuxprobe.com/linux-welcome.html
 
+# OS Kernel
+
+Linux 内核揭密 https://github.com/MintCN/linux-insides-zh
+  > Linux Insides中文 https://xinqiu.gitbooks.io/linux-insides-cn/content/index.html
+
 # Windows系
 
 微软团队成员谈Windows Kernel的结构 - Windows - cnBeta.COM
