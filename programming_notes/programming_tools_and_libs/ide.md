@@ -336,6 +336,12 @@ https://www.zhihu.com/question/30123965
 <Anaconda介绍、安装及使用教程> https://zhuanlan.zhihu.com/p/32925500
 > 7. 在“Advanced Installation Options”中不要勾选“Add Anaconda to my PATH environment variable.”（“添加Anaconda至我的环境变量。”）。因为如果勾选，则将会影响其他程序的使用。如果使用Anaconda，则通过打开Anaconda Navigator或者在开始菜单中的“Anaconda Prompt”（类似macOS中的“终端”）中进行使用。
 
+***--------------------------------------------------分割线--------------------------------------------------***
+
+## Thonny
+
+2018新增开源软件最受欢迎Top 50 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/soft/812345.htm
+> 适合初学者的 Python IDE Thonny https://www.oschina.net/p/thonny
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
