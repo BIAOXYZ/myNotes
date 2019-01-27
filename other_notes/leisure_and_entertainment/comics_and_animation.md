@@ -16,6 +16,13 @@
 
 鬼畜全明星 Wiki http://guichu.wikia.com/wiki/%E9%AC%BC%E7%95%9C%E5%85%A8%E6%98%8E%E6%98%9F_Wiki
 
+## 空耳
+
+空耳 https://zh.moegirl.org/%E7%A9%BA%E8%80%B3
+- 暴刘继芬 https://zh.moegirl.org/%E7%88%86%E5%88%98%E7%BB%A7%E8%8A%AC
+- jb永动机 https://zh.moegirl.org/Jb%E6%B0%B8%E5%8A%A8%E6%9C%BA
+- 马云我赐你姨妈 https://zh.moegirl.org/IGNITE
+
 ## 萌战
 
 日本萌战历代萌王，谁才是你的女神？ https://chuansongme.com/n/2582489952017
