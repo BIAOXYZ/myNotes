@@ -105,7 +105,7 @@ http://zhuanlan.zhihu.com/p/34280674
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-### makefile
+### makefile and compilation
 
 GNU make https://www.gnu.org/software/make/manual/html_node/index.html
 
@@ -121,6 +121,15 @@ why “make” before “make install” https://stackoverflow.com/questions/166
 
 What does 'make install' do? https://superuser.com/questions/360178/what-does-make-install-do
 > "When you do "make install", the make program takes the binaries from the previous step and copies them into some appropriate locations so that they can be accessed. Unlike on Windows, installation just requires copying some libraries and executables and there is no registry requirement as such. In short, "make install" just copies compiled files into appropriate locations."
+
+#### 动态链接库相关
+
+- linux找不到动态链接库 .so文件的解决方法 https://blog.csdn.net/gx19862005/article/details/48528235
+- 无root权限下解决编译时的依赖问题 https://www.jianshu.com/p/da92ca36a220
+- linux下静态/动态函数库的原理和编写 https://www.jianshu.com/p/695d16a8947f
+  * Linux动态链接库.so文件的创建与使用 https://blog.csdn.net/ithomer/article/details/7346146
+- /etc/ld.so.conf详解 http://www.cnblogs.com/chris-cp/p/3591306.html	
+
 
 ### Troubleshooters.com
 
