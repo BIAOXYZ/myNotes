@@ -116,9 +116,9 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
   * Extending Oblivious Transfers Efficiently https://link.springer.com/chapter/10.1007/978-3-540-45146-4_9 (CRYPTO 2003) {OT Extension}
   * Keyword Search and Oblivious Pseudorandom Functions https://www.iacr.org/archive/tcc2005/3378_304/3378_304.pdf https://link.springer.com/chapter/10.1007%2F978-3-540-30576-7_17 (TCC 2005) {OPRF}
   
-
 https://petsymposium.org/2017/program.php (PETS 2017)
 - Privacy-Preserving Computation with Trusted Computing via Scramble-then-Compute 
   * https://petsymposium.org/2017/papers/issue3/paper04-2017-3-source.pdf
   * https://petsymposium.org/2017/slides/pets/DangDCC.pdf
 
+Universally Composable Accumulators https://eprint.iacr.org/2018/1241.pdf
