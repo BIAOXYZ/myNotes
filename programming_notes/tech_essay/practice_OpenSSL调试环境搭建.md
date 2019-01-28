@@ -186,6 +186,7 @@ OpenSSL 1.0.2k-fips  26 Jan 2017
         libc.so.6 => /lib64/libc.so.6 (0x00007f5877cd8000)
         /lib64/ld-linux-x86-64.so.2 (0x00007f58784c5000)
 
+
 看来是`libssl.so.3`和`libcrypto.so.3`找不到。不妨再看看系统已有的openssl是啥情况：
 [root@localhost bin]# pwd
 /usr/bin
@@ -210,6 +211,7 @@ OpenSSL 1.0.2k-fips  26 Jan 2017
 
 		
 看来这个openssl依赖的动态库都在`/lib64`目录下。去这个目录看看，把`libs`开头的都列一下：
+
 lrwxrwxrwx.  1 root root      16 10月 19 10:10 libssh2.so.1 -> libssh2.so.1.0.1
 -rwxr-xr-x.  1 root root  174088 3月  10 2016 libssh2.so.1.0.1
 -rwxr-xr-x.  1 root root  340976 9月  27 02:37 libssl3.so
@@ -219,20 +221,21 @@ lrwxrwxrwx.  1 root root      16 10月 19 10:10 libssl.so.10 -> libssl.so.1.0.2k
 lrwxrwxrwx.  1 root root      16 10月 19 10:11 libssl.so.6 -> libssl.so.0.9.8e
 lrwxrwxrwx.  1 root root      12 10月 19 10:10 libss.so.2 -> libss.so.2.0
 -rwxr-xr-x.  1 root root   28440 4月  11 2018 libss.so.2.0
+```
 
+## 解决找不到动态库的问题
 
---------------------------------------------------
-
-
+```
 //先用第一种方法，建软链接。思想参照了【4-1】，但是语句不一样，过程如下：
 
 [ssluser@localhost lib]$ ln -s /opt/newssl/lib/libssl.so.3 /lib64/libssl.so.3
 ln: 无法创建符号链接"/lib64/libssl.so.3": 权限不够
 
+权限不够就换root执行：
 [root@localhost etc]# ln -s /opt/newssl/lib/libssl.so.3 /lib64/libssl.so.3
 [root@localhost etc]#
 
-加完一个看看（和上面对比，多了一条）：
+加完一个软链接后再去`/lib64`目录下看看（和上面对比，多了一条）：
 
 lrwxrwxrwx.  1 root root      16 10月 19 10:10 libssh2.so.1 -> libssh2.so.1.0.1
 -rwxr-xr-x.  1 root root  174088 3月  10 2016 libssh2.so.1.0.1
@@ -240,7 +243,7 @@ lrwxrwxrwx.  1 root root      16 10月 19 10:10 libssh2.so.1 -> libssh2.so.1.0.1
 -rwxr-xr-x.  1 root root  340832 3月   9 2016 libssl.so.0.9.8e
 lrwxrwxrwx.  1 root root      16 10月 19 10:10 libssl.so.10 -> libssl.so.1.0.2k
 -rwxr-xr-x.  1 root root  470360 4月  11 2018 libssl.so.1.0.2k
-lrwxrwxrwx.  1 root root      27 1月  28 13:38 libssl.so.3 -> /opt/newssl/lib/libssl.so.3
+lrwxrwxrwx.  1 root root      27 1月  28 13:38 libssl.so.3 -> /opt/newssl/lib/libssl.so.3     //对，多的一条就是它！
 lrwxrwxrwx.  1 root root      16 10月 19 10:11 libssl.so.6 -> libssl.so.0.9.8e
 lrwxrwxrwx.  1 root root      12 10月 19 10:10 libss.so.2 -> libss.so.2.0
 -rwxr-xr-x.  1 root root   28440 4月  11 2018 libss.so.2.0
@@ -268,7 +271,8 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 
 --------------------------------------------------
 
-接着是第二种方法，更新`/etc/ld.so.conf`文件，把需要的动态链接库的路径加到里面。思想参照了【4-2】，语句不一样：
+
+//接着是第二种方法，更新`/etc/ld.so.conf`文件，把需要的动态链接库的路径加到里面。思想参照了【4-2】，语句不一样：
 
 [ssluser@localhost bin]$ ./openssl version
 ./openssl: error while loading shared libraries: libssl.so.3: cannot open shared object file: No such file or directory
@@ -296,3 +300,13 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 实际上还有第三种方法，用环境变量`LD_LIBRARY_PATH`，但是之前工作中用过，而且比较简单，就不再赘述了。
 
 ```
+
+## 调试
+
+不知道为什么，cgdb可以看见代码单步调试，但是gdb不行。。。神了这情况- -下面两个帖子其实没参考，就只是为了处理`cgdb能调试但gdb不行`这个问题时搜了下，权且记一下吧。我自己编译安装到调试整个过程和下面两个帖子的不同点在于：
+1. 我config时候并没有用到他们提的`-d`，`-g`或`-g3`选项，我觉得当前我用的最新版的openssl，INSTALL文件里的`--debug`应该已经包含这些了。
+2. 目前还没有另写一个程序，通过那个程序调用openssl来调试。我只是用openssl命令的方式来调用，或许跟这个也有一定关系？
+
+- Debugging OpenSSL code using gdb https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428
+- Linux gdb 调试 openssl https://blog.csdn.net/xiangguiwang/article/details/52711103
+
