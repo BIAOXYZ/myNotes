@@ -12,6 +12,13 @@
 魔法禁书目录 I 18 假冒者 当麻被美琴要求假冒男友，一起逛了打半天，也算吧
 ```
 
+## 辉夜大小姐想让我告白～天才们的恋爱头脑战～
+
+辉夜大小姐想让我告白～天才们的恋爱头脑战～ https://zh.moegirl.org/zh-hans/%E8%BE%89%E5%A4%9C%E5%A4%A7%E5%B0%8F%E5%A7%90%E6%83%B3%E8%AE%A9%E6%88%91%E5%91%8A%E7%99%BD%EF%BD%9E%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E6%81%8B%E7%88%B1%E5%A4%B4%E8%84%91%E6%88%98%EF%BD%9E
+
+辉夜大小姐想让我告白~天才们的恋爱头脑战~ https://www.bilibili.com/bangumi/media/md5267730/
+
+
 ## 搞笑类
 
 鬼畜全明星 Wiki http://guichu.wikia.com/wiki/%E9%AC%BC%E7%95%9C%E5%85%A8%E6%98%8E%E6%98%9F_Wiki
