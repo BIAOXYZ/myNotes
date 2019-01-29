@@ -301,12 +301,49 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 
 ```
 
-## 调试
+# 二、调试
 
-不知道为什么，cgdb可以看见代码单步调试，但是gdb不行。。。神了这情况- -下面两个帖子其实没参考，就只是为了处理`cgdb能调试但gdb不行`这个问题时搜了下，权且记一下吧。我自己编译安装到调试整个过程和下面两个帖子的不同点在于：
+总体上讲，我认为有两类调试方法。
+
+## 1.用openssl命令行工具调试
+
+```
+第一种是直接通过openssl命令调试，比如，openssl命令行工具通过如下命令生成RSA密钥：
+
+openssl genrsa
+```
+
+```
+那么类似的就可以利用这类命令进行debug，具体过程如下：
+
+[ssluser@localhost bin]$ pwd
+/opt/newssl/bin
+[ssluser@localhost bin]$ cgdb ./openssl
+
+source ~/bps.cfg
+
+set args genrsa
+
+r
+```
+
+```
+这里断点文件bps.cfg也贴一下好了：
+
+break main
+break genrsa_main
+break RSA_new_method
+break RSA_generate_multi_prime_key
+break PEM_write_bio_RSAPrivateKey
+```
+
+不过不知道什么原因，cgdb可以看见代码单步调试，但是gdb不行。。。神了这情况- -下面两个帖子其实没参考，就只是为了处理`cgdb能调试但gdb不行`这个问题时搜了下，权且记一下吧。我自己编译安装到调试整个过程和下面两个帖子的不同点在于：
 1. 我config时候并没有用到他们提的`-d`，`-g`或`-g3`选项，我觉得当前我用的最新版的openssl，INSTALL文件里的`--debug`应该已经包含这些了。
 2. 目前还没有另写一个程序，通过那个程序调用openssl来调试。我只是用openssl命令的方式来调用，或许跟这个也有一定关系？
 
 - Debugging OpenSSL code using gdb https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428
 - Linux gdb 调试 openssl https://blog.csdn.net/xiangguiwang/article/details/52711103
+
+## 2.
+
 
