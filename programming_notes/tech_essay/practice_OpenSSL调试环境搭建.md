@@ -344,6 +344,59 @@ break PEM_write_bio_RSAPrivateKey
 - Debugging OpenSSL code using gdb https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428
 - Linux gdb 调试 openssl https://blog.csdn.net/xiangguiwang/article/details/52711103
 
-## 2.
+## 2.用外部程序调用openssl函数进行调试
 
+想了想还是把这种方式也实践一下吧，毕竟想是一回事，做又是另一回事。。。
+
+主要参考了如下例子：
+- openssl动态库生成以及交叉编译 https://blog.csdn.net/andylauren/article/details/53456340 
+
+但是对makefile文件有三处修改：
+```c
+## debug flag
+DBG_ENABLE = 0     //这里要变为1
+
+## used headers  file path
+INCLUDE_PATH := /home/linux/opt/openssl/include/     //这里换实际的路径
+
+## used include librarys file path
+LIBRARY_PATH := /home/linux/opt/openssl/lib/        //这里换实际的路径 
+```
+
+具体的代码文件内容为：
+```
+```
+
+整个的代码文件结构和编译运行过程为：
+```
+随便找个地方建立一个名为gdbopenssltest的新目录，例如我是在如下路径：
+/home/ssluser/tmp/gdbopenssltest
+这个目录名字也可以随便改，目录位置基本随意。这就是C的好处啊，go就哭了。。。
+
+make前文件目录结构：
+
+├── gdbopenssltest
+│   ├── cryptotest.h
+│   ├── makefile
+│   ├── openssltest.c
+│   └── rc4test.c
+
+make后文件目录结构（生成了名为openssltest的可执行文件）：
+
+├── gdbopenssltest
+│   ├── cryptotest.h
+│   ├── makefile
+│   ├── openssltest
+│   ├── openssltest.c
+│   └── rc4test.c
+
+运行openssltest：
+
+[ssluser@localhost gdbopenssltest]$ ./openssltest
+cleartext:中国北京12345$abcde%ABCDE@！！！
+genarate ciphertext:Zu▒)▒0Xv▒ݏ▒▒▒▒▒
+src ciphertext:Zu▒)▒0Xv▒ݏ▒▒▒▒▒
+genarate ciphertext:中国北京12345$abcde%ABCDE@！！！
+RC4 crypto ok!!!
+```
 
