@@ -1,4 +1,5 @@
 
+
 ## 超炮和魔禁
 
 - 某科学的超电磁炮 https://zh.moegirl.org/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84%E8%B6%85%E7%94%B5%E7%A3%81%E7%82%AE
@@ -19,6 +20,9 @@
 辉夜大小姐想让我告白~天才们的恋爱头脑战~ https://www.bilibili.com/bangumi/media/md5267730/
 
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 ## 搞笑类
 
 鬼畜全明星 Wiki http://guichu.wikia.com/wiki/%E9%AC%BC%E7%95%9C%E5%85%A8%E6%98%8E%E6%98%9F_Wiki
@@ -29,6 +33,12 @@
 - 暴刘继芬 https://zh.moegirl.org/%E7%88%86%E5%88%98%E7%BB%A7%E8%8A%AC
 - jb永动机 https://zh.moegirl.org/Jb%E6%B0%B8%E5%8A%A8%E6%9C%BA
 - 马云我赐你姨妈 https://zh.moegirl.org/IGNITE
+
+## 动漫中的梗
+
+bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/topic/neta2018_web.html
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## 萌战
 
