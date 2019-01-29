@@ -66,6 +66,66 @@ grep -n -r -i "string" dir --color=auto
 (-nir可以合一起，并且可以用alias让grep就等于grep --color=auto)
 ```
 
+#### which whereis find locate等的区别
+
+which/whereis differences https://superuser.com/questions/40301/which-whereis-differences
+```
+How about learning about whereis and which using whatis?
+
+----------------------------------------------------------------------------------------------------
+$  whatis which
+which                (1)  - shows the full path of (shell) commands
+
+$  whatis whereis
+whereis              (1)  - locate the binary, source, and manual page files for a command
+----------------------------------------------------------------------------------------------------
+
+Basically, whereis searches for "possibly useful" files, while which only searches for executables.
+
+I rarely use whereis. On the other hand, which is very useful, specially in scripts. which is the 
+answer for the following question: Where does this command come from?
+
+----------------------------------------------------------------------------------------------------
+$  which ls
+/bin/ls
+
+$  whereis ls
+ls: /bin/ls /usr/share/man/man1p/ls.1p.bz2 /usr/share/man/man1/ls.1.bz2
+----------------------------------------------------------------------------------------------------
+```
+
+```
+Quoting their man pages :
+
+whereis :
+
+whereis locates source/binary and manuals sections for specified files.
+
+For instance :
+
+----------------------------------------------------------------------------------------------------
+$ whereis php
+php: /usr/bin/php /usr/share/php /usr/share/man/man1/php.1.gz
+----------------------------------------------------------------------------------------------------
+
+ie, the "php" executable, and some other stuff (like man pages).
+
+
+and which :
+
+which returns the pathnames of the files which would be executed in the current environment
+
+For instance :
+
+----------------------------------------------------------------------------------------------------
+$ which php
+/usr/bin/php
+----------------------------------------------------------------------------------------------------
+
+ie, only the "php" executable.
+```
+
+
 ### 暂停和放到前台继续执行，bg是放到后台
 ```
 ctrl + z, fg, ctrl + z, fg, ...
