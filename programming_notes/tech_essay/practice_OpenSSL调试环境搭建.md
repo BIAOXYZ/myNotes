@@ -514,10 +514,8 @@ build:
         $(RM) $(OBJS)
 
 clean:
-        $(RM) $(OBJS) $(TARGET)
-	
+        $(RM) $(OBJS) $(TARGET)	
 ```
-
 
 ### 整个的代码文件结构和编译运行过程为：
 ```
@@ -552,3 +550,15 @@ genarate ciphertext:中国北京12345$abcde%ABCDE@！！！
 RC4 crypto ok!!!
 ```
 
+### 调试就很简单了
+
+这种方式我这边环境上gdb和cgdb都可以————其实本来就该这样啊，只是上一种方式出的问题比较怪，或者环境原因吧。
+```
+[ssluser@localhost gdbopenssltest]$ gdb ./openssltest
+或
+[ssluser@localhost gdbopenssltest]$ cgdb ./openssltest
+
+b main
+
+r
+```
