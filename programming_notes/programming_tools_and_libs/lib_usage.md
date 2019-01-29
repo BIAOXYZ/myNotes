@@ -36,8 +36,7 @@ TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p
 
 #### OpenSSL官方
 
-- https://www.openssl.org/
-  - https://github.com/openssl/openssl
+OpenSSL -- Cryptography and SSL/TLS Toolkit https://www.openssl.org/ || https://github.com/openssl/openssl
 - https://www.openssl.org/community/
   - https://www.openssl.org/community/getting-started.html
 - https://www.openssl.org/docs/
@@ -48,7 +47,7 @@ TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p
   * OpenSSL Cookbook https://www.feistyduck.com/books/openssl-cookbook/
 
   
- https://wiki.openssl.org/
+ OpenSSL wiki https://wiki.openssl.org/
   - https://wiki.openssl.org/index.php/Compilation_and_Installation#Windows
   - https://wiki.openssl.org/index.php/Contributions
     > "With OpenSSL there is usually a preferred general high-level API (EVP) and then many lower level function calls that can be used to achieve similar outcomes."
@@ -56,6 +55,7 @@ TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p
   - https://wiki.openssl.org/index.php/Developing_For_OpenSSL
     > "We are always looking for good people to help us build up the information held within this wiki. Documentation is one area where we are keen to improve things, and this wiki is an important location for people to come to. Information on how to get an account is available on the Welcome page."
     * https://wiki.openssl.org/index.php/Welcome
+  - Command Line Utilities https://wiki.openssl.org/index.php/Command_Line_Utilities  
 
 #### OpenSSL其他
 
