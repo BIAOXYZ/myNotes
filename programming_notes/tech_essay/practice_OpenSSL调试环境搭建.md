@@ -301,6 +301,10 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 
 ```
 
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
 # 二、调试
 
 总体上讲，我认为有两类调试方法。
@@ -348,7 +352,7 @@ break PEM_write_bio_RSAPrivateKey
 
 想了想还是把这种方式也实践一下吧，毕竟想是一回事，做又是另一回事。。。
 
-主要参考了如下例子：
+### 主要参考了如下例子：
 - openssl动态库生成以及交叉编译 https://blog.csdn.net/andylauren/article/details/53456340 
 
 但是对makefile文件有三处修改：
@@ -363,11 +367,47 @@ INCLUDE_PATH := /home/linux/opt/openssl/include/     //这里换实际的路径
 LIBRARY_PATH := /home/linux/opt/openssl/lib/        //这里换实际的路径 
 ```
 
-具体的代码文件内容为：
-```
+### 具体的代码文件内容为：
+
+> cryptotest.h
+```c
+#ifndef _CRYPTOTEST_H_
+#define _CRYPTOTEST_H_
+
+
+typedef enum {
+        GENERAL = 0,
+        ECB,
+        CBC,
+        CFB,
+        OFB,
+        TRIPLE_ECB,
+        TRIPLE_CBC
+}CRYPTO_MODE;
+
+//string DES_Encrypt(const string cleartext, const string key, CRYPTO_MODE mode);
+//string DES_Decrypt(const string ciphertext, const string key, CRYPTO_MODE mode);
+
+char * RC4_Encrypt(const char *cleartext, const char * key, int cleartextlen, int keylen);
+char * RC4_Decrypt(const char * ciphertext, const char * key, int cleartextlen, int keylen);
+
+#endif //_CRYPTOTEST_H_
 ```
 
-整个的代码文件结构和编译运行过程为：
+> openssltest.c
+```c
+```
+
+> rc4test.c
+```c
+```
+
+> makefile
+```c
+```
+
+
+### 整个的代码文件结构和编译运行过程为：
 ```
 随便找个地方建立一个名为gdbopenssltest的新目录，例如我是在如下路径：
 /home/ssluser/tmp/gdbopenssltest
