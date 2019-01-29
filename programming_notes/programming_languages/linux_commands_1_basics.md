@@ -66,9 +66,9 @@ grep -n -r -i "string" dir --color=auto
 (-nir可以合一起，并且可以用alias让grep就等于grep --color=auto)
 ```
 
-#### which whereis find locate等的区别
+#### find, grep, which, whereis, locate, type等的区别
 
-which/whereis differences https://superuser.com/questions/40301/which-whereis-differences
+***which/whereis differences https://superuser.com/questions/40301/which-whereis-differences***
 ```
 How about learning about whereis and which using whatis?
 
@@ -125,6 +125,11 @@ $ which php
 ie, only the "php" executable.
 ```
 
+Linux的五个查找命令 http://www.ruanyifeng.com/blog/2009/10/5_ways_to_search_for_files_using_the_terminal.html
+
+shell端查找和搜索：which, whereis, locate, find and grep https://my.oschina.net/u/2274721/blog/407228
+
+Linux下which、whereis、locate、find 区别 https://blog.csdn.net/ithomer/article/details/9391279   by 阳光岛主
 
 ### 暂停和放到前台继续执行，bg是放到后台
 ```
