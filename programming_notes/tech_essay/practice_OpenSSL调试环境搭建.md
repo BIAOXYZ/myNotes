@@ -369,7 +369,7 @@ LIBRARY_PATH := /home/linux/opt/openssl/lib/        //这里换实际的路径
 
 ### 具体的代码文件内容为：
 
-> cryptotest.h
+> **cryptotest.h**
 ```c
 #ifndef _CRYPTOTEST_H_
 #define _CRYPTOTEST_H_
@@ -394,7 +394,7 @@ char * RC4_Decrypt(const char * ciphertext, const char * key, int cleartextlen, 
 #endif //_CRYPTOTEST_H_
 ```
 
-> openssltest.c
+> **openssltest.c**
 ```c
 #include "cryptotest.h"
 #include <string.h>
@@ -422,7 +422,7 @@ int main()
 }
 ```
 
-> rc4test.c
+> **rc4test.c**
 ```c
 #include <stdlib.h>
 #include <openssl/rc4.h>
@@ -454,7 +454,7 @@ char * RC4_Decrypt(const char * ciphertext, const char * key, int cleartextlen, 
 }
 ```
 
-> makefile
+> **makefile**
 ```makefile
 #####################################################################
 ## file        : test makefile for build current dir .c   ##
@@ -517,6 +517,13 @@ clean:
         $(RM) $(OBJS) $(TARGET)	
 ```
 
+>> 注：写完之后我又重新把这篇已经贴出来的内容再粘回去试了一下，从而保证没错。结果前三个文件都没问题，但是makefile文件因为只能用tab，所以粘贴回去后可能会报错：
+```
+[ssluser@localhost 123]$ make
+makefile:54: *** 遗漏分隔符  (您的意思是用 TAB 代替 8 个空格？)。 停止。
+```
+>> 此时进去把相应行前的空格全都删掉，然后输一个tab保存即可。我是一共改了四处（build:下面三行；clean:下面一行）吧，反正问题不大。
+
 ### 整个的代码文件结构和编译运行过程为：
 ```
 随便找个地方建立一个名为gdbopenssltest的新目录，例如我是在如下路径：
@@ -562,3 +569,13 @@ b main
 
 r
 ```
+
+## 3.启动openssl命令行工具，并挂载该工具进行调试
+
+这种调试方法类似postgres常用的调试方法：
+- 先开个窗口输入`openssl`不带任何参数，从而启动openssl命令行工具（）。
+- 然后再开一个新窗口`ps ufx`查一下其`$PID_value`，并在这个窗口`gdb attach $PID_value`挂上openssl命令行工具的进程。
+- 回到前面窗口输个命令之类的，然后回到gdb所在的窗口进行调试。
+
+
+
