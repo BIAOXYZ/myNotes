@@ -577,5 +577,45 @@ r
 - 然后再开一个新窗口`ps ufx`查一下其`$PID_value`，并在这个窗口`gdb attach $PID_value`挂上openssl命令行工具的进程。
 - 回到前面窗口输个命令之类的，然后回到gdb所在的窗口进行调试。
 
+具体过程如下：
+```
+第一个窗口：
+[ssluser@localhost gdbopenssltest]$ cd /opt/newssl/bin/
+[ssluser@localhost bin]$ pwd
+/opt/newssl/bin
+[ssluser@localhost bin]$ ./openssl
+OpenSSL>
 
+
+第二个窗口：
+[ssluser@localhost ~]$ ps ufx
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ssluser   1744  0.0  0.2 158808  2336 ?        S    17:30   0:00 sshd: ssluser@notty
+ssluser   1745  0.0  0.2  72180  2864 ?        Ss   17:30   0:00  \_ /usr/libexec/openssh/sftp-server
+ssluser   1731  0.0  0.2 158808  2332 ?        S    17:30   0:00 sshd: ssluser@notty
+ssluser   1732  0.0  0.2  72180  2864 ?        Ss   17:30   0:00  \_ /usr/libexec/openssh/sftp-server
+ssluser   1709  0.0  0.2 159132  2644 ?        S    17:30   0:00 sshd: ssluser@pts/2
+ssluser   1710  0.0  0.2 115436  2116 pts/2    Ss   17:30   0:00  \_ -bash
+ssluser   1956  0.0  0.1 155320  1852 pts/2    R+   18:07   0:00      \_ ps ufx
+ssluser   1685  0.0  0.2 159132  2644 ?        S    17:30   0:00 sshd: ssluser@pts/1
+ssluser   1686  0.0  0.2 115436  2100 pts/1    Ss   17:30   0:00  \_ -bash
+ssluser   1951  0.0  0.2  17380  2276 pts/1    S+   18:06   0:00      \_ ./openssl
+[ssluser@localhost ~]$
+[ssluser@localhost ~]$ gdb attach 1951
+(gdb) break genrsa_main
+Breakpoint 1 at 0x430885: file apps/genrsa.c, line 60.
+(gdb) c
+Continuing.
+
+第一个窗口：
+OpenSSL> genrsa
+
+第二个窗口：
+Breakpoint 1, genrsa_main (argc=1, argv=0x1cb0560) at apps/genrsa.c:60
+60          BN_GENCB *cb = BN_GENCB_new();
+
+CTRL+X+A            //cgdb当然就不用了，可以直接开始调试
+
+然后正式开始调试...
+```
 
