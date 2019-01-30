@@ -7,6 +7,10 @@
 
 # DNS
 
+Simple DNSCrypt https://www.simplednscrypt.org/
+
+--------------------------------------------------
+
 谷歌公共DNS正式支持DoH加密 更安全并且不影响速度 - Google 谷歌 - cnBeta.COM https://www.cnbeta.com/articles/tech/807293.htm
 -  ```
    附谷歌公共DNS地址：
