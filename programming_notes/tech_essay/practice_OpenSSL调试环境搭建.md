@@ -139,7 +139,7 @@ sudo make install     // 但是这句碰到了问题
 ssluser 不在 sudoers 文件中。此事将被报告。
 
 普通用户权限不够当然就加sudo，但是发现这个提示。最后用【3】中的"直接给指定用户授权"的方法
-解决了该问题（貌似是CentOS默认没有sudo组的原因造成的），也就是加了一行内容，变成如下：
+解决了该问题（貌似是CentOS默认没有sudo组的原因造成的），也就是在`/etc/sudoers`加了一行内容，变成如下：
 ## Allow root to run any commands anywhere
 root    ALL=(ALL)       ALL
 ssluser ALL=(ALL)       ALL
@@ -361,10 +361,10 @@ break PEM_write_bio_RSAPrivateKey
 
 想了想还是把这种方式也实践一下吧，毕竟想是一回事，做又是另一回事。。。
 
-主要参考了如下例子：
+### 主要参考了如下例子：
 - openssl动态库生成以及交叉编译 https://blog.csdn.net/andylauren/article/details/53456340   【5】
 
-但是对makefile文件有三处修改：
+### 但是对makefile文件有三处修改：
 ```c
 ## debug flag
 DBG_ENABLE = 0     //这里要变为1
@@ -582,8 +582,8 @@ r
 ## 3.启动openssl命令行工具，并挂载该工具进行调试
 
 这种调试方法类似postgres常用的调试方法：
-- 先开个窗口输入`openssl`不带任何参数，从而启动openssl命令行工具（）。
-- 然后再开一个新窗口`ps ufx`查一下其`$PID_value`，并在这个窗口`gdb attach $PID_value`挂上openssl命令行工具的进程。
+- 先开个窗口输入`/opt/newssl/bin/openssl`或者跑到相应目录下输`./openssl`，并且不带任何参数。从而启动openssl命令行工具（此时命令行变成了`OpenSSL>`）。
+- 然后再开一个新窗口`ps ufx`查一下其`$PID_value`，并在这个窗口`gdb attach $PID_value`挂上openssl命令行工具的进程。当然也可以直接**gdb/cgdb attach `pgrep openssl`**
 - 回到前面窗口输个命令之类的，然后回到gdb所在的窗口进行调试。
 
 具体过程如下：
@@ -616,8 +616,10 @@ Breakpoint 1 at 0x430885: file apps/genrsa.c, line 60.
 (gdb) c
 Continuing.
 
+
 第一个窗口：
 OpenSSL> genrsa
+
 
 第二个窗口：
 Breakpoint 1, genrsa_main (argc=1, argv=0x1cb0560) at apps/genrsa.c:60
