@@ -129,15 +129,22 @@ notes: 因为第二种不行，所以最终用了第一种办法，即root用户
 
 ```
 参考INSTALL文件里的信息，所以最终使用的配置语句是：
-./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
 
+./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
 make
+sudo make install     // 但是这句碰到了问题
 
 [ssluser@localhost openssl]$ sudo make install
 [sudo] ssluser 的密码：
 ssluser 不在 sudoers 文件中。此事将被报告。
 
-最后用【3】的方案解决了。至此安装完成。
+普通用户权限不够当然就加sudo，但是发现这个提示。最后用【3】中的"直接给指定用户授权"的方法
+解决了该问题（貌似是CentOS默认没有sudo组的原因造成的），也就是加了一行内容，变成如下：
+## Allow root to run any commands anywhere
+root    ALL=(ALL)       ALL
+ssluser ALL=(ALL)       ALL
+
+至此安装完成。
 ```
 
 ## 看看两个版本的openssl有啥异同
@@ -307,18 +314,20 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 
 # 二、调试
 
-总体上讲，我认为有两类调试方法。
+总体上讲，我认为有两类（或者说三类）调试方法。
 
-## 1.用openssl命令行工具调试
+## 1.直接从gdb/cgdb内部启动openssl命令行工具进行调试
 
 ```
-第一种是直接通过openssl命令调试，比如，openssl命令行工具通过如下命令生成RSA密钥：
+第一种是直接通过gdb/cgdb内部启动openssl命令进行调试。比如，openssl命令行工具通过如下命令生成RSA密钥：
 
 openssl genrsa
+
+那么就可以利用gdb/cgdb的set args来操作。
 ```
 
 ```
-那么类似的就可以利用这类命令进行debug，具体过程如下：
+整个debug的具体过程如下：
 
 [ssluser@localhost bin]$ pwd
 /opt/newssl/bin
@@ -343,7 +352,7 @@ break PEM_write_bio_RSAPrivateKey
 
 不过不知道什么原因，cgdb可以看见代码单步调试，但是gdb不行。。。神了这情况- -下面两个帖子其实没参考，就只是为了处理`cgdb能调试但gdb不行`这个问题时搜了下，权且记一下吧。我自己编译安装到调试整个过程和下面两个帖子的不同点在于：
 1. 我config时候并没有用到他们提的`-d`，`-g`或`-g3`选项，我觉得当前我用的最新版的openssl，INSTALL文件里的`--debug`应该已经包含这些了。
-2. 目前还没有另写一个程序，通过那个程序调用openssl来调试。我只是用openssl命令的方式来调用，或许跟这个也有一定关系？
+2. 目前还没有另写一个程序，通过那个程序调用openssl来调试。我只是用调式工具内启动openssl命令的方式来调用，或许跟这个也有一定关系？
 
 - Debugging OpenSSL code using gdb https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428
 - Linux gdb 调试 openssl https://blog.csdn.net/xiangguiwang/article/details/52711103
@@ -352,8 +361,8 @@ break PEM_write_bio_RSAPrivateKey
 
 想了想还是把这种方式也实践一下吧，毕竟想是一回事，做又是另一回事。。。
 
-### 主要参考了如下例子：
-- openssl动态库生成以及交叉编译 https://blog.csdn.net/andylauren/article/details/53456340 
+主要参考了如下例子：
+- openssl动态库生成以及交叉编译 https://blog.csdn.net/andylauren/article/details/53456340   【5】
 
 但是对makefile文件有三处修改：
 ```c
