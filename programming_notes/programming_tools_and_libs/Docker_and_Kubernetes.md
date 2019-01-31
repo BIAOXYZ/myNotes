@@ -18,11 +18,11 @@ kubernetes中文社区 https://www.kubernetes.org.cn/
 Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 
 
-
-
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# docker常用命令总结
+# Docker
+
+## docker常用命令总结
 
 - 15 个 Docker 技巧和提示 https://blog.csdn.net/liyingke112/article/details/73920837
 ```
@@ -31,7 +31,7 @@ Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 ```
 - 这20个Docker Command，有几个是你会的？ https://blog.csdn.net/mingongge/article/details/80524241
 
-# docker general
+## docker general
 
 Docker — 从入门到实践 https://legacy.gitbook.com/book/yeasy/docker_practice/details  (or https://github.com/yeasy/docker_practice)
 - `安装Docker`->`CentOS 安装 Docker CE` https://yeasy.gitbooks.io/docker_practice/content/install/centos.html
@@ -191,17 +191,24 @@ docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/ar
 
 # Kubernetes
 
-A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ https://github.com/ramitsurana/awesome-kubernetes
+## kubernetes general
 
-Docker 和 Kubernetes：给程序员的快速指南 - 江宏的文章 - 知乎 https://zhuanlan.zhihu.com/p/39937913
+A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ || https://github.com/ramitsurana/awesome-kubernetes
 
 Kubernetes中文指南/云原生应用架构实践手册 https://github.com/rootsongjc/kubernetes-handbook
 
-Docker官方将支持Kubernetes，容器编排大战宣告结束
-http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
+https://k8smeetup.github.io/
+- Kubernetes Basics https://k8smeetup.github.io/docs/tutorials/kubernetes-basics/
+
+
+## kubernetes 常用命令
+
+## kubernetes 快速开始
 
 Kubernetes系统架构简介
 http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction
+
+Docker 和 Kubernetes：给程序员的快速指南 - 江宏的文章 - 知乎 https://zhuanlan.zhihu.com/p/39937913
 
 Kubernetes初探 - CSDN博客
 https://blog.csdn.net/zhangjun2915/article/details/40598151
@@ -211,9 +218,14 @@ Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-
 
 Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqjFDsQ
 
-##
+## kubernetes others
 
+Kubernetes DNS 高阶指南 https://www.yangcs.net/posts/kubernetes-dns/
 
+### kubernetes news
+
+Docker官方将支持Kubernetes，容器编排大战宣告结束
+http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
