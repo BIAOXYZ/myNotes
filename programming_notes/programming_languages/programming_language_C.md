@@ -120,6 +120,6 @@ http://www.cppblog.com/cxf20090520biancheng/archive/2012/05/14/174833.html
 
 ### 其他
 
-
+C技巧：结构体参数转成不定参数 https://blog.csdn.net/haoel/article/details/6212499
 
 
