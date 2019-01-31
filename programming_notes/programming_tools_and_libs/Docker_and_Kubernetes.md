@@ -12,6 +12,9 @@ docker官方文档
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+Kubernetes Documentation https://kubernetes.io/docs/home/
+- https://kubernetes.io/docs/tutorials/
+
 kubernetes中文社区 https://www.kubernetes.org.cn/
 - 名词解释 Pods https://www.kubernetes.org.cn/kubernetes-pod
 
@@ -220,7 +223,9 @@ Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqj
 
 ## kubernetes others
 
-Kubernetes DNS 高阶指南 https://www.yangcs.net/posts/kubernetes-dns/
+Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
+- Kubernetes DNS 高阶指南 https://www.yangcs.net/posts/kubernetes-dns/
+- Kubernetes 的奇技淫巧 -- 打造高效的命令行终端 https://www.yangcs.net/posts/kubernetes-fucking-trick/
 
 ### kubernetes news
 
