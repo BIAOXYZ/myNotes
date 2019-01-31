@@ -203,6 +203,12 @@ Kubernetes中文指南/云原生应用架构实践手册 https://github.com/root
 https://k8smeetup.github.io/
 - Kubernetes Basics https://k8smeetup.github.io/docs/tutorials/kubernetes-basics/
 
+如何学习、了解kubernetes？ - 知乎 https://www.zhihu.com/question/37498459
+- 如何学习、了解kubernetes？ - 刘小龙的回答 - 知乎 https://www.zhihu.com/question/37498459/answer/398838177
+  * 从零开始搭建Kubernetes集群（一、开篇） https://www.jianshu.com/p/78a5afd0c597
+- 如何学习、了解kubernetes？ - Jimmy Song的回答 - 知乎 https://www.zhihu.com/question/37498459/answer/527503822
+  * Kubernetes Handbook——Kubernetes中文指南/云原生应用架构实践手册 https://jimmysong.io/kubernetes-handbook/
+
 
 ## kubernetes 常用命令
 
