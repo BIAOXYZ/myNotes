@@ -27,6 +27,8 @@
 
 鬼畜全明星 Wiki http://guichu.wikia.com/wiki/%E9%AC%BC%E7%95%9C%E5%85%A8%E6%98%8E%E6%98%9F_Wiki
 
+唐国强给鬼畜他的B站UP主颁奖：让诸葛亮比20年前还火 https://www.ithome.com/0/408/027.htm
+
 ## 空耳
 
 空耳 https://zh.moegirl.org/%E7%A9%BA%E8%80%B3
