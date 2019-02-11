@@ -59,3 +59,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.e
 
 :video_game: Chinese DOS games in browser. https://github.com/rwv/chinese-dos-games
 > https://dos.zczc.cz/
+
+看到女装的项目的issue建议妹子建一个男装的项目，但是考虑到github的女性用户 数量貌似并不能达到女装的效果2333总之先建一个。 https://github.com/greenaway07/GirlDress
+
+:book: 5 分钟商学院精细笔记 https://github.com/apachecn/5min-business-notes
