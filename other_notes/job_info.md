@@ -256,6 +256,12 @@ http://www.highpin.cn/job/h2337217.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# 面试相关
+
+写在19年初的后端社招面试经历 :money_mouth_face: https://github.com/aylei/interview
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # 工作需注意点
 
 五险一金及税后工资计算器 http://salarycalculator.sinaapp.com/
@@ -284,6 +290,9 @@ http://www.highpin.cn/job/h2337217.html
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 工作相关八卦
+
+:see_no_evil: 程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞 https://github.com/shengxinjing/programmer-job-blacklist
+  > http://coder.shengxinjing.cn/ 
 
 ## 一般性八卦
 
