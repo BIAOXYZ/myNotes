@@ -65,6 +65,10 @@ wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译 h
 
 关于Python的面试题 https://github.com/taizilongxu/interview_python
 
+stackoverflow上关于python的翻译 https://github.com/taizilongxu/stackoverflow_python
+
+notebook_with_decorative_cover 在学院的书架上发现了一本不带脑子就能看懂的书《Python数据挖掘与实战》 https://github.com/LinXueyuanStdio/PythonDataMining
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
