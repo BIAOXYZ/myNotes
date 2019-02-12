@@ -75,3 +75,9 @@ http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
     - Bugzilla https://en.wikipedia.org/wiki/Bugzilla
 - Kanban https://en.wikipedia.org/wiki/Kanban_(development)
   * Scrum (software development) https://en.wikipedia.org/wiki/Scrum_(software_development)
+
+### GA (General Availability)
+
+Software release life cycle https://en.wikipedia.org/wiki/Software_release_life_cycle
+
+General Availability (GA) https://www.techopedia.com/definition/32284/general-availability-ga
