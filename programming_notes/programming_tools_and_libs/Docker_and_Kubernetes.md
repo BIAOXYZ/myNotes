@@ -15,10 +15,17 @@ docker官方文档
 Kubernetes Documentation https://kubernetes.io/docs/home/
 - https://kubernetes.io/docs/tutorials/
 
-kubernetes中文社区 https://www.kubernetes.org.cn/
+Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
+
+--------------------------------------------------
+
+Kubernetes中文社区 https://www.kubernetes.org.cn/
 - 名词解释 Pods https://www.kubernetes.org.cn/kubernetes-pod
+- 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
 
 Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
+
+--------------------------------------------------
 
 Topic: kubernetes https://github.com/topics/kubernetes
 
@@ -238,6 +245,10 @@ Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
 
 Docker官方将支持Kubernetes，容器编排大战宣告结束
 http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
+
+对不起Linux，Kubernetes现在是更重要的操作系统！ http://www.sohu.com/a/277404425_610730
+> Sorry, Linux. Kubernetes is now the OS that matters https://www.infoworld.com/article/3322120/kubernetes/sorry-linux-kubernetes-is-now-the-os-that-matters.html
+>> 对不起，小麦。馒头现在是更重要的食物！
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
