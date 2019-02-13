@@ -2,6 +2,8 @@
 Auditing Applied Cryptography https://github.com/mimoo/cryptobible
 > 这个里面有一些我感觉算是偏密码工程的东西，比如RSA-OAEP是否安全等：https://github.com/mimoo/cryptobible/blob/master/www/primitives/asymmetric_encryption.md
 
+TLS 1.2协议现漏洞 近3000网站或受影响 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/817339.htm
+
 # ECC
 
 椭圆曲线密码学的简单介绍 https://www.jianshu.com/p/dfebdf6a2400
