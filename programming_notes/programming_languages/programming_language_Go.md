@@ -198,6 +198,8 @@ Go Web 编程 - 1.2 GOPATH与工作空间 https://github.com/astaxie/build-web-a
 - Go Web 编程 https://legacy.gitbook.com/book/astaxie/build-web-application-with-golang/details/zh
 - Go Web 编程 https://legacy.gitbook.com/book/wizardforcel/build-web-application-with-golang/details
 
+Installing Go from source https://nikhita.github.io/install-multiple-versions-go
+
 
 # Go其他
 
