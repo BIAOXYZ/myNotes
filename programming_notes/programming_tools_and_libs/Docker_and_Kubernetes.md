@@ -12,10 +12,13 @@ docker官方文档
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
-Kubernetes Documentation https://kubernetes.io/docs/home/
-- https://kubernetes.io/docs/tutorials/
+- Kubernetes (k8s) is an open-source system for automating deployment, scaling, and management of containerized applications. https://kubernetes.io/
+- Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
 
-Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
+Kubernetes Documentation https://kubernetes.io/docs/home/
+- Tutorials https://kubernetes.io/docs/tutorials/
+  * Overview of Kubernetes Online Training https://kubernetes.io/docs/tutorials/online-training/overview/
+
 
 --------------------------------------------------
 
