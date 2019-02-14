@@ -102,8 +102,14 @@ http://zhuanlan.zhihu.com/p/34280674
 日本TI求职网站上线编程游戏：陪二次元妹纸用编程拯救世界 https://hot.cnbeta.com/articles/funny/811479
 > 评论：https://paiza.jp/botchi 在这里
 
+你以为我在玩游戏？其实我在学编程！ https://mp.weixin.qq.com/s/2njySI6EgW1MyQR0Cu6ELg
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+### Linux Programming
+
+Difference between 'Killed' and 'Terminated' https://stackoverflow.com/questions/19206124/difference-between-killed-and-terminated
+> 正常终止的程序会有clean exit来做些收尾工作，比如把仍在内存中的信息持久化。
 
 ### makefile and compilation
 
