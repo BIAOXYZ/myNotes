@@ -241,6 +241,8 @@ Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
 - Kubernetes DNS 高阶指南 https://www.yangcs.net/posts/kubernetes-dns/
 - Kubernetes 的奇技淫巧 -- 打造高效的命令行终端 https://www.yangcs.net/posts/kubernetes-fucking-trick/
 
+50+ 顶级开源 Kubernetes 工具列表 https://www.infoq.cn/article/RPA-wswoEyjuRZfTMcut
+
 ### kubernetes news
 
 Docker官方将支持Kubernetes，容器编排大战宣告结束
