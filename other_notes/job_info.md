@@ -336,6 +336,8 @@ https://www.zhihu.com/question/24694855
 
 华为18+，偶然有闲，谁有兴趣，我可以回答不敏感的问题 http://www.txrjy.com/thread-900834-1-1.html
 
+华为博士员工平均离职率21.8%:英雄为何无用武之地 - Huawei 华为 - cnBeta.COM https://www.cnbeta.com/articles/tech/818495.htm
+
 ### 小公司八卦
 
 如何看待“有赞”年会公开宣布996工作制？ - 知乎 https://www.zhihu.com/question/309428750
