@@ -223,7 +223,6 @@ https://k8smeetup.github.io/
 - 如何学习、了解kubernetes？ - Jimmy Song的回答 - 知乎 https://www.zhihu.com/question/37498459/answer/527503822
   * Kubernetes Handbook——Kubernetes中文指南/云原生应用架构实践手册 https://jimmysong.io/kubernetes-handbook/
 
-
 ## kubernetes 常用命令
 
 ## kubernetes 快速开始
@@ -240,6 +239,14 @@ Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-
 > Docker入门与实战 https://www.fangzhipeng.com/docker/2018/09/12/docker-action/
 
 Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqjFDsQ
+
+## kubernetes 组件
+
+### kubectl
+
+- docker用户过度到kubectl命令行指南 https://jimmysong.io/kubernetes-handbook/guide/docker-cli-to-kubectl.html
+- kubectl 命令技巧大全 https://jimmysong.io/kubernetes-handbook/guide/kubectl-cheatsheet.html
+
 
 ## kubernetes others
 
