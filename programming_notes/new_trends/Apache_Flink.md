@@ -1,4 +1,8 @@
 
+
+Apache Flink 中文文档 https://github.com/apachecn/flink-doc-zh
+> https://flink.apachecn.org
+
 阿里 7 亿元收购 Apache Flink 商业公司 DataArtisans https://mp.weixin.qq.com/s/MTEhwnfMAN9hCE749G_6uA
 > "Flink最区别于其他流计算引擎的，其实就是状态管理。
 >
