@@ -58,6 +58,11 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 寻找三原南中校友！三原县南郊中学百年校庆通知 https://mp.weixin.qq.com/s/yhI8Rxcx5xH0ew5RfZx3cQ
 
+###
+
+两天够玩狮城新加坡？ 篇一：准备工作：办签证、订机票，新加坡之旅美食篇__什么值得买 https://post.smzdm.com/p/739965/
+
+新加坡忙里偷闲 篇一：省钱省事攻略——境外免费WiFi汇总&芝麻信用办签证__什么值得买 https://post.smzdm.com/p/668578/
 
 ***--------------------------------------------------tooth extraction--------------------------------------------------***
 
