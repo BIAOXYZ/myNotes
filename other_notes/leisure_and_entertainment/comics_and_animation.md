@@ -33,6 +33,10 @@
 
 金坷垃原版 https://www.bilibili.com/video/av3643130
 
+### 丞相司徒
+
+诸葛亮骂死王朗原版 https://www.bilibili.com/video/av2003771
+
 ### 元首
 
 元首去世(2019.02.16)。哎，一路走好，大林在天堂等着你。
