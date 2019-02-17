@@ -29,7 +29,11 @@
 
 唐国强给鬼畜他的B站UP主颁奖：让诸葛亮比20年前还火 https://www.ithome.com/0/408/027.htm
 
-【电影《帝国的毁灭》“元首”希特勒饰演者Bruno Ganz去世，享年77岁】 https://www.ithome.com/0/409/696.htm
+### 元首
+
+元首去世(2019.02.16)。哎，一路走好，大林在天堂等着你。
+- 电影《帝国的毁灭》“元首”希特勒饰演者Bruno Ganz去世，享年77岁 https://www.ithome.com/0/409/696.htm
+- 【元首的愤怒】原版 https://www.bilibili.com/video/av22905
 
 ## 空耳
 
