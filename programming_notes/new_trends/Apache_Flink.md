@@ -15,3 +15,5 @@ Apache Flink 中文文档 https://github.com/apachecn/flink-doc-zh
 > 这其中原因是Flink利用了一套非常经典的Chandy-Lamport算法，它的核心思想是把这个流计算看成一个流式的拓扑，定期从这个拓扑的头部Source点开始插入特殊的Barries，从上游开始不断的向下游广播这个Barries。每一个节点收到所有的Barries,会将State做一次Snapshot，当每个节点都做完Snapshot之后，整个拓扑就算完整的做完了一次Checkpoint。接下来不管出现任何故障，都会从最近的Checkpoint进行恢复。
 >
 > Flink利用这套经典的算法，保证了强一致性的语义。这也是Flink与其他无状态流计算引擎的核心区别。
+
+Apache Flink，流计算？不仅仅是流计算！ https://mp.weixin.qq.com/s/DiE0NEoAAKkJCO7bT1djhQ
