@@ -16,6 +16,9 @@
 it-ebooks https://github.com/it-ebooks
 
 程序员专属的免费电子书下载网站，你知道你几个？ https://mp.weixin.qq.com/s/njSQK-ATpqR9cLMFsPjxhg
+- 9、Library Genesis http://gen.lib.rus.ec/
+- 评论区：
+  * https://bookist.cc
 
 # books general
 
