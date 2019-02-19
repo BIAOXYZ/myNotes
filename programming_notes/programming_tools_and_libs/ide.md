@@ -16,8 +16,38 @@ How to close an opened folder in Visual Studio Code https://stackoverflow.com/qu
 Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio - cnBeta.COM
 https://www.cnbeta.com/articles/soft/756969.htm
 
+### vscode护眼色修改
+
+- VSCode修改编辑器(代码窗口)背景色 https://blog.csdn.net/u013506207/article/details/80529858   【1】
+  > "如果你的VSCode使用的是自带的主题，可以直接到VSCode的安装目录下找到：\resources\app\extensions这个目录，该目录下以theme-开头的文件夹表示其是主题文件夹，按照自己当前使用的主题名称去找到对应的文件夹进去修改即可，在上面给出的参考链接中已有比较详细的说明。本文主要针对在这个目录下找不到的当前所使用主题的文件夹如何修改背景色。"
+  >
+  > "在你的用户目录下：通常是C:\Users[你的用户名].vscode\extensions存放你从vscode的插件库中下载的第三方插件，当然，主题也会在这里啦，所以找到你这个目录下包含有你当前主题名称的文件夹就是等下要修改的主题文件夹了。"
+- Visual Studio Code护眼绿豆沙主题修改 https://blog.csdn.net/Lean_on_Me/article/details/84552487   【2】
+  ```
+  这款主题是在亮色Atom One Light 的基础上修改的，首先下载并设置Atom One Light
+  
+  "workbench.colorCustomizations": {
+        "[Atom One Light]": {
+          "editor.background": "#C7EDCC",   
+	      "sideBar.background": "#C7EDCC",
+          "activityBar.background": "#C7EDCC",       
+        },
+    },
+  ```
+```
+总结一下：现在vscode改个背景色比过去麻烦多了。。。
+
+目前粗看是不能直接改vscode的背景色，只能是vscode当前在用某个主题（theme），然后改这个主题的背景色。于是【1】的主要目的
+是找到对应主题的json配置文件所在的目录；【2】的主要目的是把两个需要的选项替换成相应的护眼色。
+
+我最终的文件目录是：C:\Users\LiangLiu\.vscode\extensions\akamud.vscode-theme-onelight-2.1.0\themes\OneLight.json
+然后里面其实只改了两项"editor.background"和"sideBar.background"似乎就够了。
+```
+
 
 ***--------------------------------------------------分割线--------------------------------------------------***
+
+### vscode for go
 
 vscode golang配置说明 https://www.cnblogs.com/nickchou/p/9038114.html
 ```
@@ -33,9 +63,13 @@ VS code golang 开发环境搭建 - CSDN博客 https://blog.csdn.net/hil2000/art
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+### vscode for python
+
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
 
 ***--------------------------------------------------分割线--------------------------------------------------***
+
+### vscode for latex
 
 VS Code 与 LaTeX 真乃天作之合
 https://www.jianshu.com/p/57f8d1e026f5
