@@ -81,3 +81,11 @@ http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 Software release life cycle https://en.wikipedia.org/wiki/Software_release_life_cycle
 
 General Availability (GA) https://www.techopedia.com/definition/32284/general-availability-ga
+
+### PMC member
+
+- 谈谈社区里的头衔 https://blog.csdn.net/Adali/article/details/6860252
+  > "Apache (Apache Software Foundation, ASF) 在开源软件界大名鼎鼎， 它有个良好的制度保证其运行。社区成员分为几类：User, Developer, Committer, PMC member,  PMC Chair, ASF memeber.  权限由低到高， ASF member 就是核心圈成员，有董事会选举的投票权， 也可以参与董事会竞选。ASF member也有权利决定是否接受一个新项目。"
+- 科普丨程序员Apache开源社区进击之路 - CLI1的文章 - 知乎 https://zhuanlan.zhihu.com/p/24487169
+  > "成为有影响力的提交者后可以被选入项目管理委员会 (Project Management Committee, 简称PMC) ， 晋级为PMC成员 (PMC Member)！PMC 作为一个整体，独立监管一个或多个项目。除了PMC，就算是ASF的理事会 (Board) 也不能干涉项目社区内的具体事宜。"
+
