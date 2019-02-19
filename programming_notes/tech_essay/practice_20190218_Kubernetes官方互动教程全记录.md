@@ -70,7 +70,7 @@ This command shows all nodes that can be used to host our applications. Now we h
 
 ## Step 1 kubectl basics
 
-Like minikube, kubectl comes installed in the online terminal. Type kubectl in the terminal to see its usage. The common format of a kubectl command is: kubectl action resource. This performs the specified action (like create, describe) on the specified resource (like node, container). You can use `--help` after the command to get additional info about possible parameters (`kubectl get nodes --help`).
+Like minikube, kubectl comes installed in the online terminal. Type kubectl in the terminal to see its usage. The common format of a kubectl command is: ***kubectl action resource***. This performs the specified action (like create, describe) on the specified resource (like node, container). You can use `--help` after the command to get additional info about possible parameters (`kubectl get nodes --help`).
 
 Check that kubectl is configured to talk to your cluster, by running the `kubectl version` command:
 ```
@@ -358,7 +358,7 @@ NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
 kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   1m
 ```
 
-We have a Service called kubernetes that is created by default when minikube starts the cluster. To create a new service and expose it to external traffic we’ll use the **``expose``** command with NodePort as parameter (minikube does not support the LoadBalancer option yet).
+We have a Service called kubernetes that is created by default when minikube starts the cluster. To create a new service and expose it to external traffic we’ll use the ***expose*** command with NodePort as parameter (minikube does not support the LoadBalancer option yet).
 ```
 $ kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
 service/kubernetes-bootcamp exposed
@@ -465,7 +465,7 @@ $ echo Name of the Pod: $POD_NAME
 Name of the Pod: kubernetes-bootcamp-5c69669756-88fkn
 ```
 
-To apply a new label we use the **``label``** command followed by the object type, object name and the new label:
+To apply a new label we use the ***label*** command followed by the object type, object name and the new label:
 ```
 $ kubectl label pod $POD_NAME app=v1
 pod/kubernetes-bootcamp-5c69669756-88fkn labeled
@@ -564,19 +564,1110 @@ We see here that the application is up.
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-#
+# Interactive Tutorial - Scaling Your App (Module 5)
 
+> 运行应用程序的多个实例 https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/scale-intro/
+>> Interactive Tutorial - Scaling Your App https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-interactive/
+
+## Step 1: Scaling a deployment
+
+To list your deployments use the `get deployments` command: 
 ```
+$ kubectl get deployments
+NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kubernetes-bootcamp   1         1         1            1           4m
 ```
 
+We should have 1 Pod. If not, run the command again. This shows:
+
+- The DESIRED state is showing the configured number of replicas
+- The CURRENT state show how many replicas are running now
+- The UP-TO-DATE is the number of replicas that were updated to match the desired (configured) state
+- The AVAILABLE state shows how many replicas are actually AVAILABLE to the users
+
+Next, let’s scale the Deployment to 4 replicas. We’ll use the `kubectl scale` command, followed by the deployment type, name and desired number of instances:
 ```
+$ kubectl scale deployments/kubernetes-bootcamp --replicas=4
+deployment.extensions/kubernetes-bootcamp scaled
 ```
 
+To list your Deployments once again, use `get deployments`:
 ```
+$ kubectl get deployments
+NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kubernetes-bootcamp   4         4         4            4           7m
 ```
 
+The change was applied, and we have 4 instances of the application available. Next, let’s check if the number of Pods changed:
 ```
+$ kubectl get pods -o wide
+NAME                                   READY     STATUS    RESTARTS   AGE       IP        NODE
+kubernetes-bootcamp-5c69669756-9jzgb   1/1       Running   0          8m        172.18.0.4   minikube
+kubernetes-bootcamp-5c69669756-9k7fm   1/1       Running   0          2m        172.18.0.6   minikube
+kubernetes-bootcamp-5c69669756-vm4xk   1/1       Running   0          2m        172.18.0.7   minikube
+kubernetes-bootcamp-5c69669756-zckl4   1/1       Running   0          2m        172.18.0.5   minikube
 ```
 
+There are 4 Pods now, with different IP addresses. The change was registered in the Deployment events log. To check that, use the describe command:
 ```
+$ kubectl describe deployments/kubernetes-bootcamp
+Name:                   kubernetes-bootcamp
+Namespace:              default
+CreationTimestamp:      Tue, 19 Feb 2019 10:45:46 +0000
+Labels:                 run=kubernetes-bootcamp
+Annotations:            deployment.kubernetes.io/revision=1
+Selector:               run=kubernetes-bootcamp
+Replicas:               4 desired | 4 updated | 4 total | 4 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=kubernetes-bootcamp
+  Containers:
+   kubernetes-bootcamp:
+    Image:        gcr.io/google-samples/kubernetes-bootcamp:v1
+    Port:         8080/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   kubernetes-bootcamp-5c69669756 (4/4 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  10m   deployment-controller  Scaled up replica set kubernetes-bootcamp-5c69669756 to 1
+  Normal  ScalingReplicaSet  4m    deployment-controller  Scaled up replica set kubernetes-bootcamp-5c69669756 to 4
 ```
+You can also view in the output of this command that there are 4 replicas now.
+
+## Step 2: Load Balancing
+
+Let’s check that the Service is load-balancing the traffic. To find out the exposed IP and Port we can use the describe service as we learned in the previously Module:
+```
+$ kubectl describe services/kubernetes-bootcamp
+Name:                     kubernetes-bootcamp
+Namespace:                default
+Labels:                   run=kubernetes-bootcamp
+Annotations:              <none>
+Selector:                 run=kubernetes-bootcamp
+Type:                     NodePort
+IP:                       10.109.160.47
+Port:                     <unset>  8080/TCP
+TargetPort:               8080/TCP
+NodePort:                 <unset>  32623/TCP
+Endpoints:                172.18.0.4:8080,172.18.0.5:8080,172.18.0.6:8080 + 1 more...
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
+```
+
+Create an environment variable called NODE_PORT that has a value as the Node port:
+```
+$ export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+$ echo NODE_PORT=$NODE_PORT
+NODE_PORT=32623
+```
+
+Next, we’ll do a `curl` to the exposed IP and port. Execute the command multiple times:
+```
+$ curl $(minikube ip):$NODE_PORT
+Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp-5c69669756-zckl4 | v=1
+```
+We hit a different Pod with every request. This demonstrates that the load-balancing is working.
+
+## Step 3: Scale Down
+
+To scale down the Service to 2 replicas, run again the `scale` command:
+```
+$ kubectl scale deployments/kubernetes-bootcamp --replicas=2
+deployment.extensions/kubernetes-bootcamp scaled
+```
+
+List the Deployments to check if the change was applied with the `get deployments` command:
+```
+$ kubectl get deployments
+NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kubernetes-bootcamp   2         2         2            2           15m
+```
+
+The number of replicas decreased to 2. List the number of Pods, with `get pods`:
+```
+$ kubectl get pods -o wide
+NAME                                   READY     STATUS    RESTARTS   AGE       IP        NODE
+kubernetes-bootcamp-5c69669756-9jzgb   1/1       Running   0          16m       172.18.0.4   minikube
+kubernetes-bootcamp-5c69669756-zckl4   1/1       Running   0          10m       172.18.0.5   minikube
+```
+This confirms that 2 Pods were terminated.
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
+# Interactive Tutorial - Updating Your App (Module 6)
+
+> 执行滚动更新 https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/update-intro/
+>> Interactive Tutorial - Updating Your App https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-interactive/
+
+## Step 1: Update the version of the app
+
+To list your deployments use the `get deployments` command:
+```
+$ kubectl get deployments
+NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kubernetes-bootcamp   4         4         4            4           1m
+```
+
+To list the running Pods use the `get pods` command:
+```
+$ kubectl get pods
+NAME                                   READY     STATUS    RESTARTS   AGE
+kubernetes-bootcamp-5c69669756-bf5jx   1/1       Running   0          1m
+kubernetes-bootcamp-5c69669756-lgqw2   1/1       Running   0          1m
+kubernetes-bootcamp-5c69669756-n9k2g   1/1       Running   0          1m
+kubernetes-bootcamp-5c69669756-psgxf   1/1       Running   0          1m
+```
+
+To view the current image version of the app, run a `describe` command against the Pods (look at the Image field):
+```
+$ kubectl describe pods
+Name:           kubernetes-bootcamp-5c69669756-bf5jx
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:11:11 +0000
+Labels:         pod-template-hash=1725225312
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.4
+Controlled By:  ReplicaSet/kubernetes-bootcamp-5c69669756
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://36d77baddc817473e2895dcc47945a4c689415340a16d62543ffc518ceee1264
+    Image:          gcr.io/google-samples/kubernetes-bootcamp:v1
+    Image ID:       docker-pullable://gcr.io/google-samples/kubernetes-bootcamp@sha256:0d6b8ee63bb57c5f5b6156f446b3bc3b3c143d233037f3a2f00e279c8fcc64af
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:11:14 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                 Age              From               Message
+  ----     ------                 ----             ----               -------
+  Warning  FailedScheduling       1m (x5 over 2m)  default-scheduler  0/1 nodes are available: 1 node(s) were not ready.
+  Normal   Scheduled              1m               default-scheduler  Successfully assigned kubernetes-bootcamp-5c69669756-bf5jx to minikube
+  Normal   SuccessfulMountVolume  1m               kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal   Pulled                 1m               kubelet, minikube  Container image "gcr.io/google-samples/kubernetes-bootcamp:v1" already present on machine
+  Normal   Created                1m               kubelet, minikube  Created container
+  Normal   Started                1m               kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-5c69669756-lgqw2
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:11:11 +0000
+Labels:         pod-template-hash=1725225312
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.5
+Controlled By:  ReplicaSet/kubernetes-bootcamp-5c69669756
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://339626a9270a595206cd1bca86ce9a3043578254a428a222f687ce8b6f671a63
+    Image:          gcr.io/google-samples/kubernetes-bootcamp:v1
+    Image ID:       docker-pullable://gcr.io/google-samples/kubernetes-bootcamp@sha256:0d6b8ee63bb57c5f5b6156f446b3bc3b3c143d233037f3a2f00e279c8fcc64af
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:11:13 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                 Age              From               Message
+  ----     ------                 ----             ----               -------
+  Warning  FailedScheduling       1m (x5 over 2m)  default-scheduler  0/1 nodes are available: 1 node(s) were not ready.
+  Normal   Scheduled              1m               default-scheduler  Successfully assigned kubernetes-bootcamp-5c69669756-lgqw2 to minikube
+  Normal   SuccessfulMountVolume  1m               kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal   Pulled                 1m               kubelet, minikube  Container image "gcr.io/google-samples/kubernetes-bootcamp:v1" already present on machine
+  Normal   Created                1m               kubelet, minikube  Created container
+  Normal   Started                1m               kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-5c69669756-n9k2g
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:11:11 +0000
+Labels:         pod-template-hash=1725225312
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.7
+Controlled By:  ReplicaSet/kubernetes-bootcamp-5c69669756
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://81ef67f111f99662e20c8caf3b266b25c0453ba44b0ba577c11ea60181ef2d48
+    Image:          gcr.io/google-samples/kubernetes-bootcamp:v1
+    Image ID:       docker-pullable://gcr.io/google-samples/kubernetes-bootcamp@sha256:0d6b8ee63bb57c5f5b6156f446b3bc3b3c143d233037f3a2f00e279c8fcc64af
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:11:14 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                 Age              From               Message
+  ----     ------                 ----             ----               -------
+  Warning  FailedScheduling       1m (x5 over 2m)  default-scheduler  0/1 nodes are available: 1 node(s) were not ready.
+  Normal   Scheduled              1m               default-scheduler  Successfully assigned kubernetes-bootcamp-5c69669756-n9k2g to minikube
+  Normal   SuccessfulMountVolume  1m               kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal   Pulled                 1m               kubelet, minikube  Container image "gcr.io/google-samples/kubernetes-bootcamp:v1" already present on machine
+  Normal   Created                1m               kubelet, minikube  Created container
+  Normal   Started                1m               kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-5c69669756-psgxf
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:11:11 +0000
+Labels:         pod-template-hash=1725225312
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.6
+Controlled By:  ReplicaSet/kubernetes-bootcamp-5c69669756
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://aae5e1c2ee67f73a83d2993f7f4df3256c8babb7f8a4073d6bd287b765d3676f
+    Image:          gcr.io/google-samples/kubernetes-bootcamp:v1
+    Image ID:       docker-pullable://gcr.io/google-samples/kubernetes-bootcamp@sha256:0d6b8ee63bb57c5f5b6156f446b3bc3b3c143d233037f3a2f00e279c8fcc64af
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:11:14 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                 Age              From               Message
+  ----     ------                 ----             ----               -------
+  Warning  FailedScheduling       1m (x5 over 2m)  default-scheduler  0/1 nodes are available: 1 node(s) were not ready.
+  Normal   Scheduled              1m               default-scheduler  Successfully assigned kubernetes-bootcamp-5c69669756-psgxf to minikube
+  Normal   SuccessfulMountVolume  1m               kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal   Pulled                 1m               kubelet, minikube  Container image "gcr.io/google-samples/kubernetes-bootcamp:v1" already present on machine
+  Normal   Created                1m               kubelet, minikube  Created container
+  Normal   Started                1m               kubelet, minikube  Started container
+```
+
+To update the image of the application to version 2, use the `set image` command, followed by the deployment name and the new image version:
+```
+$ kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+deployment.extensions/kubernetes-bootcamp image updated
+```
+
+The command notified the Deployment to use a different image for your app and initiated a rolling update. Check the status of the new Pods, and view the old one terminating with the `get pods` command:
+```
+$ kubectl get pods
+NAME                                   READY     STATUS    RESTARTS   AGE
+kubernetes-bootcamp-7799cbcb86-4r2sv   1/1       Running   0          50s
+kubernetes-bootcamp-7799cbcb86-n45v5   1/1       Running   0          49s
+kubernetes-bootcamp-7799cbcb86-rr424   1/1       Running   0          48s
+kubernetes-bootcamp-7799cbcb86-z5h29   1/1       Running   0          51s
+```
+
+## Step 2: Verify an update
+
+First, let’s check that the App is running. To find out the exposed IP and Port we can use `describe service`:
+```
+$ kubectl describe services/kubernetes-bootcamp
+Name:                     kubernetes-bootcamp
+Namespace:                default
+Labels:                   run=kubernetes-bootcamp
+Annotations:              <none>
+Selector:                 run=kubernetes-bootcamp
+Type:                     NodePort
+IP:                       10.100.142.117
+Port:                     <unset>  8080/TCP
+TargetPort:               8080/TCP
+NodePort:                 <unset>  32543/TCP
+Endpoints:                172.18.0.10:8080,172.18.0.11:8080,172.18.0.8:8080 + 1 more...
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
+```
+
+Create an environment variable called NODE_PORT that has the value of the Node port assigned:
+```
+$ export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+$ echo NODE_PORT=$NODE_PORT
+NODE_PORT=32543
+```
+
+Next, we’ll do a `curl` to the the exposed IP and port:
+```
+$ curl $(minikube ip):$NODE_PORT
+Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp-7799cbcb86-n45v5 | v=2
+```
+
+We hit a different Pod with every request and we see that all Pods are running the latest version (v2).
+
+The update can be confirmed also by running a rollout status command:
+```
+$ kubectl rollout status deployments/kubernetes-bootcamp
+deployment "kubernetes-bootcamp" successfully rolled out
+```
+
+To view the current image version of the app, run a describe command against the Pods:
+```
+$ kubectl describe pods
+Name:           kubernetes-bootcamp-7799cbcb86-4r2sv
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:45 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.9
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://1f92a6c8805285652737946f689d4b7b1339eae0129a760fc91c6e42b8b45f0f
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              4m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-4r2sv to minikube
+  Normal  SuccessfulMountVolume  4m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 4m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                4m    kubelet, minikube  Created container
+  Normal  Started                4m    kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-n45v5
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:46 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.10
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://00794a87b7f33b1aa37d51526c20ea596bf1f8e2091b8d116ee3120373194e3e
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:47 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              4m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-n45v5 to minikube
+  Normal  SuccessfulMountVolume  4m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 4m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                4m    kubelet, minikube  Created container
+  Normal  Started                4m    kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-rr424
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:47 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.11
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://ce8b147733f9127cee6456643c9de664d29eb3a4e3b56b18d59261a1ba0c8667
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:48 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              4m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-rr424 to minikube
+  Normal  SuccessfulMountVolume  4m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 4m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                4m    kubelet, minikube  Created container
+  Normal  Started                4m    kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-z5h29
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:45 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.8
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://47c0633a189ad12a2f39b912ae8fad68de3819aa032bda6b156533e0c6c5b05c
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              4m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-z5h29 to minikube
+  Normal  SuccessfulMountVolume  4m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 4m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                4m    kubelet, minikube  Created container
+  Normal  Started                4m    kubelet, minikube  Started container
+```
+We run now version 2 of the app (look at the Image field)
+
+## Step 3: Rollback an update
+
+Let’s perform another update, and deploy image tagged as `v10`:
+```
+$ kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10
+deployment.extensions/kubernetes-bootcamp image updated
+```
+
+Use `get deployments` to see the status of the deployment:
+```
+$ kubectl get deployments
+NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kubernetes-bootcamp   4         5         2            3           10m
+```
+
+And something is wrong… We do not have the desired number of Pods available. List the Pods again:
+```
+$ kubectl get pods
+NAME                                   READY     STATUS             RESTARTS   AGE
+kubernetes-bootcamp-5f76cd7b94-qsp6x   0/1       ImagePullBackOff   0          1m
+kubernetes-bootcamp-5f76cd7b94-xch4w   0/1       ImagePullBackOff   0          1m
+kubernetes-bootcamp-7799cbcb86-4r2sv   1/1       Running            0          7m
+kubernetes-bootcamp-7799cbcb86-n45v5   1/1       Running            0          7m
+kubernetes-bootcamp-7799cbcb86-z5h29   1/1       Running            0          7m
+```
+
+A `describe` command on the Pods should give more insights:
+```
+$ kubectl describe pods
+Name:           kubernetes-bootcamp-5f76cd7b94-qsp6x
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:20:37 +0000
+Labels:         pod-template-hash=1932783650
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Pending
+IP:             172.18.0.4
+Controlled By:  ReplicaSet/kubernetes-bootcamp-5f76cd7b94
+Containers:
+  kubernetes-bootcamp:
+    Container ID:
+    Image:          gcr.io/google-samples/kubernetes-bootcamp:v10
+    Image ID:
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          False
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                 Age               From               Message
+  ----     ------                 ----              ----               -------
+  Normal   Scheduled              2m                default-scheduler  Successfully assigned kubernetes-bootcamp-5f76cd7b94-qsp6x to minikube
+  Normal   SuccessfulMountVolume  2m                kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal   Pulling                1m (x4 over 2m)   kubelet, minikube  pulling image"gcr.io/google-samples/kubernetes-bootcamp:v10"
+  Warning  Failed                 1m (x4 over 2m)   kubelet, minikube  Failed to pull image "gcr.io/google-samples/kubernetes-bootcamp:v10": rpc error: code = Unknown desc = unauthorized: authentication required
+  Warning  Failed                 1m (x4 over 2m)   kubelet, minikube  Error: ErrImagePull
+  Normal   BackOff                47s (x6 over 2m)  kubelet, minikube  Back-off pulling image "gcr.io/google-samples/kubernetes-bootcamp:v10"
+  Warning  Failed                 47s (x6 over 2m)  kubelet, minikube  Error: ImagePullBackOff
+
+
+Name:           kubernetes-bootcamp-5f76cd7b94-xch4w
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:20:37 +0000
+Labels:         pod-template-hash=1932783650
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Pending
+IP:             172.18.0.5
+Controlled By:  ReplicaSet/kubernetes-bootcamp-5f76cd7b94
+Containers:
+  kubernetes-bootcamp:
+    Container ID:
+    Image:          gcr.io/google-samples/kubernetes-bootcamp:v10
+    Image ID:
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          False
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                 Age               From               Message
+  ----     ------                 ----              ----               -------
+  Normal   Scheduled              2m                default-scheduler  Successfully assigned kubernetes-bootcamp-5f76cd7b94-xch4w to minikube
+  Normal   SuccessfulMountVolume  2m                kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal   Pulling                1m (x4 over 2m)   kubelet, minikube  pulling image"gcr.io/google-samples/kubernetes-bootcamp:v10"
+  Warning  Failed                 1m (x4 over 2m)   kubelet, minikube  Failed to pull image "gcr.io/google-samples/kubernetes-bootcamp:v10": rpc error: code = Unknown desc = unauthorized: authentication required
+  Warning  Failed                 1m (x4 over 2m)   kubelet, minikube  Error: ErrImagePull
+  Normal   BackOff                40s (x6 over 2m)  kubelet, minikube  Back-off pulling image "gcr.io/google-samples/kubernetes-bootcamp:v10"
+  Warning  Failed                 40s (x6 over 2m)  kubelet, minikube  Error: ImagePullBackOff
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-4r2sv
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:45 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.9
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://1f92a6c8805285652737946f689d4b7b1339eae0129a760fc91c6e42b8b45f0f
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              8m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-4r2sv to minikube
+  Normal  SuccessfulMountVolume  8m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 8m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                8m    kubelet, minikube  Created container
+  Normal  Started                8m    kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-n45v5
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:46 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.10
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://00794a87b7f33b1aa37d51526c20ea596bf1f8e2091b8d116ee3120373194e3e
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:47 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              8m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-n45v5 to minikube
+  Normal  SuccessfulMountVolume  8m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 8m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                8m    kubelet, minikube  Created container
+  Normal  Started                8m    kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-z5h29
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:45 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.8
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://47c0633a189ad12a2f39b912ae8fad68de3819aa032bda6b156533e0c6c5b05c
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              8m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-z5h29 to minikube
+  Normal  SuccessfulMountVolume  8m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 8m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                8m    kubelet, minikube  Created container
+  Normal  Started                8m    kubelet, minikube  Started container
+```
+
+There is no image called `v10` in the repository. Let’s roll back to our previously working version. We’ll use the `rollout` undo command:
+```
+$ kubectl rollout undo deployments/kubernetes-bootcamp
+deployment.extensions/kubernetes-bootcamp
+```
+
+The `rollout` command reverted the deployment to the previous known state (v2 of the image). Updates are versioned and you can revert to any previously know state of a Deployment. List again the Pods:
+```
+$ kubectl get pods
+NAME                                   READY     STATUS    RESTARTS   AGE
+kubernetes-bootcamp-7799cbcb86-4r2sv   1/1       Running   0          11m
+kubernetes-bootcamp-7799cbcb86-n45v5   1/1       Running   0          11m
+kubernetes-bootcamp-7799cbcb86-pw7fw   1/1       Running   0          49s
+kubernetes-bootcamp-7799cbcb86-z5h29   1/1       Running   0          11m
+```
+
+Four Pods are running. Check again the image deployed on the them:
+```
+$ kubectl describe pods
+Name:           kubernetes-bootcamp-7799cbcb86-4r2sv
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:45 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.9
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://1f92a6c8805285652737946f689d4b7b1339eae0129a760fc91c6e42b8b45f0f
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              11m   default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-4r2sv to minikube
+  Normal  SuccessfulMountVolume  11m   kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 11m   kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                11m   kubelet, minikube  Created container
+  Normal  Started                11m   kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-n45v5
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:46 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.10
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://00794a87b7f33b1aa37d51526c20ea596bf1f8e2091b8d116ee3120373194e3e
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:47 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              11m   default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-n45v5 to minikube
+  Normal  SuccessfulMountVolume  11m   kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 11m   kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                11m   kubelet, minikube  Created container
+  Normal  Started                11m   kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-pw7fw
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:25:03 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.6
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://c8318d41bd2c52237d43cb471bc9ba4eca8009cd5f51216fbeb3bc2f32506931
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:25:03 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              1m    default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-pw7fw to minikube
+  Normal  SuccessfulMountVolume  1m    kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 1m    kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                1m    kubelet, minikube  Created container
+  Normal  Started                1m    kubelet, minikube  Started container
+
+
+Name:           kubernetes-bootcamp-7799cbcb86-z5h29
+Namespace:      default
+Node:           minikube/172.17.0.27
+Start Time:     Tue, 19 Feb 2019 11:14:45 +0000
+Labels:         pod-template-hash=3355767642
+                run=kubernetes-bootcamp
+Annotations:    <none>
+Status:         Running
+IP:             172.18.0.8
+Controlled By:  ReplicaSet/kubernetes-bootcamp-7799cbcb86
+Containers:
+  kubernetes-bootcamp:
+    Container ID:   docker://47c0633a189ad12a2f39b912ae8fad68de3819aa032bda6b156533e0c6c5b05c
+    Image:          jocatalin/kubernetes-bootcamp:v2
+    Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 19 Feb 2019 11:14:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-hxjgm (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  default-token-hxjgm:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-hxjgm
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason                 Age   From               Message
+  ----    ------                 ----  ----               -------
+  Normal  Scheduled              11m   default-scheduler  Successfully assigned kubernetes-bootcamp-7799cbcb86-z5h29 to minikube
+  Normal  SuccessfulMountVolume  11m   kubelet, minikube  MountVolume.SetUp succeeded for volume "default-token-hxjgm"
+  Normal  Pulled                 11m   kubelet, minikube  Container image "jocatalin/kubernetes-bootcamp:v2" already present on machine
+  Normal  Created                11m   kubelet, minikube  Created container
+  Normal  Started                11m   kubelet, minikube  Started container
+```
+We see that the deployment is using a stable version of the app (v2). The Rollback was successful.
+
