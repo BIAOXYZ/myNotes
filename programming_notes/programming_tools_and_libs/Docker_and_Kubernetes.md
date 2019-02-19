@@ -2,13 +2,20 @@
 
 # 官方连接
 
-docker中文社区站  http://www.docker.org.cn/
-
-Docker Swarm https://docs.docker.com/engine/swarm/swarm-tutorial/
+Docker https://www.docker.com/
 
 docker官方文档
 - https://docs.docker.com/
 - https://docs.docker-cn.com/
+
+Get Started with Docker https://www.docker.com/get-started
+- Play with Docker Classroom https://training.play-with-docker.com/
+
+Docker Hub https://hub.docker.com/
+
+--------------------------------------------------
+
+docker中文社区站  http://www.docker.org.cn/
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
@@ -21,7 +28,6 @@ Kubernetes Documentation https://kubernetes.io/docs/home/
   * Pods https://kubernetes.io/docs/concepts/workloads/pods/
 - Tutorials https://kubernetes.io/docs/tutorials/
   * Overview of Kubernetes Online Training https://kubernetes.io/docs/tutorials/online-training/overview/
-
 
 --------------------------------------------------
 
@@ -178,9 +184,10 @@ http://www.cnblogs.com/kevinX/p/5458251.html
 
 # docker swarm
 
+Docker Swarm https://docs.docker.com/engine/swarm/swarm-tutorial/
+
 深入浅出Docker Swarm
 https://www.csdn.net/article/2015-01-26/2823714
-
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
