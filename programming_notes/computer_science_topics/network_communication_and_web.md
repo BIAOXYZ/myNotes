@@ -26,3 +26,10 @@ HTTP长连接和短连接 https://www.cnblogs.com/0201zcr/p/4694945.html
 
 HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.html
 
+# others
+
+### localhost versus 127.0.0.1
+
+- localhost、127.0.0.1 和 本机IP 三者的区别? - 知乎 https://www.zhihu.com/question/23940717
+- What is the difference between 127.0.0.1 and localhost https://stackoverflow.com/questions/7382602/what-is-the-difference-between-127-0-0-1-and-localhost
+- What is the difference between 127.0.0.1 and my assigned IPv4 address? https://superuser.com/questions/897699/what-is-the-difference-between-127-0-0-1-and-my-assigned-ipv4-address
