@@ -36,6 +36,7 @@ Kubernetes中文社区 https://www.kubernetes.org.cn/
 - 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
 
 Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
+- Kubernetes kubectl 命令表 http://docs.kubernetes.org.cn/683.html
 
 --------------------------------------------------
 
@@ -233,6 +234,8 @@ https://k8smeetup.github.io/
 ## kubernetes 常用命令
 
 Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesbyexample.com/
+- DIY -- Try out for yourself http://kubernetesbyexample.com/diy/
+  * Installing Minishift https://docs.okd.io/latest/minishift/getting-started/installing.html
 - Pods -- Kubernetes pods by example http://kubernetesbyexample.com/pods/
 
 ## kubernetes 快速开始
@@ -276,9 +279,17 @@ Docker官方将支持Kubernetes，容器编排大战宣告结束 http://www.info
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# openshift
+# OpenShift
+
+## openshift official
 
 OPENSHIFT Online https://manage.openshift.com/
+
+OpenShift Documentation https://docs.openshift.com/
+- Upgrading Clusters
+  * Upgrade Methods and Strategies https://docs.openshift.com/container-platform/3.9/upgrading/index.html
+
+##
 
 Django Example: This is a Django project that you can use as the starting point to develop your own and deploy it on an OpenShift cluster. https://github.com/sclorg/django-ex/tree/master
 
