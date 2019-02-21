@@ -1,4 +1,5 @@
 
+# 马里奥
 
 [第一部全集]抖S做了个马里奥给朋友玩
 - P4 波纹疾走 https://www.bilibili.com/video/av343276/?p=4  -->  贝爷的宠物红耀西，各种吃，吃了龟壳还会飞~；屏幕加速，不快走会被屏幕挤死
@@ -9,3 +10,10 @@
 
 [第二部全集]抖S做了个马里奥给朋友玩 https://www.bilibili.com/video/av344751/
 - 马里奥的微笑 https://www.bilibili.com/video/av344751/?p=3  -->  我觉得名字不如叫“啪啪啪君的掌声”。真是太不容易了，虽然这还不是最难的一关。。。
+
+
+# 掌机
+
+虽然价格一千多，但光看颜值就值得你下手，它还全能到是 MP4、游戏机、树莓派、开发板…… https://mp.weixin.qq.com/s/01vnCDKfR5QRQMZMyc3Ogg
+> "GameShell 搭载了基于 Linux 的「ClockWork OS」，整体的使用体验十分的流畅简单，内置了简体中文。ClockWork OS 目前也已经在 Github 上开源。"
+
