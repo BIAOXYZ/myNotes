@@ -19,6 +19,9 @@ Simple DNSCrypt https://www.simplednscrypt.org/
    用户使用时请在DNS配置的第一栏和第二栏里分别填写主要地址和备用地址。
    ```
 
+网速变慢？你可能需要先设置好 DNS | 科普 https://sspai.com/post/42125
+
+
 # hosts
 
 镜像：https://coding.net/u/scaffrey/p/hosts/git https://github.com/googlehosts/hosts
