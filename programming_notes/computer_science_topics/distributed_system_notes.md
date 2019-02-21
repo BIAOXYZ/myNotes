@@ -80,4 +80,6 @@ raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
 
 ETCD实现技术总结 https://www.jianshu.com/p/d63265949e52
 
+etcd 集群大小迷思 https://www.yangcs.net/posts/etcd-cluster-number/
+> "etcd 使用 raft 协议保证各个节点之间的状态一致。根据 raft 算法原理，节点数目越多，会降低集群的写性能。这是因为每一次写操作，需要集群中大多数节点将日志落盘成功后，Leader 节点才能将修改内部状态机，并返回将结果返回给客户端。但是根据 etcd 分布式数据冗余策略，集群节点越多，容错能力(Failure Tolerance)越强。所以关于集群大小的优化，其实就是容错和写性能的一个平衡。"
 
