@@ -62,6 +62,12 @@ bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/top
 
 萌王 https://zh.moegirl.org/zh/%E8%90%8C%E7%8E%8B
 
+--------------------------------------------------
+
+御坂美琴B萌应援团 https://mikoto.us/
+
+--------------------------------------------------
+
 如何评价亚丝娜（结城明日奈）？ - 知乎 https://www.zhihu.com/question/65520439/answer/232528553
 ```
 一个迷倒了桐人身边女性的角色。
