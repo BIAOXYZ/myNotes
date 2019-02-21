@@ -274,6 +274,8 @@ Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqj
 - docker用户过度到kubectl命令行指南 https://jimmysong.io/kubernetes-handbook/guide/docker-cli-to-kubectl.html
 - kubectl 命令技巧大全 https://jimmysong.io/kubernetes-handbook/guide/kubectl-cheatsheet.html
 
+Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-perspectives/imperative-declarative-and-a-few-kubectl-tricks-9d6deabdde
+> "However you will see very quickly that these CLI wrappers are very limiting. The full schema is not configurable. For example with kubectl run you cannot create a Pod with multiple containers and you cannot create volumes."
 
 ## kubernetes others
 
@@ -282,6 +284,7 @@ Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
 - Kubernetes 的奇技淫巧 -- 打造高效的命令行终端 https://www.yangcs.net/posts/kubernetes-fucking-trick/
 
 50+ 顶级开源 Kubernetes 工具列表 https://www.infoq.cn/article/RPA-wswoEyjuRZfTMcut
+
 
 ### kubernetes news
 
