@@ -28,6 +28,13 @@ Kubernetes Documentation https://kubernetes.io/docs/home/
   * Pods https://kubernetes.io/docs/concepts/workloads/pods/
 - Tutorials https://kubernetes.io/docs/tutorials/
   * Overview of Kubernetes Online Training https://kubernetes.io/docs/tutorials/online-training/overview/
+  
+--------------------------------------------------  
+
+Production-Grade Container Scheduling and Management https://kubernetes.io || https://github.com/kubernetes/kubernetes
+
+Kubernetes community content https://github.com/kubernetes/community
+- Kubernetes Contributor Guide https://github.com/kubernetes/community/blob/master/contributors/guide/README.md
 
 --------------------------------------------------
 
@@ -37,6 +44,8 @@ Kubernetes中文社区 https://www.kubernetes.org.cn/
 
 Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 - Kubernetes kubectl 命令表 http://docs.kubernetes.org.cn/683.html
+- Kubernetes 架构 http://docs.kubernetes.org.cn/251.html
+  * Kubernetes指南 https://legacy.gitbook.com/book/feisky/kubernetes/details
 
 --------------------------------------------------
 
@@ -216,11 +225,18 @@ docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/ar
 
 # Kubernetes
 
+## kubernetes books
+
+Kubernetes中文指南/云原生应用架构实践手册 https://github.com/rootsongjc/kubernetes-handbook
+> https://jimmysong.io/kubernetes-handbook/
+
+Kubernetes Handbook （Kubernetes指南） https://github.com/feiskyer/kubernetes-handbook
+- Kubernetes指南 https://kubernetes.feisky.xyz
+- Kubernetes指南 https://legacy.gitbook.com/book/feisky/kubernetes/details
+
 ## kubernetes general
 
 A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ || https://github.com/ramitsurana/awesome-kubernetes
-
-Kubernetes中文指南/云原生应用架构实践手册 https://github.com/rootsongjc/kubernetes-handbook
 
 https://k8smeetup.github.io/
 - Kubernetes Basics https://k8smeetup.github.io/docs/tutorials/kubernetes-basics/
@@ -240,13 +256,11 @@ Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesb
 
 ## kubernetes 快速开始
 
-Kubernetes系统架构简介
-http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction
+Kubernetes系统架构简介 http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction
 
 Docker 和 Kubernetes：给程序员的快速指南 - 江宏的文章 - 知乎 https://zhuanlan.zhihu.com/p/39937913
 
-Kubernetes初探 - CSDN博客
-https://blog.csdn.net/zhangjun2915/article/details/40598151
+Kubernetes初探 - CSDN博客 https://blog.csdn.net/zhangjun2915/article/details/40598151
 
 Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-basic1/
 > Docker入门与实战 https://www.fangzhipeng.com/docker/2018/09/12/docker-action/
