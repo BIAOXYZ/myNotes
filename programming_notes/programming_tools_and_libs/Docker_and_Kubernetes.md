@@ -232,6 +232,9 @@ https://k8smeetup.github.io/
 
 ## kubernetes 常用命令
 
+Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesbyexample.com/
+- Pods -- Kubernetes pods by example http://kubernetesbyexample.com/pods/
+
 ## kubernetes 快速开始
 
 Kubernetes系统架构简介
@@ -265,8 +268,7 @@ Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
 
 ### kubernetes news
 
-Docker官方将支持Kubernetes，容器编排大战宣告结束
-http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
+Docker官方将支持Kubernetes，容器编排大战宣告结束 http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
 
 对不起Linux，Kubernetes现在是更重要的操作系统！ http://www.sohu.com/a/277404425_610730
 > Sorry, Linux. Kubernetes is now the OS that matters https://www.infoworld.com/article/3322120/kubernetes/sorry-linux-kubernetes-is-now-the-os-that-matters.html
