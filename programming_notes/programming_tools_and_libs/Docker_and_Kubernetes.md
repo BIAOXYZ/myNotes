@@ -274,6 +274,14 @@ http://www.infoq.com/cn/news/2017/10/Docker-Kubernetes-Swarm
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# openshift
+
+OPENSHIFT Online https://manage.openshift.com/
+
+Django Example: This is a Django project that you can use as the starting point to develop your own and deploy it on an OpenShift cluster. https://github.com/sclorg/django-ex/tree/master
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # Prometheus
 
 还不了解 CNCF？关于 CNCF 的三问三答！ http://blog.daocloud.io/cncf-3/
