@@ -67,6 +67,13 @@ http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 - Jenkins 持续集成
 - JIRA 问题单，记录任务
 
+# terminologies of software engineering
+
+### [Upstream (software development)](https://en.wikipedia.org/wiki/Upstream_(software_development))
+
+上游 (软件开发) https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B8%B8_(%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC)
+> "在软件开发中，上游通常是指拥有软件源代码的原作者或是维护者，他们通常也较容易发现程序错误及使用Patch程序来修复。举例来说，一个补丁被送到上游即为提供给软件的原作者或是维护者。如果被接受了，作者或维护者就会包含该部分的补丁到他们软件中，可能是立即发布或包含在未来的版本中。如果被拒绝了，提交补丁的人就不得不继续维护自他们自己的版本。"
+
 ### 关于看板/Kanban
 
 我一直以为"看板"这个词是根据某个英文"xxx board"**意译**过来的，结果竟然他妹的是**音译**过来的。。。
