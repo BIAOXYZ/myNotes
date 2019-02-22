@@ -270,6 +270,8 @@ Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-
 
 Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqjFDsQ
 
+Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882
+
 ## kubernetes 组件
 
 ### kubectl
