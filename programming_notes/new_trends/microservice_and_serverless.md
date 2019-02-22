@@ -1,4 +1,11 @@
 
+
+# microservice general
+
+A curated list of Microservice Architecture related principles and technologies. https://github.com/mfornos/awesome-microservices
+
+#
+
 https://www.quora.com/How-is-microservice-based-architecture-different-from-serverless
 
 https://medium.com/elevate-by-lateral-view/from-monolith-to-microservices-the-serverless-approach-aac9767f0039
