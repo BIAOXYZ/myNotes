@@ -280,6 +280,20 @@ Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqj
 Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-perspectives/imperative-declarative-and-a-few-kubectl-tricks-9d6deabdde
 > "However you will see very quickly that these CLI wrappers are very limiting. The full schema is not configurable. For example with kubectl run you cannot create a Pod with multiple containers and you cannot create volumes."
 
+### Ingress
+
+- Ingress https://kubernetes.io/docs/concepts/services-networking/ingress/
+- Kubernetes Ingress 101: NodePort, Load Balancers, and Ingress Controllers https://blog.getambassador.io/kubernetes-ingress-nodeport-load-balancers-and-ingress-controllers-6e29f1c44f2d
+  * > "Note that an ingress controller typically doesn’t eliminate the need for an external load balancer — the ingress controller simply adds an additional layer of routing and control behind the load balancer." --> 这个不一定吧？感觉各种在变，说法不一样。
+- Kubernetes Ingress with Nginx Example https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
+  * > "Ingress, on the other hand, is a completely independent resource to your service. You declare, create and destroy it separately to your services.
+    >
+    > This makes it decoupled and isolated from the services you want to expose. It also helps you to consolidate routing rules into one place.
+    >
+    > The one downside is that you need to configure an Ingress Controller for your cluster. But that’s pretty easy—in this example, we’ll use the Nginx Ingress Controller."
+- Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
+- Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
+
 ## kubernetes others
 
 Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
