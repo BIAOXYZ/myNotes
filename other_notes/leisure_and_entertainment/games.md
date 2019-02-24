@@ -1,4 +1,8 @@
 
+# DOTA & DOTA2 
+
+电子竞技有哪些玄学？ - 疯癫的A兵者的回答 - 知乎 https://www.zhihu.com/question/67225512/answer/345458974
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
