@@ -12,6 +12,8 @@
 
 安装夸克 3.0 后，我再也不想「百度一下」了 https://mp.weixin.qq.com/s/x4z2g9SZdcjwiPC_1y6sLA
 
+免费全平台的文件分享利器：SendAnywhere https://sspai.com/post/40047
+
 ## 休闲娱乐
 
 ### 视频
