@@ -16,6 +16,8 @@
 我们是兼职在辟谣，别人是全职在传播伪科学 https://www.huxiu.com/article/261944.html
 > zhizhongli的个人博客 http://blog.sciencenet.cn/u/zhizhongli
 
+抗癌之路，终点都在美国 https://www.huxiu.com/article/270012.html
+
 
 # 其他
 

@@ -20,3 +20,9 @@ https://www.juzimi.com/ju/1741097
 # 电影
 
 三和人才市场 中国日结1500日元的年轻人们 https://movie.douban.com/subject/30219684/
+
+# others
+
+如何通过拍黄片建立起一个互联网帝国 https://www.huxiu.com/article/261886.html
+> "2017年末，DMM收购了新成立不久的二手商品交易网站CASH。让人惊讶的是，龟山只是在facebook上私聊了两句“你好我是龟山！公司出售吗？不可以吗？”就谈成了这笔交易。"
+
