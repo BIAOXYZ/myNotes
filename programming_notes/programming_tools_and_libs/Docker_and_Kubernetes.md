@@ -279,8 +279,16 @@ Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers 
 - docker用户过度到kubectl命令行指南 https://jimmysong.io/kubernetes-handbook/guide/docker-cli-to-kubectl.html
 - kubectl 命令技巧大全 https://jimmysong.io/kubernetes-handbook/guide/kubectl-cheatsheet.html
 
+--------------------------------------------------
+
 Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-perspectives/imperative-declarative-and-a-few-kubectl-tricks-9d6deabdde
 > "However you will see very quickly that these CLI wrappers are very limiting. The full schema is not configurable. For example with kubectl run you cannot create a Pod with multiple containers and you cannot create volumes."
+
+- kubectl命令管理kubernetes对象的三种方式 https://blog.csdn.net/dkfajsldfsdfsd/article/details/80916543
+- Kubernetes 对象管理的三种方式 https://blog.csdn.net/kikajack/article/details/80216582
+
+--------------------------------------------------
+
 
 ### Ingress
 
