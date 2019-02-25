@@ -893,3 +893,11 @@ GitLab发布Web IDE 在Web端为你提供集成开发体验 - Open Source 开源
 ```
 
 https://gitlab.com/help/ci/quick_start/README
+
+### 自建git服务相关
+
+#### gitea
+
+ Git with a cup of tea, painless self-hosted git service https://github.com/go-gitea/gitea
+ > Gitea - Git with a cup of tea -- A painless self-hosted Git service. https://gitea.io
+
