@@ -69,6 +69,9 @@ stackoverflow上关于python的翻译 https://github.com/taizilongxu/stackoverfl
 
 notebook_with_decorative_cover 在学院的书架上发现了一本不带脑子就能看懂的书《Python数据挖掘与实战》 https://github.com/LinXueyuanStdio/PythonDataMining
 
+Python Cheat Sheet https://github.com/crazyguitar/pysheeet
+> Python Cheat Sheet https://www.pythonsheets.com
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
