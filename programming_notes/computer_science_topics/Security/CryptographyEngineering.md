@@ -32,4 +32,11 @@ ECC加密算法 https://blog.csdn.net/u010129119/article/details/62887707
 - Java密码学 非对称加密以及使用secp256k1进行数字签名（ECDSA），也适合Android（上） https://www.jianshu.com/p/676a0eb33d31
 - Java密码学 非对称加密以及使用secp256k1进行数字签名（ECDSA），也适合Android（下） https://www.jianshu.com/p/e6ac2c75e692
 
-Practical Cryptography for Developers: Hashes, MAC, Key Derivation, DHKE, Symmetric and Asymmetric Ciphers, Elliptic Curves, Digital Signatures https://github.com/nakov/practical-cryptography-for-developers-book
+awesome-cryptography -- A curated list of cryptography resources and links. https://github.com/sobolevn/awesome-cryptography
+- Books
+  * Practical Cryptography for Developers - Developer-friendly book on modern cryptography (hashes, MAC codes, symmetric and asymmetric ciphers, key exchange, elliptic curves, digital signatures) with lots of code examples. https://cryptobook.nakov.com/ || https://github.com/nakov/practical-cryptography-for-developers-book
+
+# performance related
+
+Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flags https://panthema.net/2008/0714-cryptography-speedtest-comparison/
+
