@@ -55,20 +55,16 @@ https://www.cnblogs.com/Skyar/p/5914942.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+## shell经典用法
 
-## 知乎shell相关
+<<shell程序中 2> /dev/null 代表什么意思？>> https://www.zhihu.com/question/53295083
+- /dev/null 2>&1 解释 http://blog.163.com/liang8421@126/blog/static/89481957200926105219622/
+- [Linux] 文件描述符 https://www.jianshu.com/p/b1c10674a789
+- 每天进步一点点——Linux中的文件描述符与打开文件之间的关系 http://blog.csdn.net/cywosp/article/details/38965239
 
-<<shell程序中 2> /dev/null 代表什么意思？>>
-https://www.zhihu.com/question/53295083
-- /dev/null 2>&1 解释
-http://blog.163.com/liang8421@126/blog/static/89481957200926105219622/
-- [Linux] 文件描述符 
-https://www.jianshu.com/p/b1c10674a789
-- 每天进步一点点——Linux中的文件描述符与打开文件之间的关系
-http://blog.csdn.net/cywosp/article/details/38965239
+--------------------------------------------------
 
-<<shell中2>&1之类的命令中'&'是什么意思?>>
-https://segmentfault.com/q/1010000002454596
+<<shell中2>&1之类的命令中'&'是什么意思?>> https://segmentfault.com/q/1010000002454596
 ```
 放在>后面的&，表示重定向的目标不是一个文件，而是一个文件描述符，内置的文件描述符如下
 
@@ -86,6 +82,55 @@ https://segmentfault.com/q/1010000002454596
 ```
 https://www.gnu.org/software/bash/manual/
 
+--------------------------------------------------
+
+### Here Documents
+
+How does “cat << EOF” work in bash? https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash
+```
+1. Assign multi-line string to a shell variable
+
+[root@cloudsec2 ~]# sql=$(cat <<EOF
+> SELECT foo, bar FROM db
+> WHERE foo='baz'
+> EOF
+> )
+[root@cloudsec2 ~]# echo $sql
+SELECT foo, bar FROM db WHERE foo='baz'
+
+
+2. Pass multi-line string to a file in Bash
+
+[root@cloudsec2 ~]# cat <<EOF > print.sh
+> #!/bin/bash
+> echo \$PWD
+> echo $PWD
+> EOF
+[root@cloudsec2 ~]# cat print.sh
+#!/bin/bash
+echo $PWD
+echo /root
+
+
+3. Pass multi-line string to a pipe in Bash
+
+[root@cloudsec2 ~]# cat <<EOF | grep 'b' | tee b.txt
+> foo
+> bar
+> baz
+> EOF
+bar
+baz
+[root@cloudsec2 ~]# cat b.txt
+bar
+baz
+
+The b.txt file contains bar and baz lines. The same output is printed to stdout.
+```
+
+linux shell脚本EOF妙用 https://blog.csdn.net/zongshi1992/article/details/71693045
+
+--------------------------------------------------
 
 <<学习 shell 有什么好书推荐？>>
 https://www.zhihu.com/question/19745611
