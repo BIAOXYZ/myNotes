@@ -25,7 +25,47 @@ sudo yum install docker-ce
 
 - 启动 Docker CE
 ```
-未执行，应该是现在新版默认安装完就启动
+// sudo systemctl enable docker
+// sudo systemctl start docker
+
+未执行，应该是现在新版默认安装完就启动 
+```
+
+```
+2019.02.26更新：看来并非任何机器和系统都如此，刚才就碰到了需要启动docker服务的情况:
+(注意刚安装完不启动的话执行docker version时候那句报错。)
+
+Complete!
+[root@cloudsec1 ~]# docker version
+Client:
+ Version:           18.09.2
+ API version:       1.39
+ Go version:        go1.10.6
+ Git commit:        6247962
+ Built:             Sun Feb 10 04:13:27 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+[root@cloudsec1 ~]# systemctl start docker
+[root@cloudsec1 ~]# docker version
+Client:
+ Version:           18.09.2
+ API version:       1.39
+ Go version:        go1.10.6
+ Git commit:        6247962
+ Built:             Sun Feb 10 04:13:27 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.2
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.6
+  Git commit:       6247962
+  Built:            Sun Feb 10 03:47:25 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 - 建立 docker 用户组
