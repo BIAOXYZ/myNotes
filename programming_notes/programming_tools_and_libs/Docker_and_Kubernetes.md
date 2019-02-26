@@ -304,6 +304,11 @@ Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-per
 - Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
 - Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
 
+
+## kubernetes源码
+
+kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
+
 ## kubernetes others
 
 Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
