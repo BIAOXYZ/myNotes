@@ -309,6 +309,8 @@ Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-per
 
 kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
 
+编译和运行Kubernetes源码 https://www.kubernetes.org.cn/5033.html
+
 ## kubernetes others
 
 Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
