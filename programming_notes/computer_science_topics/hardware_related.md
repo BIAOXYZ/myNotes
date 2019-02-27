@@ -1,6 +1,6 @@
 
 
-## `##` Storage
+# Storage
 
 RAID https://zh.wikipedia.org/wiki/RAID
 
@@ -12,14 +12,20 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 异常断电为什么对SSD伤害这么大？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/soft/746109.htm
 
-## `##` CPU
+# CPU
 
 服务器中的u是什么意思 http://blog.chinaunix.net/uid-21505614-id-289333.html
 
-## `##` 笔记本
+
+# 笔记本
 
 <<联想笔记本电脑 怎么能将第一排默认的是F1 F2............F12 按FN后才是设置功能 我打游戏不方便啊>>
 https://zhidao.baidu.com/question/486620110.html
 ```
 请以电脑启动时按F2，进入BOIS模式，进入第二项CONFIG，设置HOTKEY为DISABLE，就可以默认切换了！
 ```
+
+# 台式机
+
+2019年上半年如何攒机？一文看懂的攒机指南 https://www.ithome.com/0/411/255.htm
+
