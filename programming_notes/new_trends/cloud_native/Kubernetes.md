@@ -2,13 +2,15 @@
 
 # 官方连接
 
-***--------------------------------------------------分割线--------------------------------------------------***
+## kubernetes 官网及官方文档
 
 Official Website (官方网站):
 - Kubernetes (k8s) is an open-source system for automating deployment, scaling, and management of containerized applications. https://kubernetes.io/
 - Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
 
 Kubernetes Documentation https://kubernetes.io/docs/home/
+- https://kubernetes.io/docs/setup/
+  * Creating a Custom Cluster from Scratch https://kubernetes.io/docs/setup/scratch/
 - Concepts https://kubernetes.io/docs/concepts/
   * Pods https://kubernetes.io/docs/concepts/workloads/pods/
 - Tutorials https://kubernetes.io/docs/tutorials/
@@ -17,14 +19,14 @@ Kubernetes Documentation https://kubernetes.io/docs/home/
 Kubernetes 文档 https://kubernetes.io/zh/docs/
 - 使用命令式的方式管理 Kubernetes 对象 https://kubernetes.io/zh/docs/tutorials/object-management-kubectl/imperative-object-management-command/
 
---------------------------------------------------  
+## kubernetes 官方github
 
 Production-Grade Container Scheduling and Management https://kubernetes.io || https://github.com/kubernetes/kubernetes
 
 Kubernetes community content https://github.com/kubernetes/community
 - Kubernetes Contributor Guide https://github.com/kubernetes/community/blob/master/contributors/guide/README.md
 
---------------------------------------------------
+## kubernetes 中文社区
 
 Kubernetes中文社区 https://www.kubernetes.org.cn/
 - 名词解释 Pods https://www.kubernetes.org.cn/kubernetes-pod
@@ -35,7 +37,9 @@ Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 - Kubernetes 架构 http://docs.kubernetes.org.cn/251.html
   * Kubernetes指南 https://legacy.gitbook.com/book/feisky/kubernetes/details
 
---------------------------------------------------
+***--------------------------------------------------分割线--------------------------------------------------***
+
+## 其他
 
 Topic: kubernetes https://github.com/topics/kubernetes
 
