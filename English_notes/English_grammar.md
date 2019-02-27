@@ -151,6 +151,15 @@ na.准备起跑；服从纪律；(赛跑等时)将脚尖抵在起步线上站着
 - With pleas going unheard, the city government is now moving toward legislation to force manufacturers to toe the line on packaging.
 随着要求被置若罔闻，市政府正试图通过立法来使制造商在包装上遵守规定。
 
+------------------------------------------------------------
+## w 
+------------------------------------------------------------
+
+#### well-versed adj.精通的； [Web]很纯熟；能胜任的
+> "Good news for programmers well-versed in the ways of the blockchain: IBM, Microsoft, USAA, and Visa are all searching for blockchain developers to join their teams right now, according to ads listed on their respective websites."
+>> https://futurism.com/visa-microsoft-and-ibm-are-all-hiring-blockchain-developers/
+
+- For a politician whose rise to prominence was largely built upon his powers as an orator, Obama is well versed in the arts of speech-making. 对一个政客来说，声望的提高很大程度上建立在他的演说能力上，而奥巴马更是深谙此道。
 
 # Others
 
