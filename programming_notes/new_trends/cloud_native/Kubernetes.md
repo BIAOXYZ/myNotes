@@ -30,7 +30,11 @@ Kubernetes community content https://github.com/kubernetes/community
 
 Kubernetes中文社区 https://www.kubernetes.org.cn/
 - 名词解释 Pods https://www.kubernetes.org.cn/kubernetes-pod
-- 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
+- 社区首页 > Kubernetes安装说明 https://www.kubernetes.org.cn/course/install
+  * 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
+  * CentOS 使用二进制部署 Kubernetes 1.13集群 https://www.kubernetes.org.cn/4963.html
+    > 回帖里： "https://www.howtoforge.com/tutorial/centos-kubernetes-docker-cluster/
+这个链接的文章好使，是良心出品，大家可以去感受一下真正的温暖！！！！！！"
 
 Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 - Kubernetes kubectl 命令表 http://docs.kubernetes.org.cn/683.html
