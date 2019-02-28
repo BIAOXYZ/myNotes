@@ -9,8 +9,6 @@ Official Website (官方网站):
 - Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
 
 Kubernetes Documentation https://kubernetes.io/docs/home/
-- https://kubernetes.io/docs/setup/
-  * Creating a Custom Cluster from Scratch https://kubernetes.io/docs/setup/scratch/
 - Concepts https://kubernetes.io/docs/concepts/
   * Pods https://kubernetes.io/docs/concepts/workloads/pods/
 - Tutorials https://kubernetes.io/docs/tutorials/
@@ -30,11 +28,6 @@ Kubernetes community content https://github.com/kubernetes/community
 
 Kubernetes中文社区 https://www.kubernetes.org.cn/
 - 名词解释 Pods https://www.kubernetes.org.cn/kubernetes-pod
-- 社区首页 > Kubernetes安装说明 https://www.kubernetes.org.cn/course/install
-  * 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
-  * CentOS 使用二进制部署 Kubernetes 1.13集群 https://www.kubernetes.org.cn/4963.html
-    > 回帖里： "https://www.howtoforge.com/tutorial/centos-kubernetes-docker-cluster/
-这个链接的文章好使，是良心出品，大家可以去感受一下真正的温暖！！！！！！"
 
 Kubernetes中文社区 | 中文文档 http://docs.kubernetes.org.cn/
 - Kubernetes kubectl 命令表 http://docs.kubernetes.org.cn/683.html
@@ -98,6 +91,18 @@ Kubernetes基础与架构 https://www.fangzhipeng.com/kubernetes/2018/09/30/k8s-
 Kubernetes新手快速入门指南 https://mp.weixin.qq.com/s/lMyMZyskekmN5BWwqjFDsQ
 
 Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882
+
+## kuberbetes 集群安装
+
+Setup https://kubernetes.io/docs/setup/
+  - Creating a Custom Cluster from Scratch https://kubernetes.io/docs/setup/scratch/
+  
+社区首页 > Kubernetes安装说明 https://www.kubernetes.org.cn/course/install
+  - 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
+  - CentOS 使用二进制部署 Kubernetes 1.13集群 https://www.kubernetes.org.cn/4963.html
+    * > 这个文章据说很多错的，下面一堆人骂，但是说实话排版什么的挺像回事的。。。此外，回帖里有人提到下面这个链接靠谱：" https://www.howtoforge.com/tutorial/centos-kubernetes-docker-cluster/ 这个链接的文章好使，是良心出品，大家可以去感受一下真正的温暖！！！！！！"
+
+使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
