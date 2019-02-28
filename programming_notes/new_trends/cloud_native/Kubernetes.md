@@ -95,14 +95,21 @@ Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers 
 ## kuberbetes 集群安装
 
 Setup https://kubernetes.io/docs/setup/
-  - Creating a Custom Cluster from Scratch https://kubernetes.io/docs/setup/scratch/
+- Creating a Custom Cluster from Scratch https://kubernetes.io/docs/setup/scratch/
   
 社区首页 > Kubernetes安装说明 https://www.kubernetes.org.cn/course/install
-  - 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
-  - CentOS 使用二进制部署 Kubernetes 1.13集群 https://www.kubernetes.org.cn/4963.html
-    * > 这个文章据说很多错的，下面一堆人骂，但是说实话排版什么的挺像回事的。。。此外，回帖里有人提到下面这个链接靠谱：" https://www.howtoforge.com/tutorial/centos-kubernetes-docker-cluster/ 这个链接的文章好使，是良心出品，大家可以去感受一下真正的温暖！！！！！！"
+- 使用kubeadm安装Kubernetes 1.12 https://www.kubernetes.org.cn/4619.html
+- CentOS 使用二进制部署 Kubernetes 1.13集群 https://www.kubernetes.org.cn/4963.html
+  * > 这个文章据说很多错的，下面一堆人骂，但是说实话排版什么的挺像回事的。。。此外，回帖里有人提到下面这个链接靠谱：
+  * >> "https://www.howtoforge.com/tutorial/centos-kubernetes-docker-cluster/ 这个链接的文章好使，是良心出品，大家可以去感受一下真正的温暖！！！！！！"
+- kubernetes1.13.1+etcd3.3.10+flanneld0.10集群部署 https://www.kubernetes.org.cn/5025.html
+  * > 这个教程似乎靠谱点，作者还把过程搞github上了：
+  * >> "大家注意，本文的环境，其中kubelet启动后又停止可能与cgroupfs driver有关，kubelet与docker要保持一致，centos默认是cgroupfs，ubuntu默认是systemd，需要根据自己情况调整。 <br> 系统环境 CentOS Linux release 7.4.1708 (Core) Docker版本 Server Version: 18.09.0 Cgroup Driver: cgroupfs <br> 4）创建kubelet参数配置模板文件 <br> vim /k8s/kubernetes/cfg/kubelet.config <br> cgroupDriver: cgroupfs <br> 具体请查看：https://github.com/minminmsn/k8s1.13"
+  * >>> kubernetes1.13集群部署文档，包括kubernetes、dashboard、coredns、ingress、metrics、ceph rbd、helm、harbor、jenkins等相关组件部署文档 https://www.minminmsn.com || https://github.com/minminmsn/k8s1.13
 
 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz
+
+和我一步步部署 kubernetes 集群 https://github.com/opsnull/follow-me-install-kubernetes-cluster
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
