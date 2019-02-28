@@ -32,6 +32,8 @@ docker中文社区站  http://www.docker.org.cn/
 
 # docker general
 
+🐳 A curated list of Docker resources and projects https://awesome-docker.netlify.com/ || https://github.com/veggiemonk/awesome-docker
+
 Docker — 从入门到实践 https://legacy.gitbook.com/book/yeasy/docker_practice/details  (or https://github.com/yeasy/docker_practice)
 - `安装Docker`->`CentOS 安装 Docker CE` https://yeasy.gitbooks.io/docker_practice/content/install/centos.html
 > 警告：切勿在没有配置 Docker YUM 源的情况下直接使用 yum 命令安装 Docker.
