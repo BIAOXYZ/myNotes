@@ -27,6 +27,9 @@ The Algorithms https://github.com/TheAlgorithms/
 
 Wiki for OI / ACM-ICPC. （某大型游戏线上攻略，内含炫酷算术魔法） https://oi-wiki.org https://github.com/24OI/OI-wiki
 
+技术和架构等相关文档 https://github.com/xunchangguo/km
+- 技术文档中文版本：http://doczh.cn/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
