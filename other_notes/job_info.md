@@ -278,6 +278,8 @@ http://www.highpin.cn/job/h2337217.html
 - 北京长租公寓数据大盘点（最全） https://zhuanlan.zhihu.com/p/31251759
 - 北京长租公寓大盘点（第二弹） https://zhuanlan.zhihu.com/p/28469656
 
+蛋壳公寓血泪“坑”：电路着火无人管，墙体发霉成虫窝 https://www.ithome.com/0/411/825.htm
+
 ### 五险一金相关
 
 换城市工作，之前交的社保，公积金怎么办？ - 知乎 https://www.zhihu.com/question/20335745
