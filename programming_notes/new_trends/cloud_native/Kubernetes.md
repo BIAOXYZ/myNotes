@@ -108,6 +108,7 @@ Setup https://kubernetes.io/docs/setup/
   * >>> kubernetes1.13集群部署文档，包括kubernetes、dashboard、coredns、ingress、metrics、ceph rbd、helm、harbor、jenkins等相关组件部署文档 https://www.minminmsn.com || https://github.com/minminmsn/k8s1.13
 
 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz
+- 开启内核ipv4转发需要加载br_netfilter模块 #69 https://github.com/gjmzj/kubeasz/issues/69
 
 和我一步步部署 kubernetes 集群 https://github.com/opsnull/follow-me-install-kubernetes-cluster
 
