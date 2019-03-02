@@ -164,47 +164,22 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 
 ### Baidu
 
-技术管理部_技术专家
-http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/2746
-
-安全事业部_大数据挖掘工程师
-http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/320648088
-
-大数据部_NewSQL系统研发工程师（北京）
-http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/1323972949
-
+- 技术管理部_技术专家 http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/2746
+- 安全事业部_大数据挖掘工程师 http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/320648088
+- 大数据部_NewSQL系统研发工程师（北京） http://talent.baidu.com/external/baidu/index.html#/jobDetail/2/1323972949
 
 ### Alibaba
 
-Alibaba Cloud-Quantum Positions-Aliyun Quantum Laboratory (AQL)
-https://bbs.aliyun.com/read/538006.html?spm=a2c4e.11155515.0.0.F9pmaw
-
-蚂蚁金服-数据安全技术专家-信用
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=43973
-
-蚂蚁金服-密码算法（高级）专家-安全管理部
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40205
-
-蚂蚁金服-区块链专家
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=33790
-
-阿里云-信息安全研发专家-企业应用
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=32696
-
-集团安全-数据安全开发专家／高级专家
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=42817
-
-蚂蚁金服-开发工程师-安全管理部
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40155
-
-蚂蚁金服-区块链研发工程师
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45457
-
-蚂蚁金服-区块链专家
-https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45586
-
-数据安全技术专家
-http://www.highpin.cn/job/h3214142.html
+- Alibaba Cloud-Quantum Positions-Aliyun Quantum Laboratory (AQL) https://bbs.aliyun.com/read/538006.html?spm=a2c4e.11155515.0.0.F9pmaw
+- 蚂蚁金服-数据安全技术专家-信用 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=43973
+- 蚂蚁金服-密码算法（高级）专家-安全管理部 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40205
+- 蚂蚁金服-区块链专家 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=33790
+- 阿里云-信息安全研发专家-企业应用 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=32696
+- 集团安全-数据安全开发专家／高级专家 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=42817
+- 蚂蚁金服-开发工程师-安全管理部 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=40155
+- 蚂蚁金服-区块链研发工程师 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45457
+- 蚂蚁金服-区块链专家 https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45586
+- 数据安全技术专家 http://www.highpin.cn/job/h3214142.html
 
 --------------------------------------------------
 
@@ -227,25 +202,17 @@ http://www.highpin.cn/job/h3214142.html
 
 ### 众安保险信息科技招聘
 
-密码学信息安全学专家
-https://www.lagou.com/jobs/3427662.html
-
-深圳—复旦联合实验室—密码学算法专家
-https://www.lagou.com/jobs/3810250.html
-
-密码算法专家  
-http://www.highpin.cn/job/h3246748.html
-【猜测这个也是众安保险的】
+- 密码学信息安全学专家 https://www.lagou.com/jobs/3427662.html
+- 深圳—复旦联合实验室—密码学算法专家 https://www.lagou.com/jobs/3810250.html
+- 密码算法专家 http://www.highpin.cn/job/h3246748.html 【猜测这个也是众安保险的】
 
 ## startup (炼石)
 
-密码算法研究员 - 北京炼石网络技术有限公司
-https://www.liepin.com/job/1910643716.shtml
+密码算法研究员 - 北京炼石网络技术有限公司 https://www.liepin.com/job/1910643716.shtml
 
 ##
 
-网络安全工程师/经理（资深密码学）
-http://www.highpin.cn/job/h2337217.html
+网络安全工程师/经理（资深密码学） http://www.highpin.cn/job/h2337217.html
 
 ## DiDi
 
@@ -352,6 +319,13 @@ https://www.zhihu.com/question/24694855
 > “我是做机器学习的，来华为做数据库，没有用到专业能力”； 
 >> --> 说！XX海，XX寒，是不是你们两个浓眉大眼的家伙叛变数据库革命了？！不对，突然想起来还有一个只呆了一个月就走的哥们，也是搞机器学习的，不过呆的时间太短，叫啥我都给忘了。。。
 - 打造引领战略领先的“华为军团”，怎样才能避免“叶公好龙”？ http://xinsheng.huawei.com/cn/index.php?app=forum&mod=Detail&act=index&id=4176913 【原帖链接】
+
+微博网友自制《华为美》歌曲MV引关注 华为官方回应 http://www.techweb.com.cn/internet/2019-02-27/2725565.shtml
+> 华为回应网友自制《华为美》歌曲MV：不知情、未参与，感谢关注 https://www.ithome.com/0/411/530.htm
+```
+事实上，据发布该视频的博主修改微博后表示，这个视频并非华为官方出品，而是网友自发制作。据了解，该歌曲由解放军总政歌舞团
+著名词作家李幼容、全国公安文联签约词作家臧思佳以及享受国务院津贴的曲作家郑冷横共同创作，由周丹声乐工作室的小朋友担任首唱。
+```
 
 ### 小公司八卦
 
