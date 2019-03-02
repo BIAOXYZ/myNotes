@@ -1,6 +1,6 @@
 
 
-## 超炮和魔禁
+# 超炮和魔禁
 
 - 某科学的超电磁炮 https://zh.moegirl.org/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84%E8%B6%85%E7%94%B5%E7%A3%81%E7%82%AE
 - A Certain Scientific Railgun https://en.wikipedia.org/wiki/A_Certain_Scientific_Railgun
@@ -13,6 +13,10 @@
 魔法禁书目录 I 18 假冒者 当麻被美琴要求假冒男友，一起逛了打半天，也算吧
 ```
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# 其他动漫
+
 ## 辉夜大小姐想让我告白～天才们的恋爱头脑战～
 
 辉夜大小姐想让我告白～天才们的恋爱头脑战～ https://zh.moegirl.org/zh-hans/%E8%BE%89%E5%A4%9C%E5%A4%A7%E5%B0%8F%E5%A7%90%E6%83%B3%E8%AE%A9%E6%88%91%E5%91%8A%E7%99%BD%EF%BD%9E%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E6%81%8B%E7%88%B1%E5%A4%B4%E8%84%91%E6%88%98%EF%BD%9E
@@ -23,7 +27,7 @@
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-## 搞笑类
+# 鬼畜
 
 鬼畜全明星 Wiki http://guichu.wikia.com/wiki/%E9%AC%BC%E7%95%9C%E5%85%A8%E6%98%8E%E6%98%9F_Wiki
 
@@ -43,30 +47,61 @@
 - 电影《帝国的毁灭》“元首”希特勒饰演者Bruno Ganz去世，享年77岁 https://www.ithome.com/0/409/696.htm
 - 【元首的愤怒】原版 https://www.bilibili.com/video/av22905
 
-## 空耳
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# 空耳
 
 空耳 https://zh.moegirl.org/%E7%A9%BA%E8%80%B3
 - 暴刘继芬 https://zh.moegirl.org/%E7%88%86%E5%88%98%E7%BB%A7%E8%8A%AC
 - jb永动机 https://zh.moegirl.org/Jb%E6%B0%B8%E5%8A%A8%E6%9C%BA
 - 马云我赐你姨妈 https://zh.moegirl.org/IGNITE
 
-## 动漫中的梗
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# 动漫中的梗
 
 bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/topic/neta2018_web.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-## 萌战
+# 萌战
 
 日本萌战历代萌王，谁才是你的女神？ https://chuansongme.com/n/2582489952017
 
 萌王 https://zh.moegirl.org/zh/%E8%90%8C%E7%8E%8B
+- 国际最萌大会 https://zh.moegirl.org/%E5%9B%BD%E9%99%85%E6%9C%80%E8%90%8C%E5%A4%A7%E4%BC%9A
 
 --------------------------------------------------
+
+## 萌战角色
+
+### 炮姐
 
 御坂美琴B萌应援团 https://mikoto.us/
 
---------------------------------------------------
+### 钉宫系
+
+钉宫四萌 https://zh.moegirl.org/%E9%92%89%E5%AE%AB%E5%9B%9B%E8%90%8C
+
+好想被钉宫辱骂啊 https://www.bilibili.com/video/av638240/
+```
+大阪2dj
+我想过了，为什么我会喜欢被钉宫骂。以为现实生活中，我连被可爱女孩子骂的机会都没有。。。根本就是平行线啊。
+
+#1912013-07-11 23:0513715回复
+
+啊狸撸亚：(-_-#)哦艹请允悲
+2013-07-11 23:44333回复
+
+矢泽狸可：为什么感觉那么有道理！
+2013-07-12 00:43306回复
+
+结城梨斗_：这是个悲伤的故事 虽然我也没
+2013-07-12 17:20277回复
+```
+>> 笑死我了这个回复，就为这个回复才贴这个视频的。。。
+
+### 其他
 
 如何评价亚丝娜（结城明日奈）？ - 知乎 https://www.zhihu.com/question/65520439/answer/232528553
 ```
