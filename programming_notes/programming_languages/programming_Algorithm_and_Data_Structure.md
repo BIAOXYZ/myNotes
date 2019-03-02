@@ -15,6 +15,7 @@ eudiwffe -- 数据结构与算法 https://www.cnblogs.com/eudiwffe/category/9278
 
 数据结构和算法必知必会的50个代码实现 https://github.com/wangzheng0822/algo
 
+Some exercises and problems in Introduction to Algorithms 3rd edition. https://github.com/CyberZHG/CLRS
 
 :star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star:
 
