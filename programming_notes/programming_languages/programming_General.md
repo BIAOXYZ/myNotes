@@ -95,8 +95,10 @@ Interactive Tutorials https://github.com/ronreiter/interactive-tutorials
 
 ## Online Games or Others
 
-学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎
-https://zhuanlan.zhihu.com/p/33783827
+学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎 https://zhuanlan.zhihu.com/p/33783827
+- CodinGame https://www.codingame.com/
+- Code Combat https://codecombat.com/
+- Check iO https://checkio.org/
 
 2018 编程挑战网页 Top 10 - KenChoi的文章 - 知乎
 http://zhuanlan.zhihu.com/p/32965070
