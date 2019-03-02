@@ -21,15 +21,15 @@ GNU Bash manual https://www.gnu.org/software/bash/manual/
 
 ## 1.1 What is Bash?
 
-> "Bash is the shell, or command language interpreter, for the GNU operating system."
+> Bash is the shell, or command language interpreter, for the GNU operating system.
 
 ## 1.2 What is a shell?
 
-> "At its base, a shell is simply a macro processor that executes commands. The term macro processor means functionality where text and symbols are expanded to create larger expressions."
+> At its base, a shell is simply a macro processor that executes commands. The term macro processor means functionality where text and symbols are expanded to create larger expressions.
 
-> "A Unix shell is both a command interpreter and a programming language."
+> A Unix shell is both a command interpreter and a programming language.
 
-> "Shells also provide a small set of built-in commands (builtins) implementing functionality impossible or inconvenient to obtain via separate utilities. For example, `cd`, `break`, `continue`, and `exec` cannot be implemented outside of the shell because they directly manipulate the shell itself. The `history`, `getopts`, `kill`, or `pwd` builtins, among others, could be implemented in separate utilities, but they are more convenient to use as builtin commands."
+> Shells also provide a small set of built-in commands (builtins) implementing functionality impossible or inconvenient to obtain via separate utilities. For example, `cd`, `break`, `continue`, and `exec` cannot be implemented outside of the shell because they directly manipulate the shell itself. The `history`, `getopts`, `kill`, or `pwd` builtins, among others, could be implemented in separate utilities, but they are more convenient to use as builtin commands.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -43,8 +43,39 @@ GNU Bash manual https://www.gnu.org/software/bash/manual/
   * > A synonym for exit status.
   
 
-
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 3 Basic Shell Features
+
+## 3.1 Shell Syntax
+
+### 3.1.1 Shell Operation
+
+> The following is a brief description of the shell’s operation when it reads and executes a command. Basically, the shell does the following:
+>
+> 1.Reads its input from a file (see `Shell Scripts`), from a string supplied as an argument to the **`-c`** invocation option (see `Invoking Bash`), or from the user’s terminal.
+>
+> 2.Breaks the input into words and operators, obeying the quoting rules described in `Quoting`. These tokens are separated by *metacharacters*. Alias expansion is performed by this step (see `Aliases`).
+>
+> 3.Parses the tokens into simple and compound commands (see `Shell Commands`).
+>
+> 4.Performs the various shell expansions (see `Shell Expansions`), breaking the expanded tokens into lists of filenames (see `Filename Expansion`) and commands and arguments.
+>
+> 5.Performs any necessary redirections (see `Redirections`) and removes the redirection operators and their operands from the argument list.
+>
+> 6.Executes the command (see `Executing Commands`).
+>
+> 7.Optionally waits for the command to complete and collects its exit status (see `Exit Status`).
+
+### 3.1.2 Quoting
+
+```
+• Escape Character:	  	How to remove the special meaning from a single character.
+• Single Quotes:	  	How to inhibit all interpretation of a sequence of characters.
+• Double Quotes:	  	How to suppress most of the interpretation of a sequence of characters.
+• ANSI-C Quoting:	  	How to expand ANSI-C sequences in quoted strings.
+• Locale Translation:	  	How to translate strings into different languages.
+```
 
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
