@@ -22,7 +22,7 @@
 $ !ps
 ps -ef | grep http
 
-//执行之前**包含**apache作为关键词的命令  --> 个人理解主要就是有时候是某个目录或者文件名毕竟特殊，但是命令不特殊，所以这种方便找
+//执行之前**包含**apache作为关键词的命令  -->  个人理解主要就是有时候是某个目录或者文件名比较特殊，所以这种方便找
 $ !?apache
 /usr/local/apache2/bin/apachectl restart
 ----------------------------------------------------------------------------------------------------
@@ -33,7 +33,20 @@ $ ls /etc/cron.daily/logrotate
 $ ^ls^cat^
 cat /etc/cron.daily/logrotate
 ----------------------------------------------------------------------------------------------------
+4. Get the 1st argument of a command using :^
 
+$ cp /etc/passwd /backup
+
+$ ls -l !cp:^
+ls -l /etc/passwd
+----------------------------------------------------------------------------------------------------
+5. Get the last argument of a command using :$
+
+$ cp /etc/passwd /backup
+
+$ ls -l !cp:$
+ls -l /backup
+----------------------------------------------------------------------------------------------------
 ```
 
 15 Examples To Master Linux Command Line History https://www.thegeekstuff.com/2008/08/15-examples-to-master-linux-command-line-history/
