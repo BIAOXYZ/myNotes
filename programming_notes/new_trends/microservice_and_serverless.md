@@ -19,3 +19,8 @@ https://medium.com/@novicki_david/server-less-micro-services-on-aws-c9b091510b24
 -----
 
 微服务架构模式简介 http://blog.jobbole.com/96948/
+
+# Knative
+
+The book Getting Started with Knative compliments of Pivotal《Knative 入门中文版》 https://github.com/servicemesher/getting-started-with-knative
+
