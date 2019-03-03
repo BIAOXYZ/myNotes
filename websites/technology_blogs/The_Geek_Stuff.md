@@ -5,5 +5,24 @@
 ## history
 
 15 Linux Bash History Expansion Examples You Should Know https://www.thegeekstuff.com/2011/08/bash-history-expansion/
+```
+有些技巧就没必须要学了，比较复杂用处也不广而且易忘，这里只总结下常用好用的：
+
+1. Execute a specific command from the history using !n
+
+!4     执行history命令显示的结果里序号为4的命令
+!-2    执行history命令显示的结果里序号为倒数第二的命令，所以 !-1 等于重复执行上一次执行过的命令
+!!     等于 !-1
+
+"You can also press <Ctrl>-P (if you are in the default emacs mode) to get to the previous command."
+
+2. Execute a command with keywords using !string and !?string
+
+```
 
 15 Examples To Master Linux Command Line History https://www.thegeekstuff.com/2008/08/15-examples-to-master-linux-command-line-history/
+
+## sed
+
+Unix Sed Tutorial: Advanced Sed Substitution Examples https://www.thegeekstuff.com/2009/10/unix-sed-tutorial-advanced-sed-substitution-examples/
+
