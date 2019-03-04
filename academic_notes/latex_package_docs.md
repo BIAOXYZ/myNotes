@@ -17,3 +17,6 @@ xecjk – Support for CJK documents in XELATEX https://ctan.org/pkg/xecjk
 # 不成熟的package
 
 The blockdiagram LaTeX package defines a set of tikz macros to draw nice block diagrams. https://github.com/gjlaurent/blockdiagram
+
+LaTeX package that embeds and executes Wolfram Language (Mathematica) codes inside LaTeX documents https://github.com/stevenliuyi/latex-alpha2
+
