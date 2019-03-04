@@ -238,6 +238,9 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 
 # 工作需注意点
 
+北京外企人力资源服务有限公司 www.fesco.com.cn
+- HELLO员工自助服务平台 https://es.fesco.com.cn/Esvr/Home/Index
+
 五险一金及税后工资计算器 http://salarycalculator.sinaapp.com/
 
 ### 租房
