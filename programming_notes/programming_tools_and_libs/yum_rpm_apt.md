@@ -50,6 +50,8 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 但是还是不行。猜测是因为我这边ETCD是双向SSL认证的原因，所以client端也得改点啥???回头再研究吧，反正目前重点不在ETCD。
 ```
 
+记一次解决curl https证书问题 https://www.cnblogs.com/xuxinkun/p/5417836.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # wget
