@@ -43,6 +43,16 @@ Quorum (distributed computing) https://en.wikipedia.org/wiki/Quorum_(distributed
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
+
+## 脑裂
+
+Split-brain (computing) https://en.wikipedia.org/wiki/Split-brain_(computing)
+
+- 集群脑裂问题分析 https://blog.csdn.net/cweeyii/article/details/72354363
+- HA领域的“脑裂” https://blog.csdn.net/972301/article/details/50589654
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # Paxos
 
 Paxos算法详解 - 祥光的文章 - 知乎 https://zhuanlan.zhihu.com/p/31780743
@@ -88,4 +98,7 @@ etcd 集群大小迷思 https://www.yangcs.net/posts/etcd-cluster-number/
 ### ETCD文档
 
 Etcd官方文档中文版 http://etcd.doczh.cn/ || from 技术文档中文版 https://doczh.cn/
-
+- 理解失败 http://etcd.doczh.cn/documentation/op-guide/failures.html
+  * > 『网络分区类似少数跟随者失败或者 leader 失败。网络分区将 etcd 集群分成两个部分; 一个有多数成员而另外一个有少数成员。多数这边变成可用集群而少数这边不可用。在 etcd 中没有 "脑裂"。』 --> 个人理解脑裂一般会出现多主，而etcd出现网络分区后因为最多只有一个分区能达到多数成员，所以至多只会出现一个master，因此不会出现脑裂。
+  
+  
