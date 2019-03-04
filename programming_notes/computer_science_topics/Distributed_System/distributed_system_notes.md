@@ -15,6 +15,8 @@ https://zhuanlan.zhihu.com/p/22594180
 
 两阶段提交及JTA http://www.cnblogs.com/Leo_wl/p/5728027.html
 
+2PC之踵？是时候升级二阶段提交协议了 https://mp.weixin.qq.com/s/fHyvviHGBzYfOugPpbJ2lA
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Chandy-Lamport algorithm
