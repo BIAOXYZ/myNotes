@@ -88,6 +88,15 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 ## ETCD
 
+
+# ETCD官方
+
+Demo https://coreos.com/etcd/docs/latest/demo.html
+
+Administration https://coreos.com/etcd/docs/latest/v2/admin_guide.html
+
+----------
+
 etcd简介 https://blog.csdn.net/mnasd/article/details/79621155
 
 etcd 集群大小迷思 https://www.yangcs.net/posts/etcd-cluster-number/
