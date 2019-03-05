@@ -33,6 +33,8 @@ ls -Slr
 这样单位就是k或者M ，比较容易看清楚结果。
 ```
 
+----------------------------------------------------------------------------------------------------
+
 ## 移动类
 
 ### mv
@@ -55,6 +57,8 @@ cp -r source destination
 递归创建目录:
 mkdir -p dir1/dir2/dir3/...
 ```
+
+----------------------------------------------------------------------------------------------------
 
 ## 查找类
 
@@ -130,6 +134,49 @@ Linux的五个查找命令 http://www.ruanyifeng.com/blog/2009/10/5_ways_to_sear
 shell端查找和搜索：which, whereis, locate, find and grep https://my.oschina.net/u/2274721/blog/407228
 
 Linux下which、whereis、locate、find 区别 https://blog.csdn.net/ithomer/article/details/9391279   by 阳光岛主
+
+----------------------------------------------------------------------------------------------------
+
+## 杀删类
+
+### pkill和pgrep，pidof，killall，xkill等等
+
+Finding the ID of a process and killing it https://unix.stackexchange.com/questions/27087/finding-the-id-of-a-process-and-killing-it
+- answer from Hanan N.
+  * `killall ProcessName` (there is a disadvantage with this command in that you don't always know the process name of a program).
+  * `pidof ProccessName` and `kill the result form pidof`
+  * `ps xu | grep <process name> | grep -v grep | awk '{ print $2 }' | xargs kill -9` Try this one line and reuse it form the history of your bash, or better create an alias for it .
+- answer from Kevin
+  * While Hanan has some good suggestions, I'll add `pgrep` / `pkill`. They allow much finer control over which process you find, and regular expressions if you don't know the precise process you'll need to kill.
+  * P.S. Hanan's `pidof` can be fed to `kill` directly with backticks: **kill `pidof processname`**
+- answer from jaypal singh
+  * `ps -e | awk '$4~/<process name>/{print $1}' | xargs kill`
+  ```
+  [jaypal:~/Temp] sleep 100&
+  [1] 74863
+  [jaypal:~/Temp] ps -e | awk '$4~/sleep/{print $1}' | xargs kill
+  [1]+  Terminated: 15          sleep 100
+  
+  Sorry, this obviously does not meet the requirement of less typing so a good way of doing it would be to add a function to your .bashrc, .profile or whatever the startup script. The function can be something like this
+  
+  killp() {
+  awk -v pname="$1" '($4==pname){print $1}' <(ps -e) | xargs kill
+  }
+  
+  Once added, you can simply pass the name of your process:
+
+  [jaypal:~] sleep 100&
+  [1] 77212
+  [jaypal:~] killp sleep
+  [1]+  Terminated: 15          sleep 100
+  ```
+
+- Linux中kill，pkill，killall和xkill命令汇总讲解 https://blog.csdn.net/simongeek/article/details/46429243
+- kill 和 pgrep 和 pidof 和 awk 和 pkill 和 killall https://blog.csdn.net/freeking101/article/details/53445749
+
+----------------------------------------------------------------------------------------------------
+
+## 其他暂未分类
 
 ### 暂停和放到前台继续执行，bg是放到后台
 ```
