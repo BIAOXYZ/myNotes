@@ -86,6 +86,10 @@ maven环境快速搭建 https://www.cnblogs.com/fnng/archive/2011/12/02/2272610.
 ## [阮一峰的网络日志] (http://www.ruanyifeng.com/blog/)
 --------------------------------------------------
 
+- Systemd 入门教程：命令篇 http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+- Systemd 入门教程：实战篇 http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+
 ***阮一峰的网络日志其他版本：***
 - 阮一峰的网络日志(搜狗微信版) https://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97
 - 阮一峰的网络日志(Github版) https://github.com/ruanyf
