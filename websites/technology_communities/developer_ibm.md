@@ -12,3 +12,13 @@ Troubleshooting the cert-manager service for Kubernetes https://developer.ibm.co
 
 Getting started with QRadar User Behavior Analytics (UBA) https://developer.ibm.com/qradar/2018/01/31/getting-started-qradar-user-behavior-analytics-uba/
 
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+
+# https://www.ibm.com/developerworks/cn/
+
+系统调用跟我学(1) https://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/
+- Linux系统调用列表 https://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/appendix.html
+
