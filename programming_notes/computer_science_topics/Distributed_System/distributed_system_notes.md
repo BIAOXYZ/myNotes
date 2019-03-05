@@ -88,9 +88,7 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 ## ETCD
 
-raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
-
-ETCD实现技术总结 https://www.jianshu.com/p/d63265949e52
+etcd简介 https://blog.csdn.net/mnasd/article/details/79621155
 
 etcd 集群大小迷思 https://www.yangcs.net/posts/etcd-cluster-number/
 > "etcd 使用 raft 协议保证各个节点之间的状态一致。根据 raft 算法原理，节点数目越多，会降低集群的写性能。这是因为每一次写操作，需要集群中大多数节点将日志落盘成功后，Leader 节点才能将修改内部状态机，并返回将结果返回给客户端。但是根据 etcd 分布式数据冗余策略，集群节点越多，容错能力(Failure Tolerance)越强。所以关于集群大小的优化，其实就是容错和写性能的一个平衡。"
@@ -103,3 +101,9 @@ Etcd官方文档中文版 http://etcd.doczh.cn/ ||| from 技术文档中文版 h
 - 为什么是etcd? http://etcd.doczh.cn/documentation/learning/why.html
   * > 『"etcd"这个名字源于两个想法，即　unix "/etc" 文件夹和分布式系统"d"istibuted。 "/etc" 文件夹为单个系统存储配置数据的地方，而 etcd 存储大规模分布式系统的配置信息。因此，"d"istibuted　的 "/etc" ，是为 "etcd"。』
   
+# ETCD源码
+
+raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
+> "raft 从何学起呢？工欲善其事，必先利其器。当然首先看 paper 啦。主要的 paper 有两个 raft 和 thesis。相关的资料站点为 https://raft.github.io/。要是嫌弃这个站点 raft 的可视化做得不带好，还有一个比较详细的 http://thesecretlivesofdata.com/raft/ 可以看。"
+
+Etcd 架构与实现解析 http://jolestar.com/etcd-architecture/
