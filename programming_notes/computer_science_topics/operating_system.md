@@ -70,6 +70,30 @@ CentOS 7 中 hostnamectl 的使用 https://www.linuxprobe.com/centos-7-hostnamec
       Architecture: x86_64
 ```
 
+centos7 最小化安装 无 ifconfig,netstat 的安装 https://www.cnblogs.com/cocoajin/p/4064547.html
+```
+今天要用netstat命令，然后知道了两件事：
+(1)CentOS Minimal不带netstat
+(2)netstat工具对应的包不叫netstat（之前也碰到过这种情况，忘了是哪个软件了）
+
+[root@cloudsec2 ~]# yum install -y netstat
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+No package netstat available.
+Error: Nothing to do
+
+--------------------------------------------------
+
+然后是下面的内容是上面那个帖子里的解决方法以及一丢丢知识：
+
+centos7 最小化安装之后，默认是没有 ifconfig,netstat命令的；我们可以直接使用 yum -y install net-tools 即可；
+
+1. 先来看下 net-tools的信息
+    yum info net-tools
+2. 安装net-tools ，需要管理员权限
+    yum -y install net-tools
+```
+
 
 # 移动设备OS
 
