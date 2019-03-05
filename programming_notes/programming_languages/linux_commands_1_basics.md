@@ -6,7 +6,7 @@
 ## 显示类
 
 ### ps
-```
+```shell
 ps ufx
 ```
 <<Linux文件内容查阅 - cat, tac, nl, more, less, head, tail, od>>
@@ -15,7 +15,7 @@ http://www.linuxidc.com/Linux/2015-08/120978.htm
 ### ls
 
 ls实现列文件按时间排序 https://blog.csdn.net/gtuu0123/article/details/4420424
-```
+```shell
 1) ls -lt  时间最近的在前面
 2) ls -ltr 时间从前到后
 3) 利用sort
@@ -25,7 +25,7 @@ ls实现列文件按时间排序 https://blog.csdn.net/gtuu0123/article/details/
 **//注："+7"不是命令本身的内容，可能只是作者笔误。**
 
 linux ls 按文件大小排序 https://blog.csdn.net/0210/article/details/41659647
-```
+```shell
 ls -Sl
 其是按照由大到小排序，如果想要反过来，从小到大，那么用:
 ls -Slr
@@ -38,7 +38,7 @@ ls -Slr
 ## 移动类
 
 ### mv
-```
+```shell
 这个可以用来重命名文件:
 mv source destination
 
@@ -47,13 +47,13 @@ mv -t destination source1 source2 ...
 ```
 
 ### cp
-```
+```shell
 复制多个文件到一个目的地:
 cp -r source destination
 ```
 
 ### mkdir
-```
+```shell
 递归创建目录:
 mkdir -p dir1/dir2/dir3/...
 ```
@@ -63,7 +63,7 @@ mkdir -p dir1/dir2/dir3/...
 ## 查找类
 
 ### find
-```
+```shell
 find dir -name filename
 
 grep -n -r -i "string" dir --color=auto 
@@ -73,7 +73,7 @@ grep -n -r -i "string" dir --color=auto
 #### find, grep, which, whereis, locate, type等的区别
 
 ***which/whereis differences https://superuser.com/questions/40301/which-whereis-differences***
-```
+```shell
 How about learning about whereis and which using whatis?
 
 ----------------------------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ ls: /bin/ls /usr/share/man/man1p/ls.1p.bz2 /usr/share/man/man1/ls.1.bz2
 ----------------------------------------------------------------------------------------------------
 ```
 
-```
+```shell
 Quoting their man pages :
 
 whereis :
@@ -142,22 +142,23 @@ Linux下which、whereis、locate、find 区别 https://blog.csdn.net/ithomer/art
 ### pkill和pgrep，pidof，killall，xkill等等
 
 Finding the ID of a process and killing it https://unix.stackexchange.com/questions/27087/finding-the-id-of-a-process-and-killing-it
-- answer from Hanan N.
+- ***answer from Hanan N.***
   * `killall ProcessName` (there is a disadvantage with this command in that you don't always know the process name of a program).
   * `pidof ProccessName` and `kill the result form pidof`
   * `ps xu | grep <process name> | grep -v grep | awk '{ print $2 }' | xargs kill -9` Try this one line and reuse it form the history of your bash, or better create an alias for it .
-- answer from Kevin
+- ***answer from Kevin***
   * While Hanan has some good suggestions, I'll add `pgrep` / `pkill`. They allow much finer control over which process you find, and regular expressions if you don't know the precise process you'll need to kill.
   * P.S. Hanan's `pidof` can be fed to `kill` directly with backticks: **kill `pidof processname`**
-- answer from jaypal singh
+- ***answer from jaypal singh***
   * `ps -e | awk '$4~/<process name>/{print $1}' | xargs kill`
-  ```
+  ```shell
   [jaypal:~/Temp] sleep 100&
   [1] 74863
   [jaypal:~/Temp] ps -e | awk '$4~/sleep/{print $1}' | xargs kill
   [1]+  Terminated: 15          sleep 100
   
-  Sorry, this obviously does not meet the requirement of less typing so a good way of doing it would be to add a function to your .bashrc, .profile or whatever the startup script. The function can be something like this
+  Sorry, this obviously does not meet the requirement of less typing so a good way of doing it would be to add 
+  a function to your .bashrc, .profile or whatever the startup script. The function can be something like this
   
   killp() {
   awk -v pname="$1" '($4==pname){print $1}' <(ps -e) | xargs kill
@@ -173,19 +174,34 @@ Finding the ID of a process and killing it https://unix.stackexchange.com/questi
 
 - Linux中kill，pkill，killall和xkill命令汇总讲解 https://blog.csdn.net/simongeek/article/details/46429243
 - kill 和 pgrep 和 pidof 和 awk 和 pkill 和 killall https://blog.csdn.net/freeking101/article/details/53445749
+> "为了避免 kill 掉错误的进程，你应该用一下 " pgrep -l [进程名] " 列表来匹配进程名称。"
+>
+> "killall 同样使用 进程名 替代 PID，**并且它会 kill 掉所有的同名进程**。例如，如果你正在运行多个Firefox浏览器的实例，可以用命令把它们全部 kill 掉：（ killall 和 pkill 是相似的，**不过如果给出的进程名不完整，killall 会报错。pkill 不需要完整的进程名就行**）"
+
+```shell
+pgrep加-l参数可以防止错误，但是如果是作为脚本的一部分的话我觉得反而碍事。
+
+[root@cloudsec2 ~]# pgrep etcd
+25177
+[root@cloudsec2 ~]# pgrep -l etcd
+25177 etcd
+[root@cloudsec2 ~]# pkill etcd
+
+然后再看一下发现成功杀死etcd进程。killall就不试了，以前搞pg的时候用过，多进程的程序杀起来方便。
+```
 
 ----------------------------------------------------------------------------------------------------
 
 ## 其他暂未分类
 
 ### 暂停和放到前台继续执行，bg是放到后台
-```
+```shell
 ctrl + z, fg, ctrl + z, fg, ...
 ```
 > 其他参考：<<【Bash百宝箱】shell作业控制（jobs、bg、fg）>>http://blog.csdn.net/iEearth/article/details/52703576
 
 ### diff
-```
+```shell
 diff参数-y 是以并列方式显示; -W 指定宽度：
 diff file1 file2 -y -W 200 > differencefile
 ```
@@ -218,7 +234,7 @@ linux磁盘分区fdisk命令详解
 https://my.oschina.net/acmfly/blog/116167
 
 ### ln
-```
+```shell
 ln file hardlink      //为文件file创建一个硬链接hardlink，file和hardlink都可以加上一些路径名之类的
 ln -s file softlink   //为文件file创建一个符号链接softlink，创建完成后一般这么显示：softlink -> file
 ```
@@ -233,7 +249,7 @@ ln -s file softlink   //为文件file创建一个符号链接softlink，创建�
   * `把file换个位置，但是链接文件不换位置`：软链接失效，硬链接有效。`再把file放回原位置`：软链接又有效了，硬链接当然更不用说了，file换位置都有效，放回当然还是有效。
   * `把软(硬)链接换位置，但是file不换位置的话`：软链接依然失效。。。这点是和window的快捷方式不同的点；硬链接有效。`把软(硬)链接再放回原位`：软链接又有效了；硬链接当然还是一直有效。
   
-```
+```shell
 给文件夹建链接的话要注意两点：1.只能建软链接；2.链接第二个参数不能带最后的斜杠（白话说就是软链接是个文件，不是个目录）
 
 [ssluser@localhost tmp]$ ln -s folder1/ folder2/
@@ -272,7 +288,7 @@ ln: "folder1/": 不允许将硬链接指向目录
 linux 创建连接命令 ln -s 软链接 https://www.cnblogs.com/kex1n/p/5193826.html
 
 理解 Linux 的硬链接与软链接 https://www.ibm.com/developerworks/cn/linux/l-cn-hardandsymb-links/index.html
-```
+```shell
 清单 1. Linux 系统的顶层目录结构
 
 /              根目录
@@ -305,7 +321,7 @@ http://os.51cto.com/art/200912/173050.htm
 ### 创建修改用户，密码等
 
 *创建用户*
-```
+```shell
 su - root
 useradd -d /home/liuliang -m liuliang
 passwd liuliang
@@ -315,7 +331,7 @@ passwd liuliang
 #### 用户组相关
 
 *更改用户:将liuliang添加到dbgrp用户组中*
-```
+```shell
 usermod -g dbgrp liuliang  
 
 // 最近看的比较多的是用-aG参数的，比如 usermod -aG docker test2。但是我明明记得我用-g参数没问题啊。
@@ -328,13 +344,13 @@ Adding user bugmaster to group testing
 ```
 
 *或者用如下方法添加test用户到docker用户组*
-```
+```shell
 gpasswd -a test docker
 ```
 
 *查看某个user所在的组,以及组内成员*
 `groups ${user}` 
-```
+```shell
 [root@dhcp-9-186-54-39 ~]# groups test
 test : test wheel docker
 [root@dhcp-9-186-54-39 ~]# groups root
@@ -345,7 +361,7 @@ root : root
 ### 修改主机名
 
 *总结*
-```
+```shell
 查询linux机器的hostname命令很简单，大家应该都会用：使用root用户登录时，前面的登录符就是了
 
 修改分为两种：1.暂时修改；2.永久修改
@@ -378,7 +394,7 @@ http://www.jb51.net/LINUXjishu/77329.html
 http://blog.csdn.net/houjixin/article/details/52604941
 
 ### 查看空间类
-```
+```shell
 df -h 
 du -sh
 ```
@@ -388,7 +404,7 @@ du -sh
 <<详解coredump>>
 http://blog.csdn.net/tenfyguo/article/details/8159176
 
-```
+```shell
 查看数据库core_dump文件的位置
 vi /proc/sys/kernel/core_pattern
 ```
@@ -397,7 +413,7 @@ gdb调试coredump(使用篇)
 http://blog.csdn.net/sunxiaopengsun/article/details/72974548
 
 ### 查看网卡信息
-```
+```shell
 /sbin/ifconfig
 ```
 
@@ -406,7 +422,7 @@ https://zhidao.baidu.com/question/364840654.html
 
 
 ### 查看80端口被哪个程序占用
-```
+```shell
 netstat -anp | grep 80
 ```
 
@@ -418,7 +434,7 @@ http://www.cnblogs.com/emanlee/p/3587571.html
 <<查看Linux版本系统信息方法汇总>>
 https://www.cnblogs.com/lanxuezaipiao/archive/2012/10/22/2732857.html
 
-```
+```shell
 1、# uname －a   （Linux查看版本当前操作系统内核信息）
  
 Linux localhost.localdomain 2.4.20-8 #1 Thu Mar 13 17:54:28 EST 2003 i686 athlon i386 GNU/Linux
@@ -434,7 +450,7 @@ Red Hat Linux release 9 (Shrike)
 ```
 
 ### 查看CPU信息
-```
+```shell
 # 总核数 = 物理CPU个数 X 每颗物理CPU的核数 
 # 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数
 
@@ -474,7 +490,7 @@ http://blog.csdn.net/ohmygirl/article/details/40385083
 
 ***延伸：*** 
 使用dd命令快速生成大文件或者小文件的方法 - CSDN博客 https://blog.csdn.net/cywosp/article/details/9674757
-```
+```shell
 dd if=/dev/zero of=test bs=1M count=1000
 在当前目录下会生成一个1000M的test文件，文件内容为全0
 ```
@@ -510,7 +526,7 @@ http://www.cnblogs.com/peida/tag/%E6%AF%8F%E6%97%A5%E4%B8%80linux%E5%91%BD%E4%BB
 - 每天一个linux命令（13）：less 命令 http://www.cnblogs.com/peida/archive/2012/11/05/2754477.html
 - 每天一个linux命令（35）：ln 命令 http://www.cnblogs.com/peida/archive/2012/12/11/2812294.html
 - 每天一个linux命令（40）：wc命令 http://www.cnblogs.com/peida/archive/2012/12/18/2822758.html
-  ```
+  ```shell
   实例3：用来统计当前目录下的文件数
   ls -l | wc -l 
   
@@ -531,7 +547,7 @@ https://blog.csdn.net/u010028869/article/details/51547926
 ## Linux小技巧
 
 **linux里目录有空格的时候得用反斜杠加空格才能进去**
-```
+```shell
 SZX1000126633:/home/liuliang/svndir # ll
 total 8
 drwxr-xr-x 2 root root 4096 Aug 31 15:26 svn on linux
@@ -542,9 +558,8 @@ SZX1000126633:/home/liuliang/svndir # cd svn\ on\ linux/
 SZX1000126633:/home/liuliang/svndir/svn on linux # 
 ```
 
-<<Linux最常用命令及快捷键整理>>
-http://www.cnblogs.com/wqsbk/p/5649037.html
-```
+<<Linux最常用命令及快捷键整理>> http://www.cnblogs.com/wqsbk/p/5649037.html
+```shell
 Ctrl + a            光标移动到行首（ahead of line），相当于通常的Home键
 Ctrl + e            光标移动到行尾（end of line）
 Ctrl + u            删除光标之前到行首的字符
@@ -553,9 +568,8 @@ Ctrl + f            光标向前（forward）移动一个字符位置
 Ctrl + b            光标往回（backward）移动一个字符位置
 ```
 
-<<linux反向搜索执行过的命令>>
-http://blog.csdn.net/rangf/article/details/6399897
-```
+<<linux反向搜索执行过的命令>> http://blog.csdn.net/rangf/article/details/6399897
+```shell
 linux命令行的history是一个熟知但不常用的命令，原因是要查某个命令的编号需要输入 history|grep xxx ，
 又因为!?xxx,!xxx 属于运行即执行也不方便，ctrl+r则方便多了。
 
