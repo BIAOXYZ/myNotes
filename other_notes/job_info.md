@@ -266,6 +266,18 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 主要工作城市没有自有住房，并且有实际的租金支出，就可以享受住房租金专项扣除。
 ```
 
+#### 新个税法案过渡期两种年终奖纳税方式选择
+
+年终奖金计税方式的选择（附测算模板） https://www.jianshu.com/p/4ba1c582ac36
+
+两种不当适用年终奖政策做法，会交冤枉税 - 麦托什的文章 - 知乎 https://zhuanlan.zhihu.com/p/53524793
+
+新个税法过渡期内，年终奖如何计税 - 都市放牧人的文章 - 知乎 https://zhuanlan.zhihu.com/p/56148952
+
+年终奖如何扣个税？？？ - 知乎 https://www.zhihu.com/question/309827546
+
+新版个税法修正案将按月征收改为按年，对年终奖有什么影响？ - 知乎 https://www.zhihu.com/question/283265521
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 工作相关八卦
