@@ -1,4 +1,20 @@
 
+# BMC & IPMI
+
+BMC简介 https://blog.csdn.net/jiangwei0512/article/details/76358995
+
+baseboard management controller：底板管理控制器 https://searchnetworking.techtarget.com.cn/whatis/12-24883/
+
+BMC是什麼? 能吃嗎? https://medium.com/@lioukiki1/bmc%E6%98%AF%E4%BB%80%E9%BA%BC-%E8%83%BD%E5%90%83%E5%97%8E-bee457ea5c37
+
+使用 ipmitool 实现 Linux 系统下对服务器的 ipmi 管理 https://www.ibm.com/developerworks/cn/linux/l-ipmi/index.html
+
+## BMC & IPMI wiki
+
+Intelligent Platform Management Interface https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface 【[IPMI](https://zh.wikipedia.org/wiki/IPMI)】
+- Out-of-band management https://en.wikipedia.org/wiki/Out-of-band_management 【[带外管理](https://zh.wikipedia.org/wiki/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86)】
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # xCAT官网
 
