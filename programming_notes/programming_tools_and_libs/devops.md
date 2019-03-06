@@ -16,11 +16,6 @@ Extreme Cloud Administration Toolkit https://xcat-docs.readthedocs.io/en/stable/
 
 集群管理和配置工具 xCAT https://www.oschina.net/p/xcat
 
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-Ansible (software) https://en.wikipedia.org/wiki/Ansible_(software)
-
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Ansible Tower官网
@@ -38,4 +33,19 @@ Ansible vs Ansible Tower https://www.upguard.com/articles/ansible-vs.-ansible-to
 
 Getting Started With Ansible Tower https://dzone.com/articles/getting-started-with-ansible-tower-hands-on
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# Ansible官网
+
+Ansible (software) https://en.wikipedia.org/wiki/Ansible_(software)
+
+# Ansible general
+
+SaltStack 与 Ansible 选择？ - 知乎 https://www.zhihu.com/question/22707761
+
+Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【:star:】
+
+# Ansible快速开始
+
+Ansible入门 https://getansible.com/
 
