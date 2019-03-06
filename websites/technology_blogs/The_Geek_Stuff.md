@@ -50,6 +50,17 @@ ls -l /backup
 ```
 
 15 Examples To Master Linux Command Line History https://www.thegeekstuff.com/2008/08/15-examples-to-master-linux-command-line-history/
+```
+1. Display timestamp using HISTTIMEFORMAT
+
+# export HISTTIMEFORMAT='%F %T '
+# history | more
+1  2008-08-05 19:02:39 service network restart
+2  2008-08-05 19:02:39 exit
+3  2008-08-05 19:02:39 id
+4  2008-08-05 19:02:39 cat /etc/redhat-release
+
+```
 
 ## sed
 
