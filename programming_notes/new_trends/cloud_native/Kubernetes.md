@@ -1,6 +1,5 @@
 
-
-# 官方连接
+# 官方链接
 
 ## kubernetes 官网及官方文档
 
@@ -144,6 +143,16 @@ Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-per
     > The one downside is that you need to configure an Ingress Controller for your cluster. But that’s pretty easy—in this example, we’ll use the Nginx Ingress Controller."
 - Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
 - Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
+
+## kubernetes权限和安全
+
+- Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+- Kubernetes kubectl create clusterrolebinding 命令详解 http://docs.kubernetes.org.cn/494.html
+
+RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/guide/rbac.html
+
+- Configuring permissions in Kubernetes with RBAC https://medium.com/containerum/configuring-permissions-in-kubernetes-with-rbac-a456a9717d5d
+- Configuring RBAC For Your Kubernetes Service Accounts https://medium.com/@lestrrat/configuring-rbac-for-your-kubernetes-service-accounts-c348b64eb242
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
