@@ -69,7 +69,6 @@ https://zhuanlan.zhihu.com/p/20872811
 
 C++ Paxos library that has been used in Wechat production environment. https://github.com/Tencent/phxpaxos
 
-
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Raft
@@ -83,4 +82,7 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 # Raft实现
 
 一个Raft开源项目的结构分析 https://mp.weixin.qq.com/s/1_KAMAx6je8fLsMG1cM-wQ
+
+SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft
+
 
