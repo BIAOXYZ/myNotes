@@ -21,12 +21,30 @@ docker中文社区站  http://www.docker.org.cn/
 
 # docker常用命令总结
 
+## docker run
+
+```
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+
+例子：
+
+docker run -it busybox sh   //以busybox为镜像启动一个容器，并允许交互式地在容器中执行sh
+docker run -dit busybox sh   //同上，区别是加了-d参数后该容器会在后台运行。-i -t -d等其实也可以分开写
+docker run --name mycontainer -it busybox sh  //--name参数为该容器指定一个名字，不然是随机的名字
+```
+
+## 其他docker常用命令
+
 - 15 个 Docker 技巧和提示 https://blog.csdn.net/liyingke112/article/details/73920837
 ```
 删除已退出的容器： docker rm $(docker ps -q -f "status=exited") 
 //注：有时运行一段时间有不少不用的container，此时用这个删比较好。
 ```
 - 这20个Docker Command，有几个是你会的？ https://blog.csdn.net/mingongge/article/details/80524241
+
+Docker入门 | 学习第一个Docker容器 - 郭志敏的文章 - 知乎 https://zhuanlan.zhihu.com/p/21252578
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
