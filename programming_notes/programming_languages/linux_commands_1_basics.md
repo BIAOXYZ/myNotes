@@ -542,8 +542,17 @@ https://www.zhihu.com/question/25910725
 <<linux运维常用命令一句话（持续更新中）>>
 http://www.linuxde.net/2011/09/721.html
 
-【Linux运维入门】PSSH-轻量集群管理工具
-https://blog.csdn.net/u010028869/article/details/51547926
+brctl 命令详解 https://www.cnblogs.com/xieshengsen/p/5857415.html
+```shell
+yum install bridge-utils -y   //安装网桥管理工具包：bridge-utile
+brctl show   //查询网桥信息
+```
+
+### pssh
+
+【Linux运维入门】PSSH-轻量集群管理工具 https://blog.csdn.net/u010028869/article/details/51547926
+
+使用PSSH批量管理Linux https://www.jianshu.com/p/d6c8b7aac221
 
 ## Linux小技巧
 
@@ -598,7 +607,6 @@ ctrl+r
 
 Linux目录多个斜杠是否完全等同单个斜杠？
 https://unix.stackexchange.com/questions/12283/unix-difference-between-path-starting-with-and/12285
-
 
 
 ### 碰到了一个自己造成的搞笑问题，记一下吧~还挺有意思。
