@@ -64,6 +64,10 @@ https://www.zhihu.com/question/21409296/answer/18184584
 
 Golang语言社区--腾讯课堂、网易云课堂课程PPT及代码 https://github.com/Golangltd/codeclass
 
+--------------------------------------------------
+
+📚 《Go2编程指南》开源图书，重点讲解Go2新特性，以及Go1教程中较少涉及的特性 https://chai2010.cn/go2-book/ || https://github.com/chai2010/go2-book
+
 # Go优秀博客
 
 Tony Bai 一个程序员的心路历程 https://tonybai.com/
