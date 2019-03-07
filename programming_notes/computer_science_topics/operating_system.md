@@ -94,6 +94,11 @@ centos7 最小化安装之后，默认是没有 ifconfig,netstat命令的；我�
     yum -y install net-tools
 ```
 
+# 嵌入式设备OS
+
+BusyBox: The Swiss Army Knife of Embedded Linux https://busybox.net/about.html
+
+BusyBox 简化嵌入式 Linux 系统 https://www.ibm.com/developerworks/cn/linux/l-busybox/index.html
 
 # 移动设备OS
 
