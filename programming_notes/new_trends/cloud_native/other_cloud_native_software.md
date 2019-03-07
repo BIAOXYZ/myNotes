@@ -21,3 +21,5 @@ flannel is a network fabric for containers, designed for Kubernetes https://gith
 - DockOne技术分享（十八）：一篇文章带你了解Flannel http://dockone.io/article/618
 - Docker 配置Flannel网络过程及原理 https://blog.csdn.net/liukuan73/article/details/54897594
 
+理解Kubernetes网络之Flannel网络 https://tonybai.com/2017/01/17/understanding-flannel-network-for-kubernetes/
+
