@@ -67,6 +67,8 @@ Settings->Configuration->Terminal
 全功能的终端软件MobaXterm推荐配置
 https://www.jianshu.com/p/161b9be14494
 
+免费开源SSH客户端神器MobaXterm，是时候puttty、Xshell和SecureCRT说Byebye了 https://www.freebuf.com/column/163631.html
+
 ### CMake
 <<find_package与CMake如何查找链接库详解>>
 http://blog.csdn.net/bytxl/article/details/50637277
