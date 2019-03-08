@@ -32,8 +32,13 @@ sudo yum install docker-ce
 ```
 
 ```
-2019.02.26更新：看来并非任何机器和系统都如此，刚才就碰到了需要启动docker服务的情况:
-(注意刚安装完不启动的话执行docker version时候那句报错。)
+2019.02.26更新：看来并非任何机器和系统都如此，刚才就碰到了需要启动docker服务的情况。
+注意刚安装完不启动docker服务的话执行docker version时候那句报错：
+"Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+----------------------------------------------------------------------------------------------------
+
+Dependency Updated:
+  policycoreutils.x86_64 0:2.5-29.el7_6.1
 
 Complete!
 [root@cloudsec1 ~]# docker version
@@ -74,6 +79,57 @@ sudo groupadd docker
 
 // sudo usermod -aG docker $USER
 sudo usermod -aG docker test2  
+```
+
+```
+不把普通用户（例如此处的openshift1）加进docker用户组就执行docker命令的话会报如下错误：
+"Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get 
+http://%2Fvar%2Frun%2Fdocker.sock/v1.39/version: dial unix /var/run/docker.sock: connect: permission denied"
+----------------------------------------------------------------------------------------------------
+
+[openshift1@cloudsec1 ~]$ docker version
+Client:
+ Version:           18.09.2
+ API version:       1.39
+ Go version:        go1.10.6
+ Git commit:        6247962
+ Built:             Sun Feb 10 04:13:27 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/version: dial unix /var/run/docker.sock: connect: permission denied
+
+[openshift1@cloudsec1 ~]$ groups openshift1
+openshift1 : openshift1
+
+[root@cloudsec1 ~]# groupadd docker
+groupadd: group 'docker' already exists
+[root@cloudsec1 ~]# usermod -aG docker openshift1
+[root@cloudsec1 ~]#
+
+[openshift1@cloudsec1 ~]$ groups openshift1
+openshift1 : openshift1 docker
+
+--> Then user "openshift1" exit and login // openshift1用户退出再登陆一下
+
+[openshift1@cloudsec1 ~]$ docker version
+Client:
+ Version:           18.09.2
+ API version:       1.39
+ Go version:        go1.10.6
+ Git commit:        6247962
+ Built:             Sun Feb 10 04:13:27 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.2
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.6
+  Git commit:       6247962
+  Built:            Sun Feb 10 03:47:25 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ## docker-compose安装
