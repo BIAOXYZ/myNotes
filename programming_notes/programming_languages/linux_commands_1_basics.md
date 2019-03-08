@@ -468,6 +468,10 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
 
+### 查看内存、硬盘等其他资源
+
+Linux 查看系统硬件信息(实例详解) https://www.cnblogs.com/ggjucheng/archive/2013/01/14/2859613.html
+
 ### .bashrc & /etc/profile
 
 - Linux 之 /etc/profile、~/.bash_profile 等几个文件的执行过程 https://blog.csdn.net/ithomer/article/details/6322892
