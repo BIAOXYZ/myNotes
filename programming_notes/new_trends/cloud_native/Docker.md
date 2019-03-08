@@ -33,6 +33,9 @@ Run a command in a new container
 docker run -it busybox sh   //以busybox为镜像启动一个容器，并允许交互式地在容器中执行sh
 docker run -dit busybox sh   //同上，区别是加了-d参数后该容器会在后台运行。-i -t -d等其实也可以分开写
 docker run --name mycontainer -it busybox sh  //--name参数为该容器指定一个名字，不然是随机的名字
+
+docker run -P {images}   //通过-P参数，将容器的端口映射到宿主机的随机端口：
+docker run -p {hostPort}:{containerPort} {images}   //通过-p参数，将容器的端口映射到宿主机的制定端口：
 ```
 
 ## 其他docker常用命令
