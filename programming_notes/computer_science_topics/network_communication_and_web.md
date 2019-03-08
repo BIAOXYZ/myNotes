@@ -33,3 +33,14 @@ HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.
 - localhost、127.0.0.1 和 本机IP 三者的区别? - 知乎 https://www.zhihu.com/question/23940717
 - What is the difference between 127.0.0.1 and localhost https://stackoverflow.com/questions/7382602/what-is-the-difference-between-127-0-0-1-and-localhost
 - What is the difference between 127.0.0.1 and my assigned IPv4 address? https://superuser.com/questions/897699/what-is-the-difference-between-127-0-0-1-and-my-assigned-ipv4-address
+
+### IP，子网掩码，默认网关，DNS等
+
+如何理解子网掩码中的“子网”？ - 知乎 https://www.zhihu.com/question/21064101
+
+IP地址，子网掩码，默认网关，DNS服务器详解 https://www.cnblogs.com/JuneWang/p/3917697.html
+
+计算机网络: IP地址，子网掩码，网段表示法，默认网关，DNS服务器详解 https://www.cnblogs.com/iceJava/p/5372033.html
+
+
+
