@@ -36,11 +36,11 @@ HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.
 
 ### IP，子网掩码，默认网关，DNS等
 
-如何理解子网掩码中的“子网”？ - 知乎 https://www.zhihu.com/question/21064101
+- [ ] 如何理解子网掩码中的“子网”？ - 知乎 https://www.zhihu.com/question/21064101
 
-IP地址，子网掩码，默认网关，DNS服务器详解 https://www.cnblogs.com/JuneWang/p/3917697.html
+- [x] IP地址，子网掩码，默认网关，DNS服务器详解 https://www.cnblogs.com/JuneWang/p/3917697.html
 
-计算机网络: IP地址，子网掩码，网段表示法，默认网关，DNS服务器详解 https://www.cnblogs.com/iceJava/p/5372033.html
+- [x] 计算机网络: IP地址，子网掩码，网段表示法，默认网关，DNS服务器详解 https://www.cnblogs.com/iceJava/p/5372033.html
 
 
 
