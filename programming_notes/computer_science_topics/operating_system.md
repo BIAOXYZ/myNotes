@@ -11,6 +11,13 @@ https://www.cnbeta.com/articles/soft/751203.htm
 Linux 内核揭密 https://github.com/MintCN/linux-insides-zh
   > Linux Insides中文 https://xinqiu.gitbooks.io/linux-insides-cn/content/index.html
 
+## inode
+
+linux下普通文件和目录文件区别 https://blog.csdn.net/mrjy1475726263/article/details/34436769
+
+inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wiki/Inode)】
+
+
 # Windows系
 
 微软团队成员谈Windows Kernel的结构 - Windows - cnBeta.COM
