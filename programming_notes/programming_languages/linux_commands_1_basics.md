@@ -513,6 +513,12 @@ http://blog.csdn.net/yangzhenzhen/article/details/8862236
 # 2.other part:
 ----------------------------------------------------------------------------------------------------
 
+Linux命令简写和全称 https://blog.csdn.net/chinayuan/article/details/51291666
+
+List of Unix commands https://en.wikipedia.org/wiki/List_of_Unix_commands
+
+## 系列教程
+
 <<Linux命令大全>>系列
 - http://man.linuxde.net/kill 
 - http://man.linuxde.net/ldconfig
