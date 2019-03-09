@@ -135,6 +135,9 @@ why “make” before “make install” https://stackoverflow.com/questions/166
 What does 'make install' do? https://superuser.com/questions/360178/what-does-make-install-do
 > "When you do "make install", the make program takes the binaries from the previous step and copies them into some appropriate locations so that they can be accessed. Unlike on Windows, installation just requires copying some libraries and executables and there is no registry requirement as such. In short, "make install" just copies compiled files into appropriate locations."
 
+What does --prefix do exactly when used in ./configure? https://askubuntu.com/questions/891835/what-does-prefix-do-exactly-when-used-in-configure
+> When you run `./configure`, the `--prefix` option lets you specify where those directories are. It is called `--prefix` because it lets you give the prefix that appears in the paths to each of the directories where files from the program or library that you are building are to be installed. Most `configure` scripts support `--prefix`, and omitting it and just running `./configure` is typically equivalent to `./configure --prefix=/usr/local`.
+
 #### 动态链接库相关
 
 - linux找不到动态链接库 .so文件的解决方法 https://blog.csdn.net/gx19862005/article/details/48528235
