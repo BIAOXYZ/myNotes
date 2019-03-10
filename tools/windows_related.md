@@ -89,6 +89,15 @@ SetupVPN http://desktopclient.net/gw/index.html#/
 
 Lantern https://github.com/getlantern/download
 
+## 远程桌面控制
+
+Comparison of remote desktop software https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software 
+> teamviewer个垃圾（虽然已经比别的垃圾好很多了）动不动就提示`commercial use suspected`，就是想收钱，N多人都是这问题，所以想找个完全开源免费的了。然后这个wiki列表里一定先找最近还活跃的。。。
+- TigerVNC https://tigervnc.org/ || https://github.com/TigerVNC/tigervnc --> 这个18年还有版本发布，而且有github，应该还凑合吧？
+
+14 Free Remote Access Software Tools https://www.lifewire.com/free-remote-access-software-tools-2625161
+- 02 UltraVNC
+
 ### teamviewer
 - https://login.teamviewer.com/
 - https://community.teamviewer.com/t5/Knowledge-Base/All-about-passwords/ta-p/28442#toc-hId-585378451
