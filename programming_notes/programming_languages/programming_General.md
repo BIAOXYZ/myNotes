@@ -111,9 +111,15 @@ http://zhuanlan.zhihu.com/p/34280674
 
 你以为我在玩游戏？其实我在学编程！ https://mp.weixin.qq.com/s/2njySI6EgW1MyQR0Cu6ELg
 
+### programming visualization
+
+VISUALGO https://visualgo.net/
+
+:fireworks: Interactive Online Platform that Visualizes Algorithms from Code https://algorithm-visualizer.org/ || https://github.com/algorithm-visualizer/algorithm-visualizer
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-### Linux Programming
+## Linux Programming
 
 Difference between 'Killed' and 'Terminated' https://stackoverflow.com/questions/19206124/difference-between-killed-and-terminated
 > 正常终止的程序会有clean exit来做些收尾工作，比如把仍在内存中的信息持久化。
@@ -135,10 +141,12 @@ why “make” before “make install” https://stackoverflow.com/questions/166
 What does 'make install' do? https://superuser.com/questions/360178/what-does-make-install-do
 > "When you do "make install", the make program takes the binaries from the previous step and copies them into some appropriate locations so that they can be accessed. Unlike on Windows, installation just requires copying some libraries and executables and there is no registry requirement as such. In short, "make install" just copies compiled files into appropriate locations."
 
+### --prefix
+
 What does --prefix do exactly when used in ./configure? https://askubuntu.com/questions/891835/what-does-prefix-do-exactly-when-used-in-configure
 > When you run `./configure`, the `--prefix` option lets you specify where those directories are. It is called `--prefix` because it lets you give the prefix that appears in the paths to each of the directories where files from the program or library that you are building are to be installed. Most `configure` scripts support `--prefix`, and omitting it and just running `./configure` is typically equivalent to `./configure --prefix=/usr/local`.
 
-#### 动态链接库相关
+### 动态链接库相关
 
 - linux找不到动态链接库 .so文件的解决方法 https://blog.csdn.net/gx19862005/article/details/48528235
 - 无root权限下解决编译时的依赖问题 https://www.jianshu.com/p/da92ca36a220
@@ -146,6 +154,15 @@ What does --prefix do exactly when used in ./configure? https://askubuntu.com/qu
   * Linux动态链接库.so文件的创建与使用 https://blog.csdn.net/ithomer/article/details/7346146
 - /etc/ld.so.conf详解 http://www.cnblogs.com/chris-cp/p/3591306.html	
 
+### 链接库之二
+
+Linux共享库、静态库、动态库详解 https://www.cnblogs.com/sunsky303/p/7731911.html [`*`][:star:]
+
+Linux 共享库指南 http://liaoph.com/linux-shared-libary/
+
+Linux gcc编译生成静态库和共享动态库的过程 https://typecodes.com/cseries/gccgensharedlib.html
+
+--------------------------------------------------
 
 ### Troubleshooters.com
 

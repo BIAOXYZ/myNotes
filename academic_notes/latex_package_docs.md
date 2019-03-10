@@ -20,3 +20,6 @@ The blockdiagram LaTeX package defines a set of tikz macros to draw nice block d
 
 LaTeX package that embeds and executes Wolfram Language (Mathematica) codes inside LaTeX documents https://github.com/stevenliuyi/latex-alpha2
 
+A vector drawing editor for LaTeX (Java Swing/JavaFX). http://latexdraw.sourceforge.net/ || https://github.com/latexdraw/latexdraw
+> Manual https://github.com/latexdraw/latexdraw/wiki/Manual
+
