@@ -32,6 +32,8 @@
 
 家有女友 https://zh.moegirl.org/%E5%AE%B6%E6%9C%89%E5%A5%B3%E5%8F%8B
 
+柏原もも/柏原桃 http://bangumi.tv/character/66664
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
