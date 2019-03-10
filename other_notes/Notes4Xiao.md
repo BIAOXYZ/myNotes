@@ -40,8 +40,6 @@ Jian Huang http://jianh.web.engr.illinois.edu/
 
 Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
-在MAC上安装MIRACL库(How to install Miracl on Macos system) https://blog.csdn.net/HOXDSC/article/details/84102908
-
 ### 游戏
 
 独·数之道 | 数独爱好者 http://www.sudokufans.org.cn/
@@ -129,3 +127,11 @@ https://petsymposium.org/2017/program.php (PETS 2017)
   * https://petsymposium.org/2017/slides/pets/DangDCC.pdf
 
 Universally Composable Accumulators https://eprint.iacr.org/2018/1241.pdf
+
+###
+
+在MAC上安装MIRACL库(How to install Miracl on Macos system) https://blog.csdn.net/HOXDSC/article/details/84102908
+
+- Core dump support #147 https://github.com/intel/linux-sgx/issues/147
+- linux intel SGX 安装 https://blog.csdn.net/y734564892/article/details/78177444
+
