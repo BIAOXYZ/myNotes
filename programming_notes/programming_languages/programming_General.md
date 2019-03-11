@@ -23,12 +23,16 @@ The Algorithms https://github.com/TheAlgorithms/
 
 2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记 https://github.com/imhuay/Algorithm_Interview_Notes-Chinese
 
-后端架构师技术图谱 https://github.com/xingshaocheng/architect-awesome
-
 Wiki for OI / ACM-ICPC. （某大型游戏线上攻略，内含炫酷算术魔法） https://oi-wiki.org https://github.com/24OI/OI-wiki
+
+--------------------------------------------------
+
+后端架构师技术图谱 https://github.com/xingshaocheng/architect-awesome
 
 技术和架构等相关文档 https://github.com/xunchangguo/km
 - 技术文档中文版本：http://doczh.cn/
+
+Learn X in Y minutes https://learnxinyminutes.com/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
