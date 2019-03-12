@@ -1,4 +1,8 @@
 
+# others
+
+Modernize your application deployment with Lift and Shift https://developers.redhat.com/blog/2018/10/18/modernize-your-application-deployment-with-lift-and-shift/
+
 # BMC & IPMI
 
 BMC简介 https://blog.csdn.net/jiangwei0512/article/details/76358995
@@ -65,3 +69,4 @@ Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【:star:】
 
 Ansible入门 https://getansible.com/
 
+Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansible/
