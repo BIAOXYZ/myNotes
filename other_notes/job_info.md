@@ -297,6 +297,9 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 
 中国知名 IT 企业加班情况分别是怎样的？ - 知乎 https://www.zhihu.com/question/67317889
 
+硅谷顶尖软件公司的工程师一年挣多少钱？来听听内部人士怎么说 - hai-kun的文章 - 知乎 https://zhuanlan.zhihu.com/p/34344555
+- 一亩三分地»论坛›求职+工作›晒工资抖包袱 https://www.1point3acres.com/bbs/forum-237-1.html
+
 ## 特定公司八卦
 
 阿里巴巴公司根据截图查到泄露信息的具体员工的技术是什么？ - AmeliaAn的回答 - 知乎
@@ -345,6 +348,8 @@ https://www.zhihu.com/question/24694855
 事实上，据发布该视频的博主修改微博后表示，这个视频并非华为官方出品，而是网友自发制作。据了解，该歌曲由解放军总政歌舞团
 著名词作家李幼容、全国公安文联签约词作家臧思佳以及享受国务院津贴的曲作家郑冷横共同创作，由周丹声乐工作室的小朋友担任首唱。
 ```
+
+
 
 ### 小公司八卦
 
