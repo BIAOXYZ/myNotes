@@ -79,6 +79,15 @@ maven环境快速搭建 https://www.cnblogs.com/fnng/archive/2011/12/02/2272610.
 - linux那点事儿（四）----用户管理详解 http://www.cnblogs.com/fnng/archive/2012/05/06/2485973.html
 - linux那点事儿（五）----用户管理常用命令 https://www.cnblogs.com/fnng/archive/2012/05/13/2498366.html
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+## 惨绿少年@clsn.io https://www.cnblogs.com/clsn/
+
+惨绿少年是什么？ https://www.cnblogs.com/clsn/p/8144252.html
+
+sed命令详解 vim高级技巧 shell编程上 https://www.cnblogs.com/clsn/p/7639841.html
+
+Shell编程进阶篇(完结) https://www.cnblogs.com/clsn/p/8028337.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
