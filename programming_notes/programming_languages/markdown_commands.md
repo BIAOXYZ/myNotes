@@ -15,6 +15,10 @@ GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/arti
 - 如何实现Github markdown 目录/页内跳转？ - 鉴津Jackie的回答 - 知乎 https://www.zhihu.com/question/58630229/answer/191984051
   * https://github.com/guodongxiaren/README
 
+***--------------------------------------------------分割线--------------------------------------------------***
+
+Complete list of github markdown emoji markup https://gist.github.com/rxaviers/7360908
+
 # markdown小技巧
 
 ## markdown中使用html
