@@ -164,12 +164,6 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# kubernetes插件
-
-Automatically provision and manage TLS certificates in Kubernetes https://jetstack.io || https://github.com/jetstack/cert-manager
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
 # kubernetes others
 
 Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
@@ -186,5 +180,21 @@ Docker官方将支持Kubernetes，容器编排大战宣告结束 http://www.info
 > Sorry, Linux. Kubernetes is now the OS that matters https://www.infoworld.com/article/3322120/kubernetes/sorry-linux-kubernetes-is-now-the-os-that-matters.html
 >> 对不起，小麦。馒头现在是更重要的食物！
 
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# kubernetes插件
+
+Automatically provision and manage TLS certificates in Kubernetes https://jetstack.io || https://github.com/jetstack/cert-manager
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# projects based on k8s
+
+A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
+
+# kubeflow
+
+Machine Learning Toolkit for Kubernetes https://github.com/kubeflow/kubeflow
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
