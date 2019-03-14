@@ -12,6 +12,18 @@ ps ufx
 <<Linux文件内容查阅 - cat, tac, nl, more, less, head, tail, od>>
 http://www.linuxidc.com/Linux/2015-08/120978.htm
 
+```bash
+有时某个进程的命令太长（比如k8s, etcd），为了显示完整命令，可以用：
+ps -ef -w -w   // -ef可以换成-ufx，-w -w可以合并写成-ww。所以基本等价于下面这个：
+ps ufx -ww
+
+另外一种思路就是通过管道给cat：
+ps ufx | cat  
+ps -ef | cat
+
+突然发现 ps -ef 和 ps ef 是不一样的（ps ufx带不带横杠都一样），回头看吧。
+```
+
 ### ls
 
 ls实现列文件按时间排序 https://blog.csdn.net/gtuu0123/article/details/4420424
