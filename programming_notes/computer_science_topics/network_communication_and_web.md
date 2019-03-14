@@ -42,5 +42,9 @@ HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.
 
 - [x] 计算机网络: IP地址，子网掩码，网段表示法，默认网关，DNS服务器详解 https://www.cnblogs.com/iceJava/p/5372033.html
 
+### /etc/resolv.conf
 
+Linux resolv.conf简介 https://blog.csdn.net/K346K346/article/details/83790044
+
+resolv.conf在Linux系统中的作用 https://blog.csdn.net/longcheng217/article/details/81316877
 
