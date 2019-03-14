@@ -52,6 +52,12 @@ https://blog.csdn.net/number_0_0/article/details/73291182
 linux shell中'',""和``的区别
 https://www.cnblogs.com/Skyar/p/5914942.html
 
+#### Shell脚本中的中括号
+
+What is the difference between double and single square brackets in bash? https://serverfault.com/questions/52034/what-is-the-difference-between-double-and-single-square-brackets-in-bash
+- Greg's Wiki http://mywiki.wooledge.org/
+  * BashGuide http://mywiki.wooledge.org/BashGuide
+  * The Bash Guide https://guide.bash.academy/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
