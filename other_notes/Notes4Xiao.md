@@ -44,6 +44,10 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 独·数之道 | 数独爱好者 http://www.sudokufans.org.cn/
 
+### 电影
+
+《名侦探柯南》面膜将上市：柯南=抗衰老 https://www.ithome.com/0/413/981.htm
+
 ### CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
