@@ -15,6 +15,8 @@ What Is UEFI, and How Is It Different from BIOS? https://www.howtogeek.com/56958
 
 RAID https://zh.wikipedia.org/wiki/RAID
 
+【IT之家学院】令硬盘速度翻倍还更安全：Raid到底是啥？ https://www.ithome.com/0/414/101.htm
+
 块存储、文件存储、对象存储这三者的本质差别是什么？ - 知乎 https://www.zhihu.com/question/21536660
 
 ### SSD
