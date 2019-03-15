@@ -6,6 +6,16 @@ http://www.codeweblog.com/ssh%E7%94%A8%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95%E8%BF
 
 ### 阮一峰SSL/TLS相关
 - <<SSH原理与运用（一）：远程登录>> http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+```
+SSH主要用于远程登录。假定你要以用户名user，登录远程主机host，只要一条简单命令就可以了。
+　　$ ssh user@host
+
+如果本地用户名与远程用户名一致，登录时可以省略用户名。
+　　$ ssh host
+  
+SSH的默认端口是22，也就是说，你的登录请求会送进远程主机的22端口。使用p参数，可以修改这个端口。
+　　$ ssh -p 2222 user@host
+```
 - SSL/TLS协议运行机制的概述 http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html
 - 图解SSL/TLS协议 http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
 
@@ -14,6 +24,11 @@ http://www.codeweblog.com/ssh%E7%94%A8%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95%E8%BF
 - http://blog.csdn.net/seeyouc/article/details/53102280
 - http://www.cnblogs.com/jyzhao/p/3781072.html
 - https://www.linuxdaxue.com/linux-auto-make-ssh-authon.html
+
+#### SSH免密登陆（和建互信一个意思）
+
+- ssh免密登录配置 https://www.jianshu.com/p/0922095f69f3
+- Linux之ssh免密登录 https://blog.csdn.net/mmd0308/article/details/73825953
 
 ### samba
 
