@@ -111,6 +111,8 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 ### paper
 
+- (CCS 2017) FAME: Fast Attribute-based Message Encryption https://eprint.iacr.org/2017/807.pdf
+
 - Practical Secure Aggregation for Privacy-Preserving Machine Learning
 [https://eprint.iacr.org/2017/281.pdf]
 [https://dl.acm.org/citation.cfm?id=3133982]
