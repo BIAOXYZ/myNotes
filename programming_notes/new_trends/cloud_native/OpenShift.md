@@ -36,3 +36,18 @@ Django Example: This is a Django project that you can use as the starting point 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# openshift security
+
+Authentication https://docs.openshift.com/container-platform/3.11/architecture/additional_concepts/authentication.html
+
+A reverse proxy that provides authentication with OpenShift via OAuth and Kubernetes service accounts https://github.com/openshift/oauth-proxy
+
+OpenShift - Security https://www.tutorialspoint.com/openshift/openshift_security.htm
+
+openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/article/details/78273717
+
+解析 | OpenShift源码简析之oauth流程(上） http://www.10tiao.com/html/187/201809/2652137245/1.html
+
+理解OpenShift（4）：用户及权限管理 https://www.cnblogs.com/sammyliu/p/10083659.html
+
+
