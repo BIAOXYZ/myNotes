@@ -3,6 +3,10 @@
 
 有的群，真不是人待的地方 https://mp.weixin.qq.com/s/XSnTikhmnMDbT10Wfi-Yyw
 
+# from IT websites
+
+微软Visual Studio 2019安装器图片“绿帽子”问题被修复 https://www.ithome.com/0/414/070.htm
+
 # catchword
 
 你这个糟老头子坏得很 http://www.fanjian.net/jbk/nzgzltzhdh.html
