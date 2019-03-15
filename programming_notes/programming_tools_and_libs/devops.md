@@ -31,6 +31,7 @@ Extreme Cloud Administration Toolkit https://xcat-docs.readthedocs.io/en/stable/
 - rinstall https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/references/man8/rinstall.8.html
 - rcons - Remote Console https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/management/basic/rcons.html
 - lsdef https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/references/man1/lsdef.1.html
+- MTMS-based Discovery https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/discovery/mtms/
 
 # xCAT其他
 
