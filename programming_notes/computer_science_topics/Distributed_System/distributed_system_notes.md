@@ -6,6 +6,8 @@ Scalable, Available, Stable, Performant, and Intelligent System Design Patterns 
 
 Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
+分布式系统(Distributed System)资料 https://yq.aliyun.com/articles/8069
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # transaction system
