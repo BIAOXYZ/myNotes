@@ -83,6 +83,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 一个Raft开源项目的结构分析 https://mp.weixin.qq.com/s/1_KAMAx6je8fLsMG1cM-wQ
 
+## SOFAJRaft
+
 SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft
 
-
+蚂蚁金服开源 SOFAJRaft：生产级 Java Raft 算法库 https://mp.weixin.qq.com/s/pmbI_FyOJJyvg008amPutA
