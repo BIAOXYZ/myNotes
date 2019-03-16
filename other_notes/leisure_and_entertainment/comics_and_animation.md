@@ -34,6 +34,10 @@
 
 柏原もも/柏原桃 http://bangumi.tv/character/66664
 
+## 在下坂本，有何贵干？
+
+在下坂本，有何贵干？ https://zh.moegirl.org/%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%EF%BC%8C%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
