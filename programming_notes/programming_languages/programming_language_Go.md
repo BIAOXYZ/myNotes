@@ -75,6 +75,9 @@ Go 标准库中文文档 https://github.com/huangz1990/cngolib.com
 
 # Go优秀博客
 
+Go 每日阅读和 Go 夜读 > Daily Reading Go and Night Reading Go - Go source reading and offline technical or another articles or discussion on every night. https://github.com/developer-learning/reading-go
+> Go 夜读 https://reading.developerlearning.cn/
+
 Tony Bai 一个程序员的心路历程 https://tonybai.com/
 - 理解Golang包导入 https://tonybai.com/2015/03/09/understanding-import-packages/
   * > "实际测试结果告诉我们：(1)在使用第三方包的时候，当源码和.a均已安装的情况下，编译器链接的是源码。"
