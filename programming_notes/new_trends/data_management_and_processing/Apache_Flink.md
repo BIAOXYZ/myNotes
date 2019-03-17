@@ -1,5 +1,8 @@
 
 
+sunglasses A curated list of amazingly awesome Flink and Flink ecosystem resources https://github.com/wuchong/awesome-flink
+> http://awesome.flink-china.org/
+
 Apache Flink 中文文档 https://github.com/apachecn/flink-doc-zh
 > https://flink.apachecn.org
 
