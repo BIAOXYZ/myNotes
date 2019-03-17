@@ -9,3 +9,7 @@ neural    adj.神经的；神经系统的
 ```
 
 # 声近(同)词
+
+# 近义词
+
+Flammable 和 inflammable 有什么差别？ https://www.bilibili.com/read/cv2261181
