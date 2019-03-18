@@ -207,7 +207,18 @@ https://legacy.gitbook.com/book/t0data/burpsuite/details
 
 OpenID 和 OAuth 有什么区别？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/19628327/answer/23291315
 
-Responsible disclosure https://en.wikipedia.org/wiki/Responsible_disclosure
+## learned from IBM
+
+AppSec Fundamentals - Industry History
+- Responsible disclosure https://en.wikipedia.org/wiki/Responsible_disclosure
+- OWASP https://en.wikipedia.org/wiki/OWASP
+  * OWASP Top Ten
+  * OWASP Application Security Verification Standard (ASVS)
+  * ESAPI (The OWASP Enterprise Security API) https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API
+- MITRE https://en.wikipedia.org/wiki/Mitre_Corporation
+  * Common Vulnerabilities and Exposures (CVE) https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures
+- SANS Institute https://en.wikipedia.org/wiki/SANS_Institute  
+  * CWE/SANS Top 25
 
 # Security blogs
 
