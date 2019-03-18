@@ -207,6 +207,8 @@ https://legacy.gitbook.com/book/t0data/burpsuite/details
 
 OpenID 和 OAuth 有什么区别？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/19628327/answer/23291315
 
+Responsible disclosure https://en.wikipedia.org/wiki/Responsible_disclosure
+
 # Security blogs
 
 Digging passwords in Linux swap http://blog.sevagas.com/?Digging-passwords-in-Linux-swap
