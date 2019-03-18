@@ -196,5 +196,9 @@ A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektonc
 
 Machine Learning Toolkit for Kubernetes https://github.com/kubeflow/kubeflow
 
+# k3s
+
+Lightweight Kubernetes. 5 less than k8s. https://k3s.io || https://github.com/rancher/k3s
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
