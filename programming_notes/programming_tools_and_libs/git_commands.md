@@ -189,6 +189,42 @@ git init
 <<git/github初级运用自如>>
 https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
+### git彩色显示分支名
+
+```shell
+之前在华为的时候用的是这个，忘了是哪儿查到的了已经：
+
+####################
+# for automatically displaying branch information in linux shell
+
+function parse_git_branch_and_add_brackets {
+git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \{\1\}/'
+}
+PS1="\u@\h:\033[1;33m\]\W\[\033[1;32m\]\$(parse_git_branch_and_add_brackets)\[\033[0m\]\> "
+####################
+
+然后自己还研究了下git自动补全，于是有：
+
+####################
+# for git auto completion
+
+source ~/.git-completion.bash
+####################
+```
+
+让 Shell 命令提示符显示 Git 分支名称 https://www.jianshu.com/p/82783f76a868
+```shell
+function git-branch-name {
+  git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3
+}
+function git-branch-prompt {
+  local branch=`git-branch-name`
+  if [ $branch ]; then printf " [%s]" $branch; fi
+}
+PS1="\u@\h \[\033[0;36m\]\W\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \$ "
+```
+这个帖子里讲了各种变量的含义，不过配出来的效果我还是不太满意，回头自己总结个更好的。
+
 ----------------------------------------------------------------------------------------------------
 
 ### 如何把本地已有代码上传到远端（以GitHub为例）
