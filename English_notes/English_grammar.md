@@ -223,4 +223,5 @@ If and only if https://en.wikipedia.org/wiki/If_and_only_if 【[当且仅当](ht
 
 What are the differences between “inverse”, “reverse”, and “converse”? https://english.stackexchange.com/questions/22621/what-are-the-differences-between-inverse-reverse-and-converse
 
+Reverse vs Inverse - What's the difference? https://wikidiff.com/reverse/inverse
 
