@@ -115,6 +115,8 @@ https://zhuanlan.zhihu.com/p/27778873
 
 ### IBM
 
+List of IBM products https://en.wikipedia.org/wiki/List_of_IBM_products
+
 Research Scientist (IBM Center for Blockchain Innovation) - SINGAPORE, CENTRAL SINGAPORE
 http://ibm-research.jobs/job/research-scientist-ibm-center-for-blockchain-innovation-research-singapore-central-singapore-85213br/eb3539ab-f7f9-11e6-b9e2-bc764e10a8d2
  
