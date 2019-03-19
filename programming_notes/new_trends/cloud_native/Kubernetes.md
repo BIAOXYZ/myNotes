@@ -144,6 +144,10 @@ Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-per
 - Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
 - Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
 
+## 
+
+Official Python client library for kubernetes https://github.com/kubernetes-client/python
+
 ## kubernetes权限和安全
 
 - Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/
@@ -188,9 +192,13 @@ Automatically provision and manage TLS certificates in Kubernetes https://jetsta
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# projects based on k8s
+# projects based on or related to k8s
 
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
+
+# minikube
+
+minikube, Run Kubernetes locally https://github.com/kubernetes/minikube
 
 # kubeflow
 
