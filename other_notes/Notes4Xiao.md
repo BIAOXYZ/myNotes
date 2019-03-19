@@ -111,6 +111,13 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 ### paper
 
+--------------------------------------------------分隔线--------------------------------------------------
+
+A list of system papers using/about Intel SGX https://github.com/vschiavoni/sgx-papers
+
+--------------------------------------------------分隔线--------------------------------------------------
+
+
 - (CCS 2017) Iron: Functional Encryption using Intel SGX https://eprint.iacr.org/2016/1071.pdf || https://acmccs.github.io/papers/p765-fischA.pdf
 
 - (CCS 2017) FAME: Fast Attribute-based Message Encryption https://eprint.iacr.org/2017/807.pdf
