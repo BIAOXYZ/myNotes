@@ -77,3 +77,6 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.e
 电脑博物馆 - DNBWG.com https://github.com/pengan1987/computer-museum-dnbwg
 > http://dnbwg.com/
 
+⏰ AI conference deadline countdowns http://aideadlin.es || https://github.com/abhshkdz/ai-deadlines/
+> https://aideadlin.es/?sub=NLP,ML,CV,RO,SP
+
