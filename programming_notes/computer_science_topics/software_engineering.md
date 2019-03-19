@@ -96,8 +96,10 @@ General Availability (GA) https://www.techopedia.com/definition/32284/general-av
 - 科普丨程序员Apache开源社区进击之路 - CLI1的文章 - 知乎 https://zhuanlan.zhihu.com/p/24487169
   > "成为有影响力的提交者后可以被选入项目管理委员会 (Project Management Committee, 简称PMC) ， 晋级为PMC成员 (PMC Member)！PMC 作为一个整体，独立监管一个或多个项目。除了PMC，就算是ASF的理事会 (Board) 也不能干涉项目社区内的具体事宜。"
 
-### Waterfall, Agile/SCRUM, Spiral, Iterative
+### Waterfall, Agile/SCRUM, Spiral, Iterative   -->   DevOps
 
 - 12 Principles Behind the Agile Manifesto https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
 - Agile 101 https://www.agilealliance.org/agile101/
+
+能力成熟度模型集成 https://zh.wikipedia.org/wiki/%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B%E9%9B%86%E6%88%90 【[Capability Maturity Model Integration (CMMI)](https://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration)】
 
