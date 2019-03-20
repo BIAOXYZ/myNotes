@@ -1,6 +1,11 @@
 
 # hotel
 
+### 内宾、外宾、中宾
+
+- 自由行去新加坡，在订酒店是总是发现在房间后面会有内宾，中宾的提示，什么意思呢 http://www.mafengwo.cn/wenda/detail-2211617.html
+- 携程网上订酒店，请问内宾和中宾是什么意思 https://zhidao.baidu.com/question/158280793.html
+
 ## Luxury Hotels general
 
 柏悦，凯悦，君悦同属一个集团，打造理念有何不同？ - 知乎 https://www.zhihu.com/question/22716224
