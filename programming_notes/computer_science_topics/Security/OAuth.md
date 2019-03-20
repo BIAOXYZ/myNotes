@@ -10,10 +10,20 @@ The OAuth 2.0 Authorization Framework https://tools.ietf.org/html/rfc6749
 
 OAuth 2.0 Tutorial https://www.tutorialspoint.com/oauth2.0/
 
+A Guide To OAuth 2.0 Grants https://alexbilbie.com/guide-to-oauth-2-grants/
+
+The OAuth Bible http://oauthbible.com/
+
 理解OAuth 2.0 http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+The Simplest Guide To OAuth 2.0 https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
 
 - An Introduction to OAuth 2 https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 - Authorize access to Azure Active Directory web applications using the OAuth 2.0 code grant flow https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-oauth-code
+
+##
+
+What exactly is OAuth (Open Authorization)? https://stackoverflow.com/questions/4201431/what-exactly-is-oauth-open-authorization
 
 What is an Endpoint? https://stackoverflow.com/questions/2122604/what-is-an-endpoint
 > "All of the answers posted so far are correct, an endpoint is simply one end of a communication channel."
