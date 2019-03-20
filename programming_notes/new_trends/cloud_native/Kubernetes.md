@@ -166,6 +166,16 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 
 编译和运行Kubernetes源码 https://www.kubernetes.org.cn/5033.html
 
+## vertical scale
+
+Some materials about in-place POD resource update 
+- https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler  (Vertical POD Autoscaler, it depends on and waiting for the in-place update feature)
+- https://github.com/kubernetes/kubernetes/issues/9043  (In-place rolling update feature request)
+- https://github.com/kubernetes/community/pull/1719 
+- https://groups.google.com/forum/#!msg/kubernetes-dev/LIkZoIqCT20/t515CV2mAgAJ 
+- https://github.com/kubernetes/community/pull/2908 
+- https://github.com/kubernetes/kubernetes/issues/5774
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # kubernetes others
