@@ -166,6 +166,10 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 
 编译和运行Kubernetes源码 https://www.kubernetes.org.cn/5033.html
 
+【kubernetes/k8s源码分析】 client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
+
+使用VS code 调试 Kubernetes 源代码 https://blog.csdn.net/cloudnativeapp/article/details/79213731
+
 ## vertical scale
 
 Some materials about in-place POD resource update 
