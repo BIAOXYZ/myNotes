@@ -49,5 +49,6 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 解析 | OpenShift源码简析之oauth流程(上） http://www.10tiao.com/html/187/201809/2652137245/1.html
 
 理解OpenShift（4）：用户及权限管理 https://www.cnblogs.com/sammyliu/p/10083659.html
+  - Service Accounts https://docs.openshift.com/container-platform/3.11/dev_guide/service_accounts.html
 
 
