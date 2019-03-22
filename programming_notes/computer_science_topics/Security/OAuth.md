@@ -15,6 +15,8 @@ OAuth https://oauth.net/
   * OAuth Libraries for Python https://oauth.net/code/python/
     + Rauth: A Python library for OAuth 1.0/a, 2.0, and Ofly. https://github.com/litl/rauth
       > Rauth https://rauth.readthedocs.io/en/latest/
+- OAuth 2.0 Device Grant https://oauth.net/2/device-flow/
+  * OAuth 2.0 Device Authorization Grant draft-ietf-oauth-device-flow-15 https://tools.ietf.org/html/draft-ietf-oauth-device-flow-15
 - OAuth Article https://oauth.net/articles/
   * OAuth 2 Simplified https://aaronparecki.com/oauth-2-simplified/
   * OAuth articles by Alex Bilbie https://alexbilbie.com/tag/oauth/
