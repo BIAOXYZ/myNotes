@@ -8,10 +8,14 @@ Official Website (官方网站):
 - Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
 
 Kubernetes Documentation https://kubernetes.io/docs/home/
-- Concepts https://kubernetes.io/docs/concepts/
+- CONCEPTS https://kubernetes.io/docs/concepts/
   * Pods https://kubernetes.io/docs/concepts/workloads/pods/
-- Tutorials https://kubernetes.io/docs/tutorials/
+- TUTORIALS https://kubernetes.io/docs/tutorials/
   * Overview of Kubernetes Online Training https://kubernetes.io/docs/tutorials/online-training/overview/
+- TASKS https://kubernetes.io/docs/tasks/
+  * Configure a Security Context for a Pod or Container https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+- REFERENCE https://kubernetes.io/docs/reference/
+  * Managing Service Accounts https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/
 
 Kubernetes 文档 https://kubernetes.io/zh/docs/
 - 使用命令式的方式管理 Kubernetes 对象 https://kubernetes.io/zh/docs/tutorials/object-management-kubectl/imperative-object-management-command/
