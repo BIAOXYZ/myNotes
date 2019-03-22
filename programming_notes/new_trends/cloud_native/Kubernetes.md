@@ -58,6 +58,8 @@ Kubernetes Handbook （Kubernetes指南） https://github.com/feiskyer/kubernete
 
 # kubernetes general
 
+Katacoda: Learn new technologies using real environments right in your browser https://www.katacoda.com/  【:star:业界良心！】
+
 A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ || https://github.com/ramitsurana/awesome-kubernetes
 
 https://k8smeetup.github.io/
