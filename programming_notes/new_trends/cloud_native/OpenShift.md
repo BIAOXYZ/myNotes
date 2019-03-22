@@ -25,6 +25,8 @@ OpenShift Installation and Configuration Management https://install.openshift.co
 
 ## okd official
 
+OKD: The Origin Community Distribution of Kubernetes https://github.com/openshift/origin
+
 okd -- The Origin Community Distribution of Kubernetes that powers Red Hat OpenShift. https://www.okd.io/
 
 okd Documentation https://docs.okd.io/
