@@ -48,3 +48,9 @@ Linux resolv.conf简介 https://blog.csdn.net/K346K346/article/details/83790044
 
 resolv.conf在Linux系统中的作用 https://blog.csdn.net/longcheng217/article/details/81316877
 
+### IPVS
+
+IP Virtual Server https://en.wikipedia.org/wiki/IP_Virtual_Server
+
+Linux负载均衡--LVS（IPVS） https://www.jianshu.com/p/36880b085265
+
