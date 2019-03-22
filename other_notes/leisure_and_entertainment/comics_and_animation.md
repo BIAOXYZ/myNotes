@@ -21,7 +21,6 @@
 
 干物妹小埋 https://www.douban.com/note/560451775/ 【其实就是第一集的分集剧情简介】
 
-
 ## 辉夜大小姐想让我告白～天才们的恋爱头脑战～
 
 辉夜大小姐想让我告白～天才们的恋爱头脑战～ https://zh.moegirl.org/zh-hans/%E8%BE%89%E5%A4%9C%E5%A4%A7%E5%B0%8F%E5%A7%90%E6%83%B3%E8%AE%A9%E6%88%91%E5%91%8A%E7%99%BD%EF%BD%9E%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E6%81%8B%E7%88%B1%E5%A4%B4%E8%84%91%E6%88%98%EF%BD%9E
@@ -37,6 +36,10 @@
 ## 在下坂本，有何贵干？
 
 在下坂本，有何贵干？ https://zh.moegirl.org/%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%EF%BC%8C%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2
+
+## 妄想学生会
+
+妄想学生会 https://zh.moegirl.org/%E5%A6%84%E6%83%B3%E5%AD%A6%E7%94%9F%E4%BC%9A
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
