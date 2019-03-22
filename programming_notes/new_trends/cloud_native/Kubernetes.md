@@ -1,11 +1,18 @@
 
 # 官方链接
 
-## kubernetes 官网及官方文档
+## kubernetes 官网
 
 Official Website (官方网站):
 - Kubernetes (k8s) is an open-source system for automating deployment, scaling, and management of containerized applications. https://kubernetes.io/
 - Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。 https://kubernetes.io/zh/
+
+## kubernetes 官方博客
+
+Kubernetes 博客 https://kubernetes.io/zh/blog/
+- IPVS-Based In-Cluster Load Balancing Deep Dive https://kubernetes.io/zh/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/
+
+## kubernetes 官方文档
 
 Kubernetes Documentation https://kubernetes.io/docs/home/
 - CONCEPTS https://kubernetes.io/docs/concepts/
@@ -175,6 +182,8 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 【kubernetes/k8s源码分析】 client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
 
 使用VS code 调试 Kubernetes 源代码 https://blog.csdn.net/cloudnativeapp/article/details/79213731
+
+kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
 
 ## vertical scale
 
