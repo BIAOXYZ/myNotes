@@ -75,6 +75,9 @@ Go 标准库中文文档 https://github.com/huangz1990/cngolib.com
 
 # Go优秀博客
 
+Golang Weekly https://golangweekly.com/
+- https://golangweekly.com/issues/254
+
 Go 每日阅读和 Go 夜读 > Daily Reading Go and Night Reading Go - Go source reading and offline technical or another articles or discussion on every night. https://github.com/developer-learning/reading-go
 > Go 夜读 https://reading.developerlearning.cn/
 
