@@ -1,12 +1,18 @@
 
-#
+# DB newsletter
 
 Database Weekly http://databaseweekly.com/
 
-Postgres Weekly https://postgresweekly.com/
-
 Database of Databases https://dbdb.io/
 - https://dbdb.io/db/yugabyte-db
+
+## Publications by cooperpress https://cooperpress.com/publications/
+
+DB Weekly https://dbweekly.com/
+- https://dbweekly.com/issues/246
+
+Postgres Weekly https://postgresweekly.com/
+
 
 # 一般性的
 
