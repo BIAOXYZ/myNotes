@@ -34,6 +34,10 @@ HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.
 - What is the difference between 127.0.0.1 and localhost https://stackoverflow.com/questions/7382602/what-is-the-difference-between-127-0-0-1-and-localhost
 - What is the difference between 127.0.0.1 and my assigned IPv4 address? https://superuser.com/questions/897699/what-is-the-difference-between-127-0-0-1-and-my-assigned-ipv4-address
 
+### loopback
+
+What is the loopback device and how do I use it? https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it
+
 ### IP，子网掩码，默认网关，DNS等
 
 - [ ] 如何理解子网掩码中的“子网”？ - 知乎 https://www.zhihu.com/question/21064101
