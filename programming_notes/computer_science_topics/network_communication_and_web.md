@@ -37,6 +37,9 @@ HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.
 ### loopback
 
 What is the loopback device and how do I use it? https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it
+- > This is important for troubleshooting (it can be compared to looking in a mirror). The loopback device is sometimes explained as purely a diagnostic tool. But it is also helpful when a server offering a resource you need is running on your own machine.
+- > For IPv4, the loopback interface is assigned all the IPs in the 127.0.0.0/8 address block. That is, 127.0.0.1 through 127.255.255.254 all represent your computer. For most purposes, though, it is only necessary to use one IP address, and that is 127.0.0.1. This IP has the hostname of localhost mapped to it.
+
 
 ### IP，子网掩码，默认网关，DNS等
 
