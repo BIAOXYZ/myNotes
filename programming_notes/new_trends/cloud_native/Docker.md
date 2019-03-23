@@ -49,6 +49,14 @@ docker run -p {hostPort}:{containerPort} {images}   //通过-p参数，将容器
 
 Docker入门 | 学习第一个Docker容器 - 郭志敏的文章 - 知乎 https://zhuanlan.zhihu.com/p/21252578
 
+## Katacoda -- Docker & Containers
+
+Create Data Containers https://www.katacoda.com/courses/docker/data-containers
+- > `docker run --volumes-from dataContainer ubuntu ls /config`
+  >> Using the --volumes-from <container> option we can use the mount volumes from other containers inside the container being launched. In this case, we'll launch an Ubuntu container which has reference to our Data Container. When we list the config directory, it will show the files from the attached container.
+
+
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # docker general
