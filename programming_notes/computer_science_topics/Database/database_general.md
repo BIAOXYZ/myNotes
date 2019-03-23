@@ -1,4 +1,12 @@
 
+#
+
+Database Weekly http://databaseweekly.com/
+
+Postgres Weekly https://postgresweekly.com/
+
+Database of Databases https://dbdb.io/
+- https://dbdb.io/db/yugabyte-db
 
 # 一般性的
 
