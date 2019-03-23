@@ -78,4 +78,7 @@ SQLite compiled to JavaScript through Emscripten https://github.com/kripken/sql.
   * https://blog.acolyer.org/2019/01/16/sagedb-a-learned-database-system/
   * http://cidrdb.org/cidr2019/papers/p117-kraska-cidr19.pdf
 
+YugaByte DB is the open source, high-performance SQL database for building internet-scale, globally-distributed apps. https://www.yugabyte.com/ || https://github.com/YugaByte/yugabyte-db
+- YugaByte DB vs CockroachDB Performance Benchmarks for Internet-Scale Transactional Workloads https://blog.yugabyte.com/yugabyte-db-vs-cockroachdb-performance-benchmarks-for-internet-scale-transactional-workloads/
+
 
