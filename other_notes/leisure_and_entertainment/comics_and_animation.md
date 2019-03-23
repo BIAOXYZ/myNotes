@@ -41,6 +41,10 @@
 
 妄想学生会 https://zh.moegirl.org/%E5%A6%84%E6%83%B3%E5%AD%A6%E7%94%9F%E4%BC%9A
 
+## 潜行吧!奈亚子
+
+潜行吧!奈亚子 https://zh.moegirl.org/%E6%BD%9C%E8%A1%8C%E5%90%A7!%E5%A5%88%E4%BA%9A%E5%AD%90
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
