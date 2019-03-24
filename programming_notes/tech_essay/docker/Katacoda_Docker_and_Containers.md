@@ -35,5 +35,13 @@
   >> `docker network inspect frontend-network`
 - > The following command disconnects the redis container from the frontend-network.
   >> `docker network disconnect frontend-network redis` 
- 
+
+***Persisting Data Using Volumes*** https://www.katacoda.com/courses/docker/persisting-data-using-volumes
+- > In this case, we're mapping our Redis container's volume to an Ubuntu container. The /data directory only exists within our Redis container, however, because of -volumes-from our Ubuntu container can access the data.
+  >> `docker run --volumes-from r1 -it ubuntu ls /data`
+  >
+  > This allows us to access volumes from other containers without having to be concerned how they're persisted on the host.
+- > Mounting Volumes gives the container full read and write access to the directory. You can specify read-only permissions on the directory by adding the permissions :ro to the mount. If the container attempts to modify data within the directory it will error.
+  >> `docker run -v /docker/redis-data:/data:ro -it ubuntu rm -rf /data`
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
