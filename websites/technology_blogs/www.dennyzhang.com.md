@@ -4,7 +4,10 @@
 
 DennyZhang - DevOps & Cloud Native https://github.com/dennyzhang
 
+Denny: A DevOps Guy & Blogger https://www.dennyzhang.com/contact
+
 ## 主站文章
+
 
 Components Of Popular On-Prem Kubernetes https://www.dennyzhang.com/kubernetes-components
 
