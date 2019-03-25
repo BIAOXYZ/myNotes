@@ -32,6 +32,23 @@ Mode from config file:          permissive
 Policy MLS status:              enabled
 Policy deny_unknown status:     allowed
 Max kernel policy version:      31
+
+//将 /etc/selinux/config 的 SELINUX= 改为enforcing
+root@cloudsec1 ~ $ vi /etc/selinux/config
+root@cloudsec1 ~ $ reboot
+
+test@cloudsec1 ~ $ getenforce
+Enforcing
+test@cloudsec1 ~ $ sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      31
 ```
 
 - 一文彻底明白linux中的selinux到底是什么 https://blog.csdn.net/yanjun821126/article/details/80828908
