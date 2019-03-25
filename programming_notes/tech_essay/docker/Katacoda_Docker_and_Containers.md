@@ -43,5 +43,24 @@
   > This allows us to access volumes from other containers without having to be concerned how they're persisted on the host.
 - > Mounting Volumes gives the container full read and write access to the directory. You can specify read-only permissions on the directory by adding the permissions :ro to the mount. If the container attempts to modify data within the directory it will error.
   >> `docker run -v /docker/redis-data:/data:ro -it ubuntu rm -rf /data`
+  
+***Manage Container Log Files*** https://www.katacoda.com/courses/docker/8
+- > In the background, there is an instance of Redis running with the name redis-server. Using the Docker client, we can access the standard out and standard error outputs using 
+  >> `docker logs redis-server`
+- > The command below will redirect the redis logs to syslog.
+  >> `docker run -d --name redis-syslog --log-driver=syslog redis`
+- > The third option is to disable logging on the container. This is particularly useful for containers which are very verbose in their logging.
+  >
+  > When the container is launched simply set the log-driver to none. No output will be logged.
+  >> `docker run -d --name redis-none --log-driver=none redis`
+- > The inspect command allows you to identify the logging configuration for a particular container. The command below will output the LogConfig section for each of the containers.
+  ```
+  $ docker inspect --format '{{ .HostConfig.LogConfig }}' redis-server
+  {json-file map[]}
+  $ docker inspect --format '{{ .HostConfig.LogConfig }}' redis-syslog
+  {syslog map[]}
+  $ docker inspect --format '{{ .HostConfig.LogConfig }}' redis-none
+  {none map[]}
+  ```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
