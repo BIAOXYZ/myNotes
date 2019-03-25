@@ -49,9 +49,22 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
 
 【IT之家学院】如何在Windows 10中重置和注销Linux子系统 https://www.ithome.com/0/415/133.htm
 
-# RedHat系
+# 各个发行版的关系
 
 浅析CentOS和RedHat Linux的区别 https://www.cnblogs.com/zjoch/p/6394150.html
+- > CentOS是Community ENTerprise Operating System的简称，我们有很多人叫它社区企业操作系统，不管你怎么叫它，它都是Linux操作系统的一个发行版本。
+  >
+  > CentOS并不是全新的Linux发行版，倘若一说到Red Hat这个大名，大家似乎都听过。在Red Hat家族中有企业版的产品，它是Red Hat Enterprise Linux（以下称之为RHEL），CentOS正是这个RHEL的克隆版本。RHEL是很多企业采用的Linux发行版本，需要向Red Hat付费才可以使用，并能得到付过费用的服务和技术支持和版本升级。CentOS可以像RHEL一样的构筑Linux系统环境，但不需要向Red Hat付任何的产品和服务费用，同时也得不到任何有偿技术支持和升级服务。
+  >
+  > Red Hat公司的产品中，有Red Hat Linux（如Redhat8,9）和针对企业发行的版本Red Hat Enterprise Linux，都能够通过网络FTP免费的获得并使用，但是在2003年的时候，Red Hat Linux停止了发布，它的项目由Fedora Project这个项目所取代，并以Fedora Core这个名字发行并提供给普通用户免费使用。Fedora Core这个Linux发行版更新很快，大约半年左右就有新的版本发布。目前的版本是Fedora Core 6，这个Fedora Core试验的韵味比较浓厚，每次发行都有新的功能被加入到其中，得到的成功结果将被采用道RHEL的发布中。虽说这样，频繁的被改进更新的不安定产品对于企业来说并不是最好的选择，大多数企业还是会选择有偿的RHEL产品（这里面有很深的含义，比如说企业用Linux赚钱，赚到的钱回报给企业，资金在企业间流通，回报社会，提高服务水准等）。
+- > RHEL 一直都提供源代码的发行方式，CentOS 就是将 RHEL 发行的源代码从新编译一次，形成一个可使用的二进制版本。由于 LINUX 的源代码是 GNU，所以从获得 RHEL 的源代码到编译成新的二进制，都是合法。只是 REDHAT 是商标，所以必须在新的发行版里将 REDHAT 的商标去掉。
+
+Linux江湖之群雄割据的发行版本 https://www.jianshu.com/p/596acf900d8a
+- > <div align="center"><img width="800" height="200" src="https://upload-images.jianshu.io/upload_images/3845101-728c5840ae4b8458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp"/></div>
+
+最全Linux的发行版简介，一文读懂各发行版之间的联系和区别 https://cloud.tencent.com/developer/article/1114589
+
+# RedHat系
 
 ## [CentOS](https://www.centos.org/)
 
