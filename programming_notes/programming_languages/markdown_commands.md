@@ -94,6 +94,29 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+### markdown图片大小调整：
+
+关于 Markdown 的一些奇技淫巧 https://mazhuang.org/2017/09/01/markdown-odd-skills/
+```
+**图片默认显示效果：**
+
+![](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png)
+
+**加以控制后的效果：**
+
+<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+```
+**图片默认显示效果：**
+
+![](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png)
+
+**加以控制后的效果：**
+
+<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+
+***--------------------------------------------------分割线--------------------------------------------------***
+
+
 ## markdown中数学公式
 
 How to show math equations in general github's markdown(not github's blog) https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog
