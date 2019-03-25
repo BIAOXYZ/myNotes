@@ -36,7 +36,13 @@ okd Documentation https://docs.okd.io/
 
 Django Example: This is a Django project that you can use as the starting point to develop your own and deploy it on an OpenShift cluster. https://github.com/sclorg/django-ex/tree/master
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# openshift安装
+
+Simple all-in-one localhost Installation fails with "Failed to start Atomic OpenShift Master API." #7379 https://github.com/openshift/openshift-ansible/issues/7379
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # openshift security
 
