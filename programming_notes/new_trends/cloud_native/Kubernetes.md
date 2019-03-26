@@ -238,5 +238,10 @@ Machine Learning Toolkit for Kubernetes https://github.com/kubeflow/kubeflow
 
 Lightweight Kubernetes. 5 less than k8s. https://k3s.io || https://github.com/rancher/k3s
 
+# kube-hunter
+
+Kube-hunter - an open source tool for Kubernetes penetration testing https://blog.aquasec.com/kube-hunter-kubernetes-penetration-testing 
+> Hunt for security weaknesses in Kubernetes clusters https://github.com/aquasecurity/kube-hunter
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
