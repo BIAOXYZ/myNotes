@@ -1,4 +1,19 @@
 
+# already used
+
+- Extension Manager https://chrome.google.com/webstore/detail/extensionExtension Manager-manager/gjldcdngmdknpinoemndlidpcabkggco
+- 恢复关闭标签 https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE/fcjlmbbejgnfpcgiigpgfacipckopdkf
+- SimpleUndoClose https://chrome.google.com/webstore/detail/simpleundoclose/emhohdghchmjepmigjojkehidlielknj
+
+## github专用
+
+- Octotree https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc
+- Sourcegraph https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack
+- MathJax Plugin for Github https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima
+- Enhanced Github https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # chrome extension
 
 <<推荐两款Chrome上的github源码阅读插件>> {另外有人评论提到了 Octotree 和 Avatars for Github, 不过这俩暂时没试，回来再说吧。感觉第一个已经不错了~}
