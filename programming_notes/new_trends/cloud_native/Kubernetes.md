@@ -120,6 +120,8 @@ Setup https://kubernetes.io/docs/setup/
   * >> "大家注意，本文的环境，其中kubelet启动后又停止可能与cgroupfs driver有关，kubelet与docker要保持一致，centos默认是cgroupfs，ubuntu默认是systemd，需要根据自己情况调整。 <br> 系统环境 CentOS Linux release 7.4.1708 (Core) Docker版本 Server Version: 18.09.0 Cgroup Driver: cgroupfs <br> 4）创建kubelet参数配置模板文件 <br> vim /k8s/kubernetes/cfg/kubelet.config <br> cgroupDriver: cgroupfs <br> 具体请查看：https://github.com/minminmsn/k8s1.13"
   * >>> kubernetes1.13集群部署文档，包括kubernetes、dashboard、coredns、ingress、metrics、ceph rbd、helm、harbor、jenkins等相关组件部署文档 https://www.minminmsn.com || https://github.com/minminmsn/k8s1.13
 
+Kubernetes The Hard Way -- Bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts. https://github.com/kelseyhightower/kubernetes-the-hard-way
+
 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz
 - 开启内核ipv4转发需要加载br_netfilter模块 #69 https://github.com/gjmzj/kubeasz/issues/69
 
