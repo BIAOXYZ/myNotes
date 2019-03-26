@@ -63,4 +63,58 @@
   {none map[]}
   ```
 
+***Ensuring Container Uptime With Restart Policies*** https://www.katacoda.com/courses/docker/9
+- > The option `--restart=on-failure:#` allows you to say how many times Docker should try again. In the example below, Docker will restart the container three times before stopping.
+  >> `docker run -d --name restart-3 --restart=on-failure:3 scrapbook/docker-restart-example`
+- > Use the `always` flag to automatically restart the container when is crashes, for example 
+  >> `docker run -d --name restart-always --restart=always scrapbook/docker-restart-example`
+
+***Adding Docker Metadata & Labels*** https://www.katacoda.com/courses/docker/15
+- > Labels can be attached to containers when they are launched via `docker run`. A container can have multiple labels attached to them at any one time.
+  >
+  > To add a single label you use the `l =<value>` option. The example below assigns a label called user with an ID to the container. This would allow us to query for all the containers running related to that particular user.
+  >> `docker run -l user=12345 -d redis`
+- > If you're adding multiple labels, then these can come from an external file. The file needs to have a label on each line, and then these will be attached to the running container.
+  >
+  > The `--label-file=<filename>` option will create a label for each line in the file.
+  >> `docker run --label-file=labels -d redis`
+- > Labelling images work in the same way as containers but are set in the `Dockerfile` when the image is built. When a container has launched the labels of the image will be applied to the container instance.
+  ``` 
+  Single Label   
+      LABEL vendor=Katacoda
+
+  Multiple Labels
+      LABEL vendor=Katacoda \ 
+      com.katacoda.version=0.0.5 \ 
+      com.katacoda.build-date=2016-07-01T10:47:29Z \ 
+      com.katacoda.course=Docker
+  ```
+- > Labels and Metadata are only useful if you can view/query them later. The first approach to viewing all the labels for a particular container or image is by using `docker inspect`.
+  >
+  > By providing the running container's friendly name or hash id, you can query all of it's metadata.
+  >> `docker inspect rd`
+  ```
+  Using the -f option you can filter the JSON response to just the Labels section we're interested in.
+
+  $ docker inspect -f "{{json .Config.Labels }}" rd
+  {"com.katacoda.created":"automatically","com.katacoda.private-msg":"magic","user":"scrapbook"}
+  ```
+- > Inspecting images works in the same way however the JSON format is slightly different, naming it `ContainerConfig` instead of Config.
+  ```
+  $ docker inspect -f "{{json .ContainerConfig.Labels }}" katacoda-label-example
+  {"com.katacoda.build-date":"2015-07-01T10:47:29Z","com.katacoda.course":"Docker","com.katacoda.private-msg":"HelloWorld","com.katacoda.version":"0.0.5","vendor":"Katacoda"}
+  ```
+  > These labels will remain even if the image has been untagged. When an image is untagged, it will have the name `<none>`.
+- > The `docker ps` command allows you to specify a filter based on a label name and value. For example, the query below will return all the containers which have a user label key with the value *katacoda*.
+  >> `docker ps --filter "label=user=scrapbook"`
+- > The same filter approach can be applied to images based on the labels used when the image was built.
+  >> `docker images --filter "label=vendor=Katacoda"`
+- > Labels are not only applied to images and containers but also the Docker Daemon itself. When you launch an instance of the daemon, you can assign it labels to help identify how it should be used, for example, if it's a development or production server or if it's more suited to particular roles such running databases.
+  ```
+  docker -d \
+      -H unix:///var/run/docker.sock \
+      --label com.katacoda.environment="production" \
+      --label com.katacoda.storage="ssd"
+  ```
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
