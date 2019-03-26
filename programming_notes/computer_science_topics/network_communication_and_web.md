@@ -16,6 +16,8 @@ Tomcat那些事儿 https://zhuanlan.zhihu.com/tomcat
 
 下一代HTTP底层协议将弃用TCP协议 改用QUIC技术 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/787877.htm
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # http
 
 一次完整的HTTP请求与响应涉及了哪些知识？ https://www.jianshu.com/p/c1d6a294d3c0
@@ -25,6 +27,17 @@ TCP 连接断连问题剖析 https://www.ibm.com/developerworks/cn/aix/library/0
 HTTP长连接和短连接 https://www.cnblogs.com/0201zcr/p/4694945.html
 
 HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## http related RFC's
+
+Hypertext Transfer Protocol -- HTTP/1.1 https://www.ietf.org/rfc/rfc2616.txt
+
+HTTP协议(rfc2626)中文翻译(修订版) http://www.blogjava.net/sunchaojin/archive/2009/05/31/279164.html --> 这作者把2616写成2626了。。。
+> 超文本传输协议-HTTP/1.1（修订版）---译者：孙超进 http://files.blogjava.net/sunchaojin/http1.3.pdf
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # others
 
@@ -39,7 +52,6 @@ HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.
 What is the loopback device and how do I use it? https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it
 - > This is important for troubleshooting (it can be compared to looking in a mirror). The loopback device is sometimes explained as purely a diagnostic tool. But it is also helpful when a server offering a resource you need is running on your own machine.
 - > For IPv4, the loopback interface is assigned all the IPs in the 127.0.0.0/8 address block. That is, 127.0.0.1 through 127.255.255.254 all represent your computer. For most purposes, though, it is only necessary to use one IP address, and that is 127.0.0.1. This IP has the hostname of localhost mapped to it.
-
 
 ### IP，子网掩码，默认网关，DNS等
 
