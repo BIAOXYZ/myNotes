@@ -1,4 +1,12 @@
 
+# chrome settings
+
+### 谷歌搜索结果用新标签方式打开
+
+为什么Google Chrome在书签栏打开新网页都在同一个标签页打开，不觉得这个设计很蛋疼吗？ - yuanhjty的回答 - 知乎https://www.zhihu.com/question/20548777/answer/333561287
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # already used Chrome extensions (may be suitable for Firefox as well)
 
 ## strongly recommended
@@ -21,7 +29,7 @@
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# chrome extension
+# chrome extension general
 
 <<推荐两款Chrome上的github源码阅读插件>> {另外有人评论提到了 Octotree 和 Avatars for Github, 不过这俩暂时没试，回来再说吧。感觉第一个已经不错了~}
 http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1009/8575.html
