@@ -51,7 +51,7 @@ Docker入门 | 学习第一个Docker容器 - 郭志敏的文章 - 知乎 https:/
 
 ## Katacoda -- Docker & Containers
 
-refer tech_essay folder 
+***refer the ${tech_essay} folder***
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -188,6 +188,8 @@ ENTRYPOINT和CMD的不同点在于执行docker run时参数传递方式，CMD指
 
 关于/var/run/docker.sock https://www.jianshu.com/p/6c3fdb0e9cb5
 > 运行过Docker Hub的Docker镜像的话，会发现其中一些容器时需要挂载/var/run/docker.sock文件。这个文件是什么呢？为什么有些容器需要使用它？简单地说，它是Docker守护进程(Docker daemon)默认监听的Unix域套接字(Unix domain socket)，容器中的进程可以通过它与Docker守护进程进行通信。
+
+【Docker】daemon.json的作用（八） https://blog.csdn.net/u013948858/article/details/79974796
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
