@@ -42,6 +42,17 @@ Django Example: This is a Django project that you can use as the starting point 
 
 Simple all-in-one localhost Installation fails with "Failed to start Atomic OpenShift Master API." #7379 https://github.com/openshift/openshift-ansible/issues/7379
 
+离线生产级部署openshift https://github.com/xiaoping378/openshift-deploy
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# openshift系列笔记
+
+https://blog.csdn.net/huqigang/article/category/7157977
+- openshift/origin学习记录（0）——Ansible安装多节点openshift集群 https://blog.csdn.net/huqigang/article/details/77962156
+- openshift/origin学习记录（12）——离线安装集群 https://blog.csdn.net/huqigang/article/details/78318266
+
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # openshift security
