@@ -1,9 +1,16 @@
 
-# already used
+# already used Chrome extensions (may be suitable for Firefox as well)
+
+## strongly recommended
 
 - Extension Manager https://chrome.google.com/webstore/detail/extensionExtension Manager-manager/gjldcdngmdknpinoemndlidpcabkggco
 - 恢复关闭标签 https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE/fcjlmbbejgnfpcgiigpgfacipckopdkf
 - SimpleUndoClose https://chrome.google.com/webstore/detail/simpleundoclose/emhohdghchmjepmigjojkehidlielknj
+
+## not frequently used
+
+- RunMyCode Online https://chrome.google.com/webstore/detail/runmycode-online/iidcnkpdmnopbbkdmneglbelcefgfohf
+- Awesome Screenshot: Screen Video Recorder https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj
 
 ## github专用
 
