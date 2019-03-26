@@ -13,7 +13,14 @@
 魔法禁书目录 I 18 假冒者 当麻被美琴要求假冒男友，一起逛了打半天，也算吧
 ```
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# 名侦探柯南
+
+- 名侦探柯南所有人物推理能力排行？ - 知乎 https://www.zhihu.com/question/67591073
+- 《名侦探柯南》名侦探推理力排行榜！ http://www.sohu.com/a/217757450_99981139
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 其他动漫
 
