@@ -3,6 +3,17 @@
 
 技术和架构等相关文档 https://github.com/xunchangguo/km //这个链接在program general那里也记了，但是因为很多cloud native的东西，所以这里也再记下。
 
+## xxx-as-a-Service
+
+Bare metal cloud vs. IaaS – are they the same thing? https://www.redstation.com/blog/bare-metal-cloud-vs-iaas-are-they-the-same-thing/
+> Bare metal cloud is an environment in which physical, dedicated servers can be provisioned to customers with cloud-like ease and speed. Bare metal cloud customers are given access to the entire processing power of individual servers, as well as any storage, networking or other services they require.
+>
+> Within a bare metal infrastructure there is no multi-tenanting (sharing of machines) and the servers provisioned are not virtual ones created on top of any hypervisor.
+
+怎么理解 IaaS、SaaS 和 PaaS 的区别？ - 满尚的回答 - 知乎 https://www.zhihu.com/question/20387284/answer/272965090
+
+IaaS vs. PaaS vs. CaaS如何选择？ https://www.cnblogs.com/geekkiller/p/5007450.html
+
 # Prometheus
 
 还不了解 CNCF？关于 CNCF 的三问三答！ http://blog.daocloud.io/cncf-3/
