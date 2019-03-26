@@ -482,9 +482,7 @@ http://www.cnblogs.com/emanlee/p/3587571.html
 
 ### 查看操作系统信息
 
-<<查看Linux版本系统信息方法汇总>>
-https://www.cnblogs.com/lanxuezaipiao/archive/2012/10/22/2732857.html
-
+<<查看Linux版本系统信息方法汇总>> https://www.cnblogs.com/lanxuezaipiao/archive/2012/10/22/2732857.html
 ```shell
 1、# uname －a   （Linux查看版本当前操作系统内核信息）
  
@@ -498,6 +496,27 @@ Linux version 2.4.20-8 (bhcompile@porky.devel.redhat.com)
 3、# cat /etc/issue  或cat /etc/redhat-release（Linux查看版本当前操作系统发行版信息）
  
 Red Hat Linux release 9 (Shrike)
+```
+
+```shell
+补充：   cat /etc/os-release
+
+root@cloudsec1 openshift $ cat /etc/os-release
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
 ```
 
 ### 查看CPU信息
