@@ -80,3 +80,6 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.e
 ⏰ AI conference deadline countdowns http://aideadlin.es || https://github.com/abhshkdz/ai-deadlines/
 > https://aideadlin.es/?sub=NLP,ML,CV,RO,SP
 
+Ubuntu Paste 的本土化版，有加密功能，文本框的内容可以一键复制，上传的内容可以选择永久保存或者是即阅即焚。 https://github.com/LucienShui/PasteMe
+> https://pasteme.cn/
+
