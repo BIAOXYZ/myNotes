@@ -381,9 +381,14 @@ passwd liuliang
 
 #### 用户组相关
 
-*更改用户:将liuliang添加到dbgrp用户组中*
+***创建用户组testgroup：***
 ```shell
-usermod -g dbgrp liuliang  
+root@cloudsec1 ~ $ groupadd testgroup
+```
+
+***更改用户组:将liuliang添加到dbgrp用户组中***
+```shell
+usermod -g dbgrp liuliang --> 注意，这种方式不是增量添加，所以尽量不要用。
 
 // 最近看的比较多的是用-aG参数的，比如 usermod -aG docker test2。但是我明明记得我用-g参数没问题啊。
 // 还有说-a，-G单独用也可以的，比如这个帖子：https://www.cnblogs.com/fnng/archive/2012/05/13/2498366.html
@@ -394,12 +399,35 @@ Adding user bugmaster to group testing
 注意：上面两种方式不同，但作用是一样的，都是将用户添加到组中。
 ```
 
-*或者用如下方法添加test用户到docker用户组*
+***最终证明还是如下两种方法靠谱：以`添加test用户到docker用户组`为例***
 ```shell
-gpasswd -a test docker
+usermod -aG docker test   //usermod -aG ${组名} ${用户名}
+gpasswd -a test docker   //gpasswd -a ${用户名} ${组名}
 ```
 
-*查看某个user所在的组,以及组内成员*
+```shell
+//这几个或多或少有些毛病，别用就是了！！！
+
+usermod -a docker test   //不能单独用-a参数
+usermod -g docker test   //这个似乎是把用户所有组里第一个替换成命令里的组
+usermod -G docker test   //这个似乎是把用户所有组里最后一个替换成命令里的组
+
+//初始时test用户属于testgr和test两个用户组。实验一下小g参数，发现docker组替换掉了第一个testgr组：
+root@cloudsec1 ~ $ groups test
+test : testgr test
+root@cloudsec1 ~ $ usermod -g docker test
+root@cloudsec1 ~ $ groups test
+test : docker test
+
+//把test用户的组还原回来，再试大G参数，发现docker组替换掉了最后一个test组：
+root@cloudsec1 ~ $ groups test
+test : testgr test
+root@cloudsec1 ~ $ usermod -G docker test
+root@cloudsec1 ~ $ groups test
+test : testgr docker
+```
+
+***查看某个user所在的组,以及组内成员***
 `groups ${user}` 
 ```shell
 [root@dhcp-9-186-54-39 ~]# groups test
@@ -407,7 +435,10 @@ test : test wheel docker
 [root@dhcp-9-186-54-39 ~]# groups root
 root : root
 ```
-*查看某个组有哪些user的话灵活点，想想就明白了*：`cat /etc/group`
+***查看某个组有哪些user的话，灵活点，从`cat /etc/passwd`想想就明白了***：
+```shell
+cat /etc/group
+```
 
 ### 修改主机名
 
