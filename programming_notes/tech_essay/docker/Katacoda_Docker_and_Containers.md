@@ -117,4 +117,18 @@
       --label com.katacoda.storage="ssd"
   ```
 
+***Load Balancing Containers*** https://www.katacoda.com/courses/docker/10
+- > Finally, we can set an optional `-e DEFAULTHOST=<domain>`. If a request comes in and doesn't make any specified hosts, then this is the container where the request will be handled. This enables you to run multiple websites with different domains on a single machine with a fall-back to a known website.
+  >> `docker run -d -p 80:80 -e DEFAULT_HOST=proxy.example -v /var/run/docker.sock:/tmp/docker.sock:ro --name nginx jwilder/nginx-proxy`
+- > For Nginx-proxy to start sending requests to a container you need to specify the `VIRTUAL_HOST` environment variable. This variable defines the domain where requests will come from and should be handled by the container.
+  > 
+  > In this scenario we'll set our HOST to match our DEFAULT_HOST so it will accept all requests.
+  >> `docker run -d -p 80 -e VIRTUAL_HOST=proxy.example katacoda/docker-http-server`
+- > We now have successfully created a container to handle our HTTP requests. If we launch a second container with the same VIRTUAL_HOST then nginx-proxy will configure the system in a `round-robin` load balanced scenario. This means that the first request will go to one container, the second request to a second container and then repeat in a circle. There is no limit to the number of nodes you can have running.
+- > While nginx-proxy automatically creates and configures NGINX for us, if you're interested in what the final configuration looks like then you can output the complete config file with docker exec as shown below.
+  >> `docker exec nginx cat /etc/nginx/conf.d/default.conf`
+  >
+  > Additional information about when it reloads configuration can be found in the logs using `docker logs nginx`.
+
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
