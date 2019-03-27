@@ -83,3 +83,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.e
 Ubuntu Paste 的本土化版，有加密功能，文本框的内容可以一键复制，上传的内容可以选择永久保存或者是即阅即焚。 https://github.com/LucienShui/PasteMe
 > https://pasteme.cn/
 
+Repo for counting stars and contributing. Press F to pay respect to glorious developers. https://github.com/996icu/996.ICU
+> https://996.icu/
+>> 还有个en_US版，可惜美国码农一般就startup加班。虽然加班，但是未来一上市就美了啊 --> 咋滴？你小子瞧不起国内的初创公司是不？！我们也可以上市"财富自由" --> [蘑菇街：被稀释的期权与员工的梦想](https://zhuanlan.zhihu.com/p/53930590)
+
