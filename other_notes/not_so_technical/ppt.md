@@ -18,6 +18,8 @@ https://www.zhihu.com/question/29386330
 有哪些制作好 PPT 的习惯？ - 知乎 https://www.zhihu.com/question/20274574
 - 有哪些制作好 PPT 的习惯？ - 邵云蛟的回答 - 知乎 https://www.zhihu.com/question/20274574/answer/64240162
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 知乎PPT_PPT模板
 
 免费 PPT 模板下载网站 - papa的文章 - 知乎 https://zhuanlan.zhihu.com/p/36128076
@@ -29,6 +31,8 @@ PPT 模板的下载资源有哪些？ - 知乎 https://www.zhihu.com/question/19
 有哪些必备的知识技能？ - 邵云蛟的回答 - 知乎 https://www.zhihu.com/question/35112627/answer/153008966
 - 阿里巴巴图标素材库 http://www.iconfont.cn/
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 知乎PPT_其他
 
 幻灯片软件除了 PowerPoint 和 Keynote 还有没有什么别的选择？ - 知乎
@@ -38,15 +42,23 @@ https://www.zhihu.com/question/20106821
 https://www.zhihu.com/question/22603002
 
 
-:octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
 
 Powerpoint的`设计理念`功能：
 - 图片排版 PowerPoint 自带设计器一键搞定！ https://www.jianshu.com/p/09f24dbb3be7
 
-:octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # PPT模板
 
 千库网 http://588ku.com/ppt/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# PPT技巧和问题
+
+怎样使ppt文字以曲线呈现？ https://zhidao.baidu.com/question/542559480.html
+>> notes：这个问题出现的场景是，曲线箭头的文本框的文字最好随着曲线的方向，而不是简单的横向或纵向。
+
