@@ -190,13 +190,15 @@ kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
 
 ## vertical scale
 
-Some materials about in-place POD resource update 
+Some materials about in-place POD resource update:
 - https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler  (Vertical POD Autoscaler, it depends on and waiting for the in-place update feature)
 - https://github.com/kubernetes/kubernetes/issues/9043  (In-place rolling update feature request)
 - https://github.com/kubernetes/community/pull/1719 
 - https://groups.google.com/forum/#!msg/kubernetes-dev/LIkZoIqCT20/t515CV2mAgAJ 
 - https://github.com/kubernetes/community/pull/2908 
 - https://github.com/kubernetes/kubernetes/issues/5774
+
+设置 Pod CPU 和内存限制 https://kubernetes.io/zh/docs/tasks/administer-cluster/cpu-memory-limit/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
