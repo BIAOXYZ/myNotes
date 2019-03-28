@@ -182,13 +182,18 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 
 编译和运行Kubernetes源码 https://www.kubernetes.org.cn/5033.html
 
+随笔分类 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/category/1231156.html
+- 写在最前面 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/p/9194998.html
+
 【kubernetes/k8s源码分析】 client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
 
 使用VS code 调试 Kubernetes 源代码 https://blog.csdn.net/cloudnativeapp/article/details/79213731
 
 kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
 
-## vertical scale
+## k8s项目相关
+
+### vertical scale
 
 Some materials about in-place POD resource update:
 - https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler  (Vertical POD Autoscaler, it depends on and waiting for the in-place update feature)
@@ -199,6 +204,12 @@ Some materials about in-place POD resource update:
 - https://github.com/kubernetes/kubernetes/issues/5774
 
 设置 Pod CPU 和内存限制 https://kubernetes.io/zh/docs/tasks/administer-cluster/cpu-memory-limit/
+
+### k8s + jenkins (+其他) 直接将github项目编译构建完成发布
+
+- Gitkube: 使用git push构建Docker镜像并将其部署到Kubernetes https://www.ctolib.com/hasura-gitkube.html
+- Gitkube-使用Git直接推送部署Kubernetes服务 https://my.oschina.net/u/2306127/blog/1647205
+- GitHub+Docker Hub实现自动构建镜像 https://blog.csdn.net/bbwangj/article/details/82084480
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
