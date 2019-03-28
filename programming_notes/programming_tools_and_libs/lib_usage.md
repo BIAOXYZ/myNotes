@@ -241,13 +241,18 @@ http://www.ansible.com.cn/
 
 ### pbd
 
-<零基础学习PDB命令行调试Python代码>
-http://python.jobbole.com/81184/
+<零基础学习PDB命令行调试Python代码> http://python.jobbole.com/81184/
 
 ### getopt
 
-python getopt
-http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
+python getopt http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
+
+### requests
+
+Python HTTP Requests for Humans™ ✨🍰✨ https://github.com/kennethreitz/requests
+> Requests: HTTP for Humans™¶ http://python-requests.org
+
+Requests: 让 HTTP 服务人类 http://docs.python-requests.org/zh_CN/latest/
 
 --------------------------------------------------
 ## python security related libs
