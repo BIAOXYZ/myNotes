@@ -86,4 +86,6 @@ Ubuntu Paste 的本土化版，有加密功能，文本框的内容可以一键�
 Repo for counting stars and contributing. Press F to pay respect to glorious developers. https://github.com/996icu/996.ICU
 > https://996.icu/
 >> 还有个en_US版，可惜美国码农一般就startup加班。虽然加班，但是未来一上市就美了啊 --> 咋滴？你小子瞧不起国内的初创公司是不？！我们也可以上市"财富自由" --> [蘑菇街：被稀释的期权与员工的梦想](https://zhuanlan.zhihu.com/p/53930590)
+>>> 昨天晚上添加的，结果今天下午开完会一看，仓库地址都变了，专门建了个组织。。。（ https://github.com/996icu/996.ICU ），而且:star:从12K+一下子涨到55K+。。。issue里一堆各种各样的人（所以996.ICU就是这个时代的贾君鹏啊）。最多的是关注star数能不能超过golang，能不能到历史前十之类的。。。
+>>>> 996.ICU能进star榜历史前十吗？ #9843 https://github.com/996icu/996.ICU/issues/9843  -->  "搜索stars:>10000，实时关注，目前45"
 
