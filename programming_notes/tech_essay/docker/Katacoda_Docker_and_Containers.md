@@ -131,4 +131,11 @@
   > Additional information about when it reloads configuration can be found in the logs using `docker logs nginx`.
 
 
+
+***See Container Metrics With Docker Stats*** https://www.katacoda.com/courses/docker/13
+- > The environment now has three connected containers running. To view the stats for all these containers you can use pipes and xargs. A pipe passes the output from one command into the input of another while xargs allows you to provide this input as arguments to a command.
+  >
+  > By combining the two we can take the list of all our running containers provided by `docker ps` and use them as the argument for `docker stats`. This gives us an overview of the entire machine's containers.
+  >> `docker ps -q | xargs docker stats`
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
