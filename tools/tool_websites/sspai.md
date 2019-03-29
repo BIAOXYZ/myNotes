@@ -1,10 +1,10 @@
 
 
-# 官网
+# sspai 官网
 
 少数派 https://sspai.com/
 
-## 效率 & 工具 & 生产力
+# sspai 效率 & 工具 & 生产力
 
 不用装双系统，直接在 Windows 上体验 Linux：Windows Subsystem for Linux https://sspai.com/post/43813
 
@@ -14,8 +14,14 @@
 
 免费全平台的文件分享利器：SendAnywhere https://sspai.com/post/40047
 
-## 休闲娱乐
+# sspai 休闲娱乐
 
-### 视频
+## 视频
 
 在 Chrome 上用这 7 个插件，全方位提升你的 Bilibili 看番幸福感 https://sspai.com/post/45860
+
+# sspai 其他
+
+进来收藏，这 8 个免费的网页工具能帮你少买 / 装 App https://mp.weixin.qq.com/s/X5XHUjn7skf4vEwdOB94pA
+> ▍词云图制作：WordArt
+
