@@ -72,7 +72,13 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 
 ## openshift用户管理问题
 
+利用Ansible的PlayBook自动化构建OpenShift Origin集群 https://christchen.me/archives/649.html
+- > `openshift_master_identity_providers=[{‘name’:’htpasswd_auth’,’login’:’true’,’challenge’:’true’,’kind’:’HTPasswdPasswordIdentityProvider’,’filename’:’/etc/origin/master/htpasswd’}]`
+  >> `openshift_master_identity_providers=[{'name':'htpasswd_auth','login':'true','challenge':'true','kind':'HTPasswdPasswordIdentityProvider','filename':'/etc/origin/master/htpasswd'}]`
+
 07-用户认证与授权 https://blog.csdn.net/weixin_33919941/article/details/87592779
+- > 这些后端的用户信息管理系统在OpenShift中称为Identify Provider。通过配置，OpenShift可以连接到企业常用的用户信息管理系统。如LDAP系统、微软活动目录（Active Directory）等。同时也支持AllowALL、DenyAll、HTPasswd文件，GitHub、Google等众多后端。
+查看master-config.ymal配置，可以看到当前实例集群使用的Provider的类型及配置。
 
 Configuring Your Inventory File https://docs.okd.io/3.10/install/configuring_inventory_file.html
 - Example Inventory Files https://docs.okd.io/3.10/install/example_inventories.html
