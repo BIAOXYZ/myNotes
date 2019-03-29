@@ -6,6 +6,16 @@
 
 ### 设置类命令
 
+>> 个人设置总结，方便复制：
+```
+set nu
+syntax on
+set mouse=a
+set cursorline
+set showmatch
+set hlsearch
+```
+
 #### vim设置和取消显示行号
 ```
 :set nu  
@@ -16,6 +26,7 @@
 最好的办法是直接修改/etc/vimrc文件，在末尾添加
 set nu
 ```
+>> 该文件也可能位于`/etc/vim/vimrc`，如果没网又没vim，那么vi的配置文件和vim的就在一个位置，名字叫`virc`；如果只想改某个用户的vim配置，可以修改（如果不存在自己先建一个）该用户目录下的`.vimrc`（即`~/.vimrc`文件）。
 
 #### 其他设置类
 
@@ -24,6 +35,14 @@ http://blog.chinaunix.net/uid-20769502-id-112737.html
 ```
 :set hlsearch 高亮显示搜索结果 (自己试了下取消高亮显示搜索果然是 :set nohlsearch )
 ```
+
+Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
+```
+syntax on 打开语法高亮
+
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 ### vim显示当前正在编辑的文件名和路径
 ```
@@ -143,7 +162,7 @@ d3w 删除三个单词
 ddp 实现了快速交换光标所在行与它下面的行
 
 
-## 查找和替换
+## vim查找和替换
 
 ```
 :1,$s/old/new/g 
@@ -161,5 +180,4 @@ http://www.cnblogs.com/Nice-Boy/p/6124177.html
 
 有哪些编程必备的 Vim 配置？ - 知乎
 https://www.zhihu.com/question/19989337
-
 
