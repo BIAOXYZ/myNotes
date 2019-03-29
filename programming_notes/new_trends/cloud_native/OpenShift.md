@@ -70,7 +70,7 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 理解OpenShift（4）：用户及权限管理 https://www.cnblogs.com/sammyliu/p/10083659.html
   - Service Accounts https://docs.openshift.com/container-platform/3.11/dev_guide/service_accounts.html
 
-## openshift用户管理问题
+## openshift安全与用户管理问题
 
 利用Ansible的PlayBook自动化构建OpenShift Origin集群 https://christchen.me/archives/649.html
 > `openshift_master_identity_providers=[{‘name’:’htpasswd_auth’,’login’:’true’,’challenge’:’true’,’kind’:’HTPasswdPasswordIdentityProvider’,’filename’:’/etc/origin/master/htpasswd’}]`
@@ -92,6 +92,9 @@ Bug 1565447 - installation fail due to HTPasswdPassword file is not mounted into
 - > 这些后端的用户信息管理系统在OpenShift中称为Identify Provider。通过配置，OpenShift可以连接到企业常用的用户信息管理系统。如LDAP系统、微软活动目录（Active Directory）等。同时也支持AllowALL、DenyAll、HTPasswd文件，GitHub、Google等众多后端。
 查看master-config.ymal配置，可以看到当前实例集群使用的Provider的类型及配置。
 
+### 安全与用户管理相关官方内容
+
 Configuring Your Inventory File https://docs.okd.io/3.10/install/configuring_inventory_file.html
 - Example Inventory Files https://docs.okd.io/3.10/install/example_inventories.html
 
+Configuring authentication and user agent https://docs.openshift.com/container-platform/3.11/install_config/configuring_authentication.html
