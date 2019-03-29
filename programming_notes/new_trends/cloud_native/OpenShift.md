@@ -70,4 +70,8 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 理解OpenShift（4）：用户及权限管理 https://www.cnblogs.com/sammyliu/p/10083659.html
   - Service Accounts https://docs.openshift.com/container-platform/3.11/dev_guide/service_accounts.html
 
+## openshift用户管理问题
+
+Configuring Your Inventory File https://docs.okd.io/3.10/install/configuring_inventory_file.html
+- Example Inventory Files https://docs.okd.io/3.10/install/example_inventories.html
 
