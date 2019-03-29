@@ -73,8 +73,20 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 ## openshift用户管理问题
 
 利用Ansible的PlayBook自动化构建OpenShift Origin集群 https://christchen.me/archives/649.html
-- > `openshift_master_identity_providers=[{‘name’:’htpasswd_auth’,’login’:’true’,’challenge’:’true’,’kind’:’HTPasswdPasswordIdentityProvider’,’filename’:’/etc/origin/master/htpasswd’}]`
-  >> `openshift_master_identity_providers=[{'name':'htpasswd_auth','login':'true','challenge':'true','kind':'HTPasswdPasswordIdentityProvider','filename':'/etc/origin/master/htpasswd'}]`
+> `openshift_master_identity_providers=[{‘name’:’htpasswd_auth’,’login’:’true’,’challenge’:’true’,’kind’:’HTPasswdPasswordIdentityProvider’,’filename’:’/etc/origin/master/htpasswd’}]`
+>> `openshift_master_identity_providers=[{'name':'htpasswd_auth','login':'true','challenge':'true','kind':'HTPasswdPasswordIdentityProvider','filename':'/etc/origin/master/htpasswd'}]`
+>>> 上面机智地跳过中文引号的坑，然而还是掉进了已废弃参数的坑。。。报错如下：
+```
+Failure summary:
+
+  1. Hosts:    openshift-single-node.sl.cloud9.ibm.com
+     Play:     Verify Requirements
+     Task:     Run variable sanity checks
+     Message:  last_checked_host: openshift-single-node.sl.cloud9.ibm.com, last_checked_var: openshift_master_identity_providers;openshift_master_identity_providers contains a provider of kind==HTPasswdPasswordIdentityProvider and filename is set.  Please migrate your htpasswd files to /etc/origin/master/htpasswd and update your existing master configs, and remove the filename keybefore proceeding.
+```
+>>>> 后来网上查到这个帖子【[Ansible 部署 OKD 集群（v3.11）](https://www.jianshu.com/p/792899a49c8f)】，去掉了最后一个`filename`键值对才算好。
+
+Bug 1565447 - installation fail due to HTPasswdPassword file is not mounted into master static pod https://bugzilla.redhat.com/show_bug.cgi?id=1565447
 
 07-用户认证与授权 https://blog.csdn.net/weixin_33919941/article/details/87592779
 - > 这些后端的用户信息管理系统在OpenShift中称为Identify Provider。通过配置，OpenShift可以连接到企业常用的用户信息管理系统。如LDAP系统、微软活动目录（Active Directory）等。同时也支持AllowALL、DenyAll、HTPasswd文件，GitHub、Google等众多后端。
