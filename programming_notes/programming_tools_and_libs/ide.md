@@ -4,6 +4,8 @@
 
 ## [Visual Studio Code](https://github.com/Microsoft/vscode)|(https://code.visualstudio.com/)
 
+中文版 Awesome VS Code https://github.com/formulahendry/awesome-vscode-cn
+
 VS Code 使用小技巧 - 赵吉彤的文章 - 知乎 http://zhuanlan.zhihu.com/p/22880087
 ```
 - 预览markdown Ctrl+Shift+V  //所以Typora彻底没用了
