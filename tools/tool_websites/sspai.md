@@ -25,3 +25,13 @@
 进来收藏，这 8 个免费的网页工具能帮你少买 / 装 App https://mp.weixin.qq.com/s/X5XHUjn7skf4vEwdOB94pA
 > ▍词云图制作：WordArt
 
+## Windows相关
+
+Windows 这个被你冷落的功能，其实很好用能极大提升效率 https://mp.weixin.qq.com/s/eGULvjr7qNd472Sly4Vo7w
+- ▍打开设置
+  > 快捷键 `Win + I` 会直接唤出 Windows 的设置 App，这里是更详细的 Windows 10 设置应用。
+- ▍打开文件资源管理器
+  > 除了从 Windows 的任务栏点击「文件资源管理器」图标，我们还可以利用快捷键 `Win + E` 从任何环境下唤起「文件资源管理器」，更加方便。
+- ▍显示桌面
+  > `Win + D` 是一个我日常使用频率最高的快捷键，当我打开多个窗口之后，工作区域一片凌乱，此时我就可以直接利用这个快捷键，快速返回桌面，最小化全部窗口，十分高效。  
+
