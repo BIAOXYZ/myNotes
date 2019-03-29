@@ -72,6 +72,8 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 
 ## openshift用户管理问题
 
+07-用户认证与授权 https://blog.csdn.net/weixin_33919941/article/details/87592779
+
 Configuring Your Inventory File https://docs.okd.io/3.10/install/configuring_inventory_file.html
 - Example Inventory Files https://docs.okd.io/3.10/install/example_inventories.html
 
