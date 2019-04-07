@@ -107,6 +107,8 @@ https://zhuanlan.zhihu.com/p/27778873
 - AI_Freelancing https://github.com/llSourcell/AI_Freelancing
 - 知名互联网企业内推资料整理 https://github.com/BestDingSheng/resources
 
+:mag_right: 互联网内推信息（社招、校招、实习） https://github.com/CyC2018/Job-Recommend
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # COMPANY

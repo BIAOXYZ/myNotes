@@ -89,3 +89,7 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 >>> 昨天晚上添加的，结果今天下午开完会一看，仓库地址都变了，专门建了个组织。。。（ https://github.com/996icu/996.ICU ），而且:star:从12K+一下子涨到55K+。。。issue里一堆各种各样的人（所以996.ICU就是这个时代的贾君鹏啊）。最多的是关注star数能不能超过golang，能不能到历史前十之类的。。。
 >>>> 996.ICU能进star榜历史前十吗？ #9843 https://github.com/996icu/996.ICU/issues/9843  -->  "搜索stars:>10000，实时关注，目前45"
 
+>>>>> 去新加坡一周回来，已经18万star了。。。再更新两个周边项目，然后这个就不再管了吧。
+- 955 不加班的公司名单 https://github.com/formulahendry/955.WLB
+- 联合仲裁发起地 | 法律板块(主站：996.ICU) https://github.com/Y1ran/996.Law
+
