@@ -92,4 +92,5 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 >>>>> 去新加坡一周回来，已经18万star了。。。再更新两个周边项目，然后这个就不再管了吧。
 - 955 不加班的公司名单 https://github.com/formulahendry/955.WLB
 - 联合仲裁发起地 | 法律板块(主站：996.ICU) https://github.com/Y1ran/996.Law
+- 逃离996 （本篇为新加坡篇，其他的国家：） https://github.com/623637646/996.Leave
 
