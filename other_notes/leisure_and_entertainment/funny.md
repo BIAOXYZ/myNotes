@@ -1,6 +1,8 @@
 
 # from虎嗅
 
+马云刘强东王思聪的告白往事 https://mp.weixin.qq.com/s/xCNrKNACokWZvEtvfkljDw
+
 有的群，真不是人待的地方 https://mp.weixin.qq.com/s/XSnTikhmnMDbT10Wfi-Yyw
 
 # from IT websites
