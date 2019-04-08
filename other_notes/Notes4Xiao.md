@@ -109,6 +109,13 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 ***--------------------------------------------------tooth extraction--------------------------------------------------***
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+### notes
+
+Theory of Computing� - Computer Science 6810 - Cornell University - Spring 2009 http://www.cs.cornell.edu/courses/cs6810/2009sp/
+- Lecture 18: Zero-Knowledge Proofs http://www.cs.cornell.edu/courses/cs6810/2009sp/scribe/lecture18.pdf
+
 ### paper
 
 --------------------------------------------------分隔线--------------------------------------------------
