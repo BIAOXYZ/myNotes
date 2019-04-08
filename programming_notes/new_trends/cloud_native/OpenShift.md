@@ -23,6 +23,9 @@ OpenShift Documentation https://docs.openshift.com/
 
 OpenShift Installation and Configuration Management https://install.openshift.com || https://github.com/openshift/openshift-ansible
 
+Software Collections https://github.com/sclorg
+> Software Collections https://www.softwarecollections.org/
+
 ## okd official
 
 OKD: The Origin Community Distribution of Kubernetes https://github.com/openshift/origin
