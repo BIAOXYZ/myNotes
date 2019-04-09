@@ -209,6 +209,14 @@ Maven 插件之 docker-maven-plugin 的使用 https://blog.csdn.net/aixiaoyang16
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# docker security
+
+Docker Awarded FIPS 140-2 Validation by NIST https://www.docker.com/docker-news-and-press/docker-awarded-fips-140-2-validation-nist
+- https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Certificate/3304
+- https://blog.docker.com/2018/10/docker-achieves-fips-140-2-validation/
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # Portainer
 
 Simple management UI for Docker http://portainer.io https://github.com/portainer/portainer
