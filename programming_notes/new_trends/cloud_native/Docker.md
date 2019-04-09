@@ -93,6 +93,12 @@ https://blog.csdn.net/opensure/article/details/46490749
 Docker入门与实战讲解 - CSDN博客
 https://blog.csdn.net/relax_hb/article/details/69668815
 
+## docker社区版和企业版
+
+(转) Docker EE/Docker CE简介与版本规划 https://www.cnblogs.com/atuotuo/p/6668233.html
+
+Docker CE 还是 Docker EE https://blog.csdn.net/liumiaocn/article/details/60468257
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## 阮一峰docker
@@ -124,8 +130,14 @@ https://blog.csdn.net/relax_hb/article/details/69668815
   * > ENTRYPOINT 的 Exec 格式用于设置要执行的命令及其参数，同时可通过 CMD 提供额外的参数。ENTRYPOINT 中的参数始终会被使用，而 CMD 的额外参数可以在容器启动时动态替换掉。
   * > ENTRYPOINT 的 Shell 格式会忽略任何 CMD 或 docker run 提供的参数。
   
+----------------------------------------------------------------------------------------------------
 
 Allen 谈 Docker 系列 http://guide.daocloud.io/dcs/allen-docker-9153965.html
+
+----------------------------------------------------------------------------------------------------
+
+深入浅出Docker https://blog.csdn.net/liumiaocn/column/info/dockerheadfirst
+- 
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
