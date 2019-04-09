@@ -220,6 +220,25 @@ AppSec Fundamentals - Industry History
 - SANS Institute https://en.wikipedia.org/wiki/SANS_Institute  
   * CWE/SANS Top 25
 
+### NIST and FIPS 140-2
+
+7 Key Differences Between NIST and ISO Certification https://www.inspec-inc.com/home/company/blog/inspec-insights/2018/08/27/7-key-differences-between-nist-and-iso-certification
+> a NIST certification means that a product has been tested against NIST’s Standard Reference Materials (SRMs) and meets the organization’s exact specifications.
+
+COMPUTER SECURITY RESOURCE CENTER - Projects https://csrc.nist.gov/Projects
+
+***FIPS 140-2***：
+- FIPS 140-2 https://en.wikipedia.org/wiki/FIPS_140-2
+- FIPS 140-2 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf
+- https://csrc.nist.gov/projects/cryptographic-module-validation-program/standards
+- https://csrc.nist.gov/publications/detail/fips/140/2/final
+
+FIPS 认证 https://www.kingston.com/cn/usb/encrypted_security/fips
+> 联邦信息处理标准 (FIPS) 是美国政府适用于信息技术和计算机安全的标准。FIPS 项目由国家标准与技术研究所 (NIST) 执行。 NIST FIPS 140 是美国联邦政府规定的加密标准项目，用于保护敏感数据。民用和军事领域的美国联邦机构使用的所有采用加密技术的产品都必须符合 FIPS 140。目前的 FIPS 版本为 140-2。
+>
+> 获取 FIPS 140 验证需要由经过认可的测试实验室进行严格的测试。 结果随后由发放 FIPS 140 验证证书的国家标准与技术研究所 (NIST) 进行审核。
+
+
 # Security blogs
 
 Digging passwords in Linux swap http://blog.sevagas.com/?Digging-passwords-in-Linux-swap
