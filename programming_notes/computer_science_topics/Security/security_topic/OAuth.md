@@ -43,6 +43,14 @@ The Simplest Guide To OAuth 2.0 https://medium.com/@darutk/the-simplest-guide-to
 - An Introduction to OAuth 2 https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 - Authorize access to Azure Active Directory web applications using the OAuth 2.0 code grant flow https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-oauth-code
 
+## OAuth Bearer Token
+
+RFC 6750: OAuth 2.0 Bearer Token Usage https://oauth.net/2/bearer-tokens/
+
+- OAuth 2.0: Bearer Token Usage https://www.cnblogs.com/XiongMaoMengNan/p/6785155.html
+- 四，接口认证方式：Bearer Token https://www.jianshu.com/p/8f7009456abc
+- OAuth 2.0：Bearer Token、MAC Token区别 https://www.cnblogs.com/cag2050/p/7607609.html
+
 ## 待命名
 
 What exactly is OAuth (Open Authorization)? https://stackoverflow.com/questions/4201431/what-exactly-is-oauth-open-authorization
