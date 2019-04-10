@@ -1,10 +1,24 @@
 
 # others
 
+## firmware related
+
 What's the difference between hardware, firmware, and software? https://www.quora.com/Whats-the-difference-between-hardware-firmware-and-software
 > Embedded microcontrollers using Flash memory to hold their programs can be updated in place using what is called in-circuit serial programming (ICSP). The programs are called firmware because it is easier to update than making hardware changes, but not as easy as just loading a program from a hard drive, and the programs are non-volatile.
 >
 > In a desktop or laptop PC, which runs software off of a hard drive or SSD etc., there is still a bit of firmware located in the computer’s BIOS, which handles the bootup process of the machine, loading the operating system into RAM and then giving control over to it.
+
+Basic Difference Between Hardware and Firmware https://medium.com/@TeksunGroup/basic-difference-between-hardware-and-firmware-bae93c524c98
+```
+Key points of Hardware vs Firmware:
+
+- A hardware has a physical entity and can undergo physical damage, unlike a firmware.
+- A hardware needs a program to run. A firmware is a program itself.
+- A hardware cannot operate without a firmware. A firmware operates on a hardware.
+- A hardware can be reprogrammed. A firmware does not require reprogramming except for a few cases.
+- Example of Hardware: Motherboard, RAM, Disk Drive, Sound Card.
+- Example of Firmware: BIOS in IBM-Compatible PC, Timing and Control Mechanisms in Washing Machines, Sound and Video Controlling Attributes in Modern TVs.
+```
 
 ## UEFI
 
