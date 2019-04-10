@@ -41,7 +41,8 @@ awesome-cryptography -- A curated list of cryptography resources and links. http
 - Books
   * Practical Cryptography for Developers - Developer-friendly book on modern cryptography (hashes, MAC codes, symmetric and asymmetric ciphers, key exchange, elliptic curves, digital signatures) with lots of code examples. https://cryptobook.nakov.com/ || https://github.com/nakov/practical-cryptography-for-developers-book
 
-
+Crypto 101, the introductory book on cryptography. https://github.com/crypto101/book
+> CRYPTO101 https://www.crypto101.io/
 
 # performance related
 
