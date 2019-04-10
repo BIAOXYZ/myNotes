@@ -227,6 +227,12 @@ AppSec Fundamentals - Industry History
 
 COMPUTER SECURITY RESOURCE CENTER - Projects https://csrc.nist.gov/Projects
 
+Cryptographic Module Validation Program (CMVP) https://csrc.nist.gov/Projects/cryptographic-module-validation-program
+- Derived Test Requirements (DTR) https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Module-Validation-Program/documents/fips140-2/FIPS1402DTR.pdf
+- Implementation Guidance (IG) https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Module-Validation-Program/documents/fips140-2/FIPS1402IG.pdf
+
+Cryptographic Algorithm Validation Program (CAVP) https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program
+
 ***FIPS 140-2***：
 - FIPS 140-2 https://en.wikipedia.org/wiki/FIPS_140-2
 - FIPS 140-2 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf
@@ -242,6 +248,7 @@ FIPS 认证 https://www.kingston.com/cn/usb/encrypted_security/fips
 - https://www.corsec.com/fips-140-2/
 - https://www.corsec.com/resources/
 
+An Introduction To FIPS-140-2 Requirements https://blog.ipswitch.com/an-introduction-to-fips-140-2-requirements
 
 # Security blogs
 
