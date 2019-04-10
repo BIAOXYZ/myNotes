@@ -102,3 +102,6 @@ Configuring Your Inventory File https://docs.okd.io/3.10/install/configuring_inv
 
 Configuring authentication and user agent https://docs.openshift.com/container-platform/3.11/install_config/configuring_authentication.html
 > https://github.com/openshift/openshift-docs/blob/master/install_config/configuring_authentication.adoc
+
+Master and Node Configuration https://docs.openshift.com/container-platform/3.11/install_config/master_node_configuration.html
+
