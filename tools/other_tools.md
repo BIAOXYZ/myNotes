@@ -1,4 +1,6 @@
 
+类似于“善用佳软”，“小众软件”这样的网站有哪些？ - 知乎 https://www.zhihu.com/question/20337292
+
 AlternativeTo https://alternativeto.net/
 - Alternatives to TeamViewer https://alternativeto.net/software/teamviewer/
 
