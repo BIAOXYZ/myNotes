@@ -238,6 +238,10 @@ FIPS 认证 https://www.kingston.com/cn/usb/encrypted_security/fips
 >
 > 获取 FIPS 140 验证需要由经过认可的测试实验室进行严格的测试。 结果随后由发放 FIPS 140 验证证书的国家标准与技术研究所 (NIST) 进行审核。
 
+***from Corsec***: 
+- https://www.corsec.com/fips-140-2/
+- https://www.corsec.com/resources/
+
 
 # Security blogs
 
