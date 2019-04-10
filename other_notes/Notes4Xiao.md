@@ -48,6 +48,8 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 《名侦探柯南》面膜将上市：柯南=抗衰老 https://www.ithome.com/0/413/981.htm
 
+柯南竟然跨界出了面膜，那敷了它我是不是就可以永葆童颜了？！ https://mp.weixin.qq.com/s/2li59zJKLq3YbmY0q6CLWg
+
 ### CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
