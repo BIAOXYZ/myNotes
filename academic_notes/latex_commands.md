@@ -35,6 +35,12 @@ LaTeX开源小屋 http://www.latexstudio.net/
       - https://euclid.ucc.ie/Mckay/linear-algebra/LinearAlgebra.pdf
       - https://euclid.ucc.ie/Mckay/algebra/algebra.pdf
 
+## Latex微信帖子
+
+史上最全 LaTeX 资源，助你论文一臂之力！ https://mp.weixin.qq.com/s/4Hi8VtobjSsn8neN8-C2kQ
+
+1700页数学笔记火了！全程敲代码，速度飞快易搜索，硬核小哥教你上手LaTeX+Vim https://mp.weixin.qq.com/s/EIEn97WRsPmAoW4R7-sZPQ
+
 # Latex基本类
 
 ## list, itemize, enumerate, description
