@@ -11,9 +11,12 @@
 
 ## strongly recommended
 
-- Extension Manager https://chrome.google.com/webstore/detail/extensionExtension Manager-manager/gjldcdngmdknpinoemndlidpcabkggco
+- Extension Manager https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco
+
 - 恢复关闭标签 https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE/fcjlmbbejgnfpcgiigpgfacipckopdkf
 - SimpleUndoClose https://chrome.google.com/webstore/detail/simpleundoclose/emhohdghchmjepmigjojkehidlielknj
+
+- Proxy SwitchyOmega https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 
 ## not frequently used
 
