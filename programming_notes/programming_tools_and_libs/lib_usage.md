@@ -303,6 +303,8 @@ TensorFlow Tutorials with YouTube Videos https://github.com/Hvass-Labs/TensorFlo
 
 Library for training machine learning models with privacy for training data https://github.com/tensorflow/privacy
 
+TensorFlow 2.0 version's Tutorials and Examples, CNN, RNN, GAN tutorials, etc. TF 2.0版入门实例代码，实战教程。 https://github.com/dragen1860/TensorFlow2.0Tutorials
+
 ### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
