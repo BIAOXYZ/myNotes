@@ -9,6 +9,12 @@
 - 网贷天眼--网贷评级 https://www.p2peye.com/rating/
 - 网贷之家--网贷评级 https://www.wdzj.com/pingji.html
 
+## 人人贷
+
+贷罗盘--人人贷 http://www.dailuopan.com/p2p/renrendai
+网贷之家--人人贷 https://www.wdzj.com/dangan/rrd/
+网贷天眼--人人贷 https://we.p2peye.com/
+
 # 朝招金
 
 招商银行朝招金保本吗？哪个收益最高最安全？ https://www.rong360.com/gl/2018/10/10/169784.html
