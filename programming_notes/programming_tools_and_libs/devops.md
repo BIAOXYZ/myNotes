@@ -1,6 +1,8 @@
 
 # others
 
+AIOps学习资料汇总，欢迎一起补全这个仓库，欢迎star https://github.com/linjinjin123/awesome-AIOps/
+
 Modernize your application deployment with Lift and Shift https://developers.redhat.com/blog/2018/10/18/modernize-your-application-deployment-with-lift-and-shift/
 
 # BMC & IPMI
