@@ -12,6 +12,8 @@ https://juejin.im/entry/5aee993b5188256731241a94
 
 # 掘金system
 
+阿里巴巴 Sigma 调度和集群管理系统架构详解 https://juejin.im/post/5ad867b06fb9a045fc665ca4
+
 # 掘金blockchain
 
 基于 Go-Ethereum 构建 DPOS 机制下的区块链
