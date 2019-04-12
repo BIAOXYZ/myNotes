@@ -250,6 +250,10 @@ FIPS 认证 https://www.kingston.com/cn/usb/encrypted_security/fips
 
 An Introduction To FIPS-140-2 Requirements https://blog.ipswitch.com/an-introduction-to-fips-140-2-requirements
 
+### HIPAA
+
+Health Insurance Portability and Accountability Act https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act
+
 # Security blogs
 
 Digging passwords in Linux swap http://blog.sevagas.com/?Digging-passwords-in-Linux-swap
