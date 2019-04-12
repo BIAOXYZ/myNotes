@@ -16,6 +16,10 @@ https://blog.csdn.net/liuyueyi1995/article/details/54892399
 - HexaTier http://www.hexatier.com/
 - 安华云安全(其实就是安华金和) http://www.dbscloud.cn/
 
+## DB Security of PostgreSQL
+
+PostgreSQL 辟谣存在任意代码执行漏洞：消息不实 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/836651.htm
+
 ## DB Security of Oracle
 
 Oracle数据安全解决方案透明数据加密TDE
