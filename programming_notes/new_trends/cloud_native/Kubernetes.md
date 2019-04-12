@@ -72,6 +72,7 @@ A curated list for awesome kubernetes sources shiptada https://ramitsurana.githu
 
 https://k8smeetup.github.io/
 - Kubernetes Basics https://k8smeetup.github.io/docs/tutorials/kubernetes-basics/
+- 通过 Minikube 在本地运行 Kubernetes https://k8smeetup.github.io/docs/getting-started-guides/minikube/
 
 如何学习、了解kubernetes？ - 知乎 https://www.zhihu.com/question/37498459
 - 如何学习、了解kubernetes？ - 刘小龙的回答 - 知乎 https://www.zhihu.com/question/37498459/answer/398838177
@@ -227,6 +228,8 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
   * Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/
   * Repository for sample controller. Complements sample-apiserver https://github.com/kubernetes/sample-controller
 - Operator https://jimmysong.io/kubernetes-handbook/develop/operator.html
+  * 使用自定义资源扩展API https://jimmysong.io/kubernetes-handbook/concepts/custom-resource.html
+  * OperatorHub.io https://operatorhub.io/
 - Kubernetes CRD Operator 实现指南 - 高策的文章 - 知乎 https://zhuanlan.zhihu.com/p/38372448
   * [Discussion] Operators vs. controller pattern #300 https://github.com/kubeflow/tf-operator/issues/300
 - 开发operator扩展kubernetes 调研整理 https://yucs.github.io/2017/12/21/2017-12-21-operator/
