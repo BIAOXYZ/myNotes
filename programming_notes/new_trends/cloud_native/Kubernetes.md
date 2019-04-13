@@ -221,6 +221,8 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 
 A resource tracking a number of Operators out in the wild. https://github.com/operator-framework/awesome-operators
 
+Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
+
 kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https://blog.csdn.net/cloudvtech/article/details/80277960
 
 ----------------------------------------------------------------------------------------------------
