@@ -49,6 +49,8 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
 
 【IT之家学院】如何在Windows 10中重置和注销Linux子系统 https://www.ithome.com/0/415/133.htm
 
+Windows 10 源码一览：0.5T 代码、400 万文件、50 万文件夹 - Windows 10 - cnBeta.COM https://www.cnbeta.com/articles/tech/837143.htm
+
 # 各个发行版的关系
 
 浅析CentOS和RedHat Linux的区别 https://www.cnblogs.com/zjoch/p/6394150.html
