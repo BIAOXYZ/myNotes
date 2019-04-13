@@ -216,6 +216,9 @@ Some materials about in-place POD resource update:
 
 Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
 
+- Extend the Kubernetes API with CustomResourceDefinitions https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
+- 使用CRD(CustomResourceDefinitions)扩展Kubernetes API https://k8smeetup.github.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions/
+
 A resource tracking a number of Operators out in the wild. https://github.com/operator-framework/awesome-operators
 
 kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https://blog.csdn.net/cloudvtech/article/details/80277960
