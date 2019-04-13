@@ -45,6 +45,63 @@ nameserver 8.8.4.4
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+## CentOS 7安装VirtualBox
+
+- CentOS 7 安装VirtualBox https://www.cnblogs.com/harry-h/p/6405433.html
+- 在 CentOS 上安装及使用 VirtualBox https://www.cnblogs.com/harry-h/p/6405433.html
+
+### 最后因为Softlayer也是Xen虚拟的，所以估计是没办法了，坑死。
+
+- https://stackoverflow.com/questions/29116166/virtual-box-installation-issue-running-virtualbox-in-a-xen-environment-is-not-s
+- https://blog.51cto.com/passover/760740
+
+```
+root@cloudsec1 ~ $ cd /etc/yum.repos.d/
+root@cloudsec1 yum.repos.d $ ll
+total 36
+-rw-r--r--. 1 root root 1708 Feb 20 00:50 CentOS-Base.repo
+-rw-r--r--. 1 root root 1309 Feb 20 00:50 CentOS-CR.repo
+-rw-r--r--. 1 root root  649 Feb 20 00:50 CentOS-Debuginfo.repo
+-rw-r--r--. 1 root root  314 Feb 20 00:50 CentOS-fasttrack.repo
+-rw-r--r--. 1 root root  630 Feb 20 00:50 CentOS-Media.repo
+-rw-r--r--. 1 root root 1331 Feb 20 00:50 CentOS-Sources.repo
+-rw-r--r--. 1 root root 5701 Feb 20 00:50 CentOS-Vault.repo
+-rw-r--r--. 1 root root 2424 Oct 24 12:22 docker-ce.repo
+root@cloudsec1 yum.repos.d $ wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+root@cloudsec1 yum.repos.d $ ll
+total 40
+-rw-r--r--. 1 root root 1708 Feb 20 00:50 CentOS-Base.repo
+-rw-r--r--. 1 root root 1309 Feb 20 00:50 CentOS-CR.repo
+-rw-r--r--. 1 root root  649 Feb 20 00:50 CentOS-Debuginfo.repo
+-rw-r--r--. 1 root root  314 Feb 20 00:50 CentOS-fasttrack.repo
+-rw-r--r--. 1 root root  630 Feb 20 00:50 CentOS-Media.repo
+-rw-r--r--. 1 root root 1331 Feb 20 00:50 CentOS-Sources.repo
+-rw-r--r--. 1 root root 5701 Feb 20 00:50 CentOS-Vault.repo
+-rw-r--r--. 1 root root 2424 Oct 24 12:22 docker-ce.repo
+-rw-r--r--. 1 root root  259 Sep 30  2015 virtualbox.repo
+root@cloudsec1 yum.repos.d $ yum install binutils qt gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms -y
+.
+.
+.
+Complete!
+
+root@cloudsec1 yum.repos.d $ yum install VirtualBox-5.2
+.
+.
+.
+Complete!
+
+root@cloudsec1 yum.repos.d $ cd /usr/lib/virtualbox/
+root@cloudsec1 virtualbox $ pwd
+/usr/lib/virtualbox
+root@cloudsec1 virtualbox $ ./vboxdrv.sh setup
+vboxdrv.sh: Stopping VirtualBox services.
+vboxdrv.sh: Starting VirtualBox services.
+vboxdrv.sh: failed: Running VirtualBox in a Xen environment is not supported.
+root@cloudsec1 virtualbox $ uname -ar
+Linux cloudsec1.sl.cloud9.ibm.com 3.10.0-957.1.3.el7.x86_64 #1 SMP Thu Nov 29 14:49:43 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+```
+
 
 # [WSL(Windows Subsystem for Linux)](https://blogs.msdn.microsoft.com/wsl/)
 
