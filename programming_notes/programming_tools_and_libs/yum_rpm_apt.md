@@ -1,6 +1,8 @@
 
 # yum
 
+Yum 学习笔记 https://segmentfault.com/a/1190000016194128
+
 ## yum配置
 
 yum配置与使用(很详细) http://www.cnblogs.com/xiaochaohuashengmi/archive/2011/10/09/2203916.html
@@ -12,6 +14,13 @@ linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.h
 ## yum其他
 
 在CentOS系统中使用yum安装指定版本软件 https://blog.csdn.net/cy309173854/article/details/78668237
+
+## EPEL
+
+- 什么是EPEL 及 Centos上安装EPEL https://blog.csdn.net/yasi_xi/article/details/11746255
+- CentOS使用EPEL源 https://blog.csdn.net/apache0554/article/details/47733115
+
+yum - epel源 https://segmentfault.com/a/1190000016344259
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
