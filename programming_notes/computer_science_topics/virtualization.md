@@ -48,9 +48,10 @@ nameserver 8.8.4.4
 ## CentOS 7安装VirtualBox
 
 - CentOS 7 安装VirtualBox https://www.cnblogs.com/harry-h/p/6405433.html
-- 在 CentOS 上安装及使用 VirtualBox https://www.cnblogs.com/harry-h/p/6405433.html
+- 在 CentOS 上安装及使用 VirtualBox https://wiki.centos.org/zh/HowTos/Virtualization/VirtualBox
+- Installing and using VirtualBox on CentOS https://wiki.centos.org/HowTos/Virtualization/VirtualBox
 
-### 最后因为Softlayer也是Xen虚拟的，所以估计是没办法了，坑死。
+### 最后因为Softlayer的虚拟机也是Xen虚拟的，所以估计是没办法了，坑死窝了。
 
 - https://stackoverflow.com/questions/29116166/virtual-box-installation-issue-running-virtualbox-in-a-xen-environment-is-not-s
 - https://blog.51cto.com/passover/760740
