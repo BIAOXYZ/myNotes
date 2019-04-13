@@ -240,7 +240,7 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
   * [Discussion] Operators vs. controller pattern #300 https://github.com/kubeflow/tf-operator/issues/300
 - 开发operator扩展kubernetes 调研整理 https://yucs.github.io/2017/12/21/2017-12-21-operator/
 - 带你入门operator-framework http://dockone.io/article/5877
-
+- 【kubernetes/k8s概念】CRD CustomResourceDefinition 自定义资源类型 https://blog.csdn.net/zhonglinzhang/article/details/86553744
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
