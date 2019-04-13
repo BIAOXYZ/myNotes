@@ -234,6 +234,7 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
   * Repository for sample controller. Complements sample-apiserver https://github.com/kubernetes/sample-controller
 - Operator https://jimmysong.io/kubernetes-handbook/develop/operator.html
   * 使用自定义资源扩展API https://jimmysong.io/kubernetes-handbook/concepts/custom-resource.html
+    + Introducing Operators: Putting Operational Knowledge into Software https://coreos.com/blog/introducing-operators.html
   * OperatorHub.io https://operatorhub.io/
 - Kubernetes CRD Operator 实现指南 - 高策的文章 - 知乎 https://zhuanlan.zhihu.com/p/38372448
   * [Discussion] Operators vs. controller pattern #300 https://github.com/kubeflow/tf-operator/issues/300
