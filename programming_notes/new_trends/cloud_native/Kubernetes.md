@@ -145,6 +145,8 @@ Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-per
 - kubectl命令管理kubernetes对象的三种方式 https://blog.csdn.net/dkfajsldfsdfsd/article/details/80916543
 - Kubernetes 对象管理的三种方式 https://blog.csdn.net/kikajack/article/details/80216582
 
+Kubectl apply vs kubectl create? https://stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create
+
 --------------------------------------------------
 
 ## Ingress
