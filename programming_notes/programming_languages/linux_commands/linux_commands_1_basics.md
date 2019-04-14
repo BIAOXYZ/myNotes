@@ -265,6 +265,10 @@ tar命令参数：
 
 ## 不常用命令
 
+### [tee (command)](https://en.wikipedia.org/wiki/Tee_(command))
+
+为初学者介绍的 Linux tee 命令（6 个例子） - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/34510815
+
 ### xargs
 <<【Bash百宝箱】xargs>> 
 http://blog.csdn.net/iEearth/article/details/53941920
