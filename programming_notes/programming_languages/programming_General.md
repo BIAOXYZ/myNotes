@@ -273,6 +273,10 @@ https://blog.csdn.net/wang664626482/article/details/52523303
 - 为什么 MySQL 使用多线程，而 Oracle 和 PostgreSQL 使用多进程？ - 哼哈二匠的回答 - 知乎 https://www.zhihu.com/question/20303558/answer/14683235
 - 为什么 MySQL 使用多线程，而 Oracle 和 PostgreSQL 使用多进程？ - 方圆的回答 - 知乎 https://www.zhihu.com/question/20303558/answer/14682076
 
+### 句柄
+
+What is the difference between: Handle, Pointer and Reference https://stackoverflow.com/questions/13023405/what-is-the-difference-between-handle-pointer-and-reference
+
 ### 编码
 
 网络传输——Base64详解
