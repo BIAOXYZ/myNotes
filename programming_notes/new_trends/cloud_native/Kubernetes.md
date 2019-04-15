@@ -228,6 +228,10 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 - Extend the Kubernetes API with CustomResourceDefinitions https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
 - 使用CRD(CustomResourceDefinitions)扩展Kubernetes API https://k8smeetup.github.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions/
 
+Operators https://coreos.com/operators/
+
+----------------------------------------------------------------------------------------------------
+
 A resource tracking a number of Operators out in the wild. https://github.com/operator-framework/awesome-operators
 
 Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
@@ -297,6 +301,8 @@ Lightweight Kubernetes. 5 less than k8s. https://k3s.io || https://github.com/ra
 
 Kube-hunter - an open source tool for Kubernetes penetration testing https://blog.aquasec.com/kube-hunter-kubernetes-penetration-testing 
 > Hunt for security weaknesses in Kubernetes clusters https://github.com/aquasecurity/kube-hunter
+
+Container Technology Wiki https://www.aquasec.com/wiki
 
 ## Kubewatch (Bitnami)
 
