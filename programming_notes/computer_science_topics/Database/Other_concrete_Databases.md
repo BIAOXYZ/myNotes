@@ -79,6 +79,8 @@ Apache Druid (Incubating) - Column oriented distributed data store ideal for pow
 OLAP 数据存储系统 Druid-IO https://www.oschina.net/p/druid-io
 
 Druid 是什么 https://www.cnblogs.com/broadview/p/6423673.html
+> Druid 开源后，受到不少互联网公司的青睐，包括雅虎、eBay、阿里巴巴等，其中雅虎的Committer 有5 个，谷歌有1 个，阿里巴巴有1 个。最近，MetaMarkets 之前几个Druid 发明人也成立了一家叫作Imply.io 的新公司，推动Druid 生态的发展，致力于Druid 的繁荣和应用。
+>> Real-time analytics powered by Apache Druid https://imply.io/
 
 Druid-基本概念 https://yq.aliyun.com/articles/58779
 
