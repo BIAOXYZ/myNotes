@@ -83,6 +83,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.e
 Ubuntu Paste 的本土化版，有加密功能，文本框的内容可以一键复制，上传的内容可以选择永久保存或者是即阅即焚。 https://github.com/LucienShui/PasteMe
 > https://pasteme.cn/
 
+***--------------------------------------------------分割线--------------------------------------------------***
+
 Repo for counting stars and contributing. Press F to pay respect to glorious developers. https://github.com/996icu/996.ICU
 > https://996.icu/
 >> 还有个en_US版，可惜美国码农一般就startup加班。虽然加班，但是未来一上市就美了啊 --> 咋滴？你小子瞧不起国内的初创公司是不？！我们也可以上市"财富自由" --> [蘑菇街：被稀释的期权与员工的梦想](https://zhuanlan.zhihu.com/p/53930590)
@@ -93,4 +95,9 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 - 955 不加班的公司名单 https://github.com/formulahendry/955.WLB
 - 联合仲裁发起地 | 法律板块(主站：996.ICU) https://github.com/Y1ran/996.Law
 - 逃离996 （本篇为新加坡篇，其他的国家：） https://github.com/623637646/996.Leave
+
+***--------------------------------------------------分割线--------------------------------------------------***
+
+Hotpot计划是复旦留学申请数据开源计划的代称，旨在为复旦学弟学妹无偿分享留学申请经验、暑研动态、美国生活/工作等一切相关信息。 https://github.com/fdu-cooks/fdu-gradhotpot
+> https://fdu-cooks.github.io/fdu-gradhotpot/
 
