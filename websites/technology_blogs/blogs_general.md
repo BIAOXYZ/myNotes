@@ -35,6 +35,7 @@ http://www.valleytalk.org/2017/07/27/%e4%ba%91%e6%9d%a5%e4%ba%86%ef%bc%8c%e5%ae%
 
 在 LaTeX 中使用含有中文的 PDF 书签避免乱码的正确姿势 https://liam0205.me/2014/11/22/latex-pdf-cjk-bookmarks/
 
+LaTeX 黑魔法（四）：插入动画（animate 宏包教程） https://liam.page/2017/08/10/importing-animate-in-LaTeX/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
