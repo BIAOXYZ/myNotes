@@ -61,6 +61,9 @@ Kubernetes Handbook （Kubernetes指南） https://github.com/feiskyer/kubernete
 - Kubernetes指南 https://kubernetes.feisky.xyz
 - Kubernetes指南 https://legacy.gitbook.com/book/feisky/kubernetes/details
 
+Kubernetes 学习笔记 https://github.com/huweihuang/kubernetes-notes
+> https://www.huweihuang.com/kubernetes-notes/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # kubernetes general
