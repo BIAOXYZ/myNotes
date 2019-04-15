@@ -26,6 +26,8 @@
 ## github专用
 
 - Octotree https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc
+  * octotree/HISTORY.md https://github.com/ovity/octotree/blob/v3/HISTORY.md#v300
+    + > I have been working on Octotree for the last 5 years in my spare time. For the past year or so, I started accepting donation, but that didn't work out too well. I need a sustainable source of income to fund the on-going development cost of Octotree. This is more important than ever as a few other developers have joined me to help maintain and improve Octotree. <br> Make no mistake, we will not abandon the free version of Octotree. We commit to keep updating and improving it with features that the majority of users need. We removed Chrome GitHub Enterprise support in this release because we had to rewrite this feature from scratch to support Firefox and we consider this an advanced feature that most users don't need. If you need this feature, please consider upgrading to Octotree Pro to support the developers and enjoy other premium features.
 - Sourcegraph https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack
 - MathJax Plugin for Github https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima
 - Enhanced Github https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd
