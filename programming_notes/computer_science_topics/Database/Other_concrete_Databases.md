@@ -65,6 +65,22 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 - https://rocksdb.org/
 - https://github.com/facebook/rocksdb/
 
+# druid × 2
+
+## 阿里druid 
+
+阿里巴巴数据库事业部出品，为监控而生的数据库连接池。阿里云Data Lake Analytics(https://www.aliyun.com/product/datalakeanalytics )、DRDS、TDDL 连接池powered by Druid https://github.com/alibaba/druid/wiki || https://github.com/alibaba/druid
+
+## Apache Druid
+
+Apache Druid (Incubating) - Column oriented distributed data store ideal for powering interactive applications https://github.com/apache/incubator-druid/
+> Apache Druid (incubating) is a high performance real-time analytics database. http://druid.io/
+
+OLAP 数据存储系统 Druid-IO https://www.oschina.net/p/druid-io
+
+Druid 是什么 https://www.cnblogs.com/broadview/p/6423673.html
+
+Druid-基本概念 https://yq.aliyun.com/articles/58779
 
 # not full-fledged DBs
 
