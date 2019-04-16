@@ -73,8 +73,29 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 
 ## Apache Druid
 
+### Druid official
+
 Apache Druid (Incubating) - Column oriented distributed data store ideal for powering interactive applications https://github.com/apache/incubator-druid/
-> Apache Druid (incubating) is a high performance real-time analytics database. http://druid.io/
+
+Apache Druid (incubating) is a high performance real-time analytics database. http://druid.io/
+- Powered by Druid http://druid.io/druid-powered.html
+  * A Tour Through the "Big Data" Zoo https://imply.io/post/big-data-zoo 
+
+Druid是一个快速的列式分布式数据存储。 http://druidio.cn/
+- Druid Blog http://druidio.cn/blog/
+
+### Druid paper
+
+Druid: A Real-time Analytical Data Store http://static.druid.io/docs/druid.pdf
+
+Paper Review: Druid: A Real-time Analytical Data Store https://xduan7.com/2016/03/23/paper-review-druid-a-real-time-analytical-data-store/
+
+- Druid:A Real-time Analytical Data Store（上篇） https://www.jianshu.com/p/94309502540d
+- Druid:A Real-time Analytical Data Store（下篇） https://www.jianshu.com/p/4731e9677a08
+
+### Druid others
+
+Apache Druid https://en.wikipedia.org/wiki/Apache_Druid
 
 OLAP 数据存储系统 Druid-IO https://www.oschina.net/p/druid-io
 
