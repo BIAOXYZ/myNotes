@@ -36,6 +36,9 @@
 
 # chrome extension general
 
+:rainbow: Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~ https://github.com/zhaoolee/ChromeAppHeroes
+> https://zhaoolee.github.io/ChromeAppHeroes/
+
 <<推荐两款Chrome上的github源码阅读插件>> {另外有人评论提到了 Octotree 和 Avatars for Github, 不过这俩暂时没试，回来再说吧。感觉第一个已经不错了~}
 http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1009/8575.html
 
