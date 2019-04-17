@@ -195,8 +195,16 @@ https://www.cnblogs.com/lienhua34/category/607035.html
 弱类型、强类型、动态类型、静态类型语言的区别是什么？ - 知乎
 https://www.zhihu.com/question/19918532
 
-堆栈、堆、队列的区别
-http://bbs.csdn.net/topics/290054298
+### 堆，栈等
+
+堆栈、堆、队列的区别 http://bbs.csdn.net/topics/290054298
+
+What is the difference between the stack and the heap? https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap
+- Differences between Stack and Heap http://net-informations.com/faq/net/stack-heap.htm
+
+What and where are the stack and heap? https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
+
+Is accessing data in the heap faster than from the stack? https://stackoverflow.com/questions/24057331/is-accessing-data-in-the-heap-faster-than-from-the-stack 
 
 
 ### OOP programming
