@@ -105,6 +105,15 @@ Druid 是什么 https://www.cnblogs.com/broadview/p/6423673.html
 
 Druid-基本概念 https://yq.aliyun.com/articles/58779
 
+A Comparison of Time Series Databases and Netsil’s Use of Druid https://blog.netsil.com/a-comparison-of-time-series-databases-and-netsils-use-of-druid-db805d471206
+
+Druid系列基本概念 https://note.yuchaoshui.com/blog/post/yuziyue/Druid-basic-concept
+
+基于druid数据库来搭建数据分析平台的踩坑实践 - Yi Wang的文章 - 知乎 https://zhuanlan.zhihu.com/p/47026566
+
+Druid 与知乎数据分析平台 - rainer的文章 - 知乎 https://zhuanlan.zhihu.com/p/48046671
+
+
 # not full-fledged DBs
 
 Fast, Distributed Graph DB https://dgraph.io https://github.com/dgraph-io/dgraph
