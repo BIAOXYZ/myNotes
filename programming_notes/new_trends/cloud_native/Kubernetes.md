@@ -232,6 +232,20 @@ Operators https://coreos.com/operators/
 
 ----------------------------------------------------------------------------------------------------
 
+#### 可能有用的项目
+
+Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/
+
+For CRD of VMs in k8s:
+- Kubernetes Virtualization API and runtime in order to define and manage virtual machines. https://kubevirt.io ||  https://github.com/kubevirt/kubevirt
+- The virtual machine CRD definition for kubernetes. https://github.com/petrkotas/virt-vmconfig-crd
+
+💂 Kubernetes External Secrets https://github.com/godaddy/kubernetes-external-secrets
+
+Cross-cloud cost allocation models for workloads running on Kubernetes http://kubecost.com || https://github.com/kubecost/cost-model
+
+----------------------------------------------------------------------------------------------------
+
 A resource tracking a number of Operators out in the wild. https://github.com/operator-framework/awesome-operators
 
 Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
