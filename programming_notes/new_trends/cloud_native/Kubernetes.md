@@ -156,6 +156,10 @@ Kubectl apply vs kubectl create? https://stackoverflow.com/questions/47369351/ku
 
 --------------------------------------------------
 
+## kubernetes网络
+
+Kubernetes技术分析之网络 http://dockone.io/article/545
+
 ## Ingress
 
 - Ingress https://kubernetes.io/docs/concepts/services-networking/ingress/
@@ -170,7 +174,7 @@ Kubectl apply vs kubectl create? https://stackoverflow.com/questions/47369351/ku
 - Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
 - Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
 
-## 
+## TBD
 
 Official Python client library for kubernetes https://github.com/kubernetes-client/python
 
