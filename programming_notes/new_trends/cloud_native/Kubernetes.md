@@ -241,8 +241,13 @@ Operators https://coreos.com/operators/
 Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/
 
 For CRD of VMs in k8s:
-- Kubernetes Virtualization API and runtime in order to define and manage virtual machines. https://kubevirt.io ||  https://github.com/kubevirt/kubevirt
+- Vm in kubernetes https://stackoverflow.com/questions/33953592/vm-in-kubernetes
+- KubeVirt: Kubernetes Virtualization API and runtime in order to define and manage virtual machines. https://kubevirt.io ||  https://github.com/kubevirt/kubevirt
+  * Kubernetes and Virtualization: kubevirt will let you spawn virtual machine on your cluster! https://medium.com/@alezzandro/kubernetes-and-virtualization-kubevirt-will-let-you-spawn-virtual-machine-on-your-cluster-e809914cc783
+  * Re-Imagining Virtualization with Kubernetes and KubeVirt – Part II https://blog.openshift.com/re-imagining-virtualization-with-kubernetes-and-kubevirt-part-ii/
 - The virtual machine CRD definition for kubernetes. https://github.com/petrkotas/virt-vmconfig-crd
+- Kubernetes CRI implementation for running VM workloads https://github.com/Mirantis/virtlet
+  * Virtlet: run VMs as Kubernetes pods https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/
 
 💂 Kubernetes External Secrets https://github.com/godaddy/kubernetes-external-secrets
 
