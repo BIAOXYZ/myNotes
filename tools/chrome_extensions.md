@@ -7,7 +7,7 @@
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# already used Chrome extensions (may be suitable for Firefox as well)
+# 【[`*`][:star:]】 Already used Chrome extensions (may be suitable for Firefox as well)
 
 ## strongly recommended
 
@@ -18,10 +18,15 @@
 
 - Proxy SwitchyOmega https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 
+- 沙拉查词-聚合词典划词翻译 https://chrome.google.com/webstore/detail/%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D-%E8%81%9A%E5%90%88%E8%AF%8D%E5%85%B8%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/cdonnmffkdaoajfknoeeecmchibpmkmg
+> Saladict https://github.com/crimx/ext-saladict/wiki
+>> :warning:（重要）初次使用注意事项！！！ https://github.com/crimx/ext-saladict/wiki/Instructions
+
 ## not frequently used
 
 - RunMyCode Online https://chrome.google.com/webstore/detail/runmycode-online/iidcnkpdmnopbbkdmneglbelcefgfohf
 - Awesome Screenshot: Screen Video Recorder https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj
+- Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
 
 ## github专用
 
