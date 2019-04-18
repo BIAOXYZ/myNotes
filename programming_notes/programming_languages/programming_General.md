@@ -216,6 +216,18 @@ Stack vs. Heap: Understanding Java Memory Allocation https://dzone.com/articles/
 
 CBootCamp 7. Memory : Stack vs Heap https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html
 
+## MMAP
+
+Memory-mapped file https://en.wikipedia.org/wiki/Memory-mapped_file
+
+内存映射服务的列表 https://www.ibm.com/support/knowledgecenter/zh/ssw_aix_71/com.ibm.aix.genprogc/ls_mem_mapping_srvcs.htm
+
+认真分析mmap：是什么 为什么 怎么用 https://www.cnblogs.com/huxiao-tee/p/4660352.html
+
+操作系统：图文详解 内存映射 https://www.jianshu.com/p/719fc4758813
+
+Linux 中 mmap() 函数的内存映射问题理解？ - 知乎 https://www.zhihu.com/question/48161206
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## OOP programming
