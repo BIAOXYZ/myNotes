@@ -103,14 +103,3 @@ root@cloudsec1 virtualbox $ uname -ar
 Linux cloudsec1.sl.cloud9.ibm.com 3.10.0-957.1.3.el7.x86_64 #1 SMP Thu Nov 29 14:49:43 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-
-# [WSL(Windows Subsystem for Linux)](https://blogs.msdn.microsoft.com/wsl/)
-
-## WSL安装
-
-- Windows 10 Installation Guide https://docs.microsoft.com/zh-cn/windows/wsl/install-win10
-- 不用装双系统，直接在 Windows 上体验 Linux：Windows Subsystem for Linux https://sspai.com/post/43813 【这个比官方的更好】
-
-## WSL其他
-
-windows linux子系统(Windows Subsystem for Linux)的存放目录 https://www.cnblogs.com/lynsyklate/p/7911189.html
