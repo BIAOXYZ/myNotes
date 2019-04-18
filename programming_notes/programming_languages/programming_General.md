@@ -1,5 +1,5 @@
 
-## OJ's
+# OJ's
 
 算法珠玑——一个最精简的题库 https://www.gitbook.com/book/soulmachine/algorithm-essentials/details
 
@@ -34,10 +34,9 @@ Wiki for OI / ACM-ICPC. （某大型游戏线上攻略，内含炫酷算术魔�
 
 Learn X in Y minutes https://learnxinyminutes.com/
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-
-## Online IDE/Platform
+# Online IDE/Platform
 
 - c9.io https://aws.amazon.com/cloud9/
 > c9.io是可以反向推送到github相应的仓库的，但是我懒得试了实在是，这个帖子里有方法，记录一下就好：
@@ -47,7 +46,7 @@ Learn X in Y minutes https://learnxinyminutes.com/
 在不到30s内得到一个干净的开箱即用的临时linux系统. https://github.com/super-inspire/super-inspire-end
 > Super Inspire http://60.190.81.133:8888/
 
-### 未用过或不常用Online IDE/Platform
+## 未用过或不常用Online IDE/Platform
 
 Codiad http://codiad.com/
 
@@ -71,19 +70,17 @@ The Go Playground https://play.golang.org/
 
 微软上线Try .NET，支持在浏览器运行C#代码 https://www.ithome.com/0/405/369.htm
 
-### 可作为插件的online ide
+## 可作为插件的online ide
 
 RunMyCode https://runmycode.online/
 > 这里可以直接在github上执行代码，美滋滋。
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-
-## Code Learning Website 
+# Code Learning Website 
 
 程序猿必须知道的一些有用的（外国）网站 https://mp.weixin.qq.com/s/236sO6EKvctQrga2Zs5JMg || 学习 CS 时必须知道的一些有用的网站 https://www.oschina.net/translate/best-websites-a-programmer-should-visit
 - :link: Some useful websites for programmers. https://github.com/sdmg15/Best-websites-a-programmer-should-visit
-
 
 ### freeCodeCamp
 
@@ -115,20 +112,20 @@ http://zhuanlan.zhihu.com/p/34280674
 
 你以为我在玩游戏？其实我在学编程！ https://mp.weixin.qq.com/s/2njySI6EgW1MyQR0Cu6ELg
 
-### programming visualization
+## programming visualization
 
 VISUALGO https://visualgo.net/
 
 :fireworks: Interactive Online Platform that Visualizes Algorithms from Code https://algorithm-visualizer.org/ || https://github.com/algorithm-visualizer/algorithm-visualizer
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-## Linux Programming
+# Linux Programming
 
 Difference between 'Killed' and 'Terminated' https://stackoverflow.com/questions/19206124/difference-between-killed-and-terminated
 > 正常终止的程序会有clean exit来做些收尾工作，比如把仍在内存中的信息持久化。
 
-### makefile and compilation
+## makefile and compilation
 
 GNU make https://www.gnu.org/software/make/manual/html_node/index.html
 
@@ -150,7 +147,7 @@ What does 'make install' do? https://superuser.com/questions/360178/what-does-ma
 What does --prefix do exactly when used in ./configure? https://askubuntu.com/questions/891835/what-does-prefix-do-exactly-when-used-in-configure
 > When you run `./configure`, the `--prefix` option lets you specify where those directories are. It is called `--prefix` because it lets you give the prefix that appears in the paths to each of the directories where files from the program or library that you are building are to be installed. Most `configure` scripts support `--prefix`, and omitting it and just running `./configure` is typically equivalent to `./configure --prefix=/usr/local`.
 
-### 动态链接库相关
+## 动态链接库相关
 
 - linux找不到动态链接库 .so文件的解决方法 https://blog.csdn.net/gx19862005/article/details/48528235
 - 无root权限下解决编译时的依赖问题 https://www.jianshu.com/p/da92ca36a220
@@ -166,9 +163,9 @@ Linux 共享库指南 http://liaoph.com/linux-shared-libary/
 
 Linux gcc编译生成静态库和共享动态库的过程 https://typecodes.com/cseries/gccgensharedlib.html
 
---------------------------------------------------
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-### Troubleshooters.com
+## Troubleshooters.com
 
 ```Linux Library -> Linux Programming -> Bash/shellscript```
 - http://troubleshooters.com/codecorn/shellscript/index.htm
@@ -177,17 +174,19 @@ Linux gcc编译生成静态库和共享动态库的过程 https://typecodes.com/
 ```Linux Library -> Linux Programming -> C and C++```
 - http://troubleshooters.com/codecorn/sockets/index.htm
 
-#### Code Corner http://troubleshooters.com/codecorn/index.htm
+## Code Corner http://troubleshooters.com/codecorn/index.htm
 
 http://troubleshooters.com/codecorn/awk/index.htm
 
-### 伯乐在线
+## 伯乐在线
 
 简明解释算法中的大O符号 http://blog.jobbole.com/55184/
 
 堆和堆的应用：堆排序和优先队列 http://blog.jobbole.com/113552/
 
-## 编程知识
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 编程知识
 
 随笔分类 - UNIX环境高级编程学习笔记
 https://www.cnblogs.com/lienhua34/category/607035.html
@@ -195,7 +194,9 @@ https://www.cnblogs.com/lienhua34/category/607035.html
 弱类型、强类型、动态类型、静态类型语言的区别是什么？ - 知乎
 https://www.zhihu.com/question/19918532
 
-### 堆，栈等
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 堆，栈等
 
 堆栈、堆、队列的区别 http://bbs.csdn.net/topics/290054298
 
@@ -215,34 +216,46 @@ Stack vs. Heap: Understanding Java Memory Allocation https://dzone.com/articles/
 
 CBootCamp 7. Memory : Stack vs Heap https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html
 
-### OOP programming
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-#### Ioc & DI
+## OOP programming
+
+### Ioc & DI
 
 - 透彻理解IoC(控制反转) https://blog.csdn.net/u014563989/article/details/55188673
 - 深入理解DIP、IoC、DI以及IoC容器 https://www.cnblogs.com/liuhaorain/p/3747470.html
 
-### 不太技术性编程知识
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 不太技术性编程知识
 
 史上最难编程的软件是什么？ - 园长的文章 - 知乎
 http://zhuanlan.zhihu.com/p/35057341
 > 阿波罗 11 号火箭制导系统代码 https://github.com/chrislgarry/Apollo-11
 
-### 反射
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 反射
 
 为什么语言里要提供“反射”功能？ - 知乎 https://www.zhihu.com/question/28570203
 
-### 回调函数
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 回调函数
 
 回调函数（callback）是什么？ - no.body的回答 - 知乎
 https://www.zhihu.com/question/19801131/answer/27459821
 
-### JIT(Just-in-time compilation) 即时编译
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## JIT(Just-in-time compilation) 即时编译
 
 JIT编译的结果能不能cache起来，下次直接利用呢？ - RednaxelaFX的回答 - 知乎
 https://www.zhihu.com/question/54984557/answer/142045332
 
-### 字节对齐
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 字节对齐
 
 << Data structure alignment >>
 https://en.wikipedia.org/wiki/Data_structure_alignment
@@ -256,11 +269,13 @@ https://en.wikipedia.org/wiki/Data_structure_alignment
 - <<>> http://www.jb51.net/article/36726.htm
 - <<>> http://www.alongsky.com/?p=578
 
-### 信号量
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 信号量
 
 https://www.zhihu.com/question/47411729
 
-### 锁
+## 锁
 
 自旋锁spinlock剖析与改进
 https://kb.cnblogs.com/page/105657/
@@ -268,7 +283,9 @@ https://kb.cnblogs.com/page/105657/
 Pthreads并行编程之spin lock与mutex性能对比分析
 http://www.parallellabs.com/2010/01/31/pthreads-programming-spin-lock-vs-mutex-performance-analysis/
 
-### 多进程多线程编程
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 多进程多线程编程
 
 Linux下的多线程编程和fork()函数详解
 http://www.jb51.net/LINUXjishu/597423.html
@@ -289,11 +306,15 @@ https://blog.csdn.net/wang664626482/article/details/52523303
 - 为什么 MySQL 使用多线程，而 Oracle 和 PostgreSQL 使用多进程？ - 哼哈二匠的回答 - 知乎 https://www.zhihu.com/question/20303558/answer/14683235
 - 为什么 MySQL 使用多线程，而 Oracle 和 PostgreSQL 使用多进程？ - 方圆的回答 - 知乎 https://www.zhihu.com/question/20303558/answer/14682076
 
-### 句柄
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 句柄
 
 What is the difference between: Handle, Pointer and Reference https://stackoverflow.com/questions/13023405/what-is-the-difference-between-handle-pointer-and-reference
 
-### 编码
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 编码
 
 网络传输——Base64详解
 https://blog.csdn.net/wanghaobo920/article/details/8009575
@@ -301,9 +322,9 @@ https://blog.csdn.net/wanghaobo920/article/details/8009575
 UniCode编码表及部分不可见字符过滤方案
 https://www.cnblogs.com/fan-yuan/p/8176886.html
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-
-## 编程题目
+# 编程题目
 
 <<按单词反转字符串>>
 http://blog.csdn.net/xinpo66/article/details/20665187
