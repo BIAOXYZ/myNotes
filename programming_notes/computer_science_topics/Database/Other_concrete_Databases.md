@@ -107,6 +107,8 @@ Druid 是什么 https://www.cnblogs.com/broadview/p/6423673.html
 
 A Comparison of Time Series Databases and Netsil’s Use of Druid https://blog.netsil.com/a-comparison-of-time-series-databases-and-netsils-use-of-druid-db805d471206
 
+System Properties Comparison Druid vs. Neo4j https://db-engines.com/en/system/Druid%3BNeo4j
+
 Druid系列基本概念 https://note.yuchaoshui.com/blog/post/yuziyue/Druid-basic-concept
 
 ### Druid实际使用相关
