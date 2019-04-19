@@ -113,6 +113,8 @@ A Comparison of Time Series Databases and Netsil’s Use of Druid https://blog.n
 - System Properties Comparison Amazon Redshift vs. Druid vs. Graph Engine https://db-engines.com/en/system/Amazon+Redshift%3BDruid%3BGraph+Engine
 - System Properties Comparison Druid vs. InfluxDB https://db-engines.com/en/system/Druid%3BInfluxDB
 
+Scuba: Diving into Data at Facebook https://research.fb.com/publications/scuba-diving-into-data-at-facebook/
+
 Druid系列基本概念 https://note.yuchaoshui.com/blog/post/yuziyue/Druid-basic-concept
 
 ### Druid实际使用相关
