@@ -111,6 +111,7 @@ A Comparison of Time Series Databases and Netsil’s Use of Druid https://blog.n
 - System Properties Comparison Druid vs. Neo4j https://db-engines.com/en/system/Druid%3BNeo4j
 - System Properties Comparison Druid vs. GraphDB https://db-engines.com/en/system/Druid%3BGraphDB
 - System Properties Comparison Amazon Redshift vs. Druid vs. Graph Engine https://db-engines.com/en/system/Amazon+Redshift%3BDruid%3BGraph+Engine
+- System Properties Comparison Druid vs. InfluxDB https://db-engines.com/en/system/Druid%3BInfluxDB
 
 Druid系列基本概念 https://note.yuchaoshui.com/blog/post/yuziyue/Druid-basic-concept
 
