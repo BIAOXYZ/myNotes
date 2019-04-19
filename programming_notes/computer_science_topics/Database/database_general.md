@@ -63,6 +63,15 @@ http://www.cnblogs.com/aspnethot/articles/1504082.html
 <<唯一性索引（Unique Index）与普通索引（Normal Index）差异（上）>>
 http://blog.itpub.net/17203031/viewspace-700089/
 
+How does database indexing work? [closed] https://stackoverflow.com/questions/1108/how-does-database-indexing-work
+
+## 位图索引
+
+Bitmap index https://en.wikipedia.org/wiki/Bitmap_index
+- > Their drawback is they are less efficient than the traditional B-tree indexes for columns whose data is frequently updated: consequently, they are more often employed in read-only systems that are specialized for fast query - e.g., data warehouses, and generally unsuitable for online transaction processing applications.
+
+位图索引:原理（BitMap index） https://www.cnblogs.com/LBSer/p/3322630.html
+
 ## SQL
 
 SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
