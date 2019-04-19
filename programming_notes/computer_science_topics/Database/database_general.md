@@ -6,6 +6,10 @@ Database Weekly http://databaseweekly.com/
 Database of Databases https://dbdb.io/
 - https://dbdb.io/db/yugabyte-db
 
+DB-Engines https://db-engines.com/en/
+- > The DB-Engines Ranking is a list of DBMS ranked by their current popularity. The list is updated monthly.
+- > DB-Engines has been created and is maintained by solid IT.
+
 ## Publications by cooperpress https://cooperpress.com/publications/
 
 DB Weekly https://dbweekly.com/
