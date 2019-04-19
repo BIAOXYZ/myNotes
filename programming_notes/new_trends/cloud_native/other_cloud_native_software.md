@@ -14,6 +14,11 @@ Bare metal cloud vs. IaaS – are they the same thing? https://www.redstation.co
 
 IaaS vs. PaaS vs. CaaS如何选择？ https://www.cnblogs.com/geekkiller/p/5007450.html
 
+## lift and shift
+
+lift and shift https://whatis.techtarget.com/definition/lift-and-shift
+> Lift and shift is a strategy for moving an application or operation from one environment to another – without redesigning the app. In the lift-and-shift approach, certain workloads and tasks can be moved from on-premises storage to the cloud, or data operations might be transferred from one data center to another.
+
 # Prometheus
 
 还不了解 CNCF？关于 CNCF 的三问三答！ http://blog.daocloud.io/cncf-3/
