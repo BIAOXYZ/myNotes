@@ -78,6 +78,7 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 Apache Druid (Incubating) - Column oriented distributed data store ideal for powering interactive applications https://github.com/apache/incubator-druid/
 
 Apache Druid (incubating) is a high performance real-time analytics database. http://druid.io/
+- What is Druid? http://druid.io/docs/latest/design/index.html
 - Powered by Druid http://druid.io/druid-powered.html
   * A Tour Through the "Big Data" Zoo https://imply.io/post/big-data-zoo 
 
@@ -107,7 +108,9 @@ Druid 是什么 https://www.cnblogs.com/broadview/p/6423673.html
 
 A Comparison of Time Series Databases and Netsil’s Use of Druid https://blog.netsil.com/a-comparison-of-time-series-databases-and-netsils-use-of-druid-db805d471206
 
-System Properties Comparison Druid vs. Neo4j https://db-engines.com/en/system/Druid%3BNeo4j
+- System Properties Comparison Druid vs. Neo4j https://db-engines.com/en/system/Druid%3BNeo4j
+- System Properties Comparison Druid vs. GraphDB https://db-engines.com/en/system/Druid%3BGraphDB
+- System Properties Comparison Amazon Redshift vs. Druid vs. Graph Engine https://db-engines.com/en/system/Amazon+Redshift%3BDruid%3BGraph+Engine
 
 Druid系列基本概念 https://note.yuchaoshui.com/blog/post/yuziyue/Druid-basic-concept
 
