@@ -225,7 +225,7 @@ Some materials about in-place POD resource update:
 - Gitkube-使用Git直接推送部署Kubernetes服务 https://my.oschina.net/u/2306127/blog/1647205
 - GitHub+Docker Hub实现自动构建镜像 https://blog.csdn.net/bbwangj/article/details/82084480
 
-### k8s operator CRD
+### k8s operator and CRD
 
 Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
 
@@ -254,6 +254,9 @@ For CRD of VMs in k8s:
 Cross-cloud cost allocation models for workloads running on Kubernetes http://kubecost.com || https://github.com/kubecost/cost-model
 
 ----------------------------------------------------------------------------------------------------
+
+How to explain Kubernetes Operators in plain English https://enterprisersproject.com/article/2019/2/kubernetes-operators-plain-english
+- > Operator Framework https://github.com/operator-framework
 
 A resource tracking a number of Operators out in the wild. https://github.com/operator-framework/awesome-operators
 
