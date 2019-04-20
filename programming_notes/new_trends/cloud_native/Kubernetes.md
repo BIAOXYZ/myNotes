@@ -246,8 +246,7 @@ For CRD of VMs in k8s:
   * Kubernetes and Virtualization: kubevirt will let you spawn virtual machine on your cluster! https://medium.com/@alezzandro/kubernetes-and-virtualization-kubevirt-will-let-you-spawn-virtual-machine-on-your-cluster-e809914cc783
   * Re-Imagining Virtualization with Kubernetes and KubeVirt – Part II https://blog.openshift.com/re-imagining-virtualization-with-kubernetes-and-kubevirt-part-ii/
 - The virtual machine CRD definition for kubernetes. https://github.com/petrkotas/virt-vmconfig-crd
-- Kubernetes CRI implementation for running VM workloads https://github.com/Mirantis/virtlet
-> [Virtlet: run VMs as Kubernetes pods] (https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/)
+- Kubernetes CRI implementation for running VM workloads https://github.com/Mirantis/virtlet 【[Virtlet: run VMs as Kubernetes pods](https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/) —— The Mirantis Blog】
   * > "To try out Virtlet follow the instructions from [Setting up the environment](https://docs.virtlet.cloud/dev/setup/) and [try out examples](https://github.com/Mirantis/virtlet/blob/master/examples/README.md) documents."
   * > "You can watch sample usage session under this [link](https://asciinema.org/a/1a6xp5j4o22rnsx9wpvumd4kt)."
   * > "You can also give Virtlet a quick try using our demo script (requires Docker 1.12+):"
