@@ -247,8 +247,11 @@ For CRD of VMs in k8s:
   * Re-Imagining Virtualization with Kubernetes and KubeVirt – Part II https://blog.openshift.com/re-imagining-virtualization-with-kubernetes-and-kubevirt-part-ii/
 - The virtual machine CRD definition for kubernetes. https://github.com/petrkotas/virt-vmconfig-crd
 - Kubernetes CRI implementation for running VM workloads https://github.com/Mirantis/virtlet
-  * Virtlet: run VMs as Kubernetes pods https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/
-
+> [Virtlet: run VMs as Kubernetes pods] (https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/)
+  * > "To try out Virtlet follow the instructions from [Setting up the environment](https://docs.virtlet.cloud/dev/setup/) and [try out examples](https://github.com/Mirantis/virtlet/blob/master/examples/README.md) documents."
+  * > "You can watch sample usage session under this [link](https://asciinema.org/a/1a6xp5j4o22rnsx9wpvumd4kt)."
+  * > "You can also give Virtlet a quick try using our demo script (requires Docker 1.12+):"
+  
 💂 Kubernetes External Secrets https://github.com/godaddy/kubernetes-external-secrets
 
 Cross-cloud cost allocation models for workloads running on Kubernetes http://kubecost.com || https://github.com/kubecost/cost-model
