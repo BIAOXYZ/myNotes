@@ -334,6 +334,12 @@ https://blog.csdn.net/wanghaobo920/article/details/8009575
 UniCode编码表及部分不可见字符过滤方案
 https://www.cnblogs.com/fan-yuan/p/8176886.html
 
+### Big Endian 与 Little Endian
+
+Endianness https://en.wikipedia.org/wiki/Endianness
+
+Big Endian与Little Endian区别 https://blog.csdn.net/wyzxg/article/details/5349896
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 编程题目
