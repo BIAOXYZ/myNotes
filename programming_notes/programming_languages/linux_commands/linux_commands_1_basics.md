@@ -1,4 +1,6 @@
 
+List of Unix commands https://en.wikipedia.org/wiki/List_of_Unix_commands 【[Unix实用程序列表](https://zh.wikipedia.org/wiki/Unix%E5%AE%9E%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%88%97%E8%A1%A8)】
+
 ----------------------------------------------------------------------------------------------------
 # 1.general Linux commands part:
 ----------------------------------------------------------------------------------------------------
