@@ -39,9 +39,21 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
   * 一个文件或目录在文件系统内部移动时，其inode号码不变。文件系统碎片整理可能会改变一个文件的物理存储位置，但其inode号码不变。非UNIX的FAT及其派生的文件系统是无法实现inode不变这一特点。
   * inode文件系统中安装新库十分容易。当一些进程正在使用一个库时，其它进程可以替换该库文件名字的inode号码指向新创建的inode，随后对该库的访问都被自动引导到新inode所指向的新的库文件的内容。这减少了替换库时重启系统的需要。而旧的inode的链接数已经为0，在使用旧库的进程结束后，旧的inode与旧库文件会被系统自动回收。
 
-
 理解inode http://www.ruanyifeng.com/blog/2011/12/inode.html
 
+## mount
+
+mount (Unix) https://zh.wikipedia.org/wiki/Mount_(Unix)
+- > mount是一个UNIX系统上的命令。用户在UNIX操作系统的机器上打开一个文件以前，**包含该文件的文件系统必须先进行挂载的动作**，此时用户要对该文件系统下mount的指令以进行挂载。通常是使用在USB或其他可移除存储设备上，而根目录则保持挂载的状态。但Unix文件系统可以对应一个文件而不一定要是硬件设备
+
+Linux学习笔记（二）：什么是挂载？mount的用处在哪？ https://blog.csdn.net/qq_39521554/article/details/79501714
+- > 6.所以Linux下，mount挂载的作用，就是将一个设备（通常是存储设备）挂接到一个已存在的目录上。访问这个目录就是访问该存储设备。 
+<br>  7.linux操作系统将所有的设备都看作文件，它将整个计算机的资源都整合成一个大的文件目录。我们要访问存储设备中的文件，必须将文件所在的分区挂载到一个已存在的目录上，然后通过访问这个目录来访问存储设备。挂载就是把设备放在一个目录下，让系统知道怎么管理这个设备里的文件，了解这个存储设备的可读写特性之类的过程。
+- > 8.我们不是有/dev/sdb1 吗，直接对它操作不就行了？这不是它的目录吗？ 
+<br> 9.这不是它的目录。虽然/dev是个目录，但/dev/sdb1不是目录。可以发现ls/dev/sdb1无法执行。/dev/sdb1，是一个类似指针的东西，指向这个分区的原始数据块。mount前，系统并不知道这个数据块哪部分数据代表文件，如何对它们操作。 
+<br> 10.插入CD，系统其实自动执行了 mount /dev/cdrom /media/cdrom。所以可以直接在/media/cdrom中对CD中的内容进行管理。
+
+挂载（mount）深入理解 https://www.cnblogs.com/chen-farsight/p/6119404.html
 
 # Windows系
 
