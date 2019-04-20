@@ -360,3 +360,5 @@ https://www.zhihu.com/question/24694855
 
 如何看待“有赞”年会公开宣布996工作制？ - 知乎 https://www.zhihu.com/question/309428750
 
+每日优鲜App炒作996，网友愤怒发动App Store 1分差评轰炸 https://www.ithome.com/0/420/132.htm
+
