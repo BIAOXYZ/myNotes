@@ -188,6 +188,10 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 - Configuring permissions in Kubernetes with RBAC https://medium.com/containerum/configuring-permissions-in-kubernetes-with-rbac-a456a9717d5d
 - Configuring RBAC For Your Kubernetes Service Accounts https://medium.com/@lestrrat/configuring-rbac-for-your-kubernetes-service-accounts-c348b64eb242
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# kubernetes内部对象
+
 ## kubernetes Job
 
 from kubernetes official:
@@ -198,6 +202,18 @@ not from kubernetes official:
 - Kubernetes对象之Job https://www.jianshu.com/p/bd6cd1b4e076
 - 名词解释：Job https://www.kubernetes.org.cn/job
 - 使用工作队列进行精细的并行处理 https://k8smeetup.github.io/docs/tasks/job/fine-parallel-processing-work-queue/
+
+## kubernetes CronJob
+
+Kubernetes对象之CronJob https://www.jianshu.com/p/62b4f0a3134b
+
+Kubernetes的Cron Job https://blog.frognew.com/2017/08/kubernetes-cron-job.html
+
+## Kubernetes DaemonSet
+
+Kubernetes对象之DaemonSet https://www.jianshu.com/p/800f049004ec
+
+Kubernetes DaemonSet的滚动升级 https://blog.frognew.com/2017/08/kubernetes-rolling-update-daemonset.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
