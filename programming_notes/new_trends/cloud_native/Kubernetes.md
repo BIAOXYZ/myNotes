@@ -209,11 +209,18 @@ Kubernetes对象之CronJob https://www.jianshu.com/p/62b4f0a3134b
 
 Kubernetes的Cron Job https://blog.frognew.com/2017/08/kubernetes-cron-job.html
 
-## Kubernetes DaemonSet
+## kubernetes DaemonSet
 
 Kubernetes对象之DaemonSet https://www.jianshu.com/p/800f049004ec
 
 Kubernetes DaemonSet的滚动升级 https://blog.frognew.com/2017/08/kubernetes-rolling-update-daemonset.html
+
+## kubernetes Taints(污点)和Tolerations(容忍)
+
+Kubernetes Pod调度进阶：Taints(污点)和Tolerations(容忍) https://blog.frognew.com/2018/05/taint-and-toleration.html
+
+Kubernetes中的Taint和Toleration（污点和容忍） https://jimmysong.io/posts/kubernetes-taint-and-toleration/
+
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
