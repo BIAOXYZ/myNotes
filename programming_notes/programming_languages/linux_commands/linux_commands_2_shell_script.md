@@ -20,6 +20,7 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 
 《Linux命令行与shell脚本编程大全案例》 https://github.com/fengyuhetao/shell
 
+Shell脚本：Linux Shell脚本学习指南（超详细） http://c.biancheng.net/shell/
 
 ### 简单型的
 
