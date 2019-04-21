@@ -59,6 +59,8 @@ https://github.com/retejs/rete
 - 【斯嘉丽·约翰逊：打击AI合成色情片是“徒劳的”】 https://www.ithome.com/0/403/455.htm
 - GitHub 被指审查内容，著名“换脸”开源项目遭限制访问 https://mp.weixin.qq.com/s/lJquY5H2h97FbinmByJJDg
   > "事实上，GitHub 对开源项目采用这种形式的限制访问并不常见。虽然 GitHub 也曾公开表示收到过来自政府的删除请求( https://github.com/github/gov-takedowns )，但这是因为这些托管在 GitHub 上的仓库大多都包含敏感内容。"
+- 朱茵变杨幂，流量一个亿丨AI变脸指南 https://mp.weixin.qq.com/s/JlqOerM5gESRL7AlvDNryQ
+- AI换脸一时爽，侵权违法太酸爽：民法典新草案有规定，小心赔到家底空 https://mp.weixin.qq.com/s/OqnbOCJqgU6l-p1akab9xA
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
