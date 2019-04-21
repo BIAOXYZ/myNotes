@@ -188,6 +188,17 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 - Configuring permissions in Kubernetes with RBAC https://medium.com/containerum/configuring-permissions-in-kubernetes-with-rbac-a456a9717d5d
 - Configuring RBAC For Your Kubernetes Service Accounts https://medium.com/@lestrrat/configuring-rbac-for-your-kubernetes-service-accounts-c348b64eb242
 
+## kubernetes Job
+
+from kubernetes official:
+- Jobs - Run to Completion https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
+- 使用工作队列进行精细的并行处理 https://kubernetes.io/zh/docs/tasks/job/fine-parallel-processing-work-queue/
+
+not from kubernetes official:
+- Kubernetes对象之Job https://www.jianshu.com/p/bd6cd1b4e076
+- 名词解释：Job https://www.kubernetes.org.cn/job
+- 使用工作队列进行精细的并行处理 https://k8smeetup.github.io/docs/tasks/job/fine-parallel-processing-work-queue/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes源码
