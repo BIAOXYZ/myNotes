@@ -76,6 +76,10 @@ C++ Paxos library that has been used in Wechat production environment. https://g
 # Raft
 
 The Raft Consensus Algorithm https://raft.github.io/
+> 《In Search of an Understandable Consensus Algorithm (Extended Version)》 https://raft.github.io/raft.pdf
+
+Raft算法解析 https://www.jianshu.com/p/d5ac9eaeab30
+> The Secret Lives of Data -- Raft: Understandable Distributed Consensus http://thesecretlivesofdata.com/raft/
 
 Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.com/s/ulbJ6nb8GncqMizJCQKweg
 
