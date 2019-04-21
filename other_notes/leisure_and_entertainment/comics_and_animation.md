@@ -60,6 +60,10 @@
 
 萝黛的后宫玩具 https://zh.moegirl.org/%E8%90%9D%E9%BB%9B%E7%9A%84%E5%90%8E%E5%AE%AB%E7%8E%A9%E5%85%B7
 
+钉宫理惠配音精选 https://www.bilibili.com/video/av14967478
+> 这个视频有毒，后面还有一个钉宫和松冈祯丞的（《漫画家与助手》），不忍直视啊。。。
+>> 漫画家与助手 https://zh.moegirl.org/%E6%BC%AB%E7%94%BB%E5%AE%B6%E4%B8%8E%E5%8A%A9%E6%89%8B
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
