@@ -55,6 +55,11 @@
 【空耳】潜行吧！奈亚子W OP《快来搞死那激萌的萝莉》 https://video.tudou.com/v/XMTc5MjU1NDgyOA==.html 
 >> 竟然还有原版空耳 --> 土豆竟然还活着？ --> 土豆这视频竟然没广告？ --> 这个还能活多久？ 
 
+## 萝黛的后宫玩具
+//我的妈呀，钉宫和炮姐的会师。
+
+萝黛的后宫玩具 https://zh.moegirl.org/%E8%90%9D%E9%BB%9B%E7%9A%84%E5%90%8E%E5%AE%AB%E7%8E%A9%E5%85%B7
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
