@@ -25,6 +25,7 @@ Shell脚本：Linux Shell脚本学习指南（超详细） http://c.biancheng.ne
 # shell脚本调试
 
 Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
+- > 利用$PS4这一特性，通过使用一些内置变量来重定义$PS4的值，我们就可以增强"-x"选项的输出信息。例如先执行```export PS4='+{$LINENO:${FUNCNAME[0]}} '```, 然后再使用“-x”选项来执行脚本，就能在每一条实际执行的命令前面显示其行号以及所属的函数名。
 
 Bash shell脚本打印出正在执行的命令 https://blog.csdn.net/CaspianSea/article/details/45767453
 
