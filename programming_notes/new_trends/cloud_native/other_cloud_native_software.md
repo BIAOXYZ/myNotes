@@ -42,6 +42,8 @@ flannel is a network fabric for containers, designed for Kubernetes https://gith
 Kubernetes-基于flannel的集群网络 https://www.kubernetes.org.cn/4105.html
 > "2）运行容器时，在宿主机上创建虚拟网卡veth pair设备，veth pair设备是成对出现的，从而组成一个数据通道，数据从一个设备进入，就会从另一个设备出来。将veth pair设备的一端放在新创建的容器中，命名为eth0；另一端放在宿主机的docker0中，以veth为前缀的名字命名。通过 brctl show 命令查看放在docker0中的veth pair设备"
 
+深入浅出Kubernetes网络：跨节点网络通信之Flannel https://mp.weixin.qq.com/s/UqsLnVcHVFKi2Ijlr94xVw
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Notary
