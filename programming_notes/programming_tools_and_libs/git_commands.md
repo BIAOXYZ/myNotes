@@ -852,6 +852,11 @@ https://www.zhihu.com/question/21343711/answer/32023379
 学习编程用什么做笔记比较好？ - pezy的回答 - 知乎
 https://www.zhihu.com/question/21438053/answer/18790164
 
+### https://raw.githubusercontent.com
+
+What do raw.githubusercontent.com URLs represent? https://stackoverflow.com/questions/39065921/what-do-raw-githubusercontent-com-urls-represent
+> The `raw.githubusercontent.com` domain is used to serve unprocessed versions of files stored in GitHub repositories. If you browse to a file on GitHub and then click the Raw link, that's where you'll go.
+
 ### Github相关第三方工具
 
 #### gitbook
