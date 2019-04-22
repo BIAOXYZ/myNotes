@@ -224,6 +224,11 @@ Kubernetes Pod调度进阶：Taints(污点)和Tolerations(容忍) https://blog.f
 
 Kubernetes中的Taint和Toleration（污点和容忍） https://jimmysong.io/posts/kubernetes-taint-and-toleration/
 
+## kubernetes ConfigMap
+
+Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
+
+Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
