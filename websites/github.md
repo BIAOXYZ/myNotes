@@ -103,3 +103,14 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 Hotpot计划是复旦留学申请数据开源计划的代称，旨在为复旦学弟学妹无偿分享留学申请经验、暑研动态、美国生活/工作等一切相关信息。 https://github.com/fdu-cooks/fdu-gradhotpot
 > https://fdu-cooks.github.io/fdu-gradhotpot/
 
+除了 996.icu，全球最大同性交友网站的这 14 个项目你也一定要看看 https://mp.weixin.qq.com/s/XEJyB0TLdAw1SX8ReIWhWg
+
+B站后台源码疑似被上传至GitHub https://www.ithome.com/0/420/420.htm
+```
+代码注释其中一行:
+// 抽奖不成功也要发送弹幕, 概率20%, 造成一种很多人中奖的假象
+23333
+```
+> https://github.com/openbilibili/go-common
+>> https://github.com/swituo/openbilibili-go-common
+
