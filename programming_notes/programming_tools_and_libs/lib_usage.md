@@ -15,15 +15,16 @@ libc、glibc和glib的关系 https://blog.csdn.net/yasi_xi/article/details/98995
 <<libevent源码深度剖析一>>
 http://blog.csdn.net/sparkliang/article/details/4957667
 
-
 ### GnuTLS
-The GnuTLS Transport Layer Security Library
-https://www.gnutls.org/
+
+The GnuTLS Transport Layer Security Library https://www.gnutls.org/
 - Git Repository: https://gitlab.com/gnutls/gnutls
-> https://gitlab.com/gnutls/gnutls/blob/master/doc/TODO
->> https://gitlab.com/gnutls/gnutls/issues
+- How can I help? https://www.gnutls.org/help.html
+  * > https://gitlab.com/gnutls/gnutls/blob/master/doc/TODO
+    >> https://gitlab.com/gnutls/gnutls/issues
 - Document: https://www.gnutls.org/documentation.html
-> https://www.gnutls.org/manual/gnutls.pdf
+  * > PDF file. https://www.gnutls.org/manual/gnutls.pdf
+  * > HTML - with one web page per node. https://www.gnutls.org/manual/html_node/index.html
 
 
 TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p/26684020
