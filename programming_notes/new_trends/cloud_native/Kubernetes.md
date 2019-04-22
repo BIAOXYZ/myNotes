@@ -96,6 +96,9 @@ Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesb
   * Installing Minishift https://docs.okd.io/latest/minishift/getting-started/installing.html
 - Pods -- Kubernetes pods by example http://kubernetesbyexample.com/pods/
 
+使用kubectl delete pods xxx删除对应的pod,提示删除成功，但是立马又回生成一个。为何？ http://dockone.io/question/1076
+> 无论各种方式生成的pod, 均可以使用如下命令强制删除: `kubectl delete pods <pod> --grace-period=0 --force`
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 快速开始
