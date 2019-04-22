@@ -1,5 +1,5 @@
 
-### 综合类的
+# 综合类的
 
 From finding text to search and replace, from sorting to beautifying text and more https://github.com/learnbyexample/Command-line-text-processing
 
@@ -22,7 +22,13 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 
 Shell脚本：Linux Shell脚本学习指南（超详细） http://c.biancheng.net/shell/
 
-### 简单型的
+# shell脚本调试
+
+Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
+
+Bash shell脚本打印出正在执行的命令 https://blog.csdn.net/CaspianSea/article/details/45767453
+
+# 简单型的
 
 shell 脚本关键字&符号
 http://www.cnblogs.com/xiaojiang1025/p/5863984.html
@@ -46,14 +52,14 @@ http://blog.csdn.net/hongchangfirst/article/details/28436947
 linux bash shell之变量替换：:=句法、=句法、:-句法、-句法、=?句法、?句法、:+句法、+句法
 https://www.cnblogs.com/fhefh/archive/2011/04/22/2024750.html
 
-#### Linux符号``的使用
+### Linux符号``的使用
 Linux—shell中$(( ))、$( )、``与${ }的区别
 https://blog.csdn.net/number_0_0/article/details/73291182
 
 linux shell中'',""和``的区别
 https://www.cnblogs.com/Skyar/p/5914942.html
 
-#### Shell脚本中的中括号
+### Shell脚本中的中括号
 
 What is the difference between double and single square brackets in bash? https://serverfault.com/questions/52034/what-is-the-difference-between-double-and-single-square-brackets-in-bash
 - Greg's Wiki http://mywiki.wooledge.org/
@@ -65,7 +71,9 @@ What is the difference between double and single square brackets in bash? https:
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-## shell经典用法
+# shell经典用法
+
+## /dev/null 2>&1
 
 <<shell程序中 2> /dev/null 代表什么意思？>> https://www.zhihu.com/question/53295083
 - /dev/null 2>&1 解释 http://blog.163.com/liang8421@126/blog/static/89481957200926105219622/
@@ -92,9 +100,7 @@ What is the difference between double and single square brackets in bash? https:
 ```
 https://www.gnu.org/software/bash/manual/
 
---------------------------------------------------
-
-### Here Documents
+## Here Documents
 
 How does “cat << EOF” work in bash? https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash
 ```
@@ -163,7 +169,7 @@ http://tangzx.qiniudn.com/post-0024-linux-shell-scripting-cookbook.html
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
-## 小脚本
+# 小脚本
 
 ### Linux杀进程小脚本
 
