@@ -34,7 +34,11 @@ OAuth 2.0 Playground https://www.oauth.com/playground/
 
 OAuth 2.0 Tutorial https://www.tutorialspoint.com/oauth2.0/
 
-理解OAuth 2.0 http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+***阮一峰OAuth***：
+- 理解OAuth 2.0 http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+- OAuth 2.0 的一个简单解释 http://www.ruanyifeng.com/blog/2019/04/oauth_design.html
+- GitHub OAuth 示例教程 http://www.ruanyifeng.com/blog/2019/04/github-oauth.html
+  * > A very simple demo of OAuth2.0 using node.js https://github.com/ruanyf/node-oauth-demo
 
 The OAuth Bible http://oauthbible.com/
 
