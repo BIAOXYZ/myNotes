@@ -60,6 +60,9 @@ What is the difference between double and single square brackets in bash? https:
   * BashGuide http://mywiki.wooledge.org/BashGuide
   * The Bash Guide https://guide.bash.academy/
 
+`linux命令之间的分号，&&， ||` https://blog.csdn.net/stpeace/article/details/51870812 【by stpeace】
+> 意思我都懂，就是偶然发现了这哥们的博客是CSDN排行第一，所以记一下。。。
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## shell经典用法
