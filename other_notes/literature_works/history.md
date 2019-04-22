@@ -1,4 +1,11 @@
 
+再见，第四套人民币！4月30日结束集中兑换 https://www.ithome.com/0/420/329.htm
+- 第五套人民币 https://baike.baidu.com/item/%E7%AC%AC%E4%BA%94%E5%A5%97%E4%BA%BA%E6%B0%91%E5%B8%81
+- 第四套人民币 https://baike.baidu.com/item/%E7%AC%AC%E5%9B%9B%E5%A5%97%E4%BA%BA%E6%B0%91%E5%B8%81
+- 第三套人民币 https://baike.baidu.com/item/%E7%AC%AC%E4%B8%89%E5%A5%97%E4%BA%BA%E6%B0%91%E5%B8%81
+- 第二套人民币 https://baike.baidu.com/item/%E7%AC%AC%E4%BA%8C%E5%A5%97%E4%BA%BA%E6%B0%91%E5%B8%81
+- 第一套人民币 https://baike.baidu.com/item/%E7%AC%AC%E4%B8%80%E5%A5%97%E4%BA%BA%E6%B0%91%E5%B8%81
+
   
 领导最信任什么样的人？ https://www.huxiu.com/article/286899.html by 人神共奋
 - 所以我说大家都没有当皇帝的觉悟，乾隆的第一念头就是：这是一起“政治攻击”事件，它的背后也许还有更大的阴谋。
