@@ -1,4 +1,8 @@
 
+# 必须把这个放在最醒目位置
+
+程序员的黑砖窑，东南亚博彩骗局详解 https://mp.weixin.qq.com/s/YjQi5cX8_WRZKsOTJfPMTQ
+
 # JOB news
 
 IBM to open Blockchain Innovation Center in Singapore
