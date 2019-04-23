@@ -13,6 +13,8 @@ OpenShift https://en.wikipedia.org/wiki/OpenShift
 - "**`OpenShift Dedicated`** is Red Hat's managed private cluster offering, built around a core of application containers powered by Docker, with orchestration and management provided by Kubernetes, on a foundation of Red Hat Enterprise Linux. It is available on the Amazon Web Services (AWS) and Google Cloud Platform (GCP) since December 2016 marketplaces."
 - "**`OpenShift.io`** is Red Hat's SaaS service that provides an application development environment."
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # openshift official
 
 OPENSHIFT Online https://manage.openshift.com/
@@ -35,11 +37,21 @@ okd -- The Origin Community Distribution of Kubernetes that powers Red Hat OpenS
 okd Documentation https://docs.okd.io/
 - Planning your installation https://docs.okd.io/latest/install/index.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ##
 
 Django Example: This is a Django project that you can use as the starting point to develop your own and deploy it on an OpenShift cluster. https://github.com/sclorg/django-ex/tree/master
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# openshift general
+
+谁最良心？选我选我！【:star:业界良心！+3 :star::star::star:】
+- Foundations of OpenShift -- By OpenShift https://www.katacoda.com/openshift/courses/introduction
+- OpenShift Playgrounds -- By OpenShift https://www.katacoda.com/openshift/courses/playgrounds
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # openshift安装
 
@@ -47,7 +59,7 @@ Simple all-in-one localhost Installation fails with "Failed to start Atomic Open
 
 离线生产级部署openshift https://github.com/xiaoping378/openshift-deploy
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # openshift系列笔记
 
@@ -55,8 +67,7 @@ https://blog.csdn.net/huqigang/article/category/7157977
 - openshift/origin学习记录（0）——Ansible安装多节点openshift集群 https://blog.csdn.net/huqigang/article/details/77962156
 - openshift/origin学习记录（12）——离线安装集群 https://blog.csdn.net/huqigang/article/details/78318266
 
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # openshift security
 
@@ -72,6 +83,8 @@ openshift 学习笔记-6 secret and quota https://blog.csdn.net/warrior_0319/art
 
 理解OpenShift（4）：用户及权限管理 https://www.cnblogs.com/sammyliu/p/10083659.html
   - Service Accounts https://docs.openshift.com/container-platform/3.11/dev_guide/service_accounts.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## openshift安全与用户管理问题
 
