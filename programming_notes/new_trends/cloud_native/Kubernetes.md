@@ -159,9 +159,13 @@ Kubectl apply vs kubectl create? https://stackoverflow.com/questions/47369351/ku
 
 --------------------------------------------------
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## kubernetes网络
 
 Kubernetes技术分析之网络 http://dockone.io/article/545
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Ingress
 
@@ -180,6 +184,8 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 ## TBD
 
 Official Python client library for kubernetes https://github.com/kubernetes-client/python
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes权限和安全
 
@@ -336,6 +342,8 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
 - 开发operator扩展kubernetes 调研整理 https://yucs.github.io/2017/12/21/2017-12-21-operator/
 - 带你入门operator-framework http://dockone.io/article/5877
 - 【kubernetes/k8s概念】CRD CustomResourceDefinition 自定义资源类型 https://blog.csdn.net/zhonglinzhang/article/details/86553744
+
+Extending Kubernetes: Create Controllers for Core and Custom Resources https://medium.com/@trstringer/create-kubernetes-controllers-for-core-and-custom-resources-62fc35ad64a3
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
