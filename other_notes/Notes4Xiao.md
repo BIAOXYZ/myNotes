@@ -126,6 +126,7 @@ A list of system papers using/about Intel SGX https://github.com/vschiavoni/sgx-
 
 --------------------------------------------------分隔线--------------------------------------------------
 
+- (ICALP 2014) The Melbourne Shuffle: Improving Oblivious Storage in the Cloud https://arxiv.org/abs/1402.5524
 
 - (CCS 2017) Iron: Functional Encryption using Intel SGX https://eprint.iacr.org/2016/1071.pdf || https://acmccs.github.io/papers/p765-fischA.pdf
 
