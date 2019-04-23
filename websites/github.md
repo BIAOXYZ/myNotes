@@ -98,6 +98,8 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 - 联合仲裁发起地 | 法律板块(主站：996.ICU) https://github.com/Y1ran/996.Law
 - 逃离996 （本篇为新加坡篇，其他的国家：） https://github.com/623637646/996.Leave
 
+Microsoft and GitHub Workers Support 996.ICU https://github.com/MSWorkers/support.996.ICU
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 Hotpot计划是复旦留学申请数据开源计划的代称，旨在为复旦学弟学妹无偿分享留学申请经验、暑研动态、美国生活/工作等一切相关信息。 https://github.com/fdu-cooks/fdu-gradhotpot
