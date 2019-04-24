@@ -51,6 +51,80 @@ Policy deny_unknown status:     allowed
 Max kernel policy version:      31
 ```
 
+```
+实战2：只是改完但不重启的话，/etc/selinux/config文件是改了，
+但是sestatus命令显示结果上有一点不同，getenforce命令显示结果不变，其他影响未知。
+
+[root@openshiftsingle ~]# getenforce
+Permissive
+[root@openshiftsingle ~]# sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   permissive
+Mode from config file:          permissive
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      31
+
+----------------------------------------------------------------------------------------------------
+
+//看看未修改前的/etc/selinux/config文件。
+[root@openshiftsingle ~]# cd /etc/selinux/
+[root@openshiftsingle selinux]# cat config
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=permissive
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected.
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+
+----------------------------------------------------------------------------------------------------
+
+//用sed语句直接修改。
+[root@openshiftsingle selinux]# sed -i 's/SELINUX=permissive/SELINUX=enforcing/' /etc/selinux/config
+
+----------------------------------------------------------------------------------------------------
+
+//改完后看下/etc/selinux/config文件，文件内容肯定是已经改了的————只有一处，非常明显。
+[root@openshiftsingle selinux]# cat config
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=enforcing
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected.
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+
+----------------------------------------------------------------------------------------------------
+
+//注意这里Current mode的值还是permissive，但是Mode from config file的值已经是enforcing了。
+[root@openshiftsingle ~]# getenforce
+Permissive
+[root@openshiftsingle selinux]# sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   permissive
+Mode from config file:          enforcing
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      31
+```
+
 - 一文彻底明白linux中的selinux到底是什么 https://blog.csdn.net/yanjun821126/article/details/80828908
 - Selinux详细讲解及相关的配置 https://blog.csdn.net/Kangshuo2471781030/article/details/79294506
 - Selinux小结 https://blog.csdn.net/gulinxieying/article/details/78677139
