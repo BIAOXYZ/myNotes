@@ -359,6 +359,10 @@ https://www.zhihu.com/question/24694855
 
 京东回应“要求员工梳理亲属关系”：是日常管理举措 https://www.ithome.com/0/415/132.htm
 
+IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithome.com/html/it/267407.htm
+> 关于IT之家的说明 https://yq.aliyun.com/articles/62398
+- 如何看待 ithome从阿里云转至百度云？ - 知乎 https://www.zhihu.com/question/51999442
+- 阿里云对 IT 之家事件的回应 https://www.v2ex.com/t/315904
 
 ### 小公司八卦
 
