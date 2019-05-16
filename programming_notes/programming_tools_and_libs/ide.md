@@ -6,6 +6,14 @@
 
 中文版 Awesome VS Code https://github.com/formulahendry/awesome-vscode-cn
 
+Collection of helpful tips and tricks for VS Code. https://github.com/Microsoft/vscode-tips-and-tricks
+
+### vscode新闻
+
+Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio - cnBeta.COM https://www.cnbeta.com/articles/soft/756969.htm
+
+### vscode已验证技巧
+
 VS Code 使用小技巧 - 赵吉彤的文章 - 知乎 http://zhuanlan.zhihu.com/p/22880087
 ```
 - 预览markdown Ctrl+Shift+V  //所以Typora彻底没用了
@@ -15,8 +23,12 @@ VS Code 使用小技巧 - 赵吉彤的文章 - 知乎 http://zhuanlan.zhihu.com/
 How to close an opened folder in Visual Studio Code https://stackoverflow.com/questions/30028469/how-to-close-an-opened-folder-in-visual-studio-code/37549173
 > The command to close the currently opened folder can be found from `File` -> `Close Folder`. You can also use the shortcut: Ctrl+K F
 
-Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio - cnBeta.COM
-https://www.cnbeta.com/articles/soft/756969.htm
+如何让 Visual Studio Code 自动换行？ - wansho的回答 - 知乎 https://www.zhihu.com/question/35042902/answer/400070742
+```
+English环境下
+点击菜单栏 View--> Toggle Word Wrap 选项.
+或者直接 快捷键 : alt + Z
+```
 
 ### vscode护眼色修改
 
@@ -45,7 +57,6 @@ https://www.cnbeta.com/articles/soft/756969.htm
 我最终的文件目录是：C:\Users\LiangLiu\.vscode\extensions\akamud.vscode-theme-onelight-2.1.0\themes\OneLight.json
 然后里面其实只改了两项"editor.background"和"sideBar.background"似乎就够了。
 ```
-
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
