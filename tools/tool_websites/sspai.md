@@ -14,6 +14,9 @@
 
 免费全平台的文件分享利器：SendAnywhere https://sspai.com/post/40047
 
+好用的全平台剪切板工具，我们为你找到了这 3 款 https://sspai.com/post/43775
+> 免费开源的 Windows 管理剪贴板，让你处理文字更高效：Ditto https://sspai.com/post/43700
+
 # sspai Chrome插件专场
 
 用 Chrome 的人都需要知道的「神器」扩展：「油猴」使用详解 https://sspai.com/post/40485
