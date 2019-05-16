@@ -119,10 +119,8 @@ B站回应后台源码泄露事件：为历史版本，已主动防御 https://w
 ```
 哈哈哈 里面还有滴滴出行的招聘广告(●°u°●)​ 」
 ```
-- https://github.com/openbilibili/go-common
-  * https://github.com/swituo/openbilibili-go-common
-  * https://github.com/Anankke/bilibili-backup
-    + https://github.com/Anankke/bilibili
+
+[`*`][:star:]The end of this source code leakage disturbance.[:star:][`*`]
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
