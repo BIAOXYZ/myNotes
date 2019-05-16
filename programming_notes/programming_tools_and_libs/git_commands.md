@@ -876,6 +876,8 @@ https://travis-ci.org/getting_started
 http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
 >YAML 语言教程 http://www.ruanyifeng.com/blog/2016/07/yaml.html
 
+使用Travis进行持续集成 https://www.liaoxuefeng.com/article/1083103562955136  -->  廖雪峰这个Travis教程跟阮一峰那个还是没法比，比较基本。
+
 <类似Travis CI 这种持续集成「自动编译测试」的网站有哪些？>
 https://www.zhihu.com/question/42991087
 https://github.com/blog/2463-github-welcomes-all-ci-tools
