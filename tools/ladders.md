@@ -21,6 +21,8 @@ Simple DNSCrypt https://www.simplednscrypt.org/
 
 网速变慢？你可能需要先设置好 DNS | 科普 https://sspai.com/post/42125
 
+公共 DNS 性能大比拼：1.1.1.1 vs 8.8.8.8 vs 9.9.9.9 https://mp.weixin.qq.com/s/-Hj8zhe0vujQQlePkNDbhw
+
 
 # hosts
 
