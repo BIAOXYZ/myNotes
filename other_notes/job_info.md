@@ -361,6 +361,13 @@ https://www.zhihu.com/question/24694855
 
 京东回应“要求员工梳理亲属关系”：是日常管理举措 https://www.ithome.com/0/415/132.htm
 
+京东应劫："贬功臣、抑兄弟"能否化险为夷 https://www.ithome.com/0/423/374.htm
+- > 尤里问：“你为什么不喝水?”。刘强东说不可能：“兄弟跟我敬酒喝，我不能喝水，那是欺骗兄弟。”
+- > “永远不会开除任何一个兄弟”刘强东的承诺言犹在耳。但到了今天，曾把酒言欢的兄弟，成为了京东大刀阔斧革新的主要对象。刘强东称“混日子的人不是我兄弟，我没有选择余地！”被视为“激励”的薪酬改革引来议论纷纷，其中非议居多。掌握“兄弟”定义权的东哥，被舆论推至风口浪尖。
+
+- 京东发布内部邮件要求坚决淘汰三类人 https://www.williamlong.info/archives/5668.html
+- 刘强东：混日子的人不是我的兄弟 https://www.williamlong.info/archives/5673.html
+
 IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithome.com/html/it/267407.htm
 > 关于IT之家的说明 https://yq.aliyun.com/articles/62398
 - 如何看待 ithome从阿里云转至百度云？ - 知乎 https://www.zhihu.com/question/51999442
