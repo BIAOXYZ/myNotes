@@ -64,6 +64,10 @@
 > 这个视频有毒，后面还有一个钉宫和松冈祯丞的（《漫画家与助手》），不忍直视啊。。。
 >> 漫画家与助手 https://zh.moegirl.org/%E6%BC%AB%E7%94%BB%E5%AE%B6%E4%B8%8E%E5%8A%A9%E6%89%8B
 
+## 一拳超人
+
+《一拳超人》：一个兴趣使然的英雄 http://www.sohu.com/a/123540768_585167
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
