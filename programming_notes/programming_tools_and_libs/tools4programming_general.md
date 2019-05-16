@@ -13,3 +13,5 @@ https://www.cnbeta.com/articles/tech/738117.htm
 
 用这个漂亮的工具将方程式截图迅速转换为 LaTeX - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/48077774
 > Mathpix, it’s how the world sees math. https://mathpix.com/
+
+Record and share your terminal sessions, the right way. https://asciinema.org/
