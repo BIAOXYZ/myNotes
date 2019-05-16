@@ -52,6 +52,7 @@ https://github.com/retejs/rete
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 - “换脸术”即将带来的“福利”与恐慌 https://mp.weixin.qq.com/s/3-MBNCXs1ski1LX8wlevAw
+- 神奇女侠“下海”了？呸！有了视频换脸术，也不能乱用啊！ https://mp.weixin.qq.com/s/xxoiA9IOo_nZc1xGsuH5dQ
 - AI算法把女星面部嫁接到成人电影上 效果以假乱真 - AI 人工智能 - cnBeta.COM https://www.cnbeta.com/articles/tech/679039.htm
   > Non official project based on original /r/Deepfakes thread. Many thanks to him! https://www.reddit.com/r/deepfakes/ || https://github.com/deepfakes/faceswap
   >> deepfakes 中文站 https://deepfakes.com.cn/
