@@ -91,6 +91,8 @@ https://k8smeetup.github.io/
 
 # kubernetes 常用命令
 
+kubectl Cheat Sheet https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
 Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesbyexample.com/
 - DIY -- Try out for yourself http://kubernetesbyexample.com/diy/
   * Installing Minishift https://docs.okd.io/latest/minishift/getting-started/installing.html
