@@ -2,3 +2,8 @@
 # PingCAP
 
 Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
+
+# 其他用户
+
+做一个基础很扎实的程序员是一种什么感受啊 https://www.v2ex.com/t/561411
+- > 现在开始学基础也不会晚。最近也一直在看计算机基础相关圣经。我整理了一个计算机基础书单，可以参考参考 https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md
