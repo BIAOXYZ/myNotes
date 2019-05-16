@@ -16,6 +16,8 @@ LaTeX.Online https://latexonline.cc/
 
 Online Latex Editor (TeX Live 2016) https://www.tutorialspoint.com/online_latex_editor.php
 
+LaTeX Table Generator http://www.tablesgenerator.com/
+
 # Latex攻略集合
 
 - TeX/LaTeX Resources http://texblog.org/tex-resources/
