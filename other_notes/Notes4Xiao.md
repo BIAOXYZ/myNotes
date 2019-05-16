@@ -120,6 +120,10 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 ### paper
 
+- Secure and Efficient Multi-Attribute Range Queries based on Comparable Inner Product Encoding https://cis.temple.edu/~jiewu/research/publications/Publication_files/CNS_Liu_2018.pdf
+
+- (AsiaCCS 2019) A Hybrid Approach to Secure Function Evaluation Using SGX https://arxiv.org/abs/1905.01233
+
 --------------------------------------------------分隔线--------------------------------------------------
 
 A list of system papers using/about Intel SGX https://github.com/vschiavoni/sgx-papers
