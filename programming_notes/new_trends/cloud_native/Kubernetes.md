@@ -363,6 +363,9 @@ Docker官方将支持Kubernetes，容器编排大战宣告结束 http://www.info
 > Sorry, Linux. Kubernetes is now the OS that matters https://www.infoworld.com/article/3322120/kubernetes/sorry-linux-kubernetes-is-now-the-os-that-matters.html
 >> 对不起，小麦。馒头现在是更重要的食物！
 
+面向 Kubernetes 编程： Kubernetes 是下一代操作系统 https://mp.weixin.qq.com/s/E5-agHtMvW_X7znVJDkTKA
+>> Linux，Windows等纷纷表示无视该标题。。。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes插件
