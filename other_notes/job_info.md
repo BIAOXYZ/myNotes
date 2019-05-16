@@ -357,6 +357,8 @@ https://www.zhihu.com/question/24694855
 著名词作家李幼容、全国公安文联签约词作家臧思佳以及享受国务院津贴的曲作家郑冷横共同创作，由周丹声乐工作室的小朋友担任首唱。
 ```
 
+华为发布了 GaussDB， V 站的朋友们怎么看 https://www.v2ex.com/t/564464
+
 京东回应“要求员工梳理亲属关系”：是日常管理举措 https://www.ithome.com/0/415/132.htm
 
 IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithome.com/html/it/267407.htm
