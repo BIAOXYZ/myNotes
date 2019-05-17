@@ -274,6 +274,79 @@ https://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typi
 
 >> notes: 实际上这里还是没有解决我的需求————也就是在线commit后，其他网络仓库（Gitlab，Bitbucket等）和本地仓库（本地仓库不自动同步也无所谓，只要保证多个在线仓库能自动同步就行）能够自动同步。从而使得后面就算再发生此类事件，也能保证不止一处有最新的笔记。
 
+
+> 实战过程。注意：1.必须先建立一个新的remote repo，叫all或者both或者随便的名字都行，才能使用`git remote set-url --add <仓库名> <新的push仓库的地址>`来添加新的只上传的仓库。2.如果不带`--add`参数则是修改原来仓库的地址，也就是从仓库1改到仓库2。
+```
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote -v
+bit     git@bitbucket.org:BIAOXYZ/mynotes.git (fetch)
+bit     git@bitbucket.org:BIAOXYZ/mynotes.git (push)
+lab     git@gitlab.com:BIAOXYZ/myNotes.git (fetch)
+lab     git@gitlab.com:BIAOXYZ/myNotes.git (push)
+origin  git@github.com:BIAOXYZ/myNotes.git (fetch)
+origin  git@github.com:BIAOXYZ/myNotes.git (push)
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote set-url --add all git@github.com:BIAOXYZ/myNotes.git
+fatal: No such remote 'all'
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote add all git@github.com:BIAOXYZ/myNotes.git
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote -v
+all     git@github.com:BIAOXYZ/myNotes.git (fetch)
+all     git@github.com:BIAOXYZ/myNotes.git (push)
+bit     git@bitbucket.org:BIAOXYZ/mynotes.git (fetch)
+bit     git@bitbucket.org:BIAOXYZ/mynotes.git (push)
+lab     git@gitlab.com:BIAOXYZ/myNotes.git (fetch)
+lab     git@gitlab.com:BIAOXYZ/myNotes.git (push)
+origin  git@github.com:BIAOXYZ/myNotes.git (fetch)
+origin  git@github.com:BIAOXYZ/myNotes.git (push)
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote set-url --add all git@gitlab.com:BIAOXYZ/myNotes.git
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote set-url --add all git@bitbucket.org:BIAOXYZ/mynotes.git
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git remote -v
+all     git@github.com:BIAOXYZ/myNotes.git (fetch)
+all     git@github.com:BIAOXYZ/myNotes.git (push)
+all     git@gitlab.com:BIAOXYZ/myNotes.git (push)
+all     git@bitbucket.org:BIAOXYZ/mynotes.git (push)
+bit     git@bitbucket.org:BIAOXYZ/mynotes.git (fetch)
+bit     git@bitbucket.org:BIAOXYZ/mynotes.git (push)
+lab     git@gitlab.com:BIAOXYZ/myNotes.git (fetch)
+lab     git@gitlab.com:BIAOXYZ/myNotes.git (push)
+origin  git@github.com:BIAOXYZ/myNotes.git (fetch)
+origin  git@github.com:BIAOXYZ/myNotes.git (push)
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$ git push all master
+Everything up-to-date
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.76 KiB | 900.00 KiB/s, done.
+Total 10 (delta 8), reused 0 (delta 0)
+To gitlab.com:BIAOXYZ/myNotes.git
+   228b35d..ccbfd63  master -> master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.76 KiB | 900.00 KiB/s, done.
+Total 10 (delta 8), reused 0 (delta 0)
+To bitbucket.org:BIAOXYZ/mynotes.git
+   228b35d..ccbfd63  master -> master
+
+LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
+$
+```
+
 ----------------------------------------------------------------------------------------------------
 
 #### git diff会有些^M
