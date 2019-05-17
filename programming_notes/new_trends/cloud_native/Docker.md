@@ -255,8 +255,9 @@ Simple management UI for Docker http://portainer.io https://github.com/portainer
 
 # docker-machine
 
-Docker Machine + Compose + Swarm
-http://www.cnblogs.com/kevinX/p/5458251.html
+Docker Machine + Compose + Swarm http://www.cnblogs.com/kevinX/p/5458251.html
+
+Docker(五)：Docker 三剑客之 Docker Machine http://www.ityouknow.com/docker/2018/03/30/docker-machine.html 【by 纯洁的微笑】
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
