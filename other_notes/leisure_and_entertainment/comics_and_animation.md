@@ -68,6 +68,13 @@
 
 《一拳超人》：一个兴趣使然的英雄 http://www.sohu.com/a/123540768_585167
 
+## 下流梗不存在的灰暗世界
+//看样子像是二次元的《1984》？
+
+下流梗不存在的灰暗世界 https://zh.moegirl.org/%E4%B8%8B%E6%B5%81%E6%A2%97%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E7%81%B0%E6%9A%97%E4%B8%96%E7%95%8C
+
+下流梗不存在的灰暗世界 下ネタという概念が存在しない退屈な世界 (2015) https://movie.douban.com/subject/26148830/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
