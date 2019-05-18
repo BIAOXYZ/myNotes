@@ -255,6 +255,8 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 
 kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
 
+Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s-cronjob-source-code/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # k8s项目相关
