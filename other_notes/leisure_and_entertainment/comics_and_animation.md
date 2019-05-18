@@ -48,6 +48,8 @@
 
 妄想学生会 https://zh.moegirl.org/%E5%A6%84%E6%83%B3%E5%AD%A6%E7%94%9F%E4%BC%9A
 
+七条天空病娇化是哪集，就是下方图片的出处，第几季第几集 https://zhidao.baidu.com/question/691267779887191924.html
+
 ## 潜行吧!奈亚子
 
 潜行吧!奈亚子 https://zh.moegirl.org/%E6%BD%9C%E8%A1%8C%E5%90%A7!%E5%A5%88%E4%BA%9A%E5%AD%90
