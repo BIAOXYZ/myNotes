@@ -1,9 +1,11 @@
 
-### DOS
+# DOS
 
 微软回顾 Windows 命令行演变史 力证 DOS 未过时 - Windows - cnBeta.COM https://www.cnbeta.com/articles/tech/742467.htm
 
-### 环境变量
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 环境变量
 
 <<Windows下PATH等环境变量详解>>
 https://www.cnblogs.com/sunada2005/articles/2725277.html
@@ -21,8 +23,9 @@ set path=%path%;D:\Java\jdk1.6.0_24\bin
 - Linux环境变量详解 - CSDN博客 https://blog.csdn.net/gatieme/article/details/25975465
 - 【Linux】完全解读Linux环境变量 - CSDN博客 https://blog.csdn.net/xyw591238/article/details/51770247
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-#### 环境变量最相关命令set
+## 环境变量最相关命令set
 
 Windows 如何在cmd命令行中查看、修改、删除与添加环境变量 - CSDN博客
 https://blog.csdn.net/stpeace/article/details/53451744
@@ -54,7 +57,9 @@ C:\Users\l00384038>echo GOROOT
 GOROOT
 ```
 
-#### 环境变量修改后立刻生效
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 环境变量修改后立刻生效
 
 <<解决Windows下修改环境变量后需重启才能生效的问题>>
 http://blog.sina.com.cn/s/blog_49370c500100ov36.html
@@ -69,7 +74,47 @@ http://blog.sina.com.cn/s/blog_49370c500100ov36.html
 但是对副本的修改却会引发Windows环境变量的刷新，这正是我们想要的！
 ```
 
-### 环境变量立即刷新
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 环境变量立即刷新
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## windows下类似alias的doskey命令
+
+windows系统如何给命令起别名？ - rayhy的回答 - 知乎 https://www.zhihu.com/question/51962577/answer/128317488
+> 单独窗口生效：`doskey ls=dir $*` --> 但是就我来看，感觉直接`doskey ls=dir`就可以了。 
+>> 还可以通过修改注册表设置成自动执行。
+
+Aliases in Windows command prompt https://stackoverflow.com/questions/20530996/aliases-in-windows-command-prompt
+> 这个讲了更多的方法，但是没必要细看了。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## windows下类似cat的type命令
+
+Windows DOS内部命令详解03——path、type、copy https://www.jianshu.com/p/f62d3a73c318
+
+TYPE (DOS command) https://en.wikipedia.org/wiki/TYPE_(DOS_command)
+> In computing, type is a command in various command-line interpreters (shells) such as `COMMAND.COM`, `cmd.exe`, `4DOS/4NT` and `Windows PowerShell` used to display the contents of specified files on the computer terminal. The analogous Unix command is `cat`.
+
+```
+C:\Users\LiangLiu\mydata>type my-crontab.yaml
+apiVersion: "stable.example.com/v1"
+kind: CronTab
+metadata:
+  name: my-new-cron-object
+spec:
+  cronSpec: "* * * * */5"
+  image: my-awesome-cron-image
+C:\Users\LiangLiu\mydata>
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+#
 
 狗日的2345劫持，真TM服了，用了一堆知乎上的办法，下了好多软件，都不管用。最后是V2EX的办法——360杀毒的急救箱搞定的。。。
 
@@ -82,14 +127,17 @@ https://www.zhihu.com/question/23157265
 为什么 Chrome 浏览器的主页会被篡改为 hao123 ？遇到这种情况要如何修复？ - 知乎
 https://www.zhihu.com/question/21883209
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-### VPNs
+# VPNs
 
 SetupVPN http://desktopclient.net/gw/index.html#/
 
 Lantern https://github.com/getlantern/download
 
-## 远程桌面控制
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 远程桌面控制
 
 Comparison of remote desktop software https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software 
 > teamviewer个垃圾（虽然已经比别的垃圾好很多了）动不动就提示`commercial use suspected`，就是想收钱，N多人都是这问题，所以想找个完全开源免费的了。然后这个wiki列表里一定先找最近还活跃的。。。
@@ -98,7 +146,9 @@ Comparison of remote desktop software https://en.wikipedia.org/wiki/Comparison_o
 14 Free Remote Access Software Tools https://www.lifewire.com/free-remote-access-software-tools-2625161
 - 02 UltraVNC
 
-### teamviewer
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## teamviewer
 - https://login.teamviewer.com/
 - https://community.teamviewer.com/t5/Knowledge-Base/All-about-passwords/ta-p/28442#toc-hId-585378451
 > 用easyaccess解决电脑连接的问题。Extras --> Options --> General 里先把当前电脑assign给teamviewer账户；然后 Extras --> Options --> Security 设置启用easyaccess
@@ -106,7 +156,10 @@ Comparison of remote desktop software https://en.wikipedia.org/wiki/Comparison_o
 办公汪必备软件及技巧：两款远程控制软件助你下班不再往单位跑 - 什么值得买的文章 - 知乎
 https://zhuanlan.zhihu.com/p/33211414
 
-### tools general
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# windows tools general
  
 https://www.appinn.com/windows-apps-that-amaze-us/
 - qdir https://www.appinn.com/q-dir/
@@ -115,10 +168,14 @@ https://www.appinn.com/windows-apps-that-amaze-us/
 代码界的美图秀秀 - 陈龙的文章 - 知乎
 https://zhuanlan.zhihu.com/p/35811981
 
-### PDF related
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## PDF related
 
 PDF文档打开后的显示名与文件名不一样 https://jingyan.baidu.com/article/925f8cb8b32fe5c0dde05601.html （IEEE好多论文都这鸟样，改了PDF文件名，一打开标题没变。。。）
 
-### other tools
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# other tools
 
 Qwant https://www.qwant.com/
