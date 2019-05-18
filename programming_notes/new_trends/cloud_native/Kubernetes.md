@@ -220,6 +220,8 @@ Kubernetes对象之CronJob https://www.jianshu.com/p/62b4f0a3134b
 
 Kubernetes的Cron Job https://blog.frognew.com/2017/08/kubernetes-cron-job.html
 
+How to change the schedule of a Kubernetes cronjob or how to start it manually? https://stackoverflow.com/questions/49293736/how-to-change-the-schedule-of-a-kubernetes-cronjob-or-how-to-start-it-manually
+
 ## kubernetes DaemonSet
 
 Kubernetes对象之DaemonSet https://www.jianshu.com/p/800f049004ec
