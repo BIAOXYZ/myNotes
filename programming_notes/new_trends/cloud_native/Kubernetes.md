@@ -205,8 +205,8 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 
 ## kubernetes Job
 
-from kubernetes official:
-- Jobs - Run to Completion https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
+***From kubernetes official:***
+- Jobs - Run to Completion https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/ 【[:star:][`*`]】
 - 使用工作队列进行精细的并行处理 https://kubernetes.io/zh/docs/tasks/job/fine-parallel-processing-work-queue/
 
 not from kubernetes official:
@@ -215,6 +215,9 @@ not from kubernetes official:
 - 使用工作队列进行精细的并行处理 https://k8smeetup.github.io/docs/tasks/job/fine-parallel-processing-work-queue/
 
 ## kubernetes CronJob
+
+***From kubernetes official:***
+- Running Automated Tasks with a CronJob https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/ 【[:star:][`*`]】
 
 Kubernetes对象之CronJob https://www.jianshu.com/p/62b4f0a3134b
 
