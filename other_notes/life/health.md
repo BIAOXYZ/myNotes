@@ -18,6 +18,7 @@
 
 抗癌之路，终点都在美国 https://www.huxiu.com/article/270012.html
 
+《科学》新证据：西兰花中一种天然物质具有强大抗癌能力 https://mp.weixin.qq.com/s/z38Z6Wf16cXc46B0gbERSA
 
 # 其他
 
