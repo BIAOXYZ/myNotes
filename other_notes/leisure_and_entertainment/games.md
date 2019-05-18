@@ -39,3 +39,7 @@ Kaizo Mario http://kaizomario.techyoshi.com/
 虽然价格一千多，但光看颜值就值得你下手，它还全能到是 MP4、游戏机、树莓派、开发板…… https://mp.weixin.qq.com/s/01vnCDKfR5QRQMZMyc3Ogg
 > "GameShell 搭载了基于 Linux 的「ClockWork OS」，整体的使用体验十分的流畅简单，内置了简体中文。ClockWork OS 目前也已经在 Github 上开源。"
 
+# 页游
+
+有什么好玩的网页游戏？ - 青天璇的回答 - 知乎 https://www.zhihu.com/question/21016962/answer/669211976
+> 这三款是我平常喜欢的，更多的在线页游可以看这里：io游戏集结 http://iogames.space/
