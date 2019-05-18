@@ -41,6 +41,10 @@ Git 内部原理之 Git 对象 http://www.importnew.com/29044.html
 
 可能是把Docker的概念讲的最清楚的一篇文章 https://juejin.im/post/5b260ec26fb9a00e8e4b031a
 
+## 掘金kubernetes
+
+详解 Kubernetes Job 和 CronJob 的实现原理 https://juejin.im/entry/5c7dd26af265da2dbc59add5
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 掘金编程语言相关
