@@ -83,6 +83,7 @@ https://wiki.postgresql.org/wiki/Pgsrcstructure
 Pgkernel
 https://wiki.postgresql.org/wiki/Pgkernel
 
+Bitmap Indexes https://wiki.postgresql.org/wiki/Bitmap_Indexes
 
 ### 关于postgresql.auto.conf文件
 
