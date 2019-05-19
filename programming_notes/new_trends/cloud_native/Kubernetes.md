@@ -207,6 +207,9 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 
 ***From kubernetes official:***
 - Jobs - Run to Completion https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/ 【[:star:][`*`]】
+  * > Another way to clean up finished Jobs (either Complete or Failed) automatically is to use a TTL mechanism provided by a **TTL controller** for finished resources, by specifying the .spec.ttlSecondsAfterFinished field of the Job.
+    >> TTL Controller for Finished Resources https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/ --> Alpha Disclaimer: this feature is currently alpha, and can be enabled with **feature gate** TTLAfterFinished.
+    >>> Feature Gates https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/    
 - 使用工作队列进行精细的并行处理 https://kubernetes.io/zh/docs/tasks/job/fine-parallel-processing-work-queue/
 
 not from kubernetes official:
