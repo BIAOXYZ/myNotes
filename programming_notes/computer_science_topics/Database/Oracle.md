@@ -5,6 +5,9 @@
 <<oracle 体系结构 >>
 http://blog.csdn.net/wanghai__/article/details/4683983
 
+# Oracle索引
+
+Oracle数据库中B-Tree以及BitMap index 的性能对比 https://blog.csdn.net/renfengjun/article/details/8453999
 
 # Oracle存储
 
