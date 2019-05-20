@@ -265,6 +265,8 @@ kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
 
 Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s-cronjob-source-code/
 
+详解 Kubernetes Pod 的实现原理 https://draveness.me/kubernetes-pod
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # k8s项目相关
