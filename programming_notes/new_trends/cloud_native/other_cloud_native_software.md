@@ -67,3 +67,10 @@ Anthos, Bringing the cloud to you. https://cloud.google.com/anthos/
 
 Anthos overview https://cloud.google.com/anthos/docs/concepts/anthos-overview
 
+# other container techniques
+
+Secure Containers https://researcher.watson.ibm.com/researcher/view_group.php?id=9510
+- Nabla containers: a new approach to container isolation https://nabla-containers.github.io/
+
+Unikernels as processes https://blog.acolyer.org/2018/11/14/unikernels-as-processes/
+
