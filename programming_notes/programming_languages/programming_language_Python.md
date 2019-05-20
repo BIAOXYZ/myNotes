@@ -149,9 +149,19 @@ python对象引用_一切都是对象 https://blog.csdn.net/qinyushuang/article/
 
 ### module
 
-if __name__ == '__main__' 如何正确理解? - 旷修的回答 - 知乎
-https://www.zhihu.com/question/49136398/answer/114438004
+- `if __name__ == '__main__'` 如何正确理解? - 旷修的回答 - 知乎 https://www.zhihu.com/question/49136398/answer/114438004
 > http://blog.konghy.cn/2017/04/24/python-entry-program/
+- `if __name__ == '__main__'` 如何正确理解? - 秋雨mac的回答 - 知乎 https://www.zhihu.com/question/49136398/answer/208021240
+> https://docs.python.org/3.6/library/__main__.html
+```
+A module can discover whether or not it is running in the main scope by checking its own __name__, which 
+allows a common idiom for conditionally executing code in a module when it is run as a script or with python -m 
+but not when it is imported:
+
+if __name__ == "__main__":
+    # execute only if run as a script
+    main()
+```
 
 #### __init__.py 
 
