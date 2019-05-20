@@ -20,6 +20,12 @@
 
 《科学》新证据：西兰花中一种天然物质具有强大抗癌能力 https://mp.weixin.qq.com/s/z38Z6Wf16cXc46B0gbERSA
 
+# 非大病
+
+## 牙
+
+植牙靠谱吗？是不是要花很多钱 https://www.v2ex.com/t/565823
+
 # 其他
 
 无码科技发布了一个希望你永远用不到的小工具 https://mp.weixin.qq.com/s/LKu4MFB_eNeDsnp6nwPtIw
