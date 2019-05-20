@@ -71,9 +71,11 @@ Kubernetes 学习笔记 https://github.com/huweihuang/kubernetes-notes
 Katacoda: Learn new technologies using real environments right in your browser https://www.katacoda.com/  【:star:业界良心！+3 :star::star::star:】
 - https://www.katacoda.com/biaoxyz
 
-Play with Kubernetes -- A simple, interactive and fun playground to learn Kubernetes https://labs.play-with-k8s.com/
+Play with Kubernetes -- A simple, interactive and fun playground to learn Kubernetes https://labs.play-with-k8s.com/ || https://training.play-with-kubernetes.com/
 > You know it, you use it, now it's time to improve it. PWD!. https://github.com/play-with-docker/play-with-docker
 >> Play with Docker -- A simple, interactive and fun playground to learn Docker http://play-with-docker.com
+
+TryK8S https://tryk8s.com/
 
 A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ || https://github.com/ramitsurana/awesome-kubernetes
 
