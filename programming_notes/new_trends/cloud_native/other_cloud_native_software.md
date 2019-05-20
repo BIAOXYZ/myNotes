@@ -69,8 +69,19 @@ Anthos overview https://cloud.google.com/anthos/docs/concepts/anthos-overview
 
 # other container techniques
 
+## Nabla
+
 Secure Containers https://researcher.watson.ibm.com/researcher/view_group.php?id=9510
 - Nabla containers: a new approach to container isolation https://nabla-containers.github.io/
 
+## Unikernel
+
+Unikernel https://en.wikipedia.org/wiki/Unikernel
+
 Unikernels as processes https://blog.acolyer.org/2018/11/14/unikernels-as-processes/
 
+Unikernel Systems Joins Docker https://blog.docker.com/2016/01/unikernel/
+
+Unikernel：从不入门到入门 http://gaocegege.com/Blog/%E5%AE%89%E5%88%A9/unikernel-book
+- > Unikernels: Beyond Containers to the Next Generation of Cloud 是 Russ Pavlicek 的一本动物书（虽然是 O’Reilly 的，但是封面不是动物，是石榴），这本书对 Unikernel 有着比较全面的介绍，而且电子书是免费的，值得一读。
+  >> Unikernels https://www.oreilly.com/library/view/unikernels/9781492042815/
