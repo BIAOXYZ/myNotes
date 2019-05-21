@@ -75,20 +75,109 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 10022 user@server"
 
 ***mynotes:***
 - 最基本的办法是在ssh的config文件（`~/.ssh/config`或者`/etc/ssh/ssh_config`）里把`StrictHostKeyChecking`从`ask`变为`no`。
-- 但是只改成`StrictHostKeyChecking no`可能在少数情况下还有些小问题，比如当主机的ip变化的时候，可能会出现警告，并且可能要手动改`know_hosts`的内容。所以最好在ssh的config文件里加上`UserKnownHostsFile /dev/null`。详情参加askubuntu那个帖子，很详细。比前两个加起来内容都多，但是中文的方便回忆。
+- 但是只改成`StrictHostKeyChecking no`可能在少数情况下还会有些小问题：比如当主机的ip变化的时候，可能会出现警告，并且可能要手动改`known_hosts`的内容（关于这点我没有自己去试，但是应该不假，因为CSDN的那个帖子里也提到了）。所以最好在ssh的config文件里再加上`UserKnownHostsFile /dev/null`。详情参见askubuntu那个帖子，很详细。比前两个加起来内容都多。但是那两个中文的链接方便快速回忆。
 - 也可以使用`ssh -o StrictHostKeyChecking=no yourHardenedHost.com`，从而不改配置文件，但是没试过。
 
 # pssh使用
 
 ***mynotes:***
-- 在尝试pssh时碰到了一个问题。使用一个基本命令在三台机器上同时打印时间（`pssh -h hostpssh -P date`），发现主控机执行失败，两台被控机器执行成功。整个过程记录在了V2EX的帖子了，这里先放一下链接。
+- 在尝试pssh时碰到了一个问题。使用一个基本命令在三台机器上同时打印时间（`pssh -h hostpssh -P date`），发现主控机执行失败，两台被控机器执行成功。整个过程记录在了V2EX的帖子了，这里先放一下链接：
   * 请教一个 pssh 的问题：pssh 执行一个命令的时候，能否包括控制机本身 https://www.v2ex.com/t/563378
+- 造成这个问题的根本原因是：**我的pssh用的host列表文件`hostpssh`里是用"`用户名@ip地址`"的形式记录需要执行命令的机器的。但是我建互信的时候是用hostname在这些机器之间建立互信的（这些可以参见问题描述部分）**。如果主机名和ip是一一对应的就没问题了，但是我们单位的机器有两套IP，9开头的对外，10开头的对内。**主控机用hostname向其自身建立互信的时候默认用了对内的10开头的IP；向被控机器用hostname建互信时用的是对外的9开头的IP**。所以，归根结底，**还是因为互信没建好才会导致这个错误的出现**。
   
- 
+
+## V2EX那个帖子过程整理
+
+### 问题描述
+
+> 我有三台机器，分别为`druidcluster1`, `druidcluster2`, `druidcluster4`，对应 ip 分别为`9.116.2.59`, `9.116.2.70`, `9.116.2.254`。其中第一台装了 pssh，拿来当控制机（不知道这个术语准确不- -）。ssh 互信全都见好了，包括机器和自身的互信：
 ```
-//在控制机上执行下面这俩命令会发现：
-//控制机“解析”自己的时候，是优先用10开头的IP来“解析”本机（druidcluster1）的hostname的。
-//但是在“解析”被控制机的时候，是优先（还是只能？）用9开头的IP。比如druidcluster2被“解析”成9.116.2.70
+[root@druidcluster1 generalsoftware]# ssh druidcluster1 date
+Sun May 12 02:02:49 CDT 2019
+[root@druidcluster1 generalsoftware]# ssh druidcluster2 date
+Sun May 12 02:02:55 CDT 2019
+[root@druidcluster1 generalsoftware]# ssh druidcluster4 date
+Sun May 12 02:03:01 CDT 2019
+
+[root@druidcluster2 .ssh]# ssh druidcluster2 date
+Sun May 12 02:02:19 CDT 2019
+[root@druidcluster2 .ssh]# ssh druidcluster1 date
+Sun May 12 02:02:25 CDT 2019
+[root@druidcluster2 .ssh]# ssh druidcluster4 date
+Sun May 12 02:02:31 CDT 2019
+
+[root@druidcluster4 .ssh]# ssh druidcluster4 date
+Sun May 12 02:02:01 CDT 2019
+[root@druidcluster4 .ssh]# ssh druidcluster1 date
+Sun May 12 02:02:08 CDT 2019
+[root@druidcluster4 .ssh]# ssh druidcluster2 date
+Sun May 12 02:02:14 CDT 2019
+```
+
+> 新建一个记录需要并行执行命令的 host 文件的列表`hostpssh`，内容如下：
+```
+root@9.116.2.59
+root@9.116.2.70
+root@9.116.2.254
+```
+
+> 在控制机（也就是`druidcluster1`）上执行`pssh -h hostpssh -P date`，期待的结果是三个全成功返回日期的，实际是控制机失败，其他成功。
+```
+[root@druidcluster1 generalsoftware]# pssh -h hostpssh -P date
+[1] 01:33:34 [FAILURE] root@9.116.2.59 Exited with error code 255
+9.116.2.254: Sun May 12 01:33:37 CDT 2019
+[2] 01:33:37 [SUCCESS] root@9.116.2.254
+9.116.2.70: Sun May 12 01:33:37 CDT 2019
+[3] 01:33:37 [SUCCESS] root@9.116.2.70
+```
+
+## 解决过程
+
+> knktc: "pssh 本身就是在用 python 调用 ssh 命令。你试试直接 ssh root@9.116.2.59 ,不用 hostname，看看有什么效果"
+>> 我："@knktc 尝试直接 ssh root@9.116.2.59 ，发现竟然提示认证问题（类似首次连接时候的认证）。同意之后，再次执行，发现解决了~所以看是还是互信的问题？但是我之前互信确实建好了啊。感谢~总之是解决了。过程如下："
+```
+[root@druidcluster1 ~]# ssh root@9.116.2.59 date
+The authenticity of host '9.116.2.59 (9.116.2.59)' can't be established.
+ECDSA key fingerprint is SHA256:V9315377iDHed0ETyHal4dBTUUJ4WopShNjXIW/5giw.
+ECDSA key fingerprint is MD5:aa:cc:8d:c5:a4:c1:3c:9b:78:f6:75:e2:48:b5:81:e7.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '9.116.2.59' (ECDSA) to the list of known hosts.
+Sun May 12 07:13:27 CDT 2019
+[root@druidcluster1 ~]#
+[root@druidcluster1 ~]# ssh root@9.116.2.59 date
+Sun May 12 07:13:33 CDT 2019
+[root@druidcluster1 ~]#
+[root@druidcluster1 ~]# pssh -h ~/generalsoftware/hostpssh -P date
+9.116.2.59: Sun May 12 07:13:45 CDT 2019
+[1] 07:13:45 [SUCCESS] root@9.116.2.59
+9.116.2.254: Sun May 12 07:13:47 CDT 2019
+[2] 07:13:47 [SUCCESS] root@9.116.2.254
+9.116.2.70: Sun May 12 07:13:47 CDT 2019
+[3] 07:13:47 [SUCCESS] root@9.116.2.70
+```
+
+> 又仔细看了看，算是彻底弄明白了原因。这边的机器有两套IP，一套对内一套对外。开始使用hostname建立互信的时候，对于控制机本身，在`known_hosts`文件里添加的是对内的那个IP。
+
+> 在下图中可以看到，最开始使用`druidcluster1`这个hostname去建互信的时候，系统（对本机）默认选用了对内的那个IP地址`10.129.203.59`（对`druidcluster2`和`druidcluster4`还是用9开头的外部IP地址）。最后那个`9.116.2.59`是我自己（用`ssh root@IP`的形式）**又连了控制机一次以后，添加上了**。至此，pssh命令就可以对本机执行了。
+
+```
+[root@druidcluster1 ~]# cat ~/.ssh/known_hosts
+druidcluster1,10.129.203.59 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzd密钥后面部分省略
+druidcluster2,9.116.2.70 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGRzuV9cxRVOkDESx3fhMj8pXHa4密钥后面部分省略
+druidcluster3 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCN7iIherrtnj5b+Ru3zMwicJtjjQc+密钥后面部分省略
+druidcluster4,9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBBa2oNjufGaFk6qcmlkcAI/7pq7Kf密钥后面部分省略
+9.116.2.59 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCN7iIherrtnj5b+Ru3zMwicJtjjQc+密钥后面部分省略
+```
+
+## 最后补充
+
+> 最后复盘（这部分内容不在V2EX帖子里）：就是主控机和被控机对hostname解析的IP不一样————或者更准确的说法应该是，如果机器和其自身（用hostname方式）建互信，会用10开头的内部IP；如果和其他机器（用hostname方式）建互信，会用9开头的外部IP。
+```
+//在控制机（druidcluster1）上执行下面这两条命令会发现：
+//1.控制机“解析”自己的时候，是优先用10开头的IP来“解析”本机（druidcluster1）的hostname的。
+//  ————所以其实可以在最开始的时候在这里（`/etc/hosts`）把10开头的IP直接改成9开头的IP（10.129.203.59 --> 9.116.2.59），也就解决了。
+//  ————同理，其实也可以只把前面`hostpssh`文件里的第一行改成10开头的IP（root@9.116.2.59 --> root@10.129.203.59），应该也是没问题的。
+//2.但是在“解析”被控制机的时候，是优先（还是只能？）用9开头的IP。比如druidcluster2被“解析”成9.116.2.70
 
 [root@druidcluster1 ~]# cat /etc/hosts
 127.0.0.1 localhost.localdomain localhost
