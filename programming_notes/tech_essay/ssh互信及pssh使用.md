@@ -66,8 +66,32 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 10022 user@server"
 ```
 > mynotes: `-p`指定不同的端口。
 
+
+# ssh首次登陆要添加know_hosts时直接通过，不弹出提示
+
+- 如何让ssh的时候不提示添加host key | 如何加快ssh登录的速度 https://www.cnblogs.com/super119/archive/2010/12/18/1909817.html
+- ssh登陆之忽略known_hosts文件 https://blog.csdn.net/yasaken/article/details/7348441
+- How to disable strict host key checking in ssh? https://askubuntu.com/questions/87449/how-to-disable-strict-host-key-checking-in-ssh
+
+***mynotes:***
+- 最基本的办法是在ssh的config文件（`~/.ssh/config`或者`/etc/ssh/ssh_config`）里把`StrictHostKeyChecking`从`ask`变为`no`。
+- 但是只改成`StrictHostKeyChecking no`可能在少数情况下还有些小问题，比如当主机的ip变化的时候，可能会出现警告，并且可能要手动改`know_hosts`的内容。所以最好在ssh的config文件里加上`UserKnownHostsFile /dev/null`。详情参加askubuntu那个帖子，很详细。比前两个加起来内容都多，但是中文的方便回忆。
+- 也可以使用`ssh -o StrictHostKeyChecking=no yourHardenedHost.com`，从而不改配置文件，但是没试过。
+
 # pssh使用
 
 ***mynotes:***
 - 在尝试pssh时碰到了一个问题。使用一个基本命令在三台机器上同时打印时间（`pssh -h hostpssh -P date`），发现主控机执行失败，两台被控机器执行成功。整个过程记录在了V2EX的帖子了，这里先放一下链接。
   * 请教一个 pssh 的问题：pssh 执行一个命令的时候，能否包括控制机本身 https://www.v2ex.com/t/563378
+  
+ 
+```
+//在控制机上会发现，原来10开头的ip是优先被绑到hostname上的。但是连别的机器的时候是优先9开头的IP。
+
+[root@druidcluster1 ~]# cat /etc/hosts
+127.0.0.1 localhost.localdomain localhost
+10.129.203.59 druidcluster1.sl.cloud9.ibm.com druidcluster1
+[root@druidcluster1 ~]#
+[root@druidcluster1 ~]# getent hosts druidcluster2
+9.116.2.70      druidcluster2.sl.cloud9.ibm.com
+```
