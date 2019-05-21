@@ -170,8 +170,9 @@ export PATH=${PATH}:${MAVEN_HOME}/bin
 
 # Go语言环境
 ```
-wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+//wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
+//sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz && sudo tar -C /usr/local -xzf go1.12.5.linux-amd64.tar.gz
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
