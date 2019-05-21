@@ -86,7 +86,9 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 10022 user@server"
   
  
 ```
-//在控制机上会发现，原来10开头的ip是优先被绑到hostname上的。但是连别的机器的时候是优先9开头的IP。
+//在控制机上执行下面这俩命令会发现：
+//控制机“解析”自己的时候，是优先用10开头的IP来“解析”本机（druidcluster1）的hostname的。
+//但是在“解析”被控制机的时候，是优先（还是只能？）用9开头的IP。比如druidcluster2被“解析”成9.116.2.70
 
 [root@druidcluster1 ~]# cat /etc/hosts
 127.0.0.1 localhost.localdomain localhost
