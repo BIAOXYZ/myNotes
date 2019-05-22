@@ -55,6 +55,16 @@ Linux学习笔记（二）：什么是挂载？mount的用处在哪？ https://b
 
 挂载（mount）深入理解 https://www.cnblogs.com/chen-farsight/p/6119404.html
 
+## kernel module
+
+Loadable kernel module https://en.wikipedia.org/wiki/Loadable_kernel_module
+
+Kernel module (简体中文) https://wiki.archlinux.org/index.php/Kernel_module_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+Writing a Simple Linux Kernel Module https://blog.sourcerer.io/writing-a-simple-linux-kernel-module-d9dc3762c234
+
+The Linux Kernel Module Programming Guide https://linux.die.net/lkmpg/index.html
+
 # Windows系
 
 微软团队成员谈Windows Kernel的结构 - Windows - cnBeta.COM https://www.cnbeta.com/articles/tech/781961.htm
