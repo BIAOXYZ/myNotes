@@ -248,6 +248,15 @@ Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
 
 Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
 
+## kubernetes Container Lifecycle Hooks
+
+- Container Lifecycle Hooks https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/
+- Attach Handlers to Container Lifecycle Events https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/
+
+容器生命周期的钩子 https://k8smeetup.github.io/docs/concepts/containers/container-lifecycle-hooks/
+
+Kubernetes容器上下文环境 https://www.cnblogs.com/zhenyuyaodidiao/p/6558444.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes源码
