@@ -70,9 +70,15 @@ SaltStack 与 Ansible 选择？ - 知乎 https://www.zhihu.com/question/22707761
 
 Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【:star:】
 
+Ansible中文权威指南 https://ansible-tran.readthedocs.io/en/latest/index.html
+
 # Ansible快速开始
 
 Ansible入门 https://getansible.com/
 - The ansible examples in this repo are for the book ansible入门(ansible-first-book) https://github.com/ansible-book/playbook-examples-chapter3-ansible-advanced
 
 Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansible/
+
+# Ansible其他
+
+Ansible 进阶技巧 https://www.ibm.com/developerworks/cn/linux/1608_lih_ansible/index.html
