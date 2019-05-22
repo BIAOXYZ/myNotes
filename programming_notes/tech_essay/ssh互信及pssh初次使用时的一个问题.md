@@ -1,5 +1,5 @@
 
-# 传统的手动复制公钥方法 --> 这个批处理（集中复制到一个authorized_keys文件，再分发）的方法已经是挺有条理了，但是还是不如用ssh-copy-id
+# 1. 传统的手动复制公钥方法 --> 这个批处理（集中复制到一个authorized_keys文件，再分发）的方法已经是挺有条理了，但是还是不如用ssh-copy-id
 
 linux双机互信设置 https://blog.csdn.net/seeyouc/article/details/53102280
 ```
@@ -34,7 +34,7 @@ ssh node3 date
 - 此外，前两步创建`.ssh`目录和修改其权限为`700`（注意，那个`authorized_keys`文件的权限要求是`600`，并且不是`600`会报错。这个目录权限`700`不知道是不是必须的，先不管了。）的操作**其实可以在机器上自己`ssh 本机名/本机ip/localhost`登陆一下自己就好，让系统自动创建**，更不容易出错吧。
 
 
-# 利用ssh-copy-id --> 避免手动复制粘贴出错
+# 2. 利用ssh-copy-id --> 避免手动复制粘贴出错
 
 - ssh-keygen AND ssh-copy-id用法 https://blog.csdn.net/wos1002/article/details/56483277
 ```
@@ -67,7 +67,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 10022 user@server"
 > mynotes: `-p`指定不同的端口。
 
 
-# ssh首次登陆要添加know_hosts时直接通过，不弹出提示
+# 3. ssh首次登陆要添加know_hosts时直接通过，不弹出提示
 
 - 如何让ssh的时候不提示添加host key | 如何加快ssh登录的速度 https://www.cnblogs.com/super119/archive/2010/12/18/1909817.html
 - ssh登陆之忽略known_hosts文件 https://blog.csdn.net/yasaken/article/details/7348441
@@ -78,17 +78,14 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 10022 user@server"
 - 但是只改成`StrictHostKeyChecking no`可能在少数情况下还会有些小问题：比如当主机的ip变化的时候，可能会出现警告，并且可能要手动改`known_hosts`的内容（关于这点我没有自己去试，但是应该不假，因为CSDN的那个帖子里也提到了）。所以最好在ssh的config文件里再加上`UserKnownHostsFile /dev/null`。详情参见askubuntu那个帖子，很详细。比前两个加起来内容都多。但是那两个中文的链接方便快速回忆。
 - 也可以使用`ssh -o StrictHostKeyChecking=no yourHardenedHost.com`，从而不改配置文件，但是没试过。
 
-# pssh使用
+# 4. pssh使用
 
 ***mynotes:***
 - 在尝试pssh时碰到了一个问题。使用一个基本命令在三台机器上同时打印时间（`pssh -h hostpssh -P date`），发现主控机执行失败，两台被控机器执行成功。整个过程记录在了V2EX的帖子了，这里先放一下链接：
   * 请教一个 pssh 的问题：pssh 执行一个命令的时候，能否包括控制机本身 https://www.v2ex.com/t/563378
 - 造成这个问题的根本原因是：**我的pssh用的host列表文件`hostpssh`里是用"`用户名@ip地址`"的形式记录需要执行命令的机器的。但是我建互信的时候是用hostname在这些机器之间建立互信的（这些可以参见问题描述部分）**。如果主机名和ip是一一对应的就没问题了，但是我们单位的机器有两套IP，9开头的对外，10开头的对内。**主控机用hostname向其自身建立互信的时候默认用了对内的10开头的IP；向被控机器用hostname建互信时用的是对外的9开头的IP**。所以，归根结底，**还是因为互信没建好才会导致这个错误的出现**。
   
-
-## V2EX那个帖子过程整理
-
-### 问题描述
+## 4.1 （V2EX那个帖子）问题描述
 
 > 我有三台机器，分别为`druidcluster1`, `druidcluster2`, `druidcluster4`，对应 ip 分别为`9.116.2.59`, `9.116.2.70`, `9.116.2.254`。其中第一台装了 pssh，拿来当控制机（不知道这个术语准确不- -）。ssh 互信全都见好了，包括机器和自身的互信：
 ```
@@ -131,7 +128,7 @@ root@9.116.2.254
 [3] 01:33:37 [SUCCESS] root@9.116.2.70
 ```
 
-## 解决过程
+## 4.2 解决过程
 
 > knktc: "pssh 本身就是在用 python 调用 ssh 命令。你试试直接 ssh root@9.116.2.59 ,不用 hostname，看看有什么效果"
 >> 我："@knktc 尝试直接 ssh root@9.116.2.59 ，发现竟然提示认证问题（类似首次连接时候的认证）。同意之后，再次执行，发现解决了～所以看是还是互信的问题？但是我之前互信确实建好了啊。感谢～总之是解决了。过程如下："
@@ -169,7 +166,7 @@ druidcluster4,9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAA
 9.116.2.59 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCN7iIherrtnj5b+Ru3zMwicJtjjQc+密钥后面部分省略
 ```
 
-## 最后补充
+## 4.3 最后补充
 
 > 最后复盘（这部分内容不在V2EX帖子里）：就是主控机和被控机对hostname解析的IP不一样————或者更准确的说法应该是，如果机器和其自身（用hostname方式）建互信，会用10开头的内部IP；如果和其他机器（用hostname方式）建互信，会用9开头的外部IP。
 ```
@@ -186,4 +183,128 @@ druidcluster4,9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAA
 [root@druidcluster1 ~]#
 [root@druidcluster1 ~]# getent hosts druidcluster2
 9.116.2.70      druidcluster2.sl.cloud9.ibm.com
+```
+
+# 5. ssh-keyscan命令实战过程
+
+## 5.1 如何发现这个命令
+
+安装Ansile https://getansible.com/begin/an_zhuang_ansile
+```
+$ # 生成ssh key
+$ ssh-keygen
+$ # 拷贝ssh key到远程主机，ssh的时候就不需要输入密码了
+$ ssh-copy-id remoteuser@remoteserver
+$ # ssh的时候不会提示是否保存key
+$ ssh-keyscan remote_servers >> ~/.ssh/known_hosts
+```
+>> notes: 从这里发现了`ssh-keyscan`这个命令，还没用过，回来研究下。
+
+## 5.2 主要参考下面这篇
+
+利用 ssh-keyscan 获取集群机器 SSH 公钥指纹 https://liam.page/2018/01/24/ssh-keyscan/
+```
+首先应准备好需要获取公钥指纹的 IP 或 HOSTNAME 列表，保存在文件中。例如演示用的文件是这样的。
+hostlist.txt
+  127.0.0.1
+  127.0.0.2
+
+
+而后执行命令
+$ ssh-keyscan -f hostlist.txt
+# 127.0.0.1 SSH-2.0-OpenSSH_6.6.1
+127.0.0.1 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCWBZ3XrIajPmnd6R+g/wcUuOPOiRBMOYjAl4Dv8SfcZtgHqKTK6Zb1EeG3u/uzRYxqXMctG/2A4iXRDG9mvg9H9bimCWbA3xtR79NImPYg4m7BNuH9C+OXRYYJwoOGpjVMs0rGLXkq3/WVkXvQreBuhVD8NI2pEPnQsT1J5abdVbCHlwFYG6wVCJQqFY6jdntJJlxQv5EJu6w4/+Fd4LvdjysH+ngqArac6HMJUxqSxLQjzMdCRWEQKp3ySwmnRp9rHYVaJnnsXeYPfnMN1iMjdIQJPzc89Mepg4ip1q2bCMbMcx2XFO3I7YjYRdcOameFNafMGY0q5RHzhvgnNnal
+# 127.0.0.1 SSH-2.0-OpenSSH_6.6.1
+127.0.0.1 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCPWoEQ7iCCYDrpyb5KeMmCaQ8aOnSfehqmrplZRkbqqnkS9++PdSX/eSLJ0tkFd5902/C+HTCqbDgso4mCKpMo=
+# 127.0.0.2 SSH-2.0-OpenSSH_6.6.1
+127.0.0.2 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCWBZ3XrIajPmnd6R+g/wcUuOPOiRBMOYjAl4Dv8SfcZtgHqKTK6Zb1EeG3u/uzRYxqXMctG/2A4iXRDG9mvg9H9bimCWbA3xtR79NImPYg4m7BNuH9C+OXRYYJwoOGpjVMs0rGLXkq3/WVkXvQreBuhVD8NI2pEPnQsT1J5abdVbCHlwFYG6wVCJQqFY6jdntJJlxQv5EJu6w4/+Fd4LvdjysH+ngqArac6HMJUxqSxLQjzMdCRWEQKp3ySwmnRp9rHYVaJnnsXeYPfnMN1iMjdIQJPzc89Mepg4ip1q2bCMbMcx2XFO3I7YjYRdcOameFNafMGY0q5RHzhvgnNnal
+# 127.0.0.2 SSH-2.0-OpenSSH_6.6.1
+127.0.0.2 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCPWoEQ7iCCYDrpyb5KeMmCaQ8aOnSfehqmrplZRkbqqnkS9++PdSX/eSLJ0tkFd5902/C+HTCqbDgso4mCKpMo=
+
+
+如此，将标准错误的输出重定向到 /dev/null 即可获得机器列表的公钥指纹了。
+$ ssh-keyscan -f hostlist.txt 1>>~/.ssh/known_hosts 2>/dev/null
+而后将 ~/.ssh/known_hosts 用 scp 拷贝到 hostlist.txt 中的所有机器上即可。
+```
+
+## 5.3 个人实战过程
+
+```
+//关于待解析主机列表文件的两个关键点：
+//1.hostpssh2文件里每一行的内容不能带用户名。最开始用的是`root@9.116.2.59`之类的写法，直接报错。
+[root@druidcluster1 generalsoftware]# cat hostpssh2
+9.116.2.59
+9.116.2.70
+9.116.2.254
+[root@druidcluster1 generalsoftware]# ssh-keyscan -f hostpssh2
+# 9.116.2.70:22 SSH-2.0-OpenSSH_7.4
+9.116.2.70 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbu9lu5zheztbL2c+8dNJIJOi2Q9JpMqGl4zHB6Cvc9wk/Tv1vu4SEk+wuCn/feOHLm9xQw7mg8O1Ysk7xDM83eUuZrZTwbNkkCBvV6KN+P/gdFD5sKt19MafOilQ1OA7nXu23IsiTDLAffdaVoO5z31I0oTLGw4ytI6XMmQ5ZyWq4CsaUZ7v5ijxHr1KcyknGWNhMUlXwNkB8mCOMYSPVS6L3pBR4lRX7As8ac4FqGdRybDRvO+NwxhUGXNRmunD+9CAFl9nnTLPO3bUDsA6RSH1OOjZDhsUGbTu07OqAPDUDkEAOF7wo4mwsKhBour3BKn2PlmuEdxqjaBC3he0/
+# 9.116.2.70:22 SSH-2.0-OpenSSH_7.4
+9.116.2.70 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGRzuV9cxRVOkDESx3fhMj8pXHa4yDRIheVrso6rqDMDkyEvabYhyYHqSfuHs7y5IaWxbomTmuH4KtnhI+MZSDo=
+# 9.116.2.70:22 SSH-2.0-OpenSSH_7.4
+9.116.2.70 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOLr0ywIe7YEpcT9+xs3ud4EnPGsQUu/RRTw3/zVaYVx
+# 9.116.2.59:22 SSH-2.0-OpenSSH_7.4
+9.116.2.59 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhvCewtZ1xhWUB347oZ34QCpbLaco2NhSvGHfwVprAWVJEK02WJCwLgxiypxhHSb2Z/FurU7nE5kyt4GEsQQFd6zsv83bPOyJO62poFsrCPLAn1jJTekxih9663YRfMDD4OFtNZ3pCP87gdHzdS3IOoJ4j1xHNnt0AhYaeUMPDCHJEMfPfwTjMEJiSiNKICdS57mPsH9ZalWAZFd968N8tNW0WjBpUWKH3sl7m3gvi7iNFdK+44xfr1ER6x1fJGxnH+AJpEGe10G23k3ZRzxhjgPtIsJhxEHd8FwGGQY+ZMb2AbDxsln8u3I0UZMpw7RqJyzP9g5jWa2IUlhCnulN/
+# 9.116.2.59:22 SSH-2.0-OpenSSH_7.4
+9.116.2.59 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCN7iIherrtnj5b+Ru3zMwicJtjjQc+N+aYHtzyq6qcQmvfowh0mLuAt78/f7QS6OvvFo7tBliHleFPqQYDAkSY=
+# 9.116.2.59:22 SSH-2.0-OpenSSH_7.4
+9.116.2.59 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEcbVvh0ZwNHVGBdxjc98JSnnkWdjnZmfpKwHPtYS6uK
+# 9.116.2.254:22 SSH-2.0-OpenSSH_7.4
+9.116.2.254 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZWxkYVHytUu0rGIDlrp9kADgI0z/xIn7/u/zxCt3SFO0T7Neg3vtOG70YdDowa1pRNUktH7zetFKT6r/rFFSVCe2JyvvepJx74gOFGoOiQ/0wgAznVMLMsXJ4BaOWciXGOMrrEnGC2NLC/KXb6cB76Rn5ki3iVqqsIi46trvYZOm5XYIjx5KrrW67Mun4nGKyE3/W4gyUaHHZuvi15CowVMi+sNue7hjVFIU3f6ah2A8JseTy7+EiWiSN4BAiSE3PCkSYDT8hEJjEyG7pB1nkAdTd9+qJfS/5wCDKz+qACzWa/g8o69WByFLIJHMZ2ffeTGtqFaQ5IT4BsddGBXq9
+# 9.116.2.254:22 SSH-2.0-OpenSSH_7.4
+9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBBa2oNjufGaFk6qcmlkcAI/7pq7KfA0gJ3BjMRbxQ30MXLGiuAuHj7tyFe1J7bKAt9qvPgI0V0uIFVsuVUSD6o=
+# 9.116.2.254:22 SSH-2.0-OpenSSH_7.4
+9.116.2.254 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFNSKuD1/jzIAsbTAgIYckle6OSbo/xS8bBIfaizaSgO
+
+//2.里面的IP也可以直接用主机名，解析出来的结果全是主机名开头的。
+[root@druidcluster1 generalsoftware]# cat hostpssh3
+druidcluster1
+druidcluster2
+druidcluster4
+[root@druidcluster1 generalsoftware]# ssh-keyscan -f hostpssh3
+# druidcluster1:22 SSH-2.0-OpenSSH_7.4
+druidcluster1 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhvCewtZ1xhWUB347oZ34QCpbLaco2NhSvGHfwVprAWVJEK02WJCwLgxiypxhHSb2Z/FurU7nE5kyt4GEsQQFd6zsv83bPOyJO62poFsrCPLAn1jJTekxih9663YRfMDD4OFtNZ3pCP87gdHzdS3IOoJ4j1xHNnt0AhYaeUMPDCHJEMfPfwTjMEJiSiNKICdS57mPsH9ZalWAZFd968N8tNW0WjBpUWKH3sl7m3gvi7iNFdK+44xfr1ER6x1fJGxnH+AJpEGe10G23k3ZRzxhjgPtIsJhxEHd8FwGGQY+ZMb2AbDxsln8u3I0UZMpw7RqJyzP9g5jWa2IUlhCnulN/
+# druidcluster1:22 SSH-2.0-OpenSSH_7.4
+druidcluster1 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCN7iIherrtnj5b+Ru3zMwicJtjjQc+N+aYHtzyq6qcQmvfowh0mLuAt78/f7QS6OvvFo7tBliHleFPqQYDAkSY=
+# druidcluster1:22 SSH-2.0-OpenSSH_7.4
+druidcluster1 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEcbVvh0ZwNHVGBdxjc98JSnnkWdjnZmfpKwHPtYS6uK
+# druidcluster2:22 SSH-2.0-OpenSSH_7.4
+druidcluster2 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbu9lu5zheztbL2c+8dNJIJOi2Q9JpMqGl4zHB6Cvc9wk/Tv1vu4SEk+wuCn/feOHLm9xQw7mg8O1Ysk7xDM83eUuZrZTwbNkkCBvV6KN+P/gdFD5sKt19MafOilQ1OA7nXu23IsiTDLAffdaVoO5z31I0oTLGw4ytI6XMmQ5ZyWq4CsaUZ7v5ijxHr1KcyknGWNhMUlXwNkB8mCOMYSPVS6L3pBR4lRX7As8ac4FqGdRybDRvO+NwxhUGXNRmunD+9CAFl9nnTLPO3bUDsA6RSH1OOjZDhsUGbTu07OqAPDUDkEAOF7wo4mwsKhBour3BKn2PlmuEdxqjaBC3he0/
+# druidcluster2:22 SSH-2.0-OpenSSH_7.4
+druidcluster2 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGRzuV9cxRVOkDESx3fhMj8pXHa4yDRIheVrso6rqDMDkyEvabYhyYHqSfuHs7y5IaWxbomTmuH4KtnhI+MZSDo=
+# druidcluster2:22 SSH-2.0-OpenSSH_7.4
+druidcluster2 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOLr0ywIe7YEpcT9+xs3ud4EnPGsQUu/RRTw3/zVaYVx
+# druidcluster4:22 SSH-2.0-OpenSSH_7.4
+druidcluster4 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZWxkYVHytUu0rGIDlrp9kADgI0z/xIn7/u/zxCt3SFO0T7Neg3vtOG70YdDowa1pRNUktH7zetFKT6r/rFFSVCe2JyvvepJx74gOFGoOiQ/0wgAznVMLMsXJ4BaOWciXGOMrrEnGC2NLC/KXb6cB76Rn5ki3iVqqsIi46trvYZOm5XYIjx5KrrW67Mun4nGKyE3/W4gyUaHHZuvi15CowVMi+sNue7hjVFIU3f6ah2A8JseTy7+EiWiSN4BAiSE3PCkSYDT8hEJjEyG7pB1nkAdTd9+qJfS/5wCDKz+qACzWa/g8o69WByFLIJHMZ2ffeTGtqFaQ5IT4BsddGBXq9
+# druidcluster4:22 SSH-2.0-OpenSSH_7.4
+druidcluster4 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBBa2oNjufGaFk6qcmlkcAI/7pq7KfA0gJ3BjMRbxQ30MXLGiuAuHj7tyFe1J7bKAt9qvPgI0V0uIFVsuVUSD6o=
+# druidcluster4:22 SSH-2.0-OpenSSH_7.4
+druidcluster4 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFNSKuD1/jzIAsbTAgIYckle6OSbo/xS8bBIfaizaSgO
+
+
+//此时看结果会发现有个问题，输出的结果都是`#开头，然后换一行才是内容的形式`，比较不方便。我们仍然使用上面帖子里的命令，
+//  但只是为了测试下所谓的“标准错误的输出重定向到 /dev/null”到底起了什么作用。
+[root@druidcluster1 generalsoftware]# ssh-keyscan -f hostpssh2 1>>~/result 2>~/err
+[root@druidcluster1 generalsoftware]# cat ~/result
+9.116.2.254 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFNSKuD1/jzIAsbTAgIYckle6OSbo/xS8bBIfaizaSgO
+9.116.2.59 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhvCewtZ1xhWUB347oZ34QCpbLaco2NhSvGHfwVprAWVJEK02WJCwLgxiypxhHSb2Z/FurU7nE5kyt4GEsQQFd6zsv83bPOyJO62poFsrCPLAn1jJTekxih9663YRfMDD4OFtNZ3pCP87gdHzdS3IOoJ4j1xHNnt0AhYaeUMPDCHJEMfPfwTjMEJiSiNKICdS57mPsH9ZalWAZFd968N8tNW0WjBpUWKH3sl7m3gvi7iNFdK+44xfr1ER6x1fJGxnH+AJpEGe10G23k3ZRzxhjgPtIsJhxEHd8FwGGQY+ZMb2AbDxsln8u3I0UZMpw7RqJyzP9g5jWa2IUlhCnulN/
+9.116.2.59 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCN7iIherrtnj5b+Ru3zMwicJtjjQc+N+aYHtzyq6qcQmvfowh0mLuAt78/f7QS6OvvFo7tBliHleFPqQYDAkSY=
+9.116.2.59 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEcbVvh0ZwNHVGBdxjc98JSnnkWdjnZmfpKwHPtYS6uK
+9.116.2.70 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbu9lu5zheztbL2c+8dNJIJOi2Q9JpMqGl4zHB6Cvc9wk/Tv1vu4SEk+wuCn/feOHLm9xQw7mg8O1Ysk7xDM83eUuZrZTwbNkkCBvV6KN+P/gdFD5sKt19MafOilQ1OA7nXu23IsiTDLAffdaVoO5z31I0oTLGw4ytI6XMmQ5ZyWq4CsaUZ7v5ijxHr1KcyknGWNhMUlXwNkB8mCOMYSPVS6L3pBR4lRX7As8ac4FqGdRybDRvO+NwxhUGXNRmunD+9CAFl9nnTLPO3bUDsA6RSH1OOjZDhsUGbTu07OqAPDUDkEAOF7wo4mwsKhBour3BKn2PlmuEdxqjaBC3he0/
+9.116.2.70 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGRzuV9cxRVOkDESx3fhMj8pXHa4yDRIheVrso6rqDMDkyEvabYhyYHqSfuHs7y5IaWxbomTmuH4KtnhI+MZSDo=
+9.116.2.70 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOLr0ywIe7YEpcT9+xs3ud4EnPGsQUu/RRTw3/zVaYVx
+9.116.2.254 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZWxkYVHytUu0rGIDlrp9kADgI0z/xIn7/u/zxCt3SFO0T7Neg3vtOG70YdDowa1pRNUktH7zetFKT6r/rFFSVCe2JyvvepJx74gOFGoOiQ/0wgAznVMLMsXJ4BaOWciXGOMrrEnGC2NLC/KXb6cB76Rn5ki3iVqqsIi46trvYZOm5XYIjx5KrrW67Mun4nGKyE3/W4gyUaHHZuvi15CowVMi+sNue7hjVFIU3f6ah2A8JseTy7+EiWiSN4BAiSE3PCkSYDT8hEJjEyG7pB1nkAdTd9+qJfS/5wCDKz+qACzWa/g8o69WByFLIJHMZ2ffeTGtqFaQ5IT4BsddGBXq9
+9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBBa2oNjufGaFk6qcmlkcAI/7pq7KfA0gJ3BjMRbxQ30MXLGiuAuHj7tyFe1J7bKAt9qvPgI0V0uIFVsuVUSD6o=
+[root@druidcluster1 generalsoftware]# cat ~/err
+# 9.116.2.254:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.59:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.59:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.59:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.70:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.70:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.70:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.254:22 SSH-2.0-OpenSSH_7.4
+# 9.116.2.254:22 SSH-2.0-OpenSSH_7.4
+
+//从上面结果不难看出，其实就是把输出结果做了分离，所以~/result文件直接就可以当known_hosts文件用了。
 ```
