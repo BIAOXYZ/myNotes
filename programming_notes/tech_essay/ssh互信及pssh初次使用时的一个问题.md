@@ -134,7 +134,7 @@ root@9.116.2.254
 ## 解决过程
 
 > knktc: "pssh 本身就是在用 python 调用 ssh 命令。你试试直接 ssh root@9.116.2.59 ,不用 hostname，看看有什么效果"
->> 我："@knktc 尝试直接 ssh root@9.116.2.59 ，发现竟然提示认证问题（类似首次连接时候的认证）。同意之后，再次执行，发现解决了~所以看是还是互信的问题？但是我之前互信确实建好了啊。感谢~总之是解决了。过程如下："
+>> 我："@knktc 尝试直接 ssh root@9.116.2.59 ，发现竟然提示认证问题（类似首次连接时候的认证）。同意之后，再次执行，发现解决了～所以看是还是互信的问题？但是我之前互信确实建好了啊。感谢～总之是解决了。过程如下："
 ```
 [root@druidcluster1 ~]# ssh root@9.116.2.59 date
 The authenticity of host '9.116.2.59 (9.116.2.59)' can't be established.
@@ -176,7 +176,8 @@ druidcluster4,9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAA
 //在控制机（druidcluster1）上执行下面这两条命令会发现：
 //1.控制机“解析”自己的时候，是优先用10开头的IP来“解析”本机（druidcluster1）的hostname的。
 //  ————所以其实可以在最开始的时候在这里（`/etc/hosts`）把10开头的IP直接改成9开头的IP（10.129.203.59 --> 9.116.2.59），也就解决了。
-//  ————同理，其实也可以只把前面`hostpssh`文件里的第一行改成10开头的IP（root@9.116.2.59 --> root@10.129.203.59），应该也是没问题的。
+//  ————同理，其实也可以只把前面`hostpssh`文件里的第一行改成10开头的IP（root@9.116.2.59 --> root@10.129.203.59）
+//      或者干脆用`root@druidcluster1`这种形式，应该也就不会出现这个问题了。
 //2.但是在“解析”被控制机的时候，是优先（还是只能？）用9开头的IP。比如druidcluster2被“解析”成9.116.2.70
 
 [root@druidcluster1 ~]# cat /etc/hosts
