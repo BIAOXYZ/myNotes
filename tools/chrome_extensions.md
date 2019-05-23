@@ -4,6 +4,8 @@
 ### 谷歌搜索结果用新标签方式打开
 
 为什么Google Chrome在书签栏打开新网页都在同一个标签页打开，不觉得这个设计很蛋疼吗？ - yuanhjty的回答 - 知乎https://www.zhihu.com/question/20548777/answer/333561287
+- > ![](https://pic3.zhimg.com/80/v2-8697db5ecfbe52377ea9c82a7736416d_hd.jpg)
+- > ![](https://pic3.zhimg.com/80/v2-01ecc53819d6e4c6ee19e0845723fd59_hd.jpg)
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -27,6 +29,11 @@
 - RunMyCode Online https://chrome.google.com/webstore/detail/runmycode-online/iidcnkpdmnopbbkdmneglbelcefgfohf
 - Awesome Screenshot: Screen Video Recorder https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj
 - Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
+- Bookmark Sidebar https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh
+
+## 考察中
+
+Pinbox - 网络收藏夹 https://chrome.google.com/webstore/detail/pinbox-%E7%BD%91%E7%BB%9C%E6%94%B6%E8%97%8F%E5%A4%B9/kmijeangnajdcaomdfjohhbmnbhnhjjd
 
 ## github专用
 
