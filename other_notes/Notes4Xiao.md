@@ -124,6 +124,8 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 ### paper
 
+- (IMACC 2017) Revealing Encryption for Partial Ordering https://eprint.iacr.org/2016/972.pdf
+
 - Secure and Efficient Multi-Attribute Range Queries based on Comparable Inner Product Encoding https://cis.temple.edu/~jiewu/research/publications/Publication_files/CNS_Liu_2018.pdf
 
 - (AsiaCCS 2019) A Hybrid Approach to Secure Function Evaluation Using SGX https://arxiv.org/abs/1905.01233
