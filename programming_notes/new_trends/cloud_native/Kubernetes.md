@@ -257,6 +257,19 @@ Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-int
 
 Kubernetes容器上下文环境 https://www.cnblogs.com/zhenyuyaodidiao/p/6558444.html
 
+## kubernetes Liveness and Readiness Probes
+
+- Configure Liveness and Readiness Probes https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+
+配置Liveness和Readiness探针 https://k8smeetup.github.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+
+Playing with Kubernetes livenessProbe and readinessProbe probes https://blogs.msdn.microsoft.com/jannemattila/2018/06/07/playing-with-kubernetes-livenessprobe-and-readinessprobe-probes/
+
+Creating Kubernetes liveness and readiness probes https://opensource.com/article/18/3/kubernetes-liveness-readiness-probes
+> How to run PostgreSQL on Kubernetes https://opensource.com/article/19/3/how-run-postgresql-kubernetes
+
+Utilizing Kubernetes Liveness and Readiness Probes to Automatically Recover From Failure https://medium.com/spire-labs/utilizing-kubernetes-liveness-and-readiness-probes-to-automatically-recover-from-failure-2fe0314f2b2e
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes源码
