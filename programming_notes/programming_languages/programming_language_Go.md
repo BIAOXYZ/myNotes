@@ -216,6 +216,15 @@ Go Web 编程 - 1.2 GOPATH与工作空间 https://github.com/astaxie/build-web-a
 Installing Go from source https://nikhita.github.io/install-multiple-versions-go
 
 
+## go包管理
+
+### go module
+
+Modules https://github.com/golang/go/wiki/Modules
+
+初窥Go module https://tonybai.com/2018/07/15/hello-go-module/
+
+
 # Go其他
 
 ### gotour本地编译
