@@ -152,11 +152,17 @@ git clean -d -f -f
 
 ### git log
 
-<<Git代码行统计命令集>>
-https://segmentfault.com/a/1190000002434755
+<<Git代码行统计命令集>> https://segmentfault.com/a/1190000002434755
 ```
 提交数统计：git log --oneline | wc -l 
+
+//原文里这句错了，末尾的分号应为单引号。
+添加或修改的代码行数： git log --stat|perl -ne 'END { print $c } $c += $1 if /(\d+) insertions/; 
 ```
+
+git代码统计 https://segmentfault.com/a/1190000008542123
+> 这个帖子和上面那个很相似，不同点是多了`gitstats`和`cloc`的简略用法，但是少了一个命令以及各个命令参数的解释。另外有些功能一样的命令细节稍有区别。
+
 
 <<[译]git log>>
 https://www.cnblogs.com/irocker/p/git-log.html
