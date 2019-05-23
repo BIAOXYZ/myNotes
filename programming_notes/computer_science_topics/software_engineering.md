@@ -17,6 +17,9 @@ GitHub 欢迎一切 CI 工具 https://www.linuxidc.com/Linux/2017-12/149865.htm
 - CircleCI https://circleci.com/
 - Jenkins https://jenkins.io/
 
+持续集成工具Travis CI和Jenkins https://blog.csdn.net/hebbely/article/details/79099398
+> Travis有两个网址：`https://travis-ci.org/`，`https://travis-ci.com/`。由域名可知：org是非盈利的，为GitHub上Public的repository提供免费服务；com是盈利的，可以对Private的提供付费服务。com前100次build是免费的，此后按月收费。二者的账户是相互独立的，但都可以用GitHub账户注册、登录。
+
 ## CI specific tools
 
 ### Jenkins
