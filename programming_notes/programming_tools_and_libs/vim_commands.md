@@ -49,6 +49,10 @@ syntax on 打开语法高亮
 
 ```
 
+我的vim配置（带注释） https://blog.csdn.net/dongtingzhizi/article/details/8472093
+
+use vim as IDE https://github.com/yangyangwithgnu/use_vim_as_ide
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 ### vim显示当前正在编辑的文件名和路径
