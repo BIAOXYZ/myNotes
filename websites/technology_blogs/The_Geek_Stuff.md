@@ -66,3 +66,6 @@ ls -l /backup
 
 Unix Sed Tutorial: Advanced Sed Substitution Examples https://www.thegeekstuff.com/2009/10/unix-sed-tutorial-advanced-sed-substitution-examples/
 
+## yum
+
+15 Linux Yum Command Examples – Install, Uninstall, Update Packages https://www.thegeekstuff.com/2011/08/yum-command-examples/
