@@ -10,10 +10,17 @@
 ```
 set nu
 syntax on
-set mouse=a
 set cursorline
 set showmatch
 set hlsearch
+
+"1.原来用的是set mouse=a。后来发现在某些机器上会提示E538: No mouse support: mouse=a。搜索了下发现用带if的形式比较好。
+"2.本来注释掉这句用的是#set mouse=a，结果报错E488: Trailing characters: #set mouse=a。又搜索了下才知道
+"  原来vimrc里的注释不是#号，而是一个双引号开头后面写内容。不知道支不支持换行，反正不管了。 
+"set mouse=a   
+if has('mouse')
+  set mouse=a
+endif
 ```
 
 #### vim设置和取消显示行号
