@@ -142,6 +142,10 @@ Kubernetes The Hard Way -- Bootstrap Kubernetes the hard way on Google Cloud Pla
 
 和我一步步部署 kubernetes 集群 https://github.com/opsnull/follow-me-install-kubernetes-cluster
 
+***青蛙小白kubernetes安装:***
+- 使用kubeadm安装Kubernetes 1.14 https://blog.frognew.com/2019/04/kubeadm-install-kubernetes-1.14.html
+- 使用kubeadm安装Kubernetes 1.12 https://blog.frognew.com/2018/10/kubeadm-install-kubernetes-1.12.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 组件
