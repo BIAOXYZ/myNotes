@@ -420,6 +420,9 @@ Automatically provision and manage TLS certificates in Kubernetes https://jetsta
 # kubernetes-sigs
 
 kubeadm-dind-cluster: A Kubernetes multi-node test cluster based on kubeadm https://github.com/kubernetes-sigs/kubeadm-dind-cluster
+- DIND: Docker in Docker https://github.com/jpetazzo/dind
+
+KIND: Kubernetes IN Docker - local clusters for testing Kubernetes https://kind.sigs.k8s.io/ || https://github.com/kubernetes-sigs/kind
 
 Kubernetes controller-tools: Tools to use with the controller-runtime libraries https://github.com/kubernetes-sigs/controller-tools
 
