@@ -22,7 +22,6 @@ docker中文社区站  http://www.docker.org.cn/
 # docker常用命令总结
 
 ## docker run
-
 ```
 Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
@@ -37,6 +36,33 @@ docker run --name mycontainer -it busybox sh  //--name参数为该容器指定�
 docker run -P {images}   //通过-P参数，将容器的端口映射到宿主机的随机端口：
 docker run -p {hostPort}:{containerPort} {images}   //通过-p参数，将容器的端口映射到宿主机的制定端口：
 ```
+
+## docker login
+```
+Usage:  docker login [OPTIONS] [SERVER]
+
+Log in to a Docker registry
+
+例子：
+
+docker login quay.io   //然后会提示输入用户名和密码 
+docker login   //没有指定服务器的话默认登陆的是dockerhub
+docker login -u {username} -p {password} [可省的servername]
+```
+
+Getting Started with Quay.io https://docs.quay.io/solution/getting-started.html
+```
+[root@cloudsec2 app-operator]# docker login quay.io
+Username: biaoxyz
+Password:
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+```
+
+docker login https://docs.docker.com/engine/reference/commandline/login/
 
 ## 其他docker常用命令
 
