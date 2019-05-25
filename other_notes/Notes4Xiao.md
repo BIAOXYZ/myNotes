@@ -54,6 +54,8 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 央行将发布中俄建交70周年纪念币 https://www.ithome.com/0/424/167.htm
 
+卖个有智慧的萌 《大侦探皮卡丘》版皮卡丘布偶预购开启 https://hot.cnbeta.com/articles/comic/850703.htm
+
 ### CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
