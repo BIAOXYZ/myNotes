@@ -1518,6 +1518,22 @@ KUBELET_OPTS="--logtostderr=true \
 --pod-infra-container-image=registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0"
 ```
 >> //改一处IP即可
+>>> //补充：后来在使用中发现，`--pod-infra-container-image`决定了`pause container`镜像拉取的地址，如果不指定则默认是用`gcr.io`。由于这个攻略是方便国内使用的，所以换成了阿里云的。结果后期我从`quay.io`上自己的仓库拉镜像就会失败，因为我用的公司的Softlayer。所以可以直接不要指定这个flag了，Softlayer访问谷歌镜像没问题。这里只贴一下describe pod时候的部分日志好了————再次强调，**这个是后来发现的，安装过程照着攻略设置这个flag集群启动啥的也都没问题**。下面的错误日志也是**后来使用过程中发现的，和本次安装无关**。
+```
+Events:
+  Type     Reason                  Age                    From                   Message
+  ----     ------                  ----                   ----                   -------
+  Normal   Scheduled               14m                    default-scheduler      Successfully assigned default/app-operator-6bc585fd46-k6xzc to 9.186.102.71
+  Warning  FailedCreatePodSandBox  14m                    kubelet, 9.186.102.71  Failed create pod sandbox: rpc error: code = Unknown desc = failed pulling image "registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0": Error response from daemon: Get https://registry.cn-hangzhou.aliyuncs.com/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+  Warning  FailedCreatePodSandBox  14m                    kubelet, 9.186.102.71  Failed create pod sandbox: rpc error: code = Unknown desc = failed pulling image "registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0": Error response from daemon: Get https://registry.cn-hangzhou.aliyuncs.com/v2/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+  Warning  FailedCreatePodSandBox  11m                    kubelet, 9.186.102.71  Failed create pod sandbox: rpc error: code = Unknown desc = failed pulling image "registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0": Error response from daemon: Get https://registry.cn-hangzhou.aliyuncs.com/v2/google-containers/pause-amd64/manifests/3.0: Get https://dockerauth.cn-hangzhou.aliyuncs.com/auth?scope=repository%3Agoogle-containers%2Fpause-amd64%3Apull&service=registry.aliyuncs.com%3Acn-hangzhou%3A26842: net/http: TLS handshake timeout
+  Warning  FailedCreatePodSandBox  4m13s (x4 over 12m)    kubelet, 9.186.102.71  Failed create pod sandbox: rpc error: code = Unknown desc = failed pulling image "registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0": context canceled
+  Warning  FailedCreatePodSandBox  3m21s (x2 over 3m47s)  kubelet, 9.186.102.71  Failed create pod sandbox: rpc error: code = Unknown desc = failed pulling image "registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0": Error response from daemon: Get https://registry.cn-hangzhou.aliyuncs.com/v2/: net/http: TLS handshake timeout
+  Normal   Pulling                 3m7s                   kubelet, 9.186.102.71  pulling image "quay.io/biaoxyz/app-operator"
+  Normal   Pulled                  3m2s                   kubelet, 9.186.102.71  Successfully pulled image "quay.io/biaoxyz/app-operator"
+  Normal   Created                 3m2s                   kubelet, 9.186.102.71  Created container
+  Normal   Started                 3m1s                   kubelet, 9.186.102.71  Started container
+```
 
 ### "6）创建kubelet systemd文件"
 
