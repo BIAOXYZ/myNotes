@@ -227,6 +227,7 @@ golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c
   >> * 在GOPATH下面查找依赖包。
   >> * 在GOROOT目录下查找
 
+【by 胡伟煌】 
 - Golang包管理工具（一）之govendor的使用 https://blog.csdn.net/huwh_/article/details/77169858
 - govendor简介 https://www.huweihuang.com/golang-notes/introduction/package/govendor-usage.html
 
@@ -240,6 +241,9 @@ Modules https://github.com/golang/go/wiki/Modules
 
 初窥Go module https://tonybai.com/2018/07/15/hello-go-module/
 
+Go Modules使用教程 https://segmentfault.com/a/1190000016703769
+
+再探go modules：使用与细节 https://www.cnblogs.com/apocelipes/p/10295096.html
 
 # Go其他
 
