@@ -58,7 +58,7 @@
 >> 竟然还有原版空耳 --> 土豆竟然还活着？ --> 土豆这视频竟然没广告？ --> 这个还能活多久？ 
 
 ## 萝黛的后宫玩具
-//我的妈呀，钉宫和炮姐的会师。
+***//我的妈呀，钉宫和炮姐的会师。***
 
 萝黛的后宫玩具 https://zh.moegirl.org/%E8%90%9D%E9%BB%9B%E7%9A%84%E5%90%8E%E5%AE%AB%E7%8E%A9%E5%85%B7
 
@@ -76,6 +76,12 @@
 下流梗不存在的灰暗世界 https://zh.moegirl.org/%E4%B8%8B%E6%B5%81%E6%A2%97%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E7%81%B0%E6%9A%97%E4%B8%96%E7%95%8C
 
 下流梗不存在的灰暗世界 下ネタという概念が存在しない退屈な世界 (2015) https://movie.douban.com/subject/26148830/
+
+## 多作品（`为美好的世界献上祝福！` + `笨女孩`）
+
+【智障傻缺集锦】智障系美少女的诞生与崛起！猴式智减法的祖先竟然是？！ https://www.bilibili.com/video/av14482322/
+- 为美好的世界献上祝福！ https://zh.moegirl.org/zh-hans/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F
+- 笨女孩 https://zh.moegirl.org/zh-hans/%E7%AC%A8%E5%A5%B3%E5%AD%A9
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
