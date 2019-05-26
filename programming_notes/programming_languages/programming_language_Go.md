@@ -216,6 +216,24 @@ Installing Go from source https://nikhita.github.io/install-multiple-versions-go
 
 ## go包管理
 
+### go vendor
+
+golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c0
+- > 随着Go 1.5 release版本的发布，vendor目录被添加到除了GOPATH和GOROOT之外的依赖目录查找的解决方案。在Go 1.6之前，你需要手动的设置环境变量`GO15VENDOREXPERIMENT=1`才可以使Go找到Vendor目录，然而在Go 1.6之后，这个功能已经不需要配置环境变量就可以实现了。
+- > Note，即使使用vendor，也必须在GOPATH中，在go的工具链中，你逃不掉GOPATH的
+- > 那么查找依赖包路径的解决方案如下：
+  >> * 当前包下的vendor目录。
+  >> * 向上级目录查找，直到找到src下的vendor目录。
+  >> * 在GOPATH下面查找依赖包。
+  >> * 在GOROOT目录下查找
+
+- Golang包管理工具（一）之govendor的使用 https://blog.csdn.net/huwh_/article/details/77169858
+- govendor简介 https://www.huweihuang.com/golang-notes/introduction/package/govendor-usage.html
+
+### go dep
+
+Go依赖管理工具 - dep https://segmentfault.com/a/1190000013561841
+
 ### go module
 
 Modules https://github.com/golang/go/wiki/Modules
