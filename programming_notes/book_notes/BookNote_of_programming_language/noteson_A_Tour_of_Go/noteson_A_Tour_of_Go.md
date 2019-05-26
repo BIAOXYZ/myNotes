@@ -27,7 +27,7 @@
 
 https://tour.go-zh.org/basics/4
 > （参考 [这篇关于 Go 语法声明的文章](https://blog.go-zh.org/gos-declaration-syntax)了解这种类型声明形式出现的原因。）
->> Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax
+>> externallink: Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax
 
 ### 命名返回值
 
@@ -164,6 +164,97 @@ https://tour.go-zh.org/flowcontrol/8
   >> `z -= (z*z - x) / (2*z)`
   >>> 重复调整的过程，猜测的结果会越来越精确，得到的答案也会尽可能接近实际的平方根。
 - >（`*`注：`*` 如果你对该算法的细节感兴趣，上面的 z² − x 是 z² 到它所要到达的值（即 x）的距离， 除以的 2z 为 z² 的导数，我们通过 z² 的变化速度来改变 z 的调整量。 这种通用方法叫做[牛顿法](https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF%E6%B3%95)。 它对很多函数，特别是平方根而言非常有效。）
+  >> externallink: 牛顿法 https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF%E6%B3%95
+
+### switch
+
+https://tour.go-zh.org/flowcontrol/9
+> Go 的 switch 语句类似于 C、C++、Java、JavaScript 和 PHP 中的，不过 Go 只运行选定的 case，而非之后所有的 case。 实际上，Go 自动提供了在这些语言中每个 case 后面所需的 `break` 语句。 除非以 `fallthrough` 语句结束，否则分支会自动终止。 Go 的另一点重要的不同在于 switch 的 case 无需为常量，且取值不必为整数。
+
+### 没有条件的 switch
+
+https://tour.go-zh.org/flowcontrol/11
+> 没有条件的 switch 同 switch true 一样。这种形式能将一长串 if-then-else 写得更加清晰。
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Good morning!")
+	case t.Hour() < 17:
+		fmt.Println("Good afternoon.")
+	default:
+		fmt.Println("Good evening.")
+	}
+}
+```
+
+### defer
+
+https://tour.go-zh.org/flowcontrol/12
+- > defer 语句会将函数推迟到外层函数返回之后执行。
+- > 推迟调用的函数其参数会立即求值，但直到外层函数返回前该函数都不会被调用。
+```go
+package main
+
+import "fmt"
+
+func main() {
+	defer fmt.Println("world")
+
+	fmt.Println("hello")
+}
+```
+```
+//输出：
+hello
+world
+```
+
+### defer 栈
+
+https://tour.go-zh.org/flowcontrol/13
+- > 推迟的函数调用会被压入一个栈中。当外层函数返回时，被推迟的函数会按照后进先出的顺序调用。
+- > 更多关于 defer 语句的信息，请阅读此[博文](https://blog.go-zh.org/defer-panic-and-recover)。
+  >> externallink: Defer, Panic, and Recover https://blog.go-zh.org/defer-panic-and-recover
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
+}
+```
+```
+//输出：
+counting
+done
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+```
+
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
