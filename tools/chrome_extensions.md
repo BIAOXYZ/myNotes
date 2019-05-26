@@ -7,6 +7,30 @@
 - > ![](https://pic3.zhimg.com/80/v2-8697db5ecfbe52377ea9c82a7736416d_hd.jpg)
 - > ![](https://pic3.zhimg.com/80/v2-01ecc53819d6e4c6ee19e0845723fd59_hd.jpg)
 
+### chrome keyboard shortcuts
+
+工具篇---Chrome浏览器快捷键 https://www.jianshu.com/p/95a6e8ee4819
+
+| 操作 | 快捷键 |
+|--|:--|
+| 打开新窗口 | Ctrl + n |
+| 在隐身模式下打开新窗口	| Ctrl + Shift + n |
+| 打开新的标签页，并跳转到该标签页	| Ctrl + t |
+| 重新打开最后关闭的标签页，并跳转到该标签页	| Ctrl + Shift + t |
+| 跳转到下一个打开的标签页	| Ctrl + Tab 或 Ctrl + PgDn |
+| 跳转到上一个打开的标签页	| Ctrl + Shift + Tab 或 Ctrl + PgUp |
+| 跳转到特定标签页	| Ctrl + 1 到 Ctrl + 8 |
+| 跳转到最后一个标签页	| Ctrl + 9 |
+| 关闭当前标签页	| Ctrl + w 或 Ctrl + F4 |
+| 关闭所有打开的标签页和浏览器	| Ctrl + Shift + w |
+| 退出 Google Chrome	| Ctrl + Shift + q 或 Alt + F4 |
+
+Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 https://www.zhihu.com/question/19555789/answer/635867591
+- > 在一个已经打开的浏览器上，你可能想要打开一个新的标签页，那就摁下【Ctrl+T】，不用死记硬背，T 的意思，大概是 Tab ，也就是标签页；如果刚刚不小心关闭了一个或者多个标签页，随时摁下【Ctrl+Shift+T】，一切都回来了，多摁一次，就会恢复更早前的一批。
+- > 如果你想要打开的是新的窗口，而不是标签页，那就摁下 【Ctrl+N】，也不用死记硬背，N 是 NEW 的缩写；如果你想让打开的网页不被他人看到，那么可以直接使用 【Ctrl+Shift+N】，打开隐私浏览模式。
+- > 同时打开了多个浏览器时，你可能会想在它们之间切换。Windows 通用的切换方式同样适合这里。比如 【Ctrl+Tab】，就是在同一个窗口内的多个标签页之间切换；【Alt+Tab】就是在多个窗口之间切换。
+- > 不过还有稍微好用一些的，比如一个窗口中打开了多个标签页，你可以使用【Ctrl】组合数字键来切换这些标签页。比如摁下【Ctrl+1】切换到第一个窗口，【Ctrl+2】切换到第二个窗口，以此类推。需要注意的是，【Ctrl+9】不是直接跳转到第 9 个标签页，而是最后一个标签页。
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 【[`*`][:star:]】 Already used Chrome extensions (may be suitable for Firefox as well)
