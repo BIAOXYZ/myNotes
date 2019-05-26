@@ -559,6 +559,8 @@ git remote prune origin 或 git fetch -p (删除不存在对应远程分支的�
 git branch -av 比git branch -a显示信息全多了
 ```
 
+.6 Git 基础 - 打标签 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE
+
 ### git stash
 
 https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89
