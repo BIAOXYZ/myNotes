@@ -167,7 +167,6 @@ http://www.jb51.net/article/108972.htm
 【GoLang笔记】浅析Go语言Interface类型的语法行为及用法 
 https://studygolang.com/articles/2652
 
-
 --------------------------------------------------
 
 ### go环境变量
@@ -215,7 +214,6 @@ Go Web 编程 - 1.2 GOPATH与工作空间 https://github.com/astaxie/build-web-a
 
 Installing Go from source https://nikhita.github.io/install-multiple-versions-go
 
-
 ## go包管理
 
 ### go module
@@ -226,6 +224,14 @@ Modules https://github.com/golang/go/wiki/Modules
 
 
 # Go其他
+
+## go命令
+
+### go generate
+
+go generate介绍 https://www.jianshu.com/p/a866147021da
+
+Golang Generate命令说明与使用 https://yushuangqi.com/blog/2017/go-command-generate.html
 
 ### gotour本地编译
 
