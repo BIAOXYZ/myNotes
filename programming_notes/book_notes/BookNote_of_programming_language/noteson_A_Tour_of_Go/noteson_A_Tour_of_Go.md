@@ -54,6 +54,63 @@ https://tour.go-zh.org/basics/15
 
 ## Flow control statements: for, if, else, switch and defer || 流程控制语句：for、if、else、switch 和 defer
 
+### for
+
+https://tour.go-zh.org/flowcontrol/1
+- > Go 只有一种循环结构：`for` 循环。
+- > 初始化语句通常为一句短变量声明，该变量声明仅在 `for` 语句的作用域中可见。
+- > 注意：和 C、Java、JavaScript 之类的语言不同，Go 的 `for` 语句后面的三个构成部分外没有`小括号`， 大括号 `{ }` 则是必须的。
+```go
+package main
+
+import "fmt"
+
+func main() {
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
+}
+```
+
+### for（续）
+
+https://tour.go-zh.org/flowcontrol/2
+> 初始化语句和后置语句是可选的。
+```go
+package main
+
+import "fmt"
+
+func main() {
+	sum := 1
+	for ; sum < 1000; {
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+```
+
+### for 是 Go 中的 “while”
+
+https://tour.go-zh.org/flowcontrol/3
+> 此时你可以去掉分号，因为 C 的 `while` 在 Go 中叫做 `for`。
+```GO
+package main
+
+import "fmt"
+
+func main() {
+	sum := 1
+	for sum < 1000 {
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+```
+
+
 ## More types: structs, slices, and maps || 更多类型：struct、slice 和映射
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
