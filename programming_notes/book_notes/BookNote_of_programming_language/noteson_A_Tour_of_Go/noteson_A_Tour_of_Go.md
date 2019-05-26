@@ -33,7 +33,24 @@ https://tour.go-zh.org/basics/4
 
 https://tour.go-zh.org/basics/7
 - > Go 的返回值可被命名，它们会被视作定义在函数顶部的变量。
-- > 没有参数的`return`语句返回已命名的返回值。也就是`直接`返回
+- > 没有参数的 `return` 语句返回已命名的返回值。也就是 `直接` 返回
+
+### 短变量声明
+
+https://tour.go-zh.org/basics/10
+- > 在函数中，简洁赋值语句 `:=` 可在类型明确的地方代替 `var` 声明。
+- > 函数外的每个语句都必须以关键字开始（`var`, `func` 等等），因此 `:=` 结构不能在函数外使用。
+
+### 类型转换
+
+https://tour.go-zh.org/basics/13
+
+### 常量
+
+https://tour.go-zh.org/basics/15
+> 常量不能用 `:=` 语法声明。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Flow control statements: for, if, else, switch and defer || 流程控制语句：for、if、else、switch 和 defer
 
