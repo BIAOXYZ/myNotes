@@ -189,9 +189,16 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 - Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
 - Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
 
-## TBD
+## kubernetes client
 
-Official Python client library for kubernetes https://github.com/kubernetes-client/python
+- Official Python client library for kubernetes https://github.com/kubernetes-client/python
+- OpenAPI based generated Go Client for Kubernetes https://github.com/kubernetes-client/go
+
+Go client for Kubernetes. https://github.com/kubernetes/client-go 【这个才是常说的`client-go`】
+
+kubernetes client-go包使用示例 https://jimmysong.io/posts/kubernetes-client-go-sample/
+
+Building stuff with the Kubernetes API (Part 4) — Using Go https://medium.com/programming-kubernetes/building-stuff-with-the-kubernetes-api-part-4-using-go-b1d0e3c1c899
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -297,6 +304,8 @@ From Draveness's Blog 【面向信仰编程】：
 - 详解 Kubernetes Pod 的实现原理 https://draveness.me/kubernetes-pod
 - 详解 Kubernetes Job 和 CronJob 的实现原理 https://draveness.me/kubernetes-job-cronjob
 - 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
+
+11.1. client-go的使用及源码分析 https://www.huweihuang.com/kubernetes-notes/develop/client-go.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
