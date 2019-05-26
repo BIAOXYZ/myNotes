@@ -110,6 +110,53 @@ func main() {
 }
 ```
 
+### 无限循环
+
+https://tour.go-zh.org/flowcontrol/4
+> 如果省略循环条件，该循环就不会结束，因此无限循环可以写得很紧凑。
+```go
+package main
+
+func main() {
+	for {
+	}
+}
+```
+
+### if
+
+https://tour.go-zh.org/flowcontrol/5
+> Go 的 `if` 语句与 `for` 循环类似，表达式外无需小括号 `( )` ，而大括号 `{ }` 则是必须的。
+```go
+func sqrt(x float64) string {
+	if x < 0 {
+		return sqrt(-x) + "i"
+	}
+	return fmt.Sprint(math.Sqrt(x))
+}
+```
+
+### if 的简短语句
+
+https://tour.go-zh.org/flowcontrol/6
+> 同 `for` 一样， `if` 语句可以在条件表达式前执行一个简单的语句。该语句声明的变量作用域仅在 `if` 之内。
+
+### if 和 else
+
+https://tour.go-zh.org/flowcontrol/7
+> 在 if 的简短语句中声明的变量同样可以在任何对应的 else 块中使用。
+```
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	} else {
+		fmt.Printf("%g >= %g\n", v, lim)
+	}
+	// 这里开始就不能使用 v 了
+	return lim
+}
+```
+
 
 ## More types: structs, slices, and maps || 更多类型：struct、slice 和映射
 
