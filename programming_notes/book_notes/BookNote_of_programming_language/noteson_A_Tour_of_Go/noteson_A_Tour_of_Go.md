@@ -269,6 +269,89 @@ https://tour.go-zh.org/moretypes/1
 https://tour.golang.org/moretypes/1
 > This is known as "dereferencing" or "indirecting".
 
+### 结构体字段
+
+https://tour.go-zh.org/moretypes/3
+> 结构体字段使用点号来访问。
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X int
+	Y int
+}
+
+func main() {
+	v := Vertex{1, 2}
+	v.X = 4
+	fmt.Println(v.X)
+}
+```
+```
+//输出：
+4
+```
+
+### 结构体指针
+
+https://tour.go-zh.org/moretypes/4
+- > 结构体字段可以通过结构体指针来访问。
+- > 如果我们有一个指向结构体的指针 `p`，那么可以通过 `(*p).X` 来访问其字段 `X`。不过这么写太啰嗦了，所以语言也允许我们使用隐式间接引用，直接写 `p.X` 就可以。
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X int
+	Y int
+}
+
+func main() {
+	v := Vertex{1, 2}
+	p := &v
+	p.X = 1e9
+	fmt.Println(v)
+}
+```
+```
+//输出：
+{1000000000 2}
+```
+
+### 结构体文法
+
+https://tour.go-zh.org/moretypes/5
+- > 结构体文法通过直接列出字段的值来新分配一个结构体。
+- > 使用 `Name:` 语法可以仅列出部分字段。（字段名的顺序无关。）
+- > 特殊的前缀 `&` 返回一个指向结构体的指针。
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X, Y int
+}
+
+var (
+	v1 = Vertex{1, 2}  // 创建一个 Vertex 类型的结构体
+	v2 = Vertex{X: 1}  // Y:0 被隐式地赋予
+	v3 = Vertex{}      // X:0 Y:0
+	p  = &Vertex{1, 2} // 创建一个 *Vertex 类型的结构体（指针）
+)
+
+func main() {
+	fmt.Println(v1, p, v2, v3)
+}
+```
+```
+//输出：
+{1 2} &{1 2} {1 0} {0 0}
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `#` Methods and interfaces || 方法和接口
