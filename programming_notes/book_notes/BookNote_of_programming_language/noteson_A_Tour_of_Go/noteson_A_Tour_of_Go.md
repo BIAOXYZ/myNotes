@@ -26,7 +26,7 @@
 ### 函数
 
 https://tour.go-zh.org/basics/4
-> （参考 这篇关于 Go 语法声明的文章了解这种类型声明形式出现的原因。）
+> （参考 [这篇关于 Go 语法声明的文章](https://blog.go-zh.org/gos-declaration-syntax)了解这种类型声明形式出现的原因。）
 >> Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax
 
 ### 命名返回值
@@ -145,7 +145,7 @@ https://tour.go-zh.org/flowcontrol/6
 
 https://tour.go-zh.org/flowcontrol/7
 > 在 if 的简短语句中声明的变量同样可以在任何对应的 else 块中使用。
-```
+```go
 func pow(x, n, lim float64) float64 {
 	if v := math.Pow(x, n); v < lim {
 		return v
@@ -157,6 +157,15 @@ func pow(x, n, lim float64) float64 {
 }
 ```
 
+### 练习：循环与函数
+
+https://tour.go-zh.org/flowcontrol/8
+- > 计算机通常使用循环来计算 x 的平方根。从某个猜测的值 z 开始，我们可以根据 z² 与 x 的近似度来调整 z，产生一个更好的猜测：
+  >> `z -= (z*z - x) / (2*z)`
+  >>> 重复调整的过程，猜测的结果会越来越精确，得到的答案也会尽可能接近实际的平方根。
+- >（`*`注：`*` 如果你对该算法的细节感兴趣，上面的 z² − x 是 z² 到它所要到达的值（即 x）的距离， 除以的 2z 为 z² 的导数，我们通过 z² 的变化速度来改变 z 的调整量。 这种通用方法叫做[牛顿法](https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF%E6%B3%95)。 它对很多函数，特别是平方根而言非常有效。）
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## More types: structs, slices, and maps || 更多类型：struct、slice 和映射
 
