@@ -23,6 +23,12 @@
 
 ## Packages, variables, and functions || 包、变量和函数
 
+### 函数
+
+https://tour.go-zh.org/basics/4
+> （参考 这篇关于 Go 语法声明的文章了解这种类型声明形式出现的原因。）
+>> Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax
+
 ## Flow control statements: for, if, else, switch and defer || 流程控制语句：for、if、else、switch 和 defer
 
 ## More types: structs, slices, and maps || 更多类型：struct、slice 和映射
