@@ -47,6 +47,7 @@
 ### 波音737 Max事件
 
 - 民航总局证实：国内航司今起暂停运行波音737MAX客机 https://www.cnbeta.com/articles/tech/826039.htm
+  * > 在中国国内，今天上午已有多家媒体报道称，中国国内航司已接到民航总局通知，要求737MAX暂停运行，今日737MAX执飞的北京出港航班已经全部调整为737-800执行。
 - 五个月两次坠机 CNN：波音737Max8可能被停飞 https://www.cnbeta.com/articles/tech/826043.htm
 - 5个月两次坠机 波音737 Max 8有什么问题？ https://www.cnbeta.com/articles/tech/826073.htm
 - 波音737以后还能不能坐了？看完这些就知道了 https://www.ithome.com/0/413/680.htm
