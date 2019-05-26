@@ -39,7 +39,10 @@ TLS完全指南（零） - 王益的文章 - 知乎 https://zhuanlan.zhihu.com/p
 
 OpenSSL -- Cryptography and SSL/TLS Toolkit https://www.openssl.org/ || https://github.com/openssl/openssl
 - https://www.openssl.org/community/
-  - https://www.openssl.org/community/getting-started.html
+  * https://www.openssl.org/community/getting-started.html
+  * List of Committers https://www.openssl.org/community/committers.html
+    + Paul Yang https://github.com/InfoHunter
+      > https://paulyang.cn/
 - https://www.openssl.org/docs/
   * Frequently Asked Questions https://www.openssl.org/docs/faq.html
   * Standards https://www.openssl.org/docs/standards.html
