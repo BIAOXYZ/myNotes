@@ -443,7 +443,14 @@ Kubernetes controller-tools: Tools to use with the controller-runtime libraries 
 
 # projects based on or related to k8s
 
+## not matured
+
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
+
+## k8s-conformance (CNCF)
+
+🧪CNCF K8s Conformance Working Group https://cncf.io/ck || https://github.com/cncf/k8s-conformance
+- > Sonobuoy is a diagnostic tool that makes it easier to understand the state of a Kubernetes cluster by running a set of Kubernetes conformance tests in an accessible and non-destructive manner. https://github.com/heptio/sonobuoy
 
 ## minikube
 
