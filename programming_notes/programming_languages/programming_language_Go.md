@@ -1,8 +1,6 @@
 
 # Go general
 
-Go语言教程 https://www.yiibai.com/go/
-
 怎么学习 Golang？ https://www.zhihu.com/question/23486344
 - 怎么学习 Golang？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/23486344/answer/24785991
   - Project Euler https://projecteuler.net/
@@ -11,6 +9,17 @@ Go语言教程 https://www.yiibai.com/go/
     - A Tour of Go https://tour.golang.org/welcome/
   - Go語言聖經（中文版） https://www.gitbook.com/book/wizardforcel/gopl-zh/details
     - https://www.gitbook.com/@wizardforcel
+
+系统学习GO，推荐几本靠谱的书? - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/30461290/answer/210414739
+- Go编程语言 https://go-zh.org/doc/
+  - Go指南 https://tour.go-zh.org/welcome/
+- Go语言圣经 https://www.gitbook.com/book/yar999/gopl-zh/details
+
+为什么要使用 Go 语言？Go 语言的优势在哪里？ - asta谢的回答 - 知乎 https://www.zhihu.com/question/21409296/answer/18184584
+> (这个就是Go Web 编程的开源版) https://github.com/astaxie/build-web-application-with-golang
+>> (在网上搜到gitbook版本，虽然不是原作者搞的) https://www.gitbook.com/book/wizardforcel/build-web-application-with-golang/details
+
+## A Tour of Go
 
 Go指南 -- 函数 https://tour.go-zh.org/basics/4
 > Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax 
@@ -21,23 +30,21 @@ z -= (z*z - x) / (2*z)
 （注：如果你对该算法的细节感兴趣，上面的 z² − x 是 z² 到它所要到达的值（即 x）的距离，除以的 2z 为 z² 的导数，我们通过 z² 的
 变化速度来改变 z 的调整量。这种通用方法叫做牛顿法。它对很多函数，特别是平方根而言非常有效。） 
 ```
+## Effective Go
+
+Effective Go https://golang.org/doc/effective_go.html
+
+Effective Go 中英双语版 https://legacy.gitbook.com/book/bingohuang/effective-go-zh-en/details
+
+## 其他Go教程
 
 --------------------------------------------------
+
+Go语言教程 https://www.yiibai.com/go/
 
 极客学院 -- Go 语言
 http://wiki.jikexueyuan.com/list/go/
 - Go Web 编程 http://wiki.jikexueyuan.com/project/go-web-programming/
-
-系统学习GO，推荐几本靠谱的书? - 知乎用户的回答 - 知乎
-https://www.zhihu.com/question/30461290/answer/210414739
-- Go编程语言 https://go-zh.org/doc/
-  - Go指南 https://tour.go-zh.org/welcome/
-- Go语言圣经 https://www.gitbook.com/book/yar999/gopl-zh/details
-
-为什么要使用 Go 语言？Go 语言的优势在哪里？ - asta谢的回答 - 知乎
-https://www.zhihu.com/question/21409296/answer/18184584
-> (这个就是Go Web 编程的开源版) https://github.com/astaxie/build-web-application-with-golang
->> (在网上搜到gitbook版本，虽然不是原作者搞的) https://www.gitbook.com/book/wizardforcel/build-web-application-with-golang/details
 
 --------------------------------------------------
 
