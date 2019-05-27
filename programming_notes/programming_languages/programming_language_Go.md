@@ -242,7 +242,14 @@ golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c
 
 Go依赖管理工具 - dep https://segmentfault.com/a/1190000013561841
 
-### go module
+go之官方依赖管理工具dep安装和使用 https://blog.csdn.net/guyan0319/article/details/81588316
+- > 目前依赖工具有很多，如：glide、godep等。今天主要讲是官方出品的dep,注意它和godep不是一个东西。
+- > Gopkg.lock 是生成的文件，不要手工修改
+- > Gopkg.toml 是依赖管理的核心文件，可以生成也可以手动修改，
+一般情况下Gopkg.toml里面只定义直接依赖项，而Gopkg.lock里面除了包含Gopkg.toml中的所有项之外，还包含传递依赖项。比如我们的项目依赖项目A， 而项目A又依赖B、C，那么只有A会包含在Gopkg.toml中，而A、B、C都会定义在Gopkg.lock中。所以Gopkg.lock定义了所有依赖的项目的详细信息（commit ID和packages），使得每次build我们自己的项目时，始终基于确定不变的依赖项。
+- > vendor目录是 golang1.5 以后依赖管理目录，这个目录的依赖代码是优先加载的，类似 node 的 node_module 目录。
+
+### go module/go mod
 
 Modules https://github.com/golang/go/wiki/Modules
 
