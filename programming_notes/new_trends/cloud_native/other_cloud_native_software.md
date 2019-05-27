@@ -24,6 +24,14 @@ lift and shift https://whatis.techtarget.com/definition/lift-and-shift
 还不了解 CNCF？关于 CNCF 的三问三答！ http://blog.daocloud.io/cncf-3/
 > Prometheus 是一套开源的监控、报警和时间序列数据库的组合，成立于 2012 年，由 SoundCloud 公司开发，此后许多组织接受和采用了 Prometheus，遂将其独立为开源项目。该项目使用 Go 语言开发，社区氛围非常活跃。
 
+Prometheus操作指南 https://yunlzheng.gitbook.io/prometheus-book/ || https://github.com/yunlzheng/prometheus-book
+- 容器监控：cAdvisor https://yunlzheng.gitbook.io/prometheus-book/part-ii-prometheus-jin-jie/exporter/commonly-eporter-usage/use-prometheus-monitor-container
+
+## Prometheus源码
+
+- Prometheus 实战于源码分析之scrape https://blog.csdn.net/u010278923/article/details/70946004
+- Prometheus 实战于源码分析之collector https://blog.csdn.net/u010278923/article/details/70927773
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Flannel
