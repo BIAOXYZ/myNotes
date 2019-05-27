@@ -254,10 +254,15 @@ go之官方依赖管理工具dep安装和使用 https://blog.csdn.net/guyan0319/
 Modules https://github.com/golang/go/wiki/Modules
 
 初窥Go module https://tonybai.com/2018/07/15/hello-go-module/
+- > 当GO111MODULE的值为auto时(不显式设置即为auto)，也就是我们在上面的例子中所展现的那样：使用GOPATH mode还是module-aware mode，取决于要构建的源码目录所在位置以及是否包含go.mod文件。如果要构建的源码目录不在以GOPATH/src为根的目录体系下，且包含go.mod文件(两个条件缺一不可)，那么使用module-aware mode；否则使用传统的GOPATH mode。
+
+【by apocelipes】
+- golang包管理解决之道——go modules初探 https://www.cnblogs.com/apocelipes/p/9534885.html
+  * > 那么我们怎么进行包管理呢？别担心，当我们使用go build，go test以及go list时，go会自动得更新go.mod文件，将依赖关系写入其中。
+  * > 我们发现多了一个go.sum，我们看看它里面是什么内容：没错，你已经猜到了，这是我们直接引用的package和它自身需要的以来的版本记录，go modules就是根据这些去找到需要的packages的。
+- 再探go modules：使用与细节 https://www.cnblogs.com/apocelipes/p/10295096.html
 
 Go Modules使用教程 https://segmentfault.com/a/1190000016703769
-
-再探go modules：使用与细节 https://www.cnblogs.com/apocelipes/p/10295096.html
 
 # Go其他
 
