@@ -386,5 +386,7 @@ IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithom
 
 # job others
 
-上班这件事 https://www.douban.com/group/myjob/
+## 豆瓣工作相关小组
 
+- 上班这件事 https://www.douban.com/group/myjob/
+- 外企轶事 https://www.douban.com/group/ForeignCompany/
