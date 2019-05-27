@@ -200,6 +200,10 @@ kubernetes client-go包使用示例 https://jimmysong.io/posts/kubernetes-client
 
 Building stuff with the Kubernetes API (Part 4) — Using Go https://medium.com/programming-kubernetes/building-stuff-with-the-kubernetes-api-part-4-using-go-b1d0e3c1c899
 
+使用client-go自定义开发Kubernetes https://xuchao918.github.io/2019/02/13/%E4%BD%BF%E7%94%A8client-go%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%80%E5%8F%91Kubernetes/
+
+Kubernetes client-go实战应用 https://juejin.im/post/5bc9d80df265da0ac7272dde
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes权限和安全
@@ -306,6 +310,8 @@ From Draveness's Blog 【面向信仰编程】：
 - 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
 
 11.1. client-go的使用及源码分析 https://www.huweihuang.com/kubernetes-notes/develop/client-go.html
+
+Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
