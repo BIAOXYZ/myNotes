@@ -384,3 +384,7 @@ IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithom
 
 每日优鲜App炒作996，网友愤怒发动App Store 1分差评轰炸 https://www.ithome.com/0/420/132.htm
 
+# job others
+
+上班这件事 https://www.douban.com/group/myjob/
+
