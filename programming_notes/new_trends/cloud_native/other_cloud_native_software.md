@@ -45,6 +45,9 @@ Prometheus操作指南 https://yunlzheng.gitbook.io/prometheus-book/ || https://
 
 ## Prometheus其他
 
+Kubernetes 集群健康监控 https://supereagle.github.io/2019/05/26/k8s-health-monitoring/
+> Kubernetes + Prometheus: `* Kubernetes 必须容器化部署 * 依赖 Prometheus`
+
 还不了解 CNCF？关于 CNCF 的三问三答！ http://blog.daocloud.io/cncf-3/
 > Prometheus 是一套开源的监控、报警和时间序列数据库的组合，成立于 2012 年，由 SoundCloud 公司开发，此后许多组织接受和采用了 Prometheus，遂将其独立为开源项目。该项目使用 Go 语言开发，社区氛围非常活跃。
 
