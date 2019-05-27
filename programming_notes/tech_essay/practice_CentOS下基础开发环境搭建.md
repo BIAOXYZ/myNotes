@@ -156,6 +156,19 @@ yum -y install java-1.8.0-openjdk*
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.el7_5.x86_64
 export PATH=$PATH:$JAVA_HOME/bin 
 ```
+```
+https://github.com/ojdkbuild/contrib_jdk8u-ci/releases // 咋感觉要找个1.8版本的openjdk这么难呢？
+
+wget https://github.com/ojdkbuild/contrib_jdk8u-ci/releases/download/jdk8u212-b04/jdk-8u212-ojdkbuild-linux-x64.zip
+unzip jdk-8u212-ojdkbuild-linux-x64.zip
+cp -r jdk-8u212-ojdkbuild-linux-x64/ /usr/lib/
+
+export JAVA_HOME=/usr/lib/jdk-8u212-ojdkbuild-linux-x64  
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH
+```
+
 
 ## maven安装
 ```
@@ -170,9 +183,12 @@ export PATH=${PATH}:${MAVEN_HOME}/bin
 
 # Go语言环境
 ```
-//wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
-//sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
-wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz && sudo tar -C /usr/local -xzf go1.12.5.linux-amd64.tar.gz
+1.11.2
+wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+
+1.12.5 //为啥要去掉sudo？1.没权限话再加上sudo好了 2.这个sudo导致这一行太长，还得拖一下滚动条。要知道我本来就是想省事的~
+wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz && tar -C /usr/local -xzf go1.12.5.linux-amd64.tar.gz
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
