@@ -1,4 +1,5 @@
 
+## 垃圾清理
 
 有哪些深度清理手机垃圾的软件可以推荐？ - 大蓝同学的回答 - 知乎 https://www.zhihu.com/question/22383810/answer/586552478
 
@@ -27,3 +28,8 @@ we limit the number of accounts each phone number can create.
 - 如何绕过手机验证注册Gmail？ - 叶缘宫子的回答 - 知乎 https://www.zhihu.com/question/25557767/answer/533562381
 >> 这个回答第一句提到了`"2018年11月17号Gmail最新方法两种诡异的方法第一种:密码强度越高就可以跳过验证步骤..."`，我于是换了一个巨复杂的密码，然后。。。虽然没有跳过手机验证，但是不会提示该手机号不能用于验证了————所以我推测是密码不能相同（因为前几天刚申请了gmail一个准备以后所有的开源都用那个gmail账号），手机号那步就可以过了。
 
+## 日程提醒/定时提醒
+
+微信上如何设置某一信息过一小时后再次提醒？ https://jingyan.baidu.com/article/e4d08ffd764cc40fd2f60d96.html
+> 原来微信是有提醒功能的，不过非常之简陋。。。也有小程序可以提醒，比如下面这个小叮提醒（其实就是自己在百度百科顺便打个广告- -）：
+>> 微信怎样设置日程提醒 https://jingyan.baidu.com/article/046a7b3e60e6e6f9c37fa965.html
