@@ -77,7 +77,7 @@ u{n}	撤销一次或n次操作
 U(大写)	撤销当前行的所有修改
 Ctrl+r	redo，即撤销undo的操作
 ```
-R 大写R会直接进入REPLACE模式，然后可以方便连续替换
+> R 大写R会直接进入REPLACE模式，然后可以方便连续替换
 
 :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:
 
@@ -137,7 +137,9 @@ cw	替换从光标所在位置后到一个单词结尾的字符
 :x	保存并退出
 :wq	保存并退出
 ```
-**shift + zz 普通模式下输入Shift+zz即可保存退出vim，等价于ZZ**
+> **`shift + zz` 普通模式下输入Shift+zz即可保存退出vim，等价于ZZ**
+>> **`shift + zz`或者(大写的)`ZZ`是“保存并退出当前文件”的意思说白了等于`:wq`。后来在想那不保存退出（也就是`:q`或`:q!`）呢？但是好像找过没找到，今天终于偶然间看到了————不保存并强制退出的快捷键为`shift + zq`或者(大写的)`ZQ`。**
+>>> Vim 实用技术，第 1 部分 实用技巧 https://www.ibm.com/developerworks/cn/linux/l-tip-vim1/index.html
 
 ```
 x	删除游标所在的字符
@@ -150,8 +152,8 @@ d^	删除至行首
 dG	删除到文档结尾处
 d1G	删至文档首部
 ```
-2dd 删除两行
-d3w 删除三个单词
+> 2dd 删除两行
+> d3w 删除三个单词
 
 
 ### 复制及粘贴文本
@@ -170,7 +172,7 @@ d3w 删除三个单词
 普通模式中，p(小写)代表粘贴至光标后（下）
 普通模式中，P(大写)代表粘贴至光标前（上）
 ```
-ddp 实现了快速交换光标所在行与它下面的行
+> ddp 实现了快速交换光标所在行与它下面的行
 
 
 ## vim查找和替换
