@@ -852,6 +852,8 @@ http://blog.jobbole.com/20123/
   * 第3章 Git log 高级用法 https://github.com/geeeeeeeeek/git-recipes/wiki/5.3-Git-log-%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95
   * 第4章 Git 钩子：自定义你的工作流 https://github.com/geeeeeeeeek/git-recipes/wiki/5.4-Git-%E9%92%A9%E5%AD%90%EF%BC%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81
 
+Git 常用命令速查表(图文+表格) https://www.jb51.net/article/55442.htm --> 一堆命令我连听都没听过。。。
+
 ####  git的refs
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
@@ -861,6 +863,29 @@ http://blog.csdn.net/forever_wind/article/details/37506389
 
 <<Git HEAD detached from XXX (git HEAD 游离) 解决办法>>
 http://blog.csdn.net/u011240877/article/details/76273335
+
+#### git-symbolic-ref
+
+git-symbolic-ref https://git-scm.com/docs/git-symbolic-ref
+```
+$ git branch
+* master
+$
+$ git symbolic-ref HEAD
+refs/heads/master
+$
+$ git checkout -b dev
+Switched to a new branch 'dev'
+$
+$ git symbolic-ref HEAD
+refs/heads/dev
+$
+$ git symbolic-ref HEAD --short
+dev
+```
+>> 目前只知道这个命令最大的用途是脚本里面显示git当前分支的时候用。
+
+Git 提效篇 http://hotoo.github.io/blog/post/git-branch
 
 #### git本地分支与远程分支关联关系查询
 git 如何查看当前分支的upstream? - 知乎 https://www.zhihu.com/question/27324031
