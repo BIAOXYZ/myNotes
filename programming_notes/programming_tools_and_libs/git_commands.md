@@ -35,6 +35,17 @@ https://www.zhihu.com/question/53601264
 git diff <local branch> <remote>/<remote branch>
 ```
 
+Git diff代码比较的高级技巧 https://blog.csdn.net/offbye/article/details/6592563
+```
+比较不同的commit，使用以下命令就可以了 
+git difftool -t meld -y  commitId1  commitId2 
+
+//由于meld依赖python3，所以linux上我是常用这个命令：git difftool -t vimdiff -y HEAD HEAD~
+//————该命令在operator-sdk生成operator和CRD的框架时候很用于，每次执行一个operator-sdk的命令就commit一次，
+//————然后对比相邻两个commit就知道干了点啥，比 find ./ -mmin 1 好用多了。后者只能看出来一分钟内哪些文件变了，
+//————但是看不出怎么变了。并且还有可能不准确，因为有时候变动的文件太多了，超过1分钟了。
+```
+
 ----------------------------------------------------------------------------------------------------
 
 ### git merge
