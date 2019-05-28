@@ -342,7 +342,16 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 - Extend the Kubernetes API with CustomResourceDefinitions https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
 - 使用CRD(CustomResourceDefinitions)扩展Kubernetes API https://k8smeetup.github.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions/
 
+### Operator Framework
+
 Operators https://coreos.com/operators/
+
+Writing Your First Kubernetes Operator https://medium.com/faun/writing-your-first-kubernetes-operator-8f3df4453234
+- etcd operator creates/configures/manages etcd clusters atop Kubernetes https://coreos.com/blog/introducing-the-etcd-operator.html || https://github.com/coreos/etcd-operator
+
+Extending Kubernetes: Create Controllers for Core and Custom Resources https://medium.com/@trstringer/create-kubernetes-controllers-for-core-and-custom-resources-62fc35ad64a3
+- > A Deep Dive Into Kubernetes Controllers https://engineering.bitnami.com/articles/a-deep-dive-into-kubernetes-controllers.html
+- > Kubewatch, An Example Of Kubernetes Custom Controller https://engineering.bitnami.com/articles/kubewatch-an-example-of-kubernetes-custom-controller.html
 
 ## k8s external service and CNAME
 
