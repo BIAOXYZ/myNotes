@@ -1,6 +1,7 @@
 
 
-第1章 部署虚拟环境安装linux系统。 https://www.linuxprobe.com/chapter-01.html
+# [第1章 部署虚拟环境安装linux系统。](https://www.linuxprobe.com/chapter-01.html)
+
 - 1.4 重置root用户密码
 - 1.5 RPM红帽软件包
 ```
@@ -35,3 +36,4 @@ yum groupinfo 软件包组 	     查询指定的软件包组信息
   - > 无论怎样，RHEL 7系统选择systemd初始化进程服务已经是一个既定事实，因此也没有了“运行级别”这个概念，Linux系统在启动时要进行大量的初始化工作，比如挂载文件系统和交换分区、启动各类进程服务等，这些都可以看作是一个一个的单元（Unit），systemd用目标（target）代替了System V init中运行级别的概念，这两者的区别如表1-3所示。
   - > 如果有读者之前学习过RHEL 6系统，或者已经习惯使用service、chkconfig等命令来管理系统服务，那么现在就比较郁闷了，因为在RHEL 7系统中是使用systemctl命令来管理服务的。表1-4和表1-5所示RHEL 6系统中System V init命令与RHEL 7系统中systemctl命令的对比，您可以先大致了解一下，后续章节中会经常用到它们。
 
+# [第12章 使用Samba或NFS实现文件共享。](https://www.linuxprobe.com/chapter-12.html) 
