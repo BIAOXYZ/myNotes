@@ -1015,6 +1015,21 @@ https://github.com/blog/2463-github-welcomes-all-ci-tools
 Github装逼指南——Travis CI 和 Codecov
 https://segmentfault.com/a/1190000004415437
 
+#### ZenHub
+
+ZenHub - Agile Project Management for GitHub -- A better way to manage your GitHub Issues https://www.zenhub.com/
+> https://app.zenhub.com/dashboard/o/biaoxyz/integrations
+
+如何使用 Issue 管理软件项目？ http://www.ruanyifeng.com/blog/2017/08/issue.html
+> 许多第三方工具可以增强 Github 的看板功能，最著名的是 Zenhub，这里就不详细介绍了。
+
+#### Coveralls
+
+如果你用Github，可以这样提高效率 https://www.jianshu.com/p/f0f65f15d295
+- > 代码覆盖率 — Coveralls
+  >> COVERALLS https://coveralls.io/
+- > 持续集成工具再加上 flow.ci 吧 https://flow.ci :relaxed: // 进去看了下，国产的。姑且mark支持一下吧，有空可以考虑研究下。  
+
 #### Heroku
 
 <<国内有没有类似heroku的云服务平台？>>
