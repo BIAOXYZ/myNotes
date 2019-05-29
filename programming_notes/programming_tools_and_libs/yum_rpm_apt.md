@@ -1,6 +1,16 @@
 
 # yum
 
+## 常用yum command个人总结
+
+```
+
+```
+
+## yum general
+
+Yum Command Cheat Sheet for Red Hat Enterprise Linux https://access.redhat.com/articles/yum-cheat-sheet
+
 Yum 学习笔记 https://segmentfault.com/a/1190000016194128
 
 ## yum配置
@@ -10,6 +20,10 @@ yum配置与使用(很详细) http://www.cnblogs.com/xiaochaohuashengmi/archive/
 ## yum命令
 
 linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.html
+
+***yum update vs yum upgrade***:
+- In CentOS, what is the difference between yum update and yum upgrade? https://unix.stackexchange.com/questions/55777/in-centos-what-is-the-difference-between-yum-update-and-yum-upgrade
+  * > `yum upgrade` forces the removal of obsolete packages, while `yum update` may or may not also do this. The removal of obsolete packages can be risky, as it may remove packages that you use. This makes `yum update` the safer option.
 
 ## yum其他
 
