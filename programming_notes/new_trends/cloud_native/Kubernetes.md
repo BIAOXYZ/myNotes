@@ -349,6 +349,8 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 
 Operators https://coreos.com/operators/
 
+Operator Framework - Google Groups https://groups.google.com/forum/#!forum/operator-framework
+
 Writing Your First Kubernetes Operator https://medium.com/faun/writing-your-first-kubernetes-operator-8f3df4453234
 - etcd operator creates/configures/manages etcd clusters atop Kubernetes https://coreos.com/blog/introducing-the-etcd-operator.html || https://github.com/coreos/etcd-operator
 
