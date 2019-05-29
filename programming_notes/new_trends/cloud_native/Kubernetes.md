@@ -259,6 +259,9 @@ Kubernetes中的Taint和Toleration（污点和容忍） https://jimmysong.io/pos
 
 ## kubernetes ConfigMap
 
+- Configure a Pod to Use a ConfigMap https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/
+- 使用ConfigMap来配置Redis https://kubernetes.io/zh/docs/tutorials/configuration/configure-redis-using-configmap/
+
 Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
 
 Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
