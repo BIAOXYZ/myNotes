@@ -8,6 +8,11 @@ GitHub - What's this “Pro” tag on my profile? https://webapps.stackexchange.
 你不知道的Github使用技巧 https://www.jianshu.com/p/1840d00c2b77
 - impress.js/reveal.js + GitHub Pages = 在线 PPT
   * The HTML Presentation Framework https://revealjs.com || https://github.com/hakimel/reveal.js
+  
+GitHub Developer https://developer.github.com/program/
+>> 注：申请`Developer Program Member`链接
+
+Extend GitHub https://github.com/marketplace  
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
