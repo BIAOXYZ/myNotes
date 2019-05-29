@@ -34,6 +34,11 @@ Production-Grade Container Scheduling and Management https://kubernetes.io || ht
 Kubernetes community content https://github.com/kubernetes/community
 - Kubernetes Contributor Guide https://github.com/kubernetes/community/blob/master/contributors/guide/README.md
 
+## kubernetes 官方其他
+
+kubernetes Community https://kubernetes.io/community/
+- Kubernetes Slack https://kubernetes.slack.com/ || https://slack.k8s.io/ || https://github.com/kubernetes/community/blob/master/communication/slack-guidelines.md
+
 ## kubernetes 中文社区
 
 Kubernetes中文社区 https://www.kubernetes.org.cn/
