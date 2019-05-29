@@ -216,6 +216,8 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 - Configuring permissions in Kubernetes with RBAC https://medium.com/containerum/configuring-permissions-in-kubernetes-with-rbac-a456a9717d5d
 - Configuring RBAC For Your Kubernetes Service Accounts https://medium.com/@lestrrat/configuring-rbac-for-your-kubernetes-service-accounts-c348b64eb242
 
+使用kubectl访问Kubernetes集群时的身份验证和授权 https://tonybai.com/2018/06/14/the-authentication-and-authorization-of-kubectl-when-accessing-k8s-cluster/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes内部对象
