@@ -229,6 +229,10 @@ source ~/.git-completion.bash
 ####################
 ```
 
+.7 Git 基础 - 技巧和窍门 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
+> 如果你用的是 Bash shell，可以试试看 Git 提供的自动补全脚本。下载 Git 的源代码，进入 `contrib/completion` 目录，会看到一个 `git-completion.bash` 文件。将此文件复制到你自己的用户主目录中（译注：按照下面的示例，还应改名加上点：`cp git-completion.bash ~/.git-completion.bash`），并把下面一行内容添加到你的 `.bashrc` 文件中：
+>> `source ~/.git-completion.bash`
+
 让 Shell 命令提示符显示 Git 分支名称 https://www.jianshu.com/p/82783f76a868
 ```shell
 function git-branch-name {
