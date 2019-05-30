@@ -48,7 +48,16 @@ Kaizo Mario http://kaizomario.techyoshi.com/
 有什么好玩的网页游戏？ - 青天璇的回答 - 知乎 https://www.zhihu.com/question/21016962/answer/669211976
 > 这三款是我平常喜欢的，更多的在线页游可以看这里：io游戏集结 http://iogames.space/
 
+## 雀魂麻将
+
 https://www.bilibili.com/video/av42263924
 > 一个《天才麻将少女》的搞笑介绍，最后广告推广了一个叫“雀姬”的麻将类游戏，还有佐藤利奈配音呢。不过弹幕里一堆说“雀魂”的。随便搜了下，萌娘百科都有词条，可见应该还可以，想着如果不错可以和媳妇儿一起玩。不过注册了以后发现要实名和绑定身份证。。。还是先算了，回头试试美服日服之类的好了。。。
->> 雀魂麻将 https://zh.moegirl.org/%E9%9B%80%E9%AD%82%E9%BA%BB%E5%B0%86
+
+- 雀魂麻将 https://zh.moegirl.org/%E9%9B%80%E9%AD%82%E9%BA%BB%E5%B0%86 【萌百】
+- 游戏官网：
+  * Mahjong Soul https://mahjongsoul.yo-star.com/ 【美服】
+  * 雀魂麻雀 https://mahjongsoul.com/ 【日服】
+  * 雀魂麻将 https://majsoul.union-game.com/ 【（垃圾）国服】
+- 雀魂麻将majsoul https://space.bilibili.com/353240497/ 【B站主页】
+- 雀魂麻将majsoul https://weibo.com/majsoul 【新浪微博】
 
