@@ -154,6 +154,11 @@ Comparison of remote desktop software https://en.wikipedia.org/wiki/Comparison_o
 
 GotoHTTP https://gotohttp.com/
 
+## 能支持手机的
+
+AirDroid https://www.airdroid.com/
+> http://web.airdroid.com/
+
 RemoDroid https://remodroid.com/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
