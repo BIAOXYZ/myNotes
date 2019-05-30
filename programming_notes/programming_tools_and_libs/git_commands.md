@@ -206,7 +206,7 @@ git init
 <<git/github初级运用自如>>
 https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
-### git彩色显示分支名
+### git彩色显示分支名和命令自动补全
 
 ```shell
 之前在华为的时候用的是这个，忘了是哪儿查到的了已经：
@@ -230,8 +230,18 @@ source ~/.git-completion.bash
 ```
 
 .7 Git 基础 - 技巧和窍门 https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8
-> 如果你用的是 Bash shell，可以试试看 Git 提供的自动补全脚本。下载 Git 的源代码，进入 `contrib/completion` 目录，会看到一个 `git-completion.bash` 文件。将此文件复制到你自己的用户主目录中（译注：按照下面的示例，还应改名加上点：`cp git-completion.bash ~/.git-completion.bash`），并把下面一行内容添加到你的 `.bashrc` 文件中：
->> `source ~/.git-completion.bash`
+1. > 如果你用的是 Bash shell，可以试试看 Git 提供的自动补全脚本。下载 Git 的源代码，进入 `contrib/completion` 目录，会看到一个 `git-completion.bash` 文件。将此文件复制到你自己的用户主目录中（译注：按照下面的示例，还应改名加上点：`cp git-completion.bash ~/.git-completion.bash`），并把下面一行内容添加到你的 `.bashrc` 文件中：
+   >> `source ~/.git-completion.bash`
+2. > 也可以为系统上所有用户都设置默认使用此脚本。Mac 上将此脚本复制到 `/opt/local/etc/bash_completion.d` 目录中，Linux 上则复制到 `/etc/bash_completion.d/` 目录中。这两处目录中的脚本，都会在 Bash 启动时自动加载。
+
+>>> 注：实际上第二点不太准确：一、根据不同的linux发行版，`bash-completion`自动完成功能的目录可能不同，所以需要视情况而定。二、git对应的自动补全命令脚本/文件的名字也可能不同，有的叫`git-completion.bash`，有的就叫`git`。三、即使正确的自动补全脚本/文件放在正确的`bash-completion`自动完成目录里了，也不一定会自动执行啊，所以最好在自己的`.bashrc`文件里加上下面[这段代码](https://stackoverflow.com/questions/11173447/how-can-i-set-up-autocompletion-for-git-commands)：
+```
+for file in /etc/bash_completion.d/* ; do
+    source "$file"
+done
+```
+
+### git彩色显示分支名2
 
 让 Shell 命令提示符显示 Git 分支名称 https://www.jianshu.com/p/82783f76a868
 ```shell
