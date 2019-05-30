@@ -162,6 +162,27 @@ $ source ~/.bashrc
 ```
 > 实际上原文里这种办法不好，因为往`~/.bashrc`里写的东西太多了。我看了下`kubectl completion bash`输出的内容有7000多行。。。用下面这个：
 >> echo "source <(kubectl completion bash)" >> ~/.k8sshortkeys && echo "# for k8s auto-completion" >> ~/.bashrc && echo "source ~/.k8sshortkeys" >> ~/.bashrc && source ~/.bashrc
+>>> 劳资真是服了，上面的命令在网上一个临时环境可以，到我机器就不行。。。我打了`kubectl des [TAB][TAB]`，弹出下面错误：
+```
+root@cloudsec2:~$ kubectl des-bash: _get_comp_words_by_ref: command not found
+-bash: _get_comp_words_by_ref: command not found
+
+Error: unknown command "des" for "kubectl"
+
+Did you mean this?
+        set
+        get
+        describe
+
+Run 'kubectl --help' for usage.
+unknown command "des" for "kubectl"
+
+Did you mean this?
+        set
+        get
+        describe
+   
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
