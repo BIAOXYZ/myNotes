@@ -79,6 +79,10 @@ Ansible入门 https://getansible.com/
 
 Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansible/
 
+# Ansible modules
+
+k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
+
 # Ansible其他
 
 Ansible 进阶技巧 https://www.ibm.com/developerworks/cn/linux/1608_lih_ansible/index.html
