@@ -55,6 +55,11 @@ apt-get命令 http://man.linuxde.net/apt-get
 
 # dpkg
 
+***From（Ubuntu或Debian）官方网站:***
+- dpkg https://help.ubuntu.com/lts/serverguide/dpkg.html
+- 5.4. 通过dpkg来操作软件包 https://www.debian.org/doc/manuals/debian-handbook/sect.manipulating-packages-with-dpkg.zh-cn.html
+
+Ubuntu下deb包的安装方法 https://blog.csdn.net/kevinhg/article/details/5934462
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
