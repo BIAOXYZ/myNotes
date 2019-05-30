@@ -258,6 +258,20 @@ Kubernetes对象之DaemonSet https://www.jianshu.com/p/800f049004ec
 
 Kubernetes DaemonSet的滚动升级 https://blog.frognew.com/2017/08/kubernetes-rolling-update-daemonset.html
 
+## kubernetes ReplicaSet
+
+ReplicaSet https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+
+Kubernetes对象之ReplicaSet https://www.jianshu.com/p/fd8d8d51741e
+
+### ReplicaSet和另外两个类似对象的区别
+
+Kubernetes Replication Controller, Replica Set and Deployments: Understanding replication options https://www.mirantis.com/blog/kubernetes-replication-controller-replica-set-and-deployments-understanding-replication-options/
+- > Replica Sets are declared in essentially the same way as Replication Controllers, except that they have more options for the selector. 
+- > Deployments are intended to replace Replication Controllers.  They provide the same replication functions (through Replica Sets) and also the ability to rollout changes and roll them back if necessary.
+
+What is the difference between ReplicaSet and ReplicationController? https://stackoverflow.com/questions/36220388/what-is-the-difference-between-replicaset-and-replicationcontroller
+
 ## kubernetes Taints(污点)和Tolerations(容忍)
 
 Kubernetes Pod调度进阶：Taints(污点)和Tolerations(容忍) https://blog.frognew.com/2018/05/taint-and-toleration.html
