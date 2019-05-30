@@ -151,6 +151,18 @@ Kubernetes The Hard Way -- Bootstrap Kubernetes the hard way on Google Cloud Pla
 - 使用kubeadm安装Kubernetes 1.14 https://blog.frognew.com/2019/04/kubeadm-install-kubernetes-1.14.html
 - 使用kubeadm安装Kubernetes 1.12 https://blog.frognew.com/2018/10/kubeadm-install-kubernetes-1.12.html
 
+## kuberbetes 集群配置
+
+### kubernetes命令自动补全
+
+手把手教你打造高效的 Kubernetes 命令行终端 https://juejin.im/entry/5b99ce546fb9a05ce1723a7a
+```
+$ echo "source <(kubectl completion bash)" >> ~/.bashrc
+$ source ~/.bashrc
+```
+> 实际上原文里这种办法不好，因为往`~/.bashrc`里写的东西太多了。我看了下`kubectl completion bash`输出的内容有7000多行。。。用下面这个：
+>> echo "source <(kubectl completion bash)" >> ~/.k8sshortkeys && echo "# for k8s auto-completion" >> ~/.bashrc && echo "source ~/.k8sshortkeys" >> ~/.bashrc && source ~/.bashrc
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 组件
