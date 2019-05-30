@@ -152,6 +152,10 @@ Comparison of remote desktop software https://en.wikipedia.org/wiki/Comparison_o
 14 Free Remote Access Software Tools https://www.lifewire.com/free-remote-access-software-tools-2625161
 - 02 UltraVNC
 
+GotoHTTP https://gotohttp.com/
+
+RemoDroid https://remodroid.com/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## teamviewer
