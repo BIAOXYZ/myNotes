@@ -98,6 +98,39 @@ repolist: 25,663
 
 # rpm
 
+Linux rpm 命令参数使用详解［介绍和应用］ https://www.cnblogs.com/xiaochaohuashengmi/archive/2011/10/08/2203153.html
+```
+-ivh：安装显示安装进度--install--verbose--hash
+-Uvh：升级软件包--Update；
+-qpl：列出RPM软件包内的文件信息[Query Package list]；
+-qpi：列出RPM软件包的描述信息[Query Package install package(s)]；
+-qf：查找指定文件属于哪个RPM软件包[Query File]；
+-Va：校验所有的RPM软件包，查找丢失的文件[View Lost]；
+-e：删除包
+```
+```
+rpm -q samba //查询程序是否安装
+
+rpm -ivh  /media/cdrom/RedHat/RPMS/samba-3.0.10-1.4E.i386.rpm //按路径安装并显示进度
+rpm -ivh --relocate /=/opt/gaim gaim-1.3.0-1.fc4.i386.rpm    //指定安装目录
+
+rpm -ivh --test gaim-1.3.0-1.fc4.i386.rpm　　　 //用来检查依赖关系；并不是真正的安装；
+rpm -Uvh --oldpackage gaim-1.3.0-1.fc4.i386.rpm //新版本降级为旧版本
+
+rpm -qa | grep httpd　　　　　 ＃[搜索指定rpm包是否安装]--all搜索*httpd*
+rpm -ql httpd　　　　　　　　　＃[搜索rpm包]--list所有文件安装目录
+
+rpm -qpi Linux-1.4-6.i368.rpm　＃[查看rpm包]--query--package--install package信息
+rpm -qpf Linux-1.4-6.i368.rpm　＃[查看rpm包]--file
+rpm -qpR file.rpm　　　　　　　＃[查看包]依赖关系
+rpm2cpio file.rpm |cpio -div    ＃[抽出文件]
+
+rpm -ivh file.rpm 　＃[安装新的rpm]--install--verbose--hash
+rpm -ivh
+
+rpm -Uvh file.rpm    ＃[升级一个rpm]--upgrade
+rpm -e file.rpm      ＃[删除一个rpm包]--erase
+```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
