@@ -160,29 +160,9 @@ Kubernetes The Hard Way -- Bootstrap Kubernetes the hard way on Google Cloud Pla
 $ echo "source <(kubectl completion bash)" >> ~/.bashrc
 $ source ~/.bashrc
 ```
-> 实际上原文里这种办法不好，因为往`~/.bashrc`里写的东西太多了。我看了下`kubectl completion bash`输出的内容有7000多行。。。用下面这个：
->> echo "source <(kubectl completion bash)" >> ~/.k8sshortkeys && echo "# for k8s auto-completion" >> ~/.bashrc && echo "source ~/.k8sshortkeys" >> ~/.bashrc && source ~/.bashrc
->>> 劳资真是服了，上面的命令在网上一个临时环境可以，到我机器就不行。。。我打了`kubectl des [TAB][TAB]`，弹出下面错误：
-```
-root@cloudsec2:~$ kubectl des-bash: _get_comp_words_by_ref: command not found
--bash: _get_comp_words_by_ref: command not found
-
-Error: unknown command "des" for "kubectl"
-
-Did you mean this?
-        set
-        get
-        describe
-
-Run 'kubectl --help' for usage.
-unknown command "des" for "kubectl"
-
-Did you mean this?
-        set
-        get
-        describe
-   
-```
+> 实际上原文里这种办法不是最好，`~/.bashrc`里会紧跟着之前已有的内容在下面写一行`source <(kubectl completion bash)`。用下面这个（第一句是先写入两个空行，如果只写入一个空行可以简单的`echo >> ~/.bashrc`——参见linux command echo部分吧）：
+>> echo -e "\n" >> ~/.bashrc && echo "# This is for k8s command auto-completion" >> ~/.bashrc && echo "source <(kubectl completion bash)" >> ~/.bashrc && source ~/.bashrc
+>>> openshift的命令自动完成最简单的方式是在`~/.bashrc`里写上`source <( oc completion bash )`。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
