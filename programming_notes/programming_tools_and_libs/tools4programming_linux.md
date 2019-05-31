@@ -1,4 +1,38 @@
 
+### bash-completion
+
+RedHat - yum install completion https://serverfault.com/questions/511876/redhat-yum-install-completion
+- > first check that you have the bash_completion package installed;
+  ```
+  $ rpm -qa | grep compl
+  bash-completion-2.1-2.fc18.noarch
+  ```
+
+Bash completion is very incomplete on centos 7 https://unix.stackexchange.com/questions/264102/bash-completion-is-very-incomplete-on-centos-7
+- > You might want to try `bash-completion-extras`. It's currently still in epel-testing, but will eventually be released into epel. Right now, you should be able to run: `yum --enablerepo=epel-testing install bash-completion-extras` to get bash-completion-extras.
+  >> notes: 补充一下，`bash-completion-extras`现在已经进epel了，所以安装的话和安装`bash-completion`一样 。有人喜欢直接这样装：`yum install bash-completion bash-completion-extras`，但是我好像一般还是简单点用`yum install bash-completion`安装。
+- > I have the bash-completion package installed on my CentOS system and by default it's got plenty of support for many applications. Check the version you have also, just in case.
+```
+$  yum list installed | grep completion
+bash-completion.noarch                1:1.3-7.el6               @epel
+$  repoquery --list bash-completion.noarch 
+/etc/bash_completion
+/etc/bash_completion.d
+/etc/bash_completion.d/abook
+/etc/bash_completion.d/ant
+/etc/bash_completion.d/apt
+/etc/bash_completion.d/aspell
+/etc/bash_completion.d/autoconf
+/etc/bash_completion.d/automake
+/etc/bash_completion.d/autorpm
+/etc/bash_completion.d/bash-builtins
+/etc/bash_completion.d/bind-utils
+/etc/bash_completion.d/bitkeeper
+/etc/bash_completion.d/bittorrent
+...
+...
+```
+
 ### SSH & SSL & TLS
 
 <<SSH用私钥登录远程服务器时提示私钥不安全>>
