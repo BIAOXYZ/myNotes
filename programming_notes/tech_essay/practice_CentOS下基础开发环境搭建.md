@@ -132,6 +132,73 @@ Server: Docker Engine - Community
   Experimental:     false
 ```
 
+## docker升级
+
+背景是有个openshift的单节点环境，因为安装的时候按攻略里只安了`1.13`版本的docker（也就是最低的足够用的版本），后面有些新版本才有的功能就用不了，于是想着升级一下docker版本。但是又怕影响openshift环境——因为网上大多数给的办法都是**先卸载已有docker，再安装新版本docker**来升级。这个帖子里【[Upgrade docker on CentOS 7](https://stackoverflow.com/questions/26472586/upgrade-docker-on-centos-7)】有提到这样升级可能对镜像有影响，balabala。最后找了半天，还是一咬牙，用**卸载-重装新版本**的办法（一切按官方文档[Uninstall old versions + Install Docker CE](https://docs.docker.com/install/linux/docker-ce/centos/)来），结果啥事都没有，白担心了。。。
+```
+root@openshiftsingle dockerup $ sudo yum remove docker \
+>                   docker-client \
+>                   docker-client-latest \
+>                   docker-common \
+>                   docker-latest \
+>                   docker-latest-logrotate \
+>                   docker-logrotate \
+>                   docker-engine
+
+//大部分提示信息省略
+Removed:
+  docker.x86_64 2:1.13.1-96.gitb2f74b2.el7.centos                docker-client.x86_64 2:1.13.1-96.gitb2f74b2.el7.centos
+  docker-common.x86_64 2:1.13.1-96.gitb2f74b2.el7.centos
+
+Complete!
+root@openshiftsingle dockerup $ docker version
+bash: docker: command not found
+
+----------------------------------------------------------------------------------------------------
+
+root@openshiftsingle dockerup $ yum install -y yum-utils \
+>   device-mapper-persistent-data \
+>   lvm2
+
+//大部分提示信息省略
+Updated:
+  lvm2.x86_64 7:2.02.180-10.el7_6.7
+
+Dependency Updated:
+  device-mapper.x86_64 7:1.02.149-10.el7_6.7                       device-mapper-event.x86_64 7:1.02.149-10.el7_6.7
+  device-mapper-event-libs.x86_64 7:1.02.149-10.el7_6.7            device-mapper-libs.x86_64 7:1.02.149-10.el7_6.7
+  lvm2-libs.x86_64 7:2.02.180-10.el7_6.7
+
+Complete!
+
+----------------------------------------------------------------------------------------------------
+
+root@openshiftsingle dockerup $ yum-config-manager \
+>     --add-repo \
+>     https://download.docker.com/linux/centos/docker-ce.repo
+Loaded plugins: fastestmirror
+adding repo from: https://download.docker.com/linux/centos/docker-ce.repo
+grabbing file https://download.docker.com/linux/centos/docker-ce.repo to /etc/yum.repos.d/docker-ce.repo
+repo saved to /etc/yum.repos.d/docker-ce.repo
+
+----------------------------------------------------------------------------------------------------
+
+root@openshiftsingle dockerup $ yum install -y docker-ce docker-ce-cli containerd.io
+
+//大部分提示信息省略
+Installed:
+  containerd.io.x86_64 0:1.2.5-3.1.el7       docker-ce.x86_64 3:18.09.6-3.el7       docker-ce-cli.x86_64 1:18.09.6-3.el7
+
+Replaced:
+  runc.x86_64 0:1.0.0-59.dev.git2abd837.el7.centos
+
+Complete!
+
+----------------------------------------------------------------------------------------------------
+
+后面的建docker用户组什么的不用再做了（卸载的时候用户组没动）；但是systemctl start docker; systemctl enable docker还得执行。
+```
+
 ## docker-compose安装
 
 - 二进制方式安装docker-compose
