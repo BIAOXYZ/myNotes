@@ -36,6 +36,64 @@ linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.h
 
 yum - epel源 https://segmentfault.com/a/1190000016344259
 
+Centos7.x RHEL 配置EPEL第三方YUM源 https://blog.csdn.net/u011435712/article/details/48751275
+```
+如何安装 Epel源到 RHEL/CentOS 7/6/5？通过wget命令下载RPM文件，然后安装。
+
+RHEL/CentOS 7
+# wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+# rpm -ivh epel-release-7.noarch.rpm
+
+RHEL/CentOS 6 
+# wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+# rpm -ivh epel-release-6.noarch.rpm
+
+----------------------------------------------------------------------------------------------------
+
+如何检查epel是否安装成功？使用一下命令：
+# yum repolist
+
+----------------------------------------------------------------------------------------------------
+
+如何使用epel源安装软件？例如想查看cacti信息
+# yum --enablerepo=epel info cacti  
+
+安装则执行以下命令：
+# yum --enablerepo=epel install cacti
+
+Note: Epel的配置文件在/etc/yum.repos.d/epel.repo.
+```
+
+>> 有的攻略提到也可以用yum方式直接装epel（`yum install -y epel-release`），实战了一把。因为感觉还是能直接yum就直接yum，让软件自动解决依赖问题，比手动用rpm方式稳。
+```
+root@cloudsec2:~$ yum repolist
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+repo id                                                    repo name                                                     status
+base/7/x86_64                                              CentOS-7 - Base                                               10,019
+docker-ce-stable/x86_64                                    Docker CE Stable - x86_64                                         43
+extras/7/x86_64                                            CentOS-7 - Extras                                                409
+updates/7/x86_64                                           CentOS-7 - Updates                                             1,982
+repolist: 12,453
+
+root@cloudsec2:bash-completion$ yum install -y epel-release
+...
+...
+...
+
+root@cloudsec2:bash-completion$ yum repolist
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * epel: mirrors.cat.pdx.edu
+repo id                                          repo name                                                               status
+base/7/x86_64                                    CentOS-7 - Base                                                         10,019
+docker-ce-stable/x86_64                          Docker CE Stable - x86_64                                                   43
+*epel/x86_64                                     Extra Packages for Enterprise Linux 7 - x86_64                          13,210
+extras/7/x86_64                                  CentOS-7 - Extras                                                          409
+updates/7/x86_64                                 CentOS-7 - Updates                                                       1,982
+repolist: 25,663
+```
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # rpm
