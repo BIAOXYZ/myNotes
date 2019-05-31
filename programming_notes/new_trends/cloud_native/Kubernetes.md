@@ -164,6 +164,24 @@ $ source ~/.bashrc
 >> echo -e "\n" >> ~/.bashrc && echo "# This is for k8s command auto-completion" >> ~/.bashrc && echo "source <(kubectl completion bash)" >> ~/.bashrc && source ~/.bashrc
 >>> openshift的命令自动完成最简单的方式是在`~/.bashrc`里写上`source <( oc completion bash )`。
 
+***补充：上述kubernetes的命令自动完成方法依赖于bash-completion功能（ “bash-completion package should be installed first.” [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ）。我机器最开始没安装，我打了`kubectl des [TAB][TAB]`，会弹出下面错误：***
+```	
+root@cloudsec2:~$ kubectl des-bash: _get_comp_words_by_ref: command not found	
+-bash: _get_comp_words_by_ref: command not found	
+ Error: unknown command "des" for "kubectl"	
+ Did you mean this?	
+        set	
+        get	
+        describe	
+ Run 'kubectl --help' for usage.	
+unknown command "des" for "kubectl"	
+ Did you mean this?	
+        set	
+        get	
+        describe	
+   	
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 组件
