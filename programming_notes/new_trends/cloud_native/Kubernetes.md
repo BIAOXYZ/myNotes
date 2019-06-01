@@ -322,7 +322,9 @@ Kubernetes的ConfigMap详解 https://blog.csdn.net/liukuan73/article/details/794
 
 Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
 
-Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
+【by Jimmy Song】
+- Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
+- Kubernetes ConfigMap热更新测试 https://jimmysong.io/posts/kubernetes-configmap-hot-update/
 
 ## kubernetes Container Lifecycle Hooks
 
