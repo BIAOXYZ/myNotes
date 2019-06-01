@@ -81,6 +81,10 @@ Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansibl
 
 # Ansible modules
 
+## kubernetes related ansible modules
+
+k8s_scale – Set a new size for a Deployment, ReplicaSet, Replication Controller, or Job https://docs.ansible.com/ansible/latest/modules/k8s_scale_module.html
+
 k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
 
 # Ansible Galaxy
