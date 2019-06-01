@@ -374,6 +374,8 @@ From Draveness's Blog 【面向信仰编程】：
 
 Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
 
+kubernetes源码阅读 kubelet初探 - fanbin的文章 - 知乎 https://zhuanlan.zhihu.com/p/35710779
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # k8s项目相关
