@@ -83,6 +83,8 @@ Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansibl
 
 ## kubernetes related ansible modules
 
+使用 Ansible 管理 Kubernetes 资源 http://xcodest.me/use-ansible-manage-kubernetes-resources.html
+
 k8s_scale – Set a new size for a Deployment, ReplicaSet, Replication Controller, or Job https://docs.ansible.com/ansible/latest/modules/k8s_scale_module.html
 
 k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
