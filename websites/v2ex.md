@@ -12,3 +12,6 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 
 cpython 底层实现笔记 https://www.v2ex.com/t/560173
 > Dive into CPython internals, trying to illustrate every detail of CPython implementation | CPython 源码阅读笔记, 多图展示底层实现细节 https://github.com/zpoint/CPython-Internals
+
+shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
+> https://www.shellcheck.net/
