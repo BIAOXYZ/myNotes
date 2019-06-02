@@ -26,6 +26,8 @@ https://www.juzimi.com/ju/1741097
 
 三和人才市场 中国日结1500日元的年轻人们 https://movie.douban.com/subject/30219684/
 
+邵氏经典影片导视 https://www.bilibili.com/blackboard/topic/activity-B_W7upKRM.html
+
 # others
 
 如何通过拍黄片建立起一个互联网帝国 https://www.huxiu.com/article/261886.html
