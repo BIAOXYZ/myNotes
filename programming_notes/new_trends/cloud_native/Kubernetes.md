@@ -27,6 +27,10 @@ Kubernetes Documentation https://kubernetes.io/docs/home/
 Kubernetes 文档 https://kubernetes.io/zh/docs/
 - 使用命令式的方式管理 Kubernetes 对象 https://kubernetes.io/zh/docs/tutorials/object-management-kubectl/imperative-object-management-command/
 
+(generated) API OVERVIEW https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/
+
+Kubernetes API Overview https://kubernetes.io/docs/reference/using-api/api-overview/
+
 ## kubernetes 官方github
 
 Production-Grade Container Scheduling and Management https://kubernetes.io || https://github.com/kubernetes/kubernetes
