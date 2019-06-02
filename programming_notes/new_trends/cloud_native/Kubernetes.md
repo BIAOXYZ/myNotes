@@ -561,3 +561,7 @@ Watch k8s events and trigger Handlers https://github.com/bitnami-labs/kubewatch
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# kubernetes issues
+
+Removing spec.replicas of the Deployment resets replicas count to single replica #67135 https://github.com/kubernetes/kubernetes/issues/67135
+> to stop replicas from being managed by apply, use `kubectl apply edit-last-applied` (or `kubectl apply set-last-applied`) to remove the replicas field from the saved "last applied" state prior to applying the new manifest to keep `apply` from removing the replicas field (which makes the apiserver default back to 1)
