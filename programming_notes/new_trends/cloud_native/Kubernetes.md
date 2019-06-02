@@ -369,8 +369,9 @@ Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s
 
 From Draveness's Blog 【面向信仰编程】：
 - 详解 Kubernetes Pod 的实现原理 https://draveness.me/kubernetes-pod
-- 详解 Kubernetes Job 和 CronJob 的实现原理 https://draveness.me/kubernetes-job-cronjob
+- 详解 Kubernetes Deployment 的实现原理 https://draveness.me/kubernetes-deployment
 - 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
+- 详解 Kubernetes Job 和 CronJob 的实现原理 https://draveness.me/kubernetes-job-cronjob
 
 11.1. client-go的使用及源码分析 https://www.huweihuang.com/kubernetes-notes/develop/client-go.html
 
