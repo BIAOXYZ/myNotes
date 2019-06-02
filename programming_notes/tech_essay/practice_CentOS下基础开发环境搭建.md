@@ -199,6 +199,20 @@ Complete!
 后面的建docker用户组什么的不用再做了（卸载的时候用户组没动）；但是systemctl start docker; systemctl enable docker还得执行。
 ```
 
+```
+呃，事实证明，问题很大。。。各种问题，最后没办法卸载了18.xx.xx版的docker（docker-ce），重新装回了docker 1.13.xx版本。
+然后卸载重装openshift（注意这次卸载后再重装还得把prerequisites.yml重新执行下）。
+
+卸载docker-ce官方给的是下面的语句：
+$ sudo yum remove docker-ce
+$ sudo rm -rf /var/lib/docker
+但是我是执行了三个（不然后面安装openshift时候，至少docker-ce-cli还是会报冲突）：
+yum remove -y docker-ce
+yum remove -y docker-ce-cli
+yum remove -y containerd.io
+但是我没有执行rm -rf /var/lib/docker，说白了就是没清理镜像，没有发现有什么docker相关的影响。
+```
+
 ## docker-compose安装
 
 - 二进制方式安装docker-compose
