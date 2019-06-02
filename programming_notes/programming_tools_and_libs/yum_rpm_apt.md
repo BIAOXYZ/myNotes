@@ -29,6 +29,13 @@ linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.h
 
 在CentOS系统中使用yum安装指定版本软件 https://blog.csdn.net/cy309173854/article/details/78668237
 
+## yum问题错误故障等
+
+Why does yum return error: [Errno 256] No more mirrors to try ? https://access.redhat.com/solutions/203603
+```
+我是重装openshift时候碰到的，只是执行了一下yum repolist，然后自动更新了下就好了。
+```
+
 ## EPEL
 
 - 什么是EPEL 及 Centos上安装EPEL https://blog.csdn.net/yasi_xi/article/details/11746255
