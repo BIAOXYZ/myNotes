@@ -63,6 +63,8 @@ Druid调研 http://bigdatadecode.club/Druid%E8%B0%83%E7%A0%94.html
 
 Druid在有赞的实践 https://juejin.im/post/5c7390cce51d457e3d14f1c6
 
+知乎 Druid 集群优化实践 - yangjiaqi415295的文章 - 知乎 https://zhuanlan.zhihu.com/p/67607200
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Scuba
