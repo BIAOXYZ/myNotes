@@ -337,6 +337,9 @@ https://www.zhihu.com/question/24759809/answer/127323061
 点名：上海张江GCC 谁去谁倒霉
 ```
 
+System/360 大型机差点毁了 IBM ！ https://mp.weixin.qq.com/s/K5cqbg5_TkvM4we0vwwFUg
+- > 在IBM，似乎没有人对新系统的进展感到满意。在许多情况下，工程、制造、销售和其他部门的员工每周工作100个小时。工程师们将帆布床搬到了办公室。Watson顺道查看编程方面的进展时，一名工程师吼他出去以便专心工作。堂堂的IBM主席赶忙退了出去。
+
 在英特尔 (Intel) 工作是怎样的一番体验？ - 知乎
 https://www.zhihu.com/question/24694855
 
