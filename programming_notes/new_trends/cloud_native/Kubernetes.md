@@ -415,6 +415,9 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 ### Operator Framework
 
 Operators https://coreos.com/operators/
+- OperatorHub.io https://operatorhub.io/
+- Prometheus Operator 0.17.0 Documentation https://coreos.com/operators/prometheus/docs/latest/
+- etcd Operator 0.9.1 Documentation https://coreos.com/operators/etcd/docs/latest/
 
 Operator Framework - Google Groups https://groups.google.com/forum/#!forum/operator-framework
 
@@ -441,7 +444,7 @@ Accessing External Services https://stackoverflow.com/questions/36000717/accessi
 
 Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/
 
-For CRD of VMs in k8s:
+**`For CRD of VMs in k8s`**:
 - Vm in kubernetes https://stackoverflow.com/questions/33953592/vm-in-kubernetes
 - KubeVirt: Kubernetes Virtualization API and runtime in order to define and manage virtual machines. https://kubevirt.io ||  https://github.com/kubevirt/kubevirt
   * Kubernetes and Virtualization: kubevirt will let you spawn virtual machine on your cluster! https://medium.com/@alezzandro/kubernetes-and-virtualization-kubevirt-will-let-you-spawn-virtual-machine-on-your-cluster-e809914cc783
@@ -472,19 +475,17 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
 - 如何从零开始编写一个Kubernetes CRD http://www.servicemesher.com/blog/kubernetes-crd-quick-start/
   * Extend the Kubernetes API with CustomResourceDefinitions https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
   * CustomResourceDefinition https://kubernetes.feisky.xyz/cha-jian-kuo-zhan/api/customresourcedefinition
-  * Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/
+  * Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/  【:start:】
   * Repository for sample controller. Complements sample-apiserver https://github.com/kubernetes/sample-controller
 - Operator https://jimmysong.io/kubernetes-handbook/develop/operator.html
   * 使用自定义资源扩展API https://jimmysong.io/kubernetes-handbook/concepts/custom-resource.html
     + Introducing Operators: Putting Operational Knowledge into Software https://coreos.com/blog/introducing-operators.html
-  * OperatorHub.io https://operatorhub.io/
+  * OperatorHub.io https://operatorhub.io/  【:start:】
 - Kubernetes CRD Operator 实现指南 - 高策的文章 - 知乎 https://zhuanlan.zhihu.com/p/38372448
   * [Discussion] Operators vs. controller pattern #300 https://github.com/kubeflow/tf-operator/issues/300
 - 开发operator扩展kubernetes 调研整理 https://yucs.github.io/2017/12/21/2017-12-21-operator/
 - 带你入门operator-framework http://dockone.io/article/5877
 - 【kubernetes/k8s概念】CRD CustomResourceDefinition 自定义资源类型 https://blog.csdn.net/zhonglinzhang/article/details/86553744
-
-Extending Kubernetes: Create Controllers for Core and Custom Resources https://medium.com/@trstringer/create-kubernetes-controllers-for-core-and-custom-resources-62fc35ad64a3
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
