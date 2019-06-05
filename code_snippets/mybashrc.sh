@@ -37,5 +37,12 @@ function git-branch-prompt {
 }
 PS1="\u@\h \[\033[0;36m\]\W\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \$ "
 
+## git branch color 3
+
+parse_git_branch() {
+git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
+}
+export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
 ## git auto completion
 source ~/.git-completion.bash
