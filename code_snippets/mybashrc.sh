@@ -19,6 +19,12 @@ export PS4='+{\$LINENO:\${FUNCNAME[0]}} '
 ####################################################################################################
 # git
 
+### 注：原版的PS1变量为如下形式：
+### [root@druidcluster1 ~]# echo $PS1
+### [\u@\h \W]\$
+### 恢复时直接用：export PS1="[\u@\h \W]\$ " 
+### 或者有的系统好像可以省略export直接输入PS1="[\u@\h \W]\$ "即可？
+
 ## git branch color 1
 
 function parse_git_branch_and_add_brackets {
