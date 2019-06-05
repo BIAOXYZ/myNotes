@@ -510,8 +510,15 @@ https://zhidao.baidu.com/question/364840654.html
 
 
 ### 查看80端口被哪个程序占用
+
+查看linux中某个端口（port）是否被占用 https://blog.csdn.net/hsd2012/article/details/51384907
 ```shell
 netstat -anp | grep 80
+
+或者
+
+// lsof -i:端口号
+lsof -i:80 
 ```
 
 <<Linux查看物理CPU个数、核数、逻辑CPU个数>>
