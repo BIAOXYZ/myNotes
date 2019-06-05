@@ -64,7 +64,129 @@ ls -l /backup
 
 ## sed
 
-Unix Sed Tutorial: Advanced Sed Substitution Examples https://www.thegeekstuff.com/2009/10/unix-sed-tutorial-advanced-sed-substitution-examples/
+https://www.thegeekstuff.com/category/sed/
+- Unix Sed Tutorial: Printing File Lines using Address and Patterns https://www.thegeekstuff.com/2009/09/unix-sed-tutorial-printing-file-lines-using-address-and-patterns/
+```
+----------------------------------------------------------------------------------------------------
+Syntax:
+
+# sed -n 'ADDRESS'p filename
+# sed -n '/PATTERN/p' filename
+----------------------------------------------------------------------------------------------------
+
+```
+- Unix Sed Tutorial: Find and Replace Text Inside a File Using RegEx https://www.thegeekstuff.com/2009/09/unix-sed-tutorial-replace-text-inside-a-file-using-substitute-command/
+```
+//注意，这部分的例子全都没有改变原文件thegeekstuff.txt！
+----------------------------------------------------------------------------------------------------
+Syntax:
+
+#sed 'ADDRESSs/REGEXP/REPLACEMENT/FLAGS' filename
+#sed 'PATTERNs/REGEXP/REPLACEMENT/FLAGS' filename
+----------------------------------------------------------------------------------------------------
+$ cat thegeekstuff.txt
+# Instruction Guides
+1. Linux Sysadmin, Linux Scripting etc.
+2. Databases - Oracle, mySQL etc.
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux
+5. Productivity (Too many technologies to explore, not much time available)
+#  Additional FAQS
+6. Windows- Sysadmin, reboot etc.
+----------------------------------------------------------------------------------------------------
+1. Substitute Word “Linux” to “Linux-Unix” Using sed s//
+
+[root@druidcluster1 test]# sed 's/Linux/Linux-Unix/' thegeekstuff.txt
+# Instruction Guides
+1. Linux-Unix Sysadmin, Linux Scripting etc.
+2. Databases - Oracle, mySQL etc.
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux-Unix
+5. Productivity (Too many technologies to explore, not much time available)
+#  Additional FAQS
+6. Windows- Sysadmin, reboot etc.
+----------------------------------------------------------------------------------------------------
+2. Substitute all Appearances of a Word Using sed s//g
+
+[root@druidcluster1 test]# sed 's/Linux/Linux-Unix/g' thegeekstuff.txt
+# Instruction Guides
+1. Linux-Unix Sysadmin, Linux-Unix Scripting etc.
+2. Databases - Oracle, mySQL etc.
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux-Unix
+5. Productivity (Too many technologies to explore, not much time available)
+#  Additional FAQS
+6. Windows- Sysadmin, reboot etc.
+----------------------------------------------------------------------------------------------------
+3. Substitute Only 2nd Occurrence of a Word Using sed s//2
+
+[root@druidcluster1 test]# sed 's/Linux/Linux-Unix/2' thegeekstuff.txt
+# Instruction Guides
+1. Linux Sysadmin, Linux-Unix Scripting etc.
+2. Databases - Oracle, mySQL etc.
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux
+5. Productivity (Too many technologies to explore, not much time available)
+#  Additional FAQS
+6. Windows- Sysadmin, reboot etc.
+----------------------------------------------------------------------------------------------------
+4. Write Changes to a File and Print the Changes Using sed s//gpw
+
+[root@druidcluster1 test]# sed -n 's/Linux/Linux-Unix/gpw output' thegeekstuff.txt
+1. Linux-Unix Sysadmin, Linux-Unix Scripting etc.
+4. Storage in Linux-Unix
+[root@druidcluster1 test]# cat output
+1. Linux-Unix Sysadmin, Linux-Unix Scripting etc.
+4. Storage in Linux-Unix
+----------------------------------------------------------------------------------------------------
+5. Substitute Only When the Line Matches with the Pattern Using sed
+
+[root@druidcluster1 test]# sed '/\-/s/\-.*//g' thegeekstuff.txt
+# Instruction Guides
+1. Linux Sysadmin, Linux Scripting etc.
+2. Databases
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux
+5. Productivity (Too many technologies to explore, not much time available)
+#  Additional FAQS
+6. Windows
+----------------------------------------------------------------------------------------------------
+6. Delete Last X Number of Characters From Each Line Using sed
+
+[root@druidcluster1 test]# sed 's/...$//' thegeekstuff.txt
+# Instruction Gui
+1. Linux Sysadmin, Linux Scripting e
+2. Databases - Oracle, mySQL e
+3. Security (Firewall, Network, Online Security e
+4. Storage in Li
+5. Productivity (Too many technologies to explore, not much time availab
+#  Additional F
+6. Windows- Sysadmin, reboot e
+----------------------------------------------------------------------------------------------------
+7. Eliminate Comments Using sed
+
+[root@druidcluster1 test]# sed -e 's/#.*//' thegeekstuff.txt
+
+1. Linux Sysadmin, Linux Scripting etc.
+2. Databases - Oracle, mySQL etc.
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux
+5. Productivity (Too many technologies to explore, not much time available)
+
+6. Windows- Sysadmin, reboot etc.
+----------------------------------------------------------------------------------------------------
+8. Eliminate Comments and Empty Lines Using sed
+
+[root@druidcluster1 test]# sed -e 's/#.*//;/^$/d'  thegeekstuff.txt
+1. Linux Sysadmin, Linux Scripting etc.
+2. Databases - Oracle, mySQL etc.
+3. Security (Firewall, Network, Online Security etc)
+4. Storage in Linux
+5. Productivity (Too many technologies to explore, not much time available)
+6. Windows- Sysadmin, reboot etc.
+----------------------------------------------------------------------------------------------------
+```
+- Unix Sed Tutorial: Advanced Sed Substitution Examples https://www.thegeekstuff.com/2009/10/unix-sed-tutorial-advanced-sed-substitution-examples/
 
 ## yum
 
