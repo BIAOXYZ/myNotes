@@ -565,6 +565,10 @@ Kubewatch, An Example Of Kubernetes Custom Controller https://engineering.bitnam
 
 Watch k8s events and trigger Handlers https://github.com/bitnami-labs/kubewatch
 
+## Kubeapps (Bitnami)
+
+A web-based UI for deploying and managing applications in Kubernetes clusters https://github.com/kubeapps/kubeapps || https://kubeapps.com/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes issues
