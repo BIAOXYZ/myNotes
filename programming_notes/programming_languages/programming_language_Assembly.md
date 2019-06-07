@@ -12,3 +12,5 @@ Assembly Programming Tutorial https://www.tutorialspoint.com/assembly_programmin
 # 其他
 
 Curated list of awesome things regarding WebAssembly (wasm) ecosystem. https://github.com/mbasso/awesome-wasm
+
+🐹🕸️ Go library to run WebAssembly binaries. https://github.com/wasmerio/go-ext-wasm
