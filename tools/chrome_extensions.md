@@ -70,6 +70,7 @@ Pinbox - 网络收藏夹 https://chrome.google.com/webstore/detail/pinbox-%E7%BD
 - Enhanced Github https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd
 - ZenHub for GitHub https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd
 - Refined GitHub https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
+- Open in Sourcegraph https://chrome.google.com/webstore/detail/open-in-sourcegraph/baoepieekffllnjchpbeckbdcplcifcc
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
