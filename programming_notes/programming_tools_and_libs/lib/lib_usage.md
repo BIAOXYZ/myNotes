@@ -298,6 +298,10 @@ https://pypi.python.org/pypi?%3Aaction=search&term=bitcoin
 ## python machine learning related libs
 --------------------------------------------------
 
+A library for encrypted, privacy preserving deep learning https://github.com/OpenMined/PySyft
+
+A Framework for Machine Learning on Encrypted Data https://github.com/tf-encrypted/tf-encrypted
+
 ### [TensorFlow](https://github.com/tensorflow/tensorflow) (https://tensorflow.org/)
 
 TensorFlow Tutorials with YouTube Videos https://github.com/Hvass-Labs/TensorFlow-Tutorials
