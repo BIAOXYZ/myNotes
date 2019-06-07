@@ -1,6 +1,14 @@
 
-Mac OS X 平台有哪些好用的 SSH 客户端？ - miaowing的回答 - 知乎 https://www.zhihu.com/question/20541129/answer/416759050
-> https://www.royalapplications.com/ts/mac/features
+Mac OS X 平台有哪些好用的 SSH 客户端？ - 知乎 https://www.zhihu.com/question/20541129
+- Mac OS X 平台有哪些好用的 SSH 客户端？ - miaowing的回答 - 知乎 https://www.zhihu.com/question/20541129/answer/416759050
+  > https://www.royalapplications.com/ts/mac/features
+- Mac OS X 平台有哪些好用的 SSH 客户端？ - 我不是大神的回答 - 知乎 https://www.zhihu.com/question/20541129/answer/388101176
+  > http://www.hostbuf.com/t/988.html
+  
+苹果Mac OS X怎样设置鼠标滚轮滑动的方向/反向 https://jingyan.baidu.com/article/2c8c281dfdd6df0009252a40.html
+- 1、首先打开左上角全局菜单中的“偏好设置”
+- 2、然后在偏好设置中找到“鼠标”点击进去
+- 3、最后在“鼠标”设置中把“滚动方向：自然”前面的勾去掉就和windows中一样了。
 
 使用文件保险箱加密 Mac 上的启动磁盘 https://support.apple.com/zh-cn/HT204837
 
