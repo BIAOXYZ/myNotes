@@ -88,7 +88,8 @@ Golang Weekly https://golangweekly.com/
 - https://golangweekly.com/issues/254
 
 Go 每日阅读和 Go 夜读 > Daily Reading Go and Night Reading Go - Go source reading and offline technical or another articles or discussion on every night. https://github.com/developer-learning/reading-go
-> Go 夜读 https://reading.developerlearning.cn/
+- > Go 夜读 https://reading.developerlearning.cn/
+- > Go夜读 at Bilibili https://space.bilibili.com/326749661
 
 Tony Bai 一个程序员的心路历程 https://tonybai.com/
 - 理解Golang包导入 https://tonybai.com/2015/03/09/understanding-import-packages/
