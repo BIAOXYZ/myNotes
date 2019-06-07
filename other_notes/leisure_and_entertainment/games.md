@@ -65,4 +65,10 @@ https://www.bilibili.com/video/av42263924
 
 日本麻将:役牌 https://zh.moegirl.org/%E6%97%A5%E6%9C%AC%E9%BA%BB%E5%B0%86:%E5%BD%B9%E7%89%8C
 
-日麻萌新入门：大佬，为啥我不能和牌啊？（一） https://www.bilibili.com/read/cv1467866/
+***文集：日麻教程***
+- 日麻萌新入门：大佬，为啥我不能和牌啊？（一） https://www.bilibili.com/read/cv1467866/
+- 日麻萌新入门：大佬，为啥我不能和牌啊（二） https://www.bilibili.com/read/cv1488243
+
+【雀魂】日麻女主的养成方法-入门篇 - 甜咖啡的文章 - 知乎 https://zhuanlan.zhihu.com/p/55253292
+
+雀魂契约机制浅析（Ver.20190409） https://www.bilibili.com/read/cv2403794/
