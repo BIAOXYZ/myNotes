@@ -39,7 +39,7 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 
 - Extension Manager https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco
 
-- 恢复关闭标签 https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE/fcjlmbbejgnfpcgiigpgfacipckopdkf
+- 恢复关闭标签 https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE/fcjlmbbejgnfpcgiigpgfacipckopdkf 【这个实际上=`Ctrl + Shift + t`】
 - SimpleUndoClose https://chrome.google.com/webstore/detail/simpleundoclose/emhohdghchmjepmigjojkehidlielknj
 
 - Proxy SwitchyOmega https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
@@ -52,6 +52,7 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 
 - RunMyCode Online https://chrome.google.com/webstore/detail/runmycode-online/iidcnkpdmnopbbkdmneglbelcefgfohf
 - Awesome Screenshot: Screen Video Recorder https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj
+- Search by Image (by Google) https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm
 - Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
 - Bookmark Sidebar https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh
 
@@ -67,6 +68,8 @@ Pinbox - 网络收藏夹 https://chrome.google.com/webstore/detail/pinbox-%E7%BD
 - Sourcegraph https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack
 - MathJax Plugin for Github https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima
 - Enhanced Github https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd
+- ZenHub for GitHub https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd
+- Refined GitHub https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -84,6 +87,13 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 强力推荐！那些你不能错过的 GitHub 插件和工具 https://juejin.im/post/59ade28051882538fd72fa2c
 
 超好用的谷歌浏览器、Sublime Text、Phpstorm、油猴插件合集 https://juejin.im/entry/5ab9bf30f265da237506e930
+
+--------------------------------------------------
+## From ithome
+--------------------------------------------------
+
+收好这10个Chrome扩展，让你的浏览器变得更加强大 ithome.com/0/426/337.htm
+- > Search by Image (by Google)
 
 --------------------------------------------------
 ## From CB
