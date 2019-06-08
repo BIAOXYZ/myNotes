@@ -58,6 +58,26 @@ English环境下
 然后里面其实只改了两项"editor.background"和"sideBar.background"似乎就够了。
 ```
 
+### vscode连接远程服务器开发
+
+VS Code Remote Development https://code.visualstudio.com/docs/remote/remote-overview
+- Remote Development using SSH https://code.visualstudio.com/docs/remote/ssh
+
+VSCode使用Remote插件编辑远程服务器文件 https://www.bilibili.com/video/av52490747/
+```
+一些个人补充：
+1.已经是正式版的功能，不需要insider版本。
+2.插件一装好，在vscode的最左下角（Mac上是这个位置）就有个很明显的标记去连接。
+3.实际上那个记录远程主机和用户列表的config文件不是必需的，只是为了方便。我认为是没必要记，手输一下就完了。会提示：
+> Select configured SSH host or enter user@host
+>> 所以接着输入一下 user@host（比如我是：root@myopenshift，注意本机hosts要能识别myopenshift噢，不然就用ip）就可以了。
+
+总结一下过程：
+1.配好本地主机（window，mac之类的）和远程主机的单向互信，保证在本地主机执行：ssh user@remotehost 时没问题。
+2.下载好对应的vscode插件。
+3.连接。
+```
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ### vscode for go
