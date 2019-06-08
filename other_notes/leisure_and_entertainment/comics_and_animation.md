@@ -13,14 +13,14 @@
 魔法禁书目录 I 18 假冒者 当麻被美琴要求假冒男友，一起逛了打半天，也算吧
 ```
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 名侦探柯南
 
 - 名侦探柯南所有人物推理能力排行？ - 知乎 https://www.zhihu.com/question/67591073
 - 《名侦探柯南》名侦探推理力排行榜！ http://www.sohu.com/a/217757450_99981139
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他动漫
 
@@ -28,9 +28,13 @@
 
 干物妹小埋 https://www.douban.com/note/560451775/ 【其实就是第一集的分集剧情简介】
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 中二病也要谈恋爱
 
 中二病也要谈恋爱 https://zh.moegirl.org/%E4%B8%AD%E4%BA%8C%E7%97%85%E4%B9%9F%E8%A6%81%E8%B0%88%E6%81%8B%E7%88%B1
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 辉夜大小姐想让我告白～天才们的恋爱头脑战～
 
@@ -38,15 +42,21 @@
 
 辉夜大小姐想让我告白~天才们的恋爱头脑战~ https://www.bilibili.com/bangumi/media/md5267730/
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 家有女友
 
 家有女友 https://zh.moegirl.org/%E5%AE%B6%E6%9C%89%E5%A5%B3%E5%8F%8B
 
 柏原もも/柏原桃 http://bangumi.tv/character/66664
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 在下坂本，有何贵干？
 
 在下坂本，有何贵干？ https://zh.moegirl.org/%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%EF%BC%8C%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 妄想学生会
 
@@ -54,12 +64,16 @@
 
 七条天空病娇化是哪集，就是下方图片的出处，第几季第几集 https://zhidao.baidu.com/question/691267779887191924.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 潜行吧!奈亚子
 
 潜行吧!奈亚子 https://zh.moegirl.org/%E6%BD%9C%E8%A1%8C%E5%90%A7!%E5%A5%88%E4%BA%9A%E5%AD%90
 
 【空耳】潜行吧！奈亚子W OP《快来搞死那激萌的萝莉》 https://video.tudou.com/v/XMTc5MjU1NDgyOA==.html 
 >> 竟然还有原版空耳 --> 土豆竟然还活着？ --> 土豆这视频竟然没广告？ --> 这个还能活多久？ 
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 萝黛的后宫玩具
 ***//我的妈呀，钉宫和炮姐的会师。***
@@ -70,9 +84,13 @@
 > 这个视频有毒，后面还有一个钉宫和松冈祯丞的（《漫画家与助手》），不忍直视啊。。。
 >> 漫画家与助手 https://zh.moegirl.org/%E6%BC%AB%E7%94%BB%E5%AE%B6%E4%B8%8E%E5%8A%A9%E6%89%8B
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 一拳超人
 
 《一拳超人》：一个兴趣使然的英雄 http://www.sohu.com/a/123540768_585167
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 下流梗不存在的灰暗世界
 ***//看样子像是二次元的《1984》？***
@@ -80,6 +98,8 @@
 下流梗不存在的灰暗世界 https://zh.moegirl.org/%E4%B8%8B%E6%B5%81%E6%A2%97%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E7%81%B0%E6%9A%97%E4%B8%96%E7%95%8C
 
 下流梗不存在的灰暗世界 下ネタという概念が存在しない退屈な世界 (2015) https://movie.douban.com/subject/26148830/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 我，要成为双马尾
 ***//这个早就听过名字，今天偶然发现几个声优都是毕竟喜欢的，所以也记一下。而且，同时有内田真礼和赤崎千夏，立刻就想到了中二病。。。***
@@ -90,6 +110,7 @@
 
 我，要成为双马尾。 https://www.bilibili.com/bangumi/media/md324/
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 多作品（`为美好的世界献上祝福！` + `笨女孩`）
 
@@ -97,8 +118,16 @@
 - 为美好的世界献上祝福！ https://zh.moegirl.org/zh-hans/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F
 - 笨女孩 https://zh.moegirl.org/zh-hans/%E7%AC%A8%E5%A5%B3%E5%AD%A9
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 待观察动漫
+
+【轻评论】996的福报是在职场广开后宫？梦里什么都有，评《奋斗吧！系统工程师》 - 羽毛的文章 - 知乎 https://zhuanlan.zhihu.com/p/65319356
+> 霓虹的动漫是无所不能的，啥都能做成动漫。。。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 鬼畜
 
@@ -120,7 +149,7 @@
 - 电影《帝国的毁灭》“元首”希特勒饰演者Bruno Ganz去世，享年77岁 https://www.ithome.com/0/409/696.htm
 - 【元首的愤怒】原版 https://www.bilibili.com/video/av22905
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 空耳
 
@@ -129,19 +158,19 @@
 - jb永动机 https://zh.moegirl.org/Jb%E6%B0%B8%E5%8A%A8%E6%9C%BA
 - 马云我赐你姨妈 https://zh.moegirl.org/IGNITE
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 动漫中的梗
 
 bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/topic/neta2018_web.html
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 
 
 声优奖 https://zh.moegirl.org/%E5%A3%B0%E4%BC%98%E5%A5%96
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 萌战
 
