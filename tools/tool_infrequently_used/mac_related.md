@@ -21,6 +21,9 @@ Mac OS X 平台有哪些好用的 SSH 客户端？ - 知乎 https://www.zhihu.co
 ```
 >> 又一个mac装逼的点，呵呵。
 
+macOS/Linux 环境变量设置 - 蒋航的文章 - 知乎 https://zhuanlan.zhihu.com/p/25976099
+> macOS 默认用户环境变量配置文件为 `~/.bash_profile`，Linux 为 `~/.bashrc`。如果不存在 `~/.bash_profile`，则可以自己创建一个 `~/.bash_profile`。
+
 # mac 其他
 
 使用文件保险箱加密 Mac 上的启动磁盘 https://support.apple.com/zh-cn/HT204837
