@@ -8,7 +8,7 @@ Ansible Review or Ansible Refresher https://www.katacoda.com/openshift/courses/a
 本部分只记录了playbook引用role的一种方式，和如何在里面使用动态参数。这个教程本身有问题（远端的ssh连接不上，所有教程里在host01做的都不成功；有些内容缺失，要自己摸索，比如playbook如何引用role），再加上整个教程感觉也就这部分还值得记下，所以没有一丝不差地记录全部内容。
 
 ```
-// 初始目录情况。
+// 初始目录情况。go那个目录至少在这个教程里没有什么操作涉及到，所以不用管。
 
 $ pwd
 /root/tutorial
@@ -16,6 +16,7 @@ $ ll
 total 8
 drwxr-xr-x. 5 root root 4096 May 29 00:01 go
 -rw-r--r--. 1 root root  145 Jun  8 16:24 playbook.yml
+```
 
 ```
 // 初始化一个ansible role后目录情况。ps：时间不要在意，是运行了两次拼的，并不重要。
@@ -30,7 +31,7 @@ drwxr-xr-x.  5 root root 4096 May 29 00:01 go
 ```
 
 ```
-// 观察一下role目录的文件结构。
+// 观察一下这个example-role目录的文件结构。
 
 $ tree example-role/
 example-role/
@@ -78,7 +79,6 @@ $ cat playbook.yml
   hosts: localhost
   roles:
     - role: "example-role"
-$
 ```
 
 ```
