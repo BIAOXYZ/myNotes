@@ -279,4 +279,5 @@ export PATH=$PATH:$GOROOT/bin
 export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 
+mkdir -p $GOPATH/{bin,pkg,src}
 ```
