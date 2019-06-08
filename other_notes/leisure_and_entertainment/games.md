@@ -61,7 +61,19 @@ https://www.bilibili.com/video/av42263924
 - 雀魂麻将majsoul https://space.bilibili.com/353240497/ 【B站主页】
 - 雀魂麻将majsoul https://weibo.com/majsoul 【新浪微博】
 
-### 日式麻将规则
+## 雀姬
+
+雀姬 https://zh.moegirl.org/zh-hans/%E9%9B%80%E5%A7%AC
+- > 雀姬（又名：雀姬麻将）是由微笑科技出品的日本麻将游戏，目前有台服和BILIBILI服。台服于2017年12月开始测试。BILIBILI服于2018年12月28日开启安卓不删档测试，于2019年01月24日开启全平台公测。
+<br> 各个服的关系：台服和BILIBILI服之间数据不互通。
+<br> 台服和国服的IOS和安卓账号也不互通，但能互相对局。
+
+雀姬 https://game.bilibili.com/qjmj/
+- > 首页炮姐配音那个金毛，好暖啊～看这个官方页面说网页版正在开发（终于意识到对二次元这些想一个移动端通吃是不行的了吧。。。）。等出了网页版可以去看看，但是估计不会玩了，没时间；再说应该也比雀魂更坑点？
+
+## 日式麻将规则
+
+日本麻将娘 https://zh.moegirl.org/%E6%97%A5%E6%9C%AC%E9%BA%BB%E5%B0%86%E5%A8%98
 
 日本麻将:役牌 https://zh.moegirl.org/%E6%97%A5%E6%9C%AC%E9%BA%BB%E5%B0%86:%E5%BD%B9%E7%89%8C
 
