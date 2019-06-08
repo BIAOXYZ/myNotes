@@ -89,6 +89,16 @@ k8s_scale – Set a new size for a Deployment, ReplicaSet, Replication Controlle
 
 k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
 
+# Ansible Playbooks and Roles
+
+`Roles` -- `Role Search Path` https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#role-search-path
+```
+Ansible will search for roles in the following way:
+
+- A roles/ directory, relative to the playbook file.
+- By default, in /etc/ansible/roles
+```
+
 # Ansible Galaxy
 
 Ansible Galaxy https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html
