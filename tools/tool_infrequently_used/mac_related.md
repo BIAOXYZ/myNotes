@@ -1,11 +1,23 @@
 
 # mac 软件
 
+- 如何用 MacBook 提高工作效率的【工具篇】 https://juejin.im/post/5ce9d334f265da1bbf68f956
+- 如何用 MacBook 提高工作效率 【配置篇】 https://juejin.im/post/5ce9d77af265da1bb31c1517
+
+## mac ssh软件
+
 Mac OS X 平台有哪些好用的 SSH 客户端？ - 知乎 https://www.zhihu.com/question/20541129
 - Mac OS X 平台有哪些好用的 SSH 客户端？ - miaowing的回答 - 知乎 https://www.zhihu.com/question/20541129/answer/416759050
   > https://www.royalapplications.com/ts/mac/features
 - Mac OS X 平台有哪些好用的 SSH 客户端？ - 我不是大神的回答 - 知乎 https://www.zhihu.com/question/20541129/answer/388101176
   > http://www.hostbuf.com/t/988.html
+  
+## homebrew
+
+Homebrew的正确安装与使用 https://juejin.im/post/5a6d969bf265da3e2366b853
+> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Mac OS下brew的安装和使用 https://www.jianshu.com/p/ab50ea8b13d6
 
 # mac 操作&设置&快捷键
 
