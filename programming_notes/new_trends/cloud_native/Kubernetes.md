@@ -527,6 +527,8 @@ KIND: Kubernetes IN Docker - local clusters for testing Kubernetes https://kind.
 
 Kubernetes controller-tools: Tools to use with the controller-runtime libraries https://github.com/kubernetes-sigs/controller-tools
 
+Deploy a Production Ready Kubernetes Cluster https://github.com/kubernetes-sigs/kubespray
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # projects based on or related to k8s
