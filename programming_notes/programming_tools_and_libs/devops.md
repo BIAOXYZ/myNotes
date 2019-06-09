@@ -99,6 +99,8 @@ Ansible will search for roles in the following way:
 - By default, in /etc/ansible/roles
 ```
 
+Using Variables https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html
+
 # Ansible Galaxy
 
 Ansible Galaxy https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html
