@@ -44,6 +44,11 @@ MacBook中如何将声音音量显示在菜单栏中 https://jingyan.baidu.com/a
 ```
 >> 又一个mac装逼的点，呵呵。
 
+## 目录没有一个直观的向上一级的按钮，得通过那个访达Finder来向上一级
+
+Mac 怎么打开根目录，怎么查看硬盘 https://jingyan.baidu.com/article/acf728fd7138b7f8e510a398.html
+- > 可以利用 “前往”操作,在 “Finder”-》“前往”-》“前往文件夹 ...”,或打开 Finder,按键盘快捷键“Command+Shift+G”,  打开对话框,输入根目录的标识 “ /”,再点击“前往”按钮。
+
 ## 用户“家目录”（实际上这个不是home目录了）下不是用`~/.bashrc`，而是`~/.bash_profile`。但是后者也得自己手动建。
 
 macOS/Linux 环境变量设置 - 蒋航的文章 - 知乎 https://zhuanlan.zhihu.com/p/25976099
