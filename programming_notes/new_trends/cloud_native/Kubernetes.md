@@ -354,6 +354,16 @@ Utilizing Kubernetes Liveness and Readiness Probes to Automatically Recover From
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# kubernetes内部对象II（实际上叫内部对象不太妥当了，比如没有内部对象叫patch）
+
+## kubernetes patch
+
+Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks/run-application/update-api-object-kubectl-patch/
+
+使用 kubectl patch 更新 API 对象 https://k8smeetup.github.io/docs/tasks/run-application/update-api-object-kubectl-patch/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # kubernetes源码
 
 kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
