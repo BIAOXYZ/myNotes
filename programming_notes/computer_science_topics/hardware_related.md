@@ -48,6 +48,9 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 服务器中的u是什么意思 http://blog.chinaunix.net/uid-21505614-id-289333.html
 
+# 内存
+
+内存标签上这串数字，暗藏了内存工作的“秘密” https://www.ithome.com/0/427/495.htm
 
 # 笔记本
 
