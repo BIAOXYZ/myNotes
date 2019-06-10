@@ -1,5 +1,5 @@
 
-# mac 软件
+# `#` Mac 软件
 
 - 如何用 MacBook 提高工作效率的【工具篇】 https://juejin.im/post/5ce9d334f265da1bbf68f956
 - 如何用 MacBook 提高工作效率 【配置篇】 https://juejin.im/post/5ce9d77af265da1bb31c1517
@@ -19,7 +19,7 @@ Homebrew的正确安装与使用 https://juejin.im/post/5a6d969bf265da3e2366b853
 
 Mac OS下brew的安装和使用 https://www.jianshu.com/p/ab50ea8b13d6
 
-# mac 操作&设置&快捷键
+# `#` Mac 操作&设置&快捷键
 
 ## 反人类的鼠标滚轮方向
 
@@ -44,6 +44,17 @@ MacBook中如何将声音音量显示在菜单栏中 https://jingyan.baidu.com/a
 ```
 >> 又一个mac装逼的点，呵呵。
 
+## 自带shell的各种快捷键
+
+Mac 上的“终端”键盘快捷键 https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac
+- > 使用“终端”窗口和标签页
+
+  |操作|快捷键|
+  |--|--|
+  | 将窗口拆分为两个面板 | Command-D |
+  | 关闭拆分面板 | Shift-Command-D |
+
+
 ## 目录没有一个直观的向上一级的按钮，得通过那个访达Finder来向上一级
 
 Mac 怎么打开根目录，怎么查看硬盘 https://jingyan.baidu.com/article/acf728fd7138b7f8e510a398.html
@@ -54,7 +65,7 @@ Mac 怎么打开根目录，怎么查看硬盘 https://jingyan.baidu.com/article
 macOS/Linux 环境变量设置 - 蒋航的文章 - 知乎 https://zhuanlan.zhihu.com/p/25976099
 > macOS 默认用户环境变量配置文件为 `~/.bash_profile`，Linux 为 `~/.bashrc`。如果不存在 `~/.bash_profile`，则可以自己创建一个 `~/.bash_profile`。
 
-# mac 其他
+# `#` Mac 其他
 
 使用文件保险箱加密 Mac 上的启动磁盘 https://support.apple.com/zh-cn/HT204837
 
