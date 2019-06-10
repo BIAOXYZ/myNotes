@@ -91,6 +91,85 @@ http://blog.sina.com.cn/s/blog_49370c500100ov36.html
 windows系统如何给命令起别名？ - rayhy的回答 - 知乎 https://www.zhihu.com/question/51962577/answer/128317488
 > 单独窗口生效：`doskey ls=dir $*` --> 但是就我来看，感觉直接`doskey ls=dir`就可以了。 
 >> 还可以通过修改注册表设置成自动执行。
+```
+----------------------------------------------------------------------------------------------------
+CMD设置别名是用doskey命令。
+
+这个命令只对当前对话有效，如果想打开cmd就能使用的话，修改一下注册表，使得每次启动cmd都先运行一下你的脚本就行。
+doskey ls=dir $* 把这个保存为env.cmd或者env.bat（自己随便命个名啦。）
+然后在注册表HKEY_CURRENT_USER\Software\Microsoft\Command Processor下面加一项AutoRun，把值设为你的脚本路径。
+懒得找的话，把下面AutoRun的路径改成你自己的路径，保存为.reg文件双击运行就行。
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+"AutoRun"="%USERPROFILE%\\env.cmd"
+----------------------------------------------------------------------------------------------------
+```
+
+### （修改注册表使windows系统别名设置能够自动执行）个人实战过程：
+
+> 上面是原作者的过程，实际上有些细节没完全说出来，比如windows该死的单斜杠和双斜杠问题。
+>> 实际上如果肯上传些图片，效果会更好也更容易叙述。我都截了注册表的图了，但是最终还是决定不使用图片！因为仓库管理，迁移等等原因吧。
+
+整个过程涉及一个路径和两个文件：
+- `C:\Users\LiangLiu\mydata`：这个是存放自动执行脚本的路径。
+- `lslldir.bat`：每次开windows的命令提示符需要自动执行的脚本，里面用doskey命令设置了相关的别名。**这个文件必须处于上面的路径里**。
+- `addcmd.reg`：这个文件不是必须的，完全可以手动向注册表里添加，**但是还是用自动的办法吧**，方便且不容易出错（第一次手动添加的时候，把注册表里AutoRun项的数值数据值中的单斜杠写成了双斜杠，找了半天才找到这个原因）。
+
+1. 新建路径`C:\Users\LiangLiu\mydata`，或者用已有路径也没问题，反正用你自己的路径替换这个路径就好。
+2. 在上面的路径下新建需要自动执行的别名设置脚本，就命名为`lslldir.bat`吧。所以，最终该文件的完整路径是：`C:\Users\LiangLiu\mydata\lslldir.bat`。文件内容如下（其实就是为了解决在windows的命令提示符下经常手误打ls或者ll的问题）：
+```
+doskey ls=dir
+doskey ll=dir
+```
+3. 任意位置新建一个文件`addcmd.reg`：这个**往注册表里添加内容的reg文件里面的路径要用双斜杠**；但是**添加成功后注册表里显示的值是用单斜杠**。反正我也不知道为什么，也懒得深究，现象就是这样。
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+"AutoRun"="%USERPROFILE%\\mydata\\lslldir.bat"
+```
+4. 双击`addcmd.reg`，一路确定，不出意外就是执行成功。然后到注册表相应的位置（`HKEY_CURRENT_USER\Software\Microsoft\Command Processor`）会发现多了一个AutoRun项：
+
+| 名称 | 类型 | 数据 |
+|--|--|--|
+|……|……|……|
+| AutoRun | REG_SZ | %USERPROFILE%\mydata\lslldir.bat | 
+|……|……|……|
+
+双击该项打开，里面的内容是：
+```
+数值名称(N):
+AutoRun
+
+数值数据(V):
+%USERPROFILE%\mydata\lslldir.bat
+```
+5. 添加前后打开window原生的命令提示符时显示的内容的对比：
+```
+添加前：
+----------------------------------------------------------------------------------------------------
+Microsoft Windows [版本 10.0.17763.503]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\LiangLiu>
+----------------------------------------------------------------------------------------------------
+
+添加后：
+----------------------------------------------------------------------------------------------------
+Microsoft Windows [版本 10.0.17763.503]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\LiangLiu>doskey ls=dir
+
+C:\Users\LiangLiu>doskey ll=dir
+
+C:\Users\LiangLiu>
+----------------------------------------------------------------------------------------------------
+```
+
+
 
 Aliases in Windows command prompt https://stackoverflow.com/questions/20530996/aliases-in-windows-command-prompt
 > 这个讲了更多的方法，但是没必要细看了。
