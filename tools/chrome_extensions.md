@@ -140,6 +140,8 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 # firefox extensions
 
+备份与恢复书签 https://support.mozilla.org/zh-CN/kb/%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B9%A6%E7%AD%BE
+
 # others
 
 Setup VPN
