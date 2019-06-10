@@ -128,6 +128,8 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 ### paper
 
+- (NDSS 2019 poster) Poster: Securing Operating System Audit Logs https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019posters_paper_37.pdf
+
 - (IMACC 2017) Revealing Encryption for Partial Ordering https://eprint.iacr.org/2016/972.pdf
   * skyline query 学习笔记 https://blog.csdn.net/MX_studying/article/details/80766264
 
