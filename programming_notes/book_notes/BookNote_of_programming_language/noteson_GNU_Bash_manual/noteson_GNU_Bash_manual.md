@@ -77,6 +77,14 @@ GNU Bash manual https://www.gnu.org/software/bash/manual/
 • Locale Translation:	  	How to translate strings into different languages.
 ```
 
+#### 3.1.2.1 Escape Character
+
+> A non-quoted backslash ‘\’ is the Bash escape character. It preserves the literal value of the next character that follows, with the exception of newline. If a \newline pair appears, and the backslash itself is not quoted, the \newline is treated as a line continuation (that is, it is removed from the input stream and effectively ignored).
+>> notes：这段解释了常用的斜杠换行是怎么回事。标准的说法叫“line continuation”。
+
+#### 3.1.2.2 Single Quotes
+
+#### 3.1.2.3 Double Quotes
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
