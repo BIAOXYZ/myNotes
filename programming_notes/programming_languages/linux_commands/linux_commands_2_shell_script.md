@@ -20,7 +20,8 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 
 《Linux命令行与shell脚本编程大全案例》 https://github.com/fengyuhetao/shell
 
-Shell脚本：Linux Shell脚本学习指南（超详细） http://c.biancheng.net/shell/
+The Linux Command Line http://linuxcommand.org/
+- The Linux Command Line 中文版 https://www.kancloud.cn/thinkphp/linux-command-line/39431
 
 # shell脚本调试
 
