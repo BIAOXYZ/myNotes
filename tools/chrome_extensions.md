@@ -7,6 +7,20 @@
 - > ![](https://pic3.zhimg.com/80/v2-8697db5ecfbe52377ea9c82a7736416d_hd.jpg)
 - > ![](https://pic3.zhimg.com/80/v2-01ecc53819d6e4c6ee19e0845723fd59_hd.jpg)
 
+### Chrome同步不同设备的浏览器已打开的书签/网页
+
+***//注意：这里不是指收藏夹的同步，收藏夹的同步是自然而然的，也就是只要是同一个账号，设备1和设备2收藏夹是一致的。但是在设备1上要查看设备2上已经打开的标签/网页，chrome就没有firefox做的好了。***
+
+可让您在所有设备上使用您的书签、密码等信息  https://support.google.com/chrome/answer/165139
+```
+查看在其他设备上打开的标签页
+
+1.在计算机上打开 Chrome。
+2.在右上角，点击“更多”图标 整理。
+3.依次点击历史记录 然后 历史记录。
+4.点击左侧的从其他设备打开的标签页。
+```
+
 ### chrome keyboard shortcuts
 
 工具篇---Chrome浏览器快捷键 https://www.jianshu.com/p/95a6e8ee4819
