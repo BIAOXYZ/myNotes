@@ -208,3 +208,18 @@ About Chocolatey https://chocolatey.org/about
 >> 非常巧合地发现了这个Windows下的包管理软件————因为偶然在看[TikZiT](https://github.com/tikzit/tikzit)的README.md，里面提到在Windows下装`flex/bison`的话可以用`WinFlexBison`或者用`Chocolatey`————不过回头有时间再试试好了。
 >>> "In addition to Qt itself, TikZiT needs flex/bison, Poppler (with Qt bindings), and OpenSSL. For flex/bison, the simplest way to install this is to download WinFlexBison, then make sure both are in your %Path% so the build tools can find them. Altflex/bisonernatively, you can install it via Chocolatey, via: `choco install winflexbison`"
 
+# Scoop
+
+「一行代码」搞定软件安装卸载，用 Scoop 管理你的 Windows 软件 https://sspai.com/post/52496
+
+# GoFish
+
+https://github.com/helm/helm
+```
+If you want to use a package manager:
+  - Homebrew users can use brew install kubernetes-helm.
+  - Chocolatey users can use choco install kubernetes-helm.
+  - Scoop users can use scoop install helm.
+  - GoFish users can use gofish install helm.
+```
+
