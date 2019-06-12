@@ -189,6 +189,8 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 
 如何通俗解释Docker是什么？ - 知乎 https://www.zhihu.com/question/28300645
 
+一篇不一样的docker原理解析 提高篇 - uncle creepy的文章 - 知乎 https://zhuanlan.zhihu.com/p/22403015
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # docker具体问题
