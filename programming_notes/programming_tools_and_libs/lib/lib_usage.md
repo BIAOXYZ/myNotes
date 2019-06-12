@@ -323,6 +323,8 @@ pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用P
 
 A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc. https://github.com/pytorch/examples
 
+PyTorch Tutorial for Deep Learning Researchers https://github.com/yunjey/pytorch-tutorial
+
 ### numpy
 
 #### shape
