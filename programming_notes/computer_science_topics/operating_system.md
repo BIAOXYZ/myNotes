@@ -55,6 +55,32 @@ Linux学习笔记（二）：什么是挂载？mount的用处在哪？ https://b
 
 挂载（mount）深入理解 https://www.cnblogs.com/chen-farsight/p/6119404.html
 
+What is meant by mounting a device in Linux? https://unix.stackexchange.com/questions/3192/what-is-meant-by-mounting-a-device-in-linux
+```
+Unix systems have a single directory tree. All accessible storage must have an associated location in this 
+single directory tree. This is unlike Windows where (in the most common syntax for file paths) there is one 
+directory tree per storage component (drive).
+
+Mounting is the act of associating a storage device to a particular location in the directory tree. For example, 
+when the system boots, a particular storage device (commonly called the root partition) is associated with the 
+root of the directory tree, i.e., that storage device is mounted on / (the root directory).
+
+Let's say you now want to access files on a CD-ROM. You must mount the CD-ROM on a location in the directory 
+tree (this may be done automatically when you insert the CD). Let's say the CD-ROM device is /dev/cdrom and the 
+chosen mount point is /media/cdrom. The corresponding command is
+
+mount /dev/cdrom /media/cdrom
+
+After that command is run, a file whose location on the CD-ROM is /dir/file is now accessible on your system as 
+/media/cdrom/dir/file. When you've finished using the CD, you run the command umount /dev/cdrom or umount /media/cdrom 
+(both will work; typical desktop environments will do this when you click on the “eject” or ”safely remove” button).
+
+Mounting applies to anything that is made accessible as files, not just actual storage devices. For example, 
+all Linux systems have a special filesystem mounted under /proc. That filesystem (called proc) does not have 
+underlying storage: the files in it give information about running processes and various other system 
+information; the information is provided directly by the kernel from its in-memory data structures.
+```
+
 ## kernel module
 
 Loadable kernel module https://en.wikipedia.org/wiki/Loadable_kernel_module
