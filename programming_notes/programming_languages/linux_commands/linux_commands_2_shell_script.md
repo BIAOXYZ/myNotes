@@ -74,6 +74,21 @@ linux shell 逻辑运算符、逻辑表达式详解 https://www.cnblogs.com/chen
 ----------------------------------------------------------------------------------------------------
 ```
 
+linux shell 字符串操作（长度，查找，替换）详解 https://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html
+```shell
+${string/substring/replacement}	使用$replacement, 来代替第一个匹配的$substring
+
+例子：
+localhost:myNotes liangliu$ REPO=`git config remote.origin.url`
+localhost:myNotes liangliu$ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+localhost:myNotes liangliu$ echo $REPO
+https://github.com/BIAOXYZ/myNotes.git
+localhost:myNotes liangliu$ echo $SSH_REPO
+git@github.com:BIAOXYZ/myNotes.git
+```
+
+
+
 ### Linux符号``的使用
 Linux—shell中$(( ))、$( )、``与${ }的区别
 https://blog.csdn.net/number_0_0/article/details/73291182
