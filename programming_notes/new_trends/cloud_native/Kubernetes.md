@@ -362,6 +362,12 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 
 使用 kubectl patch 更新 API 对象 https://k8smeetup.github.io/docs/tasks/run-application/update-api-object-kubectl-patch/
 
+## kubernets config
+
+### context
+
+配置对多集群的访问 https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes源码
@@ -547,12 +553,25 @@ Deploy a Production Ready Kubernetes Cluster https://github.com/kubernetes-sigs/
 
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Helm (CNCF)
+
+HELM: The package manager for Kubernetes https://helm.sh/
+
+Helm Docs https://helm.sh/docs/
+- Using Helm https://helm.sh/docs/using_helm/
+
+The Kubernetes Package Manager https://github.com/helm/helm
+
 ## k8s-conformance (CNCF)
 
 🧪CNCF K8s Conformance Working Group https://cncf.io/ck || https://github.com/cncf/k8s-conformance
 - > Sonobuoy is a diagnostic tool that makes it easier to understand the state of a Kubernetes cluster by running a set of Kubernetes conformance tests in an accessible and non-destructive manner. https://github.com/heptio/sonobuoy
 
-## minikube
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## minikube (k8s official)
 
 minikube, Run Kubernetes locally https://github.com/kubernetes/minikube
 
