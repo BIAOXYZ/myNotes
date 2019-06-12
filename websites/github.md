@@ -1,18 +1,30 @@
 
 # Github(非git相关)问题
 
+## Developer Program Member
+
 What is “Developer Program Member” on Github.com https://stackoverflow.com/questions/28255341/what-is-developer-program-member-on-github-com
 
+GitHub Developer https://developer.github.com/program/
+>> 注：申请`Developer Program Member`链接
+
+## Pro tag :star:
+
 GitHub - What's this “Pro” tag on my profile? https://webapps.stackexchange.com/questions/123808/github-whats-this-pro-tag-on-my-profile
+
+## milestone
+
+What is the difference / relationship between Github Projects and Milestones https://stackoverflow.com/questions/39591795/what-is-the-difference-relationship-between-github-projects-and-milestones
+
+## others
+
+Extend GitHub https://github.com/marketplace
+
+----------------------------------------------------------------------------------------------------
 
 你不知道的Github使用技巧 https://www.jianshu.com/p/1840d00c2b77
 - impress.js/reveal.js + GitHub Pages = 在线 PPT
   * The HTML Presentation Framework https://revealjs.com || https://github.com/hakimel/reveal.js
-  
-GitHub Developer https://developer.github.com/program/
->> 注：申请`Developer Program Member`链接
-
-Extend GitHub https://github.com/marketplace  
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
