@@ -322,6 +322,8 @@ https://www.zhihu.com/question/268631439
 当下（2018 年）腾讯的技术建设是否处于落后同体量公司的状态？ - 知乎
 https://www.zhihu.com/question/278473776
 
+百度的 GCC 被三体人锁定在 3.4.5 版本是什么典故？ - 知乎 https://www.zhihu.com/question/21042367
+
 
 在 SAP 工作是什么样的体验？ - 知乎
 https://www.zhihu.com/question/24717198/answer/86431800
