@@ -614,3 +614,4 @@ Removing spec.replicas of the Deployment resets replicas count to single replica
 知乎 HBase 实践 - 张小渔的文章 - 知乎 https://zhuanlan.zhihu.com/p/57739371
 > 白瑜庆：知乎基于Kubernetes的kafka平台的设计和实现 - 腾讯云技术社区的文章 - 知乎 https://zhuanlan.zhihu.com/p/36366473
 
+Compilation of public failure/horror stories related to Kubernetes https://k8s.af/ || https://github.com/hjacobs/kubernetes-failure-stories
