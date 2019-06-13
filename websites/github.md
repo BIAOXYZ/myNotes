@@ -25,6 +25,9 @@ Extend GitHub https://github.com/marketplace
 你不知道的Github使用技巧 https://www.jianshu.com/p/1840d00c2b77
 - impress.js/reveal.js + GitHub Pages = 在线 PPT
   * The HTML Presentation Framework https://revealjs.com || https://github.com/hakimel/reveal.js
+  
+July：请问大家，如何在github上传一张图片？ https://github.com/julycoding/The-Art-Of-Programming-By-July/issues/314
+- > 现在可以直接把本地图片拖到文本输入区域就可以了，附上 [github help的解释地址](https://help.github.com/en/articles/file-attachments-on-issues-and-pull-requests)
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
