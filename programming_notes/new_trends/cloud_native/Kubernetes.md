@@ -557,12 +557,22 @@ A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektonc
 
 ## Helm (CNCF)
 
+### Helm official
+
 HELM: The package manager for Kubernetes https://helm.sh/
 
 Helm Docs https://helm.sh/docs/
 - Using Helm https://helm.sh/docs/using_helm/
 
 The Kubernetes Package Manager https://github.com/helm/helm
+
+### Helm articles
+
+Kubernetes Helm Tips and Tricks: Updating an App that uses ConfigMap https://rancher.com/blog/2018/2018-07-10-helm-tips-and-tricks-updating-app-with-configmap/
+
+是时候使用Helm了：Helm, Kubernetes的包管理工具 https://www.kubernetes.org.cn/3435.html
+
+使用Helm管理kubernetes应用 https://jimmysong.io/kubernetes-handbook/practice/helm.html
 
 ## k8s-conformance (CNCF)
 
