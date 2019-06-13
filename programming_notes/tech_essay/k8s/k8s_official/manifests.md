@@ -56,6 +56,7 @@ $ kubectl create -f jobtimeout.yaml
 job.batch/pi-with-timeout created
 
 //这个不成功主要是因为ttl特性的flag在1.12以后才能设置打开，这种方法创建文件并没有问题。
+//我找了个1.13的环境，直接就成功了。所以，这个失败仅仅是因为k8s版本的问题，与这种cat + EOF的方法无关。
 $ kubectl create -f jobttl.yaml
 error: error validating "jobttl.yaml": error validating data: ValidationError(Job.spec): unknown field "ttlSecondsAfterFinished" in io.k8s.api.batch.v1.JobSpec; if you choose to ignore these errors, turn validation off with --validate=false
 
@@ -66,7 +67,7 @@ $ kubectl create -f job10completion.yaml
 job.batch/pi-with-10completion created
 
 //这个出错就是因为这种cat + EOF的方法，$符号是无法处理的，回来查查怎么处理这个问题。
-//当然，就算手动改好了，$对于的环境变量内容也得有，所以这个例子不是多好用就是了
+//当然，就算手动改好了，$对应的环境变量的内容也得有，所以这个例子不是多好用就是了。
 //————凡是带$的例子都有这个问题，算是“不那么独立的yaml”吧，其实用来做例子不算多好，
 //————但是我主要是为了说明在这种cat + EOF的方法下$无法处理的问题。
 $ kubectl create -f jobdelete.yaml
@@ -91,6 +92,25 @@ persistentvolumeclaim/myclaim created
 $ kubectl create -f secret.yaml
 error: error validating "secret.yaml": error validating data: [unknown object type "nil" in Secret.data.password, unknown object type "nil" in Secret.data.username]; if you choose to ignore these errors, turn validation off with --validate=false
 ```
+
+## 关于`$`问题的解决：转义就好。
+
+使用cat和EOF添加多行数据 https://blog.csdn.net/lym152898/article/details/83306993 || 该文转自: http://www.361way.com/cat-eof-cover-append/4298.html
+```
+需要注意的是，不论是覆盖还是追加，在涉及到变量操作时是需要进行转义的，例如：
+
+#!/bin/bash
+cat <<EOF >> /root/a.txt
+PATH=\$PATH:\$HOME/bin
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=\$ORACLE_BASE/10.2.0/db_1
+export ORACLE_SID=yqpt
+export PATH=\$PATH:\$ORACLE_HOME/bin
+export NLS_LANG="AMERICAN_AMERICA.AL32UTF8"
+EOF
+```
+> 补充：我觉得这哥们第一行的`#!/bin/bash`应该写在cat的内容里面吧？或者他是为了保证当前的shell确实是bash才先这么搞一下？反正个人感觉，`#!/bin/bash`这行内容一般都是只有在文件开头才会看见，从没见过在shell命令行里直接来一句`#!/bin/bash`的。但是呢，记录这个的主要目的是为了解决`$`的问题，这个`#!/bin/bash`到底在哪、是不是不太恰当，只是个插曲。
+>> 此外，这个例子还说明了两个小的点：1.filename可以和路径一起指定；2.这种用法除了创建新文件还可以用于在已有文件上追加多行内容。
 
 # 实例
 
@@ -198,8 +218,6 @@ spec:
           restartPolicy: OnFailure
 EOF
 ```
- 
-#
 
 ```
 cat > job10completion.yaml << 12345
@@ -220,8 +238,6 @@ spec:
   backoffLimit: 4
 12345
 ```
-
-#
 
 ```
 cat > jobdelete.yaml << EOF
@@ -251,7 +267,7 @@ spec:
 EOF
 ```
 
-#
+##
 
 ```
 cat <<EOF | kubectl create -f -
@@ -269,7 +285,7 @@ spec:
 EOF
 ```
 
-#
+##
 
 ```
 echo "apiVersion: v1
