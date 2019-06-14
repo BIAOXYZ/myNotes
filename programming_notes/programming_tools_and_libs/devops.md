@@ -53,6 +53,11 @@ Extreme Cloud Administration Toolkit https://xcat-docs.readthedocs.io/en/stable/
 | OpenQRM	| Systems management platform |
 | Foreman	| Life cycle systems management tool |
 
+## 
+
+Kickstart (Linux) https://en.wikipedia.org/wiki/Kickstart_(Linux)
+> Cobbler (software) https://en.wikipedia.org/wiki/Cobbler_(software)
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # Ansible Tower官网
