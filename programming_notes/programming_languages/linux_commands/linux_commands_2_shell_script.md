@@ -3,6 +3,13 @@
 
 From finding text to search and replace, from sorting to beautifying text and more https://github.com/learnbyexample/Command-line-text-processing
 
+BashGuide http://mywiki.wooledge.org/BashGuide
+- > The bash academy website https://github.com/lhunath/bash.academy
+  * The Bash Academy https://www.bash.academy/
+- > The guide is also available in [PDF format](http://folk.ntnu.no/geirha/bashguide.pdf). Alternatively, you can just hit print after going to [FullBashGuide](http://mywiki.wooledge.org/FullBashGuide). That guarantees you'll be printing the latest version of this document.
+  * PDF format http://folk.ntnu.no/geirha/bashguide.pdf
+  * FullBashGuide http://mywiki.wooledge.org/FullBashGuide
+
 <<Linux Shell常用技巧(目录)>>
 http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html
 
