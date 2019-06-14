@@ -252,6 +252,8 @@ Kubernetes client-go实战应用 https://juejin.im/post/5bc9d80df265da0ac7272dde
 
 ## kubernetes权限和安全
 
+### RBAC
+
 - Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/
 - Kubernetes kubectl create clusterrolebinding 命令详解 http://docs.kubernetes.org.cn/494.html
 
@@ -261,6 +263,12 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 - Configuring RBAC For Your Kubernetes Service Accounts https://medium.com/@lestrrat/configuring-rbac-for-your-kubernetes-service-accounts-c348b64eb242
 
 使用kubectl访问Kubernetes集群时的身份验证和授权 https://tonybai.com/2018/06/14/the-authentication-and-authorization-of-kubectl-when-accessing-k8s-cluster/
+
+### security context
+
+kubernetes使用securityContext和sysctl http://bazingafeng.com/2017/12/23/kubernetes-uses-the-security-context-and-sysctl/
+
+Configure a Security Context for a Pod or Container https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -437,6 +445,8 @@ Operators https://coreos.com/operators/
 
 Operator Framework - Google Groups https://groups.google.com/forum/#!forum/operator-framework
 
+Operators based on Helm charts https://docs.okd.io/latest/operators/osdk-helm.html
+
 Writing Your First Kubernetes Operator https://medium.com/faun/writing-your-first-kubernetes-operator-8f3df4453234
 - etcd operator creates/configures/manages etcd clusters atop Kubernetes https://coreos.com/blog/introducing-the-etcd-operator.html || https://github.com/coreos/etcd-operator
 
@@ -565,6 +575,10 @@ Helm Docs https://helm.sh/docs/
 - Using Helm https://helm.sh/docs/using_helm/
 
 The Kubernetes Package Manager https://github.com/helm/helm
+
+### Helm books
+
+Helm User Guide - Helm 用户指南 https://whmzsu.github.io/helm-doc-zh-cn/
 
 ### Helm articles
 
