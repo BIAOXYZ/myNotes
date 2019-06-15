@@ -894,6 +894,16 @@ http://blog.jobbole.com/20123/
 
 Git 常用命令速查表(图文+表格) https://www.jb51.net/article/55442.htm --> 一堆命令我连听都没听过。。。
 
+git checkout 命令详解 https://www.cnblogs.com/hutaoer/archive/2013/05/07/git_checkout.html
+```
+(四）熟悉的checkout，陌生的用法，妈妈再也不用担心我的checkout啦！
+1. git branch <branch> <start point>
+2. git checkout --datch <branch>
+3. git checkout -B <branch>
+4. git checkout --orphan <branch>
+6. git checkout -p <branch>
+```
+
 ####  git的refs
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
@@ -1038,9 +1048,9 @@ https://travis-ci.org/getting_started
 >>>https://docs.travis-ci.com/user/deployment/heroku/
 >>>>https://www.heroku.com/
 
-<持续集成服务 Travis CI 教程>
-http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
->YAML 语言教程 http://www.ruanyifeng.com/blog/2016/07/yaml.html
+<持续集成服务 Travis CI 教程> http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
+- https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
+- https://oncletom.io/2016/travis-ssh-deploy/
 
 使用Travis进行持续集成 https://www.liaoxuefeng.com/article/1083103562955136  -->  廖雪峰这个Travis教程跟阮一峰那个还是没法比，比较基本。
 
