@@ -904,6 +904,19 @@ git checkout 命令详解 https://www.cnblogs.com/hutaoer/archive/2013/05/07/git
 6. git checkout -p <branch>
 ```
 
+git寻根——^和~的区别 https://www.cnblogs.com/hutaoer/archive/2013/05/14/3078191.html
+```
+这时候HEAD悄然来到了”c2”的commit 1c73，因此，HEAD~2 相当于HEAD的第一个父提交的第一个父提交。
+即HEAD~2 = HEAD^^ = HEAD^1^1, 符合预期！好开心的哟
+
+五.总结
+
+1. “^”代表父提交,当一个提交有多个父提交时，可以通过在”^”后面跟上一个数字，表示第几个父提交，”^”相当于”^1”.
+2. ~<n>相当于连续的<n>个”^”.
+3. checkout只会移动HEAD指针，reset会改变HEAD的引用值。
+```
+>> 个人再总结下吧：其实这个文章主要就是通过实验说明了，在有多个父节点的情况下：`HEAD^n`是多个父节点之间（横着）走的；`HEAD~n`是沿着第一个分支（纵向）走的。所以感觉还是`~`是更想达到的效果（一般用git reset回退几个commit的时候肯定是想纵向回退啊）。
+
 ####  git的refs
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
