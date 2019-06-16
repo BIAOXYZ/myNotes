@@ -156,6 +156,13 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 备份与恢复书签 https://support.mozilla.org/zh-CN/kb/%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B9%A6%E7%AD%BE
 
+## 海外版Firefox和国内（谋智）版Firefox的差别
+
+| Firefox | 火狐中国 |
+|--|--|
+| 账号管理网址: https://accounts.firefox.com/ | 账号管理网址: https://accounts.firefox.com.cn/ |
+| 没有谋智之类的提示 | 1. `菜单`--`帮助`--`关于Firefox`--弹出的小窗口里有“北京谋智网络技术有限公司”。 <br> 2. 但是我发现谋智版的firefox软件有个好处，可以切换到国际版账号：`菜单`--`打开同步服务首选项`(也就是右侧弹出菜单最上面邮箱那一行)--(最下面)`切换至本地/全球服务`。而国际版的Firefox没有发现能切回国内版。 |
+
 # others
 
 Setup VPN
