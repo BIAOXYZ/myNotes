@@ -50,7 +50,9 @@ http://wiki.jikexueyuan.com/list/go/
 
 《深入解析Go语言》 https://www.w3cschool.cn/go_internals/
 
-深入解析Go https://legacy.gitbook.com/book/tiancaiamao/go-internals/details
+dig into implemention of the go programming language https://github.com/tiancaiamao/go-internals
+> 深入解析Go https://legacy.gitbook.com/book/tiancaiamao/go-internals/details
+>> 《深入解析Go》 https://tiancaiamao.gitbooks.io/go-internals/content/zh/index.html
 
 --------------------------------------------------
 
