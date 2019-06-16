@@ -204,6 +204,12 @@ bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/top
 **声优安利系列**：
 - 声优安利——钉宫理惠 https://www.bilibili.com/read/cv1332684
 
+我的oo已经饥渴难耐了 https://zh.moegirl.org/zh-hans/%E6%88%91%E7%9A%84oo%E5%B7%B2%E7%BB%8F%E9%A5%A5%E6%B8%B4%E9%9A%BE%E8%80%90%E4%BA%86
+> 《CV战争》中的炮姐说过“我的大炮已经饥渴难耐了。”
+>> CV战争 https://zh.moegirl.org/CV%E6%88%98%E4%BA%89
+>>>> CV战争/登场角色列表 https://zh.moegirl.org/CV%E6%88%98%E4%BA%89/%E7%99%BB%E5%9C%BA%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8
+- CV战争 第七话 https://www.bilibili.com/video/av276855/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 萌战
