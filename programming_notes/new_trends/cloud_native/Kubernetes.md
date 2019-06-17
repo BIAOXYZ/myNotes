@@ -264,6 +264,10 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 
 使用kubectl访问Kubernetes集群时的身份验证和授权 https://tonybai.com/2018/06/14/the-authentication-and-authorization-of-kubectl-when-accessing-k8s-cluster/
 
+***RBAC实战类攻略***：
+- KUBERNETES AND RBAC: RESTRICT USER ACCESS TO ONE NAMESPACE https://jeremievallee.com/2018/05/28/kubernetes-rbac-namespace-user.html
+- Configure RBAC In Your Kubernetes Cluster https://docs.bitnami.com/kubernetes/how-to/configure-rbac-in-your-kubernetes-cluster/
+
 ### security context
 
 kubernetes使用securityContext和sysctl http://bazingafeng.com/2017/12/23/kubernetes-uses-the-security-context-and-sysctl/
