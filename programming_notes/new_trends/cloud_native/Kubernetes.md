@@ -599,6 +599,11 @@ Kubernetes Helm Tips and Tricks: Updating an App that uses ConfigMap https://ran
 
 minikube, Run Kubernetes locally https://github.com/kubernetes/minikube
 
+## kops - Kubernetes Operations (k8s official)
+
+Kubernetes Operations (kops) - Production Grade K8s Installation, Upgrades, and Management https://github.com/kubernetes/kops
+- > Example Kops Demo on AWS https://asciinema.org/a/97298
+
 ## kubeflow (Google)
 
 Machine Learning Toolkit for Kubernetes https://github.com/kubeflow/kubeflow
