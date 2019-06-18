@@ -19,3 +19,10 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 
 shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
 > https://www.shellcheck.net/
+
+动漫求推荐一些啊\~\~感谢 https://www.v2ex.com/t/574810
+- > 去搜 bangumi.tv 的排行榜，在前 50 内自己挑想看的
+- > 动画标签: 冒险 https://bangumi.tv/anime/tag/%E5%86%92%E9%99%A9/?sort=date
+- > Bilibili > 番剧 > 番剧索引 > 评分    顺着看呗
+- > https://bangumi.tv/ 搜索你喜欢的番，下面有推荐 <br> 或者点击该番对应的一个 tag,点进去，排名排序，然后挑选你感兴趣的 
+  >> 或者可以尝试 bgmer 基于 bangumi 制作的推荐系统，例如 https://bangumi.tv/group/topic/345856
