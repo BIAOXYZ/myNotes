@@ -6,3 +6,7 @@ Big Data Battle : Batch Processing vs Stream Processing https://medium.com/@gowt
 # Spark v.s. Flink
 
 Spark比拼Flink：下一代大数据计算引擎之争 - 夜城的文章 - 知乎 https://zhuanlan.zhihu.com/p/40402793
+
+# Apache Kylin
+
+一文读懂Apache Kylin https://www.jianshu.com/p/abd5e90ab051
