@@ -588,6 +588,8 @@ Helm User Guide - Helm 用户指南 https://whmzsu.github.io/helm-doc-zh-cn/
 
 Kubernetes Helm Tips and Tricks: Updating an App that uses ConfigMap https://rancher.com/blog/2018/2018-07-10-helm-tips-and-tricks-updating-app-with-configmap/
 
+Using Kubernetes Helm to install applications: A quick and dirty guide https://www.mirantis.com/blog/install-kubernetes-apps-helm/
+
 是时候使用Helm了：Helm, Kubernetes的包管理工具 https://www.kubernetes.org.cn/3435.html
 
 使用Helm管理kubernetes应用 https://jimmysong.io/kubernetes-handbook/practice/helm.html
