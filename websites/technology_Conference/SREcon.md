@@ -25,3 +25,9 @@ https://www.usenix.org/srecon
 - Anomaly Detection in Infrequently Occurred Patterns https://www.usenix.org/conference/srecon17americas/program/wang
 - Root Cause, You're Probably Doing It Wrong https://www.usenix.org/conference/srecon17americas/program/presentation/gibson
 
+# SRE and DB
+
+## 数据库迁移真实案例
+
+- Lessons Learned from Our Main Database Migrations at Facebook https://www.usenix.org/conference/srecon18americas/presentation/matsunobu
+  * > At Facebook, we created a new MySQL storage engine called MyRocks. Our objective was to migrate one of our main databases (UDB) from compressed InnoDB to MyRocks and reduce the amount of storage and number of servers used by half. In August 2017, we finished converting from InnoDB to MyRocks in UDB. The migration was very carefully planned and executed, and it took nearly a year. But that was not the end of the migration.
