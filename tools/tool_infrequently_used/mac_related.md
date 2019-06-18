@@ -65,6 +65,45 @@ Mac 怎么打开根目录，怎么查看硬盘 https://jingyan.baidu.com/article
 macOS/Linux 环境变量设置 - 蒋航的文章 - 知乎 https://zhuanlan.zhihu.com/p/25976099
 > macOS 默认用户环境变量配置文件为 `~/.bash_profile`，Linux 为 `~/.bashrc`。如果不存在 `~/.bash_profile`，则可以自己创建一个 `~/.bash_profile`。
 
+## 画蛇添足的`.DS_Store`
+
+**//今天碰到研究院一个（之前没用git的）同事问我仓库里这一堆`.DS_Store`怎么删不掉。我一看，仓库70多个提交了，从第二个提交开始（第一个是README）就和各种`.DS_Store`，`.idea`还有别的中间文件ran在一起。。。于是只能是帮他们先git rm掉，再新建个.gitignore文件过滤。但是`.idea`等还很好办，这个垃圾`.DS_Store`多个目录都有！呵呵，常威，你还说你的Mac不是垃圾？**
+
+如何删除GIT中的.DS_Store https://www.jianshu.com/p/fdaa8be7f6c3
+```
+----------------------------------------------------------------------------------------------------
+如果你的项目中还没有自动生成的 .DS_Store 文件，那么直接将 .DS_Store 加入到 .gitignore 文件就可以了。
+如果你的项目中已经存在 .DS_Store 文件，那就需要先从项目中将其删除，再将它加入到 .gitignore。如下：
+
+删除项目中的所有.DS_Store。这会跳过不在项目中的 .DS_Store
+1.find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+
+将 .DS_Store 加入到 .gitignore
+2.echo .DS_Store >> ~/.gitignore
+
+更新项目
+3.git add --all
+4.git commit -m '.DS_Store banished!'
+----------------------------------------------------------------------------------------------------
+如果你只需要删除磁盘上的 .DS_Store，可以使用下面的命令来删除当前目录及其子目录下的所有.DS_Store 文件:
+
+find . -name '*.DS_Store' -type f -delete
+----------------------------------------------------------------------------------------------------
+禁用或启用自动生成
+
+禁止.DS_store生成：
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
+恢复.DS_store生成：恢复.DS_store生成：
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+----------------------------------------------------------------------------------------------------
+```
+
+Mac中Git忽略.DS_Store文件 https://orianna-zzo.github.io/sci-tech/2018-01/mac%E4%B8%ADgit%E5%BF%BD%E7%95%A5.ds_store%E6%96%87%E4%BB%B6/
+
+- 解决讨厌的.DS_Store文件（上） https://bingozb.github.io/9.html
+- 解决讨厌的.DS_Store文件（下） https://bingozb.github.io/10.html
+
 # `#` Mac 其他
 
 使用文件保险箱加密 Mac 上的启动磁盘 https://support.apple.com/zh-cn/HT204837
