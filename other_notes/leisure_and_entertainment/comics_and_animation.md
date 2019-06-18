@@ -155,8 +155,17 @@
 
 分类:日本动画制作组织 https://zh.moegirl.org/Category:%E6%97%A5%E6%9C%AC%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C%E7%BB%84%E7%BB%87
 - J.C.STAFF https://zh.moegirl.org/J.C.STAFF
+  * 龙与虎
+  * 某科学的超电磁炮
+  * 魔法禁书目录
+  * 一拳超人2
 - Aniplex https://zh.moegirl.org/Aniplex
+  * 银魂
+  * 死神
+  * 辉夜大小姐想让我告白～天才们的恋爱头脑战～
 - BONES https://zh.moegirl.org/BONES
+- 京都动画 https://zh.moegirl.org/%E4%BA%AC%E9%83%BD%E5%8A%A8%E7%94%BB
+  * 中二病也要谈恋爱
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
