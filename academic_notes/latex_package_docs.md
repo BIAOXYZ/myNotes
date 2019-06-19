@@ -23,3 +23,5 @@ LaTeX package that embeds and executes Wolfram Language (Mathematica) codes insi
 A vector drawing editor for LaTeX (Java Swing/JavaFX). http://latexdraw.sourceforge.net/ || https://github.com/latexdraw/latexdraw
 > Manual https://github.com/latexdraw/latexdraw/wiki/Manual
 
+用黑板制作的 beamer 主题 - 更新 http://www.latexstudio.net/archives/51703.html
+> https://github.com/kmaed/kmbeamer
