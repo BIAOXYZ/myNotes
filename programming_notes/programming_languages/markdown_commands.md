@@ -17,7 +17,61 @@ GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/arti
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
-Complete list of github markdown emoji markup https://gist.github.com/rxaviers/7360908
+Complete list of github markdown emoji markup https://gist.github.com/rxaviers/7360908 
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+### Github markdown task lists
+
+About task lists https://help.github.com/en/articles/about-task-lists
+```
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+```
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+### `<details>`以及`<details>`+`<p>`实现下拉箭头效果
+
+- Using `<details>` in GitHub https://gist.github.com/ericclemmons/b146fe5da72ca1f706b2ef72a20ac39d
+- collapsible markdown? https://gist.github.com/joyrexus/16041f2426450e73f5df9391f7f7ae5f
+
+--------------------------------------------------
+**例1：只能隐藏普通内容，不能隐藏代码块**
+
+<details>
+<summary>Stack Trace for `require('does.not.exist')`</summary>
+ ```shell
+ require('does.not.exist')
+ Error: Cannot find module 'does.not.exist'
+   at Function.Module._resolveFilename (module.js:336:15)
+   at Function.Module._load (module.js:286:25)
+   at Module.require (module.js:365:17)
+ ```
+</details>
+
+--------------------------------------------------
+**例2：通过混合使用`<p>`可以把代码块内容也隐藏**（但是我发现**标题里**有些比如加粗或斜体之类的标记还是有问题）
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
+--------------------------------------------------
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # markdown小技巧
 
@@ -50,7 +104,7 @@ markdown表格内如何进行换行？ https://blog.csdn.net/microcosmv/article/
 张三|足球<br>篮球
 李四|羽毛球<br>乒乓球
 
-***--------------------------------------------------分割线--------------------------------------------------***
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
@@ -92,7 +146,7 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 <u>下划线文本</u>
 
 
-***--------------------------------------------------分割线--------------------------------------------------***
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ### markdown图片大小调整：
 
@@ -114,7 +168,7 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
 <div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
 
-***--------------------------------------------------分割线--------------------------------------------------***
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 
 ## markdown中数学公式
@@ -173,6 +227,7 @@ MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.
 
 ![](http://latex.codecogs.com/gif.latex?$y=g^x$)
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # markdown相关工具（主要是博客，公众号相关）
 
