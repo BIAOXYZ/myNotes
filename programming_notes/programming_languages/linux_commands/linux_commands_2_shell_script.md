@@ -160,9 +160,36 @@ What is the difference between double and single square brackets in bash? https:
 - Greg's Wiki http://mywiki.wooledge.org/
   * BashGuide http://mywiki.wooledge.org/BashGuide
   * The Bash Guide https://guide.bash.academy/
+  
+### linux命令之间的`&&`和`||`
 
-`linux命令之间的分号，&&， ||` https://blog.csdn.net/stpeace/article/details/51870812 【by stpeace】
+**//首先要说明一点，这里的`&&`和`||`不是指shell脚本中if条件语句里的`&&`和`||`。尽管他们很像，但是前者主要是决定了linux命令执行的效果（shell脚本的基本构成单元就是linux命令，所以他们当然也属于是shell脚本的内容），除了它俩还有一个是`分号`，以及稍有点关系的`&`（表示放到后台执行）；后者那两个就是在shell的if条件里做逻辑连接的，比如`if [[ $a -lt 100 && $b -gt 100 ]]`**。
+
+linux命令之间的`分号，&&，||` https://blog.csdn.net/stpeace/article/details/51870812 【by stpeace】
+```
+在用linux命令时候， 我们经常需要同时执行多条命令， 那么命令之间该如何分割呢？
+   分号： 顺序地独立执行各条命令，彼此之间不关心是否失败，所有命令都会执行。
+   && ： 顺序执行各条命令，只有当前一个执行成功时候，才执行后面的。
+   || ： 顺序执行各条命令，只有当前面一个执行失败的时候，才执行后面的。
+```
 > 意思我都懂，就是偶然发现了这哥们的博客是CSDN排行第一，所以记一下。。。
+
+Confusing use of && and || operators https://unix.stackexchange.com/questions/24684/confusing-use-of-and-operators
+```
+The right side of && will only be evaluated if the exit status of the left side is zero (i.e. true). 
+|| is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
+
+Examples:
+
+$ false && echo howdy!
+
+$ true && echo howdy!
+howdy!
+$ true || echo howdy!
+
+$ false || echo howdy!
+howdy!
+```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
