@@ -221,7 +221,13 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 
 ## Ingress
 
+### ingres from k8s official
+
 - Ingress https://kubernetes.io/docs/concepts/services-networking/ingress/
+- Set up Ingress on Minikube with the NGINX Ingress Controller https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+
+### ingress from other resources
+
 - Kubernetes Ingress 101: NodePort, Load Balancers, and Ingress Controllers https://blog.getambassador.io/kubernetes-ingress-nodeport-load-balancers-and-ingress-controllers-6e29f1c44f2d
   * > "Note that an ingress controller typically doesn’t eliminate the need for an external load balancer — the ingress controller simply adds an additional layer of routing and control behind the load balancer." --> 这个不一定吧？感觉各种在变，说法不一样。
 - Kubernetes Ingress with Nginx Example https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
@@ -232,6 +238,10 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
     > The one downside is that you need to configure an Ingress Controller for your cluster. But that’s pretty easy—in this example, we’ll use the Nginx Ingress Controller."
 - Understanding kubernetes networking: ingress https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078
 - Kubernetes ingress解析 https://jimmysong.io/posts/kubernetes-ingress-resource/
+
+Kubernetes Nginx Ingress 教程 https://mritd.me/2017/03/04/how-to-use-nginx-ingress/
+
+实践kubernetes ingress controller的四个例子 https://tonybai.com/2018/06/21/kubernetes-ingress-controller-practice-using-four-examples/
 
 ## kubernetes client
 
