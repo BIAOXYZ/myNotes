@@ -14,6 +14,11 @@ Graphics with TikZ http://www.tug.org/pracjourn/2007-1/mertz/mertz.pdf
 
 xecjk – Support for CJK documents in XELATEX https://ctan.org/pkg/xecjk
 
+# latex books
+
+好书速递《LaTeX CookBook》-很多小妙招让你爱上 LaTeX http://www.latexstudio.net/archives/9928.html
+- > 选自：http://www.allitebooks.com/latex-cookbook/
+
 # 不成熟的package
 
 The blockdiagram LaTeX package defines a set of tikz macros to draw nice block diagrams. https://github.com/gjlaurent/blockdiagram
