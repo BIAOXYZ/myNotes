@@ -46,4 +46,6 @@ Weather report: Durham, United States
 Follow @igor_chubin for wttr.in updates
 ```
 
+Linux玩家必备：Ubuntu完全配置指南 - DealiAxy的文章 - 知乎 https://zhuanlan.zhihu.com/p/56253982
 
+十大 Linux 命令行游戏 - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/33267251
