@@ -51,9 +51,12 @@ Mac 上的“终端”键盘快捷键 https://support.apple.com/zh-cn/guide/term
 
   |操作|快捷键|
   |--|--|
+  | 新建窗口 | Command-N |
+  | 新建标签页 | Command-T |
   | 将窗口拆分为两个面板 | Command-D |
   | 关闭拆分面板 | Shift-Command-D |
-
+  | 关闭标签页 | Command-W |
+  | 关闭窗口 | Shift-Command-W |
 
 ## 目录没有一个直观的向上一级的按钮，得通过那个访达Finder来向上一级
 
