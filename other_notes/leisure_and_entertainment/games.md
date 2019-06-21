@@ -84,6 +84,12 @@ https://www.bilibili.com/video/av42263924
 
 日本麻将:役牌 https://zh.moegirl.org/%E6%97%A5%E6%9C%AC%E9%BA%BB%E5%B0%86:%E5%BD%B9%E7%89%8C
 
+Double Riichi http://mahjong.wikidot.com/riichi
+
+日本麻將的和牌牌型列表 https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E9%BA%BB%E5%B0%87%E7%9A%84%E5%92%8C%E7%89%8C%E7%89%8C%E5%9E%8B%E5%88%97%E8%A1%A8 || Japanese Mahjong yaku https://en.wikipedia.org/wiki/Japanese_Mahjong_yaku
+
+日本麻将 役一览 https://wenku.baidu.com/view/cc007eba941ea76e59fa043e.html
+
 ***文集：日麻教程***
 - 日麻萌新入门：大佬，为啥我不能和牌啊？（一） https://www.bilibili.com/read/cv1467866/
 - 日麻萌新入门：大佬，为啥我不能和牌啊（二） https://www.bilibili.com/read/cv1488243
