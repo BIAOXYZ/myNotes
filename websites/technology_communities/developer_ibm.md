@@ -22,3 +22,4 @@ Getting started with QRadar User Behavior Analytics (UBA) https://developer.ibm.
 系统调用跟我学(1) https://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/
 - Linux系统调用列表 https://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/appendix.html
 
+Google Protocol Buffer 的使用和原理 https://www.ibm.com/developerworks/cn/linux/l-cn-gpb/index.html
