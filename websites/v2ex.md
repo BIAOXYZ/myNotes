@@ -26,3 +26,7 @@ shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
 - > Bilibili > 番剧 > 番剧索引 > 评分    顺着看呗
 - > https://bangumi.tv/ 搜索你喜欢的番，下面有推荐 <br> 或者点击该番对应的一个 tag,点进去，排名排序，然后挑选你感兴趣的 
   >> 或者可以尝试 bgmer 基于 bangumi 制作的推荐系统，例如 https://bangumi.tv/group/topic/345856
+
+## V2EX工具类
+
+大家有什么推荐的日常 Linux 软件？ https://www.v2ex.com/t/575901
