@@ -13,6 +13,8 @@
 安装夸克 3.0 后，我再也不想「百度一下」了 https://mp.weixin.qq.com/s/x4z2g9SZdcjwiPC_1y6sLA
 
 免费全平台的文件分享利器：SendAnywhere https://sspai.com/post/40047
+- > 跨平台的传输分享工具有不少，Android 上有 AirDroid、Pushbullet，iOS 也能用 Pushbullet。可惜 AirDroid 只能为 Android 系统服务，Pushbullet 则需要通过 Google 账号登陆，传输大文件的速度堪忧。
+- > https://send-anywhere.com/
 
 好用的全平台剪切板工具，我们为你找到了这 3 款 https://sspai.com/post/43775
 > 免费开源的 Windows 管理剪贴板，让你处理文字更高效：Ditto https://sspai.com/post/43700
