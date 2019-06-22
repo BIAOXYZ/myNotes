@@ -1,4 +1,6 @@
 
+# general
+
 ## 垃圾清理
 
 有哪些深度清理手机垃圾的软件可以推荐？ - 大蓝同学的回答 - 知乎 https://www.zhihu.com/question/22383810/answer/586552478
@@ -33,3 +35,9 @@ we limit the number of accounts each phone number can create.
 微信上如何设置某一信息过一小时后再次提醒？ https://jingyan.baidu.com/article/e4d08ffd764cc40fd2f60d96.html
 > 原来微信是有提醒功能的，不过非常之简陋。。。也有小程序可以提醒，比如下面这个小叮提醒（其实就是自己在百度百科顺便打个广告- -）：
 >> 微信怎样设置日程提醒 https://jingyan.baidu.com/article/046a7b3e60e6e6f9c37fa965.html
+
+# xiaomi
+
+鉴定小米手机真伪的方法 https://jingyan.baidu.com/article/d169e186af7433436611d882.html
+- > 小米产品鉴别方法二：IMEI码和SN码
+  * > 帮助中心 https://www.mi.com/service/ --> 手机销售记录查询 https://order.mi.com/service/imei
