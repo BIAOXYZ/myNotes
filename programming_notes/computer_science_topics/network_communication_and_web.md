@@ -37,6 +37,25 @@ Hypertext Transfer Protocol -- HTTP/1.1 https://www.ietf.org/rfc/rfc2616.txt
 HTTP协议(rfc2626)中文翻译(修订版) http://www.blogjava.net/sunchaojin/archive/2009/05/31/279164.html --> 这作者把2616写成2626了。。。
 > 超文本传输协议-HTTP/1.1（修订版）---译者：孙超进 http://files.blogjava.net/sunchaojin/http1.3.pdf
 
+## httpd
+
+Is there any difference between apache2 and httpd? https://askubuntu.com/questions/248404/is-there-any-difference-between-apache2-and-httpd
+- > httpd is the same as apache2. It depends on the OS you use. For example in RHEL 6.2 it is called httpd and in Ubuntu it is called apache2.
+- > TL;DR
+  >> They are the same application - just that some Linux distributions refer to it differently within package managers and config files. RedHat-based distros (CentOS, Fedora) refer to it as httpd while Debian-based distros (Ubuntu) refer to it as apache. Gentoo, strangely enough, mostly refers to it as apache - but config files have httpd in the naming conventions.
+  > 
+  > Background
+  >> The application's development is managed by the Apache Foundation. Its name is actually Apache HTTP Server. It is often also called Apache httpd (http daemon) by the Apache Foundation. Colloquially, Unix admins have historically called it Apache and, even with the RedHat-based distributions, everyone already knows what you're referring to when you simply say Apache.
+```
+结论就是没有区别，就一回事，只是叫法不一样而已。关于这个apache起名字的叽歪事，那可不止这一件：
+```
+
+Apache HTTP服务器 https://zh.wikipedia.org/wiki/Apache_HTTP_Server
+> 命名
+>> 作者宣称因为Apache这个名字好记，所以才在最初选择它，但是流传最广的解释是（也是最显而易见的）：这个名字来自于一个事实：当Apache在1995年初开发的时候，它是由当时最流行的HTTP服务器NCSA HTTPd 1.3的代码修改而成的，因此是“一个修补的（a patchy）”服务器。然而，在Apache服务器官方网站的FAQ中是这么解释的：“Apache这个名字是为了纪念名为Apache的美洲原住民印第安人的一支，众所周知他们拥有高超的作战策略和无穷的耐性。”贝伦多夫说：“我选择阿帕奇这个名字是取其积极含义。阿帕奇族是最后一个屈服于美国政府的民族。当时我们担心大公司迟早会参与竞争并‘教化’这块最早的网络之地，所以在我看来，阿帕奇是个很好的名称，也有人说这个词一语双关-因为正如Apache（与"a patchy"谐音）的名字所表明的那样，他们确实是在给服务器打补丁。”无论如何，Apache 2.x分支不包含任何NCSA的程序代码。
+>>> [Apache软件基金会](https://zh.wikipedia.org/wiki/Apache%E8%BD%AF%E4%BB%B6%E5%9F%BA%E9%87%91%E4%BC%9A)wikipedia页面也有提到这点————很正常，毕竟apache（或者更准确地说`Apache HTTP Server`）是Apache Software Foundation命名的来源啊，相当于炮姐之于B站（bilibili）。
+>>>> 这个命名是根据北美当地的一支印第安部落而来，这支部落以高超的军事素养和超人的忍耐力著称，19世纪后半期对侵占他们领土的入侵者进行了反抗。为了对这支印第安部落表示敬仰之意，取该部落名称（Apache）作为服务器名。但一提到这个命名，这里还有流传着一段有意思的故事。因为这个服务器是在NCSA HTTPd服务器的基础之上，通过众人努力，不断地修正、打补丁（Patchy）的产物，被戏称为“A Patchy Server”（一个补丁服务器）。在这里，因为“A Patchy”与“Apache”是谐音，故最后正式命名为“Apache Server”。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # others
