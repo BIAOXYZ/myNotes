@@ -35,6 +35,10 @@ Mac OS下brew的安装和使用 https://www.jianshu.com/p/ab50ea8b13d6
 
 MacBook中如何将声音音量显示在菜单栏中 https://jingyan.baidu.com/article/414eccf6b3ff626b431f0a8d.html
 
+## 右上角显示完整日期而不是只有时间
+
+mac，如何设置系统菜单栏，显示日期？ https://jingyan.baidu.com/article/b7001fe1faeb130e7382dd45.html
+
 ## 对文件的剪切`command + X`无效
 
 为什么 Mac 没有提供剪切文件功能？ - Lily Wong的回答 - 知乎 https://www.zhihu.com/question/19579070/answer/60381049
