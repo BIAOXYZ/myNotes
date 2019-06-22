@@ -40,4 +40,6 @@ we limit the number of accounts each phone number can create.
 
 鉴定小米手机真伪的方法 https://jingyan.baidu.com/article/d169e186af7433436611d882.html
 - > 小米产品鉴别方法二：IMEI码和SN码
-  * > 帮助中心 https://www.mi.com/service/ --> 手机销售记录查询 https://order.mi.com/service/imei
+  * > 帮助中心 https://www.mi.com/service/
+    + > 小米产品防伪查询 https://order.mi.com/misc/checkitem
+    + > 手机销售记录查询 https://order.mi.com/service/imei
