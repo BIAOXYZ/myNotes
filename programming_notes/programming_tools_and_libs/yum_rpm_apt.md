@@ -17,6 +17,17 @@ Yum 学习笔记 https://segmentfault.com/a/1190000016194128
 
 yum配置与使用(很详细) http://www.cnblogs.com/xiaochaohuashengmi/archive/2011/10/09/2203916.html
 
+### 配置本地仓库
+
+搭建本地离线yum仓库 https://www.cnblogs.com/asheng2016/p/local-yum.html
+
+下载rpm包与本地yum仓库的制作 https://www.jianshu.com/p/286fcef565ab
+
+***其他配置方式（如用挂载镜像的方式，但是这种应该比较少，所以没细研究）***：
+- https://blog.csdn.net/leshami/article/details/78133716
+- https://blog.csdn.net/danneel/article/details/52098527
+- https://blog.csdn.net/jack_nichao/article/details/51685312
+
 ## yum命令
 
 linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.html
@@ -26,6 +37,8 @@ linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.h
   * > `yum upgrade` forces the removal of obsolete packages, while `yum update` may or may not also do this. The removal of obsolete packages can be risky, as it may remove packages that you use. This makes `yum update` the safer option.
 
 ## yum其他
+
+### 安装指定版本软件
 
 在CentOS系统中使用yum安装指定版本软件 https://blog.csdn.net/cy309173854/article/details/78668237
 
