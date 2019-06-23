@@ -108,6 +108,8 @@ k8s_scale – Set a new size for a Deployment, ReplicaSet, Replication Controlle
 
 k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
 
+helm – Manages Kubernetes packages with the Helm package manager https://docs.ansible.com/ansible/latest/modules/helm_module.html
+
 # Ansible Playbooks and Roles
 
 `Roles` -- `Role Search Path` https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#role-search-path
