@@ -26,6 +26,10 @@
 
 植牙靠谱吗？是不是要花很多钱 https://www.v2ex.com/t/565823
 
+# 饮食健康
+
+印度百余儿童吃荔枝致死，如何健康地吃荔枝 https://www.ithome.com/0/429/651.htm
+
 # 其他
 
 无码科技发布了一个希望你永远用不到的小工具 https://mp.weixin.qq.com/s/LKu4MFB_eNeDsnp6nwPtIw
