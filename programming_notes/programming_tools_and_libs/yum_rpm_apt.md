@@ -19,7 +19,7 @@ yum配置与使用(很详细) http://www.cnblogs.com/xiaochaohuashengmi/archive/
 
 ### 配置本地仓库
 
-搭建本地离线yum仓库 https://www.cnblogs.com/asheng2016/p/local-yum.html
+搭建本地离线yum仓库 https://www.cnblogs.com/asheng2016/p/local-yum.html 【[:star:][`*`]】
 
 下载rpm包与本地yum仓库的制作 https://www.jianshu.com/p/286fcef565ab
 
@@ -265,3 +265,11 @@ Snappy (package manager) https://en.wikipedia.org/wiki/Snappy_(package_manager)
 Snapcraft: The app store for Linux - Publish your app for Linux users — for desktop, cloud, and Internet of Things. https://snapcraft.io/
 
 使用 Snapcraft 构建、测试并发布 Snap 软件包 https://linux.cn/article-8788-1.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# vcpkg
+
+C++ Library Manager for Windows, Linux, and MacOS https://github.com/microsoft/vcpkg
+
+如何看待 Windows 的 C++ 包管理器 vcpkg？ - 知乎 https://www.zhihu.com/question/263416411
