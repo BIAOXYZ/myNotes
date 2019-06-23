@@ -314,3 +314,6 @@ bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/top
 
 时崎狂三 https://zh.moegirl.org/%E6%97%B6%E5%B4%8E%E7%8B%82%E4%B8%89
 
+OVA与OAD有什么区别 https://www.bilibili.com/video/av21322200
+- > 简单说就是ova能单买，oad和别的捆绑销售
+- > 区别大着呢 OVA是BD盘附带TV里没有的剧集 OAD指的是漫画或轻小说附赠的DVD内容
