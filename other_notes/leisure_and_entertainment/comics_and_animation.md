@@ -317,3 +317,6 @@ bilibili 2018年度动画流行梗盘点 https://www.bilibili.com/blackboard/top
 OVA与OAD有什么区别 https://www.bilibili.com/video/av21322200
 - > 简单说就是ova能单买，oad和别的捆绑销售
 - > 区别大着呢 OVA是BD盘附带TV里没有的剧集 OAD指的是漫画或轻小说附赠的DVD内容
+- > ova卖肉，oad卖腐。难道不是这样的吗？
+- > 公主恋人ova是avo
+- > ova是一般是单独购买，oad一般是单行本附赠，画质略渣
