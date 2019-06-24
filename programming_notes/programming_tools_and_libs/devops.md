@@ -159,7 +159,7 @@ druidcluster1  ansible_user=root
 ----------------------------------------------------------------------------------------------------
 ```
 
-# Ansible modules
+# [Ansible modules] (https://docs.ansible.com/ansible/latest/modules/modules_by_category.html)
 
 ## kubernetes related ansible modules
 
@@ -170,6 +170,14 @@ k8s_scale – Set a new size for a Deployment, ReplicaSet, Replication Controlle
 k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
 
 helm – Manages Kubernetes packages with the Helm package manager https://docs.ansible.com/ansible/latest/modules/helm_module.html
+
+## other modules
+
+### authorized_key
+
+authorized_key – Adds or removes an SSH authorized key https://docs.ansible.com/ansible/latest/modules/authorized_key_module.html
+
+Ansible Playbook: Deploy the public key to remote hosts https://medium.com/@visualskyrim/ansible-playbook-deploy-the-public-key-to-remote-hosts-da3f3b4b5481
 
 # Ansible Playbooks and Roles
 
