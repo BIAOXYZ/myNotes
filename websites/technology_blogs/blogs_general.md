@@ -102,6 +102,26 @@ Shell编程进阶篇(完结) https://www.cnblogs.com/clsn/p/8028337.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+## [jeremy的技术点滴] (https://jeremyxu2010.github.io/)
+
+kuberntes中的redis集群性能调优 https://jeremyxu2010.github.io/2019/06/kuberntes%E4%B8%AD%E7%9A%84redis%E9%9B%86%E7%BE%A4%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/
+
+使用vagrant搭建验证环境 https://jeremyxu2010.github.io/2019/03/%E4%BD%BF%E7%94%A8vagrant%E6%90%AD%E5%BB%BA%E9%AA%8C%E8%AF%81%E7%8E%AF%E5%A2%83/
+
+### 代码相关的
+
+编写Kubernetes Operator https://jeremyxu2010.github.io/2019/05/%E7%BC%96%E5%86%99kubernetes-operator/
+
+巧妙调试docker容器 https://jeremyxu2010.github.io/2019/04/%E5%B7%A7%E5%A6%99%E8%B0%83%E8%AF%95docker%E5%AE%B9%E5%99%A8/
+
+使用TravisCI做个人博客的自动构建 https://jeremyxu2010.github.io/2019/03/%E4%BD%BF%E7%94%A8travisci%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/
+
+使用docker in docker https://jeremyxu2010.github.io/2019/02/%E4%BD%BF%E7%94%A8docker-in-docker/
+
+搭建k8s的开发调试环境 https://jeremyxu2010.github.io/2018/08/%E6%90%AD%E5%BB%BAk8s%E7%9A%84%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83/
+
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 --------------------------------------------------
 --------------------------------------------------
