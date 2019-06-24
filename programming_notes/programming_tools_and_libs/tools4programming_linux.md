@@ -1,5 +1,5 @@
 
-### bash-completion
+## bash-completion
 
 RedHat - yum install completion https://serverfault.com/questions/511876/redhat-yum-install-completion
 - > first check that you have the bash_completion package installed;
@@ -33,7 +33,7 @@ $  repoquery --list bash-completion.noarch
 ...
 ```
 
-### SSH & SSL & TLS
+## SSH & SSL & TLS
 
 <<SSH用私钥登录远程服务器时提示私钥不安全>>
 http://www.codeweblog.com/ssh%E7%94%A8%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6%E6%8F%90%E7%A4%BA%E7%A7%81%E9%92%A5%E4%B8%8D%E5%AE%89%E5%85%A8/
@@ -53,18 +53,18 @@ SSH的默认端口是22，也就是说，你的登录请求会送进远程主机
 - SSL/TLS协议运行机制的概述 http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html
 - 图解SSL/TLS协议 http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
 
-#### SSH建互信
+### SSH建互信
 
 - http://blog.csdn.net/seeyouc/article/details/53102280
 - http://www.cnblogs.com/jyzhao/p/3781072.html
 - https://www.linuxdaxue.com/linux-auto-make-ssh-authon.html
 
-#### SSH免密登陆（和建互信一个意思）
+### SSH免密登陆（和建互信一个意思）
 
 - ssh免密登录配置 https://www.jianshu.com/p/0922095f69f3
 - Linux之ssh免密登录 https://blog.csdn.net/mmd0308/article/details/73825953
 
-### samba
+## samba
 
 <<Samba 的多用户共享目录配置>>
 http://blog.sina.com.cn/s/blog_545f2b4701010t8i.html
@@ -76,6 +76,14 @@ http://www.linuxidc.com/Linux/2014-02/97349.htm
 http://www.linuxidc.com/Linux/2016-12/138498.htm
 
 http://www.linuxidc.com/Linux/2016-03/129195.htm
+
+### samba第二批（更详细的资料）
+
+在CentOS 7上安装和配置Samba服务器 https://www.howtoing.com/samba-server-installation-and-configuration-on-centos-7
+
+CentOS 7下Samba服务器的安装与配置 https://www.cnblogs.com/muscleape/p/6385583.html
+
+CentOS7下Samba服务安装与配置 https://www.jianshu.com/p/cc9da3a154a0
 
 ### 忘记密码
 
