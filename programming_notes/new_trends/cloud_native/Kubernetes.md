@@ -569,6 +569,10 @@ Kubernetes controller-tools: Tools to use with the controller-runtime libraries 
 
 Deploy a Production Ready Kubernetes Cluster https://github.com/kubernetes-sigs/kubespray
 
+Consume services in Kubernetes using the Open Service Broker API https://github.com/kubernetes-sigs/service-catalog
+- https://svc-cat.io/
+- Service Catalog https://kubernetes.io/docs/concepts/extend-kubernetes/service-catalog/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # projects based on or related to k8s
