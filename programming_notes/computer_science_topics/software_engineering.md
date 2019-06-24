@@ -1,4 +1,8 @@
 
+# software engineering "theory" related
+
+《软件基础》中文版 https://Coq-zh.github.io/SF-zh/ || https://github.com/Coq-zh/SF-zh
+
 # issue or bug tracking/agile project management
 
 Jira (software) https://en.wikipedia.org/wiki/Jira_(software)
