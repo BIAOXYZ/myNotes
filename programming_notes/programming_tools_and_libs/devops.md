@@ -81,6 +81,8 @@ Getting Started With Ansible Tower https://dzone.com/articles/getting-started-wi
 
 Ansible Documentation https://docs.ansible.com/ansible/latest/index.html
 
+A few starter examples of ansible playbooks, to show features and how they work together. See http://galaxy.ansible.com for example roles from the Ansible community for deploying many popular applications. https://github.com/ansible/ansible-examples
+
 # Ansible general
 
 Ansible (software) https://en.wikipedia.org/wiki/Ansible_(software)
@@ -159,6 +161,8 @@ druidcluster1  ansible_user=root
 ----------------------------------------------------------------------------------------------------
 ```
 
+🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹
+
 # [Ansible modules] (https://docs.ansible.com/ansible/latest/modules/modules_by_category.html)
 
 ## kubernetes related ansible modules
@@ -171,6 +175,8 @@ k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/
 
 helm – Manages Kubernetes packages with the Helm package manager https://docs.ansible.com/ansible/latest/modules/helm_module.html
 
+🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️
+
 ## other modules
 
 ### authorized_key
@@ -178,6 +184,14 @@ helm – Manages Kubernetes packages with the Helm package manager https://docs.
 authorized_key – Adds or removes an SSH authorized key https://docs.ansible.com/ansible/latest/modules/authorized_key_module.html
 
 Ansible Playbook: Deploy the public key to remote hosts https://medium.com/@visualskyrim/ansible-playbook-deploy-the-public-key-to-remote-hosts-da3f3b4b5481
+
+### get_url
+
+get_url – Downloads files from HTTP, HTTPS, or FTP to node https://docs.ansible.com/ansible/latest/modules/get_url_module.html
+
+第十三节： get_url模块 https://www.kancloud.cn/louis1986/ansible/562639
+
+🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹
 
 # Ansible Playbooks and Roles
 
