@@ -100,6 +100,8 @@ Ansible入门 https://getansible.com/
 
 Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansible/
 
+Ansible之inventory和常用模块介绍 https://www.jianshu.com/p/398af9fd0172
+
 # Ansible命令实战
 
 ## inventory file的组名起成`[all]`的话等于没起
@@ -161,7 +163,7 @@ druidcluster1  ansible_user=root
 ----------------------------------------------------------------------------------------------------
 ```
 
-🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Ansible modules] (https://docs.ansible.com/ansible/latest/modules/modules_by_category.html)
 
@@ -175,7 +177,7 @@ k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/
 
 helm – Manages Kubernetes packages with the Helm package manager https://docs.ansible.com/ansible/latest/modules/helm_module.html
 
-🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️🈯️
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## other modules
 
@@ -191,7 +193,11 @@ get_url – Downloads files from HTTP, HTTPS, or FTP to node https://docs.ansibl
 
 第十三节： get_url模块 https://www.kancloud.cn/louis1986/ansible/562639
 
-🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹🈹
+### unarchive
+
+unarchive – Unpacks an archive after (optionally) copying it from the local machine https://docs.ansible.com/ansible/latest/modules/unarchive_module.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Ansible Playbooks and Roles
 
