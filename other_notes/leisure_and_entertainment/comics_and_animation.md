@@ -98,6 +98,8 @@
 
 ## 一拳超人
 
+一拳超人 https://zh.wikipedia.org/wiki/%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA
+
 《一拳超人》：一个兴趣使然的英雄 http://www.sohu.com/a/123540768_585167
 
 ### 一击男分集剧情
@@ -105,6 +107,11 @@
 ***是的，这俩问题完全不是因为什么bgm，主要是因为提问者恰好描述了相应集数的关键剧情。***
 - 一拳超人第五集琦玉老师一击打向杰瑞斯的bgm是什么？ https://zhidao.baidu.com/question/556299006412972732.html
 - 一拳超人第六集海带怪战斗bgm https://zhidao.baidu.com/question/1760241889802232148.html
+
+### 一击男漫画
+
+- 一拳超人 https://manhua.dmzj.com/yiquanchaoren
+- 一击男ONE原作版 https://manhua.dmzj.com/yijinanoneyuanzuoban
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
