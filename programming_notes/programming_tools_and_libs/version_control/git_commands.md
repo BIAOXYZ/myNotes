@@ -404,6 +404,68 @@ LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
 $
 ```
 
+```
+# 添加的远端也可以是带账号密码的url的形式，过程如下（过程中密码都用{MYPASSWORD}代替了，实际中密码不用大括号包住）：
+
+// 查看一下当前的远端仓库信息，同时方便复制粘贴远端仓库地址。
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote -v
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (fetch)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (push)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (push)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+
+// 添加一个新的远端仓库，取名为all（别的名字当然也可以）。最好用当前默认的push远端，一般都是origin。
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote add all https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git
+
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote -v
+all     https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+all     https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (fetch)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (push)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (push)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+
+// 后面就不再重复了，总之就是不断地用git remote set-url --add往新的远端仓库all里添加已有远端仓库的地址。
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote set-url --add all https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git
+
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote -v
+all     https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+all     https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+all     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (push)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (fetch)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (push)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (push)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote set-url --add all https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git
+
+AzureAD+LiangLiu@DESKTOP-5LVLGG9 MINGW64 /e/githubrepo/paperRelatedRepository (master)
+$ git remote -v
+all     https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+all     https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+all     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (push)
+all     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (push)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (fetch)
+bit     https://BIAOXYZ:{MYPASSWORD}@bitbucket.org/BIAOXYZ/paperrelatedrepository.git (push)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+lab     https://biaoxyz:{MYPASSWORD}@gitlab.com/BIAOXYZ/paperRelatedRepository.git (push)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (fetch)
+origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.git (push)
+
+```
+
 ----------------------------------------------------------------------------------------------------
 
 #### git diff会有些^M
