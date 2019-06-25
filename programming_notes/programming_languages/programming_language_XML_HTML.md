@@ -65,6 +65,8 @@ Introduction to YAML: Creating a Kubernetes deployment https://www.mirantis.com/
 
 YAML Syntax https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 
+易百教程 -- YAML教程 https://www.yiibai.com/yaml
+
 # XML
 
 XML——XML介绍和基本语法 - CSDN博客
