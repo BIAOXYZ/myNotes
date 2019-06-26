@@ -128,6 +128,9 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 ### paper
 
+- (IH&MMSec 2016) Practical and Scalable Sharing of Encrypted Data in Cloud Storage with Key Aggregation https://www.comp.nus.edu.sg/~changec/publications/2016_IH_MMSEC.pdf
+  * https://www.comp.nus.edu.sg/~changec/publications/2016_IHMMSEC_fastKAC_Slides.pdf
+
 - (NDSS 2019 poster) Poster: Securing Operating System Audit Logs https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019posters_paper_37.pdf
 
 - (IMACC 2017) Revealing Encryption for Partial Ordering https://eprint.iacr.org/2016/972.pdf
