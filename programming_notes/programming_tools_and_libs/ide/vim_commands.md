@@ -207,6 +207,9 @@ d1G	删至文档首部
 <<vim常用命令总结>>
 http://www.cnblogs.com/Nice-Boy/p/6124177.html
 
+Practical Vim https://book.douban.com/subject/10599776/
+- https://the-eye.eu/public/Books/IT%20Various/practical_vim.pdf
+
 ## Vim配置
 
 有哪些编程必备的 Vim 配置？ - 知乎
