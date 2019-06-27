@@ -9,9 +9,15 @@
 
 ## yum general
 
+Yum 学习笔记 https://segmentfault.com/a/1190000016194128
+
+## yum from Red Hat
+
 Yum Command Cheat Sheet for Red Hat Enterprise Linux https://access.redhat.com/articles/yum-cheat-sheet
 
-Yum 学习笔记 https://segmentfault.com/a/1190000016194128
+8.4.5. ADDING, ENABLING, AND DISABLING A YUM REPOSITORY https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/sec-managing_yum_repositories
+- > Adding a Yum Repository
+  >> To define a new repository, you can either add a [repository] section to the /etc/yum.conf file, or to a .repo file in the /etc/yum.repos.d/ directory. All files with the .repo file extension in this directory are read by yum, and it is recommended to define your repositories here instead of in /etc/yum.conf.
 
 ## yum配置
 
