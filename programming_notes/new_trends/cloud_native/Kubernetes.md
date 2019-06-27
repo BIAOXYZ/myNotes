@@ -217,6 +217,8 @@ Kubectl apply vs kubectl create? https://stackoverflow.com/questions/47369351/ku
 
 Kubernetes技术分析之网络 http://dockone.io/article/545
 
+从外部访问Kubernetes中的Pod https://jimmysong.io/posts/accessing-kubernetes-pods-from-outside-of-the-cluster/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Ingress
@@ -519,12 +521,12 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
 - 如何从零开始编写一个Kubernetes CRD http://www.servicemesher.com/blog/kubernetes-crd-quick-start/
   * Extend the Kubernetes API with CustomResourceDefinitions https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
   * CustomResourceDefinition https://kubernetes.feisky.xyz/cha-jian-kuo-zhan/api/customresourcedefinition
-  * Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/  【:start:】
+  * Kubebuilder - SDK for building Kubernetes APIs using CRDs https://github.com/kubernetes-sigs/kubebuilder || https://book.kubebuilder.io/  【:star:】
   * Repository for sample controller. Complements sample-apiserver https://github.com/kubernetes/sample-controller
 - Operator https://jimmysong.io/kubernetes-handbook/develop/operator.html
   * 使用自定义资源扩展API https://jimmysong.io/kubernetes-handbook/concepts/custom-resource.html
     + Introducing Operators: Putting Operational Knowledge into Software https://coreos.com/blog/introducing-operators.html
-  * OperatorHub.io https://operatorhub.io/  【:start:】
+  * OperatorHub.io https://operatorhub.io/  【:star:】
 - Kubernetes CRD Operator 实现指南 - 高策的文章 - 知乎 https://zhuanlan.zhihu.com/p/38372448
   * [Discussion] Operators vs. controller pattern #300 https://github.com/kubeflow/tf-operator/issues/300
 - 开发operator扩展kubernetes 调研整理 https://yucs.github.io/2017/12/21/2017-12-21-operator/
