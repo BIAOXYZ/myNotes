@@ -62,6 +62,13 @@ Mac 上的“终端”键盘快捷键 https://support.apple.com/zh-cn/guide/term
   | 关闭标签页 | Command-W |
   | 关闭窗口 | Shift-Command-W |
 
+## 普通乘号(是`×`，而不是`✖️`)的输入
+
+mac快捷键—特殊符号 https://www.jianshu.com/p/09d71ac1a8e4
+> 另外乘号，输入法“乘号”可以出来粗大的✖️，标准的乘号要用 shift+option+b 来选择 ×
+
+Mac用Option键输入特殊符号 https://www.jianshu.com/p/844ab18fd819
+
 ## 目录没有一个直观的向上一级的按钮，得通过那个访达Finder来向上一级
 
 Mac 怎么打开根目录，怎么查看硬盘 https://jingyan.baidu.com/article/acf728fd7138b7f8e510a398.html
