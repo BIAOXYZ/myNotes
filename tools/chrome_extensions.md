@@ -62,6 +62,12 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 > Saladict https://github.com/crimx/ext-saladict/wiki
 >> :warning:（重要）初次使用注意事项！！！ https://github.com/crimx/ext-saladict/wiki/Instructions
 
+- Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/
+  * 如何安装用户脚本 https://greasyfork.org/zh-CN/help/installing-user-scripts
+  * 解除B站区域限制 https://greasyfork.org/en/scripts/25718-%E8%A7%A3%E9%99%A4b%E7%AB%99%E5%8C%BA%E5%9F%9F%E9%99%90%E5%88%B6
+  * Bilibili直播间挂机助手 https://greasyfork.org/en/scripts/37095-bilibili%E7%9B%B4%E6%92%AD%E9%97%B4%E6%8C%82%E6%9C%BA%E5%8A%A9%E6%89%8B  
+  * 百度网盘直链下载助手 https://greasyfork.org/en/scripts/39504-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B
+
 ## not frequently used
 
 - RunMyCode Online https://chrome.google.com/webstore/detail/runmycode-online/iidcnkpdmnopbbkdmneglbelcefgfohf
