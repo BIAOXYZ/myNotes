@@ -104,6 +104,8 @@ https://github.com/retejs/rete
 - 朱茵变杨幂，流量一个亿丨AI变脸指南 https://mp.weixin.qq.com/s/JlqOerM5gESRL7AlvDNryQ
 - AI换脸一时爽，侵权违法太酸爽：民法典新草案有规定，小心赔到家底空 https://mp.weixin.qq.com/s/OqnbOCJqgU6l-p1akab9xA
 
+找不出破绽！斯坦福等新研究：随意输入文本，改变视频人物对白，逼真到让作者害怕 https://mp.weixin.qq.com/s/qgaWNIeVG821jENaPI2Wmg
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 拥抱开源，这个城市的法典都通过 GitHub 发布 - Open Source 开源 - cnBeta.COM https://www.cnbeta.com/articles/tech/791993.htm
