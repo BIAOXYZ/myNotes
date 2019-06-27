@@ -214,3 +214,8 @@ In this example, there are two commands seperated by ‘;’
 ## yum
 
 15 Linux Yum Command Examples – Install, Uninstall, Update Packages https://www.thegeekstuff.com/2011/08/yum-command-examples/
+
+## others
+
+How Install and Configure OpenLDAP on CentOS / RHEL Linux https://www.thegeekstuff.com/2015/01/openldap-linux/
+
