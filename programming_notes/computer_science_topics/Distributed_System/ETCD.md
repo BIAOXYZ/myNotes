@@ -6,6 +6,9 @@ Demo https://coreos.com/etcd/docs/latest/demo.html
 
 Administration https://coreos.com/etcd/docs/latest/v2/admin_guide.html
 
+etcd playground http://play.etcd.io || https://github.com/etcd-io/etcdlabs
+- http://play.etcd.io/install
+
 --------------------------------------------------
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
