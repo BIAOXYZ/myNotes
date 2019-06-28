@@ -26,3 +26,6 @@ Fabrice Bellard 是个什么水平的程序员？ - 知乎 https://www.zhihu.com
 > 天才程序员 Fabrice Bellard http://blog.jobbole.com/69582/
 
 云舒事件始末 - edmond的文章 - 知乎 https://zhuanlan.zhihu.com/p/54154717
+
+如何看待 IT 之家前小编文轩称其评测手机等电子设备「收钱」？真正客观的评测是怎样的？ - 文轩的回答 - 知乎https://www.zhihu.com/question/322664929/answer/672481484
+> 手机测评造假收费，屠龙少年竟成恶龙的悲剧在IT之家上演？ http://www.sohu.com/a/312039296_100262104
