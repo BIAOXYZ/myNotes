@@ -427,6 +427,10 @@ kubernetes源码阅读 kubelet初探 - fanbin的文章 - 知乎 https://zhuanlan
 
 🤔 What happens when I type kubectl run? https://github.com/jamiehannaford/what-happens-when-k8s
 
+【by 程序员欣宸】：
+- Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
+- Kubernetes深入学习之二:编译和部署镜像(api-server) https://blog.csdn.net/boling_cavalry/article/details/88603293
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # k8s项目相关
