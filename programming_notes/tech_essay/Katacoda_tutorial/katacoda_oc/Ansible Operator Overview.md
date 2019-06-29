@@ -512,7 +512,112 @@ Finally, verify that the memcached-operator is no longer running.
 
 Now let's take a look at using the built-in 'local install' functionality of the SDK.
 
-# ~~9. Running the Operator Locally (Outside the Cluster)~~ //这部分不常用，先不管了。
+# ~~9. Running the Operator Locally (Outside the Cluster)~~ //这部分不常用，先不管了。 --> 已补全
+
+In order to speed up Operator deployment and testing, `operator-sdk` provides a mechanism to run the Operator outside of a cluster.
+
+## Copying Roles for local development
+
+It is important that the Role path referenced in watches.yaml exists on your machine.
+
+We previously ran our Ansible Operator from a container where the Role was copied to a known location specified by the Dockerfile.
+
+To run our Operator locally, we will manually copy any Roles used by our Operator to a configured Ansible Roles path for our local machine (e.g /etc/ansible/roles).
+
+> cp -r ~/tutorial/memcached-operator/roles/dymurray.memcached_operator_role /opt/ansible/roles/
+
+## Running with `operator-sdk up local` Sample Commands
+
+Running `operator-sdk up local` to run an Operator locally requires a KUBECONFIG value to connect with a cluster. Some sample commands are shown below.
+```
+$ operator-sdk up local # default, KUBECONFIG=$HOME/.kube/config
+```
+```
+$ operator-sdk up local --kubeconfig=/tmp/config # KUBECONFIG='/tmp/config'
+```
+For this scenario, there is a properly permissioned KUBECONFIG at `~/backup/.kube/config`. We'll run the command below to use it.
+
+## Start the Operator
+
+> operator-sdk up local --kubeconfig=/root/backup/.kube/config --namespace tutorial
+```
+$ operator-sdk up local --kubeconfig=/root/backup/.kube/config --namespace tutorial
+INFO[0000] Running the operator locally.
+INFO[0000] Using namespace tutorial.
+{"level":"info","ts":1561832021.0065517,"logger":"cmd","msg":"Go Version: go1.10.3"}
+{"level":"info","ts":1561832021.0066895,"logger":"cmd","msg":"Go OS/Arch: linux/amd64"}
+{"level":"info","ts":1561832021.0067859,"logger":"cmd","msg":"Version of operator-sdk: v0.6.0"}
+{"level":"info","ts":1561832021.0069199,"logger":"cmd","msg":"Watching namespace.","Namespace":"tutorial"}
+{"level":"info","ts":1561832021.0857623,"logger":"leader","msg":"Trying to become the leader."}
+{"level":"info","ts":1561832021.08588,"logger":"leader","msg":"Skipping leader election; not running in a cluster."}
+{"level":"info","ts":1561832021.0875385,"logger":"proxy","msg":"Starting to serve","Address":"127.0.0.1:8888"}
+{"level":"info","ts":1561832021.0879486,"logger":"manager","msg":"Using default value for workers 1"}
+{"level":"info","ts":1561832021.0880601,"logger":"ansible-controller","msg":"Watching resource","Options.Group":"cache.example.com","Options.Version":"v1alpha1","Options.Kind":"Memcached"}
+{"level":"info","ts":1561832021.088567,"logger":"kubebuilder.controller","msg":"Starting EventSource","controller":"memcached-controller","source":"kind source: cache.example.com/v1alpha1, Kind=Memcached"}
+{"level":"info","ts":1561832021.1892624,"logger":"kubebuilder.controller","msg":"Starting Controller","controller":"memcached-controller"}
+{"level":"info","ts":1561832021.2898579,"logger":"kubebuilder.controller","msg":"Starting workers","controller":"memcached-controller","worker count":1}
+{"level":"info","ts":1561832034.6004333,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"7081078987353211622","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832037.3231122,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"7081078987353211622","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832039.1791327,"logger":"proxy","msg":"Cache miss: apps/v1, Kind=Deployment, tutorial/example-memcached-memcached"}
+{"level":"info","ts":1561832039.1852398,"logger":"proxy","msg":"Injecting owner reference"}
+{"level":"info","ts":1561832039.1857708,"logger":"proxy","msg":"Watching child resource","kind":"apps/v1, Kind=Deployment","enqueue_kind":"cache.example.com/v1alpha1, Kind=Memcached"}
+{"level":"info","ts":1561832039.185864,"logger":"kubebuilder.controller","msg":"Starting EventSource","controller":"memcached-controller","source":"kind source: apps/v1, Kind=Deployment"}
+{"level":"info","ts":1561832039.5896735,"logger":"runner","msg":"Ansible-runner exited successfully","job":"7081078987353211622","name":"example-memcached","namespace":"tutorial"}
+{"level":"info","ts":1561832041.44872,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"1892792762516798311","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832046.111259,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"1892792762516798311","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832047.6920278,"logger":"runner","msg":"Ansible-runner exited successfully","job":"1892792762516798311","name":"example-memcached","namespace":"tutorial"}
+{"level":"info","ts":1561832050.23202,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"6638648752957039002","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832053.9389513,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"6638648752957039002","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832055.4423213,"logger":"runner","msg":"Ansible-runner exited successfully","job":"6638648752957039002","name":"example-memcached","namespace":"tutorial"}
+{"level":"info","ts":1561832057.1756217,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"3915917106929638467","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832059.962448,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"3915917106929638467","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832061.4559617,"logger":"runner","msg":"Ansible-runner exited successfully","job":"3915917106929638467","name":"example-memcached","namespace":"tutorial"}
+{"level":"info","ts":1561832101.211078,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"8007670382699750559","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832103.8346977,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"8007670382699750559","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832105.4238696,"logger":"runner","msg":"Ansible-runner exited successfully","job":"8007670382699750559","name":"example-memcached","namespace":"tutorial"}
+{"level":"info","ts":1561832167.134746,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"4972439727198892299","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832169.8050735,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"4972439727198892299","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832171.3381002,"logger":"runner","msg":"Ansible-runner exited successfully","job":"4972439727198892299","name":"example-memcached","namespace":"tutorial"}
+{"level":"info","ts":1561832232.993696,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1, Kind=Memcached","event_type":"playbook_on_task_start","job":"787307254988664914","EventData.Name":"Gathering Facts"}
+{"level":"info","ts":1561832235.5146365,"logger":"logging_event_handler","msg":"[playbook task]","name":"example-memcached","namespace":"tutorial","gvk":"cache.example.com/v1alpha1,Kind=Memcached","event_type":"playbook_on_task_start","job":"787307254988664914","EventData.Name":"dymurray.memcached_operator_role : start memcached"}
+{"level":"info","ts":1561832237.154112,"logger":"runner","msg":"Ansible-runner exited successfully","job":"787307254988664914","name":"example-memcached","namespace":"tutorial"}
+
+```
+
+Next open a 2nd terminal window, using the "+" tab and navigate to our Operator.
+> cd ~/tutorial/memcached-operator
+
+## Create the Custom Resource
+
+Create the example Memcached CR that was generated at deploy/crds/cache_v1alpha1_memcached_cr.yaml:
+> oc create -f deploy/crds/cache_v1alpha1_memcached_cr.yaml --as system:admin
+
+Ensure that the memcached-operator creates the deployment for the CR:
+```
+$ oc get deployment
+NAME               DESIRED CURRENT UP-TO-DATE AVAILABLE AGE
+example-memcached  4       4       4          4         34s
+```
+Check the pods to confirm 4 replicas were created:
+```
+$ oc get pods
+NAME                               READY STATUS   RESTARTS AGE
+example-memcached-6cc844747c-dp8sx 1/1   Running  0        1m
+example-memcached-6cc844747c-hk52c 1/1   Running  0        1m
+example-memcached-6cc844747c-q75m4 1/1   Running  0        1m
+example-memcached-6cc844747c-xp8qp 1/1   Running  0        1m
+```
+
+## Cleanup
+
+Clean up the resources:
+```
+oc delete -f deploy/crds/cache_v1alpha1_memcached_cr.yaml --as system:admin
+oc delete -f deploy/role_binding.yaml
+oc delete -f deploy/role.yaml
+oc delete -f deploy/service_account.yaml
+oc delete -f deploy/crds/cache_v1alpha1_memcached_crd.yaml --as system:admin
+```
 
 # 实战记录（部分）
 
