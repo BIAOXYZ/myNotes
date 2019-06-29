@@ -618,6 +618,7 @@ The Kubernetes Package Manager https://github.com/helm/helm
 ### Helm books
 
 Helm User Guide - Helm 用户指南 https://whmzsu.github.io/helm-doc-zh-cn/
+- Helm 插件指南 https://whmzsu.github.io/helm-doc-zh-cn/quickstart/plugins-zh_cn.html
 
 ### Helm articles
 
