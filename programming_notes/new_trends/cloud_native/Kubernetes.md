@@ -221,7 +221,7 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Ingress
+## kubernetesw网络之Ingress
 
 ### ingres from k8s official
 
@@ -244,6 +244,14 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 Kubernetes Nginx Ingress 教程 https://mritd.me/2017/03/04/how-to-use-nginx-ingress/
 
 实践kubernetes ingress controller的四个例子 https://tonybai.com/2018/06/21/kubernetes-ingress-controller-practice-using-four-examples/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## kubernetesw网络之DNS
+
+DNS for Services and Pods https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes client
 
@@ -405,7 +413,9 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 随笔分类 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/category/1231156.html
 - 写在最前面 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/p/9194998.html
 
-【kubernetes/k8s源码分析】 client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
+【by 张忠琳】：
+- 【kubernetes/k8s源码分析】client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
+- 【kubernetes/k8s源码分析】kube-scheduler 源码分析 https://blog.csdn.net/zhonglinzhang/article/details/77197834
 
 使用VS code 调试 Kubernetes 源代码 https://blog.csdn.net/cloudnativeapp/article/details/79213731
 
@@ -413,7 +423,7 @@ kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
 
 Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s-cronjob-source-code/
 
-From Draveness's Blog 【面向信仰编程】：
+【From Draveness's Blog 【面向信仰编程】】：
 - 详解 Kubernetes Pod 的实现原理 https://draveness.me/kubernetes-pod
 - 详解 Kubernetes Deployment 的实现原理 https://draveness.me/kubernetes-deployment
 - 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
@@ -544,6 +554,7 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
 Ryan Yang #Kubernetes https://www.yangcs.net/categories/kubernetes/
 - Kubernetes DNS 高阶指南 https://www.yangcs.net/posts/kubernetes-dns/
 - Kubernetes 的奇技淫巧 -- 打造高效的命令行终端 https://www.yangcs.net/posts/kubernetes-fucking-trick/
+- 深入理解 Kubernetes 资源限制：CPU https://www.yangcs.net/posts/understanding-resource-limits-in-kubernetes-cpu-time/
 
 50+ 顶级开源 Kubernetes 工具列表 https://www.infoq.cn/article/RPA-wswoEyjuRZfTMcut
 
