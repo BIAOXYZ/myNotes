@@ -1,5 +1,10 @@
 
-# yum
+# [yum](http://yum.baseurl.org/)
+
+Yellowdog Updater, Modified (YUM) https://en.wikipedia.org/wiki/Yum_(software)
+- > The Yellowdog Updater, Modified (YUM) is a free and open-source command-line package-management utility for computers running the Linux operating system using the RPM Package Manager. Though YUM has a command-line interface, several other tools provide graphical user interfaces to YUM functionality.
+
+Yum Package Manager http://yum.baseurl.org/
 
 ## 常用yum command个人总结
 
@@ -124,7 +129,14 @@ repolist: 25,663
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# rpm
+# [rpm](https://rpm.org/)
+
+RPM Package Manager https://en.wikipedia.org/wiki/RPM_Package_Manager
+- > RPM Package Manager (RPM) (originally Red Hat Package Manager; now a recursive acronym) is a free and open-source package management system. The name RPM refers to .rpm file format and the package manager program itself. RPM was intended primarily for Linux distributions; the file format is the baseline package format of the Linux Standard Base.
+
+RPM Package Manager https://rpm.org/
+
+## rpm常用命令
 
 Linux rpm 命令参数使用详解［介绍和应用］ https://www.cnblogs.com/xiaochaohuashengmi/archive/2011/10/08/2203153.html
 ```
