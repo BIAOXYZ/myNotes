@@ -177,6 +177,8 @@ k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/
 
 helm – Manages Kubernetes packages with the Helm package manager https://docs.ansible.com/ansible/latest/modules/helm_module.html
 
+sl_vm – create or cancel a virtual instance in SoftLayer https://docs.ansible.com/ansible/latest/modules/sl_vm_module.html
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## other modules
