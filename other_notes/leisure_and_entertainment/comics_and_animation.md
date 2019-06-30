@@ -1,6 +1,8 @@
 
 # general
 
+bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%92%8C%E5%BD%B1%E5%93%8D
+
 [杂谈] 【快讯】B站下架200多部新老番剧 https://quan.ithome.com/0/466/456.htm 「 2019.06.10 02:59」
 
 # 超炮和魔禁
