@@ -126,3 +126,24 @@ Configuring authentication and user agent https://docs.openshift.com/container-p
 
 Master and Node Configuration https://docs.openshift.com/container-platform/3.11/install_config/master_node_configuration.html
 
+## openshift scc
+
+**起因：在一个openshift 3.11单节点环境，发现nginx的容器起不来，进去看了下，报错如下**：
+```
+root@myopenshift:nginx-operator$ oc logs example-nginx-4gneicr7ynbwus1404tld50zo-57ff5fc959-844vr
+2019/06/30 12:42:43 [warn] 1#1: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:2
+nginx: [warn] the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:2
+2019/06/30 12:42:43 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (13: Permission denied)
+nginx: [emerg] mkdir() "/var/cache/nginx/client_temp" failed (13: Permission denied)
+```
+**后来发现是openshift多事，自己搞了一套 SCC(Security Context Constraints) 导致的。下面甚至有issue说在openshift里不要用nginx做例子。。。**
+
+Don't use nginx image for the Pod example https://github.com/openshift/openshift-docs/issues/1533
+
+Volume mounted under /var/cache & permission denied https://github.com/minishift/minishift/issues/105
+
+openshift跑app权限报错解决 https://blog.csdn.net/iiiiher/article/details/70170973
+> Understanding Service Accounts and SCCs https://blog.openshift.com/understanding-service-accounts-sccs/
+
+non-ROOT containers to show OpenShift some love https://medium.com/bitnami-perspectives/non-root-containers-to-show-openshift-some-love-3b32d7218ac6
+
