@@ -8,6 +8,10 @@
 伍声2009结婚老婆葛小允，女主播小舞黑历史被爆86年出生曾离婚前男友陈清 http://dota.shandian.biz/3184.html
 > "然后，闪电站小猪记得圈内一个朋友老早告诉过小猪葛小允比09大半岁还是小半岁，09是87年，所以小舞大概也是86、87年，反正年龄其实有点大了。然后闪电站小猪听说她前男友是VG股东之一陈清，也在斗鱼做过主播，还有人爆料说离过婚，主播圈一直很乱，所以可能性很高。"
 
+VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
+- DOTA2：再引争议！VG拿到震中杯Major冠军，MVP却又给亚军！ http://www.sohu.com/a/324059377_100124359
+- Dota2 ESL孟买站中国战队夺冠，主办方把MVP颁给亚军引不满 http://www.guancha.cn/sports/2019_04_22_498658.shtml
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
