@@ -5,6 +5,10 @@ Ansible Operator Overview
 - https://www.katacoda.com/openshift/courses/ansibleop/ansible-operator-overview 
 - https://learn.openshift.com/ansibleop/ansible-operator-overview/
 
+其他参考
+- https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
+- https://github.com/water-hole/ansible-operator
+
 # 1. The Ansible Operator
 
 ## Why an Operator?
@@ -729,6 +733,45 @@ roles/dymurray.memcached_operator_role/
     └── main.yml
 
 6 directories, 8 files
+$
+$ cat roles/dymurray.memcached_operator_role/defaults/main.yml
+---
+# defaults file for Memcached
+size: 1
+$
+$ cat roles/dymurray.memcached_operator_role/tasks/main.yml
+---
+# tasks file for Memcached
+- name: start memcached
+  k8s:
+    definition:
+      kind: Deployment
+      apiVersion: apps/v1
+      metadata:
+        name: '{{ meta.name }}-memcached'
+        namespace: '{{ meta.namespace }}'
+      spec:
+        replicas: "{{size}}"
+        selector:
+          matchLabels:
+            app: memcached
+        template:
+          metadata:
+            labels:
+              app: memcached
+          spec:
+            containers:
+            - name: memcached
+              command:
+              - memcached
+              - -m=64
+              - -o
+              - modern
+              - -v
+              image: "memcached:1.4.36-alpine"
+              ports:
+                - containerPort: 11211
+$
 
 
 
