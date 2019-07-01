@@ -121,6 +121,10 @@ bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%9
 
 ### 一击男漫画
 
+漫画粉：
+- 一拳超人 https://www.manhuafen.com/comic/1802/
+
+动漫之家漫画网：
 - 一拳超人 https://manhua.dmzj.com/yiquanchaoren
 - 一击男ONE原作版 https://manhua.dmzj.com/yijinanoneyuanzuoban
 
