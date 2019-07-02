@@ -406,9 +406,7 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 
 # kubernetes源码
 
-kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
-
-编译和运行Kubernetes源码 https://www.kubernetes.org.cn/5033.html
+## 源码分析系列
 
 随笔分类 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/category/1231156.html
 - 写在最前面 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/p/9194998.html
@@ -417,29 +415,41 @@ kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.ku
 - 【kubernetes/k8s源码分析】client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
 - 【kubernetes/k8s源码分析】kube-scheduler 源码分析 https://blog.csdn.net/zhonglinzhang/article/details/77197834
 
-使用VS code 调试 Kubernetes 源代码 https://blog.csdn.net/cloudnativeapp/article/details/79213731
-
-kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
-
-Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s-cronjob-source-code/
-
 【From Draveness's Blog 【面向信仰编程】】：
 - 详解 Kubernetes Pod 的实现原理 https://draveness.me/kubernetes-pod
 - 详解 Kubernetes Deployment 的实现原理 https://draveness.me/kubernetes-deployment
 - 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
 - 详解 Kubernetes Job 和 CronJob 的实现原理 https://draveness.me/kubernetes-job-cronjob
 
+【by 程序员欣宸】：
+- Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
+- Kubernetes深入学习之二:编译和部署镜像(api-server) https://blog.csdn.net/boling_cavalry/article/details/88603293
+
+## kubeadm相关源码/流程
+
+kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
+
+Kubernetes搭建之kubeadm-init探究 https://jingwei.link/2018/11/28/kubeadm-init-research.html
+
+## client-go相关源码
+
 11.1. client-go的使用及源码分析 https://www.huweihuang.com/kubernetes-notes/develop/client-go.html
 
 Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
 
+## 待分类源码分析
+
+编译和运行Kubernetes源码 https://www.kubernetes.org.cn/5033.html
+
+使用VS code 调试 Kubernetes 源代码 https://blog.csdn.net/cloudnativeapp/article/details/79213731
+
+kube-proxy源码解析 https://segmentfault.com/a/1190000015379277
+
+Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s-cronjob-source-code/
+
 kubernetes源码阅读 kubelet初探 - fanbin的文章 - 知乎 https://zhuanlan.zhihu.com/p/35710779
 
 🤔 What happens when I type kubectl run? https://github.com/jamiehannaford/what-happens-when-k8s
-
-【by 程序员欣宸】：
-- Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
-- Kubernetes深入学习之二:编译和部署镜像(api-server) https://blog.csdn.net/boling_cavalry/article/details/88603293
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
