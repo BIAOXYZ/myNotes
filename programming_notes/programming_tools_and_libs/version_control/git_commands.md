@@ -468,6 +468,37 @@ origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.g
 
 ----------------------------------------------------------------------------------------------------
 
+### git拉取远程分支
+
+git 拉取远程指定分支 pull本地不存在的分支 https://www.cnblogs.com/hamsterPP/p/6810831.html
+```
+当我想从远程仓库里拉取一条本地不存在的分支时：
+git checkout -b 本地分支名 origin/远程分支名
+这个将会自动创建一个新的本地分支，并与指定的远程分支关联起来。
+
+如果出现提示：
+fatal: Cannot update paths and switch to branch 'dev2' at the same time.
+Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
+
+表示拉取不成功。我们需要先执行
+git fetch
+
+然后再执行
+git checkout -b 本地分支名 origin/远程分支名
+即可
+```
+
+git 拉取远程分支到本地 https://blog.csdn.net/carfge/article/details/79691360
+```
+4、把远程分支拉到本地
+git fetch origin dev（dev为远程仓库的分支名）
+
+5、在本地创建分支dev并切换到该分支
+git checkout -b dev(本地分支名称) origin/dev(远程分支名称)
+```
+
+----------------------------------------------------------------------------------------------------
+
 #### git diff会有些^M
 
 git diff ^M的消除
