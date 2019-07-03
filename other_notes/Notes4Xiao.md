@@ -128,6 +128,13 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 ### paper
 
+--------------------------------------------------
+
+- (EUROCRYPT 2003) Aggregate and Verifiably Encrypted Signatures from Bilinear Maps https://crypto.stanford.edu/~dabo/pubs/papers/aggreg.pdf
+- (CT-RSA 2009) Short Redactable Signatures Using Random Trees https://eprint.iacr.org/2009/025.pdf
+
+--------------------------------------------------
+
 - (IH&MMSec 2016) Practical and Scalable Sharing of Encrypted Data in Cloud Storage with Key Aggregation https://www.comp.nus.edu.sg/~changec/publications/2016_IH_MMSEC.pdf
   * https://www.comp.nus.edu.sg/~changec/publications/2016_IHMMSEC_fastKAC_Slides.pdf
 
