@@ -6,6 +6,12 @@ https://www.cnbeta.com/articles/soft/751203.htm
 
 最受欢迎的10个Linux发行版 https://www.linuxprobe.com/linux-welcome.html
 
+## OS启动
+
+计算机是如何启动的？ http://www.ruanyifeng.com/blog/2013/02/booting.html
+
+简述Linux的启动过程 https://segmentfault.com/a/1190000006872609
+
 # OS Kernel
 
 Linux 内核揭密 https://github.com/MintCN/linux-insides-zh
