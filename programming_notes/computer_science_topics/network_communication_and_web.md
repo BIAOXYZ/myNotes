@@ -75,16 +75,24 @@ What is the loopback device and how do I use it? https://askubuntu.com/questions
 ### IP，子网掩码，默认网关，DNS等
 
 - [ ] 如何理解子网掩码中的“子网”？ - 知乎 https://www.zhihu.com/question/21064101
-
 - [x] IP地址，子网掩码，默认网关，DNS服务器详解 https://www.cnblogs.com/JuneWang/p/3917697.html
-
 - [x] 计算机网络: IP地址，子网掩码，网段表示法，默认网关，DNS服务器详解 https://www.cnblogs.com/iceJava/p/5372033.html
+
+## 网络配置文件
+
+linux网络相关配置文件 https://www.cnblogs.com/starof/p/4153663.html
+
+Linux常用网络配置文件介绍 https://www.centos.bz/2011/10/linux-common-network-configuration-files/
 
 ### /etc/resolv.conf
 
 Linux resolv.conf简介 https://blog.csdn.net/K346K346/article/details/83790044
 
 resolv.conf在Linux系统中的作用 https://blog.csdn.net/longcheng217/article/details/81316877
+
+### /etc/sysconfig/network
+
+Configuring Default Gateway on RedHat Enterprise Linux https://linuxconfig.org/configuring-default-gateway-on-redhat-enterprise-linux
 
 ### IPVS
 
