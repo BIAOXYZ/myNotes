@@ -199,6 +199,8 @@ Did you mean this?
 - docker用户过度到kubectl命令行指南 https://jimmysong.io/kubernetes-handbook/guide/docker-cli-to-kubectl.html
 - kubectl 命令技巧大全 https://jimmysong.io/kubernetes-handbook/guide/kubectl-cheatsheet.html
 
+Kubernetes系统常见运维技巧 https://blog.csdn.net/horsefoot/article/details/51594840 【by 容器技术爱好者】
+
 --------------------------------------------------
 
 Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-perspectives/imperative-declarative-and-a-few-kubectl-tricks-9d6deabdde
