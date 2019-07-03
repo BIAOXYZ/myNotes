@@ -244,6 +244,12 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+# 待遇相关
+
+阿里P10、腾讯T4、华为18，互联网公司薪资、股权揭秘 https://mp.weixin.qq.com/s/Jo7tuG5voSOr2t-tcy0OcA
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 # 工作需注意点
 
 北京外企人力资源服务有限公司 www.fesco.com.cn
