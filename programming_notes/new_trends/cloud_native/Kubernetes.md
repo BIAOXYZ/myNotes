@@ -221,6 +221,9 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 
 从外部访问Kubernetes中的Pod https://jimmysong.io/posts/accessing-kubernetes-pods-from-outside-of-the-cluster/
 
+kubernetes网络相关总结 http://codemacro.com/2018/04/01/kube-network/
+> Kubernetes网络原理及方案 https://www.kubernetes.org.cn/2059.html
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetesw网络之Ingress
@@ -618,7 +621,7 @@ A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektonc
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Helm (CNCF)
+## Helm (Google --> CNCF)
 
 ### Helm official
 
@@ -664,6 +667,16 @@ Simplify Kubernetes deployments with Helm (Part 3) – Creating configmaps and s
 ## minikube (k8s official)
 
 minikube, Run Kubernetes locally https://github.com/kubernetes/minikube
+
+## microk8s (Ubuntu)
+
+Microk8s: Kubernetes for workstations and appliances https://microk8s.io/
+
+Microk8s: A kubernetes cluster in a snap https://github.com/ubuntu/microk8s
+
+穷人也能用得起 K8s - VPS 单节点部署 Kubernetes 的方法与对比 https://avnpc.com/pages/kubernetes-for-single-vps
+> 从易用角度来看，microk8s 是安装最简单，门槛最低的；minikube 适合对 minikube 比较熟悉的用户。
+无论以何种方式安装 k8s， 都需要注意安全问题， 因为在 k8s 的设计中， Master 节点是不会暴露到外网的，用户服务都会安装到 Worker 节点，但是在单节点的情况下，k8s 所监听的端口都没有设防，容器的权限也有可能过大，这些安全问题在 minikube 的文档中也有提到， 需要对网络端口设置 iptables 限制可访问的 IP 等方式来提升安全性，如果是安全性敏感的项目，建议放弃单节点 k8s 的方案。
 
 ## kops - Kubernetes Operations (k8s official)
 
