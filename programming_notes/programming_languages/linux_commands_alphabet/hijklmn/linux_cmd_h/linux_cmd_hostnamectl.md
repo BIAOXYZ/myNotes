@@ -1,4 +1,12 @@
 
+#
+
+深入理解Linux修改hostname https://www.cnblogs.com/kerrycode/p/3595724.html
+
+hostname到底是怎么一回事 http://fungo.me/linux/what-the-hell-is-hostname.html
+
+#
+
 ```
 [root@myopenshift:~]$ hostnamectl --help
 hostnamectl [OPTIONS...] COMMAND ...
