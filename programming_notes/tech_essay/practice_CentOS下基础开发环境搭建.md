@@ -266,6 +266,10 @@ export PATH=${PATH}:${MAVEN_HOME}/bin
 ```
 //为什么不用一个version参数控制一下，总是这样复制 --> 一来哪怕快一点点也是快；二来可以顺便记录到底用过哪些版本。
 
+GO_DOWNLOAD_VERSION=1.9.7
+wget https://dl.google.com/go/go${GO_DOWNLOAD_VERSION}.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go${GO_DOWNLOAD_VERSION}.linux-amd64.tar.gz
+
 1.10.8 --> 1.10.x系列最后一个版本，主要是为了有时候试一些go module之前的情况。
 wget https://dl.google.com/go/go1.10.8.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.10.8.linux-amd64.tar.gz
