@@ -33,7 +33,7 @@ $  repoquery --list bash-completion.noarch
 ...
 ```
 
-### kubectl或者docker的bash-completion不生效
+### 问题：kubectl或者docker的bash-completion不生效
 
 docker命令自动补全 https://blog.csdn.net/wenwenxiong/article/details/70238038
 > docker 之 bash命令行自动补全 https://phpor.net/blog/post/3585
@@ -73,6 +73,13 @@ root@cloudsec1 etc $ ll -ltr
 ...
 drwxr-xr-x.  2 root root     4096 Jul  4 02:54 bash_completion.d
 drwxr-xr-x.  2 root root     4096 Jul  4 02:54 profile.d
+
+
+// 把额外的kubectl自动完成功能脚本写入 .bashrc：
+--------------------------------------------------
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+source ~/.bashrc
+--------------------------------------------------
 
 
 // 执行下面命令发现kubectl并不能自动完成。
