@@ -632,6 +632,11 @@ Helm Docs https://helm.sh/docs/
 
 The Kubernetes Package Manager https://github.com/helm/helm
 
+### Helm 3
+
+KubeCon 参会记录之 -- Helm 3 Deep Dive https://yq.aliyun.com/articles/670636
+> 这个应该是 Helm3最令人期待的特性了。当Maintainer show 出这个页面的时候，现场响起来掌声。可见tiller是一个大家公认不应该存在的玩意。Maintainer很尴尬的也跟着象征性的鼓鼓掌。去掉Tiller后主要有以下几个变化。
+
 ### Helm books
 
 Helm User Guide - Helm 用户指南 https://whmzsu.github.io/helm-doc-zh-cn/
