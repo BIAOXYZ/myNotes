@@ -225,6 +225,10 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 kubernetes网络相关总结 http://codemacro.com/2018/04/01/kube-network/
 > Kubernetes网络原理及方案 https://www.kubernetes.org.cn/2059.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## kubernetes网络之端口相关内容
+
 kubernets 几种端口（port、targetport、contaierport、hostport、nodeport）的区别和关联 http://dockone.io/question/1420
 ```
 这两个一般用在应用yaml描述文件中,起到的作用类似于docker -p选项
@@ -238,6 +242,12 @@ targetport: clusterIP作为负载均衡， 后端目标实例(容器)的端口�
 这一个一般用在service中，service的类型为nodeport:
 nodeport: cluster ip 只能集群内部访问(源与目标需要满足两个条件: kube-proxy正常运行，跨主机容器网络通信正常)，nodeport会在每个kubelet节点的宿主机开启一个端口，用于应用集群外部访问。
 ```
+
+### kubectl port-forward V.S. kubectl proxy
+
+Use Port Forwarding to Access Applications in a Cluster https://kubernetes.io/zh/docs/tasks/access-application-cluster/port-forward-access-application-cluster/
+
+How kubectl port-forward works? https://stackoverflow.com/questions/51468491/how-kubectl-port-forward-works
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
