@@ -33,6 +33,121 @@ $  repoquery --list bash-completion.noarch
 ...
 ```
 
+### kubectl或者docker的bash-completion不生效
+
+docker命令自动补全 https://blog.csdn.net/wenwenxiong/article/details/70238038
+> docker 之 bash命令行自动补全 https://phpor.net/blog/post/3585
+```
+难道docker的bash自动补全还能有问题？ 
+解决办法如下：
+
+我这里虽然安装了bash-completion ，但是没有执行其中的一个文件：
+
+/usr/share/bash-completion/bash_completion 
+该文件中有上面缺少的命令，执行该文件，重新开一个shell终端 就解决了。
+```
+
+```
+个人实战碰到并解决该问题：
+
+// 安装bash-completion。
+root@cloudsec1 ~ $ yum -y install bash-completion
+...
+...
+...
+Running transaction
+  Installing : 1:bash-completion-2.1-6.el7.noarch                                                                                                     1/1
+  Verifying  : 1:bash-completion-2.1-6.el7.noarch                                                                                                     1/1
+
+Installed:
+  bash-completion.noarch 1:2.1-6.el7
+
+Complete!
+
+
+// 安装完成后最明显的（当然不只有这两处）改变是 /etc 下面多了两个相关目录。
+root@cloudsec1 ~ $ cd /etc/
+root@cloudsec1 etc $ ll -ltr
+...
+...
+...
+drwxr-xr-x.  2 root root     4096 Jul  4 02:54 bash_completion.d
+drwxr-xr-x.  2 root root     4096 Jul  4 02:54 profile.d
+
+
+// 执行下面命令发现kubectl并不能自动完成。
+root@cloudsec1 etc $ kubectl ge[TAB][TAB]
+root@cloudsec1 etc $ kubectl ge-bash: _get_comp_words_by_ref: command not found
+
+Error: unknown command "ge" for "kubectl"
+
+Did you mean this?
+        set
+        get
+        cp
+
+Run 'kubectl --help' for usage.
+unknown command "ge" for "kubectl"
+
+Did you mean this?
+        set
+        get
+        cp
+
+
+// 找了一下还安装了什么。
+root@cloudsec1 etc $ find / -name "bash_completion*"
+/root/go/src/github.com/operator-framework/operator-sdk/vendor/github.com/spf13/cobra/bash_completions.go
+/root/go/src/kubernetes/vendor/github.com/spf13/cobra/bash_completions.md
+/root/go/src/kubernetes/vendor/github.com/spf13/cobra/bash_completions.go
+/root/go/src/operator-sdk/vendor/github.com/spf13/cobra/bash_completions.go
+/root/go/pkg/mod/github.com/spf13/cobra@v0.0.3/bash_completions_test.go
+/root/go/pkg/mod/github.com/spf13/cobra@v0.0.3/bash_completions.md
+/root/go/pkg/mod/github.com/spf13/cobra@v0.0.3/bash_completions.go
+/etc/bash_completion.d
+/etc/profile.d/bash_completion.sh
+/usr/lib64/python2.7/site-packages/bzrlib/plugins/bash_completion
+/usr/share/bash-completion/bash_completion
+
+
+// souce一下 /usr/share/ 下的 bash-completion，然后解决。
+root@cloudsec1 etc $ cd /usr/share/bash-completion/
+root@cloudsec1 bash-completion $ ll
+total 80
+-rw-r--r--. 1 root root 66881 Jun  9  2014 bash_completion
+drwxr-xr-x. 2 root root  4096 Jul  4 02:54 completions
+drwxr-xr-x. 2 root root  4096 Jul  4 02:54 helpers
+root@cloudsec1 bash-completion $ source bash_completion
+root@cloudsec1 bash-completion $
+root@cloudsec1 bash-completion $ kubectl get
+apiservices.apiregistration.k8s.io                            networkpolicies.extensions
+certificatesigningrequests.certificates.k8s.io                networkpolicies.networking.k8s.io
+clusterrolebindings.rbac.authorization.k8s.io                 nodes
+clusterroles.rbac.authorization.k8s.io                        persistentvolumeclaims
+componentstatuses                                             persistentvolumes
+configmaps                                                    poddisruptionbudgets.policy
+controllerrevisions.apps                                      pods
+cronjobs.batch                                                podsecuritypolicies.extensions
+csidrivers.storage.k8s.io                                     podsecuritypolicies.policy
+csinodes.storage.k8s.io                                       podtemplates
+customresourcedefinitions.apiextensions.k8s.io                priorityclasses.scheduling.k8s.io
+daemonsets.apps                                               replicasets.apps
+daemonsets.extensions                                         replicasets.extensions
+deployments.apps                                              replicationcontrollers
+deployments.extensions                                        resourcequotas
+endpoints                                                     rolebindings.rbac.authorization.k8s.io
+events                                                        roles.rbac.authorization.k8s.io
+events.events.k8s.io                                          runtimeclasses.node.k8s.io
+horizontalpodautoscalers.autoscaling                          secrets
+ingresses.extensions                                          serviceaccounts
+ingresses.networking.k8s.io                                   services
+jobs.batch                                                    statefulsets.apps
+leases.coordination.k8s.io                                    storageclasses.storage.k8s.io
+limitranges                                                   validatingwebhookconfigurations.admissionregistration.k8s.io
+mutatingwebhookconfigurations.admissionregistration.k8s.io    volumeattachments.storage.k8s.io
+namespaces
+```
+
 ## SSH & SSL & TLS
 
 <<SSH用私钥登录远程服务器时提示私钥不安全>>
