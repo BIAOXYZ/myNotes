@@ -637,6 +637,22 @@ The Kubernetes Package Manager https://github.com/helm/helm
 KubeCon 参会记录之 -- Helm 3 Deep Dive https://yq.aliyun.com/articles/670636
 > 这个应该是 Helm3最令人期待的特性了。当Maintainer show 出这个页面的时候，现场响起来掌声。可见tiller是一个大家公认不应该存在的玩意。Maintainer很尴尬的也跟着象征性的鼓鼓掌。去掉Tiller后主要有以下几个变化。
 
+Helm 3 Preview系列博文：
+- Helm 3 Preview: Charting Our Future – Part 1: A History of Helm https://helm.sh/blog/helm-3-preview-pt1/
+```
+In order, I’ll discuss:
+
+1.The history of the creation of Helm
+2.A Gentle Farewell to Tiller
+3.Chart Repositories
+4.Release Management
+5.Changes to Chart Dependencies
+6.Library Charts
+7.What’s Next?
+```
+- ……
+- Helm 3 Preview: Charting Our Future – Part 7: What's Next? https://helm.sh/blog/helm-3-preview-pt7/
+
 ### Helm books
 
 Helm User Guide - Helm 用户指南 https://whmzsu.github.io/helm-doc-zh-cn/
