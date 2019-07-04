@@ -665,6 +665,10 @@ In order, I’ll discuss:
 6.Library Charts
 7.What’s Next?
 ```
+- Helm 3 Preview: Charting Our Future – Part 3: Chart Repositories https://helm.sh/blog/helm-3-preview-pt3/
+  * > Docker’s [Distribution project](https://github.com/docker/distribution) (also known as Docker Registry v2) is the successor to the Docker Registry project, and is the de-facto toolset to pack, ship, store, and deliver Docker images.
+  * > But did you know that the Distribution project was designed to distribute any form of content, not just container images?
+  * > Thanks to the efforts of the [Open Container Initiative (or OCI for short)](https://www.opencontainers.org/), Helm Charts can be hosted on any instance of Distribution.
 - ……
 - Helm 3 Preview: Charting Our Future – Part 7: What's Next? https://helm.sh/blog/helm-3-preview-pt7/
 
