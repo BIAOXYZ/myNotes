@@ -290,4 +290,7 @@ export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 
 mkdir -p $GOPATH/{bin,pkg,src}
+
+// dep
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 ```
