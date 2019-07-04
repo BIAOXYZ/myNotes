@@ -13,8 +13,10 @@
 程序人生 阅读快乐 https://www.yuque.com/winforlife/vgzph9
 - 数据库系统实现(第二版).pdf https://www.yuque.com/winforlife/vgzph9/vn7z6g
 
-it-ebooks https://github.com/it-ebooks
-- 📚 计算机开放电子书归档 http://it-ebooks.flygon.net/ || https://github.com/it-ebooks/it-ebooks-archive
+it-ebooks https://github.com/it-ebooks || 📚 计算机开放电子书归档 http://it-ebooks.flygon.net/ || https://github.com/it-ebooks/it-ebooks-archive
+- lightnovel
+  * it-ebooks/lightnovel-2009to2013 https://github.com/it-ebooks/lightnovel-2009to2013
+  * it-ebooks/lightnovel-2014to2017 https://github.com/it-ebooks/lightnovel-2014to2017
 
 程序员专属的免费电子书下载网站，你知道你几个？ https://mp.weixin.qq.com/s/njSQK-ATpqR9cLMFsPjxhg
 - 9、Library Genesis http://gen.lib.rus.ec/
