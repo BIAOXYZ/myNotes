@@ -168,7 +168,7 @@ $ source ~/.bashrc
 >> echo -e "\n" >> ~/.bashrc && echo "# This is for k8s command auto-completion" >> ~/.bashrc && echo "source <(kubectl completion bash)" >> ~/.bashrc && source ~/.bashrc
 >>> openshift的命令自动完成最简单的方式是在`~/.bashrc`里写上`source <( oc completion bash )`。
 
-***补充：上述kubernetes的命令自动完成方法依赖于bash-completion功能（ “bash-completion package should be installed first.” [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ）。我机器最开始没安装，我打了`kubectl des [TAB][TAB]`，会弹出下面错误：***
+***补充：上述kubernetes的命令自动完成方法依赖于bash-completion功能（ “bash-completion package should be installed first.” [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ）。我机器最开始没安装，当我输入了`kubectl des [TAB][TAB]`，会弹出下面错误：***
 ```	
 root@cloudsec2:~$ kubectl des-bash: _get_comp_words_by_ref: command not found
 -bash: _get_comp_words_by_ref: command not found
@@ -189,6 +189,7 @@ Did you mean this?
         describe
    	
 ```
+> 另外bash-completion安装完成后本身有时候也要source一下，参见`tools4programming_linux.md`那部分吧。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -223,6 +224,20 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 
 kubernetes网络相关总结 http://codemacro.com/2018/04/01/kube-network/
 > Kubernetes网络原理及方案 https://www.kubernetes.org.cn/2059.html
+
+kubernets 几种端口（port、targetport、contaierport、hostport、nodeport）的区别和关联 http://dockone.io/question/1420
+```
+这两个一般用在应用yaml描述文件中,起到的作用类似于docker -p选项
+containerport: 容器需要暴露的端口
+hostport: 容器暴露的端口映射到的主机端口。
+
+这两个一般用在service中，service 的类型为cluster ip时候:
+port: service中clusterip 对应的端口
+targetport: clusterIP作为负载均衡， 后端目标实例(容器)的端口。
+
+这一个一般用在service中，service的类型为nodeport:
+nodeport: cluster ip 只能集群内部访问(源与目标需要满足两个条件: kube-proxy正常运行，跨主机容器网络通信正常)，nodeport会在每个kubelet节点的宿主机开启一个端口，用于应用集群外部访问。
+```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
