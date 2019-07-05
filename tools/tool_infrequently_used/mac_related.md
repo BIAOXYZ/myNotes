@@ -62,12 +62,15 @@ Mac 上的“终端”键盘快捷键 https://support.apple.com/zh-cn/guide/term
   | 关闭标签页 | Command-W |
   | 关闭窗口 | Shift-Command-W |
 
-## 普通乘号(是`×`，而不是`✖️`)的输入
+## 普通乘号(是`×`，而不是`✖️`)的输入；特殊符号；表情符号
 
 mac快捷键—特殊符号 https://www.jianshu.com/p/09d71ac1a8e4
 > 另外乘号，输入法“乘号”可以出来粗大的✖️，标准的乘号要用 shift+option+b 来选择 ×
 
 Mac用Option键输入特殊符号 https://www.jianshu.com/p/844ab18fd819
+
+如何在 Mac 上使用表情符号、重音符号和其他符号 https://support.apple.com/zh-cn/HT201586
+- > 2.按下 `Control-Command-空格键`。此时会显示“字符检视器”弹出式窗口：
 
 ## 目录没有一个直观的向上一级的按钮，得通过那个访达Finder来向上一级
 
