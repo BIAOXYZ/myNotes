@@ -494,3 +494,23 @@ X Unable to start VM
   - https://github.com/kubernetes/minikube/issues/new
 ```
 
+```
+// 最后只能是按 https://github.com/kubernetes/minikube/issues/1574 里给的方法，从C:盘而不是D:盘（尽管我把D:\bin加到PATH了）
+//   来启动minikube，貌似这这样就可以了。PS: 1.启动前把原来的`.minikube`和`.kube`都手动删了；2.又执行了一下minikube delete
+//   我感觉不一定有必要，应该主要是换目录的问题，但是以防万一还是又执行了一下。
+PS C:\Users\LiangLiu> minikube.exe delete
+* Deleting "minikube" from virtualbox ...
+* The "minikube" cluster has been deleted.
+PS C:\Users\LiangLiu> minikube start
+* minikube v1.2.0 on windows (amd64)
+* Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+* Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+* Downloading kubelet v1.15.0
+* Downloading kubeadm v1.15.0
+* Pulling images ...
+* Launching Kubernetes ...
+* Verifying: apiserver proxy etcd scheduler controller dns
+* Done! kubectl is now configured to use "minikube"
+
+// 然而，后面虽然集群啥搞好了，windows下的squash不支持dlv。。。真酸爽。。。还得跑CentOS下折腾vnc去。。。
+```
