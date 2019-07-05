@@ -415,3 +415,82 @@ spec:
   image: my-awesome-cron-image
 EOF
 ```
+
+# 三、使用minikube delete删除集群再minikube start重建时各种错误
+
+```
+// minikube delete删除成功。
+PS D:\bin> minikube delete
+There is a newer version of minikube available (v1.2.0).  Download it here:
+https://github.com/kubernetes/minikube/releases/tag/v1.2.0
+
+To disable this notification, run the following:
+minikube config set WantUpdateNotification false
+x   Deleting "minikube" from virtualbox ...
+-   The "minikube" cluster has been deleted.
+
+
+// 再起一个集群起不来。
+PS D:\bin> minikube start
+o   minikube v1.0.0 on windows (amd64)
+$   Downloading Kubernetes v1.14.0 images in the background ...
+>   Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+
+!   Unable to start VM
+X   Error:         [NON_C_DRIVE] create: creating: open /Users/LiangLiu/.minikube/cache/iso/minikube-v1.0.0.iso: The system cannot find the path specified.
+i   Advice:        Run minikube from the C: drive.
+-   Related issues:
+    - https://github.com/kubernetes/minikube/issue/1574
+
+*   If the above advice does not help, please let us know:
+-   https://github.com/kubernetes/minikube/issues/new
+
+
+// 看了看docker，不知道windows的docker daemon没起有啥影响没。但是之前正常运行时也是这样吧。
+PS D:\bin> docker version
+Client:
+ Version:           18.06.1-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        e68fc7a
+ Built:             Tue Aug 21 17:21:34 2018
+ OS/Arch:           windows/amd64
+ Experimental:      false
+error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.38/version: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.
+
+
+// 各种试，比如把（windows上）自己用户目录下的.minikube文件夹和（或）.kube文件夹删除等等，结果有时候会报这个错了。
+// 还有别的错，但是看起来也是跟这两个类似（提示的issue号不是1574就是3864），并且即使我用了最新的minikube v1.2.0版本也不行。
+PS D:\bin> minikube start
+o   minikube v1.0.0 on windows (amd64)
+$   Downloading Kubernetes v1.14.0 images in the background ...
+i   Tip: Use 'minikube start -p <name>' to create a new cluster, or 'minikube delete' to delete this one.
+
+!   Unable to start VM
+X   Error:         [VM_DOES_NOT_EXIST] Error getting state for host: machine does not exist
+i   Advice:        Your system no longer knows about the VM previously created by minikube. Run 'minikube delete' to reset your local state.
+-   Related issues:
+    - https://github.com/kubernetes/minikube/issue/3864
+
+*   If the above advice does not help, please let us know:
+-   https://github.com/kubernetes/minikube/issues/new
+
+
+// 换了minikube 1.12.0也是一样
+PS D:\bin> minikube start
+* minikube v1.2.0 on windows (amd64)
+* Downloading Minikube ISO ...
+ 129.33 MB / 129.33 MB [============================================] 100.00% 0s
+* Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+E0705 10:27:17.702791    9384 start.go:559] StartHost: create: creating: open /Users/LiangLiu/.minikube/cache/iso/minikube-v1.2.0.iso: The system cannot find the path specified.
+
+X Unable to start VM
+* Error:         [NON_C_DRIVE] create: creating: open /Users/LiangLiu/.minikube/cache/iso/minikube-v1.2.0.iso: The system cannot find the path specified.
+* Advice:        Run minikube from the C: drive.
+* Related issues:
+  - https://github.com/kubernetes/minikube/issues/1574
+
+* If the above advice does not help, please let us know:
+  - https://github.com/kubernetes/minikube/issues/new
+```
+
