@@ -516,6 +516,13 @@ Removing spec.replicas of the Deployment resets replicas count to single replica
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# kubernetes与应用
+
+【by 青蛙小白】
+- 在Kubernetes上使用Elasticsearch+Fluentd+Kibana集中管理日志 https://blog.frognew.com/2017/01/kubernetes-logging-efk.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # kubernetes使用案例
 
 知乎 HBase 实践 - 张小渔的文章 - 知乎 https://zhuanlan.zhihu.com/p/57739371
