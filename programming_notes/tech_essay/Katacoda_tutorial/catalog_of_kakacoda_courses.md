@@ -7,3 +7,7 @@ Red Hat OpenShift® - Interactive Learning Portal https://learn.openshift.com/ |
 - Building Operators on OpenShift https://learn.openshift.com/operatorframework/
   * Ansible Operator Overview https://learn.openshift.com/ansibleop/ansible-operator-overview/
   
+# 非机构课程
+
+Kubernetes: Observability 【By Jonathan Johnson】 https://www.katacoda.com/javajon/courses/kubernetes-observability/
+- Logging with EFK https://www.katacoda.com/javajon/courses/kubernetes-observability/efk
