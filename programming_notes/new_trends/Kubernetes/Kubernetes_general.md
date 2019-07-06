@@ -81,8 +81,9 @@ Katacoda: Learn new technologies using real environments right in your browser h
 - https://www.katacoda.com/biaoxyz
 
 Play with Kubernetes -- A simple, interactive and fun playground to learn Kubernetes https://labs.play-with-k8s.com/ || https://training.play-with-kubernetes.com/
-> You know it, you use it, now it's time to improve it. PWD!. https://github.com/play-with-docker/play-with-docker
->> Play with Docker -- A simple, interactive and fun playground to learn Docker http://play-with-docker.com
+- > You know it, you use it, now it's time to improve it. PWD!. https://github.com/play-with-docker/play-with-docker
+  >> Play with Docker -- A simple, interactive and fun playground to learn Docker http://play-with-docker.com
+- > Kubernetes for Beginners https://training.play-with-kubernetes.com/kubernetes-workshop/
 
 TryK8S https://tryk8s.com/
 
