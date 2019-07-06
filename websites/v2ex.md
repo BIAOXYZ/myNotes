@@ -31,10 +31,21 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 - > Bilibili > 番剧 > 番剧索引 > 评分    顺着看呗
 - > https://bangumi.tv/ 搜索你喜欢的番，下面有推荐 <br> 或者点击该番对应的一个 tag,点进去，排名排序，然后挑选你感兴趣的 
   >> 或者可以尝试 bgmer 基于 bangumi 制作的推荐系统，例如 https://bangumi.tv/group/topic/345856
+  
+统计了 V2EX 过去一周的在线人数 https://www.v2ex.com/t/579484  
 
 # V2EX工具类
+
+- 目前免费远程控制软件有好用的吗？ https://www.v2ex.com/t/567221
+- 大家可以放弃 TeamViewer 了，有更好的解决方案 https://www.v2ex.com/t/568443
 
 大家有什么推荐的日常 Linux 软件？ https://www.v2ex.com/t/575901
 
 shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
 > https://www.shellcheck.net/
+
+# V2EX八卦贴（要不要开这个考虑了很久，后来想了想，还是开。。。）
+
+女朋友家境不好，手机摔坏了要买手机，我推荐她买三星 A60，她非要买华为 Mate20 Pro https://www.v2ex.com/t/575148
+
+公司之前离职的 hr 情商似乎有点低 https://www.v2ex.com/t/580454
