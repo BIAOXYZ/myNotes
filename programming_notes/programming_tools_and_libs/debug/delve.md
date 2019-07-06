@@ -99,3 +99,8 @@ b ${文件完整路径}:行号 //例：b /root/tutorial/go/src/github.com/mytest
 # 删除断点（用clear真可以。。。我代表gdb家族的delete鄙视你）：
 ```
 
+# 其他Go调试工具
+
+Golang程序调试工具介绍(gdb vs dlv) http://lday.me/2017/02/27/0005_gdb-vs-dlv/
+
+[译]使用 LLDB 调试 Go 程序 https://cloud.tencent.com/developer/article/1187603
