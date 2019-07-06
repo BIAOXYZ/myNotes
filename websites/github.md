@@ -29,6 +29,12 @@ Extend GitHub https://github.com/marketplace
 July：请问大家，如何在github上传一张图片？ https://github.com/julycoding/The-Art-Of-Programming-By-July/issues/314
 - > 现在可以直接把本地图片拖到文本输入区域就可以了，附上 [github help的解释地址](https://help.github.com/en/articles/file-attachments-on-issues-and-pull-requests)
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+程序员的那些迷之缩写 https://www.jianshu.com/p/4ec775fff59c
+
+(Prow) Command Help https://prow.k8s.io/command-help
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Github Topic
