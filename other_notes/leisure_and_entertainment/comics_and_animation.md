@@ -225,6 +225,8 @@ bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%9
 - jb永动机 https://zh.moegirl.org/Jb%E6%B0%B8%E5%8A%A8%E6%9C%BA
 - 马云我赐你姨妈 https://zh.moegirl.org/IGNITE
 
+空耳/空耳列表 https://zh.moegirl.org/%E7%A9%BA%E8%80%B3/%E7%A9%BA%E8%80%B3%E5%88%97%E8%A1%A8
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 动漫中的梗
