@@ -1,4 +1,6 @@
 
+# `#` 0.各种操作系统自带类
+
 # [yum](http://yum.baseurl.org/)
 
 Yellowdog Updater, Modified (YUM) https://en.wikipedia.org/wiki/Yum_(software)
@@ -206,6 +208,59 @@ Ubuntu下deb包的安装方法 https://blog.csdn.net/kevinhg/article/details/593
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# zypper
+
+SuSE的命令安装软件 zypper，yast2
+https://blog.csdn.net/s_k_yliu/article/details/6674079
+
+SUSE Linux – Zypper 命令示例
+https://www.linuxidc.com/Linux/2014-11/109214.htm
+```
+zypper lr    以表格的形式列出仓库的URI
+zypper ar <url> <alias>   添加仓库
+zypper rr <alias>   移除仓库
+zypper install xxx   安装软件包
+zypper rm xxx   卸载软件包
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# apk
+
+```
+$ apk --help
+apk-tools 2.10.3, compiled for x86_64.
+
+Installing and removing packages:
+  add       Add PACKAGEs to 'world' and install (or upgrade) them, while ensuring that all dependencies are met
+  del       Remove PACKAGEs from 'world' and uninstall them
+
+System maintenance:
+  fix       Repair package or upgrade it without modifying main dependencies
+  update    Update repository indexes from all remote repositories
+  upgrade   Upgrade currently installed packages to match repositories
+  cache     Download missing PACKAGEs to cache and/or delete unneeded files from cache
+
+Querying information about packages:
+  info      Give detailed information about PACKAGEs or repositories
+  list      List packages by PATTERN and other criteria
+  dot       Generate graphviz graphs
+  policy    Show repository policy for packages
+
+Repository maintenance:
+  index     Create repository index file from FILEs
+  fetch     Download PACKAGEs from global repositories to a local directory
+  verify    Verify package integrity and signature
+  manifest  Show checksums of package contents
+
+Use apk <command> --help for command-specific help.
+Use apk --help --verbose for a full command listing.
+
+This apk has coffee making abilities.
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # curl
 
 cURL 作者 Daniel Stenberg 宣布即将从 Mozilla 离职 https://www.cnbeta.com/articles/tech/789651.htm
@@ -229,22 +284,7 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# zypper
-
-SuSE的命令安装软件 zypper，yast2
-https://blog.csdn.net/s_k_yliu/article/details/6674079
-
-SUSE Linux – Zypper 命令示例
-https://www.linuxidc.com/Linux/2014-11/109214.htm
-```
-zypper lr    以表格的形式列出仓库的URI
-zypper ar <url> <alias>   添加仓库
-zypper rr <alias>   移除仓库
-zypper install xxx   安装软件包
-zypper rm xxx   卸载软件包
-```
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+# `#` 1.第三方类
 
 # Chocolatey
 
