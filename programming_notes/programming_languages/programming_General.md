@@ -188,6 +188,14 @@ http://troubleshooters.com/codecorn/awk/index.htm
 
 # 编程知识
 
+## 非技术类（or技术性不强类）编程知识
+
+Licenses & Standards https://opensource.org/licenses
+
+微服务部署：蓝绿部署、滚动部署、灰度发布、金丝雀发布 https://www.jianshu.com/p/022685baba7d
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 随笔分类 - UNIX环境高级编程学习笔记
 https://www.cnblogs.com/lienhua34/category/607035.html
 
