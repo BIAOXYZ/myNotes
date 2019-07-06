@@ -10,3 +10,7 @@ Spark比拼Flink：下一代大数据计算引擎之争 - 夜城的文章 - 知�
 # Apache Kylin
 
 一文读懂Apache Kylin https://www.jianshu.com/p/abd5e90ab051
+
+# ELK v.s. EFK
+
+日志搜集、过滤及推送处理框架logstash及fluentd总结 https://blog.csdn.net/benpaobagzb/article/details/50903323
