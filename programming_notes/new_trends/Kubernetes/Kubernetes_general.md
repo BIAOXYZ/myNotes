@@ -455,6 +455,10 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 - Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
 - Kubernetes深入学习之二:编译和部署镜像(api-server) https://blog.csdn.net/boling_cavalry/article/details/88603293
 
+【by shida_csdn】K8S 源码探秘 https://blog.csdn.net/shida_csdn/column/info/28699
+- K8S 源码探秘 之 命令行解析工具 cobra https://blog.csdn.net/shida_csdn/article/details/82979697
+- 基于 sample-controller 实现自定义 CRD 控制器（Operator）的一般步骤 https://blog.csdn.net/shida_csdn/article/details/87102801
+
 ## kubeadm相关源码/流程
 
 kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
