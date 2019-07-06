@@ -45,6 +45,10 @@ Git 内部原理之 Git 对象 http://www.importnew.com/29044.html
 
 详解 Kubernetes Job 和 CronJob 的实现原理 https://juejin.im/entry/5c7dd26af265da2dbc59add5
 
+## 掘金big data
+
+从ELK到EFK https://juejin.im/entry/59e6e920f265da43283ff17c
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 掘金编程语言相关
