@@ -15,6 +15,7 @@ Debugging Go programs with Delve https://blog.gopheracademy.com/advent-2015/debu
 【后面那个是原版，原版格式更好】~~Golang调试工具Delve https://juejin.im/entry/5aa1f98d6fb9a028c522c84b~~ || golang调试工具Delve https://www.cnblogs.com/li-peng/p/8522592.html
 
 GO语言调试利器——dlv https://www.jianshu.com/p/7373042bba83
+- > 2、dlv run|debug：run命令已被debug命令取代，运行dlv debug test.go会先编译go源文件，同时执行attach命令进入调试模式，该命令会在当前目录下生成一个名为debug的可执行二进制文件，退出调试模式会自动被删除。
 
 Go调试工具—— Delve https://www.cnblogs.com/wanghui-garcia/p/10455217.html
 
@@ -46,6 +47,180 @@ go get: error loading module requirements
 - https://github.com/go-delve/delve/issues/178
 - https://github.com/go-delve/delve/issues/562
 - https://github.com/go-delve/delve/issues/715
+
+>> 实战：试了一下dlv的双斜杠带多参数调试，至少我这边`operator-sdk`这个项目的下述语句是没问题的，**并且新的helm operator项目也确实创建起来了**。用法和gdb带参数启动很类似（**只不过gdb的`set args`是进到gdb里面以后用的，这个是启动dlv前用的**）。注：原始语句应为`operator-sdk new nginx-operator --api-version=example.com/v1alpha1 --kind=Nginx --type=helm`(https://github.com/operator-framework/operator-sdk/blob/master/doc/helm/user-guide.md)
+```
+root@cloudsec1 operator-sdk [dev] $ dlv debug ./main.go -- new nginx-operator --api-version=example.com/v1alpha1 --kind=Nginx --type=helm
+Type 'help' for list of commands.
+(dlv) b main.main
+Breakpoint 1 set at 0x2148fcb for main.main() ./main.go:47
+(dlv) c
+> main.main() ./main.go:47 (hits goroutine(1):1 total:1) (PC: 0x2148fcb)
+    42:         log "github.com/sirupsen/logrus"
+    43:         "github.com/spf13/cobra"
+    44:         "github.com/spf13/viper"
+    45: )
+    46: 
+=>  47: func main() {
+    48:         root := &cobra.Command{
+    49:                 Use:   "operator-sdk",
+    50:                 Short: "An SDK for building operators with ease",
+    51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+(dlv) n
+> main.main() ./main.go:51 (PC: 0x2148fe2)
+    46: 
+    47: func main() {
+    48:         root := &cobra.Command{
+    49:                 Use:   "operator-sdk",
+    50:                 Short: "An SDK for building operators with ease",
+=>  51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+    53:                                 if err := projutil.SetGoVerbose(); err != nil {
+    54:                                         log.Fatalf("Could not set GOFLAGS: (%v)", err)
+    55:                                 }
+    56:                                 log.SetLevel(log.DebugLevel)
+(dlv) list
+> main.main() ./main.go:51 (PC: 0x2148fe2)
+    46: 
+    47: func main() {
+    48:         root := &cobra.Command{
+    49:                 Use:   "operator-sdk",
+    50:                 Short: "An SDK for building operators with ease",
+=>  51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+    53:                                 if err := projutil.SetGoVerbose(); err != nil {
+    54:                                         log.Fatalf("Could not set GOFLAGS: (%v)", err)
+    55:                                 }
+    56:                                 log.SetLevel(log.DebugLevel)
+(dlv) s
+> main.main() ./main.go:49 (PC: 0x2149031)
+    44:         "github.com/spf13/viper"
+    45: )
+    46: 
+    47: func main() {
+    48:         root := &cobra.Command{
+=>  49:                 Use:   "operator-sdk",
+    50:                 Short: "An SDK for building operators with ease",
+    51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+    53:                                 if err := projutil.SetGoVerbose(); err != nil {
+    54:                                         log.Fatalf("Could not set GOFLAGS: (%v)", err)
+(dlv) n
+> main.main() ./main.go:50 (PC: 0x214905a)
+    45: )
+    46: 
+    47: func main() {
+    48:         root := &cobra.Command{
+    49:                 Use:   "operator-sdk",
+=>  50:                 Short: "An SDK for building operators with ease",
+    51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+    53:                                 if err := projutil.SetGoVerbose(); err != nil {
+    54:                                         log.Fatalf("Could not set GOFLAGS: (%v)", err)
+    55:                                 }
+(dlv) s
+> main.main() ./main.go:51 (PC: 0x2149088)
+    46: 
+    47: func main() {
+    48:         root := &cobra.Command{
+    49:                 Use:   "operator-sdk",
+    50:                 Short: "An SDK for building operators with ease",
+=>  51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+    53:                                 if err := projutil.SetGoVerbose(); err != nil {
+    54:                                         log.Fatalf("Could not set GOFLAGS: (%v)", err)
+    55:                                 }
+    56:                                 log.SetLevel(log.DebugLevel)
+(dlv) s
+> main.main() ./main.go:48 (PC: 0x21490b4)
+    43:         "github.com/spf13/cobra"
+    44:         "github.com/spf13/viper"
+    45: )
+    46: 
+    47: func main() {
+=>  48:         root := &cobra.Command{
+    49:                 Use:   "operator-sdk",
+    50:                 Short: "An SDK for building operators with ease",
+    51:                 PersistentPreRun: func(cmd *cobra.Command, args []string) {
+    52:                         if viper.GetBool(flags.VerboseOpt) {
+    53:                                 if err := projutil.SetGoVerbose(); err != nil {
+(dlv) stepout
+INFO[0042] Creating new Helm operator 'nginx-operator'. 
+INFO[0042] Created helm-charts/nginx                    
+INFO[0042] Generating RBAC rules                        
+WARN[0042] The RBAC rules generated in deploy/role.yaml are based on the chart's default manifest. Some rules may be missing for resources that are only enabled with custom values, and some existing rules may be overly broad. Double check the rules generated in deploy/role.yaml to ensure they meet the operator's permission requirements. 
+INFO[0042] Created build/Dockerfile                     
+INFO[0042] Created watches.yaml                         
+INFO[0042] Created deploy/service_account.yaml          
+INFO[0042] Created deploy/role.yaml                     
+INFO[0042] Created deploy/role_binding.yaml             
+INFO[0042] Created deploy/operator.yaml                 
+INFO[0042] Created deploy/crds/example_v1alpha1_nginx_crd.yaml 
+INFO[0042] Created deploy/crds/example_v1alpha1_nginx_cr.yaml 
+INFO[0042] Project creation complete.                   
+> runtime.main() /usr/local/go/src/runtime/proc.go:209 (PC: 0x434f7f)
+Warning: debugging optimized function
+Values returned:
+
+   204: 
+   205:         // Make racy client program work: if panicking on
+   206:         // another goroutine at the same time as main returns,
+   207:         // let the other goroutine finish printing the panic trace.
+   208:         // Once it does, it will exit. See issues 3934 and 20018.
+=> 209:         if atomic.Load(&runningPanicDefers) != 0 {
+   210:                 // Running deferred functions should not take long.
+   211:                 for c := 0; c < 1000; c++ {
+   212:                         if atomic.Load(&runningPanicDefers) == 0 {
+   213:                                 break
+   214:                         }
+(dlv) n
+> runtime.main() /usr/local/go/src/runtime/proc.go:218 (PC: 0x434fb1)
+Warning: debugging optimized function
+   213:                                 break
+   214:                         }
+   215:                         Gosched()
+   216:                 }
+   217:         }
+=> 218:         if atomic.Load(&panicking) != 0 {
+   219:                 gopark(nil, nil, waitReasonPanicWait, traceEvGoStop, 1)
+   220:         }
+   221: 
+   222:         exit(0)
+   223:         for {
+(dlv) c
+Process 25244 has exited with status 0
+(dlv) q
+Process 25244 has exited with status 0
+root@cloudsec1 operator-sdk [dev] $ pwd
+/root/go/src/github.com/operator-framework/operator-sdk/cmd/operator-sdk
+root@cloudsec1 operator-sdk [dev] $ ll
+total 72
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 add
+drwxr-xr-x. 3 root root 4096 Jul  3 10:20 alpha
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 build
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 completion
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 generate
+drwxr-xr-x. 3 root root 4096 Jul  3 10:20 internal
+-rw-r--r--. 1 root root 5376 Jul  3 10:20 main.go
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 migrate
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 new
+drwxr-xr-x. 5 root root 4096 Jul  7 04:01 nginx-operator
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 olmcatalog
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 printdeps
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 run
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 scorecard
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 test
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 up
+drwxr-xr-x. 2 root root 4096 Jul  3 10:20 version
+root@cloudsec1 operator-sdk [dev] $ git status
+# On branch dev
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       nginx-operator/
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 # dlv命令总结
 
