@@ -37,6 +37,14 @@ go get: error loading module requirements
   * > 最后还是在 https://github.com/go-delve/delve上 README.md中找到解决问题的办法，Installation->windows，执行命令为
     >> `go get -u github.com/go-delve/delve/cmd/dlv`
 
+## dlv带参数调试
+
+这就是新兴的debuger和稳定的debuger比起来差的地方，官方有一些相关issue，基本是用**“双横杠”**来带参数。但是多参数情况下看来仍然有问题。先记下来后面继续跟踪吧：
+- https://github.com/go-delve/delve/issues/126
+- https://github.com/go-delve/delve/issues/178
+- https://github.com/go-delve/delve/issues/562
+- https://github.com/go-delve/delve/issues/715
+
 # dlv命令总结
 
 ```
