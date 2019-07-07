@@ -16,6 +16,8 @@ Debugging Go programs with Delve https://blog.gopheracademy.com/advent-2015/debu
 
 GO语言调试利器——dlv https://www.jianshu.com/p/7373042bba83
 
+Go调试工具—— Delve https://www.cnblogs.com/wanghui-garcia/p/10455217.html
+
 # Delve问题
 
 ## go: github.com/derekparker/delve@v1.2.0: parsing go.mod: unexpected module path "github.com/go-delve/delve"
