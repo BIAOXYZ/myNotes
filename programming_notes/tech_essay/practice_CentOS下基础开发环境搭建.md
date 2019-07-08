@@ -5,6 +5,8 @@
 - CentOS 安装 Docker CE https://yeasy.gitbooks.io/docker_practice/content/install/centos.html
 - Docker Compose 项目 -- 安装与卸载 https://yeasy.gitbooks.io/docker_practice/content/compose/install.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## docker安装
 
 - 卸载旧版本
@@ -132,6 +134,8 @@ Server: Docker Engine - Community
   Experimental:     false
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## docker升级
 
 背景是有个openshift的单节点环境，因为安装的时候按攻略里只安了`1.13`版本的docker（也就是最低的足够用的版本），后面有些新版本才有的功能就用不了，于是想着升级一下docker版本。但是又怕影响openshift环境——因为网上大多数给的办法都是**先卸载已有docker，再安装新版本docker**来升级。这个帖子里【[Upgrade docker on CentOS 7](https://stackoverflow.com/questions/26472586/upgrade-docker-on-centos-7)】有提到这样升级可能对镜像有影响，balabala。最后找了半天，还是一咬牙，用**卸载-重装新版本**的办法（一切按官方文档[Uninstall old versions + Install Docker CE](https://docs.docker.com/install/linux/docker-ce/centos/)来），结果啥事都没有，白担心了。。。
@@ -213,6 +217,8 @@ yum remove -y containerd.io
 但是我没有执行rm -rf /var/lib/docker，说白了就是没清理镜像，没有发现有什么docker相关的影响。
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## docker-compose安装
 
 - 二进制方式安装docker-compose
@@ -224,10 +230,14 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.23.0-rc3/dock
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # JDK and Maven
 
 Spring Boot 2 (四)：使用 Docker 部署 Spring Boot http://www.ityouknow.com/springboot/2018/03/19/spring-boot-docker.html
 > 安装JDK时参考了这个。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## JDK安装
 ```
@@ -250,6 +260,7 @@ export CLASSPATH=${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## maven安装
 ```
@@ -261,6 +272,8 @@ wget http://mirrors.hust.edu.cn/apache/maven/maven-3/3.5.4/binaries/apache-maven
 export MAVEN_HOME=/usr/local/maven3
 export PATH=${PATH}:${MAVEN_HOME}/bin
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Go语言环境
 ```
@@ -294,3 +307,5 @@ mkdir -p $GOPATH/{bin,pkg,src}
 // dep
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
