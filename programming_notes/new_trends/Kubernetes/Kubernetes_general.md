@@ -166,6 +166,7 @@ Kubernetes The Hard Way -- Bootstrap Kubernetes the hard way on Google Cloud Pla
 ***青蛙小白kubernetes安装:***
 - 使用kubeadm安装Kubernetes 1.14 https://blog.frognew.com/2019/04/kubeadm-install-kubernetes-1.14.html
 - 使用kubeadm安装Kubernetes 1.12 https://blog.frognew.com/2018/10/kubeadm-install-kubernetes-1.12.html
+- 使用kubeadm安装Kubernetes 1.15 https://www.kubernetes.org.cn/5551.html || https://blog.frognew.com/2019/07/kubeadm-install-kubernetes-1.15.html
 
 ## kuberbetes 集群配置
 
@@ -202,6 +203,16 @@ Did you mean this?
    	
 ```
 > 另外bash-completion安装完成后本身有时候也要source一下，参见`tools4programming_linux.md`那部分吧。
+
+### 多集群配置
+
+**看似标题基本一样，实际上内容不一样，作者也不是一个人**：
+- Kubernetes 使用集群联邦实现多集群管理 https://www.yangcs.net/posts/federation/
+- Kubernetes使用集群联邦实现多集群管理 https://www.kubernetes.org.cn/2987.html
+
+集群联邦 https://jimmysong.io/kubernetes-handbook/practice/federation.html
+- Federation https://kubernetes.io/docs/concepts/cluster-administration/federation/
+- 联邦（Federation） https://k8smeetup.github.io/docs/concepts/cluster-administration/federation/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
