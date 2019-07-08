@@ -31,20 +31,20 @@ GitHub 欢迎一切 CI 工具 https://www.linuxidc.com/Linux/2017-12/149865.htm
 CI工具一周课程Day 1：Jenkins
 http://www.freebuf.com/sectool/88143.html
 
+### JFrog
+
+JFrog https://jfrog.com/
+
+从零开始通过 Artifactory 搭建公网的 maven 仓库 https://juejin.im/post/595368f35188250d852faf1e
+
 ### SourceMonitor
 
 代码度量工具——SourceMonitor的学习和使用
 http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 
-
-###
-###
-###
-###
-###
-###
-
 ## 待整理
+
+### 忘了在哪看到的一套推荐工具合集
 
 *C:*
 - CCT代码规模(行)
@@ -65,6 +65,9 @@ http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 - Py Complexity圈复杂度检测	
 - Simian代码重复度	
 - LLT覆盖率检测
+
+### 待分类
+
 
 # 其他
 
