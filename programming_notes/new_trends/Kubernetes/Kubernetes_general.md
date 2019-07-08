@@ -477,10 +477,15 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 【by 程序员欣宸】：
 - Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
 - Kubernetes深入学习之二:编译和部署镜像(api-server) https://blog.csdn.net/boling_cavalry/article/details/88603293
+- k8s自定义controller三部曲之一:创建CRD（Custom Resource Definition） https://blog.csdn.net/boling_cavalry/article/details/88917818
 
 【by shida_csdn】K8S 源码探秘 https://blog.csdn.net/shida_csdn/column/info/28699
 - K8S 源码探秘 之 命令行解析工具 cobra https://blog.csdn.net/shida_csdn/article/details/82979697
 - 基于 sample-controller 实现自定义 CRD 控制器（Operator）的一般步骤 https://blog.csdn.net/shida_csdn/article/details/87102801
+
+【by 哎_小羊_168】：
+- Kubernetes CRD (CustomResourceDefinition) 自定义资源类型 https://blog.csdn.net/aixiaoyang168/article/details/81875907
+- 使用 client-go 对 Kubernetes 进行自定义开发及源码分析 https://blog.csdn.net/aixiaoyang168/article/details/84752005
 
 ## kubeadm相关源码/流程
 
@@ -493,6 +498,11 @@ Kubernetes搭建之kubeadm-init探究 https://jingwei.link/2018/11/28/kubeadm-in
 11.1. client-go的使用及源码分析 https://www.huweihuang.com/kubernetes-notes/develop/client-go.html
 
 Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
+
+## controller相关源码
+
+如何基于kubernetes开发自定义的Controller https://blog.csdn.net/jiangmingjun1234/article/details/79296542
+- > [源码分析] client-go的使用及源码分析 https://www.huweihuang.com/article/source-analysis/client-go-source-analysis/
 
 ## 待分类源码分析
 
