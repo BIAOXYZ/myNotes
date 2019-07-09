@@ -267,13 +267,20 @@ Lightweight Kubernetes. 5 less than k8s. https://k3s.io || https://github.com/ra
 ## kube-hunter (Aqua Security)
 
 Kube-hunter - an open source tool for Kubernetes penetration testing https://blog.aquasec.com/kube-hunter-kubernetes-penetration-testing 
-> Hunt for security weaknesses in Kubernetes clusters https://github.com/aquasecurity/kube-hunter
-
-Container Technology Wiki https://www.aquasec.com/wiki
+- > kube-hunter website https://kube-hunter.aquasec.com/
+- > Hunt for security weaknesses in Kubernetes clusters https://github.com/aquasecurity/kube-hunter
 
 ## kube-bench (Aqua Security)
 
-The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices https://github.com/aquasecurity/kube-bench
+Kube-Bench: An Open Source Tool for Running Kubernetes CIS Benchmark Tests https://blog.aquasec.com/announcing-kube-bench-an-open-source-tool-for-running-kubernetes-cis-benchmark-tests
+- > CIS Benchmarks for Securing Kubernetes https://www.cisecurity.org/benchmark/kubernetes/
+- > The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices https://github.com/aquasecurity/kube-bench
+
+## other materials from (Aqua Security)
+
+Container Technology Wiki https://www.aquasec.com/wiki
+
+Aqua Operator: Automating Security for Kubernetes https://blog.aquasec.com/aqua-security-kubernetes-operators
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
