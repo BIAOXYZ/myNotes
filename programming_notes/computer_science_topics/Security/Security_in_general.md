@@ -207,7 +207,7 @@ https://legacy.gitbook.com/book/t0data/burpsuite/details
 
 OpenID 和 OAuth 有什么区别？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/19628327/answer/23291315
 
-## learned from IBM
+## learned from work
 
 AppSec Fundamentals - Industry History
 - Responsible disclosure https://en.wikipedia.org/wiki/Responsible_disclosure
@@ -253,6 +253,16 @@ An Introduction To FIPS-140-2 Requirements https://blog.ipswitch.com/an-introduc
 ### HIPAA
 
 Health Insurance Portability and Accountability Act https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act
+
+
+## CIS Benchmarks
+
+Center for Internet Security https://en.wikipedia.org/wiki/Center_for_Internet_Security
+
+CIS Benchmarks https://www.cisecurity.org/cis-benchmarks/
+- CIS Benchmarks™ FAQ https://www.cisecurity.org/cis-benchmarks/cis-benchmarks-faq/
+
+6 Essential Things to Know about CIS Benchmarks https://www.advancedcyber.co.uk/it-security-blog/six-essential-things-to-know-cis-benchmark
 
 # Security blogs
 
