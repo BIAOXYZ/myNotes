@@ -273,6 +273,7 @@ Kube-hunter - an open source tool for Kubernetes penetration testing https://blo
 ## kube-bench (Aqua Security)
 
 Kube-Bench: An Open Source Tool for Running Kubernetes CIS Benchmark Tests https://blog.aquasec.com/announcing-kube-bench-an-open-source-tool-for-running-kubernetes-cis-benchmark-tests
+- > CIS Benchmark for Kubernetes 1.6 https://blog.aquasec.com/cis-benchmark-for-kubernetes-security
 - > CIS Benchmarks for Securing Kubernetes https://www.cisecurity.org/benchmark/kubernetes/
 - > The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices https://github.com/aquasecurity/kube-bench
 
