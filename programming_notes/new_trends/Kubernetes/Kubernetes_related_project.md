@@ -115,7 +115,11 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
 
 ## 各种operator项目
 
+### shell-operator
+
 Shell-operator：用于简化Kubernetes operator的创建 https://mp.weixin.qq.com/s/byHSc-moGK28_Z9hiNG7Aw
+> Announcing shell-operator to simplify creating of Kubernetes operators https://medium.com/flant-com/kubernetes-shell-operator-76c596b42f23
+>> Shell-operator is a tool for running event-driven scripts in a Kubernetes cluster https://github.com/flant/shell-operator
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
