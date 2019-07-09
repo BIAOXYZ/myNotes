@@ -262,6 +262,8 @@ Machine Learning Toolkit for Kubernetes https://github.com/kubeflow/kubeflow
 
 Lightweight Kubernetes. 5 less than k8s. https://k3s.io || https://github.com/rancher/k3s
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## kube-hunter (Aqua Security)
 
 Kube-hunter - an open source tool for Kubernetes penetration testing https://blog.aquasec.com/kube-hunter-kubernetes-penetration-testing 
@@ -269,16 +271,22 @@ Kube-hunter - an open source tool for Kubernetes penetration testing https://blo
 
 Container Technology Wiki https://www.aquasec.com/wiki
 
+## kube-bench (Aqua Security)
+
+The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices https://github.com/aquasecurity/kube-bench
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Kubewatch (Bitnami)
 
 Kubewatch, An Example Of Kubernetes Custom Controller https://engineering.bitnami.com/articles/kubewatch-an-example-of-kubernetes-custom-controller.html
 
 Watch k8s events and trigger Handlers https://github.com/bitnami-labs/kubewatch
 
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
 ## Kubeapps (Bitnami)
 
 A web-based UI for deploying and managing applications in Kubernetes clusters https://github.com/kubeapps/kubeapps || https://kubeapps.com/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
