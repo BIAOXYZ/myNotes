@@ -21,6 +21,8 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 做一个基础很扎实的程序员是一种什么感受啊 https://www.v2ex.com/t/561411
 - > 现在开始学基础也不会晚。最近也一直在看计算机基础相关圣经。我整理了一个计算机基础书单，可以参考参考 https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md
 
+求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
+
 # V2EX非技术类
 
 做程序员最重要的还是一定要有自己的作品 https://www.v2ex.com/t/564913
@@ -49,3 +51,6 @@ shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
 女朋友家境不好，手机摔坏了要买手机，我推荐她买三星 A60，她非要买华为 Mate20 Pro https://www.v2ex.com/t/575148
 
 公司之前离职的 hr 情商似乎有点低 https://www.v2ex.com/t/580454
+
+码农老婆职业统计 https://www.v2ex.com/t/581073
+
