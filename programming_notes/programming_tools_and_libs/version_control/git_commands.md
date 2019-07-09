@@ -1053,7 +1053,7 @@ https://stackoverflow.com/questions/171550/find-out-which-remote-branch-a-local-
 git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)
 ```
 
-### git
+### git如何查询当前某个文件是否已被添加到版本控制
 
 Git git 如何列出已经跟踪的文件？ https://ruby-china.org/topics/1519
 - > `git ls-files`
@@ -1061,7 +1061,7 @@ Git git 如何列出已经跟踪的文件？ https://ruby-china.org/topics/1519
 - > 我是在 bundle 生成 gem 模板的时候，gemspec 里面偶然发现的
 - > 我是当时尝试性的敲了一个 git files 结果git 提示我是不是用ls-files,提示还是挺贴心的。
 
->> 个人补充：可以结合`grep`快速过滤，从而确定某个文件是否已被git追踪，比如：
+**个人补充：可以结合`grep`快速过滤，从而确定某个文件是否已被git追踪，比如（更多grep的多关键词过滤参考linux命令的grep部分吧）下面这段列出了路径或者名称里`既包含cmd也包含operator`的文件**：
 ```
 root@myopenshift:operator-sdk$ git ls-files | grep cmd | grep operator
 cmd/operator-sdk/add/api.go
