@@ -85,7 +85,7 @@ cloudsec2.sl.cloud9.ibm.com
 
 ## 参考链接
 
-kubernetes1.13.1+etcd3.3.10+flanneld0.10集群部署 https://www.kubernetes.org.cn/5025.html
+kubernetes1.13.1+etcd3.3.10+flanneld0.10集群部署 https://www.kubernetes.org.cn/5025.html || https://github.com/minminmsn/k8s1.13
 >> notes: 找了很多攻略后，决定基本按照这个来，只是把小坑补一下就好。所以后面标题里会有不少标题直接用原文里的（这种标题有双引号），最主要的目的就是好和原文对比。。。
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
@@ -1533,6 +1533,18 @@ Events:
   Normal   Pulled                  3m2s                   kubelet, 9.186.102.71  Successfully pulled image "quay.io/biaoxyz/app-operator"
   Normal   Created                 3m2s                   kubelet, 9.186.102.71  Created container
   Normal   Started                 3m1s                   kubelet, 9.186.102.71  Started container
+```
+>>> //补充2：注意这里的`kubelet.kubeconfig`是kubelet启动后自动生成的，不需要手工编辑。所以虽然暂时没有这个文件，但是不用管。在原始链接下面有人问到这个问题，然后有人做了回答：
+```
+- 请问，在以上代码中的三个配置文件中（kubelet.kubeconfig、bootstrap.kubeconfig、kubelet.config），kubelet.kubeconfig
+不存在啊，是不是哪里写漏了，还是把这个文件名改成bootstrap.kubeconfig
+
+- kubelet.kubeconfig是启动kubelet服务并注册到master后自动生成的，而且在节点上执行kubectl get nodes会报The connection 
+to the server localhost:8080 was refused – did you specify the right host or port，这是因为kubectl 默认
+从 ~/.kube/config 文件读取 kube-apiserver 地址、证书、用户名等信息,而kubelet.kubeconfig当中就包含这些信息，做个链接就
+可以了“ln -s /k8s/kubernetes/cfg/kubelet.kubeconfig ~/.kube/config
+
+- node节点上执行kubectl get nodes可以手动指定一些参数，你这样操作挺好的。
 ```
 
 ### "6）创建kubelet systemd文件"
