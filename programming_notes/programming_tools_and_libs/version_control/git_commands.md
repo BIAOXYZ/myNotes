@@ -951,7 +951,7 @@ http://www.yangzhiping.com/tech/github.html
 <<图解Git>>
 https://my.oschina.net/xdev/blog/114383
 
-### 阮一峰git系列
+## 阮一峰git系列
 
 - <<常用 Git 命令清单>>
 http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
@@ -971,14 +971,14 @@ git push origin --tags
 - <<Git 使用规范流程>>
 http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
 
-### 伯乐在线git系列
+## 伯乐在线git系列
 
 http://blog.jobbole.com/75348/
 
 <<趣文：那些会用 Git 的动物>>
 http://blog.jobbole.com/20123/
 
-### 其他高级技巧或知识
+## 其他高级技巧或知识
 
 🥡 Git recipes in Chinese by Zhongyi Tong. 高质量的Git中文教程.  https://geeeeeeeeek.github.io/git-recipes/  https://github.com/geeeeeeeeek/git-recipes
 - 第5篇 Git 实用贴士
@@ -1010,7 +1010,7 @@ git寻根——^和~的区别 https://www.cnblogs.com/hutaoer/archive/2013/05/14
 ```
 >> 个人再总结下吧：其实这个文章主要就是通过实验说明了，在有多个父节点的情况下：`HEAD^n`是多个父节点之间（横着）走的；`HEAD~n`是沿着第一个分支（纵向）走的。所以感觉还是`~`是更想达到的效果（一般用git reset回退几个commit的时候肯定是想纵向回退啊）。
 
-####  git的refs
+###  git的refs
 <<Git push与pull的默认行为>>
 https://segmentfault.com/a/1190000002783245
 
@@ -1020,7 +1020,7 @@ http://blog.csdn.net/forever_wind/article/details/37506389
 <<Git HEAD detached from XXX (git HEAD 游离) 解决办法>>
 http://blog.csdn.net/u011240877/article/details/76273335
 
-#### git-symbolic-ref
+### git-symbolic-ref
 
 git-symbolic-ref https://git-scm.com/docs/git-symbolic-ref
 ```
@@ -1043,7 +1043,7 @@ dev
 
 Git 提效篇 http://hotoo.github.io/blog/post/git-branch
 
-#### git本地分支与远程分支关联关系查询
+### git本地分支与远程分支关联关系查询
 git 如何查看当前分支的upstream? - 知乎 https://www.zhihu.com/question/27324031
 ```
 这个帖子，包括下面的stackoverflow里的帖子基本都没有特别好的办法，回头再研究下吧。
@@ -1053,7 +1053,29 @@ https://stackoverflow.com/questions/171550/find-out-which-remote-branch-a-local-
 git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)
 ```
 
-### git常用命令综合类
+### git
+
+Git git 如何列出已经跟踪的文件？ https://ruby-china.org/topics/1519
+- > `git ls-files`
+- > 谢楼上各位，我把pro git翻了好几遍也没找到。。。-_-#
+- > 我是在 bundle 生成 gem 模板的时候，gemspec 里面偶然发现的
+- > 我是当时尝试性的敲了一个 git files 结果git 提示我是不是用ls-files,提示还是挺贴心的。
+
+>> 个人补充：可以结合`grep`快速过滤，从而确定某个文件是否已被git追踪，比如：
+```
+root@myopenshift:operator-sdk$ git ls-files | grep cmd | grep operator
+cmd/operator-sdk/add/api.go
+cmd/operator-sdk/add/cmd.go
+cmd/operator-sdk/add/controller.go
+cmd/operator-sdk/add/crd.go
+cmd/operator-sdk/alpha/cmd.go
+cmd/operator-sdk/alpha/olm/cmd.go
+...
+...
+...
+```
+
+## git常用命令综合类
 
 <<Git 常用命令速查表(图文+表格)>>
 http://www.jb51.net/article/55442.htm
@@ -1064,7 +1086,7 @@ http://justcoding.iteye.com/blog/1830388
 今年下半年，中日合拍的《Git游记》即将正式开机，我将...（上集） https://juejin.im/post/5c22056551882518fc5fe294 [`*`][:star:]
 
 
-### git书籍和系列教程(易百教程git部分就不再重复贴了)
+## git书籍和系列教程(易百教程git部分就不再重复贴了)
 
 <Pro Git>
 https://www.gitbook.com/book/bingohuang/progit2/details
