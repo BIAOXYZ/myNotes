@@ -57,7 +57,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-EOF      
+EOF
 ```
 
 > k8s-scale-obj.yaml
@@ -74,7 +74,7 @@ cat << EOF > k8s-scale-obj.yaml
       namespace: "{{ namespace }}"
       replicas: "{{ replicas }}"
       wait_timeout: 60
-EOF      
+EOF
 ```
 
 # 1. The whole procedure
