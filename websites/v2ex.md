@@ -23,6 +23,9 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 
 求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
 
+最近阅读了《MySQL 必知必会》这本书，写了一篇读书笔记，请大佬们过目！ https://www.v2ex.com/t/581631
+- > 客官，这里有一份《MySQL 必知必会》读书笔记，请您笑纳! https://juejin.im/post/5d2335846fb9a07f021a2509
+
 # V2EX非技术类
 
 做程序员最重要的还是一定要有自己的作品 https://www.v2ex.com/t/564913
@@ -53,4 +56,6 @@ shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
 公司之前离职的 hr 情商似乎有点低 https://www.v2ex.com/t/580454
 
 码农老婆职业统计 https://www.v2ex.com/t/581073
+- 目前（ 2019-07-10 09:12:40 ）此贴统计饼图：![程序员伴侣职业统计]( https://i.bmp.ovh/imgs/2019/07/f76f8d093f733d35.png)
 
+有感于隔壁统计老婆职业帖子，我现在好纠结选哪个女朋友结婚 https://www.v2ex.com/t/581575
