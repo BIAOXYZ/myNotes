@@ -278,14 +278,15 @@ Lightweight Kubernetes. 5 less than k8s. https://k3s.io || https://github.com/ra
 
 Kube-hunter - an open source tool for Kubernetes penetration testing https://blog.aquasec.com/kube-hunter-kubernetes-penetration-testing 
 - > kube-hunter website https://kube-hunter.aquasec.com/
-- > Hunt for security weaknesses in Kubernetes clusters https://github.com/aquasecurity/kube-hunter
+- > On Securing the Kubernetes Dashboard https://blog.heptio.com/on-securing-the-kubernetes-dashboard-16b09b1b7aca
+- > 【kube-hunter github page】 Hunt for security weaknesses in Kubernetes clusters https://github.com/aquasecurity/kube-hunter
 
 ## kube-bench (Aqua Security)
 
 Kube-Bench: An Open Source Tool for Running Kubernetes CIS Benchmark Tests https://blog.aquasec.com/announcing-kube-bench-an-open-source-tool-for-running-kubernetes-cis-benchmark-tests
 - > CIS Benchmark for Kubernetes 1.6 https://blog.aquasec.com/cis-benchmark-for-kubernetes-security
 - > CIS Benchmarks for Securing Kubernetes https://www.cisecurity.org/benchmark/kubernetes/
-- > The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices https://github.com/aquasecurity/kube-bench
+- > 【kube-bench github page】 The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices https://github.com/aquasecurity/kube-bench
 
 ## other materials from (Aqua Security)
 
