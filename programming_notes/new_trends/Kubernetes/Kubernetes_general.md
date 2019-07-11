@@ -562,3 +562,5 @@ Removing spec.replicas of the Deployment resets replicas count to single replica
 > 白瑜庆：知乎基于Kubernetes的kafka平台的设计和实现 - 腾讯云技术社区的文章 - 知乎 https://zhuanlan.zhihu.com/p/36366473
 
 Compilation of public failure/horror stories related to Kubernetes https://k8s.af/ || https://github.com/hjacobs/kubernetes-failure-stories
+
+Kubernetes监控在小米的落地 https://juejin.im/post/5d01fe416fb9a07ec56e72a0
