@@ -240,7 +240,7 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 
 # 面试相关
 
-写在19年初的后端社招面试经历 :money_mouth_face: https://github.com/aylei/interview
+写在19年初的后端社招面试经历 :money_mouth_face: https://github.com/aylei/interview || 写在19年初的后端社招面试经历(两年经验): 蚂蚁 头条 PingCAP https://aleiwu.com/post/interview-experience/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
