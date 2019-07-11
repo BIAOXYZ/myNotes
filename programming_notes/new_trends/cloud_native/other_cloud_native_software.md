@@ -96,6 +96,8 @@ Anthos overview https://cloud.google.com/anthos/docs/concepts/anthos-overview
 
 # other container techniques
 
+【[`*`][:star:]】 白话 Kubernetes Runtime https://mp.weixin.qq.com/s/8RvbcvWFSq1snfLorLyhEA || https://aleiwu.com/post/cncf-runtime-landscape/ || https://zhuanlan.zhihu.com/p/58784095
+
 ## Nabla
 
 Secure Containers https://researcher.watson.ibm.com/researcher/view_group.php?id=9510
