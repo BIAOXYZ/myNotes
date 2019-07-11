@@ -1,13 +1,13 @@
 
 # chrome settings
 
-### 谷歌搜索结果用新标签方式打开
+## 谷歌搜索结果用新标签方式打开
 
 为什么Google Chrome在书签栏打开新网页都在同一个标签页打开，不觉得这个设计很蛋疼吗？ - yuanhjty的回答 - 知乎https://www.zhihu.com/question/20548777/answer/333561287
 - > ![](https://pic3.zhimg.com/80/v2-8697db5ecfbe52377ea9c82a7736416d_hd.jpg)
 - > ![](https://pic3.zhimg.com/80/v2-01ecc53819d6e4c6ee19e0845723fd59_hd.jpg)
 
-### Chrome同步不同设备的浏览器已打开的书签/网页
+## Chrome同步不同设备的浏览器已打开的书签/网页
 
 ***//注意：这里不是指收藏夹的同步，收藏夹的同步是自然而然的，也就是只要是同一个账号，设备1和设备2收藏夹是一致的。但是在设备1上要查看设备2上已经打开的标签/网页，chrome就没有firefox做的好了。***
 
@@ -21,7 +21,7 @@
 4.点击左侧的从其他设备打开的标签页。
 ```
 
-### chrome keyboard shortcuts
+## chrome keyboard shortcuts
 
 工具篇---Chrome浏览器快捷键 https://www.jianshu.com/p/95a6e8ee4819
 
@@ -62,11 +62,17 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 > Saladict https://github.com/crimx/ext-saladict/wiki
 >> :warning:（重要）初次使用注意事项！！！ https://github.com/crimx/ext-saladict/wiki/Instructions
 
+### 油猴专区
+
 - Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/
+
+用户脚本源 https://www.tampermonkey.net/scripts.php
+- GreasyFork https://greasyfork.org/zh-CN
   * 如何安装用户脚本 https://greasyfork.org/zh-CN/help/installing-user-scripts
   * 解除B站区域限制 https://greasyfork.org/en/scripts/25718-%E8%A7%A3%E9%99%A4b%E7%AB%99%E5%8C%BA%E5%9F%9F%E9%99%90%E5%88%B6
   * Bilibili直播间挂机助手 https://greasyfork.org/en/scripts/37095-bilibili%E7%9B%B4%E6%92%AD%E9%97%B4%E6%8C%82%E6%9C%BA%E5%8A%A9%E6%89%8B  
   * 百度网盘直链下载助手 https://greasyfork.org/en/scripts/39504-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B
+- OpenUserJS https://openuserjs.org/
 
 ## not frequently used
 
