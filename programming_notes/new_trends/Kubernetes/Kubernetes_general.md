@@ -248,6 +248,8 @@ Kubernetes技术分析之网络 http://dockone.io/article/545
 kubernetes网络相关总结 http://codemacro.com/2018/04/01/kube-network/
 > Kubernetes网络原理及方案 https://www.kubernetes.org.cn/2059.html
 
+浅析从外部访问 Kubernetes 集群中应用的几种方式 https://www.hi-linux.com/posts/56619.html 【by 运维之美】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes网络之端口相关内容
@@ -320,6 +322,12 @@ Building stuff with the Kubernetes API (Part 4) — Using Go https://medium.
 使用client-go自定义开发Kubernetes https://xuchao918.github.io/2019/02/13/%E4%BD%BF%E7%94%A8client-go%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%80%E5%8F%91Kubernetes/
 
 Kubernetes client-go实战应用 https://juejin.im/post/5bc9d80df265da0ac7272dde
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## kubernetes apiserver
+
+[Kubernetes] Kubernetes核心原理（一）之API Server https://www.huweihuang.com/article/kubernetes/core-principle/kubernetes-core-principle-api-server/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -486,6 +494,8 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 【by 哎_小羊_168】：
 - Kubernetes CRD (CustomResourceDefinition) 自定义资源类型 https://blog.csdn.net/aixiaoyang168/article/details/81875907
 - 使用 client-go 对 Kubernetes 进行自定义开发及源码分析 https://blog.csdn.net/aixiaoyang168/article/details/84752005
+
+kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source-code-analysis-part-1/
 
 ## kubeadm相关源码/流程
 
