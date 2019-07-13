@@ -325,6 +325,9 @@ A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc. h
 
 PyTorch Tutorial for Deep Learning Researchers https://github.com/yunjey/pytorch-tutorial
 
+《Natural Language Processing with PyTorch》中文翻译 https://github.com/apachecn/NLP-with-PyTorch
+> Natural Language Processing with PyTorch 中文版 https://nlp-pt.apachecn.org/
+
 ### numpy
 
 #### shape
