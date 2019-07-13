@@ -62,6 +62,8 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 > Saladict https://github.com/crimx/ext-saladict/wiki
 >> :warning:（重要）初次使用注意事项！！！ https://github.com/crimx/ext-saladict/wiki/Instructions
 
+- Webtime Tracker https://chrome.google.com/webstore/detail/webtime-tracker/ppaojnbmmaigjmlpjaldnkgnklhicppk 【对时间统计兴趣一般，其实主要是发现完全可以把它的时间统计结果里的网站链接当个简易的常用链接书签】
+
 ### 油猴专区
 
 - Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/
@@ -79,6 +81,7 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 - RunMyCode Online https://chrome.google.com/webstore/detail/runmycode-online/iidcnkpdmnopbbkdmneglbelcefgfohf
 - Awesome Screenshot: Screen Video Recorder https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj
 - Search by Image (by Google) https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm
+  * 【感觉二箱完胜谷歌官方的以图搜图，所以可以只用二箱即可。】 二箱 以图搜图  https://chrome.google.com/webstore/detail/noobox-search-by-image/kidibbfcblfbbafhnlanccjjdehoahep 
 - Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
 - Bookmark Sidebar https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh
 
