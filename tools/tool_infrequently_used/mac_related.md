@@ -11,7 +11,9 @@ Mac OS X 平台有哪些好用的 SSH 客户端？ - 知乎 https://www.zhihu.co
   > https://www.royalapplications.com/ts/mac/features
 - Mac OS X 平台有哪些好用的 SSH 客户端？ - 我不是大神的回答 - 知乎 https://www.zhihu.com/question/20541129/answer/388101176
   > http://www.hostbuf.com/t/988.html
-  
+
+Alternatives to Terminator for `Mac` with `any license` https://alternativeto.net/software/terminator/?platform=mac 【注意，真到实际用的时候还是要考虑开源版或免费版。】
+
 ## homebrew
 
 Homebrew的正确安装与使用 https://juejin.im/post/5a6d969bf265da3e2366b853
