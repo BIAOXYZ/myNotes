@@ -6,6 +6,12 @@
 计算机书籍控 http://bestcbooks.com/
 - C++ Primer(中文版)(第5版) http://bestcbooks.com/B00ESUIL0O/
 
+书栈网 https://www.bookstack.cn/
+- C/C++ https://www.bookstack.cn/explore?cid=28&tab=popular
+  * 算法珠玑(C++版) https://www.bookstack.cn/books/algorithm-essentials-cpp 
+- Go https://www.bookstack.cn/explore?cid=10&tab=popular
+  * Go入门指南 https://www.bookstack.cn/books/the-way-to-go_ZH_CN
+
 一些经典且高质量的电子书分享 https://github.com/threerocks/studyFiles
 
 "我的阅历" https://github.com/yuanliangding/books
