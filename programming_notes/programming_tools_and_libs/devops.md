@@ -93,6 +93,10 @@ Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【:star:】
 
 Ansible中文权威指南 https://ansible-tran.readthedocs.io/en/latest/index.html
 
+网站架构从0起步系列文章总目录 -- 工具类 -- Ansible系列 https://www.cnblogs.com/f-ck-need-u/p/7576137.html#ansible 【by 骏马金龙】
+- Ansible.pdf下载 https://files-cdn.cnblogs.com/files/f-ck-need-u/Ansible_book.pdf
+- Ansible系列(五)：各种变量定义方式和变量引用 https://www.cnblogs.com/f-ck-need-u/p/7571974.html
+
 # Ansible快速开始
 
 Ansible入门 https://getansible.com/
@@ -174,6 +178,8 @@ druidcluster1  ansible_user=root
 k8s_scale – Set a new size for a Deployment, ReplicaSet, Replication Controller, or Job https://docs.ansible.com/ansible/latest/modules/k8s_scale_module.html
 
 k8s – Manage Kubernetes (K8s) objects https://docs.ansible.com/ansible/latest/modules/k8s_module.html
+- Parameters
+  * resource_definition (aliases: definition, inline)
 
 helm – Manages Kubernetes packages with the Helm package manager https://docs.ansible.com/ansible/latest/modules/helm_module.html
 
