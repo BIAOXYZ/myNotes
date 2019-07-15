@@ -289,11 +289,21 @@ Golang Generate命令说明与使用 https://yushuangqi.com/blog/2017/go-command
 - https://studygolang.com/articles/7250
 > “我今天安装的go1.8 windows 版本，貌似已经集成进来了， 不用在安装了，目录在%GOPATH%\pkg\tool\windows_amd64\tour.exe”
 
-### CGO
+# go工具
+
+## gops
+
+gops: A tool to list and diagnose Go processes currently running on your system https://github.com/google/gops
+
+gops - Go语言程序查看和诊断工具 https://www.cnblogs.com/snowInPluto/p/7785651.html
+
+gops 工作原理 https://blog.wolfogre.com/posts/mechanism-of-gops/
+
+## CGO
 
 CGO，GOLANG调用C库，调用代码、静态库或动态库 https://blog.csdn.net/win_lin/article/details/51734588
 
-### GoConvey
+## GoConvey
 
 Go testing in the browser. Integrates with `go test`. Write behavioral tests in Go. http://goconvey.co
 
