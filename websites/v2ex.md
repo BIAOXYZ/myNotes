@@ -30,6 +30,10 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 
 做程序员最重要的还是一定要有自己的作品 https://www.v2ex.com/t/564913
 
+统计了 V2EX 过去一周的在线人数 https://www.v2ex.com/t/579484
+
+## 休闲娱乐
+
 动漫求推荐一些啊\~\~感谢 https://www.v2ex.com/t/574810
 - > 去搜 bangumi.tv 的排行榜，在前 50 内自己挑想看的
 - > 动画标签: 冒险 https://bangumi.tv/anime/tag/%E5%86%92%E9%99%A9/?sort=date
@@ -37,9 +41,11 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 - > https://bangumi.tv/ 搜索你喜欢的番，下面有推荐 <br> 或者点击该番对应的一个 tag,点进去，排名排序，然后挑选你感兴趣的 
   >> 或者可以尝试 bgmer 基于 bangumi 制作的推荐系统，例如 https://bangumi.tv/group/topic/345856
   
-统计了 V2EX 过去一周的在线人数 https://www.v2ex.com/t/579484
-
 求大佬推荐好看的新老番！ https://www.v2ex.com/t/582232
+
+## 生活信息
+
+上午刚买了套房，可以分享些行情 https://www.v2ex.com/t/582885
 
 # V2EX工具类
 
@@ -83,5 +89,3 @@ shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
   利用欲望让自己努力，控制欲望让自己快乐。
   ```
   
-
-
