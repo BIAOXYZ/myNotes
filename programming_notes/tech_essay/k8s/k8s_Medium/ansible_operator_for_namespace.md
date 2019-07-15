@@ -4,9 +4,31 @@
 - A Practical kubernetes Operator using Ansible — an example https://itnext.io/a-practical-kubernetes-operator-using-ansible-an-example-d3a9d3674d5b
 - An OpenShift Operator to deploy workshops ans demos https://github.com/jduncan-rva/workshop-operator
 
-# 1. 整个过程
+# 1. 在[Katacoda ansible operator环境](https://www.katacoda.com/openshift/courses/ansibleop/ansible-operator-overview)下的整个过程
 
-文章里有些小错误，最关键的一处是
+- 文章里有些小错误，最关键的一处是在第二部分（也就是1.2节），不改的话影响过程。其他的比如多一个s少一个s之类的会有明显报错。
+```
+注：下面是原文（一字未改）和1.2节我改过后的那一句的对比（实际上在原文里上下两部分一对比就会发现group字段的值写的不对称）。
+--------------------------------------------------
+$ cat watches.yaml
+---
+- version: v1
+  group: workshops.operator.redhatgov.io
+  kind: Workshop
+  playbook: /opt/ansible/playbooks/workshop.yml
+- version: v1
+  group: operator.redhatgov.io
+  kind: Student
+  playbook: /opt/ansible/playbooks/student.yml
+--------------------------------------------------
+  ...
+  ...
+  group: students.operator.redhatgov.io  // 这样就明显多了吧。
+  ...
+  ...
+--------------------------------------------------
+```
+- 由于用的是`operator-sdk v0.6.0`版本，现在已经不支持`--cluster-scoped`参数了。所以在新版本的实际环境中需要改的更多，主要是deploy目录下的那些权限相关的manifest文件。这里有官方的参考：https://github.com/operator-framework/operator-sdk/blob/master/doc/operator-scope.md （我真觉得有毛病，干嘛去掉这个参数；去掉这个参数再来个攻略教你怎么弄集群范围内权限。。。）。
 
 ## 1.1
 
@@ -61,6 +83,97 @@ oc create -f deploy/crds/workshops_v1_workshop_cr.yaml
 $ oc get ns | grep workshop
 example-workshop                    Active    57s
 workshop-operator                   Active    9m
+```
+
+该部分完成后，部分manifest文件的内容如下：
+```
+$ pwd
+/root/tutorial/workshop-operator
+$ cd deploy/
+
+$ cat service_account.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: workshop-operator
+
+$ cat role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: workshop-operator
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - '*'
+  verbs:
+  - '*'
+
+$ cat role_binding.yaml
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: workshop-operator
+subjects:
+- kind: ServiceAccount
+  name: workshop-operator
+  # Replace this with the namespace the operator is deployed in.
+  namespace: workshop-operator
+roleRef:
+  kind: ClusterRole
+  name: workshop-operator
+  apiGroup: rbac.authorization.k8s.io
+
+$ cat operator.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workshop-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: workshop-operator
+  template:
+    metadata:
+      labels:
+        name: workshop-operator
+    spec:
+      serviceAccountName: workshop-operator
+      containers:
+        - name: ansible
+          command:
+          - /usr/local/bin/ao-logs
+          - /tmp/ansible-operator/runner
+          - stdout
+          # Replace this with the built image name
+          image: "workshop-operator:v1"
+          imagePullPolicy: "Never"
+          volumeMounts:
+          - mountPath: /tmp/ansible-operator/runner
+            name: runner
+            readOnly: true
+        - name: operator
+          # Replace this with the built image name
+          image: "workshop-operator:v1"
+          imagePullPolicy: "Never"
+          volumeMounts:
+          - mountPath: /tmp/ansible-operator/runner
+            name: runner
+          env:
+            - name: WATCH_NAMESPACE
+              value: ""
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "workshop-operator"
+      volumes:
+        - name: runner
+          emptyDir: {}
 ```
 
 ## 1.2
