@@ -216,6 +216,7 @@ Helm User Guide - Helm 用户指南 https://whmzsu.github.io/helm-doc-zh-cn/
   * > 我们首先要为你介绍一个叫做“开放云原生应用中心” (Cloud Native App Hub，简称 AppHub) 的服务，它的主页是：https://developer.aliyun.com/hub
   * > Helm v3 跟 Helm v2 的区别就像 Python 2 和 3 那么大，而且还比 Helm v2 要好用的多（比如：不需要安装服务端组件 Tiller）。我们下周的《为什么你必须尽快转向 Helm v3 》文章，会为你解释这个事情。
   * > 是的，你可以通过 https://github.com/cloudnativeapp/charts 来随时对这个 Helm Hub 中国小站点提出你的改进思路。
+- 初探云原生应用管理（二）: 为什么你必须尽快转向 Helm v3 https://www.infoq.cn/article/JL6H7bgTy7X*1usthCP0
 
 ### Helm articles
 
