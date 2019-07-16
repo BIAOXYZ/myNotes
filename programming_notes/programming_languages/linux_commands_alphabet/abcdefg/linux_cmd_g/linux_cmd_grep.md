@@ -40,6 +40,22 @@ root@myopenshift:operator-sdk$ git ls-files | awk '/cmd|printing/' | wc -l
 // 求“与”（交集）的方式
 root@myopenshift:operator-sdk$ git ls-files | grep cmd | grep printing | wc -l
 1
+
+----------------------------------------------------------------------------------------------------
+
+// 另一个实战：同时grep多个端口占用情况：
+
+[root@cloudsec4 ~]# netstat -lntp | grep 2379
+tcp        0      0 9.186.102.73:2379       0.0.0.0:*               LISTEN      2150/etcd
+[root@cloudsec4 ~]# netstat -lntp | grep 2380
+tcp        0      0 9.186.102.73:2380       0.0.0.0:*               LISTEN      2150/etcd
+[root@cloudsec4 ~]# netstat -lntp | grep 10250
+tcp        0      0 9.186.102.73:10250      0.0.0.0:*               LISTEN      17881/kubelet
+[root@cloudsec4 ~]#
+[root@cloudsec4 ~]# netstat -nltp | grep -E "2379|2380|10250"
+tcp        0      0 9.186.102.73:10250      0.0.0.0:*               LISTEN      17881/kubelet
+tcp        0      0 9.186.102.73:2379       0.0.0.0:*               LISTEN      2150/etcd
+tcp        0      0 9.186.102.73:2380       0.0.0.0:*               LISTEN      2150/etcd
 ```
 
 grep命令:匹配多个单词 https://www.jianshu.com/p/747c97f4b4ac
