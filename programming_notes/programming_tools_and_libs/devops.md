@@ -89,6 +89,8 @@ Ansible (software) https://en.wikipedia.org/wiki/Ansible_(software)
 
 SaltStack 与 Ansible 选择？ - 知乎 https://www.zhihu.com/question/22707761
 
+# Ansible系列文章/书籍 
+
 Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【:star:】
 
 Ansible中文权威指南 https://ansible-tran.readthedocs.io/en/latest/index.html
@@ -96,6 +98,10 @@ Ansible中文权威指南 https://ansible-tran.readthedocs.io/en/latest/index.ht
 网站架构从0起步系列文章总目录 -- 工具类 -- Ansible系列 https://www.cnblogs.com/f-ck-need-u/p/7576137.html#ansible 【by 骏马金龙】
 - Ansible.pdf下载 https://files-cdn.cnblogs.com/files/f-ck-need-u/Ansible_book.pdf
 - Ansible系列(五)：各种变量定义方式和变量引用 https://www.cnblogs.com/f-ck-need-u/p/7571974.html
+
+Ansible 专题文章总揽 https://www.jianshu.com/p/c56a88b103f8
+- > 倾情巨献，ansible2.5版本系列视频： http://www.acfun.cn/v/ac4413997 || https://www.bilibili.com/video/av25424954
+- Ansible 小手册系列 十三（Jinja2） https://www.jianshu.com/p/ae74f5f39828  【:star:】
 
 # Ansible快速开始
 
@@ -226,3 +232,8 @@ Ansible Galaxy https://docs.ansible.com/ansible/latest/reference_appendices/gala
 # Ansible其他
 
 Ansible 进阶技巧 https://www.ibm.com/developerworks/cn/linux/1608_lih_ansible/index.html
+
+## Ansible Jinja2模板
+
+Templating (Jinja2) https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html
+
