@@ -182,3 +182,6 @@ B站回应后台源码泄露事件：为历史版本，已主动防御 https://w
 
 🌐 协慌网 - 专注编程问答汉化。 https://github.com/b3log/routinepanic.com
 > 协慌网 https://routinepanic.com/
+
+🇨🇳 Chinese sticker pack,More joy / Github最有毒的仓库, 中国表情包大集合, 聚欢乐~ https://github.com/zhaoolee/ChineseBQB
+> https://zhaoolee.github.io/ChineseBQB/
