@@ -53,6 +53,21 @@
 
 ## `##` [仓库(Docker Registry)](https://yeasy.gitbooks.io/docker_practice/content/basic_concept/repository.html)
 
+这一页主要是有个（第一次接触时）容易混淆的概念：`Registry`和`Repository`。实际上，`Registry`才是真正的“**仓库**”，`Repository`更像是该仓库的一个个“**储藏室**”。
+
+> 一个 **Docker Registry** 中可以包含多个 **仓库**（`Repository`）；每个仓库可以包含多个 **标签**（`Tag`）；每个标签对应一个镜像。
+>
+> 通常，一个仓库会包含同一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。我们可以通过 `<仓库名>:<标签>` 的格式来指定具体是这个软件哪个版本的镜像。如果不给出标签，将以 `latest` 作为默认标签。
+>
+> 以 Ubuntu 镜像 为例，ubuntu 是仓库的名字，其内包含有不同的版本标签，如，`16.04`, `18.04`。我们可以通过 `ubuntu:16.04`，或者 `ubuntu:18.04` 来具体指定所需哪个版本的镜像。如果忽略了标签，比如 `ubuntu`，那将视为 `ubuntu:latest`。
+>
+> 仓库名经常以 两段式路径 形式出现，比如 `jwilder/nginx-proxy`，前者往往意味着 Docker Registry 多用户环境下的用户名，后者则往往是对应的软件名。但这并非绝对，取决于所使用的具体 Docker Registry 的软件或服务。
+
+补充：前面再加上公开或私有的Registry的地址，后面再加上`:tag`，就是一个完整的确定的镜像了。比如：
+- dockerhub上biaoxyz用户的名为myapp的v2版本的镜像：`docker.io/biaoxyz/myapp:v2`
+- quay.io上......的镜像：`quay.io/biaoxyz/myapp:v2`
+- 本地registry上......的镜像（使用docker官方的docker registry镜像搭建）：`127.0.0.1:5000/biaoxyz/myapp:v2`
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `#` 安装Docker
