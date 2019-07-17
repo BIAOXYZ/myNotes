@@ -196,3 +196,9 @@ http://www.downcc.com/soft/301505.html
 ### other books
 
 Bartosz Milewski's 'Category Theory for Programmers' unofficial PDF and LaTeX source https://github.com/hmemcpy/milewski-ctfp-pdf
+
+# docs
+
+后端开发常用框架文档及中文翻译，包含 Spring 系列文档（Spring, Spring Boot, Spring Cloud, Spring Security, Spring Session），大数据（Apache Hive, HBase, Apache Flume），日志（Log4j2, Logback），Http Server（NGINX，Apache），Python，数据库（OpenTSDB，MySQL，PostgreSQL）等最新官方文档以及对应的中文翻译。 https://github.com/docs4dev/docs4dev
+> https://www.docs4dev.com/
+
