@@ -86,7 +86,7 @@ Kubernetes 学习笔记 https://github.com/huweihuang/kubernetes-notes
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# kubernetes general
+# kubernetes在线环境
 
 Katacoda: Learn new technologies using real environments right in your browser https://www.katacoda.com/  【:star:业界良心！+3 :star::star::star:】
 - https://www.katacoda.com/biaoxyz
@@ -97,6 +97,10 @@ Play with Kubernetes -- A simple, interactive and fun playground to learn Kubern
 - > Kubernetes for Beginners https://training.play-with-kubernetes.com/kubernetes-workshop/
 
 TryK8S https://tryk8s.com/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# kubernetes general
 
 A curated list for awesome kubernetes sources shiptada https://ramitsurana.github.io/awesome-kubernetes/ || https://github.com/ramitsurana/awesome-kubernetes
 
@@ -112,7 +116,7 @@ https://k8smeetup.github.io/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# kubernetes 常用命令
+# kubernetes 常用命令和技巧
 
 kubectl Cheat Sheet https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
@@ -123,6 +127,16 @@ Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesb
 
 使用kubectl delete pods xxx删除对应的pod,提示删除成功，但是立马又回生成一个。为何？ http://dockone.io/question/1076
 > 无论各种方式生成的pod, 均可以使用如下命令强制删除: `kubectl delete pods <pod> --grace-period=0 --force`
+
+kubernetes学习笔记 https://zhuyasen.com/post/k8s.html
+- 4.1 资源分类
+```
+# 通过固定格式路径获取所有资源信息
+/api/<GROUP>/<VERSION>/namespace/<NAMESPACE>/<TYPE>/<NAME>
+
+# 使用命令查看路径
+kubectl get deployment nginx-deploy -o yaml | grep selfLink
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
