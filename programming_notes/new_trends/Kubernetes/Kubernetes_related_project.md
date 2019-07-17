@@ -147,6 +147,10 @@ KIND: Kubernetes IN Docker - local clusters for testing Kubernetes https://kind.
 
 Deploy a Production Ready Kubernetes Cluster https://github.com/kubernetes-sigs/kubespray
 
+## kustomize
+
+kustomize: Customization of kubernetes YAML configurations https://github.com/kubernetes-sigs/kustomize
+
 ## 其他kubernetes-sigs项目
 
 Kubernetes controller-tools: Tools to use with the controller-runtime libraries https://github.com/kubernetes-sigs/controller-tools
