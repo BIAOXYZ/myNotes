@@ -105,12 +105,17 @@ Ansible 专题文章总揽 https://www.jianshu.com/p/c56a88b103f8
 
 # Ansible快速开始
 
-Ansible入门 https://getansible.com/
+Ansible入门 https://getansible.com/  【:star:】
 - The ansible examples in this repo are for the book ansible入门(ansible-first-book) https://github.com/ansible-book/playbook-examples-chapter3-ansible-advanced
-
+- Playbook的“Package”(role语句) https://getansible.com/advance/playbook/roleyu_ju
+  * > Role是比include更强大灵活的代码重用和分享机制。Include类似于编程语言中的include，是重用单个文件的，功能有限。而Role类似于编程语言中的“Package”，可以重用一组文件形成完整的功能。
+  
 Learn X in Y minutes -- Where X=ansible https://learnxinyminutes.com/docs/ansible/
 
 Ansible之inventory和常用模块介绍 https://www.jianshu.com/p/398af9fd0172
+
+https://sapser.github.io/category/ansible/
+- ansible学习之十二：Using Lookups https://sapser.github.io/ansible/2014/07/22/ansible-using-lookups
 
 # Ansible命令实战
 
