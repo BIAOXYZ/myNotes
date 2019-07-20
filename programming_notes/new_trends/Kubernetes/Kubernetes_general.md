@@ -511,6 +511,10 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 
 kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source-code-analysis-part-1/
 
+【From 书栈网】：
+- k8s-1.13版本源码分析 https://www.bookstack.cn/books/k8s-source-code-analysis
+- 胡伟煌 Kubernetes 学习笔记 - 源码分析 https://www.bookstack.cn/read/huweihuang-kubernetes-notes/code-analysis.md
+
 ## kubeadm相关源码/流程
 
 kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
