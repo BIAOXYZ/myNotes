@@ -13,6 +13,10 @@ bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%9
 - 日本动画制作公司京阿尼（京都动画）发生火灾 https://www.ithome.com/0/434/098.htm
 - 京都动画工作室大火牵动网友：看到大火我哭了 https://www.ithome.com/0/434/144.htm
 - 日本警察询问京都动画纵火嫌疑人动机，后者回答称“抄袭” https://www.ithome.com/0/434/147.htm
+- 京都动画工作室大火之后，B站番剧区变成黑白色调 https://www.ithome.com/0/434/187.htm
+- 【更新】京都动画工作室遭纵火已致25人死亡 https://www.ithome.com/0/434/189.htm
+- 已33人丧生，B站日本分社将参与对京都动画公司的援助行动 https://www.ithome.com/0/434/210.htm
+- 京都动画被纵大火，苹果CEO库克悼念：一场远远超出日本的悲剧 https://www.ithome.com/0/434/238.htm
 
 
 # 超炮和魔禁
