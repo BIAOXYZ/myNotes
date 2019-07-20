@@ -7,6 +7,14 @@ bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%9
 
 [杂谈] 【快讯】B站下架200多部新老番剧 https://quan.ithome.com/0/466/456.htm 「 2019.06.10 02:59」
 
+## 京阿尼纵火事件
+***//再美好的动画也无法治愈有些人心中的恶***。
+
+- 日本动画制作公司京阿尼（京都动画）发生火灾 https://www.ithome.com/0/434/098.htm
+- 京都动画工作室大火牵动网友：看到大火我哭了 https://www.ithome.com/0/434/144.htm
+- 日本警察询问京都动画纵火嫌疑人动机，后者回答称“抄袭” https://www.ithome.com/0/434/147.htm
+
+
 # 超炮和魔禁
 
 - 某科学的超电磁炮 https://zh.moegirl.org/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84%E8%B6%85%E7%94%B5%E7%A3%81%E7%82%AE
