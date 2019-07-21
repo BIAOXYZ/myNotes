@@ -174,10 +174,9 @@ router-1-xlp7j             1/1       Running   0          1h
 
 # 2.后续的新问题
 
+后来发现因为各种鸟原因，之前这个小实验跑的好好的，但是现在就是不能跑了。下面是解决的全过程，我认为核心点是：**机器上得有[`openshift python库`](https://github.com/openshift/openshift-restclient-python)，并且版本不能太高（<0.9.0）**。
 
-后来发现
-
-## 2.1
+## 2.1 按照过去的步骤去执行，结果发现报错，提示需要安装OpenShift Python client
 
 ```
 root@openshiftsingle 1-dynamic-param $ ansible-playbook k8s-scale-obj.yaml --extra-vars "apiversion=extensions/v1beta1 kind=deployment namespace=default name=nginx replicas=3"
@@ -198,11 +197,15 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=1
 
 ```
 
+## 2.2 把pip装上
+
 ```
 // 把pip装上
 
 yum install -y 
 ```
+
+## 2.3
 
 ```
 // 装上pip后先是版本过低————我现在越来越相信CentOS不如Ubuntu了。。。大版本都19了，结果自带的才8（还是epel带的，CentOS基本库没有！）
