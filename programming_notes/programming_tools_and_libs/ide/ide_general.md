@@ -135,6 +135,10 @@ Facebook 宣布停止维护 Nuclide 和 Atom IDE - SNS 社交网络 - cnBeta.COM
 
 # IDEs for Go
 
+Golang Guide: A List of Top Golang Frameworks, IDEs & Tools https://intelligentbee.com/2017/08/14/golang-guide-list-top-golang-frameworks-ides-tools/
+- Integrated Development Environment (IDEs) for Golang
+  * 4.Wide
+    + 🌈 一款基于 Web 的 Go 语言 IDE，随时随地玩 golang。 https://wide.b3log.org/ || https://hacpai.com/tag/wide || https://github.com/b3log/wide
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
