@@ -10,6 +10,9 @@ bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%9
 ## 京阿尼纵火事件
 ***//再美好的动画也无法治愈有些人心中的恶***。
 
+From 萌百：
+2019年7月18日京都动画公司第一工作室纵火事件 https://zh.moegirl.org/2019年7月18日京都动画公司第一工作室纵火事件
+
 From bilibili:
 - 祈愿逝者安息，伤者早日康复 https://www.bilibili.com/read/cv3104706
 - 2019年7月19日京都大火第二天 https://www.bilibili.com/read/cv3113756
