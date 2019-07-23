@@ -242,3 +242,13 @@ Ansible 进阶技巧 https://www.ibm.com/developerworks/cn/linux/1608_lih_ansibl
 
 Templating (Jinja2) https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html
 
+## ansible debug (not debug module)
+
+Playbook Debugger https://docs.ansible.com/ansible/latest/user_guide/playbooks_debugger.html
+
+ansible playbook实践(四)-如何调试写好的playbook文件 https://www.cnblogs.com/zejin2008/p/8435518.html
+
+Debug Ansible Playbooks Like A Pro https://blog.codecentric.de/en/2017/06/debug-ansible-playbooks-like-pro/
+
+How to debug Ansible issues? https://stackoverflow.com/questions/42417079/how-to-debug-ansible-issues
+
