@@ -72,6 +72,9 @@ notebook_with_decorative_cover 在学院的书架上发现了一本不带脑子�
 Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 > Python Cheat Sheet https://www.pythonsheets.com
 
+微软官方上线 Python 教程《Develop with Python on Windows》 https://www.cnbeta.com/articles/tech/870511.htm
+> 在 Windows 上使用 Python 进行开发 https://docs.microsoft.com/zh-cn/windows/python/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
