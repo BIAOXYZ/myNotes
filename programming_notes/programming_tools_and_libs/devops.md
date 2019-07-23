@@ -252,3 +252,7 @@ Debug Ansible Playbooks Like A Pro https://blog.codecentric.de/en/2017/06/debug-
 
 How to debug Ansible issues? https://stackoverflow.com/questions/42417079/how-to-debug-ansible-issues
 
+Debugging ansible playbooks, plays and tasks https://prefetch.net/blog/2017/07/19/debugging-ansible-playbooks-plays-and-tasks/
+> Another super useful ansible debugging option is the ability to step through your playbooks one task at a time. If your playbook contains a series of tasks that build off of each other this option can be used to stop execution so you can review what a task did to a system. To step through execution you can use the `“–step”` option:
+>> `ansible-playbook --step playbooks/disable-root-sshd-login.yml`
+
