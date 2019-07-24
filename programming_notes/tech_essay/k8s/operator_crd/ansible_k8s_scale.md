@@ -200,15 +200,18 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=1
 ## 2.2 把pip装上
 
 ```
-// 把pip装上
+// 把pip装上，因为上面的报错语句里推荐的用pip安装openshift库
+// 【 centos下安装Python包管理工具pip的方法总结 https://blog.csdn.net/u014236259/article/details/75212659 】
 
-yum install -y 
+yum -y install epel-release
+yum --enablerepo=epel install python-pip -y
 ```
 
 ## 2.3
 
 ```
-// 装上pip后先是版本过低————我现在越来越相信CentOS不如Ubuntu了。。。大版本都19了，结果自带的才8（还是epel带的，CentOS基本库没有！）
+// 装上pip后先是版本过低————我现在越来越相信CentOS不如Ubuntu了 --> pip大版本都到19了，结果CentOS里
+// 自带的才8（还是epel带的，CentOS基本库没有！）
 root@openshiftsingle 1-dynamic-param $ pip install openshift
 Collecting openshift
   Downloading https://files.pythonhosted.org/packages/f7/a2/0779391c48ad70ffe3af51a03f7094d53ad5b4016a4fe87acf047ac32526/openshift-0.9.0.tar.gz
