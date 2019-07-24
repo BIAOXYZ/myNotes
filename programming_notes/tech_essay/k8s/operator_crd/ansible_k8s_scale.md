@@ -698,7 +698,7 @@ ansible 2.7.10
   python version = 2.7.5 (default, Oct 30 2018, 23:45:53) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
 ```
 
-```
+```sh
 // 这个是Katacoda的ansible operator环境，我试了下面的 ansible 和 openshift库 版本肯定是能完成该实验的。
 // https://www.katacoda.com/openshift/courses/ansibleop/ansible-operator-overview
 // 所以我觉得核心点就是openshift库的版本得小于等于0.9。
@@ -717,7 +717,9 @@ ansible 2.7.1
 
 # 3. 远程扩容：在一台机器上执行ansible-playbook，扩容另一台机器上的集群里的deployment
 
-```
+```sh
+//// 注：该机器为openshiftsingle，待扩容/缩容的deployment是跑在该机器上的。
+
 // before execution
 root@openshiftsingle 1-dynamic-param $ oc get deploy
 NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
@@ -726,7 +728,7 @@ root@openshiftsingle 1-dynamic-param $ oc project
 Using project "demoworkload" on server "https://openshiftsingle.sl.cloud9.ibm.com:8443".
 
 
-// after execution
+// after 1st execution
 root@openshiftsingle 1-dynamic-param $ oc get deploy
 NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 nginx     4         4         4            4           12h
@@ -751,13 +753,16 @@ nginx-5d44458958-k5wpq   1/1       Running   0          1d
 nginx-5d44458958-r8srx   1/1       Running   0          1d
 ```
 
-```
-// 注意，目前openshiftsingle上面有openshift python库，但是myopenshift上没有。所以关键是要在被控机器上安这个库？
+```sh
+//// 注：该机器为myopenshift，上面虽然也有个openshift集群，但是跟这个实验没半毛钱关系。这里主要是展示下ansible要用的文件和执行的语句。
+
+// 目前openshiftsingle（被控机）上面有openshift python库，但是myopenshift（主控机）上没有。所以关键是要在被控机器上安这个库？
 
 root@myopenshift test $ cat ansiblehost
 [ocsingle]
 
 9.186.102.139
+
 root@myopenshift test $ cat k8s-scale-obj2.yaml
 - hosts: ocsingle
   tasks:
@@ -769,8 +774,9 @@ root@myopenshift test $ cat k8s-scale-obj2.yaml
       namespace: "{{ namespace }}"
       replicas: "{{ replicas }}"
       wait_timeout: 60
+
 // 甚至hosts也可以指定为动态参数。
-// Ansible中文权威指南 - Variables https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_variables.html
+// 【 Ansible中文权威指南 - Variables https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_variables.html 】
 root@myopenshift test $ cat k8s-scale-obj3.yaml
 - hosts: "{{ hostvar }}"
   tasks:
@@ -802,7 +808,7 @@ PLAY RECAP *********************************************************************
 9.186.102.139              : ok=2    changed=1    unreachable=0    failed=0
 
 
-// 使用动态hosts
+// 第二次执行时使用动态hosts，会把nginx deployment从4扩到5。
 root@myopenshift test $ ansible-playbook k8s-scale-obj3.yaml -i ansiblehost --extra-vars "hostvar=ocsingle apiversion=extensions/v1beta1 kind=deployment namespace=demoworkload name=nginx replicas=5"
  [WARNING]: Found variable using reserved name: name
 
@@ -817,18 +823,5 @@ changed: [9.186.102.139]
 
 PLAY RECAP ********************************************************************************************************************
 9.186.102.139              : ok=2    changed=1    unreachable=0    failed=0
-
-root@myopenshift test $
-root@myopenshift test $ cat k8s-scale-obj3.yaml
-- hosts: "{{ hostvar }}"
-  tasks:
-  - name: Scale a k8s object and extend timeout
-    k8s_scale:
-      api_version: "{{ apiversion }}"
-      kind: "{{ kind }}"
-      name: "{{ name }}"
-      namespace: "{{ namespace }}"
-      replicas: "{{ replicas }}"
-      wait_timeout: 60
 
 ```
