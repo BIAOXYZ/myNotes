@@ -36,6 +36,11 @@ we limit the number of accounts each phone number can create.
 > 原来微信是有提醒功能的，不过非常之简陋。。。也有小程序可以提醒，比如下面这个小叮提醒（其实就是自己在百度百科顺便打个广告- -）：
 >> 微信怎样设置日程提醒 https://jingyan.baidu.com/article/046a7b3e60e6e6f9c37fa965.html
 
+# 荣耀
+
+- 华为荣耀6怎么插入和取出SIM卡？ http://www.kgfanr.com/articles/3146.html
+- 华为荣耀6怎么插入SIM卡和TF卡？ http://www.kgfanr.com/articles/6066.html
+
 # xiaomi
 
 鉴定小米手机真伪的方法 https://jingyan.baidu.com/article/d169e186af7433436611d882.html
