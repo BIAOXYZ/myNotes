@@ -74,6 +74,9 @@ Topic: kubernetes https://github.com/topics/kubernetes
 
 # kubernetes books
 
+Kubernetes Security: Operating Kubernetes Clusters and Applications Safely https://info.aquasec.com/kubernetes-security
+> https://kubernetes-security.info/
+
 Kubernetes中文指南/云原生应用架构实践手册 https://github.com/rootsongjc/kubernetes-handbook
 > https://jimmysong.io/kubernetes-handbook/
 
