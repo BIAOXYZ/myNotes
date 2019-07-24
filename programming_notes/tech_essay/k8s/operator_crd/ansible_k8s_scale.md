@@ -288,7 +288,6 @@ Successfully installed setuptools-41.0.1
 
 ```
 // 终于可以用pip装openshift库了，但是最后那个ipaddress错不敢乱搞了。卡了一会，想到可以从源码安装。
-
 root@openshiftsingle 1-dynamic-param $ pip install openshift
 DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
 Collecting openshift
@@ -354,14 +353,13 @@ ERROR: Cannot uninstall 'ipaddress'. It is a distutils installed project and thu
 
 ```
 // 源码安装openshift库，按官网（https://github.com/openshift/openshift-restclient-python）语句就行。
-
 git clone https://github.com/openshift/openshift-restclient-python.git
 cd openshift-restclient-python
 python setup.py install
 ```
 
 ```
-// 报了个错：pyasn1版本太低。
+// 报了个错：提示pyasn1版本太低。
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
 ...
@@ -389,11 +387,11 @@ Using /usr/lib/python2.7/site-packages
 Finished processing dependencies for openshift==0.10.0.dev1
 ```
 
-## 2.6
+## 2.6 出现错误：`NameError: global name 'watch' is not defined`
 
 ```
-//
-
+// 先试试再次执行scale up的语句，结果果然报错。看起来我的预感是对的。因为这个报错看起来没啥明显的线索指向别的地方。
+// 所以除了想到是因为openshift python库版本不兼容外，实在想不到别的原因。
 root@openshiftsingle 1-dynamic-param $ ansible-playbook k8s-scale-obj.yaml --extra-vars "apiversion=extensions/v1beta1 kind=deployment namespace=default name=nginx replicas=3" -vvv
 ansible-playbook 2.7.10
   config file = /etc/ansible/ansible.cfg
@@ -465,9 +463,10 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=1
 
 ```
 
-```
-//
+## 2.7 开始切换源码分支，试试别的版本的库
 
+```
+// 先是0.9版本走起；结果发现不行，还是报一样的错：NameError: global name 'watch' is not defined。错误过程不赘述了。
 root@openshiftsingle openshift-restclient-python $ git checkout -b release-0.9 origin/release-0.9
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
@@ -477,7 +476,8 @@ Using /usr/lib/python2.7/site-packages
 Finished processing dependencies for openshift==0.9.0
 
 
-//
+// 然后切换到0.8版本，
+// 不过切换完再次安装时又碰到个错误，真是好事多磨。
 root@openshiftsingle openshift-restclient-python $ git checkout -b release-0.8 origin/release-0.8
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
