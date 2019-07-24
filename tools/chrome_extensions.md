@@ -45,6 +45,8 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 - > 同时打开了多个浏览器时，你可能会想在它们之间切换。Windows 通用的切换方式同样适合这里。比如 【Ctrl+Tab】，就是在同一个窗口内的多个标签页之间切换；【Alt+Tab】就是在多个窗口之间切换。
 - > 不过还有稍微好用一些的，比如一个窗口中打开了多个标签页，你可以使用【Ctrl】组合数字键来切换这些标签页。比如摁下【Ctrl+1】切换到第一个窗口，【Ctrl+2】切换到第二个窗口，以此类推。需要注意的是，【Ctrl+9】不是直接跳转到第 9 个标签页，而是最后一个标签页。
 
+Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/cbcede0761144902f40b4d18.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 【[`*`][:star:]】 Already used Chrome extensions (may be suitable for Firefox as well)
@@ -63,6 +65,8 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 >> :warning:（重要）初次使用注意事项！！！ https://github.com/crimx/ext-saladict/wiki/Instructions
 
 - Webtime Tracker https://chrome.google.com/webstore/detail/webtime-tracker/ppaojnbmmaigjmlpjaldnkgnklhicppk 【对时间统计兴趣一般，其实主要是发现完全可以把它的时间统计结果里的网站链接当个简易的常用链接书签】
+
+- Checker Plus for Gmail™ https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj 【除了邮件提醒外可以直接标记已读，这点很方便。】
 
 ### 油猴专区
 
