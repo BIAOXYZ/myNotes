@@ -207,11 +207,11 @@ yum -y install epel-release
 yum --enablerepo=epel install python-pip -y
 ```
 
-## 2.3
+## 2.3 升级pip版本并解决一个报错
 
 ```
 // 装上pip后先是版本过低————我现在越来越相信CentOS不如Ubuntu了 --> pip大版本都到19了，结果CentOS里
-// 自带的才8（还是epel带的，CentOS基本库没有！）
+// 自带的版本才到8（还是epel带的，CentOS基本库没有！）。我知道你追求稳定，稳定也不是不动啊。。。
 root@openshiftsingle 1-dynamic-param $ pip install openshift
 Collecting openshift
   Downloading https://files.pythonhosted.org/packages/f7/a2/0779391c48ad70ffe3af51a03f7094d53ad5b4016a4fe87acf047ac32526/openshift-0.9.0.tar.gz
@@ -227,7 +227,7 @@ Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-s5
 You are using pip version 8.1.2, however version 19.1.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 
-// 升级pip到19.1.1新版，很顺利。
+// 升级pip到19.1.1新版，这步倒是很顺利。
 root@openshiftsingle 1-dynamic-param $ pip install --upgrade pip
 Collecting pip
   Downloading https://files.pythonhosted.org/packages/5c/e0/be401c003291b56efc55aeba6a80ab790d3d4cece2778288d65323009420/pip-19.1.1-py2.py3-none-any.whl (1.4MB)
@@ -268,8 +268,9 @@ Collecting openshift==0.6.3
     ----------------------------------------
 ERROR: Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-install-l5uAar/openshift/
 
-// google下，在下面帖子里找到了答案。
-// python – find_package()错误,通过pip安装包 https://codeday.me/bug/20190222/699735.html
+
+// google下，在下面帖子里找到了答案：就是执行一个命令就好。但是也懒得深究为什么了。
+// 【 python – find_package()错误,通过pip安装包 https://codeday.me/bug/20190222/699735.html 】
 // > 最佳答案：pip install -U setuptools
 root@openshiftsingle 1-dynamic-param $ pip install -U setuptools
 DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
@@ -282,6 +283,8 @@ Installing collected packages: setuptools
       Successfully uninstalled setuptools-0.9.8
 Successfully installed setuptools-41.0.1
 ```
+
+## 2.4 使用pip安装openshift python库，但是出错了，并且看起来不好解决。
 
 ```
 // 终于可以用pip装openshift库了，但是最后那个ipaddress错不敢乱搞了。卡了一会，想到可以从源码安装。
@@ -347,8 +350,10 @@ Installing collected packages: dictdiffer, ipaddress, certifi, pyyaml, oauthlib,
 ERROR: Cannot uninstall 'ipaddress'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
 ```
 
+## 2.5 换个思路，从源码安装openshift python lib
+
 ```
-// 源码安装openshift库，按官网（https://github.com/openshift/openshift-restclient-python）语句就行
+// 源码安装openshift库，按官网（https://github.com/openshift/openshift-restclient-python）语句就行。
 
 git clone https://github.com/openshift/openshift-restclient-python.git
 cd openshift-restclient-python
@@ -356,7 +361,7 @@ python setup.py install
 ```
 
 ```
-//
+// 报了个错：pyasn1版本太低。
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
 ...
@@ -364,7 +369,7 @@ root@openshiftsingle openshift-restclient-python $ python setup.py install
 Installed /usr/lib/python2.7/site-packages/cachetools-3.1.1-py2.7.egg
 error: pyasn1 0.1.9 is installed but pyasn1<0.5.0,>=0.4.1 is required by set(['pyasn1-modules'])
 
-//
+// 用pip升级pyasn1版本，非常顺利。
 root@openshiftsingle openshift-restclient-python $ pip install --upgrade pyasn1
 DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
 Collecting pyasn1
@@ -375,6 +380,7 @@ Installing collected packages: pyasn1
       Successfully uninstalled pyasn1-0.1.9
 Successfully installed pyasn1-0.4.5
 
+// 再次安装成功，但是由于开始没有在意，结果基于最新的源码进行安装，装的是0.10.0版本并且还是dev的。。。当时就感觉可能还会出问题。
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
 ...
@@ -382,6 +388,8 @@ root@openshiftsingle openshift-restclient-python $ python setup.py install
 Using /usr/lib/python2.7/site-packages
 Finished processing dependencies for openshift==0.10.0.dev1
 ```
+
+## 2.6
 
 ```
 //
