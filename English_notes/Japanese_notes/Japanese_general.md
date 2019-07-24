@@ -13,3 +13,4 @@
 
 零基础入门日语五十音图 - 颜羽飞的文章 - 知乎 https://zhuanlan.zhihu.com/p/34121766
 
+如何快速有效地学习日语五十音？ - 战导的回答 - 知乎 https://www.zhihu.com/question/20318161/answer/53704368
