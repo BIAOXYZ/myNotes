@@ -476,8 +476,8 @@ Using /usr/lib/python2.7/site-packages
 Finished processing dependencies for openshift==0.9.0
 
 
-// 然后切换到0.8版本，
-// 不过切换完再次安装时又碰到个错误，真是好事多磨。
+// 然后切换到0.8版本，这次有信心会成功，因为看了下katacoda上能成功的环境，里面的openshift python库就是0.8.9版本。
+// 不过切换完再次安装时又碰到个错误，提示urllib3版本不够，真是好事多磨。
 root@openshiftsingle openshift-restclient-python $ git checkout -b release-0.8 origin/release-0.8
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
@@ -486,7 +486,7 @@ root@openshiftsingle openshift-restclient-python $ python setup.py install
 Installed /usr/lib/python2.7/site-packages/kubernetes-8.0.1-py2.7.egg
 error: urllib3 1.10.2 is installed but urllib3>=1.23 is required by set(['kubernetes'])
 
-//
+// 开始看urllib3前面不带py前缀，以为这个应该归yum管。结果发现还是归pip管。
 root@openshiftsingle openshift-restclient-python $ yum update -y urllib3
 Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
@@ -497,6 +497,7 @@ No Match for argument: urllib3
 No package urllib3 available.
 No packages marked for update
 
+// 神了，明明报了5个ERROR，结果最后还是提示安装成功。。。
 root@openshiftsingle openshift-restclient-python $ pip install --upgrade urllib3
 DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
 Collecting urllib3
@@ -511,14 +512,17 @@ Installing collected packages: urllib3
     Uninstalling urllib3-1.10.2:
       Successfully uninstalled urllib3-1.10.2
 Successfully installed urllib3-1.25.3
+
+// 不管了，再次安装，这次0.8.x版本安装成功！
 root@openshiftsingle openshift-restclient-python $ python setup.py install
 ...
 ...
 ...
 Using /usr/lib/python2.7/site-packages
 Finished processing dependencies for openshift==0.8.9
-
 ```
+
+## 2.8 终于扩容deployment成功
 
 ```
 root@openshiftsingle 1-dynamic-param $ ansible-playbook k8s-scale-obj.yaml --extra-vars "apiversion=extensions/v1beta1 kind=deployment namespace=default name=nginx replicas=3" -vvv
@@ -679,8 +683,9 @@ localhost                  : ok=2    changed=0    unreachable=0    failed=0
 
 ```
 
+## 2.9 这是local环境和katacoda在线环境能成功扩容时的ansible和openshift python库的版本。
 
-```
+```sh
 root@openshiftsingle 1-dynamic-param $ pip list | grep openshift
 DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
 openshift                        0.8.9    
@@ -708,4 +713,122 @@ ansible 2.7.1
   ansible python module location = /usr/lib/python2.7/site-packages/ansible
   executable location = /usr/bin/ansible
   python version = 2.7.5 (default, Apr  9 2019, 14:30:50) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+```
+
+# 3. 远程扩容：在一台机器上执行ansible-playbook，扩容另一台机器上的集群里的deployment
+
+```
+// before execution
+root@openshiftsingle 1-dynamic-param $ oc get deploy
+NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+nginx     3         3         3            3           12h
+root@openshiftsingle 1-dynamic-param $ oc project
+Using project "demoworkload" on server "https://openshiftsingle.sl.cloud9.ibm.com:8443".
+
+
+// after execution
+root@openshiftsingle 1-dynamic-param $ oc get deploy
+NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+nginx     4         4         4            4           12h
+root@openshiftsingle 1-dynamic-param $ oc get pod
+NAME                     READY     STATUS    RESTARTS   AGE
+nginx-5d44458958-dznpn   1/1       Running   0          41s
+nginx-5d44458958-f8gn5   1/1       Running   0          8h
+nginx-5d44458958-k5wpq   1/1       Running   0          12h
+nginx-5d44458958-r8srx   1/1       Running   0          12h
+
+
+// after 2nd execution (in the next day)
+root@openshiftsingle ~ $ oc get deploy
+NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+nginx     5         5         5            5           1d
+root@openshiftsingle ~ $ oc get pod
+NAME                     READY     STATUS    RESTARTS   AGE
+nginx-5d44458958-dznpn   1/1       Running   0          1d
+nginx-5d44458958-f8gn5   1/1       Running   0          1d
+nginx-5d44458958-g6vrm   1/1       Running   0          37s
+nginx-5d44458958-k5wpq   1/1       Running   0          1d
+nginx-5d44458958-r8srx   1/1       Running   0          1d
+```
+
+```
+// 注意，目前openshiftsingle上面有openshift python库，但是myopenshift上没有。所以关键是要在被控机器上安这个库？
+
+root@myopenshift test $ cat ansiblehost
+[ocsingle]
+
+9.186.102.139
+root@myopenshift test $ cat k8s-scale-obj2.yaml
+- hosts: ocsingle
+  tasks:
+  - name: Scale a k8s object and extend timeout
+    k8s_scale:
+      api_version: "{{ apiversion }}"
+      kind: "{{ kind }}"
+      name: "{{ name }}"
+      namespace: "{{ namespace }}"
+      replicas: "{{ replicas }}"
+      wait_timeout: 60
+// 甚至hosts也可以指定为动态参数。
+// Ansible中文权威指南 - Variables https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_variables.html
+root@myopenshift test $ cat k8s-scale-obj3.yaml
+- hosts: "{{ hostvar }}"
+  tasks:
+  - name: Scale a k8s object and extend timeout
+    k8s_scale:
+      api_version: "{{ apiversion }}"
+      kind: "{{ kind }}"
+      name: "{{ name }}"
+      namespace: "{{ namespace }}"
+      replicas: "{{ replicas }}"
+      wait_timeout: 60
+
+
+// 第一次在myopenshift上执行该命令，完成后会发现openshiftsingle上的nginx deployment从3扩到4。
+root@myopenshift test $ ansible-playbook k8s-scale-obj2.yaml -i ansiblehost --extra-vars "apiversion=extensions/v1beta1 kind=deployment namespace=demoworkload name=nginx replicas=4" -v
+Using /etc/ansible/ansible.cfg as config file
+ [WARNING]: Found variable using reserved name: name
+
+
+PLAY [ocsingle] ******************************************************************************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************************************************************************
+ok: [9.186.102.139]
+
+TASK [Scale a k8s object and extend timeout] *************************************************************************************************************
+changed: [9.186.102.139] => {"changed": true, "result": {"apiVersion": "extensions/v1beta1", "kind": "Deployment", "metadata": {"annotations": {"deployment.kubernetes.io/revision": "1"}, "creationTimestamp": "2019-07-21T13:58:23Z", "generation": 3, "labels": {"app": "nginx"}, "name": "nginx", "namespace": "demoworkload", "resourceVersion": "4353271", "selfLink": "/apis/extensions/v1beta1/namespaces/demoworkload/deployments/nginx", "uid": "9a91967f-abbf-11e9-b28c-062a74cc4d27"}, "spec": {"progressDeadlineSeconds": 600, "replicas": 4, "revisionHistoryLimit": 10, "selector": {"matchLabels": {"app": "nginx"}}, "strategy": {"rollingUpdate": {"maxSurge": "25%", "maxUnavailable": "25%"}, "type": "RollingUpdate"}, "template": {"metadata": {"creationTimestamp": null, "labels": {"app": "nginx"}, "name": "nginx"}, "spec": {"containers": [{"image": "nginx", "imagePullPolicy": "IfNotPresent", "name": "nginx", "resources": {}, "terminationMessagePath": "/dev/termination-log", "terminationMessagePolicy": "File"}], "dnsPolicy": "ClusterFirst", "restartPolicy": "Always", "schedulerName": "default-scheduler", "securityContext": {}, "terminationGracePeriodSeconds": 30}}}, "status": {"availableReplicas": 4, "conditions": [{"lastTransitionTime": "2019-07-21T13:58:23Z", "lastUpdateTime": "2019-07-21T13:58:26Z", "message": "ReplicaSet \"nginx-5d44458958\" has successfully progressed.", "reason": "NewReplicaSetAvailable", "status": "True", "type": "Progressing"}, {"lastTransitionTime": "2019-07-21T17:56:15Z", "lastUpdateTime": "2019-07-21T17:56:15Z", "message": "Deployment has minimum availability.", "reason": "MinimumReplicasAvailable", "status": "True", "type": "Available"}], "observedGeneration": 3, "readyReplicas": 4, "replicas": 4, "updatedReplicas": 4}}}
+
+PLAY RECAP ***********************************************************************************************************************************************
+9.186.102.139              : ok=2    changed=1    unreachable=0    failed=0
+
+
+// 使用动态hosts
+root@myopenshift test $ ansible-playbook k8s-scale-obj3.yaml -i ansiblehost --extra-vars "hostvar=ocsingle apiversion=extensions/v1beta1 kind=deployment namespace=demoworkload name=nginx replicas=5"
+ [WARNING]: Found variable using reserved name: name
+
+
+PLAY [ocsingle] ***************************************************************************************************************
+
+TASK [Gathering Facts] ********************************************************************************************************
+ok: [9.186.102.139]
+
+TASK [Scale a k8s object and extend timeout] **********************************************************************************
+changed: [9.186.102.139]
+
+PLAY RECAP ********************************************************************************************************************
+9.186.102.139              : ok=2    changed=1    unreachable=0    failed=0
+
+root@myopenshift test $
+root@myopenshift test $ cat k8s-scale-obj3.yaml
+- hosts: "{{ hostvar }}"
+  tasks:
+  - name: Scale a k8s object and extend timeout
+    k8s_scale:
+      api_version: "{{ apiversion }}"
+      kind: "{{ kind }}"
+      name: "{{ name }}"
+      namespace: "{{ namespace }}"
+      replicas: "{{ replicas }}"
+      wait_timeout: 60
+
 ```
