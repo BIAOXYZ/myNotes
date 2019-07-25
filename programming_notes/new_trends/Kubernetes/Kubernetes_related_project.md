@@ -64,7 +64,7 @@ Accessing External Services https://stackoverflow.com/questions/36000717/accessi
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## 可能有用的项目
+## 可能有用的operator相关项目
 
 **`For CRD of VMs in k8s`**:
 - Vm in kubernetes https://stackoverflow.com/questions/33953592/vm-in-kubernetes
@@ -173,6 +173,12 @@ A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektonc
 
 云原生应用开发新体验：Kui https://moelove.info/2019/05/24/%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%96%B0%E4%BD%93%E9%AA%8CKui/
 > IBM Kui: A hybrid command-line/UI development experience for cloud-native development https://github.com/IBM/kui
+
+## k8s可视化类项目
+
+K8Studio - A CROSS-PLATFORM IDE TO MANAGE KUBERNETES CLUSTERS https://uxxu.io/
+
+konstellate - Free and Open Source GUI to Visualize Kubernetes Applications. https://github.com/containership/konstellate
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
