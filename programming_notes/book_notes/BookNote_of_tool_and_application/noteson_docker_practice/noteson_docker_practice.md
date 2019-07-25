@@ -64,7 +64,7 @@
 > 仓库名经常以 两段式路径 形式出现，比如 `jwilder/nginx-proxy`，前者往往意味着 Docker Registry 多用户环境下的用户名，后者则往往是对应的软件名。但这并非绝对，取决于所使用的具体 Docker Registry 的软件或服务。
 
 补充：前面再加上公开或私有的Registry的地址，后面再加上`:tag`，就是一个完整的确定的镜像了。比如：
-- dockerhub上biaoxyz用户的名为myapp的v2版本的镜像：`docker.io/biaoxyz/myapp:v2`
+- dockerhub上biaoxyz用户的名为myapp的v2版本的镜像：`docker.io/biaoxyz/myapp:v2` --> 等价于`biaoxyz/myapp:v2`，因为如果registry是dockerhub的话可以省略。实际上，本地build的镜像往dockerhub推的时候，tag用后一种形式还更好。
 - quay.io上......的镜像：`quay.io/biaoxyz/myapp:v2`
 - 本地registry上......的镜像（使用docker官方的docker registry镜像搭建）：`127.0.0.1:5000/biaoxyz/myapp:v2`
 
@@ -103,7 +103,102 @@
 
 ## `##` [列出镜像](https://yeasy.gitbooks.io/docker_practice/content/image/list.html)
 
+> 要想列出已经下载下来的镜像，可以使用 `docker image ls` 命令。
+>> 注：应该是等于`docker images`，反正常用的是这个，而不是上面那个。
 
+### 镜像体积
+```
+这是因为 Docker Hub 中显示的体积是压缩后的体积。在镜像下载和上传过程中镜像是保持着压缩状态的，
+因此 Docker Hub 所显示的大小是网络传输中更关心的流量大小。而 docker image ls 显示的是镜像
+下载到本地后，展开的大小，准确说，是展开后的各层所占空间的总和，因为镜像到本地后，查看空间的时候，
+更关心的是本地磁盘空间占用的大小。
+
+另外一个需要注意的问题是，docker image ls 列表中的镜像体积总和并非是所有镜像实际硬盘消耗。
+由于 Docker 镜像是多层存储结构，并且可以继承、复用，因此不同镜像可能会因为使用相同的基础镜像，
+从而拥有共同的层。
+
+你可以通过以下命令来便捷的查看镜像、容器、数据卷所占用的空间。
+$ docker system df
+```
+
+### 虚悬镜像
+```
+这类无标签镜像也被称为 虚悬镜像(dangling image) ，可以用下面的命令专门显示这类镜像：
+$ docker image ls -f dangling=true
+
+一般来说，虚悬镜像已经失去了存在的价值，是可以随意删除的，可以用下面的命令删除。
+$ docker image prune
+```
+
+### 中间层镜像
+```
+为了加速镜像构建、重复利用资源，Docker 会利用 中间层镜像。所以在使用一段时间后，可能会看到一些
+依赖的中间层镜像。默认的 docker image ls 列表中只会显示顶层镜像，如果希望显示包括中间层镜像
+在内的所有镜像的话，需要加 -a 参数。
+
+$ docker image ls -a
+
+这样会看到很多无标签的镜像，与之前的虚悬镜像不同，这些无标签的镜像很多都是中间层镜像，是其它镜像
+所依赖的镜像。这些无标签镜像不应该删除，否则会导致上层镜像因为依赖丢失而出错。
+```
+
+### 列出部分镜像
+```
+根据仓库名列出镜像
+$ docker image ls ubuntu
+
+列出特定的某个镜像，也就是说指定仓库名和标签
+$ docker image ls ubuntu:18.04
+
+除此以外，docker image ls 还支持强大的过滤器参数 --filter，或者简写 -f。之前我们已经看到了使用过滤器
+来列出虚悬镜像的用法，它还有更多的用法。比如，我们希望看到在 mongo:3.2 之后建立的镜像，可以用下面的命令：
+$ docker image ls -f since=mongo:3.2
+想查看某个位置之前的镜像也可以，只需要把 since 换成 before 即可。
+
+此外，如果镜像构建时，定义了 LABEL，还可以通过 LABEL 来过滤。
+$ docker image ls -f label=com.example.version=0.1
+```
+
+### 以特定格式显示
+```
+默认情况下，docker image ls 会输出一个完整的表格，但是我们并非所有时候都会需要这些内容。比如，刚才删除
+虚悬镜像的时候，我们需要利用 docker image ls 把所有的虚悬镜像的 ID 列出来，然后才可以交给 docker image rm 
+命令作为参数来删除指定的这些镜像，这个时候就用到了 -q 参数。
+$ docker image ls -q
+5f515359c7f8
+05a60462f8ba
+fe9198c04d62
+00285df0df87
+f753707788c5
+f753707788c5
+1e0c3dd64ccd
+--filter 配合 -q 产生出指定范围的 ID 列表，然后送给另一个 docker 命令作为参数，从而针对这组实体成批的
+进行某种操作的做法在 Docker 命令行使用过程中非常常见，不仅仅是镜像，将来我们会在各个命令中看到这类搭配以
+完成很强大的功能。因此每次在文档看到过滤器后，可以多注意一下它们的用法。
+
+另外一些时候，我们可能只是对表格的结构不满意，希望自己组织列；或者不希望有标题，这样方便其它程序解析结果等，
+这就用到了 Go 的模板语法。
+
+比如，下面的命令会直接列出镜像结果，并且只包含镜像ID和仓库名：
+$ docker image ls --format "{{.ID}}: {{.Repository}}"
+5f515359c7f8: redis
+05a60462f8ba: nginx
+fe9198c04d62: mongo
+00285df0df87: <none>
+f753707788c5: ubuntu
+f753707788c5: ubuntu
+1e0c3dd64ccd: ubuntu
+
+或者打算以表格等距显示，并且有标题行，和默认一样，不过自己定义列：
+$ docker image ls --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}"
+IMAGE ID            REPOSITORY          TAG
+5f515359c7f8        redis               latest
+05a60462f8ba        nginx               latest
+fe9198c04d62        mongo               3.2
+00285df0df87        <none>              <none>
+f753707788c5        ubuntu              18.04
+f753707788c5        ubuntu              latest
+```
 
 ## `##` Dockerfile 指令详解
 
