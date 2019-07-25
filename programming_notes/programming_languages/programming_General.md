@@ -46,6 +46,8 @@ Learn X in Y minutes https://learnxinyminutes.com/
 在不到30s内得到一个干净的开箱即用的临时linux系统. https://github.com/super-inspire/super-inspire-end
 > Super Inspire http://60.190.81.133:8888/
 
+Awesome Online IDE: 🌩️ A list of awesome online development environments https://github.com/styfle/awesome-online-ide
+
 ## 未用过或不常用Online IDE/Platform
 
 Codiad http://codiad.com/
