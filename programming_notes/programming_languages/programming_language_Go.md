@@ -118,7 +118,6 @@ Tony Bai 一个程序员的心路历程 https://tonybai.com/
   * > "每个包都可以有任意多个init函数，这些init函数都会在main函数之前执行。init函数通常用来做初始化变量、设置包或者其他需要在程序执行前的引导工作。比如上面我们讲的需要使用_空标志符来导入一个包的目的，就是想执行这个包里的init函数。"
 - Go语言实战笔记（二）| Go开发工具 https://www.flysnow.org/2017/03/08/go-in-action-go-tools.html
 
-
 # Go语法细节
 
 Go语法速览与实践清单(V0.5) - 王下邀月熊的文章 - 知乎 https://zhuanlan.zhihu.com/p/35085639
@@ -133,7 +132,7 @@ https://studygolang.com/articles/2233
 为什么 Go 语言把类型放在后面？ - 林建入的回答 - 知乎
 https://www.zhihu.com/question/21656696/answer/19027040
 
-#### goroutine
+### goroutine
 
 理解 goroutine 的并发 - CSDN博客
 https://blog.csdn.net/pmlpml/article/details/78850661
@@ -141,7 +140,7 @@ https://blog.csdn.net/pmlpml/article/details/78850661
 golang技术随笔（二）理解goroutine - CSDN博客
 https://blog.csdn.net/justaipanda/article/details/44064811
 
-#### defer, panic, recover
+### defer, panic, recover
 
 Defer, Panic, and Recover
 https://blog.go-zh.org/defer-panic-and-recover
@@ -152,7 +151,7 @@ https://blog.csdn.net/hellolingyun/article/details/52433167
 Go的异常处理 defer, panic, recover
 http://www.cnblogs.com/ghj1976/archive/2013/02/11/2910114.html
 
-#### slice
+### slice
 
 Go指南 -- 向切片追加元素 https://tour.go-zh.org/moretypes/15
 > Go 切片：用法和本质 https://blog.go-zh.org/go-slices-usage-and-internals
@@ -163,7 +162,7 @@ http://www.jb51.net/article/57121.htm
 Go语言中的Array、Slice、Map和Set使用详解
 http://www.jb51.net/article/56828.htm
 
-#### go语言闭包
+### go语言闭包
 
 理解Go语言中的函数闭包 - CSDN博客
 https://blog.csdn.net/u012296101/article/details/48525605
@@ -174,10 +173,16 @@ https://www.w3cschool.cn/go_internals/go_internals-d67w282q.html
 深入理解Go语言中的闭包
 http://www.jb51.net/article/108972.htm
 
-#### go语言interface
+### go语言interface
 
 【GoLang笔记】浅析Go语言Interface类型的语法行为及用法 
 https://studygolang.com/articles/2652
+
+### go template
+
+Introduction to Hugo Templating https://gohugo.io/templates/introduction/
+> The following is only a primer on Go Templates. For an in-depth look into Go Templates, check the official Go docs.
+>> Package template https://golang.org/pkg/text/template/
 
 --------------------------------------------------
 
