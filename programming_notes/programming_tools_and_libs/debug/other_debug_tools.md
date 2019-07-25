@@ -22,3 +22,14 @@ k8s官方推荐了`telepresence`:
 Squash https://squash.solo.io/
 
 Squash: The debugger for microservices https://github.com/solo-io/squash
+
+# not matured 
+
+## kubectl-debug
+
+简化 Pod 故障诊断: kubectl-debug 介绍 https://aleiwu.com/post/kubectl-debug-intro/
+- nsenter https://github.com/jpetazzo/nsenter
+
+## docker-debug
+
+docker 容器调试新姿势 https://blog.zeromake.com/pages/docker-debug
