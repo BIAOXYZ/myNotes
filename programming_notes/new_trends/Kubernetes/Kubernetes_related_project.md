@@ -124,6 +124,8 @@ kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https
 
 # kubernetes插件
 
+Kubernetes 1.12 新的插件机制 https://mritd.me/2018/11/30/kubectl-plugin-new-solution-on-kubernetes-1.12/
+
 Automatically provision and manage TLS certificates in Kubernetes https://jetstack.io || https://github.com/jetstack/cert-manager
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
