@@ -518,6 +518,10 @@ kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source
 - k8s-1.13版本源码分析 https://www.bookstack.cn/books/k8s-source-code-analysis
 - 胡伟煌 Kubernetes 学习笔记 - 源码分析 https://www.bookstack.cn/read/huweihuang-kubernetes-notes/code-analysis.md
 
+【by u010278923】：
+- kubernetes容器启动详解 https://blog.csdn.net/u010278923/article/details/72993499
+- kubelet启动pod的源码分析 https://blog.csdn.net/u010278923/article/details/78829649
+
 ## kubeadm相关源码/流程
 
 kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
