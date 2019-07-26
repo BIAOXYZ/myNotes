@@ -59,6 +59,13 @@ Tutorial: Load streaming data from Kafka http://druid.io/docs/latest/tutorials/t
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# 
+# 与可视化前端匹配
 
+- 数据可视化的开源方案: Superset vs Redash vs Metabase (一) https://www.cnblogs.com/felixzh/p/9094694.html
+- 数据可视化的开源方案: Superset vs Redash vs Metabase (二) https://www.cnblogs.com/felixzh/p/9094700.html
+
+##
+
+Custom install https://metabase.com/start/jar.html  --> This will launch a Metabase server on port 3000 by default.
+> cd ~ && mkdir metabasedir && cd ~/metabasedir/ && wget http://downloads.metabase.com/v0.32.5/metabase.jar && java -jar metabase.jar >> /dev/null &
 
