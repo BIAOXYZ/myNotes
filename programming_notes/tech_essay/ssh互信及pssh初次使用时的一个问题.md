@@ -185,6 +185,92 @@ druidcluster4,9.116.2.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAA
 9.116.2.70      druidcluster2.sl.cloud9.ibm.com
 ```
 
+## 4.4 pssh安装。。。
+
+- ~~首先，不要和另外一个同名的python ssh库项目（[parallel-ssh - Asynchronous parallel SSH client library.](https://github.com/ParallelSSH/parallel-ssh)）混淆了 --> 虽说这个项目看起来也基本凉了，但总比pssh最新版本是12年发布的要好些。。。 --> 此外，这个网站（ https://parallel-ssh.org/ ）也是那个python ssh库的~~。
+- pssh之前的地址（ http://parallel-ssh.googlecode.com/ ）已经失效了，新地址在这里：
+  * parallel-ssh https://code.google.com/archive/p/parallel-ssh/downloads
+
+```
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/parallel-ssh/pssh-2.3.1.tar.gz
+tar xvf pssh-2.3.1.tar.gz
+cd pssh-2.3.1/
+
+[root@druidcluster1 pssh-2.3.1]# python setup.py install
+running install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/psshlib
+copying psshlib/cli.py -> build/lib/psshlib
+copying psshlib/__init__.py -> build/lib/psshlib
+copying psshlib/askpass_server.py -> build/lib/psshlib
+copying psshlib/askpass_client.py -> build/lib/psshlib
+copying psshlib/color.py -> build/lib/psshlib
+copying psshlib/task.py -> build/lib/psshlib
+copying psshlib/version.py -> build/lib/psshlib
+copying psshlib/manager.py -> build/lib/psshlib
+copying psshlib/psshutil.py -> build/lib/psshlib
+running build_scripts
+creating build/scripts-2.7
+copying and adjusting bin/pssh -> build/scripts-2.7
+copying and adjusting bin/pnuke -> build/scripts-2.7
+copying and adjusting bin/prsync -> build/scripts-2.7
+copying and adjusting bin/pslurp -> build/scripts-2.7
+copying and adjusting bin/pscp -> build/scripts-2.7
+copying and adjusting bin/pssh-askpass -> build/scripts-2.7
+changing mode of build/scripts-2.7/pssh from 644 to 755
+changing mode of build/scripts-2.7/pnuke from 644 to 755
+changing mode of build/scripts-2.7/prsync from 644 to 755
+changing mode of build/scripts-2.7/pslurp from 644 to 755
+changing mode of build/scripts-2.7/pscp from 644 to 755
+changing mode of build/scripts-2.7/pssh-askpass from 644 to 755
+running install_lib
+creating /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/cli.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/__init__.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/askpass_server.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/askpass_client.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/color.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/task.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/version.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/manager.py -> /usr/lib/python2.7/site-packages/psshlib
+copying build/lib/psshlib/psshutil.py -> /usr/lib/python2.7/site-packages/psshlib
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/cli.py to cli.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/__init__.py to __init__.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/askpass_server.py to askpass_server.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/askpass_client.py to askpass_client.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/color.py to color.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/task.py to task.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/version.py to version.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/manager.py to manager.pyc
+byte-compiling /usr/lib/python2.7/site-packages/psshlib/psshutil.py to psshutil.pyc
+running install_scripts
+copying build/scripts-2.7/pslurp -> /usr/bin
+copying build/scripts-2.7/pscp -> /usr/bin
+copying build/scripts-2.7/pssh-askpass -> /usr/bin
+copying build/scripts-2.7/pnuke -> /usr/bin
+copying build/scripts-2.7/prsync -> /usr/bin
+copying build/scripts-2.7/pssh -> /usr/bin
+changing mode of /usr/bin/pslurp to 755
+changing mode of /usr/bin/pscp to 755
+changing mode of /usr/bin/pssh-askpass to 755
+changing mode of /usr/bin/pnuke to 755
+changing mode of /usr/bin/prsync to 755
+changing mode of /usr/bin/pssh to 755
+running install_data
+creating /usr/man
+creating /usr/man/man1
+copying man/man1/pssh.1 -> /usr/man/man1
+copying man/man1/pscp.1 -> /usr/man/man1
+copying man/man1/prsync.1 -> /usr/man/man1
+copying man/man1/pslurp.1 -> /usr/man/man1
+copying man/man1/pnuke.1 -> /usr/man/man1
+running install_egg_info
+Writing /usr/lib/python2.7/site-packages/pssh-2.3.1-py2.7.egg-info
+```
+
 # 5. ssh-keyscan命令实战过程
 
 ## 5.1 如何发现这个命令
