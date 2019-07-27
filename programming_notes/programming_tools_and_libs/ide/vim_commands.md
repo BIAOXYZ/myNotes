@@ -41,7 +41,7 @@ Vim cheatsheet https://devhints.io/vim
 
 ## vim一般性命令
 
-#### vim设置和取消显示行号
+### vim设置和取消显示行号
 ```
 :set nu  
 :set nonu
@@ -53,7 +53,7 @@ set nu
 ```
 >> 该文件也可能位于`/etc/vim/vimrc`，如果没网又没vim，那么vi的配置文件和vim的就在一个位置，名字叫`virc`；如果只想改某个用户的vim配置，可以修改（如果不存在自己先建一个）该用户目录下的`.vimrc`（即`~/.vimrc`文件）。
 
-#### 其他设置类
+### 其他设置类
 
 <<vim 常用命令>>
 http://blog.chinaunix.net/uid-20769502-id-112737.html
@@ -66,10 +66,6 @@ Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
 syntax on 打开语法高亮
 
 ```
-
-我的vim配置（带注释） https://blog.csdn.net/dongtingzhizi/article/details/8472093
-
-use vim as IDE https://github.com/yangyangwithgnu/use_vim_as_ide
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -210,10 +206,20 @@ http://www.cnblogs.com/Nice-Boy/p/6124177.html
 Practical Vim https://book.douban.com/subject/10599776/
 - https://the-eye.eu/public/Books/IT%20Various/practical_vim.pdf
 
+简明 VIM 练级攻略 https://coolshell.cn/articles/5426.html
+
 ## Vim配置
 
 有哪些编程必备的 Vim 配置？ - 知乎
 https://www.zhihu.com/question/19989337
+
+### 将vim打造成IDE
+
+如何在 Linux 上使用 Vundle 管理 Vim 插件 https://linux.cn/article-9416-1.html
+
+use vim as IDE https://github.com/yangyangwithgnu/use_vim_as_ide
+
+我的vim配置（带注释） https://blog.csdn.net/dongtingzhizi/article/details/8472093
 
 ----------------------------------------------------------------------------------------------------
 # 3.vim多窗口操作:
