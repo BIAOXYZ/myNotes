@@ -166,8 +166,14 @@ Allen 谈 Docker 系列 http://guide.daocloud.io/dcs/allen-docker-9153965.html
 
 ----------------------------------------------------------------------------------------------------
 
-深入浅出Docker https://blog.csdn.net/liumiaocn/column/info/dockerheadfirst
-- 
+【From liumiaocn】 深入浅出Docker https://blog.csdn.net/liumiaocn/column/info/dockerheadfirst
+- docker基础:从chroot理解namespace的隔离 https://blog.csdn.net/liumiaocn/article/details/52388793
+- Docker基础: Linux内核命名空间之（6）user namespace https://blog.csdn.net/liumiaocn/article/details/52549978
+
+----------------------------------------------------------------------------------------------------
+
+https://segmentfault.com/u/wuyangchun/articles 【这哥们linux也写了不少东西】
+- 走进docker(05)：docker在本地如何管理image（镜像）? https://segmentfault.com/a/1190000009730986
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
