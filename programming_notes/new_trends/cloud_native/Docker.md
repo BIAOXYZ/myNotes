@@ -207,6 +207,16 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 
 # docker具体问题
 
+## docker image
+
+Docker学习：Image的本地存储结构 https://segmentfault.com/a/1190000017579626
+- > 镜像build过程可以理解为基于一个镜像启动一个容器，在容器内执行Dockerfile里的一条命令，生成一个新的镜像。根据上述的输入，test-image的构建过程可以表示为：
+- > 如前面所述，digest是有docker repository生成，因为本地构建完之后并没有推送至远程仓库，所以为None。
+- > 事实上，如果我们认为镜像是一个打包的静态OS，那么Layer可以认为是描述该OS的fs变化，即文件系统中文件或者目录发生的改变，很明显上述两行命令并不会引起fs的变化，只是会写入该镜像的config中，在生成容器时读取即可，自然也就不存在diff id。
+- > 至此，解释完了Image相关的目录，总结一下，单个Image的配置信息在content目录中，以image id为文件名存储，Image之间关联信息在metadata中，以parent文件存储。然后，我们根据image生成容器的时候，可是生成了一个文件系统，但是上述这些信息并不包含fs的数据。因为真正的fs数据是存储在Layer中的。如前面所述，Layer的信息存储在layerdb目录下，所以我们转战layerdb目录。
+- > 进一步研究才知道这里目录名其实是layer的chain id，而非diff id，关于这两这个的区别，我们可以理解为diff id用来描述单个变化，而chain id用来便于一些列的变化，diff id和chain id之间的计算公式可以在image-spec中看到。
+- > Image Size是如何计算的？
+
 ### docker镜像和容器的位置
 
 - Docker---(2)docker pull 下来的镜像存储在哪里 https://blog.csdn.net/weixin_39800144/article/details/79019503
@@ -217,7 +227,7 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 - 两个修改Docker本地镜像与容器的存储位置的方法 https://www.jianshu.com/p/e98ef6d6cfb4
 - 自定义CentOS 中Docker的默认镜像和容器位置 https://www.linuxprobe.com/docker-mirror-position.html
 
-### Docker Volume
+## Docker Volume
 
 深入理解Docker Volume(一) https://blog.csdn.net/shanyongxu/article/details/51460930
 
