@@ -56,6 +56,21 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
   
 求大佬推荐好看的新老番！ https://www.v2ex.com/t/582232
 
+上班摸鱼、路上打发时间，进来看看吧 https://www.v2ex.com/t/583885
+> 前两天有 v 友开放了 API，聚合了一些网站热门
+>
+> 并且作者也做了页面
+>
+> 今日热点 -- https://www.printf520.com/hot.html
+>
+> 但是折腾就是天性
+>
+> 花了点时间，又搞了一个
+>
+> ✨互联网热榜 -- https://www.telami.cn/hot/
+>
+> 代码放在 github 上，如果有需求，可以提 issue -- https://github.com/telami/hot
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 生活信息
