@@ -18,6 +18,8 @@ Yum Package Manager http://yum.baseurl.org/
 
 Yum 学习笔记 https://segmentfault.com/a/1190000016194128
 
+20 Linux YUM (Yellowdog Updater, Modified) Commands for Package Management https://www.tecmint.com/20-linux-yum-yellowdog-updater-modified-commands-for-package-mangement/
+
 ## yum from Red Hat
 
 Yum Command Cheat Sheet for Red Hat Enterprise Linux https://access.redhat.com/articles/yum-cheat-sheet
