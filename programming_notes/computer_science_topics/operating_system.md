@@ -6,16 +6,22 @@ https://www.cnbeta.com/articles/soft/751203.htm
 
 最受欢迎的10个Linux发行版 https://www.linuxprobe.com/linux-welcome.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## OS启动
 
 计算机是如何启动的？ http://www.ruanyifeng.com/blog/2013/02/booting.html
 
 简述Linux的启动过程 https://segmentfault.com/a/1190000006872609
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # OS Kernel
 
 Linux 内核揭密 https://github.com/MintCN/linux-insides-zh
   > Linux Insides中文 https://xinqiu.gitbooks.io/linux-insides-cn/content/index.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## inode
 
@@ -46,6 +52,8 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
   * inode文件系统中安装新库十分容易。当一些进程正在使用一个库时，其它进程可以替换该库文件名字的inode号码指向新创建的inode，随后对该库的访问都被自动引导到新inode所指向的新的库文件的内容。这减少了替换库时重启系统的需要。而旧的inode的链接数已经为0，在使用旧库的进程结束后，旧的inode与旧库文件会被系统自动回收。
 
 理解inode http://www.ruanyifeng.com/blog/2011/12/inode.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## mount
 
@@ -87,6 +95,8 @@ underlying storage: the files in it give information about running processes and
 information; the information is provided directly by the kernel from its in-memory data structures.
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## kernel module
 
 Loadable kernel module https://en.wikipedia.org/wiki/Loadable_kernel_module
@@ -96,6 +106,8 @@ Kernel module (简体中文) https://wiki.archlinux.org/index.php/Kernel_module_
 Writing a Simple Linux Kernel Module https://blog.sourcerer.io/writing-a-simple-linux-kernel-module-d9dc3762c234
 
 The Linux Kernel Module Programming Guide https://linux.die.net/lkmpg/index.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## terminal、shell等相关的知识
 
@@ -114,6 +126,18 @@ Difference between Login Shell and Non-Login Shell? https://unix.stackexchange.c
 >
 > When a shell runs a script or a command passed on its command line, it's a **non-interactive, non-login** shell. Such shells run all the time: it's very common that when a program calls another program, it really runs a tiny script in a shell to invoke that other program. Some shells read a startup file in this case (bash runs the file indicated by the `BASH_ENV` variable, zsh runs `/etc/zshenv` and `~/.zshenv`), but this is risky: the shell can be invoked in all sorts of contexts, and there's hardly anything you can do that might not break something.
 
+### tty、terminal、console等的区别与联系
+
+Teleprinter https://en.wikipedia.org/wiki/Teleprinter
+
+Linux TTY/PTS概述 https://segmentfault.com/a/1190000009082089
+
+终端、虚拟终端、shell、控制台、tty的区别 https://blog.csdn.net/ltx06/article/details/52170852
+
+What is the difference between Terminal, Console, Shell, and Command Line? https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Windows系
 
 微软团队成员谈Windows Kernel的结构 - Windows - cnBeta.COM https://www.cnbeta.com/articles/tech/781961.htm
@@ -121,6 +145,8 @@ Difference between Login Shell and Non-Login Shell? https://unix.stackexchange.c
 【IT之家学院】如何在Windows 10中重置和注销Linux子系统 https://www.ithome.com/0/415/133.htm
 
 Windows 10 源码一览：0.5T 代码、400 万文件、50 万文件夹 - Windows 10 - cnBeta.COM https://www.cnbeta.com/articles/tech/837143.htm
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 各个发行版的关系
 
@@ -136,6 +162,8 @@ Linux江湖之群雄割据的发行版本 https://www.jianshu.com/p/596acf900d8a
 - > <div align="center"><img width="800" height="200" src="https://upload-images.jianshu.io/upload_images/3845101-728c5840ae4b8458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp"/></div>
 
 最全Linux的发行版简介，一文读懂各发行版之间的联系和区别 https://cloud.tencent.com/developer/article/1114589
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # RedHat系
 
@@ -213,15 +241,23 @@ centos7 最小化安装之后，默认是没有 ifconfig,netstat命令的；我�
     yum -y install net-tools
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 嵌入式设备OS
 
 BusyBox: The Swiss Army Knife of Embedded Linux https://busybox.net/about.html
 
 BusyBox 简化嵌入式 Linux 系统 https://www.ibm.com/developerworks/cn/linux/l-busybox/index.html
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 移动设备OS
 
 PrimeOS开启公测：在笔记本上运行Android应用和游戏 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/785527.htm
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他OS
 
