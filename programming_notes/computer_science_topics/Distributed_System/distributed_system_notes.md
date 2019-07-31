@@ -85,6 +85,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 分布式一致性算法：Raft 算法（论文翻译） https://www.cnblogs.com/linbingdong/p/6442673.html
 
+寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
+
 # Raft实现
 
 一个Raft开源项目的结构分析 https://mp.weixin.qq.com/s/1_KAMAx6je8fLsMG1cM-wQ
