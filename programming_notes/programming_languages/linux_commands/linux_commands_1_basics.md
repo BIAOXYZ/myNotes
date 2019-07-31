@@ -276,11 +276,8 @@ tar命令参数：
 http://blog.csdn.net/iEearth/article/details/53941920
 
 ### dirs, pushd, popd
-<<方便的目录转换－－－－－pushd、popd、dirs>>
-http://blog.csdn.net/houqizhixiu12/article/details/45119407
 
-<<linux 命令之 pushd、popd、dirs，以及栈的基础知识>>
-http://blog.csdn.net/u011641885/article/details/45576533
+参见`linux_cmd_pushd`部分。
 
 ### read
 Linux之read命令使用
