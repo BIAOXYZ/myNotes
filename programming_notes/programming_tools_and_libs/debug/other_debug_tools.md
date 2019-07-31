@@ -29,6 +29,7 @@ Squash: The debugger for microservices https://github.com/solo-io/squash
 
 简化 Pod 故障诊断: kubectl-debug 介绍 https://aleiwu.com/post/kubectl-debug-intro/
 - nsenter https://github.com/jpetazzo/nsenter
+  * > There are differences between nsenter and docker exec; namely, nsenter doesn't enter the cgroups, and therefore evades resource limitations. The potential benefit of this would be debugging and external audit, but for remote access, docker exec is the current recommended approach.
 
 ## docker-debug
 
