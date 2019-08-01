@@ -59,3 +59,7 @@ tcp        0      0 9.186.102.73:2380       0.0.0.0:*               LISTEN      
 ```
 
 grep命令:匹配多个单词 https://www.jianshu.com/p/747c97f4b4ac
+
+
+
+grep 命令系列：grep 中的正则表达式 https://linux.cn/article-6941-1.html
