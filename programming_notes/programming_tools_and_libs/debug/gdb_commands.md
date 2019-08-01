@@ -1,4 +1,10 @@
 
+## GDB官网
+
+GDB: The GNU Project Debugger https://www.gnu.org/software/gdb/
+
+GDB Documentation https://www.gnu.org/software/gdb/documentation/
+
 ## GDB一般性知识
 
 《100个gdb小技巧》 https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details
