@@ -601,3 +601,6 @@ Removing spec.replicas of the Deployment resets replicas count to single replica
 Compilation of public failure/horror stories related to Kubernetes https://k8s.af/ || https://github.com/hjacobs/kubernetes-failure-stories
 
 Kubernetes监控在小米的落地 https://juejin.im/post/5d01fe416fb9a07ec56e72a0
+
+AI独角兽商汤科技的内部服务容器化历程 https://my.oschina.net/u/3330830/blog/1803012
+
