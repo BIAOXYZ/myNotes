@@ -16,6 +16,18 @@
   >> `docker run -d -p 3000:3000 --link redis-server:redis katacoda/redis-node-docker-example`
 - > In the same way, you can connect source containers to applications, you can also connect them to their own CLI tools. The command below will launch an instance of the Redis-cli tool and connect to the redis server via its alias.
   >> `docker run -it --link redis-server:redis redis redis-cli -h redis`
+  ```
+  The command KEYS * will output the contents stored currently in the source redis container.
+  Type QUIT to exit the CLI.
+  
+  redis:6379> KEYS *
+  1) "requests"
+  2) "ip"
+  redis:6379> KEYS*
+  (error) ERR unknown command `KEYS*`, with args beginning with:
+  redis:6379> QUIT
+  $
+  ```
 
 ***Creating Networks Between Containers using Networks*** https://www.katacoda.com/courses/docker/networking-intro
 - > To start with we create the network with our predefined name. 
