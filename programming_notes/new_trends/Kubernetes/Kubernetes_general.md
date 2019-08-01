@@ -323,6 +323,8 @@ Kubernetes Nginx Ingress 教程 https://mritd.me/2017/03/04/how-to-use-nginx-ing
 
 DNS for Services and Pods https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
 
+使用CoreDNS实现Kubernetes基于DNS的服务发现 https://blog.frognew.com/2018/10/using-coredns-for-kubernetes-service-discovery.html
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes client
