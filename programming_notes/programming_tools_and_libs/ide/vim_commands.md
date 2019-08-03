@@ -221,6 +221,16 @@ use vim as IDE https://github.com/yangyangwithgnu/use_vim_as_ide
 
 我的vim配置（带注释） https://blog.csdn.net/dongtingzhizi/article/details/8472093
 
+vi/vim使用进阶: 目录 https://blog.easwy.com/archives/advanced-vim-skills-catalog/
+
+### vim插件
+
+使用 vim + ctags + cscope + taglist 阅读源码 https://my.oschina.net/u/554995/blog/59927
+
+🦄 弃用 vundle 拥抱 vim-plug https://www.v2ex.com/t/532549
+
+安装Exuberant Ctags及Tag List插件 https://blog.csdn.net/dream2009gd/article/details/44102227
+
 ----------------------------------------------------------------------------------------------------
 # 3.vim多窗口操作:
 ----------------------------------------------------------------------------------------------------
