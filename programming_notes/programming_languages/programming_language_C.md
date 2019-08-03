@@ -60,13 +60,16 @@ https://blog.csdn.net/zqixiao_09/article/details/50877383
 
 #### struct和typedef struct
 
-struct和typedef struct彻底明白了
-http://www.cnblogs.com/qyaizs/articles/2039101.html
+struct和typedef struct彻底明白了 http://www.cnblogs.com/qyaizs/articles/2039101.html
+
+typedef struct和struct定义结构体的区别 https://www.cnblogs.com/sparon/archive/2010/12/06/1897835.html
 
 https://stackoverflow.com/questions/612328/difference-between-struct-and-typedef-struct-in-c
 ```
 注意最高票答案里的tag namespace 和 identifier namespace。说明C语言其实底层（对编程者透明）也是有名字空间的。
 ```
+
+为什么 Linux 内核中不经常使用 typedef？ - pansz的回答 - 知乎 https://www.zhihu.com/question/20928231/answer/16632332
 
 ### stackoverflow
 
@@ -99,7 +102,6 @@ https://stackoverflow.com/questions/252782/strdup-what-does-it-do-in-c
 
 C语言malloc和free【转载】
 http://blog.csdn.net/r91987/article/details/6337032
-
 
 
 ### C长跳转
