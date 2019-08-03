@@ -1,4 +1,11 @@
 
+Category:Virtualization software https://en.wikipedia.org/wiki/Category:Virtualization_software
+
+# QEMU
+
+QEMU https://zh.wikipedia.org/wiki/QEMU
+
+QEMU (简体中文) https://wiki.archlinux.org/index.php/QEMU_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
 # [WSL(Windows Subsystem for Linux)](https://blogs.msdn.microsoft.com/wsl/)
 
