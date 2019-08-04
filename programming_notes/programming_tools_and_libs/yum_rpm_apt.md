@@ -282,7 +282,11 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# wget
+# [wget](https://www.gnu.org/software/wget/)
+
+GNU Wget 1.20 Manual https://www.gnu.org/software/wget/manual/
+
+linux 下载 命令 wget 和 curl https://blog.csdn.net/freeking101/article/details/53691481
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
