@@ -208,6 +208,10 @@ Practical Vim https://book.douban.com/subject/10599776/
 
 简明 VIM 练级攻略 https://coolshell.cn/articles/5426.html
 
+笨方法学vim中英版：
+- Learn Vimscript the Hard Way http://learnvimscriptthehardway.stevelosh.com/
+- 笨方法学Vimscript http://learnvimscriptthehardway.onefloweroneworld.com/
+
 ## Vim配置
 
 有哪些编程必备的 Vim 配置？ - 知乎
