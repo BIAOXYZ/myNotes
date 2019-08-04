@@ -11,12 +11,29 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 
 # V2EX技术类
 
+## linux
+
 cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
+
+求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
+
+## c/c++
 
 用 c 分配内存，为什么普遍都是用 malloc 而不是用 calloc？ https://www.v2ex.com/t/572612
 
+## python
+
 cpython 底层实现笔记 https://www.v2ex.com/t/560173
 > Dive into CPython internals, trying to illustrate every detail of CPython implementation | CPython 源码阅读笔记, 多图展示底层实现细节 https://github.com/zpoint/CPython-Internals
+
+Python 之父开博客写的解析器系列文章 https://www.v2ex.com/t/588878
+
+## database
+
+最近阅读了《MySQL 必知必会》这本书，写了一篇读书笔记，请大佬们过目！ https://www.v2ex.com/t/581631
+- > 客官，这里有一份《MySQL 必知必会》读书笔记，请您笑纳! https://juejin.im/post/5d2335846fb9a07f021a2509
+
+## 其他
 
 serverless 底层技术是什么 https://www.v2ex.com/t/578918
 - > 可以看一下这篇文章，作者尝试去获取 AWS Lambda 应用运行在什么环境里 [如何探测虚拟环境是物理机、虚拟机还是容器？](https://www.infoq.cn/article/536L*XPRudOwCkiTDgM4)
@@ -24,11 +41,6 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 
 做一个基础很扎实的程序员是一种什么感受啊 https://www.v2ex.com/t/561411
 - > 现在开始学基础也不会晚。最近也一直在看计算机基础相关圣经。我整理了一个计算机基础书单，可以参考参考 https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md
-
-求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
-
-最近阅读了《MySQL 必知必会》这本书，写了一篇读书笔记，请大佬们过目！ https://www.v2ex.com/t/581631
-- > 客官，这里有一份《MySQL 必知必会》读书笔记，请您笑纳! https://juejin.im/post/5d2335846fb9a07f021a2509
 
 推荐几篇零知识证明技术博客文章 https://www.v2ex.com/t/586006
 > 深入浅出区块链 https://learnblockchain.cn/
