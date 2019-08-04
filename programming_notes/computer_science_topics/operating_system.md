@@ -55,6 +55,12 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 文件描述符(FD)
+
+文件句柄（file handles） & 文件描述符（file descriptors） https://blog.csdn.net/u013256816/article/details/60778709
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## mount
 
 mount (Unix) https://zh.wikipedia.org/wiki/Mount_(Unix)
