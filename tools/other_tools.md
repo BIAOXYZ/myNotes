@@ -23,6 +23,10 @@ TempMail https://temp-mail.org/zh/
 
 8个在线接收手机短信验证码的免费网络服务整理 https://blog.csdn.net/freeking101/article/details/82770470
 
+TextNow https://www.textnow.com/
+
+textfree https://www.pinger.com/text-free/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 
