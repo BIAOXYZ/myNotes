@@ -208,7 +208,7 @@ https://tour.go-zh.org/flowcontrol/1
   * > 初始化语句：在第一次迭代前执行
   * > 条件表达式：在每次迭代前求值
   * > 后置语句：在每次迭代的结尾执行
-- > 初始化语句通常为一句短变量声明，该变量声明仅在 `for` 语句的作用域中可见。
+- > 初始化语句通常为一句短变量声明，**该变量声明仅在 `for` 语句的作用域中可见**。
 - > **注意**：和 C、Java、JavaScript 之类的语言不同，Go 的 `for` 语句后面的三个构成部分外没有`小括号`， 大括号 `{ }` 则是必须的。
 ```go
 package main
@@ -315,13 +315,70 @@ func main() {
 ### if 的简短语句
 
 https://tour.go-zh.org/flowcontrol/6
-> 同 `for` 一样， `if` 语句可以在条件表达式前执行一个简单的语句。该语句声明的变量作用域仅在 `if` 之内。
+> 同 `for` 一样， `if` 语句可以在条件表达式前执行一个简单的语句。**该语句声明的变量作用域仅在 `if` 之内**。（在最后的 `return` 语句处使用 `v` 看看。）
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return lim
+}
+
+func main() {
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 20),
+	)
+}
+--------------------------------------------------
+//输出：
+9 20
+```
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return v
+}
+
+func main() {
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 20),
+	)
+}
+--------------------------------------------------
+//输出（准确说是报错）：
+./prog.go:12:9: undefined: v
+```
 
 ### if 和 else
 
 https://tour.go-zh.org/flowcontrol/7
-> 在 if 的简短语句中声明的变量同样可以在任何对应的 else 块中使用。
+> 在 if 的简短语句中声明的变量同样可以在任何对应的 `else` 块中使用。
 ```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
 func pow(x, n, lim float64) float64 {
 	if v := math.Pow(x, n); v < lim {
 		return v
@@ -331,6 +388,17 @@ func pow(x, n, lim float64) float64 {
 	// 这里开始就不能使用 v 了
 	return lim
 }
+
+func main() {
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 20),
+	)
+}
+--------------------------------------------------
+//输出：
+27 >= 20
+9 20
 ```
 
 ### 练习：循环与函数
