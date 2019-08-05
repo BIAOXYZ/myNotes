@@ -23,9 +23,13 @@
 
 ## `##` Packages, variables, and functions || 包、变量和函数
 
+### ~~包~~
+### ~~导入~~
+
 ### 导出名
 
-> 在 Go 中，如果一个名字以大写字母开头，那么它就是已导出的。例如，`Pizza` 就是个已导出名，`Pi` 也同样，它导出自 `math` 包。`pizza` 和 `pi` 并未以大写字母开头，所以它们是未导出的。
+https://tour.go-zh.org/basics/3
+> 在 Go 中，如果一个名字以**大写字母**开头，那么它就是已导出的。例如，`Pizza` 就是个已导出名，`Pi` 也同样，它导出自 `math` 包。`pizza` 和 `pi` 并未以大写字母开头，所以它们是未导出的。
 >
 > 在导入一个包时，你只能引用其中已导出的名字。任何“未导出”的名字在该包外均无法访问。
 >
@@ -62,13 +66,14 @@ func main() {
 3.141592653589793
 ```
 
-
-
 ### 函数
 
 https://tour.go-zh.org/basics/4
 > （参考 [这篇关于 Go 语法声明的文章](https://blog.go-zh.org/gos-declaration-syntax)了解这种类型声明形式出现的原因。）
 >> externallink: Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax
+
+### ~~函数（续）~~
+### ~~多值返回~~
 
 ### 命名返回值
 
@@ -76,20 +81,120 @@ https://tour.go-zh.org/basics/7
 - > Go 的返回值可被命名，它们会被视作定义在函数顶部的变量。
 - > 没有参数的 `return` 语句返回已命名的返回值。也就是 `直接` 返回
 
+### ~~变量~~
+### ~~变量的初始化~~
+
 ### 短变量声明
 
 https://tour.go-zh.org/basics/10
 - > 在函数中，简洁赋值语句 `:=` 可在类型明确的地方代替 `var` 声明。
 - > 函数外的每个语句都必须以关键字开始（`var`, `func` 等等），因此 `:=` 结构不能在函数外使用。
 
+### ~~基本类型~~
+### ~~零值~~
+
 ### 类型转换
 
 https://tour.go-zh.org/basics/13
+> 与 C 不同的是，Go 在不同类型的项之间赋值时需要显式转换。试着移除例子中 float64 或 uint 的转换看看会发生什么。
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var x, y int = 3, 4
+	var f float64 = math.Sqrt(float64(x*x + y*y))
+	var z uint = uint(f)
+	fmt.Println(x, y, z)
+}
+--------------------------------------------------
+//输出：
+3 4 5
+```
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var x, y int = 3, 4
+	var f float64 = math.Sqrt((x*x + y*y))
+	var z uint = uint(f)
+	fmt.Println(x, y, z)
+}
+--------------------------------------------------
+//输出（准确说是报错）：
+./prog.go:10:33: cannot use x * x + y * y (type int) as type float64 in argument to math.Sqrt
+```
+
+### 类型推导
+
+https://tour.go-zh.org/basics/14
+- > 在声明一个变量而不指定其类型时（即使用不带类型的 := 语法或 var = 表达式语法），变量的类型由右值推导得出。<br>
+  当右值声明了类型时，新变量的类型与其相同：
+  ```go
+  var i int
+  j := i // j 也是一个 int
+  ```
+- > 不过当右边包含未指明类型的数值常量时，新变量的类型就可能是 int, float64 或 complex128 了，这取决于常量的精度：
+```go
+package main
+
+import "fmt"
+
+func main() {
+	v := 42 // 修改这里！
+	fmt.Printf("v is of type %T\n", v)
+}
+--------------------------------------------------
+//输出：
+v is of type int
+```
 
 ### 常量
 
 https://tour.go-zh.org/basics/15
 > 常量不能用 `:=` 语法声明。
+
+### 数值常量
+
+https://tour.go-zh.org/basics/16
+```go
+package main
+
+import "fmt"
+
+const (
+	// 将 1 左移 100 位来创建一个非常大的数字
+	// 即这个数的二进制是 1 后面跟着 100 个 0
+	Big = 1 << 100
+	// 再往右移 99 位，即 Small = 1 << 1，或者说 Small = 2
+	Small = Big >> 99
+)
+
+func needInt(x int) int { return x*10 + 1 }
+func needFloat(x float64) float64 {
+	return x * 0.1
+}
+
+func main() {
+	fmt.Println(needInt(Small))
+	fmt.Println(needFloat(Small))
+	fmt.Println(needFloat(Big))
+}
+--------------------------------------------------
+//输出：
+21
+0.2
+1.2676506002282295e+29
+```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
