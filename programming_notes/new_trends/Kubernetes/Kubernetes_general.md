@@ -117,6 +117,10 @@ https://k8smeetup.github.io/
 - 如何学习、了解kubernetes？ - Jimmy Song的回答 - 知乎 https://www.zhihu.com/question/37498459/answer/527503822
   * Kubernetes Handbook——Kubernetes中文指南/云原生应用架构实践手册 https://jimmysong.io/kubernetes-handbook/
 
+## kubernetes 系列文章
+
+Kubernetes系列 - 介绍关于Kubernetes的一些技术知识 https://blog.csdn.net/cloudvtech/column/info/22605
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 常用命令和技巧
