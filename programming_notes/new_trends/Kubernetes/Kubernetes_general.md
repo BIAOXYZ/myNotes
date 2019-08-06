@@ -120,6 +120,12 @@ https://k8smeetup.github.io/
 ## kubernetes 系列文章
 
 Kubernetes系列 - 介绍关于Kubernetes的一些技术知识 https://blog.csdn.net/cloudvtech/column/info/22605
+- kubernetes系列之十一：在Kubernetes平台对容器进行debug https://blog.csdn.net/cloudvtech/article/details/80267479
+  > 核心命令就这条：`docker run -it --pid=container:test-ats --net=container:test-ats --privileged debug-container sh`。此外，在k8s环境下，有时候为了方便（k8s里起的pod里的容器名字都很长），可以：
+  ```
+  $ export conname=k8s_docker-http-server_nginx-767d56d4b-75dqp_default_9b6f923e-e88d-499e-89c5-d06aac3c3eb2_0
+  $ docker run -it --pid=container:$conname --net=container:$conname --privileged debug-container sh
+  ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
