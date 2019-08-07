@@ -593,6 +593,12 @@ https://tour.go-zh.org/moretypes/5
 - > 结构体文法通过直接列出字段的值来新分配一个结构体。
 - > 使用 `Name:` 语法可以仅列出部分字段。（字段名的顺序无关。）
 - > 特殊的前缀 `&` 返回一个指向结构体的指针。
+
+[Struct Literals](https://tour.golang.org/moretypes/5)
+- > A struct literal denotes a newly allocated struct value by ***listing the values of its fields***.
+- > You can list just a subset of fields by using the `Name:` syntax. (And the order of named fields is irrelevant.)
+- > The special prefix `&` returns a pointer to the struct value.
+
 ```go
 package main
 
@@ -668,11 +674,46 @@ func main() {
 	var s []int = primes[1:4]
 	fmt.Println(s)
 }
-```
-```
+--------------------------------------------------
 //输出：
 [3 5 7]
 ```
+
+### 切片就像数组的引用
+
+https://tour.go-zh.org/moretypes/8
+> **切片并不存储任何数据**，它只是描述了底层数组中的一段。**更改切片的元素会修改其底层数组中对应的元素**。与它共享底层数组的切片都会观测到这些修改。
+```go
+package main
+
+import "fmt"
+
+func main() {
+	names := [4]string{
+		"John",
+		"Paul",
+		"George",
+		"Ringo",
+	}
+	fmt.Println(names)
+
+	a := names[0:2]
+	b := names[1:3]
+	fmt.Println(a, b)
+
+	b[0] = "XXX"
+	fmt.Println(a, b)
+	fmt.Println(names)
+}
+--------------------------------------------------
+//输出：
+[John Paul George Ringo]
+[John Paul] [Paul George]
+[John XXX] [XXX George]
+[John XXX George Ringo]
+```
+
+### ~~切片文法~~
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
