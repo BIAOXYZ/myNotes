@@ -516,6 +516,27 @@ https://tour.go-zh.org/moretypes/1
 https://tour.golang.org/moretypes/1
 > This is known as "dereferencing" or "indirecting".
 
+### 结构体
+
+https://tour.go-zh.org/moretypes/2
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X int
+	Y int
+}
+
+func main() {
+	fmt.Println(Vertex{1, 2})
+}
+--------------------------------------------------
+//输出：
+{1 2}
+```
+
 ### 结构体字段
 
 https://tour.go-zh.org/moretypes/3
@@ -535,8 +556,7 @@ func main() {
 	v.X = 4
 	fmt.Println(v.X)
 }
-```
-```
+--------------------------------------------------
 //输出：
 4
 ```
@@ -562,8 +582,7 @@ func main() {
 	p.X = 1e9
 	fmt.Println(v)
 }
-```
-```
+--------------------------------------------------
 //输出：
 {1000000000 2}
 ```
@@ -593,8 +612,7 @@ var (
 func main() {
 	fmt.Println(v1, p, v2, v3)
 }
-```
-```
+--------------------------------------------------
 //输出：
 {1 2} &{1 2} {1 0} {0 0}
 ```
@@ -622,8 +640,7 @@ func main() {
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	fmt.Println(primes)
 }
-```
-```
+--------------------------------------------------
 //输出：
 Hello World
 [Hello World]
