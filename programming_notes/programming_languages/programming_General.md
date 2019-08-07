@@ -267,6 +267,16 @@ Linux 中 mmap() 函数的内存映射问题理解？ - 知乎 https://www.zhihu
 - 透彻理解IoC(控制反转) https://blog.csdn.net/u014563989/article/details/55188673
 - 深入理解DIP、IoC、DI以及IoC容器 https://www.cnblogs.com/liuhaorain/p/3747470.html
 
+### 浅拷贝、深拷贝
+
+Python 直接赋值、浅拷贝和深度拷贝解析 http://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html
+
+Copy List with Random Pointer 深度拷贝，浅度拷贝，Lazy拷贝解析 https://blog.csdn.net/shoulinjun/article/details/18730871
+
+Object copying https://en.wikipedia.org/wiki/Object_copying
+
+如何理解 C++ 中的深拷贝和浅拷贝？ - 知乎 https://www.zhihu.com/question/36370072
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 不太技术性编程知识
