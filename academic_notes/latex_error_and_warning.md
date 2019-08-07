@@ -22,3 +22,7 @@ You need:
 
 How to resove “job aborted, file error in nonstop mode” error in Texmaker (64-bit)? https://tex.stackexchange.com/questions/160532/how-to-resove-job-aborted-file-error-in-nonstop-mode-error-in-texmaker-64-bi
 >> 把.tex文件里的空格全部改成下划线，编译通过。
+
+### overfull hbox/vbox类
+
+What does “overfull hbox” mean? https://tex.stackexchange.com/questions/35/what-does-overfull-hbox-mean
