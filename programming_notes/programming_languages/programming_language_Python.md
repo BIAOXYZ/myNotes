@@ -75,6 +75,8 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 微软官方上线 Python 教程《Develop with Python on Windows》 https://www.cnbeta.com/articles/tech/870511.htm
 > 在 Windows 上使用 Python 进行开发 https://docs.microsoft.com/zh-cn/windows/python/
 
+机器学习相关教程 https://morvanzhou.github.io/tutorials/ || https://github.com/MorvanZhou/tutorials 【其实这个人的教程的核心还是python，毕竟名字就叫“莫烦PYTHON”】
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
