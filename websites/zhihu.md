@@ -16,6 +16,12 @@ coursera 视频总是缓冲或者无法观看，有什么方法解决？ - 知�
 - 你看过/写过哪些有意思的代码？ - 景略集智的回答 - 知乎 https://www.zhihu.com/question/275611095/answer/482646185
   * An uroboros program with 100+ programming languages https://github.com/mame/quine-relay
 
+# 知乎非技术
+
+计算机领域有哪些经典的典故或笑话？ - 知乎 https://www.zhihu.com/question/20034686/answer/14248182
+> 曾有一个绝世电脑高手系列：
+>> 我后来问我朋友那位高手的下落，我朋友说前几年去了美国之后，杳无音讯……
+
 # Stories from zhihu
 
 ## Fabrice Bellard
