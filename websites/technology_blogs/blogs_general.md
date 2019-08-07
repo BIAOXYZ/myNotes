@@ -6,6 +6,36 @@
 ## Matrix67
 --------------------------------------------------
 
+不可解问题(Undecidable Decision Problem) http://www.matrix67.com/blog/archives/55
+```
+    看黑书介绍NP的时候有一个“不可解问题”，非常不可思议，费劲周折在网上查到了些英文资料，搞明白了，非常有意思，在这里说一下。
+    不可解问题(Undecidable Decision Problem)指的是这样一种问题：他无论如何也不可能有一个正确的算法来解决。虽然不可思议，但这种问题被证明确实是存在的。图灵在1936年（那时还没电脑，我们的父亲是在没有设备支持的纯理论基础上提出来的，致敬）提出了第一个不可解问题的实例：The Halting Problem。
+    The Halting Problem是问，输入一段程序代码和一个针对此程序的输入，能否编程判断运行这个程序后程序是否会终止。
+    这个问题的答案是否定的。也就是说，不可能有一种算法可以正确判断一个指定的程序运行后，给予指定的输入，程序最后出不出得来。换句话说，The Halting Problem是一个不可解问题。
+    虽然这感觉似乎不可能，但在严格的证明下谁也无法发言反对。
+    证明过程非常简单，假设The Halting Problem是有解的，并且已经用程序实现了，那么我们只需要再编写一个程序Program Bug，就会发现存在矛盾。
+    
+    反证：既然解决The Halting Problem的算法已经实现了，那么我们一定能定义一个函数
+    
+Function Halting(a,b:input_type):boolean;
+
+    其中，a是读入的程序源码，b是输入数据。这个函数的功能就是返回对于指定的程序源码和输入数据，程序是否能顺利退出。
+    下面编写一个程序：
+    
+Program Bug;
+var
+    code:input_type;
+begin
+   get(code);   //读入code
+   if halting(code,code) then repeat until false
+      else halt;
+end.
+
+    好，现在运行Bug这个程序，并且输入Bug这个程序本身的代码。这样，halting(code,code)其实质就是在判断这个Bug程序本身了。如果The Halting Problem认为Bug程序会正常退出，那么就让程序进入一个死循环，否则立即退出程序。矛盾产生。
+    //简直是在挑战表达力极限
+    //做人要厚道，转帖请注明出处
+```
+
 停机问题、Chaitin常数与万能证明方法 http://www.matrix67.com/blog/archives/901
 > 我写一个程序从小到大枚举所有的偶数，看是不是有两个质数加起来等于它：如果找到了，继续枚举下一个偶数；否则输出这个反例并结束程序。然后我编译它。这个编译器不是可以判断我这程序能否终止么？如果编译器说我这个程序会无限执行下去的话……我不就相当于把Goldbach猜想证到了吗？或者，编译器说程序最终会终止，那Goldbach猜想不就直接被推翻了吗？反正，那个证Goldbach猜想的奖金肯定是我的了。
 
