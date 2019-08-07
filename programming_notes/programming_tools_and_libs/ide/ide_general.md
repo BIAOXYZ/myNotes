@@ -97,6 +97,9 @@ VS code golang 开发环境搭建 - CSDN博客 https://blog.csdn.net/hil2000/art
 在Visual Studio Code配置GoLang开发环境 - CSDN博客 https://blog.csdn.net/chszs/article/details/50076641
 > "要注意，GoLang的安装要确保两个环境变量，一个是GOROOT环境变量；二是PATH环境变量要包含$GOROOT\bin值。"
 
+使用Visual Studio Code调试Golang工程 - 徐波的文章 - 知乎 https://zhuanlan.zhihu.com/p/26473355
+>> notes：感觉主要就是调试配置那里模式改成————`"mode": "debug"`（有的时候值是`"auto"`）就差不多了。不过我是因为机器之前已经下过delve了。
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ### vscode for python
