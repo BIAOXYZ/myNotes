@@ -713,5 +713,87 @@ func main() {
 [John XXX George Ringo]
 ```
 
-### 切片文法
+### 切片文法 
+
+https://tour.go-zh.org/moretypes/9
+- > 切片文法类似于没有长度的数组文法。
+- > 这是一个数组文法：
+  ```go
+  [3]bool{true, true, false}
+  ```
+- > 下面这样则会创建一个和上面相同的数组，然后构建一个引用了它的切片：
+  ```go
+  []bool{true, true, false}
+  ```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
+
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
+
+	s := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(s)
+}
+--------------------------------------------------
+//输出：
+[2 3 5 7 11 13]
+[true false true true false true]
+[{2 true} {3 false} {5 true} {7 true} {11 false} {13 true}]
+```
+
+### 切片的默认行为
+
+https://tour.go-zh.org/moretypes/10
+- > 在进行切片时，你可以利用它的默认行为来忽略上下界。
+- > 切片下界的默认值为 `0`，上界则是该切片的长度。
+- > 对于数组
+  ```go
+  var a [10]int
+  ```
+- > 来说，以下切片是等价的：
+  ```go
+  a[0:10]
+  a[:10]
+  a[0:]
+  a[:]
+  ```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	s := []int{2, 3, 5, 7, 11, 13}
+
+	s = s[1:4]
+	fmt.Println(s)
+
+	s = s[:2]
+	fmt.Println(s)
+
+	s = s[1:]
+	fmt.Println(s)
+}
+--------------------------------------------------
+//输出：
+[3 5 7]
+[3 5]
+[5]
+```
 
