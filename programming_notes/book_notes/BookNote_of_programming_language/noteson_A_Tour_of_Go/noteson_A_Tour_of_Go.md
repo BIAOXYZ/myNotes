@@ -896,3 +896,25 @@ len=0 cap=6 []
 len=4 cap=6 [2 3 5 7]
 panic: runtime error: slice bounds out of range
 ```
+
+### nil 切片
+
+https://tour.go-zh.org/moretypes/12
+> 切片的零值是 `nil`。nil 切片的长度和容量为 `0` 且**没有底层数组**。
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var s []int
+	fmt.Println(s, len(s), cap(s))
+	if s == nil {
+		fmt.Println("nil!")
+	}
+}
+--------------------------------------------------
+//输出：
+[] 0 0
+nil!
+```
