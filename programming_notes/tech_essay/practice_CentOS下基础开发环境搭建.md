@@ -304,8 +304,11 @@ export GO111MODULE=on
 
 mkdir -p $GOPATH/{bin,pkg,src}
 
-// dep
+# // dep
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+
+# // dlv
+go get -u github.com/go-delve/delve/cmd/dlv
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
