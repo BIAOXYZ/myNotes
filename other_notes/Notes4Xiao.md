@@ -56,6 +56,12 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 卖个有智慧的萌 《大侦探皮卡丘》版皮卡丘布偶预购开启 https://hot.cnbeta.com/articles/comic/850703.htm
 
+#### 熊猫派pandapia
+
+- 熊猫派 PANDAPIA https://new.brand.smzdm.com/40801/
+- 有没有质量和外形过关的熊猫周边？ - 孤独赤兔的回答 - 知乎 https://www.zhihu.com/question/271954643/answer/365031201
+- https://pandapia.taobao.com/ 【好像是淘宝店改名了？待确认。】
+
 ### CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
