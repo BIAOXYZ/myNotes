@@ -341,6 +341,10 @@ Oo控 https://zh.moegirl.org/Oo控
 **声优安利系列**：
 - 声优安利——钉宫理惠 https://www.bilibili.com/read/cv1332684
 
+好想被钉宫辱骂啊 https://www.acfun.cn/v/ac743365 || Haiyore! Iori-chan Ｗ https://www.nicovideo.jp/watch/sm21303202
+
+【钉宫癌福利】钉宫理惠演唱会现场被要求辱骂观众。完了，我已经深陷其中不能自拔了。 https://www.acfun.cn/v/ac4628149
+
 我的oo已经饥渴难耐了 https://zh.moegirl.org/zh-hans/%E6%88%91%E7%9A%84oo%E5%B7%B2%E7%BB%8F%E9%A5%A5%E6%B8%B4%E9%9A%BE%E8%80%90%E4%BA%86
 > 《CV战争》中的炮姐说过“我的大炮已经饥渴难耐了。”
 >> CV战争 https://zh.moegirl.org/CV%E6%88%98%E4%BA%89
