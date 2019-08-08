@@ -21,6 +21,22 @@
 4.点击左侧的从其他设备打开的标签页。
 ```
 
+## Chrome和Flash --> 这个很快就会没用了，因为不论chrome还是firefox都会在2020年停止支持flash
+
+使用或修复 Flash 音频和视频 https://support.google.com/chrome/answer/6258784
+- > 解决 Flash 出现的问题
+```
+第 1 步：开启 Flash
+  请仅允许 Flash 在您信任的网站上运行。
+    在计算机上打开 Chrome。
+    转到包含相应视频或游戏的网站。
+    // 这句是核心：之前总是点地址栏右边每次手动允许；今天发现点左边的❓图标，类似加入白名单就可以了。
+    在网址的左侧，点击锁形图标 Lock 或“信息”图标 查看网站信息。
+    点击底部的网站设置。
+    在随即显示的新标签页中，依次点击“Flash”右侧的向下箭头 向下箭头 然后 允许。
+    返回到该网站并重新加载页面。
+```
+
 ## chrome keyboard shortcuts
 
 工具篇---Chrome浏览器快捷键 https://www.jianshu.com/p/95a6e8ee4819
