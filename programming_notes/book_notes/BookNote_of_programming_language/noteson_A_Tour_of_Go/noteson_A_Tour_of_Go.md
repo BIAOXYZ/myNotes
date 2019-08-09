@@ -1002,3 +1002,115 @@ X _ X
 O _ X
 _ _ O
 ```
+
+### 向切片追加元素
+
+https://tour.go-zh.org/moretypes/15
+- > 为切片追加新的元素是种常用的操作，为此 Go 提供了内建的 `append` 函数。内建函数的[文档](https://go-zh.org/pkg/builtin/#append)对此函数有详细的介绍。
+   ```go
+   func append(s []T, vs ...T) []T
+   ```
+- > `append` 的第一个参数 `s` 是一个元素类型为 `T` 的切片，其余类型为 `T` 的值将会追加到该切片的末尾。
+- > `append` 的结果是一个包含原切片所有元素加上新添加元素的切片。
+- > 当 `s` 的底层数组太小，不足以容纳所有给定的值时，它就会分配一个更大的数组。返回的切片会指向这个新分配的数组。（要了解关于切片的更多内容，请阅读文章 [Go 切片：用法和本质](https://blog.go-zh.org/go-slices-usage-and-internals)。）
+  >> Go 切片：用法和本质 https://blog.go-zh.org/go-slices-usage-and-internals
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var s []int
+	printSlice(s)
+
+	// 添加一个空切片
+	s = append(s, 0)
+	printSlice(s)
+
+	// 这个切片会按需增长
+	s = append(s, 1)
+	printSlice(s)
+
+	// 可以一次性添加多个元素
+	s = append(s, 2, 3, 4)
+	printSlice(s)
+}
+
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+--------------------------------------------------
+//输出：
+len=0 cap=0 []
+len=1 cap=2 [0]
+len=2 cap=2 [0 1]
+len=5 cap=8 [0 1 2 3 4]
+```
+
+### Range
+
+https://tour.go-zh.org/moretypes/16
+> `for` 循环的 `range` 形式可遍历切片或映射。当使用 `for` 循环遍历切片时，每次迭代都会返回两个值。第一个值为当前元素的下标，第二个值为该下标所对应元素的一份副本。
+```go
+package main
+
+import "fmt"
+
+var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+
+func main() {
+	for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
+}
+--------------------------------------------------
+//输出：
+2**0 = 1
+2**1 = 2
+2**2 = 4
+2**3 = 8
+2**4 = 16
+2**5 = 32
+2**6 = 64
+2**7 = 128
+```
+
+### range（续）
+
+https://tour.go-zh.org/moretypes/17
+- > 可以将下标或值赋予 `_` 来忽略它。
+  ```go
+  for i, _ := range pow
+  for _, value := range pow
+  ```
+- > 若你只需要索引，忽略第二个变量即可。
+  ```go
+  for i := range pow
+  ```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	pow := make([]int, 10)
+	for i := range pow {
+		pow[i] = 1 << uint(i) // == 2**i
+	}
+	for _, value := range pow {
+		fmt.Printf("%d\n", value)
+	}
+}
+--------------------------------------------------
+//输出：
+1
+2
+4
+8
+16
+32
+64
+128
+256
+512
+```
