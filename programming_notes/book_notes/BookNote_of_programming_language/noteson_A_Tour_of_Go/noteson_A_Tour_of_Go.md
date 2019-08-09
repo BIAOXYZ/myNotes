@@ -1047,6 +1047,41 @@ len=2 cap=2 [0 1]
 len=5 cap=8 [0 1 2 3 4]
 ```
 
+https://tour.go-lang.org/moretypes/15 【从英文原版就能看出来第一个注释`// 添加一个空切片`翻译得太烂了！人家原意明明是`append适用于nil切片`】【这里有个问题还是没想通，为什么在nil切片后面追加一个元素切片的容量会从0变成2而不是1？】
+```
+package main
+
+import "fmt"
+
+func main() {
+	var s []int
+	printSlice(s)
+
+	// append works on nil slices.
+	s = append(s, 0)
+	printSlice(s)
+
+	// The slice grows as needed.
+	s = append(s, 1)
+	printSlice(s)
+
+	// We can add more than one element at a time.
+	s = append(s, 2, 3, 4)
+	printSlice(s)
+}
+
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+--------------------------------------------------
+//输出：
+len=0 cap=0 []
+len=1 cap=2 [0]
+len=2 cap=2 [0 1]
+len=5 cap=8 [0 1 2 3 4]
+```
+
+
 ### Range
 
 https://tour.go-zh.org/moretypes/16
