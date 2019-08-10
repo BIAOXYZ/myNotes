@@ -10,10 +10,11 @@
   - Go語言聖經（中文版） https://www.gitbook.com/book/wizardforcel/gopl-zh/details
     - https://www.gitbook.com/@wizardforcel
 
-系统学习GO，推荐几本靠谱的书? - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/30461290/answer/210414739
+系统学习GO，推荐几本靠谱的书? - 飞雪无情的回答 - 知乎 https://www.zhihu.com/question/30461290/answer/210414739
 - Go编程语言 https://go-zh.org/doc/
   - Go指南 https://tour.go-zh.org/welcome/
 - Go语言圣经 https://www.gitbook.com/book/yar999/gopl-zh/details
+- 然后通过《Go语言实战》这本书，In Action系列都是比较经典的，看这本书的实习可以参考我《Go语言实战》这本书的读书笔记，一共近30篇文章，15万字，非常全面，书里没有的我这里也讲到了很多。这里列其中几篇：
 
 为什么要使用 Go 语言？Go 语言的优势在哪里？ - asta谢的回答 - 知乎 https://www.zhihu.com/question/21409296/answer/18184584
 > (这个就是Go Web 编程的开源版) https://github.com/astaxie/build-web-application-with-golang
@@ -21,15 +22,8 @@
 
 ## A Tour of Go
 
-Go指南 -- 函数 https://tour.go-zh.org/basics/4
-> Go's Declaration Syntax https://blog.go-zh.org/gos-declaration-syntax 
-Go指南 -- 练习：循环与函数 https://tour.go-zh.org/flowcontrol/8
-```
-计算机通常使用循环来计算 x 的平方根。从某个猜测的值 z 开始，我们可以根据 z² 与 x 的近似度来调整 z，产生一个更好的猜测：
-z -= (z*z - x) / (2*z)
-（注：如果你对该算法的细节感兴趣，上面的 z² − x 是 z² 到它所要到达的值（即 x）的距离，除以的 2z 为 z² 的导数，我们通过 z² 的
-变化速度来改变 z 的调整量。这种通用方法叫做牛顿法。它对很多函数，特别是平方根而言非常有效。） 
-```
+参见仓库里关于该书单独的笔记吧。
+
 ## Effective Go
 
 Effective Go https://golang.org/doc/effective_go.html
