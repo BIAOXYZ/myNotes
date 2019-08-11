@@ -35,7 +35,7 @@ func main() {
 ```
 
 https://tour.go-lang.org/methods/1
-- > Go does not have classes. However, ***you can define methods on types***.
+- > Go does not have classes. However, ***you can define methods on `types`***.
 - > ***A method is a function with a special receiver argument***.
 - > The receiver appears in its own argument list between the `func` keyword and the method name.
 - > In this example, the `Abs` method has a receiver of type `Vertex` named `v`.
@@ -416,6 +416,7 @@ After scaling: &{X:15 Y:20}, Abs: 25
 
 ### 接口
 
+https://tour.go-zh.org/methods/9
 - > **`接口类型`** 是由一组方法签名定义的集合。
 - > 接口类型的变量可以保存任何实现了这些方法的值。
 - > 注意: 示例代码的 22 行存在一个错误。由于 `Abs` 方法只为 `*Vertex` （指针类型）定义，因此 `Vertex`（值类型）并未实现 `Abser`。
@@ -515,6 +516,205 @@ func (v *Vertex) Abs() float64 {
 --------------------------------------------------
 //输出：
 5
+```
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type Abser interface {
+	Abs() float64
+}
+
+func main() {
+	var a Abser
+	f := MyFloat(-math.Sqrt2)
+	v := Vertex{3, 4}
+
+	a = f  // a MyFloat 实现了 Abser
+	////a = &v // a *Vertex 实现了 Abser
+
+	// 下面一行，v 是一个 Vertex（而不是 *Vertex）
+	// 所以没有实现 Abser。
+	////a = v
+
+	fmt.Println(a.Abs())
+}
+
+type MyFloat float64
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+type Vertex struct {
+	X, Y float64
+}
+
+func (v *Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+--------------------------------------------------
+//输出（准确说是报错）：
+./prog.go:15:2: v declared and not used
+```
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type Abser interface {
+	Abs() float64
+}
+
+func main() {
+	var a Abser
+	f := MyFloat(-math.Sqrt2)
+	////v := Vertex{3, 4}
+
+	a = f  // a MyFloat 实现了 Abser
+	////a = &v // a *Vertex 实现了 Abser
+
+	// 下面一行，v 是一个 Vertex（而不是 *Vertex）
+	// 所以没有实现 Abser。
+	////a = v
+
+	fmt.Println(a.Abs())
+}
+
+type MyFloat float64
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+type Vertex struct {
+	X, Y float64
+}
+
+func (v *Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+--------------------------------------------------
+//输出：
+1.4142135623730951
+```
+
+### 接口与隐式实现
+
+https://tour.go-zh.org/methods/10
+- > ***类型通过实现一个接口的所有方法来实现该接口***。既然无需专门显式声明，也就没有“implements”关键字。
+- > 隐式接口从接口的实现中解耦了定义，这样接口的实现可以出现在任何包中，无需提前准备。因此，也就无需在每一个实现上增加新的接口名称，这样同时也鼓励了明确的接口定义。
+
+Interfaces are implemented implicitly https://tour.go-lang.org/methods/10
+- > A type implements an interface by implementing its methods. There is no explicit declaration of intent, no "implements" keyword.
+- > Implicit interfaces decouple the definition of an interface from its implementation, which could then appear in any package without prearrangement.
+
+```go
+package main
+
+import "fmt"
+
+type I interface {
+	M()
+}
+
+type T struct {
+	S string
+}
+
+// 此方法表示类型 T 实现了接口 I，但我们无需显式声明此事。
+func (t T) M() {
+	fmt.Println(t.S)
+}
+
+func main() {
+	var i I = T{"hello"}
+	i.M()
+}
+--------------------------------------------------
+//输出：
+hello
+```
+
+### 接口值
+
+https://tour.go-zh.org/methods/11
+- > ***接口也是值***。它们可以像其它值一样传递。接口值可以用作函数的参数或返回值。
+- > 在内部，接口值可以看做包含值和具体类型的元组：
+  ```go
+  (value, type)
+  ```
+- > ***接口值保存了一个具体底层类型的具体值***。
+- > ***接口值调用方法时会执行其底层类型的同名方法***。
+
+Interface values https://tour.go-lang.org/methods/11
+- > Under the hood, interface values can be thought of as ***a tuple of a value and a concrete type***:
+  ```go
+  (value, type)
+  ```
+- > ***An interface value holds a value of a specific underlying concrete type***.
+- > Calling a method on an interface value executes the method of the same name on its underlying type.
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type I interface {
+	M()
+}
+
+type T struct {
+	S string
+}
+
+func (t *T) M() {
+	fmt.Println(t.S)
+}
+
+type F float64
+
+func (f F) M() {
+	fmt.Println(f)
+}
+
+func main() {
+	var i I
+
+	i = &T{"Hello"}
+	describe(i)
+	i.M()
+
+	i = F(math.Pi)
+	describe(i)
+	i.M()
+}
+
+func describe(i I) {
+	fmt.Printf("(%v, %T)\n", i, i)
+}
+--------------------------------------------------
+//输出：
+(&{Hello}, *main.T)
+Hello
+(3.141592653589793, main.F)
+3.141592653589793
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
