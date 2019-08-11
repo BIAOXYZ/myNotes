@@ -6,7 +6,7 @@
 ### 方法
 
 https://tour.go-zh.org/methods/1
-- > Go 没有类。不过你可以为结构体类型定义方法。***方法就是一类带特殊的 `接收者` 参数的函数***。
+- > Go 没有类。不过你可以为结构体类型定义方法。***方法就是一类带特殊的 `接收者` 参数的`函数`***。
 - > 方法接收者在它自己的参数列表内，位于 `func` 关键字和方法名之间。
 - > 在此例中，`Abs` 方法拥有一个名为 `v`，类型为 `Vertex` 的接收者。
 ```go
@@ -36,7 +36,7 @@ func main() {
 
 https://tour.go-lang.org/methods/1
 - > Go does not have classes. However, ***you can define methods on `types`***.
-- > ***A method is a function with a special receiver argument***.
+- > ***A method is a `function` with `a special receiver argument`***.
 - > The receiver appears in its own argument list between the `func` keyword and the method name.
 - > In this example, the `Abs` method has a receiver of type `Vertex` named `v`.
 
@@ -715,6 +715,58 @@ func describe(i I) {
 Hello
 (3.141592653589793, main.F)
 3.141592653589793
+```
+
+### 底层值为 nil 的接口值
+
+https://tour.go-zh.org/methods/12
+- > 即便接口内的具体值为 `nil`，方法仍然会被 `nil` 接收者调用。
+- > 在一些语言中，这会触发一个空指针异常，但在 Go 中通常会写一些方法来优雅地处理它（如本例中的 `M` 方法）。
+
+- > 注意: 保存了 `nil` 具体值的接口其自身并不为 `nil`。
+```go
+package main
+
+import "fmt"
+
+type I interface {
+	M()
+}
+
+type T struct {
+	S string
+}
+
+func (t *T) M() {
+	if t == nil {
+		fmt.Println("<nil>")
+		return
+	}
+	fmt.Println(t.S)
+}
+
+func main() {
+	var i I
+
+	var t *T
+	i = t
+	describe(i)
+	i.M()
+
+	i = &T{"hello"}
+	describe(i)
+	i.M()
+}
+
+func describe(i I) {
+	fmt.Printf("(%v, %T)\n", i, i)
+}
+--------------------------------------------------
+//输出：
+(<nil>, *main.T)
+<nil>
+(&{hello}, *main.T)
+hello
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
