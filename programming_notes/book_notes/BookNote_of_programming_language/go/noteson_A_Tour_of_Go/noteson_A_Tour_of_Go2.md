@@ -1080,6 +1080,55 @@ n = 0 err = EOF b = [101 97 100 101 114 33 32 82]
 b[:n] = ""
 ```
 
+### 练习：Reader
+
+https://tour.go-zh.org/methods/22
+
+### 练习：rot13Reader
+
+https://tour.go-zh.org/methods/23
+
+### 图像
+
+https://tour.go-zh.org/methods/24
+- > `image` 包定义了 `Image` 接口：
+  ```go
+  package image
+  
+  type Image interface {
+      ColorModel() color.Model
+      Bounds() Rectangle
+      At(x, y int) color.Color
+  }
+  ```
+  > 注意: `Bounds` 方法的返回值 `Rectangle` 实际上是一个 `image.Rectangle`，它在 `image` 包中声明。（请参阅[文档](https://go-zh.org/pkg/image/#Image)了解全部信息。）
+- > `color.Color` 和 `color.Model` 类型也是接口，但是通常因为直接使用预定义的实现 `image.RGBA` 和 `image.RGBAModel` 而被忽视了。这些接口和类型由 `image/color` 包定义。
+```go
+package main
+
+import (
+	"fmt"
+	"image"
+)
+
+func main() {
+	m := image.NewRGBA(image.Rect(0, 0, 100, 100))
+	fmt.Println(m.Bounds())
+	fmt.Println(m.At(0, 0).RGBA())
+}
+--------------------------------------------------
+//输出：
+(0,0)-(100,100)
+0 0 0 0
+```
+
+### 练习：图像
+
+https://tour.go-zh.org/methods/25
+
+### ~~恭喜！~~
+
+https://tour.go-zh.org/methods/26
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
