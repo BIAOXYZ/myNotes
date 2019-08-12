@@ -159,6 +159,20 @@ kuberntes中的redis集群性能调优 https://jeremyxu2010.github.io/2019/06/ku
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+## k8s、docker、go等与cloud-native相关的博客 //由于全部是个人网站（尽管有的有公众号或掘金知乎等的页面），所以我对长期存在性略有些存疑。
+
+面向信仰编程 Draveness's Blog https://draveness.me/
+
+胡伟煌个人博客 https://www.huweihuang.com/
+
+Aylei's Blog https://aleiwu.com/
+
+运维之美 https://www.hi-linux.com/
+
+Howtoing运维教程 https://www.howtoing.com/
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
 
 --------------------------------------------------
 --------------------------------------------------
