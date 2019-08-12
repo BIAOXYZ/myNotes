@@ -8,6 +8,8 @@
  - https://space.bilibili.com/250858633/
  - https://www.ixigua.com/c/user/6806857445/
  
+如何评价华农兄弟的弟弟金洋兄弟开始回家拍短视频？ - 知乎 https://www.zhihu.com/question/338503395  -->  【累觉不爱。还有那一大波赶海类的视频，只看了四五个就不看了。有功利之心不可怕，可怕的是功利心太重了。】
+
 ## 手工耿
 
 如何评价快手红人「废材爱迪生」手工耿？ - 知乎 https://www.zhihu.com/question/296417217
