@@ -37,3 +37,8 @@ Kata Containers https://github.com/kata-containers
 Kata Containers https://www.binss.me/blog/what-is-kata-containers/
 
 初识 Kata Containers https://www.hi-linux.com/posts/23259.html
+
+# LightVM
+
+启动仅需2.3ms比Docker还快的新技术，能否改变容器市场格局？ https://www.kubernetes.org.cn/3222.html
+
