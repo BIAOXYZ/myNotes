@@ -63,7 +63,8 @@ dig into implemention of the go programming language https://github.com/tiancaia
 
 --------------------------------------------------
 
-《The Way to Go》中文译本，中文正式名《Go 入门指南》 https://github.com/Unknwon/the-way-to-go_ZH_CN
+- 《The Way to Go》中文译本，中文正式名《Go 入门指南》 https://github.com/Unknwon/the-way-to-go_ZH_CN
+- Go 入门指南 -- Github 上《The Way to Go》中文译本的镜像，优化了排版 https://learnku.com/docs/the-way-to-go
 
 --------------------------------------------------
 
