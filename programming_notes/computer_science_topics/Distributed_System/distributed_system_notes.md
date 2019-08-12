@@ -93,6 +93,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 Golang implementation of the Raft consensus protocol https://github.com/hashicorp/raft
 
+A feature complete and high performance multi-group Raft library in Go. https://github.com/lni/dragonboat
+
 ## SOFAJRaft
 
 SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft
