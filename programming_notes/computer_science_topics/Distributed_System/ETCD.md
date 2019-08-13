@@ -2,6 +2,8 @@
 
 # ETCD官方
 
+ETCD https://coreos.com/etcd/  -->  现在会重定向到 https://etcd.io/ 了，反正都一样。
+
 Demo https://coreos.com/etcd/docs/latest/demo.html
 
 Administration https://coreos.com/etcd/docs/latest/v2/admin_guide.html
@@ -25,6 +27,10 @@ Etcd官方文档中文版 http://etcd.doczh.cn/ ||| from 技术文档中文版 h
 - 为什么是etcd? http://etcd.doczh.cn/documentation/learning/why.html
   * > 『"etcd"这个名字源于两个想法，即　unix "/etc" 文件夹和分布式系统"d"istibuted。 "/etc" 文件夹为单个系统存储配置数据的地方，而 etcd 存储大规模分布式系统的配置信息。因此，"d"istibuted　的 "/etc" ，是为 "etcd"。』
 
+Etcd 使用入门 https://www.hi-linux.com/posts/40915.html
+
+etcd 使用入门 https://cizixs.com/2016/08/02/intro-to-etcd/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ETCD源码
@@ -33,6 +39,8 @@ raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
 > "raft 从何学起呢？工欲善其事，必先利其器。当然首先看 paper 啦。主要的 paper 有两个 raft 和 thesis。相关的资料站点为 https://raft.github.io/。要是嫌弃这个站点 raft 的可视化做得不带好，还有一个比较详细的 http://thesecretlivesofdata.com/raft/ 可以看。"
 
 Etcd 架构与实现解析 http://jolestar.com/etcd-architecture/
+
+高可用分布式存储 etcd 的实现原理 https://draveness.me/etcd-introduction
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
