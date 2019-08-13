@@ -13,6 +13,8 @@ http://blog.csdn.net/u011641885/article/details/45576533
 
 Linux下目录栈操作详解 https://blog.csdn.net/xiaoying5191/article/details/79482811
 
+【:star:】 Linux命令行技巧——使用目录栈进行导航 https://blog.csdn.net/sch0120/article/details/80607747
+
 # 实战
 
 ## 使用`pushd .`（或`pushd $PWD`，但是明显前者简单。。。）将“已经确定的常用目录推入目录栈”。
