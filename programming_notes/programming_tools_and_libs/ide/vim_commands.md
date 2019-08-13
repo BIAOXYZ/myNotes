@@ -235,6 +235,10 @@ vi/vim使用进阶: 目录 https://blog.easwy.com/archives/advanced-vim-skills-c
 
 安装Exuberant Ctags及Tag List插件 https://blog.csdn.net/dream2009gd/article/details/44102227
 
+## Vim定制版
+
+【B站的vim-vide】Lightest vimrc, while strong enough. 最轻的vim配置，却足够强！ https://github.com/bilibili/vim-vide
+
 ----------------------------------------------------------------------------------------------------
 # 3.vim多窗口操作:
 ----------------------------------------------------------------------------------------------------
