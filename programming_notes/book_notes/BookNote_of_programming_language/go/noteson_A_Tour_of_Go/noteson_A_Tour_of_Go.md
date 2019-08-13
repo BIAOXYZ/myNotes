@@ -196,6 +196,10 @@ func main() {
 1.2676506002282295e+29
 ```
 
+### ~~恭喜！~~
+
+https://tour.go-zh.org/basics/17
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## `##` Flow control statements: for, if, else, switch and defer || 流程控制语句：for、if、else、switch 和 defer
@@ -502,6 +506,10 @@ done
 1
 0
 ```
+
+### ~~恭喜！~~
+
+https://tour.go-zh.org/flowcontrol/14
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -1149,3 +1157,240 @@ func main() {
 256
 512
 ```
+
+### 练习：切片
+
+https://tour.go-zh.org/moretypes/18
+
+### 映射
+
+https://tour.go-zh.org/moretypes/19
+- > 映射将`键`映射到`值`。
+- > 映射的零值为 `nil` 。`nil 映射`既没有键，也不能添加键。
+- > `make` 函数会返回给定类型的映射，并将其初始化备用。
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	Lat, Long float64
+}
+
+var m map[string]Vertex
+
+func main() {
+	m = make(map[string]Vertex)
+	m["Bell Labs"] = Vertex{
+		40.68433, -74.39967,
+	}
+	fmt.Println(m["Bell Labs"])
+}
+--------------------------------------------------
+//输出：
+{40.68433 -74.39967}
+```
+
+### 映射的文法
+
+https://tour.go-zh.org/moretypes/20
+> 映射的文法与结构体相似，不过必须有键名。
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	Lat, Long float64
+}
+
+var m = map[string]Vertex{
+	"Bell Labs": Vertex{
+		40.68433, -74.39967,
+	},
+	"Google": Vertex{
+		37.42202, -122.08408,
+	},
+}
+
+func main() {
+	fmt.Println(m)
+}
+--------------------------------------------------
+//输出：
+map[Bell Labs:{40.68433 -74.39967} Google:{37.42202 -122.08408}]
+```
+
+### 映射的文法（续）
+
+https://tour.go-zh.org/moretypes/21
+> 若顶级类型只是一个类型名，你可以在文法的元素中省略它。
+
+Map literals continued https://tour.golang.org/moretypes/21
+> If the top-level type is just a type name, you can omit it from the elements of the literal.
+
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	Lat, Long float64
+}
+
+var m = map[string]Vertex{
+	"Bell Labs": {40.68433, -74.39967},
+	"Google":    {37.42202, -122.08408},
+}
+
+func main() {
+	fmt.Println(m)
+}
+--------------------------------------------------
+//输出：
+map[Bell Labs:{40.68433 -74.39967} Google:{37.42202 -122.08408}]
+```
+
+### 修改映射
+
+https://tour.go-zh.org/moretypes/22
+- > 在映射 `m` 中插入或修改元素：
+  ```go
+  m[key] = elem
+  ```
+  获取元素：
+  ```go
+  elem = m[key]
+  ```
+  删除元素：
+  ```go
+  delete(m, key)
+  ```
+- > 通过双赋值检测某个键是否存在：
+  ```go
+  elem, ok = m[key]
+  ```
+  若 `key` 在 `m` 中，`ok` 为 `true` ；否则，`ok` 为 `false`。若 `key` 不在映射中，那么 `elem` 是该映射元素类型的`零值`。
+- > 同样的，***当从映射中读取某个不存在的键时，结果是映射的元素类型的`零值`***。
+- > 注 ：若 `elem` 或 `ok` 还未声明，你可以使用短变量声明：
+  ```go
+  elem, ok := m[key]
+  ```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	m := make(map[string]int)
+
+	m["Answer"] = 42
+	fmt.Println("The value:", m["Answer"])
+
+	m["Answer"] = 48
+	fmt.Println("The value:", m["Answer"])
+
+	delete(m, "Answer")
+	fmt.Println("The value:", m["Answer"])
+
+	v, ok := m["Answer"]
+	fmt.Println("The value:", v, "Present?", ok)
+}
+--------------------------------------------------
+//输出：
+The value: 42
+The value: 48
+The value: 0
+The value: 0 Present? false
+```
+
+### 练习：映射
+
+https://tour.go-zh.org/moretypes/23
+
+### 函数值
+
+https://tour.go-zh.org/moretypes/24
+- > 函数也是***值***。它们可以像其它值一样传递。
+- > 函数值可以用作函数的参数或返回值。
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func compute(fn func(float64, float64) float64) float64 {
+	return fn(3, 4)
+}
+
+func main() {
+	hypot := func(x, y float64) float64 {
+		return math.Sqrt(x*x + y*y)
+	}
+	fmt.Println(hypot(5, 12))
+
+	fmt.Println(compute(hypot))
+	fmt.Println(compute(math.Pow))
+}
+--------------------------------------------------
+//输出：
+13
+5
+81
+```
+
+### 函数的闭包
+
+https://tour.go-zh.org/moretypes/25
+- > Go 函数可以是一个闭包。闭包是一个函数值，它引用了其函数体之外的变量。该函数可以访问并赋予其引用的变量的值，换句话说，该函数被这些变量“绑定”在一起。
+- > 例如，函数 `adder` 返回一个闭包。每个闭包都被绑定在其各自的 `sum` 变量上。
+
+Function closures https://tour.golang.org/moretypes/25
+- > Go functions may be closures. A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables; in this sense the function is "bound" to the variables.
+- > For example, the `adder` function returns a closure. Each closure is bound to its own `sum` variable.
+
+```go
+package main
+
+import "fmt"
+
+func adder() func(int) int {
+	sum := 0
+	return func(x int) int {
+		sum += x
+		return sum
+	}
+}
+
+func main() {
+	pos, neg := adder(), adder()
+	for i := 0; i < 10; i++ {
+		fmt.Println(
+			pos(i),
+			neg(-2*i),
+		)
+	}
+}
+--------------------------------------------------
+//输出：
+0 0
+1 -2
+3 -6
+6 -12
+10 -20
+15 -30
+21 -42
+28 -56
+36 -72
+45 -90
+```
+
+### 练习：斐波纳契闭包
+
+https://tour.go-zh.org/moretypes/26
+
+### ~~恭喜！~~
+
+https://tour.go-zh.org/moretypes/27
