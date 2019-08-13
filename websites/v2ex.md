@@ -71,9 +71,12 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
   
 求大佬推荐好看的新老番！ https://www.v2ex.com/t/582232
 
-上次开源了今日热榜的 API 接口，这次直接开源热榜 GO 后端代码吧 https://www.v2ex.com/t/589420
+https://github.com/ruanyf/weekly/issues/669
+> [极简效率] Tophub.today ：聚合全网新闻社区热点排行榜 ！ https://www.v2ex.com/t/543670
+>> 今日热榜 https://tophub.today/
+
+上次开源了今日热榜的 API 接口，这次直接开源热榜 GO 后端代码吧 https://www.v2ex.com/t/589420 || https://github.com/timeromantic/TopList
 > 今日热榜，一个获取各大热门网站热门头条的聚合网站，使用Go语言编写，多协程异步快速抓取信息，预览：https://www.printf520.com/hot.html
->> https://github.com/timeromantic/TopList
 
 上班摸鱼、路上打发时间，进来看看吧 https://www.v2ex.com/t/583885
 > 前两天有 v 友开放了 API，聚合了一些网站热门
