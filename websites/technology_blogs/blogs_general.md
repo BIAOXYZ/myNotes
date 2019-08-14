@@ -173,6 +173,9 @@ Howtoing运维教程 https://www.howtoing.com/
 
 Cizixs Write Here https://cizixs.com/
 
+世民谈云计算（微信公众号ID：SammyTalksAboutCloud） https://www.cnblogs.com/sammyliu/
+- 你云我云•兄弟夜谈会 第一季 企业云 https://www.cnblogs.com/sammyliu/p/10292133.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
