@@ -351,8 +351,4 @@ docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/ar
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-https://www.cnblogs.com/sparkdev/tag/docker/default.html
-- RunC 简介 https://www.cnblogs.com/sparkdev/p/9032209.html
-- 从 docker 到 runC https://www.cnblogs.com/sparkdev/p/9129334.html
-
 Container Training https://container.training/
