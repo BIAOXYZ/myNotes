@@ -243,7 +243,7 @@ A system for verifying outsourced computations, and applying SNARKs. Simplified 
 ### ansible
 http://www.ansible.com.cn/
 
-### pbd
+### pdb
 
 <零基础学习PDB命令行调试Python代码> http://python.jobbole.com/81184/
 
@@ -284,6 +284,10 @@ https://www.pycryptodome.org/en/latest/
 
 ### hmac
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0015108777177966ef0f4f8510a41b3b8c48cdcf7047b2d000
+
+### Paramiko
+
+Welcome to Paramiko!¶ http://www.paramiko.org/
 
 --------------------------------------------------
 ## python bitcoin related libs
