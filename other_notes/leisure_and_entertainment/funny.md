@@ -8,6 +8,11 @@
 
 有的群，真不是人待的地方 https://mp.weixin.qq.com/s/XSnTikhmnMDbT10Wfi-Yyw
 
+# from wechat
+
+程序猿的鄙视链 https://mp.weixin.qq.com/s/jtfeeRDPZG1rQn9LAzTxAA
+> ![](http://mmbiz.qpic.cn/mmbiz/NVvB3l3e9aFONL41E69CKQeqk9EqPWn4TbjdQTzZ1mibygSKacQ1SsBO69cIq5MDyF8cj4hauAJDt1TDBmk5lEA/640)
+
 # from IT websites
 
 微软Visual Studio 2019安装器图片“绿帽子”问题被修复 https://www.ithome.com/0/414/070.htm
