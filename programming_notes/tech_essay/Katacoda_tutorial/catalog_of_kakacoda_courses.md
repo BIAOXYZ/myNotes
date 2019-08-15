@@ -9,5 +9,6 @@ Red Hat OpenShift® - Interactive Learning Portal https://learn.openshift.com/ |
   
 # 非机构课程
 
-Kubernetes: Observability 【By Jonathan Johnson】 https://www.katacoda.com/javajon/courses/kubernetes-observability/
-- Logging with EFK https://www.katacoda.com/javajon/courses/kubernetes-observability/efk
+Jonathan Johnson @javajon https://www.katacoda.com/javajon
+- Kubernetes: Observability https://www.katacoda.com/javajon/courses/kubernetes-observability/
+  * Logging with EFK https://www.katacoda.com/javajon/courses/kubernetes-observability/efk
