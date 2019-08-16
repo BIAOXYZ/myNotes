@@ -200,6 +200,10 @@ Introduction to Hugo Templating https://gohugo.io/templates/introduction/
 > The following is only a primer on Go Templates. For an in-depth look into Go Templates, check the official Go docs.
 >> Package template https://golang.org/pkg/text/template/
 
+### go泛型
+
+Go：为何带来泛型 https://juejin.im/entry/5d48e24ce51d453bc470de72
+
 --------------------------------------------------
 
 ### go环境变量
