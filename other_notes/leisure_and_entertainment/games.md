@@ -1,6 +1,15 @@
 
 # DOTA & DOTA2 
 
+## 工具类
+
+G:G (ggscore.com) – eSports project about the most popular PC games. https://ggscore.com/en/about
+- https://ggscore.com/zh/dota-2/team
+
+TrackDota https://www.trackdota.com/
+
+## 新闻消息类
+
 电子竞技有哪些玄学？ - 疯癫的A兵者的回答 - 知乎 https://www.zhihu.com/question/67225512/answer/345458974
 
 尘归尘，DOTA2不再支持XP与Vista等旧版操作系统 http://dota2.sgamer.com/news/201903/170203.html 【2019.03.08】
