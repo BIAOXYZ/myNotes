@@ -10,6 +10,8 @@ master $ pwd
 /root
 master $ ls
 deployment.yaml  ingress-rules.yaml  ingress.yaml  service.yaml
+
+// 上面的service.yaml没有用，它的内容已经被deployment.yaml完全包括了。估计就是教程的历史遗留问题，可能早期是分开的。
 ```
 
 # Step 1 - Create Deployment
@@ -341,13 +343,13 @@ webapp-ingress   my.kubernetes.example             80      4s
 With the Ingress rules applied, the traffic will be routed to the defined place.
 
 The first request will be processed by the **webapp1** deployment.
-> curl -H "Host: my.kubernetes.example" 172.17.0.18/webapp1
+> curl -H "Host: my.kubernetes.example" 172.17.0.22/webapp1
 
 The second request will be processed by the **webapp2** deployment.
-> curl -H "Host: my.kubernetes.example" 172.17.0.18/webapp2
+> curl -H "Host: my.kubernetes.example" 172.17.0.22/webapp2
 
 Finally, all other requests will be processed by **webapp3** deployment.
-> curl -H "Host: my.kubernetes.example" 172.17.0.18
+> curl -H "Host: my.kubernetes.example" 172.17.0.22
 
 ```
 // Step 4 过程 
