@@ -28,6 +28,12 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 买活重返TI:收购前Forward圆选手梦想 https://www.bilibili.com/video/av60735875
 > 我们在短暂的协商后迅速达成一致，将对Forward Gaming进行收购，并将队伍名字更换为Newbee，他们也将代表Newbee征战在8月15日-25日在上海举行的TI9正赛，希望他们能继续为Newbee带来荣誉。
 
+### TI6
+
+我去了两趟西雅图看Ti，但是不愿意到上海看是为什么？ https://www.acfun.cn/v/ac10754053 || https://www.bilibili.com/video/av63832992
+
+【wings夺冠最后5分钟】单车和DC全程高能无尿点解说 https://www.bilibili.com/video/av5822278/
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
