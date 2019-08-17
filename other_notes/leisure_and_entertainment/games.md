@@ -21,7 +21,12 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 - DOTA2：再引争议！VG拿到震中杯Major冠军，MVP却又给亚军！ http://www.sohu.com/a/324059377_100124359
 - Dota2 ESL孟买站中国战队夺冠，主办方把MVP颁给亚军引不满 http://www.guancha.cn/sports/2019_04_22_498658.shtml
 
+### TI9
+
 《Dota2》TI9选手年龄出炉：最小还是00后，“最老”29岁 https://www.ithome.com/0/433/656.htm
+
+买活重返TI:收购前Forward圆选手梦想 https://www.bilibili.com/video/av60735875
+> 我们在短暂的协商后迅速达成一致，将对Forward Gaming进行收购，并将队伍名字更换为Newbee，他们也将代表Newbee征战在8月15日-25日在上海举行的TI9正赛，希望他们能继续为Newbee带来荣誉。
 
 # 马里奥
 
