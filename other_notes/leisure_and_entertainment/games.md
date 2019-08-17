@@ -34,6 +34,8 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 
 【wings夺冠最后5分钟】单车和DC全程高能无尿点解说 https://www.bilibili.com/video/av5822278/
 
+DOTA2 TI6总决赛：WINGS VS DC https://www.bilibili.com/video/av30652596/
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
