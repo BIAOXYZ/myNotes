@@ -1,15 +1,93 @@
+# 0. 参考链接
 
-# 参考链接
+## 0.1 主参考链接
 
-## 主参考链接
+怎样在 CentOS 7.0 上安装和配置 VNC 服务器 https://linux.cn/article-5335-1.html 【1】 --> 主参考链接
 
-怎样在 CentOS 7.0 上安装和配置 VNC 服务器 https://linux.cn/article-5335-1.html
+## 0.2 其他参考链接
 
-## 其他参考链接
+- CentOS7.2安装VNC，让Windows远程连接CentOS 7.2 图形化界面 https://blog.51cto.com/12217917/2060252 【2】 --> 次要参考链接
+- CentOS 7 配置 VNC Server https://qizhanming.com/blog/2018/03/06/how-to-config-vnc-server-on-centos-7 【3】 --> 和【2】基本一样，没有图，但是内容比【2】多一丢丢。最关键的是，后面从Window上用VNC客户端连VNC服务器端的时候，【2】里的`IP:Port`的方法是不对的，【3】里的`IP:数字`才对（更具体点，【2】里使用的`IP:5901`不对，**直接用`IP:1`就好!!!**-->但是不知道有没有可能是因为不同的VNC客户端填法不一样的原因？反正不管了。。。）。
+- VNC（虚拟网络计算） https://wiki.centos.org/zh/HowTos/VNC-Server 【4】--> 这个留着当参考了。
+- `TigerVNC 1.9.0` Release https://github.com/TigerVNC/tigervnc/releases 【5】 --> 虽然也有人推荐RealVNC，但是想了想还是选择了客户端也用TigerVNC（实际名字叫`vncviewer`）。原因有二：第一，TigerVNC开源的，RealVNC是商业软件（[Comparison_of_remote_desktop_software](https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software)）；第二，服务器端既然用的TigerVNC，客户端也用TigerVNC吧。
 
-CentOS7.2安装VNC，让Windows远程连接CentOS 7.2 图形化界面 https://blog.51cto.com/12217917/2060252
+## 0.3 问题
 
-# 实战过程
+### 0.3.1 `vncserver@1.service`起不来
+
+周六在家安好后，搞容器的debuger去了。我确定过程中`vncserver@1.service`已经start和enable了。但是周一来到单位后查了下`vncserver@1.service`的状态发现没起来。这就罢了，然后执行`systemctl start vncserver@1.service`都起不来。根据提示用`journalctl -xe`看了下日志，还没看完呢，网络闪断了一下，MobaXterm连接断开了。重连上以后，也不知道怎么想的，鬼使神差执行了一下`systemctl daemon-reload`，然后再查了下服务状态，好了。。。
+
+```
+[root@temptest ~]# systemctl status vncserver@1.service
+● vncserver@1.service - Remote desktop service (VNC)
+   Loaded: loaded (/usr/lib/systemd/system/vncserver@.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+[root@temptest ~]# systemctl start vncserver@1.service
+Job for vncserver@1.service failed because the control process exited with error code. See "systemctl status vncserver@1.service" and "journalctl -xe" for details.
+[root@temptest ~]# journalctl -xe
+-- A new session with the ID 62 has been created for the user root.
+--
+-- The leading process of the session is 9114.
+Jul 07 21:13:24 temptest.sl.cloud9.ibm.com systemd[1]: Started Session 62 of user root.
+-- Subject: Unit session-62.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+--
+-- Unit session-62.scope has finished starting up.
+--
+-- The start-up result is done.
+Jul 07 21:13:24 temptest.sl.cloud9.ibm.com sshd[9114]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com polkitd[2579]: Registered Authentication Agent for unix-process:9858:19779676 (syste
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com systemd[1]: Starting Remote desktop service (VNC)...
+-- Subject: Unit vncserver@1.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+--
+-- Unit vncserver@1.service has begun starting up.
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com runuser[9867]: runuser: user <USER> does not exist
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com systemd[1]: vncserver@1.service: control process exited, code=exited status=1
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com systemd[1]: Failed to start Remote desktop service (VNC).
+-- Subject: Unit vncserver@1.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+--
+-- Unit vncserver@1.service has failed.
+--
+-- The result is failed.
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com systemd[1]: Unit vncserver@1.service entered failed state.
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com systemd[1]: vncserver@1.service failed.
+Jul 07 21:15:12 temptest.sl.cloud9.ibm.com polkitd[2579]: Unregistered Authentication Agent for unix-process:9858:19779676 (sys
+lines 1661-1692/1692 (END)
+```
+
+解决方法是执行了一下`systemctl daemon-reload`就好了（我看了几遍这个现象前后的过程，确定**上个`systemctl start vncserver@1.service`失败后没有再启动过这个服务**——也就是说，看现象是只`systemctl daemon-reload`一下就好了。不过这个也无所谓了，反正要是还是不行，就再启动一下服务。。。不行再daemon-reload再启）。
+```
+[root@temptest ~]# systemctl daemon-reload
+[root@temptest ~]# systemctl status vncserver@:1.service
+● vncserver@:1.service - Remote desktop service (VNC)
+   Loaded: loaded (/etc/systemd/system/vncserver@:1.service; enabled; vendor preset: disabled)
+   Active: active (running) since Fri 2019-07-05 14:41:37 CDT; 2 days ago
+ Main PID: 653 (Xvnc)
+   CGroup: /system.slice/system-vncserver.slice/vncserver@:1.service
+           ‣ 653 /usr/bin/Xvnc :1 -auth /root/.Xauthority -desktop temptest.sl.cloud9.ibm.com:1 (root) -fp catalogue:/etc/X1...
+
+Jul 05 14:41:34 temptest.sl.cloud9.ibm.com systemd[1]: Starting Remote desktop service (VNC)...
+Jul 05 14:41:37 temptest.sl.cloud9.ibm.com systemd[1]: Started Remote desktop service (VNC).
+
+// 看了下防火墙一直没开过，所以肯定不是防火墙有啥影响。
+[root@temptest ~]# systemctl status firewalld
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
+   Active: inactive (dead)
+     Docs: man:firewalld(1)
+```
+
+
+## 0.4 TODO
+
+我发现了，绝大部分（不过真的不是100%，和工作紧密相关的topic或者很感兴趣的topic还是会跟下去直到解决或部分解决）TODO都是没有往下继续跟踪的。对不起，TODO是不可能DO的，这辈子都不可能DO的:dog:。
+
+# 1. 配置CentOS上的VNC server端
 
 ```
 [root@temptest packages]# yum check-update
@@ -82,4 +160,71 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/vncserver@:1.se
    Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
    Active: inactive (dead)
      Docs: man:firewalld(1)
+```
+
+至此，VNC服务器端安装完成，此时再下个firefox就可以直接打开了（不过firefox能打开主要是X11 Window System装了的原因吧。。。）
+```
+yum install -y firefox
+firefox
+```
+
+# 2. 配置VNC的客户端
+
+## 2.1 配置Windows 10上的VNC客户端
+
+```
+客户端访问
+下载 VNC Viewer
+
+设置如下：
+
+VNC Server: YOUR_SERVER_IP:1
+Name: YOUR_Display_1
+
+连接之后，输入 admin 的 vpnpasswd，既可看到界面了。
+```
+
+## 2.2 配置CentOS服务器本机上的VNC客户端
+
+```
+[root@temptest packages]# wget https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.9.0.x86_64.tar.gz
+[root@temptest packages]# tar zxvf download_file\?file_path\=tigervnc-1.9.0.x86_64.tar.gz
+[root@temptest packages]# ll
+total 9128
+-rw-r--r--. 1 root root 9324157 Jul 16  2018 download_file?file_path=tigervnc-1.9.0.x86_64.tar.gz
+drwxrwxr-x. 3 4011 4011    4096 Jul 16  2018 tigervnc-1.9.0.x86_64
+
+[root@temptest packages]# cd tigervnc-1.9.0.x86_64/
+[root@temptest tigervnc-1.9.0.x86_64]# ll
+total 4
+drwxrwxr-x. 6 4011 4011 4096 Jul 16  2018 usr
+
+[root@temptest tigervnc-1.9.0.x86_64]# cd usr/
+[root@temptest usr]# ll
+total 16
+drwxrwxr-x. 2 4011 4011 4096 Jul 16  2018 bin
+drwxrwxr-x. 2 4011 4011 4096 Jul 16  2018 lib
+drwxrwxr-x. 3 4011 4011 4096 Jul 16  2018 lib64
+drwxrwxr-x. 8 4011 4011 4096 Jul 16  2018 share
+
+[root@temptest usr]# cd bin/
+[root@temptest bin]# ll
+total 16948
+-rwxr-xr-x. 1 4011 4011  215264 Jul 16  2018 vncconfig
+-rwxr-xr-x. 1 4011 4011  115992 Jul 16  2018 vncpasswd
+-rwxr-xr-x. 1 4011 4011   24695 Jul 16  2018 vncserver
+-rwxr-xr-x. 1 4011 4011 5452672 Jul 16  2018 vncviewer
+-rwxr-xr-x. 1 4011 4011 3849216 Jul 16  2018 x0vncserver
+-rwxr-xr-x. 1 4011 4011 7644672 Jul 16  2018 Xvnc
+
+[root@temptest bin]# ./vncviewer
+
+TigerVNC Viewer 64-bit v1.9.0
+Built on: 2018-07-16 14:16
+Copyright (C) 1999-2018 TigerVNC Team and many others (see README.rst)
+See http://www.tigervnc.org for information on TigerVNC.
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 71: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 71: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 79: saw unknown, expected number
+
 ```
