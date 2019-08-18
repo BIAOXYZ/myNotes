@@ -78,6 +78,7 @@ Bar Ilan Cryptography Research Group https://github.com/cryptobiu
 
 :octocat: GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目:star: https://github.com/521xueweihan/HelloGitHub || https://hellogithub.com/
 - projects in C
+  - How to create an OS from scratch https://github.com/cfenollosa/os-tutorial
   - Writing a sqlite clone from scratch in C https://cstack.github.io/db_tutorial https://github.com/cstack/db_tutorial
 - projects in Python
   - explainshell: match command-line arguments to their help text https://github.com/idank/explainshell
