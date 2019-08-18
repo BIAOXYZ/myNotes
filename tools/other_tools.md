@@ -39,3 +39,9 @@ textfree https://www.pinger.com/text-free/
 
 小葫芦 https://www.xiaohulu.com/
 - B站 https://xian.xiaohulu.com/rank/?plat=15
+
+惠农网--禽畜肉蛋 https://www.cnhnb.com/hangqing/qcrd/
+- 鸡肉 https://www.cnhnb.com/hangqing/jirou/
+- 猪 https://www.cnhnb.com/hangqing/zhu/
+- 牛 https://www.cnhnb.com/hangqing/niu/
+- 羊 https://www.cnhnb.com/hangqing/yang/
