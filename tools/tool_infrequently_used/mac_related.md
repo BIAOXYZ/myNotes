@@ -64,6 +64,12 @@ Mac 上的“终端”键盘快捷键 https://support.apple.com/zh-cn/guide/term
   | 关闭标签页 | Command-W |
   | 关闭窗口 | Shift-Command-W |
 
+## 快速回到桌面
+
+苹果Mac如何快速显示桌面快捷键及手势 https://jingyan.baidu.com/article/6dad50750fbd22a122e36e44.html
+- > 另外，除了可以用 `command+F3` 来显示桌面以外，我们还可以通过 `Fn+F11` 键来显示桌面。
+- > 用五个手指在触控板上做一个张开的动作，即可显示桌面了。
+
 ## 普通乘号(是`×`，而不是`✖️`)的输入；特殊符号；表情符号
 
 mac快捷键—特殊符号 https://www.jianshu.com/p/09d71ac1a8e4
