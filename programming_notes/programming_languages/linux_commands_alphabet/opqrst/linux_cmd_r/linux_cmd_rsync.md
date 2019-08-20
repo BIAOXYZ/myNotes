@@ -24,3 +24,6 @@ drwxr-x---. 9 root root 4096 Jul 18 02:04 workshop
 ```
 
 Rsync（远程同步）：10 Linux中Rsync命令的实际示例 https://www.howtoing.com/rsync-local-remote-file-synchronization-commands/
+
+rsync 一个超大文件夹“./attachments”过后，怎样检测两台服务器的这个“./attachments”文件夹一模一样 https://www.v2ex.com/t/593361
+- > -c, --checksum skip based on checksum, not mod-time & size <br> 用 rsync -c
