@@ -1,6 +1,12 @@
 
 # debug tool general
 
+## strace
+
+***参见strace命令专门文件***
+
+# debug tool for microservices
+
 Debugging microservices - Squash vs. Telepresence https://www.weave.works/blog/debugging-microservices-squash-vs-telepresence
 - Telepresence https://www.telepresence.io/
 - Squash: The debugger for microservices https://squash.solo.io/
