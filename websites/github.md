@@ -37,6 +37,8 @@ July：请问大家，如何在github上传一张图片？ https://github.com/ju
 
 ## github相关第三方服务
 
+玩转 Github 徽章 https://www.jianshu.com/p/afba6e33e48e
+
 GitHub 仓库浏览计数，仅累计访问总次数（无去重）。 https://github.com/b3log/hits/blob/master/README.md
 > 仓库 README 中添加（请注意将 `b3log/hits` 换成自己的）：
 ```html
