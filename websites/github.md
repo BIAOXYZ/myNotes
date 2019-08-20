@@ -35,6 +35,14 @@ July：请问大家，如何在github上传一张图片？ https://github.com/ju
 
 (Prow) Command Help https://prow.k8s.io/command-help
 
+## github相关第三方服务
+
+GitHub 仓库浏览计数，仅累计访问总次数（无去重）。 https://github.com/b3log/hits/blob/master/README.md
+> 仓库 README 中添加（请注意将 `b3log/hits` 换成自己的）：
+```html
+<a title="Hits" target="_blank" href="https://github.com/b3log/hits"><img src="https://hits.b3log.org/b3log/hits.svg"></a>
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Github Topic
