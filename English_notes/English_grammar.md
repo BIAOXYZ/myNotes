@@ -34,6 +34,13 @@ https://arxiv.org/pdf/1801.10228.pdf
 ## b
 ------------------------------------------------------------
 
+#### boil down to na.(被)归结起来是…；(审判等到最后)表明 [网络]归结为；简化为，归结为；归根到底
+
+- Johnson lays out four things the company needs to do, which you could pretty much boil down to this: Figure out a way to combat Google.
+约翰逊提出微软必须要做的四件事，你可以将这四件事归结为一点，就是全力以赴打击Google。
+- It's a shame, even if it is inevitable, to have all this boil down to one final. Especially a final that was as underwhelming as that.
+虽然是必然的，然而将这一切归总到一场决赛却是令人遗憾的，尤其是这样一场黯淡无光的决赛。
+
 #### by sheer luck [网络]万幸；全凭运气
 > If by sheer luck, I challenge them on a pair of vertices that happen to be different colors, everyone will heave a sigh of relief and we’ll continue with the protocol. 
 https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/
