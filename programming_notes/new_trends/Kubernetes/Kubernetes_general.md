@@ -327,6 +327,9 @@ Kubernetes Nginx Ingress 教程 https://mritd.me/2017/03/04/how-to-use-nginx-ing
 
 实践kubernetes ingress controller的四个例子 https://tonybai.com/2018/06/21/kubernetes-ingress-controller-practice-using-four-examples/
 
+【[:star:][`*`]】 详解k8s组件Ingress边缘路由器并落地到微服务 https://www.cnblogs.com/justmine/p/8991379.html
+- > ![](https://images2018.cnblogs.com/blog/1082769/201805/1082769-20180506230327444-207443165.png)
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetesw网络之DNS
