@@ -28,6 +28,8 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 - Extend the Kubernetes API with CustomResourceDefinitions https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
 - 使用CRD(CustomResourceDefinitions)扩展Kubernetes API https://k8smeetup.github.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions/
 
+- 【From aleiwu】 KubeCon 2019 上海 CRD 相关 Session 小记 https://aleiwu.com/post/kubecon-shanghai-2019/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Operator Framework
