@@ -3,11 +3,13 @@
 
 ![PostgreSQL](https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png)
 
-PostgreSQL(数据库)资料
-https://github.com/ty4z2008/Qix/blob/master/pg.md
-
-<<PostgreSQL 中文资料汇总>>
-https://github.com/francs/PostgreSQL
+PostgreSQL 有哪些经典入门书籍？ - 知乎 https://www.zhihu.com/question/28085660
+- > PostgreSQL 有哪些经典入门书籍？ - 云大学小编的回答 - 知乎 https://www.zhihu.com/question/28085660/answer/193819026
+- > PostgreSQL 有哪些经典入门书籍？ - 廖君的回答 - 知乎 https://www.zhihu.com/question/28085660/answer/60621283
+  * > PostgreSQL(数据库)资料 https://github.com/ty4z2008/Qix/blob/master/pg.md
+- > PostgreSQL 有哪些经典入门书籍？ - francs的回答 - 知乎 https://www.zhihu.com/question/28085660/answer/142689538
+  * > 【by francs】 <<PostgreSQL 中文资料汇总>> https://github.com/francs/PostgreSQL
+    >> PostgreSQL 中文资料汇总.md https://github.com/francs/PostgreSQL/blob/master/PostgreSQL%20%E4%B8%AD%E6%96%87%E8%B5%84%E6%96%99%E6%B1%87%E6%80%BB.md
 
 给PostgreSQL爱好者的参考资料
 http://blog.csdn.net/postgrechina/article/details/49132791
