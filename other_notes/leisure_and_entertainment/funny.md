@@ -1,10 +1,14 @@
 
 # from虎嗅
 
+如何榨取宅男的血 https://www.huxiu.com/article/302827.html || https://mp.weixin.qq.com/s/PprqeGXWe8QbKSr7g8TDRA
+> 几个月前，日本2ch上一位鬼才网友试图进行分析，并发帖声称自己发现了问题的关键：“我想，我知道为什么献血机构不惜专门与动画联动，也要想抽到宅宅的血了。”随后自答：“因为性病风险无限接近0。”
+
 你短信里的性感澳门荷官都是哪儿来的？ https://www.huxiu.com/article/298581.html || https://mp.weixin.qq.com/s/0_tUEqZN6Da_Fhg0ZpV-bg
 - > ![](https://img.huxiucdn.com/article/content/201905/10/144409796396.gif?imageView2/2/w/1000/format/gif/interlace/1/q/85)
 
 马云刘强东王思聪的告白往事 https://mp.weixin.qq.com/s/xCNrKNACokWZvEtvfkljDw
+> ![](https://mmbiz.qpic.cn/mmbiz_jpg/b2YlTLuGbKDmpcnvxWZuk4GCK2qBQibfYvTr6fUlTIjUDN8AMmadurBR5tyKqTnnCq1I6o8KriasYhaHAw7QI9ow/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 有的群，真不是人待的地方 https://mp.weixin.qq.com/s/XSnTikhmnMDbT10Wfi-Yyw
 
