@@ -118,7 +118,10 @@ maven环境快速搭建 https://www.cnblogs.com/fnng/archive/2011/12/02/2272610.
 
 sed命令详解 vim高级技巧 shell编程上 https://www.cnblogs.com/clsn/p/7639841.html
 
-Shell编程进阶篇(完结) https://www.cnblogs.com/clsn/p/8028337.html
+惨绿少年shell文章：
+- Shell编程基础篇-上 https://www.cnblogs.com/clsn/p/7992981.html
+- Shell编程基础篇-下 https://www.cnblogs.com/clsn/p/8006210.html
+- Shell编程进阶篇(完结) https://www.cnblogs.com/clsn/p/8028337.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
