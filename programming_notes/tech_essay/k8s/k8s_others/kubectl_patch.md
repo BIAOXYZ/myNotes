@@ -126,4 +126,77 @@ spec:
       terminationGracePeriodSeconds: 30
 status: {}
 $
+
+
+// 看看这个--export除了省略了status部分，还有啥不同。
+// 仔细对比了下，除了status部分，也就多了三处，此外有两处不同（这五处都在metadata部分）
+$ kubectl get deployment simple -o yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "2"
+  creationTimestamp: "2019-08-23T11:05:13Z"
+  generation: 2
+  labels:
+    app: simple
+  name: simple
+  namespace: default
+  resourceVersion: "809"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/simple
+  uid: c07ba7a6-42b6-4e82-afa7-5c4e7eb66fef
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 3
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: simple
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: simple
+        this: that
+    spec:
+      containers:
+      - image: quay.io/dcooley/simple-app:plain
+        imagePullPolicy: IfNotPresent
+        name: simple
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 3
+  conditions:
+  - lastTransitionTime: "2019-08-23T11:05:24Z"
+    lastUpdateTime: "2019-08-23T11:05:24Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2019-08-23T11:05:13Z"
+    lastUpdateTime: "2019-08-23T11:07:47Z"
+    message: ReplicaSet "simple-5b6495d76" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 2
+  readyReplicas: 3
+  replicas: 3
+  updatedReplicas: 3
+$
 ```
