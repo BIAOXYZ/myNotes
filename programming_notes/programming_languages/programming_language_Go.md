@@ -134,6 +134,9 @@ Tony Bai 一个程序员的心路历程 https://tonybai.com/
 
 骏马金龙--Go语言系列文章 https://www.cnblogs.com/f-ck-need-u/p/9832538.html
 
+run.go: Basic Go Programming Tutorials https://medium.com/rungo
+- 【[:star:][`*`]】 Anatomy of goroutines in Go - Concurrency in Go https://medium.com/rungo/anatomy-of-goroutines-in-go-concurrency-in-go-a4cb9272ff88
+
 # Go语法细节
 
 Go语法速览与实践清单(V0.5) - 王下邀月熊的文章 - 知乎 https://zhuanlan.zhihu.com/p/35085639
