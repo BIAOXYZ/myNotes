@@ -207,6 +207,10 @@ A lightweight, secure, easy-to-use crypto library suitable for constrained envir
 
 --------------------------------------------------
 
+### fishhook
+
+动态修改 C 语言函数的实现 https://draveness.me/fishhook
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
