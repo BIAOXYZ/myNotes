@@ -8,6 +8,11 @@
 - 项目中缓存是如何使用的？为什么要用缓存？缓存使用不当会造成什么后果？ https://github.com/doocs/advanced-java/blob/master/docs/high-concurrency/why-cache.md
 - redis 和 memcached 有什么区别？redis 的线程模型是什么？为什么 redis 单线程却能支撑高并发？ https://github.com/doocs/advanced-java/blob/master/docs/high-concurrency/redis-single-thread-model.md
 
+【from draveness】:
+- Redis 和 I/O 多路复用 https://draveness.me/redis-io-multiplexing
+- Redis 中的事件循环 https://draveness.me/redis-eventloop
+- Redis 是如何处理命令的（客户端） https://draveness.me/redis-cli
+
 # [MongoDB](https://www.mongodb.com/)
 
 ## MongoDB安装与配置
