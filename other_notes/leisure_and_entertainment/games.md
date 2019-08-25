@@ -28,6 +28,10 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 买活重返TI:收购前Forward圆选手梦想 https://www.bilibili.com/video/av60735875
 > 我们在短暂的协商后迅速达成一致，将对Forward Gaming进行收购，并将队伍名字更换为Newbee，他们也将代表Newbee征战在8月15日-25日在上海举行的TI9正赛，希望他们能继续为Newbee带来荣誉。
 
+***【2019-8-25】最终结果：连决赛都没进去。最大的问题还是没人，dota真的是大限将至***。
+- “LGD输了”上热搜，俱乐部官方：亲眼见到梦碎 https://www.ithome.com/0/441/120.htm
+- 2019《Dota 2》OG 3-1击败Liquid最终夺冠，“双冠王”实至名归 https://www.ithome.com/0/441/137.htm
+
 ### TI6
 
 我去了两趟西雅图看Ti，但是不愿意到上海看是为什么？ https://www.acfun.cn/v/ac10754053 || https://www.bilibili.com/video/av63832992
