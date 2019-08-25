@@ -42,6 +42,13 @@ https://www.juzimi.com/ju/1741097
 
 天水围的日与夜 https://baike.baidu.com/item/%E5%A4%A9%E6%B0%B4%E5%9B%B4%E7%9A%84%E6%97%A5%E4%B8%8E%E5%A4%9C
 
+美国工厂/American Factory
+- https://en.wikipedia.org/wiki/American_Factory
+- https://movie.douban.com/subject/30390700/
+- https://www.netflix.com/us-zh/title/81090071
+- 大家看了奥巴马出品的《美国工厂》吗 https://www.v2ex.com/t/594805
+- 《美国工厂》里曹德旺为何坚决拒绝建立工会？ https://www.huxiu.com/article/314913.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # others
