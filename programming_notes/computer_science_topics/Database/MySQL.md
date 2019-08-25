@@ -11,6 +11,12 @@ http://blog.csdn.net/defonds/article/details/48471087
 MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
 > 伯乐在线资源频道 http://hao.jobbole.com/
 
+【from draveness】:
+- 『浅入浅出』MySQL 和 InnoDB https://draveness.me/mysql-innodb
+- 『浅入深出』MySQL 中事务的实现 https://draveness.me/mysql-transaction
+- MySQL 索引设计概要 https://draveness.me/sql-index-intro
+- MySQL 索引性能分析概要 https://draveness.me/sql-index-performance
+
 # mysql索引
 
 MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded
