@@ -301,6 +301,9 @@ From ithome:
 - WIT STUDIO https://zh.moegirl.org/WIT_STUDIO || WIT STUDIO http://bangumi.tv/person/8481 || 谁知道霸权社是啥意思？ https://zhidao.baidu.com/question/1368974541103196019.html 【"指wit studio动画公司，因为因为做了鬼灯和巨人两个季度霸权作品，这只是一种调侃。"】
   * 进击的巨人
 
+
+前方高能！第一名震撼我妈！十大最欢迎日本动画公司 封神之作【硬核排行】 https://www.bilibili.com/video/av63172872/
+
 ## 
 
 成为小说家吧 https://zh.moegirl.org/%E6%88%90%E4%B8%BA%E5%B0%8F%E8%AF%B4%E5%AE%B6%E5%90%A7  -->  【这公司作品的标题都牛逼得不成样子。。。我必须得加上书名号才能体现出来。。。毕竟是诞生了“大蓝胖次”的公司，技术公司啊～】
