@@ -9,5 +9,9 @@ Linus Torvalds https://en.wikiquote.org/wiki/Linus_Torvalds || 林纳斯·托瓦
 https://en.wikiquote.org/wiki/Richard_Feynman
 - `What I cannot create, I do not understand.` -- on his blackboard at the time of death in February 1988; from a photo in the Caltech archives
 
+銀魂 https://zh.wikiquote.org/zh/%E9%8A%80%E9%AD%82
+- > `已經找不回來的東西，留著或是丟下都很難熬，與其怎麼做都痛苦，我寧可選擇保護它而受苦。`
+  >>【于2019年8月25日TI9老干爹被Liquid淘汰，中国战队在家门口举办的TI竟然无缘决赛之后】
+
 专访前《连线》安德森：移动网络是封闭哲学 http://tech.qq.com/a/20130123/000036.htm
 - 安德森：所有重要的科技都是短期内被高估(over-hyped），长期来看则是被低估。网络就是这样，我们总是看到此事重复发生。
