@@ -15,6 +15,10 @@
 
 # [MongoDB](https://www.mongodb.com/)
 
+【from draveness】:
+- 『浅入浅出』MongoDB 和 WiredTiger https://draveness.me/mongodb-wiredtiger
+- 如何从 MongoDB 迁移到 MySQL https://draveness.me/mongodb-to-mysql
+
 ## MongoDB安装与配置
 
 Windows 下 MongoDB 的安装与环境配置 https://blog.csdn.net/klxh2009/article/details/78340422
@@ -62,8 +66,8 @@ https://www.viva64.com/en/b/0542/
 
 LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
 
-浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
-
+【from draveness】:
+- 浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
 
 # [RocksDB](https://rocksdb.org/)
 
@@ -73,6 +77,11 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 # [MyRocks](http://myrocks.io/)
 
 MyRocks及其使用场景分析 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/45652076
+
+# Dynamo
+
+【from draveness】:
+- 分布式键值存储 Dynamo 的实现原理 https://draveness.me/dynamo
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
