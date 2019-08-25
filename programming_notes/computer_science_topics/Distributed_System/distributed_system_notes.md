@@ -8,6 +8,10 @@ Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 分布式系统(Distributed System)资料 https://yq.aliyun.com/articles/8069
 
+【from draveness】【这次这两篇文章干货不多（CAP出处那里还有点错，毕竟这作者不是搞学术的），记录下主要是因为文章里链接比较多，后面懒得找的时候可以直接用】:
+- 分布式一致性与共识算法 https://draveness.me/consensus
+- 分布式事务的实现原理 https://draveness.me/distributed-transaction-principle
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # transaction system
