@@ -568,6 +568,8 @@ kubernetes源码阅读 kubelet初探 - fanbin的文章 - 知乎 https://zhuanlan
 
 🤔 What happens when I type kubectl run? https://github.com/jamiehannaford/what-happens-when-k8s
 
+Kubernetes scheduler学习笔记 https://mp.weixin.qq.com/s/EWXHBDV562qsJcMz1_psRA
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes others
