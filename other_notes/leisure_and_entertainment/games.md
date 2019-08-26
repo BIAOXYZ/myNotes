@@ -32,6 +32,8 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 - “LGD输了”上热搜，俱乐部官方：亲眼见到梦碎 https://www.ithome.com/0/441/120.htm
 - 2019《Dota 2》OG 3-1击败Liquid最终夺冠，“双冠王”实至名归 https://www.ithome.com/0/441/137.htm
 
+2019DOTA2国际邀请赛今日结束 OG战队完成TI连冠 https://mp.weixin.qq.com/s/LpCv0UWTt2geQIHdiNU-lQ
+
 ### TI6
 
 我去了两趟西雅图看Ti，但是不愿意到上海看是为什么？ https://www.acfun.cn/v/ac10754053 || https://www.bilibili.com/video/av63832992
