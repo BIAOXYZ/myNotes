@@ -1,8 +1,9 @@
 
 # From CB
 
-网友花了14个小时制作长春长生销售分布图 - 人物 - cnBeta.COM https://www.cnbeta.com/articles/tech/749691.htm
-- https://github.com/fuckcqcs/fuckcqcs
+网友花了14个小时制作长春长生销售分布图 - 人物 - cnBeta.COM https://www.cnbeta.com/articles/tech/749691.htm || https://github.com/fuckcqcs/fuckcqcs
+
+男子浏览街景地图发现亡父照片 https://www.ithome.com/0/441/329.htm
 
 # From Acfun
 
