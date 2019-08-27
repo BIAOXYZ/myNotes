@@ -180,6 +180,8 @@ From ithome:
 擅长捉弄人的(原)高木同学 https://zh.moegirl.org/%E6%93%85%E9%95%BF%E6%8D%89%E5%BC%84%E4%BA%BA%E7%9A%84(%E5%8E%9F)%E9%AB%98%E6%9C%A8%E5%90%8C%E5%AD%A6
 > 真·狗粮番。都结婚了还生了个女儿[小千](https://zh.moegirl.org/%E5%B0%8F%E5%8D%83(%E6%93%85%E9%95%BF%E6%8D%89%E5%BC%84%E4%BA%BA%E7%9A%84%E9%AB%98%E6%9C%A8%E5%90%8C%E5%AD%A6))。
 
+青涩懵懂的青春，是互相捉弄的小心思 https://www.bilibili.com/blackboard/topic/activity-FuPn3_U4G.html  -->  【《擅长捉弄的西片太太》专属推荐页面都有了～】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 潜行吧!奈亚子
