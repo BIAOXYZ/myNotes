@@ -28,6 +28,9 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
 
 # 数据库相关知识
 
+【from draveness】
+- 浅谈数据库并发控制 - 锁和 MVCC https://draveness.me/database-concurrency-control
+
 ## 事务
 
 ### 两阶段提交
