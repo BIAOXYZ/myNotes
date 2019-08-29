@@ -523,6 +523,10 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 - K8S 源码探秘 之 命令行解析工具 cobra https://blog.csdn.net/shida_csdn/article/details/82979697
 - 基于 sample-controller 实现自定义 CRD 控制器（Operator）的一般步骤 https://blog.csdn.net/shida_csdn/article/details/87102801
 
+【by cloudvtech】：
+- kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https://blog.csdn.net/cloudvtech/article/details/80277960
+- kubernetes系列之十六：Kubernetes CRD sample-controller的编译和测试 https://blog.csdn.net/cloudvtech/article/details/80466656
+
 【by 哎_小羊_168】：
 - Kubernetes CRD (CustomResourceDefinition) 自定义资源类型 https://blog.csdn.net/aixiaoyang168/article/details/81875907
 - 使用 client-go 对 Kubernetes 进行自定义开发及源码分析 https://blog.csdn.net/aixiaoyang168/article/details/84752005

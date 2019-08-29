@@ -92,8 +92,6 @@ A resource tracking a number of Operators out in the wild. https://github.com/op
 
 Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
 
-kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https://blog.csdn.net/cloudvtech/article/details/80277960
-
 ----------------------------------------------------------------------------------------------------
 
 - 如何从零开始编写一个Kubernetes CRD http://www.servicemesher.com/blog/kubernetes-crd-quick-start/
