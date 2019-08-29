@@ -4,5 +4,14 @@
 - `firewall-cmd`
 
 # 已有书籍类链接：
+
 - 【Linux就该这么学】 第8章 Iptables与Firewalld防火墙。 https://www.linuxprobe.com/chapter-08.html
 - 【鸟哥的Linux 私房菜】 第九章、防火墙与 NAT 服务器 http://cn.linux.vbird.org/linux_server/0250simple_firewall.php
+
+# 快看google一下`iptables`炸出来多少linux发行版的wiki链接，就这我是只翻了前两页。
+
+- Iptables (简体中文) https://wiki.archlinux.org/index.php/Iptables_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+- iptables - Debian Wiki https://wiki.debian.org/iptables
+- CentOS wiki HowTos/Network/IPTables
+  * https://wiki.centos.org/HowTos/Network/IPTables
+  * https://wiki.centos.org/zh/HowTos/Network/IPTables
