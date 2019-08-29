@@ -5,6 +5,8 @@
 
 # 《水浒传》
 
+《水浒传》源流考变 - 王虎的文章 - 知乎 https://zhuanlan.zhihu.com/p/36985885
+
 ## 人物
 
 仇琼英 https://baike.baidu.com/item/%E4%BB%87%E7%90%BC%E8%8B%B1/3517562
