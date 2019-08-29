@@ -7,7 +7,7 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## docker安装
+## [CentOS docker安装](https://docs.docker.com/install/linux/docker-ce/centos/)
 
 - 卸载旧版本
 ```
@@ -24,11 +24,14 @@ sudo yum makecache fast
 
 sudo yum install docker-ce
 ```
+> //方便版（实际上最后一步只装docker-ce会把docker-ce-cli和containerd.io当依赖一起装了。）：
+>> `yum install -y yum-utils device-mapper-persistent-data lvm2 && yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo && yum install -y docker-ce docker-ce-cli containerd.io`
+
 
 - 启动 Docker CE
 ```
-// sudo systemctl enable docker
-// sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl start docker
 
 未执行，应该是现在新版默认安装完就启动 
 ```
