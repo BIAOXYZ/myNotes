@@ -224,6 +224,13 @@ https://www.cnblogs.com/lienhua34/category/607035.html
 弱类型、强类型、动态类型、静态类型语言的区别是什么？ - 知乎
 https://www.zhihu.com/question/19918532
 
+what is the difference between function declaration and signature? https://stackoverflow.com/questions/2322736/what-is-the-difference-between-function-declaration-and-signature
+> A function declaration is the prototype for a function (or it can come from the function definition if no prototype has been seen by the compiler at that point) - it includes the return type, the name of the function and the types of the parameters (optionally in C).
+>
+> A function signature is the parts of the function declaration that the compiler uses to perform overload resolution. Since multiple functions might have the same name (ie., they're overloaded), the compiler needs a way to determine which of several possible functions with a particular name a function call should resolve to. The signature is what the compiler considers in that overload resolution. 
+> 
+> Note that the return type is not part of the function signature. As the standard says in a footnote, "Function signatures do not include return type, because that does not participate in overload resolution".
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 堆，栈等
