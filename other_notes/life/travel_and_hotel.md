@@ -6,7 +6,9 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# visa
+# visa and passport
+
+Chinese Travel Document https://en.wikipedia.org/wiki/Chinese_Travel_Document 【[中华人民共和国旅行证]()】
 
 中国首发！5月1日起，日本旅游签证最新变化，目测一大波中国游客要登岛！ https://mp.weixin.qq.com/s/2rd8EHO3RVYPRCnDbRcYNw
 
