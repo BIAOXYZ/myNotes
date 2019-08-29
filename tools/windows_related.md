@@ -11,6 +11,13 @@ windows10下有哪些必须掌握的快捷键？ - 小众的回答 - 知乎 http
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Windows 自带工具
+
+Win10自带录屏功能怎么用 https://jingyan.baidu.com/article/a3f121e4af5a6efc9152bb45.html
+>> notes: `WIN + g`组合键打开录屏界面；`WIN + ALT + r`组合键开始录屏（不然还得手动点开始录，有时候可能会不方便）
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Windows settings
 
 Win10右下角弹出通知怎么隐藏 如何关闭弹出通知 https://jingyan.baidu.com/article/6b18230997a483ba58e15981.html
@@ -266,9 +273,6 @@ https://zhuanlan.zhihu.com/p/33211414
 https://www.appinn.com/windows-apps-that-amaze-us/
 - qdir https://www.appinn.com/q-dir/
 - everything https://www.appinn.com/everything/
-
-代码界的美图秀秀 - 陈龙的文章 - 知乎
-https://zhuanlan.zhihu.com/p/35811981
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 

@@ -11,6 +11,8 @@ https://www.iplaysoft.com/docfetcher.html
 你的开源项目缺个好看的 logo？这里有人免费帮你画好了 - Open Source 开源 - cnBeta.COM
 https://www.cnbeta.com/articles/tech/738117.htm
 
+代码界的美图秀秀 - 陈龙的文章 - 知乎 https://zhuanlan.zhihu.com/p/35811981
+
 用这个漂亮的工具将方程式截图迅速转换为 LaTeX - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/48077774
 > Mathpix, it’s how the world sees math. https://mathpix.com/
 
