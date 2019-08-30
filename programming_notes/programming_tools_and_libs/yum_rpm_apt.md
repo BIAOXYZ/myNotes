@@ -336,7 +336,11 @@ Snappy (package manager) https://en.wikipedia.org/wiki/Snappy_(package_manager)
 
 Snapcraft: The app store for Linux - Publish your app for Linux users — for desktop, cloud, and Internet of Things. https://snapcraft.io/
 
+Installing snapd https://snapcraft.io/docs/installing-snapd
+
 使用 Snapcraft 构建、测试并发布 Snap 软件包 https://linux.cn/article-8788-1.html
+
+What is the classic mode of snap, and why do some snaps not install without it (e.g. MS Visual Studio)? https://askubuntu.com/questions/917049/what-is-the-classic-mode-of-snap-and-why-do-some-snaps-not-install-without-it
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
