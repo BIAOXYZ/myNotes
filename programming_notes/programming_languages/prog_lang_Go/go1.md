@@ -221,7 +221,7 @@ golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c
 - Golang包管理工具（一）之govendor的使用 https://blog.csdn.net/huwh_/article/details/77169858
 - govendor简介 https://www.huweihuang.com/golang-notes/introduction/package/govendor-usage.html
 
-### go dep
+### dep
 
 Go依赖管理工具 - dep https://segmentfault.com/a/1190000013561841
 
@@ -234,7 +234,12 @@ go之官方依赖管理工具dep安装和使用 https://blog.csdn.net/guyan0319/
 
 ### go module/go mod
 
-Modules https://github.com/golang/go/wiki/Modules
+跳出Go module的泥潭 https://colobu.com/2018/08/27/learn-go-module/
+- Modules https://github.com/golang/go/wiki/Modules
+- Introduction to Go Modules https://roberto.selbach.ca/intro-to-go-modules/
+
+【by The Go Blog】
+- Using Go Modules https://blog.golang.org/using-go-modules
 
 初窥Go module https://tonybai.com/2018/07/15/hello-go-module/
 - > 当GO111MODULE的值为auto时(不显式设置即为auto)，也就是我们在上面的例子中所展现的那样：使用GOPATH mode还是module-aware mode，取决于要构建的源码目录所在位置以及是否包含go.mod文件。如果要构建的源码目录不在以GOPATH/src为根的目录体系下，且包含go.mod文件(两个条件缺一不可)，那么使用module-aware mode；否则使用传统的GOPATH mode。
@@ -246,6 +251,8 @@ Modules https://github.com/golang/go/wiki/Modules
 - 再探go modules：使用与细节 https://www.cnblogs.com/apocelipes/p/10295096.html
 
 Go Modules使用教程 https://segmentfault.com/a/1190000016703769
+
+go mod 使用 https://juejin.im/post/5c8e503a6fb9a070d878184a
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
