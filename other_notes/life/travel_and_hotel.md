@@ -41,6 +41,9 @@ Chinese Travel Document https://en.wikipedia.org/wiki/Chinese_Travel_Document �
 - https://www.marriott.com/
 - https://www.marriott.com.cn/
 
+请放心，我们将为您合并帐户。 https://www.marriott.com.cn/loyalty/merge-my-accounts.mi
+>> 注意：记得用qq邮箱对应的那个万豪账户：时间早且飞猪绑的就是那个。。。
+
 ### 万豪攻略
 
 玩转万豪酒店会员，你所需要的正确姿势（2018更新版） - 牧羊博士的文章 - 知乎 https://zhuanlan.zhihu.com/p/33859741
