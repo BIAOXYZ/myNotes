@@ -10,6 +10,10 @@
 Write a simple interpreter of C. Inspired by c4 and largely based on it. https://github.com/lotabout/write-a-C-interpreter
 > Let's Build a Compiler, by Jack Crenshaw https://compilers.iecc.com/crenshaw/
 
+## programming language project
+
+A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff. https://github.com/fffaraz/awesome-cpp || http://fffaraz.github.io/awesome-cpp/
+
 # 非硬核类
 
 📚 Tech Interview Guide 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计 https://github.com/CyC2018/CS-Notes
