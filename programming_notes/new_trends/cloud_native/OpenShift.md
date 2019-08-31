@@ -36,6 +36,7 @@ okd -- The Origin Community Distribution of Kubernetes that powers Red Hat OpenS
 
 okd Documentation https://docs.okd.io/
 - Planning your installation https://docs.okd.io/latest/install/index.html
+- REST API Reference https://docs.okd.io/latest/rest_api/index.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
