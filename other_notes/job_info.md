@@ -386,6 +386,11 @@ https://www.zhihu.com/question/24694855
 
 腾讯工程师吐槽鸿蒙系统，官方回应：非在职员工 https://tech.163.com/19/0812/17/EMD7T1DO000999LD.html
 
+华为方舟编译器开源了 https://www.v2ex.com/t/596783
+- > https://github.com/Himself65/OpenArkCompiler/commit/3214db9fda588feb69931171fed50cfd52a6776f
+- > 如何看待方舟编译器 8 月 31 日开源? - 千里冰封 你懂吗的回答 - 知乎 https://www.zhihu.com/question/343431810/answer/808816079
+
+
 京东回应“要求员工梳理亲属关系”：是日常管理举措 https://www.ithome.com/0/415/132.htm
 
 京东应劫："贬功臣、抑兄弟"能否化险为夷 https://www.ithome.com/0/423/374.htm
