@@ -13,6 +13,11 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 【今日囧图】路是谁铺的，出来走两步 https://www.acfun.cn/a/ac10650908
 - > ![](https://imgs.aixifan.com/o_1dhbqu8k0120e1ufa1nv21uht11u03c.jpg)
 
+## 回复图片类
+
+晴天霹雳！老婆婚前1个月生了别人的娃，更令浙江男子崩溃的是... https://www.acfun.cn/a/ac10839743
+- > ![](https://imgs.aixifan.com/content/2019_08_31/1567221667707.gif)
+
 # 其他
 
 AcFun泄露数千万条用户信息，黑客已在Github公布部分数据 https://mp.weixin.qq.com/s/c4vJ7TnjT7DbbAkOGbPn2Q  -->  猴子啊猴子，叫我怎么敢信任你的安全水平。。。
