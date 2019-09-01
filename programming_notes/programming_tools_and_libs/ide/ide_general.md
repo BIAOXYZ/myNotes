@@ -143,6 +143,10 @@ Golang Guide: A List of Top Golang Frameworks, IDEs & Tools https://intelligentb
   * 4.Wide
     + 🌈 一款基于 Web 的 Go 语言 IDE，随时随地玩 golang。 https://wide.b3log.org/ || https://hacpai.com/tag/wide || https://github.com/b3log/wide
 
+## [GoLand](https://www.jetbrains.com/go/)
+
+请教 Go Mod 到底怎么用...被虐哭.. https://www.v2ex.com/t/582361
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
