@@ -206,7 +206,9 @@ Installing Go from source https://nikhita.github.io/install-multiple-versions-go
 
 ## go包管理
 
-### go vendor
+### govendor
+
+Go vendor tool that works with the standard vendor file. https://github.com/kardianos/govendor
 
 golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c0
 - > 随着Go 1.5 release版本的发布，vendor目录被添加到除了GOPATH和GOROOT之外的依赖目录查找的解决方案。在Go 1.6之前，你需要手动的设置环境变量`GO15VENDOREXPERIMENT=1`才可以使Go找到Vendor目录，然而在Go 1.6之后，这个功能已经不需要配置环境变量就可以实现了。
@@ -221,6 +223,11 @@ golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c
 - Golang包管理工具（一）之govendor的使用 https://blog.csdn.net/huwh_/article/details/77169858
 - govendor简介 https://www.huweihuang.com/golang-notes/introduction/package/govendor-usage.html
 
+### ~~godep~~
+
+~~dependency tool for go https://github.com/tools/godep || https://godoc.org/github.com/tools/godep~~
+> Please use dep or another tool instead. The rest of this readme is preserved for those that may still need its contents.
+
 ### dep
 
 Go依赖管理工具 - dep https://segmentfault.com/a/1190000013561841
@@ -231,6 +238,12 @@ go之官方依赖管理工具dep安装和使用 https://blog.csdn.net/guyan0319/
 - > Gopkg.toml 是依赖管理的核心文件，可以生成也可以手动修改，
 一般情况下Gopkg.toml里面只定义直接依赖项，而Gopkg.lock里面除了包含Gopkg.toml中的所有项之外，还包含传递依赖项。比如我们的项目依赖项目A， 而项目A又依赖B、C，那么只有A会包含在Gopkg.toml中，而A、B、C都会定义在Gopkg.lock中。所以Gopkg.lock定义了所有依赖的项目的详细信息（commit ID和packages），使得每次build我们自己的项目时，始终基于确定不变的依赖项。
 - > vendor目录是 golang1.5 以后依赖管理目录，这个目录的依赖代码是优先加载的，类似 node 的 node_module 目录。
+
+### ~~vgo~~
+
+~~Command vgo https://godoc.org/golang.org/x/vgo~~
+
+vgo简明教程 https://segmentfault.com/a/1190000015372895
 
 ### go module/go mod
 
@@ -253,6 +266,21 @@ go之官方依赖管理工具dep安装和使用 https://blog.csdn.net/guyan0319/
 Go Modules使用教程 https://segmentfault.com/a/1190000016703769
 
 go mod 使用 https://juejin.im/post/5c8e503a6fb9a070d878184a
+
+#### goproxy (for go module)
+
+GOPROXY.IO - A Global Proxy for Go Modules https://goproxy.io/
+
+Go的包管理工具（四）：Go Module Proxy https://juejin.im/post/5c8f9f8ef265da612c3a34b9
+
+### glide
+
+Package Management for Golang https://github.com/Masterminds/glide || https://glide.sh/
+
+### ~~gopm~~
+
+~~Go Package Manager (gopm) is a package manager and build tool for Go. https://github.com/gpmgo/gopm~~
+> In favor of Go Modules Proxy since Go 1.11, this project has been archived and website (gopm.io) will be taken down as of 12/31/2019.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
