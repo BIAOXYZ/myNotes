@@ -103,3 +103,6 @@ https://zhidao.baidu.com/question/486620110.html
 
 2019年上半年如何攒机？一文看懂的攒机指南 https://www.ithome.com/0/411/255.htm
 
+# 其他
+
+海底光缆，到底是怎么安装和维护的？ https://www.ithome.com/0/442/997.htm
