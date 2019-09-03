@@ -205,6 +205,12 @@ Python解释器移植到Firefox浏览器后，Mozilla还想支持Julia和R语言
 > Mozilla工程师过去几年一直致力于将数据科学工具移植到浏览器，成为 Iodide项目的一部分。在以前，Mozilla工程师做过一个 Pyodide项目，就是使用WebAssembly将Python解释器移植到浏览器中运行。Mozilla工程师说：“Pyodide项目，已经证明了在WebAssembly中运行语言翻译的可用性”。
 >> Pyodide: Bringing the scientific Python stack to the browser https://hacks.mozilla.org/2019/04/pyodide-bringing-the-scientific-python-stack-to-the-browser/ || 【译文：】 在浏览器中用Python做数据科学：Pyodide https://www.jianshu.com/p/67b3253a799e
 
+### firefox DoH
+
+Firefox DNS-over-HTTPS https://support.mozilla.org/en-US/kb/firefox-dns-over-https
+
+Firefox Nightly + DoH + ESNI: 让网络连接更加安全 - Thinker的文章 - 知乎 https://zhuanlan.zhihu.com/p/47407337
+
 ## firefox插件
 
 备份与恢复书签 https://support.mozilla.org/zh-CN/kb/%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B9%A6%E7%AD%BE
