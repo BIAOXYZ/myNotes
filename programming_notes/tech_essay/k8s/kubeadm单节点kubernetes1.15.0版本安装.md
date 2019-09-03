@@ -355,6 +355,15 @@ my-two-container-pod   0/2     Pending   0          57m
 root@cloudsec1 ~ $ kubectl taint nodes --all node-role.kubernetes.io/master-
 node/cloudsec1.sl.cloud9.ibm.com untainted
 
+``
+//修改前
+root@cloudsec1 ~ $ kubectl describe node | grep Taints
+Taints:             node-role.kubernetes.io/master:NoSchedule
+//修改后
+root@cloudsec1 ~ $ kubectl describe node | grep Taints
+Taints:             <none>
+``
+
 root@cloudsec1 ~ $ kubectl get pod
 NAME                   READY   STATUS              RESTARTS   AGE
 my-two-container-pod   0/2     ContainerCreating   0          57m
