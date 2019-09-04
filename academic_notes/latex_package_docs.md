@@ -1,10 +1,19 @@
 
+# 成熟或常用的package
+
 ## amsthm
 
 amsthm – Typesetting theorems (AMS style) https://www.ctan.org/pkg/amsthm
 
 Using the amsthm Package - CTEX http://www.ctex.org/documents/packages/math/amsthdoc.pdf
 
+## tcolorbox
+
+tcolorbox – Coloured boxes, for LATEX examples and theorems, etc https://www.ctan.org/pkg/tcolorbox
+
+LaTeX 黑魔法（一）：tcolorbox 宏包简明教程 https://liam.page/2016/07/22/using-the-tcolorbox-package-to-create-a-new-theorem-environment/
+
+tcolorbox 包的学习使用 https://www.latexstudio.net/archives/51737.html
 
 ## tikz
 
@@ -34,3 +43,6 @@ A vector drawing editor for LaTeX (Java Swing/JavaFX). http://latexdraw.sourcefo
 
 用黑板制作的 beamer 主题 - 更新 http://www.latexstudio.net/archives/51703.html
 > https://github.com/kmaed/kmbeamer
+
+LaTeX 技巧 960：使用 media9 宏包嵌入视频 https://www.latexstudio.net/archives/51717.html
+> media9 – Multimedia inclusion package with Adobe Reader-9/X com https://www.ctan.org/pkg/media9
