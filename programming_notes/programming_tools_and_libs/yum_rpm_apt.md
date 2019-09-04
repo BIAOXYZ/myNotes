@@ -269,6 +269,26 @@ pacman (简体中文) https://wiki.archlinux.org/index.php/Pacman_(%E7%AE%80%E4%
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# pkg
+
+**//又从[hub](https://github.com/github/hub)项目知道`FreeBSD`下的包管理工具`pkg`**。。。
+
+The `hub` executable has no dependencies, but since it was designed to wrap
+`git`, it's recommended to have at least **git 1.7.3** or newer.
+
+platform | manager | command to run
+---------|---------|---------------
+macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub`
+Windows | [Scoop](http://scoop.sh/) | `scoop install hub`
+Windows | [Chocolatey](https://chocolatey.org/) | `choco install hub`
+Fedora Linux | [DNF](https://fedoraproject.org/wiki/DNF) | `sudo dnf install hub`
+Arch Linux | [pacman](https://wiki.archlinux.org/index.php/pacman) | `sudo pacman -S hub`
+FreeBSD | [pkg(8)](http://man.freebsd.org/pkg/8) | `pkg install hub`
+Debian | apt | `sudo apt install hub`
+Ubuntu | [Snap](https://snapcraft.io) | `snap install hub --classic`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # curl
 
 cURL 作者 Daniel Stenberg 宣布即将从 Mozilla 离职 https://www.cnbeta.com/articles/tech/789651.htm
