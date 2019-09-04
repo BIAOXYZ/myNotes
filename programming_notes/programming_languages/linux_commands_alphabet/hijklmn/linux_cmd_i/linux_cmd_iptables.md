@@ -15,3 +15,7 @@
 - CentOS wiki HowTos/Network/IPTables
   * https://wiki.centos.org/HowTos/Network/IPTables
   * https://wiki.centos.org/zh/HowTos/Network/IPTables
+
+# 其他博客类链接
+
+【from 朱双印个人日志】iptables详解系列 http://www.zsythink.net/archives/tag/iptables/
