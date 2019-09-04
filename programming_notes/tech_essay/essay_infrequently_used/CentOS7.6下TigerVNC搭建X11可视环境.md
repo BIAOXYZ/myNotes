@@ -143,12 +143,16 @@ Last login: Fri Jul  5 13:48:40 2019 from 9.200.45.42
 [root@temptest ~]#
 [root@temptest ~]# systemctl daemon-reload
 [root@temptest ~]# 
+
 //这里攻略里没提到，网上搜了搜感觉都是选n
+//// 后续补充：如果时间比较久，该密码不小心忘记了，只需完全按照下面的步骤重新设置vnc登陆密码即可。
+//// 也有攻略提到先删除 ~/.vnc/passwd 文件再重新设置。但是我的机器（root用户）直接重新设置就可以，不需要删除文件这个步骤。
 [root@temptest ~]# vncpasswd
 Password:
 Verify:
 Would you like to enter a view-only password (y/n)? n
 A view-only password is not used
+
 [root@temptest ~]# 
 [root@temptest ~]# sudo systemctl enable vncserver@:1.service
 Created symlink from /etc/systemd/system/multi-user.target.wants/vncserver@:1.service to /etc/systemd/system/vncserver@:1.service.
@@ -170,7 +174,7 @@ firefox
 
 # 2. 配置VNC的客户端
 
-## 2.1 配置Windows 10上的VNC客户端
+## 2.1 配置Windows 10上的VNC客户端（用的依然是`TigerVNC家的vncviewer`，更具体点：`vncviewer64-1.9.0.exe`）
 
 ```
 客户端访问
