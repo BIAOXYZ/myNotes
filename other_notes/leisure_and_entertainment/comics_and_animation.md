@@ -7,6 +7,10 @@ bilibili/争议和影响 https://zh.moegirl.org/Bilibili/%E4%BA%89%E8%AE%AE%E5%9
 
 [杂谈] 【快讯】B站下架200多部新老番剧 https://quan.ithome.com/0/466/456.htm 「 2019.06.10 02:59」
 
+好消息！a站买到小埋了！ https://mobile.app.acfun.cn/a/ac10858443
+>> 实际上除了7月档的三部（《你妈劈》和《遭难》都算火的，另一部《满月》一般），最近A站时不时就在买一些受欢迎的老番。快手算够意思了（虽然也有快手要向一二线扩张的原因 --> 从这点来看抖音就比较傻了，如果是抖音接盘了A站的话，快手基本没机会往上走了），给A站出钱出力（快手收购后A站才有了HTML5播放）。目前我发现的最近新买的老番有（实际上不止这个数，这只是我在A站首页推荐偶然看到的）：
+>>> [《无论如何都想加入生肖【AcFun独家】》](https://www.acfun.cn/bangumi/aa5020100)、[《珈百璃的堕落》](https://www.acfun.cn/bangumi/aa5025006)、[《NEW GAME!》](https://www.acfun.cn/bangumi/aa5025182)、[《干物妹！小埋》](https://www.acfun.cn/bangumi/aa5025415)
+
 ## 京阿尼纵火事件
 ***//再美好的动画也无法治愈有些人心中的恶***。
 
