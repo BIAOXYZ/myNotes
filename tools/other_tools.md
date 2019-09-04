@@ -45,3 +45,8 @@ textfree https://www.pinger.com/text-free/
 - 猪 https://www.cnhnb.com/hangqing/zhu/
 - 牛 https://www.cnhnb.com/hangqing/niu/
 - 羊 https://www.cnhnb.com/hangqing/yang/
+
+偶然在这个讲k8s源码的帖子里【[Learning the Kubernetes codebase](https://dev.to/chuck_ha/learning-the-kubernetes-codebase-1324)】发现了这个统计项目信息的网站。实际上，就我所知，仅仅是统计一个项目的代码行数也没那么容易（一般都得下下来用工具统计，比如用sourceinsight统计C/C++项目），但是有了这个网站就方便多了，并且还可以统计一些其他信息：contributor数量，项目语言、日期，甚至还有注释情况怎么样之类的。。。
+- Kubernetes https://www.openhub.net/p/kubernetes
+- PostgreSQL Database Server https://www.openhub.net/p/postgres
+- OpenSSL https://www.openhub.net/p/openssl
