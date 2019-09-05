@@ -1,4 +1,5 @@
 
+2019年7月，38篇最优秀的中国商业社会洞察 https://mp.weixin.qq.com/s/WB9e_D5lvXPonykWrgoIqg  -->  ps: 这篇好像虎嗅官网反而没有，只有公众号有。
 
 汇聚道道深流 https://www.huxiu.com/article/286467.html
 - 以下是首期“深流联盟”正式成员名单：

@@ -1,6 +1,8 @@
 
 # economics
 
+复盘美股十次熊市，进入熊市的必要条件是什么？ https://www.huxiu.com/article/315544.html || 进入熊市的必要条件是什么？ https://mp.weixin.qq.com/s/fsodAjOm0rnnIhubu9SGEA
+
 最直观的估值方法：会相亲，你就会估值 https://www.huxiu.com/article/313932.html  【by 人神共奋】
 
 # p2p
