@@ -188,7 +188,7 @@ Name: YOUR_Display_1
 连接之后，输入 admin 的 vpnpasswd，既可看到界面了。
 ```
 
-## 2.2 配置CentOS服务器本机上的VNC客户端
+## 2.2 配置CentOS服务器本机上的VNC客户端（TODO）
 
 ```
 [root@temptest packages]# wget https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.9.0.x86_64.tar.gz
@@ -230,5 +230,92 @@ See http://www.tigervnc.org for information on TigerVNC.
 Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 71: non-double matrix element
 Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 71: non-double matrix element
 Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 79: saw unknown, expected number
+
+```
+
+# 3. 后续补充一些VNC操作（TigerVNC）
+
+```
+[root@temptest ~]# vncserver -h
+
+usage: vncserver [:<number>] [-name <desktop-name>] [-depth <depth>]
+                 [-geometry <width>x<height>]
+                 [-pixelformat rgbNNN|bgrNNN]
+                 [-fp <font-path>]
+                 [-cc <visual>]
+                 [-fg]
+                 [-autokill]
+                 [-noxstartup]
+                 [-xstartup <file>]
+                 <Xvnc-options>...
+
+       vncserver -kill <X-display>
+
+       vncserver -list
+
+[root@temptest ~]#
+[root@temptest ~]#
+[root@temptest ~]# vncserver -list
+
+TigerVNC server sessions:
+
+X DISPLAY #     PROCESS ID
+:1              3296
+:3              18873
+:2              15024
+[root@temptest ~]#
+[root@temptest ~]#
+[root@temptest ~]# vncserver -kill :2
+Killing Xvnc process ID 15024
+[root@temptest ~]#
+[root@temptest ~]#
+[root@temptest ~]# vncserver -list
+
+TigerVNC server sessions:
+
+X DISPLAY #     PROCESS ID
+:1              3296
+:3              18873
+
+
+// 完全可以直接跳过 :2 去创建 :4
+[root@temptest ~]# vncserver :4
+
+New 'temptest.sl.cloud9.ibm.com:4 (root)' desktop is temptest.sl.cloud9.ibm.com:4
+
+Starting applications specified in /root/.vnc/xstartup
+Log file is /root/.vnc/temptest.sl.cloud9.ibm.com:4.log
+
+[root@temptest ~]#
+[root@temptest ~]#
+[root@temptest ~]# vncserver -list
+
+TigerVNC server sessions:
+
+X DISPLAY #     PROCESS ID
+:1              3296
+:4              17743
+:3              18873
+
+
+// 我只是想看看版本啊，结果却自己建了个vnc连接？
+// 后面还试了--version等也不行。。。
+[root@temptest init.d]# vncserver -v
+
+New 'temptest.sl.cloud9.ibm.com:2 (root)' desktop is temptest.sl.cloud9.ibm.com:2
+
+Starting applications specified in /root/.vnc/xstartup
+Log file is /root/.vnc/temptest.sl.cloud9.ibm.com:2.log
+
+[root@temptest init.d]#
+[root@temptest init.d]# vncserver -list
+
+TigerVNC server sessions:
+
+X DISPLAY #     PROCESS ID
+:1              3296
+:4              17743
+:3              18873
+:2              19622
 
 ```
