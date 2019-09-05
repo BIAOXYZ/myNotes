@@ -1,6 +1,8 @@
 
 # from虎嗅
 
+微信聊天潜台词，你能读懂几段？ https://www.huxiu.com/article/316161.html || https://mp.weixin.qq.com/s/l__o2w30Pq8NXUnjL6c5RA
+
 如何榨取宅男的血 https://www.huxiu.com/article/302827.html || https://mp.weixin.qq.com/s/PprqeGXWe8QbKSr7g8TDRA
 > 几个月前，日本2ch上一位鬼才网友试图进行分析，并发帖声称自己发现了问题的关键：“我想，我知道为什么献血机构不惜专门与动画联动，也要想抽到宅宅的血了。”随后自答：“因为性病风险无限接近0。”
 
