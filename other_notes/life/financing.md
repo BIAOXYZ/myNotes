@@ -1,4 +1,8 @@
 
+# economics
+
+最直观的估值方法：会相亲，你就会估值 https://www.huxiu.com/article/313932.html  【by 人神共奋】
+
 # p2p
 
 网贷之家--网贷数据 https://shuju.wdzj.com/
