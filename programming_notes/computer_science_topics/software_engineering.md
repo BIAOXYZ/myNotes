@@ -3,6 +3,8 @@
 
 《软件基础》中文版 https://Coq-zh.github.io/SF-zh/ || https://github.com/Coq-zh/SF-zh
 
+Software design pattern https://en.wikipedia.org/wiki/Software_design_pattern || 设计模式 (计算机) https://zh.wikipedia.org/wiki/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F_(%E8%AE%A1%E7%AE%97%E6%9C%BA)
+
 # issue or bug tracking/agile project management
 
 Jira (software) https://en.wikipedia.org/wiki/Jira_(software)
@@ -145,3 +147,6 @@ RTL：Retail(零售版)是真正的正式版，正式上架零售版。在安装
 
 能力成熟度模型集成 https://zh.wikipedia.org/wiki/%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B%E9%9B%86%E6%88%90 【[Capability Maturity Model Integration (CMMI)](https://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration)】
 
+### Builder pattern/生成器模式
+
+Builder pattern https://en.wikipedia.org/wiki/Builder_pattern 【[生成器模式](https://zh.wikipedia.org/wiki/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F)】
