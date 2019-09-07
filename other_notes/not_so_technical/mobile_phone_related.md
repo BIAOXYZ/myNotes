@@ -1,6 +1,10 @@
 
 # general
 
+## 远程共享/远程协助
+
+应用宝上线“长辈关怀”功能 父母可一键“召唤”子女 http://www.techweb.com.cn/news/2018-05-13/2664271.shtml
+
 ## 垃圾清理
 
 有哪些深度清理手机垃圾的软件可以推荐？ - 大蓝同学的回答 - 知乎 https://www.zhihu.com/question/22383810/answer/586552478
