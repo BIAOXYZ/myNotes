@@ -57,6 +57,11 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 - 布隆过滤器(Bloom Filter)详解 https://www.cnblogs.com/liyulong1982/p/6013002.html
 - 那些优雅的数据结构(1) : BloomFilter——大规模数据处理利器 http://www.cnblogs.com/heaad/archive/2011/01/02/1924195.html
 
+
+## 待分类
+
+Golang LRU cache https://github.com/hashicorp/golang-lru
+
 :star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star:
 
 

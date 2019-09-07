@@ -1,4 +1,7 @@
 
+Database of Databases
+- LevelDB https://dbdb.io/db/leveldb
+
 # Redis
 
 深入学习 Redis（5）：集群 https://mp.weixin.qq.com/s/oDllfcVc5_ekIFP66kRP9w
@@ -61,8 +64,10 @@ https://www.viva64.com/en/b/0542/
 
 # [LevelDB](http://leveldb.org/)
 
-- http://leveldb.org/
+- http://leveldb.org/  //官网都砍了。。。
 - https://github.com/google/leveldb
+
+LevelDB key/value database in Go. https://github.com/syndtr/goleveldb
 
 LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
 

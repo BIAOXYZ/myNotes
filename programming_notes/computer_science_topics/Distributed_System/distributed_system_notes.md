@@ -99,6 +99,10 @@ Golang implementation of the Raft consensus protocol https://github.com/hashicor
 
 A feature complete and high performance multi-group Raft library in Go. https://github.com/lni/dragonboat
 
+C implementation of the Raft Consensus protocol, BSD licensed https://github.com/willemt/raft
+
+LogCabin is a distributed storage system built on Raft that provides a small amount of highly replicated, consistent storage. It is a reliable place for other distributed systems to store their core metadata and is helpful in solving cluster management issues. https://github.com/logcabin/logcabin
+
 ## SOFAJRaft
 
 SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft
