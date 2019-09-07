@@ -21,6 +21,12 @@
 4.点击左侧的从其他设备打开的标签页。
 ```
 
+## Chrome密码管理
+
+管理 Google 帐号中保存的密码 https://support.google.com/accounts/answer/6208650 【第一个是在线的，第二个是本地的。当然，肯定可以互相同步。我是更新b站绑定邮箱的时候，用了第一个链接在线修改的。】
+- 密码管理器 https://passwords.google.com/
+- 管理已保存的密码 https://support.google.com/chrome/answer/95606
+
 ## Chrome和Flash --> 这个很快就会没用了，因为不论chrome还是firefox都会在2020年停止支持flash
 
 使用或修复 Flash 音频和视频 https://support.google.com/chrome/answer/6258784
@@ -210,6 +216,10 @@ Python解释器移植到Firefox浏览器后，Mozilla还想支持Julia和R语言
 Firefox DNS-over-HTTPS https://support.mozilla.org/en-US/kb/firefox-dns-over-https
 
 Firefox Nightly + DoH + ESNI: 让网络连接更加安全 - Thinker的文章 - 知乎 https://zhuanlan.zhihu.com/p/47407337
+
+### firefox密码管理
+
+密码管理器——在 Firefox 中记住、删除和更改已保存的密码 https://support.mozilla.org/zh-CN/kb/password-manager-remember-delete-change-passwords
 
 ## firefox插件
 
