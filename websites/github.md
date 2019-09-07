@@ -84,6 +84,17 @@ Bar Ilan Cryptography Research Group https://github.com/cryptobiu
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Github公司项目
+
+## IBM
+
+IBM Stock Trader https://github.com/IBMStockTrader
+
+IBM StockTrader Application Helm Repository https://github.com/ibm-cloud-architecture/stocktrader-helm-repo
+- IBM StockTrader Application main GitHub repository https://github.com/ibm-cloud-architecture/stocktrader-app/tree/v2
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Github项目
 
 ***--------------------------------------------------分割线--------------------------------------------------***
