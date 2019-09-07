@@ -167,6 +167,13 @@ Consume services in Kubernetes using the Open Service Broker API https://github.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# kubernetes-retired
+
+~~Heapster: [EOL] Compute Resource Usage Analysis and Monitoring of Container Clusters https://github.com/kubernetes-retired/heapster~~
+> RETIRED: Heapster is now retired. See the deprecation timeline for more information on support. We will not be making changes to Heapster.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # projects based on or related to k8s (not matured)
 
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
