@@ -157,3 +157,5 @@ http://www.latexstudio.net/archives/8903
 http://blog.csdn.net/garfielder007/article/details/51620626
 
 PC -> LaTeX Converter Quick Comparison List http://tug.org/utilities/texconv/pc2txtbl.html
+
+LaTeX 中不带编号的行间公式为什么推荐用 \[ … \] 而不是 $$ … $$？ - 知乎 https://www.zhihu.com/question/27589739
