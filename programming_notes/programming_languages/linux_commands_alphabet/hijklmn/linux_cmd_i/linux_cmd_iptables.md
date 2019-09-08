@@ -18,4 +18,8 @@
 
 # 其他博客类链接
 
+Linux Firewall Tutorial: IPTables Tables, Chains, Rules Fundamentals https://www.thegeekstuff.com/2011/01/iptables-fundamentals/
+
+Linux命令大全搜索工具 - iptables https://wangchujiang.com/linux-command/c/iptables.html
+
 【from 朱双印个人日志】iptables详解系列 http://www.zsythink.net/archives/tag/iptables/

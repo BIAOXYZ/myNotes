@@ -62,6 +62,10 @@ ls -l /backup
 
 ```
 
+## iptables
+
+Linux Firewall Tutorial: IPTables Tables, Chains, Rules Fundamentals https://www.thegeekstuff.com/2011/01/iptables-fundamentals/
+
 ## sed
 
 https://www.thegeekstuff.com/category/sed/

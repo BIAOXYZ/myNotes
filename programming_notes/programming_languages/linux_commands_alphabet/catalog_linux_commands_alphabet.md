@@ -25,3 +25,9 @@ Linux/Basic commands https://en.wikiversity.org/wiki/Linux/Basic_commands
 # other lists
 
 A – Z LINUX COMMANDS – OVERVIEW WITH EXAMPLES https://www.tecmint.com/linux-commands-cheat-sheet/
+
+Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。 https://github.com/jaywcjlove/linux-command || https://wangchujiang.com/linux-command/
+- 命令列表 https://wangchujiang.com/linux-command/hot.html
+- ~~Chrome插件 https://github.com/jaywcjlove/oscnews~~
+- 开源中国Web版 https://jaywcjlove.gitee.io/linux-command/
+- 短地址：https://git.io/linux
