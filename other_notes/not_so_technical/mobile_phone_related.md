@@ -3,7 +3,11 @@
 
 ## 远程共享/远程协助
 
-应用宝上线“长辈关怀”功能 父母可一键“召唤”子女 http://www.techweb.com.cn/news/2018-05-13/2664271.shtml
+### 应用宝“长辈关怀”
+
+- 应用宝上线“长辈关怀”功能 父母可一键“召唤”子女 http://www.techweb.com.cn/news/2018-05-13/2664271.shtml
+- 应用宝上线“长辈关怀”功能，双屏同步实时共享 https://36kr.com/newsflashes/119509
+  * 你妈昨晚提的需求，这个功能希望能帮你解决 https://mp.weixin.qq.com/s/iy9MOfQmRUQvRVq6142QHg
 
 ## 垃圾清理
 
