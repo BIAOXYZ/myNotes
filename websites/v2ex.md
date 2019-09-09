@@ -111,6 +111,13 @@ https://github.com/ruanyf/weekly/issues/669
 shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
 > https://www.shellcheck.net/
 
+chrome 书签越来越多，大家想过怎么处理吗 https://www.v2ex.com/t/599124
+- > https://clipper.website
+- > https://github.com/netnr/uuid  托管在 Git 的书签，Markdown 格式，有兴趣可以搞搞
+  >> https://uuid.fun/
+- > 开源地址： https://github.com/luchenqun/my-bookmark  在线体验： https://mybookmark.cn/  如果觉得好用，请 star 一下鼓励我继续完善！
+- > https://www.gettoby.com/faq
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # V2EX八卦贴（要不要开这个考虑了很久，后来想了想，还是开。。。）
