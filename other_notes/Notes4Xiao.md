@@ -135,6 +135,10 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+### others
+
+刚刚，42也被人类写成了三个整数的立方和！ https://mp.weixin.qq.com/s/itwhUF6gDMD4yHR7QrJb9Q
+
 ### libs
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum
