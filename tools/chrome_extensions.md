@@ -237,3 +237,8 @@ Firefox Nightly + DoH + ESNI: 让网络连接更加安全 - Thinker的文章 - �
 Setup VPN
 http://desktopclient.net/gw/index.html#/setupvpn
 
+# 浏览器新闻类
+
+Firefox浏览器计划9月底向美国用户推出DNS over HTTPS https://www.ithome.com/0/444/032.htm
+
+谷歌在Chrome上提出“隐私沙盒”方案，试图解决让它左右为难的根本问题 https://www.ithome.com/0/444/003.htm
