@@ -176,6 +176,11 @@ rpm -Uvh file.rpm    ＃[升级一个rpm]--upgrade
 rpm -e file.rpm      ＃[删除一个rpm包]--erase
 ```
 
+## rpm其他
+
+Difference between yum update vs yum install https://unix.stackexchange.com/questions/157448/difference-between-yum-update-vs-yum-install
+> As to installing vs. upgrading. Both tools can perform an install, and RPM will even allow you to install multiple versions simultaneously, but YUM will tell you that that package is already installed. So no YUM will not allow you to install multiple versions.
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # dnf
@@ -286,6 +291,13 @@ Arch Linux | [pacman](https://wiki.archlinux.org/index.php/pacman) | `sudo pacma
 FreeBSD | [pkg(8)](http://man.freebsd.org/pkg/8) | `pkg install hub`
 Debian | apt | `sudo apt install hub`
 Ubuntu | [Snap](https://snapcraft.io) | `snap install hub --classic`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+Comparison of major Linux package management systems https://linuxconfig.org/comparison-of-major-linux-package-management-systems
+- `aptitude`
+- [Portage] (https://wiki.gentoo.org/wiki/Portage)
+  * `emerge`
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

@@ -18,6 +18,16 @@ DB Weekly https://dbweekly.com/
 Postgres Weekly https://postgresweekly.com/
 
 
+# DB from zhihu
+
+数据库前沿技术 https://zhuanlan.zhihu.com/c_190483659
+
+数据库内核 https://zhuanlan.zhihu.com/c_206071340
+
+数据库内核技术专栏 https://zhuanlan.zhihu.com/dbtech
+
+图数据库杂谈 https://zhuanlan.zhihu.com/graphdbs
+
 # 一般性的
 
 ### 查看数据库core_dump文件的位置
@@ -78,3 +88,7 @@ Bitmap index https://en.wikipedia.org/wiki/Bitmap_index
 ## SQL
 
 SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
+
+# 待分类
+
+分库分表 or NewSQL数据库？终于看懂应该怎么选！ https://dbaplus.cn/news-159-2690-1.html || https://mp.weixin.qq.com/s/ymVxSe8nueuG7knKwcIAMw
