@@ -188,6 +188,8 @@ From ithome:
 
 青涩懵懂的青春，是互相捉弄的小心思 https://www.bilibili.com/blackboard/topic/activity-FuPn3_U4G.html  -->  【《擅长捉弄的西片太太》专属推荐页面都有了～】
 
+《擅长捉弄的高木同学》翻唱了哪些经典日文情歌？ https://mp.weixin.qq.com/s/0G9qKr1_L2XnC95xdtbPyw
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 潜行吧!奈亚子
