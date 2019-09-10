@@ -17,6 +17,12 @@
 
 有的群，真不是人待的地方 https://mp.weixin.qq.com/s/XSnTikhmnMDbT10Wfi-Yyw
 
+## 爱用沙雕表情包的虎嗅作者们
+
+半佛仙人 https://www.huxiu.com/member/2366886.html
+- https://www.huxiu.com/article/316742.html
+- https://www.huxiu.com/article/316555.html
+
 # from wechat
 
 程序猿的鄙视链 https://mp.weixin.qq.com/s/jtfeeRDPZG1rQn9LAzTxAA
