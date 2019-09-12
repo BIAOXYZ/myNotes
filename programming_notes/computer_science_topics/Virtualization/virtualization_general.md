@@ -7,6 +7,12 @@ QEMU https://zh.wikipedia.org/wiki/QEMU
 
 QEMU (简体中文) https://wiki.archlinux.org/index.php/QEMU_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
+# Xen
+
+虚拟化 - KVM 和 Xen 比较 https://www.cnblogs.com/sammyliu/articles/4389981.html
+
+LINUX的XEN和KVM到底区别在什么地方？ - 知乎 https://www.zhihu.com/question/19844004
+
 # [WSL(Windows Subsystem for Linux)](https://blogs.msdn.microsoft.com/wsl/)
 
 ## WSL安装

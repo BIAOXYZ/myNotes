@@ -5,6 +5,15 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Windows general
+
+IT之家教程：一文看懂如何从Windows 7升级到Windows 10 https://www.ithome.com/0/444/795.htm
+> 这里我们优先推荐使用[软媒魔方](https://mofang.ruanmei.com/)工具软媒虚拟光驱装载Windows 10系统ISO镜像或者使用微软官方升级工具[Media Creation Tool](https://www.microsoft.com/zh-cn/software-download/windows10ISO/)纯净安装。通过软媒魔方工具装载ISO镜像之后新的文件夹中双击Setup.exe执行文件，即可开启Windows 10的安装之旅。
+- 软媒魔方 https://mofang.ruanmei.com/
+- Media Creation Tool https://www.microsoft.com/zh-cn/software-download/windows10ISO/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Windows keyboard shortcuts
 
 windows10下有哪些必须掌握的快捷键？ - 小众的回答 - 知乎 https://www.zhihu.com/question/63509083/answer/209854128
