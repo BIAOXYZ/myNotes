@@ -249,6 +249,16 @@ vgo简明教程 https://segmentfault.com/a/1190000015372895
 
 跳出Go module的泥潭 https://colobu.com/2018/08/27/learn-go-module/
 - Modules https://github.com/golang/go/wiki/Modules
+```
+Once installed, you can then activate module support in one of two ways:
+
+● Invoke the go command in a directory outside of the $GOPATH/src tree, with a valid go.mod file in the 
+current directory or any parent of it and the environment variable GO111MODULE unset (or explicitly set to auto).
+● Invoke the go command with GO111MODULE=on environment variable set.
+
+总结下就是：
+如果想启用go module，需要做到如下两点之一:
+```
 - Introduction to Go Modules https://roberto.selbach.ca/intro-to-go-modules/
 
 【by The Go Blog】
