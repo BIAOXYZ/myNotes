@@ -247,18 +247,52 @@ vgo简明教程 https://segmentfault.com/a/1190000015372895
 
 ### go module/go mod
 
-跳出Go module的泥潭 https://colobu.com/2018/08/27/learn-go-module/
-- Modules https://github.com/golang/go/wiki/Modules
+https://github.com/golang/go/wiki/Modules#how-to-install-and-activate-module-support
 ```
-Once installed, you can then activate module support in one of two ways:
+To use modules, two install options are:
+● Install the latest Go 1.11 release.
+● Install the Go toolchain from source on the master branch.
 
+Once installed, you can then activate module support in one of two ways:
 ● Invoke the go command in a directory outside of the $GOPATH/src tree, with a valid go.mod file in the 
 current directory or any parent of it and the environment variable GO111MODULE unset (or explicitly set to auto).
 ● Invoke the go command with GO111MODULE=on environment variable set.
-
-总结下就是：
-如果想启用go module，需要做到如下两点之一:
 ```
+
+https://github.com/golang/go/wiki/Modules#when-do-i-get-old-behavior-vs-new-module-based-behavior
+```
+In general, modules are opt-in for Go 1.11, so by design old behavior is preserved by default.
+
+Summarizing when you get the old 1.10 status quo behavior vs. the new opt-in modules-based behavior:
+● Inside GOPATH — defaults to old 1.10 behavior (ignoring modules)
+● Outside GOPATH while inside a file tree with a `go.mod` — defaults to modules behavior
+● GO111MODULE environment variable:
+  ∙ unset or `auto` — default behavior above
+  ∙ `on` — force module support on regardless of directory location
+  ∙ `off` — force module support off regardless of directory location
+```
+
+总结下就是，如果想***`启用go module`***，需要做到如下两点之一（假定Go版本大于等于`1.11`）:
+1. `GO111MODULE`参数显式`开启`（此时无论项目处于任何路径都无关紧要了！）
+2. `GO111MODULE`参数`自动或unset` **+** 且项目**不能**处于`$GOPATH/src`路径下 **+** 且项目里有一个有效的`go.mod`文件
+
+反之，所以如果想使用***`传统的go包管理`***，需要达到如下要求：
+1. `GO111MODULE`参数显式`关闭`（此时无论项目处于任何路径都无关紧要了！）
+2. `GO111MODULE`参数`自动或unset` **+** 且项目处于`$GOPATH/src`路径下 **+** 且项目里不存在`go.mod`文件
+  - 第2种换个更顺口自然的说法：项目仍然处于`$GOPATH/src`下，`GO111MODULE`参数未设置或值为auto，并且项目里不能有`go.mod`文件。
+
+最后总结成表格如下：
+
+| 【`Go module`或`old behavior`情况表】 | 在`$GOPATH/src`中 | 不在`$GOPATH/src`中 |
+|--|--|--|
+| `GO111MODULE=on`| `Go module` | `Go module` |
+| `GO111MODULE=off` |  `old behavior`  | `old behavior` |
+| `GO111MODULE=auto/unset` |  `old behavior` (且项目中不能有`go.mod`)  | `Go module` (且项目中必须有合法的`go.mod`) |
+
+--------------------------------------------------
+
+跳出Go module的泥潭 https://colobu.com/2018/08/27/learn-go-module/
+- Modules https://github.com/golang/go/wiki/Modules
 - Introduction to Go Modules https://roberto.selbach.ca/intro-to-go-modules/
 
 【by The Go Blog】
