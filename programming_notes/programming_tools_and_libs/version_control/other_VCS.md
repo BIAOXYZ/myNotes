@@ -91,6 +91,13 @@ additional help topics:
 use "hg -v help" to show builtin aliases and global options
 ```
 
+```sh
+安装（偶然发现 CentOS 和 Ubuntu 下安装时软件名字的叫法不一样。。。）：
+yum install -y hg
+apt install -y mercurial
+```
+
+
 # bzr
 
 GNU Bazaar https://en.wikipedia.org/wiki/GNU_Bazaar
