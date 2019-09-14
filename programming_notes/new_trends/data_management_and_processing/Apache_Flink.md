@@ -13,6 +13,10 @@ sunglasses A curated list of amazingly awesome Flink and Flink ecosystem resourc
 Apache Flink 中文文档 https://github.com/apachecn/flink-doc-zh
 > https://flink.apachecn.org
 
+# Flink 源码相关
+
+Apache Flink 源码分析系列，基于 git tag 1.1.2 https://github.com/danny0405/flink-source-code-analysis
+
 # Flink others
 
 阿里 7 亿元收购 Apache Flink 商业公司 DataArtisans https://mp.weixin.qq.com/s/MTEhwnfMAN9hCE749G_6uA
