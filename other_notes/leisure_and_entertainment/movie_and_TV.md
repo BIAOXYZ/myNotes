@@ -12,6 +12,8 @@
 
 # 台词
 
+主角与配角 https://baike.baidu.com/item/%E4%B8%BB%E8%A7%92%E4%B8%8E%E9%85%8D%E8%A7%92/10483785
+
 ## 甲方乙方
 
 “我为党国立过功，我为委座流过血。你们不能这样。我要见师座！”的出处是什么？ https://zhidao.baidu.com/question/503682837.html
