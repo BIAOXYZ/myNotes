@@ -272,6 +272,20 @@ This apk has coffee making abilities.
 
 pacman (简体中文) https://wiki.archlinux.org/index.php/Pacman_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
+# aurman (这个从github repo来看极其小众，本来官方的pacman就已经够小众，这个就更不用说了。)
+
+```
+//来源：https://github.com/zeit/hyper
+
+Hyper is available in the AUR. Use an AUR package manager like aurman
+
+aurman -S hyper
+```
+
+Package Details: aurman 2.19.1-1 https://aur.archlinux.org/packages/aurman/
+
+aurman https://github.com/polygamma/aurman
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # pkg
