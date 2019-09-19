@@ -17,3 +17,6 @@ What are the differences between a Graph database and a Triple store ? https://w
 
 图数据库调研 http://tang.love/2018/08/31/graph_database_research/
 
+# graph database query
+
+SQL之后，GQL成为 ISO/IEC 国际标准数据库语言项目 https://www.ithome.com/0/445/973.htm
