@@ -32,10 +32,15 @@
 
 微软Visual Studio 2019安装器图片“绿帽子”问题被修复 https://www.ithome.com/0/414/070.htm
 
-# from jikipedia
+# from 小鸡词典
 
 阿姨洗铁路 https://jikipedia.com/definition/758820985
 > ![](https://api.jikipedia.com/upload/aac4a84682b9903d843b219c087bc7ac.jpeg)
+
+# from other websites
+
+我要买GTR！ http://www.sohu.com/a/245219888_100241327
+> ![](http://5b0988e595225.cdn.sohucs.com/images/20180804/5204b34fef2540d1af572da8ccc24816.jpeg)
 
 # catchword
 
