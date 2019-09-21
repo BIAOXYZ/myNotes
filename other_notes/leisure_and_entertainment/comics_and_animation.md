@@ -244,6 +244,10 @@ From ithome:
 - 为美好的世界献上祝福！ https://zh.moegirl.org/zh-hans/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F
 - 笨女孩 https://zh.moegirl.org/zh-hans/%E7%AC%A8%E5%A5%B3%E5%AD%A9
 
+【by 小兽好番推荐】这个作者的这个系列基本都是阿库娅做封面，然后视频里面《素晴》和另外一部《游戏三人娘》是常客：
+- 〖前方高能〗能让你笑出腹肌的场景第三期 https://www.bilibili.com/video/av56065678/
+- 〖前方高能〗能让你笑出腹肌的场景第四期 https://www.bilibili.com/video/av56118757/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 珈百璃的堕落
