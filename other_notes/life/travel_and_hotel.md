@@ -16,6 +16,10 @@ Chinese Travel Document https://en.wikipedia.org/wiki/Chinese_Travel_Document �
 
 # hotel
 
+List of hotels https://en.wikipedia.org/wiki/List_of_hotels
+
+List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand_hotels
+
 ### 内宾、外宾、中宾
 
 - 自由行去新加坡，在订酒店是总是发现在房间后面会有内宾，中宾的提示，什么意思呢 http://www.mafengwo.cn/wenda/detail-2211617.html
@@ -44,6 +48,8 @@ Chinese Travel Document https://en.wikipedia.org/wiki/Chinese_Travel_Document �
 请放心，我们将为您合并帐户。 https://www.marriott.com.cn/loyalty/merge-my-accounts.mi
 >> 注意：记得用qq邮箱对应的那个万豪账户：时间早且飞猪绑的就是那个。。。
 
+Marriott International https://en.wikipedia.org/wiki/Marriott_International
+
 ### 万豪攻略
 
 玩转万豪酒店会员，你所需要的正确姿势（2018更新版） - 牧羊博士的文章 - 知乎 https://zhuanlan.zhihu.com/p/33859741
@@ -54,6 +60,13 @@ Chinese Travel Document https://en.wikipedia.org/wiki/Chinese_Travel_Document �
 
 公众号推文被指侮辱女性 桔子水晶道歉称将全面反思 - 警告! - cnBeta.COM https://www.cnbeta.com/articles/tech/825605.htm
 > 公开资料显示，桔子水晶酒店集团创办于2006年，旗下拥有桔子水晶酒店、桔子酒店·精选、桔子酒店等品牌，整体定位在中高端酒店市场。2017年2月，华住酒店集团与以美国投资基金凯雷集团为首的投资人以36.5亿元人民币价格全资收购桔子水晶酒店集团100%股权。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Oakwood / 奥克伍德国际酒店公寓
+
+- https://www.oakwood.com/
+- https://www.oakwoodasia.com/ || https://www.oakwoodasia.com/zh-cn/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
