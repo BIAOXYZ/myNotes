@@ -87,6 +87,12 @@ Kubernetes-基于flannel的集群网络 https://www.kubernetes.org.cn/4105.html
 
 Ceph vs GlusterFS vs MooseFS vs HDFS vs DRBD https://computingforgeeks.com/ceph-vs-glusterfs-vs-moosefs-vs-hdfs-vs-drbd/
 
+## Heketi
+
+heketi (Githubwiki) https://github.com/heketi/heketi/wiki
+
+通过Heketi管理GlusterFS为K8S集群提供持久化存储 https://www.cnblogs.com/netonline/p/10288219.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Notary
