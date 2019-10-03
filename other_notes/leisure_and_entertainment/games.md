@@ -79,6 +79,13 @@ Kaizo Mario http://kaizomario.techyoshi.com/
 
 《魂斗罗》周年纪念合辑清单曝光：包含16款作品 https://hot.cnbeta.com/articles/game/851763.htm
 
+# 街机
+
+有没有能直接在线玩的街机模拟器（NEOGEO游戏模拟器）？ - 知乎 https://www.zhihu.com/question/22548262
+- 小霸王，其乐无穷 https://www.yikm.net/
+- 游聚游戏平台 https://www.gotvg.com/
+- http://www.day86.top/
+
 # 掌机
 
 虽然价格一千多，但光看颜值就值得你下手，它还全能到是 MP4、游戏机、树莓派、开发板…… https://mp.weixin.qq.com/s/01vnCDKfR5QRQMZMyc3Ogg
