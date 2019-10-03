@@ -90,6 +90,10 @@ Mac 怎么打开根目录，怎么查看硬盘 https://jingyan.baidu.com/article
 macOS/Linux 环境变量设置 - 蒋航的文章 - 知乎 https://zhuanlan.zhihu.com/p/25976099
 > macOS 默认用户环境变量配置文件为 `~/.bash_profile`，Linux 为 `~/.bashrc`。如果不存在 `~/.bash_profile`，则可以自己创建一个 `~/.bash_profile`。
 
+## 直接双击无法打开时，按住ctrl + 单击程序
+
+打开来自身份不明开发者的 Mac 应用 https://support.apple.com/zh-cn/guide/mac-help/mh40616/mac
+
 ## 画蛇添足的`.DS_Store`
 
 **//今天碰到研究院一个（之前没用git的）同事问我仓库里这一堆`.DS_Store`怎么删不掉。我一看，仓库70多个提交了，从第二个提交开始（第一个是README）就和各种`.DS_Store`，`.idea`还有别的中间文件ran在一起。。。于是只能是帮他们先git rm掉，再新建个.gitignore文件过滤。但是`.idea`等还很好办，这个垃圾`.DS_Store`多个目录都有！呵呵，常威，你还说你的Mac不是垃圾？**

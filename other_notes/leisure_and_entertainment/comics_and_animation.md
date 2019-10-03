@@ -60,6 +60,8 @@ From ithome:
 Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibili.com/video/av68752556
 - > 长井龙雪 https://zh.moegirl.org/%E9%95%BF%E4%BA%95%E9%BE%99%E9%9B%AA  -->  超炮3靠你了！长颈龙！
 
+十年经典动画巡礼vol.11 -- 某科学的超电磁炮十周年特辑 https://www.bilibili.com/blackboard/topic/Railgun_10years_web.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 名侦探柯南
@@ -476,7 +478,12 @@ Oo控 https://zh.moegirl.org/Oo控
 四天王 https://zh.moegirl.org/%E5%9B%9B%E5%A4%A9%E7%8E%8B
 - 2015年1月番：(轻改)四大名著
   * > 绝对双刃、铳皇无尽的法夫纳、新妹魔王的契约者、圣剑使的禁咒咏唱
-  
+
+风评被害 https://zh.moegirl.org/%E9%A3%8E%E8%AF%84%E8%A2%AB%E5%AE%B3
+> 圆光角色/援助交际 https://zh.moegirl.org/%E6%8F%B4%E5%8A%A9%E4%BA%A4%E9%99%85  -->  “在2CH曾经举办“看起来在援交人物排行榜”【圆光】，数名角色和声优无辜中枪风评被害。”
+>> 新子憧 https://zh.moegirl.org/新子憧
+>>> 六届援王冠军获得者，2ch死宅最想推——东山奈央，了解一下？ http://www.sohu.com/a/227731147_100132682
+
 ## 败犬收集
 
 薇什么，莓良心，银不了，尽梨了 突然爆红网络的败犬文化，你了解多少 https://www.bilibili.com/read/cv295716/
