@@ -85,6 +85,8 @@ Marriott International https://en.wikipedia.org/wiki/Marriott_International
 - > 2.1 合规的（一定容量范围内），如果放在托运行李中，发生燃烧爆炸不容易被及时发现，只能随身携带； ————> 象限二
 - > ![](https://pic4.zhimg.com/80/v2-1528d803d6f465f1fc5d9cd108125931_hd.jpg)
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 飞行事故
 
 2018年全球发生15起致命民航空难：556人死亡 - IT与交通 - cnBeta.COM https://www.cnbeta.com/articles/tech/803997.htm
@@ -140,6 +142,16 @@ Marriott International https://en.wikipedia.org/wiki/Marriott_International
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 机票比价网
+
+https://post.smzdm.com/p/441757/
+- 天巡 https://www.tianxun.com/
+- 客涯/kayak/KAYAK https://www.cn.kayak.com/flights
+- momondo https://www.cn.momondo.com/
+- 必去 
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## airport
 
 三字代码BJS PEK有什么区别 https://zhidao.baidu.com/question/72228378.html
@@ -156,6 +168,11 @@ BJS和PEK都是代表北京的意思，两者的区别是：
 北京大兴机场竣工，多家航空公司公布航线计划 https://www.ithome.com/0/430/940.htm
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 航空公司general
+
+中国有几家航空公司？怎么看谁更厉害？ - 知乎 https://www.zhihu.com/question/20452910
+> 服了海航了。。。首都航空我一直以为是国航的小弟- -
 
 ## 东航
 
