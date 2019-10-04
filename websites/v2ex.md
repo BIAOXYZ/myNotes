@@ -28,6 +28,10 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 
 Python 之父开博客写的解析器系列文章 https://www.v2ex.com/t/588878
 
+## go
+
+GO 切片问题求教 https://www.v2ex.com/t/606165
+
 ## database
 
 最近阅读了《MySQL 必知必会》这本书，写了一篇读书笔记，请大佬们过目！ https://www.v2ex.com/t/581631
