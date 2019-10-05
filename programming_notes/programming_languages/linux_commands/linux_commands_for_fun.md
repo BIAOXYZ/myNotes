@@ -1,6 +1,6 @@
 
 
-能从远程获得乐趣的 Linux 命令 https://mp.weixin.qq.com/s/daeBClgYBmCxX8msTCNa0g
+能从远程获得乐趣的 Linux 命令 https://mp.weixin.qq.com/s/daeBClgYBmCxX8msTCNa0g || https://linux.cn/article-10437-1-rel.html
 - > 接下来，Opensource.com 的撰稿人 Manuel Dewald 提出了一种从终端获取当地天气的方法。它很简单，你只需安装 curl（或者，wget）。
   >> curl wttr.in
 ```
@@ -49,3 +49,8 @@ Follow @igor_chubin for wttr.in updates
 Linux玩家必备：Ubuntu完全配置指南 - DealiAxy的文章 - 知乎 https://zhuanlan.zhihu.com/p/56253982
 
 十大 Linux 命令行游戏 - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/33267251
+
+摸鱼也要有技巧：3个 Linux 命令行工具让你假装很忙 https://www.ithome.com/0/447/794.htm
+- > 我们要看的第一个工具是Genact。Genact只是简单地回放你选择的一个序列，在你出去喝茶休息的时候慢慢地、无限期地“编译”你的代码。它播放的序列由你决定，但默认情况下它包括一个加密货币挖掘模拟器、composer pHP 依赖管理器、内核编译器、下载器、内存管理等等。不过，我最喜欢的是显示simcity加载消息的设置。因此，只要没有人检查得太仔细，你就可以花整个下午的时间等待电脑完成进度条。
+- > Hollywood采取了更直接的方式。它本质上是在终端中创建一个随机数和拆分屏幕的配置，并启动看起来很忙的应用程序，如htop、目录树、源代码文件和其他应用程序等，并每隔几秒钟进行切换。它以shell脚本的形式组合在一起，因此可以很容易地根据你的需要进行修改。
+- > 我个人最喜欢的是Blessed-contrib，但是它并不是一个专门为了这种表演而设计的应用程序。相反，它是一个基于node.js的终端仪表板构建库的演示文件，该库名为fordated contrib。与其他两个命令不同的是，我实际上使用了fulded contrib的库来做一些实际工作的事情，而不仅仅是假装工作。它是一个非常有用的库，有可以用一组命令行显示信息的小部件。但它也很容易填充虚拟数据来实现类似《WarGames》中的梦想。

@@ -47,6 +47,26 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 异常断电为什么对SSD伤害这么大？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/soft/746109.htm
 
+### 闪存
+
+固态硬盘SSD与闪存（Flash Memory） https://www.cnblogs.com/ghj1976/p/3642260.html
+
+闪存和固态硬盘有什么区别和共同点？ - 北极的回答 - 知乎 https://www.zhihu.com/question/32251227/answer/55309032
+```
+U盘=USB控制器+闪存控制器+FLASH
+固态硬盘=硬盘控制器+FLASH
+FLASH一般就是各种闪存芯片，一般都是NAND的片子。
+
+所以，U盘和SSD是加了控制器的闪存，而影响闪存速度的是控制器的性能，比如SSD性能高于
+U盘，主要靠的不是闪存的速度而是控制器的实现。
+补充一点：高速U盘用的其实是硬盘机的主控芯片，所以才比一般U盘速度要快，SSD的主控一般
+都是32位的芯片，而山寨U盘一般是量产的8位芯片，性能差别是非常大的。
+```
+
+内存和闪存的区别是什么？ - 张冬的回答 - 知乎 https://www.zhihu.com/question/24759973/answer/29728428
+- > 内存RAM使用寄生电容充放电来表示0和1，充了电的电容需要不断的被充电维持状态，否则很快漏电，所以需要持续供电，但是速度块。
+- > Flash闪存使用MOS管中间的一个绝缘体包括层来储备电子，充电之后可以长期保存，外部使用sense amp比较放大器来感受每个MOS管内的状态，从而输出0和1状态，断电后数据依然保存，比RAM慢一个数量级，但是比磁盘快多个数量级。
+
 # CPU
 
 服务器中的u是什么意思 http://blog.chinaunix.net/uid-21505614-id-289333.html

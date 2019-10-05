@@ -1,6 +1,18 @@
 
 # 阿里
 
+## Oceanbase
+
+A distributed, shared-nothing relational database https://github.com/alibaba/oceanbase
+
+### OB TPCC测试超Oracle事件
+
+- 里程碑式反超！中国自研数据库超越Oracle登顶全球第一 https://mp.weixin.qq.com/s/BgOD_r3o65pqySPVNgFjWQ
+- 如何看待蚂蚁金服OceanBase“击败”甲骨文？ https://mp.weixin.qq.com/s/k-nZpbdq1Tlz3PrhtWFkKA
+- 独家解读：蚂蚁金服自研数据库OceanBase如何登顶TPC-C https://mp.weixin.qq.com/s/o7GLanw_ShmDSxHzDkKNSg
+- 如何看待蚂蚁金服国产分布式数据库Oceanbase在TPC-C测试中远超Oracle荣获第一？ - 知乎 https://www.zhihu.com/question/349062591
+- 如何看待蚂蚁金服OceanBase拿下世界第一，性能超老牌数据库Oracle 100％。? - 知乎 https://www.zhihu.com/question/349100846
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 腾讯
