@@ -11,6 +11,10 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 
 # V2EX技术类
 
+## hardware
+
+龙芯 & Golang！ https://www.v2ex.com/t/606364
+
 ## linux
 
 cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
