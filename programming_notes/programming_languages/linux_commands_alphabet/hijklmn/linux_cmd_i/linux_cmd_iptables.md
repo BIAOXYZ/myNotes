@@ -2,6 +2,7 @@
 # 相关命令
 
 - `firewall-cmd`
+- `nft` (nftables)
 
 # 已有书籍类链接：
 
