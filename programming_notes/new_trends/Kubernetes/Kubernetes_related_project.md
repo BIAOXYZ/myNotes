@@ -165,6 +165,8 @@ Consume services in Kubernetes using the Open Service Broker API https://github.
 - https://svc-cat.io/
 - Service Catalog https://kubernetes.io/docs/concepts/extend-kubernetes/service-catalog/
 
+KubeFed: Kubernetes Cluster Federation https://github.com/kubernetes-sigs/kubefed
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes-retired
