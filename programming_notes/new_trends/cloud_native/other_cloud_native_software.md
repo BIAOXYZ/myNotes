@@ -61,6 +61,8 @@ Kubernetes 集群健康监控 https://supereagle.github.io/2019/05/26/k8s-health
 还不了解 CNCF？关于 CNCF 的三问三答！ http://blog.daocloud.io/cncf-3/
 > Prometheus 是一套开源的监控、报警和时间序列数据库的组合，成立于 2012 年，由 SoundCloud 公司开发，此后许多组织接受和采用了 Prometheus，遂将其独立为开源项目。该项目使用 Go 语言开发，社区氛围非常活跃。
 
+Prometheus架构与实践分享 https://mp.weixin.qq.com/s/beusaP2f3mOMIlEETBhtjg
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Flannel
