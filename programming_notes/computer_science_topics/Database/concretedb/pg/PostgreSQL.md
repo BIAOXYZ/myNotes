@@ -35,6 +35,10 @@ https://bucardo.org/postgres_all_versions.html
 http://www.cnblogs.com/stephen-liu74/
 - PostgreSQL学习手册(目录) http://www.cnblogs.com/stephen-liu74/archive/2012/06/08/2315679.html
 
+## PG wechat
+
+开源软件联盟PostgreSQL分会
+- PostgreSQL中的索引介绍（三） https://mp.weixin.qq.com/s/gqhSNakCeLit1YFNXKwjXw
 
 ## pgcon and pgcon China
 
