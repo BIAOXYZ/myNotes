@@ -68,6 +68,10 @@ Marriott International https://en.wikipedia.org/wiki/Marriott_International
 - https://www.oakwood.com/
 - https://www.oakwoodasia.com/ || https://www.oakwoodasia.com/zh-cn/
 
+## Ascott / 雅诗阁
+
+首页---会员--会员福利--“雅星会”条款和条件  https://www.雅诗阁.com/zh/member/benefits/terms.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # air travel
