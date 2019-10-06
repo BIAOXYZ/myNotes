@@ -86,6 +86,11 @@ Kaizo Mario http://kaizomario.techyoshi.com/
 - 游聚游戏平台 https://www.gotvg.com/
 - http://www.day86.top/
 
+VirtuaNES http://www.emulator-zone.com/doc.php/nes/virtuanes.html
+
+Mac-有闲来玩老游戏 https://sspai.com/post/43078
+> OpenEmu http://openemu.org/ || https://github.com/OpenEmu/OpenEmu
+
 # 掌机
 
 虽然价格一千多，但光看颜值就值得你下手，它还全能到是 MP4、游戏机、树莓派、开发板…… https://mp.weixin.qq.com/s/01vnCDKfR5QRQMZMyc3Ogg
