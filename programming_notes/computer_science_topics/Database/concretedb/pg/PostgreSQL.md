@@ -39,6 +39,7 @@ http://www.cnblogs.com/stephen-liu74/
 
 开源软件联盟PostgreSQL分会
 - PostgreSQL中的索引介绍（三） https://mp.weixin.qq.com/s/gqhSNakCeLit1YFNXKwjXw
+- 原创|一文搞懂PostgreSQL物化视图 https://mp.weixin.qq.com/s/R5RhZkuOYmfIXbIS4KlIGw
 
 ## pgcon and pgcon China
 

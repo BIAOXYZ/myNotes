@@ -1,9 +1,13 @@
 
 # economics
 
+如何掏空上市公司？ https://www.huxiu.com/article/319588.html
+
+【:star:】 我们是如何被事实和数字欺骗的？ https://www.huxiu.com/article/319624.html  【by 卫夕指北】
+
 复盘美股十次熊市，进入熊市的必要条件是什么？ https://www.huxiu.com/article/315544.html || 进入熊市的必要条件是什么？ https://mp.weixin.qq.com/s/fsodAjOm0rnnIhubu9SGEA
 
-最直观的估值方法：会相亲，你就会估值 https://www.huxiu.com/article/313932.html  【by 人神共奋】
+【:star:】 最直观的估值方法：会相亲，你就会估值 https://www.huxiu.com/article/313932.html  【by 人神共奋】
 
 # p2p
 
