@@ -221,3 +221,13 @@ BJS和PEK都是代表北京的意思，两者的区别是：
 
 高铁动车火车坐过站咋办？ 很多人不知道可以免费返回 https://www.ithome.com/0/445/003.htm
 > 首先千万要冷静，一定不要着急，然后联系列车乘务员，说明情况后由列车长开具客运记录。然后将客运记录交给前方站,由车站安排最近列车免费返回，不用出站，也不用重新补票。
+
+# 其他
+
+## 快速安检&休息室
+
+龙腾和pp
+- pp卡 https://www.prioritypass.com/ || https://www.prioritypass.com/zh-CN
+- 龙腾出行 https://www.dragonpass.com.cn/
+
+龙腾 vs PP 境外哪家强 | 浦发把PP换成龙腾后该怎么办 http://www.sohu.com/a/277426368_652464
