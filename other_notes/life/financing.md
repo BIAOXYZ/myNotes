@@ -1,6 +1,8 @@
 
 # economics
 
+## from huxiu
+
 如何掏空上市公司？ https://www.huxiu.com/article/319588.html
 
 【:star:】 我们是如何被事实和数字欺骗的？ https://www.huxiu.com/article/319624.html  【by 卫夕指北】
@@ -8,6 +10,14 @@
 复盘美股十次熊市，进入熊市的必要条件是什么？ https://www.huxiu.com/article/315544.html || 进入熊市的必要条件是什么？ https://mp.weixin.qq.com/s/fsodAjOm0rnnIhubu9SGEA
 
 【:star:】 最直观的估值方法：会相亲，你就会估值 https://www.huxiu.com/article/313932.html  【by 人神共奋】
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## from zhihu
+
+1997年索罗斯狙击香港股市的过程? - 知乎 https://www.zhihu.com/question/31870315
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # p2p
 
