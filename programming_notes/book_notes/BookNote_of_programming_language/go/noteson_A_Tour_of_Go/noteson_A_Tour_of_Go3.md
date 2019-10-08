@@ -162,4 +162,89 @@ func main() {
 -5 17 12
 ```
 
+### 带缓冲的信道
+
+https://tour.go-zh.org/concurrency/3
+- > 信道可以是 ***带缓冲的***。将缓冲长度作为第二个参数提供给 `make` 来初始化一个带缓冲的信道：
+  ```go
+  ch := make(chan int, 100)
+  ```
+- > 仅当信道的缓冲区填满后，向其发送数据时才会阻塞。当缓冲区为空时，接受方会阻塞。
+- > 修改示例填满缓冲区，然后看看会发生什么。
+```go
+package main
+
+import "fmt"
+
+func main() {
+	ch := make(chan int, 2)
+	ch <- 1
+	ch <- 2
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}
+--------------------------------------------------
+//输出：
+1
+2
+```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	//// 很容易想到，下面这行的1如果是一个大于2的数是没问题的，事实也确实如此。
+	ch := make(chan int, 1)
+	ch <- 1
+	ch <- 2
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}
+--------------------------------------------------
+//输出（准确说是报错）：
+fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [chan send]:
+main.main()
+	/tmp/sandbox357298375/prog.go:8 +0x80
+```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	ch := make(chan int, 2)
+	ch <- 1
+	////ch <- 2
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}
+--------------------------------------------------
+//输出（准确说是报错）：
+1
+fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [chan receive]:
+main.main()
+	/tmp/sandbox372465934/prog.go:10 +0x140
+```
+```go
+package main
+
+import "fmt"
+
+func main() {
+	ch := make(chan int, 2)
+	ch <- 1
+	////ch <- 2
+	////fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}
+--------------------------------------------------
+//输出：
+1
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
