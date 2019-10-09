@@ -194,6 +194,10 @@ BJS和PEK都是代表北京的意思，两者的区别是：
 
 一份飞机餐的价格秘密 https://www.huxiu.com/article/319231.html
 
+## 南航
+
+里无限·南航明珠会员尊享礼遇第一重 ——里程有效期规则升级 https://skypearl.csair.com/cn/newsletter/2015/0505.html
+
 ## 东航
 
 关于东上航国内航线舱位名称变更的公告 https://mp.weixin.qq.com/s/cI52lOBvl0vDw3qqNGMibQ
