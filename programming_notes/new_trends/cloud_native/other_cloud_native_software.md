@@ -63,6 +63,8 @@ Kubernetes 集群健康监控 https://supereagle.github.io/2019/05/26/k8s-health
 
 Prometheus架构与实践分享 https://mp.weixin.qq.com/s/beusaP2f3mOMIlEETBhtjg
 
+理解OpenShift（7）：基于 Prometheus 的集群监控 https://www.cnblogs.com/sammyliu/p/10155442.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Flannel
