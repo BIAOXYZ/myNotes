@@ -35,7 +35,11 @@ A distributed, shared-nothing relational database https://github.com/alibaba/oce
 
 华为数据库GaussDB（openGauss）开源，性能超越MySQL与PostgreSQL https://www.ithome.com/0/446/024.htm
 
-一文了解华为Gauss数据库：开发历程、OLTP&OLAP特点、行式&列式存储，及与Oracle和AWS对比 https://mp.weixin.qq.com/s/dUijvrfMPJLYR2_tL6jdmA
+一文了解华为Gauss数据库：开发历程、OLTP&OLAP特点、行式&列式存储，及与Oracle和AWS对比 https://mp.weixin.qq.com/s/dUijvrfMPJLYR2_tL6jdmA || https://www.modb.pro/db/6597 || 华为GaussDB与Oracle、AWS对比有哪些优劣？ https://www.tuicool.com/articles/QNZzmmJ
+
+如何评价华为今天上午发布的高斯数据库和分布式存储8.0，会对行业带来怎样的影响？ - 知乎 https://www.zhihu.com/question/324445188
+
+华为自研的数据库gaussdb怎么样？ - 知乎 https://www.zhihu.com/question/263716125
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
