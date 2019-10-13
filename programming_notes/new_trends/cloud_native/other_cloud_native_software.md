@@ -65,6 +65,8 @@ Prometheus架构与实践分享 https://mp.weixin.qq.com/s/beusaP2f3mOMIlEETBhtj
 
 理解OpenShift（7）：基于 Prometheus 的集群监控 https://www.cnblogs.com/sammyliu/p/10155442.html
 
+Prometheus 入门与实践 https://www.ibm.com/developerworks/cn/cloud/library/cl-lo-prometheus-getting-started-and-practice/index.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Flannel
@@ -96,6 +98,18 @@ Ceph vs GlusterFS vs MooseFS vs HDFS vs DRBD https://computingforgeeks.com/ceph-
 heketi (Githubwiki) https://github.com/heketi/heketi/wiki
 
 通过Heketi管理GlusterFS为K8S集群提供持久化存储 https://www.cnblogs.com/netonline/p/10288219.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Tekton
+
+## Tekton官网
+
+Tekton https://tekton.dev/ || https://github.com/tektoncd
+
+## Tekton其他
+
+【是的，没有弄错。标题是Knative，里面全是Tekton】Knative 初体验：CI/CD 极速入门 https://www.infoq.cn/article/aObvliqZ-50LseaTyZ3E
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
