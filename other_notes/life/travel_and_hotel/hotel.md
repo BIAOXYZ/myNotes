@@ -43,6 +43,12 @@ Marriott International https://en.wikipedia.org/wiki/Marriott_International
 
 玩转万豪酒店会员，你所需要的正确姿势（2018更新版） - 牧羊博士的文章 - 知乎 https://zhuanlan.zhihu.com/p/33859741
 
+科普：万豪SNP那些事 http://www.flyertea.com/article-406840-1.html
+
+## 万豪实际情况
+
+西安丽思卡尔顿初体验 - 酒廊 / 总套 /泳池  http://www.flyertea.com/thread-3218360-1-1.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Express Hotel/快捷酒店 (主要是为了搞清谁和谁是一伙的)

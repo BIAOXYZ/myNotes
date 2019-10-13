@@ -295,4 +295,181 @@ func main() {
 34
 ```
 
+### select 语句
+
+https://tour.go-zh.org/concurrency/5
+- > `select` 语句使一个 Go 程可以等待多个通信操作。
+- > `select` 会阻塞到某个分支可以继续执行为止，这时就会执行该分支。当多个分支都准备好时会随机选择一个执行。
+```go
+package main
+
+import "fmt"
+
+func fibonacci(c, quit chan int) {
+	x, y := 0, 1
+	for {
+		select {
+		case c <- x:
+			x, y = y, x+y
+		case <-quit:
+			fmt.Println("quit")
+			return
+		}
+	}
+}
+
+func main() {
+	c := make(chan int)
+	quit := make(chan int)
+	go func() {
+		for i := 0; i < 10; i++ {
+			fmt.Println(<-c)
+		}
+		quit <- 0
+	}()
+	fibonacci(c, quit)
+}
+--------------------------------------------------
+//输出：
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+quit
+```
+
+### 默认选择
+
+https://tour.go-zh.org/concurrency/6
+- > 当 `select` 中的其它分支都没有准备好时，`default` 分支就会执行。
+- > 为了在尝试发送或者接收时不发生阻塞，可使用 `default` 分支：
+  ```go
+  select {
+  case i := <-c:
+      // 使用 i
+  default:
+      // 从 c 中接收会阻塞时执行
+  }
+  ```
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	tick := time.Tick(100 * time.Millisecond)
+	boom := time.After(500 * time.Millisecond)
+	for {
+		select {
+		case <-tick:
+			fmt.Println("tick.")
+		case <-boom:
+			fmt.Println("BOOM!")
+			return
+		default:
+			fmt.Println("    .")
+			time.Sleep(50 * time.Millisecond)
+		}
+	}
+}
+--------------------------------------------------
+//输出：
+    .
+    .
+tick.
+    .
+    .
+tick.
+    .
+    .
+tick.
+    .
+    .
+tick.
+    .
+    .
+tick.
+BOOM!
+```
+
+### ~~练习：等价二叉查找树~~
+
+- https://tour.go-zh.org/concurrency/7
+- https://tour.go-zh.org/concurrency/8
+
+### sync.Mutex
+
+https://tour.go-zh.org/concurrency/9
+- > 我们已经看到信道非常适合在各个 Go 程间进行通信。
+  > 但是如果我们并不需要通信呢？比如说，若我们只是想保证每次只有一个 Go 程能够访问一个共享的变量，从而避免冲突？
+- > 这里涉及的概念叫做 `互斥（mutual exclusion）`，我们通常使用 `互斥锁（Mutex）` 这一数据结构来提供这种机制。
+- > Go 标准库中提供了 `sync.Mutex` 互斥锁类型及其两个方法：
+  ```go
+  Lock
+  Unlock
+  ```
+- > 我们可以通过在代码前调用 `Lock` 方法，在代码后调用 `Unlock` 方法来保证一段代码的互斥执行。参见 `Inc` 方法。
+- > 我们也可以用 `defer` 语句来保证互斥锁一定会被解锁。参见 `Value` 方法。
+```go
+package main
+
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
+// SafeCounter 的并发使用是安全的。
+type SafeCounter struct {
+	v   map[string]int
+	mux sync.Mutex
+}
+
+// Inc 增加给定 key 的计数器的值。
+func (c *SafeCounter) Inc(key string) {
+	c.mux.Lock()
+	// Lock 之后同一时刻只有一个 goroutine 能访问 c.v
+	c.v[key]++
+	c.mux.Unlock()
+}
+
+// Value 返回给定 key 的计数器的当前值。
+func (c *SafeCounter) Value(key string) int {
+	c.mux.Lock()
+	// Lock 之后同一时刻只有一个 goroutine 能访问 c.v
+	defer c.mux.Unlock()
+	return c.v[key]
+}
+
+func main() {
+	c := SafeCounter{v: make(map[string]int)}
+	for i := 0; i < 1000; i++ {
+		go c.Inc("somekey")
+	}
+
+	time.Sleep(time.Second)
+	fmt.Println(c.Value("somekey"))
+}
+--------------------------------------------------
+//输出：
+1000
+```
+
+### ~~练习：Web 爬虫~~
+
+https://tour.go-zh.org/concurrency/10
+
+### ~~接下来去哪？~~
+
+https://tour.go-zh.org/concurrency/11
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
