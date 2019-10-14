@@ -63,6 +63,8 @@ YAML 语言教程 http://www.ruanyifeng.com/blog/2016/07/yaml.html
 Introduction to YAML: Creating a Kubernetes deployment https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/
 > In this case, we have a key, metadata, that has as its value a map with 2 more keys, name and labels. The labels key itself has a map as its value. You can nest these as far as you want to.
 
+How YOU actually use Kubernetes, starring YAML files https://dev.to/azure/how-you-actually-use-kubernetes-starring-yaml-files-3c0k
+
 YAML Syntax https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 
 易百教程 -- YAML教程 https://www.yiibai.com/yaml
