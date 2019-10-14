@@ -84,7 +84,7 @@ RunMyCode https://runmycode.online/
 程序猿必须知道的一些有用的（外国）网站 https://mp.weixin.qq.com/s/236sO6EKvctQrga2Zs5JMg || 学习 CS 时必须知道的一些有用的网站 https://www.oschina.net/translate/best-websites-a-programmer-should-visit
 - :link: Some useful websites for programmers. https://github.com/sdmg15/Best-websites-a-programmer-should-visit
 
-### freeCodeCamp
+## freeCodeCamp
 
 https://www.freecodecamp.cn/about
 - 中文站 https://www.freecodecamp.cn/
@@ -215,6 +215,13 @@ Many other licenses are also OSI-approved, but fall into other categories, such 
 ```
 
 微服务部署：蓝绿部署、滚动部署、灰度发布、金丝雀发布 https://www.jianshu.com/p/022685baba7d
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 编程规范
+
+Uber开放公司内部《Go语言风格指南》 https://www.ithome.com/0/450/227.htm
+> https://github.com/uber-go/guide/blob/master/style.md
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 

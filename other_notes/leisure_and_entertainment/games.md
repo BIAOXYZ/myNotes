@@ -91,6 +91,11 @@ VirtuaNES http://www.emulator-zone.com/doc.php/nes/virtuanes.html
 Mac-有闲来玩老游戏 https://sspai.com/post/43078
 > OpenEmu http://openemu.org/ || https://github.com/OpenEmu/OpenEmu
 
+# 家用游戏机
+
+【不止游戏】童年经典FC游戏，竟然隐藏了这么多剧情？ https://www.acfun.cn/v/ac11366435
+> 5:05--5:15 那个飞机类的游戏，打铃铛铃铛就会变色，然后吃对应颜色的铃铛，很可爱但是一直不知道叫什么。弹幕里有人说叫**叮当战机**，还有人问是不是叫**兵蜂**。搜了一下没有明确答案，所以只能当线索了。
+
 # 掌机
 
 虽然价格一千多，但光看颜值就值得你下手，它还全能到是 MP4、游戏机、树莓派、开发板…… https://mp.weixin.qq.com/s/01vnCDKfR5QRQMZMyc3Ogg
