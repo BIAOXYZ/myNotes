@@ -281,7 +281,9 @@ kubernetes网络相关总结 http://codemacro.com/2018/04/01/kube-network/
 
 ## kubernetes网络之端口相关内容
 
-kubernets 几种端口（port、targetport、contaierport、hostport、nodeport）的区别和关联 http://dockone.io/question/1420
+### 五种port辨析
+
+【[:star:][`*`]】 kubernets 几种端口（port、targetport、contaierport、hostport、nodeport）的区别和关联 http://dockone.io/question/1420
 ```
 这两个一般用在应用yaml描述文件中,起到的作用类似于docker -p选项
 containerport: 容器需要暴露的端口
@@ -292,8 +294,32 @@ port: service中clusterip 对应的端口
 targetport: clusterIP作为负载均衡， 后端目标实例(容器)的端口。
 
 这一个一般用在service中，service的类型为nodeport:
-nodeport: cluster ip 只能集群内部访问(源与目标需要满足两个条件: kube-proxy正常运行，跨主机容器网络通信正常)，nodeport会在每个kubelet节点的宿主机开启一个端口，用于应用集群外部访问。
+nodeport: cluster ip 只能集群内部访问(源与目标需要满足两个条件: kube-proxy正常运行，跨主机容器网络通信正常)，
+    nodeport会在每个kubelet节点的宿主机开启一个端口，用于应用集群外部访问。
 ```
+
+端口映射 https://feisky.gitbooks.io/kubernetes/practice/portmap.html
+- > 在创建 Pod 时，可以指定容器的 hostPort 和 containerPort 来创建端口映射，这样可以通过 Pod 所在 Node 的 IP:hostPort 来访问服务。比如
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    ports:
+    - containerPort: 80
+      hostPort: 80
+  restartPolicy: Always
+```
+- > 使用了 hostPort 的容器只能调度到端口不冲突的 Node 上，除非有必要（比如运行一些系统级的 daemon 服务），不建议使用端口映射功能。如果需要对外暴露服务，建议使用 NodePort Service。
+
+K8s易混点辨析：nodePort、port、targetPort https://blog.csdn.net/yjk13703623757/article/details/79819415
+
+>> 个人总结：
+- 首先最关键的一点：`containerport`和`hostport`是写在pod的yaml文件里的；而`nodePort`、`port`和`targetPort`是写在service的yaml文件里的。
 
 ### kubectl port-forward V.S. kubectl proxy
 
