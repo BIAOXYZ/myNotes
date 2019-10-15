@@ -1,4 +1,6 @@
 
+刚从 Windows 转到 macOS，如何快速上手操作？| 新手问号 https://sspai.com/post/41371
+
 # `#` Mac 软件
 
 - 如何用 MacBook 提高工作效率的【工具篇】 https://juejin.im/post/5ce9d334f265da1bbf68f956
