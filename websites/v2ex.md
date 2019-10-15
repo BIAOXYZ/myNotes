@@ -53,6 +53,9 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 推荐几篇零知识证明技术博客文章 https://www.v2ex.com/t/586006
 > 深入浅出区块链 https://learnblockchain.cn/
 
+翻译了一下破解编码面试这本书，放到 GitHub 上了 https://www.v2ex.com/t/609497
+> https://github.com/F8F-1BearCat/CtCI-6th-Edition-CN
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # V2EX非技术类
