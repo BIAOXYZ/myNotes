@@ -2,6 +2,7 @@
 # 相关命令
 
 - `sudo`
+- `visudo`
 
 # 官方链接
 
@@ -24,6 +25,12 @@ john@localhost:~$ su - jane
 Password:
 jane@localhost:~$
 ```
+- > The command sudo is related, and executes a command as another user but observes a set of constraints about which users can execute which commands as which other users (generally in a configuration file named /etc/sudoers, best editable by the command visudo). Unlike su, sudo authenticates users against their own password rather than that of the target user (to allow the delegation of specific commands to specific users on specific hosts without sharing passwords among them and while mitigating the risk of any unattended terminals).
+- > Some Unix-like systems implement the user group wheel, and only allow members to become root with su. This may or may not mitigate these security concerns, since an intruder might first simply break into one of those accounts. GNU su, however, does not support the group wheel for philosophical reasons. Richard Stallman argues that because the group would prevent users from utilizing root passwords leaked to them, the group would allow existing admins to ride roughshod over ordinary users. 
+
+su (Unix) https://zh.wikipedia.org/wiki/Su_(Unix)
+- > 相关的命令sudo也可以允许以另一个用户的身份执行命令，但遵守一组的限制，以决定哪些用户可以以什么用户身份执行什么命令（通常是在配置文件/etc/sudoers中，最好使用visudo编辑）。与su不同的是，sudo验证的是用户自己的密码，而不是目标用户的（允许特定主机上的特定用户执行特定命令，而不用共享密码，同时减轻无人值守终端的风险）。
+- > 一些类Unix系统有wheel组，且只允许组内用户su到root。很难说这是否会降低安全风险，因为入侵者可能会轻易入侵其中一个帐户。然而，由于理念不同，GNU su不支持wheel组。理查德·斯托曼认为，由于wheel组会阻止用户使用泄露给他们root密码，现有的管理员就可以欺压普通用户。
 
 # 其他博客类链接
 

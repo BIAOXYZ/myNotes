@@ -79,7 +79,6 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-
 ## DEBUG
 
 <<用PDB库调试Python程序>>
@@ -283,3 +282,22 @@ http://blog.jobbole.com/112009/
 Python 资源大全
 http://python.jobbole.com/84464/
 >awesome-python-cn https://github.com/jobbole/awesome-python-cn
+
+# 其他
+
+动态类型一时爽，代码重构火葬场？ https://blog.csdn.net/zV3e189oS5c0tSknrBCL/article/details/83829485
+- > 以前定义一个函数可以接收任何类型的数据。程序运行前，不会有任何错误提示，虽然我们知道字符串和数字是不支持“+”操作的。
+  ```python
+  def greeting(name):
+      return "Hello" + name
+  
+  greeting("bob")
+  greeting(1)
+  ```
+- > 在 Python3.5 中，用 Type Hint 写法是这样的：
+  ```py
+  def greeting(name: str) -> str:
+      return 'Hello ' + name
+  ```
+- > 上面就是静态类型的写法，多了 「: str」与 「-> str」，前者用来说明 name 的类型，后者指函数返回值的类型，我们在写代码的过程中IDE也能提示我们写得不对.
+- > 除了 IDE 之外，我们还有更强大的静态类型检查工具，叫 mypy，这个工具也是由 Python 之父 Guido 亲自操刀实现的静态类型检查工具。
