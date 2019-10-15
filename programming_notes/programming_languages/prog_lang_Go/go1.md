@@ -109,6 +109,20 @@ https://blog.csdn.net/pmlpml/article/details/78850661
 golang技术随笔（二）理解goroutine - CSDN博客
 https://blog.csdn.net/justaipanda/article/details/44064811
 
+Go goroutine理解 - 孤烟的文章 - 知乎 https://zhuanlan.zhihu.com/p/60613088
+
+### go channel
+
+`5.4 Channel` https://draveness.me/golang/concurrency/golang-channel.html
+
+`7.1 channel` https://tiancaiamao.gitbooks.io/go-internals/content/zh/07.1.html
+
+Golang中Channel的实现原理 https://blog.csdn.net/skh2015java/article/details/87921666
+
+Go: channel 源码实现 https://www.jianshu.com/p/39a3637804bb
+
+Go语言channel与select原理 https://segmentfault.com/a/1190000010813886
+
 ### defer, panic, recover
 
 Defer, Panic, and Recover
@@ -120,7 +134,7 @@ https://blog.csdn.net/hellolingyun/article/details/52433167
 Go的异常处理 defer, panic, recover
 http://www.cnblogs.com/ghj1976/archive/2013/02/11/2910114.html
 
-### slice
+### go slice
 
 Go指南 -- 向切片追加元素 https://tour.go-zh.org/moretypes/15
 > Go 切片：用法和本质 https://blog.go-zh.org/go-slices-usage-and-internals
