@@ -15,6 +15,8 @@
 - 【新浪版本，有视频】： 女子为300元全勤奖带病赶公交 老公：妻子内向精神要崩溃了 https://news.sina.com.cn/o/2019-08-29/doc-iicezzrq2037119.shtml
 - 【观察者网版本，时间更早一点】： 女子因300元全勤奖带病赶公交，跌倒后又爬起来... https://www.guancha.cn/politics/2019_08_28_515623.shtml
 
+8旬老妪等人去山外捎馒头，捎不到就饿着 https://www.acfun.cn/a/ac11386231 || https://kuaibao.qq.com/s/20191009A0HHYB00
+
 # From Zhihu
 
 中国真的有很多穷人吗？ - 知乎 https://www.zhihu.com/question/30277318
