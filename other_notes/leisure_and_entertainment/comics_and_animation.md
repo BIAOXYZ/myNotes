@@ -516,6 +516,8 @@ Oo控 https://zh.moegirl.org/Oo控
 >> 新子憧 https://zh.moegirl.org/新子憧
 >>> 六届援王冠军获得者，2ch死宅最想推——东山奈央，了解一下？ http://www.sohu.com/a/227731147_100132682
 
+校园四霸 https://zh.moegirl.org/%E6%A0%A1%E5%9B%AD%E5%9B%9B%E9%9C%B8
+
 ## 败犬收集
 
 薇什么，莓良心，银不了，尽梨了 突然爆红网络的败犬文化，你了解多少 https://www.bilibili.com/read/cv295716/
