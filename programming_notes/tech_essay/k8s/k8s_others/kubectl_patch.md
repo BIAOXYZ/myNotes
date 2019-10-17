@@ -1,5 +1,7 @@
 
-# patch service from clusterIP to NodePort
+# patch service
+
+## patch service from clusterIP to NodePort
 
 Updating running Kubernetes resources from the kubectl commandline using the patch command https://technology.amis.nl/2019/03/26/updating-running-kubernetes-resources-from-the-kubectl-commandline-using-the-patch-command/
 
@@ -78,6 +80,30 @@ status:
   loadBalancer: {}
 
 "/tmp/kubectl-edit-1she7.yaml" 32L, 1165C
+```
+
+## 另一种更全面的patch service的方法
+
+kubectl - How to edit service spec type to LoadBalancer via command line? https://stackoverflow.com/questions/51559159/kubectl-how-to-edit-service-spec-type-to-loadbalancer-via-command-line
+>> 至少经过验证，下面这个答案是可以的。这个答案里的patch语句内容更全，而且好像开了http的端口（之前的dashboard只有https的端口貌似）
+```sh
+You can't remove the existing port, but you can add the HTTPs port and also change the type using kubectl patch
+
+Example:
+
+kubectl patch svc <my_service> -p '{"spec": {"ports": [{"port": 443,"targetPort": 443,"name": "https"},{"port": 80,"targetPort": 80,"name": "http"}],"type": "LoadBalancer"}}'
+
+----------------------------------------------------------------------------------------------------
+
+$ kubectl patch svc kubernetes-dashboard -n kubernetes-dashboard -p '{"spec": {"ports": [{"port": 443,"targetPort": 443,"name": "https"},{"port": 80,"targetPort": 80,"name": "http"}],"type": "LoadBalancer"}}'
+service/kubernetes-dashboard patched
+$
+
+#// 不再展示查询结果了，反正成功了。
+#// 然后用上面那个patch回去。
+
+$ kubectl patch svc kubernetes-dashboard -n kubernetes-dashboard -p '{"spec": {"type": "NodePort"}}'
+service/kubernetes-dashboard patched
 ```
 
 # patch label
