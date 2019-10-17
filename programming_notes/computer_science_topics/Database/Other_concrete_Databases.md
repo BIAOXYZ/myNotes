@@ -83,7 +83,13 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 
 MyRocks及其使用场景分析 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/45652076
 
-# Dynamo
+# Dynamo and DynamoDB
+
+Dynamo (storage system) https://en.wikipedia.org/wiki/Dynamo_(storage_system)
+- > Amazon DynamoDB is "built on the principles of Dynamo" and is a hosted service within the AWS infrastructure. However, while Dynamo is based on leaderless replication, DynamoDB uses single-leader replication. 
+
+Amazon DynamoDB https://en.wikipedia.org/wiki/Amazon_DynamoDB
+- > Amazon DynamoDB is a fully managed proprietary NoSQL database service that supports key-value and document data structures and is offered by Amazon.com as part of the Amazon Web Services portfolio. DynamoDB exposes a similar data model to and derives its name from Dynamo, but has a different underlying implementation. Dynamo had a multi-master design requiring the client to resolve version conflicts and DynamoDB uses synchronous replication across multiple datacenters for high durability and availability. DynamoDB was announced by Amazon CTO Werner Vogels on January 18, 2012 and is presented as an evolution of Amazon SimpleDB solution. 
 
 【from draveness】:
 - 分布式键值存储 Dynamo 的实现原理 https://draveness.me/dynamo

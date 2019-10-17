@@ -21,3 +21,8 @@ MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
 
 MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded
 - > 左边是数据表，一共有两列七条记录，最左边的是数据记录的物理地址（注意逻辑上相邻的记录在磁盘上也并不是一定物理相邻的）。为了加快Col2的查找，可以维护一个右边所示的二叉查找树，每个节点分别包含索引键值和一个指向对应数据记录物理地址的指针，这样就可以运用二叉查找在O(log2n)O(log2n)的复杂度内获取到相应数据。![](https://upload-images.jianshu.io/upload_images/3575048-03fb02c336ddcd7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/588/format/webp)
+
+# mysql锁
+
+MySQL中的读锁和写锁 https://blog.csdn.net/u013063153/article/details/53432468
+- > MyISAM 在执行查询语句(SELECT)前,会自动给涉及的所有表加读锁,在执行更新操作 (UPDATE、DELETE、INSERT 等)前，会自动给涉及的表加写锁，这个过程并不需要用户干预，因此，用户一般不需要直接用LOCK TABLE命令给MyISAM表显式加锁。

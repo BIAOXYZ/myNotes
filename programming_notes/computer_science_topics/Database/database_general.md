@@ -59,7 +59,7 @@ http://blog.csdn.net/tenfyguo/article/details/8159176
   * > 页锁（page-level lock）
   * > 记录锁（行锁，因为SQL标准使用“行”的表述）
 - > 按照使用方式分为：
-  * > 互斥锁（exclusive lock，读锁）
+  * > 互斥锁（exclusive lock，读锁） ***//【:star:】这行和下面那行读锁写锁弄反了，坑！***
   * > 共享锁（sharing lock，写锁）
 - > 一般说来，获得锁并不是禁止其他事务对加锁的数据的读/写，而是阻塞了其他事务对这些数据的加锁操作。例如，如果一般的select语句根本不申请加锁，所以能直接读取其他事务已经加了互斥锁的数据。 
 
