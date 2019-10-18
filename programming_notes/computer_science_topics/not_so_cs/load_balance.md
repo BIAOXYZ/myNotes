@@ -3,6 +3,10 @@
 
 网络负载均衡器的类别和功能介绍 https://mozillazg.com/2019/01/notes-about-load-balancer-types-and-feature.html
 
+# reverse proxy
+
+What Is A Reverse Proxy? | Proxy Servers Explained https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/
+
 # HAProxy
 
 http://www.haproxy.org/
