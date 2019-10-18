@@ -36,11 +36,18 @@ cat << EOF | kubectl create -f -
 EOF
 ```
 
-6.用echo的方式
+6.用echo的方式，但真正的内容不是另起一行开始的（此外`内容开始`和`内容结尾`要紧接着引号，不然打出的yaml文件也是有空格的 --> 其实结尾处有空格还好，至少不会报错；但是yaml开头有空格会报错的。）
 ```
-echo 
+echo "内容开始
 
-   >> filename
+内容结尾" >> filename
+```
+
+7.用echo且直接创建的方式
+```
+echo '
+
+' | kubectl create -f -
 ```
 
 # （实例）结果
