@@ -287,6 +287,7 @@ EOF
 
 ##
 
+>> 无法处理$符号
 ```
 echo "apiVersion: v1
 kind: Secret
@@ -298,3 +299,36 @@ data:
   password: $password" >> secret.yaml
 ```
 
+>> 可以处理$符号
+```
+echo "apiVersion: v1
+kind: Secret
+metadata:
+  name: test-secret
+type: Opaque
+data:
+  username: \$username
+  password: \$password" >> secret1.yaml
+```
+
+>> from: https://github.com/kubernetes/ingress-nginx/blob/master/docs/examples/rewrite/README.md
+```
+echo '
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+  name: rewrite
+  namespace: default
+spec:
+  rules:
+  - host: rewrite.bar.com
+    http:
+      paths:
+      - backend:
+          serviceName: http-svc
+          servicePort: 80
+        path: /something(/|$)(.*)
+' | kubectl create -f -
+```
