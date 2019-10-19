@@ -85,9 +85,6 @@ Cross-cloud cost allocation models for workloads running on Kubernetes http://ku
 
 ----------------------------------------------------------------------------------------------------
 
-How to explain Kubernetes Operators in plain English https://enterprisersproject.com/article/2019/2/kubernetes-operators-plain-english
-- > Operator Framework https://github.com/operator-framework
-
 A resource tracking a number of Operators out in the wild. https://github.com/operator-framework/awesome-operators
 
 Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
@@ -108,6 +105,12 @@ Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
 - 开发operator扩展kubernetes 调研整理 https://yucs.github.io/2017/12/21/2017-12-21-operator/
 - 带你入门operator-framework http://dockone.io/article/5877
 - 【kubernetes/k8s概念】CRD CustomResourceDefinition 自定义资源类型 https://blog.csdn.net/zhonglinzhang/article/details/86553744
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## operator源码相关
+
+https://github.com/operator-framework/operator-sdk/blob/05a106abd9ff94bb2f0cc84b5054d0a603c9474f/doc/user-guide.md
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
