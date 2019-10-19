@@ -201,6 +201,15 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 # firefox extensions
 
+## firefox快捷键
+
+键盘快捷键 https://support.mozilla.org/zh-CN/kb/%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE
+
+| 操作 | 快捷键 |
+|--|:--|
+| 打开左邻的标签页	| control + page up |
+| 打开右邻的标签页	| control + page down |
+
 ## firefox官方的功能
 
 Firefox Monitor -- 看看您是否也处于数据外泄事件之中。 https://monitor.firefox.com/
