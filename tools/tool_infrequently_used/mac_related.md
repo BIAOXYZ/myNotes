@@ -1,6 +1,10 @@
 
 刚从 Windows 转到 macOS，如何快速上手操作？| 新手问号 https://sspai.com/post/41371
 
+sb：
+- 为什么MAC下chrome 无法使用“继续浏览上次关闭浏览器时在看的网页”？ - 知乎 https://www.zhihu.com/question/21633080
+- 在 macOS/OS X 中关闭应用窗口，为什么默认设定不是完全退出？ - 知乎 https://www.zhihu.com/question/21143701
+
 # `#` Mac 软件
 
 - 如何用 MacBook 提高工作效率的【工具篇】 https://juejin.im/post/5ce9d334f265da1bbf68f956
