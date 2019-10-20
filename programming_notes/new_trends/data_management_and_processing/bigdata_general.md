@@ -16,3 +16,11 @@ Spark比拼Flink：下一代大数据计算引擎之争 - 夜城的文章 - 知�
 日志搜集、过滤及推送处理框架logstash及fluentd总结 https://blog.csdn.net/benpaobagzb/article/details/50903323
 
 Fluentd vs. Logstash: A Comparison of Log Collectors https://logz.io/blog/fluentd-logstash/
+
+# 数据湖（data lake）
+
+Data lake https://en.wikipedia.org/wiki/Data_lake
+
+微软的数据湖也凉凉了 https://mp.weixin.qq.com/s/9sLeLnzjsrgnQwH-NV3GJQ || https://chuansongme.com/n/2585502252810 || https://cloud.tencent.com/developer/article/1356989
+
+数据湖Delta Lake 进入 Linux 基金会 https://www.ithome.com/0/451/179.htm
