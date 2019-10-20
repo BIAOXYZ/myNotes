@@ -1,4 +1,8 @@
 
+# from other website
+
+对不起，邓小平没说过“菲律宾离中国也很近” https://cul.qq.com/a/20160713/017836.htm
+
 # 2019
 
 深圳强在哪？ https://www.huxiu.com/article/314077.html
