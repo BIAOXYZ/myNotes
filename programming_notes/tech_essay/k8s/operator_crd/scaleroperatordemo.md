@@ -234,3 +234,88 @@ rm -rf demo/ demo.sh
 
 chmod 755 demo.sh && ./demo.sh
 ```
+
+# 结果
+***// 注意，所有两行星号之间的文字实际上是有颜色的（黄底蓝字），只是github的markdown显示不出来。。。***
+
+```console
+...
+...
+//上述脚本的绝大部分内容省略
+...
+...
+> 1234
+$
+$ chmod 755 demo.sh && ./demo.sh
+****************************************************************************************************
+ Start to prepare essential manifests.
+****************************************************************************************************
+
+
+****************************************************************************************************
+ Manifests are all prepared. Demo starts!
+****************************************************************************************************
+
+
+****************************************************************************************************
+ First create essential objects: sa, clusterrole, clusterrolebinding, CRD and operator itself.
+****************************************************************************************************
+serviceaccount/scaler-operator created
+clusterrole.rbac.authorization.k8s.io/scaler-operator created
+clusterrolebinding.rbac.authorization.k8s.io/scaler-operator created
+customresourcedefinition.apiextensions.k8s.io/scalers.scalerop.com created
+deployment.apps/scaler-operator created
+
+
+****************************************************************************************************
+ At that time, we have no workload (except the operator itself).
+****************************************************************************************************
+NAME                               READY   STATUS    RESTARTS   AGE
+scaler-operator-6cdbfd54f5-md8hd   2/2     Running   0          16s
+
+
+****************************************************************************************************
+ After we create two CR (CRD instance), we have 3 nginx pods and 4 wordpress pods.
+****************************************************************************************************
+scaler.scalerop.com/scaler-cr-nginx created
+scaler.scalerop.com/scaler-cr-wordpress created
+nginx-6cb454fbc7-fc6tb             1/1     Running   0          11s
+nginx-6cb454fbc7-rptbf             1/1     Running   0          11s
+nginx-6cb454fbc7-tfthl             1/1     Running   0          11s
+wordpress-66f554b8f-bftx7          1/1     Running   0          7s
+wordpress-66f554b8f-hr4hj          1/1     Running   0          7s
+wordpress-66f554b8f-jxf79          1/1     Running   0          7s
+wordpress-66f554b8f-kq29n          1/1     Running   0          7s
+
+
+****************************************************************************************************
+ We try to scale up nginx pods to 5, the operator will watch and do this automatically.
+****************************************************************************************************
+Warning: kubectl apply should be used on resource created by either kubectl create --save-config or kubectl apply
+scaler.scalerop.com/scaler-cr-nginx configured
+nginx-6cb454fbc7-2kfbp             1/1     Running   0          20s
+nginx-6cb454fbc7-fbbxz             1/1     Running   0          20s
+nginx-6cb454fbc7-fc6tb             1/1     Running   0          37s
+nginx-6cb454fbc7-rptbf             1/1     Running   0          37s
+nginx-6cb454fbc7-tfthl             1/1     Running   0          37s
+
+
+****************************************************************************************************
+ The operator can also be used to scale down different kinds of workload, here, wordpress.
+****************************************************************************************************
+Warning: kubectl apply should be used on resource created by either kubectl create --save-config or kubectl apply
+scaler.scalerop.com/scaler-cr-wordpress configured
+wordpress-66f554b8f-bftx7          1/1     Running   0          58s
+wordpress-66f554b8f-hr4hj          1/1     Running   0          58s
+
+
+****************************************************************************************************
+ Clear the environment
+****************************************************************************************************
+serviceaccount "scaler-operator" deleted
+clusterrole.rbac.authorization.k8s.io "scaler-operator" deleted
+clusterrolebinding.rbac.authorization.k8s.io "scaler-operator" deleted
+deployment.apps "scaler-operator" deleted
+customresourcedefinition.apiextensions.k8s.io "scalers.scalerop.com" deleted
+$
+```
