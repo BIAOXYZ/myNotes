@@ -248,6 +248,10 @@ http://desktopclient.net/gw/index.html#/setupvpn
 
 # 浏览器新闻类
 
+火狐成唯一通过德国联邦信息安全局考核的浏览器 https://www.ithome.com/0/451/414.htm
+- > 根据 BSI 的新指南，被认为安全的现代 Web 浏览器必须满足以下最低要求：
+- > 根据 BSI 的说法，Firefox 是唯一支持以上所有要求的浏览器，其它浏览器测试不通过的原因包括：
+
 狂追谷歌Chrome版本号？Firefox浏览器明年起每4周发布一次新版 https://www.ithome.com/0/445/791.htm
 
 Firefox浏览器计划9月底向美国用户推出DNS over HTTPS https://www.ithome.com/0/444/032.htm
