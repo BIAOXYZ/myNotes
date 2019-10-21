@@ -1,4 +1,7 @@
 
+# celery
+
+Celery (software) https://en.wikipedia.org/wiki/Celery_(software)
 
 Distributed Task Queue (development branch) http://celeryproject.org
 > https://github.com/celery/celery
