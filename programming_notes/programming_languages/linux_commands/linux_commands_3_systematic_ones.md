@@ -129,6 +129,12 @@ Max kernel policy version:      31
 - Selinux详细讲解及相关的配置 https://blog.csdn.net/Kangshuo2471781030/article/details/79294506
 - Selinux小结 https://blog.csdn.net/gulinxieying/article/details/78677139
 
+# AppArmor
+
+AppArmor https://zh.wikipedia.org/wiki/AppArmor
+
+AppArmor https://wiki.archlinux.org/index.php/AppArmor
+
 # Linux输密码时显示星号
 
 如何在Linux中输入Sudo密码时显示星号 https://www.howtoing.com/show-asterisks-sudo-password-in-linux
