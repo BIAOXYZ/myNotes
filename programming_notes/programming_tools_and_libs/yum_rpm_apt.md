@@ -176,6 +176,27 @@ rpm -Uvh file.rpm    ＃[升级一个rpm]--upgrade
 rpm -e file.rpm      ＃[删除一个rpm包]--erase
 ```
 
+CentOS等Linux发行版中使用的RPM软件管理器 https://itbilu.com/linux/man/EkSbng7SG.html
+```sh
+3.1 rpm软件安装
+安装名为foo-1.1-5-i386.rpm的软件，可以使用以下命令：
+    rpm -i foo-1.1-5-i386.rpm
+为了看到安装信息及安装进度，我们通常还会加上-vh参数：
+    rpm -ivh foo-1.1-5-i386.rpm
+-i - 表示install安装的意思
+-v - 显示安装信息
+-h - 表示显示安装进度
+
+3.2 rpm软件升级与更新
+软件升级可以使用-U或-F参数，为了显示安装信息及安装进度通常也会加上-vh参数。如，升级foo-1.1-5-i386.rpm软件：
+    rpm -Uvh foo-1.1-5-i386.rpm
+# 或
+    rpm -Fvh foo-1.1-5-i386.rpm
+两者的区别是：
+-Uvh - 当软件未安装时，会直接安装最新版。当已安装时，会升级到最新版
+-Fvh - 只有当已安装时，才会升级到最新版。未安装则无操作
+```
+
 ## rpm其他
 
 Difference between yum update vs yum install https://unix.stackexchange.com/questions/157448/difference-between-yum-update-vs-yum-install
