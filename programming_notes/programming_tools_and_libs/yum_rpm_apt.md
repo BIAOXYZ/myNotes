@@ -230,6 +230,8 @@ zypper install xxx   安装软件包
 zypper rm xxx   卸载软件包
 ```
 
+SuSE下zypper源配置 http://www.361way.com/suse-zypper/5086.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # apk (for [Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux))
@@ -316,6 +318,10 @@ Comparison of major Linux package management systems https://linuxconfig.org/com
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # curl
+
+Using curl to automate HTTP jobs https://curl.haxx.se/docs/httpscripting.html
+
+curl网站开发指南 http://www.ruanyifeng.com/blog/2011/09/curl.html
 
 cURL 作者 Daniel Stenberg 宣布即将从 Mozilla 离职 https://www.cnbeta.com/articles/tech/789651.htm
 
