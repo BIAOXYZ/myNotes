@@ -38,6 +38,14 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
 
+数据库的发展趋势是什么？ https://www.v2ex.com/t/612782
+- > NoSQL 的建议看一下《 NoSql 精粹》，里面讲了不同的 nosql 数据库的擅长的地方、与关系型数据库的对比。挺薄的一本书的。作者是（著名的） Martin Fowler。
+  * 《NoSQL 精粹》 http://www.java1234.com/a/javabook/database/2016/0721/6434.html
+- > 看一下这本书: Designing Data-Intensive Applications, 就知道分布式(强)一致性有多么难做. 不知道 NewSQL 是怎么解决这个问题的.
+  * 《Designing Data-Intensive Application》DDIA中文翻译 https://github.com/Vonng/ddia
+    + 设计数据密集型应用 - 中文翻译 https://legacy.gitbook.com/book/vonng/ddia-cn/details
+  * 《Designing Data-Intensive Applications》 http://www.java1234.com/a/javabook/javabase/2017/0914/8912.html
+
 最近阅读了《MySQL 必知必会》这本书，写了一篇读书笔记，请大佬们过目！ https://www.v2ex.com/t/581631
 - > 客官，这里有一份《MySQL 必知必会》读书笔记，请您笑纳! https://juejin.im/post/5d2335846fb9a07f021a2509
 
