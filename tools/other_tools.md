@@ -22,6 +22,8 @@ TempMail https://temp-mail.org/zh/
 云验证码 - 免费在线接收短信 https://www.cnwml.com/
 
 8个在线接收手机短信验证码的免费网络服务整理 https://blog.csdn.net/freeking101/article/details/82770470
+- Z-SMS http://www.z-sms.com/
+  * 18866674052
 
 TextNow https://www.textnow.com/
 
