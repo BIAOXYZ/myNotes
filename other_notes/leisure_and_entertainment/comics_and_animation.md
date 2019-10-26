@@ -534,6 +534,22 @@ Oo控 https://zh.moegirl.org/Oo控
 风评被害 https://zh.moegirl.org/%E9%A3%8E%E8%AF%84%E8%A2%AB%E5%AE%B3
 > 圆光角色/援助交际 https://zh.moegirl.org/%E6%8F%B4%E5%8A%A9%E4%BA%A4%E9%99%85  -->  “在2CH曾经举办“看起来在援交人物排行榜”【圆光】，数名角色和声优无辜中枪风评被害。”
 >> 新子憧 https://zh.moegirl.org/新子憧
+```
+柒截
+援力与你同在
+
+Evaccaneer Doom
+新子憧：你们，只是被援力眷顾而已，而我，是援力本身。
+
+逍遥叹叹逍遥
+然而2015年继续连冠，不愧是连背景都是床的少女
+
+Wxc060302
+悲报 2018年援王驾崩！！！！ 
+
+RTM
+东山七年，帝憧崩，诏令皇太子帆波柩前即位，庙号太祖。 
+```
 >>> 六届援王冠军获得者，2ch死宅最想推——东山奈央，了解一下？ http://www.sohu.com/a/227731147_100132682
 
 校园四霸 https://zh.moegirl.org/%E6%A0%A1%E5%9B%AD%E5%9B%9B%E9%9C%B8
