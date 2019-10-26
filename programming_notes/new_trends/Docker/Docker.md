@@ -197,6 +197,10 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 
 一篇不一样的docker原理解析 提高篇 - uncle creepy的文章 - 知乎 https://zhuanlan.zhihu.com/p/22403015
 
+## docker Github帖子
+
+容器中的数据库是一个好主意吗？ https://github.com/Vonng/pg/blob/99785ff1e57c0e8b9fc486eeba1c4984bad7b228/misc/postgres-in-docker.md
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # docker源码和底层原理

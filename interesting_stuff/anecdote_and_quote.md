@@ -15,3 +15,21 @@ https://en.wikiquote.org/wiki/Richard_Feynman
 
 专访前《连线》安德森：移动网络是封闭哲学 http://tech.qq.com/a/20130123/000036.htm
 - 安德森：所有重要的科技都是短期内被高估(over-hyped），长期来看则是被低估。网络就是这样，我们总是看到此事重复发生。
+
+从`计算机科学领域的任何问题都可以通过增加一个间接的中间层来解决`这句搜起，寻根究底：
+- 【网上搜个中英文版本都有的文章】 https://blog.csdn.net/liutianshx2012/article/details/50790512
+  * > “计算机科学领域的任何问题都可以通过增加一个间接的中间层来解决” 
+  * > “Any problem in computer science can be solved by anther layer of indirection.”
+- Indirection https://en.wikipedia.org/wiki/Indirection
+  * > A famous aphorism of David Wheeler goes: ***"All problems in computer science can be solved by another level of indirection"*** (the "fundamental theorem of software engineering"). This is often deliberately mis-quoted with ***"abstraction layer"*** substituted for ***"level of indirection"***. An often cited corollary to this is, ***"...except for the problem of too many layers of indirection."***
+- > Fundamental theorem of software engineering https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering
+  * > The fundamental theorem of software engineering (FTSE) is a term originated by Andrew Koenig to describe a remark by Butler Lampson attributed to the late David J. Wheeler: ***We can solve any problem by introducing an extra level of indirection.***
+- > David Wheeler (computer scientist) https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)
+  * > Wheeler is often quoted as saying ***"All problems in computer science can be solved by another level of indirection."*** Another quotation attributed to him is ***"Compatibility means deliberately repeating other people's mistakes."***
+  * > Another quote of him saying at the famous Cambridge Computer Lab Coffee Room — ***"Published Papers in the Shelves Collecting Dust"*** to Ph.D. students — signifying that research must have impact, and not about papers or number of publications. 
+
+>> notes: 所以个人总结下就是：
+1. David Wheeler的原话是：`All problems in computer science can be solved by another level of indirection.`。
+2. 但是Butler Lampson这个图灵奖得主在引用的时候没有一字一句对照，变成了：`We can solve any problem by introducing an extra level of indirection.`。于是这两种说法都有了，但是好歹两种说法里都是用的`level of indirection`。
+3. 然后`level of indirection`又经常被众口相传成`abstraction layer`，包括（几乎）所有的中译版。
+4. David Wheeler这哥们还有两句名言，参照上面他的wiki词条吧。
