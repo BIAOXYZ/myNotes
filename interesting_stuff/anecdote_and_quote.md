@@ -22,9 +22,9 @@ https://en.wikiquote.org/wiki/Richard_Feynman
   * > “Any problem in computer science can be solved by anther layer of indirection.”
 - Indirection https://en.wikipedia.org/wiki/Indirection
   * > A famous aphorism of David Wheeler goes: ***"All problems in computer science can be solved by another level of indirection"*** (the "fundamental theorem of software engineering"). This is often deliberately mis-quoted with ***"abstraction layer"*** substituted for ***"level of indirection"***. An often cited corollary to this is, ***"...except for the problem of too many layers of indirection."***
-- > Fundamental theorem of software engineering https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering
+- Fundamental theorem of software engineering https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering
   * > The fundamental theorem of software engineering (FTSE) is a term originated by Andrew Koenig to describe a remark by Butler Lampson attributed to the late David J. Wheeler: ***We can solve any problem by introducing an extra level of indirection.***
-- > David Wheeler (computer scientist) https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)
+- David Wheeler (computer scientist) https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)
   * > Wheeler is often quoted as saying ***"All problems in computer science can be solved by another level of indirection."*** Another quotation attributed to him is ***"Compatibility means deliberately repeating other people's mistakes."***
   * > Another quote of him saying at the famous Cambridge Computer Lab Coffee Room — ***"Published Papers in the Shelves Collecting Dust"*** to Ph.D. students — signifying that research must have impact, and not about papers or number of publications. 
 
