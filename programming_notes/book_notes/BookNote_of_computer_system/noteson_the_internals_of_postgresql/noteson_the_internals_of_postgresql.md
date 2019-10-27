@@ -32,7 +32,7 @@ Contents
 > A database is a collection of ***`database objects`***. In the relational database theory, a database object is a data structure used either to store or to reference data. A (heap) table is a typical example of it, and there are many more like an index, a sequence, a view, a function and so on. In PostgreSQL, databases themselves are also database objects and are logically separated from each other. 
 
 > All the database objects in PostgreSQL are internally managed by respective **object identifiers (OIDs)**, which are ***unsigned 4-byte integers***. The relations ***between database objects and the respective OIDs*** are stored in appropriate [system catalogs](https://www.postgresql.org/docs/current/catalogs.html), depending on the type of objects. For example, OIDs of databases and heap tables are stored in *pg_database* and *pg_class* respectively, so you can find out the OIDs you want to know by issuing the queries such as the following: 
-```
+```sql
 sampledb=# SELECT datname, oid FROM pg_database WHERE datname = 'sampledb';
  datname  |  oid  
 ----------+-------
@@ -52,6 +52,22 @@ sampledb=# SELECT relname, oid FROM pg_class WHERE relname = 'sampletbl';
 > A *database cluster* basically is ***one directory*** referred to as ***`base directory`***, and it contains ***some subdirectories and lots of files***. If you execute the [initdb](https://www.postgresql.org/docs/current/app-initdb.html) utility to initialize a new database cluster, a base directory will be created under the specified directory. Though it is not compulsory, the path of the base directory is usually set to the environment variable ***`PGDATA`***. 
 
 > ***A database is a subdirectory*** under the ***`base` subdirectory***, and ***each of the tables and indexes is (at least) one file*** stored under the subdirectory of the database to which it belongs. Also there are several subdirectories containing particular data, and configuration files. While PostgreSQL supports tablespaces, the meaning of the term is different from other RDBMS. ***A tablespace in PostgreSQL is one directory*** that contains some data ***outside of the base directory***. 
->> notes：注意这里的 `base subdirectory`，其实就是`$PGDATA/base`。
+![](http://www.interdb.jp/pg/img/fig-1-02.png)
+>> notes：注意这里的 `base subdirectory`，其实就是指`$PGDATA/base`这个目录——也就是`PGDATA`目录下名称为`base`（并且必须叫`base`！）的一级子目录，里面存的都是数据库数据。此外，虽然`PGDATA`被称为`base directory`，但这里的base只是个称呼而已，`PGDATA`本身叫啥名字都行。
 
 ### 1.2.1. Layout of a Database Cluster
+
+>> notes：表1.1是`base directory`（也就是`$PGDATA`）下的文件和子目录的名称和用途。本身内容不少，文档又可以随时查，就不赘述了。唯一需要强调一下的大概就是`pg10`之后的两个大的目录名称变更（变更原因之一都是为了防止萌新们删无用的日志时直接正则表达式匹配到log。。。）：
+1. `pg_clog/`变更为`pg_xact`。
+2. `pg_xlog/`变更为`pg_wal/`。
+
+### 1.2.2. Layout of Databases
+
+> A database is a subdirectory under the base subdirectory; and ***the database directory names are identical to the respective OIDs***. For example, when the OID of the database sampledb is 16384, its subdirectory name is 16384. 
+```sh
+$ cd $PGDATA
+$ ls -ld base/16384
+drwx------  213 postgres postgres  7242  8 26 16:33 16384
+```
+
+### 1.2.3. Layout of Files Associated with Tables and Indexes
