@@ -32,6 +32,8 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 
 Python 之父开博客写的解析器系列文章 https://www.v2ex.com/t/588878
 
+刚搞懂一个 logging 的用法，分享一下。 https://www.v2ex.com/t/613320
+
 ## go
 
 GO 切片问题求教 https://www.v2ex.com/t/606165
