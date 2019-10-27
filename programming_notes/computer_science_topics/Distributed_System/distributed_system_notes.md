@@ -2,6 +2,8 @@
 
 # distributed system general
 
+awesome-distributed-systems -- A curated list to learn about distributed systems https://github.com/theanalyst/awesome-distributed-systems
+
 Scalable, Available, Stable, Performant, and Intelligent System Design Patterns https://github.com/binhnguyennus/awesome-scalability
 
 Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
