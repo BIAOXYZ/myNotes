@@ -98,3 +98,6 @@ Anthos, Bringing the cloud to you. https://cloud.google.com/anthos/
 
 Anthos overview https://cloud.google.com/anthos/docs/concepts/anthos-overview
 
+# AWS
+
+AWS 云服务大全（71 种） https://linux.cn/article-8591-1.html
