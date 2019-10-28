@@ -71,3 +71,65 @@ drwx------  213 postgres postgres  7242  8 26 16:33 16384
 ```
 
 ### 1.2.3. Layout of Files Associated with Tables and Indexes
+
+> Each ***table or index*** whose size is less than ***`1GB`*** is ***a single file*** stored under the database directory it belongs to. Tables and indexes as database objects are internally managed by individual OIDs, while those data files are managed by the variable, ***`relfilenode`***. The relfilenode values of tables and indexes basically but **not** always match the respective OIDs, the details are described below. 
+>> notes：单个表和索引文件的大小以1GB为单位（这个值当然可以改，不过只改配置文件是不行的，得重新build数据库）。它们作为数据库对象的话对应的是OID，而它们的数据文件则对应的是`relfilenode`。
+
+>  Let's show the OID and relfilenode of the table sampletbl:
+```sql
+sampledb=# SELECT relname, oid, relfilenode FROM pg_class WHERE relname = 'sampletbl';
+  relname  |  oid  | relfilenode
+-----------+-------+-------------
+ sampletbl | 18740 |       18740 
+(1 row)
+```
+> From the result above, you can see that ***both oid and relfilenode values are equal***. You can also see that the data file path of the table sampletbl is ***'base/16384/18740'***.
+```sh
+$ cd $PGDATA
+$ ls -la base/16384/18740
+-rw------- 1 postgres postgres 8192 Apr 21 10:21 base/16384/18740
+```
+
+> The relfilenode values of tables and indexes are changed by issuing some commands (e.g., ***`TRUNCATE, REINDEX, CLUSTER`***). For example, if we truncate the table sampletbl, PostgreSQL assigns a new relfilenode (18812) to the table, removes the old data file (18740), and creates a new one (18812).
+```sql
+sampledb=# TRUNCATE sampletbl;
+TRUNCATE TABLE
+
+sampledb=# SELECT relname, oid, relfilenode FROM pg_class WHERE relname = 'sampletbl';
+  relname  |  oid  | relfilenode
+-----------+-------+-------------
+ sampletbl | 18740 |       18812 
+(1 row)
+```
+
+> In version 9.0 or later, the built-in function ***`pg_relation_filepath`*** is useful as this function returns the file path name of the relation with the specified OID or name.
+```sql
+sampledb=# SELECT pg_relation_filepath('sampletbl');
+ pg_relation_filepath 
+----------------------
+ base/16384/18812
+(1 row)
+```
+
+>  When the file size of tables and indexes exceeds 1GB, PostgreSQL creates a new file named like ***`relfilenode.1`*** and uses it. If the new file has been filled up, next new file named like ***`relfilenode.2`*** will be created, and so on.
+```sh
+$ cd $PGDATA
+$ ls -la -h base/16384/19427*
+-rw------- 1 postgres postgres 1.0G  Apr  21 11:16 data/base/16384/19427
+-rw------- 1 postgres postgres  45M  Apr  21 11:20 data/base/16384/19427.1
+...
+```
+
+> The maximum file size of tables and indexes can be changed using the configuration, option ***`--with-segsize`*** when building PostgreSQL. 
+
+>  Looking carefully at the database subdirectories, you will find out that each table has two associated files suffixed respectively with ***'`_fsm`'*** and ***'`_vm`'***. Those are referred to as ***`free space map`*** and ***`visibility map`***, storing the information of the free space capacity and the visibility on each page within the table file, respectively (see more detail in `Section 5.3.4` and `Section 6.2`). ***Indexes only have individual free space maps*** and ***don't*** have visibility map.
+```sh
+$ cd $PGDATA
+$ ls -la base/16384/18751*
+-rw------- 1 postgres postgres  8192 Apr 21 10:21 base/16384/18751
+-rw------- 1 postgres postgres 24576 Apr 21 10:18 base/16384/18751_fsm
+-rw------- 1 postgres postgres  8192 Apr 21 10:18 base/16384/18751_vm
+```
+> They may also be internally referred to as the forks of each relation; the free space map is the first fork of the table/index data file (the fork number is 1), the visibility map the second fork of the table's data file (the fork number is 2). The fork number of the data file is 0. 
+
+### 1.2.4. Tablespaces
