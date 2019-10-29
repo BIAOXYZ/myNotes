@@ -567,6 +567,17 @@ RTM
 
 校园四霸 https://zh.moegirl.org/%E6%A0%A1%E5%9B%AD%E5%9B%9B%E9%9C%B8
 
+珂朵莉·诺塔·瑟尼欧里斯 https://zh.moegirl.org/%E7%8F%82%E6%9C%B5%E8%8E%89%C2%B7%E8%AF%BA%E5%A1%94%C2%B7%E7%91%9F%E5%B0%BC%E6%AC%A7%E9%87%8C%E6%96%AF
+```
+叶孤城
+昨天百度珂朵莉找到一个叫珂朵莉树的东西 我：？？？
+
+SomeyaMako
+数据结构之一，适用于区间推平操作等，因有一道William和Chtholly的题目而得名（x
+```
+> 珂朵莉树 https://oi-wiki.org/ds/odt/ --> 『老司机树，ODT(Old Driver Tree)，又名珂朵莉树（Chtholly Tree)。 起源自 CF896C 。』
+>> C. Willem, Chtholly and Seniorious https://codeforces.com/problemset/problem/896/C
+
 ## 败犬收集
 
 薇什么，莓良心，银不了，尽梨了 突然爆红网络的败犬文化，你了解多少 https://www.bilibili.com/read/cv295716/
