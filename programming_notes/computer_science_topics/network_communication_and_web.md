@@ -126,3 +126,16 @@ IP Virtual Server https://en.wikipedia.org/wiki/IP_Virtual_Server
 
 Linux负载均衡--LVS（IPVS） https://www.jianshu.com/p/36880b085265
 
+### 跳板机
+
+跳板机的工作原理和简单的跳板机实现 https://www.cnblogs.com/feng0919/p/11215884.html
+> 跳板机（Jump Server），也称堡垒机，是一类可作为跳板批量操作远程设备的网络设备，是系统管理员或运维人员常用的操作平台之一。跳板机是网络中容易受到侵害的主机，所以跳板机也必须是自身保护完善的主机。通常至少配备***两块网卡***设备，分别具备不同的网络连接。一个连接外网，用以对目标服务器的远程登录及维护；另一个则连接内网，便于内部网络的管理、控制和保护，通过***`网关服务`***提供从私网到公网，或从公网到私网的特殊协议路由服务。
+
+运维人员如何搭建堡垒机（跳板机）？ - 知乎 https://www.zhihu.com/question/31175397
+- 运维人员如何搭建堡垒机（跳板机）？ - 地球的外星人君的回答 - 知乎 https://www.zhihu.com/question/31175397/answer/171260795
+  * > Jumpserver是全球首款完全开源的堡垒机，是符合 4A 的专业运维审计系统。 http://www.jumpserver.org || https://github.com/jumpserver/jumpserver
+  * > 【超全整理】《Linux云计算从入门到精通》系列实战笔记全放送 http://www.magedu.com/74163.html
+
+Shell实现跳板机，为什么用跳板机 https://www.cnblogs.com/200911/p/4310203.html
+
+无视跳板机进行scp https://www.jianshu.com/p/4e8c552fef7a

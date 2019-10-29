@@ -70,3 +70,13 @@ step3
 
 end
 ```
+
+# 相关技巧
+
+【 from： 跳板机的工作原理和简单的跳板机实现 https://www.cnblogs.com/feng0919/p/11215884.html 】
+```sh
+[root@jiangfeng1 ~]# echo 123456 | passwd --stdin code1
+更改用户 code1 的密码 。
+passwd： 所有的身份验证令牌已经成功更新。
+```
+>> note：可以用上面这个echo语句，实现不用交互式地更改用户密码。
