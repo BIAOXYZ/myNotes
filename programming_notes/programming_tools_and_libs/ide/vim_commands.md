@@ -20,6 +20,12 @@ if has('mouse')
   set mouse=a
 endif
 ```
+```
+补充：
+1. 设置了 set mouse=a 的话用 ctrl+v 复制时总是进入visual模式，网上有几种办法，但是对我适用的只有手动先禁用一下，即：
+   :set mouse-=a
+```
+
 
 ### 0.2 执行类命令总结
 
