@@ -133,3 +133,42 @@ $ ls -la base/16384/18751*
 > They may also be internally referred to as the forks of each relation; the free space map is the first fork of the table/index data file (the fork number is 1), the visibility map the second fork of the table's data file (the fork number is 2). The fork number of the data file is 0. 
 
 ### 1.2.4. Tablespaces
+
+> A tablespace in PostgreSQL is an additional data area ***outside the base directory***. This function has been implemented in `version 8.0`.
+
+> Figure 1.3 shows the internal layout of a tablespace, and the relationship with the main data area. 
+![](http://www.interdb.jp/pg/img/fig-1-03.png)
+
+> A tablespace is created under the directory specified when you issue [CREATE TABLESPACE](https://www.postgresql.org/docs/current/sql-createtablespace.html) statement, and under that directory, the `version-specific subdirectory` (e.g., PG_9.4_201409291) will be created. The naming method for version-specific one is shown below.
+```
+PG _ 'Major version' _ 'Catalogue version number'
+```
+> For example, if you create a tablespace ***'new_tblspc'*** at ***'/home/postgres/tblspc'***, whose ***oid is 16386***, a subdirectory such as 'PG_9.4_201409291' would be created under the tablespace.
+```sh
+$ ls -l /home/postgres/tblspc/
+total 4
+drwx------ 2 postgres postgres 4096 Apr 21 10:08 PG_9.4_201409291
+```
+> The tablespace directory is addressed by a ***`symbolic link`*** from the ***`pg_tblspc` subdirectory***, and ***the `link name` is the same as the `OID value of tablespace`***.
+```sh
+$ ls -l $PGDATA/pg_tblspc/
+total 0
+lrwxrwxrwx 1 postgres postgres 21 Apr 21 10:08 16386 -> /home/postgres/tblspc
+```
+
+> If you create `a new database` (***OID is 16387***) under the tablespace, its directory is created under the version-specific subdirectory.
+```sh
+$ ls -l /home/postgres/tblspc/PG_9.4_201409291/
+total 4
+drwx------ 2 postgres postgres 4096 Apr 21 10:10 16387
+```
+
+> If you create a new table which ***belongs to the database created `under the base directory`***, first, the new directory, whose name is the same as the existing database OID, is created under the version specific subdirectory, and then the new table file is placed under the created directory.
+```sql
+sampledb=# CREATE TABLE newtbl (.....) TABLESPACE new_tblspc;
+
+sampledb=# SELECT pg_relation_filepath('newtbl');
+             pg_relation_filepath             
+----------------------------------------------
+ pg_tblspc/16386/PG_9.4_201409291/16384/18894
+ ```
