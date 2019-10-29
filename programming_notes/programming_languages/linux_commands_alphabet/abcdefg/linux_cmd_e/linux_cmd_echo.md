@@ -23,7 +23,7 @@ echo >> file.txt即可，
 ```
 
 ```shell
-个人实战（没管sh，就测了测bash就行了）：
+// 个人实战（没管sh，就测了测bash就行了）：
 
 root@cloudsec2:~$ echo step1 >> test.log
 root@cloudsec2:~$ cat test.log
@@ -80,3 +80,4 @@ end
 passwd： 所有的身份验证令牌已经成功更新。
 ```
 >> note：可以用上面这个echo语句，实现不用交互式地更改用户密码。
+>>> note2：后来发现ubuntu下不行，因为ubuntu下的passwd命令竟然没有`--stdin`参数。。。详情参见`passwd`命令专门的笔记文件吧。
