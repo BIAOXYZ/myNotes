@@ -157,8 +157,7 @@ namespaces
 
 ## SSH & SSL & TLS
 
-<<SSH用私钥登录远程服务器时提示私钥不安全>>
-http://www.codeweblog.com/ssh%E7%94%A8%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6%E6%8F%90%E7%A4%BA%E7%A7%81%E9%92%A5%E4%B8%8D%E5%AE%89%E5%85%A8/
+SSH用私钥登录远程服务器时提示私钥不安全 https://my.oschina.net/philosopher/blog/314134
 
 ### 阮一峰SSL/TLS相关
 - <<SSH原理与运用（一）：远程登录>> http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
@@ -185,6 +184,20 @@ SSH的默认端口是22，也就是说，你的登录请求会送进远程主机
 
 - ssh免密登录配置 https://www.jianshu.com/p/0922095f69f3
 - Linux之ssh免密登录 https://blog.csdn.net/mmd0308/article/details/73825953
+
+### ssh端口转发与隧道
+
+SSH原理与运用（二）：远程操作与端口转发 http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
+
+实战 SSH 端口转发 https://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/index.html
+
+【[:star:][`*`]】 SSH隧道与端口转发及内网穿透 https://blog.creke.net/722.html
+
+图解再谈ssh port forwarding-ssh隧道技术 https://www.cnblogs.com/kidsitcn/p/11090252.html
+
+SSH PORT FORWARDING EXAMPLE https://www.ssh.com/ssh/tunneling/example
+
+How to Create SSH Tunneling or Port Forwarding in Linux https://www.tecmint.com/create-ssh-tunneling-port-forwarding-in-linux/
 
 ### Xshell自动断连
 在 /etc/profile 末尾加上 
