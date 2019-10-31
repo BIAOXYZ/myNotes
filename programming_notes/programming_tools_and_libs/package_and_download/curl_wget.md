@@ -3,9 +3,21 @@
 
 Using curl to automate HTTP jobs https://curl.haxx.se/docs/httpscripting.html
 
+## curl命令总结
+
+```sh
+# 注：curl命令默认情况下的http请求动作是GET，也就是相当于 -X GET。
+
+curl 网址[:端口号]  # 查看网页源码。例：curl www.sina.com 或 curl https://www.qq.com:443
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## curl其他帖子
+
 curl网站开发指南 http://www.ruanyifeng.com/blog/2011/09/curl.html
 
-cURL 作者 Daniel Stenberg 宣布即将从 Mozilla 离职 https://www.cnbeta.com/articles/tech/789651.htm
+curl 使用指北&实战 https://juejin.im/post/5d85d61f5188257e8e46e477
 
 Linux中使用curl命令访问https站点4种常见错误和解决方法 https://www.jb51.net/LINUXjishu/287588.html
 > "解决办法是将签发该证书的私有CA公钥cacert.pem文件内容，追加到/etc/pki/tls/certs/ca-bundle.crt。"
@@ -19,6 +31,12 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 ```
 
 记一次解决curl https证书问题 https://www.cnblogs.com/xuxinkun/p/5417836.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## curl新闻
+
+cURL 作者 Daniel Stenberg 宣布即将从 Mozilla 离职 https://www.cnbeta.com/articles/tech/789651.htm
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
