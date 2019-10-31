@@ -77,6 +77,14 @@ Tekton https://tekton.dev/ || https://github.com/tektoncd
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Tectonic
+
+Introducing Tectonic - a Kubernetes + CoreOS Platform https://tectonic.com/blog/announcing-tectonic/
+
+We’re integrating Tectonic with Red Hat OpenShift https://coreos.com/tectonic/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Notary
 
 Notary is a project that allows anyone to have trust over arbitrary collections of data https://github.com/theupdateframework/notary
