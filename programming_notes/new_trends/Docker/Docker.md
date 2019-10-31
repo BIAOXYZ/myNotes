@@ -64,6 +64,11 @@ Login Succeeded
 
 docker login https://docs.docker.com/engine/reference/commandline/login/
 
+## docker ps
+```
+docker ps -a --no-trunc  //主要是--no-trunc参数，可以显示完整的command。直接照搬 `ps -ef | cat` 不行。
+```
+
 ## 其他docker常用命令
 
 - 15 个 Docker 技巧和提示 https://blog.csdn.net/liyingke112/article/details/73920837
