@@ -14,6 +14,8 @@ https://www.cnbeta.com/articles/soft/751203.htm
 
 简述Linux的启动过程 https://segmentfault.com/a/1190000006872609
 
+Linux 中 rc.local、init.d、rc.x、init 这几个文件（夹）各有什么作用？启动执行的脚本应该均放在 rc.local 中吗？ - 知乎https://www.zhihu.com/question/20126189
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # OS Kernel
