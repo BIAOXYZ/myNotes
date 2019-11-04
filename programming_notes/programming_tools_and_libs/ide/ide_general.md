@@ -100,6 +100,10 @@ VS code golang 开发环境搭建 - CSDN博客 https://blog.csdn.net/hil2000/art
 使用Visual Studio Code调试Golang工程 - 徐波的文章 - 知乎 https://zhuanlan.zhihu.com/p/26473355
 >> notes：感觉主要就是调试配置那里模式改成————`"mode": "debug"`（有的时候值是`"auto"`）就差不多了。不过我是因为机器之前已经下过delve了。
 
+vscode 的 go 插件怎么正确安装？ https://www.v2ex.com/t/615962
+- > export GOPROXY=https://goproxy.cn
+- > idea 社区版 可以装 go 的插件，使用体验和 goland 是一样的
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ### vscode for python
