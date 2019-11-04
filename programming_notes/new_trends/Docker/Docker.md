@@ -1,5 +1,4 @@
 
-
 # 官方连接
 
 Docker https://www.docker.com/
@@ -282,6 +281,12 @@ ENTRYPOINT和CMD的不同点在于执行docker run时参数传递方式，CMD指
 > 运行过Docker Hub的Docker镜像的话，会发现其中一些容器时需要挂载/var/run/docker.sock文件。这个文件是什么呢？为什么有些容器需要使用它？简单地说，它是Docker守护进程(Docker daemon)默认监听的Unix域套接字(Unix domain socket)，容器中的进程可以通过它与Docker守护进程进行通信。
 
 【Docker】daemon.json的作用（八） https://blog.csdn.net/u013948858/article/details/79974796
+
+Docker 登陆信息本地存储，docker login 存储 https://blog.csdn.net/shida_csdn/article/details/80320405
+```
+执行 docker login 后，docker 会记住对应 registry 的登陆用户名，方便下次登陆。那么，这个信息是存储在哪里的呢？
+其实，是存储在用户 Home 下的 .docker 文件夹下的
+```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
