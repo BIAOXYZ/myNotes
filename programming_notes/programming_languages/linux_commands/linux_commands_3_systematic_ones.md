@@ -136,6 +136,33 @@ AppArmor https://wiki.archlinux.org/index.php/AppArmor
 
 # 小专题
 
+## linux目录含义
+
+Unix目录结构的来历 http://www.ruanyifeng.com/blog/2012/02/a_history_of_unix_directory_structure.html
+
+Linux文件系统中/bin、/sbin、/usr/bin、/usr/sbin、/usr/local/bin、/usr/local/sbin文件夹的区别是什么？ - 知乎 https://www.zhihu.com/question/21265424
+
+Differences between /bin, /sbin, /usr/bin, /usr/sbin, /usr/local/bin, /usr/local/sbin https://askubuntu.com/questions/308045/differences-between-bin-sbin-usr-bin-usr-sbin-usr-local-bin-usr-local
+```sh
+● /bin : For binaries usable before the /usr partition is mounted. This is used 
+for trivial binaries used in the very early boot stage or ones that you need to 
+have available in booting single-user mode. Think of binaries like cat, ls, etc.
+● /sbin : Same, but for binaries with superuser (root) privileges required.
+● /usr/bin : Same as first, but for general system-wide binaries.
+● /usr/sbin : Same as above, but for binaries with superuser (root) privileges required.
+
+if I'm writing my own scripts, where should I add these?
+
+None of the above. You should use /usr/local/bin or /usr/local/sbin for system-wide available scripts. The local path means it's not managed by the system packages (this is an error for Debian/Ubuntu packages).
+
+For user-scoped scripts, use ~/bin (a personal bin folder in your home directory).
+```
+```sh
+$ man hier | grep -E 'bin$|sbin$|^.{7}(/bin)|^.{7}(/sbin)' -A2
+```
+ 
+/usr/bin vs /usr/local/bin on Linux https://unix.stackexchange.com/questions/8656/usr-bin-vs-usr-local-bin-on-linux
+
 ## Linux输密码时显示星号
 
 如何在Linux中输入Sudo密码时显示星号 https://www.howtoing.com/show-asterisks-sudo-password-in-linux
