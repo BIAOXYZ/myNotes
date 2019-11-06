@@ -96,6 +96,8 @@ Interactive Tutorials https://github.com/ronreiter/interactive-tutorials
 - https://www.learn-c.org/
 - https://www.learnpython.org/
 
+freeCodeCamp Guide https://guide.freecodecamp.org/
+
 ## Online Games or Others
 
 学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎 https://zhuanlan.zhihu.com/p/33783827

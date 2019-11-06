@@ -1,5 +1,4 @@
 
-
 # SELinux
 
 - 查看SELinux状态&关闭SELinux https://blog.csdn.net/GGxiaobai/article/details/53505095
@@ -135,6 +134,14 @@ AppArmor https://zh.wikipedia.org/wiki/AppArmor
 
 AppArmor https://wiki.archlinux.org/index.php/AppArmor
 
-# Linux输密码时显示星号
+# 小专题
+
+## Linux输密码时显示星号
 
 如何在Linux中输入Sudo密码时显示星号 https://www.howtoing.com/show-asterisks-sudo-password-in-linux
+
+## 脚本彩色输出
+
+shell脚本输出输出带颜色内容 https://blog.csdn.net/David_Dai_1108/article/details/70478826
+
+【by 直死之邪王灼眼】 Linux之Shell脚本自动化编程四（命令排序，元字符，echo实现彩色输出和printf） https://www.bilibili.com/read/cv933397/
