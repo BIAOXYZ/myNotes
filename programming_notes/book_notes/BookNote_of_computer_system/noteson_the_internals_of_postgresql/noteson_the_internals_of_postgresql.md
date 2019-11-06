@@ -172,3 +172,28 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 ----------------------------------------------
  pg_tblspc/16386/PG_9.4_201409291/16384/18894
  ```
+
+## 1.3. Internal Layout of a Heap Table File
+
+> Inside the `data file` (`heap table` and `index`, as well as `the free space map` and `visibility map`), it is divided into **pages** (or **blocks**) of fixed length, the default is `8192 byte` (`8 KB`). Those pages within each file are ***numbered sequentially from 0***, and such numbers are called as **block numbers**. If the file has been filled up, PostgreSQL adds a new empty page to the end of the file to increase the file size. 
+
+> Fig. 1.4. Page layout of a heap table file.
+![](http://www.interdb.jp/pg/img/fig-1-04.png)
+
+> A page ***within a table*** contains three kinds of data described as follows: 
+1. **heap tuple(s)** – A heap tuple is a `record data` itself. They are stacked in order ***from the bottom of the page***. The internal structure of tuple is described in `Section 5.2 and Chapter 9` as the knowledge of both ***Concurrency Control(CC)*** and ***WAL*** in PostgreSQL are required.
+2. **line pointer(s)** – A line pointer is `4 byte long` and holds ***`a pointer` to each `heap tuple`***. It is also called an `item pointer`.
+<br> Line pointers form `a simple array`, which plays the role of index to the tuples. Each index is ***numbered sequentially from 1***, and called `offset number`. When a new tuple is added to the page, a new line pointer is also pushed onto the array to point to the new one.
+3. **header data** – A header data defined by the structure `PageHeaderData` is allocated ***in the beginning of the page***. It is `24 byte long` and contains general information about the page. The major variables of the structure are described below.
+    - *pd_lsn* – This variable stores the `LSN of XLOG record` written by ***the last change of this page***. It is an `8-byte unsigned integer`, related to the `WAL (Write-Ahead Logging) mechanism`. The details are described in `Chapter 9`.
+    - *pd_checksum* – This variable stores the `checksum value of this page`. (Note that this variable is ***supported in version 9.3 or later***; in earlier versions, this part had stored the `timelineId of the page`.)
+    - *pd_lower*, *pd_upper* – pd_lower points to ***the end of line pointers***, and pd_upper to ***the beginning of the newest heap tuple***.
+    - *pd_special* – This variable is for `indexes`. In the page within tables, it points to ***the end of the page***. (In the page within indexes, it points to ***the beginning of special space*** which is the data area held only by indexes and contains the particular data according to the kind of index types such as B-tree, GiST, GiN, etc.)
+
+> An empty space between the end of line pointers and the beginning of the newest tuple is referred to as **free space** or **hole**.
+
+> To identify a tuple within the table, **tuple identifier (TID)** is internally used. A TID comprises a pair of values: ***the block number of the page*** that contains the tuple, and ***the offset number of the line pointer*** that points to the tuple. A typical example of its usage is index. See more detail in `Section 1.4.2`. 
+
+> The structure PageHeaderData is defined in [src/include/storage/bufpage.h](https://github.com/postgres/postgres/blob/master/src/include/storage/bufpage.h). 
+
+> In addition, heap tuple whose size is ***greater than about 2 KB (about 1/4 of 8 KB)*** is stored and managed using a method called **TOAST** (The Oversized-Attribute Storage Technique). Refer [PostgreSQL documentation](https://www.postgresql.org/docs/current/storage-toast.html) for details. 
