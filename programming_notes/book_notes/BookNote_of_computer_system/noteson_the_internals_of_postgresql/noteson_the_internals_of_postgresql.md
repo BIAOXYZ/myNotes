@@ -162,6 +162,7 @@ $ ls -l /home/postgres/tblspc/PG_9.4_201409291/
 total 4
 drwx------ 2 postgres postgres 4096 Apr 21 10:10 16387
 ```
+>> notes：整个database可以完全属于一个表空间（比如图里的“newdb数据库”整个都在“new_tblspc表空间”里）。紧接着在下面我们还将会看到，一个database也可以跨多个表空间。
 
 > If you create a new table which ***belongs to the database created `under the base directory`***, first, the new directory, whose name is the same as the existing database OID, is created under the version specific subdirectory, and then the new table file is placed under the created directory.
 ```sql
@@ -172,6 +173,9 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 ----------------------------------------------
  pg_tblspc/16386/PG_9.4_201409291/16384/18894
  ```
+>> notes：从这里看出来，一个database是可以跨不同的表空间的！所以PG的database和tablespace没有绝对的包含关系：一个数据库（里所有的表）可以属于一个表空间也可以分属于多个表空间（***但是单个表只能属于某个确定的表空间！***）；一个表空间（里所有的表）可以在一个数据库中，也可以分别在多个数据库中（***但是单个表只能属于某个确定的数据库！***）。
+
+>> notes：但是注意，一个表是不能跨不同表空间的（创建的时候的SQL语句就说明了这点；此外，任何数据库的表空间的作用之一都是为了在不同的表空间下可以有同名的表，所以从这点看也说明一个表是无法跨表空间的；同理，表也是无法跨数据库的。）
 
 ## 1.3. Internal Layout of a Heap Table File
 
@@ -183,17 +187,20 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 > A page ***within a table*** contains three kinds of data described as follows: 
 1. **heap tuple(s)** – A heap tuple is a `record data` itself. They are stacked in order ***from the bottom of the page***. The internal structure of tuple is described in `Section 5.2 and Chapter 9` as the knowledge of both ***Concurrency Control(CC)*** and ***WAL*** in PostgreSQL are required.
 2. **line pointer(s)** – A line pointer is `4 byte long` and holds ***`a pointer` to each `heap tuple`***. It is also called an `item pointer`.
-<br> Line pointers form `a simple array`, which plays the role of index to the tuples. Each index is ***numbered sequentially from 1***, and called `offset number`. When a new tuple is added to the page, a new line pointer is also pushed onto the array to point to the new one.
+<br> Line pointers form `a simple array`, which plays the role of index to the tuples. Each index is ***numbered sequentially from 1***, and called ***`offset number`***. When a new tuple is added to the page, a new line pointer is also pushed onto the array to point to the new one.
 3. **header data** – A header data defined by the structure `PageHeaderData` is allocated ***in the beginning of the page***. It is `24 byte long` and contains general information about the page. The major variables of the structure are described below.
-    - *pd_lsn* – This variable stores the `LSN of XLOG record` written by ***the last change of this page***. It is an `8-byte unsigned integer`, related to the `WAL (Write-Ahead Logging) mechanism`. The details are described in `Chapter 9`.
+    - *pd_lsn* – This variable stores the `LSN of XLOG record` written by ***the last change of this page***. It is an `8-byte unsigned integer`, related to the ***WAL (Write-Ahead Logging) mechanism***. The details are described in `Chapter 9`.
     - *pd_checksum* – This variable stores the `checksum value of this page`. (Note that this variable is ***supported in version 9.3 or later***; in earlier versions, this part had stored the `timelineId of the page`.)
     - *pd_lower*, *pd_upper* – pd_lower points to ***the end of line pointers***, and pd_upper to ***the beginning of the newest heap tuple***.
     - *pd_special* – This variable is for `indexes`. In the page within tables, it points to ***the end of the page***. (In the page within indexes, it points to ***the beginning of special space*** which is the data area held only by indexes and contains the particular data according to the kind of index types such as B-tree, GiST, GiN, etc.)
 
 > An empty space between the end of line pointers and the beginning of the newest tuple is referred to as **free space** or **hole**.
+>> notes：line pointer末尾（也就是最新的line pointer）和最新的tuple之间的空间叫free space或者hole。
 
 > To identify a tuple within the table, **tuple identifier (TID)** is internally used. A TID comprises a pair of values: ***the block number of the page*** that contains the tuple, and ***the offset number of the line pointer*** that points to the tuple. A typical example of its usage is index. See more detail in `Section 1.4.2`. 
+>> notes：TID由两部分组成：页号/块号 + 偏移号
 
 > The structure PageHeaderData is defined in [src/include/storage/bufpage.h](https://github.com/postgres/postgres/blob/master/src/include/storage/bufpage.h). 
 
 > In addition, heap tuple whose size is ***greater than about 2 KB (about 1/4 of 8 KB)*** is stored and managed using a method called **TOAST** (The Oversized-Attribute Storage Technique). Refer [PostgreSQL documentation](https://www.postgresql.org/docs/current/storage-toast.html) for details. 
+>> notes：大于2KB的heap tuple就得用TOAST来存储和管理了。
