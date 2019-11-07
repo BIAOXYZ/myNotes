@@ -192,6 +192,7 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
     - *pd_lsn* – This variable stores the `LSN of XLOG record` written by ***the last change of this page***. It is an `8-byte unsigned integer`, related to the ***WAL (Write-Ahead Logging) mechanism***. The details are described in `Chapter 9`.
     - *pd_checksum* – This variable stores the `checksum value of this page`. (Note that this variable is ***supported in version 9.3 or later***; in earlier versions, this part had stored the `timelineId of the page`.)
     - *pd_lower*, *pd_upper* – pd_lower points to ***the end of line pointers***, and pd_upper to ***the beginning of the newest heap tuple***.
+      >> note：也就是说，`pd_lower`指向***free space的开头/低位***（因为按规定它指向序号最大的line pointer的末尾，这个末尾就是free space的开头）；`pd_upper`指向***free space的末尾/高位***（因为按规定它指向序号最大的tuple的开头，这个开头就是free space的末尾）。这个参考一下图1.4.很容易看出来。
     - *pd_special* – This variable is for `indexes`. In the page within tables, it points to ***the end of the page***. (In the page within indexes, it points to ***the beginning of special space*** which is the data area held only by indexes and contains the particular data according to the kind of index types such as B-tree, GiST, GiN, etc.)
 
 > An empty space between the end of line pointers and the beginning of the newest tuple is referred to as **free space** or **hole**.
@@ -204,3 +205,38 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 
 > In addition, heap tuple whose size is ***greater than about 2 KB (about 1/4 of 8 KB)*** is stored and managed using a method called **TOAST** (The Oversized-Attribute Storage Technique). Refer [PostgreSQL documentation](https://www.postgresql.org/docs/current/storage-toast.html) for details. 
 >> notes：大于2KB的heap tuple就得用TOAST来存储和管理了。
+
+## 1.4. The Methods of Writing and Reading Tuples
+
+### 1.4.1. Writing Heap Tuples
+
+>  Suppose a table composed of one page which contains just one heap tuple. The pd_lower of this page points to the first line pointer, and both the line pointer and the pd_upper point to the first heap tuple. See Fig. 1.5(a).
+>
+> When the second tuple is inserted, it is placed after the first one. The second line pointer is pushed onto the first one, and it points to the second tuple. The pd_lower changes to point to the second line pointer, and the pd_upper to the second heap tuple. See Fig. 1.5(b). ***Other header data within this page (e.g., pd_lsn, pg_checksum, pg_flag) are also rewritten to appropriate values***; more details are described in `Section 5.3 and Chapter 9`. 
+> ![](http://www.interdb.jp/pg/img/fig-1-05.png)
+>> notes：整个过程比较直观，对比图片和上面两段文字就可以了。
+
+### 1.4.2. Reading Heap Tuples
+
+> Two typical access methods, `sequential scan` and `B-tree index scan`, are outlined here:
+  - **Sequential scan** – All tuples in all pages are sequentially read by scanning all line pointers in each page. See Fig. 1.6(a).
+  - **B-tree index scan** – An index file contains index tuples, each of which is ***composed of an index key and a TID pointing to the target heap tuple***. If the index tuple with the key that you are looking for has been found, PostgreSQL reads the desired heap tuple using the obtained TID value. (The description of the way to find the index tuples in B-tree index is not explained here as it is very common and the space here is limited. See the relevant materials.) For example, in Fig. 1.6(b), TID value of the obtained index tuple is ‘(block = 7, Offset = 2)’. It means that the target heap tuple is 2nd tuple in the 7th page within the table, so PostgreSQL can read the desired heap tuple without unnecessary scanning in the pages.
+> ![](http://www.interdb.jp/pg/img/fig-1-06.png)
+
+> This document does not explain indexes in details. To understand them, I recommend to read the valuable posts shown below: 
+  - Indexes in PostgreSQL — 1 https://postgrespro.com/blog/pgsql/3994098
+  - ...
+  - ...
+  - Indexes in PostgreSQL — 9 (BRIN) https://habr.com/en/company/postgrespro/blog/452900/
+
+> PostgreSQL also supports `TID-Scan`, `Bitmap-Scan`, and `Index-Only-Scan`.
+
+> TID-Scan is a method that accesses a tuple directly by using TID of the desired tuple. For example, to find the 1st tuple in the 0-th page within the table, issue the following query:
+```sql
+sampledb=# SELECT ctid, data FROM sampletbl WHERE ctid = '(0,1)';
+ ctid  |   data    
+-------+-----------
+ (0,1) | AAAAAAAAA
+(1 row)
+```
+> Index-Only-Scan will be described in details in `Chapter 7`.
