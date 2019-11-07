@@ -225,6 +225,10 @@ Many other licenses are also OSI-approved, but fall into other categories, such 
 Uber开放公司内部《Go语言风格指南》 https://www.ithome.com/0/450/227.htm
 > https://github.com/uber-go/guide/blob/master/style.md
 
+Shell Style Guide https://google.github.io/styleguide/shell.xml
+
+Google 开源项目风格指南 (中文版) https://zh-google-styleguide.readthedocs.io/en/latest/ || https://github.com/zh-google-styleguide/zh-google-styleguide
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 随笔分类 - UNIX环境高级编程学习笔记
