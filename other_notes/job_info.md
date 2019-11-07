@@ -63,6 +63,14 @@ https://www.linkedin.com/company/onchain/
 高通酝酿裁员：或年底前公布 - Qualcomm 高通 - cnBeta.COM https://www.cnbeta.com/articles/tech/768547.htm
 > Qualcomm Inc. Layoffs https://www.thelayoff.com/qualcomm
 
+### [levels.fyi](https://www.levels.fyi/)
+
+About Microsoft https://www.levels.fyi/salary/Microsoft/
+
+About Google https://www.levels.fyi/salary/Google/
+- > L4 https://www.levels.fyi/salary/Google/SE/L4/
+  >> 阿里程序员绩效被判3.25，不及格却被谷歌录取：此生再也不回阿里 https://www.bilibili.com/read/cv3829772/
+
 ## job website part time
 
 - 国内有类似Freelancer的网站？ - 知乎 https://www.zhihu.com/question/26478092
