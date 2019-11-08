@@ -23,6 +23,10 @@ A distributed, shared-nothing relational database https://github.com/alibaba/oce
 
 腾讯云自主可控数据库 TDSQL 的架构演进 https://www.infoq.cn/article/YeAOMMdu1Sv*yPpbjWgI
 
+## TBase
+
+企业级分布式 HTAP 数据库管理系统，腾讯 TBase 正式开源 https://mp.weixin.qq.com/s/ohxkqZFcjI16TpPw4Ras2A || 基于PostgreSQL，腾讯企业级分布式数据库—— TBase 正式开源 https://mp.weixin.qq.com/s/39ece5cV0P1Bc962Jao2Zw
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 华为
