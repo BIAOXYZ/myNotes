@@ -21,6 +21,20 @@ cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
 
+删除文件到底用啥命令啊?萌新求问 https://www.v2ex.com/t/599228
+- > 由于之前的沙雕操作，我上了公司运维黑名单 现在公司服务器所有人都没有删除权限...因为不管删啥都很危险 现在的一般操作是 sudo mv xxx /tmp
+- > 可以装个 trashcli
+- > sudo rm -rf /* --no-preserve-root
+- > alias ls="rm -rf ./*"，哪里 ls 没哪里
+- > 
+  ```sh
+  mkdir /tmp/empty
+  rsync --delete-before -d /tmp/empty/ /the/folder/you/want/delete/
+
+  参考:
+  https://www.cnblogs.com/shuaixf/p/3493025.html
+  ```
+
 ## c/c++
 
 用 c 分配内存，为什么普遍都是用 malloc 而不是用 calloc？ https://www.v2ex.com/t/572612
