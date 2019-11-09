@@ -203,7 +203,7 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 
 ## docker Github帖子
 
-容器中的数据库是一个好主意吗？ https://github.com/Vonng/pg/blob/99785ff1e57c0e8b9fc486eeba1c4984bad7b228/misc/postgres-in-docker.md
+【[:star:][`*`]】 容器中的数据库是一个好主意吗？ https://github.com/Vonng/pg/blob/99785ff1e57c0e8b9fc486eeba1c4984bad7b228/misc/postgres-in-docker.md || Thou shalt not run a prod database inside a container https://github.com/Vonng/pg/blob/99785ff1e57c0e8b9fc486eeba1c4984bad7b228/misc/docker-vs-bare-metal.md
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

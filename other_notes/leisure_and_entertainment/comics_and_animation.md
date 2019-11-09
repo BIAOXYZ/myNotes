@@ -465,7 +465,9 @@ i三三sama
 
 前方高能！第一名震撼我妈！十大最欢迎日本动画公司 封神之作【硬核排行】 https://www.bilibili.com/video/av63172872/
 
-## 
+近10部B站质量爆炸的骨头神作！！你看过几部？！ https://www.bilibili.com/video/av73509406
+
+## 不知道该起什么标题了都。。。
 
 成为小说家吧 https://zh.moegirl.org/%E6%88%90%E4%B8%BA%E5%B0%8F%E8%AF%B4%E5%AE%B6%E5%90%A7  -->  【这公司作品的标题都牛逼得不成样子。。。我必须得加上书名号才能体现出来。。。毕竟是诞生了“大蓝胖次”的公司，技术公司啊～】
 - 《加入年轻人敬而远之的黑魔法公司，没想到工作待遇好，社长和使魔也超可爱，太棒了！》 https://zh.moegirl.org/%E5%8A%A0%E5%85%A5%E5%B9%B4%E8%BD%BB%E4%BA%BA%E6%95%AC%E8%80%8C%E8%BF%9C%E4%B9%8B%E7%9A%84%E9%BB%91%E9%AD%94%E6%B3%95%E5%85%AC%E5%8F%B8%EF%BC%8C%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B7%A5%E4%BD%9C%E5%BE%85%E9%81%87%E5%A5%BD%EF%BC%8C%E7%A4%BE%E9%95%BF%E5%92%8C%E4%BD%BF%E9%AD%94%E4%B9%9F%E8%B6%85%E5%8F%AF%E7%88%B1%EF%BC%8C%E5%A4%AA%E6%A3%92%E4%BA%86%EF%BC%81
