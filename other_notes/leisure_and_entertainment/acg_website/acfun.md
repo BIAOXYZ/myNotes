@@ -19,6 +19,9 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 
 # 回复图片类
 
+大sao挣钱了，吃一顿好的，买六斤羊蝎子做火锅，媳妇开心坏了 https://www.acfun.cn/v/ac11608709
+- > 好多人居然不知道什么是羊蝎子 我来告诉你好吧 ![](https://imgs.aixifan.com/o_1dp9469vb1icvsmfnasg8128n7.jpg)
+
 晴天霹雳！老婆婚前1个月生了别人的娃，更令浙江男子崩溃的是... https://www.acfun.cn/a/ac10839743
 - > ![](https://imgs.aixifan.com/content/2019_08_31/1567221667707.gif)
 
