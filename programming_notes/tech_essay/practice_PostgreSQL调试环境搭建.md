@@ -124,6 +124,32 @@ sudo apt-get install texinfo
 > 环境： https://www.katacoda.com/courses/centos/playground
 
 ```sh
+#// 一、极简步骤版：上来就确定把依赖做齐，然后直接一次装好。
+yum -y install readline-devel zlib-devel gcc bison flex
+
+useradd pguser
+echo 123456 | passwd --stdin pguser
+su - pguser
+
+mkdir ~/pgdir
+cd pgdir/
+git clone https://github.com/postgres/postgres.git
+cd postgres/
+git checkout -b REL_12_STABLE origin/REL_12_STABLE
+
+./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+make
+make install
+
+cd /home/pguser/pgdir/pgsql/bin/
+./initdb -D /home/pguser/pgdir/pgdata
+./pg_ctl start -D /home/pguser/pgdir/pgdata/
+./psql -d postgres
+```
+
+```sh
+#// 二、详细步骤版：上面的极简步骤版的源泉。
+
 yum -y install readline-devel zlib-devel 
 # 呃，Katacoda的Centos环境连gcc都没。。。
 yum -y install gcc
@@ -131,10 +157,9 @@ yum -y install gcc
 # yum install -y bison flex
 
 # root是无法run数据库的，所以开始就新建用户并切换吧。
-# [root@0f40b629bc50 bin]# ./initdb -D /pgdata
-# initdb: error: cannot be run as root
-# Please log in (using, e.g., "su") as the (unprivileged) user that will
-# own the server process.
+#   [root@0f40b629bc50 bin]# ./initdb -D /pgdata
+#   initdb: error: cannot be run as root
+#   Please log in (using, e.g., "su") as the (unprivileged) user that will own the server process.
 useradd pguser
 echo 123456 | passwd --stdin pguser
 su - pguser
@@ -149,7 +174,9 @@ git checkout -b REL_12_STABLE origin/REL_12_STABLE
 ./configure
 make distclean
 
-# 这个/home/pguser/pgdir/pgsql目录不用提前建
+# 不指定--prefix的话，默认是在/usr/local/目录下新建pgsql目录，普通用户有可能没有权限：
+#   /bin/mkdir: cannot create directory ‘/usr/local/pgsql’: Permission denied
+# prefix里指定的这个/home/pguser/pgdir/pgsql目录不用提前创建
 ./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
 make
 # 然后提示缺bison，为了后面省事，连flex一起来一遍
@@ -171,7 +198,8 @@ make install
 
 cd /home/pguser/pgdir/pgsql/bin/
 ./initdb -D /home/pguser/pgdir/pgdata
-# Success. You can now start the database server using:  
+# initdb完成后的输出：
+#   Success. You can now start the database server using:  
 #   ./pg_ctl -D /home/pguser/pgdir/pgdata -l logfile start
 # 所以 /home/pguser/pgdir/pgdata/ 这个目录也是不用提前创建的。
 
@@ -185,6 +213,22 @@ pguser   24158  0.0  0.8 287340 13428 ?        Ss   05:56   0:00  \_ postgres: a
 pguser   24159  0.0  0.7 141212 12208 ?        Ss   05:56   0:00  \_ postgres: stats collector
 pguser   24160  0.0  0.8 287344 12976 ?        Ss   05:56   0:00  \_ postgres: logical replication launcher
 
+./psql -d postgres
+
 # 一个可选步骤：将pgsql下的bin目录加进$PATH。因为这种指定prefix的安装，pgsql下的那些二进制大概率都不在$PATH下。
+export PGHOME=/home/pguser/pgdir/pgsql
+export PGDATA=/home/pguser/pgdir/pgdata
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
+export PATH=${PATH}:${PGHOME}/bin
+
+# 意外地发现现在cgdb都可以一键装了，太幸福了简直。再看看之前的记录，当年装个cgdb都麻烦- -
+yum install -y cgdb
+# pgrep的 -n 参数是表示显示pid最大的那个。一般情况下psql起的连接要比本身的几个pg进程的pid大
+# 那几个进程被杀过又起来的话例外，当我没说。。。反正最笨的办法还是去ps ufx看一下再attach
+cgdb attach `pgrep -n postgres`
+b exec_simple_query
+
+# 发现ddd也可以一键装，回头试试ddd调试吧
+yum install -y ddd
 ```
 
