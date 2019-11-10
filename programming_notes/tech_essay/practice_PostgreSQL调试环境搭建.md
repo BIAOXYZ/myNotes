@@ -117,3 +117,74 @@ sudo apt-get install texinfo
 - make
 - make install //这一步不是root用户的话应该是要加sudo的，我原来的笔记里是用了sudo的。
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# katacoda的Centos环境再走一遍pg12的安装，主要就是步骤比较集中列出来，方便快速复制。
+
+> 环境： https://www.katacoda.com/courses/centos/playground
+
+```sh
+yum -y install readline-devel zlib-devel 
+# 呃，Katacoda的Centos环境连gcc都没。。。
+yum -y install gcc
+# 此外也可以考虑把bison和flex直接再这儿就装了！
+# yum install -y bison flex
+
+# root是无法run数据库的，所以开始就新建用户并切换吧。
+# [root@0f40b629bc50 bin]# ./initdb -D /pgdata
+# initdb: error: cannot be run as root
+# Please log in (using, e.g., "su") as the (unprivileged) user that will
+# own the server process.
+useradd pguser
+echo 123456 | passwd --stdin pguser
+su - pguser
+
+mkdir ~/pgdir
+cd pgdir/
+git clone https://github.com/postgres/postgres.git
+cd postgres/
+git checkout -b REL_12_STABLE origin/REL_12_STABLE
+
+# 惯例的安装前先试探，就是这步试探出了缺gcc
+./configure
+make distclean
+
+# 这个/home/pguser/pgdir/pgsql目录不用提前建
+./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+make
+# 然后提示缺bison，为了后面省事，连flex一起来一遍
+# 一般情况下这个安装又得回到root用户，所以建议后面这里的依赖安装也可以直接挪最前面去
+yum -y install bison flex
+
+make
+# 确定安装完了bison（以及后面的flex）再次make但还是一样的错，原因是必须再执行下configure
+# https://stackoverflow.com/questions/3827938/ubuntu-how-to-install-flex-to-make-postgres/3827974#3827974
+#   『You need to run ./configure again so that the make files are "aware" of flex.』
+./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+
+make
+# 省略大段输出，最后是这句：All of PostgreSQL successfully made. Ready to install.
+# make完成后，psql等二进制都还没装到机器里，所以此时上面那个 /home/pguser/pgdir/pgsql/ 目录系统还不会创建；
+#   并且which下psql也是找不到的。这些都是最后install的时候做。
+make install
+# 省略大段输出，最后是这句：PostgreSQL installation complete.
+
+cd /home/pguser/pgdir/pgsql/bin/
+./initdb -D /home/pguser/pgdir/pgdata
+# Success. You can now start the database server using:  
+#   ./pg_ctl -D /home/pguser/pgdir/pgdata -l logfile start
+# 所以 /home/pguser/pgdir/pgdata/ 这个目录也是不用提前创建的。
+
+./pg_ctl start -D /home/pguser/pgdir/pgdata/
+
+pguser   24153  0.2  1.6 286792 24820 ?        Ss   05:56   0:00 /home/pguser/pgdir/pgsql/bin/postgres -D /home/pguser/pgdir/pgdata
+pguser   24155  0.0  0.8 286792 12300 ?        Ss   05:56   0:00  \_ postgres: checkpointer
+pguser   24156  0.0  0.8 286792 12528 ?        Ss   05:56   0:00  \_ postgres: background writer
+pguser   24157  0.0  1.0 286792 16496 ?        Ss   05:56   0:00  \_ postgres: walwriter
+pguser   24158  0.0  0.8 287340 13428 ?        Ss   05:56   0:00  \_ postgres: autovacuum launcher
+pguser   24159  0.0  0.7 141212 12208 ?        Ss   05:56   0:00  \_ postgres: stats collector
+pguser   24160  0.0  0.8 287344 12976 ?        Ss   05:56   0:00  \_ postgres: logical replication launcher
+
+# 一个可选步骤：将pgsql下的bin目录加进$PATH。因为这种指定prefix的安装，pgsql下的那些二进制大概率都不在$PATH下。
+```
+
