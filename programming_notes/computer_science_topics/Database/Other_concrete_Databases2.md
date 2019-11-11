@@ -31,6 +31,8 @@ A distributed, shared-nothing relational database https://github.com/alibaba/oce
 
 # 华为
 
+深度盘点丨华为云数据库布局及研发路线图 https://bbs.huaweicloud.com/blogs/121692 || https://mp.weixin.qq.com/s/PuUogPBVkcGOBl7khjmBag
+
 ## GMDB
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:

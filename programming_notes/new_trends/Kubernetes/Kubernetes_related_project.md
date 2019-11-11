@@ -123,6 +123,11 @@ https://github.com/operator-framework/operator-sdk/blob/05a106abd9ff94bb2f0cc84b
   * > Shell-operator is a tool for running event-driven scripts in a Kubernetes cluster https://github.com/flant/shell-operator
   * > flant/shell-operator https://hub.docker.com/r/flant/shell-operator
 
+### python operator
+
+无需框架和SDK！使用Python来写一个Kubernetes Operator https://mp.weixin.qq.com/s/cMlm0HrwRt1n5EApd0JsTw
+> 原文链接： https://medium.com/flant-com/kubernetes-operator-in-python-451f2d2e33f3
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes插件
