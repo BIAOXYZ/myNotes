@@ -231,6 +231,26 @@ cURL 作者 Daniel Stenberg 宣布即将从 Mozilla 离职 https://www.cnbeta.co
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# restful api
+
+Representational state transfer https://en.wikipedia.org/wiki/Representational_state_transfer   【[表现层状态转换](https://zh.wikipedia.org/wiki/%E8%A1%A8%E7%8E%B0%E5%B1%82%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2)】
+
+***阮一峰restful api相关***：
+- RESTful API 最佳实践 http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html
+- RESTful API 设计指南 http://www.ruanyifeng.com/blog/2014/05/restful_api.html
+- 理解RESTful架构 http://www.ruanyifeng.com/blog/2011/09/restful.html
+
+REST 入门介绍 http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html
+> 在 REST 中的资源 (Resource) 代表整个网络上的资源。网络上提供了各式各样的资源，而网络上的资源由 URI (统一资源标识符,Uniform Resource Identifier) 来提供。 回想，你如何连上我的 博客，你可能通过浏览器直接输入  www.cnblogs.com/shanyou 此域名来到达首页，也能用书签或网络上的链接，经点击后来连上我的博客。然后，你想看这一篇名为「REST 入门介绍」的文章，所以以你接下去点击这文章的标题连结，接去下阅读。我们简易了解一下整个流程：
+> 1. 通过URL ( http://www.cnblogs.com/shanyou ) ， Client 向 http://www.cnblogs.com/shanyou 发出请求
+> 2. www.cnblogs.com/shanyou 收到请求，回应首页给 Client
+> 3. Client 又点击 REST 文章连结  (假设是 http://www.cnblogs.com/shanyou/archive/2011/06/30/2095018.html) 向 http://www.cnblogs.com/shanyou发出archive/2011/06/30/2095018.html  此篇文章的请求
+> 4. www.cnblogs.com/shanyou  收到请求，响应 REST 文章内容给 Client
+>   
+> Client 的通过 URI 来获取资源的具体象征 (Representational)。Client 取得这些具体象征使这些应用程序转变其状态 (以 浏览器而言，取得HTML、CSS、JavaScript … 来生成界面)，随着不断取得资源的具体象征， Client 端不断地改变其状态，这样不断的反复 (iterations ) 过程就是所谓的 Representational State Transfer。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # [wget](https://www.gnu.org/software/wget/)
 
 【:star:】 GNU Wget 1.20 Manual https://www.gnu.org/software/wget/manual/
