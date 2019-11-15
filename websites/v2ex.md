@@ -17,9 +17,7 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 
 ## linux
 
-cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
-
-求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
+crontab 是怎么实现的？ https://www.v2ex.com/t/619692
 
 删除文件到底用啥命令啊?萌新求问 https://www.v2ex.com/t/599228
 - > 由于之前的沙雕操作，我上了公司运维黑名单 现在公司服务器所有人都没有删除权限...因为不管删啥都很危险 现在的一般操作是 sudo mv xxx /tmp
@@ -34,6 +32,10 @@ cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
   参考:
   https://www.cnblogs.com/shuaixf/p/3493025.html
   ```
+
+求教: Linux 为什么限制线程数?TCP 连接数等 https://www.v2ex.com/t/581263
+
+cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 ## c/c++
 
@@ -53,6 +55,8 @@ Python 之父开博客写的解析器系列文章 https://www.v2ex.com/t/588878
 GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
+
+腾讯基于 PostgreSQL 历时 8 年研发的 HTAP 分布式数据库 TBase 开源了，对数据库有兴趣的同学可以去了解体验一下 https://www.v2ex.com/t/619632
 
 数据库的发展趋势是什么？ https://www.v2ex.com/t/612782
 - > NoSQL 的建议看一下《 NoSql 精粹》，里面讲了不同的 nosql 数据库的擅长的地方、与关系型数据库的对比。挺薄的一本书的。作者是（著名的） Martin Fowler。
