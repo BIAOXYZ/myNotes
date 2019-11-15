@@ -151,6 +151,10 @@ http://www.research.ibm.com/labs/china/
 
 https://careers.microsoft.com/us/en/actioncenter
 
+如何看待沈向洋 Harry Shum 宣布离职微软？有哪些对微软未来业务的潜在影响？ - 知乎 https://www.zhihu.com/question/355746956
+
+如何看待Jifeng Dai离开MSRA以及MSRA CV的未来发展？ - 知乎 https://www.zhihu.com/question/348538256
+
 外媒评微软华人高管离职：沈向洋不会退出行业 https://www.ithome.com/0/456/868.htm
 - > 微软以往会将最聪明的人才留在研究机构，而不会让其从事向客户交付产品的任务。随着时间的流逝，该公司开始让更多研究人员参与产品开发。2016年，微软采取新的措施，希望加快将研究成果转化为产品的速度。该公司成立了人工智能和研究事业群，将研究人员与产品研究人员召集在一起，并让沈向洋负责。
 
