@@ -125,6 +125,14 @@ U盘，主要靠的不是闪存的速度而是控制器的实现。
 
 应对数据爆炸时代，英特尔又放大招 https://mp.weixin.qq.com/s/Gt2WqDqoLahdUA_UF06tdg
 
+# RDMA
+
+Remote direct memory access https://en.wikipedia.org/wiki/Remote_direct_memory_access
+
+深入浅出全面解析RDMA - 围城的文章 - 知乎 https://zhuanlan.zhihu.com/p/37669618
+
+RDMA技术详解（一）：RDMA概述 - 围城的文章 - 知乎 https://zhuanlan.zhihu.com/p/55142557
+
 # 服务器
 
 鲲鹏云服务器实战：华为云鲲鹏KC1实例 vs. 阿里云G5实例 https://www.ithome.com/0/444/828.htm
