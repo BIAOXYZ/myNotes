@@ -54,6 +54,10 @@ Python 之父开博客写的解析器系列文章 https://www.v2ex.com/t/588878
 
 GO 切片问题求教 https://www.v2ex.com/t/606165
 
+## java
+
+方式 1 和方式 2 的却别到底在哪里？ https://www.v2ex.com/t/620135
+
 ## database
 
 腾讯基于 PostgreSQL 历时 8 年研发的 HTAP 分布式数据库 TBase 开源了，对数据库有兴趣的同学可以去了解体验一下 https://www.v2ex.com/t/619632
@@ -165,6 +169,9 @@ vscode 在程序坞里的图标变得非常非常迷你，没办法恢复 https:
 
 开源一文多发平台 ArtiPub，让文章随处可阅 https://www.v2ex.com/t/602779
 > https://github.com/crawlab-team/artipub
+
+推荐一下我们搞的播客 《捕蛇者说》 https://www.v2ex.com/t/619892
+> 捕蛇者说 https://pythonhunter.org/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
