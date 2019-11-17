@@ -42,6 +42,8 @@ Etcd 架构与实现解析 http://jolestar.com/etcd-architecture/
 
 高可用分布式存储 etcd 的实现原理 https://draveness.me/etcd-introduction
 
+etcd分布式锁的实现方式 https://www.myway5.com/index.php/2019/10/09/etcd%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81%e7%9a%84%e5%ae%9e%e7%8e%b0%e6%96%b9%e5%bc%8f/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ETCD其他
