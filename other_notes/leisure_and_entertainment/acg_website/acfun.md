@@ -10,6 +10,8 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 
 # 文章区
 
+鹤岗买房背后，是23万人聚集的流浪吧 https://www.acfun.cn/a/ac11661807 || https://new.qq.com/omn/20191114/20191114A0CPOL00.html
+
 来看看站里有多少程序员 https://www.acfun.cn/a/ac11472636
 
 # 文章图片类
