@@ -150,6 +150,12 @@ python对象引用_一切都是对象 https://blog.csdn.net/qinyushuang/article/
 - #!/usr/bin/env python与#!/usr/bin/python的区别 https://blog.csdn.net/wh_19910525/article/details/8040494
 - Why do people write the #!/usr/bin/env python shebang on the first line of a Python script https://stackoverflow.com/questions/2429511/why-do-people-write-the-usr-bin-env-python-shebang-on-the-first-line-of-a-pyt
 
+### python文件前面（第二行一般）的 `# -*- coding: utf-8 -*-`
+
+- [Python]编码声明：是coding:utf-8还是coding=utf-8呢 https://blog.csdn.net/orangleliu/article/details/8755461
+- https://stackoverflow.com/questions/4872007/where-does-this-come-from-coding-utf-8
+  * PEP 263 -- Defining Python Source Code Encodings https://www.python.org/dev/peps/pep-0263/
+- https://stackoverflow.com/questions/41680533/is-coding-utf-8-also-a-comment-in-python/41680554
 
 ### module
 
