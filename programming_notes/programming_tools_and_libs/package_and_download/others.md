@@ -147,3 +147,11 @@ What is the classic mode of snap, and why do some snaps not install without it (
 C++ Library Manager for Windows, Linux, and MacOS https://github.com/microsoft/vcpkg
 
 如何看待 Windows 的 C++ 包管理器 vcpkg？ - 知乎 https://www.zhihu.com/question/263416411
+
+# pip, pipenv and others
+
+Python包管理器-pip https://juejin.im/post/5beb92e7e51d454fbd6b4bc4
+
+最全的 pip 使用指南，50% 你可能没用过 https://juejin.im/post/5dc2bdabf265da4d4216bd29
+
+Pipenv – 超好用的 Python 包管理工具 https://juejin.im/post/5b31ba8851882574e808e555
