@@ -158,6 +158,8 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 ### paper
 
+(CT-RSA 2015) Revisiting Cryptographic Accumulators, AdditionalProperties and Relations to other Primitives https://eprint.iacr.org/2015/087.pdf
+
 --------------------------------------------------
 
 - (EUROCRYPT 2003) Aggregate and Verifiably Encrypted Signatures from Bilinear Maps https://crypto.stanford.edu/~dabo/pubs/papers/aggreg.pdf
