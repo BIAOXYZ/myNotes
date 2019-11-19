@@ -219,6 +219,8 @@ Many other licenses are also OSI-approved, but fall into other categories, such 
   * sorted by category https://opensource.org/licenses/category
 ```
 
+OSI 认证的开源 License 有哪些？ https://www.ithome.com/0/457/810.htm
+
 微服务部署：蓝绿部署、滚动部署、灰度发布、金丝雀发布 https://www.jianshu.com/p/022685baba7d
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
