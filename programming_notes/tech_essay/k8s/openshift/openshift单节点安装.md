@@ -451,3 +451,116 @@ cd /root/openshift-ansible && ansible-playbook -i inventory/hosts.single-node pl
 //ansible-playbook -b -i ./hosts ~/src/openshift-ansible/playbooks/deploy_cluster.yml
 cd /root/openshift-ansible;ansible-playbook -b -i inventory/hosts.single-node playbooks/deploy_cluster.yml
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 3. （后期补充的）安全相关问题
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 3.1 用户相关
+
+### 3.1.1 How to add a default user to an Openshift cluster?
+
+1. Open the corresponding Ansible inventory file of the cluster.
+2. Add the following two new variables to the `[OSEv3:vars]` section of the file.
+```
+# This variable enables htpasswd auth
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
+
+# This variable Defines htpasswd users. Here, the user name is "testuser" and the password is "1234".
+openshift_master_htpasswd_users={'testuser': '$apr1$rgyNGgYv$igUtUQh0.8M5tGmhAh9Xg1'}
+```
+
+### 3.1.2 How to deal with more users?
+
+- Change the value of `openshift_master_htpasswd_users`, adding more key-value pairs and using commas to separate them. 
+```
+openshift_master_htpasswd_users={'jsmith': '$apr1$wIwXkFLI$bAygtKGmPOqaJftB', 'bloblaw': '7IRJ$2ODmeLoxf4I6sUEKfiA$2aDJqLJe'}
+```
+
+- User another variable which indicates a path of a file for user-password management.
+```
+openshift_master_htpasswd_file=<path/to/local/pre-generated/htpasswdfile>
+```
+
+### 3.1.3 How to obtain the value part of a key-value pair for username and password (hash)?
+
+```sh
+usage: htpasswd -nb ${username} ${userpassword}
+
+[root@openshift-single-node ~]# htpasswd -nb testuser 1234
+testuser:$apr1$rgyNGgYv$igUtUQh0.8M5tGmhAh9Xg1
+```
+
+### 3.1.4 Reference links
+
+https://docs.okd.io/3.10/install/configuring_inventory_file.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 3.2 `system:admin`相关
+
+> How to specify the password for system:admin in inventory file?
+
+### 3.2.1 A short conclusion: 
+
+1. There is no password for `system:admin`. 
+2. When we try to login with it, we use `oc login -u system:admin -n default` instead of the non-interactive form `oc login -u $username -p $userpassword` or the interactive form like `oc login -u $username -- then input password in the prompt`. Actually, directly use `oc login -u system:admin` can work.
+
+### 3.2.2 The whole process:
+
+```sh
+// From default login user "system:admin" to a user "testuser" who is configed in the inventory file.
+// Then logout "testuser".
+[root@openshiftsingle ~]# oc whoami
+system:admin
+[root@openshiftsingle ~]# oc login -u testuser -p 1234
+Login successful.
+
+You have one project on this server: "111"
+
+Using project "111".
+[root@openshiftsingle ~]# oc logout
+Logged "testuser" out on "https://openshiftsingle.sl.cloud9.ibm.com:8443"
+
+// Login "system:admin".
+[root@openshiftsingle ~]# oc whoami
+Error from server (Forbidden): users.user.openshift.io "~" is forbidden: User "system:anonymous" cannot get users.user.openshift.io at the cluster scope: no RBAC policy matched
+[root@openshiftsingle ~]# oc login -u system:admin -p 1234
+error: username system:admin is invalid for basic auth
+[root@openshiftsingle ~]# oc login -u system:admin -n default
+Logged into "https://openshiftsingle.sl.cloud9.ibm.com:8443" as "system:admin" using existing credentials.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    111
+  * default
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+
+Using project "default".
+[root@openshiftsingle ~]# oc whoami
+system:admin
+```
+
+### 3.2.3 Reference links:
+
+- https://github.com/minishift/minishift/issues/2601
+  * > @gbraad AFAIK, system:admin is not a user but a service account, so it has no password but a token. What oc cluster do is get the token and write it in kubeconfig for so you can directly access.
+What your asking is probably a better question for @liggitt.
+- https://docs.openshift.com/container-platform/3.11/dev_guide/authentication.html
+  * > If you have access to administrator credentials but are no longer logged in as the default system user system:admin, you can log back in as this user at any time as long as the credentials are still present in your CLI configuration file. The following command logs in and switches to the default project:
+    >> `$ oc login -u system:admin -n default`
