@@ -763,6 +763,7 @@ root@myopenshift test $ cat ansiblehost
 
 9.186.102.139
 
+// k8s-scale-obj2.yaml 和前面的 k8s-scale-obj.yaml 相比，只是把原来的 localhost 换成了 ocsingle。
 root@myopenshift test $ cat k8s-scale-obj2.yaml
 - hosts: ocsingle
   tasks:
@@ -809,6 +810,7 @@ PLAY RECAP *********************************************************************
 
 
 // 第二次执行时使用动态hosts，会把nginx deployment从4扩到5。
+// 当然，在这种情形下后面的 --extra-vars 里还得额外多指定一个参数的值，也就是指定 hostvar 的值为 ocsingle。
 root@myopenshift test $ ansible-playbook k8s-scale-obj3.yaml -i ansiblehost --extra-vars "hostvar=ocsingle apiversion=extensions/v1beta1 kind=deployment namespace=demoworkload name=nginx replicas=5"
  [WARNING]: Found variable using reserved name: name
 
