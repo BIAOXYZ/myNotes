@@ -329,6 +329,18 @@ openshift_disable_check=disk_availability,memory_availability,docker_storage,doc
 openshift_node_groups=[{'name': 'node-config-all-in-one', 'labels': ['node-role.kubernetes.io/master=true', 'node-role.kubernetes.io/infra=true', 'node-role.kubernetes.io/compute=true']}]
 
 
+##################################################
+#// 可选，如果需要（用htpasswd）设置用户名密码就加上这里的这两段。
+#// testuser的密码是1234，其后面那个串是用htpasswd命令得到的。
+
+# This variable enables htpasswd auth
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
+
+# This variable Defines htpasswd users. Here, the user name is "testuser" and the password is "1234".
+openshift_master_htpasswd_users={'testuser': '$apr1$rgyNGgYv$igUtUQh0.8M5tGmhAh9Xg1'}
+##################################################
+
+
 [masters]
 ###localhost ansible_connection=local
 myopenshift.sl.cloud9.ibm.com openshift_ip=9.12.248.233 openshift_public_ip=9.12.248.233
