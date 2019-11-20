@@ -715,6 +715,40 @@ ansible 2.7.1
   python version = 2.7.5 (default, Apr  9 2019, 14:30:50) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
 ```
 
+## 2.10 过程中的一些参考链接，及完成后的一些查询结果等
+
+### 补充下安装openshift库成功后，此时本地的kubernetes库的版本信息（尽管看起来问题只是由openshift库引起的）
+
+```sh
+root@openshiftsingle 1-dynamic-param $ pip list | grep kubernetes
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+kubernetes                       8.0.1
+```
+
+### ansible的[issue 50529](https://github.com/ansible/ansible/issues/50529)里有人提到可以用下述脚本测试openshift库是否存在。安装前后测试了下，确实可行。主要是这种测试库的思路不错。
+
+```sh
+// 安装前测试
+root@openshiftsingle 1-dynamic-param $ python test.py
+Didnt find it
+
+// 安装后测试
+root@openshiftsingle 1-dynamic-param $ python test.py
+Found it
+
+// 测试脚本内容
+// from： https://github.com/ansible/ansible/issues/50529#issuecomment-451332508
+root@openshiftsingle 1-dynamic-param $ cat test.py
+try:
+    import kubernetes
+    import openshift
+    from openshift.dynamic import DynamicClient
+    from openshift.dynamic.exceptions import ResourceNotFoundError, ResourceNotUniqueError
+    print "Found it"
+except ImportError:
+    print "Didnt find it"
+```
+
 # 3. 远程扩容：在一台机器上执行ansible-playbook，扩容另一台机器上的集群里的deployment
 
 ```sh
