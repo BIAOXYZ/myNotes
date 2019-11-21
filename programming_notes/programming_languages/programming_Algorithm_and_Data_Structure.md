@@ -73,20 +73,30 @@ Python数据结构——链表的实现 http://python.jobbole.com/83953/
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
-## Tree
-***// 决定按字母顺序***
+## `##` Tree
+***// 决定按字母顺序排列各种树，因为实在太多了。有些看起来不是按字母顺序排的，是因为它是某种树的子类型。***
 
-### Min-Max Tree
+### `###` Min-Max Tree
 
 【Gym - 100796C 】Minimax Tree https://www.cnblogs.com/flipped/p/7113756.html
 
-#### Patricia trie/tree = [Radix tree](https://en.wikipedia.org/wiki/Radix_tree)
-
-### Red–black tree
+### `###` Red–black tree
 
 红黑树 https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91 || Red–black tree https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
 
-### [Trie (Tree)](https://en.wikipedia.org/wiki/Trie)
+### `###` [Trie (Tree)](https://en.wikipedia.org/wiki/Trie) = Prefix Tree (前缀树)
 
 - 看图轻松理解数据结构与算法系列(Trie树) https://juejin.im/post/5ba198ba5188255c7c6555c9
 - Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
+
+#### Patricia trie/tree = Radix tree (基数树)
+
+Radix tree https://en.wikipedia.org/wiki/Radix_tree || 基数树 https://zh.wikipedia.org/wiki/%E5%9F%BA%E6%95%B0%E6%A0%91
+- > In computer science, a radix tree (also radix trie or compact prefix tree) is a data structure that represents a space-optimized trie (prefix tree) in which each node that is the only child is merged with its parent. The result is that the number of children of every internal node is at most the radix r of the radix tree, where r is a positive integer and a power x of 2, having x ≥ 1. Unlike regular trees, edges can be labeled with sequences of elements as well as single elements. This makes radix trees much more efficient for small sets (especially if the strings are long) and for sets of strings that share long prefixes.
+- > 在计算机科学中，基数树（也叫基数特里树或压缩前缀树）是一种数据结构，是一种更节省空间的Trie（前缀树），其中作为唯一子节点的每个节点都与其父节点合并，边既可以表示为元素序列又可以表示为单个元素。 因此每个内部节点的子节点数最多为基数树的基数r ，其中r为正整数，x为2的幂，x≥1，这使得基数树更适用于对于较小的集合（尤其是字符串很长的情况下）和有很长相同前缀的字符串集合。 
+
+#### Merkle Patricia Tree
+
+Merkle Patricia Tree (MPT) 树详解 https://www.cnblogs.com/fengzhiwu/p/5584809.html
+
+MPT（Merkle Patricia Trie） https://www.jianshu.com/p/e67452930dcc
