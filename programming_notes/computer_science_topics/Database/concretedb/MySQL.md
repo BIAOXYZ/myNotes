@@ -17,6 +17,10 @@ MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
 - MySQL 索引设计概要 https://draveness.me/sql-index-intro
 - MySQL 索引性能分析概要 https://draveness.me/sql-index-performance
 
+# mysql存储
+
+MYSQL INNODB 三大特性之双写 https://blog.csdn.net/bohu83/article/details/81252045
+
 # mysql索引
 
 MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded
@@ -26,3 +30,5 @@ MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded
 
 MySQL中的读锁和写锁 https://blog.csdn.net/u013063153/article/details/53432468
 - > MyISAM 在执行查询语句(SELECT)前,会自动给涉及的所有表加读锁,在执行更新操作 (UPDATE、DELETE、INSERT 等)前，会自动给涉及的表加写锁，这个过程并不需要用户干预，因此，用户一般不需要直接用LOCK TABLE命令给MyISAM表显式加锁。
+
+# mysql待分类
