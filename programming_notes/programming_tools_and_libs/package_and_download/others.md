@@ -155,3 +155,12 @@ Python包管理器-pip https://juejin.im/post/5beb92e7e51d454fbd6b4bc4
 最全的 pip 使用指南，50% 你可能没用过 https://juejin.im/post/5dc2bdabf265da4d4216bd29
 
 Pipenv – 超好用的 Python 包管理工具 https://juejin.im/post/5b31ba8851882574e808e555
+
+如何安装PIP来管理Linux中的Python包 https://www.howtoing.com/install-pip-in-linux/
+```sh
+在openSUSE上安装PIP
+
+# zypper install python-pip	  #Python 2
+# zypper install python3-pip	#Python 3
+```
+>> 类似net-tools。。。不能直接`XXX install pip`。。。
