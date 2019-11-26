@@ -21,6 +21,35 @@ Mac OS X 平台有哪些好用的 SSH 客户端？ - 知乎 https://www.zhihu.co
 
 Alternatives to Terminator for `Mac` with `any license` https://alternativeto.net/software/terminator/?platform=mac 【注意，真到实际用的时候还是要考虑开源版或免费版。】
 
+## mac vnc
+
+mac 通过vnc连接centos 7 https://blog.csdn.net/devoteeA/article/details/51471981
+```sh
+localhost:~ $ brew install Caskroom/cask/vnc-viewer
+...
+...
+==> Tapping caskroom/cask
+Cloning into '/usr/local/Homebrew/Library/Taps/caskroom/homebrew-cask'...
+remote: Enumerating objects: 3578, done.
+remote: Counting objects: 100% (3578/3578), done.
+remote: Compressing objects: 100% (3569/3569), done.
+remote: Total 3578 (delta 25), reused 491 (delta 7), pack-reused 0
+Receiving objects: 100% (3578/3578), 1.20 MiB | 633.00 KiB/s, done.
+Resolving deltas: 100% (25/25), done.
+Tapped 1 command and 3466 casks (3,583 files, 3.9MB).
+==> brew cask install Caskroom/cask/vnc-viewer 
+==> Downloading https://www.realvnc.com/download/file/viewer.files/VNC-Viewer-6.
+######################################################################## 100.0%
+==> Verifying SHA-256 checksum for Cask 'vnc-viewer'.
+==> Installing Cask vnc-viewer
+==> Moving App 'VNC Viewer.app' to '/Applications/VNC Viewer.app'.
+🍺  vnc-viewer was successfully installed!
+
+// 安装成功后从启动台启动 vnc-viewer，输入之前在单位的win10笔记本上已经确定
+//    一定可以成功连接的地址 9.186.106.126:4，但是报如下错误：
+Unable to connect to VNC Server using your chosen security setting. Either upgrade VNC Server to a more recent version from RealVNC, or select a weaker level of encryption.
+```
+
 ## homebrew
 
 Homebrew的正确安装与使用 https://juejin.im/post/5a6d969bf265da3e2366b853
