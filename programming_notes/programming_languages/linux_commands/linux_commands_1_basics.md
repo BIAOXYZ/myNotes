@@ -560,6 +560,13 @@ REDHAT_SUPPORT_PRODUCT="centos"
 REDHAT_SUPPORT_PRODUCT_VERSION="7"
 ```
 
+```sh
+再次补充，也可以用如下命令：
+    lsb_release -a
+此外，CentOS下可能需要先安装：
+    yum install -y redhat-lsb
+```
+
 ### 查看CPU信息
 ```shell
 # 总核数 = 物理CPU个数 X 每颗物理CPU的核数 
