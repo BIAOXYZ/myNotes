@@ -45,9 +45,11 @@ Tapped 1 command and 3466 casks (3,583 files, 3.9MB).
 ==> Moving App 'VNC Viewer.app' to '/Applications/VNC Viewer.app'.
 🍺  vnc-viewer was successfully installed!
 
-// 安装成功后从启动台启动 vnc-viewer，输入之前在单位的win10笔记本上已经确定
-//    一定可以成功连接的地址 9.186.106.126:4，但是报如下错误：
+// 安装成功后从启动台启动 vnc-viewer，输入之前在单位的win10笔记本上已经确定一定可以成功连接的地址 9.186.106.126:4，但是报如下错误：
 Unable to connect to VNC Server using your chosen security setting. Either upgrade VNC Server to a more recent version from RealVNC, or select a weaker level of encryption.
+// 然后按照官方的帮助页面（ https://help.realvnc.com/hc/en-us/articles/360002254738 ）里的错误提示去改参数值，几个参数值全试了，都不行。
+// 最后还是在TigerVNC页面（ https://github.com/TigerVNC/tigervnc/releases ）直接下载了当前最新稳定版（1.10.0），还免安装，直接搞定。
+//    https://github.com/TigerVNC/tigervnc/releases  -->  https://bintray.com/tigervnc/stable/tigervnc/1.10.0  -->  https://bintray.com/tigervnc/stable/download_file?file_path=TigerVNC-1.10.0.dmg
 ```
 
 ## homebrew
