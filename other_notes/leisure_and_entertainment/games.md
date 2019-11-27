@@ -1,4 +1,8 @@
 
+# 暗黑破坏神
+
+Stone of Jordan (Diablo II) https://diablo.fandom.com/wiki/Stone_of_Jordan_(Diablo_II)
+
 # 魔兽
 
 《魔兽争霸3：重制版》技能效果演示视频释出：保留原有效果 https://www.ithome.com/0/450/359.htm
