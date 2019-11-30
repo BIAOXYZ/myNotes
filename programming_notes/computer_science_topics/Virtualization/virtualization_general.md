@@ -1,5 +1,21 @@
 
+# virtualization general
+
+## from wikipedia
+
 Category:Virtualization software https://en.wikipedia.org/wiki/Category:Virtualization_software
+
+Comparison of platform virtualization software https://en.wikipedia.org/wiki/Comparison_of_platform_virtualization_software
+
+Hypervisor https://en.wikipedia.org/wiki/Hypervisor
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## others
+
+Virtualization Wars: VMware vs. Hyper-V vs. XenServer vs. KVM https://www.pcworld.com/article/243216/virtualization_wars_vmware_vs_hyperv_vs_xenserver_vs_kvm.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # QEMU
 
@@ -7,11 +23,27 @@ QEMU https://zh.wikipedia.org/wiki/QEMU
 
 QEMU (简体中文) https://wiki.archlinux.org/index.php/QEMU_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# KVM
+
+Kernel-based Virtual Machine https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Xen
 
 虚拟化 - KVM 和 Xen 比较 https://www.cnblogs.com/sammyliu/articles/4389981.html
 
 LINUX的XEN和KVM到底区别在什么地方？ - 知乎 https://www.zhihu.com/question/19844004
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Hyper-V
+
+A curated list of Hyper-V exploitation resources, fuzzing and vulnerability research. https://github.com/shogunlab/awesome-hyper-v-exploitation
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [WSL(Windows Subsystem for Linux)](https://blogs.msdn.microsoft.com/wsl/)
 
@@ -19,6 +51,8 @@ LINUX的XEN和KVM到底区别在什么地方？ - 知乎 https://www.zhihu.com/q
 
 - Windows 10 Installation Guide https://docs.microsoft.com/zh-cn/windows/wsl/install-win10
 - 不用装双系统，直接在 Windows 上体验 Linux：Windows Subsystem for Linux https://sspai.com/post/43813 【这个比官方的更好】
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## WSL其他
 
