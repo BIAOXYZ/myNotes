@@ -1,7 +1,7 @@
 
-# 0.之前转移过来的内容
+# 0.早期转移过来的内容
 
-## samba
+## samba早期第一批链接
 
 <<Samba 的多用户共享目录配置>>
 http://blog.sina.com.cn/s/blog_545f2b4701010t8i.html
@@ -14,7 +14,7 @@ http://www.linuxidc.com/Linux/2016-12/138498.htm
 
 http://www.linuxidc.com/Linux/2016-03/129195.htm
 
-### samba第二批（更详细的资料）
+## samba早期第二批链接（更详细的资料）
 
 在CentOS 7上安装和配置Samba服务器 https://www.howtoing.com/samba-server-installation-and-configuration-on-centos-7
 
@@ -23,8 +23,6 @@ CentOS 7下Samba服务器的安装与配置 https://www.cnblogs.com/muscleape/p/
 CentOS7下Samba服务安装与配置 https://www.jianshu.com/p/cc9da3a154a0
 
 Linux samba的配置和使用 https://blog.csdn.net/weixin_40806910/article/details/81917077
-
-***// 此外`linuxprobe`第12章就是关于samba配置的***。
 
 ### 忘记密码
 
@@ -40,3 +38,11 @@ https://jingyan.baidu.com/article/e2284b2b3cea8ae2e6118de1.html
 ```
 进入终端 #sudo su root然后输入普通用户的密码，就暂时获得了root帐号的权限了，同时也进入了root账号下了；
 ```
+
+# 1.后来的链接
+
+Samba (简体中文) https://wiki.archlinux.org/index.php/Samba_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+***// 此外`linuxprobe`第12章就是关于samba配置的***。
+
+# 2.实战部分
