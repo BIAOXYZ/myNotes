@@ -1,6 +1,8 @@
 
 # distributed system general
 
+List of academic papers on distributed consensus https://github.com/heidi-ann/distributed-consensus-reading-list 【这个在paperRelatedRepository也会记录一下】
+
 awesome-distributed-systems -- A curated list to learn about distributed systems https://github.com/theanalyst/awesome-distributed-systems
 
 Scalable, Available, Stable, Performant, and Intelligent System Design Patterns https://github.com/binhnguyennus/awesome-scalability
