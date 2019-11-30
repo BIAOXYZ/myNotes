@@ -589,7 +589,8 @@ Oo控 https://zh.moegirl.org/Oo控
 > 关于更多的对萌属性的控，请参见[萌属性](https://zh.moegirl.org/萌属性)。后缀词“oo控”可以用在所有萌属性的后面。
 >> 萌属性 https://zh.moegirl.org/萌属性
 
-名作之壁 https://zh.moegirl.org/名作之壁
+名作之壁 https://zh.moegirl.org/名作之壁 = [IS〈Infinite Stratos〉(无限斯特拉托斯)](https://zh.moegirl.org/%E6%97%A0%E9%99%90%E6%96%AF%E7%89%B9%E6%8B%89%E6%89%98%E6%96%AF)
+>> notes：B站该番剧介绍： [当全校只有你一个男生，所有女生都喜欢你，你会干嘛？](https://www.bilibili.com/video/av77428040) 
 
 娶妻当如樱庭葵，生女当如泉此方 https://zh.moegirl.org/%E5%A8%B6%E5%A6%BB%E5%BD%93%E5%A6%82%E6%A8%B1%E5%BA%AD%E8%91%B5%EF%BC%8C%E7%94%9F%E5%A5%B3%E5%BD%93%E5%A6%82%E6%B3%89%E6%AD%A4%E6%96%B9
 
