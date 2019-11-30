@@ -234,6 +234,8 @@ Shell Style Guide https://google.github.io/styleguide/shell.xml
 
 Google 开源项目风格指南 (中文版) https://zh-google-styleguide.readthedocs.io/en/latest/ || https://github.com/zh-google-styleguide/zh-google-styleguide
 
+Microsoft REST API Guidelines https://github.com/microsoft/api-guidelines
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 随笔分类 - UNIX环境高级编程学习笔记
