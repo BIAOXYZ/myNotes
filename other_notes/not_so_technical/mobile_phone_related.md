@@ -66,3 +66,7 @@ HUAWEI Cloud -- Huawei Mobile Services (华为云空间 -- 华为终端云服务
     + > 手机销售记录查询 https://order.mi.com/service/imei
 
 怎么查小米手机激活时间，求解. http://bbs.xiaomi.cn/t-29266714
+
+如何关闭MIUI负一屏、桌面底部搜索栏 https://post.smzdm.com/p/apzk5820/
+- > 2. 桌面底部搜索栏 关闭方法
+  >> 桌面底部搜索栏通过系统默认主题都是自动开启的。目前关闭其有2种方法，一种是桌面直接长按进入【设置】界面进行关闭，另外一种是通过在【设置】界面搜索关键词“搜索”，然后关闭。
