@@ -1,4 +1,8 @@
 
+Linux Kernel 5.5 最终删除 SYSCTL 系统调用 https://www.ithome.com/0/460/240.htm
+> 长期以来，Linux sysctl系统调用都不建议被使用，也不建议将其与通过/proc/sys公开的sysctl接口一起使用，这是读取/设置内核系统属性的首选方法。 Linux Kernel 5.5的更改并未涉及/proc/sys支持，而只是将要把多年以来一直未使用的Linux上带有sysctl二进制接口的系统调用删除。
+>> notes：注意，这个不是命令`sysctl`。开始我还以为是这个命令废弃了，所以把内容放到这个文件里了。后来看到上面这段内容才注意到是`SYSCTL系统调用`被废除了。
+
 # 命令基本信息
 
 sysctl https://en.wikipedia.org/wiki/Sysctl
