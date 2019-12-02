@@ -413,6 +413,8 @@ https://www.zhihu.com/question/24694855
 - > https://github.com/Himself65/OpenArkCompiler/commit/3214db9fda588feb69931171fed50cfd52a6776f
 - > 如何看待方舟编译器 8 月 31 日开源? - 千里冰封 你懂吗的回答 - 知乎 https://www.zhihu.com/question/343431810/answer/808816079
 
+孟晚舟写在一年之际：不畏未知 https://www.ithome.com/0/460/350.htm
+- 如何评价 12 月 2 日华为心声社区发布的孟晚舟最新公开信「你们的温暖，是照亮我前行的灯塔」？ - 知乎 https://www.zhihu.com/question/358863641
 
 京东回应“要求员工梳理亲属关系”：是日常管理举措 https://www.ithome.com/0/415/132.htm
 
