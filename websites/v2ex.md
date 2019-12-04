@@ -60,6 +60,8 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
 
+多源数据融合，建数仓，数据统计分析一般有哪些架构和技术？区别是什么？ https://www.v2ex.com/t/625567
+
 腾讯基于 PostgreSQL 历时 8 年研发的 HTAP 分布式数据库 TBase 开源了，对数据库有兴趣的同学可以去了解体验一下 https://www.v2ex.com/t/619632
 
 数据库的发展趋势是什么？ https://www.v2ex.com/t/612782
@@ -74,6 +76,8 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 - > 客官，这里有一份《MySQL 必知必会》读书笔记，请您笑纳! https://juejin.im/post/5d2335846fb9a07f021a2509
 
 ## 其他
+
+有无计算机组成原理相关的课程和书推荐 https://www.v2ex.com/t/625781
 
 serverless 底层技术是什么 https://www.v2ex.com/t/578918
 - > 可以看一下这篇文章，作者尝试去获取 AWS Lambda 应用运行在什么环境里 [如何探测虚拟环境是物理机、虚拟机还是容器？](https://www.infoq.cn/article/536L*XPRudOwCkiTDgM4)
