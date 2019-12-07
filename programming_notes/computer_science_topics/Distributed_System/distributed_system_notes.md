@@ -17,7 +17,7 @@ Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
-# transaction system
+# distributed transaction system
 
 两阶段提交的工程实践 - 郁白的文章 - 知乎
 https://zhuanlan.zhihu.com/p/22594180
@@ -25,6 +25,12 @@ https://zhuanlan.zhihu.com/p/22594180
 两阶段提交及JTA http://www.cnblogs.com/Leo_wl/p/5728027.html
 
 2PC之踵？是时候升级二阶段提交协议了 https://mp.weixin.qq.com/s/fHyvviHGBzYfOugPpbJ2lA
+
+## Seata
+
+由Seata看分布式事务取舍 https://www.jianshu.com/p/917cb4bdaa03 【:star:】
+
+分布式事务框架Seata及EasyTransaction架构的比对思考 https://www.cnblogs.com/skyesx/p/10674700.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
