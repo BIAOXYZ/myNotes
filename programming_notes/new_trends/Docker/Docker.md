@@ -68,6 +68,26 @@ docker login https://docs.docker.com/engine/reference/commandline/login/
 docker ps -a --no-trunc  //主要是--no-trunc参数，可以显示完整的command。直接照搬 `ps -ef | cat` 不行。
 ```
 
+## docker save/load
+```sh
+# https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository
+
+docker save -o <path for generated tar file> <image name>
+docker load -i <path to image tar file>
+
+----------------------------------------------------------------------------------------------------
+
+# 1.在导出路径的最后镜像名字必须有；2.不是必须打成tar包，没后缀也不影响。
+$ docker save busybox:1 -o ~/test/busyboximage
+$ ls ~/test/
+busyboximage
+
+$ docker load -i ~/test/busyboximage 
+eac247cb7af5: Loading layer [==================================================>] 1.437 MB/1.437 MB
+Loaded image: busybox:1
+```
+
+
 ## 其他docker常用命令
 
 - 15 个 Docker 技巧和提示 https://blog.csdn.net/liyingke112/article/details/73920837
