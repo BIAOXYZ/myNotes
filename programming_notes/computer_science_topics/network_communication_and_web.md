@@ -45,6 +45,8 @@ Hypertext Transfer Protocol -- HTTP/1.1 https://www.ietf.org/rfc/rfc2616.txt
 HTTP协议(rfc2626)中文翻译(修订版) http://www.blogjava.net/sunchaojin/archive/2009/05/31/279164.html --> 这作者把2616写成2626了。。。
 > 超文本传输协议-HTTP/1.1（修订版）---译者：孙超进 http://files.blogjava.net/sunchaojin/http1.3.pdf
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## httpd
 
 Is there any difference between apache2 and httpd? https://askubuntu.com/questions/248404/is-there-any-difference-between-apache2-and-httpd
@@ -112,6 +114,8 @@ What is the loopback device and how do I use it? https://askubuntu.com/questions
 - [x] IP地址，子网掩码，默认网关，DNS服务器详解 https://www.cnblogs.com/JuneWang/p/3917697.html
 - [x] 计算机网络: IP地址，子网掩码，网段表示法，默认网关，DNS服务器详解 https://www.cnblogs.com/iceJava/p/5372033.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 网络配置文件
 
 linux网络相关配置文件 https://www.cnblogs.com/starof/p/4153663.html
@@ -127,6 +131,22 @@ resolv.conf在Linux系统中的作用 https://blog.csdn.net/longcheng217/article
 ### /etc/sysconfig/network
 
 Configuring Default Gateway on RedHat Enterprise Linux https://linuxconfig.org/configuring-default-gateway-on-redhat-enterprise-linux
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 网卡命名规则（为什么有的是`eth0,eth1...`有的是`enp0s25`之类的）
+
+第 8 章 一致网络设备命名 https://access.redhat.com/documentation/zh_cn/red_hat_enterprise_linux/7/html/networking_guide/ch-consistent_network_device_naming
+
+Why is my network interface named enp0s25 instead of eth0? https://askubuntu.com/questions/704361/why-is-my-network-interface-named-enp0s25-instead-of-eth0
+- Why is my ethernet interface called enp0s10 instead of eth0? https://unix.stackexchange.com/questions/134483/why-is-my-ethernet-interface-called-enp0s10-instead-of-eth0
+
+centos网卡命名规则以及更名方法 https://www.jianshu.com/p/1bd6461b930c
+
+踩坑： systemd 的网卡命名规则 https://www.v2ex.com/t/441604
+> 搜索一番找到了源头，systemd 在 v197 之后采用了[区别与 ethX 的新命名策略](https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/)。传统命名策略的缺陷在于在多网卡情况下会出现重启后网卡命名混乱，比如之前的 eth0 和 eth1 换了名字。<del>贫穷限制了我的想象力</del>。细读下来还发现 Debian 和 CentOS/Fedora 用的竟然还是不同的新的命名策略，有心的可以自己试试。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ### IPVS
 
