@@ -172,3 +172,25 @@ $ man hier | grep -E 'bin$|sbin$|^.{7}(/bin)|^.{7}(/sbin)' -A2
 shell脚本输出输出带颜色内容 https://blog.csdn.net/David_Dai_1108/article/details/70478826
 
 【by 直死之邪王灼眼】 Linux之Shell脚本自动化编程四（命令排序，元字符，echo实现彩色输出和printf） https://www.bilibili.com/read/cv933397/
+
+## 获取ip地址的数字内容
+- Which terminal command to get just IP address and nothing else? https://stackoverflow.com/questions/8529181/which-terminal-command-to-get-just-ip-address-and-nothing-else
+```sh
+harbor2:~ # /sbin/ifconfig eth0
+eth0      Link encap:Ethernet  HWaddr 52:54:00:F3:A5:43  
+          inet addr:30.0.1.32  Bcast:30.0.255.255  Mask:255.255.0.0
+          inet6 addr: fe80::5054:ff:fef3:a543/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:22037048 errors:0 dropped:358202 overruns:0 frame:0
+          TX packets:489531 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:6231397965 (5942.7 Mb)  TX bytes:72839948 (69.4 Mb)
+
+harbor2:~ # /sbin/ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
+30.0.1.32
+
+```
+- How to get my own IP address and save it to a variable in a shell script? https://unix.stackexchange.com/questions/8518/how-to-get-my-own-ip-address-and-save-it-to-a-variable-in-a-shell-script
+```sh
+
+```
