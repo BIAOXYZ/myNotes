@@ -28,6 +28,8 @@ xCAT https://en.wikipedia.org/wiki/XCAT
 
 Welcome to xCAT. xCAT is an open-source tool for automating deployment, scaling, and management of bare metal severs and virtual machines. https://xcat.org/
 
+Code repo for xCAT core packages https://github.com/xcat2/xcat-core
+
 # xCAT文档
 
 Extreme Cloud Administration Toolkit https://xcat-docs.readthedocs.io/en/stable/
