@@ -13,6 +13,20 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 
 ## hardware
 
+不小心把 iso 文件 cp 到硬盘… https://www.v2ex.com/t/626910
+```
+本来想弄个 Debian 10 的启动盘，不小心把 iso 文件 cp 到 sda （正确应该是 cp 到 sdb ）…就是执行了一下命令：
+sudo cp ~/Download/debian-10.2.0-amd64-i386-netinst.iso /dev/sda
+
+幸好第一个分区是 Windows，没伤及 Ubuntu 系统分区。唉，心塞…明天再恢复分区表吧
+```
+- > lsblk 看清楚再打字
+- > 类似的还有 dd 的 if of 反了，233。
+- > /dev/sda 是设备啊，又不是文件系统里的目录，不能接受文件 cp 吧？
+  >> @dandycheung #4 所以这里的 cp 就变成了把 iso 文件写入数据到设备，而不是复制 iso 文件到某个目录
+- > 复制最后一个参数一般是目录或者文件，楼主直接写设备也是骚操作
+  >> @mikeguan #9 这是官方教程的命令，用于生成 U 盘启动盘。操作是没问题的，只是我搞错了设备
+
 龙芯 & Golang！ https://www.v2ex.com/t/606364
 
 ## linux
