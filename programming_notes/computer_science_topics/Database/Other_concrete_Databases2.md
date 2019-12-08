@@ -1,6 +1,8 @@
 
 # 阿里
 
+OceanBase、X-DB、POLARDB 分布式关系型数据库，各自的优势是什么？有什么区别？ - 知乎 https://www.zhihu.com/question/273663930
+
 ## Oceanbase
 
 A distributed, shared-nothing relational database https://github.com/alibaba/oceanbase
@@ -12,6 +14,18 @@ A distributed, shared-nothing relational database https://github.com/alibaba/oce
 - 独家解读：蚂蚁金服自研数据库OceanBase如何登顶TPC-C https://mp.weixin.qq.com/s/o7GLanw_ShmDSxHzDkKNSg
 - 如何看待蚂蚁金服国产分布式数据库Oceanbase在TPC-C测试中远超Oracle荣获第一？ - 知乎 https://www.zhihu.com/question/349062591
 - 如何看待蚂蚁金服OceanBase拿下世界第一，性能超老牌数据库Oracle 100％。? - 知乎 https://www.zhihu.com/question/349100846
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## PolarDB
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## GeaBase
+
+OSDI 18 重磅解密：蚂蚁金服实时金融级分布式图数据库 GeaBase https://www.infoq.cn/article/UH2mrQCzlbsKbh9cLSMZ
+
+GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.cn/article/PMbTNl1UC7xVcuefI6Kt
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
