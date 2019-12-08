@@ -134,6 +134,12 @@ AppArmor https://zh.wikipedia.org/wiki/AppArmor
 
 AppArmor https://wiki.archlinux.org/index.php/AppArmor
 
+# NFS文件系统
+
+NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+Linux下NFS服务器的搭建与配置 https://www.cnblogs.com/liuyisai/p/5992511.html
+
 # 小专题
 
 ## linux目录含义
