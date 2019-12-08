@@ -262,6 +262,8 @@ Python HTTP Requests for Humans™ ✨🍰✨ https://github.com/kennethreitz/re
 
 Requests: 让 HTTP 服务人类 http://docs.python-requests.org/zh_CN/latest/
 
+请教一个问题， requests 包请求 csdn 首页推荐文章一个接口，为什么相同代码在 windows 和 Linux 下不同结果？ https://www.v2ex.com/t/626740
+
 ### 2to3
 
 - 2to3 - Automated Python 2 to 3 code translation https://docs.python.org/2/library/2to3.html
