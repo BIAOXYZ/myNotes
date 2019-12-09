@@ -1,4 +1,18 @@
 
+# Linux工具包（里面不止一个命令）类总结
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 旧版的 v.s. 有取代的
+
+### `net-tools` VS `iproute2`
+
+Linux TCP/IP 网络工具对比：net-tools 和 iproute2 https://blog.csdn.net/zhaihaifei/article/details/54617516
+
+iproute2 对决 net-tools https://linux.cn/article-4326-1.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # SELinux
 
 - 查看SELinux状态&关闭SELinux https://blog.csdn.net/GGxiaobai/article/details/53505095
