@@ -26,7 +26,9 @@ http://blog.csdn.net/r91987/article/details/6887731
 C语言运算符优先级（超详细）
 http://blog.csdn.net/yuliying/article/details/72898132
 
-### C指针
+# C语法知识
+
+## C指针
 
 <<C 和 C++ 中的指针>>
 https://liam0205.me/2017/02/05/pointer-in-C-and-Cpp/
@@ -38,7 +40,7 @@ https://www.cnblogs.com/uniqueliu/archive/2011/07/27/2118619.html
 
 数组指针和指针数组 https://blog.csdn.net/touch_2011/article/details/6966980
 
-#### 右左法则
+***右左法则***：
 - 右左法则----复杂指针解析(函数指针与数组指针) https://blog.csdn.net/hyqsong/article/details/52564046
 - 【C语言】右左法则——准确理解所有声明 https://blog.csdn.net/newcong0123/article/details/51883352
 - 右左法则解决复杂声明 http://www.cnblogs.com/bakari/archive/2012/08/28/2659889.html
@@ -48,17 +50,18 @@ https://www.zhihu.com/question/59605233/answer/166935479
 
 C语言函数指针基础 http://blog.jobbole.com/44639/
 
+C 语言中 void* 详解及应用 https://www.cnblogs.com/wuyudong/p/c-void-point.html || https://www.runoob.com/w3cnote/c-void-intro.html 【其实菜鸟笔记里这个转载版本格式更好看点】
 
-### C内联函数
+## C内联函数
 C语言的inline关键字 - CSDN博客
 https://blog.csdn.net/lidh04/article/details/3795802
 
 内联函数 —— C 中关键字 inline 用法解析 - CSDN博客
 https://blog.csdn.net/zqixiao_09/article/details/50877383
 
-### C结构体
+## C结构体
 
-#### struct和typedef struct
+### struct和typedef struct
 
 struct和typedef struct彻底明白了 http://www.cnblogs.com/qyaizs/articles/2039101.html
 
@@ -71,7 +74,7 @@ https://stackoverflow.com/questions/612328/difference-between-struct-and-typedef
 
 为什么 Linux 内核中不经常使用 typedef？ - pansz的回答 - 知乎 https://www.zhihu.com/question/20928231/answer/16632332
 
-### stackoverflow
+### from stackoverflow
 
 Arrow operator (->) usage in C
 https://stackoverflow.com/questions/2575048/arrow-operator-usage-in-c
@@ -81,10 +84,10 @@ https://stackoverflow.com/questions/4985074/ifnull-variable-why-not-ifvariable-n
 >https://www.zhihu.com/question/27336966
 
 
-### C字符串操作函数
+## C字符串操作函数
 https://www.cnblogs.com/lidabo/p/5225868.html
 
-#### strtok
+### strtok
 
 <<strtok、strtok_s、strtok_r 字符串切割函数>>
 https://www.cnblogs.com/zfyouxi/p/4498759.html
@@ -93,18 +96,18 @@ https://www.cnblogs.com/zfyouxi/p/4498759.html
 关于函数strtok和strtok_r的使用要点和实现原理（二）
 http://blog.csdn.net/liuintermilan/article/details/6283705
 
-#### strdup
+### strdup
 
 https://stackoverflow.com/questions/252782/strdup-what-does-it-do-in-c
 
 
-### 内存管理
+## C内存管理
 
 C语言malloc和free【转载】
 http://blog.csdn.net/r91987/article/details/6337032
 
 
-### C长跳转
+## C长跳转
 
 C语言的异常机制 setjump longjump函数
 http://blog.csdn.net/wanglang3081/article/details/18664919
@@ -116,14 +119,14 @@ linux C 长跳转setjmp/longjump以及sigsetjump/siglongjump
 http://www.cppblog.com/cxf20090520biancheng/archive/2012/05/14/174833.html
 
 
-### 报错信息解决
+## C报错信息解决
 
-#### crosses initialization of ...
+### crosses initialization of ...
 
 - http://blog.csdn.net/zzwdkxx/article/details/27561393
 - https://stackoverflow.com/questions/12992108/crosses-initialization-of-variable-only-when-initialization-combined-with-decl
 
-### 其他
+# C其他
 
 C技巧：结构体参数转成不定参数 https://blog.csdn.net/haoel/article/details/6212499
 
