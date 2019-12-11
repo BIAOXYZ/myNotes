@@ -23,3 +23,7 @@ Yahoo’s New Pulsar: A Kafka Competitor? https://www.datanami.com/2016/09/07/ya
 > “These applications provide real-time services, and need publish-latencies of 5ms on average and no more than 15ms at the 99th percentile,” they write. “At Internet scale, these applications require a messaging system with ordering, strong durability, and delivery guarantees.” The messages must also be committed to multiple disks or nodes in order to get to the 99.999% guaranteed durability level, they add.
 >
 > “At the time we started, we could not find any existing open-source messaging solution that could provide the scale, performance, and features Yahoo required to provide messaging as a hosted service, supporting a million topics,” Francis and Merli write. “So we set out to build Pulsar as a general messaging solution, that also addresses these specific requirements.”
+
+# Talos (小米)
+
+万亿级消息背后: 小米消息队列的实践 https://www.infoq.cn/article/azHldfbaDD9Iq368SxOo
