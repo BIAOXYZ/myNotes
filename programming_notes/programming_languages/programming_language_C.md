@@ -50,7 +50,9 @@ https://www.zhihu.com/question/59605233/answer/166935479
 
 C语言函数指针基础 http://blog.jobbole.com/44639/
 
-C 语言中 void* 详解及应用 https://www.cnblogs.com/wuyudong/p/c-void-point.html || https://www.runoob.com/w3cnote/c-void-intro.html 【其实菜鸟笔记里这个转载版本格式更好看点】
+***`void*`指针***：
+- C 语言中 void* 详解及应用 https://www.cnblogs.com/wuyudong/p/c-void-point.html || https://www.runoob.com/w3cnote/c-void-intro.html 【其实菜鸟笔记里这个转载版本格式更好看点】
+- C语言指针高级部分: void指针和数据指针 https://blog.csdn.net/qq_29924041/article/details/54882135
 
 ## C内联函数
 C语言的inline关键字 - CSDN博客
