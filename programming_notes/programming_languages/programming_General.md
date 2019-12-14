@@ -125,6 +125,8 @@ VISUALGO https://visualgo.net/
 
 :fireworks: Interactive Online Platform that Visualizes Algorithms from Code https://algorithm-visualizer.org/ || https://github.com/algorithm-visualizer/algorithm-visualizer
 
+Data Structure Visualizations https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Linux Programming
