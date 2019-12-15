@@ -269,6 +269,10 @@ Requests: 让 HTTP 服务人类 http://docs.python-requests.org/zh_CN/latest/
 - 2to3 - Automated Python 2 to 3 code translation https://docs.python.org/2/library/2to3.html
 - 2to3 - 自动将 Python 2 代码转为 Python 3 代码 https://docs.python.org/zh-cn/3.7/library/2to3.html
 
+### NetworkX
+
+NetworkX https://www.osgeo.cn/networkx/
+
 --------------------------------------------------
 ## python security related libs
 --------------------------------------------------
