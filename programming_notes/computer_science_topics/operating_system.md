@@ -105,6 +105,11 @@ underlying storage: the files in it give information about running processes and
 information; the information is provided directly by the kernel from its in-memory data structures.
 ```
 
+能否通俗易懂，深入浅出地解释一下linux中的挂载的概念？ - 知乎 https://www.zhihu.com/question/266907637
+- 能否通俗易懂，深入浅出地解释一下linux中的挂载的概念？ - 灵剑的回答 - 知乎 https://www.zhihu.com/question/266907637/answer/315386532
+- 能否通俗易懂，深入浅出地解释一下linux中的挂载的概念？ - 大叮当的回答 - 知乎 https://www.zhihu.com/question/266907637/answer/317710850
+  * > 假如你插入了一个 CD-ROM.你里面有个文件 `/file/hahaha.txt`，设备地址为 `/dev/cdrom`（所有设备在linux下都是文件形式存在的，所以设备会在`/dev文件`下面），这时候如果你想访问里面的数据，你需要建立一个文件来映射该设备，假设你建立了一个 `/media/cdrom` 的文件夹，执行下面的命令 `mount /dev/cdrom /media/cdrom` 就可以通过 `/media/cdrom/file/hahaha.txt` 访问到CD-ROM里面的数据了。如果使用完毕，你也可以使用 `umount /media/cdrom` 将设备卸载。
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## namespace
