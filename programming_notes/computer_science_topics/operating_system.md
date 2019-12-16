@@ -78,6 +78,18 @@ Linux学习笔记（二）：什么是挂载？mount的用处在哪？ https://b
 <br> 10.插入CD，系统其实自动执行了 mount /dev/cdrom /media/cdrom。所以可以直接在/media/cdrom中对CD中的内容进行管理。
 
 挂载（mount）深入理解 https://www.cnblogs.com/chen-farsight/p/6119404.html
+- > 首先引用一句 wiki 上的定义来开篇:
+  >> Mounting takes place before a computer can use any kind of storage device (such as a hard drive, CD-ROM, or network share). The user or their operating system must make it accessible through the computer’s file system. A user can only access files on mounted media.
+  >
+  > 意思是说, “挂载” 发生在计算机想要使用任何类型的存储设备 (如硬盘, CD-ROM, 网络设备) 之前. 操作系统必须将这个设备纳入自己的文件系统中去.要注意的是, 这里的存储设备不一定必须是外部的存储设备, 也可以是你安装系统的硬盘上的分区.
+- > 光看上面说的还不够, 先看个例子吧, 这个例子摘自 man mount, 在 man 手册中这个例子下的一句话非常好的解释了 mount 到底是什么.
+  >> `mount -t type device dir `
+  >
+  > 在这个例子下面有这么一句话: This tells the kernel to attach the filesystem found on *device* (which is of type *type*) at the directory *dir*.
+  >
+  > 这句话非常重要, 我们一定要明白, 挂载操作, 实际上是把设备device中的文件系统附加到dir上, 然后我们就可以通过访问dir来访问这个设备.
+  >
+  > 明白了这一点, 我们就能明白 “挂载” 的本质了, 挂载的本质就是针对某一设备, 分析出其文件系统结构, 并根据其文件系统类型调用 linux 中相应的驱动, 处理其的元数据, 将这些信息附加到 linux 的目录树上呈现出来.
 
 What is meant by mounting a device in Linux? https://unix.stackexchange.com/questions/3192/what-is-meant-by-mounting-a-device-in-linux
 ```
