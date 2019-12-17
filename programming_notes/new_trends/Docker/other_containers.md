@@ -63,6 +63,8 @@ Kata Containers https://www.binss.me/blog/what-is-kata-containers/
 
 初识 Kata Containers https://www.hi-linux.com/posts/23259.html
 
+黑客松Demo: Kata 的下一代镜像系统 https://mp.weixin.qq.com/s/qVgdzwCQQ2Jtxx40_CTUlw
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # gVisor
