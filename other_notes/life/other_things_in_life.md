@@ -10,3 +10,5 @@
 医保可以取现？北京医保报销最全指南！首都福利到底有多好？ https://post.smzdm.com/p/a3gzn74r/
 
 北京银行医保卡可以取钱吗，要怎么取钱 https://zhidao.baidu.com/question/182117649735276364.html
+
+降了！北京养老保险缴费基数水平调回两年前，高收入群体缴费下降 http://news.sina.com.cn/o/2019-05-30/doc-ihvhiqay2565039.shtml
