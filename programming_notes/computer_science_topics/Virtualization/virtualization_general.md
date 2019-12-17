@@ -65,3 +65,5 @@ vSphere, ESXi 和 vCenter 的区别 - 张雷的文章 - 知乎 https://zhuanlan.
 ## WSL其他
 
 windows linux子系统(Windows Subsystem for Linux)的存放目录 https://www.cnblogs.com/lynsyklate/p/7911189.html
+
+Windows、WSL与Linux性能对比 https://www.ithome.com/0/463/355.htm
