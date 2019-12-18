@@ -7,6 +7,14 @@ P2P Docker registry capable of distributing TBs of data in seconds https://githu
 
 Dragonfly is an intelligent P2P based image and file distribution system. https://d7y.io/ || https://github.com/dragonflyoss/Dragonfly
 
+# JFrog Container Registry
+
+Announcing JFrog Container Registry https://jfrog.com/blog/announcing-jfrog-container-registry/
+
+JFrog Container Registry https://jfrog.com/container-registry/
+
+Overview https://www.jfrog.com/confluence/display/JCR/Overview
+
 # Harbor
 
 When to support P2P in image distribution? #3769 https://github.com/goharbor/harbor/issues/3769
