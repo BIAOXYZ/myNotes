@@ -57,12 +57,15 @@ cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 ## python
 
-cpython 底层实现笔记 https://www.v2ex.com/t/560173
-> Dive into CPython internals, trying to illustrate every detail of CPython implementation | CPython 源码阅读笔记, 多图展示底层实现细节 https://github.com/zpoint/CPython-Internals
+Python 为什么趋近于零的数字会表示成 5.96046448e-08 https://www.v2ex.com/t/629937
+- > 15. 浮点算术：争议和限制 https://docs.python.org/zh-cn/3.8/tutorial/floatingpoint.html
+
+刚搞懂一个 logging 的用法，分享一下。 https://www.v2ex.com/t/613320
 
 Python 之父开博客写的解析器系列文章 https://www.v2ex.com/t/588878
 
-刚搞懂一个 logging 的用法，分享一下。 https://www.v2ex.com/t/613320
+cpython 底层实现笔记 https://www.v2ex.com/t/560173
+> Dive into CPython internals, trying to illustrate every detail of CPython implementation | CPython 源码阅读笔记, 多图展示底层实现细节 https://github.com/zpoint/CPython-Internals
 
 ## go
 
