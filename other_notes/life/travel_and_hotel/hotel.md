@@ -51,6 +51,20 @@ Marriott International https://en.wikipedia.org/wiki/Marriott_International
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# `希尔顿` / `Hilton`
+
+## 希尔顿官网
+
+Hilton Hotels and Resorts https://www.hilton.com/en/hilton/
+
+希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/
+
+## 希尔顿攻略
+
+希尔顿攻略：希尔顿荣誉客会（Hilton Honors）常旅客计划详细介绍、入门知识及进阶玩法 https://www.hoteldig.com/hilton-honors-detailed-introduction/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Express Hotel/快捷酒店 (主要是为了搞清谁和谁是一伙的)
 
 公众号推文被指侮辱女性 桔子水晶道歉称将全面反思 - 警告! - cnBeta.COM https://www.cnbeta.com/articles/tech/825605.htm
