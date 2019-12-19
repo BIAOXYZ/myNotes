@@ -169,8 +169,10 @@ https://github.com/ruanyf/weekly/issues/669
 
 # V2EX工具类
 
+***远程共享/访问***：
 - 目前免费远程控制软件有好用的吗？ https://www.v2ex.com/t/567221
 - 大家可以放弃 TeamViewer 了，有更好的解决方案 https://www.v2ex.com/t/568443
+- 花了点时间终于把 xrdp 跑起来了 https://www.v2ex.com/t/630325
 
 大家有什么推荐的日常 Linux 软件？ https://www.v2ex.com/t/575901
 
