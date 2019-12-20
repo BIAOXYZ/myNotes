@@ -1,9 +1,17 @@
 
 # others
 
+Modernize your application deployment with Lift and Shift https://developers.redhat.com/blog/2018/10/18/modernize-your-application-deployment-with-lift-and-shift/
+
+## AIOps
+
 AIOps学习资料汇总，欢迎一起补全这个仓库，欢迎star https://github.com/linjinjin123/awesome-AIOps/
 
-Modernize your application deployment with Lift and Shift https://developers.redhat.com/blog/2018/10/18/modernize-your-application-deployment-with-lift-and-shift/
+What is AIOps? https://www.appdynamics.com/central-nervous-system/what-is-ai-ops
+
+### AIOps公司
+
+dynatrace https://www.dynatrace.com/solutions/application-monitoring/
 
 # BMC & IPMI
 
