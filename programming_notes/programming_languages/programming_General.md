@@ -46,6 +46,9 @@ Learn X in Y minutes https://learnxinyminutes.com/
 在不到30s内得到一个干净的开箱即用的临时linux系统. https://github.com/super-inspire/super-inspire-end
 > Super Inspire http://60.190.81.133:8888/
 
+十大使用 Linux Lab 的理由：内核和嵌入式开发 https://www.ithome.com/0/464/333.htm
+- Linux Lab: Linux 内核实验环境 https://tinylab.org/linux-lab/
+
 Awesome Online IDE: 🌩️ A list of awesome online development environments https://github.com/styfle/awesome-online-ide
 
 一个基于浏览器的编程工具 (Coderlane) https://www.v2ex.com/t/620951
