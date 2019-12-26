@@ -76,11 +76,17 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/
 
 希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/
 
+Hilton Honors My Offers https://www.hilton.com/en/hilton-honors/guest/my-offers/
+
+会员礼遇 https://hiltonhonors3.hilton.com/zh_CN/explore/benefits/index.html
+
 ## 希尔顿攻略
 
 Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇总 https://www.hoteldig.com/hilton-website-useful-link/
 
 希尔顿攻略：希尔顿荣誉客会（Hilton Honors）常旅客计划详细介绍、入门知识及进阶玩法 https://www.hoteldig.com/hilton-honors-detailed-introduction/
+- Hilton希尔顿攻略：Hilton Honors荣誉客会银卡、金卡、钻石卡会员礼遇/待遇，及升级/保级条件等 https://www.hoteldig.com/hilton-honors-silver-gold-diamond-benifit/
+- Hilton希尔顿攻略：希尔顿金卡、钻卡挑战（Fast Track）快速升级活动汇总 https://www.hoteldig.com/hilton-honors-fast-track-offer-summary/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
