@@ -20,11 +20,14 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 ## from HotelDig.com
 
-常旅客攻略：酒店集团积分有效期及避免过期的办法（IHG、希尔顿、万豪、凯悦、雅高） https://www.hoteldig.com/hotel-points-expiration-date/
-
-常旅客攻略：定级积分和奖励积分的区别，及累积积分的各种方法 https://www.hoteldig.com/elite-qualifying-points-and-bonus-points/
-
-常旅客攻略：最优价格、弹性房价、预付价、促销价、会员价等酒店价格的区别和介绍 https://www.hoteldig.com/hotel-price-difference/
+网站导航 https://www.hoteldig.com/sitemap/
+- 二、各大品牌酒店集团最新优惠活动及订房攻略
+  * 7，综合
+    + 常旅客攻略：酒店集团积分有效期及避免过期的办法（IHG、希尔顿、万豪、凯悦、雅高） https://www.hoteldig.com/hotel-points-expiration-date/
+    + 常旅客攻略：定级积分和奖励积分的区别，及累积积分的各种方法 https://www.hoteldig.com/elite-qualifying-points-and-bonus-points/
+    + 常旅客攻略：最优价格、弹性房价、预付价、促销价、会员价等酒店价格的区别和介绍 https://www.hoteldig.com/hotel-price-difference/
+    + 常旅客攻略：加入哪个酒店集团的会员计划好？哪家会员积分性价比最高？ https://www.hoteldig.com/which-hotel-loyalty-program-should-you-join/
+    + 常旅客攻略：如何快速升级希尔顿金卡、钻卡，IHG和万豪金卡、白金卡 https://www.hoteldig.com/how-to-upgrade-hilton-ihg-marriott-gold-platinum-diamond-fast/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -68,6 +71,8 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/
 希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/
 
 ## 希尔顿攻略
+
+Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇总 https://www.hoteldig.com/hilton-website-useful-link/
 
 希尔顿攻略：希尔顿荣誉客会（Hilton Honors）常旅客计划详细介绍、入门知识及进阶玩法 https://www.hoteldig.com/hilton-honors-detailed-introduction/
 
