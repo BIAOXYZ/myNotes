@@ -18,6 +18,14 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 柏悦，凯悦，君悦同属一个集团，打造理念有何不同？ - 知乎 https://www.zhihu.com/question/22716224
 
+## from HotelDig.com
+
+常旅客攻略：酒店集团积分有效期及避免过期的办法（IHG、希尔顿、万豪、凯悦、雅高） https://www.hoteldig.com/hotel-points-expiration-date/
+
+常旅客攻略：定级积分和奖励积分的区别，及累积积分的各种方法 https://www.hoteldig.com/elite-qualifying-points-and-bonus-points/
+
+常旅客攻略：最优价格、弹性房价、预付价、促销价、会员价等酒店价格的区别和介绍 https://www.hoteldig.com/hotel-price-difference/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `洲际` / `IHG` / `InterContinental Hotels & Resorts`
