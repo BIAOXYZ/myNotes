@@ -29,6 +29,8 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
     + 常旅客攻略：加入哪个酒店集团的会员计划好？哪家会员积分性价比最高？ https://www.hoteldig.com/which-hotel-loyalty-program-should-you-join/
     + 常旅客攻略：如何快速升级希尔顿金卡、钻卡，IHG和万豪金卡、白金卡 https://www.hoteldig.com/how-to-upgrade-hilton-ihg-marriott-gold-platinum-diamond-fast/
 
+酒店常旅客可以用自己的账号帮别人订房吗？有待遇吗？可以累积房晚和积分吗？ https://www.hoteldig.com/book-hotel-rooms-for-others/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `洲际` / `IHG` / `InterContinental Hotels & Resorts`
