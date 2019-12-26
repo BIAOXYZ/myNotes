@@ -31,6 +31,10 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 酒店常旅客可以用自己的账号帮别人订房吗？有待遇吗？可以累积房晚和积分吗？ https://www.hoteldig.com/book-hotel-rooms-for-others/
 
+## from 美国信用卡指南
+
+酒店住宿、会员及积分点数等常见问题(FAQ)解答 https://www.uscreditcardguide.com/frequently-asked-question-about-hotel-rewards-and-loyalty-system/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `洲际` / `IHG` / `InterContinental Hotels & Resorts`
