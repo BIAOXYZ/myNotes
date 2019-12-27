@@ -102,6 +102,31 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/
 
 简单总结下就是：2.x里`int/int=int (7/10=0)`，但是3.X里`int/int=float (7/10=0.7)`。若想在3.x达到一样的效果，应该用两个/，即`int//int=int`。这个是有血泪教训的，参见LeetCode 002的代码：[000002_Add_Two_Numbers_algo1.py](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000002_Add_Two_Numbers/000002_Add_Two_Numbers_algo1.py)
 
+# python命令行
+
+## python -m
+
+Python 中 -m 的典型用法、原理解析与发展演变 https://mp.weixin.qq.com/s/ifMOoIH7yf4GbciPSeNDWA
+- > 首先，让我们用“--help”来看看它的解释：
+  ```sh
+  -m  mod run library module as a script (terminates option list)
+  ```
+  > "mod"是“module”的缩写，即“-m”选项后面的内容是 module（模块），其作用是把模块当成脚本来运行。
+  >
+  > “terminates option list”意味着“-m”之后的其它选项不起作用，在这点上它跟“-c”是一样的，都是“终极选项”。官方把它们定义为“接口选项”（Interface options），需要区别于其它的普通选项或通用选项。
+- > -m 选项的五个典型用法
+  ```py
+  在 Python3 中，只需一行命令就能实现一个简单的 HTTP 服务：
+
+  python -m http.server 8000
+
+  # 注:在 Python2 中是这样
+  python -m SimpleHTTPServer 8000
+  ```
+  > 执行后，在本机打开“http://localhost:8000”，或者在局域网内的其它机器上打开“http://本机ip:8000”，就能访问到执行目录下的内容
+- > -m 选项的两种原理解析
+  >
+  > 对于“python -m name”，一句话解释：Python 会检索sys.path ，查找名字为“name”的模块或者包（含命名空间包），并将其内容当成“__main__”模块来执行。 
 
 # 语法
 
