@@ -64,6 +64,9 @@ vSphere, ESXi 和 vCenter 的区别 - 张雷的文章 - 知乎 https://zhuanlan.
 
 ## WSL其他
 
+用 WSL 的人多吗？个人认为 win10 最大特点之一的 WSL 身边竟然没多少人用 https://www.v2ex.com/t/632880
+> bash 中通过 python -m SimpleHTTPServer 命令可以快速创建一个 localhost:8000 静态服务器，用于调试 html，或者共享文件，其他电脑输入局域网 ip:8000 可快速下载文件；
+
 为什么微软 WSL 的默认终端输入体验比其他同类的应用好？ https://www.oschina.net/news/112320/why-typing-inside-wsl-terminal-better-than-every-other-app
 
 windows linux子系统(Windows Subsystem for Linux)的存放目录 https://www.cnblogs.com/lynsyklate/p/7911189.html
