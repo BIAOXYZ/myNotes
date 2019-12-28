@@ -13,11 +13,22 @@ eudiwffe -- 数据结构与算法 https://www.cnblogs.com/eudiwffe/category/9278
 > 所谓稳定排序，表示对于具有相同值的多个元素，其间的先后顺序保持不变。对于基本数据类型而言，一个排序算法是否稳定，影响很小，但是对于结构体数组，稳定排序就十分重要。"
 - 
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# from github
+
 数据结构和算法必知必会的50个代码实现 https://github.com/wangzheng0822/algo
 
 Some exercises and problems in Introduction to Algorithms 3rd edition. https://github.com/CyberZHG/CLRS
 
-:star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# from zhihu
+
+程序员必须掌握哪些算法？ - 知乎 https://www.zhihu.com/question/23148377
+- 程序员必须掌握哪些算法？ - 程序员吴师兄呀的回答 - 知乎 https://www.zhihu.com/question/23148377/answer/907915556
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Algorithm
 
@@ -25,6 +36,8 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 - 数据结构与算法（14）：最短路算法 https://plushunter.github.io/2017/07/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%8814%EF%BC%89%EF%BC%9A%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95/
 
 ***--------------------------------------------------分割线--------------------------------------------------***
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Sort Algorithm
 
@@ -34,8 +47,7 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 ### [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
 
-
-***--------------------------------------------------分割线--------------------------------------------------***
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Hash related algorithms
 
@@ -57,21 +69,21 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 - 布隆过滤器(Bloom Filter)详解 https://www.cnblogs.com/liyulong1982/p/6013002.html
 - 那些优雅的数据结构(1) : BloomFilter——大规模数据处理利器 http://www.cnblogs.com/heaad/archive/2011/01/02/1924195.html
 
-
-## 待分类
+## 待分类algorithms
 
 Golang LRU cache https://github.com/hashicorp/golang-lru
 
-:star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star::star:
-
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Data Structure
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## [Linked list](https://en.wikipedia.org/wiki/Linked_list)
 
 Python数据结构——链表的实现 http://python.jobbole.com/83953/
 
-***--------------------------------------------------分割线--------------------------------------------------***
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## `##` Tree
 ***// 决定按字母顺序排列各种树，因为实在太多了。有些看起来不是按字母顺序排的，是因为它是某种树的子类型。***
