@@ -83,6 +83,12 @@ VSCode使用Remote插件编辑远程服务器文件 https://www.bilibili.com/vid
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+### vscode for C/C++
+
+Visual Studio Code 如何编写运行 C、C++ 程序？ - 知乎 https://www.zhihu.com/question/30315894
+
+万字长文把 VSCode 打造成 C++ 开发利器 - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/96819625
+
 ### vscode for go
 
 vscode golang配置说明 https://www.cnblogs.com/nickchou/p/9038114.html

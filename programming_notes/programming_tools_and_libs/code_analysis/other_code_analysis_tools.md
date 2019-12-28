@@ -10,6 +10,8 @@ List of tools for static code analysis https://en.wikipedia.org/wiki/List_of_too
 
 Free and open-source cross-platform source explorer. Get productive on unfamiliar source code. https://www.sourcetrail.com/
 
+开源免费的源码阅读神器 Sourcetrail - Jaqen的文章 - 知乎 https://zhuanlan.zhihu.com/p/96685579
+
 # understand
 
 Understand (software) https://en.wikipedia.org/wiki/Understand_%28software%29
