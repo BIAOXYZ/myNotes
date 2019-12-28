@@ -21,6 +21,8 @@ MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
 
 MYSQL INNODB 三大特性之双写 https://blog.csdn.net/bohu83/article/details/81252045
 
+InnoDB的功能缺陷及其他 - 赵伟的文章 - 知乎 https://zhuanlan.zhihu.com/p/99007766
+
 # mysql索引
 
 MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded

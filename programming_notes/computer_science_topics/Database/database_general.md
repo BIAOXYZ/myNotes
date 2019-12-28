@@ -135,6 +135,10 @@ Bitmap index https://en.wikipedia.org/wiki/Bitmap_index
 
 SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
 
+在线就能用的 SQL 练习平台我给你找好了！ - Rocky0429的文章 - 知乎 https://zhuanlan.zhihu.com/p/92590262
+- SQLZOO -- Learn SQL using: SQL Server, Oracle, MySQL, DB2, and PostgreSQL. https://sqlzoo.net/
+- SQLBolt -- Learn SQL with simple, interactive exercises. https://sqlbolt.com/
+
 # 待分类
 
 【[:star:][`*`]】 分库分表 or NewSQL数据库？终于看懂应该怎么选！ https://dbaplus.cn/news-159-2690-1.html || https://mp.weixin.qq.com/s/ymVxSe8nueuG7knKwcIAMw
