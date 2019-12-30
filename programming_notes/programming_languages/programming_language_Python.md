@@ -77,6 +77,9 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 
 机器学习相关教程 https://morvanzhou.github.io/tutorials/ || https://github.com/MorvanZhou/tutorials 【其实这个人的教程的核心还是python，毕竟名字就叫“莫烦PYTHON”】
 
+《Python Cookbook》 3rd Edition Translation https://github.com/yidao620c/python3-cookbook
+> 在线阅读地址：http://python3-cookbook.readthedocs.org/zh_CN/latest
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## DEBUG
