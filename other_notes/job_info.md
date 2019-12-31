@@ -319,6 +319,10 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 
 新版个税法修正案将按月征收改为按年，对年终奖有什么影响？ - 知乎 https://www.zhihu.com/question/283265521
 
+# Sign-on bonus, Stock Option, RSU (Restricted Stock Unit)
+
+受限股票单位（RSU）与股票期权（Stock Option）的区别有哪些？ - 知乎 https://www.zhihu.com/question/19853693
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 工作相关八卦
