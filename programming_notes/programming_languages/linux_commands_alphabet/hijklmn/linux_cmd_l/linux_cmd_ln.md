@@ -11,6 +11,8 @@
 
 Linux ln 命令 https://www.cnblogs.com/sparkdev/p/11275722.html
 
+每天一个linux命令（35）：ln 命令 https://www.cnblogs.com/peida/archive/2012/12/11/2812294.html
+
 # 个人实战
 
 ### ln

@@ -71,13 +71,20 @@ docker ps -a --no-trunc  //主要是--no-trunc参数，可以显示完整的comm
 ## docker save/load
 ```sh
 # https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository
-
 docker save -o <path for generated tar file> <image name>
 docker load -i <path to image tar file>
 
+# https://www.cnblogs.com/bigben0123/p/7592970.html
+docker save -o 要保存的文件名 要保存的镜像
+  例：docker save -o java8.tar lwieske/java-8
+
+docker load --input 文件
+docker load < 文件名
+  例：docker load < java8.tar
+
 ----------------------------------------------------------------------------------------------------
 
-# 1.在导出路径的最后镜像名字必须有；2.不是必须打成tar包，没后缀也不影响。
+# 1.在导出路径的最后镜像名字必须有；2.不是必须打成tar包，没后缀也不影响，比如下面的busyboximage。
 $ docker save busybox:1 -o ~/test/busyboximage
 $ ls ~/test/
 busyboximage
