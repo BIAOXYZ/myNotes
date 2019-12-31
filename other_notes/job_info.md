@@ -341,31 +341,15 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 硅谷顶尖软件公司的工程师一年挣多少钱？来听听内部人士怎么说 - hai-kun的文章 - 知乎 https://zhuanlan.zhihu.com/p/34344555
 - 一亩三分地»论坛›求职+工作›晒工资抖包袱 https://www.1point3acres.com/bbs/forum-237-1.html
 
-## 特定公司八卦
+你为什么选择离开BAT(百度，阿里，腾讯)一类的巨头互联网公司？ - 杨林的回答 - 知乎 https://www.zhihu.com/question/64177506/answer/220262260
 
-阿里巴巴公司根据截图查到泄露信息的具体员工的技术是什么？ - AmeliaAn的回答 - 知乎
-https://www.zhihu.com/question/50735753/answer/338013283
+## 外企相关新闻
 
-你为什么选择离开BAT(百度，阿里，腾讯)一类的巨头互联网公司？ - 杨林的回答 - 知乎
-https://www.zhihu.com/question/64177506/answer/220262260
+在 SAP 工作是什么样的体验？ - 知乎 https://www.zhihu.com/question/24717198/answer/86431800
 
-如何看待疑似京东离职竞业限制条款被曝光？ - 知乎
-https://www.zhihu.com/question/268631439
+SAP上海labs工作体验？ - 知乎 https://www.zhihu.com/question/36495615
 
-当下（2018 年）腾讯的技术建设是否处于落后同体量公司的状态？ - 知乎
-https://www.zhihu.com/question/278473776
-
-百度的 GCC 被三体人锁定在 3.4.5 版本是什么典故？ - 知乎 https://www.zhihu.com/question/21042367
-
-
-在 SAP 工作是什么样的体验？ - 知乎
-https://www.zhihu.com/question/24717198/answer/86431800
-
-SAP上海labs工作体验？ - 知乎
-https://www.zhihu.com/question/36495615
-
-在IBM工作是怎样一番体验？ - 知乎
-https://www.zhihu.com/question/24759809/answer/127323061
+在IBM工作是怎样一番体验？ - 知乎 https://www.zhihu.com/question/24759809/answer/127323061
 ```
 现员工，已加入一年，准备离职。 现在的IBM已经不是以前的IBM了，不要来。
 特别是新人，学习晋升空间都非常有限，而且晋升都是会拍马屁的，认真做事的人只有一个下场，就是功劳被抢但是锅都算你的。
@@ -375,8 +359,21 @@ https://www.zhihu.com/question/24759809/answer/127323061
 System/360 大型机差点毁了 IBM ！ https://mp.weixin.qq.com/s/K5cqbg5_TkvM4we0vwwFUg
 - > 在IBM，似乎没有人对新系统的进展感到满意。在许多情况下，工程、制造、销售和其他部门的员工每周工作100个小时。工程师们将帆布床搬到了办公室。Watson顺道查看编程方面的进展时，一名工程师吼他出去以便专心工作。堂堂的IBM主席赶忙退了出去。
 
-在英特尔 (Intel) 工作是怎样的一番体验？ - 知乎
-https://www.zhihu.com/question/24694855
+在英特尔 (Intel) 工作是怎样的一番体验？ - 知乎 https://www.zhihu.com/question/24694855
+
+## 百度相关新闻
+
+百度的 GCC 被三体人锁定在 3.4.5 版本是什么典故？ - 知乎 https://www.zhihu.com/question/21042367
+
+## 阿里相关新闻
+
+阿里巴巴公司根据截图查到泄露信息的具体员工的技术是什么？ - AmeliaAn的回答 - 知乎 https://www.zhihu.com/question/50735753/answer/338013283
+
+## 腾讯相关新闻
+
+当下（2018 年）腾讯的技术建设是否处于落后同体量公司的状态？ - 知乎 https://www.zhihu.com/question/278473776
+
+## 华为相关新闻
 
 华为18+，偶然有闲，谁有兴趣，我可以回答不敏感的问题 http://www.txrjy.com/thread-900834-1-1.html
 
@@ -394,8 +391,6 @@ https://www.zhihu.com/question/24694855
 事实上，据发布该视频的博主修改微博后表示，这个视频并非华为官方出品，而是网友自发制作。据了解，该歌曲由解放军总政歌舞团
 著名词作家李幼容、全国公安文联签约词作家臧思佳以及享受国务院津贴的曲作家郑冷横共同创作，由周丹声乐工作室的小朋友担任首唱。
 ```
-
-华为发布了 GaussDB， V 站的朋友们怎么看 https://www.v2ex.com/t/564464
 
 150分钟采访完整实录，解密美国禁令下的任正非 https://www.ithome.com/0/424/521.htm
 - > 29、记者：您现在的状况是偶发的个案，还是说在未来中国企业是一个经常发生的常态？ 
@@ -420,6 +415,10 @@ https://www.zhihu.com/question/24694855
 孟晚舟写在一年之际：不畏未知 https://www.ithome.com/0/460/350.htm
 - 如何评价 12 月 2 日华为心声社区发布的孟晚舟最新公开信「你们的温暖，是照亮我前行的灯塔」？ - 知乎 https://www.zhihu.com/question/358863641
 
+## 京东相关新闻
+
+如何看待疑似京东离职竞业限制条款被曝光？ - 知乎 https://www.zhihu.com/question/268631439
+
 京东回应“要求员工梳理亲属关系”：是日常管理举措 https://www.ithome.com/0/415/132.htm
 
 京东应劫："贬功臣、抑兄弟"能否化险为夷 https://www.ithome.com/0/423/374.htm
@@ -429,16 +428,16 @@ https://www.zhihu.com/question/24694855
 - 京东发布内部邮件要求坚决淘汰三类人 https://www.williamlong.info/archives/5668.html
 - 刘强东：混日子的人不是我的兄弟 https://www.williamlong.info/archives/5673.html
 
-IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithome.com/html/it/267407.htm
-> 关于IT之家的说明 https://yq.aliyun.com/articles/62398
-- 如何看待 ithome从阿里云转至百度云？ - 知乎 https://www.zhihu.com/question/51999442
-- 阿里云对 IT 之家事件的回应 https://www.v2ex.com/t/315904
-
-### 小公司八卦
+## 小公司相关新闻
 
 如何看待“有赞”年会公开宣布996工作制？ - 知乎 https://www.zhihu.com/question/309428750
 
 每日优鲜App炒作996，网友愤怒发动App Store 1分差评轰炸 https://www.ithome.com/0/420/132.htm
+
+IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithome.com/html/it/267407.htm
+> 关于IT之家的说明 https://yq.aliyun.com/articles/62398
+- 如何看待 ithome从阿里云转至百度云？ - 知乎 https://www.zhihu.com/question/51999442
+- 阿里云对 IT 之家事件的回应 https://www.v2ex.com/t/315904
 
 # job others
 

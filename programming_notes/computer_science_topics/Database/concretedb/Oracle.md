@@ -34,6 +34,9 @@ C:\Users\l00384038>sqlplus /nolog
 SQL> conn /as sysdba
 ```
 
+ORACLE用SYS登录报ORA-28009：connection as SYS should be as SYSDBA OR SYSOPER解决方法 https://www.cnblogs.com/zangdalei/p/5483691.html 【起因是重新安装了一下后用下面链接里的办法登录数据库，发现用sys登录不行】
+> WINDOWS下使用DOS命令行连接oracle数据库 https://www.jb51.net/article/136785.htm
+
 ## Oralce FLASHBACK(闪回)
 
 Oracle 闪回特性(FLASHBACK DATABASE) - CSDN博客

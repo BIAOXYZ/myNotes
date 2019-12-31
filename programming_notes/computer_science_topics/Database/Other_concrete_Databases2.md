@@ -61,6 +61,8 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 华为自研的数据库gaussdb怎么样？ - 知乎 https://www.zhihu.com/question/263716125
 
+华为发布了 GaussDB， V 站的朋友们怎么看 https://www.v2ex.com/t/564464
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TaurusDB && GeminiDB
