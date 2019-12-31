@@ -17,7 +17,7 @@ LeetCode题解{from Apachecn} https://github.com/apachecn/awesome-leetcode
     - PAT(Programming Ability Test)练兵场 https://www.nowcoder.com/pat
 
 The Algorithms https://github.com/TheAlgorithms/
-- https://github.com/TheAlgorithms/Python
+- https://github.com/TheAlgorithms/Python || 热榜第一！GitHub 标星 5.6w，如何用 Python 实现所有算法？ https://mp.weixin.qq.com/s/7ZUrfvfb3u3e6wxFQBt7uQ
 - https://github.com/TheAlgorithms/C
 - https://github.com/TheAlgorithms/C-Plus-Plus
 
