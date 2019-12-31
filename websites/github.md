@@ -24,6 +24,8 @@ A curated list of awesome actions to use on GitHub https://github.com/sdras/awes
 
 Extend GitHub https://github.com/marketplace
 
+【查询授权的应用列表，看到不熟悉且长时间不用的可以考虑删】 Applications https://github.com/settings/applications
+
 ----------------------------------------------------------------------------------------------------
 
 你不知道的Github使用技巧 https://www.jianshu.com/p/1840d00c2b77
