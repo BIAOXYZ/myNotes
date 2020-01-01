@@ -16,6 +16,8 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 # Luxury Hotels general
 
+【[`*`][:star:]】【该回答里靠前的几个图可以方便随时快速查看某个酒店属于哪家酒店集团】 哪家酒店集团的会员积分最有性价比？ - 王豆芽的回答 - 知乎 https://www.zhihu.com/question/49786264/answer/117738602
+
 柏悦，凯悦，君悦同属一个集团，打造理念有何不同？ - 知乎 https://www.zhihu.com/question/22716224
 
 ## from HotelDig.com
@@ -26,7 +28,7 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
     + 常旅客攻略：酒店集团积分有效期及避免过期的办法（IHG、希尔顿、万豪、凯悦、雅高） https://www.hoteldig.com/hotel-points-expiration-date/
     + 常旅客攻略：定级积分和奖励积分的区别，及累积积分的各种方法 https://www.hoteldig.com/elite-qualifying-points-and-bonus-points/
     + 常旅客攻略：最优价格、弹性房价、预付价、促销价、会员价等酒店价格的区别和介绍 https://www.hoteldig.com/hotel-price-difference/
-    + 常旅客攻略：加入哪个酒店集团的会员计划好？哪家会员积分性价比最高？ https://www.hoteldig.com/which-hotel-loyalty-program-should-you-join/
+    + 常旅客攻略：加入哪个酒店集团的会员计划好？哪家会员积分性价比最高？ https://www.hoteldig.com/which-hotel-loyalty-program-should-you-join/ 【notes：里面有部分各个酒店品牌包含哪些酒店的内容】
     + 常旅客攻略：如何快速升级希尔顿金卡、钻卡，IHG和万豪金卡、白金卡 https://www.hoteldig.com/how-to-upgrade-hilton-ihg-marriott-gold-platinum-diamond-fast/
 
 酒店常旅客可以用自己的账号帮别人订房吗？有待遇吗？可以累积房晚和积分吗？ https://www.hoteldig.com/book-hotel-rooms-for-others/
