@@ -183,6 +183,11 @@ $ man hier | grep -E 'bin$|sbin$|^.{7}(/bin)|^.{7}(/sbin)' -A2
  
 /usr/bin vs /usr/local/bin on Linux https://unix.stackexchange.com/questions/8656/usr-bin-vs-usr-local-bin-on-linux
 
+## 判断当前主机是物理机还是虚拟机
+
+如何判断当前主机是物理机还是虚拟机？ https://blog.csdn.net/yangzhenping/article/details/49996765
+> Easy way to determine virtualization technology https://unix.stackexchange.com/questions/89714/easy-way-to-determine-virtualization-technology
+
 ## Linux输密码时显示星号
 
 如何在Linux中输入Sudo密码时显示星号 https://www.howtoing.com/show-asterisks-sudo-password-in-linux
