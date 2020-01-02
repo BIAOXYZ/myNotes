@@ -60,6 +60,12 @@ cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 ## python
 
+字典.keys()获得的键列表元素顺序是随机的吗？ https://www.v2ex.com/t/634283
+- > 随机的，需要顺序，用 ordered dict
+- > dart 有一个叫 LinkedHashMap,那是有顺序的
+- > Python 3.7+ https://docs.python.org/3.7/whatsnew/3.7.html <br> In Python 3.7.0 the insertion-order preservation nature of dict objects has been declared to be an official part of the Python language spec. Therefore, you can depend on it.
+- > 虽然有 order dict，但内部是有序的。如同上面老哥所述，在 3.x （ x 是几我给忘了）后的版本是有序的
+
 Python 为什么趋近于零的数字会表示成 5.96046448e-08 https://www.v2ex.com/t/629937
 - > 15. 浮点算术：争议和限制 https://docs.python.org/zh-cn/3.8/tutorial/floatingpoint.html
 
