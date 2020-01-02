@@ -15,6 +15,8 @@ Hypervisor https://en.wikipedia.org/wiki/Hypervisor
 
 Virtualization Wars: VMware vs. Hyper-V vs. XenServer vs. KVM https://www.pcworld.com/article/243216/virtualization_wars_vmware_vs_hyperv_vs_xenserver_vs_kvm.html
 
+Linux 桌面玩家指南：07. Linux 中的 Qemu、KVM、VirtualBox、Xen 虚拟机体验 https://www.cnblogs.com/youxia/p/LinuxDesktop007.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # QEMU
@@ -22,14 +24,6 @@ Virtualization Wars: VMware vs. Hyper-V vs. XenServer vs. KVM https://www.pcworl
 QEMU https://zh.wikipedia.org/wiki/QEMU
 
 QEMU (简体中文) https://wiki.archlinux.org/index.php/QEMU_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
-# KVM
-
-Kernel-based Virtual Machine https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine
-
-AWS just announced a move from Xen towards KVM. So what is KVM? https://medium.com/@dbclin/aws-just-announced-a-move-from-xen-towards-kvm-so-what-is-kvm-2091f123991
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
