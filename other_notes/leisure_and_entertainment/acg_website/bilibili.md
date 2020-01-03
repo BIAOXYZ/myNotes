@@ -5,6 +5,8 @@
 
 ## 2019
 
+这是你的2019年度报告，请查收！ https://www.bilibili.com/blackboard/timemachine2019.html
+
 B站跨年晚会火了！导演回应：没想到，很意外 https://www.ithome.com/0/466/694.htm
 ```
 kkk8292020/1/3 23:46:39
