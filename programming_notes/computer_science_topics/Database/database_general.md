@@ -139,6 +139,10 @@ SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
 - SQLZOO -- Learn SQL using: SQL Server, Oracle, MySQL, DB2, and PostgreSQL. https://sqlzoo.net/
 - SQLBolt -- Learn SQL with simple, interactive exercises. https://sqlbolt.com/
 
+# 故障恢复
+
+容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
+
 # 待分类
 
 【[:star:][`*`]】 分库分表 or NewSQL数据库？终于看懂应该怎么选！ https://dbaplus.cn/news-159-2690-1.html || https://mp.weixin.qq.com/s/ymVxSe8nueuG7knKwcIAMw

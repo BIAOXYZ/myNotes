@@ -234,6 +234,10 @@ https://stackoverflow.com/questions/25071360/row-number-0-is-out-of-range-0-1-re
 
 http://grokbase.com/t/postgresql/pgsql-bugs/056wfat3ar/bug-1735-row-number-1-is-out-of-range-0-1-error
 
+## PG故障恢复
+
+25.3. Continuous Archiving and Point-in-Time Recovery (PITR) https://www.postgresql.org/docs/9.6/continuous-archiving.html
+
 ## PG其他
 
 https://www.ibm.com/developerworks/cn/opensource/os-postgresecurity/
