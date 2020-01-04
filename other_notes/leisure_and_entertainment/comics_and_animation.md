@@ -345,6 +345,12 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 ## 凉风找番系列
 
+性别通杀！男生女生都爱看的片子大盘点！ https://www.bilibili.com/video/av81899675
+- 《灵能百分百》：早就知道了，标记一次。
+
+男女接吻真的会喘不过气吗？【阅片无数29】 https://www.bilibili.com/video/av81630341
+- 《欢迎来到实力至上主义的教室》
+
 沙雕之极！愿意和你换这些情头的绝壁是真爱！ https://www.bilibili.com/video/av80898118
 
 是什么片让图书馆大爷看的泪流满面【阅片无数28】 https://www.bilibili.com/video/av80524762
