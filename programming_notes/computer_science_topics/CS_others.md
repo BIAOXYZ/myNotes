@@ -3,6 +3,8 @@
 
 ## os project
 
+How to Make a Computer Operating System in C++ https://samypesse.gitbook.io/how-to-create-an-operating-system/ || https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System
+
 《30天自制操作系统》源码中文版。自己制作一个操作系统（OSASK）的过程 https://github.com/yourtion/30dayMakeOS
 
 ## complier project
