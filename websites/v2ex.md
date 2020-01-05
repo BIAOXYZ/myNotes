@@ -78,6 +78,10 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 
 ## go
 
+Go 101 v1.13.m (v.1.14-pre) 电子书发布 https://www.v2ex.com/t/635029
+> Go语言101 : 一本侧重于Go语言语法和语义的编程解释和指导书 https://github.com/golang101/golang101
+>> Go语言101 https://gfw.go101.org/article/101.html
+
 GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## java
@@ -85,6 +89,11 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 方式 1 和方式 2 的却别到底在哪里？ https://www.v2ex.com/t/620135
 
 ## database
+
+为什么手动编译后的 MongoDB 比官方提供的（包管理器下载）二进制版文件大这么多？ https://www.v2ex.com/t/635085
+- > 可能是没 strip 吧，关键词 linux strip
+- > 这么大也不像是 debug 版的大小啊，静态链接了？
+- > linux 下用 readelf，其次就是看编译的时候有没有指定参数比如"-g"这种。
 
 多源数据融合，建数仓，数据统计分析一般有哪些架构和技术？区别是什么？ https://www.v2ex.com/t/625567
 
