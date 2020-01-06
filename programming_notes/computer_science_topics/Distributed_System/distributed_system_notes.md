@@ -7,6 +7,10 @@ awesome-distributed-systems -- A curated list to learn about distributed systems
 
 Scalable, Available, Stable, Performant, and Intelligent System Design Patterns https://github.com/binhnguyennus/awesome-scalability
 
+【general content from wikipedia】
+- Consensus algorithm https://en.wikipedia.org/wiki/Consensus_algorithm
+- Consensus (computer science) https://en.wikipedia.org/wiki/Consensus_(computer_science)
+
 Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 分布式系统(Distributed System)资料 https://yq.aliyun.com/articles/8069
