@@ -226,6 +226,10 @@ Many other licenses are also OSI-approved, but fall into other categories, such 
 
 OSI 认证的开源 License 有哪些？ https://www.ithome.com/0/457/810.htm
 
+开源促进会OSI联合创始人辞职：在许可方面走错了路 https://www.ithome.com/0/466/931.htm
+- > 去年，律师Van Lindberg 代表分布式开发平台HoloChain起草了一个名为“密码自治许可证（Cryptographic Autonomy License，CAL）” 的软件许可证，并将其提交给开源促进会OSI审批。
+- > 但是CAL会打破这种模式，“如果你在CAL下运行软件并且你拥有用户，则需要在某些情况下将用户的数据传回给他们（HoloChain）。”
+
 微服务部署：蓝绿部署、滚动部署、灰度发布、金丝雀发布 https://www.jianshu.com/p/022685baba7d
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
