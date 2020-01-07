@@ -31,3 +31,7 @@ Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习�
 - ~~Chrome插件 https://github.com/jaywcjlove/oscnews~~
 - 开源中国Web版 https://jaywcjlove.gitee.io/linux-command/
 - 短地址：https://git.io/linux
+
+## one article with several commands
+
+20个堪称神器的命令行软件 https://mp.weixin.qq.com/s/UcKa618IzvpunlhVEeAT1w
