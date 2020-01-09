@@ -10,3 +10,7 @@ Indexing and selecting data https://pandas.pydata.org/pandas-docs/stable/user_gu
 # pandas源码
 
 Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code-notes
+
+# pandas语法
+
+How are iloc, ix and loc different? https://stackoverflow.com/questions/31593201/how-are-iloc-ix-and-loc-different
