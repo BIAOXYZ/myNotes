@@ -255,14 +255,7 @@ http://www.ansible.com.cn/
 
 python getopt http://www.cnblogs.com/lovemo1314/archive/2012/10/16/2725589.html
 
-### requests
-
-Python HTTP Requests for Humans™ ✨🍰✨ https://github.com/kennethreitz/requests
-> Requests: HTTP for Humans™¶ http://python-requests.org
-
-Requests: 让 HTTP 服务人类 http://docs.python-requests.org/zh_CN/latest/
-
-请教一个问题， requests 包请求 csdn 首页推荐文章一个接口，为什么相同代码在 windows 和 Linux 下不同结果？ https://www.v2ex.com/t/626740
+### ~~requests~~ //已单独拆分
 
 ### 2to3
 
@@ -347,22 +340,11 @@ PyTorch Tutorial for Deep Learning Researchers https://github.com/yunjey/pytorch
 《Natural Language Processing with PyTorch》中文翻译 https://github.com/apachecn/NLP-with-PyTorch
 > Natural Language Processing with PyTorch 中文版 https://nlp-pt.apachecn.org/
 
-### numpy
-
-//已单独拆分
-
-### [Pandas](https://github.com/pandas-dev/pandas) (https://pandas.pydata.org/)
-
-//已单独拆分
-
-### matplotlib
-
-matplotlib中文文档 (http://www.matplotlib.org.cn/) https://github.com/teadocs/matplotlib-cn
-
-python matplotlib从文件中读取数据绘制散点图 https://blog.csdn.net/vinsuan1993/article/details/78511782
+### ~~numpy~~ //已单独拆分
+### ~~[Pandas](https://github.com/pandas-dev/pandas)~~ //已单独拆分
+### ~~matplotlib~~ //已单独拆分
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
 
 # Go Libs
 
