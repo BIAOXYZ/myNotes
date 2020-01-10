@@ -65,6 +65,4 @@ pandas的to_csv()使用方法 https://segmentfault.com/a/1190000015326653
   # 注：index=0 也可以换成 index=None
   ```
 
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
 Pandas 基础 (4) - 读 / 写 Excel 和 CSV 文件 https://learnku.com/articles/25093
