@@ -5,13 +5,23 @@ Pandas https://github.com/pandas-dev/pandas || https://pandas.pydata.org/
 
 ## 官方文档
 
-Indexing and selecting data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
+User Guide https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html
+- Indexing and selecting data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
+- Merge, join, and concatenate https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
 
 # pandas源码
 
 Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code-notes
 
+# pandas系列教程
+
 # pandas语法
+
+## Dataframe
+
+Pandas Tutorial: DataFrames in Python https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
+
+## Series
 
 ## 下标和索引
 
@@ -38,3 +48,5 @@ pandas的to_csv()使用方法 https://segmentfault.com/a/1190000015326653
   
   # 注：index=0 也可以换成 index=None
   ```
+
+Pandas 基础 (4) - 读 / 写 Excel 和 CSV 文件 https://learnku.com/articles/25093
