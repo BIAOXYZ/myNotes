@@ -30,6 +30,8 @@ it-ebooks https://github.com/it-ebooks || 📚 计算机开放电子书归档 ht
 - 评论区：
   * https://bookist.cc
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # books general
 
 - `BOOKSTORE1` https://github.com/BIAOXYZ/BOOKSTORE1
@@ -53,7 +55,6 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 - Python 资源大全中文版 https://github.com/jobbole/awesome-python-cn
 - 机器学习资源大全中文版 https://github.com/jobbole/awesome-machine-learning-cn
 
-
 [转]程序员资料整理 https://yq.aliyun.com/articles/239530
 - free-programming-books https://github.com/EbookFoundation/free-programming-books
 - 免费的编程中文书籍索引 https://github.com/justjavac/free-programming-books-zh_CN
@@ -66,15 +67,34 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 - Boost 库中文教程 http://zh.highscore.de/cpp/boost/
 - leetcode/lintcode题解/算法学习笔记 https://legacy.gitbook.com/book/yuanbin/algorithm/details
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## books and learning methods
 
-你是如何学习 Linux 编程的？ - Kerr Wang的回答 - 知乎
-https://www.zhihu.com/question/20730157/answer/82034823
+你是如何学习 Linux 编程的？ - Kerr Wang的回答 - 知乎 https://www.zhihu.com/question/20730157/answer/82034823
 
 - 如何通过自学找到一份开发的工作？ - origin的回答 - 知乎 https://www.zhihu.com/question/26421707/answer/53879709
 - 如何通过自学找到一份开发的工作？ - Chenper的回答 - 知乎 https://www.zhihu.com/question/26421707/answer/123823017
   - VisuAlgo：通过动画学习算法和数据结构 http://hao.jobbole.com/visualgo/
   - https://visualgo.net/zh
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## books from zhihu
+
+2019 年你读了哪些觉得比较好的计算机书籍？ - 知乎 https://www.zhihu.com/question/361165485
+- 2019 年你读了哪些觉得比较好的计算机书籍？ - yangsoon的回答 - 知乎 https://www.zhihu.com/question/361165485/answer/960129388
+  * > 这本书在我面试的时候也发挥了作用，你可以直接和面试官聊python的实现。但这本书对应的python版本较低，python3的源码实现和2还是有很多不同的，建议参考着下面 python3的源码实现一起看。
+    >> Cpython Internals -- Dive into CPython internals, trying to illustrate every detail of CPython implementation | CPython 源码阅读笔记, 多图展示底层实现细节 https://github.com/zpoint/CPython-Internals
+  * > 实习了一阵子之后，发现自己好像不知道以后要做什么方向的工作了，偶尔间发现了pingcap的talent-plan瞬间被这家公司圈粉，开始做他们的线上教程，其中week2的作业需要阅读 数据库系统概念 可是这本书贼jb厚，而且每页的内容也很多，给人一种阅读恐惧感，后来发现了 数据库系统实现这本书，页数不多，而且内容精简。
+    >> PingCAP Talent Plan https://university.pingcap.com/talent-plan/
+  * > 6.824: Distributed Systems https://pdos.csail.mit.edu/6.824/index.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## books from github
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## books from ApacheCN
 
@@ -82,6 +102,8 @@ https://www.zhihu.com/question/20730157/answer/82034823
 > 利用 Python 进行数据分析 · 第 2 版 https://legacy.gitbook.com/book/wizardforcel/pyda-2e/details
 
 《python数据分析与挖掘实战》的代码笔记 https://github.com/apachecn/python_data_analysis_and_mining_action
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # books by languages
 
@@ -104,48 +126,41 @@ https://www.zhihu.com/question/20730157/answer/82034823
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# concrete books
+
 ### CSAPP
 
 - 《深入理解计算机系统》读书笔记 & 要点总结<上> https://yq.aliyun.com/articles/15234
 - 《深入理解计算机系统》读书笔记 & 要点总结<中> https://yq.aliyun.com/articles/15232
 - 《深入理解计算机系统》读书笔记 & 要点总结<下> https://yq.aliyun.com/articles/15230
 
+《深入理解计算机系统》这本书需要什么水平能看懂？ - 知乎 https://www.zhihu.com/question/20354069
 
-《深入理解计算机系统》这本书需要什么水平能看懂？ - 知乎
-https://www.zhihu.com/question/20354069
-
-如何阅读《深入理解计算机系统》这本书？ - 知乎
-https://www.zhihu.com/question/20402534
-
+如何阅读《深入理解计算机系统》这本书？ - 知乎 https://www.zhihu.com/question/20402534
 
 ***--------------------------------------------------分割线--------------------------------------------------***
  
 ###  APUE (Advanced Programming in the UNIX Environment)
 
-《UNIX环境高级编程》这本书怎么看？怎么学习？ - 齐庆的回答 - 知乎
-https://www.zhihu.com/question/19939011/answer/82075566
+《UNIX环境高级编程》这本书怎么看？怎么学习？ - 齐庆的回答 - 知乎 https://www.zhihu.com/question/19939011/answer/82075566
 - https://github.com/VVictorQi/APUE
 
-UNIX环境高级编程(第3版)(英文版)
-http://bestcbooks.com/B00KMR129E/
+UNIX环境高级编程(第3版)(英文版) http://bestcbooks.com/B00KMR129E/
 
-《apue》 首次拜读完经典之作，两三记录 - CSDN博客
-https://blog.csdn.net/jiange_zh/article/details/50370216
+《apue》 首次拜读完经典之作，两三记录 - CSDN博客 https://blog.csdn.net/jiange_zh/article/details/50370216
 > 正好偶然发现一本《Unix/Linux编程实践教程》（Bruce Molay 著， 杨宗源 黄海涛 译），该书作者用生活化的例子，来跟我们的编程做一些形象化的比较，在类比中学习，实践，而且该书的总体知识框架与《apue》类似，所以两书结合起来学习效果特别好～
 
-[单刷APUE系列]第一章——Unix基础知识[1]
-https://segmentfault.com/a/1190000004359057
+[单刷APUE系列]第一章——Unix基础知识[1] https://segmentfault.com/a/1190000004359057
 
-(一) 一起学 Unix 环境高级编程 (APUE) 之 标准IO
-https://www.cnblogs.com/0xcafebabe/p/4423699.html
+(一) 一起学 Unix 环境高级编程 (APUE) 之 标准IO https://www.cnblogs.com/0xcafebabe/p/4423699.html
 
-linux学习路线（转） - CSDN博客
-https://blog.csdn.net/plo154100/article/details/5889822
+linux学习路线（转） - CSDN博客 https://blog.csdn.net/plo154100/article/details/5889822
 
 #### APUE online
 
-Advanced Programming in the UNIX Environment (Third Edition)
-http://www.codeman.net/wp-content/uploads/2014/04/APUE-3rd.pdf
+Advanced Programming in the UNIX Environment (Third Edition) http://www.codeman.net/wp-content/uploads/2014/04/APUE-3rd.pdf
 
 http://vdisk.weibo.com/s/AcSJGKVz_XjEh
 
@@ -194,9 +209,13 @@ http://vdisk.weibo.com/s/up8PEhSmnrug2
 组合数学
 http://www.downcc.com/soft/301505.html
 
-### other books
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# other books
 
 Bartosz Milewski's 'Category Theory for Programmers' unofficial PDF and LaTeX source https://github.com/hmemcpy/milewski-ctfp-pdf
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # docs
 
