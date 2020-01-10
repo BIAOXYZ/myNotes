@@ -89,6 +89,9 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
   * > 实习了一阵子之后，发现自己好像不知道以后要做什么方向的工作了，偶尔间发现了pingcap的talent-plan瞬间被这家公司圈粉，开始做他们的线上教程，其中week2的作业需要阅读 数据库系统概念 可是这本书贼jb厚，而且每页的内容也很多，给人一种阅读恐惧感，后来发现了 数据库系统实现这本书，页数不多，而且内容精简。
     >> PingCAP Talent Plan https://university.pingcap.com/talent-plan/
   * > 6.824: Distributed Systems https://pdos.csail.mit.edu/6.824/index.html
+- 2019 年你读了哪些觉得比较好的计算机书籍？ - 111qqz的回答 - 知乎 https://www.zhihu.com/question/361165485/answer/949044373
+  * > 年初的时候看完了Operating Systems: Three Easy Pieces 总共花了120个小时.大概是看过的最好的OS书籍.有些地方可能不够深入,但是一般来说足够用了.
+    >> Operating Systems: Three Easy Pieces http://pages.cs.wisc.edu/~remzi/OSTEP/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 

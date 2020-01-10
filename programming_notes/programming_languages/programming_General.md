@@ -152,6 +152,8 @@ GNU make https://www.gnu.org/software/make/manual/html_node/index.html
 
 make makefile cmake qmake都是什么，有什么区别？ - 知乎 https://www.zhihu.com/question/27455963
 
+换个角度说makefile - 守望的文章 - 知乎 https://zhuanlan.zhihu.com/p/100964932
+
 【原来如此】为什么很多应用都安装在/usr/local目录下? - CSDN博客 https://blog.csdn.net/maray/article/details/9737549
   > https://www.gnu.org/software/automake/manual/html_node/Standard-Directory-Variables.html#Standard-Directory-Variables
 
