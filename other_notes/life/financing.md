@@ -57,6 +57,11 @@
 
 ## 指数基金general
 
+有哪些适合长期定投的基金? - 知乎 https://www.zhihu.com/question/30900479
+
+选好指数了，如何挑选基金？ - 三只仓鼠的文章 - 知乎 https://zhuanlan.zhihu.com/p/28429648
+- > 做定投的话，优选的是，A类、C类、分级（母基金，分级后面没有字母）、ETF联接。不选，分级A、分级B、ETF。各种增强，待定，根据下面说的方法进行选择，合适的也可以作为定投标的。
+
 基金定投一定赚钱吗？ - 知乎 https://www.zhihu.com/question/35163926
 - 基金定投一定赚钱吗？ - 李大人的回答 - 知乎 https://www.zhihu.com/question/35163926/answer/626026667
 - 基金定投一定赚钱吗？ - 子逸的回答 - 知乎 https://www.zhihu.com/question/35163926/answer/763368071
@@ -66,11 +71,18 @@
 
 网上都说指数基金长期必赚，为什么我看见的都是亏 有人教怎么看嘛? - 知乎 https://www.zhihu.com/question/341568793
 
+传统指数基金、ETF 联接和指数增强基金，哪个更适合 10 年左右定投？ - 知乎 https://www.zhihu.com/question/53387406
+- 传统指数基金、ETF 联接和指数增强基金，哪个更适合 10 年左右定投？ - 豆芽的回答 - 知乎 https://www.zhihu.com/question/53387406/answer/147994392
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 指数基金小知识
 
 天弘基金中指数a和指数c有什么区别吗？ - 知乎 https://www.zhihu.com/question/52984202
+
+什么是ETF联接基金？ - 知乎 https://www.zhihu.com/question/317735484
+- 什么是ETF联接基金？ - Current的回答 - 知乎 https://www.zhihu.com/question/317735484/answer/652823699
+- 什么是ETF联接基金？ - 新力量学苑的回答 - 知乎 https://www.zhihu.com/question/317735484/answer/635891915
 
 ETF联接和普通指数基金有什么区别。？ - 知乎 https://www.zhihu.com/question/303723218
 
