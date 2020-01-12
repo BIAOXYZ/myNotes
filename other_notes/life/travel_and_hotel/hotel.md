@@ -37,6 +37,10 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 酒店住宿、会员及积分点数等常见问题(FAQ)解答 https://www.uscreditcardguide.com/frequently-asked-question-about-hotel-rewards-and-loyalty-system/
 
+## from 北美牧羊场
+
+住酒店薅羊毛 之 用“谈心”给高级会员待遇锦上添花 https://travelafterwork.com/2015/12/29/sending-an-email-helps-you-get-a-suite/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `洲际` / `IHG` / `InterContinental Hotels & Resorts`
