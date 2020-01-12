@@ -325,6 +325,8 @@ Library for training machine learning models with privacy for training data http
 
 TensorFlow 2.0 version's Tutorials and Examples, CNN, RNN, GAN tutorials, etc. TF 2.0版入门实例代码，实战教程。 https://github.com/dragen1860/TensorFlow2.0Tutorials
 
+谷歌TensorFlow 2.1.0正式发布，最后支持Python 2 https://www.ithome.com/0/468/108.htm
+
 ### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book
