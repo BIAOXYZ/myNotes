@@ -50,6 +50,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 /opt/rh/devtoolset-7/root/usr/bin/gcc
 ```
 
+## GCC新闻
+
+2020年，GCC项目代码终于从SVN完全切换至Git https://www.ithome.com/0/468/228.htm
+
 # LLVM
 
 # Zapcc [https://github.com/yrnkrn/zapcc]
