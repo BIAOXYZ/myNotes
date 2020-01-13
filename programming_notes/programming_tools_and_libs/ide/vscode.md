@@ -25,6 +25,16 @@ VS Code 使用小技巧 - 赵吉彤的文章 - 知乎 http://zhuanlan.zhihu.com/
 - 自动保存：File -> AutoSave ，或者Ctrl+Shift+P，输入 auto
 ```
 
+## 注释/取消注释
+
+vs code 的常用快捷键 https://segmentfault.com/a/1190000012047237
+```
+1、注释：
+　　a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/
+　　b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)
+　　c) 多行注释：[alt+shift+A]
+```
+
 ## 关闭已开启的文件夹（其实可以通过新开另一个文件夹来达到关闭的效果）
 
 How to close an opened folder in Visual Studio Code https://stackoverflow.com/questions/30028469/how-to-close-an-opened-folder-in-visual-studio-code/37549173
