@@ -57,7 +57,14 @@ git difftool -t meld -y  commitId1  commitId2
 
 ### git merge
 
-https://www.jianshu.com/p/58a166f24c81
+git-merge完全解析 https://www.jianshu.com/p/58a166f24c81
+
+#### 压缩多次（无意义）提交为一次
+
+```
+git merge --squash branch1
+```
+>（无冲突情况下）执行后branch1上所有的提交都会变成在当前分支的暂存区的内容，然后提交一次就可以。
 
 ----------------------------------------------------------------------------------------------------
 
@@ -80,23 +87,11 @@ https://segmentfault.com/q/1010000000761908
 
 ----------------------------------------------------------------------------------------------------
 
-#### 压缩多次（无意义）提交为一次
-
-```
-git merge --squash branch1
-```
->（无冲突情况下）执行后branch1上所有的提交都会变成在当前分支的暂存区的内容，然后提交一次就可以。
-
-----------------------------------------------------------------------------------------------------
-
 ## 撤销类
 
-<<Git常用的撤销操作>>
-http://www.netpi.me/uncategorized/gitrevoke/
+<<Git常用的撤销操作>> http://www.netpi.me/uncategorized/gitrevoke/
 
-<<如何在 Git 里撤销(几乎)任何操作>>
-http://blog.jobbole.com/87700/
-
+<<如何在 Git 里撤销(几乎)任何操作>> http://blog.jobbole.com/87700/
 
 ### 撤销工作区和暂存区的修改
 ```
@@ -119,21 +114,19 @@ git rm --cached -r dir //目录的话加-r，递归删除
 
 ### 撤销提交 git reset 和 git revert
 
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
 ```
 git reset --hard versionnum
 ```
-https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000/
 
-https://segmentfault.com/a/1190000009658888
+【[:star:][`*`]】 git reset详解 https://segmentfault.com/a/1190000009658888
 ```
 soft就是只动repo
 mixed就是动repo还有staging(这个是默认参数)
 hard就是动repo还有staging还有working
 ```
 
-https://www.cnblogs.com/qianqiannian/p/6010238.html
-
-https://www.cnblogs.com/kidsitcn/p/4513297.html
+git reset soft,hard,mixed之区别深解 https://www.cnblogs.com/kidsitcn/p/4513297.html
 
 ----------------------------------------------------------------------------------------------------
 
