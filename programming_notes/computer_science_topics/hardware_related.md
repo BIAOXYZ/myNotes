@@ -57,6 +57,14 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 异常断电为什么对SSD伤害这么大？ - 硬件 - cnBeta.COM https://www.cnbeta.com/articles/soft/746109.htm
 
+IT之家学院：SSD 固态硬盘求真记 https://www.ithome.com/0/468/724.htm
+- > 这两种路就是总线，其中比较窄的路是SATA总线，比较宽的路是PCIe总线。
+- > 当然，要想货物运得快，不仅路要宽敞，交通工具也要先进才行。现在有两种交通工具，一种是拖拉机，另一种是大货车。这两种交通工具对应SSD里的传输协议。拖拉机可以理解为AHCI协议，而大货车是NVMe协议。显然，大货车比拖拉机速度快多了。
+- > 这些厂家开的订单窗口就可以理解为SSD的物理接口。小厂家的就叫SATA接口，大厂家的就叫M.2接口。
+- > 首先，我们规定，大货车不能往乡间小路上跑，也就是NVMe协议的硬盘不能走在SATA通道上。正常情况下，拖拉机也不能上高速的。就是AHCI协议硬盘也不能走在PCIe通道上。不过，很早的时候是有这种情况的，现在基本看不到了。
+
+固态硬盘的PCIE，SATA，M2，NVMe，AHCI https://www.cnblogs.com/yi-mu-xi/p/10469458.html
+
 ### 闪存
 
 固态硬盘SSD与闪存（Flash Memory） https://www.cnblogs.com/ghj1976/p/3642260.html
