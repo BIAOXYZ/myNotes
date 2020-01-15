@@ -67,6 +67,8 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 - > 同时打开了多个浏览器时，你可能会想在它们之间切换。Windows 通用的切换方式同样适合这里。比如 【Ctrl+Tab】，就是在同一个窗口内的多个标签页之间切换；【Alt+Tab】就是在多个窗口之间切换。
 - > 不过还有稍微好用一些的，比如一个窗口中打开了多个标签页，你可以使用【Ctrl】组合数字键来切换这些标签页。比如摁下【Ctrl+1】切换到第一个窗口，【Ctrl+2】切换到第二个窗口，以此类推。需要注意的是，【Ctrl+9】不是直接跳转到第 9 个标签页，而是最后一个标签页。
 
+如何在Chrome浏览器中切换标签页 https://zh.wikihow.com/%E5%9C%A8Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%88%87%E6%8D%A2%E6%A0%87%E7%AD%BE%E9%A1%B5
+
 Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/cbcede0761144902f40b4d18.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
