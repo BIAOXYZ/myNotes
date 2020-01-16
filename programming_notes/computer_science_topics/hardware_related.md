@@ -114,6 +114,10 @@ U盘，主要靠的不是闪存的速度而是控制器的实现。
 
 2u四路服务器 和 2u四节点服务器 一样吗? - 知乎 https://www.zhihu.com/question/24334689
 
+IBM 的 POWER 处理器的架构比 X86 强吗？ - 知乎 https://www.zhihu.com/question/22587769
+
+What is the impact of running the CPU at 100% for long periods at a time? [duplicate] https://superuser.com/questions/431309/what-is-the-impact-of-running-the-cpu-at-100-for-long-periods-at-a-time
+
 # 内存
 
 内存标签上这串数字，暗藏了内存工作的“秘密” https://www.ithome.com/0/427/495.htm
@@ -139,6 +143,8 @@ U盘，主要靠的不是闪存的速度而是控制器的实现。
 ## 傲腾Optane
 
 应对数据爆炸时代，英特尔又放大招 https://mp.weixin.qq.com/s/Gt2WqDqoLahdUA_UF06tdg
+
+Intel 傲腾是怎样工作的，为什么叫做内存，配合机械盘能不能媲美 NAND SSD ？ - 知乎 https://www.zhihu.com/question/58976033
 
 # RDMA
 
