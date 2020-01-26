@@ -29,6 +29,17 @@ G:G (ggscore.com) – eSports project about the most popular PC games. https://g
 
 TrackDota https://www.trackdota.com/
 
+## 指令类
+
+### 给AI选英雄
+
+请问dota2人机可以给对方电脑选英雄么？ http://bbs.nga.cn/read.php?tid=20130480
+- > 可以，要创意工坊的人机
+- > ex开头的 /all 英雄英文(一般3个字母就够 容易重名的 2个词的下划线)
+- > 可以的，我一般练英雄就是自己C房打BOT EXPERIMENT的bot，进去打/all给对面选英雄，一个个打，按照21534的顺序选，输入英雄英文名前几个字母就行了，宙斯要用zuus
+
+【这个里面最后是英雄全称，打一部分即可。比如幻影长矛手的英文是`phantom_lancer`，如果打`phantom`会优先选幻刺，此时可以打`lancer`】 Dota2 作弊用命令 （ver 7.23b） - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/57975930
+
 ## 新闻消息类
 
 电子竞技有哪些玄学？ - 疯癫的A兵者的回答 - 知乎 https://www.zhihu.com/question/67225512/answer/345458974
