@@ -52,8 +52,11 @@ Python最佳实践指南中文版 https://github.com/Prodesire/Python-Guide-CN
 
 wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译 https://github.com/leisurelicht/wtfpython-cn
 
-:blue_book:《Python进阶》（Intermediate Python 中文版） https://github.com/eastlakeside/interpy-zh
-> http://interpy.eastlakeside.com
+106 页《Python进阶》中文版正式发布（附下载） - 红色石头的文章 - 知乎 https://zhuanlan.zhihu.com/p/88400706
+- :blue_book:《Python进阶》（Intermediate Python 中文版） https://github.com/eastlakeside/interpy-zh
+  * > http://interpy.eastlakeside.com
+- Intermediate Python https://github.com/yasoob/intermediatePython
+  * > http://book.pythontips.com/en/latest/
 
 《Python 3 源码剖析》 https://github.com/flaggo/python3-source-code-analysis
 > https://flaggo.github.io/python3-source-code-analysis/
