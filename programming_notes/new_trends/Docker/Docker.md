@@ -286,6 +286,8 @@ Docker中镜像构建文件Dockerfile与相关命令的详细介绍 https://www.
 
 Docker(二)：Dockerfile 使用介绍 http://ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
 
+### CMD, RUN, ENTRYPOING
+
 Dockerfile里指定执行命令用ENTRYPOING和用CMD有何不同？ https://segmentfault.com/q/1010000000417103
 ```
 RUN是在Build时运行的，先于CMD和ENTRYPOINT。Build完成了，RUN也运行完成后，再运行CMD或者ENTRYPOINT。
@@ -298,7 +300,13 @@ ENTRYPOINT和CMD的不同点在于执行docker run时参数传递方式，CMD指
 ...
 ```
 
+Docker RUN vs CMD vs ENTRYPOINT https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+
 「Allen 谈 Docker 系列」docker build 的 cache 机制 http://dockone.io/article/674
+
+***第二批***：
+- 【[:star:][`*`]】 Dockerfile编写注意事项 https://www.cnblogs.com/bigberg/p/9001584.html
+- 【[:star:][`*`]】 DOCKERFILE注意事项 https://www.cnblogs.com/styshoo/p/6431748.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
