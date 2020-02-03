@@ -139,6 +139,16 @@ SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
 - SQLZOO -- Learn SQL using: SQL Server, Oracle, MySQL, DB2, and PostgreSQL. https://sqlzoo.net/
 - SQLBolt -- Learn SQL with simple, interactive exercises. https://sqlbolt.com/
 
+SQL面试72题 - 丁哥开讲的文章 - 知乎 https://zhuanlan.zhihu.com/p/81731308
+
+## SQL Join
+
+left join,right join,inner join,full join之间的区别 https://www.cnblogs.com/lijingran/p/9001302.html
+
+Mysql 多表连接查询 inner join 和 outer join 的使用 https://www.cnblogs.com/wanglijun/p/8916790.html
+
+What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [duplicate] https://stackoverflow.com/questions/5706437/whats-the-difference-between-inner-join-left-join-right-join-and-full-join
+
 # 故障恢复
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
