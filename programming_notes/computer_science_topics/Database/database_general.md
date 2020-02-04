@@ -159,6 +159,10 @@ What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
 
+# 其他
+
+Normalization of Database——数据库的正规化 https://blog.csdn.net/qq_37174526/article/details/82776291
+
 # 待分类
 
 【[:star:][`*`]】 分库分表 or NewSQL数据库？终于看懂应该怎么选！ https://dbaplus.cn/news-159-2690-1.html || https://mp.weixin.qq.com/s/ymVxSe8nueuG7knKwcIAMw
