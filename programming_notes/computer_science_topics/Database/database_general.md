@@ -113,11 +113,17 @@ https://www.2cto.com/database/201403/286730.html
 
 ## 索引
 
+### clustered index
+
 <<深入 聚集索引与非聚集索引(一)>>
 http://www.cnblogs.com/lwzz/archive/2012/08/05/2620824.html
 
 <<聚集索引和非聚集索引（整理）>>
 http://www.cnblogs.com/aspnethot/articles/1504082.html
+
+聚合索引(clustered index) / 非聚合索引(nonclustered index) https://blog.csdn.net/lp_cq242/article/details/87861672
+
+MySQL聚合索引与非聚合索引 "聚合索引（ClusteredIndex）" https://www.jianshu.com/p/cd697a425232
 
 <<唯一性索引（Unique Index）与普通索引（Normal Index）差异（上）>>
 http://blog.itpub.net/17203031/viewspace-700089/
