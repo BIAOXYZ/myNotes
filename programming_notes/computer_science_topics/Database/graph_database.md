@@ -27,6 +27,10 @@ Best Graph Databases Software https://www.g2.com/categories/graph-databases
 
 awesome-graph: A curated list of resources for graph databases and graph computing tools https://github.com/jbmusso/awesome-graph
 
+## JanusGraph
+
+图数据库JanusGraph浅析 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/50279477
+
 # other concrete graph databases
 
 NebulaGraph: A high performance distributed Graph Database https://github.com/vesoft-inc/nebula || https://nebula-graph.io/
