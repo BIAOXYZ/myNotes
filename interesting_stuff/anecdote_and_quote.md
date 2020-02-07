@@ -26,6 +26,11 @@
 
 # 文化圈
 
+黑格尔 https://zh.wikiquote.org/wiki/%E9%BB%91%E6%A0%BC%E7%88%BE
+- `历史给我们的教训是，人们从来都不知道汲取历史的教训。` || `What experience and history teach is this — that nations and governments have never learned anything from history, or acted upon any lessons they might have drawn from it.`
+  * > 这句话更“霸气”的说法是 —— “人类从历史中学到的唯一教训，就是人类无法从历史中学到任何教训。”是真命题还是假命题？ - 知乎
+https://www.zhihu.com/question/29923570 —— 但其实黑格尔本意是表达历史经验不可照搬，而不是《阿房宫赋》里秦人不暇自哀那段的意思。。。
+
 # 科技圈
 
 Linus Torvalds https://en.wikiquote.org/wiki/Linus_Torvalds || 林纳斯·托瓦兹 https://zh.wikiquote.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9
