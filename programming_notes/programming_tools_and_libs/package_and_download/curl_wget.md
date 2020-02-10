@@ -223,6 +223,8 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 
 记一次解决curl https证书问题 https://www.cnblogs.com/xuxinkun/p/5417836.html
 
+curl 命令学习使用小结 https://www.v2ex.com/t/643426
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## curl新闻
