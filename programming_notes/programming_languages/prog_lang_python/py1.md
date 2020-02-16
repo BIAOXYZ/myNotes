@@ -79,3 +79,5 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 > 在线阅读地址：http://python3-cookbook.readthedocs.org/zh_CN/latest
 
 Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师 | 中文资源 https://mp.weixin.qq.com/s/sRiRpcN9LVj81asESqWZaA
+
+Python有趣的小例子一网打尽。Python基础、Python坑点、Python字符串和正则、Python绘图、Python日期和文件、Web开发、数据科学、机器学习、深度学习、TensorFlow、Pytorch，一切都是简单易懂的小例子。 -- 《我的Python之路V1.3.pdf》最新版本 https://github.com/jackzhenguo/python-small-examples
