@@ -29,6 +29,9 @@ G:G (ggscore.com) – eSports project about the most popular PC games. https://g
 
 TrackDota https://www.trackdota.com/
 
+Dota_2_Wiki https://dota2-zh.gamepedia.com/Dota_2_Wiki
+- 法术抵抗 https://dota2-zh.gamepedia.com/%E6%B3%95%E6%9C%AF%E6%8A%B5%E6%8A%97
+
 ## 指令类
 
 ### 给AI选英雄
