@@ -34,6 +34,8 @@ sudo cp ~/Download/debian-10.2.0-amd64-i386-netinst.iso /dev/sda
 
 ## linux
 
+请教关于 Linux 双网卡绑定的细节 https://www.v2ex.com/t/645341
+
 crontab 是怎么实现的？ https://www.v2ex.com/t/619692
 
 删除文件到底用啥命令啊?萌新求问 https://www.v2ex.com/t/599228
@@ -77,6 +79,9 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 > Dive into CPython internals, trying to illustrate every detail of CPython implementation | CPython 源码阅读笔记, 多图展示底层实现细节 https://github.com/zpoint/CPython-Internals
 
 ## go
+
+[7 天用 Go 从零实现系列] 第二期分布式缓存 GeeCache 已经完结 https://www.v2ex.com/t/645362
+> 7 days golang apps from scratch (web framework Gee, distributed cache GeeCache, etc) 7天用Go动手写系列[从零实现] https://geektutu.com/post/gee.html || https://github.com/geektutu/7days-golang
 
 Go 101 v1.13.m (v.1.14-pre) 电子书发布 https://www.v2ex.com/t/635029
 > Go语言101 : 一本侧重于Go语言语法和语义的编程解释和指导书 https://github.com/golang101/golang101
