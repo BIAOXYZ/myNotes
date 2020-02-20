@@ -498,6 +498,12 @@ Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
 - Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
 - Kubernetes ConfigMap热更新测试 https://jimmysong.io/posts/kubernetes-configmap-hot-update/
 
+## kubernetes StorageClass
+
+StorageClass https://www.huweihuang.com/kubernetes-notes/storage/storage-class.html
+
+Kubernetes-基于StorageClass的动态存储供应 https://www.kubernetes.org.cn/4078.html
+
 ## kubernetes Container Lifecycle Hooks
 
 - Container Lifecycle Hooks https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/
