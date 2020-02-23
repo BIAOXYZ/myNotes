@@ -63,3 +63,25 @@ grep命令:匹配多个单词 https://www.jianshu.com/p/747c97f4b4ac
 
 
 grep 命令系列：grep 中的正则表达式 https://linux.cn/article-6941-1.html
+
+
+【grep的-n -A -B】 Helm Package Manager https://www.katacoda.com/javajon/courses/kubernetes-pipelines/helm
+```sh
+master $ cat app-chart/templates/deployment.yaml | grep 'kind:' -n -B1 -A5
+1-apiVersion: apps/v1
+2:kind: Deployment
+3-metadata:
+4-  name: {{ include "app-chart.fullname" . }}
+5-  labels:
+6-    {{- include "app-chart.labels" . | nindent 4 }}
+7-spec:
+master $ cat app-chart/templates/deployment.yaml | grep 'image:' -n -B3 -A3
+25-        - name: {{ .Chart.Name }}
+26-          securityContext:
+27-            {{- toYaml .Values.securityContext | nindent 12 }}
+28:          image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
+29-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+30-          ports:
+31-            - name: http
+master $
+```
