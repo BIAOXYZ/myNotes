@@ -342,8 +342,9 @@ http://zhuanlan.zhihu.com/p/35057341
 
 ## 回调函数
 
-回调函数（callback）是什么？ - no.body的回答 - 知乎
-https://www.zhihu.com/question/19801131/answer/27459821
+回调函数（callback）是什么？ - no.body的回答 - 知乎 https://www.zhihu.com/question/19801131/answer/27459821
+
+怎么理解回调函数? https://www.v2ex.com/t/647806
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
