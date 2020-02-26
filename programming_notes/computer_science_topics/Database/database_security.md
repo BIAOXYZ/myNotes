@@ -45,3 +45,6 @@ https://channel9.msdn.com/Shows/Data-Exposed/Getting-Started-with-Always-Encrypt
 https://channel9.msdn.com/Events/Community-Poland/Data-Community-106/Always-Encrypted
 - << Enabling Confidential Computing with Always Encrypted using Enclaves (Early Access Preview) >>
 https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-computing-with-always-encrypted-using-enclaves-early-access-preview/
+
+数据库加密都有什么方式？ https://www.v2ex.com/t/647734
+- 参考这篇《使用 SQL Server 2016 的 Always Encrypt 功能防止系統管理員讀取私密性資料》  https://www.uuu.com.tw/Public/content/article/19/20190805.htm
