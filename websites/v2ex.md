@@ -80,6 +80,9 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 
 ## go
 
+Go 代码编译为 C 代码 https://www.v2ex.com/t/648000
+> A toy programming language base on Golang and compile to C, no name yet https://github.com/kitech/cygo
+
 [7 天用 Go 从零实现系列] 第二期分布式缓存 GeeCache 已经完结 https://www.v2ex.com/t/645362
 > 7 days golang apps from scratch (web framework Gee, distributed cache GeeCache, etc) 7天用Go动手写系列[从零实现] https://geektutu.com/post/gee.html || https://github.com/geektutu/7days-golang
 
