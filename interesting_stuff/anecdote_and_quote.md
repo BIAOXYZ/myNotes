@@ -1,12 +1,16 @@
 
 # 其他圈
 
-`一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程。` https://zh.wikiquote.org/wiki/%E6%B1%9F%E6%B3%BD%E6%B0%91 || https://www.hmoegirl.com/%E8%9B%A4%E4%B8%89%E7%AF%87#%E9%87%8D%E5%9B%9E%E4%BA%8C%E9%99%A2
+https://zh.wikiquote.org/wiki/%E6%B1%9F%E6%B3%BD%E6%B0%91
+- > `一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程。` || https://www.hmoegirl.com/%E8%9B%A4%E4%B8%89%E7%AF%87#%E9%87%8D%E5%9B%9E%E4%BA%8C%E9%99%A2
+- > 
+  ```
+  问：中国怕不怕外国势力干涉？
+  答：中国人民是从来都不信邪的。
+  ```
 
-```
-问：中国怕不怕外国势力干涉？
-答：中国人民是从来都不信邪的。
-```
+https://zh.wikiquote.org/zh-hans/%E6%AF%9B%E6%B3%BD%E4%B8%9C
+- > `谁是我们的敌人？谁是我们的朋友？这个问题是革命的首要问题。` || https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19251201.htm
 
 # ACG圈
 
