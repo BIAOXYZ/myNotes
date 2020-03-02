@@ -636,6 +636,8 @@ kubernetes源码阅读 kubelet初探 - fanbin的文章 - 知乎 https://zhuanlan
 
 Kubernetes scheduler学习笔记 https://mp.weixin.qq.com/s/EWXHBDV562qsJcMz1_psRA
 
+Kubernetes1.5源码分析(二) apiServer之资源注册 https://segmentfault.com/a/1190000008700595
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes others
