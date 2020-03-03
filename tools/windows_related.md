@@ -12,6 +12,12 @@ IT之家教程：一文看懂如何从Windows 7升级到Windows 10 https://www.i
 - 软媒魔方 https://mofang.ruanmei.com/
 - Media Creation Tool https://www.microsoft.com/zh-cn/software-download/windows10ISO/
 
+## 休眠
+
+挂机下载电脑却自动休眠？一款“袖珍”的绿色工具 https://www.ithome.com/0/475/763.htm
+- > Don't Sleep官网下载地址：https://www.softwareok.com/?seite=Microsoft/DontSleep/History
+- > 一劳永逸解决WIN10所有睡眠问题 - 薛解中的文章 - 知乎 https://zhuanlan.zhihu.com/p/93306740
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Windows keyboard shortcuts
