@@ -58,6 +58,9 @@ cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 ## c/c++
 
+C 的语法基本看完了，下面该学什么？ https://www.v2ex.com/t/649748
+- > http://akaedu.github.io/book/index.html 《 Linux C 编程一站式学习》
+
 用 c 分配内存，为什么普遍都是用 malloc 而不是用 calloc？ https://www.v2ex.com/t/572612
 
 ## python
