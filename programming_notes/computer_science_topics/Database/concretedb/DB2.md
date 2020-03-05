@@ -23,6 +23,9 @@ How to see the schema of a db2 table (file) https://stackoverflow.com/questions/
 
 ### `db2 connect to trader`时报SQL10007N
 
+> 注：其实就是下面的链接里这个脚本连接数据库时出的问题（当然脚本连不上是因为当时名为trader的数据库建不起来），我自己手动登进DB2的pod去试着连DB2，报了这个这个错。后来证明原因是db2的机制要求必须切换到特定的数据库，所以登进去时候是root，应该先执行下 su - db2inst1
+>> https://github.com/IBMStockTrader/stocktrader-helm/blob/3981d650f314dfbebedc474818956d361b421080/scripts/setupDB2.sh
+
 DB2START Fails with SQL10007N Message "-1390" could not be retrieved. Reason code: "3" https://www.ibm.com/support/pages/db2start-fails-sql10007n-message-1390-could-not-be-retrieved-reason-code-3
 
 db2关于脚本报错SQL10007N Message "-1390" could not be retrieved. Reason code: "3". https://zhidao.baidu.com/question/578517851.html
