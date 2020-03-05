@@ -6,6 +6,15 @@ Tutorial: Using the command line processor https://www.ibm.com/support/knowledge
 # DB2其他
 
 Connecting to a Database in Db2 Database Server https://www.db2tutorial.com/getting-started/db2-connect-to-database/
+```
+C:\Program Files\IBM\SQLLIB\BIN>db2
+db2 => connect to books user db2admin using your_password
+```
+
+How to Connect to a DB2 Database https://www.xtivia.com/how-to-connect-to-a-db2-database/
+- > `db2 list db directory`
+
+# DB2故障处理
 
 ### `db2 connect to trader`时报SQL10007N
 
