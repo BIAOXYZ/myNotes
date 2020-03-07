@@ -369,6 +369,8 @@ System/360 大型机差点毁了 IBM ！ https://mp.weixin.qq.com/s/K5cqbg5_TkvM
 
 阿里巴巴公司根据截图查到泄露信息的具体员工的技术是什么？ - AmeliaAn的回答 - 知乎 https://www.zhihu.com/question/50735753/answer/338013283
 
+如何看待网传阿里巴巴蒋凡要求尽快实现P8全员35周岁以内？ - 知乎 https://www.zhihu.com/question/352652086
+
 ## 腾讯相关新闻
 
 当下（2018 年）腾讯的技术建设是否处于落后同体量公司的状态？ - 知乎 https://www.zhihu.com/question/278473776
