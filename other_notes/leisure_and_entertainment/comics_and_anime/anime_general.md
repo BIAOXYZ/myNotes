@@ -81,11 +81,16 @@ From ithome:
 - BONES https://zh.moegirl.org/BONES
 - 京都动画 https://zh.moegirl.org/%E4%BA%AC%E9%83%BD%E5%8A%A8%E7%94%BB
   * 中二病也要谈恋爱
+  * 冰菓
 - MADHOUSE https://zh.moegirl.org/MADHOUSE
   * 甜甜私房猫
   * 一拳超人
 - WIT STUDIO https://zh.moegirl.org/WIT_STUDIO || WIT STUDIO http://bangumi.tv/person/8481 || 谁知道霸权社是啥意思？ https://zhidao.baidu.com/question/1368974541103196019.html 【"指wit studio动画公司，因为因为做了鬼灯和巨人两个季度霸权作品，这只是一种调侃。"】
   * 进击的巨人
+- Studio DEEN https://zh.moegirl.org/Studio_DEEN
+  * 《为美好的世界献上祝福!》、《为美好的世界献上祝福!2》
+- 日升动画/SUNRISE https://zh.moegirl.org/%E6%97%A5%E5%8D%87%E5%8A%A8%E7%94%BB
+  * 银魂 // 直到这时我才知道前面的Aniplex那里的银魂其实是“音乐&宣传协力，动画版权代发”，制作还是日升。所以这个列表回头也得大整，但是目前是没时间了。
 
 前方高能！第一名震撼我妈！十大最欢迎日本动画公司 封神之作【硬核排行】 https://www.bilibili.com/video/av63172872/
 
