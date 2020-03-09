@@ -87,6 +87,11 @@ cpython 底层实现笔记 https://www.v2ex.com/t/560173
 
 ## go
 
+[典藏版]Golang 调度器 GMP 原理与调度全分析 https://www.v2ex.com/t/651092
+- > [典藏版]Golang调度器GMP原理与调度全分析 https://www.jianshu.com/p/fa696563c38a
+
+采用 gomod 方式后 gopath 下的 bin 如何处理？ https://www.v2ex.com/t/651007
+
 Go 代码编译为 C 代码 https://www.v2ex.com/t/648000
 > A toy programming language base on Golang and compile to C, no name yet https://github.com/kitech/cygo
 
