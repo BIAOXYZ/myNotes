@@ -226,3 +226,5 @@ How Install and Configure OpenLDAP on CentOS / RHEL Linux https://www.thegeekstu
 10 Linux brctl Command Examples for Ethernet Network Bridge https://www.thegeekstuff.com/2017/06/brctl-bridge/
 
 Bash Shell: Take Control of PS1, PS2, PS3, PS4 and PROMPT_COMMAND https://www.thegeekstuff.com/2008/09/bash-shell-take-control-of-ps1-ps2-ps3-ps4-and-prompt_command/
+
+Expect Script Tutorial: Expressions, If Conditions, For Loop, and While Loop Examples https://www.thegeekstuff.com/2011/01/expect-expressions-loops-conditions/
