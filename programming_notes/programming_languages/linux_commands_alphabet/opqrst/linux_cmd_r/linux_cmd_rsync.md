@@ -43,3 +43,5 @@ Rsync（远程同步）：10 Linux中Rsync命令的实际示例 https://www.howt
 
 rsync 一个超大文件夹“./attachments”过后，怎样检测两台服务器的这个“./attachments”文件夹一模一样 https://www.v2ex.com/t/593361
 - > -c, --checksum skip based on checksum, not mod-time & size <br> 用 rsync -c
+
+rsync+inotify实现文件双向同步 https://blog.csdn.net/liuwei0376/article/details/89155277
