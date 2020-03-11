@@ -8,8 +8,25 @@ Yum Package Manager http://yum.baseurl.org/
 
 ## 常用yum command个人总结
 
-```
+```sh
+# 安装指定版本的package
+yum install <package name>-<version info>
+# 例：
+[root@c4-infra02 ~]# yum --showduplicates list ansible
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.163.com
+ * epel: fedora.cs.nctu.edu.tw
+ * extras: mirrors.cqu.edu.cn
+ * updates: mirrors.163.com
+Available Packages
+ansible.noarch                                                            2.4.2.0-2.el7                                                             extras
+ansible.noarch                                                            2.9.3-1.el7                                                               epel
+[root@c4-infra02 ~]# yum install -y ansible-2.9.3-1.el7
+...
+...
 
+Complete!
 ```
 
 ## yum general
@@ -53,7 +70,17 @@ linux yum命令详解 http://www.cnblogs.com/chuncn/archive/2010/10/17/1853915.h
 
 ### 安装指定版本软件
 
+How can I instruct yum to install a specific version of package X? https://unix.stackexchange.com/questions/151689/how-can-i-instruct-yum-to-install-a-specific-version-of-package-x
+
 在CentOS系统中使用yum安装指定版本软件 https://blog.csdn.net/cy309173854/article/details/78668237
+```sh
+假设这里是我们想安装的是mariadb ，输入：
+# yum list | grep mariadb
+找到你要安装的版本的完整的名字，这里安装mariadb-5.5.56-2.el7.x86_64，输入：
+#yum install mariadb-5.5.56-2.el7.x86_64
+安装完后，就是检查pcre的版本了，输入：
+# rpm -qa | grep MariaDB
+```
 
 ## yum问题错误故障等
 
