@@ -98,6 +98,8 @@ DOTA2 TI6总决赛：WINGS VS DC https://www.bilibili.com/video/av30652596/
 
 游戏史上公认最棒的红白机游戏是哪款？IGN告诉你答案，结局会出乎你想象 https://www.acfun.cn/v/ac11481593
 
+暴雪首席编剧Michael Chu离职，曾参与魔兽、暗黑、守望项目 https://www.ithome.com/0/477/269.htm
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
