@@ -427,6 +427,17 @@ https://www.cnblogs.com/fan-yuan/p/8176886.html
 Endianness https://en.wikipedia.org/wiki/Endianness
 
 理解字节序 https://www.ruanyifeng.com/blog/2016/11/byte-order.html
+```
+3.
+首先，为什么会有小端字节序？
+答案是，计算机电路先处理低位字节，效率比较高，因为计算都是从低位开始的。所以，计算机的内部处理都是小端字节序。
+但是，人类还是习惯读写大端字节序。所以，除了计算机的内部处理，其他的场合几乎都是大端字节序，比如网络传输和文件储存。
+
+5.
+字节序的处理，就是一句话：
+"只有读取的时候，才必须区分字节序，其他情况都不用考虑。"
+即使是向外部设备写入数据，也不用考虑字节序，正常写入一个值即可。外部设备会自己处理字节序的问题。
+```
 
 Big Endian与Little Endian区别 https://blog.csdn.net/wyzxg/article/details/5349896
 
