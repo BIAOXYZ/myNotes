@@ -357,6 +357,11 @@ SomeyaMako
 ```
 >> 崛江由衣躺枪- -。。。
 
+### 真白
+
+椎名真白经典语录/台词/名句 https://www.mingyantong.com/writer/207083
+- > ねぇ、君は何色になりたい？ || 呐，你想变成什么颜色？
+
 ### 其他
 
 如何评价亚丝娜（结城明日奈）？ - 知乎 https://www.zhihu.com/question/65520439/answer/232528553
