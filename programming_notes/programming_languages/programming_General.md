@@ -426,6 +426,8 @@ https://www.cnblogs.com/fan-yuan/p/8176886.html
 
 Endianness https://en.wikipedia.org/wiki/Endianness
 
+理解字节序 https://www.ruanyifeng.com/blog/2016/11/byte-order.html
+
 Big Endian与Little Endian区别 https://blog.csdn.net/wyzxg/article/details/5349896
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
