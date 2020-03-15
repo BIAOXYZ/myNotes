@@ -17,6 +17,8 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 十年经典动画巡礼vol.11 -- 某科学的超电磁炮十周年特辑 https://www.bilibili.com/blackboard/topic/Railgun_10years_web.html
 
+僧正 https://toaru.huijiwiki.com/wiki/%E5%83%A7%E6%AD%A3
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 名侦探柯南
