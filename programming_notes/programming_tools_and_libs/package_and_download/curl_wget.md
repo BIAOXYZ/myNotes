@@ -204,6 +204,13 @@ Options: (H) means HTTP/HTTPS only, (F) means FTP only
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## curl相关工具
+
+问卷调查:如果实现解析 curl 命令的库，大家感兴趣吗？ https://www.v2ex.com/t/652904
+- Convert curl syntax to Python, Ansible URI, MATLAB, Node.js, R, PHP, Strest, Go, Dart, JSON, Elixir, Rust https://curl.trillworks.com/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## curl其他帖子
 
 curl网站开发指南 http://www.ruanyifeng.com/blog/2011/09/curl.html
