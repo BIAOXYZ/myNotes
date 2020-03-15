@@ -62,6 +62,10 @@ crontab 是怎么实现的？ https://www.v2ex.com/t/619692
 
 cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
+## algorithm and data structure
+
+[第 5 期] 算法精选-你应该知道的 KMP 算法 https://www.v2ex.com/t/652852
+
 ## c/c++
 
 C 的语法基本看完了，下面该学什么？ https://www.v2ex.com/t/649748
