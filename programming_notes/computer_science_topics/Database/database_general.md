@@ -167,6 +167,8 @@ What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [
 
 常见面试题整理--数据库篇（每位开发者必备） - 路人甲的文章 - 知乎 https://zhuanlan.zhihu.com/p/23713529
 
+面试必备之乐观锁与悲观锁 https://juejin.im/post/5b4977ae5188251b146b2fc8
+
 ## 1NF, 2NF, BCNF
 
 如何理解关系型数据库的常见设计范式？ - 刘慰的回答 - 知乎 https://www.zhihu.com/question/24696366/answer/29189700
