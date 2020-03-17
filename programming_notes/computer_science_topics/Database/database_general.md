@@ -113,6 +113,12 @@ https://www.2cto.com/database/201403/286730.html
 
 ## 索引
 
+### 倒排索引 (Inverted index)
+
+倒排索引 https://zh.wikipedia.org/wiki/%E5%80%92%E6%8E%92%E7%B4%A2%E5%BC%95 || Inverted index https://en.wikipedia.org/wiki/Inverted_index
+
+倒排索引为什么叫倒排索引？ - 武培轩的回答 - 知乎 https://www.zhihu.com/question/23202010/answer/1054033556
+
 ### clustered index
 
 <<深入 聚集索引与非聚集索引(一)>>
