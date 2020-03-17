@@ -157,14 +157,21 @@ serverless 底层技术是什么 https://www.v2ex.com/t/578918
 
 # V2EX非技术类
 
-做程序员最重要的还是一定要有自己的作品 https://www.v2ex.com/t/564913
+## 工作、收入相关
 
-统计了 V2EX 过去一周的在线人数 https://www.v2ex.com/t/579484
+科技行业收入调查 https://www.v2ex.com/t/646064
+- > 科技行业收入调查 (Responses) https://docs.google.com/spreadsheets/d/1Zja2nNmvK4QI08Wl-LHZu7YTfUwi6blpr1CKPMUtKqI/
 
 做了一个大厂的程序员职级对比的网站 https://www.v2ex.com/t/584792
 > https://itlevel.vip
 - > 可以像 levels.fyi 那样接入薪资和一些晒 offer 的帖子地址
   >> https://www.levels.fyi/
+  
+## 非技术类其他  
+
+做程序员最重要的还是一定要有自己的作品 https://www.v2ex.com/t/564913
+
+统计了 V2EX 过去一周的在线人数 https://www.v2ex.com/t/579484
 
 如何帮助一个中年农民因进城务工而找不到工作快要成为流浪汉的人？ https://www.v2ex.com/t/610654
 
