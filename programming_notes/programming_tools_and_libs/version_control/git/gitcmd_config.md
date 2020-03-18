@@ -422,3 +422,21 @@ http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 ### gitk
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# 待分类git配置
+
+## url insteadOf
+
+Go填坑之将Private仓库用作module依赖 https://segmentfault.com/a/1190000021127791
+```console
+可以通过命令git config ...的方式来配置。也可以像我这样，直接修改~/.gitconfig添加如下配置：
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[url "git@gitlab.com:"]
+    insteadOf = https://gitlab.com/
+```
+
+go get results in 'terminal prompts disabled' error for github private repo https://stackoverflow.com/questions/32232655/go-get-results-in-terminal-prompts-disabled-error-for-github-private-repo
+
+一招 git clone 加速 https://juejin.im/post/5cfe66406fb9a07edb393c56
