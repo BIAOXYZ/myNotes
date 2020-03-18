@@ -174,7 +174,9 @@ What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [
 
 ## 数据库面试
 
-数据库面试题(开发者必看) https://juejin.im/post/5a9ca0d6518825555c1d1acd
+数据库面试题(开发者必看) https://juejin.im/post/5a9ca0d6518825555c1d1acd || https://segmentfault.com/a/1190000013517914
+
+数据库面试知识点汇总 https://ac.nowcoder.com/discuss/135748
 
 常见面试题整理--数据库篇（每位开发者必备） - 路人甲的文章 - 知乎 https://zhuanlan.zhihu.com/p/23713529
 
