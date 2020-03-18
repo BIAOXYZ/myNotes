@@ -1,4 +1,12 @@
 
+# 经济危机
+
+以古鉴今，重读巴菲特《Buy American I am》 https://news.futunn.com/post/5394834
+> Buy American. I Am. https://www.nytimes.com/2008/10/17/opinion/17buffett.html  -->  `A simple rule dictates my buying: Be fearful when others are greedy, and be greedy when others are fearful.`
+>> notes：巴菲特于2008年金融危机时在纽约时报发表的文章，但是可能不是著名的“别人贪婪时我恐惧，别人恐惧时我贪婪”最早的出处。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # economics
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
