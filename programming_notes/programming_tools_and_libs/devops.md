@@ -113,6 +113,8 @@ Ansible 专题文章总揽 https://www.jianshu.com/p/c56a88b103f8
 - > 倾情巨献，ansible2.5版本系列视频： http://www.acfun.cn/v/ac4413997 || https://www.bilibili.com/video/av25424954
 - Ansible 小手册系列 十三（Jinja2） https://www.jianshu.com/p/ae74f5f39828  【:star:】
 
+Ansible examples from Ansible for DevOps. https://www.ansiblefordevops.com/ || https://github.com/geerlingguy/ansible-for-devops
+
 # Ansible快速开始
 
 Ansible入门 https://getansible.com/  【:star:】
