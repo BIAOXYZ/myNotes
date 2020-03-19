@@ -228,6 +228,12 @@ unarchive – Unpacks an archive after (optionally) copying it from the local ma
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# [Ansible Plugins] (https://docs.ansible.com/ansible/latest/plugins/plugins.html)
+
+kubectl – Execute tasks in pods running on Kubernetes https://docs.ansible.com/ansible/latest/plugins/connection/kubectl.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible Playbooks and Roles
 
 `Roles` -- `Role Search Path` https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#role-search-path
