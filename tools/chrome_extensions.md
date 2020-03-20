@@ -213,6 +213,16 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 | 以最近浏览过的顺序切换标签页 |	Ctrl + Tab —— 需要在选项中启用 【默认是启用的】 | :x: <br> 【chrome的 Ctrl + Tab 等价于切到下一个（也就是右边的）标签。而firefox则更像是linux的`cd -`。此外，如果按住Ctrl然后点一下Tab但是不放开Ctrl，则会弹出一个框可以选择切换到指定的标签，很像Windows下切换程序的`Alt + Tab`。】 |
 | 打开左邻的标签页	| Ctrl + Page Up | :x: <br> 也可用 Ctrl + Shift + Tab —— 仅当在选项禁用设置 Ctrl+Tab 以最近浏览过的顺序切换标签页时有效 <br> 【但是默认会启用Ctrl+Tab，所以Ctrl + Shift + Tab默认无效】 |
 | 打开右邻的标签页	| Ctrl + Page Down | :x: <br> 也可用 Ctrl + Tab —— 仅当在选项禁用设置 Ctrl+Tab 以最近浏览过的顺序切换标签页时有效 <br> 【但是默认会启用Ctrl+Tab，所以Ctrl + Tab默认无效】 |
+| 静音/取消静音 | Ctrl + M | 【chrome暂无此功能】 |
+| 新建标签页 | Ctrl + T | :heavy_check_mark: 完全相同 |
+| 新建窗口 | Ctrl + N | :heavy_check_mark: 完全相同 |
+| 新建隐私浏览窗口 | Ctrl + Shift + P | :x: <br> 【chrome为 Ctrl + Shift + N】 |
+| 撤销关闭标签页 | Ctrl + Shift + T | :heavy_check_mark: 完全相同 |
+| 撤销关闭窗口 | Ctrl + Shift + N | :x: <br> 【chrome暂无此功能；且该快捷键是chrome新建隐私窗口的快捷键。】 |
+| 选择标签页（1到8） | Ctrl + 1 到 8 | :heavy_check_mark: 完全相同 |
+| 选择最后一个标签页 | Ctrl + 9 | :heavy_check_mark: 完全相同 |
+
+>> notes：总结下就是为了不用记忆两种浏览器的区别，建议切左右标签时用Ctrl + Page Up/Page Down，而不要用Ctrl + Tab/Ctrl + Shift + Tab。其他的常用快捷键两个浏览器基本一样。
 
 ## firefox官方的功能
 
