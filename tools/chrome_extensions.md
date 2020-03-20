@@ -207,10 +207,12 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 键盘快捷键 https://support.mozilla.org/zh-CN/kb/%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE
 
-| 操作 | 快捷键 |
-|--|:--|
-| 打开左邻的标签页	| control + page up |
-| 打开右邻的标签页	| control + page down |
+| 操作 | 快捷键 | 与Chrome是否相同 |
+|--|:--|--|
+| 关闭标签页 | Ctrl + W 或 Ctrl + F4 | :heavy_check_mark: |
+| 以最近浏览过的顺序切换标签页 |	Ctrl + Tab —— 需要在选项中启用 | :x: |
+| 打开左邻的标签页	| Ctrl + Page Up | Ctrl + Shift + Tab —— 仅当在选项禁用设置 Ctrl+Tab 以最近浏览过的顺序切换标签页时有效|
+| 打开右邻的标签页	| Ctrl + Page Down | Ctrl + Tab —— 仅当在选项禁用设置 Ctrl+Tab 以最近浏览过的顺序切换标签页时有效|
 
 ## firefox官方的功能
 
