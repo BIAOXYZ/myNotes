@@ -51,13 +51,13 @@
 |--|:--|
 | 打开新窗口 | Ctrl + n |
 | 在隐身模式下打开新窗口	| Ctrl + Shift + n |
-| 打开新的标签页，并跳转到该标签页	| Ctrl + t |
-| 重新打开最后关闭的标签页，并跳转到该标签页	| Ctrl + Shift + t |
-| 跳转到下一个打开的标签页	| Ctrl + Tab 或 Ctrl + PgDn |
-| 跳转到上一个打开的标签页	| Ctrl + Shift + Tab 或 Ctrl + PgUp |
-| 跳转到特定标签页	| Ctrl + 1 到 Ctrl + 8 |
-| 跳转到最后一个标签页	| Ctrl + 9 |
-| 关闭当前标签页	| Ctrl + w 或 Ctrl + F4 |
+| **打开新的标签页，并跳转到该标签页**	| Ctrl + t |
+| **重新打开最后关闭的标签页，并跳转到该标签页**	| Ctrl + Shift + t |
+| **跳转到下一个打开的标签页**	| Ctrl + Tab 或 Ctrl + PgDn |
+| **跳转到上一个打开的标签页**	| Ctrl + Shift + Tab 或 Ctrl + PgUp |
+| **跳转到特定标签页**	| Ctrl + 1 到 Ctrl + 8 |
+| **跳转到最后一个标签页**	| Ctrl + 9 |
+| **关闭当前标签页**	| Ctrl + w 或 Ctrl + F4 |
 | 关闭所有打开的标签页和浏览器	| Ctrl + Shift + w |
 | 退出 Google Chrome	| Ctrl + Shift + q 或 Alt + F4 |
 
