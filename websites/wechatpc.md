@@ -11,6 +11,8 @@
 - 飞总聊IT https://cloud.tencent.com/developer/column/2301
 - 飞总的IT世界面面观 https://zhuanlan.zhihu.com/feizong
 
+([SIGMOD 2015](https://dblp.org/db/conf/sigmod/sigmod2015)) On Improving User Response Times in Tableau https://research.tableau.com/paper/improving-user-response-times-tableau
+
 ### 
 
 有理有据的胡说八道：由DB圈的一桩陈年公案看大数据时代的数据科学 https://chuansongme.com/n/973130252192
