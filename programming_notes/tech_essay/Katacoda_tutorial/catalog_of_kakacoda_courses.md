@@ -9,6 +9,10 @@ Red Hat OpenShift® - Interactive Learning Portal https://learn.openshift.com/ |
 
 Developing on OpenShift https://developers.redhat.com/courses/openshift/
 
+# HashiCorp
+
+HashiCorp enables orgs to provision, secure, & run any infrastructure for any application. The Suite includes Vagrant, Packer, Terraform, Vault, Nomad & Consul. https://www.katacoda.com/hashicorp
+
 # 非机构课程
 
 Jonathan Johnson @javajon https://www.katacoda.com/javajon
