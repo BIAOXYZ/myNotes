@@ -12,6 +12,9 @@ IT之家教程：一文看懂如何从Windows 7升级到Windows 10 https://www.i
 - 软媒魔方 https://mofang.ruanmei.com/
 - Media Creation Tool https://www.microsoft.com/zh-cn/software-download/windows10ISO/
 
+Win10 开机具慢大家是如何排除的？ https://www.v2ex.com/t/654705
+> 谢谢各位解答，就是 ME 的问题，BIOS 中默认就是启用 ME 的。硬件管理器中卸载 ME，然后 BIOS 里禁用 ME，彻底解决问题。顺便问一下 ME 有什么用
+
 ## 休眠
 
 挂机下载电脑却自动休眠？一款“袖珍”的绿色工具 https://www.ithome.com/0/475/763.htm
