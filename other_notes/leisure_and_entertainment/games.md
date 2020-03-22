@@ -25,9 +25,10 @@ Vampire Gaze https://diablo2.diablowiki.net/Vampire_Gaze
 ## 工具类
 
 G:G (ggscore.com) – eSports project about the most popular PC games. https://ggscore.com/en/about
-- https://ggscore.com/zh/dota-2/team
+- DOTA 2 战队排行榜 https://ggscore.com/zh/dota-2/team
 
 TrackDota https://www.trackdota.com/
+- The International 2019 https://www.trackdota.com/leagues/10749
 
 Dota_2_Wiki https://dota2-zh.gamepedia.com/Dota_2_Wiki
 - 法术抵抗 https://dota2-zh.gamepedia.com/%E6%B3%95%E6%9C%AF%E6%8A%B5%E6%8A%97
@@ -67,6 +68,10 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 ```
 >> 这不是dota2的版本更新，是全新发布了dota3。。。再附一个IT之家的链接：
 >>> 史诗级更新！DOTA2迎来世外之争版本：英雄可升至30级，2名新英雄上线 https://www.ithome.com/0/459/434.htm
+
+## TI
+
+The International (TI) DOTA 2 Championships http://www.dota2.com/international/overview/
 
 ### TI9
 
