@@ -22,6 +22,8 @@ Prometheus操作指南 https://yunlzheng.gitbook.io/prometheus-book/ || https://
 - 容器监控：cAdvisor https://yunlzheng.gitbook.io/prometheus-book/part-ii-prometheus-jin-jie/exporter/commonly-eporter-usage/use-prometheus-monitor-container
 - 使用Node Exporter采集主机数据 https://yunlzheng.gitbook.io/prometheus-book/parti-prometheus-ji-chu/quickstart/prometheus-quick-start/use-node-exporter
 
+prometheus-for-developers -- Practical introduction to Prometheus for developers. https://danielfm.me/prometheus-for-developers/ || https://github.com/danielfm/prometheus-for-developers
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Prometheus源码
