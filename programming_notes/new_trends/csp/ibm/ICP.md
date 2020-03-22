@@ -60,3 +60,17 @@ Synch started
 OK
 [root@c4-infra02 stocktrader-helm]#
 ```
+```sh
+[root@c4-infra02 4redis]# cloudctl catalog charts | grep redis
+redis                                7.0.1      ibm-community-charts   Open source, advanced key-value store.
+[root@c4-infra02 4redis]#
+[root@c4-infra02 4redis]# cloudctl catalog repos
+Name                   URL                                                                    Local
+ibm-charts             https://raw.githubusercontent.com/IBM/charts/master/repo/stable/       false
+local-charts           https://mycluster.icp:8443/helm-repo/charts                            true
+mgmt-charts            https://mycluster.icp:8443/mgmt-repo/charts                            true
+ppc64le-isv-charts     https://raw.githubusercontent.com/ppc64le/charts/master/repo/stable/   false
+ibm-community-charts   https://raw.githubusercontent.com/IBM/charts/master/repo/community/    false
+ibm-charts-public      https://registry.bluemix.net/helm/ibm/                                 false
+[root@c4-infra02 4redis]#
+```
