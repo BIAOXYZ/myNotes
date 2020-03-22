@@ -88,6 +88,14 @@ Python数据结构——链表的实现 http://python.jobbole.com/83953/
 ## `##` Tree
 ***// 决定按字母顺序排列各种树，因为实在太多了。有些看起来不是按字母顺序排的，是因为它是某种树的子类型。***
 
+### `###` Merge–Find Set / Disjoint-set data structure / union–find data structure
+
+并查集 https://zh.wikipedia.org/wiki/%E5%B9%B6%E6%9F%A5%E9%9B%86 || Disjoint-set data structure https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+
+以前我不懂并查集，直到看了古惑仔... https://leetcode-cn.com/circle/article/IVTJxZ/
+
+并查集详解 ——图文解说,简单易懂(转) https://blog.csdn.net/liujian20150808/article/details/50848646
+
 ### `###` Min-Max Tree
 
 【Gym - 100796C 】Minimax Tree https://www.cnblogs.com/flipped/p/7113756.html
