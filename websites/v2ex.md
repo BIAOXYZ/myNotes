@@ -168,6 +168,8 @@ postgres=# select regexp_replace('000A3829232472000', '.*(A\d{10}).*', '\1', 'g'
 
 ## 其他
 
+关于 RSA 的一些趣事 https://www.v2ex.com/t/655096
+
 有无计算机组成原理相关的课程和书推荐 https://www.v2ex.com/t/625781
 
 serverless 底层技术是什么 https://www.v2ex.com/t/578918
