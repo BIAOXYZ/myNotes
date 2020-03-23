@@ -230,7 +230,13 @@ unarchive – Unpacks an archive after (optionally) copying it from the local ma
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# [Ansible Plugins] (https://docs.ansible.com/ansible/latest/plugins/plugins.html)
+# [Advanced Playbooks Features] (https://docs.ansible.com/ansible/latest/user_guide/playbooks_special_topics.html)
+
+## [Delegation, Rolling Updates, and Local Actions](https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html)
+
+How to split an ansible local_action in multiple lines https://serverfault.com/questions/804736/how-to-split-an-ansible-local-action-in-multiple-lines
+
+## [Ansible Plugins](https://docs.ansible.com/ansible/latest/plugins/plugins.html)
 
 kubectl – Execute tasks in pods running on Kubernetes https://docs.ansible.com/ansible/latest/plugins/connection/kubectl.html
 
