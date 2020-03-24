@@ -75,6 +75,9 @@ C 的语法基本看完了，下面该学什么？ https://www.v2ex.com/t/649748
 
 ## python
 
+Python3 里面 u 和 U 的区别是什么 https://www.v2ex.com/t/655586
+- > https://stackoverflow.com/questions/46132917/python-3-and-x-vs-u-vs-u-in-string-encoding-and-why
+
 字典.keys()获得的键列表元素顺序是随机的吗？ https://www.v2ex.com/t/634283
 - > 随机的，需要顺序，用 ordered dict
 - > dart 有一个叫 LinkedHashMap,那是有顺序的
