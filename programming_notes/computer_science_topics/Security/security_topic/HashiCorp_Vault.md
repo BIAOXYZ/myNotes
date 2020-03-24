@@ -57,6 +57,7 @@ root@temptest packages $ cat ~/.bashrc
 // ...
 complete -C /usr/local/bin/vault vault
 
+// 这句执行完不只是vault自动完成可以了，bash的一些变量也变了，导致外观变了。
 root@temptest packages $ exec $SHELL
 [root@temptest packages]#
 ```
@@ -92,4 +93,28 @@ Root Token: s.coU0qNEvBQbEFfxuqLKaCK7Q
 Development mode should NOT be used in production installations!
 
 ==> Vault server started! Log data will stream in below:
+// ...
+// 其他日志信息省略
+// ...
+
+
+# 另起一个terminal
+// 故意试试先不export那个环境变量会怎么样
+root@temptest ~ $ vault status
+Error checking seal status: Get https://127.0.0.1:8200/v1/sys/seal-status: http: server gave HTTP response to HTTPS client
+root@temptest ~ $ export VAULT_ADDR='http://127.0.0.1:8200'
+root@temptest ~ $ vault status
+Key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.3.4
+Cluster Name    vault-cluster-0c58c058
+Cluster ID      4429c4e6-726e-abc3-49f1-fa73c79952a1
+HA Enabled      false
+root@temptest ~ $
 ```
+- Your First Secret https://learn.hashicorp.com/vault/getting-started/first-secret
