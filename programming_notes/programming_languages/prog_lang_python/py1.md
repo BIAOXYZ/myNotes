@@ -1,6 +1,8 @@
 
 # python Cheatsheet类
 
+Python Cheat Sheet https://www.pythonsheets.com/ || https://github.com/crazyguitar/pysheeet
+
 Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook) https://www.pythoncheatsheet.org/ || https://github.com/wilfredinni/python-cheatsheet
 
 Online resources for Python Crash Course (Second Edition), from No Starch Press https://ehmatthes.github.io/pcc_2e/ || https://github.com/ehmatthes/pcc_2e/
