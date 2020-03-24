@@ -1,4 +1,12 @@
 
+# python Cheatsheet类
+
+Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook) https://www.pythoncheatsheet.org/ || https://github.com/wilfredinni/python-cheatsheet
+
+Online resources for Python Crash Course (Second Edition), from No Starch Press https://ehmatthes.github.io/pcc_2e/ || https://github.com/ehmatthes/pcc_2e/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # python教程类
 
 Python官方教程
