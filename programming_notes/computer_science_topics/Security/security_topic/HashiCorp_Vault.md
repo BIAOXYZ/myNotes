@@ -118,3 +118,47 @@ HA Enabled      false
 root@temptest ~ $
 ```
 - Your First Secret https://learn.hashicorp.com/vault/getting-started/first-secret
+```sh
+root@temptest ~ $
+root@temptest ~ $ vault kv put secret/hello foo=world
+Key              Value
+---              -----
+created_time     2020-03-24T06:14:14.485735661Z
+deletion_time    n/a
+destroyed        false
+version          1
+root@temptest ~ $
+root@temptest ~ $ vault kv put secret/hello foo=world excited=yes
+Key              Value
+---              -----
+created_time     2020-03-24T06:15:10.887013874Z
+deletion_time    n/a
+destroyed        false
+version          2
+root@temptest ~ $
+root@temptest ~ $ vault kv get secret/hello
+====== Metadata ======
+Key              Value
+---              -----
+created_time     2020-03-24T06:15:10.887013874Z
+deletion_time    n/a
+destroyed        false
+version          2
+
+===== Data =====
+Key        Value
+---        -----
+excited    yes
+foo        world
+root@temptest ~ $
+root@temptest ~ $ vault kv get -field=excited secret/hello
+yes
+root@temptest ~ $
+root@temptest ~ $ vault kv get -format=json secret/hello | jq -r .data.data.excited
+yes
+root@temptest ~ $
+root@temptest ~ $ vault kv delete secret/hello
+Success! Data deleted (if it existed) at: secret/hello
+root@temptest ~ $
+```
+- Secrets Engines https://learn.hashicorp.com/vault/getting-started/secrets-engines
