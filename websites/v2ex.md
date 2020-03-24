@@ -119,6 +119,10 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
 
+有没有文章直接指出 MYSQL 四个隔离级别（特别中间两个）下到底怎么上锁，上什么锁的？什么不可重复读，幻读乱七八糟的 https://www.v2ex.com/t/655784
+
+abc 联合索引查 bc 走不走索引 https://www.v2ex.com/t/655560
+
 PostgreSQL 用正则表达式对字符串进行截取的方法 https://www.v2ex.com/t/654241
 - > `select regexp_replace(str,'.*(A\d{10}).*','\1','g')`
 ```sh
