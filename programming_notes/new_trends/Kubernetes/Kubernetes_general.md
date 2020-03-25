@@ -384,6 +384,12 @@ DNS for Services and Pods https://kubernetes.io/docs/concepts/services-networkin
 
 使用CoreDNS实现Kubernetes基于DNS的服务发现 https://blog.frognew.com/2018/10/using-coredns-for-kubernetes-service-discovery.html
 
+An Introduction to the Kubernetes DNS Service https://www.digitalocean.com/community/tutorials/an-introduction-to-the-kubernetes-dns-service
+
+Debugging DNS Resolution https://v1-17.docs.kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
+
+Pod 与 Service 的 DNS https://v1-17.docs.kubernetes.io/zh/docs/concepts/services-networking/dns-pod-service/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes client
