@@ -184,6 +184,13 @@ postgres=# select regexp_replace('000A3829232472000', '.*(A\d{10}).*', '\1', 'g'
 
 ## 其他
 
+请教一下，阅读 Linux Kernel 最快的解决方案（@Windows）是啥呢? https://www.v2ex.com/t/656319
+- > https://elixir.bootlin.com/linux/v5.6-rc7/source
+- > https://elixir.bootlin.com/linux/latest/source
+- > qtcreator，很久前看内核源码是用这个，现在 c/c++源码基本也是这个。另外，添加源码的时候，不要把所有`**_arch` 都加到工程，只加关注的几个
+- > neovim + ctags，然后用 vim 插件 leaderF，堪称搜索神器
+- > 使用 sourcegraph https://sourcegraph.com/github.com/torvalds/linux
+
 关于 RSA 的一些趣事 https://www.v2ex.com/t/655096
 
 有无计算机组成原理相关的课程和书推荐 https://www.v2ex.com/t/625781
