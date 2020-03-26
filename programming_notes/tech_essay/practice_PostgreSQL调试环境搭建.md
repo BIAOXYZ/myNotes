@@ -39,8 +39,9 @@ mkdir -p ~/pg/postgrescode
 ## 安装过程（源码安装PostgreSQL）
 
 - 在`/home/pguser/pg/`目录执行:
-  > git clone git@github.com:postgres/postgres.git
+  > `git clone git@github.com:postgres/postgres.git` || 或者不想配密钥的话： `git clone https://github.com/postgres/postgres.git`
   >> 执行完成后多了`/home/pguser/pg/postgres/`。我为了好区分也顺便试试（git仓库克隆下来后改名还行不行），就把路径最后的postgres改成了postgrescode。下次就没必要再这么画蛇添足了。
+  >>> 下次直接只建到`/home/pguser/pg/`这层目录就行了，postgrescode没必要再涉及。此外，请参考**文章最后那个katacoda上提炼的最快速安装版本**。
  
 - 源码下载完成后基本就是Linux下最常见的`config-make-makeinstall`三部曲，这中间会有些问题，一一解决就好。
   * 首先可以在代码主目录执行下`./configure`。其目的是看看缺啥依赖，先把这些依赖搞定。如果直接不报错一次过或者依赖都搞定以后，再执行下`make distclean`把刚才执行configure步骤产生的可能影响接下来的正确安装的东西都清理掉————`make distclean`、`make clean`、`make uninstall`等命令的作用不要忽视了（参见参考链接`【0】`）。
