@@ -163,6 +163,14 @@ root@temptest ~ $
 ```
 - Secrets Engines https://learn.hashicorp.com/vault/getting-started/secrets-engines
 
+# Vault其他帖子
+
+【shuhari.dev/】
+- 私密信息管理利器 HashiCorp Vault——简介 https://juejin.im/entry/5a7c0fcd5188255efc5f457e
+- 私密信息管理利器 HashiCorp Vault——启动和读写 https://shuhari.dev/blog/2018/02/vault-upstart
+
+Vault 笔记 https://huangjunwen.github.io/post/2017/vault/
+
 # Vault竞品
 
 Vault vs. Keywhiz https://www.vaultproject.io/docs/vs/keywhiz/
