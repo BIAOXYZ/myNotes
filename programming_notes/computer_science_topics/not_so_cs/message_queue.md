@@ -1,4 +1,8 @@
 
+# MQ general
+
+消息队列和 RocketMQ 入门总结 https://mp.weixin.qq.com/s/eXzq5jg-2KkKziSPkcSQ5Q
+
 # celery
 
 Celery (software) https://en.wikipedia.org/wiki/Celery_(software)
