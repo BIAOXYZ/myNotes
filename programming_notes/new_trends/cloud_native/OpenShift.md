@@ -56,6 +56,8 @@ Django Example: This is a Django project that you can use as the starting point 
 
 # openshift安装
 
+Install an OpenShift cluster https://github.com/openshift/installer
+
 Simple all-in-one localhost Installation fails with "Failed to start Atomic OpenShift Master API." #7379 https://github.com/openshift/openshift-ansible/issues/7379
 
 离线生产级部署openshift https://github.com/xiaoping378/openshift-deploy
