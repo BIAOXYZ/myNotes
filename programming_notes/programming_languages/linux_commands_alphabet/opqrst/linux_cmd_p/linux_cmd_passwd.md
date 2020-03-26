@@ -117,4 +117,16 @@ Help options:
   -?, --help              Show this help message
   --usage                 Display brief usage message
 
+
+// 后来【2020.03.26】还是补一下吧：
+root@temptest ~ $ useradd -m pguser -d /home/pguser
+root@temptest ~ $ ll /home/
+total 12
+drwx------. 4 bjweixj bjweixj 4096 Oct 15 14:08 bjweixj
+drwx------. 3 pguser  pguser  4096 Mar 26 09:02 pguser
+drwx------. 3 test1   test1   4096 Oct 15 12:45 test1
+
+root@temptest ~ $ echo testTEST20172018 | passwd --stdin pguser
+Changing password for user pguser.
+passwd: all authentication tokens updated successfully.
 ```

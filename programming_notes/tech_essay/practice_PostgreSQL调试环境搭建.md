@@ -7,7 +7,17 @@
 ## 其他环境条件说明
 
 1. 新建了一个系统用户`pguser`及其HOME目录。
+```sh
+useradd -m pguser -d /home/pguser
+echo test2018 | passwd --stdin pguser 
+# ubuntu下的passwd命令没有--stdin参数，此时要么就老老实实用最基本的交互式的passwd pguser
+# 要么就参考我在passwd命令里的总结，用chpasswd
+```
 2. 在`/home/pguser/pg/postgrescode/`下存放pg源码，不过这个位置是啥叫啥没影响。
+```sh
+su - pguser
+mkdir -p ~/pg/postgrescode
+```
 
 ## 参考链接
 
