@@ -57,6 +57,10 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 - DOTA2：再引争议！VG拿到震中杯Major冠军，MVP却又给亚军！ http://www.sohu.com/a/324059377_100124359
 - Dota2 ESL孟买站中国战队夺冠，主办方把MVP颁给亚军引不满 http://www.guancha.cn/sports/2019_04_22_498658.shtml
 
+## 游戏更新类
+
+DOTA2 3月18日更新日志：7.25游戏性更新 https://mp.weixin.qq.com/s/tznOrmZ4dy9_W2j-RGxzFQ 【`2020.03.18`】
+
 【DOTA2世外之争开启】新英雄加入+7.23版本大更新 https://mp.weixin.qq.com/s/Fp7VH47uAEQzGo2frp5IAA 【`2019.11.27`】
 ```
 更新主要内容：
