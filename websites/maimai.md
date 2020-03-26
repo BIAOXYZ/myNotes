@@ -10,6 +10,20 @@
 
 # 脉脉算法与数据结构
 
+leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU1NzMyNjQsImlhdCI6MTU4NTIxMTQ4Nn0.9fpBl4A5y6yG56Cdbi6-L4X3alNGk5gBl9FD9HgrGwY
+- > 老哥先做84题，然后85就明白了
+- > 有一道神题，Count of Range Sums，把离散化，uniq，二分查找，树状数组，前缀和都搞进去了，这道题我写了一个月了
+- > 那是你没遇到过数论背景下的树形dp
+- > 这题我面Amazon被面到了，84 85一起面的
+
 最近面试的算法题，我想了很久还是没想到，求大佬指点。问题：“假设有一个数字类型的数组，量级达到数亿亿别。如何找到最大的第十个数字？” 答：“新建10个元素的数组，循环取出大数组的数据和小数组对比，大的替换到小数组，小的则抛弃” 再问：“如果要找最中间的那个数字，应该怎么找？” https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU1NDMwMjYsImlhdCI6MTU4NDkzNjAyMX0.eq-ByP2zeWe62KfZbyWpqWl2kLbWaQzek2qk1EtBw58
 - > 二进制分治，按最高位是0或者1写入到两个文件，并记录两个文件写了多少个元素，然后就可以知道中间那个数在哪个文件里。接下来对次高位进行同样的操作。。。最后剩下的就是所求。其实就是转换成了求第k个数。
 - > 建两个堆，一个大顶堆一个小顶堆。一个个读取数据放入两个堆中，注意需要保持两个堆的数据个数绝对值在1以内。这样两个堆的堆顶即为中间，把这些数据都读完，要找的数据就是两个堆的堆顶数据了。
+
+# 脉脉其他
+
+面试题：如何快速定位死锁 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU1NTQzNTYsImlhdCI6MTU4NTIwOTUxMX0.UAvO_vPImQ4ZYxjwDvqOwZB3r0JcG4sNzABjF7nC7F4
+- > top看cpu占用，看load
+- > 如果是C++，gdb attach 到进程上，generate core，gdb 打开 core，threads apply all bt
+- > C++一般是 top -Hp和pstack配合用
+- > pstack 就够了
