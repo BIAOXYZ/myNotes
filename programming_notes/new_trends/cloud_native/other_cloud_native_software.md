@@ -53,6 +53,18 @@ Kubernetes-基于flannel的集群网络 https://www.kubernetes.org.cn/4105.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Calico
+
+## Calico官方
+
+Cloud native networking and network security https://docs.projectcalico.org/ || https://github.com/projectcalico/calico
+
+## Calico其他
+
+calico网络模型中的路由原理 https://segmentfault.com/a/1190000016565044
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # GlusterFS
 
 Ceph vs GlusterFS vs MooseFS vs HDFS vs DRBD https://computingforgeeks.com/ceph-vs-glusterfs-vs-moosefs-vs-hdfs-vs-drbd/
