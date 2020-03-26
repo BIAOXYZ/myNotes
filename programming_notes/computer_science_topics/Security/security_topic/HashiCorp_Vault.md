@@ -162,3 +162,11 @@ Success! Data deleted (if it existed) at: secret/hello
 root@temptest ~ $
 ```
 - Secrets Engines https://learn.hashicorp.com/vault/getting-started/secrets-engines
+
+# Vault竞品
+
+Vault vs. Keywhiz https://www.vaultproject.io/docs/vs/keywhiz/
+
+Keywhiz vs Vault https://stackshare.io/stackups/keywhiz-vs-vault
+
+互联网项目里，如何以正确的姿势保存密码？ - 陈天的文章 - 知乎 https://zhuanlan.zhihu.com/p/20135083
