@@ -4,6 +4,14 @@
 HashiCorp Vault https://www.hashicorp.com/blog/vault-announcement/
 - > Today ***{APR 28 2015}*** we announce Vault—a tool for securely managing secrets and encrypting data in-transit. From storing credentials and API keys to encrypting passwords for user signups, Vault is meant to be a solution for all secret management needs.
 
+## Vault官方github
+
+Vault -- A tool for secrets management, encryption as a service, and privileged access management https://github.com/hashicorp/vault
+
+Helm chart to install Vault and other associated components. https://github.com/hashicorp/vault-helm
+
+Vault + Kubernetes (vault-k8s) -- First-class support for Vault and Kubernetes. https://github.com/hashicorp/vault-k8s
+
 ## Vault官方文档
 
 Transit Secrets Engine https://www.vaultproject.io/docs/secrets/transit/index.html
