@@ -108,6 +108,39 @@ https://stackoverflow.com/questions/252782/strdup-what-does-it-do-in-c
 C语言malloc和free【转载】
 http://blog.csdn.net/r91987/article/details/6337032
 
+c语言 malloc函数详解，学习使我快乐... - 午夜逛街的黛玛的文章 - 知乎 https://zhuanlan.zhihu.com/p/95244902
+
+C 库函数 - malloc() https://www.runoob.com/cprogramming/c-function-malloc.html
+```c
+// https://paiza.io/en/projects/new?language=c
+----------------------------------------------------------------------------------------------------
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+ 
+int main()
+{
+   char *str;
+ 
+   /* 最初的内存分配 */
+   str = (char *) malloc(15);
+   strcpy(str, "runoob");
+   printf("String = %s,  Address = %u\n", str, str);
+ 
+   /* 重新分配内存 */
+   str = (char *) realloc(str, 25);
+   strcat(str, ".com");
+   printf("String = %s,  Address = %u\n", str, str);
+ 
+   free(str);
+ 
+   return(0);
+}
+----------------------------------------------------------------------------------------------------
+// 运行结果：
+String = runoob,  Address = 18444896
+String = runoob.com,  Address = 18449040
+```
 
 ## C长跳转
 
