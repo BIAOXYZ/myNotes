@@ -265,7 +265,7 @@ SomeyaMako
 
 ### `好想被钉宫辱骂啊`各个版本
 
-好想被钉宫辱骂啊 https://www.bilibili.com/video/av638240/ 【`2013-07-08 08:31:40  最高全站日排行12名`】
+好想被钉宫辱骂啊 https://www.bilibili.com/video/av638240/ 【`2013-07-08 08:31:40  最高全站日排行12名`】 || https://www.bilibili.com/video/BV1Es411f7F3
 ```
 大阪2dj
 我想过了，为什么我会喜欢被钉宫骂。以为现实生活中，我连被可爱女孩子骂的机会都没有。。。根本就是平行线啊。
@@ -287,7 +287,7 @@ SomeyaMako
 - 好想被钉宫辱骂啊 https://www.acfun.cn/v/ac743365 【`发布于 2013-7-19`】
 - Haiyore! Iori-chan Ｗ https://www.nicovideo.jp/watch/sm21303202 【`投稿日時 2013/07/07 23:14`】
 
-来接受钉宫的洗礼吧 https://www.bilibili.com/video/av11276448/ 【`2017-06-12 20:35:46`】
+来接受钉宫的洗礼吧 https://www.bilibili.com/video/av11276448/ 【`2017-06-12 20:35:46`】 || https://www.bilibili.com/video/BV16x411874A/
 > 此视频只是av638240的十小时延长版。说我盗视频的，请你去对比一下时间！去对比一下同一秒数的音频！
 
 ### `演唱会现场被要求辱骂观众`各个版本
