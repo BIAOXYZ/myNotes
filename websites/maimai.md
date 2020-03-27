@@ -22,6 +22,13 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉其他
 
+面试题提问，有http为什么要用dubbo，期待大佬们的回答 阿里腾讯美团滴滴华为引流 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU2MDk5MjQsImlhdCI6MTU4NTMwNzk0NH0.WsAUUfUHlGLEhXypL6lhqlcev0pKWShiUtY0PrmMNqU
+- > 不用维护域名，因为域名解析的缓存千奇百怪
+- > 长链接，适合高并发，http每次需要三次握手四次挥手
+- > 知乎上热贴，rpc比http强在哪，可以看看
+- > 当你每扩容一批机器你就得切nginx你就知道为什么了
+- > 链接是一方面，另一方面http报文里面有很多无用信息，rpc协议通常都是相当简化的
+
 面试题：如何快速定位死锁 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU1NTQzNTYsImlhdCI6MTU4NTIwOTUxMX0.UAvO_vPImQ4ZYxjwDvqOwZB3r0JcG4sNzABjF7nC7F4
 - > top看cpu占用，看load
 - > 如果是C++，gdb attach 到进程上，generate core，gdb 打开 core，threads apply all bt
