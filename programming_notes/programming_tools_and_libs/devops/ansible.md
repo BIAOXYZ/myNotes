@@ -207,6 +207,10 @@ Ansible Galaxy https://docs.ansible.com/ansible/latest/reference_appendices/gala
 
 Ansible 进阶技巧 https://www.ibm.com/developerworks/cn/linux/1608_lih_ansible/index.html
 
+## Ansible Vault
+
+Ansible Vault https://docs.ansible.com/ansible/2.9/user_guide/vault.html
+
 ## Ansible Jinja2模板
 
 Templating (Jinja2) https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html
