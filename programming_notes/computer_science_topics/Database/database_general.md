@@ -44,6 +44,8 @@ Shared-nothing architecture https://en.wikipedia.org/wiki/Shared-nothing_archite
 - > A shared-nothing architecture (SN) is a distributed-computing architecture in which each update request is satisfied by a single node (processor/memory/storage unit). ***The intent is to eliminate contention among nodes***. Nodes do not share (independently access) ***memory*** or ***storage***. One alternative architecture is ***shared everything***, in which requests are satisfied by ***arbitrary combinations of nodes***. This may introduce contention, as multiple nodes may seek to update the same data at the same time.
 - > SN eliminates single points of failure, allowing the overall system to continue operating despite failures in individual nodes and allowing individual nodes to upgrade without a system-wide shutdown.
 - > A SN system can scale simply by adding nodes, since no central resource bottlenecks the system. Another term for SN is ***sharding***. A SN system typically partitions its data among many nodes.
+- > Michael Stonebraker at the University of California, Berkeley used the term in a 1986 database paper. Teradata delivered the first SN database system in 1983.
+  >> The Case for Shared Nothing https://dsf.berkeley.edu/papers/hpts85-nothing.pdf
 
 数据库架构设计的三种模式：share nothing , share everythong , share disk https://www.cnblogs.com/kzwrcom/p/6397709.html
 - > Shared Everthting:一般是针对单个主机，完全透明共享CPU/MEMORY/IO，并行处理能力是最差的，`典型的代表SQLServer`
@@ -57,6 +59,16 @@ What are the differences between shared nothing, shared memory, and shared stora
   <br><br> If you and your friend solve the problem in the same classroom with the same blackboard, so that you can see each other working through the problem, this is similar to **shared memory** architecture. You rub the blackboard clean when you finish, but it helps you both to solve the problems.
   <br><br> If you and your friend solve both problems together, and write down the solutions in the same notebook, it is similar to the **shared storage** architecture - you are sharing the notebook where the final solutions are going to be.
   <br><br> I am equating memory to the blackboard, and storage to your notebooks. Assuming you both know how to solve both problems, **shared nothing** architecture is going to be fastest -- you don't have to wait to use the blackboard or the notebook.
+
+Parallel Programming - Architecture (Shared nothing, Shared disk, Shared Memory) https://gerardnico.com/data/concurrency/architecture
+> ![](https://gerardnico.com/_media/data/concurrency/taxonomy_of_parallel_architecture.jpg)
+>> 注：上图出自论文《Parallel Database Systems: The Future of Database Processing or a Passing Fad?》 https://www.microsoft.com/en-us/research/publication/parallel-database-systems-the-future-of-database-processing-or-a-passing-fad/ 所以可见 `share disk` 和 `share memory` 是比 `share storage` 更正式的。
+
+**关于share nothing、share everything、share disk、share memory、share storage的总结**：
+- share nothing连wiki词条都有，并且也有大牛背书。share everything是share nothing的反面，也很直观。
+- 关键在于后面三个，
+
+## 
 
 【from draveness】
 - 浅谈数据库并发控制 - 锁和 MVCC https://draveness.me/database-concurrency-control
