@@ -47,6 +47,10 @@ Shared-nothing architecture https://en.wikipedia.org/wiki/Shared-nothing_archite
 - > Michael Stonebraker at the University of California, Berkeley used the term in a 1986 database paper. Teradata delivered the first SN database system in 1983.
   >> The Case for Shared Nothing https://dsf.berkeley.edu/papers/hpts85-nothing.pdf
 
+Shared disk architecture https://en.wikipedia.org/wiki/Shared_disk_architecture
+- > A shared disk architecture (SD) is a distributed computing architecture in which all disks are accessible from all cluster nodes. It contrasts with shared nothing architecture, in which all nodes have sole access to distinct disks. Multiple processors can access all disks directly via intercommunication network and ***every processor has local memory***.
+- > Shared Disk has ***two advantages*** over Shared memory. Firstly, each processor has its own memory, the memory bus is not a bottleneck; secondly, the system offers a simple way to provide a degree of fault tolerance.
+
 数据库架构设计的三种模式：share nothing , share everythong , share disk https://www.cnblogs.com/kzwrcom/p/6397709.html
 - > Shared Everthting:一般是针对单个主机，完全透明共享CPU/MEMORY/IO，并行处理能力是最差的，`典型的代表SQLServer`
 - > Shared Disk：各个处理单元使用自己的`私有 CPU和Memory`，共享磁盘系统。`典型的代表Oracle Rac`， 它是数据共享，可通过增加节点来提高并行处理的能力，扩展能力较好。其类似于`SMP（对称多处理）`模式，但是当存储器接口达到饱和的时候，增加节点并不能获得更高的性能 。
@@ -65,8 +69,15 @@ Parallel Programming - Architecture (Shared nothing, Shared disk, Shared Memory)
 >> 注：上图出自论文《Parallel Database Systems: The Future of Database Processing or a Passing Fad?》 https://www.microsoft.com/en-us/research/publication/parallel-database-systems-the-future-of-database-processing-or-a-passing-fad/ 所以可见 `share disk` 和 `share memory` 是比 `share storage` 更正式的。
 
 **关于share nothing、share everything、share disk、share memory、share storage的总结**：
-- share nothing连wiki词条都有，并且也有大牛背书。share everything是share nothing的反面，也很直观。
-- 关键在于后面三个，
+- 首先不论是 share xxx 或者 shared xxx（或者中间有连字符），都只是不同的表达形式。
+- share nothing连wiki词条都有，并且也有大牛背书。share everything是share nothing的反面，也很直观。这两个本身意义上也很明显。
+- share disk不论wiki词条还是民间/网上，目前看都认为是“**磁盘共享，但内存是独立**（CPU在这种情况下更是独立，无需赘述）”，所以这个争议也不大，该词汇正式程度仅次于前两个。
+- share memory好歹有大牛文章，所以正式程度和share disk差不多。但这里一个关键的问题是：“**CPU肯定独立，内存share，那disk呢？**”——论文[《Parallel Database Systems: The Future of Database Processing or a Passing Fad?》](https://jimgray.azurewebsites.net/papers/CacmParallelDB.pdf)里给出的答案是：**disk也是共享的(或者至少是每个CPU都能访问到每块磁盘)**。——个人认为：内存一旦是共享的，内存又介于磁盘和CPU之间，磁盘基本也就等于共享了。
+  * > How can we build scaleable multi-processor systems? Stonebraker suggested the following simple taxonomy for the spectrum of designs (see Figures 3 and 4) [STON86]:
+    + > `shared-memory`: All processors share direct access to a common global memory ***and to all disks***. The IBM/370, and Digital VAX, and Sequent Symmetry multi-processors typify this design.
+    + > shared-disks: Each processor has a private memory but has direct access to all disks. The IBM Sysplex and original Digital VAXcluster typify this design.
+    + > shared-nothing: Each memory and disk is owned by some processor that acts as a server for that data. Mass storage in such an architecture is distributed among the processors by connecting one or more disks. The Teradata, Tandem, and nCUBE machines typify this design.
+- share storage则更像是一个民间口口相传出来的词。至于其意义，有时是接近share disk（各个节点还是有自己的独立内存，但是磁盘是公共的）；有时是接近share memory（除了CPU是独立的，内存和磁盘都是共享的）。该词汇的正式程度最低。
 
 ## 
 
