@@ -1,83 +1,16 @@
 
-# others
-
-Modernize your application deployment with Lift and Shift https://developers.redhat.com/blog/2018/10/18/modernize-your-application-deployment-with-lift-and-shift/
-
-## AIOps
-
-AIOps学习资料汇总，欢迎一起补全这个仓库，欢迎star https://github.com/linjinjin123/awesome-AIOps/
-
-What is AIOps? https://www.appdynamics.com/central-nervous-system/what-is-ai-ops
-
-### AIOps公司
-
-dynatrace https://www.dynatrace.com/solutions/application-monitoring/
-
-# BMC & IPMI
-
-BMC简介 https://blog.csdn.net/jiangwei0512/article/details/76358995
-
-baseboard management controller：底板管理控制器 https://searchnetworking.techtarget.com.cn/whatis/12-24883/
-
-BMC是什麼? 能吃嗎? https://medium.com/@lioukiki1/bmc%E6%98%AF%E4%BB%80%E9%BA%BC-%E8%83%BD%E5%90%83%E5%97%8E-bee457ea5c37
-
-使用 ipmitool 实现 Linux 系统下对服务器的 ipmi 管理 https://www.ibm.com/developerworks/cn/linux/l-ipmi/index.html
-
-## BMC & IPMI wiki
-
-Intelligent Platform Management Interface https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface 【[IPMI](https://zh.wikipedia.org/wiki/IPMI)】
-- Out-of-band management https://en.wikipedia.org/wiki/Out-of-band_management 【[带外管理](https://zh.wikipedia.org/wiki/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86)】
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-# xCAT官网
-
-xCAT https://en.wikipedia.org/wiki/XCAT
-
-Welcome to xCAT. xCAT is an open-source tool for automating deployment, scaling, and management of bare metal severs and virtual machines. https://xcat.org/
-
-Code repo for xCAT core packages https://github.com/xcat2/xcat-core
-
-# xCAT文档
-
-Extreme Cloud Administration Toolkit https://xcat-docs.readthedocs.io/en/stable/
-- xdsh https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/references/man1/xdsh.1.html
-- rinstall https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/references/man8/rinstall.8.html
-- rcons - Remote Console https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/management/basic/rcons.html
-- lsdef https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/references/man1/lsdef.1.html
-- MTMS-based Discovery https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/discovery/mtms/
-
-# xCAT其他
-
-集群管理和配置工具 xCAT https://www.oschina.net/p/xcat
-
-7 Best Free Linux Server Provisioning Tools https://www.linuxlinks.com/serverprovisioning/
-
-|Server Provisioning||
-|--|--|
-| Spacewalk |	Systems management software developed by Red Hat |
-| xCAT |	Extreme Cluster Administration Toolkit |
-| FAI |	High quality tool for fully automatic installation of Linux systems |
-| [Cobbler](https://www.linuxlinks.com/Cobbler/) |	OS provisioning and profile management |
-| m23	| Software distribution and management system |
-| OpenQRM	| Systems management platform |
-| Foreman	| Life cycle systems management tool |
-
-## 
-
-Kickstart (Linux) https://en.wikipedia.org/wiki/Kickstart_(Linux)
-> Cobbler (software) https://en.wikipedia.org/wiki/Cobbler_(software)
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
 # Ansible Tower官网
 
 Red Hat Ansible Tower https://www.ansible.com/products/tower
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Ansible Tower文档
 
 - Ansible Tower https://docs.ansible.com/ansible/latest/reference_appendices/tower.html
 - Ansible Tower https://ansible-tran.readthedocs.io/en/latest/docs/tower.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Ansible Tower其他
 
@@ -85,7 +18,7 @@ Ansible vs Ansible Tower https://www.upguard.com/articles/ansible-vs.-ansible-to
 
 Getting Started With Ansible Tower https://dzone.com/articles/getting-started-with-ansible-tower-hands-on
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Ansible官网
 
@@ -93,15 +26,19 @@ Ansible Documentation https://docs.ansible.com/ansible/latest/index.html
 
 A few starter examples of ansible playbooks, to show features and how they work together. See http://galaxy.ansible.com for example roles from the Ansible community for deploying many popular applications. https://github.com/ansible/ansible-examples
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible general
 
 Ansible (software) https://en.wikipedia.org/wiki/Ansible_(software)
 
 SaltStack 与 Ansible 选择？ - 知乎 https://www.zhihu.com/question/22707761
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible系列文章/书籍 
 
-Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【:star:】
+Ansible专题整理 http://www.cnblogs.com/aslongas/p/7306548.html 【[`*`][:star:]】
 
 Ansible中文权威指南 https://ansible-tran.readthedocs.io/en/latest/index.html
 
@@ -111,13 +48,15 @@ Ansible中文权威指南 https://ansible-tran.readthedocs.io/en/latest/index.ht
 
 Ansible 专题文章总揽 https://www.jianshu.com/p/c56a88b103f8
 - > 倾情巨献，ansible2.5版本系列视频： http://www.acfun.cn/v/ac4413997 || https://www.bilibili.com/video/av25424954
-- Ansible 小手册系列 十三（Jinja2） https://www.jianshu.com/p/ae74f5f39828  【:star:】
+- Ansible 小手册系列 十三（Jinja2） https://www.jianshu.com/p/ae74f5f39828  【[`*`][:star:]】
 
 Ansible examples from Ansible for DevOps. https://www.ansiblefordevops.com/ || https://github.com/geerlingguy/ansible-for-devops
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible快速开始
 
-Ansible入门 https://getansible.com/  【:star:】
+Ansible入门 https://getansible.com/  【[`*`][:star:]】
 - The ansible examples in this repo are for the book ansible入门(ansible-first-book) https://github.com/ansible-book/playbook-examples-chapter3-ansible-advanced
 - Playbook的“Package”(role语句) https://getansible.com/advance/playbook/roleyu_ju
   * > Role是比include更强大灵活的代码重用和分享机制。Include类似于编程语言中的include，是重用单个文件的，功能有限。而Role类似于编程语言中的“Package”，可以重用一组文件形成完整的功能。
@@ -129,10 +68,12 @@ Ansible之inventory和常用模块介绍 https://www.jianshu.com/p/398af9fd0172
 https://sapser.github.io/category/ansible/
 - ansible学习之十二：Using Lookups https://sapser.github.io/ansible/2014/07/22/ansible-using-lookups
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible命令实战
 
 ## inventory file的组名起成`[all]`的话等于没起
-```
+```sh
 ----------------------------------------------------------------------------------------------------
 // 修改前的inventory file，注意第一个组名是[all]。
 [root@druidcluster1 generalsoftware]# cat ansiblehost 
@@ -254,9 +195,13 @@ Ansible will search for roles in the following way:
 
 Using Variables https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible Galaxy
 
 Ansible Galaxy https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Ansible其他
 
@@ -279,4 +224,3 @@ How to debug Ansible issues? https://stackoverflow.com/questions/42417079/how-to
 Debugging ansible playbooks, plays and tasks https://prefetch.net/blog/2017/07/19/debugging-ansible-playbooks-plays-and-tasks/
 > Another super useful ansible debugging option is the ability to step through your playbooks one task at a time. If your playbook contains a series of tasks that build off of each other this option can be used to stop execution so you can review what a task did to a system. To step through execution you can use the `“–step”` option:
 >> `ansible-playbook --step playbooks/disable-root-sshd-login.yml`
-
