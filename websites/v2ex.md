@@ -128,6 +128,13 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
 
+关于 B+tree 索引的疑问 https://www.v2ex.com/t/657136
+- > 在网上遇到自己不确定知识点的时候，最简单且有效的办法就是自己动手验证。MySQL InnoDB 存储引擎实际存储就 3 个文件: .opt, .frm, .ibd ，其中.ibd 为实际存储数据和索引的地方，聚簇索引和辅助索引数据均在该文件中。建一张测试表，写点儿数据，然后闷头分析.ibd 文件就行了。
+当初我对这东西也很有疑问，动手分析了之后明白了个大概。后面自己写了篇博客，希望对你有帮助。PS: 推荐《 MySQL 技术内幕-InnoDB 存储引擎》，相信能解答你许多疑惑。
+  >> MySQL物理存储方式 https://smartkeyerror.com/MySQL-physical-structure
+
+关于用 Redis 限制用户行为频率的方法，麻烦 V 友帮看看 https://www.v2ex.com/t/657135
+
 有没有文章直接指出 MYSQL 四个隔离级别（特别中间两个）下到底怎么上锁，上什么锁的？什么不可重复读，幻读乱七八糟的 https://www.v2ex.com/t/655784
 
 abc 联合索引查 bc 走不走索引 https://www.v2ex.com/t/655560
