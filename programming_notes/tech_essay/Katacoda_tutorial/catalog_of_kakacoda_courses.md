@@ -1,4 +1,8 @@
 
+# 各种playground
+
+Vault Playground https://www.katacoda.com/hashicorp/scenarios/vault-playground
+
 # Openshift
 
 OpenShift, The Kubernetes platform for big ideas https://www.katacoda.com/openshift
