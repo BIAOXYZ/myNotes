@@ -312,6 +312,14 @@ git fetch origin dev（dev为远程仓库的分支名）
 git checkout -b dev(本地分支名称) origin/dev(远程分支名称)
 ```
 
+怎么用git clone 远程的所有分支 https://www.jianshu.com/p/0fe715a7fbb3
+```git
+或者使用-t参数，它默认会在本地建立一个和远程分支名字一样的分支
+$ git checkout -t origin/feature
+```
+>> TODO：这个帖子里给了一个StackOverflow的链接，里面有命令，但是没试过。回来试吧。
+>>> git 从远程仓库获取所有分支 https://blog.csdn.net/wu1169668869/article/details/83345633
+
 ----------------------------------------------------------------------------------------------------
 
 #### git diff会有些^M
