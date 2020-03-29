@@ -592,6 +592,7 @@ Update API Objects in Place Using kubectl patch https://kubernetes.io/docs/tasks
 - 详解 Kubernetes Deployment 的实现原理 https://draveness.me/kubernetes-deployment
 - 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
 - 详解 Kubernetes Job 和 CronJob 的实现原理 https://draveness.me/kubernetes-job-cronjob
+- 详解 Kubernetes 垃圾收集器的实现原理 https://draveness.me/kubernetes-garbage-collector
 
 【by 程序员欣宸】：
 - Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
@@ -636,6 +637,18 @@ Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-c
 
 如何基于kubernetes开发自定义的Controller https://blog.csdn.net/jiangmingjun1234/article/details/79296542
 - > [源码分析] client-go的使用及源码分析 https://www.huweihuang.com/article/source-analysis/client-go-source-analysis/
+
+## finalizer相关源码
+
+kube-controller分析(二)-finalizer机制-v1.5.2 https://fankangbest.github.io/2017/10/24/kube-controller%E5%88%86%E6%9E%90(%E4%BA%8C)-finalizer%E6%9C%BA%E5%88%B6-v1-5-2/
+
+Kubernetes 实战-Operator Finalizers 实现 https://zdyxry.github.io/2019/09/13/Kubernetes-%E5%AE%9E%E6%88%98-Operator-Finalizers/
+
+Using Finalizers https://github.com/kubernetes-sigs/kubebuilder/blob/8b53abeb4280186e494b726edf8f54ca7aa64a49/docs/book/src/reference/using-finalizers.md
+
+Kubernetes CRD Finalizer https://stackoverflow.com/questions/53057185/kubernetes-crd-finalizer
+> This sample repository show demo use of Finalizer and Initializer. Finalizer are used here for garbage collection.
+>> Practice code for kubernetes initializer and finalizer https://github.com/hossainemruz/k8s-initializer-finalizer-practice
 
 ## 待分类源码分析
 
