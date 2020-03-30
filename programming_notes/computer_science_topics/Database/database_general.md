@@ -28,6 +28,8 @@ Postgres Weekly https://postgresweekly.com/
 
 图数据库杂谈 https://zhuanlan.zhihu.com/graphdbs
 
+数据系统论文阅读小组 https://zhuanlan.zhihu.com/db-readings
+
 # 一般性的
 
 ### 查看数据库core_dump文件的位置
@@ -212,6 +214,10 @@ What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [
 # 故障恢复
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
+
+# OLAP
+
+列存（Column-Oriented）数据库学习笔记：内存数据压缩 https://www.jianshu.com/p/2e169006798f
 
 # 其他
 
