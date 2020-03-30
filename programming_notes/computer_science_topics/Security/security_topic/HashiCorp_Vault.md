@@ -172,6 +172,14 @@ root@temptest ~ $
 - Secrets Engines https://learn.hashicorp.com/vault/getting-started/secrets-engines
   * > As mentioned above, Vault behaves similarly to a [virtual filesystem](https://en.wikipedia.org/wiki/Virtual_file_system). The read/write/delete/list operations are forwarded to the corresponding secrets engine, and the secrets engine decides how to react to those operations. <br> This abstraction is incredibly powerful. It enables Vault to interface directly with physical systems, databases, HSMs, etc. But in addition to these physical systems, Vault can interact with more unique environments like AWS IAM, dynamic SQL user creation, etc. all while using the same read/write interface.
 
+# Vault与其他整合
+
+Kubernetes https://www.vaultproject.io/docs/platform/k8s/index.html
+
+## 与Terraform整合
+
+Vault Provider https://www.terraform.io/docs/providers/vault/index.html
+
 # Vault其他帖子
 
 【shuhari.dev/】
