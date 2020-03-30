@@ -64,6 +64,9 @@ cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 ## algorithm and data structure
 
+不知不觉搞了 200 道了 https://www.v2ex.com/t/657505
+> https://github.com/LeoSirius/leetcode_solutions 且除了 sql 之外都有单元测试，主要是 cpp，部分有 py 。部分有多种思路
+
 [第 5 期] 算法精选-你应该知道的 KMP 算法 https://www.v2ex.com/t/652852
 
 ## c/c++
@@ -188,6 +191,21 @@ postgres=# select regexp_replace('000A3829232472000', '.*(A\d{10}).*', '\1', 'g'
 
 最近阅读了《MySQL 必知必会》这本书，写了一篇读书笔记，请大佬们过目！ https://www.v2ex.com/t/581631
 - > 客官，这里有一份《MySQL 必知必会》读书笔记，请您笑纳! https://juejin.im/post/5d2335846fb9a07f021a2509
+
+## cloud-native
+
+centos7 防火墙失效，这是怎么回事？ https://www.v2ex.com/t/657565
+- > 这个问题在 Docker 官方文档中说的很明白，显然你是没有阅读官方文档就直接使用的 Docker 。
+    <br> Docker 自动设定的 iptables 规则 [DOCKER-USER DOCKER] 比你手动设定的 iptables/firewalld 规则优先级要高，所以除非把规则添加到上述 [] 中才能生效。
+    <br> 不过如果你嫌麻烦还可以：
+    <br> 0.如果需要外网访问，可在容器内设定防火墙；
+    <br> 1.如果不需要外网访问 /爷就喜欢宿主防火墙，Docker 绑定 0.0.0.0 改为 127.0.0.1 。(●'◡'●)
+- > 可以禁止 docker 修改 iptables, 编辑 /etc/docker/daemon.json, 添加
+    ```
+    {
+     "iptables": false
+    }
+    ```
 
 ## 其他
 
