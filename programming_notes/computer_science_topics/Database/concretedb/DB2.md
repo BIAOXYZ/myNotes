@@ -19,6 +19,16 @@ How to Connect to a DB2 Database https://www.xtivia.com/how-to-connect-to-a-db2-
 How to see the schema of a db2 table (file) https://stackoverflow.com/questions/153769/how-to-see-the-schema-of-a-db2-table-file
 - > `db2 describe table user1.department`
 
+db2数据库常用命令总结 - Havi的文章 - 知乎 https://zhuanlan.zhihu.com/p/49491377
+
+# DB2个人实战
+
+```sh
+# 创建名为trader的数据库
+[db2inst1@db2trader1-ibm-db2oltp-dev-0 ~]$ db2 create database trader
+DB20000I  The CREATE DATABASE command completed successfully.
+```
+
 # DB2故障处理
 
 ### `db2 connect to trader`时报SQL10007N
