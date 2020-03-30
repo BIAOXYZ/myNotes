@@ -211,6 +211,12 @@ Ansible 进阶技巧 https://www.ibm.com/developerworks/cn/linux/1608_lih_ansibl
 
 Ansible Vault https://docs.ansible.com/ansible/2.9/user_guide/vault.html
 
+Vault https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_vault.html
+
+Using Vault in playbooks https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html
+
+Working with ansible-vault https://gist.github.com/tristanfisher/e5a306144a637dc739e7
+
 ## Ansible Jinja2模板
 
 Templating (Jinja2) https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html
