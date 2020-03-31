@@ -18,6 +18,9 @@ Transit Secrets Engine https://www.vaultproject.io/docs/secrets/transit/index.ht
 
 Transit Secrets Re-wrapping https://learn.hashicorp.com/vault/encryption-as-a-service/eaas-transit-rewrap
 
+Vault Commands (CLI) https://www.vaultproject.io/docs/commands/
+- > The default token helper stores the token in `~/.vault-token`. You can delete this file at any time to "logout" of Vault.
+
 ### 官方getting start
 
 **GETTING STARTED**
