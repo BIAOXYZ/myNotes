@@ -183,10 +183,21 @@ Vault Provider https://www.terraform.io/docs/providers/vault/index.html
 # Vault其他帖子
 
 【shuhari.dev/】
-- 私密信息管理利器 HashiCorp Vault——简介 https://juejin.im/entry/5a7c0fcd5188255efc5f457e
-- 私密信息管理利器 HashiCorp Vault——启动和读写 https://shuhari.dev/blog/2018/02/vault-upstart
+- 私密信息管理利器 HashiCorp Vault——简介 https://juejin.im/entry/5a7c0fcd5188255efc5f457e || https://shuhari.dev/blog/2018/02/vault-introduction
+- 私密信息管理利器 HashiCorp Vault——启动和读写 https://juejin.im/entry/5a7d34dc5188257a7e3f1b84 || https://shuhari.dev/blog/2018/02/vault-upstart
+- 私密信息管理利器 HashiCorp Vault——部署 https://juejin.im/entry/5a94d4755188257a5911edb4
 
 Vault 笔记 https://huangjunwen.github.io/post/2017/vault/
+
+# Vault实战
+
+```sh
+# 获取当前的token数量
+pguser@temptest ~ $ vault read sys/internal/counters/tokens
+Key         Value
+---         -----
+counters    map[service_tokens:map[total:1]]
+```
 
 # Vault竞品
 
