@@ -217,6 +217,8 @@ Using Vault in playbooks https://docs.ansible.com/ansible/latest/user_guide/play
 
 Working with ansible-vault https://gist.github.com/tristanfisher/e5a306144a637dc739e7
 
+How To Use Vault to Protect Sensitive Ansible Data on Ubuntu 16.04 https://www.digitalocean.com/community/tutorials/how-to-use-vault-to-protect-sensitive-ansible-data-on-ubuntu-16-04
+
 ## Ansible Jinja2模板
 
 Templating (Jinja2) https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html
