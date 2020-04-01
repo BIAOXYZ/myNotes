@@ -244,6 +244,8 @@ Vault Provider https://www.terraform.io/docs/providers/vault/index.html
 
 Vault 笔记 https://huangjunwen.github.io/post/2017/vault/
 
+Vault + Golang 安全管理代码配置中的各种密钥 https://huangwenwei.com/blogs/vault-deploy-and-golang-usage
+
 # Vault实战
 
 ```sh
