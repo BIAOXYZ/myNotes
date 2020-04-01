@@ -150,3 +150,8 @@ openshift跑app权限报错解决 https://blog.csdn.net/iiiiher/article/details/
 
 non-ROOT containers to show OpenShift some love https://medium.com/bitnami-perspectives/non-root-containers-to-show-openshift-some-love-3b32d7218ac6
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# openshift其他
+
+How To: Stop and start a production OpenShift Cluster https://eti.io/how-to-stop-and-start-a-production-openshift-cluster/
