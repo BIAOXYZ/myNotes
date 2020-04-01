@@ -11,3 +11,6 @@
   - Linux内核不保证API/ABI的稳定性，因此很难设计通用的Rust接口。至少几乎不可能使它适用于所有版本的Linux。
   - 许多C语言特性没有相应的Rust支持。例如，构造具有位域（bitfield）的结构体似乎是无法实现的。
   
+在不安装任何软件的情况下，学习 Rust https://www.v2ex.com/t/658299
+- 如何在不安装任何软件的情况下，学习Rust https://juejin.im/post/5e81b40a6fb9a03c7e200308
+  * > 通过 GitHub Actions，我们可以直接在你的浏览器中学习和探索 Rust 代码。
