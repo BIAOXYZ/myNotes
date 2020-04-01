@@ -78,6 +78,29 @@ C 的语法基本看完了，下面该学什么？ https://www.v2ex.com/t/649748
 
 ## python
 
+请教： Python 获取 shell 自定义变量的值。 https://www.v2ex.com/t/658012
+```
+我在当前 shell 中定义了 test 这个自定义变量，同时，我启动了一个 Py 脚本，这个 Py 脚本有没有办法获取当前 shell 的
+自定义变量（比如这个$test ）的值？
+
+要求：不将自定义变量导出为环境变量。
+```
+- > 你这需求也太扭曲了，为啥会有这种需求，原始问题是什么？而扭曲的需求只有用扭曲的办法解决了：gdb attach 上去找
+  >> 
+  ```py
+  #!/usr/bin/env python3
+  from pygdbmi.gdbcontroller import GdbController
+  import os
+
+  gdbmi = GdbController()
+  gdbmi.write(f"attach {os.getppid()}")
+  res = gdbmi.write('p (char *)get_string_value("foo")')
+
+  for mes in res:
+      if "$1" in str(mes.get("payload", "")):
+          print(mes["payload"])
+  ```
+
 Python 的协程到底有啥用啊… 
 - > 一篇文章理解Python异步编程的基本原理 https://mp.weixin.qq.com/s/spayiLNuTnFVOWWeW-jkwQ
   * > 以 request 请求URL 为例，requests 发起请求，也许只需要0.01秒的时间。然后程序就卡住，等待网站返回。请求数据通过网络传到网站服务器，网站服务器发起数据库查询请求，网站服务器返回数据，数据经过网线传回你的电脑。requests 收到数据以后继续后面的操作。 <br> 大量的时间浪费在等待网站返回数据。如果我们可以充分利用这个等待时间，就能发起更多的请求。而这就是异步请求为什么有用的原因。 <br> 但对于需要大量计算任务的代码来说，CPU 始终处于高速运转的状态，没有等待，所以就不存在利用等待时间做其它事情的说法。 <br> 所以：**异步只适用于 I/O 操作相关的代码，不适用于非 I/O操作**。
