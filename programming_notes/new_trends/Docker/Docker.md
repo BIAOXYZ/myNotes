@@ -12,6 +12,9 @@ Get Started with Docker https://www.docker.com/get-started
 
 Docker Hub https://hub.docker.com/
 
+docker-library https://github.com/docker-library
+- docker-library -- postgres https://github.com/docker-library/docs/tree/master/postgres
+
 --------------------------------------------------
 
 docker中文社区站  http://www.docker.org.cn/
@@ -142,6 +145,7 @@ http://www.infoq.com/cn/profile/%E8%82%96%E5%BE%B7%E6%97%B6
 世民谈云计算 -- 随笔分类 - Docker
 - 理解Docker（7）：Docker 存储 - AUFS https://www.cnblogs.com/sammyliu/p/5931383.html
 
+Docker 问答录（100 问） https://blog.lab99.org/post/docker-2016-07-14-faq.html
 
 Docker实战（一）：Docker基础命令 - CSDN博客
 https://blog.csdn.net/birdben/article/details/49873725
