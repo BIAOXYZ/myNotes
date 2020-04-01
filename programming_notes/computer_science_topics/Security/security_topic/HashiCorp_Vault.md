@@ -174,6 +174,58 @@ root@temptest ~ $
 ```
 - Secrets Engines https://learn.hashicorp.com/vault/getting-started/secrets-engines
   * > As mentioned above, Vault behaves similarly to a [virtual filesystem](https://en.wikipedia.org/wiki/Virtual_file_system). The read/write/delete/list operations are forwarded to the corresponding secrets engine, and the secrets engine decides how to react to those operations. <br> This abstraction is incredibly powerful. It enables Vault to interface directly with physical systems, databases, HSMs, etc. But in addition to these physical systems, Vault can interact with more unique environments like AWS IAM, dynamic SQL user creation, etc. all while using the same read/write interface.
+```sh
+$ vault kv put foo/bar a=b
+Error making API request.
+URL: GET http://localhost:8200/v1/sys/internal/ui/mounts/foo/bar
+Code: 403. Errors:
+* preflight capability check returned 403, ... grant access to path "foo/bar/"
+----------------------------------------------------------------------------------------------------
+$ vault secrets enable -path=kv kv
+Success! Enabled the kv secrets engine at: kv/
+----------------------------------------------------------------------------------------------------
+The path where the secrets engine is enabled defaults to the name of the secrets engine. Thus, 
+the following command is equivalent to executing the above command.
+$ vault secrets enable kv
+----------------------------------------------------------------------------------------------------
+$ vault secrets list
+Path          Type         Accessor              Description
+----          ----         --------              -----------
+cubbyhole/    cubbyhole    cubbyhole_78189996    per-token private secret storage
+identity/     identity     identity_ac07951e     identity store
+kv/           kv           kv_15087625           n/a
+secret/       kv           kv_4b990c45           key/value secret storage
+sys/          system       system_adff0898       system endpoints used for control, policy and debugging
+----------------------------------------------------------------------------------------------------
+$ vault kv put kv/hello target=world
+Success! Data written to: kv/hello
+----------------------------------------------------------------------------------------------------
+$ vault kv get kv/hello
+===== Data =====
+Key       Value
+---       -----
+target    world
+----------------------------------------------------------------------------------------------------
+$ vault kv put kv/my-secret value="s3c(eT"
+Success! Data written to: kv/my-secret
+----------------------------------------------------------------------------------------------------
+$ vault kv get kv/my-secret
+==== Data ====
+Key      Value
+---      -----
+value    s3c(eT
+----------------------------------------------------------------------------------------------------
+$ vault kv delete kv/my-secret
+Success! Data deleted (if it existed) at: kv/my-secret
+----------------------------------------------------------------------------------------------------
+$ vault kv list kv/
+Keys
+----
+hello
+----------------------------------------------------------------------------------------------------
+$ vault secrets disable kv/
+Success! Disabled the secrets engine (if it existed) at: kv/
+```
 
 # Vault与其他整合
 
