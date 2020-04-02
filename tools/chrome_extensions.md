@@ -210,7 +210,7 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 | 操作 | 快捷键 | 与Chrome是否相同 |
 |--|:--|:--:|
 | 关闭标签页 | Ctrl + W 或 Ctrl + F4 | :heavy_check_mark: 完全相同 |
-| 以最近浏览过的顺序切换标签页 |	Ctrl + Tab —— 需要在选项中启用 【默认是启用的】 | :x: <br> 【chrome的 Ctrl + Tab 等价于切到下一个（也就是右边的）标签。而firefox则更像是linux的`cd -`。此外，如果按住Ctrl然后点一下Tab但是不放开Ctrl，则会弹出一个框可以选择切换到指定的标签，很像Windows下切换程序的`Alt + Tab`。】 |
+| 以最近浏览过的顺序切换标签页 |	Ctrl + Tab —— 需要在选项中启用 【默认是启用的】 | :x: <br> 【chrome的 Ctrl + Tab 等价于切到下一个（也就是右边的）标签。而firefox则更像是linux的`cd -`。此外，如果按住Ctrl然后点一下Tab但是不放开Ctrl，则会弹出一个框可以选择切换到指定的标签，很像Windows下切换程序的`Alt + Tab`。】 <br> 【所以chrome不能在任意（远的）两个标签之间来回切，也有人问过：[为什么chrome没有两个标签页之间来回切换的快捷键？](https://www.zhihu.com/question/55722316)】 |
 | 打开左邻的标签页	| Ctrl + Page Up | :x: <br> 也可用 Ctrl + Shift + Tab —— 仅当在选项禁用设置 Ctrl+Tab 以最近浏览过的顺序切换标签页时有效 <br> 【但是默认会启用Ctrl+Tab，所以Ctrl + Shift + Tab默认无效】 |
 | 打开右邻的标签页	| Ctrl + Page Down | :x: <br> 也可用 Ctrl + Tab —— 仅当在选项禁用设置 Ctrl+Tab 以最近浏览过的顺序切换标签页时有效 <br> 【但是默认会启用Ctrl+Tab，所以Ctrl + Tab默认无效】 |
 | 静音/取消静音 | Ctrl + M | 【chrome暂无此功能】 |
