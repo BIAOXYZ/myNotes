@@ -33,6 +33,8 @@ textfree https://www.pinger.com/text-free/
 - 免费中国手机号码 https://yunduanxin.net/China-Phone-Number/
 - 免费美国手机号码 https://yunduanxin.net/US-Phone-Number/
 
+接码号 - 在线接收短信 https://jiemahao.com/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 
