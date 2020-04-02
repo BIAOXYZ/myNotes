@@ -243,6 +243,7 @@ Vault Provider https://www.terraform.io/docs/providers/vault/index.html
 - 私密信息管理利器 HashiCorp Vault——部署 https://juejin.im/entry/5a94d4755188257a5911edb4
 
 Vault 笔记 https://huangjunwen.github.io/post/2017/vault/
+- > 用处：例如我们从 Vault 中读取了一些秘密，这个秘密可能会通过很多中间环节才能送到最终的使用者手上，中间环节越多，泄漏的可能性就越大（例如不小心被 log 下来了等），那么可以通过创建一个寿命非常短（例如几秒）且只能用一次的 token，把密码放到此 token 的 cubbyhole 里，中间环节传输的则是这个 token，即使泄漏了，由于其限时限次，秘密泄漏的可能性就大大降低了，同时如果泄漏了，日志里面必定会有所记录（偷取访问一次／正常访问一次，第二次失败），这是所谓 Response Wrapping；其实这不就有点像 OAuth2 的流程一样，拿一个很短命的 code 去换取 Access Token （秘密）
 
 Vault + Golang 安全管理代码配置中的各种密钥 https://huangwenwei.com/blogs/vault-deploy-and-golang-usage
 
