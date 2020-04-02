@@ -29,6 +29,10 @@ TextNow https://www.textnow.com/
 
 textfree https://www.pinger.com/text-free/
 
+云短信(YunDuanXin.net)为您提供37个免费中国电话号码供您使用
+- 免费中国手机号码 https://yunduanxin.net/China-Phone-Number/
+- 免费美国手机号码 https://yunduanxin.net/US-Phone-Number/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 
