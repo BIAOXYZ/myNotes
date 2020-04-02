@@ -7,8 +7,10 @@ Red Hat Ansible Tower https://www.ansible.com/products/tower
 
 # Ansible Tower文档
 
-- Ansible Tower https://docs.ansible.com/ansible/latest/reference_appendices/tower.html
-- Ansible Tower https://ansible-tran.readthedocs.io/en/latest/docs/tower.html
+Ansible Tower https://docs.ansible.com/ansible/latest/reference_appendices/tower.html
+- `12. Secret Management System` https://docs.ansible.com/ansible-tower/3.6.3/html/userguide/credential_plugins.html
+
+Ansible Tower https://ansible-tran.readthedocs.io/en/latest/docs/tower.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
