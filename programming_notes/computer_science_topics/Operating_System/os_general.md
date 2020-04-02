@@ -65,6 +65,22 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 管道(pipe)
+
+匿名管道 https://zh.wikipedia.org/wiki/%E5%8C%BF%E5%90%8D%E7%AE%A1%E9%81%93
+
+### 命名管道
+// 出处： https://docs.ansible.com/ansible-tower/3.6.3/html/userguide/credentials.html --> `Ansible Tower uses SSH to connect to remote hosts (or the Windows equivalent). In order to pass the key from Tower to SSH, the key must be decrypted before it can be written a named pipe. Tower then uses that pipe to send the key to SSH (so that it is never written to disk).`
+
+命名管道 https://zh.wikipedia.org/wiki/%E5%91%BD%E5%90%8D%E7%AE%A1%E9%81%93 || Named pipe https://en.wikipedia.org/wiki/Named_pipe
+- > 命名管道是计算机进程间的一种先进先出通信机制。是类Unix系统传统管道的扩展。传统管道属于匿名管道，其生存期不超过创建管道的进程的生存期。但命名管道的生存期可以与操作系统运行期一样长。
+- > 与传统的无名的shell管道不同，命名管道利用了文件系统。使用`mkfifo()`或`mknod()`创建命名管道。两个进程可以通过管道的名字打开、读写管道。
+- > PostgreSQL的命令行工具`psql`也支持从命名管道装入数据。
+
+Named Pipe or FIFO with example C program https://www.geeksforgeeks.org/named-pipe-fifo-example-c-program/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## mount
 
 mount (Unix) https://zh.wikipedia.org/wiki/Mount_(Unix)
