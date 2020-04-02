@@ -33,6 +33,7 @@ AWX Command Line Interface https://docs.ansible.com/ansible-tower/3.6.3/html/tow
 
 Ansible AWX: from scratch to REST API https://medium.com/@claudio.domingos/ansible-awx-from-scratch-to-rest-api-4955b21c10dd
 - `1.Operating System Installation: CentOS 8` or `Ansible AWX: from scratch to REST API (part 1 of 8)` https://medium.com/@claudio.domingos/ansible-awx-from-scratch-to-rest-api-part-1-of-8-18f92e75f0e4
+- `Ansible AWX: from scratch to REST API (part 7 of 8)` https://medium.com/@claudio.domingos/ansible-awx-from-scratch-to-rest-api-part-7-of-8-c84bc443de6e
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
