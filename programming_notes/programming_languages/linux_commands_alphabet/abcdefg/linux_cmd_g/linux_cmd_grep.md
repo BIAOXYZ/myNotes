@@ -85,3 +85,19 @@ master $ cat app-chart/templates/deployment.yaml | grep 'image:' -n -B3 -A3
 31-            - name: http
 master $
 ```
+
+```sh
+# 目录用星号【*】似乎是等于当前目录【.】？
+
+root@temptest hellovault $ grep -ir "name" *
+job.yamlbak:  name: pi
+job.yamlbak:      - name: pi
+job.yamlbak2:  name: pi
+job.yamlbak2:      - name: pi
+root@temptest hellovault $ grep -ir "name" .
+./job.yamlbak:  name: pi
+./job.yamlbak:      - name: pi
+./job.yamlbak2:  name: pi
+./job.yamlbak2:      - name: pi
+root@temptest hellovault $
+```
