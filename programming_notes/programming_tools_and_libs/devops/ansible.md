@@ -20,6 +20,20 @@ Getting Started With Ansible Tower https://dzone.com/articles/getting-started-wi
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# AWX官网
+
+AWX Command Line Interface https://docs.ansible.com/ansible-tower/3.6.3/html/towercli/index.html
+- Basic Usage -- Installation https://docs.ansible.com/ansible-tower/3.6.3/html/towercli/usage.html#installation
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# AWX其他
+
+Ansible AWX: from scratch to REST API https://medium.com/@claudio.domingos/ansible-awx-from-scratch-to-rest-api-4955b21c10dd
+- `1.Operating System Installation: CentOS 8` or `Ansible AWX: from scratch to REST API (part 1 of 8)` https://medium.com/@claudio.domingos/ansible-awx-from-scratch-to-rest-api-part-1-of-8-18f92e75f0e4
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ansible官网
 
 Ansible Documentation https://docs.ansible.com/ansible/latest/index.html
