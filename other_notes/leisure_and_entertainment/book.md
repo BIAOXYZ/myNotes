@@ -1,6 +1,9 @@
 
+九年义务教育初级中学语文自读课本 https://www.douban.com/doulist/110139913/
+- 《哦，大海》 https://book.douban.com/subject/2371311/
+
 有一种权力炫耀，叫做接得住领导的脏话 https://www.huxiu.com/article/291536.html
 > 关于脏话粗口，最知名的一部著作大概是露丝·韦津利的《脏话文化史》。这本书角度刁钻，连翻译篇目都力求传神，以至很多内容不便直接引述。对脏话历史有兴趣的读者，不妨寻来一读。
->> 脏话文化史 https://book.douban.com/subject/2995283/
+>> 《脏话文化史》 https://book.douban.com/subject/2995283/
 
-是是非非何智丽 http://xiandangdai.xiusha.com/y/yeyonglie/ssff/index.html
+《是是非非何智丽》 http://xiandangdai.xiusha.com/y/yeyonglie/ssff/index.html
