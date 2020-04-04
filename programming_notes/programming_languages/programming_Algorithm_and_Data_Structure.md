@@ -88,6 +88,12 @@ Python数据结构——链表的实现 http://python.jobbole.com/83953/
 ## `##` Tree
 ***// 决定按字母顺序排列各种树，因为实在太多了。有些看起来不是按字母顺序排的，是因为它是某种树的子类型。***
 
+Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https://en.wikipedia.org/wiki/Robert_Tarjan
+- > An early and well-known example of this work is Tarjan's analysis of the “union-find” data structure. The union-find problem is to maintain a collection of disjoint sets so as to efficiently perform two operations: union, which joins two sets into a single set, and find, which returns the set containing a specified element. Representing each set as a tree, two simple methods were used to give improved performance: union by weight and path compression, but their impact was not completely understood.
+- Self-balancing binary search tree https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
+- Splay tree https://en.wikipedia.org/wiki/Splay_tree
+- 【还有这个，但是不是树】 Fibonacci heap https://en.wikipedia.org/wiki/Fibonacci_heap
+
 ### `###` Merge–Find Set / Disjoint-set data structure / union–find data structure
 
 并查集 https://zh.wikipedia.org/wiki/%E5%B9%B6%E6%9F%A5%E9%9B%86 || Disjoint-set data structure https://en.wikipedia.org/wiki/Disjoint-set_data_structure
