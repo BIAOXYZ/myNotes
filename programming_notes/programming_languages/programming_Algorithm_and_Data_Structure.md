@@ -85,7 +85,15 @@ Python数据结构——链表的实现 http://python.jobbole.com/83953/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## `##` Tree
+## [heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
+
+Heap Data Structure https://www.geeksforgeeks.org/heap-data-structure/
+
+斐波那契堆(一)之 图文解析 和 C语言的实现 https://www.cnblogs.com/skywang12345/p/3659060.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `##` [Tree](https://en.wikipedia.org/wiki/Tree_(data_structure))
 ***// 决定按字母顺序排列各种树，因为实在太多了。有些看起来不是按字母顺序排的，是因为它是某种树的子类型。***
 
 Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https://en.wikipedia.org/wiki/Robert_Tarjan
