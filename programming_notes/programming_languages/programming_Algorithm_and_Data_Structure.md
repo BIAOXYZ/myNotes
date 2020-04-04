@@ -91,6 +91,8 @@ Heap Data Structure https://www.geeksforgeeks.org/heap-data-structure/
 
 斐波那契堆(一)之 图文解析 和 C语言的实现 https://www.cnblogs.com/skywang12345/p/3659060.html
 
+纸上谈兵: 堆 (heap) https://www.cnblogs.com/vamei/archive/2013/03/20/2966612.html 【[`*`][:star:]】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## `##` [Tree](https://en.wikipedia.org/wiki/Tree_(data_structure))
