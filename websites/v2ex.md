@@ -22,6 +22,9 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 
 ## hardware
 
+出于好奇：代码只如何运行的？或者说更底层的一些东西是如何实现的？ https://www.v2ex.com/t/659337
+- > 严重推荐你一本《编码: 隐匿在计算机软硬件背后的语言》(code: the hidden language of computer hardware and software)，作者是 Windows 编程界传奇人物 Charles Petzold。书从两个小孩用手电筒一亮一暗打暗号给你讲起，你会逐渐明白代码是如何转换成电信号，这些电信号又如何存储、作用在硬件上
+
 不小心把 iso 文件 cp 到硬盘… https://www.v2ex.com/t/626910
 ```
 本来想弄个 Debian 10 的启动盘，不小心把 iso 文件 cp 到 sda （正确应该是 cp 到 sdb ）…就是执行了一下命令：
