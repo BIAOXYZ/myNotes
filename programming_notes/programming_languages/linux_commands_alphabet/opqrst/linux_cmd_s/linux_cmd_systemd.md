@@ -14,3 +14,6 @@ linux systemctl 命令 https://www.cnblogs.com/sparkdev/p/8472711.html 【by spa
 How To Use Systemctl to Manage Systemd Services and Units https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
 - > Masking and Unmasking Units
   * > We saw in the service management section how to stop or disable a service, but `systemd` also has the ability to mark a unit as completely unstartable, automatically or manually, by linking it to `/dev/null`. This is called masking the unit, and is possible with the mask command: `sudo systemctl mask nginx.service`
+
+运行 systemctl status 或 service status 后如何不等待输入 / 输出。 https://www.v2ex.com/t/659530
+> --no-pager <br> Do not pipe output into a pager.
