@@ -43,6 +43,11 @@ sudo cp ~/Download/debian-10.2.0-amd64-i386-netinst.iso /dev/sda
 
 ## linux
 
+Linux 系统如果把磁盘写满了继续写会怎么样？ https://www.v2ex.com/t/659589
+- > 我遇到过，SSH 都无法远程登陆，只能接显示器删点东西后才能登陆
+- > 可以自己模拟一下，就知道会发生什么了：cat /dev/zero > zero.fill;sync;
+- > 写文件用的是 write 调用。write 调用在磁盘满了的时候会报 ENOSPC。 <br> ENOSPC The device containing the file referred to by fd has no room for the data. <br> 有一些程序会在磁盘满了的时候继续重试。
+
 请教关于 Linux 双网卡绑定的细节 https://www.v2ex.com/t/645341
 
 crontab 是怎么实现的？ https://www.v2ex.com/t/619692
@@ -66,6 +71,8 @@ crontab 是怎么实现的？ https://www.v2ex.com/t/619692
 cat file.txt > file.txt 导致 file.txt 被清空 https://www.v2ex.com/t/572624
 
 ## algorithm and data structure
+
+[第 7 期] 盘点那些面试中会被问到的链表算法题 https://www.v2ex.com/t/659761
 
 不知不觉搞了 200 道了 https://www.v2ex.com/t/657505
 > https://github.com/LeoSirius/leetcode_solutions 且除了 sql 之外都有单元测试，主要是 cpp，部分有 py 。部分有多种思路
