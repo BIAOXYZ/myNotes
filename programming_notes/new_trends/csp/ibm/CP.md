@@ -17,6 +17,12 @@ IBM Cloud Pak for Applications https://www.ibm.com/cloud/cloud-pak-for-applicati
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
 
+## CP(K)安装
+
+Getting started with IBM Cloud Pak for Multicloud Management https://cloud.ibm.com/docs/cloud-pak-multicloud-management?topic=cloud-pak-multicloud-management-getting-started
+
+Supported OpenShift versions and platforms https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.3.0/install/supported_os.html
+
 # 其他链接
 
 IBM Cloud Paks Playbook https://cloudpak8s.io/
