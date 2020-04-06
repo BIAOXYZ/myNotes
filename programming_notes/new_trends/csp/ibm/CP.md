@@ -20,6 +20,7 @@ Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/
 ## CP(K)安装
 
 Getting started with IBM Cloud Pak for Multicloud Management https://cloud.ibm.com/docs/cloud-pak-multicloud-management?topic=cloud-pak-multicloud-management-getting-started
+- Changing the cluster administrator username https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/iam/3.4.0/change_admin_passwd.html
 
 Supported OpenShift versions and platforms https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.3.0/install/supported_os.html
 
