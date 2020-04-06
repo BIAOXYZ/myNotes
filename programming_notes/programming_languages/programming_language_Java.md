@@ -294,3 +294,6 @@ Spring Boot快速开始指南 https://jimmysong.io/posts/spring-boot-quick-start
 - 使用Swagger生成JAVA Mock Server（Springboot）代码 https://blog.csdn.net/a78270528/article/details/78530702
 - Swagger简介 https://blog.csdn.net/wangnan9279/article/details/44541665
 
+# Java源码
+
+HashMap源码分析 https://www.jianshu.com/p/2e2a18d02218
