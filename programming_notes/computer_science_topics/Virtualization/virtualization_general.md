@@ -19,6 +19,20 @@ Linux 桌面玩家指南：07. Linux 中的 Qemu、KVM、VirtualBox、Xen 虚拟
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Libvirt
+
+libvirt https://libvirt.org/
+
+libvirt https://zh.wikipedia.org/wiki/Libvirt || https://en.wikipedia.org/wiki/Libvirt
+- > libvirt支持多款虚拟机监视器且被多个管理方案所支持
+  >> ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Libvirt_support.svg/450px-Libvirt_support.svg.png)
+
+Libvirt (简体中文) https://wiki.archlinux.org/index.php/Libvirt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+Libvirt 虚拟化库剖析 https://www.ibm.com/developerworks/cn/linux/l-libvirt/index.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # QEMU
 
 QEMU https://zh.wikipedia.org/wiki/QEMU
