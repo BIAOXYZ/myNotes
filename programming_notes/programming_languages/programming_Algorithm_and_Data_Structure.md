@@ -95,6 +95,7 @@ Heap Data Structure https://www.geeksforgeeks.org/heap-data-structure/
 `【堆操作】`：
 - 最小堆 构建、插入、删除的过程图解 https://blog.csdn.net/hrn1216/article/details/51465270
 - 看动画轻松理解「 堆 」 https://juejin.im/post/5c1ae6545188256a272a9cee
+- 最大堆（创建、删除、插入和堆排序） https://www.jianshu.com/p/21bef3fc3030
 
 ### 斐波那契堆(Fibonacci heap)
 
