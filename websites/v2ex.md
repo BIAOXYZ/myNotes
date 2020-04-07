@@ -164,6 +164,10 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
 
+数据库索引笔记 https://www.v2ex.com/t/660228
+- > https://use-the-index-luke.com/
+- > Use the Index, Luke! 笔记1 https://www.kawabangga.com/posts/3893
+
 关于 B+tree 索引的疑问 https://www.v2ex.com/t/657136
 - > 在网上遇到自己不确定知识点的时候，最简单且有效的办法就是自己动手验证。MySQL InnoDB 存储引擎实际存储就 3 个文件: .opt, .frm, .ibd ，其中.ibd 为实际存储数据和索引的地方，聚簇索引和辅助索引数据均在该文件中。建一张测试表，写点儿数据，然后闷头分析.ibd 文件就行了。
 当初我对这东西也很有疑问，动手分析了之后明白了个大概。后面自己写了篇博客，希望对你有帮助。PS: 推荐《 MySQL 技术内幕-InnoDB 存储引擎》，相信能解答你许多疑惑。
