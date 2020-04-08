@@ -17,6 +17,8 @@ IBM Cloud Pak for Applications https://www.ibm.com/cloud/cloud-pak-for-applicati
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
 
+IBM Cloud Pak™ CLI (cloudctl) multicluster commands (mc) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_mc_commands.html 【其实原来cloudctl是ICP的，但是现在一是ICP要放弃并全面转向基于OpenShift的CP4MCM，二是过去的ICP的东西还得兼容，所以在`cloudctl`基础上搞了一个`cloudctl mc`】
+
 ## CP(K)安装
 
 Getting started with IBM Cloud Pak for Multicloud Management https://cloud.ibm.com/docs/cloud-pak-multicloud-management?topic=cloud-pak-multicloud-management-getting-started
