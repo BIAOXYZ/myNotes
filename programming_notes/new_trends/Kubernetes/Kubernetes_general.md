@@ -246,6 +246,8 @@ Did you mean this?
 - Federation https://kubernetes.io/docs/concepts/cluster-administration/federation/
 - 联邦（Federation） https://k8smeetup.github.io/docs/concepts/cluster-administration/federation/
 
+配置对多集群的访问 https://v1-18.docs.kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/ || Configure Access to Multiple Clusters https://v1-18.docs.kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 组件
