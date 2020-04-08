@@ -164,6 +164,8 @@ GO 切片问题求教 https://www.v2ex.com/t/606165
 
 ## database
 
+求助 mysql & 运算符是什么意思， 怎样解释 https://www.v2ex.com/t/660327
+
 数据库索引笔记 https://www.v2ex.com/t/660228
 - > https://use-the-index-luke.com/
 - > Use the Index, Luke! 笔记1 https://www.kawabangga.com/posts/3893
