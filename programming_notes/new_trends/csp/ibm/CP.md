@@ -29,3 +29,30 @@ Supported OpenShift versions and platforms https://www.ibm.com/support/knowledge
 # 其他链接
 
 IBM Cloud Paks Playbook https://cloudpak8s.io/
+
+# 个人实战
+
+```sh
+# 登陆CP4MCM和ICP的命令一样
+
+[root@apmsvtocp5-inf ~]# cloudctl login -a https://icp-console.apps.apmsvtocp5.os.fyre.ibm.com:443 -u admin -p admin -n kube-system --skip-ssl-validation Authenticating...
+OK
+
+Targeted account mycluster Account
+
+Targeted namespace kube-system
+
+Configuring kubectl ...
+Property "clusters.mycluster" unset.
+Property "users.mycluster-user" unset.
+Property "contexts.mycluster-context" unset.
+Cluster "mycluster" set.
+User "mycluster-user" set.
+Context "mycluster-context" created.
+Switched to context "mycluster-context".
+OK
+
+Configuring helm: /root/.helm
+OK
+[root@apmsvtocp5-inf ~]#
+```
