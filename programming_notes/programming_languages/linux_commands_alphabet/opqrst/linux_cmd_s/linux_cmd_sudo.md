@@ -54,4 +54,7 @@ wheel:x:10:core
 sudo:x:16:core
 systemd-journal:x:190:core
 core:x:1000:
+[root@worker1 ~]#
+[root@worker1 ~]# groups core
+core : core adm wheel sudo systemd-journal
 ```
