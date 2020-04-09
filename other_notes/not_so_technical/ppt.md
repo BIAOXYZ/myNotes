@@ -82,6 +82,10 @@ Powerpoint的`设计理念`功能：
 
 # PPT技巧和问题
 
+PPT怎么显示网格线 https://jingyan.baidu.com/article/6b182309980f8cba58e1592c.html
+- > 工具栏点击“视图” -- 勾选“网格线”，即可看到网格线被激活
+- > 或者使用快捷键“shift+F9”
+
 怎样使ppt文字以曲线呈现？ https://zhidao.baidu.com/question/542559480.html
 >> notes：这个问题出现的场景是，曲线箭头的文本框的文字最好随着曲线的方向，而不是简单的横向或纵向。
 
