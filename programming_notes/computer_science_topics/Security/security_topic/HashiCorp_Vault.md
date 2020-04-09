@@ -20,6 +20,8 @@ Transit Secrets Re-wrapping https://learn.hashicorp.com/vault/encryption-as-a-se
 
 Vault Commands (CLI) https://www.vaultproject.io/docs/commands/
 - > The default token helper stores the token in `~/.vault-token`. You can delete this file at any time to "logout" of Vault.
+- > write https://www.vaultproject.io/docs/commands/write/
+- > kv put https://www.vaultproject.io/docs/commands/kv/put/
 
 ### 官方getting start
 
