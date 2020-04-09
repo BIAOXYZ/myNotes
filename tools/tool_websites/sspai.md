@@ -65,6 +65,8 @@ Windows 上的 Alfred，免费开源的效率启动器：Wox https://sspai.com/p
 
 # sspai 其他
 
+Marp：用 Markdown「写」PPT 的新选择 https://sspai.com/post/55718
+
 进来收藏，这 8 个免费的网页工具能帮你少买 / 装 App https://mp.weixin.qq.com/s/X5XHUjn7skf4vEwdOB94pA
 > ▍词云图制作：WordArt
 
