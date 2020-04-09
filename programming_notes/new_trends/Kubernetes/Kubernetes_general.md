@@ -27,6 +27,9 @@ Kubernetes Documentation https://kubernetes.io/docs/home/
 Kubernetes 文档 https://kubernetes.io/zh/docs/
 - 使用命令式的方式管理 Kubernetes 对象 https://kubernetes.io/zh/docs/tutorials/object-management-kubectl/imperative-object-management-command/
 
+Tutorials https://v1-18.docs.kubernetes.io/docs/tutorials/
+- Learn Kubernetes Basics https://v1-18.docs.kubernetes.io/docs/tutorials/kubernetes-basics/ 【六个基础交互式教程都在这个网页】
+
 (generated) API OVERVIEW https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/
 
 Kubernetes API Overview https://kubernetes.io/docs/reference/using-api/api-overview/
