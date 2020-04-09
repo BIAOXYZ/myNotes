@@ -35,7 +35,8 @@ IBM Cloud Paks Playbook https://cloudpak8s.io/
 ```sh
 # 登陆CP4MCM和ICP的命令一样
 
-[root@apmsvtocp5-inf ~]# cloudctl login -a https://icp-console.apps.apmsvtocp5.os.fyre.ibm.com:443 -u admin -p admin -n kube-system --skip-ssl-validation Authenticating...
+[root@apmsvtocp5-inf ~]# cloudctl login -a https://icp-console.apps.apmsvtocp5.os.fyre.ibm.com:443 -u admin -p admin -n kube-system --skip-ssl-validation 
+Authenticating...
 OK
 
 Targeted account mycluster Account
@@ -53,6 +54,19 @@ Switched to context "mycluster-context".
 OK
 
 Configuring helm: /root/.helm
+OK
+[root@apmsvtocp5-inf ~]#
+[root@apmsvtocp5-inf ~]# cloudctl logout
+Logging out...
+OK
+
+Removing kubectl configuration ...
+Property "clusters.mycluster" unset.
+Property "users.mycluster-user" unset.
+Property "contexts.mycluster-context" unset.
+OK
+
+Removing Helm certificates: /root/.helm
 OK
 [root@apmsvtocp5-inf ~]#
 ```
