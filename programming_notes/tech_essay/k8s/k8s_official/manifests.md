@@ -50,6 +50,13 @@ echo '
 ' | kubectl create -f -
 ```
 
+8.直接创建，但是既不涉及cat也不涉及echo
+```
+kubectl apply -f — << EOF
+
+EOF
+```
+
 # （实例）结果
 
 ```
@@ -121,7 +128,7 @@ EOF
 
 # 实例
 
-##
+## 形式1：基本形式
 
 ```
 cat > pod-multi-container.yaml << EOF
@@ -146,7 +153,7 @@ spec:
 EOF
 ```
 
-##
+## 形式1：基本形式
 
 ```
 cat > job.yaml << EOF
@@ -185,6 +192,8 @@ spec:
 EOF
 ```
 
+## 形式4：管道+tee的形式
+
 ```
 cat << EOF | tee jobttl.yaml
 apiVersion: batch/v1
@@ -202,6 +211,8 @@ spec:
       restartPolicy: Never
 EOF
 ```
+
+## 形式1：基本形式
 
 ```
 cat > cronjob.yaml << EOF
@@ -225,6 +236,8 @@ spec:
           restartPolicy: OnFailure
 EOF
 ```
+
+## 形式3. EOF换成12345
 
 ```
 cat > job10completion.yaml << 12345
@@ -274,7 +287,7 @@ spec:
 EOF
 ```
 
-##
+## 形式5.
 
 ```
 cat <<EOF | kubectl create -f -
@@ -289,6 +302,35 @@ spec:
     requests:
       storage: 8Gi
   storageClassName: gp2-resize
+EOF
+```
+
+## 形式8.
+
+```
+# https://medium.com/@janeman98/ibm-cloud-private-community-edition-for-kubeflow-for-beginners-697a044522a 
+
+kubectl apply -f — <<EOF
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kube-system
+EOF
+
+kubectl apply -f — <<EOF
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin-user
+  namespace: kube-system
 EOF
 ```
 
