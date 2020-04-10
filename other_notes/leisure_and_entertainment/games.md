@@ -30,8 +30,15 @@ G:G (ggscore.com) – eSports project about the most popular PC games. https://g
 TrackDota https://www.trackdota.com/
 - The International 2019 https://www.trackdota.com/leagues/10749
 
+### Dota_2_Wiki from gamepedia.com
+
 Dota_2_Wiki https://dota2-zh.gamepedia.com/Dota_2_Wiki
 - 法术抵抗 https://dota2-zh.gamepedia.com/%E6%B3%95%E6%9C%AF%E6%8A%B5%E6%8A%97
+
+Dota_2_Wiki https://dota2.gamepedia.com/Dota_2_Wiki
+- Bots https://dota2.gamepedia.com/Bots
+
+Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 
 ## 指令类
 
