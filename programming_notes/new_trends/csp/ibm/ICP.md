@@ -1,9 +1,17 @@
 
 # 官方网址
 
-IBM Cloud Private 3.1.2 -- CLI tools guide https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.1.2/manage_cluster/cli_guide.html
+What is IBM Cloud Private? https://www.ibm.com/blogs/cloud-computing/2017/10/31/what-is-ibm-cloud-private/
+
+Introduction to IBM Cloud Private https://www.ibm.com/cloud/architecture/content/course/ibm-cloud-private-introduction/ibm-cloud-private-solutions
+
+IBM Cloud Private overview https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.2/getting_started/introduction.html
+
+Docker Image for IBM Cloud private-CE (Community Edition) https://hub.docker.com/r/ibmcom/icp-inception/
 
 ## 使用指南
+
+IBM Cloud Private 3.1.2 -- CLI tools guide https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.1.2/manage_cluster/cli_guide.html
 
 Setting up the Helm CLI https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0.3/app_center/create_helm_cli.html
 
@@ -12,6 +20,14 @@ Setting up the Helm CLI https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.
 Deployment errors for ClusterImagePolicy and PodSecurityPolicy https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.0/troubleshoot/deploy_cluster_impo.html
 
 Enforcing container image security https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.1.0/manage_images/image_security.html
+
+# 其他攻略
+
+使用 IBM Cloud Private 在多个云上运行 Kubernetes https://v1-17.docs.kubernetes.io/zh/docs/setup/production-environment/turnkey/icp/
+
+IBM Cloud Private — Community Edition for Kubeflow (for Beginners) https://medium.com/@janeman98/ibm-cloud-private-community-edition-for-kubeflow-for-beginners-697a044522a
+
+How to install IBM Cloud Private? https://containerized.me/how-to-install-ibm-cloud-private-updated/
 
 # 个人实战
 
