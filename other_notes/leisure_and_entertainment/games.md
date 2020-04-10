@@ -20,7 +20,9 @@ Vampire Gaze https://diablo2.diablowiki.net/Vampire_Gaze
 《魔兽争霸3：重制版》技能效果演示视频释出：保留原有效果 https://www.ithome.com/0/450/359.htm
 > 【魔兽争霸3重制版】目前Beta版所有重塑技能的施法效果预览 https://www.bilibili.com/video/av71279197
 
-# DOTA & DOTA2 
+# DOTA & DOTA2
+
+https://steamcommunity.com/id/biaoxyz/
 
 ## 工具类
 
@@ -51,6 +53,12 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 
 【这个里面最后是英雄全称，打一部分即可。比如幻影长矛手的英文是`phantom_lancer`，如果打`phantom`会优先选幻刺，此时可以打`lancer`】 Dota2 作弊用命令 （ver 7.23b） - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/57975930
 
+[Bot Games] You can pick heroes for your allies by using the suggest hero feature https://www.reddit.com/r/DotA2/comments/6lxvan/bot_games_you_can_pick_heroes_for_your_allies_by/
+- > Playing a bot game when i decided to try alt-clicking some heroes to suggest them, and i found that if you suggest a hero (from the little pool of heroes that bots pick from) your teammates will pick them. Tried it out only a couple of times, but im pretty sure this is the case! Like here
+  >> ![](https://imgur.com/gallery/AAA0g)
+  
+How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
+
 ## 新闻消息类
 
 电子竞技有哪些玄学？ - 疯癫的A兵者的回答 - 知乎 https://www.zhihu.com/question/67225512/answer/345458974
@@ -63,6 +71,10 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 - DOTA2：再引争议！VG拿到震中杯Major冠军，MVP却又给亚军！ http://www.sohu.com/a/324059377_100124359
 - Dota2 ESL孟买站中国战队夺冠，主办方把MVP颁给亚军引不满 http://www.guancha.cn/sports/2019_04_22_498658.shtml
+
+### OpenAI Dota2
+
+Beginner’s Guide to OpenAI Five at Dota2 https://medium.com/@ngwaifoong92/beginners-guide-to-openai-five-at-dota2-3b49ee5169b8
 
 ## 游戏更新类
 
