@@ -394,3 +394,11 @@ druidcluster4 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFNSKuD1/jzIAsbTAgIYckle6OSbo/
 
 //从上面结果不难看出，其实就是把输出结果做了分离，所以~/result文件直接就可以当known_hosts文件用了。
 ```
+
+# 6. ssh端口转发 / ssh隧道
+
+SSH/OpenSSH/PortForwarding https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
+
+SSH Port Forwarding Example https://www.ssh.com/ssh/tunneling/example
+
+SSH tunnel https://www.ssh.com/ssh/tunneling/
