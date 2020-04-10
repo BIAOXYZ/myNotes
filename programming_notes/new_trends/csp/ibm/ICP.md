@@ -8,8 +8,11 @@ Introduction to IBM Cloud Private https://www.ibm.com/cloud/architecture/content
 IBM Cloud Private overview https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.2/getting_started/introduction.html
 
 Docker Image for IBM Cloud private-CE (Community Edition) https://hub.docker.com/r/ibmcom/icp-inception/
+> Version 3.2.1-ce is now available! For more information about the IBM Cloud Private version 3.2.1 release, see the [Release notes](https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.1/getting_started/whats_new.html).
 
 ## 使用指南
+
+Installing IBM Cloud Private Cloud Native and Enterprise editions https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.1/installing/install_containers.html
 
 IBM Cloud Private 3.1.2 -- CLI tools guide https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.1.2/manage_cluster/cli_guide.html
 
