@@ -56,6 +56,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 -item 物品名称
     普通物品：
     -item blood[stone] 
+    -item heart
     -item octar[ine_core]
     -item sphere
     
