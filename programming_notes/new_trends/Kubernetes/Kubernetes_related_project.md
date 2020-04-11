@@ -190,7 +190,7 @@ A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektonc
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## k8s开发环境（说是开发环境，其实实质还是dashboard，不过多了写类开发功能）
+## k8s开发环境（说是开发环境，其实实质还是dashboard，不过多了些类似开发功能）
 
 云原生应用开发新体验：Kui https://moelove.info/2019/05/24/%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%96%B0%E4%BD%93%E9%AA%8CKui/
 > IBM Kui: A hybrid command-line/UI development experience for cloud-native development https://github.com/IBM/kui

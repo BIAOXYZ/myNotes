@@ -312,4 +312,10 @@ PDF文档打开后的显示名与文件名不一样 https://jingyan.baidu.com/ar
 
 # other tools
 
+## search engine
+
 Qwant https://www.qwant.com/
+
+Yandex https://yandex.com/
+
+DuckDuckGo https://duckduckgo.com/
