@@ -188,8 +188,20 @@ KubeFed: Kubernetes Cluster Federation https://github.com/kubernetes-sigs/kubefe
 
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## k8s开发环境（说是开发环境，其实实质还是dashboard，不过多了写类开发功能）
+
 云原生应用开发新体验：Kui https://moelove.info/2019/05/24/%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%96%B0%E4%BD%93%E9%AA%8CKui/
 > IBM Kui: A hybrid command-line/UI development experience for cloud-native development https://github.com/IBM/kui
+
+Lens - The Kubernetes IDE https://k8slens.dev/ || https://github.com/lensapp/lens
+> Kontena Lens - The Smart Dashboard for Kubernetes https://www.youtube.com/watch?v=04v2ODsmtIs
+>> notes：从youtube的介绍视频来看，貌似早期名字叫Kontena Lens？然后我是从这个视频下面的评论里有人提到了weavescope才去搜的。
+
+Monitoring, visualisation & management for Docker & Kubernetes https://www.weave.works/oss/scope/ || https://github.com/weaveworks/scope
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## k8s可视化类项目
 
