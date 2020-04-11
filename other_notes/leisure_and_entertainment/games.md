@@ -134,7 +134,10 @@ DOTA2 TI6总决赛：WINGS VS DC https://www.bilibili.com/video/av30652596/
 
 Kaizo Mario http://kaizomario.techyoshi.com/
 
-[第一部全集]抖S做了个马里奥给朋友玩 https://www.bilibili.com/video/av343276/
+### 【from [多拉AV梦](https://space.bilibili.com/317774)】:
+// 曾经有段时间我一直以为视频被删了，后来发现原因是搜索引擎总是搜到过去的老地址（但偏偏这两个视频的老地址是不能用的——我猜可能是因为这个up主很久不活跃了，所以他的视频的老地址就不可用）。有次突然想到从谷歌的缓存里看了下，找到了up主名字，然后去up主的B站主页才发现转成BV号后的新地址还是可用的。
+
+[第一部全集]抖S做了个马里奥给朋友玩 https://www.bilibili.com/video/av343276/ || https://www.bilibili.com/video/BV1bx411F7Au
 - P4 波纹疾走 https://www.bilibili.com/video/av343276/?p=4  -->  贝爷的宠物红耀西，各种吃，吃了龟壳还会飞~；屏幕加速，不快走会被屏幕挤死
 - P5 幽灵好烦 https://www.bilibili.com/video/av343276/?p=5  -->  【boss关】在仅有四个格子，还必须用其中三个去砸萌萌的大幽灵boss。PS：这个视频似乎已经被剪了很多了，我记得曾经A站上的原版幽灵关有一个也很难过，但是这个就boss还算突出，前面的关卡感觉比较平淡
 - P7 电车只有一班 https://www.bilibili.com/video/av343276/?p=7  -->  带数字倒计时的电梯那关。。。死了N多次
@@ -144,7 +147,7 @@ Kaizo Mario http://kaizomario.techyoshi.com/
 - P12 孔明：姨妈大！ https://www.bilibili.com/video/av343276/?p=12  -->  开头两个大柱子，加一个身位的口，但是这个口还不能从太靠下的位置跳进去，因为有个隐藏的硬币，所以必须从将近平行的方向跳进去；紧接着一个悬崖，起跳点头顶上紧挨着“妙脆角”，然后对面过去就是乌龟。。。
 - P13 [完结]你需要精密计算 https://www.bilibili.com/video/av343276/?p=13  -->  个人觉得史上最难的单场景，第一次看到时根本不敢想象的绝望。。。PS：这个和P12是一关，但是这一关太突（can）出（lie）了，所以拆成了两关。。。过关后还有个羽毛的坑，跳进去捡个羽毛然后跳不出来了。。。不过这个只是小坑
 
-[第二部全集]抖S做了个马里奥给朋友玩 https://www.bilibili.com/video/av344751/
+[第二部全集]抖S做了个马里奥给朋友玩 https://www.bilibili.com/video/av344751/ || https://www.bilibili.com/video/BV1nx411F7iz
 - P1 擦弹的必要性 https://www.bilibili.com/video/av344751/?p=1  -->  开头如果直接选择过关就是不受控制掉进悬崖死（类似上一部的`P10`末尾）；食人花墙；一排隐藏硬币，根本跳不起来，但是有一个炮弹。。。；两个扔棒球啪啪啪守住两条窄线，必须快速过
 - P2 被孔明收买的小动物 https://www.bilibili.com/video/av344751/?p=2  -->  主要就是一个类似贪吃蛇一样的电梯，然后中间各种怪；这个电梯过后有个倒立的烟囱，下面是悬崖，一次跳不进去就挂了————这场景挺像《蝙蝠侠3黑暗骑士崛起》里跳囚牢里那个天台那一幕。
 - P3 马里奥的微笑 https://www.bilibili.com/video/av344751/?p=3  -->  也就是我印象最深的爬钢丝那关！我觉得名字不如叫“啪啪啪君的掌声”。真是太不容易了，虽然这还不是最难的一关。。。
