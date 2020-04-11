@@ -1,6 +1,6 @@
 
 请教： Python 获取 shell 自定义变量的值。 https://www.v2ex.com/t/658012
-```
+```console
 我在当前 shell 中定义了 test 这个自定义变量，同时，我启动了一个 Py 脚本，这个 Py 脚本有没有办法获取当前 shell 的
 自定义变量（比如这个$test ）的值？
 
