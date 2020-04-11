@@ -1,5 +1,15 @@
 
+# bilibili技术相关
+
 直死之邪王灼眼--专栏文集 https://space.bilibili.com/14978578/article
+
+## ZeroTier
+
+简易利用ZeroTier等工具实现多人稳定游戏联机 https://www.bilibili.com/read/cv5281798/
+
+超简单自建虚拟局域网好友远程联机教程 自建游戏对战平台 老版本（非重制版）魔兽联机方法 https://www.bilibili.com/video/av89438806/
+
+ZeroTier游戏联机详细设置！ https://www.bilibili.com/video/av95442800/
 
 # 其他
 

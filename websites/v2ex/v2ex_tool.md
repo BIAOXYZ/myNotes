@@ -1,8 +1,31 @@
 
-***远程共享/访问***：
-- 目前免费远程控制软件有好用的吗？ https://www.v2ex.com/t/567221
-- 大家可以放弃 TeamViewer 了，有更好的解决方案 https://www.v2ex.com/t/568443
-- 花了点时间终于把 xrdp 跑起来了 https://www.v2ex.com/t/630325
+# 远程共享/访问专题
+
+目前免费远程控制软件有好用的吗？ https://www.v2ex.com/t/567221
+
+大家可以放弃 TeamViewer 了，有更好的解决方案 https://www.v2ex.com/t/568443
+
+花了点时间终于把 xrdp 跑起来了 https://www.v2ex.com/t/630325
+
+## 远程局域网
+
+怎么搭建“远程局域网”，用来联机打游戏 https://www.v2ex.com/t/661321
+- > https://www.v2ex.com/t/621442 【[Slack 开源了他们的 overlay network 工具 Nebula](https://www.v2ex.com/t/621442)】
+  * >
+    ```console
+    https://github.com/slackhq/nebula
+    简单来说，就是可以用很简单的方式让全球各地的机器用安全的方式在同一个内网里。
+    ``` 
+  * > 用过 tinc 和 zerotier 之后还是更喜欢 zerotier，使用一点中心化让配置更简单了。
+- > 想起这个 https://github.com/spacemeowx2/switch-lan-play
+- > Nebula 或者 zerotier
+- > 手柄游戏可以考虑 steamlink 公网串流；普通游戏 zerotier
+- > 想简单的用 zerotier,想完全自己可控的可以考虑 tinc，可以参考 https://www.v2ex.com/t/649829
+- > 我自己是用的 OpenVPN
+- > VXLAN, EoIP, 各种 Tunnel 姿势了解一下
+- > https://www.wireguard.com/
+
+# 待分类
 
 大家有什么推荐的日常 Linux 软件？ https://www.v2ex.com/t/575901
 
