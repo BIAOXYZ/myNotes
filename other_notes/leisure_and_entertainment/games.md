@@ -52,6 +52,16 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 - > 可以的，我一般练英雄就是自己C房打BOT EXPERIMENT的bot，进去打/all给对面选英雄，一个个打，按照21534的顺序选，输入英雄英文名前几个字母就行了，宙斯要用zuus
 
 【这个里面最后是英雄全称，打一部分即可。比如幻影长矛手的英文是`phantom_lancer`，如果打`phantom`会优先选幻刺，此时可以打`lancer`】 Dota2 作弊用命令 （ver 7.23b） - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/57975930
+```console
+-item 物品名称
+    普通物品：
+    -item blood[stone] 
+    -item octar[ine_core]
+    -item sphere
+    
+    中立物品：
+    -item [mirror]_shield
+```
 
 [Bot Games] You can pick heroes for your allies by using the suggest hero feature https://www.reddit.com/r/DotA2/comments/6lxvan/bot_games_you_can_pick_heroes_for_your_allies_by/
 - > Playing a bot game when i decided to try alt-clicking some heroes to suggest them, and i found that if you suggest a hero (from the little pool of heroes that bots pick from) your teammates will pick them. Tried it out only a couple of times, but im pretty sure this is the case! Like here
