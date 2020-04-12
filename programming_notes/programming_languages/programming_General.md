@@ -56,7 +56,7 @@ Awesome Online IDE: 🌩️ A list of awesome online development environments ht
 一个基于浏览器的编程工具 (Coderlane) https://www.v2ex.com/t/620951
 > 创造最完美的在线实时结对编程环境 https://coderlane.net/
 
-【一个日本的在线ide，提供很多种语言支持，关键画风很萌(●'◡'●)。参考下面那个改程序错误的链接，里面虚构了一个叫Noda的二次元萌妹子(❤ ω ❤)】 Paiza.io -- Just write and run code online ! https://paiza.io/en
+【[:star:][`*`]】【一个日本的在线ide，提供很多种语言支持，关键画风很萌(●'◡'●)。参考下面那个改程序错误的链接，里面虚构了一个叫Noda的二次元萌妹子(❤ ω ❤)】 Paiza.io -- Just write and run code online ! https://paiza.io/en
 - > This is an easy task - just fix the code written by a new lady programmer!｜paiza’s online hackathon Vol.1 https://paiza.jp/poh/ec-campaign
 >> notes: 图快的话可以直接用 https://paiza.io/en/projects/new?language=c 或 https://paiza.io/en/projects/new?language=python 之类的地址。
 
@@ -113,6 +113,12 @@ Interactive Tutorials https://github.com/ronreiter/interactive-tutorials
 - https://www.learnpython.org/
 
 freeCodeCamp Guide https://guide.freecodecamp.org/
+
+## (Programiz)[https://www.programiz.com/]
+
+- https://www.programiz.com/python-programming
+- https://www.programiz.com/c-programming
+- https://www.programiz.com/cpp-programming
 
 ## Online Games or Others
 
