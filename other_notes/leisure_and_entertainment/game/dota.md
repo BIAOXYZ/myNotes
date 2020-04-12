@@ -69,6 +69,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item apex   极
     -item [ball]ista   弩炮
     Level 4：
+    -item [time]less_relic   永恒遗物
     -item [spell]_prism   法术棱镜
     Level 3：
 ```
