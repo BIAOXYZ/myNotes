@@ -246,9 +246,11 @@ Postgresql数据库的一些字符串操作函数
 https://www.cnblogs.com/wuhenke/archive/2010/08/02/1790750.html
 
 
-### PG组件
+### PG工具/组件
 
 Pgpool http://www.pgpool.net/mediawiki/index.php/Main_Page
+
+Patroni: A Template for PostgreSQL HA with ZooKeeper, etcd or Consul https://github.com/zalando/patroni
 
 ### PG扩展
 
