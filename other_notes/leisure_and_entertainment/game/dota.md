@@ -93,6 +93,8 @@ Beginner’s Guide to OpenAI Five at Dota2 https://medium.com/@ngwaifoong92/begi
 
 ## 7.25
 
+DOTA2 4月7日更新日志：7.25c平衡性更新 - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/126541719
+
 DOTA2 3月18日更新日志：7.25游戏性更新 https://mp.weixin.qq.com/s/tznOrmZ4dy9_W2j-RGxzFQ 【`2020.03.18`】
 
 ## 7.23
@@ -108,6 +110,8 @@ DOTA2 3月18日更新日志：7.25游戏性更新 https://mp.weixin.qq.com/s/tzn
 ```
 >> 这不是dota2的版本更新，是全新发布了dota3。。。再附一个IT之家的链接：
 >>> 史诗级更新！DOTA2迎来世外之争版本：英雄可升至30级，2名新英雄上线 https://www.ithome.com/0/459/434.htm
+
+【DOTA2世外之争开启】7.23新中立物品内容 - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/94537538
 
 【dota2】7.23版本的59个新物品测评 https://www.bilibili.com/video/av77196756
 
