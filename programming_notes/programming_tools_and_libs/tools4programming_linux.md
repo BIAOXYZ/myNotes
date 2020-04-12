@@ -225,6 +225,16 @@ https://www.jianshu.com/p/161b9be14494
 
 免费开源SSH客户端神器MobaXterm，是时候puttty、Xshell和SecureCRT说Byebye了 https://www.freebuf.com/column/163631.html
 
+# linux下远程连接软件
+
+https://github.com/FreeRDP
+- FreeRDP is a free remote desktop protocol library and clients http://www.freerdp.com/ || https://github.com/FreeRDP/FreeRDP
+- Remmina remote desktop client https://remmina.org/ || https://github.com/FreeRDP/Remmina
+
+Remmina：一个 Linux 下功能丰富的远程桌面共享工具 - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/26879292
+
+xrdp完美实现Windows远程访问Ubuntu 16.04 https://www.cnblogs.com/xuliangxing/p/7560723.html
+
 ### CMake
 <<find_package与CMake如何查找链接库详解>>
 http://blog.csdn.net/bytxl/article/details/50637277
