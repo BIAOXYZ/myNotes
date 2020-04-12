@@ -61,6 +61,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     
     中立物品：
     -item [mirror]_shield   神镜盾
+    -item [seer]_stone   先哲之石
 ```
   
 How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
