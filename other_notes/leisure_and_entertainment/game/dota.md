@@ -58,10 +58,15 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item heart   龙心
     -item octar[ine_core]   玲珑心
     -item sphere   林肯
+    -item [travel]_boots   远行鞋
     
     中立物品：
-    -item [mirror]_shield   神镜盾
+    -item desolator_2   寂灭 --> 因为黯灭是desolator，所以这个真是一个字符都不能少。。。
     -item [seer]_stone   先哲之石
+    -item [mirror]_shield   神镜盾
+    -item [fusion]_rune   聚合神符
+    -item apex   极
+    -item [ball]ista   弩炮
 ```
   
 How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
