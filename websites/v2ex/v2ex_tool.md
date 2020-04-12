@@ -27,6 +27,9 @@
 
 # 待分类
 
+一键导出你的微信读书书籍和笔记 https://www.v2ex.com/t/661593
+> `examples-of-web-crawlers/12.一键导出微信读书的书籍和笔记/` https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/64d220eb41f7eea4e5f8366fe7b055d678821f29/12.%E4%B8%80%E9%94%AE%E5%AF%BC%E5%87%BA%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E7%9A%84%E4%B9%A6%E7%B1%8D%E5%92%8C%E7%AC%94%E8%AE%B0
+
 大家有什么推荐的日常 Linux 软件？ https://www.v2ex.com/t/575901
 
 shellcheck 真是写脚本的神器 https://www.v2ex.com/t/569910
