@@ -27,7 +27,7 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 - > 二进制分治，按最高位是0或者1写入到两个文件，并记录两个文件写了多少个元素，然后就可以知道中间那个数在哪个文件里。接下来对次高位进行同样的操作。。。最后剩下的就是所求。其实就是转换成了求第k个数。
 - > 建两个堆，一个大顶堆一个小顶堆。一个个读取数据放入两个堆中，注意需要保持两个堆的数据个数绝对值在1以内。这样两个堆的堆顶即为中间，把这些数据都读完，要找的数据就是两个堆的堆顶数据了。
 
-# 脉脉其他
+# 脉脉技术类其他
 
 面试题提问，有http为什么要用dubbo，期待大佬们的回答 阿里腾讯美团滴滴华为引流 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU2MDk5MjQsImlhdCI6MTU4NTMwNzk0NH0.WsAUUfUHlGLEhXypL6lhqlcev0pKWShiUtY0PrmMNqU
 - > 不用维护域名，因为域名解析的缓存千奇百怪
@@ -41,3 +41,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 - > 如果是C++，gdb attach 到进程上，generate core，gdb 打开 core，threads apply all bt
 - > C++一般是 top -Hp和pstack配合用
 - > pstack 就够了
+
+# 脉脉八卦
+
+没喝多真实情况，我带的一个新来的小实习生一直投怀送抱寻求身体接触，应该有所图（转正），如果你们怎么处理。我男的单身，实习生很好看。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU3NzM3ODUsImlhdCI6MTU4NjY2Nzk3OX0.y_d37q0ugzEJ4OSa70n_3mK9QUMAPxYqo0g96pP92LE
+- > 来了就搬到我小区住，一下班没人看到就抱着我胳膊不放这是不小心吗
