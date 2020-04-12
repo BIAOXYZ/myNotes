@@ -80,6 +80,8 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 
 The Linux Command Line http://linuxcommand.org/
 - The Linux Command Line 中文版 https://www.kancloud.cn/thinkphp/linux-command-line/39431
+- 快乐的 Linux 命令行 http://billie66.github.io/TLCL/index.html
+  * > 本书是 The Linux Command Line 的中文版
 
 # shell脚本调试
 
