@@ -1,15 +1,23 @@
 
-# DOTA & DOTA2
+# DOTA
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# DOTA2 steam
 
 https://steamcommunity.com/id/biaoxyz/
 
-# dota2工具类
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Dota2工具类
 
 G:G (ggscore.com) – eSports project about the most popular PC games. https://ggscore.com/en/about
 - DOTA 2 战队排行榜 https://ggscore.com/zh/dota-2/team
 
 TrackDota https://www.trackdota.com/
 - The International 2019 https://www.trackdota.com/leagues/10749
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Dota_2_Wiki from gamepedia.com
 
@@ -19,37 +27,47 @@ Dota_2_Wiki https://dota2-zh.gamepedia.com/Dota_2_Wiki
 Dota_2_Wiki https://dota2.gamepedia.com/Dota_2_Wiki
 - Bots https://dota2.gamepedia.com/Bots
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Dota2指令类
+
 Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 
-# dota2指令类
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 给AI选英雄
+
+>> notes：总结下就是给自己人选用`alt+左键`，给敌人选输入`/all ${英雄名字(无歧义时简称即可)}`。
 
 请问dota2人机可以给对方电脑选英雄么？ http://bbs.nga.cn/read.php?tid=20130480
 - > 可以，要创意工坊的人机
 - > ex开头的 /all 英雄英文(一般3个字母就够 容易重名的 2个词的下划线)
 - > 可以的，我一般练英雄就是自己C房打BOT EXPERIMENT的bot，进去打/all给对面选英雄，一个个打，按照21534的顺序选，输入英雄英文名前几个字母就行了，宙斯要用zuus
 
-【这个里面最后是英雄全称，打一部分即可。比如幻影长矛手的英文是`phantom_lancer`，如果打`phantom`会优先选幻刺，此时可以打`lancer`】 Dota2 作弊用命令 （ver 7.23b） - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/57975930
+[Bot Games] You can pick heroes for your allies by using the suggest hero feature https://www.reddit.com/r/DotA2/comments/6lxvan/bot_games_you_can_pick_heroes_for_your_allies_by/
+- > Playing a bot game when i decided to try ***`alt-clicking some heroes`*** to suggest them, and i found that if you suggest a hero (from the little pool of heroes that bots pick from) your teammates will pick them. Tried it out only a couple of times, but im pretty sure this is the case! Like here
+  >> ![](https://imgur.com/gallery/AAA0g)
+
+【[:star:][`*`]】【这个里面最后是英雄全称，打一部分即可。比如幻影长矛手的英文是`phantom_lancer`，如果打`phantom`会优先选幻刺，此时可以打`lancer`】【物品全称也可在这查，同样无歧义的话简称就可以】 Dota2 作弊用命令 （ver 7.23b） - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/57975930
 ```console
 -item 物品名称
     普通物品：
-    -item blood[stone] 
-    -item heart
-    -item octar[ine_core]
-    -item sphere
+    -item blood[stone]   血精石
+    -item heart   龙心
+    -item octar[ine_core]   玲珑心
+    -item sphere   林肯
     
     中立物品：
-    -item [mirror]_shield
+    -item [mirror]_shield   神镜盾
 ```
-
-[Bot Games] You can pick heroes for your allies by using the suggest hero feature https://www.reddit.com/r/DotA2/comments/6lxvan/bot_games_you_can_pick_heroes_for_your_allies_by/
-- > Playing a bot game when i decided to try alt-clicking some heroes to suggest them, and i found that if you suggest a hero (from the little pool of heroes that bots pick from) your teammates will pick them. Tried it out only a couple of times, but im pretty sure this is the case! Like here
-  >> ![](https://imgur.com/gallery/AAA0g)
   
 How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
 
-# dota2新闻消息类
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Dota2新闻消息类
 
 电子竞技有哪些玄学？ - 疯癫的A兵者的回答 - 知乎 https://www.zhihu.com/question/67225512/answer/345458974
 
@@ -62,11 +80,15 @@ VG夺得《Dota2》震中杯冠军 https://www.ithome.com/0/431/001.htm
 - DOTA2：再引争议！VG拿到震中杯Major冠军，MVP却又给亚军！ http://www.sohu.com/a/324059377_100124359
 - Dota2 ESL孟买站中国战队夺冠，主办方把MVP颁给亚军引不满 http://www.guancha.cn/sports/2019_04_22_498658.shtml
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## OpenAI Dota2
 
 Beginner’s Guide to OpenAI Five at Dota2 https://medium.com/@ngwaifoong92/beginners-guide-to-openai-five-at-dota2-3b49ee5169b8
 
-# dota2游戏更新类
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Dota2游戏更新类
 
 DOTA2 3月18日更新日志：7.25游戏性更新 https://mp.weixin.qq.com/s/tznOrmZ4dy9_W2j-RGxzFQ 【`2020.03.18`】
 
@@ -82,9 +104,13 @@ DOTA2 3月18日更新日志：7.25游戏性更新 https://mp.weixin.qq.com/s/tzn
 >> 这不是dota2的版本更新，是全新发布了dota3。。。再附一个IT之家的链接：
 >>> 史诗级更新！DOTA2迎来世外之争版本：英雄可升至30级，2名新英雄上线 https://www.ithome.com/0/459/434.htm
 
-# TI
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# TI general
 
 The International (TI) DOTA 2 Championships http://www.dota2.com/international/overview/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TI9
 
@@ -98,6 +124,8 @@ The International (TI) DOTA 2 Championships http://www.dota2.com/international/o
 - 2019《Dota 2》OG 3-1击败Liquid最终夺冠，“双冠王”实至名归 https://www.ithome.com/0/441/137.htm
 
 2019DOTA2国际邀请赛今日结束 OG战队完成TI连冠 https://mp.weixin.qq.com/s/LpCv0UWTt2geQIHdiNU-lQ
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TI6
 

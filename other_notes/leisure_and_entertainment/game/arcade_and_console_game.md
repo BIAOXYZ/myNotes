@@ -1,4 +1,10 @@
 
+# general
+
+街机 https://zh.wikipedia.org/wiki/%E8%A1%97%E6%9C%BA || Arcade game https://en.wikipedia.org/wiki/Arcade_game
+
+游戏机游戏 https://zh.wikipedia.org/wiki/%E6%B8%B8%E6%88%8F%E6%9C%BA%E6%B8%B8%E6%88%8F || Console game https://en.wikipedia.org/wiki/Console_game
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
