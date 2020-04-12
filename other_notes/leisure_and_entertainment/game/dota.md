@@ -71,6 +71,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     Level 4：
     -item [time]less_relic   永恒遗物
     -item [spell]_prism   法术棱镜
+    -item [panic]_button   神妙明灯
     Level 3：
 ```
   
