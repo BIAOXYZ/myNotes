@@ -77,14 +77,14 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 /all 英雄/英雄简称
     /all axe 斧王
     /all [blood]seeker   血魔
-    /all chaos_knight   混沌骑士
-    /all dazzle   戴泽-暗影牧师
+    /all [chao]s_knight   混沌骑士
+    /all [daz]zle   戴泽-暗影牧师
     /all [death]_prophet   死亡先知
     /all jakiro   杰奇洛-双头龙
     /all [jugg]ernaut   主宰
-    /all luna    露娜-月之骑士
-    /all necrolyte   死灵法师
-    /all sand_king   沙王
+    /all [lun]a    露娜-月之骑士
+    /all [nec]rolyte   死灵法师
+    /all [san]d_king   沙王
 ```
   
 How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
