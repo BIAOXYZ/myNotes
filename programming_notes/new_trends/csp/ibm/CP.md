@@ -34,6 +34,12 @@ Getting started with IBM Cloud Pak for Multicloud Management https://cloud.ibm.c
 
 Supported OpenShift versions and platforms https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.3.0/install/supported_os.html
 
+## 导入managed cluster
+
+Importing a target managed cluster to the hub cluster https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/install_k8s_cloud.html
+- Importing a cluster with the CLI https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/manage_cluster/import_cli.html
+- Importing a managed cluster in an air gapped environment https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/offline_endpoint.html
+
 # 其他链接
 
 IBM Cloud Paks Playbook https://cloudpak8s.io/
