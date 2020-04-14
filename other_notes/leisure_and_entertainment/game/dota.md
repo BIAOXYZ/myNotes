@@ -17,7 +17,9 @@ G:G (ggscore.com) – eSports project about the most popular PC games. https://g
 TrackDota https://www.trackdota.com/
 - The International 2019 https://www.trackdota.com/leagues/10749
 
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Dota2 Wiki类
 
 ## Dota_2_Wiki from gamepedia.com
 
@@ -28,6 +30,10 @@ Dota_2_Wiki https://dota2.gamepedia.com/Dota_2_Wiki
 - Bots https://dota2.gamepedia.com/Bots
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Dota2 灰机wiki
+
+DotA中文维基 https://dota.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
