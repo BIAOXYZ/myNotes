@@ -42,6 +42,8 @@ Importing a target managed cluster to the hub cluster https://www.ibm.com/suppor
 
 # 其他链接
 
+IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
+
 IBM Cloud Paks Playbook https://cloudpak8s.io/
 
 # 个人实战
