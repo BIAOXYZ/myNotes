@@ -276,6 +276,40 @@ Kubectl apply vs kubectl create? https://stackoverflow.com/questions/47369351/ku
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## kubernetes API
+
+Kubernetes API https://v1-18.docs.kubernetes.io/zh/docs/concepts/overview/kubernetes-api/ || The Kubernetes API https://v1-18.docs.kubernetes.io/docs/concepts/overview/kubernetes-api/
+
+Kubernetes API Concepts https://v1-18.docs.kubernetes.io/docs/reference/using-api/api-concepts/
+
+Kubernetes API 资源使用-应该使用哪个 Group 和 Version? https://www.qikqiak.com/post/k8s-api-resources-group-and-version/
+> 原文链接：https://akomljen.com/kubernetes-api-resources-which-group-and-version-to-use/
+```sh
+kubectl api-resources -o wide
+
+# 您还可以选择获取特定 API 组的 API 资源，例如：
+kubectl api-resources --api-group apps -o wide
+
+# 对于上面的每种资源类型，我们都可以使用kubectl explain命令来获取有关的资源详细信息：
+kubectl explain configmap
+
+# 需要注意的是explain命令可能会显示旧的group/version，我们可以通过--api-version参数显示设置它
+kubectl explain replicaset --api-version apps/v1
+
+# 我们也可以使用下面的命令来获取集群支持的所有 API 版本：
+kubectl api-versions
+
+# 有的时候，我们只想检查特定的group/version是否可以用于某些资源即可，大多数的资源都有可用的GET方法，所以我们只需要尝试
+# 获取下资源，同时提供 API 的 version 和 group 即可验证，kubectl get <API_RESOURCE_NAME>.<API_VERSION>.<API_GROUP>，例如：
+kubectl get deployments.v1.apps -n kube-system
+
+# 如果资源不存在指定的group/version组合或者资源根本不存在，我们将会收到错误信息：
+$ kubectl get deployments.v1beta.apps -n kube-system
+error: the server doesn't have a resource type "deployments"
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## kubernetes网络
 
 Cluster Networking https://kubernetes.io/docs/concepts/cluster-administration/networking/
