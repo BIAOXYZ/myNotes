@@ -205,6 +205,11 @@ git push -u origin --tags
 <<为什么我pull request后全部放在一个未关闭的pull request里面了>>
 https://segmentfault.com/q/1010000005178786
 
+Github进行fork后如何与原仓库同步：重新fork很省事，但不如反复练习版本合并 https://github.com/selfteaching/the-craft-of-selfteaching/issues/67
+- > 分享一个命令，直接强制同步源仓库（upstream），就不用删了。。
+    <br> `git fetch upstream && git reset --hard upstream/master && git push -f`
+    <br> git push -f确实是很粗暴，这种方法也只适用于不用保存自己的版本的情况而已。
+
 ### Github Gist
 
 如何看待 Github Gist 这个服务，怎样更好的利用？ - 知乎用户的回答 - 知乎
