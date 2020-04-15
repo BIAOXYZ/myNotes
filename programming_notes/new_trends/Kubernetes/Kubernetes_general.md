@@ -282,7 +282,7 @@ Kubernetes API https://v1-18.docs.kubernetes.io/zh/docs/concepts/overview/kubern
 
 Kubernetes API Concepts https://v1-18.docs.kubernetes.io/docs/reference/using-api/api-concepts/
 
-Kubernetes API 资源使用-应该使用哪个 Group 和 Version? https://www.qikqiak.com/post/k8s-api-resources-group-and-version/
+【[:star:][`*`]】 Kubernetes API 资源使用-应该使用哪个 Group 和 Version? https://www.qikqiak.com/post/k8s-api-resources-group-and-version/
 > 原文链接：https://akomljen.com/kubernetes-api-resources-which-group-and-version-to-use/
 ```sh
 kubectl api-resources -o wide
@@ -471,6 +471,8 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 ***RBAC实战类攻略***：
 - KUBERNETES AND RBAC: RESTRICT USER ACCESS TO ONE NAMESPACE https://jeremievallee.com/2018/05/28/kubernetes-rbac-namespace-user.html
 - Configure RBAC In Your Kubernetes Cluster https://docs.bitnami.com/kubernetes/how-to/configure-rbac-in-your-kubernetes-cluster/
+
+【[:star:][`*`]】 Kubernetes RBAC 详解 https://www.qikqiak.com/post/use-rbac-in-k8s/
 
 ### security context
 
