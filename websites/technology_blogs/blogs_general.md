@@ -181,6 +181,9 @@ Cizixs Write Here https://cizixs.com/
 
 aoho's blog - Golang http://blueskykong.com/categories/Golang/
 
+阳明的博客 https://www.qikqiak.com/
+- `#kubernetes` https://www.qikqiak.com/tags/kubernetes/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
