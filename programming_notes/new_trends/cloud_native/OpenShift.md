@@ -15,6 +15,12 @@ OpenShift https://en.wikipedia.org/wiki/OpenShift
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# openshift vs kubernetes
+
+【[:star:][`*`]】 10 most important differences between OpenShift and Kubernetes https://cloudowski.com/articles/10-differences-between-openshift-and-kubernetes/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # openshift official
 
 OPENSHIFT Online https://manage.openshift.com/
