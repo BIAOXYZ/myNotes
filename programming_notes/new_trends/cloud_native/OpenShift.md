@@ -78,6 +78,32 @@ https://blog.csdn.net/huqigang/article/category/7157977
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# openshift技巧
+
+## 从命令行获取webconsole地址
+
+https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/install/prep.html
+```sh
+The OpenShift Container Platform web console can be found by running the `kubectl -n openshift-console get route` 
+command. You can see a similar output to the following example:
+
+  openshift-console          console             console-openshift-console.apps.new-coral.purple-chesterfield.com                       console                  https   reencrypt/Redirect     None
+
+The console URL in this example is https://console-openshift-console.apps.new-coral.purple-chesterfield.com. Open the URL 
+in your browser and check the result. If the console URl is like console-openshift-console.router.default.svc.cluster.local, 
+set openshift_master_default_subdomain when you install the OpenShift Container Platform.
+```
+```sh
+# 个人实战：第一个确实就是openshift的webconsole地址
+
+[root@anaemia-inf ~]# oc get route -n openshift-console
+NAME        HOST/PORT                                                  PATH   SERVICES    PORT    TERMINATION          WILDCARD
+console     console-openshift-console.apps.anaemia.os.fyre.ibm.com            console     https   reencrypt/Redirect   None
+downloads   downloads-openshift-console.apps.anaemia.os.fyre.ibm.com          downloads   http    edge/Redirect        None
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # openshift组件
 
 ## DeploymentConfig
