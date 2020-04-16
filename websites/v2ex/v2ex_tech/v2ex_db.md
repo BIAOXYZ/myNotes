@@ -1,4 +1,6 @@
 
+遇到一个 PostgreSQL 很奇葩的排序问题（BUG？） https://www.v2ex.com/t/663098
+
 求助 mysql & 运算符是什么意思， 怎样解释 https://www.v2ex.com/t/660327
 
 数据库索引笔记 https://www.v2ex.com/t/660228
