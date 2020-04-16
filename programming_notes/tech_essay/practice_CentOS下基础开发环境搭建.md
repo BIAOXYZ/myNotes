@@ -7,7 +7,8 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## [CentOS docker安装](https://docs.docker.com/install/linux/docker-ce/centos/)
+## [CentOS docker安装] (https://docs.docker.com/install/linux/docker-ce/centos/ --> https://docs.docker.com/engine/install/centos/)
+//注：后来碰到了`Red Hat Enterprise Linux Server 7.6 (Maipo)`，安装是一模一样的。
 
 - 卸载旧版本
 ```
@@ -15,14 +16,18 @@
 ```
 
 - 使用 yum 安装
-```
+```sh
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-
 sudo yum-config-manager --add-repo https://mirrors.ustc.edu.cn/docker-ce/linux/centos/docker-ce.repo
-
 sudo yum makecache fast
-
 sudo yum install docker-ce
+
+官方版：
+yum install -y yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum list docker-ce --showduplicates | sort -r
+yum install -y docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
+# 比如 yum install -y docker-ce-19.03.5-3.el7 docker-ce-cli-19.03.5-3.el7 containerd.io
 ```
 > //方便版（实际上最后一步只装docker-ce会把docker-ce-cli和containerd.io当依赖一起装了。）：
 >> `yum install -y yum-utils device-mapper-persistent-data lvm2 && yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo && yum install -y docker-ce docker-ce-cli containerd.io`
