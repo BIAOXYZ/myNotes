@@ -274,6 +274,12 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
 北京外企人力资源服务有限公司 www.fesco.com.cn
 - HELLO员工自助服务平台 https://es.fesco.com.cn/Esvr/Home/Index
 
+## 工资计算
+
+张大妈计算器：
+- 全国各城市税后工资计算器及周边服务 - 张大妈工资计算器 https://hizdm.cn/
+- 年终奖计算器 https://hizdm.cn/bonus/
+
 五险一金及税后工资计算器 http://salarycalculator.sinaapp.com/
 
 ### 租房

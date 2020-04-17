@@ -105,7 +105,7 @@ downloads   downloads-openshift-console.apps.anaemia.os.fyre.ibm.com          do
 ## system:admin VS kube:admin (kubeadmin)
 
 ```sh
-# 至少最新的ocp4.3（ocp 3.11是啥情况不记得了）装完，不登了不切换首次执行oc whoami会发现是一个叫system:admin的用户。
+# 至少最新的OCP 4.3（ocp 3.11是啥情况不记得了）装完，不用任何用户登陆，执行oc whoami会发现是一个叫system:admin的用户。
 [root@anaemia-inf ~]# oc whoami
 system:admin
 
