@@ -102,6 +102,28 @@ console     console-openshift-console.apps.anaemia.os.fyre.ibm.com            co
 downloads   downloads-openshift-console.apps.anaemia.os.fyre.ibm.com          downloads   http    edge/Redirect        None
 ```
 
+## system:admin VS kube:admin (kubeadmin)
+
+```sh
+# 至少最新的ocp4.3（ocp 3.11是啥情况不记得了）装完，不登了不切换首次执行oc whoami会发现是一个叫system:admin的用户。
+[root@anaemia-inf ~]# oc whoami
+system:admin
+
+# 然后提示的证书里会有一个叫kubeadmin的用户。后面这个一直还会用到，system:admin就基本不会用了。
+Credentials:
+    Username: kubeadmin
+    Password: xxxxx-xxxxx-xxxxx-xxxxx
+    
+# 这俩用户啥关系呢？谷歌了一下，有本书（[《Architecting and Operating OpenShift Clusters》](https://link.springer.com/book/10.1007/978-1-4842-4985-7)）里提到了这么一段：
+Once the cluster is successfully deployed, the installer displays the credentials for the kubeadmin user(see Listing 6-10). This is a 
+cluster-admin user equivalent to the system admin user in the OCP3 11 x clusters, but the kubeadmin user can log in to the web console.
+In OCP4, this is the user that configures and sets up the environment to enable other services or functionalities. 
+To enable other users to access the new OCP cluster, the kubeadmin user must define a new identity provider.
+
+# 但是我这边安完OCP 4.3初始的用户确实是system:admin，算了，不管了。反正最大的区别是system:admin不能登陆web console。但是这个用户肯定还是
+# 存在的。参见： https://docs.openshift.com/container-platform/4.3/authentication/impersonating-system-admin.html
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # openshift组件
