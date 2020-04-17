@@ -86,3 +86,39 @@ Removing Helm certificates: /root/.helm
 OK
 [root@apmsvtocp5-inf ~]#
 ```
+
+```sh
+# 必须要指定namespace。。。
+
+[root@lolls-inf ~]# cloudctl login -a https://icp-console.apps.lolls.os.fyre.ibm.com:443 -u admin -p admin --skip-ssl-validation
+Authenticating...
+OK
+
+Targeted account mycluster Account
+
+Enter a namespace >
+FAILED
+No namespace selected. You need to select a namespace.
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# cloudctl login -a https://icp-console.apps.lolls.os.fyre.ibm.com:443 -u admin -p admin --skip-ssl-validation -n default
+Authenticating...
+OK
+
+Targeted account mycluster Account
+
+Targeted namespace default
+
+Configuring kubectl ...
+Property "clusters.mycluster" unset.
+Property "users.mycluster-user" unset.
+Property "contexts.mycluster-context" unset.
+Cluster "mycluster" set.
+User "mycluster-user" set.
+Context "mycluster-context" created.
+Switched to context "mycluster-context".
+OK
+
+Configuring helm: /root/.helm
+OK
+[root@lolls-inf ~]#
+```
