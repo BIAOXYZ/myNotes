@@ -282,6 +282,12 @@ Kubernetes API https://v1-18.docs.kubernetes.io/zh/docs/concepts/overview/kubern
 
 Kubernetes API Concepts https://v1-18.docs.kubernetes.io/docs/reference/using-api/api-concepts/
 
+Kubernetes API 总览 https://v1-18.docs.kubernetes.io/zh/docs/reference/using-api/api-overview/ || Kubernetes API Overview https://v1-18.docs.kubernetes.io/docs/reference/using-api/api-overview/
+- > 为了消除字段或重组资源表示形式，Kubernetes 支持多个 API 版本，每个版本在不同的 API 路径下。例如：`/api/v1` 或者 `/apis/extensions/v1beta1`。
+- > API 组 使扩展 Kubernetes API 更容易。API 组在 REST 路径和序列化对象的 apiVersion 字段中指定。当前，有几个正在使用的 API 组：
+  * **core**（也称为 **legacy**）组，它位于 REST 路径`/api/v1`上，未指定为 apiVersion 字段的一部分，例如`apiVersion: v1`。
+  * 特定名称的组位于 REST 路径`/apis/$GROUP_NAME/$VERSION`下，并使用`apiVersion:$GROUP_NAME/$VERSION`（例如，`apiVersion:batch/v1`）。您可以在 Kubernetes API 参考 中找到受支持的 API Group 的完整列表。
+
 【[:star:][`*`]】 Kubernetes API 资源使用-应该使用哪个 Group 和 Version? https://www.qikqiak.com/post/k8s-api-resources-group-and-version/
 > 原文链接：https://akomljen.com/kubernetes-api-resources-which-group-and-version-to-use/
 ```sh
