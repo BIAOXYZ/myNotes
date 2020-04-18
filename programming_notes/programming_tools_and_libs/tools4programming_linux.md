@@ -1,4 +1,6 @@
 
+# bash
+
 ## bash-completion
 
 RedHat - yum install completion https://serverfault.com/questions/511876/redhat-yum-install-completion
@@ -155,7 +157,24 @@ mutatingwebhookconfigurations.admissionregistration.k8s.io    volumeattachments.
 namespaces
 ```
 
-## SSH & SSL & TLS
+# zsh
+
+# fish
+
+Fish shell 入门教程 http://www.ruanyifeng.com/blog/2017/05/fish_shell.html
+- > 由于 Fish 的语法与 Bash 有很大差异，Bash 脚本一般不兼容。因此，我建议不要将 Fish 设为默认 Shell，而是每次手动启动它。
+- 回复：
+  * >
+    ```
+    bingo 说：
+
+    引用老顽童的发言：
+    尝试使用中， 不过每次都要fish 一下，挺不方便的。
+
+    你可以使用chsh /usr/bin/fish改变默认shell。通过 cat /etc/shells 可以查看当前系统已经安装的shell
+    ```
+
+# SSH & SSL & TLS
 
 SSH用私钥登录远程服务器时提示私钥不安全 https://my.oschina.net/philosopher/blog/314134
 
