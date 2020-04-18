@@ -15,6 +15,13 @@ ZeroTier游戏联机详细设置！ https://www.bilibili.com/video/av95442800/
 
 ## 2020
 
+
+### 大sao停更（其实我很久都不看生活类视频了，这个事还是媳妇跟我说才知道）
+
+徐大sao视频展示其B站收益84372元，B站：真实 https://www.ithome.com/0/483/244.htm
+
+传递12万善款，却遭受无比打击，对于这鸡腿事件，徐大sao有话说 https://www.bilibili.com/video/BV1Kg4y1z7mA
+
 ### AV号升级 --> 当年故意搞成av（针对A站的ac），没想到现在也变了
 
 B站官宣：AV 号全面升级至 BV 号 https://www.ithome.com/0/479/200.htm
