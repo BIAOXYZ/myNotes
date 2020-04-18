@@ -92,6 +92,10 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/kubelet.service
 
 > （接上）实际过程：
 ```
+#// 注：必须完成kubeadm的init操作kubelet才能成功启动。参见： https://github.com/kubernetes/kubernetes/issues/83936
+#//// 另外这个帖子里提到了可以用`journalctl -xeu kubelet`来查看kubelet的日志（不然一时还真没找到在哪）。
+#//// 这也是一种启发：其它用systemd管的服务也可以这么看日志（我当然知道这个事实，但是一般不是第一反应能想到，所以记录下强化记忆和感觉）。
+
 root@cloudsec1 ~ $ systemctl status kubelet
 ● kubelet.service - kubelet: The Kubernetes Node Agent
    Loaded: loaded (/usr/lib/systemd/system/kubelet.service; enabled; vendor preset: disabled)
@@ -416,6 +420,8 @@ kube-system   kube-scheduler-cloudsec1.sl.cloud9.ibm.com            1/1     Runn
 10.21.12.112
 [root@bandore1 ~]# hostname -I
 10.21.12.112 9.46.87.88 172.17.0.1
+[root@bandore1 ~]# hostname -I | awk '{print $2}'
+9.46.87.88
 --------------------------------------------------
 
 [root@bandore1 ~]# kubeadm init --kubernetes-version=1.18.0 --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address=$(hostname -I | awk '{print $2}')
