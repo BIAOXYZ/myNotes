@@ -70,3 +70,11 @@ Where: `/api/v1/namespaces/<your_namespace_here>/finalize` # 这里logging就是
 deleting namespace stuck at "Terminating" state https://github.com/kubernetes/kubernetes/issues/60807
 
 A namespace is stuck in the Terminating state https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/troubleshoot/ns_terminating.html
+
+k8s删除Terminating状态的命名空间 https://juejin.im/post/5dada0bc5188253b2f003eff
+
+Kubernetes删除一直处于Terminating状态的namespace https://segmentfault.com/a/1190000016924414
+
+Namespace “stuck” as Terminating, How do I remove it? https://stackoverflow.com/questions/52369247/namespace-stuck-as-terminating-how-do-i-remove-it
+
+How to Delete a Kubernetes Namespace Stuck in the Terminating State https://success.docker.com/article/kubernetes-namespace-stuck-in-terminating
