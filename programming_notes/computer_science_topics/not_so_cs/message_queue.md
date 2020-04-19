@@ -12,6 +12,8 @@ Distributed Task Queue (development branch) http://celeryproject.org
 
 # Kafka
 
+一篇文章带你逆袭 Kafka https://mp.weixin.qq.com/s/j8J762sBLKuS4O0JgVsq6w
+
 kafka解决了什么问题? - 知乎 https://www.zhihu.com/question/53331259
 
 # Pulsar
