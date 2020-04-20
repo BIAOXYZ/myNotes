@@ -206,6 +206,11 @@ Options: (H) means HTTP/HTTPS only, (F) means FTP only
 
 ## curl相关工具
 
+cURL 命令转代码在线工具 https://www.v2ex.com/t/664297
+- > 经常需要将 cURL 命令转为其它语言的测试代码的，可以看看这个在线工具 https://curl.6cm.co
+- > https://tool.lu/curl
+- > 我一直用的是 https://curl.trillworks.com/
+
 问卷调查:如果实现解析 curl 命令的库，大家感兴趣吗？ https://www.v2ex.com/t/652904
 - Convert curl syntax to Python, Ansible URI, MATLAB, Node.js, R, PHP, Strest, Go, Dart, JSON, Elixir, Rust https://curl.trillworks.com/
 
