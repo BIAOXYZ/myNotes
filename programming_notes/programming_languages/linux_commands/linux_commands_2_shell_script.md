@@ -83,6 +83,8 @@ The Linux Command Line http://linuxcommand.org/
 - 快乐的 Linux 命令行 http://billie66.github.io/TLCL/index.html
   * > 本书是 The Linux Command Line 的中文版
 
+Bash 教程 https://wangdoc.com/bash/ || https://github.com/wangdoc/bash-tutorial
+
 # shell脚本调试
 
 Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
