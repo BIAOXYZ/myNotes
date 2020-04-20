@@ -19,6 +19,8 @@ Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/
 
 IBM Cloud Pak™ CLI (cloudctl) multicluster commands (mc) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_mc_commands.html 【其实原来cloudctl是ICP的，但是现在一是ICP要放弃并全面转向基于OpenShift的CP4MCM，二是过去的ICP的东西还得兼容，所以在`cloudctl`基础上搞了一个`cloudctl mc`】
 
+Managing applications https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/applications/overview.html
+
 ## CP(K)安装
 
 【[:star:][`*`]】【适用于在已有ocp集群基础上装cp4mcm】 Installing the IBM Cloud Pak® for Multicloud Management offline https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/install/cloud_pak_foundation.html
@@ -43,6 +45,10 @@ CLI tools guide https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli
 Importing a target managed cluster to the hub cluster https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/install_k8s_cloud.html
 - Importing a cluster with the CLI https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/manage_cluster/import_cli.html
 - Importing a managed cluster in an air gapped environment https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/offline_endpoint.html
+
+## 问题解决
+
+IBM Cloud Pak for Multicloud Management troubleshooting for cluster management https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/cluster_manage_trouble.html
 
 # 其他链接
 
