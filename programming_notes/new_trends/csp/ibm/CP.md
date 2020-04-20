@@ -34,6 +34,10 @@ Getting started with IBM Cloud Pak for Multicloud Management https://cloud.ibm.c
 
 Supported OpenShift versions and platforms https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.3.0/install/supported_os.html
 
+CLI tools guide https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_guide_mcm.html
+- Managing your cluster with IBM Cloud Pak® CLI (cloudctl) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cloudctl/icp_cli.html
+- Installing the Helm CLI (helm) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/helm-cli/3.4.0/create_helm_cli.html
+
 ## 导入managed cluster
 
 Importing a target managed cluster to the hub cluster https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/install_k8s_cloud.html
