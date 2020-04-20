@@ -17,8 +17,6 @@ IBM Cloud Pak for Applications https://www.ibm.com/cloud/cloud-pak-for-applicati
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
 
-IBM Cloud Pak™ CLI (cloudctl) multicluster commands (mc) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_mc_commands.html 【其实原来cloudctl是ICP的，但是现在一是ICP要放弃并全面转向基于OpenShift的CP4MCM，二是过去的ICP的东西还得兼容，所以在`cloudctl`基础上搞了一个`cloudctl mc`】
-
 Managing applications https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/applications/overview.html
 
 ## CP(K)安装
@@ -38,6 +36,8 @@ Supported OpenShift versions and platforms https://www.ibm.com/support/knowledge
 
 CLI tools guide https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_guide_mcm.html
 - Managing your cluster with IBM Cloud Pak® CLI (cloudctl) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cloudctl/icp_cli.html
+- Using the IBM Cloud Pak® CLI (cloudctl) multicluster plug-in (mc) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cp_cli_mcm.html
+  * IBM Cloud Pak™ CLI (cloudctl) multicluster commands (mc) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_mc_commands.html 【其实原来cloudctl是ICP的，但是现在一是ICP要放弃并全面转向基于OpenShift的CP4MCM，二是过去的ICP的东西还得兼容，所以在`cloudctl`基础上搞了一个`cloudctl mc`】
 - Installing the Helm CLI (helm) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/helm-cli/3.4.0/create_helm_cli.html
 
 ## 导入managed cluster
