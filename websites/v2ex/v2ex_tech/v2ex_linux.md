@@ -1,4 +1,8 @@
 
+Linux 每此次开机时 eth0 消失（详见下面），求解决方法！ https://www.v2ex.com/t/664331
+
+Linux 服务器为什么运行一段时间之后时间会和真实时间有误差? https://www.v2ex.com/t/664329
+
 Linux 系统如果把磁盘写满了继续写会怎么样？ https://www.v2ex.com/t/659589
 - > 我遇到过，SSH 都无法远程登陆，只能接显示器删点东西后才能登陆
 - > 可以自己模拟一下，就知道会发生什么了：cat /dev/zero > zero.fill;sync;
