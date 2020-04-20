@@ -360,8 +360,9 @@ Golang wrapper for Milagro Crypto https://github.com/miracl/gomiracl
 
 ### gRPC
 
-谁能用通俗的语言解释一下什么是 RPC 框架？ - 洪春涛的回答 - 知乎
-https://www.zhihu.com/question/25536695/answer/221638079
+gRPC – A high-performance, open source universal RPC framework https://grpc.io/
+
+Guides https://grpc.io/docs/guides/
 
 ### gorgonia
 
