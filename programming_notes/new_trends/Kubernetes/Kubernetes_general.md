@@ -314,6 +314,9 @@ $ kubectl get deployments.v1beta.apps -n kube-system
 error: the server doesn't have a resource type "deployments"
 ```
 
+Kubernetes REST API https://stackoverflow.com/questions/33024969/kubernetes-rest-api/33027619
+- > You can see all the API calls kubectl is making by passing `--v=8` to any kubectl command
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## kubernetes网络
