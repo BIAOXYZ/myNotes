@@ -15,7 +15,8 @@ ZeroTier游戏联机详细设置！ https://www.bilibili.com/video/av95442800/
 
 # 其他视频
 
-【油管无水印高清版本】1990年春晚小品《主角与配角》 陈佩斯＆朱时茂 
+【油管无水印高清版本】1990年春晚小品《主角与配角》 陈佩斯＆朱时茂
+- https://www.youtube.com/watch?v=w_o8fOKZKX0 【原版视频】
 - https://www.bilibili.com/video/av37543721/ 【这个是特意又去谷歌搜了下，才搜到这个数字ID的】
 - https://www.bilibili.com/video/BV1Kt411S77j 【这个是url改BV号后的，目前对外显示默认这个url】
 - https://www.bilibili.com/s/video/BV1Kt411S77j 【这个在谷歌搜的时候无意间发现的，看起来只是多了个`s/`，我理解是宽屏版？反正除了宽屏外还有就是周边推荐的视频不一样，似乎这个页面推荐的更智能些】
