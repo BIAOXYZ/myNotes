@@ -27,6 +27,15 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 - > ![](https://imgs.aixifan.com/content/2019_12_15/1.5763797657401056E9.jpg)
 - > ![](https://imgs.aixifan.com/content/2019_12_15/1576393833405.JPG)
 - > ![](https://imgs.aixifan.com/content/2019_12_15/1576380441512.JPG)
+- 自己复制一个文字版：
+  ```
+                         TVB
+                吴启华
+  唐文龙
+                 工牌
+  
+           台词
+  ```
 
 大sao挣钱了，吃一顿好的，买六斤羊蝎子做火锅，媳妇开心坏了 https://www.acfun.cn/v/ac11608709
 - > 好多人居然不知道什么是羊蝎子 我来告诉你好吧 ![](https://imgs.aixifan.com/o_1dp9469vb1icvsmfnasg8128n7.jpg)
