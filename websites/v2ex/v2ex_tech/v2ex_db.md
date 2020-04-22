@@ -1,4 +1,6 @@
 
+问一个 postgresql 传参问题 https://www.v2ex.com/t/664998
+
 遇到一个 PostgreSQL 很奇葩的排序问题（BUG？） https://www.v2ex.com/t/663098
 
 求助 mysql & 运算符是什么意思， 怎样解释 https://www.v2ex.com/t/660327
