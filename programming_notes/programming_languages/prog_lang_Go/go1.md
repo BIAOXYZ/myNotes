@@ -331,7 +331,7 @@ go mod 使用 https://juejin.im/post/5c8e503a6fb9a070d878184a
 > 要使go客户端能够使用go module，需要设置GO111MODULE=on <br> 注意:从Go 1.13开始，这一步将不再需要，因为Go Module将在默认情况下启用
 
 【[:star:][`*`]】 从 goinstall 到 module —— golang 包管理的前世今生 https://blog.wolfogre.com/posts/golang-package-history/ || https://github.com/wolfogre/blog-utterances/issues/50
-- > 可见，这是一个从编译行为上就要做改变的大更新，所以实验阶段这个项目名叫“vgo”，即“带版本的 go”，原先的 go build、go get 命令都要换成 vgo build、vgo get。但同时提供两套工具自然是下下策，所以最后正式发布时，“vgo” 和 “go” 事实上是合并了，同样的命令 go build、go get，在不同的项目里可能有不同的行为，为了方便描述，我们暂且称为传统模式和 module 模式。
+- > 可见，这是一个从编译行为上就要做改变的大更新，所以实验阶段这个项目名叫“vgo”，即“带版本的 go”，原先的 `go build`、`go get` 命令都要换成 `vgo build`、`vgo get`。但同时提供两套工具自然是下下策，所以最后正式发布时，“vgo” 和 “go” 事实上是合并了，同样的命令 `go build`、`go get`，在不同的项目里可能有不同的行为，为了方便描述，我们暂且称为`传统模式`和 `module 模式`。
   ```
   ----------------------------------------------------------------------------------------------------
   命令	      传统模式	                                  module 模式
@@ -349,10 +349,10 @@ go mod 使用 https://juejin.im/post/5c8e503a6fb9a070d878184a
   go.mod 描述了本 module 的名称、go 版本依赖、依赖包的最小版本；
   go.sum 记录依赖包语义化版本对应的哈希。
   ```
-- > 同时 module 模式 go get 不再是简单的执行 git clone 了，它有了为其定制的代理协议，由于一些网络方面的原因，这简直是中国人民的福音，一大堆代理实现方案、公开的代理站点如雨后春笋般出现，如 athens、goproxy、goproxy.cn，你可以通过配置 $GOPROXY、$GONOPROXY 等环境变量来设置代理，详细介绍可以看这里。
+- > 同时 module 模式 `go get` 不再是简单的执行 git clone 了，它有了为其定制的代理协议，由于一些网络方面的原因，这简直是中国人民的福音，一大堆代理实现方案、公开的代理站点如雨后春笋般出现，如 athens、goproxy、goproxy.cn，你可以通过配置 `$GOPROXY`、`$GONOPROXY` 等环境变量来设置代理，详细介绍可以看这里。
   >
-  > 且从 go 1.13 开始，module 引入了文件检查，go get 会将获取到的包与官方的包哈希数据库，进行对比，你可以通过修改 $GOSUMDB、$GONOSUMDB、$GOPRIVATE 等环境变量来控制这一行为。如果你引入私有包时，因为无法通过文件检查而失败（私有包无法被官方的包哈希数据库收录），可以在这里找到解决方案。
-- > 你应该还注意到了一点，go.mod 文件中描述了这个 module 的名字（图中 go.mod 文件的 module github.com/wolfogre/test 一行），而不需要借助 $GOPATH 路径，所以 module 项目是不需要放到 $GOPATH 下的，可以放在任何位置，编译时也不依赖 $GOPATH/src 下存放的包。至此，module 基本摆脱了了对 $GOPATH 的依赖，只是需要借 $GOPATH/pkg/mod 这个位置存一下文件而已，算不得什么。
+  > 且从 go 1.13 开始，module 引入了文件检查，`go get` 会将获取到的包与官方的包哈希数据库，进行对比，你可以通过修改 `$GOSUMDB`、`$GONOSUMDB`、`$GOPRIVATE` 等环境变量来控制这一行为。如果你引入私有包时，因为无法通过文件检查而失败（私有包无法被官方的包哈希数据库收录），可以在这里找到解决方案。
+  > 你应该还注意到了一点，go.mod 文件中描述了这个 module 的名字（图中 go.mod 文件的 module github.com/wolfogre/test 一行），而不需要借助 `$GOPATH` 路径，所以 module 项目是不需要放到 `$GOPATH` 下的，可以放在任何位置，编译时也不依赖 `$GOPATH/src` 下存放的包。至此，module 基本摆脱了了对 `$GOPATH` 的依赖，只是需要借 `$GOPATH/pkg/mod` 这个位置存一下文件而已，算不得什么。
   >
   > go module 仍然在迭代中，还是有一些缺点的，尤其是对 vendor 的支持不完善，比如编译时默认不支持 vendor（[#27348](https://github.com/golang/go/issues/27348)），go mod verify 不会帮忙检查 vendor 下文件是否完整（[#33848](https://github.com/golang/go/issues/33848)）等等。
 
