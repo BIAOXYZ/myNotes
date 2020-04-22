@@ -31,6 +31,9 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉技术类其他
 
+2038年1月19日绝对是程序员的噩梦 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4MjUxNjcsImlhdCI6MTU4NzUzMzE1NH0.hQuYZVXc0MQWmiFDc-BV0KLV2kk_-xFAkOtYubPzHbM
+- > 现在很多人用时间戳存时间，就是一个数字比如1587440858，而如果用32位的int存的话，那int最大表示2147483647，也就是2038-01-19 11:14:07这个时间，再大了溢出了
+
 面试题提问，有http为什么要用dubbo，期待大佬们的回答 阿里腾讯美团滴滴华为引流 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU2MDk5MjQsImlhdCI6MTU4NTMwNzk0NH0.WsAUUfUHlGLEhXypL6lhqlcev0pKWShiUtY0PrmMNqU
 - > 不用维护域名，因为域名解析的缓存千奇百怪
 - > 长链接，适合高并发，http每次需要三次握手四次挥手
