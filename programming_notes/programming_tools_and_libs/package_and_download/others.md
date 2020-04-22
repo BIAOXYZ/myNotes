@@ -148,6 +148,15 @@ C++ Library Manager for Windows, Linux, and MacOS https://github.com/microsoft/v
 
 如何看待 Windows 的 C++ 包管理器 vcpkg？ - 知乎 https://www.zhihu.com/question/263416411
 
+## 其他C/CPP包管理工具
+
+C++ 有没有像 pip、npm、gem 一样的包管理工具？ - 知乎 https://www.zhihu.com/question/26117075
+- > linux的包管理工具，比如ubuntu 的apt-get , centos的yum, opensuse的zypper, 其实很大意义上就是c/c++的包管理工具。各种lib header dev包可以通过其安装的
+- > 最近发现一个c++包管理工具: Conan. 
+  * > Conan - The open-source C/C++ package manager https://github.com/conan-io/conan
+- > 补充一下，用Visual Studio的话，有NuGet。
+- > xmake v2.2.2, 让C/C++拥有包依赖自动构建 可以看下这个，xmake内置c/c++包管理和跨平台构建了
+
 # pip, pipenv and others
 
 Python包管理器-pip https://juejin.im/post/5beb92e7e51d454fbd6b4bc4
