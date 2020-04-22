@@ -1,6 +1,8 @@
 
 # 脉脉数据库
 
+想问一下mysql innodb 的mvcc在rr隔离级别下到底解决幻读没，我看有的是说间隙锁解决的 有人讲一下吗？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4ODk4MDEsImlhdCI6MTU4NzUzMzY3NH0.yESruSQzmlM8NISB4dxhgkDWPn8QkMjljyd7Brh0Mv0
+
 lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像lsm就是把随机写变成顺序写，但是现在ssd逐渐是主流，请问在对于ssd这种固态硬盘，他的缺点有哪些，我就知道有一个写放大，那么对于ssd，数据库的优化角度有哪些，请大佬们知道的说下呗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU2OTY1NzAsImlhdCI6MTU4NjMyMzMyMH0.aJtXNA09oHye8-qbU6KGu3xp3so-KtByC2qXX_wZPLg
 - > WiscKey了解一下
 - > 有点像bitcask
@@ -43,6 +45,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 - > pstack 就够了
 
 # 脉脉八卦
+
+最近由于被父母催的紧，各种途径认识了一些妹子。如果把找对象当成一个okr的话，事后复盘也非常重要。我是一个典型的普通程序员，接触的妹子包括公务员小姐姐，国企小姐姐，pm小姐姐，rd小姐姐，设计小姐姐，金融小姐姐。地域上从南到北都有。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4OTE2MDMsImlhdCI6MTU4NzUzMTg2Nn0.8eRrjswJivqHxVQU3Dww6zD3skhBPVk0SKZHwhL7HoA
 
 头条用户运营前领导终于要滚蛋了，每天混吃混喝 躲休息室玩消消乐，淘宝 外卖资深用户，业务找她从来都是拖拖拖，没事看不到他 出事只会甩锅，这样的** 公司早该摒除了！！最后还是给了机会改过自新 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU3ODI4NTYsImlhdCI6MTU4NjkyMjgzMX0.qjracjZLFESxI8IFLf1NL_h5k9aGbGMEzqdN1tI1q4Y
 
