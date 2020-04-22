@@ -352,9 +352,12 @@ go mod 使用 https://juejin.im/post/5c8e503a6fb9a070d878184a
 - > 同时 module 模式 `go get` 不再是简单的执行 git clone 了，它有了为其定制的代理协议，由于一些网络方面的原因，这简直是中国人民的福音，一大堆代理实现方案、公开的代理站点如雨后春笋般出现，如 athens、goproxy、goproxy.cn，你可以通过配置 `$GOPROXY`、`$GONOPROXY` 等环境变量来设置代理，详细介绍可以看这里。
   >
   > 且从 go 1.13 开始，module 引入了文件检查，`go get` 会将获取到的包与官方的包哈希数据库，进行对比，你可以通过修改 `$GOSUMDB`、`$GONOSUMDB`、`$GOPRIVATE` 等环境变量来控制这一行为。如果你引入私有包时，因为无法通过文件检查而失败（私有包无法被官方的包哈希数据库收录），可以在这里找到解决方案。
+  >
   > 你应该还注意到了一点，go.mod 文件中描述了这个 module 的名字（图中 go.mod 文件的 module github.com/wolfogre/test 一行），而不需要借助 `$GOPATH` 路径，所以 module 项目是不需要放到 `$GOPATH` 下的，可以放在任何位置，编译时也不依赖 `$GOPATH/src` 下存放的包。至此，module 基本摆脱了了对 `$GOPATH` 的依赖，只是需要借 `$GOPATH/pkg/mod` 这个位置存一下文件而已，算不得什么。
   >
   > go module 仍然在迭代中，还是有一些缺点的，尤其是对 vendor 的支持不完善，比如编译时默认不支持 vendor（[#27348](https://github.com/golang/go/issues/27348)），go mod verify 不会帮忙检查 vendor 下文件是否完整（[#33848](https://github.com/golang/go/issues/33848)）等等。
+
+干货满满的 Go Modules 和 goproxy.cn https://github.com/guanhui07/blog/issues/642
 
 #### goproxy (for go module)
 
