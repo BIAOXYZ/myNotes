@@ -577,8 +577,10 @@ Taints:             <none>
 
 ## ~~3.1 加入其他node节点~~
 
-## 3.2 加入不同网段的其他node节点（同事碰到的问题：华为云起了个master，想把阿里云的worker-1加进去，怎么也不成功）
+## 3.2 加入不同网段的其他node节点
+**// 同事碰到的问题：华为云起了个master，想把阿里云的worker-1加进去，怎么也不成功。但是我觉得下面这个iptable转发的方法可能会是潜在的解决方案（尽管她试了没成功）。**
 
+kubeadm init “--apiserver-advertise-address=publicIP” not working, private IP works 1.13 version https://github.com/kubernetes/kubeadm/issues/1390
 - > I solved this problem by forwarding the private IP of the master node to the public IP of the master node on the worker node. Specifically, this was the command that I ran on worker node before running `kubeadm join`:
 <br> `sudo iptables -t nat -A OUTPUT -d <Private IP of master node> -j DNAT --to-destination <Public IP of master node>`
 
