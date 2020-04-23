@@ -357,7 +357,11 @@ go mod 使用 https://juejin.im/post/5c8e503a6fb9a070d878184a
   >
   > go module 仍然在迭代中，还是有一些缺点的，尤其是对 vendor 的支持不完善，比如编译时默认不支持 vendor（[#27348](https://github.com/golang/go/issues/27348)），go mod verify 不会帮忙检查 vendor 下文件是否完整（[#33848](https://github.com/golang/go/issues/33848)）等等。
 
-干货满满的 Go Modules 和 goproxy.cn https://github.com/guanhui07/blog/issues/642
+【[:star:][`*`]】 干货满满的 Go Modules 和 goproxy.cn https://github.com/guanhui07/blog/issues/642
+
+go - 使用 go mod 管理项目依赖 https://segmentfault.com/a/1190000019724582
+
+五分钟学会使用 go modules（含在家办公使用技巧） https://www.kubernetes.org.cn/6687.html
 
 #### goproxy (for go module)
 
