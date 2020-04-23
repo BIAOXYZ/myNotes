@@ -48,7 +48,8 @@ Importing a target managed cluster to the hub cluster https://www.ibm.com/suppor
 
 ## 问题解决
 
-IBM Cloud Pak for Multicloud Management troubleshooting for cluster management https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/cluster_manage_trouble.html
+IBM Cloud Pak for Multicloud Management troubleshooting https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/mcm_troubleshoot.html
+- IBM Cloud Pak for Multicloud Management troubleshooting for cluster management https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/cluster_manage_trouble.html
 
 # 其他链接
 
