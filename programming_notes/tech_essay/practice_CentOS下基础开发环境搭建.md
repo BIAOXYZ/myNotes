@@ -302,6 +302,7 @@ sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
 1.12.5 //为啥要去掉sudo？1.没权限话再加上sudo好了 2.这个sudo导致这一行太长，还得拖一下滚动条。要知道我本来就是想省事的~
 wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz && tar -C /usr/local -xzf go1.12.5.linux-amd64.tar.gz
 
+export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=/usr/local/go
