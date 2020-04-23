@@ -6,6 +6,9 @@ List of tools for static code analysis https://en.wikipedia.org/wiki/List_of_too
 
 学习和阅读框架或项目源码，有什么好工具推荐的吗？ https://www.v2ex.com/t/626938
 
+有哪些不错的大型项目代码浏览工具？ - 知乎 https://www.zhihu.com/question/33505693
+- 有哪些不错的大型项目代码浏览工具？ - 韦易笑的回答 - 知乎 https://www.zhihu.com/question/33505693/answer/132224974
+
 # Sourcetrail
 
 Free and open-source cross-platform source explorer. Get productive on unfamiliar source code. https://www.sourcetrail.com/
@@ -21,3 +24,7 @@ Understand (software) https://en.wikipedia.org/wiki/Understand_%28software%29
 # doxygen
 
 Doxygen - Generate documentation from source code http://doxygen.nl/
+
+# OpenGrok
+
+OpenGrok https://oracle.github.io/opengrok/
