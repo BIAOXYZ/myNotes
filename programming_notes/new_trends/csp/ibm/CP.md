@@ -51,6 +51,21 @@ Importing a target managed cluster to the hub cluster https://www.ibm.com/suppor
 IBM Cloud Pak for Multicloud Management troubleshooting https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/mcm_troubleshoot.html
 - IBM Cloud Pak for Multicloud Management troubleshooting for cluster management https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/cluster_manage_trouble.html
 
+
+### Firefox浏览器上，CP4MCM的console之前可以登陆，后来登陆不上去了（Chrome就没成功过，但是有少数同事说自己成功过，不管了）
+
+I get "corrupted content error" for a site that I can access on a different device. https://support.mozilla.org/en-US/questions/1232935
+- >
+  ```
+  (2) Remove the site's cookies (save any pending work first). While viewing a page on the site, try either:
+            right-click and choose View Page Info > Security > "View Cookies"
+            Alt+t (open the classic Tools menu) > Page Info > Security > "View Cookies" 
+      In the dialog that opens, you can remove the site's cookies individually.
+      Then try reloading the page. Does that help?
+  ```
+
+>> notes: 实际上这次的解决不只是用`右键CP4MCM console 网页`，然后经过`View Page Info`等步骤，直到最后删除CP4MCM web console对应页面的cookie那么简单。我之前确实是**仅删除**CP4MCM web console对应的网页的cookie就好了，这次也这样却发现不行。都差点重装了。。。 <br> 后来找同事发现他们都能登陆，于是确定问题肯定是在我这边的Fireforx上。最后发现删cookie时把那个弹出的框框里所有涉及的页面的cookie（那个框框会包含一些相关网页的cookie，比如CP4MCM所依赖的Openshift的cookie）全都删掉（我甚至把保存的CP4MCM页面的登陆账号密码也删了，虽然这步可能并没有什么影响），然后再登陆终于好了。
+
 # 其他链接
 
 IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
