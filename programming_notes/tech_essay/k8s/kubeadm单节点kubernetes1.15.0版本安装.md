@@ -577,4 +577,9 @@ Taints:             <none>
 
 ## ~~3.1 加入其他node节点~~
 
+## 3.2 加入不同网段的其他node节点（同事碰到的问题：华为云起了个master，想把阿里云的worker-1加进去，怎么也不成功）
+
+- > I solved this problem by forwarding the private IP of the master node to the public IP of the master node on the worker node. Specifically, this was the command that I ran on worker node before running `kubeadm join`:
+<br> `sudo iptables -t nat -A OUTPUT -d <Private IP of master node> -j DNAT --to-destination <Public IP of master node>`
+
 # ~~4. master节点高可用~~
