@@ -101,3 +101,7 @@ root@temptest hellovault $ grep -ir "name" .
 ./job.yamlbak2:      - name: pi
 root@temptest hellovault $
 ```
+
+## `-R` 与 `-r`
+
+What's the difference between grep -r and -R https://stackoverflow.com/questions/22763579/whats-the-difference-between-grep-r-and-r

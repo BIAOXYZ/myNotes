@@ -92,4 +92,6 @@ rsync 一个超大文件夹“./attachments”过后，怎样检测两台服务�
 
 rsync+inotify实现文件双向同步 https://blog.csdn.net/liuwei0376/article/details/89155277
 
+rsync 一个文件夹到另一台服务器，同步完成后刚好多 40kb，是怎么回事？ https://www.v2ex.com/t/665242
+
 # 个人实战

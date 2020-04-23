@@ -1,4 +1,10 @@
 
+你认为的 Linux 中最牛逼的命令是什么？不许说 rm https://www.v2ex.com/t/665449
+- > 网管仔:ovs-ctl
+- > yes
+
+我的输出去哪了？ https://www.v2ex.com/t/665403
+
 Linux 每此次开机时 eth0 消失（详见下面），求解决方法！ https://www.v2ex.com/t/664331
 
 Linux 服务器为什么运行一段时间之后时间会和真实时间有误差? https://www.v2ex.com/t/664329
