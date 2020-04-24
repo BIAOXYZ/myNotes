@@ -49,6 +49,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉八卦
 
+工作4年，普通二本，目前 package 不到25，但是明年跳槽时能确保 个人技术、项目经验、社区影响力、各项软技能综合水平能到P7＋左右的水平，请问下明年能拿到 字节2-2，腾讯3-2，阿里P7 的offer吗？这种情况下会忽略package低的影响吗？求教 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5MjIxMTMsImlhdCI6MTU4NzcwMDYwM30.iY00G_3pCMYhlwpO6NknSYrGycjU_glepp-LuxgRPVA
+
 最近由于被父母催的紧，各种途径认识了一些妹子。如果把找对象当成一个okr的话，事后复盘也非常重要。我是一个典型的普通程序员，接触的妹子包括公务员小姐姐，国企小姐姐，pm小姐姐，rd小姐姐，设计小姐姐，金融小姐姐。地域上从南到北都有。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4OTE2MDMsImlhdCI6MTU4NzUzMTg2Nn0.8eRrjswJivqHxVQU3Dww6zD3skhBPVk0SKZHwhL7HoA
 
 头条用户运营前领导终于要滚蛋了，每天混吃混喝 躲休息室玩消消乐，淘宝 外卖资深用户，业务找她从来都是拖拖拖，没事看不到他 出事只会甩锅，这样的** 公司早该摒除了！！最后还是给了机会改过自新 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU3ODI4NTYsImlhdCI6MTU4NjkyMjgzMX0.qjracjZLFESxI8IFLf1NL_h5k9aGbGMEzqdN1tI1q4Y
