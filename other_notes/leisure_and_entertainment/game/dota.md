@@ -73,6 +73,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item octar[ine_core]   玲珑心
     -item sphere   林肯
     -item [travel]_boots   远行鞋
+    -item ultimate_[scepter]   阿哈利姆神杖（A杖） // 同理推得 --> ultimate_[scepter2] 阿哈利姆福佑
     
     中立物品：
     Level 5：
