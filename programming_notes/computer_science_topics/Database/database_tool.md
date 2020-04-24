@@ -1,4 +1,13 @@
 
+# 在线工具
+
+Get the most common value in mysql https://stackoverflow.com/questions/55460912/get-the-most-common-value-in-mysql
+- > Demo: https://www.db-fiddle.com/f/8YHdSVAvUTNGRxaBRkKfHw/0
+
+https://www.db-fiddle.com/
+
+db<>fiddle https://dbfiddle.uk/
+
 # 异构数据同步工具
 
 异构数据库双向同步调研 https://blog.csdn.net/jingya_charmworker/article/details/81365604
