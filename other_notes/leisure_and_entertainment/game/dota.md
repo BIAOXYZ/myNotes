@@ -22,7 +22,8 @@ The International 2019 https://www.trackdota.com/leagues/10749
 ## VPGAME https://www.vpgame.com/
 
 DPL-CDA 职业联赛  2020-04-20至2020-05-24 https://www.vpgame.com/schedule/league/dota/D001878
-- DPL-CDA DOTA2职业联赛 胜者组第一轮(BO3) `KG.L` v.s. `StarLucK.Fly` https://www.vpgame.com/schedule/dota/dota72904514e75c16db2f4849f06d326151?type=d2 【第二局末尾处，滚滚在近卫野区被一个灯柱给卡住，硬生生让圣堂、小黑等揍死了。哈哈哈】
+- DPL-CDA DOTA2职业联赛 预选赛阶段 胜者组第一轮(BO3) `KG.L` v.s. `StarLucK.Fly` https://www.vpgame.com/schedule/dota/dota72904514e75c16db2f4849f06d326151?type=d2 【第二局末尾处，滚滚在近卫野区被一个灯柱给卡住，硬生生让圣堂、小黑等揍死了。哈哈哈】
+- DPL-CDA DOTA2职业联赛 预选赛阶段 胜者组第三轮(BO3) `Team Sirius` v.s. `iG.V` https://www.vpgame.com/schedule/dota/dota5d3bf46049c540c899dfe937a77b18de 【第一局后期，火猫吃了个肉山爆的A杖——我才知道现在还能吃A杖。。。】
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
