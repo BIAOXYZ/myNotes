@@ -1,4 +1,13 @@
 
+# kubectl patch官方页面
+
+使用 kubectl patch 更新 API 对象 https://v1-14.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/
+
+## 其他
+
+kubectl patch servicemonitor fails with UnsupportedMediaType https://github.com/kubernetes/kubernetes/issues/71024
+>> notes：从这个issue看目前还不能patch自己添加到系统里的custom resource definition对应的CR。
+
 # patch service
 
 ## patch service from clusterIP to NodePort
