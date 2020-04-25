@@ -28,6 +28,7 @@ Tony Bai 一个程序员的心路历程 https://tonybai.com/
   * > "找不到fmt包了。显然标准库在编译时也是必须要源码的。不过与自定义包不同的是，即便你修改了fmt包的源码（未重新编译GO安装包），用户源码编译时，也不会尝试重新编译fmt包的，依旧只是在链接时链接已经编译好的fmt.a。"
   * > "这回编译顺利通过，执行结果也是OK的。这样我们得到了结论：(3)import后面的最后一个元素应该是路径，就是目录，并非包名。"
   * > "根据上面一、二两节中得出的结论，我们尝试理解一下m：(4)m指代的是lib/math路径下唯一的那个包。"
+- Go module机制下升级major版本号的实践 https://tonybai.com/2019/06/03/the-practice-of-upgrading-major-version-under-go-module/
 - Go modules：最小版本选择 https://tonybai.com/2019/12/21/go-modules-minimal-version-selection/
 
 ## 飞雪无情的博客
