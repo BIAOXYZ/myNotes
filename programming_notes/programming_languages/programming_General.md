@@ -195,6 +195,8 @@ Linux 共享库指南 http://liaoph.com/linux-shared-libary/
 
 Linux gcc编译生成静态库和共享动态库的过程 https://typecodes.com/cseries/gccgensharedlib.html
 
+Linux下编写简单的动态链接库Linux下编写简单的动态链接库 https://www.cnblogs.com/floatedclouds/archive/2011/10/24/2222412.html
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Troubleshooters.com
