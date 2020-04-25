@@ -363,6 +363,8 @@ go - 使用 go mod 管理项目依赖 https://segmentfault.com/a/119000001972458
 
 五分钟学会使用 go modules（含在家办公使用技巧） https://www.kubernetes.org.cn/6687.html
 
+再探go modules：使用与细节 https://www.cnblogs.com/apocelipes/p/10295096.html
+
 #### goproxy (for go module)
 
 GOPROXY.IO - A Global Proxy for Go Modules https://goproxy.io/
