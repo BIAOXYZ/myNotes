@@ -89,6 +89,9 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item [spell]_prism   法术棱镜
     -item [panic]_button   神妙明灯
     Level 3：
+    Level 1:
+    - item royal_[jelly]   蜂王浆
+    - item [mango]_[tree]   芒果树
 
 /all 英雄/英雄简称
     /all axe 斧王
