@@ -184,6 +184,18 @@ KubeFed: Kubernetes Cluster Federation https://github.com/kubernetes-sigs/kubefe
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 多集群相关
+
+## Cluster Registry
+
+Cluster Registry https://kubernetes.github.io/cluster-registry/ || https://github.com/kubernetes/cluster-registry
+
+User Guide https://kubernetes.github.io/cluster-registry/userguide.html
+
+Managing Clusters with Cluster Registry https://medium.com/@cgrant/managing-clusters-with-cluster-registry-aefb1205fe47
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # projects based on or related to k8s (not matured)
 
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
