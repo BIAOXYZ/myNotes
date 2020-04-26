@@ -10,6 +10,8 @@ DB Fiddle - SQL Database Playground https://www.db-fiddle.com/
 - db<>fiddle https://dbfiddle.uk/
 - SQL Fiddle http://sqlfiddle.com/
 
+Alternatives to DB Fiddle for all platforms with any license https://alternativeto.net/software/db-fiddle/
+
 # 异构数据同步工具
 
 异构数据库双向同步调研 https://blog.csdn.net/jingya_charmworker/article/details/81365604
