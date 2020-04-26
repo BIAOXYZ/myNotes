@@ -21,6 +21,8 @@ Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code
 
 # pandas系列教程
 
+Pandas中文教程 https://github.com/datawhalechina/joyful-pandas
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # pandas语法
