@@ -15,3 +15,9 @@ Kubernetes 中如何保证优雅地停止 Pod https://www.v2ex.com/t/551129
 分布式图数据库 Nebula Graph 的 Index 实践 https://www.v2ex.com/t/652123
 
 一文了解各大图数据库查询语言（Gremlin vs Cypher vs nGQL）| 操作入门篇 https://www.v2ex.com/t/650015
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# AlibabaSS
+
+一文读懂 K8s 持久化存储流程 https://www.v2ex.com/t/666288
