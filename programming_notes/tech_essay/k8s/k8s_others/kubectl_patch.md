@@ -3,10 +3,69 @@
 
 使用 kubectl patch 更新 API 对象 https://v1-14.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/
 
+# patch CR
+
 ## 其他
 
 kubectl patch servicemonitor fails with UnsupportedMediaType https://github.com/kubernetes/kubernetes/issues/71024
 >> notes：从这个issue看目前还不能patch自己添加到系统里的custom resource definition对应的CR。
+
+## 但是后来发现应该只是不能用merge类型的kubectl patch语句去patch CR，别的patch类型（如replace）可以
+
+该教程 https://www.katacoda.com/openshift/courses/operatorframework/go-operator-podset 最后一页
+```sh
+$ oc create -f deploy/crds/app.example.com_v1alpha1_podset_cr.yaml
+podset.app.example.com/example-podset created
+$ 
+$ oc get podset example-podset -o yaml
+apiVersion: app.example.com/v1alpha1
+kind: PodSet
+metadata:
+  creationTimestamp: "2020-04-26T18:03:26Z"
+  generation: 1
+  name: example-podset
+  namespace: myproject
+  resourceVersion: "243889"
+  selfLink: /apis/app.example.com/v1alpha1/namespaces/myproject/podsets/example-podset
+  uid: 3a469c87-87e8-11ea-b41d-0242ac11000d
+spec:
+  replicas: 3
+status:
+  podNames:
+  - example-podset-podfhjxq
+  - example-podset-podcfv52
+  - example-podset-pod55lbd
+$
+$ oc patch podset example-podset --type='json' -p '[{"op": "replace", "path": "/spec/replicas", "value":5}]'
+podset.app.example.com/example-podset patched
+$
+$ oc get podset example-podset -o yaml
+apiVersion: app.example.com/v1alpha1
+kind: PodSet
+metadata:
+  creationTimestamp: "2020-04-26T18:03:26Z"
+  generation: 2
+  name: example-podset
+  namespace: myproject
+  resourceVersion: "244093"
+  selfLink: /apis/app.example.com/v1alpha1/namespaces/myproject/podsets/example-podset
+  uid: 3a469c87-87e8-11ea-b41d-0242ac11000d
+spec:
+  replicas: 5
+status:
+  podNames:
+  - example-podset-podfhjxq
+  - example-podset-podcfv52
+  - example-podset-pod55lbd
+  - example-podset-podgw9qn
+  - example-podset-podngzdc
+$
+
+// oc和kubectl没多大区别，所以这里后面没在查了，肯定是可以的。
+$ kubectl patch podset example-podset --type='json' -p '[{"op": "replace", "path": "/spec/replicas", "value":4}]'
+podset.app.example.com/example-podset patched
+$
+```
 
 # patch service
 
