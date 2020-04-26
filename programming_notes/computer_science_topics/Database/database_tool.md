@@ -1,12 +1,14 @@
 
 # 在线工具
 
-Get the most common value in mysql https://stackoverflow.com/questions/55460912/get-the-most-common-value-in-mysql
-- > Demo: https://www.db-fiddle.com/f/8YHdSVAvUTNGRxaBRkKfHw/0
+DB Fiddle - SQL Database Playground https://www.db-fiddle.com/
+> 源头：看《The Internals of PostgreSQL》第三章时，忘了 MCV (Most Common Value) 的计算方法了。搜了一下发现下面链接里有个Demo的link，于是很偶然发现了DB Fiddle。
+>> Get the most common value in mysql https://stackoverflow.com/questions/55460912/get-the-most-common-value-in-mysql
+>>> Demo: https://www.db-fiddle.com/f/8YHdSVAvUTNGRxaBRkKfHw/0
 
-https://www.db-fiddle.com/
-
-db<>fiddle https://dbfiddle.uk/
+后来googel以关键词“db fiddle”搜一下，还有几个类似的：
+- db<>fiddle https://dbfiddle.uk/
+- SQL Fiddle http://sqlfiddle.com/
 
 # 异构数据同步工具
 
