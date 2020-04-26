@@ -30,6 +30,14 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 
 - 【From aleiwu】 KubeCon 2019 上海 CRD 相关 Session 小记 https://aleiwu.com/post/kubecon-shanghai-2019/
 
+## from Red Hat
+
+Getting started with the Operator SDK https://docs.openshift.com/container-platform/4.3/operators/operator_sdk/osdk-getting-started.html
+
+Getting started with Golang Operators by using Operator SDK https://developers.redhat.com/blog/2019/10/04/getting-started-with-golang-operators-by-using-operator-sdk/
+
+How to use third-party APIs in Operator SDK projects https://developers.redhat.com/blog/2020/02/04/how-to-use-third-party-apis-in-operator-sdk-projects/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Operator Framework
