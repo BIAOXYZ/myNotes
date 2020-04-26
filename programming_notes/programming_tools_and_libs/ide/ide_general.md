@@ -303,6 +303,11 @@ https://www.zhihu.com/question/30123965
 
 <Anaconda介绍、安装及使用教程> https://zhuanlan.zhihu.com/p/32925500
 > 7. 在“Advanced Installation Options”中不要勾选“Add Anaconda to my PATH environment variable.”（“添加Anaconda至我的环境变量。”）。因为如果勾选，则将会影响其他程序的使用。如果使用Anaconda，则通过打开Anaconda Navigator或者在开始菜单中的“Anaconda Prompt”（类似macOS中的“终端”）中进行使用。
+>> notes：补：其实现在想想，也不一定。有的人就推荐勾选这个选项。因为不勾选这个的话，Window下的cmd命令行都没法直接用conda（除非自己配一下）。——当然，**总体还是推荐不勾选的**！
+
+如何在多版本anaconda python环境下转换spyder？ - 知乎 https://www.zhihu.com/question/49144687
+- 如何在多版本anaconda python环境下转换spyder？ - 王浩的回答 - 知乎 https://www.zhihu.com/question/49144687/answer/165033340
+- 如何在多版本anaconda python环境下转换spyder？ - 知乎 https://www.zhihu.com/question/49144687/answer/192694255
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
