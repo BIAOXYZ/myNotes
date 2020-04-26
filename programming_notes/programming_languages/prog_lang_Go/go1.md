@@ -171,6 +171,16 @@ Introduction to Hugo Templating https://gohugo.io/templates/introduction/
 
 Go：为何带来泛型 https://juejin.im/entry/5d48e24ce51d453bc470de72
 
+### go反射
+
+The Laws of Reflection https://blog.golang.org/laws-of-reflection
+
+Package reflect https://golang.org/pkg/reflect/
+
+`4.3 反射` https://draveness.me/golang/docs/part2-foundation/ch04-basic/golang-reflect/
+
+Golang的反射reflect深入理解和示例 https://juejin.im/post/5a75a4fb5188257a82110544
+
 --------------------------------------------------
 
 ### go环境变量
