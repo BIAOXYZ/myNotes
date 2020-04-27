@@ -315,6 +315,9 @@ Summarizing when you get the old 1.10 status quo behavior vs. the new opt-in mod
 
 --------------------------------------------------
 
+FAQs — go.mod and go.sum https://github.com/golang/go/wiki/Modules#faqs--gomod-and-gosum
+- Why does 'go mod tidy' record indirect and test dependencies in my 'go.mod'? https://github.com/golang/go/wiki/Modules#why-does-go-mod-tidy-record-indirect-and-test-dependencies-in-my-gomod
+
 跳出Go module的泥潭 https://colobu.com/2018/08/27/learn-go-module/
 - Modules https://github.com/golang/go/wiki/Modules
 - Introduction to Go Modules https://roberto.selbach.ca/intro-to-go-modules/
