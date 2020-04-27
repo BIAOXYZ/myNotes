@@ -49,6 +49,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉八卦
 
+女朋友攒了两个月公司的零食，然后攒了一箱送给我当生日礼物，这是什么操作 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5NTgzMjIsImlhdCI6MTU4Nzk2MTEzMH0.CCylzaL_4vZ94OwaIa4N0vLrrCiuSM4YXE4xav-6OlQ
+
 工作4年，普通二本，目前 package 不到25，但是明年跳槽时能确保 个人技术、项目经验、社区影响力、各项软技能综合水平能到P7＋左右的水平，请问下明年能拿到 字节2-2，腾讯3-2，阿里P7 的offer吗？这种情况下会忽略package低的影响吗？求教 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5MjIxMTMsImlhdCI6MTU4NzcwMDYwM30.iY00G_3pCMYhlwpO6NknSYrGycjU_glepp-LuxgRPVA
 
 最近由于被父母催的紧，各种途径认识了一些妹子。如果把找对象当成一个okr的话，事后复盘也非常重要。我是一个典型的普通程序员，接触的妹子包括公务员小姐姐，国企小姐姐，pm小姐姐，rd小姐姐，设计小姐姐，金融小姐姐。地域上从南到北都有。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4OTE2MDMsImlhdCI6MTU4NzUzMTg2Nn0.8eRrjswJivqHxVQU3Dww6zD3skhBPVk0SKZHwhL7HoA
@@ -57,3 +59,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 没喝多真实情况，我带的一个新来的小实习生一直投怀送抱寻求身体接触，应该有所图（转正），如果你们怎么处理。我男的单身，实习生很好看。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU3NzM3ODUsImlhdCI6MTU4NjY2Nzk3OX0.y_d37q0ugzEJ4OSa70n_3mK9QUMAPxYqo0g96pP92LE
 - > 来了就搬到我小区住，一下班没人看到就抱着我胳膊不放这是不小心吗
+
+# 脉脉搞笑
+
+网易严选的朋友，帮解释下为什么这里icon要画个葫芦娃? ? ? https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5NTAzNzEsImlhdCI6MTU4Nzk2MTEzMH0.CAaFz1GMLkfwSyiSW6qPMKGuxiemQR2DWOaZNCAO4HI
+
