@@ -35,6 +35,18 @@ Custom Resources https://kubernetes.io/docs/concepts/extend-kubernetes/api-exten
 Getting started with the Operator SDK https://docs.openshift.com/container-platform/4.3/operators/operator_sdk/osdk-getting-started.html
 
 Getting started with Golang Operators by using Operator SDK https://developers.redhat.com/blog/2019/10/04/getting-started-with-golang-operators-by-using-operator-sdk/
+```
+The following are possible return options to restart the Reconcile:
+
+With the error:
+    return reconcile.Result{}, err
+
+Without an error:
+    return reconcile.Result{Requeue: true}, nil
+
+Therefore, to stop the Reconcile, use:
+    return reconcile.Result{}, nil
+```
 
 How to use third-party APIs in Operator SDK projects https://developers.redhat.com/blog/2020/02/04/how-to-use-third-party-apis-in-operator-sdk-projects/
 
