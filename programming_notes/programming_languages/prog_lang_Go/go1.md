@@ -230,6 +230,13 @@ Installing Go from source https://nikhita.github.io/install-multiple-versions-go
 
 ## go包管理
 
+### import和包名、包路径
+
+GO语言基础进阶教程：包的使用 - 茹姐的文章 - 知乎 https://zhuanlan.zhihu.com/p/71822746
+- > 同一个目录下的所有.go文件的第一行添加 包定义，以标记该文件归属的包，演示语法：`package 包名`
+
+Golang import 包问题相关详解 https://blog.csdn.net/CMbug/article/details/49339341
+
 ### govendor
 
 Go vendor tool that works with the standard vendor file. https://github.com/kardianos/govendor
