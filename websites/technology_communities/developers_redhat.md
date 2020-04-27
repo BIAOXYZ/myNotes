@@ -1,4 +1,8 @@
 
+# Red Hat Developer eBooks https://developers.redhat.com/ebooks/
+
+Kubernetes Operators https://developers.redhat.com/books/kubernetes-operators/old/
+
 # 2020
 
 Static analysis in GCC 10 https://developers.redhat.com/blog/2020/03/26/static-analysis-in-gcc-10/
