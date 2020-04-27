@@ -167,6 +167,14 @@ Introduction to Hugo Templating https://gohugo.io/templates/introduction/
 > The following is only a primer on Go Templates. For an in-depth look into Go Templates, check the official Go docs.
 >> Package template https://golang.org/pkg/text/template/
 
+### go json
+
+JSON处理 https://www.huweihuang.com/golang-notes/text/json.html
+
+golang json inline用法 https://blog.csdn.net/fjgui/article/details/104063806
+
+golang中struct成员变量的标签（Tag）说明和获取方式 https://www.cnblogs.com/liujie-php/p/10503436.html
+
 ### go泛型
 
 Go：为何带来泛型 https://juejin.im/entry/5d48e24ce51d453bc470de72
@@ -180,6 +188,8 @@ Package reflect https://golang.org/pkg/reflect/
 `4.3 反射` https://draveness.me/golang/docs/part2-foundation/ch04-basic/golang-reflect/
 
 Golang的反射reflect深入理解和示例 https://juejin.im/post/5a75a4fb5188257a82110544
+
+Go语言学习笔记（四）结构体struct & 接口Interface & 反射reflect https://yq.aliyun.com/articles/644158
 
 --------------------------------------------------
 
