@@ -729,6 +729,8 @@ Kubernetes scheduler学习笔记 https://mp.weixin.qq.com/s/EWXHBDV562qsJcMz1_ps
 
 Kubernetes1.5源码分析(二) apiServer之资源注册 https://segmentfault.com/a/1190000008700595
 
+K8S日志库源码分析：klog https://bamboox.online/2019/10/01/k8s-klog/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes others
