@@ -25,6 +25,8 @@ ZeroTier游戏联机详细设置！ https://www.bilibili.com/video/av95442800/
 
 ## 2020
 
+B站2020年买回来的38部旧番剧！ https://www.bilibili.com/read/cv5807915
+- 《路人女主的养成方法 ♭》 https://www.bilibili.com/bangumi/media/md28228738
 
 ### 大sao停更（其实我很久都不看生活类视频了，这个事还是媳妇跟我说才知道）
 
