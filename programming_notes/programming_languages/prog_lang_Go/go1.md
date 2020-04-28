@@ -101,7 +101,7 @@ https://studygolang.com/articles/2233
 为什么 Go 语言把类型放在后面？ - 林建入的回答 - 知乎
 https://www.zhihu.com/question/21656696/answer/19027040
 
-### go `...` 
+### go语法之`...` 
 
 golang中的三个点 '...' 的用法 https://blog.csdn.net/jeffrey11223/article/details/79166724
 > ‘…’ 其实是go的一种语法糖。它的第一个用法主要是用于函数有多个不定参数的情况，可以接受多个不确定数量的参数。第二个用法是slice可以被打散进行传递。
@@ -114,6 +114,10 @@ a = append(a, b...) // a == [1 2 11 22]
 
 The ... unpacks b. Without the dots, the code would attempt to append the slice as a whole, which is invalid.
 ```
+
+### go语法之枚举和iota
+
+golang枚举类型 - iota用法拾遗 https://www.cnblogs.com/zsy/p/5812676.html
 
 ### goroutine
 
