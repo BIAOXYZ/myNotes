@@ -177,6 +177,28 @@ JSON处理 https://www.huweihuang.com/golang-notes/text/json.html
 golang json inline用法 https://blog.csdn.net/fjgui/article/details/104063806
 
 理解 Go 中的 JSON https://sanyuesha.com/2018/05/07/go-json/
+```go
+举例来说，比如下面的 Go struct：
+
+type Message struct {
+    Name string
+    Body string
+    Time int64
+}
+
+使用 Marshal 序列化：
+
+m := Message{"Alice", "Hello", 1294706395881547000}
+b, err := json.Marshal(m) 
+fmt.Println(b) //{"Name":"Alice","Body":"Hello","Time":1294706395881547000}
+----------------------------------------------------------------------------------------------------
+JSON object 中的 name 一般都是小写，我们可以通过 struct tag 来实现：
+
+type MyStruct struct {
+    SomeField string `json:"some_field"`
+}
+SomeField 序列化之后会变成 some_field。
+```
 
 golang中struct成员变量的标签（Tag）说明和获取方式 https://www.cnblogs.com/liujie-php/p/10503436.html
 
