@@ -1,7 +1,9 @@
 
 # kubectl patch官方页面
 
-使用 kubectl patch 更新 API 对象 https://v1-14.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/
+使用 kubectl patch 更新 API 对象 https://v1-14.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/ || https://v1-18.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/ |||| Update API Objects in Place Using kubectl patch https://v1-18.docs.kubernetes.io/docs/tasks/run-application/update-api-object-kubectl-patch/
+- > 有关 JSON patch 和 JSON 合并 patch 的比较，查看 JSON patch 和 JSON 合并 patch。
+  * JSON Patch and JSON Merge Patch http://erosb.github.io/post/json-patch-vs-merge-patch/
 
 # patch CR
 
