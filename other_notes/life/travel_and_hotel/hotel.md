@@ -12,6 +12,20 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 - 自由行去新加坡，在订酒店是总是发现在房间后面会有内宾，中宾的提示，什么意思呢 http://www.mafengwo.cn/wenda/detail-2211617.html
 - 携程网上订酒店，请问内宾和中宾是什么意思 https://zhidao.baidu.com/question/158280793.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 大公司优惠码
+
+```console
+Hilton：
+
+IBM 001368083 International
+```
+
+Hotel Corp Code https://hotelcorporatecodes.com/97/hotel-corp-code.html
+
+tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Luxury Hotels general
