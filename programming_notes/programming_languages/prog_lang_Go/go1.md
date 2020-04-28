@@ -298,6 +298,9 @@ GO语言基础进阶教程：包的使用 - 茹姐的文章 - 知乎 https://zhu
 
 Golang import 包问题相关详解 https://blog.csdn.net/CMbug/article/details/49339341
 
+golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/10230644.html
+- > 程序的初始化和执行都起始于main包。如果main包还导入了其它的包，那么就会在编译时将它们依次导入。有时一个包会被多个包同时导入，那么它只会被导入一次（例如很多包可能都会用到fmt包，但它只会被导入一次，因为没有必要导入多次）。当一个包被导入时，如果该包还导入了其它的包，那么会先将其它包导入进来，然后再对这些包中的包级常量和变量进行初始化，接着执行init函数（如果有的话），依次类推。等所有被导入的包都加载完毕了，就会开始对main包中的包级常量和变量进行初始化，然后执行main包中的init函数（如果存在的话），最后执行main函数。下图详细地解释了整个执行过程：
+
 ### govendor
 
 Go vendor tool that works with the standard vendor file. https://github.com/kardianos/govendor
