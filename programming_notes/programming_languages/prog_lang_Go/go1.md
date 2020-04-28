@@ -202,6 +202,10 @@ SomeField 序列化之后会变成 some_field。
 
 golang中struct成员变量的标签（Tag）说明和获取方式 https://www.cnblogs.com/liujie-php/p/10503436.html
 
+【from 人世间】：
+- Golang处理JSON（一）--- 编码 https://www.jianshu.com/p/f3c2105bd06b
+- Golang处理JSON（二）--- 解码 https://www.jianshu.com/p/31757e530144
+
 ### go泛型
 
 Go：为何带来泛型 https://juejin.im/entry/5d48e24ce51d453bc470de72
