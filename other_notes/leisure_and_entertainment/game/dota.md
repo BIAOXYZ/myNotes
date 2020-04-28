@@ -104,6 +104,8 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     /all [lun]a    露娜-月之骑士
     /all [nec]rolyte   死灵法师
     /all [san]d_king   沙王
+    /all shadow_[demon]   暗影恶魔
+    /all [vip]er   冥界亚龙
 ```
   
 How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
