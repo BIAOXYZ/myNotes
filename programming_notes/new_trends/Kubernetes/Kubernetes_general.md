@@ -134,7 +134,18 @@ Kubernetes系列 - 介绍关于Kubernetes的一些技术知识 https://blog.csdn
 
 # kubernetes 常用命令和技巧
 
-kubectl Cheat Sheet https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+## Cheat Sheet
+
+kubectl Cheat Sheet https://kubernetes.io/docs/reference/kubectl/cheatsheet/ || kubectl 备忘单 https://v1-18.docs.kubernetes.io/zh/docs/reference/kubectl/cheatsheet/
+
+Kubernetes Cheat Sheet https://linuxacademy.com/site-content/uploads/2019/04/Kubernetes-Cheat-Sheet_07182019.pdf
+
+## --export
+
+Imperative/Declarative and a Few `kubectl` tricks https://medium.com/bitnami-perspectives/imperative-declarative-and-a-few-kubectl-tricks-9d6deabdde
+
+How to copy kubernetes secrets & configmaps between namespaces and between clusters https://medium.com/@akila.senarath/how-to-copy-kubernetes-secrets-configmaps-between-namespaces-and-between-clusters-6e2d4d0f8bb8
+
 
 Kubernetes By Example -- Brought to you by the OpenShift team http://kubernetesbyexample.com/
 - DIY -- Try out for yourself http://kubernetesbyexample.com/diy/
