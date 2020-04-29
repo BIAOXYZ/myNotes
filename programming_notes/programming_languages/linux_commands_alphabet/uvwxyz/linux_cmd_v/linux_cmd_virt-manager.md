@@ -31,4 +31,6 @@ kvm 虚拟化概述及 virt-manager 安装虚拟机 https://blog.csdn.net/wangle
 
 KVM之二：KVM工具简介一：virt-manager，virt-viewer，virt-convert,qemu-img https://www.jianshu.com/p/b894ca1abd51
 
+How to Install Kvm on Ubuntu 18.04 https://linuxize.com/post/how-to-install-kvm-on-ubuntu-18-04/
+
 # 个人实战
