@@ -1,4 +1,6 @@
 
+数据库 MySQL 可以暴力迁移吗？ https://www.v2ex.com/t/667363
+
 问一个 postgresql 传参问题 https://www.v2ex.com/t/664998
 
 遇到一个 PostgreSQL 很奇葩的排序问题（BUG？） https://www.v2ex.com/t/663098

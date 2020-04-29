@@ -1,4 +1,6 @@
 
+go 语言对接 c 语言的问题 https://www.v2ex.com/t/667279
+
 [典藏版]Golang 调度器 GMP 原理与调度全分析 https://www.v2ex.com/t/651092
 - > [典藏版]Golang调度器GMP原理与调度全分析 https://www.jianshu.com/p/fa696563c38a
 
