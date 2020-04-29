@@ -132,12 +132,16 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     /all [chao]s_knight   混沌骑士
     /all [daz]zle   戴泽-暗影牧师
     /all [death]_prophet   死亡先知
-    /all jakiro   杰奇洛-双头龙
+    /all earth[sha]ker   撼地者
+    /all [jak]iro   杰奇洛-双头龙
     /all [jugg]ernaut   主宰
     /all [lun]a    露娜-月之骑士
     /all [nec]rolyte   死灵法师
+    /all phantom_[lan]cer   幻影长矛手
     /all [san]d_king   沙王
     /all shadow_[demon]   暗影恶魔
+    /all shadow_[sham]an   暗影萨满
+    /all [sni]per   狙击手
     /all [vip]er   冥界亚龙
 ```
   
