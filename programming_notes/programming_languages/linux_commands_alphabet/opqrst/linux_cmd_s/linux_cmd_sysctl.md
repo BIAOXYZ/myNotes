@@ -135,5 +135,9 @@ REPORTING BUGS
        Please send bug reports to ⟨procps@freelists.org⟩
 ```
 
+sysctl(8) - Linux man page https://linux.die.net/man/8/sysctl
+
+sysctl.conf(5) - Linux man page https://linux.die.net/man/5/sysctl.conf
+
 # 个人实战
 
