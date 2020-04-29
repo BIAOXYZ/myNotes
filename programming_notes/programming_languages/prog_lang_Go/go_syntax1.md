@@ -159,3 +159,8 @@ Go语言学习笔记（四）结构体struct & 接口Interface & 反射reflect h
 - How to compare if two structs, slices or maps are equal? https://stackoverflow.com/questions/24534072/how-to-compare-if-two-structs-slices-or-maps-are-equal
 
 --------------------------------------------------
+
+## go Test
+
+Testing https://www.golang-book.com/books/intro/12
+- > The `go test` command will look for any tests in any of the files ***in the current folder*** and run them. Tests are identified by starting a function with the word `Test` and taking one argument of type `*testing.T`. In our case since we're testing the `Average` function we name the test function `TestAverage`.
