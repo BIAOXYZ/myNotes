@@ -37,6 +37,8 @@ DPL-CDA 职业联赛  2020-04-20至2020-05-24 https://www.vpgame.com/schedule/le
 
 ### team
 
+Wings Gaming https://liquipedia.net/dota2/Wings_Gaming
+
 Newbee https://liquipedia.net/dota2/Newbee
 
 PSG.LGD https://liquipedia.net/dota2/PSG.LGD
