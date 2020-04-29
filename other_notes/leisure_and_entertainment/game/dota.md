@@ -47,6 +47,15 @@ ddc https://liquipedia.net/dota2/Ddc
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## DOTABUFF https://zh.dotabuff.com/
+
+PSG.LGD https://zh.dotabuff.com/esports/teams/15-psg-lgd
+- PSG.LGD.fy https://zh.dotabuff.com/esports/players/101695162-psg-lgd-fy || https://zh.dotabuff.com/players/101695162
+
+## GOSU DOTA2 https://www.gosugamers.net/dota2
+
+Sylar https://www.gosugamers.net/dota2/players/16113-sylar
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Dota2 Wiki类
