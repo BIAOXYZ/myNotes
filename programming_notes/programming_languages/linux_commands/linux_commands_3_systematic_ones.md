@@ -219,3 +219,11 @@ harbor2:~ # /sbin/ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | awk '{print $
 ```sh
 
 ```
+
+## swap内存管理
+
+【[:start:][`*`]】 Create a Linux Swap File https://linuxize.com/post/create-a-linux-swap-file/
+
+How to configure swappiness in Linux Memory Management? https://unix.stackexchange.com/questions/265713/how-to-configure-swappiness-in-linux-memory-management
+
+Linux下设置swappiness参数来配置内存使用到多少才开始使用swap分区（转） https://www.cnblogs.com/EasonJim/p/7777904.html
