@@ -19,6 +19,26 @@ dynatrace https://www.dynatrace.com/solutions/application-monitoring/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# ChatOps
+
+🤖 A collection of awesome things about ChatOps – managing operations through a chat https://github.com/exAspArk/awesome-chatops
+
+Become a ChatOps advocate https://www.ibm.com/cloud/architecture/content/course/chatops-advocate/what-is-chatops
+
+What is ChatOps? A guide to its evolution, adoption, and significance https://www.atlassian.com/blog/software-teams/what-is-chatops-adoption-guide
+
+## Prow
+
+Command Help https://prow.k8s.io/command-help
+
+Prow 快速入门向导 https://www.servicemesher.com/blog/prow-quick-start-guide/
+
+## StackStorm
+
+What is ChatOps? https://docs.stackstorm.com/chatops/chatops.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # BMC & IPMI
 
 BMC简介 https://blog.csdn.net/jiangwei0512/article/details/76358995
