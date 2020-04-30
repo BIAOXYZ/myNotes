@@ -112,7 +112,12 @@ What distribution is CirrOS based on? https://stackoverflow.com/questions/149873
 How to install packages in cirros OS https://stackoverflow.com/questions/26606361/how-to-install-packages-in-cirros-os
 > As @Harikrishnan commented, cirros does not include a package manager. Cirros is mostly useful to verify that clouds are working correctly, that VMs are started correctly and things like networks, security groups and key pairs are functioning as expected.
 
-# Hybrid Cloud
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Hybrid Cloud / Multi-Cloud
+
+## CP4MCM
+// 参见专门的页面
 
 ## Google Anthos
 
@@ -123,6 +128,24 @@ Anthos overview https://cloud.google.com/anthos/docs/concepts/anthos-overview
 ## Azure Arc
 
 ## VMware Tanzu
+
+## Red Hat RHACM (Red Hat Advanced Cluster Management for Kubernetes)
+
+Red Hat Advanced Cluster Management for Kubernetes https://www.redhat.com/en/technologies/management/advanced-cluster-management
+
+Red Hat Advanced Cluster Management for Kubernetes documentation https://github.com/open-cluster-management/rhacm-docs
+
+## Rancher Fleet
+
+Fleet Management for Kubernetes is Here https://rancher.com/blog/2020/fleet-management-kubernetes/
+
+Manage large fleets of Kubernetes clusters https://github.com/rancher/fleet
+
+Fleet vs Rancher https://stackshare.io/stackups/fleet-vs-rancher
+
+Fleet Management of Kubernetes Clusters at Scale — Rancher’s Fleet https://itnext.io/fleet-management-of-kubernetes-clusters-at-scale-ranchers-fleet-de161cc52325
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # AWS
 
