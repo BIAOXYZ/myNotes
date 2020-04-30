@@ -309,6 +309,20 @@ https://www.zhihu.com/question/30123965
 - 如何在多版本anaconda python环境下转换spyder？ - 王浩的回答 - 知乎 https://www.zhihu.com/question/49144687/answer/165033340
 - 如何在多版本anaconda python环境下转换spyder？ - 知乎 https://www.zhihu.com/question/49144687/answer/192694255
 
+## Anaconda常用语句
+
+Managing environments https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+```sh
+# 环境管理
+## -n 等于 --name
+## 例： conda create -n mypy27 python=2.7
+conda create -n <your_env_name> python=3.6
+conda env list
+conda activate <your_env_name>
+conda deactivate
+```
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ## Thonny
