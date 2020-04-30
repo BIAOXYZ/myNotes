@@ -26,6 +26,8 @@
 
 植牙靠谱吗？是不是要花很多钱 https://www.v2ex.com/t/565823
 
+吃货的自我坚强——我的种植牙经历&感受 https://post.smzdm.com/p/144728/
+
 # 饮食健康
 
 印度百余儿童吃荔枝致死，如何健康地吃荔枝 https://www.ithome.com/0/429/651.htm
