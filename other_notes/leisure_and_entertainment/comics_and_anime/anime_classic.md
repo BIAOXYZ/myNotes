@@ -6,6 +6,7 @@
 - A Certain Scientific Railgun https://en.wikipedia.org/wiki/A_Certain_Scientific_Railgun
 - Toaru Kagaku no Railgun http://toarumajutsunoindex.wikia.com/wiki/Toaru_Kagaku_no_Railgun_(manga)
   * Misaka Mikoto http://toarumajutsunoindex.wikia.com/wiki/Misaka_Mikoto
+- 御坂美琴 https://zh.wikipedia.org/zh-cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4
 
 魔禁系列：
 - A Certain Magical Index https://en.wikipedia.org/wiki/A_Certain_Magical_Index
