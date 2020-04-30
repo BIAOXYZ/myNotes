@@ -133,6 +133,9 @@ Docker — 从入门到实践 https://legacy.gitbook.com/book/yeasy/docker_pract
 Linux容器技术进化史
 http://www.infoq.com/cn/articles/how-linux-containers-evolved
 
+一句话说清OpenShift的核心价值! https://mp.weixin.qq.com/s/BQ1Z49KBjRq1pZeln_Ih0w
+> 容器技术的概念最初出现在 2000 年，当时称为 FreeBSD jail，这种技术可将 FreeBSD 系统分区为多个子系统（也称为 Jail）https://www.redhat.com/zh/topics/containers/whats-a-linux-container 但直到Docker的出现（2008年），容器才真正具备了较好的可操作性和实用性。
+
 Infoq 肖德时
 http://www.infoq.com/cn/profile/%E8%82%96%E5%BE%B7%E6%97%B6
 - 深入浅出Docker（一）：Docker核心技术预览 http://www.infoq.com/cn/articles/docker-core-technology-preview
