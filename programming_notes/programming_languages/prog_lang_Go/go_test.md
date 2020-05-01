@@ -44,6 +44,9 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 https://gowalker.org/github.com/onsi/gomega/matchers
 
 Testing Kubernetes Operators with Ginkgo, Gomega and the Operator Runtime https://itnext.io/testing-kubernetes-operators-with-ginkgo-gomega-and-the-operator-runtime-6ad4c2492379
+- > I’d suggest you read the following 2 guides first. 
+  * > Unit testing in Go with Ginkgo: Part 1 https://medium.com/boldly-going/unit-testing-in-go-with-ginkgo-part-1-ce6ff06eb17f
+  * > Getting Started: Writing Your First Test https://onsi.github.io/ginkgo/#getting-started-writing-your-first-test
 
 Writing Expressive tests in Go with Ginkgo and Gomega https://lanre.wtf/blog/2017/06/23/expressive-testing-go/
 
