@@ -380,6 +380,9 @@ SomeyaMako
 
 ### 其他
 
+ACGN股票交易市場 https://acgn-stock.com/
+- 御坂美琴 https://acgn-stock.com/company/detail/4FoBarXzAR8namRJ9
+
 如何评价亚丝娜（结城明日奈）？ - 知乎 https://www.zhihu.com/question/65520439/answer/232528553
 ```
 一个迷倒了桐人身边女性的角色。
