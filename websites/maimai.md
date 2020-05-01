@@ -62,5 +62,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉搞笑
 
+最近想在感情上来点高并发，有没有什么保证线程安全的经验？大佬们指点一下，未婚。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5ODE0NzIsImlhdCI6MTU4ODMwOTg4MX0.f90ZDd3vSTR15OuNECQZAoCImjlGZ2K8ZyP4lXch8dI
+- > 买多套房 容器化 互相隔离 统一调度
+
 网易严选的朋友，帮解释下为什么这里icon要画个葫芦娃? ? ? https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5NTAzNzEsImlhdCI6MTU4Nzk2MTEzMH0.CAaFz1GMLkfwSyiSW6qPMKGuxiemQR2DWOaZNCAO4HI
 
