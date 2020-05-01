@@ -9,6 +9,16 @@ Online resources for Python Crash Course (Second Edition), from No Starch Press 
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# python知识
+
+PEP 1 -- PEP Purpose and Guidelines -- What is a PEP? https://www.python.org/dev/peps/pep-0001/#what-is-a-pep
+- > PEP stands for `Python Enhancement Proposal`. A PEP is a design document providing information to the Python community, or describing a new feature for Python or its processes or environment. The PEP should provide a concise technical specification of the feature and a rationale for the feature.
+- > We intend PEPs to be the primary mechanisms for proposing major new features, for collecting community input on an issue, and for documenting the design decisions that have gone into Python. The PEP author is responsible for building consensus within the community and documenting dissenting opinions.
+- > Because the PEPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal.
+  >> Python Enhancement Proposals https://github.com/python/peps || https://www.python.org/dev/peps/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # python教程类
 
 Python官方教程
