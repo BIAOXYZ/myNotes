@@ -19,6 +19,8 @@ https://www.zhihu.com/question/21656696/answer/19027040
 
 ## go语法之`...` 
 
+### 用在代码中
+
 golang中的三个点 '...' 的用法 https://blog.csdn.net/jeffrey11223/article/details/79166724
 > ‘…’ 其实是go的一种语法糖。它的第一个用法主要是用于函数有多个不定参数的情况，可以接受多个不确定数量的参数。第二个用法是slice可以被打散进行传递。
 
@@ -31,9 +33,17 @@ a = append(a, b...) // a == [1 2 11 22]
 The ... unpacks b. Without the dots, the code would attempt to append the slice as a whole, which is invalid.
 ```
 
+### 用在go get命令中
+
+What does the `…` mean in go get https://stackoverflow.com/questions/31938346/what-does-the-mean-in-go-get
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## go语法之枚举和iota
 
 golang枚举类型 - iota用法拾遗 https://www.cnblogs.com/zsy/p/5812676.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## goroutine
 
@@ -44,6 +54,8 @@ golang技术随笔（二）理解goroutine - CSDN博客
 https://blog.csdn.net/justaipanda/article/details/44064811
 
 Go goroutine理解 - 孤烟的文章 - 知乎 https://zhuanlan.zhihu.com/p/60613088
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go channel
 
@@ -57,6 +69,8 @@ Go: channel 源码实现 https://www.jianshu.com/p/39a3637804bb
 
 Go语言channel与select原理 https://segmentfault.com/a/1190000010813886
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## defer, panic, recover
 
 Defer, Panic, and Recover
@@ -67,6 +81,8 @@ https://blog.csdn.net/hellolingyun/article/details/52433167
 
 Go的异常处理 defer, panic, recover
 http://www.cnblogs.com/ghj1976/archive/2013/02/11/2910114.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go slice
 
@@ -79,6 +95,8 @@ http://www.jb51.net/article/57121.htm
 Go语言中的Array、Slice、Map和Set使用详解
 http://www.jb51.net/article/56828.htm
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## go语言闭包
 
 理解Go语言中的函数闭包 - CSDN博客
@@ -90,16 +108,22 @@ https://www.w3cschool.cn/go_internals/go_internals-d67w282q.html
 深入理解Go语言中的闭包
 http://www.jb51.net/article/108972.htm
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## go语言interface
 
 【GoLang笔记】浅析Go语言Interface类型的语法行为及用法 
 https://studygolang.com/articles/2652
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go template
 
 Introduction to Hugo Templating https://gohugo.io/templates/introduction/
 > The following is only a primer on Go Templates. For an in-depth look into Go Templates, check the official Go docs.
 >> Package template https://golang.org/pkg/text/template/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go json
 
@@ -137,9 +161,13 @@ golang中struct成员变量的标签（Tag）说明和获取方式 https://www.c
 - Golang处理JSON（一）--- 编码 https://www.jianshu.com/p/f3c2105bd06b
 - Golang处理JSON（二）--- 解码 https://www.jianshu.com/p/31757e530144
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## go泛型
 
 Go：为何带来泛型 https://juejin.im/entry/5d48e24ce51d453bc470de72
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go反射
 

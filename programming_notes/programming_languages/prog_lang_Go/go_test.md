@@ -18,6 +18,8 @@ Unit Testing made easy in Go https://medium.com/rungo/unit-testing-made-easy-in-
 
 Go 测试，go test 工具的具体指令 flag https://deepzz.com/post/the-command-flag-of-go-test.html
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ginkgo & Gomega
 
 ## Ginkgo & Gomega 官方
@@ -38,6 +40,8 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 - > Ginkgo and Gomega are heavily influenced by Cedar (BDD for Objective-C) and Jasmine (BDD for Javascript). If you’re familiar with either you’ll feel right at home with Ginkgo.
 - > About the Author: Onsi Fakhouri is the Senior Vice President, Cloud R&D of Pivotal.
   >> notes: 因为作者是Pivotal的，所以这个库基本就算VMware的呗，而且这个新闻的网页就是VMware Tanzu的。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Ginkgo & Gomega 其他
 
