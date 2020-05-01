@@ -20,6 +20,8 @@ Go 测试，go test 工具的具体指令 flag https://deepzz.com/post/the-comma
 
 # Ginkgo & Gomega
 
+## Ginkgo & Gomega 官方
+
 Ginkgo: BDD Testing Framework for Go https://github.com/onsi/ginkgo || http://onsi.github.io/ginkgo/
 
 package ginkgo https://godoc.org/github.com/onsi/ginkgo
@@ -37,5 +39,20 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 - > About the Author: Onsi Fakhouri is the Senior Vice President, Cloud R&D of Pivotal.
   >> notes: 因为作者是Pivotal的，所以这个库基本就算VMware的呗，而且这个新闻的网页就是VMware Tanzu的。
 
+## Ginkgo & Gomega 其他
+
+https://gowalker.org/github.com/onsi/gomega/matchers
+
 Testing Kubernetes Operators with Ginkgo, Gomega and the Operator Runtime https://itnext.io/testing-kubernetes-operators-with-ginkgo-gomega-and-the-operator-runtime-6ad4c2492379
 
+Writing Expressive tests in Go with Ginkgo and Gomega https://lanre.wtf/blog/2017/06/23/expressive-testing-go/
+
+Can Gomega's Equal() handle multiple values ? https://stackoverflow.com/questions/49828807/can-gomegas-equal-handle-multiple-values
+
+一个 Golang 的BDD(行为驱动开发)测试框架 https://www.ginkgo.wiki/
+
+高效测试框架推荐之Ginkgo https://www.cnblogs.com/jinsdu/p/12183298.html
+
+Ginkgo使用指南 https://blog.csdn.net/Goodboynihaohao/article/details/79392500
+
+开发工具 从 Go 语言的依赖库讲起 1：Ginkgo、testify 和 GoMock https://gocn.vip/topics/9760
