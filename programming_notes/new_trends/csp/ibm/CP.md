@@ -5,6 +5,16 @@ IBM Cloud Paks https://www.ibm.com/cloud/paks/
 
 IBM Cloud Paks are enterprise-grade containerized software by combining container images with enterprise capabilities for deployment in production use cases with integrations for management and lifecycle operations. Features such as pre-configured deployments based on product expertise, rolling upgrades, rollbacks, security/vulnerability testing… https://github.com/IBM/cloud-pak
 
+# 官方github相关
+
+## 公网github
+
+Hybrid Application Model https://github.com/hybridapp-io
+
+## 公司github
+
+Operator to handle the compatibility of api groups between cp4mcm and RHACM https://github.ibm.com/IBMPrivateCloud/applicationcompatibility-operator
+
 ## 子产品
 
 IBM Cloud Pak for Multicloud Management https://www.ibm.com/cloud/cloud-pak-for-management 【也就是`CP4MCM`】
