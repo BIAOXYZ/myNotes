@@ -303,7 +303,15 @@ https://www.zhihu.com/question/30123965
 
 <Anaconda介绍、安装及使用教程> https://zhuanlan.zhihu.com/p/32925500
 > 7. 在“Advanced Installation Options”中不要勾选“Add Anaconda to my PATH environment variable.”（“添加Anaconda至我的环境变量。”）。因为如果勾选，则将会影响其他程序的使用。如果使用Anaconda，则通过打开Anaconda Navigator或者在开始菜单中的“Anaconda Prompt”（类似macOS中的“终端”）中进行使用。
->> notes：补：其实现在想想，也不一定。有的人就推荐勾选这个选项。因为不勾选这个的话，Window下的cmd命令行都没法直接用conda（除非自己配一下）。——当然，**总体还是推荐不勾选的**！
+>> notes：补：其实现在想想，也不一定。有的人就推荐勾选这个选项。因为不勾选这个的话，Window下的cmd命令行都没法直接用conda（除非自己配一下）。——当然，**总体还是推荐不勾选的**！因为官方也是这么说的
+>>> https://docs.anaconda.com/anaconda/install/windows/
+>>>> `8. Choose whether to add Anaconda to your PATH environment variable. We recommend not adding Anaconda to the PATH environment variable, since this can interfere with other software. Instead, use Anaconda software by opening Anaconda Navigator or the Anaconda Prompt from the Start Menu.`
+>>>>> 另外所谓配置方法其实也就是加Anaconda相关目录到环境变量，主要是如下三个目录`xxx\Anaconda3`、`xxx\Anaconda3\Scripts`、`xxx\Anaconda3\Library\bin`：
+```
+C:\Users\<your_windows_username>\Anaconda3
+C:\Users\<your_windows_username>\Anaconda3\Scripts
+C:\Users\<your_windows_username>\Anaconda3\Library\bin
+```
 
 如何在多版本anaconda python环境下转换spyder？ - 知乎 https://www.zhihu.com/question/49144687
 - 如何在多版本anaconda python环境下转换spyder？ - 王浩的回答 - 知乎 https://www.zhihu.com/question/49144687/answer/165033340
@@ -315,12 +323,16 @@ Managing environments https://docs.conda.io/projects/conda/en/latest/user-guide/
 
 ```sh
 # 环境管理
-## -n 等于 --name
-## 例： conda create -n mypy27 python=2.7
-conda create -n <your_env_name> python=3.6
+conda create -n <your_env_name> python=3.6  # 例：conda create -n py27 python=2.7 // -n 等于 --name
+conda env remove -n <your_env_name>  # 例：conda env remove --name bio-env // 等于 conda remove -n bio-env --all
 conda env list
+conda info --envs  # 似乎等于上面那个语句，反正差不多吧
 conda activate <your_env_name>
 conda deactivate
+
+# 包管理
+conda remove -n <your_env_name> <package1> <package2>  # 例：conda remove --name bio-env toolz boltons
+conda remove -n <your_env_name> --all  # 例：conda remove -n bio-env --all // 这句会直接把这个虚环境给删掉，等于前面的 conda env remove --name bio-env
 ```
 
 ***--------------------------------------------------分割线--------------------------------------------------***
