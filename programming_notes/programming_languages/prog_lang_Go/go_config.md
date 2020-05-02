@@ -66,20 +66,20 @@ golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/102
   import "fmt"
 
   func main() {
-    fmt.Println("Go is great!")
+      fmt.Println("Go is great!")
   }
   ```
 - > Import aliases
   * > We can leverage this to bypass package name conflicts. If we have two packages with the same package name, we can simply give one an alias. For the next example, lets assume that we want to use two packages with the name `rand`.
     ```go
     import (
-      "math/rand"
-      crand "crypto/rand"
+        "math/rand"
+        crand "crypto/rand"
     )
     ```
     > We can now reference the second import’s functions and variables by using `crand`, allowing us to reference the first import’s functions and variables by using its original package name, `rand`.
 - > Package names vs. package imports
-  * > For example: You wish to use json-iterator/go in your project, you will use it like this:
+  * > For example: You wish to use [json-iterator/go](https://github.com/json-iterator/go) in your project, you will use it like this:
     ```go
     import "github.com/json-iterator/go"
 
@@ -92,20 +92,21 @@ golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/102
   * > Dot imports are a lesser known and therefore rarely used import method. What it does is it imports the package into the same namespace as the current package, so you no longer have to use the imported package’s name to reference its variables and functions, giving us direct access to them. To dot import a package, you simply give it a full-stop as it’s alias. The example below compares a dot import to a standard import.
     ```go
     import (
-      . "math"
-      "fmt"
+        . "math"
+        "fmt"
     )
 
     fmt.Println(Pi)
     ```
     ```go
     import (
-      "math"
-      "fmt"
+        "math"
+        "fmt"
     )
 
     fmt.Println(math.Pi)
     ```
+    > As you can see, when we dot imported `math`, we didn’t have to prepend `Pi` with `math.`.
   * > One thing to look out for when using dot imports is that you cannot have functions or variables that are also defined in the dot imported package. For example, if we dot import `fmt` and we define a function called `Println` in our package, the compiler will give out to us for having duplicate function names.
   * > This import style is commonly used in testing. The dot import will import only the public structs and functions, without exposing any private details of the package. This is good for testing because you can be sure that the public interface to your package is fully functional. If you share the namespace of your package with your tests, you may overlook that some property or function isn’t public, and wouldn’t be available to the users of your package.
 - > Relative imports
@@ -114,16 +115,16 @@ golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/102
   * > If you’ve ever been annoyed at Go complaining about an unused import, then you’ve most likely come across blank imports. Blank imports are commonly used while coding to stop Go complaining about an import that you’re not using, but might use later, that you don’t want to keep around for when you do need it. However, there is another use for them. If you’ve ever worked with images or databases in Go, you may have seen one of the following being used:
     ```go
     import (
-      "database/sql"
-      _ "github.com/go-sql-driver/mysql"
+        "database/sql"
+        _ "github.com/go-sql-driver/mysql"
     )
     ```
     ```go
     import (  
-      "image"
-      _ "image/gif"
-      _ "image/png"
-      _ "image/jpeg"
+        "image"
+        _ "image/gif"
+        _ "image/png"
+        _ "image/jpeg"
     )
     ```
     > You probably wondered why they’re being imported that way. Doesn’t that just ignore them? What actually happens when you import them like this is that, instead of being ignored, their `init()` function, if any, is run.
