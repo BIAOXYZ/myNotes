@@ -60,6 +60,79 @@ Golang import 包问题相关详解 https://blog.csdn.net/CMbug/article/details/
 golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/10230644.html
 - > 程序的初始化和执行都起始于main包。如果main包还导入了其它的包，那么就会在编译时将它们依次导入。有时一个包会被多个包同时导入，那么它只会被导入一次（例如很多包可能都会用到fmt包，但它只会被导入一次，因为没有必要导入多次）。当一个包被导入时，如果该包还导入了其它的包，那么会先将其它包导入进来，然后再对这些包中的包级常量和变量进行初始化，接着执行init函数（如果有的话），依次类推。等所有被导入的包都加载完毕了，就会开始对main包中的包级常量和变量进行初始化，然后执行main包中的init函数（如果存在的话），最后执行main函数。下图详细地解释了整个执行过程：
 
+【[:star:][`*`]】 Go tips and tricks: almost everything about imports https://scene-si.org/2018/01/25/go-tips-and-tricks-almost-everything-about-imports/
+- > Lets quickly go over the basics. Say you want to output something to the terminal. The fmt package takes care of this. So lets go ahead and import it.
+  ```go
+  import "fmt"
+
+  func main() {
+    fmt.Println("Go is great!")
+  }
+  ```
+- > Import aliases
+  * > We can leverage this to bypass package name conflicts. If we have two packages with the same package name, we can simply give one an alias. For the next example, lets assume that we want to use two packages with the name `rand`.
+    ```go
+    import (
+      "math/rand"
+      crand "crypto/rand"
+    )
+    ```
+    > We can now reference the second import’s functions and variables by using `crand`, allowing us to reference the first import’s functions and variables by using its original package name, `rand`.
+- > Package names vs. package imports
+  * > For example: You wish to use json-iterator/go in your project, you will use it like this:
+    ```go
+    import "github.com/json-iterator/go"
+
+    var json = jsoniter.ConfigCompatibleWithStandardLibrary
+    json.Marshal(&data)
+    ```
+    > “But wait a minute!” you say. “It’s called `json-iterator/go`, so shouldn’t its functions and variables be referenced with `go.` instead of `jsoniter.`? That’s how it works for packages like `fmt` and `encoding/json` in the standard library, right?”
+  * > Yes, people tend to write packages so they match their URL. But the URL doesn’t define how you use the package. If you look at the source code for `json-iterator/go`, you’ll see that each file has `package jsoniter` at the very top. This is what defines how one should reference its variables and functions. The import paths for the standard library packages just happen to be the same as how you use them, that’s how they’re defined in the source code, so it’s easy to think that the trend holds true for all imports.
+- > Dot imports
+  * > Dot imports are a lesser known and therefore rarely used import method. What it does is it imports the package into the same namespace as the current package, so you no longer have to use the imported package’s name to reference its variables and functions, giving us direct access to them. To dot import a package, you simply give it a full-stop as it’s alias. The example below compares a dot import to a standard import.
+    ```go
+    import (
+      . "math"
+      "fmt"
+    )
+
+    fmt.Println(Pi)
+    ```
+    ```go
+    import (
+      "math"
+      "fmt"
+    )
+
+    fmt.Println(math.Pi)
+    ```
+  * > One thing to look out for when using dot imports is that you cannot have functions or variables that are also defined in the dot imported package. For example, if we dot import `fmt` and we define a function called `Println` in our package, the compiler will give out to us for having duplicate function names.
+  * > This import style is commonly used in testing. The dot import will import only the public structs and functions, without exposing any private details of the package. This is good for testing because you can be sure that the public interface to your package is fully functional. If you share the namespace of your package with your tests, you may overlook that some property or function isn’t public, and wouldn’t be available to the users of your package.
+- > Relative imports
+  * > Unfortunately, this doesn’t work and will give you the following error: `local import "./greeting" in non-local package`. **This is because relative imports aren’t allowed in your workspace (most commonly `$GOPATH/src`). They are however allowed anywhere outside of this.**
+- > Blank imports
+  * > If you’ve ever been annoyed at Go complaining about an unused import, then you’ve most likely come across blank imports. Blank imports are commonly used while coding to stop Go complaining about an import that you’re not using, but might use later, that you don’t want to keep around for when you do need it. However, there is another use for them. If you’ve ever worked with images or databases in Go, you may have seen one of the following being used:
+    ```go
+    import (
+      "database/sql"
+      _ "github.com/go-sql-driver/mysql"
+    )
+    ```
+    ```go
+    import (  
+      "image"
+      _ "image/gif"
+      _ "image/png"
+      _ "image/jpeg"
+    )
+    ```
+    > You probably wondered why they’re being imported that way. Doesn’t that just ignore them? What actually happens when you import them like this is that, instead of being ignored, their `init()` function, if any, is run.
+
+Import declarations in Go https://medium.com/golangspec/import-declarations-in-go-8de0fd3ae8ff
+- > Package called main is used to create executable binary. Program execution starts in package main by calling its function which also called main.
+- > Importing package can reference only exported identifiers from imported package. Exported identifiers are the ones started with Unicode upper case letter — https://golang.org/ref/spec#Exported_identifiers.
+
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## govendor
