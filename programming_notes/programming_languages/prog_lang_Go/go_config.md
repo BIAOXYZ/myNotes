@@ -81,6 +81,18 @@ golang使用vendor目录来管理依赖包 https://www.jianshu.com/p/e52e3e1ad1c
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## ~~gopkg/gopkg.in~~
+
+gopkg.in -- Stable APIs for the Go language https://labix.org/gopkg.in
+
+Source code for the gopkg.in service. https://github.com/niemeyer/gopkg
+
+使用gopkg.in管理import的第三方package https://lnsyyj.github.io/2018/04/18/%E4%BD%BF%E7%94%A8gopkg-in%E7%AE%A1%E7%90%86import%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9package/
+
+gopkg：一种方便的go pakcage管理方式 https://blog.csdn.net/siddontang/article/details/38083159
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## ~~godep~~
 
 ~~dependency tool for go https://github.com/tools/godep || https://godoc.org/github.com/tools/godep~~
