@@ -129,10 +129,167 @@ golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/102
     ```
     > You probably wondered why they’re being imported that way. Doesn’t that just ignore them? What actually happens when you import them like this is that, instead of being ignored, their `init()` function, if any, is run.
 
-Import declarations in Go https://medium.com/golangspec/import-declarations-in-go-8de0fd3ae8ff
-- > Package called main is used to create executable binary. Program execution starts in package main by calling its function which also called main.
-- > Importing package can reference only exported identifiers from imported package. Exported identifiers are the ones started with Unicode upper case letter — https://golang.org/ref/spec#Exported_identifiers.
+【[:star:][`*`]】 Import declarations in Go https://medium.com/golangspec/import-declarations-in-go-8de0fd3ae8ff
+- > 
+  ```go
+  package main
 
+  import (
+      "fmt"
+      "math"
+  )
+
+  func main() {
+      fmt.Println(math.Exp2(10))  // 1024
+  }
+  ```
+  > Above we’ve one `import declaration` with two `ImportSpecs`. Each ImportSpec defines single package import.
+- > Package called `main` is used to create executable binary. Program execution starts in package `main` by calling its function which also called `main`.
+- > But… there are other, less known options which are useful in various scenarios:
+  ```go
+  import (
+      "math"
+      m "math"
+      . "math"
+      _ "math"
+  )
+  ```
+- > Importing package can reference only exported identifiers from imported package. Exported identifiers are the ones started with Unicode upper case letter — https://golang.org/ref/spec#Exported_identifiers.
+- > Anatomy of import declaration
+  * > 
+    ```go
+    ImportDeclaration = "import" ImportSpec
+    ImportSpec        = [ "." | "_" | Identifier ] ImportPath
+    ```
+  * > `Identifier` is any valid identifier which will be used in qualified identifiers
+  * > `ImportPath` is string literal (raw or interpreted)
+  * > Let’s see some examples:
+    ```go
+    import . "fmt"
+    import _ "io"
+    import log "github.com/sirupsen/logrus"
+    import m "math"
+    ```
+- > (Short) import path
+  * > String literal used in import specification (each import declaration contains one or more import specification) tells what package to import. This string is called import path. According to language spec it depends on the implementation how import path (string) is interpreted but in real life it’s path relative package’s **vendor** directory or **`go env GOPATH`/src** (more about [GOPATH](https://golang.org/doc/code.html#GOPATH)).
+  * > Built-in packages are imported with short import paths like `"math"` or `"fmt"`.
+- > Scope of import
+  * > The scope of import is the **file block**. It means that it’s reachable from the whole file but not within the entire package:
+    ```go
+    // github.com/mlowicki/a/main.go
+    package main
+
+    import "fmt"
+
+    func main() {
+        fmt.Println(a)
+    }
+
+    // github.com/mlowicki/a/foo.go
+    package main
+
+    var a int = 1
+
+    func hi() {
+        fmt.Println("Hi!")
+    }
+    ```
+    > Such program cannot be compiled:
+    ```go
+    > go build
+    # github.com/mlowicki/a
+    ./foo.go:6:2: undefined: fmt
+    ```
+  * > More on scopes in one of previous posts:
+    >> Scopes in Go https://medium.com/golangspec/scopes-in-go-a6042bb4298c
+- > Types of imports
+  * > Custom package name
+    ```go
+    # github.com/mlowicki/main.go
+    package main
+
+    import (
+        "fmt"
+        "github.com/mlowicki/b"
+    )
+
+    func main() {
+        fmt.Println(c.B)
+    }
+
+    # github.com/mlowicki/b/b.go
+    package c
+
+    var B = "b"
+    ```
+    > Output is simply `b`.
+    >
+    > It’s possible to pass custom package name for import:
+    ```go
+    # github.com/mlowicki/b/b.go
+    package b
+
+    var B = "b"
+
+    package main
+
+    import (
+        "fmt"
+        c "github.com/mlowicki/b"
+    )
+
+    func main() {
+        fmt.Println(c.B)
+    }
+    ```
+    > And the result is the same as before. This form of import can be useful if we’ve package which has the same interface (exported identifiers) as other package.
+  * > All exported identifiers into importing block
+  * > Import with blank identifier
+    + > Import with dot where all exported identifiers are added directly into importing file block fails as well while building — source code. The only variant which works is the one with blank identifier. It’s required to know what init functions are in order to understand why do we need to have import with blank identifier. Throughout introduction to init functions has been covered in one of previous stories:
+      >> init functions in Go https://medium.com/golangspec/init-functions-in-go-eac191b3860a
+    + > Compiling will fail if package is imported without blank identifier and not used at all.
+  * > Circular import
+    + > Go specification explicitly forbids `circular imports` — **when package imports itself indirectly**. The most obvious case is when package a imports package b and package b in turn imports package a:
+      ```go
+      # github.com/mlowicki/a/main.go
+      package a
+
+      import "github.com/mlowicki/b"
+
+      var A = b.B
+
+      # github.com/mlowicki/b/main.go
+      package b
+
+      import "github.com/mlowicki/a"
+
+      var B = a.A
+      ```
+      > An attempt to build any of these two packages ends up with an error:
+      ```go
+      > go build
+      can't load package: import cycle not allowed
+      package github.com/mlowicki/a
+      imports github.com/mlowicki/b
+      imports github.com/mlowicki/a
+      ```
+      > Of course it can be more complex scenario like a → b → c → d → a where x → y means that package x imports package y.
+    + > Package cannot import itself neither:
+      ```go
+      package main
+
+      import (
+          "fmt"
+          "github.com/mlowicki/a"
+      )
+
+      var A = "a"
+      
+      func main() {
+          fmt.Println(a.A)
+      }
+      ```
+      > Compiling such package also gives an error: `can’t load package: import cycle not allowed`. 
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
