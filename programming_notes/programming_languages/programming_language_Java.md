@@ -161,6 +161,13 @@ https://stackoverflow.com/questions/2529974/why-do-java-programmers-like-to-name
 - 为什么Java不支持多重继承? http://www.importnew.com/4604.html
 - Java 内部类的意义及应用 https://juejin.im/post/5ad5d8cd6fb9a028c42eb520
 
+## Java数据结构
+
+ArrayList和LinkedList的区别 https://www.jianshu.com/p/e591690afacb
+- > 数据的更新和查找
+  * > ArrayList的所有数据是在同一个地址上,而LinkedList的每个数据都拥有自己的地址.所以在对数据进行查找的时候，由于LinkedList的每个数据地址不一样，get数据的时候ArrayList的速度会优于LinkedList，而更新数据的时候，虽然都是通过循环循环到指定节点修改数据，但LinkedList的查询速度已经是慢的，而且对于LinkedList而言，更新数据时不像ArrayList只需要找到对应下标更新就好，LinkedList需要修改指针，速率不言而喻
+- > 数据的增加和删除
+  * > 对于数据的增加元素，ArrayList是通过移动该元素之后的元素位置，其后元素位置全部+1，所以耗时较长，而LinkedList只需要将该元素前的后续指针指向该元素并将该元素的后续指针指向之后的元素即可。与增加相同，删除元素时ArrayList需要将被删除元素之后的元素位置-1，而LinkedList只需要将之后的元素前置指针指向前一元素，前一元素的指针指向后一元素即可。当然，事实上，若是单一元素的增删，尤其是在List末端增删一个元素，二者效率不相上下。
 
 ## Java零散知识
 
