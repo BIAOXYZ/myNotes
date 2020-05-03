@@ -46,15 +46,6 @@ Kubernetes community content https://github.com/kubernetes/community
 kubernetes Community https://kubernetes.io/community/
 - Kubernetes Slack https://kubernetes.slack.com/ || https://slack.k8s.io/ || https://github.com/kubernetes/community/blob/master/communication/slack-guidelines.md
 
-
-## kubecon
-
-KubeCon + CloudNativeCon Europe 2019 https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/
-
-KubeCon + CloudNativeCon + Open Source Summit China 2019 https://www.lfasiallc.com/events/kubecon-cloudnativecon-china-2019/schedule-chinese/
-- 从 IDE 调试 Kubernetes 控制器 - Surendhar Ravichandran，F5 Networks
-https://www.lfasiallc.com/events/kubecon-cloudnativecon-china-2019/schedule-chinese/ || https://kccncosschn19chi.sched.com/event/NrcW/ide-hoy-mao-kubernetes-j-surendhar-ravichandrandaelsf5-networks 【第二个网址网上搜到的，回头研究下那个网站`shed.com`好用不】
-
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ## kubernetes 中文社区
