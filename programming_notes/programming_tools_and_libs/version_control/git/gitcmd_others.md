@@ -3,40 +3,33 @@
 # 4.other part:
 ----------------------------------------------------------------------------------------------------
 
-<<如何高效利用GitHub>> 
-http://www.yangzhiping.com/tech/github.html
+如何高效利用GitHub  http://www.yangzhiping.com/tech/github.html
 
-<<图解Git>>
-https://my.oschina.net/xdev/blog/114383
+《图解Git》 https://my.oschina.net/xdev/blog/114383
 
 ## 阮一峰git系列
 
-- <<常用 Git 命令清单>>
-http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
-
-- <<Git远程操作详解>>
-http://www.ruanyifeng.com/blog/2014/06/git_remote.html
-```
+- 常用 Git 命令清单 http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+- Git远程操作详解 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+```sh
 git branch --set-upstream master origin/next
 
 上面命令指定master分支追踪origin/next分支。
 ```
-```
+```sh
 git push --all origin
 git push --force origin  //感觉这个比较实用，看描述能删远程仓库的commit
 git push origin --tags
 ```
-- <<Git 使用规范流程>>
-http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
+- Git 使用规范流程 http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
 
 ## 伯乐在线git系列
 
 http://blog.jobbole.com/75348/
 
-<<趣文：那些会用 Git 的动物>>
-http://blog.jobbole.com/20123/
+趣文：那些会用 Git 的动物 http://blog.jobbole.com/20123/
 
-## 其他高级技巧或知识
+## 其他高级技巧或不常用知识点
 
 🥡 Git recipes in Chinese by Zhongyi Tong. 高质量的Git中文教程.  https://geeeeeeeeek.github.io/git-recipes/  https://github.com/geeeeeeeeek/git-recipes
 - 第5篇 Git 实用贴士
@@ -143,6 +136,7 @@ http://justcoding.iteye.com/blog/1830388
 
 今年下半年，中日合拍的《Git游记》即将正式开机，我将...（上集） https://juejin.im/post/5c22056551882518fc5fe294 [`*`][:star:]
 
+💥 Git常用命令参考手册 https://github.com/xjh22222228/git-manual
 
 ## git书籍和系列教程(易百教程git部分就不再重复贴了)
 
