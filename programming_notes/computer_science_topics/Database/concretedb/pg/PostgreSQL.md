@@ -379,6 +379,9 @@ C 中调用 PostgreSQL 内置动态加载函数的方法
 http://blog.csdn.net/davidzwb/article/details/53172453
 ```
 
+#### 其他扩展/类扩展
+
+bg_mon: Background worker for monitoring PostgreSQL https://github.com/CyberDem0n/bg_mon
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
