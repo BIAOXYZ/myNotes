@@ -21,4 +21,8 @@ SysVinit to Systemd Cheatsheet/zh https://fedoraproject.org/wiki/SysVinit_to_Sys
 
 What is the difference between service and systemctl? https://serverfault.com/questions/867322/what-is-the-difference-between-service-and-systemctl
 
+service与chkconfig的替代者systemctl http://www.361way.com/systemctl/3709.html
+
+centos7 systemctl取代service和chkconfig来实现系统管理 https://blog.csdn.net/capecape/article/details/78505511
+
 # 个人实战
