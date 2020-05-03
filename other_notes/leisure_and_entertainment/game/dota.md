@@ -140,10 +140,13 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     /all [lun]a    露娜-月之骑士
     /all [nec]rolyte   死灵法师
     /all phantom_[lan]cer   幻影长矛手
+    /all [rik]i   力丸-隐形刺客
     /all [san]d_king   沙王
     /all shadow_[demon]   暗影恶魔
     /all shadow_[sham]an   暗影萨满
     /all [sni]per   狙击手
+    /all [tech]ies   工程师
+    /all [tus]k   巨牙海民
     /all [vip]er   冥界亚龙
 ```
   
