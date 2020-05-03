@@ -5,6 +5,8 @@
 - 史上最全的大数据学习资源(Awesome Big Data) https://www.iteblog.com/archives/2607.html
 - Awesome Big Data: A curated list of awesome big data frameworks, ressources and other awesomeness. https://github.com/onurakpolat/awesome-bigdata
 
+大数据入门指南 https://github.com/heibaiying/BigData-Notes
+
 # Spark v.s. Flink
 
 Spark比拼Flink：下一代大数据计算引擎之争 - 夜城的文章 - 知乎 https://zhuanlan.zhihu.com/p/40402793
