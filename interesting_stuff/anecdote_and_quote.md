@@ -1,6 +1,15 @@
 
 # 其他圈
 
+国际劳动节 https://zh.wikipedia.org/zh-cn/%E5%9B%BD%E9%99%85%E5%8A%B3%E5%8A%A8%E8%8A%82
+- > 审判最后，除了一人被判十五年外，二人被判无期徒刑外，五人都判死刑。 而其中的一位工运领袖奥古斯都.史比司（August Spies）在临刑前说：`“总有一天，我们的沉默 ，会远比今天你们所要压制的言论更为宏亮有力！”`
+  >> `The day will come when our silence will be more powerful than the voices you strangle today!`
+
+August Spies https://en.wikipedia.org/wiki/August_Spies
+- > As he faced his demise on the gallows, Spies shouted, `"The day will come when our silence will be more powerful than the voices you strangle today."`
+
+## From politicians
+
 https://zh.wikiquote.org/wiki/%E6%B1%9F%E6%B3%BD%E6%B0%91
 - > `一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程。` || https://www.hmoegirl.com/%E8%9B%A4%E4%B8%89%E7%AF%87#%E9%87%8D%E5%9B%9E%E4%BA%8C%E9%99%A2
 - > 
