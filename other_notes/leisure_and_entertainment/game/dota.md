@@ -133,7 +133,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     /all [blood]seeker   血魔
     /all [chao]s_knight   混沌骑士
     /all [daz]zle   戴泽-暗影牧师
-    /all [death]_prophet   死亡先知
+    /all [dea]th_prophet   死亡先知
     /all earth[sha]ker   撼地者
     /all [jak]iro   杰奇洛-双头龙
     /all [jugg]ernaut   主宰
@@ -145,7 +145,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     /all shadow_[demon]   暗影恶魔
     /all shadow_[sham]an   暗影萨满
     /all [sni]per   狙击手
-    /all [tech]ies   工程师
+    /all [tec]hies   工程师
     /all [tus]k   巨牙海民
     /all [vip]er   冥界亚龙
 ```
