@@ -5,6 +5,7 @@
 - 写在最前面 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/p/9194998.html
 
 【by 张忠琳】：
+- 【kubernetes/k8s源码分析】operator controller-runtime源码分析 https://blog.csdn.net/zhonglinzhang/article/details/105023103
 - 【kubernetes/k8s源码分析】client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
 - 【kubernetes/k8s源码分析】kube-scheduler 源码分析 https://blog.csdn.net/zhonglinzhang/article/details/77197834
 
