@@ -160,6 +160,24 @@ SomeField 序列化之后会变成 some_field。
 
 golang中struct成员变量的标签（Tag）说明和获取方式 https://www.cnblogs.com/liujie-php/p/10503436.html
 
+Go Struct超详细讲解 https://juejin.im/post/5ca2f37ce51d4502a27f0539
+- > 在定义结构体字段时，除字段名称和数据类型外，还可以使用反引号为结构体字段声明元信息，这种元信息称为Tag，用于编译阶段关联到字段当中，如我们将上面例子中的结构体修改为：
+  ```go
+  type Member struct {
+    Id     int    `json:"id,-"`
+    Name   string `json:"name"`
+    Email  string `json:"email"`
+    Gender int    `json:"gender,"`
+    Age    int    `json:"age"`
+  }
+  ```
+  > 上面例子演示的是使用encoding/json包编码或解码结构体时使用的Tag信息。
+  >
+  > Tag由反引号括起来的一系列用空格分隔的key:"value"键值对组成，如：
+  ```go
+  Id int `json:"id" gorm:"AUTO_INCREMENT"`
+  ```
+  
 【from 人世间】：
 - Golang处理JSON（一）--- 编码 https://www.jianshu.com/p/f3c2105bd06b
 - Golang处理JSON（二）--- 解码 https://www.jianshu.com/p/31757e530144
