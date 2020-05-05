@@ -33,9 +33,12 @@ a = append(a, b...) // a == [1 2 11 22]
 The ... unpacks b. Without the dots, the code would attempt to append the slice as a whole, which is invalid.
 ```
 
+What is the difference between []string and …string in golang? https://stackoverflow.com/questions/12907653/what-is-the-difference-between-string-and-string-in-golang
+
 ### 用在go get命令中
 
 What does the `…` mean in go get https://stackoverflow.com/questions/31938346/what-does-the-mean-in-go-get
+- > The `...` (ellipsis) tells `go get` to also fetch the package's subpackages/dependencies.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
