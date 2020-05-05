@@ -1,4 +1,18 @@
 
+# 官方github源码
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## controller-runtime manager
+
+https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb/pkg/manager/manager.go
+
+https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Kubernetes源码分析系列文章
 
 随笔分类 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/category/1231156.html
