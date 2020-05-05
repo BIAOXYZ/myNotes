@@ -35,17 +35,32 @@ DPL-CDA 职业联赛  2020-04-20至2020-05-24 https://www.vpgame.com/schedule/le
 
 ## Liquipedia Dota2 Encyclopedia https://liquipedia.net/dota2/Main_Page
 
+### match
+
+The International 2019 https://liquipedia.net/dota2/The_International/2019
+
+The International 2016 https://liquipedia.net/dota2/The_International/2016
+
 ### team
 
 Wings Gaming https://liquipedia.net/dota2/Wings_Gaming
 
 Newbee https://liquipedia.net/dota2/Newbee
 
+EHOME https://liquipedia.net/dota2/EHOME
+
 PSG.LGD https://liquipedia.net/dota2/PSG.LGD
 
 ### player
 
 ddc https://liquipedia.net/dota2/Ddc
+
+Faith_bian https://liquipedia.net/dota2/Faith_bian
+
+### others
+***// 我去，liquipedia的wiki太牛叉了，连解说都有页面。。。***
+
+Ams https://liquipedia.net/dota2/Ams
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
