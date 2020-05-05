@@ -66,6 +66,8 @@ Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-c
 如何基于kubernetes开发自定义的Controller https://blog.csdn.net/jiangmingjun1234/article/details/79296542
 - > [源码分析] client-go的使用及源码分析 https://www.huweihuang.com/article/source-analysis/client-go-source-analysis/
 
+利用 kubebuilder 优化 Kubernetes Operator 开发体验 - 高策的文章 - 知乎 https://zhuanlan.zhihu.com/p/67406200 || 利用 kubebuilder 优化 Kubernetes Operator 开发体验 - 才云Caicloud的文章 - 知乎 https://zhuanlan.zhihu.com/p/69423429
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # finalizer相关源码
