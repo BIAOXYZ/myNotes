@@ -51,16 +51,24 @@ EHOME https://liquipedia.net/dota2/EHOME
 
 PSG.LGD https://liquipedia.net/dota2/PSG.LGD
 
+Old Boys https://liquipedia.net/dota2/Old_Boys
+
 ### player
 
 ddc https://liquipedia.net/dota2/Ddc
 
 Faith_bian https://liquipedia.net/dota2/Faith_bian
 
-### others
+SanSheng https://liquipedia.net/dota2/SanSheng
+
+### other staffs
 ***// 我去，liquipedia的wiki太牛叉了，连解说都有页面。。。***
 
 Ams https://liquipedia.net/dota2/Ams
+
+### others
+
+GosuAwards https://liquipedia.net/dota2/GosuAwards
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
