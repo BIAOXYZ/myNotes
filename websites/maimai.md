@@ -49,6 +49,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉八卦
 
+如果你女朋友欠了十万信用卡你会帮她还吗（不是乱花，被朋友坑了）她在老家工资每个月四五千的违约金都抵不上，我刚买过房还有房贷每个月也剩不下多少钱 她不敢告诉家里 怕气着她爸妈 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwMjk4OTUsImlhdCI6MTU4ODY1NTA5NH0.xb_Mex5Daelpl38yfz8v5x3B-K4fRDM4wHB0ri2rlHA
+
 女朋友攒了两个月公司的零食，然后攒了一箱送给我当生日礼物，这是什么操作 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5NTgzMjIsImlhdCI6MTU4Nzk2MTEzMH0.CCylzaL_4vZ94OwaIa4N0vLrrCiuSM4YXE4xav-6OlQ
 
 工作4年，普通二本，目前 package 不到25，但是明年跳槽时能确保 个人技术、项目经验、社区影响力、各项软技能综合水平能到P7＋左右的水平，请问下明年能拿到 字节2-2，腾讯3-2，阿里P7 的offer吗？这种情况下会忽略package低的影响吗？求教 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5MjIxMTMsImlhdCI6MTU4NzcwMDYwM30.iY00G_3pCMYhlwpO6NknSYrGycjU_glepp-LuxgRPVA
