@@ -9,6 +9,12 @@ https://steamcommunity.com/id/biaoxyz/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# DOTA2 官方
+
+物品 https://www.dota2.com.cn/items/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Dota2工具类
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
@@ -89,6 +95,7 @@ Sylar https://www.gosugamers.net/dota2/players/16113-sylar
 
 Dota_2_Wiki https://dota2-zh.gamepedia.com/Dota_2_Wiki
 - 法术抵抗 https://dota2-zh.gamepedia.com/%E6%B3%95%E6%9C%AF%E6%8A%B5%E6%8A%97
+- 光环 https://dota2-zh.gamepedia.com/%E5%85%89%E7%8E%AF
 
 Dota_2_Wiki https://dota2.gamepedia.com/Dota_2_Wiki
 - Bots https://dota2.gamepedia.com/Bots
