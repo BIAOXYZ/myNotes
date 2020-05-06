@@ -105,6 +105,7 @@ Python有趣的小例子一网打尽。Python基础、Python坑点、Python字�
 继Python教程文档后，微软再次推出Python免费在线教程视频 https://www.ithome.com/0/446/441.htm
 > 这套视频名为Python for Beginners，该在线教学视频由微软高级项目经理Christopher Harrison、以及微软AI Gaming的商业开发经理Susan Ibach共同讲解，在课程中加入了他们对Python的见解，一共有44个视频。官方对该系列视频的描述是快速和简洁的，这套视频并不是对Python的深入研究，而是为Python 初学者提供的学习材料，以鼓励学习者开始具体研究领域。
 >> A new video series for beginners to learn Python programming https://cloudblogs.microsoft.com/opensource/2019/09/19/new-python-training-video-series-beginners/
+>>> Python for Beginners https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6
 
 微软再推免费在线 Python 教程，面向数据科学和机器学习初学者 https://www.ithome.com/0/485/786.htm
 - > 去年九月，微软曾面向 Python 初学者，推出了一套免费的教程视频。从基本介绍和 VS Code 的配置讲起，循序渐进语法概念等基础内容讲解。目前为止，该系列视频播放量已达到将近 180 万次。
