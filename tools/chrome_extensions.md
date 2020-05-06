@@ -234,6 +234,13 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 ## firefox官方的功能
 
+Firefox 推出 Private Relay 插件：可隐藏真实邮箱地址 https://www.ithome.com/0/485/792.htm
+- > Mozilla 正在为 Firefox 开发一项名为 Private Relay 的新服务，它能够用来一键随机生成电子邮件别名，以隐藏真实邮箱地址，使用户免受广告商和垃圾邮件侵害。
+- > Private Relay 将作为 Firefox 插件提供。它于上个月开始测试，目前仍处于封闭测试阶段，计划于今年晚些时候公开发布。
+
+Firefox Private Relay -- Keep your email safe from hackers and trackers https://relay.firefox.com/
+> Private Relay by Mozilla Firefox https://addons.mozilla.org/en-US/firefox/addon/private-relay/
+
 Firefox Monitor -- 看看您是否也处于数据外泄事件之中。 https://monitor.firefox.com/
 
 Firefox Send -- 简单、私密的文件分享服务 https://send.firefox.com/
@@ -252,7 +259,7 @@ Firefox Nightly + DoH + ESNI: 让网络连接更加安全 - Thinker的文章 - �
 
 密码管理器——在 Firefox 中记住、删除和更改已保存的密码 https://support.mozilla.org/zh-CN/kb/password-manager-remember-delete-change-passwords
 
-## firefox插件
+### firefox备份恢复
 
 备份与恢复书签 https://support.mozilla.org/zh-CN/kb/%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B9%A6%E7%AD%BE
 
