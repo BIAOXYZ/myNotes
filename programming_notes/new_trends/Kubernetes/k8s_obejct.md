@@ -35,6 +35,10 @@ Kubernetes API 总览 https://v1-18.docs.kubernetes.io/zh/docs/reference/using-a
   * **core**（也称为 **legacy**）组，它位于 REST 路径`/api/v1`上，未指定为 apiVersion 字段的一部分，例如`apiVersion: v1`。
   * 特定名称的组位于 REST 路径`/apis/$GROUP_NAME/$VERSION`下，并使用`apiVersion:$GROUP_NAME/$VERSION`（例如，`apiVersion:batch/v1`）。您可以在 Kubernetes API 参考 中找到受支持的 API Group 的完整列表。
 
+The canonical location of the Kubernetes API definition. https://github.com/kubernetes/api
+
+package v1 https://godoc.org/k8s.io/api/core/v1
+
 【[:star:][`*`]】 Kubernetes API 资源使用-应该使用哪个 Group 和 Version? https://www.qikqiak.com/post/k8s-api-resources-group-and-version/
 > 原文链接：https://akomljen.com/kubernetes-api-resources-which-group-and-version-to-use/
 ```sh
