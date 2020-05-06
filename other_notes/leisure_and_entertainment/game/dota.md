@@ -127,6 +127,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item blood[stone]   血精石
     -item heart   龙心
     -item [moon]_shard   银月之晶
+    -item [nec]ronomicon   死灵书
     -item octarine_[core]   玲珑心
     -item sphere   林肯
     -item [travel]_boots   远行鞋
@@ -134,6 +135,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     
     中立物品：
     Level 5：
+    -item [demo]nicon   冥灵书
     -item [force]_boots   原力鞋
     -item desolator_2   寂灭 --> 因为黯灭是desolator，所以这个真是一个字符都不能少。。。
     -item [seer]_stone   先哲之石
