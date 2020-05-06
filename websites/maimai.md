@@ -31,6 +31,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 # 脉脉技术类其他
 
+面试官问了一题进程如何切换？瞬间感觉自己啥都不会 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwNDIwNDYsImlhdCI6MTU4ODc2NjUzM30.OmcCwD-ilDYqnk4h-AS9PEu1OPai0zSB8eLEu0Q4yeE
+
 2038年1月19日绝对是程序员的噩梦 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4MjUxNjcsImlhdCI6MTU4NzUzMzE1NH0.hQuYZVXc0MQWmiFDc-BV0KLV2kk_-xFAkOtYubPzHbM
 - > 现在很多人用时间戳存时间，就是一个数字比如1587440858，而如果用32位的int存的话，那int最大表示2147483647，也就是2038-01-19 11:14:07这个时间，再大了溢出了
 
@@ -48,6 +50,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 - > pstack 就够了
 
 # 脉脉八卦
+
+阿里一个人能在不同事业部同时担任P8么？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwMzcwNzEsImlhdCI6MTU4ODc2NjM2Mn0._ZmUNWHGSizIsc21w1ts1NDQ02S6ncuidq7xBIO6Khs
 
 如果你女朋友欠了十万信用卡你会帮她还吗（不是乱花，被朋友坑了）她在老家工资每个月四五千的违约金都抵不上，我刚买过房还有房贷每个月也剩不下多少钱 她不敢告诉家里 怕气着她爸妈 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwMjk4OTUsImlhdCI6MTU4ODY1NTA5NH0.xb_Mex5Daelpl38yfz8v5x3B-K4fRDM4wHB0ri2rlHA
 
