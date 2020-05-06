@@ -71,6 +71,10 @@ About Google https://www.levels.fyi/salary/Google/
 - > L4 https://www.levels.fyi/salary/Google/SE/L4/
   >> 阿里程序员绩效被判3.25，不及格却被谷歌录取：此生再也不回阿里 https://www.bilibili.com/read/cv3829772/
 
+### 一亩三分地
+
+中国职位内推 https://www.1point3acres.com/bbs/forum-322-1.html
+
 ## job website part time
 
 - 国内有类似Freelancer的网站？ - 知乎 https://www.zhihu.com/question/26478092
