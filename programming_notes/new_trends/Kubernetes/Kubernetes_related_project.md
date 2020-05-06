@@ -170,6 +170,8 @@ controller-runtime - Repo for the controller-runtime subproject of kubebuilder (
 
 【虽然是knative的doc的网页，但是主要是看使用kubebuilder的过程】 Defining a custom resource definition as the source https://knative.dev/v0.14-docs/eventing/samples/writing-a-source/02-define-source/
 
+Building your own kubernetes CRDs https://itnext.io/building-your-own-kubernetes-crds-701de1c9a161
+
 ## kind
 
 kubeadm-dind-cluster: A Kubernetes multi-node test cluster based on kubeadm https://github.com/kubernetes-sigs/kubeadm-dind-cluster
