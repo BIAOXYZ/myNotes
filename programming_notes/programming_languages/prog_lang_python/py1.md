@@ -101,3 +101,16 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师 | 中文资源 https://mp.weixin.qq.com/s/sRiRpcN9LVj81asESqWZaA
 
 Python有趣的小例子一网打尽。Python基础、Python坑点、Python字符串和正则、Python绘图、Python日期和文件、Web开发、数据科学、机器学习、深度学习、TensorFlow、Pytorch，一切都是简单易懂的小例子。 -- 《我的Python之路V1.3.pdf》最新版本 https://github.com/jackzhenguo/python-small-examples
+
+继Python教程文档后，微软再次推出Python免费在线教程视频 https://www.ithome.com/0/446/441.htm
+> 这套视频名为Python for Beginners，该在线教学视频由微软高级项目经理Christopher Harrison、以及微软AI Gaming的商业开发经理Susan Ibach共同讲解，在课程中加入了他们对Python的见解，一共有44个视频。官方对该系列视频的描述是快速和简洁的，这套视频并不是对Python的深入研究，而是为Python 初学者提供的学习材料，以鼓励学习者开始具体研究领域。
+>> A new video series for beginners to learn Python programming https://cloudblogs.microsoft.com/opensource/2019/09/19/new-python-training-video-series-beginners/
+
+微软再推免费在线 Python 教程，面向数据科学和机器学习初学者 https://www.ithome.com/0/485/786.htm
+- > 去年九月，微软曾面向 Python 初学者，推出了一套免费的教程视频。从基本介绍和 VS Code 的配置讲起，循序渐进语法概念等基础内容讲解。目前为止，该系列视频播放量已达到将近 180 万次。
+- > 近日，微软在此基础上，再度更新两个针对 Python 初学者的系列教程，作为对之前教程的补充，或者说是进阶。因此，这两个新的系列面向的不完全是纯粹的 Python 新手，而是对 Python 稍有了解，并可能有其他语言的编码经验的人。
+- > 这两个新的系列分别名为 “More Python for Beginners” 和 “Even More Python for Beginners: Data Tools”。
+- > “More Python for Beginners” 包含 20 个视频，每个视频时长在 2-15 分钟不等。内容涵盖了格式化和 Linting、Lambda、处理文件、异步操作等等。该系列由微软高级项目经理 Christopher Harrison 和微软 AI 游戏部门业务开发经理 Susan Ibach 进行讲解。
+  >> More Python for Beginners https://www.youtube.com/playlist?list=PLlrxD0HtieHiXd-nEby-TMCoUNwhbLUnj
+- > “Even More Python for Beginners: Data Tools” 系列显然与数据科学相关。Harrison 和 Ibach 表示，它将帮助学生构建工具包，以使用 Python 进入数据科学和机器学习。该系列共有 31 个视频，内容涵盖了 Jupyter Notebooks 和一些流行的数据科学 Python 库的使用，例如 NumPy 和 pandas。“它们可用于帮助管理数据，你将看到如何在内存中创建表，以及如何加载、保存和操作数据，学习创建模型并绘制结果图表。”
+  >> Even More Python for Beginners: Data Tools https://www.youtube.com/playlist?list=PLlrxD0HtieHhHnCUVtR8UHS7eLl33zfJ-
