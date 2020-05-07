@@ -1,4 +1,7 @@
 
+考了容器相关的 CKA 证书，攻略附上供大家参考 https://www.v2ex.com/t/669347
+> kodekloud 免登陆练习 https://kodekloud.com/courses/certified-kubernetes-administrator-with-practice-tests/lectures/9816528
+
 centos7 防火墙失效，这是怎么回事？ https://www.v2ex.com/t/657565
 - > 这个问题在 Docker 官方文档中说的很明白，显然你是没有阅读官方文档就直接使用的 Docker 。
     <br> Docker 自动设定的 iptables 规则 [DOCKER-USER DOCKER] 比你手动设定的 iptables/firewalld 规则优先级要高，所以除非把规则添加到上述 [] 中才能生效。
