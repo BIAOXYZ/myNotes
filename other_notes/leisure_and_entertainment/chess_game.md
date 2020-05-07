@@ -33,3 +33,7 @@ lichess.org • Free Online Chess https://lichess.org/
 ## [子曰诗三百一言以蔽之曰思无邪] (https://space.bilibili.com/77656961)
 
 象棋开局宝典：顺炮布局 中炮为什么不能随便打中卒？-西瓜视频 https://www.bilibili.com/video/av13071796/
+
+## [大师棋路] (https://space.bilibili.com/389426328)
+
+顺炮布局研究：开局就敢打中卒，就让他明白什么是牛头滚的威力 https://www.bilibili.com/video/BV1pb411T7Kq/
