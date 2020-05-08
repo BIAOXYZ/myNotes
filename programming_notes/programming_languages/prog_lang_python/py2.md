@@ -192,8 +192,11 @@ print(z)        #['www.google.com', 'login/ex']
 
 ## Lambda表达式
 
-- 关于Python中的lambda，这可能是你见过的最完整的讲解 https://blog.csdn.net/zjuxsl/article/details/79437563
-- Python学习笔记（十二）：lambda表达式与函数式编程 https://blog.csdn.net/mathboylinlin/article/details/9413551
+How to Use Python Lambda Functions https://realpython.com/python-lambda/
+
+关于Python中的lambda，这可能是你见过的最完整的讲解 https://blog.csdn.net/zjuxsl/article/details/79437563
+
+Python学习笔记（十二）：lambda表达式与函数式编程 https://blog.csdn.net/mathboylinlin/article/details/9413551
 > python by mathboylinlin的专栏 https://blog.csdn.net/mathboylinlin/article/category/1505225
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
