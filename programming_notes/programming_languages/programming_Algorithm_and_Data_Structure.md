@@ -114,6 +114,8 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 - Splay tree https://en.wikipedia.org/wiki/Splay_tree || 伸展树 https://zh.wikipedia.org/wiki/%E4%BC%B8%E5%B1%95%E6%A0%91
 - 【还有这个，但是不是树】 Fibonacci heap https://en.wikipedia.org/wiki/Fibonacci_heap
 
+树 (数据结构) https://zh.wikipedia.org/zh-cn/%E6%A0%91_(%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+
 ### `###` 二叉搜索树 / Binary Search Tree (BST)
 
 二叉搜索树 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9 || Binary search tree https://en.wikipedia.org/wiki/Binary_search_tree
@@ -126,11 +128,20 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 - > 虽然二叉查找树的最坏效率是O(n)，但它支持动态查询，且有很多改进版的二叉查找树可以使树高为O(log n)，从而将最坏效率降至O(log n)，如AVL树、红黑树等。
 - > 一般的二叉查找树的查询复杂度取决于目标结点到树根的距离（即深度），因此当结点的深度普遍较大时，查询的均摊复杂度会上升。为了实现更高效的查询，产生了平衡树。在这里，平衡指所有叶子的深度趋于平衡，更广义的是指在树上所有可能查找的均摊复杂度偏低。请参见主条目[平衡树](https://zh.wikipedia.org/wiki/%E5%B9%B3%E8%A1%A1%E6%A0%91)。
 
->> notes：所以其实**平衡树**（或者更准确说“**自平衡二叉查找树**”）的引入其实就是因为普通的二叉查找树随着插入和删除，有可能造成两边高度差距太大（极端情况下甚至退化成类似线性链表），然后查找效率下降。而平衡树每次插入或删除时会自己调节树高。
+>> notes：所以其实**平衡树**（或者更准确说“**自平衡二叉查找树**”）的引入其实就是因为普通的**二叉查找树**随着插入和删除，有可能造成两边高度差距太大（极端情况下甚至退化成类似线性链表），使得查找效率下降。而平衡树每次插入或删除时会自己调节树高，不会出现查找效率下降的问题。
 
 ### `###` 平衡树
 
 平衡树 https://zh.wikipedia.org/wiki/%E5%B9%B3%E8%A1%A1%E6%A0%91 || Self-balancing binary search tree https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
+
+【[:star:][`*`]】 什么是平衡二叉树（AVL） - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/56066942
+- > 在计算机科学中，AVL树是最早被发明的自平衡二叉查找树。在AVL树中，任一节点对应的两棵子树的最大高度差为1，因此它也被称为高度平衡树。查找、插入和删除在平均和最坏情况下的时间复杂度都是O(log n)。增加和删除元素的操作则可能需要借由一次或多次树旋转，以实现树的重新平衡。AVL 树得名于它的发明者 G. M. Adelson-Velsky 和 Evgenii Landis，他们在1962年的论文《An algorithm for the organization of information》中公开了这一数据结构。
+- > 1 为什么要有平衡二叉树
+  >
+  > 二叉搜索树一定程度上可以提高搜索效率，但是当原序列有序时，例如序列 A = {1，2，3，4，5，6}，构造二叉搜索树如图 1.1。依据此序列构造的二叉搜索树为右斜树，同时二叉树退化成单链表，搜索效率降低为 O(n)。
+- > 3. 平衡因子
+  > 
+  > 定义：某节点的左子树与右子树的高度(深度)差即为该节点的平衡因子（BF,Balance Factor），平衡二叉树中不存在平衡因子大于 1 的节点。在一棵平衡二叉树中，节点的平衡因子只能取 0 、1 或者 -1 ，分别对应着左右子树等高，左子树比较高，右子树比较高。
 
 ### `###` Merge–Find Set / Disjoint-set data structure / union–find data structure
 
