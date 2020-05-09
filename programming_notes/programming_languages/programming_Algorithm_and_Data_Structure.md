@@ -73,6 +73,8 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 
 Golang LRU cache https://github.com/hashicorp/golang-lru
 
+七分钟理解什么是 KMP 算法 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/76348091
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Data Structure
@@ -176,6 +178,8 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 ### `###` Red–black tree
 
 红黑树 https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91 || Red–black tree https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
+
+我画了 20 张图，给女朋友讲清楚红黑树 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/95892351
 
 ### `###` [Trie (Tree)](https://en.wikipedia.org/wiki/Trie) = Prefix Tree (前缀树)
 
