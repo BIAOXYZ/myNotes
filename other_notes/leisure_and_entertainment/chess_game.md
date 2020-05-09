@@ -18,6 +18,14 @@ lichess.org • Free Online Chess https://lichess.org/
 
 橘中秘 http://www.xiangqiqipu.com/Category/List-129-1.html
 
+象棋谱大全 http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/
+- 象棋谱大全-现代棋书专集
+- [象棋谱大全-近现代残排局](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E8%BF%91%E7%8E%B0%E4%BB%A3%E6%AE%8B%E6%8E%92%E5%B1%80/)
+  * > [少子百局谱](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E8%BF%91%E7%8E%B0%E4%BB%A3%E6%AE%8B%E6%8E%92%E5%B1%80/%E5%B0%91%E5%AD%90%E7%99%BE%E5%B1%80%E8%B0%B1/)
+- [象棋谱大全-古谱全局](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E5%8F%A4%E8%B0%B1%E5%85%A8%E5%B1%80/)
+  * [自出洞来无敌手](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E5%8F%A4%E8%B0%B1%E5%85%A8%E5%B1%80/%E8%87%AA%E5%87%BA%E6%B4%9E%E6%9D%A5%E6%97%A0%E6%95%8C%E6%89%8B/)
+- [象棋谱大全-古谱残局](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E5%8F%A4%E8%B0%B1%E6%AE%8B%E5%B1%80/)
+
 # `#` from wikipedia
 
 中国象棋开局编号 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B%E5%BC%80%E5%B1%80%E7%BC%96%E5%8F%B7
@@ -46,6 +54,11 @@ lichess.org • Free Online Chess https://lichess.org/
 顺炮布局研究：开局就敢打中卒，就让他明白什么是牛头滚的威力 https://www.bilibili.com/video/BV1pb411T7Kq/
 
 ## [象棋爱好者R] (https://space.bilibili.com/288609114)
+
+象棋布局教程：屏风马破解五七炮，“窝心马”的套路棋 https://www.bilibili.com/video/BV19s411c7db/
+- 回复内容：
+  * > 大家快看看少子百局谱里面的62炮响连珠，真的是太骚了。中国象棋170安卓版∑(ﾟДﾟ)
+    + > 炮响连珠 http://www.dpxq.com/hldcg/search/view_u_38328.html
 
 反宫马布局基础：概述、特点、学习价值 https://www.bilibili.com/read/cv2563104/
 
