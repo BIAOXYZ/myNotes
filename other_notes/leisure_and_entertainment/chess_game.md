@@ -7,6 +7,8 @@ lichess.org • Free Online Chess https://lichess.org/
 
 象棋巫师 http://www.xqbase.com/
 
+东萍象棋网 http://www.dpxq.com/
+
 永乐象棋棋谱网 http://www.xiangqiqipu.com/
 
 棋谱收藏站 http://game.onegreen.net/chess/index.html
@@ -16,15 +18,17 @@ lichess.org • Free Online Chess https://lichess.org/
 
 # `#` 棋谱
 
-橘中秘 http://www.xiangqiqipu.com/Category/List-129-1.html
+永乐象棋棋谱网 -- 橘中秘 http://www.xiangqiqipu.com/Category/List-129-1.html
 
-象棋谱大全 http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/
+东萍象棋网 -- 象棋谱大全 http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/
 - 象棋谱大全-现代棋书专集
 - [象棋谱大全-近现代残排局](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E8%BF%91%E7%8E%B0%E4%BB%A3%E6%AE%8B%E6%8E%92%E5%B1%80/)
-  * > [少子百局谱](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E8%BF%91%E7%8E%B0%E4%BB%A3%E6%AE%8B%E6%8E%92%E5%B1%80/%E5%B0%91%E5%AD%90%E7%99%BE%E5%B1%80%E8%B0%B1/)
+  * [少子百局谱](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E8%BF%91%E7%8E%B0%E4%BB%A3%E6%AE%8B%E6%8E%92%E5%B1%80/%E5%B0%91%E5%AD%90%E7%99%BE%E5%B1%80%E8%B0%B1/)
 - [象棋谱大全-古谱全局](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E5%8F%A4%E8%B0%B1%E5%85%A8%E5%B1%80/)
   * [自出洞来无敌手](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E5%8F%A4%E8%B0%B1%E5%85%A8%E5%B1%80/%E8%87%AA%E5%87%BA%E6%B4%9E%E6%9D%A5%E6%97%A0%E6%95%8C%E6%89%8B/)
 - [象棋谱大全-古谱残局](http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8-%E5%8F%A4%E8%B0%B1%E6%AE%8B%E5%B1%80/)
+
+象棋道 -- 象棋棋谱 http://www.xqdao.com/zhuanti/
 
 # `#` from wikipedia
 
