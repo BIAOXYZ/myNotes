@@ -114,6 +114,24 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 - Splay tree https://en.wikipedia.org/wiki/Splay_tree || 伸展树 https://zh.wikipedia.org/wiki/%E4%BC%B8%E5%B1%95%E6%A0%91
 - 【还有这个，但是不是树】 Fibonacci heap https://en.wikipedia.org/wiki/Fibonacci_heap
 
+### `###` 二叉搜索树 / Binary Search Tree (BST)
+
+二叉搜索树 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9 || Binary search tree https://en.wikipedia.org/wiki/Binary_search_tree
+- > 二叉查找树（英語：Binary Search Tree），也称为二叉搜索树、有序二叉树（ordered binary tree）或排序二元樹（sorted binary tree），是指一棵空树或者具有下列性质的二叉树：
+  ```console
+  若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节点的值；
+  若任意节点的右子树不空，则右子树上所有节点的值均大于或等于它的根节点的值；
+  任意节点的左、右子树也分别为二叉查找树；
+  ```
+- > 虽然二叉查找树的最坏效率是O(n)，但它支持动态查询，且有很多改进版的二叉查找树可以使树高为O(log n)，从而将最坏效率降至O(log n)，如AVL树、红黑树等。
+- > 一般的二叉查找树的查询复杂度取决于目标结点到树根的距离（即深度），因此当结点的深度普遍较大时，查询的均摊复杂度会上升。为了实现更高效的查询，产生了平衡树。在这里，平衡指所有叶子的深度趋于平衡，更广义的是指在树上所有可能查找的均摊复杂度偏低。请参见主条目[平衡树](https://zh.wikipedia.org/wiki/%E5%B9%B3%E8%A1%A1%E6%A0%91)。
+
+>> notes：所以其实**平衡树**（或者更准确说“**自平衡二叉查找树**”）的引入其实就是因为普通的二叉查找树随着插入和删除，有可能造成两边高度差距太大（极端情况下甚至退化成类似线性链表），然后查找效率下降。而平衡树每次插入或删除时会自己调节树高。
+
+### `###` 平衡树
+
+平衡树 https://zh.wikipedia.org/wiki/%E5%B9%B3%E8%A1%A1%E6%A0%91 || Self-balancing binary search tree https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
+
 ### `###` Merge–Find Set / Disjoint-set data structure / union–find data structure
 
 并查集 https://zh.wikipedia.org/wiki/%E5%B9%B6%E6%9F%A5%E9%9B%86 || Disjoint-set data structure https://en.wikipedia.org/wiki/Disjoint-set_data_structure
