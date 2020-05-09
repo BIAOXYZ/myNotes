@@ -116,6 +116,17 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 
 树 (数据结构) https://zh.wikipedia.org/zh-cn/%E6%A0%91_(%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 
+### `###` 二叉树 / Binary tree
+
+二叉树 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91 || Binary tree https://en.wikipedia.org/wiki/Binary_tree
+
+#### 关于`完全二叉树`和`满二叉树`（以及`完美二叉树`）的定义区别和混淆
+
+>> notes：中文圈就是上面三种说法；英文圈是 full binary tree、complete binary tree、perfect binary tree（全都没有维基百科的单独词条）。
+>>> notes2：其实树这个概念下的各种类型的树造成的混淆本来就非常多，能准确知道意思就行，不用太纠结统一的名称。
+
+为什么说“满二叉树也是完全二叉树”？ - 知乎 https://www.zhihu.com/question/19809666
+
 ### `###` 二叉搜索树 / Binary Search Tree (BST)
 
 二叉搜索树 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9 || Binary search tree https://en.wikipedia.org/wiki/Binary_search_tree
