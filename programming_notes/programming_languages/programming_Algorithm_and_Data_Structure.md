@@ -118,6 +118,8 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 
 树 (数据结构) https://zh.wikipedia.org/zh-cn/%E6%A0%91_(%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 
+平衡二叉树、B树、B+树、B`*`树 理解其中一种你就都明白了 - 勤劳的小手的文章 - 知乎 https://zhuanlan.zhihu.com/p/27700617
+
 ### `###` 二叉树 / Binary tree
 
 二叉树 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91 || Binary tree https://en.wikipedia.org/wiki/Binary_tree
