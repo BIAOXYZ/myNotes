@@ -15,7 +15,11 @@ Components Of Popular On-Prem Kubernetes https://www.dennyzhang.com/kubernetes-c
 
 https://cheatsheet.dennyzhang.com/
 
+## 著名系统文章cheatsheet（在paperRelatedRepository也会记录）
+
+CheatSheet: Well-Known Papers For IT Industry https://github.com/dennyzhang/cheatsheet-paper-A4
+> CHEATSHEET: WELL-KNOWN PAPERS FOR IT INDUSTRY https://cheatsheet.dennyzhang.com/cheatsheet-paper-A4
+
 ## cheatsheet系列文章
 
 OPENSHIFT CHEATSHEET https://cheatsheet.dennyzhang.com/cheatsheet-openshift-A4
-
