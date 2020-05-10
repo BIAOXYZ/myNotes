@@ -1,4 +1,14 @@
 
+mysql 查询会加锁开启事务吗？ https://www.v2ex.com/t/670314
+- > 
+  ```
+  mysql 读分为两种，锁读和一致性读
+  锁读（共享读（ select in share mode ）和排它读（ select for update ））会加锁
+  一致性读（普通的那种读）不加锁
+
+  开启还是不开启事务，这和应用端事务设置以及数据库事务设置都有关系
+  ```
+
 数据库 MySQL 可以暴力迁移吗？ https://www.v2ex.com/t/667363
 
 问一个 postgresql 传参问题 https://www.v2ex.com/t/664998
