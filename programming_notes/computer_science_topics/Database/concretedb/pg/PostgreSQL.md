@@ -219,19 +219,15 @@ Patroni: A Template for PostgreSQL HA with ZooKeeper, etcd or Consul https://git
 
 ### PG扩展
 
-- postgresql模块——pg_stat_statements详解和安装测试
-https://blog.csdn.net/lengzijian/article/details/8133471
-- PostgreSQL每日一贴-pg_stat_statements工具安装使用
-https://blog.csdn.net/enzesheng/article/details/42807367
+- postgresql模块——pg_stat_statements详解和安装测试 https://blog.csdn.net/lengzijian/article/details/8133471
+- PostgreSQL每日一贴-pg_stat_statements工具安装使用 https://blog.csdn.net/enzesheng/article/details/42807367
 ```
 实际上现在已经不需要手动做这些拷贝操作了
 拷贝 .so 文件到数据库服务器的 XXX/lib 目录
 拷贝 .control 和 .sql 文件到数据库服务器的 XXX/share/extension目录
 ```
-- PostgreSQL之使用扩展Extension
-https://blog.csdn.net/pg_hgdb/article/details/79490509
-- 为PostgreSQL添加插件
-https://my.oschina.net/Suregogo/blog/550201
+- PostgreSQL之使用扩展Extension https://blog.csdn.net/pg_hgdb/article/details/79490509
+- 为PostgreSQL添加插件 https://my.oschina.net/Suregogo/blog/550201
 
 #### Citus
 
@@ -347,6 +343,8 @@ http://blog.csdn.net/davidzwb/article/details/53172453
 #### 其他扩展/类扩展
 
 bg_mon: Background worker for monitoring PostgreSQL https://github.com/CyberDem0n/bg_mon
+
+aqo: Adaptive query optimization for PostgreSQL https://github.com/postgrespro/aqo
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
