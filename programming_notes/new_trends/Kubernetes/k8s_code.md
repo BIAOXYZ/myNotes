@@ -138,6 +138,14 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## `##` apiextensions-apiserver
+
+### [[[package clientset]]] (((https://godoc.org/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset)))
+
+`type Clientset struct {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04c227253425b766ea8cdf1c15cc9dae/pkg/client/clientset/clientset/clientset.go#L39
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Kubernetes源码分析系列文章
