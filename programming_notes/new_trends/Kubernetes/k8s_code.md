@@ -115,6 +115,11 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
   }
   ```
 
+### [[package config]] ((https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client/config))
+
+#### pkg/client/config/config.go
+- `func GetConfig() (*rest.Config, error) {` https://github.com/kubernetes-sigs/controller-runtime/blob/39ddbc7bb0c23cde453d59fdc6d20f977df318e8/pkg/client/config/config.go#L64
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## `##` client-go
