@@ -5,26 +5,37 @@
 
 ## `##` controller-runtime
 
-### package manager
+### [package manager] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/manager)
 
 https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb/pkg/manager/manager.go
 
 `func (cm *controllerManager) GetClient() client.Client {` https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
 
-### package cache
+### [package cache] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache)
 
 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/cache/cache.go
 
-package cache https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache
+### [package client] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client)
 
-### package client
-
-#### client/client.go
+#### pkg/client/client.go
 
 - `func New(config *rest.Config, options Options) (Client, error) {` 【`client.New(config, options)`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client.go#L52
 - `type Options struct {` 【`client.Options`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client.go#L34
+- `type client struct {` 【`client.Client`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client.go#L97
+  ```go
+  // client is a client.Client that reads and writes directly from/to an API server.  It lazily initializes
+  // new clients at the time they are used, and caches the client.
+  type client struct {
+	  typedClient        typedClient
+	  unstructuredClient unstructuredClient
+  }
+  ```
 
-#### client/client_cache.go
+#### pkg/client/typed_client.go
+
+`type typedClient struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/client/typed_client.go#L27
+
+#### pkg/client/client_cache.go
 
 `type clientCache struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client_cache.go#L33:6
 
