@@ -32,6 +32,14 @@ it-ebooks https://github.com/it-ebooks || 📚 计算机开放电子书归档 ht
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# books online
+
+Essential Programming Books https://www.programming-books.io/
+- https://www.programming-books.io/essential/go/
+- https://www.programming-books.io/essential/postgresql/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # books general
 
 - `BOOKSTORE1` https://github.com/BIAOXYZ/BOOKSTORE1
