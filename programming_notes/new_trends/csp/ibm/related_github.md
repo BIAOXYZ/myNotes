@@ -16,6 +16,7 @@ Multicloud application management with a deployable CRD. https://github.com/open
 
 CRD and controller for Subscription (Channel Subscription model) for Multicloud Application. https://github.com/open-cluster-management/multicloud-operators-subscription
 - `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/kubernetes.go#L35
+- `err = CheckAndInstallCRD(cfg, "../../deploy/crds/apps.open-cluster-management.io_subscriptions_crd.yaml")` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/util_test.go#L53
 
 ## Hybrid Application Model https://github.com/hybridapp-io
 
