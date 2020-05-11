@@ -7,8 +7,15 @@ IBM Cloud Paks are enterprise-grade containerized software by combining containe
 
 ## Open Cluster Management https://github.com/open-cluster-management
 
+### multicloud-operators-deployable
+
 Multicloud application management with a deployable CRD. https://github.com/open-cluster-management/multicloud-operators-deployable
-- `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/158722845851d83d8b6fa0937e9a5a4ac617cc3a/pkg/utils/kubernetes.go#L56
+- `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/1e78c3fec1/pkg/utils/kubernetes.go#L56
+
+### multicloud-operators-subscription
+
+CRD and controller for Subscription (Channel Subscription model) for Multicloud Application. https://github.com/open-cluster-management/multicloud-operators-subscription
+- `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/kubernetes.go#L35
 
 ## Hybrid Application Model https://github.com/hybridapp-io
 
