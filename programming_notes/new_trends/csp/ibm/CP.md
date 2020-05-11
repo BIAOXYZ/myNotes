@@ -11,6 +11,11 @@ IBM Cloud Paks are enterprise-grade containerized software by combining containe
 
 Hybrid Application Model https://github.com/hybridapp-io
 
+### Open Cluster Management https://github.com/open-cluster-management
+
+Multicloud application management with a deployable CRD. https://github.com/open-cluster-management/multicloud-operators-deployable
+- `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/158722845851d83d8b6fa0937e9a5a4ac617cc3a/pkg/utils/kubernetes.go#L56
+
 ## 公司github
 
 Operator to handle the compatibility of api groups between cp4mcm and RHACM https://github.ibm.com/IBMPrivateCloud/applicationcompatibility-operator
