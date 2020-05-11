@@ -13,8 +13,21 @@
 
 #### pkg/manager/manager.go
 
-`type Manager interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L46
-- `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114
+- `type Manager interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L46
+- `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114 【这个Options结构体比client-go里的Options结构体严格多出很多成员，因为太长就不贴完整代码了】
+  ```go
+  // Options are the arguments for creating a new Manager
+  type Options struct {
+  	// Scheme is the scheme used to resolve runtime.Objects to GroupVersionKinds / Resources
+  	// Defaults to the kubernetes/client-go scheme.Scheme, but it's almost always better
+  	// idea to pass your own scheme in.  See the documentation in pkg/scheme for more information.
+  	Scheme *runtime.Scheme
+  
+  	// MapperProvider provides the rest mapper used to map go types to Kubernetes APIs
+  	MapperProvider func(c *rest.Config) (meta.RESTMapper, error)
+  	
+	////剩下的成员不贴了。。。
+  ```
 
 ### [package cache] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache)
 
@@ -26,6 +39,16 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 - `func New(config *rest.Config, options Options) (Client, error) {` 【`client.New(config, options)`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client.go#L52
 - `type Options struct {` 【`client.Options`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client.go#L34
+  ```go
+  // Options are creation options for a Client
+  type Options struct {
+  	// Scheme, if provided, will be used to map go structs to GroupVersionKinds
+  	Scheme *runtime.Scheme
+  
+  	// Mapper, if provided, will be used to map GroupVersionKinds to Resources
+  	Mapper meta.RESTMapper
+  }
+  ```
 - `type client struct {` 【`client.Client`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client.go#L97
   ```go
   // client is a client.Client that reads and writes directly from/to an API server.  It lazily initializes
