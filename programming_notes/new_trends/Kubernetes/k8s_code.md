@@ -142,6 +142,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### [[[package clientset]]] (((https://godoc.org/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset)))
 
+#### pkg/client/clientset/clientset/clientset.go
 - `type Clientset struct {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04c227253425b766ea8cdf1c15cc9dae/pkg/client/clientset/clientset/clientset.go#L39
   ```go
   // Clientset contains the clients for groups. Each group has exactly one
@@ -153,6 +154,11 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
   }
   ```
 - `func NewForConfig(c *rest.Config) (*Clientset, error) {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04c227253425b766ea8cdf1c15cc9dae/pkg/client/clientset/clientset/clientset.go#L66
+
+### [[[[[[package v1beta1]]]]]] ((((((https://godoc.org/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1))))))
+
+#### pkg/client/clientset/clientset/typed/apiextensions/v1beta1/customresourcedefinition.go
+- `func (c *customResourceDefinitions) Get(name string, options v1.GetOptions) (result *v1beta1.CustomResourceDefinition, err error) {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04/pkg/client/clientset/clientset/typed/apiextensions/v1beta1/customresourcedefinition.go#L65
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
