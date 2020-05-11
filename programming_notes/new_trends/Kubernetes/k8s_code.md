@@ -9,7 +9,12 @@
 
 #### pkg/manager/internal.go
 
-`func (cm *controllerManager) GetClient() client.Client {` https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
+- `func (cm *controllerManager) GetClient() client.Client {` https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+- `type controllerManager struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331/pkg/manager/internal.go#L58
+- `func (cm *controllerManager) Add(r Runnable) error {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331/pkg/manager/internal.go#L212
 
 #### pkg/manager/manager.go
 
@@ -35,7 +40,7 @@
   	SetFields(interface{}) error
   
   //// 还有很多，省略。。。这里只想说明的是： pkg/manager/internal.go 里的 controllerManager 结构体
-  //// 实现了一个具体的Manager接口。
+  //// 实现了一个具体的Manager接口。比如： `Add(r Runnable) error` 方法。
   ```
 - `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114 【这个Options结构体比client-go里的Options结构体严格多出很多成员，因为太长就不贴完整代码了】
   ```go
@@ -49,7 +54,7 @@
   	// MapperProvider provides the rest mapper used to map go types to Kubernetes APIs
   	MapperProvider func(c *rest.Config) (meta.RESTMapper, error)
   	
-	////剩下的成员不贴了。。。
+  ////剩下的成员不贴了。。。
   ```
 - `func New(config *rest.Config, options Options) (Manager, error) {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L246
 
