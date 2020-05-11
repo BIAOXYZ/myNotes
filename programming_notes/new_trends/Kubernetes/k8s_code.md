@@ -14,6 +14,29 @@
 #### pkg/manager/manager.go
 
 - `type Manager interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L46
+  ```go
+  // Manager initializes shared dependencies such as Caches and Clients, and provides them to Runnables.
+  // A Manager is required to create Controllers.
+  type Manager interface {
+  	// Add will set requested dependencies on the component, and cause the component to be
+  	// started when Start is called.  Add will inject any dependencies for which the argument
+  	// implements the inject interface - e.g. inject.Client.
+  	// Depending on if a Runnable implements LeaderElectionRunnable interface, a Runnable can be run in either
+  	// non-leaderelection mode (always running) or leader election mode (managed by leader election if enabled).
+  	Add(Runnable) error
+  
+  	// Elected is closed when this manager is elected leader of a group of
+  	// managers, either because it won a leader election or because no leader
+  	// election was configured.
+  	Elected() <-chan struct{}
+  
+  	// SetFields will set any dependencies on an object for which the object has implemented the inject
+  	// interface - e.g. inject.Client.
+  	SetFields(interface{}) error
+  
+  //// 还有很多，省略。。。这里只想说明的是： pkg/manager/internal.go 里的 controllerManager 结构体
+  //// 实现了一个具体的Manager接口。
+  ```
 - `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114 【这个Options结构体比client-go里的Options结构体严格多出很多成员，因为太长就不贴完整代码了】
   ```go
   // Options are the arguments for creating a new Manager
@@ -28,6 +51,7 @@
   	
 	////剩下的成员不贴了。。。
   ```
+- `func New(config *rest.Config, options Options) (Manager, error) {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L246
 
 ### [package cache] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache)
 
