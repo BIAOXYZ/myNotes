@@ -7,9 +7,14 @@
 
 ### [package manager] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/manager)
 
-https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb/pkg/manager/manager.go
+#### pkg/manager/internal.go
 
 `func (cm *controllerManager) GetClient() client.Client {` https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
+
+#### pkg/manager/manager.go
+
+`type Manager interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L46
+- `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114
 
 ### [package cache] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache)
 
@@ -53,7 +58,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### package runtime
 
-`type Scheme struct {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
+`type Scheme struct {` 【`runtime.Scheme`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
