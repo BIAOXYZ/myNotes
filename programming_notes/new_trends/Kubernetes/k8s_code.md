@@ -3,9 +3,9 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Controller-Runtime repo
+## `##` controller-runtime
 
-### manager
+### package manager
 
 https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb/pkg/manager/manager.go
 
@@ -13,11 +13,19 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Client-Go repo
+## `##` client-go
 
-### rest.Config
+### package rest
 
-https://github.com/kubernetes/client-go/blob/release-1.18/rest/config.go#L52
+`type Config struct` 【`rest.Config`】 https://github.com/kubernetes/client-go/blob/release-1.18/rest/config.go#L52
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `##` apimachinery
+
+### package runtime
+
+`type Scheme struct` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
