@@ -135,9 +135,11 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     普通物品：
     -item blood[stone]   血精石
     -item heart   龙心
-    -item [moon]_shard   银月之晶
+    -item [moo]n_shard   银月之晶
     -item [nec]ronomicon   死灵书
     -item octarine_[core]   玲珑心
+    -item [rad]iance   辉耀
+    -item rapier圣剑
     -item sphere   林肯
     -item [travel]_boots   远行鞋
     -item ultimate_[scepter]   阿哈利姆神杖（A杖） // 同理推得 --> ultimate_[scepter2] 阿哈利姆福佑
