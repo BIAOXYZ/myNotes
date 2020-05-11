@@ -164,6 +164,16 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# `#` operator-sdk
+
+## [package k8sutil] (https://godoc.org/github.com/operator-framework/operator-sdk/pkg/k8sutil)
+
+### pkg/k8sutil/k8sutil.go 
+
+`func GetGVKsFromAddToScheme(addToSchemeFunc func(*runtime.Scheme) error) ([]schema.GroupVersionKind, error) {` https://github.com/operator-framework/operator-sdk/blob/4622d6bb7eb6e1f09256a28b19ebd6b9ac1c91ea/pkg/k8sutil/k8sutil.go#L145
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Kubernetes源码分析系列文章
 
 随笔分类 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/category/1231156.html
@@ -189,6 +199,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 【by shida_csdn】K8S 源码探秘 https://blog.csdn.net/shida_csdn/column/info/28699
 - K8S 源码探秘 之 命令行解析工具 cobra https://blog.csdn.net/shida_csdn/article/details/82979697
 - 基于 sample-controller 实现自定义 CRD 控制器（Operator）的一般步骤 https://blog.csdn.net/shida_csdn/article/details/87102801
+- K8s 的 UUID 是如何生成的? https://blog.csdn.net/shida_csdn/article/details/104892977
 
 【by cloudvtech】：
 - kubernetes系列之十四：Kubernetes CRD(CustomResourceDefinition)概览 https://blog.csdn.net/cloudvtech/article/details/80277960
