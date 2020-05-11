@@ -9,11 +9,13 @@
 
 https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb/pkg/manager/manager.go
 
-https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
+`func (cm *controllerManager) GetClient() client.Client {` https://github.com/kubernetes-sigs/controller-runtime/blob/fe0e7596fb90a87d024e1d80266b087adbbd36b8/pkg/manager/internal.go#L329
 
 ### package cache
 
 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/cache/cache.go
+
+package cache https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -21,7 +23,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### package rest
 
-`type Config struct` 【`rest.Config`】 https://github.com/kubernetes/client-go/blob/release-1.18/rest/config.go#L52
+`type Config struct {` 【`rest.Config`】 https://github.com/kubernetes/client-go/blob/release-1.18/rest/config.go#L52
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -29,7 +31,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### package runtime
 
-`type Scheme struct` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
+`type Scheme struct {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
