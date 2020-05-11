@@ -42,7 +42,7 @@
   //// 还有很多，省略。。。这里只想说明的是： pkg/manager/internal.go 里的 controllerManager 结构体
   //// 实现了一个具体的Manager接口。比如： `Add(r Runnable) error` 方法。
   ```
-- `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114 【这个Options结构体比client-go里的Options结构体严格多出很多成员，因为太长就不贴完整代码了】
+- `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331e72fed344f71d278982827e08db2a8/pkg/manager/manager.go#L114 【这个Options结构体比`pkg/client/client.go`里的Options结构体严格多出很多成员，因为太长就不贴完整代码了】
   ```go
   // Options are the arguments for creating a new Manager
   type Options struct {
@@ -142,7 +142,17 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### [[[package clientset]]] (((https://godoc.org/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset)))
 
-`type Clientset struct {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04c227253425b766ea8cdf1c15cc9dae/pkg/client/clientset/clientset/clientset.go#L39
+- `type Clientset struct {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04c227253425b766ea8cdf1c15cc9dae/pkg/client/clientset/clientset/clientset.go#L39
+  ```go
+  // Clientset contains the clients for groups. Each group has exactly one
+  // version included in a Clientset.
+  type Clientset struct {
+  	*discovery.DiscoveryClient
+  	apiextensionsV1beta1 *apiextensionsv1beta1.ApiextensionsV1beta1Client
+  	apiextensionsV1      *apiextensionsv1.ApiextensionsV1Client
+  }
+  ```
+- `func NewForConfig(c *rest.Config) (*Clientset, error) {` https://github.com/kubernetes/apiextensions-apiserver/blob/b67f03be04c227253425b766ea8cdf1c15cc9dae/pkg/client/clientset/clientset/clientset.go#L66
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
