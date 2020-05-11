@@ -7,6 +7,8 @@
 
 https://steamcommunity.com/id/biaoxyz/
 
+📥 Game Tracker: Dota 2 https://github.com/SteamDatabase/GameTracking-Dota2 || https://steamdb.info/app/570/history/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # DOTA2 官方
