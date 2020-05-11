@@ -58,6 +58,13 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 	  unstructuredClient unstructuredClient
   }
   ```
+- `func (c *client) Status() StatusWriter {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/client/client.go#L178
+  ```go
+  // Status implements client.StatusClient
+  func (c *client) Status() StatusWriter {
+  	return &statusWriter{client: c}
+  }
+  ```
 
 #### pkg/client/typed_client.go
 
@@ -66,6 +73,18 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 #### pkg/client/client_cache.go
 
 `type clientCache struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/client/client_cache.go#L33:6
+
+#### pkg/client/interfaces.go
+
+- `type Client interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/client/interfaces.go#L104
+  ```go
+  // Client knows how to perform CRUD operations on Kubernetes objects.
+  type Client interface {
+  	Reader
+  	Writer
+  	StatusClient
+  }
+  ```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
