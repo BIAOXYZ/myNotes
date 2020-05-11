@@ -85,6 +85,12 @@ https://blog.csdn.net/hellolingyun/article/details/52433167
 Go的异常处理 defer, panic, recover
 http://www.cnblogs.com/ghj1976/archive/2013/02/11/2910114.html
 
+## go error
+
+Go 1.13中的错误处理 https://tonybai.com/2019/10/18/errors-handling-in-go-1-13/
+
+[译] Part 31: golang 中的自定义 error https://juejin.im/post/5ca1ad13e51d4555c5453899
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go slice
