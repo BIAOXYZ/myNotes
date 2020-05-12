@@ -3,7 +3,7 @@
 
 golangspec: To understand Go’s specification https://medium.com/golangspec
 
-# 内容
+# golangspec系列文章
 
 ## Making debugger for Golang
 
