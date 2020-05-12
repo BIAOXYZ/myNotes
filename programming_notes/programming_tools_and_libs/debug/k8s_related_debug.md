@@ -15,9 +15,11 @@ Debug Kubernetes Operator-sdk locally using Vscode https://dev.to/austincunningh
 
 ## 大概过程
 
-0. linux服务器上go配置好，dlv什么的都搞定。
-1. 首先项目clone到远端linux机器上，然后pdf攻略里是在mac上搞了个samba，把linux上项目代码让mac可以访问。——我这边是直接win10上vscode remote方式打开linux上的代码目录，更方便些。
-2. 在`代码仓库根目录`下配置调试用的`launch.json`。建立`launch.json`的过程如下：
+### 0. linux服务器上go配置好，dlv什么的都搞定。
+
+### 1. 首先项目clone到远端linux机器上，然后pdf攻略里是在mac上搞了个samba，把linux上项目代码让mac可以访问。——我这边是直接win10上vscode remote方式打开linux上的代码目录，更方便些。
+
+### 2. 在`代码仓库根目录`下配置调试用的`launch.json`。建立`launch.json`的过程如下：
 ```
 i.   Open the remote samba project in your VSC
 ii.  Command + Shift + P and type Go: Install/Update Tools , select dlv and press OK
@@ -100,4 +102,26 @@ iv.  Replace the content of launch.json with the following using your actual val
 }
 
 [root@lolls-inf ~]#
+```
+
+### 3. linux服务器上启动dlv
+//（注意，不是在仓库根目录了，是在仓库根目录下的cmd目录下的manager目录，也就是有`main.go`的目录）
+
+```sh
+[root@lolls-inf manager]# pwd
+/root/cp4mcmrelated/gitrepo/applicationcompatibility-operator/cmd/manager
+[root@lolls-inf manager]# ls
+main.go
+[root@lolls-inf manager]# dlv debug --headless --listen=:2345 --log --api-version=2
+API server listening at: [::]:2345
+2020-05-11T20:56:54-07:00 info layer=debugger launching process with args: [/root/cp4mcmrelated/gitrepo/applicationcompatibility-operator/cmd/manager/__debug_bin]
+
+```
+
+### 4. vscode里 Run -- Start Debugging
+
+```
+In VSC go to Debug button on the left , select the newly created launch configuration and click
+on Start debugging. Your MAC debugger will then connect to your headless debugger running
+on your remote
 ```
