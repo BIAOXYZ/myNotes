@@ -13,9 +13,7 @@ Collection of helpful tips and tricks for VS Code. https://github.com/Microsoft/
 
 Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio - cnBeta.COM https://www.cnbeta.com/articles/soft/756969.htm
 
-# vscode快捷键
-
-# vscode已验证技巧
+# vscode快捷键/已验证技巧
 
 ## 预览markdown
 
@@ -110,6 +108,8 @@ VSCode使用Remote插件编辑远程服务器文件 https://www.bilibili.com/vid
 9102 年的 Windows + Linux 混合开发环境方案 - 王磊的文章 - 知乎 https://zhuanlan.zhihu.com/p/68309055
 > 这个里面给了一些可能的问题的解决方案，不过我目前还没有碰到。
 
+# vscode未验证技巧
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for C/C++
@@ -138,6 +138,8 @@ VS code golang 开发环境搭建 - CSDN博客 https://blog.csdn.net/hil2000/art
 vscode 的 go 插件怎么正确安装？ https://www.v2ex.com/t/615962
 - > export GOPROXY=https://goproxy.cn
 - > idea 社区版 可以装 go 的插件，使用体验和 goland 是一样的
+
+解决vs code 调试golang时字符串显示不全的问题。 https://blog.csdn.net/bilinxing_/article/details/90737819
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
