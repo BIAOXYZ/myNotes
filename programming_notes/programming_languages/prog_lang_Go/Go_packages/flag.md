@@ -3,7 +3,16 @@
 
 Package flag https://golang.org/pkg/flag/
 
+## 官方github
+
+### src/flag/flag.go
+
+- `func Args() []string { return CommandLine.args }` https://github.com/golang/go/blob/release-branch.go1.14/src/flag/flag.go#L619
+- `var CommandLine = NewFlagSet(os.Args[0], ExitOnError)` https://github.com/golang/go/blob/release-branch.go1.14/src/flag/flag.go#L1010
+
 # 其他
+
+Go by Example 中文版: 命令行标志 https://gobyexample-cn.github.io/command-line-flags || Go by Example: Command-Line Flags https://gobyexample.com/command-line-flags
 
 Golang : flag 包简介 https://www.cnblogs.com/sparkdev/p/10812422.html
 
