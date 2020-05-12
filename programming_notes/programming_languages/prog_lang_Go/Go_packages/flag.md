@@ -7,8 +7,32 @@ Package flag https://golang.org/pkg/flag/
 
 ### src/flag/flag.go
 
+- `type FlagSet struct {` https://github.com/golang/go/blob/release-branch.go1.14/src/flag/flag.go#L320
+  ```go
+  // A FlagSet represents a set of defined flags. The zero value of a FlagSet
+  // has no name and has ContinueOnError error handling.
+  //
+  // Flag names must be unique within a FlagSet. An attempt to define a flag whose
+  // name is already in use will cause a panic.
+  type FlagSet struct {
+  	// Usage is the function called when an error occurs while parsing flags.
+  	// The field is a function (not a method) that may be changed to point to
+  	// a custom error handler. What happens after Usage is called depends
+  	// on the ErrorHandling setting; for the command line, this defaults
+  	// to ExitOnError, which exits the program after calling Usage.
+  	Usage func()
+  
+  	name          string
+  	parsed        bool
+  	actual        map[string]*Flag
+  	formal        map[string]*Flag
+  	args          []string // arguments after flags
+  	errorHandling ErrorHandling
+  	output        io.Writer // nil means stderr; use out() accessor
+  }
+  ```
 - `func Args() []string { return CommandLine.args }` https://github.com/golang/go/blob/release-branch.go1.14/src/flag/flag.go#L619
-- `var CommandLine = NewFlagSet(os.Args[0], ExitOnError)` https://github.com/golang/go/blob/release-branch.go1.14/src/flag/flag.go#L1010
+- `var CommandLine = NewFlagSet(os.Args[0], ExitOnError)` 【`flag.CommandLine`】 https://github.com/golang/go/blob/release-branch.go1.14/src/flag/flag.go#L1010
 
 # 其他
 
