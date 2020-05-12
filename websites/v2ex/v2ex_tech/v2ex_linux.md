@@ -1,4 +1,6 @@
 
+求大佬解答, shell 函数中执行一条语句失败后, 立马退出函数, 怎么实现. https://www.v2ex.com/t/670950
+
 不懂就问 使用 Linux 时出现 root 无法登录的问题，但普通用户可以登录 https://www.v2ex.com/t/669517
 - > 必须 Ctrl+C 后才会弹出提示符？既然有提示符说明问题不在 pam or sshd <br> 检查下 ~/.bashrc ~/.bash_profile /etc/profile.d 有没有什么东西卡住了 <br> 一般登陆后脚本卡住了就是这个现象
 
