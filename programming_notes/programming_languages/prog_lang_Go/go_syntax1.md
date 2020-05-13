@@ -42,6 +42,12 @@ What does the `…` mean in go get https://stackoverflow.com/questions/31938346/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## go语法之分号和换行
+
+go语言中换行和分号那点事------理解为什么 https://blog.csdn.net/stpeace/article/details/81697347
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## go语法之枚举和iota
 
 golang枚举类型 - iota用法拾遗 https://www.cnblogs.com/zsy/p/5812676.html
