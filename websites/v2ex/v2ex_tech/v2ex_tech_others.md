@@ -1,4 +1,6 @@
 
+关于断言的一个疑问，希望可以和懂的人讨论一下，请不吝赐教。 https://www.v2ex.com/t/671078
+
 最终一致性到底是什么？？ https://www.v2ex.com/t/666807
 - > https://zhuanlan.zhihu.com/p/47445841 
   <br> 单机场景一致性主要看并发隔离 
