@@ -50,7 +50,7 @@ $ git config --global core.autocrlf false
 ### git彩色显示分支名和命令自动补全
 
 ```shell
-之前在华为的时候用的是这个，忘了是哪儿查到的了已经：
+之前在华为的时候用的是这个，忘了是哪儿查到的了已经（注意，这个应该放在`/etc/profile`里，放`~/.bashrc`有时候会不生效）：
 
 ####################
 # for automatically displaying branch information in linux shell
@@ -65,7 +65,6 @@ PS1="\u@\h:\033[1;33m\]\W\[\033[1;32m\]\$(parse_git_branch_and_add_brackets)\[\0
 
 ####################
 # for git auto completion
-
 source ~/.git-completion.bash
 ####################
 ```
@@ -99,6 +98,10 @@ PS1="\u@\h \[\033[0;36m\]\W\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[
 ```sh
 # 来了，主要改动其实就是缩了一个空格，然后用大括号包了一层。。。
 PS1="{\u@\h \[\033[0;36m\]\W\[\033[0m\]\[\033[0;32m\]$(git-branch-prompt)\[\033[0m\]}\$ "
+
+# 另外一般CentOS 7原版的PS1是这样的：
+[root@lolls-inf ~]# echo $PS1
+[\u@\h \W]\$
 ```
 
 ----------------------------------------------------------------------------------------------------
