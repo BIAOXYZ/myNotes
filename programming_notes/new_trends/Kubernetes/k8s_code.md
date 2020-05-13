@@ -164,6 +164,17 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# `#` api
+
+## [package v1] (https://godoc.org/k8s.io/api/core/v1)
+
+### core/v1/types.go
+
+- `type Pod struct {` https://github.com/kubernetes/api/blob/release-1.18/core/v1/types.go#L3537
+- `type ObjectReference struct {` 【`corev1.ObjectReference`】 https://github.com/kubernetes/api/blob/release-1.18/core/v1/types.go#L5044
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `#` operator-sdk
 
 ## [package k8sutil] (https://godoc.org/github.com/operator-framework/operator-sdk/pkg/k8sutil)
