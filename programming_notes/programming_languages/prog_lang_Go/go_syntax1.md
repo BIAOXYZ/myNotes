@@ -243,9 +243,11 @@ Golang的反射reflect深入理解和示例 https://juejin.im/post/5a75a4fb51882
 
 Go语言学习笔记（四）结构体struct & 接口Interface & 反射reflect https://yq.aliyun.com/articles/644158
 
-### reflect.DeepEqual
+### reflect.DeepEqual()
 
 [go]比较两个 slice/struct/map 是否相等 https://mozillazg.com/2014/11/go-compare-struct-slice-map-is-equal.html
 - How to compare if two structs, slices or maps are equal? https://stackoverflow.com/questions/24534072/how-to-compare-if-two-structs-slices-or-maps-are-equal
 
---------------------------------------------------
+### reflect.TypeOf()
+
+How to find the type of an object in Go? https://stackoverflow.com/questions/20170275/how-to-find-the-type-of-an-object-in-go
