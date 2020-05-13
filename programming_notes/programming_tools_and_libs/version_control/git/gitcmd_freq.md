@@ -27,10 +27,10 @@ git diff --cached //比较暂存区和本地仓库，也就是<2>和<3>
 git diff HEAD //比较工作区和本地仓库，也就是<1>和<3>
 
 git diff HEAD^ HEAD
+git diff <commit_id1> <commit_id2> -- <filename>
 ```
 
-<<如何在git中对比当前工作区和远程仓库的区别？>>
-https://www.zhihu.com/question/53601264
+<<如何在git中对比当前工作区和远程仓库的区别？>> https://www.zhihu.com/question/53601264
 ```
 git diff <local branch> <remote>/<remote branch>
 ```
@@ -120,6 +120,22 @@ hard就是动repo还有staging还有working
 ```
 
 git reset soft,hard,mixed之区别深解 https://www.cnblogs.com/kidsitcn/p/4513297.html
+
+----------------------------------------------------------------------------------------------------
+
+### 三个撤销的区别
+
+git还原某个特定的文件到之前的版本 https://blog.csdn.net/L_yangliu/article/details/53197706
+```
+第一步： 在命令行中输入 git log src/main/main.c 得到该文件的commit 历史。
+第二步： 复制需要回退版本的hash，在此假设我们回退到 d98a0f565804ba639ba46d6e4295d4f787ff2949 ,则复制该序列即可
+第三步：checkout 对应版本。格式为 git checkout <hash> <filename>, 在此即为命令行中输入 git checkout 
+d98a0f565804ba639ba46d6e4295d4f787ff2949 src/main/main.c
+第四步： commit checkout下来的版本。 如： git commit -m "revert to previous version"
+```
+
+`5.2 代码回滚：Reset、Checkout、Revert 的选择` https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9
+> Resetting, Checking Out & Reverting https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
 
 ----------------------------------------------------------------------------------------------------
 
