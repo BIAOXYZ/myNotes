@@ -132,9 +132,15 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ## `##` apimachinery
 
-### package runtime
+### [package runtime] (https://godoc.org/k8s.io/apimachinery/pkg/runtime)
+
+#### pkg/runtime/scheme.go
 
 `type Scheme struct {` 【`runtime.Scheme`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
+
+#### pkg/runtime/types.go
+
+`type RawExtension struct {` 【`runtime.RawExtension`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/types.go#L94
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
