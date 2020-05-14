@@ -33,6 +33,8 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 
 不懂就问。。。。问下倒排索引，百度了也没看懂，搜出来的结果很多但都是一个版本。主要是为啥叫“倒排”？没看懂，有高手解答一下吗？ 有bat tmd的大佬在吗？在外散修的大佬们在吗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwOTk0NDIsImlhdCI6MTU4OTQzMzA1NH0.DZqyr2MYO9psQ5GThrfwR9YVTukh6p52HCfvRkJhF4Y
 - > 比如两条数据，id=1，内容“饭好吃”，id=2,内容“饭难吃”。对这两段内容分词，可获得三个词，饭-对应id为1和2，好吃--对应id为1，难吃--对应id为2。当你搜索“饭”，就可以很快获取到id为1和2。再通过id去获取其内容。
+- > 倒排是和正排对应的，所谓正排就是给你一个doc id，你可以获得他的所有item。那么与之相反，倒排就是给你个term id，你可以获得所有包含这个term的doc
+- > 简单来说，通常文章是key，里面的词是value。 倒排就是词是key，文章是value。这就像搜索引擎，你搜了一个query，给的是一个字符串，然后把这个字符串切开，去倒排索引里匹配，把包含的捞出来，返回给你文章（网页）
 
 面试官问了一题进程如何切换？瞬间感觉自己啥都不会 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwNDIwNDYsImlhdCI6MTU4ODc2NjUzM30.OmcCwD-ilDYqnk4h-AS9PEu1OPai0zSB8eLEu0Q4yeE
 
