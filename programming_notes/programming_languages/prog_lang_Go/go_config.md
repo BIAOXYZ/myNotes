@@ -293,6 +293,32 @@ golang导入包的几个说明：import https://www.cnblogs.com/shengulong/p/102
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## import私有仓库
+
+Import private go modules from gitlab repositories https://techproject.io/index.php/import-private-go-modules-from-gitlab-repositories/
+- > 1st problem: go modules communicates with git over https, while we extensively use ssh for all communication with private repositories (and I would encourage you to do the same). From here on, I would assume you have already set up ssh certificate and use it for communication with your repositories.
+  >
+  ```sh
+  Solution: we need to instruct git to ssh instead by using the following command:
+      git config --global url."git@gitlab.com:".insteadof="https://gitlab.com"
+  
+  That is equivalent with adding this to your `.gitconfig`：
+      [url "git@gitlab.com:"] insteadOf = https://gitlab.com
+  ```
+- > 3rd problem: mysteriously, sometimes the error still occurred and would go away if I additionally set `GOPRIVATE` environment variable:
+  ```sh
+  export GOPRIVATE="gitlab.com/myprivaterepo"
+  ```
+  > I would appreciate if someone could explain this magic to me 🙂
+
+Go 1.13 Release Notes https://golang.org/doc/go1.13
+- > The new `GOPRIVATE` environment variable indicates module paths that are not publicly available. It serves as the default value for the lower-level `GONOPROXY` and `GONOSUMDB` variables, which provide finer-grained control over which modules are fetched via proxy and verified using the checksum database.
+- > The `GOPROXY` environment variable may now be set to a comma-separated list of proxy URLs or the special token direct, and its default value is now https://proxy.golang.org,direct. When resolving a package path to its containing module, the go command will try all candidate module paths on each proxy in the list in succession. An unreachable proxy or HTTP status code other than 404 or 410 terminates the search without consulting the remaining proxies.
+
+Go Modules with Private Git Repositories https://medium.com/cloud-native-the-gathering/go-modules-with-private-git-repositories-dfe795068db4
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## govendor
 
 Go vendor tool that works with the standard vendor file. https://github.com/kardianos/govendor
