@@ -20,6 +20,10 @@ CRD and controller for Subscription (Channel Subscription model) for Multicloud 
 
 ## Hybrid Application Model https://github.com/hybridapp-io
 
+Operator to deploy Hybrid Application Model https://github.com/hybridapp-io/ham-deploy
+
+Deployable to wrap resources for Hybrid Application model https://github.com/hybridapp-io/ham-deployable-operator
+
 # 公司github
 
 Operator to handle the compatibility of api groups between cp4mcm and RHACM https://github.ibm.com/IBMPrivateCloud/applicationcompatibility-operator
