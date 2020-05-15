@@ -71,6 +71,10 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 没喝多真实情况，我带的一个新来的小实习生一直投怀送抱寻求身体接触，应该有所图（转正），如果你们怎么处理。我男的单身，实习生很好看。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU3NzM3ODUsImlhdCI6MTU4NjY2Nzk3OX0.y_d37q0ugzEJ4OSa70n_3mK9QUMAPxYqo0g96pP92LE
 - > 来了就搬到我小区住，一下班没人看到就抱着我胳膊不放这是不小心吗
 
+## PKoIuwOzIkE
+
+中华酷联，只剩下华为了，巨大中华，也只剩下华为了。北朗摩爱华，只剩下爱立信和华为了，33年，一路走来，真不容易，无他，发个感慨而已。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwODMyNTksImlhdCI6MTU4OTUyMTAyMH0.k-hgLpmY6QtJwE9k_rLxPRZh4yoMXSQFOGuALUrAjBM
+
 # 脉脉搞笑
 
 最近想在感情上来点高并发，有没有什么保证线程安全的经验？大佬们指点一下，未婚。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5ODE0NzIsImlhdCI6MTU4ODMwOTg4MX0.f90ZDd3vSTR15OuNECQZAoCImjlGZ2K8ZyP4lXch8dI
