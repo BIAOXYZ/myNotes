@@ -85,11 +85,14 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 ## 圣斗士星矢
 
+圣斗士星矢 https://zh.moegirl.org/%E5%9C%A3%E6%96%97%E5%A3%AB%E6%98%9F%E7%9F%A2
+
 ### 《冥王神话LC》
 
 圣斗士星矢 THE LOST CANVAS 冥王神话 https://www.bilibili.com/bangumi/media/md800/
 
 圣斗士星矢 The Lost Canvas 冥王神话 https://zh.moegirl.org/%E5%9C%A3%E6%96%97%E5%A3%AB%E6%98%9F%E7%9F%A2_The_Lost_Canvas_%E5%86%A5%E7%8E%8B%E7%A5%9E%E8%AF%9D
+- 萨沙(圣斗士星矢) https://zh.moegirl.org/%E8%90%A8%E6%B2%99(%E5%9C%A3%E6%96%97%E5%A3%AB%E6%98%9F%E7%9F%A2)
 
 如何评价《圣斗士星矢冥王神话：The Lost Canvas》？ - 知乎 https://www.zhihu.com/question/45187681
 
