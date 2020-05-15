@@ -159,6 +159,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item [time]less_relic   永恒遗物
     -item [spell]_prism   法术棱镜
     -item [panic]_button   神妙明灯
+    -item the_[lev]eller   平世剑
     Level 3：
     Level 1:
     - item royal_[jelly]   蜂王浆
