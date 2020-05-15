@@ -1,4 +1,14 @@
 
+# 萌百官方
+
+萌娘百科 https://zh.wikipedia.org/wiki/%E8%90%8C%E5%A8%98%E7%99%BE%E7%A7%91
+- > 隶属于深圳市御坂网络科技有限公司。
+- > 持有者	晒太阳的冰
+- > 创始人	晒太阳的冰 
+  >> 用户:Baskice https://zh.moegirl.org/User:Baskice 
+
+# 萌百词条
+
 琴吹䌷 https://zh.moegirl.org/%E7%90%B4%E5%90%B9%E4%8C%B7
 ```
 九江月 2018年3月25日, 15:58:23
