@@ -127,7 +127,8 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 冥王神话外传 https://baike.baidu.com/item/%E5%86%A5%E7%8E%8B%E7%A5%9E%E8%AF%9D%E5%A4%96%E4%BC%A0
 
-【圣斗士星矢冥王神话LC】外传第1期双鱼座黄金圣斗士雅柏菲卡完整版 https://www.bilibili.com/video/av88810081/
-
+{from [风林火山TV](https://space.bilibili.com/360684624)}：
+- 【圣斗士星矢冥王神话LC】外传第1期双鱼座黄金圣斗士雅柏菲卡完整版 https://www.bilibili.com/video/av88810081/
+- 【圣斗士星矢冥王神话LC】外传第2期巨蟹座黄金圣斗士马尼戈特完整版 https://www.bilibili.com/video/BV1b7411E7Hj/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
