@@ -123,14 +123,14 @@ Go 1.13中的错误处理 https://tonybai.com/2019/10/18/errors-handling-in-go-1
 
 ## go slice
 
+Go Slices: usage and internals https://blog.golang.org/slices-intro
+
 Go指南 -- 向切片追加元素 https://tour.go-zh.org/moretypes/15
 > Go 切片：用法和本质 https://blog.go-zh.org/go-slices-usage-and-internals
 
-Go语言中的Slice学习总结
-http://www.jb51.net/article/57121.htm
+Go语言中的Slice学习总结 http://www.jb51.net/article/57121.htm
 
-Go语言中的Array、Slice、Map和Set使用详解
-http://www.jb51.net/article/56828.htm
+Go语言中的Array、Slice、Map和Set使用详解 http://www.jb51.net/article/56828.htm
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
