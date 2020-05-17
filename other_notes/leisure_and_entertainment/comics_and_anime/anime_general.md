@@ -259,6 +259,13 @@ SomeyaMako
 **声优安利系列**：
 - 声优安利——钉宫理惠 https://www.bilibili.com/read/cv1332684
 
+https://space.bilibili.com/458075/article
+- 对于声优御三家的一些介绍和个人感想 https://www.bilibili.com/read/cv1573751
+- 并不傲娇也不是女王-钉宫理惠 https://www.bilibili.com/read/cv1636345
+- 御三家角色介绍篇（其实根本就什么都没介绍）-田村由加莉篇 https://www.bilibili.com/read/cv1836976
+- 关于声优御三家的角色简介 https://www.bilibili.com/read/cv1874214
+- 声优偶像化的一些个人看法和介绍 https://www.bilibili.com/read/cv2253624
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 大钉宫
