@@ -18,3 +18,9 @@ _, err := crdClient.ApiextensionsV1beta1().CustomResourceDefinitions().Get(crdob
 // 然后vscode就提示 `no new variables on left side of :=`了，正确的改法是下面的：
 _, err = crdClient.ApiextensionsV1beta1().CustomResourceDefinitions().Get(crdobj.GetName(), metav1.GetOptions{})
 ```
+
+## `panic: runtime error: invalid memory address or nil pointer dereference`
+
+Go 指针声明后赋值，出现 panic: runtime error: invalid memory address or nil pointer dereference https://blog.csdn.net/qq_36431213/article/details/82967982
+
+Invalid memory address or nil pointer dereference https://yourbasic.org/golang/gotcha-nil-pointer-dereference/
