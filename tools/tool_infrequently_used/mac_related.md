@@ -11,6 +11,8 @@ sb：
 - 如何用 MacBook 提高工作效率的【工具篇】 https://juejin.im/post/5ce9d334f265da1bbf68f956
 - 如何用 MacBook 提高工作效率 【配置篇】 https://juejin.im/post/5ce9d77af265da1bb31c1517
 
+解锁Charles的姿势 https://juejin.im/post/5a1033d2f265da431f4aa81f
+
 ## mac ssh软件
 
 Mac OS X 平台有哪些好用的 SSH 客户端？ - 知乎 https://www.zhihu.com/question/20541129
