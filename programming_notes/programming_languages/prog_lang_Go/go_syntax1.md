@@ -211,7 +211,9 @@ Go Struct超详细讲解 https://juejin.im/post/5ca2f37ce51d4502a27f0539
   ```go
   Id int `json:"id" gorm:"AUTO_INCREMENT"`
   ```
-  
+
+Go's "omitempty" explained https://www.sohamkamani.com/golang/2018-07-19-golang-omitempty/
+
 【from 人世间】：
 - Golang处理JSON（一）--- 编码 https://www.jianshu.com/p/f3c2105bd06b
 - Golang处理JSON（二）--- 解码 https://www.jianshu.com/p/31757e530144
