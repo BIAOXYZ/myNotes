@@ -39,6 +39,9 @@ https://github.com/golang/tour/issues/191#issuecomment-508743525
 > The problem is fairly subtle and almost impossible to Google using either the error messages or keywords like "type float golang literal".
 
 ```go
+// 关于go结构体初始化时的坑：
+// 大部分都是用大括号，但是比较简单的（确切说是：直接由基本类型重命名而来的）类型是用小括号的。坑货。
+----------------------------------------------------------------------------------------------------
 // https://github.com/open-cluster-management/multicloud-operators-deployable/blob/a429faaac3b4f41434b9ac37aa75dde152a94e2a/pkg/apis/app/v1alpha1/deployable_types.go#L99
 type DeployablePhase string
 
@@ -47,4 +50,31 @@ testPhase := ibmdeployablev1alpha1.DeployablePhase{"Propagated"}
 
 // 改成用小括号就对了：
 testPhase := ibmdeployablev1alpha1.DeployablePhase("Propagated")
+----------------------------------------------------------------------------------------------------
+// https://github.com/open-cluster-management/multicloud-operators-channel/blob/release-2.0/pkg/apis/apps/v1/channel_types.go#L63
+type ChannelGate struct {
+	Name string `json:"name,omitempty"`
+
+	// A label selector for selecting the Deployables.
+	LabelSelector *metav1.LabelSelector `json:"labelSelector,omitempty"`
+
+	// The annotations which must present on a Deployable for it to be
+	// eligible for promotion.
+	Annotations map[string]string `json:"annotations,omitempty"`
+}
+
+// 对于这种不是基本类型简单重命名而形成的（较为复杂的）结构体，初始化时是用大括号的，比如：
+var (
+	testGates = &ibmchannelv1alpha1.ChannelGate{
+		Name: "testGateName",
+		LabelSelector: &metav1.LabelSelector{
+			MatchLabels: map[string]string{
+				"testKey": "testVal",
+			},
+		},
+		Annotations: map[string]string{
+			"testAnnotationKey": "testAnnotationVal",
+		},
+	}
+)
 ```
