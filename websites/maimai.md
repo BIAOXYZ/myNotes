@@ -29,6 +29,13 @@ leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https:
 - > 二进制分治，按最高位是0或者1写入到两个文件，并记录两个文件写了多少个元素，然后就可以知道中间那个数在哪个文件里。接下来对次高位进行同样的操作。。。最后剩下的就是所求。其实就是转换成了求第k个数。
 - > 建两个堆，一个大顶堆一个小顶堆。一个个读取数据放入两个堆中，注意需要保持两个堆的数据个数绝对值在1以内。这样两个堆的堆顶即为中间，把这些数据都读完，要找的数据就是两个堆的堆顶数据了。
 
+# 脉脉cloud
+
+K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发的应用程序，看了好几个中英文档，都没找到相应资料。有大佬能指点下怎么找到资料，怎么着手去做么？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYxNTAxOTcsImlhdCI6MTU4OTg2MjkwMn0.JCznD3bEoHr52OH8lLlwe4_TRQ3g6M-EjTy3xEbT-6c
+- > 所谓的k8s服务变更是指什么？如果指的是k8s资源的变更，使用client go里面的informer就行，或者直接用list watch api来监听
+- > 本质上是监听etcd的数据变更？watcher 就好了吧
+- > fabric8的watch功能
+
 # 脉脉技术类其他
 
 不懂就问。。。。问下倒排索引，百度了也没看懂，搜出来的结果很多但都是一个版本。主要是为啥叫“倒排”？没看懂，有高手解答一下吗？ 有bat tmd的大佬在吗？在外散修的大佬们在吗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwOTk0NDIsImlhdCI6MTU4OTQzMzA1NH0.DZqyr2MYO9psQ5GThrfwR9YVTukh6p52HCfvRkJhF4Y
