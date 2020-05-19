@@ -1,4 +1,6 @@
 
+为什么在 Go 数组(array)被设计成值，而不跟 C/C++或 Java 一样，设计为一个引用？ https://www.v2ex.com/t/673135
+
 Go Channel 学习的一个疑问，请大佬指教 https://www.v2ex.com/t/672517
 ```console
 为什么这个输出结果一会是 0，1，2，3，一会是 0，1，2，3，4

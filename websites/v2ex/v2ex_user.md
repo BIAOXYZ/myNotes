@@ -16,6 +16,8 @@ Talent Plan - 希望是最好的分布式系统和分布式数据库实践课程
 
 # NebulaGraph
 
+CPack 入门指南 https://www.v2ex.com/t/673146
+
 分布式图数据库 Nebula Graph 的 Index 实践 https://www.v2ex.com/t/652123
 
 一文了解各大图数据库查询语言（Gremlin vs Cypher vs nGQL）| 操作入门篇 https://www.v2ex.com/t/650015
