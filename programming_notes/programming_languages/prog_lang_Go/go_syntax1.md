@@ -226,6 +226,48 @@ Go_14：GoLang中 json、map、struct 之间的相互转化 https://www.cnblogs.
 
 Go语言中struct的匿名属性特征 https://blog.csdn.net/books1958/article/details/22795203
 > Go语言中struct的属性可以没有名字而只有类型，使用时类型即为属性名。（因此，一个struct中同一个类型的匿名属性只能有一个）
+```go
+//// https://play.golang.org/p/6B99TQTqdjo
+
+package main
+
+import "fmt"
+
+type PersonC struct {
+	id      int
+	country string
+}
+
+//匿名属性
+type Worker struct {
+	//如果Worker有属性id,则worker.id表示Worker对象的id
+	//如果Worker没有属性id,则worker.id表示Worker对象中的PersonC的id
+	id   int
+	name string
+	int
+	*PersonC
+}
+
+func main() {
+	w := &Worker{}
+	w.id = 201
+	w.name = "Smith"
+	w.int = 49
+	w.PersonC = &PersonC{100001, "China"}
+
+	fmt.Printf("name:%s,int:%d\n", w.name, w.int)
+	fmt.Printf("inner PersonC,id:%d,country:%s\n",
+		w.PersonC.id, w.PersonC.country)
+
+	fmt.Printf("worker.id:%d,personC.id:%d\n", w.id, w.PersonC.id)
+	fmt.Printf(w.country)
+}
+--------------------------------------------------
+name:Smith,int:49
+inner PersonC,id:100001,country:China
+worker.id:201,personC.id:100001
+China
+```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
