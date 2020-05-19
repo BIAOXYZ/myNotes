@@ -142,7 +142,8 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### pkg/apis/meta/v1/types.go
 
-- `type ObjectMeta struct {` https://github.com/kubernetes/kubernetes/blob/release-1.18/staging/src/k8s.io/apimachinery/pkg/apis/meta/v1/types.go#L110 || https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/types.go#L110
+- `type TypeMeta struct {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/types.go#L41
+- `type ObjectMeta struct {` https://github.com/kubernetes/kubernetes/blob/release-1.18/staging/src/k8s.io/apimachinery/pkg/apis/meta/v1/types.go#L110 【[:star:][`*`]】 || https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/types.go#L110
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -153,6 +154,11 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 - `type Decoder interface {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/interfaces.go#L73
 - `type Object interface {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/interfaces.go#L299
   * > runtime.RawExtension里的Object成员就是这个接口类型。
+
+### pkg/runtime/register.go 
+
+- `func (obj *TypeMeta) SetGroupVersionKind(gvk schema.GroupVersionKind) {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/register.go#L22
+- `func (obj *TypeMeta) GroupVersionKind() schema.GroupVersionKind {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/register.go#L27
 
 ### pkg/runtime/scheme.go
 
