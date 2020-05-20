@@ -163,7 +163,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 - `type Decoder interface {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/interfaces.go#L73
 - `type Object interface {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/interfaces.go#L299
-  * > runtime.RawExtension里的Object成员就是这个接口类型。
+  * >> notes：runtime.RawExtension里的Object成员就是这个接口类型。
 
 ### pkg/runtime/register.go 
 
@@ -177,7 +177,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 ### pkg/runtime/types.go
 
 - `type RawExtension struct {` 【`runtime.RawExtension`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/types.go#L94
-  * 【[:star:][`*`]】 Golang RawExtension.Object Examples https://golang.hotexamples.com/examples/k8s.io.kubernetes.pkg.runtime/RawExtension/Object/golang-rawextension-object-method-examples.html
+  * 【[:star:][`*`]】 Golang RawExtension.Object Examples https://golang.hotexamples.com/examples/k8s.io.kubernetes.pkg.runtime/RawExtension/Object/golang-rawextension-object-method-examples.html || Golang RawExtension Examples https://golang.hotexamples.com/examples/k8s.io.kubernetes.pkg.runtime/RawExtension/-/golang-rawextension-class-examples.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
