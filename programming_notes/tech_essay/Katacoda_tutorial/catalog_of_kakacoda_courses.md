@@ -17,6 +17,14 @@ Developing on OpenShift https://developers.redhat.com/courses/openshift/
 
 HashiCorp enables orgs to provision, secure, & run any infrastructure for any application. The Suite includes Vagrant, Packer, Terraform, Vault, Nomad & Consul. https://www.katacoda.com/hashicorp
 
+# Crunchy Data
+
+Crunchy Data (Postgresql) https://www.katacoda.com/crunchydata/
+
+# Portworx
+
+Portworx, Cloud Native Storage https://www.katacoda.com/portworx/
+
 # 非机构课程
 
 Jonathan Johnson @javajon https://www.katacoda.com/javajon
