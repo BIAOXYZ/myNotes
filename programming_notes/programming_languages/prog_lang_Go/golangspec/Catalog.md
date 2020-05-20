@@ -3,6 +3,10 @@
 
 golangspec: To understand Go’s specification https://medium.com/golangspec
 
+# golangspec非系列文章
+
+Composite literals in Go https://medium.com/golangspec/composite-literals-in-go-10dc62eec06a
+
 # golangspec系列文章
 
 ## Making debugger for Golang
