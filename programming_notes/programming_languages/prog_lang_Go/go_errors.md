@@ -78,3 +78,35 @@ var (
 	}
 )
 ```
+
+## `mixture of field:value and value initializers`
+
+匿名结构体混合初始化报错： mixture of field:value and value initializers https://golangtc.com/t/5781daf1b09ecc02f7000254
+```console
+RT.定义和初始化如下，实在找不到原因和解决方式。
+
+定义：
+type pTransport struct {
+http.Transport
+target string
+}
+
+初始化：
+X := &pTransport{
+http.Transport{
+DisableCompression: true,
+},
+target: “TEST”,
+}
+```
+```go
+// stevewang 2016-07-10 14:31
+X := &pTransport{
+    Transport: http.Transport{
+        DisableCompression: true,
+    },
+    target: "TEST",
+}
+```
+
+Golang报错mixture of field:value and value initializers https://www.cnblogs.com/xbblogs/p/10037545.html
