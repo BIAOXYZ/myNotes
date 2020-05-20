@@ -149,6 +149,12 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 - `type TypeMeta struct {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/types.go#L41
 - `type ObjectMeta struct {` https://github.com/kubernetes/kubernetes/blob/release-1.18/staging/src/k8s.io/apimachinery/pkg/apis/meta/v1/types.go#L110 【[:star:][`*`]】 || https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/types.go#L110
 
+## [[[[package unstructured]]]] ((((https://godoc.org/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured))))
+
+### pkg/apis/meta/v1/unstructured/unstructured.go
+
+- `type Unstructured struct {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/unstructured/unstructured.go#L41
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## [package runtime] (https://godoc.org/k8s.io/apimachinery/pkg/runtime)
