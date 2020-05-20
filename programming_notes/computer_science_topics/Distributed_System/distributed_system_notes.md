@@ -120,7 +120,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 Golang implementation of the Raft consensus protocol https://github.com/hashicorp/raft
 
-A feature complete and high performance multi-group Raft library in Go. https://github.com/lni/dragonboat
+A feature complete and high performance multi-group Raft library in Go. https://github.com/lni/dragonboat || https://github.com/lni/dragonboat/blob/master/README.CHS.md
+- 大规模Go项目几乎必踏的几个坑 - Dragonboat为例 - 我做分布式系统的文章 - 知乎 https://zhuanlan.zhihu.com/p/53284649
 
 C implementation of the Raft Consensus protocol, BSD licensed https://github.com/willemt/raft
 
