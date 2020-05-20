@@ -110,3 +110,9 @@ X := &pTransport{
 ```
 
 Golang报错mixture of field:value and value initializers https://www.cnblogs.com/xbblogs/p/10037545.html
+
+## `composite literal uses unkeyed fields`
+
+Composite literal uses unkeyed fields https://stackoverflow.com/questions/54548441/composite-literal-uses-unkeyed-fields
+
+golang结构体偷懒初始化 https://blog.csdn.net/hhhanpan/article/details/81943378
