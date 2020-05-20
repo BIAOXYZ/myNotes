@@ -140,6 +140,10 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ## [[[package v1]]] (https://godoc.org/k8s.io/apimachinery/pkg/apis/meta/v1)
 
+### pkg/apis/meta/v1/time.go
+
+- `type Time struct {` 【`metav1.Time`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/time.go#L33
+
 ### pkg/apis/meta/v1/types.go
 
 - `type TypeMeta struct {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/apis/meta/v1/types.go#L41
