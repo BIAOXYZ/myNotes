@@ -1,4 +1,7 @@
 
+啊，手快 rm 了，怎么从进程恢复源文件 https://www.v2ex.com/t/673730
+- > 不太乐观,swp 好像是修改记录,是差异文件,源文件也许在内存里还有?可以看看这个: https://superuser.com/questions/204209/how-can-i-recover-the-original-file-from-a-swp-file/874677#874677
+
 求大佬解答, shell 函数中执行一条语句失败后, 立马退出函数, 怎么实现. https://www.v2ex.com/t/670950
 
 不懂就问 使用 Linux 时出现 root 无法登录的问题，但普通用户可以登录 https://www.v2ex.com/t/669517
