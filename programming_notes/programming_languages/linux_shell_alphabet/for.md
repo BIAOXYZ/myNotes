@@ -16,6 +16,27 @@ Linux下Shell的for循环语句 https://www.cnblogs.com/EasonJim/p/8315939.html
 13
 16
 [root@lolls-inf ~]#
+[root@lolls-inf ~]# for i in $(seq 1 5); do echo $(expr $i \* 3 + 1); done
+4
+7
+10
+13
+16
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# for i in {1..5}; do echo $(expr $i \* 3 + 1); done
+4
+7
+10
+13
+16
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# awk 'BEGIN{for(i=1; i<=5; i++) print i}'
+1
+2
+3
+4
+5
+[root@lolls-inf ~]#
 ```
 ```sh
 [root@lolls-inf hybridapp-operator]# for i in {1..25}; do echo -e "TEST $i \n"; make test; done
