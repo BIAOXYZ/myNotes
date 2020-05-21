@@ -89,6 +89,14 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 
 - `func New(actualInput interface{}, failWrapper *types.GomegaFailWrapper, offset int, extra ...interface{}) *Assertion {` 【`assertion.New()`】 https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L17
 
+### matchers/be_zero_matcher.go
+
+- `type BeZeroMatcher struct {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/matchers/be_zero_matcher.go#L9:6
+  ```go
+  type BeZeroMatcher struct {
+  }
+  ```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Ginkgo & Gomega 其他
