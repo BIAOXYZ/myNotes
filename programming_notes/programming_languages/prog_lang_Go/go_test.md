@@ -67,6 +67,34 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 	  return ExpectWithOffset(0, actual, extra...)
   }
   ```
+- `type Assertion interface {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/gomega_dsl.go#L333
+  ```go
+  // Assertion is returned by Ω and Expect and compares the actual value to the matcher
+  // passed to the Should/ShouldNot and To/ToNot/NotTo methods.
+  //
+  // Typically Should/ShouldNot are used with Ω and To/ToNot/NotTo are used with Expect
+  // though this is not enforced.
+  //
+  // All methods take a variadic optionalDescription argument.
+  // This argument allows you to make your failure messages more descriptive.
+  // If a single argument of type `func() string` is passed, this function will be lazily evaluated if a failure occurs
+  // and the returned string is used to annotate the failure message.
+  // Otherwise, this argument is passed on to fmt.Sprintf() and then used to annotate the failure message.
+  //
+  // All methods return a bool that is true if the assertion passed and false if it failed.
+  //
+  // Example:
+  //
+  //    Ω(farm.HasCow()).Should(BeTrue(), "Farm %v should have a cow", farm)
+  type Assertion interface {
+  	Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+  	ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+  
+  	To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+  	ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+  	NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+  }
+  ```
 - `func (g *WithT) Expect(actual interface{}, extra ...interface{}) Assertion {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/gomega_dsl.go#L380
   ```go
   // Expect is used to make assertions. See documentation for Expect.
