@@ -15,6 +15,10 @@ A distributed, shared-nothing relational database https://github.com/alibaba/oce
 - 如何看待蚂蚁金服国产分布式数据库Oceanbase在TPC-C测试中远超Oracle荣获第一？ - 知乎 https://www.zhihu.com/question/349062591
 - 如何看待蚂蚁金服OceanBase拿下世界第一，性能超老牌数据库Oracle 100％。? - 知乎 https://www.zhihu.com/question/349100846
 
+### OB TPCC过7亿
+
+如何看待支付宝分布式数据库OceanBase以高出去年10倍的7.7亿tpmC打破自己创下的世界纪录? - 知乎 https://www.zhihu.com/question/396219395
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## PolarDB
