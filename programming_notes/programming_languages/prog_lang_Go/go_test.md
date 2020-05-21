@@ -88,6 +88,20 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 ### internal/assertion/assertion.go
 
 - `func New(actualInput interface{}, failWrapper *types.GomegaFailWrapper, offset int, extra ...interface{}) *Assertion {` 【`assertion.New()`】 https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L17
+- `func (assertion *Assertion) Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {` https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L26
+  ```go
+  func (assertion *Assertion) Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {
+  	assertion.failWrapper.TWithHelper.Helper()
+  	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, true, optionalDescription...)
+  }
+  ```
+- https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L31
+  ```go
+  func (assertion *Assertion) ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {
+  	assertion.failWrapper.TWithHelper.Helper()
+  	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, false, optionalDescription...)
+  }
+  ```
 
 ### matchers/be_zero_matcher.go
 
