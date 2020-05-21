@@ -45,7 +45,7 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 
 ## Ginkgo & Gomega 官方代码
 
-### gomega/gomega_dsl.go
+### gomega_dsl.go
 
 - `func Ω(actual interface{}, extra ...interface{}) Assertion {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/gomega_dsl.go#L129
   ```go
@@ -68,6 +68,10 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 	  return assertion.New(actual, testingtsupport.BuildTestingTGomegaFailWrapper(g.t), 0, extra...)
   }
   ```
+
+### internal/assertion/assertion.go
+
+- `func New(actualInput interface{}, failWrapper *types.GomegaFailWrapper, offset int, extra ...interface{}) *Assertion {` https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L17
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
