@@ -105,6 +105,13 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 
 ### matchers.go
 
+- `func BeTrue() types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L44
+  ```go
+  //BeTrue succeeds if actual is true
+  func BeTrue() types.GomegaMatcher {
+  	return &matchers.BeTrueMatcher{}
+  }
+  ```
 - `func BeZero() types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L255
   ```go
   //BeZero succeeds if actual is the zero value for its type or if actual is nil.
@@ -126,6 +133,27 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 - https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L31
   ```go
   func (assertion *Assertion) ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {
+  	assertion.failWrapper.TWithHelper.Helper()
+  	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, false, optionalDescription...)
+  }
+  ```
+- https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L36
+  ```go
+  func (assertion *Assertion) To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {
+  	assertion.failWrapper.TWithHelper.Helper()
+  	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, true, optionalDescription...)
+  }
+  ```
+- https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L41
+  ```go
+  func (assertion *Assertion) ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {
+  	assertion.failWrapper.TWithHelper.Helper()
+  	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, false, optionalDescription...)
+  }
+  ```
+- https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L46
+  ```go
+  func (assertion *Assertion) NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool {
   	assertion.failWrapper.TWithHelper.Helper()
   	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, false, optionalDescription...)
   }
