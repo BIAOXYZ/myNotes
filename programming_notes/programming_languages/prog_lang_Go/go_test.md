@@ -102,6 +102,9 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
   	return assertion.vetExtras(optionalDescription...) && assertion.match(matcher, false, optionalDescription...)
   }
   ```
+- `func (assertion *Assertion) match(matcher types.GomegaMatcher, desiredMatch bool, optionalDescription ...interface{}) bool {` 【`assertion.match()`】 https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L63  
+- `func (assertion *Assertion) vetExtras(optionalDescription ...interface{}) bool {` 【`assertion.vetExtras()`】 https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L86
+- `func vetExtras(extras []interface{}) (bool, string) {` https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L98
 
 ### matchers/be_zero_matcher.go
 
@@ -110,6 +113,7 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
   type BeZeroMatcher struct {
   }
   ```
+- `func (matcher *BeZeroMatcher) Match(actual interface{}) (success bool, err error) {` https://github.com/onsi/gomega/blob/6be6c43958/matchers/be_zero_matcher.go#L12
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
