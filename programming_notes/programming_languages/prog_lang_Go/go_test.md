@@ -112,6 +112,15 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
   	return &matchers.BeTrueMatcher{}
   }
   ```
+- `func HaveLen(count int) types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L241
+  ```go
+  //HaveLen succeeds if actual has the passed-in length.  Actual must be of type string, array, map, chan, or slice.
+  func HaveLen(count int) types.GomegaMatcher {
+  	return &matchers.HaveLenMatcher{
+  		Count: count,
+  	}
+  }
+  ```
 - `func BeZero() types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L255
   ```go
   //BeZero succeeds if actual is the zero value for its type or if actual is nil.
