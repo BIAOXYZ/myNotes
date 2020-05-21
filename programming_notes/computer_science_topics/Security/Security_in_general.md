@@ -192,6 +192,18 @@ https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+## ithome
+
+22岁少年破解史上最严重网络攻击，拯救全球互联网，三个月后却被FBI逮捕 https://www.ithome.com/0/488/422.htm
+- > 首先，他在隔离的虚拟机中运行了这个程序。然后很快他就注意到其在执行加密时会向一个看起来随机生成的网址发送一条查询信息：
+<br> iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com。
+<br> 很显然，这个病毒采用了“命令-控制”模式，即某个地方的服务器能给被感染的计算机发送控制指令。Hutchins将这个网址放到浏览器中，却发现根本没有网站。
+<br> 因此他访问了域名注册商 Namecheap，在下午 3:08 用 10.69 美元注册了这个地址。Hutchins希望此举能从WannaCry创造者那里夺回部分受害计算机的控制权。或者他至少可通过 sinkholing（沉洞）技术获知受害计算机的数量和位置。
+- > 当Hutchins将这个域名定向到 Kryptos Logic 的一组服务器上后，就立马收到了全世界数千台新被感染的计算机的连接。Hutchins在 Twitter 上通报了这一信息，引起了世界各地的研究者、记者和系统管理者的关注。 
+<br> 下午 6:30，Hutchins的黑客朋友 Kafeine 分享了一条推文给他。这条让Hutchins感到惊讶的推文来自安全研究者 Darien Huss：“攻击失败，因为该域名已沉洞。” 
+<br> 换句话说，由于Hutchins的域名首先上线，因此 WannaCry 感染虽然还会继续，但并不会真正造成任何新的危害。这个蠕虫病毒似乎就这样失去功能了。
+
+:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ## Others
 
