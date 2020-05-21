@@ -43,7 +43,13 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Ginkgo & Gomega 官方代码
+## Ginkgo 官方代码
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Gomega 官方代码
+
+- `6be6c439588487cd908a3a700795660c2a16dfec`对应了1.9.0这个tag，但是仓库没有专门的分支，所以只能切1.9.0tag对应的hash值。
 
 ### gomega_dsl.go
 
@@ -69,9 +75,19 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
   }
   ```
 
+### matchers.go
+
+- `func BeZero() types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L255
+  ```go
+  //BeZero succeeds if actual is the zero value for its type or if actual is nil.
+  func BeZero() types.GomegaMatcher {
+  	return &matchers.BeZeroMatcher{}
+  }
+  ```
+
 ### internal/assertion/assertion.go
 
-- `func New(actualInput interface{}, failWrapper *types.GomegaFailWrapper, offset int, extra ...interface{}) *Assertion {` https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L17
+- `func New(actualInput interface{}, failWrapper *types.GomegaFailWrapper, offset int, extra ...interface{}) *Assertion {` 【`assertion.New()`】 https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L17
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
