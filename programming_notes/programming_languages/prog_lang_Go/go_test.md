@@ -43,6 +43,34 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## Ginkgo & Gomega 官方代码
+
+### gomega/gomega_dsl.go
+
+- `func Ω(actual interface{}, extra ...interface{}) Assertion {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/gomega_dsl.go#L129
+  ```go
+  // Ω and Expect are identical
+  func Ω(actual interface{}, extra ...interface{}) Assertion {
+	  return ExpectWithOffset(0, actual, extra...)
+  }
+  ```
+- `func Expect(actual interface{}, extra ...interface{}) Assertion {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/gomega_dsl.go#L150
+  ```go
+  // Expect and Ω are identical
+  func Expect(actual interface{}, extra ...interface{}) Assertion {
+	  return ExpectWithOffset(0, actual, extra...)
+  }
+  ```
+- `func (g *WithT) Expect(actual interface{}, extra ...interface{}) Assertion {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/gomega_dsl.go#L380
+  ```go
+  // Expect is used to make assertions. See documentation for Expect.
+  func (g *WithT) Expect(actual interface{}, extra ...interface{}) Assertion {
+	  return assertion.New(actual, testingtsupport.BuildTestingTGomegaFailWrapper(g.t), 0, extra...)
+  }
+  ```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Ginkgo & Gomega 其他
 
 https://gowalker.org/github.com/onsi/gomega/matchers
