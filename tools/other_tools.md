@@ -13,6 +13,10 @@ Alternatives to TeamViewer https://alternativeto.net/software/teamviewer/
 
 Dynatrace vs Honeycomb https://stackshare.io/stackups/dynatrace-vs-honeycomb
 
+## [G2](https://www.g2.com/)
+
+Compare Azure Log Analytics, Datadog, Fluentd, and Humio https://www.g2.com/compare/azure-log-analytics-vs-datadog-vs-fluentd-vs-humio
+
 ## LibHunt
 
 Python LibHunt https://python.libhunt.com/
