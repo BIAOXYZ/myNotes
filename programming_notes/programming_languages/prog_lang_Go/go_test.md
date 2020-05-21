@@ -171,6 +171,10 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 - `func (assertion *Assertion) vetExtras(optionalDescription ...interface{}) bool {` 【`assertion.vetExtras()`】 https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L86
 - `func vetExtras(extras []interface{}) (bool, string) {` https://github.com/onsi/gomega/blob/6be6c43958/internal/assertion/assertion.go#L98
 
+### internal/testingtsupport/testing_t_support.go
+
+- `func BuildTestingTGomegaFailWrapper(t gomegaTestingT) *types.GomegaFailWrapper {` 【`testingtsupport.BuildTestingTGomegaFailWrapper(g.t)`】 --> 这也是一个包名（`testingtsupport`）和文件名（`testing_t_support.go`）不一致的例子。  https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/internal/testingtsupport/testing_t_support.go#L21:6
+
 ### matchers/be_zero_matcher.go
 
 - `type BeZeroMatcher struct {` https://github.com/onsi/gomega/blob/6be6c439588487cd908a3a700795660c2a16dfec/matchers/be_zero_matcher.go#L9:6
