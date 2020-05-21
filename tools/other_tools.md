@@ -11,6 +11,8 @@ Alternatives to TeamViewer https://alternativeto.net/software/teamviewer/
 
 ## [StackShare](https://stackshare.io/)
 
+Dynatrace vs Honeycomb https://stackshare.io/stackups/dynatrace-vs-honeycomb
+
 ## LibHunt
 
 Python LibHunt https://python.libhunt.com/
