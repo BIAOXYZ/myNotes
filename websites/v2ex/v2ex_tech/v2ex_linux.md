@@ -1,4 +1,6 @@
 
+想把自己的老笔记本搞成小型的虚拟化平台 https://www.v2ex.com/t/673944
+
 啊，手快 rm 了，怎么从进程恢复源文件 https://www.v2ex.com/t/673730
 - > 不太乐观,swp 好像是修改记录,是差异文件,源文件也许在内存里还有?可以看看这个: https://superuser.com/questions/204209/how-can-i-recover-the-original-file-from-a-swp-file/874677#874677
 

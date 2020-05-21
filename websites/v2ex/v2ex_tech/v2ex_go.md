@@ -1,4 +1,7 @@
 
+初学 GO，怎么判断一个变量是否未初始化/是否为空 https://www.v2ex.com/t/674053
+- > 看 go 语言之旅 <br> 科学的地址 https://go-tour-zh.appspot.com/ <br> 不科学的地址 http://tour.studygolang.com/welcome/1
+
 为什么在 Go 数组(array)被设计成值，而不跟 C/C++或 Java 一样，设计为一个引用？ https://www.v2ex.com/t/673135
 
 Go Channel 学习的一个疑问，请大佬指教 https://www.v2ex.com/t/672517

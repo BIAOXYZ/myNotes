@@ -7,6 +7,10 @@
 - A Tour of Go https://tour.golang.org/list
 - Go 指南 https://tour.go-zh.org/list
 
+## 国内可直接访问地址
+
+Go 指南 http://tour.studygolang.com/list
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `#` Using the tour || 使用本指南
