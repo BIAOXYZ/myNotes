@@ -26,7 +26,7 @@ Deployable to wrap resources for Hybrid Application model https://github.com/hyb
 
 ## Multi Cloud Lab https://github.com/multicloudlab
 
-Kubernetes Cluster API Provider IBM VPC Cloud https://github.com/multicloudlab/cluster-api-provider-ibmvpccloud
+Kubernetes Cluster API Provider IBM VPC Cloud 【IBM VPC Cloud (Gen2)】 https://github.com/multicloudlab/cluster-api-provider-ibmvpccloud   -->   IBM Cloud Provider for Cluster API 【IBM Cloud (Gen1 SoftLayer)】 https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/
 
 # 公司github
 
