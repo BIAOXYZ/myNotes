@@ -195,6 +195,12 @@ Setup https://kubernetes.io/docs/setup/
 
 Kubernetes The Hard Way -- Bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts. https://github.com/kelseyhightower/kubernetes-the-hard-way
 
+Kubernetes the Hard Way - completely on your Linux laptop.. in Containers! https://www.reddit.com/r/kubernetes/comments/gnbdr6/kubernetes_the_hard_way_completely_on_your_linux/
+> I wanted to do [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) but I didn't want to use GCP, so I tried [this one](https://github.com/mmumshad/kubernetes-the-hard-way), but my laptop couldn't cope and was almost unusable, so I made a new one for My Own Kind, which is here:
+>> https://github.com/mclarkson/my-own-kind#kubernetes-the-hard-way---on-your-laptop
+>
+> It was made on Fedora 32 with Podman (not docker), and it allowed me to create a 7 node kubernetes cluster without slowing down my laptop :)
+
 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz
 - 开启内核ipv4转发需要加载br_netfilter模块 #69 https://github.com/gjmzj/kubeasz/issues/69
 

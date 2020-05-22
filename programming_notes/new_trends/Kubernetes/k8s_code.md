@@ -44,6 +44,11 @@ kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source
 - kubernetes容器启动详解 https://blog.csdn.net/u010278923/article/details/72993499
 - kubelet启动pod的源码分析 https://blog.csdn.net/u010278923/article/details/78829649
 
+深度解析Kubernetes Pod Disruption Budgets(PDB) https://my.oschina.net/jxcdwangtao/blog/1594348
+- Kubernetes Node Controller源码分析之执行篇 https://my.oschina.net/jxcdwangtao/blog/1486616
+- Kubernetes Node Controller源码分析之创建篇 https://my.oschina.net/jxcdwangtao/blog/1492173
+- Kubernetes Node Controller源码分析之配置篇 https://my.oschina.net/jxcdwangtao/blog/1454434
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubeadm相关源码/流程
