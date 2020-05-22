@@ -23,7 +23,11 @@ kubectl create -f manifests/postgres-operator.yaml
 kubectl create -f manifests/api-service.yaml
 kubectl create -f manifests/minimal-postgres-manifest.yaml
 ```
-但总是pv有问题。我自己在katacoda上用minikube试了下没问题，然后去她环境上看了下。最后从katacoda那个可以正常起来的例子里把pv和pvc都--export出来，删掉大部分，然后拷到新员工机器上。最后创建master实例成功。
+但总是pv有问题。我自己在katacoda上用minikube试了下没问题，然后去她环境上看了下。接着：
+- 从katacoda那个可以正常起来的例子里把pv和pvc都--export出来。
+- 删掉大部分没用的或者运行时才动态生成的字段。
+- 然后在pvc里通过`volumeName`字段指定其和名为`pv00`的pv去绑定（此外pv的yaml里的`storageClassName: standard`开始没注释掉，但是会报错，后面注释掉就好了。不过katacoda上最原始的pv和pvc其实都有`storageClassName: standard`，只是我--export的时候pv的没删，pvc的删了）。
+- 最后拷到新员工机器上，按改过的yaml创建pv和pvc。最后发现master实例对应的pod，即acid-minimal-cluster-0成功。
 
 ```sh
 [root@voles1 postgres-operator]# cat pv00.yaml
