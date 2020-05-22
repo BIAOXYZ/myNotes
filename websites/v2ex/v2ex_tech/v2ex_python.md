@@ -31,6 +31,8 @@ print(total) # 178412
 - > += 和 -= 不是原子的
 - > 1.GIL 意思是任何时候只有一个线程运行 <br> 2.因为增量赋值不是原子操作，具体可看 dis.dis('a += 1') 的字节码不止一步 <br> 3.线程是系统调度的，你不知道何时切换 <br> 4.好，那你怎么就知道在做增量赋值的字节码某一步的时候，不会切换到了另一个线程呢？
 - > 全局定义一个 lock = threading.Lock()，+=、-=之前增加一个 with lock:的块
+  >> notes：我查了也试了下，比较简单的做法是用`lock.acquire()`和`lock.release()`把`total += 1`和`total -= 1`包起来就行。参照下面这个页面：
+  >>> https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/chapter2/06_Thread_synchronization_with_Lock_and_Rlock.html
 
 请教： Python 获取 shell 自定义变量的值。 https://www.v2ex.com/t/658012
 ```console
