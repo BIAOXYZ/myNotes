@@ -338,6 +338,11 @@ Kubernetes-基于StorageClass的动态存储供应 https://www.kubernetes.org.cn
 pod has unbound PersistentVolumeClaims https://stackoverflow.com/questions/52668938/pod-has-unbound-persistentvolumeclaims
 - > When using storageClass Kubernetes is going to enable "Dynamic Volume Provisioning" which is not working with the local file system.
 
+## kubernetes PodDisruptionBudget (PDB)
+
+- 干扰 https://v1-18.docs.kubernetes.io/zh/docs/concepts/workloads/pods/disruptions/
+- Disruptions https://v1-18.docs.kubernetes.io/docs/concepts/workloads/pods/disruptions/
+
 ## kubernetes Container Lifecycle Hooks
 
 - Container Lifecycle Hooks https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/
