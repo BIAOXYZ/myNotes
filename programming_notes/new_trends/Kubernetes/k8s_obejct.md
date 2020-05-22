@@ -348,6 +348,10 @@ Kubernetes in production — PodDisruptionBudget https://itnext.io/kubernetes-in
 
 Avoiding Outages in your Kubernetes Cluster using PodDisruptionBudgets https://blog.gruntwork.io/avoiding-outages-in-your-kubernetes-cluster-using-poddisruptionbudgets-ef6a4baa5085
 
+kubernetes1.7 新特性:PodDisruptionBudget控制器变化 https://www.kubernetes.org.cn/2486.html
+
+kubernetes之PDB https://www.cnblogs.com/tylerzhou/p/10987576.html
+
 ## kubernetes Container Lifecycle Hooks
 
 - Container Lifecycle Hooks https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/
