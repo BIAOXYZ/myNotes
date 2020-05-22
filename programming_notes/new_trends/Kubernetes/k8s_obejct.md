@@ -340,8 +340,13 @@ pod has unbound PersistentVolumeClaims https://stackoverflow.com/questions/52668
 
 ## kubernetes PodDisruptionBudget (PDB)
 
-- 干扰 https://v1-18.docs.kubernetes.io/zh/docs/concepts/workloads/pods/disruptions/
-- Disruptions https://v1-18.docs.kubernetes.io/docs/concepts/workloads/pods/disruptions/
+【from官方】：
+- 干扰 https://v1-18.docs.kubernetes.io/zh/docs/concepts/workloads/pods/disruptions/ || Disruptions https://v1-18.docs.kubernetes.io/docs/concepts/workloads/pods/disruptions/
+- 指定应用程序的中断预算（Disruption Budget） https://v1-18.docs.kubernetes.io/zh/docs/tasks/run-application/configure-pdb/
+
+Kubernetes in production — PodDisruptionBudget https://itnext.io/kubernetes-in-production-poddisruptionbudget-1380009aaede
+
+Avoiding Outages in your Kubernetes Cluster using PodDisruptionBudgets https://blog.gruntwork.io/avoiding-outages-in-your-kubernetes-cluster-using-poddisruptionbudgets-ef6a4baa5085
 
 ## kubernetes Container Lifecycle Hooks
 
