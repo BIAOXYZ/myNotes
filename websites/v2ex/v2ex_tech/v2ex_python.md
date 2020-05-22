@@ -1,4 +1,37 @@
 
+Python 多线程的问题 https://www.v2ex.com/t/674432
+```py
+total = 0
+
+def add():
+    #1. dosomething1
+    #2. io 操作
+    # 1. dosomething3
+    global total
+    for i in range(1000000):
+        total += 1
+def desc():
+    global total
+    for i in range(1000000):
+        total -= 1
+
+import threading
+thread1 = threading.Thread(target=add)
+thread2 = threading.Thread(target=desc)
+thread1.start()
+thread2.start()
+
+thread1.join()
+thread2.join()
+print(total) # 178412
+```
+- > 简单来说 total 不是线程安全的，这个不只在 Python 中会出现，而是任何多线程语言下都会出现的现象，解决方案就是访问前加锁，或者用原子操作
+- > GIL：执行是单线程的，不代表线程的上下文是受保护的。即单线程的执行方式!=线程安全。
+- > 你可以 dis 看下生成的字节指令就知道了，+= 1 也是需要好多条指令的，python 的 GIL 应该只是在单条字节指令保证原子性吧，但是你一行代码很多时候都是多条字节指令的吧
+- > += 和 -= 不是原子的
+- > 1.GIL 意思是任何时候只有一个线程运行 <br> 2.因为增量赋值不是原子操作，具体可看 dis.dis('a += 1') 的字节码不止一步 <br> 3.线程是系统调度的，你不知道何时切换 <br> 4.好，那你怎么就知道在做增量赋值的字节码某一步的时候，不会切换到了另一个线程呢？
+- > 全局定义一个 lock = threading.Lock()，+=、-=之前增加一个 with lock:的块
+
 请教： Python 获取 shell 自定义变量的值。 https://www.v2ex.com/t/658012
 ```console
 我在当前 shell 中定义了 test 这个自定义变量，同时，我启动了一个 Py 脚本，这个 Py 脚本有没有办法获取当前 shell 的
