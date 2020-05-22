@@ -58,6 +58,13 @@ VirtuaNES http://www.emulator-zone.com/doc.php/nes/virtuanes.html
 Mac-有闲来玩老游戏 https://sspai.com/post/43078
 > OpenEmu http://openemu.org/ || https://github.com/OpenEmu/OpenEmu
 
+《吃豆人》发布 40 周年：以“吃”为主题的女性向游戏 https://www.ithome.com/0/488/748.htm
+- > 四个颜色的鬼魂「性格迥异」：红色追踪吃豆人位置；粉色会判断吃豆人行进方向，伺机伏击；青色会主动在吃豆人和豆子之间设置陷阱；黄色随机追击吃豆人。
+- > 当然后来的吃豆人系列几乎出现在了所有的游戏平台上。2010 年三十周年之际，Google 与万代南梦宫合作制作了第一款可互动式 Doodle，将这个经典游戏移植到了网页上，保留音乐、玩法等经典元素，甚至还有充满仪式感的投币系统，连点两次会触发彩蛋出现吃豆人小姐，进行双人游戏。玩到 256 关会触发乱码 bug，这也是一个梗，来自 8 位机时代的整数溢出。
+- 补充自己搜索的链接:
+  * https://www.google.com/logos/2010/pacman10-i.html
+  * https://www.google.com/doodles/30th-anniversary-of-pac-man
+
 # 家用游戏机
 
 【不止游戏】童年经典FC游戏，竟然隐藏了这么多剧情？ https://www.acfun.cn/v/ac11366435
