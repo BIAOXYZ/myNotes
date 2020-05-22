@@ -54,6 +54,9 @@ http://www.jb51.net/article/89425.htm
 【循序渐进学Python】系列 http://www.cnblogs.com/IPrograming/category/476786.html
 - 【循序渐进学Python】10.模块和包 http://www.cnblogs.com/IPrograming/archive/2013/11/24/Python_module_package.html
 
+📖《Python Parallel Programming Cookbook》中文版 https://github.com/laixintao/python-parallel-programming-cookbook-cn
+> Python并行编程 中文版 https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/index.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # python项目类
