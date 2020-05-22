@@ -13,6 +13,18 @@ Can a PVC be bound to a specific PV? https://stackoverflow.com/questions/3428270
 
 ## 个人实战
 
+起因是新员工基于Zalando的pg operator的[v1.5.0版本](https://github.com/zalando/postgres-operator/tree/v1.5.0)，在她的虚机上跑官方[Quickstart](https://github.com/zalando/postgres-operator/blob/v1.5.0/docs/quickstart.md)创建最简cluster（就下面这几句其实）：
+```sh
+git clone https://github.com/zalando/postgres-operator.git
+cd postgres-operator
+kubectl create -f manifests/configmap.yaml
+kubectl create -f manifests/operator-service-account-rbac.yaml
+kubectl create -f manifests/postgres-operator.yaml
+kubectl create -f manifests/api-service.yaml
+kubectl create -f manifests/minimal-postgres-manifest.yaml
+```
+但总是pv有问题。我自己在katacoda上用minikube试了下没问题，然后去她环境上看了下。最后从katacoda那个可以正常起来的例子里把pv和pvc都--export出来，删掉大部分，然后拷到新员工机器上。最后创建master实例成功。
+
 ```sh
 [root@voles1 postgres-operator]# cat pv00.yaml
 apiVersion: v1
@@ -50,5 +62,11 @@ pv00   1Gi        RWO            Delete           Bound    default/pgdata-acid-m
 [root@voles1 postgres-operator]# kubectl get pvc
 NAME                            STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 pgdata-acid-minimal-cluster-0   Bound     pv00     1Gi        RWO                           16m
+pgdata-acid-minimal-cluster-1   Pending                                                     12m
 [root@voles1 postgres-operator]#
+
+// 第一个因为已经设置好pv和pvc了，所以已经正常了。第二个就懒得再设置了，找到原因就行。
+[root@voles1 postgres-operator]# kubectl get pod | grep minimal
+acid-minimal-cluster-0              1/1     Running            0          46m
+acid-minimal-cluster-1              0/1     Pending            0          20m
 ```
