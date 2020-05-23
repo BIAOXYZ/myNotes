@@ -96,6 +96,12 @@ Comparison of major Linux package management systems https://linuxconfig.org/com
 
 Windows 系统的包管理器 https://davidsheh.github.io/2017/09/09/windows-chocolatey-scoop/
 
+Windows统一开发环境的基础-Chocolatey - 陈龙的文章 - 知乎 https://zhuanlan.zhihu.com/p/53421288
+- > 文件名称随意，但是扩展名必须是.config。通过.config的方式，就可以配置一个团队统一的开发环境，软件和版本都可以统一。这样可以为开发带来很多好处，避免由于开发环境不一样引起的各种不同错误。
+- > 通过传统方式安装软件，如果配置了环境变量，例如JAVA_HOME,PATH等等，都需要重启命令行工具，甚至要等一会才能生效。Chocolatey提供了一个refreshenv命令，可以快速生效环境变量。
+  >> // notes：这个我记得windows也有吧。。。我在windows_related.md里总结过。
+- > 评论区很多人提到scoop，并且很多反应Chocolatey无法修改安装路径。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Chocolatey
@@ -104,6 +110,17 @@ About Chocolatey https://chocolatey.org/about
 > "Chocolatey is a package manager for Windows (like apt-get or yum but for Windows). It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer."
 >> 非常巧合地发现了这个Windows下的包管理软件————因为偶然在看[TikZiT](https://github.com/tikzit/tikzit)的README.md，里面提到在Windows下装`flex/bison`的话可以用`WinFlexBison`或者用`Chocolatey`————不过回头有时间再试试好了。
 >>> "In addition to Qt itself, TikZiT needs flex/bison, Poppler (with Qt bindings), and OpenSSL. For flex/bison, the simplest way to install this is to download WinFlexBison, then make sure both are in your %Path% so the build tools can find them. Altflex/bisonernatively, you can install it via Chocolatey, via: `choco install winflexbison`"
+
+## Chocolatey常用命令总结
+
+```powershell
+choco search <package_name>
+
+# 类似Linux下的包管理，也可以加上 -y 免得需要确认
+choco install <package_name> --version <version_number>
+
+choco list --local-only
+```
 
 ## Chocolatey安装个人实战
 
@@ -193,6 +210,106 @@ Ensuring chocolatey.nupkg is in the lib folder
 PS C:\WINDOWS\system32>
 PS C:\WINDOWS\system32> choco -v
 0.10.15
+```
+
+## Chocolatey使用个人实战
+
+>> notes：本来就想借着在windows上安装node.js的契机试试Chocolatey，结果最后的结果有点醉：说没安装成功吧，windows上有node.js了，用`choco list --local-only`也看到node.js了。但是安装过程中确实也报错了。。。
+>>> 呃，写完上面那段又仔细瞅了一眼，明白了：是我冤枉了Chocolatey。我那个安装语句`choco install nodejs-lts 12.16.3`，它把`12.16.3`直接当成另外一个软件包了。。。
+
+```powershell
+Windows PowerShell
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+尝试新的跨平台 PowerShell https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> choco search node.js
+Chocolatey v0.10.15
+nodejs-lts 12.16.3 [Approved]
+nodejs 14.3.0 [Approved]
+visualstudio2019-workload-node 1.0.0 [Approved]
+visualstudio2017-workload-node 1.2.2 [Approved]
+visualstudio2017-workload-nodebuildtools 1.0.1 [Approved]
+visualstudio2019-workload-nodebuildtools 1.0.0 [Approved]
+nodejs.install 14.3.0 [Approved]
+nvm 1.1.5 [Approved]
+nvm.portable 1.1.7 [Approved] Downloads cached for licensed users
+LightTable 0.8.1 [Approved] Downloads cached for licensed users
+nodejs.commandline 6.11.0 [Approved]
+nodist 0.9.1 [Approved]
+gnvm 0.2.0 [Approved] Downloads cached for licensed users
+flattenpackages 1.1.14 [Approved] Downloads cached for licensed users
+markdownlint-cli 0.23.1 [Approved]
+bower 1.8.8 [Approved]
+typescript 3.9.3 [Approved]
+balena-cli 11.35.5 [Approved]
+konversation 1.1.0 [Approved]
+gulp-cli 2.2.1 [Approved]
+heroku-cli 7.41.1.0 [Approved]
+etcher 1.5.91 [Approved] Downloads cached for licensed users
+picassio 0.12.0 [Approved] Downloads cached for licensed users
+hyperspace-desktop 1.1.0 [Approved] Downloads cached for licensed users
+vscodium.portable 1.45.1 [Approved] Downloads cached for licensed users
+RubyMine 2020.1.1 [Approved] Downloads cached for licensed users
+vscodium 1.45.1 [Approved]
+vscodium.install 1.45.1 [Approved]
+28 packages found.
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> choco install nodejs-lts 12.16.3
+Chocolatey v0.10.15
+Installing the following packages:
+nodejs-lts;12.16.3
+By installing you accept licenses for the packages.
+Progress: Downloading nodejs-lts 12.16.3... 100%
+
+nodejs-lts v12.16.3 [Approved]
+nodejs-lts package files install completed. Performing other installation steps.
+The package nodejs-lts wants to run 'chocolateyinstall.ps1'.
+Note: If you don't run this script, the installation will fail.
+Note: To confirm automatically next time, use '-y' or consider:
+choco feature enable -n allowGlobalConfirmation
+Do you want to run the script?([Y]es/[A]ll - yes to all/[N]o/[P]rint): y
+
+Installing 64 bit version
+Installing nodejs-lts...
+nodejs-lts has been installed.
+  nodejs-lts may be able to be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of nodejs-lts was successful.
+  Software installed as 'MSI', install location is likely default.
+12.16.3 not installed. The package was not found with the source(s) listed.
+ Source(s): 'https://chocolatey.org/api/v2/'
+ NOTE: When you specify explicit sources, it overrides default sources.
+If the package version is a prerelease and you didn't specify `--pre`,
+ the package may not be found.
+Please see https://chocolatey.org/docs/troubleshooting for more
+ assistance.
+
+Chocolatey installed 1/2 packages. 1 packages failed.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Failures
+ - 12.16.3 - 12.16.3 not installed. The package was not found with the source(s) listed.
+ Source(s): 'https://chocolatey.org/api/v2/'
+ NOTE: When you specify explicit sources, it overrides default sources.
+If the package version is a prerelease and you didn't specify `--pre`,
+ the package may not be found.
+Please see https://chocolatey.org/docs/troubleshooting for more
+ assistance.
+
+Did you know the proceeds of Pro (and some proceeds from other
+ licensed editions) go into bettering the community infrastructure?
+ Your support ensures an active community, keeps Chocolatey tip top,
+ plus it nets you some awesome features!
+ https://chocolatey.org/compare
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> choco list --local-only
+Chocolatey v0.10.15
+chocolatey 0.10.15
+nodejs-lts 12.16.3
+2 packages installed.
+PS C:\WINDOWS\system32>
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
