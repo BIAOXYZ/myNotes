@@ -13,6 +13,8 @@ Alternatives to TeamViewer https://alternativeto.net/software/teamviewer/
 
 Dynatrace vs Honeycomb https://stackshare.io/stackups/dynatrace-vs-honeycomb
 
+Chocolatey vs Scoop.sh https://stackshare.io/stackups/chocolatey-vs-scoop
+
 ## [G2](https://www.g2.com/)
 
 Compare Azure Log Analytics, Datadog, Fluentd, and Humio https://www.g2.com/compare/azure-log-analytics-vs-datadog-vs-fluentd-vs-humio

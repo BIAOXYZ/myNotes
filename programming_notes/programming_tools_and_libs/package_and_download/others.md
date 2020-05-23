@@ -90,6 +90,14 @@ Comparison of major Linux package management systems https://linuxconfig.org/com
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Windows下包管理general
+
+软件包管理工具选Scoop还是Chocolatey？看完这篇就知道了 https://www.cnbeta.com/articles/tech/874537.htm
+
+Windows 系统的包管理器 https://davidsheh.github.io/2017/09/09/windows-chocolatey-scoop/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Chocolatey
 
 About Chocolatey https://chocolatey.org/about
