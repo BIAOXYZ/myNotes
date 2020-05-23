@@ -8,6 +8,8 @@ Yum Package Manager http://yum.baseurl.org/
 
 ## 常用yum command个人总结
 
+### yum install
+
 ```sh
 # 安装指定版本的package
 yum install <package name>-<version info>
@@ -27,6 +29,12 @@ ansible.noarch                                                            2.9.3-
 ...
 
 Complete!
+
+----------------------------------------------------------------------------------------------------
+# 偶然从powershell的官网发现yum可以直接装github的release页面上的rpm。。。
+# https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7
+sudo yum install https://github.com/PowerShell/PowerShell/releases/download/v7.0.1/powershell-lts-7.0.1-1.rhel.7.x86_64.rpm
+----------------------------------------------------------------------------------------------------
 ```
 
 ## yum general
