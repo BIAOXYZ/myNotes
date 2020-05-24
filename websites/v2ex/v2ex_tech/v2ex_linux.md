@@ -1,4 +1,8 @@
 
+Linux 挂在局域网里，没有接显示器，断电之后， IP 地址变了，如何获知 IP 地址？ https://www.v2ex.com/t/674844
+- > mac 地址又不会变，windows: arp -a linux: arp-scan -l
+- > DDNS 脚本设置为开机启动即可。有计算机名，有 mDNS 系统加持，只要计算机名不冲突，你可以 计算机名 就可以解析到对应的机器 IP 。
+
 想把自己的老笔记本搞成小型的虚拟化平台 https://www.v2ex.com/t/673944
 
 啊，手快 rm 了，怎么从进程恢复源文件 https://www.v2ex.com/t/673730
