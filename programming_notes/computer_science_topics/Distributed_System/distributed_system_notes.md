@@ -94,6 +94,13 @@ The Part-Time Parliament(Paxos算法中文翻译) https://wenku.baidu.com/view/8
 使用multi-paxos实现日志同步应用 - 吴镝的文章 - 知乎
 https://zhuanlan.zhihu.com/p/20872811
 
+## ZAB
+
+分布式一致性与共识算法简介 | 周末送书 https://mp.weixin.qq.com/s/FNsP6whFDWdPujIf9jSIZg
+- > ZooKeeper的核心是一个名叫ZAB的算法，这是Paxos算法的一个变种。ZAB算法的详细内容这里不做展开，一方面ZAB算法和Paxos算法有相同的地方，另一方面ZooKeeper在面向客户端方面所做的设计可能比ZAB算法更加复杂，因此就算理解了ZAB算法也不一定能完全理解ZooKeeper的设计。
+
+Zab vs. Paxos https://cwiki.apache.org/confluence/display/ZOOKEEPER/Zab+vs.+Paxos
+
 # Paxos实现
 
 C++ Paxos library that has been used in Wechat production environment. https://github.com/Tencent/phxpaxos
