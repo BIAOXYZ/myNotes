@@ -126,6 +126,8 @@ Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
 - 带你入门operator-framework http://dockone.io/article/5877
 - 【kubernetes/k8s概念】CRD CustomResourceDefinition 自定义资源类型 https://blog.csdn.net/zhonglinzhang/article/details/86553744
 
+Kubernetes Operator 快速入门教程（Kubernetes Operator 101） https://github.com/cnych/opdemo || https://www.qikqiak.com/post/k8s-operator-101/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## operator源码相关

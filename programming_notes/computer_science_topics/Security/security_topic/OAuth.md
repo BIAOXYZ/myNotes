@@ -22,6 +22,9 @@ OAuth https://oauth.net/
   * OAuth articles by Alex Bilbie https://alexbilbie.com/tag/oauth/
     + A Guide To OAuth 2.0 Grants https://alexbilbie.com/guide-to-oauth-2-grants/
 
+# OAuth related project
+
+ORY Hydra -- OAuth2 Server and OpenID Certified™ OpenID Connect Provider written in Go - cloud native, security-first, open source API security for your infrastructure. SDKs for any language. https://github.com/ory/hydra || https://www.ory.sh/hydra/
 
 # OAuth others
 
