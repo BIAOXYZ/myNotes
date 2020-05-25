@@ -295,6 +295,8 @@ Go：为何带来泛型 ~~https://juejin.im/entry/5d48e24ce51d453bc470de72~~ || 
 
 GO如何支持泛型 - 罗晓的文章 - 知乎 https://zhuanlan.zhihu.com/p/74525591
 
+GO语言泛型编程实践 https://juejin.im/post/5bf36e51e51d452b196493ec
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go反射
