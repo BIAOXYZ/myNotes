@@ -13,7 +13,7 @@ Multicloud application management with a deployable CRD. https://github.com/open
 - `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/1e78c3fec1/pkg/utils/kubernetes.go#L56
 
 【:x:】
-- `placementv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/release-2.0/pkg/apis/apps/v1/deployable_types.go#L22
+- `placementv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/release-2.0/pkg/apis/apps/v1/deployable_types.go#L22   **V.S.**   `placementv1alpha1 "github.com/IBM/multicloud-operators-placementrule/pkg/apis/app/v1alpha1"` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/a429faaac3b4f41434b9ac37aa75dde152a94e2a/pkg/apis/app/v1alpha1/deployable_types.go#L22
 
 ### multicloud-operators-subscription
 
