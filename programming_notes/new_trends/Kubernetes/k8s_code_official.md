@@ -138,6 +138,20 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## [[package errors]] ((https://godoc.org/k8s.io/apimachinery/pkg/api/errors))
+
+### pkg/api/errors/errors.go
+
+- `func IsNotFound(err error) bool {` 【`errors.IsNotFound(err)`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/api/errors/errors.go#L486
+  ```go
+  // IsNotFound returns true if the specified error was created by NewNotFound.
+  func IsNotFound(err error) bool {
+  	return ReasonForError(err) == metav1.StatusReasonNotFound
+  }
+  ```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## [[[package v1]]] (https://godoc.org/k8s.io/apimachinery/pkg/apis/meta/v1)
 
 ### pkg/apis/meta/v1/time.go
