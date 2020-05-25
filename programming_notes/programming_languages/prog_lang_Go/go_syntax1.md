@@ -138,6 +138,13 @@ Go语言中的Array、Slice、Map和Set使用详解 http://www.jb51.net/article/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## go map
+
+How to copy a map? https://stackoverflow.com/questions/23057785/how-to-copy-a-map
+>> //notes：总结下就是如果要拷贝一个map到另一个新的map，最稳妥的方式还是申请一个同类型的新map，然后逐个k，v的赋值。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## go语言闭包
 
 理解Go语言中的函数闭包 - CSDN博客
