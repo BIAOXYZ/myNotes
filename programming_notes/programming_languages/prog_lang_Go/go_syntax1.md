@@ -284,12 +284,16 @@ China
 
 ## go泛型
 
-Go：为何带来泛型 https://juejin.im/entry/5d48e24ce51d453bc470de72
+Go：为何带来泛型 ~~https://juejin.im/entry/5d48e24ce51d453bc470de72~~ || https://github.com/llgoer/go-generics/blob/master/README.md
+>> //notes：第一个排版不行，要看还是看第二个。而且翻译的有点别扭，英文原版更好：
+>>> Why Generics? https://blog.golang.org/why-generics
 
 为什么 Go 语言没有泛型 https://draveness.me/whys-the-design-go-generics/
 - > Java 在 1.5 版本引入了泛型，它的泛型是用类型擦除实现的。Java 的泛型只是在编译期间用于检查类型的正确，为了保证与旧版本 JVM 的兼容，类型擦除会删除泛型的相关信息，导致其在运行时不可用。编译器会插入额外的类型转换指令，与 C 语言和 C++ 在运行前就已经实现或者生成代码相比，Java 类型的装箱和拆箱会降低程序的执行效率。
   >> //notes：关于类型擦除
   >>> [揭开Java 泛型类型擦除神秘面纱](https://mp.weixin.qq.com/s/29MqAcvjkISEyIN-_jVV4A) || [Java 泛型背后的原理是什么？](https://mp.weixin.qq.com/s/LVWkMwdKMBVwNHWZG2QxJA) || [面试官问我：“泛型擦除是什么，会带来什么问题？”](https://mp.weixin.qq.com/s/AmdKXQApHlsGDUzcb0yOMA)
+
+GO如何支持泛型 - 罗晓的文章 - 知乎 https://zhuanlan.zhihu.com/p/74525591
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
