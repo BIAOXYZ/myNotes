@@ -320,6 +320,8 @@ The International (TI) DOTA 2 Championships http://www.dota2.com/international/o
 
 DOTA2 TI6总决赛：WINGS VS DC https://www.bilibili.com/video/av30652596/
 
+【ti6 dota2总决赛回放】DC对战Wings https://www.bilibili.com/video/BV1Rs411x72u?p=4  // from：哔哩哔哩刀塔2赛事
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Dota2攻略
