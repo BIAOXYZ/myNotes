@@ -12,13 +12,19 @@ IBM Cloud Paks are enterprise-grade containerized software by combining containe
 Multicloud application management with a deployable CRD. https://github.com/open-cluster-management/multicloud-operators-deployable
 - `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/1e78c3fec1/pkg/utils/kubernetes.go#L56
 
+【:x:】
+- `placementv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-deployable/blob/release-2.0/pkg/apis/apps/v1/deployable_types.go#L22
+
 ### multicloud-operators-subscription
 
 CRD and controller for Subscription (Channel Subscription model) for Multicloud Application. https://github.com/open-cluster-management/multicloud-operators-subscription
 - `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/kubernetes.go#L35
 - `err = CheckAndInstallCRD(cfg, "../../deploy/crds/apps.open-cluster-management.io_subscriptions_crd.yaml")` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/util_test.go#L53
 
-【:x:】 `plrv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L25
+【:x:】 
+- `dplv1alpha1 "github.com/open-cluster-management/multicloud-operators-deployable/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L24
+- `plrv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L25
+ 
 
 ## Hybrid Application Model https://github.com/hybridapp-io
 
