@@ -3,6 +3,11 @@
 
 关于ISTIO https://istio.io/zh/about/community/
 
+# Istio系列教程
+
+Istio V1.0 系列 https://developer.ibm.com/cn/os-academy-istio/
+- Istio v1.6 系列 https://developer.ibm.com/cn/os-academy-istio-2020/
+
 # Istio其它
 
 为什么我们需要Istio https://jimmysong.io/posts/why-do-we-need-istio/
