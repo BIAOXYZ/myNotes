@@ -1,4 +1,11 @@
 
+命令行请教下，老哥们！ https://www.v2ex.com/t/675372
+- > https://unix.stackexchange.com/questions/11376/what-does-double-dash-mean
+  >> More precisely, a double dash (--) is used in most bash built-in commands and many other commands ***to signify the end of command options***, after which only positional parameters are accepted.
+  >>
+  >> Example use: lets say you want to grep a file for the string -v - normally -v will be considered the option to reverse the matching meaning (only show lines that do not match), but with -- you can grep for string -v like this: `grep -- -v file`
+- > 假如你有个文件是-开头的，比如-foo，想删除的话可以 rm -- -foo，或者 rm ./-foo 。而且这个东西 man 里都写了。。。
+
 Linux 挂在局域网里，没有接显示器，断电之后， IP 地址变了，如何获知 IP 地址？ https://www.v2ex.com/t/674844
 - > mac 地址又不会变，windows: arp -a linux: arp-scan -l
 - > DDNS 脚本设置为开机启动即可。有计算机名，有 mDNS 系统加持，只要计算机名不冲突，你可以 计算机名 就可以解析到对应的机器 IP 。
