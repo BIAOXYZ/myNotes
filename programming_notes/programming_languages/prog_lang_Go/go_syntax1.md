@@ -19,6 +19,8 @@ https://www.zhihu.com/question/21656696/answer/19027040
 
 golang新手容易犯的三个错误 - 西二旗搬砖仔的文章 - 知乎 https://zhuanlan.zhihu.com/p/41418726
 
+了解 Go 1.9 的类型别名 https://colobu.com/2017/06/26/learn-go-type-aliases/
+
 ## go语法之`...` 
 
 ### 用在代码中
