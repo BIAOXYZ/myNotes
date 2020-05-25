@@ -18,6 +18,8 @@ CRD and controller for Subscription (Channel Subscription model) for Multicloud 
 - `func CheckAndInstallCRD(crdconfig *rest.Config, pathname string) error {` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/kubernetes.go#L35
 - `err = CheckAndInstallCRD(cfg, "../../deploy/crds/apps.open-cluster-management.io_subscriptions_crd.yaml")` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/6f4f30ceb6/pkg/utils/util_test.go#L53
 
+【:x:】 `plrv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L25
+
 ## Hybrid Application Model https://github.com/hybridapp-io
 
 Operator to deploy Hybrid Application Model https://github.com/hybridapp-io/ham-deploy
