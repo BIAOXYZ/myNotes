@@ -250,6 +250,16 @@ http://gitbook.liuhui998.com/4_2.html
 <<git merge, rebase和*(no branch)>>
 http://blog.csdn.net/xiaoputao0903/article/details/23995055
 
+【[:star:][`*`]】 Rebase 代替合并 https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/rebase || Rebase as an Alternative to Merge https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/rebase
+
+Merging vs. Rebasing https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+
+git rebase in depth https://git-rebase.io/
+
+**--------------------------------------------------**
+`#` ***git rebase 个人实战：开始***
+**--------------------------------------------------**
+
 ```
 # git rebase 实验过程
 
@@ -298,6 +308,7 @@ git log --graph --oneline
 ```
 
 *使用rebase*
+> 注意看commit id，对比上一个，没有发生变化的是`111_1`的`a18e755`和`111_2`的`5783c0c`。这其实就是“rebase”的含义所在：**把当前分支（分支222）的base从原来的`fe5da30`给rebase到另一个分支（分支111）的最新的commit（`111_2`对应的`5783c0c`）后面**。就算没有冲突，`222_1`和`222_2`因为其父提交已经变了，所以肯定commit id也会变；如果有冲突，那连内容也会变。
 ```
 * ca04343 222_2
 * c148b23 222_1
@@ -305,6 +316,10 @@ git log --graph --oneline
 * a18e755 111_1
 * fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
 ```
+
+**--------------------------------------------------**
+`#` ***git rebase 个人实战：结束***
+**--------------------------------------------------**
 
 ### git fetch(也包含部分git pull的内容)
 
