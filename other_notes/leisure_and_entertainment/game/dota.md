@@ -297,6 +297,11 @@ The International (TI) DOTA 2 Championships http://www.dota2.com/international/o
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## TI10
+
+TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ https://mp.weixin.qq.com/s/T98fmhbKZt1MHAIiKM-55Q
+- > `等级305：敌法师身心：高徒正道`  -->  为啥敌法变成女的了？？？
+
 ## TI9
 
 《Dota2》TI9选手年龄出炉：最小还是00后，“最老”29岁 https://www.ithome.com/0/433/656.htm
