@@ -299,8 +299,10 @@ The International (TI) DOTA 2 Championships http://www.dota2.com/international/o
 
 ## TI10
 
-TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ https://mp.weixin.qq.com/s/T98fmhbKZt1MHAIiKM-55Q
+TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ https://mp.weixin.qq.com/s/T98fmhbKZt1MHAIiKM-55Q || https://www.dota2.com.cn/article/details/20200526/216371.html
 - > `等级305：敌法师身心：高徒正道`  -->  为啥敌法变成女的了？？？
+  >> 呃，再细看一下，好像这个真的是个妹子，不是敌法。。。看说明貌似这个妹子是敌法的徒弟。
+  >>> `从星隐寺信仰的灰烬里，新的血统已经崛起。芛，通过了敌法师——收养她的导师数项失传技艺的训练。经泰勒庄园号召，她的训练迎来了最终的考验——看她是否真正准备好面对魔法的世界，终结这些国度的法师们那邪恶的一生。`
 
 ## TI9
 
