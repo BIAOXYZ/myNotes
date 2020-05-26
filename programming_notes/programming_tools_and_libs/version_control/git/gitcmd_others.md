@@ -196,13 +196,34 @@ git push -u origin --tags
 
 ## Github相关
 
-<<为什么我pull request后全部放在一个未关闭的pull request里面了>>
-https://segmentfault.com/q/1010000005178786
+<<为什么我pull request后全部放在一个未关闭的pull request里面了>> https://segmentfault.com/q/1010000005178786
 
 Github进行fork后如何与原仓库同步：重新fork很省事，但不如反复练习版本合并 https://github.com/selfteaching/the-craft-of-selfteaching/issues/67
 - > 分享一个命令，直接强制同步源仓库（upstream），就不用删了。。
     <br> `git fetch upstream && git reset --hard upstream/master && git push -f`
     <br> git push -f确实是很粗暴，这种方法也只适用于不用保存自己的版本的情况而已。
+
+***关于在github仓库review完code批准合入时的选项***：
+- About pull request merges https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges
+  * > default Merge pull request option: ![](https://help.github.com/assets/images/help/pull_requests/standard-merge-commit-diagram.png)
+  * > Squash and merge option: ![](https://help.github.com/assets/images/help/pull_requests/commit-squashing-diagram.png)
+  * > Rebase and merge option: 
+    >> 这个没配图，但是可以搜到这个是继那两个之后新加的：https://github.blog/2016-09-26-rebase-and-merge-pull-requests/
+- Merging a pull request https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request
+  * > ![](https://help.github.com/assets/images/help/pull_requests/select-squash-and-merge-from-drop-down-menu.png) 
+```console
+10:50
+why there are 2 commits? did you use squash and merge? :slightly_smiling_face: anyway. thanks.
+
+10:51 AM
+I just use default merge option...do not see a lot.
+
+10:52 AM
+please always to “Squash and Merge” to reduce the number of commits in master branch
+```
+>> //note：总体而言，一般好像还是用`Squash and merge`的居多。默认选项是用的越来越少了，因为会把仓库分支搞得很乱。
+
+
 
 ### Github Gist
 
