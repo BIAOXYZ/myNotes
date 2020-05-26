@@ -208,7 +208,7 @@ Github进行fork后如何与原仓库同步：重新fork很省事，但不如反
   * > default Merge pull request option: ![](https://help.github.com/assets/images/help/pull_requests/standard-merge-commit-diagram.png)
   * > Squash and merge option: ![](https://help.github.com/assets/images/help/pull_requests/commit-squashing-diagram.png)
   * > Rebase and merge option: 
-    >> 这个没配图，但是可以搜到这个是继那两个之后新加的：https://github.blog/2016-09-26-rebase-and-merge-pull-requests/
+    >> 这个没配图，但是可以搜到这个是继那两个之后新加的：[Rebase and merge pull requests -- github blog](https://github.blog/2016-09-26-rebase-and-merge-pull-requests/)。而且从两个local的命令git merge和git rebase的区别也不难看出，如果使用Rebase and merge option，应该是不存在图里的`F`，而是直接把`D->E`接到Master分支的`C`后面。
 - Merging a pull request https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request
   * > ![](https://help.github.com/assets/images/help/pull_requests/select-squash-and-merge-from-drop-down-menu.png) 
 ```console
