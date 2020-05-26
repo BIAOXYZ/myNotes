@@ -1,4 +1,6 @@
 
+各位好，请教个 SQL 查询问题 https://www.v2ex.com/t/675639
+
 事务的原子性是由 redo log 还是 undo log 实现的? https://www.v2ex.com/t/674050
 
 如何选择国产数据库：人大金仓？达梦？南大通用？请 V 友指点 https://www.v2ex.com/t/670566
