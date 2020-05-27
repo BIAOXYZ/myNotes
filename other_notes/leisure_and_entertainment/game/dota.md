@@ -59,6 +59,8 @@ EHOME https://liquipedia.net/dota2/EHOME
 
 PSG.LGD https://liquipedia.net/dota2/PSG.LGD
 
+Team DK https://liquipedia.net/dota2/Team_DK
+
 Old Boys https://liquipedia.net/dota2/Old_Boys
 
 ### player
