@@ -338,3 +338,7 @@ DOTA2 TI6总决赛：WINGS VS DC https://www.bilibili.com/video/av30652596/
 ## 英雄攻略
 
 虚无之境，由我主宰！天梯前200排名哥的虚无之灵攻略 - 电竞GO的文章 - 知乎 https://zhuanlan.zhihu.com/p/95520443
+
+# 其他
+
+Dota史册------被永久移除的英雄（Part 2） https://www.bilibili.com/video/BV12A411t7qU
