@@ -33,3 +33,30 @@ Oracle GoldenGate快速入门篇（详解GoldenGate概念到原理） http://www
 [Oracle] Golden Gate - 概念和机制 https://blog.csdn.net/dbanote/article/details/33322601
 
 Oracle GoldenGate 详解 https://www.cnblogs.com/rangle/p/8987063.html
+
+# 数据迁移
+
+有一个上百 G 的 Oracle 数据库，要整体迁移至 MySql，麻烦各位大佬给个思路 https://www.v2ex.com/t/675899
+```console
+navicat 数据传输 /导出 sql 等功能，跑单表都内存溢出。
+dbeaver 也一样直接卡主。
+oracle 数据库表设计还很坑爹地用了浮点型做主键，然后利用序列自增
+自动化迁移 mysql 之后还要修改字段为整型才能改自增
+--------------------------------------------------
+第 1 条附言  ·  6 小时 6 分钟前
+经过测试 应该可以处理好了 DataX 牛 X ！
+```
+- > 用 datax 啊，https://github.com/alibaba/DataX 迁移过近百 T 的数据
+- > 【楼主】16G 内存+12G 虚拟内存 跑不赢 13g 单表 直接报内存不足 卡死
+- > datax 是 etl 工具，阿里开发的，但不需要上云啊，你要迁也只能用这种东西稍微方便点
+- > 【楼主】我的也就几个大表数据特别多，其他的可以 navicat 一键迁移
+- > kettle 可以吧
+- > DATAX 好评加一 迁移过上亿数据
+- > 虽然我用的 mongoDb,但也应该差不多。之前我遇到的情况是迁移 2000 万记录的单表，整体查出来肯定爆内存，用游标十几分钟就能全表迁移走
+- > 说下我用的比较多的工具 <br> kettle 这样的 etl 工具 适用表不多的情况 比较好用，msdts 也能用 <br> ESF Database Migration Toolkit - Professional，这个比较简单
+- > 用过 kettle 做 mysql 到 postgres 的迁移，还不错
+- > streamsets 也行吧
+
+## DataX
+
+DataX https://github.com/alibaba/DataX

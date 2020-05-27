@@ -1,4 +1,10 @@
 
+国内有便宜靠谱的 kubernetes 服务吗？ https://www.v2ex.com/t/676056
+- > 阿里云上有 serverless k8s 挺不错的只收取容器所占的硬件资源费用
+- > 腾讯云的貌似也只是机器收费，集群服务免费
+- > kubesail 有免费阶层可以使用，也有付费的，大概 7 刀一个月。
+  >> KubeSail https://kubesail.com/
+
 考了容器相关的 CKA 证书，攻略附上供大家参考 https://www.v2ex.com/t/669347
 > kodekloud 免登陆练习 https://kodekloud.com/courses/certified-kubernetes-administrator-with-practice-tests/lectures/9816528
 

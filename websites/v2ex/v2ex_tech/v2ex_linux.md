@@ -1,4 +1,21 @@
 
+ssh 免密登陆问题，求大神支援，全网搜未碰到同款问题！ https://www.v2ex.com/t/675922
+```console
+目前三台服务器 246，249，250 三台机器，首先我 246 用 ssh-copy-id 的方法传公钥到 249 是成功免密登陆的，然后我用脚本
+又试了一下，结果现在 246 ssh 无法连接 249，scp 无法传文件，报错也是没见过，全网搜无果，请求支援！看看谁有碰到过吗
+``sh
+[root@bjsaas .ssh]# ssh 10.230.64.249
+ssh: connect to host 10.230.64.249 port 60: Connection refused
+``
+不知道这个 port60 连接拒绝是个什么情况，有人碰到过知道怎么解决吗?
+```
+- > less ~/.ssh/config 你指定的端口是 60 吧，估计主机监听的 22，所以报连接被拒绝
+  >> 【楼主】对，我监听的是 22，指定的端口是 60，我没做过比如 ssh -p60 这样的指定端口操作，您知道这个指定端口可以在哪修改吗
+- > 看下 /etc/ssh/ssh_config 里面是不是设了 port ？
+- > 试试 ssh -p22 10.230.64.249 再看看服务器的日志
+- > 首先 ssh -vvv 可以看到比较有用的 debug 信息，另外如果没有禁用密码可以用 'PreferredAuthentications=password', 'PubkeyAuthentication=no' 来密码登入看看 auth.log/secure 之类的对比查看问题出在哪里。 <br> 其次，按照你的说法我觉得你本地可能没有 ForwardAgent，所以你本地 → 246 可以连接，然后 246 再 ssh 到 249 就断了。
+- > 在 246 上 修改配置文件 ~/.ssh/config 或者 /etc/ssh/ssh_config。Port 60 修改为 Port 22 或者注释掉
+
 命令行请教下，老哥们！ https://www.v2ex.com/t/675372
 - > https://unix.stackexchange.com/questions/11376/what-does-double-dash-mean
   >> More precisely, a double dash (--) is used in most bash built-in commands and many other commands ***to signify the end of command options***, after which only positional parameters are accepted.
