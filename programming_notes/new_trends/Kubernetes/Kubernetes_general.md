@@ -161,6 +161,8 @@ kubernetes学习笔记 https://zhuyasen.com/post/k8s.html
   kubectl get deployment nginx-deploy -o yaml | grep selfLink
   ```
 
+【[:star:][`*`]】 `动手学习Kubernetes #21` https://github.com/wmenjoy/awesome-knowleges/issues/21
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubernetes 快速开始
