@@ -9,6 +9,15 @@
 
 【[:star:][`*`]】 Rebase 代替合并 https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/rebase || Rebase as an Alternative to Merge https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/rebase
 - > Rebase 整合
+  * > 现在就让我们一步一步地了解一下 rebase 操作吧！仍然来使用前面的例子：我们想合并分支 B 到 分支 A 中，但是这次使用 rebase 操作。
+    >> ![](https://www.git-tower.com/learn/media/pages/git/ebook/cn/command-line/advanced-topics/rebase/439759406-1588165681/starting-situation-rebase.gif)
+  * > 使用下面这个非常的简单的命令：`$ git rebase branch-B`
+  * > 首先，Git 会 “撤销” 所有在分支 A 上的那些在与分支 B 的共同提交之后发生的提交。当然，Git 不会真的放弃这些提交，其实你可以把这些撤销的提交想像成 “被暂时地存储” 到另外的一个地方去了。
+    >> ![](https://www.git-tower.com/learn/media/pages/git/ebook/cn/command-line/advanced-topics/rebase/-982980492-1588165681/rebase-step-1.gif)
+  * > 接下来它会整合那些在分支 B（这个我们想要整合的分支）上的还未整合的提交到分支 A 中。在这个时间点，这两个分支看起来会是一模一样的。
+    >> ![](https://www.git-tower.com/learn/media/pages/git/ebook/cn/command-line/advanced-topics/rebase/-2100784476-1588165681/rebase-step-2.gif)
+  * > 最后，那些在分支 A 的新的提交（也就是第一步中自动撤销掉的那些提交）会被重新应用到这个分支上，但是在不同的位置上，在那些从分支 B 被整合过来的提交之后，它们就被 re-based 了。整个项目开发轨迹看起来就像发生在一条直线上。相对于一个合并提交，rebase 包括了所有的组合变化，最原始的提交结构会被保留下来。
+    >> ![](https://www.git-tower.com/learn/media/pages/git/ebook/cn/command-line/advanced-topics/rebase/-1079461100-1588165681/rebase-step-3.gif)
 - > Rebase 存在的陷阱
   * > 当然，使用 rebase 操作不会是永远一帆风顺的。很有可能会搬起石头砸自己的脚，因此你不能忽视一个重要的事实：**rebase 会改写历史记录**。
   * > 你有可能已经注意到了，在被 rebase 操作之后的版本中，提交 “`C3*`” 存在一个新添加的星号。这是因为，尽管这个提交的内容和 “`C3`” 完全一样，但是它实际上是一个不同的提交。这样做的原因是，它现在有一个新的源提交 `C4`（在最初创建 `C3` 时的源提交是 `C1`）。
