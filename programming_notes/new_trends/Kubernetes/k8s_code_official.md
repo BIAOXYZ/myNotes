@@ -89,6 +89,17 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 	  unstructuredClient unstructuredClient
   }
   ```
+- `func (c *client) Create(ctx context.Context, obj runtime.Object, opts ...CreateOption) error {` https://github.com/kubernetes-sigs/controller-runtime/blob/32b4434331/pkg/client/client.go#L113
+  ```go
+  // Create implements client.Client
+  func (c *client) Create(ctx context.Context, obj runtime.Object, opts ...CreateOption) error {
+  	_, ok := obj.(*unstructured.Unstructured)
+  	if ok {
+  		return c.unstructuredClient.Create(ctx, obj, opts...)
+  	}
+  	return c.typedClient.Create(ctx, obj, opts...)
+  }
+  ```
 - `func (c *client) Status() StatusWriter {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/client/client.go#L178
   ```go
   // Status implements client.StatusClient
