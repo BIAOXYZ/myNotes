@@ -28,28 +28,28 @@ git rebase in depth https://git-rebase.io/
 ```sh
 # git rebase 实验过程
 
-1.以某个分支如basebranch为起点创建并切换两个一模一样的分支111,222:
+# 1.以某个分支如basebranch为起点创建并切换两个一模一样的分支111,222:
 git checkout -b 111
 git checkout -b 222
 
-2.在这两个分支上分别做两次不同的修改和提交(为了简单起见，这两次不会有冲突，后续无需merge):
+# 2.在这两个分支上分别做两次不同的修改和提交(为了简单起见，这两次不会有冲突，后续无需merge):
 git commit -m 111_1
 git commit -m 111_2
-此时111分支的路线是：basebranch <-- 111_1 <-- 111_2
+# 此时111分支的路线是：basebranch <-- 111_1 <-- 111_2
 
 git commit -m 222_1
 git commit -m 222_2
-此时222分支的路线是：basebranch <-- 222_1 <-- 222_2
+# 此时222分支的路线是：basebranch <-- 222_1 <-- 222_2
 
-3.从111创建一模一样的分支1111，从222创建一模一样的分支2222
+# 3.从111创建一模一样的分支1111，从222创建一模一样的分支2222
 git checkout -b 1111
 git checkout -b 2222
 
-4.在分支2222上merge分支1111，在分支222上rebase分支111，观察log图
-4.1.切换到2222，并执行merge
+# 4.在分支2222上merge分支1111，在分支222上rebase分支111，观察log图
+# 4.1.切换到2222，并执行merge
 git checkout 2222
 git merge 1111
-4.2.切换到222，并执行rebase
+# 4.2.切换到222，并执行rebase
 git checkout 222
 git rebase 111
 
@@ -58,7 +58,7 @@ First, rewinding head to replay your work on top of it...
 Applying: 222_1
 Applying: 222_2
 
-4.3.分别在分支2222和分支222上查看log图
+# 4.3.分别在分支2222和分支222上查看log图
 git log --graph --oneline
 ```
 
