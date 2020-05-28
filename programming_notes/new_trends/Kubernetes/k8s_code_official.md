@@ -233,6 +233,18 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 - `type Pod struct {` https://github.com/kubernetes/api/blob/release-1.18/core/v1/types.go#L3537
 - `type ObjectReference struct {` 【`corev1.ObjectReference`】 https://github.com/kubernetes/api/blob/release-1.18/core/v1/types.go#L5044
+- `type LocalObjectReference struct {` 【`*corev1.LocalObjectReference`】 https://github.com/kubernetes/api/blob/release-1.18/core/v1/types.go#L5083
+  ```go
+  // LocalObjectReference contains enough information to let you locate the
+  // referenced object inside the same namespace.
+  type LocalObjectReference struct {
+  	// Name of the referent.
+  	// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+  	// TODO: Add other useful fields. apiVersion, kind, uid?
+  	// +optional
+  	Name string `json:"name,omitempty" protobuf:"bytes,1,opt,name=name"`
+  }
+  ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
