@@ -195,7 +195,7 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 - `type Decoder interface {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/interfaces.go#L73
 - `type Object interface {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/interfaces.go#L299
-  * >> notes：runtime.RawExtension里的Object成员就是这个接口类型。
+  * >> notes：runtime.RawExtension里的Object成员就是这个接口类型。还有好多其他obj都是这个接口类型。
 
 ### pkg/runtime/register.go 
 
@@ -204,7 +204,8 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
 
 ### pkg/runtime/scheme.go
 
-`type Scheme struct {` 【`runtime.Scheme`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
+- `type Scheme struct {` 【`runtime.Scheme`】 https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#47
+- `func (s *Scheme) ObjectKinds(obj Object) ([]schema.GroupVersionKind, bool, error) {` https://github.com/kubernetes/apimachinery/blob/release-1.18/pkg/runtime/scheme.go#L236
 
 ### pkg/runtime/types.go
 
