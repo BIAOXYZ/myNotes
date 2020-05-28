@@ -128,6 +128,12 @@ https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671c
   	StatusClient
   }
   ```
+  
+## [[package apiutil]] ((https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client/apiutil))
+
+### pkg/client/apiutil/apimachinery.go
+
+- `func GVKForObject(obj runtime.Object, scheme *runtime.Scheme) (schema.GroupVersionKind, error) {` 【`apiutil.GVKForObject(obj, c.scheme)`】 https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/client/apiutil/apimachinery.go#L50
 
 ## [[package config]] ((https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client/config))
 
