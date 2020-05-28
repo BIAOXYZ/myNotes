@@ -15,10 +15,11 @@ $ kubectl create secret docker-registry uiupdate1 -n kube-system --docker-server
 
 $ kubectl edit deployment -n kube-system multicluster-hub-console-mcmapplicationui
 
-# imagePullSecrets主要是针对pod的，但是pod最终是deployment控制的，所以这里在deployment的spec.template.spec下添加imagePullSecrets相关内容。
+# 1. imagePullSecrets主要是针对pod的，但是pod最终是deployment控制的，所以这里在deployment的spec.template.spec下添加imagePullSecrets相关内容。
 spec:
   template:
     spec:
       imagePullSecrets:
       - name: uiupdate1
+# 2. 用新镜像 hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com/ibmcom/cp4mcm-application-ui-amd64:3.6.0 替换deployment里的老镜像。
 ```
