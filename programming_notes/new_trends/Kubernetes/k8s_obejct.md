@@ -257,6 +257,11 @@ kubernetes支持PodSecurityPolicy https://ieevee.com/tech/2019/02/18/psp.html
 
 # kubernetes内部对象
 
+## kubernetes Labels and Annotations
+
+Kubernetes Labels 和 Annotations 最佳实践 https://supereagle.github.io/2019/03/31/k8s-labels/
+- > 由于 annotation 的定位是 Kubernetes 资源上附加任意的非标识性元数据，除了在 key 上有跟 label key 完全一样的限制外，在 value 上没有任何限制：可长可短，可结构化可非结构化，可包含任意字符。
+
 ## kubernetes Job
 
 ***From kubernetes official:***
