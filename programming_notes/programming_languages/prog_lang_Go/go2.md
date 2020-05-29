@@ -66,6 +66,8 @@ Tony Bai 一个程序员的心路历程 https://tonybai.com/
   * > 此外，我们还可以通过`...`操作符，把一个切片追加到另一个切片里。
   * > 仔细看，这两个切片的地址不一样，所以可以确认切片在函数间传递是复制的。而我们修改一个索引的值后，发现原切片的值也被修改了，说明它们共用一个底层数组。
 
+Go语言参数传递是传值还是传引用 https://www.flysnow.org/2018/02/24/golang-function-parameters-passed-by-value.html
+
 # 其他
 
 骏马金龙--Go语言系列文章 https://www.cnblogs.com/f-ck-need-u/p/9832538.html
