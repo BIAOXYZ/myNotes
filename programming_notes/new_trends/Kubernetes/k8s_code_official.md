@@ -60,7 +60,16 @@
 
 ## [package cache] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache)
 
-https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/cache/cache.go
+### https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/cache/cache.go
+
+- `type Informers interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/cache/cache.go#L52
+- `type Informer interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/cache/cache.go#L73
+- `type Options struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/cache/cache.go#L90
+  * >> //notes：这里又一个Options。。。
+
+## [[package internal]] ((https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache/internal))
+
+- `func (c *CacheReader) Get(_ context.Context, key client.ObjectKey, out runtime.Object) error {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/cache/internal/cache_reader.go#L48
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
