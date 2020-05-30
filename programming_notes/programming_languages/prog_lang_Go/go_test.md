@@ -105,6 +105,18 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
 
 ### matchers.go
 
+- `func BeEquivalentTo(expected interface{}) types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L23
+  ```go
+  //BeEquivalentTo is more lax than Equal, allowing equality between different types.
+  //This is done by converting actual to have the type of expected before
+  //attempting equality with reflect.DeepEqual.
+  //It is an error for actual and expected to be nil.  Use BeNil() instead.
+  func BeEquivalentTo(expected interface{}) types.GomegaMatcher {
+  	return &matchers.BeEquivalentToMatcher{
+  		Expected: expected,
+  	}
+  }
+  ```
 - `func BeTrue() types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L44
   ```go
   //BeTrue succeeds if actual is true
