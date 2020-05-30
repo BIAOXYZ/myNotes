@@ -112,6 +112,16 @@ Announcing Ginkgo and Gomega: BDD-Style Testing for Golang https://tanzu.vmware.
   	return &matchers.BeTrueMatcher{}
   }
   ```
+- `func HaveOccurred() types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L57
+  ```go
+  //HaveOccurred succeeds if actual is a non-nil error
+  //The typical Go error checking pattern looks like:
+  //    err := SomethingThatMightFail()
+  //    Expect(err).ShouldNot(HaveOccurred())
+  func HaveOccurred() types.GomegaMatcher {
+  	return &matchers.HaveOccurredMatcher{}
+  }
+  ```
 - `func HaveLen(count int) types.GomegaMatcher {` https://github.com/onsi/gomega/blob/6be6c43958/matchers.go#L241
   ```go
   //HaveLen succeeds if actual has the passed-in length.  Actual must be of type string, array, map, chan, or slice.
