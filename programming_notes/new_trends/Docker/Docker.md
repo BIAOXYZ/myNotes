@@ -24,32 +24,35 @@ docker中文社区站  http://www.docker.org.cn/
 # docker常用命令总结
 
 ## docker run
-```
+```sh
 Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 Run a command in a new container
 
 例子：
 
-docker run -it busybox sh   //以busybox为镜像启动一个容器，并允许交互式地在容器中执行sh
-docker run -dit busybox sh   //同上，区别是加了-d参数后该容器会在后台运行。-i -t -d等其实也可以分开写
-docker run --name mycontainer -it busybox sh  //--name参数为该容器指定一个名字，不然是随机的名字
+docker run -it busybox sh   # 以busybox为镜像启动一个容器，并允许交互式地在容器中执行sh
+docker run -dit busybox sh   # 同上，区别是加了-d参数后该容器会在后台运行。-i -t -d等其实也可以分开写
+docker run --name mycontainer -it busybox sh  # --name参数为该容器指定一个名字，不然是随机的名字
 
-docker run -P {images}   //通过-P参数，将容器的端口映射到宿主机的随机端口：
-docker run -p {hostPort}:{containerPort} {images}   //通过-p参数，将容器的端口映射到宿主机的制定端口：
+docker run -P {images}   # 通过-P参数，将容器的端口映射到宿主机的随机端口：
+docker run -p {hostPort}:{containerPort} {images}   # 通过-p参数，将容器的端口映射到宿主机的制定端口：
 ```
 
 ## docker login
-```
+```sh
 Usage:  docker login [OPTIONS] [SERVER]
 
 Log in to a Docker registry
 
 例子：
 
-docker login quay.io   //然后会提示输入用户名和密码 
-docker login   //没有指定服务器的话默认登陆的是dockerhub
-docker login -u {username} -p {password} [可省的servername]
+docker login quay.io   # 然后会提示输入用户名和密码 
+docker login   # 没有指定服务器的话默认登陆的是dockerhub
+docker login -u {username} -p {password} [可省的servername] 
+# docker login的-p参数的值也可以是一个token，从而提供更强的安全性：一旦token泄露，直接去生成token的地方revoke掉该token即可。
+# 例：docker login hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com -u liulliu@cn.ibm.com -p u3esYXCLPSy8eQm3i2tYiZkZhG2urviQEXKHMHPMevKXw63LVRLR7
+# 隐私原因，上面那个token值其实已经删掉了20位。。。此外，生成该token的地方是 https://na.artifactory.swg-devops.com/artifactory/webapp/#/home
 ```
 
 Getting Started with Quay.io https://docs.quay.io/solution/getting-started.html
