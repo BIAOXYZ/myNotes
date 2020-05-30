@@ -1,7 +1,10 @@
 
 # 官网
 
-https://podman.io/
+Podman https://podman.io/
+
+libpod is a library used to create container pods. Home of Podman. https://github.com/containers/libpod
+> Libpod provides a library for applications looking to use the Container Pod concept, popularized by Kubernetes. Libpod also contains the Pod Manager tool (Podman). Podman manages pods, containers, container images, and container volumes.
 
 # 其他
 
