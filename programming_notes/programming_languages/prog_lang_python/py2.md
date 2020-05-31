@@ -199,6 +199,18 @@ Python学习笔记（十二）：lambda表达式与函数式编程 https://blog.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 可变对象与不可变对象
+
+python可变和不可变对象 https://www.jianshu.com/p/c5582e23b26c
+
+python可变对象与不可变对象 - Dwzb的文章 - 知乎 https://zhuanlan.zhihu.com/p/34395671
+
+Python中的可变与不可变对象 https://segmentfault.com/a/1190000015198945
+
+Python中的不可变对象类型与可变对象类型 https://www.cnblogs.com/shiyublog/p/10809953.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 静态方法
 
 Python: classmethod类函数 & staticmethod静态函数 区别 http://blog.csdn.net/bytxl/article/details/46928837
