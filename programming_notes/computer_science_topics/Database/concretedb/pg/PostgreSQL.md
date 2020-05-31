@@ -346,6 +346,10 @@ bg_mon: Background worker for monitoring PostgreSQL https://github.com/CyberDem0
 
 aqo: Adaptive query optimization for PostgreSQL https://github.com/postgrespro/aqo
 
+pg_flame: A flamegraph generator for Postgres EXPLAIN ANALYZE output. https://github.com/mgartner/pg_flame
+
+PgHero: A performance dashboard for Postgres https://github.com/ankane/pghero
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
