@@ -10,3 +10,5 @@ Real Python https://realpython.com/
 How to Use Python Lambda Functions https://realpython.com/python-lambda/
 
 Python eval(): Evaluate Expressions Dynamically https://realpython.com/python-eval-function/
+
+How to Use sorted() and sort() in Python https://realpython.com/python-sort/
