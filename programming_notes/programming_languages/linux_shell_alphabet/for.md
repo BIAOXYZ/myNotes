@@ -96,4 +96,37 @@ ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhchann
 ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhdeployable   18.473s coverage: 81.9% of statements
 ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhplacementrule        11.596s coverage: 94.1% of statements
 [root@lolls-inf hybridapp-operator]#
+
+// 这个版本更清楚点，且带时间。
+[root@lolls-inf hybridapp-operator]# for i in {1..15}; do echo -e "***** TEST $i *****"; date; echo -e "\n"; make test; done
+***** TEST 1 *****
+Sun May 31 23:19:20 PDT 2020
+
+
+go fmt ./cmd/... ./pkg/...
+go vet ./cmd/... ./pkg/...
+Version: version.Version{KubeBuilderVersion:"2.0.0-beta.0", KubernetesVendor:"1.14.1", GitCommit:"b12371ccabd1bc8de7ec7ec1a1ca7bfabe567701", BuildDate:"2019-07-19T19:02:15Z", GoOs:"unknown", GoArch:"unknown"}
+go test `go list ./cmd/... ./pkg/... ` -coverprofile=cover.out
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/cmd/manager   [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis      [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis/app  [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis/app/v1alpha1 [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller        [no test files]
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmchannel     11.896s coverage: 87.9% of statements
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmdeployable  17.399s coverage: 81.7% of statements
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmplacementrule       13.766s coverage: 94.1% of statements
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmsubscription        [no test files]
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhchannel      11.960s coverage: 88.8% of statements
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhdeployable   17.311s coverage: 81.7% of statements
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhplacementrule        12.665s coverage: 94.1% of statements
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhsubscription 18.267s coverage: 87.2% of statements
+***** TEST 2 *****
+Sun May 31 23:21:26 PDT 2020
+
+
+go fmt ./cmd/... ./pkg/...
+go vet ./cmd/... ./pkg/...
+...
+...
+...
 ```
