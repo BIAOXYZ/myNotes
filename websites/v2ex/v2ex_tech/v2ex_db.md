@@ -1,4 +1,10 @@
 
+PostgreSQL 有没有办法统计每个 SQL 执行的次数 https://www.v2ex.com/t/677366
+- > pg_stat_statements 这个插件
+- > Redhat Debezium 可以监控所有的数据操作，EDA 框架，可以发送 Apache kafka 等。 https://debezium.io/ <br> 其实这东西实现也不是太难，在 SQL 执行之前加入 Hook， 通过消息发送到自己的统计数据库（比如 Redis ）里面去。
+- > 日志开启 sql 记录，pgbadger 分析日志
+- > https://www.postgresql.org/docs/current/pgstatstatements.html
+
 各位好，请教个 SQL 查询问题 https://www.v2ex.com/t/675639
 
 事务的原子性是由 redo log 还是 undo log 实现的? https://www.v2ex.com/t/674050
