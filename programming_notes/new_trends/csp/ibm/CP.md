@@ -70,7 +70,8 @@ I get "corrupted content error" for a site that I can access on a different devi
 
 【[:star:][`*`]】【里面是较为详细的例子】 IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
 
-IBM Cloud Paks Playbook https://cloudpak8s.io/
+Documentation for IBM CloudPak playbooks. https://github.com/ibm-cloud-architecture/cloudpak8s
+> IBM Cloud Paks Playbook https://cloudpak8s.io/
 
 # 个人实战
 
