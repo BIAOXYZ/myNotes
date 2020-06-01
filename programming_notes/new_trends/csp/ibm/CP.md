@@ -17,7 +17,7 @@ IBM Cloud Pak for Applications https://www.ibm.com/cloud/cloud-pak-for-applicati
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
 
-Managing applications https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/applications/overview.html
+【[:star:][`*`]】【里面是关于CP4MCM几个核心概念的较为详细的介绍】 Managing applications https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/applications/overview.html
 
 ## CP(K)安装
 
@@ -68,7 +68,7 @@ I get "corrupted content error" for a site that I can access on a different devi
 
 # 其他链接
 
-IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
+【[:star:][`*`]】【里面是较为详细的例子】 IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
 
 IBM Cloud Paks Playbook https://cloudpak8s.io/
 
