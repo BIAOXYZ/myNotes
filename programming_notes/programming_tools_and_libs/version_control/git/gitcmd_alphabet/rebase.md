@@ -103,7 +103,12 @@ git log --graph --oneline
 ## rebase实战2（真实开发过程，且有冲突时）
 
 ```sh
-#
+# 大前提：
+# - 假定我们基于之前master的最新commit 0d48d07（也就是pull request 20对应的合入）拉出了一个分支devsubs进行开发。
+# - 后来在我们的开发分支devsubs上有两个新的commit，在master上有四个新commit。
+
+
+# //首先切换到master分支，在fast-forward方式下拉下最新的代码，并记录一下当前的git log情况。
 [root@lolls-inf hybridapp-operator]# git checkout master
 Switched to branch 'master'
 [root@lolls-inf hybridapp-operator]# git pull origin master:master
@@ -120,7 +125,6 @@ Warning: fast-forwarding your working tree from
 Warning: commit 0d48d076d3e4fb8451029e8e5d3ebf0c4f6d4c2d.
 Already up-to-date.
 [root@lolls-inf hybridapp-operator]#
-
 [root@lolls-inf hybridapp-operator]# git log --oneline
 e7be3d1 Bugfix-Issue8898: now when sync in Deployable resource, the prefix of… (#31)
 591ae97 Update olm catalog (#29)
@@ -142,10 +146,9 @@ cbea428 Initial commit
 [root@lolls-inf hybridapp-operator]#
 
 
-#
+# //切换回devsubs分支，也记录下当前的提交情况。
 [root@lolls-inf hybridapp-operator]# git checkout devsubs
 Switched to branch 'devsubs'
-
 [root@lolls-inf hybridapp-operator]# git log --oneline
 85b99a5 Add UT test for rhsubscription; Fix potential null pointer problem in rhsusbscription controller.
 94d5a80 Finish code for Subscription resource.
@@ -164,8 +167,7 @@ c2bc1ce fix typo in makefile for image (#2)
 cbea428 Initial commit
 [root@lolls-inf hybridapp-operator]#
 
-
-#// 备份当前开发分支devsubs以防万一。
+# //备份当前开发分支devsubs以防万一。
 [root@lolls-inf hybridapp-operator]# git checkout -b devsubs-finish-rhsubs-uttest
 Switched to a new branch 'devsubs-finish-rhsubs-uttest'
 [root@lolls-inf hybridapp-operator]#
@@ -173,7 +175,7 @@ Switched to a new branch 'devsubs-finish-rhsubs-uttest'
 [root@lolls-inf hybridapp-operator]#
 
 
-# 
+# //切换到devsubs并执行rebase master的操作。
 [root@lolls-inf hybridapp-operator]# git checkout devsubs
 Switched to branch 'devsubs'
 [root@lolls-inf hybridapp-operator]#
@@ -196,7 +198,7 @@ If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
 
 [root@lolls-inf hybridapp-operator]#
-[root@lolls-inf hybridapp-operator]#
+## // rebase提示冲突，有三种解决办法，后两种肯定不太好，还是自己处理冲突吧。
 [root@lolls-inf hybridapp-operator]# git status
 # HEAD detached at e7be3d1
 # You are currently rebasing branch 'devsubs' on 'e7be3d1'.
@@ -224,7 +226,7 @@ To check out the original branch and stop rebasing, run "git rebase --abort".
 #       both modified:      pkg/apis/addtoscheme_all.go
 #
 [root@lolls-inf hybridapp-operator]#
-[root@lolls-inf hybridapp-operator]#
+## // 如果不处理冲突想直接continue是不行的。。。
 [root@lolls-inf hybridapp-operator]# git rebase --continue
 pkg/apis/addtoscheme_all.go: needs merge
 You must edit all merge conflicts and then
