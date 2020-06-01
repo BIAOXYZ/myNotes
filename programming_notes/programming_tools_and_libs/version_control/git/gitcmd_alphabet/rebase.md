@@ -30,6 +30,8 @@ git rebase in depth https://git-rebase.io/
 
 # 个人实战
 
+## rebase实战1
+
 **--------------------------------------------------**
 `#` ***git rebase 个人实战：开始***
 **--------------------------------------------------**
@@ -41,7 +43,7 @@ git rebase in depth https://git-rebase.io/
 git checkout -b 111
 git checkout -b 222
 
-# 2.在这两个分支上分别做两次不同的修改和提交(为了简单起见，这两次不会有冲突，后续无需merge):
+# 2.在这两个分支上分别做两次不同的修改和提交(为了简单起见，这两次不会有冲突，后续无需处理冲突):
 git commit -m 111_1
 git commit -m 111_2
 # 此时111分支的路线是：basebranch <-- 111_1 <-- 111_2
@@ -91,9 +93,240 @@ git log --graph --oneline
 * a18e755 111_1
 * fe5da30 Add secrutiy feature from MPPDB S79511 - To strengthen SSL certificate
 ```
-> 注意看commit id，对比上一个，没有发生变化的是`111_1`的`a18e755`和`111_2`的`5783c0c`。这其实就是“rebase”的含义所在：**把当前分支（分支222）的base从原来的`fe5da30`给rebase到另一个分支（分支111）的最新的commit（`111_2`对应的`5783c0c`）后面**。就算没有冲突，`222_1`和`222_2`因为其父提交已经变了，所以肯定commit id也会变；如果有冲突，那连内容也会变。
+> 注意看commit id，对比上一个，没有发生变化的是`111_1`的`a18e755`和`111_2`的`5783c0c`。这其实就是“rebase”的含义所在：**把当前分支（分支222）的base从原来的`fe5da30`给re-base到另一个分支（分支111）的最新的commit（`111_2`对应的`5783c0c`）后面**。就算没有冲突，`222_1`和`222_2`因为其父提交已经变了，所以肯定commit id也会变；如果有冲突，那连内容也会变。
 >> 所以如果假设master分支是分支222，feature分支是分支111。本例相当于切换到master分支上去rebase feature，这个rebase操作完成后会把master的记录都改写（当然是指非fast forward的情况），这种肯定是不行的。常用的情况是：本地正在feature分支上开发，远程master分支上有别人提新的commit，把这些commit拉下来后，***在本地feature分支上去rebase master***。
 
 **--------------------------------------------------**
 `#` ***git rebase 个人实战：结束***
 **--------------------------------------------------**
+
+## rebase实战2（真实开发过程，且有冲突时）
+
+```sh
+#
+[root@lolls-inf hybridapp-operator]# git checkout master
+Switched to branch 'master'
+[root@lolls-inf hybridapp-operator]# git pull origin master:master
+remote: Enumerating objects: 49, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 59 (delta 31), reused 38 (delta 29), pack-reused 10
+Unpacking objects: 100% (59/59), done.
+From github.ibm.com:IBMPrivateCloud/hybridapp-operator
+   0d48d07..e7be3d1  master     -> master
+ * [new tag]         unreleased-master -> unreleased-master
+Warning: fetch updated the current branch head.
+Warning: fast-forwarding your working tree from
+Warning: commit 0d48d076d3e4fb8451029e8e5d3ebf0c4f6d4c2d.
+Already up-to-date.
+[root@lolls-inf hybridapp-operator]#
+
+[root@lolls-inf hybridapp-operator]# git log --oneline
+e7be3d1 Bugfix-Issue8898: now when sync in Deployable resource, the prefix of… (#31)
+591ae97 Update olm catalog (#29)
+cdb6594 generate role/roleb for cluster (#23)
+fa71c12 Delete release-version.txt (#22)
+0d48d07 install crds in image (#20)
+2b97d24 update build files with test and lint targets (#19)
+29df110 merge release-2.0 (#18)
+6ade746 Finish codes and UT test for Deployable resource. (#15)
+a4da398 Rename and add ham-deploy controller into it (#12)
+96f60ad Finish codes and UT test for Channel resource. (#10)
+f894e45 upgrade operator sdk to 0.17 (#6)
+4da5d92 Update files related to quick start scenario (#5)
+73b6d94 unit testing both placementrule controllers (#4)
+dbf56a8 feature ready (#3)
+c2bc1ce fix typo in makefile for image (#2)
+1bd0288 Init (#1)
+cbea428 Initial commit
+[root@lolls-inf hybridapp-operator]#
+
+
+#
+[root@lolls-inf hybridapp-operator]# git checkout devsubs
+Switched to branch 'devsubs'
+
+[root@lolls-inf hybridapp-operator]# git log --oneline
+85b99a5 Add UT test for rhsubscription; Fix potential null pointer problem in rhsusbscription controller.
+94d5a80 Finish code for Subscription resource.
+0d48d07 install crds in image (#20)
+2b97d24 update build files with test and lint targets (#19)
+29df110 merge release-2.0 (#18)
+6ade746 Finish codes and UT test for Deployable resource. (#15)
+a4da398 Rename and add ham-deploy controller into it (#12)
+96f60ad Finish codes and UT test for Channel resource. (#10)
+f894e45 upgrade operator sdk to 0.17 (#6)
+4da5d92 Update files related to quick start scenario (#5)
+73b6d94 unit testing both placementrule controllers (#4)
+dbf56a8 feature ready (#3)
+c2bc1ce fix typo in makefile for image (#2)
+1bd0288 Init (#1)
+cbea428 Initial commit
+[root@lolls-inf hybridapp-operator]#
+
+
+#// 备份当前开发分支devsubs以防万一。
+[root@lolls-inf hybridapp-operator]# git checkout -b devsubs-finish-rhsubs-uttest
+Switched to a new branch 'devsubs-finish-rhsubs-uttest'
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git diff devsubs-finish-rhsubs-uttest devsubs
+[root@lolls-inf hybridapp-operator]#
+
+
+# 
+[root@lolls-inf hybridapp-operator]# git checkout devsubs
+Switched to branch 'devsubs'
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: Finish code for Subscription resource.
+Using index info to reconstruct a base tree...
+M       pkg/apis/addtoscheme_all.go
+Falling back to patching base and 3-way merge...
+Auto-merging pkg/apis/addtoscheme_all.go
+CONFLICT (content): Merge conflict in pkg/apis/addtoscheme_all.go
+Failed to merge in the changes.
+Patch failed at 0001 Finish code for Subscription resource.
+The copy of the patch that failed is found in:
+   /root/cp4mcmrelated/gitrepo/hybridapp-operator/.git/rebase-apply/patch
+
+When you have resolved this problem, run "git rebase --continue".
+If you prefer to skip this patch, run "git rebase --skip" instead.
+To check out the original branch and stop rebasing, run "git rebase --abort".
+
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git status
+# HEAD detached at e7be3d1
+# You are currently rebasing branch 'devsubs' on 'e7be3d1'.
+#   (fix conflicts and then run "git rebase --continue")
+#   (use "git rebase --skip" to skip this patch)
+#   (use "git rebase --abort" to check out the original branch)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   deploy/crds/compatibility/app.ibm.com_subscriptions_crd.yaml
+#       new file:   deploy/crds/compatibility/apps.open-cluster-management.io_subscriptions_crd.yaml
+#       modified:   go.mod
+#       modified:   go.sum
+#       new file:   pkg/apis/app/v1alpha1/subscription_types.go
+#       modified:   pkg/apis/app/v1alpha1/zz_generated.deepcopy.go
+#       new file:   pkg/controller/add_subscription.go
+#       new file:   pkg/controller/ibmsubscription/subscription_controller.go
+#       new file:   pkg/controller/rhsubscription/subscription_controller.go
+#
+# Unmerged paths:
+#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git add <file>..." to mark resolution)
+#
+#       both modified:      pkg/apis/addtoscheme_all.go
+#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git rebase --continue
+pkg/apis/addtoscheme_all.go: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git branch
+* (no branch, rebasing devsubs)
+  dev
+  devsubs
+  devsubs-finish-rhsubs-uttest
+  feature-Deployable
+  master
+[root@lolls-inf hybridapp-operator]#
+
+[root@lolls-inf hybridapp-operator]# vi pkg/apis/addtoscheme_all.go
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git status
+# HEAD detached at e7be3d1
+# You are currently rebasing branch 'devsubs' on 'e7be3d1'.
+#   (fix conflicts and then run "git rebase --continue")
+#   (use "git rebase --skip" to skip this patch)
+#   (use "git rebase --abort" to check out the original branch)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   deploy/crds/compatibility/app.ibm.com_subscriptions_crd.yaml
+#       new file:   deploy/crds/compatibility/apps.open-cluster-management.io_subscriptions_crd.yaml
+#       modified:   go.mod
+#       modified:   go.sum
+#       new file:   pkg/apis/app/v1alpha1/subscription_types.go
+#       modified:   pkg/apis/app/v1alpha1/zz_generated.deepcopy.go
+#       new file:   pkg/controller/add_subscription.go
+#       new file:   pkg/controller/ibmsubscription/subscription_controller.go
+#       new file:   pkg/controller/rhsubscription/subscription_controller.go
+#
+# Unmerged paths:
+#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git add <file>..." to mark resolution)
+#
+#       both modified:      pkg/apis/addtoscheme_all.go
+#
+[root@lolls-inf hybridapp-operator]# git add pkg/apis/addtoscheme_all.go
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git status
+# HEAD detached at e7be3d1
+# You are currently rebasing branch 'devsubs' on 'e7be3d1'.
+#   (all conflicts fixed: run "git rebase --continue")
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   deploy/crds/compatibility/app.ibm.com_subscriptions_crd.yaml
+#       new file:   deploy/crds/compatibility/apps.open-cluster-management.io_subscriptions_crd.yaml
+#       modified:   go.mod
+#       modified:   go.sum
+#       modified:   pkg/apis/addtoscheme_all.go
+#       new file:   pkg/apis/app/v1alpha1/subscription_types.go
+#       modified:   pkg/apis/app/v1alpha1/zz_generated.deepcopy.go
+#       new file:   pkg/controller/add_subscription.go
+#       new file:   pkg/controller/ibmsubscription/subscription_controller.go
+#       new file:   pkg/controller/rhsubscription/subscription_controller.go
+#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git rebase --continue
+Applying: Finish code for Subscription resource.
+Applying: Add UT test for rhsubscription; Fix potential null pointer problem in rhsusbscription controller.
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git status
+# On branch devsubs
+nothing to commit, working directory clean
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git log --oneline
+0f91070 Add UT test for rhsubscription; Fix potential null pointer problem in rhsusbscription controller.
+09e8b12 Finish code for Subscription resource.
+e7be3d1 Bugfix-Issue8898: now when sync in Deployable resource, the prefix of… (#31)
+591ae97 Update olm catalog (#29)
+cdb6594 generate role/roleb for cluster (#23)
+fa71c12 Delete release-version.txt (#22)
+0d48d07 install crds in image (#20)
+2b97d24 update build files with test and lint targets (#19)
+29df110 merge release-2.0 (#18)
+6ade746 Finish codes and UT test for Deployable resource. (#15)
+a4da398 Rename and add ham-deploy controller into it (#12)
+96f60ad Finish codes and UT test for Channel resource. (#10)
+f894e45 upgrade operator sdk to 0.17 (#6)
+4da5d92 Update files related to quick start scenario (#5)
+73b6d94 unit testing both placementrule controllers (#4)
+dbf56a8 feature ready (#3)
+c2bc1ce fix typo in makefile for image (#2)
+1bd0288 Init (#1)
+cbea428 Initial commit
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# git branch
+  dev
+* devsubs
+  devsubs-finish-rhsubs-uttest
+  feature-Deployable
+  master
+[root@lolls-inf hybridapp-operator]#
+[root@lolls-inf hybridapp-operator]# make test
+// 成功，输出就省略了。
+```
