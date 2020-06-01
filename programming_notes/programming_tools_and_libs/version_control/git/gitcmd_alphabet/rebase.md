@@ -146,7 +146,7 @@ cbea428 Initial commit
 [root@lolls-inf hybridapp-operator]#
 
 
-# //切换回devsubs分支，也记录下当前的提交情况。
+# //切换到devsubs分支，也记录下当前的提交情况。
 [root@lolls-inf hybridapp-operator]# git checkout devsubs
 Switched to branch 'devsubs'
 [root@lolls-inf hybridapp-operator]# git log --oneline
@@ -167,7 +167,8 @@ c2bc1ce fix typo in makefile for image (#2)
 cbea428 Initial commit
 [root@lolls-inf hybridapp-operator]#
 
-# //备份当前开发分支devsubs以防万一。
+
+# //备份当前开发分支devsubs以防万一（这里傻了，直接不带-b就完了，省得后面还得切来切去）。
 [root@lolls-inf hybridapp-operator]# git checkout -b devsubs-finish-rhsubs-uttest
 Switched to a new branch 'devsubs-finish-rhsubs-uttest'
 [root@lolls-inf hybridapp-operator]#
@@ -175,7 +176,7 @@ Switched to a new branch 'devsubs-finish-rhsubs-uttest'
 [root@lolls-inf hybridapp-operator]#
 
 
-# //切换到devsubs并执行rebase master的操作。
+# //切换到devsubs分支，并执行rebase master的操作。
 [root@lolls-inf hybridapp-operator]# git checkout devsubs
 Switched to branch 'devsubs'
 [root@lolls-inf hybridapp-operator]#
@@ -198,7 +199,8 @@ If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
 
 [root@lolls-inf hybridapp-operator]#
-## // rebase提示冲突，有三种解决办法，后两种肯定不太好，还是自己处理冲突吧。
+
+## //rebase提示冲突，有三种解决办法，后两种肯定不太好，还是自己处理冲突吧。
 [root@lolls-inf hybridapp-operator]# git status
 # HEAD detached at e7be3d1
 # You are currently rebasing branch 'devsubs' on 'e7be3d1'.
@@ -226,13 +228,15 @@ To check out the original branch and stop rebasing, run "git rebase --abort".
 #       both modified:      pkg/apis/addtoscheme_all.go
 #
 [root@lolls-inf hybridapp-operator]#
-## // 如果不处理冲突想直接continue是不行的。。。
+
+## //首先先试试直接继续会怎么样，结果发现如果不处理冲突想直接continue是不行的。。。
 [root@lolls-inf hybridapp-operator]# git rebase --continue
 pkg/apis/addtoscheme_all.go: needs merge
 You must edit all merge conflicts and then
 mark them as resolved using git add
 [root@lolls-inf hybridapp-operator]#
-[root@lolls-inf hybridapp-operator]#
+
+## //看一下branch，发现现在处在一个游离的分支上。
 [root@lolls-inf hybridapp-operator]# git branch
 * (no branch, rebasing devsubs)
   dev
@@ -242,8 +246,11 @@ mark them as resolved using git add
   master
 [root@lolls-inf hybridapp-operator]#
 
+## //处理下冲突（其实我是用vscode改的，这里这个vi语句主要是为了表示冲突处理这个环节确实存在）。
 [root@lolls-inf hybridapp-operator]# vi pkg/apis/addtoscheme_all.go
 [root@lolls-inf hybridapp-operator]#
+
+## //看看当前状态还是没变啊。
 [root@lolls-inf hybridapp-operator]# git status
 # HEAD detached at e7be3d1
 # You are currently rebasing branch 'devsubs' on 'e7be3d1'.
@@ -270,6 +277,9 @@ mark them as resolved using git add
 #
 #       both modified:      pkg/apis/addtoscheme_all.go
 #
+[root@lolls-inf hybridapp-operator]#
+
+## //原来是git add后（猜测是没有“Unmerged paths”）才算冲突处理完毕，可以conntinue了。
 [root@lolls-inf hybridapp-operator]# git add pkg/apis/addtoscheme_all.go
 [root@lolls-inf hybridapp-operator]#
 [root@lolls-inf hybridapp-operator]# git status
@@ -296,11 +306,16 @@ mark them as resolved using git add
 Applying: Finish code for Subscription resource.
 Applying: Add UT test for rhsubscription; Fix potential null pointer problem in rhsusbscription controller.
 [root@lolls-inf hybridapp-operator]#
-[root@lolls-inf hybridapp-operator]#
+
+## //上面提示rebase已成功，然后看下状态，发现完全是clean的。
 [root@lolls-inf hybridapp-operator]# git status
 # On branch devsubs
 nothing to commit, working directory clean
 [root@lolls-inf hybridapp-operator]#
+
+## //对比前面两个提交记录，就能看出来端倪了：
+## - 从最后的公共commit 0d48d07开始，master的四个新commit原封不动的过来了（四个commit的id都没变）。
+## - 但是本地开发分支devsubs上的两个commit的commit id都变了（尽管commit message没变）。
 [root@lolls-inf hybridapp-operator]# git log --oneline
 0f91070 Add UT test for rhsubscription; Fix potential null pointer problem in rhsusbscription controller.
 09e8b12 Finish code for Subscription resource.
@@ -322,6 +337,8 @@ c2bc1ce fix typo in makefile for image (#2)
 1bd0288 Init (#1)
 cbea428 Initial commit
 [root@lolls-inf hybridapp-operator]#
+
+## //branch当然应该从游离状态变为当前的开发分支devsubs。
 [root@lolls-inf hybridapp-operator]# git branch
   dev
 * devsubs
