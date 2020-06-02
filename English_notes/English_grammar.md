@@ -16,6 +16,10 @@ https://www.cnbeta.com/articles/soft/715023.htm
 ## a 
 ------------------------------------------------------------
 
+#### agent provocateur n.（受雇于政府，怂恿某些政治团体人士犯法以便将之逮捕的）密探
+> This is a French word, called "agent provocateur".
+>> 美国黑人被警察杀死：美国警察自己还引起暴乱吗！？ https://www.bilibili.com/video/BV1Fz4y1R7aT 【视频3分59秒】
+
 #### at an impasse 陷入僵局
 
 - The two parties have been at an impasse over the judges since the beginning of their coalition. 从联合政府组建开始，两党在是否恢复法官职位问题上的磋商就陷入僵局。
