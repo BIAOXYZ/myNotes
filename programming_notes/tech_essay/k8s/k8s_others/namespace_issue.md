@@ -445,3 +445,84 @@ No resources found in multicluster-endpoint namespace.
 
 ## 个人实战2（实战删除）
 
+```sh
+#// 查查Terminating的namespace的具体信息。发现和这个里的描述有些相似：
+#// Bug 1768820 - Projects get stuck in Terminating status with "object *v1beta1.ServiceBindingList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message ..." https://bugzilla.redhat.com/show_bug.cgi?id=1768820
+[root@lolls-inf ~]# kubectl get namespace multicluster-endpoint -o yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"creationTimestamp":null,"name":"multicluster-endpoint"},"spec":{},"status":{}}
+    mcm.ibm.com/accountID: id-mycluster-account
+    mcm.ibm.com/type: System
+    openshift.io/sa.scc.mcs: s0:c25,c0
+    openshift.io/sa.scc.supplemental-groups: 1000600000/10000
+    openshift.io/sa.scc.uid-range: 1000600000/10000
+  creationTimestamp: "2020-04-16T13:15:31Z"
+  deletionTimestamp: "2020-04-17T07:57:22Z"
+  name: multicluster-endpoint
+  resourceVersion: "43698995"
+  selfLink: /api/v1/namespaces/multicluster-endpoint
+  uid: 756bdf85-7ae3-490f-b207-10c01a7a70e6
+spec:
+  finalizers:
+  - kubernetes
+status:
+  conditions:
+  - lastTransitionTime: "2020-06-01T18:24:42Z"
+    message: All resources successfully discovered
+    reason: ResourcesDiscovered
+    status: "False"
+    type: NamespaceDeletionDiscoveryFailure
+  - lastTransitionTime: "2020-04-17T07:57:30Z"
+    message: All legacy kube types successfully parsed
+    reason: ParsedGroupVersions
+    status: "False"
+    type: NamespaceDeletionGroupVersionParsingFailure
+  - lastTransitionTime: "2020-06-01T18:24:42Z"
+    message: 'Failed to delete all resource types, 7 remaining: object *v1alpha1.ClusterList
+      does not implement the protobuf marshalling interface and cannot be encoded
+      to a protobuf message, object *v1alpha1.ClusterStatusList does not implement
+      the protobuf marshalling interface and cannot be encoded to a protobuf message,
+      object *v1alpha1.PlacementBindingList does not implement the protobuf marshalling
+      interface and cannot be encoded to a protobuf message, object *v1alpha1.PlacementPolicyList
+      does not implement the protobuf marshalling interface and cannot be encoded
+      to a protobuf message, object *v1alpha1.ResourceViewList does not implement
+      the protobuf marshalling interface and cannot be encoded to a protobuf message,
+      object *v1alpha1.WorkList does not implement the protobuf marshalling interface
+      and cannot be encoded to a protobuf message, object *v1alpha1.WorkSetList does
+      not implement the protobuf marshalling interface and cannot be encoded to a
+      protobuf message'
+    reason: ContentDeletionFailed
+    status: "True"
+    type: NamespaceDeletionContentFailure
+  - lastTransitionTime: "2020-04-17T07:58:13Z"
+    message: All content successfully removed
+    reason: ContentRemoved
+    status: "False"
+    type: NamespaceContentRemaining
+  - lastTransitionTime: "2020-04-17T07:57:30Z"
+    message: All content-preserving finalizers finished
+    reason: ContentHasNoFinalizers
+    status: "False"
+    type: NamespaceFinalizersRemaining
+  phase: Terminating
+[root@lolls-inf ~]#
+
+
+#// 强删 multicluster-endpoint 并成功
+[root@lolls-inf uninstall]# kubectl get namespace multicluster-endpoint -o json > terminating_multicluster_endpoint.json
+[root@lolls-inf uninstall]#
+[root@lolls-inf uninstall]# cp terminating_multicluster_endpoint.json terminating_multicluster_endpoint2.json
+[root@lolls-inf uninstall]#
+[root@lolls-inf uninstall]# vi terminating_multicluster_endpoint2.json
+[root@lolls-inf uninstall]#
+[root@lolls-inf uninstall]#
+[root@lolls-inf uninstall]# kubectl replace --raw "/api/v1/namespaces/multicluster-endpoint/finalize" -f terminating_multicluster_endpoint2.json
+{"kind":"Namespace","apiVersion":"v1","metadata":{"name":"multicluster-endpoint","selfLink":"/api/v1/namespaces/multicluster-endpoint/finalize","uid":"756bdf85-7ae3-490f-b207-10c01a7a70e6","resourceVersion":"43698995","creationTimestamp":"2020-04-16T13:15:31Z","deletionTimestamp":"2020-04-17T07:57:22Z","annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"creationTimestamp\":null,\"name\":\"multicluster-endpoint\"},\"spec\":{},\"status\":{}}\n","mcm.ibm.com/accountID":"id-mycluster-account","mcm.ibm.com/type":"System","openshift.io/sa.scc.mcs":"s0:c25,c0","openshift.io/sa.scc.supplemental-groups":"1000600000/10000","openshift.io/sa.scc.uid-range":"1000600000/10000"}},"spec":{},"status":{"phase":"Terminating","conditions":[{"type":"NamespaceDeletionDiscoveryFailure","status":"False","lastTransitionTime":"2020-06-01T18:24:42Z","reason":"ResourcesDiscovered","message":"All resources successfully discovered"},{"type":"NamespaceDeletionGroupVersionParsingFailure","status":"False","lastTransitionTime":"2020-04-17T07:57:30Z","reason":"ParsedGroupVersions","message":"All legacy kube types successfully parsed"},{"type":"NamespaceDeletionContentFailure","status":"True","lastTransitionTime":"2020-06-01T18:24:42Z","reason":"ContentDeletionFailed","message":"Failed to delete all resource types, 7 remaining: object *v1alpha1.ClusterList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1alpha1.ClusterStatusList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1alpha1.PlacementBindingList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1alpha1.PlacementPolicyList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1alpha1.ResourceViewList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1alpha1.WorkList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1alpha1.WorkSetList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message"},{"type":"NamespaceContentRemaining","status":"False","lastTransitionTime":"2020-04-17T07:58:13Z","reason":"ContentRemoved","message":"All content successfully removed"},{"type":"NamespaceFinalizersRemaining","status":"False","lastTransitionTime":"2020-04-17T07:57:30Z","reason":"ContentHasNoFinalizers","message":"All content-preserving finalizers finished"}]}}
+[root@lolls-inf uninstall]#
+[root@lolls-inf uninstall]# kubectl get ns | grep multicluster-endpoint
+[root@lolls-inf uninstall]#
+```
