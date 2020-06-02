@@ -12,7 +12,9 @@
 - 10分钟搭建Kubernetes容器集群平台（kubeadm） https://blog.51cto.com/lizhenliang/2296100 【4】
 - kubeadm 搭建K8s高可用集群 https://www.jianshu.com/p/8eb81d1674dc 【5】
 - 如何在Linux中永久禁用交换 https://www.howtoing.com/disable-swap-partition-in-centos-ubuntu 【6】
-> 为了在Linux中永久禁用交换空间，打开 `/etc/fstab` 文件，搜索交换行并在行的前面添加一个 `#`（hashtag） 标记来注释整行，如下图所示
+  > 为了在Linux中永久禁用交换空间，打开 `/etc/fstab` 文件，搜索交换行并在行的前面添加一个 `#`（hashtag） 标记来注释整行，如下图所示
+- How to install Kubernetes with Kubeadm: A quick and dirty guide https://www.mirantis.com/blog/how-install-kubernetes-kubeadm/
+  > 里面提到一个命令：“To remove the entire cluster: `sudo kubeadm reset`”。
 
 ## 0.3 未涉及参考链接：
 

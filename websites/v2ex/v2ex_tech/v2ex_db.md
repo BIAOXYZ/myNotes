@@ -11,7 +11,8 @@ select * from TableA where TableA.columnA='value' order by timestamp;
 但是奇怪的是，如果不用 order by，直接 select * from TableA where TableA.columnA='value'; 花了 1s 不到的时间，因此，可以认为时间都花在了 order by 排序上。
 于是他用 select * from TableA order by timestamp; 发现也需要 17s 左右的时间，验证了时间都花在了 order by 上。
 
-现在我的同事灵机一动，想到可以把数据用子查询先查出，再做排序，按道理因为子查询查出的数据量只有 70w，已经降了两个量级了，这个时候再做排序应该要轻松一些。于是: select * from (select * from TableA where Table.A.columnA='value') as B order by B.timestamp; 但是用 explain 一看:
+现在我的同事灵机一动，想到可以把数据用子查询先查出，再做排序，按道理因为子查询查出的数据量只有 70w，已经降了两个量级了，
+这个时候再做排序应该要轻松一些。于是: select * from (select * from TableA where Table.A.columnA='value') as B order by B.timestamp; 但是用 explain 一看:
 
 '1','SIMPLE','ulog_data_attitude',NULL,'ALL',NULL,NULL,NULL,NULL, 'xxx','xxx','Using where; Using filesort'
 
