@@ -77,7 +77,7 @@ Where: `/api/v1/namespaces/<your_namespace_here>/finalize` # 这里logging就是
 
 【4】 k8s删除Terminating状态的命名空间 https://juejin.im/post/5dada0bc5188253b2f003eff
  - > 更好的命令：`kubectl api-resources -o name --verbs=list --namespaced | xargs -n 1 kubectl get --show-kind --ignore-not-found -n <ns_name>`
- - > 有时是有workload在跑的，可以先加--force参数从kubectl强制删除一下
+ - > 有时是有workload在跑的，可以先加--force参数从kubectl强制删除一下该namespace，然后再用清理finalizer的办法就可以删掉了
  - > http接口进行删除
 
 【5】 Kubernetes删除一直处于Terminating状态的namespace https://segmentfault.com/a/1190000016924414
@@ -445,6 +445,8 @@ No resources found in multicluster-endpoint namespace.
 
 ## 个人实战2（实战删除）
 
+### hub (cluser) 上的 multicluster-endpoint
+
 ```sh
 #// 查查Terminating的namespace的具体信息。发现和这个里的描述有些相似：
 #// Bug 1768820 - Projects get stuck in Terminating status with "object *v1beta1.ServiceBindingList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message ..." https://bugzilla.redhat.com/show_bug.cgi?id=1768820
@@ -525,4 +527,172 @@ status:
 [root@lolls-inf uninstall]#
 [root@lolls-inf uninstall]# kubectl get ns | grep multicluster-endpoint
 [root@lolls-inf uninstall]#
+```
+
+### managed cluser 上的 multicluster-endpoint
+
+```sh
+# 上面那个是在CP4MCM的hub上，下面这个在managed cluster上的multicluster-endpoint namespace用这种方法开始没成功。。。
+# 后来发现应该是还有workload在的原因，于是 kubectl delete ns <ns_name> --force --grace-period=0 先强制删除一下workload，再用上面方法就成功了。
+
+
+#// 这里的 multicluster-endpoint 就和上面那个情况不太一样，这里提示的这个namespace下还有些workloads。
+[root@anaemia-inf uninstall]# oc get ns multicluster-endpoint -o yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"creationTimestamp":null,"name":"multicluster-endp
+    openshift.io/sa.scc.mcs: s0:c23,c17
+    openshift.io/sa.scc.supplemental-groups: 1000540000/10000
+    openshift.io/sa.scc.uid-range: 1000540000/10000
+  creationTimestamp: "2020-04-17T09:05:42Z"
+  deletionTimestamp: "2020-06-02T05:06:28Z"
+  name: multicluster-endpoint
+  resourceVersion: "24076610"
+  selfLink: /api/v1/namespaces/multicluster-endpoint
+  uid: 0e66a812-cd27-4717-aa3d-c19a39acbee0
+spec:
+  finalizers:
+  - kubernetes
+status:
+  conditions:
+  - lastTransitionTime: "2020-06-02T05:06:40Z"
+    message: All resources successfully discovered
+    reason: ResourcesDiscovered
+    status: "False"
+    type: NamespaceDeletionDiscoveryFailure
+  - lastTransitionTime: "2020-06-02T05:06:40Z"
+    message: All legacy kube types successfully parsed
+    reason: ParsedGroupVersions
+    status: "False"
+    type: NamespaceDeletionGroupVersionParsingFailure
+  - lastTransitionTime: "2020-06-02T05:07:20Z"
+    message: All content successfully deleted, may be waiting on finalization
+    reason: ContentDeleted
+    status: "False"
+    type: NamespaceDeletionContentFailure
+  - lastTransitionTime: "2020-06-02T05:06:40Z"
+    message: 'Some resources are remaining: applicationmanagers.multicloud.ibm.com
+      has 1 resource instances, certmanagers.multicloud.ibm.com has 1 resource instances,
+      connectionmanagers.multicloud.ibm.com has 1 resource instances, endpoints.multicloud.ibm.com
+      has 1 resource instances, policycontrollers.multicloud.ibm.com has 1 resource
+      instances, searchcollectors.multicloud.ibm.com has 1 resource instances, serviceregistries.multicloud.ibm.com
+      has 1 resource instances, tillers.multicloud.ibm.com has 1 resource instances,
+      topologycollectors.multicloud.ibm.com has 1 resource instances, workmanagers.multicloud.ibm.com
+      has 1 resource instances'
+    reason: SomeResourcesRemain
+    status: "True"
+    type: NamespaceContentRemaining
+  - lastTransitionTime: "2020-06-02T05:06:40Z"
+    message: 'Some content in the namespace has finalizers remaining: endpoint-appmgr
+      in 1 resource instances, endpoint-certmgr in 1 resource instances, endpoint-connmgr
+      in 1 resource instances, endpoint-policyctrl in 1 resource instances, endpoint-search
+      in 1 resource instances, endpoint-svcreg in 1 resource instances, endpoint-tiller
+      in 1 resource instances, endpoint-topology in 1 resource instances, endpoint-workmgr
+      in 1 resource instances, uninstall-helm-release in 9 resource instances'
+    reason: SomeFinalizersRemain
+    status: "True"
+    type: NamespaceFinalizersRemaining
+  phase: Terminating
+[root@anaemia-inf uninstall]# 
+
+
+#// 还是跟上面一样的步骤，但是结果尴尬了。。。没删掉。。。
+[root@anaemia-inf uninstall]# kubectl get namespace multicluster-endpoint -o json > terminating_multicluster_endpoint.json
+[root@anaemia-inf uninstall]# cp terminating_multicluster_endpoint.json terminating_multicluster_endpoint2.json
+[root@anaemia-inf uninstall]# vi terminating_multicluster_endpoint.json
+[root@anaemia-inf uninstall]# kubectl replace --raw "/api/v1/namespaces/multicluster-endpoint/finalize" -f terminating_multicluster_endpoint2.json
+{"kind":"Namespace","apiVersion":"v1","metadata":{"name":"multicluster-endpoint","selfLink":"/api/v1/namespaces/multicluster-endpoint/finalize","uid":"0e66a812-cd27-4717-aa3d-c19a39acbee0","resourceVersion":"24076610","creationTimestamp":"2020-04-17T09:05:42Z","deletionTimestamp":"2020-06-02T05:06:28Z","annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"creationTimestamp\":null,\"name\":\"multicluster-endpoint\"},\"spec\":{},\"status\":{}}\n","openshift.io/sa.scc.mcs":"s0:c23,c17","openshift.io/sa.scc.supplemental-groups":"1000540000/10000","openshift.io/sa.scc.uid-range":"1000540000/10000"}},"spec":{"finalizers":["kubernetes"]},"status":{"phase":"Terminating","conditions":[{"type":"NamespaceDeletionDiscoveryFailure","status":"False","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"ResourcesDiscovered","message":"All resources successfully discovered"},{"type":"NamespaceDeletionGroupVersionParsingFailure","status":"False","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"ParsedGroupVersions","message":"All legacy kube types successfully parsed"},{"type":"NamespaceDeletionContentFailure","status":"False","lastTransitionTime":"2020-06-02T05:07:20Z","reason":"ContentDeleted","message":"All content successfully deleted, may be waiting on finalization"},{"type":"NamespaceContentRemaining","status":"True","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"SomeResourcesRemain","message":"Some resources are remaining: applicationmanagers.multicloud.ibm.com has 1 resource instances, certmanagers.multicloud.ibm.com has 1 resource instances, connectionmanagers.multicloud.ibm.com has 1 resource instances, endpoints.multicloud.ibm.com has 1 resource instances, policycontrollers.multicloud.ibm.com has 1 resource instances, searchcollectors.multicloud.ibm.com has 1 resource instances, serviceregistries.multicloud.ibm.com has 1 resource instances, tillers.multicloud.ibm.com has 1 resource instances, topologycollectors.multicloud.ibm.com has 1 resource instances, workmanagers.multicloud.ibm.com has 1 resource instances"},{"type":"NamespaceFinalizersRemaining","status":"True","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"SomeFinalizersRemain","message":"Some content in the namespace has finalizers remaining: endpoint-appmgr in 1 resource instances, endpoint-certmgr in 1 resource instances, endpoint-connmgr in 1 resource instances, endpoint-policyctrl in 1 resource instances, endpoint-search in 1 resource instances, endpoint-svcreg in 1 resource instances, endpoint-tiller in 1 resource instances, endpoint-topology in 1 resource instances, endpoint-workmgr in 1 resource instances, uninstall-helm-release in 9 resource instances"}]}}
+[root@anaemia-inf uninstall]#
+[root@anaemia-inf uninstall]# kubectl get ns | grep multicluster-endpoint
+multicluster-endpoint                                   Terminating   46d
+[root@anaemia-inf uninstall]#
+
+
+#// 换用http方式也一样没删掉。。。
+[root@anaemia-inf uninstall]# curl -k -H "Content-Type: application/json" -X PUT --data-binary @terminating_multicluster_en001/api/v1/namespaces/multicluster-endpoint/finalize
+{
+  "kind": "Namespace",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "multicluster-endpoint",
+    "selfLink": "/api/v1/namespaces/multicluster-endpoint/finalize",
+    "uid": "0e66a812-cd27-4717-aa3d-c19a39acbee0",
+    "resourceVersion": "24076610",
+    "creationTimestamp": "2020-04-17T09:05:42Z",
+    "deletionTimestamp": "2020-06-02T05:06:28Z",
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"anamp\":null,\"name\":\"multicluster-endpoint\"},\"spec\":{},\"status\":{}}\n",
+      "openshift.io/sa.scc.mcs": "s0:c23,c17",
+      "openshift.io/sa.scc.supplemental-groups": "1000540000/10000",
+      "openshift.io/sa.scc.uid-range": "1000540000/10000"
+    }
+  },
+  "spec": {
+    "finalizers": [
+      "kubernetes"
+    ]
+  },
+  "status": {
+    "phase": "Terminating",
+    "conditions": [
+      {
+        "type": "NamespaceDeletionDiscoveryFailure",
+        "status": "False",
+        "lastTransitionTime": "2020-06-02T05:06:40Z",
+        "reason": "ResourcesDiscovered",
+        "message": "All resources successfully discovered"
+      },
+      {
+        "type": "NamespaceDeletionGroupVersionParsingFailure",
+        "status": "False",
+        "lastTransitionTime": "2020-06-02T05:06:40Z",
+        "reason": "ParsedGroupVersions",
+        "message": "All legacy kube types successfully parsed"
+      },
+      {
+        "type": "NamespaceDeletionContentFailure",
+        "status": "False",
+        "lastTransitionTime": "2020-06-02T05:07:20Z",
+        "reason": "ContentDeleted",
+        "message": "All content successfully deleted, may be waiting on finalization"
+      },
+      {
+        "type": "NamespaceContentRemaining",
+        "status": "True",
+        "lastTransitionTime": "2020-06-02T05:06:40Z",
+        "reason": "SomeResourcesRemain",
+        "message": "Some resources are remaining: applicationmanagers.multicloud.ibm.com has 1 resource instances, certmanaesource instances, connectionmanagers.multicloud.ibm.com has 1 resource instances, endpoints.multicloud.ibm.com has 1 resous.multicloud.ibm.com has 1 resource instances, searchcollectors.multicloud.ibm.com has 1 resource instances, serviceregistrsource instances, tillers.multicloud.ibm.com has 1 resource instances, topologycollectors.multicloud.ibm.com has 1 resourceloud.ibm.com has 1 resource instances"
+      },
+      {
+        "type": "NamespaceFinalizersRemaining",
+        "status": "True",
+        "lastTransitionTime": "2020-06-02T05:06:40Z",
+        "reason": "SomeFinalizersRemain",
+        "message": "Some content in the namespace has finalizers remaining: endpoint-appmgr in 1 resource instances, endpoices, endpoint-connmgr in 1 resource instances, endpoint-policyctrl in 1 resource instances, endpoint-search in 1 resource iresource instances, endpoint-tiller in 1 resource instances, endpoint-topology in 1 resource instances, endpoint-workmgr inl-helm-release in 9 resource instances"
+      }
+    ]
+  }
+}[root@anaemia-inf uninstall]#
+[root@anaemia-inf uninstall]#
+[root@anaemia-inf uninstall]# kubectl get ns | grep multicluster-endpoint
+multicluster-endpoint                                   Terminating   46d
+[root@anaemia-inf uninstall]#
+
+
+#// 从掘金那个链接【4】里得到启发，想着先清除一下workload说不定就行了。
+#// 但是那么多workload，手动清不现实。于是就用这个语句让系统自己清。清完再用之前的方法就成功了。
+[root@anaemia-inf uninstall]# kubectl delete ns multicluster-endpoint --force --grace-period=0
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may indefinitely.
+namespace "multicluster-endpoint" force deleted
+^C
+[root@anaemia-inf uninstall]#
+[root@anaemia-inf uninstall]#
+[root@anaemia-inf uninstall]# kubectl replace --raw "/api/v1/namespaces/multicluster-endpoint/finalize" -f terminating_multicluster_endpoint2.json
+{"kind":"Namespace","apiVersion":"v1","metadata":{"name":"multicluster-endpoint","selfLink":"/api/v1/namespaces/multicluste6a812-cd27-4717-aa3d-c19a39acbee0","resourceVersion":"24076610","creationTimestamp":"2020-04-17T09:05:42Z","deletionTimestaotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{mestamp\":null,\"name\":\"multicluster-endpoint\"},\"spec\":{},\"status\":{}}\n","openshift.io/sa.scc.mcs":"s0:c23,c17","opgroups":"1000540000/10000","openshift.io/sa.scc.uid-range":"1000540000/10000"}},"spec":{},"status":{"phase":"Terminating","DeletionDiscoveryFailure","status":"False","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"ResourcesDiscovered","messy discovered"},{"type":"NamespaceDeletionGroupVersionParsingFailure","status":"False","lastTransitionTime":"2020-06-02T05:0sions","message":"All legacy kube types successfully parsed"},{"type":"NamespaceDeletionContentFailure","status":"False","l05:07:20Z","reason":"ContentDeleted","message":"All content successfully deleted, may be waiting on finalization"},{"type":atus":"True","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"SomeResourcesRemain","message":"Some resources are remaicloud.ibm.com has 1 resource instances, certmanagers.multicloud.ibm.com has 1 resource instances, connectionmanagers.multictances, endpoints.multicloud.ibm.com has 1 resource instances, policycontrollers.multicloud.ibm.com has 1 resource instanceibm.com has 1 resource instances, serviceregistries.multicloud.ibm.com has 1 resource instances, tillers.multicloud.ibm.comlogycollectors.multicloud.ibm.com has 1 resource instances, workmanagers.multicloud.ibm.com has 1 resource instances"},{"tyng","status":"True","lastTransitionTime":"2020-06-02T05:06:40Z","reason":"SomeFinalizersRemain","message":"Some content in maining: endpoint-appmgr in 1 resource instances, endpoint-certmgr in 1 resource instances, endpoint-connmgr in 1 resource in 1 resource instances, endpoint-search in 1 resource instances, endpoint-svcreg in 1 resource instances, endpoint-tiller nt-topology in 1 resource instances, endpoint-workmgr in 1 resource instances, uninstall-helm-release in 9 resource instanc
+[root@anaemia-inf uninstall]#
+[root@anaemia-inf uninstall]# kubectl get ns | grep multicluster-endpoint
+[root@anaemia-inf uninstall]#
 ```
