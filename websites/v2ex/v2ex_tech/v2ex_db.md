@@ -1,4 +1,29 @@
 
+工作中同事问的一个问题，查了很久没有明白，望大神指点 https://www.v2ex.com/t/677955
+```console
+有一个表 TableA，数据量很大，约 4000w 条。
+使用 where 条件，where TableA.columnA='value'后，可以查出约 70w 条数据。
+
+现在有个业务逻辑: 想在 TableA 中使用 where 条件 where TableA.columnA='value'查询数据，并且将数据按照时间戳排序，所以最后的 sql 是:
+select * from TableA where TableA.columnA='value' order by timestamp;
+
+通过 explain 发现，此次执行是一个 simple 查询，扫描了全表 4000w 数据(columnA 上没有建索引，所以是正常的)，耗时 13s 。
+但是奇怪的是，如果不用 order by，直接 select * from TableA where TableA.columnA='value'; 花了 1s 不到的时间，因此，可以认为时间都花在了 order by 排序上。
+于是他用 select * from TableA order by timestamp; 发现也需要 17s 左右的时间，验证了时间都花在了 order by 上。
+
+现在我的同事灵机一动，想到可以把数据用子查询先查出，再做排序，按道理因为子查询查出的数据量只有 70w，已经降了两个量级了，这个时候再做排序应该要轻松一些。于是: select * from (select * from TableA where Table.A.columnA='value') as B order by B.timestamp; 但是用 explain 一看:
+
+'1','SIMPLE','ulog_data_attitude',NULL,'ALL',NULL,NULL,NULL,NULL, 'xxx','xxx','Using where; Using filesort'
+
+发现用没用子查询执行计划都一样。
+
+现在的问题是:
+1. 为什么「先用子查询查出数据，再用 order by 排序子查询的数据」的方法行不通?
+2. 这个查询除了对 columnA 建索引外，有没有其他更好的优化方法?
+```
+
+PG 库，查询优化。 https://www.v2ex.com/t/677846
+
 PostgreSQL 有没有办法统计每个 SQL 执行的次数 https://www.v2ex.com/t/677366
 - > pg_stat_statements 这个插件
 - > Redhat Debezium 可以监控所有的数据操作，EDA 框架，可以发送 Apache kafka 等。 https://debezium.io/ <br> 其实这东西实现也不是太难，在 SQL 执行之前加入 Hook， 通过消息发送到自己的统计数据库（比如 Redis ）里面去。

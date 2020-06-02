@@ -1,4 +1,25 @@
 
+求助，如何让 k8s 的 pod 访问外网的时候从指定网卡出去，求大神看看我这么配置为什么不行 https://www.v2ex.com/t/677765
+- > 多半是 rp_filter。rp_filter 有三个值:0/1/2, 具体含意如下:
+  ```
+  0: 关闭反向路由校验.
+  1: 开启严格的反向路由校验. 对每个进来的数据包, 校验其反向路由是否是最佳路由. 如果反向路由不是最佳路由, 则直接丢弃该数据包.
+  2: 开启松散的反向路由校验. 对每个进来的数据包, 校验其源地址是否可达, 即反向路由是否能通(通过任意网卡), 如果反向路径不通, 则直接丢弃该数据包.
+
+  当 rp_filter 的值为 1 时, 要求反向路由的出口必须与数据包的入口网卡是同一块, 否则就会丢弃数据包.
+  当 rp_filter 的值为 2 时, 要求反向路由必须是可达的, 如果反路由不可达, 则会丢弃数据包.
+  把 rp_filter 值设为 0, 关闭反向路由校验:
+
+  for x in /proc/sys/net/ipv4/conf/*/rp_filter
+  do
+  echo 0 > "${x}"
+  done
+
+  查看效果:
+  cat /proc/sys/net/ipv4/conf/*/rp_filter
+  ```
+- > kube-proxy –proxy-mode=iptables 与 rp_filter 冲突 http://julyclyde.org/?p=528
+
 国内有便宜靠谱的 kubernetes 服务吗？ https://www.v2ex.com/t/676056
 - > 阿里云上有 serverless k8s 挺不错的只收取容器所占的硬件资源费用
 - > 腾讯云的貌似也只是机器收费，集群服务免费

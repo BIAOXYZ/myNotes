@@ -1,4 +1,10 @@
 
+golang 面试题之 为什么这种更快呢? https://www.v2ex.com/t/677996
+
+go 发生死锁的问题 https://www.v2ex.com/t/677881
+
+[请教] 运行一段时间后报： goroutine 10 [chan send, 20 minutes] https://www.v2ex.com/t/677833
+
 初学 GO，怎么判断一个变量是否未初始化/是否为空 https://www.v2ex.com/t/674053
 - > 看 go 语言之旅 <br> 科学的地址 https://go-tour-zh.appspot.com/ <br> 不科学的地址 http://tour.studygolang.com/welcome/1
 
