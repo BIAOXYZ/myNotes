@@ -20,6 +20,9 @@ https://blog.csdn.net/liuyueyi1995/article/details/54892399
 
 PostgreSQL 辟谣存在任意代码执行漏洞：消息不实 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/836651.htm
 
+PostgreSQL用户密码安全策略管理 https://www.modb.pro/db/21476
+- > PostgreSQL提供了一个插件passwordcheck可以满足简单的密码复杂度测验，防止使用过短，或者与包含用户名的密码。
+
 一文读懂PostgreSQL数据库透明数据加密 - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/84829027 || PostgreSQL数据库透明数据加密概述 https://cloud.tencent.com/developer/article/1516612
 
 ## DB Security of Oracle
