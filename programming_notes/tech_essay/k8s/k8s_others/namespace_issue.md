@@ -1,7 +1,7 @@
 
 # namespace一直处于Terminating状态，但是却删不掉
 
-How to fix — Kubernetes namespace deleting stuck in Terminating state https://medium.com/@clouddev.guru/how-to-fix-kubernetes-namespace-deleting-stuck-in-terminating-state-5ed75792647e
+【1】 How to fix — Kubernetes namespace deleting stuck in Terminating state https://medium.com/@clouddev.guru/how-to-fix-kubernetes-namespace-deleting-stuck-in-terminating-state-5ed75792647e
 ```sh
 Step 1: Dump the descriptor as JSON to a file
 ``
@@ -69,17 +69,23 @@ Where: `/api/v1/namespaces/<your_namespace_here>/finalize` # 这里logging就是
 - 回复：
   * > This is not the right way, especially in a production environment. Today I got into the same problem. By removing the finalizer you’ll end up with leftovers in various states. You should actually find what is keeping the deletion from complete.
 
+【2】 A namespace is stuck in the Terminating state https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/troubleshoot/ns_terminating.html
+- > 用http接口进行删除
+
+【3】 How to Delete a Kubernetes Namespace Stuck in the Terminating State https://success.docker.com/article/kubernetes-namespace-stuck-in-terminating
+- > `kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get -n namespace name`
+
+【4】 k8s删除Terminating状态的命名空间 https://juejin.im/post/5dada0bc5188253b2f003eff
+ - > 更好的命令：`kubectl api-resources -o name --verbs=list --namespaced | xargs -n 1 kubectl get --show-kind --ignore-not-found -n <ns_name>`
+ - > 有时是有workload在跑的，可以先加--force参数从kubectl强制删除一下
+ - > http接口进行删除
+
+【5】 Kubernetes删除一直处于Terminating状态的namespace https://segmentfault.com/a/1190000016924414
+- > 实际上，前面两种用json方式的删除的，完全可以直接kubectl edit，然后把finalizer字段里的kubernetes删掉即可。省得还得存json文件。
+
 deleting namespace stuck at "Terminating" state https://github.com/kubernetes/kubernetes/issues/60807
 
-A namespace is stuck in the Terminating state https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/troubleshoot/ns_terminating.html
-
-k8s删除Terminating状态的命名空间 https://juejin.im/post/5dada0bc5188253b2f003eff
-
-Kubernetes删除一直处于Terminating状态的namespace https://segmentfault.com/a/1190000016924414
-
 Namespace “stuck” as Terminating, How do I remove it? https://stackoverflow.com/questions/52369247/namespace-stuck-as-terminating-how-do-i-remove-it
-
-How to Delete a Kubernetes Namespace Stuck in the Terminating State https://success.docker.com/article/kubernetes-namespace-stuck-in-terminating
 
 ## 个人实战1（先看看到底有啥东西）
 
