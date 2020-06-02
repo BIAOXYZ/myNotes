@@ -81,7 +81,7 @@ Namespace “stuck” as Terminating, How do I remove it? https://stackoverflow.
 
 How to Delete a Kubernetes Namespace Stuck in the Terminating State https://success.docker.com/article/kubernetes-namespace-stuck-in-terminating
 
-## 个人实战
+## 个人实战1（先看看到底有啥东西）
 
 ```sh
 # multicluster-endpoint是我司的CP4MCM导入managed cluster后，会在managed cluster上创建的一个namespace。但不幸的是，前期我们只有一个集群，
@@ -436,3 +436,6 @@ No resources found in multicluster-endpoint namespace.
 [root@lolls-inf ~]#
 
 ```
+
+## 个人实战2（实战删除）
+
