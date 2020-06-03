@@ -69,7 +69,7 @@ podset.app.example.com/example-podset patched
 $
 ```
 
-# patch service
+# patch Service
 
 ## patch service from clusterIP to NodePort
 
@@ -176,7 +176,7 @@ $ kubectl patch svc kubernetes-dashboard -n kubernetes-dashboard -p '{"spec": {"
 service/kubernetes-dashboard patched
 ```
 
-# patch label
+# patch Label
 
 An example of using kubectl patch https://gist.github.com/coresolve/364c80b817eb8d84bfb1c6e2c94d2886
 
@@ -388,4 +388,79 @@ status:
   replicas: 3
   updatedReplicas: 3
 $
+```
+
+# patch StorageClass
+
+改变默认 StorageClass https://v1-18.docs.kubernetes.io/zh/docs/tasks/administer-cluster/change-default-storage-class/ || Change the default StorageClass https://v1-18.docs.kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/
+
+```sh
+#// 最开始OCP里有这么四个sc，其中第一个是自己手动装的，后面三个是OCP系统自己装的。但是没有默认的。
+[root@lolls-inf ~]# oc get sc
+NAME                               PROVISIONER                     AGE
+fast                               storageos                       47d
+rook-ceph-block-internal           rook-ceph.rbd.csi.ceph.com      48d
+rook-ceph-cephfs-internal          rook-ceph.cephfs.csi.ceph.com   48d
+rook-ceph-delete-bucket-internal   ceph.rook.io/bucket             48d
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# oc get sc rook-ceph-block-internal -o yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  creationTimestamp: "2020-04-15T11:43:34Z"
+  name: rook-ceph-block-internal
+  resourceVersion: "21731"
+  selfLink: /apis/storage.k8s.io/v1/storageclasses/rook-ceph-block-internal
+  uid: 7a2b11dc-185c-427d-be8b-ac6fcef6431e
+parameters:
+  clusterID: rook-ceph
+  csi.storage.k8s.io/fstype: ext4
+  csi.storage.k8s.io/node-stage-secret-name: rook-csi-rbd-node
+  csi.storage.k8s.io/node-stage-secret-namespace: rook-ceph
+  csi.storage.k8s.io/provisioner-secret-name: rook-csi-rbd-provisioner
+  csi.storage.k8s.io/provisioner-secret-namespace: rook-ceph
+  imageFeatures: layering
+  imageFormat: "2"
+  pool: rbd
+provisioner: rook-ceph.rbd.csi.ceph.com
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+[root@lolls-inf ~]#
+
+#// patch成功后，会发现查sc的时候默认的sc多了小括号括起来的default。此外，具体看它的yaml会发现多了个annotation。
+[root@lolls-inf ~]# kubectl patch storageclass rook-ceph-block-internal -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+storageclass.storage.k8s.io/rook-ceph-block-internal patched
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# oc get sc
+NAME                                 PROVISIONER                     AGE
+fast                                 storageos                       47d
+rook-ceph-block-internal (default)   rook-ceph.rbd.csi.ceph.com      48d
+rook-ceph-cephfs-internal            rook-ceph.cephfs.csi.ceph.com   48d
+rook-ceph-delete-bucket-internal     ceph.rook.io/bucket             48d
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# oc get sc rook-ceph-block-internal -o yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+  creationTimestamp: "2020-04-15T11:43:34Z"
+  name: rook-ceph-block-internal
+  resourceVersion: "45148590"
+  selfLink: /apis/storage.k8s.io/v1/storageclasses/rook-ceph-block-internal
+  uid: 7a2b11dc-185c-427d-be8b-ac6fcef6431e
+parameters:
+  clusterID: rook-ceph
+  csi.storage.k8s.io/fstype: ext4
+  csi.storage.k8s.io/node-stage-secret-name: rook-csi-rbd-node
+  csi.storage.k8s.io/node-stage-secret-namespace: rook-ceph
+  csi.storage.k8s.io/provisioner-secret-name: rook-csi-rbd-provisioner
+  csi.storage.k8s.io/provisioner-secret-namespace: rook-ceph
+  imageFeatures: layering
+  imageFormat: "2"
+  pool: rbd
+provisioner: rook-ceph.rbd.csi.ceph.com
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+[root@lolls-inf ~]#
 ```
