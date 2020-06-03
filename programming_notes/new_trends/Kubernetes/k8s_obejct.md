@@ -333,6 +333,7 @@ Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
 - Kubernetes ConfigMap热更新测试 https://jimmysong.io/posts/kubernetes-configmap-hot-update/
 
 ## kubernetes StorageClass
+- 改变默认 StorageClass https://v1-18.docs.kubernetes.io/zh/docs/tasks/administer-cluster/change-default-storage-class/ || Change the default StorageClass https://v1-18.docs.kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/
 
 StorageClass https://www.huweihuang.com/kubernetes-notes/storage/storage-class.html
 
