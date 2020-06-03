@@ -230,6 +230,10 @@ Jupyter notebook远程访问服务器 https://blog.csdn.net/a819825294/article/d
 
 ## IDE pycharm
 
+### pycharm in cloud-native
+
+使用 PyCharm、Okteto 和 Kubernetes 搭建远程开发环境 https://www.qikqiak.com/post/remote-deploy-env-with-okteto/
+
 ### pycharm日常
 
 <<pycharm快捷键、常用设置、配置管理>> http://blog.csdn.net/pipisorry/article/details/39909057

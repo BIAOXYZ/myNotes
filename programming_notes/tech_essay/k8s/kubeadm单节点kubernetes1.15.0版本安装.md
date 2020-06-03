@@ -15,6 +15,7 @@
   > 为了在Linux中永久禁用交换空间，打开 `/etc/fstab` 文件，搜索交换行并在行的前面添加一个 `#`（hashtag） 标记来注释整行，如下图所示
 - How to install Kubernetes with Kubeadm: A quick and dirty guide https://www.mirantis.com/blog/how-install-kubernetes-kubeadm/
   > 里面提到一个命令：“To remove the entire cluster: `sudo kubeadm reset`”。
+- 使用 kubeadm 更新 kubernetes 集群 https://www.qikqiak.com/post/use-kubeadm-upgrade-k8s/
 
 ## 0.3 未涉及参考链接：
 

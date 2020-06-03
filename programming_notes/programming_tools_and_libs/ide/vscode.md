@@ -152,3 +152,7 @@ VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u0136002
 # vscode for latex
 
 VS Code 与 LaTeX 真乃天作之合 https://www.jianshu.com/p/57f8d1e026f5
+
+# vscode others
+
+在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/

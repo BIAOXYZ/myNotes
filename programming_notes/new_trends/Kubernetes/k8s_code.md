@@ -49,6 +49,12 @@ kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source
 - Kubernetes Node Controller源码分析之创建篇 https://my.oschina.net/jxcdwangtao/blog/1492173
 - Kubernetes Node Controller源码分析之配置篇 https://my.oschina.net/jxcdwangtao/blog/1454434
 
+【by 阳明的博客】
+- 自定义 Kubernetes 调度器 https://www.qikqiak.com/post/custom-kube-scheduler/
+- 使用 Golang 自定义 Kubernetes Ingress Controller https://www.qikqiak.com/post/custom-k8s-ingress-controller-with-go/
+- 深入理解 Kubernetes Admission Webhook https://www.qikqiak.com/post/k8s-admission-webhook/
+- Kubernetes Operator 快速入门教程 https://www.qikqiak.com/post/k8s-operator-101/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubeadm相关源码/流程
