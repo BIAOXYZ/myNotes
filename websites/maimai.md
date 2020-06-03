@@ -19,6 +19,8 @@ lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像l
 
 # 脉脉算法与数据结构
 
+今天做了BFS相关的6道medium，实在是有点忙。。明天希望有时间能补上，题目是102/103/279/429/542/863…如果有一起练习的朋友，也一起坚持吧~6/2/2020 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzMzY1NDgsImlhdCI6MTU5MTE1ODUxMn0.IwQec7C94WemC_s5AwoA-b-ZrOnbTyBAQ65T8fhHecI
+
 leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU1NzMyNjQsImlhdCI6MTU4NTIxMTQ4Nn0.9fpBl4A5y6yG56Cdbi6-L4X3alNGk5gBl9FD9HgrGwY
 - > 老哥先做84题，然后85就明白了
 - > 有一道神题，Count of Range Sums，把离散化，uniq，二分查找，树状数组，前缀和都搞进去了，这道题我写了一个月了
