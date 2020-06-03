@@ -1,6 +1,10 @@
 
 # 官方
 
+- 配置对多集群的访问 https://v1-18.docs.kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+- 使用 kubeconfig 文件组织集群访问 https://v1-18.docs.kubernetes.io/zh/docs/concepts/configuration/organize-cluster-access-kubeconfig/
+- kubectl 备忘单 https://v1-18.docs.kubernetes.io/zh/docs/reference/kubectl/cheatsheet/
+
 # 个人实战
 
 ## 实战查看命令参数
@@ -104,6 +108,7 @@ users:
     token: t2mkR0AaVRWo_DvNJB5j4XaTfzOz2z7vBwNImuqlgKLS
 [root@lolls-inf ~]#
 
+
 #// 仔细对比就会发现了，一共5个contexts，和前面view里显示的是对应的。
 #// clusters一共三个，也和前面对应得上。
 #// 甚至AUTHINFO也和前面的“users”是对应的，只是没有专门的语句去查（其实查了contexts和clusters，甚至只是contexts就够了）。
@@ -122,6 +127,21 @@ mycluster
 api-lolls-os-fyre-ibm-com:6443
 [root@lolls-inf ~]#
 [root@lolls-inf ~]# oc config current-context
+default/api-lolls-os-fyre-ibm-com:6443/admin
+[root@lolls-inf ~]#
+
+
+#// 切换当前context。
+[root@lolls-inf ~]# kubectl config use-context admin
+Switched to context "admin".
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# kubectl config current-context
+admin
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# kubectl config use-context default/api-lolls-os-fyre-ibm-com:6443/admin
+Switched to context "default/api-lolls-os-fyre-ibm-com:6443/admin".
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# kubectl config current-context
 default/api-lolls-os-fyre-ibm-com:6443/admin
 [root@lolls-inf ~]#
 ```
@@ -155,5 +175,4 @@ users:
 CURRENT   NAME    CLUSTER   AUTHINFO   NAMESPACE
 *         admin   anaemia   admin
 [root@anaemia-inf ~]#
-
 ```
