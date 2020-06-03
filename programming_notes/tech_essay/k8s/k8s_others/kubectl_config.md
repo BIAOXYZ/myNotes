@@ -5,6 +5,17 @@
 - 使用 kubeconfig 文件组织集群访问 https://v1-18.docs.kubernetes.io/zh/docs/concepts/configuration/organize-cluster-access-kubeconfig/
 - kubectl 备忘单 https://v1-18.docs.kubernetes.io/zh/docs/reference/kubectl/cheatsheet/
 
+# 其他文章
+
+Kubernetes RBAC 详解 https://www.qikqiak.com/post/use-rbac-in-k8s/
+```sh
+# 现在我们可以使用刚刚创建的证书文件和私钥文件在集群中创建新的凭证和上下文(Context):
+$ kubectl config set-credentials haimaxy --client-certificate=haimaxy.crt  --client-key=haimaxy.key
+
+# 我们可以看到一个用户haimaxy创建了，然后为这个用户设置新的 Context:
+$ kubectl config set-context haimaxy-context --cluster=kubernetes --namespace=kube-system --user=haimaxy
+```
+
 # 个人实战
 
 ## 实战查看命令参数
