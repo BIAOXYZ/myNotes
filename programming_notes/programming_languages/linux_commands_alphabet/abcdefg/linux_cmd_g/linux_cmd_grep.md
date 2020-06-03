@@ -102,6 +102,23 @@ root@temptest hellovault $ grep -ir "name" .
 root@temptest hellovault $
 ```
 
+# grep正则
+
+grep 命令系列：grep 中的正则表达式 https://linux.cn/article-6941-1.html
+
+```sh
+#// 搜索创建时间是“两位数字且结尾是h”（也就是24小时内创建的，因为一过24小时就变成d结尾了）的名字空间。
+[root@lolls-inf ~]# oc get ns | grep -E "[0-9][0-9]h"
+anaemia3                                                Active   21h
+cp4m                                                    Active   19h
+ibm-common-services                                     Active   18h
+management-infrastructure-management                    Active   18h
+management-monitoring                                   Active   18h
+management-operations                                   Active   18h
+management-security-services                            Active   18h
+[root@lolls-inf ~]#
+```
+
 ## `-R` 与 `-r`
 
 What's the difference between grep -r and -R https://stackoverflow.com/questions/22763579/whats-the-difference-between-grep-r-and-r
