@@ -278,6 +278,10 @@ http://desktopclient.net/gw/index.html#/setupvpn
 
 # 浏览器新闻类
 
+Firefox 将提供导出密码至本地的功能 https://www.ithome.com/0/490/347.htm
+> Mozilla 官方的 bug 报告页面 Bugzilla  显示，导出或是备份密码的请求早在 16 年前就有人提出。该编号为 249801  的问题终于在前两天被关闭，并标识为 “已解决”。
+>> `Bug 249801 Opened 16 years ago Closed 5 days ago` 【目前时间是2020.06.03，五天前就是5月30左右的样子】 Ability to export/backup saved passwords https://bugzilla.mozilla.org/show_bug.cgi?id=249801
+
 火狐成唯一通过德国联邦信息安全局考核的浏览器 https://www.ithome.com/0/451/414.htm
 - > 根据 BSI 的新指南，被认为安全的现代 Web 浏览器必须满足以下最低要求：
 - > 根据 BSI 的说法，Firefox 是唯一支持以上所有要求的浏览器，其它浏览器测试不通过的原因包括：
