@@ -5,6 +5,8 @@
 - > 有关 JSON patch 和 JSON 合并 patch 的比较，查看 JSON patch 和 JSON 合并 patch。
   * JSON Patch and JSON Merge Patch http://erosb.github.io/post/json-patch-vs-merge-patch/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # patch CR
 
 ## 其他
@@ -68,6 +70,8 @@ $ kubectl patch podset example-podset --type='json' -p '[{"op": "replace", "path
 podset.app.example.com/example-podset patched
 $
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # patch Service
 
@@ -175,6 +179,8 @@ $
 $ kubectl patch svc kubernetes-dashboard -n kubernetes-dashboard -p '{"spec": {"type": "NodePort"}}'
 service/kubernetes-dashboard patched
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # patch Label
 
@@ -390,6 +396,8 @@ status:
 $
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # patch StorageClass
 
 改变默认 StorageClass https://v1-18.docs.kubernetes.io/zh/docs/tasks/administer-cluster/change-default-storage-class/ || Change the default StorageClass https://v1-18.docs.kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/
@@ -462,5 +470,57 @@ parameters:
 provisioner: rook-ceph.rbd.csi.ceph.com
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
+[root@lolls-inf ~]#
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# patch ServiceAccount
+
+```sh
+[root@lolls-inf ~]# oc get sa default -n openshift-marketplace -o yaml
+apiVersion: v1
+imagePullSecrets:
+- name: default-dockercfg-j78dv
+- name: ibm-management-pull-secret
+- name: ibm-management-pull-secret
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2020-04-15T11:18:31Z"
+  name: default
+  namespace: openshift-marketplace
+  resourceVersion: "44454310"
+  selfLink: /api/v1/namespaces/openshift-marketplace/serviceaccounts/default
+  uid: f33b764a-c33f-4707-8783-ae73489310f7
+secrets:
+- name: default-token-wflcl
+- name: default-dockercfg-j78dv
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# oc patch sa default -n openshift-marketplace --type=json -p '[{"op":"add","path":"/imagePullSecrets/-","value":{"name":"ibm-management-pull-secret"}}]'
+serviceaccount/default patched
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# oc get sa default -n openshift-marketplace -o yaml
+apiVersion: v1
+imagePullSecrets:
+- name: default-dockercfg-j78dv
+- name: ibm-management-pull-secret
+- name: ibm-management-pull-secret
+- name: ibm-management-pull-secret
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2020-04-15T11:18:31Z"
+  name: default
+  namespace: openshift-marketplace
+  resourceVersion: "45294131"
+  selfLink: /api/v1/namespaces/openshift-marketplace/serviceaccounts/default
+  uid: f33b764a-c33f-4707-8783-ae73489310f7
+secrets:
+- name: default-token-wflcl
+- name: default-dockercfg-j78dv
+[root@lolls-inf ~]#
+
+#// 但是patch的"op"值是没有delete还是别的原因，反正我想用patch的方式删是没成功。
+[root@lolls-inf ~]# oc patch sa default -n openshift-marketplace --type=json -p '[{"op":"delete","path":"/imagePullSecrets/-","value":{"name":"ibm-management-pull-secret"}}]'
+The request is invalid
 [root@lolls-inf ~]#
 ```
