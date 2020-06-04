@@ -1,9 +1,17 @@
 
 # 公网github
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## International Business Machines https://github.com/IBM
 
 IBM Cloud Paks are enterprise-grade containerized software by combining container images with enterprise capabilities for deployment in production use cases with integrations for management and lifecycle operations. Features such as pre-configured deployments based on product expertise, rolling upgrades, rollbacks, security/vulnerability testing… https://github.com/IBM/cloud-pak
+
+### portieris
+
+https://github.com/IBM/portieris/blob/d94edf3c613729b3cd8ab54775e6ce7b5206c9fe/test/framework/clusterimagepolicy.go
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Open Cluster Management https://github.com/open-cluster-management
 
@@ -25,6 +33,7 @@ CRD and controller for Subscription (Channel Subscription model) for Multicloud 
 - `dplv1alpha1 "github.com/open-cluster-management/multicloud-operators-deployable/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L24
 - `plrv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L25
  
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Hybrid Application Model https://github.com/hybridapp-io
 
@@ -32,9 +41,13 @@ Operator to deploy Hybrid Application Model https://github.com/hybridapp-io/ham-
 
 Deployable to wrap resources for Hybrid Application model https://github.com/hybridapp-io/ham-deployable-operator
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Multi Cloud Lab https://github.com/multicloudlab
 
 Kubernetes Cluster API Provider IBM VPC Cloud 【IBM VPC Cloud (Gen2)】 https://github.com/multicloudlab/cluster-api-provider-ibmvpccloud   -->   IBM Cloud Provider for Cluster API 【IBM Cloud (Gen1 SoftLayer)】 https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 公司github
 
