@@ -11,7 +11,8 @@ How can I create IBM Cloud Private namespaces, together with PSPs using the comm
   >> `kubectl -n appsales create rolebinding ibm-anyuid-clusterrole-rolebinding --clusterrole=ibm-anyuid-clusterrole --group=system:serviceaccounts:appsales`
 
 ```sh
-# 实战
+# 个人实战以及ibm这些自己定制的psp的地址（仅以 ibm-restricted-psp 为例）：
+# https://github.com/IBM/cloud-pak/blob/fc9291358bde7cb391a2a19f14415145a21bcb36/spec/security/psp/ibm-restricted-psp.yaml
 
 [root@c4-infra02 ~]# kubectl get rolebinding -n 1234ns
 NAME                                 AGE
