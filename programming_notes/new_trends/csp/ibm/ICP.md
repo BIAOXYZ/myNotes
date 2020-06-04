@@ -30,9 +30,13 @@ Setting up the Helm CLI https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.
 
 ## 故障排除
 
+### ClusterImagePolicy 和 ImagePolicy相关
+
 Deployment errors for ClusterImagePolicy and PodSecurityPolicy https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.0/troubleshoot/deploy_cluster_impo.html
 
 Enforcing container image security https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.1.0/manage_images/image_security.html
+
+Running Wild Container Image on ICP 3.1.1 — Security and Enforcement https://medium.com/@zhimin.wen/running-wild-container-image-on-icp-3-1-1-security-and-enforcement-19bf9e26a3d8
 
 # 其他攻略
 
