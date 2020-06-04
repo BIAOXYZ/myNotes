@@ -39,10 +39,10 @@ Settings:
   Supplemental Groups Strategy: RunAsAny
     Ranges:                                     <none>
 [root@anaemia-inf ~]#
+```
 
-
+```sh
 # 另一台之前执行过某些脚本，改过scc和sa的OCP。其相关的改动语句是：
-## Workaround for catalogsource SCC - investigation in progress
 ## oc adm policy add-scc-to-user anyuid system:serviceaccount:openshift-operators:default
 ## oc adm policy add-scc-to-user anyuid system:serviceaccount:cp4m:default
 
@@ -82,5 +82,37 @@ Settings:
     Ranges:                                     <none>
   Supplemental Groups Strategy: RunAsAny
     Ranges:                                     <none>
+[root@lolls-inf ~]#
+
+
+# 但是想从sa直接查scc似乎是不行的。从上面查询结果知道 cp4m 名字空间下的名为 default 的SA是关联了anyuid scc
+# 的，但是不论 get 还是 describe 这个SA，都无法看到相关scc的信息。
+[root@lolls-inf ~]# oc describe sa default -n cp4m
+Name:                default
+Namespace:           cp4m
+Labels:              <none>
+Annotations:         <none>
+Image pull secrets:  default-dockercfg-crsw8
+Mountable secrets:   default-token-2vxsp
+                     default-dockercfg-crsw8
+Tokens:              default-token-2vxsp
+                     default-token-pvx77
+Events:              <none>
+[root@lolls-inf ~]#
+[root@lolls-inf ~]# oc get sa default -n cp4m -o yaml
+apiVersion: v1
+imagePullSecrets:
+- name: default-dockercfg-crsw8
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2020-06-02T13:02:33Z"
+  name: default
+  namespace: cp4m
+  resourceVersion: "44446961"
+  selfLink: /api/v1/namespaces/cp4m/serviceaccounts/default
+  uid: 55580295-7041-409e-9ada-2c0730ffaecb
+secrets:
+- name: default-token-2vxsp
+- name: default-dockercfg-crsw8
 [root@lolls-inf ~]#
 ```
