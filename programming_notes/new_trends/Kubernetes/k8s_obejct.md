@@ -235,17 +235,13 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 
 【[:star:][`*`]】 Kubernetes RBAC 详解 https://www.qikqiak.com/post/use-rbac-in-k8s/
 
-### security context
+### kubernetes Security Context
+- Configure a Security Context for a Pod or Container https://v1-17.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/
 
 kubernetes使用securityContext和sysctl http://bazingafeng.com/2017/12/23/kubernetes-uses-the-security-context-and-sysctl/
 
-Configure a Security Context for a Pod or Container https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
-
-kubernetes使用securityContext和sysctl http://bazingafeng.com/2017/12/23/kubernetes-uses-the-security-context-and-sysctl/
-
-### Pod Security Policy
-
-Pod 安全策略 https://v1-16.docs.kubernetes.io/zh/docs/concepts/policy/pod-security-policy/ || Pod Security Policies https://v1-16.docs.kubernetes.io/docs/concepts/policy/pod-security-policy/
+### kubernetes Pod Security Policy
+- Pod 安全策略 https://v1-16.docs.kubernetes.io/zh/docs/concepts/policy/pod-security-policy/ || Pod Security Policies https://v1-16.docs.kubernetes.io/docs/concepts/policy/pod-security-policy/
 
 An illustrated deepdive into Pod Security Policies https://banzaicloud.com/blog/pod-security-policy/
 
