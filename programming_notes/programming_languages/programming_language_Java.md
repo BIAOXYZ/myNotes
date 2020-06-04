@@ -173,6 +173,10 @@ ArrayList和LinkedList的区别 https://www.jianshu.com/p/e591690afacb
 
 servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
 
+漫画：什么是单例模式？ - 小灰的文章 - 知乎 https://zhuanlan.zhihu.com/p/33102022
+
+单例模式 https://zh.wikipedia.org/wiki/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F
+
 ### JDK JRE JVM等相关
 
 JRE 和 JDK 的区别是什么？ - 王博的回答 - 知乎 https://www.zhihu.com/question/20317448/answer/14737358
@@ -222,8 +226,6 @@ spring-boot项目在外部tomcat环境下部署遇到的问题 https://www.jians
 > spring-boot默认提供内嵌的tomcat，所以打包直接生成jar包，用java -jar命令就可以启动。但是，有时候我们更希望一个tomcat来管理多个项目，这种情况下就需要项目是war格式的包而不是jar格式的包。
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
 
 # Java框架
 
