@@ -40,6 +40,8 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉技术类其他
 
+一个很原始的问题，为什么数组从0开始计数?是否合理?如果从1开始会有什么问题吗？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzNTE4MDUsImlhdCI6MTU5MTI0NTQxM30.QoG77fZb6L8n57CuZRAyTKyciTZUOnLmXlpG24AOfmY
+
 不懂就问。。。。问下倒排索引，百度了也没看懂，搜出来的结果很多但都是一个版本。主要是为啥叫“倒排”？没看懂，有高手解答一下吗？ 有bat tmd的大佬在吗？在外散修的大佬们在吗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwOTk0NDIsImlhdCI6MTU4OTQzMzA1NH0.DZqyr2MYO9psQ5GThrfwR9YVTukh6p52HCfvRkJhF4Y
 - > 比如两条数据，id=1，内容“饭好吃”，id=2,内容“饭难吃”。对这两段内容分词，可获得三个词，饭-对应id为1和2，好吃--对应id为1，难吃--对应id为2。当你搜索“饭”，就可以很快获取到id为1和2。再通过id去获取其内容。
 - > 倒排是和正排对应的，所谓正排就是给你一个doc id，你可以获得他的所有item。那么与之相反，倒排就是给你个term id，你可以获得所有包含这个term的doc
@@ -62,6 +64,18 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 - > 如果是C++，gdb attach 到进程上，generate core，gdb 打开 core，threads apply all bt
 - > C++一般是 top -Hp和pstack配合用
 - > pstack 就够了
+
+# 脉脉健康
+
+两个月前检测出hpv高危阳性，现在复查还是阳明，感觉生活暗无天日，怎么办…… https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzNDUyMzYsImlhdCI6MTU5MTI0NzAxOX0.PyUgZvQsEW-Wq12EVM39s8sluWQFhJvgcXqdQBbcNGE
+- > 你是女孩子吗？HPV不可怕，听医生的建议好好治疗说不定能治愈，癌变几率不太大。
+- > 别怕，我媳妇之前hpv好几种都是阳性。吃药+锻炼，一年后复查就没了
+- > 去北京妇产医院找吕讷男大夫。别怕，没事，咱还年轻，加强锻炼，别熬夜，适当用药(遵医嘱)，保持健康饮食和心情愉悦。我之前三个hpv高危，后面也都转阴了。转阴后一定去打疫苗，大夫说26以后打四
+- > 不要焦虑，主要是要增强自身免疫力，会自动清除病毒，有自愈的例子
+- > 保持健康心态，早睡早起，休息好。没准半年后自己转阴～不要太多负担，加油
+- > 90%的女性一生中都感染过hpv，大部分都会被免疫系统清除的
+- > 我妈去年也是，两个高危的阳性，后面让她多注意休息，多运动，保持好心态，半年后复查就都是阴性了，把抵抗力提升好，一般都能好的，心态第一
+- > 问题不大。外面美体美容还是少去，有些美体店消毒不干净的。还有汗蒸啥的也少去
 
 # 脉脉八卦
 
@@ -86,8 +100,13 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉搞笑
 
+有大佬给解释一下hr和hrbp是啥意思吗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzMjI3MTIsImlhdCI6MTU5MTI0NDY3M30.BC9-bL9lT_gK1e6U3zWPrPaZJ7i5TBstlqQue2jXH3E
+- > 坏人，坏人帮派
+
 最近想在感情上来点高并发，有没有什么保证线程安全的经验？大佬们指点一下，未婚。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5ODE0NzIsImlhdCI6MTU4ODMwOTg4MX0.f90ZDd3vSTR15OuNECQZAoCImjlGZ2K8ZyP4lXch8dI
 - > 买多套房 容器化 互相隔离 统一调度
 
 网易严选的朋友，帮解释下为什么这里icon要画个葫芦娃? ? ? https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU5NTAzNzEsImlhdCI6MTU4Nzk2MTEzMH0.CAaFz1GMLkfwSyiSW6qPMKGuxiemQR2DWOaZNCAO4HI
-
+- > 头上的葫芦可以放洗发水
+- > 是指最近主打的葫芦娃联名美妆产品啦
+- > 严选跟国漫葫芦娃合作这事我知道，但是为啥是二娃？难道是想表达“哪位小朋友的眼睛还没有看老师？”
