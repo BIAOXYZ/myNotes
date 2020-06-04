@@ -1,4 +1,6 @@
 
+go 单例模式 https://www.v2ex.com/t/678414
+
 golang 面试题之 为什么这种更快呢? https://www.v2ex.com/t/677996
 
 go 发生死锁的问题 https://www.v2ex.com/t/677881

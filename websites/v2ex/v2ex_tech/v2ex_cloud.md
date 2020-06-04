@@ -1,4 +1,6 @@
 
+论 sidecar 模式的可行性 https://www.v2ex.com/t/678524
+
 求助，如何让 k8s 的 pod 访问外网的时候从指定网卡出去，求大神看看我这么配置为什么不行 https://www.v2ex.com/t/677765
 - > 多半是 rp_filter。rp_filter 有三个值:0/1/2, 具体含意如下:
   ```
