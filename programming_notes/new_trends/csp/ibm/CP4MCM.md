@@ -13,6 +13,14 @@ IBM Cloud Pak for Data https://www.ibm.com/products/cloud-pak-for-data
 
 IBM Cloud Pak for Applications https://www.ibm.com/cloud/cloud-pak-for-applications
 
+## 相关产品/组件
+
+### ibm-common-service
+
+ibm-common-service-operator/docs/uninstall.md https://github.com/IBM/ibm-common-service-operator/blob/a82f77bb47725b332667cd5a1795d1f076bff2ea/docs/uninstall.md
+
+Installing IBM Cloud Platform Common Services in your OpenShift Container Platform cluster https://www.ibm.com/support/knowledgecenter/SSHKN6/installer/3.x.x/install_operator.html
+
 ## 官网手册类
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
