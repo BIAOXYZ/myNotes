@@ -60,6 +60,11 @@ Awesome Online IDE: 🌩️ A list of awesome online development environments ht
 - > This is an easy task - just fix the code written by a new lady programmer!｜paiza’s online hackathon Vol.1 https://paiza.jp/poh/ec-campaign
 >> notes: 图快的话可以直接用 https://paiza.io/en/projects/new?language=c 或 https://paiza.io/en/projects/new?language=python 之类的地址。
 
+repl.it Languages https://repl.it/languages
+- https://repl.it/languages/python
+- https://repl.it/languages/python3
+- https://repl.it/languages/cpp
+
 ## 未用过或不常用Online IDE/Platform
 
 Codiad http://codiad.com/
