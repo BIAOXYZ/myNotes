@@ -177,6 +177,8 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 
 并查集详解 ——图文解说,简单易懂(转) https://blog.csdn.net/liujian20150808/article/details/50848646
 
+【[:star:][`*`]】 并查集 https://oi-wiki.org/ds/dsu/
+
 ### `###` Min-Max Tree
 
 【Gym - 100796C 】Minimax Tree https://www.cnblogs.com/flipped/p/7113756.html
