@@ -99,6 +99,7 @@ RunMyCode https://runmycode.online/
 【Python官方的】 https://www.python.org/shell/
 
 【programiz.com这个好像只有python3】 Python Online Compiler https://www.programiz.com/python-programming/online-compiler/
+>> //notes：呃，准确说应该是python语言只有python3，别的语言竟然还有。但是它没有一个比较好找的入口，所以就不放到前面了。比如C语言的是：https://www.programiz.com/c-programming/online-compiler/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
