@@ -77,6 +77,8 @@ I get "corrupted content error" for a site that I can access on a different devi
 # 其他链接
 
 【[:star:][`*`]】【里面是较为详细的例子】 IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
+- > Refer to the online documentation for details on the construct of the Deployable definition:
+  >> https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_deployables.html
 
 Documentation for IBM CloudPak playbooks. https://github.com/ibm-cloud-architecture/cloudpak8s
 > IBM Cloud Paks Playbook https://cloudpak8s.io/
