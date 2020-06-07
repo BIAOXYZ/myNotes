@@ -60,6 +60,10 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 python 实现二叉树的深度&&广度优先遍历 https://juejin.im/post/5bc932446fb9a05d147855de
 
+How to implement a ​breadth-first search in Python https://www.educative.io/edpresso/how-to-implement-a-breadth-first-search-in-python
+
+Breadth first search https://www.programiz.com/dsa/graph-bfs
+
 用Python实现树的BFS与DFS https://www.jianshu.com/p/d2125448270b
 
 #### BTS
