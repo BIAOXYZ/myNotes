@@ -1,4 +1,6 @@
 
+同一磁盘使用 ln 创建硬链接提示 Invalid cross-device link? https://www.v2ex.com/t/679359
+
 ssh 免密登陆问题，求大神支援，全网搜未碰到同款问题！ https://www.v2ex.com/t/675922
 ```console
 目前三台服务器 246，249，250 三台机器，首先我 246 用 ssh-copy-id 的方法传公钥到 249 是成功免密登陆的，然后我用脚本
