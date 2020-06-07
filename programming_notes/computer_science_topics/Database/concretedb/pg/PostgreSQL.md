@@ -350,6 +350,8 @@ pg_flame: A flamegraph generator for Postgres EXPLAIN ANALYZE output. https://gi
 
 PgHero: A performance dashboard for Postgres https://github.com/ankane/pghero
 
+pg_query_state: Tool for query progress monitoring in PostgreSQL https://github.com/postgrespro/pg_query_state
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
