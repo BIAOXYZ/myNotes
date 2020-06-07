@@ -49,6 +49,14 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## Search Algorithm
+
+### BTS
+
+Breadth-first search https://en.wikipedia.org/wiki/Breadth-first_search || 广度优先搜索 https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Hash related algorithms
 
 Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
