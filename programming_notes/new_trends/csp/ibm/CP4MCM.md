@@ -96,6 +96,18 @@ To enable these components to be used by the channel subscription, each of the r
   * > Refer to the online documentation for details on configuring the Placement Rules resource: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_placement_rules.html
   * > Now, let’s create the subscription file. This contains the details of relating the placement rule definition with the application specification.
   * > Refer to the online documentation for details on configuring the Subscription resource: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
+- > **Deploy the application**
+  * > The subscription is deployed to a different namespace than the channel. Never deploy the subscription to the same namespace as the channel. Hence, deploy the subscription to the other namespace, modresort-project.
+- > **Validate the application**
+  * > Verify that your subscriptions are propagated correctly by running the command. <br> `oc get subscription.app.ibm.com --all-namespaces` <br> The subscription from the **mcm hub** should be in the **Propagated** state.
+- > **Move the application between clusters**
+  * > Applications deployed using the Subscription model are deployed to clusters based on PlacementRules. The placement rules for deployables can be defined as a stand-alone resource and referenced by the deployable. The placement rules use cluster labels to determine where to place the applications.
+  * > In the following steps, you move the application from the **Dev** cluster to the **QA** cluster by changing the placement policy. You also learn how to use cluster replicas.
+  * > What if you want to run the application on both the clusters? This is possible by changing clusterReplicas and matchingLabel. Let’s do it! Back to the Multicluster Management page, on the Editor, change **clusterReplicas** to **2**. On the spec **matchLabels** setting, remove the **environment** label, and add **vendor** label with value **Openshift**. The label, vendor, exists on both the clusters and the value matches OpenShift.
+- > **Summary**  
+  * > If you would like to learn more about Cloud Pak for Multicloud Management, refer to:
+    + > Cloud Pak for Multicloud Management [home page](https://www.ibm.com/cloud/cloud-pak-for-management)
+    + > Cloud Pak for Multicloud Management [Demos](https://www.ibm.com/demos/collection/Cloud-Pak-for-Multicloud-Management/)
 
 Documentation for IBM CloudPak playbooks. https://github.com/ibm-cloud-architecture/cloudpak8s
 > IBM Cloud Paks Playbook https://cloudpak8s.io/
