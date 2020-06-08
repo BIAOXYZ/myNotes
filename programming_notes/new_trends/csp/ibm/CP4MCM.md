@@ -77,8 +77,23 @@ I get "corrupted content error" for a site that I can access on a different devi
 # 其他链接
 
 【[:star:][`*`]】【里面是较为详细的例子】 IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
-- > Refer to the online documentation for details on the construct of the Deployable definition:
-  >> https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_deployables.html
+- > **Define application channel**
+  * > The concept is similar to subscription model of TV channels. In this model, all the applications, which are packaged as helm charts, are hosted in one or more repositories. The repositories, which contain the application packages, are defined as channels that broadcast across the clusters. If you want to deploy an application, then define a subscription to the channel with the name of the application (one or more) you want to deploy.
+  * > Channels (Channel.app.ibm.com) define a namespace within the hub cluster and point to a physical place where resources are stored for deployment; such as an object store, Kubernetes namespace, or Helm repository.
+  * > The modresort application component consists of a deployment resource definition and a service resource definition.
+To enable these components to be used by the channel subscription, each of the resources need to be wrapped by a new custom resource definition (CRD) called Deployable.
+  * > Refer to the online documentation for details on the construct of the Deployable definition: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_deployables.html
+- > **Create a Subscription**
+  * > The subscription to a channel package contains:
+    + > Application Definition
+    + > Placement Rules Definition
+    + > Subscription Definition
+  * > **Applications** (Application.app.k8s.io) in IBM Multicloud Manager are used for grouping application components.
+  * > **Placement rules** (PlacementRule.app.ibm.com) define the target clusters where deployables can be deployed. You can use placement rules to help you facilitate the multi-cluster deployment of your deployables. Placement rules can be referenced by deployables and subscriptions.
+  * > **Subscriptions** (Subscription.app.ibm.com) are sets of definitions that identify deployables within channels by using annotations, labels, and versions.
+  * > The subscription controller can monitor the channel for new or updated deployables, such as an updated Helm release or a new Kubernetes deployable object. Then, the controller can download the Kubernetes deployable object or Helm release directly from the source location (Helm repository, object store, or namespace) to the target-managed clusters.
+  * > Refer to the online documentation for details on configuring the Application resource: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/app_lifecycle.html
+
 
 Documentation for IBM CloudPak playbooks. https://github.com/ibm-cloud-architecture/cloudpak8s
 > IBM Cloud Paks Playbook https://cloudpak8s.io/
