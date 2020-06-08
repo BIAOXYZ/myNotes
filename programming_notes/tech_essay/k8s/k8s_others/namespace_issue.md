@@ -69,8 +69,11 @@ Where: `/api/v1/namespaces/<your_namespace_here>/finalize` # 这里logging就是
 - 回复：
   * > This is not the right way, especially in a production environment. Today I got into the same problem. By removing the finalizer you’ll end up with leftovers in various states. You should actually find what is keeping the deletion from complete.
 
-【2】 A namespace is stuck in the Terminating state https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/troubleshoot/ns_terminating.html
-- > 用http接口进行删除
+【2】 A namespace is stuck in the Terminating state
+- https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/troubleshoot/ns_terminating.html
+  * >> //notes：用http接口进行删除
+- https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.0/troubleshoot/ns_terminating.html
+  * > **Cause**: If a Kubernetes API extension is not available, the resources that are managed by the extension cannot be deleted. Failure to delete the API extension causes namespace deletion to fail.
 
 【3】 How to Delete a Kubernetes Namespace Stuck in the Terminating State https://success.docker.com/article/kubernetes-namespace-stuck-in-terminating
 - > `kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get -n namespace name`
