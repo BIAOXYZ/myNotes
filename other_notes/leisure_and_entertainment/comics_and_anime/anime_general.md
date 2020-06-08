@@ -387,9 +387,6 @@ https://space.bilibili.com/458075/article
 
 ### 其他
 
-ACGN股票交易市場 https://acgn-stock.com/
-- 御坂美琴 https://acgn-stock.com/company/detail/4FoBarXzAR8namRJ9
-
 如何评价亚丝娜（结城明日奈）？ - 知乎 https://www.zhihu.com/question/65520439/answer/232528553
 ```
 一个迷倒了桐人身边女性的角色。
@@ -408,3 +405,24 @@ OVA与OAD有什么区别 https://www.bilibili.com/video/av21322200
 - > ova卖肉，oad卖腐。难道不是这样的吗？
 - > 公主恋人ova是avo
 - > ova是一般是单独购买，oad一般是单行本附赠，画质略渣
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 待分类
+
+ACGN股票交易市場 https://acgn-stock.com/
+- 御坂美琴 https://acgn-stock.com/company/detail/4FoBarXzAR8namRJ9
+
+## Comic Market
+
+Comic Market https://zh.wikipedia.org/wiki/Comic_Market
+- > Comic Market（日语：コミックマーケット），简称Comike（コミケ）、Comiket（コミケット）或CM。是由Comic Market准备会举办的日本以及全球最大型的同人志即卖会。
+- > 现时每年8月的第二个星期五至星期日和12月29日、12月30日及12月31日均在东京国际展示场举行（如该年星期日为12月28日，则会在12月28日、12月29日及12月30日举行），免费入场（C96需入场费）。八月举行的Comic Market叫作夏Comi（夏コミ），十二月举行的叫作冬Comi（冬コミ）。
+- > 动漫圈一般以英文字母C加上届数称呼此项展览。例如2013年夏天的CM称为C84，冬天的称为C85。
+- > 现象
+  * > 参加者中，女性多于男性。
+  * > 约7成的参展社团、组织并未盈利。
+  * > 同人志即卖会会产生大量的样书（見本），Comic Market官方保留了历届几乎所有的样书。
+
+Comic Market https://zh.moegirl.org/Comic_Market
+- > 历届展会年鉴
