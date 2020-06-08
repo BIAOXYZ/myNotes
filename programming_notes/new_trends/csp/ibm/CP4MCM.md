@@ -93,7 +93,9 @@ To enable these components to be used by the channel subscription, each of the r
   * > **Subscriptions** (Subscription.app.ibm.com) are sets of definitions that identify deployables within channels by using annotations, labels, and versions.
   * > The subscription controller can monitor the channel for new or updated deployables, such as an updated Helm release or a new Kubernetes deployable object. Then, the controller can download the Kubernetes deployable object or Helm release directly from the source location (Helm repository, object store, or namespace) to the target-managed clusters.
   * > Refer to the online documentation for details on configuring the Application resource: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/app_lifecycle.html
-
+  * > Refer to the online documentation for details on configuring the Placement Rules resource: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_placement_rules.html
+  * > Now, let’s create the subscription file. This contains the details of relating the placement rule definition with the application specification.
+  * > Refer to the online documentation for details on configuring the Subscription resource: https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
 
 Documentation for IBM CloudPak playbooks. https://github.com/ibm-cloud-architecture/cloudpak8s
 > IBM Cloud Paks Playbook https://cloudpak8s.io/
