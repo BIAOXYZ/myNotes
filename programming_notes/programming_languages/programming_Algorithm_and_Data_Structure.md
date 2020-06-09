@@ -58,7 +58,7 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 图的遍历 https://zh.wikipedia.org/wiki/%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86 || Graph traversal https://en.wikipedia.org/wiki/Graph_traversal
 
-python 实现二叉树的深度&&广度优先遍历 https://juejin.im/post/5bc932446fb9a05d147855de
+【[:star:][`*`]】 python 实现二叉树的深度&&广度优先遍历 https://juejin.im/post/5bc932446fb9a05d147855de
 
 How to implement a ​breadth-first search in Python https://www.educative.io/edpresso/how-to-implement-a-breadth-first-search-in-python
 
@@ -69,6 +69,16 @@ Breadth first search https://www.programiz.com/dsa/graph-bfs
 #### BTS
 
 Breadth-first search https://en.wikipedia.org/wiki/Breadth-first_search || 广度优先搜索 https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## DP (Dynamic Programming)
+
+动态规划 https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92 || Dynamic programming https://en.wikipedia.org/wiki/Dynamic_programming
+
+看动画轻松理解「递归」与「动态规划」 https://juejin.im/post/5c2308abf265da615304ce41 || 看动画轻松理解「递归」与「动态规划」 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/53415718
+
+动态规划与递归 https://www.jianshu.com/p/3426660df91d
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
