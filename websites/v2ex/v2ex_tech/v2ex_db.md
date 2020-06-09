@@ -1,4 +1,12 @@
 
+自学 sql 中，遇到了一个问题，请教大家：如何在以下 query 里显示排名 3-5 的国家？ https://www.v2ex.com/t/679847
+```console
+我在这个网站上训练自己对 query 的理解：
+https://sqlzoo.net/wiki/SELECT_basics
+
+我想知道，如何显示在“Asia”里，“population” 排名 3-5 名的国家？
+```
+
 工作中同事问的一个问题，查了很久没有明白，望大神指点 https://www.v2ex.com/t/677955
 ```console
 有一个表 TableA，数据量很大，约 4000w 条。
