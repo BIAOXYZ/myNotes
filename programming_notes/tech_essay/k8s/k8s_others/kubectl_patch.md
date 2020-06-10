@@ -182,6 +182,18 @@ service/kubernetes-dashboard patched
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# patch Pod
+
+## patch pod metadata
+
+强制删除 StatefulSet 类型的 Pods https://v1-18.docs.kubernetes.io/zh/docs/tasks/run-application/force-delete-stateful-set-pod/
+- > 如果在这些命令后 pod 仍处于Unknown状态，请使用以下命令从集群中删除 pod:
+  ```sh
+  kubectl patch pod <pod> -p '{"metadata":{"finalizers":null}}'
+  ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # patch Label
 
 An example of using kubectl patch https://gist.github.com/coresolve/364c80b817eb8d84bfb1c6e2c94d2886
