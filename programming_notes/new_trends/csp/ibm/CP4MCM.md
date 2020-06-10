@@ -21,6 +21,8 @@ ibm-common-service-operator/docs/uninstall.md https://github.com/IBM/ibm-common-
 
 Installing IBM Cloud Platform Common Services in your OpenShift Container Platform cluster https://www.ibm.com/support/knowledgecenter/SSHKN6/installer/3.x.x/install_operator.html
 
+Troubleshooting certificate management service https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.0/troubleshoot/ts_cert_mgmt.html
+
 ## 官网手册类
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
