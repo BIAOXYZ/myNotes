@@ -499,6 +499,18 @@ Endianness https://en.wikipedia.org/wiki/Endianness
 
 Big Endian与Little Endian区别 https://blog.csdn.net/wyzxg/article/details/5349896
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 小知识
+
+第 120 题：为什么for循环嵌套顺序会影响性能？ https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/235
+
+Why is a big loop within a small loop faster than a small loop within a big one? https://stackoverflow.com/questions/23107563/why-is-a-big-loop-within-a-small-loop-faster-than-a-small-loop-within-a-big-one
+
+A big loop within a small loop always faster than a small loop within a big one? https://stackoverflow.com/questions/23914350/a-big-loop-within-a-small-loop-always-faster-than-a-small-loop-within-a-big-one
+
+在有循环嵌套时, 要把大循环写在内, 小循环写在外, 原因在此 https://blog.csdn.net/xiaohuh421/article/details/44056189
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 编程题目
