@@ -21,4 +21,10 @@ https://docs.python.org/2.7/library/functions.html
 
 ## `8.3. collections — High-performance container datatypes` https://docs.python.org/2/library/collections.html
 
+### `8.3.2. deque objects` https://docs.python.org/2/library/collections.html#collections.deque
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `8.4. heapq — Heap queue algorithm` https://docs.python.org/2/library/heapq.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
