@@ -77,6 +77,17 @@ heketi (Githubwiki) https://github.com/heketi/heketi/wiki
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# rook
+
+Ceph Storage Quickstart https://rook.io/docs/rook/v1.3/ceph-quickstart.html
+- Block Storage https://rook.io/docs/rook/v1.3/ceph-block.html 
+
+OpenShift https://rook.io/docs/rook/v1.1/openshift.html
+
+`rook/cluster/examples/kubernetes/ceph/` https://github.com/rook/rook/tree/release-1.1/cluster/examples/kubernetes/ceph
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Tekton
 
 ## Tekton官网
