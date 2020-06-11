@@ -26,6 +26,14 @@ Python LibHunt https://python.libhunt.com/
 Go LibHunt https://go.libhunt.com/
 - https://go.libhunt.com/gomega-alternatives
 
+## Libraries.io
+
+Tom Lane https://libraries.io/github/tglsfdc
+
+## gitmemory
+
+postgres/postgres https://gitmemory.com/postgres/postgres/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 临时邮件
