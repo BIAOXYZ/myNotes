@@ -28,6 +28,7 @@ OPENSHIFT Online https://manage.openshift.com/
 OpenShift Documentation https://docs.openshift.com/
 - Upgrading Clusters
   * Upgrade Methods and Strategies https://docs.openshift.com/container-platform/3.9/upgrading/index.html
+- Understanding the Operator Lifecycle Manager https://docs.openshift.com/container-platform/4.1/applications/operators/olm-understanding-olm.html
 
 OpenShift Installation and Configuration Management https://install.openshift.com || https://github.com/openshift/openshift-ansible
 
@@ -44,7 +45,8 @@ okd Documentation https://docs.okd.io/
 - Planning your installation https://docs.okd.io/latest/install/index.html
 - REST API Reference https://docs.okd.io/latest/rest_api/index.html
 
-https://www.openshift.com/blog
+## openshift blog
+
 - Deploying your storage backend using OpenShift Container Storage 4 https://www.openshift.com/blog/deploying-your-storage-backend-using-openshift-container-storage-4
 - Rook.io Container Native Storage on OpenShift https://www.openshift.com/blog/rook-container-native-storage-openshift
 
