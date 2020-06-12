@@ -6,6 +6,9 @@
 
 [第 5 期] 算法精选-你应该知道的 KMP 算法 https://www.v2ex.com/t/652852
 
+总结了两年的 LeetCode 前 300 题非常详细通俗的题解 https://www.v2ex.com/t/680958
+> https://leetcode.wang/ || https://zhuanlan.zhihu.com/leetcode1024
+
 C 语言刷 150 道 LeetCode 经验谈 https://www.v2ex.com/t/405467
 - > C 是没有 STL 的，只能自己造轮子。链表怎么写，hashmap 怎么写，我借鉴的是内核的 list.h，写法已经形成自己一套模式，看上去还算简洁，不像参考答案写得那样 hack，混乱不堪。关键是能解决问题，特别一些复杂的逻辑，运气好还能爆机。可见对于 C 来说，也不要从 0 开始写代码，要学会站在巨人的肩膀上。
 - > 用 C 刷 LeetCode 有个坑就是动态数组，个人经验是，尽量不要用 realloc 调用，会出现 runtime error，这应该算 LeetCode 平台的 bug。之前我被困扰了好久，后来终于想出了用手写 realloc 的办法，方法是，用两倍内存扩容，手动拷贝元素，释放原指针，赋值新指针。步骤很繁琐，但再也没出问题。

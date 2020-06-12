@@ -1,4 +1,6 @@
 
+有个 go 的问题，求解答 https://www.v2ex.com/t/680907
+
 go 单例模式 https://www.v2ex.com/t/678414
 
 golang 面试题之 为什么这种更快呢? https://www.v2ex.com/t/677996
