@@ -1,13 +1,15 @@
 
 [第 7 期] 盘点那些面试中会被问到的链表算法题 https://www.v2ex.com/t/659761
 
-不知不觉搞了 200 道了 https://www.v2ex.com/t/657505
-> https://github.com/LeoSirius/leetcode_solutions 且除了 sql 之外都有单元测试，主要是 cpp，部分有 py 。部分有多种思路
-
 [第 5 期] 算法精选-你应该知道的 KMP 算法 https://www.v2ex.com/t/652852
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 总结了两年的 LeetCode 前 300 题非常详细通俗的题解 https://www.v2ex.com/t/680958
 > https://leetcode.wang/ || https://zhuanlan.zhihu.com/leetcode1024
+
+不知不觉搞了 200 道了 https://www.v2ex.com/t/657505
+> https://github.com/LeoSirius/leetcode_solutions 且除了 sql 之外都有单元测试，主要是 cpp，部分有 py 。部分有多种思路
 
 C 语言刷 150 道 LeetCode 经验谈 https://www.v2ex.com/t/405467
 - > C 是没有 STL 的，只能自己造轮子。链表怎么写，hashmap 怎么写，我借鉴的是内核的 list.h，写法已经形成自己一套模式，看上去还算简洁，不像参考答案写得那样 hack，混乱不堪。关键是能解决问题，特别一些复杂的逻辑，运气好还能爆机。可见对于 C 来说，也不要从 0 开始写代码，要学会站在巨人的肩膀上。

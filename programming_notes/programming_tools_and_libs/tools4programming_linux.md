@@ -253,8 +253,11 @@ Settings->Configuration->Terminal
 勾选Paste using right-click，启用右键复制功能，此时如果要用右键菜单，用Ctrl+右键即可。
 ```
 
-全功能的终端软件MobaXterm推荐配置
-https://www.jianshu.com/p/161b9be14494
+现在准备从 mobaxterm 转投 xshell，这个 xshell 还安全不？ https://www.v2ex.com/t/680867#reply71
+- > moba 解决掉线问题：settings-> SSH -> ssh keepalive 勾上 <br> 颜值低是什么鬼？
+- > 试试 Bitvise SSH Client 呗 好用的！
+
+全功能的终端软件MobaXterm推荐配置 https://www.jianshu.com/p/161b9be14494
 
 免费开源SSH客户端神器MobaXterm，是时候puttty、Xshell和SecureCRT说Byebye了 https://www.freebuf.com/column/163631.html
 
