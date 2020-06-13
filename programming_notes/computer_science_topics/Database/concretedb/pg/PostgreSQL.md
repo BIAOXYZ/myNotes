@@ -22,7 +22,9 @@ https://bucardo.org/postgres_all_versions.html
 
 --------------------------------------------------
 
-## PG blog
+## PG releted blog
+
+由社区志愿者谭峰整理的PostgreSQL资料集锦，值得收藏 http://www.postgres.cn/news/viewone/1/101
 
 健哥的数据花园 https://www.cnblogs.com/gaojian/
 - PostgreSQL索引页 http://www.cnblogs.com/gaojian/p/topindex.html
@@ -34,6 +36,11 @@ https://bucardo.org/postgres_all_versions.html
 
 http://www.cnblogs.com/stephen-liu74/
 - PostgreSQL学习手册(目录) http://www.cnblogs.com/stephen-liu74/archive/2012/06/08/2315679.html
+
+PostgreSQL中文技术 http://www.pgsql.tech/
+- 新手指引 http://www.pgsql.tech/doc_401
+- 精品读 http://www.pgsql.tech/supreme_0
+  * 对PostgreSQL中权限的理解(初学者必读) http://www.pgsql.tech/supreme_101_10000036
 
 ## PG wechat
 
