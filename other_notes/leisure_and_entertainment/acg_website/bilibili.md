@@ -25,6 +25,8 @@ ZeroTier游戏联机详细设置！ https://www.bilibili.com/video/av95442800/
 
 ## 2020
 
+这些动画能在B站看了 https://www.bilibili.com/blackboard/topic/activity-9m3Kh4o7Q.html
+
 B站发布公告：将下架“功成名就”等三项成就 https://www.ithome.com/0/489/770.htm || B站发布公告：将下架三项成就 https://www.sohu.com/a/398581530_499322 --> 搜狐这个新闻里配有图，还真是分别送舰长、提督、总督的成就。呵呵，真以为这破玩意谁在乎。。。
 - > 因后台功能优化调整，我们决定下架【不离不弃】、【情有独钟】、【功成名就】3项成就。下架时间为：2020年6月3日15：00
 - 回复：
