@@ -49,13 +49,21 @@ https://wiki.postgresql.org/wiki/Main_Page
   * https://wiki.postgresql.org/wiki/Developer_FAQ
   * https://wiki.postgresql.org/wiki/Working_with_Git
 
-Pgsrcstructure
-https://wiki.postgresql.org/wiki/Pgsrcstructure
+Pgsrcstructure https://wiki.postgresql.org/wiki/Pgsrcstructure
 
-Pgkernel
-https://wiki.postgresql.org/wiki/Pgkernel
+Pgkernel https://wiki.postgresql.org/wiki/Pgkernel
 
 Bitmap Indexes https://wiki.postgresql.org/wiki/Bitmap_Indexes
+
+## Postgres Mailing Lists
+
+PostgreSQL Mailing Lists https://www.postgresql.org/list/
+- User lists
+  * pgsql-sql https://www.postgresql.org/list/pgsql-sql/
+- Developer lists
+  * pgsql-hackers https://www.postgresql.org/list/pgsql-hackers/
+- Regional lists
+  * pgsql-zh-general https://www.postgresql.org/list/pgsql-zh-general/
 
 ### 关于postgresql.auto.conf文件
 
