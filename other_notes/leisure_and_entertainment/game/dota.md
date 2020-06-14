@@ -156,6 +156,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item [fusion]_rune   聚合神符
     -item apex   极
     -item [ball]ista   弩炮
+    -item [woodl]and_striders   林地神行靴
     -item ex_[mach]ina   机械之心
     Level 4：
     -item [time]less_relic   永恒遗物
