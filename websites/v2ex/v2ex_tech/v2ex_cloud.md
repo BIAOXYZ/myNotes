@@ -1,4 +1,6 @@
 
+docker、docker-compose 部署 gitlab,如何配置 https,让 git clone 地址与域名一样不带端口号 https://www.v2ex.com/t/681458
+
 论 sidecar 模式的可行性 https://www.v2ex.com/t/678524
 
 求助，如何让 k8s 的 pod 访问外网的时候从指定网卡出去，求大神看看我这么配置为什么不行 https://www.v2ex.com/t/677765
