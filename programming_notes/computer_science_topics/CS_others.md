@@ -23,6 +23,8 @@ Write a simple interpreter of C. Inspired by c4 and largely based on it. https:/
 - 一起做个简单的数据库（四）：第一次测试 （含bug处理） https://mp.weixin.qq.com/s/1U80Wwgh6whVDW9TGD0SYg
 - 一起做个简单的数据库（六）：The Cursor Abstraction https://mp.weixin.qq.com/s/JbetQWlP9mwlRQ3xgVvcDg
 
+Build a distributed SQL database from the ground up 从零开始写分布式数据库 https://github.com/ngaut/builddatabase
+
 ## other project
 
 A toy JVM in Go https://github.com/zserge/tojvm
