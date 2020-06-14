@@ -27,4 +27,8 @@ https://docs.python.org/2.7/library/functions.html
 
 ## `8.4. heapq — Heap queue algorithm` https://docs.python.org/2/library/heapq.html
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `8.5. bisect — 数组二分查找算法` https://docs.python.org/zh-cn/2.7/library/bisect.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
