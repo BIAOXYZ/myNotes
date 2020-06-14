@@ -112,7 +112,7 @@ Kubernetes CronJob Controller源码分析 https://www.ichenfu.com/2018/05/10/k8s
 
 kubernetes源码阅读 kubelet初探 - fanbin的文章 - 知乎 https://zhuanlan.zhihu.com/p/35710779
 
-🤔 What happens when I type kubectl run? https://github.com/jamiehannaford/what-happens-when-k8s
+🤔 What happens when I type kubectl run? https://github.com/jamiehannaford/what-happens-when-k8s || 🤔 深度解读：输入 kubectl run 后，到底发生了什么？ https://github.com/bbbmj/what-happens-when-k8s
 
 Kubernetes scheduler学习笔记 https://mp.weixin.qq.com/s/EWXHBDV562qsJcMz1_psRA
 
