@@ -151,6 +151,9 @@ Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.c
 
 Graphene / Graphene-SGX - a library OS for Linux multi-process applications, with Intel SGX support https://github.com/oscarlab/graphene
 
+Open Enclave SDK https://github.com/openenclave/openenclave
+> https://openenclave.io/sdk/
+
 ### notes
 
 Theory of Computing� - Computer Science 6810 - Cornell University - Spring 2009 http://www.cs.cornell.edu/courses/cs6810/2009sp/
