@@ -3,6 +3,8 @@
 
 lichess.org • Free Online Chess https://lichess.org/
 
+中國象棋 多人遊戲 https://www.playok.com/zh/xiangqi/
+
 # `#` Chinese Chess websites
 
 象棋巫师 http://www.xqbase.com/
