@@ -1,4 +1,6 @@
 
+用 docker 隔离不同用户 https://www.v2ex.com/t/681633
+
 docker、docker-compose 部署 gitlab,如何配置 https,让 git clone 地址与域名一样不带端口号 https://www.v2ex.com/t/681458
 
 论 sidecar 模式的可行性 https://www.v2ex.com/t/678524
