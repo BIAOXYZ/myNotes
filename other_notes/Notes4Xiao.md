@@ -146,6 +146,11 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 A Security Site https://asecuritysite.com/
 
+#### Pohlig–Hellman algorithm
+- Pohlig–Hellman algorithm https://en.wikipedia.org/wiki/Pohlig%E2%80%93Hellman_algorithm
+- Example of the Pohlig-Hellman Technique for finding discrete logarithms http://www-math.ucdenver.edu/~wcherowi/courses/m5410/phexam.html
+- The Pohlig-Hellman Algorithm http://anh.cs.luc.edu/331/notes/PohligHellmanp_k2p.pdf
+
 ### libs
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum
