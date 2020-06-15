@@ -15,6 +15,11 @@ sudo https://en.wikipedia.org/wiki/Sudo
 
 # 其他博客类链接
 
+关于 sudo 命令的一些配置和使用技巧 http://kuanghy.github.io/2019/11/17/linux-sudo || https://github.com/kuanghy/kuanghy.github.io/blob/master/_posts/2019-11-17-linux-sudo.md
+- > `sudo` 表示 “superuser do”。 它允许已验证的用户以其他用户的身份来运行命令。其他用户可以是普通用户或者超级用户。然而，大部分时候我们用它来提权运行命令，以替代直接使用 root 用户的操作。
+- > `sudo` 命令与安全策略配合使用，安全策略可以通过文件 `/etc/sudoers` 来配置。其安全策略具有高度可拓展性，支持插件扩展。
+- > 默认情况下 `/etc/sudoers` 是不能被任何人直接编辑的，因为它的权限是 440，虽然也可以对其赋予写权限后再编辑，但推荐使用 `visudo` 命令编辑该文件。
+
 # 个人实战
 
 ## 技巧1：不用root密码切换到root用户
