@@ -1,9 +1,21 @@
 
-# chess
+# online chess
+
+网上有哪些水平较高的中国象棋对战平台？ - 榨菜肉丝小青年的回答 - 知乎 https://www.zhihu.com/question/49071709/answer/121862836
+> 电脑上的平台：弈天，qq，联众，水平排名从左到右。弈天打擂性质，人不多，华山上都是软件；qq人最多，业7以上都是软件；联众好多年没动了，人不多，不过可以设置1分钟包干超快棋，跟好友约战不错的地方。下棋的最多的当然是qq，还有手机上的天天象棋也是比较火的象棋平台
+>> 弈天棋缘 http://www.movesky.net/
+
+## online中国象棋
+
+中國象棋 多人遊戲 https://www.playok.com/zh/xiangqi/
+
+## online国际象棋
 
 lichess.org • Free Online Chess https://lichess.org/
 
-中國象棋 多人遊戲 https://www.playok.com/zh/xiangqi/
+Chess.com https://www.chess.com/zh
+- 下棋 https://www.chess.com/zh/play
+- 最终赛果揭晓，中国队获得国际棋联Chess.com”国家杯”冠军 https://www.chess.com/zh/news/view/zui-zhong-sai-guo-jie-xiao-zhong-guo-dui-huo-de-guo-ji-qi-lian-chess-com-guo-jia-bei-guan-jun
 
 # `#` Chinese Chess websites
 
