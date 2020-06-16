@@ -15,6 +15,8 @@
   > 为了在Linux中永久禁用交换空间，打开 `/etc/fstab` 文件，搜索交换行并在行的前面添加一个 `#`（hashtag） 标记来注释整行，如下图所示
 - How to install Kubernetes with Kubeadm: A quick and dirty guide https://www.mirantis.com/blog/how-install-kubernetes-kubeadm/
   > 里面提到一个命令：“To remove the entire cluster: `sudo kubeadm reset`”。
+  >> //notes：后来在Katacoda的Ubuntu 16.04的playground上自己试了下（CentOS其实也试了，一样没问题。但是那上面docker版本`1.13.1`比较低，不过装起来的k8s版本倒是最新的`1.18.3`）：装完后建个pod，然后执行`kubeadm reset`（图省事可以再加上`--force`），然后再`rm -rf ~/.kube`删除上个集群的kubeconfig相关文件就好——再重新init集群是干净的。
+  >>> 更狠的一些办法见这个帖子：[《How to completely uninstall kubernetes》](https://stackoverflow.com/questions/44698283/how-to-completely-uninstall-kubernetes)。但我感觉基本的reset就够了似乎，可能我随便试的时候没多少复杂情况。
 - 使用 kubeadm 更新 kubernetes 集群 https://www.qikqiak.com/post/use-kubeadm-upgrade-k8s/
 
 ## 0.3 未涉及参考链接：
