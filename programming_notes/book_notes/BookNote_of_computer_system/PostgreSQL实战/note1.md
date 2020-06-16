@@ -14,3 +14,13 @@
 ## `##` 1.3　客户端程序和服务器程序
 
 > share目录存放着PostgreSQL的文档、man、示例文件以及一些扩展，include目录是PostgreSQL的C、C++的头文件，bin目录就是PostgreSQL的应用程序了。PostgreSQL本身是一个C/S架构的程序，这些应用程序可以分为两类：客户端程序和服务器程序
+
+> clusterdb是SQL CLUSTER命令的一个封装。PostgreSQL是堆表存储的，clusterdb通过索引对数据库中基于堆表的物理文件重新排序，它在一定场景下可以节省磁盘访问，加快查询速度。
+
+> reindexdb是SQL REINDEX命令的一个封装。在索引物理文件发生损坏或索引膨胀等情况发生时，可以使用reindexdb命令对指定的表或者数据库重建索引并且删除旧的索引。
+
+> vacuumdb是PostgreSQL数据库独有的VACUUM、VACUUM FREEZE和VACUUM FULL，VACUUM ANALYZE这几个SQL命令的封装。VACUUM系列命令的主要职责是对数据的物理文件等的垃圾回收，是PostgreSQL中非常重要的一系列命令。
+
+> vacuumlo用来清理数据库中未引用的大对象。
+
+> ·oid2name解析一个PostgreSQL数据目录中的OID和文件结点，在文件系统章节会详细讲解它。
