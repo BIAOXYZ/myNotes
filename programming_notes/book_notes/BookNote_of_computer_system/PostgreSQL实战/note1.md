@@ -4,6 +4,8 @@
 ## `##` 1.1 初识PostgreSQL
 > PostgreSQL是由PostgreSQL社区全球志愿者开发团队开发的开源对象-关系型数据库。它源于UC Berkeley大学1977年的Ingres计划，这个项目是由著名的数据库科学家Michael Stonebraker（2015年图灵奖获得者）领导的。在1994年，两个UC Berkeley大学的研究生Andrew Yu和Jolly Chen增加了一个SQL语言解释器来替代早先的基于Ingres的QUEL系统，建立了Postgres95。为了反映数据库的新SQL查询语言特性，Postgres95在1996年重命名为PostgreSQL，并第一次发行了以PostgreSQL命名的6.0版本，在2005年，PostgreSQL发行了以原生方式运行在Windows系统下的8.0版本。随着2010年PostgreSQL 9.0的发行，PostgreSQL进入了黄金发展阶段，目前，PostgreSQL最新的稳定版是PostgreSQL 10。
 
+## `##` 1.2　安装PostgreSQL
+
 ### `###` 1.2.1　通过yum源安装
 
 #### 2.安装PostgreSQL
@@ -38,3 +40,13 @@
 > 连接到数据库之后，就进入PostgreSQL的shell界面，如果是用数据库超级用户连接，提示符由数据库名称和“=#”组成，如果是普通的数据库用户，提示符则由数据库名称和“=>”组成。
 
 ### `###` 1.3.2　服务器程序
+
+## `##` 1.4　创建数据库实例
+### `###` 1.4.1　创建操作系统用户
+> 创建系统用户组和用户的命令如下所示：
+```sh
+[root@pghost1 ~]$ groupadd -g 1000 postgres
+[root@pghost1 ~]$ useradd -g 1000 -u 1000 postgres
+[root@pghost1 ~]$ id postgres
+uid=1000(postgres) gid=1000(postgres) groups=1000(postgres)
+```
