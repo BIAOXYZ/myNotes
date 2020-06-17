@@ -1,4 +1,11 @@
 
+Golang 泛型他来了！ https://www.v2ex.com/t/682238
+```console
+https://blog.golang.org/generics-next-step
+
+官方发布了几份草案，其中 go2 的泛型可以前往 https://go2goplay.golang.org 体验
+```
+
 有个 go 的问题，求解答 https://www.v2ex.com/t/680907
 
 go 单例模式 https://www.v2ex.com/t/678414
