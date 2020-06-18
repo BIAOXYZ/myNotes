@@ -5,7 +5,9 @@
 - > 隶属于深圳市御坂网络科技有限公司。
 - > 持有者	晒太阳的冰
 - > 创始人	晒太阳的冰 
-  >> 用户:Baskice https://zh.moegirl.org/User:Baskice 
+  >> 用户:Baskice https://zh.moegirl.org/User:Baskice
+
+帮助:上传图片 https://zh.moegirl.org/Help:%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87
 
 # 萌百词条
 
@@ -20,3 +22,8 @@
 山本宽 https://zh.moegirl.org/%E5%B1%B1%E6%9C%AC%E5%AE%BD
 > 基于《孔乙己》改编的山本宽版本：文库:宽乙己
 >> 宽乙己 https://library.moegirl.org/%E5%AE%BD%E4%B9%99%E5%B7%B1
+
+# 萌娘共享
+
+萌娘共享 https://commons.moegirl.org/Mainpage
+- 文件:智慧的眼神.png https://commons.moegirl.org/File:%E6%99%BA%E6%85%A7%E7%9A%84%E7%9C%BC%E7%A5%9E.png
