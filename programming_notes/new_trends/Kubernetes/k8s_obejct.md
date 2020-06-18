@@ -235,6 +235,8 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 
 【[:star:][`*`]】 Kubernetes RBAC 详解 https://www.qikqiak.com/post/use-rbac-in-k8s/
 
+为Kubernetes集群添加用户 - 「已注销」的文章 - 知乎 https://zhuanlan.zhihu.com/p/43237959
+
 ### kubernetes Security Context
 - Configure a Security Context for a Pod or Container https://v1-17.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/
 
