@@ -1,6 +1,8 @@
 
 # bilibili技术相关
 
+[去噪声][digoal][阿里云大学]PostgreSQL数据库管理与优化 https://www.bilibili.com/video/BV127411G7PX/
+
 B站的年轻人，真的有那么好学吗？ https://mp.weixin.qq.com/s/HY_oYg1dMkIDTCPtAnKFTg || https://www.huxiu.com/article/350703.html
 
 直死之邪王灼眼--专栏文集 https://space.bilibili.com/14978578/article
