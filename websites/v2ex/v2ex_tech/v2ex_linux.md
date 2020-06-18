@@ -1,4 +1,6 @@
 
+Linux 如何恢复误 kill 的进程 https://www.v2ex.com/t/682646
+
 同一磁盘使用 ln 创建硬链接提示 Invalid cross-device link? https://www.v2ex.com/t/679359
 
 ssh 免密登陆问题，求大神支援，全网搜未碰到同款问题！ https://www.v2ex.com/t/675922
