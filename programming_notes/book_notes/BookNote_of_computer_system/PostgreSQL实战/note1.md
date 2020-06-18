@@ -50,3 +50,31 @@
 [root@pghost1 ~]$ id postgres
 uid=1000(postgres) gid=1000(postgres) groups=1000(postgres)
 ```
+> 注意事项
+- > 1）出于安全考虑，这个操作系统用户不能是 root或具有操作系统管理权限的账号，例如拥有sudo权限的用户。
+- > 2）如果是部署集群，建议配置NTP服务，统一集群中每个节点的操作系统用户的uid和gid，如果集群中某些节点的数据库操作系统用户的uid和gid与其他节点不一致，可以通过groupmod命令和usermod命令进行修改，例如：
+  ```sh
+  [root@pghost1 ~]$ groupmod -g 1000 postgres
+  [root@pghost1 ~]$ usermod -u 1000 -g 1000 postgres
+  ```
+  
+### `###` 1.4.2　创建数据目录
+> 作为例子，这里我们不考虑多实例并存的情况，创建`/pgdata/10/data`目录作为数据目录，在data的同级目录创建backups、scripts、archive_wals目录，这几个目录的作用后续章节再详述。
+
+> 将数据目录的属主修改为我们创建的操作系统用户，并且修改数据目录的权限为0700。修改目录权限这一步其实并不需要，因为initdb会回收除PostgreSQL用户之外所有用户的访问权限。但我们应该明确知道数据目录包含所有存储在数据库里的数据，保护这个目录不受未授权的访问非常重要。
+
+### `###` 1.4.3　初始化数据目录
+> 因为我们指定了-W参数，所以在初始化的过程中，initdb工具会要求为数据库超级用户创建密码。在initdb的输出中可以看到系统自动创建了template1数据库和postgres数据库，template1是生成其他数据库的模板，postgres数据库是一个默认数据库，用于给用户、工具或者第三方应用提供默认数据库。
+
+> 需要注意一点的是：不要在将要初始化的数据目录中手动创建任何文件，如果数据目录中已经有文件，会有如下错误提示：
+```
+initdb: directory "/pgdata/10/data" exists but is not empty
+If you want to create a new database system, either remove or empty the directory "/pgdata/10/data" or run initdb
+with an argument other than "/pgdata/10/data".
+```
+
+> 除了使用initdb来初始化数据目录，还可以使用pg_ctl工具进行数据库目录的初始化，用法如下所示：
+
+> 使用官方yum源安装PostgreSQL时会自动创建/var/lib/pgsql/10目录和它的两个子目录：data目录和backups目录。通过service postgresql-10init命令会初始化/var/lib/pgsql/10/data目录作为数据目录。这样很方便，但是可定制性并不好，建议按照上面的步骤初始化数据目录。
+
+## `##` 1.5　启动和停止数据库服务器
