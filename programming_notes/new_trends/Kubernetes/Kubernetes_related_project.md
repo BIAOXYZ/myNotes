@@ -52,6 +52,8 @@ Getting started with Golang Operators by using Operator SDK https://developers.r
 
 How to use third-party APIs in Operator SDK projects https://developers.redhat.com/blog/2020/02/04/how-to-use-third-party-apis-in-operator-sdk-projects/
 
+Kubernetes Operators Best Practices https://www.openshift.com/blog/kubernetes-operators-best-practices
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Operator Framework
