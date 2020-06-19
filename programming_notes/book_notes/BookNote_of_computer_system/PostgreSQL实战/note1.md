@@ -98,6 +98,8 @@ with an argument other than "/pgdata/10/data".
 - > immediate模式立即终止所有服务器进程，当下一次数据库启动时它会首先进入恢复状态，一般不推荐使用。
 
 ### `###` 1.5.3　其他启动和关闭数据库服务器的方式
+> 还有其他一些启动和停止数据库的方式，例如使用postmaster或postgres程序启动数据库，命令如下所示：
+
 > 在PostgreSQL的守护进程postmaster的入口函数中注册了信号处理程序，对SIGINT、SIGTERM、SIGQUIT的处理方式分别对应PostgreSQL的三种关闭方式smart、fast、immediate。因此我们还可以使用kill命令给postgres进程发送SIGTERM、SIGINT、SIGQUIT信号停止数据库，例如使用smart方式关闭数据库的命令如下所示：
 ```sh
 [postgres@pghost1 ~]$ kill -sigterm `head -1 /pgdata/10/data/postmaster.pid`
@@ -108,3 +110,24 @@ database system is shut down
 > 通过日志输出可以看到该命令是通过smart关闭数据库的。它内部的原理可以查看PostgreSQL内核相关的书籍或者阅读源码中pqsignal和pmdie相关的代码进行了解。
 
 ### `###` 1.5.4　配置开机启动
+
+#### 1.配置服务脚本
+> 在源码包的contrib目录中有Linux、FreeBSD、OSX适用的服务脚本，如下所示：
+```sh
+[root@pghost1 ~]$ ls postgresql-10.0/contrib/start-scripts/
+freebsd linux osx
+```
+> 我们将名称为linux的脚本拷贝到/etc/init.d/目录中，将脚本重命名为postgresql-10，并赋予可执行权限，命令如下所示：
+
+#### 2.设置开机启动
+> chkconfig--list命令可以查看PostgreSQL是否是开机启动的，如下所示：
+```sh
+[root@pghost1 ~]$ chkconfig --list | grep postgresql-10
+postgresql-10 0:off 1:off 2:off 3:off 4:off 5:off
+```
+> chkconfig命令将启用或禁用PostgreSQL开机启动，如下所示：
+```sh
+[root@pghost1 ~]$ chkconfig postgresql-10 on/off
+```
+
+## `##` 1.6　数据库配置基础
