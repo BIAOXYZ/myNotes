@@ -78,3 +78,33 @@ with an argument other than "/pgdata/10/data".
 > 使用官方yum源安装PostgreSQL时会自动创建/var/lib/pgsql/10目录和它的两个子目录：data目录和backups目录。通过service postgresql-10init命令会初始化/var/lib/pgsql/10/data目录作为数据目录。这样很方便，但是可定制性并不好，建议按照上面的步骤初始化数据目录。
 
 ## `##` 1.5　启动和停止数据库服务器
+> 在使用数据库服务器之前，必须先启动数据库服务器。可以通过service方式、PostgreSQL的命令行工具启动或停止数据库。
+
+### `###` 1.5.2　使用pg_ctl进行管理
+> 还可以使用pg_isready工具来检测数据库服务器是否已经允许接受连接：
+```sh
+[postgres@pghost1 ~]$ /opt/pgsql/bin/pg_isready -p 1921
+/tmp:1921 - accepting connections
+
+或者：
+
+/tmp:1921 - no response
+```
+
+#### 3.停止数据库
+> 其中的“-m”参数控制数据库用什么模式停止，PostgreSQL支持三种停止数据库的模式：smart、fast、immediate，默认为fast模式。
+- > smart模式会等待活动的事务提交结束，并等待客户端主动断开连接之后关闭数据库。
+- > fast模式则会回滚所有活动的事务，并强制断开客户端的连接之后关闭数据库。
+- > immediate模式立即终止所有服务器进程，当下一次数据库启动时它会首先进入恢复状态，一般不推荐使用。
+
+### `###` 1.5.3　其他启动和关闭数据库服务器的方式
+> 在PostgreSQL的守护进程postmaster的入口函数中注册了信号处理程序，对SIGINT、SIGTERM、SIGQUIT的处理方式分别对应PostgreSQL的三种关闭方式smart、fast、immediate。因此我们还可以使用kill命令给postgres进程发送SIGTERM、SIGINT、SIGQUIT信号停止数据库，例如使用smart方式关闭数据库的命令如下所示：
+```sh
+[postgres@pghost1 ~]$ kill -sigterm `head -1 /pgdata/10/data/postmaster.pid`
+received smart shutdown request
+shutting down
+database system is shut down
+```
+> 通过日志输出可以看到该命令是通过smart关闭数据库的。它内部的原理可以查看PostgreSQL内核相关的书籍或者阅读源码中pqsignal和pmdie相关的代码进行了解。
+
+### `###` 1.5.4　配置开机启动
