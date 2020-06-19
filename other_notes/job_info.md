@@ -254,6 +254,12 @@ https://stackoverflow.com/jobs/170466/blockchain-security-engineer-jp-poly-swarm
  
 # ACADEMIC
 
+Beijing Institute of Mathematical Sciences and Applications（BIMSA） 
+- https://academicjobsonline.org/ajo/jobs/16011
+  ```
+  Program ID:	Beijing Institute of Mathematical Sciences and Applications（BIMSA）-ADVANCEDCRYPTOGRAPHYANDBLOCKCHAINPROGRAM [#16011]
+  Program Title: 	Recruitment of BIMSA Advanced Cryptography and Blockchain Program
+  ```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
