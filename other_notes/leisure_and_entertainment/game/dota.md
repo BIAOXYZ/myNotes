@@ -133,6 +133,9 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 
 【[:star:][`*`]】【这个里面最后是英雄全称，打一部分即可。比如幻影长矛手的英文是`phantom_lancer`，如果打`phantom`会优先选幻刺，此时可以打`lancer`】【物品全称也可在这查，同样无歧义的话简称就可以】 Dota2 作弊用命令 （ver 7.23b） - 晓光的文章 - 知乎 https://zhuanlan.zhihu.com/p/57975930
 ```console
+-gold 5000
+-respawn
+
 -item 物品名称
     普通物品：
     -item blood[stone]   血精石
@@ -164,8 +167,13 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item [panic]_button   神妙明灯
     -item the_[lev]eller   平世剑
     Level 3：
+    -item [pal]adin_sword   骑士剑
+    Level 2：
+    -item [gro]ve_bow   林野长弓
+    -item [vamp]ire_fangs   吸血鬼獠牙
+    -item [vam]brace   臂甲
     Level 1:
-    - item royal_[jelly]   蜂王浆
+    - item royal_[jel]ly   蜂王浆
     - item [mango]_[tree]   芒果树
 
 /all 英雄/英雄简称
