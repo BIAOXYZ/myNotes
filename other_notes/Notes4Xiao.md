@@ -44,6 +44,8 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 独·数之道 | 数独爱好者 http://www.sudokufans.org.cn/
 
+欧泊颗数独 https://www.oubk.com/pk
+
 ### 电影
 
 《名侦探柯南》面膜将上市：柯南=抗衰老 https://www.ithome.com/0/413/981.htm
