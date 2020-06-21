@@ -90,6 +90,9 @@ Go 标准库中文文档 https://github.com/huangz1990/cngolib.com
 Golang标准库。对于程序员而言，标准库与语言本身同样重要，它好比一个百宝箱，能为各种常见的任务提供完美的解决方案。以示例驱动的方式讲解Golang的标准库。 https://github.com/polaris1119/The-Golang-Standard-Library-by-Example
 > 《Go语言标准库》The Golang Standard Library by Example https://books.studygolang.com/The-Golang-Standard-Library-by-Example/
 
+Ultimate Go study guide https://github.com/hoanhan101/ultimate-go
+- 101+ coding interview problems https://github.com/hoanhan101/algo || https://hoanhan101.github.io/2020/01/06/101-challenges
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Go其他
