@@ -1,10 +1,12 @@
 
 
-### personal blog
+# personal blog
 
 https://zoeyxiao.github.io/
 
-### NUS
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# NUS
 
 \subsection{Chang Ee-Chien}
 
@@ -40,31 +42,45 @@ Jian Huang http://jianh.web.engr.illinois.edu/
 
 Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
-### 游戏
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 游戏
+
+## 数独
 
 独·数之道 | 数独爱好者 http://www.sudokufans.org.cn/
 
 欧泊颗数独 https://www.oubk.com/pk
 
-### 电影
+### 数独others
+
+http://zh.sudoku.menu/info/solver.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 电影
 
 《名侦探柯南》面膜将上市：柯南=抗衰老 https://www.ithome.com/0/413/981.htm
 
 柯南竟然跨界出了面膜，那敷了它我是不是就可以永葆童颜了？！ https://mp.weixin.qq.com/s/2li59zJKLq3YbmY0q6CLWg
 
-### 礼物纪念品等
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 礼物纪念品等
 
 央行将发布中俄建交70周年纪念币 https://www.ithome.com/0/424/167.htm
 
 卖个有智慧的萌 《大侦探皮卡丘》版皮卡丘布偶预购开启 https://hot.cnbeta.com/articles/comic/850703.htm
 
-#### 熊猫派pandapia
+## 熊猫派pandapia
 
 - 熊猫派 PANDAPIA https://new.brand.smzdm.com/40801/
 - 有没有质量和外形过关的熊猫周边？ - 孤独赤兔的回答 - 知乎 https://www.zhihu.com/question/271954643/answer/365031201
 - https://pandapia.taobao.com/ 【好像是淘宝店改名了？待确认。】
 
-### CSC
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# CSC
 
 2018年国家公派高级研究学者、访问学者、博士后项目录取结果确定 http://www.csc.edu.cn/chuguo/s/1224
 
@@ -72,13 +88,17 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 【名单公示】2018年“国家建设高水平大学公派研究生项目”及“国家公派硕士研究生项目”拟推荐人员名单公示 http://guoji.nwpu.edu.cn/info/1293/6296.htm
 
-### 傻乎乎
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 傻乎乎
 
 “这个又有你小时的影子” https://www.iesdouyin.com/share/video/6630692598996536589/?region=CN&mid=6630692623805844228
 
 寻找三原南中校友！三原县南郊中学百年校庆通知 https://mp.weixin.qq.com/s/yhI8Rxcx5xH0ew5RfZx3cQ
 
-###
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+#
 
 两天够玩狮城新加坡？ 篇一：准备工作：办签证、订机票，新加坡之旅美食篇__什么值得买 https://post.smzdm.com/p/739965/
 
@@ -88,18 +108,20 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 新加坡圣淘沙标志性雕塑“鱼尾狮”将被拆除 https://www.ithome.com/0/446/584.htm
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 ***--------------------------------------------------tooth extraction--------------------------------------------------***
 
-### 拔牙(2018/07/14 11:10:00--11:29:00)
+# 拔牙(2018/07/14 11:10:00--11:29:00)
 
-#### 知乎系答案
+## 知乎系答案
 
 拔牙后几天可以吃海鲜？几天能吃火锅？ - 知乎 https://www.zhihu.com/question/48815342
 - 拔牙后几天可以吃海鲜？几天能吃火锅？ - kun yu的回答 - 知乎 https://www.zhihu.com/question/48815342/answer/112816847
 
 拔牙之后能吃什么？ - 知乎 https://www.zhihu.com/question/21011397
 
-#### 百度系答案
+## 百度系答案
 
 拔牙后能吃些什么 https://jingyan.baidu.com/article/5225f26b12bf68e6fa0908b1.html
 
@@ -108,12 +130,12 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 - 拔完牙后应该吃什么食物 https://zhidao.baidu.com/question/163217058.html
 - 刚拔完牙可以吃什么？ https://zhidao.baidu.com/question/453837809.html
 
-#### 豆瓣系答案
+## 豆瓣系答案
 
 - 拔了牙，除了白粥以外，还能吃什么呢？泪奔~ https://www.douban.com/group/topic/9641626/
 - 拔智齿太疼了！！！你们拔完智齿后都吃什么啊！！ https://www.douban.com/group/topic/51376704/
 
-#### 其他答案
+## 其他答案
 
 刚拔完牙可以吃什么? https://wenda.so.com/q/1378306395066992
 
@@ -142,18 +164,20 @@ Lee Wee Sun https://www.comp.nus.edu.sg/~leews/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-### others
+# others
 
 刚刚，42也被人类写成了三个整数的立方和！ https://mp.weixin.qq.com/s/itwhUF6gDMD4yHR7QrJb9Q
 
 A Security Site https://asecuritysite.com/
 
-#### Pohlig–Hellman algorithm
+## Pohlig–Hellman algorithm
 - Pohlig–Hellman algorithm https://en.wikipedia.org/wiki/Pohlig%E2%80%93Hellman_algorithm
 - Example of the Pohlig-Hellman Technique for finding discrete logarithms http://www-math.ucdenver.edu/~wcherowi/courses/m5410/phexam.html
 - The Pohlig-Hellman Algorithm http://anh.cs.luc.edu/331/notes/PohligHellmanp_k2p.pdf
 
-### libs
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# libs
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum
 > Occlum is a memory-safe, multi-process library OS (LibOS) for Intel SGX. As a LibOS, it enables legacy applications to run on SGX with little or even no modifications of source code, thus protecting the confidentiality and integrity of user workloads transparently.
@@ -163,12 +187,16 @@ Graphene / Graphene-SGX - a library OS for Linux multi-process applications, wit
 Open Enclave SDK https://github.com/openenclave/openenclave
 > https://openenclave.io/sdk/
 
-### notes
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# notes
 
 Theory of Computing� - Computer Science 6810 - Cornell University - Spring 2009 http://www.cs.cornell.edu/courses/cs6810/2009sp/
 - Lecture 18: Zero-Knowledge Proofs http://www.cs.cornell.edu/courses/cs6810/2009sp/scribe/lecture18.pdf
 
-### paper
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# paper
 
 (CT-RSA 2015) Revisiting Cryptographic Accumulators, AdditionalProperties and Relations to other Primitives https://eprint.iacr.org/2015/087.pdf
 
