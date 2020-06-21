@@ -14,6 +14,8 @@ A Compiler Writing Journey https://github.com/DoctorWkt/acwj
 Write a simple interpreter of C. Inspired by c4 and largely based on it. https://github.com/lotabout/write-a-C-interpreter
 > Let's Build a Compiler, by Jack Crenshaw https://compilers.iecc.com/crenshaw/
 
+📚 《Go语法树入门——开启自制编程语言和编译器之旅》(开源免费图书/Go语言进阶/掌握抽象语法树/Go语言AST/LLVM/LLIR/凹语言) https://github.com/chai2010/go-ast-book
+
 ## DB project
 
 原文链接： https://cstack.github.io/db_tutorial/parts/part1.html
