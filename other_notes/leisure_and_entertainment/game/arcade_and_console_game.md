@@ -65,6 +65,10 @@ Mac-有闲来玩老游戏 https://sspai.com/post/43078
   * https://www.google.com/logos/2010/pacman10-i.html
   * https://www.google.com/doodles/30th-anniversary-of-pac-man
 
+## 恐龙快打
+
+恐龙快打无敌bug，玩了20多年，你可曾发现？ https://www.bilibili.com/video/BV1P4411q75g
+
 # 家用游戏机
 
 【不止游戏】童年经典FC游戏，竟然隐藏了这么多剧情？ https://www.acfun.cn/v/ac11366435
