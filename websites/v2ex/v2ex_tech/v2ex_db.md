@@ -1,4 +1,6 @@
 
+一个关于 mysql 锁问题 https://www.v2ex.com/t/683424
+
 自学 sql 中，遇到了一个问题，请教大家：如何在以下 query 里显示排名 3-5 的国家？ https://www.v2ex.com/t/679847
 ```console
 我在这个网站上训练自己对 query 的理解：
