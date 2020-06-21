@@ -245,3 +245,11 @@ Radix tree https://en.wikipedia.org/wiki/Radix_tree || 基数树 https://zh.wiki
 Merkle Patricia Tree (MPT) 树详解 https://www.cnblogs.com/fengzhiwu/p/5584809.html
 
 MPT（Merkle Patricia Trie） https://www.jianshu.com/p/e67452930dcc
+
+# 图
+
+Tarjan算法 https://zh.wikipedia.org/wiki/Tarjan%E7%AE%97%E6%B3%95 || Tarjan's strongly connected components algorithm https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm
+
+克鲁斯克尔算法 https://zh.wikipedia.org/wiki/%E5%85%8B%E9%B2%81%E6%96%AF%E5%85%8B%E5%B0%94%E6%BC%94%E7%AE%97%E6%B3%95 || Kruskal's algorithm https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+
+最小生成树-Prim算法和Kruskal算法 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/30/2615542.html
