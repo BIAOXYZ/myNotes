@@ -65,9 +65,17 @@ Mac-有闲来玩老游戏 https://sspai.com/post/43078
   * https://www.google.com/logos/2010/pacman10-i.html
   * https://www.google.com/doodles/30th-anniversary-of-pac-man
 
+## 名将
+
+游聚大神名将极限无伤速通 这速度你可千万别眨眼 https://www.bilibili.com/video/BV1x7411f7yw
+- >> 绿色电妹比粉色电妹招数多（才注意到好像粉的不会放那种在地上一条线的电）。
+- >> 娃娃竟然是四个里面最强的，忍者最菜。。。我一直以为老大最强。。。
+- >> 某些场景留些小兵到下个场景可以使得下个场景少出兵；某些场景打死某些兵就可以直接走了。
+
 ## 恐龙快打
 
 恐龙快打无敌bug，玩了20多年，你可曾发现？ https://www.bilibili.com/video/BV1P4411q75g
+- >> 将近50万分的时候卡无敌BUG
 
 # 家用游戏机
 
