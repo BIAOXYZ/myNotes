@@ -9,14 +9,18 @@
   * > 用晨钟酱的scrcpy gui远程投屏
   * > Tomotoes / scrcpy-gui 这个吗？还是哪个？我之前一直都是直接命令行运行的
   * > 不能无线，手机还要下app，所以为啥不用qtscrcpy
-- >> //notes：回复里基本都在提scrcpy，就简单搜了一下，发现大概目前有三个吧：[scrcpy本身](https://github.com/Genymobile/scrcpy)【0】；scrcpy的一些UI（比如那个“晨钟酱的scrcpy gui”、“Tomotoes / scrcpy-gui”）；qtscrcpy（这个可能是scrcpy本身和自己用qt做的UI整合到一起？）。下面是自己搜的链接：
+- >> //notes：回复里基本都在提scrcpy，就简单搜了一下，发现大概目前有三个吧：[scrcpy本身](https://github.com/Genymobile/scrcpy)【0】；scrcpy的一些UI（比如那个“晨钟酱的scrcpy gui”、“Tomotoes / scrcpy-gui”）；qtscrcpy（这个可能是scrcpy本身和自己用qt做的UI整合到一起？）。下面是自己搜的链接（包括竞品类的Total Control）：
+  * Scrcpy – 用电脑控制 Android 手机 https://www.appinn.com/scrcpy-remote-android-from-computer/
+    + > 注意，要使用 Wi-Fi，仍然需要每次先用 USB 连接手机一次，实用性还不是特别高。
   * Scrcpy - 开源免费在电脑显示手机画面并控制手机的工具 (投屏/录屏/免Root) https://www.iplaysoft.com/scrcpy.html
   * 用电脑控制 Android 手机的 Scrcpy 拥有更易使用的图形界面了 https://www.appinn.com/scrcpy-gui/
   * Scrcpy GUI https://github.com/Tomotoes/scrcpy-gui/blob/master/README.zh_CN.md 【1】
   * QtScrcpy – 用电脑控制 Android 手机，支持多点触控，可玩和平精英，中文界面[Win/macOS/Linux] https://www.appinn.com/qtscrcpy/
   * QtScrcpy https://github.com/barry-ran/QtScrcpy 【2】
   * QtScrcpy，划水神器 https://www.v2ex.com/t/579112
-
+  * 免ROOT将手机屏幕投射到电脑，还可以使用电脑控制手机！ https://www.bilibili.com/read/cv2035376/
+  * 手机控 Total Control http://tc.sigma-rt.com.cn/
+  
 【速度收藏！史上最强微信工具集，安卓苹果都能用】内含39款免安装工具，是目前最好最强的微信工.. https://www.ithome.com/0/417/850.htm
 - 微信对话生成
 - 消息已读
