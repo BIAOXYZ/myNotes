@@ -248,7 +248,6 @@ users:
 deleted cluster api-oprinstall-cp-fyre-ibm-com:6443 from /root/.kube/config
 {root@bandore1 multicloud-operators-test}$
 {root@bandore1 multicloud-operators-test}$ oc config view
-
 apiVersion: v1
 clusters:
 - cluster:
@@ -272,4 +271,30 @@ users:
     client-certificate-data: REDACTED
     client-key-data: REDACTED
 {root@bandore1 multicloud-operators-test}$
+
+#// 接上来继续测试下用unset删user。
+{root@bandore1 configs}$ oc config unset users.kube:admin/api-oprinstall-cp-fyre-ibm-com:6443
+Property "users.kube:admin/api-oprinstall-cp-fyre-ibm-com:6443" unset.
+{root@bandore1 configs}$
+{root@bandore1 configs}$ oc config view
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://9.46.87.88:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: REDACTED
+    client-key-data: REDACTED
+{root@bandore1 configs}$
 ```
