@@ -1,7 +1,14 @@
 
 # 官方
 
-- 配置对多集群的访问 https://v1-18.docs.kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+- 配置对多集群的访问 https://v1-18.docs.kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/ || Configure Access to Multiple Clusters https://v1-18.docs.kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+  * > 
+    ```sh
+    Note:
+    To delete a user you can run `kubectl --kubeconfig=config-demo config unset users.<name>`
+    To remove a cluster, you can run `kubectl --kubeconfig=config-demo config unset clusters.<name>`
+    To remove a context, you can run `kubectl --kubeconfig=config-demo config unset contexts.<name>`
+    ```
 - 使用 kubeconfig 文件组织集群访问 https://v1-18.docs.kubernetes.io/zh/docs/concepts/configuration/organize-cluster-access-kubeconfig/
 - kubectl 备忘单 https://v1-18.docs.kubernetes.io/zh/docs/reference/kubectl/cheatsheet/
 
@@ -58,7 +65,10 @@ Use "kubectl options" for a list of global command-line options (applies to all 
 
 ```
 
-## 机器1
+## 查询（context、cluster）和使用context 
+//user的话没有专门命令但是也能看出来
+
+### 机器1
 
 ```sh
 [root@lolls-inf ~]# oc config view
@@ -157,7 +167,7 @@ default/api-lolls-os-fyre-ibm-com:6443/admin
 [root@lolls-inf ~]#
 ```
 
-## 机器2
+### 机器2
 
 ```sh
 #// 这个是一个新的OCP：就一个context、一个cluster和一个user，对应关系更加一目了然了。
@@ -186,4 +196,80 @@ users:
 CURRENT   NAME    CLUSTER   AUTHINFO   NAMESPACE
 *         admin   anaemia   admin
 [root@anaemia-inf ~]#
+```
+
+## 删除context和cluster 
+//`unset`看起来是通用的，但是对于context和cluster来说，其实本身有`delete-context`和`delete-cluster`
+
+```sh
+{root@bandore1 multicloud-operators-test}$ kubectl config get-contexts
+CURRENT   NAME                                                     CLUSTER                               AUTHINFO                                         NAMESPACE
+          default/api-oprinstall-cp-fyre-ibm-com:6443/kube:admin   api-oprinstall-cp-fyre-ibm-com:6443   kube:admin/api-oprinstall-cp-fyre-ibm-com:6443   default
+*         kubernetes-admin@kubernetes                              kubernetes                            kubernetes-admin
+{root@bandore1 multicloud-operators-test}$
+{root@bandore1 multicloud-operators-test}$ oc config delete-context default/api-oprinstall-cp-fyre-ibm-com:6443/kube:admin
+deleted context default/api-oprinstall-cp-fyre-ibm-com:6443/kube:admin from /root/.kube/config
+{root@bandore1 multicloud-operators-test}$
+{root@bandore1 multicloud-operators-test}$ kubectl config get-contexts
+CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPACE
+*         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin
+{root@bandore1 multicloud-operators-test}$
+
+
+{root@bandore1 multicloud-operators-test}$ oc config view
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://api.oprinstall.cp.fyre.ibm.com:6443
+  name: api-oprinstall-cp-fyre-ibm-com:6443
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://9.46.87.88:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: kube:admin/api-oprinstall-cp-fyre-ibm-com:6443
+  user:
+    token: MclcT5qSZPEkOEFVJkloGEkFkdqLSWTmTsuE4kR1iCU
+- name: kubernetes-admin
+  user:
+    client-certificate-data: REDACTED
+    client-key-data: REDACTED
+{root@bandore1 multicloud-operators-test}$
+{root@bandore1 multicloud-operators-test}$ oc config delete-cluster api-oprinstall-cp-fyre-ibm-com:6443
+deleted cluster api-oprinstall-cp-fyre-ibm-com:6443 from /root/.kube/config
+{root@bandore1 multicloud-operators-test}$
+{root@bandore1 multicloud-operators-test}$ oc config view
+
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://9.46.87.88:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: kube:admin/api-oprinstall-cp-fyre-ibm-com:6443
+  user:
+    token: MclcT5qSZPEkOEFVJkloGEkFkdqLSWTmTsuE4kR1iCU
+- name: kubernetes-admin
+  user:
+    client-certificate-data: REDACTED
+    client-key-data: REDACTED
+{root@bandore1 multicloud-operators-test}$
 ```
