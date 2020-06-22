@@ -72,6 +72,8 @@ Mac-有闲来玩老游戏 https://sspai.com/post/43078
 - >> 娃娃竟然是四个里面最强的，忍者最菜。。。我一直以为老大最强。。。
 - >> 某些场景留些小兵到下个场景可以使得下个场景少出兵；某些场景打死某些兵就可以直接走了。
 
+这穿尿不湿的果然惹不起，摆拳轻松秒boss就是这么任性 https://www.bilibili.com/video/BV1K7411M7dF
+
 ## 恐龙快打
 
 恐龙快打无敌bug，玩了20多年，你可曾发现？ https://www.bilibili.com/video/BV1P4411q75g
