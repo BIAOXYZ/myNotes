@@ -295,6 +295,16 @@ Removing spec.replicas of the Deployment resets replicas count to single replica
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# kubernetes release notes
+
+## 1.18
+
+解读 Kubernetes 1.18.0 新特性之 Server-side Apply https://www.shangyexinzhi.com/article/1585443.html
+
+全网首个视频解读！Kubernetes 1.18特性解读与应用实践 https://www.bilibili.com/video/BV19541167Wp
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # kubernetes与应用
 
 【by 青蛙小白】
