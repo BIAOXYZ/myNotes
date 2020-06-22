@@ -15,6 +15,17 @@ eudiwffe -- 数据结构与算法 https://www.cnblogs.com/eudiwffe/category/9278
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# courses
+
+Robert Sedgewick https://www.cs.princeton.edu/~rs/ || https://www.coursera.org/instructor/~250165
+- Computer Science - 226 Algorithms and Data Structures - Spring 2010 https://www.cs.princeton.edu/courses/archive/spr10/cos226/lectures.html
+- from Coursera
+  * Analysis of Algorithms https://www.coursera.org/learn/analysis-of-algorithms
+  * Algorithms, Part I https://www.coursera.org/learn/algorithms-part1
+  * Algorithms, Part II https://www.coursera.org/learn/algorithms-part2
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # from github
 
 数据结构和算法必知必会的50个代码实现 https://github.com/wangzheng0822/algo
