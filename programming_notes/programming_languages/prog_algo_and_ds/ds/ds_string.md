@@ -22,7 +22,22 @@
 
 # KMP
 
+克努斯-莫里斯-普拉特算法 https://zh.wikipedia.org/wiki/%E5%85%8B%E5%8A%AA%E6%96%AF-%E8%8E%AB%E9%87%8C%E6%96%AF-%E6%99%AE%E6%8B%89%E7%89%B9%E7%AE%97%E6%B3%95 || Knuth–Morris–Pratt algorithm https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
+
 字符串匹配的KMP算法 http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
+- > 一个基本事实是，当空格与D不匹配时，你其实知道前面六个字符是"ABCDAB"。KMP算法的想法是，设法利用这个已知信息，不要把"搜索位置"移回已经比较过的位置，继续把它向后移，这样就提高了效率。
+- > "部分匹配"的实质是，有时候，字符串头部和尾部会有重复。比如，"ABCDAB"之中有两个"AB"，那么它的"部分匹配值"就是2（"AB"的长度）。搜索词移动的时候，第一个"AB"向后移动4位（字符串长度-部分匹配值），就可以来到第二个"AB"的位置。
+- 回复：
+  * > Robert Sedgewick https://class.coursera.org/algs4partII-001/lecture/40 用自动机解释kmp，感觉更妙，就是实现的时候空间复杂度高点。个人感觉Sedgewick这个老头讲东西确实牛逼，很多看书很难理解的算法，他一讲就明白了，有兴趣的可以去part1看看他讲的红黑树，特别牛逼。
+    + > 现在网址是 https://www.coursera.org/learn/algorithms-part2/lecture/n3ZpG/introduction-to-substring-search
+  * > `有时候，字符串内部会有重复。比如，"ABCDAB"之中有两个"AB"，那么它的"部分匹配值"就是2（"AB"的长度）` <br> 这个应该说是，字符串头部和尾部有重复？如果是ABCABD这样即使有两个AB也不能部分移动吧
+    >> 谢谢指出，我确实没想到这一点，已经更正了。
+  * > 那就是说需要搜索的词如果内部完全没有重复，那这个算法就退化成了遍历？
+    + > 应该不是的吧，最坏情况下也是o(m+n)的，而遍历是o(m\*n)
+    + > 就算是内部没有完全重复，虽然算法退化成了遍历，但是时间复杂度依旧是O(M+N);因为一旦pattern表形成之后，就不需要每次进行遍历制作pattern表。
+  * > 我一直以为KMP是string search最优的算法（时间复杂度是O(n+k)）,直到我知道了Boyer–Moore算法……才发现原来还有更加巧妙的方法……
+    + > 搜索了一下，Boyer–Moore算法每次从要找的Pattern末尾开始比较，并且一般用两条规则来控制移位（KMP只有一条移位规则），比KMP还好。
+  * > kmp算法的难点和关键在于next数组的构建，楼主却完全没有提到，所以价值不大。推荐这个链接：http://wiki.jikexueyuan.com/project/kmp-algorithm/define.html ，分析得深入细致，看了很多链接，这个最好。
 
 七分钟理解什么是 KMP 算法 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/76348091
 
