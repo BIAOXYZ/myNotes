@@ -105,6 +105,18 @@ GaussDB（openGauss）宣布将开源，性能超越 MySQL 与 PostgreSQL https:
 
 华为GaussDB T不发布了吗？改名为openGauss了？ https://www.modb.pro/issue/1973
 
+华为openGauss gs_ctl https://www.modb.pro/db/30885
+```console
+gs_ctl工具由操作系统用户omm执行。
+
+启动、停止、重启openGauss节点。
+在不停止数据库的情况下，重新加载配置文件（postgresql.conf，pg_hba.conf）。
+主备切换、主备状态查询、重建和重建状态查询。
+----------------------------------------------------------------------------------------------------
+-D, --pgdata=DATADIR  指定数据目录的位置。  DATADIR的取值必须为有效的数据目录。
+```
+>> 看来开源的是最老的Gauss 100。。。
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TaurusDB && GeminiDB
