@@ -1,4 +1,6 @@
 
+Linux 内核如何在启动时配置参数到/sys/bus/pci/devices https://www.v2ex.com/t/684233
+
 MAC 地址会消耗光吗？它与 IP 有没有可比性？ https://www.v2ex.com/t/681010
 - > mac 只要在同一网关下不重复就行，就像通过省长 /市长 /村长来找人，人名就够了
 - > 跨了 3 层交换机 mac 地址就没用了。。 你觉得呢
