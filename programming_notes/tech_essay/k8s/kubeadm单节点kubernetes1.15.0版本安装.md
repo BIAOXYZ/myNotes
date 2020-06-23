@@ -16,7 +16,8 @@
 - How to install Kubernetes with Kubeadm: A quick and dirty guide https://www.mirantis.com/blog/how-install-kubernetes-kubeadm/
   > 里面提到一个命令：“To remove the entire cluster: `sudo kubeadm reset`”。
   >> //notes：后来在Katacoda的Ubuntu 16.04的playground上自己试了下（CentOS其实也试了，一样没问题。但是那上面docker版本`1.13.1`比较低，不过装起来的k8s版本倒是最新的`1.18.3`）：装完后建个pod，然后执行`kubeadm reset`（图省事可以再加上`--force`），然后再`rm -rf ~/.kube`删除上个集群的kubeconfig相关文件就好——再重新init集群是干净的。
-  >>> 更狠的一些办法见这个帖子：[《How to completely uninstall kubernetes》](https://stackoverflow.com/questions/44698283/how-to-completely-uninstall-kubernetes)。但我感觉基本的reset就够了似乎，可能我随便试的时候没多少复杂情况。
+  >>> 更狠的一些办法见这个帖子：[《How to completely uninstall kubernetes》](https://stackoverflow.com/questions/44698283/how-to-completely-uninstall-kubernetes)。但我感觉基本的reset就够了似乎，可能我随便试的时候没多少复杂情况。此外还有这个：[《k8s 创建集群时出错"[kubelet-check] Initial timeout of 40s passed"》](https://q.cnblogs.com/q/124859/)
+  >>>> 结果新员工真出了reset也清理不干净的问题，后来查了下是etcd的残留，把这个目录删了就可以了：`/var/lib/etcd`。
 - 使用 kubeadm 更新 kubernetes 集群 https://www.qikqiak.com/post/use-kubeadm-upgrade-k8s/
 
 ## 0.3 未涉及参考链接：
