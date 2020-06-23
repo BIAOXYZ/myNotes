@@ -81,6 +81,32 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## openGauss
+
+### 官网类
+
+关于openGauss https://opengauss.org/zh/
+
+云数据库 GaussDB(openGauss) https://www.huaweicloud.com/product/opengauss.html
+
+openGauss / website https://gitee.com/opengauss/website
+
+opengauss-mirror / security https://github.com/opengauss-mirror/security
+
+### 新闻类
+
+GaussDB（openGauss）宣布将开源，性能超越 MySQL 与 PostgreSQL https://www.oschina.net/news/109981/huawei-to-opensource-gaussdb
+
+华为GaussDB数据库真的要开源啦！！！ https://www.modb.pro/db/6667
+
+### 其他
+
+华为openGauss gaussdb https://www.modb.pro/db/30882
+
+华为GaussDB T不发布了吗？改名为openGauss了？ https://www.modb.pro/issue/1973
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## TaurusDB && GeminiDB
 
 如何看待华为云发布最新一代关系型分布式数据库TaurusDB? - 知乎 https://www.zhihu.com/question/317044890
