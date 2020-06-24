@@ -198,6 +198,9 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 # paper
 
+(PKC 2006) New Online/Offline Signature Schemes Without Random Oracles https://www.iacr.org/archive/pkc2006/39580335/39580335.pdf
+- > Definition 5 (Weak/strong division intractability).
+
 (CT-RSA 2015) Revisiting Cryptographic Accumulators, AdditionalProperties and Relations to other Primitives https://eprint.iacr.org/2015/087.pdf
 
 --------------------------------------------------
