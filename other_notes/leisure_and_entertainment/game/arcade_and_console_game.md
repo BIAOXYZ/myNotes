@@ -52,6 +52,10 @@ sm3952414 可能有人看过了,B站上有零零散散的第二部,点击没多�
 
 双截龙3，最终boss女王vs女王，对波谁怕过谁？ https://www.bilibili.com/video/BV1dJ411r7dd
 
+# SD快打旋风
+
+sd快打旋风 隐藏技能表 通关流程 https://www.bilibili.com/video/BV1Yt411o7cF
+
 # 街机
 
 有没有能直接在线玩的街机模拟器（NEOGEO游戏模拟器）？ - 知乎 https://www.zhihu.com/question/22548262
