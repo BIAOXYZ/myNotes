@@ -2,6 +2,10 @@
 # DP (Dynamic Programming)
 
 动态规划 https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92 || Dynamic programming https://en.wikipedia.org/wiki/Dynamic_programming
+- > 使用动态规划的算法
+  * > 最长公共子序列 https://zh.wikipedia.org/wiki/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97 || Longest common subsequence problem https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+  * > Floyd-Warshall算法 https://zh.wikipedia.org/wiki/Floyd-Warshall%E7%AE%97%E6%B3%95 || Floyd–Warshall algorithm https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
+  * > 维特比算法 https://zh.wikipedia.org/wiki/%E7%BB%B4%E7%89%B9%E6%AF%94%E7%AE%97%E6%B3%95 || Viterbi algorithm https://en.wikipedia.org/wiki/Viterbi_algorithm
 
 看动画轻松理解「递归」与「动态规划」 https://juejin.im/post/5c2308abf265da615304ce41 || 看动画轻松理解「递归」与「动态规划」 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/53415718
 
