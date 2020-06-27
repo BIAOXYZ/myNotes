@@ -139,6 +139,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
 -item 物品名称
     普通物品：
     -item blood[stone]   血精石
+    -item [des]olator   黯灭 
     -item heart   龙心
     -item [moo]n_shard   银月之晶
     -item [nec]ronomicon   死灵书
@@ -168,6 +169,7 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
     -item the_[lev]eller   平世剑
     Level 3：
     -item [pal]adin_sword   骑士剑
+    -item orb_of_[dest]ruction   毁灭灵球
     Level 2：
     -item [gro]ve_bow   林野长弓
     -item [vamp]ire_fangs   吸血鬼獠牙
