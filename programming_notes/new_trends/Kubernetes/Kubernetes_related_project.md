@@ -160,7 +160,7 @@ https://github.com/operator-framework/operator-sdk/blob/05a106abd9ff94bb2f0cc84b
 
 Kubernetes 1.12 新的插件机制 https://mritd.me/2018/11/30/kubectl-plugin-new-solution-on-kubernetes-1.12/
 
-Automatically provision and manage TLS certificates in Kubernetes https://jetstack.io || https://github.com/jetstack/cert-manager
+cert-manager -- Automatically provision and manage TLS certificates in Kubernetes https://jetstack.io || https://github.com/jetstack/cert-manager
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -250,6 +250,9 @@ Monitoring, visualisation & management for Docker & Kubernetes https://www.weave
 K8Studio - A CROSS-PLATFORM IDE TO MANAGE KUBERNETES CLUSTERS https://uxxu.io/
 
 konstellate - Free and Open Source GUI to Visualize Kubernetes Applications. https://github.com/containership/konstellate
+
+Kuboard简介 https://github.com/eip-work/kuboard-press || https://kuboard.cn/
+- 搭建 NFS Server https://kuboard.cn/learning/k8s-intermediate/persistent/nfs.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
