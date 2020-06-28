@@ -23,3 +23,20 @@ Breadth first search https://www.programiz.com/dsa/graph-bfs
 ## BTS
 
 Breadth-first search https://en.wikipedia.org/wiki/Breadth-first_search || 广度优先搜索 https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 二分查找(折半查找) 
+
+二分查找算法 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95 || Binary search algorithm https://en.wikipedia.org/wiki/Binary_search_algorithm
+
+二分 https://oi-wiki.org/basic/binary/
+
+二分查找有几种写法？它们的区别是什么？ - 知乎 https://www.zhihu.com/question/36132386
+- 二分查找有几种写法？它们的区别是什么？ - Jason Li的回答 - 知乎 https://www.zhihu.com/question/36132386/answer/530313852
+
+二分查找法的实现和应用汇总 https://www.cnblogs.com/ider/archive/2012/04/01/binary_search.html
+
+`704. 二分查找` https://leetcode-cn.com/problems/binary-search/
+
+程序员，你应该知道的二分查找算法 https://juejin.im/post/5d510f76f265da039a287a30
