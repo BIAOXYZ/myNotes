@@ -40,3 +40,11 @@ Breadth-first search https://en.wikipedia.org/wiki/Breadth-first_search || 广�
 `704. 二分查找` https://leetcode-cn.com/problems/binary-search/
 
 程序员，你应该知道的二分查找算法 https://juejin.im/post/5d510f76f265da039a287a30
+
+Finding a value in a sorted sequence https://www.topcoder.com/community/competitive-programming/tutorials/binary-search
+
+Binary Search https://www.programiz.com/dsa/binary-search
+
+What is a binary search? https://www.educative.io/edpresso/what-is-a-binary-search
+
+Data Structure and Algorithms -- Binary Search https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm
