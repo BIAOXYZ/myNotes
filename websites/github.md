@@ -59,6 +59,8 @@ timing-attacks https://github.com/topics/timing-attacks
 
 paper https://github.com/topics/paper
 
+cryptography https://github.com/topics/cryptography <br> mpc https://github.com/topics/mpc <br> smc https://github.com/topics/smc
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Github用户
