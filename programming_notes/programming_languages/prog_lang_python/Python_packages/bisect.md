@@ -12,3 +12,4 @@ When are bisect_left and bisect_right not equal? https://stackoverflow.com/quest
   2
   ```
   
+Python实现二分查找与bisect模块详解 https://www.jb51.net/article/102899.htm
