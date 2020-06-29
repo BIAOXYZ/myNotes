@@ -3,4 +3,23 @@
 
 Golang LRU cache https://github.com/hashicorp/golang-lru
 
+原地算法 https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95 || In-place algorithm https://en.wikipedia.org/wiki/In-place_algorithm
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 快速选择
+
+快速选择 https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E9%80%89%E6%8B%A9 || Quickselect https://en.wikipedia.org/wiki/Quickselect
+- > 在计算机科学中，快速选择（英语：Quickselect）是一种从无序列表找到第k小元素的选择算法。它从原理上来说与快速排序有关。与快速排序一样都由托尼·霍尔提出的，因而也被称为霍尔选择算法。同样地，它在实际应用是一种高效的算法，具有很好的平均时间复杂度，然而最坏时间复杂度则不理想。快速选择及其变种是实际应用中最常使用的高效选择算法。
+- > 快速选择的总体思路与快速排序一致，选择一个元素作为基准来对元素进行分区，将小于和大于基准的元素分在基准左边和右边的两个区域。不同的是，快速选择并不递归访问双边，而是只递归进入一边的元素中继续寻找。这降低了平均时间复杂度，从O(nlogn)至O(n)，不过最坏情况仍然是O(n^2)。
+- > 与快速排序一样，快速选择一般是以原地算法的方式实现，除了选出第k小的元素，数据也得到了部分地排序。
+
+`215. 数组中的第K个最大元素` https://leetcode-cn.com/problems/kth-largest-element-in-an-array/
+
+Top K 问题的最优解 - 快速选择算法（Quickselect） - 胖头鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/64627590
+
+QuickSelect: The Quick Select Algorithm Explained With Code Examples https://www.freecodecamp.org/news/quickselect-algorithm-explained-with-examples/
+
+Quickselect Algorithm https://www.geeksforgeeks.org/quickselect-algorithm/
+
+QuickSelect Algorithm Understanding https://stackoverflow.com/questions/10846482/quickselect-algorithm-understanding
