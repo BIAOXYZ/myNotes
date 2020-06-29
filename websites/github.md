@@ -61,6 +61,8 @@ paper https://github.com/topics/paper
 
 cryptography https://github.com/topics/cryptography <br> mpc https://github.com/topics/mpc <br> smc https://github.com/topics/smc
 
+zksnarks https://github.com/topics/zksnarks <br> snark https://github.com/topics/snark <br> zero-knowledge https://github.com/topics/zero-knowledge <br> verifiable-computation https://github.com/topics/verifiable-computation
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Github用户
