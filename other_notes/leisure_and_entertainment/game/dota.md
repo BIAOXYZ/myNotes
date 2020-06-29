@@ -227,6 +227,17 @@ Beginner’s Guide to OpenAI Five at Dota2 https://medium.com/@ngwaifoong92/begi
 
 # Dota2游戏更新类
 
+## 7.27
+
+DOTA2 6月29日更新日志：7.27游戏性更新 https://mp.weixin.qq.com/s/2OFls1sUo9Txna_qBP70mA
+```console
+金钱、防御塔等综合性更新
+大量物品改动：狂战斧、白银之锋配方更改
+周末特惠礼包购买即将截止
+
+// 其实还有刃甲改动和新物品"闪电指套"、"巫毒面具"等。
+```
+
 ## 7.26b
 
 DOTA2 4月28日更新日志：7.26b平衡性更新 https://mp.weixin.qq.com/s/KASAuGsmlBI-JV4wcQaIuA
