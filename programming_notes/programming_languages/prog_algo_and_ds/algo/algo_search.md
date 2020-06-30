@@ -38,6 +38,7 @@ Breadth-first search https://en.wikipedia.org/wiki/Breadth-first_search || 广�
 二分查找法的实现和应用汇总 https://www.cnblogs.com/ider/archive/2012/04/01/binary_search.html
 
 `704. 二分查找` https://leetcode-cn.com/problems/binary-search/
+- https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000704/README.md
 
 程序员，你应该知道的二分查找算法 https://juejin.im/post/5d510f76f265da039a287a30
 
