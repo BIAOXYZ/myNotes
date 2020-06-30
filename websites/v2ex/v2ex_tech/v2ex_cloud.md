@@ -1,4 +1,8 @@
 
+求教 K8S 架构上如何通过等保三 https://www.v2ex.com/t/685966
+
+k8s 支持桥接不 https://www.v2ex.com/t/685911
+
 用 docker 隔离不同用户 https://www.v2ex.com/t/681633
 
 docker、docker-compose 部署 gitlab,如何配置 https,让 git clone 地址与域名一样不带端口号 https://www.v2ex.com/t/681458
