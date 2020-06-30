@@ -5,23 +5,19 @@ Slides and other materials from CppCon 2018 https://github.com/CppCon/CppCon2018
 
 # 基本教程
 
-- C++教程 -- 易百教程
-https://www.yiibai.com/cplusplus/
+C++教程 -- 易百教程 https://www.yiibai.com/cplusplus/
 
-- C++教程 -- 菜鸟教程
-http://www.runoob.com/cplusplus/cpp-tutorial.html
+C++教程 -- 菜鸟教程 http://www.runoob.com/cplusplus/cpp-tutorial.html
 
-- C++ Tutorial
-https://www.tutorialspoint.com/cplusplus/index.htm
+C++ Tutorial https://www.tutorialspoint.com/cplusplus/index.htm
+- C++ STL Tutorial https://www.tutorialspoint.com/cplusplus/cpp_stl_tutorial.htm
 
-- C++在线教程
-http://www.gitbook.net/cplusplus/index.html
+C++在线教程 http://www.gitbook.net/cplusplus/index.html
 
 鱼C工作室 https://ilovefishc.com/
 - 【C++语法】《C++快速入门》（小甲鱼） https://www.bilibili.com/video/av28127959/
 
-- C++基础教程-多线程
-http://wiki.jikexueyuan.com/project/cplusplus/multithreading.html
+C++基础教程-多线程 http://wiki.jikexueyuan.com/project/cplusplus/multithreading.html
 
 ## C++优秀博客
 
