@@ -29,6 +29,8 @@ Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/
 
 【[:star:][`*`]】【里面是关于CP4MCM几个核心概念的较为详细的介绍】 Managing applications https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/applications/overview.html
 
+Creating and managing application resources https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/applications/managing_apps.html
+
 ## CP(K)安装
 
 【[:star:][`*`]】【适用于在已有ocp集群基础上装cp4mcm】 Installing the IBM Cloud Pak® for Multicloud Management offline https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/install/cloud_pak_foundation.html
