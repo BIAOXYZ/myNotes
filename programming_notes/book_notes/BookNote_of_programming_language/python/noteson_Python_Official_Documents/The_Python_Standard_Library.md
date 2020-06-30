@@ -21,7 +21,7 @@ https://docs.python.org/2.7/library/functions.html
 
 ## `8.3. collections — High-performance container datatypes` https://docs.python.org/2/library/collections.html
 
-### `8.3.2. deque objects` https://docs.python.org/2/library/collections.html#collections.deque
+### `8.3.2. deque objects` https://docs.python.org/2/library/collections.html#collections.deque || https://docs.python.org/zh-cn/2.7/library/collections.html#collections.deque
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
