@@ -54,7 +54,8 @@ CLI tools guide https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli
 
 ## 新的operator based安装方式
 
-Installing the IBM Cloud Pak® for Multicloud Management online - DRAFT https://www-03preprod.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/install/online_install.html
+- Installing the IBM Cloud Pak® for Multicloud Management online - DRAFT https://www-03preprod.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/install/online_install.html
+- Advanced configuration https://www-03preprod.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/install/config_adv.html
 
 ## 导入managed cluster
 
