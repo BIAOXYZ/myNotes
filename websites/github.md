@@ -172,6 +172,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee http://e.e
 
 Ubuntu Paste 的本土化版，有加密功能，文本框的内容可以一键复制，上传的内容可以选择永久保存或者是即阅即焚。 https://github.com/LucienShui/PasteMe
 > https://pasteme.cn/
+>> 另：ubuntu pastebin https://paste.ubuntu.com/
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
