@@ -52,6 +52,10 @@ CLI tools guide https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli
   * IBM Cloud Pak™ CLI (cloudctl) multicluster commands (mc) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/cli/cli_mc_commands.html 【其实原来cloudctl是ICP的，但是现在一是ICP要放弃并全面转向基于OpenShift的CP4MCM，二是过去的ICP的东西还得兼容，所以在`cloudctl`基础上搞了一个`cloudctl mc`】
 - Installing the Helm CLI (helm) https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/helm-cli/3.4.0/create_helm_cli.html
 
+## 新的operator based安装方式
+
+Installing the IBM Cloud Pak® for Multicloud Management online - DRAFT https://www-03preprod.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/install/online_install.html
+
 ## 导入managed cluster
 
 Importing a target managed cluster to the hub cluster https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/install_k8s_cloud.html
