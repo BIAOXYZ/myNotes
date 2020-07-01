@@ -1,4 +1,14 @@
 
+如何正确查看进程被 kill 的历史记录呢？ https://www.v2ex.com/t/686286
+```console
+linux 环境下，当内存不足时，系统好像会 kill 掉内存占用最高的进程，通过下面的命令可以查看到记录
+
+dmesg -T | egrep -i -B100 'killed process'
+
+问题来了，日志中只会显示进程名称，类似下面的。那么有没有什么参数可以显示出详细的信息呢？
+比如 ps -f，这样可以知道执行文件的位置，命令的参数等....
+```
+
 Linux 如何恢复误 kill 的进程 https://www.v2ex.com/t/682646
 
 同一磁盘使用 ln 创建硬链接提示 Invalid cross-device link? https://www.v2ex.com/t/679359
