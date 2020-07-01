@@ -85,6 +85,8 @@ I get "corrupted content error" for a site that I can access on a different devi
 
 # 其他链接
 
+IBM Cloud Pak Skills and Certification Program https://w3.ibm.com/w3publisher/cloud-paks-skills-and-certification
+
 【[:star:][`*`]】【里面是较为详细的例子】 IBM Cloud Pak for Multicloud Management - Multi-cluster Application Management https://www.ibm.com/cloud/garage/dte/tutorial/multi-cluster-application-management/
 - > **Define application channel**
   * > The concept is similar to subscription model of TV channels. In this model, all the applications, which are packaged as helm charts, are hosted in one or more repositories. The repositories, which contain the application packages, are defined as channels that broadcast across the clusters. If you want to deploy an application, then define a subscription to the channel with the name of the application (one or more) you want to deploy.
