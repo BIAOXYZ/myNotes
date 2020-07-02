@@ -1,6 +1,9 @@
 
 # [heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
 
+堆 https://zh.wikipedia.org/wiki/%E5%A0%86%E7%A9%8D || Heap (data structure) https://en.wikipedia.org/wiki/Heap_(data_structure)
+- > 堆始于J. W. J. Williams在1964年发表的堆排序（heap sort），当时他提出了二叉堆树作为此算法的数据结构。堆在戴克斯特拉算法（英语：Dijkstra's algorithm）中亦为重要的关键。
+
 Heap Data Structure https://www.geeksforgeeks.org/heap-data-structure/
 
 `【堆概念】`：
