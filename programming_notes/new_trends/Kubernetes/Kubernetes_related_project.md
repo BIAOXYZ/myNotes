@@ -56,6 +56,18 @@ Kubernetes Operators Best Practices https://www.openshift.com/blog/kubernetes-op
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## CSV
+
+11.4. 生成 CLUSTERSERVICEVERSION (CSV) https://access.redhat.com/documentation/zh-cn/openshift_container_platform/4.2/html/operators/osdk-generating-csvs
+
+Creating the ClusterServiceVersion https://redhat-connect.gitbook.io/certified-operator-guide/ocp-deployment/operator-metadata/creating-the-csv
+
+Building a Cluster Service Version (CSV) for the Operator Framework https://github.com/operator-framework/operator-lifecycle-manager/blob/53f6fa42cbbc82c35c490071c6413b84921709ef/doc/design/building-your-csv.md
+
+How to contribute an Operator https://operatorhub.io/contribute
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Operator Framework
 
 Operators https://coreos.com/operators/
