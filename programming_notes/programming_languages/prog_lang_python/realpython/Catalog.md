@@ -12,3 +12,5 @@ How to Use Python Lambda Functions https://realpython.com/python-lambda/
 Python eval(): Evaluate Expressions Dynamically https://realpython.com/python-eval-function/
 
 How to Use sorted() and sort() in Python https://realpython.com/python-sort/
+
+The Python heapq Module: Using Heaps and Priority Queues https://realpython.com/python-heapq-module/
