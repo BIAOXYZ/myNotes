@@ -1,4 +1,6 @@
 
+MySQL 插入意向锁的作用是什么？ https://www.v2ex.com/t/686462
+
 关于“数据库系统概念 - 第 15 章 并发控制 - 15.5 基于有效性检查的协议”的疑问 https://www.v2ex.com/t/684807
 
 一个关于 mysql 锁问题 https://www.v2ex.com/t/683424
