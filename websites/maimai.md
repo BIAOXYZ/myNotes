@@ -79,6 +79,8 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉八卦
 
+后悔做了字节的认证，感觉没有百度同事圈我的乐趣都要没有了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY2MjM5NDUsImlhdCI6MTU5Mzc1MTAxMH0.V5lg549r2qPxsGEwcaY3Ek8ShvQ0g9sd7z0HhKz_IzU
+
 这个阿里P8事件男主，是我前同事，看到这个消息的时候，我是非常震惊的……这货才毕业三年？为啥4年前我们就是同事？而且，他的经历不仅仅是网上爆的那5份，至少还有一家就是我们共事过的……这货技术巨水……被我们那家公司辞退了，这种伪造经历的，被开掉的经历，都能进阿里？阿里P8到底有多水 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY1MDA1MDcsImlhdCI6MTU5MjcxMzg3Mn0.SHBS8rgdUqBoeAFMAbPgAedrNy8-xiPOYePy9_evfYM
 
 阿里一个人能在不同事业部同时担任P8么？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwMzcwNzEsImlhdCI6MTU4ODc2NjM2Mn0._ZmUNWHGSizIsc21w1ts1NDQ02S6ncuidq7xBIO6Khs
