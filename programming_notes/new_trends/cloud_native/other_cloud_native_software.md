@@ -19,6 +19,14 @@ IaaS vs. PaaS vs. CaaS如何选择？ https://www.cnblogs.com/geekkiller/p/50074
 lift and shift https://whatis.techtarget.com/definition/lift-and-shift
 > Lift and shift is a strategy for moving an application or operation from one environment to another – without redesigning the app. In the lift-and-shift approach, certain workloads and tasks can be moved from on-premises storage to the cloud, or data operations might be transferred from one data center to another.
 
+## [SLA]()、[SLO]()
+
+Service-level objective https://en.wikipedia.org/wiki/Service-level_objective
+
+Service-level agreement https://en.wikipedia.org/wiki/Service-level_agreement
+
+The Difference between SLI, SLO, and SLA https://enqueuezero.com/the-difference-between-sli-slo-and-sla.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Rancher
