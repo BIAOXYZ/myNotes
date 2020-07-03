@@ -11,7 +11,13 @@ Kubernetes Applications https://github.com/kubernetes-sigs/application
 
 ## International Business Machines https://github.com/IBM
 
+### cloud-pak
+
 IBM Cloud Paks are enterprise-grade containerized software by combining container images with enterprise capabilities for deployment in production use cases with integrations for management and lifecycle operations. Features such as pre-configured deployments based on product expertise, rolling upgrades, rollbacks, security/vulnerability testing… https://github.com/IBM/cloud-pak
+
+### HybridApplication Operator
+
+HybridApplication Operator https://github.com/IBM/hybridapplication-operator
 
 ### portieris
 
