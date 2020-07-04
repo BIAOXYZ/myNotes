@@ -71,10 +71,14 @@ Faith_bian https://liquipedia.net/dota2/Faith_bian
 
 SanSheng https://liquipedia.net/dota2/SanSheng
 
+Rabbit / xiaotuji https://liquipedia.net/dota2/Rabbit
+
 ### other staffs
 ***// 我去，liquipedia的wiki太牛叉了，连解说都有页面。。。***
 
 Ams https://liquipedia.net/dota2/Ams
+
+BBC https://liquipedia.net/dota2/BBC
 
 ### others
 
