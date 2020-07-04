@@ -1,4 +1,15 @@
 
+Linux 下删点日志也能搞死人 https://www.v2ex.com/t/687093
+```console
+在 Linux 下，如何删除一个目录下的所有 log 文件？
+
+目前为止只有一个应聘者能够给出完整的命令：
+find -name \*.log -exec rm -f {} \;
+
+我们有一台共享开发机，因为大家都懒得删 log，经常磁盘爆满，后来我们给它加了个 crontab：
+0 4 * * * find /home/ -type f -name "*.log*" -size +100M -exec bash -c "echo -n > '{}'" \;
+```
+
 如何正确查看进程被 kill 的历史记录呢？ https://www.v2ex.com/t/686286
 ```console
 linux 环境下，当内存不足时，系统好像会 kill 掉内存占用最高的进程，通过下面的命令可以查看到记录
