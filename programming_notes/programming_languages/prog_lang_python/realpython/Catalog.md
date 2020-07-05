@@ -14,3 +14,5 @@ Python eval(): Evaluate Expressions Dynamically https://realpython.com/python-ev
 How to Use sorted() and sort() in Python https://realpython.com/python-sort/
 
 The Python heapq Module: Using Heaps and Priority Queues https://realpython.com/python-heapq-module/
+
+Python Debugging With Pdb https://realpython.com/python-debugging-pdb/
