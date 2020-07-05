@@ -1,4 +1,9 @@
 
+# 其他工具
+
+SQLancer -- Detecting Logic Bugs in DBMS https://github.com/sqlancer/sqlancer || www.sqlancer.com
+- > SQLancer (Synthesized Query Lancer) is a tool to automatically test Database Management Systems (DBMS) in order to find logic bugs in their implementation. We refer to logic bugs as those bugs that cause the DBMS to fetch an incorrect result set (e.g., by omitting a record).
+
 # 在线工具
 
 DB Fiddle - SQL Database Playground https://www.db-fiddle.com/
@@ -35,6 +40,9 @@ Oracle GoldenGate快速入门篇（详解GoldenGate概念到原理） http://www
 Oracle GoldenGate 详解 https://www.cnblogs.com/rangle/p/8987063.html
 
 # 数据迁移
+
+migrate -- Database migrations written in Go. Use as CLI or import as library. https://github.com/golang-migrate/migrate
+- > Forked from [mattes/migrate](https://github.com/mattes/migrate)
 
 有一个上百 G 的 Oracle 数据库，要整体迁移至 MySql，麻烦各位大佬给个思路 https://www.v2ex.com/t/675899
 ```console

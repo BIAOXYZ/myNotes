@@ -206,7 +206,7 @@ Kubernetes the Hard Way - completely on your Linux laptop.. in Containers! https
 >
 > It was made on Fedora 32 with Podman (not docker), and it allowed me to create a 7 node kubernetes cluster without slowing down my laptop :)
 
-使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz
+使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响 https://github.com/gjmzj/kubeasz --> https://github.com/easzlab/kubeasz
 - 开启内核ipv4转发需要加载br_netfilter模块 #69 https://github.com/gjmzj/kubeasz/issues/69
 
 和我一步步部署 kubernetes 集群 https://github.com/opsnull/follow-me-install-kubernetes-cluster
