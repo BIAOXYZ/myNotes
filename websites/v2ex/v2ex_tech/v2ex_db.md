@@ -1,4 +1,6 @@
 
+MySQL 是这样实现可重复读的 https://www.v2ex.com/t/687341
+
 MySQL 插入意向锁的作用是什么？ https://www.v2ex.com/t/686462
 
 关于“数据库系统概念 - 第 15 章 并发控制 - 15.5 基于有效性检查的协议”的疑问 https://www.v2ex.com/t/684807

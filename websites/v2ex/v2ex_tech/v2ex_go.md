@@ -1,4 +1,6 @@
 
+Dig101-Go 之深入理解 mutex https://www.v2ex.com/t/687253
+
 关于 golang 除法运算符/的疑惑 https://www.v2ex.com/t/685694
 
 Golang 泛型他来了！ https://www.v2ex.com/t/682238
