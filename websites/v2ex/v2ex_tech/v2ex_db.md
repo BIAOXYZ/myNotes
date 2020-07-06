@@ -1,4 +1,6 @@
 
+这两种 sql 写法有什么区别么？把查询结果当做临时 table 来查会更快么？ https://www.v2ex.com/t/687580
+
 MySQL 是这样实现可重复读的 https://www.v2ex.com/t/687341
 
 MySQL 插入意向锁的作用是什么？ https://www.v2ex.com/t/686462
