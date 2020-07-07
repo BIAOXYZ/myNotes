@@ -207,6 +207,10 @@ Deploy a Production Ready Kubernetes Cluster https://github.com/kubernetes-sigs/
 
 kustomize: Customization of kubernetes YAML configurations https://github.com/kubernetes-sigs/kustomize
 
+使用 Kustomize 配置 Kubernetes 应用 https://www.qikqiak.com/post/kustomize-101/
+
+Introduction to Kustomize, Part 1: Creating a Kubernetes app out of multiple pieces https://www.mirantis.com/blog/introduction-to-kustomize-part-1-creating-a-kubernetes-app-out-of-multiple-pieces/  <br>  Introduction to Kustomize, Part 2: Overriding values with overlays https://www.mirantis.com/blog/introduction-to-kustomize-part-2-overriding-values-with-overlays/
+
 ## 其他kubernetes-sigs项目
 
 Kubernetes controller-tools: Tools to use with the controller-runtime libraries https://github.com/kubernetes-sigs/controller-tools
