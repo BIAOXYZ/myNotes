@@ -7,6 +7,9 @@
 
 # open source news
 
+MySQL 数据库删除 master、黑名单白名单等术语 https://www.ithome.com/0/496/450.htm
+- > 最近承诺要进行类似更改并清理其技术术语的一些公司和开源项目包括有：GitHub、微软、LinkedIn、Ansible、Splunk、OpenZFS、OpenSSL、JP Morgan、 Android 移动操作系统、Go 编程语言、PHPUnit 和 Curl 等。
+
 Java 库 fastjson 被曝存“高危”远程代码执行漏洞 https://www.ithome.com/0/490/069.htm
 - > hez2010 2020/5/31 17:08:10
   >> 有漏洞没问题，频繁出就有问题了。fastjson的远程代码执行高危漏洞2年之内爆出来9次。。
