@@ -9,6 +9,8 @@ Visual Studio Code https://github.com/Microsoft/vscode || https://code.visualstu
 
 Collection of helpful tips and tricks for VS Code. https://github.com/Microsoft/vscode-tips-and-tricks
 
+第一次使用VS Code时你应该知道的一切配置 https://juejin.im/post/5cb87c6e6fb9a068a03af93a
+
 # vscode新闻
 
 Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio - cnBeta.COM https://www.cnbeta.com/articles/soft/756969.htm
@@ -72,6 +74,16 @@ vscode 同时编辑多处，多个光标 快捷键 https://blog.csdn.net/Gomeer/
 2、按住Ctrl + Alt，再按键盘上向上或者向下的键，可以使一列上出现多个光标。
 3、选中一段文字，按shift+alt+i，可以在每行末尾出现光标
 ```
+
+## 代码跳转后返回原位
+
+vscode 跳转到函数之后怎么跳转回之前的位置 https://www.v2ex.com/t/385490
+- > 从工具栏的转到中可以看到后退前进的快捷键
+- > 默认 alt+左箭头，但是会冲突，建议自定义。
+
+>> //notes：
+1. 如果英文版的话是在菜单栏的 `GO` -- `Back` 看当前回退的快捷键。
+2. 确实Windows下默认的是 `alt + ⬅`，但是基本都会冲突，我是自定义成了 `alt + |`，因为`=`、`_`等都被占了。。。编辑方法是：点击最左下角的齿轮 -- 选择`Keyboard Shortcuts` -- 搜索`Go Back`即可。
 
 ## vscode护眼色修改
 
