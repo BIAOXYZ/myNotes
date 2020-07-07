@@ -20,11 +20,15 @@ LaTeX Table Generator http://www.tablesgenerator.com/
 
 # Latex攻略集合
 
-- TeX/LaTeX Resources http://texblog.org/tex-resources/
-- awesome-LaTeX https://github.com/egeerardyn/awesome-LaTeX
-- LaTeXStudio https://github.com/latexstudio
-  - 常用宏包说明的中文本地化项目 https://github.com/latexstudio/LaTeXPackages-CN
-  - 给大家普及本已普及了的LaTeX知识。 https://github.com/latexstudio/LaTeX-TeXWiki 
+Documents for Chinese TeX users https://github.com/CTeX-org/ctex-doc
+
+TeX/LaTeX Resources http://texblog.org/tex-resources/
+
+awesome-LaTeX https://github.com/egeerardyn/awesome-LaTeX
+
+LaTeXStudio https://github.com/latexstudio
+- 常用宏包说明的中文本地化项目 https://github.com/latexstudio/LaTeXPackages-CN
+- 给大家普及本已普及了的LaTeX知识。 https://github.com/latexstudio/LaTeX-TeXWiki 
   
 ## Latex个人博客
 
