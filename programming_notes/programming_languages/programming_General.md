@@ -128,6 +128,17 @@ freeCodeCamp Guide https://guide.freecodecamp.org/
 - https://www.programiz.com/c-programming
 - https://www.programiz.com/cpp-programming
 
+## HackerRank
+
+- https://www.hackerrank.com/domains/python
+- https://www.hackerrank.com/domains/cpp
+- https://www.hackerrank.com/domains/sql
+- https://www.hackerrank.com/domains/databases
+- https://www.hackerrank.com/domains/mathematics
+- https://www.hackerrank.com/domains/shell
+- https://www.hackerrank.com/domains/algorithms
+- https://www.hackerrank.com/domains/data-structures
+
 ## Online Games or Others
 
 学习编程太枯燥？12款助你学编程的免费游戏 - 慕课网的文章 - 知乎 https://zhuanlan.zhihu.com/p/33783827
