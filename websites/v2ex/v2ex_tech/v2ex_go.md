@@ -1,4 +1,6 @@
 
+我的机器上 go get 指令一直报握手错误。从下午查到晚上还不知道啥问题 https://www.v2ex.com/t/687790
+
 Dig101-Go 之深入理解 mutex https://www.v2ex.com/t/687253
 
 关于 golang 除法运算符/的疑惑 https://www.v2ex.com/t/685694
