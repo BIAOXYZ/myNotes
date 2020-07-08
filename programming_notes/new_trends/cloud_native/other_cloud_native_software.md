@@ -160,6 +160,8 @@ Red Hat Advanced Cluster Management for Kubernetes https://www.redhat.com/en/tec
 
 Red Hat Advanced Cluster Management for Kubernetes documentation https://github.com/open-cluster-management/rhacm-docs
 
+INSTALL https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/1.0/html-single/install/index
+
 ## Rancher Fleet
 
 Fleet Management for Kubernetes is Here https://rancher.com/blog/2020/fleet-management-kubernetes/
