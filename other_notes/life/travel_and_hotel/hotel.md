@@ -126,6 +126,15 @@ Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇�
 
 # Ascott / 雅诗阁
 
-首页---会员--会员福利--“雅星会”条款和条件  https://www.雅诗阁.com/zh/member/benefits/terms.html
+ASCOTT https://www.the-ascott.com/
+- 首页---会员---会员福利---“雅星会”条款和条件 https://www.the-ascott.com/zh/member/benefits/terms.html
+
+雅诗阁中国 https://www.ascottchina.com/
+
+## 下辖酒店
+
+西安盛捷新地城服务公寓 https://www.somerset.com/zh/china/xian/somerset-xindicheng-xian.html
+
+西安中建馨乐庭高新公寓酒店 https://www.citadines.com/zh/china/xian/citadines-gaoxin-xian.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
