@@ -1,4 +1,6 @@
 
+Linux 命令 grep， awk 执行疑惑 https://www.v2ex.com/t/688275
+
 Linux 下删点日志也能搞死人 https://www.v2ex.com/t/687093
 ```console
 在 Linux 下，如何删除一个目录下的所有 log 文件？
