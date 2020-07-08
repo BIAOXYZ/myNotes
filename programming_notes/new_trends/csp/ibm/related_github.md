@@ -44,7 +44,11 @@ CRD and controller for Subscription (Channel Subscription model) for Multicloud 
 【:x:】 
 - `dplv1alpha1 "github.com/open-cluster-management/multicloud-operators-deployable/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L24
 - `plrv1alpha1 "github.com/open-cluster-management/multicloud-operators-placementrule/pkg/apis/apps/v1"` https://github.com/open-cluster-management/multicloud-operators-subscription/blob/release-2.0/pkg/apis/apps/v1/subscription_types.go#L25
- 
+
+### open-cluster-management API
+
+https://github.com/open-cluster-management/api
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Hybrid Application Model https://github.com/hybridapp-io
@@ -63,4 +67,10 @@ Kubernetes Cluster API Provider IBM VPC Cloud 【IBM VPC Cloud (Gen2)】 https:/
 
 # 公司github
 
-Operator to handle the compatibility of api groups between cp4mcm and RHACM https://github.ibm.com/IBMPrivateCloud/applicationcompatibility-operator
+Operator to handle the compatibility of api groups between cp4mcm and RHACM https://github.ibm.com/IBMPrivateCloud/applicationcompatibility-operator  -->  https://github.ibm.com/IBMPrivateCloud/hybridapp-operator
+
+https://github.ibm.com/IBMPrivateCloud/hcm-klusterlet <br>
+https://github.ibm.com/IBMPrivateCloud/hcm-api <br>
+https://github.ibm.com/IBMPrivateCloud/hcm-controller <br>
+https://github.ibm.com/IBMPrivateCloud/klusterlet-component-operator/ <br>
+https://github.ibm.com/IBMPrivateCloud/ibm-klusterlet-operator
