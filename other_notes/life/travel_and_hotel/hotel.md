@@ -92,13 +92,17 @@ Marriott International https://en.wikipedia.org/wiki/Marriott_International
 
 ## 希尔顿官网
 
-Hilton Hotels and Resorts https://www.hilton.com/en/hilton/
+Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/
 
-希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/
-
-Hilton Honors My Offers https://www.hilton.com/en/hilton-honors/guest/my-offers/
+官网实用链接:
+- Hilton Honors My Offers https://www.hilton.com/en/hilton-honors/guest/my-offers/
+- Manage your stays https://www.hilton.com/en/hilton-honors/guest/my-account/
 
 会员礼遇 https://hiltonhonors3.hilton.com/zh_CN/explore/benefits/index.html
+
+## 希尔顿酒店
+
+西安高新希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-xian-high-tech-zone-XIYCHHI/index.html
 
 ## 希尔顿攻略
 
