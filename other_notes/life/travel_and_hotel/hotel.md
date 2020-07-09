@@ -104,6 +104,8 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店�
 
 西安高新希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-xian-high-tech-zone-XIYCHHI/index.html
 
+西安富力希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-Xian-XIYHIHI/index.html
+
 ## 希尔顿攻略
 
 Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇总 https://www.hoteldig.com/hilton-website-useful-link/
