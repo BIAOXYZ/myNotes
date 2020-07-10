@@ -28,6 +28,7 @@ From 萌百：
 From bilibili:
 - 祈愿逝者安息，伤者早日康复 https://www.bilibili.com/read/cv3104706
 - 2019年7月19日京都大火第二天 https://www.bilibili.com/read/cv3113756
+- 京都动画火灾一周年，京阿尼能否重生？从近况来分析一下京都动画的动向和未来 https://www.bilibili.com/video/BV1ZV41167eD
 
 From AcFun:
 现场：日本京阿尼工作室发生爆炸并起火 https://www.acfun.cn/v/ac10475642
