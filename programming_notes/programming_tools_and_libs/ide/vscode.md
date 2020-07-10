@@ -177,8 +177,9 @@ VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u0136002
 
 ## 自动打开的一个python提示（当你有`.py`文件在vscode里时，偶尔会弹出）
 
-文件名字：`Python - Get Started`
-```
+- 文件名字：《`Python - Get Started`》
+- 文件内容：
+```console
 Python Extension
 
 Create a Jupyter Notebook
@@ -201,6 +202,7 @@ Explore more features in our Tutorials or check Documentation for tips and troub
 
 Don't show this page again
 ```
+- 打开方式：正如上面文件内容里所说的，（首先打开`Command Palette`，可以按`F1`，或者按`Ctrl + Shift + P`，或者点击左下角齿轮，弹出菜单第一个），然后输入`Python: Open Start Page`，最后回车即可。
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
