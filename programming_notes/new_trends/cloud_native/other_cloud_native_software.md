@@ -35,6 +35,12 @@ The Difference between SLI, SLO, and SLA https://enqueuezero.com/the-difference-
 
 Rancher 1.6 Docs https://rancher.com/docs/rancher/latest/zh/
 
+## rke
+
+rke -- Rancher Kubernetes Engine, an extremely simple, lightning fast Kubernetes installer that works everywhere. https://github.com/rancher/rke
+
+RKE Kubernetes Installation https://rancher.com/docs/rke/latest/en/installation/
+
 # Rancher others
 
 使用Rancher光速搭建K8s集群 https://how2realize.gitbook.io/project/zen-yang-shi-xian-de/shi-yong-rancher-guang-su-da-jian-k8s-ji-qun
