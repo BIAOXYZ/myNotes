@@ -99,7 +99,8 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店�
 - Manage your stays https://www.hilton.com/en/hilton-honors/guest/my-account/
 - Activity https://www.hilton.com/en/hilton-honors/guest/activity/  【选一下合适的Filter，主要就是`Upcoming stays`（这个默认勾选）和`Previous stays`（这个手动勾选一下）】
 
-会员礼遇 https://hiltonhonors3.hilton.com/zh_CN/explore/benefits/index.html
+希尔顿荣誉客会 - 酒店奖励计划 https://hiltonhonors3.hilton.com/zh_CN/index.html || 【切成英文版跳转到这个链接了】 https://www.hilton.com/en/hilton-honors/
+- 会员礼遇 https://hiltonhonors3.hilton.com/zh_CN/explore/benefits/index.html
 
 ## 希尔顿酒店
 
