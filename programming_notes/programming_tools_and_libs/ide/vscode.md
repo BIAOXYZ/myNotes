@@ -175,6 +175,33 @@ vscode 的 go 插件怎么正确安装？ https://www.v2ex.com/t/615962
 
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
 
+## 自动打开的一个python提示（当你有`.py`文件在vscode里时，偶尔会弹出）
+
+文件名字：`Python - Get Started`
+```
+Python Extension
+
+Create a Jupyter Notebook
+- Run "Create New Blank Jupyter Notebook" in the Command Palette (Shift + Command + P)
+- Explore our sample notebook to learn about notebook features
+Create a Python File
+- Create a new file with a .py extension
+Open a Folder or Workspace
+- Open a Folder
+- Open a Workspace
+Use the Interactive Window to develop Python Scripts
+- You can create cells on a Python file by typing "#%%" 
+- Use "Shift + Enter " to run a cell, the output will be shown in the interactive window
+
+Take a look at our Release Notes to learn more about the latest features
+- Added a start page for the extension. Launched in experimental mode such that it opens to new users or when there is a new release. It can be disabled with the setting 'Python: Show Start Page' and it can be opened at any time with the command 'Python: Open Start Page'.
+- Removed `python.jediEnabled` setting in favor of `python.languageServer`. Instead of `"python.jediEnabled": true` please use `"python.languageServer": "Jedi"`.
+- Made the variable explorer in the Notebook editor resizable.
+Explore more features in our Tutorials or check Documentation for tips and troubleshooting.
+
+Don't show this page again
+```
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for latex
