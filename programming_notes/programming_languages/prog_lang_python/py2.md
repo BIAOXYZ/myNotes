@@ -165,6 +165,22 @@ print(z)        #['www.google.com', 'login/ex']
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## None 和 None类型
+
+The None Object https://docs.python.org/3.7/c-api/none.html || The None Object https://docs.python.org/2.7/c-api/none.html
+
+What is the None keyword in Python? https://www.educative.io/edpresso/what-is-the-none-keyword-in-python
+
+深入理解Python中的None - 小包总的文章 - 知乎 https://zhuanlan.zhihu.com/p/65193194
+
+What is a None value? https://stackoverflow.com/questions/19473185/what-is-a-none-value
+
+What is the difference between “ is None ” and “ ==None ” https://stackoverflow.com/questions/3257919/what-is-the-difference-between-is-none-and-none
+
+Python `if x is not None` or `if not x is None`? https://stackoverflow.com/questions/2710940/python-if-x-is-not-none-or-if-not-x-is-none
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Lambda表达式
 
 How to Use Python Lambda Functions https://realpython.com/python-lambda/
