@@ -1,4 +1,6 @@
 
+Dockerfile 如何传递环境变量文件并执行？ https://www.v2ex.com/t/689312
+
 问一个奇怪的 K8S 集群网络问题 https://www.v2ex.com/t/687268
 
 求教 K8S 架构上如何通过等保三 https://www.v2ex.com/t/685966
