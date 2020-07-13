@@ -3,6 +3,14 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## [[package controller]] ((https://godoc.org/sigs.k8s.io/controller-runtime/pkg/internal/controller))
+
+### pkg/internal/controller/controller.go
+
+`if result, err := c.Do.Reconcile(req); err != nil {` https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04/pkg/internal/controller/controller.go#L256 【controller做reconcile的起始点，这个不是函数的开头，只是函数/方法 `func (c *Controller) reconcileHandler(obj interface{}) bool {` 内的语句。】
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## [package manager] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/manager)
 
 ### pkg/manager/internal.go
