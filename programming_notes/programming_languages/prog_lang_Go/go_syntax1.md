@@ -160,8 +160,9 @@ http://www.jb51.net/article/108972.htm
 
 ## go语言interface
 
-【GoLang笔记】浅析Go语言Interface类型的语法行为及用法 
-https://studygolang.com/articles/2652
+【GoLang笔记】浅析Go语言Interface类型的语法行为及用法 https://studygolang.com/articles/2652
+
+【[:star:][`*`]】 深度解密Go语言之关于 interface 的10个问题 https://www.cnblogs.com/qcrao-2018/p/10766091.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
