@@ -168,6 +168,18 @@ vscode 的 go 插件怎么正确安装？ https://www.v2ex.com/t/615962
 - > idea 社区版 可以装 go 的插件，使用体验和 goland 是一样的
 
 解决vs code 调试golang时字符串显示不全的问题。 https://blog.csdn.net/bilinxing_/article/details/90737819
+```console
+在configurations中增加如下配置，修改"maxStringLen"字段值为自己想要的长度，默认64，这里修改为521。
+注意其他默认字段不能省略，使用默认值即可：
+
+"dlvLoadConfig": {
+                "followPointers": true,
+                "maxVariableRecurse": 1,
+                "maxStringLen": 512, //字符串最大长度
+                "maxArrayValues": 64,
+                "maxStructFields": -1
+		}
+```
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
