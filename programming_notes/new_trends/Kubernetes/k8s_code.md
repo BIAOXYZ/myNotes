@@ -71,6 +71,19 @@ Kubernetes搭建之kubeadm-init探究 https://jingwei.link/2018/11/28/kubeadm-in
 
 Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
 
+An example of using dynamic client of k8s.io/client-go https://ymmt2005.hatenablog.com/entry/2020/04/14/An_example_of_using_dynamic_client_of_k8s.io/client-go
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# apimachinery相关源码
+
+## unstructured.Unstructured
+
+What is the package `unstructured` used for in k8s.io /apimachinery? https://stackoverflow.com/questions/54017328/what-is-the-package-unstructured-used-for-in-k8s-io-apimachinery
+
+
+
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # controller相关源码
