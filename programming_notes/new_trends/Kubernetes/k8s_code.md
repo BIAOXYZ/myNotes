@@ -71,7 +71,13 @@ Kubernetes搭建之kubeadm-init探究 https://jingwei.link/2018/11/28/kubeadm-in
 
 Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
 
-An example of using dynamic client of k8s.io/client-go https://ymmt2005.hatenablog.com/entry/2020/04/14/An_example_of_using_dynamic_client_of_k8s.io/client-go
+【[:star:][`*`]】 An example of using dynamic client of k8s.io/client-go https://ymmt2005.hatenablog.com/entry/2020/04/14/An_example_of_using_dynamic_client_of_k8s.io/client-go
+- > **Background: Server Side Apply**
+- > **Kubernetes API Basics**
+  * > **Mapping between GVK and GVR**
+- > **Go client libraries**
+  * > **Typed clients**
+    + > This kind of clients uses Go structs to represent a kind. You can edit resources in a type-safe way with them. Moreover, they can automatically find the REST mappings to send API requests. Following is an example of using a typed client to create a Deployment resource.
 
 Kuberentes客户端编程 https://blog.gmem.cc/k8s-client-programming
 
