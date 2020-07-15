@@ -98,6 +98,9 @@ Amazon DynamoDB https://en.wikipedia.org/wiki/Amazon_DynamoDB
 
 # not full-fledged DBs
 
+Dolt is Git for data! https://github.com/liquidata-inc/dolt
+- > Dolt is a relational database, i.e. it has tables, and you can execute SQL queries against those tables. It also has version control primitives that operate at the level of table cell. Thus Dolt is a database that supports fine grained value-wise version control, where all changes to data and schema are stored in commit log.
+
 Scuba: Diving into Data at Facebook https://research.fb.com/publications/scuba-diving-into-data-at-facebook/
 
 Fast, Distributed Graph DB https://dgraph.io https://github.com/dgraph-io/dgraph

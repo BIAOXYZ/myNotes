@@ -105,6 +105,8 @@ Zab vs. Paxos https://cwiki.apache.org/confluence/display/ZOOKEEPER/Zab+vs.+Paxo
 
 C++ Paxos library that has been used in Wechat production environment. https://github.com/Tencent/phxpaxos
 
+About: simple CASPaxos implementation written in rust on top of a simulator for finding bugs quickly https://github.com/spacejam/paxos
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Raft

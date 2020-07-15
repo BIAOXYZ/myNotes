@@ -27,6 +27,10 @@ ECC加密算法 https://blog.csdn.net/u010129119/article/details/62887707
 安全多方计算（MPC）从入门到精通 https://blog.csdn.net/juzhenyuan/article/category/7777533
 - 安全多方计算（MPC）从入门到精通：经典案例 https://blog.csdn.net/juzhenyuan/article/details/80929900
 
+# ZKP
+
+zkpblog -- 零知识证明相关的一些总结 https://github.com/huyuguang/zkpblog
+
 # others
 
 - Java密码学 非对称加密以及使用secp256k1进行数字签名（ECDSA），也适合Android（上） https://www.jianshu.com/p/676a0eb33d31
