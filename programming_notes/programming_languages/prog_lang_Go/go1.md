@@ -177,7 +177,7 @@ Go Walker https://gowalker.org/
 
 ## GoPlus
 
-GoPlus - The Go+ language for data science https://github.com/qiniu/goplus
+GoPlus - The Go+ language for data science https://github.com/qiniu/goplus  -->  https://github.com/goplus/gop
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
