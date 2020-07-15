@@ -26,8 +26,15 @@ Tarjan算法 https://zh.wikipedia.org/wiki/Tarjan%E7%AE%97%E6%B3%95 || Tarjan's 
 
 数据结构与算法 -图的存储与遍历(邻接表与邻接矩阵) https://juejin.im/post/5eab9260f265da7be769db1e
 
+Graph and its representations https://www.geeksforgeeks.org/graph-and-its-representations/
+
+Is there any other Data structure to represent Graph other than Adjacency List or Adjacency Matrix? https://stackoverflow.com/questions/49612663/is-there-any-other-data-structure-to-represent-graph-other-than-adjacency-list-o
+- > There are alternatives to the adjacency list or the adjacency matrix, such as **edge list**, **adjacency map** or **forward star** to name a few.
+
 ## 邻接表
 
 `785. 判断二分图` https://leetcode-cn.com/problems/is-graph-bipartite/
 
 `1. 邻接表无向图的介绍` https://alleniverson.gitbooks.io/data-structure-and-algorithms/9.%E5%9B%BE%E8%AE%BA/%E9%82%BB%E6%8E%A5%E8%A1%A8%E6%97%A0%E5%90%91%E5%9B%BE.html
+
+Adjacency List https://www.programiz.com/dsa/graph-adjacency-list
