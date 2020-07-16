@@ -63,3 +63,21 @@ Python nonlocal statement https://stackoverflow.com/questions/1261875/python-non
   # outer: 1
   # global: 2
   ```
+
+# 函数和类的嵌套
+
+## nested function
+
+python中def中def是如何实现的？ - 知乎 https://www.zhihu.com/question/265664528
+
+Python 嵌套函数和闭包 https://www.cnblogs.com/love9527/p/9022316.html
+
+## nested class
+
+Inner Classes in Python https://www.datacamp.com/community/tutorials/inner-classes-python
+
+Python – Access Parent Class Attribute https://www.geeksforgeeks.org/python-access-parent-class-attribute/
+
+How to access outer class from an inner class? https://stackoverflow.com/questions/2024566/how-to-access-outer-class-from-an-inner-class
+
+python class嵌套怎么访问父类 https://segmentfault.com/q/1010000009317669
