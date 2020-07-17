@@ -1,4 +1,6 @@
 
+Python 多重继承的问题 为什么以下代码里 Base 的 __init__ 没有被调用 https://www.v2ex.com/t/690995
+
 Python 多线程的问题 https://www.v2ex.com/t/674432
 ```py
 total = 0

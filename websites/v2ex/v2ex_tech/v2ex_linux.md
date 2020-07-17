@@ -1,4 +1,10 @@
 
+真的是无语！平时使用的一个测试机器，新招了个人使用了： sudo chmod -R 777 /usr/bin/ 这个命令，真的是秀 https://www.v2ex.com/t/690945
+- > 貌似有个命令对你有帮助：getfacl
+- > getfacl setfacl
+- > 自己编译的还是放 /usr/local/bin 更佳，即便误操作影响也不大
+- > 统一改 0755 是不行的，有些命令要 setuid/setgid
+
 Linux 命令 crontab 使用疑问 https://www.v2ex.com/t/688596
 
 Linux 命令 grep， awk 执行疑惑 https://www.v2ex.com/t/688275
