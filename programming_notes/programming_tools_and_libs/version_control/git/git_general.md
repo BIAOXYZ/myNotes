@@ -6,6 +6,8 @@
 >> notes：这个作者回复的git可视化工具不错，原地址为：
 >>> Use D3 to visualize simple git branching operations. https://github.com/onlywei/explain-git-with-d3 || http://onlywei.github.io/explain-git-with-d3/
 
+Git内部原理解析 https://mp.weixin.qq.com/s/NL2Uc0PLn3UgcCEryy5KuA
+
 # git online
 
 Resources to learn Git https://try.github.io/
