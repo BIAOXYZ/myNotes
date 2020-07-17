@@ -107,6 +107,8 @@ C++ Paxos library that has been used in Wechat production environment. https://g
 
 About: simple CASPaxos implementation written in rust on top of a simulator for finding bugs quickly https://github.com/spacejam/paxos
 
+BIGO | Paxos的工程实践与极致优化 https://mp.weixin.qq.com/s/OfbwhxCNOUGrpcHSHNeKFw 【Paxoskv】
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Raft
