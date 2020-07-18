@@ -34,6 +34,8 @@ CPack 入门指南 https://www.v2ex.com/t/673146
 
 # felix021
 
+踩坑记： Go 服务灵异 panic https://www.v2ex.com/t/691145
+
 踩坑记#2： Go 服务锁死 https://www.v2ex.com/t/684759
 
 [译] Ｃ程序员该知道的内存知识 (3) https://www.v2ex.com/t/672296

@@ -1,4 +1,6 @@
 
+Linux 可以不可以创建一个除了不叫 root 但是什么都和 root 一样的用户呢？ https://www.v2ex.com/t/691074
+
 真的是无语！平时使用的一个测试机器，新招了个人使用了： sudo chmod -R 777 /usr/bin/ 这个命令，真的是秀 https://www.v2ex.com/t/690945
 - > 貌似有个命令对你有帮助：getfacl
 - > getfacl setfacl

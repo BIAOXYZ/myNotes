@@ -1,4 +1,6 @@
 
+Linux 下如何关闭 CPU cache？ https://www.v2ex.com/t/691081
+
 Linux 内核如何在启动时配置参数到/sys/bus/pci/devices https://www.v2ex.com/t/684233
 
 MAC 地址会消耗光吗？它与 IP 有没有可比性？ https://www.v2ex.com/t/681010
