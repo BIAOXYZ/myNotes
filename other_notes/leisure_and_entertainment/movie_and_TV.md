@@ -83,6 +83,11 @@ https://www.juzimi.com/ju/1741097
 - 紀錄片：人在三和 https://www.youtube.com/watch?v=u7XhF34Lwbs
 - 盛世蝼蚁：一个中国大学生镜头下的深圳三和 https://xw.qq.com/cmsid/20181017A26M7F00
 
+翻山涉水上学路 https://movie.douban.com/subject/27622719/
+- 《翻山涉水上学路》两季【9集 1080P+】 https://www.bilibili.com/video/av53108025/
+  * 第一季01 肯尼亚 https://www.bilibili.com/video/BV1v4411j77Y?p=6
+- 翻山涉水上学路 https://v.qq.com/detail/s/sdp0011celmwf9z.html + 翻山涉水上学路 第二季 https://v.qq.com/detail/s/sdp0010051pg7i7.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 电视剧
