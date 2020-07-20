@@ -79,6 +79,8 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉八卦
 
+把这里当个树洞，说说我的经历，我发誓我说的是事实。我爱国，希望中国的公司越来越好，但是针对华为，我是矛盾的。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY3NjM0NDksImlhdCI6MTU5NTIyNjk2Nn0.Xhyp_NYyLZE0WyJEPFUaaSnK1gF2I_swdiKesu1eBZA
+
 后悔做了字节的认证，感觉没有百度同事圈我的乐趣都要没有了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY2MjM5NDUsImlhdCI6MTU5Mzc1MTAxMH0.V5lg549r2qPxsGEwcaY3Ek8ShvQ0g9sd7z0HhKz_IzU
 
 这个阿里P8事件男主，是我前同事，看到这个消息的时候，我是非常震惊的……这货才毕业三年？为啥4年前我们就是同事？而且，他的经历不仅仅是网上爆的那5份，至少还有一家就是我们共事过的……这货技术巨水……被我们那家公司辞退了，这种伪造经历的，被开掉的经历，都能进阿里？阿里P8到底有多水 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY1MDA1MDcsImlhdCI6MTU5MjcxMzg3Mn0.SHBS8rgdUqBoeAFMAbPgAedrNy8-xiPOYePy9_evfYM
