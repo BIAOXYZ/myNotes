@@ -79,6 +79,8 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉八卦
 
+#315曝光黑公司#，来来来，现在开始提名，哪些公司哪些点不好，值得被曝光一下~咱们职言“打假”走起 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY3NDM0MjMsImlhdCI6MTU5NTIyNjk2Nn0.6X1mFB_V6qL7CJdiW2z1W8JKYwODWg1lp04yKakgDIs
+
 把这里当个树洞，说说我的经历，我发誓我说的是事实。我爱国，希望中国的公司越来越好，但是针对华为，我是矛盾的。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY3NjM0NDksImlhdCI6MTU5NTIyNjk2Nn0.Xhyp_NYyLZE0WyJEPFUaaSnK1gF2I_swdiKesu1eBZA
 
 后悔做了字节的认证，感觉没有百度同事圈我的乐趣都要没有了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY2MjM5NDUsImlhdCI6MTU5Mzc1MTAxMH0.V5lg549r2qPxsGEwcaY3Ek8ShvQ0g9sd7z0HhKz_IzU
