@@ -26,6 +26,8 @@ Hotel Corp Code https://hotelcorporatecodes.com/97/hotel-corp-code.html
 
 tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
+全网最详尽没有之一！五星酒店公司协议价 https://m.sohu.com/n/538859690/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Luxury Hotels general
