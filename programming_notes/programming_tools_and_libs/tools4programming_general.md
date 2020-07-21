@@ -15,3 +15,5 @@ DocFetcher - 免费桌面文档全文搜索引擎工具，直接查找文档的�
 Record and share your terminal sessions, the right way. https://asciinema.org/
 
 🎨 Diagram as Code for prototyping cloud system architectures https://github.com/mingrammer/diagrams || https://diagrams.mingrammer.com/
+
+docker-wine: Docker image that includes Wine and Winetricks for running Windows applications on Linux and macOS https://github.com/scottyhardy/docker-wine
