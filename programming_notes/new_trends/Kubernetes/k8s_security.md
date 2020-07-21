@@ -34,3 +34,7 @@ rolebinding.rbac.authorization.k8s.io "ibm-privileged-clusterrole-rolebinding" d
 #// 真正在stocktrader名字空间执行的语句，和上面类似：
 kubectl -n stocktrader create rolebinding ibm-anyuid-clusterrole-rolebinding --clusterrole=ibm-anyuid-clusterrole --group=system:serviceaccounts:stocktrader
 ```
+
+# k8s security related projects
+
+KubiScan: A tool to scan Kubernetes cluster for risky permissions https://github.com/cyberark/KubiScan
