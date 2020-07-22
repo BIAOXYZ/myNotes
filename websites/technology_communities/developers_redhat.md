@@ -9,6 +9,8 @@ Static analysis in GCC 10 https://developers.redhat.com/blog/2020/03/26/static-a
 
 # 2019
 
+How to configure LDAP user authentication and RBAC in Red Hat OpenShift 3.11 https://developers.redhat.com/blog/2019/08/02/how-to-configure-ldap-user-authentication-and-rbac-in-red-hat-openshift-3-11/
+
 Podman and Buildah for Docker users https://developers.redhat.com/blog/2019/02/21/podman-and-buildah-for-docker-users/
 
 # 2018
