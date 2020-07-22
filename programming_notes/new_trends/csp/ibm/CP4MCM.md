@@ -63,6 +63,10 @@ Importing a target managed cluster to the hub cluster https://www.ibm.com/suppor
 - Importing a cluster with the CLI https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/manage_cluster/import_cli.html
 - Importing a managed cluster in an air gapped environment https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/installing/offline_endpoint.html
 
+## LDAP
+
+Onboarding LDAP users https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/icam/install_mcm_ldap.html
+
 ## 问题解决
 
 IBM Cloud Pak for Multicloud Management troubleshooting https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/mcm_troubleshoot.html
