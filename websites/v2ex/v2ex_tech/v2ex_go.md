@@ -1,4 +1,6 @@
 
+golang 中使用 goto 跳出 if 语句 https://www.v2ex.com/t/692272
+
 为什么 Go 语言可以交叉编译，打包出目标平台二进制， Java 不行？ https://www.v2ex.com/t/690116
 
 我的机器上 go get 指令一直报握手错误。从下午查到晚上还不知道啥问题 https://www.v2ex.com/t/687790

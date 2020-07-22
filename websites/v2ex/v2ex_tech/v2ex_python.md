@@ -1,4 +1,9 @@
 
+有在线编写 Python 代码并能执行的开源项目吗 https://www.v2ex.com/t/692173
+- > IBM Cloud Fonudray 和 Github Action 可以去看一下。
+- > Polynote
+- > https://e.coding.net/login 在线 VS Code，不开源，五人以下免费。
+
 Python 多重继承的问题 为什么以下代码里 Base 的 __init__ 没有被调用 https://www.v2ex.com/t/690995
 
 Python 多线程的问题 https://www.v2ex.com/t/674432

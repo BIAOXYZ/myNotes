@@ -1,4 +1,36 @@
 
+求问 Linux gdb 有什么命令可以直接把 memory dump 传递到打印机打印到纸上么？ https://www.v2ex.com/t/692088
+- > 据我所知 gdb 支持 python/shell 扩展，楼主可以想一下怎么自己实现打印，贴一下我的部分配置：
+  ```
+  # pretty print qt type value
+  # "Lekensteyn/qt5printers" github project needed be cloned into "~/.config/gdb/"
+  python
+  import sys, os.path
+  sys.path.insert(0, os.path.expanduser('~/.config/gdb'))
+  import qt5printers
+  qt5printers.register_printers(gdb.current_objfile())
+  end
+
+  # hexdump specified memory block
+  define hexdump
+  dump memory /tmp/dump.bin $arg0 $arg0+$arg1
+  shell hexdump -C /tmp/dump.bin
+  end
+
+  # alias for above hexdump
+  define hd
+  dump memory /tmp/dump.bin $arg0 $arg0+$arg1
+  shell hexdump -C /tmp/dump.bin
+  end
+  ```
+- > 如果是不想退出的话，可以参考 https://stackoverflow.com/questions/5941158/gdb-print-to-file-instead-of-stdout ，设置 gdb 把输出写进文件里，之后打印文件什么的应该就没啥困难的了
+- > 还有个方法，shell 里执行 script，会把 shell 的所有输出输出到文件
+
+求助一个 crontab 的时间的写法 https://www.v2ex.com/t/692249
+- > https://crontab.guru/
+- > crontab 好像只支持到分钟级的时间粒度。我推荐你另一个定时器：ofelia
+- > 忘记上链接了： https://github.com/mcuadros/ofelia <br> ofelia 支持秒级时间粒度，以及丰富的 schedule 时间语法。但你不会 docker 的话，你可能需要花费点时间，研究怎么去安装他
+
 Linux 可以不可以创建一个除了不叫 root 但是什么都和 root 一样的用户呢？ https://www.v2ex.com/t/691074
 
 真的是无语！平时使用的一个测试机器，新招了个人使用了： sudo chmod -R 777 /usr/bin/ 这个命令，真的是秀 https://www.v2ex.com/t/690945

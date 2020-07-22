@@ -1,4 +1,6 @@
 
+求问各位 V 友 PG 库的批量插入问题 https://www.v2ex.com/t/692169
+
 这两种 sql 写法有什么区别么？把查询结果当做临时 table 来查会更快么？ https://www.v2ex.com/t/687580
 
 MySQL 是这样实现可重复读的 https://www.v2ex.com/t/687341
