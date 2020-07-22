@@ -22,6 +22,10 @@ IBM Multicloud Manager configuration overview https://www.ibm.com/support/knowle
 
 Importing a target managed cluster to the IBM Multicloud Manager hub cluster https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.0/mcm/installing/install_k8s_cloud.html
 
+## LDAP
+
+Add users to a team https://www-03preprod.ibm.com/support/knowledgecenter/en/SSBS6K_3.2.1/user_management/add_user.html
+
 ## 使用指南
 
 IBM Cloud Private 3.1.2 -- CLI tools guide https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.1.2/manage_cluster/cli_guide.html
