@@ -62,6 +62,8 @@
 
 # 生活信息
 
+看到最近很多买房贴, 身为回龙观北漂说说自己的看法。 https://www.v2ex.com/t/692449
+
 7 年前在 V2EX 找到毕业后的第一份工作，这里分享一下不会日语的应届生在日本工作的经验 https://www.v2ex.com/t/679705
 > 不会日语，毕业之后去日本工作的有趣体验 https://mp.weixin.qq.com/s/K7uZO-WZyf0t2afRakSN8Q
 
