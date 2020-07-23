@@ -177,7 +177,7 @@ Kubernetes Nginx Ingress 教程 https://mritd.me/2017/03/04/how-to-use-nginx-ing
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## kubernetesw网络之DNS
+## kubernetes网络之DNS
 
 DNS for Services and Pods https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
 
@@ -188,6 +188,20 @@ An Introduction to the Kubernetes DNS Service https://www.digitalocean.com/commu
 Debugging DNS Resolution https://v1-17.docs.kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
 
 Pod 与 Service 的 DNS https://v1-17.docs.kubernetes.io/zh/docs/concepts/services-networking/dns-pod-service/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## kubernetes网络之Pause Container
+
+The Almighty Pause Container https://www.ianlewis.org/en/almighty-pause-container
+
+What are the pause containers? https://stackoverflow.com/questions/48651269/what-are-the-pause-containers
+- > The 'pause' container is a container which holds the network namespace for the pod. Kubernetes creates pause containers to acquire the respective pod’s IP address and set up the network namespace for all other containers that join that pod.
+- > You can access below links for details.
+  * > https://groups.google.com/forum/#!topic/kubernetes-users/jVjv0QK4b_o
+  * > https://www.ianlewis.org/en/almighty-pause-container
+
+Kubernetes Networking: Behind the scenes https://itnext.io/kubernetes-networking-behind-the-scenes-39a1ab1792bb
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
