@@ -17,6 +17,12 @@ Developing on OpenShift https://developers.redhat.com/courses/openshift/
 
 Learn Cloud Native Computing Foundation Landscape using Interactive Browser-Based Scenarios https://www.katacoda.com/courses/cloud-native-computing-foundation
 
+## CRI-O
+
+Getting Started With CRI-O and Kubeadm https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm-crio
+- > Because CRI-O is built for Kubernetes it means there are no Pause containers. This is just one of the many advantages of having a container runtime designed for Kubernetes.
+- > The Container Network Interface (CNI) defines how the different nodes and their workloads should communicate. There are multiple network providers available, some are listed [here](https://kubernetes.io/docs/concepts/cluster-administration/addons/).
+
 # HashiCorp
 
 HashiCorp enables orgs to provision, secure, & run any infrastructure for any application. The Suite includes Vagrant, Packer, Terraform, Vault, Nomad & Consul. https://www.katacoda.com/hashicorp
