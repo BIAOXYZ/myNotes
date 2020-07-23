@@ -66,6 +66,7 @@ Importing a target managed cluster to the hub cluster https://www.ibm.com/suppor
 ## LDAP
 
 Onboarding LDAP users https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/icam/install_mcm_ldap.html
+- Configuring LDAP connection https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/iam/3.4.0/configure_ldap.html
 
 ## 问题解决
 
