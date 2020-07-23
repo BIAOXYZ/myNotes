@@ -193,7 +193,7 @@ Pod 与 Service 的 DNS https://v1-17.docs.kubernetes.io/zh/docs/concepts/servic
 
 ## kubernetes网络之Pause Container
 
-The Almighty Pause Container https://www.ianlewis.org/en/almighty-pause-container
+【[:star:][`*`]】 The Almighty Pause Container https://www.ianlewis.org/en/almighty-pause-container
 
 What are the pause containers? https://stackoverflow.com/questions/48651269/what-are-the-pause-containers
 - > The 'pause' container is a container which holds the network namespace for the pod. Kubernetes creates pause containers to acquire the respective pod’s IP address and set up the network namespace for all other containers that join that pod.
