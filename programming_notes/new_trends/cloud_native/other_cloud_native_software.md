@@ -93,8 +93,26 @@ heketi (Githubwiki) https://github.com/heketi/heketi/wiki
 
 # rook
 
-Ceph Storage Quickstart https://rook.io/docs/rook/v1.3/ceph-quickstart.html
-- Block Storage https://rook.io/docs/rook/v1.3/ceph-block.html 
+Quickstart:
+- Ceph Storage Quickstart https://rook.io/docs/rook/v1.3/ceph-quickstart.html
+  * > Deploy the Rook Operator
+  * > Create a Rook Ceph Cluster
+  * > Storage
+    + > Block Storage https://rook.io/docs/rook/v1.3/ceph-block.html
+    + > Shared Filesystem https://rook.io/docs/rook/v1.3/ceph-filesystem.html
+- Network Filesystem (NFS) https://rook.io/docs/rook/v1.3/nfs.html
+
+```sh
+# 在OCP上的实战。第二步建operator时，OCP应该用operator-openshift.yaml，而不是operator.yaml。
+
+export KUBEADMINPASSWD=orw6b-Bnj2g-MPJov-TwWKi
+oc login -u kubeadmin -p $KUBEADMINPASSWD --server=https://api.oprinstall.cp.fyre.ibm.com:6443 --insecure-skip-tls-verify=true
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/common.yaml
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/operator-openshift.yaml
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/cluster.yaml
+sleep 5s && oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/manually/storageclass.yaml
+kubectl patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```
 
 OpenShift https://rook.io/docs/rook/v1.1/openshift.html
 
