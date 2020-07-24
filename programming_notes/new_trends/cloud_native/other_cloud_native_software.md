@@ -98,12 +98,15 @@ heketi (Githubwiki) https://github.com/heketi/heketi/wiki
   * > Deploy the Rook Operator
   * > Create a Rook Ceph Cluster
   * > Storage
-    + > Block Storage https://rook.io/docs/rook/v1.3/ceph-block.html
-    + > Shared Filesystem https://rook.io/docs/rook/v1.3/ceph-filesystem.html
+    + > [Block Storage] (https://rook.io/docs/rook/v1.3/ceph-block.html)   【1】
+    + > [Shared Filesystem] (https://rook.io/docs/rook/v1.3/ceph-filesystem.html)   【2】
 - Network Filesystem (NFS) https://rook.io/docs/rook/v1.3/nfs.html
 
 ```sh
-# 在OCP上的实战。第二步建operator时，OCP应该用operator-openshift.yaml，而不是operator.yaml。
+# 在OCP上的实战。需注意一下几点：
+# 第二步建operator时，OCP应该用operator-openshift.yaml，而不是operator.yaml。
+# storageclass.yaml是我从【1】里复制下来的，但是其实直接用下面文件是一样的：
+    `仓库根目录/cluster/examples/kubernetes/ceph/csi/rbd/storageclass.yaml`
 
 export KUBEADMINPASSWD=orw6b-Bnj2g-MPJov-TwWKi
 oc login -u kubeadmin -p $KUBEADMINPASSWD --server=https://api.oprinstall.cp.fyre.ibm.com:6443 --insecure-skip-tls-verify=true
@@ -114,7 +117,19 @@ sleep 5s && oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/
 kubectl patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
+```sh
+# 登陆那句就直接省略了。
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/common.yaml
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/operator-openshift.yaml
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/cluster.yaml
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/csi/cephfs/storageclass.yaml
+oc patch storageclass rook-cephfs -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+#// 这里后来发现还得创建下面这个才行。
+oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/filesystem.yaml
+```
+
 ***`Ceph Storage`***:
+- Shared Filesystem https://rook.io/docs/rook/v1.3/ceph-filesystem.html
 - Ceph CSI Drivers https://rook.io/docs/rook/v1.3/ceph-csi-drivers.html
 
 ***`Ceph Tools`***:
