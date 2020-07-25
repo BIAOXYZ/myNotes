@@ -1,4 +1,6 @@
 
+【这是个反面教材。。。】 分享一行 Python 代码 `reduce(add, zip(nums[:n], nums[n:]))` - 来自解决 Leetcode #1470. Shuffle the Array 一题 https://www.v2ex.com/t/693010
+
 [第 7 期] 盘点那些面试中会被问到的链表算法题 https://www.v2ex.com/t/659761
 
 [第 5 期] 算法精选-你应该知道的 KMP 算法 https://www.v2ex.com/t/652852
