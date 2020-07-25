@@ -32,8 +32,10 @@ QuickSelect Algorithm Understanding https://stackoverflow.com/questions/10846482
 
 记忆化搜索与动态规划等价吗？ - 知乎 https://www.zhihu.com/question/60730045
 
-四种解法+详细图解 198. 打家劫舍 https://leetcode-cn.com/problems/house-robber/solution/si-chong-jie-fa-xiang-xi-tu-jie-198-da-jia-jie-she/
+`四种解法+详细图解 198. 打家劫舍` https://leetcode-cn.com/problems/house-robber/solution/si-chong-jie-fa-xiang-xi-tu-jie-198-da-jia-jie-she/
 
-暴力搜索->记忆化搜索->动态规划 https://leetcode-cn.com/problems/integer-break/solution/bao-li-sou-suo-ji-yi-hua-sou-suo-dong-tai-gui-hua-/
+`暴力搜索->记忆化搜索->动态规划` https://leetcode-cn.com/problems/integer-break/solution/bao-li-sou-suo-ji-yi-hua-sou-suo-dong-tai-gui-hua-/
+
+`329. 矩阵中的最长递增路径` https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
