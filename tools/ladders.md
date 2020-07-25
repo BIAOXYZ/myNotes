@@ -5,6 +5,12 @@
 
 翻墙方法简介 https://wordpresshi.com/shawdowsocks-centos/
 
+# VPN
+
+Security you can rely on. A name you can trust. https://vpn.mozilla.org/
+- > Available in 6 countries now. More regions coming soon.
+  * > We currently offer Mozilla VPN in the US, the UK, Canada, New Zealand, Singapore and Malaysia.
+
 # DNS
 
 Simple DNSCrypt https://www.simplednscrypt.org/
