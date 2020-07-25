@@ -41,6 +41,8 @@
 
 七分钟理解什么是 KMP 算法 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/76348091
 
+KMP（上篇） https://www.geekxh.com/1.3.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B3%BB%E5%88%97/306.html || https://github.com/geekxh/hello-algorithm/blob/616111986ba9e41618dd2aadd3323033026576ce/website/1.3.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B3%BB%E5%88%97/306.md
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Boyer-Moore
