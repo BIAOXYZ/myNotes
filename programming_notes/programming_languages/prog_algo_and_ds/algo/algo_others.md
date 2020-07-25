@@ -23,3 +23,17 @@ QuickSelect: The Quick Select Algorithm Explained With Code Examples https://www
 Quickselect Algorithm https://www.geeksforgeeks.org/quickselect-algorithm/
 
 QuickSelect Algorithm Understanding https://stackoverflow.com/questions/10846482/quickselect-algorithm-understanding
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 记忆化搜索
+
+记忆化搜索 https://oi-wiki.org/dp/memo/
+
+记忆化搜索与动态规划等价吗？ - 知乎 https://www.zhihu.com/question/60730045
+
+四种解法+详细图解 198. 打家劫舍 https://leetcode-cn.com/problems/house-robber/solution/si-chong-jie-fa-xiang-xi-tu-jie-198-da-jia-jie-she/
+
+暴力搜索->记忆化搜索->动态规划 https://leetcode-cn.com/problems/integer-break/solution/bao-li-sou-suo-ji-yi-hua-sou-suo-dong-tai-gui-hua-/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
