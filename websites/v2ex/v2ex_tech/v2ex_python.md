@@ -1,4 +1,6 @@
 
+《捕蛇者说》16 期发布： Goodbye Python 2, Hello Python 3！ https://www.v2ex.com/t/693282
+
 有在线编写 Python 代码并能执行的开源项目吗 https://www.v2ex.com/t/692173
 - > IBM Cloud Fonudray 和 Github Action 可以去看一下。
 - > Polynote
