@@ -66,6 +66,8 @@ Python nonlocal statement https://stackoverflow.com/questions/1261875/python-non
 
 # `@`装饰器
 
+`7. Decorators` https://book.pythontips.com/en/latest/decorators.html || https://github.com/yasoob/intermediatePython/blob/master/decorators.rst
+
 Python 函数装饰器 https://www.runoob.com/w3cnote/python-func-decorators.html
 
 12步教你理解Python装饰器 https://foofish.net/python-decorator-12.html
