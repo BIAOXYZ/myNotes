@@ -15,6 +15,6 @@ How does Lru_cache (from functools) Work? https://stackoverflow.com/questions/49
   
 Python 缓存机制与 functools.lru_cache http://kuanghy.github.io/2016/04/20/python-cache
   
-functools.lru_cache装饰器详解 https://blog.csdn.net/u012745215/article/details/78506022
+【[:star:][`*`]】 functools.lru_cache装饰器详解 https://blog.csdn.net/u012745215/article/details/78506022
 
 Python Functools – lru_cache() https://www.geeksforgeeks.org/python-functools-lru_cache/
