@@ -64,6 +64,14 @@ Python nonlocal statement https://stackoverflow.com/questions/1261875/python-non
   # global: 2
   ```
 
+# `@`装饰器
+
+Python 函数装饰器 https://www.runoob.com/w3cnote/python-func-decorators.html
+
+12步教你理解Python装饰器 https://foofish.net/python-decorator-12.html
+
+python @property的用法及含义全面解析 https://www.jb51.net/article/134148.htm
+
 # 函数和类的嵌套
 
 ## nested function
