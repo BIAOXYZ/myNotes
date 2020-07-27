@@ -33,6 +33,8 @@ calculating: 2 + 3
 5
 ```
 - > 从结果可以看出，当第二次调用 add(1, 2) 时，并没有真正执行函数体，而是直接返回缓存的结果。
+- > 如果要在 Python 2 中使用 lru_cahce 需要安装第三方模块 `functools32`。还有一个用 C 语言实现的，更快的，同时兼容 Python2 和 Python3 的第三方模块 `fastcache` 能够实现同样的功能，且其能支持 TTL。
+- > 此外，还有一些其他的缓存模块，如 `cachelib`, `cacheout` 等等，实际使用需要时可以按需求去选择合适的缓存实现。
   
 【[:star:][`*`]】 functools.lru_cache装饰器详解 https://blog.csdn.net/u012745215/article/details/78506022
 
