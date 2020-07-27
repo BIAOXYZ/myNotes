@@ -102,11 +102,13 @@ heketi (Githubwiki) https://github.com/heketi/heketi/wiki
     + > [Shared Filesystem] (https://rook.io/docs/rook/v1.3/ceph-filesystem.html)   【2】
 - Network Filesystem (NFS) https://rook.io/docs/rook/v1.3/nfs.html
 
+
+个人实战1：安装rook-ceph block类型的存储（`RWO`型的）。
 ```sh
 # 在OCP上的实战。需注意一下几点：
 # 第二步建operator时，OCP应该用operator-openshift.yaml，而不是operator.yaml。
 # storageclass.yaml是我从【1】里复制下来的，但是其实直接用下面文件是一样的：
-    `仓库根目录/cluster/examples/kubernetes/ceph/csi/rbd/storageclass.yaml`
+    `仓库根目录(也就是rook)/cluster/examples/kubernetes/ceph/csi/rbd/storageclass.yaml`
 
 export KUBEADMINPASSWD=orw6b-Bnj2g-MPJov-TwWKi
 oc login -u kubeadmin -p $KUBEADMINPASSWD --server=https://api.oprinstall.cp.fyre.ibm.com:6443 --insecure-skip-tls-verify=true
@@ -117,8 +119,9 @@ sleep 5s && oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/
 kubectl patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
+个人实战2：安装rook-cephfs类型的存储（`RWX`型的）。
 ```sh
-# 登陆那句就直接省略了。
+# 登陆那两句（一个export，一个oc login，参见上面部分）就直接省略了。
 oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/common.yaml
 oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/operator-openshift.yaml
 oc create -f ~/mcminstall-operator/rook/cluster/examples/kubernetes/ceph/cluster.yaml
