@@ -357,6 +357,10 @@ Kubernetes-基于StorageClass的动态存储供应 https://www.kubernetes.org.cn
 pod has unbound PersistentVolumeClaims https://stackoverflow.com/questions/52668938/pod-has-unbound-persistentvolumeclaims
 - > When using storageClass Kubernetes is going to enable "Dynamic Volume Provisioning" which is not working with the local file system.
 
+### RWX型PV
+
+How To Set Up ReadWriteMany (RWX) Persistent Volumes with NFS on DigitalOcean Kubernetes https://www.digitalocean.com/community/tutorials/how-to-set-up-readwritemany-rwx-persistent-volumes-with-nfs-on-digitalocean-kubernetes
+
 ## kubernetes PodDisruptionBudget (PDB)
 
 【from官方】：
