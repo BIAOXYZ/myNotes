@@ -14,6 +14,25 @@ Every Python Programmer Should Know LRU_cache From the Standard Library https://
 How does Lru_cache (from functools) Work? https://stackoverflow.com/questions/49883177/how-does-lru-cache-from-functools-work
   
 Python 缓存机制与 functools.lru_cache http://kuanghy.github.io/2016/04/20/python-cache
+```py3
+from functools import lru_cache
+
+@lru_cache(None)
+def add(x, y):
+    print("calculating: %s + %s" % (x, y))
+    return x + y
+
+print(add(1, 2))
+print(add(1, 2))
+print(add(2, 3))
+--------------------------------------------------
+calculating: 1 + 2
+3
+3
+calculating: 2 + 3
+5
+```
+- > 从结果可以看出，当第二次调用 add(1, 2) 时，并没有真正执行函数体，而是直接返回缓存的结果。
   
 【[:star:][`*`]】 functools.lru_cache装饰器详解 https://blog.csdn.net/u012745215/article/details/78506022
 
