@@ -21,3 +21,11 @@ Company NameManageIQ, Inc.
 ...
 ManageIQ was acquired by Red Hat in December 2012.
 ```
+
+# CloudForms
+
+## [CloudForms & ManageIQ Automation How-To Guide] (https://legacy.gitbook.com/book/pemcg/introduction-to-cloudforms-automation/details)
+
+Provisioning a VM https://pemcg.gitbooks.io/introduction-to-cloudforms-automation/content/chapter15/vm_provisioning.html
+
+Example - Creating a Service Catalog Bundle https://pemcg.gitbooks.io/introduction-to-cloudforms-automation/content/chapter17/creating_a_service_bundle.html
