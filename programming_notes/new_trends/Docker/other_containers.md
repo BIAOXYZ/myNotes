@@ -3,11 +3,36 @@
 
 【[`*`][:star:]】 白话 Kubernetes Runtime https://mp.weixin.qq.com/s/8RvbcvWFSq1snfLorLyhEA || https://aleiwu.com/post/cncf-runtime-landscape/ || https://zhuanlan.zhihu.com/p/58784095
 
+Container runtimes: clarity https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3
+- > As a maintainer of the CRI-O container runtime for kubernetes I often get asked the following questions at conferences and meetups:
+  ```
+  Is CRI-O a replacement for Docker?
+  Is containerd a replacement for CRI-O?
+  ```
+
+Docker vs CRI-O vs Containerd https://computingforgeeks.com/docker-vs-cri-o-vs-containerd/
+
+Why Red Hat is investing in CRI-O and Podman https://www.redhat.com/en/blog/why-red-hat-investing-cri-o-and-podman
+
+A Comprehensive Container Runtime Comparison https://www.capitalone.com/tech/cloud/container-runtime/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# OCI
+# OCI and CRI
+
+>> //notes：最大的区别是：OCI纯是container社区搞的；而CRI是kubernetes社区搞的，并且还有CNI、CSI等。
+
+Welcome To The Container Jungle: Docker vs. containerd vs. Nabla vs. Kata vs. Firecracker and more! https://www.inovex.de/blog/containers-docker-containerd-nabla-kata-firecracker/
+
+## OCI (Open Container Initiative)
 
 Open Container Initiative https://en.wikipedia.org/wiki/Open_Container_Initiative
+
+## CRI (Container Runtime Interface)
+
+Introducing Container Runtime Interface (CRI) in Kubernetes https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/
+
+An overview of the Kubernetes Container Runtime Interface (CRI) https://developer.ibm.com/technologies/containers/blogs/kube-cri-overview/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
