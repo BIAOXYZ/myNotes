@@ -29,6 +29,20 @@ Simple DNSCrypt https://www.simplednscrypt.org/
 
 公共 DNS 性能大比拼：1.1.1.1 vs 8.8.8.8 vs 9.9.9.9 https://mp.weixin.qq.com/s/-Hj8zhe0vujQQlePkNDbhw
 
+## DoH and DoT
+
+腾讯云 DNS 方案 DoH 和 DoT 开始公测 https://www.ithome.com/0/499/992.htm
+- > DoT 全称是 DNS over TLS，它使用 TLS 协议来传输 DNS 协议。TLS 协议是目前互联网最常用的安全加密协议之一，我们访问 HTTPs 的安全基础就是基于 TLS 协议的。相比于之前使用无连接无加密的 UDP 模式，TLS 本身已经实现了保密性与完整性。
+- > DoH 全称是 DNS over HTTPs，它使用 HTTPs 来传输 DNS 协议。DoH 的安全原理与 DoT 一样，他们之间的区别只在于：DoH 有了 HTTP 格式封装，更加通用。
+- > PC 端教程：
+  * > 让 DNSPod 保护您的网页安全也非常简单，如果您使用的是 Chrome 浏览器（83 及以上），只需要在 Chrome 浏览器的设置项中设置好 DNS 访问安全选项即可。操作步骤如下：
+    ```console
+    进入到 Chrome 浏览器设置页面，在设置搜索框中搜索 DNS。
+
+    1：点击搜索结果中的 “安全”，往下拉，就能看到 DNS 安全设置。
+    2：输入 DNS 安全服务提供商地址：https://doh.pub/dns-query
+    ```
+  * > 使用 FireFox 也可轻松设置，与 Chrome 步骤类似。进入到设置页面，搜索 “dns”，点击 “网络设置”，下拉后勾选 “DNS over HTTPS“，输入 DNS 安全服务商地址 https://doh.pub/dns-query 即可。
 
 # hosts
 
