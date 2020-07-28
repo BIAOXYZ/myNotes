@@ -34,6 +34,10 @@ Get Started https://www.manageiq.org/docs/get-started/
 
 # CloudForms书籍
 
+## [Mastering CloudForms Automation] (https://learning.oreilly.com/library/view/mastering-cloudforms-automation/9781491957219/)
+
+Chapter 1. Introduction to CloudForms https://learning.oreilly.com/library/view/mastering-cloudforms-automation/9781491957219/ch01.html
+
 ## [CloudForms & ManageIQ Automation How-To Guide] (https://legacy.gitbook.com/book/pemcg/introduction-to-cloudforms-automation/details)
 
 Provisioning a VM https://pemcg.gitbooks.io/introduction-to-cloudforms-automation/content/chapter15/vm_provisioning.html
