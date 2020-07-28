@@ -22,6 +22,16 @@ Company NameManageIQ, Inc.
 ManageIQ was acquired by Red Hat in December 2012.
 ```
 
+# ManageIQ
+
+ManageIQ https://github.com/ManageIQ/manageiq
+
+Discover, Optimize, and Control your Hybrid IT https://www.manageiq.org/
+
+Get Started https://www.manageiq.org/docs/get-started/
+- https://www.manageiq.org/docs/get-started/docker
+- https://www.manageiq.org/docs/get-started/kubernetes.html
+
 # CloudForms书籍
 
 ## [CloudForms & ManageIQ Automation How-To Guide] (https://legacy.gitbook.com/book/pemcg/introduction-to-cloudforms-automation/details)
