@@ -41,6 +41,8 @@ RAID https://zh.wikipedia.org/wiki/RAID
 原来PCIe这么简单，一定要看！ https://mp.weixin.qq.com/s/41xHLInKiZh5-JM5G6cgNA
 - > 硬盘是大家都很熟悉的设备，一路走来，从HDD到SSD，从SATA到NVMe，作为NVMe SSD的前端接口，PCIe再次进入我们的视野。作为x86体系关键的一环，PCIe标准历经PCI，PCI-X和PCIe，走过近30年时光。其中Host发现与查找设备的方式却一脉沿袭，今天我们先来聊一聊PCIe设备在一个系统中是如何发现与访问的。
 
+关于存储技术的入门科普 https://www.ithome.com/0/500/495.htm
+
 ## disk
 
 硬盘基本知识（磁头、磁道、扇区、柱面） https://www.cnblogs.com/jswang/p/9071847.html
