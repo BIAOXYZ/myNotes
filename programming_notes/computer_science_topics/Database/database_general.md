@@ -17,6 +17,9 @@ DB Weekly https://dbweekly.com/
 
 Postgres Weekly https://postgresweekly.com/
 
+# DB books
+
+db-readings https://github.com/rxin/db-readings
 
 # DB from zhihu
 
