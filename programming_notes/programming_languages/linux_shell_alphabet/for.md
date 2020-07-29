@@ -130,3 +130,48 @@ go vet ./cmd/... ./pkg/...
 ...
 ...
 ```
+```sh
+# 但是其实如果测试通过并且代码没有改动，会用缓存的结果（但是我也碰到过前面正确，后面又跑出临时错误的情况）。
+# 所以推荐用下面的语句 `go test -count=1 ./pkg/...` 来代替 `make test`。其中起到不缓存作用的主要是`-count=1`
+
+[root@lolls-inf hybridapp-operator]# for i in {1..150}; do echo -e "***** TEST $i *****"; date; echo -e "\n"; go test -count=1 ./pkg/...; done
+***** TEST 1 *****
+Mon Jul  6 00:14:38 PDT 2020
+
+
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis      [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis/app  [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis/app/v1alpha1 [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller        [no test files]
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/cluster        10.865s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmchannel     11.864s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmdeployable  17.318s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmplacementrule       13.241s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmsubscription        16.990s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhchannel      11.372s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhdeployable   16.919s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhplacementrule        12.399s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhsubscription 15.026s
+***** TEST 2 *****
+Mon Jul  6 00:16:21 PDT 2020
+
+
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis      [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis/app  [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/apis/app/v1alpha1 [no test files]
+?       github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller        [no test files]
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/cluster        9.963s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmchannel     11.067s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmdeployable  17.589s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmplacementrule       14.054s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/ibmsubscription        15.741s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhchannel      10.608s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhdeployable   18.540s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhplacementrule        12.556s
+ok      github.ibm.com/IBMPrivateCloud/hybridapp-operator/pkg/controller/rhsubscription 16.596s
+***** TEST 3 *****
+Mon Jul  6 00:18:16 PDT 2020
+...
+...
+...
+```
