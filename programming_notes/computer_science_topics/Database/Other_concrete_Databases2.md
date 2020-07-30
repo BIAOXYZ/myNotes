@@ -99,6 +99,8 @@ GaussDB（openGauss）宣布将开源，性能超越 MySQL 与 PostgreSQL https:
 
 华为GaussDB数据库真的要开源啦！！！ https://www.modb.pro/db/6667
 
+如何看待华为6月30日开源的自研数据库gaussDB？ - 知乎 https://www.zhihu.com/question/404342049
+
 ### 其他
 
 华为openGauss gaussdb https://www.modb.pro/db/30882
