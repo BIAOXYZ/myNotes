@@ -1,4 +1,8 @@
 
+crontab 的 week 位置给定 */2 该如何理解？ https://www.v2ex.com/t/694438
+
+求问 怎么让 Linux hung 住几分钟？ https://www.v2ex.com/t/694281
+
 求问 Linux gdb 有什么命令可以直接把 memory dump 传递到打印机打印到纸上么？ https://www.v2ex.com/t/692088
 - > 据我所知 gdb 支持 python/shell 扩展，楼主可以想一下怎么自己实现打印，贴一下我的部分配置：
   ```
