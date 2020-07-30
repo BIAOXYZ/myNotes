@@ -19,6 +19,12 @@ lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像l
 
 # 脉脉算法与数据结构
 
+面试腾讯被问了红黑树和tarjan算法，果然还是我太弱。感觉找工作leetcode都已经不够了，得把算法导论拿出来。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY4NDIxNjMsImlhdCI6MTU5NjA5MDkxMn0.OzrBEUmVsWxa3KhREQR8r3oMnF2BMt4-6ITSv5enKDM
+- > 这个有点难，不背很容易写错。如果只要求强联通分量的话，用kosaruju算法很容易写对，也是On复杂度，应该也可以过
+
+算法菜鸡，问个算法题，知道的老哥回答一下：一个单向链表，要求相邻节点的值如果重复，则进行消除。要求空间复杂度O1，时间复杂度不高于N^2。输入abbcb 返回acb。输入abba 返回null https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY4NDI1MzAsImlhdCI6MTU5NjA5MTE0OX0.ahzQGndqX3Pf93swgRjOTfZ-Yg_YR2oVRiw5D6tnMDc
+- > 一边遍历一边反转链表当一个栈来用 最后再整体反转
+
 今天做了BFS相关的6道medium，实在是有点忙。。明天希望有时间能补上，题目是102/103/279/429/542/863…如果有一起练习的朋友，也一起坚持吧~6/2/2020 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzMzY1NDgsImlhdCI6MTU5MTE1ODUxMn0.IwQec7C94WemC_s5AwoA-b-ZrOnbTyBAQ65T8fhHecI
 
 leetcode第85题最大矩形，对着题干瞪眼一晚上，心态要崩 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU1NzMyNjQsImlhdCI6MTU4NTIxMTQ4Nn0.9fpBl4A5y6yG56Cdbi6-L4X3alNGk5gBl9FD9HgrGwY
