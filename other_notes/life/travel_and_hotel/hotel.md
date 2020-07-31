@@ -143,6 +143,8 @@ ASCOTT https://www.the-ascott.com/
 
 雅诗阁中国 https://www.ascottchina.com/
 
+长期入住 https://www.somerset.com/zh/extended-stay.html
+
 ## 下辖酒店
 
 西安盛捷新地城服务公寓 https://www.somerset.com/zh/china/xian/somerset-xindicheng-xian.html
