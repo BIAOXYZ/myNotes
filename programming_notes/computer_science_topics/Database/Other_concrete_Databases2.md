@@ -7,6 +7,13 @@ OceanBase、X-DB、POLARDB 分布式关系型数据库，各自的优势是什�
 
 A distributed, shared-nothing relational database https://github.com/alibaba/oceanbase
 
+浙江移动正式采用蚂蚁集团自研数据库 OceanBase https://www.ithome.com/0/500/810.htm
+```
+我是DJ你还 2020/7/31 12:35:32
+回复3# T型人类：和谐zhuanlan和谐zhihu和谐com/p/146613255
+```
+> 为什么说OceanBase在关键领域不可能替代Oracle - Deep Blue的文章 - 知乎 https://zhuanlan.zhihu.com/p/146613255
+
 ### OB TPCC测试超Oracle事件
 
 - 里程碑式反超！中国自研数据库超越Oracle登顶全球第一 https://mp.weixin.qq.com/s/BgOD_r3o65pqySPVNgFjWQ
