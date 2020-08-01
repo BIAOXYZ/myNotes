@@ -36,6 +36,8 @@ CPack 入门指南 https://www.v2ex.com/t/673146
 
 # felix021
 
+又是面试题？对，合并有序序列。 https://www.v2ex.com/t/694829
+
 Go: 关于锁的 1234 https://www.v2ex.com/t/693107
 
 踩坑记： Go 服务灵异 panic https://www.v2ex.com/t/691145
