@@ -51,6 +51,8 @@ GitHub 仓库浏览计数，仅累计访问总次数（无去重）。 https://g
 <a title="Hits" target="_blank" href="https://github.com/b3log/hits"><img src="https://hits.b3log.org/b3log/hits.svg"></a>
 ```
 
+Manage Gravatars https://en.gravatar.com/emails/  -->  Gravatar被WordPress收购了好像，但是头像还是用这个方便啊。。。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Github Topic
