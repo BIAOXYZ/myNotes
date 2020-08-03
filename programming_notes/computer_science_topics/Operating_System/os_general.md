@@ -1,4 +1,8 @@
 
+# OS Book
+
+《用 “芯”探核： 基于龙芯的 Linux 内核探索解析》将在 8 月上旬推出 https://www.ithome.com/0/501/140.htm
+
 # OS general
 
 开源版“Windows 操作系统” ReactOS 0.4.9 版发布 - 软件和应用 - cnBeta.COM
