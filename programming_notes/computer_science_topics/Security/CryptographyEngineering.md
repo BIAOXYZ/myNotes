@@ -3,6 +3,9 @@ Auditing Applied Cryptography https://github.com/mimoo/cryptobible
 > 这个里面有一些我感觉算是偏密码工程的东西，比如RSA-OAEP是否安全等：https://github.com/mimoo/cryptobible/blob/master/www/primitives/asymmetric_encryption.md
 
 Awesome Cryptography -- A curated list of cryptography resources and links. https://github.com/sobolevn/awesome-cryptography
+- > Awesome crypto-papers – A curated list of cryptography papers, articles, tutorials and howtos. https://github.com/pFarb/awesome-crypto-papers
+- > Awesome HE – A curated list of homomorphic encryption libraries, software and resources. https://github.com/jonaschn/awesome-he
+- > Cryptography Playground - A simple web tool to play and learn basic concepts of cryptography like, hashing, symmetric, asymmetric, zkp etc. https://vishwas1.github.io/crypto/index.html#/crypto
 
 # SSL or TLS attack
 
