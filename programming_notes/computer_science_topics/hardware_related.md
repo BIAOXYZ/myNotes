@@ -43,6 +43,8 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 关于存储技术的入门科普 https://www.ithome.com/0/500/495.htm
 
+干货科普：大火的「对象存储」到底是什么 https://www.ithome.com/0/501/133.htm
+
 ## disk
 
 硬盘基本知识（磁头、磁道、扇区、柱面） https://www.cnblogs.com/jswang/p/9071847.html
