@@ -1,4 +1,6 @@
 
+大佬们求救，慢 SQL 问题 https://www.v2ex.com/t/695266
+
 MySQL 可重复读隔离级别下是否解决了幻读问题 https://www.v2ex.com/t/692386
 
 求问各位 V 友 PG 库的批量插入问题 https://www.v2ex.com/t/692169

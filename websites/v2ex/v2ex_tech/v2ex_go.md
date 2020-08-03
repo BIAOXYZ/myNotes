@@ -1,4 +1,6 @@
 
+Go 中为啥喜欢这样创建变量 https://www.v2ex.com/t/695208
+
 golang 中使用 goto 跳出 if 语句 https://www.v2ex.com/t/692272
 
 为什么 Go 语言可以交叉编译，打包出目标平台二进制， Java 不行？ https://www.v2ex.com/t/690116

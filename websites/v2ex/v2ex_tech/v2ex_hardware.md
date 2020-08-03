@@ -1,4 +1,7 @@
 
+SSD 有风险，存储重要数据需谨慎。 https://www.v2ex.com/t/695160
+- > ![](https://i.imgur.com/YANIsVb.png)
+
 Linux 下如何关闭 CPU cache？ https://www.v2ex.com/t/691081
 
 Linux 内核如何在启动时配置参数到/sys/bus/pci/devices https://www.v2ex.com/t/684233

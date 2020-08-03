@@ -1,4 +1,6 @@
 
+在 python3 中, 字节流如何转换成字符串 https://www.v2ex.com/t/695185
+
 《捕蛇者说》16 期发布： Goodbye Python 2, Hello Python 3！ https://www.v2ex.com/t/693282
 
 有在线编写 Python 代码并能执行的开源项目吗 https://www.v2ex.com/t/692173
