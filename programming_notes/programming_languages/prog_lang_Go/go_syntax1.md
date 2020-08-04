@@ -112,6 +112,10 @@ Understanding the context package in golang http://p.agnihotry.com/post/understa
 
 Understanding init in Go https://www.digitalocean.com/community/tutorials/understanding-init-in-go
 
+init functions in Go https://medium.com/golangspec/init-functions-in-go-eac191b3860a
+
+Package initialization and program execution order https://yourbasic.org/golang/package-init-function-main-execution-order/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## defer, panic, recover
