@@ -1,7 +1,7 @@
 
 # General
 
-数据结构和算法的详细介绍(图片+文字详细说明)，请参考"wangkuiwu的博客" https://github.com/wangkuiwu/datastructs_and_algorithm || datastructure http://wangkuiwu.github.io/categories/#datastructure || 随笔分类 - 数据结构_算法 https://www.cnblogs.com/skywang12345/category/508186.html
+数据结构和算法的详细介绍(图片+文字详细说明)，请参考"wangkuiwu的博客" https://github.com/wangkuiwu/datastructs_and_algorithm || datastructure http://wangkuiwu.github.io/categories/#datastructure || 随笔分类 - 数据结构_算法 https://www.cnblogs.com/skywang12345/category/508186.html || 数据结构与算法系列 目录 https://www.cnblogs.com/skywang12345/p/3603935.html
 - 图的遍历之 深度优先搜索和广度优先搜索 https://www.cnblogs.com/skywang12345/p/3711483.html
 
 郭威gowill -- 数据结构和算法 https://blog.csdn.net/guoweimelon/article/category/6136821
