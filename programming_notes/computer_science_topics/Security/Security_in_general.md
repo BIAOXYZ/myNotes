@@ -1,6 +1,10 @@
 
-
 “玄魂工作室--安全圈” 知识星球内资源汇总 https://github.com/xuanhun/HackingResource
+
+# Security News
+
+Linux 基金会联合厂商成立开源安全基金会 https://www.ithome.com/0/501/388.htm
+- > OpenSSF 的成员来自核心基础设施联盟 (Core Infrastructure Initiative)、GitHub 开源安全联盟和和其他创始董事会成员，例如 GitHub、Google、IBM、摩根大通、微软、NCC 集团、OWASP 基金会 和 Red Hat。其他创始成员还包括 ElevenPaths, GitLab, HackerOne, Intel, Okta, Purdue, SAFECode, StackHawk, Trail of Bits, Uber 和 VMware。
 
 ## FreeBuf
 
