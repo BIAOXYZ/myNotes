@@ -20,6 +20,13 @@ OrderedDict in Python https://www.geeksforgeeks.org/ordereddict-in-python/
 - > **Other Considerations**:
   * > Ordered dict in Python version 2.7 consumes more memory than normal dict. This is due to the underlying Doubly Linked List implementation for keeping the order. In Python 2.7 Ordered Dict is not dict subclass, it’s a specialized container from collections module.
   * > Starting from Python 3.7, insertion order of Python dictionaries is guaranteed.
+  * > Ordered Dict can be used as a stack with the help of `popitem` function. Try implementing LRU cache with Ordered Dict.
+
+OrderedDict 是如何保证 Key 的插入顺序的 https://old-panda.com/2020/02/09/python-ordereddict/
+
+Python OrderedDict https://www.askpython.com/python-modules/python-ordereddict
+
+collections之OrderedDict - 程序员Egon老湿的文章 - 知乎 https://zhuanlan.zhihu.com/p/110407087
 
 # defaultdict
 
@@ -30,3 +37,5 @@ Defaultdict in Python https://www.geeksforgeeks.org/defaultdict-in-python/
 DefaultDict Tutorial https://www.hackerrank.com/challenges/defaultdict-tutorial/problem
 
 How does collections.defaultdict work? https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work
+
+Python Defaultdict – Int and List as a Default Factory https://data-flair.training/blogs/python-defaultdict/
