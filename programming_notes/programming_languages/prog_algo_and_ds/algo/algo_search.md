@@ -16,6 +16,8 @@
 
 Breadth-first search https://en.wikipedia.org/wiki/Breadth-first_search || 广度优先搜索 https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2
 
+Depth-first search https://en.wikipedia.org/wiki/Depth-first_search || 深度优先搜索 https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 其他链接
