@@ -106,6 +106,14 @@ Understanding the context package in golang http://p.agnihotry.com/post/understa
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+# go init()
+
+五分钟理解golang的init函数 - bloomingTony的文章 - 知乎 https://zhuanlan.zhihu.com/p/34211611
+
+Understanding init in Go https://www.digitalocean.com/community/tutorials/understanding-init-in-go
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## defer, panic, recover
 
 Defer, Panic, and Recover
