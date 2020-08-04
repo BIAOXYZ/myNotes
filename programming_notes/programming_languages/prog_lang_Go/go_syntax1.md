@@ -109,6 +109,13 @@ Understanding the context package in golang http://p.agnihotry.com/post/understa
 # go init()
 
 五分钟理解golang的init函数 - bloomingTony的文章 - 知乎 https://zhuanlan.zhihu.com/p/34211611
+- > 示例7：
+  ```go
+  import _ "net/http/pprof"
+  
+  golang对没有使用的导入包会编译报错，但是有时我们只想调用该包的init函数，不使用包导出的变量或者方法，这时就采用上面的导入方案。
+  执行上述导入后，init函数会启动一个异步协程采集该进程实例的资源占用情况，并以http服务接口方式提供给用户查询。
+  ```
 
 Understanding init in Go https://www.digitalocean.com/community/tutorials/understanding-init-in-go
 
