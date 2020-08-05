@@ -55,6 +55,12 @@ kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source
 - 深入理解 Kubernetes Admission Webhook https://www.qikqiak.com/post/k8s-admission-webhook/
 - Kubernetes Operator 快速入门教程 https://www.qikqiak.com/post/k8s-operator-101/
 
+Kubernetes 源码研习社 https://github.com/cloudnativeto/sig-k8s-source-code
+- Kubernetes 源码研习社一期 kickoff 回顾 https://mp.weixin.qq.com/s/fMNsXqwMImSicYsroMuOTQ || 【云原生学院】Kubernetes 源码研习会第一期 kickoff 视频 https://www.bilibili.com/video/BV1vh411Z7cb
+
+《k8s-1.13版本源码分析》上github https://www.cnblogs.com/cloudgeek/p/10391833.html
+- `My-documents/kubernetes源码分析/` https://github.com/wengangJi/My-documents/tree/0a9e7bb424a4c128e89bcea0aca6f06fbc5f0ee1/kubernetes%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # kubeadm相关源码/流程
