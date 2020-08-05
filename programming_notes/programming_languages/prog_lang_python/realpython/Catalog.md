@@ -18,3 +18,7 @@ The Python heapq Module: Using Heaps and Priority Queues https://realpython.com/
 Python Debugging With Pdb https://realpython.com/python-debugging-pdb/
 
 Using the Python defaultdict Type for Handling Missing Keys https://realpython.com/python-defaultdict/
+
+Python KeyError Exceptions and How to Handle Them https://realpython.com/python-keyerror/
+- > Learning how to read a Python traceback and understanding what it is telling you is crucial to improving as a Python programmer. To learn more on Python tracebacks, check out [Understanding the Python Traceback](https://realpython.com/python-traceback/).
+  >> Understanding the Python Traceback https://realpython.com/python-traceback/
