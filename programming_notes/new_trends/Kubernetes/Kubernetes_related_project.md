@@ -190,6 +190,12 @@ controller-runtime - Repo for the controller-runtime subproject of kubebuilder (
 
 Building your own kubernetes CRDs https://itnext.io/building-your-own-kubernetes-crds-701de1c9a161
 
+深入解析 Kubebuilder：让编写 CRD 变得更简单 https://developer.aliyun.com/article/719215
+
+使用kubebuilder开发kubernetes CRD https://juejin.im/post/6844903898222690311
+- > 注意你得先有个kubernetes集群，一步安装走你
+  >> 一条命令部署 Kubernetes 高可用集群 👋 https://github.com/fanux/sealos
+
 ## kind
 
 kubeadm-dind-cluster: A Kubernetes multi-node test cluster based on kubeadm https://github.com/kubernetes-sigs/kubeadm-dind-cluster
