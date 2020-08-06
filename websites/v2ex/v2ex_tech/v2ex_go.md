@@ -1,4 +1,12 @@
 
+[视频版]-Golang 深入理解 GMP https://www.v2ex.com/t/696070
+- > 视频版：典藏版-Golang深入理解GMP https://www.bilibili.com/video/BV1jT4y1j7Cd
+- > 文字版：[典藏版]Golang调度器GMP原理与调度全分析 https://www.jianshu.com/p/fa696563c38a
+- > 关于作者：
+  * > 原创书籍 gitbook: https://legacy.gitbook.com/@aceld
+- 其他：
+  * [典藏版]Golang调度器GMP原理与调度全分析 https://www.bilibili.com/read/cv5098443 【这个是在作者B站主页找到的，应该和简书版一样】
+
 Go 中为啥喜欢这样创建变量 https://www.v2ex.com/t/695208
 
 golang 中使用 goto 跳出 if 语句 https://www.v2ex.com/t/692272
