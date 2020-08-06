@@ -70,3 +70,20 @@ AC自动机算法 https://zh.wikipedia.org/wiki/AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7
 Why choose “BM algorithm” rather than “Sunday algorithm” in text editor's Find function? https://stackoverflow.com/questions/45473334/why-choose-bm-algorithm-rather-than-sunday-algorithm-in-text-editors-find-f
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 回文串 
+
+最长回文子串 https://zh.wikipedia.org/wiki/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2 || Longest palindromic substring https://en.wikipedia.org/wiki/Longest_palindromic_substring
+
+## Manacher algorithm
+
+`336. 回文对` https://leetcode-cn.com/problems/palindrome-pairs/solution/hui-wen-dui-by-leetcode-solution/
+- 方法二：字典树 + manacher
+
+老司机开车，教会女朋友什么是「马拉车算法」 https://www.cxyxiaowu.com/2665.html
+
+一文让你彻底明白马拉车算法 - windliang的文章 - 知乎 https://zhuanlan.zhihu.com/p/70532099
+
+有什么浅显易懂的Manacher Algorithm讲解？ - 知乎 https://www.zhihu.com/question/37289584
+
+Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 1 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
