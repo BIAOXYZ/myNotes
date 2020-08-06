@@ -85,16 +85,24 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-### `###` [Trie (Tree)](https://en.wikipedia.org/wiki/Trie) = Prefix Tree (前缀树)
+### `###` [Trie (Tree)](https://en.wikipedia.org/wiki/Trie) = Prefix Tree (前缀树) = 字典树
 
-- 看图轻松理解数据结构与算法系列(Trie树) https://juejin.im/post/5ba198ba5188255c7c6555c9
-- Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
+Trie https://zh.wikipedia.org/wiki/Trie || Trie https://en.wikipedia.org/wiki/Trie
+- > Trie这个术语来自于retrieval。根据词源学，trie的发明者Edward Fredkin把它读作/ˈtriː/ "tree"。但是，其他作者把它读作/ˈtraɪ/ "try"。
+
+字典树 (Trie) https://oi-wiki.org/string/trie/
+
+【动画】看动画轻松理解「Trie树」 https://juejin.im/post/6844903750490914829
+
+`208. 实现 Trie (前缀树)` https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+
+Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
 
 #### Patricia trie/tree = Radix tree (基数树)
 
 Radix tree https://en.wikipedia.org/wiki/Radix_tree || 基数树 https://zh.wikipedia.org/wiki/%E5%9F%BA%E6%95%B0%E6%A0%91
-- > In computer science, a radix tree (also radix trie or compact prefix tree) is a data structure that represents a space-optimized trie (prefix tree) in which each node that is the only child is merged with its parent. The result is that the number of children of every internal node is at most the radix r of the radix tree, where r is a positive integer and a power x of 2, having x ≥ 1. Unlike regular trees, edges can be labeled with sequences of elements as well as single elements. This makes radix trees much more efficient for small sets (especially if the strings are long) and for sets of strings that share long prefixes.
-- > 在计算机科学中，基数树（也叫基数特里树或压缩前缀树）是一种数据结构，是一种更节省空间的Trie（前缀树），其中作为唯一子节点的每个节点都与其父节点合并，边既可以表示为元素序列又可以表示为单个元素。 因此每个内部节点的子节点数最多为基数树的基数r ，其中r为正整数，x为2的幂，x≥1，这使得基数树更适用于对于较小的集合（尤其是字符串很长的情况下）和有很长相同前缀的字符串集合。 
+- > In computer science, a radix tree (also **radix trie** or **compact prefix tree**) is a data structure that represents a space-optimized [trie]() (prefix tree) in which each node that is the only child is merged with its parent. The result is that the number of children of every internal node is at most the radix r of the radix tree, where r is a positive integer and a power x of 2, having x ≥ 1. Unlike regular trees, edges can be labeled with sequences of elements as well as single elements. This makes radix trees much more efficient for small sets (especially if the strings are long) and for sets of strings that share long prefixes.
+- > 在计算机科学中，基数树（也叫**基数特里树**或**压缩前缀树**）是一种数据结构，是一种更节省空间的Trie（前缀树），其中作为唯一子节点的每个节点都与其父节点合并，边既可以表示为元素序列又可以表示为单个元素。 因此每个内部节点的子节点数最多为基数树的基数r ，其中r为正整数，x为2的幂，x≥1，这使得基数树更适用于对于较小的集合（尤其是字符串很长的情况下）和有很长相同前缀的字符串集合。 
 
 #### Merkle Patricia Tree
 
