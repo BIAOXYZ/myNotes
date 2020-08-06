@@ -96,7 +96,13 @@ Trie https://zh.wikipedia.org/wiki/Trie || Trie https://en.wikipedia.org/wiki/Tr
 
 `208. 实现 Trie (前缀树)` https://leetcode-cn.com/problems/implement-trie-prefix-tree/
 
-Trie树（Prefix Tree）介绍 https://blog.csdn.net/lisonglisonglisong/article/details/45584721
+pygtrie https://github.com/google/pygtrie || https://pypi.org/project/pygtrie/
+
+Trie | (Insert and Search) https://www.geeksforgeeks.org/trie-insert-and-search/
+
+python 实现 trie(字典) 树 https://blog.csdn.net/ANNILingMo/article/details/80879910
+
+Python实现简单字典树（Trie） https://www.jianshu.com/p/9dae246f6ff6
 
 #### Patricia trie/tree = Radix tree (基数树)
 
