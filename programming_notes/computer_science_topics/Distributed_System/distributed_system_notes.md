@@ -101,6 +101,8 @@ https://zhuanlan.zhihu.com/p/20872811
 
 Zab vs. Paxos https://cwiki.apache.org/confluence/display/ZOOKEEPER/Zab+vs.+Paxos
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Paxos实现
 
 C++ Paxos library that has been used in Wechat production environment. https://github.com/Tencent/phxpaxos
@@ -125,6 +127,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Raft实现
 
 一个Raft开源项目的结构分析 https://mp.weixin.qq.com/s/1_KAMAx6je8fLsMG1cM-wQ
@@ -143,3 +147,13 @@ LogCabin is a distributed storage system built on Raft that provides a small amo
 SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft
 
 蚂蚁金服开源 SOFAJRaft：生产级 Java Raft 算法库 https://mp.weixin.qq.com/s/pmbI_FyOJJyvg008amPutA
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# SnowFlake算法
+
+理解分布式id生成算法SnowFlake https://segmentfault.com/a/1190000011282426
+
+分布式唯一id：snowflake算法思考 https://juejin.im/post/6844903562007314440
+
+忘掉 Snowflake，感受一下性能高出 587 倍的全局唯一 ID 生成算法 https://juejin.im/post/6846687584324681735
