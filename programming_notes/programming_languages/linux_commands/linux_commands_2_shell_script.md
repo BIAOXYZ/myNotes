@@ -85,6 +85,10 @@ The Linux Command Line http://linuxcommand.org/
 
 Bash 教程 https://wangdoc.com/bash/ || https://github.com/wangdoc/bash-tutorial
 
+https://segmentfault.com/u/vvpale/articles
+- SHELL(bash)脚本编程一：变量 https://segmentfault.com/a/1190000008053195
+- SHELL(bash)脚本编程八：技巧 https://segmentfault.com/a/1190000008507953
+
 # shell脚本调试
 
 Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
