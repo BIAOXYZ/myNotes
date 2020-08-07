@@ -1,4 +1,8 @@
 
+今天开源了一个自己写的数据仓库原型 https://www.v2ex.com/t/696587
+- > 项目以 Rust 语言构建系统，C 语言提供运行时查询内核。目前原型提供两个命令行：baseops 做数据导入和表信息维护； baseshell 查询数据。查询现在可以提供整数类型列的简单 sum 聚合查询，能在 100 毫秒左右完成 15 亿行数据的 sum 查询，是 clickhouse 的 6 倍。
+- > https://github.com/tensorbase/tensorbase
+
 大佬们求救，慢 SQL 问题 https://www.v2ex.com/t/695266
 
 MySQL 可重复读隔离级别下是否解决了幻读问题 https://www.v2ex.com/t/692386
