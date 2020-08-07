@@ -89,6 +89,17 @@ Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-c
 
 Kuberentes客户端编程 https://blog.gmem.cc/k8s-client-programming
 
+解读 kubernetes client-go 官方 examples - Part Ⅰ https://segmentfault.com/a/1190000018953168
+- > 完成 deployment 资源的增删改查，大体可以分为以下几个步骤。这个流程对访问其他 Kubernete 资源也是一样的：
+  <br> 1.通过 kubeconfig 信息，构造 Config 实例。该实例记录了集群证书、 API Server 地址等信息；
+  <br> 2.根据 Config 实例携带的信息，创建 http 客户端；
+  <br> 3.向 apiserver 发送请求，创建 Kubernetes 资源等
+- > 源码中，kubeconfig 变量记录了 kubeconfig 文件路径。通过 BuildConfigFromFlags 函数返回了一个 rest#Config 结构体实例。该实例记录了 kubeconfig 文件解析、处理后的信息。
+
+Building stuff with the Kubernetes API — TOC https://medium.com/programming-kubernetes/building-stuff-with-the-kubernetes-api-toc-84d751876650
+- Building stuff with the Kubernetes API (part 1) — Exploring API objects https://medium.com/programming-kubernetes/building-stuff-with-the-kubernetes-api-1-cc50a3642
+- Building stuff with the Kubernetes API (Part 4) — Using Go https://medium.com/programming-kubernetes/building-stuff-with-the-kubernetes-api-part-4-using-go-b1d0e3c1c899
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # apimachinery相关源码
