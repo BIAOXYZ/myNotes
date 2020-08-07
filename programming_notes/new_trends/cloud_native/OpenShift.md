@@ -1,5 +1,4 @@
 
-
 # openshift的各种版本
 
 OKD: Renaming of OpenShift Origin with 3.10 Release https://blog.openshift.com/okd310release/
@@ -29,6 +28,7 @@ OpenShift Documentation https://docs.openshift.com/
 - Upgrading Clusters
   * Upgrade Methods and Strategies https://docs.openshift.com/container-platform/3.9/upgrading/index.html
 - Understanding the Operator Lifecycle Manager https://docs.openshift.com/container-platform/4.1/applications/operators/olm-understanding-olm.html
+- Installing from the OperatorHub using the CLI https://docs.openshift.com/container-platform/4.1/applications/operators/olm-adding-operators-to-cluster.html#olm-installing-operator-from-operatorhub-using-cli_olm-adding-operators-to-a-cluster
 
 OpenShift Installation and Configuration Management https://install.openshift.com || https://github.com/openshift/openshift-ansible
 
@@ -49,6 +49,7 @@ okd Documentation https://docs.okd.io/
 
 - Deploying your storage backend using OpenShift Container Storage 4 https://www.openshift.com/blog/deploying-your-storage-backend-using-openshift-container-storage-4
 - Rook.io Container Native Storage on OpenShift https://www.openshift.com/blog/rook-container-native-storage-openshift
+- OpenShift 4.3: Managing Catalog Sources in the OpenShift Web Console https://www.openshift.com/blog/openshift-4-3-managing-catalog-sources-in-the-openshift-web-console
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
