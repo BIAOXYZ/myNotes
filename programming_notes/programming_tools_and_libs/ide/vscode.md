@@ -181,6 +181,10 @@ vscode 的 go 插件怎么正确安装？ https://www.v2ex.com/t/615962
 		}
 ```
 
+Go in Visual Studio Code https://code.visualstudio.com/docs/languages/go
+- > The Go extension lets you debug Go code as well. You will need to install the Delve debugger manually as a prerequisite. Read [Debug Go programs in VS Code](https://github.com/golang/vscode-go/blob/master/docs/debugging.md) for setup steps, information on remote debugging and a troubleshooting guide.
+  >> Debugging https://github.com/golang/vscode-go/blob/master/docs/debugging.md
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for python
