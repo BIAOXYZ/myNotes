@@ -34,6 +34,8 @@ Breadth first search https://www.programiz.com/dsa/graph-bfs
 
 用Python实现树的BFS与DFS https://www.jianshu.com/p/d2125448270b
 
+Tree Traversal - inorder, preorder and postorder https://www.programiz.com/dsa/tree-traversal
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # BTS and DTS (graph)
