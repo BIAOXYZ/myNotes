@@ -1,6 +1,16 @@
 
 # 公网github
 
+## Kubernetes https://github.com/kubernetes
+
+### Cluster Registry
+
+Cluster Registry https://github.com/kubernetes/cluster-registry || https://kubernetes.github.io/cluster-registry/
+
+Managing Clusters with Cluster Registry https://medium.com/@cgrant/managing-clusters-with-cluster-registry-aefb1205fe47
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Kubernetes SIGs https://github.com/kubernetes-sigs
 
 ### Kubernetes Applications
