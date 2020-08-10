@@ -163,7 +163,7 @@
           }
       }
       ```
-    + > Unlike typed clients, you need to provide GVR to the dynamic client. As mentioned before, you can find the corresponding GVR for a GVK by querying API server. This can be written in Go as follows:
+    + > Unlike typed clients, ***you need to provide GVR to the dynamic client***. As mentioned before, you can find the corresponding GVR for a GVK by querying API server. This can be written in Go as follows:
       ```go
       import (
           "k8s.io/apimachinery/pkg/api/meta"
@@ -189,7 +189,7 @@
       ```
 - > **Using the dynamic client to implement SSA**
   * > Now that we are ready, let's see how to implement SSA using the dynamic client.
-  * > First, we need to prepare *rest.Config. If the program works in a Kubernetes cluster, it is as easy as just calling rest.InClusterConfig.
+  * > First, we need to prepare `*rest.Config`. If the program works in a Kubernetes cluster, it is as easy as just calling `rest.InClusterConfig`.
   * > The rest of the work is shown below with plenty of annotations.
     ```go
     import (
@@ -280,7 +280,7 @@
         _, err = dr.Patch(ctx, obj.GetName(), types.ApplyPatchType, data, metav1.PatchOptions{
             FieldManager: "sample-controller",
         })
-        
+
         return err
     }
     ```
