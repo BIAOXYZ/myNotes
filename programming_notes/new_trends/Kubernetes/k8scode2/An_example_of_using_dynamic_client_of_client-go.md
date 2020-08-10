@@ -122,7 +122,7 @@
 
           // Get the common metadata, and show GVK
           fmt.Println(obj.GetName(), gvk.String())
-          
+
           // encode back to JSON
           enc := json.NewEncoder(os.Stdout)
           enc.SetIndent("", "    ")
@@ -212,19 +212,19 @@
     apiVersion: apps/v1
     kind: Deployment
     metadata:
-    name: nginx-deployment
-    namespace: default
+      name: nginx-deployment
+      namespace: default
     spec:
-    selector:
+      selector:
         matchLabels:
-        app: nginx
-    template:
+          app: nginx
+      template:
         metadata:
-        labels:
+          labels:
             app: nginx
         spec:
-        containers:
-        - name: nginx
+          containers:
+          - name: nginx
             image: nginx:latest
     `
 
