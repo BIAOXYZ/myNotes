@@ -81,6 +81,9 @@ Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-c
 
 【[:star:][`*`]】 An example of using dynamic client of k8s.io/client-go https://ymmt2005.hatenablog.com/entry/2020/04/14/An_example_of_using_dynamic_client_of_k8s.io/client-go
 - > **Background: Server Side Apply**
+  * > Recently, I wrote a program that applies Kubernetes resources using [Server Side Apply](https://kubernetes.io/docs/reference/using-api/api-concepts/#server-side-apply). Server Side Apply, or **SSA**, is a new way to create or update resources in Kubernetes API server added as a beta feature to Kubernetes 1.16.
+  * > One of the advantage of SSA is that it introduces better patching strategy than [Strategic Merge Patch](https://github.com/kubernetes/community/blob/7c0bf261abe149bf2308c1ec05454d10ad396b57/contributors/devel/sig-api-machinery/strategic-merge-patch.md). For example, if a Service has two ports sharing the same port number but with different protocol, Strategic Merge Patch could not identify which port should be updated because it uses `port` as the key.
+  * > When developing a Kubernetes client in Go, the most commonly used package is `k8s.io/client-go`. The package contains two kinds of client library, namely, **dynamic** and **typed**. For SSA, you need to use the dynamic client because you cannot send a partial object using typed clients.
 - > **Kubernetes API Basics**
   * > **Mapping between GVK and GVR**
 - > **Go client libraries**
