@@ -23,6 +23,11 @@
 - https://www.huxiu.com/article/316742.html
 - https://www.huxiu.com/article/316555.html
 
+# from萌百
+
+你背叛了oo，操你妈 https://zh.moegirl.org.cn/%E4%BD%A0%E8%83%8C%E5%8F%9B%E4%BA%86oo%EF%BC%8C%E6%93%8D%E4%BD%A0%E5%A6%88
+- > ![](https://img.moegirl.org.cn/common/7/79/Verr%C3%A4ter_der_Arbeiterklasse.jpg)
+
 # from wechat
 
 程序猿的鄙视链 https://mp.weixin.qq.com/s/jtfeeRDPZG1rQn9LAzTxAA
