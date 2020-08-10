@@ -30,7 +30,7 @@
   * > **Typed clients**
     + > This kind of clients ***uses Go structs to represent a kind***. You can edit resources in a type-safe way with them. Moreover, they can automatically find the ***REST mappings*** to send API requests. Following is an example of using a typed client to create a Deployment resource.
     + > In almost all cases, you should prefer typed clients to the dynamic client except in the case of SSA. Specifically, you must avoid using Go structs for kinds.
-    + > As SSA patches need to be sent in JSON or YAML, marshaling Go struct would ***add unintended fields***. Let's see how DaemonSet struct is marshaled:
+    + > As SSA patches need to be sent in JSON or YAML, marshaling Go struct would ***add unintended fields***. Let's see how `DaemonSet` struct is marshaled:
       ```go
       package main
       
@@ -50,7 +50,7 @@
           enc.Encode(ds)
       }
       ```
-    + > Running the above example will show the following JSON:  
+      > Running the above example will show the following JSON:  
       ```json
       {
           "metadata": {
@@ -82,4 +82,109 @@
     + > Enter the dynamic client, [k8s.io/client-go/dynamic](https://pkg.go.dev/k8s.io/client-go@v0.18.1/dynamic?tab=doc). The dynamic client does not use Go types defined in [k8s.io/api](https://github.com/kubernetes/api). Instead, it uses `unstructured.Unstructured`.
     + > Think of `unstructured.Unstructured` as a straightforward representation of YAML/JSON object in Go. It provides utilities to handle common attributes of resources such as `metadata.namespace`. Encoding `unstructured.Unstructured` back into JSON/YAML ***does not add extra fields***.
     + > The following example demonstrates how to read YAML manifest into `unstructured.Unstructured` and encode it back into JSON.
-    
+      ```go
+      package main
+
+      import (
+          "encoding/json"
+          "fmt"
+          "os"
+          "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
+          "k8s.io/apimachinery/pkg/runtime/serializer/yaml"
+      )
+
+      const dsManifest = `
+      apiVersion: apps/v1
+      kind: DaemonSet
+      metadata:
+      name: example
+      namespace: default
+      spec:
+      selector:
+          matchLabels:
+          name: nginx-ds
+      template:
+          metadata:
+          labels:
+              name: nginx-ds
+          spec:
+          containers:
+          - name: nginx
+              image: nginx:latest
+      `
+        
+      func main() {
+          obj := &unstructured.Unstructured{}
+
+          // decode YAML into unstructured.Unstructured
+          dec := yaml.NewDecodingSerializer(unstructured.UnstructuredJSONScheme)
+          _, gvk, err := dec.Decode([]byte(dsManifest), nil, obj)
+
+          // Get the common metadata, and show GVK
+          fmt.Println(obj.GetName(), gvk.String())
+
+          // encode back to JSON
+          enc := json.NewEncoder(os.Stdout)
+          enc.SetIndent("", "    ")
+          enc.Encode(obj)
+      }
+      ```
+      > The output should be:
+      ```json
+      example apps/v1, Kind=DaemonSet
+      {
+          "apiVersion": "apps/v1",
+          "kind": "DaemonSet",
+          "metadata": {
+              "name": "example",
+              "namespace": "default"
+          },
+          "spec": {
+              "selector": {
+                  "matchLabels": {
+                      "name": "nginx-ds"
+                  }
+              },
+              "template": {
+                  "metadata": {
+                      "labels": {
+                          "name": "nginx-ds"
+                      }
+                  },
+                  "spec": {
+                      "containers": [
+                          {
+                              "image": "nginx:latest",
+                              "name": "nginx"
+                          }
+                      ]
+                  }
+              }
+          }
+      }
+      ```
++ > Unlike typed clients, you need to provide GVR to the dynamic client. As mentioned before, you can find the corresponding GVR for a GVK by querying API server. This can be written in Go as follows:
+      ```go
+      import (
+          "k8s.io/apimachinery/pkg/api/meta"
+          "k8s.io/apimachinery/pkg/runtime/schema"
+          "k8s.io/client-go/discovery"
+          "k8s.io/client-go/discovery/cached/memory"
+          "k8s.io/client-go/rest"
+          "k8s.io/client-go/restmapper"
+      )
+
+      // find the corresponding GVR (available in *meta.RESTMapping) for gvk
+      func findGVR(gvk *schema.GroupVersionKind, cfg *rest.Config) (*meta.RESTMapping, error) {
+
+          // DiscoveryClient queries API server about the resources
+          dc, err := discovery.NewDiscoveryClientForConfig(cfg)
+          if err != nil {
+              return nil, err
+          }
+          mapper := restmapper.NewDeferredDiscoveryRESTMapper(memory.NewMemCacheClient(dc))
+
+          return mapper.RESTMapping(gvk.GroupKind(), gvk.Version)
+      }
+      ```
+- **Using the dynamic client to implement SSA**
