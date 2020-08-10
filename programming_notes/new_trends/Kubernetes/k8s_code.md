@@ -109,6 +109,11 @@ Building stuff with the Kubernetes API — TOC https://medium.com/programming-ku
 What is the package `unstructured` used for in k8s.io /apimachinery? https://stackoverflow.com/questions/54017328/what-is-the-package-unstructured-used-for-in-k8s-io-apimachinery
 
 Converting Kubernetes unstructured to typed objects https://erwinvaneyk.nl/kubernetes-unstructured-to-typed/
+- > To interact with the Kubernetes API using the [client-go](https://github.com/kubernetes/client-go) library there are two primary APIs: the **typed** `kubernetes.Interface` API and the **unstructured** `dynamic.Interface` API.
+- > Although using the core kubernetes API is (for Kubernetes) [well-documented](https://github.com/kubernetes/client-go/tree/master/examples/create-update-delete-deployment), the dynamic API has fewer examples.
+  >> https://github.com/kubernetes/client-go/tree/master/examples/create-update-delete-deployment
+  >>> https://github.com/kubernetes/client-go/blob/master/examples/create-update-delete-deployment/main.go
+- > The short anwer to converting `unstructured.Unstructure` to a typed resource is to use the `runtime.UnstructuredConverter` interface. Generally, the `runtime.DefaultUnstructuredConverter` implementation suffices for almost all use cases.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
