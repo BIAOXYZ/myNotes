@@ -127,6 +127,23 @@ Golang Generate命令说明与使用 https://yushuangqi.com/blog/2017/go-command
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## godef
+
+godef https://github.com/rogpeppe/godef
+
+>> //notes：在vscode里点击某个函数，如果没有安装，是不会自动跳转到函数的定义的。然后会弹出一个小窗口提示你安装，点击安装即可。安装完成后vscode console里输出的日志如下：
+```console
+Tools environment: GOPATH=/root/go, GOBIN=/root/go/bin
+Installing 1 tool at the configured GOBIN: /root/go/bin in module mode.
+  godef
+
+Installing github.com/rogpeppe/godef (/root/go/bin/godef) SUCCEEDED
+
+All tools successfully installed. You are ready to Go :).
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## gops
 
 gops: A tool to list and diagnose Go processes currently running on your system https://github.com/google/gops
