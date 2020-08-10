@@ -25,7 +25,7 @@
 
 # from萌百
 
-你背叛了oo，操你妈 https://zh.moegirl.org.cn/%E4%BD%A0%E8%83%8C%E5%8F%9B%E4%BA%86oo%EF%BC%8C%E6%93%8D%E4%BD%A0%E5%A6%88
+你背叛了oo，操你妈 https://zh.moegirl.org.cn/%E4%BD%A0%E8%83%8C%E5%8F%9B%E4%BA%86oo%EF%BC%8C%E6%93%8D%E4%BD%A0%E5%A6%88 【 `Du! Verräter der Arbeiterklasse! Verpfeif dich!` 】
 - > ![](https://img.moegirl.org.cn/common/7/79/Verr%C3%A4ter_der_Arbeiterklasse.jpg)
 
 # from wechat
