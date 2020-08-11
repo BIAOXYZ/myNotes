@@ -28,7 +28,9 @@ OpenShift Documentation https://docs.openshift.com/
 - Upgrading Clusters
   * Upgrade Methods and Strategies https://docs.openshift.com/container-platform/3.9/upgrading/index.html
 - Understanding the Operator Lifecycle Manager https://docs.openshift.com/container-platform/4.1/applications/operators/olm-understanding-olm.html
-- Installing from the OperatorHub using the CLI https://docs.openshift.com/container-platform/4.1/applications/operators/olm-adding-operators-to-cluster.html#olm-installing-operator-from-operatorhub-using-cli_olm-adding-operators-to-a-cluster
+- ~~Installing from the OperatorHub using the CLI https://docs.openshift.com/container-platform/4.1/applications/operators/olm-adding-operators-to-cluster.html#olm-installing-operator-from-operatorhub-using-cli_olm-adding-operators-to-a-cluster~~  -->  https://docs.openshift.com/container-platform/4.4/operators/olm-adding-operators-to-cluster.html#olm-installing-operator-from-operatorhub-using-cli_olm-adding-operators-to-a-cluster
+  >>//notes：4.1版本的已经过时，表现在这部分开头这句：`Use the oc command to create or update a CatalogSourceConfig object, then add a Subscription object.` --> 目前从4.4、4.5版本看，不再需要手动创建`CatalogSourceConfig`类型的对象了（`oc api-resources`看了下，这个对象类型倒是还在）。
+  >>> INSTALL KUBERNETES OPERATORS IN OPENSHIFT USING ONLY THE CLI https://www.itix.fr/blog/install-operator-openshift-cli/
 
 OpenShift Installation and Configuration Management https://install.openshift.com || https://github.com/openshift/openshift-ansible
 
