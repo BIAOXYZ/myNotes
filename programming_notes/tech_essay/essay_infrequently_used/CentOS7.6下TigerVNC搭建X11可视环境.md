@@ -11,6 +11,10 @@
 - VNC（虚拟网络计算） https://wiki.centos.org/zh/HowTos/VNC-Server 【4】--> 这个留着当参考了。
 - `TigerVNC 1.9.0` Release https://github.com/TigerVNC/tigervnc/releases 【5】 --> 虽然也有人推荐RealVNC，但是想了想还是选择了客户端也用TigerVNC（实际名字叫`vncviewer`）。原因有二：第一，TigerVNC开源的，RealVNC是商业软件（[Comparison_of_remote_desktop_software](https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software)）；第二，服务器端既然用的TigerVNC，客户端也用TigerVNC吧。
 
+***后来的参考链接***：
+- How to Install and Configure VNC Server in CentOS 7 https://www.tecmint.com/install-and-configure-vnc-server-in-centos-7/ 【这个后面演示用的是RealVNC家的VNC Viewer去连接服务器端。】
+- https://www.linuxtechi.com/install-configure-vnc-server-centos-7-rhel-7/ 【这个后面是用哪家的vncview演示给忘了。。。以前还下载下来过的说。】
+
 ## 0.3 问题
 
 ### 0.3.1 `vncserver@1.service`起不来
@@ -74,7 +78,7 @@ lines 1661-1692/1692 (END)
 Jul 05 14:41:34 temptest.sl.cloud9.ibm.com systemd[1]: Starting Remote desktop service (VNC)...
 Jul 05 14:41:37 temptest.sl.cloud9.ibm.com systemd[1]: Started Remote desktop service (VNC).
 
-// 看了下防火墙一直没开过，所以肯定不是防火墙有啥影响。
+# 看了下防火墙一直没开过，所以肯定不是防火墙有啥影响。
 [root@temptest ~]# systemctl status firewalld
 ● firewalld.service - firewalld - dynamic firewall daemon
    Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
@@ -147,6 +151,26 @@ Last login: Fri Jul  5 13:48:40 2019 from 9.200.45.42
 //省略输出
 [root@temptest ~]# cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.service
 [root@temptest ~]# 
+
+
+#// 新版本下`vi /etc/systemd/system/vncserver\@\:1.service`打开后，这个文件的内容和以前不一样了。
+#// 从下面贴的内容看，<USER>只需要替换一处了（原来是改两处并且root和普通用户不一样）。但是要额外去改
+#// 另外一个脚本：/usr/bin/vncserver_wrapper  
+##// -->  后来我打开看了看感觉这个脚本没啥可改的啊，就没改。事实证明也确实如此。
+##// 所以新版现在更简单了，只需要替换一处<USER>即可。
+``
+# Quick HowTo:
+# 1. Copy this file to /etc/systemd/system/vncserver@.service
+# 2. Replace <USER> with the actual user name and edit vncserver
+#    parameters in the wrapper script located in /usr/bin/vncserver_wrapper
+# 3. Run `systemctl daemon-reload`
+# 4. Run `systemctl enable vncserver@:<display>.service`
+
+# Clean any existing files in /tmp/.X11-unix environment
+ExecStartPre=/bin/sh -c '/usr/bin/vncserver -kill %i > /dev/null 2>&1 || :'
+ExecStart=/usr/bin/vncserver_wrapper <USER> %i
+ExecStop=/bin/sh -c '/usr/bin/vncserver -kill %i > /dev/null 2>&1 || :'
+``
 [root@temptest ~]# vi /etc/systemd/system/vncserver\@\:1.service
 [root@temptest ~]#
 [root@temptest ~]# systemctl daemon-reload
@@ -185,17 +209,21 @@ firefox
 
 ## 2.1 配置Windows 10上的VNC客户端（用的依然是`TigerVNC家的vncviewer`，更具体点：`vncviewer64-1.9.0.exe`）
 
+https://github.com/TigerVNC/tigervnc/releases 【千万不要再被那个[~~TightVNC~~](https://www.tightvnc.com/download.php)给坑了，它的客户端不好用。另外RealVNC家的VNC Viewer也就那样，连上之后会显示花屏。。。所以，还是窝老虎头VNC好用呀，不管客户端还是服务器端都是它。】
+- https://github.com/TigerVNC/tigervnc/releases/tag/v1.9.0  -->  https://bintray.com/tigervnc/stable/download_file?file_path=vncviewer64-1.9.0.exe
+- https://github.com/TigerVNC/tigervnc/releases/tag/v1.10.0  -->  https://bintray.com/tigervnc/stable/download_file?file_path=vncviewer64-1.10.0.exe
+
 ```console
 客户端访问
-下载 VNC Viewer
 
-设置如下：
-
+- 下载 VNC Viewer
+- 设置如下：
 VNC Server: YOUR_SERVER_IP:1
 Name: YOUR_Display_1
 
-连接之后，输入 admin 的 vpnpasswd，既可看到界面了。
+- 连接之后，输入 admin 的 vpnpasswd，既可看到界面了。
 ```
+>> //notes：用老虎头VNC的viewer（RealVNC家的VNC Viewer也是一样的）好像都不用这些，就是双击打开，输入类似`9.46.89.76:1`，点击`Connect`然后输入之前`vncpasswd`命令设置的密码即可。
 
 ## 2.2 配置CentOS服务器本机上的VNC客户端（TODO）
 
