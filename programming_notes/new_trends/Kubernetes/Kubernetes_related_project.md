@@ -56,7 +56,13 @@ Kubernetes Operators Best Practices https://www.openshift.com/blog/kubernetes-op
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## CSV
+## OLM (Operator Lifecycle Management) related
+
+Analysis of Operator Lifecycle Manager in Openshift 4 https://rcarrata.com/openshift/operators-in-opc4/
+
+OpenShift Operator Lifecycle Management Guide: Integrating Operators in OLM Part IV https://keithtenzer.com/2020/04/23/openshift-operator-lifecycle-management-guide-integrating-operators-in-olm-part-iv/
+
+### CSV
 
 11.4. 生成 CLUSTERSERVICEVERSION (CSV) https://access.redhat.com/documentation/zh-cn/openshift_container_platform/4.2/html/operators/osdk-generating-csvs
 
