@@ -37,7 +37,10 @@ Software Collections https://github.com/sclorg
 
 ## okd official
 
-OKD: The Origin Community Distribution of Kubernetes https://github.com/openshift/origin
+~~OKD: The Origin Community Distribution of Kubernetes https://github.com/openshift/origin~~  -->  OKD: The Origin Community Distribution of Kubernetes https://github.com/openshift/okd
+>> //notes：【origin这个仓库只有到3.11的了，新的4.x系列的OCP开源版都到这个叫okd的仓库了，但是原来那个仓库并没有删，只是作为3.x版本的开源版仓库。想下老版本的`oc`还得去这个仓库的release页面。】
+- https://github.com/openshift/origin/releases/tag/v3.11.0
+- https://github.com/openshift/okd/releases/tag/4.5.0-0.okd-2020-07-14-153706-ga
 
 okd -- The Origin Community Distribution of Kubernetes that powers Red Hat OpenShift. https://www.okd.io/
 
