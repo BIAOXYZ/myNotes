@@ -4,8 +4,9 @@
 
 ## 0.1 设置类命令总结
 
->> 个人设置总结，方便复制：
-```
+>> //notes：个人设置总结，方便复制。ps：Vim 的全局配置一般在`/etc/vim/vimrc`或者`/etc/vimrc`，对所有用户生效。用户个人的配置在`~/.vimrc`。
+```vim
+"""""""""" MY personal config
 set nu
 syntax on
 set cursorline
