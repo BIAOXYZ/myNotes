@@ -17,7 +17,7 @@
 
 周六在家安好后，搞容器的debuger去了。我确定过程中`vncserver@1.service`已经start和enable了。但是周一来到单位后查了下`vncserver@1.service`的状态发现没起来。这就罢了，然后执行`systemctl start vncserver@1.service`都起不来。根据提示用`journalctl -xe`看了下日志，还没看完呢，网络闪断了一下，MobaXterm连接断开了。重连上以后，也不知道怎么想的，鬼使神差执行了一下`systemctl daemon-reload`，然后再查了下服务状态，好了。。。
 
-```
+```sh
 [root@temptest ~]# systemctl status vncserver@1.service
 ● vncserver@1.service - Remote desktop service (VNC)
    Loaded: loaded (/usr/lib/systemd/system/vncserver@.service; disabled; vendor preset: disabled)
@@ -61,7 +61,7 @@ lines 1661-1692/1692 (END)
 ```
 
 解决方法是执行了一下`systemctl daemon-reload`就好了（我看了几遍这个现象前后的过程，确定**上个`systemctl start vncserver@1.service`失败后没有再启动过这个服务**——也就是说，看现象是只`systemctl daemon-reload`一下就好了。不过这个也无所谓了，反正要是还是不行，就再启动一下服务。。。不行再daemon-reload再启）。
-```
+```sh
 [root@temptest ~]# systemctl daemon-reload
 [root@temptest ~]# systemctl status vncserver@:1.service
 ● vncserver@:1.service - Remote desktop service (VNC)
@@ -89,7 +89,7 @@ Jul 05 14:41:37 temptest.sl.cloud9.ibm.com systemd[1]: Started Remote desktop se
 
 # 1. 配置CentOS上的VNC server端
 
-```
+```sh
 [root@temptest packages]# yum check-update
 //省略输出
 [root@temptest packages]# yum -y groupinstall "X Window System"
@@ -110,6 +110,8 @@ Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
 ...
 ...
 ...
+
+
 [root@temptest packages]# yum -y install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts
 ...
 ...
@@ -127,6 +129,12 @@ Downloading packages:
 ...
 ...
 ...
+
+
+# /etc/systemd/system/default.target是个软链接，上面步骤执行完成后长这样：
+## default.target -> /lib/systemd/system/multi-user.target
+# 这两句的作用是删除掉原来的软链接（删软链接安全起见最好用unlink），再新建一个。新的软链接长这样：
+## default.target -> /lib/systemd/system/graphical.target
 [root@temptest packages]# unlink /etc/systemd/system/default.target
 [root@temptest packages]# ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
 [root@temptest packages]#
@@ -144,9 +152,10 @@ Last login: Fri Jul  5 13:48:40 2019 from 9.200.45.42
 [root@temptest ~]# systemctl daemon-reload
 [root@temptest ~]# 
 
-//这里攻略里没提到，网上搜了搜感觉都是选n
-//// 后续补充：如果时间比较久，该密码不小心忘记了，只需完全按照下面的步骤重新设置vnc登陆密码即可。
-//// 也有攻略提到先删除 ~/.vnc/passwd 文件再重新设置。但是我的机器（root用户）直接重新设置就可以，不需要删除文件这个步骤。
+
+# 这里攻略里没提到，网上搜了搜感觉都是选n
+## 后续补充：如果时间比较久，该密码不小心忘记了，只需完全按照下面的步骤重新设置vnc登陆密码即可。
+## 也有攻略提到先删除 ~/.vnc/passwd 文件再重新设置。但是我的机器（root用户）直接重新设置就可以，不需要删除文件这个步骤。
 [root@temptest ~]# vncpasswd
 Password:
 Verify:
@@ -158,7 +167,7 @@ A view-only password is not used
 Created symlink from /etc/systemd/system/multi-user.target.wants/vncserver@:1.service to /etc/systemd/system/vncserver@:1.service.
 [root@temptest ~]# sudo systemctl start vncserver@:1.service
 
-//最后防火墙那步没配，因为看了下本机防火墙就是关的。
+# 最后防火墙那步没配，因为看了下本机防火墙就是关的。
 [root@temptest ~]# systemctl status firewalld
 ● firewalld.service - firewalld - dynamic firewall daemon
    Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
@@ -167,7 +176,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/vncserver@:1.se
 ```
 
 至此，VNC服务器端安装完成，此时再下个firefox就可以直接打开了（不过firefox能打开主要是X11 Window System装了的原因吧。。。）
-```
+```sh
 yum install -y firefox
 firefox
 ```
@@ -176,7 +185,7 @@ firefox
 
 ## 2.1 配置Windows 10上的VNC客户端（用的依然是`TigerVNC家的vncviewer`，更具体点：`vncviewer64-1.9.0.exe`）
 
-```
+```console
 客户端访问
 下载 VNC Viewer
 
@@ -190,7 +199,7 @@ Name: YOUR_Display_1
 
 ## 2.2 配置CentOS服务器本机上的VNC客户端（TODO）
 
-```
+```sh
 [root@temptest packages]# wget https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.9.0.x86_64.tar.gz
 [root@temptest packages]# tar zxvf download_file\?file_path\=tigervnc-1.9.0.x86_64.tar.gz
 [root@temptest packages]# ll
@@ -235,7 +244,7 @@ Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 79: saw
 
 # 3. 后续补充一些VNC操作（TigerVNC）
 
-```
+```sh
 [root@temptest ~]# vncserver -h
 
 usage: vncserver [:<number>] [-name <desktop-name>] [-depth <depth>]
