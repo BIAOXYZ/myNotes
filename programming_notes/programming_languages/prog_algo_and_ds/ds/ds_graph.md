@@ -30,7 +30,7 @@ Topological sorting https://en.wikipedia.org/wiki/Topological_sorting || 拓扑�
 
 # 图的表示法
 
-算法与数据结构（2）——图的表示法与常用的转化算法 https://www.cnblogs.com/liushang0419/archive/2011/05/06/2039386.html
+【[:star:][`*`]】 算法与数据结构（2）——图的表示法与常用的转化算法 https://www.cnblogs.com/liushang0419/archive/2011/05/06/2039386.html  //PS：LeetCode官方给的链接都是转载这个文章的，也不说直接给原文，参见我`LC207`的[笔记](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000207/README.md#L13)。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -56,3 +56,7 @@ Is there any other Data structure to represent Graph other than Adjacency List o
 `1. 邻接表无向图的介绍` https://alleniverson.gitbooks.io/data-structure-and-algorithms/9.%E5%9B%BE%E8%AE%BA/%E9%82%BB%E6%8E%A5%E8%A1%A8%E6%97%A0%E5%90%91%E5%9B%BE.html
 
 Adjacency List https://www.programiz.com/dsa/graph-adjacency-list
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他图的表示法
