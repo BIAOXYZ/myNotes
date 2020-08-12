@@ -114,6 +114,14 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉搞笑
 
+还要注意些什么？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY5ODc3NjYsImlhdCI6MTU5NzIxODUxNn0.fbsjztQ8qZSAOjGD_kL1brBeYN3s45jG1Y2pDPlPPJc
+![](https://i9.taou.com/maimai/p/25017/7327_18_5I3kH2shBtpOwT-t480)
+- > 紧急通道右侧也打通，两人分头走
+- > 门口记得放监控，在双人床那边有人进总经理办公室或者秘书办公室都能看到
+- > 隔音做得怎么样
+- > 暗浴注意除湿
+- > 紧急疏散通道一般设计不同方向两个门，如果只设计一个门，室内应单独有一个直接通向室外的安全出口。学习规范还是很重要的
+
 有大佬给解释一下hr和hrbp是啥意思吗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzMjI3MTIsImlhdCI6MTU5MTI0NDY3M30.BC9-bL9lT_gK1e6U3zWPrPaZJ7i5TBstlqQue2jXH3E
 - > 坏人，坏人帮派
 
