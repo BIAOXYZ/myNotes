@@ -40,7 +40,8 @@ JSONPath 支持 https://v1-18.docs.kubernetes.io/zh/docs/reference/kubectl/jsonp
 |函数|描述|示例|结果|
 |--|--|--|--|
 | `.` or `[]` |	子运算符 | `{.kind}` or `{['kind']}` | `List` |
-
+| `..` | 递归下降 | `{..name}` | `127.0.0.1 127.0.0.2 myself e2e` |
+||||
 
 ```console
 # 使用 kubectl 和 JSONPath 表达式的示例:
