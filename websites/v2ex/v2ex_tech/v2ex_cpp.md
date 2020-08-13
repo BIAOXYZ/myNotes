@@ -1,4 +1,6 @@
 
+c++ 可以通过 dump 或 core 调试分析出哪个线程修改了变量吗？ https://www.v2ex.com/t/697865
+
 C++ queue 中不可以存放 vector<int>吗？ https://www.v2ex.com/t/688772
 ```cpp
 queue<vector<int>> q; 当调用 q.front()时为什么返回值是 void 呢
