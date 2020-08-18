@@ -55,3 +55,11 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6InowcGd5SWNJMGVvZlRTcnhVa0lOa2Y5ZlVCd3N4aWFDODdfTFFW
 ```
 
 # 其他
+
+kubernetes之使用http rest api访问集群 https://www.cnblogs.com/tylerzhou/p/11094872.html
+
+User "system:serviceaccount:default:default" cannot get at the cluster scope. https://github.com/fabric8io/fabric8/issues/6840
+
+Executing commands in Pods using K8s API https://www.openshift.com/blog/executing-commands-in-pods-using-k8s-api
+- > The first one is Authorization, with a value of Bearer <token> that authenticates the request. For Kubernetes, follow this guide. With OpenShift, simply get the token for your user: `oc whoami -t`
+  
