@@ -62,4 +62,5 @@ User "system:serviceaccount:default:default" cannot get at the cluster scope. ht
 
 Executing commands in Pods using K8s API https://www.openshift.com/blog/executing-commands-in-pods-using-k8s-api
 - > The first one is Authorization, with a value of Bearer <token> that authenticates the request. For Kubernetes, follow this guide. With OpenShift, simply get the token for your user: `oc whoami -t`
-  
+
+Take the Kubernetes API for a Spin https://thenewstack.io/taking-kubernetes-api-spin/
