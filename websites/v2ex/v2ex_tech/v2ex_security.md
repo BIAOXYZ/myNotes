@@ -1,4 +1,7 @@
 
+数字人民币技术细节讨论 无网络支付 https://www.v2ex.com/t/699333
+- > https://www.jianshu.com/p/005ad20f0f08 在没有网络的情况下，DCEP 如何实现双离线支付
+
 请问一个 rsa 加密问题 https://www.v2ex.com/t/697859
 - > php RSA 密钥是 PKCS7 填充 Java 是 PKCS8 。。。你需要用 openssl 将对面给的做个格式转换 <br> 至于怎么转 你看下 openssl 的命令吧
   * > LZ回复：我转换了但是加密不了这么长的，我在网上看 512bit 最多也只支持 53 位加密，不知道 java 怎么弄的
