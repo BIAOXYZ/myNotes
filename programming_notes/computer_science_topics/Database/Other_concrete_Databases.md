@@ -115,3 +115,9 @@ SQLite compiled to JavaScript through Emscripten https://github.com/kripken/sql.
 
 YugaByte DB is the open source, high-performance SQL database for building internet-scale, globally-distributed apps. https://www.yugabyte.com/ || https://github.com/YugaByte/yugabyte-db
 - YugaByte DB vs CockroachDB Performance Benchmarks for Internet-Scale Transactional Workloads https://blog.yugabyte.com/yugabyte-db-vs-cockroachdb-performance-benchmarks-for-internet-scale-transactional-workloads/
+
+Pebble: RocksDB/LevelDB inspired key-value database in Go https://github.com/cockroachdb/pebble
+
+EdgeDB: The next generation relational database. https://github.com/edgedb/edgedb
+- > EdgeDB is an open-source object-relational database built on top of PostgreSQL. The goal of EdgeDB is to empower its users to build safe and efficient software with less effort.
+ 

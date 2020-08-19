@@ -57,6 +57,9 @@ http://www.jb51.net/article/89425.htm
 📖《Python Parallel Programming Cookbook》中文版 https://github.com/laixintao/python-parallel-programming-cookbook-cn
 > Python并行编程 中文版 https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/index.html
 
+Python 黑魔法手册 https://github.com/iswbm/magic-python || http://magic.iswbm.com/zh/latest/
+> 这哥们还有一本Go的入门书也可以：https://github.com/iswbm/GolangCodingTime || http://golang.iswbm.com/en/latest/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # python项目类

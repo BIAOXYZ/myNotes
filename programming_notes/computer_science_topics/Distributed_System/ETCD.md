@@ -46,6 +46,12 @@ etcd分布式锁的实现方式 https://www.myway5.com/index.php/2019/10/09/etcd
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# ETCD related projects
+
+Kine (Kine is not etcd) -- Run Kubernetes on MySQL, Postgres, sqlite, dqlite, not etcd. https://github.com/rancher/kine
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # ETCD其他
 
 etcd简介 https://blog.csdn.net/mnasd/article/details/79621155
