@@ -56,6 +56,10 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 万豪旅享家 Marriott Bonvoy 常旅客计划详细介绍 —— 会籍和福利篇【2020.3 更新：通过信用卡获取的定级晚数可以达到30晚】 https://www.uscreditcardguide.com/marriott-new-program-elite-benefits/
 - > 2018年8月18日，万豪正式将以前的 Marriott/SPG/Ritz-Carlton 三大常旅客计划合并为单一的会员体系，并且开始执行新的会员规则。随后命名为万豪旅享家 Marriott Bonvoy 会员计划。以前的 Marriott & SPG 介绍文相应的已经过期，因此我们重新编写了新会员计划的详细介绍，此文着重介绍万豪新计划下的会籍和福利，点数的积累和使用等信息见《万豪旅享家 Marriott Bonvoy 常旅客计划 — 点数积累和使用篇》。本文根据我近些年的经验和网上查询到的信息，尽量给大家解释清楚各种信息，因此写得比较长，建议大家有时间的时候慢慢看，或者有问题的时候回来详细查询。
 
+Hilton Honors 希尔顿荣誉客会常旅客计划简介【2019.6 更新：又双叒叕贬值了】 https://www.uscreditcardguide.com/introduction-to-hilton-honors/
+- > 本文介绍了2018年的Hilton集团荣誉客会常旅客计划。由于2017-2018年Hilton对于荣誉客会常旅客计划有较大变动，之前的介绍文章作为历史资料，在这里可以看到：[Hilton HHonors 希尔顿荣誉客会常旅客计划简介(2018之前）](https://www.uscreditcardguide.com/hilton-hhonors-xierdunrongyukehuichanglvkejihuajianjie2018zhiqian/)。其中一个变动是把这个常旅客计划的名字从Hilton HHonors改成Hilton Honors。
+- > 
+
 ## from 北美牧羊场
 
 住酒店薅羊毛 之 用“谈心”给高级会员待遇锦上添花 https://travelafterwork.com/2015/12/29/sending-an-email-helps-you-get-a-suite/
