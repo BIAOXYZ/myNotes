@@ -258,7 +258,18 @@ Managing Clusters with Cluster Registry https://medium.com/@cgrant/managing-clus
 
 ## KubeVirt
 
+https://kubevirt.io/user-guide/
+
+### CDI
+
+Containerized Data Importer https://github.com/kubevirt/containerized-data-importer
+- Data Volumes https://github.com/kubevirt/containerized-data-importer/blob/master/doc/datavolumes.md
+
 Experiment with the Containerized Data Importer (CDI) https://kubevirt.io/labs/kubernetes/lab2.html
+
+Containerized Data Importer https://kubevirt.io/2018/containerized-data-importer.html
+
+Live Migration https://github.com/kubevirt/user-guide/blob/24929ed53e841aa6fc1b20a584b658d80b8e98c9/installation/live-migration.md
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
