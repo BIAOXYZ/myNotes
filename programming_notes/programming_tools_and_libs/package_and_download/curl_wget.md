@@ -267,18 +267,24 @@ REST 入门介绍 http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html
 
 # [wget](https://www.gnu.org/software/wget/)
 
-【:star:】 GNU Wget 1.20 Manual https://www.gnu.org/software/wget/manual/
-
-17. wget 文件下载 https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/wget.html
-
-linux 下载 命令 wget 和 curl https://blog.csdn.net/freeking101/article/details/53691481
-
 ## wget命令总结
 
 ```sh
 # 例： wget -O virtctl https://github.com/kubevirt/kubevirt/releases/download/v0.32.0/virtctl-v0.32.0-linux-amd64 会直接把
 # 原来名字为 virtctl-v0.32.0-linux-amd64 的文件下载下来并重命名成 virtctl。
-curl -O <想改成的文件名> <文件下载地址>        
+wget -O <想改成的文件名> <文件下载地址>        
 ```
+
+## wget其他
+
+【:star:】 GNU Wget 1.20 Manual https://www.gnu.org/software/wget/manual/
+
+17. wget 文件下载 https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/wget.html
+```sh
+实例2：使用wget -O下载并以不同的文件名保存
+$wget -O wordpress.zip http://www.minjieren.com/download.aspx?id=1080
+```
+
+linux 下载 命令 wget 和 curl https://blog.csdn.net/freeking101/article/details/53691481
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
