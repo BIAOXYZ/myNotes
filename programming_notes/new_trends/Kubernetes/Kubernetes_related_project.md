@@ -271,6 +271,9 @@ Containerized Data Importer https://kubevirt.io/2018/containerized-data-importer
 
 Live Migration https://github.com/kubevirt/user-guide/blob/24929ed53e841aa6fc1b20a584b658d80b8e98c9/installation/live-migration.md
 
+https://kubevirt.io/user-guide/#/installation/image-upload?id=create-a-virtualmachineinstance
+- > To create a VirtualMachinInstance from a DataVolume, you can execute the following:
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他k8s相关项目 (not matured)
