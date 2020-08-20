@@ -7,6 +7,9 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+五星级酒店茶包刷新你的三观！ - 小小乖的文章 - 知乎 https://zhuanlan.zhihu.com/p/32845720
+- > 一、TWININGS 川宁茶 <br> 日常出没：洲际酒店，希尔顿酒店等
+
 ## 内宾、外宾、中宾
 
 - 自由行去新加坡，在订酒店是总是发现在房间后面会有内宾，中宾的提示，什么意思呢 http://www.mafengwo.cn/wenda/detail-2211617.html
