@@ -273,4 +273,12 @@ REST 入门介绍 http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html
 
 linux 下载 命令 wget 和 curl https://blog.csdn.net/freeking101/article/details/53691481
 
+## wget命令总结
+
+```sh
+# 例： wget -O virtctl https://github.com/kubevirt/kubevirt/releases/download/v0.32.0/virtctl-v0.32.0-linux-amd64 会直接把
+# 原来名字为 virtctl-v0.32.0-linux-amd64 的文件下载下来并重命名成 virtctl。
+curl -O <想改成的文件名> <文件下载地址>        
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
