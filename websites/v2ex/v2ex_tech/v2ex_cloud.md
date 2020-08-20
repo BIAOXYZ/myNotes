@@ -1,4 +1,6 @@
 
+请问 k8s 如何将 pod 均匀调度到每个 node 上 https://www.v2ex.com/t/699835
+
 k8s 该怎么在多个 replica 的情况下只让其中一个接受流量 https://www.v2ex.com/t/694433
 - > 你就起一个 pod 不就好了
   >> LZ回复：但是挂掉时就没法快速切换另一个上。。启动再快也需要时间
