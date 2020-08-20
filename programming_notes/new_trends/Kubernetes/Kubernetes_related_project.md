@@ -254,7 +254,15 @@ Managing Clusters with Cluster Registry https://medium.com/@cgrant/managing-clus
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# projects based on or related to k8s (not matured)
+# 其他k8s相关项目
+
+## KubeVirt
+
+Experiment with the Containerized Data Importer (CDI) https://kubevirt.io/labs/kubernetes/lab2.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他k8s相关项目 (not matured)
 
 A K8s-native Pipeline resource. https://tekton.dev || https://github.com/tektoncd/pipeline
 
