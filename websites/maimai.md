@@ -114,6 +114,9 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 
 # 脉脉搞笑
 
+被PUA到抑郁，一开口就是你是一个P7… https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjcwNjMyMjcsImlhdCI6MTU5Nzk3Njg2Nn0.rL2qho9FXu-eaQe15jq7tyIMBtWqinNqiOgUvY3vWwk
+- > p7 lives matter
+
 还要注意些什么？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY5ODc3NjYsImlhdCI6MTU5NzIxODUxNn0.fbsjztQ8qZSAOjGD_kL1brBeYN3s45jG1Y2pDPlPPJc
 ![](https://i9.taou.com/maimai/p/25017/7327_18_5I3kH2shBtpOwT-t480)
 - > 紧急通道右侧也打通，两人分头走
