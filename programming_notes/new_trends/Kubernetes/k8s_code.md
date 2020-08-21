@@ -82,6 +82,8 @@ Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-c
 Kuberentes客户端编程 https://blog.gmem.cc/k8s-client-programming
 
 解读 kubernetes client-go 官方 examples - Part Ⅰ https://segmentfault.com/a/1190000018953168
+- > 本文通过解读 Kubernetes client-go 官方例子之一 [Create, Update & Delete Deployment](https://github.com/kubernetes/client-go/tree/master/examples/create-update-delete-deployment) ，详细介绍 client-go 原理和使用方法。该例子实现了创建、更新、查询、删除 deployment 资源。
+  >> Create, Update & Delete Deployment https://github.com/kubernetes/client-go/tree/5c80d489323e6926f03218bc999dc0a406c98da3/examples/create-update-delete-deployment
 - > 完成 deployment 资源的增删改查，大体可以分为以下几个步骤。这个流程对访问其他 Kubernete 资源也是一样的：
   <br> 1.通过 kubeconfig 信息，构造 Config 实例。该实例记录了集群证书、 API Server 地址等信息；
   <br> 2.根据 Config 实例携带的信息，创建 http 客户端；
