@@ -120,7 +120,7 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店�
 
 西安高新希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-xian-high-tech-zone-XIYCHHI/index.html || WELCOME TO HILTON XI'AN HIGH-TECH ZONE https://hiltonwifi.hiltonapps.com/xiychhi-en-cn/ 【连上高新希尔顿wifi后打开的首页。。。】
 
-西安富力希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-Xian-XIYHIHI/index.html
+西安富力希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-Xian-XIYHIHI/index.html || 欢迎来到西安富力希尔顿酒店 http://hilton.hiltonwificn.com/XIYHIHI_cn/
 
 ## 希尔顿攻略
 
