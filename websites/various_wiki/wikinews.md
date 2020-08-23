@@ -1,0 +1,2 @@
+
+李克强：中国六亿人人月均收入只仅一千元 https://zh.wikinews.org/wiki/%E6%9D%8E%E5%85%8B%E5%BC%B7%EF%BC%9A%E4%B8%AD%E5%9C%8B%E5%85%AD%E5%84%84%E4%BA%BA%E4%BA%BA%E6%9C%88%E5%9D%87%E6%94%B6%E5%85%A5%E5%8F%AA%E5%83%85%E4%B8%80%E5%8D%83%E5%85%83
