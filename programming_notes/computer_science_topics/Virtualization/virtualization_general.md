@@ -17,6 +17,8 @@ Virtualization Wars: VMware vs. Hyper-V vs. XenServer vs. KVM https://www.pcworl
 
 Linux 桌面玩家指南：07. Linux 中的 Qemu、KVM、VirtualBox、Xen 虚拟机体验 https://www.cnblogs.com/youxia/p/LinuxDesktop007.html
 
+VMware Fusion 12 发布！免费，支持 macOS 运行 Windows/Linux https://www.ithome.com/0/504/597.htm
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Libvirt
