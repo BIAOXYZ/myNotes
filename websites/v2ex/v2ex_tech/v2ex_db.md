@@ -1,4 +1,13 @@
 
+如何查看 pg data/base/dboid 下每张表里都是啥东西 https://www.v2ex.com/t/700663
+
+想要学习分布式数据库应该如何入门？ https://www.v2ex.com/t/700418
+- > PingCAP University 以及 PingCAP Talent Plan 了解一下： https://university.pingcap.com/ https://university.pingcap.com/talent-plan/ 教你学习，使用和实现分布式数据库
+- > 学下 6.824 和 DBMS 差不多就行了
+- > 强烈推荐“DDIA” 中文书名《数据密集型应用系统设计》 跟着翻一遍就可以系统了解数据库和分布式系统了，深入的话可以跟着书中给出的论文引用走
+
+emmm 没太能理解, 为啥我用 postgres 的 dbowner 去访问库中的表，还是没权限 https://www.v2ex.com/t/700398
+
 今天开源了一个自己写的数据仓库原型 https://www.v2ex.com/t/696587
 - > 项目以 Rust 语言构建系统，C 语言提供运行时查询内核。目前原型提供两个命令行：baseops 做数据导入和表信息维护； baseshell 查询数据。查询现在可以提供整数类型列的简单 sum 聚合查询，能在 100 毫秒左右完成 15 亿行数据的 sum 查询，是 clickhouse 的 6 倍。
 - > https://github.com/tensorbase/tensorbase

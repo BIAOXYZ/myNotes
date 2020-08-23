@@ -1,4 +1,7 @@
 
+现在有没有能实现格密码加密的软件 https://www.v2ex.com/t/700746
+- > https://github.com/open-quantum-safe/liboqs
+
 数字人民币技术细节讨论 无网络支付 https://www.v2ex.com/t/699333
 - > https://www.jianshu.com/p/005ad20f0f08 在没有网络的情况下，DCEP 如何实现双离线支付
 
