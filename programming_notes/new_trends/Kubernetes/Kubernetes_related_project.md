@@ -269,7 +269,8 @@ Experiment with the Containerized Data Importer (CDI) https://kubevirt.io/labs/k
 
 【From official blog】
 - Containerized Data Importer https://kubevirt.io/2018/containerized-data-importer.html
-- How to import VM into KubeVirt https://kubevirt.io/2019/How-To-Import-VM-into-Kubevirt.html 
+- How to import VM into KubeVirt https://kubevirt.io/2019/How-To-Import-VM-into-Kubevirt.html
+- KubeVirt VM Image Usage Patterns https://kubevirt.io/2020/KubeVirt-VM-Image-Usage-Patterns.html
 
 Live Migration https://github.com/kubevirt/user-guide/blob/24929ed53e841aa6fc1b20a584b658d80b8e98c9/installation/live-migration.md
 
