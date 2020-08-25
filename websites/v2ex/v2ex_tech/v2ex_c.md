@@ -1,4 +1,6 @@
 
+求解一个简单的 C 语言的问题, 事实证明我一直是错的 https://www.v2ex.com/t/701272
+
 C 的语法基本看完了，下面该学什么？ https://www.v2ex.com/t/649748
 - > http://akaedu.github.io/book/index.html 《 Linux C 编程一站式学习》
 

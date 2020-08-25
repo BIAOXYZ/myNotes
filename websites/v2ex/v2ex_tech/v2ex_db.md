@@ -1,4 +1,6 @@
 
+MySQL 查询语句执行顺序疑问：多表关联时会先生成笛卡尔乘积？ https://www.v2ex.com/t/701387
+
 如何查看 pg data/base/dboid 下每张表里都是啥东西 https://www.v2ex.com/t/700663
 
 想要学习分布式数据库应该如何入门？ https://www.v2ex.com/t/700418
