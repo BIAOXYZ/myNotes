@@ -48,3 +48,5 @@ KubiScan: A tool to scan Kubernetes cluster for risky permissions https://github
 ACK-TEE机密计算介绍 https://help.aliyun.com/document_detail/164536.html
 
 微软将机密计算带入Kubernetes http://www.chinastor.com/netsafe/1121430942019.html
+
+Azure 机密计算 https://azure.microsoft.com/zh-cn/solutions/confidential-compute/
