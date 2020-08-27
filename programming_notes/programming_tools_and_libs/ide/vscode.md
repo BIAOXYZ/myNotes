@@ -138,6 +138,10 @@ VSCode使用Remote插件编辑远程服务器文件 https://www.bilibili.com/vid
 
 # vscode未验证技巧
 
+# vscode debug
+
+Debugging https://code.visualstudio.com/docs/editor/debugging
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for C/C++
@@ -197,8 +201,6 @@ Go in Visual Studio Code https://code.visualstudio.com/docs/languages/go
 
 # vscode for python
 
-Getting Started with Python in VS Code https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger
-
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
 
 ## 自动打开的一个python提示（当你有`.py`文件在vscode里时，偶尔会弹出）
@@ -234,6 +236,7 @@ Don't show this page again
 
 Using Python environments in VS Code https://code.visualstudio.com/docs/python/environments
 - > `For more details on debug configuration, see Debugging configurations.` -- Python debug configurations in Visual Studio Code https://code.visualstudio.com/docs/python/debugging
+  * https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
