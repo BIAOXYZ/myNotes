@@ -146,6 +146,12 @@ Visual Studio Code 如何编写运行 C、C++ 程序？ - 知乎 https://www.zhi
 
 万字长文把 VSCode 打造成 C++ 开发利器 - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/96819625
 
+## vsc C++ debug
+
+C/C++ for Visual Studio Code https://code.visualstudio.com/docs/languages/cpp
+- Debug C++ in Visual Studio Code https://code.visualstudio.com/docs/cpp/cpp-debug
+  * > `To learn more, see Configuring C/C++ debugging.` -- Configuring C/C++ debugging https://code.visualstudio.com/docs/cpp/launch-json-reference
+
 # vscode for go
 
 vscode golang配置说明 https://www.cnblogs.com/nickchou/p/9038114.html
@@ -159,6 +165,8 @@ VS code golang 开发环境搭建 - CSDN博客 https://blog.csdn.net/hil2000/art
 
 在Visual Studio Code配置GoLang开发环境 - CSDN博客 https://blog.csdn.net/chszs/article/details/50076641
 > "要注意，GoLang的安装要确保两个环境变量，一个是GOROOT环境变量；二是PATH环境变量要包含$GOROOT\bin值。"
+
+## vsc Go debug
 
 使用Visual Studio Code调试Golang工程 - 徐波的文章 - 知乎 https://zhuanlan.zhihu.com/p/26473355
 >> notes：感觉主要就是调试配置那里模式改成————`"mode": "debug"`（有的时候值是`"auto"`）就差不多了。不过我是因为机器之前已经下过delve了。
@@ -188,6 +196,8 @@ Go in Visual Studio Code https://code.visualstudio.com/docs/languages/go
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for python
+
+Getting Started with Python in VS Code https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger
 
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
 
@@ -219,6 +229,11 @@ Explore more features in our Tutorials or check Documentation for tips and troub
 Don't show this page again
 ```
 - 打开方式：正如上面文件内容里所说的，（首先打开`Command Palette`，可以按`F1`，或者按`Ctrl + Shift + P`，或者点击左下角齿轮，弹出菜单第一个），然后输入`Python: Open Start Page`，最后回车即可。
+
+## vsc Python debug
+
+Using Python environments in VS Code https://code.visualstudio.com/docs/python/environments
+- > `For more details on debug configuration, see Debugging configurations.` -- Python debug configurations in Visual Studio Code https://code.visualstudio.com/docs/python/debugging
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
