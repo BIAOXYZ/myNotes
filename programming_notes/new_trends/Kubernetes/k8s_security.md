@@ -38,3 +38,13 @@ kubectl -n stocktrader create rolebinding ibm-anyuid-clusterrole-rolebinding --c
 # k8s security related projects
 
 KubiScan: A tool to scan Kubernetes cluster for risky permissions https://github.com/cyberark/KubiScan
+
+# k8s and 机密计算
+
+当 Kubernetes 遇到机密计算，阿里巴巴如何保护容器内数据的安全？ https://developer.aliyun.com/article/770904
+- > https://developer.aliyun.com/live/43826
+- > https://yq.aliyun.com/live/43829
+
+ACK-TEE机密计算介绍 https://help.aliyun.com/document_detail/164536.html
+
+微软将机密计算带入Kubernetes http://www.chinastor.com/netsafe/1121430942019.html
