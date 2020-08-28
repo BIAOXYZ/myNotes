@@ -71,6 +71,11 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 - > C++一般是 top -Hp和pstack配合用
 - > pstack 就够了
 
+# 脉脉信息类
+
+老哥们，微软亚洲sde,sde2,senior sde薪资大概是什么范围呢？工作5年的7，身体确实吃不消了，太劳心，想找个能安心写码的外企，但是确实也不想薪资砍半。 https://maimai.cn/web/gossip_detail?src=app&webid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiZDAzZmEyZDRlODIxMTFlYWFiMmYyNDZlOTZiNDgwODgiLCJ1IjoxOTU4OTUxOTUsImlkIjoyNzE1MDE3OX0.I-Zf9rvnB6m9_jeVt0xSlFpdiohhq9cu95RrS32Xe4w
+- > http://duibiao.info/
+
 # 脉脉健康
 
 两个月前检测出hpv高危阳性，现在复查还是阳明，感觉生活暗无天日，怎么办…… https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzNDUyMzYsImlhdCI6MTU5MTI0NzAxOX0.PyUgZvQsEW-Wq12EVM39s8sluWQFhJvgcXqdQBbcNGE
