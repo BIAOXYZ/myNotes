@@ -240,6 +240,24 @@ C:\Users\LiangLiu\mydata>
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## windows下类似`whereis`的`where`命令
+
+Windows equivalent of whereis? https://superuser.com/questions/21067/windows-equivalent-of-whereis
+
+个人实战（***确实装了两个mingw的gcc，也都查出来了***）：
+```console
+Microsoft Windows [版本 10.0.19041.450]
+(c) 2020 Microsoft Corporation. 保留所有权利。
+
+C:\Users\LiangLiu>where gcc
+C:\MinGW64\bin\gcc.exe
+C:\mingw65\bin\gcc.exe
+
+C:\Users\LiangLiu>
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 #
