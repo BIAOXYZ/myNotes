@@ -155,6 +155,17 @@ Visual Studio Code 如何编写运行 C、C++ 程序？ - 知乎 https://www.zhi
 C/C++ for Visual Studio Code https://code.visualstudio.com/docs/languages/cpp
 - Debug C++ in Visual Studio Code https://code.visualstudio.com/docs/cpp/cpp-debug
   * > `To learn more, see Configuring C/C++ debugging.` -- Configuring C/C++ debugging https://code.visualstudio.com/docs/cpp/launch-json-reference
+  * > `If you are debugging with GDB on Windows, see Windows Debugging with MinGW64.` -- Using GCC with MinGW https://code.visualstudio.com/docs/cpp/config-mingw
+
+>> //notes：其实主要是MinGW没那么好下，即使是在官方主页上（不注意会下那个默认版本，解压后里面没有`bin`目录，不能用！）也容易下错。下面这俩至少都试过了可以用。
+
+Run, Debug & get IntelliSense for C C++ in VSCode https://dev.to/jerrygoyal/run-debug-get-intellisense-for-c-c-in-vscode-4e0o
+- > Windows: Download [MinGW64.zip](https://github.com/GorvGoyl/MinGW64/releases) (latest release) and extract it to the C Drive.
+- > VSCode can create and auto-configure these files if we try to debug for the first time. To do that, open C++ file in VSCode and either hit F5 or go to Debug -> Start Debugging and select ***`C++ (GDB/LLDB)`*** then select g++.exe build and debug active file.
+
+Visual Studio Code 如何编写运行 C、C++ 程序？ - 知乎 https://www.zhihu.com/question/30315894
+- Visual Studio Code 如何编写运行 C、C++ 程序？ - 谭九鼎的回答 - 知乎 https://www.zhihu.com/question/30315894/answer/154979413
+  * > 下载编译器：[MinGW-w64 - for 32 and 64 bit Windows](https://sourceforge.net/projects/mingw-w64/files/) 往下稍微翻一下，选最新版本中的***`x86_64-posix-seh`***。最好不要用 Download Latest Version，这个是在线安装包，可能因为国内的“网络环境”下载失败。
 
 # vscode for go
 
