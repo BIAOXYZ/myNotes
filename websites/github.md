@@ -222,3 +222,5 @@ B站回应后台源码泄露事件：为历史版本，已主动防御 https://w
 
 🇨🇳 Chinese sticker pack,More joy / Github最有毒的仓库, 中国表情包大集合, 聚欢乐~ https://github.com/zhaoolee/ChineseBQB
 > https://zhaoolee.github.io/ChineseBQB/
+
+Free Python Games https://github.com/grantjenks/free-python-games

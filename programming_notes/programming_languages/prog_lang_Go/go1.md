@@ -93,7 +93,9 @@ Golang标准库。对于程序员而言，标准库与语言本身同样重要�
 Ultimate Go study guide https://github.com/hoanhan101/ultimate-go
 - 101+ coding interview problems https://github.com/hoanhan101/algo || https://hoanhan101.github.io/2020/01/06/101-challenges
 
-Go编程时光，一个零基础入门 Golang 的教程 https://github.com/iswbm/GolangCodingTime || http://golang.iswbm.com/en/latest/
+【[:star:][`*`]】 Go编程时光，一个零基础入门 Golang 的教程 https://github.com/iswbm/GolangCodingTime || http://golang.iswbm.com/en/latest/
+
+Go 学习之路：Go 开发者博客、Go 微信公众号、Go 学习资料（文档、书籍、视频） https://github.com/talkgo/read
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
