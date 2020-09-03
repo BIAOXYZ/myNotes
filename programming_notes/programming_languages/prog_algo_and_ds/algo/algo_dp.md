@@ -45,6 +45,10 @@
 
 动态规划套路详解 https://juejin.im/post/5d556b7ef265da03aa2568d5
 
+LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4Mzc5NDk4MA==&action=getalbum&album_id=1468452612273422336&scene=173
+- 算法萌新如何学好动态规划（1） https://mp.weixin.qq.com/s/rhyUb7d8IL8UW1IosoE34g
+- 算法萌新如何学好动态规划（2） https://mp.weixin.qq.com/s/jav9--Sqf9jOs8BSXNcUyw
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 动态规划之空间优化与总结回顾 https://www.cxyxiaowu.com/7848.html
