@@ -59,3 +59,5 @@ coursera 视频总是缓冲或者无法观看，有什么方法解决？ - 知�
 OpenSSL创始团队——后量子时代的密码学 https://www.zhihu.com/lives/892693839188488192
 - > 量子加密简介和后量子时代的密码学 (Tim Hudson)
 - > Bulletproof SSL and TLS第一译者
+  * 个人补充： Bulletproof SSL and TLS https://www.feistyduck.com/books/bulletproof-ssl-and-tls/
+    + > [《OpenSSL Cookbook》](https://www.feistyduck.com/books/openssl-cookbook/) -- A free 100-page book that covers the most frequently used OpenSSL features and commands, based on chapters 11 and 12 of Bulletproof SSL and TLS.
