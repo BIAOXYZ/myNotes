@@ -23,3 +23,61 @@ spec:
       - name: uiupdate1
 # 2. 用新镜像 hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com/ibmcom/cp4mcm-application-ui-amd64:3.6.0 替换deployment里的老镜像。
 ```
+
+From: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#registry-secret-existing-credentials
+```sh
+# 这种创建secret方式的好处我觉得应该是可以用不同账号登陆多个docker registry（因为你每登陆一个不同的registry，"auths"里键值对就会增加），
+# 然后用生成的config.json一次只创建一个secret就够用了。如果是上面那种方式每个docker registry的每个不同账户都得创建一个secret。
+
+[root@centos11 ~]# docker login hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com
+Username: liulliu@cn.ibm.com
+Password:
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@centos11 ~]#
+[root@centos11 ~]#
+[root@centos11 ~]# cat /root/.docker/config.json
+{
+        "auths": {
+                "hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com": {
+                        "auth": "bGl1bGxpdUBjbi5pYm0uY29tOmxsMTk4NTE5ODUxOTg1Ng=="
+                }
+        },
+        "HttpHeaders": {
+                "User-Agent": "Docker-Client/19.03.12 (linux)"
+        }
+}[root@centos11 ~]#
+
+[root@centos11 ~]# kubectl create secret generic regcred --from-file=.dockerconfigjson="/root/.docker/config.json" --type=kubernetes.io/dockerconfigjson
+secret/regcred created
+[root@centos11 ~]#
+[root@centos11 ~]#
+[root@centos11 ~]# oc get secret regcred -oyaml
+apiVersion: v1
+data:
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJoeWMtY3A0bWNtLXRlYW0tZG9ja2VyLWxvY2FsLmFydGlmYWN0b3J5LnN3Zy1kZXZvcHMuY29tIjogewoJCQkiYXV0aCI6ICJiR2wxYkd4cGRVQmpiaTVwWW0wdVkyOXRPbXhzTVRrNE5URTVPRFV4T1RnMU5nPT0iCgkJfQoJfSwKCSJIdHRwSGVhZGVycyI6IHsKCQkiVXNlci1BZ2VudCI6ICJEb2NrZXItQ2xpZW50LzE5LjAzLjEyIChsaW51eCkiCgl9Cn0=
+kind: Secret
+metadata:
+  creationTimestamp: "2020-09-04T06:41:16Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:.dockerconfigjson: {}
+      f:type: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-09-04T06:41:16Z"
+  name: regcred
+  namespace: default
+  resourceVersion: "10027"
+  selfLink: /api/v1/namespaces/default/secrets/regcred
+  uid: 285be4d8-37d4-4034-a7db-2cb4ea3cfe1e
+type: kubernetes.io/dockerconfigjson
+[root@centos11 ~]#
+```
