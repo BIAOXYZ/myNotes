@@ -185,7 +185,7 @@ int main()
 }
 ```
 - 安装`官方C/C++`插件，`Code Runner`插件我也装了（但是我试了下，disable掉这个插件也可以单步。所以应该是不装这个也可以）。
-- 安装MinGW。
+- 安装MinGW。我是安到了`C:\MinGW64`下，也就是说`gdb.exe`的完整路径是：`C:\MinGW64\bin\gdb.exe`。
 - 最关键的`launch.json`和`tasks.json`分别如下：
 
 `launch.json`
