@@ -17,3 +17,5 @@ Record and share your terminal sessions, the right way. https://asciinema.org/
 🎨 Diagram as Code for prototyping cloud system architectures https://github.com/mingrammer/diagrams || https://diagrams.mingrammer.com/
 
 docker-wine: Docker image that includes Wine and Winetricks for running Windows applications on Linux and macOS https://github.com/scottyhardy/docker-wine
+
+croc: Easily and securely send things from one computer to another 🐊 📦 https://github.com/schollz/croc
