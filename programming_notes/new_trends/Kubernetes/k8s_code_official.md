@@ -66,6 +66,13 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## [package reconcile] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/reconcile)
+
+- `type Request struct {` https://github.com/kubernetes-sigs/controller-runtime/blob/release-0.6/pkg/reconcile/reconcile.go#L46
+- `type Reconciler interface {` https://github.com/kubernetes-sigs/controller-runtime/blob/release-0.6/pkg/reconcile/reconcile.go#L88
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## [package cache] (https://godoc.org/sigs.k8s.io/controller-runtime/pkg/cache)
 
 ### https://github.com/kubernetes-sigs/controller-runtime/blob/b6d18c7c04ab33fe8671cb9cfb2e062b06aa4054/pkg/cache/cache.go
