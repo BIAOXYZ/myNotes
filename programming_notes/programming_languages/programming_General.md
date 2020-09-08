@@ -70,6 +70,8 @@ repl.it Languages https://repl.it/languages
 - https://repl.it/languages/cpp
 
 OnlineGDB https://www.onlinegdb.com/
+- > If you are new to debugging a program, then it will be helpful to get to know the usage of debugger. You can go through [this guide](https://www.onlinegdb.com/blog/brief-guide-on-how-to-use-onlinegdb-debugger/) on how to use debugger.
+  * > You can set breakpoint via GDB console as well, more details you can find on [this article](http://www.gdbtutorial.com/tutorial/how-use-gdb-example).
 - https://www.onlinegdb.com/online_python_compiler
 - https://www.onlinegdb.com/online_c_compiler
 
