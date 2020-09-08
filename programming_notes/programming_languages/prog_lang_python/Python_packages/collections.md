@@ -11,6 +11,8 @@ collections --- 容器数据类型 https://docs.python.org/zh-cn/3.7/library/col
 
 # deque
 
+How to use a deque in Python https://www.educative.io/edpresso/how-to-use-a-deque-in-python
+
 Deque in Python https://www.geeksforgeeks.org/deque-in-python/
 
 # OrderedDict
