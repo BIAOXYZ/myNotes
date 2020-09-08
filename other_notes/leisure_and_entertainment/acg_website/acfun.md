@@ -45,4 +45,7 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 
 # 其他
 
+AcFun 放映厅正式开业：44 部正版高分电影免费看 https://www.ithome.com/0/507/693.htm
+- > 违规昵称18345182020/9/8 16:32:08  你把西瓜视频放哪里了！西瓜也是免费，高清，无广告
+
 AcFun泄露数千万条用户信息，黑客已在Github公布部分数据 https://mp.weixin.qq.com/s/c4vJ7TnjT7DbbAkOGbPn2Q  -->  猴子啊猴子，叫我怎么敢信任你的安全水平。。。
