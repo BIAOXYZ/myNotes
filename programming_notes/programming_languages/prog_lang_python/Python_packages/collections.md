@@ -9,7 +9,13 @@ collections --- 容器数据类型 https://docs.python.org/zh-cn/3.7/library/col
 
 12. Collections https://book.pythontips.com/en/latest/collections.html
 
+# deque
+
+Deque in Python https://www.geeksforgeeks.org/deque-in-python/
+
 # OrderedDict
+
+Collections.OrderedDict() https://www.hackerrank.com/challenges/py-collections-ordereddict/problem
 
 OrderedDict in Python https://www.geeksforgeeks.org/ordereddict-in-python/
 - > An **OrderedDict** is a dictionary subclass that remembers the order that keys were first inserted. The only difference between `dict()` and `OrderedDict()` is that: **OrderedDict** ***preserves the order*** in which the keys are inserted. A regular dict doesn’t track the insertion order, and iterating it gives the values in an arbitrary order. By contrast, the order the items are inserted is remembered by OrderedDict.
