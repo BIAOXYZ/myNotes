@@ -1,4 +1,6 @@
 
+golang 里面全局匿名变量的作用是啥？ https://www.v2ex.com/t/705928
+
 [视频版]-Golang 深入理解 GMP https://www.v2ex.com/t/696070
 - > 视频版：典藏版-Golang深入理解GMP https://www.bilibili.com/video/BV1jT4y1j7Cd
 - > 文字版：[典藏版]Golang调度器GMP原理与调度全分析 https://www.jianshu.com/p/fa696563c38a

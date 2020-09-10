@@ -1,4 +1,8 @@
 
+数据库密码，审计要求，要定期更改，程序怎么可以适应？ https://www.v2ex.com/t/705848
+
+关于 PHP 和 Java 的加密解密问题，困扰一天了 https://www.v2ex.com/t/705838
+
 服务器安全请教 https://www.v2ex.com/t/705603
 
 现在有没有能实现格密码加密的软件 https://www.v2ex.com/t/700746
