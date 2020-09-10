@@ -168,6 +168,8 @@ We’re integrating Tectonic with Red Hat OpenShift https://coreos.com/tectonic/
 
 Notary is a project that allows anyone to have trust over arbitrary collections of data https://github.com/theupdateframework/notary
 
+Docker内容信任之Notary镜像签名方案初调研 https://medium.com/@xiaoxiaosue/docker%E5%86%85%E5%AE%B9%E4%BF%A1%E4%BB%BB%E4%B9%8Bnotary%E9%95%9C%E5%83%8F%E7%AD%BE%E5%90%8D%E6%96%B9%E6%A1%88%E5%88%9D%E8%B0%83%E7%A0%94-ce7c322ce68f
+
 # CirrOS
 
 CirrOS https://launchpad.net/cirros
