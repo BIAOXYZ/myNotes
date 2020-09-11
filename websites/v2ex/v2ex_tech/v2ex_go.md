@@ -1,4 +1,6 @@
 
+看到好多人吐槽 golang 的错误处理，但我用的很爽啊 https://www.v2ex.com/t/706008
+
 golang 里面全局匿名变量的作用是啥？ https://www.v2ex.com/t/705928
 
 [视频版]-Golang 深入理解 GMP https://www.v2ex.com/t/696070
