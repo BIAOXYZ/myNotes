@@ -233,8 +233,12 @@ Kubernetes client-go实战应用 https://juejin.im/post/5bc9d80df265da0ac7272dde
 
 ### RBAC
 
-- Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+- Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/ || 使用 RBAC 鉴权 https://v1-18.docs.kubernetes.io/zh/docs/reference/access-authn-authz/rbac/
+  * > **Aggregated ClusterRoles** 
+  * > **默认 Roles 和 Role Bindings**
 - Kubernetes kubectl create clusterrolebinding 命令详解 http://docs.kubernetes.org.cn/494.html
+
+k8s的认证-RBAC机制 https://www.cnblogs.com/shuiguizi/p/13143319.html
 
 RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/guide/rbac.html
 
