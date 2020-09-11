@@ -210,7 +210,10 @@ Red Hat Advanced Cluster Management for Kubernetes https://www.redhat.com/en/tec
 
 Red Hat Advanced Cluster Management for Kubernetes documentation https://github.com/open-cluster-management/rhacm-docs
 
-INSTALL https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/1.0/html-single/install/index
+INSTALL
+- https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/1.0/html-single/install/index
+- https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/install/installing#installing-red-hat-advanced-cluster-management-from-the-console
+  * > i. Copy your OpenShift Container Platform pull secret from [cloud.redhat.com/openshift/install/pull-secret](https://cloud.redhat.com/openshift/install/pull-secret) by selecting Copy pull secret. You will use the content of this pull secret in an step later in this procedure. Your OpenShift Container Platform pull secret is associated with your Red Hat Customer Portal ID, and is the same across all Kubernetes providers.
 
 ## Rancher Fleet
 
