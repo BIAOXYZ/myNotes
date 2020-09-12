@@ -41,6 +41,8 @@ KubiScan: A tool to scan Kubernetes cluster for risky permissions https://github
 
 # k8s and 机密计算
 
+谷歌将内存加密扩展到 Kubernetes：基于 AMD 最新 EPYC 处理器 https://www.ithome.com/0/508/007.htm
+
 当 Kubernetes 遇到机密计算，阿里巴巴如何保护容器内数据的安全？ https://developer.aliyun.com/article/770904
 - > https://developer.aliyun.com/live/43826
 - > https://yq.aliyun.com/live/43829
