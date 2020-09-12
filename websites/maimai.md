@@ -19,6 +19,9 @@ lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像l
 
 # 脉脉算法与数据结构
 
+头条笔试回忆 总体来说很简单，都是常见的题目，没有考传说中的红黑树 面试前刷下leetcode基本满分 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjczMTE1NDIsImlhdCI6MTU5OTc5Nzk2MH0.3D97s9-TopDhCY9XHqnSzlmvE6f7yPN3HV_hy6JlMvU
+- > ![](https://i9.taou.com/maimai/p/25449/5990_112_7LJTek4MSdCjzL-t480)
+
 面试腾讯被问了红黑树和tarjan算法，果然还是我太弱。感觉找工作leetcode都已经不够了，得把算法导论拿出来。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY4NDIxNjMsImlhdCI6MTU5NjA5MDkxMn0.OzrBEUmVsWxa3KhREQR8r3oMnF2BMt4-6ITSv5enKDM
 - > 这个有点难，不背很容易写错。如果只要求强联通分量的话，用kosaruju算法很容易写对，也是On复杂度，应该也可以过
 
@@ -114,6 +117,8 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 - > 来了就搬到我小区住，一下班没人看到就抱着我胳膊不放这是不小心吗
 
 ## PKoIuwOzIkE
+
+他回来了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3MzA2MjE0IiwiaWF0IjoxNTk5ODkzMDkwfQ.lUyrOLFjPc0gDRAyhforOmNUvMd6u8Q40vuW-kDL7oY
 
 中华酷联，只剩下华为了，巨大中华，也只剩下华为了。北朗摩爱华，只剩下爱立信和华为了，33年，一路走来，真不容易，无他，发个感慨而已。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYwODMyNTksImlhdCI6MTU4OTUyMTAyMH0.k-hgLpmY6QtJwE9k_rLxPRZh4yoMXSQFOGuALUrAjBM
 
