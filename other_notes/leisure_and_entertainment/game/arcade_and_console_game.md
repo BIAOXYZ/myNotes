@@ -61,6 +61,7 @@ sd快打旋风 隐藏技能表 通关流程 https://www.bilibili.com/video/BV1Yt
 有没有能直接在线玩的街机模拟器（NEOGEO游戏模拟器）？ - 知乎 https://www.zhihu.com/question/22548262
 - 小霸王，其乐无穷 https://www.yikm.net/
 - 游聚游戏平台 https://www.gotvg.com/
+- 约战竞技场 https://www.yzkof.com/
 - http://www.day86.top/
 
 VirtuaNES http://www.emulator-zone.com/doc.php/nes/virtuanes.html
