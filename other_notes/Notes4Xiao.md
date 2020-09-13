@@ -184,6 +184,9 @@ A Security Site https://asecuritysite.com/
 
 # libs
 
+Delegated PSI Cardinality & Contact Tracing https://github.com/nitrieu/delegated-psi-ca
+> This is the implementation of our Asiacryp 2020 paper: **Catalic: Delegated PSI Cardinality withApplications to Contact Tracing** [ePrint]().
+
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum
 > Occlum is a memory-safe, multi-process library OS (LibOS) for Intel SGX. As a LibOS, it enables legacy applications to run on SGX with little or even no modifications of source code, thus protecting the confidentiality and integrity of user workloads transparently.
 

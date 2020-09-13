@@ -225,6 +225,13 @@ noteson_Advanced_Mathematics_6th_edition_1st_volume.ipynb             //原始�
 
 Jupyter notebook远程访问服务器 https://blog.csdn.net/a819825294/article/details/55657496
 
+### Jupytext 
+
+Jupytext https://github.com/mwouts/jupytext
+- > Have you always wished Jupyter notebooks were plain text documents? Wished you could edit them in your favorite IDE? And get clear and meaningful diffs when doing version control? Then... Jupytext may well be the tool you're looking for!
+- > Jupytext can save Jupyter notebooks as
+  * Markdown and R Markdown documents,
+  * Scripts in many languages.
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 

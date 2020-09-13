@@ -1,6 +1,10 @@
 
 “玄魂工作室--安全圈” 知识星球内资源汇总 https://github.com/xuanhun/HackingResource
 
+# from Github
+
+应急响应实战笔记，一个安全工程师的自我修养。 https://github.com/Bypass007/Emergency-Response-Notes
+
 # Security News
 
 Linux 基金会联合厂商成立开源安全基金会 https://www.ithome.com/0/501/388.htm
