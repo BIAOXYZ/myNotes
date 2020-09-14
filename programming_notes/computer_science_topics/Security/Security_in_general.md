@@ -215,6 +215,8 @@ https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
 
 ## Others
 
+初识身份管理与访问控制IAM - PINGIDM的文章 - 知乎 https://zhuanlan.zhihu.com/p/38385298
+
 Linux下pwn从入门到放弃
 https://paper.seebug.org/481/
 
