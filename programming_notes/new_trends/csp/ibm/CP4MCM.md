@@ -5,7 +5,7 @@ IBM Cloud Paks https://www.ibm.com/cloud/paks/
 
 IBM Cloud Paks are enterprise-grade containerized software by combining container images with enterprise capabilities for deployment in production use cases with integrations for management and lifecycle operations. Features such as pre-configured deployments based on product expertise, rolling upgrades, rollbacks, security/vulnerability testing… https://github.com/IBM/cloud-pak
 
-## 子产品
+# 子产品
 
 IBM Cloud Pak for Multicloud Management https://www.ibm.com/cloud/cloud-pak-for-management 【也就是`CP4MCM`】
 
@@ -13,7 +13,7 @@ IBM Cloud Pak for Data https://www.ibm.com/products/cloud-pak-for-data
 
 IBM Cloud Pak for Applications https://www.ibm.com/cloud/cloud-pak-for-applications
 
-## 相关产品/组件
+#  CP4MCM相关产品/组件
 
 ### ibm-common-service
 
@@ -30,6 +30,10 @@ Creating and managing hybrid application resources https://www.ibm.com/support/k
 ### Infrastructure and Service Management
 
 Provisioning Virtual Machines and Instances https://www.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/Infra_mgmt/provisioning_virtual_machines_and_hosts/index.html
+
+### Technology preview
+
+Managing Runtimes https://www.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/mcm/applications/manage_runtimes.html
 
 ## 官网手册类
 
@@ -80,7 +84,6 @@ Onboarding LDAP users https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/i
 
 IBM Cloud Pak for Multicloud Management troubleshooting https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/mcm_troubleshoot.html
 - IBM Cloud Pak for Multicloud Management troubleshooting for cluster management https://www.ibm.com/support/knowledgecenter/SSFC4F_1.3.0/mcm/troubleshoot/cluster_manage_trouble.html
-
 
 ### Firefox浏览器上，CP4MCM的console之前可以登陆，后来登陆不上去了（Chrome就没成功过，但是有少数同事说自己成功过，不管了）
 
