@@ -23,6 +23,14 @@ Installing IBM Cloud Platform Common Services in your OpenShift Container Platfo
 
 Troubleshooting certificate management service https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.0/troubleshoot/ts_cert_mgmt.html
 
+### Application management
+
+Creating and managing hybrid application resources https://www.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/mcm/applications/managing_apps.html
+
+### Infrastructure and Service Management
+
+Provisioning Virtual Machines and Instances https://www.ibm.com/support/knowledgecenter/SSFC4F_2.0.0/Infra_mgmt/provisioning_virtual_machines_and_hosts/index.html
+
 ## 官网手册类
 
 Creating and managing subscriptions https://www.ibm.com/support/knowledgecenter/SSFC4F_1.2.0/mcm/applications/managing_subscriptions.html
