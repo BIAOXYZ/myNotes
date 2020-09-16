@@ -206,6 +206,11 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 # paper
 
+(TKDE 2018) Authenticating Aggregate Queries over Set-Valued Data with Confidentiality
+- `[25] C. Papamanthou, R. Tamassia, and N. Triandopoulos, “Optimal verification of operations on dynamic sets,” in Proc. CRYPTO, 2011, pp. 91–110.` https://eprint.iacr.org/2010/455.pdf
+  * > `Proof of Lemma 6 This direction follows by the fact that we can use the extended Euclidean algorithm and find polynomials q1(s),..., qt(s) such that`
+- `[26] R. Canetti, O. Paneth, D. Papadopoulos, and N. Triandopoulos, “Verifiable set operations over outsourced databases,” in Proc. PKC, 2014, pp. 113–130.` https://eprint.iacr.org/2013/724.pdf
+
 (PKC 2006) New Online/Offline Signature Schemes Without Random Oracles https://www.iacr.org/archive/pkc2006/39580335/39580335.pdf
 - > Definition 5 (Weak/strong division intractability).
 
