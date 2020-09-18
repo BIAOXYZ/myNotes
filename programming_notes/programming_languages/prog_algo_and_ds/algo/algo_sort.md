@@ -5,6 +5,8 @@
 - 十种排序算法 https://blog.csdn.net/coolwriter/article/details/78732728
 - 九大排序算法再总结 https://blog.csdn.net/xiazdong/article/details/8462393
 
+动画详解常用排序算法（1） https://mp.weixin.qq.com/s/XxmnKGLfstgbWjoj-eWddg
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
