@@ -49,6 +49,8 @@ LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4M
 - 算法萌新如何学好动态规划（1） https://mp.weixin.qq.com/s/rhyUb7d8IL8UW1IosoE34g
 - 算法萌新如何学好动态规划（2） https://mp.weixin.qq.com/s/jav9--Sqf9jOs8BSXNcUyw
 
+力扣上的 DP 问题分类汇总 https://leetcode-cn.com/circle/article/NfHhXD/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 动态规划之空间优化与总结回顾 https://www.cxyxiaowu.com/7848.html
