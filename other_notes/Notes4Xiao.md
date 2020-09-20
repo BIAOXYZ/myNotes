@@ -184,6 +184,8 @@ A Security Site https://asecuritysite.com/
 
 # libs
 
+柏拉图支持算法列表 https://github.com/Tencent/plato/blob/3b9f15dbd59498b05cefbc27e853cab726ed1be2/doc/ALGOs.md
+
 Delegated PSI Cardinality & Contact Tracing https://github.com/nitrieu/delegated-psi-ca
 > This is the implementation of our Asiacryp 2020 paper: **Catalic: Delegated PSI Cardinality withApplications to Contact Tracing** [ePrint]().
 
