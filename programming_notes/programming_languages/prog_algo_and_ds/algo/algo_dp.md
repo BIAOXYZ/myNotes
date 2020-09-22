@@ -11,6 +11,9 @@
   * > Floyd-Warshall算法 https://zh.wikipedia.org/wiki/Floyd-Warshall%E7%AE%97%E6%B3%95 || Floyd–Warshall algorithm https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
   * > 维特比算法 https://zh.wikipedia.org/wiki/%E7%BB%B4%E7%89%B9%E6%AF%94%E7%AE%97%E6%B3%95 || Viterbi algorithm https://en.wikipedia.org/wiki/Viterbi_algorithm
 
+动态规划 https://oi-wiki.org/dp/
+- 状压 DP https://oi-wiki.org/dp/state/
+
 看动画轻松理解「递归」与「动态规划」 https://juejin.im/post/5c2308abf265da615304ce41 || 看动画轻松理解「递归」与「动态规划」 - 程序员吴师兄的文章 - 知乎 https://zhuanlan.zhihu.com/p/53415718
 
 什么是动态规划（Dynamic Programming）？动态规划的意义是什么？ - 知乎 https://www.zhihu.com/question/23995189
