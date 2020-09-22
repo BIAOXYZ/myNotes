@@ -138,6 +138,7 @@ freeCodeCamp Guide https://guide.freecodecamp.org/
 
 - https://www.programiz.com/python-programming
 - https://www.programiz.com/c-programming
+  * https://www.programiz.com/c-programming/examples
 - https://www.programiz.com/cpp-programming
 
 ## HackerRank
