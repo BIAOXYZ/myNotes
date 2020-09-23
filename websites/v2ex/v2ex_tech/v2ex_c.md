@@ -1,4 +1,6 @@
 
+函数外有分配内存的 char *outside，函数内有分配内存的 char *inside，如果先将 outside 所指的内存释放掉，然后将 inside 指针赋值给 outside，可行吗？函数结束后会被释放吗？有没有风险。 https://www.v2ex.com/t/709858
+
 求解一个简单的 C 语言的问题, 事实证明我一直是错的 https://www.v2ex.com/t/701272
 
 C 的语法基本看完了，下面该学什么？ https://www.v2ex.com/t/649748
