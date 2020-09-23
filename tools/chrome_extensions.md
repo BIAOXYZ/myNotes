@@ -106,6 +106,7 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
   * Bilibili直播间挂机助手 https://greasyfork.org/en/scripts/37095-bilibili%E7%9B%B4%E6%92%AD%E9%97%B4%E6%8C%82%E6%9C%BA%E5%8A%A9%E6%89%8B  
   * 百度网盘直链下载助手 https://greasyfork.org/en/scripts/39504-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B
 - OpenUserJS https://openuserjs.org/
+- Sleazy https://sleazyfork.org/zh-CN/scripts
 
 ## not frequently used
 
