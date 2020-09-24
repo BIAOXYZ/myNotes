@@ -211,6 +211,11 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 谷歌上网助手 Ghelper Beta https://chrome.zzzmh.cn/info?token=cieikaeocafmceoapfogpffaalkncpkc
 
+## 其他插件站
+
+教你发挥 Chrome 的全威力：通过 crx 文件安装扩展程序 https://www.ithome.com/0/510/521.htm
+- > Crx4Chrome：https://www.crx4chrome.com/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
