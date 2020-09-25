@@ -1,4 +1,6 @@
 
+使用区块链给图片建立信任 https://www.v2ex.com/t/710244
+
 数据库密码，审计要求，要定期更改，程序怎么可以适应？ https://www.v2ex.com/t/705848
 
 关于 PHP 和 Java 的加密解密问题，困扰一天了 https://www.v2ex.com/t/705838
