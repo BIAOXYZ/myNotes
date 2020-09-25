@@ -7,13 +7,16 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## [CentOS docker安装] (https://docs.docker.com/install/linux/docker-ce/centos/ --> https://docs.docker.com/engine/install/centos/)
+## [CentOS docker安装] ( ~~https://docs.docker.com/install/linux/docker-ce/centos/~~  -->  https://docs.docker.com/engine/install/centos/)
 //注：后来碰到了`Red Hat Enterprise Linux Server 7.6 (Maipo)`，安装是一模一样的。
 
 - 卸载旧版本
 ```
 未执行，因为是新的虚拟机
 ```
+> 这是后来补的，因为后面不止一次碰到需要卸载的情况了（甚至是在工行Harbor项目之后也不止一次）。。。所以贴一下方便复制：
+>> `yum remove -y docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine`
+>>> 上面那句好像只对老版本docker有效，卸载新版本官方没有，应该是这个：`yum remove -y docker-ce docker-ce-cli containerd.io`
 
 - 使用 yum 安装
 ```sh
