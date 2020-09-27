@@ -1,4 +1,7 @@
 
+生产环境中正在运行的 MySQL，引擎由 myisam 突然改成 innodb 有什么后果？ https://www.v2ex.com/t/710776
+- > 要切换表的引擎等于重建表，索引，数据，触发器等等都要重新建立，主要的重建时间在于数据的迁移阶段。用 pt 做这个事比原生的 ddl online 好些。pt 主要是建立新表，然后插入数据，最后删除旧表并重命名新表。至于有什么影响，主要在于你的业务需求，比如你业务有用到 myisam 的特性而 innodb 没有这个，自然会有影响，否则没啥问题。
+
 写了篇新文章 - MySQL PostgreSQL 和 SQLite 都有什么区别？用哪个？ https://www.v2ex.com/t/703105
 - > 哈哈，找到原文了： https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems  https://blog.ssdnodes.com/blog/sqlite-vs-mysql-vs-postgresql/
 
