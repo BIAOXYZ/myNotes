@@ -40,6 +40,8 @@ ECC加密算法 https://blog.csdn.net/u010129119/article/details/62887707
 
 zkpblog -- 零知识证明相关的一些总结 https://github.com/huyuguang/zkpblog
 
+PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. https://github.com/PrivateBin/PrivateBin || https://privatebin.info/
+
 # others
 
 - Java密码学 非对称加密以及使用secp256k1进行数字签名（ECDSA），也适合Android（上） https://www.jianshu.com/p/676a0eb33d31
