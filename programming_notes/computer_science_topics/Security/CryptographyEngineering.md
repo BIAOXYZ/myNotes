@@ -41,6 +41,8 @@ ECC加密算法 https://blog.csdn.net/u010129119/article/details/62887707
 zkpblog -- 零知识证明相关的一些总结 https://github.com/huyuguang/zkpblog
 
 PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. https://github.com/PrivateBin/PrivateBin || https://privatebin.info/
+- > This is a fork of ZeroBin, originally developed by Sébastien Sauvage. ZeroBin was refactored to allow easier and cleaner extensions. PrivateBin has many more features than the original ZeroBin. It is, however, still fully compatible to the original ZeroBin 0.19 data storage scheme. Therefore, such installations can be upgraded to PrivateBin without losing any data.
+  >> ZeroBin https://github.com/sebsauvage/ZeroBin
 
 # others
 
