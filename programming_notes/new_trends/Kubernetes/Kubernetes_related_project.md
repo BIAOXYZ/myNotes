@@ -307,6 +307,8 @@ konstellate - Free and Open Source GUI to Visualize Kubernetes Applications. htt
 Kuboard简介 https://github.com/eip-work/kuboard-press || https://kuboard.cn/
 - 搭建 NFS Server https://kuboard.cn/learning/k8s-intermediate/persistent/nfs.html
 
+kubectl-tree https://github.com/ahmetb/kubectl-tree
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 # projects based on or related to k8s (relatively matured)

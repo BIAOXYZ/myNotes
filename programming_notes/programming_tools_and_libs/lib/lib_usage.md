@@ -331,6 +331,11 @@ TensorFlow 2.0 version's Tutorials and Examples, CNN, RNN, GAN tutorials, etc. T
 
 谷歌TensorFlow 2.1.0正式发布，最后支持Python 2 https://www.ithome.com/0/468/108.htm
 
+基于Tensorflow2的深度学习开源书籍 https://github.com/Qinbf/Deep-Learning-Tensorflow2
+- > 本书介绍视频： https://www.bilibili.com/video/BV19A411n7Fn
+- > AI MOOC是我自己创办的一个免费的人工智能慕课平台，网站地址为 https://mooc.ai-xlab.com/ 。以后我会在上面不断更新最新的人工智能课程。
+  >> 机器学习算法基础-覃秉丰 https://www.bilibili.com/video/BV1Rt411q7WJ
+
 ### [pytorch](https://github.com/pytorch/pytorch) (http://pytorch.org/)
 
 PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation https://github.com/chenyuntc/pytorch-book

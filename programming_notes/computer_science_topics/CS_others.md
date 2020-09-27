@@ -7,6 +7,9 @@ How to Make a Computer Operating System in C++ https://samypesse.gitbook.io/how-
 
 《30天自制操作系统》源码中文版。自己制作一个操作系统（OSASK）的过程 https://github.com/yourtion/30dayMakeOS
 
+u-root https://github.com/u-root/u-root || https://u-root.org/
+- > A fully Go userland with Linux bootloaders! u-root can create a one-binary root file system (initramfs) containing a busybox-like set of tools written in Go.
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj
@@ -26,6 +29,10 @@ Write a simple interpreter of C. Inspired by c4 and largely based on it. https:/
 - 一起做个简单的数据库（六）：The Cursor Abstraction https://mp.weixin.qq.com/s/JbetQWlP9mwlRQ3xgVvcDg
 
 Build a distributed SQL database from the ground up 从零开始写分布式数据库 https://github.com/ngaut/builddatabase
+
+## crypto and security project (hard to be placed into the academic related repo)
+
+Urkel -- An optimized and cryptographically provable key-value store. Written in C. https://github.com/chjj/liburkel 
 
 ## other project
 
