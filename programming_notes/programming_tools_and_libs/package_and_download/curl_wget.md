@@ -287,4 +287,6 @@ $wget -O wordpress.zip http://www.minjieren.com/download.aspx?id=1080
 
 linux 下载 命令 wget 和 curl https://blog.csdn.net/freeking101/article/details/53691481
 
+用wget下载需要用户名和密码认证的网站或者ftp服务器文件 https://www.jianshu.com/p/dc01f7a0436f
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
