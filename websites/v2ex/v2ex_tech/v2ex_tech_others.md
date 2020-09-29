@@ -1,4 +1,6 @@
 
+第一次接触会觉得比较有意思的编程技术 https://www.v2ex.com/t/711436
+
 各位大佬，日常代码里你会主动使用 try catch 么？ https://www.v2ex.com/t/709674
 
 某些语言的协程机制，其作用是什么，是否会造成额外的开销 https://www.v2ex.com/t/702723

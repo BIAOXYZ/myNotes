@@ -218,6 +218,10 @@ Kubernetes the Hard Way - completely on your Linux laptop.. in Containers! https
 - 使用kubeadm安装Kubernetes 1.12 https://blog.frognew.com/2018/10/kubeadm-install-kubernetes-1.12.html
 - 使用kubeadm安装Kubernetes 1.15 https://www.kubernetes.org.cn/5551.html || https://blog.frognew.com/2019/07/kubeadm-install-kubernetes-1.15.html
 
+使用 kainstall 工具一键部署 kubernetes 高可用集群 https://www.v2ex.com/t/711530
+- > 今天给大家介绍一款工具: kainstall 一个由纯 bash 脚本编写的工具。可一键部署 kubernetes 高可用集群，增删节点，管理 k8s 集群变得省时省力。话不多说，请看下面介绍
+  >> kainstall = kubeadm install kubernetes，基于kubeadmin一键部署kubernetes集群 https://github.com/lework/kainstall
+
 ## kuberbetes 集群配置
 
 ### kubernetes命令自动补全
