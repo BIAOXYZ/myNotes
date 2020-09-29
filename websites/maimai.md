@@ -19,6 +19,8 @@ lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像l
 
 # 脉脉算法与数据结构
 
+leetcode面试常考题接龙，我先来一个：反转链表。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NDgxODIxIiwiaWF0IjoxNjAxMjY0MjUwfQ.nNlMwAh-BNB1PV3ua07cIN3C-38lccY9ShcNVD7n47s
+
 头条笔试回忆 总体来说很简单，都是常见的题目，没有考传说中的红黑树 面试前刷下leetcode基本满分 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjczMTE1NDIsImlhdCI6MTU5OTc5Nzk2MH0.3D97s9-TopDhCY9XHqnSzlmvE6f7yPN3HV_hy6JlMvU
 - > ![](https://i9.taou.com/maimai/p/25449/5990_112_7LJTek4MSdCjzL-t480)
 
