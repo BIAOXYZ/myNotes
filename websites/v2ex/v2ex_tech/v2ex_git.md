@@ -1,4 +1,6 @@
 
+git 自动提交脚本 push 后显示的是别人的帐号（确定邮箱不是那个人的） https://www.v2ex.com/t/712058
+
 萌新请教 Git Rebase 问题 https://www.v2ex.com/t/695853
 
 怎么处理 git 下面 lfs 文件“坏掉”的问题？现在没办法 checkout branch 了 https://www.v2ex.com/t/683636
