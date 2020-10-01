@@ -8,6 +8,8 @@ libpod is a library used to create container pods. Home of Podman. https://githu
 
 # 其他
 
+利用Podman和Buildah构建容器镜像 https://mp.weixin.qq.com/s/WQA729T78I4c24_gH1VXxw || https://www.giantswarm.io/blog/building-container-images-with-podman-and-buildah
+
 Podman 初次体验 https://zdyxry.github.io/2019/10/12/Podman-%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/
 - Buildah 初次体验 https://zdyxry.github.io/2019/10/19/Buildah-%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/
 - Skopeo 初次体验 https://zdyxry.github.io/2019/10/26/Skopeo-%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/
