@@ -15,6 +15,8 @@
 有什么好玩的网页游戏？ - 青天璇的回答 - 知乎 https://www.zhihu.com/question/21016962/answer/669211976
 > 这三款是我平常喜欢的，更多的在线页游可以看这里：io游戏集结 http://iogames.space/
 
+国庆假期来临，一起来玩 io 游戏吧 https://www.ithome.com/0/511/964.htm
+
 ## 雀魂 v.s. 雀姬
 
 《雀魂》与《雀姬》，这两款二次元日本麻将有什么区别？ - 4399游戏盒的文章 - 知乎 https://zhuanlan.zhihu.com/p/56072311
