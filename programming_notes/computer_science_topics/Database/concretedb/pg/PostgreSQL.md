@@ -83,6 +83,7 @@ http://francs3.blog.163.com/blog/static/4057672720144194492582/
 <<postgresql之ctid的浅谈>>
 http://www.cnblogs.com/lottu/p/5613098.html
 
+What is the Equivalent of ROWID in PostgreSQL? https://www.enterprisedb.com/postgres-tutorials/what-equivalent-rowid-postgresql
 
 ### pg_depend
 
