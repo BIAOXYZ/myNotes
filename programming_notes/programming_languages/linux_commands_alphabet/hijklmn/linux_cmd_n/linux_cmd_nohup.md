@@ -19,6 +19,8 @@ nohup, &作用 https://segmentfault.com/a/1190000014653953
 
 ## 1
 
+### 1.1
+
 最常见的用法就是`nohup <your_cmd> &`直接放后台执行，然后期间通过`tail -f nohup.out`看看执行的情况。例如下面这个例子：
 ```sh
 [root@oprinstall-inf offline]# nohup cloudctl case launch \
@@ -62,6 +64,8 @@ uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:fdab9a2f008dc4d16c4509fe
 > 注意，上面那个例子里`nohup`和`&`引导的语句因为换行了不是那么清晰，其实去掉换行和末尾斜杠就是下面这个样子，符合`nohup <your_cmd> &`的结构：
 >> `nohup cloudctl case launch --case $HOME/offline/${CASE_ARCHIVE} --inventory ${CASE_INVENTORY_SETUP} --action mirror-images --args "--registry ${PORTABLE_DOCKER_REGISTRY} --inputDir $HOME/offline" --tolerance 1 &`
 
+### 1.2
+
 再补个更清晰简单的例子：
 ```sh
 {root@bandore1 tmp}$ export YOURCMD='ping -c 100 www.google.com'
@@ -88,5 +92,118 @@ ping -c 100 www.google.com
 64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=17 ttl=100 time=49.1 ms
 64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=18 ttl=100 time=49.1 ms
 ^C
+{root@bandore1 tmp}$
+```
+
+执行完成后`nohup.out`文件还在，并且可以查看完整的内容：
+```sh
+{root@bandore1 tmp}$ ls
+nohup.out
+{root@bandore1 tmp}$ cat nohup.out
+PING www.google.com (172.217.11.228) 56(84) bytes of data.
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=1 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=2 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=3 ttl=100 time=49.4 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=4 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=5 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=6 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=7 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=8 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=9 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=10 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=11 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=12 ttl=100 time=49.2 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=13 ttl=100 time=50.4 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=14 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=15 ttl=100 time=53.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=16 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=17 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=18 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=19 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=20 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=21 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=22 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=23 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=24 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=25 ttl=100 time=49.2 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=26 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=27 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=28 ttl=100 time=54.3 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=29 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=30 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=31 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=32 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=33 ttl=100 time=48.9 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=34 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=35 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=36 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=37 ttl=100 time=49.5 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=38 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=39 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=40 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=41 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=42 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=43 ttl=100 time=49.2 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=44 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=45 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=46 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=47 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=48 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=49 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=50 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=51 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=52 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=53 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=54 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=55 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=56 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=57 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=58 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=59 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=60 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=61 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=62 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=63 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=64 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=65 ttl=100 time=49.2 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=66 ttl=100 time=49.2 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=67 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=68 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=69 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=70 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=71 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=72 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=73 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=74 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=75 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=76 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=77 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=78 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=79 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=80 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=81 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=82 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=83 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=84 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=85 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=86 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=87 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=88 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=89 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=90 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=91 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=92 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=93 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=94 ttl=100 time=48.9 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=95 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=96 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=97 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=98 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=99 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=100 ttl=100 time=49.1 ms
+
+--- www.google.com ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 99113ms
+rtt min/avg/max/mdev = 48.991/49.229/54.308/0.683 ms
 {root@bandore1 tmp}$
 ```
