@@ -211,6 +211,9 @@ KIND: Kubernetes IN Docker - local clusters for testing Kubernetes https://kind.
 
 使用 Kind 搭建你的本地 Kubernetes 集群 https://juejin.im/post/5c99ed6c6fb9a0710e47ebeb
 
+使用 KinD 加速 CI/CD 流水线 https://www.qikqiak.com/post/accelerate-ci-cd-pipelines-with-kind/ || https://mp.weixin.qq.com/s/RLZSPLZx1TLbxoAM4MgQFw
+- > 原文链接：https://medium.com/better-programming/accelerate-your-ci-cd-pipelines-with-kubernetes-in-docker-kind-109a67b39c82
+
 ## kubespray
 
 Deploy a Production Ready Kubernetes Cluster https://github.com/kubernetes-sigs/kubespray
