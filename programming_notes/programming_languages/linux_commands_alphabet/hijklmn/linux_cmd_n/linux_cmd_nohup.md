@@ -61,3 +61,32 @@ uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:fdab9a2f008dc4d16c4509fe
 ```
 > 注意，上面那个例子里`nohup`和`&`引导的语句因为换行了不是那么清晰，其实去掉换行和末尾斜杠就是下面这个样子，符合`nohup <your_cmd> &`的结构：
 >> `nohup cloudctl case launch --case $HOME/offline/${CASE_ARCHIVE} --inventory ${CASE_INVENTORY_SETUP} --action mirror-images --args "--registry ${PORTABLE_DOCKER_REGISTRY} --inputDir $HOME/offline" --tolerance 1 &`
+
+再补个更清晰简单的例子：
+```sh
+{root@bandore1 tmp}$ export YOURCMD='ping -c 100 www.google.com'
+{root@bandore1 tmp}$ echo $YOURCMD
+ping -c 100 www.google.com
+{root@bandore1 tmp}$
+{root@bandore1 tmp}$ nohup $YOURCMD &
+[1] 19683
+{root@bandore1 tmp}$ nohup: ignoring input and appending output to ‘nohup.out’
+
+{root@bandore1 tmp}$
+{root@bandore1 tmp}$ tail -f nohup.out
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=6 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=7 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=8 ttl=100 time=49.0 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=9 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=10 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=11 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=12 ttl=100 time=49.2 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=13 ttl=100 time=50.4 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=14 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=15 ttl=100 time=53.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=16 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=17 ttl=100 time=49.1 ms
+64 bytes from den02s01-in-f4.1e100.net (172.217.11.228): icmp_seq=18 ttl=100 time=49.1 ms
+^C
+{root@bandore1 tmp}$
+```
