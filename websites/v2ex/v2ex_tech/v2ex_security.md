@@ -1,4 +1,12 @@
 
+想弄个公平抽奖的程序，想问问有什么类似彩票这种不太容易操纵的随机数吗 https://www.v2ex.com/t/713011
+- > Cloudflare 的 League of Entropy 了解一下，利用多个不同机构的随机源获取去中心化的随机数
+- > https://www.random.org/
+- > Intel DRNG
+- > 比如说取开奖前几分钟的全国省会的天气的平均值，这个基本不可能人为控制，应该也可以进行回溯
+- > 取天气温度 x 股票的尾数，能同时操控这两个数据也是神人了
+- > 这个需求计算机科学家和统计学家们很早就碰到了呀，所以 https://www.random.org/ 解君愁： <br> `RANDOM.ORG offers true random numbers to anyone on the Internet. The randomness comes from atmospheric noise, which for many purposes is better than the pseudo-random number algorithms typically used in computer programs.` <br> 他们还提供了免费的 API
+
 使用区块链给图片建立信任 https://www.v2ex.com/t/710244
 
 数据库密码，审计要求，要定期更改，程序怎么可以适应？ https://www.v2ex.com/t/705848

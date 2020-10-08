@@ -1,4 +1,7 @@
 
+[7 天用 Go 从零实现系列] 第四期 RPC 框架 GeeRPC 已经完结 https://www.v2ex.com/t/713101
+- 7 days golang apps from scratch https://github.com/geektutu/7days-golang
+
 看到好多人吐槽 golang 的错误处理，但我用的很爽啊 https://www.v2ex.com/t/706008
 
 golang 里面全局匿名变量的作用是啥？ https://www.v2ex.com/t/705928

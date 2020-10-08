@@ -1,4 +1,14 @@
 
+Linux 如何显示文件夹拷贝或者移动的进度条 https://www.v2ex.com/t/712956
+- > `rsync --info=progress2 source dest`
+- > linux 的 gui 复制也都带进度条吧 <br> pv 和 rsync 都可以有进度条复制文件夹，你再查查
+- > python 的 tqdm 模块可以实现，pip 安装之后直接就有二进制命令了。使用用法 help 一下就 ok 了
+- > `rsync source dest | pv -lpes 文件数量` 这样？
+- 自己查询补充的：
+  * Rsync Show Progress Bar While Copying Files https://www.cyberciti.biz/faq/show-progress-during-file-transfer/
+  * Showing total progress in rsync: is it possible? https://serverfault.com/questions/219013/showing-total-progress-in-rsync-is-it-possible
+  * https://explainshell.com/explain?cmd=rsync+-axAXW+--info%3Dprogress2+%2Fmedia%2Fsource%2F+%2Fmedia%2Ftarget%2F
+
 crontab 的 week 位置给定 */2 该如何理解？ https://www.v2ex.com/t/694438
 
 求问 怎么让 Linux hung 住几分钟？ https://www.v2ex.com/t/694281
