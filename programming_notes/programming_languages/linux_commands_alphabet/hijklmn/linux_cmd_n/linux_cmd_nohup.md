@@ -16,3 +16,48 @@ nohup, &作用 https://segmentfault.com/a/1190000014653953
   >> 明明打印到文件了，为啥tail -f看不到 https://mp.weixin.qq.com/s/l2GDtJqcaup8cdQ0j7Ivuw
 
 # 个人实战
+
+## 1
+
+最常见的用法就是`nohup <your_cmd> &`直接放后台执行，然后期间通过`tail -f nohup.out`看看执行的情况。例如下面这个例子：
+```sh
+[root@oprinstall-inf offline]# nohup cloudctl case launch \
+>   --case $HOME/offline/${CASE_ARCHIVE} \
+>   --inventory ${CASE_INVENTORY_SETUP} \
+>   --action mirror-images \
+>   --args "--registry ${PORTABLE_DOCKER_REGISTRY} --inputDir $HOME/offline" \
+>   --tolerance 1 &
+[1] 29399
+[root@oprinstall-inf offline]# nohup: ignoring input and appending output to 'nohup.out'
+
+[root@oprinstall-inf offline]#
+[root@oprinstall-inf offline]# tail -f nohup.out
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:7e976fb4f609a6d952c8b9e5ae50f9a366e14fc564c2b6ba08aec3ae80f66b02 737.8KiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:793a599bfe0274f987fbcb56ab612a1d54f2e68d6db8f21a4a7d37c83456f35c 733.8KiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:1487969eddbf6b98e77a4c390e6a2fadaec72e41af1e6309371a6993569ed1a6 733.7KiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:9b409f7229f2ef104f5fa3038932b4fc7409dd60f05c45d044af51f2007c7198 2.462MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:e811b70bf467785ba3d381461aa9277a4be0bd734228cb6b592b201f54638fa3 78.01MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:1d1c83118b643115a5d1cdf7e409bd2867fafd7275ac363977b2943365e1b3e1 8.776MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:99d74e27d373c9984418301349a1034033525e32d8bbd3b2e44ea4a30a0c7977 135.6MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:81b760445d2ad30fd5d2bfd3f898e3d8ecc02997ac6aebd14d9c6903b1577472 62.47MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cp4mcm-grc-risk sha256:11b0a4714febea8effe8e9f77fc872a4b673663f4e3d9d81a8079cfb27dd1c2d 16.47MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:1c9f515fc6ab2b7ebfcaffd8af681b68869d78a3b19c69e87c296363ab1bc2fe 72.7MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:65d4bdbf45bc05da94b960c725723813c8d890fa2c672376b7def653c14badfa 8.765MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:efa8423a1b64055d814b2980afdcaa2523b40c28742ee0cfb4df941346fbbbe3 7.768MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:4c742e47cb5f4452c2d502b1bcf57f0d8431a1d780f8e1f29318b2d8f8b53b9d 76.58MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:584c2af4fa17bebcc80eeb646a81639f2d7935a88f5b500ddb4344e598cd11fa 73.01MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:357af4de1d029ebdb7ad17ea5669d5b8276b2584bd8403189ade12c9d5108026 8.534MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/cluster-api-provider-aks sha256:47950128b883c5213b01a74cab338ff65f72bd7f6efdef7c39fb5fce49fed120 80.1MiB
+sha256:2ca5e69e244d2da7368f7088ea3ad0653c3ce7aaccd0b8823d11b0d5de956002 9.30.68.37:82/cp/cp4mcm/busybox:2.1.3-ibm-management-kong-amd64
+sha256:ce5a79b993692ec92344dbf99d1778a93e4856f9b9a70c9dbd453212a17006cb 9.30.68.37:82/cp/cp4mcm/cam-install-operator:2.1.3-ibm-management-cam-install-ppc64le
+sha256:1383206c2dd0a2f3f8a81b521cc1fe466e24acd948622ba6e54adadcea8d0c50 9.30.68.37:82/cp/cp4mcm/cam-install-operator:2.1.3-ibm-management-cam-install-amd64
+uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:5381955e35b0492dff8705a54328590b7a98cd373de8bef3cba5a20c89265335 73.04MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:368277e598ecf22aeeec01da3139969cf89354a4a75b51538dc773aaf7bb9cee 5.157MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:fada17719cd7c18d0a626aa3b5938c7b459fb90a766b6cccb35f6dd0c8d5d11b 6.809MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:c9fa7d57b9028d4bd02b51cef3c3039fa7b23a8b2d9d26a6ce66b3428f6e2457 72.71MiB
+uploading: 9.30.68.37:82/cp/cp4mcm/config-parser sha256:fdab9a2f008dc4d16c4509fe33d22ce21f60fa1cce24949a3a92fd64e9fb8b33 2.357MiB
+^C
+[root@oprinstall-inf offline]#
+```
+> 注意，上面那个例子里`nohup`和`&`引导的语句因为换行了不是那么清晰，其实去掉换行和末尾斜杠就是下面这个样子，符合`nohup <your_cmd> &`的结构：
+>> `nohup cloudctl case launch --case $HOME/offline/${CASE_ARCHIVE} --inventory ${CASE_INVENTORY_SETUP} --action mirror-images --args "--registry ${PORTABLE_DOCKER_REGISTRY} --inputDir $HOME/offline" --tolerance 1 &`
