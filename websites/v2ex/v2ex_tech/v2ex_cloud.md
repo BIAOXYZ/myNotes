@@ -1,4 +1,12 @@
 
+k8s 拉取私有仓库的镜像时出错 https://www.v2ex.com/t/713336
+
+小白求问： k8s 能生成相同 pod 的不同版本吗？ https://www.v2ex.com/t/713259
+
+Kubernetes 下如何方便地获取不断重启的服务的日志 https://www.v2ex.com/t/713435
+- > 容器的话 stdout/stderr 输出的日志可以搜集到 ELK 或者其余后端存储
+- > 日志管理直接上 ELK 。“让服务检测机制临时失效” 可以通过修改 YAML 实现，比如让 probes 返回正常，在 command args 里用 bash -c "your-service; tail -f /dev/null" 等待
+
 请问 k8s 如何将 pod 均匀调度到每个 node 上 https://www.v2ex.com/t/699835
 
 k8s 该怎么在多个 replica 的情况下只让其中一个接受流量 https://www.v2ex.com/t/694433

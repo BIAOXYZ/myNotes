@@ -1,4 +1,12 @@
 
+DD 命令如何在后台运行? https://www.v2ex.com/t/713421
+- > 因为 screen 命令的语法，末尾是 [cmd [args]]，无法接受“dd if.....” 这么复杂的语句
+- > 你先 screen 一下，然后执行命令，不要直接 screen xxx 一次性执行
+- > 开个 mosh，在里面运行试试呢
+- > 把语句写到 bash 文件里，screen 运行 bash 文件
+- > 用 tmux 。运行 dd 之后，Ctrl + B, d detach 。然后用 tmux a 就可以恢复
+- > 不要用 dd，直接这样就可以：`ssh root@xx.xx.xx.xx "</dev/vda gzip >/mnt/data/win2012.img.gz &"`
+
 Linux 如何显示文件夹拷贝或者移动的进度条 https://www.v2ex.com/t/712956
 - > `rsync --info=progress2 source dest`
 - > linux 的 gui 复制也都带进度条吧 <br> pv 和 rsync 都可以有进度条复制文件夹，你再查查
