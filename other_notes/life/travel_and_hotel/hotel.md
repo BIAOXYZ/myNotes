@@ -26,6 +26,19 @@ Hilton：
 IBM 001368083 International
 ```
 
+Marriott hotels Corporate and Discount Codes Full List https://hotelcorporatecodes.com/87/marriott-hotels-corporate-and-discount-codes-full-list.html
+```console
+IBM IBM Corporation
+MCO Microsoft
+```
+
+Articles Tagged: Hilton https://hotelcorporatecodes.com/hilton
+- Some of Hilton corporate discount code list https://hotelcorporatecodes.com/83/some-of-hilton-corporate-discount-code-list.html
+
+HILTON CORPORATE CODES AND DISCOUNT CODES https://goingawesomeplaces.com/hilton-corporate-codes-and-discount-codes/
+
+--------------------------------------------------
+
 常旅客攻略：各大酒店集团公司协议价代码汇总（万豪/希尔顿/IHG/凯悦） https://www.hoteldig.com/hotels-corporate-codes/
 
 tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
