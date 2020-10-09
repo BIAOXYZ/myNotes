@@ -89,6 +89,8 @@ https://segmentfault.com/u/vvpale/articles
 - SHELL(bash)脚本编程一：变量 https://segmentfault.com/a/1190000008053195
 - SHELL(bash)脚本编程八：技巧 https://segmentfault.com/a/1190000008507953
 
+一篇文章Shell脚本快速入门 https://www.cnblogs.com/f-ck-need-u/p/12275851.html 【by 骏马金龙】
+
 # shell脚本调试
 
 Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
