@@ -5,6 +5,9 @@ https://github.com/docker/distribution/blob/master/README.md
 - `For these use cases and others, deploying your own registry instance may be the better choice.` https://github.com/docker/docker.github.io/blob/master/registry/deploying.md
 - `If you are contributing code, see the instructions for building a development environment.` https://github.com/docker/distribution/blob/master/BUILDING.md
 
+配置私有仓库(使用registry镜像搭建一个私有仓库) https://www.cnblogs.com/wade-luffy/p/6590849.html
+- > 此外，Registry默认的存储位置为/var/lib/registry，可以通过-v参数来映射本地的路径到容器内。
+
 # (Uber) Kraken
 
 P2P Docker registry capable of distributing TBs of data in seconds https://github.com/uber/kraken
