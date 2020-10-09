@@ -19,13 +19,14 @@ List of chained-brand hotels https://en.wikipedia.org/wiki/List_of_chained-brand
 
 ## 大公司优惠码
 
+Hotel Corp Code https://hotelcorporatecodes.com/97/hotel-corp-code.html
 ```console
 Hilton：
 
 IBM 001368083 International
 ```
 
-Hotel Corp Code https://hotelcorporatecodes.com/97/hotel-corp-code.html
+常旅客攻略：各大酒店集团公司协议价代码汇总（万豪/希尔顿/IHG/凯悦） https://www.hoteldig.com/hotels-corporate-codes/
 
 tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
