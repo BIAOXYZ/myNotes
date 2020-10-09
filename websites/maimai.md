@@ -1,6 +1,12 @@
 
 # 脉脉数据库
 
+InnoDB为什么不把二级索引设计为叶节点直接指向数据? 这样就不用再使用主键二次查找数据了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NTc3NTQ0IiwiaWF0IjoxNjAyMjE2NjgwfQ.QASj2RTIb4D7NTjp5xuTU1ZaJrhIR2BkdTa4bhEL5LA
+- > 这些东西都是要序列化成文件的 辅助索引只指向主键 那么每次插入删除只要主键所在的页分裂就好 如果指向数据 那么最坏情况下更新数据需要更新所有二级索引里面的所有数据地址
+- > 头条面试题，你可以参考《高性能mysql第三版》166页
+- > 数据的地址会改变，页分裂页合并
+- > 更新的代价太高，二级索引指向主键，页分裂导致记录地址变更只需要修改主键，指向物理地址的话需要将索引和主键一起加锁，保证原子性，同时，更新索引会需要更多的io，写入性能会受到很大影响
+
 想问一下mysql innodb 的mvcc在rr隔离级别下到底解决幻读没，我看有的是说间隙锁解决的 有人讲一下吗？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4ODk4MDEsImlhdCI6MTU4NzUzMzY3NH0.yESruSQzmlM8NISB4dxhgkDWPn8QkMjljyd7Brh0Mv0
 
 lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像lsm就是把随机写变成顺序写，但是现在ssd逐渐是主流，请问在对于ssd这种固态硬盘，他的缺点有哪些，我就知道有一个写放大，那么对于ssd，数据库的优化角度有哪些，请大佬们知道的说下呗 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU2OTY1NzAsImlhdCI6MTU4NjMyMzMyMH0.aJtXNA09oHye8-qbU6KGu3xp3so-KtByC2qXX_wZPLg
@@ -18,6 +24,11 @@ lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像l
 - > 只讨论一亿数据是没意义的，一行数据有多大？如果没有复杂查询的话能不能用nosql比如hbase？是oltp还是olap？
 
 # 脉脉算法与数据结构
+
+话说如果想录制个leetcod e刷题视频，会有人愿意购买嘛，如果视频包含前300道，你愿意花多少钱购买呢，如果视频讲解的很清楚。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NTk0ODgzIiwiaWF0IjoxNjAyMjEzNTUxfQ.P6tBRaTQ1o9kA08eMzmwaDRuweFvaQUOtyJpnIYmVc4
+
+32了，算法数据结构知识都不如大学生，每次狠下心学，学了几天就拉下了，还有救吗，还来得及吗，惭愧 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NTIxNjc1IiwiaWF0IjoxNjAyMjE2ODI5fQ.TJkpFR21n_OLzXDtsuoOo5g5Ts-CqVVSdvU3rFnzPLQ
+- > 算法4，coursera 或者 b站 搜一下，上下所有作业刷完。
 
 leetcode面试常考题接龙，我先来一个：反转链表。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NDgxODIxIiwiaWF0IjoxNjAxMjY0MjUwfQ.nNlMwAh-BNB1PV3ua07cIN3C-38lccY9ShcNVD7n47s
 
@@ -119,6 +130,9 @@ K8S，想要【监听】k8s的服务变更后【推送消息】给自己开发�
 - > 来了就搬到我小区住，一下班没人看到就抱着我胳膊不放这是不小心吗
 
 ## PKoIuwOzIkE
+
+刷十个帖子，遇到三次这个货 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3MzA4MDM0IiwiaWF0IjoxNjAyMjE3MzcwfQ.6vrzogZ7hfLhw7qmwI5zlGMq5eyG017eupluwiBDKNc
+- > 你怕是没遇到龙清风老大哥吧
 
 他回来了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3MzA2MjE0IiwiaWF0IjoxNTk5ODkzMDkwfQ.lUyrOLFjPc0gDRAyhforOmNUvMd6u8Q40vuW-kDL7oY
 
