@@ -1,4 +1,8 @@
 
+Python 为什么不支持 switch 语句？ https://www.v2ex.com/t/713768
+- > 本文出自“Python 为什么”系列，请查看全部文章：
+  >> `#Python为什么` https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyOTk2MTcwNg==&action=getalbum&album_id=1338406397180084225
+
 【[:star:][`*`]】 宣传一下 Cyberbrain，真正解放程序员的 Python 调试工具 https://www.v2ex.com/t/713201
 - > https://github.com/laike9m/Cyberbrain
 - > 简单来说，Cyberbrain 可以实现精确的变量溯源，并且让用户查看变量在任意时刻的值。这些传统的 debugger 都做不到。
