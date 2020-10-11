@@ -1,4 +1,21 @@
 
+不懂就问： png 格式图片转成 jpeg，到底算什么类型的图片 https://www.v2ex.com/t/713957
+```console
+众所周知，jpeg 的图片不能有透明背景色
+那我要是将一张透明背景色的 png,修改为 jpeg 后缀，打开仍然是透明的，它算什么格式呢？
+```
+- > emmmm.....你用记事本打开，看前几个字符 。。后缀本身就没什么意义
+- > png，能打开是因为图片浏览器并不是依靠文件后缀名来区别格式
+- > 后缀只是为了方便人区分才加上去的，是文件名的一部分，并不决定文件类型 <br> 都是被 windows 惯的，用过 linux 或者其他类 unix 系统的话就不会问出这种问题了
+- > 
+  ```sh
+  $ file wallpaper.jpg 
+  wallpaper.png: PNG image data, 1280 x 1024, 8-bit/color RGBA, non-interlaced
+  ```
+- > 每种文件类型都有自己的编码格式呀，图片查看软件应该做了一层兼容
+- > 好的图像软件都会不信任后缀,会根据文件头来判断文件格式,早期的 PS 如果把 PNG 改成 jpg 就打不开,就因为那时候 PS 按后缀去解析当然出错了,现在已经不这样了
+- > https://en.m.wikipedia.org/wiki/List_of_file_signatures
+
 第一次接触会觉得比较有意思的编程技术 https://www.v2ex.com/t/711436
 
 各位大佬，日常代码里你会主动使用 try catch 么？ https://www.v2ex.com/t/709674

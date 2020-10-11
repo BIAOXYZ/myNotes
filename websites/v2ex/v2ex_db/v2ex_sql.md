@@ -1,4 +1,7 @@
 
+SQL 怎么查询满足多个属性的数据？ https://www.v2ex.com/t/713866
+- > 你指的是什么呢？下面这个例子里 C 并不会被选出来呀。 <br> www.db-fiddle.com/f/8rhX2qJheqvz1Gg2t7oasc/0
+
 大佬们求救，慢 SQL 问题 https://www.v2ex.com/t/695266
 
 这两种 sql 写法有什么区别么？把查询结果当做临时 table 来查会更快么？ https://www.v2ex.com/t/687580
