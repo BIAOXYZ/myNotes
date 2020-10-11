@@ -120,6 +120,18 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 
 ## books for C and C++
 
+***《C++ Concurrency in Action》***
+- 如何评价《c++并发编程实战》这本书？ - 晓伟的回答 - 知乎 https://www.zhihu.com/question/30432095/answer/226245423
+  * > 从目前完成的章节来看，第二版属于对第一版的加强，几乎保留了第一版的所有内容。所以，在完成第二版之后，第一版会停止维护。
+  * > 📖 作为对《C++ Concurrency in Action - SECOND EDITION》的中文翻译。 https://github.com/xiaoweiChen/CPP-Concurrency-In-Action-2ed-2019
+  * > 📖 作为对《C++ Concurrency in Action》英文版的中文翻译。 https://github.com/xiaoweiChen/Cpp_Concurrency_In_Action
+    + > gitbook 在线阅读： legacy.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action
+    + > 极客学院在线阅读： https://wiki.jikexueyuan.com/project/cplusplus-concurrency-action/
+- C++ 并发编程实战 第二版 (C++ Concurrency in Action - SECOND EDITION) https://www.bookstack.cn/books/CPP-Concurrency-In-Action-2ed-2019
+
+Cplusplus-Concurrency-In-Practice -- A Detailed Cplusplus Concurrency Tutorial 《C++ 并发编程指南》 https://github.com/forhappy/Cplusplus-Concurrency-In-Practice
+- > 本书《C++ 并发编程指南》是个人在空余时间写的，由于时间仓促，加上自身水平有限，不可能写的很完善，也难免出现错误，如果你发现本书中的错误，或者有更好的想法，欢迎给我反馈，我会第一时间给予答复。后续我会坚持完善这一系列的文章。也希望感兴趣的同学和我一起完成。
+
 通过这 9 本开源好书学习 C 语言 http://blog.jobbole.com/110148/
 
 ## books for Java
