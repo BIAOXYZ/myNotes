@@ -15,6 +15,12 @@
 - > 每种文件类型都有自己的编码格式呀，图片查看软件应该做了一层兼容
 - > 好的图像软件都会不信任后缀,会根据文件头来判断文件格式,早期的 PS 如果把 PNG 改成 jpg 就打不开,就因为那时候 PS 按后缀去解析当然出错了,现在已经不这样了
 - > https://en.m.wikipedia.org/wiki/List_of_file_signatures
+- 自己搜的链接：
+  * The difference between "binary" and "text" files https://dev.to/sharkdp/what-is-a-binary-file-2cf5  【[:star:][`*`]】
+    + > On the other hand, the bytes `50 4e 47` at the beginning of the white image are a simple ASCII-encoded version of the characters `PNG`².
+    + > So clearly, looking at bytes outside the ASCII range can not be used as a method to detect "binary" files. However, there is a difference between the two files. The image file contains a lot of NULL bytes (`00`) while the short text message does not. It turns out that this can be turned into a simple heuristic method to detect binary files, since a lot of encoded text data does not contain any NULL bytes (even though it might be legal).
+  * Binary VS Text Mode for File I/O Operations https://leimao.github.io/blog/File-IO-Binary-VS-Text/
+  * Difference between Text File and Binary File https://www.thecrazyprogrammer.com/2018/05/difference-between-text-file-and-binary-file.html
 
 第一次接触会觉得比较有意思的编程技术 https://www.v2ex.com/t/711436
 
