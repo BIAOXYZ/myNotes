@@ -19,3 +19,6 @@ Record and share your terminal sessions, the right way. https://asciinema.org/
 docker-wine: Docker image that includes Wine and Winetricks for running Windows applications on Linux and macOS https://github.com/scottyhardy/docker-wine
 
 croc: Easily and securely send things from one computer to another 🐊 📦 https://github.com/schollz/croc
+
+screego/server https://github.com/screego/server
+- > Screego is an addition to existing software and only helps to share your screen. Nothing else (:.

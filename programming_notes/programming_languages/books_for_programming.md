@@ -129,6 +129,9 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
     + > 极客学院在线阅读： https://wiki.jikexueyuan.com/project/cplusplus-concurrency-action/
 - C++ 并发编程实战 第二版 (C++ Concurrency in Action - SECOND EDITION) https://www.bookstack.cn/books/CPP-Concurrency-In-Action-2ed-2019
 
+📖 作为对《Concurrency with Modern C++》的中文翻译。 https://github.com/xiaoweiChen/Concurrency-with-Modern-Cpp
+- gitbook在线阅读： https://app.gitbook.com/@chenxiaowei/s/concurrency-with-modern-c
+
 Cplusplus-Concurrency-In-Practice -- A Detailed Cplusplus Concurrency Tutorial 《C++ 并发编程指南》 https://github.com/forhappy/Cplusplus-Concurrency-In-Practice
 - > 本书《C++ 并发编程指南》是个人在空余时间写的，由于时间仓促，加上自身水平有限，不可能写的很完善，也难免出现错误，如果你发现本书中的错误，或者有更好的想法，欢迎给我反馈，我会第一时间给予答复。后续我会坚持完善这一系列的文章。也希望感兴趣的同学和我一起完成。
 
