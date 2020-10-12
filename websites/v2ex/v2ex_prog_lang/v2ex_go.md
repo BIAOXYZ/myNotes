@@ -1,4 +1,12 @@
 
+Go 编写的跑在 x86 裸机上的 unikernel https://www.v2ex.com/t/713999
+```console
+github 地址 https://github.com/icexin/eggos
+
+Go 的 runtime 提供了一些基本的操作系统抽象，goroutine 对应进程，channel 对应进程间通信，另外 go 有自己的
+虚拟内存管理，所以萌生了在裸机上运行 Go 程序的想法。
+```
+
 [7 天用 Go 从零实现系列] 第四期 RPC 框架 GeeRPC 已经完结 https://www.v2ex.com/t/713101
 - 7 days golang apps from scratch https://github.com/geektutu/7days-golang
 
