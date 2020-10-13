@@ -1,4 +1,6 @@
 
+请教，为什么 vim 的强制保存这么厉害？ https://www.v2ex.com/t/714451
+
 DD 命令如何在后台运行? https://www.v2ex.com/t/713421
 - > 因为 screen 命令的语法，末尾是 [cmd [args]]，无法接受“dd if.....” 这么复杂的语句
 - > 你先 screen 一下，然后执行命令，不要直接 screen xxx 一次性执行
