@@ -134,3 +134,7 @@ C语言内存泄露很严重，如何应对？ https://juejin.im/post/6867355456
 c++中堆、栈内存分配 https://www.cnblogs.com/yyxt/p/4268304.html
 
 C++内存分区以及堆内存和栈内存 https://developer.aliyun.com/article/9149
+
+# 字节对齐
+
+面试常考，项目易错，长文详解C/C++中的字节对齐 https://mp.weixin.qq.com/s/-sAIWxXy0j0C57B1iWi4zQ
