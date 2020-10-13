@@ -1,6 +1,8 @@
 
 # C general 
 
+Getting Started with C or C++ https://www.cprogramming.com/begin.html
+
 C 资源大全中文版，包括了：构建系统、编译器、数据库、加密、初中高的教程/指南、书籍、库等。 https://github.com/jobbole/awesome-c-cn
 
 📚 C/C++面试基础知识总结 https://github.com/huihut/interview
