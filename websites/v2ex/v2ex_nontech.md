@@ -89,6 +89,9 @@
 
 # V2EX 民生、八卦等
 
+GitHub 公共 OKR 池，欢迎大家使用和贡献 https://www.v2ex.com/t/714768
+> 地址： https://github.com/kangkang66/okr
+
 有不会写 OKR 的朋友吗？ https://www.v2ex.com/t/714554
 - > 比如内容分享>1 这种 也可以加上去凑数啊
 - > #2 还有 优化代码结构提升可读性，重构 N 个行数大于 M 的方法 /文件
