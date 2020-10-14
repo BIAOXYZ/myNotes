@@ -72,6 +72,10 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 万豪旅享家 Marriott Bonvoy 常旅客计划详细介绍 —— 会籍和福利篇【2020.3 更新：通过信用卡获取的定级晚数可以达到30晚】 https://www.uscreditcardguide.com/marriott-new-program-elite-benefits/
 - > 2018年8月18日，万豪正式将以前的 Marriott/SPG/Ritz-Carlton 三大常旅客计划合并为单一的会员体系，并且开始执行新的会员规则。随后命名为万豪旅享家 Marriott Bonvoy 会员计划。以前的 Marriott & SPG 介绍文相应的已经过期，因此我们重新编写了新会员计划的详细介绍，此文着重介绍万豪新计划下的会籍和福利，点数的积累和使用等信息见《万豪旅享家 Marriott Bonvoy 常旅客计划 — 点数积累和使用篇》。本文根据我近些年的经验和网上查询到的信息，尽量给大家解释清楚各种信息，因此写得比较长，建议大家有时间的时候慢慢看，或者有问题的时候回来详细查询。
+- > 虽然现在定级已经与入住次数(stay)无关，但是促销活动仍可能使用stay计数。这里提醒一下，在同一家酒店 check out 后立马再办理 check in 不会被算作两次入住，系统会自动合并连续 24h 内同一个酒店的退房/入住，最后只算作一次有效入住。想要短时间内积累入住次数，你需要选择在不同酒店间切换（可以A-B-A这样来）。
+- > 以下几种方式也算作有效入住，虽然直观上他们不是你直接和酒店官方完成预定：
+  * > Amex Fine Hotels & Resorts：Amex FHR 绝大部分情况都算作有效入住，除非是Amex提前扣款（一般情况下FHR预定都是到店再付款）。作为对比，AmexTravel.com 预定不算有效入住。
+- > 只有钛金会员(Titanium)及以上才可以在丽思卡尔顿/艾迪逊享受套房升级。但就算是钛金条款也不保证你可以在 Ritz-Carlton 升级到行政楼层，而且就算给你了 club level room 也可以不给你 club access 。丽思卡尔顿的酒廊质量普遍非常高，因此他们准入规则控制很严，基本都得靠钱买。
 
 Hilton Honors 希尔顿荣誉客会常旅客计划简介【2019.6 更新：又双叒叕贬值了】 https://www.uscreditcardguide.com/introduction-to-hilton-honors/
 - > 本文介绍了2018年的Hilton集团荣誉客会常旅客计划。由于2017-2018年Hilton对于荣誉客会常旅客计划有较大变动，之前的介绍文章作为历史资料，在这里可以看到：[Hilton HHonors 希尔顿荣誉客会常旅客计划简介(2018之前）](https://www.uscreditcardguide.com/hilton-hhonors-xierdunrongyukehuichanglvkejihuajianjie2018zhiqian/)。其中一个变动是把这个常旅客计划的名字从Hilton HHonors改成Hilton Honors。
