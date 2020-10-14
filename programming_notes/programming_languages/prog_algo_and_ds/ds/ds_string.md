@@ -80,6 +80,10 @@ Why choose “BM algorithm” rather than “Sunday algorithm” in text editor'
 `336. 回文对` https://leetcode-cn.com/problems/palindrome-pairs/solution/hui-wen-dui-by-leetcode-solution/
 - 方法二：字典树 + manacher
 
+`647. 回文子串` https://leetcode-cn.com/problems/palindromic-substrings/solution/hui-wen-zi-chuan-by-leetcode-solution/
+- 方法二：Manacher 算法
+>> //notes：大部分笔记都记到了该题的README部分：【[:star:][`*`]】 https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000647/README.md
+
 老司机开车，教会女朋友什么是「马拉车算法」 https://www.cxyxiaowu.com/2665.html
 
 一文让你彻底明白马拉车算法 - windliang的文章 - 知乎 https://zhuanlan.zhihu.com/p/70532099
