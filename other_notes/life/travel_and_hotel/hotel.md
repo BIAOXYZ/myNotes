@@ -85,6 +85,16 @@ Hilton Honors 希尔顿荣誉客会常旅客计划简介【2019.6 更新：又�
 
 住酒店薅羊毛 之 用“谈心”给高级会员待遇锦上添花 https://travelafterwork.com/2015/12/29/sending-an-email-helps-you-get-a-suite/
 
+## from 何乐不为
+
+这两大新招，让更多人爱上五星酒店 https://mp.weixin.qq.com/s/EHNHYbYmTM84ySYOZnF55Q
+- > 我们最熟悉的，莫过于美国运通FHR，以及Virtuoso。
+- > 在并购SPG之前，万豪和SPG各自都有自己的旅游专属顾问计划，万豪叫「Ritz-Carlton STARS」，SPG叫「Luxury Privileges」，后者小乐说过几次。2019年7月1日起，万豪推出两个新项目，取代了老万豪和SPG的「玩法」，它们是：
+  >
+  > Marriott STARS、Marriott Luminous —— 后文简称「STARS」、「Luminous」
+- > 高端酒店，选FHR、Virtuoso或是STARS，中高端酒店选Luminous，再加上招行300精选酒店（点此）、飞猪/支付宝会员酒店权益（点此）等等，覆盖一家全年的出行酒店需求，绰绰有余。
+- > 如果FHR看着高高在上，Virtuoso预订不够便当，而万豪系又是你的挚爱，那么不如尝试一下「STARS」或是「Luminous」，五星酒店从此离你更近。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `洲际` / `IHG` / `InterContinental Hotels & Resorts`
