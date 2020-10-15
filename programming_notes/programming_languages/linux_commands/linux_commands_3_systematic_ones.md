@@ -154,6 +154,10 @@ NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%
 
 Linux下NFS服务器的搭建与配置 https://www.cnblogs.com/liuyisai/p/5992511.html
 
+# Linux下文本处理
+
+建议收藏！超全的 Linux Shell 文本处理工具集锦 https://segmentfault.com/a/1190000037480939
+
 # 小专题
 
 ## linux目录含义
