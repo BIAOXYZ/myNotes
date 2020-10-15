@@ -5,10 +5,6 @@
 - > https://www.codewars.com/
 - > codewars +1 做完后还可以参考别人的答案…… best practice 什么的 <br> 7-8 级的题适合入门，4 级以上的题大部分都比较难，很多题不折腾几个小时出不来。初段题是不是就是接近一个小课题？另外还有各种语言，js，java，rust，go 等等
 
-Python 为什么不支持 switch 语句？ https://www.v2ex.com/t/713768
-- > 本文出自“Python 为什么”系列，请查看全部文章：
-  >> `#Python为什么` https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyOTk2MTcwNg==&action=getalbum&album_id=1338406397180084225
-
 【[:star:][`*`]】 宣传一下 Cyberbrain，真正解放程序员的 Python 调试工具 https://www.v2ex.com/t/713201
 - > https://github.com/laike9m/Cyberbrain
 - > 简单来说，Cyberbrain 可以实现精确的变量溯源，并且让用户查看变量在任意时刻的值。这些传统的 debugger 都做不到。

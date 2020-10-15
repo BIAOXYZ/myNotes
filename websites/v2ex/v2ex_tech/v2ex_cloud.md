@@ -1,4 +1,7 @@
 
+K8S 使用 nodePort 方式暴露服务，发现没有负载均衡的效果，都请求到了一个 pod 里， 求教问题出在哪里？ https://www.v2ex.com/t/715363
+- > 可以看看这个文章 《Kubernetes 网络插件工作原理》 http://blog.jwangkun.com/post/IC6DrTsc6/
+
 k8s 拉取私有仓库的镜像时出错 https://www.v2ex.com/t/713336
 
 小白求问： k8s 能生成相同 pod 的不同版本吗？ https://www.v2ex.com/t/713259

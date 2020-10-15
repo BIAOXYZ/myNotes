@@ -35,6 +35,8 @@
 
 # 待分类
 
+把自己简历做成了 npm 包 https://www.v2ex.com/t/715105
+
 问下大家公司里都用什么工具压测 https://www.v2ex.com/t/664287
 
 一键导出你的微信读书书籍和笔记 https://www.v2ex.com/t/661593

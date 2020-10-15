@@ -83,3 +83,13 @@ TCP 小知识: 假如服务端不调用 Accept() 会发生什么? https://www.v2
 发现一个很酷的 LeetCode 题解的 GitHub 仓库 https://www.v2ex.com/t/565536
 - > 今天发现前同学在做 LeetCode 的题解，见 [hqztrue/LeetCodeSolutions](https://github.com/hqztrue/LeetCodeSolutions)。这个仓库的有趣之处在于它收录的是 LeetCode 题目 在字 RAM 模型下理论（最优时间）解——通常的题解仓库里只是一个实现。
 - > 字 RAM 模型是一个除了不建模缓存之外非常接近日常使用的计算机的一个模型，在这个模型里的内存是随机访问的且每个内存单元存储一个字（ word ）。真实世界里的字是 16/32/64 位长，而在该模型里通常令字长为 Theta(log n)，其中 n 是输入长度。它的计算效率远高于传统的 Turing 机模型，因此理论效率对实际效率的指导意义更大。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# chinesehuazhou (公众号@Python猫)
+
+简单分析：为什么 [] 比 list() 快？ https://www.v2ex.com/t/715016
+
+Python 为什么不支持 switch 语句？ https://www.v2ex.com/t/713768
+- > 本文出自“Python 为什么”系列，请查看全部文章：
+  >> `#Python为什么` https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyOTk2MTcwNg==&action=getalbum&album_id=1338406397180084225
