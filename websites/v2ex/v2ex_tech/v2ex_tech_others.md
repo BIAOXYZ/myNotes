@@ -1,4 +1,9 @@
 
+windows 不能命名文件为 con https://www.v2ex.com/t/715678
+- > 难道你们不知道以前 win 系统在运行中输入 /con/con 会导致死机吗？暴露年龄了。。。
+- > DOS 时代 con 就是设备的标识符，只能说明，你不懂微软的 DOS……
+- > 我再说一个事，SVN 上面有两个目录，名字一样但是大小写不同，checkout 到 windows 机器上会因为重名，导致两个目录的内容被奇怪的合并到一起
+
 不懂就问： png 格式图片转成 jpeg，到底算什么类型的图片 https://www.v2ex.com/t/713957
 ```console
 众所周知，jpeg 的图片不能有透明背景色
