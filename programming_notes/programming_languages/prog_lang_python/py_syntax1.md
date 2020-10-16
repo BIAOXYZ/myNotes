@@ -1,4 +1,17 @@
 
+# Lambda表达式
+
+【~~How to Use Python Lambda Functions https://realpython.com/python-lambda/~~ 已转移】
+
+Python lambda (Anonymous Functions) | filter, map, reduce https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/
+
+Lambda, filter, reduce and map https://www.python-course.eu/lambda.php
+
+Python学习笔记（十二）：lambda表达式与函数式编程 https://blog.csdn.net/mathboylinlin/article/details/9413551
+> python by mathboylinlin的专栏 https://blog.csdn.net/mathboylinlin/article/category/1505225
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # nonlocal关键字
 
 python关键字nonlocal和global的区别 https://www.jianshu.com/p/ab69b83a8d8a
@@ -81,6 +94,8 @@ python @property的用法及含义全面解析 https://www.jb51.net/article/1341
 python中def中def是如何实现的？ - 知乎 https://www.zhihu.com/question/265664528
 
 Python 嵌套函数和闭包 https://www.cnblogs.com/love9527/p/9022316.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## nested/inner class
 

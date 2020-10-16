@@ -181,17 +181,6 @@ Python `if x is not None` or `if not x is None`? https://stackoverflow.com/quest
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Lambda表达式
-
-How to Use Python Lambda Functions https://realpython.com/python-lambda/
-
-关于Python中的lambda，这可能是你见过的最完整的讲解 https://blog.csdn.net/zjuxsl/article/details/79437563
-
-Python学习笔记（十二）：lambda表达式与函数式编程 https://blog.csdn.net/mathboylinlin/article/details/9413551
-> python by mathboylinlin的专栏 https://blog.csdn.net/mathboylinlin/article/category/1505225
-
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
 ## 可变对象与不可变对象
 
 python可变和不可变对象 https://www.jianshu.com/p/c5582e23b26c
