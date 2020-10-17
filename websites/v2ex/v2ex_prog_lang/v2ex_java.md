@@ -1,4 +1,12 @@
 
+帮公司面试了个要 20K 的 Java 程序员，看看我都问他些什么问题 https://www.v2ex.com/t/715867
+```console
+不废话，直接分享面试视频给大家 B 站： https://www.bilibili.com/video/BV1Xt4y1v7aA/
+```
+- > ShowMeBug 做得蛮不错的 赞一个... 不过这运营有点拉夸
+- > 面试者真的能说，居然能一口气把事情说完。换我回答 ArrayList 和 LinkedList 的区别，估计只会说数组和链表，其它的就不想多说了......
+- > 怎么感觉面试的也是照着答案读的 死锁的四个条件都能说出来。。。。 很多答案比标准还丰富
+
 线上 OutOfMemoryError 了，没头绪...... https://www.v2ex.com/t/669244
 
 方式 1 和方式 2 的却别到底在哪里？ https://www.v2ex.com/t/620135
