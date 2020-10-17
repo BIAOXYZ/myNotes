@@ -49,6 +49,13 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 # Luxury Hotels general
 
+【[`*`][:star:]】 要拼就拼最贵的！国内高价酒店 Top 30 https://mp.weixin.qq.com/s/4XiUsroPDTPuF3G3JNrbXg
+- 回复里的：
+  * > `悠游的撒哈拉`：住过大研安缦和台北加贺屋。大研安缦真心太舒服了，确实比丽江悦榕庄又上了一个档次。加贺屋不推荐，太旧了，用餐的人又比较多，同样的价格，去河口湖可以住到舒适度，景观更好的温泉酒店。
+  * > `michelle`：法云安缦、广州从都:thumbsdown::thumbsdown::thumbsdown:
+  * > `lz²⁰²⁰`：华尔道夫四合院长期被人包了的吧？
+    >> 作者：应该有房间被包了
+
 【[`*`][:star:]】【该回答里靠前的几个图可以方便随时快速查看某个酒店属于哪家酒店集团】 哪家酒店集团的会员积分最有性价比？ - 王豆芽的回答 - 知乎 https://www.zhihu.com/question/49786264/answer/117738602
 
 柏悦，凯悦，君悦同属一个集团，打造理念有何不同？ - 知乎 https://www.zhihu.com/question/22716224
