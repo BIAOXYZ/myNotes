@@ -1,4 +1,10 @@
 
+# 迭代器
+
+Python | next() method https://www.geeksforgeeks.org/python-next-method/
+
+python黑魔法---迭代器（iterator） https://www.jianshu.com/p/dcf83643deeb
+
 # Lambda表达式
 
 【~~How to Use Python Lambda Functions https://realpython.com/python-lambda/~~ 已转移】
