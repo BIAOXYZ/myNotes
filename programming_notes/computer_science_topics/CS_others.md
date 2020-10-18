@@ -36,6 +36,10 @@ Urkel -- An optimized and cryptographically provable key-value store. Written in
 
 ## other project
 
+【 From: https://github.com/yifengyou 】
+- Qemu KVM(Kernel Virtual Machine)学习笔记 https://github.com/yifengyou/learn-kvm
+- 《一个64位操作系统的设计与实现》学习笔记 https://github.com/yifengyou/The-design-and-implementation-of-a-64-bit-os
+
 A toy JVM in Go https://github.com/zserge/tojvm
 
 一个轻量级容器引擎（实现 docker 的一小部分功能） https://github.com/TensShinet/islands_show

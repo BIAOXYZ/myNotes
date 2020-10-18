@@ -3,6 +3,10 @@
 
 # from Github
 
+python 代码审计项目 https://github.com/MisakiKata/python_code_audit
+
+security_w1k1 https://github.com/euphrat1ca/security_w1k1
+
 应急响应实战笔记，一个安全工程师的自我修养。 https://github.com/Bypass007/Emergency-Response-Notes
 
 # Security News

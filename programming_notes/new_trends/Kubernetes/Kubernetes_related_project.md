@@ -312,6 +312,8 @@ Kuboard简介 https://github.com/eip-work/kuboard-press || https://kuboard.cn/
 
 kubectl-tree https://github.com/ahmetb/kubectl-tree
 
+Sloop - Kubernetes History Visualization https://github.com/salesforce/sloop
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 # projects based on or related to k8s (relatively matured)
