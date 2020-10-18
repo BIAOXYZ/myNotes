@@ -9,6 +9,8 @@
 
 ## 远程局域网
 
+请教一个访问内网的问题。 https://www.v2ex.com/t/716006
+
 怎么搭建“远程局域网”，用来联机打游戏 https://www.v2ex.com/t/661321
 - > https://www.v2ex.com/t/621442 【[Slack 开源了他们的 overlay network 工具 Nebula](https://www.v2ex.com/t/621442)】
   * >
