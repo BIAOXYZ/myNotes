@@ -41,6 +41,10 @@ KubiScan: A tool to scan Kubernetes cluster for risky permissions https://github
 
 # k8s and 机密计算
 
+Gartner 2020 云安全新兴技术成熟度曲线：机密计算将在 5 年至 10 年得到普遍使用 https://mp.weixin.qq.com/s/cXfxkK1Rs1QSP_PxhhaVuA
+- > •用户忠告：Riley说：“提防幻灯片软件（slideware），尤其是针对基于云的交付即服务模式准备不足的老牌厂商提供的幻灯片软件。这种情况下，软件架构和实施很重要。真正的SASE服务是云原生的。”
+  >> `slideware` --> 学习了。。。
+
 谷歌将内存加密扩展到 Kubernetes：基于 AMD 最新 EPYC 处理器 https://www.ithome.com/0/508/007.htm
 
 当 Kubernetes 遇到机密计算，阿里巴巴如何保护容器内数据的安全？ https://developer.aliyun.com/article/770904
