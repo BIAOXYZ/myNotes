@@ -1,6 +1,8 @@
 
 # 脉脉数据库
 
+innodb一行数据（compact格式）包涵varchar或者null时，修改导致一行数据长度发生变化，因为一行是连续存储，导致操作变成重新写一行数据，这样效率不会低吗？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mjc3MDU1OTcsImlhdCI6MTYwMjk5ODkxNH0.gIjKEjSwCod778aOwMLsMIxH2z9sgeLiHsK8iJ6Alrw
+
 InnoDB为什么不把二级索引设计为叶节点直接指向数据? 这样就不用再使用主键二次查找数据了 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NTc3NTQ0IiwiaWF0IjoxNjAyMjE2NjgwfQ.QASj2RTIb4D7NTjp5xuTU1ZaJrhIR2BkdTa4bhEL5LA
 - > 这些东西都是要序列化成文件的 辅助索引只指向主键 那么每次插入删除只要主键所在的页分裂就好 如果指向数据 那么最坏情况下更新数据需要更新所有二级索引里面的所有数据地址
 - > 头条面试题，你可以参考《高性能mysql第三版》166页
