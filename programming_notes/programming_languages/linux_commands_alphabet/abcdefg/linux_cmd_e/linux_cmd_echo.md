@@ -81,3 +81,7 @@ passwd： 所有的身份验证令牌已经成功更新。
 ```
 >> note：可以用上面这个echo语句，实现不用交互式地更改用户密码。
 >>> note2：后来发现ubuntu下不行，因为ubuntu下的passwd命令竟然没有`--stdin`参数。。。详情参见`passwd`命令专门的笔记文件吧。
+
+## RHACM脚本安装时需要手动输入一个snapshot
+
+`echo "2.0.0-SNAPSHOT-2020-07-22-20-24-07\n" | ./start.sh --watch`  // 这里`echo`也可以换成`printf`。
