@@ -15,6 +15,22 @@
 
 优先队列 https://zh.wikipedia.org/wiki/%E5%84%AA%E5%85%88%E4%BD%87%E5%88%97 || Priority queue https://en.wikipedia.org/wiki/Priority_queue
 
+2.4 Priority Queues https://algs4.cs.princeton.edu/24pq/
+
+std::priority_queue http://www.cplusplus.com/reference/queue/priority_queue/
+
+std::priority_queue https://en.cppreference.com/w/cpp/container/priority_queue
+
+Heaps and Priority Queues https://www.hackerearth.com/practice/notes/heaps-and-priority-queues/
+
+Priority Queue https://www.programiz.com/dsa/priority-queue
+
+What is the Python priority queue? https://www.educative.io/edpresso/what-is-the-python-priority-queue
+
+Data Structure - Priority Queue https://www.tutorialspoint.com/data_structures_algorithms/priority_queue.htm
+
+Priority Queue | Set 1 (Introduction) https://www.geeksforgeeks.org/priority-queue-set-1-introduction/
+
 堆Heap和优先队列(Priority Queue)学习小结 https://blog.csdn.net/roufoo/article/details/80638476
 - > Heap是一种数据结构，能保证取max/min是O(1)时间。通常如果查最小值/最大值，我们可以用Heap。如果是查是不是存在(Contain())，就用HashMap。如果又要查最小/大值，又要查是不是存在，就用Heap+HashMap.
 - > Max-heap/Min-heap保证父节点都比子节点大/小，但兄弟节点之间没有大小关系。
