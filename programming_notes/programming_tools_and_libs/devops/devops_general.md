@@ -31,6 +31,8 @@ What is ChatOps? A guide to its evolution, adoption, and significance https://ww
 
 Command Help https://prow.k8s.io/command-help
 
+Reviewing for approvers and reviewers https://v1-18.docs.kubernetes.io/docs/contribute/review/for-approvers/
+
 Prow 快速入门向导 https://www.servicemesher.com/blog/prow-quick-start-guide/
 
 ## StackStorm
