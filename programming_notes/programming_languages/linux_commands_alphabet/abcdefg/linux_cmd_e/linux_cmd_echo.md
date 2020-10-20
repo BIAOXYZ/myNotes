@@ -84,4 +84,26 @@ passwd： 所有的身份验证令牌已经成功更新。
 
 ## RHACM脚本安装时需要手动输入一个snapshot
 
-`echo "2.0.0-SNAPSHOT-2020-07-22-20-24-07\n" | ./start.sh --watch`  // 这里`echo`也可以换成`printf`。
+`echo "2.0.0-SNAPSHOT-2020-07-22-20-24-07\n" | ./start.sh --watch` <br> // PS: 这里`echo`也可以换成`printf`，如下所示：
+```sh
+{root@bandore1 deploy2.1}$ printf "2.1.0-SNAPSHOT-2020-10-10-03-29-09" | ./start.sh --watch
+* Testing connection
+* Using baseDomain: oprinstall.cp.fyre.ibm.com
+* oc CLI Client Version: openshift-clients-4.3.0-201910250623-88-g6a937dfe
+Find snapshot tags @ https://quay.io/repository/open-cluster-management/acm-custom-registry?tab=tags
+Enter SNAPSHOT TAG: (Press ENTER for default: 2.1.0-SNAPSHOT-2020-10-10-03-29-09)
+* Downstream:    Release Version: 2.1.0
+* Composite Bundle: true   Image Registry (CUSTOM_REGISTRY_REPO): quay.io/open-cluster-management
+* Using: 2.1.0-SNAPSHOT-2020-10-10-03-29-09
+
+* Applying SNAPSHOT to multiclusterhub-operator subscription
+* Applying CUSTOM_REGISTRY_REPO to multiclusterhub-operator subscription
+* Applying SUBSCRIPTION_CHANNEL to multiclusterhub-operator subscription
+* Applying multicluster-hub-cr values
+
+##### Creating the open-cluster-management namespace
+namespace/open-cluster-management created
+...
+...
+...
+```
