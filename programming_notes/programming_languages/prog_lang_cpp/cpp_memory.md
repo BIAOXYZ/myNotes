@@ -141,6 +141,40 @@ c++中堆、栈内存分配 https://www.cnblogs.com/yyxt/p/4268304.html
 
 C++内存分区以及堆内存和栈内存 https://developer.aliyun.com/article/9149
 
+# memset()
+
+memset http://www.cplusplus.com/reference/cstring/memset/
+>> http://cpp.sh/9cp
+```cpp
+/* memset example */
+#include <stdio.h>
+#include <string.h>
+
+int main ()
+{
+  char str[] = "almost every programmer should know memset!";
+  memset (str,'-',6);
+  puts (str);
+  return 0;
+}
+----------------------------------------------------------------------------------------------------
+------ every programmer should know memset!
+```
+
+memset() in C with examples https://www.geeksforgeeks.org/memset-c-example/
+```c
+memset() is used to fill a block of memory with a particular value.
+The syntax of memset() function is as follows :
+
+// ptr ==> Starting address of memory to be filled
+// x   ==> Value to be filled
+// n   ==> Number of bytes to be filled starting 
+//         from ptr to be filled
+void *memset(void *ptr, int x, size_t n);
+
+Note that ptr is a void pointer, so that we can pass any type of pointer to this function.
+```
+
 # 字节对齐
 
 面试常考，项目易错，长文详解C/C++中的字节对齐 https://mp.weixin.qq.com/s/-sAIWxXy0j0C57B1iWi4zQ
