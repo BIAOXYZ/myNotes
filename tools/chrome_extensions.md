@@ -269,6 +269,10 @@ Firefox Nightly + DoH + ESNI: 让网络连接更加安全 - Thinker的文章 - �
 
 密码管理器——在 Firefox 中记住、删除和更改已保存的密码 https://support.mozilla.org/zh-CN/kb/password-manager-remember-delete-change-passwords
 
+### firefox清理缓存
+
+怎么清除缓存？ https://support.mozilla.org/zh-CN/kb/%E6%80%8E%E4%B9%88%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%EF%BC%9F
+
 ### firefox备份恢复
 
 备份与恢复书签 https://support.mozilla.org/zh-CN/kb/%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B9%A6%E7%AD%BE
