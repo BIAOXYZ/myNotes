@@ -1,4 +1,13 @@
 
+# 脉脉生活类
+
+各位在北京年薪大几十万的巨佬，请问你们是如何解决车牌问题的呢？感觉房子还好，有钱就行，年薪大几十万的待几年都能买得起，车牌这个感觉无解啊，摇号基本摇不到，新能源排队现在开始排也至少是2030年后了。小弟应届生，在纠结要不要回二线… https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mjc3NjcxMDcsImlhdCI6MTYwMzMwMTA5N30.0CP2OeJqKV0QR9oRdhHjxpTJUNLn5UGYXazszEfZoqo
+- > 15w左右结婚过户，25w法拍过户
+- > 你对金钱的力量一无所知，普通有钱人可以租车牌，更有钱一点的可以结婚过户买车牌，土豪可以收购一家有车牌的公司
+- > 油车车牌1.5万/年，市场价
+- > 没有合法的渠道主要是…结婚过户啥的感觉有点麻烦
+  >> 法拍 买公司都可以搞车牌，有钱这都不是问题
+
 # 脉脉信息类
 
 老哥们，微软亚洲sde,sde2,senior sde薪资大概是什么范围呢？工作5年的7，身体确实吃不消了，太劳心，想找个能安心写码的外企，但是确实也不想薪资砍半。 https://maimai.cn/web/gossip_detail?src=app&webid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiZDAzZmEyZDRlODIxMTFlYWFiMmYyNDZlOTZiNDgwODgiLCJ1IjoxOTU4OTUxOTUsImlkIjoyNzE1MDE3OX0.I-Zf9rvnB6m9_jeVt0xSlFpdiohhq9cu95RrS32Xe4w
