@@ -1,6 +1,23 @@
 
 # 脉脉算法与数据结构
 
+一人一道常见动态规划，我先来，股票问题 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mjc3Mjg2MTksImlhdCI6MTYwMzE3Mzg4MH0.kGexaKbTzspEtC4DvRrPpyETJvOMgzX3_rtr7_ukPa4
+- > 最长公共子序列 【LC1143】
+  >> 最长公共子序列用正则函数速解，`".*?(.+).*?"`喜提\1
+- > 零钱问题凑数的总数，最少钱币数，还有就是从左上到右下最优走法，比较经典的是两个人从两边轮流拿金币最大取法，我感觉状压dp难很多
+- > 两个人从两边拿钱，具体是哪个题
+  >> leetcode877 【LC877. 石子游戏】
+- 背包问题
+- > 扔鸡蛋
+  >> poj3783 【POJ3783,leetcode887 扔鸡蛋(经典线性DP问题)】
+- > 打家劫舍
+- > 和最大子矩阵，看有几个人会
+- > 俄罗斯套娃 【LC354. 俄罗斯套娃信封问题】
+- > 三维接雨水
+- > 戳气球 【LC312】
+- > 字符匹配
+- > 最长上升子序列 【LC300】
+
 话说如果想录制个leetcod e刷题视频，会有人愿意购买嘛，如果视频包含前300道，你愿意花多少钱购买呢，如果视频讲解的很清楚。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NTk0ODgzIiwiaWF0IjoxNjAyMjEzNTUxfQ.P6tBRaTQ1o9kA08eMzmwaDRuweFvaQUOtyJpnIYmVc4
 
 32了，算法数据结构知识都不如大学生，每次狠下心学，学了几天就拉下了，还有救吗，还来得及吗，惭愧 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjI3NTIxNjc1IiwiaWF0IjoxNjAyMjE2ODI5fQ.TJkpFR21n_OLzXDtsuoOo5g5Ts-CqVVSdvU3rFnzPLQ
