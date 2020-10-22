@@ -1,7 +1,14 @@
 
 请教一个 go 的函数问题 https://www.v2ex.com/t/717494
 - > C++你把引用捕获改为赋值捕获就是 100 了
+  >> 真是大神，佩服
 - > go 中关于闭包的一些实现过程可以看这个， [go 闭包的实现](https://tiancaiamao.gitbooks.io/go-internals/content/zh/03.6.html) <br> 同时，把你的代码复制到，https://godbolt.org/ , 选择 go 语言，再选择 386gc tip，对照汇编结果来理解。
+  >> 【[:star:][`*`]】 Compiler Explorer https://github.com/compiler-explorer/compiler-explorer || https://godbolt.org/
+- > 好吧，c++ capture 换成 = 号后我又有一个疑问，这个值是什么时候复制的，是在调 Set 的时候还是调 f 的时候？？？
+  >> 两步都有复制。调用 Set 的时候，复制了 100 到一个地方存下来。调用 f 的时候，再把存下来的值复制给 s._i
+  >>
+  >> 在 lambda 表达式的内外，参数 i 的意义是不一样的。在表达式的内部：1.引用捕获的时候，它是参数 i 的引用，调用 f 的时候，参数 i 已经没有了，所以最终得到的结果是随机的； 2.赋值捕获的时候，它是参数 i 的复制
+- > 闭包，Set 执行完后返回的是一个函数，再执行把指针传进去，那肯定把 ss 的值给改了
 
 Go 编写的跑在 x86 裸机上的 unikernel https://www.v2ex.com/t/713999
 ```console
