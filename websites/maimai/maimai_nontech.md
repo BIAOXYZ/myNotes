@@ -27,6 +27,9 @@
 
 # 脉脉八卦
 
+听说了一颗大瓜，事件涉及到某一位中山证券公司负责听说了债券承销的美女销售，为了顺利地卖出他们公司承销的城投债，不惜和某股份银行南京分行资管负责人一起“滚了滚床单”。有了解的吗？ https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mjc3NzYyMDUsImlhdCI6MTYwMzM2Mzg5MX0.DuhHZG78bXCp8hSib5Yg2p_OW4MaA29lk6gZQouODWw
+- 中山证券投行部美女销售，为卖出1.5亿债券出轨，献身兴业银行高管 https://mp.weixin.qq.com/s/BLnp-z5IW2xDdSXLIjxiPA || https://posts.careerengine.us/p/5f8fea40cbe59349d0b95f87
+
 #315曝光黑公司#，来来来，现在开始提名，哪些公司哪些点不好，值得被曝光一下~咱们职言“打假”走起 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY3NDM0MjMsImlhdCI6MTU5NTIyNjk2Nn0.6X1mFB_V6qL7CJdiW2z1W8JKYwODWg1lp04yKakgDIs
 
 把这里当个树洞，说说我的经历，我发誓我说的是事实。我爱国，希望中国的公司越来越好，但是针对华为，我是矛盾的。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjY3NjM0NDksImlhdCI6MTU5NTIyNjk2Nn0.Xhyp_NYyLZE0WyJEPFUaaSnK1gF2I_swdiKesu1eBZA
