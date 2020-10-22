@@ -1,4 +1,8 @@
 
+请教一个 go 的函数问题 https://www.v2ex.com/t/717494
+- > C++你把引用捕获改为赋值捕获就是 100 了
+- > go 中关于闭包的一些实现过程可以看这个， [go 闭包的实现](https://tiancaiamao.gitbooks.io/go-internals/content/zh/03.6.html) <br> 同时，把你的代码复制到，https://godbolt.org/ , 选择 go 语言，再选择 386gc tip，对照汇编结果来理解。
+
 Go 编写的跑在 x86 裸机上的 unikernel https://www.v2ex.com/t/713999
 ```console
 github 地址 https://github.com/icexin/eggos
