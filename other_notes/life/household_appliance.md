@@ -1,7 +1,12 @@
 
-## 空气炸锅
+# 空气炸锅
 
 空气炸锅究竟好不好用？炸锅评测告诉你 https://www.dealmoon.com/guide/652421
+
+# 吹风机
+
+戴森吹风机贵在哪里？ https://www.v2ex.com/t/717681
+- > 戴森的确有它独特的地方，但主要还是品牌溢价，建议看看这个评测 https://www.bilibili.com/video/BV1uA411t7rU
 
 # self
 
