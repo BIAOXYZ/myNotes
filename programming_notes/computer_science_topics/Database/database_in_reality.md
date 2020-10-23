@@ -1,6 +1,8 @@
 
 ## 
 
+~~国产数据库里程碑事件：4.2 亿、易鲸捷中标「贵阳银行」核心业务系统，替换 Oracle https://mp.weixin.qq.com/s/gC1wlVHtNNFuYdLlTKY-5A~~  -->  4.2 亿、贵阳银行「国产数据库」大单：易鲸捷替掉 IBM Informix https://mp.weixin.qq.com/s/Cf75dMz6b6IzPJUEm83g_Q
+
 国产数据库的里程碑式新突破：贵阳银行核心系统4.2亿订单采购易鲸捷 https://www.modb.pro/db/34022
 - > 摘要：昨日（2020年10月19日），贵阳银行发布上市公司公告，核心业务系统易鲸捷国产数据库应用项目，成交金额 426，664，400，创造了国产数据库的单一采购项目记录，是国产数据库的里程碑式新突破。
 - > 全文链接：https://www.modb.pro/doc/6358
