@@ -8,3 +8,5 @@ lsof https://en.wikipedia.org/wiki/Lsof
 3.lsof 一切皆文件 https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html
 
 linux lsof命令详解 https://www.cnblogs.com/ggjucheng/archive/2012/01/08/2316599.html
+
+从 lsof 开始，深入理解 Linux 虚拟文件系统 https://mp.weixin.qq.com/s/OSENnCexQlbXNVkF7lVzjw || https://www.cyningsun.com/09-18-2020/learn-virtual-filesystem-from-lsof.html
