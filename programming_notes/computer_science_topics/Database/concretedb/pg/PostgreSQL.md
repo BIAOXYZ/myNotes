@@ -358,6 +358,8 @@ http://blog.csdn.net/davidzwb/article/details/53172453
 
 #### 其他扩展/类扩展
 
+Pigsty —— 图形化PostgreSQL环境 （Pigsty -- PostgreSQL in Graphic Style） https://github.com/Vonng/pigsty
+
 bg_mon: Background worker for monitoring PostgreSQL https://github.com/CyberDem0n/bg_mon
 
 aqo: Adaptive query optimization for PostgreSQL https://github.com/postgrespro/aqo

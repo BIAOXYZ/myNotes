@@ -105,6 +105,10 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 
 ## books from github
 
+中文翻译 Road Map https://github.com/xx-zh/xx-zh-roadmap
+- 《Security Patterns in Practice》中文翻译 https://github.com/gdut-yy/Security-Patterns-in-Practice-zh
+- 《代码整洁之道》中文翻译 https://github.com/gdut-yy/Clean-Code-zh
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## books from ApacheCN
