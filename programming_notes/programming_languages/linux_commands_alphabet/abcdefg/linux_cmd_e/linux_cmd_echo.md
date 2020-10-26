@@ -84,7 +84,7 @@ passwd： 所有的身份验证令牌已经成功更新。
 
 ## RHACM脚本安装时需要手动输入一个snapshot
 
-`echo "2.0.0-SNAPSHOT-2020-07-22-20-24-07\n" | ./start.sh --watch` <br> // PS: 这里`echo`也可以换成`printf`，如下所示：
+`echo "2.0.0-SNAPSHOT-2020-07-22-20-24-07\n" | ./start.sh --watch` <br> // PS: 这里`echo`也可以换成`printf`（并且不论带不带最后那个换行符`\n`，都能成功执行并完成安装），如下所示：
 ```sh
 {root@bandore1 deploy2.1}$ printf "2.1.0-SNAPSHOT-2020-10-10-03-29-09" | ./start.sh --watch
 * Testing connection
