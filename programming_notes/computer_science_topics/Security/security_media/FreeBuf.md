@@ -21,8 +21,6 @@ Reversing.kr题目之SimpleVM详解 http://www.freebuf.com/news/164664.html
 
 从安全角度深入理解MySQL编码转换机制 http://www.freebuf.com/articles/web/154932.html
 
-http://www.freebuf.com/articles/rookie/155971.html
-
 CryKeX：Linux内存加密密钥提取工具 http://www.freebuf.com/sectool/157285.html
 
 从理论层面谈Meltdown与Spectre攻击 | 核武按钮终被劫持？http://www.freebuf.com/articles/terminal/160424.html
@@ -32,6 +30,8 @@ CryKeX：Linux内存加密密钥提取工具 http://www.freebuf.com/sectool/1572
 # FreeBuf非技术类
 
 # FreeBuf技术类
+
+Linux进程隐藏：中级篇 https://www.freebuf.com/articles/system/250714.html
 
 在你的内网中获得域管理员权限的五种方法 http://www.freebuf.com/articles/network/165392.html
 
@@ -69,6 +69,10 @@ FreeBuf百度安全实验室 http://www.freebuf.com/author/%E7%99%BE%E5%BA%A6%E5
 联想电脑管家产品开发团队招聘桌面安全攻防工程师 http://www.freebuf.com/jobs/167212.html
 
 # FreeBuf密码类
+
+`tag/密码学` https://www.freebuf.com/tag/%E5%AF%86%E7%A0%81%E5%AD%A6
+
+## 密码类文章
 
 从Facebook、百度“隐私门”看企业对用户隐私保护的责任何在  http://www.freebuf.com/articles/neopoints/166899.html
 > https://en.wikipedia.org/wiki/Differential_privacy 里面提供了那个抛硬币的例子
