@@ -1,4 +1,6 @@
 
+被 C++的语法问题折磨了，有没有大佬帮我解答一下疑惑 https://www.v2ex.com/t/718467
+
 请教一个简单的 C++并发文件写入冲突的问题。 https://www.v2ex.com/t/713956
 
 c++ 可以通过 dump 或 core 调试分析出哪个线程修改了变量吗？ https://www.v2ex.com/t/697865
