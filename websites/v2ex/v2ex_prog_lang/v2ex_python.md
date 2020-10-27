@@ -1,4 +1,6 @@
 
+听说 Python 的多线程是假的，无法利用多核心？ https://www.v2ex.com/t/719053
+
 求 Python 练习题 https://www.v2ex.com/t/714540
 - > 类似这种的吗 https://www.runoob.com/python3/python3-examples.html
 - > https://www.hackerrank.com/domains/python

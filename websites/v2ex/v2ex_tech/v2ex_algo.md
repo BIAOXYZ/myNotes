@@ -1,4 +1,6 @@
 
+估计面试没通过，唉 https://www.v2ex.com/t/719057
+
 谷歌面试题：二叉查找树迭代器（hard 题，面试中有变形） https://www.v2ex.com/t/702892
 
 【这是个反面教材。。。】 分享一行 Python 代码 `reduce(add, zip(nums[:n], nums[n:]))` - 来自解决 Leetcode #1470. Shuffle the Array 一题 https://www.v2ex.com/t/693010

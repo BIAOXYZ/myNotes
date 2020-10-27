@@ -89,6 +89,9 @@
 
 # V2EX 民生、八卦等
 
+老婆生孩子，他在外面一边陪产一边工作 https://www.v2ex.com/t/718931
+- > 我 tm，d 的努力工作就是为了让老婆能更好的生活，不是为了你公司
+
 GitHub 公共 OKR 池，欢迎大家使用和贡献 https://www.v2ex.com/t/714768
 > 地址： https://github.com/kangkang66/okr
 
