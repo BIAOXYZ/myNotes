@@ -54,9 +54,13 @@ The Simplest Guide To OAuth 2.0 https://medium.com/@darutk/the-simplest-guide-to
 
 RFC 6750: OAuth 2.0 Bearer Token Usage https://oauth.net/2/bearer-tokens/
 
+随笔分类 - 协议/规范 https://www.cnblogs.com/XiongMaoMengNan/category/981936.html
 - OAuth 2.0: Bearer Token Usage https://www.cnblogs.com/XiongMaoMengNan/p/6785155.html
-- 四，接口认证方式：Bearer Token https://www.jianshu.com/p/8f7009456abc
-- OAuth 2.0：Bearer Token、MAC Token区别 https://www.cnblogs.com/cag2050/p/7607609.html
+- OAuth 2.0 / RCF6749 协议解读 https://www.cnblogs.com/XiongMaoMengNan/p/6768535.html
+
+四，接口认证方式：Bearer Token https://www.jianshu.com/p/8f7009456abc
+
+OAuth 2.0：Bearer Token、MAC Token区别 https://www.cnblogs.com/cag2050/p/7607609.html
 
 ## 待命名
 
