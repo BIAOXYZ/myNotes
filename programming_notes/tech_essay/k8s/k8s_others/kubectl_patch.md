@@ -85,15 +85,15 @@ oc get deployables.apps.open-cluster-management.io testdeploy -o jsonpath={.spec
 3
 
 
-# 以下两个（replace类型的）patch语句都可以，最常见的是第一种。
+# 以下两个（replace类型的）patch语句都正确，但最常见的是第一种（也就是最后中括号部分最外面是单引号，里面的字符串类型字段用双引号）。
 oc patch deployables.apps.open-cluster-management.io testdeploy --type='json' -p '[{"op": "replace", "path": "/spec/template/spec/replicas", "value":4}]'
 oc patch deployables.apps.open-cluster-management.io testdeploy --type='json' -p "[{'op': 'replace', 'path': '/spec/template/spec/replicas', 'value':4}]"
 
 # 但是其实第一种在写脚本时，如果碰到patch语句里带有变量时不好处理。
 # 下面是一个小脚本，目的是每隔一分钟查询下当前这个CR instance的replicas的数量，并在原数值的基础上patch一下，加上1。
 # 如果用了第一种方式，会发现变量i没法成功转义，结果patch出来的是 "replicas: $i"，这肯定不行。
-# 原因当然很简单，就是shell脚本里单引号不会把里面的变量转义。所以我们用第二种patch语句就可以完美解决该问题。就不再贴
-# 结果了，下面脚本保存成 auto_update_replica_num.sh 后，直接 nohup ./auto_update_replica_num.sh & 后台运行，可以达到目的。
+# 原因当然很简单，就是shell脚本里单引号不会把里面的变量转义。所以我们用第二种patch语句就可以完美解决该问题。就不再贴结果了，
+# 下面脚本保存成 auto_update_replica_num.sh 后，直接 nohup ./auto_update_replica_num.sh & 后台运行，可以达到目的。
 ``
 #!/bin/sh
 POD_GROUP='deployables.apps.open-cluster-management.io'
@@ -108,6 +108,16 @@ do
 done
 ``
 
+
+# 最后就是：对于自定义对象用默认的patch策略是不行的，可以像上面一样用replace策略来patch。
+# 但是其实最简单的办法是加上 --type=merge 参数就行。 
+{root@bandore1 ~}$ oc patch deployables.apps.open-cluster-management.io testdeploy -p '{"spec":{"template":{"spec":{"replicas":5}}}}'
+Error from server (UnsupportedMediaType): the body of the request was in an unknown format - accepted media types include: application/json-patch+json, application/merge-patch+json, application/apply-patch+yaml
+{root@bandore1 ~}$
+{root@bandore1 ~}$
+{root@bandore1 ~}$ oc patch deployables.apps.open-cluster-management.io testdeploy -p '{"spec":{"template":{"spec":{"replicas":5}}}}' --type=merge
+deployable.apps.open-cluster-management.io/testdeploy patched
+{root@bandore1 ~}$
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
