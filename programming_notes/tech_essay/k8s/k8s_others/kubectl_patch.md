@@ -9,12 +9,14 @@
 
 # patch CR
 
-## 其他
+## patcch CR失败的问题
 
 kubectl patch servicemonitor fails with UnsupportedMediaType https://github.com/kubernetes/kubernetes/issues/71024
->> notes：从这个issue看目前还不能patch自己添加到系统里的custom resource definition对应的CR。
+- https://github.com/kubernetes/kubernetes/issues/71024#issuecomment-438743207
+  * > Can you try: `kubectl patch servicemonitor prometheus-prometheus-oper-kubelet --patch "$(cat kubelet-cadvisor-patch.yaml)" --type=merge`? The default type is strategic which is indeed unsupported for CRs
+>> //notes：从这个issue看目前默认的patch策略还不能patch自己添加到系统里的custom resource definition对应的CR，但是加上`--type=merge`就可以了。
 
-## 但是后来发现应该只是不能用merge类型的kubectl patch语句去patch CR，别的patch类型（如replace）可以
+## 但是后来发现应该只是不能用默认类型的kubectl patch语句去patch CR，别的patch类型（如replace）可以
 
 该教程 https://www.katacoda.com/openshift/courses/operatorframework/go-operator-podset 最后一页
 ```sh
@@ -69,6 +71,24 @@ $
 $ kubectl patch podset example-podset --type='json' -p '[{"op": "replace", "path": "/spec/replicas", "value":4}]'
 podset.app.example.com/example-podset patched
 $
+```
+
+## 关于patch语句的单引号和双引号选择，以及写脚本时的小技巧
+
+```sh
+# 如下所示，可以用jsonpath的形式直接查出replicas的数量
+oc get deployables.apps.open-cluster-management.io testdeploy -o jsonpath={.spec.template.spec.replicas}
+
+{root@bandore1 ~}$ oc get deployables.apps.open-cluster-management.io testdeploy -o jsonpath={.spec.template.spec.replicas}
+3{root@bandore1 ~}$
+{root@bandore1 ~}$ echo `oc get deployables.apps.open-cluster-management.io testdeploy -o jsonpath={.spec.template.spec.replicas}`
+3
+
+
+# 以下两个（replace类型的）patch语句都可以，最常见的是第一种。
+oc patch deployables.apps.open-cluster-management.io testdeploy --type='json' -p '[{"op": "replace", "path": "/spec/template/spec/replicas", "value":4}]'
+oc patch deployables.apps.open-cluster-management.io testdeploy --type='json' -p "[{'op': 'replace', 'path': '/spec/template/spec/replicas', 'value':4}]"
+
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
