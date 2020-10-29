@@ -89,6 +89,25 @@ oc get deployables.apps.open-cluster-management.io testdeploy -o jsonpath={.spec
 oc patch deployables.apps.open-cluster-management.io testdeploy --type='json' -p '[{"op": "replace", "path": "/spec/template/spec/replicas", "value":4}]'
 oc patch deployables.apps.open-cluster-management.io testdeploy --type='json' -p "[{'op': 'replace', 'path': '/spec/template/spec/replicas', 'value':4}]"
 
+# 但是其实第一种在写脚本时，如果碰到patch语句里带有变量时不好处理。
+# 下面是一个小脚本，目的是每隔一分钟查询下当前这个CR instance的replicas的数量，并在原数值的基础上patch一下，加上1。
+# 如果用了第一种方式，会发现变量i没法成功转义，结果patch出来的是 "replicas: $i"，这肯定不行。
+# 原因当然很简单，就是shell脚本里单引号不会把里面的变量转义。所以我们用第二种patch语句就可以完美解决该问题。就不再贴
+# 结果了，下面脚本保存成 auto_update_replica_num.sh 后，直接 nohup ./auto_update_replica_num.sh & 后台运行，可以达到目的。
+``
+#!/bin/sh
+POD_GROUP='deployables.apps.open-cluster-management.io'
+POD_NAME='testdeploy'
+while true;
+do 
+  i=`oc get $POD_GROUP $POD_NAME -o jsonpath={.spec.template.spec.replicas}`
+  i=`expr $i + 1`
+  ###oc patch $POD_GROUP $POD_NAME --type='json' -p '[{"op": "replace", "path": "/spec/template/spec/replicas", "value":$i}]'
+  oc patch $POD_GROUP $POD_NAME --type='json' -p "[{'op': 'replace', 'path': '/spec/template/spec/replicas', 'value':$i}]"
+  sleep 60
+done
+``
+
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
