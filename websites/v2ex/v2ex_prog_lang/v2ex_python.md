@@ -1,4 +1,6 @@
 
+请教如何使用 Python 直接对二进制文件进行修改 https://www.v2ex.com/t/719647
+
 听说 Python 的多线程是假的，无法利用多核心？ https://www.v2ex.com/t/719053
 
 求 Python 练习题 https://www.v2ex.com/t/714540

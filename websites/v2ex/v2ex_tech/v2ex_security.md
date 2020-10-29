@@ -1,4 +1,17 @@
 
+网易云音乐加密疑问，为什么要经过两次 aes 加密 https://www.v2ex.com/t/719718
+```console
+很久之前就爬过网易云音乐的数据，但当时没有认真分析，现在项目 api 请求加密突然想参考网易云音乐的加密的方式，加密如下
+
+i = self.create16RandomBytes()
+encText = self.AESEncrypt(input_text, self.nonce)
+encText = self.AESEncrypt(encText, i)
+encSecKey = self.RSAEncrypt(i, self.public_key, self.modulus)
+
+上面的算法一看就知道模仿 https 的加密流程的，但是我想不明白为什么要经过两次 aes,意义何在，
+我觉得随机生成 16 位的密钥通过 aes 加密，然后 rsa 加密密钥传给服务端就可以啦，求解答
+```
+
 oauth2.0 授权码登录后，是如何和应用进行交互的？ https://www.v2ex.com/t/714626
 - > 你用 QQ 登录授权给 A 应用后，QQ 给 A 一个 code，A 拿着 code 去问 QQ 要你的信息，里边包含了一个 openid，就可以唯一代表你。
 <br> A 一般会拿着你的 openid 去自己数据库查一查，是否有相关用户，如果有，就得到了你的 user_id，如果没有，就用 openid 去注册一个新用户，也会生成一个 user_id 。

@@ -1,4 +1,7 @@
 
+如何查看针对一个 git 仓库的 clone 和 pull 操作历史? https://www.v2ex.com/t/719779
+- > git 本身没有, git hook 可以自己记录
+
 Git 第一版源代码 https://www.v2ex.com/t/713730
 ```console
 https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290
