@@ -436,6 +436,16 @@ http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 
 ### gitk
 
+### git hooks
+
+`8.3 自定义 Git - Git 钩子` https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90 || `8.3 Customizing Git - Git Hooks` https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+
+Git Hooks https://www.atlassian.com/git/tutorials/git-hooks
+
+How To Use Git Hooks To Automate Development and Deployment Tasks https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks
+
+用 Git 钩子进行简单自动部署 https://aotu.io/notes/2017/04/10/githooks/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 待分类git配置
