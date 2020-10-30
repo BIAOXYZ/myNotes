@@ -208,7 +208,9 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 # paper
 
-(TKDE 2018) Authenticating Aggregate Queries over Set-Valued Data with Confidentiality
+(SIGMOD 2019) vChain: Enabling Verifiable Boolean Range Queries over Blockchain Databases https://arxiv.org/pdf/1812.02386.pdf
+
+(TKDE 2018) Authenticating Aggregate Queries over Set-Valued Data with Confidentiality https://xuc.me/file/paper/TKDE18.pdf
 - `[25] C. Papamanthou, R. Tamassia, and N. Triandopoulos, “Optimal verification of operations on dynamic sets,” in Proc. CRYPTO, 2011, pp. 91–110.` https://eprint.iacr.org/2010/455.pdf
   * > `Proof of Lemma 6 This direction follows by the fact that we can use the extended Euclidean algorithm and find polynomials q1(s),..., qt(s) such that`
 - `[26] R. Canetti, O. Paneth, D. Papadopoulos, and N. Triandopoulos, “Verifiable set operations over outsourced databases,” in Proc. PKC, 2014, pp. 113–130.` https://eprint.iacr.org/2013/724.pdf
