@@ -1,4 +1,11 @@
 
+请教 mkdir 权限问题 https://www.v2ex.com/t/720459
+- >
+  ```
+  0777 (octal) == 511 (decimal)
+  777 (decimal) == 1411 (octal)
+  ```
+
 请教，为什么 vim 的强制保存这么厉害？ https://www.v2ex.com/t/714451
 
 DD 命令如何在后台运行? https://www.v2ex.com/t/713421
