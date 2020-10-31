@@ -151,6 +151,18 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 ### markdown图片大小调整：
 
 关于 Markdown 的一些奇技淫巧 https://mazhuang.org/2017/09/01/markdown-odd-skills/
+```console
+**图片默认显示效果：**
+
+![](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png)
+
+**加以控制后的效果：**
+
+<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+
+**数值也可以用百分比（防止因自己选的值不合适导致图片变形）：**
+
+<img width=10% height=10% src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png" />
 ```
 **图片默认显示效果：**
 
@@ -159,14 +171,10 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 **加以控制后的效果：**
 
 <div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
-```
-**图片默认显示效果：**
 
-![](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png)
+**数值也可以用百分比（防止因自己选的值不合适导致图片变形）：**
 
-**加以控制后的效果：**
-
-<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+<img width=10% height=10% src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png" />
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
