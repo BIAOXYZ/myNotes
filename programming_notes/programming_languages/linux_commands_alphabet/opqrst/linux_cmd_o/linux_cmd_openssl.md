@@ -125,4 +125,4 @@ Encrypt files using AES with OPENSSL https://medium.com/@kekayan/encrypt-files-u
   -nosalt  ——  not to add default salt
   ```
 - > When the salt is being used the first eight bytes of the encrypted data are reserved for the salt: it is generated at random when encrypting a file and read from the encrypted file when it is decrypted. So if you open file.enc in a text editor you will see like `Salted__`
-  >> ![](https://miro.medium.com/max/1050/1*Ga6zl4UjPuovgJFe-JGaIw.png)
+  >> <img width=75% height=75% src="https://miro.medium.com/max/1050/1*Ga6zl4UjPuovgJFe-JGaIw.png"/>
