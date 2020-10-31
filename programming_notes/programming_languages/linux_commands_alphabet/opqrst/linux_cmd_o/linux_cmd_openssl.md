@@ -118,4 +118,11 @@ Encrypt files using AES with OPENSSL https://medium.com/@kekayan/encrypt-files-u
   ```
 - > **Let’s do without specify password flag**
   >> //notes：这种情况会弹出提示（说白了就是非交互式变交互式）让你输入一个encryption password，不再贴了。
-- > 
+- > Also you can specify the salt value with the `-S` flag.If you provide the salt value, then you become responsible for generating proper salts, trying to make them as unique as possible (in practice, you have to produce them randomly). It is preferable to let `openssl` handle that.
+- >
+  ```console
+  -salt  ——  Use salt in the KDF (default)
+  -nosalt  ——  not to add default salt
+  ```
+- > When the salt is being used the first eight bytes of the encrypted data are reserved for the salt: it is generated at random when encrypting a file and read from the encrypted file when it is decrypted. So if you open file.enc in a text editor you will see like `Salted__`
+  >> ![](https://miro.medium.com/max/1050/1*Ga6zl4UjPuovgJFe-JGaIw.png)
