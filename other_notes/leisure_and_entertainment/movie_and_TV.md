@@ -123,6 +123,8 @@ https://www.juzimi.com/ju/1741097
 
 ### 西游记版的春晚
 
+齐天乐春节晚会 https://baike.baidu.com/item/%E9%BD%90%E5%A4%A9%E4%B9%90%E6%98%A5%E8%8A%82%E6%99%9A%E4%BC%9A/1050118
+
 【齐天乐晚会】1986 【近2小时高清完整版】 https://www.bilibili.com/video/BV1mx411x7uR/
 
 【人工修复 全网最清晰】中央电视台-西游记-齐天乐春节联欢晚会完整版 https://www.bilibili.com/video/BV14h411R7dA/
