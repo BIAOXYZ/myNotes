@@ -26,6 +26,10 @@ Python LibHunt https://python.libhunt.com/
 Go LibHunt https://go.libhunt.com/
 - https://go.libhunt.com/gomega-alternatives
 
+CPP LibHunt https://cpp.libhunt.com/
+- https://cpp.libhunt.com/compare-openssl-vs-botan
+- https://cpp.libhunt.com/compare-openssl-vs-cryptopp
+
 ## Libraries.io
 
 Tom Lane https://libraries.io/github/tglsfdc
