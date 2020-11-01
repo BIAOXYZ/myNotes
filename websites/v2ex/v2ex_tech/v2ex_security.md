@@ -1,4 +1,10 @@
 
+语言种类最全的权限管理系统—Casbin https://www.v2ex.com/t/720677
+```console
+Casbin 官方网址： https://casbin.org/
+Github 地址： https://github.com/casbin/casbin
+```
+
 网易云音乐加密疑问，为什么要经过两次 aes 加密 https://www.v2ex.com/t/719718
 ```console
 很久之前就爬过网易云音乐的数据，但当时没有认真分析，现在项目 api 请求加密突然想参考网易云音乐的加密的方式，加密如下

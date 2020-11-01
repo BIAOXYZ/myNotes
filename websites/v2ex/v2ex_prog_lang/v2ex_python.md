@@ -1,4 +1,8 @@
 
+老生常谈，但还是问一下， Python env 选择 https://www.v2ex.com/t/720757
+
+如何在 Python 中嵌入汇编代码，比如 hook 一个软件， c 语言里可以直接内联汇编，不知道 Python 这样才可以有这种操作 https://www.v2ex.com/t/720690
+
 请教如何使用 Python 直接对二进制文件进行修改 https://www.v2ex.com/t/719647
 
 听说 Python 的多线程是假的，无法利用多核心？ https://www.v2ex.com/t/719053
