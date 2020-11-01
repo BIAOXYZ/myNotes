@@ -79,11 +79,21 @@ https://github.com/kunxian-xia
 
 The Apache Software Foundation https://github.com/apache
 
+## 学术相关组织
+
 The LaTeX3 Project https://github.com/latex3
 > https://www.latex-project.org/
 
 Bar Ilan Cryptography Research Group https://github.com/cryptobiu
 - > Comprehensive Open Source Library for Secure Multiparty Computation https://github.com/cryptobiu/libscapi
+
+SCIPR Lab -- Succinct Computational Integrity and Privacy Research https://github.com/scipr-lab
+- libsnark: a C++ library for zkSNARK proofs https://github.com/scipr-lab/libsnark
+
+arkworks -- An ecosystem for developing and programming with zkSNARKs https://github.com/arkworks-rs
+- https://github.com/arkworks-rs/crypto-primitives
+- Curve implementations https://github.com/arkworks-rs/curves
+- arkworks::algebra https://github.com/arkworks-rs/algebra
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
