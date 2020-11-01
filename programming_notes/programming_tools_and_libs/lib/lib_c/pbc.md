@@ -1,25 +1,39 @@
 
-# 官方
+# 1.官方
 
 https://github.com/blynn/pbc
+- `"q 8780710799663312522437781984754049815806883199414208211028653399266475630880222957078625179422662221423155858769582317459277713367317481324925129998224791\n"` https://github.com/blynn/pbc/blob/master/pbc/pbc.c#L736
+
+PBC Library -- The Pairing-Based Cryptography Library https://crypto.stanford.edu/pbc/
 - https://crypto.stanford.edu/pbc/chunked/ch01.html
 - https://crypto.stanford.edu/pbc/manual/ch01s03.html
   * > and linked against the PBC library and the GMP library, e.g. `$ gcc program.c -L. -lpbc -lgmp`
 
-https://gmplib.org/
+GMP -- The GNU Multiple Precision Arithmetic Library https://gmplib.org/
 - https://gmplib.org/manual/Installing-GMP#Installing-GMP
 
-# 其他
+# 2.其他
 
-## 主参考链接
+## 2.1 主参考链接
 
 Linux环境PBC库配置 https://www.cnblogs.com/burymyname/p/12061212.html 【1】
+```sh
+# 管理库路径
+cd /etc/ld.so.conf.d
+
+cat << EOF > libpbc.conf
+/usr/local/lib
+EOF
+
+sudo ldconfig
+```
 
 PBC library 学习笔记（一） https://blog.csdn.net/u013983667/article/details/54582126 【2】
+- > ldconfig命令 https://man.linuxde.net/ldconfig
 
 PBC库安装 https://blog.csdn.net/tbbetter/article/details/103587977 【3】
 
-## 其他链接
+## 2.2 其他链接
 
 [可搜索加密]PBC Library/PBC库的用法简介 https://jeza-chen.com/2020/06/04/PBC-Library/
 
@@ -29,10 +43,12 @@ https://godoc.org/github.com/Nik-U/pbc
 
 http://www.adminzero.cn/AZgeek/PBClearn/
 
-# 实战过程
+# 3.实战过程
 
-```
-apt install -y flex bison m4 g++
+## 3.1 编译安装
+
+```sh
+# apt install -y flex bison m4 g++
 
 yum install -y flex bison m4 gcc
 
@@ -56,18 +72,11 @@ make
 make install
 
 echo "install End"
-
-# 管理库路径
-cd /etc/ld.so.conf.d
-
-cat << EOF > libpbc.conf
-/usr/local/lib
-EOF
-
-sudo ldconfig
 ```
 
-```
+### 3.1.1 错误处理
+
+```sh
 [root@insisted1 testlib]# wget https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz
 --2020-10-31 21:36:52--  https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz
 Resolving crypto.stanford.edu (crypto.stanford.edu)... 171.64.78.27
@@ -81,8 +90,10 @@ tar: Error is not recoverable: exiting now
 [root@insisted1 testlib]#
 ```
 
-```
-# 第一次 make install
+### 3.1.2 库安装位置
+
+```sh
+# 第一次 (GMP的) make install
 
 [root@insisted1 gmp-6.2.0]# make install
 make  install-recursive
@@ -308,8 +319,8 @@ make[1]: Leaving directory `/root/testlib/gmp-6.2.0'
 [root@insisted1 gmp-6.2.0]#
 ```
 
-```
-# 第二次 make install
+```sh
+# 第二次 (PBC的) make install
 
 [root@insisted1 pbc-0.5.14]# make install
 Making install in .
@@ -362,15 +373,13 @@ make[2]: Nothing to be done for `install-data-am'.
 make[2]: Leaving directory `/root/testlib/pbc-0.5.14/gen'
 make[1]: Leaving directory `/root/testlib/pbc-0.5.14/gen'
 [root@insisted1 pbc-0.5.14]#
-
 ```
 
-PBC library 学习笔记（一） https://blog.csdn.net/u013983667/article/details/54582126
-- > ldconfig命令 https://man.linuxde.net/ldconfig
+## 3.2 运行自带的、已经编译好的例子
 
-### 运行自带的已经编译好的pbc例子
+### 3.2.1 运行自带的已经编译好的pbc例子
 
-```
+```sh
 [root@insisted1 pbc]# ./pbc
 g:=rnd(G1);
 g;
@@ -392,9 +401,9 @@ pairing(g,h)^(a*b);
 
 ```
 
-### 运行自带的已经编译好的bls例子
+### 3.2.2 运行自带的已经编译好的bls例子
 
-```
+```sh
 [root@insisted1 example]# ./bls < ~/testlib/pbc-0.5.14/param/a.param
 Short signature test
 system parameter g = [6036870989251050438679734903133033944334477882176375994891253181198374533307142453558438521649652407685852577037726058502286048902523622150385426788893532, 8652871942799016245564679495347445131719554019083075684398975225332142455877739108745747859646205827763807046738817334561963661778407442459132328988502881]
@@ -414,10 +423,10 @@ random signature doesn't verify
 [root@insisted1 example]#
 ```
 
-## 自己编译下bls，加上一句print
+## 3.3 自己编译下bls，加上一句print
 
-```
-# 试着编译
+```sh
+# 试着（用最基本的参数）编译一下
 [root@insisted1 example]# cp bls.c bls2.c
 [root@insisted1 example]# gcc bls2.c -o blstest
 bls2.c:6:17: fatal error: pbc.h: No such file or directory
@@ -475,8 +484,9 @@ total 208
 ...
 ...
 ...
+```
 
-
+```sh
 # 即使编译好，也要注意动态链接库的问题。
 [root@insisted1 example]# ./blstest < ~/testlib/pbc-0.5.14/param/a.param
 ./blstest: error while loading shared libraries: libpbc.so.1: cannot open shared object file: No such file or directory
@@ -532,6 +542,4 @@ ldconfig: Can't stat /usr/libx32: No such file or directory
 ...
 ...
 ...
-``
-
 ```
