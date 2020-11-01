@@ -49,6 +49,8 @@ A toy JVM in Go https://github.com/zserge/tojvm
 
 ## programming language project
 
+Single-file public-domain/open source libraries with minimal dependencies https://github.com/nothings/single_file_libs
+
 A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff. https://github.com/fffaraz/awesome-cpp || http://fffaraz.github.io/awesome-cpp/
 
 C in four functions https://github.com/rswier/c4
