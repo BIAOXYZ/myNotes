@@ -367,6 +367,9 @@ make[1]: Leaving directory `/root/testlib/pbc-0.5.14/gen'
 
 PBC library 学习笔记（一） https://blog.csdn.net/u013983667/article/details/54582126
 - > ldconfig命令 https://man.linuxde.net/ldconfig
+
+### 运行自带的已经编译好的pbc例子
+
 ```
 [root@insisted1 pbc]# ./pbc
 g:=rnd(G1);
@@ -389,6 +392,8 @@ pairing(g,h)^(a*b);
 
 ```
 
+### 运行自带的已经编译好的bls例子
+
 ```
 [root@insisted1 example]# ./bls < ~/testlib/pbc-0.5.14/param/a.param
 Short signature test
@@ -408,6 +413,8 @@ signature verifies on second guess
 random signature doesn't verify
 [root@insisted1 example]#
 ```
+
+## 自己编译下bls，加上一句print
 
 ```
 # 试着编译
@@ -455,7 +462,8 @@ bls2.c:(.text+0xa56): undefined reference to `pairing_clear'
 collect2: error: ld returned 1 exit status
 [root@insisted1 example]#
 
-# 这个是编译时没有链接pbc和gmp库导致的
+
+# 这个错误是编译时没有链接pbc和gmp库导致的，我们链接一下就可以编过了。
 [root@insisted1 example]# gcc bls2.c -o blstest -L. -lpbc -lgmp
 [root@insisted1 example]# ll
 total 208
@@ -469,7 +477,7 @@ total 208
 ...
 
 
-# 即使编译好，也要注意动态链接库的问题
+# 即使编译好，也要注意动态链接库的问题。
 [root@insisted1 example]# ./blstest < ~/testlib/pbc-0.5.14/param/a.param
 ./blstest: error while loading shared libraries: libpbc.so.1: cannot open shared object file: No such file or directory
 [root@insisted1 example]#
@@ -496,10 +504,34 @@ signature verifies on second guess
 random signature doesn't verify
 [root@insisted1 example]#
 
-# 或者直接改ldconfig的文件（但是前面那个貌似是不需要再运行下ldconfig的，这个改完必须运行下。）
+
+# 或者直接改ldconfig的文件（但是前面那个貌似是不需要再运行下ldconfig的，这个改完必须运行下）然后再运行程序即可。
 cd /etc/ld.so.conf.d
 cat << EOF > libpbc.conf
 /usr/local/lib
 EOF
 ldconfig -v
+
+# 这里加-v（verbose）参数主要是为了能看清确实把pbc和gmp对应的库路径（/usr/local/lib）加到搜索路径里了。
+[root@insisted1 ld.so.conf.d]# ldconfig -v
+ldconfig: Can't stat /libx32: No such file or directory
+ldconfig: Path `/usr/lib' given more than once
+ldconfig: Path `/usr/lib64' given more than once
+ldconfig: Can't stat /usr/libx32: No such file or directory
+/usr/local/lib:
+        libpbc.so.1 -> libpbc.so.1.0.0
+        libgmp.so.10 -> libgmp.so.10.4.0
+/usr/lib64/mysql:
+        libmysqlclient.so.18 -> libmysqlclient.so.18.0.0
+/lib:
+/lib64:
+        libevent_openssl-2.0.so.5 -> libevent_openssl-2.0.so.5.1.9
+        libevent_extra-2.0.so.5 -> libevent_extra-2.0.so.5.1.9
+        libmpc.so.3 -> libmpc.so.3.0.0
+        libevent_core-2.0.so.5 -> libevent_core-2.0.so.5.1.9
+...
+...
+...
+``
+
 ```
