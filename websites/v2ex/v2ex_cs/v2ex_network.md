@@ -1,4 +1,22 @@
 
+求解 Linux 对本地主机名的解析方式 https://www.v2ex.com/t/721024
+```console
+centos7 本机的 hostname 为 xxxa
+ping xxxa 解析到了 eth1 对应的 ip，这个解析走的是哪里的 dns ？
+为什么会解析到 eth1 的 ip 而不是 eth2 eth3 的？
+```
+- > 先走 /etc/hosts
+  >> /etc/hosts 并里没有单独对 xxxa 做任何解析
+- > 主机名解析底层就是调用 gethostbyname，你说为什么不对应第二个 ip，理论上应该对应 0.0.0.0，绑定所有的本机 ip，但 linux 程序员就是写了获取回来的第一个 ip，你也没办法。
+  >> 这个是内核里写的逻辑吗？
+  >>> 严格来说不算内核，就算是个提供给程序的调用库。
+- > strace 一下 ping 看看？
+- > traceroute 一下，看看那走的节点
+- > man 5 nsswitch.conf
+- > 好像 gethostbyname 已被 getaddrinfo 替代
+
+如何对已知 CIDR 地址块求补集 https://www.v2ex.com/t/721018
+
 问一个关于 https 和 www 的小白问题 https://www.v2ex.com/t/720726
 ```console
 网站开了 https 以后直接用域名可以访问，https://www.域名 也可与访问，
