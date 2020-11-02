@@ -7,9 +7,10 @@ functools --- 高阶函数和可调用对象上的操作 https://docs.python.org
 
 ## `lru_cache()`
 
-`312. 戳气球` https://leetcode-cn.com/problems/burst-balloons/solution/chuo-qi-qiu-by-leetcode-solution/
-
-`329. 矩阵中的最长递增路径` -- `方法一：记忆化深度优先搜索` https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
+### LeetCode中用到这个的（至少目前全是HARD。。。）：
+- `312. 戳气球` https://leetcode-cn.com/problems/burst-balloons/solution/chuo-qi-qiu-by-leetcode-solution/
+- `329. 矩阵中的最长递增路径` -- `方法一：记忆化深度优先搜索` https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
+- `140. 单词拆分 II` https://leetcode-cn.com/problems/word-break-ii/solution/dan-ci-chai-fen-ii-by-leetcode-solution/
 
 Every Python Programmer Should Know LRU_cache From the Standard Library https://medium.com/better-programming/every-python-programmer-should-know-lru-cache-from-the-standard-library-8e6c20c6bc49
   
