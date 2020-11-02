@@ -51,6 +51,7 @@
 LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4Mzc5NDk4MA==&action=getalbum&album_id=1468452612273422336&scene=173
 - 算法萌新如何学好动态规划（1） https://mp.weixin.qq.com/s/rhyUb7d8IL8UW1IosoE34g
 - 算法萌新如何学好动态规划（2） https://mp.weixin.qq.com/s/jav9--Sqf9jOs8BSXNcUyw
+- 算法萌新如何学好动态规划（3） https://mp.weixin.qq.com/s/2tD3h4NtFiIuujhoJYVoKQ
 
 力扣上的 DP 问题分类汇总 https://leetcode-cn.com/circle/article/NfHhXD/
 
@@ -62,3 +63,14 @@ LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4M
 - > 滚动数组一般来说都可以将状态数组的空间降低一维，比如三维变二维、二维变一维、一维变常数，当然有些具体题型的空间优化也可以做到这个，比如背包类型的动态规划问题中，我们通过改变遍历的顺序，直接就可以做到空间降维，但其实这是这类动态规划问题特有的优化，不属于滚动数组的范畴。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 记忆化搜索
+
+记忆化搜索 https://oi-wiki.org/dp/memo/
+
+记忆化搜索与动态规划等价吗？ - 知乎 https://www.zhihu.com/question/60730045
+- 记忆化搜索与动态规划等价吗？ - 樱花记忆的回答 - 知乎 https://www.zhihu.com/question/60730045/answer/462829337
+
+`140. 单词拆分 II` https://leetcode-cn.com/problems/word-break-ii/solution/dan-ci-chai-fen-ii-by-leetcode-solution/
+- > 第 139 题可以使用动态规划的方法判断是否可以拆分，因此这道题也可以使用动态规划的思想。但是这道题如果使用***自底向上的动态规划的方法***进行拆分，则无法事先判断拆分的可行性，在不能拆分的情况下会超时。
+- > 为了避免动态规划的方法超时，需要首先使用第 139 题的代码进行判断，在可以拆分的情况下再使用动态规划的方法进行拆分。相比之下，***自顶向下的记忆化搜索***可以在搜索过程中将不可以拆分的情况进行剪枝，因此记忆化搜索是更优的做法。
