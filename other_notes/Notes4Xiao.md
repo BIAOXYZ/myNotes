@@ -208,6 +208,10 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 # paper
 
+--------------------------------------------------
+
+(EUROCRYPT) Short Signatures Without Random Oracles http://crypto.stanford.edu/~xb/eurocrypt04a/bbsigs.pdf || https://www.iacr.org/cryptodb/archive/2004/EUROCRYPT/1948/1948.pdf
+
 (SIGMOD 2019) vChain: Enabling Verifiable Boolean Range Queries over Blockchain Databases https://arxiv.org/pdf/1812.02386.pdf
 
 (TKDE 2018) Authenticating Aggregate Queries over Set-Valued Data with Confidentiality https://xuc.me/file/paper/TKDE18.pdf
@@ -217,6 +221,8 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 (PKC 2006) New Online/Offline Signature Schemes Without Random Oracles https://www.iacr.org/archive/pkc2006/39580335/39580335.pdf
 - > Definition 5 (Weak/strong division intractability).
+
+--------------------------------------------------
 
 (CT-RSA 2015) Revisiting Cryptographic Accumulators, AdditionalProperties and Relations to other Primitives https://eprint.iacr.org/2015/087.pdf
 
