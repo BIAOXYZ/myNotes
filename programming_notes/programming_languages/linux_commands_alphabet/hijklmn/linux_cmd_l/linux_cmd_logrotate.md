@@ -19,4 +19,6 @@ Linux 日志切割神器 logroate 原理介绍和配置详解 https://www.v2ex.c
 
 How To Manage Logfiles with Logrotate on Ubuntu 16.04 https://www.digitalocean.com/community/tutorials/how-to-manage-logfiles-with-logrotate-on-ubuntu-16-04
 
+Linux 自带神器 logrotate 详解 https://mp.weixin.qq.com/s/cUmhsFDsFe8QJFz8FH0s1w
+
 # 个人实战
