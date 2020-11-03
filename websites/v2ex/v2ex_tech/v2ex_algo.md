@@ -1,4 +1,9 @@
 
+各位都是怎么学会 Hash Table 的 https://www.v2ex.com/t/721188
+- > https://www.nosuchfield.com/2016/07/29/the-python-implementationp-of-HashTable/ 看我以前写的文章
+  * > 一步一步写算法（之hash表） https://blog.csdn.net/feixiaoxing/article/details/6885657
+- > 可以看这个 https://algs4.cs.princeton.edu/34hash/
+
 估计面试没通过，唉 https://www.v2ex.com/t/719057
 
 谷歌面试题：二叉查找树迭代器（hard 题，面试中有变形） https://www.v2ex.com/t/702892
