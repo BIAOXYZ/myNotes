@@ -8,7 +8,7 @@ cat > filename << EOF
 EOF
 ```
 
-2.基本形式II：交换一下位置的形式
+2.基本形式II：交换一下位置的形式 【这个是个人最常用的了】
 ```
 cat << EOF > filename 
 
@@ -52,7 +52,7 @@ echo '
 
 8.直接创建，但是既不涉及cat也不涉及echo
 ```
-kubectl apply -f — << EOF
+kubectl apply -f - << EOF
 
 EOF
 ```
