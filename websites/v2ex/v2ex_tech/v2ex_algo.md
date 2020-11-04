@@ -1,4 +1,6 @@
 
+Facebook 面试题：和大于 S 的最小子数组 https://www.v2ex.com/t/721633
+
 各位都是怎么学会 Hash Table 的 https://www.v2ex.com/t/721188
 - > https://www.nosuchfield.com/2016/07/29/the-python-implementationp-of-HashTable/ 看我以前写的文章
   * > 一步一步写算法（之hash表） https://blog.csdn.net/feixiaoxing/article/details/6885657

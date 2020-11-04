@@ -8,6 +8,10 @@
 戴森吹风机贵在哪里？ https://www.v2ex.com/t/717681
 - > 戴森的确有它独特的地方，但主要还是品牌溢价，建议看看这个评测 https://www.bilibili.com/video/BV1uA411t7rU
 
+# 洗碗机
+
+真是讨厌洗碗，各位 v2er 有没有推荐洗碗机，谢谢了。 https://www.v2ex.com/t/721686
+
 # self
 
 利仁（Liven）空气炸锅5L家用大容量电炸锅多功能锅无油煎炸锅薯条机KZ-J5000B干炸锅 https://item.jd.com/5869380.html
