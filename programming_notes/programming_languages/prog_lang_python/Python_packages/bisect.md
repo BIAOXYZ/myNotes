@@ -1,6 +1,8 @@
 
 # 官方
 
+8.5. bisect — Array bisection algorithm https://docs.python.org/2.7/library/bisect.html
+
 `def bisect_left(a, x, lo=0, hi=None):` https://github.com/python/cpython/blob/2.7/Lib/bisect.py#L67
 ```py
 def bisect_left(a, x, lo=0, hi=None):
@@ -26,6 +28,8 @@ def bisect_left(a, x, lo=0, hi=None):
 ```
 
 # 其他
+
+How to Do a Binary Search in Python https://realpython.com/binary-search-python/
 
 一个有趣的python排序模块：bisect https://www.cnblogs.com/skydesign/archive/2011/09/02/2163592.html
 - > 接着看 bisect_left 和 bisect_right 函数，该函数用入处理将会插入重复数值的情况，返回***将会插入的位置***：![](https://pic002.cnblogs.com/images/2011/225228/2011090220185965.jpg)
