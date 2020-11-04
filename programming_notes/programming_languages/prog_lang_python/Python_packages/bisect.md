@@ -35,6 +35,39 @@ How to Do a Binary Search in Python https://realpython.com/binary-search-python/
 - > 接着看 bisect_left 和 bisect_right 函数，该函数用入处理将会插入重复数值的情况，返回***将会插入的位置***：![](https://pic002.cnblogs.com/images/2011/225228/2011090220185965.jpg)
   >> //notes：所以这一类函数的核心点是返回目标元素应该插入到数组的位置下标，而不完全等于在原数组中查找某个值。
 
+Bisect Algorithm Functions in Python https://www.geeksforgeeks.org/bisect-algorithm-functions-in-python/
+```py
+#// 注：帖子原来的代码有一点点小语法错误（不会影响到本篇讲的bisect的实质内容），这是修改过后保证能运行的。
+
+# importing "bisect" for bisection operations 
+import bisect 
+  
+# initializing list 
+li = [1, 3, 4, 4, 4, 6, 7] 
+  
+# using bisect() to find index to insert new element 
+# returns 5 ( right most possible index ) 
+print ("The rightmost index to insert, so list remains sorted is  : ") 
+print (bisect.bisect(li, 4)) 
+  
+# using bisect_left() to find index to insert new element 
+# returns 2 ( left most possible index ) 
+print ("The leftmost index to insert, so list remains sorted is  : ") 
+print (bisect.bisect_left(li, 4)) 
+  
+# using bisect_right() to find index to insert new element 
+# returns 4 ( right most possible index ) 
+print ("The rightmost index to insert, so list remains sorted is  : ") 
+print (bisect.bisect_right(li, 4, 0, 4)) 
+----------------------------------------------------------------------------------------------------
+The rightmost index to insert, so list remains sorted is  : 
+5
+The leftmost index to insert, so list remains sorted is  : 
+2
+The rightmost index to insert, so list remains sorted is  : 
+4
+```
+
 When are bisect_left and bisect_right not equal? https://stackoverflow.com/questions/20297249/when-are-bisect-left-and-bisect-right-not-equal
 - > When the target to locate is in the list, bisect_left, bisect_right return different result. For example:
   ```py
