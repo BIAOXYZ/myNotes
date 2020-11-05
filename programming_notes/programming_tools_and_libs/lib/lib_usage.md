@@ -282,17 +282,25 @@ Charm: A Framework for Rapidly Prototyping Cryptosystems http://charm-crypto.io 
 - http://blog.sina.com.cn/s/blog_a04184c101010kt6.html
 - https://docs.python.org/2/library/pwd.html
 
-### pycrypto
+### pycrypto 【已经停滞很久了，可以废弃了】
+
+官方：
+- https://www.dlitz.net/software/pycrypto/ || https://github.com/pycrypto/pycrypto
+
+其他：
 - https://pypi.python.org/pypi/pycrypto
-- https://www.dlitz.net/software/pycrypto/
 - http://python.jobbole.com/84094/
 
-### pycryptodome
-https://www.pycryptodome.org/en/latest/
+### pycryptodome 【活跃开发中】
+- https://github.com/Legrandin/pycryptodome
+- https://www.pycryptodome.org/en/latest/ || https://pycryptodome.readthedocs.io/en/latest/
 
-### pyca/cryptography
+### pyca/cryptography 【活跃开发中，且pyca是一个组织，还有不少别的项目】
+- https://github.com/pyca/cryptography
 - https://cryptography.io/en/latest/
 - https://cryptography.io/en/latest/development/
+
+https://github.com/pyca/pyopenssl
 
 ### hmac
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0015108777177966ef0f4f8510a41b3b8c48cdcf7047b2d000
