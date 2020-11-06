@@ -29,6 +29,9 @@
 
 # 在线工具/环境
 
+Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com/t/722220
+- Gitako - GitHub file tree https://chrome.google.com/webstore/detail/gitako-github-file-tree/giljefjcheohhamkjphiebfjnlphnokk
+
 更多体验场景请至开发者实验室：https://developer.aliyun.com/adc/labs/
 - 阿里云体验实验室 教你《搭建 Hadoop 环境》 https://www.v2ex.com/t/702879
   * > 搭建Hadoop环境 https://developer.aliyun.com/adc/scenario/cf48abdfe41e4187be079722b9dc15b6
