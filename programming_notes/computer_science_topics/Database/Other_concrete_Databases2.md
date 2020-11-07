@@ -56,6 +56,8 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 ## TBase
 
+支持微信支付亿级请求的TBase数据库大揭秘 https://mp.weixin.qq.com/s/NW95fgGj1E7Ar8ZaqdUisA
+
 企业级分布式 HTAP 数据库管理系统，腾讯 TBase 正式开源 https://mp.weixin.qq.com/s/ohxkqZFcjI16TpPw4Ras2A || 基于PostgreSQL，腾讯企业级分布式数据库—— TBase 正式开源 https://mp.weixin.qq.com/s/39ece5cV0P1Bc962Jao2Zw
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
