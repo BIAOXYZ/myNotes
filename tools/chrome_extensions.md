@@ -157,6 +157,10 @@ http://www.cnplugins.com/zhuanti/bookmark-sync.html
 ## From ithome
 --------------------------------------------------
 
+你还会熬夜等双十一么吗，吐槽那些年碰到过的套路 https://www.ithome.com/0/518/151.htm
+- > 问题在于，价保往往需要手动申请，加上价保的入口不是那么的显眼，这就相当不便了。对此，可以使用 “京价保”等自动价保工具，来自动申请价格保护。笔者就通过这软件得到了不少实惠，强烈推荐大家也试试！
+  >> 京价保 - 京东价保助手 https://jjb.im/ || https://github.com/sunoj/jjb
+
 收好这10个Chrome扩展，让你的浏览器变得更加强大 ithome.com/0/426/337.htm
 - > Search by Image (by Google)
 
