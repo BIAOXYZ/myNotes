@@ -27,6 +27,10 @@ Best Graph Databases Software https://www.g2.com/categories/graph-databases
 
 awesome-graph: A curated list of resources for graph databases and graph computing tools https://github.com/jbmusso/awesome-graph
 
+# 图数据库性能
+
+Half-Terabyte Benchmark Neo4j vs. TigerGraph https://dzone.com/articles/half-terabyte-benchmark-neo4j-vs-tigergraph
+
 ## JanusGraph
 
 图数据库JanusGraph浅析 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/50279477
