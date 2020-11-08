@@ -1,4 +1,13 @@
 
+浏览器的工作原理：从在地址栏输入 google.com 到显示 google 页面发生了什么？ https://www.v2ex.com/t/722929
+```console
+https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/
+```
+- > 我记得以前在 github 看过一个, 不知道是不是它 https://github.com/alex/what-happens-when
+  >> 当···时发生了什么？ https://github.com/skyline75489/what-happens-when-zh_CN
+
+有没有什么练手项目可以充分利用到计算机网络相关知识？ https://www.v2ex.com/t/722860
+
 求解 Linux 对本地主机名的解析方式 https://www.v2ex.com/t/721024
 ```console
 centos7 本机的 hostname 为 xxxa
