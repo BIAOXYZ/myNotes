@@ -291,6 +291,12 @@ Charm: A Framework for Rapidly Prototyping Cryptosystems http://charm-crypto.io 
 - https://pypi.python.org/pypi/pycrypto
 - http://python.jobbole.com/84094/
 
+### pycrypt 【这个名字也不错，可惜好名字都让。。。这项目也停滞了，并且完善度好像是最差的】 --> 【我又搜了下pycipher，果然是一样的。。。】
+
+Pycrypt is a python suite for solving ciphers at (mostly Czech) cryptography games. https://github.com/mathead/pycrypt
+
+Welcome to pycrypt’s documentation! https://pycrypt.readthedocs.io/en/latest/
+
 ### pycryptodome 【活跃开发中】
 - https://github.com/Legrandin/pycryptodome
 - https://www.pycryptodome.org/en/latest/ || https://pycryptodome.readthedocs.io/en/latest/
