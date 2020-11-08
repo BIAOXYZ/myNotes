@@ -115,3 +115,19 @@ Radix tree https://en.wikipedia.org/wiki/Radix_tree || 基数树 https://zh.wiki
 Merkle Patricia Tree (MPT) 树详解 https://www.cnblogs.com/fengzhiwu/p/5584809.html
 
 MPT（Merkle Patricia Trie） https://www.jianshu.com/p/e67452930dcc
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# `#` Segment tree (线段树)
+
+Segment tree https://en.wikipedia.org/wiki/Segment_tree
+
+Segment Tree | Set 1 (Sum of given range) https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+
+Segment Trees https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/tutorial/
+
+What is a segment tree? https://www.educative.io/edpresso/what-is-a-segment-tree
+
+Efficient and easy segment trees https://codeforces.com/blog/entry/18051
+
+A simple introduction to "Segment tree beats" https://codeforces.com/blog/entry/57319
