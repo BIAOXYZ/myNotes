@@ -151,4 +151,14 @@ TerarkDB - 我们发布了一款划时代的存储引擎 - 郭宽的文章 - 知
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 百度
+
+BaikalDB, A Distributed HTAP Database. https://github.com/baidu/BaikalDB
+- > BaikalDB supports sequential and randomised realtime read/write of structural data in petabytes-scale. BaikalDB is compatible with MySQL protocol and it supports MySQL style SQL dialect, by which users can migrate their data storage from MySQL to BaikalDB seamlessly.
+- > We are especially grateful to the teams of RocksDB, brpc and braft, who built powerful and stable libraries to support important features of BaikalDB.
+- > We give special thanks to TiDB team and Impala team. We referred their design schemes when designing and developing BaikalDB.
+- > Thanks our friend team -- The Baidu TafDB team, who provide the space efficient snapshot scheme based on braft.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他公司

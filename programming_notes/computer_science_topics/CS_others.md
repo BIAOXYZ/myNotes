@@ -35,6 +35,9 @@ Build a distributed SQL database from the ground up 从零开始写分布式数�
 
 ## crypto and security project (hard to be placed into the academic related repo)
 
+Sparse Merkle Tree https://github.com/aergoio/SMT
+- > A performance oriented implementation of a binary SMT with parallel update, node batching and storage shortcuts. Details of the SMT implementation: https://medium.com/@ouvrard.pierre.alain/sparse-merkle-tree-86e6e2fc26da
+
 Urkel -- An optimized and cryptographically provable key-value store. Written in C. https://github.com/chjj/liburkel 
 
 ## other project
