@@ -1,6 +1,9 @@
 
 # bilibili技术相关
 
+B 站有什么不错的编程 up 主/程序员 up 主吗？求推荐 https://www.v2ex.com/t/723217
+- > 推荐一个非周边、科普类并且值得反复看的 https://space.bilibili.com/567195437
+
 [去噪声][digoal][阿里云大学]PostgreSQL数据库管理与优化 https://www.bilibili.com/video/BV127411G7PX/
 
 B站的年轻人，真的有那么好学吗？ https://mp.weixin.qq.com/s/HY_oYg1dMkIDTCPtAnKFTg || https://www.huxiu.com/article/350703.html
