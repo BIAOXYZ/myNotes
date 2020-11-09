@@ -5,6 +5,8 @@ Python数据结构——链表的实现 http://python.jobbole.com/83953/
 
 一步一步教你从零开始写C语言链表(超详细) - 杨源鑫的文章 - 知乎 https://zhuanlan.zhihu.com/p/85504177
 
+用C语言创建一个链表数据结构 https://www.jianshu.com/p/ccebe9fd66c6
+
 【数据结构】单链表的基本操作（C语言） - 缺月挂疏桐的文章 - 知乎 https://zhuanlan.zhihu.com/p/109548561
 - > 单链表可定义为**有头结点**和**无头结点**的两种情况：头结点一般不存放数据元素，但可能存放单链表的其它信息，如单链表的表长。
 
