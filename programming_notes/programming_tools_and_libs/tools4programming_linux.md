@@ -179,7 +179,8 @@ Fish shell 入门教程 http://www.ruanyifeng.com/blog/2017/05/fish_shell.html
 SSH用私钥登录远程服务器时提示私钥不安全 https://my.oschina.net/philosopher/blog/314134
 
 ### 阮一峰SSL/TLS相关
-- <<SSH原理与运用（一）：远程登录>> http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+
+<<SSH原理与运用（一）：远程登录>> http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
 ```
 SSH主要用于远程登录。假定你要以用户名user，登录远程主机host，只要一条简单命令就可以了。
 　　$ ssh user@host
@@ -190,8 +191,35 @@ SSH主要用于远程登录。假定你要以用户名user，登录远程主机h
 SSH的默认端口是22，也就是说，你的登录请求会送进远程主机的22端口。使用p参数，可以修改这个端口。
 　　$ ssh -p 2222 user@host
 ```
-- SSL/TLS协议运行机制的概述 http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html
-- 图解SSL/TLS协议 http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
+
+SSH原理与运用（二）：远程操作与端口转发 http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
+- >
+  ```console
+  九、本地端口转发
+
+  有时，绑定本地端口还不够，还必须指定数据传送的目标主机，从而形成点对点的"端口转发"。
+  为了区别后文的"远程端口转发"，我们把这种情况称为"本地端口转发"（Local forwarding）。
+
+  假定host1是本地主机，host2是远程主机。由于种种原因，这两台主机之间无法连通。但是，另外还有一台host3，
+  可以同时连通前面两台主机。因此，很自然的想法就是，通过host3，将host1连上host2。
+
+  我们在host1执行下面的命令：
+
+    $ ssh -L 2121:host2:21 host3
+
+  命令中的L参数一共接受三个值，分别是"本地端口:目标主机:目标主机端口"，它们之间用冒号分隔。这条命令的意思，
+  就是指定SSH绑定本地端口2121，然后指定host3将所有的数据，转发到目标主机host2的21端口（假定host2运行FTP，默认端口为21）。
+
+  这样一来，我们只要连接host1的2121端口，就等于连上了host2的21端口。
+
+    $ ftp localhost:2121
+
+  "本地端口转发"使得host1和host3之间仿佛形成一个数据传输的秘密隧道，因此又被称为"SSH隧道"。
+  ```
+
+SSL/TLS协议运行机制的概述 http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html
+
+图解SSL/TLS协议 http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
 
 ### SSH建互信
 
