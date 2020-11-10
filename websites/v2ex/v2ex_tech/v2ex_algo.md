@@ -1,4 +1,6 @@
 
+Facebook 面试题：最长公共子序列 https://www.v2ex.com/t/723642
+
 Facebook 面试题：和大于 S 的最小子数组 https://www.v2ex.com/t/721633
 
 各位都是怎么学会 Hash Table 的 https://www.v2ex.com/t/721188

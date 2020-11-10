@@ -1,6 +1,9 @@
 
 # from other website
 
+想做一个历史网站，记录一下历代的大事件，大家帮忙想一下合适的域名！ https://www.v2ex.com/t/723497
+- > 你单枪匹马，很难做得比全历史更好 https://www.allhistory.com/
+
 对不起，邓小平没说过“菲律宾离中国也很近” https://cul.qq.com/a/20160713/017836.htm
 
 # 2020
