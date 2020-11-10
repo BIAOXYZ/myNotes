@@ -39,3 +39,5 @@ Linux 之父 Linus Torvalds：我已经不是程序员了，工作就是说不 h
 - > Meyer 解释说：「Dennis 是一个非常可爱、随和、谦逊的人。显然他很聪明，但也有些沉默寡言…… 我们一起讨论过我们合著的《The Complexity of Loop Programs》，他读了这篇论文并给出了自己的评价，并向我解释了循环程序。」
 - > 1967 年，这篇论文被 ACM 发表。在 Meyer 的理论计算机科学生涯中，这篇论文开启了一个多产的时代，而且是他职业生涯的重要一步。但对于他和 Ritchie 的合作来说，这却是终点。
 - > 让我们回到文章开头提到的 Ritchie 的个人评价：「研究生阶段的经历让我清醒，自己的才智不足以让我成为算法理论方面的专家」
+
+周礼栋：现在是计算机系统和网络研究“最好的时代” https://mp.weixin.qq.com/s/rlkUFkiTzZMzqVM4Jw_-Gg || https://www.msra.cn/zh-cn/news/features/podcast-lidong-zhou
