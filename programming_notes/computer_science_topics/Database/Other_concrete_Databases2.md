@@ -145,6 +145,15 @@ gs_ctl工具由操作系统用户omm执行。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# PingCAP
+
+PingCAPers Make Their Debut at VLDB https://pingcap.com/blog/pingcapers-make-their-debut-at-vldb
+- > The 46th International Conference on Very Large Databases (VLDB) will be broadcast online from August 31st to September 4th. VLDB is a premier annual international forum for data management and database researchers, vendors, practitioners, application developers, and users. VLDB2020 will feature research talks, tutorials, demonstrations, and workshops. PingCAP is honored and proud to attend this conference, with two selected papers to be shared with you.
+  * TiDB: A Raft-based HTAP Database http://www.vldb.org/pvldb/vol13/p3072-huang.pdf
+  * Interleaved Multi-Vectorizing https://www.vldb.org/pvldb/vol13/p226-fang.pdf  -->  这个看VLDB官网论文里没挂PingCAP，但是看上面那个文章截图里有。。。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 字节
 
 TerarkDB - 我们发布了一款划时代的存储引擎 - 郭宽的文章 - 知乎 https://zhuanlan.zhihu.com/p/21493877 【这个最早是个初创公司】
