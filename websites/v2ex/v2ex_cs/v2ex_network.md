@@ -1,4 +1,7 @@
 
+有没有哪个软件可以提供获取家里网络 ip 的？ https://www.v2ex.com/t/724481
+- > curl ident.me
+
 浏览器的工作原理：从在地址栏输入 google.com 到显示 google 页面发生了什么？ https://www.v2ex.com/t/722929
 ```console
 https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/
