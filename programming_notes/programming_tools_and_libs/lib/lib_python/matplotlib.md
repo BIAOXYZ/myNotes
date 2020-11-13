@@ -21,6 +21,8 @@ matplotlib中文文档 http://www.matplotlib.org.cn/ || https://github.com/teado
 
 python matplotlib从文件中读取数据绘制散点图 https://blog.csdn.net/vinsuan1993/article/details/78511782
 
+Python 绘图，我只用 Matplotlib（三）—— 柱状图 https://www.jianshu.com/p/3170304baf55
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # matplotlib其他
