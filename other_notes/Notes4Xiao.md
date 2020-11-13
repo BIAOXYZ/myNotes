@@ -212,7 +212,9 @@ Theory of Computing� - Computer Science 6810 - Cornell University - Spring 200
 
 --------------------------------------------------
 
-(EUROCRYPT) Short Signatures Without Random Oracles http://crypto.stanford.edu/~xb/eurocrypt04a/bbsigs.pdf || https://www.iacr.org/cryptodb/archive/2004/EUROCRYPT/1948/1948.pdf
+(EUROCRYPT 2004) Short Signatures Without Random Oracles http://crypto.stanford.edu/~xb/eurocrypt04a/bbsigs.pdf || https://www.iacr.org/cryptodb/archive/2004/EUROCRYPT/1948/1948.pdf 【q-strong DH】
+
+(PKC 2009) An Accumulator Based on Bilinear Maps and Efficient Revocation for Anonymous Credentials https://eprint.iacr.org/2008/539.pdf 【n-DHE assmuption】
 
 (SIGMOD 2019) vChain: Enabling Verifiable Boolean Range Queries over Blockchain Databases https://arxiv.org/pdf/1812.02386.pdf
 
