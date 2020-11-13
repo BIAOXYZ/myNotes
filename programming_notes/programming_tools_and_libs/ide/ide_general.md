@@ -346,6 +346,26 @@ conda remove -n <your_env_name> <package1> <package2>  # 例：conda remove --na
 conda remove -n <your_env_name> --all  # 例：conda remove -n bio-env --all // 这句会直接把这个虚环境给删掉，等于前面的 conda env remove --name bio-env
 ```
 
+anaconda修改国内源 https://www.cnblogs.com/yuvejxke/p/13169172.html
+
+conda国内镜像修改（最新版） - Python与算法社区的文章 - 知乎 https://zhuanlan.zhihu.com/p/95100538
+
+```
+# 添加国内源（以中科大源为例）
+
+(base) C:\Users\LiangLiu>conda config --show channels
+channels:
+  - defaults
+
+(base) C:\Users\LiangLiu>conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+(base) C:\Users\LiangLiu>
+(base) C:\Users\LiangLiu>conda config --show channels
+channels:
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+  - defaults
+
+```
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ## Thonny
