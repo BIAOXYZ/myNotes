@@ -1,7 +1,11 @@
 
 # PostgreSQL
 
+<<Postgres Changelog - All Versions>> https://bucardo.org/postgres_all_versions.html
+
 ![PostgreSQL](https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png)
+
+A Tour of PostgreSQL Internals https://www.postgresql.org/files/developer/tour.pdf
 
 PostgreSQL 有哪些经典入门书籍？ - 知乎 https://www.zhihu.com/question/28085660
 - > PostgreSQL 有哪些经典入门书籍？ - 云大学小编的回答 - 知乎 https://www.zhihu.com/question/28085660/answer/193819026
@@ -17,10 +21,9 @@ http://blog.csdn.net/postgrechina/article/details/49132791
 PostgreSQL Tutorial
 http://www.postgresqltutorial.com/
 
-<<Postgres Changelog - All Versions>>
-https://bucardo.org/postgres_all_versions.html
-
 --------------------------------------------------
+
+PostgreSQL内核开发学习资料 - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/98021328
 
 ## PG releted blog
 
@@ -164,6 +167,10 @@ http://blog.csdn.net/huguangshanse00/article/details/37045847
 - PostgreSQL中page页结构源码解析 https://www.linuxidc.com/Linux/2015-05/117974.htm
 - PostgreSQL的Page分析记录 https://my.oschina.net/Suregogo/blog/176279
 
+PostgreSQL B+Tree论文解读1 - 北侠的文章 - 知乎 https://zhuanlan.zhihu.com/p/165149237
+- > PostgreSQL数据库的nbtree索引参考了2篇论文：
+  * > 《Efficient Locking for Concurrent Operations on B-Trees》：高并发读写的原理；
+  * > 《A SYMMETRIC CONCURRENT B-TREE ALGORITHM》：高并发删除的原理；
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 

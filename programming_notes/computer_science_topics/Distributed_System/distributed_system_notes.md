@@ -19,6 +19,8 @@ Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 - 分布式一致性与共识算法 https://draveness.me/consensus
 - 分布式事务的实现原理 https://draveness.me/distributed-transaction-principle
 
+一文总结：分布式一致性技术是如何演进的？ - 阿里技术的文章 - 知乎 https://zhuanlan.zhihu.com/p/163373813
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # distributed transaction system
