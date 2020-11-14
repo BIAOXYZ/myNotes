@@ -144,4 +144,8 @@ C技巧：结构体参数转成不定参数 https://blog.csdn.net/haoel/article/
 
 # C高级技巧
 
+C 语言有什么奇技淫巧？ - 知乎 https://www.zhihu.com/question/27417946
+- C 语言有什么奇技淫巧？ - 九夏的回答 - 知乎 https://www.zhihu.com/question/27417946/answer/36651800
+- C 语言有什么奇技淫巧？ - 韦易笑的回答 - 知乎 https://www.zhihu.com/question/27417946/answer/1253126563
+
 动态修改 C 语言函数的实现 https://draveness.me/fishhook

@@ -1,6 +1,8 @@
 
 # bilibili技术相关
 
+2012年BIU密码学冬令营-05-Cryptanalysis of GGH and NTRU Signatures（中文字幕） https://www.bilibili.com/video/BV1ov41117RB/ || 2012年BIU密码学冬令营-05-GGH和NTRU签名的密码学分析 - 刘巍然-学酥的文章 - 知乎 https://zhuanlan.zhihu.com/p/240134082
+
 B 站有什么不错的编程 up 主/程序员 up 主吗？求推荐 https://www.v2ex.com/t/723217
 - > 推荐一个非周边、科普类并且值得反复看的 https://space.bilibili.com/567195437
 
