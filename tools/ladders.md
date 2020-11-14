@@ -11,6 +11,9 @@ Security you can rely on. A name you can trust. https://vpn.mozilla.org/
 - > Available in 6 countries now. More regions coming soon.
   * > We currently offer Mozilla VPN in the US, the UK, Canada, New Zealand, Singapore and Malaysia.
 
+双十一别人在买买买，我在被客服“制裁” https://www.v2ex.com/t/725109
+- > 这年头找一个好用的机场太难了，当初也想过买 rixcloud 来着，但是差评太多望而却步
+
 # DNS
 
 Simple DNSCrypt https://www.simplednscrypt.org/
