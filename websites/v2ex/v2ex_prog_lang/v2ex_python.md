@@ -1,4 +1,15 @@
 
+请问如何判断启动某个 Python 进程的 Python 环境位置呢？ https://www.v2ex.com/t/725220
+- > strings /proc/pid/environ 看这个进程的环境变量 应该有这个进程是那个虚拟环境的
+- > 虽然你已经解决了, 顺嘴一提 psutil 的 cmdline 不知道能不能帮到你, 先通过 pid 拿到 Process 对象, 然后看它启动时候命令行参数里面的路径
+  >> 谢谢老哥，也是一种很优雅的解决方式 供其他人参考
+    ```py
+    import psutil
+    pp = psutil.Process(16049)
+    print(pp.cmdline())
+    # 或者 print(pp.environ())
+    ```
+
 老生常谈，但还是问一下， Python env 选择 https://www.v2ex.com/t/720757
 
 如何在 Python 中嵌入汇编代码，比如 hook 一个软件， c 语言里可以直接内联汇编，不知道 Python 这样才可以有这种操作 https://www.v2ex.com/t/720690
