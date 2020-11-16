@@ -5,6 +5,10 @@ Python | next() method https://www.geeksforgeeks.org/python-next-method/
 
 python黑魔法---迭代器（iterator） https://www.jianshu.com/p/dcf83643deeb
 
+如何更好地理解Python迭代器和生成器？ - 知乎 https://www.zhihu.com/question/20829330
+- 如何更好地理解Python迭代器和生成器？ - 赖明星的回答 - 知乎 https://www.zhihu.com/question/20829330/answer/133606850
+  * > 因此，生成器的唯一注意事项就是：**生成器只能遍历一次**。
+
 # nonlocal关键字
 
 python关键字nonlocal和global的区别 https://www.jianshu.com/p/ab69b83a8d8a
