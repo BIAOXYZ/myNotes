@@ -28,6 +28,12 @@ Facebook 面试题：和大于 S 的最小子数组 https://www.v2ex.com/t/72163
 不知不觉搞了 200 道了 https://www.v2ex.com/t/657505
 > https://github.com/LeoSirius/leetcode_solutions 且除了 sql 之外都有单元测试，主要是 cpp，部分有 py 。部分有多种思路
 
+算法竞赛学习材料整理 repo https://www.v2ex.com/t/640843
+```console
+假期开了个 Github repo，收集来自互联网上公开分享的算法竞赛学习课件
+https://github.com/hzwer/shareOI
+```
+
 C 语言刷 150 道 LeetCode 经验谈 https://www.v2ex.com/t/405467
 - > C 是没有 STL 的，只能自己造轮子。链表怎么写，hashmap 怎么写，我借鉴的是内核的 list.h，写法已经形成自己一套模式，看上去还算简洁，不像参考答案写得那样 hack，混乱不堪。关键是能解决问题，特别一些复杂的逻辑，运气好还能爆机。可见对于 C 来说，也不要从 0 开始写代码，要学会站在巨人的肩膀上。
 - > 用 C 刷 LeetCode 有个坑就是动态数组，个人经验是，尽量不要用 realloc 调用，会出现 runtime error，这应该算 LeetCode 平台的 bug。之前我被困扰了好久，后来终于想出了用手写 realloc 的办法，方法是，用两倍内存扩容，手动拷贝元素，释放原指针，赋值新指针。步骤很繁琐，但再也没出问题。

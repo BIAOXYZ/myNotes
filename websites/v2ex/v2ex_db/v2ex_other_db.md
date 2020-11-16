@@ -1,4 +1,6 @@
 
+[闲谈]萌新对国产数据库的一些感慨。。 https://www.v2ex.com/t/725612
+
 druid 对数据库密码进行加密的疑惑点。 https://www.v2ex.com/t/713590
 
 TiDB 现在发展到什么程度了，相比 sharding 的方案有什么劣势呢 https://www.v2ex.com/t/710831
