@@ -14,7 +14,7 @@
 归并排序 https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F || Merge sort https://en.wikipedia.org/wiki/Merge_sort
 - > 归并排序（英语：Merge sort，或mergesort），是创建在归并操作上的一种有效的排序算法，效率为O(nlog n)}（大O符号）。1945年由约翰·冯·诺伊曼首次提出。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用，且各层分治递归可以同时进行。
 - > Python3
-  ```py
+  ```py3
   def mergeSort(nums):
       if len(nums) < 2:
           return nums
@@ -33,11 +33,13 @@
           result += right
       return result
 
-
   if __name__ == "__main__":
       nums = [1, 4, 2, 3.6, -1, 0, 25, -34, 8, 9, 1, 0]
       print("original:", nums)
-      print("Sorted:", mergeSort(nums))  
+      print("Sorted:", mergeSort(nums))
+  --------------------------------------------------
+  original: [1, 4, 2, 3.6, -1, 0, 25, -34, 8, 9, 1, 0]
+  Sorted: [-34, -1, 0, 0, 1, 1, 2, 3.6, 4, 8, 9, 25]
   ```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
@@ -90,11 +92,13 @@
   [1, 2, 3, 4, 5, 6, 7, 8, 9]
   ```
 
+堆排序 https://oi-wiki.org/basic/heap-sort/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 桶排序
 
-堆排序 https://zh.wikipedia.org/wiki/%E6%A1%B6%E6%8E%92%E5%BA%8F
+桶排序 https://zh.wikipedia.org/wiki/%E6%A1%B6%E6%8E%92%E5%BA%8F
 
 桶排序 https://oi-wiki.org/basic/bucket-sort/
 
