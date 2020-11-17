@@ -1,4 +1,37 @@
 
+求推荐个 demo 展示 go 相较于 Python 性能优势的 https://www.v2ex.com/t/726024
+- > 遍历 100000000 次  go: 0.058280 seconds  py: 3.965864 seconds  go 只消耗 1/68 倍 py 的运行时间  孰优孰劣，一目了然
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	st := time.Now()
+	n := 100000000
+	for i := 0; i < n; i++  {
+	}
+	fmt.Println(fmt.Sprintf("%f seconds", float32(time.Now().Sub(st).Microseconds()) / 1000000))
+	// 0.058280 seconds
+}
+```
+```py
+from datetime import datetime
+st = datetime.now()
+n = 100000000
+_ = [i for i in range(n)]
+ed = datetime.now()
+d = ed - st
+print('%f seconds' % (d.seconds + d.microseconds / 1e6))
+# 3.965864 seconds
+```
+- > https://www.bilibili.com/video/BV13J411m7un
+- > 用 Rust 跑了一下上边的循环，不讲武德，哈哈  time cost: 0 ms
+- > https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/go-python3.html  看这个对各个语言的 benchmark 吧
+
 请教一个 go 的函数问题 https://www.v2ex.com/t/717494
 - > C++你把引用捕获改为赋值捕获就是 100 了
   >> 真是大神，佩服

@@ -1,4 +1,6 @@
 
+Python in 操作在 tuple 和 list 中到底哪个快？ https://www.v2ex.com/t/726235
+
 请问如何判断启动某个 Python 进程的 Python 环境位置呢？ https://www.v2ex.com/t/725220
 - > strings /proc/pid/environ 看这个进程的环境变量 应该有这个进程是那个虚拟环境的
 - > 虽然你已经解决了, 顺嘴一提 psutil 的 cmdline 不知道能不能帮到你, 先通过 pid 拿到 Process 对象, 然后看它启动时候命令行参数里面的路径
