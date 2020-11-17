@@ -45,3 +45,59 @@
 多路归并排序的时候，为什么要采用败者树？ - 知乎 https://www.zhihu.com/question/35144290
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 堆排序
+
+堆排序 https://zh.wikipedia.org/wiki/%E5%A0%86%E6%8E%92%E5%BA%8F
+- > **Python**
+  ```py
+  #!/usr/bin/env python
+  #-*-coding:utf-8-*-
+
+  def heap_sort(lst):
+      def sift_down(start, end):
+          """最大堆调整"""
+          root = start
+          while True:
+              child = 2 * root + 1
+              if child > end:
+                  break
+              if child + 1 <= end and lst[child] < lst[child + 1]:
+                  child += 1
+              if lst[root] < lst[child]:
+                  lst[root], lst[child] = lst[child], lst[root]
+                  root = child
+              else:
+                  break
+
+      # 创建最大堆
+      for start in xrange((len(lst) - 2) // 2, -1, -1):
+          sift_down(start, len(lst) - 1)
+
+      # 堆排序
+      for end in xrange(len(lst) - 1, 0, -1):
+          lst[0], lst[end] = lst[end], lst[0]
+          sift_down(0, end - 1)
+      return lst
+
+  if __name__ == "__main__":
+      l = [9, 2, 1, 7, 6, 8, 5, 3, 4]
+      print l
+      heap_sort(l)
+      print l
+  --------------------------------------------------
+  [9, 2, 1, 7, 6, 8, 5, 3, 4]
+  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 桶排序
+
+堆排序 https://zh.wikipedia.org/wiki/%E6%A1%B6%E6%8E%92%E5%BA%8F
+
+桶排序 https://oi-wiki.org/basic/bucket-sort/
+
+python实现·十大排序算法之桶排序(Bucket Sort) https://segmentfault.com/a/1190000022767400
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
