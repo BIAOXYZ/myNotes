@@ -661,6 +661,9 @@ r
 
 ## 3.启动openssl命令行工具，并挂载该工具进行调试
 
+***注***：目前这种方式已被废弃！！！详情参见这个PR：https://github.com/openssl/openssl/pull/12023
+>> //notes：我真他妹的服了这帮人了。。。用得少又不是没人用！！！
+
 这种调试方法类似postgres常用的调试方法：
 - 先开个窗口输入`/opt/newssl/bin/openssl`或者跑到相应目录下输`./openssl`，并且不带任何参数。从而启动openssl命令行工具（此时命令行变成了`OpenSSL>`）。
 - 然后再开一个新窗口`ps ufx`查一下其`$PID_value`，并在这个窗口`gdb attach $PID_value`挂上openssl命令行工具的进程。当然也可以直接**gdb/cgdb attach `pgrep openssl`**
