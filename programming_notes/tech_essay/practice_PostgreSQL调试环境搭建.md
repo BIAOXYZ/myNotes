@@ -99,11 +99,12 @@ mkdir -p ~/pg/postgrescode
 
 CGDB的安装与使用 https://blog.csdn.net/ran337287/article/details/72794585 **【4】**
 ``` 
-$ wget http://cgdb.me/files/cgdb-0.7.0.tar.gz 
-$ tar -zvxf cgdb-0.7.0.tar.gz 
-$ cd cgdb-0.7.0 
-$ ./configure –prefix=/usr/local 
-$ make && make install
+yum -y install gcc-c++ gdb
+wget http://cgdb.me/files/cgdb-0.7.0.tar.gz
+tar -zvxf cgdb-0.7.0.tar.gz
+cd cgdb-0.7.0
+./configure --prefix=/usr/local
+make && sudo make install
 
 安装时在我系统下出现了如下错误： 
 错误1： 
@@ -113,7 +114,7 @@ sudo apt-get install flex
 错误2： 
 configure: error: Please install makeinfo before installing 
 解决： 
-sudo apt-get install texinfo
+sudo apt-get install texinfo || yum install -y texinfo
 ```
 
 ## 安装过程
@@ -136,7 +137,7 @@ sudo apt-get install texinfo
 
 ```sh
 #// 一、极简步骤版：上来就确定把依赖做齐，然后直接一次装好。
-yum -y install readline-devel zlib-devel gcc bison flex
+yum -y install readline-devel zlib-devel git gcc bison flex
 
 useradd pguser
 echo 123456 | passwd --stdin pguser
@@ -149,7 +150,7 @@ cd postgres/
 git checkout -b REL_12_STABLE origin/REL_12_STABLE
 
 ./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
-make
+make -sj8
 make install
 
 cd /home/pguser/pgdir/pgsql/bin/
