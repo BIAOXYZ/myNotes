@@ -9,9 +9,9 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 
 《100个gdb小技巧》 https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details
 - 配置gdb init文件 https://github.com/hellogcc/100-gdb-tips/blob/master/src/config-gdbinit.md
-> 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
+  * > 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
 - 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
-> set print pretty on
+  * > set print pretty on
 
 ## 我的gdb配置(.gdbinit， bps.cfg， .gdb_history全都在~目录下)和调试
 ```
@@ -242,14 +242,15 @@ GDB技巧分享，让你的调试变得更方便 https://developer.aliyun.com/ar
 - > 大家在IDE工具，如CDS、CDK、Keil中可以通过源代码对照着进行调试，非常方便。那gdb中有没有方法，能让大家也对照着源码进行调试呢。有，那就是tui模式。 在gdb命令行中输入tui enable即可进入tui模式 当然还有更快捷的方式，直接输入`Ctrl-X A`即可直接进入tui模式
   >> 好久不用，都忘了gdb里同步显示代码框的快捷键了。。。今天查了下，然后才知道除了`Ctrl-X A`外，还有命令直接调出这个窗口。
 
-- GDB同步显示源代码——layout https://www.cnblogs.com/postw/p/9670739.html
+GDB同步显示源代码——layout https://www.cnblogs.com/postw/p/9670739.html
 ```console
 1. 显示源代码窗口
 (gdb) layout src
 5. 显示窗口的大小
 info win
 ```
-- `1. gdb 调试利器` https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/gdb.html
+
+`1. gdb 调试利器` https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/gdb.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 --------------------------------------------------
@@ -398,6 +399,20 @@ CGDB中文手册 https://legacy.gitbook.com/book/leeyiw/cgdb-manual-in-chinese/d
 > 这个手册不全，看的时候注意。不过其实cgdb也不太需要手册。命令和gdb通用，主要就是按ESC键进入上层代码窗口，按i键进入下层gdb命令窗口。然后按/键搜索之类的。可以参见这个书的"CGDB命令部分"
 
 ## DDD (Data Display Debugger)
+
+```sh
+yum -y groupinstall "X Window System"
+mkdir dddpackage
+cd dddpackage/
+wget https://rpmfind.net/linux/epel/7/x86_64/Packages/d/ddd-3.3.12-20.el7.x86_64.rpm
+yum install -y ddd-3.3.12-20.el7.x86_64.rpm
+```
+
+GNU DDD https://www.gnu.org/software/ddd/
+- https://www.gnu.org/software/ddd/#Getting
+  * > Where do I get DDD binaries? <br> The FSF does not distribute DDD binaries. You can ask for help if you need technical support. <br> DDD binaries for GNU/Linux are typically available via your GNU/Linux distributor:
+    + > DDD packages for Debian GNU/Linux are found [here](https://packages.debian.org/sid/devel/ddd).
+    + > DDD RPMs can be found in https://rpmfind.net/linux/rpm2html/search.php?query=ddd
 
 宇宙最强调试器DDD（Data Display Debugger）
 http://blog.csdn.net/mirage1993/article/details/50883824
