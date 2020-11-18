@@ -179,34 +179,34 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 
 >> 【[:star:][`*`]】 //notes：但是注意，一个表是不能跨不同表空间的（创建的时候的SQL语句就说明了这点；此外，任何数据库的表空间的作用之一都是为了在不同的表空间下可以有同名的表，所以从这点看也说明一个表是无法跨表空间的；同理，表也是无法跨数据库的。）
 
-## 1.3. Internal Layout of a Heap Table File
+## 1.3. Internal Layout of a Heap Table File || 1.3 堆表文件的内部布局
 
-> Inside the `data file` (`heap table` and `index`, as well as `the free space map` and `visibility map`), it is divided into **pages** (or **blocks**) of fixed length, the default is `8192 byte` (`8 KB`). Those pages within each file are ***numbered sequentially from 0***, and such numbers are called as **block numbers**. If the file has been filled up, PostgreSQL adds a new empty page to the end of the file to increase the file size. 
+> Inside the `data file` (`heap table` and `index`, as well as `the free space map` and `visibility map`), it is divided into **pages** (or **blocks**) of fixed length, the default is `8192 byte` (`8 KB`). Those pages within each file are ***numbered sequentially from 0***, and such numbers are called as **block numbers**. If the file has been filled up, PostgreSQL adds a new empty page to the end of the file to increase the file size. || `数据文件（堆表、索引，也包括空闲空间映射和可见性映射）内部被划分为固定长度的页，或者叫区块，大小默认为8192B（8KB）。每个文件中的页从0开始按顺序编号，这些数字称为区块号。如果文件已填满，PostgreSQL就通过在文件末尾追加一个新的空页来增加文件长度。`
 
-> Fig. 1.4. Page layout of a heap table file.
+> Fig. 1.4. Page layout of a heap table file. || 图1.4 堆表文件的页面布局
 ![](http://www.interdb.jp/pg/img/fig-1-04.png)
 
 > A page ***within a table*** contains three kinds of data described as follows: 
-1. **heap tuple(s)** – A heap tuple is a `record data` itself. They are stacked in order ***from the bottom of the page***. The internal structure of tuple is described in `Section 5.2 and Chapter 9` as the knowledge of both ***Concurrency Control(CC)*** and ***WAL*** in PostgreSQL are required.
+1. **heap tuple(s)** – A heap tuple is a `record data` itself. They are stacked in order ***from the bottom of the page***. The internal structure of tuple is described in `Section 5.2 and Chapter 9` as the knowledge of both ***Concurrency Control(CC)*** and ***WAL*** in PostgreSQL are required. || `1.堆元组——即数据记录本身。它们从页面底部开始依序堆叠。第5.2节与第9章会描述元组的内部结构，这一知识对于理解PostgreSQL并发控制与WAL机制是必备的。`
 2. **line pointer(s)** – A line pointer is `4 byte long` and holds ***`a pointer` to each `heap tuple`***. It is also called an `item pointer`.
-<br> Line pointers form `a simple array`, which plays the role of index to the tuples. Each index is ***numbered sequentially from 1***, and called ***`offset number`***. When a new tuple is added to the page, a new line pointer is also pushed onto the array to point to the new one.
-3. **header data** – A header data defined by the structure `PageHeaderData` is allocated ***in the beginning of the page***. It is `24 byte long` and contains general information about the page. The major variables of the structure are described below.
-    - *pd_lsn* – This variable stores the `LSN of XLOG record` written by ***the last change of this page***. It is an `8-byte unsigned integer`, related to the ***WAL (Write-Ahead Logging) mechanism***. The details are described in `Chapter 9`.
-    - *pd_checksum* – This variable stores the `checksum value of this page`. (Note that this variable is ***supported in version 9.3 or later***; in earlier versions, this part had stored the `timelineId of the page`.)
-    - *pd_lower*, *pd_upper* – pd_lower points to ***the end of line pointers***, and pd_upper to ***the beginning of the newest heap tuple***.
-      >> note：也就是说，`pd_lower`指向***free space的开头/低位***（因为按规定它指向序号最大的line pointer的末尾，这个末尾就是free space的开头）；`pd_upper`指向***free space的末尾/高位***（因为按规定它指向序号最大的tuple的开头，这个开头就是free space的末尾）。这个参考一下图1.4.很容易看出来。
-    - *pd_special* – This variable is for `indexes`. In the page within tables, it points to ***the end of the page***. (In the page within indexes, it points to ***the beginning of special space*** which is the data area held only by indexes and contains the particular data according to the kind of index types such as B-tree, GiST, GiN, etc.)
+<br> Line pointers form `a simple array`, which plays the role of index to the tuples. Each index is ***numbered sequentially from 1***, and called ***`offset number`***. When a new tuple is added to the page, a new line pointer is also pushed onto the array to point to the new one. || `2.行指针——每个行指针占4B，保存着指向堆元组的指针。它们也被称为项目指针。行指针形成一个简单的数组，扮演了元组索引的角色。每个索引项从1开始依次编号，称为偏移号。当向页面中添加新元组时，一个相应的新行指针也会被放入数组中，并指向新添加的元组。`
+3. **header data** – A header data defined by the structure `PageHeaderData` is allocated ***in the beginning of the page***. It is `24 byte long` and contains general information about the page. The major variables of the structure are described below. || `3.首部数据——页面的起始位置分配了由结构PageHeaderData 定义的首部数据。它的大小为24B，包含关于页面的元数据。该结构的主要成员变量如下。`
+    - *pd_lsn* – This variable stores the `LSN of XLOG record` written by ***the last change of this page***. It is an `8-byte unsigned integer`, related to the ***WAL (Write-Ahead Logging) mechanism***. The details are described in `Chapter 9`. || `pd_lsn——本页面最近一次变更所写入的XLOG记录对应的LSN。它是一个8B无符号整数，与WAL机制相关，第9章将详细展开介绍。`
+    - *pd_checksum* – This variable stores the `checksum value of this page`. (Note that this variable is ***supported in version 9.3 or later***; in earlier versions, this part had stored the `timelineId of the page`.) || `pd_checksum——本页面的校验和值。（注意，只有在9.3或更高版本中才有此变量，早期版本中该字段用于存储页面的时间线标识。）`
+    - *pd_lower*, *pd_upper* – pd_lower points to ***the end of line pointers***, and pd_upper to ***the beginning of the newest heap tuple***. || `pd_lower、pd_upper——pd_lower 指向行指针的末尾，pd_upper 指向最新堆元组的起始位置。`
+      >> //note：也就是说，`pd_lower`指向***free space的开头/低位***（因为按规定它指向序号最大的line pointer的末尾，这个末尾就是free space的开头）；`pd_upper`指向***free space的末尾/高位***（因为按规定它指向序号最大的tuple的开头，这个开头就是free space的末尾）。这个参考一下图1.4.很容易看出来。
+    - *pd_special* – This variable is for `indexes`. In the page within tables, it points to ***the end of the page***. (In the page within indexes, it points to ***the beginning of special space*** which is the data area held only by indexes and contains the particular data according to the kind of index types such as B-tree, GiST, GiN, etc.) || `pd_special——在索引页中会用到该字段，在堆表页中它指向页尾。（在索引页中它指向特殊空间的起始位置，特殊空间是仅由索引使用的特殊数据区域，包含特定的数据，具体内容依索引的类型而定，如B树、GiST、GiN等。）`
 
-> An empty space between the end of line pointers and the beginning of the newest tuple is referred to as **free space** or **hole**.
->> notes：line pointer末尾（也就是最新的line pointer）和最新的tuple之间的空间叫free space或者hole。
+> An empty space between the end of line pointers and the beginning of the newest tuple is referred to as **free space** or **hole**. || `行指针的末尾与最新元组起始位置之间的空余空间称为空闲空间或空洞。`
+>> //notes：line pointer末尾（也就是最新的line pointer）和最新的tuple之间的空间叫**free space**或者**hole**。
 
-> To identify a tuple within the table, **tuple identifier (TID)** is internally used. A TID comprises a pair of values: ***the block number of the page*** that contains the tuple, and ***the offset number of the line pointer*** that points to the tuple. A typical example of its usage is index. See more detail in `Section 1.4.2`. 
->> notes：TID由两部分组成：页号/块号 + 偏移号
+> To identify a tuple within the table, **tuple identifier (TID)** is internally used. A `TID` comprises a pair of values: ***the block number of the page*** that contains the tuple, and ***the offset number of the line pointer*** that points to the tuple. A typical example of its usage is index. See more detail in `Section 1.4.2`. || `为了识别表中的元组，数据库内部会使用元组标识符（tupleidentifier，TID）。TID由一对值组成，分别是元组所属页面的区块号和指向元组的行指针的偏移号。TID 的一种典型用途是索引，更多细节参见第1.4.2节。`
+>> //notes：TID由两部分组成：`页号/块号 + 偏移号`，但是我们更习惯用`CTID`。
 
-> The structure PageHeaderData is defined in [src/include/storage/bufpage.h](https://github.com/postgres/postgres/blob/master/src/include/storage/bufpage.h). 
+> The structure PageHeaderData is defined in [src/include/storage/bufpage.h](https://github.com/postgres/postgres/blob/master/src/include/storage/bufpage.h). || `结构体PageHeaderData定义于src/include/storage/bufpage.h中。`
 
-> In addition, heap tuple whose size is ***greater than about 2 KB (about 1/4 of 8 KB)*** is stored and managed using a method called **TOAST** (The Oversized-Attribute Storage Technique). Refer [PostgreSQL documentation](https://www.postgresql.org/docs/current/storage-toast.html) for details. 
->> notes：大于2KB的heap tuple就得用TOAST来存储和管理了。
+> In addition, heap tuple whose size is ***greater than about 2 KB (about 1/4 of 8 KB)*** is stored and managed using a method called **TOAST** (The Oversized-Attribute Storage Technique). Refer [PostgreSQL documentation](https://www.postgresql.org/docs/current/storage-toast.html) for details. || `此外，大小超过约2KB（8KB的四分之一）的堆元组会使用一种称为TOAST（The Oversized-Attribute StorageTechnique，超大属性存储技术）的方法来存储与管理。详情请参阅官方文档。`
+>> //notes：大于2KB的heap tuple就得用`TOAST`来存储和管理了。
 
 ## 1.4. The Methods of Writing and Reading Tuples
 
