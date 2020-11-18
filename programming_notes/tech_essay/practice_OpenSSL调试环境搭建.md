@@ -712,3 +712,7 @@ CTRL+X+A            //cgdb当然就不用了，可以直接开始调试
 
 然后正式开始调试...
 ```
+
+## 其他调试类攻略
+
+下载、编译、安装、使用、调试openssl最新版 https://cloud.tencent.com/developer/article/1468839
