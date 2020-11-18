@@ -135,6 +135,8 @@ gs_ctl工具由操作系统用户omm执行。
 如何看待华为云发布最新一代关系型分布式数据库TaurusDB? - 知乎 https://www.zhihu.com/question/317044890
 - 华为TaurusDB技术解读（转载） - 于无声处的文章 - 知乎 https://zhuanlan.zhihu.com/p/64364775
 
+(SIGMOD 2020) Taurus Database: How to be Fast, Available, and Frugal in the Cloud https://dl.acm.org/doi/abs/10.1145/3318464.3386129
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 中兴
