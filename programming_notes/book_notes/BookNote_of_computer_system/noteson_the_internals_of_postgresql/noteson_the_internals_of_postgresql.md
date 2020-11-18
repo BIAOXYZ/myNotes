@@ -8,7 +8,7 @@ The Internals of PostgreSQL http://www.interdb.jp/pg/index.html
 The Chinese version of this document has been published in May 2019.
 > PostgreSQL指南：内幕探索 https://book.douban.com/subject/33477094/
 
-```
+```console
 Contents
   • Chapter 1. Database Cluster, Databases and Tables
   • Chapter 2. Process and Memory Architecture
@@ -23,15 +23,15 @@ Contents
   • Chapter 11. Streaming Replication
 ```
 
-# [Chapter 1. Database Cluster, Databases, and Tables](http://www.interdb.jp/pg/pgsql01.html)
+# [Chapter 1. Database Cluster, Databases, and Tables](http://www.interdb.jp/pg/pgsql01.html) || 第1章 数据库集簇、数据库和数据表
 
-## 1.1. Logical Structure of Database Cluster 
+## 1.1. Logical Structure of Database Cluster || 1.1 数据库集簇的逻辑结构
 
 > A **database cluster** is a collection of *databases* managed by a ***`PostgreSQL server`***.
 
-> A database is a collection of ***`database objects`***. In the relational database theory, a database object is a data structure used either to store or to reference data. A (heap) table is a typical example of it, and there are many more like an index, a sequence, a view, a function and so on. In PostgreSQL, databases themselves are also database objects and are logically separated from each other. 
+> A database is a collection of ***`database objects`***. In the relational database theory, a database object is a data structure used either to store or to reference data. A ***(heap) table*** is a typical example of it, and there are many more like an ***index***, a ***sequence***, a ***view***, a ***function*** and so on. In PostgreSQL, databases themselves are also database objects and are logically separated from each other. 
 
-> All the database objects in PostgreSQL are internally managed by respective **object identifiers (OIDs)**, which are ***unsigned 4-byte integers***. The relations ***between database objects and the respective OIDs*** are stored in appropriate [system catalogs](https://www.postgresql.org/docs/current/catalogs.html), depending on the type of objects. For example, OIDs of databases and heap tables are stored in *pg_database* and *pg_class* respectively, so you can find out the OIDs you want to know by issuing the queries such as the following: 
+> All the database objects in PostgreSQL are internally managed by respective **object identifiers (OIDs)**, which are ***unsigned 4-byte integers***. The relations ***between database objects and the respective OIDs*** are stored in appropriate [`system catalogs`](https://www.postgresql.org/docs/current/catalogs.html), depending on the type of objects. For example, OIDs of databases and heap tables are stored in *pg_database* and *pg_class* respectively, so ***you can find out the OIDs you want to know*** by issuing the queries such as the following: 
 ```sql
 sampledb=# SELECT datname, oid FROM pg_database WHERE datname = 'sampledb';
  datname  |  oid  
@@ -47,32 +47,32 @@ sampledb=# SELECT relname, oid FROM pg_class WHERE relname = 'sampletbl';
 ```
 >> notes: 上面那段中一个核心的信息就是：`system catalogs`那些表里存的都是`OID`和`数据库对象`的对应关系信息（比如`pg_database`是OID和数据库，`pg_class`是OID和表）。以前只知道`system catalogs`存储了各种pg系统相关的信息，但是确实没注意到这点。
 
-## 1.2. Physical Structure of Database Cluster
+## 1.2. Physical Structure of Database Cluster || 1.2 数据库集簇的物理结构
 
-> A *database cluster* basically is ***one directory*** referred to as ***`base directory`***, and it contains ***some subdirectories and lots of files***. If you execute the [initdb](https://www.postgresql.org/docs/current/app-initdb.html) utility to initialize a new database cluster, a base directory will be created under the specified directory. Though it is not compulsory, the path of the base directory is usually set to the environment variable ***`PGDATA`***. 
+> A *database cluster* basically is ***one directory*** referred to as ***`base directory`***, and it contains ***some subdirectories and lots of files***. If you execute the [initdb](https://www.postgresql.org/docs/current/app-initdb.html) utility to initialize a new database cluster, a base directory will be created under the specified directory. Though it is not compulsory, the path of the base directory is usually set to the environment variable ***`PGDATA`***. || `数据库集簇在本质上就是一个文件目录，即基础目录，包含着一系列子目录与文件。执行initdb 命令会在指定目录下创建基础目录，从而初始化一个新的数据库集簇。通常基础目录的路径会被配置到环境变量PGDATA中，但这并不是必要的。`
 
-> ***A database is a subdirectory*** under the ***`base` subdirectory***, and ***each of the tables and indexes is (at least) one file*** stored under the subdirectory of the database to which it belongs. Also there are several subdirectories containing particular data, and configuration files. While PostgreSQL supports tablespaces, the meaning of the term is different from other RDBMS. ***A tablespace in PostgreSQL is one directory*** that contains some data ***outside of the base directory***. 
+> ***A database is a subdirectory*** under the ***`base` subdirectory***, and ***each of the tables and indexes is (at least) one file*** stored under the subdirectory of the database to which it belongs. Also there are several subdirectories containing particular data, and configuration files. While PostgreSQL supports tablespaces, the meaning of the term is different from other RDBMS. ***A tablespace in PostgreSQL is one directory*** that contains some data ***outside of the base directory***. || `base子目录中的每一个子目录都对应一个数据库，数据库中的每个表和索引都至少在相应子目录下存储为一个文件；还有几个包含特定数据的子目录，以及配置文件。虽然PostgreSQL支持表空间，但是该术语的含义与其他关系型数据库管理系统（RelationalDatabase Management System，RDBMS）不同。PostgreSQL中的表空间对应一个包含基础目录之外数据的目录。`
 ![](http://www.interdb.jp/pg/img/fig-1-02.png)
 >> notes：注意这里的 `base subdirectory`，其实就是指`$PGDATA/base`这个目录——也就是`PGDATA`目录下名称为`base`（并且必须叫`base`！）的一级子目录，里面存的都是数据库数据。此外，虽然`PGDATA`被称为`base directory`，但这里的base只是个称呼而已，`PGDATA`本身叫啥名字都行。
 
-### 1.2.1. Layout of a Database Cluster
+### 1.2.1. Layout of a Database Cluster || 1.2.1 数据库集簇的布局
 
 >> notes：表1.1是`base directory`（也就是`$PGDATA`）下的文件和子目录的名称和用途。本身内容不少，文档又可以随时查，就不赘述了。唯一需要强调一下的大概就是`pg10`之后的两个大的目录名称变更（变更原因之一都是为了防止萌新们删无用的日志时直接正则表达式匹配到log。。。）：
 1. `pg_clog/`变更为`pg_xact`。
 2. `pg_xlog/`变更为`pg_wal/`。
 
-### 1.2.2. Layout of Databases
+### 1.2.2. Layout of Databases || 1.2.2 数据库布局
 
-> A database is a subdirectory under the base subdirectory; and ***the database directory names are identical to the respective OIDs***. For example, when the OID of the database sampledb is 16384, its subdirectory name is 16384. 
+> A database is a ***subdirectory*** under the `base subdirectory`; and ***the database directory names are identical to the respective OIDs***. For example, when the OID of the database sampledb is 16384, its subdirectory name is 16384. || `一个数据库与 base 子目录下的一个子目录对应，且该子目录的名称与相应数据库的 oid相同。例如，当数据库sampledb的oid为16384时，它对应的子目录名称就是16384。`
 ```sh
 $ cd $PGDATA
 $ ls -ld base/16384
 drwx------  213 postgres postgres  7242  8 26 16:33 16384
 ```
 
-### 1.2.3. Layout of Files Associated with Tables and Indexes
+### 1.2.3. Layout of Files Associated with Tables and Indexes || 1.2.3 表和索引相关文件的布局
 
-> Each ***table or index*** whose size is less than ***`1GB`*** is ***a single file*** stored under the database directory it belongs to. Tables and indexes as database objects are internally managed by individual OIDs, while those data files are managed by the variable, ***`relfilenode`***. The relfilenode values of tables and indexes basically but **not** always match the respective OIDs, the details are described below. 
+> Each ***table or index*** whose size is less than ***`1GB`*** is ***a single file*** stored under the database directory it belongs to. Tables and indexes as database objects are internally managed by individual OIDs, while those data files are managed by the variable, ***`relfilenode`***. The relfilenode values of tables and indexes basically but **not** always match the respective OIDs, the details are described below. || `每个小于1GB的表或索引都在相应的数据库目录中存储为单个文件。在数据库内部，表和索引作为数据库对象是通过oid来管理的，而这些数据文件由变量relfilenode管理。表和索引的relfilenode值通常与其oid一致，但也有例外，下面将详细展开。`
 >> notes：单个表和索引文件的大小以1GB为单位（这个值当然可以改，不过只改配置文件是不行的，得重新build数据库）。它们作为数据库对象的话对应的是OID，而它们的数据文件则对应的是`relfilenode`。
 
 >  Let's show the OID and relfilenode of the table sampletbl:
