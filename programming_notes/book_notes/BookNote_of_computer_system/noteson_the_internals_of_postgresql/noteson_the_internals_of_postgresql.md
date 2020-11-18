@@ -73,7 +73,7 @@ drwx------  213 postgres postgres  7242  8 26 16:33 16384
 ### 1.2.3. Layout of Files Associated with Tables and Indexes || 1.2.3 表和索引相关文件的布局
 
 > Each ***table or index*** whose size is less than ***`1GB`*** is ***a single file*** stored under the database directory it belongs to. Tables and indexes as database objects are internally managed by individual OIDs, while those data files are managed by the variable, ***`relfilenode`***. The relfilenode values of tables and indexes basically but **not** always match the respective OIDs, the details are described below. || `每个小于1GB的表或索引都在相应的数据库目录中存储为单个文件。在数据库内部，表和索引作为数据库对象是通过oid来管理的，而这些数据文件由变量relfilenode管理。表和索引的relfilenode值通常与其oid一致，但也有例外，下面将详细展开。`
->> notes：单个表和索引文件的大小以1GB为单位（这个值当然可以改，不过只改配置文件是不行的，得重新build数据库）。它们作为数据库对象的话对应的是OID，而它们的数据文件则对应的是`relfilenode`。
+>> notes：单个表和索引文件的大小以1GB为单位（这个值当然可以改，不过只改配置文件是不行的，得重新build数据库）。它们作为数据库对象的话对应的是OID，而它们的数据文件则对应的是`relfilenode`。此外，**数据库**这个级别的逻辑对象，对应到文件系统里还是**目录**，但是再往下（比如这里的**表**和**索引**）对应就是实际的文件了。
 
 >  Let's show the OID and relfilenode of the table sampletbl:
 ```sql
@@ -141,7 +141,7 @@ $ ls -la base/16384/18751*
 ![](http://www.interdb.jp/pg/img/fig-1-03.png)
 
 > A tablespace is created under the directory specified when you issue [CREATE TABLESPACE](https://www.postgresql.org/docs/current/sql-createtablespace.html) statement, and under that directory, the `version-specific subdirectory` (e.g., PG_9.4_201409291) will be created. The naming method for version-specific one is shown below. || `执行 CREATE TABLESPACE语句会在指定的目录下创建表空间。在该目录下还会创建版本特定的子目录（例如PG_9.4_201409291）。版本特定的命名方式为：PG_主版本号_目录版本号`
-```
+```console
 PG _ 'Major version' _ 'Catalogue version number'
 ```
 > For example, if you create a tablespace ***'new_tblspc'*** at ***'/home/postgres/tblspc'***, whose ***oid is 16386***, a subdirectory such as 'PG_9.4_201409291' would be created under the tablespace.
@@ -156,16 +156,17 @@ $ ls -l $PGDATA/pg_tblspc/
 total 0
 lrwxrwxrwx 1 postgres postgres 21 Apr 21 10:08 16386 -> /home/postgres/tblspc
 ```
+>> //notes：所以也就是说：`$PGDATA/pg_tblspc/`目录下其实存了一堆的“快捷方式”，每个“快捷方式”（软连接）都指向真正的表空间的目录。
 
-> If you create `a new database` (***OID is 16387***) under the tablespace, its directory is created under the version-specific subdirectory.
+> If you create `a new database` (***OID is 16387***) under the tablespace, its directory is created under the version-specific subdirectory. || `如果在该表空间下创建新的数据库（oid为16387），则会在版本特定的子目录下创建相应的目录。`
 ```sh
 $ ls -l /home/postgres/tblspc/PG_9.4_201409291/
 total 4
 drwx------ 2 postgres postgres 4096 Apr 21 10:10 16387
 ```
->> notes：整个database可以完全属于一个表空间（比如图里的“newdb数据库”整个都在“new_tblspc表空间”里）。紧接着在下面我们还将会看到，一个database也可以跨多个表空间。
+>> 【[:star:][`*`]】 //notes：**整个database可以完全属于一个表空间**（比如图里的“newdb数据库”整个都在“new_tblspc表空间”里）。紧接着在下面我们还将会看到，**一个database也可以跨多个表空间**。
 
-> If you create a new table which ***belongs to the database created `under the base directory`***, first, the new directory, whose name is the same as the existing database OID, is created under the version specific subdirectory, and then the new table file is placed under the created directory.
+> If you create a new table which ***belongs to the database created `under the base directory`***, first, the new directory, whose name is the same as the existing database OID, is created under the version specific subdirectory, and then the new table file is placed under the created directory. || `如果在该表空间内创建一个新表，但新表所属的数据库却创建在基础目录下，那么 PG 会首先在版本特定的子目录下创建名称与现有数据库oid相同的新目录，然后将新表文件放置在刚创建的目录下。`
 ```sql
 sampledb=# CREATE TABLE newtbl (.....) TABLESPACE new_tblspc;
 
@@ -174,9 +175,9 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 ----------------------------------------------
  pg_tblspc/16386/PG_9.4_201409291/16384/18894
  ```
->> notes：从这里看出来，一个database是可以跨不同的表空间的！所以PG的database和tablespace没有绝对的包含关系：一个数据库（里所有的表）可以属于一个表空间也可以分属于多个表空间（***但是单个表只能属于某个确定的表空间！***）；一个表空间（里所有的表）可以在一个数据库中，也可以分别在多个数据库中（***但是单个表只能属于某个确定的数据库！***）。
+>> 【[:star:][`*`]】 //notes：从这里看出来，一个database是可以跨不同的表空间的！所以PG的database和tablespace没有绝对的包含关系：一个数据库（里所有的表）可以属于一个表空间也可以分属于多个表空间（***但是单个表只能属于某个确定的表空间！***）；一个表空间（里所有的表）可以在一个数据库中，也可以分别在多个数据库中（***但是单个表只能属于某个确定的数据库！***）。
 
->> notes：但是注意，一个表是不能跨不同表空间的（创建的时候的SQL语句就说明了这点；此外，任何数据库的表空间的作用之一都是为了在不同的表空间下可以有同名的表，所以从这点看也说明一个表是无法跨表空间的；同理，表也是无法跨数据库的。）
+>> 【[:star:][`*`]】 //notes：但是注意，一个表是不能跨不同表空间的（创建的时候的SQL语句就说明了这点；此外，任何数据库的表空间的作用之一都是为了在不同的表空间下可以有同名的表，所以从这点看也说明一个表是无法跨表空间的；同理，表也是无法跨数据库的。）
 
 ## 1.3. Internal Layout of a Heap Table File
 
