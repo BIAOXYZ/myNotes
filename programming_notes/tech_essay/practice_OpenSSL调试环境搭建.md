@@ -1,6 +1,24 @@
 
-
 # 零、OpenSSL调试环境搭建
+
+## 快速安装语句总结
+
+```sh
+yum install -y git gcc zlib perl-IPC-Cmd
+
+# 其实后面经常直接在root下进行，这个建用户就没必要了。
+useradd -m ssluser -d /home/ssluser
+echo 'ssluser:test2018' | chpasswd
+
+mkdir openssldir
+cd openssldir/
+git clone https://github.com/openssl/openssl.git
+
+cd openssl/
+./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
+make -sj8
+sudo make install
+```
 
 ## 环境信息
 
@@ -53,6 +71,59 @@ notes: 因为第二种不行，所以最终用了第一种办法，即root用户
     * Linux动态链接库.so文件的创建与使用 https://blog.csdn.net/ithomer/article/details/7346146
   - /etc/ld.so.conf详解 http://www.cnblogs.com/chris-cp/p/3591306.html	
 
+### 新问题 
+
+```sh
+# 需要安装 perl-IPC-Cmd
+
+#// 首先是第一次碰到这个问题：
+[root@croupous1 openssl]# ./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
+Can't locate IPC/Cmd.pm in @INC (@INC contains: /root/openssldir/openssl/util/perl /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 . /root/openssldir/openssl/external/perl/Text-Template-1.56/lib) at /root/openssldir/openssl/util/perl/OpenSSL/config.pm line 18.
+BEGIN failed--compilation aborted at /root/openssldir/openssl/util/perl/OpenSSL/config.pm line 18.
+Compilation failed in require at /root/openssldir/openssl/Configure line 23.
+BEGIN failed--compilation aborted at /root/openssldir/openssl/Configure line 23.
+[root@croupous1 openssl]#
+
+#// 然后本来以为perl没装，但看了看其实是装了的。
+[root@croupous1 openssl]# yum install -y perl
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.inet.vn
+ * extras: mirrors.inet.vn
+ * updates: mirrors.vhost.vn
+Package 4:perl-5.16.3-297.el7.x86_64 already installed and latest version
+Nothing to do
+[root@croupous1 openssl]#
+
+#// 然后网上搜也没有解决方案，但是偶然搜到了这个地址：
+#// https://centos.pkgs.org/7/centos-x86_64/perl-IPC-Cmd-0.80-4.el7.noarch.rpm.html
+#// 于是看名字猜测应该是用yum直接装，或者下载rpm再装一下这个 “perl-IPC-Cmd” 就好。
+[root@croupous1 openssl]# yum -y install perl-IPC-Cmd
+// 此处省略输出内容，并且后面把这个package直接加到初始需要安装的语句里。
+
+[root@croupous1 openssl]# ./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
+Configuring OpenSSL version 3.0.0-alpha9-dev for target linux-x86_64
+Using os-specific seed configuration
+Creating configdata.pm
+Running configdata.pm
+Creating Makefile
+
+**********************************************************************
+***                                                                ***
+***   OpenSSL has been successfully configured                     ***
+***                                                                ***
+***   If you encounter a problem while building, please open an    ***
+***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+***   and include the output from the following command:           ***
+***                                                                ***
+***       perl configdata.pm --dump                                ***
+***                                                                ***
+***   (If you are new to OpenSSL, you might want to consult the    ***
+***   'Troubleshooting' section in the INSTALL.md file first)      ***
+***                                                                ***
+**********************************************************************
+[root@croupous1 openssl]#
+```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -314,10 +385,9 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 --------------------------------------------------
 
 
-实际上还有第三种方法，用环境变量`LD_LIBRARY_PATH`，但是之前工作中用过，而且比较简单，就不再赘述了。
-
+实际上还有第三种方法，用环境变量`LD_LIBRARY_PATH`，但是之前工作中用过，而且比较简单，就不再赘述了。 --> 还是补一下了：
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/newssl/lib
 ```
-
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
@@ -639,4 +709,3 @@ CTRL+X+A            //cgdb当然就不用了，可以直接开始调试
 
 然后正式开始调试...
 ```
-
