@@ -208,21 +208,21 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
 > In addition, heap tuple whose size is ***greater than about 2 KB (about 1/4 of 8 KB)*** is stored and managed using a method called **TOAST** (The Oversized-Attribute Storage Technique). Refer [PostgreSQL documentation](https://www.postgresql.org/docs/current/storage-toast.html) for details. || `此外，大小超过约2KB（8KB的四分之一）的堆元组会使用一种称为TOAST（The Oversized-Attribute StorageTechnique，超大属性存储技术）的方法来存储与管理。详情请参阅官方文档。`
 >> //notes：大于2KB的heap tuple就得用`TOAST`来存储和管理了。
 
-## 1.4. The Methods of Writing and Reading Tuples
+## 1.4. The Methods of Writing and Reading Tuples || 1.4 读写元组的方式
 
-### 1.4.1. Writing Heap Tuples
+### 1.4.1. Writing Heap Tuples || 1.4.1 写入堆元组
 
->  Suppose a table composed of one page which contains just one heap tuple. The pd_lower of this page points to the first line pointer, and both the line pointer and the pd_upper point to the first heap tuple. See Fig. 1.5(a).
+>  Suppose a table composed of one page which contains just one heap tuple. The ***pd_lower*** of this page points to the first ***line pointer***, and both the ***line pointer*** and the ***pd_upper*** point to the first heap tuple. See Fig. 1.5(a). || `假设有一个表仅由一个页面组成，且该页面只包含一个堆元组。此页面的pd_lower指向第一个行指针，而该行指针和pd_upper都指向第一个堆元组，如图1.5（1）所示。`
 >
-> When the second tuple is inserted, it is placed after the first one. The second line pointer is pushed onto the first one, and it points to the second tuple. The pd_lower changes to point to the second line pointer, and the pd_upper to the second heap tuple. See Fig. 1.5(b). ***Other header data within this page (e.g., pd_lsn, pg_checksum, pg_flag) are also rewritten to appropriate values***; more details are described in `Section 5.3 and Chapter 9`. 
+> When the second tuple is inserted, it is placed after the first one. The second line pointer is pushed onto the first one, and it points to the second tuple. The pd_lower changes to point to the second line pointer, and the pd_upper to the second heap tuple. See Fig. 1.5(b). ***Other header data within this page (e.g., pd_lsn, pg_checksum, pg_flag) are also rewritten to appropriate values***; more details are described in `Section 5.3 and Chapter 9`. || `当写入第二个元组时，它会被放在第一个元组之后。第二个行指针写入到第一个行指针的后面，并指向第二个元组。pd_lower更改为指向第二个行指针，pd_upper 更改为指向第二个堆元组，如图1.5（2）所示。页面内的首部数据（例如pd_lsn、pg_checksum和pg_flag）也会被改写为适当的值，具体细节将在第5.3节和第9章中描述。`
 > ![](http://www.interdb.jp/pg/img/fig-1-05.png)
->> notes：整个过程比较直观，对比图片和上面两段文字就可以了。
+>> //notes：整个过程比较直观，对比图片和上面两段文字就可以了。
 
-### 1.4.2. Reading Heap Tuples
+### 1.4.2. Reading Heap Tuples || 1.4.2 读取堆元组
 
 > Two typical access methods, `sequential scan` and `B-tree index scan`, are outlined here:
-  - **Sequential scan** – All tuples in all pages are sequentially read by scanning all line pointers in each page. See Fig. 1.6(a).
-  - **B-tree index scan** – An index file contains index tuples, each of which is ***composed of an index key and a TID pointing to the target heap tuple***. If the index tuple with the key that you are looking for has been found, PostgreSQL reads the desired heap tuple using the obtained TID value. (The description of the way to find the index tuples in B-tree index is not explained here as it is very common and the space here is limited. See the relevant materials.) For example, in Fig. 1.6(b), TID value of the obtained index tuple is ‘(block = 7, Offset = 2)’. It means that the target heap tuple is 2nd tuple in the 7th page within the table, so PostgreSQL can read the desired heap tuple without unnecessary scanning in the pages.
+  - **Sequential scan** – All tuples in all pages are sequentially read by scanning all line pointers in each page. See Fig. 1.6(a). || `顺序扫描——通过扫描每一页中的行指针，依序读取所有页面中的所有元组，如图1.6 （1）所示。`
+  - **B-tree index scan** – An index file contains index tuples, each of which is ***composed of an index key and a TID pointing to the target heap tuple***. If the index tuple with the key that you are looking for has been found, PostgreSQL reads the desired heap tuple using the obtained TID value. (The description of the way to find the index tuples in B-tree index is not explained here as it is very common and the space here is limited. See the relevant materials.) For example, in Fig. 1.6(b), TID value of the obtained index tuple is ‘(block = 7, Offset = 2)’. It means that the target heap tuple is 2nd tuple in the 7th page within the table, so PostgreSQL can read the desired heap tuple without unnecessary scanning in the pages. || `B树索引扫描 —— 索引文件包含索引元组，索引元组由一个键值对组成，键为被索引的列值，值为目标堆元组的TID。进行索引查询时，首先使用键进行查找，如果找到了对应的索引元组，PostgreSQL就会根据相应值中的TID来读取对应的堆元组。使用B树索引找到索引元组的方法请参考相关资料，这一部分属于数据库系统的通用知识，限于篇幅不再详细展开。例如在图1.6（2）中，对于所获索引元组中TID的值，区块号 = 7，偏移号 = 2，这意味着目标堆元组是表中第7页的第2个元组，因而PostgreSQL可以直接读取所需的堆元组，以避免对页面进行不必要的扫描。`
 > ![](http://www.interdb.jp/pg/img/fig-1-06.png)
 
 > This document does not explain indexes in details. To understand them, I recommend to read the valuable posts shown below: 
@@ -231,9 +231,9 @@ sampledb=# SELECT pg_relation_filepath('newtbl');
   - ...
   - Indexes in PostgreSQL — 9 (BRIN) https://habr.com/en/company/postgrespro/blog/452900/
 
-> PostgreSQL also supports `TID-Scan`, `Bitmap-Scan`, and `Index-Only-Scan`.
+> PostgreSQL also supports `TID-Scan`, `Bitmap-Scan`, and `Index-Only-Scan`. || `PostgreSQL还支持TID扫描、位图扫描和仅索引扫描。`
 
-> TID-Scan is a method that accesses a tuple directly by using TID of the desired tuple. For example, to find the 1st tuple in the 0-th page within the table, issue the following query:
+> TID-Scan is a method that accesses a tuple directly by using TID of the desired tuple. For example, to find the 1st tuple in the 0-th page within the table, issue the following query: || `TID扫描是一种通过使用所需元组的TID直接访问元组的方法。例如要在表中找到第0个页面中的第1个元组，可以执行以下查询：`
 ```sql
 sampledb=# SELECT ctid, data FROM sampletbl WHERE ctid = '(0,1)';
  ctid  |   data    
