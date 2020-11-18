@@ -5,7 +5,17 @@
 ## 环境信息
 
 - VB CentOS 7.5.2
-- 建了一个专门的用户ssluser
+- 建了一个专门的用户ssluser（这个不像pg，应该不是必须的）
+```sh
+useradd -m ssluser -d /home/ssluser
+printf test2018 | passwd --stdin ssluser
+
+#// 若出现如下报错："passwd: Have exhausted maximum number of retries for service"
+#// 可以用下面这句：
+echo 'ssluser:test2018' | chpasswd
+
+#// 或者也可以修改 /etc/pam.d/common-password  --  但是没必要，因为麻烦。
+```
 
 ## 参考链接
 
