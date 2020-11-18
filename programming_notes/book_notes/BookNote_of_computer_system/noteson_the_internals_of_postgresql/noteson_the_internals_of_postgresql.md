@@ -102,7 +102,7 @@ sampledb=# SELECT relname, oid, relfilenode FROM pg_class WHERE relname = 'sampl
 (1 row)
 ```
 
-> In version 9.0 or later, the built-in function ***`pg_relation_filepath`*** is useful as this function returns the file path name of the relation with the specified OID or name.
+> In version 9.0 or later, the built-in function ***`pg_relation_filepath`*** is useful as this function returns the file path name of the relation with the specified OID or name. || `在9.0或更高版本中，内建函数pg_relation_filepath 能够根据oid 或名称返回关系对应的文件路径，非常实用。`
 ```sql
 sampledb=# SELECT pg_relation_filepath('sampletbl');
  pg_relation_filepath 
@@ -122,7 +122,7 @@ $ ls -la -h base/16384/19427*
 
 > The maximum file size of tables and indexes can be changed using the configuration, option ***`--with-segsize`*** when building PostgreSQL. 
 
->  Looking carefully at the database subdirectories, you will find out that each table has two associated files suffixed respectively with ***'`_fsm`'*** and ***'`_vm`'***. Those are referred to as ***`free space map`*** and ***`visibility map`***, storing the information of the free space capacity and the visibility on each page within the table file, respectively (see more detail in `Section 5.3.4` and `Section 6.2`). ***Indexes only have individual free space maps*** and ***don't*** have visibility map.
+>  Looking carefully at the database subdirectories, you will find out that each table has two associated files suffixed respectively with ***'`_fsm`'*** and ***'`_vm`'***. Those are referred to as ***`free space map`*** and ***`visibility map`***, storing the information of the free space capacity and the visibility on each page within the table file, respectively (see more detail in `Section 5.3.4` and `Section 6.2`). ***Indexes only have individual free space maps*** and ***don't*** have visibility map. || `仔细观察数据库子目录就会发现，每个表都有两个与之关联的文件，后缀分别为_fsm 和_vm。这些实际上是空闲空间映射和可见性映射文件，分别存储了表文件每个页面上的空闲空间信息与可见性信息（更多细节见第 5.3.4 节和第 6.2 节）。索引没有可见性映射文件，只有空闲空间映射文件。`
 ```sh
 $ cd $PGDATA
 $ ls -la base/16384/18751*
@@ -130,16 +130,17 @@ $ ls -la base/16384/18751*
 -rw------- 1 postgres postgres 24576 Apr 21 10:18 base/16384/18751_fsm
 -rw------- 1 postgres postgres  8192 Apr 21 10:18 base/16384/18751_vm
 ```
-> They may also be internally referred to as the forks of each relation; the free space map is the first fork of the table/index data file (the fork number is 1), the visibility map the second fork of the table's data file (the fork number is 2). The fork number of the data file is 0. 
+> They may also be internally referred to as the forks of each relation; the free space map is the first fork of the table/index data file (the fork number is 1), the visibility map the second fork of the table's data file (the fork number is 2). The fork number of the data file is 0. || `在数据库系统内部，这些文件（主体数据文件、空闲空间映射文件、可见性映射文件等）也被称为相应关系的分支（fork）；空闲空间映射是表/索引数据文件的第一个分支（分支编号为1），可见性映射表是数据文件的第二个分支（分支编号为2），数据文件的分支编号为0。`
+>> `译者注：每个关系（relation）可能会有4种分支，分支编号分别为0、1、2、3，0号分支main为关系数据文件本体，1号分支fsm保存了main分支中空闲空间的信息，2号分支vm保存了main分支中可见性的信息，3号分支init是很少见的特殊分支，通常表示不被日志记录（unlogged）的表与索引。每个分支都会被存储为磁盘上的一或多个文件：PostgreSQL会将过大的分支文件切分为若干个段，以免文件的尺寸超过某些特定文件系统允许的大小，也便于一些归档工具进行并发复制，默认的段大小为1GB。`
 
-### 1.2.4. Tablespaces
+### 1.2.4. Tablespaces || 1.2.4 PostgreSQL中表空间的布局
 
-> A tablespace in PostgreSQL is an additional data area ***outside the base directory***. This function has been implemented in `version 8.0`.
+> A tablespace in PostgreSQL is an additional data area **outside** *the base directory*. This function has been implemented in `version 8.0`. || `PostgreSQL中的表空间是基础目录之外的附加数据区域。8.0版本中引入了该功能。`
 
 > Figure 1.3 shows the internal layout of a tablespace, and the relationship with the main data area. 
 ![](http://www.interdb.jp/pg/img/fig-1-03.png)
 
-> A tablespace is created under the directory specified when you issue [CREATE TABLESPACE](https://www.postgresql.org/docs/current/sql-createtablespace.html) statement, and under that directory, the `version-specific subdirectory` (e.g., PG_9.4_201409291) will be created. The naming method for version-specific one is shown below.
+> A tablespace is created under the directory specified when you issue [CREATE TABLESPACE](https://www.postgresql.org/docs/current/sql-createtablespace.html) statement, and under that directory, the `version-specific subdirectory` (e.g., PG_9.4_201409291) will be created. The naming method for version-specific one is shown below. || `执行 CREATE TABLESPACE语句会在指定的目录下创建表空间。在该目录下还会创建版本特定的子目录（例如PG_9.4_201409291）。版本特定的命名方式为：PG_主版本号_目录版本号`
 ```
 PG _ 'Major version' _ 'Catalogue version number'
 ```
