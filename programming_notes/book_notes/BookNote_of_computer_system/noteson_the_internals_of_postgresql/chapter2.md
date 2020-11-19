@@ -42,7 +42,7 @@
 | `background writer` | In this process, dirty pages on the shared buffer pool are written to a persistent storage (e.g., HDD, SSD) on a regular basis gradually. (In ***version 9.1 or earlier***, it was also responsible for checkpoint process.) | Section 8.6 |
 | `checkpointer` | In this process in ***version 9.2 or later***, checkpoint process is performed. | Section 8.6, Section 9.7 |
 | `autovacuum launcher` | The autovacuum-worker processes are invoked for vacuum process periodically. (More precisely, it requests to create the autovacuum workers to the postgres server.) | Section 6.5 |
-| `WAL writer` | This process writes and flushes periodically the WAL data on the WAL buffer to persistent storage. | Section 9.9 |
+| `WAL writer` | This process writes and flushes periodically the ***WAL data*** on the ***WAL buffer*** to persistent storage. | Section 9.9 |
 | `statistics collector` | In this process, statistics information such as for ***pg_stat_activity*** and for ***pg_stat_database***, etc. is collected. | | 
 | `logging collector (logger)` | This process writes error messages into log files. | |	 
 | `archiver` | In this process, archiving logging is executed. | Section 9.10 |
@@ -72,7 +72,7 @@ postgres> pstree -p 9687
 > Fig. 2.2. Memory architecture in PostgreSQL. || 图2.2 PostgreSQL的内存架构
 ![](http://www.interdb.jp/pg/img/fig-2-02.png)
 
-### 2.2.1. Local Memory Area
+### 2.2.1. Local Memory Area || 2.2.1 本地内存区域
 
 > Each backend process allocates a ***local memory area*** for query processing; each area is divided into several sub-areas – whose sizes are either fixed or variable. `Table 2.2` shows a list of the major sub-areas. The details will be described in the following chapters. || `每个后端进程都会分配一块本地内存区域用于查询处理。该区域会分为几个子区域 —— 子区域的大小有的固定，有的可变。表2.2 列出了主要的子区域。更多详细内容将在后续章节中介绍。`
 
@@ -92,8 +92,8 @@ postgres> pstree -p 9687
 
 |sub-area | description | reference |
 |--|--|--|
-| `shared buffer pool` | PostgreSQL loads pages within tables and indexes from a persistent storage to here, and operates them directly. | Chapter 8 |
-| `WAL buffer` | To ensure that no data has been lost by server failures, PostgreSQL supports the WAL mechanism. ***WAL data*** (also referred to as ***XLOG records***) are transaction log in PostgreSQL; and WAL buffer is a buffering area of the WAL data before writing to a persistent storage. | Chapter 9 |
+| `shared buffer pool` | PostgreSQL loads ***pages within tables and indexes*** from a persistent storage to here, and operates them directly. | Chapter 8 |
+| `WAL buffer` | To ensure that no data has been lost by server failures, PostgreSQL supports the WAL mechanism. ***WAL data*** (also referred to as ***XLOG records***) are transaction log in PostgreSQL; and ***WAL buffer*** is a buffering area of the ***WAL data*** before writing to a persistent storage. | Chapter 9 |
 | `commit log` | ***Commit Log(CLOG)*** keeps the states of all transactions (e.g., in_progress,committed,aborted) for ***Concurrency Control (CC) mechanism***. | Section 5.4 |
 
 > In addition to them, PostgreSQL allocates several areas as shown below: || `除了上面这些，PostgreSQL还分配了以下几个区域：`

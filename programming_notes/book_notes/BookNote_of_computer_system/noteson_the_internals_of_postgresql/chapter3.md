@@ -1,8 +1,32 @@
 
 # [Chapter 3. Query Processing](http://www.interdb.jp/pg/pgsql03.html)
 
-## 3.1. Overview
-### 3.1.1. Parser
+> 本章包括下列三个部分：
+- 第一部分：第3.1节这一部分会简单介绍PostgreSQL中查询处理的流程。
+- 第二部分：第3.2～3.4节这一部分会描述获取单表查询上最优执行计划的步骤。第3.2节讨论代价估计的过程，第3.3节描述创建计划树的过程，第3.4节将简要介绍执行器的工作过程。
+- 第三部分：第3.5～3.6节这一部分会描述获取多表查询上最优执行计划的步骤。第3.5节介绍了三种连接算法，分别是嵌套循环连接、归并连接和散列连接。第 3.6 节将介绍为多表查询创建计划树的过程。
+
+> PostgreSQL supports three technically interesting and practical features, namely, `Foreign Data Wrappers (FDW)`, `Parallel Query` and `JIT compilation` which is supported ***from version 11***. The first two of them will be described in `Chapter 4`. The JIT compilation is out of scope of this document; see the official document in details. || `PostgreSQL 支持三种技术上很有趣也很实用的功能，分别是外部数据包装（Foreign Data Wrapper，FDW）、并行查询及版本 11.0即将支持的 JIT编译。前两者将在第 4章中描述，JIT编译超出本书的范围，更多内容见官方文档。`
+
+## 3.1. Overview || 3.1 概览
+
+> In PostgreSQL, although the `parallel query` implemented in ***version 9.6*** uses ***multiple background worker processes***, a backend process basically handles all queries issued by the connected client. This backend consists of five subsystems, as shown below: || `尽管PostgreSQL在9.6版本后有了基于多个后台工作进程的并行查询，但大体上来讲，还是每个连接对应一个后端进程。后端进程由以下5个子系统组成：`
+1. `Parser`: The parser generates a ***parse tree*** from an SQL statement in plain text. || `1.解析器，根据SQL语句生成一棵语法解析树（parse tree）。`
+2. `Analyzer/Analyser`: The analyzer/analyser carries out a semantic analysis of a parse tree and generates a ***query tree***. || `2.分析器，对语法解析树进行语义分析，生成一棵查询树（query tree）。`
+3. `Rewriter`: The rewriter transforms a query tree using the rules stored in the rule system if such rules exist. || `3.重写器，按照规则系统中存在的规则对查询树进行改写。`
+4. `Planner`: The planner generates the ***plan tree*** that can most effectively be executed from the query tree. || `4.计划器，基于查询树生成一棵执行效率最高的计划树（plan tree）。`
+5. `Executor`: The executor executes the query via accessing the tables and indexes in the order that was created by the plan tree. || `5.执行器，按照计划树中的顺序访问表和索引，执行相应查询。`
+
+> Fig. 3.1. Query Processing. || 图3.1是查询处理的大概流程。
+![](http://www.interdb.jp/pg/img/fig-3-01.png)
+
+### 3.1.1. Parser || 3.1.1 解析器
+
+> The parser generates a parse tree that can be read by subsequent subsystems from an SQL statement in plain text. Here a specific example is shown in the following without a detailed description. Let us consider the query shown below. || `解析器基于SQL语句的文本，生成一棵后续子系统可以理解的语法解析树。下面是一个具体的例子。考虑以下查询：`
+```sql
+testdb=# SELECT id, data FROM tbl_a WHERE id < 300 ORDER BY data;
+```
+
 ### 3.1.2. Analyzer/Analyser
 ### 3.1.3. Rewriter
 ### 3.1.4. Planner and Executor
