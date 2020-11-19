@@ -1,5 +1,5 @@
 
-# [Chapter 3. Query Processing](http://www.interdb.jp/pg/pgsql03.html)
+# [Chapter 3. Query Processing](http://www.interdb.jp/pg/pgsql03.html) || 第3章 查询处理
 
 > 本章包括下列三个部分：
 - 第一部分：第3.1节这一部分会简单介绍PostgreSQL中查询处理的流程。
@@ -22,10 +22,67 @@
 
 ### 3.1.1. Parser || 3.1.1 解析器
 
-> The parser generates a parse tree that can be read by subsequent subsystems from an SQL statement in plain text. Here a specific example is shown in the following without a detailed description. Let us consider the query shown below. || `解析器基于SQL语句的文本，生成一棵后续子系统可以理解的语法解析树。下面是一个具体的例子。考虑以下查询：`
+> The `parser` generates a `parse tree` that can be read by subsequent subsystems from an SQL statement in plain text. Here a specific example is shown in the following without a detailed description. Let us consider the query shown below. || `解析器基于SQL语句的文本，生成一棵后续子系统可以理解的语法解析树。下面是一个具体的例子。考虑以下查询：`
 ```sql
 testdb=# SELECT id, data FROM tbl_a WHERE id < 300 ORDER BY data;
 ```
+
+> A parse tree is a tree whose root node is the [SelectStmt]() structure defined in [parsenodes.h](). `Figure 3.2(b)` illustrates the parse tree of the query shown in `Fig. 3.2(a)`. || `语法解析树的根节点是一个定义在parsenodes.h中的SelectStmt数据结构。图3.2（1）展示了一个查询，图3.2（2）则是该查询对应的语法解析树。`
+```c
+typedef struct SelectStmt
+{
+        NodeTag         type;
+
+        /*
+         * These fields are used only in "leaf" SelectStmts.
+         */
+        List       *distinctClause;     /* NULL, list of DISTINCT ON exprs, or
+                                         * lcons(NIL,NIL) for all (SELECT DISTINCT) */
+        IntoClause *intoClause;         /* target for SELECT INTO */
+        List       *targetList;         /* the target list (of ResTarget) */
+        List       *fromClause;         /* the FROM clause */
+        Node       *whereClause;        /* WHERE qualification */
+        List       *groupClause;        /* GROUP BY clauses */
+        Node       *havingClause;       /* HAVING conditional-expression */
+        List       *windowClause;       /* WINDOW window_name AS (...), ... */
+
+        /*
+         * In a "leaf" node representing a VALUES list, the above fields are all
+         * null, and instead this field is set.  Note that the elements of the
+         * sublists are just expressions, without ResTarget decoration. Also note
+         * that a list element can be DEFAULT (represented as a SetToDefault
+         * node), regardless of the context of the VALUES list. It's up to parse
+         * analysis to reject that where not valid.
+         */
+        List       *valuesLists;        /* untransformed list of expression lists */
+
+        /*
+         * These fields are used in both "leaf" SelectStmts and upper-level
+         * SelectStmts.
+         */
+        List       *sortClause;         /* sort clause (a list of SortBy's) */
+        Node       *limitOffset;        /* # of result tuples to skip */
+        Node       *limitCount;         /* # of result tuples to return */
+        List       *lockingClause;      /* FOR UPDATE (list of LockingClause's) */
+        WithClause *withClause;         /* WITH clause */
+
+        /*
+         * These fields are used only in upper-level SelectStmts.
+         */
+        SetOperation op;                /* type of set op */
+        bool            all;            /* ALL specified? */
+        struct SelectStmt *larg;        /* left child */
+        struct SelectStmt *rarg;        /* right child */
+        /* Eventually add fields for CORRESPONDING spec here */
+} SelectStmt;
+```
+
+> Fig. 3.2. An example of a parse tree. || `图3.2 语法解析树的例子`
+![](http://www.interdb.jp/pg/img/fig-3-02.png)
+
+> The elements of the `SELECT` query and the corresponding elements of the `parse tree` are numbered the same. For example, (1) is ***an item of the first target list*** and it is ***the column ‘id’ of the table***, (4) is a `WHERE clause`, and so on. || `SELECT 查询中的元素和语法解析树中的元素有着对应关系。比如，（1）是目标列表中的一个元素，与目标表的'id'列相对应，（4）是一个WHERE子句，诸如此类。`
+
+> Due to the fact that the parser only checks the syntax of an input when generating a parse tree, it only returns an error if there is a syntax error in the query. The parser does not check the semantics of an input query. For example, even if the query contains a table name that does not exist, the parser does not return an error. Semantic checks are done by the analyzer/analyser. || `当解析器生成语法分析树时只会检查语法，只有当查询中出现语法错误时才会返回错误。解析器并不会检查输入查询的语义，举个例子，如果查询中包含一个不存在的表名，解析器并不会报错，那么语义检查由分析器负责。`
 
 ### 3.1.2. Analyzer/Analyser
 ### 3.1.3. Rewriter
