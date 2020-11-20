@@ -49,8 +49,6 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 # Luxury Hotels general
 
-寒意渐浓，国内这20家温泉酒店，值得一去！ https://mp.weixin.qq.com/s/HxjUTk3pNKPFl4BQukhS0g
-
 【[`*`][:star:]】 要拼就拼最贵的！国内高价酒店 Top 30 https://mp.weixin.qq.com/s/4XiUsroPDTPuF3G3JNrbXg
 - 回复里的：
   * > `悠游的撒哈拉`：住过大研安缦和台北加贺屋。大研安缦真心太舒服了，确实比丽江悦榕庄又上了一个档次。加贺屋不推荐，太旧了，用餐的人又比较多，同样的价格，去河口湖可以住到舒适度，景观更好的温泉酒店。
@@ -206,4 +204,12 @@ ASCOTT https://www.the-ascott.com/
 
 # 景区酒店选择
 
+## 三亚
+
 三亚的三个湾和五星级酒店？最强干货告诉你如何选择。 - 你好吗小奇葩的文章 - 知乎 https://zhuanlan.zhihu.com/p/37329229
+
+三亚四大海湾吃、住、游、玩攻略（超详细） - 冷门大博士的文章 - 知乎 https://zhuanlan.zhihu.com/p/38916910
+
+## 温泉
+
+寒意渐浓，国内这20家温泉酒店，值得一去！ https://mp.weixin.qq.com/s/HxjUTk3pNKPFl4BQukhS0g
