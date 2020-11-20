@@ -162,16 +162,16 @@ testdb=# EXPLAIN SELECT * FROM tbl_a WHERE id < 300 ORDER BY data;
 
 ## 3.2. Cost Estimation in Single-Table Query || 3.2 单表查询的代价估计
 
-> PostgreSQL's query optimization is based on cost. Costs are dimensionless values, and these are not absolute performance indicators but are indicators to compare the relative performance of operations. || `PostgreSQL的查询优化是基于代价的。代价是一个无量纲的值，它不是一种绝对的性能指标，但可以作为比较各种操作代价时的相对性能指标。`
+> PostgreSQL's ***query optimization*** is based on cost. Costs are dimensionless values, and these are not absolute performance indicators but are indicators to compare the relative performance of operations. || `PostgreSQL的查询优化是基于代价的。代价是一个无量纲的值，它不是一种绝对的性能指标，但可以作为比较各种操作代价时的相对性能指标。`
 
 > Costs are estimated by the functions defined in [costsize.c](https://github.com/postgres/postgres/blob/master/src/backend/optimizer/path/costsize.c). All of operations executed by the `executor` have the corresponding `cost functions`. For example, the costs of `sequential scans` and `index scans` are estimated by `cost_seqscan()` and `cost_index()`, respectively. || `costsize.c 中的函数用于估算各种操作的代价。所有被执行器执行的操作都有着相应的代价函数。例如，函数cost_seqscan()和 cost_index()分别用于估算顺序扫描和索引扫描的代价。`
 
-> In PostgreSQL, there are three kinds of costs: **start-up**, **run** and **total**. The ***total cost is the sum of start-up and run costs***; thus, only the start-up and run costs are independently estimated. || `在PostgreSQL中有三种代价，分别是启动代价、运行代价和总代价。总代价是启动代价和运行代价的和，因此只有启动代价和运行代价是单独估计的。`
+> In PostgreSQL, there are three kinds of costs: **start-up**, **run** and **total**. The ***total cost is the sum of start-up and run costs***; thus, only the **start-up** and **run** costs are independently estimated. || `在PostgreSQL中有三种代价，分别是启动代价、运行代价和总代价。总代价是启动代价和运行代价的和，因此只有启动代价和运行代价是单独估计的。`
 - The **start-up** cost is the cost expended before the first tuple is fetched. For example, the start-up cost of the index scan node is the cost to read index pages to access the first tuple in the target table. || `启动代价：在读取到第一条元组前花费的代价，比如索引扫描节点的启动代价就是读取目标表的索引页，获取到第一个元组的代价。`
 - The **run** cost is the cost to fetch all tuples. || `运行代价：获取全部元组的代价。`
 - The **total** cost is the sum of the costs of both start-up and run costs. || `总代价：前两者之和。`
 
-> The `EXPLAIN` command shows both of start-up and total costs in each operation. The simplest example is shown below: || `EXPLAIN命令显示了每个操作的启动代价和总代价，下面是一个简单的例子：`
+> The [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html) command shows both of ***start-up*** and ***total*** costs in each operation. The simplest example is shown below: || `EXPLAIN命令显示了每个操作的启动代价和总代价，下面是一个简单的例子：`
 ```sql
 testdb=# EXPLAIN SELECT * FROM tbl;
                        QUERY PLAN                        
@@ -179,10 +179,11 @@ testdb=# EXPLAIN SELECT * FROM tbl;
  Seq Scan on tbl  (cost=0.00..145.00 rows=10000 width=8)
 (1 row)
 ```
+>> //notes：所以注意了，explain里的cost指的是`start-up cost`和`total cost`。用后者减去前者，才是运行代价（`run cost`）。
 
-> In Line 4, the command shows information about the sequential scan. In the cost section, there are two values; 0.00 and 145.00. In this case, the start-up and total costs are 0.00 and 145.00, respectively. || `第4行显示了顺序扫描的相关信息。代价部分包含了0.00和145.00两个值。在本例中，启动代价和总代价分别为0.00和145.00。`
+> In Line 4, the command shows information about the `sequential scan`. In the cost section, there are two values: ***0.00*** and ***145.00***. In this case, the `start-up` and `total` costs are 0.00 and 145.00, respectively. || `第4行显示了顺序扫描的相关信息。代价部分包含了0.00和145.00两个值。在本例中，启动代价和总代价分别为0.00和145.00。`
 
-> In this section, we explore how to estimate the sequential scan, index scan and sort operation in detail. || `在本节中，我们将详细介绍顺序扫描，索引扫描和排序操作的代价是如何估算的。`
+> In this section, we explore how to estimate the `sequential scan`, `index scan` and `sort` operation in detail. || `在本节中，我们将详细介绍顺序扫描，索引扫描和排序操作的代价是如何估算的。`
 
 > In the following explanations, we use a specific table and an index that are shown below: || `在接下来的内容中，我们使用下面这个表及其索引作为例子。`
 ```sql
@@ -201,7 +202,53 @@ Indexes:
     "tbl_data_idx" btree (data)
 ```
 
-### 3.2.1. Sequential Scan
+### 3.2.1. Sequential Scan || 3.2.1 顺序扫描
 
-> 中译版：“注意，这种类型的过滤器只会在读取所有元组的时候使用，它并不会减少需要扫描的表页面数量。” || 英文版："Note that this type of filter is used when reading all the tuples in the table, and it does not narrow the scanned range of table pages."
->> notes：这段中文版翻译的不是很好，意思稍有偏颇——人家英文原文的意思准确说是指`WHERE id < 8000`这个filter在使用的时候是对全表的所有tuple进行过滤（那么执行器肯定所有的tuple都要读）；而不是说“只会在读取所有元组的时候才会使用（这个filter）”。
+> The cost of the `sequential scan` is estimated by the `cost_seqscan()` function. In this subsection, we explore how to estimate the sequential scan cost of the following query. || `顺序扫描的代价是通过函数cost_seqscan()估计的。本节将研究顺序扫描代价是如何估计的，以下面的查询为例：`
+```sql
+testdb=# SELECT * FROM tbl WHERE id < 8000;
+```
+
+> In the `sequential scan`, the ***start-up cost*** is equal to ***0***, and the ***run cost*** is defined by the following equation: || `在顺序扫描中，启动代价等于0，而运行代价由以下公式定义：`
+```console
+‘run cost’ = ‘cpu run cost’ + ‘disk run cost’
+           = (cpu_tuple_cost + cpu_operator_cost) × N_tuple + seq_page_cost × N_page
+```
+> where [seq_page_cost](), [cpu_tuple_cost]() and [cpu_operator_cost]() are set in the `postgresql.conf` file, and ***the default values are `1.0`, `0.01`, and `0.0025`***, respectively; `N_tuple` and `N_page` are the numbers of all tuples and all pages of this table, respectively, and these numbers can be shown using the following query: || `其中seq_page_cost、cpu_tuple_cost和cpu_operator_cost是在postgresql.conf中配置的参数，默认值分别为1.0、0.01和0.0025。Ntuple和Npage分别是表中的元组总数与页面总数，这两个值可以使用以下查询获取：`
+```sql
+testdb=# SELECT relpages, reltuples FROM pg_class WHERE relname = 'tbl';
+ relpages | reltuples 
+----------+-----------
+       45 |     10000
+(1 row)
+```
+```console
+    N_tuple = 10000
+    N_page  = 45
+
+Thus,
+    ‘run cost’ = (0.01 + 0.0025) × 10000 + 1.0 × 45 = 170.0
+
+Finally,
+    ‘total cost’ = 0.0 + 170.0 = 170.0
+```
+> For confirmation, the result of the `EXPLAIN` command of the above query is shown below: || `作为验证，下面是该查询的EXPLAIN结果：`
+```sql
+testdb=# EXPLAIN SELECT * FROM tbl WHERE id < 8000;
+                       QUERY PLAN                       
+--------------------------------------------------------
+ Seq Scan on tbl  (cost=0.00..170.00 rows=8000 width=8)
+   Filter: (id < 8000)
+(2 rows)
+```
+
+> In Line 4, we can find that ***the `start-up` and `total` costs are `0.00` and `170.00`***, respectively, and it is estimated that `8000` rows (tuples) will be selected by scanning all rows. || `在第4行中可以看到，启动代价和总代价分别是 0.00和170.0，且预计全表扫描返回行数为8000条（元组）。`
+
+> In Line 5, a filter ‘`Filter:(id < 8000)`’ of the sequential scan is shown. More precisely, it is called a `table level filter predicate`. Note that this type of filter is used when reading all the tuples in the table, and it does not narrow the scanned range of table pages. || `第5行显示了一个顺序扫描的过滤器Filter:(id < 8000)。更精确地说，它是一个表级过滤谓词。注意，这种类型的过滤器只会在读取所有元组的时候使用，它并不会减少需要扫描的表页面数量。`
+
+>> //notes：看一下上面那段的翻译——“注意，这种类型的过滤器只会在读取所有元组的时候使用，它并不会减少需要扫描的表页面数量。” || 英文原版："Note that this type of filter is used when reading all the tuples in the table, and it does not narrow the scanned range of table pages."
+>>> 这段中文版翻译的不是很好，意思稍有偏颇——人家英文原文的意思准确说是指`WHERE id < 8000`这个filter在使用的时候是对全表的所有tuple进行过滤（那么执行器肯定所有的tuple都要读）；而不是说“只会在读取所有元组的时候才会使用（这个filter）”。
+
+> As understood from the run-cost estimation, PostgreSQL assumes that all pages will be read from storages; that is, PostgreSQL does not consider whether the scanned page is in the shared buffers or not. || `从优化运行代价的角度来看，PostgreSQL假设所有的物理页都是从存储介质中获取的，即PostgreSQL不会考虑扫描的页面是否来自共享缓冲区。`
+
+### 3.2.2. Index Scan || 3.2.2 索引扫描
