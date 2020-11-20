@@ -179,7 +179,7 @@ testdb=# EXPLAIN SELECT * FROM tbl;
  Seq Scan on tbl  (cost=0.00..145.00 rows=10000 width=8)
 (1 row)
 ```
->> //notes：所以注意了，explain里的cost指的是`start-up cost`和`total cost`。用后者减去前者，才是运行代价（`run cost`）。
+>> 【[:star:][`*`]】 //notes：所以注意了，explain里的cost指的是`start-up cost`和`total cost`。用后者减去前者，才是运行代价（`run cost`）。
 
 > In Line 4, the command shows information about the `sequential scan`. In the cost section, there are two values: ***0.00*** and ***145.00***. In this case, the `start-up` and `total` costs are 0.00 and 145.00, respectively. || `第4行显示了顺序扫描的相关信息。代价部分包含了0.00和145.00两个值。在本例中，启动代价和总代价分别为0.00和145.00。`
 
@@ -246,9 +246,16 @@ testdb=# EXPLAIN SELECT * FROM tbl WHERE id < 8000;
 
 > In Line 5, a filter ‘`Filter:(id < 8000)`’ of the sequential scan is shown. More precisely, it is called a `table level filter predicate`. Note that this type of filter is used when reading all the tuples in the table, and it does not narrow the scanned range of table pages. || `第5行显示了一个顺序扫描的过滤器Filter:(id < 8000)。更精确地说，它是一个表级过滤谓词。注意，这种类型的过滤器只会在读取所有元组的时候使用，它并不会减少需要扫描的表页面数量。`
 
->> //notes：看一下上面那段的翻译——“注意，这种类型的过滤器只会在读取所有元组的时候使用，它并不会减少需要扫描的表页面数量。” || 英文原版："Note that this type of filter is used when reading all the tuples in the table, and it does not narrow the scanned range of table pages."
+>> 【[:star:][`*`]】 //notes：看一下上面那段的翻译——“注意，这种类型的过滤器只会在读取所有元组的时候使用，它并不会减少需要扫描的表页面数量。” || 英文原版："Note that this type of filter is used when reading all the tuples in the table, and it does not narrow the scanned range of table pages."
 >>> 这段中文版翻译的不是很好，意思稍有偏颇——人家英文原文的意思准确说是指`WHERE id < 8000`这个filter在使用的时候是对全表的所有tuple进行过滤（那么执行器肯定所有的tuple都要读）；而不是说“只会在读取所有元组的时候才会使用（这个filter）”。
 
 > As understood from the run-cost estimation, PostgreSQL assumes that all pages will be read from storages; that is, PostgreSQL does not consider whether the scanned page is in the shared buffers or not. || `从优化运行代价的角度来看，PostgreSQL假设所有的物理页都是从存储介质中获取的，即PostgreSQL不会考虑扫描的页面是否来自共享缓冲区。`
 
 ### 3.2.2. Index Scan || 3.2.2 索引扫描
+
+> Although PostgreSQL supports [some index methods](https://www.postgresql.org/docs/current/indexes-types.html), such as `BTree`, [`GiST`](https://www.postgresql.org/docs/current/gist.html), [`GIN`](https://www.postgresql.org/docs/current/gin.html) and [`BRIN`](https://www.postgresql.org/docs/current/brin.html), the cost of the index scan is estimated using the ***common*** cost function: `cost_index()`. || `尽管PostgreSQL支持很多索引方法，比如B树、GiST、GIN和BRIN，但是索引扫描的代价估计是使用一个共用的代价函数：cost_index()。`
+
+> In this subsection, we explore how to estimate the index scan cost of the following query: || `本节将研究索引扫描的代价是如何估计的，以下列查询为例。`
+```sql
+testdb=# SELECT id, data FROM tbl WHERE data < 240;
+```
