@@ -1,4 +1,6 @@
 
+rsync,scp 均遇到传输文件 size=0 的尴尬问题 https://www.v2ex.com/t/728073
+
 Linux 怎么查询巨量文件的精确数量？ https://www.v2ex.com/t/721629
 ```console
 linux 一个文件夹里有大概接近 2000 万个文件（没有子文件夹）。

@@ -1,4 +1,6 @@
 
+sql 改写类的数据脱敏遇到的问题求助 https://www.v2ex.com/t/727240
+
 SQL 怎么查询满足多个属性的数据？ https://www.v2ex.com/t/713866
 - > 你指的是什么呢？下面这个例子里 C 并不会被选出来呀。 <br> www.db-fiddle.com/f/8rhX2qJheqvz1Gg2t7oasc/0
 
