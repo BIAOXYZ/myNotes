@@ -376,6 +376,9 @@ drwxr-xr-x 3 root root   23 Nov 22 20:56 lib64
 -rw-r--r-- 1 root root  201 Nov 22 20:56 pyvenv.cfg
 [root@marksmen1 env1]#
 ``
+
+# 删除某个虚环境的话只要把对应目录删了就行：
+rm -rf ~/mypyenvs/env1/
 ```
 
 ```sh
