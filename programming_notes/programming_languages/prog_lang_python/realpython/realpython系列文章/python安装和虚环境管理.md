@@ -157,5 +157,57 @@ Managing Multiple Python Versions With pyenv https://realpython.com/intro-to-pye
   ```
 - **Exploring `pyenv` Commands**
 - **Specifying Your Python Version**
+- **Virtual Environments and `pyenv`**
+- **Working With Multiple Environments**
+- > Putting everything you’ve learned together, you can work effectively with multiple environments. Let’s assume you have the following versions installed:
+  ```sh
+  $ pyenv versions
+  * system (set by /home/realpython/.pyenv/version)
+    2.7.15
+    3.6.8
+    3.8-dev
+  ```
+- > Now you want to work on two different, aptly named, projects:
+  * > **project1** supports Python 2.7 and 3.6.
+  * > **project2** supports Python 3.6 and experiments with 3.8-dev.
+- > You can see that, by default, you are using the system Python, which is indicated by the `*` in the `pyenv versions` output. First, create a virtual environment for the first project:
+  ```sh
+  $ cd project1/
+  $ pyenv which python
+  /usr/bin/python
+  $ pyenv virtualenv 3.6.8 project1
+  ...
+  $ pyenv local project1
+  $ python -V
+  /home/realpython/.pyenv/versions/project1/bin/python
+  ```
+- > Finally, notice that when you `cd` out of the directory, you default back to the system Python:
+  ```sh
+  $ cd $HOME
+  $ pyenv which python
+  /usr/bin/python
+  ```
+- > You can follow the above steps and create a virtual environment for project2:
+  ```sh
+  $ cd project2/
+  $ pyenv which python
+  /usr/bin/python
+  $ pyenv virtualenv 3.8-dev project2
+  ...
+  $ pyenv local 3.8-dev
+  $ pyenv which python
+  /home/realpython/.pyenv/versions/3.8-dev/bin/python
+  ```
+- > These are one time steps for your projects. Now, as you cd between the projects, your environments will automatically activate:
+  ```sh
+  $ cd project2/
+  $ python -V
+  Python 3.8.0a0
+  $ cd ../project1
+  $ python -V
+  Python 3.6.8
+  ```
+  > No more remembering to activate environments: you can switch between all your projects, and `pyenv` will take care of automatically activating the correct Python versions and the correct virtual environments.
+- **Activating Multiple Versions Simultaneously**
 
 Python 3 Installation & Setup Guide https://realpython.com/installing-python/
