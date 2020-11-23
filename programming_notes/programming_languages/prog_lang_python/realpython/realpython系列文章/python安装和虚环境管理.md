@@ -75,7 +75,68 @@ Python Virtual Environments: A Primer https://realpython.com/python-virtual-envi
   > 
   > In our example, the binary is located at `/Users/michaelherman/python-virtual-environments/env/bin`, which means `sys.prefix` would be `/Users/michaelherman/python-virtual-environments/env`, and therefore the `site-packages` directory used would be `/Users/michaelherman/python-virtual-environments/env/lib/pythonX.X/site-packages`. Finally, this path is stored in the `sys.path` array, which contains all of the locations where a package can reside.
 - **Managing Virtual Environments With virtualenvwrapper**
+- > If you would like to be able to use a single tool and switch between Python versions, virtualenv will allow you to do just that. virtualenv has a [parameter]() `-p` that allows you to select which version of Python to use. Combine that with the which command, and we can easily select your preferred version of Python to use in a simple manner. For example, let’s say that we want Python 3 as our preferred version:
+  ```sh
+  $ virtualenv -p $(which python3) blog_virtualenv
+  ```
 - **Using Different Versions of Python**
+- > Unlike the old `virtualenv` tool, `pyvenv` doesn’t support creating environments with arbitrary versions of Python, which means you’re stuck using the default Python 3 installation for all of the environments you create. While you can upgrade an environment to the latest system version of Python (via the `--upgrade` option), if it changes, you still can’t actually specify a particular version.
+- > There are quite a few ways to install Python, but few of them are easy enough or flexible enough to frequently uninstall and re-install different versions of the binary.
+  >
+  > This is where `pyenv` comes in to play.
+  >
+  > Despite the similarity in names (`pyvenv` vs `pyenv`), `pyenv` is different in that its focus is to help you switch between Python versions on a system-level as well as a project-level. While the purpose of `pyvenv` is to separate out modules, the purpose of pyenv is to separate Python versions.
+  >> //notes：真是服了，不是看到这段，我还以为这俩是一个东西。。。
+- > You can start by installing pyenv with either Homebrew (on OS X) or the pyenv-installer project:
+  * > Homebrew
+    ```sh
+    $ brew install pyenv
+    ```
+  * > pyenv-installer
+    ```sh
+    $ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+    ```
+  * > **Note**: Unfortunately, `pyenv` does not support Windows. A few alternatives to try are `pywin` and `anyenv`.
+- > Once you have pyenv on your system, here are a few of the basic commands you’re probably interested in:
+  ```sh
+  $ pyenv install 3.5.0   # Install new version
+  $ pyenv versions        # List installed versions
+  $ pyenv exec python -V  # Execute 'python -V' using pyenv version
+  ```
+  > In these few lines, we install the 3.5.0 version of Python, ask pyenv to show us all of the versions available to us, and then execute the python `-V` command using the pyenv-specified version.
+- > To give you even more control, you can then use any of the available versions for either “global” use or “local” use. Using `pyenv` with the `local` command sets the Python version for a specific project or directory by storing the version number in a local `.python-version` file. We can set the “local” version like this:
+  ```sh
+  $ pyenv local 2.7.11
+  ```
+  > This creates the .python-version file in our current directory, as you can see here:
+  ```sh
+  $ ls -la
+  total 16
+  drwxr-xr-x  4 michaelherman  staff  136 Feb 22 10:57 .
+  drwxr-xr-x  9 michaelherman  staff  306 Jan 27 20:55 ..
+  -rw-r--r--  1 michaelherman  staff    7 Feb 22 10:57 .python-version
+  -rw-r--r--  1 michaelherman  staff   52 Jan 28 17:20 main.py
+  ```
+  > This file only contains the contents “2.7.11”. Now, when you execute a script using pyenv, it’ll load this file and use the specified version, assuming it’s valid and exists on your system.
+- > Moving on with our example, let’s say we have a simple script called `main.py` in our project directory that looks like this:
+  ```py
+  import sys
+  print('Using version:', sys.version[:5])
+  ```
+  > All it does is print out the version number of the Python executable being used. Using `pyenv` and the `exec` command, we can run the script with any of the different versions of Python we have installed.
+  ```sh
+  $ python main.py
+  Using version: 2.7.5
+  $ pyenv global 3.5.0
+  $ pyenv exec python main.py
+  Using version: 3.5.0
+  $ pyenv local 2.7.11
+  $ pyenv exec python main.py
+  Using version: 2.7.11
+  ```
+  > Notice how `pyenv exec` python `main.py` uses our “global” Python version by default, but then it uses the “local” version after one is set for the current directory.
+  >
+  > This can be very powerful for developers who have lots of projects with varying version requirements. Not only can you easily change the default version for all projects (via `global`), but you can also override it to specify special cases.
 
 Managing Multiple Python Versions With pyenv https://realpython.com/intro-to-pyenv/
 
