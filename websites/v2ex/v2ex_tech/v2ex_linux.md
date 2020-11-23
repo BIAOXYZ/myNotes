@@ -1,4 +1,6 @@
 
+如何更好的学习 shell 编程 https://www.v2ex.com/t/728172
+
 rsync,scp 均遇到传输文件 size=0 的尴尬问题 https://www.v2ex.com/t/728073
 
 Linux 怎么查询巨量文件的精确数量？ https://www.v2ex.com/t/721629

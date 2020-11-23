@@ -1,4 +1,16 @@
 
+golang context 的相关使用 https://www.v2ex.com/t/728389
+```console
+如题，之前的项目中没有使用 context，高并发的场景下，日志都难以定位问题，
+于是准备在所有逻辑函数中加上 context （工作量有点大），并为每次请求带上 id 标识；
+
+但是除此之外就没有其他作用了，就有点怀疑是否有必要；
+有没有大佬介绍下实际中的其他使用场景和方式？（ With 系列目前也没有发现有什么使用场景...）
+```
+- > At Google, we require that Go programmers pass a Context parameter as the first argument to every function on the call path between incoming and outgoing requests. <br> 建议是所有的函数的第一个都带上。作用有几个：cancel, timeout, trace
+
+golang 中的切片地址 https://www.v2ex.com/t/728365
+
 求推荐个 demo 展示 go 相较于 Python 性能优势的 https://www.v2ex.com/t/726024
 - > 遍历 100000000 次  go: 0.058280 seconds  py: 3.965864 seconds  go 只消耗 1/68 倍 py 的运行时间  孰优孰劣，一目了然
 ```go

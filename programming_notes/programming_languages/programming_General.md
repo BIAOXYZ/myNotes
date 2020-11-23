@@ -385,6 +385,40 @@ http://zhuanlan.zhihu.com/p/35057341
 
 ## 反射
 
+反射 (计算机科学) https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%B0%84_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6) || Reflection (computer programming) https://en.wikipedia.org/wiki/Reflection_(computer_programming)
+- > 引入的动机
+- > 下列代码片段创建类 Foo 的一个实例 foo，并调用它的方法 PrintHello。对于每个编程语言，展示平常的和基于反射的调用序列。
+  * > **Go**
+    ```go
+    import "reflect"
+    
+    // Without reflection
+    f := Foo{}
+    f.Hello()
+    
+    // With reflection
+    fT := reflect.TypeOf(Foo{})
+    fV := reflect.New(fT)
+    
+    m := fV.MethodByName("Hello")
+    if m.IsValid() {
+        m.Call(nil)
+    }
+    ```
+  * > **Python**
+    ```py
+    # Without reflection
+    obj = Foo()
+    obj.hello()
+    
+    # With reflection
+    obj = globals()['Foo']() # globals() Return a dictionary representing the current global symbol table. 
+    getattr(obj, 'hello')()  # getattr(object, name) Return the value of the named attribute of object.  
+    
+    # With eval
+    eval('Foo().hello()')
+    ```
+
 为什么语言里要提供“反射”功能？ - 知乎 https://www.zhihu.com/question/28570203
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
