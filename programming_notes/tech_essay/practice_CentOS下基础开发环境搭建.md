@@ -377,7 +377,8 @@ Installed Python-3.5.0 to /root/.pyenv/versions/3.5.0
 ## 系统自带python 2.7.5，先后装了3.5.0和2.7.11，然后和virtualenv一起用，并且shell断连过，所以可能乱了。
 ## 结果我发现后面虽然用`pyenv global system`切回了系统python（显示也确实是system），但是实际版本还是2.7.11。具体表现就是
 ## 输入 python -V 显示的版本不是2.7.5，而是2.7.11  -->  然后更神奇的是后来不知道怎么回事自己好了。。。
-## 我猜可能跟我中间不小心混用了global和local也有关？回头再仔细研究总结下吧。
+## 我猜可能跟我中间不小心混用了global和local也有关？若使用了local参数进行过设置，在当前目录会生成一个
+## `.python-version`文件。这个文件对当前目录和子目录的影响力优先级更高。回头再仔细研究总结下吧。
 
 # 所以我推荐的是只用pyenv安装python3，然后就不要再用它了。默认用系统自带的python2，需要用python3的时候用
 # virtualenv创建一个虚环境就行。

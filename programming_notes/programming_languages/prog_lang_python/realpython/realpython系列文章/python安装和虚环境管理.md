@@ -108,7 +108,7 @@ Python Virtual Environments: A Primer https://realpython.com/python-virtual-envi
   ```sh
   $ pyenv local 2.7.11
   ```
-  > This creates the .python-version file in our current directory, as you can see here:
+  > This creates the `.python-version` file ***in our current directory***, as you can see here:
   ```sh
   $ ls -la
   total 16
@@ -178,7 +178,7 @@ Managing Multiple Python Versions With pyenv https://realpython.com/intro-to-pye
   $ pyenv virtualenv 3.6.8 project1
   ...
   $ pyenv local project1
-  $ python -V
+  $ pyenv which python
   /home/realpython/.pyenv/versions/project1/bin/python
   ```
 - > Finally, notice that when you `cd` out of the directory, you default back to the system Python:
