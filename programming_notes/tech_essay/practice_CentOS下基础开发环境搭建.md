@@ -328,3 +328,90 @@ go get -u github.com/go-delve/delve/cmd/dlv
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Python语言环境
+
+centos下搭建python双版本环境 - 宇泽的文章 - 知乎 https://zhuanlan.zhihu.com/p/88404689
+
+Centos下python虚拟环境的安装、创建、删除、启动、退出详解 https://blog.csdn.net/zzddada/article/details/104300063
+
+```sh
+# 安装python3
+yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
+
+
+```
+
+```sh
+# 安装pip
+yum -y install epel-release
+yum install -y python-pip
+
+# 安装virtualenv
+# 也可以用 yum install -y python-virtualenv 但是基本别用。不但版本低，而且还有冲突。。。
+pip install --upgrade pip     # 可选，但是感觉还是升级一下吧。
+pip install virtualenv
+pip install virtualenvwrapper     # 可选，从后面试的情况看其实不需要了。
+```
+
+```sh
+# virtualenv使用过程
+mkdir -p ~/mypyenvs/env1/
+virtualenv ~/mypyenvs/env1/   # virtualenv -p /usr/bin/python2.7 venv  # 可用-p参数指定Python解释器程序路径
+source ~/mypyenvs/env1/bin/activate
+# 老版本退出虚环境用下面这句，但新版本貌似虚环境的bin目录下就没有deactivate这个脚本，
+# 不过试了下，只要输入一下 deactivate 然后回车，就自动退出该虚环境了。
+source ~/mypyenvs/env1/bin/deactivate
+
+# 虚环境的库都是在该虚环境根目录下的两个lib里，管理确实方便。
+``
+[root@marksmen1 env1]# pwd
+/root/mypyenvs/env1
+[root@marksmen1 env1]# ll
+total 8
+drwxr-xr-x 2 root root 4096 Nov 22 21:11 bin
+drwxr-xr-x 2 root root   23 Nov 22 20:56 include
+drwxr-xr-x 3 root root   23 Nov 22 20:56 lib
+drwxr-xr-x 3 root root   23 Nov 22 20:56 lib64
+-rw-r--r-- 1 root root  201 Nov 22 20:56 pyvenv.cfg
+[root@marksmen1 env1]#
+``
+```
+
+```sh
+# virtualenv有个virtualenvwrapper，看网上文章说更方便些，其实用了下也就那样。
+# 所以这部分可以不管了，只用virtualenv就好。
+mkdir -p ~/mypyenvs2
+export WORKON_HOME=~/mypyenvs2
+source /usr/bin/virtualenvwrapper.sh
+mkvirtualenv venv
+
+``
+[root@marksmen1 ~]# source /usr/bin/virtualenvwrapper.sh
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/initialize
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/premkvirtualenv
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/postmkvirtualenv
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/prermvirtualenv
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/postrmvirtualenv
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/predeactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/postdeactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/preactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/postactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/get_env_details
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/premkproject
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/postmkproject
+[root@marksmen1 ~]#
+[root@marksmen1 ~]# mkvirtualenv venv
+created virtual environment CPython2.7.5.final.0-64 in 244ms
+  creator CPython2Posix(dest=/root/mypyenvs2/venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, wheel=bundle, setuptools=bundle, via=copy, app_data_dir=/root/.local/share/virtualenv)
+    added seed packages: pip==20.2.4, setuptools==44.1.1, wheel==0.35.1
+  activators PythonActivator,CShellActivator,FishActivator,PowerShellActivator,BashActivator
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/predeactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/postdeactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/preactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/postactivate
+virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/get_env_details
+(venv) [root@marksmen1 ~]#
+``
+```
