@@ -473,6 +473,8 @@ System/360 大型机差点毁了 IBM ！ https://mp.weixin.qq.com/s/K5cqbg5_TkvM
 
 ## 小公司相关新闻
 
+如何看待西贝创始人「 715 工作制」言论引发争议后，西贝回应称「不是硬性标准，不要过分解读」？ - 知乎 https://www.zhihu.com/question/419462374
+
 如何看待“有赞”年会公开宣布996工作制？ - 知乎 https://www.zhihu.com/question/309428750  -->  影响：[「杭州」[有赞内推] 无 996，大量 HC， Java 后端，前端，数据开发，测试开发， SRE 等，靠谱内推](https://www.v2ex.com/t/672507)  
 
 每日优鲜App炒作996，网友愤怒发动App Store 1分差评轰炸 https://www.ithome.com/0/420/132.htm
