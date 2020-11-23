@@ -4,7 +4,7 @@
 ## 快速安装语句总结
 
 ```sh
-yum install -y git gcc zlib perl-IPC-Cmd
+yum install -y git gcc zlib perl-IPC-Cmd perl-Data-Dumper
 
 # 其实后面经常直接在root下进行，这个建用户就没必要了。
 useradd -m ssluser -d /home/ssluser
@@ -123,6 +123,27 @@ Creating Makefile
 ***                                                                ***
 **********************************************************************
 [root@croupous1 openssl]#
+```
+
+```sh
+#// 后面有次安装，config过了，但是make时候报这个库缺失：
+[root@marksmen1 openssl]# make -sj8
+Can't locate Data/Dumper.pm in @INC (@INC contains: /root/openssldir/openssl/util/perl . providers/common/der /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /root/openssldir/openssl/external/perl/Text-Template-1.56/lib) at providers/common/der/oids_to_c.pm line 26.
+BEGIN failed--compilation aborted at providers/common/der/oids_to_c.pm line 26.
+Compilation failed in require.
+BEGIN failed--compilation aborted.
+make[1]: *** [providers/common/include/prov/der_rsa.h] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [build_sw] Error 2
+[root@marksmen1 openssl]# 
+
+#// 于是参考这个链接，找到了库名：
+#// perl-Data-Dumper missing from CentOS dependencies https://github.com/jimsalterjrs/sanoid/issues/224
+[root@marksmen1 openssl]# yum install -y perl-Data-Dumper
+// 此处省略输出内容，并且后面把这个package直接加到初始需要安装的语句里。
+
+#// 另外需要注意的是，即使yum安装完这个包，接着直接make还是会报错。
+#// 正确做法是再次用原来的config语句去config一下，然后再make，就可以成功了。
 ```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
