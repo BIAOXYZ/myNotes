@@ -335,11 +335,69 @@ centos下搭建python双版本环境 - 宇泽的文章 - 知乎 https://zhuanlan
 
 Centos下python虚拟环境的安装、创建、删除、启动、退出详解 https://blog.csdn.net/zzddada/article/details/104300063
 
+Python Virtual Environments: A Primer https://realpython.com/python-virtual-environments-a-primer/
+
+## 实战部分
+
 ```sh
-# 安装python3
+# 用pyenv安装Python3。
+
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+``
+WARNING: seems you still have not added 'pyenv' to the load path.
+# Load pyenv automatically by adding
+# the following to ~/.bashrc:
+
+export PATH="/root/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+``
+#// 对于root用户，将上面三行加入.bashrc。
+#// 其他用户的话，反正运行完安装pyenv的脚本也会有相应提示的，直接复制粘贴就好。
+
+
+[root@marksmen1 ~]# pyenv install 3.5.0
+Downloading Python-3.5.0.tar.xz...
+-> https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tar.xz
+Installing Python-3.5.0...
+Installed Python-3.5.0 to /root/.pyenv/versions/3.5.0
+
+[root@marksmen1 ~]#
+[root@marksmen1 ~]# pyenv versions
+* system (set by /root/.pyenv/version)
+  3.5.0
+[root@marksmen1 ~]#
+
+
+# 其实除了 local 以外还有一个 global 参数，但是感觉用不着了。更详细的可以参考realpython这篇：
+# https://realpython.com/python-virtual-environments-a-primer/
+[root@marksmen1 ~]#
+[root@marksmen1 ~]# cat main.py
+import sys
+print('Using version:', sys.version[:5])
+[root@marksmen1 ~]#
+[root@marksmen1 ~]# python main.py
+('Using version:', '2.7.5')
+[root@marksmen1 ~]#
+[root@marksmen1 ~]# pyenv local 3.5.0
+[root@marksmen1 ~]#
+[root@marksmen1 ~]# python main.py
+Using version: 3.5.0
+[root@marksmen1 ~]# pyenv exec python main.py
+Using version: 3.5.0
+
+--------------------------------------------------
+
+# 源码编译安装python3（不太推荐，不知道是否会影响库路径。但是pyenv也就那样，不过还是pyenv吧）
 yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 
+wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+xz -d Python-3.6.4.tar.xz
+tar -xvf Python-3.6.4.tar
 
+cd Python-3.6.4
+./configure prefix=/usr/local/newpython/python3
+make && make install
 ```
 
 ```sh
