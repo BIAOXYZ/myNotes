@@ -139,5 +139,23 @@ Python Virtual Environments: A Primer https://realpython.com/python-virtual-envi
   > This can be very powerful for developers who have lots of projects with varying version requirements. Not only can you easily change the default version for all projects (via `global`), but you can also override it to specify special cases.
 
 Managing Multiple Python Versions With pyenv https://realpython.com/intro-to-pyenv/
+- **Using Your New Python**
+- > If you try to confirm this using which, you’ll see this:
+  ```sh
+  $ which python
+  /home/realpython/.pyenv/shims/python
+  ```
+  > This might be surprising, but this is how `pyenv` works. `pyenv` inserts itself into your `PATH` and from your OS’s perspective is the executable that is getting called. If you want to see the actual path, you can run the following:
+  ```sh
+  $ pyenv which python
+  /usr/bin/python
+  ```
+- > **Pro Tip**: A great way to get peace of mind that the version of Python you just installed is working properly is to run the built-in test suite:
+  ```sh
+  $ pyenv global 3.8-dev
+  $ python -m test
+  ```
+- **Exploring `pyenv` Commands**
+- **Specifying Your Python Version**
 
 Python 3 Installation & Setup Guide https://realpython.com/installing-python/

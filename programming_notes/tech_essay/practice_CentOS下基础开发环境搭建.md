@@ -342,9 +342,11 @@ Python Virtual Environments: A Primer https://realpython.com/python-virtual-envi
 ```sh
 # 用pyenv安装Python3。
 
-curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+curl https://pyenv.run | bash
+# 实质上是执行了下面这句：
+# curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 ``
-WARNING: seems you still have not added 'pyenv' to the load path.
+# WARNING: seems you still have not added 'pyenv' to the load path.
 # Load pyenv automatically by adding
 # the following to ~/.bashrc:
 
@@ -369,8 +371,13 @@ Installed Python-3.5.0 to /root/.pyenv/versions/3.5.0
 [root@marksmen1 ~]#
 
 
-# 其实除了 local 以外还有一个 global 参数，但是感觉用不着了。更详细的可以参考realpython这篇：
+# 其实除了 local 以外还有一个 global 参数。更详细的可以参考realpython这篇：
 # https://realpython.com/python-virtual-environments-a-primer/
+# https://realpython.com/intro-to-pyenv/  --  虽然这篇推荐切换环境时候用global，但是我碰到了问题：
+# 系统自带python 2.7.5，先后装了3.5.0和2.7.11，然后和virtualenv一起用，并且shell还断连了，所以可能乱了。
+# 结果我发现后面虽然切回了系统python（显示也确实是system），但是实际版本还是2.7.11。。。
+# 所以我推荐的是只用pyenv安装python3，然后就不要再用它了。默认用系统自带的python2，需要用python3的时候用
+# virtualenv创建一个虚环境就行。
 [root@marksmen1 ~]#
 [root@marksmen1 ~]# cat main.py
 import sys
