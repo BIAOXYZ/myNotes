@@ -5,6 +5,7 @@
 - > https://leanpub.com/insidethepythonvirtualmachine/read 推荐这本 inside the Python virtual machine
 - > 说一本我自己买了的：《 CPython Internals 》，基于 Python 3.9 的源码、底层分析。 https://realpython.com/products/cpython-internals-book/ <br> 然后楼上推荐的 Inside the Python virtual machine，免费
 - > 我看过一部分这个 repo 还不错。 https://github.com/zpoint/CPython-Internals <br> 另外: pythontutor 做过一个系列 但是是 2.7 的也挺好的。 https://www.youtube.com/playlist?list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S
+  >> //notes：上面那个油管的B站搬运链接为：[《CPython internals: A ten-hour codewalk through the Python interpreter source code》](https://www.bilibili.com/video/BV1qs411V7US/)
 
 这个协程例子中， consumers 是怎么被执行的？ https://www.v2ex.com/t/728390
 
