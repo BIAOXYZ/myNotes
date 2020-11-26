@@ -26,3 +26,9 @@ Python 绘图，我只用 Matplotlib（三）—— 柱状图 https://www.jiansh
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # matplotlib其他
+
+## from zhihu
+
+深度好文 ｜Matplotlib 可视化最有价值的 50 个图表（附完整 Python 源代码） - Lemonbit的文章 - 知乎 https://zhuanlan.zhihu.com/p/53308606
+
+三个步骤学习python可视化（上）-基础篇 - 开运张的文章 - 知乎 https://zhuanlan.zhihu.com/p/55642042
