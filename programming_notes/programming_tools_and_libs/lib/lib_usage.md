@@ -61,6 +61,9 @@ OpenSSL -- Cryptography and SSL/TLS Toolkit https://www.openssl.org/ || https://
     * https://wiki.openssl.org/index.php/Welcome
   - Command Line Utilities https://wiki.openssl.org/index.php/Command_Line_Utilities  
 
+https://github.com/openssl/openssl
+- HOW TO CONTRIBUTE TO OpenSSL https://github.com/openssl/openssl/blob/2d840893e78253bcce428603fdbcda159bdebe08/CONTRIBUTING.md
+
 #### OpenSSL其他
 
 - 使用 OpenSSL API 进行安全编程 - 1.创建基本的安全连接和非安全连接
