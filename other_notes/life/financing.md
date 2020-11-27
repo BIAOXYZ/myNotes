@@ -59,6 +59,10 @@ A股市场上常提到的“北向资金”是指的什么？ - 知乎 https://w
 
 ## p2p新闻
 
+#人人贷应急通道你们怎么看？ - 知乎 https://www.zhihu.com/question/431584927
+
+怎么看待人人贷应急转让通道 是再观望一下 还是马上下车 望指点！！！? - 知乎 https://www.zhihu.com/question/428523184
+
 从人人贷清退，谈几点对p2p的看法 https://www.sohu.com/a/430902906_640002
 
 人人贷&七折下车你怎么看？ - 知乎 https://www.zhihu.com/question/428925014
