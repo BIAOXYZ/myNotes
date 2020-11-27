@@ -11,6 +11,12 @@
 
 # 相关wiki链接
 
+Expect https://en.wikipedia.org/wiki/Expect
+- > **Alternatives**:
+  * > GoExpect https://github.com/google/goexpect
+  * > go-expect https://github.com/Netflix/go-expect
+  * > Pexpect is a Pure Python Expect-like module https://github.com/pexpect/pexpect
+
 # 其他博客类链接
 
 每次进步一点点——linux expect 使用 https://blog.csdn.net/houmou/article/details/53102051

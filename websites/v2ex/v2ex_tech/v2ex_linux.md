@@ -1,4 +1,13 @@
 
+运行关机 shutdown 命令时。能不能自动关闭某些服务 https://www.v2ex.com/t/729734
+```console
+A 自定义了一个脚本在 /etc/init.d/test，在 A 运行 service test stop，就会 ssh 到 B 机器，shutdown 关机 B 机器。
+有没有可能在 A 运行 shutdown 时自关也去跑 service test stop, 从而关闭 A 就是关闭 A+B
+```
+- > `alias down=ssh userA:passA@hostA "service test stop" && shutdown`
+  >> 楼上方法好. 直接写进 init.d 里网络情况和结果异常都没法处理.
+- > Let me Google it for you 谷歌第一个链接是 https://opensource.com/life/16/11/running-commands-shutdown-linux 就提到了。runlevel 3 就是关机
+
 如何更好的学习 shell 编程 https://www.v2ex.com/t/728172
 
 rsync,scp 均遇到传输文件 size=0 的尴尬问题 https://www.v2ex.com/t/728073
