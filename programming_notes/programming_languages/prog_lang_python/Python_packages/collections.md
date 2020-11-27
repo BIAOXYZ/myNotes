@@ -47,3 +47,13 @@ DefaultDict Tutorial https://www.hackerrank.com/challenges/defaultdict-tutorial/
 How does collections.defaultdict work? https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work
 
 Python Defaultdict – Int and List as a Default Factory https://data-flair.training/blogs/python-defaultdict/
+
+# Counter
+
+Counters in Python | Set 1 (Initialization and Updation) https://www.geeksforgeeks.org/counters-in-python-set-1/
+
+Python | Counter Objects | elements() https://www.geeksforgeeks.org/python-counter-objects-elements/
+
+Counter https://pymotw.com/2/collections/counter.html
+
+Python Counter in Collections with Example https://www.guru99.com/python-counter-collections-example.html
