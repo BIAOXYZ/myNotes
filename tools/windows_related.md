@@ -44,6 +44,14 @@ Win10自带录屏功能怎么用 https://jingyan.baidu.com/article/a3f121e4af5a6
 4、设置完成后在我们运行游戏的时候就不会提示：“按下win+G键开启游戏栏”。
 ```
 
+## Process Explorer
+
+啥拦截软件都挡不住，教你杜绝流氓软件弹窗 https://www.ithome.com/0/521/959.htm
+- > 官方下载：https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
+- > 这是一款微软自家的工具，它本身是由 Sysinternals 开发的，现在已经被微软收购。Process Explorer 本身是一个高级的任务管理器，他可以用来管理系统不同的进程，远比 Win10 自带的任务管理器更加直观。不过这里，我们着重用到它的弹窗检测功能。
+- > 官网地址：https://www.revouninstaller.com/
+- > 这是一个非常强力的卸载工具，它的主要功用，在于卸载电脑上某些顽固的软件。Revo Uninstaller 对付弹窗也非常有一套，它自带了一个 “猎人模式”，可以用来识别弹窗的归属，效果非常好。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Windows settings

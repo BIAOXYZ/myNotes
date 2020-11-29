@@ -1,4 +1,17 @@
 
+postgres 用户登录问题 https://www.v2ex.com/t/730231
+- > 解决了。。。。没注意到上面的那个 postgres，一直修改的是下面那个两个 all 的。。。。 
+  ```conf
+  # Database administrative login by Unix domain socket
+  local all postgres md5
+  
+  # TYPE DATABASE USER ADDRESS METHOD
+  
+  # "local" is for Unix domain socket connections only
+  local all all md5
+  ```
+- > -h 走 tcp socket. 不加走 unix domain socket.
+
 就想问问多少人知道 PostgreSQL ？ https://www.v2ex.com/t/729909
 
 Postgres to_timestamp() 无法转换 unix epoch 字符串 https://www.v2ex.com/t/712510
