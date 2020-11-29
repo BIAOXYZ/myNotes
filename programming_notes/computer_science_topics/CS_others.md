@@ -10,6 +10,9 @@ How to Make a Computer Operating System in C++ https://samypesse.gitbook.io/how-
 u-root https://github.com/u-root/u-root || https://u-root.org/
 - > A fully Go userland with Linux bootloaders! u-root can create a one-binary root file system (initramfs) containing a busybox-like set of tools written in Go.
 
+xbook2操作系统内核 https://github.com/hzcx998/xbook2
+- > 尽力了3个多月混合内核阶段，我发现微内核一个非常非常非常严重的问题就是效率，性能问题。我也知道我写得代码很烂，但是相比于宏内核的效率，的确差很多。于是，冥思苦想，还是做回宏内核，拥抱小可爱。
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj

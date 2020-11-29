@@ -109,6 +109,9 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 - 《Security Patterns in Practice》中文翻译 https://github.com/gdut-yy/Security-Patterns-in-Practice-zh
 - 《代码整洁之道》中文翻译 https://github.com/gdut-yy/Clean-Code-zh
 
+计算机经典书籍推荐 https://github.com/woai3c/recommended-books
+- 流畅的python https://github.com/woai3c/recommended-books/blob/master/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%B5%81%E7%95%85%E7%9A%84python.pdf
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## books from ApacheCN
