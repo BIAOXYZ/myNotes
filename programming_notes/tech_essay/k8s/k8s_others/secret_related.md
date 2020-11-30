@@ -5,7 +5,9 @@
 
 k8s实战之从私有仓库拉取镜像 https://www.cnblogs.com/justmine/p/8678758.html
 
-## 个人实战
+# 个人实战
+
+## 实战1
 
 ```sh
 # 这里只想说明一点：docker-username这里也可能是类似邮箱的用户名！我开始只用了liulliu，结果错了。
@@ -23,6 +25,8 @@ spec:
       - name: uiupdate1
 # 2. 用新镜像 hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com/ibmcom/cp4mcm-application-ui-amd64:3.6.0 替换deployment里的老镜像。
 ```
+
+## 实战2
 
 From: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#registry-secret-existing-credentials
 ```sh
@@ -81,3 +85,12 @@ metadata:
 type: kubernetes.io/dockerconfigjson
 [root@centos11 ~]#
 ```
+
+# For OCP（至少`OCP 4.5.x`和`OCP 4.6.x`都可以这样）
+
+起因就是docker搞了那个pull limite。。。解决的主要思路就是不能再匿名拉取镜像了，只能用自己的dockerhub账号登陆。
+- Download rate limit https://docs.docker.com/docker-hub/download-rate-limit/
+- Mitigate impact of Docker Hub Pull Request Limits https://www.openshift.com/blog/mitigate-impact-of-docker-hub-pull-request-limits
+
+具体做法是，在OCP的 `openshift-config` namespace下有个secret就叫`pull-secret`（从OCP的webconsole登陆切换到这个namespace下的secret，会发现这个一般在最底部。我猜它应该是通用的镜像拉取的secret——也就是如果deployment里没有显式设置，应该都会用这个secret？）。
+<br> 然后编辑这个secret（`选中该secret`--右侧`Actions`--`Edit Secret`--`Add Credentials`），把自己dockerhub的账号、密码填一下，保存即可。
