@@ -31,6 +31,18 @@ spec:
 # 2. 用新镜像 hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com/ibmcom/cp4mcm-application-ui-amd64:3.6.0 替换deployment里的老镜像。
 ```
 
+```sh
+# 推荐把那几个值设置到环境变量里，这样创建secret的语句也好看点。email当然也可以设成环境变量传过去，只是这里没设。
+# 例如：假定你的token（类似密码）如下：
+Entitlement key： abcdefg-hijklmn-opqrst-uvwxyz--abcdefg-hijklmn-opqrst-uvwxyz
+
+export ENTITLED_REGISTRY=cp.icr.io
+export ENTITLED_REGISTRY_USER=cp
+export ENTITLED_REGISTRY_KEY=abcdefg-hijklmn-opqrst-uvwxyz--abcdefg-hijklmn-opqrst-uvwxyz
+
+oc create secret docker-registry <any_name_for_the_secret> --docker-username=$ENTITLED_REGISTRY_USER --docker-password=$ENTITLED_REGISTRY_KEY --docker-email=<your_docker_email_address> --docker-server=$ENTITLED_REGISTRY -n <your_IBM Cloud Pak for Multicloud Management_namespace>
+```
+
 ## 实战2
 
 From: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#registry-secret-existing-credentials
@@ -89,6 +101,13 @@ metadata:
   uid: 285be4d8-37d4-4034-a7db-2cb4ea3cfe1e
 type: kubernetes.io/dockerconfigjson
 [root@centos11 ~]#
+
+# 然后直接用这个名为regcred的secret做拉取镜像的secret；
+# 或者（更常见的情况）用它里面的data字段整体替代目标secret的data字段即可。
+``
+data:
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJoeWMtY3A0bWNtLXRlYW0tZG9ja2VyLWxvY2FsLmFydGlmYWN0b3J5LnN3Zy1kZXZvcHMuY29tIjogewoJCQkiYXV0aCI6ICJiR2wxYkd4cGRVQmpiaTVwWW0wdVkyOXRPbXhzTVRrNE5URTVPRFV4T1RnMU5nPT0iCgkJfQoJfSwKCSJIdHRwSGVhZGVycyI6IHsKCQkiVXNlci1BZ2VudCI6ICJEb2NrZXItQ2xpZW50LzE5LjAzLjEyIChsaW51eCkiCgl9Cn0=
+``
 ```
 
 ```sh
