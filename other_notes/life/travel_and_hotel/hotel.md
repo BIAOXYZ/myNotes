@@ -127,8 +127,13 @@ Hilton Honors 希尔顿荣誉客会常旅客计划简介【2019.6 更新：又�
 北京华贸丽思卡尔顿（Ritz-Carlton Beijing）入住体验 https://www.uscreditcards101.com/ritz-carlton-beijing-review/
 - > 另外要注意的是，由于这是一家丽思卡尔顿。就算你是白金或者钛金，都是没有酒廊权益的；就算你升级到行政楼层或者套房，也是只升级房型，没有任何酒廊权益。唯一获取的方式只能靠花钱！
 
-老派奢华——成都丽思卡尔顿 | 商务套房 | 行政待遇 - 不仅仅是酒店的文章 - 知乎 https://zhuanlan.zhihu.com/p/308071201
+老派奢华——成都丽思卡尔顿 | 商务套房 | 行政待遇 - 不仅仅是酒店的文章 - 知乎 https://zhuanlan.zhihu.com/p/308071201 || https://www.flyertea.com/article-454779-1.html
 - > 性价比超级高，1000块就可以入住丽思卡尔顿的套房，还带行政待遇，这在全国都是极为罕见的把，毕竟我单独在西安买了个行政待遇就花了816.
+  >> 长安城西一隅，遇见绅士淑女——西安丽思卡尔顿双床房+行政酒廊 - 不仅仅是酒店的文章 - 知乎 https://zhuanlan.zhihu.com/p/263604477
+
+打卡西安丽思卡尔顿行政套房-体验极佳 https://www.flyertea.com/article-454276-1.html
+
+原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/thread-3743181-1-1.html
 
 # `万豪` / `Marriott`
 
