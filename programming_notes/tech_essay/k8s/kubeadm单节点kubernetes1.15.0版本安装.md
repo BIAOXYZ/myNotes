@@ -20,6 +20,20 @@
   >>>> 结果新员工真出了reset也清理不干净的问题，后来查了下是etcd的残留，把这个目录删了就可以了：`/var/lib/etcd`。
 - 使用 kubeadm 更新 kubernetes 集群 https://www.qikqiak.com/post/use-kubeadm-upgrade-k8s/
 
+### 自用一键reset集群
+```sh
+kubectl config use-context kubernetes-admin@kubernetes
+kubeadm reset --force && sleep 5s
+rm -rf $HOME/.kube/
+kubeadm init --kubernetes-version=1.18.0 --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address=$(hostname -I | awk '{print $2}') && sleep 5s
+sleep 2s && mkdir -p $HOME/.kube
+sleep 2s && sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sleep 2s && sudo chown $(id -u):$(id -g) $HOME/.kube/config
+sleep 2s && kubectl apply -f https://docs.projectcalico.org/v3.11/manifests/calico.yaml
+sleep 2s && kubectl taint nodes $(kubectl get node | grep master | awk '{print $1}') node-role.kubernetes.io/master-
+sleep 5s
+```
+
 ## 0.3 未涉及参考链接：
 
 **//这个是用手动方式部署一个单节点，之前手动装过三节点的。所以纯是留着回头有空看看吧**。
