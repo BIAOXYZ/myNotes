@@ -1,7 +1,12 @@
 
 # kubernetes从私有仓库拖镜像
 
-从私有仓库拉取镜像 https://v1-18.docs.kubernetes.io/zh/docs/tasks/configure-pod-container/pull-image-private-registry/
+从私有仓库拉取镜像 https://kubernetes.io/zh/docs/tasks/configure-pod-container/pull-image-private-registry/ || https://v1-18.docs.kubernetes.io/zh/docs/tasks/configure-pod-container/pull-image-private-registry/
+- > 要了解 `dockerconfigjson` 字段中的内容，请将 Secret 数据转换为可读格式：
+  >> `kubectl get secret regcred --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode`
+- > 输出和下面类似：`{"auths":{"yourprivateregistry.com":{"username":"janedoe","password":"xxxxxxxxxxx","email":"jdoe@example.com","auth":"c3R...zE2"}}}`
+- > 要了解 `auth` 字段中的内容，请将 base64 编码过的数据转换为可读格式：
+  >> `echo "c3R...zE2" | base64 --decode`
 
 k8s实战之从私有仓库拉取镜像 https://www.cnblogs.com/justmine/p/8678758.html
 
@@ -84,6 +89,32 @@ metadata:
   uid: 285be4d8-37d4-4034-a7db-2cb4ea3cfe1e
 type: kubernetes.io/dockerconfigjson
 [root@centos11 ~]#
+```
+
+```sh
+# 如何反向查询
+
+{root@bandore1 ~}$ kubectl get secret ibm-management-pull-secret -n openshift-marketplace --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode
+{
+        "auths": {
+                "hyc-cloud-private-integration-docker-local.artifactory.swg-devops.com": {
+                        "auth": "bGl1bGxpdUBjbi5pYm0uY29tOmxsMTk4NTE5ODUxOTg1Ng=="
+                },
+                "hyc-cp4mcm-team-docker-local.artifactory.swg-devops.com": {
+                        "auth": "bGl1bGxpdUBjbi5pYm0uY29tOmxsMTk4NTE5ODUxOTg1Ng=="
+                },
+                "orpheus-local-docker.artifactory.swg-devops.com": {
+                        "auth": "bGl1bGxpdUBjbi5pYm0uY29tOmxsMTk4NTE5ODUxOTg1Ng=="
+                }
+        },
+        "HttpHeaders": {
+                "User-Agent": "Docker-Client/19.03.12 (linux)"
+        }
+}{root@bandore1 ~}$
+{root@bandore1 ~}$
+{root@bandore1 ~}$
+{root@bandore1 ~}$ echo "bGl1bGxpdUBjbi5pYm0uY29tOmxsMTk4NTE5ODUxOTg1Ng==" | base64 -d
+liulliu@cn.ibm.com:ll1985198519856{root@bandore1 ~}$
 ```
 
 # For OCP（至少`OCP 4.5.x`和`OCP 4.6.x`都可以这样）
