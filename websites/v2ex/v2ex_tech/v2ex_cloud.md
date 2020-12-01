@@ -1,4 +1,6 @@
 
+docker build go 项目每次都很慢，有什么好的办法吗？ https://www.v2ex.com/t/731045
+
 有大佬用过 Gitlab 的 CICD 吗 https://www.v2ex.com/t/722305
 
 K8S 使用 nodePort 方式暴露服务，发现没有负载均衡的效果，都请求到了一个 pod 里， 求教问题出在哪里？ https://www.v2ex.com/t/715363
