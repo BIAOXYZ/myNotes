@@ -49,6 +49,8 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 # Luxury Hotels general
 
+「必读」飞客心目中2020帝都奢华酒店最新排名，瑰丽依旧垫底！ https://mp.weixin.qq.com/s/U0mu4nvabVgfqtMZTBJvsg
+
 【[`*`][:star:]】 要拼就拼最贵的！国内高价酒店 Top 30 https://mp.weixin.qq.com/s/4XiUsroPDTPuF3G3JNrbXg
 - 回复里的：
   * > `悠游的撒哈拉`：住过大研安缦和台北加贺屋。大研安缦真心太舒服了，确实比丽江悦榕庄又上了一个档次。加贺屋不推荐，太旧了，用餐的人又比较多，同样的价格，去河口湖可以住到舒适度，景观更好的温泉酒店。
@@ -236,5 +238,7 @@ ASCOTT https://www.the-ascott.com/
 三亚四大海湾吃、住、游、玩攻略（超详细） - 冷门大博士的文章 - 知乎 https://zhuanlan.zhihu.com/p/38916910
 
 ## 温泉
+
+旅行其实很简单 篇八百七十八：那些号称全中国最好的温泉酒店，应该都在这里了 https://post.smzdm.com/p/a07ng54z/
 
 寒意渐浓，国内这20家温泉酒店，值得一去！ https://mp.weixin.qq.com/s/HxjUTk3pNKPFl4BQukhS0g
