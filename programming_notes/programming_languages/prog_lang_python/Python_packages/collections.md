@@ -45,12 +45,87 @@ Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
 Defaultdict in Python https://www.geeksforgeeks.org/defaultdict-in-python/
 - > In Dictionary, the key must be unique and immutable. ***This means that a Python `Tuple` can be a key whereas a Python `List` can not***.
 - > Sometimes, when the KeyError is raised, it might become a problem. To overcome this Python introduces another dictionary like container known as Defaultdict which is present inside the collections module. Note: For more information, refer to [Python Dictionary](https://www.geeksforgeeks.org/python-dictionary/).
+- > **DefaultDict**
+- > Defaultdict is a container like [dictionaries](https://www.geeksforgeeks.org/python-dictionary/) present in the module `collections`. Defaultdict is a sub-class of the `dict` class that returns a dictionary-like object. The functionality of both dictionaries and `defualtdict` are almost same except for the fact that `defualtdict` never raises a `KeyError`. It provides a default value for the key that does not exists.
+  ```py
+  from collections import defaultdict
+  
+  def def_value():
+      return "Not Present"
+  
+  d = defaultdict(def_value)
+  d["a"] = 1
+  d["b"] = 2
+  print(d["a"])
+  print(d["b"])
+  print(d["c"])
+  --------------------------------------------------
+  1
+  2
+  Not Present
+  ```
+- > **Inner Working of defaultdict**
+  ```py
+  from collections import defaultdict
+  d = defaultdict(lambda: "Not Present")
+  d["a"] = 1
+  d["b"] = 2
+  print(d["a"]) 
+  print(d["b"])
+  print(d["c"])
+  --------------------------------------------------
+  1
+  2
+  Not Present
+  ```
+- > **Using List as default_factory**
+  ```py
+  from collections import defaultdict
+  
+  d = defaultdict(list)
+  
+  for i in range(5):
+      d[i].append(i)
+  print("Dictionary with values as list:")
+  print(d)
+  --------------------------------------------------
+  Dictionary with values as list:
+  defaultdict(<type 'list'>, {0: [0], 1: [1], 2: [2], 3: [3], 4: [4]})
+  ```
+- > **Using int as default_factory**
+  ```py
+  from collections import defaultdict
+  
+  d = defaultdict(int)
+  
+  L = [1, 2, 3, 4, 2, 4, 1, 2]
+  for i in L:
+      d[i] += 1
+  print(d)
+  --------------------------------------------------
+  defaultdict(<type 'int'>, {1: 2, 2: 3, 3: 1, 4: 2})
+  ```
 
 DefaultDict Tutorial https://www.hackerrank.com/challenges/defaultdict-tutorial/problem
 
 How does collections.defaultdict work? https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work
 
 Python Defaultdict – Int and List as a Default Factory https://data-flair.training/blogs/python-defaultdict/
+
+## defaultdict个人实战
+
+```py
+from collections import defaultdict
+
+defaultDic = defaultdict(list)
+print defaultDic
+
+ddic = defaultdict()
+print ddic
+--------------------------------------------------
+defaultdict(<type 'list'>, {})
+defaultdict(None, {})
+```
 
 # Counter
 
