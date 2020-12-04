@@ -38,6 +38,8 @@ collections之OrderedDict - 程序员Egon老湿的文章 - 知乎 https://zhuanl
 
 # defaultdict
 
+Using the Python defaultdict Type for Handling Missing Keys https://realpython.com/python-defaultdict/
+
 Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
 
 Defaultdict in Python https://www.geeksforgeeks.org/defaultdict-in-python/
