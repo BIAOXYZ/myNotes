@@ -41,6 +41,8 @@ collections之OrderedDict - 程序员Egon老湿的文章 - 知乎 https://zhuanl
 Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
 
 Defaultdict in Python https://www.geeksforgeeks.org/defaultdict-in-python/
+- > In Dictionary, the key must be unique and immutable. ***This means that a Python `Tuple` can be a key whereas a Python `List` can not***.
+- > Sometimes, when the KeyError is raised, it might become a problem. To overcome this Python introduces another dictionary like container known as Defaultdict which is present inside the collections module. Note: For more information, refer to [Python Dictionary](https://www.geeksforgeeks.org/python-dictionary/).
 
 DefaultDict Tutorial https://www.hackerrank.com/challenges/defaultdict-tutorial/problem
 
