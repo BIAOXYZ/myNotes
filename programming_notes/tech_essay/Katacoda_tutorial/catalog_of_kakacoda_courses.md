@@ -3,6 +3,16 @@
 
 Vault Playground https://www.katacoda.com/hashicorp/scenarios/vault-playground
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 官方课程
+
+Learn Git Version Control using Interactive Browser-Based Scenarios https://www.katacoda.com/courses/git
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Openshift
 
 OpenShift, The Kubernetes platform for big ideas https://www.katacoda.com/openshift
@@ -34,6 +44,10 @@ Crunchy Data (Postgresql) https://www.katacoda.com/crunchydata/
 # Portworx
 
 Portworx, Cloud Native Storage https://www.katacoda.com/portworx/
+
+PostgreSQL Failover, Volume Resize and Snapshots https://www.katacoda.com/portworx/scenarios/px-k8s-postgres-all-in-one
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 非机构课程
 
