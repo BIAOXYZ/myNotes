@@ -57,6 +57,17 @@ Mark Twain https://en.wikiquote.org/wiki/Mark_Twain
 
 # 科技圈
 
+John von Neumann https://en.wikiquote.org/wiki/John_von_Neumann || 约翰·冯·诺伊曼 https://zh.wikiquote.org/wiki/%E7%B4%84%E7%BF%B0%C2%B7%E9%A6%AE%C2%B7%E8%AB%BE%E4%BC%8A%E6%9B%BC
+- > `你应该把他称作熵，有两个原因。第一你的不确定函数已经被用在统计力学而且用了那个名字。第二，更重要的是，没有人真正知道什么是熵，所以在争论中你总是有优势。` -- 向克劳德·香农建议他的新函数的名称。
+  >> `You should call it entropy, for two reasons. In the first place your uncertainty function has been used in statistical mechanics under that name, so it already has a name. In the second place, and more important, no one really knows what entropy really is, so in a debate you will always have the advantage.`
+- > `年轻人，在数学中你不理解事情，你只是习惯它们。`
+  >> `Young man, in mathematics you don't understand things. You just get used to them.`
+- > `如果人们不相信数学简单，那是因为他们不知道真实世界有多复杂。`
+  >> `If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.`
+- > `You wake me up early in the morning to tell me that I'm right? Please wait until I'm wrong.`
+- > `冯·诺伊曼的大脑是否意味着存在比人类更高一级的生物？`
+  >> `I have sometimes wondered whether a brain like von Neumann's does not indicate a species superior to that of man.`
+
 Linus Torvalds https://en.wikiquote.org/wiki/Linus_Torvalds || 林纳斯·托瓦兹 https://zh.wikiquote.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9
 - `Talk is cheap. Show me the code.` -- Torvalds, Linus (2000-08-25) at https://lkml.org/lkml/2000/8/25/132
   - Talk is cheap. Show me the PPT. -- Liang Liu (2018-06-06) at Bian's Village~~ wahaha
