@@ -1,4 +1,11 @@
 
+# 书籍和课程
+
+《计算机网络－自顶向下方法》笔记 https://github.com/moranzcw/Computer-Networking-A-Top-Down-Approach-NOTES
+- > 《计算机网络－自顶向下方法(原书第6版)》编程作业，Wireshark实验文档的翻译和解答。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 通信领域
 
 5G 低延迟？ 5G 远程医疗？ 5G 自动驾驶？短视频的火爆是因为 4G？你们是不是忘了 wifi？你们是不是忘了 wifi6? https://www.v2ex.com/t/617789
@@ -37,6 +44,8 @@ TCP 连接断连问题剖析 https://www.ibm.com/developerworks/cn/aix/library/0
 HTTP长连接和短连接 https://www.cnblogs.com/0201zcr/p/4694945.html
 
 HTTP Keep-Alive模式 https://www.cnblogs.com/skynet/archive/2010/12/11/1903347.html
+
+TCP协议优化 https://blog.csdn.net/zhangskd/column/info/zhangskd
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
