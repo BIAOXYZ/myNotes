@@ -137,6 +137,11 @@ tag:西安丽思卡尔顿 https://www.flyertea.com/tag/%E8%A5%BF%E5%AE%89%E4%B8%
 - 打卡西安丽思卡尔顿行政套房-体验极佳 https://www.flyertea.com/article-454276-1.html
 - 原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/thread-3743181-1-1.html
 
+# `W酒店` / `W Hotels`
+
+tag:西安W https://www.flyertea.com/tag/%E8%A5%BF%E5%AE%89W
+- 用着fendi家具的西安w皇朝套总统套房 https://www.flyertea.com/thread-3767474-1-1.html
+
 # `万豪` / `Marriott`
 
 ## 万豪官网
