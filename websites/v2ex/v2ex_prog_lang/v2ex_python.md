@@ -1,4 +1,8 @@
 
+粗看 numpy 和 pandas 后的一点困惑 https://www.v2ex.com/t/732958
+- > pandas 计算移动平均线：`df.rolling(15).mean()`，sql：卒。 <br> numpy 计算数组拟合函数：`np.polyfit(x, y, 1)`，excel：卒。 <br> pandas 计算 后 N 天减前 N 天值：`df.diff(N)`，sql：卒。
+- > sql 也可以做移动平均的 https://ubiq.co/database-blog/calculate-moving-average-postgresql/
+
 这个协程例子中， consumers 是怎么被执行的？ https://www.v2ex.com/t/728390
 
 Python in 操作在 tuple 和 list 中到底哪个快？ https://www.v2ex.com/t/726235
