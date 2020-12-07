@@ -143,6 +143,10 @@ tag:西安W https://www.flyertea.com/tag/%E8%A5%BF%E5%AE%89W
 - 用着fendi家具的西安w皇朝套总统套房 https://www.flyertea.com/thread-3767474-1-1.html
 - 重返长安，再访曲江夜店——西安 W 风云套房 https://www.flyertea.com/thread-3689822-1-1.html
   * > 简单果腹之后，上楼开始打卡16层的Mega Suite。西安W是一栋异形楼，有W形状的内外两折，内侧一折设置了精巧套和奇幻套，外侧一折设置了惊艳套、风云套、长安套和皇朝套。内侧的套房基本上是看楼景，能看到一点点湖景，且浴室泡澡不放窗帘的情况下能轻易地被很多房间多方位观赏…外侧的套房基本上不会被看到，但还是建议放下窗帘，除非对自己的身体很自信想要被看到哈哈哈…之前看过一个偷拍的，应该是在精巧或者奇幻外侧的套房都能看到正湖景且能望到不夜城芙蓉园的景观，可以坐在阳台静静地欣赏人间烟火。
+- 请教一下大佬们西安W湖景房夜景特别好的房间有哪些呢 https://www.flyertea.com/thread-3659388-1-1.html
+- 请问西安w、丽思卡尔顿，西安君悦哪一家自助晚餐比较好吃 https://www.flyertea.com/thread-3600639-1-1.html
+- 十朝都会，梦回大唐—西安W双总套 https://www.flyertea.com/thread-3544867-1-1.html
+- 请问各位大佬西安W哪些房型有三角浴缸啊 https://www.flyertea.com/thread-3500110-1-1.html
 
 在西安肉夹馍不稀奇，可螃蟹夹馍你见过吗？ https://www.bilibili.com/video/av60954748/
 
