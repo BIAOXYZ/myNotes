@@ -137,7 +137,7 @@ sudo apt-get install texinfo || yum install -y texinfo
 
 ```sh
 #// 一、极简步骤版：上来就确定把依赖做齐，然后直接一次装好。
-yum -y install readline-devel zlib-devel git gcc bison flex
+yum -y install readline-devel zlib-devel bison flex git gcc make
 
 useradd pguser
 echo 123456 | passwd --stdin pguser
@@ -232,6 +232,11 @@ export PGHOME=/home/pguser/pgdir/pgsql
 export PGDATA=/home/pguser/pgdir/pgdata
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
 export PATH=${PATH}:${PGHOME}/bin
+
+# 加入环境变量后就可以更简单的启动、停止、连接数据库了：
+#  pg_ctl start -D $PGDATA
+#  pg_ctl stop -D $PGDATA
+#  psql -d postgres
 
 # 意外地发现现在cgdb都可以一键装了，太幸福了简直。再看看之前的记录，当年装个cgdb都麻烦- -
 yum install -y cgdb
