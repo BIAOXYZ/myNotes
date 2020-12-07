@@ -4,7 +4,7 @@
 ## 快速安装语句总结
 
 ```sh
-yum install -y git gcc zlib perl-IPC-Cmd perl-Data-Dumper
+yum install -y git gcc make zlib perl perl-IPC-Cmd perl-Data-Dumper
 
 # 其实后面经常直接在root下进行，这个建用户就没必要了。
 useradd -m ssluser -d /home/ssluser
