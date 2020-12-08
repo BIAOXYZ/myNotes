@@ -332,6 +332,9 @@ Using Python environments in VS Code https://code.visualstudio.com/docs/python/e
 - > `For more details on debug configuration, see Debugging configurations.` -- Python debug configurations in Visual Studio Code https://code.visualstudio.com/docs/python/debugging
   * https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger
 
+VSCode debugger conditional breakpoints https://stackoverflow.com/questions/43311058/vscode-debugger-conditional-breakpoints || VSCode调试器条件断点 https://www.thinbug.com/q/43311058
+- > https://code.visualstudio.com/docs/editor/debugging#_conditional-breakpoints
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for latex
