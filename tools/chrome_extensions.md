@@ -31,17 +31,23 @@
 
 使用或修复 Flash 音频和视频 https://support.google.com/chrome/answer/6258784
 - > 解决 Flash 出现的问题
-```
-第 1 步：开启 Flash
-  请仅允许 Flash 在您信任的网站上运行。
-    在计算机上打开 Chrome。
-    转到包含相应视频或游戏的网站。
-    // 这句是核心：之前总是点地址栏右边每次手动允许；今天发现点左边的❓图标，类似加入白名单就可以了。
-    在网址的左侧，点击锁形图标 Lock 或“信息”图标 查看网站信息。
-    点击底部的网站设置。
-    在随即显示的新标签页中，依次点击“Flash”右侧的向下箭头 向下箭头 然后 允许。
-    返回到该网站并重新加载页面。
-```
+  ```console
+  第 1 步：开启 Flash
+    请仅允许 Flash 在您信任的网站上运行。
+      在计算机上打开 Chrome。
+      转到包含相应视频或游戏的网站。
+      // 这句是核心：之前总是点地址栏右边每次手动允许；今天发现点左边的❓图标，类似加入白名单就可以了。
+      在网址的左侧，点击锁形图标 Lock 或“信息”图标 查看网站信息。
+      点击底部的网站设置。
+      在随即显示的新标签页中，依次点击“Flash”右侧的向下箭头 向下箭头 然后 允许。
+      返回到该网站并重新加载页面。
+  ```
+
+## chrome清理缓存
+
+清除缓存和 Cookie https://support.google.com/accounts/answer/32050
+
+在 Chrome 中清除、启用和管理 Cookie https://support.google.com/chrome/answer/95647
 
 ## chrome keyboard shortcuts
 
