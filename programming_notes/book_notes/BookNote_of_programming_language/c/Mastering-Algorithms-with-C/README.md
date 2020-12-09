@@ -1,4 +1,10 @@
 
+# 书籍链接
+
+Mastering Algorithms with C https://www.oreilly.com/library/view/mastering-algorithms-with/1565924533/
+
+Mastering Algorithms with C https://book.douban.com/subject/1762507/ || 算法精解·C语言描述 https://book.douban.com/subject/14267904/
+
 # examples
 
 Mastering Algorithms with C https://resources.oreilly.com/examples/9781565924536
