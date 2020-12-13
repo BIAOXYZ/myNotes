@@ -4,6 +4,13 @@
 std::unordered_map https://www.cplusplus.com/reference/unordered_map/unordered_map/
 - std::unordered_map::find https://www.cplusplus.com/reference/unordered_map/unordered_map/find/
 
+hash_map File Reference https://gcc.gnu.org/onlinedocs/gcc-4.6.4/libstdc++/api/a00912.html
+
+# wiki
+
+Unordered associative containers (C++) https://en.wikipedia.org/wiki/Unordered_associative_containers_(C%2B%2B)
+- > In the programming language C++, **unordered associative containers** are a group of class templates in the C++ Standard Library that implement hash table variants. Being templates, they can be used to store arbitrary elements, such as integers or custom classes. The following containers are defined in the current revision of the C++ standard: `unordered_set`, `unordered_map`, `unordered_multiset`, `unordered_multimap`. Each of these containers differ only on constraints placed on their elements.
+
 # 其他
 
 unordered_map in C++ STL https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
