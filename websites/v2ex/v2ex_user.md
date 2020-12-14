@@ -95,3 +95,9 @@ TCP 小知识: 假如服务端不调用 Accept() 会发生什么? https://www.v2
 Python 为什么不支持 switch 语句？ https://www.v2ex.com/t/713768
 - > 本文出自“Python 为什么”系列，请查看全部文章：
   >> `#Python为什么` https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyOTk2MTcwNg==&action=getalbum&album_id=1338406397180084225
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# gzdaijie
+
+欢迎入坑我的新项目： Go 语言高性能编程 https://www.v2ex.com/t/735027
