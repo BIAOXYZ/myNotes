@@ -1,4 +1,6 @@
 
+这么多年了才发现 dnspod 可以这么玩......恨晚啊 https://www.v2ex.com/t/735423
+
 有没有哪个软件可以提供获取家里网络 ip 的？ https://www.v2ex.com/t/724481
 - > curl ident.me
 
