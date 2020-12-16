@@ -49,6 +49,8 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 # Luxury Hotels general
 
+揭秘丨即将登陆西安的8大超级酒店，巅峰对决！ https://www.sohu.com/a/290667684_735537 || https://new.qq.com/omn/20190122/20190122A0FQFQ.html
+
 「必读」飞客心目中2020帝都奢华酒店最新排名，瑰丽依旧垫底！ https://mp.weixin.qq.com/s/U0mu4nvabVgfqtMZTBJvsg
 
 【[`*`][:star:]】 要拼就拼最贵的！国内高价酒店 Top 30 https://mp.weixin.qq.com/s/4XiUsroPDTPuF3G3JNrbXg
@@ -135,6 +137,8 @@ Hilton Honors 希尔顿荣誉客会常旅客计划简介【2019.6 更新：又�
 
 tag:西安丽思卡尔顿 https://www.flyertea.com/tag/%E8%A5%BF%E5%AE%89%E4%B8%BD%E6%80%9D%E5%8D%A1%E5%B0%94%E9%A1%BF
 - 打卡西安丽思卡尔顿行政套房-体验极佳 https://www.flyertea.com/article-454276-1.html
+- 原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/article-452774-1.html
+  * > 可见如果你不来体验酒店的这些设施与服务，而只看客房的话，你可能感觉不到25亿的硬件装修都花在了哪里。
 - 原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/thread-3743181-1-1.html
 
 # `W酒店` / `W Hotels`
