@@ -257,8 +257,15 @@ ASCOTT https://www.the-ascott.com/
 
 三亚四大海湾吃、住、游、玩攻略（超详细） - 冷门大博士的文章 - 知乎 https://zhuanlan.zhihu.com/p/38916910
 
+攻略 | 住在海棠湾，才更能体会买买买的乐趣 https://mp.weixin.qq.com/s/B156hNwSUrzS4zeZjxBQ8g
+
 ## 温泉
 
 旅行其实很简单 篇八百七十八：那些号称全中国最好的温泉酒店，应该都在这里了 https://post.smzdm.com/p/a07ng54z/
 
 寒意渐浓，国内这20家温泉酒店，值得一去！ https://mp.weixin.qq.com/s/HxjUTk3pNKPFl4BQukhS0g
+
+## 长白山
+
+这里有篇5000字，无水分的长白山攻略 https://mp.weixin.qq.com/s/tCqNrqeyLrZib_fVPUMc6w
+- 北纬41°，在柏悦感受雪国世界 https://mp.weixin.qq.com/s/C9-jNBS8KUa_ak6uaU-ZXg
