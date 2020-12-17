@@ -397,6 +397,9 @@ druidcluster4 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFNSKuD1/jzIAsbTAgIYckle6OSbo/
 
 # 6. ssh端口转发 / ssh隧道
 
+SSH 教程 https://github.com/wangdoc/ssh-tutorial || https://wangdoc.com/ssh/
+- SSH 端口转发 https://github.com/wangdoc/ssh-tutorial/blob/main/docs/port-forwarding.md
+
 SSH/OpenSSH/PortForwarding https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 
 SSH Port Forwarding Example https://www.ssh.com/ssh/tunneling/example
