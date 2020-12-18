@@ -137,9 +137,11 @@ Hilton Honors 希尔顿荣誉客会常旅客计划简介【2019.6 更新：又�
 
 tag:西安丽思卡尔顿 https://www.flyertea.com/tag/%E8%A5%BF%E5%AE%89%E4%B8%BD%E6%80%9D%E5%8D%A1%E5%B0%94%E9%A1%BF
 - 打卡西安丽思卡尔顿行政套房-体验极佳 https://www.flyertea.com/article-454276-1.html
-- 原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/article-452774-1.html
+- 原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/thread-3743181-1-1.html || https://www.flyertea.com/article-452774-1.html
   * > 可见如果你不来体验酒店的这些设施与服务，而只看客房的话，你可能感觉不到25亿的硬件装修都花在了哪里。
-- 原来丽思还可以这样——西安丽思卡尔顿酒店行政套房及行政酒廊 https://www.flyertea.com/thread-3743181-1-1.html
+- 西安丽思卡尔顿-臻享房（大型客房） https://www.flyertea.com/thread-3737377-1-1.html
+  * > 酒店前台说给了74平米走廊尽头的臻享房（App显示叫做大型客房）
+  * > 这个电视墙是可以转的
 
 # `W酒店` / `W Hotels`
 
