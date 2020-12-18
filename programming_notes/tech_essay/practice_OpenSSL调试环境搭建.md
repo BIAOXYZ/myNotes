@@ -390,12 +390,28 @@ OpenSSL 3.0.0-dev xx XXX xxxx
 /etc
 [root@localhost etc]# vi ld.so.conf
 
-ld.so.conf修改前内容：
+- ld.so.conf修改前内容：
+``
 include ld.so.conf.d/*.conf
+``
 
-ld.so.conf修改后内容：
+- ld.so.conf修改后内容：
+``
 include ld.so.conf.d/*.conf
 "/opt/newssl/lib"
+``
+
+- 修改完成后执行一下 ldconfig 更新下共享库的缓存，然后就可以查到版本信息了。
+
+
+//// 注意，曾经在其他简化版系统里碰到过，添加类似上面的带引号的路径报错的问题：
+``
+[root@5c07e71abd5f etc]# ldconfig -v
+ldconfig: Can't stat "/opt/newssl/lib": No such file or directory
+ldconfig: Can't stat /libx32: No such file or directory
+``
+//// 解决办法就是上面往 ld.so.conf 文件里新添加的那行路径不要带引号了。。。
+
 
 [ssluser@localhost bin]$ ./openssl version
 OpenSSL 3.0.0-dev xx XXX xxxx
