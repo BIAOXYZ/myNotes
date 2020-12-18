@@ -288,6 +288,9 @@ origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.g
 
 ```
 
+***后来补充***：Github将会自`2021年8月31日`起停止支持`account/passwords`方式的访问，坑货。。。但是我理解应该还可以用`账户名 + access token`的方式，所以后面会补充一个。
+- Token authentication requirements for Git operations https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
+
 ----------------------------------------------------------------------------------------------------
 
 ### git拉取远程分支
