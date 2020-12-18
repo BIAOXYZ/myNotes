@@ -16,8 +16,9 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 
 # 文章图片类
 
-【今日囧图】路是谁铺的，出来走两步 https://www.acfun.cn/a/ac10650908
-- > ![](https://imgs.aixifan.com/o_1dhbqu8k0120e1ufa1nv21uht11u03c.jpg)
+千万不要吓唬小熊猫，否则它会举手投降 https://www.acfun.cn/a/ac20813465
+- > ![](https://p3-tt.byteimg.com/origin/pgc-image/1623248557a44a6dbb7eeb57f46c1ed3)
+- > ![](https://p6-tt.byteimg.com/origin/pgc-image/146221c53cd348a6a1c468900f2a6cee)
 
 # 回复图片类
 
