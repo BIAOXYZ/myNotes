@@ -233,6 +233,19 @@ Beginner’s Guide to OpenAI Five at Dota2 https://medium.com/@ngwaifoong92/begi
 
 # Dota2游戏更新类
 
+## 7.28 【2020.12.18】
+
+【更新日志】永雾林渊+7.28游戏性更新 https://mp.weixin.qq.com/s/p99sOGgF52JBhrJdPrqX3A
+
+DOTA2永雾林渊正式上线，新英雄、新玩法、新装备 https://mp.weixin.qq.com/s/7MZ0UOzjMWkGPLi6UrQa4Q
+- > 新英雄：森海飞霞
+- > 新增消耗物品阿哈利姆魔晶，119个英雄皆可使用，使用后增加一个新技能或者升级一个现有技能。
+- > 本次更新共有27件全新物品加入游戏内，包含消耗品、基础物品、升级物品和中立道具，闪烁匕首、支配头盔、EUL的神秘法杖均可再次升级，闪烁匕首更可升级为三种属性，开启全新跳刀2.0时代。
+- > 火焰斗篷
+  * > 提供+5 护甲，+10% 魔法抗性和被动的献祭光环，在400范围内每秒造成45点伤害
+- > 更多更新信息请点击阅读原文移步专题页查看： http://www.dota2.com/mistwoods
+- > 哔哩哔哩专区地址： https://live.bilibili.com/p/eden/area-tagsvisit_id=7v44nfn423c0&areaId=92&parentAreaId=2
+
 ## 7.27
 
 DOTA2 6月29日更新日志：7.27游戏性更新 https://mp.weixin.qq.com/s/2OFls1sUo9Txna_qBP70mA
