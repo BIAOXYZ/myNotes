@@ -2,7 +2,12 @@
 # 官方
 
 std::unordered_map https://www.cplusplus.com/reference/unordered_map/unordered_map/
-- std::unordered_map::find https://www.cplusplus.com/reference/unordered_map/unordered_map/find/
+- Iterators
+  * std::unordered_map::begin https://www.cplusplus.com/reference/unordered_map/unordered_map/begin/
+- Element access
+  * std::unordered_map::operator[] https://www.cplusplus.com/reference/unordered_map/unordered_map/operator[]/
+- Element lookup
+  * std::unordered_map::find https://www.cplusplus.com/reference/unordered_map/unordered_map/find/
 
 hash_map File Reference https://gcc.gnu.org/onlinedocs/gcc-4.6.4/libstdc++/api/a00912.html
 
