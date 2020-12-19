@@ -1,4 +1,6 @@
 
+为啥 TiDB 云服务在国内云厂商没有? https://www.v2ex.com/t/736938
+
 [闲谈]萌新对国产数据库的一些感慨。。 https://www.v2ex.com/t/725612
 
 druid 对数据库密码进行加密的疑惑点。 https://www.v2ex.com/t/713590
