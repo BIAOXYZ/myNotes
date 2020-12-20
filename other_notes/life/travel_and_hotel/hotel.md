@@ -271,3 +271,7 @@ ASCOTT https://www.the-ascott.com/
 
 这里有篇5000字，无水分的长白山攻略 https://mp.weixin.qq.com/s/tCqNrqeyLrZib_fVPUMc6w
 - 北纬41°，在柏悦感受雪国世界 https://mp.weixin.qq.com/s/C9-jNBS8KUa_ak6uaU-ZXg
+
+## 云南
+
+国内最好的酒店集团，柏联必须拥有姓名 https://mp.weixin.qq.com/s/mayx8Xen655uyuMHEOvv5Q
