@@ -1,4 +1,8 @@
 
+Python 代码的保密的一些问题 https://www.v2ex.com/t/737588
+- > 这问题每年都会问几次 /t/624292 你把环境折腾好能跑起来就可行
+  >> Python 代码的加密问题 https://www.v2ex.com/t/624292
+
 粗看 numpy 和 pandas 后的一点困惑 https://www.v2ex.com/t/732958
 - > pandas 计算移动平均线：`df.rolling(15).mean()`，sql：卒。 <br> numpy 计算数组拟合函数：`np.polyfit(x, y, 1)`，excel：卒。 <br> pandas 计算 后 N 天减前 N 天值：`df.diff(N)`，sql：卒。
 - > sql 也可以做移动平均的 https://ubiq.co/database-blog/calculate-moving-average-postgresql/

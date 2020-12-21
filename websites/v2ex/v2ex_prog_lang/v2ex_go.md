@@ -1,4 +1,9 @@
 
+由浅到深，入门 Go 语言 Map 实现原理 https://www.v2ex.com/t/737613
+```console
+文章链接: 由浅到深，入门 Go 语言 Map 实现原理 https://mp.weixin.qq.com/s/sooEw_-Sb_sEII429M8Uiw
+```
+
 golang context 的相关使用 https://www.v2ex.com/t/728389
 ```console
 如题，之前的项目中没有使用 context，高并发的场景下，日志都难以定位问题，
