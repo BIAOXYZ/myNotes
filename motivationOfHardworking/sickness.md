@@ -129,6 +129,8 @@ Linux社区被黑幕后：政治正确会毁了技术吗？ https://www.huxiu.co
 
 ## 消费，借贷
 
+花钱上瘾，那些深陷消费贷的年轻人 https://mp.weixin.qq.com/s/sXaj9ryOX30UaEnLxhiQOg || https://www.myzaker.com/article/5fdf2c31b15ec0614c5f4bab
+
 ### 上海名媛群事件
 - 「上海名媛群」文章中低价拼顶级下午茶、酒店、奢侈品的现象真实吗？反映了哪些问题？ - 知乎 https://www.zhihu.com/question/425222375
   * > 「上海名媛群」文章中低价拼顶级下午茶、酒店、奢侈品的现象真实吗？反映了哪些问题？ - 安雅的回答 - 知乎 https://www.zhihu.com/question/425222375/answer/1520914579
