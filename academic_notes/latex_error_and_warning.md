@@ -1,4 +1,13 @@
 
+# 编码类
+
+inputenc Error: Unicode char \u8: not set up for use with LaTeX https://tex.stackexchange.com/questions/83440/inputenc-error-unicode-char-u8-not-set-up-for-use-with-latex
+- https://tex.stackexchange.com/questions/83440/inputenc-error-unicode-char-u8-not-set-up-for-use-with-latex/83455#83455
+  * > Solution: add in your preamble
+    ```tex
+    \DeclareUnicodeCharacter{00A0}{ }
+    ```
+
 --------------------------------------------------
 
 XeLeTeX字体警告"EU1/SimSun(0)/m/it' undefined的原因 https://blog.csdn.net/robertchenguangzhi/article/details/48978053
