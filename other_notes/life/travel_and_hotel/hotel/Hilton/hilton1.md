@@ -17,7 +17,7 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店�
 希尔顿荣誉客会 - 酒店奖励计划 https://hiltonhonors3.hilton.com/zh_CN/index.html || 【切成英文版跳转到这个链接了】 https://www.hilton.com/en/hilton-honors/
 - 会员礼遇 https://hiltonhonors3.hilton.com/zh_CN/explore/benefits/index.html
 
-## 希尔顿酒店
+## 希尔顿各个酒店官网
 
 西安高新希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-xian-high-tech-zone-XIYCHHI/index.html || WELCOME TO HILTON XI'AN HIGH-TECH ZONE https://hiltonwifi.hiltonapps.com/xiychhi-en-cn/ 【连上高新希尔顿wifi后打开的首页。。。】
 
@@ -36,3 +36,10 @@ Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇�
   >> 一次入住分两个订单的话（如本来入住2晚，下订单延住1晚，变成了2+1），如果不和酒店说明，酒店会把消费都算在后一个订单，房晚数算后一个订单的，但一般积分不会有误，建议一次入住分两个或两个以上订单的，在退房时仔细看下水单上入住和退房的日期，以免漏积，如果时候发现漏积房晚的，请直接联系酒店补登。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 希尔顿酒店攻略
+
+## 沣东希尔顿逸林
+
+- 西北最牛报告帖～一路向‘希’～西北首家～#西安沣东希尔顿逸林酒店# https://www.flyertea.com/article-456039-1.html
+- 那个闲逸树林之中的无冕之王——西安沣东希尔顿逸林酒店 https://www.flyertea.com/thread-3821621-1-1.html
