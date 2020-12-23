@@ -1,6 +1,14 @@
 
 # 脉脉技术类其他
 
+为什么c++没有anaconda这么好用的包管理工具？用python的应该都知道anaconda吧，一键配置所有虚拟环境，安装所有依赖包。为什么C++就要一个一个dependent来安装？对比一下Mac上的homebrew，也可以一键brew install所有的依赖包。 https://maimai.cn/web/gossip_detail?gid=28189773&egid=3cb4e27642ae11ebb454246e96b48088
+- > conan 没用过吗
+- > bazel了解下
+  >> bazel太复杂了，学那一套东西得好久，曲线有点抖
+  >>> Bazel一直在用 很好用 之前用cmake
+- > xrepo了解一下
+- > vcpkg吧
+
 很多方法只有一行代码，总感觉多此一举。比如student类有个集合属性叫courses，获取学生课程总数就定义了一个方法，这个方法只有一行：return courses.size() 还不如少这一个方法，代码更清晰。 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mjc2MzExOTYsImlhdCI6MTYwMjQ3MzY0M30.O_-dDRNZKT6RmG5BSGPBz8wAA28ii-jgtY2CMQeM2Ac
 - > 如果把courses暴露出去，别人就有机会来操作courses对象，而这样做，只会给你一个只读的size。另外，这个方法未必总是返回courses.size，可能是选修课.size + 必修课.size，最后判空，打log什么的一并都可以做了
 - > courses.clear(), 刺激不
