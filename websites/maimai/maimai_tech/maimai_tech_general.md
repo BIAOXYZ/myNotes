@@ -3,6 +3,7 @@
 
 为什么c++没有anaconda这么好用的包管理工具？用python的应该都知道anaconda吧，一键配置所有虚拟环境，安装所有依赖包。为什么C++就要一个一个dependent来安装？对比一下Mac上的homebrew，也可以一键brew install所有的依赖包。 https://maimai.cn/web/gossip_detail?gid=28189773&egid=3cb4e27642ae11ebb454246e96b48088
 - > conan 没用过吗
+  >> https://conan.io/ || https://github.com/conan-io/conan
 - > bazel了解下
   >> bazel太复杂了，学那一套东西得好久，曲线有点抖
   >>> Bazel一直在用 很好用 之前用cmake

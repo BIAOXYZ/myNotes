@@ -47,6 +47,8 @@
 
 # from other websites
 
+我在NGA目睹了虎鲸被座头鲸“上勾拳”揍飞的全过程 https://new.qq.com/omn/20201130/20201130A0GQT300.html
+
 我要买GTR！ http://www.sohu.com/a/245219888_100241327
 > ![](http://5b0988e595225.cdn.sohucs.com/images/20180804/5204b34fef2540d1af572da8ccc24816.jpeg)
 
