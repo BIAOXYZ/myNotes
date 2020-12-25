@@ -1,4 +1,39 @@
 
+如何在 list 内通过条件表达式来决定一个值是否存到 list 内？ https://www.v2ex.com/t/738653
+```console
+当a为True时展示出来，为False时不展示，想学习pythonion（这个词咋写的不会😂）的写法，大概如下，
+但a是True会报错，如何改一下呢？
+```
+- > 个人实战：
+  ```py
+  a=None
+  mylist = [1,2,*(a if a else []),4]
+  print(mylist)
+  
+  a=1
+  mylist = [1,2,*(a if a else []),4]
+  print(mylist)
+  --------------------------------------------------
+  [1, 2, 4]
+  Traceback (most recent call last):
+    File "main.py", line 6, in <module>
+      mylist = [1,2,*(a if a else []),4]
+  TypeError: 'int' object is not iterable
+  ```
+  ```py
+  a=None
+  mylist = [1,2,*([a] if a else []),4]
+  print(mylist)
+  
+  a=1
+  mylist = [1,2,*([a] if a else []),4]
+  print(mylist)
+  --------------------------------------------------
+  [1, 2, 4]
+  [1, 2, 1, 4]
+  ```
+  >> 另外，这个语法貌似只有python3下才行，我开始用python2试，都过不去。会在星号的位置提示`SyntaxError: invalid syntax`。
+
 Python 代码的保密的一些问题 https://www.v2ex.com/t/737588
 - > 这问题每年都会问几次 /t/624292 你把环境折腾好能跑起来就可行
   >> Python 代码的加密问题 https://www.v2ex.com/t/624292

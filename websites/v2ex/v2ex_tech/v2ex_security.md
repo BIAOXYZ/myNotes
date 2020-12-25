@@ -1,4 +1,15 @@
 
+一个关于我的同事计算 md5 的问题！ https://www.v2ex.com/t/738468
+- > Java 的是 hex 格式，ios 的是 base64 格式，但是谁能介绍下，安卓的是什么格式？ 32 进制？？
+- > 安卓的可能是把 hmacmd5 当成 md5 用了
+- > 先统一 tohex()把格式整一致了再说 如果还不一致就找个小文件做二进制的 bindiff
+- > 安卓和 IOS 的应该好好查查文档，并且贴个 MD5 的正则验证： `^([a-z0-9]{32})$` 来自 https://regexlib.com/REDetails.aspx?regexp_id=698 <br> 说真的，看到 o 和 u 的时候，已经不知道是啥东西了。HEX 怎么能超过 F <br> 附赠：https://en.wikipedia.org/wiki/MD5
+  >> @ReysC 补一下，正则限定范围应该是：`^[a-f0-9]{32}$` 仅限小写。
+- > 我来唱个反调，Android 和 iOS 端提供的 md5 都真的是 md5，不过 Android 是 32 进制的，iOS 的是 base64 encode 过的 raw data 。
+  >> 没用过 32 进制的 md5，顺道补充知识。日常看到 md5 就默认是 16 进制 HEX 。多谢大佬 @Elethom 说明
+- > md5 结果大多时候都直接用 32 个 16 进制字符表示，java 那样是最常见形式。也有用 16 个字符的比较少见。安卓和 ios 还敢拿出来与你比较，明显水平不够，建议开除。<br> 安卓那个没看懂是什么算法，26 个字符，还有 u 、n 、g 、r……哪位高手给解释下？ios 的看起来像 base64，但我没解析出来，是不是把 md5 的 128bit 给 base64 了？
+- > 一般说的 md5 指的是 hex(md5)，也就是 md5 产生 16 字节数据之后再 16 进制编码产生 32 位字符串，一般还要统一规定大小写，认识这一点就好办了。 <br> 然后空格大概率是 ios 的 base64 字符串出现加号+被后端框架自动解码成空格了，我这边规定加密算法时都会详细说明每一步，比如 hex(md5(aes(userId,md5(password))))，解释每一步并在每一步给个示例供其他端统一参考
+
 微软说的 cross-platform...开发环境一言难尽 https://www.v2ex.com/t/728829
 
 有人用过国密算法吗，它有哪些好处？ https://www.v2ex.com/t/720857
