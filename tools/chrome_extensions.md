@@ -300,8 +300,10 @@ Firefox Nightly + DoH + ESNI: 让网络连接更加安全 - Thinker的文章 - �
 
 # others
 
-Setup VPN
-http://desktopclient.net/gw/index.html#/setupvpn
+小内存机器（<= 8G）的浏览器省内存方法 https://www.v2ex.com/t/738537
+- > 后来发现，Firefox 可以简单在设置里关掉那个使用硬件加速的选项，内存马上就下来了，用上一天都保持在 1G 出头点的样子，并不会随使用时间内存慢慢上来，比 Chrome 也省很多。这个选项下边的内存进程数量我选的 2,这个可能也影响内存但效果没有关掉硬件加速这么夸张。而且关了加速后没觉得速度有明显往慢的变化。注：我用的集成显卡，显卡内存和主存是共用的，也许和这个也有点关系？
+
+Setup VPN http://desktopclient.net/gw/index.html#/setupvpn
 
 # 浏览器新闻类
 

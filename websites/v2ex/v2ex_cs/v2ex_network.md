@@ -1,4 +1,16 @@
 
+Linux 网络路由问题 https://www.v2ex.com/t/738878
+```console
+各位好,请教一个问题,目前这边有台 centos 的服务器. em1 是公网固定 IP,静态配置. 
+em2 是内网 dhcp 自动获取.每次重启服务器之后获取一个新的 IP.
+
+这样每次 dhcp 都会覆盖之后的公网 IP 默认路由信息,我想出局的路由默认走公网.(即 em2 获取的网关不生效),有什么好的办法吗?
+
+暂时想到定时刷一下默认网关.
+```
+- > man 8 dhclient-script 把应用网关的注释掉就行了
+- > 分别在两个配置文件里添加 DEFROUTE=yes/no
+
 这么多年了才发现 dnspod 可以这么玩......恨晚啊 https://www.v2ex.com/t/735423
 
 有没有哪个软件可以提供获取家里网络 ip 的？ https://www.v2ex.com/t/724481
