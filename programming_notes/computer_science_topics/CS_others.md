@@ -13,6 +13,9 @@ u-root https://github.com/u-root/u-root || https://u-root.org/
 xbook2操作系统内核 https://github.com/hzcx998/xbook2
 - > 尽力了3个多月混合内核阶段，我发现微内核一个非常非常非常严重的问题就是效率，性能问题。我也知道我写得代码很烂，但是相比于宏内核的效率，的确差很多。于是，冥思苦想，还是做回宏内核，拥抱小可爱。
 
+proj2-oslabs-by-history -- CS发展历史上的OS Labs https://github.com/oscomp/proj2-oslabs-by-history
+- > 当前大学本科学生做OS实验面临工作量大，实验指导针对性不够强，难以对OS有整体理解等困难。为此，我们希望重新设计面向一般学生的 OS Labs。 这个OS Labs的目的是：“给学生逐步设计实现OS的线索和参考实例，提高学生的OS分析能力和动手能力，强化学生对 OS 的整体观念”。 这个OSLabs的特点是：以CS发展的历史过程为导向，以满足应用需求为基准，实现一系列相对独立的Special OS.
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj
@@ -70,3 +73,6 @@ C in four functions https://github.com/rswier/c4
 
 🚀 fullstack tutorial 2019，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试 https://github.com/frank-lam/fullstack-tutorial
 > https://frank-lam.github.io/fullstack-tutorial/
+
+The System Design Primer https://github.com/donnemartin/system-design-primer
+- 系统设计入门 https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md
