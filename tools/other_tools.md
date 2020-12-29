@@ -52,6 +52,9 @@ BIAOXYZ https://www.gitmemory.com/biaoxyz
 
 Diffchecker https://www.diffchecker.com/diff
 
+Text Compare! - An online diff tool that can find the difference between two text documents. Just paste and compare. https://text-compare.com/
+- https://text-compare.com/send_comparison/
+
 TextCompare.org https://www.textcompare.org/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
