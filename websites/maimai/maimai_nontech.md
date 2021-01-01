@@ -15,6 +15,10 @@
 
 # 脉脉健康
 
+总结2020 1.老爸胃癌晚期走了，也算一种解脱吧 2.离开北京回到了西安，离家近一点 新的开始 3.决定了明年接女朋友回西安 4.工作没什么长进，薪资降了一丢丢，恍恍惚惚像梦的一年 https://maimai.cn/web/gossip_detail?gid=28340077&egid=cf6a96be4b7911eb95fa246e96b48088
+- > 从确诊到离开时间可以透露吗？有个亲戚也是晚期，扩散了，现在在化疗，太痛苦
+  >> 4月确诊已经是扩散，10月离开的，这个病太可怕了，做好心理准备吧，该准备的后事虽然很不愿意提 但也提前有个准备
+
 两个月前检测出hpv高危阳性，现在复查还是阳明，感觉生活暗无天日，怎么办…… https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjYzNDUyMzYsImlhdCI6MTU5MTI0NzAxOX0.PyUgZvQsEW-Wq12EVM39s8sluWQFhJvgcXqdQBbcNGE
 - > 你是女孩子吗？HPV不可怕，听医生的建议好好治疗说不定能治愈，癌变几率不太大。
 - > 别怕，我媳妇之前hpv好几种都是阳性。吃药+锻炼，一年后复查就没了
