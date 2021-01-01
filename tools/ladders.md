@@ -7,6 +7,11 @@
 
 # VPN
 
+SetupVPN http://desktopclient.net/gw/index.html#/ || https://setupvpn.com/download/
+- > 重要的：我们确实有两个版本的桌面客户端，0.4.0版本是用登录和密码登录，而0.5.0及以上的版本只支持authcode。只支持0.5.0及以上版本的注册。
+
+Lantern https://github.com/getlantern/download
+
 Security you can rely on. A name you can trust. https://vpn.mozilla.org/
 - > Available in 6 countries now. More regions coming soon.
   * > We currently offer Mozilla VPN in the US, the UK, Canada, New Zealand, Singapore and Malaysia.
