@@ -1,4 +1,10 @@
 
+如何系统学习数据库？ https://www.v2ex.com/t/741026
+- > 书：Database System Concepts 课程：CMU 15-445
+
+LSM (Log Structured Merge Trees) 牺牲了部分读性能，以换取写入的最大化性能，有没有反过来，牺牲写性能以最大化读性能的存储结构呢？ https://www.v2ex.com/t/741006
+- > RAID1 ？写入时几个磁盘同步写入，读取时如果一个磁盘繁忙，可以从其它磁盘读取。。。
+
 关于 B+树索引的问题 https://www.v2ex.com/t/737599
 
 MySQL B+树的 “孩子个数” 和 “key 的个数” 到底是不是相等的 https://www.v2ex.com/t/719174
