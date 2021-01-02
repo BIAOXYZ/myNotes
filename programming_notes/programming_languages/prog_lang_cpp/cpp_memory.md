@@ -3,7 +3,7 @@
 
 # `malloc/free` V.S. `new/delete`
 
-细说new与malloc的10点区别 https://www.cnblogs.com/qg-whz/p/5140930.html || https://cloud.tencent.com/developer/article/1155150
+细说new与malloc的10点区别 https://www.cnblogs.com/qg-whz/p/5140930.html || https://cloud.tencent.com/developer/article/1155150 || https://blog.csdn.net/linux_ever/article/details/50533149
 - > **3.内存分配失败时的返回值**
   * > new内存分配失败时，会抛出bac_alloc异常，它不会返回NULL；malloc分配内存失败时返回NULL。
   * > 在使用C语言时，我们习惯在malloc分配内存后判断分配是否成功：
