@@ -208,6 +208,8 @@ SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
 
 SQL面试72题 - 丁哥开讲的文章 - 知乎 https://zhuanlan.zhihu.com/p/81731308
 
+52条SQL语句性能优化策略，建议收藏 https://mp.weixin.qq.com/s/1QTZawn0OU2ktE_XGOfpRw
+
 ## SQL Join
 
 left join,right join,inner join,full join之间的区别 https://www.cnblogs.com/lijingran/p/9001302.html
