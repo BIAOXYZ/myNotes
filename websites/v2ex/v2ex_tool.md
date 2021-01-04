@@ -43,6 +43,13 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
+有哪些本地代码库搜索利器 https://www.v2ex.com/t/741243
+- > ripgrep +1. 在简单暴力的方法里面应该算是最快的了。
+- > AnyTXT，可以实现文件内容搜索！
+- > 没必要为了搜点代码再安装一个服务，那真是饶了九曲十八弯了。比 grep 更快，更友好的有 ack 。比 ack 更快的有 ripgrep 。这两个命令行工具，绝对能够满足速度要求。
+- > 谢谢大家，直接在 windows 上装了 ripgrep 了
+- > opengrok 啊
+
 把自己简历做成了 npm 包 https://www.v2ex.com/t/715105
 
 问下大家公司里都用什么工具压测 https://www.v2ex.com/t/664287

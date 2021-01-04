@@ -42,6 +42,9 @@ Vim cheatsheet https://devhints.io/vim
 - > 好像我做这个比你的更丰富点。 https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt
 - > 恕我直言写这些二手文档没意义，你自己总结还可以，放出来给别人看就不对了。这才是史上最全的Vim命令，官方的，中文的。 https://github.com/yianwillis/vimcdoc/releases
 
+2021 年了，你还在用 Vim 吗（一份 vim 导航快捷键） https://www.v2ex.com/t/741463
+- > 原图来自这里： https://quickref.me/vim
+
 ----------------------------------------------------------------------------------------------------
 # 1.general vim commands part:
 ----------------------------------------------------------------------------------------------------
