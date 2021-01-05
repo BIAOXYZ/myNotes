@@ -109,6 +109,7 @@ Mac 上的“终端”键盘快捷键 https://support.apple.com/zh-cn/guide/term
 苹果Mac如何快速显示桌面快捷键及手势 https://jingyan.baidu.com/article/6dad50750fbd22a122e36e44.html
 - > 另外，除了可以用 `command+F3` 来显示桌面以外，我们还可以通过 `Fn+F11` 键来显示桌面。
 - > 用五个手指在触控板上做一个张开的动作，即可显示桌面了。
+- > 如果你觉得Fn+F11二个键位离得太远了，想要更改的话，请在“系统偏好设置”中打开 Mission Control 功能 <br> 在 Mission Control 界面中，点击“显示桌面”下拉列表，可以自己定义一个和 Fn 键配合来显示桌面的按键。比如 Fn+左shift键
 
 ## 普通乘号(是`×`，而不是`✖️`)的输入；特殊符号；表情符号
 
