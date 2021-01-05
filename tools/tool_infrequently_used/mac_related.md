@@ -173,6 +173,13 @@ Mac中Git忽略.DS_Store文件 https://orianna-zzo.github.io/sci-tech/2018-01/ma
 - 解决讨厌的.DS_Store文件（上） https://bingozb.github.io/9.html
 - 解决讨厌的.DS_Store文件（下） https://bingozb.github.io/10.html
 
+## 自带截屏
+
+在 Mac 上拍摄截屏 https://support.apple.com/zh-cn/HT201361
+- > 要拍摄截屏，请同时按住以下三个按键：Shift、Command 和 3。
+- > **如何捕捉屏幕上的某一部分**
+  * > 同时按住以下三个按键：Shift、Command 和 4。
+
 # `#` Mac 其他
 
 使用文件保险箱加密 Mac 上的启动磁盘 https://support.apple.com/zh-cn/HT204837
