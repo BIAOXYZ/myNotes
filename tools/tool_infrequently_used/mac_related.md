@@ -179,6 +179,11 @@ Mac中Git忽略.DS_Store文件 https://orianna-zzo.github.io/sci-tech/2018-01/ma
 - > 要拍摄截屏，请同时按住以下三个按键：Shift、Command 和 3。
 - > **如何捕捉屏幕上的某一部分**
   * > 同时按住以下三个按键：Shift、Command 和 4。
+  
+## 手动锁屏
+
+MacBook Pro 一键锁屏快捷方式 - 笔电的文章 - 知乎 https://zhuanlan.zhihu.com/p/72247613
+- > 方法一：点击屏幕左上角 `苹果` 图标，点击`锁定屏幕`，或者使用快捷键 `Control+Command+Q` 进入锁屏状态
 
 # `#` Mac 其他
 
