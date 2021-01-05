@@ -1,4 +1,8 @@
 
+# 冰箱
+
+直冷式、风冷式、混冷式冰箱对比：哪种更划算？ https://news.mydrivers.com/1/733/733280.htm
+
 # 微波炉
 
 微波炉加热鱿鱼！突然就炸了 https://news.mydrivers.com/1/733/733098.htm
