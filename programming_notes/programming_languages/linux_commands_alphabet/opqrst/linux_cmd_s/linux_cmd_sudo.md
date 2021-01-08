@@ -63,3 +63,7 @@ core:x:1000:
 [root@worker1 ~]# groups core
 core : core adm wheel sudo systemd-journal
 ```
+
+```sh
+补充：`sudo -i` 也能达到同样的效果。
+```
