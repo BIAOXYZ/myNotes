@@ -38,6 +38,8 @@ CPack 入门指南 https://www.v2ex.com/t/673146
 
 # felix021
 
+实战： 150 行 Go 实现高性能加密隧道 https://www.v2ex.com/t/743203
+
 聊聊监控 https://www.v2ex.com/t/718268
 
 又是面试题？对，合并有序序列。 https://www.v2ex.com/t/694829
