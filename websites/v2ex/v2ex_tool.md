@@ -41,6 +41,12 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 - 阿里云体验实验室 教你《快速搭建 Docker 环境》 https://www.v2ex.com/t/702868
   * > 快速搭建Docker环境 https://developer.aliyun.com/adc/scenario/9fd79b8711984e309f20d82bc65a26fa
 
+# 教程类
+
+初一学生自学编程学哪门语言好 https://www.v2ex.com/t/744073
+- > 少废话，上车 https://quickref.me/python
+  >> //notes：后来发现这个网站还有pg的：https://quickref.me/postgres
+
 # 待分类
 
 有哪些本地代码库搜索利器 https://www.v2ex.com/t/741243
