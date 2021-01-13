@@ -49,6 +49,8 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 # Luxury Hotels general
 
+从最高到最野，HA的2021年国内值得期待新酒店名单 https://mp.weixin.qq.com/s/vPQavIFOgAUA0oq4XZi5Tg
+
 揭秘丨即将登陆西安的8大超级酒店，巅峰对决！ https://www.sohu.com/a/290667684_735537 || https://new.qq.com/omn/20190122/20190122A0FQFQ.html
 
 「必读」飞客心目中2020帝都奢华酒店最新排名，瑰丽依旧垫底！ https://mp.weixin.qq.com/s/U0mu4nvabVgfqtMZTBJvsg
