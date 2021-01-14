@@ -263,26 +263,28 @@ http://troubleshooters.com/codecorn/awk/index.htm
 ## 非技术类（or技术性不强类）编程知识
 
 Licenses & Standards https://opensource.org/licenses
-- Popular Licenses
-```
-The following OSI-approved licenses are popular, widely used, or have strong communities:
+- > Popular Licenses
+  ```console
+  The following OSI-approved licenses are popular, widely used, or have strong communities:
+  
+  ▪︎ Apache License 2.0
+  ▪︎ BSD 3-Clause "New" or "Revised" license
+  ▪︎ BSD 2-Clause "Simplified" or "FreeBSD" license
+  ▪︎ GNU General Public License (GPL)
+  ▪︎ GNU Library or "Lesser" General Public License (LGPL)
+  ▪︎ MIT license
+  ▪︎ Mozilla Public License 2.0
+  ▪︎ Common Development and Distribution License
+  ▪︎ Eclipse Public License version 2.0
+  ```
+- > All Approved Licenses
+  ```console
+  Many other licenses are also OSI-approved, but fall into other categories, such as special-purpose licenses, superseded licenses, or retired licenses. Complete lists that include all approved licenses are available:
+    * sorted by name (alphabetical) https://opensource.org/licenses/alphabetical
+    * sorted by category https://opensource.org/licenses/category
+  ```
 
-▪︎ Apache License 2.0
-▪︎ BSD 3-Clause "New" or "Revised" license
-▪︎ BSD 2-Clause "Simplified" or "FreeBSD" license
-▪︎ GNU General Public License (GPL)
-▪︎ GNU Library or "Lesser" General Public License (LGPL)
-▪︎ MIT license
-▪︎ Mozilla Public License 2.0
-▪︎ Common Development and Distribution License
-▪︎ Eclipse Public License version 2.0
-```
-- All Approved Licenses
-```
-Many other licenses are also OSI-approved, but fall into other categories, such as special-purpose licenses, superseded licenses, or retired licenses. Complete lists that include all approved licenses are available:
-  * sorted by name (alphabetical) https://opensource.org/licenses/alphabetical
-  * sorted by category https://opensource.org/licenses/category
-```
+几种开源协议的比较(BSD,Apache,GPL,LGPL,AGPL,MIT) – 整理 http://ewen0930.github.io/2016/11/open-source-licenses/
 
 OSI 认证的开源 License 有哪些？ https://www.ithome.com/0/457/810.htm
 
