@@ -20,6 +20,9 @@ Facebook 宣布停止维护 Nuclide 和 Atom IDE - SNS 社交网络 - cnBeta.COM
 
 # IDEs for C/C++
 
+## CLion
+
+使用Clion优雅的完全远程自动同步和远程调试c++ https://www.cnblogs.com/qiumingcheng/p/11185073.html || https://cloud.tencent.com/developer/article/1406250
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
