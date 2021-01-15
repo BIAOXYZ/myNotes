@@ -15,5 +15,8 @@ PuDB: a console-based visual debugger for Python https://github.com/inducer/pudb
 
 # 其他
 
+Cyberbrain: Python debugging, redefined. https://github.com/laike9m/Cyberbrain
+- > Cyberbrain consists of a Python library and various editor/IDE integrations. Currently it supports VS Code and Gitpod. See our plan on expanding the support.
+
 ApacheCN Python 译文集 https://github.com/apachecn/apachecn-python-zh
 - 七、测试和调试分布式应用 （Distributed Computing with Python） https://github.com/apachecn/apachecn-python-zh/blob/8707a37451/docs/py-dist-comp/8.md || https://py.apachecn.org/#/docs/py-dist-comp/8
