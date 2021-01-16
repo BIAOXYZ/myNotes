@@ -49,6 +49,10 @@
 
 在 Chrome 中清除、启用和管理 Cookie https://support.google.com/chrome/answer/95647
 
+## chrome禁用翻译提示
+
+How to Turn Translation On or Off in Chrome https://www.howtogeek.com/407924/how-to-turn-translation-on-or-off-in-chrome/
+
 ## chrome keyboard shortcuts
 
 工具篇---Chrome浏览器快捷键 https://www.jianshu.com/p/95a6e8ee4819
