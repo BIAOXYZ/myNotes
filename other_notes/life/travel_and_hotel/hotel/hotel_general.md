@@ -49,10 +49,6 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 # Luxury Hotels general
 
-从最高到最野，HA的2021年国内值得期待新酒店名单 https://mp.weixin.qq.com/s/vPQavIFOgAUA0oq4XZi5Tg
-
-揭秘丨即将登陆西安的8大超级酒店，巅峰对决！ https://www.sohu.com/a/290667684_735537 || https://new.qq.com/omn/20190122/20190122A0FQFQ.html
-
 「必读」飞客心目中2020帝都奢华酒店最新排名，瑰丽依旧垫底！ https://mp.weixin.qq.com/s/U0mu4nvabVgfqtMZTBJvsg
 
 【[`*`][:star:]】 要拼就拼最贵的！国内高价酒店 Top 30 https://mp.weixin.qq.com/s/4XiUsroPDTPuF3G3JNrbXg
@@ -65,6 +61,15 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 【[`*`][:star:]】【该回答里靠前的几个图可以方便随时快速查看某个酒店属于哪家酒店集团】 哪家酒店集团的会员积分最有性价比？ - 王豆芽的回答 - 知乎 https://www.zhihu.com/question/49786264/answer/117738602
 
 柏悦，凯悦，君悦同属一个集团，打造理念有何不同？ - 知乎 https://www.zhihu.com/question/22716224
+
+## 新开酒店
+
+全网独家 | 九寨沟乌鲁木齐康莱德、曲江嘉悦里...希尔顿集团将要开业的15家巨头酒店大盘点！（暨Q1促销汇总） https://mp.weixin.qq.com/s/M2t6sJiCHC-wOJwvLYj2Dg 【`逸生活`】
+
+从最高到最野，HA的2021年国内值得期待新酒店名单 https://mp.weixin.qq.com/s/vPQavIFOgAUA0oq4XZi5Tg 【`TravelNews商旅资讯`】
+- > 西安瑞吉、康莱德和艾迪逊  -->  详见《西安要有太古、瑞吉、康莱德和艾迪逊，哪家先开？HA》 https://mp.weixin.qq.com/s/VDe-5_Xp0k9GgfTaXaysyQ
+
+揭秘丨即将登陆西安的8大超级酒店，巅峰对决！ https://www.sohu.com/a/290667684_735537 || https://new.qq.com/omn/20190122/20190122A0FQFQ.html
 
 ## from HotelDig.com
 
