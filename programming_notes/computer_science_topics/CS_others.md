@@ -31,6 +31,8 @@ Write a simple interpreter of C. Inspired by c4 and largely based on it. https:/
 
 ## DB project
 
+Let's make a SQL parser so we can provide a familiar interface to non-sql datastores! https://github.com/mozilla/moz-sql-parser
+
 BusTub https://github.com/cmu-db/bustub || https://15445.courses.cs.cmu.edu/
 - > BusTub is a relational database management system built at Carnegie Mellon University for the Introduction to Database Systems (15-445/645) course. This system was developed for educational purposes and should not be used in production environments.
 
