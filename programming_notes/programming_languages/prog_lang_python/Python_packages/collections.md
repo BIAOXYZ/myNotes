@@ -40,6 +40,27 @@ collections之OrderedDict - 程序员Egon老湿的文章 - 知乎 https://zhuanl
 
 Using the Python defaultdict Type for Handling Missing Keys https://realpython.com/python-defaultdict/
 
+Python中的defaultdict方法 https://segmentfault.com/a/1190000010081065
+
+python中defaultdict用法详解 https://www.jianshu.com/p/bbd258f99fd3
+- > defaultdict接受一个工厂函数作为参数，这个factory_function可以是list、set、str等等，作用是当key不存在时，返回的是工厂函数的默认值，比如list对应[ ]，str对应的是空字符串，set对应set( )，int对应0，如下举例：
+  ```py
+  from collections import defaultdict
+  dict1 = defaultdict(int)
+  dict2 = defaultdict(set)
+  dict3 = defaultdict(str)
+  dict4 = defaultdict(list)
+  print(dict1[1])
+  print(dict2[1])
+  print(dict3[1])
+  print(dict4[1])
+  --------------------------------------------------
+  0
+  set([])
+  
+  []
+  ```
+
 Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
 
 Defaultdict in Python https://www.geeksforgeeks.org/defaultdict-in-python/
