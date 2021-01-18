@@ -26,6 +26,12 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 - 布隆过滤器(Bloom Filter)详解 https://www.cnblogs.com/liyulong1982/p/6013002.html
 - 那些优雅的数据结构(1) : BloomFilter——大规模数据处理利器 http://www.cnblogs.com/heaad/archive/2011/01/02/1924195.html
 
+Bloom filter https://en.wikipedia.org/wiki/Bloom_filter
+
+如何判断一个元素在亿级数据中是否存在?——布隆过滤器 https://www.jianshu.com/p/b7673fe996ac || https://cloud.tencent.com/developer/article/1499751
+
+布隆过滤器(BloomFilter)原理 实现和性能测试 https://yq.aliyun.com/articles/743706
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 哈希表
