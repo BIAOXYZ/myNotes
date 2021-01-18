@@ -16,6 +16,10 @@ CTF Wiki https://github.com/ctf-wiki/ctf-wiki/ || https://ctf-wiki.github.io/ctf
 Advanced Crypto Software Collection (ACSC) http://hms.isi.jhu.edu/acsc/
 - > OpenABE Library
   >> OpenABE https://github.com/zeutro/openabe
+  
+cryptoTools https://github.com/ladnir/cryptoTools   -->  //注意：别和这个搞混了，这个名字准确来说叫`CryptoTools.net`【 ~~https://cryptotools.net/~~ 】，是个网页版密码学算法工具。
+- > CryptoTools is a portable c++14 library containing a collection of tools for building cryptographic protocols. This include asynchronous networking (Boost Asio), several fast primitives such as AES (AES-NI), Blake2, SHA1 (assembly), and eliptic curve crypto (miracl, Relic-Toolkit). There are also several other utilities tailered for implementing protocols.
+- > Thirdparty networking is also supported. See frontend_cryptoTools/tutorial/Network.cpp for an example.
 
 # SSL or TLS attack
 
