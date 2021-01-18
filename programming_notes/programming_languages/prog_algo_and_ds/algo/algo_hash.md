@@ -16,6 +16,16 @@ Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 - Cuckoo hash算法分析——其根本思想和bloom filter一致 增加hash函数来解决碰撞 节省了空间但代价是查找次数增加 https://yq.aliyun.com/articles/398211
 - Cuckoo Hashing的应用及性能优化 https://yq.aliyun.com/articles/563053
 
+Cuckoo hashing https://en.wikipedia.org/wiki/Cuckoo_hashing
+
+(ICALP 2008) History-Independent Cuckoo Hashing https://eprint.iacr.org/2008/358.pdf || https://link.springer.com/chapter/10.1007/978-3-540-70583-3_51
+
+Cuckoo Hashing Visualization http://www.lkozma.net/cuckoo_hashing_visualization/
+
+Cuckoo Hashing – Worst case O(1) Lookup! https://www.geeksforgeeks.org/cuckoo-hashing/
+
+Cuckoo Hashing的应用及性能优化 https://developer.aliyun.com/article/563053
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
@@ -31,6 +41,9 @@ Bloom filter https://en.wikipedia.org/wiki/Bloom_filter
 如何判断一个元素在亿级数据中是否存在?——布隆过滤器 https://www.jianshu.com/p/b7673fe996ac || https://cloud.tencent.com/developer/article/1499751
 
 布隆过滤器(BloomFilter)原理 实现和性能测试 https://yq.aliyun.com/articles/743706
+
+https://github.com/yaluge/bucket-bloom-filter
+- > 一个在线参数计算器： https://hur.st/bloomfilter/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
