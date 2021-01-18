@@ -11,6 +11,12 @@ CTF Wiki https://github.com/ctf-wiki/ctf-wiki/ || https://ctf-wiki.github.io/ctf
 - 格概述 https://wiki.x10sec.org/crypto/asymmetric/lattice/overview/ || https://ctf-wiki.github.io/ctf-wiki/crypto/asymmetric/lattice/overview-zh/
 - 整数域上的离散对数 https://wiki.x10sec.org/crypto/asymmetric/discrete-log/integer_field/
 
+# Library
+
+Advanced Crypto Software Collection (ACSC) http://hms.isi.jhu.edu/acsc/
+- > OpenABE Library
+  >> OpenABE https://github.com/zeutro/openabe
+
 # SSL or TLS attack
 
 TLS 1.2协议现漏洞 近3000网站或受影响 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/817339.htm
