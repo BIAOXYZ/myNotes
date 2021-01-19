@@ -2,6 +2,10 @@
 # `#` Merge–Find Set / Disjoint-set data structure / union–find data structure
 
 并查集 https://zh.wikipedia.org/wiki/%E5%B9%B6%E6%9F%A5%E9%9B%86 || Disjoint-set data structure https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+- > 这是并查集森林的最基础的表示方法，这个方法不会比链表法好，这是因为创建的树可能会严重不平衡；然而，可以用两种办法优化。
+  * > 第一种方法，称为“按秩合并”，即总是将更小的树连接至更大的树上。
+  * > 第二个优化，称为“路径压缩”，是一种在执行“查找”时扁平化树结构的方法。
+  * > 这两种方法的优势互补，同时使用二者的程序每个操作的平均时间仅为`O(\alpha (n))`，`\alpha (n)`是`n=f(x)=A(x,x)`的反函数，其中`A`是急速增加的[阿克曼函数]()。因为`\alpha (n)`是其的反函数，故`\alpha (n)`在`n`十分巨大时还是小于5。因此，平均运行时间是一个极小的常数。 
 
 以前我不懂并查集，直到看了古惑仔... https://leetcode-cn.com/circle/article/IVTJxZ/
 
