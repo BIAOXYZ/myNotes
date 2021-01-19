@@ -1,6 +1,10 @@
 
 # bilibili技术相关
 
+五个对程序员来说极具价值的小众网站 https://www.bilibili.com/video/BV1hK411M7er
+- https://programming-idioms.org/about#about-block-cheatsheets
+  * https://programming-idioms.org/cheatsheet/Python/Cpp
+
 2012年BIU密码学冬令营-05-Cryptanalysis of GGH and NTRU Signatures（中文字幕） https://www.bilibili.com/video/BV1ov41117RB/ || 2012年BIU密码学冬令营-05-GGH和NTRU签名的密码学分析 - 刘巍然-学酥的文章 - 知乎 https://zhuanlan.zhihu.com/p/240134082
 
 B 站有什么不错的编程 up 主/程序员 up 主吗？求推荐 https://www.v2ex.com/t/723217
