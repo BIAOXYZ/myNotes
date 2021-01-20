@@ -63,6 +63,20 @@ Homebrew的正确安装与使用 https://juejin.im/post/5a6d969bf265da3e2366b853
 
 Mac OS下brew的安装和使用 https://www.jianshu.com/p/ab50ea8b13d6
 
+### homebrew安装的各种软件
+
+```sh
+% brew install --cask homebrew/cask/meld
+Updating Homebrew...
+==> Downloading https://github.com/yousseb/meld/releases/download/osx-19/meldmer
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws
+######################################################################## 100.0%
+==> Installing Cask meld
+==> Moving App 'Meld.app' to '/Applications/Meld.app'.
+==> Linking Binary 'meld.wrapper.sh' to '/usr/local/bin/meld'.
+🍺  meld was successfully installed!
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `#` Mac 操作&设置&快捷键
