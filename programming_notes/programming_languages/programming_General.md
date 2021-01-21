@@ -79,6 +79,9 @@ OnlineGDB https://www.onlinegdb.com/
 - The Go Playground https://play.golang.org/
 - The Go Play Space https://goplay.space/
 
+**C/C++类**：
+- http://cpp.sh/ 【这个是 www.cplusplus.com 官方示例里用的】
+
 ## 未用过或不常用Online IDE/Platform
 
 Codiad http://codiad.com/
