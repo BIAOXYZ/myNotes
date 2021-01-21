@@ -17,3 +17,20 @@ C++ std::thread https://www.runoob.com/w3cnote/cpp-std-thread.html
 C++11 并发指南二(std::thread 详解) https://www.cnblogs.com/haippy/p/3236136.html
 
 Multithreading in C++ https://www.geeksforgeeks.org/multithreading-in-cpp/
+- > Once a thread has started we may need to wait for the thread to finish before we can take some action. For instance, if we allocate the task of initializing the GUI of an application to a thread, we need to wait for the thread to finish to ensure that the GUI has loaded properly.
+- > To wait for a thread use the std::thread::join() function. This function makes the current thread wait until the thread identified by *this has finished executing.
+- > For instance, to block the main thread until thread t1 has finished we would do
+  ```cpp
+  int main() 
+  { 
+      // Start thread t1 
+      std::thread t1(callable); 
+  
+      // Wait for t1 to finish 
+      t1.join(); 
+  
+      // t1 has finished do other stuff 
+  
+      ... 
+  } 
+  ```
