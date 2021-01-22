@@ -83,6 +83,7 @@ Mac如何打开身份不明开发者的程序？ - 张珺超的回答 - 知乎 h
 ## mac Anaconda
 
 Installing on macOS https://docs.anaconda.com/anaconda/install/mac-os/
+- > Problems? See troubleshooting. https://docs.anaconda.com/anaconda/user-guide/troubleshooting/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
