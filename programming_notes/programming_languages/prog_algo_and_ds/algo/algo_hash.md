@@ -26,6 +26,8 @@ Cuckoo Hashing – Worst case O(1) Lookup! https://www.geeksforgeeks.org/cuckoo-
 
 Cuckoo Hashing的应用及性能优化 https://developer.aliyun.com/article/563053
 
+Bloom filter or cuckoo hashing? https://stackoverflow.com/questions/867099/bloom-filter-or-cuckoo-hashing
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
@@ -35,9 +37,8 @@ Cuckoo Hashing的应用及性能优化 https://developer.aliyun.com/article/5630
 - 布隆过滤器(Bloom Filter)详解 https://www.cnblogs.com/liyulong1982/p/6013002.html
 - 那些优雅的数据结构(1) : BloomFilter——大规模数据处理利器 http://www.cnblogs.com/heaad/archive/2011/01/02/1924195.html
 
-Bloom Filters by Example https://llimllib.github.io/bloomfilter-tutorial/zh_CN/
-- > A Bloom Filter Tutorial https://github.com/llimllib/bloomfilter-tutorial
-  * > https://github.com/jaybaird/python-bloomfilter
+Bloom Filters by Example https://llimllib.github.io/bloomfilter-tutorial/zh_CN/ || A Bloom Filter Tutorial https://github.com/llimllib/bloomfilter-tutorial
+- > https://github.com/jaybaird/python-bloomfilter
 
 https://github.com/yaluge/bucket-bloom-filter
 - > 一个在线参数计算器： https://hur.st/bloomfilter/
