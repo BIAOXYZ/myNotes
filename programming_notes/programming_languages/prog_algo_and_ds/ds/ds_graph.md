@@ -1,13 +1,7 @@
 
-图论术语 https://zh.wikipedia.org/wiki/%E5%9B%BE%E8%AE%BA%E6%9C%AF%E8%AF%AD || Glossary of graph theory terms https://en.wikipedia.org/wiki/Glossary_of_graph_theory_terms
-
 # 图
 
-Tarjan算法 https://zh.wikipedia.org/wiki/Tarjan%E7%AE%97%E6%B3%95 || Tarjan's strongly connected components algorithm https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm
-
-克鲁斯克尔算法 https://zh.wikipedia.org/wiki/%E5%85%8B%E9%B2%81%E6%96%AF%E5%85%8B%E5%B0%94%E6%BC%94%E7%AE%97%E6%B3%95 || Kruskal's algorithm https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
-
-最小生成树-Prim算法和Kruskal算法 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/30/2615542.html
+图论术语 https://zh.wikipedia.org/wiki/%E5%9B%BE%E8%AE%BA%E6%9C%AF%E8%AF%AD || Glossary of graph theory terms https://en.wikipedia.org/wiki/Glossary_of_graph_theory_terms
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -21,6 +15,20 @@ Tarjan算法 https://zh.wikipedia.org/wiki/Tarjan%E7%AE%97%E6%B3%95 || Tarjan's 
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 最小生成树 (Minimum Spanning Tree)
+
+最小生成树 https://zh.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91 || Minimum spanning tree https://en.wikipedia.org/wiki/Minimum_spanning_tree
+- > Prim算法的每一步都会为一棵生长中的树添加一条边，该树最开始只有一个顶点，然后会添加 `V-1` 条边。每次总是添加生长中的树和树中除该生长的树以外的部分形成的切分的具有最小权值的横切边。
+- > 按照边的权重顺序（从小到大）将边加入生成树中，但是若加入该边会与生成树形成环则不加入该边。直到树中含有 `V-1` 条边为止。这些边组成的就是该图的最小生成树。
+
+普里姆算法 https://zh.wikipedia.org/wiki/%E6%99%AE%E6%9E%97%E5%A7%86%E7%AE%97%E6%B3%95 || Prim's algorithm https://en.wikipedia.org/wiki/Prim%27s_algorithm
+
+克鲁斯克尔算法 https://zh.wikipedia.org/wiki/%E5%85%8B%E9%B2%81%E6%96%AF%E5%85%8B%E5%B0%94%E6%BC%94%E7%AE%97%E6%B3%95 || Kruskal's algorithm https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+
+最小生成树-Prim算法和Kruskal算法 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/30/2615542.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 拓扑排序
 
 Topological sorting https://en.wikipedia.org/wiki/Topological_sorting || 拓扑排序 https://zh.wikipedia.org/wiki/%E6%8B%93%E6%92%B2%E6%8E%92%E5%BA%8F
@@ -28,6 +36,8 @@ Topological sorting https://en.wikipedia.org/wiki/Topological_sorting || 拓扑�
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Tarjan算法
+
+Tarjan算法 https://zh.wikipedia.org/wiki/Tarjan%E7%AE%97%E6%B3%95 || Tarjan's strongly connected components algorithm https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm
 
 60 分钟搞定图论中的 Tarjan 算法（一） - 力扣（LeetCode）的文章 - 知乎 https://zhuanlan.zhihu.com/p/101923309
 
