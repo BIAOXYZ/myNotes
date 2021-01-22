@@ -1,4 +1,6 @@
 
+"a == b" 与"id(a) == id(b)"的本质区别 https://www.v2ex.com/t/747425
+
 如何在 list 内通过条件表达式来决定一个值是否存到 list 内？ https://www.v2ex.com/t/738653
 ```console
 当a为True时展示出来，为False时不展示，想学习pythonion（这个词咋写的不会😂）的写法，大概如下，
