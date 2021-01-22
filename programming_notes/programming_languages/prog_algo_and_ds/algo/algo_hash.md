@@ -30,20 +30,29 @@ Cuckoo Hashing的应用及性能优化 https://developer.aliyun.com/article/5630
 
 # [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
 
-- Bloom Filters by Example https://llimllib.github.io/bloomfilter-tutorial/zh_CN/
-> A Bloom Filter Tutorial https://github.com/llimllib/bloomfilter-tutorial
+***早期***：
 - 深夜学算法之Bloom Filter：概率游戏 https://www.jianshu.com/p/8193d7dc8348
 - 布隆过滤器(Bloom Filter)详解 https://www.cnblogs.com/liyulong1982/p/6013002.html
 - 那些优雅的数据结构(1) : BloomFilter——大规模数据处理利器 http://www.cnblogs.com/heaad/archive/2011/01/02/1924195.html
 
+Bloom Filters by Example https://llimllib.github.io/bloomfilter-tutorial/zh_CN/
+- > A Bloom Filter Tutorial https://github.com/llimllib/bloomfilter-tutorial
+  * > https://github.com/jaybaird/python-bloomfilter
+
+https://github.com/yaluge/bucket-bloom-filter
+- > 一个在线参数计算器： https://hur.st/bloomfilter/
+
 Bloom filter https://en.wikipedia.org/wiki/Bloom_filter
+
+Bloom Filters – Introduction and Implementation https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
 
 如何判断一个元素在亿级数据中是否存在?——布隆过滤器 https://www.jianshu.com/p/b7673fe996ac || https://cloud.tencent.com/developer/article/1499751
 
 布隆过滤器(BloomFilter)原理 实现和性能测试 https://yq.aliyun.com/articles/743706
 
-https://github.com/yaluge/bucket-bloom-filter
-- > 一个在线参数计算器： https://hur.st/bloomfilter/
+Bloom filter inverse? possible? https://stackoverflow.com/questions/40408881/bloom-filter-inverse-possible
+
+Is there any probabilistic data structure that gives false negatives but not false positives? https://stackoverflow.com/questions/13263220/is-there-any-probabilistic-data-structure-that-gives-false-negatives-but-not-fal
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
