@@ -1,4 +1,6 @@
 
+图论术语 https://zh.wikipedia.org/wiki/%E5%9B%BE%E8%AE%BA%E6%9C%AF%E8%AF%AD || Glossary of graph theory terms https://en.wikipedia.org/wiki/Glossary_of_graph_theory_terms
+
 # 图
 
 Tarjan算法 https://zh.wikipedia.org/wiki/Tarjan%E7%AE%97%E6%B3%95 || Tarjan's strongly connected components algorithm https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm

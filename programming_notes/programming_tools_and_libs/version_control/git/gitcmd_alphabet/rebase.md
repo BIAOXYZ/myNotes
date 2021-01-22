@@ -349,3 +349,19 @@ cbea428 Initial commit
 [root@lolls-inf hybridapp-operator]# make test
 // 成功，输出就省略了。
 ```
+
+# rebase妙用：利用`rebase -i`彻底摘除某个commit
+
+git删除中间某次提交 https://www.cnblogs.com/qiqi715/p/11540999.html
+
+Git 删除具体某个提交commit的方法 https://www.jianshu.com/p/2fd2467c27bb
+
+## 删除完后github还会有缓存的view，需要联系他们清除。
+
+Please help to remove a commit from Github cached #988968 https://support.github.com/ticket/personal/0/988968
+
+从仓库中删除敏感数据 https://docs.github.com/cn/github/authenticating-to-github/removing-sensitive-data-from-a-repository || Removing sensitive data from a repository
+https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository
+- > You can't do anything about existing clones or forks of your repository, but you can permanently remove cached views and references to the sensitive data in pull requests on GitHub by contacting GitHub Support or GitHub Premium Support.
+
+创建个人访问令牌 https://docs.github.com/cn/github/authenticating-to-github/creating-a-personal-access-token

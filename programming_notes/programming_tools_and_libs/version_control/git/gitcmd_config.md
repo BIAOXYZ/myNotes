@@ -468,3 +468,8 @@ Go填坑之将Private仓库用作module依赖 https://segmentfault.com/a/1190000
 go get results in 'terminal prompts disabled' error for github private repo https://stackoverflow.com/questions/32232655/go-get-results-in-terminal-prompts-disabled-error-for-github-private-repo
 
 一招 git clone 加速 https://juejin.im/post/5cfe66406fb9a07edb393c56
+
+## `git config pull.ff only`
+
+How to deal with this git warning? “Pulling without specifying how to reconcile divergent branches is discouraged” https://stackoverflow.com/questions/62653114/how-to-deal-with-this-git-warning-pulling-without-specifying-how-to-reconcile
+>> notes：应该是因为我是https方式clone了仓库，然后push的时候用了 `用户名+token` 的方式。导致pull代码的时候每次都提示。其实不改估计也没啥，但是还是改一下吧。
