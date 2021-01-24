@@ -85,6 +85,11 @@ Mac如何打开身份不明开发者的程序？ - 张珺超的回答 - 知乎 h
 Installing on macOS https://docs.anaconda.com/anaconda/install/mac-os/
 - > Problems? See troubleshooting. https://docs.anaconda.com/anaconda/user-guide/troubleshooting/
 
+## mac 剪贴板增强
+
+Mac 上哪款剪贴板增强软件最好用？ - 绚丽也尘埃的回答 - 知乎 https://www.zhihu.com/question/30372510/answer/268342922
+- > 我之前一直使用ClipMenu：https://github.com/naotaka/ClipMenu/issues/21，作者是一个日本人，感觉非常好用。 但是目前这个项目貌似停止开发了，老版本也不好下载了。 貌似有另外一个日本人接手了，基于ClipMenu做了一个Clipy：https://github.com/Clipy/Clipy。 ClipMenu和Clipy都是免费的，支持文字和图片的复制，功能上已经非常强大了，大家不用花钱买别的啦。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `#` Mac 操作&设置&快捷键
@@ -252,6 +257,21 @@ MacBook Pro 一键锁屏快捷方式 - 笔电的文章 - 知乎 https://zhuanlan
 
 在配备触控栏的 MacBook Pro 上使用功能键 https://support.apple.com/zh-cn/HT207240
 - > 您还可以让功能键在您使用特定 App 时自动显示：
+
+## top
+
+linux和macOS下top命令区别 https://juejin.cn/post/6844903793662885901
+```console
+1.linux top
+        P 键 按照cpu使用率排序
+        M 键 按照内存使用率排序
+        l 键 切换显示平均负载和启动时间信息
+        m 键 切换显示内存信息
+        t 键 切换显示进程和cpu状态信息
+        c 键 切换显示命令名称和完成命令行信息 
+2.Mac top
+        先输入 o 键 ,再输入 cpu 则按cpu使用量排序，输入 rsize 按内存使用量排序。
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

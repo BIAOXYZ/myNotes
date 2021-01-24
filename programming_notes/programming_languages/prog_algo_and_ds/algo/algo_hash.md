@@ -7,6 +7,8 @@
 Balls into bins https://en.wikipedia.org/wiki/Balls_into_bins
 > CCS 2017一篇做PSI论文（Practical Multi-party Private Set Intersection from Symmetric-Key Techniques）提到过这个。利用wiki中提到的，每次随机抽2个（或多个），然后选择其中最少的那个bin把ball放进去，可以大大减少load。也就是让hash table少碰撞。
 
+Recommended Probabilistic Filter Library? (Bloom/Cuckoo/etc...) https://www.reddit.com/r/golang/comments/9i22k1/recommended_probabilistic_filter_library/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Cuckoo hashing](https://en.wikipedia.org/wiki/Cuckoo_hashing)
@@ -43,7 +45,8 @@ Bloom Filters by Example https://llimllib.github.io/bloomfilter-tutorial/zh_CN/ 
 https://github.com/yaluge/bucket-bloom-filter
 - > 一个在线参数计算器： https://hur.st/bloomfilter/
 
-Bloom filter https://en.wikipedia.org/wiki/Bloom_filter
+Bloom filter https://en.wikipedia.org/wiki/Bloom_filter || 布隆过滤器 https://zh.wikipedia.org/wiki/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8
+- > 另外，一般情况下不能从布隆过滤器中删除元素。我们很容易想到把位数组变成整数数组，每插入一个元素相应的计数器加1, 这样删除元素时将计数器减掉就可以了。然而要保证安全地删除元素并非如此简单。***首先我们必须保证删除的元素的确在布隆过滤器里面***。这一点单凭这个过滤器是无法保证的。另外计数器回绕也会造成问题。
 
 Bloom Filters – Introduction and Implementation https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
 
