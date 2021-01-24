@@ -29,6 +29,18 @@ d3 = d2.strftime('%Y-%m-%d %H:%M:%S')
 
 # datetime其他
 
+计算Python的代码块或程序的运行时间 https://blog.csdn.net/chichoxian/article/details/53108365
+- > 方法一
+  ```py
+  import datetime
+  start = datetime.datetime.now()
+  run_function():
+      # do something
+  
+  end = datetime.datetime.now()
+  print (end-start)
+  ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 个人实战

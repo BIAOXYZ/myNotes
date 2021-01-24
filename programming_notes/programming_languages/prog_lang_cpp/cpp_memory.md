@@ -243,3 +243,5 @@ Memory allocation strategy for struct and union in C programming language https:
 面试常考，项目易错，长文详解C/C++中的字节对齐 https://mp.weixin.qq.com/s/-sAIWxXy0j0C57B1iWi4zQ
 
 浅谈C++内存管理 - 吉良吉影的文章 - 知乎 https://zhuanlan.zhihu.com/p/51855842
+
+C++ 内存对齐 https://mp.weixin.qq.com/s/evaQkvhGm0c-DIFVnYJghw || http://www.cnblogs.com/TenosDoIt/p/3590491.html
