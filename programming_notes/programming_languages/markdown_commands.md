@@ -148,6 +148,14 @@ Markdown的常用语法(个人总结) https://www.jianshu.com/p/82e730892d42
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+### 其他可以用在Github markdown的html标签
+
+HTML Tags You Can Use on GitHub https://gist.github.com/seanh/13a93686bf4c2cb16e658b3cf96807f2
+- > Subscripts<sub>sub</sub> and superscripts<sup>sup</sup> with `<sub>` and `<sup>`.
+- > Inserted text with `<ins>`: <ins>inserted</ins> and deleted text with `<del>`: <del>deleted</del>. These can both have the `cite` attribute.
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ### markdown图片大小调整：
 
 关于 Markdown 的一些奇技淫巧 https://mazhuang.org/2017/09/01/markdown-odd-skills/
