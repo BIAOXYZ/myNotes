@@ -14,3 +14,9 @@ std::map https://www.cplusplus.com/reference/map/map/
   * > 哈希表查找时候要算hash，这个最坏时间复杂度是`O(key的长度)`；基于比较的有序关联容器通常只使用头几个字符进行比较。
 
 # 其他
+
+## map V.S. unordered_map
+
+map vs unordered_map in C++ https://www.geeksforgeeks.org/map-vs-unordered_map-c/
+
+C++基础-map与unordered_map - 罗晓的文章 - 知乎 https://zhuanlan.zhihu.com/p/48066839

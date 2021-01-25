@@ -64,6 +64,10 @@ tag:协议价 https://flyergeek.wordpress.com/tag/xieyijia/
 
 ## 新开酒店
 
+万豪2021年将在亚太新开近100家酒店，哪些要重点关注？ 召唤神龙，中国集齐马里奥全部奢华酒店品牌 | HA https://mp.weixin.qq.com/s/yWUFZurBY2rBk9DXKPhjKg
+- > 位于西北国金中心，饱览古都风采的西安JW万豪酒店将秉承“JW非凡款待”服务理念，为惬意旅途更添精彩；详见[《全球最大酒店集团“纯正血脉”JW万豪酒店首驻西安，敬请期待......》](https://mp.weixin.qq.com/s/nRSNzQnPIs5OCAiGF5brmA)。
+- > 同样针对年轻宾客打造的Moxy Hotels品牌继台湾台中之后也预计将在上海、南京、深圳、西安等地开设7家新酒店，为更多年轻旅行者演绎不拘一格的品牌风格。
+
 全网独家 | 九寨沟乌鲁木齐康莱德、曲江嘉悦里...希尔顿集团将要开业的15家巨头酒店大盘点！（暨Q1促销汇总） https://mp.weixin.qq.com/s/M2t6sJiCHC-wOJwvLYj2Dg 【`逸生活`】
 
 从最高到最野，HA的2021年国内值得期待新酒店名单 https://mp.weixin.qq.com/s/vPQavIFOgAUA0oq4XZi5Tg 【`TravelNews商旅资讯`】
