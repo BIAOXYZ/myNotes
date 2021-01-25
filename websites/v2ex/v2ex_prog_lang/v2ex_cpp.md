@@ -1,4 +1,6 @@
 
+std::async 的使用总结 https://www.v2ex.com/t/748174
+
 请教一个 C++问题，为什么加了 inline 反而效率降低了 https://www.v2ex.com/t/737087
 
 求教一个 c++语法问题, 这段代码为何只析构一次呢 https://www.v2ex.com/t/728092
