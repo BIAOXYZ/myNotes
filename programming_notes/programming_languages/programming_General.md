@@ -473,6 +473,12 @@ http://zhuanlan.zhihu.com/p/35057341
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 序列化和反序列化
+
+序列化和反序列化 https://www.infoq.cn/article/serialization-and-deserialization
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## JIT(Just-in-time compilation) 即时编译
 
 JIT编译的结果能不能cache起来，下次直接利用呢？ - RednaxelaFX的回答 - 知乎
