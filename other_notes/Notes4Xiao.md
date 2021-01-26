@@ -211,6 +211,14 @@ Open Enclave SDK https://github.com/openenclave/openenclave
 
 # notes
 
+##
+
+Secure Processors Part I: Background, Taxonomy for Secure Enclaves and Intel SGX Architecture https://people.csail.mit.edu/devadas/pubs/part_1.pdf
+
+Securing Data Analytics on SGX With Randomization http://web.cse.ohio-state.edu/~lin.3021/file/ESORICS17.pdf
+
+##
+
 Theory of Computing� - Computer Science 6810 - Cornell University - Spring 2009 http://www.cs.cornell.edu/courses/cs6810/2009sp/
 - Lecture 18: Zero-Knowledge Proofs http://www.cs.cornell.edu/courses/cs6810/2009sp/scribe/lecture18.pdf
 
