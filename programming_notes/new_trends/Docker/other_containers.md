@@ -90,6 +90,14 @@ Kata Containers https://www.binss.me/blog/what-is-kata-containers/
 
 黑客松Demo: Kata 的下一代镜像系统 https://mp.weixin.qq.com/s/qVgdzwCQQ2Jtxx40_CTUlw
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Virtio-fs
+
+Virtio-fs https://virtio-fs.gitlab.io/
+
+Virtio-fs介绍与性能优化 https://kernel.taobao.org/2019/11/virtio-fs-intro-and-perf-optimize/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # gVisor
