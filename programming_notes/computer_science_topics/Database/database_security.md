@@ -1,7 +1,7 @@
 
 Databases vs. encryption https://blog.2ndquadrant.com/databases-vs-encryption/
 
-## CryptDB
+# CryptDB
 
 CryptDB代码分析1-lua与加密库 - CSDN博客
 https://blog.csdn.net/shaoyiwenet/article/details/79377068
@@ -9,12 +9,18 @@ https://blog.csdn.net/shaoyiwenet/article/details/79377068
 Cryptdb学习笔记（0）——初识 - CSDN博客
 https://blog.csdn.net/liuyueyi1995/article/details/54892399
 
-## Database Firewall
+# other secure DBs
+
+Jana: Private Data as a Service https://galois.com/project/jana-private-data-as-a-service/
+
+# Database Firewall
 
 - KalepsoDB: 1st End-to-End Encrypted DBMS https://www.kalepso.com/
 - Imperva https://www.imperva.com/
 - HexaTier http://www.hexatier.com/
 - 安华云安全(其实就是安华金和) http://www.dbscloud.cn/
+
+# Security of Famous DBs
 
 ## DB Security of PostgreSQL
 

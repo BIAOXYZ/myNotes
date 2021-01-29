@@ -62,6 +62,8 @@ PrivateBin is a minimalist, open source online pastebin where the server has zer
 什么是信封加密？ https://www.alibabacloud.com/help/zh/doc-detail/42339.htm
 - > 信封加密是类似数字信封技术的一种加密手段。这种技术将加密数据的数据密钥封入信封中存储、传递、和使用，不再使用主密钥直接加解密数据。
 
+HLS标准加密 https://www.alibabacloud.com/help/zh/doc-detail/68612.htm
+
 ## practical/applied cryptography relevant books
 
 The CryptoParty Handbook https://github.com/cryptoparty/handbook

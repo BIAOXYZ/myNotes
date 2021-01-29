@@ -10,6 +10,12 @@
 发现并协助修复数十处机密计算框架漏洞，百度安全获谷歌、微软致谢 https://mp.weixin.qq.com/s/HQoFMvQ_FXW3Mg09xGM9hQ
 - > 近期，微软与谷歌公司相继对其主导的机密计算开源项目Microsoft Open Enclave SDK (https://openenclave.io/sdk/) 和Google Asylo (https://asylo.dev/) 发布了版本更新。更新中修复了数十处百度安全研究人员上报的漏洞，同时对百度安全公开发表致谢。
 
+# TEE
+
+Trusted execution environment https://en.wikipedia.org/wiki/Trusted_execution_environment
+
+可信计算之二——TPM、TEE、TrustedZone以及Intel SGX - 云舒的文章 - 知乎 https://zhuanlan.zhihu.com/p/20539508
+
 # Intel SGX
 
 Edgeless RT https://github.com/edgelesssys/edgelessrt
@@ -20,6 +26,11 @@ Edgeless RT https://github.com/edgelesssys/edgelessrt
 英特尔公布五项新技术进展，涉及机器编程、量子计算等 https://www.ithome.com/0/522/982.htm
 - > 在软件重要性逐渐突显的今天，开发者依然继续把大量时间用于修复 Bug，而不是用于写代码。事实上，在IT行业每年花费的 1.25 万亿美元软件开发成本中，大约有 50% 是用于 Debug 代码。
 - > 最后，英特尔还公布了在保密计算方面的研究。保密计算旨在保护使用中的数据，例如最新的英特尔软件保护扩展技术，它将保密性、完整性和认证功能整合在一起，像数据保险箱一样，确保使用中的数据安全；一种全新的加密系统——完全同态加密，它允许应用在不暴露数据的情况下，直接对加密数据执行计算操作。
+
+SGX技术的分析和研究 http://www.jos.org.cn/html/2018/9/5594.htm
+
+Intel SGX背景、其他可信计算技术和TEE技术（翻译自Intel SGX Explained） https://blog.csdn.net/clh14281055/article/details/107248252
+- > 强烈推荐《Intel SGX Explained》 作者对Intel SGX进行了详细的教科书般的讲解 <br> Costan V, Devadas S. Intel SGX Explained[J]. IACR Cryptol. ePrint Arch., 2016, 2016(86): 1-118. http://css.csail.mit.edu/6.858/2020/readings/costan-sgx.pdf
 
 ## Occlum (蚂蚁金服)
 
