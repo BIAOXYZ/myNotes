@@ -42,6 +42,8 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 # 腾讯
 
+腾讯云数据库两项内核技术入选国际顶会SIGMOD和ICDE https://mp.weixin.qq.com/s/gXCq90U_9zc5sEdNcdd5WA
+
 20+ 款数据库产品，腾讯云数据库战略升级的背后 https://www.infoq.cn/article/J8qRIIkhKpDq2UwO6DRE
 
 腾讯发布国内首款无服务器数据库：1秒部署，成本降70% https://www.ithome.com/0/481/490.htm
