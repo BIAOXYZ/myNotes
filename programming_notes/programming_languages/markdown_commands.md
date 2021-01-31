@@ -186,7 +186,6 @@ HTML Tags You Can Use on GitHub https://gist.github.com/seanh/13a93686bf4c2cb16e
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-
 ## markdown中数学公式
 
 How to show math equations in general github's markdown(not github's blog) https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog
@@ -194,7 +193,9 @@ How to show math equations in general github's markdown(not github's blog) https
 本来mathjax挺好的解决方案，github偏偏不支持，垃圾！
 ```
 
-### markdown数学公式
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+### markdown数学公式1
 MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.readthedocs.io/en/latest/start.html
 ```
 使用我们的服务器使用MathJax，你需要做两件事情：
@@ -212,6 +213,8 @@ MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.
 如果浏览器原生支持MathML格式，MathJax就会生成用MathML输出，不然的话就用HTML和CSS去显示公式。
 这是最常见的配置，它可以满足大部分人的需求。
 ```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ### markdown数学公式2
 
@@ -242,6 +245,21 @@ MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.
 ![](http://latex.codecogs.com/gif.latex?y=g^x);![](http://latex.codecogs.com/gif.latex?y=g^x)
 
 ![](http://latex.codecogs.com/gif.latex?$y=g^x$)
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+### markdown数学公式3（非latex数学公式，方便复制的）
+
+```console
+常用数学符号
+
+＋ － × ÷ ﹢ ﹣ ± ／ ＝ ≈ ≡ ≠ ∧ ∨ ∑ ∏ ∪ ∩ ∈ ⊙ ⌒ ⊥ ∥ ∠ ∽ ≌ 
+＜ ＞ ≤ ≥ ≮ ≯ ∧ ∨ √ ﹙ ﹚ [ ] ﹛ ﹜ ∫ ∮ ∝ ∞ ⊙ ∏ º ¹ ² ³ ⁴ ⁿ ₁ ₂ 
+₃ ₄ · ∶ ½ ⅓ ⅔ ¼ ¾ ⅛ ⅜ ⅝ ⅞ ∴ ∵ ∷ α β γ δ ε ζ η θ ι κ λ μ ν ξ 
+ο π ρ σ τ υ φ χ ψ ω ％ ‰ ℅ ° ℃ ℉ ′ ″ ￠ 〒 ¤ ○ ㎎ ㎏ ㎜ ㎝ ㎞ 
+㎡ ㎥ ㏄ ㏎ m l m o l ㏕ P a ＄ ￡ ￥ ㏒ ㏑ 壹 贰 叁 肆 伍 陆 柒 捌 
+玖 拾 微 毫 厘 分 百 千 万 亿 兆 吉 
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
