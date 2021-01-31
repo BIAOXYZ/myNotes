@@ -162,3 +162,34 @@ PE （市盈率）是什么意思？ - 知乎 https://www.zhihu.com/question/202
   
 >> //notes：最后只有这条路算是走通了，明天再试试吧：
 >>> `信用卡人工服务进入路径为95588-6-2-9，您拨通95588后，先按#号键进入按键服务。然后依次选择“6信用卡服务”，听到报读“输入信用卡号/身份证号码”时不要操作，等待报读“申请进度查询请按2”后选择2，听到“如您使用的是非身份证请按9”时，请您选择9，后续将进入信用卡人工服务。【工商银行】`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 金融事件
+
+## 2021 -- GameStop
+
+社交散户拉爆大空头，美股上演“人民战争” https://mp.weixin.qq.com/s/XgFGHhdkvkWsW3Y067CLEA || https://www.huxiu.com/article/406923.html
+- > 疫情期间，很多普通股民会在线上逛WallStreetBets这类论坛，以期得到一些交易情报或策略，而注册用户超过两百万的WallStreetBets以敢于和华尔街空头对赌而著称。很多用户以“YOLO”（You only live once，你只活一次）的标语来鼓励自己进入这场希望不大，但值得一试的对赌之中。
+- 回复：
+  * > 莱福特这回真的left了
+  * > GameStop，这家公司的名字本身就是最大的空头。
+
+美国散户敢死队“热血式炒股”威震华尔街 https://www.huxiu.com/article/406984.html
+- > 他们是一帮赌徒，信奉YOLO主义——You only live once，你只活一次。所以干票大的。
+- > Andrew Left也在声明中称，不发表意见不是因为不相信自己的投资理论，而是因为“一群拥有这只股票的愤怒暴徒在过去48小时内犯下了多项罪行”，他将把这些罪行移交给FBI、SEC和其他政府机构。
+- 回复：
+  * > 天子之怒与布衣之怒的区别
+  * > 散户:这不比博人转燃？
+
+太燃了！散户vs华尔街世纪大战，一夜8次熔断，拔网线、禁止交易都用上了！ https://www.bilibili.com/video/BV1nX4y1N7UB/
+- 视频中提到的，在虎嗅网页版随便查了相关的链接：
+  * 散户对战空头：用赚到的钱，还清助学贷款 https://www.huxiu.com/article/406992.html
+  * 华尔街“韭菜反击战”反转，机构券商“拔网线”围剿散户 https://www.huxiu.com/article/407371.html
+  * Chamath：站队散户，打爆华尔街巨鳄的富豪成长史 https://www.huxiu.com/article/407436.html
+
+GME-CNBC对Chamath的完整版采访（中英双语） https://www.bilibili.com/video/BV1Tf4y1r7vZ/
+
+美国“韭菜”抱团大战华尔街！街访纽约路人怎么看？ https://www.bilibili.com/video/BV1ft4y1q7ec/
+
+【半佛】西方韭菜暴打华尔街。 https://www.bilibili.com/video/BV1nA411u7RS/

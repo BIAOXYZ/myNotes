@@ -24,6 +24,8 @@ Online Latex Editor (TeX Live 2016) https://www.tutorialspoint.com/online_latex_
 
 LaTeX Table Generator http://www.tablesgenerator.com/
 
+LATEX Equation Editor https://latexeditor.lagrida.com/
+
 # Latex攻略集合
 
 Documents for Chinese TeX users https://github.com/CTeX-org/ctex-doc
