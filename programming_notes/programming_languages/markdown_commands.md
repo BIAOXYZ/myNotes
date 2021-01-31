@@ -250,16 +250,57 @@ MathJax Chinese Doc 2.0 documentation - 入门指南 http://mathjax-chinese-doc.
 
 ### markdown数学公式3（非latex数学公式，方便复制的）
 
+符号大全 -- 常用数学符号 http://www.fhdq.net/sx/43.html
 ```console
-常用数学符号
-
+常用数学符号：
 ＋ － × ÷ ﹢ ﹣ ± ／ ＝ ≈ ≡ ≠ ∧ ∨ ∑ ∏ ∪ ∩ ∈ ⊙ ⌒ ⊥ ∥ ∠ ∽ ≌ 
 ＜ ＞ ≤ ≥ ≮ ≯ ∧ ∨ √ ﹙ ﹚ [ ] ﹛ ﹜ ∫ ∮ ∝ ∞ ⊙ ∏ º ¹ ² ³ ⁴ ⁿ ₁ ₂ 
 ₃ ₄ · ∶ ½ ⅓ ⅔ ¼ ¾ ⅛ ⅜ ⅝ ⅞ ∴ ∵ ∷ α β γ δ ε ζ η θ ι κ λ μ ν ξ 
 ο π ρ σ τ υ φ χ ψ ω ％ ‰ ℅ ° ℃ ℉ ′ ″ ￠ 〒 ¤ ○ ㎎ ㎏ ㎜ ㎝ ㎞ 
 ㎡ ㎥ ㏄ ㏎ m l m o l ㏕ P a ＄ ￡ ￥ ㏒ ㏑ 壹 贰 叁 肆 伍 陆 柒 捌 
 玖 拾 微 毫 厘 分 百 千 万 亿 兆 吉 
+
+几何符号：
+⊥ ‖ ∠ ⌒ ⊙ ≡ ≌ △
+
+代数符号：
+∝ ∧ ∨ ～ ∫ ≠ ≤ ≥ ≈ ∞ ∶
+
+运算符号：
+× ÷ √ ±
+
+集合符号：
+∪ ∩ ∈ ⊆ ⊂ ⊇ ⊃
+
+特殊符号：
+∑ π（圆周率）
+
+推理符号：
+|a| ⊥ ∽ △ ∠ ∩ ∪ ≠ ≡ ± ≥ ≤ ∈ ← ↑ → ↓ ↖ ↗ ↘ ↙ ‖ ∧ ∨
 ```
+
+Markdown符号：整除、不整除、恰整除、不恰整除 https://blog.csdn.net/ic_esnow/article/details/103847188
+```console
+整除	    \mid	       ∣ 
+不整除	  \nmid	       ∤ 
+恰整除	  \parallel	   ∥ 
+不恰整除	\nparallel	 ∦ 
+```
+
+https://www.douban.com/group/topic/16607780/
+> `『』、「」`
+
+MathJax 支持的 Latex 符号总结(各种箭头符号) https://blog.csdn.net/liyuanbhu/article/details/51473886
+
+勾号、叉号、圈号的收集 https://blog.csdn.net/xuhuan_wh/article/details/8533675
+- > `1、对号、钩号，符号为：✓、✔、☑、（✓）等`
+- > `2、叉号符号为： ✗, ✘, x, ×, X, ✕, ☓, ✖ 、（✗）、☒ 等`
+
+http://daily.zhihu.com/story/2375993
+> 其他符号中，至少有四个可能被混淆用于姓名的居中圆点：「∙」「•」「・」「●」，分别叫做「Bullet Operator」、「Bullet」、「Katakana Middle Dot」、「Black Circle」附图：
+
+https://blog.gtwang.org/windows/word-insert-circle-numbers-tutorial/
+> ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
