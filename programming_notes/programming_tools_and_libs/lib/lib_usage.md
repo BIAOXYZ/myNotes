@@ -383,13 +383,6 @@ https://github.com/golang/crypto
 
 Golang wrapper for Milagro Crypto https://github.com/miracl/gomiracl
 
-
-### gRPC
-
-gRPC – A high-performance, open source universal RPC framework https://grpc.io/
-
-Guides https://grpc.io/docs/guides/
-
 ### gorgonia
 
 Gorgonia is a library that helps facilitate machine learning in Go https://github.com/gorgonia/gorgonia
