@@ -46,6 +46,15 @@ https://github.com/yaluge/bucket-bloom-filter
 - > 一个在线参数计算器： https://hur.st/bloomfilter/
 
 Bloom filter https://en.wikipedia.org/wiki/Bloom_filter || 布隆过滤器 https://zh.wikipedia.org/wiki/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8
+- > Elements can be added to the set, but not removed (though this can be addressed with the counting Bloom filter variant);
+- > More generally, fewer than 10 bits per element are required for a 1% false positive probability, independent of the size or number of elements in the set.
+- > If all are 1, then either the element is in the set, or the bits have by chance been set to 1 during the insertion of other elements, resulting in a false positive. In a simple Bloom filter, there is no way to distinguish between the two cases, but more advanced techniques can address this problem.
+- > Specifically, Dillinger & Manolios (2004b) show the effectiveness of deriving the k indices using enhanced double hashing or triple hashing, variants of [double hashing]() that are effectively simple random number generators seeded with the two or three hash values.
+  >> Double hashing https://en.wikipedia.org/wiki/Double_hashing
+- > Removing an element from this simple Bloom filter is impossible because there is no way to tell which of the k bits it maps to should be cleared. Although setting any one of those k bits to zero suffices to remove the element, it would also remove any other elements that happen to map onto that bit. Since the simple algorithm provides no way to determine whether any other elements have been added that affect the bits for the element to be removed, ***clearing any of the bits would introduce the possibility of false negatives***.
+  >
+  > One-time removal of an element from a Bloom filter can be simulated by having a second Bloom filter that contains items that have been removed. However, false positives in the second filter become false negatives in the composite filter, which may be undesirable. In this approach re-adding a previously removed item is not possible, as one would have to remove it from the "removed" filter.
+- > It is often the case that all the keys are available but are expensive to enumerate (for example, requiring many disk reads). When the false positive rate gets too high, the filter can be regenerated; this should be a relatively rare event.
 - > 另外，一般情况下不能从布隆过滤器中删除元素。我们很容易想到把位数组变成整数数组，每插入一个元素相应的计数器加1, 这样删除元素时将计数器减掉就可以了。然而要保证安全地删除元素并非如此简单。***首先我们必须保证删除的元素的确在布隆过滤器里面***。这一点单凭这个过滤器是无法保证的。另外计数器回绕也会造成问题。
 
 Bloom Filters – Introduction and Implementation https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
