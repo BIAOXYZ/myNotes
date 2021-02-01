@@ -1,4 +1,8 @@
 
+遇到了 Python 的少见语法问题 https://www.v2ex.com/t/750370
+- > 3.5 引入的一个新运算符 `__matmul__`,  https://www.python.org/dev/peps/pep-0465/  https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types 支不支持取决于这个类型有没有实现这运算符，正如其名它是用来进行矩阵乘法的，一般的数据结构不支持也是自然的
+- > a1 @ b1 等价于 a1.dot(b1)，其实我认为这是一个毫无价值、根本没必要引入的新语法。
+
 "a == b" 与"id(a) == id(b)"的本质区别 https://www.v2ex.com/t/747425
 
 如何在 list 内通过条件表达式来决定一个值是否存到 list 内？ https://www.v2ex.com/t/738653
