@@ -80,3 +80,10 @@ Crypto 101, the introductory book on cryptography. https://github.com/crypto101/
 
 Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flags https://panthema.net/2008/0714-cryptography-speedtest-comparison/
 
+# 隐私计算（注：不是机密计算）
+
+隐私计算在金融领域的合规性分析 https://mp.weixin.qq.com/s/lMy7Ak389i19ECaUjVapVQ
+
+视野|安全多方计算简介及隐私保护应用实践 https://mp.weixin.qq.com/s/mYt1zvJ8JAN_gBP1sfISKA
+
+重磅发布|“隐私计算联盟”正式成立 https://mp.weixin.qq.com/s/2ZKl17YOMS3FPuczXxkeUA

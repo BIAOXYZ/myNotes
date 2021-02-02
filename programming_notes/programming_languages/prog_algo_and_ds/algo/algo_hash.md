@@ -55,6 +55,8 @@ Bloom filter https://en.wikipedia.org/wiki/Bloom_filter || 布隆过滤器 https
   >
   > One-time removal of an element from a Bloom filter can be simulated by having a second Bloom filter that contains items that have been removed. However, false positives in the second filter become false negatives in the composite filter, which may be undesirable. In this approach re-adding a previously removed item is not possible, as one would have to remove it from the "removed" filter.
 - > It is often the case that all the keys are available but are expensive to enumerate (for example, requiring many disk reads). When the false positive rate gets too high, the filter can be regenerated; this should be a relatively rare event.
+- > A Bloom filter with a `1%` error and an optimal value of `k`, in contrast, requires only about `9.6` bits per element, regardless of the size of the elements. This advantage comes partly from its compactness, inherited from arrays, and partly from its probabilistic nature. The 1% false-positive rate can be `reduced by a factor of ten` by adding only about `4.8` bits per element.
+- > This means that for a given false positive probability `ε`, the length of a Bloom filter `m` is proportionate to the number of elements being filtered `n` and the required number of hash functions `k` only depends on the target false positive probability `ε`.
 - > 另外，一般情况下不能从布隆过滤器中删除元素。我们很容易想到把位数组变成整数数组，每插入一个元素相应的计数器加1, 这样删除元素时将计数器减掉就可以了。然而要保证安全地删除元素并非如此简单。***首先我们必须保证删除的元素的确在布隆过滤器里面***。这一点单凭这个过滤器是无法保证的。另外计数器回绕也会造成问题。
 
 Bloom Filters – Introduction and Implementation https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
