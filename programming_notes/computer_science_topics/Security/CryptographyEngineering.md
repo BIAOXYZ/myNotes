@@ -21,6 +21,8 @@ cryptoTools https://github.com/ladnir/cryptoTools   -->  //注意：别和这个
 - > CryptoTools is a portable c++14 library containing a collection of tools for building cryptographic protocols. This include asynchronous networking (Boost Asio), several fast primitives such as AES (AES-NI), Blake2, SHA1 (assembly), and eliptic curve crypto (miracl, Relic-Toolkit). There are also several other utilities tailered for implementing protocols.
 - > Thirdparty networking is also supported. See frontend_cryptoTools/tutorial/Network.cpp for an example.
 
+The Apache Milagro Cryptographic Library (AMCL) https://github.com/miracl/amcl || https://milagro.apache.org/docs/amcl-overview.html
+
 # SSL or TLS attack
 
 TLS 1.2协议现漏洞 近3000网站或受影响 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/817339.htm
