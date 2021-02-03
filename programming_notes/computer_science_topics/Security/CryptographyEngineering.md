@@ -80,10 +80,19 @@ Crypto 101, the introductory book on cryptography. https://github.com/crypto101/
 
 Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flags https://panthema.net/2008/0714-cryptography-speedtest-comparison/
 
-# 隐私计算（注：不是机密计算）
+# from wechat
+
+## 隐私计算联盟（注：不是机密计算）
 
 隐私计算在金融领域的合规性分析 https://mp.weixin.qq.com/s/lMy7Ak389i19ECaUjVapVQ
 
 视野|安全多方计算简介及隐私保护应用实践 https://mp.weixin.qq.com/s/mYt1zvJ8JAN_gBP1sfISKA
 
 重磅发布|“隐私计算联盟”正式成立 https://mp.weixin.qq.com/s/2ZKl17YOMS3FPuczXxkeUA
+
+## 虎符智库
+
+刘哲理：实现全密文计算的主流技术与现实挑战 https://mp.weixin.qq.com/s/SeqBcPExVSNA_0pJtsVHDA
+- > **2.3 实用密文计算**
+  * > 很多应用不需要通用的密文计算方案，而是需要满足应用需求的特定密文计算。举例来说，游戏设备厂商希望精准的投放广告，考虑到腾讯有用户玩游戏的记录、京东有用户买游戏设备的记录，厂商希望把广告投放给既玩某一款游戏、又买某一款设备的用户，这样广告的转化率才更高，广告主才愿意花更多的钱。这实际就要求腾讯和京东将同时满足条件的用户选出来，是两个用户集合进行交集计算的问题。
+  * > 在未来一段时间里，面向应用的密文计算会很流行。因为一方数据在特定维度下可以抽象为一个数据集合，密文集合运算作为特定的安全多方计算问题，包括并集、交集、基数大小、交集的势等，在很多领域得到了越来越多的应用。比如说，社交网络两个用户的共同好友，是一个集合求交的问题；保密投票中计算多少人投了某个特定人选，是一个交集求势的问题；多家不同银行联合计算储户的数量，是一个基数大小计算的问题。
