@@ -22,9 +22,13 @@ LaTeX.Online https://latexonline.cc/
 
 Online Latex Editor (TeX Live 2016) https://www.tutorialspoint.com/online_latex_editor.php
 
+### small services
+
 LaTeX Table Generator http://www.tablesgenerator.com/
 
 LATEX Equation Editor https://latexeditor.lagrida.com/
+
+Online LaTeX Equation Editor - create, integrate ... - CodeCogs https://codecogs.com/latex/eqneditor.php
 
 # Latex攻略集合
 
