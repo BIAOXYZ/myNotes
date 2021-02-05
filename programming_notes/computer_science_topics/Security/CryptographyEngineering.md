@@ -86,6 +86,8 @@ Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flag
 
 ## 隐私计算联盟（注：不是机密计算）
 
+视野|安全多方计算详解：背景、技术与协议 https://mp.weixin.qq.com/s/90PP-T7gDiz7HYtVhO3Ofg
+
 隐私计算在金融领域的合规性分析 https://mp.weixin.qq.com/s/lMy7Ak389i19ECaUjVapVQ
 
 视野|安全多方计算简介及隐私保护应用实践 https://mp.weixin.qq.com/s/mYt1zvJ8JAN_gBP1sfISKA

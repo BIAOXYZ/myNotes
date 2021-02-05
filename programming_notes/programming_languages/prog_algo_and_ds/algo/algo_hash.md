@@ -69,6 +69,8 @@ Bloom filter inverse? possible? https://stackoverflow.com/questions/40408881/blo
 
 Is there any probabilistic data structure that gives false negatives but not false positives? https://stackoverflow.com/questions/13263220/is-there-any-probabilistic-data-structure-that-gives-false-negatives-but-not-fal
 
+Spark之BloomFilter有趣的bitwise运算 - 翟士丹的文章 - 知乎 https://zhuanlan.zhihu.com/p/51147258
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 哈希表
