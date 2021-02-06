@@ -22,6 +22,9 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 
 # 回复图片类
 
+快手上市演讲：坚持为用户和社会创造长期价值 https://www.acfun.cn/a/ac23950257
+- > ![](https://imgs.aixifan.com/o_1etoe0enof7lqve1saa1amm12v7.jpg)
+
 我一同事的绿帽故事 https://www.acfun.cn/a/ac12014106
 - > ![](https://imgs.aixifan.com/content/2019_12_15/1576388669381.gif)
 - > ![](https://imgs.aixifan.com/content/2019_12_15/1.5763688066424718E9.jpg)
