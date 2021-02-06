@@ -1,7 +1,11 @@
 
-# 密码学
+# 抗量子密码学
 
 IBM Cloud 声称量子安全密码学是首创 https://www.ithome.com/0/522/857.htm
+
+# 同态加密
+
+微软最新同态加密应用：在Microsoft Edge中保护密码 https://mp.weixin.qq.com/s/iAypTwJm5ESk5ypcq5oLuw
 
 # 差分隐私
 
