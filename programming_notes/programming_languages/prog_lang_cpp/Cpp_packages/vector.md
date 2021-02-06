@@ -1,7 +1,15 @@
 
 # 官方
 
-header <vector> http://www.cplusplus.com/reference/vector/
+`header <vector>` http://www.cplusplus.com/reference/vector/
+
+std::vector http://www.cplusplus.com/reference/vector/vector/
+- **Iterators**:
+  * std::vector::begin http://www.cplusplus.com/reference/vector/vector/begin/
+- **Capacity**:
+  * std::vector::resize http://www.cplusplus.com/reference/vector/vector/resize/
+- **Modifiers**:
+  * std::vector::push_back http://www.cplusplus.com/reference/vector/vector/push_back/
 
 # 其他
 
