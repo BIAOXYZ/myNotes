@@ -34,6 +34,26 @@
 
 # 在线工具/环境
 
+给大佬们推荐个玩具，一秒钟打开在线 VS Code 阅读 GitHub 代码 https://www.v2ex.com/t/752197
+```console
+在 GitHub 上读代码总是觉得不方便，即使有了 Octotree 这种东西也总觉得切来切去太麻烦了，clone 下来有的库超级大还太慢了，
+于是便萌生了搞一个在线 VS Code 读 GitHub 代码的工具（这想法早就有了，一直懒得搞）
+给大佬们推荐一个自己最近无聊做的小玩具，过年放假了方便各位大佬们在 GitHub 上读代码。
+
+这小玩具用法很简单，比如你现在正在看 facebook/react 这个代码库的代码，觉得页面切来切去很麻烦，直接在
+浏览器地址栏 github.com 中的 github 后面，加上个 1s，然后回车就行了，所有的公开代码库都可以。
+
+URL 从 https://github.com/facebook/react 变成了 https://github1s.com/facebook/react
+
+纯前端的哈，直接用的 gh-pages 托管，获取代码是 GitHub REST API，如果遇到了 Rate Limiting 设置个 OAuth Token 就好了，
+没有自己的服务部署，所以这网站服务理论上不会挂。
+
+仓库地址： https://github.com/conwnet/github1s
+
+有啥好的建议欢迎提，反正过年在家也没啥事儿。
+```
+- > 一键开启github1s页面 https://greasyfork.org/zh-CN/scripts/421412
+
 Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com/t/722220
 - Gitako - GitHub file tree https://chrome.google.com/webstore/detail/gitako-github-file-tree/giljefjcheohhamkjphiebfjnlphnokk
 

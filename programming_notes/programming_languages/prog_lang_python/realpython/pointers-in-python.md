@@ -1,7 +1,7 @@
 
 Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
 - > **Objects in Python**
-  * > In Python, everything is an object. For proof, you can open up a REPL and explore using `isinstance()`:
+  * > In Python, everything is an ***`object`***. For proof, you can open up a REPL and explore using `isinstance()`:
   * > This code shows you that everything in Python is indeed an object. Each object contains at least three pieces of data:
     + > ***Reference count***
     + > ***Type***
@@ -56,3 +56,21 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     ```
   * > In this code, you mutate *my_list* and set its first element to 0. However, it maintains the same id even after this assignment. 
 - > **Understanding Variables**
+  * > Python variables are fundamentally different than variables in C or C++. In fact, Python doesn’t even have variables. Python has `names`, not `variables`.
+  * > To help drive home the difference, you can take a look at how variables work in C, what they represent, and then contrast that with how names work in Python.
+- > Variables in C
+  * > Let’s say you had the following code that defines the variable x:
+    ```c
+    int x = 2337;
+    ```
+  * > This one line of code has several, distinct steps when executed:
+    1. Allocate enough memory for an integer
+    2. Assign the value 2337 to that memory location
+    3. Indicate that x points to that value 
+  * > Shown in a simplified view of memory, it might look like this: ![](https://files.realpython.com/media/c_memory1.334fe7c13e82.png)
+  * > If, later in the program, you want to change the value of x, you can do the following:
+    ```c
+    x = 2338;
+    ```
+  * > The above code assigns a new value (2338) to the variable x, thereby *overwriting* the previous value. This means that the variable x is **mutable**. The updated memory layout shows the new value: ![](https://files.realpython.com/media/c_memory2.14d638daf718.png)
+  * > Notice that the ***location of x*** didn’t change, just the value itself. This is a significant point. It means ***that x is the memory location, not just a name for it***.
