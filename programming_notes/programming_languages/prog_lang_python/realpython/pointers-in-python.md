@@ -118,4 +118,28 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
   * > Now in memory, it would look something like this: ![](https://files.realpython.com/media/py_memory2.99bb432c3432.png)
   * > This diagram helps illustrate that ***x points to a reference to an object and doesn’t own the memory space*** as before. It also shows that ***the x = 2338 command is not an assignment, but rather binding the name x to a reference***.
     >
-    > In addition, the previous object (which held the 2337 value) is now sitting in memory with a ref count of 0 and will get cleaned up by the [garbage collector](https://docs.python.org/3/faq/design.html?highlight=garbage%20collect#how-does-python-manage-memory).
+    > In addition, the previous object (which held the 2337 value) is now sitting in memory with a ***ref count of 0*** and will get cleaned up by the [garbage collector](https://docs.python.org/3/faq/design.html?highlight=garbage%20collect#how-does-python-manage-memory).
+  * > You could introduce a new name, y, to the mix as in the C example:
+    ```py
+    >>> y = x
+    ```
+  * > In memory, you would have a new name, but not necessarily a new object: ![](https://files.realpython.com/media/py_memory3_1.ea43471d3bf6.png)
+  * > Now you can see that a new Python object has not been created, just a new name that points to the same object. Also, the object’s refcount has increased by one. You could check for object identity equality to confirm that they are the same:
+    ```py
+    >>> y is x
+    True
+    ```
+  * > The above code indicates that x and y are the same object. Make no mistake though: y is still immutable.
+  * > For example, you could perform addition on y:
+    ```py
+    >>> y += 1
+    >>> y is x
+    False
+    ```
+  * > ***After the addition call, you are returned with a new Python object***. Now, the memory looks like this: ![](https://files.realpython.com/media/py_memory4.0a15e8415a15.png)
+  * > A new object has been created, and y now points to the new object. Interestingly, ***this is the same end-state if you had bound y to 2339 directly***:
+    ```py
+    >>> y = 2339
+    ```
+  * > The above statement results in the same end-memory state as the addition. To recap, ***in Python, you don’t assign variables. Instead, you bind names to references***.
+- > **A Note on Intern Objects in Python**
