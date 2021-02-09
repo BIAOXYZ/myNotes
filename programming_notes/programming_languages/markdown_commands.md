@@ -287,6 +287,8 @@ Markdown符号：整除、不整除、恰整除、不恰整除 https://blog.csdn
 不恰整除	\nparallel	 ∦ 
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 https://www.douban.com/group/topic/16607780/
 > `『』、「」`
 
@@ -301,6 +303,16 @@ http://daily.zhihu.com/story/2375993
 
 https://blog.gtwang.org/windows/word-insert-circle-numbers-tutorial/
 > ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+Html Entities Symbols https://www.htmlsymbol.com/html-entities/
+- https://www.htmlsymbol.com/html-entities/left-floor.html
+- https://www.htmlsymbol.com/html-entities/right-floor.html
+
+Unicode https://www.compart.com/en/unicode/
+Unicode Character “⌊” (U+230A) https://www.compart.com/en/unicode/U+230A
+Unicode Character “⌋” (U+230B) https://www.compart.com/en/unicode/U+230B
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

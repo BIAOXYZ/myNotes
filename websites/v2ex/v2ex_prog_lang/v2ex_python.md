@@ -1,4 +1,18 @@
 
+py 怎么判断是通过 IDE 运行还是 cmd 运行？ https://www.v2ex.com/t/752407
+```console
+py 文件最后有 os.system("pause")，以在 cmd 里执行完毕后保留窗口供观察，并按任意键取消；但在 IDE 里直接运行完毕后，
+IDE 始终处于运行状态，必须得强行关闭。是否有办法加个 IF 判断运行方式来决定是否调用最后一句？
+```
+- > 换个思路 `python 1.py & pause()`
+- > 最后换成 `input_to_break=inupt("pls input to break")` 这样行吗
+- > 直接 input() 就好了，为什么要用 cmd 的 pause ？IDE 出现这种情况可能是因为 IDE 内置的终端实现有问题，如果可以的话建议提交 bug 。
+  >> 因为这种非入侵式的实现可以不用修改代码，想想看如果我有几十个文件要通过这种方式运行，你一个一个地去加 input，跑完了再一个一个删？
+  >>> 但 os.system 不是也要加代码吗？
+  >>>> 这是运行命令后面加 `& pause()` ，不需要在代码里加 os.system()
+  >>>>> 我说的是楼主的方法，既然要修改代码，那直接用 input() 就好了，没必要用 cmd 的 pause 。
+  >>>>>> 不光是 python，其它的命令也可以这样，比如 ipconfig 默认执行之后是一闪而过的，用 `ipconfig & pause()` 能让命令执行完把窗口保留着
+
 遇到了 Python 的少见语法问题 https://www.v2ex.com/t/750370
 - > 3.5 引入的一个新运算符 `__matmul__`,  https://www.python.org/dev/peps/pep-0465/  https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types 支不支持取决于这个类型有没有实现这运算符，正如其名它是用来进行矩阵乘法的，一般的数据结构不支持也是自然的
 - > a1 @ b1 等价于 a1.dot(b1)，其实我认为这是一个毫无价值、根本没必要引入的新语法。
