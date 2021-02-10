@@ -1,4 +1,6 @@
 
+Python 3.7 的内置 breakpoint() 函数如何 backport 到 3.6 中？ https://www.v2ex.com/t/752234
+
 py 怎么判断是通过 IDE 运行还是 cmd 运行？ https://www.v2ex.com/t/752407
 ```console
 py 文件最后有 os.system("pause")，以在 cmd 里执行完毕后保留窗口供观察，并按任意键取消；但在 IDE 里直接运行完毕后，
