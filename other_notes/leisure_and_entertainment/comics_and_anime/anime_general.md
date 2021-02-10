@@ -343,12 +343,16 @@ https://space.bilibili.com/458075/article
 
 国际最萌大会:2019年 https://zh.moegirl.org/%E5%9B%BD%E9%99%85%E6%9C%80%E8%90%8C%E5%A4%A7%E4%BC%9A:2019%E5%B9%B4
 
-### 世萌2020
+### [世萌2020](https://zh.moegirl.org.cn/zh-hans/%E5%9B%BD%E9%99%85%E6%9C%80%E8%90%8C%E5%A4%A7%E4%BC%9A:2020%E5%B9%B4)
+
+国际最萌大会:2020年 https://zh.moegirl.org.cn/zh-hans/%E5%9B%BD%E9%99%85%E6%9C%80%E8%90%8C%E5%A4%A7%E4%BC%9A:2020%E5%B9%B4
 
 【世萌2020】十年了，你们的萌王回来了！！！ https://www.bilibili.com/video/BV1x54y1W7hB
 - 【萌战】世萌简介与投票方法讲解 https://www.bilibili.com/video/BV11h411R7wV
 
 谢谢！您的投票已成功提交。 https://www.internationalsaimoe.com/voting?575ed864-8752-5997-8067-f7cb72adffdb
+
+Thank you! Your ballot has been successfully submitted. https://www.internationalsaimoe.com/voting?695a1987-2721-570e-96c9-e4b469141699
 
 【世萌2020】赛季章程（中文版） https://www.bilibili.com/read/cv6257982
 
