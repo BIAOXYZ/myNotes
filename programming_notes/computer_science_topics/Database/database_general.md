@@ -10,6 +10,8 @@ DB-Engines https://db-engines.com/en/
 - > The DB-Engines Ranking is a list of DBMS ranked by their current popularity. The list is updated monthly.
 - > DB-Engines has been created and is maintained by solid IT.
 
+阿里云数据库内核月报分类整理（定时更新） https://github.com/tangwz/db-monthly
+
 ## Publications by cooperpress https://cooperpress.com/publications/
 
 DB Weekly https://dbweekly.com/

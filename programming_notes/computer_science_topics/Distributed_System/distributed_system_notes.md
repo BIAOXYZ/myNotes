@@ -144,6 +144,10 @@ C implementation of the Raft Consensus protocol, BSD licensed https://github.com
 
 LogCabin is a distributed storage system built on Raft that provides a small amount of highly replicated, consistent storage. It is a reliable place for other distributed systems to store their core metadata and is helpful in solving cluster management issues. https://github.com/logcabin/logcabin
 
+C implementation of the Raft consensus protocol https://github.com/canonical/raft
+
+Raft protocol implementation in C https://github.com/postgrespro/raft
+
 ## SOFAJRaft
 
 SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft

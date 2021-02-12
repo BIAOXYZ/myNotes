@@ -1,4 +1,6 @@
 
+PostgreSQL 为什么不使用 direct IO，而要依赖 os page cahce？ https://www.v2ex.com/t/752942
+
 postgres 用户登录问题 https://www.v2ex.com/t/730231
 - > 解决了。。。。没注意到上面的那个 postgres，一直修改的是下面那个两个 all 的。。。。 
   ```conf
