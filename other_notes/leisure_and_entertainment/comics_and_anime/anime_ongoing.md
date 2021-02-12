@@ -14,6 +14,16 @@
 
 # 凉风找番系列
 
+我竟然上电视了！【阅片无数33】 https://www.bilibili.com/video/BV1T7411H7DA
+- 《新一的真实身份和小兰的眼泪》：日版522集；国内版572集。
+- 《撼动警视厅 1200万人质事件》
+
+动画区的巅峰神作是什么样的？【阅片无数特别篇】 https://www.bilibili.com/video/BV1X7411r7yM
+- 秋山澪与折木奉太郎的爱情故事 // Our Tapes https://www.bilibili.com/video/av345660/
+
+你爱你老婆，我也爱你老婆，那我们不是一边的吗？.jpg【阅片无数32】 https://www.bilibili.com/video/BV157411e72Q
+- 纪录片《追逐阳光的生灵》：`欧鳇寿命极长`。
+
 你女朋友可能是个男的.jpg【阅片无数31】 https://www.bilibili.com/video/BV1qJ411J7pg
 - 《猫和老鼠》：汤姆裤裆锯树是哪一集——老版第一集。
 - GEEK TV 采访名场面：有个死宅买了`东云龙`的《美少女死神还我H之魂～凯撒的烦恼～第二卷》，结果被公开处刑了。
