@@ -14,6 +14,18 @@
 
 # 凉风找番系列
 
+竟然有人在新闻联播里看动画！【阅片无数45】 https://www.bilibili.com/video/BV1rA41147BN
+- 《泰罗奥特曼》48集：奥特曼变了个水桶泼水让怪兽醒酒。。。
+- 《柯南剧场版：贝克街的亡灵》：最强剧场版，很多人都这么认为了。
+
+总觉得这狗哪里不对劲？【阅片无数41】 https://www.bilibili.com/video/BV1Ca4y1t7YG
+- 《危险性游戏》：经典图。男主在看书，妹子上去勾引，男主一把推开。
+
+怎么会有这么沙雕的片？【阅片无数特别篇】 https://www.bilibili.com/video/BV1q7411D7Mw
+- 《极光之恋》：富二代怕女主落水冷，让人往鱼塘里放加热棒把水加热。。。
+
+连 环 暴 击 ！【阅片无数40】 https://www.bilibili.com/video/BV1F741117vi
+
 人不贩我，我不贩人！【阅片无数39】 https://www.bilibili.com/video/BV1R741197XS
 
 群员疯狂开车500多次，群主被判坐牢半年【阅片无数38】 https://www.bilibili.com/video/BV1uE411L7tw
