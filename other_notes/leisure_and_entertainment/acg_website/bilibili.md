@@ -26,6 +26,9 @@ ZeroTier游戏联机详细设置！ https://www.bilibili.com/video/av95442800/
 
 # 其他视频
 
+七步以内，拳快；七步以外，枪快 https://www.bilibili.com/video/av82309550/
+- 史上最快的神枪手Bob Munden连肉眼也看不见的射速！ https://www.bilibili.com/video/BV1Dx411p7ip
+
 【油管无水印高清版本】1990年春晚小品《主角与配角》 陈佩斯＆朱时茂
 - https://www.youtube.com/watch?v=w_o8fOKZKX0 【原版视频】
 - https://www.bilibili.com/video/av37543721/ 【这个是特意又去谷歌搜了下，才搜到这个数字ID的】

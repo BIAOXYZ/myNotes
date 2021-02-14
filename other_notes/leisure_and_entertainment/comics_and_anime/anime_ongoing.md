@@ -14,6 +14,19 @@
 
 # 凉风找番系列
 
+史上最“惨绝人寰”的追逐场面【阅片无数64】 https://www.bilibili.com/video/BV1Dh411R7kQ
+- 《希特勒完蛋了》：俄罗斯拍的抗德神剧，里面有个名场面。德国女军官从裙子下面掏出来一堆武器：手枪、手榴弹、重机枪。。。
+
+谁 是 老 司 机 ？ https://www.bilibili.com/video/BV1af4y1X7vt
+
+猛男决斗，输的变成妹子【阅片无数动漫篇08】 https://www.bilibili.com/video/BV1s5411h7eY
+- 《农活高手》：《灌篮高手》国内的同人版。樱木花道叫`洪毛花`，流川枫叫`刘川丰`。。。
+
+警察：我想起高兴的事情【阅片无数60】 https://www.bilibili.com/video/BV1bi4y1g7zM
+- 《马赛克日本》
+- 看下面新闻标题吧，反正事是真的。。。
+  * 女子进行手术时放屁被激光引燃 造成手术室起火 https://news.sina.cn/gj/2016-11-02/detail-ifxxfysn8628201.d.html
+
 只有老网抑才能听出来的歌【阅片无数动漫篇06】 https://www.bilibili.com/video/BV1MK411T7BG
 >> 上期问题的答案：《大神与七位伙伴》。
 >>> 动画漫画轻小说中，出现过哪些角色客串的情节或剧集？ - 知乎 https://www.zhihu.com/question/37324510/answer/71461091
