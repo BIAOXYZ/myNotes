@@ -37,3 +37,12 @@
 
 鸭子可以当宠物吗？ - 知乎 https://www.zhihu.com/question/31841040
 - 鸭子可以当宠物吗？ - 不可食用的小动物的回答 - 知乎 https://www.zhihu.com/question/31841040/answer/114855649
+
+# 按地方划分
+
+“中国人的老家”河南，到底有多好吃？ https://www.acfun.cn/a/ac24680674
+- 道口烧鸡
+- 开封灌汤小笼包
+- 鲤鱼焙面
+- 浆面条
+- 烩面
