@@ -28,6 +28,15 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 # 名侦探柯南
 
+## 柯南相关工具站
+
+银色子弹 https://www.sbsub.com/
+- 柯南百科 https://www.conanpedia.com/
+  * TV983-984 基德VS高明 被盯上的唇 https://www.conanpedia.com/zh/TV983-984_%E5%9F%BA%E5%BE%B7VS%E9%AB%98%E6%98%8E_%E8%A2%AB%E7%9B%AF%E4%B8%8A%E7%9A%84%E5%94%87
+- 银色子弹柯南数据站 https://www.sbsub.com/data/
+
+## general
+
 - 名侦探柯南所有人物推理能力排行？ - 知乎 https://www.zhihu.com/question/67591073
 - 《名侦探柯南》名侦探推理力排行榜！ http://www.sohu.com/a/217757450_99981139
 
