@@ -34,6 +34,14 @@
 
 # 在线工具/环境
 
+受到启发，实现了在浏览器用 VSCode 编辑并提交变更到 GitHub https://www.v2ex.com/t/754172
+```console
+使用方式
+将链接中的 github 替换为 github-vsc 即可。
+
+例如 github.com/apple/swift -> github-vsc.com/apple/swift
+```
+
 给大佬们推荐个玩具，一秒钟打开在线 VS Code 阅读 GitHub 代码 https://www.v2ex.com/t/752197
 ```console
 在 GitHub 上读代码总是觉得不方便，即使有了 Octotree 这种东西也总觉得切来切去太麻烦了，clone 下来有的库超级大还太慢了，
