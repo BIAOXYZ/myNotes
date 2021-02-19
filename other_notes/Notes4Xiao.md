@@ -213,6 +213,8 @@ Open Enclave SDK https://github.com/openenclave/openenclave
 
 # 反向寻找的论文
 
+(ICDE 2019) ServeDB: Secure, Verifiable, and Efficient Range Queries on Outsourced Database https://ieeexplore.ieee.org/document/8731398 【Bloom Filter】
+
 Epione: Lightweight Contact Tracing with Strong Privacy https://sunblaze-ucb.github.io/privacy/projects/epione.html || https://arxiv.org/abs/2004.13293
 
 Secure Processors Part I: Background, Taxonomy for Secure Enclaves and Intel SGX Architecture https://people.csail.mit.edu/devadas/pubs/part_1.pdf
