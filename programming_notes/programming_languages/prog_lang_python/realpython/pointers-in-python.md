@@ -254,3 +254,98 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
   * > The above code demonstrates that `tuple` is immutable. Therefore, it does not support item assignment. `list` is not the only mutable type. Another common approach to mimicking pointers in Python is to use a `dict`.
   * > Keep in mind, this is only simulates pointer behavior and does not directly map to true pointers in C or C++. That is to say, these operations are more expensive than they would be in C or C++.
 - > Using Python Objects
+  * > The dict option is a great way to emulate pointers in Python, but sometimes it gets tedious to remember the key name you used. This is especially true if you’re using the dictionary in various parts of your application. This is where a custom Python class can really help.
+  * > To build on the last example, assume that you want to track metrics in your application. Creating a class is a great way to abstract the pesky details:
+    ```py
+    class Metrics(object):
+        def __init__(self):
+            self._metrics = {
+                "func_calls": 0,
+                "cat_pictures_served": 0,
+            }
+    ```
+  * > This code defines a Metrics class. This class still uses a dict for holding the actual data, which is in the `_metrics` member variable. This will give you the mutability you need. Now you just need to be able to access these values. One nice way to do this is with properties:
+    ```py
+    class Metrics(object):
+        # ...
+
+        @property
+        def func_calls(self):
+            return self._metrics["func_calls"]
+
+        @property
+        def cat_pictures_served(self):
+            return self._metrics["cat_pictures_served"]
+    ```
+  * > This code makes use of [`@property`](https://docs.python.org/3/library/functions.html#property). If you’re not familiar with `decorators`, you can check out this [Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/). The `@property` decorator here allows you to access *func_calls* and *cat_pictures_served* as if they were attributes:
+    >> realpython_article: 《Primer on Python Decorators》 https://realpython.com/primer-on-python-decorators/
+    ```py
+    >>> metrics = Metrics()
+    >>> metrics.func_calls
+    0
+    >>> metrics.cat_pictures_served
+    0
+    ```
+- > **Real Pointers With `ctypes`**
+  * > Okay, so maybe there are pointers in Python, specifically CPython. Using the builtin `ctypes` module, you can create real C-style pointers in Python. If you are unfamiliar with `ctypes`, then you can take a look at [Extending Python With C Libraries and the “ctypes” Module](https://dbader.org/blog/python-ctypes-tutorial).
+  * > The real reason you would use this is ***if you needed to make a function call to a C library that requires a pointer***. Let’s go back to the `add_one()` C-function from before:
+    ```c
+    void add_one(int *x) {
+        *x += 1;
+    }
+    ```
+  * > Here again, this code is incrementing the value of `x` by one. To use this, first compile it into a `shared object`. Assuming the above file is stored in `add.c`, you could accomplish this with `gcc`:
+    ```sh
+    $ gcc -c -Wall -Werror -fpic add.c
+    $ gcc -shared -o libadd1.so add.o
+    ```
+  * > The first command compiles the C source file into an object called `add.o`. The second command takes that unlinked object file and produces a shared object called `libadd1.so`.
+  * > `libadd1.so` should be in your current directory. You can load it into Python using `ctypes`:
+    ```py
+    >>> import ctypes
+    >>> add_lib = ctypes.CDLL("./libadd1.so")
+    >>> add_lib.add_one
+    <_FuncPtr object at 0x7f9f3b8852a0>
+    ```
+  * > The `ctypes.CDLL` code returns an object that represents the `libadd1` shared object. Because you defined `add_one()` in this shared object, you can access it as if it were any other Python object. Before you call the function though, you should ***specify the `function signature`***. This helps Python ensure that you pass the right type to the function.
+  * > In this case, ***the `function signature` is a pointer to an integer***. `ctypes` will allow you to specify this using the following code:
+    ```py
+    >>> add_one = add_lib.add_one
+    >>> add_one.argtypes = [ctypes.POINTER(ctypes.c_int)]
+    ```
+  * > In this code, you’re setting the `function signature` to ***match what C is expecting***. Now, if you were to try to call this code with the wrong type, then you would get a nice warning instead of undefined behavior:
+    ```py
+    >>> add_one(1)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ctypes.ArgumentError: argument 1: <class 'TypeError'>: \
+    expected LP_c_int instance instead of int
+    ```
+  * > Python throws an error, explaining that `add_one()` wants a pointer instead of just an integer. Luckily, `ctypes` has a way to pass pointers to these functions. First, declare a `C-style integer`:
+    ```py
+    >>> x = ctypes.c_int()
+    >>> x
+    c_int(0)
+    ```
+  * > The above code creates a `C-style integer` `x` with a value of 0. `ctypes` provides the handy `byref()` to allow passing a variable by reference.
+
+# 个人实战
+
+## 原文里的`add_one()`函数直接用普通int变量是不行的。这点和C/C++类似。
+
+```py
+def addone(x):
+    x += 1
+x = 5
+addone(x)
+print x
+
+def addone2(y):
+    y[0] += 1
+y = [5]
+addone2(y)
+print y[0]
+--------------------------------------------------
+5
+6
+```
