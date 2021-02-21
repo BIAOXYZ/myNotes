@@ -143,3 +143,64 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     ```
   * > The above statement results in the same end-memory state as the addition. To recap, ***in Python, you don’t assign variables. Instead, you bind names to references***.
 - > **A Note on Intern Objects in Python**
+  * > Suppose you have the following Python code:
+    ```py
+    >>> x = 1000
+    >>> y = 1000
+    >>> x is y
+    True
+    ```
+  * > As above, `x` and `y` are both `names` that point to the same `Python object`. But ***the Python object that holds the value 1000 is not always guaranteed to have the same memory address***. For example, if you were to add two numbers together to get 1000, you would end up with a different memory address:
+    ```py
+    >>> x = 1000
+    >>> y = 499 + 501
+    >>> x is y
+    False
+    ```
+  * > This time, the line `x is y` returns `False`. If this is confusing, then don’t worry. Here are the steps that occur when this code is executed:
+    > 1. Create Python object(1000)
+    > 2. Assign the name x to that object
+    > 3. Create Python object (499)
+    > 4. Create Python object (501)
+    > 5. Add these two objects together
+    > 6. Create a new Python object (1000)
+    > 7. Assign the name y to that object
+  * > **Technical Note**: The above steps occur only when this code is executed inside a REPL. If you were to take the example above, ***paste it into a file, and run the file***, then you would find that the `x is y` line would return `True`.
+  * > This occurs because compilers are smart. The CPython compiler attempts to make optimizations called [peephole optimizations](https://en.wikipedia.org/wiki/Peephole_optimization), which help save execution steps whenever possible. For detailed information, you can check out [CPython’s peephole optimizer source code](https://github.com/python/cpython/blob/master/Python/peephole.c).
+  * > Isn’t this wasteful? Well, yes it is, but that’s the price you pay for all of the great benefits of Python. You never have to worry about cleaning up these intermediate objects or even need to know that they exist! The joy is that these operations are relatively fast, and you never had to know any of those details until now.
+  * > The core Python developers, in their wisdom, also noticed this waste and decided to make a few optimizations. These optimizations result in behavior that can be surprising to newcomers:
+    ```py
+    >>> x = 20
+    >>> y = 19 + 1
+    >>> x is y
+    True
+    ```
+  * > In this example, you see nearly the same code as before, except this time the result is `True`. This is the result of ***`interned objects`***. ***Python pre-creates a certain subset of objects in memory and keeps them in the global [namespace](https://realpython.com/python-namespaces-scope/) for everyday use***.
+    >> Namespaces and Scope in Python https://realpython.com/python-namespaces-scope/
+  * > Which objects depend on the implementation of Python. CPython 3.7 interns the following:
+    > 1. Integer numbers between -5 and 256
+    > 2. Strings that contain ASCII letters, digits, or underscores only
+  * > The reasoning behind this is that these variables are extremely likely to be used in many programs. By interning these objects, Python prevents memory allocation calls for consistently used objects.
+  * > Strings that are `less than 20 characters and contain ASCII letters, digits, or underscores` will be interned. The reasoning behind this is that these are assumed to be some kind of identity:
+    ```py
+    >>> s1 = "realpython"
+    >>> id(s1)
+    140696485006960
+    >>> s2 = "realpython"
+    >>> id(s2)
+    140696485006960
+    >>> s1 is s2
+    True
+    ```
+  * > Here you can see that `s1` and `s2` both point to the same address in memory. If you were to introduce a non-ASCII letter, digit, or underscore, then you would get a different result:
+    ```py
+    >>> s1 = "Real Python!"
+    >>> s2 = "Real Python!"
+    >>> s1 is s2
+    False
+    ```
+  * > Because this example has an `exclamation mark (!)` in it, these strings are not interned and are different objects in memory.
+  * > **Bonus**: If you really want these objects to reference the same internal object, then you may want to check out `sys.intern()`. One of the use cases for this function is outlined in the documentation:
+    >> Interning strings is useful to gain a little performance on dictionary lookup—if the keys in a dictionary are interned, and the lookup key is interned, the key comparisons (after hashing) can be done by a pointer compare instead of a string compare. ([Source](https://docs.python.org/3/library/sys.html#sys.intern))
+  * > Interned objects are often a source of confusion. Just remember, if you’re ever in doubt, that you can always use `id()` and `is` to determine object equality.
+- > **Simulating Pointers in Python**
