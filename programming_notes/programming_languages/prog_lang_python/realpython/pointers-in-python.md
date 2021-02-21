@@ -254,8 +254,8 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
   * > The above code demonstrates that `tuple` is immutable. Therefore, it does not support item assignment. `list` is not the only mutable type. Another common approach to mimicking pointers in Python is to use a `dict`.
   * > Keep in mind, this is only simulates pointer behavior and does not directly map to true pointers in C or C++. That is to say, these operations are more expensive than they would be in C or C++.
 - > Using Python Objects
-  * > The dict option is a great way to emulate pointers in Python, but sometimes it gets tedious to remember the key name you used. This is especially true if you’re using the dictionary in various parts of your application. This is where a custom Python class can really help.
-  * > To build on the last example, assume that you want to track metrics in your application. Creating a class is a great way to abstract the pesky details:
+  * > The dict option is a great way to emulate pointers in Python, but sometimes it gets tedious to remember the key name you used. This is especially true if you’re using the dictionary in various parts of your application. This is where a custom Python `class` can really help.
+  * > To build on the last example, assume that you want to track metrics in your application. Creating a `class` is a great way to abstract the pesky details:
     ```py
     class Metrics(object):
         def __init__(self):
@@ -264,7 +264,7 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
                 "cat_pictures_served": 0,
             }
     ```
-  * > This code defines a Metrics class. This class still uses a dict for holding the actual data, which is in the `_metrics` member variable. This will give you the mutability you need. Now you just need to be able to access these values. One nice way to do this is with properties:
+  * > This code defines a Metrics class. This `class` still uses a `dict` for holding the actual data, which is in the `_metrics` member variable. This will give you the mutability you need. Now you just need to be able to access these values. One nice way to do this is with properties:
     ```py
     class Metrics(object):
         # ...
@@ -328,6 +328,27 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     c_int(0)
     ```
   * > The above code creates a `C-style integer` `x` with a value of 0. `ctypes` provides the handy `byref()` to allow passing a variable by reference.
+  * > **Note**: The term **by reference** is opposed to passing a variable **by value**.
+    >
+    > When passing by reference, you’re passing the reference to the original variable, and thus modifications will be reflected in the original variable. Passing by value results in a copy of the original variable, and modifications are not reflected in the original.
+    >
+    > For more information on passing by reference in Python, check out [Pass by Reference in Python: Background and Best Practices](https://realpython.com/python-pass-by-reference/).
+    >> realpython_article: 《Pass by Reference in Python: Background and Best Practices》 https://realpython.com/python-pass-by-reference/
+  * > You can use this to call `add_one()`:
+    ```py
+    >>> add_one(ctypes.byref(x))
+    998793640
+    >>> x
+    c_int(1)
+    ```
+  * > Nice! Your integer was incremented by one. Congratulations, you have successfully used ***real pointers*** in Python.
+- > **Conclusion**
+  * > You now have a better understanding of the intersection between Python objects and pointers. Even though some of the distinctions between names and variables seem pedantic, fundamentally understanding these key terms expands your understanding of how Python handles variables.
+  * > You’ve also learned some excellent ways to simulate pointers in Python:
+    > - Utilizing mutable objects as low-overhead pointers
+    > - Creating custom Python objects for ease of use
+    > - Unlocking real pointers with the ctypes module
+  * > These methods allow you to simulate pointers in Python without sacrificing the ***memory safety*** that Python provides.
 
 # 个人实战
 
