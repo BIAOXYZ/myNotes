@@ -35,6 +35,12 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
   * TV983-984 基德VS高明 被盯上的唇 https://www.conanpedia.com/zh/TV983-984_%E5%9F%BA%E5%BE%B7VS%E9%AB%98%E6%98%8E_%E8%A2%AB%E7%9B%AF%E4%B8%8A%E7%9A%84%E5%94%87
 - 银色子弹柯南数据站 https://www.sbsub.com/data/
 
+## 台词
+
+【名侦探柯南】b站最全柯南名台词教学（合集） https://www.bilibili.com/video/BV16K41157jP/ || 日语15秒-柯南-真相只有一个-日语怎么念 https://www.bilibili.com/video/BV1gs411N7mT
+- `真相只有一个 (shi n ji tsu wa i tsu mo hi to tsu)` （"新机次哇一次more黑桃次" / "新机子哇一自摸黑桃子"）
+  * 真相只有一个 （《名侦探柯南》中柯南的一句台词） https://baike.baidu.com/item/%E7%9C%9F%E7%9B%B8%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA/584398
+
 ## general
 
 - 名侦探柯南所有人物推理能力排行？ - 知乎 https://www.zhihu.com/question/67591073
