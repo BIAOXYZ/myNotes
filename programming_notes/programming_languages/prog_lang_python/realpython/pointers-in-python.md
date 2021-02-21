@@ -7,6 +7,7 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     + > ***Type***
     + > ***Value***
   * > The reference count is for memory management. For an in-depth look at the internals of memory management in Python, you can read [Memory Management in Python](https://realpython.com/python-memory-management/).
+    >> realpython_article: 《Memory Management in Python》 https://realpython.com/python-memory-management/
   * > The type is used at the CPython layer to ensure type safety during runtime. Finally, there’s the value, which is the actual value associated with the object.
 - > **Immutable vs Mutable Objects**
   * > As you can see, lots of commonly used primitive types are immutable. You can prove this yourself by writing some Python. You’ll need a couple of tools from the Python standard library:
@@ -166,7 +167,7 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     > 6. Create a new Python object (1000)
     > 7. Assign the name y to that object
   * > **Technical Note**: The above steps occur only when this code is executed inside a REPL. If you were to take the example above, ***paste it into a file, and run the file***, then you would find that the `x is y` line would return `True`.
-  * > This occurs because compilers are smart. The CPython compiler attempts to make optimizations called [peephole optimizations](https://en.wikipedia.org/wiki/Peephole_optimization), which help save execution steps whenever possible. For detailed information, you can check out [CPython’s peephole optimizer source code](https://github.com/python/cpython/blob/master/Python/peephole.c).
+    >> This occurs because compilers are smart. The CPython compiler attempts to make optimizations called [peephole optimizations](https://en.wikipedia.org/wiki/Peephole_optimization), which help save execution steps whenever possible. For detailed information, you can check out [CPython’s peephole optimizer source code](https://github.com/python/cpython/blob/master/Python/peephole.c).
   * > Isn’t this wasteful? Well, yes it is, but that’s the price you pay for all of the great benefits of Python. You never have to worry about cleaning up these intermediate objects or even need to know that they exist! The joy is that these operations are relatively fast, and you never had to know any of those details until now.
   * > The core Python developers, in their wisdom, also noticed this waste and decided to make a few optimizations. These optimizations result in behavior that can be surprising to newcomers:
     ```py
@@ -176,7 +177,7 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     True
     ```
   * > In this example, you see nearly the same code as before, except this time the result is `True`. This is the result of ***`interned objects`***. ***Python pre-creates a certain subset of objects in memory and keeps them in the global [namespace](https://realpython.com/python-namespaces-scope/) for everyday use***.
-    >> Namespaces and Scope in Python https://realpython.com/python-namespaces-scope/
+    >> realpython_article: 《Namespaces and Scope in Python》 https://realpython.com/python-namespaces-scope/
   * > Which objects depend on the implementation of Python. CPython 3.7 interns the following:
     > 1. Integer numbers between -5 and 256
     > 2. Strings that contain ASCII letters, digits, or underscores only
@@ -204,3 +205,52 @@ Pointers in Python: What's the Point? https://realpython.com/pointers-in-python/
     >> Interning strings is useful to gain a little performance on dictionary lookup—if the keys in a dictionary are interned, and the lookup key is interned, the key comparisons (after hashing) can be done by a pointer compare instead of a string compare. ([Source](https://docs.python.org/3/library/sys.html#sys.intern))
   * > Interned objects are often a source of confusion. Just remember, if you’re ever in doubt, that you can always use `id()` and `is` to determine object equality.
 - > **Simulating Pointers in Python**
+  * > Just because pointers in Python don’t exist natively doesn’t mean you can’t get the benefits of using pointers. In fact, there are multiple ways to simulate pointers in Python. You’ll learn two in this section:
+    > - Using mutable types as pointers
+    > - Using custom Python objects
+- > Using Mutable Types as Pointers
+  * > You’ve already learned about mutable types. Because these objects are mutable, you can treat them as if they were pointers to simulate pointer behavior. Suppose you wanted to replicate the following c code:
+    ```c
+    void add_one(int *x) {
+        *x += 1;
+    }
+    ```
+  * > This code takes a pointer to an integer (`*x`) and then increments the value by one. Here is a main function to exercise the code:
+    ```c
+    #include <stdio.h>
+    
+    int main(void) {
+        int y = 2337;
+        printf("y = %d\n", y);
+        add_one(&y);
+        printf("y = %d\n", y);
+        return 0;
+    }
+    ```
+  * > In the above code, you assign 2337 to `y`, print out the current value, increment the value by one, and then print out the modified value. The output of executing this code would be the following:
+    ```console
+    y = 2337
+    y = 2338
+    ```
+  * > One way to replicate this type of behavior in Python is by using a mutable type. Consider using a `list` and modifying the first element:
+    ```py
+    >>> def add_one(x):
+    ...     x[0] += 1
+    ...
+    >>> y = [2337]
+    >>> add_one(y)
+    >>> y[0]
+    2338
+    ```
+  * > Here, `add_one(x)` accesses the first element and increments its value by one. Using a `list` means that the end result appears to have modified the value. So pointers in Python do exist? Well, no. This is only possible because `list` is a mutable type. If you tried to use a `tuple`, you would get an error:
+    ```py
+    >>> z = (2337,)
+    >>> add_one(z)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "<stdin>", line 2, in add_one
+    TypeError: 'tuple' object does not support item assignment
+    ```
+  * > The above code demonstrates that `tuple` is immutable. Therefore, it does not support item assignment. `list` is not the only mutable type. Another common approach to mimicking pointers in Python is to use a `dict`.
+  * > Keep in mind, this is only simulates pointer behavior and does not directly map to true pointers in C or C++. That is to say, these operations are more expensive than they would be in C or C++.
+- > Using Python Objects
