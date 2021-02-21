@@ -66,7 +66,9 @@ A toy JVM in Go https://github.com/zserge/tojvm
 
 Single-file public-domain/open source libraries with minimal dependencies https://github.com/nothings/single_file_libs
 
-A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff. https://github.com/fffaraz/awesome-cpp || http://fffaraz.github.io/awesome-cpp/
+C++ 资源大全中文版 https://github.com/jobbole/awesome-cpp-cn
+- > awesome-cpp 就是 fffaraz 发起维护的 C++ 资源列表，内容包括：标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等。
+  * A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff. https://github.com/fffaraz/awesome-cpp || http://fffaraz.github.io/awesome-cpp/
 
 C in four functions https://github.com/rswier/c4
 

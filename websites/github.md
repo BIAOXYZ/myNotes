@@ -235,5 +235,9 @@ B站回应后台源码泄露事件：为历史版本，已主动防御 https://w
 
 Free Python Games https://github.com/grantjenks/free-python-games
 
+## 买房类
+
 上海购房知识汇总 https://github.com/ayuer/shanghai_house_knowledge
 - > 2020年11月在上海买房经历总结出来的买房购房做的一些功课分享给大家，技术人帮助技术人，希望对大家有所帮助。启发来自这个兄弟17年做的杭州购房分享： https://github.com/houshanren/hangzhou_house_knowledge
+
+北京买房攻略 https://github.com/facert/beijing_house_knowledge
