@@ -1,4 +1,6 @@
 
+STL 源码分析--内存分配 https://www.v2ex.com/t/755950
+
 std::async 的使用总结 https://www.v2ex.com/t/748174
 
 请教一个 C++问题，为什么加了 inline 反而效率降低了 https://www.v2ex.com/t/737087
