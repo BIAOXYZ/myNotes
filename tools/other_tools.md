@@ -15,6 +15,8 @@ Dynatrace vs Honeycomb https://stackshare.io/stackups/dynatrace-vs-honeycomb
 
 Chocolatey vs Scoop.sh https://stackshare.io/stackups/chocolatey-vs-scoop
 
+etcd vs Zookeeper https://stackshare.io/stackups/etcd-vs-zookeeper
+
 ## [G2](https://www.g2.com/)
 
 Compare Azure Log Analytics, Datadog, Fluentd, and Humio https://www.g2.com/compare/azure-log-analytics-vs-datadog-vs-fluentd-vs-humio
