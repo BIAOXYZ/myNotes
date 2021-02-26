@@ -46,8 +46,14 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 # from leetcode
 
+面试必考的「二分算法」系统梳理 https://mp.weixin.qq.com/s/DyRKRl_5bJclR30gxg5SXA
+
 面试必考的基础数据结构梳理（2） https://mp.weixin.qq.com/s/6IuYZs2q29199SXz71nZVg
 
 面试必考的基础数据结构梳理（1） https://mp.weixin.qq.com/s/Ywp3_w1j3nrosneZlqDlyA
+
+刷算法题必备的数学考点汇总（2） https://mp.weixin.qq.com/s/INpy-GVMz7ny4zHcVwLnGw
+
+刷算法题必备的数学考点汇总 https://mp.weixin.qq.com/s/TdvRLCr6bzGT_k0D8Fv4Sg
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
