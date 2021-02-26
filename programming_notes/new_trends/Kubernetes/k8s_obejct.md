@@ -327,6 +327,8 @@ What is the difference between ReplicaSet and ReplicationController? https://sta
 
 Debug Services https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-service/ || 调试 Service https://v1-17.docs.kubernetes.io/zh/docs/tasks/debug-application-cluster/debug-service/
 
+Service 的使用 https://www.qikqiak.com/post/use-service-in-k8s/
+
 ## kubernetes Taints(污点)和Tolerations(容忍)
 
 Taint 和 Toleration https://kubernetes.io/zh/docs/concepts/configuration/taint-and-toleration/

@@ -1,6 +1,10 @@
 
 # 各种playground
 
+https://www.katacoda.com/learn#playgrounds
+- Ubuntu Playground https://www.katacoda.com/courses/ubuntu/playground
+- CentOS Playground https://www.katacoda.com/courses/centos/playground
+
 Vault Playground https://www.katacoda.com/hashicorp/scenarios/vault-playground
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
@@ -8,6 +12,8 @@ Vault Playground https://www.katacoda.com/hashicorp/scenarios/vault-playground
 # 官方课程
 
 Learn Git Version Control using Interactive Browser-Based Scenarios https://www.katacoda.com/courses/git
+
+Launch Consul Cluster using Docker https://www.katacoda.com/courses/consul/launch-docker-cluster
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
