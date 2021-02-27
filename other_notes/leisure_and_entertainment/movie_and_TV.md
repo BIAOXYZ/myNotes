@@ -34,7 +34,17 @@ https://www.juzimi.com/ju/1741097
 
 ## 2021
 
-`“能给大家带来欢乐，就是世上真正的主角” “配角影帝”吴孟达离世 1951.1.2 - 2021.2.27` https://www.bilibili.com/blackboard/activity-wGsgll2b8.html
+【2021年2月27日】吴孟达逝世：
+- bilibili:
+  * `“能给大家带来欢乐，就是世上真正的主角” “配角影帝”吴孟达离世 1951.1.2 - 2021.2.27` https://www.bilibili.com/blackboard/activity-wGsgll2b8.html
+- 虎嗅：
+  * 吴孟达去世：与周星驰一起的日子 https://mp.weixin.qq.com/s/bgHRnERVVgWYc3kD9vM8yw || https://www.huxiu.com/article/347993.html
+  * 吴孟达：港片里最夺目的绿叶 https://www.huxiu.com/article/411357.html
+  * 吴孟达：演员就是骗子，我骗了几代人 https://www.huxiu.com/article/411948.html
+    + > 吴孟达：借这个机会我也感谢她对我的包容。贫贱夫妻肯定是不好过的，虽然钱不是万能的，但没钱很多事情都做不了。现在心态就很简单了，给我大鱼大肉、最好的酒我也不要了，有安乐茶饭吃，能真实地跟身边的人交流，看到他们成长，就够了。我家里还有个老妈妈，希望她能长寿一点。
+- 其他：
+  * 周星驰悼念吴孟达 称还无法接受：黄金搭档无缘再合作 https://news.mydrivers.com/1/742/742273.htm
+  * 香港著名影星吴孟达去世：享年68岁 https://news.mydrivers.com/1/742/742254.htm
 
 ## 2019
 
