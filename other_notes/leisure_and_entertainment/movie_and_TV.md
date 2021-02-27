@@ -32,6 +32,12 @@ https://www.juzimi.com/ju/1741097
 
 # 演员
 
+## 2021
+
+`“能给大家带来欢乐，就是世上真正的主角” “配角影帝”吴孟达离世 1951.1.2 - 2021.2.27` https://www.bilibili.com/blackboard/activity-wGsgll2b8.html
+
+## 2019
+
 李兆基生前曾感叹：我很开心，这么久还没有被人忘记 http://www.sohu.com/a/318361508_114988
 
 《古惑仔》系列去世的8位演员：其中三位才年过半百，令人惋惜！ https://www.bilibili.com/read/cv2980830
