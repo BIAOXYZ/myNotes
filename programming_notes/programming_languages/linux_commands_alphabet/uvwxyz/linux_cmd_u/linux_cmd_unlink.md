@@ -2,7 +2,7 @@
 unlink (Unix) https://en.wikipedia.org/wiki/Unlink_(Unix)
 
 What is the difference between unlink and rm? https://serverfault.com/questions/38816/what-is-the-difference-between-unlink-and-rm
-```
+```console
 Both are a wrapper to the same fundamental function which is an unlink() system call.
 
 To weigh up the differences between the userland utilies.

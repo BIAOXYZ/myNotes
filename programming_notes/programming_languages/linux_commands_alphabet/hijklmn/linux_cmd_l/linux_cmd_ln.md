@@ -13,6 +13,46 @@ Linux ln 命令 https://www.cnblogs.com/sparkdev/p/11275722.html
 
 每天一个linux命令（35）：ln 命令 https://www.cnblogs.com/peida/archive/2012/12/11/2812294.html
 
+如何正确的删除软连接 https://fantiq.github.io/2017/07/06/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%88%A0%E9%99%A4%E8%BD%AF%E8%BF%9E%E6%8E%A5/
+- > 在 linux 系统，软连接相当与在win系统下的快捷方式。但是在 linux 下不正确的删除软连接可能造成灾难。一般删除软连接使用命令 `rm` ，有些使用 `rm -rf` 习惯的人在操作这个的时候会存在很大的危险性。正确删除软连接最安全的方式是使用命令 `unlink`。
+- > 如下举个例子：
+  ```sh
+  # 创建一个文件夹 两个文件 一个软连接
+  ~ mkdir origin
+  ~ touch origin/file1.php
+  ~ touch origin/file2.php
+  ~ ln -s origin/ link
+  # 查看文件
+  ~ ll origin
+  ~ .....	file1.php
+  ~ ..... file2.php
+  ```
+- > 删除软连接的操作
+  ```sh
+  # 以下这样的删除都没问题
+  ~ unlink link
+  ~ rm link
+  ~ rm -r link 	# 这里的参数 r 其实是没有意义的，因为link是一个软连接 不是目录
+  ~ rm -rf link 	# 这里的 rf 同样没有意义，只是rm 命令忽略了这里的参数
+  ~ 
+  ~ 
+  # 这样删除就会造成灾难
+  ~ rm -rf link/
+  # 这个时候你发现软连接并没有删除，但是 origin 目录下的文件是全部没删除了 ==!
+  # 这些罪魁祸首是 参数 f，如果你没有使用f参数 这一切还可以挽回
+  ~ rm link/ 
+  rm: cannot remove `link/': Is a directory
+  # 这里 rm 通过你的参数 link/ 发现是要删除一个目录，这时候需要你添加参数 r 
+  ~ rm -r link/
+  rm: cannot remove `link': Not a directory
+  # 这里你添加了 r 参数，但是并不能找到目录 link/ 因为link并不是一个目录，他是一个软连接，只不过有些shell在补全的时候会将 `/` 补全上去
+  ```
+- > centos系统，如果使用 `rm -rf 软连接/` 的时候会将软连接指定的目录下的文件递归删除，不带提示！！！罪魁祸首有两个：
+  > - rm 的 f 参数
+  > - 软连接后面的 /
+- > 所以正确安全的删除软连接的方式是 `unlink` 软连接，这个时候如果 shell 自动补全后面的 / ，`unlink` 命令会提示你删除不了。
+- > 其次使用 `rm` 删除的时候不要加参数 `f` ，这个时候即使你带上了后面的 / ，`rm` 也会提醒你没有这个目录。
+
 # 个人实战
 
 ### ln
