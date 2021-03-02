@@ -26,6 +26,12 @@
 - > 总结
   * > 以上差不多就是"undefined reference to XXX"的这个问题的常见原因和解决方案了，总结起来就是三点：1.是不是编译器找不到定义了XXX的文件；2.是不是定义了XXX的文件，由于函数修饰的原因里面没有想要的XXX符号; 3.找到了想要的符号，但是该符号是隐藏属性，不能链接使用。如果不确定库里面有没有这个XXX符号，用`nm`找，用`c++filt`可以从修饰后的符号找函数声明。
 
+## 动态库和静态库
+
+g++链接动态库和静态库问题 https://www.jianshu.com/p/fdd516337c76
+
+C++静态库与动态库 https://www.runoob.com/w3cnote/cpp-static-library-and-dynamic-library.html
+
 ## GCC版本升级
 
 CentOS 7 升级gcc/g++编译器 https://www.cnblogs.com/ToBeExpert/p/10297697.html
