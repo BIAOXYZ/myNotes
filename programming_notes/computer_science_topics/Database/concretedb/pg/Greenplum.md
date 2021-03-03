@@ -1,4 +1,6 @@
 
+学习分布式事务一致性？这几个重点别忘划 https://mp.weixin.qq.com/s/OTdLnxaoXqs6xtwxkrSiIQ
+
 Greenplum 6.0： 从 OLAP 到 HTAP https://mp.weixin.qq.com/s/Z1MBsqMBZM0UI8dNAgZaxg
 - > Greenplum 创立于2003年（ https://en.wikipedia.org/wiki/Greenplum ），第一款产品发布于2005年，当时产品名字叫Bizgres，2008年改名为 Greenplum。2015年10月份正式以 Apache 协议开源（ https://github.com/greenplum-db/gpdb )。经过16年的发展，Greenplum 成为全球知名的大规模并行处理（MPP）无共享架构（Shared Nothing）数据库。Greenplum 传统的业务场景为数据仓库、OLAP（OnLine Analytical Processing）和即席（ad-hoc）查询。Gartner 2019年评测报告中 Greenplum 在这一领域位于 Teradata 和 Oracle 之后，世界排名第三。
 - > HTAP 一词最早由 Gartner 于2014年左右 ( https://www.zdnet.com/article/what-is-hybrid-transactionanalytical-processing-htap/ )提出。Forrester 也提出了类似的概念，称为 Translytical 。其主要思想是避免传统OLTP和OLAP分离的架构，而采用混合 OLTP + OLAP 的架构。

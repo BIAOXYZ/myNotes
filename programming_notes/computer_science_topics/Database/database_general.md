@@ -141,6 +141,10 @@ ACID https://en.wikipedia.org/wiki/ACID 【[ACID](https://zh.wikipedia.org/wiki/
 - > Locking vs multiversioning
 - > Distributed transactions
 
+### 分布式事务
+
+七种分布式事务的解决方案，一次讲给你听 https://mp.weixin.qq.com/s/uO3QMkygkEi64rvwDZEQIw
+
 ### 两阶段提交
 
 http://www.jobbole.com/members/hollischuang/
@@ -152,8 +156,9 @@ http://www.hollischuang.com/
 - 分布式系统的BASE理论 http://www.hollischuang.com/archives/672
 - 深入分析事务的隔离级别 http://www.hollischuang.com/archives/943
 
-- 二阶段提交 https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
-- 事务隔离 https://zh.wikipedia.org/wiki/%E4%BA%8B%E5%8B%99%E9%9A%94%E9%9B%A2
+二阶段提交 https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
+
+事务隔离 https://zh.wikipedia.org/wiki/%E4%BA%8B%E5%8B%99%E9%9A%94%E9%9B%A2
 
 ## 并发管理
 
