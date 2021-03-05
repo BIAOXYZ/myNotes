@@ -5,17 +5,11 @@ git-restore - Restore working tree files https://git-scm.com/docs/git-restore
 
 # 参数解析
 
-## `--merges`
+## `--staged`
+>> notes：普通的git restore用于恢复（也就是撤销）工作区的更改。`--staged`则是把暂存区的恢复到工作区。
 
->> 只显示merge commits。
-
-## `--oneline`
-
-## `-p`
-
-## `--reverse`
-
->> 顾名思义，从最早的commit开始，倒着显示。
+## `--source`
+>> notes：这个参数用于恢复某个commit id下的某个文件的内容，方便查看某文件的历史。
 
 # 其他帖子
 
