@@ -23,9 +23,12 @@ lift and shift https://whatis.techtarget.com/definition/lift-and-shift
 
 Service-level objective https://en.wikipedia.org/wiki/Service-level_objective
 
-Service-level agreement https://en.wikipedia.org/wiki/Service-level_agreement
+Service-level agreement https://en.wikipedia.org/wiki/Service-level_agreement || 服务级别协议 https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E7%BA%A7%E5%88%AB%E5%8D%8F%E8%AE%AE
+- > 服务级别协议（英语：service-level agreement，缩写SLA）也称服务等级协议、服务水平协议，是服务提供商与客户之间定义的正式承诺。服务提供商与受服务用户之间具体达成了承诺的服务指标——质量、可用性，责任。SLA最常见的组成部分是以合同约定向客户提供的服务。例如，互联网服务供应商（ISP）和电信公司通常在与客户的合同条款内包含简单定义的服务级别协议。在此事例下，SLA通常定义有平均故障间隔（MTBF）、平均修复时间或平均修复时间（MTTR）；哪一方负责报告错误与支付费用；吞吐量；抖动；或类似的可衡量细节。
 
 The Difference between SLI, SLO, and SLA https://enqueuezero.com/the-difference-between-sli-slo-and-sla.html
+
+What is an SLA? Best practices for service-level agreements https://www.cio.com/article/2438284/outsourcing-sla-definitions-and-solutions.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
