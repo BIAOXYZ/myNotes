@@ -287,6 +287,16 @@ Markdown符号：整除、不整除、恰整除、不恰整除 https://blog.csdn
 不恰整除	\nparallel	 ∦ 
 ```
 
+双箭头 双箭头符号大全可复制 https://www.qqwmw.com/fuhao/teshu/482.html
+```console
+双向箭头
+↔ ↕
+双线箭头
+⇈ ⇊ ⇉ ⇇ ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇖ ⇗ ⇘ ⇙
+双线双向箭头
+⇄ ⇅ ⇆ ⇋ ⇌ ⇔
+```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 https://www.douban.com/group/topic/16607780/
