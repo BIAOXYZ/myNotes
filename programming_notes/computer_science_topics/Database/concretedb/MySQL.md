@@ -1,13 +1,4 @@
 
-
-HBase vs. MongoDB vs. MySQL vs. Oracle vs. Redis，三大主流开源 NoSQL 数据库的 PK 两大主流传统 SQL 数据库 
-http://blog.csdn.net/defonds/article/details/48471087
-
-“王者对战”之 MySQL 8 vs PostgreSQL 10 - MySQL - cnBeta.COM https://www.cnbeta.com/articles/tech/737331.htm
-- Why Uber Engineering Switched from Postgres to MySQL https://eng.uber.com/mysql-migration/
-- MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
-- A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
-
 MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
 > 伯乐在线资源频道 http://hao.jobbole.com/
 
@@ -25,6 +16,8 @@ InnoDB的功能缺陷及其他 - 赵伟的文章 - 知乎 https://zhuanlan.zhihu
 
 # mysql索引
 
+MySQL索引原理，一篇从头到尾讲清楚 https://mp.weixin.qq.com/s/3tlhF7t97mQmhIRrZq21ww
+
 MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded
 - > 左边是数据表，一共有两列七条记录，最左边的是数据记录的物理地址（注意逻辑上相邻的记录在磁盘上也并不是一定物理相邻的）。为了加快Col2的查找，可以维护一个右边所示的二叉查找树，每个节点分别包含索引键值和一个指向对应数据记录物理地址的指针，这样就可以运用二叉查找在O(log2n)O(log2n)的复杂度内获取到相应数据。![](https://upload-images.jianshu.io/upload_images/3575048-03fb02c336ddcd7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/588/format/webp)
 
@@ -34,3 +27,5 @@ MySQL中的读锁和写锁 https://blog.csdn.net/u013063153/article/details/5343
 - > MyISAM 在执行查询语句(SELECT)前,会自动给涉及的所有表加读锁,在执行更新操作 (UPDATE、DELETE、INSERT 等)前，会自动给涉及的表加写锁，这个过程并不需要用户干预，因此，用户一般不需要直接用LOCK TABLE命令给MyISAM表显式加锁。
 
 # mysql待分类
+
+字节三面：详解一条 SQL 的执行过程 https://mp.weixin.qq.com/s/xVWq3u-rekmg6HNGKRncng

@@ -3,6 +3,8 @@
 
 阿里天池第一届PolarDB数据库性能大赛补遗（一）－谈文件系统对快存储IO性能的影响 - Jin MJ的文章 - 知乎 https://zhuanlan.zhihu.com/p/59212416
 
+分布式文件系统架构对比 https://mp.weixin.qq.com/s/yYAgmQZe4CsXZlwtNamjcA
+
 # Ceph
 
 Ceph is a distributed object, block, and file storage platform https://github.com/ceph/ceph
