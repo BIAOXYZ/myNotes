@@ -1,4 +1,8 @@
 
+cmd 运行 Python 文件时遇到错误如何停留界面？ https://www.v2ex.com/t/758927
+- > 最后加上 os.system("pause")
+- > 用 try-catch 包住整个主函数，捕捉所有异常后 input("Press any key...")
+
 Python 3.7 的内置 breakpoint() 函数如何 backport 到 3.6 中？ https://www.v2ex.com/t/752234
 
 py 怎么判断是通过 IDE 运行还是 cmd 运行？ https://www.v2ex.com/t/752407
