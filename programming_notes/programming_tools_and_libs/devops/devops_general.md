@@ -11,6 +11,8 @@ AIOps学习资料汇总，欢迎一起补全这个仓库，欢迎star https://gi
 
 What is AIOps? https://www.appdynamics.com/central-nervous-system/what-is-ai-ops
 
+AIOps在美团的探索与实践——故障发现篇 https://mp.weixin.qq.com/s/AjE7uP7ApVPyL_HdQDkk5g 【`美团技术团队`】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ### AIOps公司

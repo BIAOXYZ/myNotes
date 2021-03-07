@@ -3,6 +3,8 @@
 
 # `希尔顿` / `Hilton`
 
+希尔顿 | 酒店集团背后的经营逻辑 https://mp.weixin.qq.com/s/9TQMSWSZXpE4AMQGXfQ3kA
+
 ## 希尔顿官网
 
 Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/

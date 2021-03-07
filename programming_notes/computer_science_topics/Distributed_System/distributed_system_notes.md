@@ -21,6 +21,8 @@ Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 一文总结：分布式一致性技术是如何演进的？ - 阿里技术的文章 - 知乎 https://zhuanlan.zhihu.com/p/163373813
 
+谈谈对分布式事务的一点理解和解决方案 https://mp.weixin.qq.com/s/v7rqlz4erRC9ZvEZk6mwvg
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # distributed transaction system

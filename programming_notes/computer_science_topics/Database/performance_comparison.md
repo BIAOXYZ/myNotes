@@ -7,4 +7,6 @@ http://blog.csdn.net/defonds/article/details/48471087
 - MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
 - A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
 
+主流云数仓性能对比分析 https://mp.weixin.qq.com/s/uZtBaECX1FU7K39El5Tx-Q
+
 吊打 MySQL，MariaDB 到底强在哪？ https://mp.weixin.qq.com/s/kVns-BHGTK-ms1Gh5P8lAg
