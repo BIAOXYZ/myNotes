@@ -118,6 +118,8 @@ GaussDB（openGauss）宣布将开源，性能超越 MySQL 与 PostgreSQL https:
 
 华为GaussDB T不发布了吗？改名为openGauss了？ https://www.modb.pro/issue/1973
 
+### 技术类
+
 华为openGauss gs_ctl https://www.modb.pro/db/30885
 ```console
 gs_ctl工具由操作系统用户omm执行。
@@ -129,6 +131,12 @@ gs_ctl工具由操作系统用户omm执行。
 -D, --pgdata=DATADIR  指定数据目录的位置。  DATADIR的取值必须为有效的数据目录。
 ```
 >> 看来开源的是最老的Gauss 100。。。
+
+Gauss松鼠会：
+- openGauss SQL引擎 （上） https://mp.weixin.qq.com/s/i51-_qPE-_MCwVzCNcYtSg
+- openGauss SQL引擎（下）——查询优化 https://mp.weixin.qq.com/s/ktJaRjBfOwV51ViM-xMhOA
+- openGauss存储技术（一）——行存储引擎 https://mp.weixin.qq.com/s/lpo3ZAqTM2boDH8iAAavSQ
+- openGauss存储技术（二）——列存储引擎和内存引擎 https://mp.weixin.qq.com/s/uGwonQRn4XEldHo1hqJ10w
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
