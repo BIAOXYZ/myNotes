@@ -29,3 +29,12 @@ MySQL中的读锁和写锁 https://blog.csdn.net/u013063153/article/details/5343
 # mysql待分类
 
 字节三面：详解一条 SQL 的执行过程 https://mp.weixin.qq.com/s/xVWq3u-rekmg6HNGKRncng
+
+# mysql application develop
+
+MySQL Connector/ODBC Developer Guide https://dev.mysql.com/doc/connector-odbc/en/
+- Chapter 1 Introduction to MySQL Connector/ODBC https://dev.mysql.com/doc/connector-odbc/en/connector-odbc-introduction.html
+- Chapter 5 Configuring Connector/ODBC https://dev.mysql.com/doc/connector-odbc/en/connector-odbc-configuration.html
+
+25.2. MySQL C API https://www.mysqlzh.com/doc/196.html
+- 25.2.2. C API函数概述 https://www.mysqlzh.com/doc/196/114.html
