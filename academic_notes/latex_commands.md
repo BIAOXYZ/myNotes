@@ -30,6 +30,8 @@ LATEX Equation Editor https://latexeditor.lagrida.com/
 
 Online LaTeX Equation Editor - create, integrate ... - CodeCogs https://codecogs.com/latex/eqneditor.php
 
+LaTeX4technics: Online LaTeX Equation Editor https://www.latex4technics.com/
+
 # Latex攻略集合
 
 Documents for Chinese TeX users https://github.com/CTeX-org/ctex-doc

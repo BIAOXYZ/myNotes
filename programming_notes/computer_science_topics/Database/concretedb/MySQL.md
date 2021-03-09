@@ -38,3 +38,6 @@ MySQL Connector/ODBC Developer Guide https://dev.mysql.com/doc/connector-odbc/en
 
 25.2. MySQL C API https://www.mysqlzh.com/doc/196.html
 - 25.2.2. C API函数概述 https://www.mysqlzh.com/doc/196/114.html
+
+使用MySQL Connector/C(libmysqlclient) 连接MySQL服务器 https://blog.csdn.net/shuxiaogd/article/details/47778357
+- > MySQL实现了三种Connector用于C/C++ 客户端程序来访问MySQL服务器：`Connector/ODBC`, `Connector/C++`(`JDBC`)以及`Connector/C`(`libmysqlclient`)。
