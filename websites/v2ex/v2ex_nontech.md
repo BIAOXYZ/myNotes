@@ -65,7 +65,32 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 创意
+
+瞎逛逛发现一个神奇的网站 https://www.v2ex.com/t/759809
+```console
+http://koalastothemax.com/
+
+请问各位大佬这网站是怎么实现的呀?感觉好神奇~
+```
+- > https://github.com/vogievetsky/KoalasToTheMax
+- > https://bruno-simon.com 这个呢
+- > https://github.com/chenkai0520/scratch-image
+  >> 任意图片的版本 https://chenkai0520.github.io/scratch-image/
+
+这个网站作者真优秀 https://www.v2ex.com/t/624225
+```console
+https://bruno-simon.com  各种交互各种炫
+
+新天地，切换视角： https://bruno-simon.com/#debug
+```
+- > 源码地址 https://github.com/brunosimon/folio-2019
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 生活信息
+
+要装修了，有没有装修经验分享给新人哇！ https://www.v2ex.com/t/759859
 
 我在北京租了个月租 700 的房子，不敢想像 https://www.v2ex.com/t/706736
 - > 高丽营村，河南村，李桥基本都这价，还有比这便宜的。
