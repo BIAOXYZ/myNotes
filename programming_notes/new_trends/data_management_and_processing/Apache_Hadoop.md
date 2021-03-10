@@ -41,9 +41,29 @@ hdfs dfs -rm -skipTrash hdfs://${your_server_name}/opt/tmp/test/1.log
 hdfs dfs -rm -r hdfs://${your_server_name}/opt/tmp/test/
 ```
 
+# 集群搭建
+
+## docker方式（缺点是容器里估计编译困难）
+
+docker-compose快速搭建hadoop https://www.jianshu.com/p/9b548517abbb  【已验证】
+
+## 二进制方式
+
+How to Install Hadoop in Stand-Alone Mode on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-debian-9  【已验证】【不过文章里用的Hadoop版本已经过时了，我用的是`Hadoop 3.2.1`版本】
+- How To Install Java with Apt on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-debian-9
+  * > 
+    ```sh
+    sudo apt update
+    sudo apt install default-jre
+    ```
+
+# Hadoop application develop
+
+https://github.com/tmacam/libhdfscpp
+- HDFS-APIs ~~http://wiki.apache.org/hadoop/HDFS-APIs~~  -->  https://cwiki.apache.org/confluence/display/HADOOP2/HDFS-APIs
+
+《Hadoop MapReduce实战手册》一2.9 使用HDFS的C API（libhdfs） https://developer.aliyun.com/article/97939
+
 # 其他
 
 Apache Hadoop https://en.wikipedia.org/wiki/Apache_Hadoop
-
-https://github.com/tmacam/libhdfscpp
-- HDFS-APIs https://cwiki.apache.org/confluence/display/HADOOP2/HDFS-APIs

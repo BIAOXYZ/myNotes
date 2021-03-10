@@ -233,11 +233,14 @@ yum remove -y containerd.io
 ## docker-compose安装
 
 - 二进制方式安装docker-compose
-```
+```sh
 //sudo curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 //sudo chmod +x /usr/local/bin/docker-compose
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.23.0-rc3/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -502,3 +505,14 @@ virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/get_env_details
 (venv) [root@marksmen1 ~]#
 ``
 ```
+
+# Debian
+
+Install Docker Engine on Debian https://docs.docker.com/engine/install/debian/
+
+How To Install Java with Apt on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-debian-9
+  * > 
+    ```sh
+    sudo apt update
+    sudo apt install default-jre
+    ```
