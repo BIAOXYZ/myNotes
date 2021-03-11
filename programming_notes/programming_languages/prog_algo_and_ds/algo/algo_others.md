@@ -39,3 +39,17 @@ QuickSelect Algorithm Understanding https://stackoverflow.com/questions/10846482
 `329. 矩阵中的最长递增路径` https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 数学
+
+原根 https://zh.wikipedia.org/wiki/%E5%8E%9F%E6%A0%B9
+
+原根 https://oi-wiki.org/math/primitive-root/
+
+算法学习笔记(40): 原根 - Pecco的文章 - 知乎 https://zhuanlan.zhihu.com/p/166043237
+- > 正整数有原根的充要条件为：它能表示为下列形式之一： $2, 4, p^n, 2p^n$ ，其中 `p` 为奇素数。（证明比较复杂，若感兴趣可参见这篇博客）
+  >> 题解 P6091 【【模板】原根】 https://www.luogu.com.cn/blog/codecodeakioi/solution-p6091
+
+「原根」与「阶」 https://www.jianshu.com/p/ba32b080d8af
+
+原根、与原根的应用(更新中) https://www.cnblogs.com/al76/p/9426147.html
