@@ -511,8 +511,29 @@ virtualenvwrapper.user_scripts creating /root/mypyenvs2/venv/bin/get_env_details
 Install Docker Engine on Debian https://docs.docker.com/engine/install/debian/
 
 How To Install Java with Apt on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-debian-9
-  * > 
-    ```sh
-    sudo apt update
-    sudo apt install default-jre
+- > Installing the Default JRE/JDK
+  ```sh
+  sudo apt update
+  sudo apt install default-jre
+  ```
+- > Setting the `JAVA_HOME` Environment Variable
+  * > In this case the installation paths are as follows:
+    ```console
+    Oracle Java 10 is located at /usr/lib/jvm/java-10-oracle/jre/bin/java.
+    Oracle Java 8 is located at /usr/lib/jvm/java-8-oracle/jre/bin/java.
+    OpenJDK 8 is located at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java.
     ```
+  * > Then open `/etc/environment` using nano or your favorite text editor:
+    ```sh
+    JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
+    ```
+
+## 个人实战部分
+
+```sh
+sudo apt update && sudo apt install -y default-jre
+
+# Debian 9 上用apt安装完java后，系统自动搞了各种软连接，但是对比CentOS下yum安装，JAVA_HOME应该就是这个。
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+export PATH=$PATH:$JAVA_HOME/bin
+```
