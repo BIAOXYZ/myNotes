@@ -343,6 +343,8 @@ VS Code 与 LaTeX 真乃天作之合 https://www.jianshu.com/p/57f8d1e026f5
 
 # vscode others
 
+code-server -- VS Code in the browser https://github.com/cdr/code-server/
+
 在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
 
 # vscode插件
