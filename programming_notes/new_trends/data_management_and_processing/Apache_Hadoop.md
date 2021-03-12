@@ -49,9 +49,9 @@ docker-compose快速搭建hadoop https://www.jianshu.com/p/9b548517abbb  【已�
 
 ## 二进制方式
 
-Hadoop: Setting up a Single Node Cluster. https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Installing_Software
+Hadoop: Setting up a Single Node Cluster. https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Installing_Software 【`-->` 官方文档反而几乎没有去参考，直接用别的文档了。】
 
-【[:star:][`*`]】 How to Install Hadoop in Stand-Alone Mode on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-debian-9  `【1】`【不过文章里用的Hadoop版本已经过时了，我用的是`Hadoop 3.2.1`版本。此外这个好像只是用hadoop跑了个任务，似乎不涉及HDFS。】
+`【1】`【[:star:][`*`]】 How to Install Hadoop in Stand-Alone Mode on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-debian-9 【`-->` 不过文章里用的Hadoop版本已经过时了，我用的是`Hadoop 3.2.1`版本。此外这个好像只是用hadoop跑了个任务，似乎不涉及HDFS。】
 - > The `JAVA_HOME` environment variable set in `/etc/environment`, as shown in How to Install Java with Apt on Debian 9. Hadoop requires this variable to be set.
   >> How To Install Java with Apt on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-debian-9
   >>> 
@@ -101,10 +101,11 @@ cat ~/grep_example/*
 # 1       allowed
 ```
 
-【[:star:][`*`]】 Install Hadoop: Setting up a Single Node Hadoop Cluster https://www.edureka.co/blog/install-hadoop-single-node-hadoop-cluster  `【2】` + [安装hadoop3.0版本踩坑](https://blog.csdn.net/qq_32635069/article/details/80859790)
+`【2】`【[:star:][`*`]】 Install Hadoop: Setting up a Single Node Hadoop Cluster https://www.edureka.co/blog/install-hadoop-single-node-hadoop-cluster `+` [安装hadoop3.0版本踩坑](https://blog.csdn.net/qq_32635069/article/details/80859790)
 - ***个人实战部分***：
 ```sh
 # 接上一个攻略，到把hadoop下载下来，解压放到 /usr/local/hadoop 那步就行，也就是 `sudo mv hadoop-3.2.1 /usr/local/hadoop` 这步。
+# 后面启动那步（ /usr/local/hadoop/bin/hadoop ）就不用执行了。
 # 环境也同样是用 Katacoda 的 Ubuntu： https://www.katacoda.com/courses/ubuntu/playground
 
 # 前述步骤已经做差不多了，直接从 Step 5 开始。但是其实这一步我没配那么多环境变量，就配了这俩：
@@ -217,6 +218,9 @@ Starting nodemanagers
 ERROR: Attempting to operate on yarn nodemanager as root
 ERROR: but there is no YARN_NODEMANAGER_USER defined. Aborting operation.
 $ 
+
+# 这里用下面那个帖子（也就是加号后面那个）里的办法把用户改成root后就可以启动了。但是我怀疑可能hdfs的最佳实践是不用root启动。。。
+# 另外，后来发现如果要关闭的话，也得把对应的 stop-dfs.sh 和 stop-yarn.sh 改用户名。方法是一样的，都是复制粘贴到脚本前面就行。
 $ vi start-dfs.sh 
 $ vi start-yarn.sh
 $ 
@@ -302,7 +306,7 @@ https://github.com/tmacam/libhdfscpp
 
 ## 个人实战
 
-C API libhdfs https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/LibHdfs.html
+C API libhdfs https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/LibHdfs.html `+` [C语言操作hdfs](https://www.jianshu.com/p/9a237f8c2314)
 - > A Sample Program 
   >> 官网的例子还少标准库。。。下面是补全后的。。。
 ```sh
@@ -342,8 +346,25 @@ Environment variable CLASSPATH not set!
 getJNIEnv: getGlobalJNIEnv failed
 Failed to open /tmp/testfile.txt for writing!
 $
+
+# 参考下面帖子（也就是加号后面那个）里的办法，配置一下 CLASSPATH 环境变量即可。再执行下发现hdfs里确实多了 /tmp/testfile.txt 文件。
+$ export CLASSPATH=`hadoop classpath --glob`
+$
+$ ./above_sample
+2021-03-12 03:07:30,237 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+$
 ```
+
+C语言操作hdfs https://www.jianshu.com/p/9a237f8c2314
+- > libhdfs.so动态链接库实现了c调用hdfs java程序，即其依赖于java，所以hadoop的jar包和相关配置文件也就需要加载到内存中。为此在运行前需要配置CLASSPAT环境变量，这样在程序运行过程中就可以根据CLASSPATH指定的路径去加载jar和相关配置到内存，以提供c通过JNI调用。
+- > 配置临时classpath
+  ```sh
+  #hadoop classpath --glob命令会生成classpath所需内容
+  [root@CentOS /]# export CLASSPATH=`hadoop classpath --glob`
+  ```
 
 # 其他
 
 Apache Hadoop https://en.wikipedia.org/wiki/Apache_Hadoop
+
+【[:star:][`*`]】 Hadoop Tutorial: All you need to know about Hadoop! https://www.edureka.co/blog/hadoop-tutorial/
