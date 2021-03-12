@@ -5,7 +5,25 @@ Apache Hadoop https://github.com/apache/hadoop
 - > For the latest information about Hadoop, please visit our website at: http://hadoop.apache.org/
 - > and our wiki, at: https://cwiki.apache.org/confluence/display/HADOOP/
 
-`hdfs.h` https://github.com/apache/hadoop/blob/trunk/hadoop-hdfs-project/hadoop-hdfs-native-client/src/main/native/libhdfs/include/hdfs/hdfs.h
+`hdfs.h` https://github.com/apache/hadoop/blob/13b427fc05/hadoop-hdfs-project/hadoop-hdfs-native-client/src/main/native/libhdfs/include/hdfs/hdfs.h
+- `LIBHDFS_EXTERNAL hdfsFS hdfsConnect(const char* nn, tPort port);`
+- `LIBHDFS_EXTERNAL void hdfsBuilderSetNameNode(struct hdfsBuilder *bld, const char *nn);`
+- `LIBHDFS_EXTERNAL void hdfsFreeBuilder(struct hdfsBuilder *bld);`
+- `LIBHDFS_EXTERNAL int hdfsDisconnect(hdfsFS fs);`
+- `LIBHDFS_EXTERNAL hdfsFile hdfsOpenFile(hdfsFS fs, const char* path, int flags, int bufferSize, short replication, tSize blocksize);`
+  * > @deprecated Use the `hdfsStreamBuilder` functions instead. This function does not support setting block sizes bigger than 2 GB.
+- `LIBHDFS_EXTERNAL hdfsFile hdfsStreamBuilderBuild(struct hdfsStreamBuilder *bld);`
+- `LIBHDFS_EXTERNAL int hdfsCloseFile(hdfsFS fs, hdfsFile file);`
+- `LIBHDFS_EXTERNAL int hdfsExists(hdfsFS fs, const char *path);`
+- `LIBHDFS_EXTERNAL tSize hdfsRead(hdfsFS fs, hdfsFile file, void* buffer, tSize length);`
+- `LIBHDFS_EXTERNAL tSize hdfsWrite(hdfsFS fs, hdfsFile file, const void* buffer, tSize length);`
+- `LIBHDFS_EXTERNAL int hdfsFlush(hdfsFS fs, hdfsFile file);`
+- `LIBHDFS_EXTERNAL int hdfsHFlush(hdfsFS fs, hdfsFile file);` 【`-->` 官方例子里用的上面那个，目前还没看出本质的区别，好像这个的意思是写完随时就能读？】
+- `LIBHDFS_EXTERNAL int hdfsDelete(hdfsFS fs, const char* path, int recursive);`
+- `LIBHDFS_EXTERNAL char* hdfsGetWorkingDirectory(hdfsFS fs, char *buffer, size_t bufferSize);`
+- `LIBHDFS_EXTERNAL int hdfsCreateDirectory(hdfsFS fs, const char* path);`
+- `LIBHDFS_EXTERNAL hdfsFileInfo *hdfsListDirectory(hdfsFS fs, const char* path, int *numEntries);`
+- `LIBHDFS_EXTERNAL char*** hdfsGetHosts(hdfsFS fs, const char* path, tOffset start, tOffset length);`
 
 Hadoop文档 https://hadoop.apache.org/docs/r1.0.4/cn/index.html
 - Hadoop集群搭建 https://hadoop.apache.org/docs/r1.0.4/cn/cluster_setup.html
@@ -306,6 +324,8 @@ YARN_NODEMANAGER_USER=root
 
 https://github.com/tmacam/libhdfscpp
 - HDFS-APIs ~~http://wiki.apache.org/hadoop/HDFS-APIs~~  -->  https://cwiki.apache.org/confluence/display/HADOOP2/HDFS-APIs
+
+HDFS简单介绍及用C语言訪问HDFS接口操作实践 https://www.cnblogs.com/mfmdaoyou/p/7008322.html
 
 《Hadoop MapReduce实战手册》一2.9 使用HDFS的C API（libhdfs） https://developer.aliyun.com/article/97939
 

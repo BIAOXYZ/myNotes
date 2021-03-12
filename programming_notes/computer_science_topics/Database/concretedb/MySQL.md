@@ -28,7 +28,7 @@ MySQL中的读锁和写锁 https://blog.csdn.net/u013063153/article/details/5343
 
 # mysql待分类
 
-字节三面：详解一条 SQL 的执行过程 https://mp.weixin.qq.com/s/xVWq3u-rekmg6HNGKRncng
+字节三面：详解一条 SQL 的执行过程 https://mp.weixin.qq.com/s/xVWq3u-rekmg6HNGKRncng || 执行一条SQL后MySQL做了哪些事情.md https://github.com/allentofight/easy-cs/blob/main/MySQL/%E6%89%A7%E8%A1%8C%E4%B8%80%E6%9D%A1SQL%E5%90%8EMySQL%E5%81%9A%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BA%8B%E6%83%85.md
 
 # mysql application develop
 
