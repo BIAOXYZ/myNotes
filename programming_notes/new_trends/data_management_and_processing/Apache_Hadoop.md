@@ -5,12 +5,17 @@ Apache Hadoop https://github.com/apache/hadoop
 - > For the latest information about Hadoop, please visit our website at: http://hadoop.apache.org/
 - > and our wiki, at: https://cwiki.apache.org/confluence/display/HADOOP/
 
+`hdfs.h` https://github.com/apache/hadoop/blob/trunk/hadoop-hdfs-project/hadoop-hdfs-native-client/src/main/native/libhdfs/include/hdfs/hdfs.h
+
 Hadoop文档 https://hadoop.apache.org/docs/r1.0.4/cn/index.html
 - Hadoop集群搭建 https://hadoop.apache.org/docs/r1.0.4/cn/cluster_setup.html
 - Hadoop Shell命令 https://hadoop.apache.org/docs/r1.0.4/cn/hdfs_shell.html
 - C API libhdfs https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/LibHdfs.html || https://hadoop.apache.org/docs/r1.2.1/libhdfs.html
 
 # 命令
+
+HDFS Commands: Hadoop Shell Commands to Manage HDFS https://www.edureka.co/blog/hdfs-commands-hadoop-shell-command
+- > **expunge**: HDFS Command that makes the trash empty.
 
 常用HDFS命令 https://www.jianshu.com/p/64a92a96fe3c
 - > 关于HDFS的文件操作，主要使用以下3个命令：

@@ -344,6 +344,9 @@ VS Code 与 LaTeX 真乃天作之合 https://www.jianshu.com/p/57f8d1e026f5
 # vscode others
 
 code-server -- VS Code in the browser https://github.com/cdr/code-server/
+- Install https://github.com/cdr/code-server/blob/main/docs/install.md 【`-->` 没有用仓库首页 README.md 里的一句脚本的安装方式，而是用了这个页面的安装方式。】
+- issues：
+  * How to exit from code-server #1257 https://github.com/cdr/code-server/issues/1257
 
 在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
 
