@@ -3,7 +3,21 @@
 
 functools --- 高阶函数和可调用对象上的操作 https://docs.python.org/zh-cn/3/library/functools.html || functools — Higher-order functions and operations on callable objects https://docs.python.org/3/library/functools.html
 - > `@functools.cache(user_function)`
-  * > Simple lightweight unbounded function cache. Sometimes called “memoize”.
+  * > Simple lightweight unbounded function cache. Sometimes called “memoize”. <br> Returns the same as `lru_cache(maxsize=None)`, creating a thin wrapper around a dictionary lookup for the function arguments. Because it never needs to evict old values, this is smaller and faster than `lru_cache()` with a size limit.
+  * > 简单轻量级未绑定函数缓存。有时称为 "memoize"。 <br> 返回值与 `lru_cache(maxsize=None)` 相同，创建一个查找函数参数的字典的简单包装器。因为它不需要移出旧值，所以比带有大小限制的 `lru_cache()` 更小更快。
+- > `@functools.lru_cache(user_function)` <br> `@functools.lru_cache(maxsize=128, typed=False)`
+  * > 一个为函数提供缓存功能的装饰器，缓存 `maxsize` 组传入参数，在下次以相同参数调用时直接返回上一次的结果。用以节约高开销或I/O函数的调用时间。 <br> 由于使用了字典存储缓存，所以该函数的固定参数和关键字参数必须是可哈希的。 <br> 不同模式的参数可能被视为不同从而产生多个缓存项，例如, `f(a=1, b=2)` 和 `f(b=2, a=1)` 因其参数顺序不同，可能会被缓存两次。 <br> 如果指定了 `user_function`，它必须是一个可调用对象。 这允许 `lru_cache` 装饰器被直接应用于一个用户自定义函数，让 `maxsize` 保持其默认值 `128`:
+    ```py
+    @lru_cache
+    def count_vowels(sentence):
+        sentence = sentence.casefold()
+        return sum(sentence.count(vowel) for vowel in 'aeiou')
+    ```
+  * > 如果 `maxsize` 设为 `None`，LRU 特性将被禁用且缓存可无限增长。
+  * > 如果 `typed` 设置为 `true`，不同类型的函数参数将被分别缓存。例如， `f(3)` 和 `f(3.0)` 将被视为不同而分别缓存。
+  * > 被包装的函数配有一个 `cache_parameters()` 函数，该函数返回一个新的 dict 用来显示 maxsize 和 typed 的值。 这只是出于显示信息的目的。 改变值没有任何效果。
+  * > 为了衡量缓存的有效性以便调整 `maxsize` 形参，被装饰的函数带有一个 `cache_info()` 函数。当调用 `cache_info()` 函数时，返回一个具名元组，包含命中次数 hits，未命中次数 misses ，最大缓存数量 maxsize 和 当前缓存大小 currsize。在多线程环境中，命中数与未命中数是不完全准确的。
+  * > 该装饰器也提供了一个用于清理/使缓存失效的函数 `cache_clear()`。
 
 # 其他
 
