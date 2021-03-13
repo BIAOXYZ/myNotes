@@ -2,6 +2,8 @@
 # 官方
 
 functools --- 高阶函数和可调用对象上的操作 https://docs.python.org/zh-cn/3/library/functools.html || functools — Higher-order functions and operations on callable objects https://docs.python.org/3/library/functools.html
+- > `@functools.cache(user_function)`
+  * > Simple lightweight unbounded function cache. Sometimes called “memoize”.
 
 # 其他
 
@@ -11,6 +13,8 @@ functools --- 高阶函数和可调用对象上的操作 https://docs.python.org
 - `312. 戳气球` https://leetcode-cn.com/problems/burst-balloons/solution/chuo-qi-qiu-by-leetcode-solution/
 - `329. 矩阵中的最长递增路径` -- `方法一：记忆化深度优先搜索` https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
 - `140. 单词拆分 II` https://leetcode-cn.com/problems/word-break-ii/solution/dan-ci-chai-fen-ii-by-leetcode-solution/
+
+Caching in Python Using the LRU Cache Strategy https://realpython.com/lru-cache-python/
 
 Every Python Programmer Should Know LRU_cache From the Standard Library https://medium.com/better-programming/every-python-programmer-should-know-lru-cache-from-the-standard-library-8e6c20c6bc49
   
@@ -42,3 +46,8 @@ calculating: 2 + 3
 【[:star:][`*`]】 functools.lru_cache装饰器详解 https://blog.csdn.net/u012745215/article/details/78506022
 
 Python Functools – lru_cache() https://www.geeksforgeeks.org/python-functools-lru_cache/
+
+## `cache`
+
+### LeetCode中用到这个的
+- `131. 分割回文串` https://leetcode-cn.com/problems/palindrome-partitioning/
