@@ -1,4 +1,10 @@
 
+ApacheCN AiLearning https://github.com/apachecn/AiLearning
+
+ApacheCN 机器学习译文集 https://github.com/apachecn/apachecn-ml-zh
+
+ApacheCN 数据科学译文集 https://github.com/apachecn/apachecn-ds-zh
+
 Git 中文参考 https://github.com/apachecn/git-doc-zh
 
 HighScalability 中文示例 https://github.com/apachecn/highscalability-examples-zh
