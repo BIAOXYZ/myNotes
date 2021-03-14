@@ -112,6 +112,13 @@ https://www.juzimi.com/ju/1741097
 - 其实不想走 (2001) https://movie.douban.com/subject/3071248/
 - 其实不想走 https://baike.baidu.com/item/%E5%85%B6%E5%AE%9E%E4%B8%8D%E6%83%B3%E8%B5%B0/81860
 
+## 四大名著general
+
+哪些演员同时出演了央视老版本四大名著中多部电视剧？ - 知乎 https://www.zhihu.com/question/29240417
+- 哪些演员同时出演了央视老版本四大名著中多部电视剧？ - 黄粱的回答 - 知乎 https://www.zhihu.com/question/29240417/answer/43665060
+
+## 水浒传
+
 日版水浒传
 - 水浒传 (1973年电视剧) https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B5%92%E4%BC%A0_(1973%E5%B9%B4%E7%94%B5%E8%A7%86%E5%89%A7)
 - 《水浒传》（日文：水浒伝） https://baike.baidu.com/item/%E6%B0%B4%E6%B5%92%E4%BC%A0/1442542
