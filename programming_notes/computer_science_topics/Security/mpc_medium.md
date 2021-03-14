@@ -29,6 +29,10 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 开放隐私计算
 
+### 2020.03
+
+安全多方计算学习路线 https://mp.weixin.qq.com/s/o9RGW8KHnK5g1oTDge2Biw
+
 隐私计算企业列表-国内篇 https://mp.weixin.qq.com/s/jyeNSvUPdiYbekXgiOjNlw
 
 ## 其他

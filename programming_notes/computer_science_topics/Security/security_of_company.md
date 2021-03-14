@@ -40,6 +40,8 @@ PrivPy: General and Scalable Privacy-Preserving Data Mining https://www.kdd.org/
 
 PrivPy: Enabling Scalable and General Privacy-Preserving Machine Learning https://cs.paperswithcode.com/paper/privpy-enabling-scalable-and-general-privacy
 
+隐私保护机器学习实例1-PrivPy(Section 3, POs) - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/356648580
+
 ## Sharemind
 
 Sharemind MPC (Multi-Party Computation) https://sharemind.cyber.ee/sharemind-mpc/
