@@ -26,11 +26,22 @@
 - > 总结
   * > 以上差不多就是"undefined reference to XXX"的这个问题的常见原因和解决方案了，总结起来就是三点：1.是不是编译器找不到定义了XXX的文件；2.是不是定义了XXX的文件，由于函数修饰的原因里面没有想要的XXX符号; 3.找到了想要的符号，但是该符号是隐藏属性，不能链接使用。如果不确定库里面有没有这个XXX符号，用`nm`找，用`c++filt`可以从修饰后的符号找函数声明。
 
+## 参数
+
+15 Most Frequently Used GCC Compiler Command Line Options https://www.thegeekstuff.com/2012/10/gcc-compiler-options/
+- > 8.Create position independent code using `-fPIC` option
+
 ## 动态库和静态库
+
+为什么不能在动态库里静态链接？ https://liam.page/2017/04/03/not-to-link-libstdc-statically-and-why/
 
 g++链接动态库和静态库问题 https://www.jianshu.com/p/fdd516337c76
 
 C++静态库与动态库 https://www.runoob.com/w3cnote/cpp-static-library-and-dynamic-library.html
+
+在Linux下，如何强制让GCC静态链接？ - qin meng的回答 - 知乎 https://www.zhihu.com/question/22940048/answer/222625910
+- > gcc使用-Wl传递连接器参数，ld使用-Bdynamic强制连接动态库，-Bstatic强制连接静态库。所以部分静态，部分动态连接这么写： `gcc ... -Wl,-Bstatic -l<your-static-lib> -Wl,-Bdynamic -l<your-dynamic-lib> ...`
+- > 举个例子，你想静态连接libA.a同时动态连接libB.so，(先保证你的连接路径-L里面能找到对应的静态或者动态库)，这么写： `gcc ... -Wl,-Bstatic -lA -Wl,-Bdynamic -lB ...`
 
 ## GCC版本升级
 

@@ -350,6 +350,17 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 
 在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
 
+# vscode issues
+
+## 当仓库里文件数量过多时，修改代码时无法被vscode “watch”和显示出来
+
+"Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC) https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+- > The limit can be increased to its maximum by editing `/etc/sysctl.conf` (except on Arch Linux, read below) and adding this line to the end of the file:
+  ```console
+  fs.inotify.max_user_watches=524288
+  ```
+- > Another option is to exclude specific workspace directories from the VS Code file watcher with the `files.watcherExclude` [setting](https://code.visualstudio.com/docs/getstarted/settings).
+
 # vscode插件
 
 VS Code 变身小霸王游戏机！ - 韩骏的文章 - 知乎 https://zhuanlan.zhihu.com/p/266374993
