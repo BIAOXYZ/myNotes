@@ -9,7 +9,11 @@ Visual Studio Code https://github.com/Microsoft/vscode || https://code.visualstu
 
 Collection of helpful tips and tricks for VS Code. https://github.com/Microsoft/vscode-tips-and-tricks
 
-第一次使用VS Code时你应该知道的一切配置 https://juejin.im/post/5cb87c6e6fb9a068a03af93a
+第一次使用VS Code时你应该知道的一切配置 https://juejin.im/post/5cb87c6e6fb9a068a03af93a --> https://juejin.cn/post/6844903826063884296
+- > **四、私人订制：VS Code 的常见配置**
+  * > **6、将当前行代码高亮显示（更改光标所在行的背景色）**
+- > **八、三头六臂：VS Code 插件推荐**
+  * > **38、Live Share：实时编码分享**
 
 # vscode新闻
 
