@@ -275,7 +275,7 @@ drwxr-xr-x   - root supergroup          0 2021-03-11 06:51 hdfs://localhost:9000
 $
 ```
 
-安装hadoop3.0版本踩坑 https://blog.csdn.net/qq_32635069/article/details/80859790
+[安装hadoop3.0版本踩坑](https://blog.csdn.net/qq_32635069/article/details/80859790)
 ```console
 1、hdfs的web页面默认端口是9870 yarn的web页面端口是8088
 2、配置文件中的slaves文件没了，变成了workers文件，在里面配置datanode节点
@@ -326,8 +326,18 @@ https://github.com/tmacam/libhdfscpp
 - HDFS-APIs ~~http://wiki.apache.org/hadoop/HDFS-APIs~~  -->  https://cwiki.apache.org/confluence/display/HADOOP2/HDFS-APIs
 
 HDFS简单介绍及用C语言訪问HDFS接口操作实践 https://www.cnblogs.com/mfmdaoyou/p/7008322.html
+- > 1)主要用于存储和管理大数据文件(因为HDFS默认数据块为128M。所以它主要适合于存储百M级别及以上大小的文件)。
+- > 3)设计理念为“一次写，多次读”。
+- > 格式化一个HDFS文件系统，使用例如以下命令： `hdfs namenode -format`
+- > 删除HDFS文件系统中存在的坏块及对应已损坏的文件，使用例如以下命令： `hdfs fsck -delete -files /`
+- > 为了成功编译C语言client程序，我们须要预先安装7.0及以上版本号的JAVA JDK和Hadoop发行版，前者提供`libjvm.so`等库，后者则提供LIB HDFS连接所须要的库。
+- > 为了成功运行C语言client程序，除了预先安装上面提到的程序外，我们还须要正确地设置几个关键环境变量。包含`LD_LIBRARY_PATH`和`CLASSPATH`的设置。关于`LD_LIBRARY_PATH`环境变量。主要是须要加入`libjvm.so`和`libhdfs.so`库所在路径；而针对CLASSPATH则须要囊括Hadoop提供的全部jar包的全路径信息(详细可通过find+awk组合命令来实现)。否则C语言client程序总会报缺少某个类而无法运行的错误。
 
 《Hadoop MapReduce实战手册》一2.9 使用HDFS的C API（libhdfs） https://developer.aliyun.com/article/97939
+
+C APIs https://support.huaweicloud.com/intl/en-us/devg-mrs/mrs_06_0141.html
+- > View PDF:
+  >> MapReduce Service Development Guide https://support.huaweicloud.com/intl/en-us/devg-mrs/mrs-devg.pdf
 
 ## 个人实战
 
@@ -380,7 +390,7 @@ $ ./above_sample
 $
 ```
 
-C语言操作hdfs https://www.jianshu.com/p/9a237f8c2314
+[C语言操作hdfs](https://www.jianshu.com/p/9a237f8c2314)
 - > libhdfs.so动态链接库实现了c调用hdfs java程序，即其依赖于java，所以hadoop的jar包和相关配置文件也就需要加载到内存中。为此在运行前需要配置CLASSPAT环境变量，这样在程序运行过程中就可以根据CLASSPATH指定的路径去加载jar和相关配置到内存，以提供c通过JNI调用。
 - > 配置临时classpath
   ```sh

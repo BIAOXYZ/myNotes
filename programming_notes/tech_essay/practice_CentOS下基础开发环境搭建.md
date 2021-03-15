@@ -254,14 +254,17 @@ Spring Boot 2 (四)：使用 Docker 部署 Spring Boot http://www.ityouknow.com/
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## JDK安装
-```
+```sh
 yum -y install java-1.8.0-openjdk*
 
 //export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.el7_5.x86_64
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=${JAVA_HOME}/lib:${JRE_HOME}/lib  
 export PATH=$PATH:$JAVA_HOME/bin 
 ```
-```
+
+```sh
 https://github.com/ojdkbuild/contrib_jdk8u-ci/releases // 咋感觉要找个1.8版本的openjdk这么难呢？
 
 wget https://github.com/ojdkbuild/contrib_jdk8u-ci/releases/download/jdk8u212-b04/jdk-8u212-ojdkbuild-linux-x64.zip

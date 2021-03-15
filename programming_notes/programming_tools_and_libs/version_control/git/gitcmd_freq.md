@@ -140,33 +140,7 @@ d98a0f565804ba639ba46d6e4295d4f787ff2949 src/main/main.c
 ----------------------------------------------------------------------------------------------------
 
 ### 清理类撤销 git clean
-
-<<git如何删除本地所有未提交的更改>>
-https://www.v2ex.com/t/66718
-```
-git clean -df 一般用这个就可以，但是注意要选对目录:目录太低删不干净。
-git clean -ndf 有-n参数就是只是显示哪些会被删，但不做删除
-git clean -xdf -x参数的意义如下：
-
-默认情况下，git clean 命令只会移除没有忽略的未跟踪文件。 任何与 .gitiignore 
-或其他忽略文件中的模式匹配的文件都不会被移除。 如果你也想要移除那些文件，例如
-为了做一次完全干净的构建而移除所有由构建生成的 .o 文件，可以给 clean 命令增加一个 -x 选项。
-(https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%E4%B8%8E%E6%B8%85%E7%90%86)
-```
-
-http://blog.csdn.net/leedaning/article/details/50125375
-
-https://www.cnblogs.com/xuange306/p/6838964.html
-
-
-How to remove local (untracked) files from the current Git working tree?
-https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
-```
-If untracked directory is a git repository of its own (e.g. submodule), you need to use -f twice:
-
-git clean -d -f -f
-```
-*这个里面提供了不少达到git clean目的的技巧，但是最稳妥还是git clean -df*
+//已转移
 
 ----------------------------------------------------------------------------------------------------
 
