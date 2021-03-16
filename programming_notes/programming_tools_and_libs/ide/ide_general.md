@@ -35,6 +35,10 @@ Golang Guide: A List of Top Golang Frameworks, IDEs & Tools https://intelligentb
 
 ## [GoLand](https://www.jetbrains.com/go/)
 
+IDE 怎么同时高亮多个变量，进行跟踪，比如 Goland、IDEA 等工具？ https://www.v2ex.com/t/762213
+- > `Command/Ctrl + Shift + F7`
+  >> https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf 第一页，第三列，倒数第八个就是，一楼正确的
+
 请教 Go Mod 到底怎么用...被虐哭.. https://www.v2ex.com/t/582361
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
