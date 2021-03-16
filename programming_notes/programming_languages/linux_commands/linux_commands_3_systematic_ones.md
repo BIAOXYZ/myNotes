@@ -148,12 +148,6 @@ AppArmor https://zh.wikipedia.org/wiki/AppArmor
 
 AppArmor https://wiki.archlinux.org/index.php/AppArmor
 
-# NFS文件系统
-
-NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
-
-Linux下NFS服务器的搭建与配置 https://www.cnblogs.com/liuyisai/p/5992511.html
-
 # Linux下文本处理
 
 建议收藏！超全的 Linux Shell 文本处理工具集锦 https://segmentfault.com/a/1190000037480939
@@ -186,6 +180,23 @@ $ man hier | grep -E 'bin$|sbin$|^.{7}(/bin)|^.{7}(/sbin)' -A2
 ```
  
 /usr/bin vs /usr/local/bin on Linux https://unix.stackexchange.com/questions/8656/usr-bin-vs-usr-local-bin-on-linux
+
+## Linux设备含义
+
+C.4. Linux 里面的设备名称 https://www.debian.org/releases/stable/i386/apcs04.zh-cn.html  【这个真就官方翻译版现在还没翻译完，所以中英文混杂- -】
+- > Linux 的磁盘和分区命名可能与其它操作系统不同。您需要知道创建和挂接分区时 Linux 所使用的设备名称。这里是基本的命名方案：
+  * > 第一个软盘驱动器被命名为 `/dev/fd0`。
+  * > 第二个软盘驱动器被命名为 `/dev/fd1`。
+  * > The first hard disk detected is named `/dev/sda`.
+  * > The second hard disk detected is named `/dev/sdb`, and so on.
+- > 第一个 SCSI 光盘驱动器被命名为 `/dev/scd0`，也叫 `/dev/sr0`。
+- > 每个磁盘分区的表示，是通过在磁盘名称后面附加一个十进制数字：`sda1` 和 `sda2` 代表系统里的第一个 SCSI 磁盘驱动器的第一个和第二个分区。
+- > 这里有一个具体的例子。假设您有一个系统带有两个 SCSI 磁盘，一个 SCSI 地址是 2 并且另外一个地址是 4。第一个磁盘(在 2 上)会被命名为 `sda` 并且第二个是 `sdb`。如果 `sda` 驱动器有 3 个分区，它们将被命名为 `sda1`、`sda2` 和 `sda3`。这同样适用于 `sdb` 及其分区。
+- > 注意如果您有两个 SCSI 主机总线适配器(控制器)，设备的顺序可能会比较混乱。最好的解决方案是观察引导信息，如果您知道驱动器型号和/或者容量。
+- > Linux represents the primary partitions as the drive name, plus the numbers 1 through 4. For example, the first primary partition on the first drive is /dev/sda1. The logical partitions are numbered starting at 5, so the first logical partition on that same drive is /dev/sda5. Remember that the extended partition, that is, the primary partition holding the logical partitions, is not usable by itself.
+
+SDB:Basics of partitions, filesystems, mount points https://en.opensuse.org/SDB:Basics_of_partitions,_filesystems,_mount_points
+- > At boot time, the Linux system scans the hardware and associates to each of the discovered devices a special file a.k.a. device file. This special file - name given because it has no content on the disc, but it is used as a file - is a kind of interface between the device driver and hardware. 
 
 ## 判断当前主机是物理机还是虚拟机
 

@@ -5,6 +5,16 @@
 
 分布式文件系统架构对比 https://mp.weixin.qq.com/s/yYAgmQZe4CsXZlwtNamjcA
 
+# NFS
+
+NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+Linux NFS服务器的安装与配置 https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
+
+NFS的使用 · Linux 学习笔记 https://www.huweihuang.com/linux-notes/tools/nfs-usage.html
+
+Linux下NFS服务器的搭建与配置 https://www.cnblogs.com/liuyisai/p/5992511.html
+
 # Ceph
 
 Ceph is a distributed object, block, and file storage platform https://github.com/ceph/ceph
@@ -17,3 +27,11 @@ Red Hat Ceph存储—《深入理解Ceph架构》 http://ceph.org.cn/2018/06/29/
 - > 英文出处： Red Hat Ceph Storage 2 Architecture Guide https://access.redhat.com/documentation/en-US/Red_Hat_Ceph_Storage/2/pdf/Architecture_Guide/Red_Hat_Ceph_Storage-2-Architecture_Guide-en-US.pdf
 
 Ceph介绍及原理架构分享 https://www.jianshu.com/p/cc3ece850433
+
+# GFS
+
+【MIT 6.824】学习笔记 3: GFS - 多颗糖的文章 - 知乎 https://zhuanlan.zhihu.com/p/354450124
+
+# 其他
+
+Facebook’s Tectonic Filesystem: Efficiency from Exascale - Lancer的文章 - 知乎 https://zhuanlan.zhihu.com/p/353383767

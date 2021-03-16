@@ -19,3 +19,5 @@
 
 996工作制是奋斗还是剥削？你该不该加班？李永乐老师讲机会成本 https://www.youtube.com/watch?v=U4kpHYIuV6c
 > "看一个人喜不喜欢你，你要看穷人是不是愿意给你花钱，富人愿不愿给你花时间，这就是喜不喜欢你的标志。"
+
+how we write/review code in big tech companies https://www.youtube.com/watch?v=rR4n-0KYeKQ
