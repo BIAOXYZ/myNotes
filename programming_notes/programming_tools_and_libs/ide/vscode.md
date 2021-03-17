@@ -63,6 +63,17 @@ ctrl+[
 ctrl+]
 ```
 
+## 代码格式化
+
+VSCode 代码格式化 快捷键 https://www.cnblogs.com/ryanzheng/p/10950870.html
+```console
+Visual Studio Code可以通过以下快捷键 格式化代码：
+
+On Windows 　　Shift + Alt + F
+On Mac 　　    Shift + Option + F
+On Ubuntu　　  Ctrl + Shift + I
+```
+
 ## 同时编辑多行
 
 vscode 同时编辑多处，多个光标 快捷键 https://blog.csdn.net/Gomeer/article/details/91417928
