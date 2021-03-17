@@ -10,7 +10,11 @@ CMake Tutorial https://cmake.org/cmake/help/v3.19/guide/tutorial/index.html
 
 cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上传到仓库 https://juejin.cn/post/6844903641443205128
 
-CMake Examples https://github.com/ttroy50/cmake-examples
+【[:star:][`*`]]】 CMake Examples https://github.com/ttroy50/cmake-examples
+
+【[:star:][`*`]]】 CMake Cookbook https://github.com/dev-cafe/cmake-cookbook || CMake菜谱（CMake Cookbook中文版） https://www.bookstack.cn/books/CMake-Cookbook
+- `4.4 使用Boost Test进行单元测试` https://www.bookstack.cn/read/CMake-Cookbook/content-chapter4-4.4-chinese.md
+  * https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-04/recipe-04
 
 # 问题
 
