@@ -88,6 +88,25 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 /opt/rh/devtoolset-7/root/usr/bin/gcc
 ```
 
+# gcc/g++错误处理
+
+## `libstdc++.so.6: error adding symbols: DSO missing from command line`
+
+```sh
+$ gcc hdfsclass.cpp -I/usr/local/hadoop/include -L/usr/local/hadoop/lib/native -lhdfs -o hdfsclass
+/usr/bin/ld: /tmp/ccaQjUxW.o: undefined reference to symbol '_ZTVN10__cxxabiv117__class_type_infoE@@CXXABI_1.3'
+//usr/lib/x86_64-linux-gnu/libstdc++.so.6: error adding symbols: DSO missing from command line
+$
+
+# 错误原因就是：因为是cpp代码，所以换了g++就直接编过了。。。
+$ g++ hdfsclass.cpp -I/usr/local/hadoop/include -L/usr/local/hadoop/lib/native -lhdfs -o hdfsclass
+$
+```
+
+- libstdc++: DSO missing from command line https://stackoverflow.com/questions/33263288/libstdc-dso-missing-from-command-line
+- gcc 错误 //usr/lib/x86_64-linux-gnu/libstdc++.so.6 ... https://www.cnblogs.com/Hocker/p/8242155.html
+- ubuntu16.04 Qt调试caffe代码 - 高知的文章 - 知乎 https://zhuanlan.zhihu.com/p/38077007
+
 ## GCC新闻
 
 2020年，GCC项目代码终于从SVN完全切换至Git https://www.ithome.com/0/468/228.htm
