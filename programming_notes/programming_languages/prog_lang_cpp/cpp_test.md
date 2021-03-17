@@ -9,6 +9,9 @@
 
 GoogleTest https://github.com/google/googletest
 
+GoogleTest User’s Guide https://google.github.io/googletest/
+- Googletest Primer https://google.github.io/googletest/primer.html
+
 Google Test https://en.wikipedia.org/wiki/Google_Test
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
@@ -31,6 +34,8 @@ gtest-demo https://github.com/bast/gtest-demo
 玩转Google开源C++单元测试框架Google Test系列(gtest)(总) https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
 
 使用 Google Test 测试框架 http://senlinzhan.github.io/2017/10/08/gtest/
+
+轻松编写 C++ 单元测试 https://www.cnblogs.com/fnlingnzb-learner/p/6927834.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
