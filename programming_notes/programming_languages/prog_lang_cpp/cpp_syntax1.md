@@ -59,3 +59,9 @@ C: What is the difference between ++i and i++? https://stackoverflow.com/questio
 
 Is there a performance difference between i++ and ++i in C? https://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c
 - https://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c/24887#24887
+
+# 类
+
+Classes https://en.cppreference.com/w/cpp/language/classes
+
+Classes (I) http://www.cplusplus.com/doc/tutorial/classes/
