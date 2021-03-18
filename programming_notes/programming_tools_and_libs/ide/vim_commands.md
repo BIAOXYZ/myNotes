@@ -136,6 +136,14 @@ t<字母>	向后搜索<字母>并跳转到第一个匹配位置之前的一个�
 T<字母>	向前搜索<字母>并跳转到第一个匹配位置之后的一个字母(不常用)
 ```
 
+【[:star:][`*`]】 Vim基础篇——快速移动 - 张翼腾的文章 - 知乎 https://zhuanlan.zhihu.com/p/30132173
+```console
+<Ctrl-b> 向下移动一个屏幕
+<Ctrl-f> 向上移动一个屏幕
+<Ctrl-u> 向下移动半个屏幕
+<Ctrl-d> 向上移动半个屏幕
+```
+
 :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:  :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple: :couple:
 
 ## vim编辑命令
@@ -179,6 +187,14 @@ d1G	删至文档首部
 > 2dd 删除两行
 > d3w 删除三个单词
 
+轻快的VIM（三）：删除 https://www.cnblogs.com/cmt/p/14553189.html
+```console
+dw            删除到下一个单词开头
+de            删除到本单词末尾
+dE            删除到本单词末尾包括标点在内
+db            删除到前一个单词
+dB            删除到前一个单词包括标点在内
+```
 
 ### 复制及粘贴文本
 ```
@@ -208,7 +224,7 @@ d1G	删至文档首部
 
 ## vim格式化代码
 
-如何在vim中快速格式化这个代码？ https://segmentfault.com/q/1010000007842413
+【[:star:][`*`]】 如何在vim中快速格式化这个代码？ https://segmentfault.com/q/1010000007842413
 ```console
 gg
 vG
