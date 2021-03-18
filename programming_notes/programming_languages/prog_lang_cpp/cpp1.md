@@ -1,4 +1,11 @@
 
+# C++ general
+
+如何系统地学习 C++ 语言？ - 知乎 https://www.zhihu.com/question/23447320
+- 如何系统地学习 C++ 语言？ - 编程指北的回答 - 知乎 https://www.zhihu.com/question/23447320/answer/1685865607
+  * > 如果对这些没什么兴趣，可以试试这个网站，有点像 LeetCode 刷算法题一样，这里针对每一个语法知识点都有一系列的练习题可供选择。而且不仅包含 C++，其它几乎所有语言都可以在这里进行练习：
+    >> https://www.codewars.com/kata/search/cpp
+
 # C++书籍
 
 :books: Modern C++ Tutorial: C++11/14/17/20 On the Fly https://github.com/changkun/modern-cpp-tutorial || https://changkun.de/modern-cpp/

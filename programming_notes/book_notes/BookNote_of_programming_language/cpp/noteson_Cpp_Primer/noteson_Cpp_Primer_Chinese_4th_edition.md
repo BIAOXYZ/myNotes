@@ -1,6 +1,10 @@
 
 # `#` 《C++ Primer》中文第四版
 
+- C++ Primer 中文版（第 4 版） https://book.douban.com/subject/1767741/
+- C++ Primer中文版 (第4版·特别版) https://book.douban.com/subject/4262575/
+- C++Primer(英文版)(第4版) https://book.douban.com/subject/1900687/
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 第一章快速入门
