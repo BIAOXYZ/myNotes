@@ -19,6 +19,4 @@ git-branch - List, create, or delete branches https://git-scm.com/docs/git-branc
 
 # 其他帖子
 
-git pull https://www.atlassian.com/git/tutorials/syncing/git-pull
-
 # 个人实战

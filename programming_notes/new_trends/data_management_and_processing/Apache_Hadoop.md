@@ -135,7 +135,8 @@ cat ~/grep_example/*
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/usr/local/hadoop/bin
 
-# 然后 Step 6-11 就是改那几个xml配置文件的内容，直接照做即可，没啥坑，故这里省略了。
+# 然后 Step 6-11 就是改那几个xml配置文件的内容，直接照做即可，没啥坑，故这里省略了。总之依次修改了：
+# core-site.xml、hdfs-site.xml、mapred-site.xml（需要从 mapred-site.xml.template 复制过去）、yarn-site.xml 、hadoop–env.sh
 
 $ hadoop namenode -format
 WARNING: Use of this script to execute namenode is deprecated.

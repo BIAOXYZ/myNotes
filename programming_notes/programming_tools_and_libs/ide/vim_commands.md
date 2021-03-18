@@ -65,17 +65,17 @@ set nu
 
 ### 其他设置类
 
-<<vim 常用命令>>
-http://blog.chinaunix.net/uid-20769502-id-112737.html
+<<vim 常用命令>> http://blog.chinaunix.net/uid-20769502-id-112737.html
 ```
 :set hlsearch 高亮显示搜索结果 (自己试了下取消高亮显示搜索果然是 :set nohlsearch )
 ```
 
-Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
-```
-syntax on 打开语法高亮
-
-```
+在vim中取消搜索的高亮 https://blog.csdn.net/k7arm/article/details/77370181
+- > 使用vim的高亮搜索功能之后，如果不取消的话，代码中就会有像补丁一样的一块一块的高亮。之前用的方法很土，就是找一个再重新搜索一个很少用到的字符，万一不幸，在源码中存在的话，那就换下一个，这样一直换下去。后来觉得这样不行，太low了，网上搜了一下，很简单，在命令状态下直接输入：
+  ```console
+  :noh
+  ```
+- > 瞬间清净了。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -241,11 +241,6 @@ Practical Vim https://book.douban.com/subject/10599776/
 
 ## Vim配置
 
-Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
-- 回复：
-  * > 可以用现成的吖， https://github.com/amix/vimrc
-    + > **The Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your `~/.vimrc` and you will have a good basic setup
-
 有哪些编程必备的 Vim 配置？ - 知乎 https://www.zhihu.com/question/19989337
 
 ### 将vim打造成IDE
@@ -269,6 +264,11 @@ Vim配置、插件和使用技巧 https://www.jianshu.com/p/a0b452f8f720
 安装Exuberant Ctags及Tag List插件 https://blog.csdn.net/dream2009gd/article/details/44102227
 
 ## Vim定制版
+
+Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
+- 回复：
+  * > 可以用现成的吖， https://github.com/amix/vimrc
+    + > **The Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your `~/.vimrc` and you will have a good basic setup
 
 【B站的vim-vide】Lightest vimrc, while strong enough. 最轻的vim配置，却足够强！ https://github.com/bilibili/vim-vide
 
