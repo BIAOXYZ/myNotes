@@ -336,7 +336,7 @@ HDFS简单介绍及用C语言訪问HDFS接口操作实践 https://www.cnblogs.co
 
 《Hadoop MapReduce实战手册》一2.9 使用HDFS的C API（libhdfs） https://developer.aliyun.com/article/97939
 
-C APIs https://support.huaweicloud.com/intl/en-us/devg-mrs/mrs_06_0141.html
+C APIs https://support.huaweicloud.com/intl/en-us/devg-mrs/mrs_06_0141.html 【这个内容很全。】
 - > View PDF:
   >> MapReduce Service Development Guide https://support.huaweicloud.com/intl/en-us/devg-mrs/mrs-devg.pdf
 
@@ -344,6 +344,8 @@ libhdfs3 https://github.com/erikmuttersbach/libhdfs3
 - > HDFS is implemented in JAVA language and additionally provides a JNI based C language library libhdfs. To use libhdfs, users must deploy the HDFS jars on every machine. This adds operational complexity for non-Java clients that just want to integrate with HDFS.
 - > **Libhdfs3**, designed as an alternative implementation of libhdfs, is implemented based on native Hadoop RPC protocol and HDFS data transfer protocol. It gets rid of the drawbacks of JNI, and it has a lightweight, small memory footprint code base. In addition, it is easy to use and deploy.
 - > Libhdfs3 is developed by [Pivotal]() and used in [HAWQ](), which is a massive parallel database engine in [Pivotal Hadoop Distribution](http://www.pivotal.io/big-data/pivotal-hd).
+
+使用Hadoop的C API操作HDFS https://blog.csdn.net/cjf_wei/article/details/76374389
 
 ## 个人实战
 

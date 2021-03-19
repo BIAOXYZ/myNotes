@@ -48,6 +48,15 @@ Sharemind MPC (Multi-Party Computation) https://sharemind.cyber.ee/sharemind-mpc
 
 Sharemind: a framework for fast privacy-preserving computations https://eprint.iacr.org/2008/289.pdf
 
+## OpenMined
+
+OpenMined https://blog.openmined.org/
+- PYSYFT https://blog.openmined.org/tag/pysyft/
+  * INTRODUCTION TO FEDERATED LEARNING AND PRIVACY PRESERVATION USING PYSYFT AND PYTORCH -- Federated Learning and Additive Secret Sharing using the PySyft framework https://blog.openmined.org/federated-learning-additive-secret-sharing-pysyft/
+- PRIVATE SET INTERSECTION WITH DIFFIE-HELLMAN https://blog.openmined.org/private-set-intersection-with-diffie-hellman/
+
+PySyft https://github.com/OpenMined/PySyft
+
 ## 矩阵元
 
 JUGO：
