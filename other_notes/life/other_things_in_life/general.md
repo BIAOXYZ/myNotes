@@ -1,14 +1,4 @@
 
-当小区难以挽回地走向衰败 https://www.huxiu.com/article/301805.html 【by 黔财有话说】
-
-这个视频好精彩 【by 小企鹅去爬山。】【其实就是自如友谊嘉园暖气用的烧燃气的壁挂炉的用法】 https://xiaoying.tv/v/zfsTml/1
-
-# 房
-
-眼下，北京楼市决不能碰的20个区域！ https://mp.weixin.qq.com/s/ucM90XxMjL6Wln4FYt-6gQ
-
-重磅！北京推出新型住房，相当于直接给老百姓发钱！ https://mp.weixin.qq.com/s/qsW5cHTzjRqQfFGq19aNtg
-
 # 车
 
 想在北京考驾照，有推荐的驾校和什么需要注意的地方吗？ https://www.v2ex.com/t/699504
