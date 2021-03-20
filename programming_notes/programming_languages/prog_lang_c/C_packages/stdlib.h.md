@@ -2,8 +2,12 @@
 # 官方
 
 `<cstdlib> (stdlib.h)` http://www.cplusplus.com/reference/cstdlib/
-- Dynamic memory management
+- **String conversion**
+  * atoi http://www.cplusplus.com/reference/cstdlib/atoi/
+- **Dynamic memory management**
   * malloc http://www.cplusplus.com/reference/cstdlib/malloc/
+- **Integer arithmetics**
+  * abs http://www.cplusplus.com/reference/cstdlib/abs/
 
 # `qsort()`
 
