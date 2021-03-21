@@ -13,6 +13,8 @@
 
 ## from huxiu
 
+【:star:】 降准啦，但你真的理解啥是降准吗？ https://www.huxiu.com/article/334704.html
+
 如何掏空上市公司？ https://www.huxiu.com/article/319588.html
 
 【:star:】 我们是如何被事实和数字欺骗的？ https://www.huxiu.com/article/319624.html  【by 卫夕指北】
