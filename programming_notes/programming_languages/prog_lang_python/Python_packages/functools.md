@@ -65,3 +65,7 @@ Python Functools – lru_cache() https://www.geeksforgeeks.org/python-functools-
 
 ### LeetCode中用到这个的
 - `131. 分割回文串` https://leetcode-cn.com/problems/palindrome-partitioning/
+
+## `partial()`
+
+彻底明白 Python partial() - Demon的文章 - 知乎 https://zhuanlan.zhihu.com/p/47124891
