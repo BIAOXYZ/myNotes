@@ -170,6 +170,8 @@ http://zh.sudoku.menu/info/solver.html
 
 # 吃
 
+央视刚播就有千万热度，这部纪录片告诉你陕西美食简直天下无敌 https://www.acfun.cn/a/ac27027559
+
 ## 长安一条柴
 
 在西安肉夹馍不稀奇，可螃蟹夹馍你见过吗？ https://www.acfun.cn/v/ac10588284

@@ -377,6 +377,11 @@ PgHero: A performance dashboard for Postgres https://github.com/ankane/pghero
 
 pg_query_state: Tool for query progress monitoring in PostgreSQL https://github.com/postgrespro/pg_query_state
 
+【[:start:][`*`]】 pg_query_go https://github.com/pganalyze/pg_query_go
+- > Go version of [pganalyze/pg_query](https://pganalyze.com/blog/parse-postgresql-queries-in-ruby)
+- > This Go library and its cgo extension use the actual PostgreSQL server source to parse SQL queries and return the internal PostgreSQL parse tree.
+- > You can find further background to why a query's parse tree is useful here: pganalyze.com/blog/parse-postgresql-queries-in-ruby.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
