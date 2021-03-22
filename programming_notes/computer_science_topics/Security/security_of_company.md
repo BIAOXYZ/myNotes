@@ -17,6 +17,8 @@ PrivateStats: De-Identified Authenticated Logging at Scale https://research.fb.c
 
 # 公司
 
+EzPC (Easy Secure Multi-party Computation) https://www.microsoft.com/en-us/research/project/ezpc-easy-secure-multi-party-computation/
+
 ## Oasis Labs
 
 https://www.oasislabs.com/

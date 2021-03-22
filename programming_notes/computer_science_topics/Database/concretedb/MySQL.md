@@ -45,3 +45,5 @@ Chapter 1 Introduction to Connector/C++ https://docs.oracle.com/cd/E17952_01/con
 - > MySQL实现了三种Connector用于C/C++ 客户端程序来访问MySQL服务器：`Connector/ODBC`, `Connector/C++`(`JDBC`)以及`Connector/C`(`libmysqlclient`)。
 
 C++操作mysql方法总结（1) https://www.cnblogs.com/magicsoar/p/3817518.html
+
+libmysqlclient 使用浅析 https://blog.lucode.net/backend-development/libmysqlclient-usage.html
