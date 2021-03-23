@@ -1,6 +1,14 @@
 
 # 官方
 
+`header <string>` http://www.cplusplus.com/reference/string/
+- **Class instantiations**
+  * std::string http://www.cplusplus.com/reference/string/string/
+- **Convert from strings**
+  * std::stoi http://www.cplusplus.com/reference/string/stoi/
+- **Convert to strings**
+  * std::to_string http://www.cplusplus.com/reference/string/to_string/
+
 std::string http://www.cplusplus.com/reference/string/string/
 - **Capacity:**
   * std::string::size http://www.cplusplus.com/reference/string/string/size/
@@ -8,6 +16,8 @@ std::string http://www.cplusplus.com/reference/string/string/
 - **String operations:**
   * std::string::c_str http://www.cplusplus.com/reference/string/string/c_str/
   * std::string::data http://www.cplusplus.com/reference/string/string/data/
+
+std::to_string https://en.cppreference.com/w/cpp/string/basic_string/to_string
 
 # `.c_str()`
 
