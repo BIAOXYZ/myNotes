@@ -406,8 +406,20 @@ $
   [root@CentOS /]# export CLASSPATH=`hadoop classpath --glob`
   ```
 
+# hdfs源码相关
+
+libhdfs源码分析(1) https://blog.csdn.net/vinowan/article/details/7440163
+
+Hadoop源代码分析(完整版) https://blog.csdn.net/huoyunshen88/article/details/8611629
+
 # 其他
 
 Apache Hadoop https://en.wikipedia.org/wiki/Apache_Hadoop
 
 【[:star:][`*`]】 Hadoop Tutorial: All you need to know about Hadoop! https://www.edureka.co/blog/hadoop-tutorial/
+
+## hdfs的append模式
+
+python 与hadoop之pyhdfs的append https://blog.csdn.net/w894607785/article/details/50245655
+
+libhdfs does not call FileSystem.append when O_APPEND passed to hdfsOpenFile https://issues.apache.org/jira/browse/HADOOP-4494

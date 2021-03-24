@@ -378,4 +378,16 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 
 # vscode插件
 
+## 插件官方市场
+
+### 官方出品
+- Remote - SSH https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+- Live Share https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+
+### 个人
+- Markdown All in One https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+- Bracket Pair Colorizer 2 https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+
+## 插件相关攻略
+
 VS Code 变身小霸王游戏机！ - 韩骏的文章 - 知乎 https://zhuanlan.zhihu.com/p/266374993
