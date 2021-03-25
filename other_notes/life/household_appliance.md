@@ -23,6 +23,10 @@
 
 真是讨厌洗碗，各位 v2er 有没有推荐洗碗机，谢谢了。 https://www.v2ex.com/t/721686
 
+# 其他
+
+戴森发布新旗舰无线吸尘器V15：激光技术加持 https://news.mydrivers.com/1/747/747057.htm
+
 # self
 
 利仁（Liven）空气炸锅5L家用大容量电炸锅多功能锅无油煎炸锅薯条机KZ-J5000B干炸锅 https://item.jd.com/5869380.html
