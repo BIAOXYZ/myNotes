@@ -19,6 +19,7 @@ Difference in make_shared and normal shared_ptr in C++ https://stackoverflow.com
 C++11 make_shared https://www.jianshu.com/p/03eea8262c11
 
 搞定技术面试：C++ 11 智能指针详解 https://juejin.cn/post/6844903993055920141
+
 # 已阅
 
 C++中的智能指针（1）：shared_ptr 的介绍和用法 https://blog.csdn.net/thinkerleo1997/article/details/78754919
