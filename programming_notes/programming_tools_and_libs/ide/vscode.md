@@ -53,6 +53,15 @@ English环境下
 或者直接 快捷键 : alt + Z
 ```
 
+## 向下复制一行代码
+
+vscode 向下复制当前行（即visual studio 中的Ctrl + D）功能快捷键 https://blog.csdn.net/haihui1996/article/details/87937912
+```console
+打开vscode左下角键盘快捷键设置，找到copy line down，即可查看当前默认快捷键为“shift + Alt + ↓”
+
+双击快捷键，输入自己想要的快捷组合，如Ctrl+D，然后回车即可设置自己的组合了
+```
+
 ## 代码块整体左移右移
 
 ```
@@ -391,3 +400,5 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 ## 插件相关攻略
 
 VS Code 变身小霸王游戏机！ - 韩骏的文章 - 知乎 https://zhuanlan.zhihu.com/p/266374993
+
+完美解决 vscode gitlens 左侧导航图标不显示 https://blog.csdn.net/wangqiaojie/article/details/112509214

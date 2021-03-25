@@ -1,4 +1,8 @@
 
+# general
+
+C++知识点 —— 整合（持续更新中） https://blog.csdn.net/bb807777/article/details/102882980
+
 # `++i` 与 `i++`
 
 在C++中，为什么部分程序员喜欢在loop写‘++i’而不是‘i++’？ - 知乎 https://www.zhihu.com/question/316271945
