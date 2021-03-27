@@ -69,3 +69,16 @@ Is there a performance difference between i++ and ++i in C? https://stackoverflo
 Classes https://en.cppreference.com/w/cpp/language/classes
 
 Classes (I) http://www.cplusplus.com/doc/tutorial/classes/
+
+# const、static、volatile等
+
+相关题目：
+- `LC409. 最长回文串` https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/401-600/000409/README.md
+
+C++ const 关键字小结 https://www.runoob.com/w3cnote/cpp-const-keyword.html
+
+关于C++ const 的全面总结 https://blog.csdn.net/eric_jo/article/details/4138548
+
+C++ static, const, volatile 总结 - 程序员杨小哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/354102787
+- > `const` 用在成员函数中, 位于 `function_name () const {}`
+  * > 我们在定义类的成员函数中，常常***有一些成员函数不改变类的数据成员***。也就是说这些函数的 `readonly function`，而有一些函数要修改类的数据成员的值。如果在 `readonly function` 都加上 `const` 进行标识，无疑会提高程序的可读性。其实还能提高程序的可靠性，已定义成 `const` 的成员函数，一旦企图改变数据成员的值，则编译器按错误处理。
