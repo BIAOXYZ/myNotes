@@ -18,5 +18,18 @@ std::map https://www.cplusplus.com/reference/map/map/
 ## map V.S. unordered_map
 
 map vs unordered_map in C++ https://www.geeksforgeeks.org/map-vs-unordered_map-c/
+- > Difference: 
+- > Use `std::map` when 
+  ```console
+  · You need ordered data.
+  · You would have to print/access the data (in sorted order).
+  · You need predecessor/successor of elements.
+  · See advantages of BST over Hash Table for more cases.
+  ```
+- > Use `std::unordered_map` when 
+  ```console
+  · You need to keep count of some data (Example – strings) and no ordering is required.
+  · You need single element access i.e. no traversal.
+  ```
 
 C++基础-map与unordered_map - 罗晓的文章 - 知乎 https://zhuanlan.zhihu.com/p/48066839
