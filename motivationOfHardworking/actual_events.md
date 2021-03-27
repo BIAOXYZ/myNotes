@@ -1,9 +1,17 @@
 
-# From CB
+# From IT media
 
-网友花了14个小时制作长春长生销售分布图 - 人物 - cnBeta.COM https://www.cnbeta.com/articles/tech/749691.htm || https://github.com/fuckcqcs/fuckcqcs
+小伙上厕所遇爆炸仍挂念房贷 官方称正查找原因 https://news.mydrivers.com/1/747/747674.htm
+- > 令人心疼的是，这名求职者全身多处深浅混合II度烧伤，面积达37%，截至发稿前病情危重，医生正在全力救治。在送院过程中，他嘴里念着：”我还要面试，东莞的房贷还没还清……”
+- 其他版本：
+  * 长沙85后小伙求职时上厕所遇爆炸！救护车上仍挂念“东莞的房贷” https://www.sohu.com/a/457537563_612784
+    + > 32 岁的蔡先生毕业后到深圳从事UI设计师工作，月薪3万，前两年在东莞买了一套房，欠下50多万房贷。去年10月，他想找份离老家株洲市炎陵县近些的工作，便回到湖南，一边准备公务员考试，一边找工作。
+  * 事发长沙！85后小伙求职时上厕所遇爆炸，救护车上仍挂念“东莞的房贷” https://mp.weixin.qq.com/s/P98qrnD1IKCtk5_wYfoQ0w
+  * 诡异！长沙一男子上厕所遇爆炸，被送进重症监护室 https://mp.weixin.qq.com/s/rzOK6gOr7kRp3eL3_ibn9g
 
 男子浏览街景地图发现亡父照片 https://www.ithome.com/0/441/329.htm
+
+网友花了14个小时制作长春长生销售分布图 - 人物 - cnBeta.COM https://www.cnbeta.com/articles/tech/749691.htm || https://github.com/fuckcqcs/fuckcqcs
 
 # From Acfun
 
