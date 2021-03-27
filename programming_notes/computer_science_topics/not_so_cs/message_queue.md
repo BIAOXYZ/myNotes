@@ -1,6 +1,8 @@
 
 # MQ general
 
+mq 选型 https://www.v2ex.com/t/765626
+
 消息队列和 RocketMQ 入门总结 https://mp.weixin.qq.com/s/eXzq5jg-2KkKziSPkcSQ5Q
 
 # celery
