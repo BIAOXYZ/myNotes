@@ -38,6 +38,19 @@ Tree Traversal - inorder, preorder and postorder https://www.programiz.com/dsa/t
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Morris遍历 (Tree)
+
+神级遍历——morris - god-jiang的文章 - 知乎 https://zhuanlan.zhihu.com/p/101321696
+
+Morris Traversal方法遍历二叉树（非递归，不用栈，O(1)空间） https://www.cnblogs.com/anniekim/archive/2013/06/15/morristraversal.html || https://www.jianshu.com/p/d2059062efac
+- > 通常，实现二叉树的前序（preorder）、中序（inorder）、后序（postorder）遍历有两个常用的方法：一是递归(recursive)，二是使用栈实现的迭代版本(stack+iterative)。这两种方法都是O(n)的空间复杂度（递归本身占用stack空间或者用户自定义的stack），所以不满足要求。（用这两种方法实现的中序遍历实现可以参考这里。）
+- > Morris Traversal方法可以做到这两点，与前两种方法的不同在于该方法只需要O(1)空间，而且同样可以在O(n)时间内完成。
+- > Morris只提供了中序遍历的方法，在中序遍历的基础上稍加修改可以实现前序，而后续就要再费点心思了。所以先从中序开始介绍。
+
+What is Morris traversal? https://www.educative.io/edpresso/what-is-morris-traversal
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # BTS and DTS (graph)
 
 【[:star:][`*`]】 图的遍历之 深度优先搜索和广度优先搜索 https://www.cnblogs.com/skywang12345/p/3711483.html
