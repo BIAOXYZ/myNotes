@@ -66,3 +66,37 @@ tokens
 # 其他
 
 c++ 中 char 与 string 之间的相互转换问题 https://www.cnblogs.com/devilmaycry812839668/p/6353807.html
+
+How to copy std::string into std::vector<char>? [duplicate] https://stackoverflow.com/questions/8263926/how-to-copy-stdstring-into-stdvectorchar
+- https://stackoverflow.com/questions/8263926/how-to-copy-stdstring-into-stdvectorchar/8263939#8263939
+  * 个人实战：
+    ```cpp
+    #include <iostream>
+    #include <string>
+    #include <vector>
+    
+    int main(void) {
+        std::string str = "hello";
+        std::vector<char> data;
+        std::copy(str.begin(), str.end(), std::back_inserter(data));
+        for (auto ch : data) 
+            std::cout << ch << std::endl;
+    }
+    //////////////////////////////////////////////////
+    h
+    e
+    l
+    l
+    o
+    ```
+
+实战c++中的string系列--std:vector<char> 和std:string相互转换(vector to stringstream) https://blog.csdn.net/wangshubo1989/article/details/50274289
+- > 
+  ```cpp
+  //方法四
+  string ch = "what a fucking day!";
+  vector <char> ta;
+  ta.resize(ch.size());
+  ta.assign(ch.begin(),ch.end());
+  ```
+  >> //notes：其实`resize()`可以不用。

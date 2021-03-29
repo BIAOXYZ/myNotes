@@ -25,4 +25,25 @@ stringstream in C++ and its applications https://www.geeksforgeeks.org/stringstr
 
 Stringstream in C++ programming https://www.tutorialspoint.com/stringstream-in-cplusplus-programming
 
-
+Size of stringstream [duplicate] https://stackoverflow.com/questions/4432793/size-of-stringstream
+- https://stackoverflow.com/questions/4432793/size-of-stringstream/4432865#4432865
+  * > This is for the write pointer, but the result is the same for read pointer on Visual C++ v10.
+    ```cpp
+    std::stringstream oss("String");
+    oss.seekp(0, ios::end);
+    stringstream::pos_type offset = oss.tellp();
+    ```
+  * 个人实战：
+    ```cpp
+    #include <iostream>
+    #include <sstream>
+    
+    int main(void) {
+        std::stringstream oss("String");
+        oss.seekp(0, std::ios::end);
+        std::stringstream::pos_type offset = oss.tellp();
+        std::cout << offset << std::endl;
+    }
+    //////////////////////////////////////////////////
+    6
+    ```
