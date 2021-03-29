@@ -46,6 +46,8 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 # from leetcode
 
+面试必考的「矩阵快速幂」考点汇总 https://mp.weixin.qq.com/s/mThDMnrhkK5EBSwgSgSSEA
+
 面试必考的「二分算法」系统梳理 https://mp.weixin.qq.com/s/DyRKRl_5bJclR30gxg5SXA
 
 面试必考的基础数据结构梳理（2） https://mp.weixin.qq.com/s/6IuYZs2q29199SXz71nZVg

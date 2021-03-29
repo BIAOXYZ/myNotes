@@ -12,6 +12,8 @@ std::istringstream https://www.cplusplus.com/reference/sstream/istringstream/
   * std::istream::getline https://www.cplusplus.com/reference/istream/istream/getline/
 
 std::stringstream https://www.cplusplus.com/reference/sstream/stringstream/
+- **Public member functions**
+  * std::stringstream::str https://www.cplusplus.com/reference/sstream/stringstream/str/
 - **Public member functions inherited from `istream`**
   * std::istream::getline https://www.cplusplus.com/reference/istream/istream/getline/
 
