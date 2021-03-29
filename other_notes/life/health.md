@@ -118,6 +118,8 @@
 
 # 瘟疫and流行病
 
+新冠疫苗接种技术指南发布：怎么打疫苗、要注意什么一目了然 https://news.mydrivers.com/1/747/747849.htm
+
 个人能自主选择不同品牌新冠疫苗吗？国家卫健委回应 https://news.mydrivers.com/1/746/746281.htm
 
 中国又一新冠疫苗获批紧急使用：首个重组型 https://news.mydrivers.com/1/746/746095.htm

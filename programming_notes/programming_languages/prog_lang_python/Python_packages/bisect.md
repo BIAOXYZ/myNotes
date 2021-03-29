@@ -3,6 +3,10 @@
 
 8.5. bisect — Array bisection algorithm https://docs.python.org/2.7/library/bisect.html
 
+bisect --- 数组二分查找算法 https://docs.python.org/zh-cn/3.8/library/bisect.html
+- > `bisect.insort_left(a, x, lo=0, hi=len(a))`
+  * > 将 x 插入到一个有序序列 a 里，并维持其有序。如果 a 有序的话，这相当于 `a.insert(bisect.bisect_left(a, x, lo, hi), x)`。要注意***搜索是 O(log n) 的，插入却是 O(n) 的***。
+
 `def bisect_left(a, x, lo=0, hi=None):` https://github.com/python/cpython/blob/2.7/Lib/bisect.py#L67
 ```py
 def bisect_left(a, x, lo=0, hi=None):
@@ -25,6 +29,14 @@ def bisect_left(a, x, lo=0, hi=None):
         if a[mid] < x: lo = mid+1
         else: hi = mid
     return lo
+```
+
+bisect.py https://github.com/python/cpython/blob/3.9/Lib/bisect.py
+
+>> //notes：另外，不管是Python2还是Python3的源码里，都有下面两句，只是位置不一样而已。所以（不带方向的）`bisect`其实就是`bisect_right`的一个别名，对于`insort`和`insort_right`也是一样的。
+```py
+bisect = bisect_right
+insort = insort_right
 ```
 
 # 其他
