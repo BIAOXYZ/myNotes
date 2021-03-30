@@ -207,7 +207,36 @@ SDB:Basics of partitions, filesystems, mount points https://en.opensuse.org/SDB:
 
 如何在Linux中输入Sudo密码时显示星号 https://www.howtoing.com/show-asterisks-sudo-password-in-linux
 
-## 脚本彩色输出
+## Linux颜色相关
+
+### 终端显示彩色
+
+【[:star:][`*`]】 Linux基础命令和修改Linux终端输出颜色 https://www.cnblogs.com/Zzbj/p/10241935.html 【然而这个文章主要不在于彩色显示的部分。。。】
+- > 3、touch还可以修改文件的时间
+  ```sh
+  touch -t '年月日时分秒' 文件   其中年和秒是可选的
+  touch -t '201901072220' test.py  2019年1月7日22点20分
+  ```
+- > 28、拓展
+  ```console
+  127.0.0.1和0.0.0.0的区别
+  假设我的电脑ip是192.168.3.16，那么
+  127.0.0.1        代表本机回环地址
+  0.0.0.0          代表着127.0.0.1加上192.168.3.16
+  
+  那么，如果我在本机起了一个服务，
+  如果我设置的服务ip地址为127.0.0.1，就代表这个服务只有我自己本机才能访问，
+  如果我设置的服务ip地址为0.0.0.0，就代表这个服务我自己本机可以访问，你使用192.168.3.16也可以访问到。
+  
+  因此，为什么Xshell可以远程连接到linux服务器
+  1.因为服务器运行着sshd服务
+  2.且sshd服务运行在0.0.0.0:22端口 
+  3.我们就可以使用   ssh root@192.168.3.16:22去访问sshd服务，这个服务就是让我们连接到服务器
+  ```
+
+linux设置ls显示的各种文件颜色 https://blog.csdn.net/csCrazybing/article/details/50836434
+
+### 脚本彩色输出
 
 shell脚本输出输出带颜色内容 https://blog.csdn.net/David_Dai_1108/article/details/70478826
 
