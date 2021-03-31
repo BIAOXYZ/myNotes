@@ -32,3 +32,5 @@ PATH_MAX: 4096
 readlink return: 16
 dir: /home/yasi/tmp/t
 ```
+
+linux 获取当前进程的可执行文件所在的目录 https://blog.csdn.net/daniel_ustc/article/details/8769197

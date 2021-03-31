@@ -7,4 +7,6 @@ C POSIX library https://zh.wikipedia.org/wiki/C_POSIX_library
 
 POSIX 标准简介 https://github.com/cisen/blog/issues/701
 
+Linux C编程之常用文件I/O操作 https://www.linuxidc.com/Linux/2017-08/146437.htm
+
 Linux 文件IO管理 - POSIX https://www.cnblogs.com/Jimmy1988/p/7488709.html
