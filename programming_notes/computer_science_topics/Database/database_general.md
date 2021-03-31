@@ -209,6 +209,14 @@ Bitmap index https://en.wikipedia.org/wiki/Bitmap_index
 
 SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
 
+17 Sites for SQL Practice https://www.databasestar.com/sql-practice/
+- SQLZoo
+- HackerRank
+- Oracle Live SQL
+
+【from datacamp】
+- Introduction to SQL https://learn.datacamp.com/courses/introduction-to-sql
+
 在线就能用的 SQL 练习平台我给你找好了！ - Rocky0429的文章 - 知乎 https://zhuanlan.zhihu.com/p/92590262
 - SQLZOO -- Learn SQL using: SQL Server, Oracle, MySQL, DB2, and PostgreSQL. https://sqlzoo.net/
 - SQLBolt -- Learn SQL with simple, interactive exercises. https://sqlbolt.com/
