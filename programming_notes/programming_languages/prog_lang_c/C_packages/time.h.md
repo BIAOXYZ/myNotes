@@ -11,9 +11,13 @@
 - **types**
   * struct tm https://www.cplusplus.com/reference/ctime/tm/
 
+time https://en.cppreference.com/w/c/chrono/time
+
 # wiki
 
 time.h https://zh.wikipedia.org/wiki/Time.h
+
+C Programming/time.h https://en.wikibooks.org/wiki/C_Programming/time.h
 
 # 其他
 
