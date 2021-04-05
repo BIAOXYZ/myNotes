@@ -329,6 +329,8 @@ Universally Composable Accumulators https://eprint.iacr.org/2018/1241.pdf
 
 Introduction and overview of verifiable computation https://cyber.biu.ac.il/wp-content/uploads/2017/01/1-2.pdf   (YTK $100) 
 
+(S&P 2015) Geppetto: Versatile Verifiable Computation https://eprint.iacr.org/2014/976.pdf || https://ieeexplore.ieee.org/document/7163030
+
 ###
 
 在MAC上安装MIRACL库(How to install Miracl on Macos system) https://blog.csdn.net/HOXDSC/article/details/84102908
