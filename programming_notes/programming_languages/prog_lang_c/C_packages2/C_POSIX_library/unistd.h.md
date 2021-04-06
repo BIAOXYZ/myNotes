@@ -34,3 +34,9 @@ dir: /home/yasi/tmp/t
 ```
 
 linux 获取当前进程的可执行文件所在的目录 https://blog.csdn.net/daniel_ustc/article/details/8769197
+
+# `TEMP_FAILURE_RETRY(expression)`
+
+宏: TEMP_FAILURE_RETRY(expression) https://blog.csdn.net/u012385733/article/details/81630404
+
+C++ (Cpp) TEMP_FAILURE_RETRY Examples https://cpp.hotexamples.com/examples/-/-/TEMP_FAILURE_RETRY/cpp-temp_failure_retry-function-examples.html
