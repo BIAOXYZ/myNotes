@@ -321,7 +321,7 @@ YARN_NODEMANAGER_USER=root
 ```
 >> //notes：此外，还可能碰到ssh互信的问题，或者用这个帖子里的 `cat id_rsa.pub >> authorized_keys` 或者自己用 `ssh-copy-id` 搞定（我发现前者也是有其好处的：比如用 `sudo -i` 切到root后，想用 `ssh-copy-id` 时发现不知道root的密码- -）。
 
-# Hadoop application develop
+# Hadoop application develop (C/C++)
 
 https://github.com/tmacam/libhdfscpp
 - HDFS-APIs ~~http://wiki.apache.org/hadoop/HDFS-APIs~~  -->  https://cwiki.apache.org/confluence/display/HADOOP2/HDFS-APIs
@@ -406,6 +406,33 @@ $
   [root@CentOS /]# export CLASSPATH=`hadoop classpath --glob`
   ```
 
+# Hadoop application develop (Go)
+
+HDFS for Go
+- https://github.com/colinmarc/hdfs
+- https://pkg.go.dev/github.com/colinmarc/hdfs/v2 
+- https://pkg.go.dev/github.com/colinmarc/hdfs
+
+Making HDFS a hundred times faster https://medium.com/sqooba/making-hdfs-a-hundred-times-faster-ac75b8b5e0b4
+
+go http实现HDFS操作 https://studygolang.com/articles/17042
+- >
+  ```console
+  目前使用golang调用hdfs的方式有以下几种：
+    · 使用go http 调用webHDFS/httpfs接口实现。
+    · 使用c lib提供的API, 并用cgo进行封装，然后调用实现。
+    · 使用第三方golang客户端实现。（https://github.com/colinmarc/hdfs）。
+  ```
+- > Hadoop 官方接口地址：http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html
+
+Go day 30 (HDFS to Redis & keep going) https://ithelp.ithome.com.tw/articles/10206670
+
+How to write Map/Reduce tasks in Golang? https://stackoverflow.com/questions/31832266/how-to-write-map-reduce-tasks-in-golang
+
+Golang Client Examples https://golang.hotexamples.com/examples/github.com.colinmarc.hdfs/Client/-/golang-client-class-examples.html
+
+A Simple MapReduce in Go https://levelup.gitconnected.com/a-simple-mapreduce-in-go-42c929b000c5
+
 # hdfs源码相关
 
 libhdfs源码分析(1) https://blog.csdn.net/vinowan/article/details/7440163
@@ -423,3 +450,7 @@ Apache Hadoop https://en.wikipedia.org/wiki/Apache_Hadoop
 python 与hadoop之pyhdfs的append https://blog.csdn.net/w894607785/article/details/50245655
 
 libhdfs does not call FileSystem.append when O_APPEND passed to hdfsOpenFile https://issues.apache.org/jira/browse/HADOOP-4494
+
+# 问题处理
+
+What is the correct way to fix an assertion in loadlocale.c? https://askubuntu.com/questions/1081901/what-is-the-correct-way-to-fix-an-assertion-in-loadlocale-c
