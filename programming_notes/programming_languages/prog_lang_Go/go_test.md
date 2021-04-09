@@ -11,7 +11,7 @@ Testing https://www.golang-book.com/books/intro/12
   ```go
   func TestXxx(*testing.T)
   ```
-  > 注意：`Xxx` 可以是任何字母数字字符串，但是第一个字母不能是小些字母。在这些函数中，使用 Error, Fail 或相关方法来发出失败信号。
+  > 注意：`Xxx` 可以是任何字母数字字符串，***但是第一个字母不能是小些字母***。在这些函数中，使用 Error, Fail 或相关方法来发出失败信号。
 - > 要编写一个新的测试套件，需要创建一个名称以 `_test.go` 结尾的文件，该文件包含 `TestXxx` 函数，如上所述。 将该文件放在与被测试的包相同的包中。该文件将被排除在正常的程序包之外，但在运行 “ go test ” 命令时将被包含。 有关详细信息，请运行 “ go help test ” 和 “ go help testflag ” 了解。
 
 Unit Testing made easy in Go https://medium.com/rungo/unit-testing-made-easy-in-go-25077669318
@@ -19,6 +19,30 @@ Unit Testing made easy in Go https://medium.com/rungo/unit-testing-made-easy-in-
 Go 测试，go test 工具的具体指令 flag https://deepzz.com/post/the-command-flag-of-go-test.html
 
 如何测试你的 Go 代码 https://juejin.im/post/6844903933278683149
+
+Go 测试函数 https://blog.csdn.net/u013137970/article/details/83747740
+- > **2 测试单个函数**
+  * > 一个测试文件可能有多个测试函数，指定特定的测试函数运行：`go test -test.run TestXXX`
+    >> //notes: 实测直接用 `go test -run TestXXX` 即可。
+  * > 如果 `TestXXX` 不存在，则会返回错误：
+    ```go
+    $ go test -test.run TestCheckSigSm22 -v
+    testing: warning: no tests to run
+    PASS
+    ok  	github.com/bytom/protocol/vm	0.008s
+    ```
+- > **3 测试缓存**
+  * > 运行 Go 测试函数的时候，如果已经运行过 go test，则之后如果文件没有发生改变，则就会自动应用上次测试缓存。如下所示：
+    ```console
+    PASS
+    ok      tester/apitests    (cached)
+    ```
+  * > 如果不想应用上次测试缓存，则有两种方式删除缓存：
+    > 1. 使用 go clean -testcache 清理所有测试结果。
+    > 2. 在执行 go test 时添加 -count=1 关闭测试缓存。
+  * > 方法1可以暂时清理测试缓存，方法2可以在每次执行测试的时候不使用测试缓存。
+
+编写可测试的Go代码 https://haobook.readthedocs.io/zh_CN/latest/periodical/201608/tanyanping.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
