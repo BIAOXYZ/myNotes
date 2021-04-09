@@ -67,6 +67,105 @@ Tony Bai 一个程序员的心路历程 https://tonybai.com/
   * > 仔细看，这两个切片的地址不一样，所以可以确认切片在函数间传递是复制的。而我们修改一个索引的值后，发现原切片的值也被修改了，说明它们共用一个底层数组。
 
 Go语言参数传递是传值还是传引用 https://www.flysnow.org/2018/02/24/golang-function-parameters-passed-by-value.html
+- > 什么是传值（值传递）
+  ```go
+  package main
+  import "fmt"
+  func main() {
+  	i:=10
+  	ip:=&i
+  	fmt.Printf("原始指针的内存地址是：%p\n",&ip)
+  	modify(ip)
+  	fmt.Println("int值被修改了，新值为:",i)
+  }
+  func modify(ip *int){
+  	fmt.Printf("函数里接收到的指针的内存地址是：%p\n",&ip)
+    *ip=1
+  }
+  //////////////////////////////////////////////////
+  原始指针的内存地址是：0xc42000c028
+  函数里接收到的指针的内存地址是：0xc42000c038
+  int值被修改了，新值为: 1
+  ```
+- > 什么是传引用(引用传递)
+  * > Go语言(Golang)是没有引用传递的，这里我不能使用Go举例子，但是可以通过说明描述。以上面的例子为例，如果在modify函数里打印出来的内存地址是不变的，也是0xc42000c028，那么就是引用传递。
+- > 迷惑Map
+  * > 了解清楚了传值和传引用，但是对于Map类型来说，可能觉得还是迷惑，一来我们可以通过方法修改它的内容，二来它没有明显的指针。
+    ```go
+    package main
+    import "fmt"
+    func main() {
+    	persons:=make(map[string]int)
+    	persons["张三"]=19
+    
+    	mp:=&persons
+    
+    	fmt.Printf("原始map的内存地址是：%p\n",mp)
+    	modify(persons)
+    	fmt.Println("map值被修改了，新值为:",persons)
+    }
+    func modify(p map[string]int){
+        fmt.Printf("函数里接收到map的内存地址是：%p\n",&p)
+        p["张三"]=20
+    }
+    //////////////////////////////////////////////////
+    原始map的内存地址是：0xc42000c028
+    函数里接收到map的内存地址是：0xc42000c038
+    map值被修改了，新值为: map[张三:20]
+    ```
+  * > 两个内存地址是不一样的，所以这又是一个值传递（值的拷贝），那么为什么我们可以修改Map的内容呢？先不急，我们先看一个自己实现的struct。
+    ```go
+    package main
+    import "fmt"
+    func main() {
+    	p:=Person{"张三"}
+    	fmt.Printf("原始Person的内存地址是：%p\n",&p)
+    	modify(p)
+    	fmt.Println(p)
+    }
+    type Person struct {
+    	Name string
+    }
+    func modify(p Person) {
+        fmt.Printf("函数里接收到Person的内存地址是：%p\n",&p)
+        p.Name = "李四"
+    }
+    //////////////////////////////////////////////////
+    原始Person的内存地址是：0xc4200721b0
+    函数里接收到Person的内存地址是：0xc4200721c0
+    {张三}
+    ```
+  * > 我们发现，我们自己定义的Person类型，在函数传参的时候也是值传递，但是它的值(Name字段)并没有被修改，我们想改成李四，发现最后的结果还是张三。这也就是说，map类型和我们自己定义的struct类型是不一样的。我们尝试把modify函数的接收参数改为Person的指针。
+    ```go
+    package main
+    import "fmt"
+    func main() {
+    	p:=Person{"张三"}
+    	modify(&p)
+    	fmt.Println(p)
+    }
+    type Person struct {
+        Name string
+    }
+    func modify(p *Person) {
+        p.Name = "李四"
+    }
+    //////////////////////////////////////////////////
+    {李四}
+    ```
+  * > 在运行查看输出，我们发现，这次被修改了。我们这里省略了内存地址的打印，因为我们上面int类型的例子已经证明了指针类型的参数也是值传递的。 指针类型可以修改，非指针类型不行，那么我们可以大胆的猜测，我们使用make函数创建的map是不是一个指针类型呢？看一下源代码:
+    ```go
+    // makemap implements a Go map creation make(map[k]v, hint)
+    // If the compiler has determined that the map or the first bucket
+    // can be created on the stack, h and/or bucket may be non-nil.
+    // If h != nil, the map can be created directly in h.
+    // If bucket != nil, bucket can be used as the first bucket.
+    func makemap(t *maptype, hint int64, h *hmap, bucket unsafe.Pointer) *hmap {
+        //省略无关代码
+    }
+    ```
+- > 通过查看 `src/runtime/hashmap.go` 源代码发现，的确和我们猜测的一样，`make`函数返回的是一个`hmap`类型的指针`*hmap`。也就是说`map===*hmap`。 现在看`func modify(p map)`这样的函数，其实就等于`func modify(p *hmap)`，和我们前面第一节什么是值传递里举的`func modify(ip *int)`的例子一样，可以参考分析。
+- > 所以在这里，Go语言通过`make`函数，字面量的包装，为我们省去了指针的操作，让我们可以更容易的使用`map`。这里的`map`可以理解为引用类型，但是记住引用类型不是传引用。
 
 # 其他
 
