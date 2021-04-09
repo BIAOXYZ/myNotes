@@ -166,6 +166,21 @@ Go语言参数传递是传值还是传引用 https://www.flysnow.org/2018/02/24/
     ```
 - > 通过查看 `src/runtime/hashmap.go` 源代码发现，的确和我们猜测的一样，`make`函数返回的是一个`hmap`类型的指针`*hmap`。也就是说`map===*hmap`。 现在看`func modify(p map)`这样的函数，其实就等于`func modify(p *hmap)`，和我们前面第一节什么是值传递里举的`func modify(ip *int)`的例子一样，可以参考分析。
 - > 所以在这里，Go语言通过`make`函数，字面量的包装，为我们省去了指针的操作，让我们可以更容易的使用`map`。这里的`map`可以理解为引用类型，但是记住引用类型不是传引用。
+- 个人补充：
+  ```go
+  /*
+  起因是使用 hdfs 的 go sdk 的 Read 函数时，发现了如下问题：
+  - 如果变量 buff 用 make 的方式定义，则可以成功把 fileReader 里的内容读到 buff 里去，并打印出来。
+  - 如果变量 buff 用（注释掉的那句）var 的方式定义，则 fileReader 里的内容读不进去，打印结果为空。
+  */
+  
+  //var buff []byte
+  buff := make([]byte, 1024*1024)
+  fileReader.Read(buff)
+  fmt.Println("111")
+  fmt.Println(string(buff))
+  fmt.Println("222")
+  ```
 
 # 其他
 
