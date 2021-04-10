@@ -1,4 +1,7 @@
 
+问个 Linux 问题，纠结一下午了，关于 user 和 group, /etc/passwd 和 /etc/group https://www.v2ex.com/t/769788
+- > （补充组才需要在 /etc/group 里记录，这是约定） <br> 你可以反过来思考下为什么要这样约定 假设不遵循约定会发生什么。。。 <br> 简单说就是数据库设计里避免冗余的方法，如果已经在 passwd 里决定了主组，如果还在 group 里重复记录，那么在出现不一致的时候就会产生歧义，到底按哪个记录为准，现在这样设计就很明确了，登录的时候程序只需要读取 passwd 改变程序的 UID gid，读取 group 扫描有对应用户的 group，通过 setgroups 系统调用设置补充组即可
+
 运行关机 shutdown 命令时。能不能自动关闭某些服务 https://www.v2ex.com/t/729734
 ```console
 A 自定义了一个脚本在 /etc/init.d/test，在 A 运行 service test stop，就会 ssh 到 B 机器，shutdown 关机 B 机器。
