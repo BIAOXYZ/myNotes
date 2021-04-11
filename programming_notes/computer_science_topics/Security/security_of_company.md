@@ -70,3 +70,10 @@ JUGO：
 - https://www.fudata.cn/fmpc
 
 揭秘联邦学习黑马：富数科技FMPC安全计算平台 - hellompc的文章 - 知乎 https://zhuanlan.zhihu.com/p/127941761
+
+## 其他项目
+
+ABY 3 and Applications https://github.com/ladnir/aby3
+- ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf
+
+MPyC MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc

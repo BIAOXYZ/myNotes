@@ -13,6 +13,8 @@ https://blog.csdn.net/liuyueyi1995/article/details/54892399
 
 Jana: Private Data as a Service https://galois.com/project/jana-private-data-as-a-service/
 
+SentinelDB https://logsentinel.com/sentineldb/
+
 # Database Firewall
 
 - KalepsoDB: 1st End-to-End Encrypted DBMS https://www.kalepso.com/
