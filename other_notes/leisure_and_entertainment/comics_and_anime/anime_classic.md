@@ -78,12 +78,18 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 ## From: 名侦探柯南DetectiveConan
 
+【重磅消息】4月17日全国上映！！剧场版《名侦探柯南：绯色的子弹》终于在万众期待中定档！ https://mp.weixin.qq.com/s/YzV6zPUKgPDBAKW3mUU2Vg
+
 来康康小新一和小小兰，还有一头浓密头发的博士吧！ https://mp.weixin.qq.com/s/S7Rw2yi7ExUFkOgrFNTbKA
 - > 第512-513集《工藤新一少年冒险》
 
 真 · 被气到头大系列① https://mp.weixin.qq.com/s/fHJH9Y0TLCuaLZ1Sudsxxw
 
 基德男扮女装的名场面系列 https://mp.weixin.qq.com/s/oDtoBMIQKhA65_izDITOQg
+
+## From others
+
+笑死！画《柯南》多年的青山刚昌近日诉苦：我的作案手法库存为0了啊！ https://mp.weixin.qq.com/s/zD4gZBzYQndnOTnN_RVBNQ
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

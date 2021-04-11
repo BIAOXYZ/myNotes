@@ -65,6 +65,9 @@ JUGO：
 - https://jugo.juzix.net/home
 - https://jugo.juzix.net/apiDocument
 
+实验室论文被密码学顶级会议PKC收录！ https://mp.weixin.qq.com/s/nv4a33aO-p6CEbGpkolgvQ
+- > 近日，上海市数据隐私安全计算企业重点实验室谢翔博士联合香港大学学者共同合作的论文《Compact Zero-Knowledge Proofs for Threshold ECDSA with Trustless Setup》被公钥密码学领域国际顶级会议PKC 2021（the International Conference on Practice and Theory of Public Key Cryptography, PKC）录用，该会议将在北京时间2021年5月9日至13日于线上举行。
+
 ## 富数科技
 
 - https://www.fudata.cn/fmpc
@@ -75,5 +78,7 @@ JUGO：
 
 ABY 3 and Applications https://github.com/ladnir/aby3
 - ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf
+
+ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation https://github.com/encryptogroup/ABY  【这个和ABY<sup>3</sup>貌似不是一个单位搞的】
 
 MPyC MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
