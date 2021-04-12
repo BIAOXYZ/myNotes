@@ -1,4 +1,6 @@
 
+请教个 docker 或是 iptables 防火墙问题：容器内能 ping 通 ip 但 ping 不通域名，提示“bad address” https://www.v2ex.com/t/769968
+
 Linux 网络路由问题 https://www.v2ex.com/t/738878
 ```console
 各位好,请教一个问题,目前这边有台 centos 的服务器. em1 是公网固定 IP,静态配置. 
