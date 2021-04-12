@@ -453,4 +453,50 @@ libhdfs does not call FileSystem.append when O_APPEND passed to hdfsOpenFile htt
 
 # 问题处理
 
+## 1.语言问题，只需要 `export LC_ALL=C` 即可
+
 What is the correct way to fix an assertion in loadlocale.c? https://askubuntu.com/questions/1081901/what-is-the-correct-way-to-fix-an-assertion-in-loadlocale-c
+
+## 2.`hdfsGetPathInfo()`函数的使用要在`hdfsOpenFile()`之后
+
+https://cpp.hotexamples.com/zh/examples/-/-/hdfsGetPathInfo/cpp-hdfsgetpathinfo-function-examples.html
+```cpp
+// 这个函数返回一个构造好的chunkid和每个chunk的指针
+// 这个里面的chunkId肯定是要在blockManager注册然后汇报信息的
+// put的话也是会这样的，可以将这个函数中调用put然后统一汇报信息的接口
+ChunkInfo BlockManager::loadFromHdfs(string file_name){
+	// 由此函数得到的<blockId,指针>
+	ChunkInfo ci;
+	string file_name_former,file_name_latter;
+	unsigned pos=file_name.rfind("$");
+	file_name_former=file_name.substr(0,pos);
+	file_name_latter=file_name.substr(pos+1,file_name.length());
+	int offset=atoi(file_name_latter.c_str());
+	hdfsFS fs=hdfsConnect(Config::hdfs_master_ip.c_str(),Config::hdfs_master_port);
+	hdfsFile readFile=hdfsOpenFile(fs,file_name_former.c_str(),O_RDONLY,0,0,0);
+	hdfsFileInfo *hdfsfile=hdfsGetPathInfo(fs,file_name_former.c_str());
+	if(!readFile){
+		cout<<"open file error"<<endl;
+	}
+	unsigned length=0;
+	length=length+CHUNK_SIZE*offset;
+	if(length<hdfsfile->mSize){
+		void *rt=malloc(CHUNK_SIZE);		//newmalloc
+		tSize bytes_num=hdfsPread(fs,readFile,length,rt,CHUNK_SIZE);
+		ostringstream chunkid;
+		chunkid<<file_name.c_str()<<"$"<<offset;
+//		ci.chunkId=chunkid.gestr().c_str();
+		ci.hook=rt;
+	}else{
+		ostringstream chunkid;
+		chunkid<<file_name.c_str()<<"$"<<offset;
+//		ci.chunkId=chunkid.str().c_str();
+		ci.hook=0;
+	}
+	hdfsCloseFile(fs,readFile);
+	hdfsDisconnect(fs);
+	return ci;
+}
+```
+
+hdfsGetPathInfo() https://docs.datafabric.hpe.com/62/DevelopmentGuide/hdfsGetPathInfo.html
