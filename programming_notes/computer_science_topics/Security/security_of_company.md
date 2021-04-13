@@ -82,3 +82,15 @@ ABY 3 and Applications https://github.com/ladnir/aby3
 ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation https://github.com/encryptogroup/ABY  【这个和ABY<sup>3</sup>貌似不是一个单位搞的】
 
 MPyC MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
+- > See the [MPyC homepage]() for more info and background.
+  * MPyC: Secure Multiparty Computation in Python https://www.win.tue.nl/~berry/mpyc/
+    + > See [MPyC--Python Package for Secure Multiparty Computation (PDF Slides)]() for some background information.
+      - MPyC – Python Package for Secure Multiparty Computation https://www.win.tue.nl/~berry/mpyc/TPMPC2018.pdf
+- > See demos for usage examples and [MPyC docs]() for pydoc-based documentation.
+  * mpyc (version 0.7) https://lschoe.github.io/mpyc/
+
+GBDT_Simple_Tutorial（梯度提升树简易教程） https://github.com/Freemanzxp/GBDT_Simple_Tutorial
+- > 算法原理以及公式推导请前往blog：[GBDT算法原理以及实例理解](https://blog.csdn.net/zpalyq110/article/details/79527653)
+
+Privacy-Preserving XGBoost Inference https://github.com/awslabs/privacy-preserving-xgboost-inference
+- > An extended abstract of this work ( https://arxiv.org/pdf/2011.04789.pdf ) appears in Privacy-preserving Machine Learning Workshop at NeurIPS 2020.
