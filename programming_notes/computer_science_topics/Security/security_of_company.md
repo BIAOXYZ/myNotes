@@ -74,20 +74,35 @@ JUGO：
 
 揭秘联邦学习黑马：富数科技FMPC安全计算平台 - hellompc的文章 - 知乎 https://zhuanlan.zhihu.com/p/127941761
 
-## 其他项目
+# 其他项目
+
+## ABY<sup>3</sup>
 
 ABY 3 and Applications https://github.com/ladnir/aby3
-- ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf
+- ***Paper***:
+  * (CCS 2018) ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf || https://dl.acm.org/doi/10.1145/3243734.3243760
+
+（阅读笔记）ABY3: A Mixed Protocol Framework for Machine Learning https://blog.csdn.net/qq_42328228/article/details/109563447
+
+## ABY
 
 ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation https://github.com/encryptogroup/ABY  【这个和ABY<sup>3</sup>貌似不是一个单位搞的】
+- ***Paper***:
+  * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
 
-MPyC MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
+(USENIX Security 2021) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。】
+
+## MPyC
+
+MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
 - > See the [MPyC homepage]() for more info and background.
   * MPyC: Secure Multiparty Computation in Python https://www.win.tue.nl/~berry/mpyc/
     + > See [MPyC--Python Package for Secure Multiparty Computation (PDF Slides)]() for some background information.
       - MPyC – Python Package for Secure Multiparty Computation https://www.win.tue.nl/~berry/mpyc/TPMPC2018.pdf
 - > See demos for usage examples and [MPyC docs]() for pydoc-based documentation.
   * mpyc (version 0.7) https://lschoe.github.io/mpyc/
+
+## 小型项目
 
 GBDT_Simple_Tutorial（梯度提升树简易教程） https://github.com/Freemanzxp/GBDT_Simple_Tutorial
 - > 算法原理以及公式推导请前往blog：[GBDT算法原理以及实例理解](https://blog.csdn.net/zpalyq110/article/details/79527653)
