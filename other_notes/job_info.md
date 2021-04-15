@@ -379,6 +379,10 @@ System/360 大型机差点毁了 IBM ！ https://mp.weixin.qq.com/s/K5cqbg5_TkvM
 
 在英特尔 (Intel) 工作是怎样的一番体验？ - 知乎 https://www.zhihu.com/question/24694855
 
+因未尽责、批了低价，损失 1000 多万元：IBM 开除了小型机销售总监张某、销售经理邢某 https://mp.weixin.qq.com/s/DVwBGU6x-AQv_hdMuhGNjg
+- > 张某于1993年入职IBM，并签订无固定期限劳动合同。张某职务为IBM大中华区系统与科技事业部小型机销售总监。工资标准为206,383.19元/月。
+- > 邢XX于2009年入职IBM，并签订无固定期限劳动合同。邢某某自2015年11月1日起担任IBM系统与科技事业部小型机北中国区销售经理。工资标准为121,842.56元/月。
+
 ## 百度相关新闻
 
 百度的 GCC 被三体人锁定在 3.4.5 版本是什么典故？ - 知乎 https://www.zhihu.com/question/21042367
