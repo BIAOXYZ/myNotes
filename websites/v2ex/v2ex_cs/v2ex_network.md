@@ -1,4 +1,17 @@
 
+[问题已解决｜后续] docker 容器能 PING 通 IP 但 PING 不通域名问题的排查经历分享 https://www.v2ex.com/t/770438
+```console
+编辑好了…… v 站不让我发，就分享这个链接了，写在了博文中
+前情提要： https://www.v2ex.com/t/769968
+[已解决] 记一次 docker 容器内能 ping 通 ip 但 ping 不通域名问题的排查经过 https://hellodk.cn/post/496
+```
+- > 还没看，盲猜 `daemon.json` 配置了 `iptables: false`
+  >> 比我想象的复杂一点，之前碰到过配置了 `iptables: false` 现象跟你这个一样，手动加防火墙规则就行了 理论上说配置了 `iptables: true`，docker 会自动加防火墙规则的
+- > TL;DR
+  > 1. 没有配置 udp 转发
+  > 2. 自建 dns 没有接受来自 docker 网卡的查询
+- > 这个之前再机房得时候遇到过一次,外包开发部署得系统和 docker. 他们说网络异常,然后就装死不解决了,没办法我亲自上去排查. 当时直接先查路由还有 ping 发现全打到本地上了,于是怀疑是不是路由表或者虚拟 IP 导致得,ip addr 一下果然是 docker 得默认 bridge 与实际网卡地址段冲突了.告诉开发让他们修改 docker0 得默认地址段重启就解决了. <br> 还有就是 wsl 每次重启也会随机分配 IP,偶尔也会分配到 172.1X 2X 3X 得地址段上,也是个坑,得注意.
+
 请教个 docker 或是 iptables 防火墙问题：容器内能 ping 通 ip 但 ping 不通域名，提示“bad address” https://www.v2ex.com/t/769968
 
 Linux 网络路由问题 https://www.v2ex.com/t/738878

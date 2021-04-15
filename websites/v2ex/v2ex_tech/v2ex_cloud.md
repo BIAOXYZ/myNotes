@@ -1,4 +1,6 @@
 
+大家有没有搞过有状态应用上 K8S https://www.v2ex.com/t/770562
+
 docker build go 项目每次都很慢，有什么好的办法吗？ https://www.v2ex.com/t/731045
 
 有大佬用过 Gitlab 的 CICD 吗 https://www.v2ex.com/t/722305
