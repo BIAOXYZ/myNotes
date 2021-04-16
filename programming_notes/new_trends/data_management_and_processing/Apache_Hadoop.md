@@ -500,3 +500,13 @@ ChunkInfo BlockManager::loadFromHdfs(string file_name){
 ```
 
 hdfsGetPathInfo() https://docs.datafabric.hpe.com/62/DevelopmentGuide/hdfsGetPathInfo.html
+
+## 3. 并发读写问题
+
+HDFS在同一时刻只能读或者写同一文件么，能不能并发执行？ - 知乎 https://www.zhihu.com/question/28723376
+
+HDFS多线程追加写数据踩坑 https://blog.csdn.net/weixin_44252761/article/details/89517393
+
+HDFS的读写流程 https://www.cnblogs.com/feiyumo/p/12541296.html
+
+《hadoop权威指南》笔记二： hdfs读写过程剖析 https://cloud.tencent.com/developer/article/1500068

@@ -74,6 +74,10 @@ JUGO：
 
 揭秘联邦学习黑马：富数科技FMPC安全计算平台 - hellompc的文章 - 知乎 https://zhuanlan.zhihu.com/p/127941761
 
+## 百度
+
+PrivC—A Framework for Efficient Secure Two-Party Computation https://link.springer.com/chapter/10.1007/978-3-030-37231-6_23
+
 # 其他项目
 
 ## ABY<sup>3</sup>
