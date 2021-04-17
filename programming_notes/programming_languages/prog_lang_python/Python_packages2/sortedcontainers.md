@@ -30,3 +30,4 @@ SortedSet(['a', 'b', 'c', 'd', 'r'])
 
 - `1438. 绝对差不超过限制的最长连续子数组` https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/solution/jue-dui-chai-bu-chao-guo-xian-zhi-de-zui-5bki/
 - `456. 132模式` https://leetcode-cn.com/problems/132-pattern/solution/132mo-shi-by-leetcode-solution-ye89/
+- `220. 存在重复元素 III` https://leetcode-cn.com/problems/contains-duplicate-iii/
