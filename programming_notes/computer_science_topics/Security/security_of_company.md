@@ -108,6 +108,8 @@ MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
 
 ## SecMML
 
+复旦大学开源的隐私计算项目SecMML https://mp.weixin.qq.com/s/MRfwctyFpUbIRXihVZpjFw
+
 SecMML https://github.com/FudanMPL/SecMML
 - > SecMML是FudanMPL(Multi-Party Computation + Machine Learning)的一个分支，是用于训练机器学习模型的高效可扩展的安全多方计算（MPC）框架，基于BGW协议实现。此框架可以应用到三个及以上参与方联合训练的场景中。目前，SecMML能够支持几种当前流行的机器学习模型，包括线性回归模型，逻辑回归模型，BP神经网络和LSTM神经网络模型。
 
