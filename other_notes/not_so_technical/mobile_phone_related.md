@@ -67,11 +67,15 @@ we limit the number of accounts each phone number can create.
 - > 6. 重点联系人这么弄
   * > 如果你正在等待某位重要人士的消息，最好的方法，就是打开联系人头像，点击右上角 “…”，为 TA 开启一个 “限时提醒”。开启之后，如果该联系人在规定时间内发来消息，微信会自动弹出一个醒目的全屏提醒，声音也和普通消息不一样。
 
-# 日程提醒/定时提醒
+## 日程提醒/定时提醒
 
 微信上如何设置某一信息过一小时后再次提醒？ https://jingyan.baidu.com/article/e4d08ffd764cc40fd2f60d96.html
 > 原来微信是有提醒功能的，不过非常之简陋。。。也有小程序可以提醒，比如下面这个小叮提醒（其实就是自己在百度百科顺便打个广告- -）：
 >> 微信怎样设置日程提醒 https://jingyan.baidu.com/article/046a7b3e60e6e6f9c37fa965.html
+
+## 屏蔽微信广告
+
+怎么屏蔽微信推送广告 - 咕咚的文章 - 知乎 https://zhuanlan.zhihu.com/p/136053661
 
 # 手机云服务
 
