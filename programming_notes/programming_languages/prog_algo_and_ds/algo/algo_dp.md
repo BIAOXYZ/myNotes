@@ -74,3 +74,21 @@ LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4M
 `140. 单词拆分 II` https://leetcode-cn.com/problems/word-break-ii/solution/dan-ci-chai-fen-ii-by-leetcode-solution/
 - > 第 139 题可以使用动态规划的方法判断是否可以拆分，因此这道题也可以使用动态规划的思想。但是这道题如果使用***自底向上的动态规划的方法***进行拆分，则无法事先判断拆分的可行性，在不能拆分的情况下会超时。
 - > 为了避免动态规划的方法超时，需要首先使用第 139 题的代码进行判断，在可以拆分的情况下再使用动态规划的方法进行拆分。相比之下，***自顶向下的记忆化搜索***可以在搜索过程中将不可以拆分的情况进行剪枝，因此记忆化搜索是更优的做法。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 背包问题
+
+代码随想录：
+- 咱就把01背包问题讲个通透！ https://leetcode-cn.com/circle/article/lUki6J/
+- 动态规划：关于完全背包，你该了解这些！ https://leetcode-cn.com/circle/article/k7RRg3/
+
+分享｜深度讲解背包问题：面试中每五道动态规划就有一道是背包模型 ... https://leetcode-cn.com/circle/discuss/GWpXCM/view/1jhUgI/
+
+动态规划之背包问题系列 - SMON的文章 - 知乎 https://zhuanlan.zhihu.com/p/93857890
+
+## 也可参考leetcode对应题目的笔记：
+- `背包问题` https://www.luogu.com.cn/training/5197
+  * `洛谷日报 #61 背包问题` https://www.luogu.com.cn/blog/RPdreamer/bei-bao-wen-ti
+- `LC416 分割等和子集` https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/401-600/000416/README.md
+  * https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/fen-ge-deng-he-zi-ji-by-leetcode-solution/
