@@ -127,6 +127,9 @@ About: simple CASPaxos implementation written in rust on top of a simulator for 
 
 BIGO | Paxos的工程实践与极致优化 https://mp.weixin.qq.com/s/OfbwhxCNOUGrpcHSHNeKFw 【Paxoskv】
 
+PaxosStore https://github.com/Tencent/paxosstore
+- > PaxosStore has been deployed in WeChat production for more than two years, providing storage services for the core businesses of WeChat backend. Now PaxosStore is running on thousands of machines, and is able to afford billions of peak TPS.
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Raft

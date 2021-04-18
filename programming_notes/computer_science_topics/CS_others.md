@@ -20,6 +20,9 @@ xbook2操作系统内核 https://github.com/hzcx998/xbook2
 proj2-oslabs-by-history -- CS发展历史上的OS Labs https://github.com/oscomp/proj2-oslabs-by-history
 - > 当前大学本科学生做OS实验面临工作量大，实验指导针对性不够强，难以对OS有整体理解等困难。为此，我们希望重新设计面向一般学生的 OS Labs。 这个OS Labs的目的是：“给学生逐步设计实现OS的线索和参考实例，提高学生的OS分析能力和动手能力，强化学生对 OS 的整体观念”。 这个OSLabs的特点是：以CS发展的历史过程为导向，以满足应用需求为基准，实现一系列相对独立的Special OS.
 
+SimpleKernel https://github.com/Simple-XX/SimpleKernel
+- > Simple kernel for learning operating systems. 用于学习操作系统的简单内核
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj
@@ -28,6 +31,9 @@ Write a simple interpreter of C. Inspired by c4 and largely based on it. https:/
 > Let's Build a Compiler, by Jack Crenshaw https://compilers.iecc.com/crenshaw/
 
 📚 《Go语法树入门——开启自制编程语言和编译器之旅》(开源免费图书/Go语言进阶/掌握抽象语法树/Go语言AST/LLVM/LLIR/凹语言) https://github.com/chai2010/go-ast-book
+
+The single instruction C compiler https://github.com/xoreaxeaxeax/movfuscator
+- > forked from  https://github.com/Battelle/movfuscator
 
 ## DB project
 
