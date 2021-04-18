@@ -45,6 +45,11 @@
 阿姨洗铁路 https://jikipedia.com/definition/758820985
 > ![](https://api.jikipedia.com/upload/aac4a84682b9903d843b219c087bc7ac.jpeg)
 
+# from 豆瓣
+
+世事难料啊 https://www.douban.com/group/topic/200950572/
+> ![](https://img9.doubanio.com/view/group_topic/l/public/p363139393.webp)
+
 # from other websites
 
 我在NGA目睹了虎鲸被座头鲸“上勾拳”揍飞的全过程 https://new.qq.com/omn/20201130/20201130A0GQT300.html
