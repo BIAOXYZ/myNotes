@@ -62,7 +62,14 @@ Awesome Online IDE: 🌩️ A list of awesome online development environments ht
 
 【[:star:][`*`]】【一个日本的在线ide，提供很多种语言支持，关键画风很萌(●'◡'●)。参考下面那个改程序错误的链接，里面虚构了一个叫Noda的二次元萌妹子(❤ ω ❤)】 Paiza.io -- Just write and run code online ! https://paiza.io/en
 - > This is an easy task - just fix the code written by a new lady programmer!｜paiza’s online hackathon Vol.1 https://paiza.jp/poh/ec-campaign
->> notes: 图快的话可以直接用 https://paiza.io/en/projects/new?language=c 或 https://paiza.io/en/projects/new?language=python 之类的地址。
+>> notes: 图快的话可以直接用类似下面形式的网址：
+- https://paiza.io/en/projects/new?language=c
+- https://paiza.io/en/languages/online-cpp-compiler
+  * https://paiza.io/en/projects/new?language=cpp
+- https://paiza.io/en/projects/new?language=python
+- https://paiza.io/en/languages/mysql
+  * https://paiza.io/en/projects/new?language=mysql
+- https://paiza.io/en/languages/bash
 
 repl.it Languages https://repl.it/languages
 - https://repl.it/languages/python
