@@ -1,4 +1,46 @@
 
+问问大家关于 k8s 的 deployment 创建过程 https://www.v2ex.com/t/771559
+- >
+  ```
+  我的理解大概就是:
+  1. k8s 收到 yaml 内容，验证 yaml 中的属性
+  2. yaml 通过验证，然后交给 Development Controller，创建 Pod (名字为 dev name + 随机字符串)，同时创建 ReplicaSet
+  3. ReplicaSet 发现 Pod 缺失的时候就会创建新的 Pod 补全 (把 Pod 的 owner reference 设置为 ReplicaSet，Pod 被删除时 ReplicaSet 会收到通知)
+  我们现在写 Operator 就是这么做的。
+  ```
+  ```
+  1 楼没写完
+  apiserver 校验权限以及 json，将对应的资源写入 etcd 。
+  controller 和 scheduler 会 watch api，去调度和创建 rs 等，
+  最后是某台主机的 kubelet 会 watch 到 api 中相关的变化，调用本机的 docker api，创建容器和 pod，当然，创建时会先挂载 secret,configmap 或者 pvc 等等
+  ```
+- >
+  ```
+  创建 yml 提交到 api server （服务监听 etcd ）
+  deploy controller 监听 api server 发现变更创建 rs 到 api server，并维护到 deploy 最终状态
+  创建 rs 的时候实际上也是创建 yml，同样的 kube scheduler 在 api server 监听，创建 pod
+  这里我觉得主要是考虑服务不可用，所以所有东西都创建在 api server 上，通过 listen 和 pull 的方式监听变更
+  ```
+- >
+  ```
+  1. kubectl 提交 yaml 后，首先客户端验证，验证 yaml 的定义是否正确；如果正确的话，生成发给 kube-apiserver 的 request
+  2. kube-apiserver 收到 client 发来的 request 之后，进行一些列的 client 认证和鉴权，确保 client 有权限创建资源。
+  3. request 被一些列 adminssion controller 拦截，进行一些额外计算和默认值计算，例如设定初始资源需求（如果 client 没有指明的话）。
+  4. 创建资源对象，存盘到 etcd
+  5. 资源对象存盘后，deployment controller 开始控制 loop，创建 replicaset
+  6. relicaset controller 开始创建 pod 资源； pod 对象存入 etcd，进入 pending 状态
+  7. scheduler 开始介入，开始检查各种 scheduling 限制（例如 taint，affinity ）和资源需求，然后找到可以满足这些条件的 node 。找到 node 后，创建一个 binding 对象，发还给 kube-apiserver，pod 进入 scheduled 状态。
+  8. node 上的 kubelet 会定时查询 apiserver，收到 pod 创建事件后，开始在 node 上启动 pod 的准备工作。这里过程包括，准备存储，拉去 image pull secret 等。
+  9. kubelet 通过 CRI 通知容器运行时（例如 docker ）启动一个父容器。这里的容器会处于暂停的阶段（直到所有设置完成）
+  10. kubelet 通过 CNI 设置容器的网络
+  11. 所有设置完成后，开始创建真正的应用容器，包括 init container 和用户指明的其他容器
+  12. 完成工作。
+  
+  我的理解是，这个整个过程有点像是个状态机。
+  
+  参考文献： https://github.com/jamiehannaford/what-happens-when-k8s
+  ```
+
 大家有没有搞过有状态应用上 K8S https://www.v2ex.com/t/770562
 
 docker build go 项目每次都很慢，有什么好的办法吗？ https://www.v2ex.com/t/731045

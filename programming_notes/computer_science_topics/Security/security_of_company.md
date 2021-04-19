@@ -30,6 +30,8 @@ https://github.com/oasislabs
 blockchain-crypto-mpc https://github.com/unbound-tech/blockchain-crypto-mpc || https://www.unboundsecurity.com/digital-asset-and-blockchain-security/
 - > Protecting cryptographic signing keys and seed secrets with Multi-Party Computation.
 
+About the Researchers https://www.unboundsecurity.com/unbound-mpc-labs/
+
 ## 华控清交
 
 PrivPy：实现规模化通用隐私保护机器学习 - 雪琪的文章 - 知乎 https://zhuanlan.zhihu.com/p/115574680
