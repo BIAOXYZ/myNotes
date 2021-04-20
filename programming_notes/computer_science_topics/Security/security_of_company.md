@@ -80,6 +80,11 @@ JUGO：
 
 PrivC—A Framework for Efficient Secure Two-Party Computation https://link.springer.com/chapter/10.1007/978-3-030-37231-6_23
 
+# 星云Clustar
+
+关于我们 https://www.clustar.ai/about
+- > 深圳致星科技有限公司（简称：星云Clustar) 成立于2018年1月，是全球领先的AI算力解决方案提供商 ，支持通用、密态AI计算，致力于将高性能网络、联邦学习等创新性技术应用到人工智能及大数据领域。星云Clustar核心团队来自香港科技大学SING Lab，其世界领先的学术成果为星云研发提供支撑，获得红杉资本、基石资本等顶级机构投资，在北京、深圳和香港都设有产品和研发中心，目前团队规模100余人，80%以上为产品研发团队。
+
 # 其他项目
 
 ## ABY<sup>3</sup>
