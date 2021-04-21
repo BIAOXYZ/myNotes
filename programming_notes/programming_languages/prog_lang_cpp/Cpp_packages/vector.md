@@ -35,6 +35,8 @@ C++-二维vector初始化大小方法-备忘 https://www.cnblogs.com/ZERO-/p/973
       }
   ```
 
+C++ vector的初始化 https://blog.csdn.net/qq_40147449/article/details/87892312
+
 ## 对 vector 做一些操作可能会使得当前迭代器失效 
 >> //notes：起因是在用C++做leetcode第27题时，想用类似python的倒序遍历删除，发现不行。
 

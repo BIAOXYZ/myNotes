@@ -17,6 +17,7 @@ std::string http://www.cplusplus.com/reference/string/string/
   * std::string::c_str http://www.cplusplus.com/reference/string/string/c_str/
   * std::string::data http://www.cplusplus.com/reference/string/string/data/
   * std::string::find_last_of https://www.cplusplus.com/reference/string/string/find_last_of/
+  * std::string::substr http://www.cplusplus.com/reference/string/string/substr/
 
 std::to_string https://en.cppreference.com/w/cpp/string/basic_string/to_string
 
@@ -64,6 +65,12 @@ tokens
 
 5 Different methods to find length of a string in C++ https://www.geeksforgeeks.org/5-different-methods-find-length-string-c/
 
+# `.substr()`
+
+c++截取部分字符串(类似python的切片) https://blog.csdn.net/qq_35975447/article/details/90515218
+
+C++字符串分割方法总结 https://www.jianshu.com/p/5876a9f49413
+
 # 其他
 
 c++ 中 char 与 string 之间的相互转换问题 https://www.cnblogs.com/devilmaycry812839668/p/6353807.html
@@ -102,7 +109,7 @@ How to copy std::string into std::vector<char>? [duplicate] https://stackoverflo
   ```
   >> //notes：其实`resize()`可以不用。
 
-# `find_last_of()`
+# `.find_last_of()`
 
 https://www.cplusplus.com/reference/string/string/find_last_of/
 ```cpp
@@ -137,3 +144,9 @@ Splitting: c:\windows\winhelp.exe
  path: c:\windows
  file: winhelp.exe
 ```
+
+# 非方法
+
+## `std::stoi()`、`std::atoi()`、`std::to_string()`
+
+C++ string to int Conversion https://www.programiz.com/cpp-programming/string-int-conversion
