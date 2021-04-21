@@ -24,6 +24,21 @@ What is Dynamic Memory Allocation? https://www.geeksforgeeks.org/what-is-dynamic
 为什么C链表节点要用malloc函数动态分配大小？ - 知乎 https://www.zhihu.com/question/430245890
 - 为什么C链表节点要用malloc函数动态分配大小？ - 邱昊宇的回答 - 知乎 https://www.zhihu.com/question/430245890/answer/1576233061
 
+9.13 — Dynamic memory allocation with new and delete https://www.learncpp.com/cpp-tutorial/dynamic-memory-allocation-with-new-and-delete/
+- > If we have to declare the size of everything at compile time, the best we can do is try to make a guess the maximum size of variables we’ll need and hope that’s enough:
+  ```cpp
+  char name[25]; // let's hope their name is less than 25 chars!
+  Record record[500]; // let's hope there are less than 500 records!
+  Monster monster[40]; // 40 monsters maximum
+  Polygon rendering[30000]; // this 3d rendering better not have more than 30,000 polygons!
+  ```
+- > This is a poor solution for at least four reasons:
+  * > First, it leads to wasted memory if the variables aren’t actually used. For example, if we allocate 25 chars for every name, but names on average are only 12 chars long, we’re using over twice what we really need. Or consider the rendering array above: if a rendering only uses 10,000 polygons, we have 20,000 Polygons worth of memory not being used!
+  * > Second, how do we tell which bits of memory are actually used? For strings, it’s easy: a string that starts with a \0 is clearly not being used. But what about monster[24]? Is it alive or dead right now? That necessitates having some way to tell active from inactive items, which adds complexity and can use up additional memory.
+  * > Third, most normal variables (including fixed arrays) are allocated in a portion of memory called the stack. The amount of stack memory for a program is generally quite small -- Visual Studio defaults the stack size to 1MB. If you exceed this number, stack overflow will result, and the operating system will probably close down the program.
+  * > Fourth, and most importantly, it can lead to artificial limitations and/or array overflows. What happens when the user tries to read in 600 records from disk, but we’ve only allocated memory for a maximum of 500 records? Either we have to give the user an error, only read the 500 records, or (in the worst case where we don’t handle this case at all) overflow the record array and watch something bad happen.
+- > Fortunately, these problems are easily addressed via **dynamic memory allocation**. Dynamic memory allocation is a way for running programs to request memory from the operating system when needed. This memory does not come from the program’s limited stack memory -- instead, it is allocated from a much larger pool of memory managed by the operating system called the heap. On modern machines, the heap can be gigabytes in size.
+
 # `malloc/free` V.S. `new/delete`
 
 细说new与malloc的10点区别 https://www.cnblogs.com/qg-whz/p/5140930.html || https://cloud.tencent.com/developer/article/1155150 || https://blog.csdn.net/linux_ever/article/details/50533149
@@ -245,3 +260,67 @@ Memory allocation strategy for struct and union in C programming language https:
 浅谈C++内存管理 - 吉良吉影的文章 - 知乎 https://zhuanlan.zhihu.com/p/51855842
 
 C++ 内存对齐 https://mp.weixin.qq.com/s/evaQkvhGm0c-DIFVnYJghw || http://www.cnblogs.com/TenosDoIt/p/3590491.html
+
+# delete 指针后再赋值为 NULL
+
+Memory Management https://isocpp.org/wiki/faq/freestore-mgmt
+- Is it safe to delete the same pointer twice? https://isocpp.org/wiki/faq/freestore-mgmt#double-delete-disaster
+
+Is it good practice to NULL a pointer after deleting it? https://stackoverflow.com/questions/1931126/is-it-good-practice-to-null-a-pointer-after-deleting-it
+- https://stackoverflow.com/questions/1931126/is-it-good-practice-to-null-a-pointer-after-deleting-it/1931171#1931171
+  * > Setting a pointer to 0 (which is "null" in standard C++, the NULL define from C is somewhat different) avoids crashes on double deletes.
+  * > Consider the following:
+    ```cpp
+    Foo* foo = 0; // Sets the pointer to 0 (C++ NULL)
+    delete foo; // Won't do anything
+    ```
+  * > Whereas:
+    ```cpp
+    Foo* foo = new Foo();
+    delete foo; // Deletes the object
+    delete foo; // Undefined behavior 
+    ```
+  * > In other words, if you don't set deleted pointers to 0, you will get into trouble if you're doing double deletes. An argument against setting pointers to 0 after delete would be that doing so just masks double delete bugs and leaves them unhandled.
+  * > It's best to not have double delete bugs, obviously, but depending on ownership semantics and object lifecycles, this can be hard to achieve in practice. I prefer a masked double delete bug over UB.
+  * > Finally, a sidenote regarding managing object allocation, I suggest you take a look at `std::unique_ptr` for strict/singular ownership, `std::shared_ptr` for shared ownership, or another smart pointer implementation, depending on your needs.
+
+Why is it recommended to set a pointer to null after deleting it? [duplicate] https://stackoverflow.com/questions/16573257/why-is-it-recommended-to-set-a-pointer-to-null-after-deleting-it
+
+C++ - Why set object to null after deleting? [duplicate] https://stackoverflow.com/questions/14416676/c-why-set-object-to-null-after-deleting
+
+What happens to the pointer itself after delete? [duplicate] https://stackoverflow.com/questions/23621677/what-happens-to-the-pointer-itself-after-delete
+
+Why doesn't delete set the pointer to NULL? https://stackoverflow.com/questions/704466/why-doesnt-delete-set-the-pointer-to-null
+
+delete指针以后应赋值为NULL https://www.cnblogs.com/codingmengmeng/p/9065165.html
+- > delete p后，只是释放了指针中存放的地址中的内存空间。但是指针变量p仍然存在（即指针p本身所占有的内存），且p中存放的地址还是原来的地址。
+- > 对一个非空指针delete后，若没有将p赋为NULL，若再次delete的话，会出现问题。
+  ```cpp
+  #include <iostream>
+  int main()
+  {
+      int* p = new int(3);
+      delete p;
+      delete p;
+      return 0;
+  }
+  ```
+  * > 在ubuntu14.04中使用g++进行编译无问题，但运行时报错如下：......
+  * > 意思就是对同一指针变量进行了两次释放内存的操作，这是不合法的。因为第一次释放后，指针p指向的那块区域已经变为不可访问区域了，再执行一次delete p，试图对一块不可访问的区域进行释放，这是不合法的。
+- > 将其改为：
+  ```cpp
+  #include <iostream>
+  int main()
+  {
+      int* p = new int(3);
+      delete p;
+      p = NULL;
+      delete p;
+      return 0;
+  }
+  ```
+  * > 则编译和运行都没有问题，因为C++保证delete值为NULL的指针是安全的。
+
+在c或者c++中为什么free() 和delete释放内存，不直接在函数内部实现指针等于NULL，而是将其设置为野指针呢？ - 知乎 https://www.zhihu.com/question/24943388
+
+C++中delete指针后，要将其赋值为NULL的具体原因 https://blog.csdn.net/c243311364/article/details/81284687
