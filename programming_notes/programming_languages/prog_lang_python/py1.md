@@ -64,6 +64,12 @@ Python 黑魔法手册 https://github.com/iswbm/magic-python || http://magic.isw
 
 # python项目类
 
+Awesome Python https://github.com/vinta/awesome-python
+- Cryptography
+- Database
+  * [tinydb](https://github.com/msiemens/tinydb) - A tiny, document-oriented database.
+  * [ZODB](https://github.com/zopefoundation/ZODB) - A native object database for Python. A key-value and object graph database.
+
 Python 的练手项目有哪些值得推荐？ - 刘志军的回答 - 知乎 https://www.zhihu.com/question/29372574/answer/192385626
 
 开源项目精选：python教程full-speed-python https://openingsource.org/1672/ 
