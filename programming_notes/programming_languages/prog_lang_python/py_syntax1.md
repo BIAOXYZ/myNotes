@@ -109,3 +109,11 @@ How to access outer class from an inner class? https://stackoverflow.com/questio
 python class嵌套怎么访问父类 https://segmentfault.com/q/1010000009317669
 
 Inheritance in Python Inner Class https://www.geeksforgeeks.org/inheritance-in-python-inner-class/
+
+## 类成员变量与类变量
+
+Python类变量与成员变量 https://blog.csdn.net/u013940664/article/details/53731234
+
+python中类变量与成员变量的使用注意点总结 https://www.jb51.net/article/112525.htm
+
+Python-类变量，成员变量，静态变量，类方法，静态方法，实例方法，普通函数 https://www.cnblogs.com/20150705-yilushangyouni-Jacksu/p/6238187.html
