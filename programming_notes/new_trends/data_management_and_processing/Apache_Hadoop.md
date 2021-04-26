@@ -510,3 +510,7 @@ HDFS多线程追加写数据踩坑 https://blog.csdn.net/weixin_44252761/article
 HDFS的读写流程 https://www.cnblogs.com/feiyumo/p/12541296.html
 
 《hadoop权威指南》笔记二： hdfs读写过程剖析 https://cloud.tencent.com/developer/article/1500068
+
+## 4. libhdfs内存泄露
+
+Hdfs FileSystem 使用姿势不对导致的内存泄露 https://blog.csdn.net/u013332124/article/details/89302271
