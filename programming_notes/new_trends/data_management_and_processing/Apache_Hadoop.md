@@ -514,3 +514,16 @@ HDFS的读写流程 https://www.cnblogs.com/feiyumo/p/12541296.html
 ## 4. libhdfs内存泄露
 
 Hdfs FileSystem 使用姿势不对导致的内存泄露 https://blog.csdn.net/u013332124/article/details/89302271
+
+HDFS简单介绍及用C语言訪问HDFS接口操作实践 https://www.cnblogs.com/mfmdaoyou/p/7008322.html || https://blog.csdn.net/weixin_34010949/article/details/85903011
+- > 3.遇到的主要问题描写叙述与分析
+  ```console
+  对于LIB HDFS接口的不足之处，在本文第三部分(LIB HDFS接口简单介绍)已有大致描写叙述。
+  在实际性能測试过程中。因LIB HDFS接口引起的问题主要包含：lease租约回收异常和程序句柄资源释放异常等两大类。
+  
+  我们换了多种測试模型，基本确认LIB HDFS接口在某些异常情况下(如频繁对同一个文件运行append操作)会产生上述问题。
+  
+  所以假设在项目中须要实际应用LIB HDFS接口，就须要我们改进client程序处理流程，尽量规避和降低上述问题的产生。能够採用例如以下方法：
+  1)在client程序和HDFS文件系统间添加缓存的方式降低HDFS的读写密度；
+  2)降低对HDFS文件系统的更新操作，比如文件写入完毕后就不再运行append操作，仅仅运行read操作。
+  ```
