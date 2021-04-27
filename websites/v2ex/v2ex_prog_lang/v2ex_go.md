@@ -1,4 +1,16 @@
 
+女同事问了一个 golang 的技术问题，没答上来，溴大了 https://www.v2ex.com/t/773635
+```console
+两个 goroutine：go1,go2
+go1 从 socket 读，读到的数据写到 ch1
+go2 从 ch2 读，读到的数据写到 socket
+以此来实现全双工通信
+
+问题：ch1 关闭之后，go1 不知道，一写就崩了，怎么避免？
+```
+- > ch1 由 go1 关闭，也就是永远由写的一方关闭 channel
+- > go1 来关闭啊，怎么可能由消费者去关闭通道 <br> go2 用 for range 去读，也能感知到关闭
+
 由浅到深，入门 Go 语言 Map 实现原理 https://www.v2ex.com/t/737613
 ```console
 文章链接: 由浅到深，入门 Go 语言 Map 实现原理 https://mp.weixin.qq.com/s/sooEw_-Sb_sEII429M8Uiw
