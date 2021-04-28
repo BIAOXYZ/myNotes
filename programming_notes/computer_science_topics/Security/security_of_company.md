@@ -117,6 +117,8 @@ MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
 - > See demos for usage examples and [MPyC docs]() for pydoc-based documentation.
   * mpyc (version 0.7) https://lschoe.github.io/mpyc/
 
+(SECRYPT 2009) Multiparty Comparison - An Improved Multiparty Protocol for Comparison of Secret-shared Values https://www.scitepress.org/Papers/2009/22336/22336.pdf || https://www.semanticscholar.org/paper/Multiparty-Comparison-An-Improved-Multiparty-for-of-Reistad/eced2fa7cfd70e9a8c015eeacc1b1d610a77f5c5 || https://www.researchgate.net/publication/221436438_Multiparty_Comparison_-_An_Improved_Multiparty_Protocol_for_Comparison_of_Secret-shared_Values
+
 ## SecMML
 
 复旦大学开源的隐私计算项目SecMML https://mp.weixin.qq.com/s/MRfwctyFpUbIRXihVZpjFw

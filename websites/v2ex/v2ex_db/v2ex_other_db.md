@@ -1,4 +1,6 @@
 
+Oracle 相比 mysql 的优势在哪里 https://www.v2ex.com/t/773654
+
 为啥 TiDB 云服务在国内云厂商没有? https://www.v2ex.com/t/736938
 
 [闲谈]萌新对国产数据库的一些感慨。。 https://www.v2ex.com/t/725612
