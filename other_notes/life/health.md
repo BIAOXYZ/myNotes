@@ -135,3 +135,5 @@
 mRNA疫苗和灭活疫苗的原理是什么？ - PassionForLife的回答 - 知乎 https://www.zhihu.com/question/431354319/answer/1589302264
 
 为什么欧美不做新冠灭活疫苗？ - 知乎 https://www.zhihu.com/question/437068911
+
+国药和科兴疫苗哪个好？ - 知乎 https://www.zhihu.com/question/445576202

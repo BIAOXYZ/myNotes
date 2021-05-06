@@ -6,6 +6,8 @@
 陈莉君教授《Linux内核分析与应用》课程课件、动手实践源代码、实验手册、实验源代码 https://github.com/ljrcore/linuxmooc
 -> Linux内核之旅网站 http://kerneltravel.net/
 -> Linux内核之旅微信公众号
+- https://github.com/ljrcore/LearningLinuxKernel
+- https://github.com/linuxkerneltravel/lmp
 
 How to Make a Computer Operating System in C++ https://samypesse.gitbook.io/how-to-create-an-operating-system/ || https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System
 
