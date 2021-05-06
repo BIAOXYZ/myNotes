@@ -23,6 +23,23 @@ Requests: 让 HTTP 服务人类 http://docs.python-requests.org/zh_CN/latest/
 
 Python’s Requests Library (Guide) https://realpython.com/python-requests/
 
+Python - requests https://www.cnblogs.com/Neeo/articles/11511087.html
+- > **文件下载**
+```py
+# 那要是下载大文件，可就不能这么干了：
+
+import requests
+import webbrowser
+
+url = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568638318957&di=1d7f37e7caece1c39af05b624f42f0a7&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201501%2F17%2F20150117224236_vYFmL.jpeg'
+
+response = requests.get(url=url, stream=True)
+with open('a.jpeg', 'wb') as f:
+    for chunk in response.iter_content(chunk_size=256):
+        f.write(chunk)
+webbrowser.open('a.jpeg')
+```
+
 requests https://www.liaoxuefeng.com/wiki/1016959663602400/1183249464292448
 
 请教一个问题， requests 包请求 csdn 首页推荐文章一个接口，为什么相同代码在 windows 和 Linux 下不同结果？ https://www.v2ex.com/t/626740

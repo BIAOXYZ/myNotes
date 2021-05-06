@@ -388,3 +388,12 @@ Pipenv – 超好用的 Python 包管理工具 https://juejin.im/post/5b31ba8851
 # zypper install python3-pip	#Python 3
 ```
 >> 类似net-tools。。。不能直接`XXX install pip`。。。
+
+linux 同时安装python2 python3， 及pip 的安装使用 https://blog.csdn.net/u010080235/article/details/99859814
+- > 由于ubuntu系统自带python2.7（默认）和python3.4，所以不需要自己安装python。
+  >> //notes：发现不止ubuntu，debian（至少debian 9）也是同时自带了python和python3
+- > 在不同版本中安装pip，可以使用一下命令：
+  ```sh
+  sudo apt-get install python-pip
+  sudo apt-get install python3-pip
+  ```
