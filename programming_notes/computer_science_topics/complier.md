@@ -90,7 +90,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 # gcc/g++错误处理
 
-## `libstdc++.so.6: error adding symbols: DSO missing from command line`
+### `libstdc++.so.6: error adding symbols: DSO missing from command line`
 
 ```sh
 $ gcc hdfsclass.cpp -I/usr/local/hadoop/include -L/usr/local/hadoop/lib/native -lhdfs -o hdfsclass
@@ -106,6 +106,10 @@ $
 - libstdc++: DSO missing from command line https://stackoverflow.com/questions/33263288/libstdc-dso-missing-from-command-line
 - gcc 错误 //usr/lib/x86_64-linux-gnu/libstdc++.so.6 ... https://www.cnblogs.com/Hocker/p/8242155.html
 - ubuntu16.04 Qt调试caffe代码 - 高知的文章 - 知乎 https://zhuanlan.zhihu.com/p/38077007
+
+### `error: call of overloaded ‘abs(double&)’ is ambiguous`
+
+g++编译时abs()遇到无法理解的问题(已解决) https://blog.csdn.net/zsc2014030403015/article/details/44724391
 
 ## GCC新闻
 

@@ -239,7 +239,7 @@ gdb.break:
 ## gdb layout
 
 GDB技巧分享，让你的调试变得更方便 https://developer.aliyun.com/article/740313
-- > 大家在IDE工具，如CDS、CDK、Keil中可以通过源代码对照着进行调试，非常方便。那gdb中有没有方法，能让大家也对照着源码进行调试呢。有，那就是tui模式。 在gdb命令行中输入tui enable即可进入tui模式 当然还有更快捷的方式，直接输入`Ctrl-X A`即可直接进入tui模式
+- > 大家在IDE工具，如CDS、CDK、Keil中可以通过源代码对照着进行调试，非常方便。那gdb中有没有方法，能让大家也对照着源码进行调试呢。有，那就是tui模式。 在gdb命令行中输入 `tui enable` 即可进入tui模式 当然还有更快捷的方式，直接输入`Ctrl-X A`即可直接进入tui模式
   >> 好久不用，都忘了gdb里同步显示代码框的快捷键了。。。今天查了下，然后才知道除了`Ctrl-X A`外，还有命令直接调出这个窗口。
 
 GDB同步显示源代码——layout https://www.cnblogs.com/postw/p/9670739.html
@@ -377,6 +377,15 @@ GDB 7.0 与 回溯调试 - CSDN博客 https://blog.csdn.net/haoel/article/detail
 gdb各种调试命令和技巧 https://www.cnblogs.com/youxin/p/4305227.html
 
 使用gdb调试程序完全教程 https://blog.csdn.net/gatieme/article/details/51671430
+
+GDB调试带参数的程序 https://www.jianshu.com/p/1948eab69fe7
+```sh
+$ gdb --args ./A V1 V2 V3
+
+$ gdb ./A，进入gdb后 r V1 V2 V3
+
+$ gdb ./A，进入gdb后 设置参数set args V1 V2 V3 再直接 r。
+```
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 

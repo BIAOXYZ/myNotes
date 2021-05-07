@@ -37,6 +37,28 @@ C++-二维vector初始化大小方法-备忘 https://www.cnblogs.com/ZERO-/p/973
 
 C++ vector的初始化 https://blog.csdn.net/qq_40147449/article/details/87892312
 
+vector 的六种 创建和初始化方法 https://blog.csdn.net/veghlreywg/article/details/80400382
+
+C++获得vector最后一个元素 https://blog.csdn.net/mitu405687908/article/details/51148107
+```cpp
+std::vector<int> intVector;
+intVector[intVector.size() - 1]; // 方式1
+intVector.back();                // 方式2
+```
+
+容器篇：取vector最后一个元素的方法 https://blog.csdn.net/Angry_chicken_wings/article/details/5799639
+```cpp
+方法一：
+vector<T>::iterator pt = vectorT.end()-1;
+T lastT = *pt;
+
+方法二：
+vectorT.back();
+
+方法三：
+*vectorT.rbegin();
+```
+
 ## 对 vector 做一些操作可能会使得当前迭代器失效 
 >> //notes：起因是在用C++做leetcode第27题时，想用类似python的倒序遍历删除，发现不行。
 
