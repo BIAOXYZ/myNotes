@@ -1,4 +1,16 @@
 
+PostgreSQL 和 MySQL 中 schema 的区别 https://www.v2ex.com/t/775431
+```console
+PostgreSQL
+--------------------------------------------------
+schema 在同一个数据库中可以创建多个，每个 schema 可以拥有相同表名的表。
+假设有 a_schema 和 b_schema ，里面都可以存在 test_table 这张表，并且在同一个数据库中可以通过语句查看到不同 schema 里面的数据。
+
+MySQL
+--------------------------------------------------
+与 PostgreSQL 不大一样，在 MySQL 的 database 和 schema 是同一个概念，所以在 MySQL 中不会特别提及 schema 。
+```
+
 Oracle 相比 mysql 的优势在哪里 https://www.v2ex.com/t/773654
 
 为啥 TiDB 云服务在国内云厂商没有? https://www.v2ex.com/t/736938
