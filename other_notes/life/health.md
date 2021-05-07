@@ -137,3 +137,7 @@ mRNA疫苗和灭活疫苗的原理是什么？ - PassionForLife的回答 - 知�
 为什么欧美不做新冠灭活疫苗？ - 知乎 https://www.zhihu.com/question/437068911
 
 国药和科兴疫苗哪个好？ - 知乎 https://www.zhihu.com/question/445576202
+
+新冠病毒疫苗接种问答(2021年3月31日更新) http://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_12208/202104/t20210401_225334.html
+
+北京市疾控中心：新冠疫苗接种最好不要空腹 https://www.163.com/news/article/FVEBBTDE00019K82.html
