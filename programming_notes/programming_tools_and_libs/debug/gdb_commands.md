@@ -14,7 +14,7 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
   * > set print pretty on
 
 ## 我的gdb配置(.gdbinit， bps.cfg， .gdb_history全都在~目录下)和调试
-```
+```console
 # .gdbinit 
 
 # for postgres debug
@@ -146,8 +146,7 @@ http://blog.csdn.net/risingsun001/article/details/50464366
 可见gcc的-g选项并不是把源代码嵌入到可执行文件中的，在调试时也需要源文件。
 ```
 
-- LINUX下GDB调试
-http://blog.csdn.net/yeyuangen/article/details/6825542
+linux下gdb调试方法与技巧整理 https://blog.csdn.net/niyaozuozuihao/article/details/91802994
 
 - GDB 命令行调试之路(全 1-9)
 http://www.cnblogs.com/syncg/archive/2012/12/26/2834503.html
@@ -193,7 +192,7 @@ handle SIGUSR2 noprint nostop
 ```
 
 ### 保存断点
-```
+```sh
 save breakpoints bps.cfg
 source bps.cfg
 ```
@@ -378,6 +377,8 @@ gdb各种调试命令和技巧 https://www.cnblogs.com/youxin/p/4305227.html
 
 使用gdb调试程序完全教程 https://blog.csdn.net/gatieme/article/details/51671430
 
+### 带参数调试
+
 GDB调试带参数的程序 https://www.jianshu.com/p/1948eab69fe7
 ```sh
 $ gdb --args ./A V1 V2 V3
@@ -387,13 +388,18 @@ $ gdb ./A，进入gdb后 r V1 V2 V3
 $ gdb ./A，进入gdb后 设置参数set args V1 V2 V3 再直接 r。
 ```
 
+### 带外部符号表调试
+
+gdb使用symbol文件调试程序 https://www.jianshu.com/p/7050a8f8841c
+
+gdb加载调试符号（符号表) https://blog.csdn.net/weixin_45375062/article/details/115870495
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
 # 其他调试工具
 
-Linux调试工具
-http://blog.csdn.net/hzrandd/article/details/50849329
+Linux调试工具 http://blog.csdn.net/hzrandd/article/details/50849329
 
 ### cgdb
 

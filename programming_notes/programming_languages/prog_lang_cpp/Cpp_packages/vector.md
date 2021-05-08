@@ -1,6 +1,8 @@
 
 # 官方
 
+## cplusplus
+
 `header <vector>` http://www.cplusplus.com/reference/vector/
 
 std::vector http://www.cplusplus.com/reference/vector/vector/
@@ -12,6 +14,15 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
   * std::vector::resize http://www.cplusplus.com/reference/vector/vector/resize/
 - **Modifiers**:
   * std::vector::push_back http://www.cplusplus.com/reference/vector/vector/push_back/
+  * std::vector::emplace_back http://www.cplusplus.com/reference/vector/vector/emplace_back/
+
+## cppreference
+
+std::vector<T,Allocator>::emplace_back https://en.cppreference.com/w/cpp/container/vector/emplace_back
+
+# `.emplace_back()`
+
+c++11 之emplace_back 与 push_back的区别 https://ppipp.blog.csdn.net/article/details/84764104
 
 # 其他
 
