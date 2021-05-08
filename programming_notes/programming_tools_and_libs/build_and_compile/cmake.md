@@ -6,7 +6,7 @@ CMake https://github.com/Kitware/CMake
 
 CMake Tutorial https://cmake.org/cmake/help/v3.19/guide/tutorial/index.html
 
-# 其他攻略
+# 系统性攻略
 
 cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上传到仓库 https://juejin.cn/post/6844903641443205128
 
@@ -15,6 +15,15 @@ cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上
 【[:star:][`*`]]】 CMake Cookbook https://github.com/dev-cafe/cmake-cookbook || CMake菜谱（CMake Cookbook中文版） https://www.bookstack.cn/books/CMake-Cookbook
 - `4.4 使用Boost Test进行单元测试` https://www.bookstack.cn/read/CMake-Cookbook/content-chapter4-4.4-chinese.md
   * https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-04/recipe-04
+
+# 其他攻略
+
+## 编译debug版本
+
+cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu.com/p/116953293
+- > `CMAKE_BUILD_TYPE` 只能指定 `single configuration` 类型的项目配置， 无法指定 `multi configuration` 的项目配置。`multi configuration`的项目配置是在使用者手动指定的时候修改的，默认都是`Debug`。但是对于`multi configuration`的项目，我们可以在触发编译的时候指定是`Debug`还是`Release`:
+
+如何使用Cmake生成debug版本和release版本的程序 https://blog.csdn.net/a794226986/article/details/18605903
 
 # 问题
 
