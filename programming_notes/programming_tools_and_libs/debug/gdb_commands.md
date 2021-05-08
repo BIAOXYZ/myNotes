@@ -7,7 +7,7 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 
 ## GDB一般性知识
 
-《100个gdb小技巧》 https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details
+《100个gdb小技巧》 https://github.com/hellogcc/100-gdb-tips/blob/master/src/index.md || ~~https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details~~ --> https://wizardforcel.gitbooks.io/100-gdb-tips/content/
 - 配置gdb init文件 https://github.com/hellogcc/100-gdb-tips/blob/master/src/config-gdbinit.md
   * > 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
 - 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md

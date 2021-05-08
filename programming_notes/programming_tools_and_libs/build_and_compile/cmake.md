@@ -16,6 +16,9 @@ cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上
 - `4.4 使用Boost Test进行单元测试` https://www.bookstack.cn/read/CMake-Cookbook/content-chapter4-4.4-chinese.md
   * https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-04/recipe-04
 
+CMake 入门 https://zh.wikibooks.org/wiki/CMake_%E5%85%A5%E9%96%80
+- CMake 入门/运算子 https://zh.wikibooks.org/zh-hans/CMake_%E5%85%A5%E9%96%80/%E9%81%8B%E7%AE%97%E5%AD%90
+
 # 其他攻略
 
 ## 编译debug版本
