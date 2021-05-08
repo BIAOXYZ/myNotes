@@ -394,6 +394,12 @@ gdb使用symbol文件调试程序 https://www.jianshu.com/p/7050a8f8841c
 
 gdb加载调试符号（符号表) https://blog.csdn.net/weixin_45375062/article/details/115870495
 
+### 信号
+
+gdb 调试总结 https://markrepo.github.io/tools/2018/06/22/gdb/
+
+GDB命令基础，让你的程序bug无处躲藏 https://deepzz.com/post/gdb-debug.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 

@@ -5,6 +5,8 @@ mq 选型 https://www.v2ex.com/t/765626
 
 消息队列和 RocketMQ 入门总结 https://mp.weixin.qq.com/s/eXzq5jg-2KkKziSPkcSQ5Q
 
+对Kafka 和 Pulsar进行性能测试后，拉卡拉将消息平台统一换成了 Pulsar https://mp.weixin.qq.com/s/s4PjlOxsRStO3FXL-fvGgQ
+
 # celery
 
 Celery (software) https://en.wikipedia.org/wiki/Celery_(software)
