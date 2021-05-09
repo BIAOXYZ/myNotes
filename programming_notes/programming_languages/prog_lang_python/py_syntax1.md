@@ -13,6 +13,14 @@ python黑魔法---迭代器（iterator） https://www.jianshu.com/p/dcf83643deeb
   * > from: [Iterables vs. Iterators vs. Generators](https://nvie.com/posts/iterators-vs-generators/)
     + > ![](https://pic4.zhimg.com/80/v2-95b4076d30e55da078045cdade28cea3_1440w.jpg)
 
+# yield
+
+What does the “yield” keyword do? https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+
+Python中yield和yield from的用法 https://www.cnblogs.com/cnkai/p/7514828.html
+
+Python | yield Keyword https://www.geeksforgeeks.org/python-yield-keyword/
+
 # nonlocal关键字
 
 python关键字nonlocal和global的区别 https://www.jianshu.com/p/ab69b83a8d8a

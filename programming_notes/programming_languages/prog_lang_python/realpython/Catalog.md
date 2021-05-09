@@ -26,3 +26,5 @@ Python KeyError Exceptions and How to Handle Them https://realpython.com/python-
   >> Understanding the Python Traceback https://realpython.com/python-traceback/
 
 Your Guide to the CPython Source Code https://realpython.com/cpython-source-code-guide/
+
+Python Keywords: An Introduction https://realpython.com/python-keywords/
