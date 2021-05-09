@@ -141,3 +141,6 @@ mRNA疫苗和灭活疫苗的原理是什么？ - PassionForLife的回答 - 知�
 新冠病毒疫苗接种问答(2021年3月31日更新) http://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_12208/202104/t20210401_225334.html
 
 北京市疾控中心：新冠疫苗接种最好不要空腹 https://www.163.com/news/article/FVEBBTDE00019K82.html
+
+需要你的一“臂”之力，全国新冠疫苗接种超 3 亿剂次 https://www.ithome.com/0/550/369.htm
+- > 要按照接种指南，灭活疫苗第二剂次可以在第一剂次接种后 3 至 8 周内完成，特殊情况下，相同技术路线的不同生产企业的疫苗可以替换；
