@@ -132,12 +132,23 @@ Num     Type           Disp Enb Address            What
 3       breakpoint     keep n   0x0000000000817660 in PortalRun at pquery.c:722
 ```
 
+## 较系统攻略
+
+GDB调试指南 https://www.yanbinghu.com/2019/04/20/41283.html  || https://github.com/yanbinghu/yanbinghu.github.io/blob/master/2019/04/20/41283.html || https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI2OTA3NTk3Ng==&action=getalbum&album_id=1337122386575147009 || GDB调试入门指南 - 守望的文章 - 知乎 https://zhuanlan.zhihu.com/p/74897601
+
+【[:star:][`*`]】 掌握gdb调试从入门到进阶（一） - Xin Lee的文章 - 知乎 https://zhuanlan.zhihu.com/p/100385553
+- > **二. 运行**
+  * > 包含三个命令： run : 开始运行 start ： 运行并停在main函数上 continue ：继续运行 ignore ： 忽略某函数或文件 checkpoint: 设置书签
+
+【[:star:][`*`]】 掌握gdb调试从入门到进阶（二） - Xin Lee的文章 - 知乎 https://zhuanlan.zhihu.com/p/100403438 【这个还包括了对coredump文件、以及对线程的调试】
+
+陈皓GDB调试教程链接汇总 https://developer.aliyun.com/article/681075
+
 ## 其他实战或配置参考部分(包含了一个.gdbinit设置的例子，看起来设置得更整洁，不过还是习惯了断点文件叫bps.cfg- -)
 
 ### 调试实战
 
-- linux下C的GBD调试学习笔记
-http://blog.csdn.net/risingsun001/article/details/50464366
+linux下C的GBD调试学习笔记 http://blog.csdn.net/risingsun001/article/details/50464366
 ```
 我们做一个实验，把源代码改名或移到别处再用gdb调试，这样就列不出源代码了：
 .

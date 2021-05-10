@@ -70,6 +70,8 @@ A toy JVM in Go https://github.com/zserge/tojvm
 
 一个轻量级容器引擎（实现 docker 的一小部分功能） https://github.com/TensShinet/islands_show
 
+开发一个 Linux 调试器（二）：断点 - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/27655662 || Writing a Linux Debugger Part 2: Breakpoints https://blog.tartanllama.xyz/writing-a-linux-debugger-breakpoints/
+
 ## programming language project
 
 Single-file public-domain/open source libraries with minimal dependencies https://github.com/nothings/single_file_libs
