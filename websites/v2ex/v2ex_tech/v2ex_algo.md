@@ -22,6 +22,11 @@ Facebook 面试题：和大于 S 的最小子数组 https://www.v2ex.com/t/72163
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+leetcode(力扣)Plus 会员咨询 https://www.v2ex.com/t/775946
+- > 如果想看看企业题库的话，codetop 也可以的
+  >> 定了！CodeTop题库重磅推出 - 一个搬砖的胖子的文章 - 知乎 https://zhuanlan.zhihu.com/p/267988008
+  >>> https://codetop.cc || https://github.com/afatcoder/LeetcodeTop
+
 独立开发了一个算法学习的平台, RobinAlgo, 欢迎大家使用 https://www.v2ex.com/t/726320
 ```console
 https://github.com/clwater/LeetCodeAllAnimation
