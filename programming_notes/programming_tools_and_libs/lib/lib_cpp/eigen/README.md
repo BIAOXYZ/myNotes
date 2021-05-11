@@ -11,6 +11,10 @@ https://github.com/eigenteam/eigen-git-mirror
 # 官方文档
 
 https://eigen.tuxfamily.org/index.php?title=Main_Page
+- **Documentation**
+  * Getting started https://eigen.tuxfamily.org/dox/GettingStarted.html
+  * The Matrix class https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html
+  * Quick reference guide https://eigen.tuxfamily.org/dox/group__QuickRefPage.html
 
 # 其他
 

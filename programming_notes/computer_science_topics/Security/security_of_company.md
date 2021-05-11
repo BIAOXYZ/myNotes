@@ -19,6 +19,10 @@ PrivateStats: De-Identified Authenticated Logging at Scale https://research.fb.c
 
 EzPC (Easy Secure Multi-party Computation) https://www.microsoft.com/en-us/research/project/ezpc-easy-secure-multi-party-computation/
 
+## FB
+
+CrypTen: A framework for Privacy Preserving Machine Learning https://github.com/facebookresearch/CrypTen
+
 ## Oasis Labs
 
 https://www.oasislabs.com/
