@@ -14,6 +14,7 @@ https://eigen.tuxfamily.org/index.php?title=Main_Page
 - **Documentation**
   * Getting started https://eigen.tuxfamily.org/dox/GettingStarted.html
   * The Matrix class https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html
+    + Eigen::Matrix< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > Class Template Reference https://eigen.tuxfamily.org/dox/classEigen_1_1Matrix.html
   * Quick reference guide https://eigen.tuxfamily.org/dox/group__QuickRefPage.html
 
 # 其他
