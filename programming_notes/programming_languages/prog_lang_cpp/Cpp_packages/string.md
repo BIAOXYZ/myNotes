@@ -6,6 +6,7 @@
   * std::string http://www.cplusplus.com/reference/string/string/
 - **Convert from strings**
   * std::stoi http://www.cplusplus.com/reference/string/stoi/
+  * std::stod http://www.cplusplus.com/reference/string/stod/
 - **Convert to strings**
   * std::to_string http://www.cplusplus.com/reference/string/to_string/
 
