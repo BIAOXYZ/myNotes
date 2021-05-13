@@ -5,6 +5,14 @@
 > Buy American. I Am. https://www.nytimes.com/2008/10/17/opinion/17buffett.html  -->  `A simple rule dictates my buying: Be fearful when others are greedy, and be greedy when others are fearful.`
 >> notes：巴菲特于2008年金融危机时在纽约时报发表的文章，但是可能不是著名的“别人贪婪时我恐惧，别人恐惧时我贪婪”最早的出处。
 
+## 保罗·沃尔克
+
+保罗·沃尔克 https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%BD%97%C2%B7%E6%B2%83%E5%B0%94%E5%85%8B
+
+如何评价保罗·沃尔克的一生？ - 知乎 https://www.zhihu.com/question/360201498
+- 如何评价保罗·沃尔克的一生？ - Odysseus的回答 - 知乎 https://www.zhihu.com/question/360201498/answer/930576985
+  * > 除了经济金融之外的领域，我对他的了解主要来自 Silber的那本书《力挽狂澜》，这个答案里面大部分图片都是那本书里面的。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # economics
