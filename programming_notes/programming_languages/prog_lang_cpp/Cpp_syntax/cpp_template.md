@@ -1,4 +1,14 @@
 
+# 官方
+
+模板 (C++) https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%9D%BF_(C%2B%2B)
+
+模板 (C++) https://docs.microsoft.com/zh-cn/cpp/cpp/templates-cpp
+
+# 系统性攻略
+
+# 实战攻略
+
 C++ 模板 https://www.runoob.com/cplusplus/cpp-templates.html
 ```cpp
 #include <iostream>
@@ -80,3 +90,13 @@ exit status 255
  
 ```
 //notes：这个例子除了是模板的例子外，还是一个异常的例子（`throw-try-catch`），可以很久不写手生的时候看一下。
+
+# 其他攻略
+
+C++ 模板详解 https://www.runoob.com/w3cnote/c-templates-detail.html
+
+C++类模板，你看我就够了 https://www.jianshu.com/p/70ca94872418
+
+C++ Template 基础篇（一）：函数模板 https://blog.csdn.net/lezardfu/article/details/56852043
+
+C++ 模板常见特性（函数模板、类模板） - 小林coding的文章 - 知乎 https://zhuanlan.zhihu.com/p/101898043
