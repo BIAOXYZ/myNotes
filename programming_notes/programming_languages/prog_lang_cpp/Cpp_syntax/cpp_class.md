@@ -79,3 +79,12 @@ Overloading the `<<` Operator for Your Own Classes https://docs.microsoft.com/en
 Overloading stream insertion (<>) operators in C++ https://www.geeksforgeeks.org/overloading-stream-insertion-operators-c/
 
 How to properly overload the << operator for an ostream? https://stackoverflow.com/questions/476272/how-to-properly-overload-the-operator-for-an-ostream
+
+# 其他
+
+c++　在函数后加const的意义 https://blog.csdn.net/qq_32739503/article/details/83341222
+```console
+c++ 函数前面和后面 使用const 的作用：
+  · 前面使用const 表示返回值为const
+  · 后面加 const表示函数不可以修改class的成员
+```

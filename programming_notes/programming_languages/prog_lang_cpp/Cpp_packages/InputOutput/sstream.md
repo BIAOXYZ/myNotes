@@ -49,3 +49,5 @@ Size of stringstream [duplicate] https://stackoverflow.com/questions/4432793/siz
     //////////////////////////////////////////////////
     6
     ```
+
+Stringstream 缓冲区清空方法 和 复用StringStream 不是clear那么简单 https://blog.csdn.net/l631068264/article/details/25115917
