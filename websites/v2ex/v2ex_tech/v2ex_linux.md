@@ -1,4 +1,51 @@
 
+关于 rsync 的新发现 https://www.v2ex.com/t/776894
+```console
+至此我才明白，rsync只检查时间和文件大小，就决定两边文件是否一致
+如果构造两个文件，内容不一样，但是时间和大小都一样，rsync就会认为两文件一样从而不再传输
+
+比如，创建两个文件，一个内容为 123，一个内容为 321
+$ cat file1.txt file2.txt
+123
+321
+
+然后把他们 touch 成时间相同
+$ touch file1.txt file2.txt
+
+然后看一下他们的详细信息
+$ stat file1.txt file2.txt
+  File: file1.txt
+  Size: 4               Blocks: 8          IO Block: 4096   regular file
+Device: 10302h/66306d   Inode: 7471107     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/z)   Gid: ( 1000/z)
+Access: 2021-05-14 11:27:13.168183020 +0800
+Modify: 2021-05-14 11:27:13.168183020 +0800
+Change: 2021-05-14 11:27:13.168183020 +0800
+ Birth: -
+  File: file2.txt
+  Size: 4               Blocks: 8          IO Block: 4096   regular file
+Device: 10302h/66306d   Inode: 7471108     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/z)   Gid: ( 1000/z)
+Access: 2021-05-14 11:27:13.168183020 +0800
+Modify: 2021-05-14 11:27:13.168183020 +0800
+Change: 2021-05-14 11:27:13.168183020 +0800
+ Birth: -
+
+然后我们执行rsync
+$ rsync -vv -n --no-whole-file --inplace file1.txt file2.txt
+delta-transmission enabled
+file2.txt is uptodate
+total: matches=0  hash_hits=0  false_alarms=0 data=0
+
+sent 46 bytes  received 76 bytes  244.00 bytes/sec
+total size is 4  speedup is 0.03 (DRY RUN)
+
+rsync果然没有传输
+针对这种情况，还需要加上--ignore-times参数，才能让rsync传输时间、大小都一致的文件
+```
+- > `--checksum`, `-c` skip based on checksum, not mod-time & size
+- > 我一般是 `acvz`，z 还可以压缩下。
+
 问个 Linux 问题，纠结一下午了，关于 user 和 group, /etc/passwd 和 /etc/group https://www.v2ex.com/t/769788
 - > （补充组才需要在 /etc/group 里记录，这是约定） <br> 你可以反过来思考下为什么要这样约定 假设不遵循约定会发生什么。。。 <br> 简单说就是数据库设计里避免冗余的方法，如果已经在 passwd 里决定了主组，如果还在 group 里重复记录，那么在出现不一致的时候就会产生歧义，到底按哪个记录为准，现在这样设计就很明确了，登录的时候程序只需要读取 passwd 改变程序的 UID gid，读取 group 扫描有对应用户的 group，通过 setgroups 系统调用设置补充组即可
 

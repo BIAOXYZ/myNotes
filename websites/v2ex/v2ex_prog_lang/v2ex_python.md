@@ -1,4 +1,14 @@
 
+日常中如何解决 Python 中字典是无序这一问题的 https://www.v2ex.com/t/776937
+- > 升级 Python 程序
+- > Python 3.6 中 dict 就已经有序了，而 3.7 起 dict 保持插入顺序成为了正式的 feature。所以，你该升级 Python 了……
+- > 没搞懂为什么那么多人说“升级 Python”或者“Python3.6 就已经有序了“，这个有序说的是插入的有序。而提问者的问题是”键按字母顺序排序或者按值排序“吧？
+  >> 提问者在 6 楼和 7 楼都说了，「只是想让他按照我写的顺序显示」，「不是为了排序只是为了按照我写的顺序展示」
+- > HashMap 是“无序”的，它的“序”靠的是 Hash 值，如果要“有序”可以用红黑树之类结构，但代价是你只能用你排序的那个字段做快速查找、插入了。如果即需要用 Key 快速查找、插入，又希望用别的参数来做“序”那么可能你需要一个符合的数据结构。
+- > https://docs.python.org/zh-cn/3/library/stdtypes.html#mapping-types-dict  在 3.7 版更改: 字典顺序会确保为插入顺序。 此行为是自 3.6 版开始的 CPython 实现细节。
+
+Python 终于决定要提升一下性能了 https://www.v2ex.com/t/776893
+
 cmd 运行 Python 文件时遇到错误如何停留界面？ https://www.v2ex.com/t/758927
 - > 最后加上 os.system("pause")
 - > 用 try-catch 包住整个主函数，捕捉所有异常后 input("Press any key...")
