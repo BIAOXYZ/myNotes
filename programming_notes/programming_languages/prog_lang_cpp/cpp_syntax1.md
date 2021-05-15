@@ -96,3 +96,9 @@ C++ static, const, volatile 总结 - 程序员杨小哥的文章 - 知乎 https:
   * > 我们在定义类的成员函数中，常常***有一些成员函数不改变类的数据成员***。也就是说这些函数的 `readonly function`，而有一些函数要修改类的数据成员的值。如果在 `readonly function` 都加上 `const` 进行标识，无疑会提高程序的可读性。其实还能提高程序的可靠性，已定义成 `const` 的成员函数，一旦企图改变数据成员的值，则编译器按错误处理。
 
 passing 'xxx' as 'this' argument discards qualifiers https://www.jianshu.com/p/40bb0cfc69dc
+
+# 其他
+
+C++将变量名转换为字符串 https://blog.csdn.net/qq_33670157/article/details/104817606
+- > 如何将变量名转换为字符串，这就用到了`define`中的特殊标识符
+- > `##`是简单的连接符，`#@`用来给参数加单引号，`#`用来给参数加双引号即转成字符串。

@@ -84,6 +84,13 @@ C in four functions https://github.com/rswier/c4
 
 # 非硬核类
 
+k8s、docker源码分析、读书笔记 https://github.com/Kevin-fqh/learning-k8s-source-code
+- Linux
+  * (05)Unix-Linux编程实践之线程机制.md  https://github.com/Kevin-fqh/learning-k8s-source-code/blob/master/Linux/(05)Unix-Linux%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5%E4%B9%8B%E7%BA%BF%E7%A8%8B%E6%9C%BA%E5%88%B6.md
+- docker
+  * (05)Client端与Daemon端的通信.md https://github.com/Kevin-fqh/learning-k8s-source-code/blob/master/docker/(05)Client%E7%AB%AF%E4%B8%8EDaemon%E7%AB%AF%E7%9A%84%E9%80%9A%E4%BF%A1.md
+  * (06)daemon的创建过程.md https://github.com/Kevin-fqh/learning-k8s-source-code/blob/master/docker/(06)daemon%E7%9A%84%E5%88%9B%E5%BB%BA%E8%BF%87%E7%A8%8B.md
+
 📚 Tech Interview Guide 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计 https://github.com/CyC2018/CS-Notes
 > https://cyc2018.github.io/CS-Notes/
 
