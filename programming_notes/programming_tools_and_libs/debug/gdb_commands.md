@@ -132,6 +132,14 @@ Num     Type           Disp Enb Address            What
 3       breakpoint     keep n   0x0000000000817660 in PortalRun at pquery.c:722
 ```
 
+```console
+# 查看进程信息，最简形式甚至可以到 i i，但是感觉还是 i inf 最靠谱？
+info inferiors
+
+# 查看线程信息，最简形式为 i th。
+info threads
+```
+
 ## 较系统攻略
 
 GDB调试指南 https://www.yanbinghu.com/2019/04/20/41283.html  || https://github.com/yanbinghu/yanbinghu.github.io/blob/master/2019/04/20/41283.html || https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI2OTA3NTk3Ng==&action=getalbum&album_id=1337122386575147009 || GDB调试入门指南 - 守望的文章 - 知乎 https://zhuanlan.zhihu.com/p/74897601
@@ -325,6 +333,8 @@ off: gdb将控制父进程和子进程。follow-fork-mode指定的进程将被�
 set scheduler-locking on
 ```
 
+GDB调试多线程和多进程(三)：调试多进程应用 https://www.bilibili.com/video/BV1Y4411m7Z5/
+
 ### GDB插件
 
 http://blog.csdn.net/gatieme/article/details/63254211
@@ -464,6 +474,11 @@ http://blog.csdn.net/dybb8999/article/details/72625062
 https://undo.io/resources/presentations/cppcon-2015-greg-law-give-me-15-minutes-ill-change/
 >来源是Liam Huang翻译的一篇文章 <GDB 入门教程：调试 ncurses 相关 bug 的完整范例 >  https://liam0205.me/2017/05/27/tutorial-to-GDB-taking-ncurses-as-an-example/
 >https://undo.io/products/undodb/
+
+### gdbgui
+
+终端调试哪家强？ - 韦易笑的文章 - 知乎 https://zhuanlan.zhihu.com/p/32843449
+- gdbgui https://www.gdbgui.com/
 
 ### xxgdb
 
