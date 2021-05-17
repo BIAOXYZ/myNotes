@@ -68,3 +68,19 @@ pandas的to_csv()使用方法 https://segmentfault.com/a/1190000015326653
   ```
 
 Pandas 基础 (4) - 读 / 写 Excel 和 CSV 文件 https://learnku.com/articles/25093
+
+python-csv文件删除行或者删除列 https://blog.csdn.net/weixin_40446557/article/details/103372497
+- > 1. `data.drop([1,2,3,4])`  #删除1,2,3,4行的整行数据
+- > 2. `data.drop(["列名"]，axis=1)`  or  `data.drop(columns=["列名"])`
+```py
+import pandas as pd
+import csv
+
+data = pd.read_csv("./betting.csv")
+data_new=data.drop([128,129,130]) #删除128，129，130行数据
+data_new=data.drop(["title"]，axis=1) #删除title这列数据
+
+#、、、、对于data进行多次操作，如果想要连续操作，记得都将.号之前的主语改成同一pandas对象，
+#比如前来两个操作，第二个主语需要改成data_new对象。如果想要保存新的csv文件，则为：
+data_new.to_csv("./betting_new.csv",index=0)
+```

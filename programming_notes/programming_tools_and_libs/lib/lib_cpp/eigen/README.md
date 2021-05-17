@@ -33,3 +33,23 @@ Eigen: C++开源矩阵计算工具——Eigen的简单用法 https://blog.csdn.n
 
 Eigen Tutorial 中文文档(c++版) - IQIT的文章 - 知乎 https://zhuanlan.zhihu.com/p/87613088
 - Eigen教程 https://github.com/qixianyu-buaa/EigenChineseDocument
+
+How to get the number of rows and columns of an Eigen::MatrixXd? https://stackoverflow.com/questions/51640997/how-to-get-the-number-of-rows-and-columns-of-an-eigenmatrixxd
+```cpp
+#include <Eigen/Dense>
+
+int main()
+{
+    Eigen::MatrixXd matrix(3, 4);
+    int r = matrix.rows();
+    int c = matrix.cols();
+    for (int i = 0; i < r; ++i)
+    {
+        for (int j = 0; j < c; ++j)
+        {
+            std::cout << matrix(i,j);
+        }
+    }
+    return 0;
+}
+```
