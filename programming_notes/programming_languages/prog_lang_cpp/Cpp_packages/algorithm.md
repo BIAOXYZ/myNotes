@@ -2,6 +2,10 @@
 # 官方
 
 Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorithm/
+- **Non-modifying sequence operations:**
+  * std::for_each https://www.cplusplus.com/reference/algorithm/for_each/
+- **Modifying sequence operations:**
+  * std::copy https://www.cplusplus.com/reference/algorithm/copy/
 - **Sorting**:
   * std::sort http://www.cplusplus.com/reference/algorithm/sort/
 - **Min/max**:

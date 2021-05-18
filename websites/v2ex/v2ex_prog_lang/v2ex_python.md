@@ -1,4 +1,8 @@
 
+给同事讲 Python 的高级用法, 有没有提纲什么的... https://www.v2ex.com/t/777709
+
+Python 的 gil 到底解决了什么具体的问题？ https://www.v2ex.com/t/777560
+
 日常中如何解决 Python 中字典是无序这一问题的 https://www.v2ex.com/t/776937
 - > 升级 Python 程序
 - > Python 3.6 中 dict 就已经有序了，而 3.7 起 dict 保持插入顺序成为了正式的 feature。所以，你该升级 Python 了……

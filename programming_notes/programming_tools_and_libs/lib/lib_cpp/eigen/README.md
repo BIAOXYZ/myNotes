@@ -8,6 +8,10 @@ eigen https://gitlab.com/libeigen/eigen
 https://github.com/eigenteam/eigen-git-mirror
 - > THIS MIRROR IS DEPRECATED -- New url: https://gitlab.com/libeigen/eigen
 
+Publications https://eigen.tuxfamily.org/index.php?title=Publications
+- > Eigen tutorial @ [Eurographics/CGLibs](). Pisa, June 3rd, 2013. [slides](http://downloads.tuxfamily.org/eigen/eigen_CGLibs_Giugno_Pisa_2013.pdf), [demos.tgz]()
+  * > A three hour an half tutorial introducing Eigen in the context of computer graphics. Content:
+
 # 官方文档
 
 https://eigen.tuxfamily.org/index.php?title=Main_Page
