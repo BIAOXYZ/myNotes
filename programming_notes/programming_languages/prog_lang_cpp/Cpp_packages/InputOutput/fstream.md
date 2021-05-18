@@ -149,3 +149,6 @@ $
 4 5 66.666
 77.0 8           9999
 ```
+>> //notes：其实核心的点就是两重循环，并且还可以在这两重循环里加个变量分别统计行数和列数，其他类似的实现包括：
+- Getting the number of columns and rows of a .csv file in C++ https://stackoverflow.com/questions/23042707/getting-the-number-of-columns-and-rows-of-a-csv-file-in-c || 在C++中获取.csv文件的列数和行数 https://www.coder.work/article/3224093
+- C++从txt文件读取数据保存为二维数组 https://blog.csdn.net/qq_22080999/article/details/82532157

@@ -102,7 +102,7 @@ Updating Homebrew...
 🍺  meld was successfully installed!
 ```
 
-## `ip a`
+### `ip a`
 
 ip command in Mac OS X terminal https://superuser.com/questions/687310/ip-command-in-mac-os-x-terminal
 - > You can use `brew` to install `iproute2mac`. It's actually a Python wrapper that provides a very similar API that you'll likely find very familiar to the `ip` tool included with `iproute2` on Linux.
