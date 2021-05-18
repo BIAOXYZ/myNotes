@@ -85,6 +85,11 @@ Mac OS下brew的安装和使用 https://www.jianshu.com/p/ab50ea8b13d6
 
 ## homebrew安装的各种软件
 
+Mac如何打开身份不明开发者的程序？ - 张珺超的回答 - 知乎 https://www.zhihu.com/question/52623818/answer/193376661
+- > 其实没有那么麻烦。遇到这种情况，右键点击这个文件然后点打开，而不是双击。这样弹出的窗口就有打开按钮了～
+
+### meld
+
 ```sh
 % brew install --cask homebrew/cask/meld
 Updating Homebrew...
@@ -97,8 +102,17 @@ Updating Homebrew...
 🍺  meld was successfully installed!
 ```
 
-Mac如何打开身份不明开发者的程序？ - 张珺超的回答 - 知乎 https://www.zhihu.com/question/52623818/answer/193376661
-- > 其实没有那么麻烦。遇到这种情况，右键点击这个文件然后点打开，而不是双击。这样弹出的窗口就有打开按钮了～
+## `ip a`
+
+ip command in Mac OS X terminal https://superuser.com/questions/687310/ip-command-in-mac-os-x-terminal
+- > You can use `brew` to install `iproute2mac`. It's actually a Python wrapper that provides a very similar API that you'll likely find very familiar to the `ip` tool included with `iproute2` on Linux.
+  ```sh
+  $ brew install iproute2mac
+  ==> Installing iproute2mac from brona/homebrew-iproute2mac
+  ==> Downloading https://github.com/brona/iproute2mac/archive/v1.0.3.zip
+  ######################################################################## 100.0%
+  🍺  /usr/local/Cellar/iproute2mac/1.0.3: 4 files,  24K, built in 2 seconds
+  ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
