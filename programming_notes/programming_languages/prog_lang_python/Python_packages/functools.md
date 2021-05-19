@@ -69,3 +69,8 @@ Python Functools – lru_cache() https://www.geeksforgeeks.org/python-functools-
 ## `partial()`
 
 彻底明白 Python partial() - Demon的文章 - 知乎 https://zhuanlan.zhihu.com/p/47124891
+
+## `cmp_to_key()`
+
+排序指南 https://docs.python.org/zh-cn/3/howto/sorting.html || Sorting HOW TO https://docs.python.org/3/howto/sorting.html
+- > In Python 3.2, the [functools.cmp_to_key()]() function was added to the [functools]() module in the standard library.
