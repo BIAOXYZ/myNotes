@@ -24,6 +24,8 @@
   * > 如果还仅仅只是操作那些尚未发布的提交，重写历史记录本身也没有什么很大的问题。但是如果你重写了已经发布到公共服务器上的提交历史，这样做就非常危险了。其他的开发人员可能这时已经在最原始的提交 `C3` 上开始工作，并使它成为了一些新提交中不可或缺的部分，而现在你却把 `C3` 的改动设置到了另一个时间点（就是那个新的 `C3*`）。除此之外，通过rebase 操作，这个原始的 `C3` 还被删除掉了，这将是非常可怕的……
   * > ***因此你应该只使用 rebase 来清理你的本地工作，千万不要尝试着对那些已经被发布的提交进行这个操作***。
 
+git rebase https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+
 Merging vs. Rebasing https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
 git rebase in depth https://git-rebase.io/
