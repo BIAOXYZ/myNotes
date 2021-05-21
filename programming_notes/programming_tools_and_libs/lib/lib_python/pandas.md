@@ -27,6 +27,77 @@ Pandas中文教程 https://github.com/datawhalechina/joyful-pandas
 
 # pandas语法
 
+## 获取行、列
+
+如何获取Dataframe的行数和列数 https://blog.csdn.net/lwgkzl/article/details/80988126
+```console
+返回列数：df.shape[1]
+返回行数：df.shape[0] 或者：len(df)
+```
+
+## 添加行、列
+
+小蛇学python（15）pandas之数据合并 https://www.jianshu.com/p/18a7b6bd15cb
+
+Python Pandas 向DataFrame中添加一行/一列 https://www.jianshu.com/p/936ad27d9865
+- > 在Pandas的DataFrame中添加一行或者一列，添加行有`df.loc[]`以及`df.append()`这两种方法，添加列有`df[]`和`df.insert()`两种方法，下面对这几种方法的使用进行简单介绍。
+
+DataFrame 新增列的五种方法 https://blog.csdn.net/qq_35318838/article/details/102720553
+
+### 个人实战1
+
+```py
+import pandas as pd
+from pandas import DataFrame
+import csv
+ 
+data1 = pd.read_csv("./left.csv")
+data2 = pd.read_csv("./right.csv")
+print(type(data1))
+print(data1)
+print(data2)
+print("length of data2 is: ", len(data2))
+
+print("****************************************************************************************************\n")
+
+length = data1.shape[1]
+incr = 1
+for col in data2.columns:
+    incr += 1
+    print(type(col), data2[col])
+    data1[str(length+incr)] = data2[col]
+
+print("****************************************************************************************************\n")
+
+print(data1)
+
+print("****************************************************************************************************\n")
+
+# 这个megerd办法不太不符合要求
+# frames = [data1, data2]
+# merged = pd.concat(frames)
+# print(merged)
+
+data1.to_csv("./merged.csv", index=0)
+"""
+"""
+# 自己随便编了个 left.csv 和 right.csv
+
+# left.csv
+1, 2, 3
+0.1, 0.2, 0.3
+0.11, 0.22, 0.33
+0.111, 0.222, 0.333
+0.1111, 0.2222, 0.3333
+
+# right.csv
+1, 2
+0.4, 0.5
+0.44, 0.55
+0.444, 0.555
+0.4444, 0.5555
+```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## Dataframe
