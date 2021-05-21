@@ -79,7 +79,8 @@ print("*************************************************************************
 # print(merged)
 
 data1.to_csv("./merged.csv", index=0)
-"""
+
+
 """
 # 自己随便编了个 left.csv 和 right.csv
 
@@ -96,6 +97,67 @@ data1.to_csv("./merged.csv", index=0)
 0.44, 0.55
 0.444, 0.555
 0.4444, 0.5555
+"""
+```
+
+## 读取数据时，没有列名或者分隔符是不规则的空格；存储时拆分数据等
+
+How to make separator in pandas read_csv more flexible wrt whitespace, for irregular separators? https://stackoverflow.com/questions/15026698/how-to-make-separator-in-pandas-read-csv-more-flexible-wrt-whitespace-for-irreg || 对于不规则的分隔符，如何使pandas read_csv中的分隔符更灵活wrt空格？ https://qastack.cn/programming/15026698/how-to-make-separator-in-pandas-read-csv-more-flexible-wrt-whitespace-for-irreg
+- > From the documentation, you can use either a regex or `delim_whitespace`:
+- > `pd.read_csv("whitespace.csv", header=None, delim_whitespace=True)`
+
+pandas系列 read_csv 与 to_csv 方法各参数详解（全，中文版） https://blog.csdn.net/u010801439/article/details/80033341
+
+python读取csv文件并添加索引 https://www.cnblogs.com/btc1996/p/11006318.html
+
+Pandas在读取csv时如何设置列名--常用方法集锦 - CC思SS的文章 - 知乎 https://zhuanlan.zhihu.com/p/44503744
+
+### 个人实战
+
+```py
+import pandas as pd
+from pandas import DataFrame
+import csv
+ 
+# 对于没有列名的数据读入时，设置 header 为None
+data1 = pd.read_csv("./left2.csv", header=None)
+data2 = pd.read_csv("./right2.csv", header=None)
+print(data1)
+print(data2)
+
+# 这个是不对的，自动插入的列名应该用数字，也就是 0 而不是 "0"。
+# print(data2["0"])  
+print(data2[0])
+
+# 在第0个位置（也就是最左边），插入列名为 -1，内容为 data2[0] 的一列。
+data1.insert(0, -1, data2[0])
+print(data1)
+
+# 这样写入保证只保留数据，没有行号和列名
+data1.to_csv("./merge-no-split.csv", header=0, index=0)
+
+length = data1.shape[1]
+split_position = 2
+
+data1.to_csv("./merge-and-split1.csv", header=0, index=0, columns=range(-1, split_position))
+data1.to_csv("./merge-and-split2.csv", header=0, index=0, columns=range(split_position, length-1))
+
+
+"""
+# 自己随便编了个 left2.csv 和 right2.csv，主要特点是去掉了 left.csv 和 right.csv 本身就有的列名。
+
+# left2.csv
+0.1, 0.2, 0.3
+0.11, 0.22, 0.33
+0.111, 0.222, 0.333
+0.1111, 0.2222, 0.3333
+
+# right2.csv
+0.4, 0.5
+0.44, 0.55
+0.444, 0.555
+0.4444, 0.5555
+"""
 ```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
