@@ -58,6 +58,10 @@ sd快打旋风 隐藏技能表 通关流程 https://www.bilibili.com/video/BV1Yt
 
 # 街机
 
+街机、FC、GBA，经典老游戏可以在线联机啦 https://mp.weixin.qq.com/s/UMECGamtHDl55qMIh-PdVA
+- > 畅玩空间是一款可以在电脑、手机上联机玩怀旧经典小游戏的服务，支持电脑浏览器、微信小程序，拥有 Windows 客户端，免费、即开即玩、可联机，让你摸鱼更愉快。
+- > 畅玩空间： https://www.wo1wan.com/
+
 有没有能直接在线玩的街机模拟器（NEOGEO游戏模拟器）？ - 知乎 https://www.zhihu.com/question/22548262
 - 小霸王，其乐无穷 https://www.yikm.net/
 - 游聚游戏平台 https://www.gotvg.com/
