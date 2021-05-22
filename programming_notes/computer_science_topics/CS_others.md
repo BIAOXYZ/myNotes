@@ -53,6 +53,10 @@ BusTub https://github.com/cmu-db/bustub || https://15445.courses.cs.cmu.edu/
 
 Build a distributed SQL database from the ground up 从零开始写分布式数据库 https://github.com/ngaut/builddatabase
 
+## network project
+
+互联网体系结构/庖丁解牛Linux网络协议栈 https://github.com/mengning/net
+
 ## crypto and security project (hard to be placed into the academic related repo)
 
 Sparse Merkle Tree https://github.com/aergoio/SMT
