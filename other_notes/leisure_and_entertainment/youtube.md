@@ -26,3 +26,6 @@ how we write/review code in big tech companies https://www.youtube.com/watch?v=r
 
 神奇的零知识证明！既能保守秘密，又让别人信你！ https://www.ixigua.com/6961704171380834829 || https://www.youtube.com/watch?v=FuKEpOhiVPg
 > 包括了zkp科普的常见的四个例子；最后四色问题那里举例说明有的图是不能三染色的。
+
+姚期智百万富翁问题：大数据时代，如何保护个人隐私？ https://www.youtube.com/watch?v=dOTwAzXrkyQ || https://www.ixigua.com/6964666618957791752 || https://www.bilibili.com/s/video/BV1ZA411G7zo
+> 烧箱子那里就让我想起上一期零知识证明那里数独混合装袋子——这两种操作有一点点类似，能不能在密码学理论方面抽象些什么出来呢？

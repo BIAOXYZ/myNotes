@@ -1,4 +1,12 @@
 
+Dockerfile 构建的镜像通过 ssh 登录后，环境变量被重置 https://www.v2ex.com/t/778905
+```console
+直接通过docker exec进去环境变量是正常的，python，pip啥的都有，但通过ssh登录后，啥都没有, 使用场景又是在ssh登录的前提下使用的
+目前是手动 ssh 登录进去，命令行执行: export $(cat /proc/1/environ |tr '\0' '\n' | xargs)
+有没有一劳永逸的方法，直接在Dockerfile中就搞定环境变量？或者是直接在docker-compose.yml中能处理这个吗
+```
+- > 問題不是在 docker, 而是 sshd 下的 shell 沒有引用 container 的 enviroment <br> 上面一堆教 Dockerfile 等等的都被樓主帶錯了方向 <br> 用 Google 的話秒查到答案了吧 https://stackoverflow.com/questions/34630571/docker-env-variables-not-set-while-log-via-shell
+
 问问大家关于 k8s 的 deployment 创建过程 https://www.v2ex.com/t/771559
 - >
   ```
