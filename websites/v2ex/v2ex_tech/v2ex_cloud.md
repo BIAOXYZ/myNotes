@@ -1,4 +1,6 @@
 
+清理 docker registry 的旧镜像，有什么简单的方法吗？ https://www.v2ex.com/t/779025
+
 Dockerfile 构建的镜像通过 ssh 登录后，环境变量被重置 https://www.v2ex.com/t/778905
 ```console
 直接通过docker exec进去环境变量是正常的，python，pip啥的都有，但通过ssh登录后，啥都没有, 使用场景又是在ssh登录的前提下使用的
