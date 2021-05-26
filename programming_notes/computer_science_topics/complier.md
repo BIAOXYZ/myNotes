@@ -3,6 +3,14 @@
 
 面对舆论，方舟编译器首次公布源码分析及基础架构 https://www.infoq.cn/article/qcfC3pa21xGeWxiu5vq9
 
+# general
+
+## debug 和 release的区别
+
+Debug与Release版本的区别 https://blog.51cto.com/gragel/728668 || https://developer.aliyun.com/article/6307 || https://cloud.tencent.com/developer/article/1024760 || https://www.huaweicloud.com/articles/8355815.html 【一篇文章四个网站转。。。真有你们的- -】
+- > `1. Runtime Library：链接哪种运行时刻函数库通常只对程序的性能产生影响。调试版本的 Runtime Library 包含了调试信息，并采用了一些保护机制以帮助发现错误，因此性能不如发布版本。编译器提供的 Runtime Library 通常很稳定，不会造成 Release 版错误；倒是由于 Debug 的 Runtime Library 加强了对错误的检测，如堆内存分配，有时会出现 Debug 有错但 Release 正常的现象。应当指出的是，如果 Debug 有错，即使 Release 正常，程序肯定是有 Bug 的，只不过可能是 Release 版的某次运行没有表现出来而已。`
+  >> //notes：起因是有同事碰到了一个现象：Release模式编的能正常运行，Debug模式编的跑起来会出coredump。
+
 # GCC/G++
 
 "undefined reference to XXX"问题总结 - 船长的文章 - 知乎 https://zhuanlan.zhihu.com/p/81681440
