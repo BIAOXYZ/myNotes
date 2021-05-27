@@ -345,10 +345,16 @@ conda create -n <your_env_name> python=3.6  # 例：conda create -n py27 python=
 conda env remove -n <your_env_name>  # 例：conda env remove --name bio-env // 等于 conda remove -n bio-env --all
 conda env list
 conda info --envs  # 似乎等于上面那个语句，反正差不多吧
+conda info -e  # 也等于上面那句
 conda activate <your_env_name>
 conda deactivate
 
 # 包管理
+conda list  # 查看（当前环境里）已经安装的包
+conda list -n <your_env_name>  # 查看某个环境里已经安装的包
+conda install <package_name>  # 在当前环境中安装某个包
+conda install --name <your_env_name> <package_name>  # 在指定环境中安装某个包
+conda remove <package_name>  # 删除当前环境中的某个包
 conda remove -n <your_env_name> <package1> <package2>  # 例：conda remove --name bio-env toolz boltons
 conda remove -n <your_env_name> --all  # 例：conda remove -n bio-env --all // 这句会直接把这个虚环境给删掉，等于前面的 conda env remove --name bio-env
 ```
