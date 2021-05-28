@@ -1,6 +1,12 @@
 
 # general
 
+A Tour of C++ https://isocpp.org/tour
+
+C++ crash course for C programmers https://github.com/rougier/CPP-Crash-Course
+
+A Crash Course in C++ https://web.stanford.edu/class/cs193d/handouts/04-A-Crash-Course.pdf
+
 C++知识点 —— 整合（持续更新中） https://blog.csdn.net/bb807777/article/details/102882980
 
 # `++i` 与 `i++`
