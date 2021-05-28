@@ -378,6 +378,8 @@ Using Python environments in VS Code https://code.visualstudio.com/docs/python/e
 VSCode debugger conditional breakpoints https://stackoverflow.com/questions/43311058/vscode-debugger-conditional-breakpoints || VSCode调试器条件断点 https://www.thinbug.com/q/43311058
 - > https://code.visualstudio.com/docs/editor/debugging#_conditional-breakpoints
 
+VSCODE设置命令行参数，带参数调试程序（python的argv） https://blog.csdn.net/Wuli_jiejie/article/details/98342731
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 # vscode for latex
