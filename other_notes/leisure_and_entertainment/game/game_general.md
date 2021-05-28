@@ -18,6 +18,12 @@
 - > 只需要打开这个网页： https://game.chronodivide.com/  就能领略二十年前的单机游戏，不过目前该版本还没有电脑玩家，所以想要正常进入游戏，你还需要找一个人类对手。
 - > 不过，实在找不到对手，打开浏览器的隐身模式，自己跟自己玩也是没问题的。
 
+# 三国杀
+
+三国杀:孙尚香 https://zh.moegirl.org.cn/%E4%B8%89%E5%9B%BD%E6%9D%80:%E5%AD%99%E5%B0%9A%E9%A6%99
+
+三国杀:小乔 https://zh.moegirl.org.cn/%E4%B8%89%E5%9B%BD%E6%9D%80:%E5%B0%8F%E4%B9%94
+
 # 页游
 
 有什么好玩的网页游戏？ - 青天璇的回答 - 知乎 https://www.zhihu.com/question/21016962/answer/669211976

@@ -141,6 +141,7 @@ Pinbox - 网络收藏夹 https://chrome.google.com/webstore/detail/pinbox-%E7%BD
     + > I have been working on Octotree for the last 5 years in my spare time. For the past year or so, I started accepting donation, but that didn't work out too well. I need a sustainable source of income to fund the on-going development cost of Octotree. This is more important than ever as a few other developers have joined me to help maintain and improve Octotree. <br> Make no mistake, we will not abandon the free version of Octotree. We commit to keep updating and improving it with features that the majority of users need. We removed Chrome GitHub Enterprise support in this release because we had to rewrite this feature from scratch to support Firefox and we consider this an advanced feature that most users don't need. If you need this feature, please consider upgrading to Octotree Pro to support the developers and enjoy other premium features.
 - Sourcegraph https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack
 - MathJax Plugin for Github https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima
+  * 【后来有个新版，不是一个作者，不知道是不是比旧的好用，先mark下】 MathJax 3 Plugin for Github https://chrome.google.com/webstore/detail/mathjax-3-plugin-for-gith/peoghobgdhejhcmgoppjpjcidngdfkod
 - Enhanced Github https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd
 - ZenHub for GitHub https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd
 - Refined GitHub https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
@@ -229,6 +230,14 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 教你发挥 Chrome 的全威力：通过 crx 文件安装扩展程序 https://www.ithome.com/0/510/521.htm
 - > Crx4Chrome：https://www.crx4chrome.com/
+
+6个下载插件的神仙网站！ - 老Y工作室的文章 - 知乎 https://zhuanlan.zhihu.com/p/82397778
+- > 01 极简插件 https://chrome.zzzmh.cn/
+- > 02 gugeapps https://www.gugeapps.net/
+- > 03 扩展迷 https://www.extfans.com/
+- 回复里的：
+  * https://www.chrome666.com/
+  * https://k1k.pianpai.com/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
