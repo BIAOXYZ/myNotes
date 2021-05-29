@@ -7,7 +7,15 @@ A Tour of C++ https://isocpp.org/tour
 - 2.7 Const & inline
 - 2.9 Exercises
   * Write a basic makefile for compiling sources -- solution: https://github.com/rougier/CPP-Crash-Course/blob/master/sources/Makefile
+- 3.3 Access control
+  * **public**: Anyone is granted access
+  * **protected**: Only derived classes are granted access
+  * **private**: No one but friends are granted access
 - 3.4 Initialization list
+- 3.7 Exercises
+  * Why the following code doesn't compile ? -- https://github.com/rougier/CPP-Crash-Course/blob/master/sources/crash-course-3.1.cc
+- 4.2 Virtual methods
+  * > A `virtual` function allows derived classes to replace the implementation provided by the base class (yes, it is not automatic...). Non virtual methods are resolved statically (***at compile time***) while virtual methods are resolved dynamically (***at run time***).
 
 A Crash Course in C++ https://web.stanford.edu/class/cs193d/handouts/04-A-Crash-Course.pdf
 
