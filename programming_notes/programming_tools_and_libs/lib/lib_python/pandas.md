@@ -11,6 +11,8 @@ User Guide https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html
 - Indexing and selecting data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 - Merge, join, and concatenate https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
 
+pandas.Series.unique https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.unique.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # pandas源码

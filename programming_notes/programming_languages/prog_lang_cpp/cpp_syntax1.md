@@ -3,7 +3,11 @@
 
 A Tour of C++ https://isocpp.org/tour
 
-C++ crash course for C programmers https://github.com/rougier/CPP-Crash-Course
+【[:star:][`*`]】 C++ crash course for C programmers https://github.com/rougier/CPP-Crash-Course
+- 2.7 Const & inline
+- 2.9 Exercises
+  * Write a basic makefile for compiling sources -- solution: https://github.com/rougier/CPP-Crash-Course/blob/master/sources/Makefile
+- 3.4 Initialization list
 
 A Crash Course in C++ https://web.stanford.edu/class/cs193d/handouts/04-A-Crash-Course.pdf
 
