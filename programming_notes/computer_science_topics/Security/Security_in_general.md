@@ -9,6 +9,8 @@ security_w1k1 https://github.com/euphrat1ca/security_w1k1
 
 应急响应实战笔记，一个安全工程师的自我修养。 https://github.com/Bypass007/Emergency-Response-Notes
 
+C,C++安全指南.md https://github.com/Tencent/secguide/blob/main/C%2CC%2B%2B%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97.md
+
 # Security News
 
 Linux 基金会联合厂商成立开源安全基金会 https://www.ithome.com/0/501/388.htm
