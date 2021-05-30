@@ -32,6 +32,8 @@ What are Vectors in C++ ? All You Need to Know https://www.edureka.co/blog/vecto
 - > Vectors in C++ are sequence containers representing arrays that can change in size. They use contiguous storage locations for their elements, which means that their elements can also be accessed using offsets on regular pointers to its elements, and just as efficiently as in arrays.
 - > Vectors in C++ are the dynamic arrays that are used to store data. Unlike arrays, which are used to store sequential data and are static in nature, Vectors provide more flexibility to the program. Vectors can resize itself automatically when an element is inserted or deleted depending on the need of the task to be executed. It is not the same in an array where only a given number of values can be stored under a single variable name.
 
+# vector初始化
+
 C++-二维vector初始化大小方法-备忘 https://www.cnblogs.com/ZERO-/p/9736482.html
 - > 1.直接用初始化方法。名字为vec，大小为n*m，初始值为0的二维vector。
   ```cpp
@@ -49,6 +51,8 @@ C++-二维vector初始化大小方法-备忘 https://www.cnblogs.com/ZERO-/p/973
 C++ vector的初始化 https://blog.csdn.net/qq_40147449/article/details/87892312
 
 vector 的六种 创建和初始化方法 https://blog.csdn.net/veghlreywg/article/details/80400382
+
+# vector元素访问
 
 C++获得vector最后一个元素 https://blog.csdn.net/mitu405687908/article/details/51148107
 ```cpp
@@ -70,7 +74,7 @@ vectorT.back();
 *vectorT.rbegin();
 ```
 
-## 对 vector 做一些操作可能会使得当前迭代器失效 
+# 对 vector 做一些操作可能会使得当前迭代器失效 
 >> //notes：起因是在用C++做leetcode第27题时，想用类似python的倒序遍历删除，发现不行。
 
 c++中vector的遍历及元素删除 https://blog.csdn.net/dds_dev_group/article/details/6951441
@@ -133,3 +137,11 @@ C++ Primer：vector插入元素时迭代器失效问题 https://www.jianshu.com/
 - > 5. 总结
   * > 1. 当 `size() == capacity()`，插入元素时vector会被重新分配内存，指向元素的迭代器都会失效。
   * > 2. 当 `size() < capacity()`，插入元素时vector不会被重新分配内存。此时，若迭代器指向插入位置之前的元素，它仍有效；若迭代器指向插入位置之后的元素，它将会失效。
+
+# vector作为参数
+
+C++：vector小指南（附带一些新手错误） - Feng的文章 - 知乎 https://zhuanlan.zhihu.com/p/336492399
+
+C++（笔记）容器(vector)作为函数参数如何传参 https://blog.csdn.net/w_linux/article/details/72417896
+
+vector作为参数的三种传参方式 https://www.cnblogs.com/xiaoxi666/p/6843211.html
