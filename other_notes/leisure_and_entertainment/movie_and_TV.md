@@ -14,6 +14,17 @@
 
 主角与配角 https://baike.baidu.com/item/%E4%B8%BB%E8%A7%92%E4%B8%8E%E9%85%8D%E8%A7%92/10483785
 
+Batman Begins (2005) -- Michael Caine: Alfred https://www.imdb.com/title/tt0372784/characters/nm0000323
+```console
+[as Wayne Manor is burning down] 
+Bruce Wayne : What have I done, Alfred? Everything my family... my father built...
+Alfred Pennyworth : The Wayne legacy is more than bricks and mortar, sir.
+Bruce Wayne : I wanted to save Gotham. I failed.
+Alfred Pennyworth : Why do we fall sir? So that we can learn to pick ourselves up.
+Bruce Wayne : You still haven't given up on me?
+Alfred Pennyworth : Never.
+```
+
 ## 甲方乙方
 
 “我为党国立过功，我为委座流过血。你们不能这样。我要见师座！”的出处是什么？ https://zhidao.baidu.com/question/503682837.html

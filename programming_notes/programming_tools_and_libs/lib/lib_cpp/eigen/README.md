@@ -21,6 +21,12 @@ https://eigen.tuxfamily.org/index.php?title=Main_Page
     + Eigen::Matrix< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > Class Template Reference https://eigen.tuxfamily.org/dox/classEigen_1_1Matrix.html
   * Quick reference guide https://eigen.tuxfamily.org/dox/group__QuickRefPage.html
 
+Chapters https://eigen.tuxfamily.org/dox/modules.html
+- Dense matrix and array manipulation https://eigen.tuxfamily.org/dox/group__DenseMatrixManipulation__chapter.html
+  * Matrix and vector arithmetic https://eigen.tuxfamily.org/dox/group__TutorialMatrixArithmetic.html || https://github.com/qixianyu-buaa/EigenChineseDocument/blob/master/Eigen/Chapter1_DenseMatrixAndArrary/Section2_MatrixAndVectorArithmetic.hpp
+  * The Array class and coefficient-wise operations https://eigen.tuxfamily.org/dox/group__TutorialArrayClass.html
+  * Block operations https://eigen.tuxfamily.org/dox/group__TutorialBlockOperations.html || https://github.com/qixianyu-buaa/EigenChineseDocument/blob/master/Eigen/Chapter1_DenseMatrixAndArrary/Section4_BlockOperations.hpp
+
 # 其他
 
 C++矩阵计算库Eigen3之：矩阵的基本操作和运算 https://blog.csdn.net/hanss2/article/details/78822955
