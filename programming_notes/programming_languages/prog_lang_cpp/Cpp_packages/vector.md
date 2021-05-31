@@ -138,6 +138,30 @@ C++ Primer：vector插入元素时迭代器失效问题 https://www.jianshu.com/
   * > 1. 当 `size() == capacity()`，插入元素时vector会被重新分配内存，指向元素的迭代器都会失效。
   * > 2. 当 `size() < capacity()`，插入元素时vector不会被重新分配内存。此时，若迭代器指向插入位置之前的元素，它仍有效；若迭代器指向插入位置之后的元素，它将会失效。
 
+# vector切片
+
+Slicing a vector in C++ https://stackoverflow.com/questions/50549611/slicing-a-vector-in-c/50549636
+
+# vector整个打印
+
+【[:star:][`*`]】 How do I print out the contents of a vector? https://stackoverflow.com/questions/10750057/how-do-i-print-out-the-contents-of-a-vector
+- https://stackoverflow.com/questions/10750057/how-do-i-print-out-the-contents-of-a-vector/10758845#10758845
+  ```cpp
+  #include <iterator> // needed for std::ostram_iterator
+  
+  template <typename T>
+  std::ostream& operator<< (std::ostream& out, const std::vector<T>& v) {
+    if ( !v.empty() ) {
+      out << '[';
+      std::copy (v.begin(), v.end(), std::ostream_iterator<T>(out, ", "));
+      out << "\b\b]";
+    }
+    return out;
+  }
+  ```
+
+C++ Vector : Print all elements – (6 Ways) https://thispointer.com/cpp-vector-print-all-elements/
+
 # vector作为参数
 
 C++：vector小指南（附带一些新手错误） - Feng的文章 - 知乎 https://zhuanlan.zhihu.com/p/336492399
