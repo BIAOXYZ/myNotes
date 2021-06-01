@@ -26,6 +26,8 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
   * Matrix and vector arithmetic https://eigen.tuxfamily.org/dox/group__TutorialMatrixArithmetic.html || https://github.com/qixianyu-buaa/EigenChineseDocument/blob/master/Eigen/Chapter1_DenseMatrixAndArrary/Section2_MatrixAndVectorArithmetic.hpp
   * The Array class and coefficient-wise operations https://eigen.tuxfamily.org/dox/group__TutorialArrayClass.html
   * Block operations https://eigen.tuxfamily.org/dox/group__TutorialBlockOperations.html || https://github.com/qixianyu-buaa/EigenChineseDocument/blob/master/Eigen/Chapter1_DenseMatrixAndArrary/Section4_BlockOperations.hpp
+  * Alignment issues https://eigen.tuxfamily.org/dox/group__DenseMatrixManipulation__Alignement.html
+    + Using STL Containers with Eigen https://eigen.tuxfamily.org/dox/group__TopicStlContainers.html
 
 # 其他
 

@@ -56,6 +56,9 @@ Learn X in Y minutes https://learnxinyminutes.com/
   * > ▶代码仓库：https://gitee.com/tinylab/linux-lab
 
 Awesome Online IDE: 🌩️ A list of awesome online development environments https://github.com/styfle/awesome-online-ide
+- > **Snippets**
+  * [Ideone](https://ideone.com/) - Run snippets from over 60 languages including AWK, Swift, and SQLite.
+  * [CPP Shell](http://cpp.sh/) - Run C++ snippets with input flags for warning level and optimization level.
 
 一个基于浏览器的编程工具 (Coderlane) https://www.v2ex.com/t/620951
 > 创造最完美的在线实时结对编程环境 https://coderlane.net/
