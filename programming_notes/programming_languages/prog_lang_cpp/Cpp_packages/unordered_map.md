@@ -91,8 +91,30 @@ Mars: 3396
 Jupiter: 69910
 ```
 
+# unordered_map初始化
+
+C++ STL unordered_map详解 https://blog.csdn.net/wsp_1138886114/article/details/106794899
+
 # 其他
 
 unordered_map in C++ STL https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
 
 C++ STL unordered_map用法 https://www.cnblogs.com/downey-blog/p/10471875.html
+
+c++ get values of an unordered_map of vector of unordered_map https://stackoverflow.com/questions/64248957/c-get-values-of-an-unordered-map-of-vector-of-unordered-map
+- >
+  ```cpp
+  std::unordered_map<int,std::string> names{
+  {1,"John"},
+  {3,"Geoff"},
+  {2,"Parekh"},
+  };
+  
+  //Iterating through the map
+  for (auto [key,value] : names)
+  {
+      std::cout << key <<  " : " << value << '\n';
+  }
+  ```
+
+C++STL : unordered_map详解 - 甘蔗的文章 - 知乎 https://zhuanlan.zhihu.com/p/296360525
