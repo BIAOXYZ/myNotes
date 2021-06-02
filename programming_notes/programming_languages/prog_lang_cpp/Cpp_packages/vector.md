@@ -205,6 +205,46 @@ How to find index of a given element in a Vector in C++ https://www.geeksforgeek
 
 Get index of the matching item from vector c++ https://stackoverflow.com/questions/22388204/get-index-of-the-matching-item-from-vector-c
 
+# vector去重
+
+vector 去重方法 https://leetcode-cn.com/circle/article/71vyHt/
+- > 使用 `set`
+  ```cpp
+  #include <iostream>
+  #include <vector>
+  #include <set>
+  using namespace std;
+  int main()
+  {
+      vector<int> vec = {1, 2, 3, 1, 1};
+      set<int> s(vec.begin(), vec.end());
+      vec.assign(s.begin(), s.end());
+      for(int x : vec)
+          cout << x << ",";
+      return 0;
+  }
+  //////////////////////////////////////////////////
+  1,2,3, 
+  ```
+- > 使用 `unique()`
+  ```cpp
+  #include <iostream>
+  #include <algorithm>
+  #include <vector>
+  using namespace std;
+  int main()
+  {
+      vector<int> vec = {1, 2, 3, 1, 1};
+      sort(vec.begin(), vec.end());
+      vec.erase(unique(vec.begin(), vec.end()), vec.end());
+      for(int x : vec)
+          cout << x << ",";
+      return 0;
+  }
+  //////////////////////////////////////////////////
+  1,2,3, 
+  ```
+
 # vector整个打印
 
 【[:star:][`*`]】 How do I print out the contents of a vector? https://stackoverflow.com/questions/10750057/how-do-i-print-out-the-contents-of-a-vector

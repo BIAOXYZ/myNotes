@@ -46,6 +46,26 @@ Eigen: C++开源矩阵计算工具——Eigen的简单用法 https://blog.csdn.n
 Eigen Tutorial 中文文档(c++版) - IQIT的文章 - 知乎 https://zhuanlan.zhihu.com/p/87613088
 - Eigen教程 https://github.com/qixianyu-buaa/EigenChineseDocument
 
+# gdb里debug这个库看不到具体信息
+
+Using GDB with Eigen C++ library https://stackoverflow.com/questions/25085465/using-gdb-with-eigen-c-library
+- > You have to install a gdb extension that you can find in [eigen/debug/gdb/](https://gitlab.com/libeigen/eigen/-/blob/master/debug/gdb/printers.py). The comment at the beginning of the file explains how to install it.
+- > One trick you can use is the .data() member, it gives you a pointer to the raw array that contains the data. With that you can print it in GDB like so:
+  ```sh
+  print *X.data()@Length_X
+  ```
+  > where X is the eigen variable and Length_X is the product of its rows and columns.
+
+Debugging Eigen in VSCode https://stackoverflow.com/questions/58464867/debugging-eigen-in-vscode
+
+如何使用gdb打印Eigen中的变量 https://blog.csdn.net/tony_513/article/details/72937692
+
+How to debug with gdb with eigen math library https://stackoverflow.com/questions/27180589/how-to-debug-with-gdb-with-eigen-math-library
+
+# 排序
+
+利用标准库std::sort()对Eigen库的向量进行排序 https://blog.csdn.net/X_And_Y/article/details/83383520
+
 # `.rows()` 和 `.cols()`
 
 How to get the number of rows and columns of an Eigen::MatrixXd? https://stackoverflow.com/questions/51640997/how-to-get-the-number-of-rows-and-columns-of-an-eigenmatrixxd
@@ -108,3 +128,7 @@ Using C++/Eigen3 https://epcced.github.io/2019-04-16-ModernCpp/lectures/eigen/us
   a_eigen(10, 0) = 1.0;
   Eigen::Map<Eigen::MatrixXd> a2_eigen(a.data(), 10, 100);
   ```
+
+can I exchange data between matrix, array and std:vector https://forum.kde.org/viewtopic.php?t=102900
+
+eigen_matrix_helper.cpp https://gist.github.com/ialhashim/14db82926cdab2575508
