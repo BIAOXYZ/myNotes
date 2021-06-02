@@ -142,6 +142,34 @@ C++ Primer：vector插入元素时迭代器失效问题 https://www.jianshu.com/
 
 Slicing a vector in C++ https://stackoverflow.com/questions/50549611/slicing-a-vector-in-c/50549636
 
+# 获取vector的下标
+
+Find the index of an element in vector in C++ https://www.techiedelight.com/find-index-element-vector-cpp/
+
+vector查找数据并返回索引 https://blog.csdn.net/weixin_43956456/article/details/104731517
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+int main()
+{
+	vector<int> arr = {3, 4, 9, 100};
+	int target = 100;
+	vector<int>::iterator result = find(arr.begin(), arr.end(), target);
+	int index = distance(arr.begin(), result);
+	cout << "target index is: " << index << endl;
+	system("pause");
+}
+//////////////////////////////////////////////////
+target index is: 3
+```
+
+How to find index of a given element in a Vector in C++ https://www.geeksforgeeks.org/how-to-find-index-of-a-given-element-in-a-vector-in-cpp/
+
+Get index of the matching item from vector c++ https://stackoverflow.com/questions/22388204/get-index-of-the-matching-item-from-vector-c
+
 # vector整个打印
 
 【[:star:][`*`]】 How do I print out the contents of a vector? https://stackoverflow.com/questions/10750057/how-do-i-print-out-the-contents-of-a-vector
