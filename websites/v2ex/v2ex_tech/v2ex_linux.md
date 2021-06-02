@@ -1,4 +1,15 @@
 
+请教一个 centos7 默认防火墙问题 https://www.v2ex.com/t/780812
+- > 问题解决，谢谢各位 参考： https://blog.csdn.net/Jailman/article/details/111591811
+  ```
+  禁止 docker 管理防火墙
+  修改 /etc/docker/daemon.json
+  {
+  “iptables”:false
+  }
+  重启 docker
+  ```
+
 关于 rsync 的新发现 https://www.v2ex.com/t/776894
 ```console
 至此我才明白，rsync只检查时间和文件大小，就决定两边文件是否一致

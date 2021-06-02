@@ -15,12 +15,20 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
 - **Element access**:
   * std::vector::data https://www.cplusplus.com/reference/vector/vector/data/
 - **Modifiers**:
+  * std::vector::assign http://www.cplusplus.com/reference/vector/vector/assign/
+    + > Assigns new contents to the vector, replacing its current contents, and modifying its size accordingly.
   * std::vector::push_back http://www.cplusplus.com/reference/vector/vector/push_back/
   * std::vector::emplace_back http://www.cplusplus.com/reference/vector/vector/emplace_back/
 
 ## cppreference
 
 std::vector<T,Allocator>::emplace_back https://en.cppreference.com/w/cpp/container/vector/emplace_back
+
+# `.assign()`
+
+What's difference between those two std::vector's assign methods? https://stackoverflow.com/questions/18492750/whats-difference-between-those-two-stdvectors-assign-methods
+
+C++中vector容器 assign()用法 https://blog.csdn.net/liyuan_669/article/details/22104421
 
 # `.data()`
 
@@ -84,6 +92,8 @@ C++-二维vector初始化大小方法-备忘 https://www.cnblogs.com/ZERO-/p/973
   ```
 
 C++ vector的初始化 https://blog.csdn.net/qq_40147449/article/details/87892312
+
+vector的几种初始化及赋值方式 https://blog.csdn.net/yjunyu/article/details/77728410
 
 vector 的六种 创建和初始化方法 https://blog.csdn.net/veghlreywg/article/details/80400382
 
@@ -176,6 +186,10 @@ C++ Primer：vector插入元素时迭代器失效问题 https://www.jianshu.com/
 # vector切片
 
 Slicing a vector in C++ https://stackoverflow.com/questions/50549611/slicing-a-vector-in-c/50549636
+- > This can easily be done using std::vector's copy constructor:
+  ```cpp
+  v2 = std::vector<int>(v1.begin() + 1, v1.end());
+  ```
 
 # 获取vector的下标
 
@@ -244,6 +258,10 @@ vector 去重方法 https://leetcode-cn.com/circle/article/71vyHt/
   //////////////////////////////////////////////////
   1,2,3, 
   ```
+
+# vector求和
+
+C++ - Vector 计算 均值(mean) 和 方差(variance) https://blog.csdn.net/MissXy_/article/details/80702375
 
 # vector整个打印
 
