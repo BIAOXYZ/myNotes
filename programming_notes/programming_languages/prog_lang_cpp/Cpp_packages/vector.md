@@ -12,6 +12,8 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
       - > ***An iterator pointing to the new location of the element that followed the last element erased by the function call***. This is the container end if the operation erased the last element in the sequence.
 - **Capacity**:
   * std::vector::resize http://www.cplusplus.com/reference/vector/vector/resize/
+- **Element access**:
+  * std::vector::data https://www.cplusplus.com/reference/vector/vector/data/
 - **Modifiers**:
   * std::vector::push_back http://www.cplusplus.com/reference/vector/vector/push_back/
   * std::vector::emplace_back http://www.cplusplus.com/reference/vector/vector/emplace_back/
@@ -19,6 +21,39 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
 ## cppreference
 
 std::vector<T,Allocator>::emplace_back https://en.cppreference.com/w/cpp/container/vector/emplace_back
+
+# `.data()`
+
+STL vector中的data方法(21) https://blog.csdn.net/qq844352155/article/details/38610645
+- > 原文地址:http://www.cplusplus.com/reference/vector/vector/data/
+- > 返回一个直接指向内存中存储vector元素位置的指针。
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<int> vi={1,20,30};
+	cout<<"vi.capacity="<<vi.capacity()<<endl;
+	cout<<"vi.data()="<<vi.data()<<endl;
+	auto *p=vi.data();
+	cout<<"p="<<p<<endl;
+	cout<<"*p="<<*p<<endl;
+	cout<<"*(p+2)="<<*(p+2)<<endl;
+	cout<<"*(p+10)="<<*(p+10)<<endl;	
+	cout<<"vi.capacity="<<vi.capacity()<<endl;
+}
+//////////////////////////////////////////////////
+vi.capacity=3
+vi.data()=0x3ea8120
+p=0x3ea8120
+*p=1
+*(p+2)=30
+*(p+10)=0
+vi.capacity=3
+```
+
+vector data() function in C++ STL https://www.geeksforgeeks.org/vector-data-function-in-c-stl/
 
 # `.emplace_back()`
 

@@ -71,3 +71,40 @@ int main()
 # `.block()`
 
 Shrink matrix with Eigen using block() in assignment https://stackoverflow.com/questions/30145771/shrink-matrix-with-eigen-using-block-in-assignment
+
+# `::Map()`
+
+Typecasting `std::vector<double>` to `Eigen::VectorXd` https://forum.kde.org/viewtopic.php?t=94839
+```cpp
+#include <Eigen/Dense>
+#include <vector>
+using namespace Eigen;
+int main() {
+  std::vector<std::complex<double> > v2(10);
+  VectorXcd v3 = VectorXcd::Map(v2.data(), v2.size());
+}
+```
+
+typecasting `Eigen::VectorXd` to `std::vector` https://stackoverflow.com/questions/26094379/typecasting-eigenvectorxd-to-stdvector
+- > 
+  ```cpp
+  vector<int> vec(mat.data(), mat.data() + mat.rows() * mat.cols());
+  ```
+- > You cannot typecast, but you can easily copy the data:
+  ```cpp
+  VectorXd v1;
+  v1 = ...;
+  vector<double> v2;
+  v2.resize(v1.size());
+  VectorXd::Map(&v2[0], v1.size()) = v1;
+  ```
+  > `mat.rows() * mat.cols()` can be simplified to `mat.size()`, however, be aware that this solution only work for a plain `Matrix<>` object, while using a `Map<>` as in my answer works for sub-matrices too.
+
+Using C++/Eigen3 https://epcced.github.io/2019-04-16-ModernCpp/lectures/eigen/using-eigen.pdf
+- > It is easy to “overlay” existing memory with an Eigen Array or Matrix:
+  ```cpp
+  std::vector<double> a(1000);
+  Eigen::Map<Eigen::Matrix<double, 100, 10>> a_eigen(a.data());
+  a_eigen(10, 0) = 1.0;
+  Eigen::Map<Eigen::MatrixXd> a2_eigen(a.data(), 10, 100);
+  ```
