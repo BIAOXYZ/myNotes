@@ -18,6 +18,9 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
   * std::vector::assign http://www.cplusplus.com/reference/vector/vector/assign/
     + > Assigns new contents to the vector, replacing its current contents, and modifying its size accordingly.
   * std::vector::push_back http://www.cplusplus.com/reference/vector/vector/push_back/
+  * std::vector::pop_back https://www.cplusplus.com/reference/vector/vector/pop_back/
+  * std::vector::insert https://www.cplusplus.com/reference/vector/vector/insert/
+  * std::vector::erase https://www.cplusplus.com/reference/vector/vector/erase/
   * std::vector::emplace_back http://www.cplusplus.com/reference/vector/vector/emplace_back/
 
 ## cppreference
