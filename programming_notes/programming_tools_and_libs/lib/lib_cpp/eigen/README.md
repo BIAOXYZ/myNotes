@@ -144,6 +144,11 @@ Append column to matrix, using Eigen library https://stackoverflow.com/questions
   >> Thanks, this is working. I figured out that it is even possible to write `mat.conservativeResize(NoChange, mat.cols()+1);` which lets the number of rows unchanged.
 
 How do you make a matrix out of vectors in eigen? https://stackoverflow.com/questions/16470893/how-do-you-make-a-matrix-out-of-vectors-in-eigen
+- > You can also append them using the comma initializer syntax:
+  ```cpp
+  m << v1, v2, v3, v4;
+  ```
+  > The matrix m must have been properly resized first.
 
 Eigen how to concatenate matrix along a specific dimension? https://stackoverflow.com/questions/21496157/eigen-how-to-concatenate-matrix-along-a-specific-dimension
 
