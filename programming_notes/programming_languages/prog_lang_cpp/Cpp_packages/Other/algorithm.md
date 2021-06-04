@@ -14,6 +14,8 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
   * std::min_element http://www.cplusplus.com/reference/algorithm/min_element/
 
 Algorithms library https://en.cppreference.com/w/cpp/algorithm
+- Non-modifying sequence operations
+  * std::for_each https://en.cppreference.com/w/cpp/algorithm/for_each
 - Sorting operations
   * std::sort https://en.cppreference.com/w/cpp/algorithm/sort
 - Minimum/maximum operations
