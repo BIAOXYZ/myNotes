@@ -28,6 +28,9 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
   * Block operations https://eigen.tuxfamily.org/dox/group__TutorialBlockOperations.html || https://github.com/qixianyu-buaa/EigenChineseDocument/blob/master/Eigen/Chapter1_DenseMatrixAndArrary/Section4_BlockOperations.hpp
   * Alignment issues https://eigen.tuxfamily.org/dox/group__DenseMatrixManipulation__Alignement.html
     + Using STL Containers with Eigen https://eigen.tuxfamily.org/dox/group__TopicStlContainers.html
+    + Passing Eigen objects by value to functions https://eigen.tuxfamily.org/dox/group__TopicPassingByValue.html
+      - > Passing objects by value is almost always a very bad idea in C++, as this means useless copies, and one should pass them by reference instead.
+      - > With Eigen, this is even more important: passing fixed-size vectorizable Eigen objects by value is not only inefficient, it can be illegal or make your program crash! And the reason is that these Eigen objects have alignment modifiers that aren't respected when they are passed by value.
 
 # 其他
 
@@ -160,3 +163,5 @@ how to concatenate Vectors in Eigen? https://stackoverflow.com/questions/2569132
   ```
 
 Assigning a vector to a matrix column in Eigen https://stackoverflow.com/questions/36417836/assigning-a-vector-to-a-matrix-column-in-eigen
+
+Eigen::Matrix与array数据转换 https://www.cnblogs.com/VVingerfly/p/8037490.html
