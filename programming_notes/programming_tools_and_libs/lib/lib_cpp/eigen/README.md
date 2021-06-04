@@ -132,3 +132,26 @@ Using C++/Eigen3 https://epcced.github.io/2019-04-16-ModernCpp/lectures/eigen/us
 can I exchange data between matrix, array and std:vector https://forum.kde.org/viewtopic.php?t=102900
 
 eigen_matrix_helper.cpp https://gist.github.com/ialhashim/14db82926cdab2575508
+
+# 添加行、列等
+
+Append column to matrix, using Eigen library https://stackoverflow.com/questions/27404811/append-column-to-matrix-using-eigen-library
+- > You can use `conservativeResize` for that purpose:
+  ```cpp
+  mat.conservativeResize(mat.rows(), mat.cols()+1);
+  mat.col(mat.cols()-1) = vec;
+  ```
+  >> Thanks, this is working. I figured out that it is even possible to write `mat.conservativeResize(NoChange, mat.cols()+1);` which lets the number of rows unchanged.
+
+How do you make a matrix out of vectors in eigen? https://stackoverflow.com/questions/16470893/how-do-you-make-a-matrix-out-of-vectors-in-eigen
+
+Eigen how to concatenate matrix along a specific dimension? https://stackoverflow.com/questions/21496157/eigen-how-to-concatenate-matrix-along-a-specific-dimension
+
+how to concatenate Vectors in Eigen? https://stackoverflow.com/questions/25691324/how-to-concatenate-vectors-in-eigen
+- > Like so, assuming you have vec1 and vec2 already:
+  ```cpp
+  VectorXd vec_joined(vec1.size() + vec2.size());
+  vec_joined << vec1, vec2;
+  ```
+
+Assigning a vector to a matrix column in Eigen https://stackoverflow.com/questions/36417836/assigning-a-vector-to-a-matrix-column-in-eigen
