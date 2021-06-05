@@ -26,9 +26,14 @@ A distributed, shared-nothing relational database https://github.com/alibaba/oce
 
 如何看待支付宝分布式数据库OceanBase以高出去年10倍的7.7亿tpmC打破自己创下的世界纪录? - 知乎 https://www.zhihu.com/question/396219395
 
+### OB开源
+>> //notes：第二个commit： https://github.com/oceanbase/oceanbase/commit/e0126ff4ef328d494c12e8218f097967d993dc5b
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## PolarDB
+
+PolarDB for PostgreSQL https://github.com/alibaba/PolarDB-for-PostgreSQL
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
