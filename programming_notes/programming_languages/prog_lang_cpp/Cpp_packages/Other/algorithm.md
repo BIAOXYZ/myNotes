@@ -4,6 +4,8 @@
 Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorithm/
 - **Non-modifying sequence operations:**
   * std::for_each https://www.cplusplus.com/reference/algorithm/for_each/
+  * std::find https://www.cplusplus.com/reference/algorithm/find/
+  * std::count https://www.cplusplus.com/reference/algorithm/count/
 - **Modifying sequence operations:**
   * std::copy https://www.cplusplus.com/reference/algorithm/copy/
 - **Sorting**:
@@ -16,6 +18,8 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
 Algorithms library https://en.cppreference.com/w/cpp/algorithm
 - Non-modifying sequence operations
   * std::for_each https://en.cppreference.com/w/cpp/algorithm/for_each
+  * std::count, std::count_if https://en.cppreference.com/w/cpp/algorithm/count
+  * std::find, std::find_if, std::find_if_not https://en.cppreference.com/w/cpp/algorithm/find
 - Sorting operations
   * std::sort https://en.cppreference.com/w/cpp/algorithm/sort
 - Minimum/maximum operations

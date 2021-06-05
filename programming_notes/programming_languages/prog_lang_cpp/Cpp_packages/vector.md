@@ -27,6 +27,35 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
 
 std::vector<T,Allocator>::emplace_back https://en.cppreference.com/w/cpp/container/vector/emplace_back
 
+# 注意点
+
+## vector没有 `.find()` 方法
+>> //notes：起因是今天刷题时候碰到一个要用 `unordered_set` 的题目，然后发现 `unordered_set` 都有自带的 `.find()` 和 `.count()` 方法，然而 `vector` 却没有。。。只能用 `<algorithm>` 库里公共的。
+
+c++判断vector中是否存在特定元素的方法 https://blog.csdn.net/guotianqing/article/details/105832070
+- > 1. `std::count`
+- > 2. `std::find`
+  * > find会在查找到指定值后立即返回，所以它一般比count更快（因为count总是要遍历整个容器）。
+  * > 上述代码只需要更改条件判断语句：
+    ```cpp
+    if (std::find(v.begin(), v.end(), key) != v.end())
+    ```
+- > 3. `std::find_if`
+- > 4. `std::any_of` (C++11)
+- > 5. `std::binary_search`
+
+C++的vector居然没有find成员函数啊， 那就用泛型find吧 https://blog.csdn.net/stpeace/article/details/51112249
+
+why there is no find for vector in C++ https://stackoverflow.com/questions/2994073/why-there-is-no-find-for-vector-in-c
+- > There is the `std::find()` algorithm, which performs a linear search over an iterator range, e.g.,
+  ```cpp
+  std::vector<int> v;
+  // Finds the first element in the vector that has the value 42:
+  // If there is no such value, it == v.end()
+  std::vector<int>::const_iterator it = std::find(v.begin(), v.end(), 42);
+  ```
+  > If your vector is sorted, you can use `std::binary_search()` to test whether a value is present in the vector, and `std::equal_range()` to get begin and end iterators to the range of elements in the vector that have that value.
+
 # `.assign()`
 
 What's difference between those two std::vector's assign methods? https://stackoverflow.com/questions/18492750/whats-difference-between-those-two-stdvectors-assign-methods

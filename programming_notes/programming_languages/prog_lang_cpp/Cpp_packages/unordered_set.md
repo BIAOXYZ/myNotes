@@ -2,6 +2,9 @@
 # 官方
 
 std::unordered_set https://www.cplusplus.com/reference/unordered_set/unordered_set/
+- **Element lookup**
+  * std::unordered_set::find https://www.cplusplus.com/reference/unordered_set/unordered_set/find/
+  * std::unordered_set::count https://www.cplusplus.com/reference/unordered_set/unordered_set/count/
 
 # 其他
 
