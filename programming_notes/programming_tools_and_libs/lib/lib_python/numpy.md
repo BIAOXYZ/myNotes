@@ -21,3 +21,7 @@ Python 中的range(),arange()函数 https://blog.csdn.net/qianwenhong/article/de
 - 从数组到矩阵的迹，NumPy常见使用大总结 https://www.jiqizhixin.com/articles/2017-10-28
 
 # numpy其他
+
+np.linspace(): Create Evenly or Non-Evenly Spaced Arrays https://realpython.com/np-linspace-numpy/
+
+【NumPy】 快速构建 ndarray 对象（np.empty、np.full、np.titl、np.r_、np.linspace） https://blog.csdn.net/tz_zs/article/details/87698697
