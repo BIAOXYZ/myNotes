@@ -397,3 +397,5 @@ linux 同时安装python2 python3， 及pip 的安装使用 https://blog.csdn.ne
   sudo apt-get install python-pip
   sudo apt-get install python3-pip
   ```
+
+How to install pip with Python 3? https://stackoverflow.com/questions/6587507/how-to-install-pip-with-python-3
