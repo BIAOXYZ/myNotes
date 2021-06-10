@@ -26,3 +26,22 @@ C Programming/time.h https://en.wikibooks.org/wiki/C_Programming/time.h
 time.h header file in C with Examples https://www.geeksforgeeks.org/time-h-header-file-in-c-with-examples/
 
 C++ 日期 & 时间 https://www.runoob.com/cplusplus/cpp-date-time.html
+```cpp
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main( )
+{
+   time_t now = time(0);
+   char* dt = ctime(&now);
+   cout << "local date and time is：" << dt << endl;
+ 
+   tm *gmtm = gmtime(&now);
+   dt = asctime(gmtm);
+   cout << "UTC date and time is："<< dt << endl;
+}
+//////////////////////////////////////////////////
+local date and time is：Thu Jun 10 07:17:47 2021
+
+UTC date and time is：Thu Jun 10 07:17:47 2021
+```
