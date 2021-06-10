@@ -120,3 +120,5 @@ passing 'xxx' as 'this' argument discards qualifiers https://www.jianshu.com/p/4
 C++将变量名转换为字符串 https://blog.csdn.net/qq_33670157/article/details/104817606
 - > 如何将变量名转换为字符串，这就用到了`define`中的特殊标识符
 - > `##`是简单的连接符，`#@`用来给参数加单引号，`#`用来给参数加双引号即转成字符串。
+
+C++头文件定义类的方法 https://blog.csdn.net/qq_35779286/article/details/94169434

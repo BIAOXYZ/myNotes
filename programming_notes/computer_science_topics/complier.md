@@ -11,6 +11,11 @@ Debug与Release版本的区别 https://blog.51cto.com/gragel/728668 || https://d
 - > `1. Runtime Library：链接哪种运行时刻函数库通常只对程序的性能产生影响。调试版本的 Runtime Library 包含了调试信息，并采用了一些保护机制以帮助发现错误，因此性能不如发布版本。编译器提供的 Runtime Library 通常很稳定，不会造成 Release 版错误；倒是由于 Debug 的 Runtime Library 加强了对错误的检测，如堆内存分配，有时会出现 Debug 有错但 Release 正常的现象。应当指出的是，如果 Debug 有错，即使 Release 正常，程序肯定是有 Bug 的，只不过可能是 Release 版的某次运行没有表现出来而已。`
   >> //notes：起因是有同事碰到了一个现象：Release模式编的能正常运行，Debug模式编的跑起来会出coredump。
 
+## 编译器优化
+
+[翻译]C++编译器中的优化 https://fuzhe1989.github.io/2020/01/22/optimizations-in-cpp-compilers/
+- > 原文：  Optimizations in C++ Compilers - A practical journey https://queue.acm.org/detail.cfm?id=3372264
+
 # GCC/G++
 
 ## `undefined reference to XXX`
