@@ -1,4 +1,6 @@
 
+求 sql 优化才几万数据查询都破 1s 了 https://www.v2ex.com/t/782918
+
 sql 改写类的数据脱敏遇到的问题求助 https://www.v2ex.com/t/727240
 
 SQL 怎么查询满足多个属性的数据？ https://www.v2ex.com/t/713866
