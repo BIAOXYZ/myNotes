@@ -49,4 +49,6 @@ $ python -m debugpy --listen 5678 example.py --model regression
 
 # 应该用这句。
 $ python -m debugpy --listen 5678 --wait-for-client example.py --model regression
+
+# PS：看这个项目的代码，二分类和多分类就是把最后的 regression 换成 binary_cf 或 multi_cf 即可。
 ```

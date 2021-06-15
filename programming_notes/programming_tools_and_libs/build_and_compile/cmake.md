@@ -28,6 +28,11 @@ cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu
 
 如何使用Cmake生成debug版本和release版本的程序 https://blog.csdn.net/a794226986/article/details/18605903
 
+### 个人实战1
+```sh
+cmake . -DCMAKE_BUILD_TYPE=Debug
+```
+
 # 问题
 
 ## `Unknown CMake command "target_link_options"`
