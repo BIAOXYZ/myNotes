@@ -456,6 +456,8 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 ### 个人
 - Markdown All in One https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 - Bracket Pair Colorizer 2 https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+- Edit csv https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv
+  * > If you don't have vs code to hand, you can use the online version at https://edit-csv.net
 
 ## 插件相关攻略
 
