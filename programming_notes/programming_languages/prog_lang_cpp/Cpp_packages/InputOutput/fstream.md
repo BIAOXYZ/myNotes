@@ -62,7 +62,9 @@ C++ 文件和流 https://www.cnblogs.com/linuxAndMcu/p/10396531.html
 
 C++文件读写详解（ofstream,ifstream,fstream) https://www.cnblogs.com/codingmengmeng/p/5545042.html
 
-# 实战
+# 个人实战
+
+## 读csv
 
 C++ 读取.csv文件 https://www.jianshu.com/p/1172e2de7a7a
 - 文章原版，甚至都有错误（没有包含`<vector>`）——而更大的问题在于这个版本分隔符只能处理逗号，csv里的数据一旦复杂点就读不完全了。。。
@@ -152,3 +154,44 @@ $
 >> //notes：其实核心的点就是两重循环，并且还可以在这两重循环里加个变量分别统计行数和列数，其他类似的实现包括：
 - Getting the number of columns and rows of a .csv file in C++ https://stackoverflow.com/questions/23042707/getting-the-number-of-columns-and-rows-of-a-csv-file-in-c || 在C++中获取.csv文件的列数和行数 https://www.coder.work/article/3224093
 - C++从txt文件读取数据保存为二维数组 https://blog.csdn.net/qq_22080999/article/details/82532157
+
+## 写csv
+
+C/C++读写csv文件 https://blog.csdn.net/u012234115/article/details/64465398
+```cpp
+#include <string>
+#include <vector>
+#include <fstream>
+using namespace std;
+
+void persistent_2dvector(vector<vector<float>>& test_data) {
+	std::string file_path = "./persist-result.csv";
+	ofstream outFile;
+	outFile.open(file_path, ios::out);
+	for (int i = 0; i < test_data.size(); ++i) {
+		for (int j = 0; j < test_data[0].size(); ++j) {
+			if (j != test_data[0].size() - 1) {
+				outFile << test_data[i][j] << ',';
+			} else {
+				outFile << test_data[i][j];
+			}
+		}
+		outFile << std::endl;
+	}
+  outFile.close();
+}
+
+int main()
+{
+	vector<vector<float>> test_data(3, vector<float>(2, 6.66));
+	persistent_2dvector(test_data);
+	return 0;
+}
+//////////////////////////////////////////////////
+$ g++ write_to_csv.cpp -o write_to_csv
+$ ./write_to_csv
+$ cat persist-result.csv
+6.66,6.66
+6.66,6.66
+6.66,6.66
+```
