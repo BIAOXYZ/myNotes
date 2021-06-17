@@ -41,3 +41,5 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 《腾讯隐私计算白皮书2021》重磅发布｜附下载 https://mp.weixin.qq.com/s/4-ey1BTuSghhmHr7Xk8V5Q  【`腾讯研究院`】
 - > 腾讯研究院与腾讯数据平台部、腾讯安全、腾讯云区块链 、腾讯数据隐私保护部、腾讯安全平台部、腾讯广告联合发布《腾讯隐私计算白皮书2021》，旨在与业界共同探讨、推动隐私计算技术产业的发展，寻求在数字治理中发展和安全的平衡点。
+
+《中国隐私计算产业发展报告（2020~2021）》全文 https://mp.weixin.qq.com/s/R3uA3KlH5Qs7I7WnsV44jQ

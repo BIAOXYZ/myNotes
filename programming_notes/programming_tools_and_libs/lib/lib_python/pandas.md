@@ -25,9 +25,20 @@ Pandas Cookbook 带注释源码 https://github.com/apachecn/pandas-cookbook-code
 
 Pandas中文教程 https://github.com/datawhalechina/joyful-pandas
 
+Python 数据科学入门教程：Pandas https://www.jianshu.com/p/d9774cf1fea5
+
+Pandas 中文网 https://www.pypandas.cn/ || https://github.com/teadocs/pandas-cn
+- 快速入门 https://www.pypandas.cn/docs/getting_started/
+
+学习python中的pandas有没有好的教程推荐？ - 知乎 https://www.zhihu.com/question/56310477
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # pandas语法
+
+Pandas速查手册中文版 - 笑虎的文章 - 知乎 https://zhuanlan.zhihu.com/p/25630700
+- > **数据选取**
+  * > `df.iloc[0,0]`：返回第一列的第一个元素
 
 ## 获取行、列
 
@@ -160,6 +171,37 @@ data1.to_csv("./merge-and-split2.csv", header=0, index=0, columns=range(split_po
 0.444, 0.555
 0.4444, 0.5555
 """
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 遍历
+
+第17篇：Pandas-遍历DataFrame对象 - 铁甲万能狗的文章 - 知乎 https://zhuanlan.zhihu.com/p/339744795
+- > 按行遍历 <br> 通过for迭代df.iterrows接口，idx是输出DataFrame内部的索引值,data输出每行单元格的值
+  ```py
+  for idx,data in df.iterrows():
+      print("[{}]: {}".format(idx,data))
+  ```
+
+### 个人实战（通过遍历每一行，统计第一列的0和1的个数，根据和0.5的关系来做判断）
+```py
+import pandas as pd
+import csv
+ 
+data = pd.read_csv("./xxx.csv")
+print("The (0,0) item is: ", data.iloc[0,0])
+print("The row number is: ", data.shape[0])
+print("The column number is: %d" % (data.shape[1]))
+
+n_one = 0
+n_zero = 0
+for rowInd, row in data.iterrows():
+    if row[0] < 0.5:
+        n_zero += 1
+    else:
+        n_one += 1
+print (n_zero, n_one)
 ```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
