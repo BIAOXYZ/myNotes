@@ -1,4 +1,10 @@
 
+github actions 居然是能扩容的 https://www.v2ex.com/t/783934
+- > 我不太懂，你竟然能 ssh 到 github actions 的容器里？
+  >> 用那种端口映射的服务
+  >>> https://github.com/marketplace/actions/debugging-with-tmate  这个 action 就可以 ssh 到 github action 中，任务最长时间 6 小时，时间到了，资源以及数据就删除了
+  >>>> 老号估计只会限制你使用 actions，白号检测到 ssh 或者 tmate 这些，直接删号的……
+
 如何查看针对一个 git 仓库的 clone 和 pull 操作历史? https://www.v2ex.com/t/719779
 - > git 本身没有, git hook 可以自己记录
 
