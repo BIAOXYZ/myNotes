@@ -138,3 +138,9 @@ s ：取代，可以直接进行取代的工作哩！通常这个 s 的动作可
 7 shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
 .....(后面省略).....
 ```
+
+# 其他
+
+Linux Shell输出文本中的指定行 https://blog.csdn.net/hs_err_log/article/details/79646376
+- > 打印文本： p
+  * > a. 输出test.txt的第5-7行：`sed -n "5,7p" test.txt`（-n的作用就显示出来了，可以去除-n查看效果）
