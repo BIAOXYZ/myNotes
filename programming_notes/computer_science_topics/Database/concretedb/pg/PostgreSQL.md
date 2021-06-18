@@ -62,6 +62,9 @@ https://wiki.postgresql.org/wiki/Main_Page
 Pgsrcstructure https://wiki.postgresql.org/wiki/Pgsrcstructure
 
 【[:star:][`*`]】 Pgkernel https://wiki.postgresql.org/wiki/Pgkernel
+- > PG源码解析项目概要
+- > 内核相关项目
+- > 相关资料
 
 Bitmap Indexes https://wiki.postgresql.org/wiki/Bitmap_Indexes
 
@@ -151,6 +154,7 @@ https://searchcode.com/codesearch/view/5324466/
 
 - 跟我一起读postgresql源码(一)——psql命令 http://www.cnblogs.com/flying-tiger/p/6004314.html
 - 跟我一起读postgresql源码(二)——Parser(查询分析模块) http://blog.csdn.net/zdy0_2004/article/details/53106260
+- 跟我一起读postgresql源码(六)——Executor(查询执行模块之——查询执行策略) https://www.cnblogs.com/flying-tiger/p/6100794.html
 
 <<PG 内存上下文>>
 http://www.zhangxiaojian.name/pg-%E5%86%85%E5%AD%98%E4%B8%8A%E4%B8%8B%E6%96%87/
