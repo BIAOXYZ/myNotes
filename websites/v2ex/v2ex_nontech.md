@@ -90,6 +90,10 @@ https://bruno-simon.com  各种交互各种炫
 
 # 生活信息
 
+为了研究房屋买卖，验证想法，我转行做了房产中介 https://www.v2ex.com/t/784160
+- > 这个是项目主页，里面有未来业务哈，欢迎大家点评，给出意见，谢谢大家。
+  >> 房小会 https://www.fangxiaohui.co/
+
 要装修了，有没有装修经验分享给新人哇！ https://www.v2ex.com/t/759859
 
 我在北京租了个月租 700 的房子，不敢想像 https://www.v2ex.com/t/706736

@@ -375,6 +375,8 @@ Go in Visual Studio Code https://code.visualstudio.com/docs/languages/go
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # vscode for python
 
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
@@ -421,9 +423,18 @@ VSCODE设置命令行参数，带参数调试程序（python的argv） https://b
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # vscode for latex
 
 VS Code 与 LaTeX 真乃天作之合 https://www.jianshu.com/p/57f8d1e026f5
+
+vscode 写 LaTeX 可否做到代码与预览滚动同步？ https://www.v2ex.com/t/784233
+- > LaTeX 请用 TeXStudio，可以按行定位到 PDF
+- > vs code 的话推荐试试 tex workshop 。虽然不能自动滚动，但可以快捷键同步位置。一键编译什么的也很好用。
+- > 正反向定位一直都有啊，tex-workshop，记得把 synctex 打开就行，ctrl+左键反向定位，编译的时候正向定位
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vscode others
 
@@ -433,6 +444,8 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
   * How to exit from code-server #1257 https://github.com/cdr/code-server/issues/1257
 
 在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vscode issues
 
@@ -444,6 +457,8 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
   fs.inotify.max_user_watches=524288
   ```
 - > Another option is to exclude specific workspace directories from the VS Code file watcher with the `files.watcherExclude` [setting](https://code.visualstudio.com/docs/getstarted/settings).
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vscode插件
 
