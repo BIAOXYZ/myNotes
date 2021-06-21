@@ -190,8 +190,13 @@ aoho's blog - Golang http://blueskykong.com/categories/Golang/
 
 huaxz1986 https://github.com/huaxz1986 || http://www.huaxiaozhuan.com/
 - 《算法导论》中算法的C++实现 https://github.com/huaxz1986/cplusplus-_Implementation_Of_Introduction_to_Algorithms
+  * > 本项目中的所有算法均来自于《算法导论》第三版 另：本人搜集了个人笔记并整理成册，命名为《AI算法工程师手册》，详见: www.huaxiaozhuan.com
 - 《UNIX环境高级编程》第三版中文笔记 https://github.com/huaxz1986/APUE_notes
 - python_tools https://github.com/huaxz1986/python_tools
+
+AI算法工程师手册 http://www.huaxiaozhuan.com/
+- 统计学习
+  * 线性模型 http://www.huaxiaozhuan.com/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/chapters/1_linear.html
 
 --------------------------------------------------
 --------------------------------------------------

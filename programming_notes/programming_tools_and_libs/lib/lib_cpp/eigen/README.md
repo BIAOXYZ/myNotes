@@ -74,6 +74,26 @@ Debugging Eigen in VSCode https://stackoverflow.com/questions/58464867/debugging
 
 How to debug with gdb with eigen math library https://stackoverflow.com/questions/27180589/how-to-debug-with-gdb-with-eigen-math-library
 
+## （结合上面几篇）个人实战在gdb中打印Eigen矩阵
+
+```sh
+mkdir eigen_configuration && cd eigen_configuration/
+# 官方源文件地址在这里（过去 bitbucket 上的不能用了）：https://gitlab.com/libeigen/eigen/-/blob/master/debug/gdb/printers.py
+wget https://gitlab.com/libeigen/eigen/-/raw/master/debug/gdb/printers.py
+touch __init__.py
+
+cat << EOF >> ~/.gdbinit
+# This is for Eigen print
+python
+import sys
+sys.path.insert(0,'/home/<YOUR_USER_NAME>/eigen_configuration')
+from printers import register_eigen_printers
+register_eigen_printers (None)
+end
+EOF
+```
+>> //notes：然后注意就是启动gdb后如果没有自动 `source` 文件 `.gdbinit` 的话，需要在 gdb 界面里手动 `source` 下。
+
 # 排序
 
 利用标准库std::sort()对Eigen库的向量进行排序 https://blog.csdn.net/X_And_Y/article/details/83383520
