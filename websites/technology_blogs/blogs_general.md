@@ -186,6 +186,12 @@ aoho's blog - Golang http://blueskykong.com/categories/Golang/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+## 华校专blog
+
+huaxz1986 https://github.com/huaxz1986 || http://www.huaxiaozhuan.com/
+- 《算法导论》中算法的C++实现 https://github.com/huaxz1986/cplusplus-_Implementation_Of_Introduction_to_Algorithms
+- 《UNIX环境高级编程》第三版中文笔记 https://github.com/huaxz1986/APUE_notes
+- python_tools https://github.com/huaxz1986/python_tools
 
 --------------------------------------------------
 --------------------------------------------------

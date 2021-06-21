@@ -374,11 +374,17 @@ C++ 有没有像 pip、npm、gem 一样的包管理工具？ - 知乎 https://ww
 
 # pip, pipenv and others
 
+## pip general
+
 Python包管理器-pip https://juejin.im/post/5beb92e7e51d454fbd6b4bc4
 
 最全的 pip 使用指南，50% 你可能没用过 https://juejin.im/post/5dc2bdabf265da4d4216bd29
 
 Pipenv – 超好用的 Python 包管理工具 https://juejin.im/post/5b31ba8851882574e808e555
+
+pip使用指南（基于pip 8.1.1） https://github.com/huaxz1986/python_tools/blob/master/packages/pip_usage.markdown
+
+## pip concrete
 
 如何安装PIP来管理Linux中的Python包 https://www.howtoing.com/install-pip-in-linux/
 ```sh
