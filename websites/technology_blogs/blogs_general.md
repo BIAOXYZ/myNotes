@@ -196,7 +196,8 @@ huaxz1986 https://github.com/huaxz1986 || http://www.huaxiaozhuan.com/
 
 AI算法工程师手册 http://www.huaxiaozhuan.com/
 - 统计学习
-  * 线性模型 http://www.huaxiaozhuan.com/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/chapters/1_linear.html
+  * 1.线性模型 http://www.huaxiaozhuan.com/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/chapters/1_linear.html
+  * 7.梯度提升树 http://www.huaxiaozhuan.com/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/chapters/7_GBT.html
 
 --------------------------------------------------
 --------------------------------------------------
