@@ -40,7 +40,9 @@ Pandas速查手册中文版 - 笑虎的文章 - 知乎 https://zhuanlan.zhihu.co
 - > **数据选取**
   * > `df.iloc[0,0]`：返回第一列的第一个元素
 
-## 获取行、列
+【[:star:][`*`]】 Pandas中loc和iloc函数用法详解（源码+实例） https://blog.csdn.net/W_weiying/article/details/81411257
+
+## 获取行数、列数
 
 如何获取Dataframe的行数和列数 https://blog.csdn.net/lwgkzl/article/details/80988126
 ```console
