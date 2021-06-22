@@ -65,6 +65,7 @@ sd快打旋风 隐藏技能表 通关流程 https://www.bilibili.com/video/BV1Yt
   * https://www.crazygames.com/ 【据说很难打开？】
 - https://kbhgames.com/
   * 复古专区 https://kbhgames.com/tag/retro
+    + Sonic 2 Anniversary Edition https://kbhgames.com/game/sonic-2-anniversary-edition 【嘿嘿，终于找到了，有个小狐狸一直跟着索尼克的版本，贼萌了。】
 - 畅玩空间 https://play.wo1wan.com/
 
 街机、FC、GBA，经典老游戏可以在线联机啦 https://mp.weixin.qq.com/s/UMECGamtHDl55qMIh-PdVA
