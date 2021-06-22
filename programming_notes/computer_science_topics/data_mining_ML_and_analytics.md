@@ -19,3 +19,8 @@ Kaggle入门，看这一篇就够了 - a2Mia姐的文章 - 知乎 https://zhuanl
   * > 1. Titanic（泰坦尼克之灾）
   * > 2. House Prices: Advanced Regression Techniques（房价预测）
   * > 3. Digital Recognition（数字识别）
+
+Kaggle实战——点击率预估 - 程世东的文章 - 知乎 https://zhuanlan.zhihu.com/p/32500652
+- > 项目地址： kaggle_criteo_ctr_challenge- https://github.com/chengstone/kaggle_criteo_ctr_challenge-
+
+GBDT+LR CTR预估-Kaggle实例[有数据集] https://www.jianshu.com/p/73adce3fd975
