@@ -405,3 +405,7 @@ SSH/OpenSSH/PortForwarding https://help.ubuntu.com/community/SSH/OpenSSH/PortFor
 SSH Port Forwarding Example https://www.ssh.com/ssh/tunneling/example
 
 SSH tunnel https://www.ssh.com/ssh/tunneling/
+
+# 7. ssh连接复用（or 长连接）
+
+ssh复用连接配置 https://github.com/int32bit/dotfiles/blob/master/ssh/README.md
