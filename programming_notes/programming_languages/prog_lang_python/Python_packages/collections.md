@@ -207,3 +207,9 @@ Python | Counter Objects | elements() https://www.geeksforgeeks.org/python-count
 Counter https://pymotw.com/2/collections/counter.html
 
 Python Counter in Collections with Example https://www.guru99.com/python-counter-collections-example.html
+
+# namedtuple
+
+Write Pythonic and Clean Code With namedtuple https://realpython.com/python-namedtuple/
+
+Namedtuple in Python https://www.geeksforgeeks.org/namedtuple-in-python/
