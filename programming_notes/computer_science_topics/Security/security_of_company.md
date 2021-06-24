@@ -103,6 +103,8 @@ ABY 3 and Applications https://github.com/ladnir/aby3
 
 （阅读笔记）ABY3: A Mixed Protocol Framework for Machine Learning https://blog.csdn.net/qq_42328228/article/details/109563447
 
+ABY3: A Mixed Protocol Framework for Machine Learning https://slideplayer.com/slide/15832833/
+
 ## ABY
 
 ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation https://github.com/encryptogroup/ABY  【这个和ABY<sup>3</sup>貌似不是一个单位搞的】
