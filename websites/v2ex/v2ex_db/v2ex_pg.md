@@ -1,4 +1,14 @@
 
+PG 也不学好 https://www.v2ex.com/t/785716
+```console
+今天才知道，原来 PG 默认也是可以在 INTEGER 字段上写入以字符串表示的数字的。也会把数值转成字符串写入 VARCHAR 字段，只有宽度限制。
+我还以为只有 MySQL 有这种行为。
+```
+- > PG 本来就有很多 IMPLICIT CAST，甚至你可以自定义 CAST 。
+- > 不这样的话，sql 中怎么表达 datetime 类型呢
+  >> 你这么一说确实有道理了。
+- > 常量定义里，data，timestamp，interval 这一类变量前面都可以用关键字+字符串 表示是某种类型的变量。隐式转换在很多数据库中都存在的
+
 PostgreSQL 为什么不使用 direct IO，而要依赖 os page cahce？ https://www.v2ex.com/t/752942
 
 postgres 用户登录问题 https://www.v2ex.com/t/730231
