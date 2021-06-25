@@ -58,9 +58,53 @@ conda install -c conda-forge debugpy -y
 ## 2.debug用的 json 配置文件参考这俩帖子就行，其实就是官方原版
 
 Python debug configurations in Visual Studio Code https://code.visualstudio.com/docs/python/debugging
-- > **Command line debugging** 部分
+- > **Command line debugging**
+  * > You would then use the following configuration to attach from the VS Code Python extension.
+    ```json
+    {
+      "name": "Python: Attach",
+      "type": "python",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      }
+    }
+    ```
 
 VSCode调试在命令行输入的Python指令（如：带-m参数的Python指令） https://blog.csdn.net/weixin_39278265/article/details/107705492
+
+**// PS：个人实际写的是这个**。
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "Python: Current File",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "program": "${file}",
+        //     "console": "integratedTerminal",
+        //     "args": ["example.py", "--model regression"]
+        // }
+
+        {
+            "name": "Python: Attach",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+              "host": "localhost",
+              "port": 5678
+            }
+        }
+
+    ]
+}
+```
 
 ```sh
 # 如果没有 --wait-for-client，程序直接就运行到结束了。。。
@@ -74,7 +118,7 @@ $ python -m debugpy --listen 5678 --wait-for-client example.py --model regressio
 
 ## 3.一些结果（跟debug无关了，就是记一下方便后续看）
 
-分别在该项目训练完成后和预测完成后打印一下训练数据和测试数据，方便看过程。PS：这个项目熟了以后就不用开图形了，又慢又麻烦。
+分别在该项目训练完成后和预测完成后打印一下训练数据和测试数据，方便看过程（**在另一个仓库有更详细的数据和图片**）。PS：这个项目熟了以后就不用开图形了，又慢又麻烦。
 ```py
 model.fit(data)
 print(data)

@@ -71,10 +71,10 @@ vscode 向下复制当前行（即visual studio 中的Ctrl + D）功能快捷键
 ## 代码块整体左移右移
 
 ```
-多行代码同时左移一个tab键（等于 shift + tab）
+多行代码同时左移一个tab键（等于 `选中要移动的代码然后 shift + tab`）
 ctrl+[
 
-多行代码同时右移一个tab键（等于 tab）
+多行代码同时右移一个tab键（等于 `选中要移动的代码然后 tab`）
 ctrl+]
 ```
 
