@@ -5,6 +5,8 @@
 
 游戏机游戏 https://zh.wikipedia.org/wiki/%E6%B8%B8%E6%88%8F%E6%9C%BA%E6%B8%B8%E6%88%8F || Console game https://en.wikipedia.org/wiki/Console_game
 
+这些BUG你可知道？FC游戏BUG合集（一） https://www.bilibili.com/video/BV1hi4y1L7GG
+
 # 马里奥
 
 ## 孔明马里奥 or [Kaizo Mario](http://kaizomario.techyoshi.com/)
@@ -76,6 +78,8 @@ GS美神 极乐大作战！！ https://zh.wikipedia.org/wiki/GS%E7%BE%8E%E7%A5%9
 【神棍解说】正经美女换装游戏！《GS美神极乐大作战》一命速通 https://www.bilibili.com/video/BV1d5411A7vK
 
 SFC游戏《GS美神：极乐大作战》同名动漫改编的一款动作游戏，国内也有翻译成鬼屋冒险！ https://www.bilibili.com/video/av543559046/
+
+清酒怀旧游戏解说 sfc游戏GS美神 极乐大作战 https://www.bilibili.com/video/BV1tV411q72C/
 
 # 街机
 
