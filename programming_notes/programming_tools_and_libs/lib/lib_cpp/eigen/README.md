@@ -94,6 +94,29 @@ EOF
 ```
 >> //notes：然后注意就是启动gdb后如果没有自动 `source` 文件 `.gdbinit` 的话，需要在 gdb 界面里手动 `source` 下。
 
+# 在 cmake 中使用 Eigen
+
+Find package Eigen3 for CMake https://stackoverflow.com/questions/12249140/find-package-eigen3-for-cmake
+
+https://github.com/zhongjingjogy/use-eigen-with-cmake/blob/master/CMakeLists.txt
+
+https://sites.google.com/site/alexeyvakimov/mini-tutorials/programming-boost-python-c/cmake-tutorial
+- > Now, before we go to "build" and "install" the code, we do a simple trick. Go to CMakeLists.txt file and add the following piece of code:
+  ```sh
+  # My customization!!!
+  set (CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/_install)
+  ```
+  > This will tell the installer to create an "_install" directory in the Eigen root directory and install all stuff there. Like I said, we use underscore to facilitate sorting of the directories  and to yield the best organized filesystem.
+- > Now it is time to do standard stuff:
+  ```sh
+  $ mkdir _build
+  $ cd _build
+  $ cmake ..
+  $ make
+  $ make install
+  ```
+  > When you go back to your Eigen root directory, you will see that the "_install" directory has been created.
+
 # 排序
 
 利用标准库std::sort()对Eigen库的向量进行排序 https://blog.csdn.net/X_And_Y/article/details/83383520

@@ -21,6 +21,10 @@ CMake 入门 https://zh.wikibooks.org/wiki/CMake_%E5%85%A5%E9%96%80
 
 # 其他攻略
 
+【使用CMake组织C++工程】2：CMake 常用命令和变量 https://elloop.github.io/tools/2016-04-10/learning-cmake-2-commands
+
+使用CMake https://frostime.github.io/2019/03/30/%E4%BD%BF%E7%94%A8CMake/
+
 ## 编译debug版本
 
 cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu.com/p/116953293
