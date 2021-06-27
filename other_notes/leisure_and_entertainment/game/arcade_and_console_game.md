@@ -56,6 +56,27 @@ sm3952414 可能有人看过了,B站上有零零散散的第二部,点击没多�
 
 sd快打旋风 隐藏技能表 通关流程 https://www.bilibili.com/video/BV1Yt411o7cF
 
+## 快打旋风双人版
+
+SD快打旋风双人版V0.3试玩 红白机FC游戏重制 https://www.bilibili.com/video/BV1sJ411B7dZ/
+```console
+发布说明：https://indienova.com/home/blogread/23077
+```
+- > SD快打旋风重制版正式发布 试玩演示 下 红白机FC游戏三人双人多人 https://www.bilibili.com/video/BV1Uz4y127s2
+- > SD快打旋风重制版 https://indienova.com/g/MightyFinalFightRemake/presskit
+
+SD快打旋风重制版试玩演示 上 红白机FC游戏三人双人多人 https://www.bilibili.com/video/BV1uz4y1D7Da/
+
+# SFC
+
+## GS美神 极乐大作战！！
+
+GS美神 极乐大作战！！ https://zh.wikipedia.org/wiki/GS%E7%BE%8E%E7%A5%9E_%E6%A5%B5%E6%A8%82%E5%A4%A7%E4%BD%9C%E6%88%B0%EF%BC%81%EF%BC%81
+
+【神棍解说】正经美女换装游戏！《GS美神极乐大作战》一命速通 https://www.bilibili.com/video/BV1d5411A7vK
+
+SFC游戏《GS美神：极乐大作战》同名动漫改编的一款动作游戏，国内也有翻译成鬼屋冒险！ https://www.bilibili.com/video/av543559046/
+
 # 街机
 
 2021年我们可以在网页上玩到什么游戏？ https://www.bilibili.com/video/BV12N411f7Es
