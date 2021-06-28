@@ -458,6 +458,7 @@ GDB命令基础，让你的程序bug无处躲藏 https://deepzz.com/post/gdb-deb
   %h 主机名
   %e 程序文件名
   ```
+- //notes：另外补充一下——当core文件生成后，调试core文件的命令是：`gdb 程序文件名 core文件名`。对于带参数的情形，应该是用：`gdb --args 程序文件名 参数列表 core文件名`。
 
 gdb调试coredump(使用篇) http://blog.csdn.net/sunxiaopengsun/article/details/72974548
 
