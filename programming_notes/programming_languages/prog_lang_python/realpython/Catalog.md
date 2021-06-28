@@ -9,7 +9,7 @@ Real Python https://realpython.com/
 
 Python import: Advanced Techniques and Tips https://realpython.com/python-import/
 
-How to Use Python Lambda Functions https://realpython.com/python-lambda/
+:ballot_box_with_check: How to Use Python Lambda Functions https://realpython.com/python-lambda/
 
 Python eval(): Evaluate Expressions Dynamically https://realpython.com/python-eval-function/
 
@@ -28,3 +28,5 @@ Python KeyError Exceptions and How to Handle Them https://realpython.com/python-
 Your Guide to the CPython Source Code https://realpython.com/cpython-source-code-guide/
 
 Python Keywords: An Introduction https://realpython.com/python-keywords/
+
+Primer on Python Decorators https://realpython.com/primer-on-python-decorators/
