@@ -193,12 +193,6 @@ Python中的不可变对象类型与可变对象类型 https://www.cnblogs.com/s
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## 静态方法
-
-Python: classmethod类函数 & staticmethod静态函数 区别 http://blog.csdn.net/bytxl/article/details/46928837
-
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
 ## python异常
 
 https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
