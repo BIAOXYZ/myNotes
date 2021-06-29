@@ -7,6 +7,8 @@ https://www.katacoda.com/learn#playgrounds
 
 Vault Playground https://www.katacoda.com/hashicorp/scenarios/vault-playground
 
+Tensorflow Playground https://www.katacoda.com/courses/tensorflow/playground
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 官方课程
