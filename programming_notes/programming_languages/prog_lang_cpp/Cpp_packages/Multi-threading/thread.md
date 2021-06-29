@@ -36,3 +36,7 @@ Multithreading in C++ https://www.geeksforgeeks.org/multithreading-in-cpp/
   ```
 
 C++ 多线程 - 李尧的文章 - 知乎 https://zhuanlan.zhihu.com/p/348492524
+
+# 问题解决
+
+Emplace back thread on vector https://stackoverflow.com/questions/39266461/emplace-back-thread-on-vector
