@@ -122,3 +122,5 @@ C++将变量名转换为字符串 https://blog.csdn.net/qq_33670157/article/deta
 - > `##`是简单的连接符，`#@`用来给参数加单引号，`#`用来给参数加双引号即转成字符串。
 
 C++头文件定义类的方法 https://blog.csdn.net/qq_35779286/article/details/94169434
+
+c++中带多个默认参数值的构造函数,输入部分参数,如何得到想要的结果? - 知乎 https://www.zhihu.com/question/52259368
