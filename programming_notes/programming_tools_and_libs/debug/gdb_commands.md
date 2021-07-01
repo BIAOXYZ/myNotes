@@ -12,6 +12,9 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
   * > 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
 - 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
   * > set print pretty on
+- **7.多进程/线程**
+  * **7.7 只允许一个线程运行**
+    + > 如果想在调试一个线程时，让其它线程暂停执行，可以使用“set scheduler-locking on”命令
 
 ## 我的gdb配置(.gdbinit， bps.cfg， .gdb_history全都在~目录下)和调试
 ```console
@@ -358,6 +361,19 @@ http://zhuanlan.zhihu.com/p/28769268
 > gdb 调试入门，大牛写的高质量指南 http://blog.jobbole.com/107759/
 
 ### GDB多进程多线程调试
+
+gdb thread https://www.jianshu.com/p/d8c6ebcaa7be
+- > `set scheduler-locking off|on|step` 估计是实际使用过多线程调试的人都可以发现，在使用step或者continue命令调试当前被调试线程的时候，其他线程也是同时执行的，怎么只让被调试程序执行呢？通过这个命令就可以实现这个需求。`off` 不锁定任何线程，也就是所有线程都执行，这是默认值。`on` 只有当前被调试程序会执行。`step` 在单步的时候，除了next过一个函数的情况(熟悉情况的人可能知道，这其实是一个设置断点然后continue的行为)以外，只有当前线程会执行。
+- > 线程产生通知：在产生新的线程时, gdb会给出提示信息
+  ```console
+  (gdb) r
+  Starting program: /root/thread
+  [New Thread 1073951360 (LWP12900)]
+  [New Thread 1082342592 (LWP 12907)]---以下三个为新产生的线程
+  [New Thread 1090731072 (LWP 12908)]
+  [New Thread 1099119552 (LWP 12909)]
+  ```
+- > 一般情况下多线程的时候, 由于是同时运行的, 最好设置 `set scheduler-locking on` 这样的话,只调试当前线程
 
 gdb调试多进程和多线程命令
 http://blog.csdn.net/pbymw8iwm/article/details/7876797
