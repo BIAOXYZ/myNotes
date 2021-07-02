@@ -13,6 +13,11 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 - 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
   * > set print pretty on
 - **7.多进程/线程**
+  * **7.3 同时调试父进程和子进程**
+    + > 在调试多进程程序时，gdb***默认只会追踪父进程的运行，而子进程会独立运行，gdb不会控制***。以上面程序为例：
+    + > 如果要同时调试父进程和子进程，可以使用“set detach-on-fork off”（默认 `detach-on-fork` 是 `on`）命令，这样gdb就能同时调试父子进程，并且在调试一个进程时，另外一个进程处于挂起状态。仍以上面程序为例：
+    + > 在使用“set detach-on-fork off”命令后，用“i inferiors”（i是info命令缩写）查看进程状态，可以看到父子进程都在被gdb调试的状态，前面显示“`*`”是正在调试的进程。当父进程退出后，用“inferior infno”切换到子进程去调试。
+    + > 此外，如果想让父子进程都同时运行，可以使用“set schedule-multiple on”（默认 `schedule-multiple` 是 `off`）命令，仍以上述代码为例：
   * **7.7 只允许一个线程运行**
     + > 如果想在调试一个线程时，让其它线程暂停执行，可以使用“set scheduler-locking on”命令
 
@@ -374,6 +379,23 @@ gdb thread https://www.jianshu.com/p/d8c6ebcaa7be
   [New Thread 1099119552 (LWP 12909)]
   ```
 - > 一般情况下多线程的时候, 由于是同时运行的, 最好设置 `set scheduler-locking on` 这样的话,只调试当前线程
+
+GDB调试多线程及多进程 https://ivanzz1001.github.io/records/post/cplusplus/2018/08/19/cpluscplus-gdbusage_part2
+
+GDB 调试多进程或者多线程应用 https://blog.csdn.net/gatieme/article/details/78309696
+- > 考虑下面这个三进程系统 :
+- > 进程 `ProcessChild` 是 `ProcessParent` 的子进程, `ProcessParentThread` 又是 `ProcParent` 的子线程. 如何使用 GDB 调试 `子进程 ProcessChild` 或者 `子线程 ProcessParentThread` 呢 ?
+- > 实际上, GDB 没有对多进程程序调试提供直接支持. 例如, 使用 GDB 调试某个进程, 如果该进程 `fork` 了子进程, GDB 会继续调试该进程, 子进程会不受干扰地运行下去. 如果你事先在子进程代码里设定了断点, 子进程会收到 `SIGTRAP` 信号并终止. 那么该如何调试子进程呢? 其实我们可以利用 GDB 的特点或者其他一些辅助手段来达到目的. 此外, GDB 也在较新内核上加入一些多进程调试支持.
+- > 接下来我们详细介绍几种方法, 分别是 `follow-fork-mode` 方法, `attach` 子进程方法和 `GDB wrapper` 方法.
+- > 1.1 follow-fork-mode方法简介
+  * > 默认设置下, 在调试多进程程序时 GDB 只会调试主进程. 但是 GDB > V7.0 支持多进程的分别以及同时调试, 换句话说, GDB 可以同时调试多个程序. 只需要设置 `follow-fork-mode` (默认值 `parent`) 和 `detach-on-fork` (默认值 `on` )即可.
+
+| follow-fork-mode | detach-on-fork | 说明 |
+|:--:|:--:|:--:|
+| parent | on | 只调试主进程( `GDB` 默认) |
+| child | on | 只调试子进程 |
+| parent | off | 同时调试两个进程, `gdb` 跟主进程, 子进程 `block` 在 `fork` 位置 |
+| child | off | 同时调试两个进程, `gdb` 跟子进程, 主进程 `block` 在 `fork` 位置 |
 
 gdb调试多进程和多线程命令
 http://blog.csdn.net/pbymw8iwm/article/details/7876797
