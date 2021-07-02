@@ -25,6 +25,7 @@ How to install valgrind properly? https://stackoverflow.com/questions/24935217/h
 9. Install make install (with root rights, eg. sudo)
 ```
 ```sh
+# 实战时候直接从上面第 4 步开始安装就行：
 wget https://sourceware.org/pub/valgrind/valgrind-3.17.0.tar.bz2
 tar xvf valgrind-3.17.0.tar.bz2
 cd valgrind-3.17.0
