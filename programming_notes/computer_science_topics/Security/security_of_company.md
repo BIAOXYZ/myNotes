@@ -88,6 +88,21 @@ DataTrust https://dp.alibaba.com/product/datatrust
 
 PrivC—A Framework for Efficient Secure Two-Party Computation https://link.springer.com/chapter/10.1007/978-3-030-37231-6_23
 
+PaddleFL https://github.com/PaddlePaddle/PaddleFL
+- https://github.com/PaddlePaddle/PaddleFL/blob/master/README_cn.md
+  ```md
+  #### A. 联邦学习策略
+  - **纵向联邦学习**: 带privc的逻辑回归，带ABY3[11]的神经网络
+  - **横向联邦学习**: 联邦平均 [2]，差分隐私 [6]，安全聚合
+  
+  #### B. 训练策略
+  - **多任务学习** [7]
+  - **迁移学习** [8]
+  - **主动学习**
+  
+  PaddleFL 中主要提供两种解决方案：**Data Parallel** 以及 **Federated Learning with MPC (PFM)**。
+  ```
+
 ## 星云Clustar
 
 关于我们 https://www.clustar.ai/about
