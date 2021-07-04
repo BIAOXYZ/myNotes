@@ -512,9 +512,47 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 ```
 
+// 除了上面的 `cat /proc/cpuinfo` 再加上各种 `grep` 过滤，还有下面这个：
+```sh
+# lscpu命令，查看的是cpu的统计信息.
+lscpu
+```
+
 ### 查看内存、硬盘等其他资源
 
 Linux 查看系统硬件信息(实例详解) https://www.cnblogs.com/ggjucheng/archive/2013/01/14/2859613.html
+- > 内存
+  ```sh
+  # 概要查看内存情况
+  free -m
+
+  # 查看内存详细使用
+  cat /proc/meminfo
+
+  # 查看内存硬件信息
+  dmidecode -t memory
+  ```
+- > 磁盘
+  ```sh
+  # 查看硬盘和分区分布
+  lsblk
+
+  # 如果要看硬盘和分区的详细信息
+  fdisk -l
+  ```
+- > 网卡
+  ```sh
+  # 查看网卡硬件信息
+  lspci | grep -i 'eth'
+  
+  # 查看系统的所有网络接口
+  ifconfig -a
+  # 或者是
+  ip link show
+  
+  # 如果要查看某个网络接口的详细信息，例如eth0的详细参数和指标
+  ethtool eth0
+  ```
 
 ### .bashrc & /etc/profile
 
