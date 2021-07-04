@@ -1,4 +1,7 @@
 
+PostgreSQL 的 pg_try_advisory_xact_lock 正确使用姿势是什么 https://www.v2ex.com/t/787443
+- > https://github.com/digoal/blog/blob/master/201707/20170720_01.md  google 第一页就有
+
 PG 也不学好 https://www.v2ex.com/t/785716
 ```console
 今天才知道，原来 PG 默认也是可以在 INTEGER 字段上写入以字符串表示的数字的。也会把数值转成字符串写入 VARCHAR 字段，只有宽度限制。

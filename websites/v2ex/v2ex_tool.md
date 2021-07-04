@@ -107,10 +107,6 @@ chrome 书签越来越多，大家想过怎么处理吗 https://www.v2ex.com/t/5
 - > 开源地址： https://github.com/luchenqun/my-bookmark  在线体验： https://mybookmark.cn/  如果觉得好用，请 star 一下鼓励我继续完善！
 - > https://www.gettoby.com/faq
 
-vscode 在程序坞里的图标变得非常非常迷你，没办法恢复 https://www.v2ex.com/t/601519
-> 大家有没有碰到过，有啥解决方案吗？除了重启，因为刚开机就这样了 QAQ
->> ![](https://i.loli.net/2019/09/17/QujWPAFkC5zO3l7.png)
-
 开源一文多发平台 ArtiPub，让文章随处可阅 https://www.v2ex.com/t/602779
 > https://github.com/crawlab-team/artipub
 
@@ -132,3 +128,13 @@ vscode 在程序坞里的图标变得非常非常迷你，没办法恢复 https:
 
 你最想推荐的浏览器（Chromium-based）扩展是什么？ https://www.v2ex.com/t/730033
 - > 推荐个下载离线扩展文件.crx 的网站. https://chrome-extension-downloader.com/
+
+# vscode相关
+
+小白请问下在 vscode 里编辑，然后在浏览器中实时显示效果是怎么实现的？是用了什么扩展吗？ https://www.v2ex.com/t/787426
+- > 你说的是 instant markdown 插件吗？插件开了一个 HTTP 服务器渲染了编辑的内容，所以你就能在浏览器里面打开了
+- > 如果是普通 HTML + CSS 的话，可以看看 live server 插件。
+
+vscode 在程序坞里的图标变得非常非常迷你，没办法恢复 https://www.v2ex.com/t/601519
+> 大家有没有碰到过，有啥解决方案吗？除了重启，因为刚开机就这样了 QAQ
+>> ![](https://i.loli.net/2019/09/17/QujWPAFkC5zO3l7.png)
