@@ -69,6 +69,14 @@ SD快打旋风双人版V0.3试玩 红白机FC游戏重制 https://www.bilibili.c
 
 SD快打旋风重制版试玩演示 上 红白机FC游戏三人双人多人 https://www.bilibili.com/video/BV1uz4y1D7Da/
 
+# 忍者蛙、忍者蛙与双截龙
+
+【from 阿燐酱】：
+- 【FC游戏】忍者蛙， 最难的FC游戏没有之一 https://www.bilibili.com/video/BV1Hx411K73X
+- 【FC游戏】忍者蛙和双截龙混关流程 https://www.bilibili.com/video/BV1Yx411P7np
+
+史上最难的fc游戏，忍者蛙实战一命通关！ https://www.bilibili.com/video/BV1wi4y1E7S5
+
 # SFC
 
 ## GS美神 极乐大作战！！
