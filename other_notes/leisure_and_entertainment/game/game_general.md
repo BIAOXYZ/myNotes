@@ -26,6 +26,20 @@
 
 # 页游
 
+不敢相信，网页游戏都发展到这个地步了！ https://www.bilibili.com/video/BV1X64y197DZ
+```console
+兄弟们，我又来了！九个网站都在这里：
+  https://www.crazygames.com/
+  https://www.yikm.net/
+  https://dos.zczc.cz/
+  https://www.pacogames.com/
+  https://kbhgames.com/
+  https://play.wo1wan.com/
+  https://iogames.space/
+  https://poki.com/
+  https://y8.com/ 
+```
+
 有什么好玩的网页游戏？ - 青天璇的回答 - 知乎 https://www.zhihu.com/question/21016962/answer/669211976
 > 这三款是我平常喜欢的，更多的在线页游可以看这里：io游戏集结 http://iogames.space/
 
