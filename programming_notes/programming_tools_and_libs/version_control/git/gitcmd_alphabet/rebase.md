@@ -367,3 +367,8 @@ https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-da
 - > You can't do anything about existing clones or forks of your repository, but you can permanently remove cached views and references to the sensitive data in pull requests on GitHub by contacting GitHub Support or GitHub Premium Support.
 
 创建个人访问令牌 https://docs.github.com/cn/github/authenticating-to-github/creating-a-personal-access-token
+
+### 20200706
+
+Please help to remove a commit from Github cached #1222313 https://support.github.com/ticket/personal/0/1222313
+- https://github.com/BIAOXYZ/myNotes/commit/b4d748cf901a7b236820fd970f9795ace974c079
