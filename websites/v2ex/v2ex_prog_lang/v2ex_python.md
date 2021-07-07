@@ -1,4 +1,8 @@
 
+Python 起多个线程会充分用到多核 cpu 的资源吗 https://www.v2ex.com/t/788109
+- > CPython 不会，应该有 Global Interpreter Lock ( https://realpython.com/python-gil/ )。对于衍生品如 pypy，则可以。对于 CPython，多核的利用是利用子进程。
+- > python(cpython) 多进程会利用多核，多线程不行，默认的 pypy 也一样，好像 pypy 有个 no gil 的实验版
+
 如何知道一段代码没有内存泄漏？假如一个函数 cache 了返回值，算不算内存泄露呢?？ Python 中内存泄漏的标准又是什么？？ https://www.v2ex.com/t/783580
 - > 内存泄漏，就是程序中出现了非设计内的内存使用。 <br> 比如你给出一个 Python 函数的默认参数值是 `[]`，然后你又在函数内部直接往这个 list 增加内容了，导致这个列表占用的内存大小不断上升，且永不会被 Python GC 机制回收。这就是一种常见的 Python 程序内存泄漏情况。
 - > 我以为你在说 C/C++，valgrind+address sanitizer 解决一切问题

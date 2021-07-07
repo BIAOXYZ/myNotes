@@ -1,4 +1,6 @@
 
+tcp/ip 协议栈中，子网掩码是存哪的？ https://www.v2ex.com/t/788054
+
 [问题已解决｜后续] docker 容器能 PING 通 IP 但 PING 不通域名问题的排查经历分享 https://www.v2ex.com/t/770438
 ```console
 编辑好了…… v 站不让我发，就分享这个链接了，写在了博文中

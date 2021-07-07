@@ -30,3 +30,5 @@ Your Guide to the CPython Source Code https://realpython.com/cpython-source-code
 Python Keywords: An Introduction https://realpython.com/python-keywords/
 
 Primer on Python Decorators https://realpython.com/primer-on-python-decorators/
+
+What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-gil/
