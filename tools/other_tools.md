@@ -57,6 +57,14 @@ BIAOXYZ https://www.gitmemory.com/biaoxyz
 
 .FILTERS https://fileinfo.com/extension/filters
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Slant https://www.slant.co/
+
+What is the best alternative to Gitpod? https://www.slant.co/options/30317/alternatives/~gitpod-alternatives
+
+What are the best cloud IDEs? https://www.slant.co/topics/713/~best-cloud-ides
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 在线diff

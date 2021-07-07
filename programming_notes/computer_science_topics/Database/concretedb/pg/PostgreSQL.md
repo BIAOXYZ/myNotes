@@ -439,6 +439,9 @@ Become a Postgres Expert with Free Training https://www.enterprisedb.com/free-po
 
 <<PostgreSQL: Introduction and Concepts >> http://momjian.us/main/writings/pgsql/aw_pgsql_book/
 
+Education https://postgrespro.com/education
+- Postgres: The First Experience https://postgrespro.com/education/books/introbook
+
 CS-Notes 数据库系统原理.md https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md
 
 PostgreSQL 有哪些经典入门书籍？
