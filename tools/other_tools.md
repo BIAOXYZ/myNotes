@@ -136,3 +136,11 @@ Open Hub https://en.wikipedia.org/wiki/Open_Hub
 
 Stackalytics - Official community contribution https://www.stackalytics.com/
 - Kubernetes https://www.stackalytics.com/cncf?module=kubernetes
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 检测网站是否宕机
+
+Is It Down Right Now ? https://www.isitdownrightnow.com/
+
+Down for Everyone or Just Me https://downforeveryoneorjustme.com/
