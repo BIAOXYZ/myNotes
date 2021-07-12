@@ -229,7 +229,7 @@ How are iloc, ix and loc different? https://stackoverflow.com/questions/31593201
 使用 Python 读写 CSV 文件（三） - Helperhaps的文章 - 知乎 https://zhuanlan.zhihu.com/p/40946024
 - Pandas 的 Cheat Sheet（中文版） - Helperhaps的文章 - 知乎 https://zhuanlan.zhihu.com/p/39845663
 
-pandas的to_csv()使用方法 https://segmentfault.com/a/1190000015326653
+【[:star:][`*`]】 pandas的to_csv()使用方法 https://blog.csdn.net/toshibahuai/article/details/79034829 || https://segmentfault.com/a/1190000015326653
 - > 1.首先查询当前的工作路径：
   ```py
   import os  
@@ -239,12 +239,24 @@ pandas的to_csv()使用方法 https://segmentfault.com/a/1190000015326653
   ```py
   to_csv()是DataFrame类的方法，read_csv()是pandas的方法
   ```
+- > 是否保留列名 header: Whether to write out the column names (default True)
+  ```py
+  dt.to_csv('C:/Users/think/Desktop/Result.csv',header=0) #不保存列名
+  ```
 - > 是否保留行索引 index: whether to write row (index) names (default True)
   ```py
   dt.to_csv('C:/Users/think/Desktop/Result1.csv',index=0) #不保存行索引
   
   # 注：index=0 也可以换成 index=None
   ```
+
+Pandas read in table without headers https://stackoverflow.com/questions/29287224/pandas-read-in-table-without-headers
+- https://stackoverflow.com/questions/29287224/pandas-read-in-table-without-headers/29287549#29287549
+  * > In order to read a csv in that doesn't have a header and for only certain columns you need to pass params `header=None` and `usecols=[3,6]` for the `4th` and `7th` columns:
+    ```py
+    df = pd.read_csv(file_path, header=None, usecols=[3,6])
+    ```
+    > See the docs: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
 
 Pandas 基础 (4) - 读 / 写 Excel 和 CSV 文件 https://learnku.com/articles/25093
 
