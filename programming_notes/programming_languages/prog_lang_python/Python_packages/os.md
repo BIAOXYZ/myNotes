@@ -13,3 +13,13 @@ How do I get the full path of the current file's directory? https://stackoverflo
   import os
   os.path.abspath(os.getcwd())
   ```
+
+How to set the current working directory? [duplicate] https://stackoverflow.com/questions/1810743/how-to-set-the-current-working-directory/1810760
+- https://stackoverflow.com/questions/1810743/how-to-set-the-current-working-directory/34971949#34971949
+  * > To set the working directory:
+    ```py
+    import os
+    print os.getcwd()  # Prints the current working directory
+    os.chdir('c:\\Users\\uname\\desktop\\python')  # Provide the new path here
+    ```
+    >> //notes：其实一般合成一句 `os.chdir(os.getcwd())` 就可以了。
