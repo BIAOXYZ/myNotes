@@ -33,6 +33,9 @@ Pandas 中文网 https://www.pypandas.cn/ || https://github.com/teadocs/pandas-c
 学习python中的pandas有没有好的教程推荐？ - 知乎 https://www.zhihu.com/question/56310477
 
 Pandas https://www.kaggle.com/learn/pandas
+- Creating, Reading and Writing https://www.kaggle.com/residentmario/creating-reading-and-writing
+  * > A Series is, in essence, a single column of a DataFrame. So you can assign column values to the Series the same way as before, using an `index` parameter. However, a Series does not have a column name, it only has one overall `name`:
+  * > So a CSV file is a table of values separated by commas. Hence the name: "Comma-Separated Values", or CSV.
 - Indexing, Selecting & Assigning https://www.kaggle.com/residentmario/indexing-selecting-assigning
 
 Using Pandas and Python to Explore Your Dataset https://realpython.com/pandas-python-explore-dataset/
