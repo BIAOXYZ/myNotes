@@ -25,6 +25,14 @@ CMake 入门 https://zh.wikibooks.org/wiki/CMake_%E5%85%A5%E9%96%80
 
 使用CMake https://frostime.github.io/2019/03/30/%E4%BD%BF%E7%94%A8CMake/
 
+带你看 CMake https://www.jianshu.com/p/9e8e0566ccc5
+- > 说在前面
+  * > 6.cmake 指定开关 `-DXXX=XX` eg：`-DOPT1=ON`
+- > 指定编译参数
+  * > note: 请这样设置 `set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")` 否则会导致修改系统的 `CXXFLAGS`。
+
+CMake 学习笔记 https://www.jianshu.com/p/c417e4ab8b30
+
 ## 编译debug版本
 
 cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu.com/p/116953293
