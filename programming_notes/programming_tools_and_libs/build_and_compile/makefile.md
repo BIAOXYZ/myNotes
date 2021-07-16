@@ -11,3 +11,5 @@ Makefile 教程（译） https://www.v2ex.com/t/783648
 # 其他攻略
 
 Make 命令教程 http://www.ruanyifeng.com/blog/2015/02/make.html
+
+Makefile条件编译debug版和release版 https://www.cnblogs.com/caosiyang/archive/2012/06/13/2548051.html
