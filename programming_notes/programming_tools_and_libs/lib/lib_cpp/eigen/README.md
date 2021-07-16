@@ -32,6 +32,12 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
       - > ***Passing objects by value is almost always a very bad idea in C++, as this means useless copies, and one should pass them by reference instead***.
       - > With Eigen, this is even more important: passing fixed-size vectorizable Eigen objects by value is ***not only inefficient, it can be illegal or make your program crash!*** And the reason is that these Eigen objects have alignment modifiers that aren't respected when they are passed by value.
 
+# Eigen库源码相关
+
+C++性能之战（2）--double VS float https://blog.csdn.net/u013834525/article/details/103847759
+- > `4. Eigen矩阵运算`
+  * Eigen的速度为什么这么快？ - 知乎 https://www.zhihu.com/question/28571059
+
 # 较有用攻略
 
 Eigen Tutorial 中文文档(c++版) - IQIT的文章 - 知乎 https://zhuanlan.zhihu.com/p/87613088

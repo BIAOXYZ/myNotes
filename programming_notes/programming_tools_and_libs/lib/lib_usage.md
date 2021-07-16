@@ -1,4 +1,14 @@
 
+# general
+
+List of numerical libraries https://en.wikipedia.org/wiki/List_of_numerical_libraries
+- Math Kernel Library https://en.wikipedia.org/wiki/Math_Kernel_Library
+  * > Intel oneAPI Math Kernel Library, formerly just Intel Math Kernel Library (Intel MKL), is a library of optimized math routines for science, engineering, and financial applications. Core math functions include BLAS, LAPACK, ScaLAPACK, sparse solvers, fast Fourier transforms, and vector math.
+
+Eigen 矩阵运算库在实际项目中的使用情况如何？ - 知乎 https://www.zhihu.com/question/21289223
+- Eigen 矩阵运算库在实际项目中的使用情况如何？ - 少先队员的回答 - 知乎 https://www.zhihu.com/question/21289223/answer/55527330
+  * > 如果代码基本一样，eigen比arm快，看看底层是具体用的哪个库做运算，还有编译选项也很重要，template在-o2和-o0上会完全是两个速度
+
 # Assembly Libs
 
 CRYPTOGAMS distribution repository https://github.com/dot-asm/cryptogams
