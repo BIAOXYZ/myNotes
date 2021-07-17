@@ -131,3 +131,7 @@ What is a segment tree? https://www.educative.io/edpresso/what-is-a-segment-tree
 Efficient and easy segment trees https://codeforces.com/blog/entry/18051
 
 A simple introduction to "Segment tree beats" https://codeforces.com/blog/entry/57319
+
+LC线段树相关题目：
+- `剑指 Offer 42. 连续子数组的最大和` https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
+- `307. 区域和检索 - 数组可修改` https://leetcode-cn.com/problems/range-sum-query-mutable/

@@ -17,6 +17,12 @@
 
 # C++项目
 
+Awesome C++ https://github.com/fffaraz/awesome-cpp
+- Debug https://github.com/fffaraz/awesome-cpp#debug
+- Debugger https://github.com/fffaraz/awesome-cpp#debugger
+
+Awesome Modern C++ https://github.com/rigtorp/awesome-modern-cpp
+
 C++ 那些事 https://github.com/Light-City/CPlusPlusThings || https://light-city.club/sc/
 
 C++ 匠心之作 从0到1入门资料 https://github.com/Blitzer207/C-Resource
