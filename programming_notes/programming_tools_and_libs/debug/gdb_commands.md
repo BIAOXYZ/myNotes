@@ -4,6 +4,9 @@
 GDB: The GNU Project Debugger https://www.gnu.org/software/gdb/
 
 GDB Documentation https://www.gnu.org/software/gdb/documentation/
+- Debugging with GDB https://sourceware.org/gdb/current/onlinedocs/gdb/
+- https://sourceware.org/gdb/download/onlinedocs/
+  * Debugging with gdb https://sourceware.org/gdb/download/onlinedocs/gdb.pdf
 
 ## GDB一般性知识
 
@@ -159,6 +162,27 @@ GDB调试指南 https://www.yanbinghu.com/2019/04/20/41283.html  || https://gith
 【[:star:][`*`]】 掌握gdb调试从入门到进阶（二） - Xin Lee的文章 - 知乎 https://zhuanlan.zhihu.com/p/100403438 【这个还包括了对coredump文件、以及对线程的调试】
 
 陈皓GDB调试教程链接汇总 https://developer.aliyun.com/article/681075
+
+【[:star:][`*`]】 GDB调试：打印 https://ivanzz1001.github.io/records/post/cplusplus/2018/11/11/cpluscplus-gdbusage_part6
+- > 1.打印ASCII字符串和宽字符串
+  * > 用GDB调试程序时，可以使用 `x/s` 命令打印ASCII字符串。以上面程序为例：
+- > 2.打印大数组中的内容
+- > 3.打印数组的索引下标
+- > 4.打印函数局部变量的值
+  * > 如果要打印函数局部变量的值，可以使用 `bt full` 命令。首先我们在函数fun_a()中打上断点，当程序断住时，显示调用栈信息：
+  * > 也可以使用如下 `bt full n`，意思是从内向外显示n个栈帧，及其局部变量，例如：
+  * > 而 `bt full -n`，意思是从外向内显示n个栈桢，及其局部变量，例如：
+- 设置 GDB 代码搜索路径 https://blog.csdn.net/caspiansea/article/details/42447203
+  * > 在用GDB进行 debug 的时候，可以用 `directory` 设置搜索目录，用 `show direcories` 显示设置的搜索目录：
+    ```console
+    (gdb) show directories 
+    Source directories searched: $cdir:$cwd
+    (gdb) directory  /home
+    Source directories searched: /home:$cdir:$cwd
+    (gdb) show directories 
+    Source directories searched: /home:$cdir:$cwd
+    (gdb) 
+    ```
 
 ## 其他实战或配置参考部分(包含了一个.gdbinit设置的例子，看起来设置得更整洁，不过还是习惯了断点文件叫bps.cfg- -)
 
