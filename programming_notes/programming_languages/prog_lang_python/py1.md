@@ -127,3 +127,10 @@ Python有趣的小例子一网打尽。Python基础、Python坑点、Python字�
   >> More Python for Beginners https://www.youtube.com/playlist?list=PLlrxD0HtieHiXd-nEby-TMCoUNwhbLUnj
 - > “Even More Python for Beginners: Data Tools” 系列显然与数据科学相关。Harrison 和 Ibach 表示，它将帮助学生构建工具包，以使用 Python 进入数据科学和机器学习。该系列共有 31 个视频，内容涵盖了 Jupyter Notebooks 和一些流行的数据科学 Python 库的使用，例如 NumPy 和 pandas。“它们可用于帮助管理数据，你将看到如何在内存中创建表，以及如何加载、保存和操作数据，学习创建模型并绘制结果图表。”
   >> Even More Python for Beginners: Data Tools https://www.youtube.com/playlist?list=PLlrxD0HtieHhHnCUVtR8UHS7eLl33zfJ-
+
+What the f*ck Python? 😱 https://github.com/satwikkansal/wtfpython
+- Translations: Chinese 中文
+  * What the f*ck Python! 🐍 -- 一些有趣且鲜为人知的 Python 特性 https://github.com/leisurelicht/wtfpython-cn
+
+// 补充：然而我是从另外一个中文版（下面这个）跑到官方英文版，结果发现官方英文版推荐的是另一个中文版翻译。。。
+  * What the f*ck Python 中文翻译 https://github.com/true1023/Crazy-Python
