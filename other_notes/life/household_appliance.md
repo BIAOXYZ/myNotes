@@ -27,6 +27,8 @@
 
 戴森发布新旗舰无线吸尘器V15：激光技术加持 https://news.mydrivers.com/1/747/747057.htm
 
+2021年，戴森吸尘器推荐选购攻略：戴森吸尘器各型号V7 V8 V10 V11的区别、高性价比推荐 - 大堂小杜的文章 - 知乎 https://zhuanlan.zhihu.com/p/158221812
+
 # self
 
 利仁（Liven）空气炸锅5L家用大容量电炸锅多功能锅无油煎炸锅薯条机KZ-J5000B干炸锅 https://item.jd.com/5869380.html

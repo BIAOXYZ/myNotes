@@ -103,6 +103,16 @@ PaddleFL https://github.com/PaddlePaddle/PaddleFL
   PaddleFL 中主要提供两种解决方案：**Data Parallel** 以及 **Federated Learning with MPC (PFM)**。
   ```
 
+## 腾讯
+
+Angel PowerFL 安全联合计算 https://cloud.tencent.com/solution/powerfl
+- > 算法丰富：支持 LR、XGBoost、PCA、用户自定义神经网络模型（如 MLP、CNN、RNN、Wide&Deep，DeepFM, DSSM 等）
+- > 性能卓越：一个小时左右可以完成千万级数据的 XGBoost 模型训练，十分钟左右可以完成千万级数据的预测。
+  
+快速上手联邦学习——腾讯自研联邦学习平台PowerFL实战 https://cloud.tencent.com/developer/article/1729569
+
+云安全隐私计算 https://cloud.tencent.com/product/tcspc
+
 ## 星云Clustar
 
 关于我们 https://www.clustar.ai/about
