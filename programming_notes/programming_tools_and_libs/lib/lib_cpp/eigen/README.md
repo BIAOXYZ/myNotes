@@ -19,6 +19,8 @@ https://eigen.tuxfamily.org/index.php?title=Main_Page
   * Getting started https://eigen.tuxfamily.org/dox/GettingStarted.html
   * The Matrix class https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html
     + Eigen::Matrix< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > Class Template Reference https://eigen.tuxfamily.org/dox/classEigen_1_1Matrix.html
+      - > **Fixed-size versus dynamic-size**:
+        * > Fixed-size means that the numbers of rows and columns are known are compile-time. In this case, Eigen allocates the array of coefficients as a fixed-size array, as a class member. This makes sense for very small matrices, typically up to 4x4, sometimes up to 16x16. ***Larger matrices should be declared as dynamic-size even if one happens to know their size at compile-time***.
   * Quick reference guide https://eigen.tuxfamily.org/dox/group__QuickRefPage.html
 
 Chapters https://eigen.tuxfamily.org/dox/modules.html
@@ -37,6 +39,19 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
 C++性能之战（2）--double VS float https://blog.csdn.net/u013834525/article/details/103847759
 - > `4. Eigen矩阵运算`
   * Eigen的速度为什么这么快？ - 知乎 https://www.zhihu.com/question/28571059
+
+# Eigen性能提升技巧
+
+Worse performance using Eigen than using my own class https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class
+- https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/6193829#6193829
+  * > Which version of Eigen are you using? They recently released 3.0.1, which is supposed to be faster than 2.x. Also, make sure you play a bit with the compiler options. For example, make sure SSE is being used in Visual Studio: `C/C++ --> Code Generation --> Enable Enhanced Instruction Set`
+- https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/6193862#6193862
+  * > If you're using Eigen's `MatrixXd` types, those are dynamically sized. You should get much better results from using the fixed size types e.g `Matrix4d`, `Vector4d`.
+  * > Also, make sure you're compiling such that the code can get vectorized; see the [relevant Eigen documentation](http://eigen.tuxfamily.org/index.php?title=FAQ#Vectorization).
+- https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/6323862#6323862
+  * > Make sure to have compiler optimization switched on (e.g. at least `-O2` on gcc). Eigen is heavily templated and will not perform very well if you don't turn on optimization.
+- https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/19469577#19469577
+  * > I hope this isn't insulting, but are you compiling in Release or Debug? Eigen is very slow in debug builds, because it uses lots of trivial templated functions that are optimized out of release but remain in debug.
 
 # 较有用攻略
 
