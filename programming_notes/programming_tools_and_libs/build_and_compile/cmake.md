@@ -13,6 +13,9 @@ cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上
 【[:star:][`*`]]】 CMake Examples https://github.com/ttroy50/cmake-examples
 
 【[:star:][`*`]]】 CMake Cookbook https://github.com/dev-cafe/cmake-cookbook || CMake菜谱（CMake Cookbook中文版） https://www.bookstack.cn/books/CMake-Cookbook
+- 本书相关
+  * github翻译地址： https://github.com/xiaoweiChen/CMake-Cookbook
+  * gitbook 在线阅读： https://app.gitbook.com/@chenxiaowei/s/cmake-cookbook/
 - `4.4 使用Boost Test进行单元测试` https://www.bookstack.cn/read/CMake-Cookbook/content-chapter4-4.4-chinese.md
   * https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-04/recipe-04
 
