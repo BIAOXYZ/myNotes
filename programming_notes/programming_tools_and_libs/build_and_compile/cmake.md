@@ -33,6 +33,19 @@ CMake 入门 https://zh.wikibooks.org/wiki/CMake_%E5%85%A5%E9%96%80
 
 CMake 学习笔记 https://www.jianshu.com/p/c417e4ab8b30
 
+VS Code与CMake真乃天作之合 - Pokerpoke的文章 - 知乎 https://zhuanlan.zhihu.com/p/52874931
+- > CMake 快成了C/C++开源项目的标配了，`mkdir build && cd build && cmake .. && make && sudo make install` 带来了十分的快感
+- > 在VS Code扩展标签中搜索CMake并安装以下两个扩展，安装之后扩展会进行相关初始化
+  ```console
+  CMake
+  CMake Tools
+  ```
+- 回复：
+  * > `cmake -H. -Bbuild && cmake --build build` 可以换掉你那一大串。
+  * > QtCreator丑不丑另说，但丫的cmake项目想要debug，就必须编译所有的目标，巨智障。
+    >> `cmake --build . --target target_name`
+  * > 难道不应该 `cmake -S. -Bbuild -DCMAKE_INSTALL_PRRFIX=~/.local && make -j9 -Cbuild all install` 吗
+
 ## 编译debug版本
 
 cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu.com/p/116953293
