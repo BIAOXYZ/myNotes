@@ -1,4 +1,8 @@
 
+c++中，`char*` 如何转换成 `std::shared_ptr<std::iostream>`？ https://www.v2ex.com/t/790826
+- > 智能指针 `std::make_shared<std::iostream>(xxxxxxxxx)` <br> `char*` 到 `iostream`， 你可以找一下网上常见的那个从 `char* => streambuf => istream` 的转换方法，或许能用。然后拼起来，试试。
+- > `std::shared_ptr<std::iostream> iosp = std::make_shared<std::stringstream>("you chars");`
+
 虽然说没有银弹，但是我感觉 c++完全可以设计成更友好，开发速度更快的语言 https://www.v2ex.com/t/789560
 - > CLion + CMake + C++17 + https://conan.io/  相信我，爽到飞起。
 - > 在任何你想用 `new T` 并且只有一个人拥有它的地方都能用 `unique_ptr` 。 <br> 至于 `shared_ptr`，主要是不特定多个持有者要共享同一个对象才会用，这些持有者到底谁先死都不知道的时候还是有必要的。在多线程并发程序里面有时候还是躲不过的，比如 `boost::asio`
