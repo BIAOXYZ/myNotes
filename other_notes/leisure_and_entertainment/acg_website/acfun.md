@@ -14,6 +14,9 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
 
 来看看站里有多少程序员 https://www.acfun.cn/a/ac11472636
 
+可朱云心里明白 https://acwiki.xyz/doku.php?id=ac%E9%BB%91%E8%AF%9D:%E5%8F%AF%E6%9C%B1%E4%BA%91%E5%BF%83%E9%87%8C%E6%98%8E%E7%99%BD || 可朱云心里明白 https://jikipedia.com/definition/108497818
+- 新婚少妇偷情 生下同母异父双胞胎！ https://www.acfun.cn/a/ac1862557
+
 # 文章图片类
 
 ★搞笑图片★这就最性感派大星了？ https://www.acfun.cn/a/ac25853855
