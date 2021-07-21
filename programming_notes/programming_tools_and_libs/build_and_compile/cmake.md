@@ -12,6 +12,8 @@ cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上
 
 【[:star:][`*`]]】 CMake Examples https://github.com/ttroy50/cmake-examples
 
+【[:star:][`*`]]】 CGold: The Hitchhiker’s Guide to the CMake https://cgold.readthedocs.io/en/latest/index.html || https://github.com/ruslo/CGold
+
 【[:star:][`*`]]】 CMake Cookbook https://github.com/dev-cafe/cmake-cookbook || CMake菜谱（CMake Cookbook中文版） https://www.bookstack.cn/books/CMake-Cookbook
 - 本书相关
   * github翻译地址： https://github.com/xiaoweiChen/CMake-Cookbook
@@ -19,8 +21,14 @@ cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上
 - `4.4 使用Boost Test进行单元测试` https://www.bookstack.cn/read/CMake-Cookbook/content-chapter4-4.4-chinese.md
   * https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-04/recipe-04
 
+CMake Tutorial https://medium.com/@onur.dundar1/cmake-tutorial-585dd180109b
+
 CMake 入门 https://zh.wikibooks.org/wiki/CMake_%E5%85%A5%E9%96%80
 - CMake 入门/运算子 https://zh.wikibooks.org/zh-hans/CMake_%E5%85%A5%E9%96%80/%E9%81%8B%E7%AE%97%E5%AD%90
+
+CMake：
+- CMake Day 3 —— 编译二进制或库 https://blog.csdn.net/qq_34347375/article/details/110672947
+- CMake Day 4 —— 设置头文件路径和链接库 https://azmddy.github.io/article/%E7%BC%96%E8%AF%91%E6%9E%84%E5%BB%BA/cmake-day-4.html
 
 # 其他攻略
 
@@ -103,3 +111,7 @@ ln -sf /snap/cmake/870/bin/*  /usr/bin/
 ```sh
 mount | grep snapd
 ```
+
+## 头文件包含还是库链接？
+
+Undefined reference to function CMake https://stackoverflow.com/questions/38530491/undefined-reference-to-function-cmake

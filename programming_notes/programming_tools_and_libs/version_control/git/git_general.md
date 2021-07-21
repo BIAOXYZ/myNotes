@@ -13,7 +13,7 @@ Git内部原理解析 https://mp.weixin.qq.com/s/NL2Uc0PLn3UgcCEryy5KuA
 # git online
 
 Resources to learn Git https://try.github.io/
-- Learn Git Branching https://learngitbranching.js.org/
+- Learn Git Branching https://learngitbranching.js.org/ || https://github.com/pcottle/learnGitBranching
 
 # git新闻
 
