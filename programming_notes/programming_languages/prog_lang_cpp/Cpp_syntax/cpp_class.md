@@ -1,4 +1,8 @@
 
+# 继承
+
+Difference between private, public, and protected inheritance https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance
+
 # 重载
 
 operator overloading https://en.cppreference.com/w/cpp/language/operators

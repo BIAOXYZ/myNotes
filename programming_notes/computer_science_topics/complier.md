@@ -11,6 +11,19 @@ Debug与Release版本的区别 https://blog.51cto.com/gragel/728668 || https://d
 - > `1. Runtime Library：链接哪种运行时刻函数库通常只对程序的性能产生影响。调试版本的 Runtime Library 包含了调试信息，并采用了一些保护机制以帮助发现错误，因此性能不如发布版本。编译器提供的 Runtime Library 通常很稳定，不会造成 Release 版错误；倒是由于 Debug 的 Runtime Library 加强了对错误的检测，如堆内存分配，有时会出现 Debug 有错但 Release 正常的现象。应当指出的是，如果 Debug 有错，即使 Release 正常，程序肯定是有 Bug 的，只不过可能是 Release 版的某次运行没有表现出来而已。`
   >> //notes：起因是有同事碰到了一个现象：Release模式编的能正常运行，Debug模式编的跑起来会出coredump。
 
+Debug模式和Release模式有什么区别？ - 知乎 https://www.zhihu.com/question/443340911
+- Debug模式和Release模式有什么区别？ - 程序喵大人的回答 - 知乎 https://www.zhihu.com/question/443340911/answer/1720297063
+  * > `Ofast`：更加激进的编译选项，它不会严格遵循标准，在O3的优化基础上，它又开启了一些可能导致不符合IEEE浮点数等标准的性能优化选项，如 -fast-math，-fallow-store-data-races 等。
+  * > Debug模式下在内存分配上有所区别，在我们申请内存时，Debug模式会多申请一部分空间，分布在内存块的前后，用于存放调试信息。
+  * > 对于未初始化的变量，Debug模式下会默认对其进行初始化，而Release模式则不会，所以就有个常见的问题，局部变量未初始化时，Debug模式和Release模式表现有所不同。
+  * > Debug模式下可以使用assert，运行过程中有异常现象会及时crash，Release模式下模式下不会编译assert，遇到不期望的情况不会及时crash，稀里糊涂继续运行，到后期可能会产生奇奇怪怪的错误，不易调试，殊不知其实在很早之前就出现了问题。编译器在Debug模式下定义 **`_DEBUG`** 宏，Release模式下定义 **`NDEBUG`** 宏，预处理器就是根据对应宏来判断是否开启assert的。
+  * > 数据溢出问题，在一个函数中，存在某些从未被使用的变量，且函数内存在数据溢出问题，在Debug模式下可能不会产生问题，因为不会对该变量进行优化，它在栈空间中还是占有几个字节，但是Release模式下可能会出问题，Release模式下可能会优化掉此变量，栈空间相应变小，数据溢出就会导致栈内存损坏，有可能会产生奇奇怪怪的错误。例如：
+
+Release编译有什么特点？我的程序用Debug编译能运行但是用Release却不行，说明了什么? - 知乎 https://www.zhihu.com/question/440569610
+- Release编译有什么特点？我的程序用Debug编译能运行但是用Release却不行，说明了什么? - P2Tree的回答 - 知乎 https://www.zhihu.com/question/440569610/answer/1693046512
+
+Debug模式下不崩溃， Release模式下偶尔发生崩溃的解决思路 https://www.cnblogs.com/azbane/p/12500715.html
+
 ## 编译器优化
 
 [翻译]C++编译器中的优化 https://fuzhe1989.github.io/2020/01/22/optimizations-in-cpp-compilers/
@@ -68,6 +81,10 @@ C++静态库与动态库 https://www.runoob.com/w3cnote/cpp-static-library-and-d
 在Linux下，如何强制让GCC静态链接？ - qin meng的回答 - 知乎 https://www.zhihu.com/question/22940048/answer/222625910
 - > gcc使用-Wl传递连接器参数，ld使用-Bdynamic强制连接动态库，-Bstatic强制连接静态库。所以部分静态，部分动态连接这么写： `gcc ... -Wl,-Bstatic -l<your-static-lib> -Wl,-Bdynamic -l<your-dynamic-lib> ...`
 - > 举个例子，你想静态连接libA.a同时动态连接libB.so，(先保证你的连接路径-L里面能找到对应的静态或者动态库)，这么写： `gcc ... -Wl,-Bstatic -lA -Wl,-Bdynamic -lB ...`
+
+## header 和 lib
+
+C++ : Difference between linking library and adding include directories https://stackoverflow.com/questions/7096152/c-difference-between-linking-library-and-adding-include-directories
 
 ## GCC版本升级
 
