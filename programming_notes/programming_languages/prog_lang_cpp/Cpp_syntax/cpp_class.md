@@ -3,6 +3,14 @@
 
 Difference between private, public, and protected inheritance https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance
 
+# 虚函数
+
+虚函数 https://docs.microsoft.com/zh-cn/cpp/cpp/virtual-functions
+
+Why do we need virtual functions in C++? https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c
+
+C++ 虚函数和纯虚函数的区别 https://www.runoob.com/w3cnote/cpp-virtual-functions.html
+
 # 重载
 
 operator overloading https://en.cppreference.com/w/cpp/language/operators

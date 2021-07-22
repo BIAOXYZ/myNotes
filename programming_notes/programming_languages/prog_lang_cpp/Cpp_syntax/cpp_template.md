@@ -7,6 +7,10 @@
 
 # 系统性攻略
 
+# 问题
+
+Why can templates only be implemented in the header file? https://stackoverflow.com/questions/495021/why-can-templates-only-be-implemented-in-the-header-file
+
 # 实战攻略
 
 C++ 模板 https://www.runoob.com/cplusplus/cpp-templates.html
