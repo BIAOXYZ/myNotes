@@ -27,6 +27,8 @@ C++11智能指针（六）：unique_ptr介绍与例子 https://blog.csdn.net/lij
 
 # 其他
 
+What is a smart pointer and when should I use one? https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one
+
 Difference in make_shared and normal shared_ptr in C++ https://stackoverflow.com/questions/20895648/difference-in-make-shared-and-normal-shared-ptr-in-c
 
 C++11 make_shared https://www.jianshu.com/p/03eea8262c11
