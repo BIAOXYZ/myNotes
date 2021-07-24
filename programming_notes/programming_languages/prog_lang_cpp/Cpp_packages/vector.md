@@ -111,6 +111,18 @@ c++11 之emplace_back 与 push_back的区别 https://ppipp.blog.csdn.net/article
 
 emplace_back() 和 push_back 的区别 https://blog.csdn.net/xiaolewennofollow/article/details/52559364
 
+## 能否完全取代 push_back
+
+C++emplace_back能完全代替push_back吗？ - 知乎 https://www.zhihu.com/question/387522517
+- C++emplace_back能完全代替push_back吗？ - 知乎 https://www.zhihu.com/question/387522517/answer/1152172397
+  * > 不过这些属于特殊情况，大部分情况下用emplace替代insert是没问题的。
+
+c++中有什么 push和insert可以但emplace做不到的操作么？ - 知乎 https://www.zhihu.com/question/347743586
+
+Are there any cases where it is incorrect to replace push_back with emplace_back? https://stackoverflow.com/questions/22080290/are-there-any-cases-where-it-is-incorrect-to-replace-push-back-with-emplace-back
+
+Should I replace all calls to push_back with emplace_back? https://stackoverflow.com/questions/22468837/should-i-replace-all-calls-to-push-back-with-emplace-back
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
