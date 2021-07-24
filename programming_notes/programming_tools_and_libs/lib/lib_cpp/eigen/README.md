@@ -34,11 +34,15 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
       - > ***Passing objects by value is almost always a very bad idea in C++, as this means useless copies, and one should pass them by reference instead***.
       - > With Eigen, this is even more important: passing fixed-size vectorizable Eigen objects by value is ***not only inefficient, it can be illegal or make your program crash!*** And the reason is that these Eigen objects have alignment modifiers that aren't respected when they are passed by value.
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Eigen库源码相关
 
 C++性能之战（2）--double VS float https://blog.csdn.net/u013834525/article/details/103847759
 - > `4. Eigen矩阵运算`
   * Eigen的速度为什么这么快？ - 知乎 https://www.zhihu.com/question/28571059
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Eigen性能提升技巧
 
@@ -52,6 +56,8 @@ Worse performance using Eigen than using my own class https://stackoverflow.com/
   * > Make sure to have compiler optimization switched on (e.g. at least `-O2` on gcc). Eigen is heavily templated and will not perform very well if you don't turn on optimization.
 - https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/19469577#19469577
   * > I hope this isn't insulting, but are you compiling in Release or Debug? Eigen is very slow in debug builds, because it uses lots of trivial templated functions that are optimized out of release but remain in debug.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 较有用攻略
 
@@ -67,6 +73,8 @@ Eigen 简明教程 https://juejin.cn/post/6844904094713249800
 
 Eigen学习记录 - 月光亲了城的文章 - 知乎 https://zhuanlan.zhihu.com/p/42718881
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 比较一般的攻略
 
 C++矩阵计算库Eigen3之：矩阵的基本操作和运算 https://blog.csdn.net/hanss2/article/details/78822955
@@ -80,6 +88,8 @@ C++矩阵处理工具——Eigen https://blog.csdn.net/abcjennifer/article/detai
 C++Eigen库的配置和基本使用 https://blog.csdn.net/wangxue_1231/article/details/90256026
 
 Eigen: C++开源矩阵计算工具——Eigen的简单用法 https://blog.csdn.net/Augusdi/article/details/12907341
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # gdb里debug这个库看不到具体信息
 
@@ -117,6 +127,8 @@ EOF
 ```
 >> //notes：然后注意就是启动gdb后如果没有自动 `source` 文件 `.gdbinit` 的话，需要在 gdb 界面里手动 `source` 下。
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 在 cmake 中使用 Eigen
 
 Find package Eigen3 for CMake https://stackoverflow.com/questions/12249140/find-package-eigen3-for-cmake
@@ -140,9 +152,13 @@ https://sites.google.com/site/alexeyvakimov/mini-tutorials/programming-boost-pyt
   ```
   > When you go back to your Eigen root directory, you will see that the "_install" directory has been created.
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 排序
 
 利用标准库std::sort()对Eigen库的向量进行排序 https://blog.csdn.net/X_And_Y/article/details/83383520
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `.rows()` 和 `.cols()`
 

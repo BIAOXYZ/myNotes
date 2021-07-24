@@ -27,6 +27,8 @@ std::vector http://www.cplusplus.com/reference/vector/vector/
 
 std::vector<T,Allocator>::emplace_back https://en.cppreference.com/w/cpp/container/vector/emplace_back
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 注意点
 
 ## vector没有 `.find()` 方法
@@ -55,6 +57,12 @@ why there is no find for vector in C++ https://stackoverflow.com/questions/29940
   std::vector<int>::const_iterator it = std::find(v.begin(), v.end(), 42);
   ```
   > If your vector is sorted, you can use `std::binary_search()` to test whether a value is present in the vector, and `std::equal_range()` to get begin and end iterators to the range of elements in the vector that have that value.
+
+## vector里的元素也要考虑内存管理
+
+【vectorの奇技淫巧】C++ vector 如何正确处理动态申请内存的元素 https://juejin.cn/post/6988156280133124110
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `.assign()`
 
@@ -102,6 +110,8 @@ c++11 之emplace_back 与 push_back的区别 https://ppipp.blog.csdn.net/article
 - > 引入了右值引用，转移构造函数后，push_back()右值时就会调用构造函数和转移构造函数,如果可以在插入的时候直接构造，就只需要构造一次即可。这就是c++11 新加的emplace_back。
 
 emplace_back() 和 push_back 的区别 https://blog.csdn.net/xiaolewennofollow/article/details/52559364
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
 
