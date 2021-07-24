@@ -29,12 +29,12 @@ What is the difference between launch.json and task.json in visual studio code? 
   subsample = 1.           # subsampling ratio for each tree
   colsampleByTree = 1.     # tree-wise feature subsampling ratio
   maxThreads = 1;          # max running threads
-  features = 123;                # REQUIRED. number of features
+  features = 123;          # REQUIRED. number of features
   validateSize = .2        # if greater than 0, input data will be split into two sets and used for training and validation repectively
   ```
-- `libsvm`格式的训练集和测试集，直接从官方下载或者用别的格式转。
-  * `wget https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a`
-  * `wget https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t`
+- `libsvm`格式的训练集和测试集，直接从官方【 [LIBSVM Data: Classification (Binary Class)](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html) 】下载或者用别的格式转。
+  * `wget https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a9a`
+  * `wget https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a9a.t`
 - 输出文件`output`甚至不需要提前准备，会自动生成。
 
 ## 2. 添加如下两个配置文件（很容易看出来，这里 `task.json` 是负责把二进制文件编译出来的任务；`launch.json` 负责调试。这俩都有 `"args"` 参数，是为了不同的任务设置的）。
@@ -117,15 +117,20 @@ What is the difference between launch.json and task.json in visual studio code? 
 }
 ```
 
-## 3. 打好断点，`F5`启动调试即可。但是我发现这个配置比较好的一点是：似乎不像某些配置必须从 `main.cpp` 文件那里按`F5`启动调试，这个配置从任何文件的位置都可以按`F5`启动调试。
+## 3. 打好断点，`F5`启动调试即可。
+
+>> //notes：但是我发现这个配置比较好的一点是：似乎不像某些配置必须从 `main.cpp` 文件那里按`F5`启动调试，这个配置从任何文件的位置都可以按`F5`启动调试。
+>>> 后来想了想，尤其是对比了之前 `aby3` 项目的[配置攻略](cpp_example2.md)，觉得基本是 `${workspaceFolder}` 代替 `${fileDirname}` 的原因 —— 后者明显必须从指定的目录启动调试，而前者和启动调试的目录无关！
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 补充：另外一种调试方式：通过修改项目自带的 `makefile`，然后命令行gdb调试
 
-1. 与前面的第一步相同，同样要准备配置文件、训练集、预测集、输出文件。
+## 1. 与前面的第一步相同，同样要准备配置文件、训练集、预测集、输出文件。
 
-2. 修改后的 `makefile`：
+## 2. 修改 `makefile`，可以生成debug版本程序（`-g` 后面的 `-Ddebug` 似乎省略掉也没问题）。
+
+// 修改后的 `makefile`：
 ```makefile
 src = GBDT/src
 build_dir = build
@@ -186,7 +191,7 @@ index a0d292c..f0ea513 100644
  all: $(build_dir) $(target)
 ```
 
-3. 在项目根目录执行 `make` 即可生成可调试的二进制文件。
+## 在项目根目录执行 `make` 后，即可生成可调试的二进制文件。
 
 // 其背后调用的命令是：
 ```sh
