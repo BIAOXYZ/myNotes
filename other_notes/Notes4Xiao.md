@@ -190,6 +190,8 @@ http://zh.sudoku.menu/info/solver.html
 
 巴四老城区炭火蛙锅(领展购物广场•中关村店) http://www.dianping.com/brands/bH7VHNw9Bb82qoz7s
 
+巴四老城区炭火蛙锅，期待您的参与！！！ https://mp.weixin.qq.com/s/XHgM3hNl0uPB1yzE4FXu-Q
+
 ## 长安一条柴
 
 在西安肉夹馍不稀奇，可螃蟹夹馍你见过吗？ https://www.acfun.cn/v/ac10588284

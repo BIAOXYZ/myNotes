@@ -73,6 +73,10 @@
 
 合生me悦，高溢价低总价的收割盘，市场会认可嘛？ - 猫叔聊地产的文章 - 知乎 https://zhuanlan.zhihu.com/p/382354639
 
+南城最后一个临铁小户型即将开盘 ，要不要上车？| 新盘报道 https://mp.weixin.qq.com/s/8obubY54LaVq5eRB79JCYg
+
+合生me悦还没来得及开盘，地块附近的竞品（熙悦云上）却紧跟其后。 https://mp.weixin.qq.com/s/cMSXh9qPAnQtCZuet020Kg
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 楼盘测评：京投发展臻御府 - 京楼周未星的文章 - 知乎 https://zhuanlan.zhihu.com/p/89013418
