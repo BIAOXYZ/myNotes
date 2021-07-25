@@ -112,6 +112,13 @@ ln -sf /snap/cmake/870/bin/*  /usr/bin/
 mount | grep snapd
 ```
 
+在Linux上安装其他版本的cmake 或 升级cmake https://blog.csdn.net/weixin_41010198/article/details/109343347
+- > **3 最简单的升级cmake命令的方法，直接使用pip**
+  * > 安装我们自己需要的cmake版本
+    ```py
+    pip install -U cmake==3.17.3
+    ```
+
 ## 头文件包含还是库链接？
 
 Undefined reference to function CMake https://stackoverflow.com/questions/38530491/undefined-reference-to-function-cmake
