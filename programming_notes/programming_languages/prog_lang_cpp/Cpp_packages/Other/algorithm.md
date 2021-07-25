@@ -8,6 +8,8 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
   * std::count https://www.cplusplus.com/reference/algorithm/count/
 - **Modifying sequence operations:**
   * std::copy https://www.cplusplus.com/reference/algorithm/copy/
+  * std::random_shuffle https://www.cplusplus.com/reference/algorithm/random_shuffle/
+  * std::shuffle https://www.cplusplus.com/reference/algorithm/shuffle/
 - **Sorting**:
   * std::sort http://www.cplusplus.com/reference/algorithm/sort/
 - **Min/max**:
@@ -16,13 +18,15 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
   * std::min_element http://www.cplusplus.com/reference/algorithm/min_element/
 
 Algorithms library https://en.cppreference.com/w/cpp/algorithm
-- Non-modifying sequence operations
+- **Non-modifying sequence operations**
   * std::for_each https://en.cppreference.com/w/cpp/algorithm/for_each
   * std::count, std::count_if https://en.cppreference.com/w/cpp/algorithm/count
   * std::find, std::find_if, std::find_if_not https://en.cppreference.com/w/cpp/algorithm/find
-- Sorting operations
+- **Modifying sequence operations**
+  * std::random_shuffle, std::shuffle https://en.cppreference.com/w/cpp/algorithm/random_shuffle
+- **Sorting operations**
   * std::sort https://en.cppreference.com/w/cpp/algorithm/sort
-- Minimum/maximum operations
+- **Minimum/maximum operations**
   * std::min_element https://en.cppreference.com/w/cpp/algorithm/min_element
 
 # `std::min_element` && `std::max_element`
@@ -95,6 +99,15 @@ C++ STL 算法——最大值max_element，最小值min_element，求和accumula
   15
   
   ```
+
+# `std::shuffle` 和 `std::random_shuffle`
+
+random_shuffle 和 shuffle的区别 https://www.jianshu.com/p/9613c764447f
+- > 推荐使用 `std::shuffle`。
+- > `std::shuffle` 是从 `C++11` 之后才开始出现，必须与随机数生成器一起使用。 <br> `std::random_shuffle` 在 `C++11` 之前就已经存在，可以不指定随机数生成器而使用默认的随机数生成器。
+- > 需要注意的是，`std::random_shuffle` 在 `C++14` 中弃用，`C++17` 中移除。所以推荐使用 `std::shuffle`。
+- > `std::random_shuffle` 被废除的原因是 `std::random_shuffle` 的随机数产生器使用了 `std::rand()`。 <br> 而 `std::rand()` 使用了 ***一个全局静态变量*** 保存其状态，这样使得 `std::rand()` 无法同时产生两个独立互不干扰的随机数流。
+- > 所以 `std::random_shuffle` 由于使用了 `std::rand()`，产生的随机数质量不如 `std::shuffle` 使用的均匀分布的随机数产生器URNG(Uniform Random Number Generator)产生的随机数
 
 # 其他
 
