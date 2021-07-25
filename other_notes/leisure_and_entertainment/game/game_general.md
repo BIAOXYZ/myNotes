@@ -24,6 +24,10 @@
 
 三国杀:小乔 https://zh.moegirl.org.cn/%E4%B8%89%E5%9B%BD%E6%9D%80:%E5%B0%8F%E4%B9%94
 
+【三国杀纯单挑】新老服60强点评+48强人头表（下） https://www.bilibili.com/read/cv5517245
+
+三国杀武将辛宪英攻略 https://www.bilibili.com/read/cv1914721
+
 # 页游
 
 不敢相信，网页游戏都发展到这个地步了！ https://www.bilibili.com/video/BV1X64y197DZ
