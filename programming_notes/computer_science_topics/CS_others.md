@@ -25,6 +25,10 @@ proj2-oslabs-by-history -- CS发展历史上的OS Labs https://github.com/oscomp
 SimpleKernel https://github.com/Simple-XX/SimpleKernel
 - > Simple kernel for learning operating systems. 用于学习操作系统的简单内核
 
+linux-insides https://github.com/0xAX/linux-insides
+- > **On other languages**
+  * > Linux 内核揭秘 https://github.com/MintCN/linux-insides-zh
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj

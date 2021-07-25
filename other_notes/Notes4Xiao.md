@@ -184,6 +184,12 @@ http://zh.sudoku.menu/info/solver.html
 
 央视刚播就有千万热度，这部纪录片告诉你陕西美食简直天下无敌 https://www.acfun.cn/a/ac27027559
 
+## 巴四老城区炭火蛙锅
+
+巴四老城区炭火蛙锅 http://basihuoguo.mixuejm.cn/
+
+巴四老城区炭火蛙锅(领展购物广场•中关村店) http://www.dianping.com/brands/bH7VHNw9Bb82qoz7s
+
 ## 长安一条柴
 
 在西安肉夹馍不稀奇，可螃蟹夹馍你见过吗？ https://www.acfun.cn/v/ac10588284
