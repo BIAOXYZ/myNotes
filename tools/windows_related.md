@@ -346,6 +346,8 @@ https://www.appinn.com/windows-apps-that-amaze-us/
 - qdir https://www.appinn.com/q-dir/
 - everything https://www.appinn.com/everything/
 
+Ditto https://github.com/sabrogden/ditto || https://ditto-cp.sourceforge.io/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## PDF related
