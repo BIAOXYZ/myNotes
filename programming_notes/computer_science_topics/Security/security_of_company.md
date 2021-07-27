@@ -120,6 +120,12 @@ Angel PowerFL 安全联合计算 https://cloud.tencent.com/solution/powerfl
 
 # 其他项目
 
+## ABY2.0
+
+(USENIX Security 2021) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。】
+
+ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
+
 ## ABY<sup>3</sup>
 
 ABY 3 and Applications https://github.com/ladnir/aby3
@@ -135,8 +141,6 @@ ABY3: A Mixed Protocol Framework for Machine Learning https://slideplayer.com/sl
 ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation https://github.com/encryptogroup/ABY  【这个和ABY<sup>3</sup>貌似不是一个单位搞的】
 - ***Paper***:
   * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
-
-(USENIX Security 2021) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。】
 
 ## MPyC
 
