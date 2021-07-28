@@ -82,6 +82,31 @@ C: What is the difference between ++i and i++? https://stackoverflow.com/questio
 Is there a performance difference between i++ and ++i in C? https://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c
 - https://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c/24887#24887
 
+# 左值和右值
+
+How to determine programmatically if an expression is rvalue or lvalue in C++? https://stackoverflow.com/questions/36296425/how-to-determine-programmatically-if-an-expression-is-rvalue-or-lvalue-in-c
+- https://stackoverflow.com/questions/36296425/how-to-determine-programmatically-if-an-expression-is-rvalue-or-lvalue-in-c/36296823#36296823
+  * > Most of the work is already done for you by the stdlib, you just need a function wrapper:
+    ```cpp
+    template <typename T>
+    constexpr bool is_lvalue(T&&) {
+      return std::is_lvalue_reference<T>{};
+    }
+    ```
+  * > in the case you pass a `std::string` lvalue then `T` will deduce to `std::string&` or `const std::string&`, for rvalues it will deduce to `std::string`
+  * > Note that [Yakk's answer](https://stackoverflow.com/questions/36296425/how-to-determine-programmatically-if-an-expression-is-rvalue-or-lvalue-in-c/36312021#36312021) will return a different type, which allows for more flexibility and you should read that answer and probably use it instead.
+
+基础篇：lvalue，rvalue和move - Fei Ding的文章 - 知乎 https://zhuanlan.zhihu.com/p/138210501
+- > **左值(lvalue, left value)**，顾名思义就是赋值符号左边的值。准确来说， 左值是表达式（不一定是赋值表达式）后依然存在的持久对象。
+- > **右值(rvalue, right value)**，右边的值，是指表达式结束后就不再存在的临时对象。
+- > 对于以上的语句，lvalue是我们要赋值的对象。它是一个变量，存在于内存中，它的值可以被改变，**可以被取地址**。任何可以通过它的名字，指针或者引用来接触的变量都是lvalue，例如定义的某个变量和函数的参数， 对一个表达式取地址。
+- > rvalue则是一个临时变量，不存在于内存中，存在于CPU的寄存器或者指令的立即数中(immediate number)，因此我们不能改变它的值，**不能取地址**。它们通常是一个直接的数值，运算符返回的数值，或是函数的返回值，或者通过隐式类型转换得到的对象，大部分字面值(e.g., 10 and 5.3)也是rvalues。
+  >> 【//notes：***能不能被取地址*** 是左右值的最大不同点——至于这里说的右值不在内存中，查了别的资料好像并不一定】
+
+Difference between r value and l value [duplicate] https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value
+- https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value/58253944#58253944
+  * > `l-value` refers to memory location which identifies an object. `l-value` may appear as either left hand or right hand side of an assignment `operator(=)`. `l-value` often represents as identifier.
+
 # 类
 
 Classes https://en.cppreference.com/w/cpp/language/classes
