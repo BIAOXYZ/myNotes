@@ -34,3 +34,7 @@ Data lake https://en.wikipedia.org/wiki/Data_lake
 批处理和流处理 https://www.jianshu.com/p/5cc07eae1a0c
 
 Big Data Battle : Batch Processing vs Stream Processing https://medium.com/@gowthamy/big-data-battle-batch-processing-vs-stream-processing-5d94600d8103
+
+数据埋点是什么？设置埋点的意义是什么？ - Yuki的回答 - 知乎 https://www.zhihu.com/question/36411025/answer/147581103
+- > 所谓`埋点`就是**在应用中特定的流程收集一些信息，用来跟踪应用使用的状况，后续用来进一步优化产品或是提供运营的数据支撑**，包括访问数（Visits），访客数（Visitor），停留时长（Time On Site），页面浏览数（Page Views）和跳出率（Bounce Rate）。这样的信息收集可以大致分为两种：页面统计（track this virtual page view），统计操作行为（track this button by an event）。 
+- > 数据埋点的方式现在埋点的主流有两种方式：第一种：自己公司研发在产品中注入代码统计，并搭建起相应的后台查询。第二种：第三方统计工具，如友盟、神策、Talkingdata、GrowingIO等。
