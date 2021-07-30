@@ -58,6 +58,37 @@ How to determine programmatically if an expression is rvalue or lvalue in C++? h
     ```
   * > 需要拿到一个将亡值，就需要用到右值引用的申明：`T &&`，其中T是类型。 右值引用的声明让这个临时值的生命周期得以延长、只要变量还活着，那么将亡值将继续存活。更多细节可参考：
     >> 现代C++之万能引用、完美转发、引用折叠 - Francis的文章 - 知乎 https://zhuanlan.zhihu.com/p/99524127
+- > **move语义**
+  * > 传统的 C++ 没有区分『移动』和『拷贝』的概念，造成了大量的数据拷贝，浪费时间和空间。 右值引用的出现恰好就解决了这两个概念的混淆问题，为了结合左值引用来轻易完成move语义的实现。什么是move语义，为什么需要move语义，我们来举一个std::vector的栗子。我们在执行v2=v1时，需要先完成一次函数调用，即调用拷贝赋值运算符，然后执行内存分配，最后循环逐个元素。
+  * > 如果v1和v2我们都需要的话，生成两份拷贝自然是没有问题的，但多数情况下我们只希望使用v2，那么我们就只希望生成一份拷贝，减少不必要又麻烦的拷贝过程：设想如果它包含10000个元素，要增加多大的开销？例如下面的swap函数:
+    ```cpp
+    template <class T> swap(T& a, T& b){
+    T tmp(a);  //现有两份a的拷贝，tmp和a
+    a = b;     //现有两份b的拷贝，a和b
+    b = tmp;   //现有两份tmp的拷贝，b和tmp
+    }
+    ```
+    ```cpp
+    //试试更好的方法，不会生成额外的拷贝
+    template <class T> swap(T& a, T& b){
+    T tmp(std::move(a)); //只有一份拷贝，tmp
+    a = std::move(b);    //只有一份拷贝，a
+    b = std::move(tmp);  //只有一份拷贝，b
+    }
+    ```
+  * > move函数所做的只是拿到一个左值或右值参数，然后都将其**返回为右值**同时不触发任何拷贝函数。它的作用就是<ins>相当于把参数的值**剪切**到目标对象的值，move可以说是一种具有破坏性的读操作<ins>。
+    ```cpp
+    std::string str = "Hello";
+    std::vector<std::string> v;
+
+    v.push_back(str);
+    std::cout<<"After copy, str is \""<<str<<\"\n;
+    //输出结果为 After copy, str is "Hello"
+
+    v.push_back(std::move(str));
+    std::cout<<"After move, str is \""<<str<<\"\n;
+    //输出结果为 After move, str is ""
+    ```
 
 Difference between r value and l value [duplicate] https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value
 - https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value/58253944#58253944

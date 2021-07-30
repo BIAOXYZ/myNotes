@@ -3,6 +3,14 @@
 
 How do I achieve the theoretical maximum of 4 FLOPs per cycle? https://stackoverflow.com/questions/8389648/how-do-i-achieve-the-theoretical-maximum-of-4-flops-per-cycle
 
+General C++ Performance Improvement Tips [closed] https://stackoverflow.com/questions/2030189/general-c-performance-improvement-tips
+
+## 变量是否需要在for循环内部定义 --> 看来是没必要
+
+Is it good to define a variable inside a loop? [closed] https://softwareengineering.stackexchange.com/questions/296721/is-it-good-to-define-a-variable-inside-a-loop
+
+Is it efficient to declare a variable in a loop? [duplicate] https://stackoverflow.com/questions/16761618/is-it-efficient-to-declare-a-variable-in-a-loop
+
 # SIMD
 
 单指令流多数据流 https://zh.wikipedia.org/wiki/%E5%8D%95%E6%8C%87%E4%BB%A4%E6%B5%81%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%B5%81
