@@ -63,17 +63,17 @@ How to determine programmatically if an expression is rvalue or lvalue in C++? h
   * > 如果v1和v2我们都需要的话，生成两份拷贝自然是没有问题的，但多数情况下我们只希望使用v2，那么我们就只希望生成一份拷贝，减少不必要又麻烦的拷贝过程：设想如果它包含10000个元素，要增加多大的开销？例如下面的swap函数:
     ```cpp
     template <class T> swap(T& a, T& b){
-    T tmp(a);  //现有两份a的拷贝，tmp和a
-    a = b;     //现有两份b的拷贝，a和b
-    b = tmp;   //现有两份tmp的拷贝，b和tmp
+      T tmp(a);  //现有两份a的拷贝，tmp和a
+      a = b;     //现有两份b的拷贝，a和b
+      b = tmp;   //现有两份tmp的拷贝，b和tmp
     }
     ```
     ```cpp
     //试试更好的方法，不会生成额外的拷贝
     template <class T> swap(T& a, T& b){
-    T tmp(std::move(a)); //只有一份拷贝，tmp
-    a = std::move(b);    //只有一份拷贝，a
-    b = std::move(tmp);  //只有一份拷贝，b
+      T tmp(std::move(a)); //只有一份拷贝，tmp
+      a = std::move(b);    //只有一份拷贝，a
+      b = std::move(tmp);  //只有一份拷贝，b
     }
     ```
   * > move函数所做的只是拿到一个左值或右值参数，然后都将其**返回为右值**同时不触发任何拷贝函数。它的作用就是<ins>相当于把参数的值**剪切**到目标对象的值，move可以说是一种具有破坏性的读操作<ins>。
@@ -89,6 +89,69 @@ How to determine programmatically if an expression is rvalue or lvalue in C++? h
     std::cout<<"After move, str is \""<<str<<\"\n;
     //输出结果为 After move, str is ""
     ```
+  * > 放在v2=v1里，我们能让参数v1的体积为0，只生成v2，避免生成额外拷贝。要实现这样移值的move语义，右值引用的好处就来了，它使我们能轻松快速地完成这个功能:
+    ```cpp
+    template <class T>
+    typename remove_reference<T>::type&&  //去掉引用，再变为右值引用作为返回值类型
+    move(T&& a){
+      return a;  //通过引用直接把右值传给目标
+    }
+    ```
+  * > C++11也引入了使用move语义来实现的**移动构造函数**的概念。相比C++98的拷贝构造函数，其区别就相当于剪切粘贴和复制粘贴，就像上面的例子一样。
+    ```cpp
+    void someFunc(Widget w);
+    Widget wid;
+    someFunc(wid);  //w是由wid拷贝构造
+    someFunc(std::move(wid));  //w是由wid移动构造
+    ```
+  * > 比如：
+    ```cpp
+    #include <iostream>
+    class A {
+    public:
+        int *pointer;
+        A():pointer(new int(1)) { 
+            std::cout << "构造" << pointer << std::endl; 
+        }
+        A(A& a):pointer(new int(*a.pointer)) { 
+            std::cout << "拷贝" << pointer << std::endl; 
+        } // 无意义的对象拷贝
+        A(A&& a):pointer(a.pointer) { 
+            a.pointer = nullptr;
+            std::cout << "移动" << pointer << std::endl; 
+        }
+        ~A(){ 
+            std::cout << "析构" << pointer << std::endl; 
+            delete pointer; 
+        }
+    };
+    // 防止编译器优化
+    A return_rvalue(bool test) {
+        A a,b;
+        if(test) return a; // 等价于 static_cast<A&&>(a);
+        else return b;     // 等价于 static_cast<A&&>(b);
+    }
+    int main() {
+        A obj = return_rvalue(false);
+        std::cout << "obj:" << std::endl;
+        std::cout << obj.pointer << std::endl;
+        std::cout << *obj.pointer << std::endl;
+        return 0;
+    }
+    ```
+  * > 在上面的代码中：
+    + > 1.首先会在 `return_rvalue` 内部构造两个 `A` 对象，于是获得两个构造函数的输出；
+    + > 2.函数返回后，产生一个将亡值，被 `A` 的移动构造（`A(A&&)`）引用，从而延长生命周期，并将这个右值中的指针拿到，保存到了 `obj` 中，而将亡值的指针被设置为 `nullptr`，防止了这块内存区域被销毁。
+  * > 最后我们再来看一个比较容易混淆的左值和右值问题，下面的rhs是左值还是右值？
+    ```cpp
+    class Widget{
+      public:
+        Widget(Widget&& rhs);
+      ......
+    };
+    ```
+  * > 答案是左值！区别左值和右值的最根本标准就是，能否取到地址，上面我们显然可以对其进行取址操作，因此它是一个左值。其次，即使这个参数标明的类型是 `T&&`，它其实是**通用引用**(universal reference)而不一定是右值引用。标为 `T&&` 类型的变量***既可以是右值引用，即只能引用右值，也可以是通用引用，既可以引用左值，也可以引用右值***。
+- > **通用引用**
 
 Difference between r value and l value [duplicate] https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value
 - https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value/58253944#58253944

@@ -5,6 +5,8 @@ How do I achieve the theoretical maximum of 4 FLOPs per cycle? https://stackover
 
 General C++ Performance Improvement Tips [closed] https://stackoverflow.com/questions/2030189/general-c-performance-improvement-tips
 
+《提高C++性能的编程技术》笔记 - WeTiGY的文章 - 知乎 https://zhuanlan.zhihu.com/p/97046347
+
 ## 变量是否需要在for循环内部定义 --> 看来是没必要
 
 Is it good to define a variable inside a loop? [closed] https://softwareengineering.stackexchange.com/questions/296721/is-it-good-to-define-a-variable-inside-a-loop
