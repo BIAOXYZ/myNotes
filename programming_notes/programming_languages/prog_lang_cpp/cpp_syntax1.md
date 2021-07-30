@@ -102,6 +102,18 @@ How to determine programmatically if an expression is rvalue or lvalue in C++? h
 - > 对于以上的语句，lvalue是我们要赋值的对象。它是一个变量，存在于内存中，它的值可以被改变，**可以被取地址**。任何可以通过它的名字，指针或者引用来接触的变量都是lvalue，例如定义的某个变量和函数的参数， 对一个表达式取地址。
 - > rvalue则是一个临时变量，不存在于内存中，存在于CPU的寄存器或者指令的立即数中(immediate number)，因此我们不能改变它的值，**不能取地址**。它们通常是一个直接的数值，运算符返回的数值，或是函数的返回值，或者通过隐式类型转换得到的对象，大部分字面值(e.g., 10 and 5.3)也是rvalues。
   >> 【//notes：***能不能被取地址*** 是左右值的最大不同点——至于这里说的右值不在内存中，查了别的资料好像并不一定】
+- > **纯右值(prvalue, pure rvalue)**，纯粹的右值，没有标识符、不可以取地址的表达式， 要么是纯粹的字面量，例如 `10`, `true`； 要么是求值结果相当于字面量或匿名临时对象，例如 `1+2`。非引用返回的临时变量、运算表达式产生的临时变量、 原始字面量、Lambda 表达式都属于纯右值。
+- > **将亡值(xvalue, expiring value)**，是 C++11 为了引入右值引用而提出的概念（因此在传统 C++中， 纯右值和右值是同一个概念），也就是即将被销毁、却能够被移动的值。
+- > xvalue可能稍有些难以理解，我们来看这样的代码：
+  ```cpp
+  std::vector<int> foo() {
+      std::vector<int> temp = {1, 2, 3, 4};
+      return temp;
+  }
+  std::vector<int> v = foo();
+  ```
+- > 就传统的理解而言，函数 `foo` 的返回值 `temp` 在内部创建然后被赋值给 `v`， 然而 `v` 获得这个对象时，会将整个 `temp` 拷贝一份，然后把 `temp` 销毁，如果这个 `temp` 非常大， 这将造成大量额外的开销（这也就是传统 C++ 一直被诟病的问题）。在最后一行中，`v` 是左值、 `foo()` 返回的值就是右值（也是纯右值）。但是，`v` 可以被别的变量捕获到， 而 `foo()` 产生的那个返回值作为一个临时值，一旦被 `v` 复制后，将立即被销毁，无法获取、也不能修改。 而将亡值就定义了这样一种行为：临时的值能够被识别、同时又能够被移动。
+- > 在 C++11 之后，编译器为我们做了一些工作，此处的左值temp会被进行此隐式右值转换， 等价于 `static_cast<std::vector<int> &&>(temp)`，进而此处的 `v` 会将 `foo` 局部返回的值进行 `move`。也就是后面我们将会提到的 `move` 语义。
 
 Difference between r value and l value [duplicate] https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value
 - https://stackoverflow.com/questions/58253921/difference-between-r-value-and-l-value/58253944#58253944
