@@ -8,6 +8,7 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
   * std::count https://www.cplusplus.com/reference/algorithm/count/
 - **Modifying sequence operations:**
   * std::copy https://www.cplusplus.com/reference/algorithm/copy/
+  * std::unique https://www.cplusplus.com/reference/algorithm/unique/
   * std::random_shuffle https://www.cplusplus.com/reference/algorithm/random_shuffle/
   * std::shuffle https://www.cplusplus.com/reference/algorithm/shuffle/
 - **Sorting**:

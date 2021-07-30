@@ -1,4 +1,6 @@
 
+今天用学习用 C 实现队列结构时，编译执行阶段出现非常邪乎的问题 https://www.v2ex.com/t/792765
+
 跨越 7 年的 long long ago https://www.v2ex.com/t/783998
 ```console
 大概 2013 年前后看 C Primer Plus 的时候，出于对 printf 函数原理的理解，写下了下面的代码(ago 变成了 verybig)
