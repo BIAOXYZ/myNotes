@@ -6,6 +6,9 @@
 
 # 其他番剧推荐视频
 
+男主的后宫里竟没有一个正常人！！这番能让你直呼“卧槽”！ https://www.bilibili.com/video/BV1EM4y1T7PY
+- 《其实我是…》https://zh.moegirl.org.cn/%E5%85%B6%E5%AE%9E%E6%88%91%E6%98%AF || https://baike.baidu.com/item/%E5%85%B6%E5%AE%9E%E6%88%91%E6%98%AF%E2%80%A6/17280478
+
 新番时光机！十年前的的观众都在看什么神片？「2011年4月新番导视」 https://www.bilibili.com/video/BV1Ly4y1s7wp
 - 《日常》
 - 《未闻花名》
