@@ -79,6 +79,26 @@ Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 ht
 
 如何在Chrome浏览器中切换标签页 https://zh.wikihow.com/%E5%9C%A8Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%88%87%E6%8D%A2%E6%A0%87%E7%AD%BE%E9%A1%B5
 
+## chrome keyboard shortcuts for Mac
+
+Chrome 键盘快捷键 https://support.google.com/chrome/answer/157179?hl=zh-Hans
+
+| 操作 | 快捷键 |
+|--|:--|
+| 打开新窗口 | ⌘ + n |
+| 在无痕模式下打开新窗口	| ⌘ + Shift + n |
+| 打开新的标签页，并跳转到该标签页	| ⌘ + t |
+| **按标签页的关闭顺序重新打开先前关闭的标签页**	| ⌘ + Shift + t |
+| **跳转到下一个打开的标签页**	| ⌘ + Option + 向右箭头键 |
+| **跳转到上一个打开的标签页**	| ⌘ + Option + 向左箭头键 |
+| **跳转到特定标签页**	| ⌘ + 1 到 ⌘ + 8 |
+| **跳转到最后一个标签页**	| ⌘ + 9 |
+| **关闭当前的标签页或弹出式窗口**	| ⌘ + w |
+| 关闭当前窗口【这个和Windows下不一致？】	| ⌘ + Shift + w |
+| 退出 Google Chrome	| ⌘ + q 【这个和Windows快捷键下不一致】 |
+
+## 
+
 Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/cbcede0761144902f40b4d18.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
