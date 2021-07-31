@@ -42,6 +42,17 @@ C++性能之战（2）--double VS float https://blog.csdn.net/u013834525/article
 - > `4. Eigen矩阵运算`
   * Eigen的速度为什么这么快？ - 知乎 https://www.zhihu.com/question/28571059
 
+Eigen的速度为什么这么快？ - 知乎 https://www.zhihu.com/question/28571059
+- Eigen的速度为什么这么快？ - 叶洪舟的回答 - 知乎 https://www.zhihu.com/question/28571059/answer/132951347
+  * > 我 google 了一下，在 StackOverflow 上（[How to speed up Eigen library's matrix product?](https://stackoverflow.com/questions/14783219/how-to-speed-up-eigen-librarys-matrix-product)）有人讨论说是 MATLAB 内部自动会调用多线程版的 mkl 里的矩阵乘法，而 Eigen 在通常状态下是单线程的，需要在编译时加上 `-fopen` 参数使用 `openmp` 开启多线程。我在自己的 Mac 上尝试了一下，在线程数为 4 的情况下，时间缩短为 0.57 秒，但相比 MATLAB 的肉眼不可察觉还是有差距。
+  * > P.S.: 最开始的单线程版本我使用的是 OS X 自带的 `g++` 编译器，优化参数为 `-Ofast`. 测试过加上 `-msse2` 没有明显区别。这个 `g++` 实际上是Apple 封装后的 `clang++`，很可惜的是不支持 `openmp`. 所以为了开启多线程我安装了 GNU `g++` 编译器。其它编译参数不变。
+  * > 刚才又上 StackOverflow 上看了别人的几个帖子（[Eigen vs Matlab: parallelized Matrix-Multiplication](https://stackoverflow.com/questions/28284986/eigen-vs-matlab-parallelized-matrix-multiplication)）学习了一下，发现了几个新的 trick：
+    + > 1.首先之前线程数我设置错误了。我的 CPU physically 应该只有两个核，四线程是 hyper－thread 的结果，多出来的两个线程并不能加速。我把 `OMP_NUM_THREADS` 改为 2 以后，速度变为 0.55s 左右；
+    + > 2.如果计算矩阵乘法，使用 $B.noalias() = A^{T}A$ 是个不错的 trick，它可以避免生成 temporary 的矩阵存储中间结果。使用这个后缩短为 0.50s 左右；
+    + > 3.对 Eigen 3.3 或以上的版本可以加上 `-mavx` 和 `-mfma` 两个参数，进一步缩短为 0.40s 左右。
+  * > 经评论区提醒 Ofast 进行了一些 unsafe 的数学优化所以可能牺牲精度，在极端情况下甚至出错。参考如下 stackoverflow 链接的讨论：[G++ optimization beyond -O3/-Ofast](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast)
+    >> //notes：这个帖子的[置顶回答](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast/38511897#38511897)牛出天际！详见性能优化部分（也可能未来会放到GCC部分）的笔记。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Eigen性能提升技巧
