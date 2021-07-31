@@ -44,22 +44,39 @@ C++性能之战（2）--double VS float https://blog.csdn.net/u013834525/article
 
 Eigen的速度为什么这么快？ - 知乎 https://www.zhihu.com/question/28571059
 - Eigen的速度为什么这么快？ - 叶洪舟的回答 - 知乎 https://www.zhihu.com/question/28571059/answer/132951347
-  * > 我 google 了一下，在 StackOverflow 上（[How to speed up Eigen library's matrix product?](https://stackoverflow.com/questions/14783219/how-to-speed-up-eigen-librarys-matrix-product)）有人讨论说是 MATLAB 内部自动会调用多线程版的 mkl 里的矩阵乘法，而 Eigen 在通常状态下是单线程的，需要在编译时加上 `-fopen` 参数使用 `openmp` 开启多线程。我在自己的 Mac 上尝试了一下，在线程数为 4 的情况下，时间缩短为 0.57 秒，但相比 MATLAB 的肉眼不可察觉还是有差距。
+  * > 我 google 了一下，在 StackOverflow 上（[《***How to speed up Eigen library's matrix product?***》](https://stackoverflow.com/questions/14783219/how-to-speed-up-eigen-librarys-matrix-product)）有人讨论说是 MATLAB 内部自动会调用多线程版的 mkl 里的矩阵乘法，而 Eigen 在通常状态下是单线程的，需要在编译时加上 `-fopen` 参数使用 `openmp` 开启多线程。我在自己的 Mac 上尝试了一下，在线程数为 4 的情况下，时间缩短为 0.57 秒，但相比 MATLAB 的肉眼不可察觉还是有差距。
   * > P.S.: 最开始的单线程版本我使用的是 OS X 自带的 `g++` 编译器，优化参数为 `-Ofast`. 测试过加上 `-msse2` 没有明显区别。这个 `g++` 实际上是Apple 封装后的 `clang++`，很可惜的是不支持 `openmp`. 所以为了开启多线程我安装了 GNU `g++` 编译器。其它编译参数不变。
-  * > 刚才又上 StackOverflow 上看了别人的几个帖子（[Eigen vs Matlab: parallelized Matrix-Multiplication](https://stackoverflow.com/questions/28284986/eigen-vs-matlab-parallelized-matrix-multiplication)）学习了一下，发现了几个新的 trick：
+  * > 刚才又上 StackOverflow 上看了别人的几个帖子（[《***Eigen vs Matlab: parallelized Matrix-Multiplication***》](https://stackoverflow.com/questions/28284986/eigen-vs-matlab-parallelized-matrix-multiplication)）学习了一下，发现了几个新的 trick：
     + > 1.首先之前线程数我设置错误了。我的 CPU physically 应该只有两个核，四线程是 hyper－thread 的结果，多出来的两个线程并不能加速。我把 `OMP_NUM_THREADS` 改为 2 以后，速度变为 0.55s 左右；
     + > 2.如果计算矩阵乘法，使用 $B.noalias() = A^{T}A$ 是个不错的 trick，它可以避免生成 temporary 的矩阵存储中间结果。使用这个后缩短为 0.50s 左右；
     + > 3.对 Eigen 3.3 或以上的版本可以加上 `-mavx` 和 `-mfma` 两个参数，进一步缩短为 0.40s 左右。
-  * > 经评论区提醒 Ofast 进行了一些 unsafe 的数学优化所以可能牺牲精度，在极端情况下甚至出错。参考如下 stackoverflow 链接的讨论：[G++ optimization beyond -O3/-Ofast](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast)
-    >> //notes：这个帖子的[置顶回答](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast/38511897#38511897)牛出天际！详见性能优化部分（也可能未来会放到GCC部分）的笔记。
+  * > 经评论区提醒 Ofast 进行了一些 unsafe 的数学优化所以可能牺牲精度，在极端情况下甚至出错。参考如下 stackoverflow 链接的讨论：[《***G++ optimization beyond -O3/-Ofast***》](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast)
+    >> //notes：这个帖子（[《***G++ optimization beyond -O3/-Ofast***》](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast)）里的[置顶回答](https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast/38511897#38511897)牛出天际！详见性能优化部分（也可能未来会放到GCC部分）的笔记。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Eigen性能提升技巧
 
+How to speed up Eigen library's matrix product? https://stackoverflow.com/questions/14783219/how-to-speed-up-eigen-librarys-matrix-product
+- https://stackoverflow.com/questions/14783219/how-to-speed-up-eigen-librarys-matrix-product/14796261#14796261
+  * > First of all, when doing performance comparison, makes sure you disabled ***turbo-boost*** (TB). On my system, using gcc 4.5 from macport and without turbo-boost, I get 3.5s, that corresponds to 8.4 GFLOPS while the theoretical peak of my 2.3 core i7 is 9.2GFLOPS, so not too bad.
+  * > MatLab is based on Intel MKL, and seeing the reported performance, it clearly uses a multithreaded version. It is unlikely that an small library as Eigen can beat Intel on its own CPU!
+  * > Numpy can uses any BLAS library, Atlas, MKL, OpenBLAS, eigen-blas, etc. I guess that in your case it was using Atlas which is fast too.
+  * > Finally, here is how you can get better performance: enable multi-threading in Eigen by compiling with `-fopenmp`. By default Eigen uses for the number of the thread the default number of thread defined by OpenMP. Unfortunately this number corresponds to the number of logic cores, and not physical cores, so make sure hyper-threading is disabled or define the `OMP_NUM_THREADS` environment variable to the physical number of cores. Here I get 1.25s (without TB), and 0.95s with TB.
+  * 回复里的：
+    + > Good call on the multithreading: Matlab multithreading seems to explain most of the difference. When I use the "`-singleCompThread`" command line option, Matlab clocks in at ~2.4 sec, same as Eigen.
+    + > I can't think of any good reason why you would set `OMP_NUM_THREADS` to anything but the number of logical cores in this case. If you set it to the number of physical cores with HT enabled you'll just be idling 50% of the CPU...
+      >> Basically, HT permits to hide memory latencies and enhance instruction pipelining by running two threads on the same physical core. However, a well implemented matrix product routine as in Eigen already occupies nearly 100% of the arithmetic units meanings pipelining is already perfect and memory latencies are already well hidden. In this context, HT can only destroy the performance. For instance, the two threads will concurrently access the same L1 cache resource thus cancelling the benefit of L1 cache.
+    + > Last I checked Eigen only used SSE and MKL used AVX. That's a factor of two loss. Since them Haswell has come out with FMA. I don't know if MKL supports FMA but if it does then that's potentially another factor of two loss (four total). My own GEMM code I have written is over twice as fast as Eigen using OpenMP and FMA.
+
+Eigen vs Matlab: parallelized Matrix-Multiplication https://stackoverflow.com/questions/28284986/eigen-vs-matlab-parallelized-matrix-multiplication
+- https://stackoverflow.com/questions/28284986/eigen-vs-matlab-parallelized-matrix-multiplication/28286298#28286298
+  * > set `OMP_NUM_THREADS` to the true number of cores, not number of hyper-threads. (4 in your case)
+  * > your CPU supports `AVX` and `FMA` that are only supported by the devel branch of Eigen (will become 3.3), so use the devel branch and enable them with the `-mavx` and `-mfma` compiler options (about x3.5 speed up compared to `SSE` only)
+
 Worse performance using Eigen than using my own class https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class
 - https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/6193829#6193829
-  * > Which version of Eigen are you using? They recently released 3.0.1, which is supposed to be faster than 2.x. Also, make sure you play a bit with the compiler options. For example, make sure SSE is being used in Visual Studio: `C/C++ --> Code Generation --> Enable Enhanced Instruction Set`
+  * > Which version of Eigen are you using? They recently released 3.0.1, which is supposed to be faster than 2.x. Also, make sure you play a bit with the compiler options. For example, make sure `SSE` is being used in Visual Studio: `C/C++ --> Code Generation --> Enable Enhanced Instruction Set`
 - https://stackoverflow.com/questions/6193546/worse-performance-using-eigen-than-using-my-own-class/6193862#6193862
   * > If you're using Eigen's `MatrixXd` types, those are dynamically sized. You should get much better results from using the fixed size types e.g `Matrix4d`, `Vector4d`.
   * > Also, make sure you're compiling such that the code can get vectorized; see the [relevant Eigen documentation](http://eigen.tuxfamily.org/index.php?title=FAQ#Vectorization).
