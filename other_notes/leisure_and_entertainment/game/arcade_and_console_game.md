@@ -48,6 +48,8 @@ sm3952414 可能有人看过了,B站上有零零散散的第二部,点击没多�
 
 《魂斗罗》周年纪念合辑清单曝光：包含16款作品 https://hot.cnbeta.com/articles/game/851763.htm
 
+【老E】阴间魂斗罗。鬼才能玩通关的游戏。 https://www.bilibili.com/video/BV1f44y1y7S4
+
 # 双截龙
 
 双截龙2代！控制最终boss吊打第一关boss，这就是最终boss的实力！ https://www.bilibili.com/video/BV1X7411b7dx
