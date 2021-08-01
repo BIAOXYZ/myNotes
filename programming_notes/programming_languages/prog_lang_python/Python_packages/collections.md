@@ -43,7 +43,12 @@ Using the Python defaultdict Type for Handling Missing Keys https://realpython.c
 Python中的defaultdict方法 https://segmentfault.com/a/1190000010081065
 
 python中defaultdict用法详解 https://www.jianshu.com/p/bbd258f99fd3
-- > defaultdict接受一个工厂函数作为参数，这个factory_function可以是list、set、str等等，作用是当key不存在时，返回的是工厂函数的默认值，比如list对应[ ]，str对应的是空字符串，set对应set( )，int对应0，如下举例：
+- > 当我使用普通的字典时，用法一般是 `dict={}`, 添加元素的只需要 `dict[element] = value`，调用的时候也是如此，`dict[element] = xxx`, 但前提是element在字典里，如果不在字典里就会报错，这时 `defaultdict` 就能排上用场了，`defaultdict` 的作用是在于，当字典里的key不存在但被查找时，返回的不是keyError而是一个默认值，这个默认值是什么呢，下面会说
+- > `defaultdict` 接受一个 ***工厂函数作*** 为参数，如下来构造：
+  ```py
+  dict = defaultdict( factory_function )
+  ```
+- 这个 ***factory_function*** 可以是 `list`、`set`、`str` 等等，作用是当key不存在时，返回的是***工厂函数的默认值***，比如 `list` 对应 `[ ]`，`str`对应的是***空字符串***，`set` 对应 `set( )`，`int` 对应 `0`，如下举例：
   ```py
   from collections import defaultdict
   dict1 = defaultdict(int)
@@ -70,7 +75,7 @@ Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
       counter[kw] += 1
   ```
   > 这样写肯定会报错的，因为各词的个数都没有初始值，引发KeyError
-- > 3、再改进：使用`setdefault()`方法设置默认值
+- > 【[:star:][`*`]】 3、再改进：使用 `setdefault()` 方法设置默认值
   ```py
   words = ['hello', 'world', 'nice', 'world']
   counter = dict()
@@ -87,9 +92,37 @@ Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
   ```
 - > 4、接着改进
   >
-  > 一种特殊类型的字典本身就保存了默认值`defaultdict`，`defaultdict`类的初始化函数接受一个类型作为参数，当所访问的键不存在的时候，可以实例化一个值作为默认值。
-  >
-  > 该类除了接受类型名称作为初始化函数的参数之外，还可以使用任何不带参数的可调用函数，到时该函数的返回结果作为默认值，这样使得默认值的取值更加灵活。
+  > 一种特殊类型的字典本身就保存了默认值 `defaultdict()`，`defaultdict` 类的初始化函数接受一个 ***类型*** 作为参数，当所访问的键不存在的时候，可以实例化一个值作为默认值。
+  ```py
+  >>> from collections import defaultdict
+  >>> dd = defaultdict(list)
+  >>> dd
+  defaultdict(<type 'list'>, {})
+  >>> dd['hh']
+  []
+  >>> dd
+  defaultdict(<type 'list'>, {'hh': []})
+  >>> dd['hh'].append('haha')
+  >>> dd
+  defaultdict(<type 'list'>, {'hh': ['haha']})
+  >>> 
+  ```
+  ```py
+  # 这个是个人实战的 Python3 版本的。跟原文里比起来好像只有 `tpye` 和 `class` 的区别。
+  >>> from collections import defaultdict
+  >>> dd = defaultdict(list)
+  >>> dd
+  defaultdict(<class 'list'>, {})
+  >>> dd['hh']
+  []
+  >>> dd
+  defaultdict(<class 'list'>, {'hh': []})
+  >>> dd['hh'].append('haha')
+  >>> dd
+  defaultdict(<class 'list'>, {'hh': ['haha']})
+  >>> 
+  ```
+  > 该类除了接受类型名称作为初始化函数的参数之外，***还可以使用任何不带参数的可调用函数，到时该函数的返回结果作为默认值***，这样使得默认值的取值更加灵活。
   ```py
   >>> from collections import defaultdict
   >>> def zero():
