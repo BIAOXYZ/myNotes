@@ -150,7 +150,7 @@ Defaultdict in Python https://www.geeksforgeeks.org/defaultdict-in-python/
 - > In Dictionary, the key must be unique and immutable. ***This means that a Python `Tuple` can be a key whereas a Python `List` can not***.
 - > Sometimes, when the KeyError is raised, it might become a problem. To overcome this Python introduces another dictionary like container known as Defaultdict which is present inside the collections module. Note: For more information, refer to [Python Dictionary](https://www.geeksforgeeks.org/python-dictionary/).
 - > **DefaultDict**
-- > Defaultdict is a container like [dictionaries](https://www.geeksforgeeks.org/python-dictionary/) present in the module `collections`. Defaultdict is a sub-class of the `dict` class that returns a dictionary-like object. The functionality of both dictionaries and `defualtdict` are almost same except for the fact that `defualtdict` never raises a `KeyError`. It provides a default value for the key that does not exists.
+- > Defaultdict is a container like [dictionaries](https://www.geeksforgeeks.org/python-dictionary/) present in the module `collections`. Defaultdict is a sub-class of the `dict` class that returns a dictionary-like object. The functionality of both dictionaries and `defualtdict` are ***almost same except for the fact that `defualtdict` never raises a `KeyError`***. It ***provides a default value for the key that does not exists***.
   ```py
   from collections import defaultdict
   
