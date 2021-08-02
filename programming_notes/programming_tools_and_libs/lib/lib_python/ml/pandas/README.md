@@ -191,6 +191,8 @@ How are iloc, ix and loc different? https://stackoverflow.com/questions/31593201
 
 ## csv相关
 
+Python pandas read CSV into DataFrame https://pynative.com/python-pandas-read-csv/
+
 使用 Python 读写 CSV 文件（三） - Helperhaps的文章 - 知乎 https://zhuanlan.zhihu.com/p/40946024
 - Pandas 的 Cheat Sheet（中文版） - Helperhaps的文章 - 知乎 https://zhuanlan.zhihu.com/p/39845663
 
