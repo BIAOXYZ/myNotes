@@ -27,6 +27,15 @@ Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio
 
 # vscode快捷键/已验证技巧
 
+## 打开配置文件 `setting.json`
+
+User and Workspace Settings https://code.visualstudio.com/docs/getstarted/settings
+- > **Creating User and Workspace Settings** <br> To open your user and workspace settings, use the following VS Code menu command:
+  ```console
+  On Windows/Linux - File > Preferences > Settings
+  On macOS - Code > Preferences > Settings
+  ```
+
 ## 预览markdown
 
 VS Code 使用小技巧 - 赵吉彤的文章 - 知乎 http://zhuanlan.zhihu.com/p/22880087
