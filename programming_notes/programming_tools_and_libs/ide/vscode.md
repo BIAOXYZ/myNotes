@@ -152,6 +152,10 @@ vscode 跳转到函数之后怎么跳转回之前的位置 https://www.v2ex.com/
 然后里面其实只改了两项"editor.background"和"sideBar.background"似乎就够了。
 ```
 
+## vscode每个工作空间单独主题
+
+Different theme per window in Visual Studio Code https://stackoverflow.com/questions/52514491/different-theme-per-window-in-visual-studio-code || VS Code: different color themes for different projects https://dev.to/mkubdev/visual-studio-code-different-color-themes-for-different-projects-467k
+
 ## vscode连接远程服务器开发
 
 VS Code Remote Development https://code.visualstudio.com/docs/remote/remote-overview
