@@ -106,6 +106,11 @@ ln: "folder1/": 不允许将硬链接指向目录
 总用量 0
 -rw-rw-r--. 1 ssluser ssluser 0 1月  25 18:03 123
 ```
+```sh
+# 个人实战2：
+# 用 snap 装 cmake 完成后，有个攻略里是用这么一句一次创建多个软连接的
+ln -sf /snap/cmake/870/bin/*  /usr/bin/
+```
 
 linux 创建连接命令 ln -s 软链接 https://www.cnblogs.com/kex1n/p/5193826.html
 
