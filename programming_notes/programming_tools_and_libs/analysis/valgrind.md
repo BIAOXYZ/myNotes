@@ -104,6 +104,8 @@ Linux 性能分析valgrind（一）之memcheck使用 - Xin Lee的文章 - 知乎
   重复释放内存
   ```
 
+实例介绍利用valgrind定位内存异常释放问题（double free 和wrong free） https://blog.csdn.net/stpeace/article/details/61624382
+
 C++内存泄漏检查工具——Valgrind（--tool = memcheck） https://www.cnblogs.com/developing/articles/10979109.html
 
 C/C++ 内存泄漏检测工具：Valgrind https://murphypei.github.io/blog/2019/04/valgrind-memory-leaky
