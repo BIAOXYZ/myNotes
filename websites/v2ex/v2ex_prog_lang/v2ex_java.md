@@ -1,4 +1,6 @@
 
+cpu 密集型任务，线程数应该等于核心数还是核心数+1 https://www.v2ex.com/t/793833
+
 帮公司面试了个要 20K 的 Java 程序员，看看我都问他些什么问题 https://www.v2ex.com/t/715867
 ```console
 不废话，直接分享面试视频给大家 B 站： https://www.bilibili.com/video/BV1Xt4y1v7aA/

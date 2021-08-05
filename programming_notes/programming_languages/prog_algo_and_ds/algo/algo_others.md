@@ -40,6 +40,14 @@ QuickSelect Algorithm Understanding https://stackoverflow.com/questions/10846482
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 拓扑排序
+
+**Leetcode题目**：
+- `207. 课程表` https://leetcode-cn.com/problems/course-schedule/
+- `802. 找到最终的安全状态` https://leetcode-cn.com/problems/find-eventual-safe-states/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 数学
 
 原根 https://zh.wikipedia.org/wiki/%E5%8E%9F%E6%A0%B9
