@@ -46,6 +46,10 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
 Common pitfalls https://eigen.tuxfamily.org/dox/TopicPitfalls.html
 - > **Pass-by-value**
   * > If you don't know why passing-by-value is wrong with Eigen, read this [page](https://eigen.tuxfamily.org/dox/group__TopicPassingByValue.html) first.
+  * > Using Eigen types with other third party libraries or even the STL can present the same problem. `boost::bind` for example uses pass-by-value to store arguments in the returned functor. This will of course be a problem.
+  * > There are at least two ways around this:
+    + > If the value you are passing is guaranteed to be around for the life of the functor, you can use `boost::ref()` to wrap the value as you pass it to `boost::bind`. Generally this is not a solution for values on the stack as if the functor ever gets passed to a lower or independent scope, the object may be gone by the time it's attempted to be used.
+    + > The other option is to make your functions take a reference counted pointer like `boost::shared_ptr` as the argument. This avoids needing to worry about managing the lifetime of the object being passed.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

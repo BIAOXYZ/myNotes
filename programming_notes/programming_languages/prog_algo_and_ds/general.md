@@ -69,6 +69,8 @@ Some exercises and problems in Introduction to Algorithms 3rd edition. https://g
 
 ## 2021
 
+《剑指 Offer》作者是如何看待题海战术的？ https://mp.weixin.qq.com/s/BcD2FZ08CiIA3WrZP4xWkA
+
 如何回答面试中的算法复杂度问题？ https://mp.weixin.qq.com/s/B3rkArAd9EX9gryNzS5VKw
 
 面试必考的「矩阵快速幂」考点汇总 https://mp.weixin.qq.com/s/mThDMnrhkK5EBSwgSgSSEA
