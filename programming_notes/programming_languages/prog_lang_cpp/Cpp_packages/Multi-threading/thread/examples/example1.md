@@ -110,6 +110,11 @@ C++11 线程管理 https://www.jianshu.com/p/409e6ceb5315
 ```cpp
 // func第一个vector参数如果是传值的方式，下面的代码没问题。
 
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <algorithm>
+using namespace std;
 void func(vector<int> v, size_t start, size_t n, int* maxElem) {
     vector<int>::iterator maxElemIterator = max_element(v.begin() + start, v.begin() + start + n);
     *maxElem = *maxElemIterator;
@@ -151,6 +156,11 @@ max value in this scope is: 12
 // 但是只要稍加修改，func第一个vector参数如果变成传引用的方式，上面的代码就不行了。
 // 必须把 main 函数里 thread 里传的参数从 v 变成 std::ref(v)。
 
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <algorithm>
+using namespace std;
 void func(vector<int>& v, size_t start, size_t n, int* maxElem) {
     vector<int>::iterator maxElemIterator = max_element(v.begin() + start, v.begin() + start + n);
     *maxElem = *maxElemIterator;
@@ -192,6 +202,11 @@ max value in this scope is: 12
 // 1.基本类型（如int）也可以在 func 里用引用方式，相应的 main 里给它传参的地方要用 std::ref。
 // 2.传参如果是非引用的，实际传递时用 std::ref 包起来同样没问题。
 
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <algorithm>
+using namespace std;
 void func(vector<int> v, size_t start, size_t n, int& maxElem) {
     vector<int>::iterator maxElemIterator = max_element(v.begin() + start, v.begin() + start + n);
     maxElem = *maxElemIterator;
@@ -210,8 +225,8 @@ int main() {
     t2.join();
     std::thread t3(func, std::ref(v), 8, 4, std::ref(max3));
     t3.join();
+    
     std::cout << max(max(max1, max2), max3) << "\n";
-
     return 0;
 }
 //////////////////////////////////////////////////

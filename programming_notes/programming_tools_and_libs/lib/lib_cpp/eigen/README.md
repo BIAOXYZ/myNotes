@@ -30,9 +30,22 @@ Chapters https://eigen.tuxfamily.org/dox/modules.html
   * Block operations https://eigen.tuxfamily.org/dox/group__TutorialBlockOperations.html || https://github.com/qixianyu-buaa/EigenChineseDocument/blob/master/Eigen/Chapter1_DenseMatrixAndArrary/Section4_BlockOperations.hpp
   * Alignment issues https://eigen.tuxfamily.org/dox/group__DenseMatrixManipulation__Alignement.html
     + Using STL Containers with Eigen https://eigen.tuxfamily.org/dox/group__TopicStlContainers.html
-    + Passing Eigen objects by value to functions https://eigen.tuxfamily.org/dox/group__TopicPassingByValue.html
+    + 【[:star:][`*`]】 Passing Eigen objects by value to functions https://eigen.tuxfamily.org/dox/group__TopicPassingByValue.html
       - > ***Passing objects by value is almost always a very bad idea in C++, as this means useless copies, and one should pass them by reference instead***.
       - > With Eigen, this is even more important: passing fixed-size vectorizable Eigen objects by value is ***not only inefficient, it can be illegal or make your program crash!*** And the reason is that these Eigen objects have alignment modifiers that aren't respected when they are passed by value.
+      - > So for example, a function like this, where `v` is passed by value:
+        ```cpp
+        void my_function(Eigen::Vector2d v);
+        ```
+      - > needs to be rewritten as follows, passing `v` by reference:
+        ```cpp
+        void my_function(const Eigen::Vector2d& v);
+        ```
+      - > Note that on the other hand, there is ***no problem with functions that return objects by value***.
+
+Common pitfalls https://eigen.tuxfamily.org/dox/TopicPitfalls.html
+- > **Pass-by-value**
+  * > If you don't know why passing-by-value is wrong with Eigen, read this [page](https://eigen.tuxfamily.org/dox/group__TopicPassingByValue.html) first.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -183,6 +196,14 @@ https://sites.google.com/site/alexeyvakimov/mini-tutorials/programming-boost-pyt
   $ make install
   ```
   > When you go back to your Eigen root directory, you will see that the "_install" directory has been created.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Eigen and multi-thread
+
+Eigen and multi-threading https://eigen.tuxfamily.org/dox/TopicMultiThreading.html
+
+TensorFlow源码分析（6）：Eigen的Simple Thread Pool实现原理 https://blog.csdn.net/hedan2013/article/details/103807170
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
