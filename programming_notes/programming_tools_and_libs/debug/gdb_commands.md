@@ -343,30 +343,6 @@ http://blog.csdn.net/yasi_xi/article/details/40075267
 << gdb signal >>
 http://blog.csdn.net/maotianwang/article/details/21451271
 
-### GDB的set用法
-
-follow-fork-mode的用法为：
-```
-set follow-fork-mode [parent|child]
-```
-parent: fork之后继续调试父进程，子进程不受影响。
-child: fork之后调试子进程，父进程不受影响。
-因此如果需要调试子进程，在启动gdb后：set follow-fork-mode child
-
-此外还有：
-```
-set detach-on-fork [on|off]
-```
-on: 断开调试follow-fork-mode指定的进程。
-off: gdb将控制父进程和子进程。follow-fork-mode指定的进程将被调试，另一个进程置于暂停（suspended）状态。
-
-线程跳转吧？？锁定线程
-```
-set scheduler-locking on
-```
-
-GDB调试多线程和多进程(三)：调试多进程应用 https://www.bilibili.com/video/BV1Y4411m7Z5/
-
 ### GDB插件
 
 http://blog.csdn.net/gatieme/article/details/63254211
@@ -388,56 +364,6 @@ https://www.zhihu.com/question/57574574
 gdb Debugging Full Example (Tutorial): ncurses - ETIN的文章 - 知乎
 http://zhuanlan.zhihu.com/p/28769268
 > gdb 调试入门，大牛写的高质量指南 http://blog.jobbole.com/107759/
-
-### GDB多进程多线程调试
-
-gdb thread https://www.jianshu.com/p/d8c6ebcaa7be
-- > `set scheduler-locking off|on|step` 估计是实际使用过多线程调试的人都可以发现，在使用step或者continue命令调试当前被调试线程的时候，其他线程也是同时执行的，怎么只让被调试程序执行呢？通过这个命令就可以实现这个需求。`off` 不锁定任何线程，也就是所有线程都执行，这是默认值。`on` 只有当前被调试程序会执行。`step` 在单步的时候，除了next过一个函数的情况(熟悉情况的人可能知道，这其实是一个设置断点然后continue的行为)以外，只有当前线程会执行。
-- > 线程产生通知：在产生新的线程时, gdb会给出提示信息
-  ```console
-  (gdb) r
-  Starting program: /root/thread
-  [New Thread 1073951360 (LWP12900)]
-  [New Thread 1082342592 (LWP 12907)]---以下三个为新产生的线程
-  [New Thread 1090731072 (LWP 12908)]
-  [New Thread 1099119552 (LWP 12909)]
-  ```
-- > 一般情况下多线程的时候, 由于是同时运行的, 最好设置 `set scheduler-locking on` 这样的话,只调试当前线程
-
-GDB调试多线程及多进程 https://ivanzz1001.github.io/records/post/cplusplus/2018/08/19/cpluscplus-gdbusage_part2
-
-GDB 调试多进程或者多线程应用 https://blog.csdn.net/gatieme/article/details/78309696
-- > 考虑下面这个三进程系统 :
-- > 进程 `ProcessChild` 是 `ProcessParent` 的子进程, `ProcessParentThread` 又是 `ProcParent` 的子线程. 如何使用 GDB 调试 `子进程 ProcessChild` 或者 `子线程 ProcessParentThread` 呢 ?
-- > 实际上, GDB 没有对多进程程序调试提供直接支持. 例如, 使用 GDB 调试某个进程, 如果该进程 `fork` 了子进程, GDB 会继续调试该进程, 子进程会不受干扰地运行下去. 如果你事先在子进程代码里设定了断点, 子进程会收到 `SIGTRAP` 信号并终止. 那么该如何调试子进程呢? 其实我们可以利用 GDB 的特点或者其他一些辅助手段来达到目的. 此外, GDB 也在较新内核上加入一些多进程调试支持.
-- > 接下来我们详细介绍几种方法, 分别是 `follow-fork-mode` 方法, `attach` 子进程方法和 `GDB wrapper` 方法.
-- > 1.1 follow-fork-mode方法简介
-  * > 默认设置下, 在调试多进程程序时 GDB 只会调试主进程. 但是 GDB > V7.0 支持多进程的分别以及同时调试, 换句话说, GDB 可以同时调试多个程序. 只需要设置 `follow-fork-mode` (默认值 `parent`) 和 `detach-on-fork` (默认值 `on` )即可.
-
-| follow-fork-mode | detach-on-fork | 说明 |
-|:--:|:--:|:--:|
-| parent | on | 只调试主进程( `GDB` 默认) |
-| child | on | 只调试子进程 |
-| parent | off | 同时调试两个进程, `gdb` 跟主进程, 子进程 `block` 在 `fork` 位置 |
-| child | off | 同时调试两个进程, `gdb` 跟子进程, 主进程 `block` 在 `fork` 位置 |
-
-gdb调试多进程和多线程命令
-http://blog.csdn.net/pbymw8iwm/article/details/7876797
-
-linux gdb-多线程调试
-http://blog.csdn.net/lhl_blog/article/details/8888010
-
-使用 GDB 调试多进程程序
-https://www.ibm.com/developerworks/cn/linux/l-cn-gdbmp/index.html
-
-
-***旧的:***
-
-fork 多进程调试
-http://blog.csdn.net/fingding/article/details/46459095
-
-用gdb调试程序的子进程
-http://blog.csdn.net/cjfeii/article/details/21647663
 
 ## 其他参考链接：
 
@@ -482,49 +408,6 @@ gdb加载调试符号（符号表) https://blog.csdn.net/weixin_45375062/article
 gdb 调试总结 https://markrepo.github.io/tools/2018/06/22/gdb/
 
 GDB命令基础，让你的程序bug无处躲藏 https://deepzz.com/post/gdb-debug.html
-
-### 调试 coredump 文件
-
-<<详解coredump>> http://blog.csdn.net/tenfyguo/article/details/8159176
-- > core文件默认的存储位置与对应的可执行程序在同一目录下，文件名是core，大家可以通过下面的命令看到core文件的存在位置：
-  ```sh
-  cat /proc/sys/kernel/core_pattern
-  ```
-  > 缺省值是 `core` 
-  >> //notes：个人补充：有的时候系统默认值不是 `core`，比如，见过默认值是这个的： `|/etc/sysop/coredump/bin/coredump_handler %P %t %E` --> 我也不知道前面那个竖线是什么意思，但是确定能在那个目录下正确生成core文件。
-  >>> //notes2：很多时候我们只需要一个core dump文件调试就够了，此时用语句 `echo "core" > /proc/sys/kernel/core_pattern` 设置成默认就行。
-  >>>> //notes3：不过如果都走到这一步了，何不再加上`程序名`、`时间`、`进程ID`之类的信息呢？其实只需要稍复杂一点点就可以了，如下两个语句效果是等价的：
-  ```sh
-  $ echo "./core.%e.%t.%p" > /proc/sys/kernel/core_pattern
-  $ cat /proc/sys/kernel/core_pattern
-  ./core.%e.%t.%p
-  $ 
-  $ echo "core.%e.%t.%p" > /proc/sys/kernel/core_pattern
-  $ cat /proc/sys/kernel/core_pattern
-  core.%e.%t.%p
-  $
-  ```
-- > 1.产生coredump的条件，首先需要确认当前会话的 `ulimit –c`，若为0，则不会产生对应的coredump，需要进行修改和设置。
-  ```sh
-  ulimit  -c unlimited
-  ```
-- > 3.Core_pattern的格式
-  ```console
-  可以在core_pattern模板中使用变量还很多，见下面的列表：
-  %% 单个%字符
-  %p 所dump进程的进程ID
-  %u 所dump进程的实际用户ID
-  %g 所dump进程的实际组ID
-  %s 导致本次core dump的信号
-  %t core dump的时间 (由1970年1月1日计起的秒数)
-  %h 主机名
-  %e 程序文件名
-  ```
-- //notes：另外补充一下——当core文件生成后，调试core文件的命令是：`gdb 程序文件名 core文件名`。对于带参数的情形，应该是用：`gdb --args 程序文件名 参数列表 core文件名`。
-
-gdb调试coredump(使用篇) http://blog.csdn.net/sunxiaopengsun/article/details/72974548
-
-Linux生成core文件、core文件路径设置 https://blog.csdn.net/u011417820/article/details/71435031
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
