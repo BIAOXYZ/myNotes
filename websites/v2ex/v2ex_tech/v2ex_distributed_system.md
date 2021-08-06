@@ -1,4 +1,9 @@
 
+用 Python 轻松完成一个分布式事务 TCC，保姆级教程 https://www.v2ex.com/t/794155
+```console
+阅读完此篇干货，欢迎大家访问 https://github.com/yedf/dtm
+```
+
 Paxos 的变种（一）： Multi-Paxos 是如何劝退大家去选择 Raft 的 https://www.v2ex.com/t/716187
 ```console
 博客地址： http://tangwz.com/post/multi-paxos/
