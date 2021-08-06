@@ -43,6 +43,8 @@
 
 北京丰台区在北京市是怎么样的存在？ - 知乎 https://www.zhihu.com/question/30422287
 
+北京有「东富西贵南贫北贱」的说法，来源是什么？ - 知乎 https://www.zhihu.com/question/38028815
+
 800万的预算，请问买丰台五小的学区房合适吗？ - 知乎 https://www.zhihu.com/question/463350561
 
 2021年北京买房总价400万内，是买海淀一居室还是丰台两居室？ - 知乎 https://www.zhihu.com/question/437367969
