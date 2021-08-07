@@ -68,6 +68,10 @@
 
 # from 饭总选房
 
+## 2021.08
+
+7月北京新房成交排名：海淀幸福里成交第一！ https://mp.weixin.qq.com/s/5adHj9Hqlbra4HKUTPeBJw
+
 ## 2021.07
 
 劲爆！北京下半年还有8个临地铁刚需盘将入市（下篇） https://mp.weixin.qq.com/s/EEWsWz0NlWxG9t04ubbAtw || https://new.qq.com/omn/20210704/20210704A02T6X00.html
