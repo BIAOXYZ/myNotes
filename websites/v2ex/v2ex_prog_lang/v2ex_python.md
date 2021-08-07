@@ -1,4 +1,14 @@
 
+在 Python 中如何放置一个钩子劫持接下来发生的标准输出？ https://www.v2ex.com/t/794208
+- > 
+  ```py
+  from unittest.mock import patch
+  _print = print
+  with patch('builtins.print') as mock:
+  mock.side_effect = lambda x: _print("whatever you want")
+  import a
+  ```
+
 Python 起多个线程会充分用到多核 cpu 的资源吗 https://www.v2ex.com/t/788109
 - > CPython 不会，应该有 Global Interpreter Lock ( https://realpython.com/python-gil/ )。对于衍生品如 pypy，则可以。对于 CPython，多核的利用是利用子进程。
 - > python(cpython) 多进程会利用多核，多线程不行，默认的 pypy 也一样，好像 pypy 有个 no gil 的实验版
