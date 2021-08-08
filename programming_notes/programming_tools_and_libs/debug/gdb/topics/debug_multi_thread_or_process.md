@@ -64,6 +64,12 @@ http://blog.csdn.net/lhl_blog/article/details/8888010
 使用 GDB 调试多进程程序
 https://www.ibm.com/developerworks/cn/linux/l-cn-gdbmp/index.html
 
+# 第二批
+
+gdb的多线程调试 https://www.cnblogs.com/the-capricornus/p/10059223.html
+- > 在开始之前先说一些技巧吧：
+  * > 1 如果你在程序没运行前想设置 `scheduler-locking` 的状态，总是给出如下的提示：`Target 'exec' cannot support this command.` <br> 那你可以先在 main 函数处打个断点，break main ，等待运行后停在断点处，再执行你的设置。其实可以在任何断点停住的地方进行设置。
+
 # 旧的
 
 fork 多进程调试

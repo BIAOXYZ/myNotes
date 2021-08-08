@@ -13,6 +13,8 @@ C++ 多线程 报错invalid use of non-static member function https://blog.csdn.
 
 invalid use of non-static member function [duplicate] https://stackoverflow.com/questions/29286863/invalid-use-of-non-static-member-function
 
+使用C++实现线程池报错，std::thread https://segmentfault.com/q/1010000004413576
+
 ## 延伸
 
 Start thread with member function https://stackoverflow.com/questions/10673585/start-thread-with-member-function
