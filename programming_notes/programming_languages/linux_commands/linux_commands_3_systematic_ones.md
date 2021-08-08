@@ -271,3 +271,9 @@ harbor2:~ # /sbin/ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | awk '{print $
 How to configure swappiness in Linux Memory Management? https://unix.stackexchange.com/questions/265713/how-to-configure-swappiness-in-linux-memory-management
 
 Linux下设置swappiness参数来配置内存使用到多少才开始使用swap分区（转） https://www.cnblogs.com/EasonJim/p/7777904.html
+
+## linux时间
+
+linux中文件的三种time（atime,mtime,ctime） https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_031_linuxtime.html
+
+计算机时间到底是怎么来的？程序员必看的时间知识！ https://mp.weixin.qq.com/s/CWJ5axuD5JJVC4tBxf2FBQ

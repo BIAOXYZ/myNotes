@@ -70,6 +70,8 @@
 
 ## 2021.08
 
+啥神仙户型，预算上千万的购房者看了不想走？ https://mp.weixin.qq.com/s/_Opf2ABu3BXiHV2g_TBINA
+
 7月北京新房成交排名：海淀幸福里成交第一！ https://mp.weixin.qq.com/s/5adHj9Hqlbra4HKUTPeBJw
 
 ## 2021.07
