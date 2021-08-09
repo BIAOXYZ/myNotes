@@ -26,3 +26,10 @@ C++11 : Start thread by member function with arguments https://thispointer.com/c
 c++ thread 带参数编译错误：/usr/include/c++/4.8/functional:1697:61: error: no type named ‘type’ in ‘class st https://blog.csdn.net/Jack_Zhao_/article/details/88820910
 - c++: error: no type named ‘type’ in `‘class std::result_of<void (*(std::unordered_map` https://stackoverflow.com/questions/28950835/c-error-no-type-named-type-in-class-stdresult-ofvoid-stdunordered
 - 使用C++实现线程池报错，std::thread https://segmentfault.com/q/1010000004413576
+
+# `terminate called without an active exception`
+
+std::thread “terminate called without an active exception” https://blog.csdn.net/github_20066005/article/details/79999530
+- > 原因是主线程在任务线程还没有执行完成就退出了，销毁了一些资源，导致任务线程就异常了。要修复这个问题也很简单，就是调用join，等待子线程执行完成，代码如下：
+
+C++ Thread: terminate called without an active exception https://stackoverflow.com/questions/37024545/c-thread-terminate-called-without-an-active-exception
