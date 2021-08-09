@@ -1,4 +1,6 @@
 
+用 Go 轻松完成一个 TCC 分布式事务，保姆级教程 https://www.v2ex.com/t/794530
+
 用 Python 轻松完成一个分布式事务 TCC，保姆级教程 https://www.v2ex.com/t/794155
 ```console
 阅读完此篇干货，欢迎大家访问 https://github.com/yedf/dtm

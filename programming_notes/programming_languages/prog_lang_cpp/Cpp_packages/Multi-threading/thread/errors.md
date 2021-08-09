@@ -29,7 +29,11 @@ c++ thread 带参数编译错误：/usr/include/c++/4.8/functional:1697:61: erro
 
 # `terminate called without an active exception`
 
+C++ terminate called without an active exception https://newbedev.com/c-terminate-called-without-an-active-exception
+
 std::thread “terminate called without an active exception” https://blog.csdn.net/github_20066005/article/details/79999530
 - > 原因是主线程在任务线程还没有执行完成就退出了，销毁了一些资源，导致任务线程就异常了。要修复这个问题也很简单，就是调用join，等待子线程执行完成，代码如下：
 
 C++ Thread: terminate called without an active exception https://stackoverflow.com/questions/37024545/c-thread-terminate-called-without-an-active-exception
+
+C++ terminate called without an active exception https://stackoverflow.com/questions/7381757/c-terminate-called-without-an-active-exception
