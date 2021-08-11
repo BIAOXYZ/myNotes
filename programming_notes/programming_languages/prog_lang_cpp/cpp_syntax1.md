@@ -106,3 +106,17 @@ C++将变量名转换为字符串 https://blog.csdn.net/qq_33670157/article/deta
 C++头文件定义类的方法 https://blog.csdn.net/qq_35779286/article/details/94169434
 
 c++中带多个默认参数值的构造函数,输入部分参数,如何得到想要的结果? - 知乎 https://www.zhihu.com/question/52259368
+
+What is 1LL or 2LL in C and C++? https://stackoverflow.com/questions/16248221/what-is-1ll-or-2ll-in-c-and-c
+- https://stackoverflow.com/questions/16248221/what-is-1ll-or-2ll-in-c-and-c/16248227#16248227
+  * > The `LL` makes the integer literal of type `long long`. So `2LL`, is a 2 of type `long long`. Without the `LL`, the literal would only be of type `int`.
+  * > This matters when you're doing stuff like this:
+    ```cpp
+    1   << 40
+    1LL << 40
+    ```
+  * > With just the literal `1`, (assuming `int` to be 32-bits, you shift beyond the size of the integer type -> undefined behavior). With `1LL`, you set the type to `long long` before hand and now it will properly return 2^40.
+  * 回复：
+    + > `long long` was added to the latest C++ standard, I believe. That said, it doesn't matter if you use uppercase `L` or lowercase `l`. Further, there's `u` or `U` for `unsigned` to combine with them.
+    + > You are correct. `long long` is an official type in C++11 with at least 64 bits.
+    + > Well, it matters for human readability: `11LL` is easier to read than `11ll`. 
