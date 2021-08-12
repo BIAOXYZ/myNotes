@@ -28,3 +28,29 @@
 > `汇编器`和`链接器`的出现大大提高了编程效率，降低了编程和维护的难度。但是人们对汇编语言的能力并不满足，有人设想要是能像写数学公式那样对计算机编程就太方便了，于是就出现了如今形形色色的高级编程语言。这样就面临与当初汇编器产生时同样的问题——***如何将高级语言翻译为汇编语言，这正是`编译器`所做的工作***。编译器比汇编器复杂得多。汇编语言的语法比较单一，它与机器语言有基本的对应关系。而高级语言形式比较自由，计算机识别高级语言的含义比较困难，而且它的语句翻译为汇编语言序列时有多种选择，如何选择更好的序列作为翻译结果也是比较困难的，不过最终这些问题都得以解决。
 
 ## 1.3 GCC的工作流程
+> 我们写一个最简单的“HelloWorld”程序，代码存储在源文件`hello.c`中，源文件内容如下：
+```c
+#include<stdio.h>
+int main()
+{
+    printf("Hello World!");
+    return 0;
+}
+```
+> 如果将`hello.c`编译并静态链接为可执行文件，使用如下gcc命令直接编译即可：`$gcc hello.c –o hello -static` —— `hello`即编译后的可执行文件。
+>
+> 如果查看GCC背后的工作流程，可以使用`--verbose`选项。 `$gcc hello.c -o hello -static --verbose` 输出的信息如下：
+```sh
+$cc1 -quiet hello.c -o hello.s
+$as -o hello.o hello.s
+$collect2 -static -o hello \
+    crt1.o crti.o crtbeginT.o hello.o \
+    --start-group libgcc.a libgcc_eh.a libc.a --end—group \
+    crtend.o crtn.o
+```
+> 为了保持输出信息的简洁，这里对输出信息进行了整理。可以看出，GCC编译背后使用了 **`cc1`、`as`、`collect2`** 三个命令。其中 **`cc1`** 是`GCC的编译器`，它将`源文件hello.c`编译为`hello.s`。**`as`** 是`汇编器命令`，它将`hello.s`汇编为`hello.o目标文件`。**`collect2`** 是`链接器命令`，它是对命令`ld`的封装。静态链接时，GCC将`C语言运行时库（CRT）`内的 ***5个重要的`目标文件`*** `crt1.o`、`crti.o`、`crtbeginT.o`、`crtend.o`、`crtn.o`以及 ***3个`静态库`*** `libgcc.a`、`libgcc_eh.a`、`libc.a`链接到`可执行文件hello`。此外，`cc1`在对源文件编译之前，还有预编译的过程。
+> 
+> 因此，我们从`预编译`、`编译`、`汇编`和`链接`四个阶段查看GCC的工作细节。
+
+### 1.3.1 预编译
+ 
