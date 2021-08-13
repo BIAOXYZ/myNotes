@@ -27,11 +27,11 @@ Contents
 
 ## 1.1. Logical Structure of Database Cluster || 1.1 数据库集簇的逻辑结构
 
-> A **database cluster** is a collection of *databases* managed by a ***`PostgreSQL server`***.
+> A **database cluster** is a collection of *databases* managed by a ***`PostgreSQL server`***. || `数据库集簇（database cluster）是一组数据库（database）的集合，由一个PostgreSQL服务器管理。`
 
-> A database is a collection of ***`database objects`***. In the relational database theory, a database object is a data structure used either to store or to reference data. A ***(heap) table*** is a typical example of it, and there are many more like an ***index***, a ***sequence***, a ***view***, a ***function*** and so on. In PostgreSQL, databases themselves are also database objects and are logically separated from each other. 
+> A database is a collection of ***`database objects`***. In the relational database theory, a database object is a data structure used either to store or to reference data. A ***(heap) table*** is a typical example of it, and there are many more like an ***index***, a ***sequence***, a ***view***, a ***function*** and so on. In PostgreSQL, databases themselves are also database objects and are logically separated from each other. || `数据库是数据库对象（database object）的集合。在关系型数据库理论中，数据库对象用于存储或引用数据的数据结构。（堆）表就是一个典型的例子，还有更多对象，例如索引、序列、视图、函数等。在PostgreSQL中，数据库本身也是数据库对象，并在逻辑上彼此分离。所有其他的数据库对象（例如表、索引等）都归属于各自相应的数据库。`
 
-> All the database objects in PostgreSQL are internally managed by respective **object identifiers (OIDs)**, which are ***unsigned 4-byte integers***. The relations ***between database objects and the respective OIDs*** are stored in appropriate [`system catalogs`](https://www.postgresql.org/docs/current/catalogs.html), depending on the type of objects. For example, OIDs of databases and heap tables are stored in *pg_database* and *pg_class* respectively, so ***you can find out the OIDs you want to know*** by issuing the queries such as the following: 
+> All the database objects in PostgreSQL are internally managed by respective **object identifiers (OIDs)**, which are ***unsigned 4-byte integers***. The relations ***between database objects and the respective OIDs*** are stored in appropriate [`system catalogs`](https://www.postgresql.org/docs/current/catalogs.html), depending on the type of objects. For example, OIDs of databases and heap tables are stored in *pg_database* and *pg_class* respectively, so ***you can find out the OIDs you want to know*** by issuing the queries such as the following: || `在PostgreSQL内部，所有的数据库对象都通过相应的对象标识符（object identifier，oid）进行管理，这些标识符是无符号的 4 字节整型。数据库对象与相应 oid 之间的关系存储在对应的系统目录中，依具体的对象类型而异。例如数据库和堆表对象的 oid 分别存储在 pg_database 和 pg_class 中，因此，当你希望找出 oid 时，可以执行以下查询：`
 ```sql
 sampledb=# SELECT datname, oid FROM pg_database WHERE datname = 'sampledb';
  datname  |  oid  
