@@ -34,6 +34,26 @@
 
 # 在线工具/环境
 
+GitHub 的 Codespaces 的实际付费体验如何? https://www.v2ex.com/t/795317 【***这两个帖子都是用在线的 github dev 的方式更新的***～】
+- > github.dev 是免费的，Codespaces 是收费的 https://twitter.com/ItalyPaleAle/status/1425575850716635136
+  >> github.dev 就跳转到 https://github.com/features/codespaces Try Codespaces today in free trial until September 10, 2021 <br> 自己搭个 code-server
+  >>> 你得打开一个 github repo 然后把 .com 改成 .dev
+
+GitHub 增加了 github1s 这样的功能 https://www.v2ex.com/t/795218  【***这两个帖子都是用在线的 github dev 的方式更新的***～】
+```console
+github1s： https://v2ex.com/t/752197
+
+现在可以直接按句号触发。 https://twitter.com/github/status/1425505817827151872
+```
+- > GitHub 官方的这个 vs code 可以直接编辑了
+- > 官方压死同人作啊, 心疼 github1s 一秒钟
+- > 好家伙,直接默认登录了我 github 的账号,默认把 vscode 的配置同步过来了
+- > 太赞了，还可以使用 vscode 快捷键
+- > 我在想 gitpod 这个商业公司该怎么办
+- > 阿里也有个 DevStudio，也是定制化的 code-server 。支持打开 codeup 项目。缺点 跟正常 vscode 有一定区别，而且会话结束后 插件、快捷键 全部重置。 https://ide.aliyun.com/
+- > 哇哦，配置和本地的 VS Code 可以同步
+- > 项目首页敲击英文键盘 `.` 符号就可以进入编辑器。注意：键盘要切换到英文模式下 或者将 .com 改成 .dev 同样效果
+
 受到启发，实现了在浏览器用 VSCode 编辑并提交变更到 GitHub https://www.v2ex.com/t/754172
 ```console
 使用方式
