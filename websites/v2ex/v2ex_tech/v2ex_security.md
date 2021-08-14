@@ -1,4 +1,6 @@
 
+chacha20ploy1305 和 aes128gcm 那种加密算法更安全 https://www.v2ex.com/t/795784
+
 关于 RSA 算法的疑问 https://www.v2ex.com/t/793223
 ```console
 关于 RSA 算法的疑问：网上很多 RSA 的证明都是基于欧拉定理
