@@ -77,10 +77,10 @@ int main()
 > 我们可以将预编译的工作简单地理解为源码的文本替换，即将宏定义的内容替换到宏的引用位置。当然，这样理解有一定的片面性，因为要考虑宏定义中使用其他宏的情况。事实上预编译器的实现机制和编译器有着很大的相似性，因此本书描述的编译系统将重点放在源代码的编译上，不再独立实现预编译器。然而，我们需要清楚的事实是：一个完善的编译器是需要预编译器的。
 
 ### 1.3.2 编译
-> 接下来GCC对`hello.i`进行编译，命令如下：`$gcc  –S  hello.i  –o  hello.s`
+> 接下来GCC对`hello.i`进行编译，命令如下：`$gcc  -S  hello.i  -o  hello.s`
 >
 > 编译后产生的汇编文件`hello.s`内容如下：
-```
+```asm
 .file               "hello.c"
 .section           .rodata
 .LC0:
@@ -107,3 +107,40 @@ main:
 > GCC生成的汇编代码的语法是`AT&T格式`，与`Intel格式`的汇编有所不同（若要生成Intel格式的汇编代码，使用编译选项“`-masm=intel`”即可）。比如立即数用“`$`”前缀，寄存器用“`%`”前缀，内存寻址使用小括号等。区别最大的是，`AT&T汇编`指令的源操作数在前，目标操作数在后，这与`Intel汇编`语法正好相反。本书会在后续章节中详细描述这两种汇编语法格式的区别。
 > 
 > 不过我们仍能从中发现高级语言代码中传递过来的信息，比如字符串“Hello World!”、主函数名称main、***函数调用call printf***等。
+
+### 1.3.3 汇编
+> 接着，GCC使用汇编器对`hello.s`进行汇编，命令如下： `$gcc  -c  hello.s  -o  hello.o`
+> 
+> 生成的目标文件`hello.o`, Linux下称之为 ***`可重定位目标文件`***。目标文件无法使用文本编辑器直接查看，但是我们可以使用GCC自带的工具`objdump`命令分析它的内容，命令格式如下：`$objdump  -sd  hello.o`
+> 
+> 输出目标文件的主要段的内容与`反汇编代码`如下：
+```console
+hello.o:      file  format  elf32-i386
+
+Contents  of  section  .text:
+ 0000   5589e583   e4f083ec   10b80000   00008904   U...............
+ 0010   24e8fcff   ffffb800   000000c9   c3            $............
+Contents  of  section  .rodata:
+ 0000   48656c6c   6f20576f   726c6421   00            Hello  World! .
+Contents  of  section  .comment:
+ 0000   00474343   3a202855   62756e74   752f4c69   .GCC:  (Ubuntu/Li
+ 0010   6e61726f   20342e34   2e342d31   34756275   naro  4.4.4-14ubu
+ 0020   6e747535   2920342e   342e3500                 ntu5)  4.4.5.
+
+Disassembly  of  section  .text:
+
+00000000  <main>:
+    0:        55                                push        %ebp
+    1:        89  e5                            mov         %esp, %ebp
+    3:        83  e4  f0                        and         $0xfffffff0, %esp
+    6:        83  ec  10                        sub         $0x10, %esp
+    9:        b8  00  00  00  00                mov         $0x0, %eax
+    e:        89  04  24                        mov         %eax, (%esp)
+   11:        e8  fc  ff  ff  ff                call        12  <main+0x12>
+   16:        b8  00  00  00  00                mov         $0x0, %eax
+   1b:        c9                                leave
+   1c:        c3                                ret
+```
+> 从 ***`数据段`二进制信息的ASCII形式*** 的显示中，我们看到了汇编语言内定义的字符串数据“Hello World!”。***`代码段`*** 的信息和汇编文件代码信息基本吻合，但是我们发现了很多不同之处。比如汇编文件内的指令`“movl $.LC0, %eax”`中的符号．LC0的地址（字符串“Hello World!”的地址）被换成了0。指令“call printf”内符号printf的相对地址被换成了0xfffffffc，即call指令操作数部分的起始地址。
+> 
+> 这些区别本质来源于汇编语言符号的引用问题。***由于汇编器在处理当前文件的过程中无法获悉符号的虚拟地址，因此临时将这些符号地址设置为默认值0，真正的符号地址只有在链接的时候才能确定***。

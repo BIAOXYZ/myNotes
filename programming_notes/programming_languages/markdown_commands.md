@@ -7,6 +7,12 @@
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+创建和突显代码块 https://docs.github.com/cn/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks
+- > 我们使用 Linguist 来执行语言检测并选择第三方语法进行语法突显。 您可以在语言 YAML 文件中找出哪些关键词有效。
+  * https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
+- > 延伸阅读: GitHub Flavored Markdown 规格
+  * > https://github.github.com/gfm/
+
 GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/article/details/23690801
 - EMOJI CHEAT SHEET https://www.webpagefx.com/tools/emoji-cheat-sheet/
 - https://github.com/guodongxiaren/README/blob/master/emoji.md
