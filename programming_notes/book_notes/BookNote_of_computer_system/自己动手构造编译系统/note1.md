@@ -39,9 +39,9 @@ int main()
     return 0;
 }
 ```
-> 如果将`hello.c`编译并静态链接为可执行文件，使用如下gcc命令直接编译即可：`$gcc hello.c –o hello -static` —— `hello`即编译后的可执行文件。
+> 如果将`hello.c`编译并静态链接为可执行文件，使用如下gcc命令直接编译即可：***`$gcc hello.c –o hello -static`*** —— `hello`即编译后的可执行文件。
 >
-> 如果查看GCC背后的工作流程，可以使用`--verbose`选项。 `$gcc hello.c -o hello -static --verbose` 输出的信息如下：
+> 如果查看GCC背后的工作流程，可以使用`--verbose`选项。 ***`$gcc hello.c -o hello -static --verbose`*** 输出的信息如下：
 ```sh
 $cc1 -quiet hello.c -o hello.s
 $as -o hello.o hello.s
@@ -55,7 +55,7 @@ $collect2 -static -o hello \
 > 因此，我们从`预编译`、`编译`、`汇编`和`链接`四个阶段查看GCC的工作细节。
 
 ### 1.3.1 预编译
-> GCC对源文件的第一阶段的处理是预编译，***主要是处理宏定义和文件包含等信息***。命令格式如下： `$gcc -E hello.c -o hello.i`
+> GCC对源文件的第一阶段的处理是预编译，***主要是处理宏定义和文件包含等信息***。命令格式如下： ***`$gcc -E hello.c -o hello.i`***
 >
 > 预编译器将`hello.c`处理后输出到文件`hello.i`, `hello.i`文件内容如下：
 ```console
@@ -77,7 +77,7 @@ int main()
 > 我们可以将预编译的工作简单地理解为源码的文本替换，即将宏定义的内容替换到宏的引用位置。当然，这样理解有一定的片面性，因为要考虑宏定义中使用其他宏的情况。事实上预编译器的实现机制和编译器有着很大的相似性，因此本书描述的编译系统将重点放在源代码的编译上，不再独立实现预编译器。然而，我们需要清楚的事实是：一个完善的编译器是需要预编译器的。
 
 ### 1.3.2 编译
-> 接下来GCC对`hello.i`进行编译，命令如下：`$gcc  -S  hello.i  -o  hello.s`
+> 接下来GCC对`hello.i`进行编译，命令如下： ***`$gcc -S hello.i -o hello.s`***
 >
 > 编译后产生的汇编文件`hello.s`内容如下：
 ```asm
@@ -109,9 +109,9 @@ main:
 > 不过我们仍能从中发现高级语言代码中传递过来的信息，比如字符串“Hello World!”、主函数名称main、***函数调用call printf***等。
 
 ### 1.3.3 汇编
-> 接着，GCC使用汇编器对`hello.s`进行汇编，命令如下： `$gcc  -c  hello.s  -o  hello.o`
+> 接着，GCC使用汇编器对`hello.s`进行汇编，命令如下： ***`$gcc -c hello.s -o hello.o`***
 > 
-> 生成的目标文件`hello.o`, Linux下称之为 ***`可重定位目标文件`***。目标文件无法使用文本编辑器直接查看，但是我们可以使用GCC自带的工具`objdump`命令分析它的内容，命令格式如下：`$objdump  -sd  hello.o`
+> 生成的目标文件`hello.o`, Linux下称之为 ***`可重定位目标文件`***。目标文件无法使用文本编辑器直接查看，但是我们可以使用GCC自带的工具`objdump`命令分析它的内容，命令格式如下： ***`$objdump -sd hello.o`***
 > 
 > 输出目标文件的主要段的内容与`反汇编代码`如下：
 ```console
@@ -144,3 +144,26 @@ Disassembly  of  section  .text:
 > 从 ***`数据段`二进制信息的ASCII形式*** 的显示中，我们看到了汇编语言内定义的字符串数据“Hello World!”。***`代码段`*** 的信息和汇编文件代码信息基本吻合，但是我们发现了很多不同之处。比如汇编文件内的指令`“movl $.LC0, %eax”`中的符号．LC0的地址（字符串“Hello World!”的地址）被换成了0。指令“call printf”内符号printf的相对地址被换成了0xfffffffc，即call指令操作数部分的起始地址。
 > 
 > 这些区别本质来源于汇编语言符号的引用问题。***由于汇编器在处理当前文件的过程中无法获悉符号的虚拟地址，因此临时将这些符号地址设置为默认值0，真正的符号地址只有在链接的时候才能确定***。
+
+### 1.3.4 链接
+> 使用GCC命令进行目标文件链接很简单： ***`$gcc hello.o -o hello`***
+>
+> GCC ***默认使用动态链接***，如果要进行静态链接，需加上`-static`选项： ***`$gcc hello.o -o hello -static`***
+
+> 我们使用`objdump`命令查看一下 ***静态链接后的`可执行文件`*** 内的信息。由于可执行文件中包含了大量的C语言库文件，因此这里不便将文件的所有信息展示出来，***仅显示最终main函数的可执行代码***。
+```console
+080482c0  <main>:
+    80482c0:          55                           push        %ebp
+    80482c1:          89  e5                       mov         %esp, %ebp
+    80482c3:          83  e4  f0                   and         $0xfffffff0, %esp
+    80482c6:          83  ec  10                   sub         $0x10, %esp
+    80482c9:          b8  28  e8  0a  08           mov         $0x80ae828, %eax
+    80482ce:          89  04  24                   mov         %eax, (%esp)
+    80482d1:          e8  fa  0a  00  00           call        8048dd0  <_IO_printf>
+    80482d6:          b8  00  00  00  00           mov         $0x0, %eax
+    80482db:          c9                           leave
+    80482dc:          c3                           ret
+```
+> 从main函数的可执行代码中，***我们发现汇编过程中描述的无法确定的符号地址信息在这里都被修正为实际的符号地址***。如 ***`“Hello World!”字符串`的地址为`0x080ae828`***, ***`printf函数`的地址为`0x08048dd0`***。这里`符号_IO_printf`与`printf`完全等价，`call指令` ***内部相对地址*** 为`0x000afa`，正好是 ***`printf地址`相对于`call指令下条指令起始地址0x080482d6`的偏移***。
+
+## 1.4 设计自己的编译系统
