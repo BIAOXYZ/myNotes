@@ -77,3 +77,33 @@ int main()
 > 我们可以将预编译的工作简单地理解为源码的文本替换，即将宏定义的内容替换到宏的引用位置。当然，这样理解有一定的片面性，因为要考虑宏定义中使用其他宏的情况。事实上预编译器的实现机制和编译器有着很大的相似性，因此本书描述的编译系统将重点放在源代码的编译上，不再独立实现预编译器。然而，我们需要清楚的事实是：一个完善的编译器是需要预编译器的。
 
 ### 1.3.2 编译
+> 接下来GCC对`hello.i`进行编译，命令如下：`$gcc  –S  hello.i  –o  hello.s`
+>
+> 编译后产生的汇编文件`hello.s`内容如下：
+```
+.file               "hello.c"
+.section           .rodata
+.LC0:
+    .string      "Hello  World! "
+    .text
+.globl  main
+    .type         main,  @function
+main:
+    pushl                %ebp
+    movl                 %esp,  %ebp
+    andl                 $-16,  %esp
+    subl                 $16,  %esp
+    movl                 $.LC0,  %eax
+    movl                 %eax,  (%esp)
+    call                 printf
+    movl                 $0,  %eax
+    leave
+    ret
+    .size         main,  .-main
+    .ident       "GCC:  (Ubuntu/Linaro  4.4.4-14ubuntu5)  4.4.5"
+    .section    .note.GNU-stack,"", @progbits
+```
+
+> GCC生成的汇编代码的语法是`AT&T格式`，与`Intel格式`的汇编有所不同（若要生成Intel格式的汇编代码，使用编译选项“`-masm=intel`”即可）。比如立即数用“`$`”前缀，寄存器用“`%`”前缀，内存寻址使用小括号等。区别最大的是，`AT&T汇编`指令的源操作数在前，目标操作数在后，这与`Intel汇编`语法正好相反。本书会在后续章节中详细描述这两种汇编语法格式的区别。
+> 
+> 不过我们仍能从中发现高级语言代码中传递过来的信息，比如字符串“Hello World!”、主函数名称main、***函数调用call printf***等。

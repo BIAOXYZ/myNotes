@@ -50,6 +50,8 @@ SFC游戏《GS美神：极乐大作战》同名动漫改编的一款动作游戏
 
 # 街机
 
+吊打4399，这些在线游戏网站你必须收藏！ https://www.bilibili.com/video/BV18h411B79s
+
 2021年我们可以在网页上玩到什么游戏？ https://www.bilibili.com/video/BV12N411f7Es
 
 这些网站能颠覆你对“网页游戏”的认知！https://www.bilibili.com/video/BV1dv411p7TA
