@@ -232,6 +232,10 @@ https://github.com/lodash/lodash/commits/master?after=c2616dd4f3ab267d000a2b4f56
 后面的after即代表展示 SHA为c2616dd4f3ab267d000a2b4f564e1c76fc8b8378 的后面第35条commit。
 ```
 
+GitHub 防黑客新措施：弃用账密验证 Git 操作，改用 token 或 SSH 密钥，今晚 0 点执行 https://www.ithome.com/0/569/298.htm
+- 回复：
+  * > 用了GCM Core后，从没管我要过凭据
+
 ### Github Gist
 
 如何看待 Github Gist 这个服务，怎样更好的利用？ - 知乎用户的回答 - 知乎
