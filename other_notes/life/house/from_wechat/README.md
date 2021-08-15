@@ -12,3 +12,9 @@
 ## 2021.07
 
 官方排雷指南来啦！糊弄购房人的招数这回有治了 https://mp.weixin.qq.com/s/kMH6iAGMc_T-wQAMluB1-A
+
+# from 通货朋仗
+
+## 2021.08
+
+400万在北京买哪？ | 答疑 https://mp.weixin.qq.com/s/XWjZaEq_SUOvOsGxgCkdzg
