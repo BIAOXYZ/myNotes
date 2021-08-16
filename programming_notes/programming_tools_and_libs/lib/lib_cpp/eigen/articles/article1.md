@@ -26,3 +26,39 @@ Matrix Manipulations in C++ using Eigen Library https://iamfaisalkhan.com/matrix
   * > Instead of explicitly defining an `Array` object for element-wise operations, we have the option of using the array interface of an existing `Matrix` objects to do mix types of operations.
 - > **Special Matrices and Arrays**
   * > Another way to initialize matrices and arrays is using the static methods like `Zero()`, `Ones()`, `Identity()` or `Random()`.
+- > **Using existing data**
+  * > The raw C/C++ buffers can be interfaced with `Eigen` using the `Map` class. The `Map` object has a type defined as:
+    ```cpp
+    Map< Matrix<typename Scalar, int RowsAtCompileTime, int ColsAtCompileTime> >
+    ```
+  * > The main argument supplied to the `Map`’s’ template is of type `Eigen::Matrix`. Thus, the data type and number of elements in the buffer being interfaced should match the supplied matrix type.
+  * > In the example below we interface an integer array of length 9 to 3 by 3 matrix.
+    ```cpp
+    int data[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    
+    cout<<"Column Major 3 by 3 Matrix"<<endl;
+    Map<Matrix<int, 3, 3>> A(data, 3, 3);
+    cout<<A<<endl;
+    // 1 4 7
+    // 2 5 8
+    // 3 6 9
+    ```
+  * > By default the `Eigen` library uses ***column-major*** order to process the data within the raw buffer. However this can be changed by explicitly specifying the storage order of the underlying `Matrix`.
+    ```cpp
+    cout<<"Row Major 3 by 3 Matrix"<<endl;
+    Map<Matrix<int, 3, 3, RowMajor>> B(data);
+    cout<<B<<endl;             
+    // 1 2 3
+    // 4 5 6
+    // 7 8 9
+    ```
+  * > An additional argument to the `Map` is the **`Stride`**. ***The stride offers further control over the layout of the data*** being processed from the raw buffer. For example, in the following example, we are skipping over an element while interfacing with the raw buffer.
+    ```cpp
+    int data[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+    
+    Map<Matrix<int, 3, 2>, 0, Stride<6, 2>> A(data);
+    cout<<A<<endl;        
+    // 1  7
+    // 3  9
+    // 5 11
+    ```
