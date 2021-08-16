@@ -123,6 +123,16 @@ $ brew install graphviz
 >> 之所以要安装这个库是因为这个： https://github.com/Freemanzxp/GBDT_Simple_Tutorial  -->  `Python库：pandas、PIL、pydotplus， 其中pydotplus库会自动调用Graphviz，所以需要去Graphviz官网下载graphviz的-2.38.msi ，先安装，再将安装目录下的bin添加到系统环境变量，此时如果再报错可以重启计算机。详细过程不再描述，网上很多解答。`
 >>> 然而 `PIL` 库只能在 Python2 里用，但是好在有人写了兼容版本的 `Pillow`，直接 `conda install pillow` 即可。（from: [使用anaconda安装python3版本的PIL](https://blog.csdn.net/Void_worker/article/details/99627783)）
 
+### [MacTeX](https://tug.org/mactex/)
+
+What are the practical differences between installing LaTeX from MacTeX or MacPorts/Homebrew? https://tex.stackexchange.com/questions/97183/what-are-the-practical-differences-between-installing-latex-from-mactex-or-macpo
+- https://tex.stackexchange.com/questions/97183/what-are-the-practical-differences-between-installing-latex-from-mactex-or-macpo/155081#155081  【一个下载软件，如此频繁地变更接口。。。】
+  * > **Edit 2021**
+    + > brew has once again changed its syntax for this. You should now be using
+      ```sh
+      $ brew install --cask mactex
+      ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac Anaconda
