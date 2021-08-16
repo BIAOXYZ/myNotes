@@ -100,6 +100,159 @@ C++11 线程管理 https://www.jianshu.com/p/409e6ceb5315
       i=1
       s=update value
       ```
+- > **3 线程所有权管理**
+  * > `std::thread`都是可移动，但不可拷贝，如下面示例：
+    ```cpp
+    #include <iostream>
+    #include <thread>
+    
+    void f(int i) {
+        std::cout << "Func, i=" << i << "\n";
+    }
+    
+    std::thread gen_a_thread() {
+        std::thread t(f, 2);
+        return t;
+    }
+    
+    int main() {
+        std::thread t1(f, 1);
+    
+        //std::thread t2 = t1;  this is not allowed
+    
+        // transfer ownership, call move constructor
+        std::thread t2 = std::move(t1);
+        t2.join();
+    
+        // transfer ownership, call move constructor
+        std::thread t3 = gen_a_thread();
+        t3.join();
+    }
+    ```
+  * > 输出为：
+    ```console
+    Func, i=1
+    Func, i=2
+    ```
+  * > 对于需要`join`的线程，为了确保`join`一定会被调用，可以创建下面的thread_scope类，如下：
+    ```cpp
+    #include <iostream>
+    #include <thread>
+    #include <exception>
+    
+    void f(int i) {
+        std::cout << "Func, i=" << i << "\n";
+    }
+    
+    class ThreadScope {
+    public:
+        explicit ThreadScope(std::thread t): _t(std::move(t)) {
+            if (!_t.joinable()) {
+                throw std::logic_error("no thread");
+            }
+        }
+    
+        ~ThreadScope() {
+            _t.join();
+        }
+    
+        //disallow copy and assign
+        ThreadScope(const ThreadScope& t) = delete;
+        ThreadScope& operator=(const ThreadScope& t) = delete;
+    
+    private:
+        std::thread _t;
+    };
+    
+    int main() {
+        ThreadScope ts(std::thread(f, 1));
+    }
+    ```
+    >> //notes：（自己试了下）输出如下：
+      ```console
+      Func, i=1
+      ```
+  * > 可以将std::thread放入std::vector中，批量创建线程并且等待它们结束，示例如下：
+    ```cpp
+    #include <iostream>
+    #include <thread>
+    #include <vector>
+    #include <sstream>
+    #include <algorithm>
+
+    void worker(int i) {
+        std::stringstream ss;
+        ss << "worker_";
+        ss << i;
+        ss << "\n";
+        std::cout << ss.str();
+    }
+
+    int main() {
+        const size_t WORKER_NUM = 20;
+        std::vector<std::thread> threads;
+        for (auto i = 0; i < WORKER_NUM; ++i) {
+            threads.emplace_back(std::thread(worker, i));
+        }
+
+        std::for_each(threads.begin(), threads.end(), std::mem_fn(&std::thread::join));
+    }
+    ```
+    >> //notes：（自己试了下）输出就是一堆`worker_i`，由于OS调用顺序不可控，每次运行不一样，这里随便贴一次运行的结果。
+      ```console
+      worker_3
+      worker_2
+      worker_5
+      worker_6
+      worker_1
+      worker_0
+      worker_7
+      worker_4
+      worker_8
+      worker_9
+      worker_10
+      worker_11
+      worker_13
+      worker_12
+      worker_14
+      worker_15
+      worker_17
+      worker_16
+      worker_19
+      worker_18
+      ```
+- > **4 线程标志**
+  * > 线程标识类型是`std::thread::id`，可以通过两种方式进行检索。第一种，可以通过调用`std::thread`对象的成员函数`get_id()`来直接获取。如果`std::thread`对象没有与任何执行线程相关联，`get_id()`将返回`std::thread::type`默认构造值，这个值表示“没有线程”。第二种，当前线程中调用`std::this_thread::get_id()`。示例代码如下：
+    ```cpp
+    #include <iostream>
+    #include <thread>
+    #include <vector>
+    #include <sstream>
+    #include <algorithm>
+    
+    void worker(int i) {
+        std::stringstream ss;
+        ss << std::this_thread::get_id() << "\n";
+        std::cout << ss.str();
+    }
+    
+    int main() {
+        const size_t WORKER_NUM = 5;
+        std::vector<std::thread> threads;
+        for (auto i = 0; i < WORKER_NUM; ++i) {
+            threads.emplace_back(std::thread(worker, i));
+        }
+        std::for_each(threads.begin(), threads.end(), std::mem_fn(&std::thread::join));
+    }
+    ```
+  * > 输出如下：
+    ```console
+    139865582319360
+    139865571829504
+    139865561339648
+    139865540359936
+    139865550849792
+    ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
