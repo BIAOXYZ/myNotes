@@ -35,6 +35,8 @@
 
 # 公积金
 
+购买本市商品房如何提取 https://mp.weixin.qq.com/s/J3CC1PxkSJM1qAacIJ24qw
+
 住房公积金提取 http://gjj.beijing.gov.cn/web/zwfw5/386727/386730/386732/index.html
 - 购买北京市行政区域外住房申请提取住房公积金操作详解 http://gjj.beijing.gov.cn/web/zwfw5/386727/386730/386732/676603/index.html
 
