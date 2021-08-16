@@ -45,6 +45,10 @@ Multithreading in C++ https://www.geeksforgeeks.org/multithreading-in-cpp/
 
 C++ 多线程 - 李尧的文章 - 知乎 https://zhuanlan.zhihu.com/p/348492524
 
+程序员的自我修养（五）：C++ 多线程编程初步 https://liam.page/2017/05/16/first-step-on-multithread-programming-of-cxx/
+- > 这是[系列文章](https://liam.page/series/)的第五篇。这篇文章里，我们介绍如何使用 C++ 11 的标准库，进行多线程编程。
+- > **以非静态成员函数为线程函数**
+
 # 问题解决
 
 Emplace back thread on vector https://stackoverflow.com/questions/39266461/emplace-back-thread-on-vector

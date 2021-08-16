@@ -35,3 +35,9 @@ How to resove “job aborted, file error in nonstop mode” error in Texmaker (6
 ### overfull hbox/vbox类
 
 What does “overfull hbox” mean? https://tex.stackexchange.com/questions/35/what-does-overfull-hbox-mean
+
+# 待分类
+
+```Critical Package ctex Error: CTeX fontset `mac' is unavailable in current(ctex) mode. }```
+- http://tomgu1991.github.io/blog/Technical/THUthesis.html
+- https://github.com/3b1b/manim/issues/64

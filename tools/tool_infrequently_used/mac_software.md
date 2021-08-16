@@ -133,6 +133,10 @@ What are the practical differences between installing LaTeX from MacTeX or MacPo
       $ brew install --cask mactex
       ```
 
+### ~~unrar~~ --> `unar`
+
+MAC 命令行解压 rar 文件 https://www.jianshu.com/p/cb5baeddd338
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac Anaconda
