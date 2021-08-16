@@ -126,9 +126,6 @@ Eigen 简明教程 https://juejin.cn/post/6844904094713249800
 
 Eigen学习记录 - 月光亲了城的文章 - 知乎 https://zhuanlan.zhihu.com/p/42718881
 
-Matrix Manipulations in C++ using Eigen Library https://iamfaisalkhan.com/matrix-manipulations-using-eigen-cplusplus/
-- > [Eigen]() is an open source C++ library optimized for handling numeric operations such as addition, subtraction, multiplication etc. of matrices and arrays along with solving linear systems. Eigen is feature rich and highly optimized. It offers explicit vectorized instruction for multiple platforms. Its use of [C++ expression templates](https://en.wikipedia.org/wiki/Expression_templates) allow it to ***intelligently avoid temporary variables and enable lazy evaluation***. The library is very similar in function to the popular Python’s [Numpy]().
-
 Cheat sheet for the linear algebra library Eigen https://gist.github.com/gocarlos/c91237b02c120c6319612e42fa196d77
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

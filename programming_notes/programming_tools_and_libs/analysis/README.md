@@ -7,6 +7,8 @@ General C++ Performance Improvement Tips [closed] https://stackoverflow.com/ques
 
 《提高C++性能的编程技术》笔记 - WeTiGY的文章 - 知乎 https://zhuanlan.zhihu.com/p/97046347
 
+循环展开 https://zh.wikipedia.org/wiki/%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80 || Loop unrolling https://en.wikipedia.org/wiki/Loop_unrolling
+
 G++ optimization beyond -O3/-Ofast https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast
 - 【[:cow::beer:][:star:][`*`]】 https://stackoverflow.com/questions/14492436/g-optimization-beyond-o3-ofast/38511897#38511897 【//notes：看了这个人的回答只想说——性能优化真是一门大学问！就仅仅只是在编译阶段，都有这么多知识和技巧。PS：原来 `-Ofast` 不但不是终点，离终点还远着呢。。。】
   * > Most of the answers suggest alternative solutions, such as different compilers or external libraries, which would most likely bring a lot of rewriting or integration work. I will try to stick to what the question is asking, and focus on what can be done with GCC alone, by activating compiler flags or doing minimal changes to the code, as requested by the OP. This is not a "you must do this" answer, but more a collection of GCC tweaks that have worked out well for me and that you can give a try if they are relevant in your specific context.
