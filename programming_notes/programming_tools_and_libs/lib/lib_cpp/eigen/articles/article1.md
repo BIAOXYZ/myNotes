@@ -27,7 +27,7 @@ Matrix Manipulations in C++ using Eigen Library https://iamfaisalkhan.com/matrix
 - > **Special Matrices and Arrays**
   * > Another way to initialize matrices and arrays is using the static methods like `Zero()`, `Ones()`, `Identity()` or `Random()`.
 - > **Using existing data**
-  * > The raw C/C++ buffers can be interfaced with `Eigen` using the `Map` class. The `Map` object has a type defined as:
+  * > The raw C/C++ buffers can be interfaced with `Eigen` using the ***`Map`*** class. The `Map` object has a type defined as:
     ```cpp
     Map< Matrix<typename Scalar, int RowsAtCompileTime, int ColsAtCompileTime> >
     ```
@@ -63,8 +63,8 @@ Matrix Manipulations in C++ using Eigen Library https://iamfaisalkhan.com/matrix
     // 5 11
     ```
     + > The `Stride` class has two parameters: (i) `OuterStrideAtComileTime` (***value `6` above***) and (ii) `InnerStrideAtCompileTime` (***value `2` above***).
-    + > The **inner stride** controls how many elements to skip between two consecutive entries within a given column (row) for column-major (row-major) matrix.
-    + > The **outer stride** specifies the increment between two consecutive columns (rows) of a column-major (row-major) matrix.
+    + > The **inner stride** controls how many elements to skip ***between two consecutive entries within a given column (row)*** for column-major (row-major) matrix.
+    + > The **outer stride** specifies the increment ***between two consecutive columns (rows)*** of a column-major (row-major) matrix.
     + > In the example above, we used an outer stride of 6 and an inner stride of 2. The ***outer stride of 6 will skip over 6 elements between each column***. More specifically, ***the first column will start at the first elements and the second column will start at the 7th element***. The ***inner stride of 2 means that we want to skip an element within the consecutive elements of a given column***.
     + > The figure below show this example visually using both column-major and row-major order.
     + > ![](https://iamfaisalkhan.com/content/images/size/w1600/2021/05/strides_example1.png)
@@ -74,7 +74,7 @@ Matrix Manipulations in C++ using Eigen Library https://iamfaisalkhan.com/matrix
     ```cpp
     Eigen::MatrixXf A (2, 2);
     A << 4, 7,
-       8, 9;
+         8, 9;
     
     // Scale the matrix values by 2. 
     Eigen::MatrixXf C = A * 2;
