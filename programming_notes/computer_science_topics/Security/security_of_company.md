@@ -23,6 +23,8 @@ EzPC (Easy Secure Multi-party Computation) https://www.microsoft.com/en-us/resea
 
 CrypTen: A framework for Privacy Preserving Machine Learning https://github.com/facebookresearch/CrypTen
 
+FBPCF (Facebook Private Computation Framework) https://github.com/facebookresearch/fbpcf
+
 ## Oasis Labs
 
 https://www.oasislabs.com/
