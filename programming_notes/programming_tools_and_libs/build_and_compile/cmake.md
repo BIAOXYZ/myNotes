@@ -10,11 +10,11 @@ CMake Tutorial https://cmake.org/cmake/help/v3.19/guide/tutorial/index.html
 
 cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上传到仓库 https://juejin.cn/post/6844903641443205128
 
-【[:star:][`*`]]】 CMake Examples https://github.com/ttroy50/cmake-examples
+【[:star:][`*`]】 CMake Examples https://github.com/ttroy50/cmake-examples || http://ttroy50.github.io/cmake-examples/
 
-【[:star:][`*`]]】 CGold: The Hitchhiker’s Guide to the CMake https://cgold.readthedocs.io/en/latest/index.html || https://github.com/ruslo/CGold
+【[:star:][`*`]】 CGold: The Hitchhiker’s Guide to the CMake https://cgold.readthedocs.io/en/latest/index.html || https://github.com/ruslo/CGold
 
-【[:star:][`*`]]】 CMake Cookbook https://github.com/dev-cafe/cmake-cookbook || CMake菜谱（CMake Cookbook中文版） https://www.bookstack.cn/books/CMake-Cookbook
+【[:star:][`*`]】 CMake Cookbook https://github.com/dev-cafe/cmake-cookbook || CMake菜谱（CMake Cookbook中文版） https://www.bookstack.cn/books/CMake-Cookbook
 - 本书相关
   * github翻译地址： https://github.com/xiaoweiChen/CMake-Cookbook
   * gitbook 在线阅读： https://app.gitbook.com/@chenxiaowei/s/cmake-cookbook/
