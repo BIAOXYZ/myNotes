@@ -17,4 +17,7 @@
 
 ## 2021.08
 
+北京买房不用找中介了！ https://mp.weixin.qq.com/s/BlRxiXfwMCqy1BvNcw5T6g
+- > 北京蒲公英找家团队，创始人，北京周老板，知名博主，创业者，对北京楼市有详尽的分析，观点犀利，接地气；买卖实操过二百多套房子，实操经验…十足。
+
 400万在北京买哪？ | 答疑 https://mp.weixin.qq.com/s/XWjZaEq_SUOvOsGxgCkdzg
