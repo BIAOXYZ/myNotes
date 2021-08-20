@@ -58,10 +58,6 @@ why there is no find for vector in C++ https://stackoverflow.com/questions/29940
   ```
   > If your vector is sorted, you can use `std::binary_search()` to test whether a value is present in the vector, and `std::equal_range()` to get begin and end iterators to the range of elements in the vector that have that value.
 
-## vector里的元素也要考虑内存管理
-
-【vectorの奇技淫巧】C++ vector 如何正确处理动态申请内存的元素 https://juejin.cn/post/6988156280133124110
-
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `.assign()`
