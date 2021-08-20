@@ -69,6 +69,10 @@ cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu
 cmake . -DCMAKE_BUILD_TYPE=Debug
 ```
 
+# cmake现实中的例子
+
+- https://github.com/hattonl/cpp-project-structure/blob/master/CMakeLists.txt
+
 # 问题
 
 ## `Unknown CMake command "target_link_options"`
