@@ -1,4 +1,11 @@
 
+《 Python 进阶》2021 更新版发布，欢迎大家提出意见或表示支持 https://www.v2ex.com/t/797304
+```console
+忘记附上阅读链接和源码地址了 :)
+在这阅读：https://py.eastlakeside.cn/
+在这提PR或issue，或star支持：https://github.com/eastlakeside/interpy-zh
+```
+
 在 Python 中如何放置一个钩子劫持接下来发生的标准输出？ https://www.v2ex.com/t/794208
 - > 
   ```py

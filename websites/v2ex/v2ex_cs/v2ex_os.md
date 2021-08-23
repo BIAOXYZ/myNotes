@@ -1,4 +1,16 @@
 
+The Linux Kernel Module Programming Guide 升级至 5.0 版并开源！ https://www.v2ex.com/t/797371
+```console
+台湾成功大学助理教授 黄敬群 (Jim Huang, jserv) 近期将 The Linux Kernel Module Programming Guide (Linux 内核模块编程指南) (针对 Linux Kernel 2.6) 
+的内容升级到最新的 kernel versions (v5.x)。
+
+并且大方的开源 LaTeX 、PDF 至 GitHub 上，欢迎对 Linux 内核感兴趣的伙伴们，可以阅读学习。GitHub 项目连结 
+https://github.com/sysprog21/lkmpg
+```
+- > 可以參考下
+  * > https://github.com/sysprog21/lkmpg/tree/master/examples
+  * > https://github.com/sysprog21/lkmpg/blob/master/lkmpg.tex
+
 Linux 环境编程有什么经典教材吗 https://www.v2ex.com/t/761355
 - > 如果不写驱动和内核，看《 The Linux Programming Interface 》这一本就够了，虽然这一本也还是有点老，但是写 Linux 下的应用也够了。
 - > 简短的就 APUE 。大部头的就 TLPI，1500 页
