@@ -77,3 +77,5 @@ C++右值引用（std::move） - niediao的文章 - 知乎 https://zhuanlan.zhih
 std:move基本用法和理解 https://blog.csdn.net/swartz_lubel/article/details/59620868
 - > **例子2**
   * > 自定义自己的类对象支持moved from 操作,需要实现 Move Constructors and Move Assignment Operators
+
+第14课 移动语义(std::move) https://www.cnblogs.com/5iedu/p/11318729.html
