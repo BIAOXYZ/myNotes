@@ -155,6 +155,9 @@ vscode 跳转到函数之后怎么跳转回之前的位置 https://www.v2ex.com/
 ## vscode每个工作空间单独主题
 
 Different theme per window in Visual Studio Code https://stackoverflow.com/questions/52514491/different-theme-per-window-in-visual-studio-code || VS Code: different color themes for different projects https://dev.to/mkubdev/visual-studio-code-different-color-themes-for-different-projects-467k
+- > Navigate to `File > Preferences > Settings`
+- > Select the `Workspace Settings` tab at the top of the settings screen. Anything you edit in here will now be specific to this workspace.
+- > Search for `colorTheme` and select the color theme you would like for this specific workspace.
 
 ## vscode连接远程服务器开发
 

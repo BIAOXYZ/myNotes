@@ -110,6 +110,12 @@ C++内存泄漏检查工具——Valgrind（--tool = memcheck） https://www.cnb
 
 C/C++ 内存泄漏检测工具：Valgrind https://murphypei.github.io/blog/2019/04/valgrind-memory-leaky
 
+调不尽的内存泄漏，用不完的 Valgrind https://phenix3443.github.io/notebook/software-engineering/debug/valgrind-practices.html || https://github.com/phenix3443/notebook/blob/master/docs/software-engineering/debug/valgrind-practices.html
+
+valgrind排查内存泄露 - 涛哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/111530078
+
+使用 Valgrind 检测 C++ 内存泄漏 http://senlinzhan.github.io/2017/12/31/valgrind/
+
 # 相关软件
 
 ## KCachegrind 
