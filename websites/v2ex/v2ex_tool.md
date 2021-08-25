@@ -99,6 +99,9 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
+电脑现在有必要装安全软件吗？ https://www.v2ex.com/t/797866
+- > 程序员不需要杀软吧。下载什么东西，心里都是有数的。实在是感觉危险的 `exe`。直接拖到 https://www.virustotal.com/gui/home/upload 里面线上杀毒。
+
 有哪些本地代码库搜索利器 https://www.v2ex.com/t/741243
 - > ripgrep +1. 在简单暴力的方法里面应该算是最快的了。
 - > AnyTXT，可以实现文件内容搜索！

@@ -95,6 +95,8 @@ https://bruno-simon.com  各种交互各种炫
 
 # 生活信息
 
+只有左转绿灯，为什么还要二次过街？ https://www.v2ex.com/t/797842
+
 为了研究房屋买卖，验证想法，我转行做了房产中介 https://www.v2ex.com/t/784160
 - > 这个是项目主页，里面有未来业务哈，欢迎大家点评，给出意见，谢谢大家。
   >> 房小会 https://www.fangxiaohui.co/
