@@ -13,8 +13,10 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 《100个gdb小技巧》 https://github.com/hellogcc/100-gdb-tips/blob/master/src/index.md || ~~https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details~~ --> https://wizardforcel.gitbooks.io/100-gdb-tips/content/
 - 配置gdb init文件 https://github.com/hellogcc/100-gdb-tips/blob/master/src/config-gdbinit.md
   * > 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
-- 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
-  * > set print pretty on
+- **6.打印**
+  * > 打印STL容器中的内容 https://wizardforcel.gitbooks.io/100-gdb-tips/content/print-STL-container.html
+  * > 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
+    + > `set print pretty on`
 - **7.多进程/线程**
   * **7.3 同时调试父进程和子进程**
     + > 在调试多进程程序时，gdb***默认只会追踪父进程的运行，而子进程会独立运行，gdb不会控制***。以上面程序为例：
@@ -162,6 +164,7 @@ GDB调试指南 https://www.yanbinghu.com/2019/04/20/41283.html  || https://gith
 【[:star:][`*`]】 掌握gdb调试从入门到进阶（二） - Xin Lee的文章 - 知乎 https://zhuanlan.zhihu.com/p/100403438 【这个还包括了对coredump文件、以及对线程的调试】
 
 陈皓GDB调试教程链接汇总 https://developer.aliyun.com/article/681075
+- 用GDB调试程序（五） https://blog.csdn.net/haoel/article/details/2883
 
 【[:star:][`*`]】 GDB调试：打印 https://ivanzz1001.github.io/records/post/cplusplus/2018/11/11/cpluscplus-gdbusage_part6
 - > 1.打印ASCII字符串和宽字符串
