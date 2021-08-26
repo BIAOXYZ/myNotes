@@ -1,4 +1,13 @@
 
+问大家一个关于 Pod 中的 Pause 容器的问题 https://www.v2ex.com/t/798088
+```console
+Pause 容器永远处于 Pause(暂停)状态，这句话应该怎么理解？是跑在一个死循环里吗？
+```
+- > 看下它源码就行： https://github.com/kubernetes/kubernetes/blob/master/build/pause/linux/pause.c
+- > pause 容器本身不做任何事情，只是为了让 pod 在你指定的容器运行前启动以便配置网络等。
+- > pause 为你 hold 住一个逻辑的空间，其他 container 可以共享这个空间的网络存储等资源
+- > 就是新建个容器，然后之后的容器共享 pause 容器的网络和空间
+
 清理 docker registry 的旧镜像，有什么简单的方法吗？ https://www.v2ex.com/t/779025
 
 Dockerfile 构建的镜像通过 ssh 登录后，环境变量被重置 https://www.v2ex.com/t/778905

@@ -1,4 +1,29 @@
 
+PostgreSQL 分页查询 CPU 吃满的问题 https://www.v2ex.com/t/797877
+```console
+疑问
+数据库服务器配置 20 核 32G，单机。100 并发持续时间 180 秒对某个简单分页查询接口进行压测。
+期间应用服务器正常，数据库连接正常，但数据库服务器 CPU 占满，请问这是正常现象还是啥问题....
+
+sql
+单表分页的首页查询，表内 1000 万数据，筛选出的数据为 28w，大概 sql 如下：
+SELECT a,b,c,d,e FROM table WHERE del_flag = 0 AND c LIKE 'c%' order by e desc limit 10
+SELECT COUNT(*) FROM table WHERE del_flag = 0 AND c LIKE 'c%'
+```
+- > 大表不要 count
+  >> 业务需要，无可避免啊
+  >>> 业务上可以缓存计数.
+  >>>> 完了.带 like..当我没说.查询条件多变的话缓存也救不了
+- > `EXPLAIN` 看下索引是否设置正确。另外如果业务经常使用 `COUNT(*)` ，建议把相关值放入内存缓存或者缓存表。
+  >> 带 `LIKE` 的话效率不太好优化了就。除非上一些比较复杂的优化，例如搜索数据全量进缓存后续读取靠缓存，以及单独的检索服务器之类的。 
+- > 查询条件多变的情况如何处理呢，这个值很难保证准确吧。。。
+  >> 加 `gin 索引` & `pg_trgm` 模块是个可以尝试的办法。不过得分析下主要的查询方向交给 DBA 看看怎么加比较优化。
+- > 新版本 索引 有优化 <br> pgsql 不(傻瓜)支持忽略大小写查询，业务开展有困扰吗，其它几个关系型数据库都支持 <br> oracle mssql mysql 起步 300M，而 pgsql 只需要 30M，而且性能测评还占上风，对于个站小🐔部署优势巨大，就卡在大小写查询的问题(用 EFCore)
+- > del_flag 和 c 都有索引嘛？
+  >> 前者无，后者有
+  >>> 看看这个 https://github.com/digoal/blog/blob/master/201801/20180119_03.md
+- > 可以指定慢 sql 使用某个 cpu 核心, 让这个核心慢慢跑就是了. 比如 8C16G, 打满一个核心, cpu 占用率也就 12.5%
+
 PostgreSQL 的 pg_try_advisory_xact_lock 正确使用姿势是什么 https://www.v2ex.com/t/787443
 - > https://github.com/digoal/blog/blob/master/201707/20170720_01.md  google 第一页就有
 

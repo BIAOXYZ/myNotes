@@ -1,4 +1,10 @@
 
+各位吴彦祖，有推荐的 Kernel 相关的书籍推荐吗？ https://www.v2ex.com/t/798111
+- > 不知道你想学什么以及到什么阶段了，general 来说很推荐 MIT 6.S081 https://pdos.csail.mit.edu/6.S081/2020/schedule.html 把 lab 刷完可以学到 syscall, memory allocation, multi threading, file system, network 相关的基础知识
+- > 想了解 Kernel Module 开发的话，也可以看看 The Linux Kernel Module Programming Guide https://github.com/sysprog21/lkmpg
+- > 有一本入门书，Linux 内核设计与实现，书不厚，记得 200 多页，让你对内核常见模块有个认识。如果想深入，建议直接看代码，编译代码调试，观察
+- > 如果非常喜欢内核的话，推荐两本厚书，讲得比较透：linux 内核完全注释-0.11 版，深入 linux 架构
+
 The Linux Kernel Module Programming Guide 升级至 5.0 版并开源！ https://www.v2ex.com/t/797371
 ```console
 台湾成功大学助理教授 黄敬群 (Jim Huang, jserv) 近期将 The Linux Kernel Module Programming Guide (Linux 内核模块编程指南) (针对 Linux Kernel 2.6) 
