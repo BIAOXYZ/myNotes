@@ -35,6 +35,15 @@ linux 同时安装python2 python3， 及pip 的安装使用 https://blog.csdn.ne
 
 How to install pip with Python 3? https://stackoverflow.com/questions/6587507/how-to-install-pip-with-python-3
 
+## pip安装指定版本的软件
+
+```sh
+sudo pip install cmake=3.21.1
+
+# 或者加上 -U，应该是表示已有的话就升级。
+sudo pip install -U cmake==xxx
+```
+
 # `requirement.txt`
 
 初学Python-使用requirement.txt https://www.jianshu.com/p/d3e272243cd4

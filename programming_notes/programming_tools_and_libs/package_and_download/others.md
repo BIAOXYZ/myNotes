@@ -355,6 +355,9 @@ Installing snapd https://snapcraft.io/docs/installing-snapd
 
 What is the classic mode of snap, and why do some snaps not install without it (e.g. MS Visual Studio)? https://askubuntu.com/questions/917049/what-is-the-classic-mode-of-snap-and-why-do-some-snaps-not-install-without-it
 
+Permission denied error when running apps installed as snap packages - Ubuntu 17.04 https://askubuntu.com/questions/930437/permission-denied-error-when-running-apps-installed-as-snap-packages-ubuntu-17
+- > Same happens in Ubuntu 18.04. If the user home directory is not under the `/home` (or `/`) mount, it not possible to work with snap. My HOMEDIR was on another local SSD disk, but since it was not mounted under `/home`, every package installed by snap was failing.
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vcpkg
