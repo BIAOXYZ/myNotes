@@ -11,3 +11,5 @@ Generating Random Data in Python (Guide) https://realpython.com/python-random/
 
 Python Random Module to Generate random Data https://pynative.com/python-random-module/
 - PYnative Online Python Code Editor https://pynative.com/online-python-code-editor-to-execute-python-code/
+
+Python基础随机数库——random https://www.cnblogs.com/diantong/p/12518218.html
