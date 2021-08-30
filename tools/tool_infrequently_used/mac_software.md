@@ -77,7 +77,7 @@ Unable to connect to VNC Server using your chosen security setting. Either upgra
 # homebrew
 
 Homebrew的正确安装与使用 https://juejin.im/post/5a6d969bf265da3e2366b853
-> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+> `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 Mac OS下brew的安装和使用 https://www.jianshu.com/p/ab50ea8b13d6
 
@@ -136,6 +136,18 @@ What are the practical differences between installing LaTeX from MacTeX or MacPo
 ### ~~unrar~~ --> `unar`
 
 MAC 命令行解压 rar 文件 https://www.jianshu.com/p/cb5baeddd338
+
+### docker
+
+https://yeasy.gitbook.io/docker_practice/install/mac
+- > 使用 Homebrew 安装
+  ```sh
+  brew install --cask docker
+  ```
+- > 手动下载安装
+- > 运行
+  * > 从应用中找到 Docker 图标并点击运行。
+  * > 之后，你可以在终端通过命令检查安装后的 Docker 版本。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

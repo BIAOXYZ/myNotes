@@ -182,6 +182,18 @@ VSCode使用Remote插件编辑远程服务器文件 https://www.bilibili.com/vid
 9102 年的 Windows + Linux 混合开发环境方案 - 王磊的文章 - 知乎 https://zhuanlan.zhihu.com/p/68309055
 > 这个里面给了一些可能的问题的解决方案，不过我目前还没有碰到。
 
+vscode 远程开发，大家是连接 Linux 系统开发的，有连接 docker 的吗 https://www.v2ex.com/t/798573
+- > 挺正常的呀，我都是用 macOS 装 docker desktop （或者云主机上装 docker ） 用 vsc-remote-container 连到容器内编码测试。这样完全做到开发环境隔离、vsc 的配置、插件隔离。宿主上连 git 甚至都不用装，完全干净方便迁移。mac 磁盘性能问题以及云主机的 git 权限问题都可以通过用 docker volume 缓解和解决。
+- > 建议楼主在 Linux 上装 docker，使用 vsc-remote-container 进行开发。好处有三：
+  * > 1. docker 的多环境隔离优势自不用说了，加上 Linux 上的 docker 对比 Win / Mac 的 docker desktop 性能优势，得天独厚的条件不用可惜；
+  * > 2. 使用 docker 之后可以使用 docker compose 管理多项目（比如前后端项目使用 docker compose 一起启动，内部使用同一个 docker network ），vsc-remote-container 在端口暴露、git 的权限、文件管理、vscode 配置文件及插件隔离等问题上处理表现的十分优秀。基本你会用到的东西微软都考虑到了，非常省心；（举个例子，在云主机的 nodejs 容器里写一个 vue 项目，直接在本地的浏览器用 localhost:xxxx 访问，依然支持页面内容的 hot reload 。你完全不需要考虑他是怎么实现的，只要和在本地一样写好 dockerfile & docker-compose.yml 即可）
+  * > 3. 项目天生容器化，且没有增加额外成本，因为反正做 ci/cd 时都得编写一套，不如直接开发就上 dockerfile，不但环境、流程更仿真，ci/cd 时也可复用；
+  * > 最关键的是 docker context 一键切换 host 几乎 0 迁移成本实在太爽了。自己的 mac 本机干干净净连 git 和 docker 都没有（只要单独下个 docker-cli 二进制文件就行）。我现在写啥都用 vscode，都快被同事当异类了 23333 。
+- > 我宿主机 windows 开发环境 docker. 而且把 docker 当 linux 用. 也就是说 N 各项目在一个 docker 里面现在已经 20 多 G 了. <br> 起初的原因是 因为项目需要必须运行在 docker 下面. 后来发现 Linux 环境真的舒服. 公司有提供云主机但是配各种代码麻烦的很. 所以就一直用 docker 了 目前没有遇到性能问题. 4G 内存同时开四个 vscode 无压力.
+  > 
+  > 需要注意的是做好备份. 曾经 docker 崩了一回. 还好做了备份. 环境还在.
+- > 主机装上 docker，本地 vscode+remotecontainer 插件，非常完美，环境互不影响。
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

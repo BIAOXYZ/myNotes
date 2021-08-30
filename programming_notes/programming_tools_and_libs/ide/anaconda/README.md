@@ -1,6 +1,9 @@
 
 # 官方
 
+- Installing on Windows https://docs.anaconda.com/anaconda/install/windows/
+- Installing on Linux https://docs.anaconda.com/anaconda/install/linux/
+
 Frequently asked questions https://docs.anaconda.com/anaconda/user-guide/faq/
 - > **In what folder should I install Anaconda on Windows?**
   * > We recommend installing Anaconda or Miniconda into a directory that contains ***only 7-bit ASCII characters and no spaces***, such as `C:\anaconda`. Do <ins>***not install into paths that contain spaces***</ins> such as `C:\Program Files` or that <ins>***include Unicode characters outside the 7-bit ASCII character set***</ins>. This helps ensure correct operation and no errors when using any open-source tools in either Python 3 or Python 2 conda environments.
@@ -60,7 +63,8 @@ C:\Users\<your_windows_username>\Anaconda3\Library\bin
 
 How To Install the Anaconda Python Distribution on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-debian-9 || 如何在Debian 9上安装Anaconda Python发行版 https://cloud.tencent.com/developer/article/1360739
 - > **Installing Anaconda**
-  * > The best way to install Anaconda is to download the latest Anaconda installer bash script, verify it, and then run it.
+  * > The best way to install Anaconda is to download the latest ***Anaconda installer bash script***, verify it, and then run it.
+  * > Find the latest version of Anaconda for Python 3 at the **Downloads page** accessible via the [Anaconda home page](https://www.anaconda.com/). At the time of writing, the latest version is 5.2, but you should use a later stable version if it is available.
     ```sh
     cd /tmp
     sudo apt install curl
