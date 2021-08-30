@@ -1,13 +1,13 @@
 
 # 官方
 
-https://docs.anaconda.com/anaconda/user-guide/faq/
+Frequently asked questions https://docs.anaconda.com/anaconda/user-guide/faq/
 - > **In what folder should I install Anaconda on Windows?**
   * > We recommend installing Anaconda or Miniconda into a directory that contains ***only 7-bit ASCII characters and no spaces***, such as `C:\anaconda`. Do <ins>***not install into paths that contain spaces***</ins> such as `C:\Program Files` or that <ins>***include Unicode characters outside the 7-bit ASCII character set***</ins>. This helps ensure correct operation and no errors when using any open-source tools in either Python 3 or Python 2 conda environments.
 - > **Should I add Anaconda to the Windows `PATH`?**
-  * > When installing Anaconda, we recommend that you ***do not add Anaconda to the `Windows PATH`*** because this can interfere with other software. Instead, open Anaconda with the `Start Menu` and select `Anaconda Prompt`, or use `Anaconda Navigator` (Start Menu - Anaconda Navigator).
+  * > When installing Anaconda, we recommend that you ***do not add Anaconda to the `Windows PATH`*** because this can interfere with other software. Instead, open Anaconda with the `Start Menu` and select `Anaconda Prompt`, or use `Anaconda Navigator` (`Start Menu` - `Anaconda Navigator`).
 - > **Should I add Anaconda to the macOS or Linux `PATH`?**
-  * > We do not recommend adding Anaconda to the PATH ***manually***. During installation, you will be asked “Do you wish the installer to initialize Anaconda3 by running conda init?” We recommend “yes”. If you enter “no”, then conda will not modify your shell scripts at all. In order to initialize after the installation process is done, first run `source <path to conda>/bin/activate` and then run `conda init`.
+  * > We do not recommend adding Anaconda to the PATH ***manually***. During installation, you will be asked “Do you wish the installer to initialize Anaconda3 by running conda init?” ***We recommend “yes”***. If you enter “no”, then conda will not modify your shell scripts at all. In order to initialize after the installation process is done, first run `source <path to conda>/bin/activate` and then run `conda init`.
   * > Note: Replace `<path-to-anaconda>` with the actual path of your installed Anaconda file.
 - > **What is the default path for installing Anaconda?**
   * > If you accept the default option to install Anaconda on the “default path” Anaconda is installed in your user home directory:
@@ -67,8 +67,53 @@ How To Install the Anaconda Python Distribution on Debian 9 https://www.digitalo
     curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
     bash Anaconda3-5.2.0-Linux-x86_64.sh
     ```
-    //notes：安装过程中有一步还是比较关键的，就是要把 `conda` 添加到 `PATH`（如果window，官方推荐是***不添加***；Linux和MAC，官方推荐的是***添加***，但是***不要手动添加***。并且官方给出了在这一步万一填错或者超时自动填 `no` 时的解决办法，参见官方FAQ部分吧）
-- > 
+    >> //notes：安装过程中有一步还是比较关键的，就是要把 `conda` 添加到 `PATH`（如果window，官方推荐是***不添加***；Linux和MAC，官方推荐的是***添加***，但是***不要手动添加***。并且官方给出了在这一步万一因为填错或者因为超时自动填 `no` 时的解决办法，参见官方FAQ部分吧）
+- > **Updating Anaconda**
+  * > You should regularly ensure that Anaconda is up-to-date so that you are working with all the latest package releases. To do this, you should first update the conda utility:
+    ```console
+    conda update conda
+    ```
+    > When prompted to do so, type `y` to proceed with the update.
+  * > Once the update of conda is complete, you can update the Anaconda distribution:
+    ```console
+    conda update anaconda
+    ```
+    > Again when prompted to do so, type `y` to proceed. This will ensure that you are using the latest releases of conda and Anaconda.
+- > **Uninstalling Anaconda**
+  * > If you are no longer using Anaconda and find that you need to uninstall it, you should start with the `anaconda-clean` module, which will remove configuration files for when you uninstall Anaconda.
+    ```console
+    conda install anaconda-clean
+    ```
+    > Type `y` when prompted to do so.
+  * > Once it is installed, you can run the following command. You will be prompted to answer `y` before deleting each one. If you would prefer not to be prompted, add `--yes` to the end of your command:
+    ```console
+    anaconda-clean
+    ```
+    > This will also create a backup folder called `.anaconda_backup` in your home directory:
+    ```console
+    Output
+    Backup directory: /home/sammy/.anaconda_backup/2018-09-06T183049
+    ```
+  * > You can now remove your entire Anaconda directory by entering the following command:
+    ```sh
+    rm -rf ~/anaconda3
+    ```
+  * > Finally, you can remove the `PATH` line from your `.bashrc` file that Anaconda added. To do so, first open a text editor such as `nano`:
+    ```sh
+    nano ~/.bashrc
+    ```
+    > Then scroll down to the end of the file (if this is a recent install) or type `CTRL + W` to search for Anaconda. Delete or comment out the `export PATH` line:
+    ```sh
+    # /home/sammy/.bashrc
+    
+    ...
+    ...
+    ...
+    # added by Anaconda3 installer
+    export PATH="/home/sammy/anaconda3/bin:$PATH"
+    ```
+    > When you’re done editing the file, type `CTRL + X` to exit and `y` to save changes.
+  * > Anaconda is now removed from your server.
 
 ## old
 
