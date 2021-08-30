@@ -168,6 +168,18 @@ SecMML https://github.com/FudanMPL/SecMML
 Implementation of protocols in Falcon https://github.com/snwagh/falcon-public
 - (PETS 2021) Falcon: Honest-Majority Maliciously Secure Framework for Private Deep Learning https://arxiv.org/pdf/2004.02229.pdf
 
+## tf-encrypted
+
+`tf-encrypted` (or `TF Encrypted`, `TF-Encrypted`)
+
+A Framework for Encrypted Machine Learning in TensorFlow https://github.com/tf-encrypted/tf-encrypted
+
+TF-Encrypted https://tf-encrypted.io/
+
+TF-Encrypted MPC 多方计算代码阅读 - 哈利法的文章 - 知乎 https://zhuanlan.zhihu.com/p/368881623
+
+在 TensorFlow 中使用安全计算实现隐私保护机器学习 - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/396553029
+
 ## 小型项目
 
 GBDT_Simple_Tutorial（梯度提升树简易教程） https://github.com/Freemanzxp/GBDT_Simple_Tutorial
