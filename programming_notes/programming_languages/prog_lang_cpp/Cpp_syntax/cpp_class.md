@@ -211,6 +211,10 @@ C++: 全局变量和static变量初始化问题 https://www.cnblogs.com/dylan-li
     + > 在C语言中是编译期初始化并分配内存，故不能用变量给静态局部变量赋值，只能用常量。
     + > 在C++中是第一次执行时初始化，因为C++引入了对象的概念，对象一般需要构造函数，无法简单的分配内存，故可以用变量赋值，并且在第一次使用时初始化。
 
+# 友元
+
+C++类对象共享数据的5种实现方法 https://blog.csdn.net/fanyun_01/article/details/78145431
+
 # 其他
 
 c++　在函数后加const的意义 https://blog.csdn.net/qq_32739503/article/details/83341222

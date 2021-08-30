@@ -15,8 +15,10 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
   * std::sort http://www.cplusplus.com/reference/algorithm/sort/
 - **Min/max**:
   * std::max http://www.cplusplus.com/reference/algorithm/max/
-  * std::max_element http://www.cplusplus.com/reference/algorithm/max_element/
+  * std::minmax https://www.cplusplus.com/reference/algorithm/minmax/
   * std::min_element http://www.cplusplus.com/reference/algorithm/min_element/
+  * std::max_element http://www.cplusplus.com/reference/algorithm/max_element/
+  * std::minmax_element https://www.cplusplus.com/reference/algorithm/minmax_element/
 
 Algorithms library https://en.cppreference.com/w/cpp/algorithm
 - **Non-modifying sequence operations**
