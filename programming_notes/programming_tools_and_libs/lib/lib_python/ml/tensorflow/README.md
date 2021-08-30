@@ -15,3 +15,7 @@ Deep playground http://playground.tensorflow.org/
 # 其他
 
 tensorflow中的Embedding操作详解 - 申小明77的文章 - 知乎 https://zhuanlan.zhihu.com/p/85802954
+
+Tensorflow eager execution 模式 - 书生意气的文章 - 知乎 https://zhuanlan.zhihu.com/p/47201474
+
+终于！TensorFlow引入了动态图机制Eager Execution https://www.jiqizhixin.com/articles/2017-11-01-12
