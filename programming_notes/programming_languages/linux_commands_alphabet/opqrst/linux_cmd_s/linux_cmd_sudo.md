@@ -20,6 +20,10 @@ sudo https://en.wikipedia.org/wiki/Sudo
 - > `sudo` 命令与安全策略配合使用，安全策略可以通过文件 `/etc/sudoers` 来配置。其安全策略具有高度可拓展性，支持插件扩展。
 - > 默认情况下 `/etc/sudoers` 是不能被任何人直接编辑的，因为它的权限是 440，虽然也可以对其赋予写权限后再编辑，但推荐使用 `visudo` 命令编辑该文件。
 
+如何在 Linux 中配置 sudo 访问权限 https://linux.cn/article-10746-1.html || How To Configure sudo Access In Linux? https://www.2daygeek.com/how-to-configure-sudo-access-in-linux/
+
+linux 为普通用户配置sudo权限 https://www.cnblogs.com/renshengdezheli/p/13950504.html
+
 # 个人实战
 
 ## 技巧1：不用root密码切换到root用户
