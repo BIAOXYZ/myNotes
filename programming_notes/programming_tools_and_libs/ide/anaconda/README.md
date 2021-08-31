@@ -71,6 +71,28 @@ How To Install the Anaconda Python Distribution on Debian 9 https://www.digitalo
     curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
     bash Anaconda3-5.2.0-Linux-x86_64.sh
     ```
+    ```sh
+    # 个人实战用的语句也差不多：
+    mkdir packages && cd packages/
+    wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+    bash Anaconda3-2021.05-Linux-x86_64.sh
+    
+    # 此外，虽然官方推荐 Linux 环境下自动让 anaconda 改 PATH，但是还是选了 no，
+    # 然后自己手动把 /home/<your_user_name>/anaconda3/bin 添加到了 PATH，感觉这样灵活性更高。
+    
+    # 这句添加进 ~/.bashrc
+    export PATH=$PATH:/home/<your_user_name>/anaconda3/bin
+    # 想切换的时候必须先额外执行这个才能让命令行前面有 anaconda 的环境名字
+    source ~/anaconda3/bin/activate
+    # 然后就可以自由切换环境了，比如 root 用户下过程是这样的：
+    $ source /root/anaconda3/bin/activate
+    (base) $ 
+    (base) $ conda activate py2
+    (py2) $ 
+    (py2) $ conda deactivate
+    (base) $ conda deactivate
+    $     
+    ```
     >> //notes：安装过程中有一步还是比较关键的，就是要把 `conda` 添加到 `PATH`（如果window，官方推荐是***不添加***；Linux和MAC，官方推荐的是***添加***，但是***不要手动添加***。并且官方给出了在这一步万一因为填错或者因为超时自动填 `no` 时的解决办法，参见官方FAQ部分吧）
 - > **Updating Anaconda**
   * > You should regularly ensure that Anaconda is up-to-date so that you are working with all the latest package releases. To do this, you should first update the conda utility:
