@@ -6,6 +6,8 @@
 
 ## 个人实战1（用的还是人家原文里的例子）
 
+### pybind11 安装
+
 ```sh
 # 其他的比如 cmake、boost 之类的机器上已经有了，故省略。【2】里有更详细的安装过程。
 python3 -m pip install pytest
@@ -18,6 +20,8 @@ cmake ..
 make check -j 4
 sudo make install
 ```
+
+### pybind11 基本例子
 
 ```cpp
 //syszux.cpp
@@ -95,5 +99,57 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import syszux
 >>> syszux.syszuxAdd(3,4)
 7
+>>>
+```
+
+### pybind11 绑定 C++ 类
+
+```cpp
+// class_pybind.cpp
+
+#include <pybind11/pybind11.h>
+#include <iostream>
+
+class CivilNet {
+    public:
+        CivilNet(const std::string &name) : name_(name) { }
+        void setName(const std::string &name) { name_ = name; }
+        const std::string &getName() const { return name_; }
+    private:
+        std::string name_;
+};
+
+PYBIND11_MODULE(syszux, m) {
+    pybind11::class_<CivilNet>(m, "CivilNet")
+        .def(pybind11::init<const std::string &>())
+        .def("setName", &CivilNet::setName)
+        .def("getName", &CivilNet::getName);
+}
+```
+
+```sh
+$ g++ -O3 -Wall -shared -std=c++11 -fPIC `python3 -m pybind11 --includes` class_pybind.cpp -o syszux`python3-config --extension-suffix`
+$ 
+$ python3
+Python 3.5.3 (default, Apr  5 2021, 09:00:41)
+[GCC 6.3.0 20170516] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import syszux
+>>> 
+>>> dir(syszux)
+['CivilNet', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
+>>>
+>>> x = syszux.CivilNet('gemfield')
+>>>
+>>> x.getName
+<bound method PyCapsule.getName of <syszux.CivilNet object at 0x7f7bab410a40>>
+>>>
+>>> x.getName()
+'gemfield'
+>>>
+>>> x.setName('civilnet')
+>>>
+>>> x.getName()
+'civilnet'
 >>>
 ```
