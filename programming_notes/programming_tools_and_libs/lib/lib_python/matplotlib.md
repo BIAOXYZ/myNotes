@@ -23,6 +23,8 @@ python matplotlib从文件中读取数据绘制散点图 https://blog.csdn.net/v
 
 Python 绘图，我只用 Matplotlib（三）—— 柱状图 https://www.jianshu.com/p/3170304baf55
 
+Python绘图问题：Matplotlib中%matplotlib inline是什么、如何使用？ https://blog.csdn.net/liangzuojiayi/article/details/78183783
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # matplotlib其他
