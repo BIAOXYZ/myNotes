@@ -36,6 +36,8 @@ Python OrderedDict https://www.askpython.com/python-modules/python-ordereddict
 
 collections之OrderedDict - 程序员Egon老湿的文章 - 知乎 https://zhuanlan.zhihu.com/p/110407087
 
+Python字典(Dictionary)操作全解【创建、读取、修改、添加、删除、有序字典、浅复制、排序】 https://blog.csdn.net/sinat_28576553/article/details/105407822
+
 # defaultdict
 
 Using the Python defaultdict Type for Handling Missing Keys https://realpython.com/python-defaultdict/

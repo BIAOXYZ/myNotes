@@ -25,3 +25,8 @@ Python 中的range(),arange()函数 https://blog.csdn.net/qianwenhong/article/de
 np.linspace(): Create Evenly or Non-Evenly Spaced Arrays https://realpython.com/np-linspace-numpy/
 
 【NumPy】 快速构建 ndarray 对象（np.empty、np.full、np.titl、np.r_、np.linspace） https://blog.csdn.net/tz_zs/article/details/87698697
+
+Numpy.array()详解 、np.array与np.asarray辨析、 np.array和np.ndarry的区别 https://blog.csdn.net/sinat_28576553/article/details/89047893
+
+Python中Numpy.append的用法解析 https://blog.csdn.net/sinat_28576553/article/details/90247286
+- > 之前只见过列表list的append方法，昨天写代码的时候，看到了numpy库的append方法，记录一下。简单的说，该方法功能就是**将一个数组附加到另一个数组的尾部**。

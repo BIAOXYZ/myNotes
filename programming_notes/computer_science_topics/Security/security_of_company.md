@@ -179,6 +179,7 @@ TF-Encrypted https://tf-encrypted.io/
 TF-Encrypted MPC 多方计算代码阅读 - 哈利法的文章 - 知乎 https://zhuanlan.zhihu.com/p/368881623
 
 在 TensorFlow 中使用安全计算实现隐私保护机器学习 - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/396553029
+- > 文章下载地址： Private Machine Learning in TensorFlow using Secure Computation https://arxiv.org/pdf/1810.08130v2.pdf
 
 ## 小型项目
 
