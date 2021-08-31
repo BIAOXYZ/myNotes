@@ -84,7 +84,8 @@ How To Install the Anaconda Python Distribution on Debian 9 https://www.digitalo
     export PATH=$PATH:/home/<your_user_name>/anaconda3/bin
     # 想切换的时候必须先额外执行这个才能让命令行前面有 anaconda 的环境名字
     source ~/anaconda3/bin/activate
-    # 然后就可以自由切换环境了，比如 root 用户下过程是这样的：
+        
+    # 然后就可以自由切换环境了，比如 root 用户下过程是这样的（注意命令提示符的变化）：
     $ source /root/anaconda3/bin/activate
     (base) $ 
     (base) $ conda activate py2
