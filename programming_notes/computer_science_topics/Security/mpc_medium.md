@@ -37,6 +37,10 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 其他
 
+隐私计算简析、前瞻及实践 ——附工、农、建、交、微众等5家行应用实践 https://mp.weixin.qq.com/s/AYQAHGf00D-jg8keTIvMPQ
+
+打造数据安全流通与融合应用新标杆——光大银行上线首个企业级多方安全计算平台 https://mp.weixin.qq.com/s/t06-x1qesqTwJW2XaNWLXA
+
 从顶级会议看网络空间安全领域应用基础研究 https://mp.weixin.qq.com/s/0DcEwP1regJNJQs4akg56g
 
 《腾讯隐私计算白皮书2021》重磅发布｜附下载 https://mp.weixin.qq.com/s/4-ey1BTuSghhmHr7Xk8V5Q  【`腾讯研究院`】

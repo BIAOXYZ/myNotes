@@ -9,3 +9,12 @@ pybind11 — Seamless operability between C++11 and Python https://pybind11.read
 # 其他
 
 pybind11的最佳实践 - Gemfield的文章 - 知乎 https://zhuanlan.zhihu.com/p/192974017
+
+pybind11 https://mikethreeacer.medium.com/pybind11-4f538dbbc946
+
+pybind11 for C++14/C++17 https://stackoverflow.com/questions/63682868/pybind11-for-c14-c17
+- https://stackoverflow.com/questions/63682868/pybind11-for-c14-c17/63711626#63711626
+  * > Yes, it works with C++11/14/17/20, see [corresponding section](https://pybind11.readthedocs.io/en/stable/compiling.html#configuration-variables) in docs.
+    ```console
+    By default, pybind11 will compile modules with the compiler default or the minimum standard required by pybind11, whichever is higher.
+    ```
