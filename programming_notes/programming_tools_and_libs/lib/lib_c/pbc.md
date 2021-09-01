@@ -604,9 +604,9 @@ apt update
 apt install -y g++ flex bison m4
 
 mkdir packages && cd packages/
+
 wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
 tar xvJf gmp-6.1.2.tar.xz
-
 cd gmp-6.1.2/
 ./configure
 make
@@ -616,7 +616,6 @@ sudo make install
 cd ..
 wget https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz
 tar -xzvf pbc-0.5.14.tar.gz
-
 cd pbc-0.5.14/
 ./configure
 make
@@ -630,7 +629,6 @@ g;
 [1537856473291356396691886261132155183792678611630435500440380859287863968689924343696586326959531962300549688140837035067971255277621329474680494241465908, 2720323835684916315562676117157510050963420553457708825205339835427463792306867315124218215967372026110959843537274118769519344644219016613823312537312733]
 
 ```
-
 
 ```sh
 # 这里基本沿用了第 3 部分编译自己例子的过程，可以参照着对比着看。
@@ -646,6 +644,7 @@ compilation terminated.
 # 把类似 #include <pbc.h> 改成 #include "/usr/local/include/pbc/pbc.h"
 # 但其实可以用不入侵源文件的方式，也就是每次用 -I 参数加上头文件的路径
 
+# 先看看 /usr/local/include/ 里都有啥：
 $ ll /usr/local/include/
 total 96
 drwxr-xr-x  3 root root  4096 Sep  1 07:39 ./
@@ -684,13 +683,23 @@ bls2.c:(.text+0xb01): undefined reference to `pairing_clear'
 collect2: error: ld returned 1 exit status
 $ 
 
-# 通过 -I 解决头文件问题后，下面这个错误属于常见的没有链接pbc和gmp库，链接一下即可。整体命令为：
+# 通过 -I 解决头文件问题后，上面那个错误属于常见的没有链接pbc和gmp库的问题，链接一下即可。整体命令为：
 $ gcc bls2.c -o blstest -I/usr/local/include -I/usr/local/include/pbc -L. -lpbc -lgmp
-$ 
 
+# 至此，编译成功。但是要正确运行，还没有完。
+```
+
+```sh
 $ ./blstest < ~/packages/pbc-0.5.14/param/a.param
 ./blstest: error while loading shared libraries: libpbc.so.1: cannot open shared object file: No such file or directory
 $ 
+
+# 解决这个问题当然也可以用 ldconfig 的办法，比如（其实前面也有，但是前面的还得 cd 换目录，这里直接原地搞定）：
+cat << EOF > /etc/ld.so.conf.d/libpbc.conf
+/usr/local/lib
+EOF
+ldconfig -v
+
 $ export LD_LIBRARY_PATH=/usr/local/lib
 $ 
 $ ./blstest < ~/packages/pbc-0.5.14/param/a.param
