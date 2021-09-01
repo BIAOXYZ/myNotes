@@ -81,6 +81,9 @@ Rosetta https://github.com/LatticeX-Foundation/Rosetta
 - 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
 - 隐私 AI 框架中的数据流动与工程实现 https://www.infoq.cn/article/QO2LTgqDFr3AItJTBsp4
 
+Rosetta-IO https://github.com/LatticeX-Foundation/Rosetta-IO/blob/main/README_CN.md
+- > Rosetta-IO是Rosetta的一个基础组件，对Rosetta提供IO服务。Rosetta-IO中的通道一旦被建立，就能够发送数据给其它节点或者从其它节点接收数据。在Rosetta-IO，`节点`通过`节点ID`来区分，它是TCP连接的一端。每个节点都有全局的(`主机`, `端口`)元组，`主机`是`IP地址`或者`域名`，`端口`是`TCP监听端口`。
+
 ## 富数科技
 
 - https://www.fudata.cn/fmpc
