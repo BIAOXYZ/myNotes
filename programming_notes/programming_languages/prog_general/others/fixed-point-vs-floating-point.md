@@ -25,7 +25,7 @@ Fixed Point and Floating Point Number Representations https://www.tutorialspoint
 - > **Example** − Suppose number is using `32`-bit format: the `1` bit sign bit, `8` bits for signed exponent, and `23` bits for the fractional part. ***The leading bit 1 is not stored*** (as it is always 1 for a normalized number) and is referred to as a “hidden bit”.
   * > Then `-53.5` is normalized as  $-53.5 = (-110101.1)_2 = (-1.101011) \times 2^5$, which is represented as following below,
   * > ![](https://www.tutorialspoint.com/assets/questions/media/18154/36_6.jpg)
-    >> //notes：注意图里 Mantissa part 里首位的1（该部分最左边——其实际对应的是原来的形式里小数点左边那唯一个1）被省略了，这也是约定。
+    >> //notes：注意图里 Mantissa part 的表示形式里其实是省略了一个1的（省略的是原来的形式里小数点左边唯一一个1 —— 具体说就是：`-1.101011` 里小数点左边唯一的那个1，只剩下小数点右边的 `101011`），这也是约定。
   * > Where `00000101` is the `8`-bit binary value of exponent value `+5`.
 
 为什么叫浮点数? - 知乎 https://www.zhihu.com/question/19848808
