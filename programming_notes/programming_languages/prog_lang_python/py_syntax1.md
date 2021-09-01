@@ -13,6 +13,8 @@ python黑魔法---迭代器（iterator） https://www.jianshu.com/p/dcf83643deeb
   * > from: [Iterables vs. Iterators vs. Generators](https://nvie.com/posts/iterators-vs-generators/)
     + > ![](https://pic4.zhimg.com/80/v2-95b4076d30e55da078045cdade28cea3_1440w.jpg)
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # yield
 
 What does the “yield” keyword do? https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
@@ -20,6 +22,8 @@ What does the “yield” keyword do? https://stackoverflow.com/questions/231767
 Python中yield和yield from的用法 https://www.cnblogs.com/cnkai/p/7514828.html
 
 Python | yield Keyword https://www.geeksforgeeks.org/python-yield-keyword/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # nonlocal关键字
 
@@ -86,6 +90,8 @@ Python nonlocal statement https://stackoverflow.com/questions/1261875/python-non
   # global: 2
   ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `@`装饰器
 
 `7. Decorators` https://book.pythontips.com/en/latest/decorators.html || https://github.com/yasoob/intermediatePython/blob/master/decorators.rst
@@ -95,6 +101,11 @@ Python 函数装饰器 https://www.runoob.com/w3cnote/python-func-decorators.htm
 12步教你理解Python装饰器 https://foofish.net/python-decorator-12.html
 
 python @property的用法及含义全面解析 https://www.jb51.net/article/134148.htm
+
+Python中的注解“@” https://www.jianshu.com/p/7a644520418b
+- > Python3.0之后加入新特性Decorators，以`@`为标记修饰function和class。有点类似c++的宏和java的注解。Decorators用以修饰约束function和class，分为带参数和不带参数，影响原有输出，例如类静态函数我们要表达的时候需要函数前面加上修饰 `@staticmethod` 或 `@classmethod`,为什么这样做呢？下面用简单的例子来看一下，具体内容可以查看：[官方解释](https://www.python.org/dev/peps/pep-0318/)
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 函数和类的嵌套
 
@@ -125,3 +136,15 @@ Python类变量与成员变量 https://blog.csdn.net/u013940664/article/details/
 python中类变量与成员变量的使用注意点总结 https://www.jb51.net/article/112525.htm
 
 Python-类变量，成员变量，静态变量，类方法，静态方法，实例方法，普通函数 https://www.cnblogs.com/20150705-yilushangyouni-Jacksu/p/6238187.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他
+
+## 函数参数中 `*` 和 `**`
+
+Python函数中`*`和`**`的内涵究竟是什么呢？ - 知乎 https://www.zhihu.com/question/265519629
+- `Python函数中*和**的内涵究竟是什么呢？` - 按部就班的回答 - 知乎 https://www.zhihu.com/question/265519629/answer/295435756
+- `Python函数中*和**的内涵究竟是什么呢？` - 留德华叫兽的回答 - 知乎 https://www.zhihu.com/question/265519629/answer/509771174
+
+`Python 函数参数前面一个星号（*）和两个星号（**）的区别` https://www.runoob.com/w3cnote/python-one-and-two-star.html

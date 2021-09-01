@@ -12,7 +12,9 @@ Deep playground http://playground.tensorflow.org/
 - > 如果您熟悉 [NumPy](https://numpy.org/devdocs/user/quickstart.html)，就会知道张量与 `np.arrays` 有一定的相似性。
 - > 就像 Python 数值和字符串一样，所有张量都是不可变的：永远无法更新张量的内容，只能创建新的张量。
 
-创建运算 https://www.tensorflow.org/guide/create_op
+创建运算 || Create an op https://www.tensorflow.org/guide/create_op
+
+tf.Operation https://www.tensorflow.org/api_docs/python/tf/Operation
 
 初学者的 TensorFlow 2.0 教程 https://tensorflow.google.cn/tutorials/quickstart/beginner
 
@@ -34,11 +36,19 @@ TensorFlow 如何入门，如何快速学习？ - 知乎 https://www.zhihu.com/q
 
 tensorflow中的Embedding操作详解 - 申小明77的文章 - 知乎 https://zhuanlan.zhihu.com/p/85802954
 
+## Eager Execution
+
 Tensorflow eager execution 模式 - 书生意气的文章 - 知乎 https://zhuanlan.zhihu.com/p/47201474
 
 终于！TensorFlow引入了动态图机制Eager Execution https://www.jiqizhixin.com/articles/2017-11-01-12
 
 TensorFlow小白教程：Session基础教程 https://juejin.cn/post/6844903888303161351
+
+## tf.Operation
+
+初步理解 TensorFlow 的 operation - lonlon ago的文章 - 知乎 https://zhuanlan.zhihu.com/p/32399032
+
+以线性回归为例，深入理解tensorflow的Operation、Tensor、Node的区别 https://blog.csdn.net/qq_27825451/article/details/105854164
 
 # 自定义op
 
