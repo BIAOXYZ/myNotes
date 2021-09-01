@@ -16,6 +16,8 @@ Database of Databases
 - Redis 中的事件循环 https://draveness.me/redis-eventloop
 - Redis 是如何处理命令的（客户端） https://draveness.me/redis-cli
 
+万字总结Redis知识点 https://mp.weixin.qq.com/s/uIdJN67CCD5GUvCCBZIwpw
+
 # [MongoDB](https://www.mongodb.com/)
 
 【from draveness】:
