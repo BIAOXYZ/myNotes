@@ -18,3 +18,16 @@ tensorflow2.0入门与实战 2019年最通俗易懂的课程 https://www.bilibil
 - P9 8.逻辑回归与交叉熵 https://www.bilibili.com/video/BV1Zt411T7zE?p=9
   * > `3:00`: ***平方差所惩罚的是与损失为同一数量级的情形***。对于分类问题，我们最好使用`交叉熵损失函数`会更有效。交叉熵会输出一个更大的“损失”。
     >> //notes：个人觉得这个观点也算是有点道理吧。比如feature值都很大（房价），但是预测结果就是0和1（买或者不买），确实有量级的差距（但是这个时候一般不都是用feature value缩放嘛）。
+- P10 9.逻辑回归实现 https://www.bilibili.com/video/BV1Zt411T7zE?p=10
+  * > `0:45`: 对于没有列名那一行（也就是第一行就是数据行）的数据集，`pd.read_csv()` 时加上 `header=None`。
+  * > `1:25`: `data.iloc[:, -1].value_counts()` 方法，统计名为 `data`（该数据集最后一列为label）的数据集的最后一列的值的情况。
+    ```console
+    1     357
+    -1    296
+    Name: 15,  dtype: int64 
+    ```
+  * > `3:20`: 从数据集 `data` 中分别取训练集和标签，并且把标签里的 -1 换成 0。
+    ```py
+    x = data.iloc[:, :-1]
+    y = data.iloc[:, -1].replace(-1, 0)
+    ```
