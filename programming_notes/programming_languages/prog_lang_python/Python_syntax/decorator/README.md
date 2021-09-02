@@ -40,7 +40,7 @@ Python - @property 方法变属性 https://segmentfault.com/a/1190000017078783  
               raise ValueError('score must between 0 ~ 100!')
           self._score = value
   ```
-- > `@property` 的实现比较复杂，我们先考察如何使用。把一个 `getter` 方法变成属性，只需要加上 `@property` 就可以了，此时，`@property` 本身又创建了另一个装饰器 `@score.setter`，负责把一个 `setter` 方法变成属性赋值，于是，我们就拥有一个可控的属性操作：
+  > `@property` 的实现比较复杂，我们先考察如何使用。把一个 `getter` 方法变成属性，只需要加上 `@property` 就可以了，此时，`@property` 本身又创建了另一个装饰器 `@score.setter`，负责把一个 `setter` 方法变成属性赋值，于是，我们就拥有一个可控的属性操作：
   ```py
   >>> s = Student()
   >>> s.score = 60 # OK，实际转化为s.set_score(60)
@@ -62,6 +62,7 @@ Python - @property 方法变属性 https://segmentfault.com/a/1190000017078783  
           return self.birth
   ```
   > 这是因为调用 `s.birth` 时，首先转换为方法调用，在执行 `return self.birth` 时，又视为访问 `self` 的属性，于是又转换为方法调用，造成无限递归，最终导致栈溢出报错 `RecursionError`。
-- > `@property` 广泛应用在类的定义中，可以让调用者写出简短的代码，同时保证对参数进行必要的检查，这样，程序运行时就减少了出错的可能性。
+- > **小结**
+  * > `@property` 广泛应用在类的定义中，可以让调用者写出简短的代码，同时保证对参数进行必要的检查，这样，程序运行时就减少了出错的可能性。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
