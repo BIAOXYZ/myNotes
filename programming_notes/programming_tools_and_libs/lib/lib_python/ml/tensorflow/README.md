@@ -53,3 +53,5 @@ TensorFlow小白教程：Session基础教程 https://juejin.cn/post/684490388830
 # 自定义op
 
 自定义Tensorflow OP开发经验总结 https://www.jianshu.com/p/7b82b6e6ca75
+
+Tensorflow上手3: 实现自己的Op https://mp.weixin.qq.com/s/MV3L_pZs_OJxyE43ZN8AsA

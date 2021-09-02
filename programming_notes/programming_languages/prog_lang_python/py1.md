@@ -108,7 +108,9 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 机器学习相关教程 https://morvanzhou.github.io/tutorials/ || https://github.com/MorvanZhou/tutorials 【其实这个人的教程的核心还是python，毕竟名字就叫“莫烦PYTHON”】
 
 《Python Cookbook》 3rd Edition Translation https://github.com/yidao620c/python3-cookbook
-> 在线阅读地址：http://python3-cookbook.readthedocs.org/zh_CN/latest
+- > 在线阅读地址：http://python3-cookbook.readthedocs.org/zh_CN/latest
+  * 第九章：元编程 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p09_meta_programming.html
+  * 第十二章：并发编程 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p12_concurrency.html
 
 Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师 | 中文资源 https://mp.weixin.qq.com/s/sRiRpcN9LVj81asESqWZaA
 
