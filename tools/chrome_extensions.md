@@ -135,6 +135,7 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
   * 解除B站区域限制 https://greasyfork.org/en/scripts/25718-%E8%A7%A3%E9%99%A4b%E7%AB%99%E5%8C%BA%E5%9F%9F%E9%99%90%E5%88%B6
   * Bilibili直播间挂机助手 https://greasyfork.org/en/scripts/37095-bilibili%E7%9B%B4%E6%92%AD%E9%97%B4%E6%8C%82%E6%9C%BA%E5%8A%A9%E6%89%8B  
   * 百度网盘直链下载助手 https://greasyfork.org/en/scripts/39504-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B
+  * 允许 CSDN 不登录复制代码 https://greasyfork.org/zh-CN/scripts/431043-%E5%85%81%E8%AE%B8-csdn-%E4%B8%8D%E7%99%BB%E5%BD%95%E5%A4%8D%E5%88%B6%E4%BB%A3%E7%A0%81
 - OpenUserJS https://openuserjs.org/
 - Sleazy https://sleazyfork.org/zh-CN/scripts
 
