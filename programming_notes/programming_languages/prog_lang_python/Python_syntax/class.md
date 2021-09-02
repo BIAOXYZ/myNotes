@@ -25,6 +25,118 @@ Inheritance in Python Inner Class https://www.geeksforgeeks.org/inheritance-in-p
 
 # 类成员变量与类变量
 
+【[:star:][`*`]】 python的类变量和成员变量 https://blog.csdn.net/lc_910927/article/details/38757363
+- 个人实战代码片段1:
+  * `val1` -- `类变量`
+  * `val2` -- 在 `__init__()` 函数里的 `(类)成员变量`
+  * `val4`，`val5` -- 不在 `__init__()` 函数里的 `(类)成员变量`
+  * `val3` -- `(类内)局部变量`
+```py
+class TestClass(object):
+    val1 = 100
+    
+    def __init__(self):
+        self.val2 = 200
+    
+    def fcn(self,val = 400):
+        val3 = 300
+        self.val4 = val
+        self.val5 = 500 
+
+inst = TestClass()
+
+print TestClass.val1
+print inst.val1
+print inst.val2
+print inst.val3
+print inst.val4    
+print inst.val5
+##################################################
+100
+100
+200
+Traceback (most recent call last):
+  File "main.py", line 19, in <module>
+    print inst.val3
+AttributeError: 'TestClass' object has no attribute 'val3'
+```
+- 个人实战代码片段2:
+  * 【[:star:][`*`]】 //notes：`val3` 是个（类内的）`局部变量`，它就不可能被类外访问到。但是 `val4` 和 `val5` 同样是`类成员变量`，它俩和 `val2` 的唯一不同就是：人家 `val2` 是 `__init__` 管的，只要有类实例就能直接用；但是**它俩必须所在的函数被调用了才能用**。
+```py
+class TestClass(object):
+    val1 = 100
+    
+    def __init__(self):
+        self.val2 = 200
+    
+    def fcn(self,val = 400):
+        val3 = 300
+        self.val4 = val
+        self.val5 = 500 
+
+inst = TestClass()
+
+print TestClass.val1
+print inst.val1
+print inst.val2
+
+inst.fcn(10000)
+
+#print inst.val3
+print inst.val4    
+print inst.val5
+##################################################
+100
+100
+200
+10000
+500
+```
+- 个人实战代码片段3:
+  * 如果要修改`类变量`的值，一定要用 `类名.类变量名` 的形式去改，而不要用 `类实例.类变量名` 的形式去修改。后者只是改了自己的副本里的`类变量`的值，无法同步到其他类实例上。
+  * 原文里是这么说的：`可以发现：python的类变量和C++的静态变量不同，区别在于python的对象使用类变量时，会进行一次内存拷贝。python中，类本身拥有自己的类变量（保存在内存），当对象第一次调用类变量时，会将当前类变量拷贝一份给这个对象，当前类变量的值是多少，这个对象拷贝得到的类变量的值就是多少；而且，通过对象来修改类变量，并不会影响其他对象的类变量的值，因为大家都有各自的副本，更不会影响类本身所拥有的那个类变量的值；只有类自己才能改变类本身拥有的类变量的值。`
+```py
+class TestClass(object):
+    val1 = 100
+    
+    def __init__(self):
+        self.val2 = 200
+    
+    def fcn(self,val = 400):
+        val3 = 300
+        self.val4 = val
+        self.val5 = 500 
+ 
+inst1 = TestClass()
+inst2 = TestClass()
+
+print TestClass.val1 # 100
+print inst1.val1     # 100
+
+inst1.val1 = 1000    
+print inst1.val1     # 1000
+print TestClass.val1 # 100
+
+TestClass.val1 = 2000 
+print inst1.val1     # 1000
+print TestClass.val1 # 2000
+print inst2.val1     # 2000     
+
+inst3 = TestClass()  
+print inst3.val1     # 2000
+##################################################
+100
+100
+1000
+100
+1000
+2000
+2000
+2000
+```
+
+【[:star:][`*`]】 Python类变量、实例（成员）变量和局部变量 https://blog.csdn.net/Strive_0902/article/details/105325065
+
 Python类变量与成员变量 https://blog.csdn.net/u013940664/article/details/53731234
 
 python中类变量与成员变量的使用注意点总结 https://www.jb51.net/article/112525.htm
