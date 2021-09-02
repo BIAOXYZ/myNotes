@@ -1,5 +1,5 @@
 
-【[:star:][`*`]】 Python Decorators https://www.programiz.com/python-programming/decorator
+【[:star:][:star:][`*`]】 Python Decorators https://www.programiz.com/python-programming/decorator
 - > A decorator ***takes in a function, adds some functionality and returns it***. In this tutorial, you will learn how you can create a decorator and why you should use it.
 - > **Decorators in Python**
   * > Python has an interesting feature called **`decorators`** to add functionality to an existing code.
@@ -19,9 +19,9 @@
     Hello
     ```
     > When you run the code, both functions `first` and `second` give the same output. Here, the names `first` and `second` refer to ***the same function object***.
-  * > Functions can be passed as arguments to another function.
+  * > Functions ***can be passed as arguments to another function***.
   * > If you have used functions like ***`map`***, ***`filter`*** and ***`reduce`*** in Python, then you already know about this.
-  * > Such functions that take other functions as arguments are also called **`higher order functions`**. Here is an example of such a function.
+  * > Such functions that ***take other functions as arguments*** are also called **`higher order functions`**. Here is an example of such a function.
     ```py
     def inc(x):
         return x + 1
@@ -38,7 +38,7 @@
     >>> operate(dec,3)
     2
     ```
-  * > Furthermore, a function can return another function.
+  * > Furthermore, ***a function can return another function***.
     ```py
     def is_called():
         def is_returned():
@@ -56,7 +56,7 @@
 - > **Getting back to Decorators**
   * > Functions and methods are called **`callable`** as they can be called.
   * > In fact, any object which implements the special `__call__()` method is termed `callable`. So, in the most basic sense, ***<ins>a `decorator` is a `callable` that returns a `callable`</ins>***.
-  * > Basically, a decorator ***takes in a function, adds some functionality and returns it***.
+  * > Basically, a ***`decorator` takes in a function, adds some functionality and returns it***.
     ```py
     def make_pretty(func):
         def inner():
@@ -81,12 +81,12 @@
     pretty = make_pretty(ordinary)
     ```
     > The function `ordinary()` got decorated and the returned function was given the name `pretty`.
-  * > We can see that ***the decorator function added some new functionality to the original function***. This is ***<ins>similar to packing a gift. The decorator acts as a wrapper</ins>***. The nature of ***<ins>the object that got decorated (actual gift inside) does not alter. But now, it looks pretty (since it got decorated)</ins>***.
-  * > Generally, we decorate a function and reassign it as,
+  * > 【[:star:][`*`]】 We can see that ***the decorator function added some new functionality to the original function***. This is ***<ins>similar to packing a gift. The decorator acts as a wrapper</ins>***. The nature of ***<ins>the object that got decorated (actual gift inside) does not alter. But now, it looks pretty (since it got decorated)</ins>***.
+  * > Generally, we ***decorate a function and reassign it*** as,
     ```py
     ordinary = make_pretty(ordinary)
     ```
-    > This is a common construct and for this reason, Python has a syntax to simplify this.
+    > This is a common construct and for this reason, ***Python has a syntax to simplify this***.
   * > We can use the `@` symbol along with the name of the decorator function and place it above the definition of the function to be decorated. For example,
     ```py
     @make_pretty
@@ -141,4 +141,75 @@
     I am going to divide 2 and 0
     Whoops! cannot divide
     ```
+    > In this manner, we can decorate functions that take parameters.
+  * > A keen observer will notice that parameters of the nested `inner()` function inside the decorator is the same as the parameters of functions it decorates. Taking this into account, now we can ***make general decorators that work with any number of parameters***.
+    > 
+    > In Python, this magic is done as `function(*args, **kwargs)`. In this way, `args` will be the [tuple](https://www.programiz.com/python-programming/tuple) of positional arguments and `kwargs` will be the [dictionary](https://www.programiz.com/python-programming/dictionary) of keyword arguments. An example of such a decorator will be:
+    ```py
+    def works_for_all(func):
+        def inner(*args, **kwargs):
+            print("I can decorate any function")
+            return func(*args, **kwargs)
+        return inner
+    ```
 - > **Chaining Decorators in Python**
+  * > Multiple decorators can be chained in Python.
+  * > This is to say, a function can be decorated multiple times with different (or same) decorators. We simply place the decorators above the desired function.
+    ```py
+    def star(func):
+        def inner(*args, **kwargs):
+            print("*" * 30)
+            func(*args, **kwargs)
+            print("*" * 30)
+        return inner
+    
+    def percent(func):
+        def inner(*args, **kwargs):
+            print("%" * 30)
+            func(*args, **kwargs)
+            print("%" * 30)
+        return inner
+    
+    @star
+    @percent
+    def printer(msg):
+        print(msg)
+    
+    printer("Hello")
+    ```
+    > Output
+    ```console
+    ******************************
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Hello
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    ******************************
+    ```
+  * > The above syntax of,
+    ```py
+    @star
+    @percent
+    def printer(msg):
+        print(msg)
+    ```
+    > is equivalent to
+    ```py
+    def printer(msg):
+        print(msg)
+    printer = star(percent(printer))
+    ```
+    > The order in which we chain decorators matter. If we had reversed the order as,
+    ```py
+    @percent
+    @star
+    def printer(msg):
+        print(msg)
+    ```
+    > The output would be:
+    ```console
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    ******************************
+    Hello
+    ******************************
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    ```
