@@ -1,5 +1,5 @@
 
-Python Decorators https://www.programiz.com/python-programming/decorator
+【[:star:][`*`]】 Python Decorators https://www.programiz.com/python-programming/decorator
 - > A decorator ***takes in a function, adds some functionality and returns it***. In this tutorial, you will learn how you can create a decorator and why you should use it.
 - > **Decorators in Python**
   * > Python has an interesting feature called **decorators** to add functionality to an existing code.
@@ -38,3 +38,20 @@ Python Decorators https://www.programiz.com/python-programming/decorator
     >>> operate(dec,3)
     2
     ```
+  * > Furthermore, a function can return another function.
+    ```py
+    def is_called():
+        def is_returned():
+            print("Hello")
+        return is_returned
+    
+    new = is_called()
+    
+    # Outputs "Hello"
+    new()
+    ##################################################
+    Hello
+    ```
+  * > Finally, we must know about [Closures in Python](https://www.programiz.com/python-programming/closure).
+- > **Getting back to Decorators**
+  * > Functions and methods are called **callable** as they can be called.
