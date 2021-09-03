@@ -109,6 +109,7 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 
 《Python Cookbook》 3rd Edition Translation https://github.com/yidao620c/python3-cookbook
 - > 在线阅读地址：http://python3-cookbook.readthedocs.org/zh_CN/latest
+  * 第八章：类与对象 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p08_classes_and_objects.html
   * 第九章：元编程 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p09_meta_programming.html
   * 第十二章：并发编程 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p12_concurrency.html
 
