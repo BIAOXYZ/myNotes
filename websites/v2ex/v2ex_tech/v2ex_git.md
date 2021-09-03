@@ -1,4 +1,6 @@
 
+.git objects 为什么要取前两个 字母作为文件夹再添加? https://www.v2ex.com/t/799743
+
 github actions 居然是能扩容的 https://www.v2ex.com/t/783934
 - > 我不太懂，你竟然能 ssh 到 github actions 的容器里？
   >> 用那种端口映射的服务
