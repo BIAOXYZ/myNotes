@@ -5,7 +5,7 @@ Python之abc模块 https://blog.csdn.net/haiyanggeng/article/details/81983627
 - > **1.为什么使用 `abc`？**
   * > Abstract base classes由一组接口组成，检查比 `hasattr()` 更严格。通过定义一个抽象基类，可以为一组子类定义一个通用的API。这对于第三方为应用提供插件等非常有用，另外当您在一个大型的团队中工作或在一个大型的代码库中，同时将所有的类放在您的头脑中是困难或不可能的时，它也可以帮助您。
 - > **2.`abc`怎么工作**
-  * > `abc` 通过把基类中的方法标记为抽象方法，并且注册具体类为基类的实现的方式工作。
+  * > `abc` 通过***把基类中的方法标记为抽象方法***，并且***注册具体类为基类的实现的方式***工作。
   * > 定义基类: `abc_base.py`
     ```py
     import abc
@@ -49,7 +49,7 @@ Python之abc模块 https://blog.csdn.net/haiyanggeng/article/details/81983627
     Subclass: True
     Instance: True
     ```
-  * > **b) 第一种方法：通过实现 `PluginBase` API，是派生**.
+  * > **b) 另一种方法：通过实现 `PluginBase` API，是派生**.
   * > `abc_subclass.py`
     ```py
     import abc
@@ -72,6 +72,47 @@ Python之abc模块 https://blog.csdn.net/haiyanggeng/article/details/81983627
     Subclass: True
     Instance: True
     ```
+  * > **两种方式的不同**：
+    + > `SubclassImplementation` 在 `PluginBase.__subclasses__()` 中，而 `RegisteredImplementation` 不在.
+    + > `SubclassImplementation` 必须实现 `PluginBase` 中的所有抽象方法，否则会在运行时报错；而 `RegisteredImplement` 不需要.
+- > **3.抽象方法的实现**
+  * > **在抽象类中抽象方法也可以提供通用的逻辑实现，这样具体类中就可以通过调用 `super()` 重用抽象方法的实现**.
+    ```py
+    import abc
+    from cStringIO import StringIO
+    
+    class ABCWithConcreteImplementation(object):
+        __metaclass__ = abc.ABCMeta
+    
+        @abc.abstractmethod
+        def retrieve_values(self, input):
+            print 'base class reading data'
+            return input.read()
+    
+    class ConcreteOverride(ABCWithConcreteImplementation):
+    
+        def retrieve_values(self, input):
+            base_data = super(ConcreteOverride, self).retrieve_values(input)
+            print 'subclass sorting data'
+            response = sorted(base_data.splitlines())
+            return response
+    
+    input = StringIO("""line one
+    line two
+    line three
+    """)
+    
+    reader = ConcreteOverride()
+    print reader.retrieve_values(input)
+    ```
+    > output:
+    ```console
+    base class reading data
+    subclass sorting data
+    ['line one', 'line three', 'line two']
+    ```
+- > **4.抽象特性(Abstract Properties)**
+  * > 如果你的API规范中还包括属性，那么你可以使用 `@abstractproperty` 来定义.
 
 ## 个人实战文章1
 
