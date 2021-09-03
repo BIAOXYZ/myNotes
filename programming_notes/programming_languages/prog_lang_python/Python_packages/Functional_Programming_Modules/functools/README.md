@@ -18,6 +18,7 @@ functools --- 高阶函数和可调用对象上的操作 https://docs.python.org
   * > 被包装的函数配有一个 `cache_parameters()` 函数，该函数返回一个新的 dict 用来显示 maxsize 和 typed 的值。 这只是出于显示信息的目的。 改变值没有任何效果。
   * > 为了衡量缓存的有效性以便调整 `maxsize` 形参，被装饰的函数带有一个 `cache_info()` 函数。当调用 `cache_info()` 函数时，返回一个具名元组，包含命中次数 hits，未命中次数 misses ，最大缓存数量 maxsize 和 当前缓存大小 currsize。在多线程环境中，命中数与未命中数是不完全准确的。
   * > 该装饰器也提供了一个用于清理/使缓存失效的函数 `cache_clear()`。
+- > `@functools.wraps(wrapped, assigned=WRAPPER_ASSIGNMENTS, updated=WRAPPER_UPDATES)` https://docs.python.org/zh-cn/3/library/functools.html#functools.wraps
 
 # 其他
 
