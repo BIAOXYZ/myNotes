@@ -5,7 +5,7 @@
 
 Python map() 函数 https://www.runoob.com/python/python-func-map.html
 - > map() 函数语法：`map(function, iterable, ...)`
-- > map() 会根据提供的函数对指定序列做映射。Python 2.x 返回列表。Python 3.x 返回迭代器。
+- > map() 会根据提供的函数对指定序列做映射。***Python 2.x 返回`列表`。Python 3.x 返回`迭代器`***。
 ```py
 # 个人实战
  
