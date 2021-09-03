@@ -1,11 +1,7 @@
 
 # 官方
 
-`2. Built-in Functions` https://docs.python.org/2.7/library/functions.html
-
-Built-in Functions https://docs.python.org/3.8/library/functions.html
-
-## `sorted()`
+# 其他
 
 排序指南 https://docs.python.org/zh-cn/3/howto/sorting.html || Sorting HOW TO https://docs.python.org/3/howto/sorting.html
 - > **基本排序**
@@ -35,40 +31,6 @@ Built-in Functions https://docs.python.org/3.8/library/functions.html
   * > 本 HOWTO 中给出的许多结构都假定为 Python 2.4 或更高版本。在此之前，没有内置 sorted() ， list.sort() 也没有关键字参数。相反，所有 Py2.x 版本都支持 cmp 参数来处理用户指定的比较函数。
   * > 在 Py3.0 中， cmp 参数被完全删除（作为简化和统一语言努力的一部分，消除了丰富的比较与 __cmp__() 魔术方法之间的冲突）。
 
-# 其他
-
-## `map()`
-
-Python map() 函数 https://www.runoob.com/python/python-func-map.html
-- > map() 函数语法：`map(function, iterable, ...)`
-- > map() 会根据提供的函数对指定序列做映射。Python 2.x 返回列表。Python 3.x 返回迭代器。
-```py
-# 个人实战
- 
->>> def square(x):
-...     return x ** 2
-... 
->>> map(square, [1,2,3,4,5])
-<map object at 0x7ff0b5ca5550>
->>> 
->>> map(lambda x: x ** 2, [1, 2, 3, 4, 5])
-<map object at 0x7ff0b5ca58e0>
->>> 
->>> map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
-<map object at 0x7ff0b5ca5940>
->>> 
->>> list(map(square, [1,2,3,4,5]))
-[1, 4, 9, 16, 25]
->>> 
->>> list(map(lambda x: x ** 2, [1, 2, 3, 4, 5]))
-[1, 4, 9, 16, 25]
->>> 
->>> list(map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10]))
-[3, 7, 11, 15, 19]
-```
-
-## `sorted()`
-
 python按照多个条件排序 https://blog.csdn.net/y12345678904/article/details/77507552
 ```py
 # 对tuple进行排序，先按照第一个元素升序，如果第一个元素相同，再按照第二个元素降序排列。
@@ -81,15 +43,3 @@ print(L)
 ```
 
 Python应用——自定义排序全套方案 - 承志的文章 - 知乎 https://zhuanlan.zhihu.com/p/108949863
-
-## `zip()`
-
-Using the Python zip() Function for Parallel Iteration https://realpython.com/python-zip-function/
-
-Python zip() https://www.programiz.com/python-programming/methods/built-in/zip
-
-zip() in Python https://www.geeksforgeeks.org/zip-in-python/
-
-Python zip() 函数 https://www.runoob.com/python/python-func-zip.html
-- > zip 方法在 Python 2 和 Python 3 中的不同：在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。如果需要了解 Pyhton3 的应用，可以参考 Python3 zip()。
-  >> Python3 zip() 函数 https://www.runoob.com/python3/python3-func-zip.html
