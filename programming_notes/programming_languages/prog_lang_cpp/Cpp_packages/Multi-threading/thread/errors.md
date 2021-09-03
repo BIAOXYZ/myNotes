@@ -35,5 +35,23 @@ std::thread “terminate called without an active exception” https://blog.csdn
 - > 原因是主线程在任务线程还没有执行完成就退出了，销毁了一些资源，导致任务线程就异常了。要修复这个问题也很简单，就是调用join，等待子线程执行完成，代码如下：
 
 C++ Thread: terminate called without an active exception https://stackoverflow.com/questions/37024545/c-thread-terminate-called-without-an-active-exception
+- https://stackoverflow.com/questions/37024545/c-thread-terminate-called-without-an-active-exception/37026636#37026636
+  * > Your code that creates the thread creates a stack variable that is immediately destroyed. You need to change this:
+    ```cpp
+    if(!isRepeatAllowed)
+    {
+        std::thread newThread(getUniqueInteger, arr, i, &newVal);
+        threadArr.push_back( &newThread);
+    }
+    ```
+    > to this:
+    ```cpp
+    if(!isRepeatAllowed)
+    {
+        std::thread* newThread = new std::thread(getUniqueInteger, arr, i, &newVal);
+        threadArr.push_back( newThread);
+    }
+    ```
+    > Then uncomment your delete line later on.
 
 C++ terminate called without an active exception https://stackoverflow.com/questions/7381757/c-terminate-called-without-an-active-exception
