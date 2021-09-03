@@ -17,3 +17,9 @@ Python抽象类（abc模块） https://www.cnblogs.com/Black-rainbow/p/9582826.h
   * > 抽象类的编程，让每个人可以关注当前抽象类的方法和描述，而不需要考虑过多的实现细节，这对协同开发有很大意义，也让代码可读性更高。
 
 Python之abc模块 https://blog.csdn.net/haiyanggeng/article/details/81983627
+- > **1.为什么使用 `abc`？**
+  * > Abstract base classes由一组接口组成，检查比 `hasattr()` 更严格。通过定义一个抽象基类，可以为一组子类定义一个通用的API。这对于第三方为应用提供插件等非常有用，另外当您在一个大型的团队中工作或在一个大型的代码库中，同时将所有的类放在您的头脑中是困难或不可能的时，它也可以帮助您。
+- > **2.`abc`怎么工作**
+  * > `abc` 通过把基类中的方法标记为抽象方法，并且注册具体类为基类的实现的方式工作。
+
+Python设计模式二：接口类和抽象类（Python接口设计） https://blog.csdn.net/weixin_42681866/article/details/113479049
