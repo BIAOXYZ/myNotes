@@ -31,3 +31,9 @@ tensorflow2.0入门与实战 2019年最通俗易懂的课程 https://www.bilibil
     x = data.iloc[:, :-1]
     y = data.iloc[:, -1].replace(-1, 0)
     ```
+- P11 10.softmax多分类 https://www.bilibili.com/video/BV1Zt411T7zE?p=11
+  * > `0:10`: ***对数几率回归***解决的是二分类的问题。对于多个选项的问题，我们可以使用 `softmax` 函数。它是***对数几率回归在N个可能不同的值上的推广***。
+  * > `0:30`: 神经网络的原始输出不是一个概率值，实质上只是***输入的数值做了复杂的加权和与非线性处理之后的一个值***而已，那么如何将这个输出变为概率分布？这就是Softmax层的作用。
+  * > `1:10`: softmax个样本分量之和为1。***当只有两个类别时，与对数几率回归完全相同***。
+  * > `2:00`: 在 `tf.keras` 里，对于多分类问题我们使用 `categorical_crossentropy` 和 `sparse_categorical_crossentropy` 来计算softmax交叉熵。
+  * > `3:20`: `Fashion MNIST` 的作用是成为经典 `MNIST` 数据集的简易替换。
