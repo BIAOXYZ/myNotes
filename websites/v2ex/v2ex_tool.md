@@ -99,6 +99,14 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
+Linux 能不能用虚拟机跑双系统呢 https://www.v2ex.com/t/799906
+```console
+就是有点像 parallel+bootcamp 这样的，用 bootcamp 安装 windows 之后，既可以宿主机启动两种系统，又可以在 mac 里通过虚拟机启动 windows
+```
+- > 你直接装个 PVE，里面建个 windows 虚拟机，把独显直通给 windows 虚拟机，然后用 LXC 导入键鼠核显跑 Linux 桌面，独显 DP 接显示器，核显 HDMI 也接显示器，这样直接切换信号源就行了，也可以 Linux 通过远程桌面访问 windows/windows 通过 ssh vnc 访问 Linux。 <br> 这样做不但性能没啥损失就多占用点内存，关键备份也方便直接快照，还能在加个 NAS 软路由之类虚拟机桥接在一起，这样文件共享也方便。我现在就这样干的
+  >> 差点忘了，笔记本的话不建议，因为电源和功耗管理 PVE 虽然也能加软件包解决，但是肯定用的不爽。 <br> 笔记本可以把 windows 装到 VHD 磁盘文件里，然后用 GRUB 启动，在 Linux 里直接用 vbox 启动 VHD 就和你说的一个效果
+- > 完全可以，我就这样用过，在 Linux 下用 root 权限几乎无所不能。我几年前的工作机就是 win7/deepin 双系统，在 Linux 下用 root 权限开 VMWare 挂载物理硬盘启动虚拟机即可让电脑同时运行 Linux 和 Win，接个双屏直接就像在用两台电脑一样。 <br> https://bbs.deepin.org/zh/post/136854 <br> 只需要把帖子里启动 VMWare 的命令换成 `echo "root password" | sudo -S vmware -X "$vmxPath" &` 即可
+
 电脑现在有必要装安全软件吗？ https://www.v2ex.com/t/797866
 - > 程序员不需要杀软吧。下载什么东西，心里都是有数的。实在是感觉危险的 `exe`。直接拖到 https://www.virustotal.com/gui/home/upload 里面线上杀毒。
 

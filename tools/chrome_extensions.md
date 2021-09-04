@@ -147,6 +147,8 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
   * 【感觉二箱完胜谷歌官方的以图搜图，所以可以只用二箱即可。】 二箱 以图搜图  https://chrome.google.com/webstore/detail/noobox-search-by-image/kidibbfcblfbbafhnlanccjjdehoahep
 - Copyfish 🐟 Free OCR Software https://chrome.google.com/webstore/detail/copyfish-%F0%9F%90%9F-free-ocr-soft/eenjdnjldapjajjofmldgmkjaienebbj
   * Chrome扩展推荐：超强的免费OCR文字扫描工具，网页视频PDF均可识别并翻译 https://post.smzdm.com/p/apzezlz7/ 【识别本地pdf除了要把pdf文件在chrome里打开外，还需要在浏览器里对该插件的设置项中允许“对文件url的访问”！】【如果翻译的是中文pdf，`Input Language (OCR Language)`也得选成中文。】【Firefox也有】
+  * 免费无限制断网还能用，这 OCR 文字识别工具神了 https://www.ithome.com/0/573/383.htm
+    + PearOCR文字识别 https://pearocr.com/
   * 白描网页版 https://web.baimiaoapp.com/
 - Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
 - Bookmark Sidebar https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh
