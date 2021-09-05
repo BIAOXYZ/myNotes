@@ -66,6 +66,9 @@ PrivateBin is a minimalist, open source online pastebin where the server has zer
 
 HLS标准加密 https://www.alibabacloud.com/help/zh/doc-detail/68612.htm
 
+Cryptocoding https://github.com/veorq/cryptocoding
+- > This page lists "coding rules" for implementations of cryptographic operations, and more generally for operations involving secret or sensitive values.
+
 ## practical/applied cryptography relevant books
 
 The CryptoParty Handbook https://github.com/cryptoparty/handbook

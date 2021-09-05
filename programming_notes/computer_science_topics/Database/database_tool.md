@@ -17,6 +17,10 @@ DB Fiddle - SQL Database Playground https://www.db-fiddle.com/
 
 Alternatives to DB Fiddle for all platforms with any license https://alternativeto.net/software/db-fiddle/
 
+Postgres Explain Visualizer 2 https://github.com/dalibo/pev2
+- > A VueJS component to show a graphical vizualization of a PostgreSQL execution plan.
+- > Dalibo service (recommended): https://explain.dalibo.com/
+
 # 异构数据同步工具
 
 异构数据库双向同步调研 https://blog.csdn.net/jingya_charmworker/article/details/81365604

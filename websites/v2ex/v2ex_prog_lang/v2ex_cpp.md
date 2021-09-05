@@ -1,4 +1,6 @@
 
+作为库作者，如何优雅地劫持 malloc https://www.v2ex.com/t/800023
+
 c++中，`char*` 如何转换成 `std::shared_ptr<std::iostream>`？ https://www.v2ex.com/t/790826
 - > 智能指针 `std::make_shared<std::iostream>(xxxxxxxxx)` <br> `char*` 到 `iostream`， 你可以找一下网上常见的那个从 `char* => streambuf => istream` 的转换方法，或许能用。然后拼起来，试试。
 - > `std::shared_ptr<std::iostream> iosp = std::make_shared<std::stringstream>("you chars");`
