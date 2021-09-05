@@ -210,4 +210,12 @@ Managing Multiple Python Versions With pyenv https://realpython.com/intro-to-pye
   > No more remembering to activate environments: you can switch between all your projects, and `pyenv` will take care of automatically activating the correct Python versions and the correct virtual environments.
 - **Activating Multiple Versions Simultaneously**
 
+Managing Multiple Python Versions With pyenv https://realpython.com/intro-to-pyenv/
+
 Python 3 Installation & Setup Guide https://realpython.com/installing-python/
+
+# from 其他网站
+
+从零开始，教你如何安装、配置 Python 开发环境 https://mp.weixin.qq.com/s/Mv4GJA433RP9bDKsigiyGg
+- > **使用 `venv` 模块搭建虚拟环境**
+  * > 一些第三方包如 `virtualenv`、 `pipenv` 等都可以用来创建虚拟环境，而 Python 从 3.3 版本之后，***自带了***可以用于创建虚拟环境的 `venv` 模块，十分方便。我们就以 `venv` 模块为例，来展示 Python 虚拟环境的用法。
