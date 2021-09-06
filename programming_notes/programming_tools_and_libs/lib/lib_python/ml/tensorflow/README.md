@@ -32,6 +32,15 @@ TensorFlow 如何入门，如何快速学习？ - 知乎 https://www.zhihu.com/q
 
 最全Tensorflow2.0 入门教程持续更新 - Doit的文章 - 知乎 https://zhuanlan.zhihu.com/p/59507137
 
+英文教程太难啃？这里有一份TensorFlow2.0中文教程（持续更新中） https://www.jiqizhixin.com/articles/2019-05-02-2
+- > 此文章中，机器之心为大家推荐一个持续更新的中文教程，方便大家更系统的学习、使用 TensorFlow 2.0 ：
+  * > 知乎专栏地址： https://zhuanlan.zhihu.com/c_1091021863043624960
+  * > Github 项目地址： https://github.com/czy36mengfei/tensorflow2_tutorials_chinese
+
+## 构架设计
+
+TensorFlow 架构 https://tensorflow.juejin.im/extend/architecture.html
+
 # 其他
 
 tensorflow中的Embedding操作详解 - 申小明77的文章 - 知乎 https://zhuanlan.zhihu.com/p/85802954
