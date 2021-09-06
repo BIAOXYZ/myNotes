@@ -17,6 +17,10 @@ Python中动态与静态 Call Graph（调用关系图）分析工具 - 忘荃的
 
 Python - 使用pycallgraph生成函数关系图 https://www.cnblogs.com/anliven/p/10004665.html
 
+图形化显示 Python 函数之间的调用关系 https://www.k0rz3n.com/2019/02/22/%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%98%BE%E7%A4%BA%20Python%20%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E7%9A%84%E8%B0%83%E7%94%A8%E5%85%B3%E7%B3%BB/
+
+python生成函数关系调用图｜Python 主题月 https://juejin.cn/post/6979581663588122655
+
 python函数调用关系图（python call graph） https://blog.csdn.net/anque1234/article/details/101423303 || https://www.cnblogs.com/ai-ldj/p/14635598.html
 
 [Python] 绘制Python代码的函数调用关系：graphviz+pycallgraph https://blog.csdn.net/qq_41683065/article/details/104816995

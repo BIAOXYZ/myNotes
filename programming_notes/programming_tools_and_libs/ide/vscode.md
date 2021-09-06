@@ -261,6 +261,15 @@ Go in Visual Studio Code https://code.visualstudio.com/docs/languages/go
 
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
 
+## vsc and conda
+
+VS Code终端环境错误造成问题 -- 文件无法编译并且终端无任何显示 https://hbaaa.github.io/2020/05/30/vscode%E7%BB%88%E7%AB%AF%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E5%86%85%E5%AE%B9/
+- > We noticed you’re using a conda environment. If you are experiencing issues with this environment in the integrated terminal, we recommend that you let the Python extension change “terminal.integrated.inheritEnv” to false in your user settings. 我们注意到您正在使用conda环境。 如果您在集成终端中遇到此环境问题，建议您在用户设置中让Python扩展名将“ terminal.integrated.inheritEnv”更改为false。
+
+python extension that recommends terminal.integrated.inheritEnv: false causes Terminal to fail on Linux #14464 https://github.com/microsoft/vscode-python/issues/14464
+
+Add prompt to flip "inheritEnv" setting to false to fix conda activation issue #7607 https://github.com/microsoft/vscode-python/issues/7607
+
 ## 自动打开的一个python提示（当你有`.py`文件在vscode里时，偶尔会弹出）
 
 - 文件名字：《`Python - Get Started`》
