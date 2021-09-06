@@ -368,3 +368,25 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 VS Code 变身小霸王游戏机！ - 韩骏的文章 - 知乎 https://zhuanlan.zhihu.com/p/266374993
 
 完美解决 vscode gitlens 左侧导航图标不显示 https://blog.csdn.net/wangqiaojie/article/details/112509214
+
+Vscode选中变量高亮颜色及注释颜色更改 https://www.cnblogs.com/kingstacker/p/11957490.html
+- >> //notes：尽管这个文章里介绍了使用 `highlight-icemode` 插件和直接修改 vscode 本身的配置选项两种方法。但是我个人感觉用一个叫 [`highlight`](https://marketplace.visualstudio.com/items?itemName=debugpig.highlight) 的插件更简单易用。该插件可以同时高亮多个关键词，用快捷键 `Shift + F8` 选中/取消高亮某个单词。
+  * 怀疑这个更好，但是回头再试吧： https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight
+- > 旧方法：
+  * >（1）安装插件：`highlight-icemode`
+  * >（2）配置插件：打开用户设置，找到 `highlight-icemode` 配置项，根据喜好设置背景颜色。
+- > 新方法：
+  * > vscode其实自带了更改项。在 `setting.json` 中添加如下字段即可，颜色可以自定义修改，选择自己喜欢的颜色即可。
+    ```json
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#d1d1c6",
+        "editor.selectionHighlightBackground": "#c5293e"
+    }
+    ```
+    > 结果如下，更加nice。
+  * > 修改注释颜色，同样在 `setting.json` 中添加：可以选择自己需要的颜色即可
+    ```json
+    "editor.tokenColorCustomizations": {
+        "comments": "#82e0aa" // 注释
+    }
+    ```
