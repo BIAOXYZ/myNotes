@@ -18,6 +18,8 @@ VMware Customer Connect | Get Personalized Support https://customerconnect.vmwar
 - https://customerconnect.vmware.com/account-registration  【`对于 Mac 下的个人版，要在这儿注册一个 VM 的 id，然后就可以用了`】
 - https://customerconnect.vmware.com/dashboard
 
+VMware Fusion Player – Personal Use License https://customerconnect.vmware.com/group/vmware/evalcenter?p=fusion-player-personal
+
 # wiki
 
 VMware Workstation Player https://en.wikipedia.org/wiki/VMware_Workstation_Player

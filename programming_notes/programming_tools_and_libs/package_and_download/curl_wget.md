@@ -289,4 +289,18 @@ linux 下载 命令 wget 和 curl https://blog.csdn.net/freeking101/article/deta
 
 用wget下载需要用户名和密码认证的网站或者ftp服务器文件 https://www.jianshu.com/p/dc01f7a0436f
 
+## wget后台下载
+
+Linux：wget后台下载/查看后台任务进度 https://blog.csdn.net/wanglc7/article/details/85136418
+- > 1：后台下载 —— 使用 `wget -b + url`
+  ```sh
+  [root@8f9fbda9bb48 ~]# wget -b http://cn.wordpress.org/wordpress-3.1-zh_CN.zip 
+  Continuing in background, pid 835.
+  Output will be written to 'wget-log'.
+  ```
+  > 后台任务启动后，会返回两段话，第一段返回一个pid，代表这个后台任务的进程，并且我们可以kill掉这个id来终止此次下载，第二段返回了一句话，意思是会将输出（持续）写入到 `wget-log` 这个文件。
+- > 2：查看wget后台进度 —— 有几种方法可以查看：
+  * > 1) 使用（断点续传）`wget -c + 正在执行的下载地址`
+  * > 2) 找到下载文件的文件夹，其中那个正在写入的输出文件，使用 `tail -f wget-log`
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
