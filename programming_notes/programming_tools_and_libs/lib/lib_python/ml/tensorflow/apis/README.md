@@ -14,3 +14,9 @@ tf.device()指定tensorflow运行的GPU或CPU设备 https://blog.csdn.net/dcrmg/
 理解tf.name_scope()和tf.variable_scope() https://www.jianshu.com/p/e88367df34b5
 
 通俗理解tf.name_scope()、tf.variable_scope() - 质数的文章 - 知乎 https://zhuanlan.zhihu.com/p/52055580
+
+# [tf.convert_to_tensor](https://www.tensorflow.org/api_docs/python/tf/convert_to_tensor)
+
+执行tf.convert_to_tensor()时，究竟发生了什么？ - 休语的文章 - 知乎 https://zhuanlan.zhihu.com/p/31308247
+
+tf.convert_to_tensor的用法 https://blog.csdn.net/UESTC_C2_403/article/details/72190291

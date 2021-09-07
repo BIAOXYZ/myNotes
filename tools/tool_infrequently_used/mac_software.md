@@ -149,6 +149,8 @@ https://yeasy.gitbook.io/docker_practice/install/mac
   * > 从应用中找到 Docker 图标并点击运行。
   * > 之后，你可以在终端通过命令检查安装后的 Docker 版本。
 
+macOS 下使用 Docker 搭建 ubuntu 环境 - 十里的文章 - 知乎 https://zhuanlan.zhihu.com/p/59548929
+
 ### `libtool` `automake` `git` `curl`
 
 `brew install libtool automake git curl`
