@@ -1,4 +1,14 @@
 
+求教一个 cpp 语法问题 https://www.v2ex.com/t/800403
+```console
+https://github.com/envoyproxy/envoy-filter-example/blob/main/echo2_config.cc#L20 
+这一行中的  “Network::ReadFilterSharedPtr{new Filter::Echo2()}”  为什么大括号是合法的呢？
+```
+- > `ReadFilterSharedPtr` 是一个智能指针 `using ReadFilterSharedPtr = std::shared_ptr<ReadFilter>;`
+- > c++11 才有的特性，列表初始化
+- > 这是 C++11 引入的统一初始化语法： https://www.geeksforgeeks.org/uniform-initialization-in-c/
+- > https://en.cppreference.com/w/cpp/language/list_initialization
+
 作为库作者，如何优雅地劫持 malloc https://www.v2ex.com/t/800023
 
 c++中，`char*` 如何转换成 `std::shared_ptr<std::iostream>`？ https://www.v2ex.com/t/790826
