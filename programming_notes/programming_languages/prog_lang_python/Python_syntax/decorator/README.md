@@ -40,7 +40,11 @@ Python中的注解“@” https://www.jianshu.com/p/7a644520418b
 
 第九章：元编程 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p09_meta_programming.html
 
-## `@property`
+10 Fabulous Python Decorators https://towardsdatascience.com/10-fabulous-python-decorators-ab674a732871
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# `@property`
 
 Python @property decorator https://www.programiz.com/python-programming/property
 
@@ -91,7 +95,30 @@ Python - @property 方法变属性 https://segmentfault.com/a/1190000017078783  
 - > **小结**
   * > `@property` 广泛应用在类的定义中，可以让调用者写出简短的代码，同时保证对参数进行必要的检查，这样，程序运行时就减少了出错的可能性。
 
-## `@wraps()`
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# `@wraps()`
 >> //notes：实际上这个装饰器的完整写法是 `@functools.wraps()`，其属于 `functools` 模块，故参见该模块吧。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# `@memoize`
+
+python @memoize vs functools.lru_cache https://stackoverflow.com/questions/46022556/python-memoize-vs-functools-lru-cache
+```console
+I'm not sure what the advantages and disadvantages of these 2 are. Provided @lru_cache from functools is a standard library tool
+and seems to have more control over @memoize, why does @memoize even exist?
+
+Edit: I am referring to memoize from here -> https://wiki.python.org/moin/PythonDecoratorLibrary#Memoize
+```
+- https://stackoverflow.com/questions/46022556/python-memoize-vs-functools-lru-cache/46022684#46022684
+  * > `functools.lru_cache` was added in python 3.2. For those using python 2, and for libraries written to work with it (e.g. all major libs) it cannot be used.
+  * > The workaround is to use the `@memoize` recipe from the decorator library.
+  * > If you only use python 3, there is basically no reason not to use `lru_cache`.
+  * 该回答下面的评论：
+    + > `lru_cache` can be used in 2.7 with [functools32](https://pypi.org/project/functools32/) – johanno
+
+PythonDecoratorLibrary https://wiki.python.org/moin/PythonDecoratorLibrary  【`看这个网页是官方的，但是我还是不知道这个装饰器是不是默认就支持的`】
+- https://wiki.python.org/moin/PythonDecoratorLibrary#Memoize
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
