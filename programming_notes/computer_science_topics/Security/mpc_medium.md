@@ -37,6 +37,12 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 其他
 
+“隐私计算”四大技术路径解析 https://mp.weixin.qq.com/s/r4p0BWZxmfM79Z0dZbnitw
+- > 路径一：数据流出、集中计算。代表技术：数据脱敏、差分隐私、同态加密
+- > 路径二：数据流出、协同计算。代表技术：安全多方计算平台
+- > 路径三：数据不流出、协同计算。代表技术：联邦学习平台
+- > 路径四：数据不流出、集中计算。代表技术：可信计算平台
+
 隐私计算简析、前瞻及实践 ——附工、农、建、交、微众等5家行应用实践 https://mp.weixin.qq.com/s/AYQAHGf00D-jg8keTIvMPQ
 
 打造数据安全流通与融合应用新标杆——光大银行上线首个企业级多方安全计算平台 https://mp.weixin.qq.com/s/t06-x1qesqTwJW2XaNWLXA

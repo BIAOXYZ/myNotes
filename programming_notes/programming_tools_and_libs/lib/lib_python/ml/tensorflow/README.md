@@ -37,6 +37,8 @@ TensorFlow 如何入门，如何快速学习？ - 知乎 https://www.zhihu.com/q
   * > 知乎专栏地址： https://zhuanlan.zhihu.com/c_1091021863043624960
   * > Github 项目地址： https://github.com/czy36mengfei/tensorflow2_tutorials_chinese
 
+机器学习与tensorflow入门教程（任何人都能看懂） https://blog.csdn.net/ebzxw/article/details/86609997
+
 ## 构架设计
 
 TensorFlow 架构 https://tensorflow.juejin.im/extend/architecture.html
