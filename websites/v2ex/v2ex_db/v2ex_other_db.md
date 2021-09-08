@@ -1,4 +1,8 @@
 
+彦祖们， pg 还是 mysql? 到底该怎么选？ https://www.v2ex.com/t/800592
+- > 选 mysql，用 pg 的人一般不会有这个疑问。
+- > https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/limits.html <br> https://www.postgresql.org/docs/13/limits.html
+
 PostgreSQL 和 MySQL 中 schema 的区别 https://www.v2ex.com/t/775431
 ```console
 PostgreSQL
