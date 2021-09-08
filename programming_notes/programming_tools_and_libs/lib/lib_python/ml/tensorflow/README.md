@@ -55,6 +55,24 @@ Tensorflow eager execution 模式 - 书生意气的文章 - 知乎 https://zhuan
 
 TensorFlow小白教程：Session基础教程 https://juejin.cn/post/6844903888303161351
 
+## TensorFlow Boosted Trees (TFBT)
+
+在 Tensorflow 中训练提升树（Boosted Trees）模型 https://tensorflow.google.cn/tutorials/estimator/boosted_trees
+- https://github.com/tensorflow/docs-l10n/blob/master/site/zh-cn/tutorials/estimator/boosted_trees.ipynb
+
+梯度提升树（Gradient Boosted Trees）：模型理解 https://tensorflow.google.cn/tutorials/estimator/boosted_trees_model_understanding
+
+https://github.com/aymericdamien/TensorFlow-Examples/blob/master/tensorflow_v1/examples/2_BasicModels/gradient_boosted_decision_tree.py
+
+https://github.com/aymericdamien/TensorFlow-Examples/blob/master/tensorflow_v2/notebooks/2_BasicModels/gradient_boosted_trees.ipynb
+
+Gradient Boosting in TensorFlow vs XGBoost https://nicolovaligi.com/articles/gradient-boosting-tensorflow-xgboost/
+- > Tensorflow 1.4 was released a few weeks ago with an implementation of Gradient Boosting, called **TensorFlow Boosted Trees (TFBT)**. Unfortunately, the [paper](https://arxiv.org/abs/1710.11555) does not have any benchmarks, so I ran some against XGBoost.
+  >> TF Boosted Trees: A scalable TensorFlow based framework for gradient boosting https://arxiv.org/pdf/1710.11555.pdf
+- > The code to reproduce the results in this article is on [GitHub](https://github.com/nicolov/gradient_boosting_tensorflow_xgboost).
+  >> Gradient Boosting in TensorFlow vs XGBoost https://github.com/nicolov/gradient_boosting_tensorflow_xgboost
+- > Neither of the two settings shown for TensorFlow could match the training time/accuracy of XGBoost. Besides the disadvantage in user time (total CPU time used), it also seems that TensorFlow isn't very effective at parallelizing on multiple cores either, leading to a massive gap in total (i.e. wall) time too. XGBoost has no trouble loading 16 of the 32 cores in my box (and can do better when using more trees), whereas TensorFlow uses less than 4. I guess that the whole "distributed TF" toolbox could be used to make TFBT scale better, but that seems overkill just to make full use of a single server.
+
 ## tf.Operation
 
 初步理解 TensorFlow 的 operation - lonlon ago的文章 - 知乎 https://zhuanlan.zhihu.com/p/32399032

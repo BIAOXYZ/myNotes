@@ -11,8 +11,19 @@ tf.device()指定tensorflow运行的GPU或CPU设备 https://blog.csdn.net/dcrmg/
 
 # [tf.name_scope](https://www.tensorflow.org/api_docs/python/tf/name_scope)
 
-- TensorFlow入门（四） name / variable_scope 的使用 https://blog.csdn.net/jerr__y/article/details/60877873
-- TensorFlow入门（七） 充分理解 name / variable_scope https://blog.csdn.net/Jerr__y/article/details/70809528
+TensorFlow入门（四） name / variable_scope 的使用 https://blog.csdn.net/jerr__y/article/details/60877873
+
+TensorFlow入门（七） 充分理解 name / variable_scope https://blog.csdn.net/Jerr__y/article/details/70809528
+- > **2.2 实验1结论**
+  * > 从上面的实验结果来看，这三种方式所定义的变量具有相同的类型。而且只有 `tf.get_variable()` 创建的变量之间会发生命名冲突。在实际使用中，三种创建变量方式的用途也是分工非常明确的。其中
+    ```console
+    tf.placeholder() 占位符。* trainable==False *
+    tf.Variable() 一般变量用这种方式定义。 * 可以选择 trainable 类型 *
+    tf.get_variable() 一般都是和 tf.variable_scope() 配合使用，从而实现变量共享的功能。 * 可以选择 trainable 类型 *
+    ```
+- > `tf.name_scope()` 并不会对 `tf.get_variable()` 创建的变量有任何影响。`tf.name_scope()` 主要是用来管理命名空间的，这样子让我们的整个模型更加有条理。而 `tf.variable_scope()` 的作用是为了实现变量共享，它和 `tf.get_variable()` 来完成变量共享的功能。
+- > **3.2 实验 2 结论**
+  * > 首先我们要确立一种 Graph 的思想。在 TensorFlow 中，我们定义一个变量，相当于往 Graph 中添加了一个节点。和普通的 python 函数不一样，在一般的函数中，我们对输入进行处理，然后返回一个结果，而函数里边定义的一些局部变量我们就不管了。但是在 TensorFlow 中，我们在函数里边创建了一个变量，就是往 Graph 中添加了一个节点。***出了这个函数后，这个节点还是存在于 Graph 中的***。
 
 理解tf.name_scope()和tf.variable_scope() https://www.jianshu.com/p/e88367df34b5
 
