@@ -40,6 +40,23 @@ blockchain-crypto-mpc https://github.com/unbound-tech/blockchain-crypto-mpc || h
 
 About the Researchers https://www.unboundsecurity.com/unbound-mpc-labs/
 
+## Dropout Labs (Cape Privacy)
+
+Cape Privacy https://capeprivacy.com/ || https://medium.com/dropoutlabs
+
+### tf-encrypted
+
+`tf-encrypted` (or `TF Encrypted`, `TF-Encrypted`)
+
+A Framework for Encrypted Machine Learning in TensorFlow https://github.com/tf-encrypted/tf-encrypted
+
+TF-Encrypted https://tf-encrypted.io/
+
+TF-Encrypted MPC 多方计算代码阅读 - 哈利法的文章 - 知乎 https://zhuanlan.zhihu.com/p/368881623
+
+在 TensorFlow 中使用安全计算实现隐私保护机器学习 - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/396553029
+- > 文章下载地址： Private Machine Learning in TensorFlow using Secure Computation https://arxiv.org/pdf/1810.08130v2.pdf
+
 ## 华控清交
 
 PrivPy：实现规模化通用隐私保护机器学习 - 雪琪的文章 - 知乎 https://zhuanlan.zhihu.com/p/115574680
@@ -179,19 +196,6 @@ SecMML https://github.com/FudanMPL/SecMML
 
 Implementation of protocols in Falcon https://github.com/snwagh/falcon-public
 - (PETS 2021) Falcon: Honest-Majority Maliciously Secure Framework for Private Deep Learning https://arxiv.org/pdf/2004.02229.pdf
-
-## tf-encrypted
-
-`tf-encrypted` (or `TF Encrypted`, `TF-Encrypted`)
-
-A Framework for Encrypted Machine Learning in TensorFlow https://github.com/tf-encrypted/tf-encrypted
-
-TF-Encrypted https://tf-encrypted.io/
-
-TF-Encrypted MPC 多方计算代码阅读 - 哈利法的文章 - 知乎 https://zhuanlan.zhihu.com/p/368881623
-
-在 TensorFlow 中使用安全计算实现隐私保护机器学习 - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/396553029
-- > 文章下载地址： Private Machine Learning in TensorFlow using Secure Computation https://arxiv.org/pdf/1810.08130v2.pdf
 
 ## 小型项目
 

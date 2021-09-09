@@ -20,6 +20,13 @@ VMware Customer Connect | Get Personalized Support https://customerconnect.vmwar
 
 VMware Fusion Player – Personal Use License https://customerconnect.vmware.com/group/vmware/evalcenter?p=fusion-player-personal
 
+## 官方文档
+
+挂起和恢复虚拟机 https://docs.vmware.com/cn/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-A4536112-10A6-4574-ADE5-60D9BBAE1F02.html
+- > 可以使用挂起和恢复功能保存虚拟机的当前状态。在恢复虚拟机时，在挂起之前运行的应用程序将恢复运行状态，而不更改其内容。
+- > 执行挂起操作的速度取决于在启动虚拟机后更改的数据量。第一次挂起操作通常比后续挂起操作花费的时间多。在挂起虚拟机时，Workstation Pro 在工作目录中创建一个虚拟机挂起状态（`.vmss` 或 `.vmem`）文件集。执行恢复操作的速度取决于虚拟机的活跃程度。虚拟机越活跃，恢复所需的时间就越长。这还取决于虚拟机挂起状态（`.vmss` 或 `.vmem`）文件集是否已位于主机系统的物理内存中。如果是，虚拟机的恢复速度要快得多。
+- > 在恢复虚拟机并进行更多工作后，您无法恢复到挂起虚拟机时的状态。要重复恢复到同一状态，则必须拍摄快照。
+
 # wiki
 
 VMware Workstation Player https://en.wikipedia.org/wiki/VMware_Workstation_Player
