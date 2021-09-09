@@ -379,6 +379,51 @@ eval "$(pyenv virtualenv-init -)"
 #// 其他用户的话，反正运行完安装pyenv的脚本也会有相应提示的，直接复制粘贴就好。
 
 
+``
+###////// 另外，随着 pyenv 版本演进，语句可能不一样，比如这次的提示信息是：
+
+WARNING: seems you still have not added 'pyenv' to the load path.
+
+# (The below instructions are intended for common
+# shell setups. See the README for more guidance
+# if they don't apply and/or don't work for you.)
+
+# Add pyenv executable to PATH and
+# enable shims by adding the following
+# to ~/.profile:
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# If your ~/.profile sources ~/.bashrc,
+# the lines need to be inserted before the part
+# that does that. See the README for another option.
+
+# If you have ~/.bash_profile, make sure that it
+# also executes the above lines -- e.g. by
+# copying them there or by sourcing ~/.profile
+
+# Load pyenv into the shell by adding
+# the following to ~/.bashrc:
+
+eval "$(pyenv init -)"
+
+# Make sure to restart your entire logon session
+# for changes to profile files to take effect.
+
+# Load pyenv-virtualenv automatically by adding
+# the following to ~/.bashrc:
+
+eval "$(pyenv virtualenv-init -)"
+
+###////// 不过倒也不用特别担心，反正每次执行完前面那句，都会有提示的。
+###////// 官方已经把安装脚本单独搞了一个仓库了： https://github.com/pyenv/pyenv-installer
+###////// 此外这次在 ubuntu-20.04.3-desktop-amd64 上装新python版本时一堆编译问题，可见这个也没那么好用
+###////// Common build problems: https://github.com/pyenv/pyenv/wiki/Common-build-problems
+``
+
+
 [root@marksmen1 ~]# pyenv install 3.5.0
 Downloading Python-3.5.0.tar.xz...
 -> https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tar.xz
