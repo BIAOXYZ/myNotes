@@ -252,12 +252,11 @@ def receive_output(average: tf.Tensor) -> tf.Operation:
 
 
 if __name__ == "__main__":
-
+    ##################################################
     graphviz = GraphvizOutput()
     graphviz.output_file = 'basic.png'
-
     with PyCallGraph(output=graphviz):
-        
+    ##################################################
         logging.basicConfig(level=logging.DEBUG)
 
         # get input from inputters as private values
