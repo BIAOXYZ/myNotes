@@ -61,6 +61,8 @@ inode https://en.wikipedia.org/wiki/Inode 【[inode](https://zh.wikipedia.org/wi
 
 理解inode http://www.ruanyifeng.com/blog/2011/12/inode.html
 
+0.2秒居然复制了100G文件？ 我给同事讲了一个小时，他感动得快哭了... https://mp.weixin.qq.com/s/lxAhVuF2KBhR0w3sr-bhWA
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 文件描述符(FD)
