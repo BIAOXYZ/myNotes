@@ -1,6 +1,8 @@
 
 # pip, pipenv and others
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # pip general
 
 Python包管理器-pip https://juejin.im/post/5beb92e7e51d454fbd6b4bc4
@@ -10,6 +12,8 @@ Python包管理器-pip https://juejin.im/post/5beb92e7e51d454fbd6b4bc4
 Pipenv – 超好用的 Python 包管理工具 https://juejin.im/post/5b31ba8851882574e808e555
 
 pip使用指南（基于pip 8.1.1） https://github.com/huaxz1986/python_tools/blob/master/packages/pip_usage.markdown
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # pip concrete
 
@@ -41,7 +45,7 @@ Centos中安装pip3/pip https://blog.csdn.net/gwz_6903/article/details/100678333
   # 2.安装 pip
   yum install -y python-pip
   # 3.对安装好的 pip 进行升级
-  pip install --upgrade pip （注意是两个短横线~~）
+  pip install --upgrade pip
   # 到这里 pip 安装完成，即 /usr/bin 目录下有 pip , 但注意是 python2 下的。
   ```
 - > **二、python3中pip3的安装**
@@ -62,6 +66,8 @@ sudo pip install cmake=3.21.1
 # 或者加上 -U，应该是表示已有的话就升级。
 sudo pip install -U cmake==xxx
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `requirement.txt`
 
