@@ -33,6 +33,25 @@ linux 同时安装python2 python3， 及pip 的安装使用 https://blog.csdn.ne
   sudo apt-get install python3-pip
   ```
 
+Centos中安装pip3/pip https://blog.csdn.net/gwz_6903/article/details/100678333
+- > **一、python2**
+  ```sh
+  # 1.安装源
+  yum -y install epel-release
+  # 2.安装 pip
+  yum install -y python-pip
+  # 3.对安装好的 pip 进行升级
+  pip install --upgrade pip （注意是两个短横线~~）
+  # 到这里 pip 安装完成，即 /usr/bin 目录下有 pip , 但注意是 python2 下的。
+  ```
+- > **二、python3中pip3的安装**
+  * > python3 中自带有 `pip3`，因此只需要添加 `pip3` 的软链接即可
+  * > 在之前装的 python3 的 `/usr/bin` 目录下有 `pip3` （创建软链接）
+    ```sh
+    ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
+    ```
+    > 此时 `pip` 和 `pip3` 均可用
+
 How to install pip with Python 3? https://stackoverflow.com/questions/6587507/how-to-install-pip-with-python-3
 
 ## pip安装指定版本的软件

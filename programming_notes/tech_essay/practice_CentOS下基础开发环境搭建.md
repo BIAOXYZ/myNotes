@@ -360,6 +360,8 @@ Python Virtual Environments: A Primer https://realpython.com/python-virtual-envi
 
 ## 实战部分
 
+***核心思路***：先用 `pyenv` 把不同版本的 python 装起来，然后用 `virtualenv` 管理不同的虚环境。
+
 ```sh
 # 用pyenv安装Python3。
 
@@ -480,7 +482,7 @@ make && make install
 ```sh
 # 安装pip
 yum -y install epel-release
-yum install -y python-pip
+yum install -y python-pip  # 这个可能已经不适用了，因为现在很多OS已经默认切到 python3 了，所以（包括下面的步骤）要注意区分 pip 和 pip3
 
 # 安装virtualenv
 # 也可以用 yum install -y python-virtualenv 但是基本别用。不但版本低，而且还有冲突。。。
