@@ -43,6 +43,21 @@ TensorFlow 如何入门，如何快速学习？ - 知乎 https://www.zhihu.com/q
 
 TensorFlow 架构 https://tensorflow.juejin.im/extend/architecture.html
 
+## 基本概念
+
+https://blog.csdn.net/dcrmg/category_7389638.html
+- tensorflow中张量(tensor)的属性——维数(阶)、形状和数据类型 https://blog.csdn.net/dcrmg/article/details/79017146
+- tensorflow中有向图（计算图、Graph）、上下文环境（Session）和执行流程 https://blog.csdn.net/dcrmg/article/details/79028003
+- tensorflow中创建多个计算图(Graph) https://blog.csdn.net/dcrmg/article/details/79028032
+- Tensorflow 模型文件结构、模型中Tensor查看 https://blog.csdn.net/dcrmg/article/details/79672874
+
+## 源码
+
+A simple TensorFlow-like graph computation framework in Python for learning purpose https://github.com/PytLab/simpleflow
+- 实现属于自己的TensorFlow(一) - 计算图与前向传播 - 邵正将的文章 - 知乎 https://zhuanlan.zhihu.com/p/33290129 || https://cloud.tencent.com/developer/article/1073370
+- 实现属于自己的TensorFlow(二) - 梯度计算与反向传播 - 邵正将的文章 - 知乎 https://zhuanlan.zhihu.com/p/33353929
+- 实现属于自己的TensorFlow(三) - 反向传播与梯度下降实现 - 邵正将的文章 - 知乎 https://zhuanlan.zhihu.com/p/33468671
+
 # 其他
 
 tensorflow中的Embedding操作详解 - 申小明77的文章 - 知乎 https://zhuanlan.zhihu.com/p/85802954
