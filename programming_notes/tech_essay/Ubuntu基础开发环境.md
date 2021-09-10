@@ -10,6 +10,7 @@ sudo apt install -y vim wget curl openssh-server
 sudo apt install -y python3-pip
 sudo apt install -y docker.io
 systemctl enable docker
+sudo apt install -y ansible
 
 # FOR -- `lex` and `yacc`
 sudo apt install -y flex bison

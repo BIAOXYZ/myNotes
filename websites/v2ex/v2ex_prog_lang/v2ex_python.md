@@ -1,4 +1,6 @@
 
+Python 类中类型提示使用“定义类”提示未定义 https://www.v2ex.com/t/800920
+
 《 Python 进阶》2021 更新版发布，欢迎大家提出意见或表示支持 https://www.v2ex.com/t/797304
 ```console
 忘记附上阅读链接和源码地址了 :)
