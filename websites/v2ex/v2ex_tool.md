@@ -99,6 +99,8 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
+最近发现一款不错的 SSH 客户端 WindTerm https://www.v2ex.com/t/801168
+
 Linux 能不能用虚拟机跑双系统呢 https://www.v2ex.com/t/799906
 ```console
 就是有点像 parallel+bootcamp 这样的，用 bootcamp 安装 windows 之后，既可以宿主机启动两种系统，又可以在 mac 里通过虚拟机启动 windows
