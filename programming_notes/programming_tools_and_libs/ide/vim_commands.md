@@ -269,16 +269,6 @@ use vim as IDE https://github.com/yangyangwithgnu/use_vim_as_ide
 
 vi/vim使用进阶: 目录 https://blog.easwy.com/archives/advanced-vim-skills-catalog/
 
-### vim插件
-
-Vim配置、插件和使用技巧 https://www.jianshu.com/p/a0b452f8f720
-
-使用 vim + ctags + cscope + taglist 阅读源码 https://my.oschina.net/u/554995/blog/59927
-
-🦄 弃用 vundle 拥抱 vim-plug https://www.v2ex.com/t/532549
-
-安装Exuberant Ctags及Tag List插件 https://blog.csdn.net/dream2009gd/article/details/44102227
-
 ## Vim定制版
 
 Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
