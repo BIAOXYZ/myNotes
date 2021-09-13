@@ -10,6 +10,8 @@ vim-plug -- 🌺 Minimalist Vim Plugin Manager https://github.com/junegunn/vim-p
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
+Vim-plug：极简 Vim 插件管理器 https://linux.cn/article-9751-1.html
+
 🦄 弃用 vundle 拥抱 vim-plug https://www.v2ex.com/t/532549
 
 # 待试用

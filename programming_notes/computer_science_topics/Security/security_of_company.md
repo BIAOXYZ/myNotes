@@ -97,6 +97,8 @@ JUGO：
 
 Rosetta https://github.com/LatticeX-Foundation/Rosetta
 - https://github.com/LatticeX-Foundation/Rosetta/tree/v0.3.0 || https://github.com/LatticeX-Foundation/Rosetta/releases/tag/v0.3.0
+  * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/TUTORIALS_CN.md
+  * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/DEPLOYMENT_CN.md
 - 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
 - 隐私 AI 框架中的数据流动与工程实现 https://www.infoq.cn/article/QO2LTgqDFr3AItJTBsp4
 
