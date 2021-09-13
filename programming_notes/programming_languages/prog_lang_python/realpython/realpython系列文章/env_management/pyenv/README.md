@@ -22,3 +22,18 @@ README.md https://github.com/pyenv/pyenv-virtualenv/blob/582b693c112ba2ab450228f
   * > virtualenv and venv
     + > There is a [venv](https://docs.python.org/3/library/venv.html) module available for CPython 3.3 and newer. It provides an executable module `venv` which is ***the successor of*** `virtualenv` and distributed by default.
     + > `pyenv-virtualenv` uses `python -m venv` if it is available and the `virtualenv` command is not available.
+
+# `pyenv` 问题处理
+
+`ERROR: Can not perform a '--user' install. User site-packages are not visible in this virtualenv.` #14327 https://github.com/microsoft/vscode-python/issues/14327
+- https://github.com/microsoft/vscode-python/issues/14327#issuecomment-757408341
+  ```markdown
+  #14327
+  I was trying to upgrade 'pip' in my virtual environment. I got the same error.
+
+  ### One quick fix is :
+  1. Go to the `pyvenv.cfg` file in the Virtual environment folder
+  2. Set the `include-system-site-packages` to `true` and save the change
+  3. Reactivate the virtual environment.
+     This should work!
+  ```

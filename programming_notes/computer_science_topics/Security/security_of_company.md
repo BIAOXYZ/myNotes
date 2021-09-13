@@ -96,7 +96,7 @@ JUGO：
 - > 近日，上海市数据隐私安全计算企业重点实验室谢翔博士联合香港大学学者共同合作的论文《Compact Zero-Knowledge Proofs for Threshold ECDSA with Trustless Setup》被公钥密码学领域国际顶级会议PKC 2021（the International Conference on Practice and Theory of Public Key Cryptography, PKC）录用，该会议将在北京时间2021年5月9日至13日于线上举行。
 
 Rosetta https://github.com/LatticeX-Foundation/Rosetta
-- https://github.com/LatticeX-Foundation/Rosetta/tree/v0.3.0
+- https://github.com/LatticeX-Foundation/Rosetta/tree/v0.3.0 || https://github.com/LatticeX-Foundation/Rosetta/releases/tag/v0.3.0
 - 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
 - 隐私 AI 框架中的数据流动与工程实现 https://www.infoq.cn/article/QO2LTgqDFr3AItJTBsp4
 
