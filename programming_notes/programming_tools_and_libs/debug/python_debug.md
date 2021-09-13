@@ -9,13 +9,13 @@ pdb --- Python 的调试器 https://docs.python.org/zh-cn/3/library/pdb.html
 <<用PDB库调试Python程序>> http://www.cnblogs.com/dkblog/archive/2010/12/07/1980682.html
 - > 用pdb调试有多种方式可选：
   * > 1.命令行启动目标程序，加上 `-m` 参数，这样调用 `myscript.py` 的话断点就是程序的执行第一行之前 `python -m pdb myscript.py`
-  * > 2. 在Python交互环境中启用调试
+  * > 2.在Python交互环境中启用调试
     ```py
     >>> import pdb
     >>> import mymodule
     >>> pdb.run(‘mymodule.test()’)
     ```
-  * > 3. 比较常用的，就是在程序中间插入一段程序，相对于在一般IDE里面打上断点然后启动debug，不过这种方式是hardcode的
+  * > 3.比较常用的，就是在程序中间插入一段程序，相对于在一般IDE里面打上断点然后启动debug，不过这种方式是hardcode的
     ```py
     if __name__ == "__main__":
         a = 1
