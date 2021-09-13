@@ -1,4 +1,10 @@
 
+# 技术相关数据
+
+软件出现 Bug 到底有多严重，一份清单告诉你：致 6 人死亡，甚至差点毁灭世界 https://www.ithome.com/0/575/141.htm
+- > 而如果翻开维基百科上的这份专门统计历史上造成严重后果的 Bug 清单，沿着 12 个类别一个一个找下去，就会发现 —— 几乎每一条 Bug 的背后都存在着千万上亿的金钱损失。
+  >> List of software bugs https://en.wikipedia.org/wiki/List_of_software_bugs
+
 # 奢侈品相关数据
 
 这个蔡欣颖（ec24m）真是给欧洲交税的亚洲人的杰出代表啊：

@@ -97,6 +97,11 @@ Chrome 键盘快捷键 https://support.google.com/chrome/answer/157179?hl=zh-Han
 | 关闭当前窗口【这个和Windows下不一致？】	| ⌘ + Shift + w |
 | 退出 Google Chrome	| ⌘ + q 【这个和Windows快捷键下不一致】 |
 
+## chrome其他功能
+
+谷歌(chrome)浏览器快速将网页保存为pdf文件 https://jingyan.baidu.com/article/5bbb5a1b1d857413eaa17946.html
+- > 用chrome浏览器随便打开一个网页，然后使用快捷键 `ctrl+P`，即可调出打印面板，或者用鼠标点击右上角按钮也能调出打印面板。
+
 ## 
 
 Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/cbcede0761144902f40b4d18.html

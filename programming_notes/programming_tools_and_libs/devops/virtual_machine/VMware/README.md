@@ -27,6 +27,9 @@ VMware Fusion Player – Personal Use License https://customerconnect.vmware.com
 - > 执行挂起操作的速度取决于在启动虚拟机后更改的数据量。第一次挂起操作通常比后续挂起操作花费的时间多。在挂起虚拟机时，Workstation Pro 在工作目录中创建一个虚拟机挂起状态（`.vmss` 或 `.vmem`）文件集。执行恢复操作的速度取决于虚拟机的活跃程度。虚拟机越活跃，恢复所需的时间就越长。这还取决于虚拟机挂起状态（`.vmss` 或 `.vmem`）文件集是否已位于主机系统的物理内存中。如果是，虚拟机的恢复速度要快得多。
 - > 在恢复虚拟机并进行更多工作后，您无法恢复到挂起虚拟机时的状态。要重复恢复到同一状态，则必须拍摄快照。
 
+从全屏幕模式恢复为其他模式 https://docs.vmware.com/cn/VMware-Fusion/12/com.vmware.fusion.using.doc/GUID-27A8A842-A1CA-4A0B-9572-84C55B5C2E78.html
+- > 要退出全屏幕模式以进入单独窗口模式，请在全屏幕标题栏中选择 `显示 > 单独窗口` 或使用键盘快捷键 `Command 键 + Control + F`。
+
 # wiki
 
 VMware Workstation Player https://en.wikipedia.org/wiki/VMware_Workstation_Player
