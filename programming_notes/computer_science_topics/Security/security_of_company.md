@@ -23,6 +23,8 @@ EzPC (Easy Secure Multi-party Computation) https://www.microsoft.com/en-us/resea
 
 ## FB
 
+CRYPTEN: 当安全多方计算邂逅机器学习 https://mp.weixin.qq.com/s/xRf3D3wMxDYRBPJ8jMflrw
+
 CrypTen: A framework for Privacy Preserving Machine Learning https://github.com/facebookresearch/CrypTen
 
 FBPCF (Facebook Private Computation Framework) https://github.com/facebookresearch/fbpcf
