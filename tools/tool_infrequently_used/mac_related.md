@@ -177,6 +177,8 @@ MacBook Pro 一键锁屏快捷方式 - 笔电的文章 - 知乎 https://zhuanlan
 在配备触控栏的 MacBook Pro 上使用功能键 https://support.apple.com/zh-cn/HT207240
 - > 您还可以让功能键在您使用特定 App 时自动显示：
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## top
 
 linux和macOS下top命令区别 https://juejin.cn/post/6844903793662885901
@@ -192,6 +194,8 @@ linux和macOS下top命令区别 https://juejin.cn/post/6844903793662885901
         先输入 o 键 ,再输入 cpu 则按cpu使用量排序，输入 rsize 按内存使用量排序。
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 开启 ssh 连接
 
 >> //notes：起因是发现 Mac pro 可以 scp 文件到开发机，但是反过来不行（当然，最简单的bypass方法是***同样从 Mac 端发起 scp 命令，只不过文件流动的方向反过来：源端设置为开发机，目的端设置为 Mac 即可***）。一旦从开发机上执行 scp 命令就提示 `ssh: connect to host xxx.xxx.xxx.xxx port 22: Connection refused`。于是先按关键词搜，第一个帖子里提到了几种可能的情况，我一看就觉得应该是第一种（所以后面几种甚至都没有看），***也就是Mac上只有ssh client，但是ssh server是没有的***。按这个思路继续搜，很快就在第二个链接里找到了答案。
@@ -200,6 +204,12 @@ linux和macOS下top命令区别 https://juejin.cn/post/6844903793662885901
 - How do you run a SSH server on Mac OS X? https://superuser.com/questions/104929/how-do-you-run-a-ssh-server-on-mac-os-x
   * > In **System Preferences** under **Sharing**, there is an option for **Remote Login**.
   * > This will run **sshd** at startup (through [launchd]()) and enable SSH access with standard options. To tweak the **sshd** options, edit `/etc/sshd_config` (you'll need to do this in a sudo shell or via `sudo vi /etc/sshd_config`).
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Dock栏放大缩小
+
+MacOS中Dock栏的设置和使用技巧，新手必看 - 马可菠萝的文章 - 知乎 https://zhuanlan.zhihu.com/p/37490862
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
