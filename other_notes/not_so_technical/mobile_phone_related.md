@@ -43,6 +43,9 @@ we limit the number of accounts each phone number can create.
 
 # 手机安全
 
+工信部上线“一证通查”业务：可查询用户名下电话卡数量 https://www.ithome.com/0/575/434.htm
+- > IT之家 9 月 14 日消息 全国移动电话卡“一证通查”业务网页端在今日正式上线，同时，支付宝小程序也上线了该功能。
+
 中国电信科普智能手机丢失后该怎么办：手机卡、支付宝微信挂失，再补办手机卡 https://www.ithome.com/0/514/489.htm
 
 # 微信
