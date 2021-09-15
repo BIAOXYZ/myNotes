@@ -7,6 +7,8 @@ Deep playground http://playground.tensorflow.org/
 
 ## 官方文档
 
+使用 pip 安装 TensorFlow https://www.tensorflow.org/install/pip?hl=zh-cn
+
 张量简介 https://www.tensorflow.org/guide/tensor || Introduction to Tensors https://www.tensorflow.org/guide/tensor
 - > 张量是具有统一类型（称为 `dtype`）的多维数组。您可以在 `tf.dtypes.DType` 中查看所有支持的 `dtypes`。
 - > 如果您熟悉 [NumPy](https://numpy.org/devdocs/user/quickstart.html)，就会知道张量与 `np.arrays` 有一定的相似性。

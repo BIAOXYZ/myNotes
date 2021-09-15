@@ -76,3 +76,9 @@ sudo pip install -U cmake==xxx
   >> `pip freeze > requirements.txt`
 - > 第三步：安装requirement.txt，在新环境，执行命令即可一键安装完所需要的第三方库。命令：
   >> `pip install -r requirements.txt`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# pip打包发布
+
+Python 打包自己的库到 PYPI （可pip安装） - 霾大的文章 - 知乎 https://zhuanlan.zhihu.com/p/79164800

@@ -258,6 +258,10 @@ Open Enclave SDK https://github.com/openenclave/openenclave
 
 # 反向寻找的论文
 
+(PKC 2020) Verifiable Inner Product Encryption Scheme https://eprint.iacr.org/2020/122.pdf || https://link.springer.com/chapter/10.1007/978-3-030-45374-9_3
+
+--------------------------------------------------
+
 (ICDE 2019) ServeDB: Secure, Verifiable, and Efficient Range Queries on Outsourced Database https://ieeexplore.ieee.org/document/8731398 【Bloom Filter】
 
 Epione: Lightweight Contact Tracing with Strong Privacy https://sunblaze-ucb.github.io/privacy/projects/epione.html || https://arxiv.org/abs/2004.13293
