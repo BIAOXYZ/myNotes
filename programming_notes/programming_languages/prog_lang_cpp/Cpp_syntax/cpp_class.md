@@ -215,6 +215,11 @@ C++: 全局变量和static变量初始化问题 https://www.cnblogs.com/dylan-li
 
 C++类对象共享数据的5种实现方法 https://blog.csdn.net/fanyun_01/article/details/78145431
 
+# `explicit`关键字
+
+【[:star:][`*`]】 c++ explicit 关键字 https://www.jianshu.com/p/af8034ec0e7a
+- > 上面的程序虽然没有错误，但是对于 `Explicit test1 = 10;` 和 `Explicit test2 = "BUGBUGBUG";` 这样的句子，把一个 `int` 类型或者 `const char*` 类型的变量赋值给Explicit类型的变量看起来总归不是很好，并且当程序很大的时候出错之后也不容易排查。所以为了禁止上面那种隐式转换可能带来的风险，一般都把类的单参构造函数声明的显示调用的，就是在构造函数加关键字 `explicit`。如下：
+
 # 其他
 
 c++　在函数后加const的意义 https://blog.csdn.net/qq_32739503/article/details/83341222

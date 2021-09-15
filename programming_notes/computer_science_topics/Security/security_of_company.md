@@ -101,8 +101,11 @@ Rosetta https://github.com/LatticeX-Foundation/Rosetta
 - https://github.com/LatticeX-Foundation/Rosetta/tree/v0.3.0 || https://github.com/LatticeX-Foundation/Rosetta/releases/tag/v0.3.0
   * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/TUTORIALS_CN.md
   * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/DEPLOYMENT_CN.md
-- 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
-- 隐私 AI 框架中的数据流动与工程实现 https://www.infoq.cn/article/QO2LTgqDFr3AItJTBsp4
+- 隐私AI工程技术实践指南 https://www.infoq.cn/theme/82
+  * 隐私 AI 工程技术实践指南：整体介绍 https://www.infoq.cn/article/iDHE7UyH91pALUZh9OaV
+  * 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
+  * 隐私 AI 框架中 MPC 协议的快速集成 https://www.infoq.cn/article/V3wm8NUGllvTEYsaw3Hj
+  * 隐私 AI 框架中的数据流动与工程实现 https://www.infoq.cn/article/QO2LTgqDFr3AItJTBsp4
 
 Rosetta-IO https://github.com/LatticeX-Foundation/Rosetta-IO/blob/main/README_CN.md
 - > Rosetta-IO是Rosetta的一个基础组件，对Rosetta提供IO服务。Rosetta-IO中的通道一旦被建立，就能够发送数据给其它节点或者从其它节点接收数据。在Rosetta-IO，`节点`通过`节点ID`来区分，它是TCP连接的一端。每个节点都有全局的(`主机`, `端口`)元组，`主机`是`IP地址`或者`域名`，`端口`是`TCP监听端口`。
