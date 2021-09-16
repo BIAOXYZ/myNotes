@@ -35,10 +35,6 @@ Python 代码调试技巧 https://www.ibm.com/developerworks/cn/linux/l-cn-pytho
 
 pdb++, a drop-in replacement for pdb https://github.com/pdbpp/pdbpp
 
-# PuDB
-
-PuDB: a console-based visual debugger for Python https://github.com/inducer/pudb
-
 # ipdb
 
 Python 程序如何高效地调试？ - Rui L的回答 - 知乎 https://www.zhihu.com/question/21572891/answer/26046582
