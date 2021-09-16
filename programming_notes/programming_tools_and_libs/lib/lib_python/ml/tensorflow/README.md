@@ -98,6 +98,8 @@ Gradient Boosting in TensorFlow vs XGBoost https://nicolovaligi.com/articles/gra
 
 # 自定义op
 
+添加一个新操作（Op） https://tensorflow.juejin.im/extend/adding_an_op.html
+
 自定义Tensorflow OP开发经验总结 https://www.jianshu.com/p/7b82b6e6ca75
 
 Tensorflow上手3: 实现自己的Op https://mp.weixin.qq.com/s/MV3L_pZs_OJxyE43ZN8AsA
