@@ -1,4 +1,6 @@
 
+关于 k8s 或容器技术相关的博客大家有哪些推荐的？ https://www.v2ex.com/t/802303
+
 问大家一个关于 Pod 中的 Pause 容器的问题 https://www.v2ex.com/t/798088
 ```console
 Pause 容器永远处于 Pause(暂停)状态，这句话应该怎么理解？是跑在一个死循环里吗？

@@ -128,6 +128,10 @@ https://bruno-simon.com  各种交互各种炫
 
 # V2EX 民生、八卦等
 
+研究生请教关于找工作的问题 https://www.v2ex.com/t/802301
+- > 普通程序员请教下：什么是 Tranformer，inference，embedding 。 搜索引擎的解释看不懂。
+  >> transformer 说的是一种网络结构，之前在 NLP 领域用的比较多，现在 CV 也在用。inference 在 deep learning/machine learning 领域一般指的是将一些输入数据喂给模型，通过模型的计算，并得到结果的过程。embedding 是一种特征的表示方法，例如 rgb 表示颜色也可以看做一种 embedding
+
 互联网大厂想转回老家当老师 https://www.v2ex.com/t/730399
 
 老婆生孩子，他在外面一边陪产一边工作 https://www.v2ex.com/t/718931
