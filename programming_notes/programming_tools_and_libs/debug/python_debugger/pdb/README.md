@@ -27,6 +27,8 @@ pdb --- Python 的调试器 https://docs.python.org/zh-cn/3/library/pdb.html
     ```
     > 然后正常运行脚本，到了 `pdb.set_trace()` 那就会定下来，就可以看到调试的提示符(Pdb)了
 
+Python Debugging With Pdb https://realpython.com/python-debugging-pdb/
+
 How To Use the Python Debugger https://www.digitalocean.com/community/tutorials/how-to-use-the-python-debugger
 
 Python 程序如何高效地调试？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/21572891/answer/149974828

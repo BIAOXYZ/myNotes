@@ -5,6 +5,10 @@
 
 希尔顿 | 酒店集团背后的经营逻辑 https://mp.weixin.qq.com/s/9TQMSWSZXpE4AMQGXfQ3kA
 
+## 希尔顿公众号
+
+刚刚 | 2022年度希尔顿荣誉客会会籍与积分有效期延长政策更新 https://mp.weixin.qq.com/s/KBi2Eo4NDiadHwHW3aShJg
+
 ## 希尔顿官网
 
 Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店及度假村 https://www.hilton.com.cn/zh-cn/
