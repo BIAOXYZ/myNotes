@@ -39,3 +39,37 @@ How to Delete a Remote Git Tag from the Git Server https://www.systutorials.com/
   ```
 - > Note: after deleting the remote git tag, the locally cloned repository still has the tag. The local git tag can be removed by `git tag -d TAG`.
 - > Please note, the remote tag deletion operation is not a commit and this operation is not revertible.
+
+# tag 相关命令
+
+>> 起因是这样的：某个项目（`tf-encrypt`）clone下来后，准备新建个分支并切到某个 tag 对应的代码（就比如 `0.3.0` 吧）。但是有个环境（在 VMware Fusion 里装的 Ubuntu 虚拟机）直接 `git checkout -b 0.3.0 origin/0.3.0` 成功了，有个环境没成功。。。于是想到直接查找该tag对应的commit id，然后用commit id去切换。后来查了下，有两种最简单的做法。其中第一种好像只适用于 “**Unannotated tags**”。
+```sh
+$ git tag
+0.1.0
+0.2.0
+0.3.0
+0.4.0
+0.5.0
+0.5.1
+0.5.2
+0.5.3
+0.5.4
+0.5.5
+0.5.6
+0.5.7
+0.5.8
+0.5.9
+0.6.0-rc0
+$
+$ git show-ref -s 0.3.0
+0f3eb51ff720edd69e50c50647f81cfe09ccad0c
+$ git rev-list -n 1 0.3.0
+0f3eb51ff720edd69e50c50647f81cfe09ccad0c
+$
+```
+
+Get the commit hash for a tag https://stackoverflow.com/questions/16818025/get-the-commit-hash-for-a-tag
+- https://stackoverflow.com/questions/16818025/get-the-commit-hash-for-a-tag/16818124#16818124
+
+How to tell which commit a tag points to in Git? https://stackoverflow.com/questions/1862423/how-to-tell-which-commit-a-tag-points-to-in-git
+- https://stackoverflow.com/questions/1862423/how-to-tell-which-commit-a-tag-points-to-in-git/1862542#1862542
