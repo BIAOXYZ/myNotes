@@ -1,4 +1,6 @@
 
+关于 Raft Consensus Algorithm 的疑问 https://www.v2ex.com/t/802818
+
 用 Go 轻松完成一个 TCC 分布式事务，保姆级教程 https://www.v2ex.com/t/794530
 
 用 Python 轻松完成一个分布式事务 TCC，保姆级教程 https://www.v2ex.com/t/794155
