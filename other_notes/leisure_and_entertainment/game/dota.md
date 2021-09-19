@@ -212,6 +212,16 @@ How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions
 
 # Dota2新闻消息类
 
+《DOTA2》官宣：未来将不再支持 32 位系统、DirectX 9 等 https://www.ithome.com/0/576/253.htm 【`2021/9/18`】
+- > Valve 称今天（9 月 17 日）并不会有任何改动，但接下来的数月里其将实施下列改动：
+  ```console
+  移除对 32 位系统的支持。需要 64 位的机器和操作系统来运行 Dota；
+  移除对 10.14 以下 macOS 版本的支持；
+  移除对 DirectX 9 的支持。使用 DirectX 9 的玩家需要转为 DirectX 11；
+  移除对 OpenGL 的支持。使用 OpenGL 的玩家需要转为 Vulkan；
+  移除对 XAudio（-xaudio）的支持，需要转为 SDL Audio（-sdlaudio）。
+  ```
+
 电子竞技有哪些玄学？ - 疯癫的A兵者的回答 - 知乎 https://www.zhihu.com/question/67225512/answer/345458974
 
 尘归尘，DOTA2不再支持XP与Vista等旧版操作系统 http://dota2.sgamer.com/news/201903/170203.html 【2019.03.08】
