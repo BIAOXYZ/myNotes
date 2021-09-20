@@ -146,6 +146,8 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
 
+寻找一种易于理解的一致性算法（扩展版） https://leeweir.github.io/posts/raft/
+
 Raft 一致性算法论文中文译文 https://mp.weixin.qq.com/s/zMnqOCUVvRLQuJUwvM3QRA
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
