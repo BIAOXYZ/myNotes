@@ -3,9 +3,11 @@
 
 https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
 
-http://www.runoob.com/python/python-exceptions.html
+Python 异常处理 http://www.runoob.com/python/python-exceptions.html
 
 http://www.yiibai.com/python/python_exceptions.html
+
+Python Exception Handling Using try, except and finally statement https://www.programiz.com/python-programming/exception-handling
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
