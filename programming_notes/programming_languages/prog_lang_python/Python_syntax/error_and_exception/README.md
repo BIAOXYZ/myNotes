@@ -1,6 +1,12 @@
 
 # python异常
 
+## 官方
+
+`8. 错误和异常` https://docs.python.org/zh-cn/3/tutorial/errors.html
+
+## 其他
+
 https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
 
 Python 异常处理 http://www.runoob.com/python/python-exceptions.html
