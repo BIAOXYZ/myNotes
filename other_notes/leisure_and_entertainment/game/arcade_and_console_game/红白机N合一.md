@@ -9,6 +9,10 @@
 
 【红白机N合一】难到砸手柄的《忍者蛙》是怎么诞生的？ https://www.bilibili.com/video/BV115411L7HJ
 
+# 2018
+
+【社长聊街机10】《电神魔傀》是怎么变成《电精》的？ https://www.bilibili.com/video/BV1xW411L7eB/
+
 # 2017
 
 【红白机N合一】《猪小弟》看似充满童真，其实细想恐极 https://www.bilibili.com/video/BV1Yx411u7BM
