@@ -36,3 +36,5 @@ Primer on Python Decorators https://realpython.com/primer-on-python-decorators/
 What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-gil/
 
 Python 3's f-Strings: An Improved String Formatting Syntax (Guide) https://realpython.com/python-f-strings/
+
+How to Use any() in Python https://realpython.com/any-python/
