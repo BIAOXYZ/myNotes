@@ -435,8 +435,6 @@ http://hao.jobbole.com/gitjk/
 ### git flow
 http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 
-### git lfs
-
 ### gitk
 
 ### git hooks
