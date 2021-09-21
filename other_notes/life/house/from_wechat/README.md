@@ -40,3 +40,7 @@
 - > 北京蒲公英找家团队，创始人，北京周老板，知名博主，创业者，对北京楼市有详尽的分析，观点犀利，接地气；买卖实操过二百多套房子，实操经验…十足。
 
 400万在北京买哪？ | 答疑 https://mp.weixin.qq.com/s/XWjZaEq_SUOvOsGxgCkdzg
+
+# 其他
+
+从现在起，请忽视所有新区新城规划！所有城市一体化！ https://mp.weixin.qq.com/s/8METkLNgwSU-35F9AsOdSw
