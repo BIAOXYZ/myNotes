@@ -26,3 +26,30 @@ python import 问题 https://skrlamei.github.io/blog/torch%E7%BC%96%E7%A8%8B/pyt
     import train_utils
     import utils.misc as misc    #不能用import dnri.utils.misc as misc,　因为dnri的路径在dNRI下
     ```
+>> //notes：个人实战用的是这句（目的好像是为了使用父目录的module）：
+```py
+import sys,os
+# print("sys.path[0] is: ", sys.path[0])
+parent_path = os.path.dirname(sys.path[0])
+sys.path.append(parent_path)
+```
+
+Python import常见用法 & 父目录引用子目录py文件 & 子目录引用父目录py文件 https://blog.csdn.net/d200746/article/details/103530943
+- > 测试工程目录结构：
+  ```sh
+  $ tree
+  .
+  ├── module_1
+  │   ├── test_import_2.py
+  │   └── test.py
+  ├── module_2
+  │   ├── test_import_3.py
+  │   └── test.py
+  ├── test_import_0.py
+  └── test_import_1.py
+  
+  2 directories, 6 files
+  ```
+- > **总结起来两句话**：
+  * > 若要引用子目录上的py文件（例如 `test_import_1.py` 要引用 `module_1文件夹` 下的 `test_import_2.py`），需要***将被引文件所在目录升级为为模块***，即在被引文件的目录下创建 `__init__.py`。
+  * > 若要引用父目录上的py文件（例如 `test_import_2.py` 要引用 `父目录文件夹` 下的 `test_import_1.py`），需要***将该父目录添加到当前文件的 `sys.path` 中***。
