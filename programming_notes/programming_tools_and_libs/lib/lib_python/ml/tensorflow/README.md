@@ -14,9 +14,6 @@ Deep playground http://playground.tensorflow.org/
 - > 如果您熟悉 [NumPy](https://numpy.org/devdocs/user/quickstart.html)，就会知道张量与 `np.arrays` 有一定的相似性。
 - > 就像 Python 数值和字符串一样，所有张量都是不可变的：永远无法更新张量的内容，只能创建新的张量。
 
-创建运算 || Create an op https://www.tensorflow.org/guide/create_op
-- > 注：为确保您的 C++ 自定义运算与 TensorFlow 的官方 pip 软件包 ABI 兼容，请遵循[自定义运算仓库](https://github.com/tensorflow/custom-op)中的指南。指南包含端到端代码示例以及用于构建和分发自定义运算的 Docker 镜像。
-
 tf.Operation https://www.tensorflow.org/api_docs/python/tf/Operation
 
 初学者的 TensorFlow 2.0 教程 https://tensorflow.google.cn/tutorials/quickstart/beginner
@@ -96,11 +93,3 @@ Gradient Boosting in TensorFlow vs XGBoost https://nicolovaligi.com/articles/gra
 初步理解 TensorFlow 的 operation - lonlon ago的文章 - 知乎 https://zhuanlan.zhihu.com/p/32399032
 
 以线性回归为例，深入理解tensorflow的Operation、Tensor、Node的区别 https://blog.csdn.net/qq_27825451/article/details/105854164
-
-# 自定义op
-
-添加一个新操作（Op） https://tensorflow.juejin.im/extend/adding_an_op.html
-
-自定义Tensorflow OP开发经验总结 https://www.jianshu.com/p/7b82b6e6ca75
-
-Tensorflow上手3: 实现自己的Op https://mp.weixin.qq.com/s/MV3L_pZs_OJxyE43ZN8AsA
