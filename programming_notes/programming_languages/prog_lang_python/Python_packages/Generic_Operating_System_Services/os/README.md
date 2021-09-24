@@ -14,6 +14,21 @@ How do I get the full path of the current file's directory? https://stackoverflo
   os.path.abspath(os.getcwd())
   ```
 
+python 获取当前目录，上级目录，上上级目录 https://blog.csdn.net/flyfish1986/article/details/109773747
+```py
+import os
+print('当前目录')
+print(os.getcwd())
+print(os.path.abspath(os.path.dirname(__file__)))
+
+print('上级目录')
+print(os.path.abspath(os.path.dirname(os.getcwd())))
+print(os.path.abspath(os.path.join(os.getcwd(), "..")))
+
+print('上上级目录')
+print(os.path.abspath(os.path.join(os.getcwd(), "../..")))
+```
+
 How to set the current working directory? [duplicate] https://stackoverflow.com/questions/1810743/how-to-set-the-current-working-directory/1810760
 - https://stackoverflow.com/questions/1810743/how-to-set-the-current-working-directory/34971949#34971949
   * > To set the working directory:
