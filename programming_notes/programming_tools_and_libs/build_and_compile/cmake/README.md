@@ -21,6 +21,8 @@ What is the difference between include_directories and target_include_directorie
 
 --------------------------------------------------
 
+cmake 之 PUBLIC|PRIVATE|INTERFACE 关键字 https://ravenxrz.ink/archives/e40194d1.html
+
 cmake：`target_**` 中的 PUBLIC，PRIVATE，INTERFACE - 大川搬砖的文章 - 知乎 https://zhuanlan.zhihu.com/p/82244559
 
 CMake target_include_directories meaning of scope https://stackoverflow.com/questions/26243169/cmake-target-include-directories-meaning-of-scope

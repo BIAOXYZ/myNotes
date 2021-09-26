@@ -51,6 +51,7 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     + > ***`PRIVATE`*** - the directory is added to this target’s include directories.
     + > ***`INTERFACE`*** - the directory is added to the include directories for any targets that link this library.
     + > ***`PUBLIC`*** - As above, it is included in this library and also any targets that link this library.
+    >> //notes：这三个范围应该主要是针对库的 include 目录而言的。当某个库用 ***`target_include_directories()`*** 语句去 include 某些（头文件）路径时，这些路径根据三个范围关键词的不同，分别达到的效果是： <br> ***`PRIVATE`*** —— 这些路径给自己用；***`INTERFACE`*** —— 这些路径给链接这个库的后续目标用；***`PUBLIC`*** —— 这些路径既给自己用，也给链接这个库的后续目标用，也就是有：***`PUBLIC` = `PRIVATE` + `INTERFACE`***。 <br> 但是还是觉得这些细粒度范围控制没鸟用，直接都用 ***`PUBLIC`*** 不就得了。。。
   * > Tip: For public headers it is often a good idea to have your include folder ***be "namespaced" with sub-directories***. <br> The ***directory passed to `target_include_directories`*** will be ***the root of your include directory*** tree and your C++ files should ***include the path from there to your header***. <br> For this example you can see that we do it as follows:
     ```cpp
     #include "static/Hello.h"
