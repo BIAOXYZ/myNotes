@@ -296,9 +296,9 @@ origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.g
 ### git拉取远程分支
 
 git 拉取远程指定分支 pull本地不存在的分支 https://www.cnblogs.com/hamsterPP/p/6810831.html
-```
+```console
 当我想从远程仓库里拉取一条本地不存在的分支时：
-git checkout -b 本地分支名 origin/远程分支名
+    git checkout -b 本地分支名 origin/远程分支名
 这个将会自动创建一个新的本地分支，并与指定的远程分支关联起来。
 
 如果出现提示：
@@ -309,9 +309,16 @@ Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
 git fetch
 
 然后再执行
-git checkout -b 本地分支名 origin/远程分支名
+    git checkout -b 本地分支名 origin/远程分支名
 即可
 ```
+
+Git如何拉取指定远程分支 https://www.jianshu.com/p/856ce249ed78
+- > **方法一：直接获取**
+  * > 在Git Bash中直接输入指令：`git clone -b dev 代码仓库地址` （dev是分支名称）
+- > **方法二**
+  * > 将远程分支拉到本地：`git fetch origin dev`（dev即分支名）
+  * > 创建本地分支：`git checkout -b LocalDev origin/dev` (LocalDev 为本地分支名，dev为远程分支名)
 
 git 拉取远程分支到本地 https://blog.csdn.net/carfge/article/details/79691360
 ```
