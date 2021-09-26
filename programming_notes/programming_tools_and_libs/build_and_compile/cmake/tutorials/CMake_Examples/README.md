@@ -51,3 +51,26 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     + > ***`PRIVATE`*** - the directory is added to this target’s include directories.
     + > ***`INTERFACE`*** - the directory is added to the include directories for any targets that link this library.
     + > ***`PUBLIC`*** - As above, it is included in this library and also any targets that link this library.
+  * > Tip: For public headers it is often a good idea to have your include folder ***be "namespaced" with sub-directories***. <br> The ***directory passed to `target_include_directories`*** will be ***the root of your include directory*** tree and your C++ files should ***include the path from there to your header***. <br> For this example you can see that we do it as follows:
+    ```cpp
+    #include "static/Hello.h"
+    ```
+    > Using this method means that there is less chance of header filename clashes when you use multiple libraries in your project.
+    >> //notes：上面这段话的意思是说：你的 include 目录应该用子目录细分一下，然后添加 include 的目录的时候，把那个 include 相关的最高级目录加进去。但是在代码文件里用 `#include xxx` 引入时，包含子目录的形式。
+- > **Linking a Library**
+  * > When creating an executable that will use your library you must tell the compiler about the library. This can be done using the ***`target_link_libraries()`*** function.
+    ```cmake
+    add_executable(hello_binary
+        src/main.cpp
+    )
+    
+    target_link_libraries( hello_binary
+        PRIVATE
+            hello_library
+    )
+    ```
+  * > This tells CMake to link the ***hello_library*** against the ***hello_binary executable*** during link time. It will also ***propagate any include directories with `PUBLIC` or `INTERFACE` scope from the <ins>linked library target</ins>***.
+  * > An example of this being called by the compiler is
+    ```sh
+    /usr/bin/c++ CMakeFiles/hello_binary.dir/src/main.cpp.o -o hello_binary -rdynamic libhello_library.a
+    ```
