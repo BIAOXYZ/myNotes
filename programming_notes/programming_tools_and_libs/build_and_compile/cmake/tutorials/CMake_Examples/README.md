@@ -57,7 +57,7 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     #include "static/Hello.h"
     ```
     > Using this method means that there is less chance of header filename clashes when you use multiple libraries in your project.
-    >> //notes：上面这段话的意思是说：你的 include 目录应该用子目录细分一下，然后添加 include 的目录的时候，把那个 include 相关的最高级目录加进去。但是在代码文件里用 `#include xxx` 引入时，包含子目录的形式。
+    >> //notes：上面这段话的意思是说：你的 include 目录应该用子目录细分一下，然后添加 include 的目录的时候，把那个 include 相关的最高级目录加进去。但是在代码文件里用 `#include "xxx"` 引入某个头文件时，用从 ***include的根目录*** 出发直到 ***该头文件位置***（也就是中间会包含一些子目录）的形式，比如：`#include "subfold1/subfold2/.../xxx"`。这样的好处是减少冲突。
 - > **Linking a Library**
   * > When creating an executable that will use your library you must tell the compiler about the library. This can be done using the ***`target_link_libraries()`*** function.
     ```cmake
