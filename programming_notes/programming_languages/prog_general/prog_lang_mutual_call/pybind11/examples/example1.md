@@ -39,6 +39,7 @@ PYBIND11_MODULE(syszux, m) {
 
 ```sh
 # 这句不能少，不然会报错找不到 pybind11 这个 module
+## 这句的核心功能是把clone下来的 pybind11 仓库目录的路径添加到 PYTHONPATH 里。
 export PYTHONPATH=$PYTHONPATH:/home/<your_user_name>/test/pybind11
 
 # -fPIC 那句后面紧接着的 -I/usr/include/python3.5m 是可以不用的，因为后面那个表达式结果里包含了，
@@ -61,6 +62,7 @@ $
 $ g++ -O3 -Wall -shared -std=c++11 -fPIC -I/usr/include/python3.5m `python3 -m pybind11 --includes` main.cpp -o main `python3-config --extension-suffix`
 g++: error: .cpython-35m-x86_64-linux-gnu.so: No such file or directory
 $
+# 去掉main和后面语句的空格就可以编过了。
 $ g++ -O3 -Wall -shared -std=c++11 -fPIC -I/usr/include/python3.5m `python3 -m pybind11 --includes` main.cpp -o main`python3-config --extension-suffix`
 $ ll
 total 140
@@ -80,7 +82,9 @@ Traceback (most recent call last):
 ImportError: dynamic module does not define module export function (PyInit_main)
 >>>
 
-# 于是改成原文里的 syszux，然后就可以了。
+# 于是改回原文里的名字 syszux，然后就可以编过并正常在 python 里使用了。  -->  但是，原文的编译语句有一点不好：
+## 有了 `python3 -m pybind11 --includes`，那前面的 -I/usr/include/python3.5m 就多余了（其实不止多余，还容易引入环境相关错误），所以可以直接用：
+## g++ -O3 -Wall -shared -std=c++11 -fPIC `python3 -m pybind11 --includes` syszux.cpp -o syszux`python3-config --extension-suffix`
 $ cp main.cpp syszux.cpp
 $ g++ -O3 -Wall -shared -std=c++11 -fPIC -I/usr/include/python3.5m `python3 -m pybind11 --includes` syszux.cpp -o syszux`python3-config --extension-suffix`
 $ ll

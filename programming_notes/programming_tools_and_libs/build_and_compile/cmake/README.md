@@ -29,3 +29,5 @@ CMake target_include_directories meaning of scope https://stackoverflow.com/ques
 - https://stackoverflow.com/questions/26243169/cmake-target-include-directories-meaning-of-scope/28305481#28305481
 
 --------------------------------------------------
+
+Cmake之深入理解find_package()的用法 - 希葛格的韩少君的文章 - 知乎 https://zhuanlan.zhihu.com/p/97369704
