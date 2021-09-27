@@ -33,3 +33,7 @@ How do I import a module created with pybind11 on Ubuntu https://stackoverflow.c
     + > The question remains: How to write `setup.py`? For your case you can actually call CMake. In fact there exists an example that does exactly that: [pybind/cmake_example](https://github.com/pybind/cmake_example). You can basically copy-paste from there.
 
 pybind11教程 - 奇迹哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/362834539
+
+# 文章2
+
+Setting up a C++/Python project with pybind11 and CMake https://medium.com/practical-coding/setting-up-a-c-python-project-with-pybind11-and-cmake-8de391494fca

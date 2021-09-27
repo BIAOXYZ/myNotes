@@ -38,3 +38,5 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
 Python 3's f-Strings: An Improved String Formatting Syntax (Guide) https://realpython.com/python-f-strings/
 
 How to Use any() in Python https://realpython.com/any-python/
+
+Building a Python C Extension Module https://realpython.com/build-python-c-extension-module/
