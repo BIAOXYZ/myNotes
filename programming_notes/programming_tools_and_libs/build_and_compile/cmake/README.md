@@ -31,3 +31,9 @@ CMake target_include_directories meaning of scope https://stackoverflow.com/ques
 --------------------------------------------------
 
 Cmake之深入理解find_package()的用法 - 希葛格的韩少君的文章 - 知乎 https://zhuanlan.zhihu.com/p/97369704
+
+--------------------------------------------------
+
+cmake:设置编译选项的讲究(add_compile_options和CMAKE_CXX_FLAGS的区别) https://blog.csdn.net/10km/article/details/51731959
+
+CMake设置编译选项的几种方法 https://blog.csdn.net/dreamback1987/article/details/103698524

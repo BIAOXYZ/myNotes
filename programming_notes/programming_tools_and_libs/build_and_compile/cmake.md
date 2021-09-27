@@ -126,3 +126,10 @@ mount | grep snapd
 ## 头文件包含还是库链接？
 
 Undefined reference to function CMake https://stackoverflow.com/questions/38530491/undefined-reference-to-function-cmake
+
+## `can not be used when making a shared object; recompile with -fPIC`
+>> //notes：这个问题的起因是一模一样的代码，***在Mac下能编过，在Debian 9下编不过***。根据Debian 9下的报错提示，修改很简单：在 `CMakeLists.txt` 里加上 `-fPIC` 选项即可，比如这个：`set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")`。但是造成这个的根因还没找到，先不管了。
+
+Got "recompile with -fPIC" error while the option is passed to the linker https://stackoverflow.com/questions/46731707/got-recompile-with-fpic-error-while-the-option-is-passed-to-the-linker
+
+cmake编译错误"recompile with -fPIC" https://blog.csdn.net/googler_offer/article/details/95243150
