@@ -128,7 +128,8 @@ mount | grep snapd
 Undefined reference to function CMake https://stackoverflow.com/questions/38530491/undefined-reference-to-function-cmake
 
 ## `can not be used when making a shared object; recompile with -fPIC`
->> //notes：这个问题的起因是一模一样的代码，***在Mac下能编过，在Debian 9下编不过***。根据Debian 9下的报错提示，修改很简单：在 `CMakeLists.txt` 里加上 `-fPIC` 选项即可，比如这个：`set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")`。但是造成这个的根因还没找到，先不管了。
+>> //notes：这个问题的起因是一模一样的代码，***在Mac下能编过，在Debian 9下编不过***。
+>>> 根据Debian 9下的报错提示，修改很简单：在 `CMakeLists.txt` 里加上 `-fPIC` 选项即可，比如这个：`set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC ${CMAKE_CXX_FLAGS}")`。但是造成这个现象的根因还没找到。下面两个帖子里有些线索，不过没时间深究，先不管了。
 
 Got "recompile with -fPIC" error while the option is passed to the linker https://stackoverflow.com/questions/46731707/got-recompile-with-fpic-error-while-the-option-is-passed-to-the-linker
 
