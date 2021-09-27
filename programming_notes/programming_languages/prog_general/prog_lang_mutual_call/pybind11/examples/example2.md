@@ -14,5 +14,22 @@ How do I import a module created with pybind11 on Ubuntu https://stackoverflow.c
     import arithmetic
     ```
     > With this method you can use both relative and absolute path.
+- https://stackoverflow.com/questions/50688184/how-do-i-import-a-module-created-with-pybind11-on-ubuntu/50701735#50701735
+  * > Besides the solution of setting the path in the Python script that is presented by @super, you have two more generic solutions.
+  * > **Setting `PYTHONPATH`**
+    + > There is an environment variable in Linux (and macOS) called `PYTHONPATH`. If you add the path that contains your `*.so` to the `PYTHONPATH` before you call Python, Python will be able to find your library.
+    + > To do this:
+      ```sh
+      export PYTHONPATH="/path/that/contains/your/so":"${PYTHONPATH}"
+      ```
+      > To apply this 'automatically' for every session you can add this line to `~/.bash_profile` or `~/.bashrc` (see the same reference). In that case, Python will always be able to find your library.
+  * > **Copying your to a path already in Python's path**
+    + > You can also 'install' the library. The usual way to do this is to create a `setup.py` file. If set up correctly you can build and install your library using
+      ```sh
+      python setup.py build
+      python setup.py install
+      ```
+      > (Python will know where to put your library. You can 'customize' a bit with an option like `--user` to use your home-folder, but this doesn't seems to be of particular interest to you.)
+    + > The question remains: How to write `setup.py`? For your case you can actually call CMake. In fact there exists an example that does exactly that: [pybind/cmake_example](https://github.com/pybind/cmake_example). You can basically copy-paste from there.
 
 pybind11教程 - 奇迹哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/362834539
