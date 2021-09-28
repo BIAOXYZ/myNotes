@@ -32,7 +32,7 @@ How do I import a module created with pybind11 on Ubuntu https://stackoverflow.c
       > (Python will know where to put your library. You can 'customize' a bit with an option like `--user` to use your home-folder, but this doesn't seems to be of particular interest to you.)
     + > The question remains: How to write `setup.py`? For your case you can actually call CMake. In fact there exists an example that does exactly that: [pybind/cmake_example](https://github.com/pybind/cmake_example). You can basically copy-paste from there.
 
-pybind11教程 - 奇迹哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/362834539
+【[:star:][`*`]】 pybind11教程 - 奇迹哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/362834539
 
 # 文章2
 

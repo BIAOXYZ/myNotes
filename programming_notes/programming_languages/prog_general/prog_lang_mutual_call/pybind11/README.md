@@ -14,9 +14,23 @@ Build systems https://pybind11.readthedocs.io/en/stable/compiling.html
 
 CMake helpers https://pybind11.readthedocs.io/en/stable/cmake/index.html
 
+# error
+
+CMake finding Python library and Python interpreter mismatch during pybind11 build #99 https://github.com/pybind/pybind11/issues/99
+
+CMake and pybind11 using inconsistent Python Versions https://stackoverflow.com/questions/62773837/cmake-and-pybind11-using-inconsistent-python-versions
+
+# 问题
+
+How to strip trailing whitespace in CMake variable? https://stackoverflow.com/questions/39496043/how-to-strip-trailing-whitespace-in-cmake-variable || 如何在CMake变量中去掉尾部空格？ https://www.thinbug.com/q/39496043
+- https://stackoverflow.com/questions/39496043/how-to-strip-trailing-whitespace-in-cmake-variable/42676416#42676416
+
 # 其他
 
 pybind11的最佳实践 - Gemfield的文章 - 知乎 https://zhuanlan.zhihu.com/p/192974017
+
+使用pybind11 将C++代码编译为python模块 - Gemfield的文章 - 知乎 https://zhuanlan.zhihu.com/p/52619334
+- > `PyExc_ImportError, "Python version mismatch: module was compiled for Python %s, " "but the interpreter version is incompatible: %s.", compiled_ver, runtime_ver);`
 
 pybind11 https://mikethreeacer.medium.com/pybind11-4f538dbbc946
 
@@ -26,3 +40,5 @@ pybind11 for C++14/C++17 https://stackoverflow.com/questions/63682868/pybind11-f
     ```console
     By default, pybind11 will compile modules with the compiler default or the minimum standard required by pybind11, whichever is higher.
     ```
+
+【码记录】在Ubuntu16.04使用pybind11+cmake实现python调用C++运行ncnn模型 - megaZ的文章 - 知乎 https://zhuanlan.zhihu.com/p/393024636
