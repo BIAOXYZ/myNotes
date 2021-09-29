@@ -162,6 +162,10 @@ macOS 下使用 Docker 搭建 ubuntu 环境 - 十里的文章 - 知乎 https://z
 Installing on macOS https://docs.anaconda.com/anaconda/install/mac-os/
 - > Problems? See troubleshooting. https://docs.anaconda.com/anaconda/user-guide/troubleshooting/
 
+macOS Anaconda 安装和卸载 https://www.jianshu.com/p/d250a4245d81
+
+从Mac中彻底删除Anaconda https://www.jianshu.com/p/8747a347ea8b
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac 剪贴板增强
