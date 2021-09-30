@@ -42,3 +42,18 @@ pybind11 for C++14/C++17 https://stackoverflow.com/questions/63682868/pybind11-f
     ```
 
 【码记录】在Ubuntu16.04使用pybind11+cmake实现python调用C++运行ncnn模型 - megaZ的文章 - 知乎 https://zhuanlan.zhihu.com/p/393024636
+
+## Mac下编译问题：
+>> //notes：在Mac下编译时，似乎要多加上 `-undefined dynamic_lookup` 参数，否则会报一堆平台相关的错误。。。
+>>> //notes：至于下面文章里linux下的编译语句多了 `-fPIC`，这个之前在别的编译时候遇到过，好像是跟动态库相关的。反正Mac是个辣鸡就对了～
+
+Python 调用 C++ 之 pybind11入门（macOS） https://www.ryanligod.com/2018/10/29/2018-10-29%20pybind11%20%E5%85%A5%E9%97%A8/
+- > 编译
+  * > macOS下运行：
+    ```sh
+    $ c++ -O3 -Wall -shared -std=c++11 -undefined dynamic_lookup `python3 -m pybind11 --includes` example.cpp -o example`python3-config --extension-suffix`
+    ```
+  * > Linux下运行：
+    ```sh
+    $ c++ -O3 -Wall -shared -std=c++11 -fPIC `python3 -m pybind11 --includes` example.cpp -o example`python3-config --extension-suffix`
+    ```
