@@ -95,3 +95,11 @@
     gcc -o hello.exe hello.c (哦,windows用习惯了)
     gcc -o hello.asm -S hello.c
     ```
+
+# `-fPIC`
+
+GCC -fPIC option https://stackoverflow.com/questions/5311515/gcc-fpic-option
+
+gcc 编译参数 -fPIC 的详解和一些问题 https://blog.csdn.net/a_ran/article/details/41943749
+
+linux编译动态库 fPIC作用 https://www.cnblogs.com/fengliu-/p/10216878.html
