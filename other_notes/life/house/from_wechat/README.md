@@ -1,6 +1,10 @@
 
 # from 北京楼市情报
 
+## 2021.09
+
+北京推行电子“房本”！和纸质房本同等效力！手机就能领取！ https://mp.weixin.qq.com/s/bGv_PukqNlic7f_a3GMr_Q
+
 ## 2021.08
 
 一场大雨，北京限竞房、共产房变成水帘洞 https://mp.weixin.qq.com/s/-grxIJrk-dH0xnfJY0wJig
