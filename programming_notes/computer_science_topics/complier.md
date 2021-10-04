@@ -84,7 +84,23 @@ C++静态库与动态库 https://www.runoob.com/w3cnote/cpp-static-library-and-d
 
 ## header 和 lib
 
+What's the difference between a header file and a library? https://stackoverflow.com/questions/924485/whats-the-difference-between-a-header-file-and-a-library
+
+What are Header Files and Library Files? [duplicate] https://stackoverflow.com/questions/6407975/what-are-header-files-and-library-files
+
+include directories vs. lib directory concept question https://stackoverflow.com/questions/5022374/include-directories-vs-lib-directory-concept-question
+- https://stackoverflow.com/questions/5022374/include-directories-vs-lib-directory-concept-question/5023086#5023086
+
 C++ : Difference between linking library and adding include directories https://stackoverflow.com/questions/7096152/c-difference-between-linking-library-and-adding-include-directories
+
+Header-only https://en.wikipedia.org/wiki/Header-only
+- > In the context of the C or C++ programming languages, a library is called **header-only** if the full definitions of all macros, functions and classes comprising the library are visible to the compiler in a header file form. ***Header-only libraries do not need to be separately compiled, packaged and installed in order to be used***. All that is required is to point the compiler at the location of the headers, and then `#include` the header files into the application source. Another advantage is that the compiler's optimizer can do a much better job when all the library's source code is available.
+- > The disadvantages include:
+  * > brittleness – most changes to the library will require recompilation of all compilation units using that library
+  * > longer compilation times – the compilation unit must see the implementation of all components in the included files, rather than just their interfaces
+- > ***For C++ templates, including the definitions in header is the only way to compile***, since the compiler needs to know the full definition of the templates in order to instantiate.
+
+Benefits of header-only libraries https://stackoverflow.com/questions/12671383/benefits-of-header-only-libraries
 
 ## GCC版本升级
 
