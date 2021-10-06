@@ -91,6 +91,19 @@ Mars: 3396
 Jupiter: 69910
 ```
 
+## unordered_map各种遍历方式
+
+【From LeetCode】：
+- `LC1436. 旅行终点站` https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1401-1600/001436--weekly187_1/README.md
+  * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1401-1600/001436--weekly187_1/tran/187_1_v.cpp
+    + >
+      ```cpp
+      for (auto [k, v] : dic) {
+      
+      }
+      ```
+    + https://en.cppreference.com/w/cpp/container/unordered_map
+
 # unordered_map初始化
 
 C++ STL unordered_map详解 https://blog.csdn.net/wsp_1138886114/article/details/106794899
