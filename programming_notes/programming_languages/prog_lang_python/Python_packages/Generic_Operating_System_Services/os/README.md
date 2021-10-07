@@ -38,3 +38,14 @@ How to set the current working directory? [duplicate] https://stackoverflow.com/
     os.chdir('c:\\Users\\uname\\desktop\\python')  # Provide the new path here
     ```
     >> //notes：其实一般合成一句 `os.chdir(os.getcwd())` 就可以了。
+
+How do I find out my PYTHONPATH using Python? https://stackoverflow.com/questions/1489599/how-do-i-find-out-my-pythonpath-using-python
+- https://stackoverflow.com/questions/1489599/how-do-i-find-out-my-pythonpath-using-python/1489625#1489625
+  * > `sys.path` might include items that aren't specifically in your `PYTHONPATH` environment variable. To query the variable directly, use:
+    ```py
+    import os
+    try:
+        user_paths = os.environ['PYTHONPATH'].split(os.pathsep)
+    except KeyError:
+        user_paths = []
+    ```
