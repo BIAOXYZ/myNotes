@@ -30,6 +30,11 @@ CMake target_include_directories meaning of scope https://stackoverflow.com/ques
 
 --------------------------------------------------
 
+“轻松搞定CMake”系列之find_package用法详解 https://blog.csdn.net/zhanghm1995/article/details/105466372
+- > 重点看下其中 `OpenCV_DIR`、`OpenCV_INCLUDE_DIRS` 和 `OpenCV_LIBS` 打印的结果，这是我在 `CMakeLists.txt` 中用 `message` 命令输出这三个变量的值的结果。
+- > 可以看到在执行 `find_package(OpenCV 3 REQUIRED)` 命令后，CMake找到了我们安装的位于 `/usr/local` 下的OpenCV库，并设置了CMake变量 `OpenCV_DIR` 为OpenCV库的配置文件所在路径，正是通过载入这个路径下的 `OpenCVConfig.cmake` 配置文件才能配置好OpenCV库，然后在 `OpenCVConfig.cmake` 配置文件中定义了变量 `OpenCV_INCLUDE_DIRS` 为OpenCV库头文件包含路径，这样我们才能才在代码中使用 `#include <opencv2/opencv.hpp>` 而不会出现编译错误，同时定义了变量 `OpenCV_LIBS` 为OpenCV链接库路径，这样我们才能正确链接到OpenCV中的库文件，而不会出现类似未定义的引用这样的链接错误。
+- > 通过这个例子就可以看出 `find_package` 本质上就是一个搜包的命令，通过一些特定的规则找到 `<package_name>Config.cmake` 包配置文件，通过执行该配置文件，从而定义了一系列的变量，通过这些变量就可以准确定位到OpenCV库的头文件和库文件，完成编译。
+
 Cmake之深入理解find_package()的用法 - 希葛格的韩少君的文章 - 知乎 https://zhuanlan.zhihu.com/p/97369704
 
 --------------------------------------------------
