@@ -82,3 +82,14 @@ sudo pip install -U cmake==xxx
 # pip打包发布
 
 Python 打包自己的库到 PYPI （可pip安装） - 霾大的文章 - 知乎 https://zhuanlan.zhihu.com/p/79164800
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# pip问题解决
+
+## `subprocess.CalledProcessError: Command '('lsb_release', '-a')' returned non-zero exit status 1.`
+>> //notes：起因是用 `update-alternatives` 方式升级python，结果这次 `pip` 出问题了，报上述错误。
+>>> 网上搜了下，用了下面的方法，核心步骤是 `sudo cp /usr/lib/python3/dist-packages/lsb_release.py /usr/local/lib/python3.7/`。还有一些攻略说是直接删掉 `/usr/bin/lsb_release`，没有尝试这种，明显感觉不太好。
+
+- pip报错“subprocess.CalledProcessError...lsb_release” - 老K的文章 - 知乎 https://zhuanlan.zhihu.com/p/150492500
+- ubuntu 中pip 安装软件报错：“Command 'lsb_release -a' returned non-zero exit status 1.” https://www.jianshu.com/p/3a2877edebe8
