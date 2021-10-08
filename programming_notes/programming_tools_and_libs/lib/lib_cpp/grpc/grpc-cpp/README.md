@@ -29,3 +29,7 @@ CMake with gRPC cannot find gRPCTargets.cmake https://stackoverflow.com/question
     ```sh
     cmake -DgRPC_INSTALL=ON -DgRPC_BUILD_TESTS=OFF -DgRPC_PROTOBUF_PROVIDER=package -DgRPC_ZLIB_PROVIDER=package -DgRPC_CARES_PROVIDER=package -DgRPC_SSL_PROVIDER=package -DCMAKE_BUILD_TYPE=Release ../.. 
     ```
+
+## Could not find a package configuration file provided by "c-ares" with any of the following names: `c-aresConfig.cmake` `c-ares-config.cmake`
+
+Building grpc from source using preinstalled packages https://stackoverflow.com/questions/50875144/building-grpc-from-source-using-preinstalled-packages
