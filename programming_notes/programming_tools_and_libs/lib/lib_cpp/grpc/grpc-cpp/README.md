@@ -20,3 +20,12 @@
 # grpc and CMake
 
 `grpc/examples/cpp/helloworld/CMakeLists.txt` https://github.com/grpc/grpc/blob/8aff94558c/examples/cpp/helloworld/CMakeLists.txt
+
+## could not find `/usr/local/lib/cmake/grpc/gRPCTargets.cmake`
+
+CMake with gRPC cannot find gRPCTargets.cmake https://stackoverflow.com/questions/57413975/cmake-with-grpc-cannot-find-grpctargets-cmake
+- https://stackoverflow.com/questions/57413975/cmake-with-grpc-cannot-find-grpctargets-cmake/57426973#57426973
+  * > Or just force everything with the command-line linked in the issue:
+    ```sh
+    cmake -DgRPC_INSTALL=ON -DgRPC_BUILD_TESTS=OFF -DgRPC_PROTOBUF_PROVIDER=package -DgRPC_ZLIB_PROVIDER=package -DgRPC_CARES_PROVIDER=package -DgRPC_SSL_PROVIDER=package -DCMAKE_BUILD_TYPE=Release ../.. 
+    ```
