@@ -33,3 +33,14 @@ CMake with gRPC cannot find gRPCTargets.cmake https://stackoverflow.com/question
 ## Could not find a package configuration file provided by "c-ares" with any of the following names: `c-aresConfig.cmake` `c-ares-config.cmake`
 
 Building grpc from source using preinstalled packages https://stackoverflow.com/questions/50875144/building-grpc-from-source-using-preinstalled-packages
+- https://stackoverflow.com/questions/50875144/building-grpc-from-source-using-preinstalled-packages/54819108#54819108
+
+grpc使用记录(一) gRPC编译(mscv/gcc) https://www.cnblogs.com/oloroso/p/11121922.html 【最终还是用这个帖子的方法解决了，不需要下载了，直接去grpc的third_party目录下用cmake再编译安装一遍即可。】
+- > 2、编译安装c-ares
+  ```sh
+  git clone https://github.com/c-ares/c-ares.git
+  cd c-ares
+  # 可以不下载，直接  cd grpc/third_party/cares/cares
+  cmake3 . -DCMAKE_INSTALL_PREFIX=/usr
+  make && make install
+  ```
