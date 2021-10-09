@@ -6,3 +6,5 @@
 - 在Linux上升级Python版本 https://www.jianshu.com/p/0a12b7c7a261
 - Linux中使用update-alternatives切换默认程序 https://www.jianshu.com/p/08d08713f0d1
 - ubuntu升级python3.8 https://www.jenny.fit/article/2021/6/9/16.html
+
+>> //notes：升级完成后可能 `pip` 会有问题，报类似 `subprocess.CalledProcessError: Command '('lsb_release', '-a')' returned non-zero exit status 1.` 的错。参见pip部分的笔记即可。
