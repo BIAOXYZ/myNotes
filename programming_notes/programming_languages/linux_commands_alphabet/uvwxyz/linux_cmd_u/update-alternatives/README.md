@@ -12,6 +12,7 @@
 ## 问题1
 
 >> //notes：升级完成后可能 `pip` 会有问题，报类似 `subprocess.CalledProcessError: Command '('lsb_release', '-a')' returned non-zero exit status 1.` 的错。参见pip部分的笔记即可。
+>>> 其实核心步骤就是新安装的python版本的pip少了 `lsb_release.py`，那么直接复制已有的过去即可：`sudo cp /usr/lib/python3/dist-packages/lsb_release.py /usr/local/lib/python3.7/`。
 
 ## 问题2
 
