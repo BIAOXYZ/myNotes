@@ -54,6 +54,8 @@
 
 # 注意事项
 
+买房选房子的18个注意事项 https://mp.weixin.qq.com/s/S9aURny6FdGikFq_P6N6RQ
+
 ## 首套！
 
 房产证能写两个人的名字吗 https://www.sohu.com/a/408807004_124709
