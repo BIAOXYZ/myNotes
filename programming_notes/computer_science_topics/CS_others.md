@@ -68,6 +68,16 @@ Sparse Merkle Tree https://github.com/aergoio/SMT
 
 Urkel -- An optimized and cryptographically provable key-value store. Written in C. https://github.com/chjj/liburkel 
 
+zkrypt: Zero-Knowledge Proof Toolbox https://github.com/guanzhi/zkrypt
+- > Zkrypt是一个开源的C语言零知识证明算法库，旨在向用户提供简洁、高效的非交互式零知识证明协议接口，用户可以通过调用接口实现完整的零知识证明协议的流程，包括公共参数设置、证明生成和验证等步骤。
+- > 本项目由北京大学关志的密码学研究组开发维护。
+  ```
+  支持多种零知识证明协议（包括Groth16, Plonk等）
+  通过算法优化提供零知识证明协议的高效实现
+  支持包括BN254、BLS381等在内的多种主流曲线，特别地支持国密SM2、SM9等算法中的推荐曲线，可与国密算法兼容
+  支持X86、ARM等硬件运行环境及Linux、Windows、Mac、Android等软件运行环境
+  ```
+
 ## other project
 
 【 From: https://github.com/yifengyou 】
@@ -83,6 +93,8 @@ A toy JVM in Go https://github.com/zserge/tojvm
 CEO 亲自写代码登上热榜，从零开始打造“裸金属”树莓派 https://www.ithome.com/0/579/698.htm
 - > 所谓“裸金属”就是没有操作系统的计算机，直接在逻辑硬件上执行指令。这位 CEO 说，打造一个裸金属系统是他儿时的志向。
 - > 项目 GitHub 链接： https://github.com/isometimes/rpi4-osdev
+
+Getting started with static program analysis. 静态程序分析入门教程。 https://github.com/RangerNJU/Static-Program-Analysis-Book
 
 ## programming language project
 
