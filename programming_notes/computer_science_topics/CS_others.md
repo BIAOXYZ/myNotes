@@ -80,6 +80,10 @@ A toy JVM in Go https://github.com/zserge/tojvm
 
 开发一个 Linux 调试器（二）：断点 - Linux中国的文章 - 知乎 https://zhuanlan.zhihu.com/p/27655662 || Writing a Linux Debugger Part 2: Breakpoints https://blog.tartanllama.xyz/writing-a-linux-debugger-breakpoints/
 
+CEO 亲自写代码登上热榜，从零开始打造“裸金属”树莓派 https://www.ithome.com/0/579/698.htm
+- > 所谓“裸金属”就是没有操作系统的计算机，直接在逻辑硬件上执行指令。这位 CEO 说，打造一个裸金属系统是他儿时的志向。
+- > 项目 GitHub 链接： https://github.com/isometimes/rpi4-osdev
+
 ## programming language project
 
 Single-file public-domain/open source libraries with minimal dependencies https://github.com/nothings/single_file_libs
