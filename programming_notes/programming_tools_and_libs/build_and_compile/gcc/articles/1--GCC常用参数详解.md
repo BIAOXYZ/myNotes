@@ -96,6 +96,10 @@
     gcc -o hello.asm -S hello.c
     ```
 
+# 其他
+
+gcc 编译 选项 汇总 - 沃德锅的文章 - 知乎 https://zhuanlan.zhihu.com/p/347611674
+
 # `-fPIC`
 
 GCC -fPIC option https://stackoverflow.com/questions/5311515/gcc-fpic-option
@@ -103,3 +107,14 @@ GCC -fPIC option https://stackoverflow.com/questions/5311515/gcc-fpic-option
 gcc 编译参数 -fPIC 的详解和一些问题 https://blog.csdn.net/a_ran/article/details/41943749
 
 linux编译动态库 fPIC作用 https://www.cnblogs.com/fengliu-/p/10216878.html
+
+# `-Wl,-rpath`
+
+GCC/G++选项 -Wl,-rpath= - 做点交易赚点钱的文章 - 知乎 https://zhuanlan.zhihu.com/p/415904958
+
+# `-D_GLIBCXX_USE_CXX11_ABI`
+
+`-D_GLIBCXX_USE_CXX11_ABI` 宏实验 https://blog.csdn.net/haolipengzhanshen/article/details/108540986
+- Why we need `D_GLIBCXX_USE_CXX11_ABI=0` http://litaotju.github.io/c++/2019/02/24/Why-we-need-D_GLIBCXX_USE_CXX11_ABI=0/
+
+CMake编译遇到这种ABI不兼容问题不要慌 https://segmentfault.com/a/1190000039773898
