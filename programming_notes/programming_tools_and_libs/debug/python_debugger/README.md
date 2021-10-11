@@ -22,6 +22,9 @@ PySnooper 源码阅读 https://zdyxry.github.io/2019/04/27/PySnooper-%E6%BA%90%E
 
 # 其他
 
+Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-boss/
+- pydbgr
+
 Cyberbrain: Python debugging, redefined. https://github.com/laike9m/Cyberbrain
 - > Cyberbrain consists of a Python library and various editor/IDE integrations. Currently it supports VS Code and Gitpod. See our plan on expanding the support.
 
