@@ -17,6 +17,7 @@ CMake helpers https://pybind11.readthedocs.io/en/stable/cmake/index.html
 # error
 
 CMake finding Python library and Python interpreter mismatch during pybind11 build #99 https://github.com/pybind/pybind11/issues/99
+- https://github.com/pybind/pybind11/issues/99#issuecomment-207782425
 
 CMake and pybind11 using inconsistent Python Versions https://stackoverflow.com/questions/62773837/cmake-and-pybind11-using-inconsistent-python-versions
 
