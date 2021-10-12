@@ -11,6 +11,8 @@
 
 Why can templates only be implemented in the header file? https://stackoverflow.com/questions/495021/why-can-templates-only-be-implemented-in-the-header-file
 
+C++: 模板函数定义与声明分离； https://www.shuzhiduo.com/A/E35pgjogJv/ || https://www.cnblogs.com/yinwei-space/p/10609049.html
+
 # 实战攻略
 
 C++ 模板 https://www.runoob.com/cplusplus/cpp-templates.html
@@ -103,4 +105,4 @@ C++类模板，你看我就够了 https://www.jianshu.com/p/70ca94872418
 
 C++ Template 基础篇（一）：函数模板 https://blog.csdn.net/lezardfu/article/details/56852043
 
-C++ 模板常见特性（函数模板、类模板） - 小林coding的文章 - 知乎 https://zhuanlan.zhihu.com/p/101898043
+C++ 模板常见特性（函数模板、类模板） - 小林coding的文章 - 知乎 https://zhuanlan.zhihu.com/p/101898043 || https://juejin.cn/post/6844904041328148493
