@@ -36,4 +36,44 @@ How do I import a module created with pybind11 on Ubuntu https://stackoverflow.c
 
 # 文章2
 
+pybind11: C++ 工程如何提供 Python 接口 https://segmentfault.com/a/1190000023886545
+- > **添加进 CMake**
+  * > `CMakeLists.txt` 里 `add_subdirectory` pybind11 的路径，再用其提供的 `pybind11_add_module` 就能创建 pybind11 的模块了。
+    ```cmake
+    cmake_minimum_required(VERSION 3.1)
+    project(start-pybind11 VERSION 0.1.0 LANGUAGES C CXX)
+    
+    set(MY_PYBIND ${MY_CURR}/third_party/pybind11-2.5.0)
+    
+    add_subdirectory(${MY_PYBIND})
+    pybind11_add_module(example_pb example_pb.cpp)
+    ```
+  * > 如果想在已有 C++ 动态库上扩展 pybind11 绑定，那么 `target_link_libraries` 链接该动态库就可以了。
+    ```cmake
+    target_link_libraries(example_pb PUBLIC example)
+    ```
+- > **绑定一个函数**
+  * > 我们先实现一个 `add` 函数，
+    ```cpp
+    int add(int i, int j) {
+      return i + j;
+    }
+    ```
+  * > 为了简化工程，可以直接实现在 `example_pb.cpp` 里，
+    ```cpp
+    #include <pybind11/pybind11.h>
+    
+    namespace py = pybind11;
+    
+    int add(int i, int j) {
+      return i + j;
+    }
+    
+    PYBIND11_MODULE(example_pb, m) {
+      m.doc() = "example_pb bindings";
+      m.def("add", &add, "A function which adds two numbers");
+    }
+    ```
+  * > 之后，于 `CMakeLists.txt` 所在目录，执行 `cmake` 编译就完成了。
+
 Setting up a C++/Python project with pybind11 and CMake https://medium.com/practical-coding/setting-up-a-c-python-project-with-pybind11-and-cmake-8de391494fca
