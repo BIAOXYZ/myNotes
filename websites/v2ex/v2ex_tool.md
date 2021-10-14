@@ -1,6 +1,8 @@
 
 # 远程共享/访问专题
 
+ssh 端口转发不需要额外装软件， 为啥还是这么多人选择 frp 或者 ngrok 来做穿透呢？ https://www.v2ex.com/t/807807
+
 目前内网远程控制最好的方案就是 VNC 吗？最近试了 teamviewer 和 anydesk，都不太爽 https://www.v2ex.com/t/745358
 
 小米公司员工私自将公司内网端口映射到公网 https://www.v2ex.com/t/726197

@@ -10,6 +10,11 @@ Difference between private, public, and protected inheritance https://stackoverf
 Why do we need virtual functions in C++? https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c
 
 C++ 虚函数和纯虚函数的区别 https://www.runoob.com/w3cnote/cpp-virtual-functions.html
+- > **首先：强调一个概念**
+  * > 定义一个函数为虚函数，不代表函数为不被实现的函数。
+  * > 定义他为虚函数是为了允许用基类的指针来调用子类的这个函数。
+  * > 定义一个函数为纯虚函数，才代表函数没有被实现。
+  * > 定义纯虚函数是为了实现一个接口，起到一个规范的作用，规范继承这个类的程序员必须实现这个函数。
 
 C++ Virtual详解 https://blog.csdn.net/ring0hx/article/details/1605254
 - > Virtual是C++ OO机制中很重要的一个关键字。只要是学过C++的人都知道在类Base中加了Virtual关键字的函数就是虚拟函数（例如下面例子中的函数print），于是在Base的派生类Derived中就可以通过重写虚拟函数来实现对基类虚拟函数的覆盖。当基类Base的指针point指向派生类Derived的对象时，对point的print函数的调用实际上是调用了Derived的print函数而不是Base的print函数。这是面向对象中的多态性的体现。（关于虚拟机制是如何实现的，参见Inside the C++ Object Model ，Addison Wesley 1996）
@@ -37,6 +42,10 @@ C++ Virtual详解 https://blog.csdn.net/ring0hx/article/details/1605254
   Output：
   Derived
   ```
+
+C++多态--虚函数virtual及override https://blog.csdn.net/i_chaoren/article/details/77281785
+
+C++ 虚函数、纯虚函数 - Arkin的文章 - 知乎 https://zhuanlan.zhihu.com/p/37331092
 
 # 重载
 
