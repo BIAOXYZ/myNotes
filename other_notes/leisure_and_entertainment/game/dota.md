@@ -348,6 +348,8 @@ DOTA2 5月25日更新：7.22游戏性改动 https://www.dota2.com.cn/article/det
 
 The International (TI) DOTA 2 Championships http://www.dota2.com/international/overview/
 
+The International (Dota 2) https://en.wikipedia.org/wiki/The_International_(Dota_2)
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TI10
