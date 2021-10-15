@@ -1,7 +1,8 @@
 
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/op_kernel.h#L240
+https://github.com/tensorflow/tensorflow/blob/edc16b85123e36295d72d55a1e75b9dca74914f9/tensorflow/core/framework/op_kernel.h#L240
 
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/op_kernel.cc
+https://github.com/tensorflow/tensorflow/blob/edc16b85123e36295d72d55a1e75b9dca74914f9/tensorflow/core/framework/op_kernel.cc
+- https://github.com/tensorflow/tensorflow/blob/edc16b85123e36295d72d55a1e75b9dca74914f9/tensorflow/core/framework/op_kernel.h#L270
 
 Tensorflow OpKernel机制详解 https://sketch2sky.com/2019/08/03/tensorflow-opkernel%e6%9c%ba%e5%88%b6%e8%af%a6%e8%a7%a3/
 - > OpKernel是Op的具体实现, tf中已经实现的tfop的OpKernel在源码中的tensorflow/core/framework/kernel/中, OpKernel通过注册时使用相同的名字将自己和相应的Op联系到一起.
