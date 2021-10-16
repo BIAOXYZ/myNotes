@@ -37,11 +37,17 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 其他
 
+多方安全计算乱弹琴 https://mp.weixin.qq.com/s/zm_8EcjPBBrRE9dgdVtgdg
+- > OT通过利用RSA，通过引入3个随机数 (x0, x1, k) 然后通过加密后实现对选择序号的保密，以及对原始2个带选择数的保密。 同时通过两次对同一个序号进行反向处理，实现只有对应，序号的数能够被恢复。 
+- > 对于GMW，或者BGW，要实现Active模式， 可以使用Reed-Solomon Encoding，对错误的部分进行校验并恢复。
+  * > **李德所罗门编码 Reed-Solomon encoding**
+  * > 如果支持Malicious状态， 那么就可以称为是Verifiable Secret Sharing VSS了。
+
 阿里联邦学习新方式：全同态密码 https://mp.weixin.qq.com/s/Zn_uOUEjQ00l1tEeBetZzg
 - > **1.同态密码**
   * > 目前的联邦学习框架大多采用加法HE；如 FATE 用 Paillier 方案。它的优点是加密方案本身易于实现和易于封装成高级语言。缺点是大规模计算的性能瓶颈明显，如加密 10k 整数可能需要数分钟；它不支持密文乘法；对非线性计算如sigmoid无能为力。
 - > **2.全同态密码**
-  * > 下面介绍一下全同态密码（Fully Homomorphic Encryption)，这里特指基于多项式格的 FHE；如 BFV 和 CKKS 方案。HE 和 FHE 的最大区别有两点：功能上FHE支持密文的加法和乘法，HE支持加法；FHE支持高延迟和高吞吐，而HE是低延迟和低吞吐。***通过设计算法，FHE 可以获得远优于HE 的性能***。
+  * > 下面介绍一下全同态密码 (Fully Homomorphic Encryption)，这里特指基于多项式格的 FHE；如 BFV 和 CKKS 方案。HE 和 FHE 的最大区别有两点：功能上FHE支持密文的加法和乘法，HE支持加法；FHE支持高延迟和高吞吐，而HE是低延迟和低吞吐。***通过设计算法，FHE 可以获得远优于HE 的性能***。
   * > 如果使用基于 HE 的矩阵向量乘性能比较堪忧，如矩阵为4096行*4096列, FATE 需要耗时 `1.5hr` 计算单次矩阵-向量乘。如果使用同步计算，需要等上一个 DO 计算完，总耗时接近 `1.5hr * #Dos`。而Yang et al. 用 FPGA 实现 HE，但比 FATE’s HE 只快了 10x。与FHE 的矩阵-向量乘对比，我们的算法能在 不到2 秒处理 4096x4096 的乘积 (1/10^3 of FATE’s HE)。
 
 “隐私计算”四大技术路径解析 https://mp.weixin.qq.com/s/r4p0BWZxmfM79Z0dZbnitw

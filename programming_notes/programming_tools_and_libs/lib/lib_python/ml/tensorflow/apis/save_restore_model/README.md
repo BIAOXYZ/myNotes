@@ -8,3 +8,5 @@
 训练检查点 https://www.tensorflow.org/guide/checkpoint
 
 # 其他
+
+A quick complete tutorial to save and restore Tensorflow 2.0 models https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial-2-x/
