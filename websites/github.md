@@ -201,6 +201,12 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 
 Microsoft and GitHub Workers Support 996.ICU https://github.com/MSWorkers/support.996.ICU
 
+-----
+
+WorkerLivesMatter https://github.com/ZhangNanBei/WokerLifeMatters
+- > 感谢 @SwJay 提醒，本项目名打错了，最新地址如上：请转到 [WorkerLivesMatter/WorkingTime](https://github.com/WorkerLivesMatter/WorkingTime)
+  >> WorkingTime https://github.com/WorkerLivesMatter/WorkingTime
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 Hotpot计划是复旦留学申请数据开源计划的代称，旨在为复旦学弟学妹无偿分享留学申请经验、暑研动态、美国生活/工作等一切相关信息。 https://github.com/fdu-cooks/fdu-gradhotpot
