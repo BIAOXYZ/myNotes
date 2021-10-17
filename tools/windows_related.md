@@ -42,6 +42,8 @@ Win10 开机具慢大家是如何排除的？ https://www.v2ex.com/t/654705
 
 # Windows 11
 
+微软 Win11 正式版发布一周，升级需要注意的细节一览 https://www.ithome.com/0/580/950.htm
+
 Win11 VBS 安全功能导致性能下降，教你如何检测并关闭 https://www.ithome.com/0/579/260.htm
 - 回复：
   * > 关了以后，WSL开不了了，慎重慎重

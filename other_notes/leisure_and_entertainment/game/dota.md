@@ -350,6 +350,8 @@ The International (TI) DOTA 2 Championships http://www.dota2.com/international/o
 
 The International (Dota 2) https://en.wikipedia.org/wiki/The_International_(Dota_2)
 
+The International https://liquipedia.net/dota2/The_International
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TI10
