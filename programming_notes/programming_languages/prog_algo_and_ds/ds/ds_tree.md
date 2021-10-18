@@ -69,6 +69,9 @@ Robert Tarjan https://amturing.acm.org/award_winners/tarjan_1092048.cfm || https
 - > 平衡因子：左子树的高度减去右子树的高度。由平衡二叉树的定义可知，平衡因子的取值只可能为0,1,-1.分别对应着左右子树等高，左子树比较高，右子树比较高。
 - > 最小失衡子树：在新插入的结点向上查找，以第一个平衡因子的绝对值超过1的结点为根的子树称为最小不平衡子树。也就是说，一棵失衡的树，是有可能有多棵子树同时失衡的，如下。而这个时候，我们只要调整最小的不平衡子树，就能够将不平衡的树调整为平衡的树。
 
+【from LeetCode】：
+- `LC230. 二叉搜索树中第K小的元素` https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 ### `###` Min-Max Tree
@@ -94,7 +97,9 @@ Trie https://zh.wikipedia.org/wiki/Trie || Trie https://en.wikipedia.org/wiki/Tr
 
 【动画】看动画轻松理解「Trie树」 https://juejin.im/post/6844903750490914829
 
-`208. 实现 Trie (前缀树)` https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+【from LeetCode】：
+- `208. 实现 Trie (前缀树)` https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+- `211. 添加与搜索单词 - 数据结构设计` https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/
 
 pygtrie https://github.com/google/pygtrie || https://pypi.org/project/pygtrie/
 
