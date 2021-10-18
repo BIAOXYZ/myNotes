@@ -40,3 +40,17 @@ tf.Tensor https://www.tensorflow.org/api_docs/python/tf/Tensor
 执行tf.convert_to_tensor()时，究竟发生了什么？ - 休语的文章 - 知乎 https://zhuanlan.zhihu.com/p/31308247
 
 tf.convert_to_tensor的用法 https://blog.csdn.net/UESTC_C2_403/article/details/72190291
+
+## `tensorflow.compat.v1`
+
+tensorflow兼容处理 tensorflow.compat.v1 https://www.cnblogs.com/jfdwd/p/11446358.html
+- > TensorFlow 2.0中提供了tensorflow.compat.v1代码包来兼容原有1.x的代码，可以做到几乎不加修改的运行。社区的contrib库因为涉及大量直接的TensorFlow引用代码或者自己写的Python扩展包，所以无法使用这种模式。TensorFlow 2.0中也已经移除了contrib库，这让人很有点小遗憾的。
+- > 使用这种方式升级原有代码，只需要把原有程序开始的TensorFlow引用:
+  ```py
+  import tensorflow as tf
+  ```
+  > 替换为以下两行就可以正常的继续使用：
+  ```py
+  import tensorflow.compat.v1 as tf
+  tf.disable_v2_behavior()
+  ```
