@@ -43,6 +43,18 @@ Secp256k1 https://en.bitcoin.it/wiki/Secp256k1
 
 ECC加密算法 https://blog.csdn.net/u010129119/article/details/62887707
 
+## Ed25519
+
+https://github.com/floodyberry/supercop/blob/3b8d1d3985c8b1549b86c48cfdefd75248bba933/crypto_sign/ed25519/amd64-64-24k/ge25519.h
+
+ge25519 1.0.0 https://pypi.org/project/ge25519/
+- > This library provides a native Python implementation of [Ed25519](https://ed25519.cr.yp.to/) group elements and a number of operations over them. The library makes it possible to fill gaps in application prototypes that may have specific limitations with respect to their operating environment or their ability to rely on non-Python dependencies.
+
+Ed25519: high-speed high-security signatures https://ed25519.cr.yp.to/
+- Papers https://ed25519.cr.yp.to/papers.html
+
+ge25519 https://pkg.go.dev/github.com/oasisprotocol/ed25519/internal/ge25519
+
 # MPC
 
 安全多方计算（MPC）从入门到精通 https://blog.csdn.net/juzhenyuan/article/category/7777533
