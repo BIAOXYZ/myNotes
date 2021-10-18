@@ -364,7 +364,8 @@ TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ 
 来自东欧的童话，TSpirit拿下TI10国际邀请赛冠军 https://mp.weixin.qq.com/s/-G4ughR86M9yUcnmm8bYpw
 
 没想到竟以这样的方式出圈了：
-- DOTA玩家绝望的样子，像极了国足球迷 https://mp.weixin.qq.com/s/t14cbix-SQD1tWb_UYA3Ag
+- DOTA玩家绝望的样子，像极了国足球迷 https://mp.weixin.qq.com/s/t14cbix-SQD1tWb_UYA3Ag || https://www.huxiu.com/article/464613.html
+  * > `md连地球都知道ban猛犸` ![](https://img.huxiucdn.com/article/content/202110/18/164729282873.jpeg)
 - 为什么不 ban 猛犸？ https://www.v2ex.com/t/808441
   * > ![](https://i.v2ex.co/974knOSn.jpeg)
 - Ti10 开心吗？ https://www.v2ex.com/t/808415
@@ -372,6 +373,8 @@ TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ 
   八卦：你不知道的 xiao8
   https://weibo.com/u/2313119293?refer_flag=1001030103_
   ```
+- 《DOTA2》LGD 战队选手发文：输并不是因为猛犸，战队没发挥出水平 https://www.ithome.com/0/581/230.htm
+  * > 你们一定不开心，熬夜看比赛输了，周一还要上班。但猛犸很开心，因为他不上ban。
 
 ## TI9
 
