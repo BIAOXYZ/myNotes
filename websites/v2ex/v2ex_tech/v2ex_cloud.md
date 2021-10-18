@@ -1,4 +1,6 @@
 
+如何高效掌控 K8s 资源变化？ K8s Informer 实现机制浅析 https://www.v2ex.com/t/808595
+
 关于 k8s 或容器技术相关的博客大家有哪些推荐的？ https://www.v2ex.com/t/802303
 
 问大家一个关于 Pod 中的 Pause 容器的问题 https://www.v2ex.com/t/798088
