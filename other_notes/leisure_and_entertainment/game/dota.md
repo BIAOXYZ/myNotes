@@ -366,6 +366,12 @@ TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ 
 没想到竟以这样的方式出圈了：
 - DOTA玩家绝望的样子，像极了国足球迷 https://mp.weixin.qq.com/s/t14cbix-SQD1tWb_UYA3Ag
 - 为什么不 ban 猛犸？ https://www.v2ex.com/t/808441
+  * > ![](https://i.v2ex.co/974knOSn.jpeg)
+- Ti10 开心吗？ https://www.v2ex.com/t/808415
+  ```console
+  八卦：你不知道的 xiao8
+  https://weibo.com/u/2313119293?refer_flag=1001030103_
+  ```
 
 ## TI9
 
