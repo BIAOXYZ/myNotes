@@ -172,7 +172,130 @@ $
 >>> //notes2：此外还有第二条思路：***把项目源码等也一起打包到制作的镜像里***，然后在镜像结尾直接执行编译命令甚至是测试用例——也就是***镜像制作完成就意味着这个版本编译完成***。后续可以通过类似 `docker run --rm -it --name testcontainer testimage bash` 的命令从编译好的镜像启动并进入容器内部，运行编译好的二进制、查看日志等（如果需要多个terminal联调时，再执行 `docker exec -it testcontainer bash` 附加到该容器即可）。
 >>>> 两种方法各有优劣：
 - 前者更轻量，但是编译产生的临时文件（比如二进制、动态库、静态库、测试生成的log等）也会在宿主机的项目目录里（因为这个目录被挂载了）。
-- 后者完全不会污染项目主目录，且只要镜像留着，就随时可以方便地尝试不同版本编好后的样子。但是镜像大，编译速度慢，在特性没成型前的快速开发过程中好像还是前者更合适。
+- 后者完全不会污染项目主目录，且只要镜像留着，就随时可以方便地尝试不同版本编好后的样子。但是镜像大，编译速度慢，~~在特性没成型前的快速开发过程中好像还是前者更合适~~。 —— 不，现在坚决推荐后者了：第一是编译速度不会慢很多，因为利用 apt/yum 之类的包管理工具，或者其他工具准备编译环境的过程所涉及的镜像层docker会缓存，所以每次新的 commit 合入后再build新镜像前面的大部分都直接过了。第二是这种方式真的更加灵活，容器就是一个独立环境，里面随便搞，随时可以删除再启动一个。此外，可以参考 vs code 目录下的 [container 部分](../../../programming_tools_and_libs/ide/vsc/vsc_docker/README.md)，里面记录了如何巧用 vsc 的相关插件达到各种方便的效果。
+
+***实战过程***：
+```sh
+mkdir test && cd test
+
+mkdir -p project/src project/bin
+cat << EOF > project/src/main.c
+#include <stdio.h>
+int main(int argv, char ** argc) {
+    printf("Hello Docker!\n");
+}
+EOF
+
+cat << EOF > project/Dockerfile
+FROM ubuntu:18.04
+RUN apt-get update -y && apt-get install -y gcc
+WORKDIR /proj_root
+COPY . .
+CMD gcc -o /proj_root/bin/main /proj_root/src/main.c
+CMD /proj_root/bin/main
+EOF
+
+cd project/
+docker build -t image-with-code .
+
+# 其实上面的镜像名可以更有含义一点，比如我一般叫 mr16 或者 pr16，表示仓库的第16个合入。
+# 同理，容器名 123 可以换成根据镜像名来起，比如 mr16-1。但是其实就固定叫123也可以，方便后续 vscode 插件的使用，好记好找。
+# 另外如果只是随便试试某个编译，可以用 --rm；如果正用这个容器开发，还是不要加 --rm 了。
+docker run --rm -it --name 123 image-with-code bash
+# 然后在容器内进行编译，此时容器内部就是一个独立的干净环境。不想要了直接删了容器重新起一个。
+# 此外在仓库里可以搞一个编译脚本，在build镜像的尾声直接执行这个编译脚本
+# 测试脚本也是同理，加了编译脚本和测试脚本后，可以直接通过build某次合入的镜像，就知道该次提交是否能编译成功，以及是否通过所有测试用例。
+gcc -o ./bin/main ./src/main.c
+./bin/main
+```
+```sh
+$ mkdir test && cd test
+$ 
+$ mkdir -p project/src project/bin
+$ cat << EOF > project/src/main.c
+> #include <stdio.h>
+> int main(int argv, char ** argc) {
+>     printf("Hello Docker!\n");
+> }
+> EOF
+$ 
+$ tree
+.
+└── project
+    ├── bin
+    └── src
+        └── main.c
+
+3 directories, 1 file
+$ 
+$ cat << EOF > project/Dockerfile
+> FROM ubuntu:18.04
+> RUN apt-get update -y && apt-get install -y gcc
+> WORKDIR /proj_root
+> COPY . .
+> CMD gcc -o /proj_root/bin/main /proj_root/src/main.c
+> CMD /proj_root/bin/main
+> EOF
+$ 
+$ tree
+.
+└── project
+    ├── bin
+    ├── Dockerfile
+    └── src
+        └── main.c
+
+3 directories, 2 files
+$ 
+
+
+$ cd project/
+$ 
+$ docker build -t image-with-code .
+Sending build context to Docker daemon  4.096kB
+Step 1/6 : FROM ubuntu:18.04
+18.04: Pulling from library/ubuntu
+284055322776: Pull complete 
+Digest: sha256:0fedbd5bd9fb72089c7bbca476949e10593cebed9b1fb9edf5b79dbbacddd7d6
+Status: Downloaded newer image for ubuntu:18.04
+ ---> 5a214d77f5d7
+Step 2/6 : RUN apt-get update -y && apt-get install -y gcc
+ ---> Running in 9ffd06dc4840
+Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+...
+...
+...
+Step 6/6 : CMD /proj_root/bin/main
+ ---> Running in 8fd39756d532
+Removing intermediate container 8fd39756d532
+ ---> d44f9a1abcbc
+Successfully built d44f9a1abcbc
+Successfully tagged image-with-code:latest
+$ 
+$ docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED              SIZE
+image-with-code            latest              d44f9a1abcbc        About a minute ago   212MB
+ubuntu                     18.04               5a214d77f5d7        2 weeks ago          63.1MB
+$ 
+
+
+$ docker run --rm -it --name 123 image-with-code bash
+root@c692f1a3ea53:/proj_root# 
+root@c692f1a3ea53:/proj_root# ls
+Dockerfile  bin  src
+root@c692f1a3ea53:/proj_root#                               
+root@c692f1a3ea53:/proj_root# gcc -o ./bin/main ./src/main.c
+root@c692f1a3ea53:/proj_root# 
+root@c692f1a3ea53:/proj_root# ./bin/main 
+Hello Docker!
+root@c692f1a3ea53:/proj_root# 
+root@c692f1a3ea53:/proj_root# exit
+exit
+$ 
+```
+
 
 # 其他文章
 >> //notes：`文章1`比较好的地方就在于，全程直接复制粘贴执行即可，不用自己改任何命令。有了`文章1`之后，其他的就只是复杂度或别的小技巧了。下面的没验证，只是贴一下。

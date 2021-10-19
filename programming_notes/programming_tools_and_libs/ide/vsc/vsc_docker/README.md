@@ -28,3 +28,5 @@ Developing inside a Container https://code.visualstudio.com/docs/remote/containe
 - 两种方法连接到该容器，推荐后一种！
   * 或者 ***左键点击*** 该容器下的 `Files`，直接在当前vs code的界面（也就是远程Linux的界面）打开容器里的文件进行编辑，但是坏处是文件改动git显示不了，并且其实编辑还是稍有些麻烦（当然，总比自己开发机上写完，再手动 `docker cp` 粘贴进容器里要好）
   * 或者 ***右键点击*** 该容器，选择 `Attach Visual Studio Code`，会自动打开一个新的vsc窗口，里面就是各种可以用的状态，美滋滋！PS：如果不安装 [Remote - Containers]()，那么右键点击是没有 `Attach Visual Studio Code` 这个选项的。不过鲸鱼docker插件倒是自带了一个 `Attach Shell`，能打开容器里的命令行，但是效果也一般，跟 `Attach Visual Studio Code` 没得比。
+
+此外，关于采用那种build方式（主要区别是build的时候要不要把源代码仓库带到镜像里）的问题，请参考 Docker 部分的[文章](../../../../new_trends/Docker/articles/article1.md)。
