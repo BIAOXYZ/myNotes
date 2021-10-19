@@ -18,6 +18,10 @@ tf.Operation https://www.tensorflow.org/api_docs/python/tf/Operation
 
 初学者的 TensorFlow 2.0 教程 https://tensorflow.google.cn/tutorials/quickstart/beginner
 
+The Sequential model https://www.tensorflow.org/guide/keras/sequential_model
+
+开始使用 Keras Sequential 顺序模型 https://keras.io/zh/getting-started/sequential-model-guide/
+
 # 较系统攻略
 
 TensorFlow 如何入门，如何快速学习？ - 知乎 https://www.zhihu.com/question/49909565
