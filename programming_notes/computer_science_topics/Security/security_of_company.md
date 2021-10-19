@@ -103,6 +103,8 @@ Rosetta https://github.com/LatticeX-Foundation/Rosetta
 - https://github.com/LatticeX-Foundation/Rosetta/tree/v0.3.0 || https://github.com/LatticeX-Foundation/Rosetta/releases/tag/v0.3.0
   * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/TUTORIALS_CN.md
   * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/DEPLOYMENT_CN.md
+  * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a/python/latticex/rosetta/secure/ops/training/io_saver.py
+    + https://github.com/tensorflow/tensorflow/blob/v1.15.0/tensorflow/python/training/saver.py#L606-L1338
 - 隐私AI工程技术实践指南 https://www.infoq.cn/theme/82
   * 隐私 AI 工程技术实践指南：整体介绍 https://www.infoq.cn/article/iDHE7UyH91pALUZh9OaV
   * 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
