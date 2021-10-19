@@ -77,6 +77,22 @@ Loaded image: busybox:1
 
 Docker入门 | 学习第一个Docker容器 - 郭志敏的文章 - 知乎 https://zhuanlan.zhihu.com/p/21252578
 
+如何快速清理 docker 资源 https://www.cnblogs.com/sparkdev/p/9177283.html 【From `sparkdev`】
+- > **查看 docker 占用的资源**
+  * > 在进行资源清理之前我们有必要搞清楚 docker 都占用了哪些系统的资源。这需要综合使用不同的命令来完成。
+    ```sh
+    docker container ls：默认只列出正在运行的容器，-a 选项会列出包括停止的所有容器。
+    docker image ls：列出镜像信息，-a 选项会列出 intermediate 镜像(就是其它镜像依赖的层)。
+    docker volume ls：列出数据卷。
+    docker network ls：列出 network。
+    docker info：显示系统级别的信息，比如容器和镜像的数量等。
+    ```
+- > **只删除那些未被使用的资源**
+  * > Docker 提供了方便的 `docker system prune` 命令来删除那些已停止的容器、dangling 镜像、未被容器引用的 network 和构建过程中的 cache：
+    ```sh
+    $ docker system prune
+    ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Katacoda -- Docker & Containers
