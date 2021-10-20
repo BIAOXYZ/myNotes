@@ -74,3 +74,17 @@ Save and Restore https://www.easy-tensorflow.com/tf-tutorials/basics/save-and-re
 TensorFlow入门（九）使用 tf.train.Saver()保存模型 https://blog.csdn.net/Jerr__y/article/details/78594494
 
 TensorFlow保存和恢复变量——tf.train.Saver() https://blog.csdn.net/hustqb/article/details/80776306
+
+# errors
+
+## `Error: static assertion failed: std::string is no longer a scalar type, use tensorflow::tstring`
+>> 原因就是TF在2.2.0版本后用自己的 `tensorflow::tstring` 代替了 `std::string`，所以只需要做如下类似修改即可：
+- 以前： `const string& prefix_string = prefix.scalar<string>()();` https://github.com/tensorflow/tensorflow/blob/r1.14/tensorflow/core/kernels/save_restore_v2_ops.cc#L104
+- 现在（从`r1.15`开始）： `const string& prefix_string = prefix.scalar<tstring>()();` https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/kernels/save_restore_v2_ops.cc#L105
+
+Make failed with C++ API used like external library. Error: static assertion failed: std::string is no longer a scalar type, use tensorflow::tstring #43150 https://github.com/tensorflow/tensorflow/issues/43150
+- > https://github.com/tensorflow/tensorflow/issues/43150#issuecomment-691332546
+  * > They have started to use tensorflow::tstring as you can see from https://github.com/tensorflow/tensorflow/commit/f05a57eefe9f03c9fae83d0fcb727ee07949d963
+
+TensorFlow 2.2.0 Released: Intuitive Features Including New TensorFlow’s Docker Images https://analyticsindiamag.com/tensorflow-2-2-0-released-intuitive-features-including-new-tensorflows-docker-images/
+- > The scalar type is replaced for string tensors from `std::string` to `tensorflow::tstring` and is now ABI stable.
