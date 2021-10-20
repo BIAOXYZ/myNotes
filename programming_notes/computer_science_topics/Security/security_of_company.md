@@ -103,8 +103,13 @@ Rosetta https://github.com/LatticeX-Foundation/Rosetta
 - https://github.com/LatticeX-Foundation/Rosetta/tree/v0.3.0 || https://github.com/LatticeX-Foundation/Rosetta/releases/tag/v0.3.0
   * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/TUTORIALS_CN.md
   * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a9df79fdab57e7ba57048d5c550ad0c/doc/DEPLOYMENT_CN.md
-  * https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a/python/latticex/rosetta/secure/ops/training/io_saver.py
-    + https://github.com/tensorflow/tensorflow/blob/v1.15.0/tensorflow/python/training/saver.py#L606-L1338
+  * backup & restore
+    + https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a/python/latticex/rosetta/secure/ops/training/io_saver.py
+      - https://github.com/tensorflow/tensorflow/blob/v1.15.0/tensorflow/python/training/saver.py#L606-L1338
+    + `SecureSaveV2 = _secure_ops.secure_save_v2` https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a/python/latticex/rosetta/secure/decorator/secure_ml_ops_.py#L142:1
+    + https://github.com/LatticeX-Foundation/Rosetta/blob/9945f6a29a/cc/tf/secureops/secure_model.cc
+      - https://github.com/tensorflow/tensorflow/blob/r1.14/tensorflow/core/kernels/save_restore_v2_ops.cc
+- `test_op save_v2` https://github.com/LatticeX-Foundation/Rosetta/blob/master/python/latticex/rosetta/test/single-task/test-simple.sh#L49
 - 隐私AI工程技术实践指南 https://www.infoq.cn/theme/82
   * 隐私 AI 工程技术实践指南：整体介绍 https://www.infoq.cn/article/iDHE7UyH91pALUZh9OaV
   * 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
