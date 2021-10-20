@@ -344,3 +344,33 @@ C++：vector小指南（附带一些新手错误） - Feng的文章 - 知乎 htt
 C++（笔记）容器(vector)作为函数参数如何传参 https://blog.csdn.net/w_linux/article/details/72417896
 
 vector作为参数的三种传参方式 https://www.cnblogs.com/xiaoxi666/p/6843211.html
+
+# vector指定位置插入元素
+
+C++ STL vector插入元素（insert()和emplace()）详解 http://c.biancheng.net/view/6834.html
+```cpp
+#include <iostream> 
+#include <vector> 
+#include <array> 
+using namespace std;
+int main()
+{
+    std::vector<int> demo{1,2};
+    //第一种格式用法
+    demo.insert(demo.begin() + 1, 3);//{1,3,2}
+    //第二种格式用法
+    demo.insert(demo.end(), 2, 5);//{1,3,2,5,5}
+    //第三种格式用法
+    std::array<int,3>test{ 7,8,9 };
+    demo.insert(demo.end(), test.begin(), test.end());//{1,3,2,5,5,7,8,9}
+    //第四种格式用法
+    demo.insert(demo.end(), { 10,11 });//{1,3,2,5,5,7,8,9,10,11}
+    for (int i = 0; i < demo.size(); i++) {
+        cout << demo[i] << " ";
+    }
+    return 0;
+}
+/////////////////////////////////////////////
+运行结果为：
+1 3 2 5 5 7 8 9 10 11
+```
