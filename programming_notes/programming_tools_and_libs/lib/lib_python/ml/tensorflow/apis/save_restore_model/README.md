@@ -61,6 +61,8 @@ Save & Restore a Model https://github.com/aymericdamien/TensorFlow-Examples/blob
 
 A quick complete tutorial to save and restore Tensorflow 2.0 models https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial-2-x/
 
+tensorflow 模型导出总结 - sergio的文章 - 知乎 https://zhuanlan.zhihu.com/p/113734249
+
 ## TFv1相关
 
 TensorFlow学习笔记：Saver与Restore https://www.jianshu.com/p/b0c789757df6

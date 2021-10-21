@@ -115,6 +115,8 @@ Rosetta https://github.com/LatticeX-Foundation/Rosetta
     + `test_op save_v2` https://github.com/LatticeX-Foundation/Rosetta/blob/master/python/latticex/rosetta/test/single-task/test-simple.sh#L49
       - `class Checkpoint(tracking.AutoTrackable):` https://github.com/tensorflow/tensorflow/blob/v2.6.0/tensorflow/python/training/tracking/util.py#L1844-L2347
       - https://github.com/tensorflow/tensorflow/blob/v2.6.0/tensorflow/python/training/saving/functional_saver.py
+    * https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/kernels/save_restore_v2_ops.cc
+    * https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/ops/io_ops.cc
 - 隐私AI工程技术实践指南 https://www.infoq.cn/theme/82
   * 隐私 AI 工程技术实践指南：整体介绍 https://www.infoq.cn/article/iDHE7UyH91pALUZh9OaV
   * 面向隐私 AI 的 TensorFlow 深度定制化实践 https://www.infoq.cn/article/ywmvctisilcfikvwbwvt || https://cloud.tencent.com/developer/news/696681
