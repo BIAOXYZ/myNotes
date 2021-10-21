@@ -36,6 +36,15 @@ ssh 端口转发不需要额外装软件， 为啥还是这么多人选择 frp �
 
 # 在线工具/环境
 
+vscode.dev https://www.v2ex.com/t/809375
+```console
+https://vscode.dev/
+
+微软正式发布了可以在浏览器里使用的 VS Code 。具体介绍：
+https://code.visualstudio.com/blogs/2021/10/20/vscode-dev
+```
+- > 竟然有能访问本地文件夹的 API，希望能成为标准
+
 GitHub 的 Codespaces 的实际付费体验如何? https://www.v2ex.com/t/795317 【***这两个帖子都是用在线的 github dev 的方式更新的***～】
 - > github.dev 是免费的，Codespaces 是收费的 https://twitter.com/ItalyPaleAle/status/1425575850716635136
   >> github.dev 就跳转到 https://github.com/features/codespaces Try Codespaces today in free trial until September 10, 2021 <br> 自己搭个 code-server
