@@ -1,4 +1,16 @@
 
+# PDB参数
+
+10分钟教程掌握Python调试器pdb - splinzer的文章 - 知乎 https://zhuanlan.zhihu.com/p/37294138 || https://www.jianshu.com/p/01e76c5208f7
+- > **1、查看源代码**
+  * > 命令：`ll` <br> 说明：查看当前函数或框架的所有源代码
+- > **7、非逐行调试命令**
+  * > 命令2：`unt lineno` <br> 说明：持续执行直到运行到指定行（或遇到断点）
+- > **8、查看函数参数**
+  * > 命令：`a` <br> 说明：在函数中时打印函数的参数和参数的值
+- > **9、打印变量类型**
+  * > 命令：`whatis expression` <br> 说明：打印表达式的类型，常用来打印变量值
+
 # PDB
 
 `26.2. pdb — The Python Debugger` https://docs.python.org/2/library/pdb.html
