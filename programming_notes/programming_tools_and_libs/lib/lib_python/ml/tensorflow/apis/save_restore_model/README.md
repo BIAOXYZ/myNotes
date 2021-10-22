@@ -92,3 +92,12 @@ Make failed with C++ API used like external library. Error: static assertion fai
 
 TensorFlow 2.2.0 Released: Intuitive Features Including New TensorFlow’s Docker Images https://analyticsindiamag.com/tensorflow-2-2-0-released-intuitive-features-including-new-tensorflows-docker-images/
 - > The scalar type is replaced for string tensors from `std::string` to `tensorflow::tstring` and is now ABI stable.
+
+## `ValueError: `Checkpoint` was expecting a trackable object (an object derived from `TrackableBase`)`
+
+tensorflow2.0添加checkpoint报错 https://www.jianshu.com/p/4b58e7ce8342
+- > 问题：`ValueError: Checkpoint was expecting a trackable object (an object derived from TrackableBase)`
+- > 解决办法：自定义的类需要继承带有Trackable的父类，例如 `tf.keras.Model`
+- > 可参考：
+  * > TensorFlow 2.0学习笔记之状态容器 https://zhuanlan.zhihu.com/p/73575776
+  * > TensorFlow2.0 学习笔记（七）：变量的保存与恢复 https://blog.csdn.net/TeFuirnever/article/details/102722176 || https://blog.51cto.com/u_15072927/3855745
