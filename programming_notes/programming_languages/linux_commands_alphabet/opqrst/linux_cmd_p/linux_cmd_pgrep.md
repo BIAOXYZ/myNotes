@@ -3,6 +3,43 @@
 
 - `grep`
 
+# 参数解析
+
+## `-f`
+
+pgrep无法匹配问题 http://www.361way.com/pgrep/3650.html
+- > pgrep命令相当于如下的命令：
+  ```sh
+  ps -eo pid,cmd | awk '{print $1,$2}'  | grep KeyWord
+  ```
+- > 这里需要特别指出的是 `pgrep` ***默认只能匹配进程的前15个字符串***，个体可以参看[ubuntu问答](https://askubuntu.com/questions/157075/why-does-ps-aux-grep-x-give-better-results-than-pgrep-x)上的说明，如下：`ps aux includes the full command line (path and parameters), while pgrep only looks at the first 15 characters of the executable's names`
+- > 使用 `pgrep -f` 可以进行进程全字符匹配，示例如下：
+  ```sh
+  # 使用ps命令可以正常grep到进程
+  root@361way:~# ps auxf|grep druid
+  root     25713  0.0  0.0   8108   940 pts/0    S+   06:08   0:00                          _ grep --color=auto druid
+  dev       7438  1.3 11.5 5524888 884988 ?      Sl   Jun16 672:54 java -server -Xmx4g -XX:MaxNewSize=1g -XX:+UseCompressedOops -XX:+UseParNewGC -Duser.timezone=UTC -Dfile.encoding=UTF-8 -XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCMSInitiatingOccupancyOnly -XX:+PrintHeapAtGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -Djava.io.tmpdir=/data/tmpdata/java.io.tmpdata -Xloggc:/data/tmpdata/java.io.tmpdata/coordinator-gc.log -classpath lib/*:config/coordinator io.druid.cli.Main server coordinator
+  
+  # pgrep的匹配结果为空
+  root@361way:~# pgrep druid
+  
+  # 加上-f参数后，正常得到进程pid
+  root@361way:~# pgrep -f druid
+  7438
+  root@361way:~# pgrep -f -l druid
+  7438 java -server -Xmx4g -XX:MaxNewSize=1g -XX:+UseCompressedOops -XX:+UseParNewGC -Duser.timezone=UTC -Dfile.encoding=UTF-8 -XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCMSInitiatingOccupancyOnly -XX:+PrintHeapAtGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -Djava.io.tmpdir=/data/tmpdata/java.io.tmpdata -Xloggc:/data/tmpdata/java.io.tmpdata/coordinator-gc.log -classpath lib/*:config/coordinator io.druid.cli.Main server coordinator
+  ```
+- > 使用 `-P` 参数可以输出指定父进程的子进程，如：
+  ```sh
+  root@361way:~# pgrep -P 2380
+  2381
+  2382
+  2383
+  2384
+  2385
+  ```
+- > 相关命令 `pkill` ，用法基本和 `pgrep` 一致。
+
 # 官方链接
 
 # 已有书籍类链接
