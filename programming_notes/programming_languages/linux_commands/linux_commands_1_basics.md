@@ -232,7 +232,9 @@ pkill命令详解 https://www.cnblogs.com/machangwei-8/p/10391688.html
 ```shell
 ctrl + z, fg, ctrl + z, fg, ...
 ```
-> 其他参考：<<【Bash百宝箱】shell作业控制（jobs、bg、fg）>>http://blog.csdn.net/iEearth/article/details/52703576
+> 其他参考：
+- <<【Bash百宝箱】shell作业控制（jobs、bg、fg）>> http://blog.csdn.net/iEearth/article/details/52703576
+- bg，fg，job命令详解 https://www.cnblogs.com/machangwei-8/p/10391440.html
 
 ### diff
 ```shell
