@@ -19,3 +19,10 @@ MySQL和PostgreSQL在多表连接算法上的差异 https://mp.weixin.qq.com/s/6
 - > 相比起来，postgresql的优化器十分的强劲。支持了hash join、nest loop、sort merge join，扫描算法支持seq scan、index scan、index only scan，同时还支持堆内元组技术（HOT）。在postgresql11版本中还加入了并行扫描，亲测在两张大表（一张1.6亿一张256万数据，均无索引）做join结果集300多万，pg开启并行大概20s以内就跑出结果，强于其他数据库。
 
 MySQL和PostgreSQL的自增序列探讨 https://mp.weixin.qq.com/s/5V5nYaYawnGlY0onIvp-ww
+
+牧云踏歌 https://space.bilibili.com/24370353
+- MySQL 8.0.22 vs PostgreSQL 13.1 https://github.com/aruis/mysql_vs_postgresql
+- 单表数据破亿，MySQL vs PostgreSQL！ https://www.bilibili.com/video/BV1sU4y14741
+  * > 版本号：MySQL 8.0.22 vs PostgreSQL 13.1  <br>  第二期：https://www.bilibili.com/video/BV1mf4y1k7mb/  <br>  能力有限，如有疏漏还请评论指正。如果关注的人多的话，后续再详细对比一下；）
+- PostgreSQL 吊打 MySQL 的一些不严谨测试 https://www.bilibili.com/video/BV1mf4y1k7mb/
+  * > 第一期：https://www.bilibili.com/video/BV1sU4y14741/  <br>  这次标题起得有点找喷，不过我也想不到其它词语来描述了。只能说数据上亿后，mysql不太能打。并且mysql组合索引限制太多，给程序员增加额外负担，相比起来pg优势明显。至于最后的聚合函数加条件，当然也可以用笨方法写出来，但是论优雅，pg应该是极致的写法了。
