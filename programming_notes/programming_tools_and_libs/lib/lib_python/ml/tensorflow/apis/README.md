@@ -78,3 +78,11 @@ tensorflow兼容处理 tensorflow.compat.v1 https://www.cnblogs.com/jfdwd/p/1144
   import tensorflow.compat.v1 as tf
   tf.disable_v2_behavior()
   ```
+
+# `tf.string`
+
+Module: tf.strings https://www.tensorflow.org/api_docs/python/tf/strings
+
+TensorFlow strings: what they are and how to work with them https://stackoverflow.com/questions/38902433/tensorflow-strings-what-they-are-and-how-to-work-with-them
+
+【Tensorflow】TF中的字符串tf.string https://blog.csdn.net/u013921430/article/details/101221896
