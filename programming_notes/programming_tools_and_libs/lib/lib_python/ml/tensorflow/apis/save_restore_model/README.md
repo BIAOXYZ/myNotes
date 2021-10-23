@@ -18,7 +18,23 @@ tf.train.Saver https://www.tensorflow.org/versions/r1.15/api_docs/python/tf/trai
 
 tf.saved_model.save https://www.tensorflow.org/api_docs/python/tf/saved_model/save || https://www.tensorflow.org/versions/r1.15/api_docs/python/tf/saved_model/save
 
-# `tf.train.Checkpoint`
+# `tf.train`
+
+## `tf.train.list_variables()`
+
+How to list all variables in Tensorflow checkpoint file? https://ai-pool.com/d/how-to-list-all-variables-in-tensorflow-checkpoint-file
+- > It's just as simple as this is
+  ```py
+  import tensorflow as tf
+  variables = tf.train.list_variables([checkpoint_path])
+  print(variables_in_checkpoint)
+  ```
+  > It will return a list of tuples (name, shape).
+- > There is also another way you can get the variables of a checkpoint file by using native built-in functions of TensorFlow [checkpoint utils](https://github.com/tensorflow/tensorflow/blob/00700f00fdf71baec1342d1afd7849e16fbd2a33/tensorflow/contrib/framework/python/framework/checkpoint_utils.py).
+
+How do I find the variable names and values that are saved in a checkpoint? https://stackoverflow.com/questions/38218174/how-do-i-find-the-variable-names-and-values-that-are-saved-in-a-checkpoint
+
+## `tf.train.Checkpoint`
 
 tf.train.Checkpoint ：变量的保存与恢复 https://tf.wiki/zh_hans/basic/tools.html#tf-train-checkpoint || https://www.bookstack.cn/read/TensorFlow2.0/spilt.1.3b87bc87b85cbe5d.md
 - > Checkpoint ***只保存模型的参数，不保存模型的计算过程***，因此一般用于在***具有模型源代码的时候恢复之前训练好的模型参数***。如果需要导出模型（无需源代码也能运行模型），请参考 “部署” 章节中的 SavedModel 。
