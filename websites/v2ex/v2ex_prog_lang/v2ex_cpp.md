@@ -1,4 +1,26 @@
 
+问个关于内存对齐的问题 https://www.v2ex.com/t/809945
+```console
+为啥
+struct FixedLengthHeader {
+        uint32_t HeaderSize = 0;
+        uint64_t CryptogramSize = 0;
+        uint64_t ReservedField = 0;
+}FixedPackageHeaders;
+占用 20 字节（ 4+8+8 ），但是如果用下面这个写法，
+
+struct FixedLengthHeader {
+    uint32_t HeaderSize = 0;
+    uint64_t CryptogramSize = 0;
+    uint8_t DevFlag = 0;
+    uint8_t HeaderVer = 0;
+    uint32_t PackagerVer = 0;
+    uint16_t Reserved = 0
+}FixedPackageHeaders;
+会因为内存对齐占用 24 字节(4+8+2+2+4+4)的内存呢……
+```
+- > 你可以试着看看每个成员的 offset 。不过我测试 MSVC, Gcc, Clang 下的 sizeof 都是 24 <br> https://godbolt.org/z/c1TM4778j
+
 求教一个 cpp 语法问题 https://www.v2ex.com/t/800403
 ```console
 https://github.com/envoyproxy/envoy-filter-example/blob/main/echo2_config.cc#L20 
