@@ -81,6 +81,8 @@ tensorflow 模型导出总结 - sergio的文章 - 知乎 https://zhuanlan.zhihu.
 
 How to save/restore a model after training? https://stackoverflow.com/questions/33759623/how-to-save-restore-a-model-after-training
 
+[Tensorflow 2.0]Save and Restore Models https://medium.com/analytics-vidhya/tensorflow-2-0-save-and-restore-models-4708ed3f0d8
+
 ## TFv1相关
 
 TensorFlow学习笔记：Saver与Restore https://www.jianshu.com/p/b0c789757df6
