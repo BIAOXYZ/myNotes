@@ -182,3 +182,11 @@ chrome 书签越来越多，大家想过怎么处理吗 https://www.v2ex.com/t/5
 vscode 在程序坞里的图标变得非常非常迷你，没办法恢复 https://www.v2ex.com/t/601519
 > 大家有没有碰到过，有啥解决方案吗？除了重启，因为刚开机就这样了 QAQ
 >> ![](https://i.loli.net/2019/09/17/QujWPAFkC5zO3l7.png)
+
+# resource
+
+整理了一波计算机书籍的综合评分列表 https://www.v2ex.com/t/810204
+```console
+整理了一份豆瓣和 goodreads 上边几乎所有与计算机互联网有关的书籍数据，按照综合评价排序列了一下，不知道有没有人需要，如果需要找一些口碑比较好的书籍来看可以参考下：
+一个综合了豆瓣，goodreads综合评分的计算机书籍书单 https://github.com/slidoooor/computer_book_list
+```
