@@ -360,13 +360,7 @@ Permission denied error when running apps installed as snap packages - Ubuntu 17
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# vcpkg
-
-C++ Library Manager for Windows, Linux, and MacOS https://github.com/microsoft/vcpkg
-
-如何看待 Windows 的 C++ 包管理器 vcpkg？ - 知乎 https://www.zhihu.com/question/263416411
-
-## 其他C/CPP包管理工具
+# 其他C/CPP包管理工具
 
 C++ 有没有像 pip、npm、gem 一样的包管理工具？ - 知乎 https://www.zhihu.com/question/26117075
 - > linux的包管理工具，比如ubuntu 的apt-get , centos的yum, opensuse的zypper, 其实很大意义上就是c/c++的包管理工具。各种lib header dev包可以通过其安装的
