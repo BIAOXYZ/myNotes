@@ -98,6 +98,10 @@ HUAWEI Cloud -- Huawei Mobile Services (华为云空间 -- 华为终端云服务
 
 # xiaomi
 
+小米卢伟冰：今年开始 Redmi Note 系列开启一年两代的迭代策略 https://www.ithome.com/0/582/908.htm
+- > 卢伟冰指出，这也是为什么在 Note 10 系列上市 5 个月后他们发布 Note 11 系列的原因。Note 10 Pro 更侧重于极致的性能体验，所以他们采用了天玑 1100 这款处理器，但也适当降低了其他器件的规格（例如相机和屏幕）。
+- > 谈及 Redmi Note 11 Pro 系列时，卢伟冰称该系列适当降低了对性能的要求，采用性能和功耗更加平衡的天玑 920，但却把外围体验拉满，例如潮流立边设计、120W 满血版闪充、AMOLED 屏幕、1 亿像素相机，对称式立体声等。“你甚至可以把 Note 11 Pro 看作是 Note 9 Pro 的升级版。”
+
 鉴定小米手机真伪的方法 https://jingyan.baidu.com/article/d169e186af7433436611d882.html
 - > 小米产品鉴别方法二：IMEI码和SN码
   * > 帮助中心 https://www.mi.com/service/
