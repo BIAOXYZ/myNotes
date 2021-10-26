@@ -234,6 +234,16 @@ Docker 登陆信息本地存储，docker login 存储 https://blog.csdn.net/shid
 其实，是存储在用户 Home 下的 .docker 文件夹下的
 ```
 
+Everything You want to know about Docker Daemon https://dockerlabs.collabnix.com/beginners/components/daemon/
+- > Start the daemon manually
+  ```console
+  $ dockerd
+  
+  INFO[0000] +job init_networkdriver()
+  INFO[0000] +job serveapi(unix:///var/run/docker.sock)
+  INFO[0000] Listening for HTTP on unix (/var/run/docker.sock)
+  ```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## docker个人实战
