@@ -1,6 +1,8 @@
 
 # numpy官方
 
+Data type objects (dtype) https://numpy.org/doc/stable/reference/arrays.dtypes.html
+
 # numpy源码
 
 # numpy语法
@@ -19,6 +21,15 @@ Python 中的range(),arange()函数 https://blog.csdn.net/qianwenhong/article/de
 - Numpy中stack()，hstack()，vstack()函数详解 https://blog.csdn.net/csdn15698845876/article/details/73380803
 - Numpy array 合并 https://morvanzhou.github.io/tutorials/data-manipulation/np-pd/2-6-np-concat/
 - 从数组到矩阵的迹，NumPy常见使用大总结 https://www.jiqizhixin.com/articles/2017-10-28
+
+## numpy数据类型
+
+What does dtype=object mean while creating a numpy array? https://stackoverflow.com/questions/29877508/what-does-dtype-object-mean-while-creating-a-numpy-array
+- https://stackoverflow.com/questions/29877508/what-does-dtype-object-mean-while-creating-a-numpy-array/29877845#29877845
+  * > NumPy arrays are stored as contiguous blocks of memory. They usually have a single datatype (e.g. integers, floats or fixed-length strings) and then the bits in memory are interpreted as values with that datatype.
+  * > Creating an array with `dtype=object` is different. The memory taken by the array now is filled with pointers to Python objects which are being stored elsewhere in memory (much like a Python `list` is really just ***a list of pointers to objects, not the objects themselves***).
+
+NumPy 数据类型 https://www.runoob.com/numpy/numpy-dtype.html
 
 # numpy其他
 
