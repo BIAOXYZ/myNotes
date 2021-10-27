@@ -86,3 +86,7 @@ Module: tf.strings https://www.tensorflow.org/api_docs/python/tf/strings
 TensorFlow strings: what they are and how to work with them https://stackoverflow.com/questions/38902433/tensorflow-strings-what-they-are-and-how-to-work-with-them
 
 【Tensorflow】TF中的字符串tf.string https://blog.csdn.net/u013921430/article/details/101221896
+
+# `tf.reduce_sum()`
+
+彻底理解 tf.reduce_sum() https://www.jianshu.com/p/30b40b504bae
