@@ -54,6 +54,13 @@
 
 # 注意事项
 
+买一次亏几百万？购房天坑怎么避 https://mp.weixin.qq.com/s/TP4267XfvdpaOFmbUOZjCg
+- > **房屋抵押类型**
+- > **留心三个环节**
+- > **常见房屋权属问题**
+
+很多人都没见过的买房套路：老司机都能翻车 https://mp.weixin.qq.com/s/iFDjw2F5elCy2ykWCa-NLg
+
 买房选房子的18个注意事项 https://mp.weixin.qq.com/s/S9aURny6FdGikFq_P6N6RQ
 
 ## 首套！
