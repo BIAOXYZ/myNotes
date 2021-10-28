@@ -55,7 +55,7 @@ TensorFlow入门（七） 充分理解 name / variable_scope https://blog.csdn.n
 
 # [tf.Tensor](https://www.tensorflow.org/api_docs/python/tf/Tensor) 相关
 
-张量简介 https://www.tensorflow.org/guide/tensor
+张量简介 https://www.tensorflow.org/guide/tensor?hl=zh-cn || Introduction to Tensors https://www.tensorflow.org/guide/tensor
 
 tf.Tensor https://www.tensorflow.org/api_docs/python/tf/Tensor
 
@@ -92,3 +92,5 @@ TensorFlow strings: what they are and how to work with them https://stackoverflo
 # `tf.reduce_sum()`
 
 彻底理解 tf.reduce_sum() https://www.jianshu.com/p/30b40b504bae
+
+Tensorflow中的tensor的维度(dim=0、dim=1)理解 https://blog.csdn.net/pearl8899/article/details/108611965
