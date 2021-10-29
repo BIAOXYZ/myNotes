@@ -78,8 +78,12 @@ PrivPy: Enabling Scalable and General Privacy-Preserving Machine Learning https:
 ## Sharemind
 
 Sharemind MPC (Multi-Party Computation) https://sharemind.cyber.ee/sharemind-mpc/
+- Sharemind® SDK 2020.12 Beta http://sharemind-sdk.github.io/
 
 Sharemind: a framework for fast privacy-preserving computations https://eprint.iacr.org/2008/289.pdf
+
+Sharemind SDK https://github.com/sharemind-sdk
+- Sharemind SDK build repository https://github.com/sharemind-sdk/build-sdk
 
 ## OpenMined
 
