@@ -237,6 +237,11 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 
 curl 命令学习使用小结 https://www.v2ex.com/t/643426
 
+Linux curl 命令详解 https://www.cnblogs.com/zhanglianghhh/p/11326428.html
+- > `-k, --insecure`
+  * > (SSL)允许curl执行不安全的SSL连接和传输。
+  * > 所有SSL连接都尝试使用默认安装的CA证书包来确保安全。
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## curl新闻

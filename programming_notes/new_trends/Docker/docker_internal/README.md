@@ -29,7 +29,7 @@ How To Run Docker in Docker Container [3 Easy Methods] https://devopscube.com/ru
     + > For experimental purposes on your local development workstation.
 - > **Run Docker in a Docker Container**
   * > There are three ways to achieve docker in docker
-    + > Run docker by mounting docker.sock (DooD Method)
+    + > Run docker by mounting `docker.sock` (DooD Method)
     + > dind method
     + > Using Nestybox sysbox Docker runtime
 - > **Method 1: Docker in Docker Using [`/var/run/docker.sock`]**
@@ -81,15 +81,15 @@ How To Run Docker in Docker Container [3 Easy Methods] https://devopscube.com/ru
       ```sh
       docker build -t test-image .
       ```
-- > **Method 2: Docker in Docker Using dind**
+- > **Method 2: Docker in Docker Using `dind`**
   * > This method ***actually creates a child container inside a container***. Use this method only if you really want to have the containers and images inside the container. Otherwise, I would suggest you use the first approach.
-  * > For this, you just need to use the official docker image with `dind` tag. The dind image is baked with required utilities for Docker to run inside a docker container.
+  * > For this, you just need to use the official docker image with `dind` tag. The `dind` image is baked with required utilities for Docker to run inside a docker container.
   * > Follow the steps to test the setup. (**Note**: This requires your container to be run in privileged mode.)
     + > **Step 1**: Create a container named `dind-test` with `docker:dind` image
       ```sh
       docker run --privileged -d --name dind-test docker:dind
       ```
-    + > **Step 2**: Log in to the container using exec.
+    + > **Step 2**: Log in to the container using `exec`.
       ```sh
       docker exec -it dind-test /bin/sh
       ```

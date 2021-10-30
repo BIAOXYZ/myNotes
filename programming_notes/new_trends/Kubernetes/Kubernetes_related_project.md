@@ -208,6 +208,7 @@ kubeadm-dind-cluster: A Kubernetes multi-node test cluster based on kubeadm http
 - DIND: Docker in Docker https://github.com/jpetazzo/dind
 
 KIND: Kubernetes IN Docker - local clusters for testing Kubernetes https://kind.sigs.k8s.io/ || https://github.com/kubernetes-sigs/kind
+- Quick Start https://kind.sigs.k8s.io/docs/user/quick-start/
 
 使用 Kind 搭建你的本地 Kubernetes 集群 https://juejin.im/post/5c99ed6c6fb9a0710e47ebeb
 
