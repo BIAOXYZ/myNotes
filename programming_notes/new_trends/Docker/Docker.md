@@ -86,38 +86,7 @@ Docker CE 还是 Docker EE https://blog.csdn.net/liumiaocn/article/details/60468
 
 ## 其他docker系列教程
 
-每天5分钟玩转 Docker 容器技术 https://www.cnblogs.com/CloudMan6/tag/Docker/   【by CloudMan】
-- RUN vs CMD vs ENTRYPOINT - 每天5分钟玩转 Docker 容器技术（17） https://www.cnblogs.com/CloudMan6/p/6875834.html
-  * ```
-    简单的说：
-    RUN 执行命令并创建新的镜像层，RUN 经常用于安装软件包。
-    CMD 设置容器启动后默认执行的命令及其参数，但 CMD 能够被 docker run 后面跟的命令行参数替换。
-    ENTRYPOINT 配置容器启动时运行的命令。
-    ```
-  * > RUN 指令通常用于安装应用和软件包。RUN 在当前镜像的顶部执行命令，并通过创建新的镜像层。Dockerfile 中常常包含多个 RUN 指令。
-  * > 注意：apt-get update 和 apt-get install 被放在一个 RUN 指令中执行，这样能够保证每次安装的是最新的包。如果 apt-get install 在单独的 RUN 中执行，则会使用 apt-get update 创建的镜像层，而这一层可能是很久以前缓存的。
-  * > CMD 指令允许用户指定容器的默认执行的命令。此命令会在容器启动且 docker run 没有指定其他命令时运行。
-  * > ENTRYPOINT 看上去与 CMD 很像，它们都可以指定要执行的命令及其参数。不同的地方在于 ENTRYPOINT 不会被忽略，一定会被执行，即使运行 docker run 时指定了其他命令。
-  * > 在为 ENTRYPOINT 选择格式时必须小心，因为这两种格式的效果差别很大。
-  * > ENTRYPOINT 的 Exec 格式用于设置要执行的命令及其参数，同时可通过 CMD 提供额外的参数。ENTRYPOINT 中的参数始终会被使用，而 CMD 的额外参数可以在容器启动时动态替换掉。
-  * > ENTRYPOINT 的 Shell 格式会忽略任何 CMD 或 docker run 提供的参数。
-  
-----------------------------------------------------------------------------------------------------
-
-Allen 谈 Docker 系列 http://guide.daocloud.io/dcs/allen-docker-9153965.html
-
-----------------------------------------------------------------------------------------------------
-
-【From liumiaocn】 深入浅出Docker https://blog.csdn.net/liumiaocn/column/info/dockerheadfirst
-- docker基础:从chroot理解namespace的隔离 https://blog.csdn.net/liumiaocn/article/details/52388793
-- Docker基础: Linux内核命名空间之（6）user namespace https://blog.csdn.net/liumiaocn/article/details/52549978
-
-----------------------------------------------------------------------------------------------------
-
-https://segmentfault.com/u/wuyangchun/articles 【这哥们linux也写了不少东西】
-- 走进docker(05)：docker在本地如何管理image（镜像）? https://segmentfault.com/a/1190000009730986
-
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+每天5分钟玩转 Docker 容器技术 https://www.cnblogs.com/CloudMan6/tag/Docker/  【by `CloudMan`】
 
 ## docker微信帖子
 
@@ -142,23 +111,6 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 ## docker Github帖子
 
 【[:star:][`*`]】 容器中的数据库是一个好主意吗？ https://github.com/Vonng/pg/blob/99785ff1e57c0e8b9fc486eeba1c4984bad7b228/misc/postgres-in-docker.md || Thou shalt not run a prod database inside a container https://github.com/Vonng/pg/blob/99785ff1e57c0e8b9fc486eeba1c4984bad7b228/misc/docker-vs-bare-metal.md
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
-# docker源码和底层原理
-
-Docker 核心技术与实现原理 https://draveness.me/docker
-- > Linux 的命名空间机制提供了以下七种不同的命名空间，包括 `CLONE_NEWCGROUP`、`CLONE_NEWIPC`、`CLONE_NEWNET`、`CLONE_NEWNS`、`CLONE_NEWPID`、`CLONE_NEWUSER` 和 `CLONE_NEWUTS`，通过这七个选项我们能在创建新的进程时设置新进程应该在哪些资源上与宿主机器进行隔离。
-- > 当前机器上有很多的进程正在执行，在上述进程中有两个非常特殊，一个是 `pid` 为 1 的 `/sbin/init` 进程，另一个是 `pid` 为 2 的 `kthreadd` 进程，这两个进程都是被 Linux 中的上帝进程 `idle` 创建出来的，其中前者负责执行内核的一部分初始化工作和系统配置，也会创建一些类似 `getty` 的注册进程，而后者负责管理和调度其他的内核进程。
-- > 每一个使用 docker run 启动的容器其实都具有单独的网络命名空间，Docker 为我们提供了四种不同的网络模式，`Host`、`Container`、`None` 和 `Bridge` 模式。
-
-## OverlayFS
-
-【[`*`][:star:]】：
-- 深入理解overlayfs（一）：初识 https://blog.csdn.net/luckyapple1028/article/details/77916194
-- 深入理解overlayfs（二）：使用与原理分析 https://blog.csdn.net/luckyapple1028/article/details/78075358
-
-【Docker 基础知识】存储驱动overlay和overlay2 https://blog.csdn.net/zhonglinzhang/article/details/80970411
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -190,41 +142,7 @@ Docker学习：Image的本地存储结构 https://segmentfault.com/a/11900000175
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## Dockerfile
-
-Docker中镜像构建文件Dockerfile与相关命令的详细介绍 https://www.jb51.net/article/105333.htm
-> docker build命令会根据Dockerfile文件及上下文构建新Docker镜像。构建上下文是指Dockerfile所在的本地路径或一个URL（Git仓库地址）。构建上下文环境会被递归处理，所以，构建所指定的路径还包括了子目录，而URL还包括了其中指定的子模块。
-
-Docker(二)：Dockerfile 使用介绍 http://ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
-
-### CMD, RUN, ENTRYPOING
-
-Dockerfile里指定执行命令用ENTRYPOING和用CMD有何不同？ https://segmentfault.com/q/1010000000417103
-```
-RUN是在Build时运行的，先于CMD和ENTRYPOINT。Build完成了，RUN也运行完成后，再运行CMD或者ENTRYPOINT。
-
-ENTRYPOINT和CMD的不同点在于执行docker run时参数传递方式，CMD指定的命令可以被docker run传递的命令覆盖
-...
-...
-而ENTRYPOINT会把容器名后面的所有内容都当成参数传递给其指定的命令（不会对命令覆盖）
-...
-...
-```
-
-Docker RUN vs CMD vs ENTRYPOINT https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
-
-「Allen 谈 Docker 系列」docker build 的 cache 机制 http://dockone.io/article/674
-
-***第二批***：
-- 【[:star:][`*`]】 Dockerfile编写注意事项 https://www.cnblogs.com/bigberg/p/9001584.html
-- 【[:star:][`*`]】 DOCKERFILE注意事项 https://www.cnblogs.com/styshoo/p/6431748.html
-
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
 ## docker其他
-
-关于/var/run/docker.sock https://www.jianshu.com/p/6c3fdb0e9cb5
-> 运行过Docker Hub的Docker镜像的话，会发现其中一些容器时需要挂载/var/run/docker.sock文件。这个文件是什么呢？为什么有些容器需要使用它？简单地说，它是Docker守护进程(Docker daemon)默认监听的Unix域套接字(Unix domain socket)，容器中的进程可以通过它与Docker守护进程进行通信。
 
 【Docker】daemon.json的作用（八） https://blog.csdn.net/u013948858/article/details/79974796
 
@@ -322,3 +240,5 @@ docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/ar
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 Container Training https://container.training/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

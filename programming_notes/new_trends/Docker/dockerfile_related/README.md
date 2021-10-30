@@ -9,6 +9,24 @@ Best practices for writing Dockerfiles https://docs.docker.com/develop/develop-i
 
 Docker(三)：Dockerfile 命令详解 - 纯洁的微笑的文章 - 知乎 https://zhuanlan.zhihu.com/p/34688396
 
+RUN vs CMD vs ENTRYPOINT - 每天5分钟玩转 Docker 容器技术（17） https://www.cnblogs.com/CloudMan6/p/6875834.html
+- >
+   ```console
+    简单的说：
+    RUN 执行命令并创建新的镜像层，RUN 经常用于安装软件包。
+    CMD 设置容器启动后默认执行的命令及其参数，但 CMD 能够被 docker run 后面跟的命令行参数替换。
+    ENTRYPOINT 配置容器启动时运行的命令。
+    ```
+- > RUN 指令通常用于安装应用和软件包。RUN 在当前镜像的顶部执行命令，并通过创建新的镜像层。Dockerfile 中常常包含多个 RUN 指令。
+- > ***注意：apt-get update 和 apt-get install 被放在一个 RUN 指令中执行，这样能够保证每次安装的是最新的包。如果 apt-get install 在单独的 RUN 中执行，则会使用 apt-get update 创建的镜像层，而这一层可能是很久以前缓存的***。
+- > CMD 指令允许用户指定容器的默认执行的命令。此命令会在容器启动且 docker run 没有指定其他命令时运行。
+- > ENTRYPOINT 看上去与 CMD 很像，它们都可以指定要执行的命令及其参数。不同的地方在于 ENTRYPOINT 不会被忽略，一定会被执行，即使运行 docker run 时指定了其他命令。
+- > 在为 ENTRYPOINT 选择格式时必须小心，因为这两种格式的效果差别很大。
+- > ENTRYPOINT 的 Exec 格式用于设置要执行的命令及其参数，同时可通过 CMD 提供额外的参数。ENTRYPOINT 中的参数始终会被使用，而 CMD 的额外参数可以在容器启动时动态替换掉。
+- > ENTRYPOINT 的 Shell 格式会忽略任何 CMD 或 docker run 提供的参数。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `COPY` v.s. `ADD` 
 
 Dockerfile 中的 COPY 与 ADD 命令 https://www.cnblogs.com/sparkdev/p/9573248.html 【From `sparkdev`】
@@ -48,3 +66,38 @@ Dockerfile RUN，CMD，ENTRYPOINT命令区别 https://www.jianshu.com/p/f0a0f6a4
   * > `RUN` 命令执行命令并创建新的镜像层，通常用于安装软件包
   * > `CMD` 命令设置容器启动后默认执行的命令及其参数，但CMD设置的命令能够被 docker run 命令后面的命令行参数替换
   * > `ENTRYPOINT` 配置容器启动时的执行命令（不会被忽略，一定会被执行，即使运行 docker run 时指定了其他命令）
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Dockerfile【old articles】
+
+Docker中镜像构建文件Dockerfile与相关命令的详细介绍 https://www.jb51.net/article/105333.htm
+> docker build命令会根据Dockerfile文件及上下文构建新Docker镜像。构建上下文是指Dockerfile所在的本地路径或一个URL（Git仓库地址）。构建上下文环境会被递归处理，所以，构建所指定的路径还包括了子目录，而URL还包括了其中指定的子模块。
+
+Docker(二)：Dockerfile 使用介绍 http://ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
+
+### CMD, RUN, ENTRYPOING
+
+Dockerfile里指定执行命令用ENTRYPOING和用CMD有何不同？ https://segmentfault.com/q/1010000000417103
+```
+RUN是在Build时运行的，先于CMD和ENTRYPOINT。Build完成了，RUN也运行完成后，再运行CMD或者ENTRYPOINT。
+
+ENTRYPOINT和CMD的不同点在于执行docker run时参数传递方式，CMD指定的命令可以被docker run传递的命令覆盖
+...
+...
+而ENTRYPOINT会把容器名后面的所有内容都当成参数传递给其指定的命令（不会对命令覆盖）
+...
+...
+```
+
+Docker RUN vs CMD vs ENTRYPOINT https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+
+「Allen 谈 Docker 系列」docker build 的 cache 机制 http://dockone.io/article/674
+
+***第二批***：
+- 【[:star:][`*`]】 Dockerfile编写注意事项 https://www.cnblogs.com/bigberg/p/9001584.html
+- 【[:star:][`*`]】 DOCKERFILE注意事项 https://www.cnblogs.com/styshoo/p/6431748.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
