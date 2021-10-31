@@ -264,6 +264,14 @@ Managing Clusters with Cluster Registry https://medium.com/@cgrant/managing-clus
 
 https://kubevirt.io/user-guide/
 
+KubeVirt在360的探索之路 https://mp.weixin.qq.com/s/aaHvCtDL8ea3uZQ-_vd7Gw
+- > KubeVirt是不是一个VM管理平台的替代品，和OpenStack还有ovirt等虚拟化管理平台的区别。
+  * > 简单来说：KubeVirt只是用Kubernetes管VM，其中会复用Kubernetes的CNI和CSI，所以只是用Operator的方式来操作VM，他不去管网络和存储等。所以和OpenStack中包含Nova，Neutron，Cinder等不一样，可以理解成KubeVirt是一个Kubernetes框架下的，用Go写的Nova VM管理组件。
+- > KubeVirt和Kata的区别：
+  * > 简单来说：Kata是有着VM的安全性和隔离性，以容器的方式运行，有着容器的速度和特点，但不是一个真正的VM，而Kubevirt是借用Kubernetes的扩展性来管VM，你用到的是一个真正的VM。
+- > KubeVirt和Virtlet的区别：
+  * > 简单来说：Virtlet是把VM当成一个CRI来跑了，是按Pod API来定义一个VM，所以VM的很多功能比如热迁移等，Virtlet是没法满足VM的全部特性的，算是一个70%功能的VM。
+
 ### CDI
 
 Containerized Data Importer https://github.com/kubevirt/containerized-data-importer

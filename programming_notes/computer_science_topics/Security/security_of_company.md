@@ -211,6 +211,8 @@ ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation http
 - ***Paper***:
   * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
 
+ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
+
 ## MPyC
 
 MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
