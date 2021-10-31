@@ -20,3 +20,7 @@ Vampire Gaze https://diablo2.diablowiki.net/Vampire_Gaze
 # 其他
 
 暗黑2通关后不得不做的事——挑战隐藏6BOSS - 暗黑达人的文章 - 知乎 https://zhuanlan.zhihu.com/p/114007215
+
+# 攻略
+
+【合金萝卜】暗黑2开荒快乐指南【暗黑2重制版】 https://www.bilibili.com/video/BV1a44y147g1
