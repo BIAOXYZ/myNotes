@@ -18,3 +18,7 @@ docker run -p {hostPort}:{containerPort} {image}  # 通过-p参数，将容器�
 
 docker run -v {hostPath}:{containerPath} {image}
 ```
+
+# 参数解析
+
+Difference between `-volume` and `-volumes-from` in Docker Volumes https://stackoverflow.com/questions/58435359/difference-between-volume-and-volumes-from-in-docker-volumes

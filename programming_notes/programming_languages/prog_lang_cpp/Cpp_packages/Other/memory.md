@@ -22,6 +22,39 @@ Dynamic memory management https://en.cppreference.com/w/cpp/memory
 # `shared_ptr`
 
 C++11 shared_ptr智能指针（超级详细） http://c.biancheng.net/view/7898.html
+- > 2、`shared_ptr<T>` 模板类提供的成员方法
+  * > 为了方便用户使用 shared_ptr 智能指针，shared_ptr<T> 模板类还提供有一些实用的成员方法，它们各自的功能如表 1 所示。
+- > 下面程序给大家演示了 shared_ptr 智能指针的基本用法，以及该模板类提供了一些成员方法的用法：
+  ```cpp
+  #include <iostream>
+  #include <memory>
+  using namespace std;
+  int main()
+  {
+      //构建 2 个智能指针
+      std::shared_ptr<int> p1(new int(10));
+      std::shared_ptr<int> p2(p1);
+      //输出 p2 指向的数据
+      cout << *p2 << endl;
+      p1.reset();//引用计数减 1,p1为空指针
+      if (p1) {
+          cout << "p1 不为空" << endl;
+      }
+      else {
+          cout << "p1 为空" << endl;
+      }
+      //以上操作，并不会影响 p2
+      cout << *p2 << endl;
+      //判断当前和 p2 同指向的智能指针有多少个
+      cout << p2.use_count() << endl;
+      return 0;
+  }
+  //////////////////////////////////////////////////
+  10
+  p1 为空
+  10
+  1
+  ```
 
 # `unique_ptr` 
 
