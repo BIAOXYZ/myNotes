@@ -19,6 +19,10 @@ Dynamic memory management https://en.cppreference.com/w/cpp/memory
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# `shared_ptr`
+
+C++11 shared_ptr智能指针（超级详细） http://c.biancheng.net/view/7898.html
+
 # `unique_ptr` 
 
 如何：创建和使用 unique_ptr 实例 https://docs.microsoft.com/zh-cn/cpp/cpp/how-to-create-and-use-unique-ptr-instances

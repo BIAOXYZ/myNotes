@@ -5,4 +5,6 @@ TensorFlow优化器浅析 https://www.cnblogs.com/littleorange/p/13168159.html
 
 # 广播机制相关
 
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/util/bcast.h
+https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/util/bcast.h
+
+https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/util/matmul_bcast.h
