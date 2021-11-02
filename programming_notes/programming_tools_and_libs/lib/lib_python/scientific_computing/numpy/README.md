@@ -3,6 +3,8 @@
 
 Data type objects (dtype) https://numpy.org/doc/stable/reference/arrays.dtypes.html
 
+Broadcasting https://numpy.org/doc/stable/user/basics.broadcasting.html
+
 # numpy源码
 
 # numpy语法
