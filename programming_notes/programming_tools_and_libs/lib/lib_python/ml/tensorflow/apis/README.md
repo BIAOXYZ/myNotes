@@ -94,3 +94,47 @@ TensorFlow strings: what they are and how to work with them https://stackoverflo
 彻底理解 tf.reduce_sum() https://www.jianshu.com/p/30b40b504bae
 
 Tensorflow中的tensor的维度(dim=0、dim=1)理解 https://blog.csdn.net/pearl8899/article/details/108611965
+
+TensorFlow 基本函数 https://marquistj13.github.io/MyBlog/2017/07/tf-basic-functions/
+- > `tf.reduce_sum`
+  * > Computes the sum of elements across dimensions of a tensor.
+  * > 和np的sum一样啊，只不过参数多了一点，多了个keep_dim的参数，不过一般用不着。
+    ```console
+    # 'x' is [[1, 1, 1]
+    #         [1, 1, 1]]
+    tf.reduce_sum(x) ==> 6
+    tf.reduce_sum(x, 0) ==> [2, 2, 2]
+    tf.reduce_sum(x, 1) ==> [3, 3]
+    tf.reduce_sum(x, 1, keep_dims=True) ==> [[3], [3]]
+    tf.reduce_sum(x, [0, 1]) ==> 6
+    ```
+    ```py
+    # 个人实战：注意，原文里参数可能改了，现在是 keepdims，没有下划线了。
+    >>> x = [[1,1,1],[1,1,1]]
+    >>> x
+    [[1, 1, 1], [1, 1, 1]]
+    >>> 
+    >>> tf.reduce_sum(x)
+    <tf.Tensor: shape=(), dtype=int32, numpy=6>
+    >>> 
+    >>> tf.reduce_sum(x, 0)
+    <tf.Tensor: shape=(3,), dtype=int32, numpy=array([2, 2, 2], dtype=int32)>
+    >>> 
+    >>> tf.reduce_sum(x, 1)
+    <tf.Tensor: shape=(2,), dtype=int32, numpy=array([3, 3], dtype=int32)>
+    >>> 
+    >>> tf.reduce_sum(x, 1, keepdims=True)
+    <tf.Tensor: shape=(2, 1), dtype=int32, numpy=
+    array([[3],
+           [3]], dtype=int32)>
+    >>> 
+    >>> tf.reduce_sum(x,[0, 1])
+    <tf.Tensor: shape=(), dtype=int32, numpy=6>
+    >>> 
+    ```
+
+# `tf.broadcast_to`
+
+tf.broadcast_to https://www.tensorflow.org/api_docs/python/tf/broadcast_to
+
+TensorFlow之Broadcasting https://marquistj13.github.io/MyBlog/2017/08/tf-broadcast/
