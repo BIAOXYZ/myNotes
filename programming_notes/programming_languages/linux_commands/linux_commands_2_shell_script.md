@@ -171,12 +171,12 @@ What is the difference between double and single square brackets in bash? https:
   * BashGuide http://mywiki.wooledge.org/BashGuide
   * The Bash Guide https://guide.bash.academy/
   
-### linux命令之间的`&&`和`||`
+### linux命令之间的`&&`和`||`以及分号
 
 **//首先要说明一点，这里的`&&`和`||`不是指shell脚本中if条件语句里的`&&`和`||`。尽管他们很像，但是前者主要是决定了linux命令执行的效果（shell脚本的基本构成单元就是linux命令，所以他们当然也属于是shell脚本的内容），除了它俩还有一个是`分号`，以及稍有点关系的`&`（表示放到后台执行）；后者那两个就是在shell的if条件里做逻辑连接的，比如`if [[ $a -lt 100 && $b -gt 100 ]]`**。
 
 linux命令之间的`分号，&&，||` https://blog.csdn.net/stpeace/article/details/51870812 【by stpeace】
-```
+```console
 在用linux命令时候， 我们经常需要同时执行多条命令， 那么命令之间该如何分割呢？
    分号： 顺序地独立执行各条命令，彼此之间不关心是否失败，所有命令都会执行。
    && ： 顺序执行各条命令，只有当前一个执行成功时候，才执行后面的。
@@ -185,21 +185,42 @@ linux命令之间的`分号，&&，||` https://blog.csdn.net/stpeace/article/det
 > 意思我都懂，就是偶然发现了这哥们的博客是CSDN排行第一，所以记一下。。。
 
 Confusing use of && and || operators https://unix.stackexchange.com/questions/24684/confusing-use-of-and-operators
-```
-The right side of && will only be evaluated if the exit status of the left side is zero (i.e. true). 
-|| is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
+- https://unix.stackexchange.com/questions/24684/confusing-use-of-and-operators/24685#24685
+  * > The right side of `&&` will only be evaluated if the exit status of the left side is zero (i.e. true). `||` is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
+  * > You can consider `[ ... ]` to be a program with a return value. If the test inside evaluates to true, it returns zero; it returns nonzero otherwise.
+    ```sh
+    $ false && echo howdy!
 
-Examples:
+    $ true && echo howdy!
+    howdy!
+    $ true || echo howdy!
 
-$ false && echo howdy!
+    $ false || echo howdy!
+    howdy!
+    ```
+  * > If you do `which [`, you might see that `[` actually does point to a program! It's usually not actually the one that runs in scripts, though; run `type [` to see what actually gets run. If you wan to try using the program, just give the full path like so: `/bin/[ 1 = 1`.
 
-$ true && echo howdy!
-howdy!
-$ true || echo howdy!
+Difference between executing multiple commands with && and ; [duplicate] https://unix.stackexchange.com/questions/100704/difference-between-executing-multiple-commands-with-and
+- https://unix.stackexchange.com/questions/100704/difference-between-executing-multiple-commands-with-and/100705#100705
+  * > In the shell, `&&` and `;` are similar in that they both can be used to terminate commands. The difference is `&&` is also a conditional operator. ***With `;` the following command is always executed, but with `&&` the later command is only executed if the first succeeds***.
+    ```sh
+    false; echo "yes"   # prints "yes"
+    true; echo "yes"    # prints "yes"
+    false && echo "yes" # does not echo
+    true && echo "yes"  # prints "yes"
+    ```
 
-$ false || echo howdy!
-howdy!
-```
+Is there a difference between the '&&' and ';' symbols in a standard BASH terminal? https://askubuntu.com/questions/23549/is-there-a-difference-between-the-and-symbols-in-a-standard-bash-termin
+- https://askubuntu.com/questions/23549/is-there-a-difference-between-the-and-symbols-in-a-standard-bash-termin/23551#23551
+  * > With this line:
+    ```sh
+    command1 && command2
+    ```
+    > command2 will be executed if (and only if) command1 returns exit status zero, whereas in this line:
+    ```sh
+    command1 ; command2
+    ```
+    > both command1 and command2 will be executed regardless. The semicolon allows you to type many commands on one line.
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
