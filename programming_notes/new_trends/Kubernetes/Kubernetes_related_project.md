@@ -272,6 +272,15 @@ KubeVirt在360的探索之路 https://mp.weixin.qq.com/s/aaHvCtDL8ea3uZQ-_vd7Gw
 - > KubeVirt和Virtlet的区别：
   * > 简单来说：Virtlet是把VM当成一个CRI来跑了，是按Pod API来定义一个VM，所以VM的很多功能比如热迁移等，Virtlet是没法满足VM的全部特性的，算是一个70%功能的VM。
 
+kubevirt以容器方式运行虚拟机 https://remimin.github.io/2018/09/14/kubevirt/
+- > 目前Redhat开源的kubevirt和Mirantis开源的virtlet都提供了以容器方式运行虚拟机的方案， 至于两者之间的区别，可以看下这篇Mirantis的 [blog](https://www.mirantis.com/blog/kubevirt-vs-virtlet-comparison-better/)。
+- > **什么是kubevirt**
+  * > kubevirt是Redhat开源的以容器方式运行虚拟机的项目，以k8s add-on方式，利用k8s CRD为增加资源类型VirtualMachineInstance（VMI）， 使用容器的image registry去创建虚拟机并提供VM生命周期管理。 CRD的方式是的kubevirt对虚拟机的管理不用局限于pod管理接口，但是也无法使用pod的RS DS Deployment等管理能力，也意味着 kubevirt如果想要利用pod管理能力，要自主去实现，目前kubevirt实现了类似RS的功能。 kubevirt目前支持的runtime是docker和runv，本文中实践使用的是docker。
+- > **kubevirt架构**
+  * 从kubevirt架构看如何创建虚拟机，Kubevirt架构如图所示，由4部分组件组成。从架构图看出kubevirt创建虚拟机的核心就是 ***创建了一个特殊的pod virt-launcher*** 其中的***子进程包括libvirt和qemu***。做过openstack nova项目的朋友应该比较 习惯于一台宿主机中运行一个libvirtd后台进程，kubevirt中采用每个pod中一个libvirt进程是去中心化的模式避免因为 libvirtd服务异常导致所有的虚拟机无法管理。
+
+在 Kubernetes 上使用 KubeVirt 管理虚拟机负载 http://blog.meoop.me/post/use-kubevirt-to-manage-virtualization-workloads-on-kubernetes/
+
 ### CDI
 
 Containerized Data Importer https://github.com/kubevirt/containerized-data-importer

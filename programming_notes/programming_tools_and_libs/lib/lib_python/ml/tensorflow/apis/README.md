@@ -58,6 +58,7 @@ TensorFlow入门（七） 充分理解 name / variable_scope https://blog.csdn.n
 张量简介 https://www.tensorflow.org/guide/tensor?hl=zh-cn || Introduction to Tensors https://www.tensorflow.org/guide/tensor
 
 tf.Tensor https://www.tensorflow.org/api_docs/python/tf/Tensor
+- `int64 NumElements() const` https://www.tensorflow.org/api_docs/cc/class/tensorflow/tensor#classtensorflow_1_1_tensor_1a9dcfa39b1a721efeef32cf3692938a3a
 
 【[:star:][`*`]】 tf.SparseTensor - skye的文章 - 知乎 https://zhuanlan.zhihu.com/p/94035220
 
