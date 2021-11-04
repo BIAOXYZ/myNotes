@@ -7,4 +7,6 @@ TensorFlow优化器浅析 https://www.cnblogs.com/littleorange/p/13168159.html
 
 https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/util/bcast.h
 
+https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/util/bcast.cc
+
 https://github.com/tensorflow/tensorflow/blob/r2.6/tensorflow/core/util/matmul_bcast.h
