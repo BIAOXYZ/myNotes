@@ -6,6 +6,7 @@ Docker https://www.docker.com/
 docker官方文档
 - https://docs.docker.com/
 - https://docs.docker-cn.com/
+- Develop with Docker Engine API https://docs.docker.com/engine/api/
 
 Get Started with Docker https://www.docker.com/get-started
 - Play with Docker Classroom https://training.play-with-docker.com/
@@ -143,6 +144,13 @@ Docker学习：Image的本地存储结构 https://segmentfault.com/a/11900000175
 ## Docker Volume
 
 深入理解Docker Volume(一) https://blog.csdn.net/shanyongxu/article/details/51460930
+
+## 如何在容器内部获取容器名称
+>> //notes：如果是获取容器的哈希id，那是很简单的，几乎不用任何操作，因为进入容器后一般容器的hostname就是哈希id。但是要获得容器的名字，却几乎是不可能的。——虽然有办法，但是也很不现实。。。
+>>> 就是按下面stackoverflow帖子的回答里的办法，把宿主机的 `/var/run/docker.sock` 挂载到容器里的 `/var/run/docker.sock`，然后在容器里用docker（也就是要求容器里面也得装有docker，但是实际上用curl就行吧）查。此时实际上查的都是宿主机的docker相关的信息（详情可以参加另一个地方关于 `/var/run/docker.sock` 的笔记），所以很绕很不现实。
+
+How can I get Docker Linux container information from within the container itself? https://stackoverflow.com/questions/20995351/how-can-i-get-docker-linux-container-information-from-within-the-container-itsel
+- https://stackoverflow.com/questions/20995351/how-can-i-get-docker-linux-container-information-from-within-the-container-itsel/22078132#22078132
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
