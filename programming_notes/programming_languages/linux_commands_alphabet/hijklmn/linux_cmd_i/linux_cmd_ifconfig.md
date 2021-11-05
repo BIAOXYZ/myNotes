@@ -4,6 +4,7 @@
 - `netstat` // 因为和`ifconfig`一样都是`net-tools`包里的。这个包里不止这俩命令，更全的参考下面官网说明。
 - `ip` // `iproute2`包里用来替换`ifconfig`以及其他一些命令的新命令。
 - `ipconfig` // Windows cmd 永不为奴！（手动:dog:）
+- `dig` -- 安装的时候也不是直接用 `dig`，而是用 `dnsutils`。
 
 # 官方链接
 
