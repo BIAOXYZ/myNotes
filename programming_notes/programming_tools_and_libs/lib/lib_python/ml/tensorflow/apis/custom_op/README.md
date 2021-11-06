@@ -87,8 +87,14 @@ drwxr-sr-x 3 root root  4096 Sep 22 14:15 ..
 >>> 
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 添加一个新操作（Op） https://tensorflow.juejin.im/extend/adding_an_op.html
 
 Tensorflow上手3: 实现自己的Op https://mp.weixin.qq.com/s/MV3L_pZs_OJxyE43ZN8AsA
+
+Adding a New Op https://chromium.googlesource.com/external/github.com/tensorflow/tensorflow/+/r0.7/tensorflow/g3doc/how_tos/adding_an_op/index.md
+
+开源框架---tensorflow c++ API 运行第一个“手写字的例子” https://www.cnblogs.com/carle-09/p/11676324.html

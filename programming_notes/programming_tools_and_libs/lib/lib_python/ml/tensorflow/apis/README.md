@@ -9,6 +9,8 @@ tf.device()指定tensorflow运行的GPU或CPU设备 https://blog.csdn.net/dcrmg/
 - > 在tensorflow中，我们可以使用 `tf.device()` 指定模型运行的具体设备，可以指定运行在GPU还是CUP上，以及哪块GPU上。
 - > tensorflow中不同的GPU使用 `/gpu:0` 和 `/gpu:1` 区分，而CPU不区分设备号，统一使用 `/cpu:0`
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # [tf.layers]()
 
 tf.layers.dense的使用方法 https://blog.csdn.net/weixin_44791964/article/details/99685428
@@ -32,6 +34,7 @@ Dense vs Sequential Layers in Keras https://stats.stackexchange.com/questions/44
     model.compile(optimizer='adam', loss='mse')
     ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [tf.name_scope](https://www.tensorflow.org/api_docs/python/tf/name_scope)
 
@@ -52,6 +55,8 @@ TensorFlow入门（七） 充分理解 name / variable_scope https://blog.csdn.n
 理解tf.name_scope()和tf.variable_scope() https://www.jianshu.com/p/e88367df34b5
 
 通俗理解tf.name_scope()、tf.variable_scope() - 质数的文章 - 知乎 https://zhuanlan.zhihu.com/p/52055580
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [tf.Tensor](https://www.tensorflow.org/api_docs/python/tf/Tensor) 相关
 
@@ -82,6 +87,8 @@ tensorflow兼容处理 tensorflow.compat.v1 https://www.cnblogs.com/jfdwd/p/1144
   tf.disable_v2_behavior()
   ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `tf.string`
 
 Module: tf.strings https://www.tensorflow.org/api_docs/python/tf/strings
@@ -90,13 +97,15 @@ TensorFlow strings: what they are and how to work with them https://stackoverflo
 
 【Tensorflow】TF中的字符串tf.string https://blog.csdn.net/u013921430/article/details/101221896
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `tf.reduce_sum()`
 
 彻底理解 tf.reduce_sum() https://www.jianshu.com/p/30b40b504bae
 
 Tensorflow中的tensor的维度(dim=0、dim=1)理解 https://blog.csdn.net/pearl8899/article/details/108611965
 
-TensorFlow 基本函数 https://marquistj13.github.io/MyBlog/2017/07/tf-basic-functions/
+【[:star:][`*`]】 TensorFlow 基本函数 https://marquistj13.github.io/MyBlog/2017/07/tf-basic-functions/
 - > `tf.reduce_sum`
   * > Computes the sum of elements across dimensions of a tensor.
   * > 和np的sum一样啊，只不过参数多了一点，多了个keep_dim的参数，不过一般用不着。
@@ -133,6 +142,8 @@ TensorFlow 基本函数 https://marquistj13.github.io/MyBlog/2017/07/tf-basic-fu
     <tf.Tensor: shape=(), dtype=int32, numpy=6>
     >>> 
     ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `tf.broadcast_to`
 
