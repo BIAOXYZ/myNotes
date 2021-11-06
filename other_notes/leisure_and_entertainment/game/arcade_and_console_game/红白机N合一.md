@@ -3,6 +3,8 @@
 
 # 2021
 
+【红白机N合一】让我们既熟悉又陌生的《兔宝宝历险记》 https://www.bilibili.com/video/BV1y44y1i7Aq
+
 【红白机N合一】创造了游戏史诸多第一的里程碑作——《小蜜蜂》 https://www.bilibili.com/video/BV1zb4y1C797
 
 # 2020
