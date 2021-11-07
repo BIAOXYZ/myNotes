@@ -1,4 +1,7 @@
 
+教科书《计算机体系结构基础》（胡伟武等，第三版）的开源版本 https://github.com/foxsen/archbase
+- https://foxsen.github.io/archbase/
+
 # others
 
 ## firmware related

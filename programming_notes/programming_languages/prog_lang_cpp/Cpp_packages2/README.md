@@ -12,3 +12,13 @@ DataFrame (like in R or Pandas) for C++ [closed] https://stackoverflow.com/quest
 xframe https://github.com/xtensor-stack/xframe || https://xframe.readthedocs.io/en/latest/
 - > xframe is an early developer preview, and is not suitable for general usage yet. Features and implementation are subject to change.
 - > xframe is a dataframe for C++, based on xtensor and xtl.
+
+# 数据结构
+
+## The Parallel Hashmap
+
+The Parallel Hashmap https://github.com/greg7mdp/parallel-hashmap
+
+A family of header-only, very fast and memory-friendly hashmap and btree containers. https://bestofcpp.com/repo/greg7mdp-parallel-hashmap-cpp-data-structures
+
+开源库 parallel-hashmap 介绍：高性能 线程安全 内存友好的哈希表 和 btree https://cloud.tencent.com/developer/article/1839213
