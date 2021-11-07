@@ -12,3 +12,27 @@ zip() in Python https://www.geeksforgeeks.org/zip-in-python/
 Python zip() 函数 https://www.runoob.com/python/python-func-zip.html
 - > zip 方法在 Python 2 和 Python 3 中的不同：在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。如果需要了解 Pyhton3 的应用，可以参考 Python3 zip()。
   >> Python3 zip() 函数 https://www.runoob.com/python3/python3-func-zip.html
+
+Python zip()用法，看这一篇就够了 https://blog.csdn.net/PaulZhn/article/details/104391756
+- > 这么描述显然有些抽象，让我们直接观察一下它的运行结果：
+  ```py
+  >>> a = ['a', 'b', 'c', 'd']
+  >>> b = ['1', '2', '3', '4']
+  >>> list(zip(a, b))
+  [('a', '1'), ('b', '2'), ('c', '3'), ('d', '4')]
+  ```
+  > 很明显，对于我们的两个 `list`，a和b，`list(zip(a, b))` 生成了一个列表。在这个列表中，每个元素是一个 `tuple`；对于第i个元组，它其中的内容是 `(a[i-1], b[i-1])`。这样的操作，与压缩软件的“压缩”十分接近。如果我们继续在 `zip()` 中加入更多的参数，比如 `zip(a, b, c, d)`，那么在将它转换成 `list` 之后，结果当然就是 `[(a[0], b[0], c[0], d[0]), (a[1], b[1], c[1], d[1]), ..., (a[n-1], b[n-1], c[n-1], d[n-1])]`。
+  > 
+  > 事实上，在 Python 3 中，为了节省空间，`zip()` 返回的是一个 `tuple` 的迭代器，这也是我们为什么要调用 `list()` 将它强制转换成 `list` 的原因。不过，Python 2中，它直接返回的就是一个列表了。
+- > 如果我们传入 `zip()` 中的几个参数不等长，会有什么结果呢？`zip()` 很灵活，如果几个参数不等长，那么它会取最短的那个参数的长度，然后再进行处理。至于那些超出最短长度的成员，就只好被舍弃掉了。
+- > 对于 `zip(args)` 这个函数，Python还提供了一种逆操作。例如，我们有
+  ```py
+  result = zip(a, b)
+  ```
+  > 那么，只要调用
+  ```py
+  origin = zip(*result)  #前面加*号，事实上*号也是一个特殊的运算符，叫解包运算符
+  ```
+  > 就可以得到原来的a和b了。利用这个特性，可以用一种特殊的方法处理一些问题，我们待会说。
+- > **同时遍历多个字典**
+- > **对多个元素同时进行排序**
