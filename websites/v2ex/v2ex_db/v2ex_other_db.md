@@ -1,4 +1,10 @@
 
+有用过阿里云的 polarDB 的吗？ https://www.v2ex.com/t/813812
+- > 似乎底层就是正常的 mysql ，你可以认为阿里云帮你做了个中间件，实际性能肯定依赖底层 mysql 吧
+- > 还可以的，底层是 mysql ，只是做了中间件负责多个节点数据一致性保障。对于 mysql 语法应该是 100%支持。
+- > share-storage, 底层使用了专有设备 FGPA 和 RDMA ，有 vendor lock-in 的风险。
+- > polardb 似乎配的是傲腾，以前看过博客极限情况下性能能比普通 ssd 的 MySQL 高上百倍
+
 彦祖们， pg 还是 mysql? 到底该怎么选？ https://www.v2ex.com/t/800592
 - > 选 mysql，用 pg 的人一般不会有这个疑问。
 - > https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/limits.html <br> https://www.postgresql.org/docs/13/limits.html
