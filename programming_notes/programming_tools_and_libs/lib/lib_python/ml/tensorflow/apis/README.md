@@ -1,7 +1,14 @@
 
+[整理]TensorFlow的API详解和记录.md https://github.com/jeffreyforkfolder/tensorflow-learning/blob/master/other/%5B%E6%95%B4%E7%90%86%5DTensorFlow%E7%9A%84API%E8%AF%A6%E8%A7%A3%E5%92%8C%E8%AE%B0%E5%BD%95.md
+
+# 其他
+
 tf.data.experimental.make_csv_dataset https://www.tensorflow.org/api_docs/python/tf/data/experimental/make_csv_dataset
 
 tf.nn，tf.layers， tf.contrib模块介绍 https://blog.csdn.net/Yuancccc/article/details/89472133
+
+Understanding Tensorflow's tensors shape: static and dynamic https://pgaleone.eu/tensorflow/2018/07/28/understanding-tensorflow-tensors-shape-static-dynamic/
+- Understanding Tensorflow using Go https://pgaleone.eu/tensorflow/go/2017/05/29/understanding-tensorflow-using-go/
 
 # [tf.device](https://www.tensorflow.org/api_docs/python/tf/device)
 
@@ -142,6 +149,9 @@ Tensorflow中的tensor的维度(dim=0、dim=1)理解 https://blog.csdn.net/pearl
     <tf.Tensor: shape=(), dtype=int32, numpy=6>
     >>> 
     ```
+
+tensorflow中axis理解非常重要 https://blog.csdn.net/ningning52107/article/details/80227262
+- > 由此可以看出，通过不同的axis，numpy会沿着不同的方向进行操作：如果不设置，那么对所有的元素操作；如果axis=0，则沿着纵轴进行操作；axis=1，则沿着横轴进行操作。但这只是简单的二位数组，如果是多维的呢？可以总结为一句话：设axis=i，则numpy沿着第i个下标变化的放下进行操作。例如刚刚的例子，可以将表示为：`data =[[a00, a01],[a10,a11]]`，所以 `axis=0` 时，沿着第0个下标变化的方向进行操作，也就是 `a00->a10`, `a01->a11`，也就是纵坐标的方向，axis=1时也类似。下面我们举一个四维的求sum的例子来验证一下：
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
