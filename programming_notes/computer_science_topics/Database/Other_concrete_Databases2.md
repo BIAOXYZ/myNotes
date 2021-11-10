@@ -147,6 +147,10 @@ Gauss松鼠会：
 - openGauss存储技术（一）——行存储引擎 https://mp.weixin.qq.com/s/lpo3ZAqTM2boDH8iAAavSQ
 - openGauss存储技术（二）——列存储引擎和内存引擎 https://mp.weixin.qq.com/s/uGwonQRn4XEldHo1hqJ10w
 
+解决文件存储难题 openGauss隆重推出段页式特性 https://www.modb.pro/db/142678
+
+PostgreSQL openGaussDB 体系架构 https://mp.weixin.qq.com/s/4zwOGT5JpoFUqz4M-CS08g
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TaurusDB && GeminiDB
