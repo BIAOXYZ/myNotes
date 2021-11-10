@@ -58,3 +58,20 @@ Linux玩家必备：Ubuntu完全配置指南 - DealiAxy的文章 - 知乎 https:
 摸鱼求助：有没有命令或软件，能让终端仿佛一直在运行输出 https://www.v2ex.com/t/814142
 - > `sudo snap install genact && genact`
 - > 不需要装任何程序，直接 `curl parrot.live` 就可以了
+
+Linux fun-o-matic https://gist.github.com/zlorb/4a3eff8981fcec8ca1c7 || https://gist.github.com/marianposaceanu/6615458
+1. Install cowsay [0] via : `sudo apt-get install cowsay`
+2. Install fortune [1] via : `sudo apt-get install fortune`
+3. Install figlet [3] via : `sudo apt-get install figlet`
+4. Make sure you have Ruby installed via : `ruby -v`
+5. Install the lolcat [2] via : gem `gem install lolcat`
+6. (option) Add to .bash_profile and/or .bashrc
+```shell
+$ echo "This is a banner" | figlet | lolcat
+$ fortune | cowsay | lolcat
+$ git log -1 | cowsay -f dragon-and-cow | lolcat
+```
+- [0] - http://en.wikipedia.org/wiki/Cowsay
+- [1] - http://en.wikipedia.org/wiki/Fortune_(Unix)
+- [2] - http://github.com/busyloop/lolcat
+- [3] - http://www.figlet.org/
