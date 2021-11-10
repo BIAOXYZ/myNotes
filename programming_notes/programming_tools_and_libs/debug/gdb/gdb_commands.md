@@ -8,6 +8,10 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 - https://sourceware.org/gdb/download/onlinedocs/
   * Debugging with gdb https://sourceware.org/gdb/download/onlinedocs/gdb.pdf
 
+## GDB原理
+
+一文看懂 | GDB 底层实现原理 https://mp.weixin.qq.com/s/TYqXPtanCKmBa-UeWoJLDA
+
 ## GDB一般性知识
 
 《100个gdb小技巧》 https://github.com/hellogcc/100-gdb-tips/blob/master/src/index.md || ~~https://www.gitbook.com/book/wizardforcel/100-gdb-tips/details~~ --> https://wizardforcel.gitbooks.io/100-gdb-tips/content/
