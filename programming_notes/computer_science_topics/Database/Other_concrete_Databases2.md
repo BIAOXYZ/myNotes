@@ -99,6 +99,10 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 ## openGauss
 
+【Gauss松鼠会|大咖讲堂】西安电子科技大学李辉：密态数据查询处理的进展与思考 https://www.bilibili.com/video/BV1N64y1h7pa
+
+【GaussDB精品课第14期】GaussDB(for openGauss)在线扩容、如何处理扩容过程中的问题？ https://www.bilibili.com/video/BV1ZU4y1F794
+
 ### 官网类
 
 关于openGauss https://opengauss.org/zh/
