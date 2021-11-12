@@ -41,6 +41,8 @@ QEMU https://zh.wikipedia.org/wiki/QEMU
 
 QEMU (简体中文) https://wiki.archlinux.org/index.php/QEMU_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
+【工程技术】QEMU运行Linux Kernel环境配置 https://blog.csdn.net/HaoBBNuanMM/article/details/106625017
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Xen
