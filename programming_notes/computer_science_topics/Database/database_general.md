@@ -237,6 +237,9 @@ Mysql 多表连接查询 inner join 和 outer join 的使用 https://www.cnblogs
 
 What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [duplicate] https://stackoverflow.com/questions/5706437/whats-the-difference-between-inner-join-left-join-right-join-and-full-join
 
+Hash join算法原理 https://www.cnblogs.com/qlee/archive/2011/04/11/2012572.html
+- > 自从oracke 7.3以来，oracle提供了一种新的join技术，就是hash join。Hash Join只能用于相等连接，且只能在CBO优化器模式下。相对于nested loop join，hash join更适合处理大型结果集。Hash join不需要在驱动表上存在索引。
+
 # 故障恢复
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
