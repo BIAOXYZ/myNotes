@@ -24,11 +24,14 @@ Chess.com https://www.chess.com/zh
 东萍象棋网 http://www.dpxq.com/
 
 永乐象棋棋谱网 http://www.xiangqiqipu.com/
+- 在线与电脑下象棋 https://www.xiangqiqipu.com/Home/Robot
 
 棋谱收藏站 http://game.onegreen.net/chess/index.html
 
 大马象棋园地 http://www.myxiangqi.com/
 - 反宫马布局研究 http://www.myxiangqi.com/Lesson/hrh_fangongma.htm
+
+象棋谱 https://www.xqipu.com/
 
 # `#` 棋谱
 
