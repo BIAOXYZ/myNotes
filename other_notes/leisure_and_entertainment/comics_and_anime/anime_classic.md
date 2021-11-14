@@ -78,6 +78,15 @@ Anitama放：你还记得十年前的“哔哩哔哩”吗？ https://www.bilibi
 
 ## From: 名侦探柯南DetectiveConan
 
+可可爱爱，奇奇怪怪~今日给大家分享一波名柯中的豆豆眼！ https://mp.weixin.qq.com/s/7hv92EVHOLgpIcL87ZZUZA
+- 回复里的：
+  ```console
+  指路P1——《服部平次与吸血鬼公馆》（764-767）
+  指路P2——《恋爱与推理的剑道大赛》（971-972）
+  指路P3——《背叛的舞台》（921-922）
+  指路P4——《走投无路的名侦探 连续两大杀人事件》（136-139）
+  ```
+
 【重磅消息】4月17日全国上映！！剧场版《名侦探柯南：绯色的子弹》终于在万众期待中定档！ https://mp.weixin.qq.com/s/YzV6zPUKgPDBAKW3mUU2Vg
 
 来康康小新一和小小兰，还有一头浓密头发的博士吧！ https://mp.weixin.qq.com/s/S7Rw2yi7ExUFkOgrFNTbKA
