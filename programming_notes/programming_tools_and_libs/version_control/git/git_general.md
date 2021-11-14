@@ -10,8 +10,6 @@ Git内部原理解析 https://mp.weixin.qq.com/s/NL2Uc0PLn3UgcCEryy5KuA
 
 谈谈 Git 存储原理及相关实现 https://mp.weixin.qq.com/s/x5PHNn87OYCSpYE_hb8I2A
 
-Git 基本原理介绍 https://mp.weixin.qq.com/s/WvAhPoPVrB1ide1FzqSsGQ
-
 # git online
 
 Resources to learn Git https://try.github.io/
