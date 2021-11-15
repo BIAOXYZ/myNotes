@@ -1,13 +1,4 @@
 
-【[:star:][`*`]】 A Security Site https://asecuritysite.com/
-- **Quick Jump (Cryptography)**
-  * Crypto Pairing https://asecuritysite.com/pairing/
-  * Elliptic Curve Cryptography (ECC) https://asecuritysite.com/ecc/
-  * Lattice cryptography https://asecuritysite.com/lattice/
-  * Post quantum cryptography (PQC) https://asecuritysite.com/pqc/
-- **Quick Jump (Others)**
-  * Database SQL Analyser: Tutorial 1 (SQL statements) https://asecuritysite.com/database1/db/  【这网站甚至有SQL教程。。。】
-
 Auditing Applied Cryptography https://github.com/mimoo/cryptobible
 > 这个里面有一些我感觉算是偏密码工程的东西，比如RSA-OAEP是否安全等：https://github.com/mimoo/cryptobible/blob/master/www/primitives/asymmetric_encryption.md
 
