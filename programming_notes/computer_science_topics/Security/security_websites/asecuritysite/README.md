@@ -27,6 +27,12 @@ Zero-knowledge proof using crypto pairing https://asecuritysite.com/pairing/mir_
   * > Now Peggy has to pass something to Victor to prove that she knows the solution, without giving away the value.
   * > For this we have a point on an elliptic curve of `G`, and use the pairing property of: $e(G,G)^k = 1$
   * > and thus: $e(G,G)^{x^2 − x − 42} = 1$
-  * > In pairing this then becomes: $e(G,G)^{x2} ⋅ e(G,G)^{−x} ⋅ e(G,G)^{−42} = 1$
+  * > In pairing this then becomes: $e(G,G)^{x^2} ⋅ e(G,G)^{−x} ⋅ e(G,G)^{−42} = 1$
   * > and which becomes: $e(xG,xG)⋅e(xG,−G)⋅e(G,−42G) = 1$
   * > Peggy will then provide `xG` and Victor will check the pairings multiplied equals unity. If real life `x` will be a large value, and it will ***not be possible to determine `x` from `xG`***.
+
+Cracking Elliptic Curves with the MOV Attack https://asecuritysite.com/pairing/mir_mov
+- > **Background**
+  * > Now if we select a private key value of `x`, and then the public key will become: $P_{pub} = xP$
+  * > In order to find `x`, we would have to search the values of `x` to match `P` to `xP`. In pairing, we can reduce the difficulty with: $e(xP,Q) = e(P,Q)^x$
+  * > This now ***becomes a discrete logarithm problem within a finite field***, and which ***makes it easier to find `x`***.
