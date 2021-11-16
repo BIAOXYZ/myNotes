@@ -64,6 +64,24 @@ Loaded image: busybox:1
 
 ## docker cp
 
+### 如何 docker cp 整个目录？
+>> //notes：其实核心就是如果是整个目录里的文件的话，需要在目录斜杠后面加 `.` 号。
+
+"docker cp" all files from a folder to existing container folder https://stackoverflow.com/questions/32566624/docker-cp-all-files-from-a-folder-to-existing-container-folder
+- https://stackoverflow.com/questions/32566624/docker-cp-all-files-from-a-folder-to-existing-container-folder/32576340#32576340
+- https://stackoverflow.com/questions/32566624/docker-cp-all-files-from-a-folder-to-existing-container-folder/48657895#48657895
+  * > Copy files/folders between a container and the local filesystem is like below formats:
+    + > Copy file to folder inside container:
+      ```sh
+      docker cp ./src/build/index.html ContainerName:/app/
+      ```
+      > above example shows index.html file is copying to app folder inside container
+    + > Copy all files to folder inside container:
+      ```sh
+      docker cp ./src/build/. ContainerName:/app/
+      ```
+      > above example shows all files inside build folder are copying to app folder inside container
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他docker常用命令
