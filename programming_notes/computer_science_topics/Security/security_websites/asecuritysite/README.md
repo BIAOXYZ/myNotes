@@ -36,3 +36,7 @@ Cracking Elliptic Curves with the MOV Attack https://asecuritysite.com/pairing/m
   * > Now if we select a private key value of `x`, and then the public key will become: $P_{pub} = xP$
   * > In order to find `x`, we would have to search the values of `x` to match `P` to `xP`. In pairing, we can reduce the difficulty with: $e(xP,Q) = e(P,Q)^x$
   * > This now ***becomes a discrete logarithm problem within a finite field***, and which ***makes it easier to find `x`***.
+
+Tripartite Diffie-Hellman algorithm BN256 in Go https://asecuritysite.com/pairing/go_bn256
+
+BLS signatures and Crypto Pairing https://asecuritysite.com/pairing/js_bls
