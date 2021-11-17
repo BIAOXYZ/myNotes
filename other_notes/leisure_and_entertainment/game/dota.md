@@ -212,6 +212,8 @@ How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions
 
 # Dota2新闻消息类
 
+《DOTA2》发布更新，正式移除对 32 位系统的支持 https://www.ithome.com/0/587/162.htm 【`2021/11/17`】
+
 《DOTA2》官宣：未来将不再支持 32 位系统、DirectX 9 等 https://www.ithome.com/0/576/253.htm 【`2021/9/18`】
 - > Valve 称今天（9 月 17 日）并不会有任何改动，但接下来的数月里其将实施下列改动：
   ```console
