@@ -77,6 +77,21 @@ sudo pip install -U cmake==xxx
 - > 第三步：安装requirement.txt，在新环境，执行命令即可一键安装完所需要的第三方库。命令：
   >> `pip install -r requirements.txt`
 
+## 小技巧：跳过 `requirement.txt` 里失败的包，继续安装其他包
+
+Stop pip from failing on single package when installing with requirements.txt https://stackoverflow.com/questions/22250483/stop-pip-from-failing-on-single-package-when-installing-with-requirements-txt
+- https://stackoverflow.com/questions/22250483/stop-pip-from-failing-on-single-package-when-installing-with-requirements-txt/28795395#28795395
+  * > Running each line with pip install may be a workaround.
+    ```sh
+    cat requirements.txt | xargs -n 1 pip install
+    ```
+    > Note: `-a` parameter is not available under MacOS, so old `cat` is more portable.
+  * 回复里的：
+    + > I had to do: `cat requirements.txt | cut -f1 -d"#" | sed '/^\s*$/d' | xargs -n 1 pip install` to remove anything in the comments and get rid of empty lines.
+    + > At least with GNU `xargs`, there's `-a` flag option, which allows `xargs` read arguments from file, so this can be done as `xargs -n 1 -a requirements.txt pip install`. Prevents UUOC and excessive plumbing
+    + > For windows :) `FOR /F %k in (requirements.txt) DO pip install %k`
+    + > Even without the `-a` flag, consider `< requirements.txt xargs -n 1 pip install`, or if you don't like the redirect at the front, `xargs -n 1 pip install < requirements.txt`. :-) 
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # pip打包发布
