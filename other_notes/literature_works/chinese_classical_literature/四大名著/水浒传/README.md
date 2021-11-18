@@ -2,6 +2,8 @@
 # 水浒传在线
 
 水滸傳 https://zh.wikisource.org/wiki/%E6%B0%B4%E6%BB%B8%E5%82%B3
+- 水滸傳 (120回本) https://zh.wikisource.org/wiki/%E6%B0%B4%E6%BB%B8%E5%82%B3_(120%E5%9B%9E%E6%9C%AC)
+- 水浒传 (70回本) https://zh.wikisource.org/zh-hans/%E6%B0%B4%E6%BB%B8%E5%82%B3_(70%E5%9B%9E%E6%9C%AC)
 
 # 水浒传人物
 

@@ -1,6 +1,16 @@
 
 # 官方
 
+all(iterable) https://docs.python.org/3/library/functions.html#all
+- > Return `True` if all elements of the iterable are true (or if the iterable is empty). Equivalent to:
+  ```py
+  def all(iterable):
+      for element in iterable:
+          if not element:
+              return False
+      return True
+  ```
+
 # 其他
 
 Python all() https://www.programiz.com/python-programming/methods/built-in/all
