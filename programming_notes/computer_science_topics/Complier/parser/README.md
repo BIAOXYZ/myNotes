@@ -1,6 +1,10 @@
 
 Parsing SQL with Python https://stackoverflow.com/questions/1394998/parsing-sql-with-python
 
+# Apache Calcite
+
+Apache Calcite https://github.com/apache/calcite
+
 # python-sqlparse
 
 python-sqlparse - Parse SQL statements https://github.com/andialbrecht/sqlparse
