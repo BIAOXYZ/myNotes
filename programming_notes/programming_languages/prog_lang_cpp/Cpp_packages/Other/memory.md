@@ -74,6 +74,9 @@ C++11 make_shared https://www.jianshu.com/p/03eea8262c11
 
 搞定技术面试：C++ 11 智能指针详解 https://juejin.cn/post/6844903993055920141
 
+C++智能指针 https://www.jianshu.com/p/68fc49d55374
+- > 原文链接：http://blog.csdn.net/xiaohu2022/article/details/69230178
+
 # 已阅
 
 C++ 教程 | C11 智能指针 https://aiden-dong.github.io/2020/01/26/cpp%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/
