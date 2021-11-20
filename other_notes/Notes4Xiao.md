@@ -218,6 +218,8 @@ sk2的前男友面膜到底为什么那么神奇？ - 知乎 https://www.zhihu.c
 
 ## 小贝饿了
 
+花57元横扫南窑头夜市，手抓饼和八宝辣子夹馍，酥脆咸香，加上大串的烧烤，超满足！ https://www.bilibili.com/video/BV1hg411N7ya || https://www.douyin.com/video/7030613163112533278 + https://www.douyin.com/video/7030613306608078094
+
 38一位酱大骨自助！火锅菜甜品饮料不限量，太满足！ https://www.bilibili.com/video/BV1np4y1v7Ho
 
 西安包子界一绝，荤素全部1块5一个，馅足肉满十几年不涨价！ https://www.bilibili.com/video/BV1s5411578x
