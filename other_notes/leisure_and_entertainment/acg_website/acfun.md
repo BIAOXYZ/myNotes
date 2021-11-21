@@ -58,6 +58,10 @@ A岛（备胎）匿名版 https://tnmb.org/Forum
   * > 新闻视频版: [丈夫出轨被抓，妻子语出惊人](https://www.acfun.cn/v/ac29919619)
     >> “***什么姿势我满足不了你啊？！***”
 
+因儿子非亲生，男子网购绿帽子整日去娘家溜达，娘家不堪受辱坚持要离婚 https://www.acfun.cn/a/ac32418810
+- > ![](https://imgs.aixifan.com/newUpload/233170_2dcba7a01c03495e9fc105c6fb00538d.jpg)
+- > ![](https://imgs.aixifan.com/newUpload/29685584_7372d95dfcb841998581d5941721ab01.gif)
+
 # 视频
 
 美国大豆是怎么样运到中国 https://www.acfun.cn/v/ac30579960
