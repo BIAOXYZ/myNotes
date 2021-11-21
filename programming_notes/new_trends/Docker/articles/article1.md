@@ -189,6 +189,7 @@ int main(int argv, char ** argc) {
 }
 EOF
 
+# 这一部分在后面的补充部分里有其他替换方法，可以达到 build 镜像的过程顺便就编译源码和跑测试用例。
 cat << EOF > project/Dockerfile
 FROM ubuntu:18.04
 RUN apt-get update -y && apt-get install -y gcc
@@ -299,6 +300,9 @@ exit
 $ 
 ```
 
+## 补1
+>> //notes：前面也提到过，在上面的例子中，镜像构建时没有编译代码，而我们希望在构建镜像时就顺便编译一次（可以用来保证新合入代码的正确性），甚至希望运行测试用例。
+
 ```sh
 # 前面生成 Dockerfile 的语句，把里面的两行 CMD 改成这一行 RUN（当然也可以改两行，但是 RUN 会添加新的层，所以尽量合并），
 # 就可以保证每次去 build 景象的时候都一定会编译和运行一次，这里其实就是模拟了门禁系统里的合入编译和跑测试用例。
@@ -309,6 +313,7 @@ WORKDIR /proj_root
 COPY . .
 RUN gcc -o /proj_root/bin/main /proj_root/src/main.c && /proj_root/bin/main
 EOF
+
 
 # 也可以用下面两个 heredoc 来替代上面的单个 heredoc，效果就更像是前面描述的，用脚本来跑程序的 build 和 test。
 cat << EOF > project/build.sh
