@@ -1,4 +1,6 @@
 
+# 1
+
 C++ 教程 | C11 智能指针 https://aiden-dong.github.io/2020/01/26/cpp%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/
 - > 对于编译器来说，***智能指针实际上是一个栈对象，并非指针类型***，在栈对象生命期即将结束时，智能指针通过析构函数释放有它管理的堆内存。***所有智能指针都重载了 `operator->` 操作符，直接返回对象的引用，用以操作对象。访问智能指针原来的方法则使用 `.` 操作符***。
 - > 访问智能指针包含的裸指针则可以用 `get()` 函数。由于智能指针是一个对象，所以 `if (my_smart_object)` 永远为真，要判断智能指针的裸指针是否为空，需要这样判断：`if (my_smart_object.get())`。
@@ -7,7 +9,9 @@ C++ 教程 | C11 智能指针 https://aiden-dong.github.io/2020/01/26/cpp%E6%99%
   * > `std::auto_ptr` 属于 STL，当然在 `namespace std` 中，包含头文件 `#include<memory>` 便可以使用。`std::auto_ptr` 能够方便的管理单个堆内存对象。
   * > 所以，**使用 `std::auto_ptr` 时，绝对不能使用“`operator=`”操作符**。作为一个库，不允许用户使用，确没有明确拒绝，多少会觉得有点出乎预料。
 
-C++智能指针 https://www.jianshu.com/p/68fc49d55374
+# 2
+
+【[:star:][`*`]】 C++智能指针 https://www.jianshu.com/p/68fc49d55374
 - > 原文链接：http://blog.csdn.net/xiaohu2022/article/details/69230178
 - > 内存管理是C++中的一个常见的错误和bug来源。在大部分情形中，这些bug来自动态分配内存和指针的使用：当多次释放动态分配的内存时，可能会导致内存损坏或者致命的运行时错误；当忘记释放动态分配的内存时，会导致内存泄露。所以，我们需要智能指针来帮助我们管理动态分配的内存。其来源于一个事实：***栈比堆要安全的多，因为栈上的变量离开作用域后，会自动销毁并清理。智能指针结合了栈上变量的安全性和堆上变量的灵活性***。
 - > **引言**
@@ -330,3 +334,50 @@ C++智能指针 https://www.jianshu.com/p/68fc49d55374
     ```
     > 使用上面的方法还是要小心，如不要将其它对象所管理的指针传给另外一个对象的 `reset()` 方法，这会造成一块内存释放多次。更多详情可以参考[这里](https://en.cppreference.com/w/cpp/memory/unique_ptr)。
 - > **`std::shared_ptr`**
+  * > 其实 `std::shared_ptr` 与 `std::unique_ptr` 类似。要创建 `std::shared_ptr` 对象，可以使用 `make_shared()` 函数（***`C++11` 是支持的，貌似制定这个标准的人忘了 `make_unique()`，所以在 `C++14` 追加了***）。`std::shared_ptr` 与 `std::unique_ptr` 的主要区别在于***前者是使用引用计数的智能指针***。引用计数的智能指针可以跟踪引用同一个真实指针对象的智能指针实例的数目。这意味着，可以有多个 `std::shared_ptr` 实例可以指向同一块动态分配的内存，当最后一个引用对象离开其作用域时，才会释放这块内存。还有一个区别是 `std::shared_ptr` 不能用于管理C语言风格的动态数组，这点要注意。下面看例子：
+    ```cpp
+    int main()
+    {
+        auto ptr1 = std::make_shared<Resource>();
+        cout << ptr1.use_count() << endl;  // output: 1
+        {
+            auto ptr2 = ptr1;  // 通过复制构造函数使两个对象管理同一块内存
+            std::shared_ptr<Resource> ptr3;   // 初始化为空
+            ptr3 = ptr1;   // 通过赋值，共享内存
+            cout << ptr1.use_count() << endl;  // output: 3
+            cout << ptr2.use_count() << endl;  // output: 3
+            cout << ptr3.use_count() << endl;  // output: 3
+        }
+        // 此时ptr2与ptr3对象析构了
+        cout << ptr1.use_count() << endl;  // output: 1
+        
+        cin.ignore(10);
+        return 0;
+    }
+    ```
+    > 可以看到，通过复制构造函数或者赋值来共享内存，知道这一点很重要，看下面的例子：
+    ```cpp
+    int main()
+    {
+        Resource* res = new Resource;
+        std::shared_ptr<Resource> ptr1{ res };
+        cout << ptr1.use_count() << endl;  // output: 1
+        {
+            
+            std::shared_ptr<Resource> ptr2{ res };   // 用同一块内存初始化
+            
+            cout << ptr1.use_count() << endl;  // output: 1
+            cout << ptr2.use_count() << endl;  // output: 1
+            
+        }
+        // 此时ptr2ptr3对象析构了, output：Resource destroyed
+        cout << ptr1.use_count() << endl;  // output: 1
+        
+        cin.ignore(10);
+        return 0;
+    }
+    ```
+    > 很奇怪，ptr1与ptr2虽然是用同一块内存初始化，但是这个共享却并不被两个对象所知道。这是由于两个对象是独立初始化的，它们互相之间没有通信。当然上面的程序会最终崩溃，因为同一块内存会被析构两次。所以，还是使用复制构造函数还有赋值运算来使不同对象管理同一块内存。如果深挖的话，`std::shared_ptr` 与 `std::unique_ptr` 内部实现机理有区别，前者内部使用两个指针，一个指针用于管理实际的指针，另外一个指针指向一个”控制块“，其中记录了哪些对象共同管理同一个指针。这是在初始化完成的，所以如果单独初始化两个对象，尽管管理的是同一块内存，它们各自的”控制块“没有互相记录的。所以，上面的问题就出现了。但是如果是使用复制构造函数还有赋值运算时，“控制块”会同步更新的，这样就达到了引用计数的目的。使用 `std::make_shared` 就不会出现上面的问题，所以要推荐使用。
+    > 
+    > `std::shared_ptr` 还有其他方法，更多的信息在[这里](https://en.cppreference.com/w/cpp/memory/shared_ptr)。
+- > **`std::weak_ptr`**
