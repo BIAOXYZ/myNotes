@@ -299,6 +299,30 @@ exit
 $ 
 ```
 
+```sh
+# 前面生成 Dockerfile 的语句，把里面的两行 CMD 改成这一行 RUN（当然也可以改两行，但是 RUN 会添加新的层，所以尽量合并），
+# 就可以保证每次去 build 景象的时候都一定会编译和运行一次，这里其实就是模拟了门禁系统里的合入编译和跑测试用例。
+cat << EOF > project/Dockerfile
+FROM ubuntu:18.04
+RUN apt-get update -y && apt-get install -y gcc
+WORKDIR /proj_root
+COPY . .
+RUN gcc -o /proj_root/bin/main /proj_root/src/main.c && /proj_root/bin/main
+EOF
+
+# 也可以用下面两个 heredoc 来替代上面的单个 heredoc，效果就更像是前面描述的，用脚本来跑程序的 build 和 test。
+cat << EOF > project/build.sh
+gcc -o /proj_root/bin/main /proj_root/src/main.c && /proj_root/bin/main
+EOF
+
+cat << EOF > project/Dockerfile
+FROM ubuntu:18.04
+RUN apt-get update -y && apt-get install -y gcc
+WORKDIR /proj_root
+COPY . .
+RUN bash -x ./build.sh
+EOF
+```
 
 # 其他文章
 >> //notes：`文章1`比较好的地方就在于，全程直接复制粘贴执行即可，不用自己改任何命令。有了`文章1`之后，其他的就只是复杂度或别的小技巧了。下面的没验证，只是贴一下。
