@@ -23,6 +23,9 @@ Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 谈谈对分布式事务的一点理解和解决方案 https://mp.weixin.qq.com/s/v7rqlz4erRC9ZvEZk6mwvg
 
+《分布式系统模式》中文版 https://github.com/dreamhead/patterns-of-distributed-systems
+- > 《分布式系统模式》（Patterns of Distributed Systems）是 Unmesh Joshi 编写的一系列关于分布式系统实现的文章。这个系列的文章采用模式的格式，介绍了像 Kafka、Zookeeper 这种分布式系统在实现过程采用的通用模式，是学习分布式系统实现的基础。
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # distributed transaction system

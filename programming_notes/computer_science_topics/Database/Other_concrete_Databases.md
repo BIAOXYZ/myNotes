@@ -122,4 +122,6 @@ Pebble: RocksDB/LevelDB inspired key-value database in Go https://github.com/coc
 
 EdgeDB: The next generation relational database. https://github.com/edgedb/edgedb
 - > EdgeDB is an open-source object-relational database built on top of PostgreSQL. The goal of EdgeDB is to empower its users to build safe and efficient software with less effort.
- 
+
+BadgerDB https://github.com/dgraph-io/badger
+- > BadgerDB is an embeddable, persistent and fast key-value (KV) database written in pure Go. It is the underlying database for [Dgraph](), a fast, distributed graph database. It's meant to be a performant alternative to non-Go-based key-value stores like [RocksDB]().
