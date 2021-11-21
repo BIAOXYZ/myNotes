@@ -381,3 +381,137 @@ C++ 教程 | C11 智能指针 https://aiden-dong.github.io/2020/01/26/cpp%E6%99%
     > 
     > `std::shared_ptr` 还有其他方法，更多的信息在[这里](https://en.cppreference.com/w/cpp/memory/shared_ptr)。
 - > **`std::weak_ptr`**
+  * > `std::shared_ptr` 可以实现多个对象共享同一块内存，当最后一个对象离开其作用域时，这块内存被释放。但是仍然有可能出现内存无法被释放的情况，联想一下“死锁”现象，对于 `std::shared_ptr` 会出现类似的“循环引用”现象：
+    ```cpp
+    class Person
+    {
+    public:
+        Person(const string& name):
+            m_name{name}
+        {
+            cout << m_name << " created" << endl;
+        }
+
+        virtual ~Person()
+        {
+            cout << m_name << " destoryed" << endl;
+        }
+
+        friend bool partnerUp(std::shared_ptr<Person>& p1, std::shared_ptr<Person>& p2)
+        {
+            if (!p1 || !p2)
+            {
+                return false;
+            }
+
+            p1->m_partner = p2;
+            p2->m_partner = p1;
+
+            cout << p1->m_name << " is now partenered with " << p2->m_name << endl;
+            return true;
+        }
+
+    private:
+        string m_name;
+        std::shared_ptr<Person> m_partner;
+    };
+
+    int main()
+    {
+        {
+            auto p1 = std::make_shared<Person>("Lucy");
+            auto p2 = std::make_shared<Person>("Ricky");
+            partnerUp(p1, p2);  // 互相设为伙伴
+        }
+        
+        cin.ignore(10);
+        return 0;
+    }
+    ```
+    > 整个程序很简单，创建两个Person动态对象，交由智能指针管理，并且通过 partnerUp() 函数互相引用为自己的伙伴。但是执行的结果却却有问题：
+    ```console
+    Lucy created
+    Ricky created
+    Lucy is now partnered with Ricky
+    ```
+    > 对象没有被析构！出现内存泄露！仔细想想 `std::shared_ptr` 对象是什么时候才能被析构，就是引用计数变为0时，但是当你想析构p1时，p2内部却引用了p1，无法析构；反过来也无法析构。互相引用造成了“死锁”，最终内存泄露！这样的情形也会出现在“自锁”中：
+    ```cpp
+    int main()
+    {
+        {
+            auto p1 = std::make_shared<Person>("Lucy");
+            partnerUp(p1, p1);  // 自己作为自己的伙伴
+        }
+        
+        cin.ignore(10);
+        return 0;
+    }
+    ```
+  * > 这时候 `std::weak_ptr` 应运而生。`std::weak_ptr` 可以包含由 `std::shared_ptr` 所管理的内存的引用。但是它仅仅是旁观者，并不是所有者。那就是 `std::weak_ptr` 不拥有这块内存，当然不会计数，也不会阻止 `std::shared_ptr` 释放其内存。但是它可以通过 `lock()` 方法返回一个 `std::shared_ptr` 对象，从而访问这块内存。这样我们可以用 `std::weak_ptr` 来解决上面的“循环引用”问题：
+    ```cpp
+    class Person
+    {
+    public:
+        Person(const string& name):
+            m_name{name}
+        {
+            cout << m_name << " created" << endl;
+        }
+
+        virtual ~Person()
+        {
+            cout << m_name << " destoryed" << endl;
+        }
+
+        friend bool partnerUp(std::shared_ptr<Person>& p1, std::shared_ptr<Person>& p2)
+        {
+            if (!p1 || !p2)
+            {
+                return false;
+            }
+
+            p1->m_partner = p2;  // weak_ptr重载的赋值运算符中可以接收shared_ptr对象
+            p2->m_partner = p1;
+
+            cout << p1->m_name << " is now partenered with " << p2->m_name << endl;
+            return true;
+        }
+
+    private:
+        string m_name;
+        std::weak_ptr<Person> m_partner;
+    };
+
+    int main()
+    {
+        {
+            auto p1 = std::make_shared<Person>("Lucy");
+            auto p2 = std::make_shared<Person>("Ricky");
+            partnerUp(p1, p2);  // 互相设为伙伴
+        }
+        
+        cin.ignore(10);
+        return 0;
+    }
+    ```
+    > 程序正常输出（注意创建与析构的顺序是反的？在栈上！）：
+    ```console
+    Lucy created
+    Ricky created
+    Lucy is now partnered with Ricky
+    Ricky destroyed
+    Lucy destroyed
+    ```
+     > 有关 `std::weak_ptr` 更多的信息在[这里](http://en.cppreference.com/w/cpp/memory/weak_ptr)。
+- > 最后说点感想：还是要深刻理解智能指针的内部机理，采能用好它，否则你可能会遇到与普通指针一样的问题。
+- > **References**
+  ```console
+  [1] cpp leraning online（特别感谢这个教程，本文大部分信息可以在这里看到）.
+    - http://www.learncpp.com/
+  [2] Marc Gregoire. Professional C++, Third Edition, 2016.
+  [3] cppreference Dynamic memory management
+    - http://en.cppreference.com/w/cpp/memory
+  [4] Lvor Horton. Using the C++ Standard Template Libraries, 2016.
+  [5] 欧长坤(欧龙崎), 高速上手 C++ 11/14.
+    - https://changkun.gitbooks.io/cpp1x-tutorial/content/
+  ```
