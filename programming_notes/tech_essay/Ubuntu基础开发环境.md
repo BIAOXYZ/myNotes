@@ -87,3 +87,19 @@ Installed Python-2.7.14 to /home/bytedance/.pyenv/versions/2.7.14
 
 $ 
 ```
+
+# Java
+
+如何在 Ubuntu 20.04 上安装 Java - 雪梦科技的文章 - 知乎 https://zhuanlan.zhihu.com/p/137114682
+- > **二、安装 OpenJDK 11**
+```
+sudo apt update
+sudo apt install openjdk-11-jdk
+```
+- > **三、安装 OpenJDK 8**
+```sh
+sudo apt update
+sudo apt install openjdk-8-jdk
+```
+
+How To Install Java with Apt on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04

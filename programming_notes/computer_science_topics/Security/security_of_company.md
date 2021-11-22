@@ -246,3 +246,6 @@ Privacy-Preserving XGBoost Inference https://github.com/awslabs/privacy-preservi
 - > An extended abstract of this work ( https://arxiv.org/pdf/2011.04789.pdf ) appears in Privacy-preserving Machine Learning Workshop at NeurIPS 2020.
 
 安全多方计算代码python版本 https://blog.csdn.net/zhuiyunzhugang/article/details/108983850
+
+Conclave https://github.com/multiparty/conclave
+- (EuroSys '19) Conclave: secure multi-party computation on big data https://dl.acm.org/doi/10.1145/3302424.3303982
