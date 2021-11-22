@@ -1,4 +1,12 @@
 
+# 官方
+
+Configuration https://pip.pypa.io/en/stable/topics/configuration/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他
+
 【Python基础】PIP 镜像源配置轻松搞定 - DavyCloud的文章 - 知乎 https://zhuanlan.zhihu.com/p/106697938
 - > **编辑配置**
   * > 在命令行直接执行 `pip config edit` 会自动为我们打开配置文件，但是在 Windows 环境下还不行：
@@ -20,3 +28,7 @@ Python 修改 pip 源为国内源 - 花晓星辰的文章 - 知乎 https://zhuan
   ```sh
   pip install markdown -i https://pypi.tuna.tsinghua.edu.cn/simple
   ```
+
+Ubuntu 配置 pip.conf 添加国内源 https://www.jianshu.com/p/ac4df573b9d9
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

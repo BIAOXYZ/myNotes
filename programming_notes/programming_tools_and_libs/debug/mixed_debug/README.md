@@ -4,3 +4,5 @@ Example debugging mixed Python C++ in VS Code https://nadiah.org/2020/03/01/exam
 DebuggingWithGdb https://wiki.python.org/moin/DebuggingWithGdb
 
 Python Developer's Guide -- gdb Support https://devguide.python.org/gdb/
+
+python和C++联合调试 https://www.cnblogs.com/justinzhang/p/9282334.html
