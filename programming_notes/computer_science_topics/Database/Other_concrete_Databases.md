@@ -96,6 +96,12 @@ Amazon DynamoDB https://en.wikipedia.org/wiki/Amazon_DynamoDB
 【from draveness】:
 - 分布式键值存储 Dynamo 的实现原理 https://draveness.me/dynamo
 
+# Clickhouse
+
+Clickhouse基础知识 https://blog.csdn.net/Yanxu_Jin/article/details/108829848
+
+ClickHouse Server in 1 minute with Docker https://dev.to/titronium/clickhouse-server-in-1-minute-with-docker-4gf2
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # not full-fledged DBs
