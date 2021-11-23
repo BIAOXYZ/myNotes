@@ -37,3 +37,5 @@ ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content
 - > 基于现有的语法文件和开源库，用户只要只要传入SQL字符串，就可以马上得到SQL的抽象语法树了。这里推荐使用IntelliJ IDEA，安装antlr插件后，输入SQL资源就可以可视化这棵抽象语法树，方面后续遍历抽象语法树实现自己的业务逻辑。
 
 使用antlr4解析clickhouse sql获取表名 https://www.jianshu.com/p/1b83721e0020
+
+【python】使用Antlr4实现识别sql中的表或视图名 https://www.darkathena.top/archives/antlr4-sql-tablename
