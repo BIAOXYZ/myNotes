@@ -28,6 +28,8 @@ SQL With As 用法 https://www.cnblogs.com/linyijia/p/11238992.html
 
 # 其他关键词或函数
 
+PostgreSQL SUM Function https://www.postgresqltutorial.com/postgresql-sum-function/
+
 MySQL ifnull()函数 https://www.yiibai.com/mysql/ifnull.html
 
 # 其他
