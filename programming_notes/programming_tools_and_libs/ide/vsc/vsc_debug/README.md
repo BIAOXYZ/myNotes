@@ -24,3 +24,11 @@ VSCode 调试器 - 让 Step Into 进入底层代码 - 李森科在zhihu的文章
 How to disable "just my code" setting in VSCode debugger? https://stackoverflow.com/questions/52980448/how-to-disable-just-my-code-setting-in-vscode-debugger
 
 VS code 停用 justMyCode 调试库代码 https://blog.csdn.net/zywvvd/article/details/113753248
+
+## debug启动时的路径问题
+
+vscode中使用python相对路径问题? - 知乎 https://www.zhihu.com/question/313379182
+- vscode中使用python相对路径问题? - Achuan-2的回答 - 知乎 https://www.zhihu.com/question/313379182/answer/986009654
+  * > 更改 `launch.json` 设置，在configurations中加入语句 `"cwd": "${fileDirname}"` 即可变成常规的相对路径模式
+- vscode中使用python相对路径问题? - tnnmigga的回答 - 知乎 https://www.zhihu.com/question/313379182/answer/606965877
+  * > 这不是由vscode造成的，是python插件的锅，本质上是命令行差异造成 <br> 区别就在于***pycharm是会先cd到文件目录后运行，vscode的python插件是直接绝对路径运行*** <br> 解决方法是手动 `chdir` 到指定目录 <br> 如果是改变到执行程序路径的话，windows下在读写文件以前添加一句 `os.chdir(sys.path[0])`。
