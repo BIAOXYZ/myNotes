@@ -50,6 +50,12 @@ SFC游戏《GS美神：极乐大作战》同名动漫改编的一款动作游戏
 
 # 街机
 
+这些网站简直堪称怀旧游戏博物馆！ https://www.bilibili.com/video/BV1fY411x71q
+- 1.《Return 8090》 http://www.return8090.com  界面舒适，类别超全（包括FC\CBA\NDS\街机等等）
+- 2.《小霸王其乐无穷》https://www.yikm.net  FC游戏较多，可用金手指
+- 3.《在线DOS游戏》  https://dos.zczc.cz  1898款在线DOS游戏，仙剑奇侠传、金庸群侠传等等在线玩
+- 4.《famicn》  http://www.famicn.com  简直是家用机掌机游戏博物馆！各种我叫不上名字的国产掌机游戏这里都有，我甚至在这里找到了十几年前的学习机字根练习游戏！
+
 吊打4399，这些在线游戏网站你必须收藏！ https://www.bilibili.com/video/BV18h411B79s
 
 2021年我们可以在网页上玩到什么游戏？ https://www.bilibili.com/video/BV12N411f7Es
@@ -60,11 +66,7 @@ SFC游戏《GS美神：极乐大作战》同名动漫改编的一款动作游戏
 - https://kbhgames.com/
   * 复古专区 https://kbhgames.com/tag/retro
     + Sonic 2 Anniversary Edition https://kbhgames.com/game/sonic-2-anniversary-edition 【嘿嘿，终于找到了，有个小狐狸一直跟着索尼克的版本，贼萌了。】
-- 畅玩空间 https://play.wo1wan.com/
-
-街机、FC、GBA，经典老游戏可以在线联机啦 https://mp.weixin.qq.com/s/UMECGamtHDl55qMIh-PdVA
-- > 畅玩空间是一款可以在电脑、手机上联机玩怀旧经典小游戏的服务，支持电脑浏览器、微信小程序，拥有 Windows 客户端，免费、即开即玩、可联机，让你摸鱼更愉快。
-- > 畅玩空间： https://www.wo1wan.com/
+- 畅玩空间 https://play.wo1wan.com/ || https://www.wo1wan.com/
 
 有没有能直接在线玩的街机模拟器（NEOGEO游戏模拟器）？ - 知乎 https://www.zhihu.com/question/22548262
 - 小霸王，其乐无穷 https://www.yikm.net/
