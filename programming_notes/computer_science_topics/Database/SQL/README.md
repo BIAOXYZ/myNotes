@@ -20,6 +20,12 @@ Difference between JOIN and INNER JOIN https://stackoverflow.com/questions/56562
 SQL LIMIT https://www.sqltutorial.org/sql-limit/
 - > The `OFFSET` clause is optional. If you omit it, the query will return the "row_count" rows from the first row returned by the `SELECT` clause.
 
+# Order by
+
+## ASC、DESC
+
+MySQL数据排序asc、desc https://blog.csdn.net/qq_37923253/article/details/79688313
+
 # With
 
 WITH common_table_expression (Transact-SQL) https://docs.microsoft.com/en-us/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver15

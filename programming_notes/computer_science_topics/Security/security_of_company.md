@@ -94,6 +94,8 @@ OpenMined https://blog.openmined.org/
 
 PySyft https://github.com/OpenMined/PySyft
 
+TenSEAL https://github.com/OpenMined/TenSEAL
+
 ## 矩阵元
 
 JUGO：
