@@ -41,6 +41,8 @@ iterm2有什么酷功能？ - 知乎 https://www.zhihu.com/question/27447370
 
 Iterm2快捷键 - 東方海竹的文章 - 知乎 https://zhuanlan.zhihu.com/p/275858155
 
+### 多个窗口同时执行命令
+
 iTerm2多个窗口同时输入命令 https://blog.csdn.net/fangfu123/article/details/105659155
 - > 使用iTerm2的时候，有时候我们会打开多个终端窗口，去执行命令。如果需要多个窗口同时执行相同的命令。那我们岂不是每个终端都要上去敲一下。其实iTerm2支持多窗口同时输入命令。
 - > 打开这个功能的快捷键就是：
@@ -49,7 +51,7 @@ iTerm2多个窗口同时输入命令 https://blog.csdn.net/fangfu123/article/det
 - > 关闭其实也很简单。再次输入刚刚打开的那个命令就行了。
   * > `⌘(command) + ⇧(shift) + i`
 
-### 插件
+### 官方增强插件（脚本）
 
 Shell Integration https://iterm2.com/documentation-shell-integration.html
 - > The easiest way to install shell integration is to select the `iTerm2` > `Install Shell Integration` menu item. It will download and run a shell script as described below. You should do this on every host you ssh to as well as your local machine. The following shells are supported: tcsh, zsh, bash, and fish 2.3 or later.

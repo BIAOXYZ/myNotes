@@ -11,8 +11,6 @@ Real Python Materials https://github.com/realpython/materials
 
 Python import: Advanced Techniques and Tips https://realpython.com/python-import/
 
-:ballot_box_with_check: How to Use Python Lambda Functions https://realpython.com/python-lambda/
-
 Python eval(): Evaluate Expressions Dynamically https://realpython.com/python-eval-function/
 
 How to Use sorted() and sort() in Python https://realpython.com/python-sort/
