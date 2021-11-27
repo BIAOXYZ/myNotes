@@ -36,6 +36,8 @@ iterm2有什么酷功能？ - 知乎 https://www.zhihu.com/question/27447370
     + > 一个标签页中开的窗口太多，有时候会找不到当前的鼠标，⌘+/找到它。
   * > mosh
     + > mosh 是全平台更好的 ssh 工具，更健壮，支持断续连接，支持除了 iPhone 之外的几乎任何平台。（iOS 让人爱不释手的优点，也正是它让人恨之入骨的缺点）
+- iterm2有什么酷功能？ - gtzs的回答 - 知乎 https://www.zhihu.com/question/27447370/answer/104372111
+  * > 最新版的3.0 有两个很酷的新功能： Shell Integration 和 Utilities Package。
 
 Iterm2快捷键 - 東方海竹的文章 - 知乎 https://zhuanlan.zhihu.com/p/275858155
 
@@ -46,6 +48,13 @@ iTerm2多个窗口同时输入命令 https://blog.csdn.net/fangfu123/article/det
   * > 会弹出告警信息，点OK确认。然后我们在第一个窗口中输入命令，会发现后面几个窗口都会自动同步输入命令。这个在配置调试k8s集群的时候会非常好用。
 - > 关闭其实也很简单。再次输入刚刚打开的那个命令就行了。
   * > `⌘(command) + ⇧(shift) + i`
+
+### 插件
+
+Shell Integration https://iterm2.com/documentation-shell-integration.html
+- > The easiest way to install shell integration is to select the `iTerm2` > `Install Shell Integration` menu item. It will download and run a shell script as described below. You should do this on every host you ssh to as well as your local machine. The following shells are supported: tcsh, zsh, bash, and fish 2.3 or later.
+
+Utilities https://iterm2.com/documentation-utilities.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
