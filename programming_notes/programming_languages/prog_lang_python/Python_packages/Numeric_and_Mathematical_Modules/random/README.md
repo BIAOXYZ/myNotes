@@ -20,6 +20,6 @@ Python基础随机数库——random https://www.cnblogs.com/diantong/p/12518218
 - `381. O(1) 时间插入、删除和获取随机元素 - 允许重复` https://leetcode-cn.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
 - `384. 打乱数组` https://leetcode-cn.com/problems/shuffle-an-array/
 - `528. 按权重随机选择` https://leetcode-cn.com/problems/random-pick-with-weight/
+- `519. 随机翻转矩阵` https://leetcode-cn.com/problems/random-flip-matrix/solution/sui-ji-fan-zhuan-ju-zhen-by-leetcode-sol-pfmr/
 - 有些（跟随机性、概率、采样等）相关，但是没用到这个库的：
   * `470. 用 Rand7() 实现 Rand10()` https://leetcode-cn.com/problems/implement-rand10-using-rand7/
-  * `519. 随机翻转矩阵` https://leetcode-cn.com/problems/random-flip-matrix/solution/sui-ji-fan-zhuan-ju-zhen-by-leetcode-sol-pfmr/
