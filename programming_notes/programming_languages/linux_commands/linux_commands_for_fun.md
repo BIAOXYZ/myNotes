@@ -2,7 +2,7 @@
 
 能从远程获得乐趣的 Linux 命令 https://mp.weixin.qq.com/s/daeBClgYBmCxX8msTCNa0g || https://linux.cn/article-10437-1-rel.html
 - > 接下来，Opensource.com 的撰稿人 Manuel Dewald 提出了一种从终端获取当地天气的方法。它很简单，你只需安装 curl（或者，wget）。
-  >> curl wttr.in
+  >> ***`curl wttr.in`***
 ```
 root@cloudsec1 ~ $ curl wttr.in
 Weather report: Durham, United States
@@ -75,3 +75,7 @@ $ git log -1 | cowsay -f dragon-and-cow | lolcat
 - [1] - http://en.wikipedia.org/wiki/Fortune_(Unix)
 - [2] - http://github.com/busyloop/lolcat
 - [3] - http://www.figlet.org/
+
+# cowsay
+
+使用 cowsay 命令的 3 种有趣方式 | Linux 中国 https://mp.weixin.qq.com/s/OwfF65Uyb0tHbe6g6bTmPg
