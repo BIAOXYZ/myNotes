@@ -12,8 +12,10 @@ Python import: Advanced Techniques and Tips https://realpython.com/python-import
     ['__doc__', ..., 'nan', 'pi', 'pow', ...]
     ```
     > Using `dir()` without any argument shows ***what’s in the global namespace***. To see the contents of the `math` namespace, you use `dir(math)`.
+- > **Modules**
+  * The Python.org glossary defines ***`module`*** as follows: An object that serves as an organizational unit of Python code. ***Modules have a namespace containing arbitrary Python objects. Modules are loaded into Python by the process of importing***.
 - > **Packages**
-  * > You can use a package to further organize your modules. The Python.org glossary defines **package** as follows: A Python module which can contain submodules or recursively, subpackages. Technically, ***a package is a Python module with an `__path__` attribute***.
+  * > You can use a package to further organize your modules. The Python.org glossary defines **package** as follows: A Python module which can contain submodules or recursively, subpackages. Technically, ***a `package` is a Python `module` with an `__path__` attribute***.
   * > In general, ***submodules and subpackages aren’t imported when you import a package. However, you can use `__init__.py` to include any or all submodules and subpackages if you want***. To show a few examples of this behavior, you’ll create a package for saying [Hello world【这个网站终结了我之前的 `full-stack_hello-world_software_engineer` 项目】](http://helloworldcollection.de/) in a few different languages. The package will consist of the following directories and files:
     ```sh
     world/
