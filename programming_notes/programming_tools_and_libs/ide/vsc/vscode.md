@@ -67,6 +67,7 @@ English环境下
 点击菜单栏 View--> Toggle Word Wrap 选项.
 或者直接 快捷键 : alt + Z
 ```
+>> //notes：补充：在Mac下快捷键为：`Option + Z`
 
 ## 向下复制一行代码
 
