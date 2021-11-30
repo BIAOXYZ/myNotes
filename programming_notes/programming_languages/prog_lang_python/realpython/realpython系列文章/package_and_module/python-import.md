@@ -65,4 +65,13 @@ Python import: Advanced Techniques and Tips https://realpython.com/python-import
     3.141592653589793
     ```
     > You rarely need to interact with `.__dict__` directly. <br> Similarly, Python’s global namespace is also a dictionary. You can access it through `globals()`.
-  * > It’s fairly common ***to import subpackages and submodules in an `__init__.py` file*** to make them more readily available to your users. You can see one example of this in the popular requests package.
+  * > It’s fairly common ***to import subpackages and submodules in an `__init__.py` file*** to make them more readily available to your users. You can see [one example of this](https://github.com/psf/requests/blob/v2.23.0/requests/__init__.py#L112) in the popular requests package.
+- > **Absolute and Relative Imports**
+  * > The [PEP 8 style guide]() recommends using absolute imports in general. However, relative imports are an alternative for organizing package hierarchies. For more information, see [Absolute vs Relative Imports in Python](https://realpython.com/absolute-vs-relative-python-imports/).
+- > **Python’s Import Path**
+  * > How does Python find the modules and packages it imports? You’ll see more details about the mechanics of the Python import system [later](). For now, just know that ***Python looks for modules and packages in its [import path](https://docs.python.org/3/glossary.html#term-import-path)***. This is ***a list of locations*** that are searched for modules to import.
+  * > **Note**: When you type import something, Python will look for something a few different places before searching the import path. <br> In particular, it’ll look in a module cache to see if something has already been imported, and it’ll search among the built-in modules. <br> You’ll learn more about the full Python import machinery in a [later section]().
+  * > You can inspect Python’s import path by printing `sys.path`. Broadly speaking, this list will contain three different kinds of locations:
+    + > 1. The directory of the current script (or the current directory if there’s no script, such as when Python is running interactively)
+    + > 2. The contents of the `PYTHONPATH` environment variable
+    + > 3. Other, installation-dependent directories
