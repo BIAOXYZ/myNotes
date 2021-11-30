@@ -57,3 +57,12 @@ Python import: Advanced Techniques and Tips https://realpython.com/python-import
     from . import africa
     ```
     > Note that `world/__init__.py` imports only `africa` and not `europe`. Similarly, `world/africa/__init__.py` doesn’t import anything, while `world/europe/__init__.py` imports `greece` and `norway` but not `spain`. Each country module will print a greeting when it’s imported.
+  * > Remember, ***importing a module both loads the contents and creates a namespace containing the contents***. The last few examples show that it’s possible for the same module to be part of different namespaces.
+  * > **Technical Detail**: The module namespace is implemented as a [Python dictionary]() and is available at the `.__dict__` attribute:
+    ```py
+    >>> import math
+    >>> math.__dict__["pi"]
+    3.141592653589793
+    ```
+    > You rarely need to interact with `.__dict__` directly. <br> Similarly, Python’s global namespace is also a dictionary. You can access it through `globals()`.
+  * > It’s fairly common ***to import subpackages and submodules in an `__init__.py` file*** to make them more readily available to your users. You can see one example of this in the popular requests package.
