@@ -53,3 +53,12 @@ Python import常见用法 & 父目录引用子目录py文件 & 子目录引用�
 - > **总结起来两句话**：
   * > 若要引用子目录上的py文件（例如 `test_import_1.py` 要引用 `module_1文件夹` 下的 `test_import_2.py`），需要***将被引文件所在目录升级为为模块***，即在被引文件的目录下创建 `__init__.py`。
   * > 若要引用父目录上的py文件（例如 `test_import_2.py` 要引用 `父目录文件夹` 下的 `test_import_1.py`），需要***将该父目录添加到当前文件的 `sys.path` 中***。
+
+# from stackexchange.com
+
+Relative imports - ModuleNotFoundError: No module named x https://stackoverflow.com/questions/43728431/relative-imports-modulenotfounderror-no-module-named-x
+- https://stackoverflow.com/questions/43728431/relative-imports-modulenotfounderror-no-module-named-x/43859946#43859946
+
+Import a module from a relative path https://stackoverflow.com/questions/279237/import-a-module-from-a-relative-path
+
+Relative imports in Python 3 https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
