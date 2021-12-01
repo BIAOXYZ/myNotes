@@ -136,6 +136,8 @@ sudo apt-get install texinfo || yum install -y texinfo
 > 环境： https://www.katacoda.com/courses/centos/playground
 
 ```sh
+# docker run --name pgdebug -it --privileged centos:7 bash
+
 #// 一、极简步骤版：上来就确定把依赖做齐，然后直接一次装好。
 yum -y install readline-devel zlib-devel bison flex git gcc make
 yum install epel-release -y 
@@ -254,9 +256,11 @@ yum install -y ddd
 # Ubuntu安装 pg8.4.1（这是《PostgreSQL数据库内核分析》书里用的版本）
 
 ```sh
-# docker run --name pgdebug -it centos:7 bash
-# docker run --name pgdebug -it ubuntu:16.04 bash
-# 有些高版本 ubutun 里没有 libreadline6 了，就把它去掉好了。
+# docker run --name pgdebug -it --privileged ubuntu:16.04 bash
+# 这里 --privileged 不能少，否则容器里无法用 gdb。。。参见：
+# 《docker下使用gdb调试》 https://blog.csdn.net/counsellor/article/details/105298332
+
+# 有些高版本 ubutun 里没有 libreadline6 了，就把它去掉好了。这里确定16.04是有的。
 apt install -y libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb
 
 useradd -m -d /home/pguser pguser
