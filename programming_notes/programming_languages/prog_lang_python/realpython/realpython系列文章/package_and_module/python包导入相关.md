@@ -58,6 +58,34 @@ Python import常见用法 & 父目录引用子目录py文件 & 子目录引用�
   * > 若要引用子目录上的py文件（例如 `test_import_1.py` 要引用 `module_1文件夹` 下的 `test_import_2.py`），需要***将被引文件所在目录升级为为模块***，即在被引文件的目录下创建 `__init__.py`。
   * > 若要引用父目录上的py文件（例如 `test_import_2.py` 要引用 `父目录文件夹` 下的 `test_import_1.py`），需要***将该父目录添加到当前文件的 `sys.path` 中***。
 
+[Python]解决python3中关于import的疑难杂症 https://segmentfault.com/a/1190000039773026
+
+python import 详解 https://www.jianshu.com/p/dacbed54d063
+
+# 绝对（路径）导入 V.S. 相对（路径）导入
+
+python相对路径引用问题的解决 - 陈生的文章 - 知乎 https://zhuanlan.zhihu.com/p/78498638
+- > **4.One More Thing**
+  * > 当你读到这里，已经理解了造成上述问题的原因之后，你应该还能想到另一种解决办法 —— 告诉python解释器额外的路径信息。具体做法就是将路径添加到 `sys.path` 中：
+    ```py
+    # from utils.evaluation_utils xx
+    # raise ERROR 
+    >>> import sys
+    >>> import os
+
+    # your project dir
+    >>> PROJ_DIR = 'xxxx'
+
+    # append to sys.path
+    >>> sys.path.append(os.path.join(PROJ_DIR, 'nmt'))
+
+    # no ERROR
+    from nmt.utils.evaluation_utils xx
+    ```
+>> 【[:star:][`*`]】 //notes：添加到 `sys.path` 是个司空见惯的手段，不足为奇。但是项目比较复杂时要添加的太多了。我是看了这人上面这段示例代码，想到可以只把项目根目录添加到 `sys.path`，然后后面所有的项目相关导入都用绝对路径的导入形式。PS：相对（路径）导入虽然看起来更美观些，但是容易出错，还是尽量用绝对（路径）导入吧。
+
+Python：相对导入与绝对导入（import）、os.path、__file__ https://www.cnblogs.com/qi-yuan-008/p/12833189.html
+
 # from stackexchange.com
 
 Relative imports - ModuleNotFoundError: No module named x https://stackoverflow.com/questions/43728431/relative-imports-modulenotfounderror-no-module-named-x
@@ -70,3 +98,5 @@ Relative imports in Python 3 https://stackoverflow.com/questions/16981921/relati
 How to list imported modules? https://stackoverflow.com/questions/4858100/how-to-list-imported-modules
 
 __init__.py is not turning the module into a package https://stackoverflow.com/questions/59915710/init-py-is-not-turning-the-module-into-a-package
+
+How to import a module given the full path? https://stackoverflow.com/questions/67631/how-to-import-a-module-given-the-full-path
