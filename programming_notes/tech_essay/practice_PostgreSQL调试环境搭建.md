@@ -307,3 +307,27 @@ after upgrade gdb won't attach to process https://askubuntu.com/questions/41629/
     ```conf
     kernel.yama.ptrace_scope = 0
     ```
+
+# Dockerfile
+
+```
+FROM ubuntu:16.04
+RUN apt update
+RUN apt install -y libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb
+
+RUN useradd -m -d /home/pguser pguser
+RUN echo "pguser:123456" | chpasswd
+RUN su - pguser
+
+RUN mkdir /home/pguser/pgdir && cd /home/pguser/pgdir/
+RUN git clone https://github.com/postgres/postgres.git
+RUN cd /home/pguser/pgdir/postgres/
+RUN git checkout -b REL8_4_STABLE origin/REL8_4_STABLE
+
+RUN ./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+RUN make -sj
+RUN make install
+
+RUN cd /home/pguser/pgdir/pgsql/bin/
+RUN ./initdb -D /home/pguser/pgdir/pgdata
+```
