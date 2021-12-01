@@ -1,5 +1,7 @@
 
 Python 3.x | 史上最详解的 导入（import） https://blog.csdn.net/weixin_38256474/article/details/81228492
+- > 在使用相对导入时，可能遇到ValueError: Attempted relative import beyond toplevel package <br> 解决方案：参考这篇文章，[链接]()。
+  >> 解决python相对导入出现错误：Attempted relative import beyond toplevel package https://blog.csdn.net/SKY453589103/article/details/78863050
 
 import 问题浅谈 - 程序员阿德的文章 - 知乎 https://zhuanlan.zhihu.com/p/69099185
 - > `sys.path.append(os.path.dirname(__file__))` 表示的含义如下：
