@@ -255,7 +255,8 @@ yum install -y ddd
 
 ```sh
 # docker run --name pgdebug -it centos:7 bash
-
+# docker run --name pgdebug -it ubuntu:16.04 bash
+# 有些高版本 ubutun 里没有 libreadline6 了，就把它去掉好了。
 apt install -y libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb
 
 useradd -m -d /home/pguser pguser
