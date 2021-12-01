@@ -1,4 +1,6 @@
 
+Python 3.x | 史上最详解的 导入（import） https://blog.csdn.net/weixin_38256474/article/details/81228492
+
 import 问题浅谈 - 程序员阿德的文章 - 知乎 https://zhuanlan.zhihu.com/p/69099185
 - > `sys.path.append(os.path.dirname(__file__))` 表示的含义如下：
   * > 使用 `sys.path.append` 将某路径添加到 `sys.path` 中。
@@ -62,3 +64,7 @@ Relative imports - ModuleNotFoundError: No module named x https://stackoverflow.
 Import a module from a relative path https://stackoverflow.com/questions/279237/import-a-module-from-a-relative-path
 
 Relative imports in Python 3 https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
+
+How to list imported modules? https://stackoverflow.com/questions/4858100/how-to-list-imported-modules
+
+__init__.py is not turning the module into a package https://stackoverflow.com/questions/59915710/init-py-is-not-turning-the-module-into-a-package
