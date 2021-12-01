@@ -116,3 +116,9 @@ y priority 内核调度优先级
     > 它应该在输出中显示systemd或sysv（或类似的东西）。
 - > 如何解决'System has not been booted with systemd'错误？
   * > 答案很简单，就是不要使用systemctl命令，而是使用等同的sysvinit命令。相反，可以使用对应的sysvinit命令。这并不复杂，而且这两个命令的语法有些相似。这张表应该可以帮助你。
+
+# 问题
+
+ps command doesn't work in docker container https://stackoverflow.com/questions/26982274/ps-command-doesnt-work-in-docker-container
+- > `apt-get update && apt-get install -y procps`
+  >> //notes：才知道 `ps` 对应的包名叫 `procps`。
