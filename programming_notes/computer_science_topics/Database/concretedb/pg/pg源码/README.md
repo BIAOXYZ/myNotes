@@ -15,6 +15,7 @@ https://searchcode.com/codesearch/view/5324466/
 <<PG 内存上下文>>
 http://www.zhangxiaojian.name/pg-%E5%86%85%E5%AD%98%E4%B8%8A%E4%B8%8B%E6%96%87/
 
+postgresql内核开发 https://blog.csdn.net/postgres20/category_6538868.html
 - postgresql源码阅读快速上手 http://blog.csdn.net/postgres20/article/details/53354330
 - postgresql内核语法解析器详解 https://blog.csdn.net/postgres20/article/details/54709860
 
@@ -29,17 +30,16 @@ PostgreSQL B+Tree论文解读1 - 北侠的文章 - 知乎 https://zhuanlan.zhihu
   * > 《Efficient Locking for Concurrent Operations on B-Trees》：高并发读写的原理；
   * > 《A SYMMETRIC CONCURRENT B-TREE ALGORITHM》：高并发删除的原理；
 
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
-# flying-tiger
-
-随笔分类 - postgresql https://www.cnblogs.com/flying-tiger/category/881004.html
-- 跟我一起读postgresql源码(一)——psql命令 http://www.cnblogs.com/flying-tiger/p/6004314.html
-- 跟我一起读postgresql源码(二)——Parser(查询分析模块) https://www.cnblogs.com/flying-tiger/p/6021107.html || http://blog.csdn.net/zdy0_2004/article/details/53106260
-- 跟我一起读postgresql源码(六)——Executor(查询执行模块之——查询执行策略) https://www.cnblogs.com/flying-tiger/p/6100794.html
+文章 https://blog.csdn.net/qq_37517281?type=blog
+- PostgreSql源码阅读笔记9（参考husthxd在ITPUB的博客） https://blog.csdn.net/qq_37517281/article/details/104484006
+- PostgreSql源码阅读笔记10（参考husthxd在ITPUB的博客） https://blog.csdn.net/qq_37517281/article/details/105524880
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # leehao
 
 PostgreSQL执行引擎简介 http://www.leehao.org/postgresql-executioneng/
+
+# husthxd
+
+数据库 http://blog.itpub.net/6906/cid-184206/list-1/
