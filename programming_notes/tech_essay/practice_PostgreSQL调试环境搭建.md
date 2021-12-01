@@ -138,6 +138,8 @@ sudo apt-get install texinfo || yum install -y texinfo
 ```sh
 #// 一、极简步骤版：上来就确定把依赖做齐，然后直接一次装好。
 yum -y install readline-devel zlib-devel bison flex git gcc make
+yum install epel-release -y 
+yum install -y cgdb
 
 useradd pguser
 echo 123456 | passwd --stdin pguser
@@ -249,3 +251,54 @@ b exec_simple_query
 yum install -y ddd
 ```
 
+# Ubuntu安装 pg8.4.1（这是《PostgreSQL数据库内核分析》书里用的版本）
+
+```sh
+# docker run --name pgdebug -it centos:7 bash
+
+apt install -y libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb
+
+useradd -m -d /home/pguser pguser
+echo "pguser:123456" | chpasswd
+su - pguser
+
+mkdir ~/pgdir
+cd pgdir/
+git clone https://github.com/postgres/postgres.git
+cd postgres/
+#git checkout -b REL8_4_1 origin/REL8_4_1
+git checkout -b REL8_4_STABLE origin/REL8_4_STABLE
+
+./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+make -sj8
+make install
+
+cd /home/pguser/pgdir/pgsql/bin/
+./initdb -D /home/pguser/pgdir/pgdata
+./pg_ctl start -D /home/pguser/pgdir/pgdata/
+
+./psql -d postgres
+```
+
+这次碰到了一个新的问题，症状是用pguser用户attach进程后没有代码（其实就没有attach成功），提示信息大概是这样的：
+```console
+Could not attach to process （pid）. If your uid matches the uid of the target
+process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try
+again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf
+```
+本质是pguser权限不够，用root就可以attach上（但是pg必须在非root下才能运行，所以过去都是pguser起连接，再开个窗口用pguser挂上调试）。解决方法如下：
+
+after upgrade gdb won't attach to process https://askubuntu.com/questions/41629/after-upgrade-gdb-wont-attach-to-process
+- https://askubuntu.com/questions/41629/after-upgrade-gdb-wont-attach-to-process/41656#41656
+  * > You can temporarily disable this restriction (and revert to the old behaviour allowing your user to ptrace (gdb) any of their other processes) by doing:
+    ```sh
+    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+    ```
+  * > To permanently allow it edit `/etc/sysctl.d/10-ptrace.conf` and change the line:
+    ```conf
+    kernel.yama.ptrace_scope = 1
+    ```
+    > To:
+    ```conf
+    kernel.yama.ptrace_scope = 0
+    ```
