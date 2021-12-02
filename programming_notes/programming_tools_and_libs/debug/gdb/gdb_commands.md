@@ -357,12 +357,6 @@ http://blog.csdn.net/gatieme/article/details/63254211
 GDB实用插件(peda, gef, gdbinit)全解
 https://blog.csdn.net/gatieme/article/details/63254211
 
-终端调试哪家强？ - 韦易笑的文章 - 知乎
-http://zhuanlan.zhihu.com/p/32843449
-- gdbgui
-- Emacs GDB
-- .gdbinit 上配置 peda
-
 存在实现了后退功能的调试器吗？这种功能在实现上有什么难点呢？ - 知乎
 https://www.zhihu.com/question/57574574
 > 常用 GDB 命令中文速览 - Linux中国的文章 - 知乎 http://zhuanlan.zhihu.com/p/29663631
@@ -422,40 +416,6 @@ GDB命令基础，让你的程序bug无处躲藏 https://deepzz.com/post/gdb-deb
 # 其他调试工具
 
 Linux调试工具 http://blog.csdn.net/hzrandd/article/details/50849329
-
-### cgdb
-
-cgdb - the curses debugger http://cgdb.github.io/
-```
-$ ./configure --prefix=/usr/local
-$ make
-$ sudo make install
-```
-
-CGDB中文手册 https://legacy.gitbook.com/book/leeyiw/cgdb-manual-in-chinese/details
-> 这个手册不全，看的时候注意。不过其实cgdb也不太需要手册。命令和gdb通用，主要就是按ESC键进入上层代码窗口，按i键进入下层gdb命令窗口。然后按/键搜索之类的。可以参见这个书的"CGDB命令部分"
-
-## DDD (Data Display Debugger)
-
-```sh
-yum -y groupinstall "X Window System"
-mkdir dddpackage
-cd dddpackage/
-wget https://rpmfind.net/linux/epel/7/x86_64/Packages/d/ddd-3.3.12-20.el7.x86_64.rpm
-yum install -y ddd-3.3.12-20.el7.x86_64.rpm
-```
-
-GNU DDD https://www.gnu.org/software/ddd/
-- https://www.gnu.org/software/ddd/#Getting
-  * > Where do I get DDD binaries? <br> The FSF does not distribute DDD binaries. You can ask for help if you need technical support. <br> DDD binaries for GNU/Linux are typically available via your GNU/Linux distributor:
-    + > DDD packages for Debian GNU/Linux are found [here](https://packages.debian.org/sid/devel/ddd).
-    + > DDD RPMs can be found in https://rpmfind.net/linux/rpm2html/search.php?query=ddd
-
-宇宙最强调试器DDD（Data Display Debugger）
-http://blog.csdn.net/mirage1993/article/details/50883824
-
-离线安装ddd调试器
-http://blog.csdn.net/mifan88/article/details/8913684
 
 ### VS
 
