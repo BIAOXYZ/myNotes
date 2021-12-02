@@ -430,11 +430,6 @@ https://undo.io/resources/presentations/cppcon-2015-greg-law-give-me-15-minutes-
 >来源是Liam Huang翻译的一篇文章 <GDB 入门教程：调试 ncurses 相关 bug 的完整范例 >  https://liam0205.me/2017/05/27/tutorial-to-GDB-taking-ncurses-as-an-example/
 >https://undo.io/products/undodb/
 
-### gdbgui
-
-终端调试哪家强？ - 韦易笑的文章 - 知乎 https://zhuanlan.zhihu.com/p/32843449
-- gdbgui https://www.gdbgui.com/
-
 ### xxgdb
 
 xxgdb - X window system interface to the gdb debugger. http://manpages.ubuntu.com/manpages/bionic/man1/xxgdb.1.html

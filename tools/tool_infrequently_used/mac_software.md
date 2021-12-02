@@ -174,6 +174,14 @@ macOS 下使用 Docker 搭建 ubuntu 环境 - 十里的文章 - 知乎 https://z
 
 `brew install libtool automake git curl`
 
+### `gdb`
+
+除了 `brew install gdb` 安装一下，还得搞个证书，麻烦得一批，垃圾。
+
+在Mac安装最新gdb的详细教程，含可能遇到的所有坑(网上最新教程) https://blog.csdn.net/qq_33154343/article/details/104784641
+- > 出现如下如下代码： `Unable to find Mach task port for process-id 2358: (os/kern) failure (0x5). (please check gdb is codesigned - see taskgated(8))`
+  >> 解决方法：使用 sudo 权限 ，运行命令 sudo gdb mainApp 调试
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac Anaconda
