@@ -260,6 +260,7 @@ yum install -y ddd
 # 这里 --privileged 不能少，否则容器里无法用 gdb。。。参见：
 # 《docker下使用gdb调试》 https://blog.csdn.net/counsellor/article/details/105298332
 
+apt update
 # 有些高版本 ubutun 里没有 libreadline6 了，就把它去掉好了。这里确定16.04是有的。
 apt install -y libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb
 
