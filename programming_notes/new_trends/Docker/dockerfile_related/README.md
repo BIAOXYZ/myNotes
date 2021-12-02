@@ -2,6 +2,17 @@
 # general
 
 Best practices for writing Dockerfiles https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+- > **RUN**
+  * > Always combine `RUN apt-get update` with `apt-get install` in the same `RUN` statement. For example:
+    ```dockerfile
+    RUN apt-get update && apt-get install -y \
+        package-bar \
+        package-baz \
+        package-foo  \
+        && rm -rf /var/lib/apt/lists/*
+    ```
+- > **WORKDIR**
+  * > For clarity and reliability, you should always use absolute paths for your `WORKDIR`. Also, you should ***use `WORKDIR` instead of proliferating instructions like `RUN cd … && do-something`***, which are hard to read, troubleshoot, and maintain.
 
 附录四：Dockerfile 最佳实践 https://yeasy.gitbook.io/docker_practice/appendix/best_practices
 
