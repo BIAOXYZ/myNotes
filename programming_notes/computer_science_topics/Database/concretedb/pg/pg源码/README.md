@@ -36,6 +36,8 @@ PostgreSQL B+Tree论文解读1 - 北侠的文章 - 知乎 https://zhuanlan.zhihu
 - PostgreSql源码阅读笔记9（参考husthxd在ITPUB的博客） https://blog.csdn.net/qq_37517281/article/details/104484006
 - PostgreSql源码阅读笔记10（参考husthxd在ITPUB的博客） https://blog.csdn.net/qq_37517281/article/details/105524880
 
+PostgreSQL执行路径生成的代码阅读笔记 https://www.modb.pro/db/12288
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # leehao
