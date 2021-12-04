@@ -112,3 +112,23 @@ Docker RUN vs CMD vs ENTRYPOINT https://goinbigdata.com/docker-run-vs-cmd-vs-ent
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 问题
+
+How to make builder RUN use /bin/bash instead of /bin/sh #7281 https://github.com/moby/moby/issues/7281
+- https://github.com/moby/moby/issues/7281#issuecomment-389440503
+
+How to use sudo inside a docker container? https://stackoverflow.com/questions/25845538/how-to-use-sudo-inside-a-docker-container
+- https://stackoverflow.com/questions/25845538/how-to-use-sudo-inside-a-docker-container/25908200#25908200
+  * > Just got it. As regan pointed out, I had to add the user to the sudoers group. But the main reason was I'd forgotten to update the repositories cache, so apt-get couldn't find the sudo package. It's working now. Here's the completed code:
+    ```dockerfile
+    FROM ubuntu:12.04
+    
+    RUN apt-get update && \
+          apt-get -y install sudo
+    
+    RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+    
+    USER docker
+    CMD /bin/bash
+    ```
