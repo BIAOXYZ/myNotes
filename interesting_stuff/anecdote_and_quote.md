@@ -55,6 +55,9 @@ Mark Twain https://en.wikiquote.org/wiki/Mark_Twain
 - Misattributed
   * ~~`Censorship is telling a man he can't have a steak just because a baby can't chew it.`~~ <br> Often attributed to Twain online, but unsourced. Alternate source: "The whole principle [of censorship] is wrong. It's like demanding that grown men live on skim milk because the baby can't have steak." — Robert Heinlein, The Man Who Sold the Moon, 1951, p. 188.
 
+托马斯·约瑟夫·唐宁 https://zh.wikipedia.org/wiki/%E6%89%98%E9%A9%AC%E6%96%AF%C2%B7%E7%BA%A6%E7%91%9F%E5%A4%AB%C2%B7%E5%94%90%E5%AE%81 || Thomas Joseph Dunning https://en.wikipedia.org/wiki/Thomas_Dunning
+- > 马丁的《资本论》中的著名引言来自邓宁的小册子《交易的工会和罢工》如下: `如果有10%的利润，资本就会保证到处被使用；有20%的利润，资本就能活跃起来；有50%的利润，资本就会铤而走险；为了100%的利润，资本就敢践踏一切人间法律；有300%以上的利润，资本就敢犯任何罪行，甚至去冒绞首的危险。`
+
 # 科技圈
 
 John von Neumann https://en.wikiquote.org/wiki/John_von_Neumann || 约翰·冯·诺伊曼 https://zh.wikiquote.org/wiki/%E7%B4%84%E7%BF%B0%C2%B7%E9%A6%AE%C2%B7%E8%AB%BE%E4%BC%8A%E6%9B%BC
