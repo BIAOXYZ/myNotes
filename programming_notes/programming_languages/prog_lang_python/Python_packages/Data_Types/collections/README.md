@@ -233,16 +233,6 @@ defaultdict(<type 'list'>, {})
 defaultdict(None, {})
 ```
 
-# Counter
-
-Counters in Python | Set 1 (Initialization and Updation) https://www.geeksforgeeks.org/counters-in-python-set-1/
-
-Python | Counter Objects | elements() https://www.geeksforgeeks.org/python-counter-objects-elements/
-
-Counter https://pymotw.com/2/collections/counter.html
-
-Python Counter in Collections with Example https://www.guru99.com/python-counter-collections-example.html
-
 # namedtuple
 
 Write Pythonic and Clean Code With namedtuple https://realpython.com/python-namedtuple/
