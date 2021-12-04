@@ -9,3 +9,11 @@
 - > **工厂方法**
   * > 我们把工厂抽象出来用 `abc` 模块实现了一个抽象的基类AbstractFactory，这样就可以通过特定的工厂来获得特定的产品实例了：
 - > **抽象工厂**
+
+# 单例模式
+
+Python中的单例模式的几种实现方式的及优化 https://www.cnblogs.com/huchong/p/8244279.html
+
+Python实现单例模式的几种方式 https://juejin.cn/post/6993944421133713415
+
+Python单例模式(Singleton)的N种实现 - Crossin的文章 - 知乎 https://zhuanlan.zhihu.com/p/37534850

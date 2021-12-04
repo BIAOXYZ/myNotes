@@ -9,8 +9,6 @@ Real Python Materials https://github.com/realpython/materials
 
 # realpython非系列文章
 
-Python import: Advanced Techniques and Tips https://realpython.com/python-import/
-
 Python eval(): Evaluate Expressions Dynamically https://realpython.com/python-eval-function/
 
 How to Use sorted() and sort() in Python https://realpython.com/python-sort/
@@ -38,3 +36,5 @@ Python 3's f-Strings: An Improved String Formatting Syntax (Guide) https://realp
 How to Use any() in Python https://realpython.com/any-python/
 
 Building a Python C Extension Module https://realpython.com/build-python-c-extension-module/
+
+Implementing an Interface in Python https://realpython.com/python-interface/
