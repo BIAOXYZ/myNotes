@@ -387,28 +387,11 @@ gdb各种调试命令和技巧 https://www.cnblogs.com/youxin/p/4305227.html
 
 使用gdb调试程序完全教程 https://blog.csdn.net/gatieme/article/details/51671430
 
-### 带参数调试
-
-GDB调试带参数的程序 https://www.jianshu.com/p/1948eab69fe7
-```sh
-$ gdb --args ./A V1 V2 V3
-
-$ gdb ./A，进入gdb后 r V1 V2 V3
-
-$ gdb ./A，进入gdb后 设置参数set args V1 V2 V3 再直接 r。
-```
-
 ### 带外部符号表调试
 
 gdb使用symbol文件调试程序 https://www.jianshu.com/p/7050a8f8841c
 
 gdb加载调试符号（符号表) https://blog.csdn.net/weixin_45375062/article/details/115870495
-
-### 信号
-
-gdb 调试总结 https://markrepo.github.io/tools/2018/06/22/gdb/
-
-GDB命令基础，让你的程序bug无处躲藏 https://deepzz.com/post/gdb-debug.html
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
