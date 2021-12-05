@@ -313,6 +313,8 @@ after upgrade gdb won't attach to process https://askubuntu.com/questions/41629/
 
 //notes：一个教训就是千万不要忘了，任何相对路径（哪怕只是为了使用相对路径上的软件，比如 `./configure` 那句）都别涉及。
 
+//notes2：注意如果用 `cat << EOF > Dockerfile` 这类 heredoc 的话，里面的 `$` 要转义。。。
+
 ```dockerfile
 FROM ubuntu:16.04
 RUN apt update && apt install -y \ 
@@ -360,7 +362,7 @@ RUN /home/pguser/pgdir/postgres/configure --prefix=/home/pguser/pgdir/pgsql --en
 - /bin/sh: 1: ./configure: not found - dockerfile https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile
   * https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile/44452054#44452054
 
-PS：另附上过去的 ***在执行 `./configure` 那句时会报 `Permission denied` 的脚本（主要是用来对比的，不要使用）***：
+PS：另附上过去的 ***在执行 `./configure` 那句时会报 `Permission denied` 的完整的错误脚本（主要是用来对比的，不要使用！！！）***：
 ```console
 FROM ubuntu:16.04
 RUN apt update && apt install -y \ 
