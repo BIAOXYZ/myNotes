@@ -360,7 +360,7 @@ RUN /home/pguser/pgdir/postgres/configure --prefix=/home/pguser/pgdir/pgsql --en
 - /bin/sh: 1: ./configure: not found - dockerfile https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile
   * https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile/44452054#44452054
 
-PS：另附上过去的 ***会报错误的脚本（主要是用来对比的，不要使用）***：
+PS：另附上过去的 ***在执行 `./configure` 那句时会报 `Permission denied` 的脚本（主要是用来对比的，不要使用）***：
 ```console
 FROM ubuntu:16.04
 RUN apt update && apt install -y \ 
@@ -384,8 +384,8 @@ RUN /home/pguser/pgdir/postgres/configure --prefix=/home/pguser/pgdir/pgsql --en
 
 ENV PGHOME=/home/pguser/pgdir/pgsql
 ENV PGDATA=/home/pguser/pgdir/pgdata
-ENV LD_LIBRARY_PATH=LDLIBRARYPATH:{PGHOME}/lib
-ENV PATH=PATH:{PGHOME}/bin
+ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
+ENV PATH=${PATH}:${PGHOME}/bin
 
 WORKDIR /home/pguser/pgdir/pgsql/bin/
 RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
