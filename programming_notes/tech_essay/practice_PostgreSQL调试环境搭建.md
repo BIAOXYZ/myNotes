@@ -313,7 +313,55 @@ after upgrade gdb won't attach to process https://askubuntu.com/questions/41629/
 
 //notes：一个教训就是千万不要忘了，任何相对路径（哪怕只是为了使用相对路径上的软件，比如 `./configure` 那句）都别涉及。
 
+```dockerfile
+FROM ubuntu:16.04
+RUN apt update && apt install -y \ 
+    libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN useradd -m -d /home/pguser pguser \
+    && echo "pguser:123456" | chpasswd
+
+# 之前的 su - pguser 是切换不过来的，必须用dockerfile的 USER 命令来切换用户。
+USER pguser
+
+RUN mkdir /home/pguser/pgdir && cd /home/pguser/pgdir/ \
+    && git clone https://github.com/postgres/postgres.git \
+    && cd /home/pguser/pgdir/postgres/ \
+    && git checkout -b REL8_4_STABLE origin/REL8_4_STABLE
+
+# 最大的坑在 configure 这句，参加下面的笔记吧。
+WORKDIR /home/pguser/pgdir/postgres
+RUN ./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert \
+    && make -sj \
+    && make install
+
+ENV PGHOME=/home/pguser/pgdir/pgsql
+ENV PGDATA=/home/pguser/pgdir/pgdata
+ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
+ENV PATH=${PATH}:${PGHOME}/bin
+
+WORKDIR /home/pguser/pgdir/pgsql/bin/
+RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
+RUN /home/pguser/pgdir/pgsql/bin/pg_ctl start -D /home/pguser/pgdir/pgdata/
 ```
+
+## configure的权限问题
+
+之前 `./configure` 那一行用的是下面这句：
+```dockerfile
+RUN /home/pguser/pgdir/postgres/configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert \
+```
+但是不知道为什么总是报 Permission denied 错误，把 `RUN` 默认的脚本从 `sh` 换成 `bash` 也不行。然而神奇的是 ***我从失败后的镜像启动一个容器，进到容器里手动运行上述命令就可以***。。。
+
+后来查了很久，才在stackexchange上看到说是路径问题，但是其实没太想明白，不过先记在这里了。但是不管怎样，
+- Docker command fails during build, but succeeds while executed within running container https://stackoverflow.com/questions/17891669/docker-command-fails-during-build-but-succeeds-while-executed-within-running-co
+  * https://stackoverflow.com/questions/17891669/docker-command-fails-during-build-but-succeeds-while-executed-within-running-co/17891972#17891972
+- /bin/sh: 1: ./configure: not found - dockerfile https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile
+  * https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile/44452054#44452054
+
+PS：另附上过去的 ***会报错误的脚本（主要是用来对比的，不要使用）***：
+```console
 FROM ubuntu:16.04
 RUN apt update && apt install -y \ 
     libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb \
@@ -336,8 +384,8 @@ RUN /home/pguser/pgdir/postgres/configure --prefix=/home/pguser/pgdir/pgsql --en
 
 ENV PGHOME=/home/pguser/pgdir/pgsql
 ENV PGDATA=/home/pguser/pgdir/pgdata
-ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PGHOME}/lib
-ENV PATH=${PATH}:${PGHOME}/bin
+ENV LD_LIBRARY_PATH=LDLIBRARYPATH:{PGHOME}/lib
+ENV PATH=PATH:{PGHOME}/bin
 
 WORKDIR /home/pguser/pgdir/pgsql/bin/
 RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
