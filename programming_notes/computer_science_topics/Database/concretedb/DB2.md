@@ -9,6 +9,8 @@ Tutorial: Using the command line processor https://www.ibm.com/support/knowledge
 
 Command line processor CONNECT command https://www.ibm.com/support/knowledgecenter/SSEPEK_10.0.0/comref/src/tpc/db2z_clpconnectsyntax.html
 
+Examples of subselect queries with joins https://www.ibm.com/docs/en/db2/11.5?topic=table-examples-subselect-queries-joins
+
 # DB2较系统链接
 
 IBM Db2 Family https://en.wikipedia.org/wiki/IBM_Db2_Family || IBM DB2 https://zh.wikipedia.org/wiki/IBM_DB2
