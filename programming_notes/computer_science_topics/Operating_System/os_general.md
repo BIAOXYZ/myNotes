@@ -232,3 +232,11 @@ Linux TTY/PTS概述 https://segmentfault.com/a/1190000009082089
 What is the difference between Terminal, Console, Shell, and Command Line? https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 上下文切换
+
+03 | 基础篇：经常说的 CPU 上下文切换是什么意思？（上） https://shouliang.github.io/2019/01/16/Linux%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/03%20%7C%20%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%9A%E7%BB%8F%E5%B8%B8%E8%AF%B4%E7%9A%84%20CPU%20%E4%B8%8A%E4%B8%8B%E6%96%87%E5%88%87%E6%8D%A2%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F%EF%BC%88%E4%B8%8A%EF%BC%89/
+
+04 | 基础篇：经常说的 CPU 上下文切换是什么意思？（下） https://shouliang.github.io/2018/11/28/Linux%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/04%20%7C%20%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%9A%E7%BB%8F%E5%B8%B8%E8%AF%B4%E7%9A%84%20CPU%20%E4%B8%8A%E4%B8%8B%E6%96%87%E5%88%87%E6%8D%A2%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F%EF%BC%88%E4%B8%8B%EF%BC%89/
+
+进程/线程上下文切换会用掉你多少CPU？ - 张彦飞的文章 - 知乎 https://zhuanlan.zhihu.com/p/79772089
