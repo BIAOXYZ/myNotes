@@ -104,6 +104,216 @@
     Cheers,  De Gang   # 马上反映了对原 python 文件的修改
     ```
 - > **扩展 `setup.py`**
+  * > **添加 vesion**
+    + > 在上边 `pip list` 命令返回结果中 `greeting_pkg` 对应的版本是 `0.0.0`，这是默认的版本号。我们可以在 `setup.py` 文件中设置 `version` 参数，更好的反映 package 的开发进度。
+    + > 修改 `setup.py` 内容如下：
+      ```py
+      from setuptools import setup, find_packages
+      
+      setup(
+          name='greeting_pkg',
+          packages=find_packages(),
+          version='0.1.0'
+      )
+      ```
+      > 用 `pip install -e .` 命令重新安装，再用 `pip list` 命令显示如下：
+      ```sh
+      $ pip list
+      
+      Package       Version Location                 
+      ------------- ------- -------------------------
+      greeting-pkg  0.1.0   /home/automan/setuppy_tutorial
+      List          1.3.0   
+      pip           19.2.1  
+      pkg-resources 0.0.0   
+      setuptools    41.0.1  
+      wheel         0.33.4  
+      ```
+      > 版本号已更新。
+  * > **添加 package 依赖**
+    + > 如果自己编写的 package A 调用了某个 package B，但是在其他用户的机子上没有安装 package B，那么在执行 package A 时会报错，找不到 module。为了避免这种问题，可以在 `setup.py` 文件中设置好依赖的其他 package，让别人在用 `setup.py` 安装时就将所有依赖的 package 一起安装了。
+    + > 例如，我们将 `greeting_module.py` 修改为如下内容：
+      ```py
+      import pyjokes
+      
+      def greeting_func(name):
+          print("Hello,", name)
+          print("Here is a joke for you:\n", pyjokes.get_joke())
+      ```
+      > 这里调用了一个 module `pyjokes`，它的功能是随机产生一个 joke。这个 module 需要额外安装。可以将 `setup.py` 文件修改成如下形式：
+      ```py
+      from setuptools import setup, find_packages
+      
+      setup(
+          name='greeting_pkg',
+          packages=find_packages(),
+          version='0.1.0',
+          install_requires=[          # 添加了依赖的 package
+              'pyjokes'
+          ]
+      )
+      ```
+      > 在设置依赖 package 时可以指定版本号，例如
+      ```py
+      pyjokes==0.5.0
+      pyjokes>=0.3.0
+      pyjokes>=0.3.0,<0.5.0
+      ```
+      > 重新用 `pip install -e .` 方式安装，然后在 python 中再次调用 `greeting_func()` 函数，效果如下：
+      ```py
+      $ python
+      
+      >>> from greeting_pkg.greeting_module import greeting_func
+      >>> greeting_func("De Gang")
+      Hello, De Gang
+      Here is a joke for you:
+       How to explain the movie Inception to a programmer? When you run a VM inside another VM, inside another VM ... everything runs real slow!
+      ```
+      > 另外，还可以根据使用环境有选择的安装某些依赖 package，例如修改 `setup.py` 文件如下：
+      ```py
+      from setuptools import setup, find_packages
+      
+      setup(
+          name='greeting_pkg',
+          packages=find_packages(),
+          version='0.1.0',
+          install_requires=[         
+              'pyjokes'
+          ],
+          extras_require={       # 添加了可选安装的依赖 package
+              'interactive': ['matplotlib>=2.2.0,<3.0.0', 'jupyter']
+          }
+      )
+      ```
+      > 其中 `extras_require` 部分是可以选择安装的 package。 <br> 使用 `pip install -e .` 命令并不会安装 `extras_require` 里面的 package。 <br> 如果要安装，需要用如下命令：
+      ```py
+      pip install -e .[interactive]
+      ```
+  * > **在命令行中执行 module 中的函数**
+    + > 如果我们希望 module 中的函数不仅仅只是被其他 python 程序通过 `import` 调用，还可以直接在命令行中执行，那么可以做如下修改：
+    + > 在 `greeting_module.py` 文件中的修改
+      ```py
+      import pyjokes
+      
+      def greeting_func(name):
+          print("Hello,", name)
+          print("Here is a joke for you:\n", pyjokes.get_joke())
+      
+      def main():
+          import sys
+          arg = sys.argv[1]
+          greeting_func(arg)
+      ```
+      > 在 `setup.py` 文件中的修改：
+      ```py
+      from setuptools import setup, find_packages
+      
+      setup(
+          name='greeting_pkg',
+          packages=find_packages(),
+          version='0.1.0',
+          install_requires=[         
+              'pyjokes'
+          ],
+          extras_require={
+              'interactive': ['matplotlib>=2.2.0,<3.0.0', 'jupyter']
+          },
+          entry_points={       # 设置了在命令行中如何使用 greeting_module  中的 main 函数
+              'console_scripts': [
+                  'greeting=greeting_pkg.greeting_module:main'
+              ]
+          }
+      )
+      ```
+      > 这里需要注意的是，我们的 `greeting_func()` 是需要送入参数的，但是在命令行中执行函数不能添加参数，只能以 `sys.argv` 的形式读进去，再进行后续的处理。所以当作函数使用和当作命令行中的命令使用时，"入口" 是不一样的！
+    + > 做了以上修改之后，再用 `pip install -e .` 命令安装一下，然后测试。在命令行中输入：
+      ```sh
+      $ greeting "De Gang"
+      Hello, De Gang
+      Here is a joke for you:
+       3 Database Admins walked into a NoSQL bar. A little while later they walked out because they couldn’t find a table.
+      ```
+      >> //notes：这个笑话绝了～
+  * > **添加独立的 module**
+    + > 除了以 package 的形式存在，还可以允许不属于任何 package 的 module 存在。例如我们在 package 的外边添加两个 module，文档路径结构如下：
+      ```sh
+      $ tree -L 2
+      .
+      ├── greeting_pkg
+      │   ├── greeting_module.py
+      │   └── __init__.py
+      ├── isolated_greeting_module_1.py
+      ├── isolated_greeting_module_2.py
+      └── setup.py
+      
+      1 directory, 5 files
+      ```
+    + > 其中，`isolated_greeting_module_1.py` 内容如下：
+      ```py
+      def greeting_func(name):
+          print("Hi,", name, ', greetings from isolated_greeting_module_1.')
+      ```
+    + > `isolated_greeting_module_2.py` 内容如下：
+      ```py
+      def greeting_func(name):
+          print("Hi,", name, ', greetings from isolated_greeting_module_2.')
+      ```
+    + > 对应的 `setup.py` 中的内容如下：
+      ```py
+      from setuptools import setup, find_packages
+      
+      setup(
+          name='greeting_pkg',
+          packages=find_packages(),
+          py_modules=[     # 在 package 之外添加两个独立的 module
+              'isolated_greeting_module_1',
+              'isolated_greeting_module_2'
+          ],
+          version='0.1.0',
+          install_requires=[         
+              'pyjokes'
+          ],
+          extras_require={
+              'interactive': ['matplotlib>=2.2.0,<3.0.0', 'jupyter']
+          },
+          entry_points={       
+              'console_scripts': [
+                  'greeting=greeting_pkg.greeting_module:main'
+              ]
+          }
+      )
+      ```
+      > 用 `pip install -e .` 安装之后，可以像普通的 module 一样调用，例如：
+      ```py
+      $ python
+      
+      >>> from isolated_greeting_module_1 import greeting_func
+      >>> greeting_func("De Gang")
+      Hi, De Gang , greetings from isolated_greeting_module_1.
+      ```
+  * > **添加描述性的条目**
+    + > 如果编写 `setup.py` 文件的目的是希望将整个 package 分享给其他研究人员或者分享到 PyPI 上，那么还要添加一些描述性的信息，以便别人更好的理解这个 package。常见的描述如下：
+      ```py
+      from setuptools import setup, find_packages
+      
+      setup(
+         ...
+         # metadata to display on PyPI
+          author="Me",
+          author_email="me@example.com",
+          description="This is an Example Package",
+          keywords="hello world example examples",
+          url="http://example.com/HelloWorld/",   # project home page, if any
+          project_urls={
+              "Documentation": "https://docs.example.com/HelloWorld/",
+              "Source Code": "https://code.example.com/HelloWorld/",
+          },
+          classifiers=[
+              'License :: OSI Approved :: Python Software Foundation License'
+          ]
+      )
+      ```
+- > 以上是基本的 `setup.py` 编写方法。还有其他更多的条目以及对 `setup.py` 更深入的介绍可以在[这里](https://setuptools.readthedocs.io/en/latest/setuptools.html)查阅。
 
 # 其他
 
