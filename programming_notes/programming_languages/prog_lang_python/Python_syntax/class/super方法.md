@@ -94,3 +94,7 @@ Python super() 函数 https://www.runoob.com/python/python-func-super.html
   b = B()
   b.add(2)  # 3
   ```
+
+What is super() in Python? https://www.educative.io/edpresso/what-is-super-in-python
+
+
