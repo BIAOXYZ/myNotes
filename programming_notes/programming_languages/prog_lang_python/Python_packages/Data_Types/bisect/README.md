@@ -33,19 +33,13 @@ def bisect_left(a, x, lo=0, hi=None):
 
 bisect.py https://github.com/python/cpython/blob/3.9/Lib/bisect.py
 
->> //notes：另外，不管是Python2还是Python3的源码里，都有下面两句，只是位置不一样而已。所以（不带方向的）`bisect`其实就是`bisect_right`的一个别名，对于`insort`和`insort_right`也是一样的。
+>> 【[:star:][`*`]】 //notes：另外，不管是Python2还是Python3的源码里，都有下面两句，只是位置不一样而已。所以（不带方向的）`bisect`其实就是`bisect_right`的一个别名，对于`insort`和`insort_right`也是一样的。
 ```py
 bisect = bisect_right
 insort = insort_right
 ```
 
-# 其他
-
-How to Do a Binary Search in Python https://realpython.com/binary-search-python/
-
-一个有趣的python排序模块：bisect https://www.cnblogs.com/skydesign/archive/2011/09/02/2163592.html
-- > 接着看 bisect_left 和 bisect_right 函数，该函数用入处理将会插入重复数值的情况，返回***将会插入的位置***：![](https://pic002.cnblogs.com/images/2011/225228/2011090220185965.jpg)
-  >> //notes：所以这一类函数的核心点是返回目标元素应该插入到数组的位置下标，而不完全等于在原数组中查找某个值。
+# 实战类文章
 
 Bisect Algorithm Functions in Python https://www.geeksforgeeks.org/bisect-algorithm-functions-in-python/
 ```py
@@ -89,6 +83,40 @@ When are bisect_left and bisect_right not equal? https://stackoverflow.com/quest
   >>> bisect.bisect_right([1,2,3], 2)
   2
   ```
+
+# 个人实战
+
+## 1
+>> 【[:star:][`*`]】 //notes：首先，***`bisect.bisect()` 的默认形式是 `bisect.bisect_right()`***。下面主要是 `bisect.bisect_left()` 和 `bisect.bisect_right()` 的区别。注意：当待搜索元素在列表中存在且不止一个的时候，这俩很容易区别，并且前面也有例子，不再赘述。
+1. 当待搜索元素不在列表里时（在 `l` 里搜索 `4` 的情况），两种调用是等价的。
+2. 当恰好一个待搜索元素在列表里时（在 `l` 里搜索 `5` 的情况），我们希望得到该元素的 ***准确index***，从下面例子可以看出，似乎用 `bisect.bisect_left()` 更好些？
+
+```py
+>>> import bisect
+>>> l = [0,5,10,15,20]
+>>> bisect.bisect(l,5)
+2
+>>> bisect.bisect_left(l,5)
+1
+>>> bisect.bisect_right(l,5)
+2
+>>> 
+>>> 
+>>> bisect.bisect(l,4)
+1
+>>> bisect.bisect_left(l,4)
+1
+>>> bisect.bisect_right(l,4)
+1
+```
+
+# 其他
+
+How to Do a Binary Search in Python https://realpython.com/binary-search-python/
+
+一个有趣的python排序模块：bisect https://www.cnblogs.com/skydesign/archive/2011/09/02/2163592.html
+- > 接着看 bisect_left 和 bisect_right 函数，该函数用入处理将会插入重复数值的情况，返回 ***将会插入的位置***：![](https://pic002.cnblogs.com/images/2011/225228/2011090220185965.jpg)
+  >> //notes：所以这一类函数的核心点是 ***返回目标元素应该插入到数组的位置下标，而不完全等于在原数组中查找某个值***。
   
 Python实现二分查找与bisect模块详解 https://www.jb51.net/article/102899.htm
 - > 
