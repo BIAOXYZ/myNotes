@@ -1,6 +1,10 @@
 
+武侠小说 https://zh.wikipedia.org/wiki/%E6%AD%A6%E4%BF%A0%E5%B0%8F%E8%AA%AA
+- > 著名的武侠小说作者
 
 # 金庸
+
+金庸笔下武功列表 https://zh.wikipedia.org/wiki/%E9%87%91%E5%BA%B8%E7%AD%86%E4%B8%8B%E6%AD%A6%E5%8A%9F%E5%88%97%E8%A1%A8
 
 ## 2018.10.30金庸逝世专题
 
