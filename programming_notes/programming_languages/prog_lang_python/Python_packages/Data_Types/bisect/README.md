@@ -110,6 +110,30 @@ When are bisect_left and bisect_right not equal? https://stackoverflow.com/quest
 1
 ```
 
+### 后来发现了用 `bisect.bisect_right()` 的好处！以下完全copy自 LeetCode 911 题的[笔记](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/801-1000/000911/README.md)：
+
+从这题里悟到了为啥 `bisect.bisect()` 默认要用 `bisect.bisect_right()` 而不是 `bisect.bisect_left()`。因为这题要求是：
+- 如果待搜索元素在列表里，则返回待搜索元素的index。
+- 如果待搜索元素不在列表里，则返回小于且离待搜索元素最近的元素的index。
+
+更详细的举例说明：令 `l = [0,5,10,15,20,25,30]` 为待搜索列表。根据题意，当搜索 `3` 时，希望返回 `ind = 0`；当搜索 `5` 时，希望返回 `ind = 1`。
+- 如果用 `bisect.bisect_left()`，不论搜索 `3` 还是 `5`，总是返回 `ind = 1`，没法处理了。
+- 但是如果用 `bisect.bisect_right()`，当搜索 `3` 时，返回 `ind = 1`；当搜索 `5` 时，返回 `ind = 2`。只要统一用 `ind - 1` 即可。
+```py
+>>> import bisect
+>>> l = [0,5,10,15,20,25,30]
+>>> bisect.bisect_left(l,3)
+1
+>>> bisect.bisect_left(l,5)
+1
+>>> 
+>>> bisect.bisect(l,3)
+1
+>>> bisect.bisect(l,5)
+2
+>>> 
+```
+
 # 其他
 
 How to Do a Binary Search in Python https://realpython.com/binary-search-python/
