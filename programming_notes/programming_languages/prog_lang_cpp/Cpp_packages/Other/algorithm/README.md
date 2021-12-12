@@ -13,6 +13,9 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
   * std::shuffle https://www.cplusplus.com/reference/algorithm/shuffle/
 - **Sorting**:
   * std::sort http://www.cplusplus.com/reference/algorithm/sort/
+- **Binary search**
+  * std::lower_bound https://www.cplusplus.com/reference/algorithm/lower_bound/
+  * std::upper_bound https://www.cplusplus.com/reference/algorithm/upper_bound/
 - **Min/max**:
   * std::max http://www.cplusplus.com/reference/algorithm/max/
   * std::minmax https://www.cplusplus.com/reference/algorithm/minmax/
@@ -29,6 +32,9 @@ Algorithms library https://en.cppreference.com/w/cpp/algorithm
   * std::random_shuffle, std::shuffle https://en.cppreference.com/w/cpp/algorithm/random_shuffle
 - **Sorting operations**
   * std::sort https://en.cppreference.com/w/cpp/algorithm/sort
+- **Binary search operations (on sorted ranges)**
+  * std::lower_bound https://en.cppreference.com/w/cpp/algorithm/lower_bound
+  * std::upper_bound https://en.cppreference.com/w/cpp/algorithm/upper_bound
 - **Minimum/maximum operations**
   * std::min_element https://en.cppreference.com/w/cpp/algorithm/min_element
 
