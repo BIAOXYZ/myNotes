@@ -38,3 +38,7 @@
 《多得他》王菲------《super woman》曹格
 《非常假日》王菲，张学友---《爱，一次给不完》王菲，张学友
 ```
+
+国际歌 https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E6%AD%8C
+
+《国际歌》中文译词的演变 http://cpc.people.com.cn/GB/64162/64172/85037/85039/6045651.html

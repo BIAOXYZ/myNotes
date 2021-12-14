@@ -31,6 +31,9 @@
     
 老课本：80后书影重温《我在北极光下》开启很多人文学梦的语文书 https://kknews.cc/culture/83vpaae.html
 
+《八年级（上）课外阅读》 http://www.dushu369.com/shici/mwxs/c2kwyd/
+- 2 馋虫馋猫和蛮子大伯 http://www.dushu369.com/shici/HTML/60817.html
+
 ## 自读课本from豆瓣
 
 《哦，大海》 https://book.douban.com/subject/2371311/
