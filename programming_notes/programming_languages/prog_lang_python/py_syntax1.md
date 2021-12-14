@@ -107,3 +107,15 @@ Python `*args` and `**kwargs` https://www.programiz.com/python-programming/args-
 `*args` and `**kwargs` in Python https://www.geeksforgeeks.org/args-kwargs-python/
 
 `1. *args and **kwargs` https://book.pythontips.com/en/latest/args_and_kwargs.html
+
+## 像C/C++一样只是 `int a;`，但不给 `a` 赋初始值
+>> //notes：没想到的时候觉得不知道怎么办（因为python里直接写个变量名不行），但是一旦看到了就立刻明白了。。。其实就是 `a = None` 即可。
+
+Is it possible only to declare a variable without assigning any value in Python? https://stackoverflow.com/questions/664294/is-it-possible-only-to-declare-a-variable-without-assigning-any-value-in-python
+- https://stackoverflow.com/questions/664294/is-it-possible-only-to-declare-a-variable-without-assigning-any-value-in-python/664297#664297
+  * > Why not just do this:
+    ```py
+    var = None
+    ```
+  * > Python is dynamic, so you don't need to declare things; they exist automatically in the first scope where they're assigned. So, all you need is a regular old assignment statement as above.
+  * > This is nice, because you'll never end up with an uninitialized variable. But be careful -- this doesn't mean that you won't end up with incorrectly initialized variables. If you init something to None, make sure that's what you really want, and assign something more meaningful if you can.
