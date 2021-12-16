@@ -95,4 +95,63 @@ Null in Python: Understanding Python's NoneType Object https://realpython.com/nu
     ```
     > Here, you can see that a variable with the value `None` is different from an undefined variable. All variables in Python come into existence by assignment. A variable will only start life as `null` in Python if you assign `None` to it.
 - > **Using `None` as a Default Parameter**
-  
+
+# 其他文章
+
+【[:ok:][:star:][`*`]】 python 中None，is和==的深入探讨 https://www.jianshu.com/p/627232777efd
+- > 注：运行环境：python3.6.6，win10，64位
+- > **1. `None`**
+  * > `None` 是python中的一个特殊的常量，表示一个空的对象，空值是python中的一个特殊值。数据为空并不代表是空对象，例如 `[]`, `''` 等都不是 `None`。 `None` 和任何对象比较返回值都是 `False`，除了自己。
+    ```py
+    >>> L=[]
+    >>> L is None
+    False
+    >>> L=''
+    >>> L is None
+    False
+    ```
+  * > None有自己的数据类型NontType，你可以将None赋值给任意对象，***但是不能创建一个NoneType对象***。
+    ```py
+    >>> type(None)
+    <class 'NoneType'>
+    >>> n=NoneType()
+    Traceback (most recent call last):
+      File "<input>", line 1, in <module>
+    NameError: name 'NoneType' is not defined
+    ```
+- > **2.False**
+  * > 需要注意一点：
+    ```py
+    >>> a=False
+    >>> not a
+    True
+    ```
+  * > ***<ins>python中数据为空的对象在判断时的结果都为 `False`</ins>***，其中 `None`，`False`，`0`，`[]`，`""`，`{}`，`()` 都相当于 `False`，即 `not None == not False == not '' == not 0 == not [] == not {} == not ()`。
+- > **3. `is` 和 `==`**
+  * > `is` 表示的是对象标识符，用来检查对象的标识符是否一致，即两个对象在内存中的地址是否一致。在使用 `a is b` 的时候，相当于 `id(a)==id(b)`。
+  * > `==` 表示两个对象是否相等，相当于调用 `__eq__()` 方法，即 `'a==b'` ==> `a.__eq__(b)`。
+- > **4. Python里和None比较时，为什么是 is None 而不是 == None**
+  * > 因为 ***`None` 在Python里是个`单例对象`***，一个变量如果是 `None`，它一定和 `None` 指向同一个内存地址。
+    ```py
+    >>> a=None
+    >>> b=None
+    >>> id(a)==id(b)
+    True
+    ```
+  * > `is None` 是判断两个对象在内存中的地址是否一致，`== None` 背后调用的是 **eq**，而 **eq** 可以被重载，下面是一个 `is not None` 但 `== None` 的例子：
+    ```py
+    >>> class test():
+    ...     def __eq__(self,other):
+    ...         return True
+    ... 
+    >>> t=test()
+    >>> t is None
+    False
+    >>> t == None
+    True
+    ```
+- > **5. 参考资料**
+  * > https://blog.csdn.net/Primeprime/article/details/77186109
+  * > https://www.jianshu.com/p/1cc3282bfe29
+
+深入理解Python中的None - 小包总的文章 - 知乎 https://zhuanlan.zhihu.com/p/65193194
