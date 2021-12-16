@@ -356,7 +356,7 @@ RUN /home/pguser/pgdir/postgres/configure --prefix=/home/pguser/pgdir/pgsql --en
 ```
 但是不知道为什么总是报 Permission denied 错误，把 `RUN` 默认的脚本从 `sh` 换成 `bash` 也不行。然而神奇的是 ***我从失败后的镜像启动一个容器，进到容器里手动运行上述命令就可以***。。。
 
-后来查了很久，才在stackexchange上看到说是路径问题，但是其实没太想明白，不过先记在这里了。但是不管怎样，
+后来查了很久，才在stackexchange上看到说是路径问题，但是其实没太想明白，不过先记在这里了。但是不管怎样，切换下路径后在容器里也能编译过了倒是。
 - Docker command fails during build, but succeeds while executed within running container https://stackoverflow.com/questions/17891669/docker-command-fails-during-build-but-succeeds-while-executed-within-running-co
   * https://stackoverflow.com/questions/17891669/docker-command-fails-during-build-but-succeeds-while-executed-within-running-co/17891972#17891972
 - /bin/sh: 1: ./configure: not found - dockerfile https://stackoverflow.com/questions/44451696/bin-sh-1-configure-not-found-dockerfile
