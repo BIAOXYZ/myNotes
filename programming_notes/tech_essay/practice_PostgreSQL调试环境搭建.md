@@ -319,10 +319,15 @@ after upgrade gdb won't attach to process https://askubuntu.com/questions/41629/
 FROM ubuntu:16.04
 RUN apt update && apt install -y \ 
     libreadline6 libreadline6-dev zlib1g zlib1g-dev bison flex git gcc make cgdb \
+    && apt install -y sudo \
     && rm -rf /var/lib/apt/lists/*
 
+# 之所以要启用 root 用户（给 root 设密码也好；把 pguser 加进 sudo 组方便后续 sudo su - 切换也好），
+# 就是因为即使是用了 --privileged 参数来启动容器，也只有 root 在 attach 后能看见代码。。。
 RUN useradd -m -d /home/pguser pguser \
-    && echo "pguser:123456" | chpasswd
+    && echo "pguser:123456" | chpasswd \
+    && echo "root:123456" | chpasswd \
+    && adduser pguser sudo
 
 # 之前的 su - pguser 是切换不过来的，必须用dockerfile的 USER 命令来切换用户。
 USER pguser
@@ -332,7 +337,7 @@ RUN mkdir /home/pguser/pgdir && cd /home/pguser/pgdir/ \
     && cd /home/pguser/pgdir/postgres/ \
     && git checkout -b REL8_4_STABLE origin/REL8_4_STABLE
 
-# 最大的坑在 configure 这句，参加下面的笔记吧。
+# 最大的坑在 configure 这句，参见下面的笔记吧。
 WORKDIR /home/pguser/pgdir/postgres
 RUN ./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert \
     && make -sj \
