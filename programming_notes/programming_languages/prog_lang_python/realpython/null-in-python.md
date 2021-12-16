@@ -36,10 +36,10 @@ Null in Python: Understanding Python's NoneType Object https://realpython.com/nu
     ```
     > Here, `None` is the default value for the key parameter as well as the [type hint]() for the return value. The exact output of `help` can vary from platform to platform. You may get different output when you run this command in your interpreter, but it will be similar.
 - > **Using Python’s Null Object `None`**
-  * > Often, you’ll use `None` as part of a comparison. One example is when you need to check and see if some result or parameter is `None`. Take the result you get from [re.match](). Did your regular expression match a given string? You’ll see one of two results:
-    1. Return a **Match object**: Your regular expression found a match.
-    2. Return a **None object**: Your regular expression did not find a match.
-    > In the code block below, you’re testing if the pattern "Goodbye" matches a string:
+  * > Often, you’ll use `None` as part of a comparison. One example is when you need to check and see if some result or parameter is `None`. Take the result you get from [re.match](). Did your [regular expression](https://realpython.com/regex-python/) match a given string? You’ll see one of two results:
+    1. **Return a `Match` object**: Your regular expression found a match.
+    2. **Return a `None` object**: Your regular expression did not find a match.
+    > In the code block below, you’re testing if the pattern "Goodbye" matches a [string]():
     ```py
     >>> import re
     >>> match = re.match(r"Goodbye", "Hello, World!")
@@ -47,10 +47,11 @@ Null in Python: Understanding Python's NoneType Object https://realpython.com/nu
     ...     print("It doesn't match.")
     It doesn't match.
     ```
-    > Here, you use `is None` to test if the pattern matches the string "Hello, World!". This code block demonstrates an important rule to keep in mind when you’re checking for None:
-    1. **Do** use the ***identity operators*** `is` and `is not`.
-    2. **Do not** use the ***equality operators*** `==` and `!=`.
-  * > The ***equality operators*** can be fooled when you’re comparing user-defined objects that override them:
+    > Here, you use `is None` to test if the pattern matches the string "Hello, World!". This code block demonstrates ***an important rule to keep in mind when you’re checking for `None`***:
+    1. **Do** use the ***`identity operators`*** `is` and `is not`.
+    2. **Do not** use the ***`equality operators`*** `==` and `!=`.
+    >> 【[:star:][`*`]】 //notes：这个可以死记住：***当要和 `None` 进行比较时，永远用 `is` 或 `is not` 而不是 `==` 或 `!=`***。原因不详细展开了，这篇文章后续的内容，以及下一篇文章里都有解释。
+  * > The ***`equality operators`*** can be fooled when you’re comparing user-defined objects that **override** them:
     ```py
     >>> class BrokenComparison:
     ...     def __eq__(self, other):
@@ -61,8 +62,8 @@ Null in Python: Understanding Python's NoneType Object https://realpython.com/nu
     >>> b is None  # Identity operator
     False
     ```
-    > Here, the ***equality operator*** `==` returns the wrong answer. The ***identity operator*** is, on the other hand, can’t be fooled because you can’t override it.
-  * > None is **falsy**, which means `not None` is `True`. If all you want to know is whether a result is falsy, then a test like the following is sufficient:
+    > Here, the ***equality operator*** `==` returns the wrong answer. The [***identity operator*** `is`](https://realpython.com/python-is-identity-vs-equality/), on the other hand, can’t be fooled ***because you can’t override it***.
+  * > `None` is [**falsy**](), ***which means `not None` is `True`***. If all you want to know is whether a result is falsy, then a test like the following is sufficient:
     ```py
     >>> some_result = None
     >>> if some_result:
@@ -72,7 +73,7 @@ Null in Python: Understanding Python's NoneType Object https://realpython.com/nu
     ...
     No result.
     ```
-    > The output doesn’t show you that `some_result` is exactly `None`, only that it’s falsy. If you must know whether or not you have a `None` object, then use `is` and `is not`.
+    > The output ***doesn’t show you that `some_result` is exactly `None`, only that it’s falsy***. If you must know whether or not you have a `None` object, then use `is` and `is not`.
   * > The following objects are all falsy as well:
       + Empty lists
       + Empty dictionaries
@@ -80,8 +81,7 @@ Null in Python: Understanding Python's NoneType Object https://realpython.com/nu
       + Empty strings
       + 0
       + False
-    > For more on comparisons, truthy, and falsy values, check out [How to Use the Python `or` Operator](https://realpython.com/python-or-operator/).
-    >> How to Use the Python `or` Operator https://realpython.com/python-or-operator/
+    > For more on comparisons, truthy values, and falsy values, you can read about how to use the [Python or operator](https://realpython.com/python-or-operator/), how to use the [Python and operator](https://realpython.com/python-and-operator/), and how to use the [Python not operator](https://realpython.com/python-not-operator/).
 - > **Declaring Null Variables in Python**
   * > In some languages, variables come to life from a **declaration**. They don’t have to have an initial value assigned to them. In those languages, the initial default value for some types of variables might be `null`. In Python, however, variables come to life from **assignment statements**. Take a look at the following code block:
     ```py
