@@ -178,3 +178,30 @@ Python: classmethod类函数 & staticmethod静态函数 区别 http://blog.csdn.
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 Python父类方法重写（入门必读） http://c.biancheng.net/view/2289.html
+
+# 个人实战
+
+## 1
+
+```py
+class animal(object):
+    def hello(self):
+        print("An animal")
+class bird(animal):
+    def hello(self):
+        print("A bird")
+class cow(animal):
+    pass
+
+a = animal()
+a.hello()
+b = bird()
+b.hello()
+c = cow()
+c.hello()
+```
+```console
+An animal
+A bird
+An animal
+```
