@@ -57,6 +57,7 @@ Centos中安装pip3/pip https://blog.csdn.net/gwz_6903/article/details/100678333
     > 此时 `pip` 和 `pip3` 均可用
 
 How to install pip with Python 3? https://stackoverflow.com/questions/6587507/how-to-install-pip-with-python-3
+- https://stackoverflow.com/questions/6587507/how-to-install-pip-with-python-3/6587528#6587528
 
 ## pip安装指定版本的软件
 
