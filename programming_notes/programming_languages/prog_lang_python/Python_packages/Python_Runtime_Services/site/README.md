@@ -139,7 +139,7 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
   * > Here is an excerpt from Ubuntu Python's `site.py`, which I peeked by opening `/usr/lib/python2.7/site.py` in a text editor. First, a comment at the top: `For Debian and derivatives, this sys.path is augmented with directories for packages distributed within the distribution. Local addons go into /usr/local/lib/python/dist-packages, Debian addons install into /usr/{lib,share}/python/dist-packages. /usr/lib/python/site-packages is not used.`
     >> 【[:star:][`*`]】 //notes：这个可能只是 Debian 系才会有的现象，怀疑 RedHat 系没有这个问题。
     >>> What's the difference between dist-packages and site-packages? https://stackoverflow.com/questions/9387928/whats-the-difference-between-dist-packages-and-site-packages
-    >>>> 【[:star:][`*`]】 //notes：总结下上面这个回答，原因就是 Debian 系把 `Debian package manager` （比如 `apt`）安装的包放到 `dist-packages` 里，那么这些包里和Python有关的（比如 `pip`，`easy_install`）由于确实是包管理器装的，所以当然也会放在 `dist-packages` 目录里。但是用 `pip` 去装的Python的包，跟系统包管理器没啥关系了，所以是（按Python的规定）在 `site-packages` 里。
+    >>>> 【[:star:][`*`]】 //notes：总结下上面这个回答，原因就是 Debian 系的 OS 发行版把 `Debian package manager` （比如 `apt`）安装的和Python有关的包（比如 `pip`、`easy_install`）放到 `dist-packages` 目录里。但是用 `pip` 去装的Python的包，跟系统包管理器就没啥关系了，所以是（按Python的规定）在 `site-packages` 里。
   * > OK so there you have it. They explain how ***the Debian distribution of Python is different***.
   * > And now, for the code that implementes this change:
     ```py
