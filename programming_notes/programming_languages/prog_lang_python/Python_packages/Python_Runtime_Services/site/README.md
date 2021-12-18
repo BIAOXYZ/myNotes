@@ -6,11 +6,12 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
 # 其他
 
 【[:ok:][:star:][`*`]】 How does python find packages? https://leemendelowitz.github.io/blog/how-does-python-find-packages.html
-- > I just ran into a situation where ***I compiled and installed Python 2.7.9 from source on Ubuntu, but Python could not find the packages I had previously installed***. This naturally raises the question - how does Python know where to find packages when you call import? This post applies specifically to Python 2.7.9, but I'm guessing Python 3x works very similarly.
+- > I just ran into a situation where ***I compiled and installed Python 2.7.9 from source on Ubuntu, but Python could not find the packages I had previously installed***. This naturally raises the question - how does Python know where to find packages when you call `import`? This post applies specifically to Python 2.7.9, but I'm guessing Python 3x works very similarly.
+- > In this post I first describe how Python finds packages, and then I'll finish with the discovery I made regarding the default Python that ships with Ubuntu and how it differs from vanilla Python in how it finds packages.
 - > **`sys.path`**
   * > Python imports work by searching the directories listed in `sys.path`.
   * > Using my default Ubuntu 14.04 Python:
-    ```console
+    ```py
     >>> import sys
     >>> print '\n'.join(sys.path)
 
@@ -24,7 +25,7 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
     ```
 - > **How `sys.path` gets populated**
   * > As the [docs](https://docs.python.org/2/library/sys.html#sys.path) explain, `sys.path` is populated using ***`the current working directory`***, followed by directories listed in your ***`PYTHONPATH` environment variable***, followed by ***`installation-dependent default paths`***, which are controlled by the ***`site` module***.
-    >> //notes：系统依次从三个地方获取路径值作为 `sys.path`：1.当前目录、2.`PYTHONPATH` 环境变量、3.安装Python时设置的默认目录，由 `site` 模块控制。
+    >> 【[:star:][`*`]】 //notes：系统依次从三个地方获取路径值作为 `sys.path`：1.当前目录、2.`PYTHONPATH` 环境变量、3.安装Python时设置的默认目录，由 `site` 模块控制。
   * > Assuming your `PYTHONPATH` environment variable is not set, `sys.path` will consist of the current working directory plus any manipulations made to it by the `site` module.
   * > The `site` module is automatically imported when you start Python, you can read more about how it manipulates your `sys.path` in the [Python docs](https://docs.python.org/2/library/site.html#module-site).
 - > **You can manipulate `sys.path`**
@@ -68,8 +69,8 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
       File "<stdin>", line 1, in <module>
     AttributeError: 'module' object has no attribute '__file__'
     ```
-  * > It makes sense that the sys module is ***statically linked*** to the interpreter - it is essentially ***part of the interpreter***!
-    >> //notes：所以 `sys` 这个包是静态链接到python解释器的。
+  * > It makes sense that the `sys` module is ***statically linked*** to the interpreter - it is essentially ***part of the interpreter***!
+    >> 【[:star:][`*`]】 //notes：所以 `sys` 这个包是静态链接到python解释器的。
 - > **The `imp` module**
   * > Python exposes the entire *import system* through the [`imp`](https://docs.python.org/2.7/library/imp.html) module. That's pretty cool that all of this stuff is exposed for us to abuse, if we wanted to.
   * > `imp.find_module` can be used to find a module:
@@ -78,7 +79,7 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
     >>> imp.find_module('numpy')
     (None, '/usr/local/lib/python2.7/dist-packages/numpy', ('', '', 5))
     ```
-  * > You can also import an arbitrary Python source as a module using `imp.load_source`. ***This is the same example before, except imports our module using `imp` instead of by manipulating `sys.path`***:
+  * > You can also ***import an arbitrary Python source as a module*** using `imp.load_source`. ***This is the same example before, except imports our module using `imp` instead of by manipulating `sys.path`***:
     ```py
     import sys, os, imp
     
@@ -99,7 +100,7 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
     ```
     > Passing 'hi' to `imp.load_source` simply sets the `__name__` attribute of the module.
 - > **Ubuntu Python**
-  * > Now back to the issue of missing packages after installing a new version of Python compiled from source. By comparing the `sys.path` from both the Ubuntu Python, which resides at `/usr/bin/python`, and the newly installed Python, which resides at `/usr/local/bin/python`, I could sort things out:
+  * > Now back to the issue of ***missing packages after installing a new version of Python compiled from source***. By comparing the `sys.path` from both the Ubuntu Python, which resides at `/usr/bin/python`, and the newly installed Python, which resides at `/usr/local/bin/python`, I could sort things out:
   * > **Ubuntu Python (`/usr/bin/python`)**:
     ```py
     >>> import sys
@@ -127,6 +128,7 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
     /usr/local/lib/python2.7/site-packages
     ```
   * > Turns out what mattered for me was `dist-packages` vs. `site-packages`. Using Ubuntu's Python, my packages were installed to `/usr/local/lib/python2.7/dist-packages`, whereas the new Python I installed expects packages to be installed to `/usr/local/lib/python2.7/site-packages`. I just had to ***manipulate the `PYTHONPATH` environment variable to point to `dist-packages` in order to gain access to the previously installed packaged*** with the newly installed version of Python.
+    >> 【[:star:][`*`]】 //notes：核心就在这里了，既解释清楚了原因，也给了最简单的解决方法。那么当然也可以通过在python文件里把 `dist-packages` 对应的目录贴到 `sys.path` 里来解决。
 - > **How did Ubuntu manipulate the `sys.path`?**
   * > So how does the Ubuntu distribution of Python know to use `/usr/local/lib/python2.7/dist-packages` in `sys.path`? It's ***hardcoded into their `site` module***! First, find where the `site` module code lives:
     ```py
@@ -134,8 +136,11 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
     >>> site.__file__
     '/usr/lib/python2.7/site.pyc'
     ```
-  * > Here is an excerpt from Ubuntu Python's site.py, which I peeked by opening `/usr/lib/python2.7/site.py` in a text editor. First, a comment at the top: `For Debian and derivatives, this sys.path is augmented with directories for packages distributed within the distribution. Local addons go into /usr/local/lib/python/dist-packages, Debian addons install into /usr/{lib,share}/python/dist-packages. /usr/lib/python/site-packages is not used.`
-  * > OK so there you have it. They explain how the Debian distribution of Python is different.
+  * > Here is an excerpt from Ubuntu Python's `site.py`, which I peeked by opening `/usr/lib/python2.7/site.py` in a text editor. First, a comment at the top: `For Debian and derivatives, this sys.path is augmented with directories for packages distributed within the distribution. Local addons go into /usr/local/lib/python/dist-packages, Debian addons install into /usr/{lib,share}/python/dist-packages. /usr/lib/python/site-packages is not used.`
+    >> 【[:star:][`*`]】 //notes：这个可能只是 Debian 系才会有的现象，怀疑 RedHat 系没有这个问题。
+    >>> What's the difference between dist-packages and site-packages? https://stackoverflow.com/questions/9387928/whats-the-difference-between-dist-packages-and-site-packages
+    >>>> 【[:star:][`*`]】 //notes：总结下上面这个回答，原因就是 Debian 系把 `Debian package manager` （比如 `apt`）安装的包放到 `dist-packages` 里，那么这些包里和Python有关的（比如 `pip`，`easy_install`）由于确实是包管理器装的，所以当然也会放在 `dist-packages` 目录里。但是用 `pip` 去装的Python的包，跟系统包管理器没啥关系了，所以是（按Python的规定）在 `site-packages` 里。
+  * > OK so there you have it. They explain how ***the Debian distribution of Python is different***.
   * > And now, for the code that implementes this change:
     ```py
     def getsitepackages():
