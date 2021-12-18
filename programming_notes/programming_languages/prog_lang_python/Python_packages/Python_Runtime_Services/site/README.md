@@ -183,5 +183,14 @@ site —— 指定域的配置钩子 https://docs.python.org/zh-cn/3/library/sit
         return sitepackages
     ```
   * > It's all there, if you are crazy enough to dig this deep.
+- 回复里的：
+  * > Just want to say that `imp` is now deprecated in favor of `importlib` :) (since `Python 3.4`)
+    + > https://docs.python.org/3.5/library/imp.html
+    + > I'm using `importlib.util.find_spec` instead of `imp.find_module` but it will not work on `Python 2`!
+  * > `export PYTHONPATH="/usr/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/dist-packages"`
+  * > Good article. Also be aware that `easy_install` has a bad habit of putting `eggs` it installs ***at the highest import priority***, before the earliest items in the `PYTHONPATH`. Yet another reason to not like `easy_install`.
+  * > What path does python use to find and load a ***C extension `.dll`***? All I ever get is "ImportError: No module named 'foo'". I have tried adding my folder to the `sys.path` and see that it is there when I print `sys.path`. I have also tried putting my `.dll` into the python 3.5 folder which is also on the `sys.path`.
+    >> Not sure if this question has not been answered yet, but python does not seem to load `dll` from `sys.path`. It loads dlls from `os.environ['Path']`.
+    >>> 【[:star:][`*`]】 //notes：其实还有可能是因为动态库文件名字和模块名字不匹配吧。。。之前用 `pybind11` 时碰到过，动态库的名字不能随便取- -。
 
 Python 是如何寻找包的？ https://blog.windrunner.me/python/find-pkg.html
