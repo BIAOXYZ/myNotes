@@ -2,8 +2,6 @@
 武侠小说 https://zh.wikipedia.org/wiki/%E6%AD%A6%E4%BF%A0%E5%B0%8F%E8%AA%AA
 - > 著名的武侠小说作者
 
-武侠小说 https://zh.wikipedia.org/wiki/%E6%AD%A6%E4%BF%A0%E5%B0%8F%E8%AA%AA
-
 # 金庸
 
 金庸 https://zh.wikipedia.org/wiki/%E9%87%91%E5%BA%B8

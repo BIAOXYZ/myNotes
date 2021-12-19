@@ -38,6 +38,10 @@ PG透明加密（from 公众号）：
 - 原创|搞懂PostgreSQL数据库透明数据加密之PG中的TDE https://mp.weixin.qq.com/s/TmciHCEDRMpdNgWfUf4zDw 【2020.08.31】
 - 原创|搞懂PostgreSQL数据库透明数据加密之密钥管理介绍 https://mp.weixin.qq.com/s/gPQ5FJDfkeOWn7seVXczYQ 【2020.08.31】
 
+PostgreSQL Transparent Data Encryption tool development https://github.com/nec-postgres/tdeforpg
+- Transparent Data Encryption for PostgreSQL `PostgreSQLのセキュリティや保守運用を支えるサブスクリプション` https://jpn.nec.com/tdeforpg/
+- Manual(JA) https://github.com/nec-postgres/tdeforpg/wiki/Manual(JA)
+
 ## DB Security of Oracle
 
 Oracle数据安全解决方案透明数据加密TDE
