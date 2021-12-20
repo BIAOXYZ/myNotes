@@ -41,6 +41,10 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 其他
 
+隐私计算｜实现数据安全的必要技术手段！ https://mp.weixin.qq.com/s/W9hgeUSWul-wDFYPC8IDvQ
+- > 1.陈小军 中国科学院信息工程研究所 正高级工程师
+- > 2.刘洋 清华大学 智能产业研究院 副研究员/副教授
+
 多方安全计算乱弹琴 https://mp.weixin.qq.com/s/zm_8EcjPBBrRE9dgdVtgdg
 - > OT通过利用RSA，通过引入3个随机数 (x0, x1, k) 然后通过加密后实现对选择序号的保密，以及对原始2个带选择数的保密。 同时通过两次对同一个序号进行反向处理，实现只有对应，序号的数能够被恢复。 
 - > 对于GMW，或者BGW，要实现Active模式， 可以使用Reed-Solomon Encoding，对错误的部分进行校验并恢复。
