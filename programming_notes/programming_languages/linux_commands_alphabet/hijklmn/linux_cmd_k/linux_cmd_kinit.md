@@ -15,6 +15,8 @@ How to configure kerberos and SSH https://www.pdc.kth.se/support/documents/login
 
 Kerberos https://zh.wikipedia.org/wiki/Kerberos
 
+kinit(1) - Linux man page https://linux.die.net/man/1/kinit
+
 # 其他博客类链接
 
 Kerberos+SSH安装配置使用教程 https://www.cnblogs.com/lsdb/p/11309245.html
@@ -23,4 +25,19 @@ Kerberos+SSH安装配置使用教程 https://www.cnblogs.com/lsdb/p/11309245.htm
 
 ## 1.
 
-参见expect脚本部分。
+```sh
+$ cat login.sh
+#!/bin/bash
+CURR_DIR=$(dirname $0)
+$CURR_DIR/remoteMachine.exp
+ssh <your_user_name_on_remote_machine>@<your_ip_or_host_name>
+$ 
+$ cat remoteMachine.exp
+#!/usr/bin/expect
+spawn kinit <your_user_name_of_email>@<email_server_suffix>
+expect "<your_user_name_of_email>@<email_server_suffix>'s password:"
+send "<your_password>\n"
+interact
+$ 
+$ ./login.sh
+```
