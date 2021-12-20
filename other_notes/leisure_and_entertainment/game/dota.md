@@ -212,6 +212,12 @@ How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions
 
 # Dota2新闻消息类
 
+The Internet:
+- 网易“黑豚”队 3:0 横扫腾讯“小企鹅”，夺得首届 Dota2 小“TI”冠军 https://www.ithome.com/0/593/410.htm
+- 吃瓜看戏！这位主播凭一己之力，让各大互联网公司员工打了起来…… https://mp.weixin.qq.com/s/3B8pvNBItJ41igjZV-M9IA
+- 打个DOTA，大厂人也能卷生卷死 https://mp.weixin.qq.com/s/oEo1LR5eMYPLPOudP_GdeQ
+- DPC中国联赛今日开战，互联网员工杯（小TI）蓄势待发 https://mp.weixin.qq.com/s/gfkoHIMGEoI6a68dUXF4YA
+
 《DOTA2》发布更新，正式移除对 32 位系统的支持 https://www.ithome.com/0/587/162.htm 【`2021/11/17`】
 
 《DOTA2》官宣：未来将不再支持 32 位系统、DirectX 9 等 https://www.ithome.com/0/576/253.htm 【`2021/9/18`】
