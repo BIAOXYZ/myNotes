@@ -1,6 +1,8 @@
 
 # 官方
 
+## cplusplus
+
 `header <string>` http://www.cplusplus.com/reference/string/
 - **Class instantiations**
   * std::string http://www.cplusplus.com/reference/string/string/
@@ -17,10 +19,21 @@ std::string http://www.cplusplus.com/reference/string/string/
 - **String operations:**
   * std::string::c_str http://www.cplusplus.com/reference/string/string/c_str/
   * std::string::data http://www.cplusplus.com/reference/string/string/data/
+  * std::string::find https://www.cplusplus.com/reference/string/string/find/
   * std::string::find_last_of https://www.cplusplus.com/reference/string/string/find_last_of/
   * std::string::substr http://www.cplusplus.com/reference/string/string/substr/
+- **Member constants**
+  * std::string::npos https://www.cplusplus.com/reference/string/string/npos/
+    + `static const size_t npos = -1;`
+
+## cppreference
+
+Strings library https://en.cppreference.com/w/cpp/string
+- std::basic_string https://en.cppreference.com/w/cpp/string/basic_string
 
 std::to_string https://en.cppreference.com/w/cpp/string/basic_string/to_string
+
+std::basic_string<CharT,Traits,Allocator>::npos https://en.cppreference.com/w/cpp/string/basic_string/npos
 
 # `.c_str()`
 
