@@ -337,3 +337,5 @@ docker容器编译程序 的两种方案 https://blog.csdn.net/qq_39919755/artic
 Docker Pattern: The Build Container https://medium.com/@alexeiled/docker-pattern-the-build-container-b0d0e86ad601
 
 Build, Package, and Run Spring Boot Apps With Docker https://dzone.com/articles/build-package-and-run-spring-boot-apps-with-docker
+
+【docker官方搞得，目前还是预览阶段，可以关注下】 Development Environments Preview https://docs.docker.com/desktop/dev-environments/
