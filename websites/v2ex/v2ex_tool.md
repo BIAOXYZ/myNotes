@@ -114,7 +114,9 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
-最近发现一款不错的 SSH 客户端 WindTerm https://www.v2ex.com/t/801168
+**WindTerm**:
+- 迫于正版化需求，求一个免费的 Terminal/SSH/SFTP 工具 https://www.v2ex.com/t/824167
+- 最近发现一款不错的 SSH 客户端 WindTerm https://www.v2ex.com/t/801168
 
 Linux 能不能用虚拟机跑双系统呢 https://www.v2ex.com/t/799906
 ```console
