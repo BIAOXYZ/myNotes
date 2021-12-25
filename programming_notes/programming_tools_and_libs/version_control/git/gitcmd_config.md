@@ -23,7 +23,11 @@ https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 
 ## 自定义各种配置
 
-.1 自定义 Git - 配置 Git https://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git
+~~`.1 自定义 Git - 配置 Git` https://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git~~ --> `8.1 自定义 Git - 配置 Git` https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git
+- > 首先，快速回忆下：Git 使用一系列配置文件来保存你自定义的行为。 它首先会查找系统级的 `/etc/gitconfig` 文件，该文件含有系统里每位用户及他们所拥有的仓库的配置值。 如果你传递 `--system` 选项给 `git config`，它就会读写该文件。
+- > 接下来 Git 会查找每个用户的 `~/.gitconfig` 文件（或者 `~/.config/git/config` 文件）。 你可以传递 `--global` 选项让 Git 读写该文件。
+- > 最后 Git 会查找你正在操作的仓库所对应的 Git 目录下的配置文件（`.git/config`）。 这个文件中的值只对该仓库有效，它对应于向 `git config` 传递 `--local` 选项。
+- > 以上三个层次中每层的配置（系统、全局、本地）都会覆盖掉上一层次的配置，所以 `.git/config` 中的值会覆盖掉 `/etc/gitconfig` 中所对应的值。
 
 ### Windows和Linux下配置换行符`core.autocrlf`
 

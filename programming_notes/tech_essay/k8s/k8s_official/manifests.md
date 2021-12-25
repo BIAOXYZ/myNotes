@@ -381,3 +381,31 @@ spec:
         path: /something(/|$)(.*)
 ' | kubectl create -f -
 ```
+
+# 后来补充
+
+Bash Heredoc https://linuxize.com/post/bash-heredoc/
+- > In the following example, we are passing two lines of text containing an environment variable and a command to cat using a here document.
+  ```sh
+  cat << EOF
+  The current working directory is: $PWD
+  You are logged in as: $(whoami)
+  EOF
+  ```
+- > As you can see from the output below, both the variable and the command output are substituted:
+  ```console
+  The current working directory is: /home/linuxize
+  You are logged in as: linuxize
+  ```
+- > Let’s see what will happen if we enclose the delimiter in single or double quotes.
+  ```sh
+  cat <<- "EOF"
+  The current working directory is: $PWD
+  You are logged in as: $(whoami)
+  EOF
+  ```
+- > You can notice that when the delimiter is quoted no parameter expansion and command substitution is done by the shell.
+  ```console
+  The current working directory is: $PWD
+  You are logged in as: $(whoami)
+  ```
