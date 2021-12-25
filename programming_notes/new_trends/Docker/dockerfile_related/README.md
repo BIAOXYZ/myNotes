@@ -11,6 +11,8 @@ Best practices for writing Dockerfiles https://docs.docker.com/develop/develop-i
         package-foo  \
         && rm -rf /var/lib/apt/lists/*
     ```
+- > **ENTRYPOINT**
+  * > For example, the [Postgres Official Image](https://hub.docker.com/_/postgres/) uses the following script as its ENTRYPOINT:
 - > **WORKDIR**
   * > For clarity and reliability, you should always use absolute paths for your `WORKDIR`. Also, you should ***use `WORKDIR` instead of proliferating instructions like `RUN cd … && do-something`***, which are hard to read, troubleshoot, and maintain.
 
@@ -77,6 +79,40 @@ Dockerfile RUN，CMD，ENTRYPOINT命令区别 https://www.jianshu.com/p/f0a0f6a4
   * > `RUN` 命令执行命令并创建新的镜像层，通常用于安装软件包
   * > `CMD` 命令设置容器启动后默认执行的命令及其参数，但CMD设置的命令能够被 docker run 命令后面的命令行参数替换
   * > `ENTRYPOINT` 配置容器启动时的执行命令（不会被忽略，一定会被执行，即使运行 docker run 时指定了其他命令）
+
+Difference between RUN vs CMD vs ENTRYPOINT Docker Commands https://www.geeksforgeeks.org/difference-between-run-vs-cmd-vs-entrypoint-docker-commands/
+```sh
+$ cat dockerfile 
+FROM ubuntu
+ENTRYPOINT ["echo", "Geeksforgeeks "]
+CMD ["Docker Tutorials"]
+$ 
+$ docker build -t image .
+Sending build context to Docker daemon  2.048kB
+Step 1/3 : FROM ubuntu
+latest: Pulling from library/ubuntu
+7b1a6ab2e44d: Pull complete 
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Downloaded newer image for ubuntu:latest
+ ---> ba6acccedd29
+Step 2/3 : ENTRYPOINT ["echo", "Geeksforgeeks "]
+ ---> Running in ead86017ffb4
+Removing intermediate container ead86017ffb4
+ ---> cb5e607a52d5
+Step 3/3 : CMD ["Docker Tutorials"]
+ ---> Running in 4228c9cb68d6
+Removing intermediate container 4228c9cb68d6
+ ---> 0ae1fc7b79fc
+Successfully built 0ae1fc7b79fc
+Successfully tagged image:latest
+$ 
+$ docker run -it image
+Geeksforgeeks  Docker Tutorials
+$ 
+$ docker run -it image bash
+Geeksforgeeks  bash
+$
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
