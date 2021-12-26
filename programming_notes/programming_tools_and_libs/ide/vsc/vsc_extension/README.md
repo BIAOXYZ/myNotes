@@ -6,18 +6,26 @@
 # 插件官方市场
 
 ## 官方出品1（合集类）
+- Remote Development https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 - C/C++ Extension Pack https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 官方出品2
-- Remote - SSH https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+- Remote - SSH https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh  【可以直接装remote三件套】
+- Pylance https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance
+- Python https://marketplace.visualstudio.com/items?itemName=ms-python.python  【装 `Python Extension Pack` 包含这个】
+- Docker https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker  【装 `Docker Extension Pack` 包含这个】
 - Live Share https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
 - GitHub Copilot https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
   * > Getting Started with GitHub Copilot in Visual Studio Code https://github.com/github/copilot-docs/blob/main/docs/visualstudiocode/gettingstarted.md#getting-started-with-github-copilot-in-visual-studio-code
   * > GitHub Copilot 可以写帮我写中文文章了 https://www.v2ex.com/t/814689
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 个人出品（合集类）
+- Python Extension Pack https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack
+- Docker Extension Pack https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-extension-pack
 
 ## 个人出品
 - Markdown All in One https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
