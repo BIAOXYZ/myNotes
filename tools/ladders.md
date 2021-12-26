@@ -60,6 +60,8 @@ Simple DNSCrypt https://www.simplednscrypt.org/
 
 github 改host - 闪电侠的右手的文章 - 知乎 https://zhuanlan.zhihu.com/p/339927339
 
+GitHub520 https://github.com/521xueweihan/GitHub520
+
 # IPV6
 
 IT之家网友：快速获取教育网IPv6独享地址教程 https://www.ithome.com/0/406/684.htm
