@@ -64,6 +64,14 @@ hdfs dfs -rm -skipTrash hdfs://${your_server_name}/opt/tmp/test/1.log
 hdfs dfs -rm -r hdfs://${your_server_name}/opt/tmp/test/
 ```
 
+https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/FileSystemShell.html#text
+- > **text**
+  ```console
+  Usage: hadoop fs -text <src>
+  Takes a source file and outputs the file in text format. The allowed formats are zip and TextRecordInputStream.
+  ```
+  >> //notes：`hdfs dfs -text hdfs://${your_server_name}/${file_path}/filename.tsv`。之前碰到过一个 `.tsv` 文件，下载下来后 `cat` 是一堆乱码，但是用 `-text` 参数就可以正确读。
+
 # 集群搭建
 
 ## docker方式（缺点是容器里估计编译困难）
