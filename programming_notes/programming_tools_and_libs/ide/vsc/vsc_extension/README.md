@@ -12,10 +12,14 @@
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 官方出品2
-- Remote - SSH https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh  【可以直接装remote三件套】
-- Pylance https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance
+- Remote - SSH https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh  【可以直接装 `Remote Development` 三件套】
+- Pylance https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance  【装 `Python` 时自动装这个，但有的时候从 `Python Extension Pack` 自动装的 `Python` 里不会自动装这个，需要自己手动再装下】
 - Python https://marketplace.visualstudio.com/items?itemName=ms-python.python  【装 `Python Extension Pack` 包含这个】
+  * Python extension for Visual Studio Code https://github.com/microsoft/vscode-python/blob/main/README.md
 - Docker https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker  【装 `Docker Extension Pack` 包含这个】
+- Jupyter https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter  【这个目前感觉用处没那么大，主要是想着后面做笔记可能方便点】
+  * Jupyter Notebooks in VS Code https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+  * https://github.com/microsoft/vscode-jupyter/wiki/Setting-Up-Run-by-Line-and-Debugging-for-Notebooks
 - Live Share https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
 - GitHub Copilot https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
   * > Getting Started with GitHub Copilot in Visual Studio Code https://github.com/github/copilot-docs/blob/main/docs/visualstudiocode/gettingstarted.md#getting-started-with-github-copilot-in-visual-studio-code
