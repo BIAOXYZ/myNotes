@@ -5,6 +5,9 @@ setuptools https://github.com/pypa/setuptools || https://setuptools.pypa.io/en/l
 
 # 其他
 
+【[:star:][`*`]】 Python Packaging User Guide https://packaging.python.org/en/latest/
+>> //notes：这一系列看会应该就全通了，然而，暂时没有那么多时间和耐心。。。慢慢在 tutorials 里总结吧。。。
+
 ## `setup.py` 相关
 
 `4. 构建C/C++扩展` https://docs.python.org/zh-cn/3/extending/building.html
@@ -33,3 +36,5 @@ Differences between distribute, distutils, setuptools and distutils2? https://st
   * > **Recommendation**:
     + > If all of this is new to you, and you don't know where to start, **I would recommend learning `setuptools`**, along with `pip` and `virtualenv`, which all work very well together.
     + > If you're looking into `virtualenv`, you might be interested in this question: [What is the difference between `venv`, `pyvenv`, `pyenv`, `virtualenv`, `virtualenvwrapper`, etc?](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe). (Yes, I know, I groan with you.)
+
+Python 包管理工具解惑 https://blog.zengrong.net/post/python_packaging/
