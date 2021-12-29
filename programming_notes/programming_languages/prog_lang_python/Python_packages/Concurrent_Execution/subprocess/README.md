@@ -6,3 +6,5 @@ subprocess --- 子进程管理 https://docs.python.org/zh-cn/3/library/subproces
 # 其他
 
 Using Python's Subprocess to Display Output in New Xterm Window https://stackoverflow.com/questions/5558720/using-pythons-subprocess-to-display-output-in-new-xterm-window
+
+Chapter 19 - The subprocess Module https://python101.pythonlibrary.org/chapter19_subprocess.html

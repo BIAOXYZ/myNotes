@@ -29,6 +29,13 @@ expect 依赖于 tcl, 所以需要首先安装 tcl。可以使用rpm检查是否
 rpm -qa | grep tcl
 ```
 
+How to install expect on Ubuntu https://howtoinstall.co/en/expect
+- > Installing expect package on Ubuntu is as easy as running the following command on terminal:
+```sh
+sudo apt-get update
+sudo apt-get install expect -y
+```
+
 使用expect在script中切换到root用户 https://www.cnblogs.com/gx-303841541/archive/2012/11/08/2761679.html
 
 Ubuntu使用Spawn和expect实现ssh自动登陆 https://blog.csdn.net/donglynn/article/details/51536212
@@ -220,3 +227,6 @@ Upgrade performed.
 8888888 end
 $
 ```
+
+## 用 `expect` 脚本响应类似 `kinit` 那种交互式登陆。
+// 参见 `kinit` 部分的笔记吧。
