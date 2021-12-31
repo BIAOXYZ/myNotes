@@ -16,3 +16,5 @@
 - 《SD快打旋风》市长为什么这样抱着女儿？怪不得都误以为女朋友！ https://www.bilibili.com/video/BV1SJ411x7sH
 
 【[:star:][`*`]】 《SD快打旋风》隐藏技能到底怎么按？ https://www.bilibili.com/video/BV1s54y1p7bz
+
+全网最细，详细的细！ https://www.bilibili.com/video/BV1Q44y1E7Sy
