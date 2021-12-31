@@ -227,3 +227,13 @@ MacOS中Dock栏的设置和使用技巧，新手必看 - 马可菠萝的文章 -
 ***呵呵，号称比windows方便快速。试试同时用Xshell和MobaXterm装两个集群，各种需要复制粘贴、改参数。然后再来说方便吧。。。**
 - 在 Mac 上使用多点触控手势 https://support.apple.com/zh-cn/HT204895
 - mac 触摸板常用手势与操作 https://jingyan.baidu.com/article/20b68a88847549796cec62e9.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Mac权限引起的问题
+
+## `os.mknod()` 命令必须带 `sudo` 才行
+
+os.mknod() fails on MacOS? https://stackoverflow.com/questions/32115715/os-mknod-fails-on-macos
+- https://stackoverflow.com/questions/32115715/os-mknod-fails-on-macos/32115794#32115794
+  * > `sudo python -c "import os; os.mknod('/tmp/test123')"`

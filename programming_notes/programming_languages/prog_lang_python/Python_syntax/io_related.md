@@ -10,3 +10,31 @@ Context Managers and the “with” Statement in Python https://dbader.org/blog/
 Python: read(), readline()和readlines()使用方法及性能比较 https://blog.csdn.net/quiet_girl/article/details/80113591
 
 python读取、写入txt文本内容 https://www.jianshu.com/p/45b790a08d5b
+
+# 已验证过
+
+## 文件很大时，不要用 `readlines()`，因为还是一次全读进内存的
+
+python读取一个文件并判断结束 https://www.jianshu.com/p/413580acf55b
+
+## 打开文件时，如果文件不存在则自动创建
+
+- python3下读文件时如果文件不存在则创建文件 https://blog.csdn.net/Fantasy_Virgo/article/details/82315727  【这个虽然能创建，但是如果文件有多级路径，就不行了】
+- python 判断目录和文件是否存在，若不存在即创建 https://blog.csdn.net/u013247765/article/details/79050947  【这个比上一个强一些】
+
+这个的难点在于“***如果文件不存在则自动创建***”。我本以为这应该是一个Python库的接口就搞定了，但是目前还没来及详细试诸如 `pathlib` 之类的库，仅用 `os` 的话，目前看只能是按下面的逻辑走：
+1. 先拿到输入文件的完整路径（用 `os.path.abspath()` 是为了把可能的 `./tmp/xxx` 中的点号代表的当前目录展开，如果是 `~/`，则要用 `os.path.expanduser()`）
+2. 用 `os.path.dirname()` 获取多级目录前缀
+3. 完整路径可能有多层目录，但是这些目录均可能存在或不存在，
+
+```py
+import os
+def create_file_if_not_exist(local_file_path):
+    abs_path = os.path.abspath(local_file_path)
+    prefix_dirs = os.path.dirname(abs_path)
+    if not os.path.exists(abs_path):
+        print("{} does not exist, will create automatically".format(abs_path))
+        if not os.path.isdir(prefix_dirs):
+            os.makedirs(prefix_dirs)
+        os.system(r"touch {}".format(abs_path))
+```
