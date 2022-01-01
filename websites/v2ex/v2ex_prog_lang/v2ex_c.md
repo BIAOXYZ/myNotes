@@ -1,4 +1,17 @@
 
+怎么通过 VS2019 看 strlen()的源码？ https://www.v2ex.com/t/825671
+- > msvc 的源码是没有公开的。MS 开源了 STL 的部分 https://github.com/microsoft/STL 。`strlen` 的实现比较简单，类似下面这样。你可以参考 `wine` 项目的一些 api 实现。
+  ```c
+  size_t __cdecl strlen( const char *str )
+  {
+  const char *s = str;
+  while (*s) s++;
+  return s - str;
+  }
+  ```
+- > 其实 `strlen` 各家的实现可能都有差别，而且可能会有魔法优化。。。。这种基础库函数反而不容易读代码。比如 `gcc` 的 `strlen`： https://github.com/lattera/glibc/blob/master/string/strlen.c#L33 <br> 你看这个实现，`/* Instead of the traditional loop which tests each character, we will test a longword at a time. The tricky part is testing if *any of the four* bytes in the longword in question are zero. */`
+- > 稍微查了查，至少对 vs2008 而言，`strlen` 是直接用汇编写的，不是 C 代码 <br> `First CRT's one is written directly in assembler. you can see it's source code here C:\Program Files\Microsoft Visual Studio 9.0\VC\crt\src\intel\strlen.asm (this is for VS 2008)`
+
 c 语言条件编译宏太多, 有什么办法解决吗 https://www.v2ex.com/t/810041
 ```console
 嵌入式代码需要兼容的版本太多了, 同一个函数里面条件宏比代码逻辑还多了, 然后用 vscode 看代码头都大了, 大家有什么办法解决一下吗?
