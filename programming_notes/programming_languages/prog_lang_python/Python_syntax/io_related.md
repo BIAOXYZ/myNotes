@@ -13,7 +13,10 @@ python读取、写入txt文本内容 https://www.jianshu.com/p/45b790a08d5b
 
 # 已验证过
 
-## 文件很大时，不要用 `readlines()`，因为还是一次全读进内存的
+## 读取大文件
+>> //notes：文件很大时，不要用 `readlines()` 或直接用 `read()`，因为还是一次全读进内存的。但是可以用 `readline()` 一次读一行，或者 `read()` 带上一个读取大小的参数
+
+Python花式读取大文件(10g/50g/1t)遇到的性能问题（面试向） https://juejin.cn/post/6844904154037485576
 
 python读取一个文件并判断结束 https://www.jianshu.com/p/413580acf55b
 
@@ -25,7 +28,7 @@ python读取一个文件并判断结束 https://www.jianshu.com/p/413580acf55b
 这个的难点在于“***如果文件不存在则自动创建***”。我本以为这应该是一个Python库的接口就搞定了，但是目前还没来及详细试诸如 `pathlib` 之类的库，仅用 `os` 的话，目前看只能是按下面的逻辑走：
 1. 先拿到输入文件的完整路径（用 `os.path.abspath()` 是为了把可能的 `./tmp/xxx` 中的点号代表的当前目录展开，如果是 `~/`，则要用 `os.path.expanduser()`）
 2. 用 `os.path.dirname()` 获取多级目录前缀
-3. 完整路径可能有多层目录，但是这些目录均可能存在或不存在，所以先把正确的目录创建好。
+3. 完整路径可能有多层目录，但是这些目录均可能存在或不存在，所以先用 `os.makedirs()` 把正确的目录创建好（用 `os.mkdir()` 对多级目录是不行的，类似Linux shell的 `mkdir -p` 可以创建多级目录，只有 `mkdir` 不行）。
 4. 最后创建文件时也可以用别的接口，比如：`os.mknod()`，但是在Mac下有权限问题。。。
 
 ```py
