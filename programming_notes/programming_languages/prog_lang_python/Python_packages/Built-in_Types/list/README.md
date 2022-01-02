@@ -21,7 +21,7 @@ How to check if a list is empty in Python? https://flexiple.com/check-if-list-is
         print("list is empty")
     #Output: "list is empty"
     ```
-    >> //notes：主要是记下这个原来是 PEP 8 里推荐的。
+    >> //notes：主要是记下这个原来是 `PEP 8` 里推荐的。
 
 ## 
 
