@@ -191,6 +191,10 @@ BJS和PEK都是代表北京的意思，两者的区别是：
 
 # 春运
 
+## 2022
+
+2022 年春运火车票开售，购票日历来了 https://www.ithome.com/0/596/387.htm  【`2022/1/3 18:42:52`】
+
 ## 2021
 
 春运火车票今日开售！12306网站买票退票时间迎大变 车票骨折价 https://news.mydrivers.com/1/732/732266.htm || https://www.cnbeta.com/articles/tech/1071823.htm
