@@ -45,4 +45,6 @@ Samba (简体中文) https://wiki.archlinux.org/index.php/Samba_(%E7%AE%80%E4%BD
 
 ***// 此外`linuxprobe`第12章就是关于samba配置的***。
 
+samba 共享问题 https://www.v2ex.com/t/825831
+
 # 2.实战部分

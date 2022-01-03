@@ -1,4 +1,7 @@
 
+关于持久化的一点疑问 https://www.v2ex.com/t/825944
+- > https://github.com/dreamhead/patterns-of-distributed-systems/blob/master/content/write-ahead-log.md <br> 这个名词叫做 Write-Ahead Log
+
 关于 Raft Consensus Algorithm 的疑问 https://www.v2ex.com/t/802818
 
 用 Go 轻松完成一个 TCC 分布式事务，保姆级教程 https://www.v2ex.com/t/794530
