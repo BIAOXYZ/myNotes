@@ -15,6 +15,25 @@ nohup, &作用 https://segmentfault.com/a/1190000014653953
 - > 最近看了58沈剑的文章"一分钟了解nohup和&的功效", "明明打印到文件了，为啥tail -f看不到", 对常用的nohup和&的了解更多了一些，结合这两篇文章，做些记录和总结。
   >> 明明打印到文件了，为啥tail -f看不到 https://mp.weixin.qq.com/s/l2GDtJqcaup8cdQ0j7Ivuw
 
+# 问题
+
+## `nohup.out` 里没有 python `print` 的内容
+
+Python - nohup.out don't show print statement https://stackoverflow.com/questions/25674613/python-nohup-out-dont-show-print-statement
+
+用nohup执行python程序时，print无法输出 https://blog.csdn.net/sunlylorn/article/details/19127107
+- > `nohup python test.py > nohup.out 2>&1 &` <br> 发现 `nohup.out` 中显示不出来python程序中 `print` 的东西。这是因为python的输出有缓冲，导致 `nohup.out` 并不能够马上看到输出。
+- > python 有个 `-u` 参数，使得python不启用缓冲。
+- > `nohup python -u test.py > nohup.out 2>&1 &`
+
+## `nohup` 和 `time` 不能同时用
+
+bash time with nohup https://unix.stackexchange.com/questions/199879/bash-time-with-nohup
+
+How can I 'nohup' a command and log the output of 'time' https://stackoverflow.com/questions/26427908/how-can-i-nohup-a-command-and-log-the-output-of-time
+
+How do I use nohup and time together? https://stackoverflow.com/questions/65468796/how-do-i-use-nohup-and-time-together
+
 # 个人实战
 
 ## 1
