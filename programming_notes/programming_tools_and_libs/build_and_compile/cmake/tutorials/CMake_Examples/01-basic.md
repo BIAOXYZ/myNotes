@@ -43,7 +43,7 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
             ${PROJECT_SOURCE_DIR}/include
     )
     ```
-    > The ***`PRIVATE`*** identifier specifies the scope of the include. ***This is important for libraries and is explained in the next example***. More details on the function is available [here](https://cmake.org/cmake/help/v3.0/command/target_include_directories.html).
+    > The ***`PRIVATE`*** identifier specifies the scope of the include. ***This is important for <ins>libraries</ins> and is explained in the next example***. More details on the function is available [here](https://cmake.org/cmake/help/v3.0/command/target_include_directories.html).
 - > **Standard Output**
   ```console
   $ make
@@ -89,6 +89,14 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/C-static-library/README.adoc
+- > **Adding a Static Library**
+  * > The ***`add_library()`*** function is used to create a library from some source files. This is called as follows:
+    ```cmake
+    add_library(hello_library STATIC
+        src/Hello.cpp
+    )
+    ```
+  * > This will be used to create a **static library*** with the name `libhello_library.a` with the sources in the ***`add_library`*** call.
 - > **Populating Including Directories**
   * > In this example, we include directories in the library using the ***`target_include_directories()`*** function with the scope set to ***`PUBLIC`*** .
     ```cmake
@@ -104,7 +112,8 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     + > ***`PRIVATE`*** - the directory is added to this target’s include directories.
     + > ***`INTERFACE`*** - the directory is added to the include directories for any targets that link this library.
     + > ***`PUBLIC`*** - As above, it is included in this library and also any targets that link this library.
-    >> //notes：这三个范围应该主要是针对库的 include 目录而言的。当某个库用 ***`target_include_directories()`*** 语句去 include 某些（头文件）路径时，这些路径根据三个范围关键词的不同，分别达到的效果是： <br> ***`PRIVATE`*** —— 这些路径给自己用；***`INTERFACE`*** —— 这些路径给链接这个库的后续目标用；***`PUBLIC`*** —— 这些路径既给自己用，也给链接这个库的后续目标用，也就是有：***`PUBLIC` = `PRIVATE` + `INTERFACE`***。 <br> 但是还是觉得这些细粒度范围控制没鸟用，直接都用 ***`PUBLIC`*** 不就得了。。。
+    >> 【[:star:][`*`]】 //notes：这三个范围应该主要是针对 ***库的 include 目录*** 而言的。当某个库用 ***`target_include_directories()`*** 语句去 include 某些（头文件）路径时，这些路径根据三个范围关键词的不同，分别达到的效果是： <br> ***`PRIVATE`*** —— 这些路径给自己用；***`INTERFACE`*** —— 这些路径给链接这个库的后续目标用；***`PUBLIC`*** —— 这些路径既给自己用，也给链接这个库的后续目标用，也就是有：***`PUBLIC` = `PRIVATE` + `INTERFACE`***。 <br> 但是还是觉得这些细粒度范围控制没鸟用，直接都用 ***`PUBLIC`*** 不就得了。。。
+    >>> 此外，前一个例子也用到了 ***`target_include_directories()`***，不过在那个例子里是针对 executable 的 include 目录，所以没有这么多精细的范围控制（因为没有别的会去链接一个二进制文件）。
   * > Tip: For public headers it is often a good idea to have your include folder ***be "namespaced" with sub-directories***. <br> The ***directory passed to `target_include_directories`*** will be ***the root of your include directory*** tree and your C++ files should ***include the path from there to your header***. <br> For this example you can see that we do it as follows:
     ```cpp
     #include "static/Hello.h"
@@ -112,7 +121,7 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     > Using this method means that there is less chance of header filename clashes when you use multiple libraries in your project.
     >> //notes：上面这段话的意思是说：你的 include 目录应该用子目录细分一下，然后添加 include 的目录的时候，把那个 include 相关的最高级目录加进去。但是在代码文件里用 `#include "xxx"` 引入某个头文件时，用从 ***include的根目录*** 出发直到 ***该头文件位置***（也就是中间会包含一些子目录）的形式，比如：`#include "subfold1/subfold2/.../xxx"`。这样的好处是减少冲突。
 - > **Linking a Library**
-  * > When creating an executable that will use your library you must tell the compiler about the library. This can be done using the ***`target_link_libraries()`*** function.
+  * > When creating ***an executable that will use your library you must tell the compiler about the library***. This can be done using the ***`target_link_libraries()`*** function.
     ```cmake
     add_executable(hello_binary
         src/main.cpp
