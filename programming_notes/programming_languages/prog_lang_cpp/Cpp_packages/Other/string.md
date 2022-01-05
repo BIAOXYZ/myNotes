@@ -16,6 +16,9 @@ std::string http://www.cplusplus.com/reference/string/string/
 - **Capacity:**
   * std::string::size http://www.cplusplus.com/reference/string/string/size/
   * std::string::length http://www.cplusplus.com/reference/string/string/length/
+- **Element access:**
+  * std::string::back https://www.cplusplus.com/reference/string/string/back/  【`vector` 也是类似的】
+  * std::string::front https://www.cplusplus.com/reference/string/string/front/  【`vector` 也是类似的】
 - **String operations:**
   * std::string::c_str http://www.cplusplus.com/reference/string/string/c_str/
   * std::string::data http://www.cplusplus.com/reference/string/string/data/
@@ -164,3 +167,9 @@ Splitting: c:\windows\winhelp.exe
 ## `std::stoi()`、`std::atoi()`、`std::to_string()`
 
 C++ string to int Conversion https://www.programiz.com/cpp-programming/string-int-conversion
+
+# 问题
+
+Empty character constant in c++ https://stackoverflow.com/questions/31193454/empty-character-constant-in-c
+>> //notes：得到了一个教训，string初始化时要么就直接不赋值 `string s;`，要么就双引号形式 `string s = "";`，用这种单引号形式就会有这个问题 `string s = '';`。但是那两种合法的初始化方式貌似也有区别：
+>>> C++ string初始化为空的问题 默认初始化和双引号初始化 https://blog.csdn.net/yuanliang861/article/details/82893539
