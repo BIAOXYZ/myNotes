@@ -1,6 +1,6 @@
 
 A-hello-cmake https://github.com/ttroy50/cmake-examples/blob/master/01-basic/A-hello-cmake/README.adoc
-- > NOTE: A shorthand that some people use is to have the project name and executable name the same. This allows you to specify the `CMakeLists.txt` as follows,
+- > NOTE: A shorthand that some people use is to ***have the project name and executable name the same***. This allows you to specify the `CMakeLists.txt` as follows,
   ```cmake
   cmake_minimum_required(VERSION 2.6)
   project (hello_cmake)
@@ -10,10 +10,11 @@ A-hello-cmake https://github.com/ttroy50/cmake-examples/blob/master/01-basic/A-h
 - > **Binary Directory**
   * > The root or top level folder that you run the cmake command from is known as your ***`CMAKE_BINARY_DIR`*** and is the root folder for all your binary files. CMake supports building and generating your binary files both ***in-place*** and also ***out-of-source***.
   * > **In-Place Build**
-    + > In-place builds generate all temporary build files in the same directory structure as the source code. This means that all Makefiles and object files are interspersed with your normal code. ***To create an in-place build target run the cmake command in your root directory***. 
+    + > In-place builds generate all temporary build files in the same directory structure as the source code. This means that all Makefiles and object files are interspersed with your normal code. ***To create an in-place build target run the `cmake` command in your root directory***.
+      >> 注意：基本不要用这种方式来build！！！
   * > **Out-of-Source Build**
     + > Out-of-source builds allow you ***to create a single build folder*** that can be ***anywhere on your file system***. ***All temporary build and object files are located in this directory keeping your source tree clean***. To create an out-of-source build ***run the `cmake` command in the build folder and point it to the directory with your `root CMakeLists.txt` file***. Using out-of-source builds if you want to recreate your cmake environment from scratch, you only need to delete your build directory and then rerun cmake.
-      >> //notes：用 ut-of-source build 的方式很简单，一般都是在项目根目录下建一个 `build` 或者 `_build` 目录，然后进到这个目录里执行 `cmake ..`（如果 `build` 目录在其他位置，则 `cmake` 命令后的目录位置也要相应变化）。实际上，我经常是搞两个目录，一个叫 `debugbuild` 一个叫 `releasebuild`。
+      >> //notes：用 Out-of-source build 的方式很简单，一般都是在项目根目录下建一个 `build` 或者 `_build` 目录，然后进到这个目录里执行 `cmake ..`（如果 `build` 目录在其他位置，则 `cmake` 命令后的目录位置也要相应变化）。实际上，我经常是搞两个目录，一个叫 `debugbuild` 一个叫 `releasebuild`。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -25,17 +26,17 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
   | `CMAKE_SOURCE_DIR` |The root source directory |
   | `CMAKE_CURRENT_SOURCE_DIR` |The current source directory if using sub-projects and directories. |
   | `PROJECT_SOURCE_DIR` |The source directory of the current cmake project. |
-  | `CMAKE_BINARY_DIR` |The root binary / build directory. This is the directory where you ran the cmake command. |
+  | `CMAKE_BINARY_DIR` |The root binary / build directory. This is ***the directory where you ran the `cmake` command***. |
   | `CMAKE_CURRENT_BINARY_DIR` | The build directory you are currently in. |
   | `PROJECT_BINARY_DIR` | The build directory for the current project. |
 
-- > Note: An alternative to setting specific file names in the SOURCES variable is to use a ***`GLOB`*** command to find files using wildcard pattern matching.
+- > Note: An alternative to setting specific file names in the *SOURCES* variable is to use a ***`GLOB`*** command to find files using wildcard pattern matching.
   ```cmake
   file(GLOB SOURCES "src/*.cpp")
   ```
-- > Tip: For modern CMake ***it is NOT recommended to use a variable for sources***. Instead it is typical to directly declare the sources in the `add_xxx` function. <br> This is particularly important for glob commands which may not always show you the correct results if you add a new source file.
+- > Tip: For modern CMake ***it is <ins>NOT</ins> recommended to use a variable for sources***. Instead it is typical to directly declare the sources in the ***`add_xxx`*** function. <br> This is particularly important for glob commands which may not always show you the correct results if you add a new source file.
 - > **Including Directories**
-  * > When you have different include folders, you can make your compiler aware of them using the ***`target_include_directories()`*** function. When compiling this target this will add these directories to the compiler with the ***`-I`*** flag e.g. `-I/directory/path`
+  * > When you have different include folders, you can make your compiler aware of them using the ***`target_include_directories()`*** [function](https://cmake.org/cmake/help/v3.0/command/target_include_directories.html). When compiling this target this will add these directories to the compiler with the ***`-I`*** flag e.g. `-I/directory/path`
     ```cmake
     target_include_directories(target
         PRIVATE
@@ -43,6 +44,47 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
     )
     ```
     > The ***`PRIVATE`*** identifier specifies the scope of the include. ***This is important for libraries and is explained in the next example***. More details on the function is available [here](https://cmake.org/cmake/help/v3.0/command/target_include_directories.html).
+- > **Standard Output**
+  ```console
+  $ make
+  Scanning dependencies of target hello_headers
+  [ 50%] Building CXX object CMakeFiles/hello_headers.dir/src/Hello.cpp.o
+  [100%] Building CXX object CMakeFiles/hello_headers.dir/src/main.cpp.o
+  Linking CXX executable hello_headers
+  [100%] Built target hello_headers
+  ```
+- > **Verbose Output**
+  * > In the previous examples, when running the `make` command the output only shows the status of the build. To see the full output for debugging purposes you can add ***`VERBOSE=1`*** flag when running `make`.
+  * > The ***`VERBOSE`*** output is show below, and a examination of the output shows the include directories being added to the c++ compiler command.  【--> 一句里面两个语法错误，瞬间让我以为我记错仓库了。。。】
+    ```console
+    $ make clean
+    
+    $ make VERBOSE=1
+    /usr/bin/cmake -H/home/matrim/workspace/cmake-examples/01-basic/hello_headers -B/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build --check-build-system CMakeFiles/Makefile.cmake 0
+    /usr/bin/cmake -E cmake_progress_start /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles/progress.marks
+    make -f CMakeFiles/Makefile2 all
+    make[1]: Entering directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
+    make -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/depend
+    make[2]: Entering directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
+    cd /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/matrim/workspace/cmake-examples/01-basic/hello_headers /home/matrim/workspace/cmake-examples/01-basic/hello_headers /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles/hello_headers.dir/DependInfo.cmake --color=
+    make[2]: Leaving directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
+    make -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/build
+    make[2]: Entering directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
+    /usr/bin/cmake -E cmake_progress_report /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles 1
+    [ 50%] Building CXX object CMakeFiles/hello_headers.dir/src/Hello.cpp.o
+    /usr/bin/c++    -I/home/matrim/workspace/cmake-examples/01-basic/hello_headers/include    -o CMakeFiles/hello_headers.dir/src/Hello.cpp.o -c /home/matrim/workspace/cmake-examples/01-basic/hello_headers/src/Hello.cpp
+    /usr/bin/cmake -E cmake_progress_report /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles 2
+    [100%] Building CXX object CMakeFiles/hello_headers.dir/src/main.cpp.o
+    /usr/bin/c++    -I/home/matrim/workspace/cmake-examples/01-basic/hello_headers/include    -o CMakeFiles/hello_headers.dir/src/main.cpp.o -c /home/matrim/workspace/cmake-examples/01-basic/hello_headers/src/main.cpp
+    Linking CXX executable hello_headers
+    /usr/bin/cmake -E cmake_link_script CMakeFiles/hello_headers.dir/link.txt --verbose=1
+    /usr/bin/c++       CMakeFiles/hello_headers.dir/src/Hello.cpp.o CMakeFiles/hello_headers.dir/src/main.cpp.o  -o hello_headers -rdynamic
+    make[2]: Leaving directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
+    /usr/bin/cmake -E cmake_progress_report /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles  1 2
+    [100%] Built target hello_headers
+    make[1]: Leaving directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
+    /usr/bin/cmake -E cmake_progress_start /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles 0
+    ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
