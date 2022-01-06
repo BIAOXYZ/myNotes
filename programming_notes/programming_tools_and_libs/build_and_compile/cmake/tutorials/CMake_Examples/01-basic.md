@@ -44,6 +44,7 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
     )
     ```
     > The ***`PRIVATE`*** identifier specifies the scope of the include. ***This is important for <ins>libraries</ins> and is explained in the next example***. More details on the function is available [here](https://cmake.org/cmake/help/v3.0/command/target_include_directories.html).
+    >> //notes：实际项目中基本都是简单粗暴地直接用 ***`include_directories()`*** 就可以了。。。
 - > **Standard Output**
   ```console
   $ make
@@ -96,7 +97,7 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
         src/Hello.cpp
     )
     ```
-  * > This will be used to create a **static library*** with the name `libhello_library.a` with the sources in the ***`add_library`*** call.
+  * > This will be used to create a ***static library*** with the name `libhello_library.a` with the sources in the ***`add_library`*** call.
 - > **Populating Including Directories**
   * > In this example, we include directories in the library using the ***`target_include_directories()`*** function with the scope set to ***`PUBLIC`*** .
     ```cmake
@@ -139,3 +140,36 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+D-shared-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/D-shared-library/README.adoc
+- > **Adding a Shared Library**
+  * > As with the previous example on ***static libraries***, the ***`add_library()`*** function is also used to create a ***shared library*** from some source files. This is called as follows:
+    ```cmake
+    add_library(hello_library SHARED
+        src/Hello.cpp
+    )
+    ```
+    > This will be used to create a ***shared library*** with the name `libhello_library.so` with the sources passed to the ***`add_library()`*** function.
+- > **Alias Target**
+  * > As the name suggests an [alias target](https://cmake.org/cmake/help/v3.0/manual/cmake-buildsystem.7.html#alias-targets) is ***an alternative name for a target*** that can be used instead of the real target name ***in read-only contexts***.
+    ```cmake
+    add_library(hello::library ALIAS hello_library)
+    ```
+    > As shown below, this allows you to reference the target using the alias name when linking it against other targets.
+- > **Linking a Shared Library**
+  * > Linking a shared library is the same as linking a static library. When creating your executable use the the ***`target_link_library()`*** function to point to your library
+    ```cmake
+    add_executable(hello_binary
+        src/main.cpp
+    )
+
+    target_link_libraries(hello_binary
+        PRIVATE
+            hello::library
+    )
+    ```
+    > This tells CMake to link the `hello_library` against the `hello_binary executable` using the alias target name.
+  * > An example of this being called by the linker is
+    ```sh
+    /usr/bin/c++ CMakeFiles/hello_binary.dir/src/main.cpp.o -o hello_binary -rdynamic libhello_library.so -Wl,-rpath,/home/matrim/workspace/cmake-examples/01-basic/D-shared-library/build
+    ```
