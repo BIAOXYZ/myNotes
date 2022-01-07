@@ -202,6 +202,7 @@ E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-in
         DESTINATION etc)
     ```
     > Install a configuration file to the destination `${CMAKE_INSTALL_PREFIX}/etc`
+    >> 【[:star:][`*`]】 //notes：注意，上面涉及的 `bin`、`lib`、`include`、`etc` 都是可以改的，只是一般大家都用这些而已。我改成 `bin123`、`lib456`、`include789`、`etc000` 试了照样可以成功。目录不存在也没关系，只要用户权限够就会自动创建。
   * > After `make install` has been run, CMake generates an ***`install_manifest.txt`*** file which includes details on all installed files.
     * > Note: If you run the `make install` command as `root`, the ***`install_manifest.txt`*** file will be owned by `root`.
 - > **Extra Notes**
@@ -215,12 +216,13 @@ E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-in
       endif()
       ```
       > This example sets the default install location to under your build directory.
+      >> 【[:star:][`*`]】 //notes：更具体的说，由于我们在这一系列教程里都新建一个 `build` 目录去生成 `Makefile` 等文件，并在该目录里执行后续 `make` 相关命令，因此上述例子里的修改会把prefix变成 `其他前缀路径/project_root/build/install`。
   * > **DESTDIR**
     + > If you wish to stage your install to confirm that all files are included, the ***`make install` target*** supports the ***`DESTDIR`*** argument.
       ```sh
       make install DESTDIR=/tmp/stage
       ```
-    + > This will create the install path `${DESTDIR}/${CMAKE_INSTALL_PREFIX}` for all your installation files. In this example, it would install all files under the path `/tmp/stage/usr/local`
+    + > This will create the install path ***`${DESTDIR}/${CMAKE_INSTALL_PREFIX}`*** for all your installation files. In this example, it would install all files under the path `/tmp/stage/usr/local`
       ```sh
       $ tree /tmp/stage
       /tmp/stage
@@ -242,5 +244,9 @@ E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-in
       sudo xargs rm < install_manifest.txt
       ```
       >> 【[:star:][`*`]】 //notes：这个技巧不错！
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+F-build-type https://github.com/ttroy50/cmake-examples/blob/master/01-basic/F-build-type/README.adoc
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
