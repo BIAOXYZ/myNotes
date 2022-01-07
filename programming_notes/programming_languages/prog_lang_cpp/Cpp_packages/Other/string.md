@@ -168,6 +168,8 @@ Splitting: c:\windows\winhelp.exe
 
 C++ string to int Conversion https://www.programiz.com/cpp-programming/string-int-conversion
 
+How can I convert a std::string to int? https://stackoverflow.com/questions/7663709/how-can-i-convert-a-stdstring-to-int
+
 # 问题
 
 Empty character constant in c++ https://stackoverflow.com/questions/31193454/empty-character-constant-in-c
