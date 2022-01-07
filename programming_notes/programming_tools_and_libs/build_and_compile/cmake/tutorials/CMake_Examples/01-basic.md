@@ -178,10 +178,10 @@ D-shared-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-installing/README.adoc
-- > This example shows how to generate a `make install` target to install files and binaries on your system. This is ***based on the previous shared library example***.
+- > This example shows how to generate a ***`make install` target*** to install files and binaries on your system. This is ***based on the previous shared library example***.
 - > **Installing**
-  * > CMake offers the ability to add a `make install` target to allow a user to install binaries, libraries and other files. The base install location is controlled by the variable ***`CMAKE_INSTALL_PREFIX`*** which can be set using `ccmake` or by calling `cmake` with `cmake .. -DCMAKE_INSTALL_PREFIX=/install/location`
-  * > The files that are installed are controlled by the ***`install()`*** function.
+  * > CMake offers the ability to add a ***`make install` target*** to allow a user to install binaries, libraries and other files. The base install location is controlled by the variable ***`CMAKE_INSTALL_PREFIX`*** which can be set using `ccmake` or by calling `cmake` with ***`cmake .. -DCMAKE_INSTALL_PREFIX=/install/location`***
+  * > The files that are installed are controlled by the [***`install()`***](https://cmake.org/cmake/help/v3.0/command/install.html) function.
     ```cmake
     install (TARGETS cmake_examples_inst_bin
         DESTINATION bin)
@@ -203,11 +203,11 @@ E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-in
     ```
     > Install a configuration file to the destination `${CMAKE_INSTALL_PREFIX}/etc`
   * > After `make install` has been run, CMake generates an ***`install_manifest.txt`*** file which includes details on all installed files.
-    * > Note: If you run the make install command as root, the install_manifest.txt file will be owned by root.
+    * > Note: If you run the `make install` command as `root`, the ***`install_manifest.txt`*** file will be owned by `root`.
 - > **Extra Notes**
   * > **Overriding the default install location**
-    + > As mentioned the default install location is set from the `CMAKE_INSTALL_PREFIX`, which defaults to `/usr/local/`
-    + > If you want to change this default location for all users you can add the following code to your top level CMakeLists.txt before adding any binaries or libraries.
+    + > As mentioned the ***default install location*** is set from the ***`CMAKE_INSTALL_PREFIX`***, which defaults to ***`/usr/local/`***
+    + > If you want to change this default location for all users you can add the following code to your top level `CMakeLists.txt` before adding any binaries or libraries.
       ```cmake
       if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
         message(STATUS "Setting default CMAKE_INSTALL_PREFIX path to ${CMAKE_BINARY_DIR}/install")
@@ -234,11 +234,13 @@ E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-in
                   └── libcmake_examples_inst.so
       ```
       >> 【[:star:][`*`]】 //notes：注意，这是一个使用 `make` 的技巧，而不是 `cmake` 的。
+      >>> 原文里那个 “stage” 的意思有点类似 git 的 `stage area` （暂存区）里的那个 stage。主要就是想表达：可以把所有要安装的东西先安装到一个容易删掉的目录里，看看是不是对着，挺像 dry-run 的效果的。
   * > **Uninstall**
-    + > By default CMake does not add a ***`make uninstall` target***. For details on how to generate an uninstall target see this [FAQ](https://cmake.org/Wiki/CMake_FAQ#Can_I_do_.22make_uninstall.22_with_CMake.3F)
+    + > By default CMake does not add a ***`make uninstall` target***. For details on how to generate an ***`uninstall` target*** see this [FAQ](https://cmake.org/Wiki/CMake_FAQ#Can_I_do_.22make_uninstall.22_with_CMake.3F)
     + > For an easy way to remove the files from this example, you can use:
       ```sh
       sudo xargs rm < install_manifest.txt
       ```
+      >> 【[:star:][`*`]】 //notes：这个技巧不错！
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
