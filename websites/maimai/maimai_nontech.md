@@ -12,6 +12,7 @@
 
 IG上最近字节期权交易对应估值降到了均价2600亿美元，对应173刀估值，血亏 https://maimai.cn/web/gossip_detail?src=app&webid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiNDNhNDBhY2RiOWU1MTFlYmFiYzMyNDZlOTZiNDgwODgiLCJ1IjoxOTU4OTUxOTUsImlkIjoyOTAwMTk4M30.YDcPrsHWGlQzeQ_Xc78n5qoqHUrESwX_LzW2hu7a1R8
 - IG 期权交易 https://www.ig.com/zh/options-trading
+  * 如何在网页平台上交易期权？ https://www.ig.com/zh/help-and-support/platforms/web-trading-platform/how-can-i-trade-options-on-the-web-platform
 
 老哥们，微软亚洲sde,sde2,senior sde薪资大概是什么范围呢？工作5年的7，身体确实吃不消了，太劳心，想找个能安心写码的外企，但是确实也不想薪资砍半。 https://maimai.cn/web/gossip_detail?src=app&webid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiZDAzZmEyZDRlODIxMTFlYWFiMmYyNDZlOTZiNDgwODgiLCJ1IjoxOTU4OTUxOTUsImlkIjoyNzE1MDE3OX0.I-Zf9rvnB6m9_jeVt0xSlFpdiohhq9cu95RrS32Xe4w
 - > http://duibiao.info/

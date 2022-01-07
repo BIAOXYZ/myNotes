@@ -237,3 +237,9 @@ MacOS中Dock栏的设置和使用技巧，新手必看 - 马可菠萝的文章 -
 os.mknod() fails on MacOS? https://stackoverflow.com/questions/32115715/os-mknod-fails-on-macos
 - https://stackoverflow.com/questions/32115715/os-mknod-fails-on-macos/32115794#32115794
   * > `sudo python -c "import os; os.mknod('/tmp/test123')"`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他人发现的bug
+
+【[:star:][`*`]】 如果你不想天天被 bug 气到，就不要买 Mac https://www.v2ex.com/t/826753
