@@ -11,10 +11,10 @@ A-hello-cmake https://github.com/ttroy50/cmake-examples/blob/master/01-basic/A-h
   * > The root or top level folder that you run the cmake command from is known as your ***`CMAKE_BINARY_DIR`*** and is the root folder for all your binary files. CMake supports building and generating your binary files both ***in-place*** and also ***out-of-source***.
   * > **In-Place Build**
     + > In-place builds generate all temporary build files in the same directory structure as the source code. This means that all Makefiles and object files are interspersed with your normal code. ***To create an in-place build target run the `cmake` command in your root directory***.
-      >> 注意：基本不要用这种方式来build！！！
+      >> 【[:star:][`*`]】 //notes：注意：一般不用这种方式来build！！！
   * > **Out-of-Source Build**
     + > Out-of-source builds allow you ***to create a single build folder*** that can be ***anywhere on your file system***. ***All temporary build and object files are located in this directory keeping your source tree clean***. To create an out-of-source build ***run the `cmake` command in the build folder and point it to the directory with your `root CMakeLists.txt` file***. Using out-of-source builds if you want to recreate your cmake environment from scratch, you only need to delete your build directory and then rerun cmake.
-      >> //notes：用 Out-of-source build 的方式很简单，一般都是在项目根目录下建一个 `build` 或者 `_build` 目录，然后进到这个目录里执行 `cmake ..`（如果 `build` 目录在其他位置，则 `cmake` 命令后的目录位置也要相应变化）。实际上，我经常是搞两个目录，一个叫 `debugbuild` 一个叫 `releasebuild`。
+      >> 【[:star:][`*`]】 //notes：用 Out-of-source build 的方式很简单，一般都是在项目根目录下建一个 `build` 或者 `_build` 目录，然后进到这个目录里执行 `cmake ..`（如果 `build` 目录在其他位置，则 `cmake` 命令后的目录位置也要相应变化）。实际上，我经常是搞两个目录，一个叫 `debugbuild` 一个叫 `releasebuild`。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -44,7 +44,7 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
     )
     ```
     > The ***`PRIVATE`*** identifier specifies the scope of the include. ***This is important for <ins>libraries</ins> and is explained in the next example***. More details on the function is available [here](https://cmake.org/cmake/help/v3.0/command/target_include_directories.html).
-    >> //notes：实际项目中基本都是简单粗暴地直接用 ***`include_directories()`*** 就可以了。。。
+    >> 【[:star:][`*`]】 //notes：实际项目中基本都是简单粗暴地直接用 ***`include_directories()`*** 就可以了。。。
 - > **Standard Output**
   ```console
   $ make
@@ -86,6 +86,7 @@ B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B
     make[1]: Leaving directory `/home/matrim/workspace/cmake-examples/01-basic/hello_headers/build'
     /usr/bin/cmake -E cmake_progress_start /home/matrim/workspace/cmake-examples/01-basic/hello_headers/build/CMakeFiles 0
     ```
+    >> 【[:star:][`*`]】 //notes：注意，这是一个使用 `make` 的技巧，而不是 `cmake` 的。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -120,7 +121,7 @@ C-static-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     #include "static/Hello.h"
     ```
     > Using this method means that there is less chance of header filename clashes when you use multiple libraries in your project.
-    >> //notes：上面这段话的意思是说：你的 include 目录应该用子目录细分一下，然后添加 include 的目录的时候，把那个 include 相关的最高级目录加进去。但是在代码文件里用 `#include "xxx"` 引入某个头文件时，用从 ***include的根目录*** 出发直到 ***该头文件位置***（也就是中间会包含一些子目录）的形式，比如：`#include "subfold1/subfold2/.../xxx"`。这样的好处是减少冲突。
+    >> 【[:star:][`*`]】 //notes：上面这段话的意思是说：你的 include 目录应该用子目录细分一下，然后添加 include 的目录的时候，把那个 include 相关的最高级目录加进去。但是在代码文件里用 `#include "xxx"` 引入某个头文件时，用从 ***include的根目录*** 出发直到 ***该头文件位置***（也就是中间会包含一些子目录）的形式，比如：`#include "subfold1/subfold2/.../xxx"`。这样的好处是减少冲突。
 - > **Linking a Library**
   * > When creating ***an executable that will use your library you must tell the compiler about the library***. This can be done using the ***`target_link_libraries()`*** function.
     ```cmake
@@ -173,3 +174,71 @@ D-shared-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/
     ```sh
     /usr/bin/c++ CMakeFiles/hello_binary.dir/src/main.cpp.o -o hello_binary -rdynamic libhello_library.so -Wl,-rpath,/home/matrim/workspace/cmake-examples/01-basic/D-shared-library/build
     ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+E-installing https://github.com/ttroy50/cmake-examples/blob/master/01-basic/E-installing/README.adoc
+- > This example shows how to generate a `make install` target to install files and binaries on your system. This is ***based on the previous shared library example***.
+- > **Installing**
+  * > CMake offers the ability to add a `make install` target to allow a user to install binaries, libraries and other files. The base install location is controlled by the variable ***`CMAKE_INSTALL_PREFIX`*** which can be set using `ccmake` or by calling `cmake` with `cmake .. -DCMAKE_INSTALL_PREFIX=/install/location`
+  * > The files that are installed are controlled by the ***`install()`*** function.
+    ```cmake
+    install (TARGETS cmake_examples_inst_bin
+        DESTINATION bin)
+    ```
+    > Install the binary generated from the target `cmake_examples_inst_bin` target to the destination `${CMAKE_INSTALL_PREFIX}/bin`
+    ```cmake
+    install (TARGETS cmake_examples_inst
+        LIBRARY DESTINATION lib)
+    ```
+    > Install the shared library generated from the target `cmake_examples_inst` target to the destination `${CMAKE_INSTALL_PREFIX}/lib`
+    ```cmake
+    install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/
+        DESTINATION include)
+    ```
+    > Install the header files for developing against the `cmake_examples_inst` library into the `${CMAKE_INSTALL_PREFIX}/include` directory.
+    ```cmake
+    install (FILES cmake-examples.conf
+        DESTINATION etc)
+    ```
+    > Install a configuration file to the destination `${CMAKE_INSTALL_PREFIX}/etc`
+  * > After `make install` has been run, CMake generates an ***`install_manifest.txt`*** file which includes details on all installed files.
+    * > Note: If you run the make install command as root, the install_manifest.txt file will be owned by root.
+- > **Extra Notes**
+  * > **Overriding the default install location**
+    + > As mentioned the default install location is set from the `CMAKE_INSTALL_PREFIX`, which defaults to `/usr/local/`
+    + > If you want to change this default location for all users you can add the following code to your top level CMakeLists.txt before adding any binaries or libraries.
+      ```cmake
+      if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
+        message(STATUS "Setting default CMAKE_INSTALL_PREFIX path to ${CMAKE_BINARY_DIR}/install")
+        set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE STRING "The path to use for make install" FORCE)
+      endif()
+      ```
+      > This example sets the default install location to under your build directory.
+  * > **DESTDIR**
+    + > If you wish to stage your install to confirm that all files are included, the ***`make install` target*** supports the ***`DESTDIR`*** argument.
+      ```sh
+      make install DESTDIR=/tmp/stage
+      ```
+    + > This will create the install path `${DESTDIR}/${CMAKE_INSTALL_PREFIX}` for all your installation files. In this example, it would install all files under the path `/tmp/stage/usr/local`
+      ```sh
+      $ tree /tmp/stage
+      /tmp/stage
+      └── usr
+          └── local
+              ├── bin
+              │   └── cmake_examples_inst_bin
+              ├── etc
+              │   └── cmake-examples.conf
+              └── lib
+                  └── libcmake_examples_inst.so
+      ```
+      >> 【[:star:][`*`]】 //notes：注意，这是一个使用 `make` 的技巧，而不是 `cmake` 的。
+  * > **Uninstall**
+    + > By default CMake does not add a ***`make uninstall` target***. For details on how to generate an uninstall target see this [FAQ](https://cmake.org/Wiki/CMake_FAQ#Can_I_do_.22make_uninstall.22_with_CMake.3F)
+    + > For an easy way to remove the files from this example, you can use:
+      ```sh
+      sudo xargs rm < install_manifest.txt
+      ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
