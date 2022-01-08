@@ -290,8 +290,12 @@ G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G
     )
     ```
     > This will cause the compiler to add the definition `-DEX3` when compiling the target.
-  * > If the target was a library and the scope `PUBLIC` or `INTERFACE` has been chosen the definition would also be included in any executables that link this target.
+  * > If the ***target was a library*** and the scope `PUBLIC` or `INTERFACE` has been chosen the definition would also be included in any executables that link this target.
+    >> 【[:star:][`*`]】 //notes：验证了我前面的笔记：那些scope之类的是对编译生成的库而言的，因为只有库才会被后续的各种编译目标链接，从而可能会有各种“传导”。说到“传导”，比起前面的“传导” `include目录`，这里“传导” `编译flag` 更复杂了，还涉及另外两个变量：`COMPILE_DEFINITIONS` 和 `INTERFACE_COMPILE_DEFINITIONS`。这里直接引用官方文档了：
+    >>> The `INTERFACE`, `PUBLIC` and `PRIVATE` keywords are required to specify the scope of the following arguments. `PRIVATE` and `PUBLIC` items will populate the [COMPILE_DEFINITIONS](https://cmake.org/cmake/help/latest/prop_tgt/COMPILE_DEFINITIONS.html) property of `<target>`. `PUBLIC` and `INTERFACE` items will populate the [INTERFACE_COMPILE_DEFINITIONS](https://cmake.org/cmake/help/latest/prop_tgt/INTERFACE_COMPILE_DEFINITIONS.html) property of `<target>`.
+    >>>> 简单总结官方文档就是：如果是 `PRIVATE`，就传导 `COMPILE_DEFINITIONS`；如果是 `INTERFACE`，就传导 `INTERFACE_COMPILE_DEFINITIONS`；如果是 `PUBLIC`，则两个都传导。
   * > For compiler options you can also use the ***`target_compile_options()`*** [function](https://cmake.org/cmake/help/v3.0/command/target_compile_options.html).
+    >> 【[:star:][`*`]】 //notes：这俩看起来好像。。。至于区别，目前官网都TM没有。。。目前我能搜到的唯一一点大概是：`target_compile_definitions()` 里的东西对应的是 `cmake` 命令里 `-D` 后面的那些参数（`-D` 应该也就是 `definitions` 的缩写了）。这个只能是等后面碰到了再细化，还好一般不会用到这些功能。。。
 - > **Set Default C++ Flags**
   * > The default ***`CMAKE_CXX_FLAGS`*** is ***either empty or contains the appropriate flags for the build type***.
   * > To set ***<ins>additional default</ins>*** compile flags you can add the following to your top level `CMakeLists.txt`
@@ -302,7 +306,8 @@ G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G
     + > Setting C compiler flags using ***`CMAKE_C_FLAGS`***.
     + > Setting linker flags using ***`CMAKE_LINKER_FLAGS`***.
   * > Note: The values ***`CACHE STRING "Set C++ Compiler Flags" FORCE`*** from the above command are ***used to force this variable to be set in the `CMakeCache.txt` file***. For more details, see [here](https://cmake.org/cmake/help/v3.0/command/set.html).
-  * > Once set the `CMAKE_C_FLAGS` and `CMAKE_CXX_FLAGS` will set a compiler flag / definition ***globally*** for all targets ***in this directory or any included sub-directories***. This method is ***not recommended*** for general usage now and the target_compile_definitions function is preferred.
+    >> 【[:star:][`*`]】 //notes：关于这里的 `CACHE ...... FORCE` 的用法，参见下面的回答吧（回答里也指向了上面CMake `set` 命令的官方文档页面）。也是第一次见，看懂了但是先不展开了。
+  * > Once set the `CMAKE_C_FLAGS` and `CMAKE_CXX_FLAGS` will set a compiler flag / definition ***globally*** for all targets ***in this directory or any included sub-directories***. This method is ***not recommended*** for general usage now and the ***`target_compile_definitions`*** function is preferred.
 - > **Set CMake Flags**
   * > Similar to the build type a global C++ compiler flag can be set using the following methods.
     + > Using a gui tool such as `ccmake` / `cmake-gui`

@@ -6,6 +6,10 @@ CMake https://github.com/Kitware/CMake
 
 CMake Tutorial https://cmake.org/cmake/help/v3.19/guide/tutorial/index.html
 
+# 中文版（应该是机翻）
+
+CMake 3.21 (中文) https://runebook.dev/zh-CN/docs/cmake/-index-
+
 # 系统性攻略
 
 cmake使用教程（十一）-使用cpack打包源码并编写自动化脚本上传到仓库 https://juejin.cn/post/6844903641443205128
