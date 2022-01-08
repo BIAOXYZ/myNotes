@@ -1,4 +1,6 @@
 
+RoboMaster视觉教程CMake(一)hello-cmake - 程序员三丰的文章 - 知乎 https://zhuanlan.zhihu.com/p/113554911
+
 A-hello-cmake https://github.com/ttroy50/cmake-examples/blob/master/01-basic/A-hello-cmake/README.adoc
 - > NOTE: A shorthand that some people use is to ***have the project name and executable name the same***. This allows you to specify the `CMakeLists.txt` as follows,
   ```cmake
@@ -277,6 +279,8 @@ F-build-type https://github.com/ttroy50/cmake-examples/blob/master/01-basic/F-bu
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+RoboMaster视觉笔记CMake（六） Compile Flags - 程序员三丰的文章 - 知乎 https://zhuanlan.zhihu.com/p/149212650
+
 G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G-compile-flags/README.adoc
 - > **Introduction**
   * > CMake supports setting compile flags in a number of different ways:
@@ -295,7 +299,7 @@ G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G
     >>> The `INTERFACE`, `PUBLIC` and `PRIVATE` keywords are required to specify the scope of the following arguments. `PRIVATE` and `PUBLIC` items will populate the [COMPILE_DEFINITIONS](https://cmake.org/cmake/help/latest/prop_tgt/COMPILE_DEFINITIONS.html) property of `<target>`. `PUBLIC` and `INTERFACE` items will populate the [INTERFACE_COMPILE_DEFINITIONS](https://cmake.org/cmake/help/latest/prop_tgt/INTERFACE_COMPILE_DEFINITIONS.html) property of `<target>`.
     >>>> 简单总结官方文档就是：如果是 `PRIVATE`，就传导 `COMPILE_DEFINITIONS`；如果是 `INTERFACE`，就传导 `INTERFACE_COMPILE_DEFINITIONS`；如果是 `PUBLIC`，则两个都传导。
   * > For compiler options you can also use the ***`target_compile_options()`*** [function](https://cmake.org/cmake/help/v3.0/command/target_compile_options.html).
-    >> 【[:star:][`*`]】 //notes：这俩看起来好像。。。至于区别，目前官网都TM没有。。。目前我能搜到的唯一一点大概是：`target_compile_definitions()` 里的东西对应的是 `cmake` 命令里 `-D` 后面的那些参数（`-D` 应该也就是 `definitions` 的缩写了）。这个只能是等后面碰到了再细化，还好一般不会用到这些功能。。。
+    >> 【[:star:][`*`]】 //notes：这俩看起来好像。。。至于区别，官网都TM没有。。。目前我能搜到的唯一一点大概是：`target_compile_definitions()` 里的东西对应的是 `cmake` 命令里 `-D` 后面的那些参数（`-D` 应该也就是 `definitions` 的缩写了）。这个只能是等后面碰到了再细化，还好一般不会用到这些功能。。。
 - > **Set Default C++ Flags**
   * > The default ***`CMAKE_CXX_FLAGS`*** is ***either empty or contains the appropriate flags for the build type***.
   * > To set ***<ins>additional default</ins>*** compile flags you can add the following to your top level `CMakeLists.txt`
@@ -307,6 +311,7 @@ G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G
     + > Setting linker flags using ***`CMAKE_LINKER_FLAGS`***.
   * > Note: The values ***`CACHE STRING "Set C++ Compiler Flags" FORCE`*** from the above command are ***used to force this variable to be set in the `CMakeCache.txt` file***. For more details, see [here](https://cmake.org/cmake/help/v3.0/command/set.html).
     >> 【[:star:][`*`]】 //notes：关于这里的 `CACHE ...... FORCE` 的用法，参见下面的回答吧（回答里也指向了上面CMake `set` 命令的官方文档页面）。也是第一次见，看懂了但是先不展开了。
+    >>> what does "CACHE STRING" in CMake CMakeLists file mean? https://stackoverflow.com/questions/36097090/what-does-cache-string-in-cmake-cmakelists-file-mean
   * > Once set the `CMAKE_C_FLAGS` and `CMAKE_CXX_FLAGS` will set a compiler flag / definition ***globally*** for all targets ***in this directory or any included sub-directories***. This method is ***not recommended*** for general usage now and the ***`target_compile_definitions`*** function is preferred.
 - > **Set CMake Flags**
   * > Similar to the build type a global C++ compiler flag can be set using the following methods.
@@ -315,5 +320,9 @@ G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G
       ```sh
       cmake .. -DCMAKE_CXX_FLAGS="-DEX3"
       ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+H-third-party-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/H-third-party-library/README.adoc
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

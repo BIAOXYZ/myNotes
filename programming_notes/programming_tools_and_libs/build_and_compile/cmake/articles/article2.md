@@ -1,5 +1,15 @@
 
 CMake构建系统 - fangcun的文章 - 知乎 https://zhuanlan.zhihu.com/p/56167140
+- > **构建配置和构建需求**
+  + > `target_include_directories()`，`target_compile_definitions()` 和 `target_compile_options()` 指令可以用来配置构建选项和构建需要的二进制目标。这些命令将它们的参数填入对应的`INCLUDE_DIRECTORIES`，`COMPILE_DEFINITIONS` 和 `COMPILE_OPTIONS` 目标属性，以及对应的 `INTERFACE_INCLUDE_DIRECTORIES`，`INTERFACE_COMPILE_DEFINITIONS` 和 `INTERFACE_COMPILE_OPTIONS` 目标属性。
+  + > 这些指令具有 `PRIVATE`，`PUBLIC` 和 `INTERFACE` 三个模式。`PRIVATE` 模式下，参数只填入non-INTERFACE类目标属性，`INTERFACE` 模式下只填入INTERFACE_类目标属性。`PUBLIC` 模式下，填入所有类型的目标属性。每条指令可以多次使用模式关键字，比如：
+    ```cmake
+    target_compile_definitions(archive
+      PRIVATE BUILDING_WITH_LZMA
+      INTERFACE USING_ARCHIVE_LIB
+    )
+    ```
+    > 需要注意构建需求的设计不仅仅是为了传递编译选项给下游。设置的参数必须是构建需求。
 - > **目标属性**
   * > `INCLUDE_DIRECTORIES`，`COMPILE_DEFINITIONS` 和 `COMPILE_OPTIONS` 目标属性在编译二进制目标的源文件时被使用。
   * > `INCLUDE_DIRECTORIES` 属性中的条目会被加上 `-I` 或 `-isystem` 前缀，按照条目在属性中出现的顺序加入编译使用的命令行中。
