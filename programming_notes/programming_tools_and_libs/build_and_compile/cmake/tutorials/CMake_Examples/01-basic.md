@@ -251,12 +251,10 @@ F-build-type https://github.com/ttroy50/cmake-examples/blob/master/01-basic/F-bu
 - > **Introduction**
   * > CMake has a number of built in build configurations which can be used to compile your project. These specify ***the optimization levels*** and ***if debug information is to be included in the binary***.
   * > The levels provided are:
-    ```console
-    Release - Adds the -O3 -DNDEBUG flags to the compiler
-    Debug - Adds the -g flag
-    MinSizeRel - Adds -Os -DNDEBUG
-    RelWithDebInfo - Adds -O2 -g -DNDEBUG flags
-    ```
+    + > `Release` - Adds the `-O3 -DNDEBUG` flags to the compiler
+    + > `Debug` - Adds the `-g` flag
+    + > `MinSizeRel` - Adds `-Os -DNDEBUG`
+    + > `RelWithDebInfo` - Adds `-O2 -g -DNDEBUG` flags
 - > **Set Build Type**
   * > The build type can be set using the following methods.
     + > Using a gui tool such as `ccmake` / `cmake-gui`
@@ -276,5 +274,41 @@ F-build-type https://github.com/ttroy50/cmake-examples/blob/master/01-basic/F-bu
         "MinSizeRel" "RelWithDebInfo")
     endif()
     ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G-compile-flags/README.adoc
+- > **Introduction**
+  * > CMake supports setting compile flags in a number of different ways:
+    + > using ***`target_compile_definitions()`*** function
+    + > using the ***`CMAKE_C_FLAGS`*** and ***`CMAKE_CXX_FLAGS`*** variables.
+- > **Set Per-Target C++ Flags**
+  * > ***The recommended way*** to set C++ flags in modern CMake is to use ***per-target flags*** which can be populated to other targets through the ***`target_compile_definitions()`*** [function](https://cmake.org/cmake/help/v3.0/command/target_compile_definitions.html?highlight=target_compile_definitions). This will populate the [INTERFACE_COMPILE_DEFINITIONS](https://cmake.org/cmake/help/v3.0/prop_tgt/INTERFACE_COMPILE_DEFINITIONS.html#prop_tgt:INTERFACE_COMPILE_DEFINITIONS) for the library and ***push the definition to the linked target depending on the scope***.
+    ```cmake
+    target_compile_definitions(cmake_examples_compile_flags
+        PRIVATE EX3
+    )
+    ```
+    > This will cause the compiler to add the definition `-DEX3` when compiling the target.
+  * > If the target was a library and the scope `PUBLIC` or `INTERFACE` has been chosen the definition would also be included in any executables that link this target.
+  * > For compiler options you can also use the ***`target_compile_options()`*** [function](https://cmake.org/cmake/help/v3.0/command/target_compile_options.html).
+- > **Set Default C++ Flags**
+  * > The default ***`CMAKE_CXX_FLAGS`*** is ***either empty or contains the appropriate flags for the build type***.
+  * > To set ***<ins>additional default</ins>*** compile flags you can add the following to your top level `CMakeLists.txt`
+    ```cmake
+    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DEX2" CACHE STRING "Set C++ Compiler Flags" FORCE)
+    ```
+  * > Similarly to ***`CMAKE_CXX_FLAGS`*** other options include:
+    + > Setting C compiler flags using ***`CMAKE_C_FLAGS`***.
+    + > Setting linker flags using ***`CMAKE_LINKER_FLAGS`***.
+  * > Note: The values ***`CACHE STRING "Set C++ Compiler Flags" FORCE`*** from the above command are ***used to force this variable to be set in the `CMakeCache.txt` file***. For more details, see [here](https://cmake.org/cmake/help/v3.0/command/set.html).
+  * > Once set the `CMAKE_C_FLAGS` and `CMAKE_CXX_FLAGS` will set a compiler flag / definition ***globally*** for all targets ***in this directory or any included sub-directories***. This method is ***not recommended*** for general usage now and the target_compile_definitions function is preferred.
+- > **Set CMake Flags**
+  * > Similar to the build type a global C++ compiler flag can be set using the following methods.
+    + > Using a gui tool such as `ccmake` / `cmake-gui`
+    + > Passing into cmake
+      ```sh
+      cmake .. -DCMAKE_CXX_FLAGS="-DEX3"
+      ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
