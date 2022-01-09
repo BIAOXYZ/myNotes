@@ -1,6 +1,10 @@
 
 Python 中如何直接 import 某个 dll https://www.v2ex.com/t/741469
 
+# C & Python
+
+Python3 如何调用 C 语言代码 https://blog.csdn.net/yilovexing/article/details/117527246
+
 # C++ & Python
 
 python 调用 C++ code https://blog.csdn.net/abcjennifer/article/details/49374307

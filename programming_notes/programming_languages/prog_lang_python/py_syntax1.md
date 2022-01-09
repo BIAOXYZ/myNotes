@@ -108,6 +108,10 @@ Python `*args` and `**kwargs` https://www.programiz.com/python-programming/args-
 
 `1. *args and **kwargs` https://book.pythontips.com/en/latest/args_and_kwargs.html
 
+Python3 序列解包 https://blog.csdn.net/yilovexing/article/details/80576788
+
+Python3 `*` 和 `**` 运算符 https://blog.csdn.net/yilovexing/article/details/80577510
+
 ## 像C/C++一样只是 `int a;`，但不给 `a` 赋初始值
 >> //notes：没想到的时候觉得不知道怎么办（因为python里直接写个变量名不行），但是一旦看到了就立刻明白了。。。其实就是 `a = None` 即可。
 
