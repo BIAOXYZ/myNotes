@@ -8,6 +8,17 @@
 
 std::function https://en.cppreference.com/w/cpp/utility/functional/function
 
+Lambda expressions (since C++11) https://en.cppreference.com/w/cpp/language/lambda
+- > **Syntax**
+```console
+[ captures ] ( params ) specs requires(optional) { body }	                                  (1)	
+[ captures ] { body }	                                                                      (2)	(until C++23)
+[ captures ] specs { body }	                                                                (2)	(since C++23)
+[ captures ] < tparams > requires(optional) ( params ) specs requires(optional) { body }	  (3)	(since C++20)
+[ captures ] < tparams > requires(optional) { body }	                                      (4)	(since C++20) (until C++23)
+[ captures ] < tparams > requires(optional) specs { body }	                                (4)	(since C++23)
+```
+
 # 其他
 
 深入浅出C++的function - 李超的文章 - 知乎 https://zhuanlan.zhihu.com/p/161356621
@@ -50,3 +61,32 @@ C++ lambda表达式与函数对象 https://www.jianshu.com/p/d686ad9de817
 C++匿名函数的使用 https://www.cnblogs.com/yaya12138/p/11815475.html
 
 C++ 匿名函数 https://blog.csdn.net/zhang14916/article/details/101058089
+
+C++ lambda 递归调用 https://segmentfault.com/q/1010000007759236
+- > 提前声明merge，然后capture
+  ```cpp
+  std::function<void(int,int,int,int)> merge;
+  merge = [&lst, &tmp, &merge](int first, int first_tail, int second, int second_tail) -> void {
+      // 存在任一子串的长度大于 2 ，则将其拆分成两个子串归并
+      int mid = 0;
+      if (first_tail - first > 1) {
+          mid = (first_tail + first) / 2;
+          merge(first, mid, mid, first_tail);
+      }
+      if (second_tail - second > 1) {
+          mid = (second_tail + second) / 2;
+          merge(second, mid, mid, second_tail);
+      }
+      // 临时空间的索引
+      int i = 0;
+      // 归并操作,两个序列均未取完，则先取小的
+      while (first < first_tail && second < second_tail) {
+          tmp[i++] = lst[first] < lst[second] ? lst[first++] : lst[second++];
+      }
+      // 存在一个序列已经取完，则将另一序列剩下的元素取尽
+      while (first < first_tail) tmp[i++] = lst[first++];
+      while (second < second_tail) tmp[i++] = lst[second++];
+      // 回填
+      while (i--) lst[--second_tail] = tmp[i];
+  };
+  ```

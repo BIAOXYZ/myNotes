@@ -85,6 +85,18 @@ tokens
 # `.substr()`
 
 c++截取部分字符串(类似python的切片) https://blog.csdn.net/qq_35975447/article/details/90515218
+- > 头文件：
+  ```cpp
+  #include <string> //注意没有.h  string.h是C的标准字符串函数数，c++中一般起名为ctring.  而string头文件是C++的字符串头文件。
+  ```
+- > 函数原型： 
+  ```cpp
+  string substr(int pos = 0,int n ) const;
+  ```
+- > 参数说明:
+  * > 参数1：pos是必填参数
+  * > 参数2：n是可参数，***表示取多少个字符，不填表示截取到末尾***
+  * > 该函数功能为：返回从pos开始的n个字符组成的字符串，原字符串不被改变
 
 C++字符串分割方法总结 https://www.jianshu.com/p/5876a9f49413
 
