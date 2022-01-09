@@ -13,7 +13,7 @@ add_subdirectory(subbinary)
 
 A-basic https://github.com/ttroy50/cmake-examples/blob/master/02-sub-projects/A-basic/README.adoc
 - > **Introduction**
-  * > This example shows how to setup a CMake project that includes sub-projects. The top level CMakeLists.txt calls the CMakeLists.txt in the sub directories to create the following:
+  * > This example shows how to setup a CMake project that includes sub-projects. The top level `CMakeLists.txt` calls the `CMakeLists.txt` in the sub directories to create the following:
     + > sublibrary1 - A static library
     + > sublibrary2 - A header only library
     + > subbinary - An executable
@@ -38,7 +38,8 @@ A-basic https://github.com/ttroy50/cmake-examples/blob/master/02-sub-projects/A-
             └── sublib2
                 └── sublib2.h
     ```
-  * > Tip: In this example I have moved the header files to a subfolder under each projects include directory, while leaving the target include as the root include folder. ***This is a good idea to prevent filename clashes*** because you have to include a file like below:
+  * > Tip: In this example I have ***moved the header files to a subfolder under each projects include directory***, while leaving the target include as the root include folder. ***This is a good idea to prevent filename clashes*** because you have to include a file like below:
+    >> //notes：这个之前部分（[`01-basic/C-static-library`](https://github.com/ttroy50/cmake-examples/tree/master/01-basic/C-static-library)）就提过了，主要是精细化控制。
     ```cpp
     #include "sublib1/sublib1.h"
     ```
@@ -61,18 +62,18 @@ A-basic https://github.com/ttroy50/cmake-examples/blob/master/02-sub-projects/A-
     | **Variable** | **Info** |
     |:--|:--|
     | ***`PROJECT_NAME`*** | The name of the project set by the current ***`project()`***. |
-    | `CMAKE_PROJECT_NAME` | The name of the first project set by the ***`project()`*** command, i.e. the top level project. |
+    | `CMAKE_PROJECT_NAME` | The name of the first project set by the ***`project()`*** command, i.e. ***the top level project***. |
     | ***`PROJECT_SOURCE_DIR`*** | The source directory of the current project. |
     | `PROJECT_BINARY_DIR` | The build directory for the current project. |
     | `name_SOURCE_DIR` | The source directory of the project called "name". In this example the source directories created would be `sublibrary1_SOURCE_DIR`, `sublibrary2_SOURCE_DIR`, and `subbinary_SOURCE_DIR` |
     | `name_BINARY_DIR` | The binary directory of the project called "name". In this example the binary directories created would be `sublibrary1_BINARY_DIR`, `sublibrary2_BINARY_DIR`, and `subbinary_BINARY_DIR` |
 
 - > **Header only Libraries**
-  * > If you have a library that is created as a header only library, cmake supports the ***`INTERFACE`*** target to allow ***creating a target without any build output***. More details can be found from [here](https://cmake.org/cmake/help/v3.4/command/add_library.html#interface-libraries)
+  * > If you have a library that is created as a ***header only library***, `cmake` supports the ***`INTERFACE`*** target to allow ***creating a target without any build output***. More details can be found from [here](https://cmake.org/cmake/help/v3.4/command/add_library.html#interface-libraries)
     ```cmake
     add_library(${PROJECT_NAME} INTERFACE)
     ```
-  * > When creating the target you can also ***include directories for that target*** using the ***`INTERFACE`*** scope. The ***`INTERFACE`*** scope is use to make target requirements that are used in any Libraries that link this target but not in the compilation of the target itself.
+  * > When creating the target you can also ***include directories for that target*** using the ***`INTERFACE`*** scope. The ***`INTERFACE`*** scope is use to ***make target requirements that are used in any Libraries that link this target but not in the compilation of the target itself***.
     ```cmake
     target_include_directories(${PROJECT_NAME}
         INTERFACE
@@ -94,7 +95,7 @@ A-basic https://github.com/ttroy50/cmake-examples/blob/master/02-sub-projects/A-
     add_library(sub::lib2 ALIAS sublibrary2)
     ```
     > To reference the alias, just it as follows:
-    >> //notes：这一节的 typo 贼多，前面表格里我都已经改了一些了，估计作者到这也已经累够呛了。。。
+    >> //notes：这一节的 typo 贼多，前面表格里我都已经改了一些了，估计作者到这儿也已经累够呛了。。。
     ```cmake
     target_link_libraries(subbinary
         sub::lib2
