@@ -8,7 +8,7 @@ A-hello-cmake https://github.com/ttroy50/cmake-examples/blob/master/01-basic/A-h
   project (hello_cmake)
   add_executable(${PROJECT_NAME} main.cpp)
   ```
-  > In this example, the `project()` function, will create a variable ***`${PROJECT_NAME}`*** with the value `'hello_cmake'`. This can then be passed to the `add_executable()` function to output a `'hello_cmake'` executable.
+  > In this example, the ***`project()`*** function, will create a variable ***`${PROJECT_NAME}`*** with the value `'hello_cmake'`. This can then be passed to the ***`add_executable()`*** function to output a `'hello_cmake'` executable.
 - > **Binary Directory**
   * > The root or top level folder that you run the cmake command from is known as your ***`CMAKE_BINARY_DIR`*** and is the root folder for all your binary files. CMake supports building and generating your binary files both ***in-place*** and also ***out-of-source***.
   * > **In-Place Build**
@@ -325,13 +325,14 @@ G-compile-flags https://github.com/ttroy50/cmake-examples/blob/master/01-basic/G
 
 H-third-party-library https://github.com/ttroy50/cmake-examples/blob/master/01-basic/H-third-party-library/README.adoc
 - > **Introduction**
-  * > Nearly all non-trivial projects will have a requirement for including third party libraries, headers, or programs. CMake has support for finding the path to these tools using the ***`find_package()`*** function. This will search for CMake modules in the format ***`"FindXXX.cmake"`*** from the list of folders in ***`CMAKE_MODULE_PATH`***. On linux the default search path will include ***`/usr/share/cmake/Modules`***. On my system this includes support for approximately 142 common third party libraries.
+  * > Nearly all non-trivial projects will have a requirement for including ***third party libraries, headers, or programs***. CMake has support for finding the path to these tools using the ***`find_package()`*** function. This will search for CMake modules in the format ***`"FindXXX.cmake"`*** from the list of folders in ***`CMAKE_MODULE_PATH`***. On linux the default search path will include ***`/usr/share/cmake/Modules`***. On my system this includes support for approximately 142 common third party libraries.
 - > **Finding a Package**
   * > As mentioned above the ***`find_package()`*** function will <ins>search for CMake modules in the formant ***`"FindXXX.cmake"`*** from the list of folders in ***`CMAKE_MODULE_PATH`***</ins>. The exact format of the arguments to ***`find_package`*** will depend on the module you are looking for. This is typically documented at the top of the ***`FindXXX.cmake`*** file.
   * > A basic example of finding boost is below:
     ```cmake
     find_package(Boost 1.46.1 REQUIRED COMPONENTS filesystem system)
     ```
+    >> //notes：这里的 `filesystem`、`system` 是 boost 里的，不是 CMake 的，不用深究。
   * > The arguments are:
     + > Boost - Name of the library. This is part of used to find the module file `FindBoost.cmake`
     + > 1.46.1 - The minimum version of boost to find
@@ -350,12 +351,12 @@ H-third-party-library https://github.com/ttroy50/cmake-examples/blob/master/01-b
     endif()
     ```
 - > **Exported Variables**
-  * > After a package is found it will often export variables which can inform the user where to find the library, header, or executable files. Similar to the ***`XXX_FOUND`*** variable, ***these are package specific*** and are typically documented at the top of the ***`FindXXX.cmake`*** file.
+  * > After a package is found it will often export variables ***which can inform the user where to find the library, header, or executable files***. Similar to the ***`XXX_FOUND`*** variable, ***these are package specific*** and are typically documented at the top of the ***`FindXXX.cmake`*** file.
   * > The variables exported in this example include:
     + > `Boost_INCLUDE_DIRS` - The path to the boost header files.
   * > In some cases you can also check these variables by examining the cache using `ccmake` or `cmake-gui`.
 - > **Alias / Imported targets**
-  * > Most modern CMake libraries [export](https://cmake.org/cmake/help/v3.6/prop_tgt/IMPORTED.html#prop_tgt:IMPORTED) `ALIAS` targets in their module files. The benefit of imported targets are that they can also populate include directories and linked libraries.
+  * > Most modern CMake libraries [export](https://cmake.org/cmake/help/v3.6/prop_tgt/IMPORTED.html#prop_tgt:IMPORTED) `ALIAS` targets in their module files. ***The benefit of imported targets are*** that they can also populate include directories and linked libraries.
   * > For example, starting from v3.5+ of CMake, the Boost module supports this. Similar to using your own `ALIAS` target for libraires, an `ALIAS` in a module can make referencing found targets easier.
   * > In the case of Boost, all targets are exported using the `Boost::` identifier and then the name of the subsystem. For example you can use:
     ```console
@@ -363,13 +364,13 @@ H-third-party-library https://github.com/ttroy50/cmake-examples/blob/master/01-b
     Boost::system for the boost system library.
     Boost::filesystem for filesystem library.
     ```
-  * > As with your own targets, these targets include their dependencies, so linking against `Boost::filesystem` will automatically add `Boost::boost` and `Boost::system` dependencies.
+  * > ***As with your own targets, these targets include their dependencies***, so linking against `Boost::filesystem` will automatically add `Boost::boost` and `Boost::system` dependencies.
   * > To link against an imported target you can use the following:
     ```cmake
-      target_link_libraries( third_party_include
-          PRIVATE
-              Boost::filesystem
-      )
+    target_link_libraries( third_party_include
+        PRIVATE
+            Boost::filesystem
+    )
     ```
 - > **Non-alias targets**
   * > While most modern libraries use imported targets, not all modules have been updated. In the case where a library hasn’t been updated you will often find the following variables available:
@@ -389,5 +390,17 @@ H-third-party-library https://github.com/ttroy50/cmake-examples/blob/master/01-b
         ${Boost_FILESYSTEM_LIBRARY}
     )
     ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+I-compiling-with-clang https://github.com/ttroy50/cmake-examples/blob/master/01-basic/I-compiling-with-clang/README.adoc
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+J-building-with-ninja https://github.com/ttroy50/cmake-examples/blob/master/01-basic/J-building-with-ninja/README.adoc
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+K-imported-targets https://github.com/ttroy50/cmake-examples/blob/master/01-basic/K-imported-targets/README.adoc
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
