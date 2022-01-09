@@ -401,6 +401,19 @@ J-building-with-ninja https://github.com/ttroy50/cmake-examples/blob/master/01-b
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-K-imported-targets https://github.com/ttroy50/cmake-examples/blob/master/01-basic/K-imported-targets/README.adoc
+K-imported-targets https://github.com/ttroy50/cmake-examples/blob/master/01-basic/K-imported-targets/README.adoc  【没看出来这一节和 `H-third-party-library` 那一节有啥区别。。。两个 `CMakeLists.txt` 基本是一模一样的（除了项目名字不一样）。真要说区别就是 `H-third-party-library` 的描述文档里 [**Non-alias targets**](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/H-third-party-library/README.adoc#non-alias-targets) 这一节指出了不用 `imported target` 时怎样链接。】
+- > **Introduction**
+  * > As previously mentioned in the [third party library](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/H-third-party-library), newer versions of CMake allow you to link third party libraries using [imported](https://cmake.org/cmake/help/v3.6/prop_tgt/IMPORTED.html#prop_tgt:IMPORTED) `ALIAS` targets.
+- > **Imported Target**
+  * > Imported targets are ***read-only*** targets that are exported by ***`FindXXX`*** modules.
+  * > To include `boost filesystem` you can do the following:
+    ```cmake
+    target_link_libraries( imported_targets
+        PRIVATE
+            Boost::filesystem
+    )
+    ```
+    > This will ***automtaically link*** the `Boost::filesystem` and `Boost::system` libraries while ***also including the Boost include directories***.
+    >> 【[:star:][`*`]】 //notes：如果用 `imported target` 这种方式去链接，可以省事；否则用传统的方式去链接，链接一个库还得自己处理依赖以及`include目录`。例子见：[**Non-alias targets**](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/H-third-party-library/README.adoc#non-alias-targets)
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
