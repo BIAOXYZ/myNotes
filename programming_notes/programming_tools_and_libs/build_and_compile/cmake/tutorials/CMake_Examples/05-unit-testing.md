@@ -39,9 +39,9 @@ Google Test Unit Testing Framework https://github.com/ttroy50/cmake-examples/blo
         GTest::main
     )
     ```
-    > In the above code, a unit test binary is added, which links against the google test unit-test-framework using the `ALIAS` target setup during the [download and build](download and build) of GTest.
+    > In the above code, a unit test binary is added, which links against the google test unit-test-framework using the `ALIAS` target setup during the [download and build](https://github.com/ttroy50/cmake-examples/blob/master/05-unit-testing/google-test-download/3rd_party/google-test/CMakeLists.txt) of GTest.
 - > **Add A test**
-  * > To add a test you call the ***`add_test()`*** function. This will create a named test which will run the supplied command.
+  * > To add a test you call the [***`add_test()`***](https://cmake.org/cmake/help/v3.0/command/add_test.html) function. This will create a named test which will run the supplied command.
     ```cmake
     add_test(test_all unit_tests)
     ```

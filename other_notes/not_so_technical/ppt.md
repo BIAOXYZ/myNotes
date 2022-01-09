@@ -1,3 +1,10 @@
+
+# online PPT
+
+Slidev -- Presentation Slides for Developers (Beta) https://github.com/slidevjs/slidev
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # (sspai)少数派PPT
 
 ## [一周进步] (https://sspai.com/user/832833/posts)
