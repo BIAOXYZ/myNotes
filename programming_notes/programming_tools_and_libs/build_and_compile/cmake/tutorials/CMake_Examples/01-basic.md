@@ -23,11 +23,11 @@ A-hello-cmake https://github.com/ttroy50/cmake-examples/blob/master/01-basic/A-h
 B-Hello-Headers https://github.com/ttroy50/cmake-examples/blob/master/01-basic/B-hello-headers/README.adoc
 - > **Directory Paths**
 
-  |Variable | Info |
+  | **Variable** | **Info** |
   |:--|:--|
   | `CMAKE_SOURCE_DIR` |The root source directory |
   | `CMAKE_CURRENT_SOURCE_DIR` |The current source directory if using sub-projects and directories. |
-  | `PROJECT_SOURCE_DIR` |The source directory of the current cmake project. |
+  | ***`PROJECT_SOURCE_DIR`*** | The source directory of the current cmake project. |
   | `CMAKE_BINARY_DIR` |The root binary / build directory. This is ***the directory where you ran the `cmake` command***. |
   | `CMAKE_CURRENT_BINARY_DIR` | The build directory you are currently in. |
   | `PROJECT_BINARY_DIR` | The build directory for the current project. |
@@ -415,5 +415,15 @@ K-imported-targets https://github.com/ttroy50/cmake-examples/blob/master/01-basi
     ```
     > This will ***automtaically link*** the `Boost::filesystem` and `Boost::system` libraries while ***also including the Boost include directories***.
     >> 【[:star:][`*`]】 //notes：如果用 `imported target` 这种方式去链接，可以省事；否则用传统的方式去链接，链接一个库还得自己处理依赖以及`include目录`。例子见：[**Non-alias targets**](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/H-third-party-library/README.adoc#non-alias-targets)
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+L-cpp-standard https://github.com/ttroy50/cmake-examples/blob/master/01-basic/L-cpp-standard/README.adoc
+- > Since the release of `C++11` and `C++14` a common use case is to ***invoke the compiler to use these standards***. As CMake has evolved, it has added features to make this easier and new versions of CMake have changed how this is achieved.
+- > The following examples show ***different methods of setting the C++ standard*** and what versions of CMake they are available from.
+- > The examples include:
+  * > [common-method](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/L-cpp-standard/i-common-method). A simple version that should work with most versions of CMake.
+  * > [cxx-standard](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/L-cpp-standard/ii-cxx-standard). Using the ***`CMAKE_CXX_STANDARD`*** variable introduced in CMake `v3.1`.
+  * > [compile-features](https://github.com/ttroy50/cmake-examples/blob/master/01-basic/L-cpp-standard/iii-compile-features). Using the ***`target_compile_features`*** function introduced in CMake `v3.1`.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
