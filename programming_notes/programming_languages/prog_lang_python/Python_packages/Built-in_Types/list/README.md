@@ -28,3 +28,17 @@ How to check if a list is empty in Python? https://flexiple.com/check-if-list-is
 【from LeetCode】：
 - `LC414. 第三大的数` https://github.com/BIAOXYZ/variousCodes/tree/master/_CodeTopics/LeetCode/401-600/000414
   * Python列表去重的几种方法 https://blog.csdn.net/Jerry_1126/article/details/79843751
+- https://leetcode-cn.com/circle/discuss/9TMMfX/view/9xfeIr/
+  * > Problem A - 检查是否每一行每一列都包含全部整数
+    >> //notes：里面求矩阵的所有列的时候用到了一个技巧 `zip(*matrix)`（貌似只对Python3适用）。之前只会下面这种：
+    ```py
+    mtx = [[1,2,3],[4,5,6]]
+    rows, cols = len(mtx), len(mtx[0])
+    rowList = [[mtx[i][j] for j in range(cols)] for i in range(rows)]
+    colList = [[mtx[i][j] for i in range(rows)] for j in range(cols)]
+    print(rowList)
+    print(colList)
+    ##################################################
+    [[1, 2, 3], [4, 5, 6]]
+    [[1, 4], [2, 5], [3, 6]]
+    ```
