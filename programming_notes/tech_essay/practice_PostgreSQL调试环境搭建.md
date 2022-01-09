@@ -397,3 +397,7 @@ ENV PATH=${PATH}:${PGHOME}/bin
 WORKDIR /home/pguser/pgdir/pgsql/bin/
 RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
 ```
+
+# TODO
+
+如何使用VSCode进行PostgreSQL开发及调试 http://www.postgres.cn/v2/news/viewone/1/459
