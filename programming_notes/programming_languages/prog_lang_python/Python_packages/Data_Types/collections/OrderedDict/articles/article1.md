@@ -92,5 +92,13 @@ OrderedDict — Remember the Order Keys are Added to a Dictionary http://pymotw.
     ```
 
 OrderedDict in Python https://www.geeksforgeeks.org/ordereddict-in-python/
-- > **1.Key value Change**: If the value of a certain key is changed, the position of the key ***remains unchanged*** in `OrderedDict`.
-- > **2.Deletion and Re-Inserting**: Deleting and re-inserting the same key will ***push it to the back*** as `OrderedDict`, however, maintains the order of insertion.
+- > An `OrderedDict` is a dictionary subclass that ***remembers the order that keys were first inserted***. The only difference between `dict()` and `OrderedDict()` is that: `OrderedDict` ***preserves the order*** in which the keys are inserted. A regular `dict` doesn’t track the insertion order, and iterating it gives the values in an arbitrary order. By contrast, the order the items are inserted is remembered by `OrderedDict`.
+- > **Important Points**: 
+  * > **1.Key value Change**: If the value of a certain key is changed, the position of the key ***remains unchanged*** in `OrderedDict`.
+  * > **2.Deletion and Re-Inserting**: Deleting and re-inserting the same key will ***push it to the back*** as `OrderedDict`, however, maintains the order of insertion.
+  >> //notes：说白了就是更新的话不会改变有序字典里key的先后顺序，但是删除再插入的话跟新插入一样，会改变其key的先后顺序。
+- > **Other Considerations**:
+  * > `OrderedDict` in Python version 2.7 consumes more memory than normal `dict`. This is due to the underlying ***Doubly Linked List implementation*** for keeping the order. In Python 2.7 `OrderedDict` is not `dict` subclass, it’s a specialized container from `collections` module.
+  * > Starting from Python 3.7, insertion order of Python dictionaries is guaranteed.
+    >> //notes：这里说的不太对，虽然说是有保证，但是还是不要依赖这个顺序。
+  * > `OrderedDict` can be used as a stack with the help of `popitem` function. Try implementing LRU cache with `OrderedDict`.
