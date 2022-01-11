@@ -18,6 +18,11 @@ Using group by on multiple columns https://stackoverflow.com/questions/2421388/u
 - https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join/38578#38578
 
 Difference between JOIN and INNER JOIN https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join
+- https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join/565733#565733
+  * > Similarly with `OUTER JOINs`, ***the word `"OUTER"` is optional***. It's ***the `LEFT` or `RIGHT` keyword*** that ***makes the `JOIN` an `"OUTER" JOIN`***.
+    >> 【[:star:][`*`]】 //notes：这句的意思是 `OUTER` 是可省略的，并且 `OUTER` 只会在 `LEFT JOIN` 或 `RIGHT JOIN` 中出现。
+
+LEFT JOIN vs. LEFT OUTER JOIN in SQL Server https://stackoverflow.com/questions/406294/left-join-vs-left-outer-join-in-sql-server
 
 # Limit
 
