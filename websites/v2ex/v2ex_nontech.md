@@ -95,6 +95,9 @@ https://bruno-simon.com  各种交互各种炫
 
 # 生活信息
 
+给女票选生日礼物，有什么建议？ https://www.v2ex.com/t/827418
+- ![](https://i.imgur.com/MgEjBK9.jpeg)
+
 2021 你买的最值和最不值的东西是？ https://www.v2ex.com/t/825639
 - > 最值的：热泵式烘干机（再也没有晾过衣服） <br> 最不值：Windows 平板（吃灰）
   >> 求分享烘干机是啥牌子
