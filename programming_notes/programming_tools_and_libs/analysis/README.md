@@ -63,6 +63,13 @@ Is it good to define a variable inside a loop? [closed] https://softwareengineer
 
 Is it efficient to declare a variable in a loop? [duplicate] https://stackoverflow.com/questions/16761618/is-it-efficient-to-declare-a-variable-in-a-loop
 
+## if语句对性能的影响
+
+【译】if语句的性能：现代处理器的分支预测 https://wgrape.github.io/2018/12/10/if%E8%AF%AD%E5%8F%A5%E7%9A%84%E6%80%A7%E8%83%BD-%E7%8E%B0%E4%BB%A3%E5%A4%84%E7%90%86%E5%99%A8%E7%9A%84%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B/
+- > 原文 [《Fast and slow if-statements: branch prediction in modern processors》](http://igoro.com/archive/fast-and-slow-if-statements-branch-prediction-in-modern-processors/)
+
+If vs. Switch Speed https://stackoverflow.com/questions/445067/if-vs-switch-speed
+
 # SIMD
 
 单指令流多数据流 https://zh.wikipedia.org/wiki/%E5%8D%95%E6%8C%87%E4%BB%A4%E6%B5%81%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%B5%81
