@@ -384,6 +384,9 @@ TI10勇士令状已加入客户端，梦想现已重启，英雄等你同行！ 
 - 《DOTA2》LGD 战队选手发文：输并不是因为猛犸，战队没发挥出水平 https://www.ithome.com/0/581/230.htm
   * > 你们一定不开心，熬夜看比赛输了，周一还要上班。但猛犸很开心，因为他不上ban。
 
+DOTA2｜“你这么菜你的队友不会生气吧，giegie”语音包已经让yuno赚了近百万了 https://www.douban.com/group/topic/249452438
+- > ![](https://img1.doubanio.com/view/richtext/large/public/p247231908.jpg)
+
 ## TI9
 
 《Dota2》TI9选手年龄出炉：最小还是00后，“最老”29岁 https://www.ithome.com/0/433/656.htm
