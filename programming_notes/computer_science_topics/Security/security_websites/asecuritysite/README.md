@@ -8,14 +8,20 @@
 - **Quick Jump (Others)**
   * Database SQL Analyser: Tutorial 1 (SQL statements) https://asecuritysite.com/database1/db/  【这网站甚至有SQL教程。。。】
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 Ref: William J Buchanan (2021), Network Security and Cryptography (CSN09112), Asecuritysite, from https://asecuritysite.com/csn09112
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # https://asecuritysite.com/ecc/
 
 Elliptic Curve Types and nG https://asecuritysite.com/ecc/ecc_types
 - > We have a number of possible types of elliptic curve methods. These have a `field` (the prime number used), the `order` (the number of elliptic curve points), an `a` value, a `b` value, and a generator point (`G`). For a ***`Weierstrass curve`*** the standard form is $y^2 = x^3 + ax + b$. With a ***`twisted Edwards curve`*** (such as `Ed25519`) we have the form of $ax^2 + y^2 = 1 + dx^2y^2$. A ***`Montgomory curve`*** has the form of $by^2 = x^3 + ax^2 + x$.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # https://asecuritysite.com/pairing/
 
