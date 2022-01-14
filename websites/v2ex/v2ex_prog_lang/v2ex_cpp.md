@@ -1,4 +1,6 @@
 
+inline 不能修饰一个全局函数呗？ https://www.v2ex.com/t/828136
+
 问个关于内存对齐的问题 https://www.v2ex.com/t/809945
 ```console
 为啥

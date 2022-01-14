@@ -35,6 +35,8 @@
 
 求一波摸鱼网站，中英文都可。 https://www.v2ex.com/t/827938
 - > http://likexia.gitee.io/evolve <br> 放置游戏 非常适合上班摸鱼
+- > https://momoyu.cc/  【这个比较好的一点是有脉脉的热榜，不需要手机了就，只要注意不登陆不回复即可】
+- > https://mo.fish/
 
 不会吧，真的就没有线上联机的情侣可以玩的游戏吗？ https://www.v2ex.com/t/687463
 - > Steam 最近上线了远程同乐功能，可以异地玩本地联机的游戏
