@@ -22,10 +22,17 @@ std::priority_queue https://www.cplusplus.com/reference/queue/priority_queue/
     ```
   * > The standard container classes [vector](https://www.cplusplus.com/vector) and [deque](https://www.cplusplus.com/deque) fulfill these requirements. By default, ***if no container class is specified for a particular `priority_queue` class instantiation, the standard container `vector` is used***.
   * > Support of [random access iterators](https://www.cplusplus.com/RandomAccessIterator) is required to keep a heap structure internally at all times. This is done automatically by the container adaptor by automatically calling the algorithm functions `make_heap`, `push_heap` and `pop_heap` when needed.
+- > **Member functions**
+  * std::priority_queue::top https://www.cplusplus.com/reference/queue/priority_queue/top/
+  * std::priority_queue::pop https://www.cplusplus.com/reference/queue/priority_queue/pop/
 
 std::priority_queue https://en.cppreference.com/w/cpp/container/priority_queue
 
 priority_queue Class https://docs.microsoft.com/en-us/cpp/standard-library/priority-queue-class
+
+# 其他
+
+c++优先队列(priority_queue)用法详解 https://blog.csdn.net/weixin_36888577/article/details/79937886
 
 # LeetCode
 - `1609. 奇偶树` https://leetcode-cn.com/problems/even-odd-tree/

@@ -1,6 +1,10 @@
 
 红白机N合一 https://space.bilibili.com/31700507/channel/detail?cid=25542
 
+# 2022
+
+【红白机N合一】一款日本做的打日本人游戏 https://www.bilibili.com/video/BV18L4y147mA
+
 # 2021
 
 【红白机N合一】让我们既熟悉又陌生的《兔宝宝历险记》 https://www.bilibili.com/video/BV1y44y1i7Aq
