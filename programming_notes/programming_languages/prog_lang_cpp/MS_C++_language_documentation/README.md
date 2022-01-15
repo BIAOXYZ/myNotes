@@ -34,3 +34,7 @@ C++ 运算符优先级 https://zh.cppreference.com/w/cpp/language/operator_prece
 
 https://docs.microsoft.com/zh-cn/cpp/cpp/scope-resolution-operator
 - > 没有范围限定符的范围解析运算符表示全局命名空间。
+
+# 待分类
+
+decltype (C++) https://docs.microsoft.com/en-us/cpp/cpp/decltype-cpp

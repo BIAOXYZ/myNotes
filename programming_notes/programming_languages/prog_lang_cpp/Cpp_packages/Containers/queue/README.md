@@ -36,3 +36,4 @@ c++优先队列(priority_queue)用法详解 https://blog.csdn.net/weixin_3688857
 
 # LeetCode
 - `1609. 奇偶树` https://leetcode-cn.com/problems/even-odd-tree/
+- `373. 查找和最小的 K 对数字` https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/
