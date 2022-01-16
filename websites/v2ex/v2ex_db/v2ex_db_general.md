@@ -40,7 +40,7 @@ MySQL B+树的 “孩子个数” 和 “key 的个数” 到底是不是相等�
   * 《NoSQL 精粹》 http://www.java1234.com/a/javabook/database/2016/0721/6434.html
 - > 看一下这本书: Designing Data-Intensive Applications, 就知道分布式(强)一致性有多么难做. 不知道 NewSQL 是怎么解决这个问题的.
   * 《Designing Data-Intensive Application》DDIA中文翻译 https://github.com/Vonng/ddia
-    + 设计数据密集型应用 - 中文翻译 https://legacy.gitbook.com/book/vonng/ddia-cn/details
+    + 设计数据密集型应用 - 中文翻译 ~~https://legacy.gitbook.com/book/vonng/ddia-cn/details~~ || http://ddia.vonng.com/
   * 《Designing Data-Intensive Applications》 http://www.java1234.com/a/javabook/javabase/2017/0914/8912.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
