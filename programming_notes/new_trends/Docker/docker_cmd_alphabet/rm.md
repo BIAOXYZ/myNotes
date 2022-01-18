@@ -4,6 +4,8 @@
 - `docker rm container` = `docker rm`
 - `docker rm image` = `docker rmi`
 
+# 其他
+
 How To Remove Docker Images, Containers, and Volumes https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 - > **Purging All Unused or Dangling Images, Containers, Volumes, and Networks**
   * > Docker provides a single command that will clean up any resources — `images`, `containers`, `volumes`, and `networks` — ***that are `dangling`*** (not tagged or associated with a container):
@@ -23,6 +25,7 @@ How To Remove Docker Images, Containers, and Volumes https://www.digitalocean.co
   docker rmi Image Image
   ```
 - > **Remove dangling images**
+  * > Docker images consist of multiple layers. ***`Dangling images` are layers that have no relationship to any `tagged images`***. They ***no longer serve a purpose and consume disk space***. They can be located by adding the filter flag `-f` with a value of `dangling=true` to the `docker images` command. When you’re sure you want to delete them, you can use the `docker image prune` command:
   * > **List**:
     ```sh
     docker images -f dangling=true
@@ -122,7 +125,7 @@ How To Remove Docker Images, Containers, and Volumes https://www.digitalocean.co
     docker volume prune
     ```
 - > **Remove a container and its volume**
-  * > If you created an `unnamed volume`, it can be deleted at the same time as the container with the `-v` flag. Note that ***this only works with `unnamed volumes`***. When the container is successfully removed, its ID is displayed. Note that no reference is made to the removal of the volume. If it is unnamed, it is silently removed from the system. If it is named, it silently stays present.
+  * > If you created an `unnamed volume`, it can be deleted at the same time as the container with the `-v` flag. Note that ***this only works with `unnamed volumes`***. When the container is successfully removed, its ID is displayed. Note that ***no reference is made to the removal of the volume. If it is unnamed, it is silently removed from the system***. If it is named, it silently stays present.
   * > Remove:
     ```sh
     docker rm -v container_name
