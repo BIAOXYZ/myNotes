@@ -33,6 +33,7 @@ Using locks, conditions, and semaphores in the with statement https://docs.pytho
 第十二章：并发编程 https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p12_concurrency.html
 
 An Intro to Threading in Python https://realpython.com/intro-to-python-threading/
+>> //notes：笔记参加realpython目录里相应的部分。
 
 # 其他
 
