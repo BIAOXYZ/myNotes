@@ -2,7 +2,9 @@
 # 官方
 
 std::thread http://www.cplusplus.com/reference/thread/thread/
-- `std::thread::joinable` http://www.cplusplus.com/reference/thread/thread/joinable/
+- > **Member functions**
+  * `std::thread::joinable` http://www.cplusplus.com/reference/thread/thread/joinable/
+  * `std::thread::join` https://www.cplusplus.com/reference/thread/thread/join/
 
 std::thread https://en.cppreference.com/w/cpp/thread/thread
 

@@ -85,6 +85,10 @@ Apache HTTP服务器 https://zh.wikipedia.org/wiki/Apache_HTTP_Server
 >>> [Apache软件基金会](https://zh.wikipedia.org/wiki/Apache%E8%BD%AF%E4%BB%B6%E5%9F%BA%E9%87%91%E4%BC%9A)wikipedia页面也有提到这点————很正常，毕竟apache（或者更准确地说`Apache HTTP Server`）是Apache Software Foundation命名的来源啊，相当于炮姐之于B站（bilibili）。
 >>>> 这个命名是根据北美当地的一支印第安部落而来，这支部落以高超的军事素养和超人的忍耐力著称，19世纪后半期对侵占他们领土的入侵者进行了反抗。为了对这支印第安部落表示敬仰之意，取该部落名称（Apache）作为服务器名。但一提到这个命名，这里还有流传着一段有意思的故事。因为这个服务器是在NCSA HTTPd服务器的基础之上，通过众人努力，不断地修正、打补丁（Patchy）的产物，被戏称为“A Patchy Server”（一个补丁服务器）。在这里，因为“A Patchy”与“Apache”是谐音，故最后正式命名为“Apache Server”。
 
+## https
+
+半小时搞懂 HTTP、HTTPS和HTTP2 https://segmentfault.com/a/1190000022662058
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vxlan
