@@ -11,6 +11,3 @@ Python的GIL是什么鬼，多线程性能究竟如何 http://cenalulu.github.io
 
 Understanding the Python GIL http://www.dabeaz.com/GIL/
 - Inside the Python GIL http://www.dabeaz.com/python/GIL.pdf
-
-What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-gil/
->> //notes：笔记参见realpython目录里相应的部分。

@@ -84,3 +84,60 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     > 
     > ***This increase is the result of acquire and release overheads added by the lock***.
 - > **Why Hasn’t the GIL Been Removed Yet?**
+  * > The GIL can obviously be removed and this has been done multiple times in the past by the developers and researchers but all those attempts broke the existing C extensions which depend heavily on the solution that the GIL provides.
+  * > Of course, there are other solutions to the problem that the GIL solves but some of them ***decrease the performance of <ins>single-threaded</ins> and <ins>multi-threaded I/O-bound</ins> programs*** and some of them are just too difficult. After all, you wouldn’t want your existing Python programs to run slower after a new version comes out, right?
+  * > The creator and `BDFL` of Python, Guido van Rossum, gave an answer to the community in September 2007 in his article [“It isn’t Easy to remove the GIL”](https://www.artima.com/weblogs/viewpost.jsp?thread=214235): `“I’d welcome a set of patches into Py3k only if the performance for a single-threaded program (and for a multi-threaded but I/O-bound program) does not decrease”`
+  * > And this condition hasn’t been fulfilled by any of the attempts made since.
+- > **Why Wasn’t It Removed in Python 3?**
+  * > Removing the GIL would have made Python 3 slower in comparison to Python 2 ***in single-threaded performance*** and you can imagine what that would have resulted in. You can’t argue with the single-threaded performance benefits of the GIL. So the result is that Python 3 still has the GIL.
+  * > But Python 3 did bring a major improvement to the existing GIL—
+  * > We discussed the impact of GIL on “only CPU-bound” and “only I/O-bound” multi-threaded programs but ***what about the programs where some threads are I/O-bound and some are CPU-bound***?
+    > 
+    > In such programs, Python’s GIL ***was known to starve the I/O-bound threads by not giving them a chance to acquire the GIL from CPU-bound threads***.
+    > 
+    > This was because of a mechanism built into Python that forced threads to release the GIL **after a fixed interval** of continuous use and if nobody else acquired the GIL, the same thread could continue its use.
+    ```py
+    >>> import sys
+    >>> # The interval is set to 100 instructions:
+    >>> sys.getcheckinterval()
+    100
+    ```
+  * > The problem in this mechanism was that ***most of the time the CPU-bound thread would reacquire the GIL itself before other threads could acquire it***. This was researched by David Beazley and visualizations can be found [here](http://www.dabeaz.com/blog/2010/01/python-gil-visualized.html).
+    > 
+    > This problem was fixed in Python 3.2 in 2009 by Antoine Pitrou who [added a mechanism](https://mail.python.org/pipermail/python-dev/2009-October/093321.html) of looking at the number of GIL acquisition requests by other threads that got dropped and not allowing the current thread to reacquire GIL before other threads got a chance to run.
+- > **How to Deal With Python’s GIL**
+  * > If the GIL is causing you problems, here a few approaches you can try:
+  * > **Multi-processing vs multi-threading**: The most popular way is to use a multi-processing approach ***where you use multiple processes instead of threads***. ***<ins>Each Python process gets its own Python interpreter and memory space so the GIL won’t be a problem</ins>***. Python has a [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module which lets us create processes easily like this:
+    ```py
+    from multiprocessing import Pool
+    import time
+    
+    COUNT = 50000000
+    def countdown(n):
+        while n>0:
+            n -= 1
+    
+    if __name__ == '__main__':
+        pool = Pool(processes=2)
+        start = time.time()
+        r1 = pool.apply_async(countdown, [COUNT//2])
+        r2 = pool.apply_async(countdown, [COUNT//2])
+        pool.close()
+        pool.join()
+        end = time.time()
+        print('Time taken in seconds -', end - start)
+    ```
+    > Running this on my system gave this output:
+    ```sh
+    $ python multiprocess.py
+    Time taken in seconds - 4.060242414474487
+    ```
+    > A decent performance increase compared to the multi-threaded version, right?
+    > 
+    > The time ***didn’t drop to half of what we saw above because process management has its own overheads***. ***Multiple processes are heavier than multiple threads***, so, keep in mind that this could become a scaling bottleneck.
+  * > **Alternative Python interpreters**: Python has multiple interpreter implementations. CPython, Jython, IronPython and [PyPy](https://realpython.com/pypy-faster-python/), written in C, Java, C# and Python respectively, are the most popular ones. ***GIL exists only in the original Python implementation that is CPython***. If your program, with its libraries, is available for one of the other implementations then you can try them out as well.
+  * > **Just wait it out**: While many Python users take advantage of the single-threaded performance benefits of GIL. The multi-threading programmers don’t have to fret as some of the brightest minds in the Python community are working to remove the GIL from CPython. One such attempt is known as the Gilectomy.
+    > 
+    > The Python GIL is often regarded as a mysterious and difficult topic. But keep in mind that as a Pythonista ***you’re usually only affected by it if you are <ins>writing C extensions</ins> or if you’re using <ins>CPU-bound multi-threading</ins> in your programs***.
+    > 
+    > In that case, this article should give you everything you need to understand what the GIL is and how to deal with it in your own projects. And if you want to understand the low-level inner workings of GIL, I’d recommend you watch the [Understanding the Python GIL](https://www.youtube.com/watch?v=Obt-vMVdM8s) talk by David Beazley.
