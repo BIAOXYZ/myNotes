@@ -103,6 +103,8 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     > In such programs, Python’s GIL ***was known to starve the I/O-bound threads by not giving them a chance to acquire the GIL from CPU-bound threads***.
     > 
     > This was because of a mechanism built into Python that forced threads to release the GIL **after a fixed interval** of continuous use and if nobody else acquired the GIL, the same thread could continue its use.
+    >> 【[:star:][`*`]】 //notes：这里的所谓***“饿死”I/O密集型线程***的原因是这样的：线程一旦经过了一个执行周期（1000字节码也好，15毫秒也好）就会释放其占有的GIL，然后（除非它是I/O密集型，正在等I/O，无法参与抢锁）会立即参与到释放掉的GIL的争夺中。在 Python 3.2 之前，一般来说释放掉GIL的那个线程大概率还会抢到GIL。
+    >>> 那么，对于某个I/O密集型线程：如果它一开始有GIL，那它会因为执行完当前周期或者因为等I/O而释放掉GIL，然后就被某个计算密集型线程抢走，并以很高的概率被那个线程一直占着：执行周期完了释放，释放了再抢回，如此往复；如果它一开始就没有GIL，只要有计算密集型线程在，轮不着它。。。
     ```py
     >>> import sys
     >>> # The interval is set to 100 instructions:
@@ -115,6 +117,7 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
 - > **How to Deal With Python’s GIL**
   * > If the GIL is causing you problems, here a few approaches you can try:
   * > **Multi-processing vs multi-threading**: The most popular way is to use a multi-processing approach ***where you use multiple processes instead of threads***. ***<ins>Each Python process gets its own Python interpreter and memory space so the GIL won’t be a problem</ins>***. Python has a [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module which lets us create processes easily like this:
+    >> 【[:star:][`*`]】 //notes：除了 ***GIL问题只在 CPython 解释器中存在*** 这一关键点外，这也是一个关于GIL的关键点：***GIL是每个进程都有一个的***，所谓***抢GIL都是指的在同一个进程下的线程之间***，所以在多进程的情况下倒不用太担心GIL会造成“假并行”。
     ```py
     from multiprocessing import Pool
     import time
@@ -142,7 +145,8 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     > A decent performance increase compared to the multi-threaded version, right?
     > 
     > The time ***didn’t drop to half of what we saw above because process management has its own overheads***. ***Multiple processes are heavier than multiple threads***, so, keep in mind that this could become a scaling bottleneck.
-  * > **Alternative Python interpreters**: Python has multiple interpreter implementations. CPython, Jython, IronPython and [PyPy](https://realpython.com/pypy-faster-python/), written in C, Java, C# and Python respectively, are the most popular ones. ***GIL exists only in the original Python implementation that is CPython***. If your program, with its libraries, is available for one of the other implementations then you can try them out as well.
+    >> 【[:star:][`*`]】 //notes：这个很好理解，之所以没有完全减少一半的时间是因为进程切换也有开销，并且比线程切换开销更大。所以多进程也不能无限的多下去，也是有扩展性的瓶颈的。
+  * > **Alternative Python interpreters**: Python has multiple interpreter implementations. CPython, Jython, IronPython and [PyPy](https://realpython.com/pypy-faster-python/), written in C, Java, C# and Python respectively, are the most popular ones. ***<ins>GIL exists only in the original Python implementation that is `CPython`</ins>***. If your program, with its libraries, is available for one of the other implementations then you can try them out as well.
   * > **Just wait it out**: While many Python users take advantage of the single-threaded performance benefits of GIL. The multi-threading programmers don’t have to fret as some of the brightest minds in the Python community are working to remove the GIL from CPython. One such attempt is known as the Gilectomy.
     > 
     > The Python GIL is often regarded as a mysterious and difficult topic. But keep in mind that as a Pythonista ***you’re usually only affected by it if you are <ins>writing C extensions</ins> or if you’re using <ins>CPU-bound multi-threading</ins> in your programs***.
