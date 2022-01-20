@@ -3,7 +3,8 @@
 
 【[:ok:][:star:][`*`]】 深入理解Python中的GIL（全局解释器锁）。 - 蜗牛学苑的文章 - 知乎 https://zhuanlan.zhihu.com/p/75780308
 - > **1. GIL是什么？**
-  * > 首先来看看GIL究竟是什么。我们需要明确的一点是GIL并不是Python的特性，它是在实现Python解析器(CPython)时所引入的一个概念。就好比C++是一套语言（语法）标准，但是可以用不同的编译器来编译成可执行代码。有名的编译器例如GCC，INTEL C++，Visual C++等。Python也一样，同样一段代码可以通过CPython，PyPy，Psyco等不同的Python执行环境来执行。像其中的JPython就没有GIL。然而因为CPython是大部分环境下默认的Python执行环境。所以在很多人的概念里CPython就是Python，也就想当然的把GIL归结为Python语言的缺陷。所以这里要先明确一点：GIL并不是Python的特性，Python完全可以不依赖于GIL。
+  * > 首先来看看GIL究竟是什么。我们需要明确的一点是GIL并不是Python的特性，它是在实现Python解析器(CPython)时所引入的一个概念。就好比C++是一套语言（语法）标准，但是可以用不同的编译器来编译成可执行代码。有名的编译器例如GCC，INTEL C++，Visual C++等。Python也一样，同样一段代码可以通过CPython，PyPy，Psyco等不同的Python执行环境来执行。像其中的JPython就没有GIL。然而因为CPython是大部分环境下默认的Python执行环境。所以在很多人的概念里CPython就是Python，也就想当然的把GIL归结为Python语言的缺陷。所以这里要先明确一点：***GIL并不是Python的特性，Python完全可以不依赖于GIL***。
+    >> 【[:star:][`*`]】 //notes：CPython肯定有GIL的问题，JPython没有GIL问题。但不知道是不是其他Python解释器实现都没有GIL问题？
   * > 那么CPython实现中的GIL又是什么呢？GIL全称Global Interpreter Lock为了避免误导，我们还是来看一下官方给出的解释：`In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython’s memory management is not thread-safe. (However, since the GIL exists, other features have grown to depend on the guarantees that it enforces.)`
   * > 这看起来像一个Bug一般的防止多线程并发执行机器码的互斥锁(mutex)，究竟为什么会存在？
 - > **2. GIL为什么会存在？**

@@ -1,7 +1,7 @@
 
 What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-gil/
-- > The Python Global Interpreter Lock or [GIL](https://wiki.python.org/moin/GlobalInterpreterLock), in simple words, is a mutex (or a lock) that allows only one [thread](https://realpython.com/intro-to-python-threading/) to hold the control of the Python interpreter.
-- > This means that ***only one thread can be in a state of execution at any point in time***. The impact of the GIL isn’t visible to developers who execute single-threaded programs, but it can be a performance bottleneck in CPU-bound and multi-threaded code.
+- > The Python ***`Global Interpreter Lock`*** or [GIL](https://wiki.python.org/moin/GlobalInterpreterLock), in simple words, is a mutex (or a lock) that ***allows only one [thread](https://realpython.com/intro-to-python-threading/) to hold the control of the Python interpreter***.
+- > This means that ***only one thread can be in a state of execution at any point in time***. The impact of the GIL isn’t visible to developers who execute single-threaded programs, but it can be a ***performance bottleneck in <ins>CPU-bound and multi-threaded</ins> code***.
 - > Since ***the GIL allows only one thread to execute at a time even in a multi-threaded architecture with more than one CPU core***, the GIL has gained a reputation as an “infamous” feature of Python.
 - > In this article you’ll learn how the GIL affects the performance of your Python programs, and how you can mitigate the impact it might have on your code.
 - > **What Problem Did the GIL Solve for Python?**
@@ -21,15 +21,17 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     + > This reference count variable can be kept safe by adding locks to all data structures that are shared across threads so that they are not modified inconsistently.
     + > But ***adding a lock to each object or groups of objects means multiple locks will exist which can cause another problem — `Deadlocks`*** (deadlocks can only happen if there is more than one lock). Another side effect would be decreased performance caused by the repeated acquisition and release of locks.
       >> 【[:star:][`*`]】 //notes：所以 Python 中引入GIL的根本原因是 Python 的变量是 [`引用计数`](https://docs.python.org/zh-cn/3.7/c-api/refcounting.html) 方式的，如果没有GIL，就得有 Lock 之类的机制，否则会有`竞态条件(race condition)`问题。但是引入锁机制可能影响更大：一是可能引起死锁；二是锁的获取和释放带来的性能下降（可能更厉害）。
+      >>> 此外，下文中还提到 `C extensions required a thread-safe memory management`，也就是 GIL 也是为了解决***一些C语言扩展需要线程安全的内存管理***这一需求。
   * > The GIL, although ***used by interpreters for other languages like `Ruby`***, is not the only solution to this problem. ***Some languages avoid the requirement of a GIL for thread-safe memory management by using approaches other than `reference counting`, such as `garbage collection`***.
   * > On the other hand, this means that those languages often have to compensate for the loss of single threaded performance benefits of a GIL by adding other performance boosting features like `JIT compilers`.
 - > **Why Was the GIL Chosen as the Solution?**
   * > Python has been around ***since the days when operating systems did not have a concept of threads***. Python was designed to be easy-to-use in order to make development quicker and more and more developers started using it.
   * > A lot of extensions were being written for the existing C libraries whose features were needed in Python. To prevent inconsistent changes, these C extensions required ***a thread-safe memory management*** which the GIL provided.
   * > The GIL is simple to implement and was easily added to Python. It provides a performance increase to single-threaded programs as ***only one lock needs to be managed***.
+  * > C libraries that were not thread-safe became easier to integrate. And these C extensions became one of the reasons why Python was readily adopted by different communities.
 - > **The Impact on Multi-Threaded Python Programs**
-  * > ***CPU-bound programs*** are those that are pushing the CPU to its limit. This includes programs that do mathematical computations like matrix multiplications, searching, image processing, etc.
-  * > ***I/O-bound programs*** are the ones that spend time waiting for Input/Output which can come from a user, file, database, network, etc. I/O-bound programs sometimes have to wait for a significant amount of time till they get what they need from the source due to the fact that the source may need to do its own processing before the input/output is ready, for example, a user thinking about what to enter into an input prompt or a database query running in its own process.
+  * > ***`CPU-bound programs`*** are those that are pushing the CPU to its limit. This includes programs that do mathematical computations like matrix multiplications, searching, image processing, etc.
+  * > ***`I/O-bound programs`*** are the ones that spend time waiting for Input/Output which can come from a user, file, database, network, etc. I/O-bound programs sometimes have to wait for a significant amount of time till they get what they need from the source due to the fact that the source may need to do its own processing before the input/output is ready, for example, a user thinking about what to enter into an input prompt or a database query running in its own process.
   * > Let’s have a look at a simple CPU-bound program that performs a countdown:
     ```py
     # single_threaded.py
@@ -85,10 +87,12 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
   * > But a program whose threads are entirely CPU-bound, e.g., a program that processes an image in parts using threads, ***would not only become single threaded due to the lock but will also see an increase in execution time***, as seen in the above example, in comparison to a scenario where it was written to be entirely single-threaded.
     > 
     > ***This increase is the result of acquire and release overheads added by the lock***.
-    >> 【[:star:][`*`]】 //notes：总结一下这一部分，主要说了三点： <br> 1. 在GIL的限制下，计算密集型的多线程任务***基本退化成了单线程***； <br> 2.（尽管）在GIL的限制下，I/O密集型的多线程任务不太受影响，因为一旦正在执行的线程停下来等I/O（它是需要等一段时间的，不可能释放GIL后又立即去获得），其他线程能有效的获得GIL并继续执行，从而不浪费这些时间（也就是增加了一定的“并行性”）； <br> 3. 计算密集型的多线程任务不但被GIL限制成了类似单线程执行，其实比完全的单线程版本性能更差（从上面的运行数据也可以看出来），因为还有***运行1000字节码（Py2）或运行15毫秒（Py3）后放GIL和抢GIL的开销***（详情参见《[深入理解Python中的GIL（全局解释器锁）。 - 蜗牛学苑的文章 - 知乎](https://zhuanlan.zhihu.com/p/75780308)》的笔记）。
+    >> 【[:star:][`*`]】 //notes：总结一下这一部分，主要说了三点： <br> 1. 在GIL的限制下，计算密集型的多线程任务***基本退化成了单线程***； <br> 2.（尽管）在GIL的限制下，I/O密集型的多线程任务***不太受影响***，因为一旦正在执行的线程停下来等I/O（它是需要等一段时间的，不可能释放GIL后又立即去获得），其他线程能有效的获得GIL并继续执行，从而不浪费这些时间（也就是增加了一定的“并行性”）； <br> 3. 计算密集型的多线程任务不但被GIL限制成了类似单线程执行，其实比完全的单线程版本性能更差（从上面的运行数据也可以看出来），因为还有***运行1000字节码（Py2）或运行15毫秒（Py3）后放GIL和抢GIL的开销***（详情参见《[深入理解Python中的GIL（全局解释器锁）。 - 蜗牛学苑的文章 - 知乎](https://zhuanlan.zhihu.com/p/75780308)》的笔记）。
 - > **Why Hasn’t the GIL Been Removed Yet?**
-  * > The GIL can obviously be removed and this has been done multiple times in the past by the developers and researchers but all those attempts broke the existing C extensions which depend heavily on the solution that the GIL provides.
+  * > The GIL can obviously be removed and this has been done multiple times in the past by the developers and researchers ***but all those attempts broke the existing C extensions*** which depend heavily on the solution that the GIL provides.
+    >> //notes：如果只是（从`CPython`中）移除 GIL，那么现有的依赖 GIL 的那些 C 语言扩展就不能用了。
   * > Of course, there are other solutions to the problem that the GIL solves but some of them ***decrease the performance of <ins>single-threaded</ins> and <ins>multi-threaded I/O-bound</ins> programs*** and some of them are just too difficult. After all, you wouldn’t want your existing Python programs to run slower after a new version comes out, right?
+    >> //notes：如果使用其他方法来替换 GIL，就会有性能问题（影响 ***单线程程序*** 或者 ***I/O密集型多线程程序*** 的性能）或者其他问题。
   * > The creator and `BDFL` of Python, Guido van Rossum, gave an answer to the community in September 2007 in his article [“It isn’t Easy to remove the GIL”](https://www.artima.com/weblogs/viewpost.jsp?thread=214235): `“I’d welcome a set of patches into Py3k only if the performance for a single-threaded program (and for a multi-threaded but I/O-bound program) does not decrease”`
   * > And this condition hasn’t been fulfilled by any of the attempts made since.
 - > **Why Wasn’t It Removed in Python 3?**
