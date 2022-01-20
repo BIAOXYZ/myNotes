@@ -25,7 +25,8 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
   * > On the other hand, this means that those languages often have to compensate for the loss of single threaded performance benefits of a GIL by adding other performance boosting features like `JIT compilers`.
 - > **Why Was the GIL Chosen as the Solution?**
   * > Python has been around ***since the days when operating systems did not have a concept of threads***. Python was designed to be easy-to-use in order to make development quicker and more and more developers started using it.
-  * > A lot of extensions were being written for the existing C libraries whose features were needed in Python. To prevent inconsistent changes, these C extensions required a thread-safe memory management which the GIL provided.
+  * > A lot of extensions were being written for the existing C libraries whose features were needed in Python. To prevent inconsistent changes, these C extensions required ***a thread-safe memory management*** which the GIL provided.
+  * > The GIL is simple to implement and was easily added to Python. It provides a performance increase to single-threaded programs as ***only one lock needs to be managed***.
 - > **The Impact on Multi-Threaded Python Programs**
   * > CPU-bound programs are those that are pushing the CPU to its limit. This includes programs that do mathematical computations like matrix multiplications, searching, image processing, etc.
   * > I/O-bound programs are the ones that spend time waiting for Input/Output which can come from a user, file, database, network, etc. I/O-bound programs sometimes have to wait for a significant amount of time till they get what they need from the source due to the fact that the source may need to do its own processing before the input/output is ready, for example, a user thinking about what to enter into an input prompt or a database query running in its own process.

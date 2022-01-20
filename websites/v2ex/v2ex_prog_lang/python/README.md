@@ -1,4 +1,6 @@
 
+控制子进程的 cpu 使用率 https://www.v2ex.com/t/829345
+
 Python 包导入的困惑 https://www.v2ex.com/t/813185
 
 并行并发进程线程协程 GIL 概念简明解释笔记 https://www.v2ex.com/t/807569
