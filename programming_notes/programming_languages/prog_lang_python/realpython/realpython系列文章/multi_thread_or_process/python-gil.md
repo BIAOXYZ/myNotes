@@ -28,8 +28,8 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
   * > A lot of extensions were being written for the existing C libraries whose features were needed in Python. To prevent inconsistent changes, these C extensions required ***a thread-safe memory management*** which the GIL provided.
   * > The GIL is simple to implement and was easily added to Python. It provides a performance increase to single-threaded programs as ***only one lock needs to be managed***.
 - > **The Impact on Multi-Threaded Python Programs**
-  * > CPU-bound programs are those that are pushing the CPU to its limit. This includes programs that do mathematical computations like matrix multiplications, searching, image processing, etc.
-  * > I/O-bound programs are the ones that spend time waiting for Input/Output which can come from a user, file, database, network, etc. I/O-bound programs sometimes have to wait for a significant amount of time till they get what they need from the source due to the fact that the source may need to do its own processing before the input/output is ready, for example, a user thinking about what to enter into an input prompt or a database query running in its own process.
+  * > ***CPU-bound programs*** are those that are pushing the CPU to its limit. This includes programs that do mathematical computations like matrix multiplications, searching, image processing, etc.
+  * > ***I/O-bound programs*** are the ones that spend time waiting for Input/Output which can come from a user, file, database, network, etc. I/O-bound programs sometimes have to wait for a significant amount of time till they get what they need from the source due to the fact that the source may need to do its own processing before the input/output is ready, for example, a user thinking about what to enter into an input prompt or a database query running in its own process.
   * > Let’s have a look at a simple CPU-bound program that performs a countdown:
     ```py
     # single_threaded.py
@@ -80,11 +80,12 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     $ python multi_threaded.py
     Time taken in seconds - 6.924342632293701
     ```
-  * > As you can see, both versions take almost same amount of time to finish. In the multi-threaded version the GIL prevented the CPU-bound threads from executing in parellel.
-  * > The ***GIL does not have much impact on the performance of I/O-bound multi-threaded programs*** as the lock is shared between threads while they are waiting for I/O.
+  * > As you can see, both versions take almost same amount of time to finish. ***In the multi-threaded version the GIL prevented the <ins>CPU-bound</ins> threads from executing in parellel***.
+  * > The ***GIL does not have much impact on the performance of <ins>I/O-bound</ins> multi-threaded programs*** as the lock is shared between threads while they are waiting for I/O.
   * > But a program whose threads are entirely CPU-bound, e.g., a program that processes an image in parts using threads, ***would not only become single threaded due to the lock but will also see an increase in execution time***, as seen in the above example, in comparison to a scenario where it was written to be entirely single-threaded.
     > 
     > ***This increase is the result of acquire and release overheads added by the lock***.
+    >> 【[:star:][`*`]】 //notes：总结一下这一部分，主要说了三点： <br> 1. 在GIL的限制下，计算密集型的多线程任务***基本退化成了单线程***； <br> 2.（尽管）在GIL的限制下，I/O密集型的多线程任务不太受影响，因为一旦正在执行的线程停下来等I/O（它是需要等一段时间的，不可能释放GIL后又立即去获得），其他线程能有效的获得GIL并继续执行，从而不浪费这些时间（也就是增加了一定的“并行性”）； <br> 3. 计算密集型的多线程任务不但被GIL限制成了类似单线程执行，其实比完全的单线程版本性能更差（从上面的运行数据也可以看出来），因为还有***运行1000字节码（Py2）或运行15毫秒（Py3）后放GIL和抢GIL的开销***（详情参见《[深入理解Python中的GIL（全局解释器锁）。 - 蜗牛学苑的文章 - 知乎](https://zhuanlan.zhihu.com/p/75780308)》的笔记）。
 - > **Why Hasn’t the GIL Been Removed Yet?**
   * > The GIL can obviously be removed and this has been done multiple times in the past by the developers and researchers but all those attempts broke the existing C extensions which depend heavily on the solution that the GIL provides.
   * > Of course, there are other solutions to the problem that the GIL solves but some of them ***decrease the performance of <ins>single-threaded</ins> and <ins>multi-threaded I/O-bound</ins> programs*** and some of them are just too difficult. After all, you wouldn’t want your existing Python programs to run slower after a new version comes out, right?
