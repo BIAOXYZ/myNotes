@@ -103,7 +103,7 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     > In such programs, Python’s GIL ***was known to starve the I/O-bound threads by not giving them a chance to acquire the GIL from CPU-bound threads***.
     > 
     > This was because of a mechanism built into Python that forced threads to release the GIL **after a fixed interval** of continuous use and if nobody else acquired the GIL, the same thread could continue its use.
-    >> 【[:star:][`*`]】 //notes：这里的所谓***“饿死”I/O密集型线程***的原因是这样的：线程一旦经过了一个执行周期（1000字节码也好，15毫秒也好）就会释放其占有的GIL，然后（除非它是I/O密集型，正在等I/O，无法参与抢锁）会立即参与到释放掉的GIL的争夺中。在 Python 3.2 之前，一般来说释放掉GIL的那个线程大概率还会抢到GIL。
+    >> 【[:star:][`*`]】 //notes：这里的所谓 ***“饿死”I/O密集型线程*** 的原因是这样的：线程一旦经过了一个执行周期（1000字节码也好，15毫秒也好）就会释放其占有的GIL，然后（除非它是I/O密集型，正在等I/O，无法参与抢锁）会立即参与到释放掉的GIL的争夺中。在 Python 3.2 之前，一般来说释放掉GIL的那个线程大概率还会抢到GIL。
     >>> 那么，对于某个I/O密集型线程：如果它一开始有GIL，那它会因为执行完当前周期或者因为等I/O而释放掉GIL，然后就被某个计算密集型线程抢走，并以很高的概率被那个线程一直占着：执行周期完了释放，释放了再抢回，如此往复；如果它一开始就没有GIL，只要有计算密集型线程在，轮不着它。。。
     ```py
     >>> import sys
