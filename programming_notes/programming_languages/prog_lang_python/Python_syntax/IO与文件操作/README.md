@@ -11,6 +11,10 @@ Python: read(), readline()和readlines()使用方法及性能比较 https://blog
 
 python读取、写入txt文本内容 https://www.jianshu.com/p/45b790a08d5b
 
+# 从文件的指定位置读内容
+
+Python seek()和tell()函数详解 http://c.biancheng.net/view/4780.html
+
 # 已验证过
 
 ## 读取大文件
