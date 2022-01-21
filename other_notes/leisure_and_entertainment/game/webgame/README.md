@@ -4,6 +4,8 @@
 https://gitee.com/likexia/Evolve
 - https://likexia.gitee.io/evolve/
   * 进化 - v1.2.7 https://likexia.gitee.io/evolve/wiki.html
+- https://shimo.im/sheets/tg6VPQgCKhrYW9QG
+  * https://toscode.gitee.com/by22dgb/evolvescript/blob/master/evolve_automation.user.js
 
 没打算用，但是不妨记录一下：
 - ~~Git页游-进化evolve作弊代码 https://www.sidoupiar.com/small-games/sidoupiar/1073/~~
