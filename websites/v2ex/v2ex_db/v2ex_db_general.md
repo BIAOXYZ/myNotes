@@ -1,4 +1,6 @@
 
+操作数据库 update 忘了加 where https://www.v2ex.com/t/829615
+
 关于外键，为什么国内基本都不推荐使用，国外基本都推荐使用？ https://www.v2ex.com/t/799876
 
 数据库做了集群后，比如 mysql，做了 mgr，双 master。那么对外提供服务时， ip 一般是怎么处理的？
