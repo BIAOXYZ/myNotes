@@ -134,12 +134,12 @@ C++ decltype类型推导完全攻略 http://c.biancheng.net/view/7151.html
   decltype(exp) varname = value;
   ```
   > 其中，varname 表示变量名，value 表示赋给变量的值，exp 表示一个表达式。
-- > `auto` 根据 = 右边的初始值 value 推导出变量的类型，而 `decltype` 根据 exp 表达式推导出变量的类型，跟 = 右边的 value 没有关系。
+- > `auto` 根据 `=` 右边的初始值 value 推导出变量的类型，而 `decltype` 根据 exp 表达式推导出变量的类型，***跟 `=` 右边的 value 没有关系***。
 - > 另外，`auto` ***要求变量必须初始化，而 `decltype` 不要求***。这很容易理解，`auto` 是根据变量的初始值来推导出变量类型的，如果不初始化，变量的类型也就无法推导了。`decltype` 可以写成下面的形式：
   ```cpp
   decltype(exp) varname;
   ```
-- > 原则上讲，exp 就是一个普通的表达式，它可以是任意复杂的形式，但是我们必须要保证 exp 的结果是有类型的，不能是 `void`；例如，当 exp 调用一个返回值类型为 `void` 的函数时，exp 的结果也是 `void` 类型，此时就会导致编译错误。C++ `decltype` 用法举例：
+- > 原则上讲，exp 就是一个普通的表达式，它可以是任意复杂的形式，***但是我们必须要保证 exp 的结果是有类型的，不能是 `void`***；例如，当 exp 调用一个返回值类型为 `void` 的函数时，exp 的结果也是 `void` 类型，此时就会导致编译错误。C++ `decltype` 用法举例：
   ```cpp
   int a = 0;
   decltype(a) b = 1;  //b 被推导成了 int
