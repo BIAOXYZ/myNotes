@@ -15,13 +15,14 @@ C++ decltype类型推导完全攻略 http://c.biancheng.net/view/7151.html
   ```cpp
   decltype(exp) varname;
   ```
-- > 原则上讲，exp 就是一个普通的表达式，它可以是任意复杂的形式，***但是我们必须要保证 exp 的结果是有类型的，不能是 `void`***；例如，当 exp 调用一个返回值类型为 `void` 的函数时，exp 的结果也是 `void` 类型，此时就会导致编译错误。C++ `decltype` 用法举例：
-  ```cpp
-  int a = 0;
-  decltype(a) b = 1;  //b 被推导成了 int
-  decltype(10.8) x = 5.5;  //x 被推导成了 double
-  decltype(x + 100) y;  //y 被推导成了 double
-  ```
+- > **exp 注意事项**
+  * > 原则上讲，exp 就是一个普通的表达式，它可以是任意复杂的形式，***但是我们必须要保证 exp 的结果是有类型的，不能是 `void`***；例如，当 exp 调用一个返回值类型为 `void` 的函数时，exp 的结果也是 `void` 类型，此时就会导致编译错误。C++ `decltype` 用法举例：
+    ```cpp
+    int a = 0;
+    decltype(a) b = 1;  //b 被推导成了 int
+    decltype(10.8) x = 5.5;  //x 被推导成了 double
+    decltype(x + 100) y;  //y 被推导成了 double
+    ```
 - > **`decltype` 推导规则**
   * > 上面的例子让我们初步感受了一下 `decltype` 的用法，但你不要认为 `decltype` 就这么简单，它的玩法实际上可以非常复杂。当程序员使用 `decltype(exp)` 获取类型时，编译器将根据以下三条规则得出结果：
     + > 如果 exp 是一个不被括号`( )`包围的表达式，或者是一个类成员访问表达式，或者是一个单独的变量，那么 `decltype(exp)` 的类型就和 exp 一致，这是最普遍最常见的情况。
@@ -52,9 +53,13 @@ C++ decltype类型推导完全攻略 http://c.biancheng.net/view/7151.html
       return 0;
   }
   ```
-  > 这段代码很简单，按照推导规则 1，对于一般的表达式，decltype 的推导结果就和这个表达式的类型一致。
+  > 这段代码很简单，按照推导规则 1，对于一般的表达式，`decltype` 的推导结果就和这个表达式的类型一致。
 
 ## 个人（部分修改后）实战文章中代码
+>> //notes：用到了 C++ 中打印变量类型的方法，需要用到 `<typeinfo>` 库，还挺麻烦的。。。而且效果也不好。有个回答被赞的不多，但是提到了 `boost` 里的 `<boost/type_index.hpp>`，不过这个库估计在线环境应该没有，所以就没试了。从回答里看应该这个库比 STL 自带的 `<typeinfo>` 要好些。
+- Is it possible to print a variable's type in standard C++? https://stackoverflow.com/questions/81870/is-it-possible-to-print-a-variables-type-in-standard-c
+- How do we print out the value_type of a C++ STL container? https://stackoverflow.com/questions/52146507/how-do-we-print-out-the-value-type-of-a-c-stl-container
+  * https://stackoverflow.com/questions/52146507/how-do-we-print-out-the-value-type-of-a-c-stl-container/52146595#52146595
 
 ```cpp
 #include <string>
