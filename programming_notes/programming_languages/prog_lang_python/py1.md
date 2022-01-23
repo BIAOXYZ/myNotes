@@ -115,7 +115,8 @@ Python Cheat Sheet https://github.com/crazyguitar/pysheeet
 
 Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师 | 中文资源 https://mp.weixin.qq.com/s/sRiRpcN9LVj81asESqWZaA
 
-Python有趣的小例子一网打尽。Python基础、Python坑点、Python字符串和正则、Python绘图、Python日期和文件、Web开发、数据科学、机器学习、深度学习、TensorFlow、Pytorch，一切都是简单易懂的小例子。 -- 《我的Python之路V1.3.pdf》最新版本 https://github.com/jackzhenguo/python-small-examples
+Python有趣的小例子一网打尽。Python基础、Python坑点、Python字符串和正则、Python绘图、Python日期和文件、Web开发、数据科学、机器学习、深度学习、TensorFlow、Pytorch，一切都是简单易懂的小例子。 - 《我的Python之路V1.3.pdf》最新版本 https://github.com/jackzhenguo/python-small-examples
+  * > 告别枯燥，致力于打造 Python 实用小例子，更多Python良心教程见 Python中文网 http://www.zglg.work
 
 继Python教程文档后，微软再次推出Python免费在线教程视频 https://www.ithome.com/0/446/441.htm
 > 这套视频名为Python for Beginners，该在线教学视频由微软高级项目经理Christopher Harrison、以及微软AI Gaming的商业开发经理Susan Ibach共同讲解，在课程中加入了他们对Python的见解，一共有44个视频。官方对该系列视频的描述是快速和简洁的，这套视频并不是对Python的深入研究，而是为Python 初学者提供的学习材料，以鼓励学习者开始具体研究领域。

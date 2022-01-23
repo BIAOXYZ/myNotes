@@ -113,6 +113,8 @@ openGauss / website https://gitee.com/opengauss/website
 
 opengauss-mirror / security https://github.com/opengauss-mirror/security
 
+opengauss-mirror / openGauss-server https://github.com/opengauss-mirror/openGauss-server
+
 ### 新闻类
 
 GaussDB（openGauss）宣布将开源，性能超越 MySQL 与 PostgreSQL https://www.oschina.net/news/109981/huawei-to-opensource-gaussdb

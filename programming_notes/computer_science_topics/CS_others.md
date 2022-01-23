@@ -57,6 +57,8 @@ BusTub https://github.com/cmu-db/bustub || https://15445.courses.cs.cmu.edu/
 
 Build a distributed SQL database from the ground up 从零开始写分布式数据库 https://github.com/ngaut/builddatabase
 
+VLDB Summer School 2021 Labs https://github.com/vldbss-2021/vldb-2021-labs
+
 ## network project
 
 互联网体系结构/庖丁解牛Linux网络协议栈 https://github.com/mengning/net

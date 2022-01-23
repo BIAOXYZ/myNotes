@@ -14,3 +14,9 @@
 在不安装任何软件的情况下，学习 Rust https://www.v2ex.com/t/658299
 - 如何在不安装任何软件的情况下，学习Rust https://juejin.im/post/5e81b40a6fb9a03c7e200308
   * > 通过 GitHub Actions，我们可以直接在你的浏览器中学习和探索 Rust 代码。
+
+Rust语言圣经 (The Course) https://github.com/sunface/rust-course
+- > 在线阅读
+  * 官方：https://course.rs/
+  * 国内镜像：https://book.rust.team/
+  * 知乎：支持章节内目录跳转，很好用!  https://www.zhihu.com/column/c_1452781034895446017

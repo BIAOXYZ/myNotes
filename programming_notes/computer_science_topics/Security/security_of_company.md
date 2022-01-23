@@ -255,3 +255,5 @@ Privacy-Preserving XGBoost Inference https://github.com/awslabs/privacy-preservi
 
 Conclave https://github.com/multiparty/conclave
 - (EuroSys '19) Conclave: secure multi-party computation on big data https://dl.acm.org/doi/10.1145/3302424.3303982
+
+Concrete Numpy is an open-source set of tools which aims to simplify the use of fully homomorphic encryption (FHE) for data scientists. https://github.com/zama-ai/concrete-numpy
