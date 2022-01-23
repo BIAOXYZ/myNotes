@@ -29,7 +29,7 @@
   * > 本 HOWTO 中给出的许多结构都假定为 Python 2.4 或更高版本。在此之前，没有内置 sorted() ， list.sort() 也没有关键字参数。相反，所有 Py2.x 版本都支持 cmp 参数来处理用户指定的比较函数。
   * > 在 Py3.0 中， cmp 参数被完全删除（作为简化和统一语言努力的一部分，消除了丰富的比较与 __cmp__() 魔术方法之间的冲突）。
 
-# 其他
+# 自定义排序函数
 
 python按照多个条件排序 https://blog.csdn.net/y12345678904/article/details/77507552
 ```py
@@ -43,3 +43,12 @@ print(L)
 ```
 
 Python应用——自定义排序全套方案 - 承志的文章 - 知乎 https://zhuanlan.zhihu.com/p/108949863
+
+How to sort a list of lists using a custom compare function in Python https://www.kite.com/python/answers/how-to-sort-a-list-of-lists-using-a-custom-compare-function-in-python
+
+Sort a list of lists with a custom compare function https://stackoverflow.com/questions/5213033/sort-a-list-of-lists-with-a-custom-compare-function
+
+## LeetCode相关题目
+- `5973. 价格范围内最高排名的 K 样物品` https://leetcode-cn.com/contest/biweekly-contest-70/problems/k-highest-ranked-items-within-a-price-range/
+
+# 其他
