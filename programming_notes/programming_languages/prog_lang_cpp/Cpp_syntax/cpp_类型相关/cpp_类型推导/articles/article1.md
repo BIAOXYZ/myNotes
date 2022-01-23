@@ -94,6 +94,45 @@ C++ decltype类型推导完全攻略 http://c.biancheng.net/view/7151.html
   }
   ```
   > 这里我们需要重点说一下左值和右值：左值是指那些在表达式执行结束后依然存在的数据，也就是持久性的数据；右值是指那些在表达式执行结束后不再存在的数据，也就是临时性的数据。***有一种很简单的方法来区分左值和右值，对表达式取地址，如果编译器不报错就为左值，否则为右值***。
+- > **`decltype` 的实际应用**
+  * > `auto` 的语法格式比 `decltype` 简单，所以在一般的类型推导中，使用 `auto` 比使用 `decltype` 更加方便，你可以转到《C++ auto》查看很多类似的例子，本节仅演示只能使用 `decltype` 的情形。
+  * > 我们知道，`auto` 只能用于类的静态成员，不能用于类的非静态成员（普通成员），如果我们想推导非静态成员的类型，这个时候就必须使用 `decltype` 了。下面是一个模板的定义：
+    ```cpp
+    #include <vector>
+    using namespace std;
+    
+    template <typename T>
+    class Base {
+    public:
+        void func(T& container) {
+            m_it = container.begin();
+        }
+    private:
+        typename T::iterator m_it;  //注意这里
+    };
+    
+    int main()
+    {
+        const vector<int> v;
+        Base<const vector<int>> obj;
+        obj.func(v);
+        return 0;
+    }
+    ```
+    > 单独看 Base 类中 m_it 成员的定义，很难看出会有什么错误，但在使用 Base 类的时候，如果传入一个 const 类型的容器，编译器马上就会弹出一大堆错误信息。原因就在于，`T::iterator` 并不能包括所有的迭代器类型，当 T 是一个 const 容器时，应当使用 `const_iterator`。
+  * > 要想解决这个问题，在之前的 C++98/03 版本下只能想办法把 const 类型的容器用模板特化单独处理，增加了不少工作量，看起来也非常晦涩。但是有了 C++11 的 decltype 关键字，就可以直接这样写：
+    ```cpp
+    template <typename T>
+    class Base {
+    public:
+        void func(T& container) {
+            m_it = container.begin();
+        }
+    private:
+        decltype(T().begin()) m_it;  //注意这里
+    };
+    ```
+    > 注意，有些低版本的编译器不支持 `T().begin()` 这种写法，以上代码我在 VS2019 下测试通过，在 VS2015 下测试失败。
 
 ## 个人（部分修改后）实战文章中代码
 >> //notes：用到了 C++ 中打印变量类型的方法，需要用到 `<typeinfo>` 库，还挺麻烦的。。。而且效果也不好。有个回答被赞的不多，但是提到了 `boost` 里的 `<boost/type_index.hpp>`，不过这个库估计在线环境应该没有，所以就没试了。从回答里看应该这个库比 STL 自带的 `<typeinfo>` 要好些。
