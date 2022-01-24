@@ -44,8 +44,6 @@ print(L)
 
 ~~Python应用——自定义排序全套方案 - 承志的文章 - 知乎 https://zhuanlan.zhihu.com/p/108949863~~  -->  参见`articles目录`。
 
-How to sort a list of lists using a custom compare function in Python https://www.kite.com/python/answers/how-to-sort-a-list-of-lists-using-a-custom-compare-function-in-python
-
 Sort a list of lists with a custom compare function https://stackoverflow.com/questions/5213033/sort-a-list-of-lists-with-a-custom-compare-function
 
 ## LeetCode相关题目
