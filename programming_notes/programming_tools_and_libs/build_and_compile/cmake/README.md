@@ -55,3 +55,17 @@ Cmake之深入理解find_package()的用法 - 希葛格的韩少君的文章 - �
 cmake:设置编译选项的讲究(add_compile_options和CMAKE_CXX_FLAGS的区别) https://blog.csdn.net/10km/article/details/51731959
 
 CMake设置编译选项的几种方法 https://blog.csdn.net/dreamback1987/article/details/103698524
+
+# 其他
+
+现代 CMake 使用技巧 https://www.incredibuild.cn/blog/modern-cmake-tips-and-tricks-2
+- > 11.使用 CMake 将模块依赖关系可视化
+  * > CMake 支持本机依赖关系的可视化。使用 ZGRViewer 等程序可以很容易地查看输出点文件。
+- > 13.什么时候使用 `PRIVATE`，`PUBLIC`  和  `INTERFACE`
+  * > 下面的图表很好地解释了什么时候应该在 CMake 使用 `PRIVATE`，`PUBLIC` 和 `INTERFACE`.
+
+    | 依赖关系 | 描述 |
+    |--|--|
+    | `PRIVATE`	| 我需要，但是依赖者不需要 |
+    | `PUBLIC` | 我和依赖者都需要 |
+    | `INTERFACE` | 我不需要，但是依赖者需要 |
