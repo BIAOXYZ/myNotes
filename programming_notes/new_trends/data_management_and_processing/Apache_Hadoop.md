@@ -74,6 +74,8 @@ https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/FileSyst
 
 # 集群搭建
 
+Hadoop集群搭建 https://hadoop.apache.org/docs/r1.0.4/cn/cluster_setup.html
+
 ## docker方式（缺点是容器里估计编译困难）
 
 docker-compose快速搭建hadoop https://www.jianshu.com/p/9b548517abbb  【已验证】
