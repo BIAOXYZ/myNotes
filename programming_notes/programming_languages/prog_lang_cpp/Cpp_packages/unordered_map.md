@@ -108,6 +108,8 @@ Jupiter: 69910
 
 C++ STL unordered_map详解 https://blog.csdn.net/wsp_1138886114/article/details/106794899
 
+Initialize a std::map or std::unordered_map in C++ https://www.techiedelight.com/initialize-map-unordered_map-cpp/
+
 # `unordered_map` 类似python dict的 `.keys()` 和 `.values()`
 
 How to retrieve all keys (or values) from a std::map and put them into a vector? https://stackoverflow.com/questions/110157/how-to-retrieve-all-keys-or-values-from-a-stdmap-and-put-them-into-a-vector
