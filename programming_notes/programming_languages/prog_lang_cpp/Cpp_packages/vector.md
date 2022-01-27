@@ -374,3 +374,12 @@ int main()
 运行结果为：
 1 3 2 5 5 7 8 9 10 11
 ```
+
+# vector倒序排序
+
+How to sort a standard array in descending order - C++ 11 https://stackoverflow.com/questions/58054564/how-to-sort-a-standard-array-in-descending-order-c-11
+
+Sort an array in descending order in C++ https://www.techiedelight.com/sort-array-descending-order-cpp/
+
+LeetCode题目：
+- `1996. 游戏中弱角色的数量` https://leetcode-cn.com/problems/the-number-of-weak-characters-in-the-game/
