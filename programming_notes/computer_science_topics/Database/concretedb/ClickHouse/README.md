@@ -1,6 +1,11 @@
 
 # 官方
 
+ClickHouse® is a free analytics DBMS for big data https://github.com/ClickHouse/ClickHouse
+- `ClickHouse/utils/antlr/README.md` https://github.com/ClickHouse/ClickHouse/blob/master/utils/antlr/README.md
+  * https://github.com/ClickHouse/ClickHouse/blob/master/utils/antlr/ClickHouseParser.g4
+  * https://github.com/ClickHouse/ClickHouse/blob/master/utils/antlr/ClickHouseLexer.g4
+
 SQL参考 https://clickhouse.com/docs/zh/sql-reference/
 
 # 其他
