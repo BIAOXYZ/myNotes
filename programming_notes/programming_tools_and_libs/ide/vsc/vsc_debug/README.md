@@ -39,3 +39,20 @@ VSCode 调试器 - Run to Cursor - 李森科在zhihu的文章 - 知乎 https://z
 - > `File` - `Preference` - `Keyboard Shortcuts` - 搜索 `run to cursor` - 设置快捷键（我设置的是Ctrl+Alt+R）
   >> //notes：我在Mac上设置成了 `control + F10`，因为根据下面这个回答，这个好像是 Visual Studio 的默认设置  -->  其实开始是设置成 `control + F9` 的，感觉这个也不错。
   >>> What is the shortcut key for Run to cursor https://stackoverflow.com/questions/47436/what-is-the-shortcut-key-for-run-to-cursor
+
+## debug Python时（Windows下）连接语言服务器超时
+
+Visual Studio Code Python Timeout waiting for debugger connection https://stackoverflow.com/questions/52462599/visual-studio-code-python-timeout-waiting-for-debugger-connection
+- https://stackoverflow.com/questions/52462599/visual-studio-code-python-timeout-waiting-for-debugger-connection/52781131#52781131
+  * > Open the `launch.json` file and add the following configuration:
+    ```json
+    {
+         "name": "Python: Debug Console",
+         "type": "python",
+         "request": "launch",
+         "program": "${file}",
+         "console": "internalConsole"
+    }
+    ```
+    > When you specify none `internalConsole` for the console, it will run the debugger in the debugger console instead of running in the internal or external terminal.
+    >> //notes：另外补充下，原来的 `launch.json` 里这一项的旧值是 `//"console": "integratedTerminal"`。
