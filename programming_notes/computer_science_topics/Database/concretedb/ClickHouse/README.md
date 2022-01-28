@@ -5,8 +5,16 @@ ClickHouse® is a free analytics DBMS for big data https://github.com/ClickHouse
 - `ClickHouse/utils/antlr/README.md` https://github.com/ClickHouse/ClickHouse/blob/master/utils/antlr/README.md
   * https://github.com/ClickHouse/ClickHouse/blob/master/utils/antlr/ClickHouseParser.g4
   * https://github.com/ClickHouse/ClickHouse/blob/master/utils/antlr/ClickHouseLexer.g4
+- https://github.com/ClickHouse/ClickHouse/blob/master/src/Parsers/ParserQuery.cpp
+- https://github.com/ClickHouse/ClickHouse/blob/master/src/Parsers/ParserSelectQuery.cpp
 
 SQL参考 https://clickhouse.com/docs/zh/sql-reference/
+
+# Parser
+
+How to parse a Clickhouse-SQL statement using ANTRL4? https://stackoverflow.com/questions/68687065/how-to-parse-a-clickhouse-sql-statement-using-antrl4
+
+ClickHouse SQL formal grammar or parser implementation #7595 https://github.com/ClickHouse/ClickHouse/issues/7595
 
 # 其他
 
