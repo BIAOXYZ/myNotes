@@ -15,6 +15,8 @@ python读取、写入txt文本内容 https://www.jianshu.com/p/45b790a08d5b
 
 Python seek()和tell()函数详解 http://c.biancheng.net/view/4780.html
 
+Python 多线程分块读取文件 https://blog.csdn.net/onlyforr/article/details/52094581 || http://www.noobyard.com/article/p-hkqigrxm-hc.html
+
 # 已验证过
 
 ## 读取大文件

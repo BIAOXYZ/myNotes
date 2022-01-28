@@ -3,6 +3,8 @@
 
 SQL - Distinct Keyword https://www.tutorialspoint.com/sql/sql-distinct-keyword.htm
 
+SQL中distinct的用法 https://www.cnblogs.com/rainman/archive/2013/05/03/3058451.html
+
 # Group by
 
 SQL中GROUP BY的用法 https://blog.csdn.net/liitdar/article/details/85272035
