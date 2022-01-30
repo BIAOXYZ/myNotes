@@ -123,3 +123,7 @@ Is it possible only to declare a variable without assigning any value in Python?
     ```
   * > Python is dynamic, so you don't need to declare things; they exist automatically in the first scope where they're assigned. So, all you need is a regular old assignment statement as above.
   * > This is nice, because you'll never end up with an uninitialized variable. But be careful -- this doesn't mean that you won't end up with incorrectly initialized variables. If you init something to None, make sure that's what you really want, and assign something more meaningful if you can.
+
+## 优先级
+
+python中not、and、or的优先级与详细用法 https://blog.csdn.net/m0_51284422/article/details/109441190
