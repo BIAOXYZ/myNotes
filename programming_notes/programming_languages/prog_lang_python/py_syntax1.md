@@ -127,3 +127,38 @@ Is it possible only to declare a variable without assigning any value in Python?
 ## 优先级
 
 python中not、and、or的优先级与详细用法 https://blog.csdn.net/m0_51284422/article/details/109441190
+
+## 位运算操作符
+
+BitwiseOperators https://wiki.python.org/moin/BitwiseOperators
+```console
+x << y
+      Returns x with the bits shifted to the left by y places (and new bits on the right-hand-side are zeros). This is the same as multiplying x by 2**y.
+x >> y
+      Returns x with the bits shifted to the right by y places. This is the same as //'ing x by 2**y.
+x & y
+      Does a "bitwise and". Each bit of the output is 1 if the corresponding bit of x AND of y is 1, otherwise it's 0.
+x | y
+      Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
+~ x
+      Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1. This is the same as -x - 1.
+x ^ y
+      Does a "bitwise exclusive or". Each bit of the output is the same as the corresponding bit in x if that bit in y is 0, and it's the complement of the bit in x if that bit in y is 1.
+```
+
+What does |= (ior) do in Python? https://stackoverflow.com/questions/3929278/what-does-ior-do-in-python
+
+python 中右移、左移运算符的作用 https://blog.csdn.net/Strive_For_Future/article/details/95343808
+```py
+print("1<<5结果：",1<<5)
+print("3*1<<5结果：",3*1<<5)
+print("3<<5结果：",3<<5)
+```
+```console
+1<<5结果： 32
+3*1<<5结果： 96
+3<<5结果： 96
+```
+- > 所以：左移、右移是指：在二进制中，将1向左、向右移动的位数，返回的是将二进制数转换为十进制数的结果。
+- > 公式：`a<<b` 等价于 `a*(1<<b)`，而 `(1<<b)` 的结果是二进制数：`100...00` (***共b个0，表示将1向左移动b位***)，对应的十进制结果是：$2^{b}$。
+- > 示例：`3<<5  =  3*2^{5}  =  96`
