@@ -28,6 +28,8 @@ Python Exception Handling Using try, except and finally statement https://www.pr
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 多重`exception`
+
 How to raise a ValueError in Python https://www.kite.com/python/answers/how-to-raise-a-valueerror-in-python
 - > Use the syntax `raise exception` with `exception` as `ValueError(text)` to throw a `ValueError` exception with the error message `text`.
   ```py
@@ -36,11 +38,91 @@ How to raise a ValueError in Python https://www.kite.com/python/answers/how-to-r
   except ValueError:
       raise ValueError("ValueError exception thrown")
   ```
+  ```console
+  Traceback (most recent call last):
+    File "main.py", line 2, in <module>
+      num = int("string")
+  ValueError: invalid literal for int() with base 10: 'string'
+  
+  During handling of the above exception, another exception occurred:
+  
+  Traceback (most recent call last):
+    File "main.py", line 4, in <module>
+      raise ValueError("ValueError exception thrown")
+  ValueError: ValueError exception thrown
+  ```
   >> //notes：但是呢其实这里这个例子不太好，因为会引起多重 `exception`。。。于是正好借机整理下。
 
-During handling of the above exception, another exception occurred https://stackoverflow.com/questions/52725278/during-handling-of-the-above-exception-another-exception-occurred
+【[:ok:][:star:][`*`]】 During handling of the above exception, another exception occurred是如何发生的？ https://www.pynote.net/archives/1856
+- > 调试python代码，常常看到这样的提示，`During handling of the above exception, another exception occurred`。这是如何发生的？请看如下代码：
+  ```py
+  x = 2
+  y = 0
+  
+  try:
+      result = x / y
+  except ZeroDivisionError:
+      raise ValueError('raise in exception clause')
+      print("=== division by zero!")
+  else:
+      print("result is", result)
+  finally:
+      raise ValueError('raise in finally clause')
+      print("executing finally clause")
+  ```
+  > `ZeroDivisionError`必然发生，然后代码进入`except`分支，在这个分支中，遇到了一个`raise`，后面的`print`得不到执行。由于有`finally`分支，在`raise`之前，需要执行`finally`分支的代码，不幸的是，此时又遇到了`raise`，它后面的`print`也得不到执行。因此运行这段代码的效果，就是如下：
+  ```py
+  E:\py>python try.py
+  Traceback (most recent call last):
+    File "try.py", line 8, in 
+      result = x / y
+  ZeroDivisionError: division by zero
+  
+  During handling of the above exception, another exception occurred:
+  
+  Traceback (most recent call last):
+    File "try.py", line 10, in 
+      raise ValueError('raise in exception clause')
+  ValueError: raise in exception clause
+  
+  During handling of the above exception, another exception occurred:
+  
+  Traceback (most recent call last):
+    File "try.py", line 15, in 
+      raise ValueError('raise in finally clause')
+  ValueError: raise in finally clause
+  ```
+  > 这就是`During handling of the above exception, another exception occurred`的由来！在处理异常的`except`分支或离开`try`的`finally`分支有`raise`，就会出现这样的提示。
+- > 到此，自然而然我们会想到另一个问题，在这种情况下，如果这段代码整体有try护着，抛出来的异常时哪个呢？请看下面的测试代码：
+  ```py
+  def testA():
+      x = 2
+      y = 0
+      
+      try:
+          result = x / y
+      except ZeroDivisionError:
+          raise ValueError('raise in exception clause')
+          print("=== division by zero!")
+      else:
+          print("result is", result)
+      finally:
+          raise ValueError('raise in finally clause')
+          print("executing finally clause")
+  
+  try:
+      testA()
+  except Exception as e:
+      print(repr(e))
+  ```
+  > 运行结果：
+  ```console
+  E:\py>python try.py
+  ValueError('raise in finally clause')
+  ```
+  > 看出来了吧，抛出来的只有最后那一个`exception`！
 
-During handling of the above exception, another exception occurred是如何发生的？ https://www.pynote.net/archives/1856
+During handling of the above exception, another exception occurred https://stackoverflow.com/questions/52725278/during-handling-of-the-above-exception-another-exception-occurred
 
 Python: 捕获异常然后再抛出另一个异常的正确姿势 https://mozillazg.com/2016/08/python-the-right-way-to-catch-exception-then-reraise-another-exception.html
 
