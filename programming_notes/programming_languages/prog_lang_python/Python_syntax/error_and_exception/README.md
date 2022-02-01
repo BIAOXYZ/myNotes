@@ -1,26 +1,4 @@
 
-# python异常
-
-## 官方
-
-`8. 错误和异常` https://docs.python.org/zh-cn/3/tutorial/errors.html
-
-## 其他
-
-https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
-
-Python 异常处理 http://www.runoob.com/python/python-exceptions.html
-
-http://www.yiibai.com/python/python_exceptions.html
-
-Python Exception Handling Using try, except and finally statement https://www.programiz.com/python-programming/exception-handling
-
-How to raise a ValueError in Python https://www.kite.com/python/answers/how-to-raise-a-valueerror-in-python
-
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
 # python错误处理
 
 “Too many values to unpack” Exception https://stackoverflow.com/questions/1479776/too-many-values-to-unpack-exception
