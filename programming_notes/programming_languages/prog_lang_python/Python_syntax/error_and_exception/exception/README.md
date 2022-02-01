@@ -26,9 +26,23 @@ http://www.yiibai.com/python/python_exceptions.html
 
 Python Exception Handling Using try, except and finally statement https://www.programiz.com/python-programming/exception-handling
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 How to raise a ValueError in Python https://www.kite.com/python/answers/how-to-raise-a-valueerror-in-python
+- > Use the syntax `raise exception` with `exception` as `ValueError(text)` to throw a `ValueError` exception with the error message `text`.
+  ```py
+  try:
+      num = int("string")
+  except ValueError:
+      raise ValueError("ValueError exception thrown")
+  ```
+  >> //notes：但是呢其实这里这个例子不太好，因为会引起多重 `exception`。。。于是正好借机整理下。
 
 During handling of the above exception, another exception occurred https://stackoverflow.com/questions/52725278/during-handling-of-the-above-exception-another-exception-occurred
+
+During handling of the above exception, another exception occurred是如何发生的？ https://www.pynote.net/archives/1856
+
+Python: 捕获异常然后再抛出另一个异常的正确姿势 https://mozillazg.com/2016/08/python-the-right-way-to-catch-exception-then-reraise-another-exception.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
