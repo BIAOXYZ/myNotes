@@ -1,4 +1,6 @@
 
+人人都在谈的图数据库到底是个啥？ https://bbs.huaweicloud.com/blogs/265577 || https://www.51cto.com/article/663026.html
+
 ### Freebase
 
 Freebase.com 介绍 http://www.ruanyifeng.com/blog/2007/05/freebase_com.html
