@@ -11,7 +11,7 @@
   * > [`try`](https://docs.python.org/zh-cn/3/reference/compound_stmts.html#try) 语句的工作原理如下：
     + > 首先，执行 `try` 子句 （`try` 和 [`except`](https://docs.python.org/zh-cn/3/reference/compound_stmts.html#except) 关键字之间的（多行）语句）。
     + > 如果没有触发异常，则跳过 `except` 子句，`try` 语句执行完毕。
-    + > 如果在执行 `try` 子句时发生了异常，则跳过该子句中剩下的部分。 如果异常的类型与 `except` 关键字后指定的异常相匹配，则会执行 `except` 子句，然后跳到 `try/except` 代码块之后继续执行。
+    + > 如果在执行 `try` 子句时发生了异常，则跳过该子句中剩下的部分。 如果异常的类型与 `except` 关键字后指定的异常相匹配，则会执行 `except` 子句，***然后跳到 `try/except` 代码块之后继续执行***。
     + > 如果发生的异常与 `except` 子句 中指定的异常不匹配，则它会被传递到外部的 `try` 语句中；如果没有找到处理程序，则它是一个**未处理异常**且执行将终止并输出如上所示的消息。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
@@ -127,5 +127,36 @@ During handling of the above exception, another exception occurred https://stack
 Python: 捕获异常然后再抛出另一个异常的正确姿势 https://mozillazg.com/2016/08/python-the-right-way-to-catch-exception-then-reraise-another-exception.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## index不在range的时候不抛出异常
+
+Python index of item in list without error? [duplicate] https://stackoverflow.com/questions/13160564/python-index-of-item-in-list-without-error/13160626
+- https://stackoverflow.com/questions/13160564/python-index-of-item-in-list-without-error/13160631#13160631
+  * > How about this?
+    ```py
+    a = [1]
+    try:
+        index_value = a.index(44)
+    except ValueError:
+        index_value = -1
+    ```
+- > https://stackoverflow.com/questions/13160564/python-index-of-item-in-list-without-error/13160632#13160632
+  * > use exception-handling, `list.index` raises `ValueError` so you can catch that exception:
+    ```py
+    In [78]: lis=[1,2,3,4]
+    In [79]: for i in range(-1,6):
+        try:
+            print lis.index(i)
+        except ValueError:    
+            print i,"not found"
+    
+    -1 not found
+    0 not found
+    0
+    1
+    2
+    3
+    5 not found
+    ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
