@@ -114,6 +114,17 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
+关于办公自动化的一个案例，求教下实现的方向 https://www.v2ex.com/t/831492
+- > 用 pyautogui 的时候推荐使用 snipaste 加快写脚本的速度。
+- > python + selenium 搭配即可。
+- > https://www.bilibili.com/video/BV1T34y1o73U 基于截图的，5 分钟拿来就能用
+- > 用微软自带的 power automate
+- > 这就是 RPA 领域的典型场景了 推荐使用 UiPath 或者 Power Automate
+- > 如果网页端没有反爬措施的话，用 Excel 自带的 Power Query 就可以（数据 -> 获取与转换），完全不需要 python 等外部应用。
+- > excel 可以直接写脚本的，VBS
+- > 34L +1 ，Python requests+openpyxl （如果有反爬就用 selenium 代替 requests） <br> 上个月刚好在弄，https://www.v2ex.com/t/827117 <br> 前几天又把 LOL 过往每个英雄的 KDA 都按日期统计出来了 https://imgur.com/8nCZuAD <br> 看楼主描述，实现这需求不难
+- > UI.Vision RPA 浏览器自动化工具 可以读 Excel,进行自动化查询,然后自动保存到表格
+
 **WindTerm**:
 - 迫于正版化需求，求一个免费的 Terminal/SSH/SFTP 工具 https://www.v2ex.com/t/824167
 - 最近发现一款不错的 SSH 客户端 WindTerm https://www.v2ex.com/t/801168
