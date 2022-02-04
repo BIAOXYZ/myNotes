@@ -116,6 +116,17 @@ How to retrieve all keys (or values) from a std::map and put them into a vector?
 
 Obtaining list of keys and values from unordered_map https://stackoverflow.com/questions/8483985/obtaining-list-of-keys-and-values-from-unordered-map
 
+**LeetCode相关题目**：
+- `1996. 游戏中弱角色的数量` https://leetcode-cn.com/problems/the-number-of-weak-characters-in-the-game/
+  * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1801-2000/001996--weekly257_2/tran/001996_revised.cpp
+    ```cpp
+    vector<int> keys;
+    // 类似Python的 `.keys()`
+    for (auto [k, v] : dic) {
+        keys.push_back(k);
+    }
+    ```
+
 # 其他
 
 unordered_map in C++ STL https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
