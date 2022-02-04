@@ -21,6 +21,8 @@ how we write/review code in big tech companies https://www.youtube.com/watch?v=r
 
 # 李永乐老师
 
+贷款/买房，利息怎么算？不要被忽悠了！李永乐老师讲等额本金和等额本息算法 https://www.youtube.com/watch?v=T6FBfNpiBYw || 贷款 买房，利息怎么算？不要被忽悠了！李永乐老师讲等额本金和等额本息算法（2018最新） https://www.bilibili.com/video/BV1as411g7d5/
+
 996工作制是奋斗还是剥削？你该不该加班？李永乐老师讲机会成本 https://www.youtube.com/watch?v=U4kpHYIuV6c
 > "看一个人喜不喜欢你，你要看穷人是不是愿意给你花钱，富人愿不愿给你花时间，这就是喜不喜欢你的标志。"
 
