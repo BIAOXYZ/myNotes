@@ -115,6 +115,20 @@ Initialize a std::map or std::unordered_map in C++ https://www.techiedelight.com
 How to retrieve all keys (or values) from a std::map and put them into a vector? https://stackoverflow.com/questions/110157/how-to-retrieve-all-keys-or-values-from-a-stdmap-and-put-them-into-a-vector
 
 Obtaining list of keys and values from unordered_map https://stackoverflow.com/questions/8483985/obtaining-list-of-keys-and-values-from-unordered-map
+- https://stackoverflow.com/questions/8483985/obtaining-list-of-keys-and-values-from-unordered-map/8484055#8484055
+  * > Okay, here you go:
+    ```cpp
+    std::vector<Key> keys;
+    keys.reserve(map.size());
+    std::vector<Val> vals;
+    vals.reserve(map.size());
+    
+    for(auto kv : map) {
+        keys.push_back(kv.first);
+        vals.push_back(kv.second);  
+    } 
+    ```
+    > Efficiency can probably be improved, but there it is. You're operating on two containers though, so there's not really any STL magic that can hide that fact. As Louis said, this will work for any of the STL `map` or `set` containers.
 
 **LeetCode相关题目**：
 - `1996. 游戏中弱角色的数量` https://leetcode-cn.com/problems/the-number-of-weak-characters-in-the-game/
@@ -123,6 +137,14 @@ Obtaining list of keys and values from unordered_map https://stackoverflow.com/q
     vector<int> keys;
     // 类似Python的 `.keys()`
     for (auto [k, v] : dic) {
+        keys.push_back(k);
+    }
+    ```
+- `1725. 可以形成最大正方形的矩形数目`
+  * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1601-1800/001725--weekly224_1/tran/224_1.cpp
+    ```cpp
+    vector<int> keys;
+    for (const auto & [k, v] : dic) {
         keys.push_back(k);
     }
     ```
