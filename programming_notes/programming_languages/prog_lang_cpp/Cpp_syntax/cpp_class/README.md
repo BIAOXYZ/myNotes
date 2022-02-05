@@ -9,6 +9,14 @@ Classes (I) http://www.cplusplus.com/doc/tutorial/classes/
 
 # 继承
 
+C++ 继承 https://www.runoob.com/cplusplus/cpp-inheritance.html
+- > **继承类型**
+  * > 当一个类派生自基类，该基类可以被继承为 `public`、`protected` 或 `private` 几种类型。继承类型是通过上面讲解的访问修饰符 access-specifier 来指定的。
+  * > ***我们几乎不使用 `protected` 或 `private` 继承，通常使用 `public` 继承***。当使用不同类型的继承时，遵循以下几个规则：
+    + > **公有继承（`public`）**：当一个类派生自公有基类时，基类的公有成员也是派生类的公有成员，基类的保护成员也是派生类的保护成员，基类的私有成员不能直接被派生类访问，但是可以通过调用基类的公有和保护成员来访问。
+    + > **保护继承（`protected`）**： 当一个类派生自保护基类时，基类的公有和保护成员将成为派生类的保护成员。
+    + > **私有继承（`private`）**：当一个类派生自私有基类时，基类的公有和保护成员将成为派生类的私有成员。
+
 Difference between private, public, and protected inheritance https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance
 
 C++中public、protected、private继承的区别 https://blog.csdn.net/qq583083658/article/details/80740299
