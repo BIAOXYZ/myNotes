@@ -1,4 +1,41 @@
 
+请教一个 Python 浮点数的小问题 https://www.v2ex.com/t/832021
+```console
+v1 = 2.2 * 3 # 6.6
+v2 = 3.3 * 2 # 6.6
+print(v1, v2, v1==v2, v1<=v2, v1>=v2)
+
+输出结果是：
+6.6000000000000005 6.6 False False True
+
+这个结果惊讶到我了，没想到这里也会有坑。所以浮点数比较的正确方式是？
+```
+- > https://docs.python.org/3/library/math.html#math.isclose
+- > 跟 Python 没关系，了解一下浮点数的原理，所有的语言都这样 <br> 正确的比较，使用语言自带的浮点库，或者 v1-v2 < 0.0000……01 这样
+- > https://docs.python.org/3/library/decimal.html 想要精确小数的话可以用 `decimal`
+- > 我试了下 go 可以的
+  ```go
+  func Test_FloatEqual(t *testing.T) {
+  v1 := 2.2 * 3
+  v2 := 3.3 * 2
+  fmt.Println(v1, v2, v1 == v2, v1 <= v2, v1 >= v2)
+  }
+  ```
+  ```console
+  输出结果：
+  === RUN Test_FloatEqual
+  6.6 6.6 true true true
+  --- PASS: Test_FloatEqual (0.00s)
+  PASS
+  ```
+- > Go 语言里 `2.2*3` 这种写法不涉及浮点运算，因为它是一个常量。大部分 C 语言编译器也会做这样的优化，而 Python 是“写啥跑啥”的，所以只有 Python 是真的创建了两个浮点数和两个整数并且做浮点乘法的。Go 换成这种写法你就发现区别了：
+  ```go
+  c1 := 2.2
+  c2 := 3.3
+  v1 := c1 * 3
+  v2 := c2 * 2
+  ```
+
 控制子进程的 cpu 使用率 https://www.v2ex.com/t/829345
 
 Python 包导入的困惑 https://www.v2ex.com/t/813185
