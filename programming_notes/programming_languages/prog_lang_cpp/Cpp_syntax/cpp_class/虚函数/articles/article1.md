@@ -26,6 +26,51 @@ Why do we need virtual functions in C++? https://stackoverflow.com/questions/239
     cat->eat();    // Outputs: "I'm eating a rat."
     ```
     > So far so good, right? Animals eat generic food, cats eat rats, all without `virtual`.
+  * > Let's change it a little now so that `eat()` is called via an intermediate function (a trivial function just for this example):
+    ```cpp
+    // This can go at the top of the main.cpp file
+    void func(Animal *xyz) { xyz->eat(); }
+    ```
+    > Now our main function is:
+    ```cpp
+    Animal *animal = new Animal;
+    Cat *cat = new Cat;
+    
+    func(animal); // Outputs: "I'm eating generic food."
+    func(cat);    // Outputs: "I'm eating generic food."
+    ```
+    > Uh oh... we passed a Cat into `func()`, but it won't eat rats. Should you overload `func()` so it takes a `Cat*`? If you have to derive more animals from Animal they would all need their own `func()`.
+  * > The solution is to make `eat()` from the `Animal` class ***a `virtual` function***:
+    ```cpp
+    class Animal
+    {
+        public:
+            virtual void eat() { std::cout << "I'm eating generic food."; }
+    };
+    
+    class Cat : public Animal
+    {
+        public:
+            void eat() { std::cout << "I'm eating a rat."; }
+    };
+    ```
+    > Main:
+    ```cpp
+    func(animal); // Outputs: "I'm eating generic food."
+    func(cat);    // Outputs: "I'm eating a rat."
+    ```
+    > Done.
+  * 回复里的：
+    + > So if I'm understanding this correctly, `virtual` allows the subclass method to be called, even if the object is being treated as its superclass? 
+    + > Instead of explaining late binding through the example of an intermediary function "func", here is a more straightforward demonstration -- 
+      ```cpp
+      Animal *animal = new Animal; 
+      //Cat *cat = new Cat; 
+      Animal *cat = new Cat; 
+      animal->eat(); // outputs: "I'm eating generic food." 
+      cat->eat(); // outputs: "I'm eating generic food." 
+      ```
+      > Even though you're assigning the subclassed object (Cat), the method being invoked is based on the pointer type (Animal) not the type of object it is point to. This is why you need "virtual".
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
