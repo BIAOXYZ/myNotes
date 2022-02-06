@@ -67,6 +67,8 @@ https://www.juzimi.com/ju/1741097
 
 # 电影
 
+猫眼专业版 https://piaofang.maoyan.com/dashboard
+
 三和人才市场 中国日结1500日元的年轻人们 https://movie.douban.com/subject/30219684/
 - [NHK][纪录片][中文字幕] 三和人才市场・中国日结百元的青年们 https://www.youtube.com/watch?v=YcidornQ7rU
 - 三和大神 https://zh.wikipedia.org/wiki/%E4%B8%89%E5%92%8C%E5%A4%A7%E7%A5%9E
