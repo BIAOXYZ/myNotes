@@ -13,6 +13,10 @@
   * std::to_string http://www.cplusplus.com/reference/string/to_string/
 
 std::string http://www.cplusplus.com/reference/string/string/
+- **Member functions**
+  * `(constructor)` `std::string::string` https://www.cplusplus.com/reference/string/string/string/
+  * `(destructor)` `std::string::~string` https://www.cplusplus.com/reference/string/string/~string/
+  * `operator=` `std::string::operator=` https://www.cplusplus.com/reference/string/string/operator=/
 - **Capacity:**
   * std::string::size http://www.cplusplus.com/reference/string/string/size/
   * std::string::length http://www.cplusplus.com/reference/string/string/length/
