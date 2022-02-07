@@ -301,12 +301,19 @@ vscode 写 LaTeX 可否做到代码与预览滚动同步？ https://www.v2ex.com
 
 # vscode others
 
+在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
+
 ## code-server
 
 code-server -- VS Code in the browser https://github.com/cdr/code-server/
 - Install https://github.com/cdr/code-server/blob/main/docs/install.md 【`-->` 没有用仓库首页 README.md 里的一句脚本的安装方式，而是用了这个页面的安装方式。】
 - issues：
   * How to exit from code-server #1257 https://github.com/cdr/code-server/issues/1257
+
+### code-server实战
+>> //notes：这俩标题虽然一样，但是第二个比第一个有一点强：`nohup` 后会重定向到 `/dev/null`，其他的内容是第一个比第二个强，所以都记下了。
+>>> 然而问题是，它们俩都不对。。。我用普通用户直接执行，有权限问题；于是我在后面加了 `sudo`，完整语句是：`export PASSWORD="<your_password>" && sudo code-server --host 0.0.0.0 --port 9999`，结果发现密码根本没有设置成功。。。
+>>>> 于是按屏幕上打出的提示，试了试**当前用户**下的 `~/.config/code-server/config.yaml` 里的密码，也不行。后来才发现要用 **`root`用户** 下的 `~/.config/code-server/config.yaml` 里的密码才能正确连接。。。不过好在最终是走通了，虽然只是http，不是https，但暂时也不管了。
 
 Ubuntu下部署code-server——浏览器里的vscode https://blog.csdn.net/qq_35356972/article/details/104819583
 - > code-server的插件市场和vscode的插件市场是不共用的，所以有些vscode里面的插件在code-server里面可能无法找到，不过可以通过VSIX的形式进行安装。
@@ -322,8 +329,6 @@ Ubuntu下部署code-server——浏览器里的vscode https://blog.csdn.net/qq_1
   ```sh
   export PASSWORD="你自己的密码" && nohup ./code-server --host 0.0.0.0 --port 80 >/dev/null 2>&1 &
   ```
-
-在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
