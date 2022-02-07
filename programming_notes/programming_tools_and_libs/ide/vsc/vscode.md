@@ -301,10 +301,27 @@ vscode 写 LaTeX 可否做到代码与预览滚动同步？ https://www.v2ex.com
 
 # vscode others
 
+## code-server
+
 code-server -- VS Code in the browser https://github.com/cdr/code-server/
 - Install https://github.com/cdr/code-server/blob/main/docs/install.md 【`-->` 没有用仓库首页 README.md 里的一句脚本的安装方式，而是用了这个页面的安装方式。】
 - issues：
   * How to exit from code-server #1257 https://github.com/cdr/code-server/issues/1257
+
+Ubuntu下部署code-server——浏览器里的vscode https://blog.csdn.net/qq_35356972/article/details/104819583
+- > code-server的插件市场和vscode的插件市场是不共用的，所以有些vscode里面的插件在code-server里面可能无法找到，不过可以通过VSIX的形式进行安装。
+- > 用上面的方法进行部署之后直接退出和服务器的连接是可行的，不过服务器上会始终运行一个终端，在阿里云里面通过网页上的远程连接方式连接之后如果断开连接终端是默认关掉的，这样终端中所运行的code-server服务也会随之消失，如果要使其成为后台运行的服务，需要使用 nohup 命令和命令末尾加 & 的方式来启动后台进程。
+  ```sh
+  export PASSWORD="你自己的密码" && nohup ./code-server --host 0.0.0.0 --port 80 &
+  ```
+- > 有时候code-server会莫名其妙的终止进程（笔者至今还没发现原因），所以只好搞了个定时检测进程的脚本，通过cron服务做定时检测，检测当前是否有目标进程，如果没有的话则启动相应进程。
+- > 默认采用http协议连接，保密性不是很好，按照官方文档的描述，可以通过https进行连接，不过得先为服务器申请一个证书......
+
+Ubuntu下部署code-server——浏览器里的vscode https://blog.csdn.net/qq_18156959/article/details/108770975
+- > 整理后的命令如下：
+  ```sh
+  export PASSWORD="你自己的密码" && nohup ./code-server --host 0.0.0.0 --port 80 >/dev/null 2>&1 &
+  ```
 
 在 Kubernetes 集群上部署 VSCode https://www.qikqiak.com/post/deploy-vscode-on-k8s/
 
