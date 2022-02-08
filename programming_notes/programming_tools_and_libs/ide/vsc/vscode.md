@@ -312,8 +312,10 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 
 ### code-server实战
 >> //notes：这俩标题虽然一样，但是第二个比第一个有一点强：`nohup` 后会重定向到 `/dev/null`，其他的内容是第一个比第二个强，所以都记下了。
->>> 然而问题是，它们俩都不对。。。我用普通用户直接执行，有权限问题；于是我在后面加了 `sudo`，完整语句是：`export PASSWORD="<your_password>" && sudo code-server --host 0.0.0.0 --port 9999`，结果发现密码根本没有设置成功。。。
->>>> 于是按屏幕上打出的提示，试了试**当前用户**下的 `~/.config/code-server/config.yaml` 里的密码，也不行。后来才发现要用 **`root`用户** 下的 `~/.config/code-server/config.yaml` 里的密码才能正确连接。。。不过好在最终是走通了，虽然只是http，不是https，但暂时也不管了。
+>>> 但是在实战过程中遇到了一个问题：我用普通用户直接执行，有权限问题；于是我在后面加了 `sudo`，完整语句是：`export PASSWORD="<your_password>" && sudo code-server --host 0.0.0.0 --port 9999`，结果发现**自定义密码**根本没有设置成功，所以虽然 Mac 上的浏览器里页面都出来了，但是还是无法访问远程 Linux 上的项目。。。
+>>>> 于是按屏幕上打出的提示，试了试**当前用户**下的 `~/.config/code-server/config.yaml` 里的**随机密码**，也不行。后来才发现要用 **`root`用户** 下的 `~/.config/code-server/config.yaml` 里的**随机密码**才能正确连接。。。不过好在最终是走通了，虽然只是http，不是https，但暂时也不管了。
+>>>>> 路上想了想，感觉应该是因为前半句 `export` 设置的是当前用户下的 `$PASSWORD`，但是为了解决权限问题后半句加了 `sudo`，等于后半句是 `root` 在执行了，那密码当然不对了。。。第二天又切换到 `root` 用户下试了试（后半句不带 `sudo` 版本的）这个命令：`export PASSWORD="<your_password>" && code-server --host 0.0.0.0 --port 9999`，结果果然可以用**自定义密码**连接了，证实了我的猜测。
+>>>>>> 日哦，刚才用普通用户也可以直接执行 `export PASSWORD="<your_password>" && code-server --host 0.0.0.0 --port 9999` 并连接成功了，最开始遇到的权限问题没有了。。。坑爹啊- -
 
 Ubuntu下部署code-server——浏览器里的vscode https://blog.csdn.net/qq_35356972/article/details/104819583
 - > code-server的插件市场和vscode的插件市场是不共用的，所以有些vscode里面的插件在code-server里面可能无法找到，不过可以通过VSIX的形式进行安装。
