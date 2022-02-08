@@ -36,3 +36,9 @@ How to reset settings in Visual Studio Code? https://stackoverflow.com/questions
 
 How to exclude folder from "Explore" tab? https://stackoverflow.com/questions/33258543/how-to-exclude-folder-from-explore-tab
 - https://stackoverflow.com/questions/33258543/how-to-exclude-folder-from-explore-tab/55556206#55556206
+
+## 文件内容过多（一般在远程连接时不小心打开了很大的目录时会出现）导致无法 watch file changes
+
+"Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC) https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+
+VSCode出现"Visual Studio Code is unable to watch for file changes in this large workspace"警告的解决方法 https://blog.csdn.net/davidhopper/article/details/79620425
