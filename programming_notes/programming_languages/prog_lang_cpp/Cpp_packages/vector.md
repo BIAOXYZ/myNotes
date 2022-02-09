@@ -375,6 +375,30 @@ int main()
 1 3 2 5 5 7 8 9 10 11
 ```
 
+## 两个vector合并
+
+What is the best way to concatenate two vectors? https://ow.com/questions/3177241/what-is-the-best-way-to-concatenate-two-vectors
+- https://stackoverflow.com/questions/3177241/what-is-the-best-way-to-concatenate-two-vectors/3177254#3177254
+  * > This is precisely what the member function `std::vector::insert` is for
+    ```cpp
+    std::vector<int> AB = A;
+    AB.insert(AB.end(), B.begin(), B.end());
+    ```
+- https://stackoverflow.com/questions/3177241/what-is-the-best-way-to-concatenate-two-vectors/3177252#3177252
+  * > 
+    ```cpp
+    AB.reserve( A.size() + B.size() ); // preallocate memory
+    AB.insert( AB.end(), A.begin(), A.end() );
+    AB.insert( AB.end(), B.begin(), B.end() );
+    ```
+- https://stackoverflow.com/questions/3177241/what-is-the-best-way-to-concatenate-two-vectors/3178194#3178194
+  * > Depends on whether you really need to physically concatenate the two vectors or you want to give the appearance of concatenation of the sake of iteration. The `boost::join` function ( http://www.boost.org/doc/libs/1_43_0/libs/range/doc/html/range/reference/utilities/join.html ) will give you this.
+  * > Note `boost::join` does not copy the two vectors into a new container but generates a pair of iterators (range) that cover the span of both containers. There will be some performance overhead but maybe less that copying all the data to a new container first.
+
+**LeetCode相关题目**：
+- `1447. 最简分数` https://leetcode-cn.com/problems/simplified-fractions/
+  * https://leetcode-cn.com/submissions/detail/266460472/
+
 # vector倒序排序
 
 How to sort a standard array in descending order - C++ 11 https://stackoverflow.com/questions/58054564/how-to-sort-a-standard-array-in-descending-order-c-11
