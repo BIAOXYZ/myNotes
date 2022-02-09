@@ -81,6 +81,10 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 - https://rocksdb.org/
 - https://github.com/facebook/rocksdb/
 
+【from `CockroachDB`】
+- Why we built CockroachDB on top of RocksDB https://www.cockroachlabs.com/blog/cockroachdb-on-rocksd/
+- Introducing Pebble: A RocksDB Inspired Key-Value Store Written in Go https://www.cockroachlabs.com/blog/pebble-rocksdb-kv-store/
+
 # [MyRocks](http://myrocks.io/)
 
 MyRocks及其使用场景分析 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/45652076
