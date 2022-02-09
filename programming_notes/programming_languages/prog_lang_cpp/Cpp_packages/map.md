@@ -107,3 +107,27 @@ int main()
 
 2,李四
 ```
+
+【[:star:][`*`]】 unordered_map vs map in C++ — Complexity Analysis https://codeforces.com/blog/entry/50626
+- > Today one of my myths was broken. <br> I used to believe that `unordered_map` is better in time-complexity than `map` in C++. But today while I was doing a problem([Molly's Chemicals](https://codeforces.com/contest/776/problem/C)), I got time-limit exceeded. After a lot of guess-work(because I thought my solution was correct), I tried using a `map` instead of an `unordered_map` and as a surprise I got it accepted. ***Then I realised that though the amortised time-complexity of using an `unordered_map` is `O(1)` while that of a `map` is `O(log n)`, there are cases in which due to a lot of collisions `unordered_map` can have a big constant multiplier which will increase its actual complexity to greater than that of a `map`***. (Any corrections are welcomed...)
+- > Can someone enlighten me more by clearing the doubt that where should `unordered_map` be used and where not? What are the cases in which a `map` would perform better than an `unordered_map`?
+- > Here are the tle and aced solution links if someone wants to verify:
+  * > [TLE Solution](https://codeforces.com/contest/776/submission/24950521) (TLE after 2500 ms)
+  * > [Accepted Solution](https://codeforces.com/contest/776/submission/24950552) (Accepted in 499 ms)
+- 回复里的：
+  * **krismaz**:
+    + > Firstly, ***`unordered_map` with default settings has a pretty large constant***. It can be decreased a lot by calling **`reserve`** and **`max_load_factor`** methods as explained at the end of this [blog](https://codeforces.com/blog/entry/21853). I think without this `unordered_map` is slightly faster than `map`, with this it should be much faster — assuming random input.
+    + > Secondly, in this problem test were used that make the c++ `unordered_map` implementation really slow. This is possible because the hash function for `int/long long` in C++ is identity (and then taking this modulo the number of buckets), so one can force every key in the hashmap to have the same hash, and then a single lookup becomes `O(n)`.
+    + > To fix the second you can paste your own hash implementation like this: [24950229](https://codeforces.com/contest/776/submission/24950229) (unfortunately didn't do this during the contest, got TLE just like you). This submission also xor's the hashmap key with a randomly drawn number so someone couldn't reverse-engineer your hash somehow and hack it.
+  * **dreameeer**:
+    + > Should we use these two lines always? Or need to change depending on any constraint or input size?
+      ```cpp
+      reserve(4096); // always 4096 ?? 
+      max_load_factor(0.25); always 0.25 ??
+      ```
+      * **krismaz**:
+        + > The first line means that you're reserving space upfront for `4096` elements — this would be a waste of time if your hashmap ends up being smaller than that. When my hashmap was expected to be much larger, I was still using `4096`, although I never really thought about it deeply.
+        + > The `max_load_factor` of `f` roughly says that the maps could take `1/f` times more memory, but should be faster. Hence, this should be only used if memory is not a problem, and `0.25` is a sensible default value. I sometimes use lower values like `0.1` when I'm really optimizing for time, but it seems decreasing f further gives diminishing returns.
+  * **gorbunov**:
+    + > unordered_map's amortized time complexity bound is not specified. Only average time complexity is said to be constant for search, insertion and removal. [Source](http://en.cppreference.com/w/cpp/container/unordered_map).
+    + > Note: if amortized bound would also be constant, the solution utilizing unordered_map would have passed.
