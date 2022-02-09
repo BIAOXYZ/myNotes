@@ -8,6 +8,11 @@ std::unordered_map https://www.cplusplus.com/reference/unordered_map/unordered_m
   * std::unordered_map::operator[] https://www.cplusplus.com/reference/unordered_map/unordered_map/operator[]/
 - **Element lookup**
   * std::unordered_map::find https://www.cplusplus.com/reference/unordered_map/unordered_map/find/
+- **Modifiers**
+  * std::unordered_map::insert https://www.cplusplus.com/reference/unordered_map/unordered_map/insert/
+  * std::unordered_map::erase https://www.cplusplus.com/reference/unordered_map/unordered_map/erase/
+- **Hash policy**
+  * std::unordered_map::max_load_factor https://www.cplusplus.com/reference/unordered_map/unordered_map/max_load_factor/
 
 hash_map File Reference https://gcc.gnu.org/onlinedocs/gcc-4.6.4/libstdc++/api/a00912.html
 
@@ -172,3 +177,8 @@ c++ get values of an unordered_map of vector of unordered_map https://stackoverf
   ```
 
 C++STL : unordered_map详解 - 甘蔗的文章 - 知乎 https://zhuanlan.zhihu.com/p/296360525
+
+# `max_load_factor`
+
+unordered_map max_load_factor in C++ STL https://www.geeksforgeeks.org/unordered_map-max_load_factor-in-c-stl/
+- > The **`unordered_map::max_load_factor`** in C++ STL is a built in function which is used to get and set maximum load factor in unordered_map. Load factor is the ratio between number of elements in container and number of buckets. By default unordered_map max_load factor is `1.0`.

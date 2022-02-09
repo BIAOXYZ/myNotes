@@ -116,8 +116,8 @@ int main()
   * > [Accepted Solution](https://codeforces.com/contest/776/submission/24950552) (Accepted in 499 ms)
 - 回复里的：
   * **krismaz**:
-    + > Firstly, ***`unordered_map` with default settings has a pretty large constant***. It can be decreased a lot by calling **`reserve`** and **`max_load_factor`** methods as explained at the end of this [blog](https://codeforces.com/blog/entry/21853). I think without this `unordered_map` is slightly faster than `map`, with this it should be much faster — assuming random input.
-    + > Secondly, in this problem test were used that make the c++ `unordered_map` implementation really slow. This is possible because the hash function for `int/long long` in C++ is identity (and then taking this modulo the number of buckets), so one can force every key in the hashmap to have the same hash, and then a single lookup becomes `O(n)`.
+    + > Firstly, ***`unordered_map` with default settings has a pretty large constant***. It can be decreased a lot by calling **`reserve`** and **`max_load_factor`** methods as explained at the end of this [blog](https://codeforces.com/blog/entry/21853). <ins>I think</ins> ***without this `unordered_map` is slightly faster than `map`, with this it should be much faster — assuming random input***.
+    + > Secondly, in this problem test were used that make the c++ `unordered_map` implementation really slow. This is possible because the hash function for `int/long long` in C++ is identity (and then taking this modulo the number of buckets), ***so one can force every key in the hashmap to have the same hash, and then a single lookup becomes `O(n)`***.
     + > To fix the second you can paste your own hash implementation like this: [24950229](https://codeforces.com/contest/776/submission/24950229) (unfortunately didn't do this during the contest, got TLE just like you). This submission also xor's the hashmap key with a randomly drawn number so someone couldn't reverse-engineer your hash somehow and hack it.
   * **dreameeer**:
     + > Should we use these two lines always? Or need to change depending on any constraint or input size?
@@ -129,5 +129,5 @@ int main()
         + > The first line means that you're reserving space upfront for `4096` elements — this would be a waste of time if your hashmap ends up being smaller than that. When my hashmap was expected to be much larger, I was still using `4096`, although I never really thought about it deeply.
         + > The `max_load_factor` of `f` roughly says that the maps could take `1/f` times more memory, but should be faster. Hence, this should be only used if memory is not a problem, and `0.25` is a sensible default value. I sometimes use lower values like `0.1` when I'm really optimizing for time, but it seems decreasing f further gives diminishing returns.
   * **gorbunov**:
-    + > unordered_map's amortized time complexity bound is not specified. Only average time complexity is said to be constant for search, insertion and removal. [Source](http://en.cppreference.com/w/cpp/container/unordered_map).
-    + > Note: if amortized bound would also be constant, the solution utilizing unordered_map would have passed.
+    + > `unordered_map`'s amortized time complexity bound is not specified. Only average time complexity is said to be constant for search, insertion and removal. [Source](http://en.cppreference.com/w/cpp/container/unordered_map).
+    + > Note: if amortized bound would also be constant, the solution utilizing `unordered_map` would have passed.
