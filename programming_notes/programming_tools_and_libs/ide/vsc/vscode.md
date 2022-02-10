@@ -286,6 +286,12 @@ VSCODE设置命令行参数，带参数调试程序（python的argv） https://b
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+## vsc Python test
+
+Python testing in Visual Studio Code https://code.visualstudio.com/docs/python/testing
+
+Visual Studio Code test sidebar button disappeared https://stackoverflow.com/questions/67071773/visual-studio-code-test-sidebar-button-disappeared
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vscode for latex
