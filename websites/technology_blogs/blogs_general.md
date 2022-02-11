@@ -199,6 +199,21 @@ AI算法工程师手册 http://www.huaxiaozhuan.com/
   * 1.线性模型 http://www.huaxiaozhuan.com/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/chapters/1_linear.html
   * 7.梯度提升树 http://www.huaxiaozhuan.com/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/chapters/7_GBT.html
 
+## ARTHURCHIAO'S BLOG
+- Articles (中文) https://arthurchiao.art/articles-zh/
+- Articles (EN) https://arthurchiao.art/articles/
+
+[译] [论文] XDP (eXpress Data Path)：在操作系统内核中实现快速、可编程包处理（ACM，2018） http://arthurchiao.art/blog/xdp-paper-acm-2018-zh/ || https://github.com/ArthurChiao/arthurchiao.github.io/blob/master/_posts/2021-08-01-xdp-paper-acm-2018-zh.md
+
+
+[译] ltrace 是如何工作的（2016） https://arthurchiao.art/blog/how-does-ltrace-work-zh/
+
+[译] strace 是如何工作的（2016） https://arthurchiao.art/blog/how-does-strace-work-zh/
+
+[译] Linux 系统调用权威指南（2016） https://arthurchiao.art/blog/system-call-definitive-guide-zh/ || https://github.com/ArthurChiao/arthurchiao.github.io/blob/master/_posts/2019-01-30-system-call-definitive-guide-zh.md
+
+bcc/ebpf 安装及示例（2019） https://arthurchiao.art/blog/bcc-ebpf-tutorial-zh/
+
 --------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
