@@ -2,6 +2,7 @@
 # 源头
 
 # 相关命令
+- [`klist`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/klist)
 
 # 官方链接
 

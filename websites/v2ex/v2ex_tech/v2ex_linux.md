@@ -1,4 +1,13 @@
 
+inode 没满,但是会随机报磁盘空间不足是啥问题? https://www.v2ex.com/t/833195
+```console
+创建一个文件 123456789,可能会报磁盘空间不足 这时我把名字改成 123456789a 可能就会创建成功 但是也有可能还是失败但是只要我继续改多试几次就一定会成功
+```
+- > `strace mkdir 123456789` 看看
+- > `df -i`
+- > 遇到了哈希冲突，<br> `ext4 uses half_md4 as a default hashing-mechanism. If I interpret my google-results correctly, this uses the md4-hash algorithm, but strips it to 32` bits. <br> https://blog.merovius.de/2013/10/20/ext4-mysterious-no-space-left-on.html
+- > lz 贴个 "`lsblk -f`" 的结果呗
+
 Linux 系统的路径，存储设备的挂载点，以及挂载这个操作，究竟要怎么理解比较好，越想越复杂 https://www.v2ex.com/t/809903
 ```console
 我只知道可以创建一个空目录，然后把一块硬盘挂载到这个目录，那以后存到这个目录下的文件就是存在这块硬盘里。
