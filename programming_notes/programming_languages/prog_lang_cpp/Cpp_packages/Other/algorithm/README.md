@@ -109,6 +109,12 @@ C++ STL 算法——最大值max_element，最小值min_element，求和accumula
   
   ```
 
+## 求最大值（最小值）的一个小技巧
+>> 【[:star:][`*`]】 //notes：多个元素求最大值/最小值的另一种写法：`min({elem1, elem2, elem3, elem4})`，即：只需要多加一层大括号，完美解决 `min()` 和 `*min_element()` 的小缺点。 
+
+**LeeCode相关题目**：
+- `1189. “气球” 的最大数量` https://leetcode-cn.com/submissions/detail/267621855/ || https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1001-1200/001189/tran/001189.cpp
+
 # `std::shuffle` 和 `std::random_shuffle`
 
 random_shuffle 和 shuffle的区别 https://www.jianshu.com/p/9613c764447f
