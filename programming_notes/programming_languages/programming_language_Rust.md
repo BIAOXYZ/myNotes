@@ -16,6 +16,7 @@
   * > 通过 GitHub Actions，我们可以直接在你的浏览器中学习和探索 Rust 代码。
 
 Rust语言圣经 (The Course) https://github.com/sunface/rust-course
+- > “连续六年成为全世界最受喜爱的语言，无GC也无需手动内存管理、极高的性能和安全性、过程/OO/函数式编程、优秀的包管理、JS未来基石" — 工作之余的第二语言来试试Rust吧。`<<Rust语言圣经>>`拥有全面且深入的讲解、生动贴切的示例、德芙般丝滑的内容，甚至还有JS程序员关注的WASM和Deno等专题。这可能是目前最用心的Rust中文学习教程/书籍
 - > 在线阅读
   * 官方：https://course.rs/
   * 国内镜像：https://book.rust.team/
