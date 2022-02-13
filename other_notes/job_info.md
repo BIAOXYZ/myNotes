@@ -271,6 +271,10 @@ Beijing Institute of Mathematical Sciences and Applications（BIMSA）
 
 写在19年初的后端社招面试经历 :money_mouth_face: https://github.com/aylei/interview || 写在19年初的后端社招面试经历(两年经验): 蚂蚁 头条 PingCAP https://aleiwu.com/post/interview-experience/
 
+反向面试 https://github.com/yifeikong/reverse-interview-zh
+- > 大部分翻译自： https://github.com/viraptor/reverse-interview ，亦有其他网友补充。
+- > 译者总结的一份适合突击记忆的简洁版 LeetCode 题解和面试问题，也欢迎 Star。 https://github.com/yifeikong/interview
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # 待遇相关

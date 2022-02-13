@@ -1,6 +1,5 @@
 
-
-[评论]Go语言的成功也预示着Rust的成功 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/789181.htm
+Awesome Rust https://github.com/rust-unofficial/awesome-rust
 
 如何为TiKV做贡献 - 张汉东的文章 - 知乎 https://zhuanlan.zhihu.com/p/62370907
 > 来This Week in Rust网站，然后会看到一个「Call for Participation」的分类，这下面的内容就是有人已经帮你选好的Rust生态中各种开源项目需要人帮忙的各种issues。上面也可以不定期地看到TiKV的各种issues
@@ -21,3 +20,17 @@ Rust语言圣经 (The Course) https://github.com/sunface/rust-course
   * 官方：https://course.rs/
   * 国内镜像：https://book.rust.team/
   * 知乎：支持章节内目录跳转，很好用!  https://www.zhihu.com/column/c_1452781034895446017
+
+# Rust项目
+
+RisingLight https://github.com/risinglightdb/risinglight
+
+Type Exercise in Rust https://github.com/skyzh/type-exercise-in-rust
+- > See Also...
+  * > RisingLight is an OLAP database system for educational purpose. Most of the techniques described in this lecture have already been implemented in our educational database system “RisingLight”.
+
+Nebari https://github.com/khonsulabs/nebari
+
+# Rust相关新闻
+
+[评论]Go语言的成功也预示着Rust的成功 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/789181.htm

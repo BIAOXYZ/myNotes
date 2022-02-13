@@ -104,6 +104,9 @@ Go source code analysis(zh-cn) https://github.com/cch123/golang-notes
 Go Patterns -- Curated list of Go design patterns, recipes and idioms https://github.com/tmrts/go-patterns
 - Go Patterns http://tmrts.com/go-patterns/
 
+10billionhongbaos https://github.com/xiaojiaqi/10billionhongbaos
+- > 一篇习作，教你如何实现单机支持100万用户，同时模拟了2015年微信红包的1400万QPS的场景，让服务器在压力下，轻松地完成业务。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Go其他

@@ -68,6 +68,11 @@ PrivateBin is a minimalist, open source online pastebin where the server has zer
 - > This is a fork of ZeroBin, originally developed by Sébastien Sauvage. ZeroBin was refactored to allow easier and cleaner extensions. PrivateBin has many more features than the original ZeroBin. It is, however, still fully compatible to the original ZeroBin 0.19 data storage scheme. Therefore, such installations can be upgraded to PrivateBin without losing any data.
   >> ZeroBin https://github.com/sebsauvage/ZeroBin
 
+# Hash
+
+Sha256 Algorithm Explained https://github.com/dmarman/sha256algorithm
+- > Sha256 algorithm explained online step by step visually https://sha256algorithm.com/ This website will help you understand how a sha256 hash is calculated from start to finish.
+
 # others
 
 - Java密码学 非对称加密以及使用secp256k1进行数字签名（ECDSA），也适合Android（上） https://www.jianshu.com/p/676a0eb33d31
