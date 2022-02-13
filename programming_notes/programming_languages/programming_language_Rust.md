@@ -21,6 +21,10 @@ Rust语言圣经 (The Course) https://github.com/sunface/rust-course
   * 国内镜像：https://book.rust.team/
   * 知乎：支持章节内目录跳转，很好用!  https://www.zhihu.com/column/c_1452781034895446017
 
+Rust 程序设计语言 简体中文版 https://kaisery.github.io/trpl-zh-cn/ || https://github.com/KaiserY/trpl-zh-cn
+- > 本书的 HTML 版本可以在 https://doc.rust-lang.org/stable/book/ （[简体中文译本](https://kaisery.github.io/trpl-zh-cn/title-page.html)）在线阅读，离线版则包含在通过 `rustup` 安装的 Rust 中；运行 `rustup docs --book` 可以打开。
+- 4.认识所有权 https://kaisery.github.io/trpl-zh-cn/ch04-00-understanding-ownership.html
+
 # Rust项目
 
 RisingLight https://github.com/risinglightdb/risinglight
@@ -34,3 +38,13 @@ Nebari https://github.com/khonsulabs/nebari
 # Rust相关新闻
 
 [评论]Go语言的成功也预示着Rust的成功 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/789181.htm
+
+# Rust语法点
+
+## 内存安全
+
+Rust 是如何保障内存安全的 https://xie.infoq.cn/article/3cfc5d243a16fd14d85628033
+
+Rust是如何做到内存安全的 - chunquedong的文章 - 知乎 https://zhuanlan.zhihu.com/p/92277421
+
+Rust是如何实现内存安全的--理解RAII/所有权机制/智能指针/引用 https://blog.csdn.net/gengzhikui1992/article/details/111413056
