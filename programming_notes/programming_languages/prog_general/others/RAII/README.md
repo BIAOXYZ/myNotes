@@ -44,8 +44,9 @@ c++经验之谈一：RAII原理介绍 - allen的文章 - 知乎 https://zhuanlan
     void Mutex::Lock() { PthreadCall("lock", pthread_mutex_lock(&mu_)); }
     void Mutex::Unlock() { PthreadCall("unlock", pthread_mutex_unlock(&mu_)); }
     ```
-    >> 【[:star:][`*`]】 //notes：这一个例子就足以说明 `RAII` 的实质了——在这个例子里的表现就是：用自己定义的 Mutex 类来管理锁，可以达到类似**智能指针**或者**STL中的各种容器**的（***<ins>只管申请了用，不用考虑手动释放</ins>***）效果。
-    >>> 更具体的说，每次通过申请新的 Mutex 对象来获得锁资源，在 Mutex 的构造函数里会调用 `pthread_mutex_init`，***也就是过去需要手动去写释放逻辑的资源***；后面就不用再自己写释放锁资源的代码逻辑了，因为随着（操作系统管理的、栈上的） Mutex 生命周期结束，Mutex 对象会自动调用其析构函数 `~Mutex()`，在析构函数内部执行原始资源的释放逻辑，也就是 `pthread_mutex_destroy`。
+    >> 【[:star:][`*`]】 //notes：这一个例子就足以说明 `RAII` 的实质了——在这个例子里的表现就是：用自己定义的 Mutex 类来管理 mutex 锁这种资源，可以达到类似**智能指针**或者**STL中的各种容器**的（***<ins>只管申请了用，不用考虑用完后手动释放</ins>***）的效果。
+    >>> 更具体地说，每次通过申请新的 Mutex 对象来获得锁资源，在 Mutex 的构造函数里会调用 `pthread_mutex_init` 去获取真正的锁资源。随着程序结束，后面也不用再自己写（那些过去需要自己手动写的）释放锁资源的代码逻辑了，因为随着（操作系统管理的、栈上的） Mutex 生命周期结束，Mutex 对象会自动调用其析构函数 `~Mutex()`，在析构函数内部执行原始资源的释放逻辑，也就是 `pthread_mutex_destroy`。
+    >>>> 所以不会有忘了释放的问题，但是可能有重复释放的问题？
 
 RAII https://en.cppreference.com/w/cpp/language/raii
 
