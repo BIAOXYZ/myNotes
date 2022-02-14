@@ -273,6 +273,9 @@ How to find index of a given element in a Vector in C++ https://www.geeksforgeek
 
 Get index of the matching item from vector c++ https://stackoverflow.com/questions/22388204/get-index-of-the-matching-item-from-vector-c
 
+**LeetCode相关题目**：
+- `1380. 矩阵中的幸运数`https://github.com/BIAOXYZ/variousCodes/blob/ba06b3debdce686f385b0bb88678269304bee409/_CodeTopics/LeetCode/1201-1400/001380--weekly180_1/tran/180_1.cpp
+
 # vector去重
 
 vector 去重方法 https://leetcode-cn.com/circle/article/71vyHt/
