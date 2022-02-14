@@ -95,6 +95,16 @@
     gcc -o hello.exe hello.c (哦,windows用习惯了)
     gcc -o hello.asm -S hello.c
     ```
+- > **FAQ**
+  * > 2、`-l` 参数和 `-L` 参数
+    + > `-l` 参数就是用来指定程序要链接的库，***`-l` 参数紧接着就是`库名`***，那么`库名`跟真正的`库文件名`有什么关系呢？就拿数学库来说，他的库名是`m`，他的库文件名是`libm.so`，很容易看出，***把库文件名的头`lib`和尾`.so`去掉就是库名了***。
+    + > 好了现在我们知道怎么得到库名了，比如我们自已要用到一个第三方提供的库名字叫 `libtest.so`，那么我们只要把 `libtest.so` 拷贝到 `/usr/lib` 里，***编译时加上 `-ltest` 参数***，我们就能用上`libtest.so` 库了（***当然要用 `libtest.so` 库里的函数，我们还需要与 `libtest.so` 配套的头文件***）。
+    + > 放在 `/lib` 和 `/usr/lib` 和 `/usr/local/lib` 里的库直接用 `-l` 参数就能链接了，但如果库文件没放在这三个目录里，而是放在其他目录里，这时我们只用 `-l` 参数的话，链接还是会出错，出错信息大概是：`“/usr/bin/ld: cannot find -lxxx”`，也就是链接程序 `ld` 在那3个目录里找不到 libxxx.so，这时另外一个参数 `-L` 就派上用场了，比如常用的 `X11` 的库，它放在 `/usr/X11R6/lib` 目录下，我们编译时就要用 `-L/usr/X11R6/lib -lX11` 参数，***`-L` 参数跟着的是库文件所在的目录名***。
+    + > 再比如我们把 `libtest.so` 放在 `/aaa/bbb/ccc` 目录下，那链接参数就是 `-L/aaa/bbb/ccc -ltest`。
+    + > 另外，大部分 libxxxx.so 只是一个链接，以RH9为例，比如 libm.so 它链接到 /lib/libm.so.x，/lib/libm.so.6 又链到 /lib/libm-2.3.2.so，如果没有这样的链接，还是会出错，因为`ld`只会找libxxxx.so，所以如果你要用到xxxx库，而只有 libxxxx.so.x 或者 libxxxx-x.x.x.so，做一个链接就可以了`ln -s libxxxx-x.x.x.so libxxxx.so` <br> 手工来写链接参数总是很麻烦的，还好很多库开发包提供了生成链接参数的程序，名字一般叫 `xxxx-config`，一般放在 `/usr/bin` 目录下，比如 `gtk1.2` 的链接参数生成程序是 `gtk-config`，执行 `gtk-config --libs` 就能得到以下输出 `"-L/usr/lib -L/usr/X11R6/lib -lgtk -lgdk -rdynamic -lgmodule -lglib -ldl -lXi -lXext -lX11 -lm"`，这就是编译一个gtk1.2程序所需的gtk链接参数，`xxx-config` 除了 `--libs` 参数外还有一个参数是 `--cflags` 用来生成头文件包含目录的，也就是 `-I` 参数，在下面我们将会讲到。
+    + > 你可以试试执行 `gtk-config --libs --cflags`，看看输出结果。现在的问题就是怎样用这些输出结果了，最笨的方法就是复制粘贴或者照抄，聪明的办法是在编译命令行里加入这个 **`xxxx-config --libs --cflags`**，比如编译一个gtk程序：gcc gtktest.c `gtk-config --libs --cflags` 这样就差不多了。**注意 \` 不是单引号，而是1键左边那个键**。除了 `xxx-config` 以外，现在新的开发包一般都用`pkg-config` 来生成链接参数，使用方法跟 `xxx-config` 类似，但 `xxx-config` 是针对特定的开发包，但 `pkg-config` 包含很多开发包的链接参数的生成，用 `pkg-config --list-all` 命令可以列出所支持的所有开发包，`pkg-config` 的用法就是 `pkg-config pagName --libs --cflags`，其中pagName是包名，是 `pkg-config--list-all` 里列出名单中的一个，比如gtk1.2的名字就是gtk+，`pkg-config gtk+ --libs --cflags` 的作用跟 `gtk-config --libs --cflags` 是一样的。比如：gcc gtktest.c `pkg-config gtk+ --libs --cflags`。
+  * > 3、`-include` 和 `-I` 参数
+    + > `-include` 用来包含头文件，但一般情况下包含头文件都在源码里用 `#include xxxxxx` 实现，`-include` 参数很少用。`-I` 参数是用来指定头文件目录，`/usr/include` 目录一般是不用指定的，`gcc` 知道去那里找，但是如果头文件不在 `/usr/include` 里我们就要用 `-I` 参数指定了，比如头文件放在 `/myinclude` 目录里，那编译命令行就要加上 `-I/myinclude` 参数了，如果不加你会得到一个`"xxxx.h: No such file or directory"` 的错误。`-I` 参数可以用相对路径，比如头文件在当前目录，可以用 `-I.` 来指定。上面我们提到的 `--cflags` 参数就是用来生成 `-I` 参数的。
 
 # 其他
 
