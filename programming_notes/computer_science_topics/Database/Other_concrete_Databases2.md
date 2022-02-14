@@ -53,6 +53,9 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 腾讯发布国内首款无服务器数据库：1秒部署，成本降70% https://www.ithome.com/0/481/490.htm
 
+腾讯云数据库三大产品线统一升级为TDSQL，这是要集中力量干大事！ https://www.163.com/dy/article/FUVM4E1T0511FQO9.html
+- > 腾讯云企业级分布式数据库 TDSQL 品牌升级后，共有三大产品系列，分别为分布式数据库 TDSQL、分析型数据库 TDSQL-A、云原生数据库 TDSQL-C，将原 TDSQL、TBase、CynosDB 产品统一整合为 TDSQL。TDSQL MySQL 版为原 TDSQL，TDSQL PostgreSQL 版为原 TBase OLTP 版及 HTAP 版；TDSQL-A PostgreSQL 版为原 TBase OLAP 版，并新增 ClickHouse 版；TDSQL-C 为原 CynosDB。
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## TDSQL
