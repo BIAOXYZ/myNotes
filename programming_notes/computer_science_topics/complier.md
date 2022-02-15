@@ -105,8 +105,9 @@ Header-only https://en.wikipedia.org/wiki/Header-only
 Benefits of header-only libraries https://stackoverflow.com/questions/12671383/benefits-of-header-only-libraries
 
 ### 只使用lib，不使用header
->> //notes：对于普通的库，我们在 cmake 或 gcc/g++ 中使用时需要知道三点信息：1.根据库的名字用 `-l` 链接这个库；如果库文件（`.so` 或 `.a`）不在默认的库文件搜索目录里，需要用 `-L` 添加进去；用 `-I` 去 include 相应的头文件。而像 `Eigen`、`pybind11` 等著名的库都是 header only 的，那么使用这些库的时候不需要去链接，只需要 include 相应的头文件即可。
->>> 那么很自然的一个问题：是否存在只需要链接库，但是不用 include 头文件的情况呢？搜一下发现也是存在的。
+>> 【[:star:][`*`]】 //notes：对于普通的库，我们在 `cmake` 或 `gcc/g++` 中使用时需要做到三点：1.根据库的名字用 `-l` 链接这个库；2.如果库文件（`.so` 或 `.a`）不在默认的库文件搜索目录里，需要用 `-L` 添加进去；3.用 `-I` 去 include 相应的头文件。
+>>> 而像 `Eigen`、`pybind11` 等著名的库都是 header only 的，那么使用这些库的时候不需要去链接，只需要 include 相应的头文件即可。
+>>>> 那么很自然的一个问题：是否存在只需要链接库，但是不用 include 头文件的情况呢？搜一下发现也是存在的。
 
 Linking library without a header file? https://stackoverflow.com/questions/11852329/linking-library-without-a-header-file
 
