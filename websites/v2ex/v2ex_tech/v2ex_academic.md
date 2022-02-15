@@ -1,4 +1,8 @@
 
+有无实用现代高级编程语言实现了传说中图灵打孔机的程序？ https://www.v2ex.com/t/834053
+- > 你是说这种图灵机模拟？ http://blog.fnil.net/blog/clojure-mo-ni-tu-ling-ji/
+- > like this? http://morphett.info/turing/turing.html
+
 关于傅立叶变换的一点疑惑?（夜不能寐 https://www.v2ex.com/t/808979
 
 话说量子计算机算 n 皇后问题 的复杂度是不是 O(1) https://www.v2ex.com/t/704908
