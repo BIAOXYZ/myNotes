@@ -10,7 +10,7 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 
 # code-server实战
 
-## 1
+## 1.Linux下基本部署
 
 【[:star:][`*`]】 走通了以后，后续的使用还是很简单的。***而且亲测安装了 Python Extension 后可以在 Mac 的 Chrome 浏览器里直接单步调试远程 Linux 上的 Python 脚本***，美滋滋～PS：安装 Docker 插件后，远程 Linux 上的容器也能看见，并且也可以 “Attach Shell”，但是想完美连接一把（“Open in Browser”）的时候，提示 “No valid ports are available” —— ***我怀疑远程 Linux 上的容器如果对外暴露了端口，应该也可以在浏览器里直接连接***，无敌～
 ```sh
@@ -43,5 +43,21 @@ Ubuntu下部署code-server——浏览器里的vscode https://blog.csdn.net/qq_1
   ```sh
   export PASSWORD="你自己的密码" && nohup ./code-server --host 0.0.0.0 --port 80 >/dev/null 2>&1 &
   ```
+
+### 使用systemd使其自动启动
+
+How To Set Up the code-server Cloud IDE Platform on Ubuntu 18.04 [Quickstart] https://www.digitalocean.com/community/tutorials/how-to-set-up-the-code-server-cloud-ide-platform-on-ubuntu-18-04-quickstart
+
+在浏览器中优雅的使用VS Code https://juejin.cn/post/6915016226150285319
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 2.容器化部署
+
+Install -- Docker https://github.com/coder/code-server/blob/main/docs/install.md#docker
+
+使用Code Server容器部署VS Code Online - Binning的文章 - 知乎 https://zhuanlan.zhihu.com/p/403073128
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
