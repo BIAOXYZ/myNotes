@@ -53,10 +53,53 @@ How To Set Up the code-server Cloud IDE Platform on Ubuntu 18.04 [Quickstart] ht
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 2.容器化部署
+>> //notes：总体来讲容器化的方式和直接用命令行的方式各有千秋吧：容器化方式不用担心远端 Linux 宿主机上的 code-server 服务端即使用了前面的 `nohup` 启动方式也会断掉（结果每次第二天来了还得重新再启动——这个问题我也不清楚什么原因，之前用 nohup 后台跑过别的程序，第二天也没见断掉。。。）的问题。但是容器化方式没命令行方式方便。 <br> 实际用 docker 启动时使用的是下述语句，同时参考了官方和其他攻略：
+```sh
+cd ~/project_root_in_host_machine/
+# 当然也可以把下面的 $PWD 换成项目仓库在宿主机的实际路径，这样就可以在任意的地方随时启动。
+docker run -itd --name code-server-in-docker -p 0.0.0.0:9998:8080 \
+  -v "$HOME/.config:/home/coder/.config" \
+  -v "$PWD:/home/coder/project_root" \
+  -u "$(id -u):$(id -g)" \
+  -e "DOCKER_USER=$USER" \
+  -e PASSWORD="<your_password>" \
+  codercom/code-server:latest
+```
 
 Install -- Docker https://github.com/coder/code-server/blob/main/docs/install.md#docker
+```sh
+# This will start a code-server container and expose it at http://127.0.0.1:8080.
+# It will also mount your current directory into the container as `/home/coder/project`
+# and forward your UID/GID so that all file system operations occur as your user outside
+# the container.
+#
+# Your $HOME/.config is mounted at $HOME/.config within the container to ensure you can
+# easily access/modify your code-server config in $HOME/.config/code-server/config.json
+# outside the container.
+mkdir -p ~/.config
+docker run -it --name code-server -p 127.0.0.1:8080:8080 \
+  -v "$HOME/.config:/home/coder/.config" \
+  -v "$PWD:/home/coder/project" \
+  -u "$(id -u):$(id -g)" \
+  -e "DOCKER_USER=$USER" \
+  codercom/code-server:latest
+```
 
 使用Code Server容器部署VS Code Online - Binning的文章 - 知乎 https://zhuanlan.zhihu.com/p/403073128
+- > **运行Code Server**
+  * > Code Server是支持ssl证书的，参考其文档。因为我使用Code Server容器的话，所以直接在Docker运行配置中添加对应参数即可。运行命令如下：
+    ```sh
+    docker run -dit --cap-add SYS_PTRACE --name 命名运行的容器 -p 0.0.0.0:8100:8080 \
+      -v /宿主机中的创建的home文件夹路径:/home/coder \
+      -v /宿主机中证书路径/cert.pem:/容器中证书路径/cert.pem \
+      -v /宿主机中公钥路径/key.pem:/容器中公钥路径/key.pem \
+      -u "$(id -u):$(id -g)" \
+      -e PASSWORD=设置的登录密码 \
+      构建的镜像名字 --cert /容器中证书路径/cert.pem --cert-key /容器中公钥路径/key.pem
+    ```
+    + > `--cap-add SYS_PTRACE` 给容器添加权限（否则 `gdb` 会无法运行）
+    + > `--name` 给运行容器命名（需要符合规范：英文字符1-英文字符2）
+    + > `-p 0.0.0.0:8100:8080` `8100` 是服务器（宿主机）上的端口也是实际访问的端口，需要在防火墙中放开，自行修改；`8080` 是Code Server默认的运行端口不需要修改。
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
