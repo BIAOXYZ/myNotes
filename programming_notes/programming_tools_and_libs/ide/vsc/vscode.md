@@ -292,6 +292,25 @@ Python testing in Visual Studio Code https://code.visualstudio.com/docs/python/t
 
 Visual Studio Code test sidebar button disappeared https://stackoverflow.com/questions/67071773/visual-studio-code-test-sidebar-button-disappeared
 
+## vsc Python Linting
+
+Linting Python in Visual Studio Code https://code.visualstudio.com/docs/python/linting
+- > **Enable linters**
+  * > To enable linters, open the Command Palette (`⇧⌘P`) and select the **Python: Select Linter** command. This command adds `"python.linting.<linter>Enabled": true` to your settings, where `<linter>` is the name of the chosen linter.
+- > **Run linting**
+  * > To perform linting:
+    + > Linting runs automatically when you save a file.
+    + > Open the Command Palette (⇧⌘P), then enter and select Python: Run Linting.
+  * > Issues are shown in the `Problems` panel and as underlines in the code editor. Hovering over an underlined issue displays the details:
+
+其他参考链接：
+- VS Code | 配置 flake8 和 yapf https://www.jianshu.com/p/53cd688185af
+
+**主要参考官方的就行，简书那个链接不是很需要。总体过程如下**：
+1. 安装flake8：`python3 -m pip install flake8`
+2. 启用linter：参见官方 **Enable linters** 部分。
+3. 使用linter：参见官方 **Run linting** 部分。其实启用后只要一保存文件，下面的窗口 `PROBLEMS` 就会出现提示了。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # vscode for latex
