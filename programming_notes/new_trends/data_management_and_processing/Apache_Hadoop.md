@@ -461,6 +461,13 @@ python 与hadoop之pyhdfs的append https://blog.csdn.net/w894607785/article/deta
 
 libhdfs does not call FileSystem.append when O_APPEND passed to hdfsOpenFile https://issues.apache.org/jira/browse/HADOOP-4494
 
+## hdfs权限问题
+>> //notes：起因是如果当前用户没有权限访问hdfs文件，可以通过 `export HADOOP_USER_NAME=<user_name_with_privilege>` 设置用户名来bypass。但是这样可能会造成权限滥用，好像除非服务端开启 Kerberos，不然没有办法。。。
+
+User name handling in Hadoop https://www.opencore.com/blog/2016/5/user-name-handling-in-hadoop/
+
+How to prevent users from modifying HADOOP_USER_NAME ? https://community.cloudera.com/t5/Support-Questions/How-to-prevent-users-from-modifying-HADOOP-USER-NAME/td-p/229320
+
 # 问题处理
 
 ## 1.语言问题，只需要 `export LC_ALL=C` 即可

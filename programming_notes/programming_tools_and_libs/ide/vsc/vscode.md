@@ -300,8 +300,8 @@ Linting Python in Visual Studio Code https://code.visualstudio.com/docs/python/l
 - > **Run linting**
   * > To perform linting:
     + > Linting runs automatically when you save a file.
-    + > Open the Command Palette (⇧⌘P), then enter and select Python: Run Linting.
-  * > Issues are shown in the `Problems` panel and as underlines in the code editor. Hovering over an underlined issue displays the details:
+    + > Open the Command Palette (`⇧⌘P`), then enter and select **Python: Run Linting**.
+  * > Issues are shown in the **`Problems`** panel and as underlines in the code editor. Hovering over an underlined issue displays the details:
 
 其他参考链接：
 - VS Code | 配置 flake8 和 yapf https://www.jianshu.com/p/53cd688185af
