@@ -307,7 +307,7 @@ Linting Python in Visual Studio Code https://code.visualstudio.com/docs/python/l
 - VS Code | 配置 flake8 和 yapf https://www.jianshu.com/p/53cd688185af
 
 **主要参考官方的就行，简书那个链接不是很需要。总体过程如下**：
-1. 安装flake8：`python3 -m pip install flake8`
+1. 安装flake8：`python3 -m pip install -U flake8` （有的时候是你先 **Enable linters** 后，vsc 就会提示你是否安装，然后点击就可以安装了，也是走的这个命令。图片就跟官方文档 **Enable linters** 部分的那个配图是一样的）
 2. 启用linter：参见官方 **Enable linters** 部分。
 3. 使用linter：参见官方 **Run linting** 部分。其实启用后只要一保存文件，下面的窗口 `PROBLEMS` 就会出现提示了。
 
