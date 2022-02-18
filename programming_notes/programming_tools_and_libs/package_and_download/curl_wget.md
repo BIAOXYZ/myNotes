@@ -268,6 +268,27 @@ REST 入门介绍 http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html
 >   
 > Client 的通过 URI 来获取资源的具体象征 (Representational)。Client 取得这些具体象征使这些应用程序转变其状态 (以 浏览器而言，取得HTML、CSS、JavaScript … 来生成界面)，随着不断取得资源的具体象征， Client 端不断地改变其状态，这样不断的反复 (iterations ) 过程就是所谓的 Representational State Transfer。
 
+## `PUT` v.s. `POST`
+
+REST – PUT vs POST https://restfulapi.net/rest-put-vs-post/
+- > **1. Difference between `PUT` and `POST`**
+  * > `PUT` method is [idempotent](https://restfulapi.net/idempotent-rest-apis/). So if we retry a request multiple times, that should be equivalent to a single request invocation.
+    > 
+    > `POST` is NOT idempotent. So if we retry the request N times, we will end up having N resources with N different URIs created on the server.
+- > **2. PUT vs POST with Example**
+  * > Let’s say we are designing a network application. Let’s list down a few URIs and their purpose to get a better understanding of when to use POST and when to use PUT operations.
+    ```console
+    GET 	/device-management/devices       : Get all devices
+    POST 	/device-management/devices       : Create a new device
+    
+    GET 	/device-management/devices/{id}   : Get the device information identified by "id"
+    PUT 	/device-management/devices/{id}   : Update the device information identified by "id"
+    DELETE	/device-management/devices/{id}   : Delete device by "id"
+    ```
+    > Follow similar URI design practices for other resources as well.
+
+What is the difference between POST and PUT in HTTP? https://stackoverflow.com/questions/630453/what-is-the-difference-between-post-and-put-in-http
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [wget](https://www.gnu.org/software/wget/)
