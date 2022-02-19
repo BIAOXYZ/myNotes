@@ -100,7 +100,7 @@ What's the purpose of "send" function on Python generators? https://stackoverflo
     You can't do this just with `yield`.
 
 Python生成器（send，close，throw）方法详解 http://c.biancheng.net/view/7090.html
-- > 我们知道，通过调用 `next()` 或者 `__next__()` 方法，可以实现从外界控制生成器的执行。除此之外，通过 `send()` 方法，还可以向生成器中传值。
+- > 我们知道，通过调用 `next()` 或者 `__next__()` 方法，可以实现从外界控制生成器的执行。除此之外，***通过 `send()` 方法，还可以向生成器中传值***。
 - > 值得一提的是，`send()` 方法可带一个参数，也可以不带任何参数（用 `None` 表示）。其中，当使用不带参数的 `send()` 方法时，它和 `next()` 函数的功能完全相同。例如：
   ```py
   def intNum():
@@ -134,19 +134,25 @@ Python生成器（send，close，throw）方法详解 http://c.biancheng.net/vie
   print(f.send("http://c.biancheng.net"))
   ```
 - > 分析一下此程序的执行流程：
-  * > 1) 首先，构建生成器函数，并利用器创建生成器（对象）f 。
-  * > 2) 使用生成器 f 调用无参的 `send()` 函数，其功能和 `next()` 函数完全相同，因此开始执行生成器函数，即执行到第一个 `yield "hello"` 语句，该语句会返回 "hello" 字符串，然后程序停止到此处（注意，***此时还未执行对 bar_a 的赋值操作***）。
-  * > 3) 下面开始使用生成器 f 调用有参的 `send()` 函数，首先它会将暂停的程序开启，同时还会将其参数“C语言中文网”赋值给当前 `yield` 语句的接收者，也就是 bar_a 变量。程序一直执行完 `yield bar_a` 再次暂停，因此会输出“C语言中文网”。
-  * > 4) 最后依旧是调用有参的 `send()` 函数，同样它会启动餐厅的程序，同时将参数“http://c.biancheng.net”传给 bar_b，然后执行完 `yield bar_b` 后（输出 http://c.biancheng.net），程序执行再次暂停。
+  * > 1) 首先，构建生成器函数，并利用器创建生成器（对象）`f` 。
+  * > 2) 使用生成器 `f` 调用无参的 `send()` 函数，其功能和 `next()` 函数完全相同，因此开始执行生成器函数，即执行到第一个 `yield "hello"` 语句，该语句会返回 `"hello"` 字符串，然后程序停止到此处（注意，***此时还未执行对 `bar_a` 的赋值操作***）。
+  * > 3) 下面开始使用生成器 `f` 调用有参的 `send()` 函数，首先它会将暂停的程序开启，同时还会将其参数`“C语言中文网”`赋值给当前 `yield` 语句的接收者，也就是 `bar_a` 变量。程序一直执行完 `yield bar_a` 再次暂停，因此会输出`“C语言中文网”`。
+  * > 4) 最后依旧是调用有参的 `send()` 函数，同样它会启动暂停的程序，同时将参数`“http://c.biancheng.net”`传给 `bar_b`，然后执行完 `yield bar_b` 后（输出 `http://c.biancheng.net`），程序执行再次暂停。
   > 因此，该程序的执行结果为：
   ```console
   hello
   C语言中文网
   http://c.biancheng.net
   ```
+- > **Python生成器 `close()` 方法**
+- > **Python生成器 `throw()` 方法**
 
 Python生成器及send用法讲解 https://www.cnblogs.com/nymrli/p/9416949.html
 
 python 生成器 send()方法简介 https://www.jianshu.com/p/6c33bd958f3d
+
+Python生成器next方法和send方法区别 https://segmentfault.com/a/1190000016880292
+
+Python生成器中的send()与next()方法解析 https://blog.csdn.net/qq_39521554/article/details/79864889
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
