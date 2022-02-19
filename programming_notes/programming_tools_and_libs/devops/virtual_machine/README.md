@@ -8,6 +8,16 @@ Download Ubuntu Desktop https://ubuntu.com/download/desktop
 
 # 其他
 
+2022 年，怎样才是家用远程开发的正确姿势？ https://www.v2ex.com/t/834938
+- > lz 你可以直接创建个 Linux 的 Hyper-V 虚拟机，虚拟交换机选择 "外部网络" 这样你虚拟机就能直接拿到局域网 ip ，之后你想远程怎么玩就怎么玩了
+- > WireGuard
+- > Win 装虚拟机，用自带的 hyper-v 就行，改一下网络配置，获取一个本地 IP ，不需要转发端口。 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
+- > NoMachine
+- 个人补充链接：
+  * https://www.wireguard.com/
+  * https://www.nomachine.com/
+  * NoMachine，适用于Ubuntu的远程桌面工具 https://ubunlog.com/zh-CN/nomachine%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E5%B7%A5%E5%85%B7/
+
 使用 vmware 还是 docker 来搭建 Linux 实验环境？ https://www.v2ex.com/t/812956
 - > `multipass` 试试
 - > vmware 自带了一个 `vctl` 命令，和 docker 差不多，你可以试一下，但是这个命令明显不如 docker 好用

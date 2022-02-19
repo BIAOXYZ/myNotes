@@ -1,4 +1,10 @@
 
+看到了一份 MySQL 项目经理写的 MySQL 优化器使用指南，很不错，是精品，做了下中文翻译 https://www.v2ex.com/t/835074
+```console
+原文： http://www.unofficialmysqlguide.com/index.html
+翻译： https://www.liuquanhao.com/posts/mysql%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%99%A8%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
+```
+
 mysql 里，如果没有用事务直接 select 会脏读吗？ https://www.v2ex.com/t/762930
 - > 现在都是 innodb 引擎，在 innodb 下，你 mysql 的普通读 select 是快照读，压根不会加锁，不管是行读锁还是行写锁都不会影响普通 select，快照读会根据 MVCC 版本链 和 read view 去做判断 不会出现读到 某些事物未提交的情况，当然你的事物隔离级别必须是读已提交以上
 - > 嗯，你可以详细了解一下 MVCC，如果读还要加锁，那 mysql 的性能可想而知
