@@ -73,10 +73,80 @@ Python生成器详解 http://c.biancheng.net/view/2393.html
   (0, 1, 2, 3, 4)
   ```
 
-## `.send()`
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# `.send()`
 
 What's the purpose of "send" function on Python generators? https://stackoverflow.com/questions/19302530/whats-the-purpose-of-send-function-on-python-generators
+- https://stackoverflow.com/questions/19302530/whats-the-purpose-of-send-function-on-python-generators/19302694#19302694
+  * > It's used to send values into a generator that just yielded. Here is an artificial (non-useful) explanatory example:
+    ```py
+    >>> def double_inputs():
+    ...     while True:
+    ...         x = yield
+    ...         yield x * 2
+    ...
+    >>> gen = double_inputs()
+    >>> next(gen)       # run up to the first yield
+    >>> gen.send(10)    # goes into 'x' variable
+    20
+    >>> next(gen)       # run up to the next yield
+    >>> gen.send(6)     # goes into 'x' again
+    12
+    >>> next(gen)       # run up to the next yield
+    >>> gen.send(94.3)  # goes into 'x' again
+    188.5999999999999
+    ```
+    You can't do this just with `yield`.
 
 Python生成器（send，close，throw）方法详解 http://c.biancheng.net/view/7090.html
+- > 我们知道，通过调用 `next()` 或者 `__next__()` 方法，可以实现从外界控制生成器的执行。除此之外，通过 `send()` 方法，还可以向生成器中传值。
+- > 值得一提的是，`send()` 方法可带一个参数，也可以不带任何参数（用 `None` 表示）。其中，当使用不带参数的 `send()` 方法时，它和 `next()` 函数的功能完全相同。例如：
+  ```py
+  def intNum():
+      print("开始执行")
+      for i in range(5):
+          yield i
+          print("继续执行")
+  num = intNum()
+  print(num.send(None))
+  print(num.send(None))
+  ```
+  > 程序执行结果为：
+  ```console
+  开始执行
+  0
+  继续执行
+  1
+  ```
+  > 注意，虽然 `send(None)` 的功能是 `next()` 完全相同，但更推荐使用 `next()`，不推荐使用 `send(None)`。
+- > 这里重点讲解一些带参数的 `send(value)` 的用法，其具备 `next()` 函数的部分功能，即将暂停在 `yield` 语句出的程序继续执行，但与此同时，该函数还会将 `value 值`作为 `yield` 语句返回值赋值给接收者。
+  >
+  > 注意，带参数的 `send(value)` 无法启动执行生成器函数。也就是说，程序中第一次使用生成器调用 `next()` 或者 `send()` 函数时，不能使用带参数的 `send()` 函数。
+  ```py
+  def foo():
+      bar_a = yield "hello"
+      bar_b = yield bar_a
+      yield bar_b
+  f = foo()
+  print(f.send(None))
+  print(f.send("C语言中文网"))
+  print(f.send("http://c.biancheng.net"))
+  ```
+- > 分析一下此程序的执行流程：
+  * > 1) 首先，构建生成器函数，并利用器创建生成器（对象）f 。
+  * > 2) 使用生成器 f 调用无参的 `send()` 函数，其功能和 `next()` 函数完全相同，因此开始执行生成器函数，即执行到第一个 `yield "hello"` 语句，该语句会返回 "hello" 字符串，然后程序停止到此处（注意，***此时还未执行对 bar_a 的赋值操作***）。
+  * > 3) 下面开始使用生成器 f 调用有参的 `send()` 函数，首先它会将暂停的程序开启，同时还会将其参数“C语言中文网”赋值给当前 `yield` 语句的接收者，也就是 bar_a 变量。程序一直执行完 `yield bar_a` 再次暂停，因此会输出“C语言中文网”。
+  * > 4) 最后依旧是调用有参的 `send()` 函数，同样它会启动餐厅的程序，同时将参数“http://c.biancheng.net”传给 bar_b，然后执行完 `yield bar_b` 后（输出 http://c.biancheng.net），程序执行再次暂停。
+  > 因此，该程序的执行结果为：
+  ```console
+  hello
+  C语言中文网
+  http://c.biancheng.net
+  ```
+
+Python生成器及send用法讲解 https://www.cnblogs.com/nymrli/p/9416949.html
+
+python 生成器 send()方法简介 https://www.jianshu.com/p/6c33bd958f3d
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
