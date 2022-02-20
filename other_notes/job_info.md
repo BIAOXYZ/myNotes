@@ -125,6 +125,11 @@ https://zhuanlan.zhihu.com/p/27778873
 
 :mag_right: 互联网内推信息（社招、校招、实习） https://github.com/CyC2018/Job-Recommend
 
+以程序员的视角看中国 https://github.com/csguide-dabai/Programmer-look-at-China
+- 北京.md https://github.com/csguide-dabai/Programmer-look-at-China/blob/main/%E5%8C%97%E4%BA%AC.md || 程序员在北京可以选择哪些国企、央企以及研究所 https://mp.weixin.qq.com/s/OcmLbLqzogZzdg285NIhWg
+  * > **工商银行软件开发中心**
+    + > 每月会有饭补，过节也会有节假日补贴（放三天的节日假期给 1000，国庆给 2000，过年 4000）。
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # COMPANY
