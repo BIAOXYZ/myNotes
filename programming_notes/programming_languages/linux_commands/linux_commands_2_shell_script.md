@@ -93,6 +93,8 @@ https://segmentfault.com/u/vvpale/articles
 - Linux和Shell回炉复习系列文章总目录 https://www.cnblogs.com/f-ck-need-u/p/7048359.html
 - 一篇文章Shell脚本快速入门 https://www.cnblogs.com/f-ck-need-u/p/12275851.html
 
+Linux工具快速教程 https://github.com/me115/linuxtools_rst || https://linuxtools-rst.readthedocs.io/zh_CN/latest/
+
 # shell脚本调试
 
 Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html

@@ -101,3 +101,7 @@ Crypto 101, the introductory book on cryptography. https://github.com/crypto101/
 # performance related
 
 Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flags https://panthema.net/2008/0714-cryptography-speedtest-comparison/
+
+# attack
+
+crypto-attacks -- Python implementations of cryptographic attacks and utilities. https://github.com/jvdsn/crypto-attacks
