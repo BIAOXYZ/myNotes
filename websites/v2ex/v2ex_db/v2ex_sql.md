@@ -1,4 +1,6 @@
 
+逻辑大量的写在 sql 语句里 https://www.v2ex.com/t/835439
+
 求 sql 优化才几万数据查询都破 1s 了 https://www.v2ex.com/t/782918
 
 sql 改写类的数据脱敏遇到的问题求助 https://www.v2ex.com/t/727240
