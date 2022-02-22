@@ -151,6 +151,9 @@ https://segmentfault.com/p/1210000008626219
 猴子都能懂的GIT入门
 https://backlog.com/git-tutorial/cn/contents/
 
+Git Magic https://github.com/blynn/gitmagic || http://www-cs-students.stanford.edu/~blynn/gitmagic/
+- > Translations
+  * > Simplified Chinese: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/
 
 ## git push -u origin master 
 
