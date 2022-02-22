@@ -80,7 +80,6 @@ services:
     ports:
       - '8082:8081'
 EOF
-```
 
 # 如果机器上已经安装了 docker-compose 了当然就不用再安装了。
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -88,6 +87,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 docker-compose up -d
 
 # 然后只要笔记本能连上远程 Linux 机器，直接在笔记本的浏览器里用 http://<remote_linux_ip>:8080/ 就可以访问 Spark Web UI 了。
+# 此外可以考虑把 8080 8081 8082 改成 9080，9081，9082，因为 8080 容易冲突。
 ```
 
 Bitnami Docker Image for Apache Spark https://github.com/bitnami/bitnami-docker-spark
