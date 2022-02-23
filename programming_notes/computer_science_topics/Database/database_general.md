@@ -27,6 +27,10 @@ db-readings https://github.com/rxin/db-readings
 
 德哥PostgreSQL-天天象上沙龙-第1讲-掀起盖头 https://www.bilibili.com/video/BV1d54y157yA
 
+# DB from github
+
+Awesome Database Learning https://github.com/pingcap/awesome-database-learning
+
 # DB from zhihu
 
 数据库前沿技术 https://zhuanlan.zhihu.com/c_190483659
