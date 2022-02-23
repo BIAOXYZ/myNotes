@@ -88,6 +88,7 @@ docker-compose up -d
 
 # 然后只要笔记本能连上远程 Linux 机器，直接在笔记本的浏览器里用 http://<remote_linux_ip>:8080/ 就可以访问 Spark Web UI 了。
 # 此外可以考虑把 8080 8081 8082 改成 9080，9081，9082，因为 8080 容易冲突。
+# --> 但是有个问题：在 http://<remote_linux_ip>:8080/ 里显示的 worker 数量是 0，也就是看起来 worker 没有连上 master。不知道为什么，回头再看吧。
 ```
 
 Bitnami Docker Image for Apache Spark https://github.com/bitnami/bitnami-docker-spark

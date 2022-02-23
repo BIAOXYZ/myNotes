@@ -3,7 +3,7 @@
 
 # flying-tiger
 
-随笔分类 - postgresql https://www.cnblogs.com/flying-tiger/category/881004.html
+【[:star:][`*`]】 随笔分类 - postgresql https://www.cnblogs.com/flying-tiger/category/881004.html
 - postgresql编译安装与调试（一） https://www.cnblogs.com/flying-tiger/p/5859393.html
 - postgresql编译安装与调试（二） https://www.cnblogs.com/flying-tiger/p/5866660.html
 - 跟我一起读postgresql源码(一)——psql命令 http://www.cnblogs.com/flying-tiger/p/6004314.html

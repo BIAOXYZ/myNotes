@@ -245,7 +245,7 @@ Hash join算法原理 https://www.cnblogs.com/qlee/archive/2011/04/11/2012572.ht
 
 # 执行引擎
 
-数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46
+【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46
 - 数据库内核杂谈（四）：执行模式 https://www.infoq.cn/article/spfisufzenc6utrftsdd
 
 SQL是如何在数据库中执行的？ https://segmentfault.com/a/1190000037792613
