@@ -50,6 +50,25 @@ How To Set Up the code-server Cloud IDE Platform on Ubuntu 18.04 [Quickstart] ht
 
 在浏览器中优雅的使用VS Code https://juejin.cn/post/6915016226150285319
 
+### 用定时任务解决：不知道什么原因会自动断掉，每次第二天来都得重新启动 code-server 的问题
+
+```sh
+$ mkdir crontabfiles/
+$ cd crontabfiles/
+$ 
+$ crontab -l
+no crontab for root
+$ 
+$ vi checkcodeserver
+$ cat checkcodeserver
+* * * * * export PASSWORD="2022" && nohup code-server --host 0.0.0.0 --port 9999 > /dev/null 2 >&1 &
+$ 
+$ crontab checkcodeserver
+$ crontab -l
+* * * * * export PASSWORD="2022" && nohup code-server --host 0.0.0.0 --port 9999 > /dev/null 2 >&1 &
+```
+>> 【[:star:][`*`]】 //notes：后来试了下即使自己手动 `kill -9` 杀掉已经启动的 `code-server` 进程，很快（这里 `crontab` 设置的是一分钟）就会自动拉起来，美滋滋～
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 2.容器化部署
