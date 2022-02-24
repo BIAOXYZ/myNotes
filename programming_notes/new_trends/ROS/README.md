@@ -33,6 +33,7 @@ roschina教程安装与配置ROS环境 http://wiki.ros.org/roschina/%E6%95%99%E7
 
 ROS Kinetic 安装指南 http://wiki.ros.org/cn/kinetic/Installation
 - > 非官方的安装选项: (Single line install) http://wiki.ros.org/ROS/Installation/TwoLineInstall
+  + > `wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh && chmod +x ./ros_install_noetic.sh && ./ros_install_noetic.sh`
 
 创建ROS软件包 http://wiki.ros.org/cn/ROS/Tutorials/CreatingPackage
 ```sh
