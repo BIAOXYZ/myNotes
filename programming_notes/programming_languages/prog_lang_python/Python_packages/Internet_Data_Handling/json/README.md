@@ -64,3 +64,12 @@ json --- JSON 编码和解码器 https://docs.python.org/zh-cn/3/library/json.ht
 Python List to JSON https://pythonexamples.org/python-list-to-json/
 
 Python JSON to List https://pythonexamples.org/python-json-to-list/
+
+# 其他相关库
+
+## `jsonpickle`
+>> //notes：对于自己定义的类不好直接用 `json.dumps()`，可以用这个库。
+
+Serializing class instance to JSON https://stackoverflow.com/questions/10252010/serializing-class-instance-to-json/64301974
+
+jsonpickle Documentation http://jsonpickle.github.io/
