@@ -27,7 +27,30 @@ roschina教程安装与配置ROS环境 http://wiki.ros.org/roschina/%E6%95%99%E7
 
 ## `教程`部分
 
+安装和配置ROS环境 http://wiki.ros.org/cn/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+- > 1.安装ROS
+  * > 在开始学习这些教程之前，请先按照 [ROS安装指南](http://wiki.ros.org/cn/ROS/Installation) 完成安装。
 
+ROS Kinetic 安装指南 http://wiki.ros.org/cn/kinetic/Installation
+- > 非官方的安装选项: (Single line install) http://wiki.ros.org/ROS/Installation/TwoLineInstall
+
+创建ROS软件包 http://wiki.ros.org/cn/ROS/Tutorials/CreatingPackage
+```sh
+$ rospack depends1 beginner_tutorials 
+[rospack] Error: the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+
+# 直接按提示做即可，需要先安装下 rosdep
+$ apt-get install python3-rosdep -y
+$ sudo rosdep init
+$ rosdep update
+$ rospack depends1 beginner_tutorials 
+roscpp
+rospy
+std_msgs
+
+# 如果安装的不是 desktop-full 版本，可能还要按下面的先搞一下？不过我开始就机智地选择的完全版。
+# https://answers.ros.org/question/353570/rospack-error-the-rosdep-view-is-empty-call-sudo-rosdep-init-and-rosdep-update/
+```
 
 ## `rospy` 相关
 
