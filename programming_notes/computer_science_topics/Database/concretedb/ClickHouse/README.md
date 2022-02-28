@@ -31,3 +31,6 @@ Clickhouse错误问题汇总（持续更新） https://blog.csdn.net/xsm666/arti
 
 云数据库 ClickHouse https://www.aliyun.com/product/clickhouse
 - > 云数据库ClickHouse 是分布式实时分析型列式数据库服务。具有高性能、开箱即用、企业特性支持。广泛应用于流量分析、广告营销分析、行为分析、人群划分、***客户画像***、敏捷BI、数据集市、网络监控、分布式服务和链路监控等业务场景。
+
+Clickhouse建表语法、视图语法、数据表DDL（数据定义语言）、数据DML（数据操作语言） https://www.cnblogs.com/biehongli/p/14430153.html
+- > 2、Clickhouse数据表的定义语法，是在标准SQL的基础之上建立的。Clickhouse目前提供了三种最基本的建表方法，但是注意的是在Clickhouse中建表一定要指定表的引擎，在指定数据表字段之后，最后一定要指定数据表的引擎。

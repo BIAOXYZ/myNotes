@@ -1,4 +1,8 @@
 
+# DATE
+
+The Ultimate Guide to PostgreSQL Date By Examples https://www.postgresqltutorial.com/postgresql-date/
+
 # Distinct
 
 SQL - Distinct Keyword https://www.tutorialspoint.com/sql/sql-distinct-keyword.htm
