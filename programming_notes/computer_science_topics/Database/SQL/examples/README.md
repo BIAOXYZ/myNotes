@@ -1,6 +1,8 @@
 
 # 常用
 
+## 1
+
 ```sql
 create table t1 (id int);
 insert into t1 select generate_series(1, 10);
@@ -18,6 +20,8 @@ select sum(ids) from (select t1.id as ids from t1 join t2 on t1.id = t2.id) as q
 
 select sum(t1.id) from t1, t2 where t1.id = t2.id;
 ```
+
+## 2
 
 ```sql
 create table input_a (uid int, val int, t int);
@@ -42,4 +46,45 @@ insert into input_b values (44969473, '50+', 'female', 20211130, 1);
 /* Clickhouse 的话建表语句不太一样，需要指明表的引擎；但是插数据语句是一样的 */
 create table input_a (uid int, val int, t int) ENGINE = TinyLog;
 create table input_b (device_id int, age varchar(255), gender varchar(255), date int, y int) ENGINE = TinyLog;
+```
+
+【[:star:][`*`]】 然后发现对于下面的查询语句，CK和关系型数据库（这里只试了pg，mysql和pg是一样的）的在处理空值时不一样。。。
+
+```console
+postgres=# select input_a.t, input_b.age, sum(input_a.val), sum(pow(input_a.val,2)), sum(input_a.t+input_b.y) FROM input_a left join input_b ON input_a.uid = input_b.device_id GROUP BY input_a.t, input_b.age;
+ t |  age  | sum | sum  | sum
+---+-------+-----+------+-----
+ 2 | 24-30 |  12 |  144 |   5
+ 2 | 50+   |   1 |    1 |   3
+ 1 | 50+   |   2 |    4 |   2
+ 1 |       |  85 | 5993 |
+(4 rows)
+```
+```console
+eef56cb5d207 :) select input_a.t, input_b.age, sum(input_a.val), sum(pow(input_a.val,2)), sum(input_a.t+input_b.y) FROM input_a left join input_b ON input_a.uid = input_b.device_id GROUP BY input_a.t, input_b.age
+
+SELECT
+    input_a.t,
+    input_b.age,
+    sum(input_a.val),
+    sum(pow(input_a.val, 2)),
+    sum(input_a.t + input_b.y)
+FROM input_a
+LEFT JOIN input_b ON input_a.uid = input_b.device_id
+GROUP BY
+    input_a.t,
+    input_b.age
+
+Query id: 1ff71c42-7bba-49e0-bdf1-0ccc078ebf3f
+
+┌─t─┬─age───┬─sum(val)─┬─sum(pow(val, 2))─┬─sum(plus(t, y))─┐
+│ 1 │ 50+   │        2 │                4 │               2 │
+│ 2 │ 50+   │        1 │                1 │               3 │
+│ 1 │       │       85 │             5993 │               2 │
+│ 2 │ 24-30 │       12 │              144 │               5 │
+└───┴───────┴──────────┴──────────────────┴─────────────────┘
+
+4 rows in set. Elapsed: 0.013 sec.
+
+eef56cb5d207 :) 
 ```
