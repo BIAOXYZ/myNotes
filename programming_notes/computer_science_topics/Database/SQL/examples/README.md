@@ -18,3 +18,28 @@ select sum(ids) from (select t1.id as ids from t1 join t2 on t1.id = t2.id) as q
 
 select sum(t1.id) from t1, t2 where t1.id = t2.id;
 ```
+
+```sql
+create table input_a (uid int, val int, t int);
+insert into input_a values (44969473, 2, 1);
+insert into input_a values (1234182, 77, 1);
+insert into input_a values (30274561, 1, 2);
+insert into input_a values (56520193, 12, 2);
+insert into input_a values (11262273, 8, 1);
+
+create table input_b (device_id int, age varchar(255), gender varchar(255), date int, y int);
+insert into input_b values (2245633, '24-30', 'female', 20211130, 1);
+insert into input_b values (2463745, '50+', 'male', 20211130, 2);
+insert into input_b values (8897537, '50+', 'male', 20211130, 3);
+insert into input_b values (26351105, '18-23', 'male', 20211130, 2);
+insert into input_b values (30274561, '50+', 'female', 20211130, 1);
+insert into input_b values (47116801, '50+', 'male', 20211130, 1);
+insert into input_b values (56520193, '24-30', 'male', 20211130, 3);
+insert into input_b values (60876801, '18-23', 'female', 20211130, 1);
+insert into input_b values (86262273, '24-30', 'male', 20211130, 2);
+insert into input_b values (44969473, '50+', 'female', 20211130, 1);
+
+/* Clickhouse 的话建表语句不太一样，需要指明表的引擎；但是插数据语句是一样的 */
+create table input_a (uid int, val int, t int) ENGINE = TinyLog;
+create table input_b (device_id int, age varchar(255), gender varchar(255), date int, y int) ENGINE = TinyLog;
+```
