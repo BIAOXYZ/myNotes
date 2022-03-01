@@ -72,6 +72,15 @@ https://github.com/StevenShiChina/books
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# from知乎
+
+机器人操作系统 https://www.zhihu.com/topic/19821635/hot
+
+Ubuntu系统及ros的安装 - 起个什么名字好呢的文章 - 知乎 https://zhuanlan.zhihu.com/p/364316712
+- https://github.com/wsnewman/learning_ros_setup_scripts 【这个仓库倒不见得有用，但是这个人github上有很多 ROS 相关的项目，比如： https://github.com/wsnewman/learning_ros 】
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 机器人操作系统ROS(一)-初识 https://www.jianshu.com/p/0869eec39a3b

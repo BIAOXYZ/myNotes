@@ -35,6 +35,37 @@ apt-get命令 http://man.linuxde.net/apt-get
     grep " install " /var/log/apt/history.log
     ```
 
+## `--allow-unauthenticated`
+
+Force update from unsigned repository https://askubuntu.com/questions/732985/force-update-from-unsigned-repository
+
+Ubuntu学习之apt-get update 升级错误 https://blog.csdn.net/gpf19930310/article/details/82461306
+
+# `apt-key`
+
+apt-get软件包管理命令 和 apt-key命令 https://www.cnblogs.com/saysmy/p/10390277.html
+```console
+apt-key命令用于管理Debian Linux系统中的软件包密钥。每个发布的deb包，都是通过密钥认证的，apt-key用来管理密钥。
+
+用法：apt-key [--keyring file] [command] [arguments]
+
+参数：
+
+apt-key add <file>          - 把下载的key添加到本地trusted数据库中
+apt-key del <keyid>         - 从本地trusted数据库通过keyid删除key
+apt-key export <keyid>      - 通过keyid导出key
+apt-key exportall           - 导出本地trusted数据库中的所有key
+apt-key update              - 通过key包来更新key,更新本地trusted数据库，删除过期没用的key
+apt-key net-update          - 通过网络更新key
+apt-key list                - 列出已保存在系统中key
+apt-key finger              - 列出所有验证指纹
+apt-key adv                 - 设置key的高级配置, Pass advanced options to gpg
+```
+
+# apt换源/增加源
+
+Ubuntu20.04软件源更换 - 舟公的文章 - 知乎 https://zhuanlan.zhihu.com/p/142014944
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # dpkg
