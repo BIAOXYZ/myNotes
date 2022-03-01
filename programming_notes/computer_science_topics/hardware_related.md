@@ -130,6 +130,11 @@ U盘，主要靠的不是闪存的速度而是控制器的实现。
 
 2u四路服务器 和 2u四节点服务器 一样吗? - 知乎 https://www.zhihu.com/question/24334689
 
+关于“数据中心”的最强入门科普 https://www.ithome.com/0/605/443.htm
+- > **▲ 服务器机架**
+  * > 一个常见标准机架，高度尺寸通常是 42U。U 是一种表示服务器外部尺寸的单位，是 unit 的缩略语，1U 等于 4.445cm。机架宽度的话，有 600mm 或 800mm。
+  * > 机架的深度有很多种，包括 600mm、800mm、900mm、1000mm、1200mm 等。通常来说，IT 设备（服务器）机架的深度更深（1100mm 或 1200mm），而通信设备的深度会浅一些（600mm）。
+
 IBM 的 POWER 处理器的架构比 X86 强吗？ - 知乎 https://www.zhihu.com/question/22587769
 
 What is the impact of running the CPU at 100% for long periods at a time? [duplicate] https://superuser.com/questions/431309/what-is-the-impact-of-running-the-cpu-at-100-for-long-periods-at-a-time
