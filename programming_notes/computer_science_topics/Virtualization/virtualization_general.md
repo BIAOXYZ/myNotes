@@ -69,7 +69,7 @@ vSphere, ESXi 和 vCenter 的区别 - 张雷的文章 - 知乎 https://zhuanlan.
 
 ## WSL安装
 
-- Windows 10 Installation Guide https://docs.microsoft.com/zh-cn/windows/wsl/install-win10
+- ~~Windows 10 Installation Guide https://docs.microsoft.com/zh-cn/windows/wsl/install-win10~~  -->  安装 WSL https://docs.microsoft.com/zh-cn/windows/wsl/install
 - 不用装双系统，直接在 Windows 上体验 Linux：Windows Subsystem for Linux https://sspai.com/post/43813 【这个比官方的更好】
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
