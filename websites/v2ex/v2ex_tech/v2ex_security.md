@@ -1,4 +1,6 @@
 
+如何保护配置文件中的敏感信息,比如数据库密码 https://www.v2ex.com/t/836944
+
 chacha20ploy1305 和 aes128gcm 那种加密算法更安全 https://www.v2ex.com/t/795784
 
 关于 RSA 算法的疑问 https://www.v2ex.com/t/793223
