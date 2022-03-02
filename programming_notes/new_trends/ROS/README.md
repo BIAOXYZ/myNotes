@@ -68,7 +68,14 @@ rospy http://wiki.ros.org/rospy
 
 # 书籍与课程
 
+## 课程
+
 中国大学MOOC---《机器人操作系统入门》课程讲义 https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163/content/
+
+## 书籍
+
+A Gentle Introduction to ROS https://www.cse.sc.edu/~jokane/agitr/ || 机器人操作系统浅析 https://www.cse.sc.edu/~jokane/agitr/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%88ROS%EF%BC%89%E6%B5%85%E6%9E%90.pdf
+- Chinese translation: [JD.com](https://item.jd.com/12074300.html) Dangdang.com
 
 ROS by Example 
 - http://file.ncnynl.com/ros/ros_by_example_v1_indigo.pdf
@@ -105,6 +112,14 @@ Ubuntu系统及ros的安装 - 起个什么名字好呢的文章 - 知乎 https:/
 【已解决】完美解决 ROS 安装 rosdep update（timed out）报错超时问题 http://www.jishudaxue.com/cblog/python/3376.html
 
 解决ROS系统 rosdep update超时问题的新方法 https://blog.csdn.net/leida_wt/article/details/115120940
+
+## 小乌龟的包在简版里没有
+
+Ubuntu20.04LTS 安装ROS Noetic - 知乎用户4XlOYT的文章 - 知乎 https://zhuanlan.zhihu.com/p/268677683
+```console
+问题2：[rospack] Error: package 'turtlesim' not found
+解决方法：sudo apt install ros-noetic-turtlesim
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
