@@ -72,6 +72,9 @@ rospy http://wiki.ros.org/rospy
 
 中国大学MOOC---《机器人操作系统入门》课程讲义 https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163/content/
 
+中国大学MOOC《机器人操作系统入门》课程代码示例 https://github.com/DroidAITech/ROS-Academy-for-Beginners
+- > forked from https://github.com/sychaichangkun/ROS-Academy-for-Beginners
+
 ## 书籍
 
 A Gentle Introduction to ROS https://www.cse.sc.edu/~jokane/agitr/ || 机器人操作系统浅析 https://www.cse.sc.edu/~jokane/agitr/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%88ROS%EF%BC%89%E6%B5%85%E6%9E%90.pdf
