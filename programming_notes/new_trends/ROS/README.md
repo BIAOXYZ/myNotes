@@ -78,6 +78,17 @@ https://github.com/StevenShiChina/books
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 视频
+
+【古月居】古月·ROS入门21讲 | 一学就会的ROS机器人入门教程 https://www.bilibili.com/video/BV1zt411G7Vn/ || https://www.youtube.com/playlist?list=PL4XGr_39oSTlRckDYw7FbGRyIOfH63Gc5
+
+中科院软件所-机器人操作系统入门（ROS入门教程） https://www.bilibili.com/video/BV1mJ411R7Ni/
+```console
+机器人操作系统入门 https://www.icourse163.org/course/ISCAS-1002580008
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # from知乎
 
 机器人操作系统 https://www.zhihu.com/topic/19821635/hot
