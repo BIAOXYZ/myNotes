@@ -5,6 +5,8 @@
 
 分布式文件系统架构对比 https://mp.weixin.qq.com/s/yYAgmQZe4CsXZlwtNamjcA
 
+Linux 下用哪个文件系统格式最好？ EXT4 VS Btrfs VS XFS https://www.v2ex.com/t/837770
+
 # NFS
 
 NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
