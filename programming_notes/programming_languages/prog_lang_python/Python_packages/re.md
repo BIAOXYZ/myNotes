@@ -15,8 +15,15 @@ re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || 
 
 re — Regular Expressions https://pymotw.com/3/re/
 
-Python regular expression cheatsheet and examples https://learnbyexample.github.io/python-regex-cheatsheet/
+learnbyexample https://learnbyexample.github.io/
+- Python regular expression cheatsheet and examples https://learnbyexample.github.io/python-regex-cheatsheet/
+- Improve your Python regex skills with 75 interactive exercises https://learnbyexample.github.io/python-25-days-of-regex/
 
-Python 正则表达式 https://www.runoob.com/python/python-reg-expressions.html || Python3 正则表达式 https://www.runoob.com/python3/python3-reg-expressions.html
+正则表达式 https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664
+
+正则表达式 - 教程 https://www.runoob.com/regexp/regexp-tutorial.html
+- 正则表达式 - 简介 https://www.runoob.com/regexp/regexp-intro.html
+  * Python 正则表达式 https://www.runoob.com/python/python-reg-expressions.html || Python3 正则表达式 https://www.runoob.com/python3/python3-reg-expressions.html
+- 正则表达式 - 语法 https://www.runoob.com/regexp/regexp-syntax.html
 
 Python标准库01 正则表达式 (re包) https://www.cnblogs.com/vamei/archive/2012/08/31/2661870.html
