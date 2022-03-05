@@ -84,3 +84,6 @@ vSphere, ESXi 和 vCenter 的区别 - 张雷的文章 - 知乎 https://zhuanlan.
 windows linux子系统(Windows Subsystem for Linux)的存放目录 https://www.cnblogs.com/lynsyklate/p/7911189.html
 
 Windows、WSL与Linux性能对比 https://www.ithome.com/0/463/355.htm
+
+请问如何 ssh 到家里的 WSL 上？ https://www.v2ex.com/t/838221
+- https://felixsmli.gitlab.io/posts/share-a-windows-pc-through-ssh/
