@@ -37,6 +37,7 @@ Git游戏 https://likexia.gitee.io/game/
 
 https://space.bilibili.com/13326862
 - 【进化-Evolve】萌新推荐路线解释 https://www.bilibili.com/read/cv14741610
+- 【进化-Evolve】脚本使用不完全指北（截至3.3.1.92版本） https://www.bilibili.com/read/cv14679847 || https://shimo.im/docs/473QylK4agueDJ3w/read
 
 ## 作弊手段
 

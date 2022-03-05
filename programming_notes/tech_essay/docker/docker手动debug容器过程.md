@@ -7,9 +7,9 @@ kubernetes系列之十一：在Kubernetes平台对容器进行debug https://blog
 
 Launch Single Node Kubernetes Cluster https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 
-# 过程
+# 个人实战过程
 
-```
+```sh
 $ mkdir test
 $ cd test/
 $ touch Dockerfile
