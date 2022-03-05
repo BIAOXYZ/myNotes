@@ -56,6 +56,16 @@ https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
 
 ## ithome
 
+豆瓣小组内容防搬运新功能，聊聊盲水印那点事 https://www.ithome.com/0/606/114.htm
+- > **防不胜防的盲水印**
+  * > 这类盲水印是怎样实现的呢？原理并不复杂，**通常是将图片进行离散余弦、小波或者傅里叶变换**，得到图片的频谱信息，再将水印的编码信息叠加到图片的频谱上，然后再进行一次逆变换，**生成的图片就带有几乎无法检测、但又可以确切还原出来的盲水印了**。
+  * > 而这样的盲水印制作也非常简单，网络上就有开源算法可以实现，下面以“blind_watermark”为例。
+    + > blind_watermark： https://blindwatermark.github.io/blind_watermark/#/zh/
+    + > 是一个关于盲水印的开源项目，依赖于 Python 运行。安装了 blind_watermark 后，只需要简单的几行命令，就可以为图片添加文字或者另一张图作为盲水印。
+  * > 除了图片可以添加水印，文字也是可以作标记的。下面举个“text_blind_watermark”的例子。
+    + > text_blind_watermark（demo）： https://www.guofei.site/pictures_for_blog/app/text_watermark/v1.html
+    + > text_blind_watermark 为文字加“盲水印”的原理也很简单，在文字当中穿插特殊的符号（demo 演示的是空格），解码算法识别出特定符号，就可以解出隐藏的信息了。或许 demo 中的空格键肉眼看上去还比较明显，但如果所使用的是更加隐秘的字符呢？字符分布更加稀疏呢？恐怕就非常难以觉察了。
+
 22岁少年破解史上最严重网络攻击，拯救全球互联网，三个月后却被FBI逮捕 https://www.ithome.com/0/488/422.htm
 - > 首先，他在隔离的虚拟机中运行了这个程序。然后很快他就注意到其在执行加密时会向一个看起来随机生成的网址发送一条查询信息：
 <br> iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com。
