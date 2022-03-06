@@ -1,4 +1,55 @@
 
+c++ lambda 表达式里 为什么值捕获的局部变量无法修改？ https://www.v2ex.com/t/838315
+```cpp
+[&i] ( ) { std::cout << i; }
+
+// is equivalent to
+
+struct anonymous
+{
+    int &m_i;
+    anonymous(int &i) : m_i(i) {}
+    inline auto operator()() const
+    {
+        std::cout << m_i;
+    }
+};
+```
+> 首先我知道，一个如上的 lambda 表达式，其实相当于生成了一个如上匿名 struct 的实例 a ，运行 lambda 表达式时，其实就相当于执行 a().
+```cpp
+int main()
+{
+    int v1 = 42;
+    auto f = [v1]() {return ++v1; };//值捕获
+    v1 = 0;
+    auto j = f(); //j 为 43
+
+}
+```
+> 但是如上的代码却无法通过编译，除非你加上 mutable 。所以我是不是可以认为，如上的 lambda 表达式，是不是实际生成了如下的 struct ？
+```cpp
+struct anonymous
+{
+    int m_i;
+    anonymous(int i) : m_i(i) {}
+    inline auto operator()() const//如果你加上 mutable ，这里的 const 才会去掉
+    {
+        m_i++;
+    }
+};
+```
+```console
+另外，c++ lambda 表达式是不是都可以认为 它的等价情况，就是生成了一个 重载了 operator()的匿名结构体的实例？如果不是的话，请帮忙举一个反例。
+```
+- > `[v1]` 这是按值捕获，要用引用捕获 `[&v1]`
+- > Lambda 确实就是匿名类型的实例化而已（没捕获的时候还带一个转换成函数指针的运算符重载） https://en.cppreference.com/w/cpp/language/lambda
+- > 这么理解没错，可以上 Compiler Explorer 验证一下，比如带 mutable 就是没 const: https://godbolt.org/z/87EaPznM8 <br> 不带 mutable 就是有 const: https://godbolt.org/z/Y51KdT74j <br> 不过虽然现在的 gcc 和 msvc 确实都把 lambda 用仿函数实现，但这只是实现的方式，标准应该没说一定要这么做
+- > 你想的没错，mutable 就是去掉 const ，而默认加 const 是为了让仿函数每次执行结果一致
+  * > https://cppinsights.io/s/fc8369d5
+  * > https://stackoverflow.com/a/5503690/8263383
+- > Lambda 生成的类 operator()() 默认是 const 的，Google 搜索一下就有，实在是搜不到再发帖。看这里是怎么生成的 https://cppinsights.io/s/8efa4ddf
+- > 文档里写： https://en.cppreference.com/w/cpp/language/lambda `Unless the keyword mutable was used in the lambda-expression, the function-call operator or operator template is const-qualified and the objects that were captured by copy are non-modifiable from inside this operator()`
+
 inline 不能修饰一个全局函数呗？ https://www.v2ex.com/t/828136
 
 问个关于内存对齐的问题 https://www.v2ex.com/t/809945

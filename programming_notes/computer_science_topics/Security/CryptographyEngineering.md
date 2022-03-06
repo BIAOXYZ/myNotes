@@ -73,6 +73,17 @@ PrivateBin is a minimalist, open source online pastebin where the server has zer
 Sha256 Algorithm Explained https://github.com/dmarman/sha256algorithm
 - > Sha256 algorithm explained online step by step visually https://sha256algorithm.com/ This website will help you understand how a sha256 hash is calculated from start to finish.
 
+# Quantum Cryptography
+
+## XMSS
+
+英飞凌推出采用后量子加密技术进行固件更新的 TPM 安全芯片 https://www.ithome.com/0/606/193.htm
+- > 据介绍，该 TPM 芯片采用基于后量子加密技术（也就是基于哈希的签名算法 XMSS）的固件更新机制，是一款具有前瞻性的安全解决方案。该机制能够抵御黑客利用量子计算机发起的攻击，保护固件免受损坏，同时它的抗量子计算的固件升级方式，可确保设备长期可用。
+
+XMSS reference code https://github.com/XMSS/xmss-reference
+
+(PQCrypto 2011) XMSS - A Practical Forward Secure Signature Scheme Based on Minimal Security Assumptions https://link.springer.com/chapter/10.1007/978-3-642-25405-5_8 || https://eprint.iacr.org/2011/484.pdf
+
 # others
 
 - Java密码学 非对称加密以及使用secp256k1进行数字签名（ECDSA），也适合Android（上） https://www.jianshu.com/p/676a0eb33d31
