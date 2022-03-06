@@ -11,6 +11,9 @@ security_w1k1 https://github.com/euphrat1ca/security_w1k1
 
 C,C++安全指南.md https://github.com/Tencent/secguide/blob/main/C%2CC%2B%2B%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97.md
 
+Security PPT https://github.com/FeeiCN/Security-PPT
+- > Security-related Slide Presentation（大安全各领域各公司各会议分享的PPT）
+
 # Security News
 
 Linux 基金会联合厂商成立开源安全基金会 https://www.ithome.com/0/501/388.htm
@@ -56,7 +59,7 @@ https://mp.weixin.qq.com/s/LsqQo_04ROuf2_wLrBRRZQ
 
 ## ithome
 
-豆瓣小组内容防搬运新功能，聊聊盲水印那点事 https://www.ithome.com/0/606/114.htm
+【[:star:][`*`]】 豆瓣小组内容防搬运新功能，聊聊盲水印那点事 https://www.ithome.com/0/606/114.htm
 - > **防不胜防的盲水印**
   * > 这类盲水印是怎样实现的呢？原理并不复杂，**通常是将图片进行离散余弦、小波或者傅里叶变换**，得到图片的频谱信息，再将水印的编码信息叠加到图片的频谱上，然后再进行一次逆变换，**生成的图片就带有几乎无法检测、但又可以确切还原出来的盲水印了**。
   * > 而这样的盲水印制作也非常简单，网络上就有开源算法可以实现，下面以“blind_watermark”为例。

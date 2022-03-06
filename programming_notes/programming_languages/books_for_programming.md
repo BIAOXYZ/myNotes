@@ -65,6 +65,8 @@ GitHub 上有哪些好的英文文章或书籍的翻译项目？ - EZLippi的回
 
 [转]程序员资料整理 https://yq.aliyun.com/articles/239530
 - free-programming-books https://github.com/EbookFoundation/free-programming-books
+  * List of Free Learning Resources In Many Languages
+  * Chinese / 中文 https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-zh.md
 - 免费的编程中文书籍索引 https://github.com/justjavac/free-programming-books-zh_CN
 - Papers we love https://github.com/papers-we-love/papers-we-love
 > 开源电子书 https://yq.aliyun.com/articles/346784
