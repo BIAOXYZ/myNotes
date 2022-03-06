@@ -91,7 +91,11 @@ http://zh.sudoku.menu/info/solver.html
 - 有没有质量和外形过关的熊猫周边？ - 孤独赤兔的回答 - 知乎 https://www.zhihu.com/question/271954643/answer/365031201
 - https://pandapia.taobao.com/ 【好像是淘宝店改名了？待确认。】
 
-## 化妆品
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 化妆品
+
+## SK-II
 
 SKII前男友面膜使用分享。轻松搓泥，不搓泥也完全OK。 https://www.bilibili.com/s/video/BV1Xz4y117CH
 
@@ -99,7 +103,19 @@ SKII前男友面膜为什么叫“前男友”面膜 https://www.xiaohongshu.com
 
 sk2的前男友面膜到底为什么那么神奇？ - 知乎 https://www.zhihu.com/question/35880120
 
+## 黑绷带
+
 有人用过赫莲娜的黑白绷带吗？使用感觉怎么样？ - 知乎 https://www.zhihu.com/question/64368653
+
+### 黑绷带 v.s. 兰蔻菁纯面霜
+
+兰蔻菁纯面霜和赫莲娜黑绷带哪个更好用？ - 知乎 https://www.zhihu.com/question/485100843
+
+黑绷带和兰蔻菁纯面霜哪个更好用？ https://www.xiaohongshu.com/discovery/item/60e3af39000000000102863f
+
+兰蔻菁纯面霜&赫莲娜黑绷带面霜 https://www.xiaohongshu.com/discovery/item/5efd6f7c0000000001001558
+
+敏感肌必看｜HR黑绷带敏感肌本命面霜，选错版本会过敏！国内专柜版VS俄罗斯版对比；VS兰蔻菁纯面霜使用测评 https://www.bilibili.com/video/BV1BK4y1P7kn
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
