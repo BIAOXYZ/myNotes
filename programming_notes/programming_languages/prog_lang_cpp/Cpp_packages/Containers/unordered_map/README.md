@@ -109,11 +109,21 @@ Jupiter: 69910
       ```
     + https://en.cppreference.com/w/cpp/container/unordered_map
 
-# unordered_map初始化
+# `unordered_map` 初始化
 
 C++ STL unordered_map详解 https://blog.csdn.net/wsp_1138886114/article/details/106794899
 
 Initialize a std::map or std::unordered_map in C++ https://www.techiedelight.com/initialize-map-unordered_map-cpp/
+
+# 某个 key 是否在 `unordered_map` 中
+>> 判断某个元素在不在哈希表或集合的两种最常见方法：`dic.count(key)` 是否为0；或者 `dic.find(key)` 是否等于 `dic.end()`。
+
+**LeetCode相关题目**：
+- `219. 存在重复元素 II` https://leetcode-cn.com/problems/contains-duplicate-ii/
+  * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/201-400/000219/tran/000219.cpp
+    + > `if (dic.count(num)) {`
+  * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/201-400/000219/tran/000219_ii.cpp
+    + > `if (dic.find(num) != dic.end()) {`
 
 # `unordered_map` 类似python dict的 `.keys()` 和 `.values()`
 
