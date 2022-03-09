@@ -27,6 +27,8 @@ Lambda expressions (since C++11) https://en.cppreference.com/w/cpp/language/lamb
 
 C++ 中的 Lambda 表达式 https://docs.microsoft.com/zh-cn/cpp/cpp/lambda-expressions-in-cpp
 
+11.9 — Lambda captures https://www.learncpp.com/cpp-tutorial/lambda-captures/
+
 C++ 闭包和匿名函数 - Providence的文章 - 知乎 https://zhuanlan.zhihu.com/p/303391384
 - > 匿名函数由以下几个部分组成，其中只有 1, 2, 6 三个部分是必须的，其余部分可以省略：![](https://pic1.zhimg.com/80/v2-38e792a40f910a018b17092cdc723674_1440w.jpg)
   ```console
@@ -62,8 +64,10 @@ C++匿名函数的使用 https://www.cnblogs.com/yaya12138/p/11815475.html
 
 C++ 匿名函数 https://blog.csdn.net/zhang14916/article/details/101058089
 
+### 匿名函数调用其自身
+
 C++ lambda 递归调用 https://segmentfault.com/q/1010000007759236
-- > 提前声明merge，然后capture
+- > ***提前声明merge***，然后capture
   ```cpp
   std::function<void(int,int,int,int)> merge;
   merge = [&lst, &tmp, &merge](int first, int first_tail, int second, int second_tail) -> void {
@@ -90,3 +94,5 @@ C++ lambda 递归调用 https://segmentfault.com/q/1010000007759236
       while (i--) lst[--second_tail] = tmp[i];
   };
   ```
+
+Capture `*this` in lambda expression: Timeline of change https://www.nextptr.com/tutorial/ta1430524603/capture-this-in-lambda-expression-timeline-of-change
