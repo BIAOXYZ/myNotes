@@ -1,4 +1,16 @@
 
+MySQL 只读操作一般需要开启事务吗？ https://www.v2ex.com/t/838964
+```console
+我之前一般都是开事务的，但是后来发现其实大多数情况下，业务需求并不需要保证 Repetable Read 。
+MySQL RR 级别下，只读操作不开启事务，可以看成效果和 RC 级别一样吗？
+```
+- > 不开的话，一条 sql 一个事务会不会影响性能？不是很懂
+- > 一次执行 100 条 `select` 开启事务和不开启事务效率差别还是比较大的，写程序测试过。
+  >> 一条一个事务性能会更差？
+  >>> 是的，前不久进行过测试。
+- > 读也是有开事务的，只是 mysql 默认是 autocommit,你不需要手动标记事务开始与结束而已
+  >> 可重复读的事务级别下，读没有事务好吧，除非你加上 `for update` 这种 X 锁，或者 S 锁 <br> `update` 才会默认 autocommit <br> 即便加上 `for update` 也要用先开启事务，才会生效
+
 看到了一份 MySQL 项目经理写的 MySQL 优化器使用指南，很不错，是精品，做了下中文翻译 https://www.v2ex.com/t/835074
 ```console
 原文： http://www.unofficialmysqlguide.com/index.html
