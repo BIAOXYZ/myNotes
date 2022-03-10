@@ -1,4 +1,11 @@
 
+`ethtool -i -1` 如何理解 https://www.v2ex.com/t/839421
+```console
+偶然一次项目中，用户要求使用 ethtool -i -1 ip -c 1000 来测试服务器之间丢包率，一直很不理解-i -1 这个参数的意义，求解。
+```
+- > -1 Drop the matched flow
+- > https://man7.org/linux/man-pages/man8/ethtool.8.html
+
 【[:star:][`*`]】 请教大佬一个关于网络的问题 https://www.v2ex.com/t/836870
 ```console
 有两台机子，各自设置了静态 IP：

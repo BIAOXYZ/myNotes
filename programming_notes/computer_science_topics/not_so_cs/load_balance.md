@@ -19,6 +19,8 @@ HAProxy从零开始到掌握 https://www.jianshu.com/p/c9f6d55288c0
 
 # Nginx
 
+NGINX 测试配置文件时为啥会去访问 DNS？ https://www.v2ex.com/t/839481
+
 ## NGINX Ingress Controller
 
 NGINX Ingress Controller for Kubernetes https://kubernetes.github.io/ingress-nginx/ || https://github.com/kubernetes/ingress-nginx
