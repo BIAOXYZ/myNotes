@@ -1,4 +1,6 @@
 
+Git 部分命令提示 memory allocation of ... bytes failed https://www.v2ex.com/t/840072
+
 .git objects 为什么要取前两个 字母作为文件夹再添加? https://www.v2ex.com/t/799743
 
 github actions 居然是能扩容的 https://www.v2ex.com/t/783934
