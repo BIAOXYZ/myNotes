@@ -159,6 +159,14 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
 - 用户指南 https://help.aliyun.com/document_detail/364171.html
   * 脚本文件管理 https://help.aliyun.com/document_detail/364175.htm
 
+https://alibaba-gemini-lab.github.io/
+- PVC Security: An Intermediary-free Solution to Safe Data Sharing Between Rational Parties https://alibaba-gemini-lab.github.io/docs/blog/pvc/
+
+(USENIX Security 2022) Cheetah: Lean and Fast Secure Two-Party Deep Neural Network Inference (Full Version) https://eprint.iacr.org/2022/207.pdf
+- 相关文章：
+  * Cheetah: Lean and Fast Secure Two-Party Deep Neural Network Inference - 云中雨雾的文章 - 知乎 https://zhuanlan.zhihu.com/p/476525705
+  * G.O.S.S.I.P 学术论文推荐 2022-03-16 Cheetah https://mp.weixin.qq.com/s/qYJvF34i0OId3hTef1sHow
+
 ## 百度
 
 PrivC—A Framework for Efficient Secure Two-Party Computation https://link.springer.com/chapter/10.1007/978-3-030-37231-6_23
