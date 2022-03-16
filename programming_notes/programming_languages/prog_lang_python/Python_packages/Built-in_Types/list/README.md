@@ -42,3 +42,32 @@ How to check if a list is empty in Python? https://flexiple.com/check-if-list-is
     [[1, 2, 3], [4, 5, 6]]
     [[1, 4], [2, 5], [3, 6]]
     ```
+
+# `.index()`
+
+Python List index() https://www.programiz.com/python-programming/methods/list/index
+- > Syntax of List `index()`
+  * > The syntax of the list `index()` method is:
+    ```py
+    list.index(element, start, end)
+    ```
+    >> //notes：这里的 `start` 和 `end` 也是 ***左闭右开***。以文中的例子，加一些自己的修改如下：
+    ```py
+    >>> alphabets = ['a', 'e', 'i', 'o', 'g', 'l', 'i', 'u']
+    >>> print(alphabets.index('i', 1))
+    2
+    >>> print(alphabets.index('i', 2))
+    2
+    >>> print(alphabets.index('i', 3))
+    6
+    >>> print(alphabets.index('i', 2, 6))
+    2
+    >>> print(alphabets.index('i', 3, 6))
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: 'i' is not in list
+    >>> 
+    # 当然，如果区间内包含多个，还是返回最小的那个。
+    >>> print(alphabets.index('i', 2, 7))
+    2
+    ```
