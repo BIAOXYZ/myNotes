@@ -182,6 +182,12 @@ macOS 下使用 Docker 搭建 ubuntu 环境 - 十里的文章 - 知乎 https://z
 - > 出现如下如下代码： `Unable to find Mach task port for process-id 2358: (os/kern) failure (0x5). (please check gdb is codesigned - see taskgated(8))`
   >> 解决方法：使用 sudo 权限 ，运行命令 sudo gdb mainApp 调试
 
+### `DBeaver Community `
+
+Download https://dbeaver.io/download/
+- > Mac OS X
+  * > Brew Cask (`brew install --cask dbeaver-community`)
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac Anaconda
