@@ -9,6 +9,7 @@ ClickHouse® is a free analytics DBMS for big data https://github.com/ClickHouse
 - https://github.com/ClickHouse/ClickHouse/blob/master/src/Parsers/ParserSelectQuery.cpp
 
 SQL参考 https://clickhouse.com/docs/zh/sql-reference/
+- 条件函数 https://clickhouse.com/docs/zh/sql-reference/functions/conditional-functions/
 
 # Parser
 
@@ -34,6 +35,3 @@ Clickhouse错误问题汇总（持续更新） https://blog.csdn.net/xsm666/arti
 
 Clickhouse建表语法、视图语法、数据表DDL（数据定义语言）、数据DML（数据操作语言） https://www.cnblogs.com/biehongli/p/14430153.html
 - > 2、Clickhouse数据表的定义语法，是在标准SQL的基础之上建立的。Clickhouse目前提供了三种最基本的建表方法，但是注意的是在Clickhouse中建表一定要指定表的引擎，在指定数据表字段之后，最后一定要指定数据表的引擎。
-
-Python访问ClickHouse的方法汇总 https://mp.weixin.qq.com/s/wrxIsi8JuzETT6YudLPsNg
-- 免安装 Clickhouse 体验单表40亿行大数据的方法 https://mp.weixin.qq.com/s/kXgEKhqDAIsJUiJjb7kyWQ

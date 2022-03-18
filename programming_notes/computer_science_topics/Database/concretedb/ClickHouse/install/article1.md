@@ -55,6 +55,27 @@ Code: 497. DB::Exception: Received from clickhouse-server:9000. DB::Exception: d
 eef56cb5d207 :)
 ```
 
+# 2
+
+## CK方便快捷使用（from `alitrack`）
+
+Python访问ClickHouse的方法汇总 https://mp.weixin.qq.com/s/wrxIsi8JuzETT6YudLPsNg
+- 免安装 Clickhouse 体验单表40亿行大数据的方法 https://mp.weixin.qq.com/s/kXgEKhqDAIsJUiJjb7kyWQ
+
+免安装 Clickhouse 体验单表40亿行大数据的方法 https://mp.weixin.qq.com/s/kXgEKhqDAIsJUiJjb7kyWQ
+- > ClickHouse 的安装体验很方便，我之前分享了 [macOS]()、[Linux]() 以及[手机]()上安装体验的方法，现在再分享几个不用安装就可以体验（学习）的方法。
+  * MacOS 下快速体验 ClickHouse https://mp.weixin.qq.com/s/TEYhuWx5eZZmQX-FADK36w
+  * ClickHouse 与 HDFS https://mp.weixin.qq.com/s/J7v1vwaH-5EtcSWEEunnow
+  * 体验arm版本的 ClickHouse https://mp.weixin.qq.com/s/zdjxwDOjJRGAcaAPDDOemw
+
+MacOS 下快速体验 ClickHouse https://mp.weixin.qq.com/s/TEYhuWx5eZZmQX-FADK36w
+- > 在 Docker 中运行 ClickHouse
+  ```sh
+  docker run -d --name clickhouse-server -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 yandex/clickhouse-server
+  ```
+- > 客户端连接 ClickHouse
+- > DBeaver 连接 Clickhouse
+
 # 其他
 
 ClickHouse Server in 1 minute with Docker https://dev.to/titronium/clickhouse-server-in-1-minute-with-docker-4gf2
