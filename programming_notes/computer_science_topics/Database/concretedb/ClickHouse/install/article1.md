@@ -73,6 +73,10 @@ MacOS 下快速体验 ClickHouse https://mp.weixin.qq.com/s/TEYhuWx5eZZmQX-FADK3
   ```sh
   docker run -d --name clickhouse-server -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 yandex/clickhouse-server
   ```
+  >> 【[:star:][`*`]】 //notes：个人补充一下：如果不想下CK的客户端，可以参照前面的部分，直接用 docker 版客户端，一句即可搞定：
+  ```sh
+  docker run -it --rm --link clickhouse-server:clickhouse-server yandex/clickhouse-client --host clickhouse-server
+  ```
 - > 客户端连接 ClickHouse
 - > DBeaver 连接 Clickhouse
 
