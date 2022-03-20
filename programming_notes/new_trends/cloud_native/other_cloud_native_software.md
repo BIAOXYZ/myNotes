@@ -184,6 +184,8 @@ What distribution is CirrOS based on? https://stackoverflow.com/questions/149873
 How to install packages in cirros OS https://stackoverflow.com/questions/26606361/how-to-install-packages-in-cirros-os
 > As @Harikrishnan commented, cirros does not include a package manager. Cirros is mostly useful to verify that clouds are working correctly, that VMs are started correctly and things like networks, security groups and key pairs are functioning as expected.
 
+cirros用例 https://github.com/yifengyou/cirros
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # cert-manager
