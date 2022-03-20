@@ -35,7 +35,13 @@ LEFT JOIN vs. LEFT OUTER JOIN in SQL Server https://stackoverflow.com/questions/
 SQL LIMIT https://www.sqltutorial.org/sql-limit/
 - > The `OFFSET` clause is optional. If you omit it, the query will return the "row_count" rows from the first row returned by the `SELECT` clause.
 
+"LIMIT 5,10" returns 9 rows in MySQL? https://stackoverflow.com/questions/11963177/limit-5-10-returns-9-rows-in-mysql
+
 # Order by
+
+MySQL中ORDER BY与LIMIT一起使用（有坑） https://www.cnblogs.com/cjsblog/p/10874938.html
+
+What can an aggregate function do in the ORDER BY clause? https://stackoverflow.com/questions/13099282/what-can-an-aggregate-function-do-in-the-order-by-clause
 
 ## ASC、DESC
 
