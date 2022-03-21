@@ -206,6 +206,8 @@ sk2的前男友面膜到底为什么那么神奇？ - 知乎 https://www.zhihu.c
 
 央视刚播就有千万热度，这部纪录片告诉你陕西美食简直天下无敌 https://www.acfun.cn/a/ac27027559
 
+八喜旺仔冰淇淋蛋糕 —— 生日快乐！！！你是全世界最旺的仔^○^ https://www.bilibili.com/video/BV1LU4y1w71i
+
 ## 巴四老城区炭火蛙锅
 
 巴四老城区炭火蛙锅 http://basihuoguo.mixuejm.cn/
