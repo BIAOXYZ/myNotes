@@ -19,6 +19,11 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
   * > 里面有个.gdbinit的配置文件可以参考下，这里就不列了。
 - **6.打印**
   * > 打印STL容器中的内容 https://wizardforcel.gitbooks.io/100-gdb-tips/content/print-STL-container.html
+  * > 打印大数组中的内容 https://wizardforcel.gitbooks.io/100-gdb-tips/content/print-large-array.html
+    + > 也可以使用如下命令，设置为没有限制：
+      ```sh
+      (gdb) set print elements 0
+      ```
   * > 每行打印一个结构体成员 https://github.com/hellogcc/100-gdb-tips/blob/master/src/set-print-pretty-on.md
     + > `set print pretty on`
 - **7.多进程/线程**
@@ -155,6 +160,19 @@ info inferiors
 
 # 查看线程信息，最简形式为 i th。
 info threads
+```
+
+gdb中查看数组各项的值 https://blog.csdn.net/scusyq/article/details/7034082
+- > 于是，在 GDB调试过程中，你可以以如下命令显示出这个动态 数组的取值：
+```sh
+p *array@len
+```
+
+GDB调试 打印二维数组 https://blog.csdn.net/leoufung/article/details/104565003
+```console
+int matrix1[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+gdb打印的命令为：
+p **matrix@3@3
 ```
 
 ## 较系统攻略
