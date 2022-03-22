@@ -1,4 +1,8 @@
 
+.git/objects 有 800 多兆，怎么清理合适 ？ https://www.v2ex.com/t/842187
+- > 清理？ https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E5%AF%B9%E8%B1%A1
+- > git gc ？
+
 Git 部分命令提示 memory allocation of ... bytes failed https://www.v2ex.com/t/840072
 
 .git objects 为什么要取前两个 字母作为文件夹再添加? https://www.v2ex.com/t/799743
