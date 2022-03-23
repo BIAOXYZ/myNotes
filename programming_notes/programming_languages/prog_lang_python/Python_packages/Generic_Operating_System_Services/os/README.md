@@ -3,6 +3,20 @@
 
 os --- 多种操作系统接口 https://docs.python.org/zh-cn/3/library/os.html || os — Miscellaneous operating system interfaces https://docs.python.org/3/library/os.html
 
+`cpython/Lib/os.py` https://github.com/python/cpython/blob/main/Lib/os.py
+
+# `os.getenv()`
+
+https://github.com/python/cpython/blob/3.10/Lib/os.py#L771
+```py
+def getenv(key, default=None):
+    """Get an environment variable, return None if it doesn't exist.
+    The optional second argument can specify an alternate default.
+    key, default and the result are str."""
+    return environ.get(key, default)
+```
+>> //notes：虽然环境变量这个 dict 的 key 和 value 都是 str，但是这里因为用了 get 方法，所以是和 None 比较来判断是否为空。
+
 # 其他
 
 Python OS 文件/目录方法 https://www.runoob.com/python/os-file-methods.html
