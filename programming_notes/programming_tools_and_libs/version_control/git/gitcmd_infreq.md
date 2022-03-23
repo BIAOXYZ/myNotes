@@ -49,10 +49,6 @@ $ cat .gitmodules
         url = https://github.com/apachecn/math.git
 ```
 
-### git subtree
-
-git subtree教程 https://segmentfault.com/a/1190000012002151
-
 ### git fsck
 
 <<github总结(4)--关于git reset --hard这个命令的惨痛教训>>

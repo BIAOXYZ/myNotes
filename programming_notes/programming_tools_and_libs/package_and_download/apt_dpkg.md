@@ -77,3 +77,9 @@ Ubuntu20.04软件源更换 - 舟公的文章 - 知乎 https://zhuanlan.zhihu.com
 Ubuntu下deb包的安装方法 https://blog.csdn.net/kevinhg/article/details/5934462
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 安装本地包 or 离线安装
+
+How to install a deb file, by dpkg -i or by apt? https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt
+
+3 Command Line Tools to Install Local Debian (.DEB) Packages https://www.tecmint.com/install-local-deb-packages-in-debian-ubuntu-linux-mint/
