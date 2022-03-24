@@ -135,6 +135,13 @@ std::sort http://www.cplusplus.com/reference/algorithm/sort/
       >> 【[:star:][`*`]】 //notes：所以其实官方已经说明了：`comp` 函数的返回值是一个 bool 值，表示两个元素的排序关系。***如果为真，表示第一个入参应该在第二个入参前面***。
 
 如何自定义sort函数中的比较函数 https://blog.csdn.net/qq_31217423/article/details/76375336
+```console
+总结起来就是：
+sort函数根据comp函数的返回值，对comp函数的两个参数排序。
+如果comp返回true，排序为“参数1”“参数2”，否则排序为“参数2”“参数1”。
+想要升序排列，则return parameter1<parameter2
+想要降序排列，则return parameter1>parameter2
+```
 
 ## 其他帖子
 
