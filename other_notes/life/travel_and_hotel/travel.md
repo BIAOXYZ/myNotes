@@ -16,6 +16,18 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 事故
+
+空难列表 https://zh.wikipedia.org/wiki/%E7%A9%BA%E9%9B%A3%E5%88%97%E8%A1%A8 || Lists of air show accidents and incidents https://en.wikipedia.org/wiki/Lists_of_air_show_accidents_and_incidents
+- 商业客机事故列表 https://zh.wikipedia.org/wiki/%E5%95%86%E4%B8%9A%E5%AE%A2%E6%9C%BA%E4%BA%8B%E6%95%85%E5%88%97%E8%A1%A8
+
+中华人民共和国航空航天意外列表 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E6%84%8F%E5%A4%96%E5%88%97%E8%A1%A8
+
+铁路事故列表 https://zh.wikipedia.org/wiki/%E9%90%B5%E8%B7%AF%E4%BA%8B%E6%95%85%E5%88%97%E8%A1%A8 || Lists of rail accidents https://en.wikipedia.org/wiki/Lists_of_rail_accidents
+- 中华人民共和国铁路事故列表 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E9%93%81%E8%B7%AF%E4%BA%8B%E6%95%85%E5%88%97%E8%A1%A8
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 飞行事故
 
 2018年全球发生15起致命民航空难：556人死亡 - IT与交通 - cnBeta.COM https://www.cnbeta.com/articles/tech/803997.htm
@@ -81,6 +93,10 @@
 
 复飞在望，波音 737 MAX 中国试飞成功 https://www.ithome.com/0/578/370.htm
 >> //notes：只能自己躲着点了。。。
+
+## 2022年东航MU5735班机坠毁事故
+
+中国东方航空5735号班机空难 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E4%B8%9C%E6%96%B9%E8%88%AA%E7%A9%BA5735%E5%8F%B7%E7%8F%AD%E6%9C%BA%E7%A9%BA%E9%9A%BE
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
