@@ -273,6 +273,14 @@ https://space.bilibili.com/458075/article
 
 ## 大钉宫
 
+钉宫理惠 https://space.bilibili.com/1254786108
+- 大家好，我是钉宫理惠，正式开设B站账号啦！给大家拜年了！ https://www.bilibili.com/video/BV1MZ4y1o7zZ
+  * > 八嘎hantai无路赛[tv_生气]
+    + https://www.bilibili.com/video/BV16x411k7a8
+    + https://www.bilibili.com/video/BV1Zs411h7BH 
+    + 钉宫理惠当场辱骂观众！观众：真香，再来一次！ https://www.bilibili.com/video/BV1Jt411m7tB
+    + https://www.bilibili.com/video/BV16t411Y7gk
+
 ### `好想被钉宫辱骂啊`各个版本
 
 好想被钉宫辱骂啊 https://www.bilibili.com/video/av638240/ 【`2013-07-08 08:31:40  最高全站日排行12名`】 || https://www.bilibili.com/video/BV1Es411f7F3
