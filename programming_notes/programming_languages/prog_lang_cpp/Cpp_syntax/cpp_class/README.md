@@ -32,7 +32,11 @@ C++中public、protected、private继承的区别 https://blog.csdn.net/qq583083
 operator overloading https://en.cppreference.com/w/cpp/language/operators
 - > Customizes the C++ operators for operands of user-defined types.
 
-Overloading the `<<` Operator for Your Own Classes https://docs.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes?view=msvc-160
+Classes (II) https://www.cplusplus.com/doc/tutorial/templates/
+
+Operator overloading https://docs.microsoft.com/en-us/cpp/cpp/operator-overloading
+
+Overloading the `<<` Operator for Your Own Classes https://docs.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes
 
 13.4 — Overloading the I/O operators https://www.learncpp.com/cpp-tutorial/overloading-the-io-operators/
 - > Of course, it makes more sense to do this as a reusable function. And in previous examples, you’ve seen us create `print()` functions that work like this:
@@ -103,6 +107,10 @@ Overloading the `<<` Operator for Your Own Classes https://docs.microsoft.com/en
   //////////////////////////////////////////////////
   Point(2, 3, 4)
   ```
+
+C++ Operator Overloading https://www.programiz.com/cpp-programming/operator-overloading
+
+Operator Overloading in C++ https://www.geeksforgeeks.org/operator-overloading-c/
 
 Overloading stream insertion (<>) operators in C++ https://www.geeksforgeeks.org/overloading-stream-insertion-operators-c/
 
