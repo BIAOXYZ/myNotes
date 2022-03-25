@@ -17,3 +17,11 @@ Python中的单例模式的几种实现方式的及优化 https://www.cnblogs.co
 Python实现单例模式的几种方式 https://juejin.cn/post/6993944421133713415
 
 Python单例模式(Singleton)的N种实现 - Crossin的文章 - 知乎 https://zhuanlan.zhihu.com/p/37534850
+
+# 其他Python编程技巧
+
+## 减少 if-else 分支
+
+Using a class dictionary to map to instance methods in Python https://stackoverflow.com/questions/12921857/using-a-class-dictionary-to-map-to-instance-methods-in-python
+
+Why store a function inside a python dictionary? https://softwareengineering.stackexchange.com/questions/182093/why-store-a-function-inside-a-python-dictionary
