@@ -23,5 +23,6 @@ Python单例模式(Singleton)的N种实现 - Crossin的文章 - 知乎 https://z
 ## 减少 if-else 分支
 
 Using a class dictionary to map to instance methods in Python https://stackoverflow.com/questions/12921857/using-a-class-dictionary-to-map-to-instance-methods-in-python
+- 【[:star:][`*`]】 https://stackoverflow.com/questions/12921857/using-a-class-dictionary-to-map-to-instance-methods-in-python/12921884#12921884
 
 Why store a function inside a python dictionary? https://softwareengineering.stackexchange.com/questions/182093/why-store-a-function-inside-a-python-dictionary
