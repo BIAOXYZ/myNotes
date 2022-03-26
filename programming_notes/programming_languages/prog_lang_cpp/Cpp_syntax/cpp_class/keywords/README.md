@@ -22,4 +22,6 @@ C++类的特殊成员函数及default/delete特性 - LitoNeo的文章 - 知乎 h
 【[:star:][`*`]】 c++ explicit 关键字 https://www.jianshu.com/p/af8034ec0e7a
 - > 上面的程序虽然没有错误，但是对于 `Explicit test1 = 10;` 和 `Explicit test2 = "BUGBUGBUG";` 这样的句子，把一个 `int` 类型或者 `const char*` 类型的变量赋值给 `Explicit` 类型的变量看起来总归不是很好，并且当程序很大的时候出错之后也不容易排查。所以***为了禁止上面那种隐式转换可能带来的风险，一般都把`类的单参构造函数`声明的显示调用的***，就是在构造函数加关键字 `explicit`。如下：
 
+What does the explicit keyword mean? https://stackoverflow.com/questions/121162/what-does-the-explicit-keyword-mean
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

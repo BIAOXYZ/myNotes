@@ -17,3 +17,15 @@ C++多态--虚函数virtual及override https://blog.csdn.net/i_chaoren/article/d
 C++ 虚函数、纯虚函数 - Arkin的文章 - 知乎 https://zhuanlan.zhihu.com/p/37331092
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# `virtual`
+
+C++ virtual关键字 https://blog.csdn.net/shuzfan/article/details/77165474
+
+virtual function specifier https://en.cppreference.com/w/cpp/language/virtual
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 虚继承
+
+In C++, what is a virtual base class? https://stackoverflow.com/questions/21558/in-c-what-is-a-virtual-base-class

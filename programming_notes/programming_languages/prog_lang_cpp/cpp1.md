@@ -31,3 +31,6 @@ C++ 匠心之作 从0到1入门资料 https://github.com/Blitzer207/C-Resource
 # C++网站
 
 LearnCpp.com https://www.learncpp.com/
+
+Fluent {C++} https://www.fluentcpp.com/
+- Posts https://www.fluentcpp.com/posts/
