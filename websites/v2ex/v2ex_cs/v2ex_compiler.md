@@ -5,23 +5,38 @@
 - > 重复引用会冲突。但是自动过滤重复引用以后又等于是扼杀了故意多次引用文件的能力。所以你只能每次老老实实写上 `#pragma once` 来告诉编译器你不想重复引用。
   >> 为啥会需要引用两次？引用一次后不就可以编译了吗？
   >>> "为啥会需要引用两次" -- 你先再看一眼 1L ，然后看这个 https://onlinegdb.com/b4qgRG-ZS 哎，你别说以前可能还真有人认为会有需要 include 两次的地方
-  ```cpp
-  #include <iostream>
-  #include <cstdio>
-  using namespace std;
-  int main()
-  {
-      cout<<"Hello World";
-      if(1) { 
-          #include "print.hh" 
+    * > `main.cpp`，`print.hh`，`half-L`，`half-R`
+      ```cpp
+      #include <iostream>
+      #include <cstdio>
+      using namespace std;
+      int main()
+      {
+          cout<<"Hello World";
+          if(1) { 
+              #include "print.hh" 
+          }
+          #include "print.hh"
+          #include "half-L"
+          "\nfoo of %s","you"
+          #include "half-R"
+          return 0;
       }
-      #include "print.hh"
-      #include "half-L"
-      "\nfoo of %s","you"
-      #include "half-R"
-      return 0;
-  }
-  ```
+      ```
+      ```cpp
+      #include <cstdio>
+      fputs("Ha",stdout); 
+      ```
+      ```cpp
+      printf(
+      ```
+      ```cpp
+      );
+      ```
+      ```console
+      Hello WorldHaHa
+      foo of you
+      ```
 - > 你说得很好，不要再说了，再说就要请你去写 C++编译器了。因为 C++的编译器继承 C 编译器的特点，可以独立编译文件，这样每一个文件就是一个编译单元，可以分布式编译。编译的时候，编译器是不知道一个符号在全局中有没有被编译的。能知道全局符号信息的那个叫连接器。所以人们为了避免重复编译，所以就在头文件写宏，防止多次编译（不是多次 include ）。
 因为只要编译了，连接器就能在连接的过程中找到对应的符号的实现。
 - > 你说对了，源码长度就是很长，而且还很复杂。
