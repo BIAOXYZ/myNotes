@@ -1,4 +1,64 @@
 
+【[:star:][`*`]】 Python 发现个奇怪知识,类属性不被实例化修改,即可被外部修改 https://www.v2ex.com/t/842921
+```console
+今天使用 selenium 使用拖拽效果,发现异常的慢.网上一顿搜索,发现解决办法是修改源码控制间隔的属性值..
+这样太不友好了.直接全局改了.后来想看能不能外部写一个继承方法来做,看了源码后,还是放弃,水平有限.于是想的通过外部修改.
+于是做了一下实验.代码如下. 备注有返回值
+```
+```py
+class AAA():
+    DEP = 0
+
+    def get(self):
+        return self.DEP
+
+print(AAA.DEP)  # 0
+
+AAA.DEP = 5  # 修改默认属性
+
+ex_1 = AAA()  # 实例化 ex_1
+print(ex_1.get())  # 5
+
+AAA.DEP = 10  # 再次修改默认属性
+print(ex_1.get())  # 10
+
+ex_1.DEP = 15  # ex_1 修改实例属性
+print(ex_1.get())  # 15
+
+AAA.DEP = 12  # 再次修改默认属性
+print(ex_1.get())  # 15  被上次实例化修改属性后,类属性不再被修改,即返回 15
+
+
+ex_2 = AAA()  # 实例化 ex_2
+print(ex_2.get())  # 12  上段 ex_2 实例化之前前修改的值
+
+AAA.DEP = 20  # 修改原始属性
+print(ex_2.get())  # 20
+
+ex_2.DEP = 30
+print(ex_2.get())
+
+# 总结,类实例化后若原始属性不被修改 ,均可被外动态修改
+```
+后来再次实验,如果被 init 初始化,值也不能被修改了
+```py
+class AAA():
+    DEP = 0
+    def __init__(self):
+        self.DEP=10   # 被 init 初始化后,不能被修改了
+    
+    def get(self):
+        return self.DEP
+```
+```console
+感觉奇奇怪怪的知识增加了..
+这么说,再次使用 selenium 不用使用 time.sleep 来控制了吧. 还没试,先分享下新发现.
+```
+- > 建议读一读 python 官方教程中的 classes 一节。类变量和实例变量并不等价，类变量在所有实例中共享，在通过实例查找变量时实例变量优先于类变量被获取。把类变量用实例变量覆盖的方式不如通过子类覆写类变量的方式安全。
+- > 你是把类变量喝对象变量混淆了。看这个 https://stackoverflow.com/a/5690920
+  >> 【 Variable scopes in Python classes https://stackoverflow.com/questions/5690888/variable-scopes-in-python-classes/5690920#5690920 】
+- > 省流一句话: `self.xxx` 从对象作用于里找 `xxx` 属性 /方法, 没找到, 去类作用域里面找, 找到了; `self.xxx` 赋值以后, 从对象作用域里找到了, 就不去类作用域找了
+
 大佬们，有谁研究过 Python importlib 机制？ sys.modules 缓存太大了 https://www.v2ex.com/t/837192
 
 【[:star:][`*`]】 请教一个 Python 浮点数的小问题 https://www.v2ex.com/t/832021
