@@ -184,6 +184,8 @@ C++创建对象时区分圆括号( )和大括号{ } - emin的文章 - 知乎 htt
 
 C++如何实现用大括号初始化vector https://www.jianshu.com/p/ffbb7d6403b3
 
+C++ Morsels: Initializer List Execution Order https://web.archive.org/web/20171220211003/http://xenon.arcticus.com/c-morsels-initializer-list-execution-order
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 静态成员变量/静态成员函数
@@ -231,7 +233,7 @@ C++: 全局变量和static变量初始化问题 https://www.cnblogs.com/dylan-li
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# 友元
+# 友元（`friend`）
 
 C++ 友元函数 https://www.runoob.com/cplusplus/cpp-friend-functions.html
 - > 类的`友元函数`是 ***定义在类外部，但有权访问类的所有私有（`private`）成员和保护（`protected`）成员***。尽管`友元函数`的原型有在类的定义中出现过，***但是`友元函数`并不是`成员函数`***。
