@@ -170,6 +170,10 @@ Mac中Git忽略.DS_Store文件 https://orianna-zzo.github.io/sci-tech/2018-01/ma
 MacBook Pro 一键锁屏快捷方式 - 笔电的文章 - 知乎 https://zhuanlan.zhihu.com/p/72247613
 - > 方法一：点击屏幕左上角 `苹果` 图标，点击`锁定屏幕`，或者使用快捷键 `Control+Command+Q` 进入锁屏状态
 
+## 锁屏不断网
+
+mac如何设置黑屏不断网的方法？ - 知乎用户Q2q7il的文章 - 知乎 https://zhuanlan.zhihu.com/p/348571274
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 使用 F1 到 F12 等功能键
