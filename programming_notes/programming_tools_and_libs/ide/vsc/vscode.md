@@ -115,6 +115,8 @@ vscode 同时编辑多处，多个光标 快捷键 https://blog.csdn.net/Gomeer/
 3、选中一段文字，按shift+alt+i，可以在每行末尾出现光标
 ```
 
+VSCode 又酷又实用的多光标编辑 https://www.v2ex.com/t/843239 || https://github.com/tjx666/blog/blob/07ed16b474dfad7a0ba2142c8c4f805645914315/src/VSCode%E5%8F%88%E9%85%B7%E5%8F%88%E5%AE%9E%E7%94%A8%E7%9A%84%E5%A4%9A%E5%85%89%E6%A0%87%E7%BC%96%E8%BE%91.md
+
 ## 代码跳转后返回原位
 
 vscode 跳转到函数之后怎么跳转回之前的位置 https://www.v2ex.com/t/385490
