@@ -40,3 +40,7 @@ Squash: The debugger for microservices https://github.com/solo-io/squash
 ## docker-debug
 
 docker 容器调试新姿势 https://blog.zeromake.com/pages/docker-debug
+
+# 小众debug工具
+
+drgn -- Programmable debugger https://github.com/osandov/drgn
