@@ -1,4 +1,14 @@
 
+[2022-03] GitHub 加速终极教程 https://www.v2ex.com/t/843383
+
+Git clone 国内下载慢问题，大家是如何解决的 2022-03-28 https://www.v2ex.com/t/843313
+- > `git config --global http.proxy`
+- > https://greasyfork.org/zh-CN/scripts/412245-github-%E5%A2%9E%E5%BC%BA-%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BD
+- > https://gist.github.com/evantoli/f8c23a37eb3558ab8765
+- > FastGithub ，挺方便。直接下载安装包，git push/clone 都能得到很好的解决。 https://github.com/dotnetcore/FastGithub
+- > https://github.com/ineo6/hosts 试一试这个
+- > https://www.github.do/
+
 .git/objects 有 800 多兆，怎么清理合适 ？ https://www.v2ex.com/t/842187
 - > 清理？ https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E5%AF%B9%E8%B1%A1
 - > git gc ？
