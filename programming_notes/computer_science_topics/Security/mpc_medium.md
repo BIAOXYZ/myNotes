@@ -33,6 +33,14 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 开放隐私计算
 
+### 2022.03
+
+终于有人讲明白隐私计算是什么了 https://mp.weixin.qq.com/s/yB1XJxO5v7UUjP-kM2Zllg || 隐私计算发展浅析 https://mp.weixin.qq.com/s/9btDgLCxMtyJ855n4c7aig
+- > **隐私计算发展痛点**
+  * > 根据中国信通院测试，`40万行样本x900列特征`的纵向联邦学习建模比明文慢数十倍甚至百倍，并且随着规模增加，这个倍数还会放大。
+- > （本文转自公众号【一个数据玩家的自我修养】，作者银行从业十一年，程序员出身，转行业务，创业咨询，乐于助人，善于助人。）
+>> //notes：此外，在另一个学术相关仓库里还有一些其他笔记：https://github.com/BIAOXYZ/paperRelatedRepository/blob/bec8d60f8d4adc370e04e936bde0e1555e4883c2/notes/essay/MPC/millionaires_problem/catalog.md
+
 ### 2022.01
 
 隐私计算研究进展、现状及趋势 https://mp.weixin.qq.com/s/ygdP2VUZj5uKINTEd5s8DA
