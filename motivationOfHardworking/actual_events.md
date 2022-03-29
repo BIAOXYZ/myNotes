@@ -44,6 +44,8 @@
 
 ## 2022
 
+中国首次通过基因治疗治愈成人重型地贫 瑞风生物参与 | 创新事 https://mp.weixin.qq.com/s/j-OkWAvfisLXowqIwKMQKw
+
 对话“流调中最辛苦的中国人”：来北京找儿子，凌晨打零工补贴家用 https://mp.weixin.qq.com/s/cefZR9URd0MjtjNLiSxE4w || https://www.guancha.cn/politics/2022_01_20_622900.shtml
 
 ## 2021
