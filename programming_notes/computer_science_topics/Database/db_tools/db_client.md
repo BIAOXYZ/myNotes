@@ -39,3 +39,23 @@ ctrl + shift + L 将选定的sql转换成小写字母
   * > 有一些快捷键使用时是默认对当前一整个 Script 页面生效，可以通过光标来选定只想生效的范围。
   * > 双击sql语句里的括号边缘，可以直接选定括号内的内容(不包括该括号)，这个功能很方便。
   * > 单引号/双引号的内侧可以直接选定被单引号/双引号包括起来的内容。
+
+DBeaver for Mac快捷键 https://blog.csdn.net/qq_33847893/article/details/118413767
+```console
+ctrl + enter 执行sql
+command + option + ↑ 向上复制一行
+command + option + ↓ 向下复制一行
+ctrl + shift + ↑ 向上移动一行
+ctrl + shift + ↓ 向下移动一行
+ctrl + option + F 对sql语句进行格式化，对于很长的sql语句很有用
+command + d 删除当前行
+option + ↑ 向上选定一条sql语句
+option + ↓ 向下选定一条sql语句
+ctrl + / 行注释
+ctrl + shift+ / 块注释
+command + f 查找、替换
+ctrl + space sql提示
+ctrl + shift + E 执行计划
+command + shift + X 将选定的sql转换成大写字母
+command + shift + Y 将选定的sql转换成小写字母
+```
