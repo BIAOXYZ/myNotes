@@ -200,12 +200,6 @@ Docker Awarded FIPS 140-2 Validation by NIST https://www.docker.com/docker-news-
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# Portainer
-
-Simple management UI for Docker http://portainer.io https://github.com/portainer/portainer
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
 # docker for windows || docker toolbox
 
 - Windows10下的docker安装与入门 （一）使用docker toolbox安装docker https://www.cnblogs.com/linjj/p/5606687.html
@@ -229,28 +223,8 @@ Docker Swarm https://docs.docker.com/engine/swarm/swarm-tutorial/
 深入浅出Docker Swarm
 https://www.csdn.net/article/2015-01-26/2823714
 
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
-# docker-compose
-
-极客学院 -- <<Docker —— 从入门到实践>> -- Compose 命令说明
-http://wiki.jikexueyuan.com/project/docker-technology-and-combat/commands.html
-
-gitbook -- <<Docker —— 从入门到实践>> -- Compose 命令说明
-https://yeasy.gitbooks.io/docker_practice/content/compose/commands.html
-
-Docker-compose命令详解 - CSDN博客
-https://blog.csdn.net/wanghailong041/article/details/52162293
-
-Docker-compose使用全解 - CSDN博客
-https://blog.csdn.net/zhiaini06/article/details/45287663
-
-docker-compose教程（安装，使用, 快速入门） https://blog.csdn.net/pushiqiang/article/details/78682323
-
-docker-compose.yml 配置文件编写详解 https://blog.csdn.net/qq_36148847/article/details/79427878
-
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-Container Training https://container.training/
-
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+Container Training https://container.training/
