@@ -10,6 +10,7 @@ ClickHouse® is a free analytics DBMS for big data https://github.com/ClickHouse
 
 SQL参考 https://clickhouse.com/docs/zh/sql-reference/
 - 条件函数 https://clickhouse.com/docs/zh/sql-reference/functions/conditional-functions/
+- ORDER BY https://clickhouse.com/docs/zh/sql-reference/statements/select/order-by/
 
 # Parser
 

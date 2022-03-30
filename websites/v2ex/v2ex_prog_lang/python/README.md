@@ -1,4 +1,13 @@
 
+安装了 python3.10，满吃惊的 https://www.v2ex.com/t/843931
+```console
+居家无聊升级了 python3.10，跑了下之前 pandas ，numpy 处理数据的脚本，纯计算，没有数据库网络操作
+之前 python3.6 耗时 12 分钟，相同代码，pandas,numpy 版本不同，其他一致。python 3.10 耗时 6 分钟，我惊呆了。
+```
+- > pandas/numpy 本身都会做很多性能优化的。特别是 numpy. 最后一个支持 python3.6 的版本是 1.19.5 两年能做很多性能优化了。比如 1.20 开始，numpy 开启了一个 SIMD 的优化计划（ NEP-0038 ）。
+- > 不说别的 async 的语法 3.6 以后一个版本比一个版本简洁好用
+- > Python 官方有个 benchmark： https://speed.python.org/comparison/ <br> 另外 3.9 开始用 PEG parser 了，加了一些语法糖，有一些表达比之前更简洁了。
+
 【[:star:][`*`]】 Python 发现个奇怪知识,类属性不被实例化修改,即可被外部修改 https://www.v2ex.com/t/842921
 ```console
 今天使用 selenium 使用拖拽效果,发现异常的慢.网上一顿搜索,发现解决办法是修改源码控制间隔的属性值..
