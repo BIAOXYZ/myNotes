@@ -15,7 +15,7 @@ Python Counter in Collections with Example https://www.guru99.com/python-counter
 
 # 个人实战
 
-## 1
+## 1. Counter加减
 
 ```py
 >>> from collections import Counter
@@ -40,5 +40,22 @@ Counter({'c': 1, 'b': 0, 'a': -1})
 >>>
 ```
 
+## 2. Counter里没有的 key 也可以直接用，值是 0
+
+```py
+>>> from collections import Counter as cc
+>>> l = [2,4,6,12]
+>>> ctr = cc(l)
+>>> ctr
+Counter({2: 1, 4: 1, 6: 1, 12: 1})
+>>> 
+>>> ctr[2]
+1
+>>> ctr[8]
+0
+>>> 
+```
+
 # LeetCode相关题目
 - `383. 赎金信` https://leetcode-cn.com/problems/ransom-note/  【用到了两个Counter对象直接相减】
+- `954. 二倍数对数组` https://leetcode-cn.com/problems/array-of-doubled-pairs/  【即使没有显式指定 ctr 里的 key，也可以直接用 `ctr[key]`，其值为 0】
