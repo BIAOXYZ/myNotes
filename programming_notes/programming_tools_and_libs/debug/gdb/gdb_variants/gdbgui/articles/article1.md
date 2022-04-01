@@ -5,14 +5,77 @@
 
 关于“在远程把 `gdbgui` 跑起来”，有两种方式：一是在远端Linux机器上直接跑；二是在远端Linux机器上启动个容器，在容器里跑，只要注意把相应的端口暴露出去就行。
 
-# 实战1：`gdbgui`运行在远端Linux上的容器里
+# 实战1：`gdbgui` 运行在远端Linux上的容器里
 
-准备一个开发调试用的容器：
 ```sh
-docker run -itd --privileged -p 5000:5000 --name testremote testubuntu20.04:v1 bash
+# 准备一个开发调试用的容器，因为要在容器里用 gdb，所以 --privileged 应该是不可省的；
+# 此外 -p 5000:5000 是必须的，因为 gdbgui 的端口就是通过 5000 暴露的。
+docker run -itd --privileged -p 5000:5000 --name remotegdbgui ubuntu:20.04 bash
+docker exec -it remotegdbgui bash
+apt update
+apt install -y build-essential autoconf g++ git gdb cgdb python3-dev python3-pip
+python3 -m pip install gdbgui
+python3 -m pip install werkzeug==2.0.0  # 这个大概率会遇到，所以提前回退一下版本得了。
+
+cd /tmp/
+touch test.cpp
+g++ -g -o test test.cpp
+
+# 或者直接 `gdbgui -r`
+# 然后在浏览器里的 gdb 界面的命令行里输入 `file /tmp/test`。或者直接点击 Load Binary 图标输入路径后加载 test。
+gdbgui -r test
 ```
 
-# 参考链接
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+struct rect{
+    int x1, y1, x2, y2;
+};
+
+int adder(int x, int y) {
+    cout << "start" << endl;
+    int z = x + y;
+    cout << "end" << endl;
+    return z;
+}
+
+int main(){
+    int n = 2;
+    struct rect rect[n];
+    int a = 16;
+    int b = 32;
+    int c = adder(a, b);
+    for(int i=0; i< n; i++){
+        rect[i].x1 = n + i;
+        rect[i].y1 = n + i+ 1;
+        rect[i].x2 = n + i+2;
+        rect[i].y2 = n + i+3;
+    }
+
+    // int area;  -->  不初始化的话有问题
+    int area = 0;
+    int flag[101][101];
+    memset(flag, false, sizeof(flag));  // --> 试试把这个也放开注释
+    for(int i=0; i< n; i++){
+        area += (rect[i].x2 - rect[i].x1) * (rect[i].y2 - rect[i].y1);
+        for(int j=rect[i].x1; j<rect[i].x2; j++){
+            for(int t=rect[i].y1; t<rect[i].y2; t++){
+                if(flag[j][t] == 1){
+                    area--;
+                }
+                else{
+                    flag[j][t] = 1;
+                }
+            }
+        }
+    }
+    cout << area <<endl;;
+}
+```
+
+## 参考链接
 
 Guides https://www.gdbgui.com/guides/
 - > **Running Remotely**
@@ -23,3 +86,32 @@ Guides https://www.gdbgui.com/guides/
     + > debug the remote computer in your local browser
   + > Note that gnu also distrubutes a program called `gdbserver` which `gdbgui` is compatible with. See the relevant section in this doc.
   >> //notes：所以核心其实就是启动的时候多加个 `-r` 参数，说明是远程调试模式。
+
+## 问题解决
+
+按上面步骤安装完成后，运行 `gdbgui` 会报如下错误。搜索了一下后，按官方 issue 里有人给的方法，回退 `werkzeug` 库的版本后解决。
+```sh
+root@50a2b8039aec:/# gdbgui
+Opening gdbgui with default browser at http://127.0.0.1:5000
+View gdbgui dashboard at http://127.0.0.1:5000/dashboard
+exit gdbgui by pressing CTRL+C
+Traceback (most recent call last):
+  File "/usr/local/bin/gdbgui", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/gdbgui/cli.py", line 249, in main
+    run_server(
+  File "/usr/local/lib/python3.8/dist-packages/gdbgui/server/server.py", line 95, in run_server
+    socketio.run(
+  File "/usr/local/lib/python3.8/dist-packages/flask_socketio/__init__.py", line 596, in run
+    app.run(host=host, port=port, threaded=True,
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 920, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 1047, in run_simple
+    fd = int(os.environ["WERKZEUG_SERVER_FD"])
+  File "/usr/lib/python3.8/os.py", line 675, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'WERKZEUG_SERVER_FD'
+```
+
+Fails to start with KeyError: WERKZEUG_SERVER_FD #425 https://github.com/cs01/gdbgui/issues/425
+>> //notes：按照该issue的回答，`pip install werkzeug==2.0.0` 把 `werkzeug` 版本改为 `2.0.0` 后就可以了。
