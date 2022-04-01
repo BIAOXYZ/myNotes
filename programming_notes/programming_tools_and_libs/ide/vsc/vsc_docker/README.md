@@ -1,6 +1,8 @@
 
 Developing inside a Container https://code.visualstudio.com/docs/remote/containers
 
+Create a development container https://code.visualstudio.com/docs/remote/create-dev-container
+
 # 个人总结1
 
 ***两个关键插件***：
