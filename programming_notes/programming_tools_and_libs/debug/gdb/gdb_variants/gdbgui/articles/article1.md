@@ -5,13 +5,16 @@
 
 关于“在远程把 `gdbgui` 跑起来”，有两种方式：一是在远端Linux机器上直接跑；二是在远端Linux机器上启动个容器，在容器里跑，只要注意把相应的端口暴露出去就行。
 
-# 实战1：`gdbgui` 运行在远端Linux上的容器里并单步调试
+# 实战1：`gdbgui` 运行在远端Linux上的容器里，在笔记本（Mac）的浏览器里，单步调试同样在容器里的 C++ 程序
 
 ```sh
+#// 1. 下面两句 docker 的命令是在远程 Linux 机器上执行的。
 # 准备一个开发调试用的容器，因为要在容器里用 gdb，所以 --privileged 应该是不可省的；
 # 此外 -p 5000:5000 是必须的，因为 gdbgui 的端口就是通过 5000 暴露的。
 docker run -itd --privileged -p 5000:5000 --name remotegdbgui ubuntu:20.04 bash
 docker exec -it remotegdbgui bash
+
+#// 2. 下面这些语句一直到 gdbgui 启动，是在远程 Linux 的容器里执行的。
 apt update
 apt install -y build-essential autoconf g++ git gdb cgdb python3-dev python3-pip
 python3 -m pip install gdbgui
@@ -24,6 +27,9 @@ g++ -g -o test test.cpp
 # 或者直接 `gdbgui -r`
 # 然后在浏览器里的 gdb 界面的命令行里输入 `file /tmp/test`。或者直接点击左上角 Load Binary 图标输入路径后加载 test。
 gdbgui -r test
+
+#// 3. 回到 Mac，打开 Chrome，输入 http://{your_linux_machine_ip}:5000/ 即可打开 gdbgui 的界面。甚至可以用小键盘方向键来调试～
+```
 ```
 
 ```cpp
