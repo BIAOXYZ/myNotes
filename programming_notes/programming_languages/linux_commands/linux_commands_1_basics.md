@@ -684,6 +684,20 @@ Ctrl + f            光标向前（forward）移动一个字符位置
 Ctrl + b            光标往回（backward）移动一个字符位置
 ```
 
+linux命令行常用光标移动快捷键 https://www.jianshu.com/p/de98af781829
+```sh
+Alt – b ：往回(左)移动一个单词
+Alt – f ：往后(右)移动一个单词
+```
+>> //notes：上面的6个（尤其是前四个）貌似 Linux 下和 Mac 下都没问题，但是就是“***向前/向后移动一个单词***”这俩的快捷键跟 OS 和 ssh 客户端都有关系。。。目前在 Mac 下的 iTerm 里用下述帖子里的方法试了可以达到目的。但是唯一比较挫的是每次都得 `ESC + f/b`，而不是像别的一样 “按下 `Alt` 不放，每次只需要单独按 `f/b` 即可”。
+- Linux命令行——光标快速移动的快捷键 https://blog.csdn.net/u010865136/article/details/95628409
+```console
+Esc b 左移一个单词[back]
+Esc f 右移一个单词[forward]
+
+注意：每次按下快捷键，需抬起后再按下快捷键，方可多次移动单词
+```
+
 <<linux反向搜索执行过的命令>> http://blog.csdn.net/rangf/article/details/6399897
 ```shell
 linux命令行的history是一个熟知但不常用的命令，原因是要查某个命令的编号需要输入 history|grep xxx ，

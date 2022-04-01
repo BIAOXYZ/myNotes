@@ -34,6 +34,20 @@ go-grpc-example，分为入门教程和进阶教程，包括请求超时设置�
 
 # gRPC其他
 
+gRPC 跑分分享(2022 03 15 bench results) https://www.v2ex.com/t/844350
+```console
+直接贴来源： https://github.com/LesnyRumcajs/grpc_bench/wiki/2022-03-15-bench-results
+总结：
+Rust 性能上天，资源利用高。
+CPP 不落王者
+Scala 机制优化
+Java 依然强悍
+Donet 有金主爸爸就是不一样
+Golang 名列前茅
+JavaScript 、PHP 、Ruby 洗洗睡了。
+```
+>> https://github.com/LesnyRumcajs/grpc_bench
+
 gRPC的那些事 - streaming https://colobu.com/2017/04/06/dive-into-gRPC-streaming/ || https://github.com/smallnest/smallnest.github.io/blob/55327d81424aaa798705a006f7c6cbad81b860cb/2017/04/06/dive-into-gRPC-streaming/gRPC.png
 
 gRPC双向数据流的交互控制（go语言实现）| gRPC双向数据流的交互控制系列(1) https://www.jianshu.com/p/5158d6686769
