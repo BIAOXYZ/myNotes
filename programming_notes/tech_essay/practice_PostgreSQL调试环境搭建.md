@@ -398,6 +398,11 @@ WORKDIR /home/pguser/pgdir/pgsql/bin/
 RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
 ```
 
+# New
+
+## 1.使用 `gdbgui` 调试 PostgreSQL
+>> 【[:star:][`*`]】 //notes：参见 `gdbgui` 部分的实战吧～实战里调试的pg ***不但是跑在远端，而且是跑在远端容器里***。如果这种情况都已经能成功地单步调试的话，其他的（`浏览器+本地pg`，`浏览器+远程linux机器上的pg`）应该更是不在话下。
+
 # TODO
 
 如何使用VSCode进行PostgreSQL开发及调试 http://www.postgres.cn/v2/news/viewone/1/459

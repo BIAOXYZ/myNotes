@@ -12,6 +12,7 @@
 - gdbgui
   * [ ] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** gdbgui + 待调试C++程序
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)容器里`** gdbgui + 待调试C++程序
+    >> 【[:star:][`*`]】 //notes：甚至可以在 Mac 上的浏览器里单步调试远程 Linux 机器上容器里自己编译的 pg，用 attach 模式就好。美滋滋～
 - portainer
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)容器里`** portainer
 - spark

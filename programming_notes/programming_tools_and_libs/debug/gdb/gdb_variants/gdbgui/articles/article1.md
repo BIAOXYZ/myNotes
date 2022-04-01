@@ -5,7 +5,7 @@
 
 关于“在远程把 `gdbgui` 跑起来”，有两种方式：一是在远端Linux机器上直接跑；二是在远端Linux机器上启动个容器，在容器里跑，只要注意把相应的端口暴露出去就行。
 
-# 实战1：`gdbgui` 运行在远端Linux上的容器里
+# 实战1：`gdbgui` 运行在远端Linux上的容器里并单步调试
 
 ```sh
 # 准备一个开发调试用的容器，因为要在容器里用 gdb，所以 --privileged 应该是不可省的；
@@ -22,7 +22,7 @@ touch test.cpp
 g++ -g -o test test.cpp
 
 # 或者直接 `gdbgui -r`
-# 然后在浏览器里的 gdb 界面的命令行里输入 `file /tmp/test`。或者直接点击 Load Binary 图标输入路径后加载 test。
+# 然后在浏览器里的 gdb 界面的命令行里输入 `file /tmp/test`。或者直接点击左上角 Load Binary 图标输入路径后加载 test。
 gdbgui -r test
 ```
 
@@ -115,3 +115,14 @@ KeyError: 'WERKZEUG_SERVER_FD'
 
 Fails to start with KeyError: WERKZEUG_SERVER_FD #425 https://github.com/cs01/gdbgui/issues/425
 >> //notes：按照该issue的回答，`pip install werkzeug==2.0.0` 把 `werkzeug` 版本改为 `2.0.0` 后就可以了。
+
+## 补1：`gdbgui` 调试PG！
+
+这种方式的高峰是直接在 `Mac 上的浏览器里` 调试 `远程 Linux` 上的 `容器里的` 自己编译安装的 pg。有了上面的例子后，不再给出具体过程了，这里只说大的步骤：
+- 1.先在容器里编译好能单步调试的 pg 版本，启动数据库后，`psql` 连接到数据库，建表和插入数据。
+- 2.按照过去的步骤，此时就应该是 `cgdb/gdb attach PID`，打好断点；然后回到 `psql` 连接的窗口，执行待调试的 sql 语句。这里用 `gdbgui` 的话，只有 attach 那里不太一样：
+  * 直接 `gdbgui -r` 启动。
+  * 回到 Mac 上浏览器里打开 `gdbgui` 相应地址，然后页面左上角选择 `Attach to Process` 图标，输入进程号后回车 attach 上。
+  * 后面的换回到 `psql` 那个窗口，执行sql之类的都一样。
+
+总之，其实整个过程对比过去的区别就是：过去用 `cgdb/gdb` 去 attach，然后在 `cgdb/gdb` 的界面调试；现在用 `gdbgui` 去 attach，然后在浏览器里调试。
