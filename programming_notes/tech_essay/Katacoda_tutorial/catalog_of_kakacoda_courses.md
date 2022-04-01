@@ -14,8 +14,8 @@ Tensorflow Playground https://www.katacoda.com/courses/tensorflow/playground
 # 官方课程
 
 Learn Kubernetes using Interactive Browser-Based Scenarios https://www.katacoda.com/courses/kubernetes || 动手做实验学习K8s https://www.kancloud.cn/huowolf/kubernates/1870315
-- > 本系列文章是Katacoda中K8s教程的翻译版，原文地址：https://www.katacoda.com/courses/kubernetes。
-- > 鉴于国内网络环境，可以尝试访问：https://environments.katacoda.com/，或者自行挂代理。特别是Katacoda中的Dashboard需要挂代理才能访问。
+- > 本系列文章是Katacoda中K8s教程的翻译版，原文地址：https://www.katacoda.com/courses/kubernetes 。
+- > 鉴于国内网络环境，可以尝试访问：https://environments.katacoda.com/ ，或者自行挂代理。特别是Katacoda中的Dashboard需要挂代理才能访问。
   >> //notes：有天（其实就是今天：`2022.04.01`）突然发现 katacoda 又不能用了，关键我是用的公司的 VPN 啊。。。表现是网页能打开，然后各种操作都没反应，但是浏览器明显没有卡死。然后用 `SwitchyOmega` 切换也不管用——后来过了一会反应过来：是 Chrome 的垃圾拦截插件的原因。。。让插件不要在 katacoda 上生效即可。
 
 Learn Git Version Control using Interactive Browser-Based Scenarios https://www.katacoda.com/courses/git
