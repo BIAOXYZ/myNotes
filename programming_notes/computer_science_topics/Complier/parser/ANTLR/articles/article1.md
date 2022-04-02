@@ -2,6 +2,8 @@
 # 1
 
 探究Presto SQL引擎(1)-巧用Antlr https://segmentfault.com/a/1190000040490309 || https://juejin.cn/post/6994614394621526047 || http://blog.itpub.net/69912579/viewspace-2786120/
+- > **3.2.1 使用Visitor模式**
+  * > 代码编写完成后，就是运行 `Calc`。运行 `Calc` 的 `main` 函数，在交互命令行输入相应的运算表达式，`换行` `Ctrl+D` 即可看到运算结果。例如 `1+3*4=13`。
 - > **五、总结**
   * > 本文基于四则运算器和使用SQL查询csv数据两个案例阐述了ANTLR4在项目开发中的应用思路和过程，相关的代码可以在[github](https://github.com/shgy/db-practice)上看到。
     >> //notes：另外自己也fork了一个，方便后续回顾： https://github.com/BIAOXYZ/forked--db-practice  -->  因为完全没接触过 java，作者原版仓库里的代码去编译都踩了坑，所以还是 fork 一份省得作者更新后再想回顾的时候更麻烦。。。
