@@ -21,16 +21,32 @@ ANTLR https://zh.wikipedia.org/wiki/ANTLR
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 安装
+
+Getting Started with ANTLR v4 https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
+- > **Installation**
+  * > **UNIX**
+    ```sh
+    # 0.Install Java (version 1.7 or higher)
+    cd /usr/local/lib
+    curl -O https://www.antlr.org/download/antlr-4.9-complete.jar
+    export CLASSPATH=".:/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
+    alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+    alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+    ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # books
 
 ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content/ || ANTLR 4简明教程 https://github.com/dohkoos/antlr4-short-course
 - > 《The Definitive ANTLR 4 Reference》中译版书籍已出（和我无关），所以此项目已被放弃……
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 如何学习ANTLR? - 知乎 https://www.zhihu.com/question/437337408
-
-探究Presto SQL引擎(1)-巧用Antlr https://segmentfault.com/a/1190000040490309 || https://juejin.cn/post/6994614394621526047 || http://blog.itpub.net/69912579/viewspace-2786120/
 
 用 ANTLR4 和 python 十多行代码写一个计算器 https://blog.keyi-li.com/2020/04/16/ANTRL4-Python-Calculator/
 - > calculANTLR-python3 https://github.com/cjhahaha/calculANTLR-python3

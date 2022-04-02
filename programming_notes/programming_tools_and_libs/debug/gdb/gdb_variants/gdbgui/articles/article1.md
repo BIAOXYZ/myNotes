@@ -30,7 +30,6 @@ gdbgui -r test
 
 #// 3. 回到 Mac，打开 Chrome，输入 http://{your_linux_machine_ip}:5000/ 即可打开 gdbgui 的界面。甚至可以用小键盘方向键来调试～
 ```
-```
 
 ```cpp
 #include<bits/stdc++.h>
