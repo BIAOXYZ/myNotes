@@ -21,6 +21,8 @@
 
 # 非技术类其他  
 
+父母真的有一天会离开我们 https://www.v2ex.com/t/844492
+
 头疼，孩子不聪明怎么办…… https://www.v2ex.com/t/835185
 ```console
 事例 1：
