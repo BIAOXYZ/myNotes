@@ -64,6 +64,8 @@ apt-key adv                 - 设置key的高级配置, Pass advanced options to
 
 # apt换源/增加源
 
+How To Add Apt Repository In Ubuntu https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/
+
 Ubuntu20.04软件源更换 - 舟公的文章 - 知乎 https://zhuanlan.zhihu.com/p/142014944
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
