@@ -17,3 +17,11 @@ USING LEX WITH YACC https://silcnitc.github.io/ywl.html
 What is the difference between Flex/Lex and Yacc/Bison? https://stackoverflow.com/questions/623503/what-is-the-difference-between-flex-lex-and-yacc-bison?noredirect=1&lq=1
 
 what is the difference between lex and yacc https://stackoverflow.com/questions/1189684/what-is-the-difference-between-lex-and-yacc/1189732
+
+Flex(scanner)/Bison(parser)工作原理 - 扬眉的文章 - 知乎 https://zhuanlan.zhihu.com/p/120812270
+- > **Unix Lex/YACC 发展为 Linux FLex/Bison**
+Lex是1975年由Mike Lesk和当时尚在AT&T实习的Eric Schmidt共同完成的（Schmidt做的更多），是一个词法分析器的生成程序，可以单独使用也可以与Johnson的yacc协同工作。lex很有名气，但是无奈效率太低加上有bug。大概在1987年，Lawrence Berkeley实验室的Vern Paxson用C重新写了Lex，并命名为FLex（the Fast Lexical Analyzer Generator），基于伯克利许可证。flex现在是SourceForge的一个项目，依然基于伯克利许可，
+- > [Flex](https://github.com/westes/flex "Flex") 是起初unix版lex的free (but non-GNU) implementation，用于c/c ++ 的词法扫描生成器。
+- > （注意：Schmidt曾是google的CEO）
+- > bison的前身是yacc。yacc是由贝尔实验室的S.C.Johnson基于Knuth大神的LR语法分析理论，于1975～1978年写成。大约1985年，UC Berkeley 的研究生Bob Corbett使用改进的内部算法实现了伯克利yacc，来自FSF的Richard Stallman改写了伯克利yacc并将其用于GNU项目，添加了很多特性，形成了今天的GNU Bison。bison现在作为FSF的项目被维护，基于GNU公共许可证发布，[Bison](http://www.gnu.org/software/bison/manual/)是兼容yacc的free的语法生成器。
+- > 早期Unix的Lex/YACC，发展为FLex/Bison，新版本的程序是向上兼容的(即兼容老版本)
