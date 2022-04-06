@@ -29,3 +29,5 @@ Window function (SQL) https://en.wikipedia.org/wiki/Window_function_(SQL)
 通俗易懂的学会：SQL窗口函数 - 猴子的文章 - 知乎 https://zhuanlan.zhihu.com/p/92654574
 
 SQL 窗口函数是什么？涨见识了！ https://segmentfault.com/a/1190000040088969
+
+Clickhouse 分析函数 window functions 窗口函数 https://blog.csdn.net/vkingnew/article/details/106781788

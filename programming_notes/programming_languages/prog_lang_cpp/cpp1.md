@@ -15,6 +15,8 @@
   * > EPUB document
   * > Website: https://changkun.de/modern-cpp
 
+求大佬推荐一下C/C++书籍，一定要附为什么推荐？ - 知乎 https://www.zhihu.com/question/502226942
+
 # C++项目
 
 Awesome C++ https://github.com/fffaraz/awesome-cpp
