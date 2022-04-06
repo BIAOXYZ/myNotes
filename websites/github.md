@@ -201,11 +201,16 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 
 Microsoft and GitHub Workers Support 996.ICU https://github.com/MSWorkers/support.996.ICU
 
------
+--------------------------------------------------
 
 WorkerLivesMatter https://github.com/ZhangNanBei/WokerLifeMatters
 - > 感谢 @SwJay 提醒，本项目名打错了，最新地址如上：请转到 [WorkerLivesMatter/WorkingTime](https://github.com/WorkerLivesMatter/WorkingTime)
   >> WorkingTime https://github.com/WorkerLivesMatter/WorkingTime
+
+--------------------------------------------------
+
+CN.Remote.Jobs https://github.com/xubaifuCode/CN.Remote.Jobs
+- > 汇集在中国地区支持全远程/混合远程办公的公司。
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 

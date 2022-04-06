@@ -50,3 +50,7 @@ Vagrant 替换 PVE 和 EXSI 咋样？ https://www.v2ex.com/t/815520
   >> 免费版是要注册账号申请一个 Key 并输入的。输入 Key 后会产生限制，每个 VM 最高 8 核，并且 vCenter 和 vStorage 会关闭
 
 小型虚拟化环境中， ESXI、PVE、XEN，该如何选择？ https://v2ex.com/t/611312
+
+# 小众
+
+Lima: Linux virtual machines (on macOS, in most cases) https://github.com/lima-vm/lima

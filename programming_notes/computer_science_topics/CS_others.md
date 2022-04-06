@@ -41,6 +41,10 @@ Write a simple interpreter of C. Inspired by c4 and largely based on it. https:/
 The single instruction C compiler https://github.com/xoreaxeaxeax/movfuscator
 - > forked from  https://github.com/Battelle/movfuscator
 
+chibicc: A Small C Compiler https://github.com/rui314/chibicc
+- > (The old master has moved to [historical/old](https://github.com/rui314/chibicc/tree/historical/old) branch. This is a new one uploaded in September 2020.)
+- > chibicc is yet another small C compiler that implements most C11 features. Even though it still probably falls into the "toy compilers" category just like other small compilers do, chibicc can compile several real-world programs, including [Git](https://git-scm.com/), [SQLite](https://sqlite.org/), [libpng](http://www.libpng.org/pub/png/libpng.html) and chibicc itself, without making modifications to the compiled programs. Generated executables of these programs pass their corresponding test suites. So, chibicc actually supports a wide variety of C11 features and is able to compile hundreds of thousands of lines of real-world C code correctly.
+
 ## DB project
 
 Let's make a SQL parser so we can provide a familiar interface to non-sql datastores! https://github.com/mozilla/moz-sql-parser
