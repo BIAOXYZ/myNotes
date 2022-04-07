@@ -5,6 +5,8 @@
   * [ ] **`本地(Mac)`** dbeaver + **`远端(Linux)`** 数据库
   * [x] **`本地(Mac)`** dbeaver + **`本地(Mac)容器里`** ClickHouse
   * [x] **`本地(Mac)`** dbeaver + **`远端(Linux)容器里`** ClickHouse、PostgreSQL
+- docker（Docker Daemon）
+  * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** 上的 Docker Daemon 开启 docker 的 http API（比如，通过编辑 `/lib/systemd/system/docker.service`）
 - code-server
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** coder-server + 远端机器代码目录
     >> //notes：这种方式下，远端的 Python 代码，可以直接在本地浏览器里单步调试；我估计 C/C++ 或者其他语言的代码也是类似的，虽然并没有实际去调试。
