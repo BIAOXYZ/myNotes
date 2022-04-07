@@ -13,6 +13,7 @@ SQL参考 https://clickhouse.com/docs/zh/sql-reference/
 - ORDER BY https://clickhouse.com/docs/zh/sql-reference/statements/select/order-by/
 - 操作符 https://clickhouse.com/docs/zh/sql-reference/operators/
 - Window Functions https://clickhouse.com/docs/zh/sql-reference/window-functions/
+- JSON函数 https://clickhouse.com/docs/zh/sql-reference/functions/json-functions/
 
 # Parser
 
