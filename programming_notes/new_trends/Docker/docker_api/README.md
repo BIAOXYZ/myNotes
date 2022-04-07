@@ -91,4 +91,48 @@ $ systemctl restart docker
 $ curl -X GET http://127.0.0.1:9099/containers/json
 [{"Id":"650fa0e1fd4b55d827a66c1265515a89920e88706098dde9fb05675a0b617155","Names":["/pgdebug"],"Image":"ubuntu:16.04","ImageID":"sha256:b6f50765242581c887ff1acc2511fa2d885c52d8fb3ac8c4bba131fd86567f2e","Command":"bash","Created":1638413038,"Ports":[],"Labels":{},"State":"running","Status":"Up 4 months","HostConfig":{"NetworkMode":"default"},"NetworkSettings":{"Networks":{"bridge":{"IPAMConfig":null,"Links":null,"Aliases":null,"NetworkID":"a7fd9a9f30a5e057254fdcdc854dae7677e6200605a67b7c2b26711777e61171","EndpointID":"9da7627f0fa80be10abbd7c1eaf8e7d92f02f821d7465ec031e5b320b93d7b87","Gateway":"172.17.0.1","IPAddress":"172.17.0.2","IPPrefixLen":16,"IPv6Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"MacAddress":"02:42:ac:11:00:02","DriverOpts":null}}},"Mounts":[]}]
 $
+$ curl -X GET http://127.0.0.1:9099/containers/json | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   786  100   786    0     0   437k      0 --:--:-- --:--:-- --:--:--  767k
+[
+    {
+        "Id": "650fa0e1fd4b55d827a66c1265515a89920e88706098dde9fb05675a0b617155",
+        "Names": [
+            "/pgdebug"
+        ],
+        "Image": "ubuntu:16.04",
+        "ImageID": "sha256:b6f50765242581c887ff1acc2511fa2d885c52d8fb3ac8c4bba131fd86567f2e",
+        "Command": "bash",
+        "Created": 1638413038,
+        "Ports": [],
+        "Labels": {},
+        "State": "running",
+        "Status": "Up 4 months",
+        "HostConfig": {
+            "NetworkMode": "default"
+        },
+        "NetworkSettings": {
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "a7fd9a9f30a5e057254fdcdc854dae7677e6200605a67b7c2b26711777e61171",
+                    "EndpointID": "9da7627f0fa80be10abbd7c1eaf8e7d92f02f821d7465ec031e5b320b93d7b87",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        },
+        "Mounts": []
+    }
+]
+$
 ```
