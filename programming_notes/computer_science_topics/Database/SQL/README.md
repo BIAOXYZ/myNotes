@@ -27,6 +27,12 @@ Using Group By and Order By in the Same Query https://www.navicat.com/en/company
 - > **Bonus Section: the Having Clause**
   * > You can filter the grouped data further by using the HAVING clause. The HAVING clause ***is similar to the WHERE clause, but operates on groups of rows rather than on individual rows***. To illustrate how the HAVING clause works, we can use it to limit results to those actors who've appeared in more than ten films:
 
+7 Common GROUP BY Errors https://learnsql.com/blog/error-with-group-by/
+
+GROUP BY without aggregate function https://stackoverflow.com/questions/20074562/group-by-without-aggregate-function
+
+Are the columns used in the order / group by clause(s) mandatory in the select clause? https://stackoverflow.com/questions/27976643/are-the-columns-used-in-the-order-group-by-clauses-mandatory-in-the-select-c
+
 # Join
 
 【[:star:][`*`]】 What is the difference between "INNER JOIN" and "OUTER JOIN"? https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
