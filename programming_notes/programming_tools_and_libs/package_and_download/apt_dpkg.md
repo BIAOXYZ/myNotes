@@ -65,6 +65,23 @@ apt-key adv                 - 设置key的高级配置, Pass advanced options to
 # apt换源/增加源
 
 How To Add Apt Repository In Ubuntu https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/
+- > An APT repository is a ***network server*** or a ***local directory*** containing ***`deb` packages*** and ***metadata files*** that are readable by the APT tools.
+- > In this tutorial, we will show you two ways to add ***apt repository*** on Ubuntu and Debian systems. The first method is by using the `add-apt-repository` command and the second one is to manually add the repository using a text editor.
+- > **Apt Sources**
+  * > On Ubuntu and all other Debian based distributions, the `apt` software repositories are defined in the `/etc/apt/sources.list` file or in separate files under the `/etc/apt/sources.list.d/` directory.
+  * > The names of the repository files inside the `/etc/apt/sources.list.d/` directory must end with `.list`.
+  * > The general syntax of the `/etc/apt/sources.list` file takes the following format:
+    ```console
+    deb http://repo.tld/ubuntu distro component...
+    ```
+    + > The first entry in the line defines the type of the archive. ***The archive type can be either `deb` or `deb-src`***. `Deb` implies that the repository contains `.deb` packages while `deb-src` implies source packages.
+    + > The second entry is the repository URL.
+    + > The third entry specifies the distribution code name, such as beaver, xenial and so on.
+    + > The last entries are the repository components or categories. ***The default Ubuntu repositories are split into four components - `main`, `restricted`, `universe` and `multiverse`***. Generally, third-party repositories have only one category.
+  * > The format for the files under the `/etc/apt/sources.list.d/` directory is the same as for the regular `sources.list` file.
+  * > Most repositories are providing a public key to authenticate downloaded packages which need to be downloaded and imported.
+- > **Installing `add-apt-repository` (`add-apt-repository` command not found)**
+- > **Adding Repositories with `add-apt-repository`**
 
 Ubuntu20.04软件源更换 - 舟公的文章 - 知乎 https://zhuanlan.zhihu.com/p/142014944
 
@@ -81,6 +98,32 @@ Ubuntu下deb包的安装方法 https://blog.csdn.net/kevinhg/article/details/593
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 安装本地包 or 离线安装
+
+20 apt Command to Know as Sysadmin to Manage Ubuntu or Debian Packages https://geekflare.com/apt-command-examples/
+- > **6 Install Specific Version**
+  ```sh
+  sudo apt install [package-name]=[version]
+  ```
+  > Example:
+  ```sh
+  sudo apt install unzip=6.0-25ubuntu1
+  ```
+- > **15 Check Package Dependencies**
+  ```sh
+  apt depends [package-name]
+  ```
+- > **17 Download a Package**
+  ```sh
+  apt download [package-name]
+  ```
+  > Example:
+  ```sh
+  apt download unzip
+  ```
+- > **19 Edit Sources**
+  ```sh
+  sudo apt edit-sources
+  ```
 
 How to install a deb file, by dpkg -i or by apt? https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt
 

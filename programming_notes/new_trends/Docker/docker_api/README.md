@@ -31,3 +31,52 @@ Docker 系列（八）：Docker API使用 https://www.cnblogs.com/-wenli/p/13621
     ```
 
 Docker Remote API 如何使用？ - 知乎 https://www.zhihu.com/question/24852884
+
+# 个人实战
+
+```sh
+# 开始时只能用 socket 时。
+$ curl --unix-socket /var/run/docker.sock http://localhost/v1.38/containers/json | python -mjson.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   783    0   783    0     0  71181      0 --:--:-- --:--:-- --:--:-- 78300
+[
+    {
+        "Id": "409d5c05d57586787c89824df1c3d62d0e122371c8d4435c7d89b37b7f0b0071",
+        "Names": [
+            "/mac11"
+        ],
+        "Image": "buildimage:v1",
+        "ImageID": "sha256:2befe0524250680522ccbd4d77d87fb1ad62e6bc5025827bf2e2c7b163b269be",
+        "Command": "bash",
+        "Created": 1649058183,
+        "Ports": [],
+        "Labels": {},
+        "State": "running",
+        "Status": "Up 2 days",
+        "HostConfig": {
+            "NetworkMode": "default"
+        },
+        "NetworkSettings": {
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "b9155aac42183b893c0ba7a0297811af90611ba82d14380d2fe4f2e5d987bace",
+                    "EndpointID": "5f42a9676c1821debaea1bcc2aab76a9dcbfb2d78402b4c8efa4fac7ad5946d8",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        },
+        "Mounts": []
+    }
+]
+```
