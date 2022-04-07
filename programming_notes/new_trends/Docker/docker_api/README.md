@@ -39,21 +39,21 @@ Docker Remote API 如何使用？ - 知乎 https://www.zhihu.com/question/248528
 $ curl --unix-socket /var/run/docker.sock http://localhost/v1.38/containers/json | python -mjson.tool
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   783    0   783    0     0  71181      0 --:--:-- --:--:-- --:--:-- 78300
+100   786  100   786    0     0   451k      0 --:--:-- --:--:-- --:--:--  767k
 [
     {
-        "Id": "409d5c05d57586787c89824df1c3d62d0e122371c8d4435c7d89b37b7f0b0071",
+        "Id": "650fa0e1fd4b55d827a66c1265515a89920e88706098dde9fb05675a0b617155",
         "Names": [
-            "/mac11"
+            "/pgdebug"
         ],
-        "Image": "buildimage:v1",
-        "ImageID": "sha256:2befe0524250680522ccbd4d77d87fb1ad62e6bc5025827bf2e2c7b163b269be",
+        "Image": "ubuntu:16.04",
+        "ImageID": "sha256:b6f50765242581c887ff1acc2511fa2d885c52d8fb3ac8c4bba131fd86567f2e",
         "Command": "bash",
-        "Created": 1649058183,
+        "Created": 1638413038,
         "Ports": [],
         "Labels": {},
         "State": "running",
-        "Status": "Up 2 days",
+        "Status": "Up 4 months",
         "HostConfig": {
             "NetworkMode": "default"
         },
@@ -63,8 +63,8 @@ $ curl --unix-socket /var/run/docker.sock http://localhost/v1.38/containers/json
                     "IPAMConfig": null,
                     "Links": null,
                     "Aliases": null,
-                    "NetworkID": "b9155aac42183b893c0ba7a0297811af90611ba82d14380d2fe4f2e5d987bace",
-                    "EndpointID": "5f42a9676c1821debaea1bcc2aab76a9dcbfb2d78402b4c8efa4fac7ad5946d8",
+                    "NetworkID": "a7fd9a9f30a5e057254fdcdc854dae7677e6200605a67b7c2b26711777e61171",
+                    "EndpointID": "9da7627f0fa80be10abbd7c1eaf8e7d92f02f821d7465ec031e5b320b93d7b87",
                     "Gateway": "172.17.0.1",
                     "IPAddress": "172.17.0.2",
                     "IPPrefixLen": 16,
@@ -79,4 +79,16 @@ $ curl --unix-socket /var/run/docker.sock http://localhost/v1.38/containers/json
         "Mounts": []
     }
 ]
+$
+
+# 文件目录因不同系统之类的各不相同， Debian 9 是在： /lib/systemd/system/docker.service
+# 原来那一行的内容是： ExecStart=/usr/bin/dockerd -H fd://
+# 我们改为： ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:9099
+$ vi /lib/systemd/system/docker.service
+$ systemctl daemon-reload
+$ systemctl restart docker
+
+$ curl -X GET http://127.0.0.1:9099/containers/json
+[{"Id":"650fa0e1fd4b55d827a66c1265515a89920e88706098dde9fb05675a0b617155","Names":["/pgdebug"],"Image":"ubuntu:16.04","ImageID":"sha256:b6f50765242581c887ff1acc2511fa2d885c52d8fb3ac8c4bba131fd86567f2e","Command":"bash","Created":1638413038,"Ports":[],"Labels":{},"State":"running","Status":"Up 4 months","HostConfig":{"NetworkMode":"default"},"NetworkSettings":{"Networks":{"bridge":{"IPAMConfig":null,"Links":null,"Aliases":null,"NetworkID":"a7fd9a9f30a5e057254fdcdc854dae7677e6200605a67b7c2b26711777e61171","EndpointID":"9da7627f0fa80be10abbd7c1eaf8e7d92f02f821d7465ec031e5b320b93d7b87","Gateway":"172.17.0.1","IPAddress":"172.17.0.2","IPPrefixLen":16,"IPv6Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"MacAddress":"02:42:ac:11:00:02","DriverOpts":null}}},"Mounts":[]}]
+$
 ```
