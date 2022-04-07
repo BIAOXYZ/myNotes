@@ -18,6 +18,15 @@ SQL中GROUP BY用法示例 https://www.jianshu.com/p/8b135d373df1
 
 Using group by on multiple columns https://stackoverflow.com/questions/2421388/using-group-by-on-multiple-columns
 
+Using Group By and Order By in the Same Query https://www.navicat.com/en/company/aboutus/blog/1708-using-group-by-and-order-by-in-the-same-query
+- > **Points to Keep in Mind**
+  * > When combining the Group By and Order By clauses, it is important to bear in mind that, in terms of placement within a SELECT statement:
+    + > The GROUP BY clause is placed after the WHERE clause.
+    + > The GROUP BY clause is placed before the ORDER BY clause.
+  * > ***GROUP BY goes before the ORDER BY*** statement because the latter operates on the final result of the query.
+- > **Bonus Section: the Having Clause**
+  * > You can filter the grouped data further by using the HAVING clause. The HAVING clause ***is similar to the WHERE clause, but operates on groups of rows rather than on individual rows***. To illustrate how the HAVING clause works, we can use it to limit results to those actors who've appeared in more than ten films:
+
 # Join
 
 【[:star:][`*`]】 What is the difference between "INNER JOIN" and "OUTER JOIN"? https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join

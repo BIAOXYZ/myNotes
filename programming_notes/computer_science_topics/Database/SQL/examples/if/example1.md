@@ -22,7 +22,7 @@ FROM left_right
 WHERE isNotNull(left) AND isNotNull(right);
 ```
 
-PS：又发现了 ClickHouse 和 PG 不一样的地方：**表名是区分大小写的**。。。
+【[:star:][`*`]】 PS：又发现了 ClickHouse 和 PG 不一样的地方：**CK的表名是大小写敏感的**。。。而 PG 的表名是不区分大小写的（比如先建个表 `tt`，再去建表 `TT` 时就会提示 `ERROR: relation "tt" already exists`）。
 ```console
 f79c4f8c4201 :) select * from left_right;
 
