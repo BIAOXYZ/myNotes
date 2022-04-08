@@ -398,6 +398,15 @@ What is the best way to concatenate two vectors? https://ow.com/questions/317724
   * > Depends on whether you really need to physically concatenate the two vectors or you want to give the appearance of concatenation of the sake of iteration. The `boost::join` function ( http://www.boost.org/doc/libs/1_43_0/libs/range/doc/html/range/reference/utilities/join.html ) will give you this.
   * > Note `boost::join` does not copy the two vectors into a new container but generates a pair of iterators (range) that cover the span of both containers. There will be some performance overhead but maybe less that copying all the data to a new container first.
 
+C++ extend a vector with another vector https://stackoverflow.com/questions/313432/c-extend-a-vector-with-another-vector
+- https://stackoverflow.com/questions/313432/c-extend-a-vector-with-another-vector/313444#313444
+  * > From http://www.cplusplus.com/reference/vector/vector/insert/
+    ```cpp
+    // reserve() is optional - just to improve performance
+    v.reserve(v.size() + distance(v_prime.begin(),v_prime.end()));
+    v.insert(v.end(),v_prime.begin(),v_prime.end());
+    ```
+
 **LeetCode相关题目**：
 - `1447. 最简分数` https://leetcode-cn.com/problems/simplified-fractions/
   * https://leetcode-cn.com/submissions/detail/266460472/
