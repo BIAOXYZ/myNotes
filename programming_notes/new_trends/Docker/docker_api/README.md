@@ -10,6 +10,12 @@ Examples using the Docker Engine SDKs and Docker API https://docs.docker.com/eng
   ```
   >> 【[:star:][`*`]】 //notes：如果不修改 docker daemon 的配置的话，是不能用 http 方式的 restful api 的。只能用这种 socket 方式的。——但是其实本地试试也够用了。
 
+## Python API
+
+Docker SDK for Python https://github.com/docker/docker-py/
+
+Client API https://docker-py.readthedocs.io/en/1.2.1/api/
+
 # 其他
 
 docker api 基本介绍和使用 https://blog.csdn.net/whatday/article/details/108396655
@@ -32,10 +38,10 @@ Docker 系列（八）：Docker API使用 https://www.cnblogs.com/-wenli/p/13621
 
 Docker Remote API 如何使用？ - 知乎 https://www.zhihu.com/question/24852884
 
-# 个人实战
+# 个人实战1
 
 ```sh
-# 开始时只能用 socket 时。
+# 开始时默认的只能用 socket 方式，首先展示用这种方式进行查询的结果。
 $ curl --unix-socket /var/run/docker.sock http://localhost/v1.38/containers/json | python -mjson.tool
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -81,8 +87,16 @@ $ curl --unix-socket /var/run/docker.sock http://localhost/v1.38/containers/json
 ]
 $
 
-# 文件目录因不同系统之类的各不相同， Debian 9 是在： /lib/systemd/system/docker.service
-# 原来那一行的内容是： ExecStart=/usr/bin/dockerd -H fd://
+# 此时如果想用 http 方式的 restful api，就需要修改 docker daemon 的配置。否则，就是如下结果：
+$ curl -X GET http://127.0.0.1:9099/containers/json | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 9099: Connection refused
+Expecting value: line 1 column 1 (char 0)
+
+# 那么接下来就是修改 docker daemon 的配置。其配置文件因不同系统的原因各不相同，
+# Debian 9 是在： /lib/systemd/system/docker.service
+# 此外，原来那一行的内容是： ExecStart=/usr/bin/dockerd -H fd://
 # 我们改为： ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:9099
 $ vi /lib/systemd/system/docker.service
 $ systemctl daemon-reload
@@ -135,10 +149,10 @@ $ curl -X GET http://127.0.0.1:9099/containers/json | python -m json.tool
     }
 ]
 $
+```
+```sh
+#// !!!!!注意，下面的语句是在远端（一台 Mac）执行的，而不是在有 Docker Daemon 的 Linux 机器上直接执行的。
 
-
-
-#// !!!!!注意，下面的语句是在远端（一台 Mac）执行的，而不是在有 Docker Daemon 的 Linux 机器上直接执行了。
 # 此外，在个人笔记本（Mac）上的 Chrome 浏览器里用 PostWoman 之类的插件（Postman不知道为啥不能用了。。。），
 ## 去 GET 这个 api 也可以查出结果： http://{Linux_IP_Where_Docker_Daemon_Runs}:9099/containers/json
 ## 但是那样的话结果是在浏览器里显示，截图不好展示，于是就在 Mac 默认的终端里用 curl 来查，并展示结果了。
