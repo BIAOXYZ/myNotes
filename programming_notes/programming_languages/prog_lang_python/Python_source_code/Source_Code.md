@@ -10,3 +10,6 @@ Documentations of CPython internals -- Tutorial to contribute to the CPython pro
 - > 说一本我自己买了的：《 CPython Internals 》，基于 Python 3.9 的源码、底层分析。 https://realpython.com/products/cpython-internals-book/ <br> 然后楼上推荐的 Inside the Python virtual machine，免费
 - > 我看过一部分这个 repo 还不错。 https://github.com/zpoint/CPython-Internals <br> 另外: pythontutor 做过一个系列 但是是 2.7 的也挺好的。 https://www.youtube.com/playlist?list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S
   >> //notes：上面那个油管的B站搬运链接为：[《CPython internals: A ten-hour codewalk through the Python interpreter source code》](https://www.bilibili.com/video/BV1qs411V7US/)
+
+Python源码剖析 https://fasionchan.com/python-source/
+- list 源码解析：动态数组精讲 https://fasionchan.com/python-source/builting-object/list-src/ || https://mp.weixin.qq.com/s/b4SpLg_DTpl1ysxPW4GfmQ
