@@ -7,6 +7,7 @@
   * [x] **`本地(Mac)`** dbeaver + **`远端(Linux)容器里`** ClickHouse、PostgreSQL
 - docker（Docker Daemon）
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** 上的 Docker Daemon 开启 docker 的 http API（比如，通过编辑 `/lib/systemd/system/docker.service`）
+    + https://github.com/BIAOXYZ/myNotes/blob/5d78e957bf/programming_notes/new_trends/Docker/docker_api/README.md
     >> //notes：过去在 CRL 的时候对 Harbor（更准确说是远端 Harbor 的 API） 就这么搞过，不过当时更飘似乎，好像不止一台远程 Linux 上有 Harbor，此外还用到了 TigerVNC。
 - code-server
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** coder-server + 远端机器代码目录
@@ -22,4 +23,6 @@
   * TODO: **`本地(Mac)`** 浏览器 + **`远端(Linux)容器里`** spark
 - vscode
   * [x] **`本地(vscode)`** + **`远端(Linux)容器里`** + 代码目录（docker的 `-v` 挂载远端机器上的 or 直接复制一份在容器里的）
+    + https://github.com/BIAOXYZ/myNotes/blob/5d78e957bf/programming_notes/programming_tools_and_libs/ide/vsc/vsc_docker/README.md
+    + https://github.com/BIAOXYZ/myNotes/blob/5d78e957bf/programming_notes/new_trends/Docker/articles/article1.md
     >> //notes：至于那两种更基本的方式：本地vsc + 远程Linux、本地vsc + 本地容器，就更不用多说了。
