@@ -1,4 +1,10 @@
 
+如何把一段简单的代码变复杂？ https://www.v2ex.com/t/845726
+- > 好奇就去搜了一下，给你配段代码 <br> 他这个名字叫 Hello World Enterprise Edition ，很形象了 <br> https://gist.github.com/lolzballs/2152bc0f31ee0286b722
+- > 早上才在知乎看到，虽然很多年前已经看到过 
+- 个人补充：
+  * 如何把一段简单的代码变复杂？ - 知乎 https://www.zhihu.com/question/277243683
+
 练习两年半的同事写的代码 https://www.v2ex.com/t/825212
 
 问一个协程方面的问题 https://www.v2ex.com/t/821871
