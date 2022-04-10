@@ -46,9 +46,45 @@ sudo ln -s /usr/local/bin/snort /usr/sbin/snort
 snort -V
 ```
 
+# 视频
+
+创建带有Snort规则的检测系统 https://www.bilibili.com/video/BV1cA411G7t5
+
+开源入侵检测工具snort的简单实验 https://www.bilibili.com/video/BV1oS4y197Ud
+
+Snort 3 引擎Deep Dive https://www.bilibili.com/video/BV1Vb4y1W7Tj
+
+4.如何使用snort IDS和sgui https://www.bilibili.com/video/BV1bS4y1378z
+
+## Open_Source_IDS
+
+玩转Snort报警可视化 https://www.bilibili.com/video/BV1nh411b7yu
+
+玩转Snort前端—Snowl https://www.bilibili.com/video/BV1XT4y1C7wS
+
+用BASE工具管理四百万条Snort安全事件 https://www.bilibili.com/video/BV1AK4y1V7bK
+
 # 已阅
 
 【[:star:][`*`]】 Snort入侵检测系统简介 https://www.jianshu.com/p/113345bbf2f7
+
+# from CSDN
+
+https://blog.csdn.net/qq_43968080/category_9417149.html
+- Snort的使用一：安装、嗅探与记录 https://blog.csdn.net/qq_43968080/article/details/103376873
+- Snort的使用二：入侵检测与规则编写 https://blog.csdn.net/qq_43968080/article/details/103378952
+
+snort https://blog.csdn.net/gggyl111/category_10731440.html
+- Snort入门（一） https://blog.csdn.net/GGGYL111/article/details/112510623
+
+Snort Rules & Scapy——疯狂踩坑的第一次尝试 https://blog.csdn.net/wu_tongtong/article/details/123610153
+- snort2.9规则-学习笔记 https://blog.csdn.net/weixin_44813582/article/details/105918523
+
+snort：预处理器开发HelloWorld https://blog.csdn.net/weixin_43249758/article/details/105524164
+
+snort 日志 mysql_Snort日志输出插件详解 https://blog.csdn.net/weixin_42489917/article/details/114469840
+
+snort的安装、配置和使用 https://blog.csdn.net/qq_37865996/article/details/85088090
 
 # 其他
 
@@ -60,6 +96,7 @@ snort原理、搭建与应用 https://www.jianshu.com/p/44424498c51c
 
 开源IDS与IPS的搭建与使用: Snort - 可信研究院 https://www.istt.org.cn/NewsDetail/2045553.html
 
-https://blog.csdn.net/qq_43968080/category_9417149.html
-- Snort的使用一：安装、嗅探与记录 https://blog.csdn.net/qq_43968080/article/details/103376873
-- Snort的使用二：入侵检测与规则编写 https://blog.csdn.net/qq_43968080/article/details/103378952
+Linux下安装入侵检测系统—Snort https://www.lxlinux.net/6678.html
+- > snort使用 ***数据采集器(daq)*** 监听防火墙数据包队列，所以按照daq。需预装的程序有：flex、bison、libcap。
+
+使用Snort检测企业流量 https://green-m.me/2018/01/05/network-detection-with-snort-in-company/
