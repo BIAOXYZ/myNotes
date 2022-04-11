@@ -14,6 +14,7 @@ SQL参考 https://clickhouse.com/docs/zh/sql-reference/
 - 操作符 https://clickhouse.com/docs/zh/sql-reference/operators/
 - Window Functions https://clickhouse.com/docs/zh/sql-reference/window-functions/
 - JSON函数 https://clickhouse.com/docs/zh/sql-reference/functions/json-functions/
+- quantile https://clickhouse.com/docs/zh/sql-reference/aggregate-functions/reference/quantile/
 
 # Parser
 
