@@ -14,6 +14,8 @@ ssh 端口转发不需要额外装软件， 为啥还是这么多人选择 frp �
 
 花了点时间终于把 xrdp 跑起来了 https://www.v2ex.com/t/630325
 
+绷不住了，折腾了一晚上的 xrdp，竟然没有折腾成功 https://www.v2ex.com/t/846163
+
 ## 远程局域网
 
 请教一个访问内网的问题。 https://www.v2ex.com/t/716006
