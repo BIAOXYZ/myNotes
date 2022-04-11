@@ -7,6 +7,7 @@ Snort 3 is available! https://www.snort.org/
 
 Snort++ https://github.com/snort3/snort3
 - DOCUMENTATION https://github.com/snort3/snort3#documentation
+- Snort.conf examples https://www.snort.org/documents/snort-conf-examples
 
 # 安装
 
@@ -86,6 +87,10 @@ snort 日志 mysql_Snort日志输出插件详解 https://blog.csdn.net/weixin_42
 
 snort的安装、配置和使用 https://blog.csdn.net/qq_37865996/article/details/85088090
 
+# `snort.conf`
+
+Where is the location of snort.conf https://serverfault.com/questions/158438/where-is-the-location-of-snort-conf
+
 # 其他
 
 Snort安装使用中文手册 https://www.wangan.com/docs/snortnet
@@ -100,3 +105,7 @@ Linux下安装入侵检测系统—Snort https://www.lxlinux.net/6678.html
 - > snort使用 ***数据采集器(daq)*** 监听防火墙数据包队列，所以按照daq。需预装的程序有：flex、bison、libcap。
 
 使用Snort检测企业流量 https://green-m.me/2018/01/05/network-detection-with-snort-in-company/
+
+Snort: 5 Steps to Install and Configure Snort on Linux https://www.thegeekstuff.com/2010/08/snort-tutorial/
+
+Configure Snort IDS and Create Rules https://linuxhint.com/configure-snort-ids-create-rules/
