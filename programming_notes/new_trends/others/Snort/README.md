@@ -109,3 +109,10 @@ Linux下安装入侵检测系统—Snort https://www.lxlinux.net/6678.html
 Snort: 5 Steps to Install and Configure Snort on Linux https://www.thegeekstuff.com/2010/08/snort-tutorial/
 
 Configure Snort IDS and Create Rules https://linuxhint.com/configure-snort-ids-create-rules/
+
+# 问题处理
+
+Linux Snort ERROR: Can‘t start DAQ (-1) - SIOCGIFHWADDR: No such device! https://blog.csdn.net/xcyja/article/details/110503124
+
+Linux Snort ERROR: Active response: can‘t open ip! https://blog.csdn.net/xcyja/article/details/110498589
+- > 参考：https://stackoverflow.com/questions/34380208/snort-error-active-response-cant-open-ip
