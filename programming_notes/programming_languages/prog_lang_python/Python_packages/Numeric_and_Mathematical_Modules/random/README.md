@@ -23,6 +23,7 @@ Python choices()函数详解、random模块下的常用函数 https://blog.csdn.
 - 8.`random.shuffle(lst)`
 
 # LeetCode相关题目
+- `380. O(1) 时间插入、删除和获取随机元素` https://leetcode-cn.com/problems/insert-delete-getrandom-o1/
 - `381. O(1) 时间插入、删除和获取随机元素 - 允许重复` https://leetcode-cn.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
 - `382. 链表随机节点` https://leetcode-cn.com/problems/linked-list-random-node/
 - `384. 打乱数组` https://leetcode-cn.com/problems/shuffle-an-array/
