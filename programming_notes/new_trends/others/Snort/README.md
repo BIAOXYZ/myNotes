@@ -4,10 +4,16 @@
 Snort (software) https://en.wikipedia.org/wiki/Snort_(software) || Snort https://zh.wikipedia.org/wiki/Snort
 
 Snort 3 is available! https://www.snort.org/
+- Snort.conf examples https://www.snort.org/documents/snort-conf-examples
+- Resources https://www.snort.org/resources 【有一系列 Youtube 视频，既然是官方的视频，应该比较权威。但是主要是为了记录这里的 Docker 镜像】
+  * Snort 3
+    + Snort 3 - Installation and Config (with labs) https://www.youtube.com/watch?v=PYP0YH2PVuo
+    + Snort 3 - Rule Writing (with labs) https://www.youtube.com/watch?v=CystKHV2gnI
+    + Snort 3 - Logging (with labs) https://www.youtube.com/watch?v=x0YqJIV5RZk
+    + 【[:star:][`*`]】 Snort 3 Docker Container https://hub.docker.com/r/ciscotalos/snort3
 
 Snort++ https://github.com/snort3/snort3
 - DOCUMENTATION https://github.com/snort3/snort3#documentation
-- Snort.conf examples https://www.snort.org/documents/snort-conf-examples
 
 # 安装
 
@@ -68,6 +74,17 @@ Snort 3 引擎Deep Dive https://www.bilibili.com/video/BV1Vb4y1W7Tj
 # 已阅
 
 【[:star:][`*`]】 Snort入侵检测系统简介 https://www.jianshu.com/p/113345bbf2f7
+
+# from github
+
+Snorter -- Snort + Barnyard2 + Pulledpork → The easy way! https://github.com/joanbono/Snorter || https://joanbono.github.io/Snorter/
+
+# from zhihu
+
+Snort应用 https://www.zhihu.com/column/c_1301896265999671296
+- 通过Docker安装Snort 3 - 李晨光的文章 - 知乎 https://zhuanlan.zhihu.com/p/267313598
+
+Snort在CentOS操作系统上搭建 - Jy Wang的文章 - 知乎 https://zhuanlan.zhihu.com/p/32315542
 
 # from CSDN
 
