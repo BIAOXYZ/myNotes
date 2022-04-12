@@ -35,6 +35,8 @@ Type Exercise in Rust https://github.com/skyzh/type-exercise-in-rust
 
 Nebari https://github.com/khonsulabs/nebari
 
+🕳 bore is a simple CLI tool for making tunnels to localhost https://github.com/ekzhang/bore
+
 # Rust相关新闻
 
 [评论]Go语言的成功也预示着Rust的成功 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/789181.htm

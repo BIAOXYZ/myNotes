@@ -331,6 +331,10 @@ http://blog.csdn.net/davidzwb/article/details/53172453
 
 #### 其他扩展/类扩展
 
+【from Hironobu Suzuki】
+- pg_plan_inspector https://github.com/s-hironobu/pg_plan_inspector
+- pg_median https://github.com/s-hironobu/pg_median
+
 Pigsty —— 图形化PostgreSQL环境 （Pigsty -- PostgreSQL in Graphic Style） https://github.com/Vonng/pigsty
 
 bg_mon: Background worker for monitoring PostgreSQL https://github.com/CyberDem0n/bg_mon
