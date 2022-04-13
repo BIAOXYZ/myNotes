@@ -1,4 +1,15 @@
 
+# 各种 snort 小猪～
+
+```console
+,,_  
+o"  )~
+''''
+____________________
+
+o")~
+```
+
 # 官方
 
 Snort (software) https://en.wikipedia.org/wiki/Snort_(software) || Snort https://zh.wikipedia.org/wiki/Snort
@@ -11,6 +22,13 @@ Snort 3 is available! https://www.snort.org/
     + Snort 3 - Rule Writing (with labs) https://www.youtube.com/watch?v=CystKHV2gnI
     + Snort 3 - Logging (with labs) https://www.youtube.com/watch?v=x0YqJIV5RZk
     + 【[:star:][`*`]】 Snort 3 Docker Container https://hub.docker.com/r/ciscotalos/snort3
+      ```sh
+      docker pull ciscotalos/snort3
+      # -h 是指定主机名。更直白说：不用 -h 就是@后面一个哈希值的前若干位 `snorty@7f9d2c4cfbd8`，用了 -h 就是 `snorty@snort3`。
+      docker run --name snort3 -h snort3 -u snorty -w /home/snorty -d -it ciscotalos/snort3 bash
+      docker exec -it snort3 bash
+      docker kill snort3
+      ```
 
 Snort++ https://github.com/snort3/snort3
 - DOCUMENTATION https://github.com/snort3/snort3#documentation
