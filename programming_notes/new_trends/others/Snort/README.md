@@ -21,6 +21,10 @@ Snort 3 is available! https://www.snort.org/
     + Snort 3 - Installation and Config (with labs) https://www.youtube.com/watch?v=PYP0YH2PVuo
       - 【应该就是视频里 lab2 用到的 `MS 1710` pcap文件】 Microsoft Security Bulletin MS17-010 - Critical https://docs.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010
     + Snort 3 - Rule Writing (with labs) https://www.youtube.com/watch?v=CystKHV2gnI
+      - 关于 `command injection`：
+        * Command Injection https://owasp.org/www-community/attacks/Command_Injection
+        * Command Injection https://www.imperva.com/learn/application-security/command-injection/
+        * Command Injection in Python: Examples and Prevention https://www.stackhawk.com/blog/command-injection-python/
     + Snort 3 - Logging (with labs) https://www.youtube.com/watch?v=x0YqJIV5RZk
     + 【[:star:][`*`]】 Snort 3 Docker Container https://hub.docker.com/r/ciscotalos/snort3
       ```sh
