@@ -223,6 +223,7 @@ ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
 ABY 3 and Applications https://github.com/ladnir/aby3
 - ***Paper***:
   * (CCS 2018) ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf || https://dl.acm.org/doi/10.1145/3243734.3243760
+    + > `[46] Fast and Secure Three-party Computation: The Garbled Circuit Approach` https://dl.acm.org/doi/10.1145/2810103.2813705 || https://eprint.iacr.org/2015/931.pdf
 
 （阅读笔记）ABY3: A Mixed Protocol Framework for Machine Learning https://blog.csdn.net/qq_42328228/article/details/109563447
 
@@ -235,6 +236,10 @@ ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation http
   * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
 
 ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
+
+安全多方计算基础——ABY框架（Arithmetic部分） https://blog.csdn.net/qq_37963864/article/details/120169331
+
+ABY开发指南(三) - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/495374615
 
 ## MPyC
 

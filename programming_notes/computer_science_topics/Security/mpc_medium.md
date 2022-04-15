@@ -1,6 +1,10 @@
 
 # from wechat
 
+## 中国密码学会
+
+中国密码学会将举办“密码大讲堂”系列公益讲座 https://mp.weixin.qq.com/s/vWtNk6jn4ZV7rnwlnUfMzA
+
 ## 隐私计算联盟（注：不是机密计算）
 
 官宣丨中国信通院公布第五批可信隐私计算评测结果，46 款产品通过评测 https://mp.weixin.qq.com/s/syrO1F2Vsc4gwjznxSEBCg
@@ -49,7 +53,7 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ### 2020.03
 
-安全多方计算学习路线 https://mp.weixin.qq.com/s/o9RGW8KHnK5g1oTDge2Biw
+安全多方计算学习路线 https://mp.weixin.qq.com/s/o9RGW8KHnK5g1oTDge2Biw || 安全多方计算学习路线 - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/351492646
 
 隐私计算企业列表-国内篇 https://mp.weixin.qq.com/s/jyeNSvUPdiYbekXgiOjNlw
 
