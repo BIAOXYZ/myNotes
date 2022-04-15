@@ -34,6 +34,8 @@ go-grpc-example，分为入门教程和进阶教程，包括请求超时设置�
 
 # gRPC其他
 
+关于 gRPC 的问题请教一下各位 https://www.v2ex.com/t/847144
+
 gRPC 跑分分享(2022 03 15 bench results) https://www.v2ex.com/t/844350
 ```console
 直接贴来源： https://github.com/LesnyRumcajs/grpc_bench/wiki/2022-03-15-bench-results

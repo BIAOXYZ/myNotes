@@ -103,3 +103,17 @@ Python 为什么不支持 switch 语句？ https://www.v2ex.com/t/713768
 # gzdaijie
 
 欢迎入坑我的新项目： Go 语言高性能编程 https://www.v2ex.com/t/735027
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# investguider
+
+2022 年 Redis 最新面试题 https://www.v2ex.com/t/847076
+```console
+hello 大家好，最近整理了一份在线版的 Redis 的面试题(含答案), 地址: https://manbucoding.com/travel-coding/redis/%E5%89%8D%E8%A8%80.html
+```
+
+2022 年 MySQL 最新面试题 https://www.v2ex.com/t/843791
+```console
+hello 大家好，最近整理了一份在线版的 MySQL 的面试题(含答案), 地址: https://easyhappy.github.io/travel-coding/mysql/%E5%89%8D%E8%A8%80.html
+```

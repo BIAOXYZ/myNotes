@@ -1,9 +1,4 @@
 
-2022 年 MySQL 最新面试题 https://www.v2ex.com/t/843791
-```console
-hello 大家好，最近整理了一份在线版的 MySQL 的面试题(含答案), 地址: https://easyhappy.github.io/travel-coding/mysql/%E5%89%8D%E8%A8%80.html
-```
-
 MySQL 只读操作一般需要开启事务吗？ https://www.v2ex.com/t/838964
 ```console
 我之前一般都是开事务的，但是后来发现其实大多数情况下，业务需求并不需要保证 Repetable Read 。
