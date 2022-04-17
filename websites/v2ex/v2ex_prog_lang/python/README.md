@@ -1,4 +1,6 @@
 
+为什么 Python 用 vscode debug， step into 会跳转到意想之外的地方？ https://www.v2ex.com/t/847478
+
 安装了 python3.10，满吃惊的 https://www.v2ex.com/t/843931
 ```console
 居家无聊升级了 python3.10，跑了下之前 pandas ，numpy 处理数据的脚本，纯计算，没有数据库网络操作

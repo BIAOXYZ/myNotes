@@ -1,4 +1,12 @@
 
+可运行的线上 Lambda 演算 https://www.v2ex.com/t/847425
+```console
+https://readonly.link/articles/cicada-lang/lambda/-/docs/tests/nat-church.md
+项目地址：https://github.com/cicada-lang/lambda
+```
+- > 在国外的大学学过，你要是面试问 Lambda Calculas 。哈哈哈哈哈哈哈哈
+- > Scheme 是世界上最好的编程语言
+
 Python 版魔法练习 https://www.v2ex.com/t/841011
 ```console
 [十分钟魔法练习](https://github.com/niltok/magic-in-ten-mins)——一个讨论 PL 理论知识的简单科普项目。
