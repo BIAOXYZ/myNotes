@@ -38,6 +38,9 @@ Snort 3 is available! https://www.snort.org/
 Snort++ https://github.com/snort3/snort3
 - DOCUMENTATION https://github.com/snort3/snort3#documentation
 
+SNORT Users Manual 2.9.16 http://manual-snort-org.s3-website-us-east-1.amazonaws.com/snort_manual.html 【这个虽然有点过时了，但是好处是可以在线打开直接看，官方那些还得下载下来本地打开才能看】
+- `3.Writing Snort Rules` http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node27.html
+
 # 安装
 
 How to Install Snort on Ubuntu 20.04 https://linoxide.com/install-snort-on-ubuntu/ + Ubuntu 20.04 Playground https://www.katacoda.com/courses/ubuntu/playground2004
@@ -156,3 +159,21 @@ Linux Snort ERROR: Can‘t start DAQ (-1) - SIOCGIFHWADDR: No such device! https
 
 Linux Snort ERROR: Active response: can‘t open ip! https://blog.csdn.net/xcyja/article/details/110498589
 - > 参考：https://stackoverflow.com/questions/34380208/snort-error-active-response-cant-open-ip
+
+## drop 或者 reject 后提示成功，但是实际好像还是响应了？
+
+snort ips rule - reject work but drop and sdrop dont work https://stackoverflow.com/questions/22126452/snort-ips-rule-reject-work-but-drop-and-sdrop-dont-work
+
+Snort not showing blocked/dropped packets https://stackoverflow.com/questions/21597318/snort-not-showing-blocked-dropped-packets
+```console
+I'm trying to detect ping flood attacks with Snort. I have included the rule in the Snort's ddos.rule file.
+    (drop icmp any any -> any any (itype:8; threshold, track by_src, count 20, seconds; msg:"Ping flood attack detected"; sid:100121))
+I'm attacking using the command
+    hping3 -1 --fast
+```
+>> //notes：主要就是从这个的提问描述里发现应该可以用 `hping3` 来模拟 DDOS 攻击，简单查了下应该就是可以的：
+>>> hping3 使用详解 https://blog.csdn.net/freeking101/article/details/72582964
+
+Snort Website Block Rule https://stackoverflow.com/questions/40401313/snort-website-block-rule
+
+Different types of options for blocking Packet Using Snort https://stackoverflow.com/questions/38562327/different-types-of-options-for-blocking-packet-using-snort
