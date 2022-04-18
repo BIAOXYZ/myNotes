@@ -20,3 +20,5 @@ Snort 3 引擎Deep Dive https://www.bilibili.com/video/BV1Vb4y1W7Tj
 # Youtube
 
 Network Intrusion Detection Systems (SNORT) https://www.youtube.com/watch?v=iBsGSsbDMyw
+
+Using Snort as an Intrusion Prevention System https://www.youtube.com/watch?v=41HLTF-8omU
