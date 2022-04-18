@@ -41,62 +41,6 @@ Snort++ https://github.com/snort3/snort3
 SNORT Users Manual 2.9.16 http://manual-snort-org.s3-website-us-east-1.amazonaws.com/snort_manual.html 【这个虽然有点过时了，但是好处是可以在线打开直接看，官方那些还得下载下来本地打开才能看】
 - `3.Writing Snort Rules` http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node27.html
 
-# 安装
-
-How to Install Snort on Ubuntu 20.04 https://linoxide.com/install-snort-on-ubuntu/ + Ubuntu 20.04 Playground https://www.katacoda.com/courses/ubuntu/playground2004
-```sh
-# 个人实战版，有些语句和原文里不太一样
-
-sudo apt update
-sudo apt install -y build-essential libpcap-dev libpcre3-dev libnet1-dev zlib1g-dev luajit hwloc libdnet-dev libdumbnet-dev bison flex liblzma-dev openssl libssl-dev pkg-config libhwloc-dev cmake cpputest libsqlite3-dev uuid-dev libcmocka-dev libnetfilter-queue-dev libmnl-dev autotools-dev libluajit-5.1-dev libunwind-dev
-mkdir snort-source-files
-cd snort-source-files/
-
-git clone https://github.com/snort3/libdaq.git
-cd libdaq
-./bootstrap
-./configure
-make
-make install
-
-cd ../
-wget https://github.com/gperftools/gperftools/releases/download/gperftools-2.9/gperftools-2.9.0.tar.gz
-tar xzf gperftools-2.9.0.tar.gz 
-cd gperftools-2.9.0/
-./configure
-make 
-make install
-
-cd ../
-git clone https://github.com/snortadmin/snort3.git
-cd snort3/
-./configure_cmake.sh --prefix=/usr/local --enable-tcmalloc
-cd build
-make
-make install
-sudo ldconfig
-sudo ln -s /usr/local/bin/snort /usr/sbin/snort
-snort -V
-```
-
-# 视频
-
-创建带有Snort规则的检测系统 https://www.bilibili.com/video/BV1cA411G7t5
-
-开源入侵检测工具snort的简单实验 https://www.bilibili.com/video/BV1oS4y197Ud
-
-Snort 3 引擎Deep Dive https://www.bilibili.com/video/BV1Vb4y1W7Tj
-
-4.如何使用snort IDS和sgui https://www.bilibili.com/video/BV1bS4y1378z
-
-## Open_Source_IDS
-
-玩转Snort报警可视化 https://www.bilibili.com/video/BV1nh411b7yu
-
-玩转Snort前端—Snowl https://www.bilibili.com/video/BV1XT4y1C7wS
-
-用BASE工具管理四百万条Snort安全事件 https://www.bilibili.com/video/BV1AK4y1V7bK
-
 # 已阅
 
 【[:star:][`*`]】 Snort入侵检测系统简介 https://www.jianshu.com/p/113345bbf2f7
@@ -177,3 +121,11 @@ I'm attacking using the command
 Snort Website Block Rule https://stackoverflow.com/questions/40401313/snort-website-block-rule
 
 Different types of options for blocking Packet Using Snort https://stackoverflow.com/questions/38562327/different-types-of-options-for-blocking-packet-using-snort
+
+# from stackoverflow
+
+https://stackoverflow.com/tags/snort/hot?filter=all
+
+Snort Not Dropping ICMP Packets Even After Using Drop/Reject And Packet Loss Is Not 100% https://stackoverflow.com/questions/70374384/snort-not-dropping-icmp-packets-even-after-using-drop-reject-and-packet-loss-is
+
+Snort Rule to prevent malicious file from downloading https://stackoverflow.com/questions/68252357/snort-rule-to-prevent-malicious-file-from-downloading
