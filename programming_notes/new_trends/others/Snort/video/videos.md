@@ -22,3 +22,7 @@ Snort 3 引擎Deep Dive https://www.bilibili.com/video/BV1Vb4y1W7Tj
 Network Intrusion Detection Systems (SNORT) https://www.youtube.com/watch?v=iBsGSsbDMyw
 
 Using Snort as an Intrusion Prevention System https://www.youtube.com/watch?v=41HLTF-8omU
+
+https://www.youtube.com/channel/UClGabYzRCvYW0ipJVfNE9rg
+- Snort as IPS with afpacket (Snort inline mode) on Ubuntu 16.04 LTS - Part3 https://www.youtube.com/watch?v=Za-xriVjrAM
+- Snort IPS with nfq (Snort inline mode) on Ubuntu 16.04 LTS - Part4 https://www.youtube.com/watch?v=kVNT-H2uX-k

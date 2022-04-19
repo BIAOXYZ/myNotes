@@ -45,6 +45,11 @@ SNORT Users Manual 2.9.16 http://manual-snort-org.s3-website-us-east-1.amazonaws
 
 【[:star:][`*`]】 Snort入侵检测系统简介 https://www.jianshu.com/p/113345bbf2f7
 
+# 较系统攻略
+
+Snort IPS With NFQ (nfqueue) Routing on Ubuntu http://sublimerobots.com/2017/06/snort-ips-with-nfq-routing-on-ubuntu/ 【这人的个人网站上有不少关于 snort 的文章：[Sublime Robots](http://sublimerobots.com/)】
+- Snort IPS Inline Mode on Ubuntu http://sublimerobots.com/2016/02/snort-ips-inline-mode-on-ubuntu/
+
 # from github
 
 Snorter -- Snort + Barnyard2 + Pulledpork → The easy way! https://github.com/joanbono/Snorter || https://joanbono.github.io/Snorter/
@@ -78,6 +83,15 @@ Snort Rules & Scapy——疯狂踩坑的第一次尝试 https://blog.csdn.net/wu
 snort https://blog.csdn.net/jo_say/category_804142.html
 - snort.conf分析（中文） https://blog.csdn.net/jo_say/article/details/6302367
 - snort 笔记2 ----- 规则编写 https://blog.csdn.net/jo_say/article/details/6335640
+
+snort https://blog.csdn.net/sinat_29315627/category_6421453.html
+- Snort - manual 笔记（二） https://blog.csdn.net/sinat_29315627/article/details/52571476
+  * > 有两种网卡特性会影响 Snort : `”Large Receive Offload” (LRO) and ”Generic Receive Offload” (GRO)`
+  * > Snort 建议关闭这两项 ,对于linux系统 执行以下命令行 :
+    ```sh
+    $ ethtool -K eth1 gro off
+    $ ethtool -K eth1 lro off
+    ```
 
 snort：预处理器开发HelloWorld https://blog.csdn.net/weixin_43249758/article/details/105524164
 

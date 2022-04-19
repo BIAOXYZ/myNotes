@@ -36,3 +36,9 @@ sudo ldconfig
 sudo ln -s /usr/local/bin/snort /usr/sbin/snort
 snort -V
 ```
+
+# 安装2
+
+Docker Compose based Snort containers for quick demos, BSA bachelor Smart Homes and Assistive Technologies 🐖 🦹‍♂️ https://github.com/bmedicke/snort-demo
+
+docker-snort-ids https://github.com/fabriziogaliano/docker-snort-ids
