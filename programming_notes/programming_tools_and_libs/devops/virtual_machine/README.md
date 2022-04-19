@@ -32,6 +32,8 @@ ESXi、PVE、unRaid对比 - 番薯的文章 - 知乎 https://zhuanlan.zhihu.com/
 
 ## from v2ex
 
+Linux 主力机+多开虚机的最佳实践是什么 https://www.v2ex.com/t/847541
+
 hype-v、esxi、pve 三大虚拟机系统对比，哪个性能最好？哪个占用最低？ https://www.v2ex.com/t/832659
 
 聊聊 esxi 和 pve 家用场景哪个更有优势 https://v2ex.com/t/826802
