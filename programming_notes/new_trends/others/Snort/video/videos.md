@@ -25,4 +25,4 @@ Using Snort as an Intrusion Prevention System https://www.youtube.com/watch?v=41
 
 https://www.youtube.com/channel/UClGabYzRCvYW0ipJVfNE9rg
 - Snort as IPS with afpacket (Snort inline mode) on Ubuntu 16.04 LTS - Part3 https://www.youtube.com/watch?v=Za-xriVjrAM
-- Snort IPS with nfq (Snort inline mode) on Ubuntu 16.04 LTS - Part4 https://www.youtube.com/watch?v=kVNT-H2uX-k
+- 【[:star:][`*`]】 Snort IPS with nfq (Snort inline mode) on Ubuntu 16.04 LTS - Part4 https://www.youtube.com/watch?v=kVNT-H2uX-k  【这个是确定可以成功地演示 snort 的 drop 规则的】

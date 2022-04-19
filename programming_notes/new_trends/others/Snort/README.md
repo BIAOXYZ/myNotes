@@ -35,11 +35,25 @@ Snort 3 is available! https://www.snort.org/
       docker kill snort3
       ```
 
+Community https://snort.org/community
+
 Snort++ https://github.com/snort3/snort3
 - DOCUMENTATION https://github.com/snort3/snort3#documentation
 
 SNORT Users Manual 2.9.16 http://manual-snort-org.s3-website-us-east-1.amazonaws.com/snort_manual.html 【这个虽然有点过时了，但是好处是可以在线打开直接看，官方那些还得下载下来本地打开才能看】
 - `3.Writing Snort Rules` http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node27.html
+
+## issues
+
+https://github.com/snort3/snort3/issues?q=drop
+- Snort 3 not dropping packets in IPS/inline mode #230 https://github.com/snort3/snort3/issues/230
+- Block specific URL instead of whole domain. #224 https://github.com/snort3/snort3/issues/224
+  ```console
+  I am using snort in NFQ DAQ inline mode in order to block the live traffic through iptables.
+  ```
+- snort 3.1.6.0 can't drop packet #193 https://github.com/snort3/snort3/issues/193
+
+Problem running snort as IPS with AFPacket #108 https://github.com/snort3/snort3/issues/108
 
 # 已阅
 
@@ -150,14 +164,6 @@ I'm attacking using the command
 Snort Website Block Rule https://stackoverflow.com/questions/40401313/snort-website-block-rule
 
 Different types of options for blocking Packet Using Snort https://stackoverflow.com/questions/38562327/different-types-of-options-for-blocking-packet-using-snort
-
-https://github.com/snort3/snort3/issues?q=drop
-- Snort 3 not dropping packets in IPS/inline mode #230 https://github.com/snort3/snort3/issues/230
-- Block specific URL instead of whole domain. #224 https://github.com/snort3/snort3/issues/224
-  ```console
-  I am using snort in NFQ DAQ inline mode in order to block the live traffic through iptables.
-  ```
-- snort 3.1.6.0 can't drop packet #193 https://github.com/snort3/snort3/issues/193
 
 tutorial Snort IPS Inline Mode https://www.youtube.com/watch?v=joE8WxBefDw
 - 回复里的：
