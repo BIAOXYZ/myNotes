@@ -1,4 +1,33 @@
 
+Python3 列表能被闭包函数使用，整数变量却不行呢？ https://www.v2ex.com/t/848218
+```
+问题：
+最近在使用 python3 刷题，发现一个比较奇怪的现象，想用闭包的特性去使用一个外层作用域的变量，
+如果这个变量是 list 的话，则 ok ，非 list 就会报错，我需要怎么做才可以闭包使用整数变量呢？
+
+代码如下：
+
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        pre = -sys.maxsize -1
+        o = []
+        def trace(root) -> bool:
+            if not root:
+                return True
+            if not trace(root.left): return False
+            o.append(root.val) # 为什么 list 可以被闭包进来
+            if pre >= root.val: # 但是整数变量却不行呢？
+                return False
+            else:
+                pre = root.val
+            if not trace(root.right):return False
+            return True
+        return trace(root)
+```
+- > python 里面赋值会自动变成局部变量，你的 else 里面有赋值操作：pre = root.val
+  >> 感谢，我把 pre = root.val 注释之后确实没报错了，有什么办法能在 闭包里 对外面的变量赋值呢？难道只能 read ？
+>> 【[:star:][`*`]】 //notes：LeetCode 刷题时早就知道这个现象了，不过今天才知道不用 `res[0]` 或者 `nonlocal` 也是可以勉强解决的。。。
+
 为什么 Python 用 vscode debug， step into 会跳转到意想之外的地方？ https://www.v2ex.com/t/847478
 
 安装了 python3.10，满吃惊的 https://www.v2ex.com/t/843931
