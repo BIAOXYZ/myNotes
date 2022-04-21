@@ -1,4 +1,9 @@
 
+# 官方
+
+Configure a Python interpreter https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html
+>> //notes：起因是某次调试发现 pycharm 的 debug 配置界面找不到 anaconda 的虚拟环境里的解释器。后来发现需要先去配置解释器，然后才能在 debug 的时候选择该解释器。
+
 # pycharm general
 
 ## pycharm in cloud-native
