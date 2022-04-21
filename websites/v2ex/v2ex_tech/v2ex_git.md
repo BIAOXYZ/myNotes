@@ -1,4 +1,8 @@
 
+github 个人主页的这个 team 怎么去掉? https://www.v2ex.com/t/848327
+- > 点这个区域右上角的 Contribution settings ，去掉 Activity overview 的勾选即可。
+- > 感谢楼主带领大家发现新大陆
+
 [2022-03] GitHub 加速终极教程 https://www.v2ex.com/t/843383
 
 Git clone 国内下载慢问题，大家是如何解决的 2022-03-28 https://www.v2ex.com/t/843313
