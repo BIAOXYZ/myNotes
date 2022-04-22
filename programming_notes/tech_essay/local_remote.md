@@ -9,6 +9,8 @@
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** 上的 Docker Daemon 开启 docker 的 http API（比如，通过编辑 `/lib/systemd/system/docker.service`）
     + https://github.com/BIAOXYZ/myNotes/blob/5d78e957bf/programming_notes/new_trends/Docker/docker_api/README.md
     >> //notes：过去在 CRL 的时候对 Harbor（更准确说是远端 Harbor 的 API） 就这么搞过，不过当时更飘似乎，好像不止一台远程 Linux 上有 Harbor，此外还用到了 TigerVNC。
+- Cockpit
+  * 半个TODO: 远端 Linux 安装成功了，但是可能是因为设置了 SSH 的 Kerberos 登陆策略导致虽然 Mac 上的 Firefox 浏览器里打开了登陆界面（Chrome安全策略什么的限制，甚至打不开界面，屁事多就），但是无法使用 `用户名密码` 的方式登陆。等于是试成了一半。。。但是既然在 Mac 端浏览器里都能打开登陆页面了，就已经说明可用了。
 - code-server
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** coder-server + 远端机器代码目录
     >> //notes：这种方式下，远端的 Python 代码，可以直接在本地浏览器里单步调试；我估计 C/C++ 或者其他语言的代码也是类似的，虽然并没有实际去调试。
