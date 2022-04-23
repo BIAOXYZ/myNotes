@@ -75,6 +75,10 @@ Python 程序如何定位到 cpu 占用过高的代码呢 https://www.v2ex.com/t
 - > https://github.com/benfred/py-spy
 - > dtrace / bpftrace
 
+# Memray
+
+Memray is a memory profiler for Python https://github.com/bloomberg/memray || https://bloomberg.github.io/memray/
+
 ## 其他
 
 Python 程序性能分析和火焰图 https://xie.infoq.cn/article/74483a0917668dc17324d0313

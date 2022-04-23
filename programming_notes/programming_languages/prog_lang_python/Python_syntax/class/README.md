@@ -209,3 +209,9 @@ An animal
 A bird
 An animal
 ```
+
+# 为什么有的类定义有 object，有的没有？
+
+Defining classes with and without (object) [duplicate] https://stackoverflow.com/questions/33170134/defining-classes-with-and-without-object
+
+What is the difference between old style and new style classes in Python? https://stackoverflow.com/questions/54867/what-is-the-difference-between-old-style-and-new-style-classes-in-python
