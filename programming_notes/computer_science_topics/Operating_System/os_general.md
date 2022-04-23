@@ -240,3 +240,31 @@ What is the difference between Terminal, Console, Shell, and Command Line? https
 04 | 基础篇：经常说的 CPU 上下文切换是什么意思？（下） https://shouliang.github.io/2018/11/28/Linux%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/04%20%7C%20%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%9A%E7%BB%8F%E5%B8%B8%E8%AF%B4%E7%9A%84%20CPU%20%E4%B8%8A%E4%B8%8B%E6%96%87%E5%88%87%E6%8D%A2%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F%EF%BC%88%E4%B8%8B%EF%BC%89/
 
 进程/线程上下文切换会用掉你多少CPU？ - 张彦飞的文章 - 知乎 https://zhuanlan.zhihu.com/p/79772089
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 操作系统中的算法
+
+## 哲学家就餐问题
+
+Dining philosophers problem https://en.wikipedia.org/wiki/Dining_philosophers_problem || 哲学家就餐问题 https://zh.wikipedia.org/wiki/%E5%93%B2%E5%AD%A6%E5%AE%B6%E5%B0%B1%E9%A4%90%E9%97%AE%E9%A2%98
+- > 哲学家就餐问题（英语：Dining philosophers problem）是在计算机科学中的一个经典问题，用来演示在并发计算中多线程同步（Synchronization）时产生的问题。
+- > 在1971年，著名的计算机科学家艾兹格·迪科斯彻提出了一个同步问题，即假设有五台计算机都试图访问五份共享的磁带驱动器。稍后，这个问题被托尼·霍尔重新表述为哲学家就餐问题。这个问题可以用来解释死锁和资源耗尽。
+
+哲学家就餐问题 https://blog.csdn.net/theLostLamb/article/details/80741319
+
+五个哲学家就餐问题 https://blog.csdn.net/low5252/article/details/104800671
+
+【操作系统】“哲学家进餐”问题 https://blog.csdn.net/qq_28602957/article/details/53538329
+
+## 银行家算法
+
+Banker's algorithm https://en.wikipedia.org/wiki/Banker%27s_algorithm || 银行家算法 https://zh.wikipedia.org/wiki/%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95
+
+操作系统——银行家算法（Banker's Algorithm） https://www.cnblogs.com/wkfvawl/p/11929508.html
+
+计算机操作系统_银行家算法 https://blog.csdn.net/qq_36260974/article/details/84404369
+
+银行家算法 https://blog.csdn.net/weixin_43886592/article/details/107582347
+
+银行家算法详解（C语言） https://blog.csdn.net/weixin_43362002/article/details/106153822

@@ -257,6 +257,10 @@ What do raw.githubusercontent.com URLs represent? https://stackoverflow.com/ques
 
 GitHub Actions 入门教程 http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html
 
+Github Action 精华指南 - 邵励治的文章 - 知乎 https://zhuanlan.zhihu.com/p/164744104
+- > **五、Action 是什么？**
+  * > 比如最常用的，check-out 代码到 Workflow 工作区： https://github.com/marketplace/actions/checkout
+
 ### Github相关第三方工具
 
 #### gitbook
