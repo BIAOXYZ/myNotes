@@ -76,6 +76,10 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 【from draveness】:
 - 浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
 
+深入浅出LevelDB https://mrcroxx.github.io/categories/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAleveldb/
+- 深入浅出LevelDB —— 01 Architecture https://mrcroxx.github.io/posts/code-reading/leveldb-made-simple/1-architecture/
+- 深入浅出LevelDB —— 10 Read & Write https://mrcroxx.github.io/posts/code-reading/leveldb-made-simple/10-read-write/
+
 # [RocksDB](https://rocksdb.org/)
 
 - https://rocksdb.org/
