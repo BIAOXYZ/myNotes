@@ -30,3 +30,7 @@ PostgreSQL 从文件时间戳获悉一些信息(如数据库创建时间) https:
   * > 1、access time，mount atime=off 的话，不记录atime
   * > 2、注意表在rewrite(例如truncate, 导致rewrite的alter)后，会产生新的filenode，所以即使access time不变，也不完全准确。
   * > 3、touch文件，会改变access time
+
+# 分区表
+
+实战 PostgreSQL 分区表 - PageThinker的文章 - 知乎 https://zhuanlan.zhihu.com/p/110927990
