@@ -14,6 +14,19 @@ Celery (software) https://en.wikipedia.org/wiki/Celery_(software)
 Distributed Task Queue (development branch) http://celeryproject.org
 > https://github.com/celery/celery
 
+不得不吐槽一下 Python 的任务队列，异步支持太差了 https://www.v2ex.com/t/849494
+- > 因为历史原因，celery 开发的时候没有 asyncio ，改成 asyncio 估计要推到重建，这样就变成了遥遥无期
+- > celery 是个传销软件，作者早就弃坑了。连个任务硬超时都没作好
+- > 这是 python 的问题还是 celery 的问题呢?
+- > celery 从来就没好感。。。。python 里有 3 大骗子营销软件 <br> 1 是 flask <br> 2 是 celery <br> 3 是 gunicorn <br> 其实好多实现都是玩具级别。当然别人是开源项目，没法指责作者什么，但是哪些写教程的把吹上天就不对了。
+  >> gunicorn 有什么问题吗，因为现在 fastapi 炒的火，fastapi 里的推荐部署方式都是 gunicorn
+  >>> fastapi 我也在用，比如它 http 日志如何规范搜集？ <br> https://github.com/encode/uvicorn/issues/527 <br> gunicorn 这货只要指定了 work ，就甩手啥都不管了。日志日志不管，被 SIGTERM 杀了也不管，感情 gunicorn 就管了个 fd ，管了个寂寞啊。
+  >>>> flask 有啥问题啊？
+  >>>>> 不是吧，我觉得 fastapi 比 flask 骗子营销多了……至少 flask 没吹过自己压根不存在的“高性能”。
+  >>>>>> flask 满世界吹自己 lightweight 啊。。其实一个 werkzeug 设计就比 django 复杂了。。（不对这句话负责。逃。。。。。。。。。。。。。
+- > celery 就是个玩具级别的项目，谁用谁被坑
+- > 自己用 redis 实现吧，celery 已经被我们抛弃了
+
 # Kafka
 
 一篇文章带你逆袭 Kafka https://mp.weixin.qq.com/s/j8J762sBLKuS4O0JgVsq6w
