@@ -22,7 +22,7 @@ must appear in the GROUP BY clause or be used in an aggregate function https://w
 ## 文章内容直接实战
 
 ```sql
-create table makerar (cname varchar(24), wmname	varchar(24), avg numeric);
+create table makerar (cname varchar(24), wmname varchar(24), avg numeric);
 
 /* 双引号形式貌似不行
 insert into makerar values ("canada", "zoro", 2.00);
@@ -146,4 +146,89 @@ ERROR:  column "makerar.avg" must appear in the GROUP BY clause or be used in an
 LINE 1: SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmnam...
                               ^
 postgres=#
+```
+
+## 用 mysql 试了试发现这作者说的也不对啊，mysql5.7 和 pg 的表现是一样的
+
+```sh
+docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -itd mysql:5.7
+docker exec -it mysql bash
+# 在容器里
+mysql -uroot -p123456
+```
+```sql
+mysql> create table makerar (cname varchar(24), wmname varchar(24), avg numeric);
+ERROR 1046 (3D000): No database selected
+mysql>
+mysql> use mysql;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql>
+mysql> create table makerar (cname varchar(24), wmname varchar(24), avg numeric);
+Query OK, 0 rows affected (0.04 sec)
+
+mysql>
+mysql> insert into makerar values ('canada', 'zoro', 2.00);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into makerar values ('spain', 'luffy', 1.00);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into makerar values ('spain', 'usopp', 5.00);
+Query OK, 1 row affected (0.02 sec)
+
+mysql>
+mysql> select * from makerar;
++--------+--------+------+
+| cname  | wmname | avg  |
++--------+--------+------+
+| canada | zoro   |    2 |
+| spain  | luffy  |    1 |
+| spain  | usopp  |    5 |
++--------+--------+------+
+3 rows in set (0.00 sec)
+
+mysql>
+mysql> SELECT cname, wmname, MAX(avg) FROM makerar GROUP BY cname;
+ERROR 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mysql.makerar.wmname' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+mysql>
+mysql> SELECT cname, wmname, MAX(avg) FROM makerar GROUP BY cname, wmname;
++--------+--------+----------+
+| cname  | wmname | MAX(avg) |
++--------+--------+----------+
+| canada | zoro   |        2 |
+| spain  | luffy  |        1 |
+| spain  | usopp  |        5 |
++--------+--------+----------+
+3 rows in set (0.00 sec)
+
+mysql>
+mysql> SELECT MAX(avg) FROM makerar;
++----------+
+| MAX(avg) |
++----------+
+|        5 |
++----------+
+1 row in set (0.00 sec)
+
+mysql>
+mysql> SELECT cname, MAX(avg) FROM makerar;
+ERROR 1140 (42000): In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'mysql.makerar.cname'; this is incompatible with sql_mode=only_full_group_by
+mysql>
+mysql> SELECT cname, wmname FROM makerar GROUP BY cname, wmname;
++--------+--------+
+| cname  | wmname |
++--------+--------+
+| canada | zoro   |
+| spain  | luffy  |
+| spain  | usopp  |
++--------+--------+
+3 rows in set (0.00 sec)
+
+mysql>
+mysql> SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmname;
+ERROR 1055 (42000): Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mysql.makerar.avg' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+mysql>
 ```
