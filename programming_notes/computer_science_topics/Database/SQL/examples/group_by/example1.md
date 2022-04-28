@@ -110,3 +110,40 @@ postgres-# LEFT JOIN makerar m ON t.cname = m.cname AND t.max = m.avg;
 
 postgres=#
 ```
+
+## 文章内容之外
+
+**对pg来说，如下两种情况都是可以的**：
+1. 只有聚合函数，没有group by。
+2. 只有group by，没有聚合函数。
+
+其实，更一般的情况是：**只要有“聚合”的情况（aggregate function 或者 group by）出现，那么任何 select 选中的列要么出现在聚合函数中，要么出现在group by中**。
+
+```sql
+postgres=# SELECT MAX(avg) FROM makerar;
+ max
+------
+ 5.00
+(1 row)
+
+postgres=#
+postgres=# SELECT cname, MAX(avg) FROM makerar;
+ERROR:  column "makerar.cname" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT cname, MAX(avg) FROM makerar;
+               ^
+postgres=#
+postgres=# SELECT cname, wmname FROM makerar GROUP BY cname, wmname;
+ cname  | wmname
+--------+--------
+ canada | zoro
+ spain  | luffy
+ spain  | usopp
+(3 rows)
+
+postgres=#
+postgres=# SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmname;
+ERROR:  column "makerar.avg" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmnam...
+                              ^
+postgres=#
+```
