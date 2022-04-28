@@ -4,6 +4,14 @@
 【轻评论】996的福报是在职场广开后宫？梦里什么都有，评《奋斗吧！系统工程师》 - 羽毛的文章 - 知乎 https://zhuanlan.zhihu.com/p/65319356
 > 霓虹的动漫是无所不能的，啥都能做成动漫。。。
 
+## 夏日重现
+
+夏日重现 https://zh.moegirl.org.cn/%E5%A4%8F%E6%97%A5%E9%87%8D%E7%8E%B0
+
+【漫画屋】时空轮回大结局！伏笔全收！完美落幕！夏日重现#14 https://www.bilibili.com/video/BV12o4y1f7Bq
+
+悬疑烧脑漫画翘楚，新时代的轮回系作品 ——《夏日重现》 https://www.bilibili.com/video/BV1A44y1G7Hx
+
 # 其他番剧推荐视频
 
 男主的后宫里竟没有一个正常人！！这番能让你直呼“卧槽”！ https://www.bilibili.com/video/BV1EM4y1T7PY

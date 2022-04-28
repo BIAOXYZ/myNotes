@@ -19,7 +19,7 @@ must appear in the GROUP BY clause or be used in an aggregate function https://w
   > 意思是 wmname 字段必须在 GROUP BY 中出现或者被用于聚合函数。
 - > 参考链接：https://stackoverflow.com/questions/19601948/must-appear-in-the-group-by-clause-or-be-used-in-an-aggregate-function
 
-## 文章内容直接实战
+## 1.1 文章内容直接实战
 
 ```sql
 create table makerar (cname varchar(24), wmname varchar(24), avg numeric);
@@ -111,7 +111,7 @@ postgres-# LEFT JOIN makerar m ON t.cname = m.cname AND t.max = m.avg;
 postgres=#
 ```
 
-## 文章内容之外
+## 1.2 文章内容之外
 
 **对pg来说，如下两种情况都是可以的**：
 1. 只有聚合函数，没有group by。
@@ -148,7 +148,7 @@ LINE 1: SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmnam...
 postgres=#
 ```
 
-## 用 mysql 试了试发现这作者说的也不对啊，mysql5.7 和 pg 的表现是一样的
+## 1.3 用 mysql 试了试发现这作者说的也不对啊，mysql5.7（但是后来 mysql8.0 也试了，一样的） 和 pg 的表现是一样的：只要有“聚合”出现，select 的列同样必须满足`在聚合函数内`或`在group by内`
 
 ```sh
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -itd mysql:5.7
@@ -230,5 +230,166 @@ mysql> SELECT cname, wmname FROM makerar GROUP BY cname, wmname;
 mysql>
 mysql> SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmname;
 ERROR 1055 (42000): Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mysql.makerar.avg' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+mysql>
+```
+
+# 2
+
+SQL中GROUP BY的用法 https://blog.csdn.net/liitdar/article/details/85272035
+- > **2.1 结合聚合函数**
+  * > 首先，不使用聚合函数，只使用 `GROUP BY`，查询结果如下：
+    ```sql
+    mysql> select camp,role_id,occupation,register_time from roles group by camp;
+    +----------+---------+------------+---------------------+
+    | camp     | role_id | occupation | register_time       |
+    +----------+---------+------------+---------------------+
+    | alliance |       1 | mage       | 2018-12-03 16:11:28 |
+    | horde    |       3 | rogue      | 2018-12-01 16:11:28 |
+    +----------+---------+------------+---------------------+
+    2 rows in set (0.00 sec)
+     
+    mysql>
+    ```
+    > 上述查询结果能够看到，***当不使用聚合函数时，`GROUP BY`的结果是分组内容中的第一组查询结果***。当然，在实际使用中，我们通常都需要**将聚合函数与 `GROUP BY` 用法结合使用，来实现某种目的**。
+  * > 例如，我们想查找“联盟和部落阵营中所有角色最早的注册时间”，则可以通过如下语句实现：
+    ```sql
+    mysql> select camp,MIN(register_time) as register_time from roles group by camp;
+    +----------+---------------------+
+    | camp     | register_time       |
+    +----------+---------------------+
+    | alliance | 2018-11-30 16:11:28 |
+    | horde    | 2018-12-01 16:11:28 |
+    +----------+---------------------+
+    2 rows in set (0.01 sec)
+     
+    mysql>
+    ```
+    > 上述查询结果表明，通过使用聚合函数“`MIN()`”，我们找到了每个阵营中最早的注册时间。
+- > **2.2 `HAVING`子句**
+  * > `HAVING` 子句可以筛选通过 `GROUP BY` 分组后的各组数据。承接上文内容，通过 `HAVING` 子句筛选出所有阵营中最早的注册时间，语句如下：
+    ```sql
+    mysql> select camp,MIN(register_time) as register_time from roles group by camp HAVING register_time > '2018-12-01 00:00:00';
+    +-------+---------------------+
+    | camp  | register_time       |
+    +-------+---------------------+
+    | horde | 2018-12-01 16:11:28 |
+    +-------+---------------------+
+    1 row in set (0.00 sec)
+     
+    mysql> 
+    ```
+  * > 注意：上述语句中 `HAVING` 的对象 register_time，实际上是前面聚合函数 `MIN(register_time)` 的结果集。而由于 `WHERE` 子句不能包含聚合函数，所以此处只能使用 `HAVING` 子句。如果使用 `WHERE` 子句替换 `HAVING` 子句，命令会报错，信息如下：
+    ```sql
+    mysql> select camp,MIN(register_time) as register_time from roles group by camp WHERE register_time > '2018-12-01 00:00:00';
+    ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE register_time > '2018-12-01 00:00:00'' at line 1
+    mysql>
+    ```
+  * > 【`HAVING` 与 `WHERE` 的区别】：
+    + > `WHERE` 子句的作用：***在对查询结果进行分组前***，把不符合 `WHERE` 条件的行去掉，即在分组之前过滤数据。另外，***`WHERE` 条件中不能包含聚组函数***。
+    + > `HAVING` 子句的作用：筛选满足条件的组，***即在分组后过滤数据***，条件中经常包含聚组函数，使用 `HAVING` 条件过滤出特定的组。
+
+## 2.1 文章内容直接实战
+
+```sh
+docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -itd mysql:8.0
+docker exec -it mysql bash
+# 如果用 mysql -h localhost -u root -p 的话需要交互式输入密码
+mysql -uroot -p123456
+```
+
+```sql
+create table roles (role_id int, occupation varchar(36), camp varchar(36), register_time timestamp);
+insert into roles values (1, 'mage', 'alliance', '2018-12-03 16:11:28');
+insert into roles values (2, 'paladin', 'alliance', '2018-11-30 16:11:28');
+insert into roles values (3, 'rogue', 'horde', '2018-12-01 16:11:28');
+insert into roles values (4, 'priest', 'alliance', '2018-12-02 16:11:28');
+insert into roles values (5, 'shaman', 'horde', NULL);
+insert into roles values (6, 'warrior', 'alliance', NULL);
+insert into roles values (7, 'warlock', 'horde', '2018-12-04 16:11:28');
+insert into roles values (8, 'hunter', 'horde', NULL);
+select * from roles;
+
+/* 这句在原文里是可以成功执行的（作者都列出来查询结果了），但是我用 mysql8.0 就不行。
+ * 所以应该是某个版本的 mysql 确实是可以（既不出现在aggr函数里，也不出现在groupby）的，
+ * 但是后来都改得比较正规了，也就是——只要有“聚合”出现，那么 select 的列要么在聚合函数里，要么在group by里。
+ */
+select camp,role_id,occupation,register_time from roles group by camp;
+
+select camp,MIN(register_time) as register_time from roles group by camp;
+
+/* 这两句主要是对比 having 和 where的区别，说明where的过滤里不能有聚合 */
+select camp,MIN(register_time) as register_time from roles group by camp HAVING register_time > '2018-12-01 00:00:00';
+select camp,MIN(register_time) as register_time from roles group by camp WHERE register_time > '2018-12-01 00:00:00';
+```
+
+```sql
+mysql> create table roles (role_id int, occupation varchar(36), camp varchar(36), register_time timestamp);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into roles values (1, 'mage', 'alliance', '2018-12-03 16:11:28');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into roles values (2, 'paladin', 'alliance', '2018-11-30 16:11:28');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into roles values (3, 'rogue', 'horde', '2018-12-01 16:11:28');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into roles values (4, 'priest', 'alliance', '2018-12-02 16:11:28');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into roles values (5, 'shaman', 'horde', NULL);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into roles values (6, 'warrior', 'alliance', NULL);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into roles values (7, 'warlock', 'horde', '2018-12-04 16:11:28');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into roles values (8, 'hunter', 'horde', NULL);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from roles;
++---------+------------+----------+---------------------+
+| role_id | occupation | camp     | register_time       |
++---------+------------+----------+---------------------+
+|       1 | mage       | alliance | 2018-12-03 16:11:28 |
+|       2 | paladin    | alliance | 2018-11-30 16:11:28 |
+|       3 | rogue      | horde    | 2018-12-01 16:11:28 |
+|       4 | priest     | alliance | 2018-12-02 16:11:28 |
+|       5 | shaman     | horde    | NULL                |
+|       6 | warrior    | alliance | NULL                |
+|       7 | warlock    | horde    | 2018-12-04 16:11:28 |
+|       8 | hunter     | horde    | NULL                |
++---------+------------+----------+---------------------+
+8 rows in set (0.00 sec)
+
+mysql> 
+mysql> select camp,role_id,occupation,register_time from roles group by camp;
+ERROR 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mysql.roles.role_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+mysql> 
+mysql> select camp,MIN(register_time) as register_time from roles group by camp;
++----------+---------------------+
+| camp     | register_time       |
++----------+---------------------+
+| alliance | 2018-11-30 16:11:28 |
+| horde    | 2018-12-01 16:11:28 |
++----------+---------------------+
+2 rows in set (0.00 sec)
+
+mysql> 
+mysql> select camp,MIN(register_time) as register_time from roles group by camp HAVING register_time > '2018-12-01 00:00:00';
++-------+---------------------+
+| camp  | register_time       |
++-------+---------------------+
+| horde | 2018-12-01 16:11:28 |
++-------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> 
+mysql> select camp,MIN(register_time) as register_time from roles group by camp WHERE register_time > '2018-12-01 00:00:00';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE register_time > '2018-12-01 00:00:00'' at line 1
+mysql> 
 mysql>
 ```
