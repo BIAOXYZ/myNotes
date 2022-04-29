@@ -25,13 +25,21 @@
 # 进化放置（Evolve）
 
 https://gitee.com/likexia/Evolve
-- https://likexia.gitee.io/evolve/
+- ~~https://likexia.gitee.io/evolve/~~  -->  https://g8hh.github.io/evolve/
   * 进化 - v1.2.7 https://likexia.gitee.io/evolve/wiki.html
 - https://shimo.im/sheets/tg6VPQgCKhrYW9QG
   * https://toscode.gitee.com/by22dgb/evolvescript/blob/master/evolve_automation.user.js
   * https://github.com/pengminxuan/new-tmvictor-chn/blob/main/main.user.js
 
 Git游戏 https://likexia.gitee.io/game/
+
+【通知】即将弃用xxx.gitee.io前缀的游戏地址 https://mp.weixin.qq.com/s/Zq1bpKkswM6yz7neHtqIbg
+- > 后续游戏地址大概会是这种地址的：
+  ```console
+  https://yx.g8hh.com/游戏名
+  https://g8hh.github.io/游戏名
+  https://g1tyx.github.io/游戏名
+  ```
 
 ## 攻略
 
