@@ -1,4 +1,7 @@
 
+Cog: Containers for machine learning https://github.com/replicate/cog
+- > Cog is an open-source tool that lets you package machine learning models in a standard, production-ready container.
+
 # Apache MADlib
 
 ## MADlib官网

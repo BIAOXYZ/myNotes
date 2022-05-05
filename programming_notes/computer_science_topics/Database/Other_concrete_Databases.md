@@ -18,6 +18,8 @@ Database of Databases
 
 万字总结Redis知识点 https://mp.weixin.qq.com/s/uIdJN67CCD5GUvCCBZIwpw
 
+redis7.0 中文注释 https://github.com/CN-annotation-team/redis7.0-chinese-annotated
+
 # [MongoDB](https://www.mongodb.com/)
 
 【from draveness】:
