@@ -1,4 +1,8 @@
 
+Devops Exercises -- Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions https://github.com/bregman-arie/devops-exercises
+- Python Exercises https://github.com/bregman-arie/python-exercises
+- Kubernetes Exercises https://github.com/bregman-arie/devops-exercises/blob/master/exercises/kubernetes/README.md
+
 # others
 
 Modernize your application deployment with Lift and Shift https://developers.redhat.com/blog/2018/10/18/modernize-your-application-deployment-with-lift-and-shift/
