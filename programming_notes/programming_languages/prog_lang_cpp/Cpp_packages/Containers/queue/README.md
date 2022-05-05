@@ -6,6 +6,14 @@
   * std::queue https://www.cplusplus.com/reference/queue/queue/
   * std::priority_queue https://www.cplusplus.com/reference/queue/priority_queue/
 
+std::queue https://www.cplusplus.com/reference/queue/queue/
+- **Member functions**
+  * std::queue::empty https://www.cplusplus.com/reference/queue/queue/empty/
+  * std::queue::size https://www.cplusplus.com/reference/queue/queue/size/
+  * std::queue::front https://www.cplusplus.com/reference/queue/queue/front/
+  * std::queue::push https://www.cplusplus.com/reference/queue/queue/push/
+  * std::queue::pop https://www.cplusplus.com/reference/queue/queue/pop/
+
 std::priority_queue https://www.cplusplus.com/reference/queue/priority_queue/
 - > **Priority queue**
   * > Priority queues are a type of ***container adaptors***, specifically designed such that ***its first element is always the greatest of the elements*** it contains, according to some strict weak ordering criterion.
@@ -30,6 +38,8 @@ std::priority_queue https://en.cppreference.com/w/cpp/container/priority_queue
 
 priority_queue Class https://docs.microsoft.com/en-us/cpp/standard-library/priority-queue-class
 
+queue 类 https://docs.microsoft.com/zh-cn/cpp/standard-library/queue-class
+
 # 其他
 
 c++优先队列(priority_queue)用法详解 https://blog.csdn.net/weixin_36888577/article/details/79937886
@@ -38,3 +48,4 @@ c++优先队列(priority_queue)用法详解 https://blog.csdn.net/weixin_3688857
 - `1609. 奇偶树` https://leetcode-cn.com/problems/even-odd-tree/
 - `373. 查找和最小的 K 对数字` https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/
 - `429. N 叉树的层序遍历` https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
+- `933. 最近的请求次数` https://leetcode-cn.com/problems/number-of-recent-calls/
