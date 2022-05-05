@@ -65,17 +65,11 @@ https://www.juzimi.com/ju/1741097
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# 电影
-
-猫眼专业版 https://piaofang.maoyan.com/dashboard
+# 纪录片
 
 三和人才市场 中国日结1500日元的年轻人们 https://movie.douban.com/subject/30219684/
 - [NHK][纪录片][中文字幕] 三和人才市场・中国日结百元的青年们 https://www.youtube.com/watch?v=YcidornQ7rU
 - 三和大神 https://zh.wikipedia.org/wiki/%E4%B8%89%E5%92%8C%E5%A4%A7%E7%A5%9E
-
-邵氏经典影片导视 https://www.bilibili.com/blackboard/topic/activity-B_W7upKRM.html
-
-天水围的日与夜 https://baike.baidu.com/item/%E5%A4%A9%E6%B0%B4%E5%9B%B4%E7%9A%84%E6%97%A5%E4%B8%8E%E5%A4%9C
 
 靠租赁家人活下去，日本人的晚年太惨了 https://www.huxiu.com/article/312870.html
 - > 《飞越老人院》
@@ -90,6 +84,33 @@ https://www.juzimi.com/ju/1741097
 - 《美国工厂》里曹德旺为何坚决拒绝建立工会？ https://www.huxiu.com/article/314913.html
 - “老钱”曹德旺 https://www.huxiu.com/article/315398.html
 - 《美国工厂》：一个非典型的制造业故事 https://www.huxiu.com/article/314974.html
+
+人在三和 https://movie.douban.com/subject/30337189/
+- 紀錄片：人在三和 https://www.youtube.com/watch?v=u7XhF34Lwbs
+- 盛世蝼蚁：一个中国大学生镜头下的深圳三和 https://xw.qq.com/cmsid/20181017A26M7F00
+
+翻山涉水上学路 https://movie.douban.com/subject/27622719/
+- 《翻山涉水上学路》两季【9集 1080P+】 https://www.bilibili.com/video/av53108025/
+  * 第一季01 肯尼亚 https://www.bilibili.com/video/BV1v4411j77Y?p=6
+- 翻山涉水上学路 https://v.qq.com/detail/s/sdp0011celmwf9z.html + 翻山涉水上学路 第二季 https://v.qq.com/detail/s/sdp0010051pg7i7.html
+
+【[:star:][`*`]】 老后破产
+- 日本老人的退休生活，存款100万却吃不起肉，80后90后的未来？ https://www.bilibili.com/video/BV11L4y1F7gW
+- 团块世代 悄然迫近的老年破产 団塊世代 しのび寄る“老後破産” (2016) https://movie.douban.com/subject/26842529/
+- 团块世代 悄然迫近的老年破产（又名：老后破产）2016日本NHK纪录片.HD720P https://open.163.com/newview/movie/free?pid=YFTKMLOU0
+- 团块世代 悄然迫近的老年破产（又名：老后破产）2016日本NHK纪录片.HD720P https://www.bilibili.com/video/BV1E4411d7Xg/ || 2016日本NHK纪录片 团块世代 悄然迫近的老年破产（又名：老后破产） https://www.bilibili.com/video/BV17q4y1j7Fb
+- 老后两代破产：与家人同住的日本老人也无法避免“老后破产” https://www.thepaper.cn/newsDetail_forward_14684239
+- 日本NHK纪录片揭秘“老后破产”看得80后心慌慌 https://www.163.com/dy/article/GQ9QJ1LQ0520MH9B.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 电影
+
+猫眼专业版 https://piaofang.maoyan.com/dashboard
+
+邵氏经典影片导视 https://www.bilibili.com/blackboard/topic/activity-B_W7upKRM.html
+
+天水围的日与夜 https://baike.baidu.com/item/%E5%A4%A9%E6%B0%B4%E5%9B%B4%E7%9A%84%E6%97%A5%E4%B8%8E%E5%A4%9C
 
 《寄生虫》：谁能为穷人的困境负责？ https://www.huxiu.com/article/314995.html
 - > 在近年的韩国电影里，展现阶级差异并不是个少见的题材。近一点的有去年同样是在戛纳电影节受到评论界欢迎的《燃烧》，成长在一个经营畜牧业家庭的青年李钟秀，面对开着保时捷、住在高级公寓的情敌本，最终也没能理解彼此的世界，将一把冰冷的刀插进了本的身体。《燃烧》的导演李沧东曾在去年平遥电影展与贾樟柯的对谈上谈起韩国的社会问题，“韩国年轻人在毕业之后很难就业，面临生活成本和房价的大幅上涨，他们对生活其实没有希望，这是现在韩国社会很大的一个问题。”
@@ -107,15 +128,6 @@ https://www.juzimi.com/ju/1741097
 - > 又名：《日本：用来出卖的少年情色》《在日本，那些可以被买卖的儿T色情》
 - > 众所周知，色情业是日本经济的重要产业之一。每年日本色情行业的总产值，几乎持平于他们每年的军事预算。
 - > 前两年，一位名为Stacey Dooley的BBC记者，远赴日本拍摄下了这部时长56分钟的纪录片。
-
-人在三和 https://movie.douban.com/subject/30337189/
-- 紀錄片：人在三和 https://www.youtube.com/watch?v=u7XhF34Lwbs
-- 盛世蝼蚁：一个中国大学生镜头下的深圳三和 https://xw.qq.com/cmsid/20181017A26M7F00
-
-翻山涉水上学路 https://movie.douban.com/subject/27622719/
-- 《翻山涉水上学路》两季【9集 1080P+】 https://www.bilibili.com/video/av53108025/
-  * 第一季01 肯尼亚 https://www.bilibili.com/video/BV1v4411j77Y?p=6
-- 翻山涉水上学路 https://v.qq.com/detail/s/sdp0011celmwf9z.html + 翻山涉水上学路 第二季 https://v.qq.com/detail/s/sdp0010051pg7i7.html
 
 由一个记录片衍生的想法--为什么不发展是不可接受的 https://mp.weixin.qq.com/s/7BJI7DGViU7cbQ1lMrXKcA  【`宁南山`】
 - > 整个记录片的过程中，我不由自主的希望随着时间的推移她们的生活能越来越好。这个记录片B站上面就有，叫《三姐妹的故事》，有5集，他们在广东，浙江，云南，西藏等地为了生存奔波，可以说记录了时代的变化。
