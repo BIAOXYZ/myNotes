@@ -59,6 +59,12 @@ What is Morris traversal? https://www.educative.io/edpresso/what-is-morris-trave
 
 图的深度优先遍历和广度优先遍历 https://www.jianshu.com/p/2c2cdcb9de9d
 
+DFS（图论） https://oi-wiki.org/graph/dfs/
+
+BFS（图论） https://oi-wiki.org/graph/bfs/
+
+Python图的BFS与DFS https://blog.csdn.net/qq_37738656/article/details/83027943
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 二分查找(折半查找) 
