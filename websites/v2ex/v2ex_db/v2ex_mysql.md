@@ -1,4 +1,6 @@
 
+mysql 怎么迁移数据库到另一台机器 https://www.v2ex.com/t/851262
+
 MySQL 只读操作一般需要开启事务吗？ https://www.v2ex.com/t/838964
 ```console
 我之前一般都是开事务的，但是后来发现其实大多数情况下，业务需求并不需要保证 Repetable Read 。
