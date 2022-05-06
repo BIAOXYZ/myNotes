@@ -381,6 +381,16 @@ kubernetes1.7 新特性:PodDisruptionBudget控制器变化 https://www.kubernete
 
 kubernetes之PDB https://www.cnblogs.com/tylerzhou/p/10987576.html
 
+## kubernetes HorizontalPodAutoscaler (HPA)
+
+Pod 水平自动扩缩 https://v1-24.docs.kubernetes.io/zh/docs/tasks/run-application/horizontal-pod-autoscale/
+
+如何根据不同业务场景调节 HPA 扩缩容灵敏度 https://www.cnblogs.com/tencent-cloud-native/p/14245238.html
+- > 这样的设计逻辑导致用户无法自定义 HPA 的扩缩容灵敏度，而不同的业务场景对于扩容容灵敏度要求可能是不一样的，比如：
+  * > 对于有流量突发的关键业务，在需要的时候应该快速扩容 (即便可能不需要，以防万一)，但缩容要慢 (防止另一个流量高峰)。
+  * > 对于一些需要处理大量数据的离线业务，在需要的时候应该尽快扩容以减少处理时间，不需要那么多资源的时候应该尽快缩容以节约成本。
+  * > 处理常规数据/网络流量的业务，它们可能会以一般的方式扩大和缩小规模，以减少抖动。
+
 ## kubernetes Container Lifecycle Hooks
 
 - Container Lifecycle Hooks https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/
