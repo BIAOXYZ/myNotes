@@ -34,17 +34,22 @@ What is the impact of running the CPU at 100% for long periods at a time? [dupli
 
 多核 CPU 和多个 CPU 有何区别？ - 知乎 https://www.zhihu.com/question/20998226
 - 多核 CPU 和多个 CPU 有何区别？ - 老狼的回答 - 知乎 https://www.zhihu.com/question/20998226/answer/705020723
+  * > 先说结论，多核CPU和多CPU的区别主要在于性能和成本。多核CPU性能最好，但成本最高；多CPU成本小，便宜，但性能相对较差。我们来看一个例子：如果我们需要组成一个48核的计算机，我们可以有这么三种选择：
+    + > 1.把48个核全部做到一个大Die上，Die很大。这个Die加上一些外围电路组成一个单Die多核CPU。
+    + > 2.弄4个小Die，每个Die 12个内核，每个Die很小。把这4个Die，加上互联总线和外围电路，全部封装（Packaging）到一个多Die多核CPU中。
+    + > 3.还是弄4个Die，每个Die 12个内核，每个Die很小。每个Die加上外围电路封装成一个单独的CPU，4个CPU再通过总线组成一个多路(way/socket)系统。
+  * > 我们来看看他们的性能差距和成本差距。
 - 多核 CPU 和多个 CPU 有何区别？ - 木头龙的回答 - 知乎 https://www.zhihu.com/question/20998226/answer/675604354
 
-什么是CPU Die？ - 河马的文章 - 知乎 https://zhuanlan.zhihu.com/p/51354994
+【[:ok:][:star:][`*`]】 什么是CPU Die？ - 河马的文章 - 知乎 https://zhuanlan.zhihu.com/p/51354994 || https://blog.csdn.net/lindahui2008/article/details/84696838
 - > 在看CPU相关的手册的时候，经常会看到Die的字样，刚开始不太理解是什么意思，感觉有点像是一颗CPU芯片，但是这样理解还是不够准确。后来各种查找，终于找到了Die的准确意思，原来Die是处理器在生产过程中引入的概念。
 - > 总的来说，***`Die`或者`CPU Die`指的是处理器在生产过程中，从`晶圆`（`Silicon Wafer`）上切割下来的一个个小方块（这也是为啥消费者看到的CPU芯片为什么都是方的的原因）***，在切割下来之前，每个小方块（Die）都需要经过各种加工，将电路逻辑刻到该Die上面。
   * > 为什么晶圆是圆的，这主要是由于晶圆的制作工艺决定的，可以参考文章： <br> 为什么晶圆都是圆的不是方的？ - 老狼的文章 - 知乎 https://zhuanlan.zhihu.com/p/30513730
   * > 而为什么切割出来的Die是方的，主要是为了切割方便，并且最大利用Die的面积。理论上，只要晶圆做得足够大，Die的面积足够小，晶圆的利用率就可以无限接近100%。
 - > 对于主流的CPU厂商Intel和AMD而言，***他们会将`1个`或者`N个`CPU Die封装起来形成一个`CPU Package`，有时候也叫作`CPU Socket`***，如下图所示： ![](https://pic3.zhimg.com/80/v2-c43566675e30ce8f5262c15c907a8462_1440w.jpg)
 - > 由于CPU Die的制作工艺及其复杂，导致CPU Die的大小会很大地影响到CPU Die的良品率，***即CPU Die的大小越大，则CPU Die出错的概率越高，良品率也越低，相应的成本也越高***。
-- > 在服务器领域，`Intel Xeon`系列的高端处理器会尽量地将整个CPU Socket做到一个CPU Die上，导致其相应的CPU Die的大小都比较大，这也是其价格昂贵的一个原因。***将整个CPU Socket上的东西都做到一个CPU Die上的好处是CPU内部之间各个组件的连接是通过片内总线互联，有更多的资源可以相互共享，这样整体的性能能够更高***。
-- > 而对于AMD的`EYPC CPU`而言，***它的每个CPU Socket由4个CPU Die组成，每个CPU Die中包含有4个CPU内核***，如下图所示： ![](https://pic2.zhimg.com/80/v2-51baf477232ec9265d7616fa84b83175_1440w.jpg)
+- > 在服务器领域，`Intel Xeon`系列的高端处理器会尽量地将整个CPU Socket做到一个CPU Die上，导致其相应的CPU Die的大小都比较大，这也是其价格昂贵的一个原因。***将整个CPU Socket上的东西都做到一个CPU Die上的好处是CPU内部之间各个组件的连接是通过`片内总线`互联，有更多的资源可以相互共享，这样整体的性能能够更高***。
+- > 而对于AMD的`EYPC CPU`而言，***它的每个CPU Socket由`4个`CPU Die组成，每个CPU Die中包含有`4个`CPU内核***，如下图所示： ![](https://pic2.zhimg.com/80/v2-51baf477232ec9265d7616fa84b83175_1440w.jpg)
 - > CPU Die之间通过`片外总线`（`Infinity Fabric`）互联，***并且不同CPU Die上的CPU内核不能共享CPU缓存，而单个Die的Xeon处理器内和所有CPU内核其实是可以共享CPU的第三级缓存（L3 Cache）的***。
 - > 我想，这种CPU Die的分布应该也是导致EPCY处理器和Xeon处理器虽然在单核上的性能可能相差不多，但是总体性能赶不上Xeon处理器的一个原因。但是这样也有个好处，就是可以降低成本。
 
