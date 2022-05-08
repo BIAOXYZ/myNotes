@@ -152,6 +152,20 @@ ACID https://en.wikipedia.org/wiki/ACID 【[ACID](https://zh.wikipedia.org/wiki/
 - > Locking vs multiversioning
 - > Distributed transactions
 
+### 隔离级别
+
+【[:star:][`*`]】 通俗易懂 事务、ACID、脏读、脏写、幻读、读已提交、快照隔离、读写锁、两阶段锁定 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/69380112
+>> //notes：`ACID`和`隔离级别`都讲的不错，不过隔离级别有的名字不是常见的。自己总结下吧，应该是这样的：
+>>> 【[:star:][`*`]】【隔离级别：**`读未提交`**】-->（现象：***`脏读`***）-->【隔离级别：**`读已提交`**】-->（现象：***`不可重复读`***）-->【隔离级别：**`可重复读`**】-->（现象：***`幻读`***）-->【隔离级别：**`(可)串行化`**】
+
+【[:star:][`*`]】 MySQL 四种事务隔离级的说明 https://www.cnblogs.com/zhoujinyi/p/3437475.HTML  【这个还有实操的例子】
+- Innodb中的事务隔离级别和锁的关系 https://tech.meituan.com/2014/08/20/innodb-lock.html
+
+20个数据库常见面试题讲解() - 奔波小码农的文章 - 知乎 https://zhuanlan.zhihu.com/p/163196566
+- > **2.1事务的并发问题**
+  * > 例如：事务T1对一个表中所有的行的某个数据项做了从“1”修改为“2”的操作 这时事务T2又对这个表中插入了一行数据项，而这个数据项的数值还是为“1”并且提交给数据库。 而操作事务T1的用户如果再查看刚刚修改的数据，会发现还有跟没有修改一样，其实这行是从事务T2中添加的，就好像产生幻觉一样，这就是发生了幻读。
+  * > 小结：不可重复读的和幻读很容易混淆，***不可重复读侧重于修改，幻读侧重于新增或删除***。<ins>解决不可重复读的问题只需锁住满足条件的行，解决幻读需要锁表</ins>。
+
 ### 分布式事务
 
 七种分布式事务的解决方案，一次讲给你听 https://mp.weixin.qq.com/s/uO3QMkygkEi64rvwDZEQIw
@@ -172,9 +186,6 @@ https://www.zhihu.com/people/Pickle-Pee/posts
 - 通俗易懂 索引、单列索引、复合索引、主键、唯一索引、聚簇索引、非聚簇索引、唯一聚簇索引 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/66553466
 - 通俗易懂 强一致性、弱一致性、最终一致性、读写一致性、单调读、因果一致性 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/67949045
 - 【[:star:][`*`]】 通俗易懂 事务、ACID、脏读、脏写、幻读、读已提交、快照隔离、读写锁、两阶段锁定 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/69380112
-  >> 【[:star:][`*`]】 //notes：`ACID`和`隔离级别`都讲的不错，不过隔离级别有的名字不是常见的。自己总结下吧，应该是这样的：
-  >>>  【[:star:][`*`]】【隔离级别：**`读未提交`**】-->（现象：***`脏读`***）——>【隔离级别：**`读已提交`**】——>（现象：***`不可重复读`***）——>【隔离级别：**`可重复读`**】——>（现象：***`幻读`***）——>【隔离级别：**`(可)串行化`**】
-  >>>> 【[:star:][`*`]】 MySQL 四种事务隔离级的说明 https://www.cnblogs.com/zhoujinyi/p/3437475.HTML  【这个还有实操的例子】
 - 通俗易懂 悲观锁、乐观锁、可重入锁、自旋锁、偏向锁、轻量/重量级锁、读写锁、各种锁及其Java实现！ - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/71156910
 - 通俗易懂 从线性一致、全序、共识 到 两/三阶段提交、Zookeeper原子广播协议、Paxos算法 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/76209860
 
@@ -185,6 +196,8 @@ https://www.zhihu.com/people/Pickle-Pee/posts
 ## 并发管理
 
 ### 两阶段锁
+
+2PL（两阶段锁定）算法是如何工作的 https://tonytancoder.github.io/2016/05/11/2PL-%E4%B8%A4%E9%98%B6%E6%AE%B5%E9%94%81%E5%AE%9A-%E7%AE%97%E6%B3%95%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C/
 
 https://www.cnblogs.com/zszmhd/p/3365220.html
 
