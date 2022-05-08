@@ -167,6 +167,17 @@ http://www.hollischuang.com/
 - 分布式系统的BASE理论 http://www.hollischuang.com/archives/672
 - 深入分析事务的隔离级别 http://www.hollischuang.com/archives/943
 
+https://www.zhihu.com/people/Pickle-Pee/posts
+- 通俗易懂 RPC、REST、Dubbo、HTTP、RMI 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/66311537
+- 通俗易懂 索引、单列索引、复合索引、主键、唯一索引、聚簇索引、非聚簇索引、唯一聚簇索引 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/66553466
+- 通俗易懂 强一致性、弱一致性、最终一致性、读写一致性、单调读、因果一致性 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/67949045
+- 【[:star:][`*`]】 通俗易懂 事务、ACID、脏读、脏写、幻读、读已提交、快照隔离、读写锁、两阶段锁定 的区别与联系 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/69380112
+  >> 【[:star:][`*`]】 //notes：`ACID`和`隔离级别`都讲的不错，不过隔离级别有的名字不是常见的。自己总结下吧，应该是这样的：
+  >>>  【[:star:][`*`]】【隔离级别：**`读未提交`**】-->（现象：***`脏读`***）——>【隔离级别：**`读已提交`**】——>（现象：***`不可重复读`***）——>【隔离级别：**`可重复读`**】——>（现象：***`幻读`***）——>【隔离级别：**`(可)串行化`**】
+  >>>> 【[:star:][`*`]】 MySQL 四种事务隔离级的说明 https://www.cnblogs.com/zhoujinyi/p/3437475.HTML  【这个还有实操的例子】
+- 通俗易懂 悲观锁、乐观锁、可重入锁、自旋锁、偏向锁、轻量/重量级锁、读写锁、各种锁及其Java实现！ - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/71156910
+- 通俗易懂 从线性一致、全序、共识 到 两/三阶段提交、Zookeeper原子广播协议、Paxos算法 - Pickle Pee的文章 - 知乎 https://zhuanlan.zhihu.com/p/76209860
+
 二阶段提交 https://zh.wikipedia.org/zh-hans/%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4
 
 事务隔离 https://zh.wikipedia.org/wiki/%E4%BA%8B%E5%8B%99%E9%9A%94%E9%9B%A2

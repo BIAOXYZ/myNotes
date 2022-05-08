@@ -10,6 +10,10 @@ Git内部原理解析 https://mp.weixin.qq.com/s/NL2Uc0PLn3UgcCEryy5KuA
 
 谈谈 Git 存储原理及相关实现 https://mp.weixin.qq.com/s/x5PHNn87OYCSpYE_hb8I2A
 
+git为什么文件换名后会丢失跟踪记录？ - 知乎 https://www.zhihu.com/question/531483642
+- git为什么文件换名后会丢失跟踪记录？ - Cat Chen的回答 - 知乎 https://www.zhihu.com/question/531483642/answer/2474468812
+- git为什么文件换名后会丢失跟踪记录？ - 知乎 https://www.zhihu.com/question/531483642/answer/2472733253
+
 # git online
 
 Resources to learn Git https://try.github.io/
