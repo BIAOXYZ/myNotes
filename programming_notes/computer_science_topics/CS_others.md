@@ -45,6 +45,10 @@ chibicc: A Small C Compiler https://github.com/rui314/chibicc
 - > (The old master has moved to [historical/old](https://github.com/rui314/chibicc/tree/historical/old) branch. This is a new one uploaded in September 2020.)
 - > chibicc is yet another small C compiler that implements most C11 features. Even though it still probably falls into the "toy compilers" category just like other small compilers do, chibicc can compile several real-world programs, including [Git](https://git-scm.com/), [SQLite](https://sqlite.org/), [libpng](http://www.libpng.org/pub/png/libpng.html) and chibicc itself, without making modifications to the compiled programs. Generated executables of these programs pass their corresponding test suites. So, chibicc actually supports a wide variety of C11 features and is able to compile hundreds of thousands of lines of real-world C code correctly.
 
+craftinginterpreters_zh https://github.com/GuoYaxiang/craftinginterpreters_zh
+- > 手撸解释器教程《Crafting Interpreters》中文翻译。
+- > 这是一个还在进行中的翻译项目，原项目是[craftinginterpreters](https://github.com/munificent/craftinginterpreters)，同时还有配套的英文书，可免费[在线阅读](http://www.craftinginterpreters.com/)。
+
 ## DB project
 
 Let's make a SQL parser so we can provide a familiar interface to non-sql datastores! https://github.com/mozilla/moz-sql-parser
