@@ -177,7 +177,7 @@ http://blog.csdn.net/xabc3000/article/details/7658439
 PostgreSQL中的锁
 http://www.postgres.cn/news/viewone/1/241
 
-
+一文搞懂PostgreSQL中所有的锁 https://www.modb.pro/db/70021
 
 ## PG BUGs
 
