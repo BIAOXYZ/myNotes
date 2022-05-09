@@ -1,4 +1,12 @@
 
+一个人写的私有云小项目，望大佬指点 https://www.v2ex.com/t/851651
+```console
+NICLOUD 简介
+自己写的私有云小项目， 前端 vue, 后端 golang gin
+集成了 libvirt ceph 等
+项目地址 https://github.com/niklaus-code/nicloud
+```
+
 如何高效掌控 K8s 资源变化？ K8s Informer 实现机制浅析 https://www.v2ex.com/t/808595
 
 关于 k8s 或容器技术相关的博客大家有哪些推荐的？ https://www.v2ex.com/t/802303

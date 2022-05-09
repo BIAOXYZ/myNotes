@@ -173,7 +173,7 @@ ACID https://en.wikipedia.org/wiki/ACID 【[ACID](https://zh.wikipedia.org/wiki/
 【[:star:][`*`]】 MySQL 四种事务隔离级的说明 https://www.cnblogs.com/zhoujinyi/p/3437475.HTML  【这个还有实操的例子】
 - Innodb中的事务隔离级别和锁的关系 https://tech.meituan.com/2014/08/20/innodb-lock.html
 
-20个数据库常见面试题讲解() - 奔波小码农的文章 - 知乎 https://zhuanlan.zhihu.com/p/163196566
+【[:star:][`*`]】 20个数据库常见面试题讲解() - 奔波小码农的文章 - 知乎 https://zhuanlan.zhihu.com/p/163196566
 - > **2.1事务的并发问题**
   * > （1）脏读：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据
   * > （2）不可重复读：事务 A 多次读取同一数据，事务 B 在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果因此本事务先后两次读到的数据结果会不一致。
