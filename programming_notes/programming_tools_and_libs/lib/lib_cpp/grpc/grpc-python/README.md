@@ -22,6 +22,7 @@ Python版gRPC入门实验 - 笑虎的文章 - 知乎 https://zhuanlan.zhihu.com/
 # 视频
 
 半小时弄懂-python和go操作Grpc https://www.bilibili.com/video/BV1NL4y1v7YA/
+- https://www.bilibili.com/video/BV1NL4y1v7YA?p=2
 
 半小时弄懂-python和go操作Grpc（2） https://www.bilibili.com/video/BV1NM4y1V717/
 
