@@ -488,6 +488,8 @@ IBM 一销售经理被非法开除：获赔 7228​ 万元 https://mp.weixin.qq.
 真实案例：程序员技术最大化变现路径 - 岳京杭的文章 - 知乎 https://zhuanlan.zhihu.com/p/81406691
 - > 那么，程序员如何将技术最大化变现？下文是一些真实案例，如果你还在校园，或者职场初期，不妨借鉴他们，来规划自己的职业生涯。6个例子，他们都是985或211大学，本科或研究生毕业，进入当时的名牌外企，或国内互联网公司。程序员入行，到业务骨干，再转管理，从大公司跳槽到上升期的小公司，头衔上升，跟公司一起成长，凭借期权，早早财务自由。
 
+字节“FII事件”发生的那一夜 https://mp.weixin.qq.com/s/zqJ4AJjE5I9WDkcQFMlM6Q || https://www.thepaper.cn/newsDetail_forward_18000289 || https://www.163.com/dy/article/H6UBJ6MP0519D3BI.html
+
 ## 中芯国际相关新闻
 
 **梁孟松辞职事件：**
