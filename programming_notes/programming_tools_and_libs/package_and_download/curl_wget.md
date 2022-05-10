@@ -242,6 +242,10 @@ Linux curl 命令详解 https://www.cnblogs.com/zhanglianghhh/p/11326428.html
   * > (SSL)允许curl执行不安全的SSL连接和传输。
   * > 所有SSL连接都尝试使用默认安装的CA证书包来确保安全。
 
+How to post raw body data with curl? https://stackoverflow.com/questions/43054195/how-to-post-raw-body-data-with-curl
+
+Curl命令的data, data-ascii, data-binary, data-raw和data-urlencode选项详解 https://blog.csdn.net/taiyangdao/article/details/77020762
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## curl新闻

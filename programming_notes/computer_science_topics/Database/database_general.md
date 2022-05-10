@@ -347,6 +347,12 @@ Mysql高频面试题 -为什么 B+ 树比 B 树更适合应用于数据库索引
 https://leetcode-cn.com/circle/discuss/6xECGC/
 - https://blog.csdn.net/w139074301/article/details/112004430
 
+https://blog.csdn.net/w139074301/article/details/112004430
+- > **Mysql 事务是如何实现的**
+  * > 原子性：通过undo log实现的。每条数据变更都伴随一条undo log日志的生成，当系统发生错误或执行回滚根据undo log做逆向操作
+  * > 持久性：通过redo log实现的。redo log记录了数据的修改日志。数据持久化到磁盘，先是储存到缓冲池里，然后缓冲池中的数据定期同步到磁盘中，如果系统宕机，可能会丢失数据，系统重启后会读取redo log恢复数据
+- > **谈一谈 MVCC 多版本并发控制**
+  * > MVCC是通过在每行记录后面保存两个隐藏的列来实现的。这两个列，一个保存了行的创建时间，一个保存行的过期时间（或删除时间）。当然存储的并不是实际的时间值，而是系统版本号（system version number)。每开始一个新的事务，系统版本号都会自动递增。事务开始时刻的系统版本号会作为事务的版本号，用来和查询到的每行记录的版本号进行比较。
 
 ## 1NF, 2NF, BCNF
 
