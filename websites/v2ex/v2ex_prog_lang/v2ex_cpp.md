@@ -1,4 +1,6 @@
 
+请教一个 shared_ptr 内存泄漏的问题 https://www.v2ex.com/t/851924
+
 C++ for 循环终止条件里面如果写一个数组的 size，会不会优化呢？ https://www.v2ex.com/t/848686
 
 c++ 结构体初始化的问题 https://www.v2ex.com/t/846596
