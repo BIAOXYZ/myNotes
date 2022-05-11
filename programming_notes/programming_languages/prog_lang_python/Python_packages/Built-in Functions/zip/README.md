@@ -6,6 +6,51 @@
 Using the Python zip() Function for Parallel Iteration https://realpython.com/python-zip-function/
 
 Python zip() https://www.programiz.com/python-programming/methods/built-in/zip
+- > **Example 1: Python `zip()`**
+  ```py
+  number_list = [1, 2, 3]
+  str_list = ['one', 'two', 'three']
+
+  # No iterables are passed
+  result = zip()
+
+  # Converting iterator to list
+  result_list = list(result)
+  print(result_list)
+
+  # Two iterables are passed
+  result = zip(number_list, str_list)
+
+  # Converting iterator to set
+  result_set = set(result)
+  print(result_set)
+  ```
+  > **Output**
+  ```console
+  []
+  {(2, 'two'), (3, 'three'), (1, 'one')}
+  ```
+- > The `*` operator can be used in conjunction with `zip()` to unzip the list.
+- > **Example 3: Unzipping the Value Using `zip()`**
+  ```py
+  coordinate = ['x', 'y', 'z']
+  value = [3, 4, 5]
+
+  result = zip(coordinate, value)
+  result_list = list(result)
+  print(result_list)
+
+  c, v =  zip(*result_list)
+  print('c =', c)
+  print('v =', v)
+  ```
+  > **Output**
+  ```console
+  [('x', 3), ('y', 4), ('z', 5)]
+  c = ('x', 'y', 'z')
+  v = (3, 4, 5)
+  ```
+  >> 【[:star:][`*`]】 //notes：注意，这里其实就相当于把二维矩阵的列给取出来了，是一个常用的小技巧。
 
 zip() in Python https://www.geeksforgeeks.org/zip-in-python/
 
@@ -36,3 +81,6 @@ Python zip()用法，看这一篇就够了 https://blog.csdn.net/PaulZhn/article
   > 就可以得到原来的a和b了。利用这个特性，可以用一种特殊的方法处理一些问题，我们待会说。
 - > **同时遍历多个字典**
 - > **对多个元素同时进行排序**
+
+# LeetCode题目
+- `LC944. 删列造序` https://leetcode.cn/problems/delete-columns-to-make-sorted/ 【用 `zip(*mtx)` 返回矩阵 mtx 的列组成的 `list`，这个是取矩阵列的常用技巧。】

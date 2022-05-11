@@ -33,3 +33,5 @@ itertools – Iterator functions for efficient looping https://pymotw.com/2/iter
 
 - 剑指 Offer 38. 字符串的排列 https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/
 - 【`itertools.zip_longest()`】 LC165. 比较版本号 https://leetcode-cn.com/problems/compare-version-numbers/
+- 【`itertools.pairwise(iterable)`】 `LC944. 删列造序` https://leetcode.cn/problems/delete-columns-to-make-sorted/
+
