@@ -18,6 +18,13 @@ Kvm教程 https://wiki.ubuntu.org.cn/Kvm%E6%95%99%E7%A8%8B
 
 KVM的原理与使用 https://www.jianshu.com/p/03d3afff3b5f
 
+KVM+Qemu+Libvirt实战 https://www.cnblogs.com/zhangyinhua/p/7481803.html
+- > 我们需要用KVM+Qemu+Libvirt来进行kvm全虚拟化，创建虚拟机并管理。
+  * > kvm是用来虚拟化或者说模拟CPU、内存等硬件的。
+  * > QEMU只是用来虚拟化硬盘的
+  * > libvirt提供了整个虚拟机的管理，比如说虚拟机的启动，停止，创建，删除等等。
+- > 其实KVM+Qemu+Libvirt就是模拟了一个VMWare软件
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # KVM其他

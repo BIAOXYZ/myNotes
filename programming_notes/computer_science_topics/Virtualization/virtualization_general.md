@@ -1,6 +1,10 @@
 
 # virtualization general
 
+SUSE Linux Enterprise Server 15 SP2 虚拟化指南 https://documentation.suse.com/zh-cn/sles/15-SP2/html/SLES-all/book-virt.html
+- 第 II 部分 使用 `libvirt` 管理虚拟机 https://documentation.suse.com/zh-cn/sles/15-SP2/html/SLES-all/part-virt-libvirt.html
+  * 8 启动和停止 libvirtd https://documentation.suse.com/zh-cn/sles/15-SP2/html/SLES-all/cha-libvirt-overview.html
+
 ## from wikipedia
 
 Category:Virtualization software https://en.wikipedia.org/wiki/Category:Virtualization_software
@@ -32,6 +36,16 @@ libvirt https://zh.wikipedia.org/wiki/Libvirt || https://en.wikipedia.org/wiki/L
 Libvirt (简体中文) https://wiki.archlinux.org/index.php/Libvirt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
 Libvirt 虚拟化库剖析 https://www.ibm.com/developerworks/cn/linux/l-libvirt/index.html
+
+# 其他语言的 libvirt api
+
+go-libvirt https://github.com/digitalocean/go-libvirt
+- > Package go-libvirt provides a pure Go interface for interacting with libvirt.
+- > Rather than using libvirt's C bindings, this package makes use of libvirt's RPC interface, as documented [here](https://libvirt.org/internals/rpc.html). Connections to the libvirt server may be local, or remote. RPC packets are encoded using the XDR standard as defined by RFC 4506.
+
+Libvirt with Python https://linuxhint.com/libvirt_python/
+
+Python libvirt API - create a Virtual Machine https://stackoverflow.com/questions/33892909/python-libvirt-api-create-a-virtual-machine
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
