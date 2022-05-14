@@ -88,3 +88,57 @@ Query id: 1ff71c42-7bba-49e0-bdf1-0ccc078ebf3f
 
 eef56cb5d207 :) 
 ```
+
+# 3
+
+```sql
+create table cipher_agg_input_a (uid int, val_a1 Float64, val_a2 Float64, val_a3 Float64, cls_a varchar(255)) ENGINE = TinyLog;
+insert into cipher_agg_input_a values (101, 10, -10, 1, 'a');
+insert into cipher_agg_input_a values (102, 5, 1, 1, 'a');
+insert into cipher_agg_input_a values (113, -1, 1, 1, 'a');
+insert into cipher_agg_input_a values (201, 100, 0.01, -0.01, 'b');
+insert into cipher_agg_input_a values (202, -100, 0.02, -0.02, 'b');
+insert into cipher_agg_input_a values (203, 100, 0.01, 100.2, 'b');
+
+create table cipher_agg_input_b (device_id int, val_b1 Float64, val_b2 Float64, val_b3 Float64, cls_b varchar(255)) ENGINE = TinyLog;
+insert into cipher_agg_input_b values (101, 10, 10, 1, 'x');
+insert into cipher_agg_input_b values (102, 5, 1, 1, 'x');
+insert into cipher_agg_input_b values (113, -1, 3, 1, 'y');
+insert into cipher_agg_input_b values (201, 100, 100, -0.01, 'x');
+insert into cipher_agg_input_b values (202, -100, 10, -0.02, 'x');
+insert into cipher_agg_input_b values (203, 100, 1000, 100.2, 'x');
+
+select sum(cipher_agg_input_b.val_b1) as sum_of_val_b1, count(cipher_agg_input_a.val_a1) as count_of_val_a1,
+count(distinct cipher_agg_input_b.val_b1) as count_distinct_val_b1, quantile(0.2)(cipher_agg_input_b.val_b2) as percentile_val_b2_0_2
+from cipher_agg_input_a left join cipher_agg_input_b on cipher_agg_input_a.uid =cipher_agg_input_b.device_id
+group by cipher_agg_input_a.cls_a, cipher_agg_input_b.cls_b;
+```
+```console
+eef56cb5d207 :) select sum(cipher_agg_input_b.val_b1) as sum_of_val_b1, count(cipher_agg_input_a.val_a1) as count_of_val_a1,
+                count(distinct cipher_agg_input_b.val_b1) as count_distinct_val_b1, quantile(0.2)(cipher_agg_input_b.val_b2) as percentile_val_b2_0_2
+                from cipher_agg_input_a left join cipher_agg_input_b on cipher_agg_input_a.uid =cipher_agg_input_b.device_id
+                group by cipher_agg_input_a.cls_a, cipher_agg_input_b.cls_b;
+
+SELECT
+    sum(cipher_agg_input_b.val_b1) AS sum_of_val_b1,
+    count(cipher_agg_input_a.val_a1) AS count_of_val_a1,
+    countDistinct(cipher_agg_input_b.val_b1) AS count_distinct_val_b1,
+    quantile(0.2)(cipher_agg_input_b.val_b2) AS percentile_val_b2_0_2
+FROM cipher_agg_input_a
+LEFT JOIN cipher_agg_input_b ON cipher_agg_input_a.uid = cipher_agg_input_b.device_id
+GROUP BY
+    cipher_agg_input_a.cls_a,
+    cipher_agg_input_b.cls_b
+
+Query id: a41e3e48-42b9-498c-a004-a462276e4209
+
+┌─sum_of_val_b1─┬─count_of_val_a1─┬─count_distinct_val_b1─┬─percentile_val_b2_0_2─┐
+│            15 │               2 │                     2 │                   2.8 │
+│            -1 │               1 │                     1 │                     3 │
+│           100 │               3 │                     2 │                    46 │
+└───────────────┴─────────────────┴───────────────────────┴───────────────────────┘
+
+3 rows in set. Elapsed: 0.005 sec.
+
+eef56cb5d207 :)
+```
