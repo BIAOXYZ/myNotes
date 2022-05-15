@@ -44,8 +44,14 @@ go-libvirt https://github.com/digitalocean/go-libvirt
 - > Rather than using libvirt's C bindings, this package makes use of libvirt's RPC interface, as documented [here](https://libvirt.org/internals/rpc.html). Connections to the libvirt server may be local, or remote. RPC packets are encoded using the XDR standard as defined by RFC 4506.
 
 Libvirt with Python https://linuxhint.com/libvirt_python/
+- > In one of my previous posts, I showed how one can get started with [Libvirt and KVM](https://linuxhint.com/libvirt_qemu_kvm_debian/).
 
 Python libvirt API - create a Virtual Machine https://stackoverflow.com/questions/33892909/python-libvirt-api-create-a-virtual-machine
+- https://stackoverflow.com/questions/33892909/python-libvirt-api-create-a-virtual-machine/33914064#33914064
+  * > I finally found and answer to my problems- so I'm posting the solution here in case anyone ever hits the same problem.
+  * > The libvirt connection object can work with storage pools.
+  * > From the libvirt.org: `"A storage pool is a quantity of storage set aside by an administrator, often a dedicated storage administrator, for use by virtual machines. Storage pools are divided into storage volumes either by the storage administrator or the system administrator, and the volumes are assigned to VMs as block devices."`
+  * > Basically a volume is what `quemu-img create` creates. Once you create a storage pool in the same directory where all the `.img` (created using `qemu-img`) files are; the files created with `qemu-img` are seen as volumes.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
