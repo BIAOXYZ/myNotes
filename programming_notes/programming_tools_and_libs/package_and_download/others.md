@@ -1,4 +1,7 @@
 
+package manager proxy settings https://github.com/comwrg/package-manager-proxy-settings
+- > 记录各个包管理器代理设置坑点。
+
 # devtoolset + scl
 
 Developer Toolset 7 by Software Collections https://www.softwarecollections.org/en/scls/rhscl/devtoolset-7/

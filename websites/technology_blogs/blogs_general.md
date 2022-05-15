@@ -69,6 +69,8 @@ LaTeX 黑魔法（四）：插入动画（animate 宏包教程） https://liam.p
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
+https://github.com/Liam0205/jsondagcc
+- > A C++ Library for Parsing JSON configure file into a DAG (Directed Acyclic Graph).
 
 --------------------------------------------------
 ## Miskcoo's Space  ([About](http://blog.miskcoo.com/about)) 及其链接的博客
