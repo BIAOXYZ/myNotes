@@ -135,5 +135,13 @@ k8s、docker源码分析、读书笔记 https://github.com/Kevin-fqh/learning-k8
 🚀 fullstack tutorial 2019，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试 https://github.com/frank-lam/fullstack-tutorial
 > https://frank-lam.github.io/fullstack-tutorial/
 
+## 系统设计
+
 The System Design Primer https://github.com/donnemartin/system-design-primer
 - 系统设计入门 https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md
+
+System design interview for IT companies https://github.com/checkcheckzz/system-design-interview
+
+PershingSquared https://www.zhihu.com/column/c_1253614849646895104
+- 读书笔记 | System Design Interview Alex Xu Pt. 1 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/439908039
+- 读书笔记 | System Design Interview Alex Xu Pt. 2+Pt. 3 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/443602320

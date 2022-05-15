@@ -45,6 +45,10 @@ go-libvirt https://github.com/digitalocean/go-libvirt
 
 Libvirt with Python https://linuxhint.com/libvirt_python/
 - > In one of my previous posts, I showed how one can get started with [Libvirt and KVM](https://linuxhint.com/libvirt_qemu_kvm_debian/).
+- > **Virsh and Starting the Default Network**
+  * > The xml file can show you the range of possible IP addresses and the how they will communicate with the outside world. ***Basically, the traffic will come to them via a NAT and they won’t be a part of your host’s external network. You can use Bridge Networking to expose each VM to the host machine’s LAN***.
+- > **To start a Virtual Machine**
+  * > To start a virtual machine we need an installation media (like the installation ISO for any operating system) and how many CPUs and how much memory needs to be allocated to the VM, and if it needs VNC. This step is where you can really appreciate a GUI installer like `virt-manager`, however, we will do it using a rather complex `virt-install` command.
 
 Python libvirt API - create a Virtual Machine https://stackoverflow.com/questions/33892909/python-libvirt-api-create-a-virtual-machine
 - https://stackoverflow.com/questions/33892909/python-libvirt-api-create-a-virtual-machine/33914064#33914064
