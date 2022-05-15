@@ -202,6 +202,7 @@ https://www.cnblogs.com/wuhenke/archive/2010/08/02/1790750.html
 Pgpool http://www.pgpool.net/mediawiki/index.php/Main_Page
 
 Patroni: A Template for PostgreSQL HA with ZooKeeper, etcd or Consul https://github.com/zalando/patroni
+- Postgres Operator https://github.com/zalando/postgres-operator
 
 ### PG扩展
 

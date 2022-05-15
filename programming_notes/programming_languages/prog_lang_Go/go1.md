@@ -107,6 +107,9 @@ Go Patterns -- Curated list of Go design patterns, recipes and idioms https://gi
 10billionhongbaos https://github.com/xiaojiaqi/10billionhongbaos
 - > 一篇习作，教你如何实现单机支持100万用户，同时模拟了2015年微信红包的1400万QPS的场景，让服务器在压力下，轻松地完成业务。
 
+Go Concurrency Guide https://github.com/luk4z7/go-concurrency-guide
+- > This guide is built on top of the some examples of the book Go Concurrency in Go and Go Programming Language
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Go其他

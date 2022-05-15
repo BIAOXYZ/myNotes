@@ -160,6 +160,16 @@ https://github.com/operator-framework/operator-sdk/blob/05a106abd9ff94bb2f0cc84b
 
 ## 各种operator项目
 
+### DB related operators
+
+Postgres Operator https://github.com/zalando/postgres-operator
+- Patroni: A Template for PostgreSQL HA with ZooKeeper, etcd or Consul https://github.com/zalando/patroni
+
+PGO: The Postgres Operator from Crunchy Data https://github.com/CrunchyData/postgres-operator
+
+CloudNativePG https://github.com/cloudnative-pg/cloudnative-pg
+- > CloudNativePG is a Kubernetes operator that covers the full lifecycle of a PostgreSQL database cluster with a primary/standby architecture, using native streaming replication
+
 ### shell-operator
 
 - Shell-operator：用于简化Kubernetes operator的创建 https://mp.weixin.qq.com/s/byHSc-moGK28_Z9hiNG7Aw
