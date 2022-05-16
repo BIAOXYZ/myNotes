@@ -145,3 +145,7 @@ System design interview for IT companies https://github.com/checkcheckzz/system-
 PershingSquared https://www.zhihu.com/column/c_1253614849646895104
 - 读书笔记 | System Design Interview Alex Xu Pt. 1 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/439908039
 - 读书笔记 | System Design Interview Alex Xu Pt. 2+Pt. 3 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/443602320
+
+缓存模式（Cache Aside、Read Through、Write Through） - Charles的文章 - 知乎 https://zhuanlan.zhihu.com/p/150740291
+
+A Hitchhiker’s Guide to Caching Patterns https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/

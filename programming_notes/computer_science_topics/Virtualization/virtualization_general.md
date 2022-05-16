@@ -76,6 +76,9 @@ About Libvirt https://linuxhint.com/about_libvirt/
 
 ## libvirt go
 
+libvirt-go https://github.com/libvirt/libvirt-go
+- > Read-only mirror. Please submit merge requests / issues to https://gitlab.com/libvirt/libvirt-go
+
 go-libvirt https://github.com/digitalocean/go-libvirt
 - > Package go-libvirt provides a pure Go interface for interacting with libvirt.
 - > Rather than using libvirt's C bindings, this package makes use of libvirt's RPC interface, as documented [here](https://libvirt.org/internals/rpc.html). Connections to the libvirt server may be local, or remote. RPC packets are encoded using the XDR standard as defined by RFC 4506.
@@ -173,3 +176,13 @@ Windows、WSL与Linux性能对比 https://www.ithome.com/0/463/355.htm
 
 请问如何 ssh 到家里的 WSL 上？ https://www.v2ex.com/t/838221
 - https://felixsmli.gitlab.io/posts/share-a-windows-pc-through-ssh/
+
+# 虚拟机迁移
+
+迁移虚拟机 https://docs.vmware.com/cn/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-FE2B516E-7366-4978-B75C-64BF0AC676EB.html
+
+6.11. 在主机间迁移虚拟机 https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_virtualization/3.6/html/virtual_machine_management_guide/sect-migrating_virtual_machines_between_hosts
+
+KVM 实现虚拟机在线热迁移 https://cloud.tencent.com/developer/article/1671091
+
+vsphere 虚拟机的迁移，冷迁移，vmotion（热迁移） https://www.cnblogs.com/zhangxingeng/p/10019695.html
