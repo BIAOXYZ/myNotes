@@ -144,8 +144,17 @@ System design interview for IT companies https://github.com/checkcheckzz/system-
 
 PershingSquared https://www.zhihu.com/column/c_1253614849646895104
 - 读书笔记 | System Design Interview Alex Xu Pt. 1 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/439908039
+  * Caching Strategies and How to Choose the Right One https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/
 - 读书笔记 | System Design Interview Alex Xu Pt. 2+Pt. 3 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/443602320
 
 缓存模式（Cache Aside、Read Through、Write Through） - Charles的文章 - 知乎 https://zhuanlan.zhihu.com/p/150740291
+- > **Cache-Aside**
+- > **Read-Through**
+  * > `Read-Through`和`Cache-Aside`很相似，***不同点在于程序不需要再去管理从哪去读数据（缓存还是数据库）。相反它会直接从缓存中读数据***，该场景下是缓存去决定从哪查询数据。当我们比较两者的时候这是一个优势因为它会让程序代码变得更简洁。
+- > **Write-Through**
+  * > `Write-Through`下 ***所有的写操作都经过缓存***，每次我们向缓存中写数据的时候，缓存会把数据持久化到对应的数据库中去，且这两个操作都在一个事务中完成。因此，只有两次都写成功了才是最终写成功了。这的确带来了一些写延迟但是它保证了数据一致性。
+- > **Write-Behind**
+  * > `Write-Behind`和`Write-Through`在“程序只和缓存交互且只能通过缓存写数据”这一点上很相似。***不同点在于`Write-Through`会把数据立即写入数据库中，而`Write-Behind`会在一段时间之后（或是被其他方式触发）把数据一起写入数据库，这个异步写操作是`Write-Behind`的最大特点***。
+    >> //notes：注：有些[文章](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)里 ***`Write-Behind` cache*** 也被称为 ***``Write-Back` cache***。
 
 A Hitchhiker’s Guide to Caching Patterns https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/

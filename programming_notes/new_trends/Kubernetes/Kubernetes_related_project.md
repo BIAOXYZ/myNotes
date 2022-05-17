@@ -150,6 +150,8 @@ Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
 
 Kubernetes Operator 快速入门教程（Kubernetes Operator 101） https://github.com/cnych/opdemo || https://www.qikqiak.com/post/k8s-operator-101/
 
+operator sdk 教程 https://github.com/xujiyou/blog-data/blob/88c463ab26/%E4%BA%91%E5%8E%9F%E7%94%9F/Kubernetes/Kubernetes%E6%89%A9%E5%B1%95%E6%9C%BA%E5%88%B6/Operator/operator-sdk%E6%95%99%E7%A8%8B.md
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## operator源码相关
