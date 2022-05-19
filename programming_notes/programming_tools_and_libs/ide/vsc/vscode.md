@@ -170,6 +170,20 @@ vscode 文件标签栏多行显示 https://blog.csdn.net/mj475002864/article/det
   * > 输入 `open workspace settings` 选择打开工作区设置
   * > 输入 `workbench.editor.wrapTabs`，勾选该设置项即可
 
+## vscode对比文件（diff文件）
+
+How to do a Diff in VS Code (Compare Files) https://vscode.one/diff-vscode/
+- > **Diff from Explorer Panel**
+  * > 1.Right click the first file and "Select for Compare"
+  * > 2.Right click on the second file and "Compare with Selected"
+  * > Note: you can also `CTRL-select both files`, right click on one, and select "Compare Selected" to achieve the same thing
+  >> 【[:star:][`*`]】 //notes：这一部门里的选择文件，都是指从最左边的 EXPLORER 面板中去选择文件。另外最后 Note 部分的方法更方便。
+- > **Diff from command line**
+  * > This is convenient if you want to build up muscle memory of typing out the commands into the terminal. Here's how to do it.
+    ```sh
+    code --diff file1.js file2.js
+    ```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
