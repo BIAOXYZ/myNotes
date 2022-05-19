@@ -177,7 +177,7 @@ How to do a Diff in VS Code (Compare Files) https://vscode.one/diff-vscode/
   * > 1.Right click the first file and "Select for Compare"
   * > 2.Right click on the second file and "Compare with Selected"
   * > Note: you can also `CTRL-select both files`, right click on one, and select "Compare Selected" to achieve the same thing
-  >> 【[:star:][`*`]】 //notes：这一部门里的选择文件，都是指从最左边的 EXPLORER 面板中去选择文件。另外最后 Note 部分的方法更方便。
+  >> 【[:star:][`*`]】 //notes：在这一部分里提到的“选择文件”，都是指从最左边的 `EXPLORER` 面板中去选择文件。另外最后 Note 部分的方法更方便。
 - > **Diff from command line**
   * > This is convenient if you want to build up muscle memory of typing out the commands into the terminal. Here's how to do it.
     ```sh
