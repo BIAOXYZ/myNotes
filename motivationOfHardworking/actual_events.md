@@ -40,6 +40,9 @@
 - 中国「底层社会」的生活是怎样的？ - 流大鲲的回答 - 知乎 https://www.zhihu.com/question/23538008/answer/114420326
 - 中国「底层社会」的生活是怎样的？ - 理查德的龙的回答 - 知乎 https://www.zhihu.com/question/23538008/answer/494064636
 
+20 世纪 90 年代的下岗潮是怎么回事？ - 知乎 https://www.zhihu.com/question/21051140
+- 20 世纪 90 年代的下岗潮是怎么回事？ - 真实故事计划的回答 - 知乎 https://www.zhihu.com/question/21051140/answer/132278064 || https://www.zhihu.com/pub/reader/119554452/chapter/873640204743897088
+
 # From Wechat
 
 ## 2022
