@@ -6,6 +6,10 @@
 
 对不起，邓小平没说过“菲律宾离中国也很近” https://cul.qq.com/a/20160713/017836.htm
 
+西电、成电的风雨往事 https://www.ithome.com/0/619/395.htm
+- > 前两天写了一篇关于北邮、南邮的文章（[链接](https://www.ithome.com/0/618/726.htm)），引起了不少读者的兴趣。今天小枣君趁热打铁，再说说西电和成电。
+  * 邮电大学的岁月往事 https://www.ithome.com/0/618/726.htm
+
 # 2020
 
 美人去哪儿了：香港小姐往事 https://www.huxiu.com/article/379930.html
