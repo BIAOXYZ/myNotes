@@ -156,6 +156,7 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
     + PearOCR文字识别 https://pearocr.com/
   * 白描网页版 https://web.baimiaoapp.com/
 - Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
+- FeHelper(前端助手) https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad || https://www.baidufe.com/
 - Bookmark Sidebar https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh
 
 ## 考察中
