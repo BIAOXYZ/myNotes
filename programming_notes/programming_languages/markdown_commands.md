@@ -330,6 +330,14 @@ Unicode https://www.compart.com/en/unicode/
 Unicode Character “⌊” (U+230A) https://www.compart.com/en/unicode/U+230A
 Unicode Character “⌋” (U+230B) https://www.compart.com/en/unicode/U+230B
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+GitHub 原生支持写数学公式了，亲测有效 https://www.ithome.com/0/619/812.htm  【`2022.05.22`，github终于官方支持数学公式了。。。】
+- > 需要注意的是：
+  * > （1）如果你的公式包含“$”，则需要在前面加上“\”进行转义；
+  * > （2）如果在公式之外你的正文也包含“$”，则需要用“`<span></span>`”标记；
+- > 参考链接： https://docs.github.com/cn/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # markdown相关工具（主要是博客，公众号相关）

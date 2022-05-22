@@ -1,4 +1,6 @@
 
+go mod tidy 可能会修改指定的依赖版本号？ https://www.v2ex.com/t/854360
+
 女同事问了一个 golang 的技术问题，没答上来，溴大了 https://www.v2ex.com/t/773635
 ```console
 两个 goroutine：go1,go2
