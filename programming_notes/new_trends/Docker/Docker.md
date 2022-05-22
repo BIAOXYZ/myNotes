@@ -125,6 +125,8 @@ Docker 配置与实践清单 https://mp.weixin.qq.com/s/mFk_BjJRMwx5uSnYXI1gpQ
 
 ## docker image
 
+dive -- A tool for exploring each layer in a docker image https://github.com/wagoodman/dive || 
+
 Docker学习：Image的本地存储结构 https://segmentfault.com/a/1190000017579626
 - > 镜像build过程可以理解为基于一个镜像启动一个容器，在容器内执行Dockerfile里的一条命令，生成一个新的镜像。根据上述的输入，test-image的构建过程可以表示为：
 - > 如前面所述，digest是有docker repository生成，因为本地构建完之后并没有推送至远程仓库，所以为None。

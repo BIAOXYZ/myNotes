@@ -135,3 +135,10 @@ EdgeDB: The next generation relational database. https://github.com/edgedb/edged
 
 BadgerDB https://github.com/dgraph-io/badger
 - > BadgerDB is an embeddable, persistent and fast key-value (KV) database written in pure Go. It is the underlying database for [Dgraph](), a fast, distributed graph database. It's meant to be a performant alternative to non-Go-based key-value stores like [RocksDB]().
+
+go-memdb https://github.com/hashicorp/go-memdb
+- > Provides the `memdb` package that implements a simple in-memory database built on immutable radix trees. ***The database provides `Atomicity`, `Consistency` and `Isolation` from `ACID`. Being that it is in-memory, it does not provide `durability`***. The database is instantiated with a schema that specifies the tables and indices that exist and allows transactions to be executed.
+- > The database provides the following:
+  * > Multi-Version Concurrency Control (`MVCC`) - By leveraging immutable radix trees the database is able to support any number of concurrent readers without locking, and allows a writer to make progress.
+  * > Transaction Support - The database allows for rich transactions, in which multiple objects are inserted, updated or deleted. The transactions can span multiple tables, and are applied atomically. The database provides `atomicity` and `isolation` in `ACID` terminology, such that until commit the updates are not visible.
+  * > Rich Indexing - Tables can support any number of indexes, which can be simple like a single field index, or more advanced compound field indexes. Certain types like UUID can be efficiently compressed from strings into byte indexes for reduced storage requirements.
