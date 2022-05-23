@@ -7,6 +7,12 @@ Segment tree https://en.wikipedia.org/wiki/Segment_tree || 线段树 https://zh.
 
 线段树 https://oi-wiki.org/ds/seg/
 
+# 已阅
+
+[算法]线段树的python实现 https://blog.csdn.net/qq_33935895/article/details/102806357
+
+开源一下我的python板子：前缀和、差分数组、线段树、树状数组 https://gist.github.com/WhiteRobe/a27fae02a337a8391533155bad0f535c
+
 # 其他
 
 Segment Tree | Set 1 (Sum of given range) https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
@@ -28,6 +34,8 @@ Segment Tree https://cp-algorithms.com/data_structures/segment_tree.html
 五分钟学算法：什么是线段树？ https://mp.weixin.qq.com/s/T3Ds8Eb8mZ5f96NjRFr6WA || https://blog.csdn.net/kexuanxiu1163/article/details/105424095
 
 线段树(Segment Tree) https://mp.weixin.qq.com/s/z1PdOVO__Yw9jpVFowbdmA
+
+第一次写线段树代码，从懵逼到清晰 https://leetcode.cn/problems/coin-bonus/solution/di-yi-ci-xie-xian-duan-shu-dai-ma-cong-meng-bi-dao/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
