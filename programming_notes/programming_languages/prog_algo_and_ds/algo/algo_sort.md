@@ -105,3 +105,24 @@
 python实现·十大排序算法之桶排序(Bucket Sort) https://segmentfault.com/a/1190000022767400
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他排序算法
+
+排序算法--睡眠排序、面条排序、猴子排序 (非常严肃) https://www.jianshu.com/p/4f526ea40df4
+>> //notes：以下为自己实现的python版本。。。
+```py
+# 猴子排序
+import random
+
+lis = [1,2,5,4,3]
+ordered = list(range(1,6))
+
+res = 0
+while lis != ordered:
+    random.shuffle(lis)
+    res += 1
+print(lis, ordered, res)
+```
+```
+[1, 2, 3, 4, 5] [1, 2, 3, 4, 5] 173
+```
