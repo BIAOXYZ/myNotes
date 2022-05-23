@@ -74,6 +74,9 @@ Kubernetes Security: Operating Kubernetes Clusters and Applications Safely https
 Kubernetes中文指南/云原生应用架构实践手册 https://github.com/rootsongjc/kubernetes-handbook
 > https://jimmysong.io/kubernetes-handbook/
 
+https://jimmysong.io/docs/#books
+- Kubernetes 基础教程 https://jimmysong.io/docs/kubernetes-handbook/
+
 Kubernetes Handbook （Kubernetes指南） https://github.com/feiskyer/kubernetes-handbook
 - Kubernetes指南 https://kubernetes.feisky.xyz
 - Kubernetes指南 https://legacy.gitbook.com/book/feisky/kubernetes/details

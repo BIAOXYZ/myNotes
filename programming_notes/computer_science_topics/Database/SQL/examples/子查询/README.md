@@ -7,6 +7,8 @@
 
 # 带例子的
 
+子查询 https://cloud.google.com/bigquery/docs/reference/standard-sql/subqueries?hl=zh-cn
+
 MySQL中的子查询 https://www.cnblogs.com/geaozhang/p/6756825.html
 
 MySQL子查询 https://www.yiibai.com/mysql/subquery.html
