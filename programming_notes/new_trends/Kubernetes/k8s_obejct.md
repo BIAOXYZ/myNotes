@@ -305,6 +305,10 @@ Kubernetes的Cron Job https://blog.frognew.com/2017/08/kubernetes-cron-job.html
 
 How to change the schedule of a Kubernetes cronjob or how to start it manually? https://stackoverflow.com/questions/49293736/how-to-change-the-schedule-of-a-kubernetes-cronjob-or-how-to-start-it-manually
 
+## kubernetes static Pods
+
+创建静态 Pod https://kubernetes.io/zh/docs/tasks/configure-pod-container/static-pod/
+
 ## kubernetes DaemonSet
 
 Kubernetes对象之DaemonSet https://www.jianshu.com/p/800f049004ec

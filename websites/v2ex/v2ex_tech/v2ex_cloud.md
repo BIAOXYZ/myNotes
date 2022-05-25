@@ -1,4 +1,10 @@
 
+k8s pod 可以作为固定的 jenkins agent 吗 https://www.v2ex.com/t/855002
+- > k8s pod 作为动态的 agent 是可以的。但考虑 git 代码缓存、maven cache 等如果能作为静态 agent 使用似乎更方便。
+- > 用 volume 做 cache 吧 pod 可以随用随销毁
+- > agent 之间不建议做共享，会有坑
+- > 你直接创建一个 static pod 不就好了。
+
 一个人写的私有云小项目，望大佬指点 https://www.v2ex.com/t/851651
 ```console
 NICLOUD 简介
