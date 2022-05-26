@@ -26,3 +26,20 @@ MySQL和PostgreSQL的自增序列探讨 https://mp.weixin.qq.com/s/5V5nYaYawnGlY
   * > 版本号：MySQL 8.0.22 vs PostgreSQL 13.1  <br>  第二期：https://www.bilibili.com/video/BV1mf4y1k7mb/  <br>  能力有限，如有疏漏还请评论指正。如果关注的人多的话，后续再详细对比一下；）
 - PostgreSQL 吊打 MySQL 的一些不严谨测试 https://www.bilibili.com/video/BV1mf4y1k7mb/
   * > 第一期：https://www.bilibili.com/video/BV1sU4y14741/  <br>  这次标题起得有点找喷，不过我也想不到其它词语来描述了。只能说数据上亿后，mysql不太能打。并且mysql组合索引限制太多，给程序员增加额外负担，相比起来pg优势明显。至于最后的聚合函数加条件，当然也可以用笨方法写出来，但是论优雅，pg应该是极致的写法了。
+
+# TPC
+
+## tpcc
+
+TPC-C https://www.tpc.org/tpcc/
+
+where to find TPC-C queries https://dba.stackexchange.com/questions/142188/where-to-find-tpc-c-queries
+```console
+As I'm aware of, TPC-H only has 22 queries which could be easily found here http://www.qdpma.com/tpch/TPCH100_Query_plans.html 
+and here https://github.com/hortonworks/hive-testbench/tree/hive14/sample-queries-tpch.
+
+I was wondering if it's the same case for TPC-C benchmark. Does it also have a fixed number of distinct queries and where could I find them? I just 
+have a specific task in which I need to measure the performance of each query and I thought both TPC-H and TPC-C queries are good references. Thanks!
+```
+- https://dba.stackexchange.com/questions/142188/where-to-find-tpc-c-queries/143982#143982
+  * > TPC-C contains a fixed number of ***`transactions`, not `queries`***. They are described in `Clause 2` of http://www.tpc.org/tpc_documents_current_versions/pdf/tpc-c_v5.11.0.pdf. Sample implementations including SQL are in `Appendix A`.
