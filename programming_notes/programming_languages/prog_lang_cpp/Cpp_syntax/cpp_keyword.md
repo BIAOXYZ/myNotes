@@ -13,6 +13,40 @@ Why isn't 'nullptr' in the 'std' namespace? https://stackoverflow.com/questions/
 - > `nullptr` is a C++11 keyword (no different to `if`, `public`, `true`, `void`, etc.), so namespaces don't apply.
 - > `nullptr` is a pointer literal the same way as for example `true` is a boolean literal. This literal has type `std::nullptr_t` that is as you see this type is defined in name space `std::`. The pointer literal is described in section 2.14.7 Pointer literals of the C++ Standard.
 
+为什么建议你用nullptr而不是NULL - 守望的文章 - 知乎 https://zhuanlan.zhihu.com/p/79883965
+- > **NULL是什么**
+  * > 在《[NULL,0,'\0',"0","\0"的区别](https://www.yanbinghu.com/2019/08/19/18180.html)》一文中，我们已经知道了在C中NULL是什么，在C的头文件中，通常定义如下：`#define NULL ((void*)0)`
+  * > 但是在C++中，它是这样定义的：`#define NULL 0`
+  * > 或者你可以在`stddef.h`看到完整的这段：
+    ```c
+    #undef NULL
+    #if defined(__cplusplus)
+    #define NULL 0
+    #else
+    #define NULL ((void *)0)
+    #endif
+    ```
+  * > 也就是说，在C++中，`NULL`不过也是`0`罢了，把它当成空指针只是一个无可奈何的选择罢了。
+  * > 那么为什么在C++和C中不一样呢？***<ins>因为C++中不能将`void *`类型的指针隐式转换成其他指针类型</ins>***，从下面的例子可以看出来：
+    ```cpp
+    //null.cpp
+    #include<iostream>
+    int main(void)
+    {
+        char p[] = "12345";
+        int *a = (void*)p;
+        return 0;
+    }
+    ```
+    > 编译：
+    ```sh
+    $ g+ -o null null.cpp
+    null.cpp: In function 'int main()':
+    null.cpp:5:17: error: invalid conversion from 'void*' to 'int*' [-fpermissive]
+      int *a = (void*)p;
+    ```
+    > 所以不能将`NULL`定义为`(void*)0`。
+
 # `static_cast`
 
 static_cast conversion https://en.cppreference.com/w/cpp/language/static_cast
