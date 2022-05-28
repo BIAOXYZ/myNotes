@@ -403,6 +403,5 @@ RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
 ## 1.使用 `gdbgui` 调试 PostgreSQL
 >> 【[:star:][`*`]】 //notes：参见 `gdbgui` 部分的实战吧～实战里调试的pg ***不但是跑在远端，而且是跑在远端容器里***。如果这种情况都已经能成功地单步调试的话，其他的（`浏览器+本地pg`，`浏览器+远程linux机器上的pg`）应该更是不在话下。
 
-# TODO
-
-如何使用VSCode进行PostgreSQL开发及调试 http://www.postgres.cn/v2/news/viewone/1/459
+## 2. 使用 vscode 调试 PostgreSQL
+>> 【[:star:][`*`]】 //notes：参见 vsc 里的 debug 部分吧。核心其实就是用 `attach` 模式，而不是 `launch` 模式（我怀疑 `launch` 模式应该也是可以的，但是从开始用 pg 都是用的 attach 到进程再调试的）；然后就是json配置文件怎么写。
