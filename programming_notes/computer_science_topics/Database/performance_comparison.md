@@ -43,3 +43,5 @@ have a specific task in which I need to measure the performance of each query an
 ```
 - https://dba.stackexchange.com/questions/142188/where-to-find-tpc-c-queries/143982#143982
   * > TPC-C contains a fixed number of ***`transactions`, not `queries`***. They are described in `Clause 2` of http://www.tpc.org/tpc_documents_current_versions/pdf/tpc-c_v5.11.0.pdf. Sample implementations including SQL are in `Appendix A`.
+
+如何对 TiDB 进行 TPC-C 测试 https://docs.pingcap.com/zh/tidb/v3.0/benchmark-tidb-using-tpcc

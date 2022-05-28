@@ -74,6 +74,13 @@ Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇�
 - > 小厨房有一个微波炉，一个电磁炉，做饭够用
 - > 晚上点的外卖，还有机器人送过来，酒店虽然老但这些高科技也开始搞起来了
 
+## [:white_check_mark:] 北京王府井希尔顿
+
+王府井希尔顿 https://www.flyert.com/tag/%E7%8E%8B%E5%BA%9C%E4%BA%95%E5%B8%8C%E5%B0%94%E9%A1%BF
+
+北京王府井希尔顿入住体验 https://www.flyert.com/t-4217216-1-1.html
+- > 澳门中心一侧有入口可以直接进入酒店大堂，无需扫码等查验程序。
+
 ## 北京华尔道夫
 
 记录时光沉淀，拥有京城顶奢的华尔道夫 https://mp.weixin.qq.com/s/L7EUtG88yeIEZem-1QOeKQ 【`酒店控手札`】
@@ -102,6 +109,10 @@ Hilton希尔顿攻略：希尔顿官网（荣誉客会）常用链接地址汇�
 
 - 西北最牛报告帖～一路向‘希’～西北首家～#西安沣东希尔顿逸林酒店# https://www.flyertea.com/article-456039-1.html
 - 那个闲逸树林之中的无冕之王——西安沣东希尔顿逸林酒店 https://www.flyertea.com/thread-3821621-1-1.html
+
+## 西安曲江希尔顿嘉悦里
+
+精选 | 西安曲江希尔顿嘉悦里酒店，可可爱爱的城中度假体验 https://mp.weixin.qq.com/s/4j5J4TUy6qB6W5NgVJxlbQ
 
 ## 郑州希尔顿
 
