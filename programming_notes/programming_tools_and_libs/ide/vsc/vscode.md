@@ -184,6 +184,10 @@ How to do a Diff in VS Code (Compare Files) https://vscode.one/diff-vscode/
     code --diff file1.js file2.js
     ```
 
+## vscode显示所有函数
+
+vscode左下角显示大纲（显示所有函数方法） https://blog.csdn.net/shuipaopaoJin/article/details/95939081
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

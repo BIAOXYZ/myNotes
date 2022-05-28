@@ -31,3 +31,9 @@ postgresql编译安装与调试（二）https://www.cnblogs.com/flying-tiger/p/5
 - > #0 `nodeResult.c` 文件内：
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 健哥的数据花园
+
+PostgreSQL内部结构与源代码研究索引页 https://www.cnblogs.com/gaojian/p/internalindex.html
+
+tag: initdb https://www.cnblogs.com/gaojian/tag/initdb/
