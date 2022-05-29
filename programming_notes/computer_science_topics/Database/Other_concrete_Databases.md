@@ -142,3 +142,6 @@ go-memdb https://github.com/hashicorp/go-memdb
   * > Multi-Version Concurrency Control (`MVCC`) - By leveraging immutable radix trees the database is able to support any number of concurrent readers without locking, and allows a writer to make progress.
   * > Transaction Support - The database allows for rich transactions, in which multiple objects are inserted, updated or deleted. The transactions can span multiple tables, and are applied atomically. The database provides `atomicity` and `isolation` in `ACID` terminology, such that until commit the updates are not visible.
   * > Rich Indexing - Tables can support any number of indexes, which can be simple like a single field index, or more advanced compound field indexes. Certain types like UUID can be efficiently compressed from strings into byte indexes for reduced storage requirements.
+
+malbrain/database https://github.com/malbrain/database  【主要原因是这老哥的 Github 主页介绍里说自己是有 50 年基础设施编程经验的程序员：`I have 50 years of experience developing programming frameworks to efficiently solve problems.` —— 所以回头看看他写的数据库什么水平。】
+- > Key-Value/Document store database library with btree and ARTree indexing methods, SSN-MVCC concurrency
