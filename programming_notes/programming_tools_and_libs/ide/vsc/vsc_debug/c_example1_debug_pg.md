@@ -85,11 +85,11 @@ VSCode调试PostgreSQL源码 https://blog.csdn.net/qq_39690706/article/details/1
     root@ubuntu:~# code
     You are trying to start Visual Studio Code as a super user which isn't recommended. If this was intended, please specify an alternate user data directory using the `--user-data-dir` argument.
     ```
-    >>>>> 虽然命令行里用 `root` 是[有办法](https://askubuntu.com/questions/803343/how-to-run-visual-studio-code-as-root)打开的，但是我还是决定先换个路线。于是我想到用图形化界面打开 vscode（但因为此时 Ubuntu 系统登陆的用户是普通用户，所以感觉还是在用普通用户打开吧？）。打开后贴入了和下面实战部分里一样的 `launch.json` 配置，然后 F5 启动调试时在 vsc 里选最后一个配置 （`"name": "postgres backend"`） 去试图用 attach 的方式调试，先是弹出如下提示：
+    >>>>> 虽然命令行里用 `root` 是[有办法](https://askubuntu.com/questions/803343/how-to-run-visual-studio-code-as-root)打开的，但我还是决定先换个路线。于是我想到用图形化界面打开 vscode（此时 Ubuntu 系统登陆的用户仍是普通用户，所以感觉还是在用普通用户打开 vsc 吧？）。打开后贴入了和下面实战部分里一样的 `launch.json` 配置，然后 F5 启动调试时在 vsc 里选最后一个配置 （`"name": "postgres backend"`） 去试图用 attach 的方式调试，先是弹出如下提示（这个 vsc 命令行里弹出的 ***文本*** 提示 Codespaces 环境里也会出现，只不过我输入 y 后就每次都是前面那个 `Error getting authority:` 的报错，然后就进行不下去了。。。）：
     ```console
     Superuser access is required to attach to a process. Attaching as superuser can potentially harm your computer. Do you want to continue? [y/N]
     ```
-    >>>>> 输入 y 回车后，弹出了一个窗口让我输密码（***我怀疑 Codespaces 环境不行就是因为没有这一步*** —— 但是它就算弹出来了，我也不知道密码啊- -），输入完成后，竟然 attach 上了。然后试着发送了一条 `select * from t1;`，真的在 vscode 里断住了。。。至此，***虽然后来换成了虚拟机里的 Ubutun，但总算是完全成功了***。
+    >>>>> 输入 y 回车后，弹出了一个 ***图形界面的窗口*** 让我输密码（***我怀疑 Codespaces 环境不行就是因为没有这一步*** —— 但是它就算弹出来了，我也不知道密码啊- -），输入完成后，终于 attach 上了。然后试着回到左边窗口发送了一条 `select * from t1;`，真的在 vscode 里断住了。。。至此，***虽然后来换成了虚拟机里的 Ubutun，但总算是完全成功了***。
   * > 3.2 首先在`src/backend/optimizer/plan/plan.c`的planner中打上断点，在侧边栏Run and Debug中选择postgres backend，点击调试按钮或者按F5后，输入2.15得到的pid进行调试，可能需要使用superuser权限进行连接，选择y就好
   * > 3.3 在psql终端中输入`"select * from t1 where id = 1;"`，如果看到在VSCode中代码在`planner.c`处停止，说明成功了
 
@@ -125,7 +125,7 @@ VSCode调试PostgreSQL配置 https://blog.csdn.net/weixin_39540651/article/detai
 
 使用vscode+docker开箱即用调试postgresql代码 https://blog.csdn.net/qq_40608763/article/details/120582333
 
-## 1.3 步骤
+## 1.3 个人实战
 
 1. 自己 clone 一个 pg 的官方仓库，比如：https://github.com/BIAOXYZ/postgres/tree/master ，然后从这个仓库的 web 页面启动 Codespaces。因为没改 devcontainer 配置，所以用的就是官方默认的配置（ https://github.com/microsoft/vscode-dev-containers/blob/dfba31dbee/containers/codespaces-linux/README.md ）
 2. 进入到 Codespaces 环境后，自己手动搞好各种依赖，编译好能 debug 的版本。  -->  【我还在 Codespaces 容器环境里的 vsc 自带的命令行里试了试能像过去一样 `cgdb` 调试起来（因为 Codespaces 其实就是个容器，所以需要用 root 用户去 attach pg 进程）。当然，这个（在 vsc 的命令行里用 `cgdb` 调试一下）不是必须的，只要保证编译好的 debug 版本没问题就行。】
@@ -196,3 +196,6 @@ VSCode调试PostgreSQL配置 https://blog.csdn.net/weixin_39540651/article/detai
 }
 ```
 >> 【[:star:][`*`]】 //notes：经验证该配置文件完全有效，只是最后一个最关键的配置（也就是能调试 SQL 执行的配置）只在虚拟机里成功了，在 Codespaces 没有成功。
+
+## 1.4 关于用 `root` 用户或 `root` 权限去 debug
+>> //notes：参见 vsc_debug 部分的 [README](README.md#debug-with-root-or-root-privilege) 吧。

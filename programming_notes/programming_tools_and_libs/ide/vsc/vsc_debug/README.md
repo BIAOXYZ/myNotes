@@ -25,6 +25,40 @@ How to disable "just my code" setting in VSCode debugger? https://stackoverflow.
 
 VS code 停用 justMyCode 调试库代码 https://blog.csdn.net/zywvvd/article/details/113753248
 
+## debug with root or root privilege
+>> //notes：这个的起因是：尝试用 vscode 调试 pg，在虚拟机里成功了，但是在 Github Codespaces 没成功。
+
+How can I debug Go file in VS Code with root privileges? https://stackoverflow.com/questions/63505746/how-can-i-debug-go-file-in-vs-code-with-root-privileges
+- https://stackoverflow.com/questions/63505746/how-can-i-debug-go-file-in-vs-code-with-root-privileges/71402050#71402050
+  * > [Debugging programs and tests as root](https://github.com/golang/vscode-go/blob/master/docs/debugging.md#debugging-programs-and-tests-as-root) in the documentation of the VSCode Go addon has been updated accordingly with task and launch configuration examples to not only debug programs but also tests as root.
+    >> https://github.com/golang/vscode-go/blob/caee58d0934cd0a00037224970c5fe349b32e978/docs/debugging.md#debugging-programs-and-tests-as-root
+    ```json
+    {
+        "name": "Launch as Root",
+        "request": "launch",
+        "mode": "exec",
+        "asRoot": true,
+        "program": "${workspaceRoot}/myprogram",
+        "console": "integratedTerminal",
+        ...
+    }
+    ```
+    >>> //notes：核心是有个 vsc 的配置参数 `"asRoot": true,`，但我不知道是不是只对 Go 语言有效。。。
+
+VS Code debugging as root user https://stackoverflow.com/questions/70638525/vs-code-debugging-as-root-user
+
+How to debug programs with "sudo" in VSCODE https://stackoverflow.com/questions/40033311/how-to-debug-programs-with-sudo-in-vscode
+
+Debugging mixed Python C++ in VS Code. Can't enter sudo password https://stackoverflow.com/questions/64832766/debugging-mixed-python-c-in-vs-code-cant-enter-sudo-password
+
+How to launch python in Visual Studio Code with superuser permission or root permission? (i.e. using sudo command) https://stackoverflow.com/questions/48144580/how-to-launch-python-in-visual-studio-code-with-superuser-permission-or-root-per
+
+Unable to launch debugger (gdb) with root permissions. #861 https://github.com/microsoft/vscode-cpptools/issues/861
+- > https://github.com/microsoft/vscode-cpptools/issues/861#issuecomment-318884887
+  >> //notes：只是发现楼里有人回复说想调试 `Snort` 的时候碰到了一样的问题，决定先记录下。
+
+Start gdb fail when attach debug a program.(Authentication is needed to run `/usr/bin/gdb' as the super user) #4988 https://github.com/microsoft/vscode-cpptools/issues/4988
+
 ## debug启动时的路径问题
 
 vscode中使用python相对路径问题? - 知乎 https://www.zhihu.com/question/313379182
