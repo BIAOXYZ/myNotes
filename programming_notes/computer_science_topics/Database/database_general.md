@@ -315,6 +315,8 @@ Hash join算法原理 https://www.cnblogs.com/qlee/archive/2011/04/11/2012572.ht
 
 SQL是如何在数据库中执行的？ https://segmentfault.com/a/1190000037792613
 
+SQL优化之火山模型、向量化、编译执行 https://blog.csdn.net/u011436427/article/details/121805600
+
 # 故障恢复
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
