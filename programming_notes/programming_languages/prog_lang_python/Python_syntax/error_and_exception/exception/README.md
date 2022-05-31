@@ -18,6 +18,8 @@
 
 # 其他
 
+~~Python Exceptions: An Introduction https://realpython.com/python-exceptions/~~  -->  参加 realpython 部分的笔记吧。
+
 https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
 
 Python 异常处理 http://www.runoob.com/python/python-exceptions.html
@@ -25,6 +27,11 @@ Python 异常处理 http://www.runoob.com/python/python-exceptions.html
 http://www.yiibai.com/python/python_exceptions.html
 
 Python Exception Handling Using try, except and finally statement https://www.programiz.com/python-programming/exception-handling
+
+python 一篇搞定所有的异常处理 https://www.cnblogs.com/wj-1314/p/8707804.html
+- > **四：异常处理的用法**
+  * > 1，如果错误发生的条件是可预知的，我们需要用if进行处理，在错误发生之前进行预防
+  * > 2，如果错误发生的条件是不可预知的，则需要用到try..except：在错误发生之后进行处理
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
