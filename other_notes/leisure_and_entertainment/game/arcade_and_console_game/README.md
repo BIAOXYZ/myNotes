@@ -10,11 +10,15 @@
 FC怀旧游戏专辑 第一季（200集全） https://www.bilibili.com/video/BV1ex411E7R7
 - P36 马戏团最高难度一命通关 https://www.bilibili.com/video/BV1ex411E7R7?p=36
 - P55 打砖块一命速通 https://www.bilibili.com/video/BV1ex411E7R7?p=55
+- P100 忍者蛙无伤通关 https://www.bilibili.com/video/BV1ex411E7R7?p=100
+- P101 忍者蛙与双截龙一命通关 https://www.bilibili.com/video/BV1ex411E7R7?p=101
 
 FC怀旧游戏专辑 第二季（不定期更新） https://www.bilibili.com/video/BV1Hx411j73p
 
 MD怀旧游戏专辑（不定期更新） https://www.bilibili.com/video/BV1Yx411776n
-- P182 魂斗罗铁血兵团 选用希娜 异形巢穴路线 无伤通关【自制】 https://www.bilibili.com/video/BV1Yx411776n?p=182
+- P176 魂斗罗铁血兵团 选用希娜 异形巢穴路线 无伤通关【自制】 https://www.bilibili.com/video/BV1Yx411776n?p=176
+- P180 魂斗罗铁血兵团 选用希娜 太空站路线 无伤通关【自制】 https://www.bilibili.com/video/BV1Yx411776n?p=180
+- P184 魂斗罗铁血兵团 选用希娜 投敌路线 无伤通关【自制】 https://www.bilibili.com/video/BV1Yx411776n?p=184
 
 SFC怀旧游戏专辑（不定期更新） https://www.bilibili.com/video/BV1rx41177KY
 
