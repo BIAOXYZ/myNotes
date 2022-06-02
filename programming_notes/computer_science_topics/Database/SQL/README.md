@@ -42,6 +42,14 @@ Difference between JOIN and INNER JOIN https://stackoverflow.com/questions/56562
 
 LEFT JOIN vs. LEFT OUTER JOIN in SQL Server https://stackoverflow.com/questions/406294/left-join-vs-left-outer-join-in-sql-server
 
+## non-ANSI JOIN syntax v.s. ANSI JOIN syntax
+
+Will ANSI JOIN vs. non-ANSI JOIN queries perform differently? https://stackoverflow.com/questions/1599050/will-ansi-join-vs-non-ansi-join-queries-perform-differently
+
+Why select from multiple tables without join https://stackoverflow.com/questions/17618007/why-select-from-multiple-tables-without-join
+
+Why isn't SQL ANSI-92 standard better adopted over ANSI-89? https://stackoverflow.com/questions/334201/why-isnt-sql-ansi-92-standard-better-adopted-over-ansi-89
+
 # Limit
 
 SQL LIMIT https://www.sqltutorial.org/sql-limit/
