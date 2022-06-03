@@ -356,3 +356,23 @@ X DISPLAY #     PROCESS ID
 :2              19622
 
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 第二部分：后来补充 `本地 Mac + 远程 Debian 9` 下的 VNC 环境配置
+>> 【[:star:][`*`]】 //notes：总体来说就是按下面这个帖子一步一步来，帖子写得很完美，除了开始的 `apt install xxx` 命令没有加 `-y` 以外，其他的写得都很具体，和我实战遇到的各种情况（比如目录的位置，文件的名称之类的）都完全一致，***完全不需要我再记录实战过程了***。但是我并没有完全按这个文章来，因为之前在 CentOS 下的一些经验可以复用 + 远程虚拟机和过去的情况不太一样（主要就是公司的 SSH 要求和配置就是垃圾！），所以省略了一些步骤。
+>>> 安装完远程服务器端的 `vncserver` 后，本地 Mac 参照 CentOS 部分，同样选择安装了 TigerVNC 家的客户端（客户端名字从过去的 `vncviewer` 改成 `TigerVNC Viewer` 了，把老虎也带到名字里了）。然后顺利连接～
+
+【[:star:][`*`]】 How to Install and Configure VNC on Debian 9 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-9
+- > **Step 1 — Installing the Desktop Environment and VNC Server**
+- > **Step 2 — Configuring the VNC Server**
+- > **Step 3 — Connecting the VNC Desktop Securely**
+  >> //notes：这部分目前还没有用 SSH tunnel 做转发，感觉公司的 SSH 弄的太傻叉了。不过回头也可以考虑试试。
+- > **Step 4 — Running VNC as a System Service**
+  >> //notes：这部分也没有试，感觉没有必要了。
+
+How to Install Google Chrome Web Browser on Debian 9 https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-debian-9/
+```sh
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+```
