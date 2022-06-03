@@ -367,7 +367,15 @@ X DISPLAY #     PROCESS ID
 - > **Step 1 — Installing the Desktop Environment and VNC Server**
 - > **Step 2 — Configuring the VNC Server**
 - > **Step 3 — Connecting the VNC Desktop Securely**
-  >> //notes：这部分目前还没有用 SSH tunnel 做转发，感觉公司的 SSH 弄的太傻叉了。不过回头也可以考虑试试。
+  >> //notes：这部分涉及用 SSH tunnel 做转发，~~目前还没有试~~。感觉公司的 SSH 弄的太傻叉了。~~不过回头也可以考虑试试~~。
+  >>> 【[:star:][`*`]】 //notes：后来试了试，发现是可以的，SSH 这个软件确实是做得好啊。总体是这样的效果：
+  ```sh
+  # 1. 在 Mac 上执行完下面这句后，当前命令行窗口就会 hang 住，正常表现。
+  # 2. 然后 vnc 客户端可以直接输入 `localhost:1` 去连接 vnc 服务端（当然，用 `<your_server_ip>:1` 照样还是可以的）。
+  # --> 但是如果不执行下面这句，vnc 客户端想连接 vnc 服务端就只能用 `<your_server_ip>:1` 的形式。
+  $ ssh -L 5901:127.0.0.1:5901 -C -N -l <your_user_name> <your_server_ip>
+  $
+  ```
 - > **Step 4 — Running VNC as a System Service**
   >> //notes：这部分也没有试，感觉没有必要了。
 
