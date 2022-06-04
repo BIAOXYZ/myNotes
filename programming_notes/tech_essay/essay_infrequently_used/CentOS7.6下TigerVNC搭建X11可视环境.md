@@ -379,8 +379,31 @@ X DISPLAY #     PROCESS ID
 - > **Step 4 — Running VNC as a System Service**
   >> //notes：这部分也没有试，感觉没有必要了。
 
+## 其他工作
+
+### 1.安装Chrome
+
 How to Install Google Chrome Web Browser on Debian 9 https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-debian-9/
 ```sh
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
+
+### 2.配置中文
+>> 【[:star:][`*`]】 //notes：如果不配置的话，有可能会出现好多小方块（也就是显示错误呗），配置过程 ***主力参考了一个帖子，次要参考了两个帖子***：
+
+Debian 9 stretch源设置，中文乱码解决 https://blog.csdn.net/gong_xucheng/article/details/81114122 || https://www.jianshu.com/p/128ea159b587
+>> //notes：这个帖子里每个步骤都做了，除了最后安装包时，`ttf-arphic-uming` 安装不上。后来发现是改名了，改成了 `fonts-arphic-uming`。
+
+debian9 配置中文环境支持 https://www.cnblogs.com/sealin/p/13490743.html
+```console
+apt-get install fonts-arphic-uming     （百度查都是ttf-arphic-uming ，但安装没有这个包，后来才发现改名了。）
+```
+>> //notes：这个帖子只用了这一句。
+
+debian，dietpi，linux中文乱码解决方法 https://www.cnblogs.com/Dream998/p/9721212.html
+```console
+sudo apt-get install ttf-mscorefonts-installer 
+sudo fc-cache -f -v  //更新字体缓存
+```
+>> //notes：这个帖子用了这两句。
