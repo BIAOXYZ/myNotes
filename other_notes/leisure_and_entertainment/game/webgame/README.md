@@ -29,7 +29,7 @@ https://gitee.com/likexia/Evolve
   * 进化 - v1.2.7 https://likexia.gitee.io/evolve/wiki.html
 - https://shimo.im/sheets/tg6VPQgCKhrYW9QG
   * https://toscode.gitee.com/by22dgb/evolvescript/blob/master/evolve_automation.user.js
-  * https://github.com/pengminxuan/new-tmvictor-chn/blob/main/main.user.js
+  * ~~https://github.com/pengminxuan/new-tmvictor-chn/blob/main/main.user.js~~  -->  https://github.com/by22dgb/evolvescript/blob/master/evolve_automation.user.js
 
 Git游戏 https://likexia.gitee.io/game/
 
