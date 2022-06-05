@@ -1,4 +1,6 @@
 
+有没有一些高质量的 Python 内容推荐？ https://www.v2ex.com/t/857295
+
 Python3 列表能被闭包函数使用，整数变量却不行呢？ https://www.v2ex.com/t/848218
 ```
 问题：

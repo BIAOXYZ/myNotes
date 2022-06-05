@@ -1,4 +1,6 @@
 
+闲来无聊，修改纯 C 实现一个 http server https://www.v2ex.com/t/857246
+
 怎么通过 VS2019 看 strlen()的源码？ https://www.v2ex.com/t/825671
 - > msvc 的源码是没有公开的。MS 开源了 STL 的部分 https://github.com/microsoft/STL 。`strlen` 的实现比较简单，类似下面这样。你可以参考 `wine` 项目的一些 api 实现。
   ```c
