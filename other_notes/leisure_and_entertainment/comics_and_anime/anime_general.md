@@ -378,6 +378,15 @@ Thank you! Your ballot has been successfully submitted. https://www.internationa
 
 御坂美琴B萌应援团 https://mikoto.us/
 
+『整活』当你把C语言代码写成炮姐的样子 https://www.bilibili.com/video/BV1N54y1o7m9
+```console
+刚上传了视频中的代码，大家拿去玩吧。 https://github.com/3150601355/code_in_paojie
+```
+- 回复里的：
+  * > 那么，这个代码可不可以再运行时再画一个炮姐的画呢，没事我就随口一问
+    >> 你是指IOCCC 2013的misaka吗
+    >>> //notes：个人补充： https://www.ioccc.org/2013/misaka/misaka.c || https://github.com/c00kiemon5ter/ioccc-obfuscated-c-contest/blob/master/2013/misaka/misaka.c
+
 ### 钉宫系
 
 钉宫四萌 https://zh.moegirl.org/%E9%92%89%E5%AE%AB%E5%9B%9B%E8%90%8C
