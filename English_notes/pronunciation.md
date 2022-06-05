@@ -4,3 +4,5 @@
 - GitHub 怎么读？ - lsxiao的回答 - 知乎 https://www.zhihu.com/question/20733707/answer/275457818
 
 Pohlig https://www.howtopronounce.com/pohlig 【起因：Pohlig–Hellman algorithm】
+
+中国程序员容易发音错误的单词 https://github.com/shimohq/chinese-programmer-wrong-pronunciation

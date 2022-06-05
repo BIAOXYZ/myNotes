@@ -16,6 +16,8 @@
 
 最短路径 | 深入浅出Dijkstra算法（一） https://www.jianshu.com/p/8b3cdca55dc0
 
+【原创】算法系列——四种最短路算法：Floyd，Dijkstra，Bellman-Ford，SPFA - 吕清海的文章 - 知乎 https://zhuanlan.zhihu.com/p/33162490
+
 ## 最短路径题目
 
 最短路径算法详解 https://leetcode-cn.com/circle/article/6O5JRt/

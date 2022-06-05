@@ -20,6 +20,14 @@ Database of Databases
 
 redis7.0 中文注释 https://github.com/CN-annotation-team/redis7.0-chinese-annotated
 
+## Redis实现分布式锁
+
+redis分布式锁3种实现方式对比分析总结 https://young17.github.io/backup/2020-1-28-redis_distributed_locks/
+
+浅析 Redis 分布式锁解决方案 https://www.infoq.cn/article/dvaaj71f4fbqsxmgvdce
+
+redis 分布式锁的 5个坑，真是又大又深 https://www.cnblogs.com/chengxy-nds/p/12750502.html
+
 # [MongoDB](https://www.mongodb.com/)
 
 【from draveness】:
