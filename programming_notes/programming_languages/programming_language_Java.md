@@ -169,6 +169,10 @@ ArrayList和LinkedList的区别 https://www.jianshu.com/p/e591690afacb
 - > 数据的增加和删除
   * > 对于数据的增加元素，ArrayList是通过移动该元素之后的元素位置，其后元素位置全部+1，所以耗时较长，而LinkedList只需要将该元素前的后续指针指向该元素并将该元素的后续指针指向之后的元素即可。与增加相同，删除元素时ArrayList需要将被删除元素之后的元素位置-1，而LinkedList只需要将之后的元素前置指针指向前一元素，前一元素的指针指向后一元素即可。当然，事实上，若是单一元素的增删，尤其是在List末端增删一个元素，二者效率不相上下。
 
+https://www.jianshu.com/u/c98c50394601
+- Java集合--HashMap解惑 https://www.jianshu.com/p/a17b4717a721
+- Java集合--TreeMap完全解析 https://www.jianshu.com/p/2dcff3634326
+
 ## Java零散知识
 
 servlet的本质是什么，它是如何工作的？ - 柳树的回答 - 知乎 https://www.zhihu.com/question/21416727/answer/339012081
