@@ -131,6 +131,12 @@ sk2的前男友面膜到底为什么那么神奇？ - 知乎 https://www.zhihu.c
 三千多的黑绷带竟然被女神嫌弃太厚，实验室平替一份同浓度的黑绷带精华，附平替推荐及前一期的功效验证 https://post.smzdm.com/p/a3dv7w67/
 - > 前期也出过一篇文章。有兴趣的可以过去看一下：[《三千多一瓶的黑绷带，我东拼西凑的复原了，还做了功效验证》](https://post.smzdm.com/p/apxk6ll9/)
 
+### 100ml v.s. 50ml
+- 赫莲娜黑绷带100ml和50ml区别 https://www.xiaohongshu.com/discovery/item/5ffa7cf80000000001004003
+- 黑绷带50ml和100ml的区别 https://www.xiaohongshu.com/discovery/item/61911b19000000002103cba7
+- HR黑绷带100ml和50ml同时使用，效果区别 https://www.xiaohongshu.com/discovery/item/61cfa1f6000000000102956c
+- 赫莲娜黑绷带50ml vs 100ml https://www.xiaohongshu.com/discovery/item/5f950c780000000001009ca6
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 萌物
