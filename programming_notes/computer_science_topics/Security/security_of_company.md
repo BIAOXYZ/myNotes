@@ -265,6 +265,13 @@ SecMML https://github.com/FudanMPL/SecMML
 Implementation of protocols in Falcon https://github.com/snwagh/falcon-public
 - (PETS 2021) Falcon: Honest-Majority Maliciously Secure Framework for Private Deep Learning https://arxiv.org/pdf/2004.02229.pdf
 
+## Primihub
+
+重磅 | 企业级开源隐私计算平台—Primihub正式开源 https://mp.weixin.qq.com/s/Y4-Qhwpwr4wPpPuxodkgXw
+- > Primihub平台融合了MPC（多方安全计算）、FL（联邦学习）、HE（同态加密）、TEE（可信执行环境）等多种技术路线，提供多安全级别、多性能要求、多场景支持的解决方案，帮助企业用户保护数据隐私的同时，深度连接各个合作方，实现跨数据、跨行业的合作共赢。在提供开源版的同时，原语科技研发了企业版，支持更加丰富的功能。
+- > Primihub开源官网：http://docs.primihub.com/
+- > GitHub开源地址：https://github.com/primihub/primihub
+
 ## 小型项目
 
 GBDT_Simple_Tutorial（梯度提升树简易教程） https://github.com/Freemanzxp/GBDT_Simple_Tutorial
