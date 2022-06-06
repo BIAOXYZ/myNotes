@@ -110,6 +110,8 @@ Paxos算法详解 - 祥光的文章 - 知乎 https://zhuanlan.zhihu.com/p/317807
 
 The Part-Time Parliament(Paxos算法中文翻译) https://wenku.baidu.com/view/87276e1dfad6195f312ba6d7.html
 
+Paxos made simple 论文导读 - 木鸟杂记的文章 - 知乎 https://zhuanlan.zhihu.com/p/380587949
+
 ## multi-Paxos
 
 使用multi-paxos实现日志同步应用 - 吴镝的文章 - 知乎

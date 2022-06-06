@@ -74,22 +74,6 @@ zhengcongyi -- MongoDB https://blog.csdn.net/congcong68/article/category/2938211
 
 https://www.viva64.com/en/b/0542/
 
-# [LevelDB](http://leveldb.org/)
-
-- http://leveldb.org/  //官网都砍了。。。
-- https://github.com/google/leveldb
-
-LevelDB key/value database in Go. https://github.com/syndtr/goleveldb
-
-LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
-
-【from draveness】:
-- 浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
-
-深入浅出LevelDB https://mrcroxx.github.io/categories/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAleveldb/
-- 深入浅出LevelDB —— 01 Architecture https://mrcroxx.github.io/posts/code-reading/leveldb-made-simple/1-architecture/
-- 深入浅出LevelDB —— 10 Read & Write https://mrcroxx.github.io/posts/code-reading/leveldb-made-simple/10-read-write/
-
 # [RocksDB](https://rocksdb.org/)
 
 - https://rocksdb.org/
