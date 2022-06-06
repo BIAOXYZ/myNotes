@@ -142,6 +142,8 @@ RunMyCode https://runmycode.online/
 程序猿必须知道的一些有用的（外国）网站 https://mp.weixin.qq.com/s/236sO6EKvctQrga2Zs5JMg || 学习 CS 时必须知道的一些有用的网站 https://www.oschina.net/translate/best-websites-a-programmer-should-visit
 - :link: Some useful websites for programmers. https://github.com/sdmg15/Best-websites-a-programmer-should-visit
 
+Calmcode -- Code. Simply. Clearly. Calmly. https://calmcode.io/
+
 ## freeCodeCamp
 
 https://www.freecodecamp.cn/about
