@@ -46,4 +46,7 @@ Pandas https://www.kaggle.com/learn/pandas
 
 Using Pandas and Python to Explore Your Dataset https://realpython.com/pandas-python-explore-dataset/
 
+Python pandas Tutorial | Introduction with Examples https://sparkbyexamples.com/python-pandas-tutorial-for-beginners/
+- Pandas – Convert DataFrame to Dictionary (Dict) https://sparkbyexamples.com/pandas/pandas-convert-dataframe-to-dictionary/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
