@@ -124,36 +124,8 @@ random_shuffle 和 shuffle的区别 https://www.jianshu.com/p/9613c764447f
 - > `std::random_shuffle` 被废除的原因是 `std::random_shuffle` 的随机数产生器使用了 `std::rand()`。 <br> 而 `std::rand()` 使用了 ***一个全局静态变量*** 保存其状态，这样使得 `std::rand()` 无法同时产生两个独立互不干扰的随机数流。
 - > 所以 `std::random_shuffle` 由于使用了 `std::rand()`，产生的随机数质量不如 `std::shuffle` 使用的均匀分布的随机数产生器URNG(Uniform Random Number Generator)产生的随机数
 
-# `std::sort()`
-
-## 自定义排序函数
-
-std::sort http://www.cplusplus.com/reference/algorithm/sort/
-- > **Parameters**
-  * > comp
-    + > Binary function that accepts two elements in the range as arguments, and returns a value convertible to bool. ***The value returned <ins>indicates whether the element passed as first argument is considered to go before the second</ins>*** in the specific strict weak ordering it defines.
-      >> 【[:star:][`*`]】 //notes：所以其实官方已经说明了：`comp` 函数的返回值是一个 bool 值，表示两个元素的排序关系。***如果为真，表示第一个入参应该在第二个入参前面***。
-
-如何自定义sort函数中的比较函数 https://blog.csdn.net/qq_31217423/article/details/76375336
-```console
-总结起来就是：
-sort函数根据comp函数的返回值，对comp函数的两个参数排序。
-如果comp返回true，排序为“参数1”“参数2”，否则排序为“参数2”“参数1”。
-想要升序排列，则return parameter1<parameter2
-想要降序排列，则return parameter1>parameter2
-```
-
-## 其他帖子
-
-sort (C++) https://en.wikipedia.org/wiki/Sort_(C%2B%2B)
-
-C++ sort排序函数用法 https://blog.csdn.net/w_linux/article/details/76222112
-
-std::sort() in C++ STL https://www.geeksforgeeks.org/sort-c-stl/
-
-What is the std::sort() function in C++? https://www.educative.io/edpresso/what-is-the-stdsort-function-in-cpp
-
-How To Implement Sort function In C++? https://www.edureka.co/blog/sort-function-in-cpp/
+# ~~`std::sort()`~~
+>> //notes：[已转移](apis/sort.md)
 
 # 其他
 

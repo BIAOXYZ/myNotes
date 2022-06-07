@@ -46,3 +46,14 @@ docker 容器调试新姿势 https://blog.zeromake.com/pages/docker-debug
 drgn -- Programmable debugger https://github.com/osandov/drgn
 
 buildg: A tool to interactively debug Dockerfile https://github.com/ktock/buildg
+
+## dbx
+
+dbx (debugger) https://en.wikipedia.org/wiki/Dbx_(debugger)
+- > `dbx` is a source-level debugger found primarily on `Solaris`, `AIX`, `IRIX`, `Tru64 UNIX`, `Linux` and `BSD` operating systems.
+- > `dbx` is also available on IBM `z/OS` systems, in the UNIX System Services component.
+  >> //notes：虽然说是这么说，但是好像只有 `Solaris` 和 `z/OS` 上才有吧。也没有用过，基本就只是记录下知道有这么个东西就行。
+
+dbx — Use the debugger https://www.ibm.com/docs/en/zos/2.2.0?topic=descriptions-dbx-use-debugger
+
+Debugging Your Program With dbx https://docs.oracle.com/cd/E18659_01/html/821-1380/blabf.html
