@@ -52,6 +52,8 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 文件存储、块存储还是对象存储？ https://www.redhat.com/zh/topics/data-storage/file-block-object-storage
 
+分布式存储：你知道对象存储是如何保存图片文件的吗？ https://zq99299.github.io/note-book/back-end-storage/03/04.html
+
 ## disk
 
 硬盘基本知识（磁头、磁道、扇区、柱面） https://www.cnblogs.com/jswang/p/9071847.html

@@ -14,3 +14,7 @@ Python 的魔术方法 https://old-panda.com/2018/12/16/python-magic-methods/
 # `__new__()`
 
 python的__new__方法 https://www.jianshu.com/p/08d7956601de
+
+# `__repr__()`
+
+一文让你彻底搞懂Python中`__str__`和`__repr__`? https://segmentfault.com/a/1190000022266368

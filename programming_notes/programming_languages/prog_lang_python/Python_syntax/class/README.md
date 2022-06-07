@@ -1,4 +1,6 @@
 
+`9. 类` https://docs.python.org/zh-cn/3/tutorial/classes.html
+
 Improve Your Python: Python Classes and Object Oriented Programming https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
 
 # 函数和类的嵌套
@@ -178,6 +180,8 @@ Python: classmethod类函数 & staticmethod静态函数 区别 http://blog.csdn.
 [Python]实例方法、类方法、静态方法 - Leechard的文章 - 知乎 https://zhuanlan.zhihu.com/p/40162669
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+python动态添加、删除属性和方法 https://blog.csdn.net/pnd237/article/details/103919807
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
