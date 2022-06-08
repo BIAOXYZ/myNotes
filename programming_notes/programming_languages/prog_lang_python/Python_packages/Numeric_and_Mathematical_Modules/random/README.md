@@ -34,3 +34,4 @@ Python choices()函数详解、random模块下的常用函数 https://blog.csdn.
   * `470. 用 Rand7() 实现 Rand10()` https://leetcode-cn.com/problems/implement-rand10-using-rand7/
 - `961. 在长度 2N 的数组中找出重复 N 次的元素` https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/
 - `478. 在圆内随机生成点` https://leetcode.cn/problems/generate-random-point-in-a-circle/
+- `497. 非重叠矩形中的随机点` https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/
