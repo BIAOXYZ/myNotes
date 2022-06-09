@@ -30,6 +30,10 @@ GROUP BY without aggregate function https://stackoverflow.com/questions/20074562
 
 Are the columns used in the order / group by clause(s) mandatory in the select clause? https://stackoverflow.com/questions/27976643/are-the-columns-used-in-the-order-group-by-clauses-mandatory-in-the-select-c
 
+# Hint
+
+What are "SQL-Hints"? https://stackoverflow.com/questions/262004/what-are-sql-hints
+
 # Join
 
 【[:star:][`*`]】 What is the difference between "INNER JOIN" and "OUTER JOIN"? https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join

@@ -308,6 +308,16 @@ What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [
 Hash join算法原理 https://www.cnblogs.com/qlee/archive/2011/04/11/2012572.html
 - > 自从oracke 7.3以来，oracle提供了一种新的join技术，就是hash join。Hash Join只能用于相等连接，且只能在CBO优化器模式下。相对于nested loop join，hash join更适合处理大型结果集。Hash join不需要在驱动表上存在索引。
 
+## 优化器
+
+ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215.html
+- > Oracle数据库中的优化器又叫查询优化器（Query Optimizer）。它是SQL分析和执行的优化工具，它负责生成、制定SQL的执行计划。Oracle的优化器有两种，基于规则的优化器（RBO）与基于代价的优化器（CBO)
+  * > RBO: Rule-Based Optimization 基于规则的优化器
+  * > CBO: Cost-Based Optimization 基于代价的优化器
+- > RBO自ORACLE 6以来被采用，一直沿用至ORACLE 9i. ORACLE 10g开始，ORACLE已经彻底丢弃了RBO，它有着一套严格的使用规则，只要你按照它去写SQL语句，无论数据表中的内容怎样，也不会影响到你的“执行计划”，也就是说RBO对数据不“敏感”；它根据ORACLE指定的优先顺序规则，对指定的表进行执行计划的选择。比如在规则中，索引的优先级大于全表扫描;RBO是根据可用的访问路径以及访问路径等级来选择执行计划，在RBO中，SQL的写法往往会影响执行计划，它要求开发人员非常了解RBO的各项细则，菜鸟写出来的SQL脚本性能可能非常差。随着RBO的被遗弃，渐渐不为人所知。也许只有老一辈的DBA对其了解得比较深入。关于RBO的访问路径，官方文档做了详细介绍：
+  >> 【[:star:][`*`]】 //notes：一共 `15` 条优化器规则，官网链接如下：
+  >>> 8 Using the Rule-Based Optimizer https://docs.oracle.com/cd/B10501_01/server.920/a96533/rbo.htm
+
 # 执行引擎
 
 【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46

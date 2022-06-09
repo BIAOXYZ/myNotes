@@ -353,6 +353,10 @@ pg_query_state: Tool for query progress monitoring in PostgreSQL https://github.
 - > This Go library and its cgo extension use the actual PostgreSQL server source to parse SQL queries and return the internal PostgreSQL parse tree.
 - > You can find further background to why a query's parse tree is useful here: pganalyze.com/blog/parse-postgresql-queries-in-ruby.html
 
+PgSQL · 特性分析 · Plan Hint http://mysql.taobao.org/monthly/2016/01/09/
+
+PostgreSQL SQL HINT的使用(pg_hint_plan) https://billtian.github.io/digoal.blog/2016/02/03/01.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 
