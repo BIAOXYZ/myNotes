@@ -17,6 +17,9 @@
 《倚天屠龙记》中，张无忌为什么选择了赵敏？ - 知乎 https://www.zhihu.com/question/21456233
 - 《倚天屠龙记》中，张无忌为什么选择了赵敏？ - There There的回答 - 知乎 https://www.zhihu.com/question/21456233/answer/129682392
 
+倚天四美，赵敏为什么会是最晚出场？ - 知乎 https://www.zhihu.com/question/317226304
+- 倚天四美，赵敏为什么会是最晚出场？ - Cohen的回答 - 知乎 https://www.zhihu.com/question/317226304/answer/631417900
+
 张无忌打架时是如何做到忘记腰里挂着一百多斤的屠龙刀的？ - 知乎 https://www.zhihu.com/question/425864594
 - 张无忌打架时是如何做到忘记腰里挂着一百多斤的屠龙刀的？ - 严志意的回答 - 知乎 https://www.zhihu.com/question/425864594/answer/1540523024
   * > 俞岱岩在不知情的情况下轻轻提着龙套老头头发加屠龙刀飞走，然后轻轻放在地上。拿过刀才知道老头为何这么沉重。
