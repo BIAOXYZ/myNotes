@@ -7,6 +7,8 @@ Segment tree https://en.wikipedia.org/wiki/Segment_tree || 线段树 https://zh.
 
 线段树 https://oi-wiki.org/ds/seg/
 
+线段树 https://cp-wiki.vercel.app/data-structure/segment-tree/
+
 # 已阅
 
 [算法]线段树的python实现 https://blog.csdn.net/qq_33935895/article/details/102806357
