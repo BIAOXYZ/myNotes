@@ -7,6 +7,8 @@
 
 动画详解常用排序算法（1） https://mp.weixin.qq.com/s/XxmnKGLfstgbWjoj-eWddg
 
+十大排序从入门到入赘 -- 从今天起，与「排序」一刀两断 https://leetcode.cn/circle/discuss/eBo9UB/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
