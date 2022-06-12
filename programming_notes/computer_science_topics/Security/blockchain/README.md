@@ -5,3 +5,7 @@ FISCO BCOS https://github.com/FISCO-BCOS/FISCO-BCOS || https://fisco-bcos-doc.re
 中国信通院：“星火・链网”底层区块链平台（BIF-Core）Go 版本 SDK 已实现开源 https://www.ithome.com/0/612/347.htm
 - > IT之家了解到，“星火・链网”底层区块链平台（BIF-Core）是中国信通院自主研发的许可公有链，是“星火・链网”核心组成部分。具有自主可控、强安全、高性能、可扩展的技术特点。“星火・链网”底层区块链平台（BIF-Core）于 2021 年 8 月 3 日正式发布，标志“星火・链网”主链正式启动运行并开始向全球进行服务。
 - > Github 代码库地址：https://github.com/caict-4iot-dev/BIF-Core-SDK-Go
+
+# 以太坊
+
+《精通以太坊——实现数字合约》 中文版 https://github.com/inoutcode/ethereum_book

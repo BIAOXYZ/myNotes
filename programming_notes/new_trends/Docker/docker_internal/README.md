@@ -5,6 +5,8 @@ Docker 核心技术与实现原理 https://draveness.me/docker
 - > 当前机器上有很多的进程正在执行，在上述进程中有两个非常特殊，一个是 `pid` 为 1 的 `/sbin/init` 进程，另一个是 `pid` 为 2 的 `kthreadd` 进程，这两个进程都是被 Linux 中的上帝进程 `idle` 创建出来的，其中前者负责执行内核的一部分初始化工作和系统配置，也会创建一些类似 `getty` 的注册进程，而后者负责管理和调度其他的内核进程。
 - > 每一个使用 docker run 启动的容器其实都具有单独的网络命名空间，Docker 为我们提供了四种不同的网络模式，`Host`、`Container`、`None` 和 `Bridge` 模式。
 
+docker源码学习和注解(基于docker 1.2.0) https://github.com/yifengyou/docker1.2.0
+
 ## OverlayFS
 
 【[`*`][:star:]】：

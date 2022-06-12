@@ -212,6 +212,9 @@ WorkerLivesMatter https://github.com/ZhangNanBei/WokerLifeMatters
 CN.Remote.Jobs https://github.com/xubaifuCode/CN.Remote.Jobs
 - > 汇集在中国地区支持全远程/混合远程办公的公司。
 
+remote-jobs-in-china https://github.com/LinuxSuRen/remote-jobs-in-china
+- > 来自中国的支持远程办公的公司 https://linuxsuren.github.io/remote-jobs-in-china/
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 Hotpot计划是复旦留学申请数据开源计划的代称，旨在为复旦学弟学妹无偿分享留学申请经验、暑研动态、美国生活/工作等一切相关信息。 https://github.com/fdu-cooks/fdu-gradhotpot
