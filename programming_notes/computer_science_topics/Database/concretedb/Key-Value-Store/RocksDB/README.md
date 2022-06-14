@@ -10,6 +10,10 @@ RocksDB https://en.wikipedia.org/wiki/RocksDB
 
 RocksDB 写入流程详解 - 张友东的文章 - 知乎 https://zhuanlan.zhihu.com/p/33389807
 
+# 性能
+
+rocksdb和leveldb性能比较——写性能 https://blog.51cto.com/u_15127503/4069398
+
 # 其他
 
 【from `CockroachDB`】

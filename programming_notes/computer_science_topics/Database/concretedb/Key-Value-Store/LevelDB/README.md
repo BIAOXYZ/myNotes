@@ -11,7 +11,9 @@ LevelDB key/value database in Go. https://github.com/syndtr/goleveldb
 LevelDB 原理解析：数据的读写与合并是怎样发生的？ https://www.infoq.cn/article/h0bmx47zzmjt9yqlpavw || https://mp.weixin.qq.com/s/LIENlLDeF8shOnvhksR9RQ
 
 【from draveness】:
-- 浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
+- 浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb || https://www.infoq.cn/article/fx6aXJ7ijkPlQwPWKalS
+
+leveldb-handbook https://github.com/rjl493456442/leveldb-handbook || https://leveldb-handbook.readthedocs.io/zh/latest/
 
 深入浅出LevelDB https://mrcroxx.github.io/categories/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAleveldb/
 - 深入浅出LevelDB —— 01 Architecture https://mrcroxx.github.io/posts/code-reading/leveldb-made-simple/1-architecture/
@@ -24,6 +26,9 @@ LevelDB源码剖析 https://www.zhihu.com/column/c_1282795241104465920
 
 LevelDB 完全解析 https://www.zhihu.com/column/c_1258068131073183744
 - LevelDB 完全解析（9）：写操作 - FOCUS的文章 - 知乎 https://zhuanlan.zhihu.com/p/149796289
+
+当前标签：leveldb https://www.cnblogs.com/xueqiuqiu/tag/leveldb/
+- LevelDB的源码阅读（三） Put操作 https://www.cnblogs.com/xueqiuqiu/p/8296324.html
 
 LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
 
@@ -45,4 +50,12 @@ LevelDB C API 整理分类 https://www.cnblogs.com/pandang/p/7279306.html
 
 # LevelDB 性能
 
+LevelDB性能分析和表现 https://www.51cto.com/article/267852.html
+
+leveldb(ssdb)性能、使用场景评估 https://www.cnblogs.com/lulu/p/4231810.html
+
+键值数据库LevelDB的优缺点及性能分析 https://www.modb.pro/db/181292
+
 从LevelDB谈存储与检索 https://juejin.cn/post/6844904113122050055
+
+【深度知识】区块链数据库LevelDB从入门到原理详解 https://learnblockchain.cn/article/728

@@ -41,6 +41,8 @@ we limit the number of accounts each phone number can create.
 - 如何绕过手机验证注册Gmail？ - 叶缘宫子的回答 - 知乎 https://www.zhihu.com/question/25557767/answer/533562381
 >> 这个回答第一句提到了`"2018年11月17号Gmail最新方法两种诡异的方法第一种:密码强度越高就可以跳过验证步骤..."`，我于是换了一个巨复杂的密码，然后。。。虽然没有跳过手机验证，但是不会提示该手机号不能用于验证了————所以我推测是密码不能相同（因为前几天刚申请了gmail一个准备以后所有的开源都用那个gmail账号），手机号那步就可以过了。
 
+gmail两步验证导致QQ邮箱网页版代收失败：《[请问大家的网页版 QQ 邮箱最近代收 gmail 正常吗？](https://www.v2ex.com/t/859070)》
+
 # 手机安全
 
 工信部上线“一证通查”业务：可查询用户名下电话卡数量 https://www.ithome.com/0/575/434.htm
