@@ -158,7 +158,7 @@ Thread-1 sell a ticket and -1 tickets left
 Exit main thread
 ```
 >> //notes：每次run的结果不一定相同，也可能是下面的输出：
-```
+```console
 init thread:Thread-1
 init thread:Thread-2
 Thread-1 sell a ticket and 19 tickets left
