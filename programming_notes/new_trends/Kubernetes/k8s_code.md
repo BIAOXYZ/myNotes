@@ -65,6 +65,13 @@ kubernetes 源码分析 https://zhuanlan.zhihu.com/c_1195294063723929600
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 源码分析视频
+
+K8s源码品读Phase1-核心流程串讲 https://space.bilibili.com/293775192/channel/collectiondetail?sid=172926
+- P5 5.kube-apiserver 权限相关的三个核心概念 https://www.bilibili.com/video/BV1FK4y1E7qw?p=5
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # kubeadm相关源码/流程
 
 kubeadm源码分析（内含kubernetes离线包，三步安装） https://www.kubernetes.org.cn/4015.html
@@ -140,9 +147,13 @@ Kubernetes CRD Finalizer https://stackoverflow.com/questions/53057185/kubernetes
 
 # RBAC及权限管理相关源码
 
-Kubernetes RBAC源码解析 https://segmentfault.com/a/1190000015997974
+Kubernetes RBAC源码解析 https://segmentfault.com/a/1190000015997974 || https://developer.aliyun.com/article/680025
 
 kubernetes源码分析之RBAC https://blog.csdn.net/u010278923/article/details/71194442
+
+使用kubectl访问Kubernetes集群时的身份验证和授权 https://tonybai.com/2018/06/14/the-authentication-and-authorization-of-kubectl-when-accessing-k8s-cluster/
+
+K8S源码分析4：用户认证机制 https://jeffdingzone.com/2021/06/k8s%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%904%EF%BC%9A%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

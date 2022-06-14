@@ -34,6 +34,9 @@ Harbor 源码分析之API（四） https://blog.csdn.net/u010278923/article/deta
 
 Harbor中的用户密码加密机制探究 http://phantom0301.cc/2017/02/08/harborpass/
 
+#harbor https://www.qikqiak.com/tags/harbor/
+- Harbor 源码浅析 https://www.qikqiak.com/post/harbor-code-analysis/
+
 ## harbor其他
 
 A CLI tool for the Docker Registry Harbor https://github.com/int32bit/python-harborclient

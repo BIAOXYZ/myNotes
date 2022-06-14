@@ -257,6 +257,8 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 
 Kubernetes中的用户权限管理实战【详细步骤】 https://blog.csdn.net/marlinlm/article/details/122118170
 
+一文读懂k8s RBAC权限控制 https://www.cnblogs.com/eggs0/p/15474352.html || https://cloud.tencent.com/developer/article/1896427
+
 ### kubernetes Security Context
 - Configure a Security Context for a Pod or Container https://v1-17.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/
 
