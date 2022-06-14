@@ -8,7 +8,7 @@ LevelDB key/value database in Go. https://github.com/syndtr/goleveldb
 
 # LevelDB 原理/源码
 
-LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
+LevelDB 原理解析：数据的读写与合并是怎样发生的？ https://www.infoq.cn/article/h0bmx47zzmjt9yqlpavw || https://mp.weixin.qq.com/s/LIENlLDeF8shOnvhksR9RQ
 
 【from draveness】:
 - 浅析Bigtable和LevelDB的实现 https://draveness.me/bigtable-leveldb
@@ -18,6 +18,14 @@ LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768
 - 深入浅出LevelDB —— 10 Read & Write https://mrcroxx.github.io/posts/code-reading/leveldb-made-simple/10-read-write/
 
 漫谈 LevelDB 数据结构（三）：LRU 缓存（ LRUCache） - 木鸟杂记的文章 - 知乎 https://zhuanlan.zhihu.com/p/370972240
+
+LevelDB源码剖析 https://www.zhihu.com/column/c_1282795241104465920
+- [LevelDB] 存储3：有备无患——WAL - zw Huang的文章 - 知乎 https://zhuanlan.zhihu.com/p/258091002
+
+LevelDB 完全解析 https://www.zhihu.com/column/c_1258068131073183744
+- LevelDB 完全解析（9）：写操作 - FOCUS的文章 - 知乎 https://zhuanlan.zhihu.com/p/149796289
+
+LevelDB详解 - CSDN博客 https://blog.csdn.net/linuxheik/article/details/52768223
 
 Leveldb二三事 https://segmentfault.com/a/1190000009707717
 
@@ -31,6 +39,10 @@ leveldb编译与调试 http://mingxinglai.com/cn/2015/08/gdb-leveldb/
 
 # LevelDB 使用
 
-leveldb 日常使用 https://juejin.cn/post/6844903978061283341
+leveldb 日常使用 https://juejin.cn/post/6844903978061283341 || https://quant67.com/post/db/leveldb/ussage.html
 
 LevelDB C API 整理分类 https://www.cnblogs.com/pandang/p/7279306.html
+
+# LevelDB 性能
+
+从LevelDB谈存储与检索 https://juejin.cn/post/6844904113122050055

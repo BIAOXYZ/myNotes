@@ -135,7 +135,7 @@ k8s、docker源码分析、读书笔记 https://github.com/Kevin-fqh/learning-k8
 🚀 fullstack tutorial 2019，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试 https://github.com/frank-lam/fullstack-tutorial
 > https://frank-lam.github.io/fullstack-tutorial/
 
-## 系统设计
+# 系统设计
 
 The System Design Primer https://github.com/donnemartin/system-design-primer
 - 系统设计入门 https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md
@@ -158,3 +158,13 @@ PershingSquared https://www.zhihu.com/column/c_1253614849646895104
     >> //notes：注：有些[文章](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)里 ***`Write-Behind` cache*** 也被称为 ***``Write-Back` cache***。
 
 A Hitchhiker’s Guide to Caching Patterns https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/
+
+## system design interview from Youtube
+
+花花酱 系统设计 - System Design https://www.youtube.com/playlist?list=PLLuMmzMTgVK4RuSJjXUxjeUt3-vSyA1Or
+- [CC] How to Design Twitter - System Design EP1 https://www.youtube.com/watch?v=PMCdWr6ejpw
+- [CC] How to design Youtube/Bilibili? System Design EP2 https://www.youtube.com/watch?v=mp-OSK6jm1c
+
+#systemdesign https://www.youtube.com/hashtag/systemdesign
+- Amazon System Design Interview: Design Parking Garage https://www.youtube.com/watch?v=NtMvNh0WFVM
+- System Design Interview: Design Netflix https://www.youtube.com/watch?v=VvZf7lISfgs
