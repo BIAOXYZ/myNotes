@@ -16,6 +16,8 @@ lsm 或者 b+树都是对于早期机械硬盘而设计的数据库结构，像l
 - > 有点像bitcask
 - 自查链接:
   * 如何理解SSD的写放大? - 知乎 https://www.zhihu.com/question/31024021
+    + 如何理解SSD的写放大? - 瞎折腾DIY的回答 - 知乎 https://www.zhihu.com/question/31024021/answer/110423556
+  * 写入放大 https://zh.wikipedia.org/wiki/%E5%86%99%E5%85%A5%E6%94%BE%E5%A4%A7
   * WiscKey：LSM-Tree 写放大优化 https://www.jianshu.com/p/1b438f850844
 
 今天被朋友问到一个问题，如果有1亿条数据，深度limit时，怎么优化？我是这么回答的，有木有问题。 https://maimai.cn/web/gossip_detail?src=app&webid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiYWJiNzBlNjA2YzU4MTFlYWI2Zjc4MDE4NDRlNTAxOTAiLCJ1IjoxOTU4OTUxOTUsImlkIjoyNTU0NDg0N30.QMz3eiKFEn9HHF0RC1efsV3l5BKfPqCEsB36T3n75Bo
