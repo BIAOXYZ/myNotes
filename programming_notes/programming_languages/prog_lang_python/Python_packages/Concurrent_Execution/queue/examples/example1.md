@@ -91,6 +91,28 @@ queue https://www.liujiangblog.com/course/python/59
 ## 个人实战文章里的例子
 
 ```py
+# 这个改编了文章里的例子，不完全一样。
+
+import queue
+q = queue.Queue(5)
+q.put(1)
+q.put(2)
+q.put(3)
+print(123)
+q.get()  # 1
+q.get()  # 2
+q.get()  # 3
+print("Will start to block")
+q.get()  # 阻塞了
+print(456)  # 456是不会print出来的，因为第四个 get 操作阻塞了。
+```
+```console
+123
+Will start to block
+
+```
+
+```py
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import time
