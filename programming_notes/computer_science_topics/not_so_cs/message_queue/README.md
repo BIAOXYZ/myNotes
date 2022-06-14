@@ -27,18 +27,6 @@ Distributed Task Queue (development branch) http://celeryproject.org
 - > celery 就是个玩具级别的项目，谁用谁被坑
 - > 自己用 redis 实现吧，celery 已经被我们抛弃了
 
-# Kafka
-
-一篇文章带你逆袭 Kafka https://mp.weixin.qq.com/s/j8J762sBLKuS4O0JgVsq6w
-
-Kafka 架构原理解析 https://mp.weixin.qq.com/s/gxl3A_YaqTooa-Wb8WrYzg
-
-kafka解决了什么问题? - 知乎 https://www.zhihu.com/question/53331259
-
-Kafka 如果丢了消息，怎么处理？ https://mp.weixin.qq.com/s/TcN5kslQxRQOBlkSjg7_Sg
-
-Kafka 宕机引发的高可用问题 https://mp.weixin.qq.com/s/7_8uOzpPD6XTw3L3cRAk8g
-
 # Pulsar
 
 - 选择Pulsar而不是Kafka的7大理由 https://mp.weixin.qq.com/s/9FJVEtvJuH4amkD96ssAyA
