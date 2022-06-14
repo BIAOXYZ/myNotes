@@ -54,9 +54,9 @@ http://www.jb51.net/article/89425.htm
 【循序渐进学Python】系列 http://www.cnblogs.com/IPrograming/category/476786.html
 - 【循序渐进学Python】10.模块和包 http://www.cnblogs.com/IPrograming/archive/2013/11/24/Python_module_package.html
 
-📖《Python Parallel Programming Cookbook》中文版 https://github.com/laixintao/python-parallel-programming-cookbook-cn || https://github.com/laixintao/python-parallel-programming-cookbook-cn
-> Python并行编程 中文版 https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/index.html
-- 6.使用Lock进行线程同步 https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/chapter2/06_Thread_synchronization_with_Lock_and_Rlock.html || https://github.com/laixintao/python-parallel-programming-cookbook-cn/blob/master/chapter2/06_Thread_synchronization_with_Lock_and_Rlock.rst 
+~~📖《Python Parallel Programming Cookbook》中文版 https://github.com/laixintao/python-parallel-programming-cookbook-cn~~
+> ~~Python并行编程 中文版 https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/index.html~~
+>> //已转移。
 
 Python 黑魔法手册 https://github.com/iswbm/magic-python || http://magic.iswbm.com/zh/latest/
 > 这哥们还有一本Go的入门书也可以：https://github.com/iswbm/GolangCodingTime || http://golang.iswbm.com/en/latest/
