@@ -4,6 +4,9 @@
 随笔分类 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/category/1231156.html
 - 写在最前面 - 《看懂每一行代码 - kubernetes》 https://www.cnblogs.com/cloudgeek/p/9194998.html
 
+https://draveness.me/tags/kubernetes
+- 从 Kubernetes 中的对象谈起 https://draveness.me/kubernetes-object-intro/
+
 【by 张忠琳】：
 - 【kubernetes/k8s源码分析】operator controller-runtime源码分析 https://blog.csdn.net/zhonglinzhang/article/details/105023103
 - 【kubernetes/k8s源码分析】client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
@@ -176,6 +179,8 @@ Kubernetes scheduler学习笔记 https://mp.weixin.qq.com/s/EWXHBDV562qsJcMz1_ps
 Kubernetes1.5源码分析(二) apiServer之资源注册 https://segmentfault.com/a/1190000008700595
 
 K8S日志库源码分析：klog https://bamboox.online/2019/10/01/k8s-klog/
+
+[Day20] 開發自定義控制器前，需要先了解的東西 Part1 https://ithelp.ithome.com.tw/articles/10225088
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

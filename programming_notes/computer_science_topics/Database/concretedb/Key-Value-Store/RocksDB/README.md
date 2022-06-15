@@ -12,6 +12,10 @@ RocksDB https://en.wikipedia.org/wiki/RocksDB
 
 # RocksDB 原理/源码
 
+布隆过滤器（Bloom Filter）在MyRocks中的使用分析 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/89687002
+
+RocksDB零基础学习(五)  SSTable（Sorted Sequence Table） - Lavender的文章 - 知乎 https://zhuanlan.zhihu.com/p/165399524
+
 RocksDB 写入流程详解 - 张友东的文章 - 知乎 https://zhuanlan.zhihu.com/p/33389807
 
 # 性能
