@@ -33,8 +33,8 @@
     ```
   * > 从Pod的定义来看，它继承了`metav1.TypeMeta`和`metav1.ObjectMeta`两个类型，同时还定义了`Spec`和`Status`两个成员变量。其实kubernetes绝大部分API对象的类型都是这个结构，他们都继承metav1.TypeMeta和metav1.ObjectMeta，前者用于定义类型的属性，后者用于定义对象的公共属性；Spec用于定义API对象类型的私有属性，也是API对象之间的区别所在(例如Pod和Deployment虽然都继承了两个父类，但是他们二者的区别就是通过Spec实现的。就像是同一对父母的两个孩子，有像的地方，更多的还是不像的地方让他们成为了两个独立的个体，这就是继承的魅力所在)；Status则是用于描述每个对象的状态的，这和每个对象的类型紧密相关的。***细心的读者不难发现，`metav1.TypeMeta`和`metav1.ObjectMeta`对应的是xxx.yaml中的`kind`、`apiVersion`和`metadata`字段，`Spec`对应xxx.yaml中`spec`字段。这一点在代码注释`json:...`可以证实，这里也可以得出另一个结论，那就是xxx.yaml就是Pod类型yaml的序列化***。所以，kubectl create -f xxx.yaml就等同于new(Pod)。
     > 
-    > 此处要对metav1.TypeMeta和metav1.ObjectMeta多说两句，可以把他们两个看做是kubernetes全部API对象的基类，类似java中的Object类。语言因为有编译器的存在，类似metav1.TypeMeta的东西被编译屏蔽了，所以开发者看到的所有的类继承于Object。***但在kubernetes中，每个API对象都需要`metav1.TypeMeta`字段用于描述自己是什么类型，这样才能构造相应类型的对象，所以相同类型的所有对象的`metav1.TypeMeta`字段都是相同的***。但是metav1.ObjectMeta则不同，它是定义对象的公共属性，即所有对象都应该具备的属性。这部分就是和对象本身相关，和类型无关，***所以相同类型的所有对象的`metav1.ObjectMeta`可能是不同的***。
-  * > 在kubernetes的API对象中除了单体对象外，还有对象列表类型，用于描述一组对象，等同于golang中的slice。对象列表的典型应用场景就是列举，对象列表就可以表达一组对象。可能有些读者会问为什么不用对象的slice，例如[]Pod，伴随着笔者对对象列表的解释读者就会理解，此处以`PodList`为例进行分析：
+    > ***此处要对`metav1.TypeMeta`和`metav1.ObjectMeta`多说两句，可以把他们两个看做是kubernetes全部API对象的基类***，类似java中的Object类。语言因为有编译器的存在，类似metav1.TypeMeta的东西被编译屏蔽了，所以开发者看到的所有的类继承于Object。***但在kubernetes中，每个API对象都需要`metav1.TypeMeta`字段用于描述自己是什么类型，这样才能构造相应类型的对象，所以相同类型的所有对象的`metav1.TypeMeta`字段都是相同的***。但是`metav1.ObjectMeta`则不同，***它是定义对象的公共属性，即所有对象都应该具备的属性。这部分就是和对象本身相关，和类型无关，所以相同类型的所有对象的`metav1.ObjectMeta`可能是不同的***。
+  * > 在kubernetes的API对象中除了***单体对象***外，还有***对象列表***类型，用于描述一组对象，等同于golang中的slice。对象列表的典型应用场景就是列举，对象列表就可以表达一组对象。可能有些读者会问***为什么不用对象的slice，例如`[]Pod`***，伴随着笔者对对象列表的解释读者就会理解，此处以`PodList`为例进行分析：
     ```go
     // 代码源自k8s.io/api/core/v1/types.go
     type PodList struct {
@@ -51,7 +51,7 @@
         Items []Pod `json:"items" protobuf:"bytes,2,rep,name=items"`
     }
     ```
-  * > 前面已经解释了Pod的定义，PodList就不多解释了。此处做一个小结：
+  * > 前面已经解释了Pod的定义，`PodList`就不多解释了。此处做一个小结：
     ```console
     metav1.TypeMeta和metav1.ObjectMeta是所有API单体对象的父类；
     metav1.TypeMeta和metav1.ListMeta是所有API列表对象的父类；
