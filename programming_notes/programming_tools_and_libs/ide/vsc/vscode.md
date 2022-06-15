@@ -255,6 +255,14 @@ Go in Visual Studio Code https://code.visualstudio.com/docs/languages/go
 
 VSCode基础使用+VSCode调试python程序入门 https://blog.csdn.net/u013600225/article/details/52971528
 
+vscode - 设置 Python 版本 https://blog.csdn.net/Marryvivien/article/details/113487151
+```console
+使用快捷键 Ctrl+Shift+P 打开命令窗口:
+选择 “Python: Select Interpreter”，弹窗显示现有的 Python 版本:
+回车选择需要的Python 版本即可。
+```
+>> //notes：本来选择 Python 解释器在 vsc 界面最下方点一下就行，但是有时候（or 有的版本？）最下面不出现这个让你选择解释器的选项。。。
+
 ## vsc and conda
 
 VS Code终端环境错误造成问题 -- 文件无法编译并且终端无任何显示 https://hbaaa.github.io/2020/05/30/vscode%E7%BB%88%E7%AB%AF%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E5%86%85%E5%AE%B9/

@@ -108,4 +108,11 @@ $
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+### `bz2` 模块找不到
+>> //notes：碰到这个问题的场景是机器自带的是 python2.7 和 python3.5，于是自己编译了一个 Python3.7。但是编译安装的时候机器上还没有安装 `bz2`。解决办法也很简单：`apt` 或者 `yum` 安装下 `bz2`，然后把自己编译的那个 python 再重新编译安装一下即可。
+
+'bz2 is module not available' when installing Pandas with pip in python virtual environment https://stackoverflow.com/questions/22346269/bz2-is-module-not-available-when-installing-pandas-with-pip-in-python-virtual
+
+missing python bz2 module https://stackoverflow.com/questions/12806122/missing-python-bz2-module
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
