@@ -251,6 +251,15 @@ Go's "omitempty" explained https://www.sohamkamani.com/golang/2018-07-19-golang-
 
 Go_14：GoLang中 json、map、struct 之间的相互转化 https://www.cnblogs.com/liang1101/p/6741262.html
 
+### 第二批
+
+How To Use Struct Tags in Go https://www.digitalocean.com/community/tutorials/how-to-use-struct-tags-in-go
+
+Golang中 json tag 标签的作用和用法讲解 https://www.cnblogs.com/FengZeng666/p/14987939.html
+- > **参考文章**：
+  * > GO--Json tag标签的作用，json用法讲解：https://blog.csdn.net/qq_33679504/article/details/100533703
+  * > golang-json使用（json tag）：https://blog.csdn.net/somanlee/article/details/106925278
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## go struct
