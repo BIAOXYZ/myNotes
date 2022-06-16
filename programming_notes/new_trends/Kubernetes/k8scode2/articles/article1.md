@@ -1,4 +1,11 @@
 
+kubernetes https://blog.csdn.net/weixin_42663840/category_7840867.html
+
+深入浅出kubernetes之client-go的Indexer https://blog.csdn.net/weixin_42663840/article/details/81530606
+
+深入浅出kubernetes之client-go的SharedInformer https://blog.csdn.net/weixin_42663840/article/details/81699303
+- > 在开始本文内容前，请先阅读《[深入浅出kubernetes之client-go的indexer](https://blog.csdn.net/weixin_42663840/article/details/81530606)》和《[深入浅出kubernetes之client-go的DeltaFIFO](https://blog.csdn.net/weixin_42663840/article/details/81626789)》。
+
 # 1
 
 深入剖析kubernetes的API对象类型定义 https://blog.csdn.net/weixin_42663840/article/details/102558455
@@ -235,13 +242,13 @@
         }
     }
     ```
-  * > 这就为什么Deployment的apiVersion是apps/v1或者extension/v1beta1了，至此可以总结如下：
+  * > 这就为什么`Deployment`的apiVersion是`apps/v1`或者`extension/v1beta1`了，至此可以总结如下：
     ```console
     schema.ObjecKind是所有API对象类型meta的抽象；
     metav1.TypeMeta是schema.ObjecKind的一个实现，API对象类型通过继承metav1.TypeMeta实现schema.ObjecKind；
     ```
 - > **2.3.2 Object**
-  * > 如果说schema.ObjecKind是所有API对象类型的抽象，配合metav1.Object作为所有API单体对象公共属性的抽象，似乎已经找到了所有API对象的根。但是有没有感觉怪怪的，如果想通过一个基类的指针指向任意API单体对象，schema.ObjecKind和metav1.Object感觉都不合适，因为他们所能访问的域是有限。如果有一个函数需要访问任何API对象的类型和公共属性，那么就要传入同一个对象的两个指针（schema.ObjecKind和metav1.Object），这就太让人难以接受了。有没有一个类型作为API单体对象的统一的基类呢？这就是本节要讨论的：runtime.Object(本章节简称 Object)。
+  * > 如果说`schema.ObjecKind`是所有API对象类型的抽象，配合`metav1.Object`作为所有API单体对象公共属性的抽象，似乎已经找到了所有API对象的根。但是有没有感觉怪怪的，如果想通过一个基类的指针指向任意API单体对象，`schema.ObjecKind`和`metav1.Object`感觉都不合适，因为他们所能访问的域是有限。如果有一个函数需要访问任何API对象的类型和公共属性，那么就要传入同一个对象的两个指针（`schema.ObjecKind`和`metav1.Object`），这就太让人难以接受了。有没有一个类型作为API单体对象的统一的基类呢？这就是本节要讨论的：`runtime.Object`(本章节简称 Object)。
     ```go
     // 代码源自k8s.io/apimachinery/pkg/runtime/interfaces.go
     type Object interface {
@@ -280,7 +287,7 @@
         }
     }
     ```
-  * > 等下，为什么没有看到API对象实现runtime.Object.DeepCopyObject()？那是因为deep copy是具体API对象类型需要实现的，存在类型依赖，作为API对象类型的父类不能实现。此处还是以Pod为例，看看Pod是如何实现DeepCopyObject()的。
+  * > 等下，为什么没有看到API对象实现`runtime.Object.DeepCopyObject()`？那是因为deep copy是具体API对象类型需要实现的，存在类型依赖，作为API对象类型的父类不能实现。此处还是以Pod为例，看看Pod是如何实现DeepCopyObject()的。
     ```go
     // +genclient
     // +genclient:method=GetEphemeralContainers,verb=get,subresource=ephemeralcontainers,result=EphemeralContainers
