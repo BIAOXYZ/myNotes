@@ -2,9 +2,13 @@
 kubernetes https://blog.csdn.net/weixin_42663840/category_7840867.html
 
 深入浅出kubernetes之client-go的Indexer https://blog.csdn.net/weixin_42663840/article/details/81530606
+- > **总结**
+  * > 如果读者还对所谓的`索引、索引分类、索引键、对象键`比较混乱的话，我就要拿出我更加大白话的总结了：***所有的对象(Pod、Node、Service等等)都是有属性/标签的，如果属性/标签就是索引键，Indexer就会把相同属性/标签的所有对象放在一个集合中，如果在对属性/标签分一下类，也就是我们本文的将的Indexer的核心内容了***。甚至你可以简单的理解为Indexer就是简单的把相同namesapce对象放在一个集合中，kubernetes就是基于属相/标签检索的，这么理解也不偏颇，方法不重要，只要能帮助理解都是好方法。
 
 深入浅出kubernetes之client-go的SharedInformer https://blog.csdn.net/weixin_42663840/article/details/81699303
 - > 在开始本文内容前，请先阅读《[深入浅出kubernetes之client-go的indexer](https://blog.csdn.net/weixin_42663840/article/details/81530606)》和《[深入浅出kubernetes之client-go的DeltaFIFO](https://blog.csdn.net/weixin_42663840/article/details/81626789)》。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 1
 

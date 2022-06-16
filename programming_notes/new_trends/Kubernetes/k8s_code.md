@@ -9,15 +9,6 @@
 - 【kubernetes/k8s源码分析】client-go Informer分析 https://blog.csdn.net/zhonglinzhang/article/details/86604491
 - 【kubernetes/k8s源码分析】kube-scheduler 源码分析 https://blog.csdn.net/zhonglinzhang/article/details/77197834
 
-【From Draveness's Blog 【面向信仰编程】】： `tag/kubernetes` https://draveness.me/tags/kubernetes
-- 谈 Kubernetes 的架构设计与实现原理 https://draveness.me/understanding-kubernetes/
-- 从 Kubernetes 中的对象谈起 https://draveness.me/kubernetes-object-intro/
-- 详解 Kubernetes Pod 的实现原理 https://draveness.me/kubernetes-pod
-- 详解 Kubernetes Deployment 的实现原理 https://draveness.me/kubernetes-deployment
-- 详解 Kubernetes DaemonSet 的实现原理 https://draveness.me/kubernetes-daemonset
-- 详解 Kubernetes Job 和 CronJob 的实现原理 https://draveness.me/kubernetes-job-cronjob
-- 详解 Kubernetes 垃圾收集器的实现原理 https://draveness.me/kubernetes-garbage-collector
-
 【by 程序员欣宸】：
 - Kubernetes源码学习之一:下载和编译源码 https://blog.csdn.net/boling_cavalry/article/details/88591982
 - Kubernetes深入学习之二:编译和部署镜像(api-server) https://blog.csdn.net/boling_cavalry/article/details/88603293
