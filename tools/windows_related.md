@@ -409,3 +409,5 @@ Qwant https://www.qwant.com/
 Yandex https://yandex.com/
 
 DuckDuckGo https://duckduckgo.com/
+
+Ecosia - the search engine that plants trees https://www.ecosia.org
