@@ -149,6 +149,19 @@ Kubernetes CRD Finalizer https://stackoverflow.com/questions/53057185/kubernetes
 Kubernetes RBAC源码解析 https://segmentfault.com/a/1190000015997974 || https://developer.aliyun.com/article/680025
 
 kubernetes源码分析之RBAC https://blog.csdn.net/u010278923/article/details/71194442
+- > 主要看两个，第一个是Subjects，它就是关联的对象（”User”, “Group”, 和指定命名空间下的： “ServiceAccount”），第二个是RoleRef，他是是角色的关联。可以看上一篇heapster的rbac就理解怎样使用了。kubernetes系统自身组件的运行也是需要这些权限管理的，所以系统初始了一些角色和默认的权限，看代码plugin/pkg/auth/authorizer/rbac/bootstrappolicy/policy.go：
+- > 先看读写权限的定义
+  ```go
+  ReadWrite = []string{"get", "list", "watch", "create", "update", "patch", "delete", "deletecollection"}
+  Read      = []string{"get", "list", "watch"}
+  ```
+  >> //notes：`update` 和 `patch` 的区别可以参见其它地方的笔记。
+- > 上面截取了部分代码，他们是系统角色的定义，譬如cluster-admin角色，它的权限是
+  ```go
+  rbac.NewRule("*").Groups("*").Resources("*").RuleOrDie(),
+  rbac.NewRule("*").URLs("*").RuleOrDie(),
+  ```
+  > 匹配所有规则，所有URL，所有资源，那么它将是一个“root”级别，最高权限，所以在kubernetes中kubectl的证书里面`”O”: “system:masters”`,这个用户组管理的就是`cluster-admin`这个角色，下面会细说。
 
 使用kubectl访问Kubernetes集群时的身份验证和授权 https://tonybai.com/2018/06/14/the-authentication-and-authorization-of-kubectl-when-accessing-k8s-cluster/
 

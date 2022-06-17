@@ -1,4 +1,20 @@
 
+# `patch` v.s. `update`
+
+kubernetes update跟patch区别 https://fafucoder.github.io/2020/09/09/kubernetes-update-patch/
+
+你不了解的K8s资源更新机制，从一个OpenKruise用户疑问开始 https://developer.aliyun.com/article/763212
+- > **更新原理**
+  * > 其实，对一个 Kubernetes 资源对象做“更新”操作，简单来说就是通知 kube-apiserver 组件我们希望如何修改这个对象。而 K8s 为这类需求定义了两种“通知”方式，分别是 update 和 patch。***在 `update` 请求中，我们需要将整个修改后的对象提交给 K8s；而对于 `patch` 请求，我们只需要将对象中某些字段的修改提交给 K8s***。
+- > **Update 机制**
+  * > Kubernetes 中的所有资源对象，都有一个全局唯一的版本号（metadata.resourceVersion）。每个资源对象从创建开始就会有一个版本号，而后每次被修改（***不管是 `update` 还是 `patch` 修改***），版本号都会发生变化。
+  * > K8s 要求用户 update 请求中提交的对象必须带有 resourceVersion，也就是说我们提交 update 的数据必须先来源于 K8s 中已经存在的对象。因此，一次完整的 update 操作流程是：
+  * > ![](https://ata2-img.cn-hangzhou.oss-pub.aliyun-inc.com/1061e09f5b594289771a74e7558ffc1a.png)
+- > **Patch 机制**
+  * > 相比于 update 的版本控制，K8s 的 patch 机制则显得更加简单。
+  * > 当用户对某个资源对象提交一个 patch 请求时，kube-apiserver 不会考虑版本问题，而是“无脑”地接受用户的请求（只要请求发送的 patch 内容合法），也就是将 patch 打到对象上、同时更新版本号。
+  * > 不过，patch 的复杂点在于，目前 K8s 提供了 4 种 patch 策略：`json patch`、`merge patch`、`strategic merge patch`、`apply patch`（从 K8s 1.14 支持 server-side apply 开始）。通过 `kubectl patch -h` 命令我们也可以看到这个策略选项（***默认采用 strategic***）：
+
 # kubectl patch官方页面
 
 使用 kubectl patch 更新 API 对象 https://v1-14.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/ || https://v1-18.docs.kubernetes.io/zh/docs/tasks/run-application/update-api-object-kubectl-patch/ |||| Update API Objects in Place Using kubectl patch https://v1-18.docs.kubernetes.io/docs/tasks/run-application/update-api-object-kubectl-patch/

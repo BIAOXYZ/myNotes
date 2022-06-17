@@ -234,6 +234,8 @@ Kubernetes client-go实战应用 https://juejin.im/post/5bc9d80df265da0ac7272dde
 ### RBAC
 
 - Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/ || 使用 RBAC 鉴权 https://v1-18.docs.kubernetes.io/zh/docs/reference/access-authn-authz/rbac/
+  * > 一个 RoleBinding 可以引用同一的名字空间中的任何 Role。 或者，一个 RoleBinding 可以引用某 ClusterRole 并将该 ClusterRole 绑定到 RoleBinding 所在的名字空间。 如果你希望将某 ClusterRole 绑定到集群中所有名字空间，你要使用 ClusterRoleBinding。
+  * > 创建了绑定之后，你不能再修改绑定对象所引用的 Role 或 ClusterRole。 试图改变绑定对象的 roleRef 将导致合法性检查错误。 如果你想要改变现有绑定对象中 roleRef 字段的内容，必须删除重新创建绑定对象。
   * > **Aggregated ClusterRoles** 
   * > **默认 Roles 和 Role Bindings**
 - Kubernetes kubectl create clusterrolebinding 命令详解 http://docs.kubernetes.org.cn/494.html
@@ -258,6 +260,9 @@ RBAC——基于角色的访问控制 https://jimmysong.io/kubernetes-handbook/g
 Kubernetes中的用户权限管理实战【详细步骤】 https://blog.csdn.net/marlinlm/article/details/122118170
 
 一文读懂k8s RBAC权限控制 https://www.cnblogs.com/eggs0/p/15474352.html || https://cloud.tencent.com/developer/article/1896427
+
+#### aggregationRule
+>> //已转移
 
 ### kubernetes Security Context
 - Configure a Security Context for a Pod or Container https://v1-17.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/
