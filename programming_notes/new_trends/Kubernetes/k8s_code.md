@@ -147,6 +147,24 @@ Kubernetes CRD Finalizer https://stackoverflow.com/questions/53057185/kubernetes
 # RBAC及权限管理相关源码
 
 Kubernetes RBAC源码解析 https://segmentfault.com/a/1190000015997974 || https://developer.aliyun.com/article/680025
+- > `ClusterRole`的结构体：
+  ```go
+  type ClusterRole struct {
+      metav1.TypeMeta
+      metav1.ObjectMeta
+      Rules []PolicyRule
+      AggregationRule *AggregationRule
+  }
+  ```
+  >> 【[:star:][`*`]】 //notes：注意这个 `AggregationRule` 成员，它对应了 `ClusterRole` 的 yaml 文件里的 `aggregationRule` 字段。而 namespace 作用范围内的 `Role` 是没有这个成员/字段的。
+- > `Role`的结构体：
+  ```go
+  type Role struct {
+      metav1.TypeMeta
+      metav1.ObjectMeta
+      Rules []PolicyRule
+  }
+  ```
 
 kubernetes源码分析之RBAC https://blog.csdn.net/u010278923/article/details/71194442
 - > 主要看两个，第一个是Subjects，它就是关联的对象（”User”, “Group”, 和指定命名空间下的： “ServiceAccount”），第二个是RoleRef，他是是角色的关联。可以看上一篇heapster的rbac就理解怎样使用了。kubernetes系统自身组件的运行也是需要这些权限管理的，所以系统初始了一些角色和默认的权限，看代码plugin/pkg/auth/authorizer/rbac/bootstrappolicy/policy.go：

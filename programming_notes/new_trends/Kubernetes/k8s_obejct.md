@@ -233,12 +233,9 @@ Kubernetes client-go实战应用 https://juejin.im/post/5bc9d80df265da0ac7272dde
 
 ### RBAC
 
-- Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/ || 使用 RBAC 鉴权 https://v1-18.docs.kubernetes.io/zh/docs/reference/access-authn-authz/rbac/
-  * > 一个 RoleBinding 可以引用同一的名字空间中的任何 Role。 或者，一个 RoleBinding 可以引用某 ClusterRole 并将该 ClusterRole 绑定到 RoleBinding 所在的名字空间。 如果你希望将某 ClusterRole 绑定到集群中所有名字空间，你要使用 ClusterRoleBinding。
-  * > 创建了绑定之后，你不能再修改绑定对象所引用的 Role 或 ClusterRole。 试图改变绑定对象的 roleRef 将导致合法性检查错误。 如果你想要改变现有绑定对象中 roleRef 字段的内容，必须删除重新创建绑定对象。
-  * > **Aggregated ClusterRoles** 
-  * > **默认 Roles 和 Role Bindings**
-- Kubernetes kubectl create clusterrolebinding 命令详解 http://docs.kubernetes.org.cn/494.html
+~~Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz/rbac/ || 使用 RBAC 鉴权 https://v1-18.docs.kubernetes.io/zh/docs/reference/access-authn-authz/rbac/~~  【//已转移】
+
+Kubernetes kubectl create clusterrolebinding 命令详解 http://docs.kubernetes.org.cn/494.html
 
 k8s的认证-RBAC机制 https://www.cnblogs.com/shuiguizi/p/13143319.html
 

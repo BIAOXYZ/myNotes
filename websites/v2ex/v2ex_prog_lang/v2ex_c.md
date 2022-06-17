@@ -1,4 +1,7 @@
 
+哪位大兄弟给推荐一个简单，无版权风险的 C/C++ log 库？万分感谢 https://www.v2ex.com/t/860294
+- > `spdlog` 吧，性能好，接口易用，许可是 mit 协议的
+
 闲来无聊，修改纯 C 实现一个 http server https://www.v2ex.com/t/857246
 
 怎么通过 VS2019 看 strlen()的源码？ https://www.v2ex.com/t/825671
