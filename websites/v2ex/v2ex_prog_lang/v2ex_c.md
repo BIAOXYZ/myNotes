@@ -1,4 +1,33 @@
 
+gcc 为什么连这种代码都能编译通过？ https://www.v2ex.com/t/860466
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+	char *s = argv[argc-1];
+	printf("%s\n", s);
+
+	char *s2 = argc[argv-1];
+	printf("%s\n", s2);
+
+	return 0;
+}
+```
+```console
+打印最后一个参数，上面的写法是正确的，问题是下面的写法也能编译通过，而且打印输出和上面的写法一样，不明白为什么编译器允许 argc[argv-1] 这种写法。
+```
+- > 问题是把 int 类型直接当成数组用，不符合 c 语言的语法规范啊
+  >> ***实际上数组是个语法糖，本质是指针操作***
+- > `a[b]` 等价于 `*(a + b)`。C 语言标准就是这样规定的。 https://en.cppreference.com/w/c/language/operator_member_access
+- > `a[b]` 就是 `*(a+b)`。加法的两端是可以交换的。所以 `a[b]` 就是 `b[a]`。
+- > `a[3]` 等价于 `3[a]`，c 语言混乱编码里经常看到，最终都是 `*(a+3)` 的意思，至于是不是符合语言规范就不知道了，反正 `gcc` 可以通过
+- > 翻了一下 C 标准，`6.2.5.1 Array subscripting`
+  * > `1: One of the expressions shall have type ‘‘pointer to complete object type’’, the other expression shall have integer type, and the result has type ‘‘type’’.`
+  * > `2: ... The definition of the subscript operator [] is that E1[E2] is identical to (*((E1)+(E2))) ...`
+- > 没有你想的那种巧合，楼上已经讲的很清楚了，因为 `a[b]` 的本质还是指针操作，有：`a[b]=*(a+b)=*(b+a)=b[a]`
+- > 虽然我知道为什么它们相等，也知道符合规范，但是不妨碍我认为这规范就是坨 shi ，这坨 shi 除了玩花样以外没有带来任何用处，`a[b]=*(a+b)=*(b+a)=b[a]` 这个等式只在 a 和 b 当中有 1 个是可以用下标访问的，1 个是整数才成立； 2 个都是可以用下标访问的或都是整数就过不了，这规范跟个八股文似的
+
 哪位大兄弟给推荐一个简单，无版权风险的 C/C++ log 库？万分感谢 https://www.v2ex.com/t/860294
 - > `spdlog` 吧，性能好，接口易用，许可是 mit 协议的
 
