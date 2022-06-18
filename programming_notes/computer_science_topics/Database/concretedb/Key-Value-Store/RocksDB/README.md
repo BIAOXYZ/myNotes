@@ -27,6 +27,11 @@ RocksDB 写入流程详解 - 张友东的文章 - 知乎 https://zhuanlan.zhihu.
 
 rocksdb和leveldb性能比较——写性能 https://blog.51cto.com/u_15127503/4069398
 
+# ~~HDFS支持（放弃吧）~~
+- `rocksdb/hdfs/` https://github.com/facebook/rocksdb/tree/master/hdfs
+- `rocksdb/HISTORY.md` https://github.com/facebook/rocksdb/blob/main/HISTORY.md
+  * > Remove HDFS support from main repo.
+
 # 其他
 
 【from `CockroachDB`】
