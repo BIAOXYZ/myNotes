@@ -52,5 +52,11 @@ Using RBAC Authorization https://kubernetes.io/docs/reference/access-authn-authz
       resources: ["services", "endpoints", "pods"]
       verbs: ["get", "list", "watch"]
     ```
+- > **对主体的引用**
+  * > RoleBinding 或者 ClusterRoleBinding 可绑定角色到某 **主体（Subject）** 上。 主体可以是组，用户或者 服务账户。
+  * > Kubernetes 用字符串来表示用户名。 用户名可以是普通的用户名，像 "alice"；或者是邮件风格的名称，如 "bob@example.com"， 或者是以字符串形式表达的数字 ID。 你作为 Kubernetes 管理员负责配置 [身份认证模块](https://kubernetes.io/zh/docs/reference/access-authn-authz/authentication/) 以便后者能够生成你所期望的格式的用户名。
+  * > 注意：前缀 `system:` 是 Kubernetes 系统保留的，所以你要确保 所配置的用户名或者组名不能出现上述 `system:` 前缀。 除了对前缀的限制之外，RBAC 鉴权系统不对用户名格式作任何要求。
+  * > 在 Kubernetes 中，鉴权模块提供用户组信息。 与用户名一样，用户组名也用字符串来表示，而且对该字符串没有格式要求，只是不能使用保留的前缀 `system:`。
+  * > [服务账户](https://kubernetes.io/zh/docs/tasks/configure-pod-container/configure-service-account/) 的用户名前缀为 `system:serviceaccount:`，属于前缀为 `system:serviceaccounts:` 的用户组。
 - > **默认 Roles 和 Role Bindings**
   * > API 服务器创建一组默认的 ClusterRole 和 ClusterRoleBinding 对象。 这其中许多是以 `system:` 为前缀的，用以标识对应资源是直接由集群控制面管理的。 所有的默认 ClusterRole 和 ClusterRoleBinding 都有 `kubernetes.io/bootstrapping=rbac-defaults` 标签。

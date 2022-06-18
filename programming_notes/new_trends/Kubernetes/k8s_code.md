@@ -81,6 +81,8 @@ Kubernetes搭建之kubeadm-init探究 https://jingwei.link/2018/11/28/kubeadm-in
 
 # client-go相关源码
 
+【[:star:][`*`]】 client-go Examples https://github.com/kubernetes/client-go/tree/master/examples
+
 11.1. client-go的使用及源码分析 https://www.huweihuang.com/kubernetes-notes/develop/client-go.html
 
 Kubernetes源码分析：Client-go https://supereagle.github.io/2017/07/16/k8s-clientgo/
