@@ -4,6 +4,16 @@ Awesome Database Tools https://github.com/mgramin/awesome-db-tools
 Awesome-Database-Testing https://github.com/zhangysh1995/awesome-database-testing
 - > Sysbench - MySQL benchmarks
 
+# 性能测试
+
+ASBench：Another Sysbench https://mp.weixin.qq.com/s/EX3_2LKvq1-zaTOuYcS2-w
+- > ASBench是一款可以同时对Oracle、PostgreSQL和MySQL数据库做性能对比测试的数据库压测工具
+- > 近年来互联网行业的新兴崛起使得诞生了很多的国产数据库，而多数国产数据库都是以去“O”为己任。多数银行、保险、证券等金融公司以及一些政企，如电力也开始使用国产数据库。但如何对这些大量的国产数据库与Oracle进行对比测试，这是一个考验。很多人使用MySQL AB公司出品的sysbench做对比测试。早些年的sysbench，如sysbench0.5版本，可以同时测试Oracle、PostgreSQL和MySQL数据库。因为sysbench的简单易用，同时可以非常灵活的自定义测试SQL和Lua脚本，所以深受大家的喜爱。但从Sysbench1.0版本开始，去掉了对Oracle数据库的支持。而旧版本的sysbench0.5一直没有新发展，一些旧bug也没有修复，导致用户再使用sysbench0.5版本做不同的数据库对比测试时出现了一些问题。
+- > 为了解决大家对不同数据库对比测试的困难，中启乘数科技本着从开源中汲取也奉献于开源的思想，在原先sysbench0.5的源码中做出一个分支，发展了一个开源的测试工具“ASBench”。
+“ASBench”，寓意着“Another Sysbench”，可以继续提供对Oracle数据库测试的支持。 
+- > 新的ASBench的源码在gitee上: https://gitee.com/csudata/asbench
+- > 在Centos7.X下编译好的版本在relase页面看到: https://gitee.com/csudata/asbench/releases/v0.1，可以直接下载使用。
+
 # 其他工具
 
 SQLancer -- Detecting Logic Bugs in DBMS https://github.com/sqlancer/sqlancer || www.sqlancer.com

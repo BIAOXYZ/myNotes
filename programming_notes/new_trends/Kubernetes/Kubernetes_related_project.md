@@ -149,6 +149,10 @@ Kuberneters(K8s)CRD简明及简用 https://www.jianshu.com/p/cc7eea6dd1fb
 - 【kubernetes/k8s概念】CRD CustomResourceDefinition 自定义资源类型 https://blog.csdn.net/zhonglinzhang/article/details/86553744
 
 Kubernetes Operator 快速入门教程（Kubernetes Operator 101） https://github.com/cnych/opdemo || https://www.qikqiak.com/post/k8s-operator-101/
+- > **实现业务逻辑**
+  * > 上面 API 描述声明完成了，接下来就需要我们来进行具体的业务逻辑实现了，编写具体的 controller 实现，打开源文件pkg/controller/appservice/appservice_controller.go，需要我们去更改的地方也不是很多，核心的就是Reconcile方法，该方法就是去不断的 watch 资源的状态，然后根据状态的不同去实现各种操作逻辑，核心代码如下：
+- 回复里的：
+  * > 大佬，oldspec做json反序列化这里应该是取地址的，`json.Unmarshal([]byte(instance.Annotations["spec"]), &oldspec)`
 
 operator sdk 教程 https://github.com/xujiyou/blog-data/blob/88c463ab26/%E4%BA%91%E5%8E%9F%E7%94%9F/Kubernetes/Kubernetes%E6%89%A9%E5%B1%95%E6%9C%BA%E5%88%B6/Operator/operator-sdk%E6%95%99%E7%A8%8B.md
 

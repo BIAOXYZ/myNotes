@@ -42,6 +42,10 @@ PostgreSQL Transparent Data Encryption tool development https://github.com/nec-p
 - Transparent Data Encryption for PostgreSQL `PostgreSQLのセキュリティや保守運用を支えるサブスクリプション` https://jpn.nec.com/tdeforpg/
 - Manual(JA) https://github.com/nec-postgres/tdeforpg/wiki/Manual(JA)
 
+Row-level security on distributed tables https://www.citusdata.com/updates/v11-0/#row-level-sec
+- > Postgres provides [row security policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html) that restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted by data modification commands. This feature is also known as Row-Level Security.
+- > With Citus 11.0, this feature is available for distributed tables as well.
+
 ## DB Security of Oracle
 
 Oracle数据安全解决方案透明数据加密TDE

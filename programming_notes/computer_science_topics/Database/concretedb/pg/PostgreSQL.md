@@ -223,6 +223,9 @@ PostgreSQL 插件编写 https://blog.japinli.top/2018/12/write-postgresql-extens
 
 微软收购Citus Data | 再次肯定对开源的承诺，并加速了Azure PostgreSQL的性能和扩展 https://mp.weixin.qq.com/s/gu4H2JNV4SIbTOGv3kDPPg
 
+v11.0 (Jun 2022) https://www.citusdata.com/updates/v11-0/
+- > Citus is now fully open source!
+
 #### pgcrypto扩展实战
 
 ```
