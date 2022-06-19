@@ -9,3 +9,7 @@ FISCO BCOS https://github.com/FISCO-BCOS/FISCO-BCOS || https://fisco-bcos-doc.re
 # 以太坊
 
 《精通以太坊——实现数字合约》 中文版 https://github.com/inoutcode/ethereum_book
+
+# 其他
+
+🐳 Web3科学家极简入门指南 https://github.com/gm365/Web3_Tutorial

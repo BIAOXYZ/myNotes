@@ -44,3 +44,9 @@ Segment Tree https://cp-algorithms.com/data_structures/segment_tree.html
 LC线段树相关题目：
 - `剑指 Offer 42. 连续子数组的最大和` https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
 - `307. 区域和检索 - 数组可修改` https://leetcode-cn.com/problems/range-sum-query-mutable/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 树状数组
+
+树状数组 https://oi.wiki/ds/fenwick/

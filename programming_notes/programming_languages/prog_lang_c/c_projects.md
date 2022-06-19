@@ -5,6 +5,8 @@ Awesome C https://github.com/kozross/awesome-c
 
 awesome-c https://github.com/aleksandar-todorovic/awesome-c
 
+Awesome C https://github.com/oz123/awesome-c
+
 # tutorial
 
 帮助 C 语言初学者的从入门到“精通” https://github.com/hairrrrr/C-CrashCourse
