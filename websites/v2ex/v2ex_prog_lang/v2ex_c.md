@@ -32,6 +32,8 @@ int main(int argc, char *argv[])
 - > `spdlog` 吧，性能好，接口易用，许可是 mit 协议的
 
 闲来无聊，修改纯 C 实现一个 http server https://www.v2ex.com/t/857246
+- 后续：
+  * 基于上次的 C 语言 http server，仿造做了一个文件上传下载功能。 https://www.v2ex.com/t/860605
 
 怎么通过 VS2019 看 strlen()的源码？ https://www.v2ex.com/t/825671
 - > msvc 的源码是没有公开的。MS 开源了 STL 的部分 https://github.com/microsoft/STL 。`strlen` 的实现比较简单，类似下面这样。你可以参考 `wine` 项目的一些 api 实现。
