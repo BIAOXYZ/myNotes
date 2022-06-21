@@ -1,6 +1,10 @@
 
 # 脉脉技术类其他
 
+一个线程调用两次start没答出来说明我是菜逼吗？ https://maimai.cn/web/gossip_detail?encode_id=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiMWUxOTgxMjM1YjZlNDNiMTkzNzUzNjNiMTU1MDM1NjIiLCJpZCI6MzA1OTMyMTAsInUiOjE5NTg5NTE5NX0.lbEdOJUEzMF42TaImg_cAlufeWIw3WV7rACbcAsNmHE
+- > 报异常 线程状态不对
+- > 线程只能 start 一次，执行完就销毁了，所以要用线程池，让他执行不完
+
 为什么c++没有anaconda这么好用的包管理工具？用python的应该都知道anaconda吧，一键配置所有虚拟环境，安装所有依赖包。为什么C++就要一个一个dependent来安装？对比一下Mac上的homebrew，也可以一键brew install所有的依赖包。 https://maimai.cn/web/gossip_detail?gid=28189773&egid=3cb4e27642ae11ebb454246e96b48088
 - > conan 没用过吗
   >> https://conan.io/ || https://github.com/conan-io/conan
