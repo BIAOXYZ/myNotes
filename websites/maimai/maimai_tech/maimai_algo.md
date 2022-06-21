@@ -1,6 +1,12 @@
 
 # 脉脉算法与数据结构
 
+面试题:一亿个数（范围0-10000），进行排序，什么方法效率最高 https://maimai.cn/web/gossip_detail?encode_id=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZ2lkIjoiYjVjN2UwNWU1MzRhNDE3NDliNGYxYjQ1OGE2MmY3MjciLCJpZCI6MzA2MDg4NDYsInUiOjE5NTg5NTE5NX0.wet4RMxJFBoxtUqvGiCFya-4Qcupuoysk_Y04BVZEEo
+- > 补充一下，每个数为0到10000的整数，所以肯定是有重复的
+- > 招几个外包，一个一个数。
+- > 计数排序 <br> 相似题目1，1亿人如何按照年龄排序？ <br> 相似题目2，5000万高考生如何按照成绩排序？
+- > 长度为10000的一维数组，下标++，最后展开就行了
+
 一人一道常见动态规划，我先来，股票问题 https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mjc3Mjg2MTksImlhdCI6MTYwMzE3Mzg4MH0.kGexaKbTzspEtC4DvRrPpyETJvOMgzX3_rtr7_ukPa4
 - > 最长公共子序列 【LC1143】
   >> 最长公共子序列用正则函数速解，`".*?(.+).*?"`喜提\1
