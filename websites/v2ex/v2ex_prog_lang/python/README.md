@@ -1,4 +1,25 @@
 
+Python 日志输出异常的正确姿势？ https://www.v2ex.com/t/861072
+```console
+项目里为了程序在服务器上长期运行不会中断，在所有可能出异常的位置加了 try / except Exception as e ，
+但是有时候需要根据日志调试错误的时候，捕捉了 e 但是不太好在日志里查看，因为不能直接 raise ，这样的话程序就中断了，
+但是如果打印 e 的话又不包含整个错误的产生链，经常搞不清状况
+```
+- > `logger.error(MSG, ext_info=1)` 呢?
+- > `traceback` 这个库可以打印
+- > `traceback.print_exc()` 把错误堆栈打出来
+- > loguru 直接给你把调用栈写到日志里，还支持输出异常时的变量值便于排查问题，可以试试
+  >> loguru 很好用，试了下 `logger.exception` 打印信息很全。一个问题是这个默认输出的是 error 级别的，有无方法调整成 warning 级别。有一些非关键错误想用 warning ，后面还会接一个日志分析，如果 error 就告警，warning 就忽略之类的。。。
+  >>> https://loguru.readthedocs.io/en/stable/overview.html 设置 level
+- > `logger.exception()`试试
+- > 打印 e 的代码改成 `logger.info(f'exception: {traceback.format_exc()}')` 就可以了。当然如果可以，引入第三方库更好一些
+- > `logging.error("message", exc_info=e)` 就行了啊
+  >> logger.error(msg, exc_info=True) / logging.error(msg, exc_info=True)
+- > 试试 sentry ？
+- > “项目里为了程序在服务器上长期运行不会中断，在所有可能出异常的位置加了 try / except Exception as e” <br> 这个是祸乱之源， 只要最外层捕获错误即可。
+  >> 我也是这样做的，内层只 `raise` ，然后在入口处捕获处理。不知道是不是最佳实践
+- > log.exception(e) 会打印完整错误堆栈
+
 有没有一些高质量的 Python 内容推荐？ https://www.v2ex.com/t/857295
 
 Python3 列表能被闭包函数使用，整数变量却不行呢？ https://www.v2ex.com/t/848218
