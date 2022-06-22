@@ -11,6 +11,10 @@
 ## 实战过程
 
 ```sh
+# "Ubuntu 20.04.3 LTS"，装java用的下面这句：
+apt update
+apt install -y openjdk-13-jdk-headless
+
 #// 一、需要注意两点：1.提前准备好java环境；2.curl那里添加 --insecure 参数。
 cd /usr/local/lib
 curl -O https://www.antlr.org/download/antlr-4.9-complete.jar --insecure
@@ -102,9 +106,178 @@ LabeledExprParser.class
 $ 
 $ java org.example.calc.visitor.Calc
 1+3*4
+Ctrl + D
 ANTLR Tool version 4.6 used for code generation does not match the current runtime version 4.9ANTLR Tool version 4.6 used for code generation does not match the current runtime version 4.9
 13
 $ 
+```
+
+```sh
+#// 如果前面的第二步不想用现成的，想完全一步步来，可以这样：
+mkdir -p ~/test/test2/src/main/calc/org/example/calc/visitor
+cd ~/test/test2/src/main/calc/org/example/calc/visitor/
+
+cat << EOF > ~/test/test2/src/main/calc/org/example/calc/visitor/LabeledExpr.g4
+grammar LabeledExpr; // rename to distinguish from Expr.g4
+ 
+prog:   stat+ ;
+ 
+stat:   expr NEWLINE                # printExpr
+    |   ID '=' expr NEWLINE         # assign
+    |   NEWLINE                     # blank
+    ;
+ 
+expr:   expr op=('*'|'/') expr      # MulDiv
+    |   expr op=('+'|'-') expr      # AddSub
+    |   INT                         # int
+    |   ID                          # id
+    |   '(' expr ')'                # parens
+    ;
+ 
+MUL :   '*' ; // assigns token name to '*' used above in grammar
+DIV :   '/' ;
+ADD :   '+' ;
+SUB :   '-' ;
+ID  :   [a-zA-Z]+ ;      // match identifiers
+INT :   [0-9]+ ;         // match integers
+NEWLINE:'\r'? '\n' ;     // return newlines to parser (is end-statement signal)
+WS  :   [ \t]+ -> skip ; // toss out whitespace
+EOF
+
+# 被下面这句也坑了一会，最后还是对比github仓库里（肯定能运行的版本）和自己用 antlr 生成的版本
+# 对应文件前面的 package 路径才找出来问题（参见下一个代码块，一个diff语句就说明问题了。）
+# antlr4 -package org.example.calc -no-listener -visitor LabeledExpr.g4
+antlr4 -package org.example.calc.visitor -no-listener -visitor LabeledExpr.g4
+
+cat << EOF > ~/test/test2/src/main/calc/org/example/calc/visitor/Calc.java
+package org.example.calc.visitor;
+
+import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.tree.ParseTree;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class Calc {
+
+    public static void main(String[] args) throws IOException {
+        String inputFile = null;
+        if ( args.length>0 ) inputFile = args[0];
+        InputStream is = System.in;
+        if ( inputFile!=null ) is = new FileInputStream(inputFile);
+        ANTLRInputStream input = new ANTLRInputStream(is);
+        LabeledExprLexer lexer = new LabeledExprLexer(input);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        LabeledExprParser parser = new LabeledExprParser(tokens);
+        ParseTree tree = parser.prog(); // parse
+
+        EvalVisitor eval = new EvalVisitor();
+        eval.visit(tree);
+    }
+}
+EOF
+
+cat << EOF > ~/test/test2/src/main/calc/org/example/calc/visitor/EvalVisitor.java
+package org.example.calc.visitor; /***
+ * Excerpted from "The Definitive ANTLR 4 Reference",
+ * published by The Pragmatic Bookshelf.
+ * Copyrights apply to this code. It may not be used to create training material, 
+ * courses, books, articles, and the like. Contact us if you are in doubt.
+ * We make no guarantees that this code is fit for any purpose. 
+ * Visit http://www.pragmaticprogrammer.com/titles/tpantlr2 for more book information.
+***/
+import java.util.HashMap;
+import java.util.Map;
+
+public class EvalVisitor extends LabeledExprBaseVisitor<Integer> {
+    /** "memory" for our calculator; variable/value pairs go here */
+    Map<String, Integer> memory = new HashMap<String, Integer>();
+
+    /** ID '=' expr NEWLINE */
+    @Override
+    public Integer visitAssign(LabeledExprParser.AssignContext ctx) {
+        String id = ctx.ID().getText();  // id is left-hand side of '='
+        int value = visit(ctx.expr());   // compute value of expression on right
+        memory.put(id, value);           // store it in our memory
+        return value;
+    }
+
+    /** expr NEWLINE */
+    @Override
+    public Integer visitPrintExpr(LabeledExprParser.PrintExprContext ctx) {
+        Integer value = visit(ctx.expr()); // evaluate the expr child
+        System.out.println(value);         // print the result
+        return 0;                          // return dummy value
+    }
+
+    /** INT */
+    @Override
+    public Integer visitInt(LabeledExprParser.IntContext ctx) {
+        return Integer.valueOf(ctx.INT().getText());
+    }
+
+    /** ID */
+    @Override
+    public Integer visitId(LabeledExprParser.IdContext ctx) {
+        String id = ctx.ID().getText();
+        if ( memory.containsKey(id) ) return memory.get(id);
+        return 0;
+    }
+
+    /** expr op=('*'|'/') expr */
+    @Override
+    public Integer visitMulDiv(LabeledExprParser.MulDivContext ctx) {
+        int left = visit(ctx.expr(0));  // get value of left subexpression
+        int right = visit(ctx.expr(1)); // get value of right subexpression
+        if ( ctx.op.getType() == LabeledExprParser.MUL ) return left * right;
+        return left / right; // must be DIV
+    }
+
+    /** expr op=('+'|'-') expr */
+    @Override
+    public Integer visitAddSub(LabeledExprParser.AddSubContext ctx) {
+        int left = visit(ctx.expr(0));  // get value of left subexpression
+        int right = visit(ctx.expr(1)); // get value of right subexpression
+        if ( ctx.op.getType() == LabeledExprParser.ADD ) return left + right;
+        return left - right; // must be SUB
+    }
+
+    /** '(' expr ')' */
+    @Override
+    public Integer visitParens(LabeledExprParser.ParensContext ctx) {
+        return visit(ctx.expr()); // return child expr's value
+    }
+}
+EOF
+```
+```sh
+# 然后就是找对路径再编译；以及编译后运行。
+ubuntu $ pwd
+/root/test/test2/src/main/calc
+ubuntu $ 
+ubuntu $ ls
+org
+ubuntu $ 
+ubuntu $ javac org/example/calc/visitor/Calc.java
+Note: org/example/calc/visitor/Calc.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+ubuntu $ 
+ubuntu $ java org.example.calc.visitor.Calc
+1+3*5+3
+19
+ubuntu $ 
+```
+```sh
+# 补充：自己用 antlr 生成时，因路径错误编译不过，然后diff发现的：
+ubuntu $ diff LabeledExprBaseVisitor.java ~/test/forked--db-practice/src/main/calc/org/example/calc/visitor/LabeledExprBaseVisitor.java 
+1,2c1,2
+< // Generated from LabeledExpr.g4 by ANTLR 4.9
+< package org.example.calc;
+---
+> // Generated from .\LabeledExpr.g4 by ANTLR 4.6
+> package org.example.calc.visitor;
 ```
 
 ## 参考链接
