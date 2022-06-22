@@ -352,13 +352,20 @@ cbea428 Initial commit
 // 成功，输出就省略了。
 ```
 
-# rebase妙用：利用`rebase -i`彻底摘除某个commit
+# `git rebase -i`
+
+## rebase妙用：利用`rebase -i`修改中间commit的message
+>> //notes：如果是要修改最后一个commit的message，用 `git commit --amend` 即可。但如果是想修改中间的提交的消息呢？
+
+7.6 Git 工具 - 重写历史 https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%86%99%E5%8E%86%E5%8F%B2
+
+## rebase妙用：利用`rebase -i`彻底摘除某个commit
 
 git删除中间某次提交 https://www.cnblogs.com/qiqi715/p/11540999.html
 
 Git 删除具体某个提交commit的方法 https://www.jianshu.com/p/2fd2467c27bb
 
-## 删除完后github还会有缓存的view，需要联系他们清除。
+### 删除完后github还会有缓存的view，需要联系他们清除。
 
 Please help to remove a commit from Github cached #988968 https://support.github.com/ticket/personal/0/988968
 
