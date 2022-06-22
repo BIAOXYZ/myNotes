@@ -8,7 +8,7 @@
   * > 本文基于四则运算器和使用SQL查询csv数据两个案例阐述了ANTLR4在项目开发中的应用思路和过程，相关的代码可以在[github](https://github.com/shgy/db-practice)上看到。
     >> //notes：另外自己也fork了一个，方便后续回顾： https://github.com/BIAOXYZ/forked--db-practice  -->  因为完全没接触过 java，作者原版仓库里的代码去编译都踩了坑，所以还是 fork 一份省得作者更新后再想回顾的时候更麻烦。。。
 
-## 实战过程
+## 实战过程（第一部分）
 
 ```sh
 # "Ubuntu 20.04.3 LTS"，装java用的下面这句：
@@ -21,7 +21,9 @@ curl -O https://www.antlr.org/download/antlr-4.9-complete.jar --insecure
 export CLASSPATH=".:/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
 alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
 alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+```
 
+```sh
 #// 二、这里不用文章里一步步写的了，直接用作者仓库里的。反正知道怎么写就行。
 mkdir -p ~/test
 cd ~/test/
@@ -113,6 +115,7 @@ $
 ```
 
 ```sh
+# // Another 二、
 #// 如果前面的第二步不想用现成的，想完全一步步来，可以这样：
 mkdir -p ~/test/test2/src/main/calc/org/example/calc/visitor
 cd ~/test/test2/src/main/calc/org/example/calc/visitor/
@@ -145,7 +148,7 @@ WS  :   [ \t]+ -> skip ; // toss out whitespace
 EOF
 
 # 被下面这句也坑了一会，最后还是对比github仓库里（肯定能运行的版本）和自己用 antlr 生成的版本
-# 对应文件前面的 package 路径才找出来问题（参见下一个代码块，一个diff语句就说明问题了。）
+# 对应文件前面的 package 路径才找出来问题（参见后面的代码块，一个diff语句就说明问题了。）
 # antlr4 -package org.example.calc -no-listener -visitor LabeledExpr.g4
 antlr4 -package org.example.calc.visitor -no-listener -visitor LabeledExpr.g4
 
@@ -254,6 +257,7 @@ EOF
 ```
 ```sh
 # 然后就是找对路径再编译；以及编译后运行。
+ubuntu $ cd /root/test/test2/src/main/calc
 ubuntu $ pwd
 /root/test/test2/src/main/calc
 ubuntu $ 
@@ -266,6 +270,7 @@ Note: Recompile with -Xlint:deprecation for details.
 ubuntu $ 
 ubuntu $ java org.example.calc.visitor.Calc
 1+3*5+3
+CTRL+D
 19
 ubuntu $ 
 ```
@@ -280,7 +285,7 @@ ubuntu $ diff LabeledExprBaseVisitor.java ~/test/forked--db-practice/src/main/ca
 > package org.example.calc.visitor;
 ```
 
-## 参考链接
+### 参考链接
 >> //notes：基本没接触过 java，所以开始时甚至用原版的代码都没法验证。。。还是网上搜了搜，参考下面这个文章里靠前的部分，才算编过。。。
   
 第1期：抛开IDE，了解一下javac如何编译 - 毛帅的文章 - 知乎 https://zhuanlan.zhihu.com/p/74229762
@@ -323,3 +328,9 @@ ubuntu $ diff LabeledExprBaseVisitor.java ~/test/forked--db-practice/src/main/ca
     Hello, World!
     ```
     > `-d` 指定了生成class文件的根目录（这里用的是当前目录），并且会根据class的包路径创建子目录。
+
+## 实战过程（第二部分）
+
+```
+
+```
