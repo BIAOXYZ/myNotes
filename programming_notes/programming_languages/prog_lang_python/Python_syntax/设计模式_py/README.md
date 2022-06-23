@@ -18,6 +18,12 @@ Python实现单例模式的几种方式 https://juejin.cn/post/69939444211337134
 
 Python单例模式(Singleton)的N种实现 - Crossin的文章 - 知乎 https://zhuanlan.zhihu.com/p/37534850
 
+# 访问者模式
+
+访问者模式 https://zh.wikipedia.org/wiki/%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F || Visitor pattern https://en.wikipedia.org/wiki/Visitor_pattern
+
+访问者模式 https://www.runoob.com/design-pattern/visitor-pattern.html
+
 # 其他Python编程技巧
 
 ## 减少 if-else 分支
