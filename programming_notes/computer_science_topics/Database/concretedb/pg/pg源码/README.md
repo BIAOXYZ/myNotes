@@ -38,9 +38,6 @@ PostgreSQL B+Tree论文解读1 - 北侠的文章 - 知乎 https://zhuanlan.zhihu
 
 PostgreSQL执行路径生成的代码阅读笔记 https://www.modb.pro/db/12288
 
-PostgreSQL 内核源码分析 https://blog.csdn.net/zxwsbg/category_11618970.html
-- PostgreSQL 中 SELECT 的元组是如何出现的 https://blog.csdn.net/zxwsbg/article/details/119912014
-
 postgres的initdb解析——从一次插件升级失败说起 https://www.cnblogs.com/flying-tiger/p/8385208.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
