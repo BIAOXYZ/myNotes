@@ -167,6 +167,65 @@ Kubernetes RBAC源码解析 https://segmentfault.com/a/1190000015997974 || https
       Rules []PolicyRule
   }
   ```
+- > ClusterRole与Role的结构体定义基本是类似的，角色里面都是关联的Rules规则，一个角色有哪些权限，通过Rules去定义。下面是Rule的结构体定义，主要控制访问的资源、访问URL的限制。
+  ```go
+  type PolicyRule struct {
+      Verbs []string
+      APIGroups []string
+      Resources []string
+      ResourceNames []string
+      NonResourceURLs []string
+  }
+  ```
+- > 这是与ClusterRoleBinding具有相同属性的结构体RoleBinding：
+  ```go
+  type RoleBinding struct {
+      metav1.TypeMeta
+      metav1.ObjectMeta
+      Subjects []Subject
+      RoleRef RoleRef
+  }
+  ```
+  > 这两个结构体主要看两个属性值，第一个是`Subjects`，它是绑定的对象，包括`User`、`Group`、`ServiceAccount`；第二个是`RoleRef`，它是绑定的角色。
+- > **鉴权流程**
+  * > 在了解了kubernetes中角色的定义，并掌握了如何将角色中定义的资源的访问权限赋予给User、Group、ServiceAccount之后，我们需要了解的是，在处理一个API请求时，如何对该请求进行鉴权的处理？
+  * > 在kubernetes中，***所有的请求都会经由apiserver进行处理***。在初始化apiserver时，***若指定了鉴权模式包括了RBAC后，将会注册一个RBAC的Handler模块***。这样，***在apiserver接收请求并处理时，将会调用该Handler，来判断该请求的调用者是否有权限请求该资源***。
+  * > 该Handler位于`staging/src/k8s.io/apiserver/pkg/endpoints/filters/authorization.go`文件中：
+    ```go
+    func WithAuthorization(handler http.Handler, requestContextMapper request.RequestContextMapper, a authorizer.Authorizer, s runtime.NegotiatedSerializer) http.Handler {
+        if a == nil {
+            glog.Warningf("Authorization is disabled")
+            return handler
+        }
+        return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+            ctx, ok := requestContextMapper.Get(req)
+            if !ok {
+                responsewriters.InternalError(w, req, errors.New("no context found for request"))
+                return
+            }
+
+            attributes, err := GetAuthorizerAttributes(ctx)
+            if err != nil {
+                responsewriters.InternalError(w, req, err)
+                return
+            }
+            authorized, reason, err := a.Authorize(attributes)
+            // an authorizer like RBAC could encounter evaluation errors and still allow the request, so authorizer decision is checked before error here.
+            if authorized == authorizer.DecisionAllow {
+                handler.ServeHTTP(w, req)
+                return
+            }
+            if err != nil {
+                responsewriters.InternalError(w, req, err)
+                return
+            }
+
+            glog.V(4).Infof("Forbidden: %#v, Reason: %q", req.RequestURI, reason)
+            responsewriters.Forbidden(ctx, attributes, w, req, reason, s)
+        })
+    }
+    ```
+    > 该Handler做了两件事，***一是根据http request提取出鉴权所需的信息***，通过函数`GetAuthorizerAttributes()`实现，***二是根据提取出的信息，执行鉴权的核心操作，去判断请求的调用者是否有权限操作相关资源***，通过函数`Authorize()`处理。   
 
 kubernetes源码分析之RBAC https://blog.csdn.net/u010278923/article/details/71194442
 - > 主要看两个，第一个是Subjects，它就是关联的对象（”User”, “Group”, 和指定命名空间下的： “ServiceAccount”），第二个是RoleRef，他是是角色的关联。可以看上一篇heapster的rbac就理解怎样使用了。kubernetes系统自身组件的运行也是需要这些权限管理的，所以系统初始了一些角色和默认的权限，看代码plugin/pkg/auth/authorizer/rbac/bootstrappolicy/policy.go：
