@@ -1,4 +1,6 @@
 
+网上流传最广的 Python 单例模式竟然是有问题的？ https://www.v2ex.com/t/861715
+
 Python 日志输出异常的正确姿势？ https://www.v2ex.com/t/861072
 ```console
 项目里为了程序在服务器上长期运行不会中断，在所有可能出异常的位置加了 try / except Exception as e ，
