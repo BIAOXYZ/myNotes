@@ -78,6 +78,16 @@ git commit --amend
 <<Git 的 commit message 写错了，有办法进行修改么？>>
 https://segmentfault.com/q/1010000000761908
 
+Oh Shit, Git!?! https://ohshitgit.com/zh
+- > 哎呦我去，我刚提交 commit 就发现还有一个小改动需要添加！
+```console
+# 继续改动你的文件
+git add . # 或者你可以添加指定的文件
+git commit --amend --no-edit
+# 你这次的改动会被添加进最近一次的 commit 中
+# 警告: 千万别对公共的 commit 做这种操作
+```
+
 ----------------------------------------------------------------------------------------------------
 
 ## 撤销类

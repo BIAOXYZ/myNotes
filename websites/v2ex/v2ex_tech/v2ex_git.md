@@ -1,4 +1,10 @@
 
+在使用 git 时的一些尴尬场景里的修复方案 https://www.v2ex.com/t/862191
+```console
+https://ohshitgit.com
+还有一个简体中文的翻译版本： https://ohshitgit.com/zh
+```
+
 github 个人主页的这个 team 怎么去掉? https://www.v2ex.com/t/848327
 - > 点这个区域右上角的 Contribution settings ，去掉 Activity overview 的勾选即可。
 - > 感谢楼主带领大家发现新大陆
