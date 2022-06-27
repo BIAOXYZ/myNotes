@@ -29,6 +29,8 @@ linux-insides https://github.com/0xAX/linux-insides
 - > **On other languages**
   * > Linux 内核揭秘 https://github.com/MintCN/linux-insides-zh
 
+谢宝友的Linux2.6.11源码注释。linux 2.6.11.12代码注释。主要参考《深入理解LINUX内核第三版》、《深入理解LINUX网络内幕》、《深入理解LINUX虚拟内存管理》等书籍 https://github.com/jasonactions/linux2.6.11_comment
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj
@@ -70,6 +72,11 @@ VLDB Summer School 2021 Labs https://github.com/vldbss-2021/vldb-2021-labs
 ## network project
 
 互联网体系结构/庖丁解牛Linux网络协议栈 https://github.com/mengning/net
+
+开发内功修炼 https://github.com/yanfeizhang/coder-kung-fu
+- 图解Linux网络包接收过程 https://mp.weixin.qq.com/s/GoYDsfy9m0wRoXi_NCfCmg
+
+《深入理解Linux网络（张彦飞）》读书笔记；基于 linux-3.10 版本；修炼底层内功，掌握高性能原理； https://github.com/yifengyou/linux-3.10
 
 ## crypto and security project (hard to be placed into the academic related repo)
 

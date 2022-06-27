@@ -20,6 +20,8 @@ AIOps在美团的探索与实践——故障发现篇 https://mp.weixin.qq.com/s
 MLOps Zoomcamp https://github.com/DataTalksClub/mlops-zoomcamp
 - > Free MLOps course from DataTalks.Club
 
+MLOPs Primer https://github.com/dair-ai/MLOPs-Primer
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ### AIOps公司
