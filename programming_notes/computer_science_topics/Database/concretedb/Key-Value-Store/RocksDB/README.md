@@ -55,3 +55,9 @@ rocksdb随机读性能如何？ - 知乎 https://www.zhihu.com/question/26355012
 RocksDB Is Eating the Database World https://rockset.com/blog/rocksdb-is-eating-the-database-world/
 
 LevelDB vs. RocksDB https://www.modb.pro/db/323288
+
+有哪些数据库用的了RocksDB，有哪些优劣势？ - 知乎 https://www.zhihu.com/question/533045476
+
+HBase和Leveldb、Rocksdb有哪些异同,并做了哪些提升？ - jameswhale的回答 - 知乎 https://www.zhihu.com/question/351366744/answer/862704911
+
+RocksDB 相关资料 https://xie.infoq.cn/article/202df2fa5f9002acd114aa06f

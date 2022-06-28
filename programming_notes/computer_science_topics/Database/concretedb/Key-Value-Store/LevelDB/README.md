@@ -36,6 +36,15 @@ Leveldb二三事 https://segmentfault.com/a/1190000009707717
 
 数据分析与处理之二（Leveldb 实现原理） https://www.cnblogs.com/haippy/archive/2011/12/04/2276064.html
 
+https://juejin.cn/user/3104676535872733/posts
+- LevelDB 入门 —— 全面了解 LevelDB 的功能特性 https://juejin.cn/post/6844903751346716686
+- 鸿篇巨制 —— LevelDB 的整体架构 https://juejin.cn/post/6844903758627864589
+- 深入 LevelDB 数据文件 SSTable 的结构 https://juejin.cn/post/6844903779112845319
+
+LevelDB深入浅出之整体架构 - itworld123的文章 - 知乎 https://zhuanlan.zhihu.com/p/67833030
+- > **设计思路**
+  * > 做存储的同学都很清楚，***对于普通机械磁盘顺序写的性能要比随机写大很多。比如对于15000转的SAS盘，4K写IO， 顺序写在200MB/s左右，而随机写性能可能只有1MB/s左右***。而LevelDB的设计思想正是利用了磁盘的这个特性。 LevelDB的数据是存储在磁盘上的，采用LSM-Tree的结构实现。LSM-Tree将磁盘的随机写转化为顺序写，从而大大提高了写速度。为了做到这一点LSM-Tree的思路是将索引树结构拆成一大一小两颗树，较小的一个常驻内存，较大的一个持久化到磁盘，他们共同维护一个有序的key空间。写入操作会首先操作内存中的树，随着内存中树的不断变大，会触发与磁盘中树的归并操作，而归并操作本身仅有顺序写。
+
 # LevelDB 安装、调试
 
 leveldb编译与调试 http://mingxinglai.com/cn/2015/08/gdb-leveldb/
