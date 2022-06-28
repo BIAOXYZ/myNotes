@@ -322,6 +322,9 @@ ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215
 
 【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46
 - 数据库内核杂谈（四）：执行模式 https://www.infoq.cn/article/spfisufzenc6utrftsdd
+- 数据库内核杂谈（七）：数据库优化器（上） https://www.infoq.cn/article/GhhQlV10HWLFQjTTxRtA
+- 数据库内核杂谈（八）：数据库优化器（下） https://www.infoq.cn/article/JCJyMrGDQHl8osMFQ7ZR
+- 数据库内核杂谈（九）：开源优化器 ORCA https://www.infoq.cn/article/5o16ehoz5zk6fzpsjpt2
 
 SQL是如何在数据库中执行的？ https://segmentfault.com/a/1190000037792613
 
