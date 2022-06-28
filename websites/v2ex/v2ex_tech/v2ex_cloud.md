@@ -1,4 +1,6 @@
 
+k8s pod 莫名奇妙异常 https://www.v2ex.com/t/862678
+
 k8s pod 可以作为固定的 jenkins agent 吗 https://www.v2ex.com/t/855002
 - > k8s pod 作为动态的 agent 是可以的。但考虑 git 代码缓存、maven cache 等如果能作为静态 agent 使用似乎更方便。
 - > 用 volume 做 cache 吧 pod 可以随用随销毁

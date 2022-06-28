@@ -13,3 +13,6 @@ FISCO BCOS https://github.com/FISCO-BCOS/FISCO-BCOS || https://fisco-bcos-doc.re
 # 其他
 
 🐳 Web3科学家极简入门指南 https://github.com/gm365/Web3_Tutorial
+
+有大佬在 web3.0 相关的公司工作吗 能分享下经历吗 https://www.v2ex.com/t/862343
+- > 1 https://cs251.stanford.edu/ <br> 2 https://defi-learning.org/ <br> 书籍 <br> how to defi <br> how to nft <br> 比特币标准
