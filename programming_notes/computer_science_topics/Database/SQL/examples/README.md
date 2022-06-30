@@ -89,7 +89,7 @@ Query id: 1ff71c42-7bba-49e0-bdf1-0ccc078ebf3f
 eef56cb5d207 :) 
 ```
 
-# 3
+## 3
 
 ```sql
 create table cipher_agg_input_a (uid int, val_a1 Float64, val_a2 Float64, val_a3 Float64, cls_a varchar(255)) ENGINE = TinyLog;
@@ -141,4 +141,35 @@ Query id: a41e3e48-42b9-498c-a004-a462276e4209
 3 rows in set. Elapsed: 0.005 sec.
 
 eef56cb5d207 :)
+```
+
+## 4
+
+```sql
+create table filter_input_a (uid int, val int, t int, diag varchar(255), time int) ENGINE = TinyLog;
+insert into filter_input_a values (44969473, 2, 1, 'hd', 23);
+insert into filter_input_a values (1234182, 77, 1, 'aids', 24);
+insert into filter_input_a values (30274561, 1, 2, 'hd', 17);
+insert into filter_input_a values (56520193, 12, 2, 'hd', 29);
+insert into filter_input_a values (11262273, 8, 1, 'aids', 25);
+
+create table filter_input_b (device_id int, age varchar(255), gender varchar(255), date int, y int, med varchar(255), time int) ENGINE = TinyLog;
+insert into filter_input_b values (2245633, '24-30', 'female', 20211130, 1, 'aspirin', 4);
+insert into filter_input_b values (2463745, '50+', 'male', 20211130, 2, 'aspirin', 7);
+insert into filter_input_b values (8897537, '50+', 'male', 20211130, 3, 'hplc', 3);
+insert into filter_input_b values (26351105, '18-23', 'male', 20211130, 2, 'aspirin', 1);
+insert into filter_input_b values (30274561, '50+', 'female', 20211130, 1, 'aspirin', 19);
+insert into filter_input_b values (47116801, '50+', 'male', 20211130, 1, 'hplc', 24);
+insert into filter_input_b values (56520193, '24-30', 'male', 20211130, 3, 'aspirin', 6);
+insert into filter_input_b values (60876801, '18-23', 'female', 20211130, 1, 'aspirin', 8);
+insert into filter_input_b values (86262273, '24-30', 'male', 20211130, 2, 'aspirin', 2);
+insert into filter_input_b values (44969473, '50+', 'female', 20211130, 1, 'aspirin', 5);
+
+--select filter_input_a.val, filter_input_a.t from (
+    select filter_input_a.val, filter_input_a.t, filter_input_b.y, sum(filter_input_b.y), count(filter_input_a.t), count(distinct filter_input_b.y), 
+    quantile(0.2)(filter_input_b.y), quantile(0.8)(filter_input_b.y)
+    from filter_input_a inner join filter_input_b on filter_input_a.uid=filter_input_b.device_id
+    where filter_input_a.diag = 'hd' and filter_input_b.med = 'aspirin' and filter_input_a.time >= filter_input_b.time
+    group by filter_input_a.val, filter_input_a.t, filter_input_b.y
+--);
 ```
