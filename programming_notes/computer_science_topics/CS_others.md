@@ -69,6 +69,10 @@ Build a distributed SQL database from the ground up 从零开始写分布式数�
 
 VLDB Summer School 2021 Labs https://github.com/vldbss-2021/vldb-2021-labs
 
+一份硬核计算机科学CS自学计划 https://github.com/spring2go/cs_study_plan
+- > 产出目标：参考[vanilladb项目](https://github.com/vanilladb/vanillacore)，使用golang语言实现clone版的vanilladb（原项目是Java实现的）。
+  >> //notes： VanillaDB https://www.vanilladb.org/
+
 ## network project
 
 互联网体系结构/庖丁解牛Linux网络协议栈 https://github.com/mengning/net
