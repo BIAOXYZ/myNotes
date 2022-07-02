@@ -106,3 +106,9 @@ Grace Hopper https://en.wikipedia.org/wiki/Grace_Hopper || [格蕾丝·赫柏](h
 2. 但是Butler Lampson这个图灵奖得主在引用的时候没有一字一句对照，变成了：`We can solve any problem by introducing an extra level of indirection.`。于是这两种说法都有了，但是好歹两种说法里都是用的`level of indirection`。
 3. 然后`level of indirection`又经常被众口相传成`abstraction layer`，包括（几乎）所有的中译版。
 4. David Wheeler这哥们还有两句名言，参照上面他的wiki词条吧。
+
+Jerry Sanders: `Real men have fabs`
+- Real men have fabs https://www.wired.com/2008/10/real-men-have-f/
+- Real men have fabs…or do they? https://www.eetimes.com/real-men-have-fabsor-do-they/
+- 破灭与新生，2008 年危机中的半导体产业回顾 https://www.ithome.com/0/627/587.htm
+  * > 2008 年 10 月 7 日，AMD 正式宣布将剥离其晶圆制造业务，转型 Fabless 模式，这家以“好汉都有晶圆厂”而闻名的企业，为半导体商业模式变革树立了一座里程碑。
