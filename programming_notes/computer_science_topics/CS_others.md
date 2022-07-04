@@ -31,6 +31,12 @@ linux-insides https://github.com/0xAX/linux-insides
 
 谢宝友的Linux2.6.11源码注释。linux 2.6.11.12代码注释。主要参考《深入理解LINUX内核第三版》、《深入理解LINUX网络内幕》、《深入理解LINUX虚拟内存管理》等书籍 https://github.com/jasonactions/linux2.6.11_comment
 
+2022年开源操作系统训练营 -- Open-Source OS Training Comp 2022 https://github.com/LearningOS/rust-based-os-comp2022 || https://learningos.github.io/rust-based-os-comp2022/
+
+runninglinuxkernel_4.0 for 《奔跑吧Linux内核》 《奔跑吧Linux内核入门篇》 https://github.com/figozhang/runninglinuxkernel_4.0
+
+《奔跑吧Linux内核》 第二版配套实验平台 https://github.com/figozhang/runninglinuxkernel_5.0
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj
