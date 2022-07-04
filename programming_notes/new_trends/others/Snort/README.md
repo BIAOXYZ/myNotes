@@ -192,3 +192,11 @@ https://zhuanlan.zhihu.com/p/36340468
 - Suricata规则介绍、以及使用suricata-update做规则管理 - raul17的文章 - 知乎 https://zhuanlan.zhihu.com/p/36340468
 - Snort VS Suricata - raul17的文章 - 知乎 https://zhuanlan.zhihu.com/p/34329072
   * Suricata-vs-snort https://www.aldeid.com/wiki/Suricata-vs-snort
+
+# 数据集
+
+The AWID project aspires to act as a solid base for providing tools, methodologies and datasets that will aid researchers in developing robust security mechanisms for the current and next generations of wireless networks. https://icsdweb.aegean.gr/awid/download-dataset
+
+CIS 660 - Final Project -- AWID Anomaly Detection https://github.com/Bee-Mar/AWID-Intrusion-Detection
+
+ML_For_AWID https://github.com/Diwash15/ML_For_AWID
