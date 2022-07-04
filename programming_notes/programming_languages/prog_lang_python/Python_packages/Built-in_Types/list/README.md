@@ -43,6 +43,22 @@ How to check if a list is empty in Python? https://flexiple.com/check-if-list-is
     [[1, 4], [2, 5], [3, 6]]
     ```
 
+## Python 的 `list` 如果想部分排序的话，貌似必须用 `sorted`，不能用 `.sort()`。
+
+How can I sort a portion of a list in place? [duplicate] https://stackoverflow.com/questions/5827592/how-can-i-sort-a-portion-of-a-list-in-place
+```
+>>> a=range(20,0,-1)
+>>> a
+[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> a[10:15]=sorted(a[10:15])
+>>> a
+[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 6, 7, 8, 9, 10, 5, 4, 3, 2, 1]
+>>> 
+```
+
+LeetCode题目：
+- https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1-200/000031/review/20220704/20220704_000031.py3 || https://leetcode.cn/submissions/detail/332319595/
+
 # `.index()`
 
 Python List index() https://www.programiz.com/python-programming/methods/list/index
