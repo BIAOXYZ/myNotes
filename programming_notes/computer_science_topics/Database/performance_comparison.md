@@ -35,6 +35,11 @@ MySQL和PostgreSQL的自增序列探讨 https://mp.weixin.qq.com/s/5V5nYaYawnGlY
 
 PostgreSQL 与 MySQL 相比，优势何在？ - 知乎 https://www.zhihu.com/question/20010554
 
+千万量级数据：
+- MYSQL - 算一算1000万条数据大概占了多大磁盘空间 https://blog.csdn.net/u010235716/article/details/86629756
+- 千万级数据下的Mysql优化 https://blog.csdn.net/shmnh/article/details/80753279
+- PostgreSQL 如何潇洒的处理每天上百TB的数据增量 https://developer.aliyun.com/article/8528 || https://www.modb.pro/db/93340
+
 # TPC
 
 ## tpcc
