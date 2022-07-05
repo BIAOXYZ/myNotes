@@ -1,4 +1,8 @@
 
+有没有打算做量子计算的公司或同学, 想找点茬. https://www.v2ex.com/t/864074
+- > 巧了，我也是业余爱好者，陪你玩玩，请问一下 如果用量子计算去算 76x76 矩阵的积和式。该怎么算
+  >> 今年 arxiv 刚出一篇 A fast quantum algorithm for computing matrix permanent https://arxiv.org/pdf/2205.01328
+
 可运行的线上 Lambda 演算 https://www.v2ex.com/t/847425
 ```console
 https://readonly.link/articles/cicada-lang/lambda/-/docs/tests/nat-church.md
