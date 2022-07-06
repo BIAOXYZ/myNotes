@@ -156,16 +156,6 @@ Linux Namespace系列（04）：mount namespaces (CLONE_NEWNS) https://segmentfa
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## cgroups
-
-cgroups https://en.wikipedia.org/wiki/Cgroups
-
-Docker 背后的内核知识——cgroups 资源限制 https://www.infoq.cn/article/docker-kernel-knowledge-cgroups-resource-isolation
-
-CGroup 介绍 https://www.ibm.com/developerworks/cn/linux/1506_cgroup/index.html
-
-:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
-
 ## kernel module
 
 Loadable kernel module https://en.wikipedia.org/wiki/Loadable_kernel_module
