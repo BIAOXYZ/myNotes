@@ -74,3 +74,15 @@ https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-co
 
 数据库加密都有什么方式？ https://www.v2ex.com/t/647734
 - 参考这篇《使用 SQL Server 2016 的 Always Encrypt 功能防止系統管理員讀取私密性資料》  https://www.uuu.com.tw/Public/content/article/19/20190805.htm
+
+## DB Security of GaussDB
+
+### 防篡改数据库
+>> //notes：看到新闻吓了我一跳，还以为竟然把 verifiability 做到数据库产品里了。后来看了下使用手册里`“账本数据库机制”`部分的内容才知道原来核心是 ***防止用户去篡改***。这。。。motivation 有点不够 strong 啊。你都云数据库了，不更应该防止 server 去篡改嘛。。。
+
+官宣！华为云GaussDB两大数据库通过中国信通院多项评测 https://mp.weixin.qq.com/s/SGq2vnsMCGfZje5BLMjUFg
+- > 在防篡改数据库基础能⼒专项评测中，GaussDB(for openGauss)以最高分通过全部二十八项能力评测，包括防篡改能⼒、不可抵赖能⼒、安装适配及兼容能⼒、易⽤性能⼒、信任域能⼒以及⻛险识别能⼒，充分验证了防篡改数据库在保障数据安全⽅⾯的卓越性能。这说明GaussDB(for openGauss)不仅能保障数据在云上的增、删、改全⽣命周期可追溯、可校验，为数据完整性提供更强有⼒的保护，还能极⼤降低⽤户使⽤⻔槛和业务切换的难度，全方位实时保障企业数据安全。
+
+华为云GaussDB（for openGauss）完成中国信通院首个防篡改数据库产品评测 https://bbs.csdn.net/topics/606844977 || https://bbs.huaweicloud.com/forum/forum.php?mod=viewthread&tid=188842
+
+账本数据库机制 https://www.bookstack.cn/read/openGauss-2.1-zh/CharacteristicDescription-%E8%B4%A6%E6%9C%AC%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%BA%E5%88%B6.md
