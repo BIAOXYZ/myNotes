@@ -4,6 +4,7 @@
 # 相关命令
 
 - `atop`
+- [`btop`](https://github.com/aristocratos/btop)
 - `htop`
 
 # 官方链接
