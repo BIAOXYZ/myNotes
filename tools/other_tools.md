@@ -53,6 +53,11 @@ BIAOXYZ https://www.gitmemory.com/biaoxyz
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+OSS Insight -- Open Source Software Insight https://ossinsight.io/
+- https://ossinsight.io/analyze/biaoxyz  【我就想说为啥它能分析我私有仓库的信息？！回头考虑给 Github 反馈下。】
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## FileInfo.com
 
 .FILTERS https://fileinfo.com/extension/filters
