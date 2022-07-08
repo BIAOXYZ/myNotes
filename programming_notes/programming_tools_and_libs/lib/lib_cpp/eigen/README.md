@@ -113,6 +113,8 @@ Eigen学习记录 - 月光亲了城的文章 - 知乎 https://zhuanlan.zhihu.com
 
 Cheat sheet for the linear algebra library Eigen https://gist.github.com/gocarlos/c91237b02c120c6319612e42fa196d77
 
+C++矩阵库 Eigen 快速入门 https://www.cnblogs.com/python27/p/EigenQuickRef.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 比较一般的攻略

@@ -2,6 +2,7 @@
 # [RocksDB](https://rocksdb.org/)
 
 https://rocksdb.org/
+- Getting started http://rocksdb.org/docs/getting-started.html
 
 RocksDB: A Persistent Key-Value Store for Flash and RAM Storage https://github.com/facebook/rocksdb/
 
