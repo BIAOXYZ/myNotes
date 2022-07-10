@@ -41,3 +41,5 @@ LGPL、GPL之类开源协议的传染性是什么意思？ - 知乎 https://www.
 
 关于GPL2.0 的一些疑问？ - 知乎 https://www.zhihu.com/question/63095416
 - 关于GPL2.0 的一些疑问？ - XinmuTouhouKyou的回答 - 知乎 https://www.zhihu.com/question/63095416/answer/208782586
+
+GPL 协议开源项目在被社区完善后发布收费闭源的商业版或转闭源需要为贡献者支付报酬吗？ https://www.v2ex.com/t/865164
