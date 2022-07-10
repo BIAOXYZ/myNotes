@@ -40,6 +40,30 @@ Counter({'c': 1, 'b': 0, 'a': -1})
 >>>
 ```
 
+```py
+# 如何能不改变原来计数器的情况下（用 substract 会改变原来计数器），减出来负数，并且同时省略或者不省略0。
+
+from collections import Counter
+x = 'aabc'
+y = 'aaabd'
+xx = Counter(x)
+yy = Counter(y)
+print(xx, yy)
+
+print("The joint key set is: ", xx.keys() | yy.keys())
+
+res = {k:xx[k]-yy[k] for k in xx.keys() | yy.keys()}
+print(res, Counter(res))
+
+res2 = {k:xx[k]-yy[k] for k in xx.keys() | yy.keys() if xx[k] != yy[k]}
+print(res2, Counter(res2))
+##################################################
+Counter({'a': 2, 'b': 1, 'c': 1}) Counter({'a': 3, 'b': 1, 'd': 1})
+The joint key set is:  {'b', 'a', 'd', 'c'}
+{'b': 0, 'a': -1, 'd': -1, 'c': 1} Counter({'c': 1, 'b': 0, 'a': -1, 'd': -1})
+{'a': -1, 'd': -1, 'c': 1} Counter({'c': 1, 'a': -1, 'd': -1})
+```
+
 ## 2. Counter里没有的 key 也可以直接用，值是 0
 
 ```py
@@ -59,3 +83,4 @@ Counter({2: 1, 4: 1, 6: 1, 12: 1})
 # LeetCode相关题目
 - `383. 赎金信` https://leetcode-cn.com/problems/ransom-note/  【用到了两个Counter对象直接相减】
 - `954. 二倍数对数组` https://leetcode-cn.com/problems/array-of-doubled-pairs/  【即使没有显式指定 ctr 里的 key，也可以直接用 `ctr[key]`，其值为 0】
+- `676. 实现一个魔法字典` https://leetcode.cn/problems/implement-magic-dictionary/
