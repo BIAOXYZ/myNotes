@@ -46,3 +46,26 @@ Clickhouse错误问题汇总（持续更新） https://blog.csdn.net/xsm666/arti
 
 Clickhouse建表语法、视图语法、数据表DDL（数据定义语言）、数据DML（数据操作语言） https://www.cnblogs.com/biehongli/p/14430153.html
 - > 2、Clickhouse数据表的定义语法，是在标准SQL的基础之上建立的。Clickhouse目前提供了三种最基本的建表方法，但是注意的是在Clickhouse中建表一定要指定表的引擎，在指定数据表字段之后，最后一定要指定数据表的引擎。
+
+# 缺点
+
+没想到 clickhouse 这么牛逼，比 es 强太多了，搞 quant 适合吗 https://www.v2ex.com/t/865427
+- > clickhouse 和 es 的应用场景不同啊大哥
+- > 并发不行把
+- > 模拟 30 个用户一起聚合查询就能看出问题了，感觉做业务的话 CH 不适合直查，用物化视图输出聚合报表方便些
+- > ch 不支持更新哦
+  >> replacemergingtree 相当于更新了，不过是异步的
+  >>> insert 走 maxversion 其实也可。
+- > 
+  ```console
+  1. ck 对硬件有要求;内存要求高;
+  2. 集群副本的话数据量太大 zk 又是一个炸弹; (推荐单节点 zk;)
+  3. qps 不会很高;
+  4. 不支持事务;不支持更新删除;(虽然有 update 和 delete 的 dml, 但是这个 ck 离线处理的;)
+  但是做 olap 报表分析确实不错;
+  ```
+- > clickhouse 我直接限制 5 用户登录，单连接查询最大 100G 内存，百亿 10 多秒就能汇聚好
+- > 一直有个疑问。。。clickhouse 的简称到底是 ck 还是 ch 比较好？ 好像这两种都有很多人用
+  >> https://clickhouse.com/docs/en/faq/general/dbms-naming/
+- > 我们公司日志系统从 es 换到了 ck ，感觉查询语法更丰富，性能更强。估计每天就得上百 tb 的日志数据。
+- > 上周测试环境 zk 炸了连带 ck 全崩了，重建数据搞得怀疑人生

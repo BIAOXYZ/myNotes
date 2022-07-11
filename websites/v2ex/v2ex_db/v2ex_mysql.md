@@ -1,4 +1,37 @@
 
+公司数据库数据被我更新成 null 了，救命！ https://www.v2ex.com/t/865464
+```console
+数据库有些数据值为: "保密"
+前面我在用 regex_replace 函数更新一些不规范数据
+我顺手就用 update lawyers set working_years=regexp_replace(working_years, "保密", null); 把 "保密" 更新为 null
+结果 working_years 字段全部被更新为 null !!!
+有办法恢复吗，大佬救命！！！
+```
+```console
+大哥们，数据没找回来，事情解决了是因为数据是实时抓取的数据，每天都要从互联网某些网站抓取更新，所以并不是很重要。
+```
+- > 手机叫个快车，赶紧收拾东西跑路
+- > 有备份的话回档吧
+  >> 没备份咋办
+  >>> 备份没有，binlog 也没有？
+- > mysql 的 update 有一个很强的非标准特性，就是可以加 limit 。初学者请务必每次 update 请务必用 limit 1 。
+- > 开事务日志 /binlog 没？没就抗拒从严 回家过年
+- > 备份没有的话 就看 binlog 开了没有 开了就可以解决(记好时间点)， 没有开的话....
+- > 先不要操作了，看下 data 目录下的 binlog 日志文件吧，以 utf8 打开，一个一个补数据吧
+- > 解决了，想问一下大佬 <br> `update lawyers set working_years=regexp_replace(working_years, "保密", null)` <br> 这条命令为什么会把我的全部数据替换为 null
+  >> 把保密更改为 null ，为什么要用 regexp_replace 这个正则函数？正常思路难道不是这样吗？ `update lawyers set working_years=null where regexp_replace='保密';` <br> 至于为什么换替换为 null ，根据文档 https://dev.mysql.com/doc/refman/8.0/en/regexp.html <br> `Replaces occurrences in the string expr that match the regular expression specified by the pattern pat with the replacement string repl, and returns the resulting string. If expr, pat, or repl is NULL, the return value is NULL.` <br> 大概意思正则匹配到了，则返回替换后的结果字符串，如果给定的三个参数里有 null ，则返回 null 。而你的第三个参数恰好是 null ，所以全被替换成 null 了。
+- > 下辈子改数据库前记得先打 begin;
+- > 都是惨痛教训:
+  ```console
+  1. 不是迫不得已不要手动改库
+  2. 真的要手动改库一定先 select 一下看看影响的行数
+  3. 改之前先改一条试试看, 防止写错了
+  4. 大规模改库要备份
+  ```
+- > 生产环境改数据一定要备份再执行,开日志
+- > 这种 update 或者 delete 都还好，都有 log ，dba 都能恢复 <br> truncate 或者 drop 那种很难抢救回来（只能依靠之前的备份数据，会有丢失）
+- > update 不加 where dba 能让你跑？
+
 mysql 怎么迁移数据库到另一台机器 https://www.v2ex.com/t/851262
 
 MySQL 只读操作一般需要开启事务吗？ https://www.v2ex.com/t/838964
