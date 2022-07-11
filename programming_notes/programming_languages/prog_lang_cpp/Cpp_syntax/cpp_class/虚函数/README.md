@@ -20,9 +20,13 @@ C++ 虚函数、纯虚函数 - Arkin的文章 - 知乎 https://zhuanlan.zhihu.co
 
 # `virtual`
 
-C++ virtual关键字 https://blog.csdn.net/shuzfan/article/details/77165474
+【[:star:][`*`]】 C++ virtual关键字 https://blog.csdn.net/shuzfan/article/details/77165474
+- > **虚函数表与虚函数指针**
+  * > 程序是如何知道在运行时该调用基类还是子类的函数？ 这涉及到虚函数表和虚函数指针的概念。更多可以参考[《C++ 虚函数表解析》](http://blog.csdn.net/haoel/article/details/1948051/)。
 
-virtual function specifier https://en.cppreference.com/w/cpp/language/virtual
+C++ keywords: virtual https://en.cppreference.com/w/cpp/keyword/virtual
+- virtual function specifier https://en.cppreference.com/w/cpp/language/virtual
+- virtual base class specifier https://en.cppreference.com/w/cpp/keyword/virtual
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

@@ -17,7 +17,7 @@ Yacc https://en.wikipedia.org/wiki/Yacc || yacc https://zh.wikipedia.org/wiki/Ya
 
 USING LEX WITH YACC https://silcnitc.github.io/ywl.html
 
-What is the difference between Flex/Lex and Yacc/Bison? https://stackoverflow.com/questions/623503/what-is-the-difference-between-flex-lex-and-yacc-bison?noredirect=1&lq=1
+What is the difference between Flex/Lex and Yacc/Bison? https://stackoverflow.com/questions/623503/what-is-the-difference-between-flex-lex-and-yacc-bison
 
 what is the difference between lex and yacc https://stackoverflow.com/questions/1189684/what-is-the-difference-between-lex-and-yacc/1189732
 

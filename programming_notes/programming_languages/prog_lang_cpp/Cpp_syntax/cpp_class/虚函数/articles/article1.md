@@ -102,3 +102,7 @@ C++ Virtual详解 https://blog.csdn.net/ring0hx/article/details/1605254
   Output：
   Derived
   ```
+
+# 3
+
+Virtual base class in C++ https://www.geeksforgeeks.org/virtual-base-class-in-c/
