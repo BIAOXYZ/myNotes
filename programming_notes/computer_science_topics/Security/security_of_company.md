@@ -159,6 +159,14 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
 - 用户指南 https://help.aliyun.com/document_detail/364171.html
   * 脚本文件管理 https://help.aliyun.com/document_detail/364175.htm
 
+隐语 SecretFlow
+- SecretFlow https://github.com/secretflow/secretflow
+- 隐语SecretFlow https://space.bilibili.com/2073575923/
+- 蚂蚁集团开源可信隐私计算框架「隐语」：开放、通用 https://www.jiqizhixin.com/articles/2022-07-05-4
+  * > 7 月 4 日，蚂蚁集团宣布面向全球开发者正式开源可信隐私计算框架 “隐语”。
+  * > 隐语是蚂蚁集团历时 6 年自主研发，以安全、开放为核心设计理念打造的可信隐私计算技术框架，涵盖了当前几乎所有主流隐私计算技术。
+- 隐私计算框架之——隐语secretflow（上） - AI架构师之路的文章 - 知乎 https://zhuanlan.zhihu.com/p/527469578
+
 ### 双子座实验室
 
 https://alibaba-gemini-lab.github.io/

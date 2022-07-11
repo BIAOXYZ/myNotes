@@ -21,6 +21,11 @@ Rust语言圣经 (The Course) https://github.com/sunface/rust-course
   * 国内镜像：https://book.rust.team/
   * 知乎：支持章节内目录跳转，很好用!  https://www.zhihu.com/column/c_1452781034895446017
 
+Rust By Practice https://github.com/sunface/rust-by-practice  https://practice.rs/why-exercise.html || Rust语言实战 https://github.com/sunface/rust-by-practice/blob/master/zh-CN/src/why-exercise.md  https://zh.practice.rs/why-exercise.html
+- > Part of our examples and exercises are borrowed from [Rust By Example](https://github.com/rust-lang/rust-by-example), thanks for your great works!
+
+Rust By Example https://github.com/rust-lang/rust-by-example
+
 Rust 程序设计语言 简体中文版 https://kaisery.github.io/trpl-zh-cn/ || https://github.com/KaiserY/trpl-zh-cn
 - > 本书的 HTML 版本可以在 https://doc.rust-lang.org/stable/book/ （[简体中文译本](https://kaisery.github.io/trpl-zh-cn/title-page.html)）在线阅读，离线版则包含在通过 `rustup` 安装的 Rust 中；运行 `rustup docs --book` 可以打开。
 - 4.认识所有权 https://kaisery.github.io/trpl-zh-cn/ch04-00-understanding-ownership.html
