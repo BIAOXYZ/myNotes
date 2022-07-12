@@ -338,6 +338,17 @@ GitHub 原生支持写数学公式了，亲测有效 https://www.ithome.com/0/61
   * > （2）如果在公式之外你的正文也包含“$”，则需要用“`<span></span>`”标记；
 - > 参考链接： https://docs.github.com/cn/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+Include diagrams in your Markdown files with Mermaid https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # markdown相关工具（主要是博客，公众号相关）
