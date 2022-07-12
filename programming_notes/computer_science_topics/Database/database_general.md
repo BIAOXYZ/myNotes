@@ -328,6 +328,13 @@ ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215
 
 SQL是如何在数据库中执行的？ https://segmentfault.com/a/1190000037792613
 
+## 向量化执行
+
+深入解析 TiFlash丨面向编译器的自动向量化加速 https://mp.weixin.qq.com/s/7K90wCDc6mSdT1SfddlVaw
+- > **SIMD 介绍**
+  * > SIMD 是重要的程序加速手段。CMU DB 组在 `Advanced Database Systems` 中有专门的两个章节（`vectorization-1`, `vectorization-2`）介绍 SIMD 向量化在数据库中的应用，可见其对现代数据库系统的重要性。
+  * > TiFlash 目前支持的架构是 x86-64 和 Aarch64，操作系统平台有 Linux 和 MacOS。受制于平台 ISA 和操作系统 API，在不同环境中做 SIMD 支持会遇到不同的麻烦。
+
 SQL优化之火山模型、向量化、编译执行 https://blog.csdn.net/u011436427/article/details/121805600
 
 # 故障恢复

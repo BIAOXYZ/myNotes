@@ -24,7 +24,7 @@ ClickHouse SQL formal grammar or parser implementation #7595 https://github.com/
 
 # 其他
 
-ClickHouse原理解析与应用实战 https://mp.weixin.qq.com/s/Lz0KNr_hNrHfPNuIF69dng  【其实是因为文中的图片解释`数据压缩`和`向量化执行`比较好，才记录一下。跟 ClickHouse 本身的关系反而不大。】
+ClickHouse原理解析与应用实战 https://mp.weixin.qq.com/s/Lz0KNr_hNrHfPNuIF69dng  【[:star:][`*`] 其实是因为文中的图片解释`数据压缩`和`向量化执行`比较好，才记录一下。跟 ClickHouse 本身的关系反而不大。】
 - > ◆ 数据压缩的本质
   * > 基于列式存储的结构，同一列中的数据属于同一类型，压缩效果会更加显著。列存储往有着高达十倍甚至更高的压缩比，节省了大量的存储空间，降低了存储成本。 ![](https://mmbiz.qpic.cn/mmbiz_png/RQueXibgo0KNZM3R4Dt7sNcwe0xTGV3sMGayMcjia1LpEhY8q8CxAX2RlJCbtVL9sdoFxRDgiaiaPeot5qiaY65nu3w/640)
 - > ◆ 向量化执行引擎
