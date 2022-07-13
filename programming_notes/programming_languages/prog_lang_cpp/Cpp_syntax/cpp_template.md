@@ -5,6 +5,10 @@
 
 模板 (C++) https://docs.microsoft.com/zh-cn/cpp/cpp/templates-cpp
 
+Templates https://en.cppreference.com/w/cpp/language/templates
+
+Templates https://cplusplus.com/doc/oldtutorial/templates/
+
 # 系统性攻略
 
 # 问题
@@ -98,6 +102,10 @@ exit status 255
 //notes：这个例子除了是模板的例子外，还是一个异常的例子（`throw-try-catch`），可以很久不写手生的时候看一下。
 
 # 其他攻略
+
+【from Programiz】:
+- C++ Function Template https://www.programiz.com/cpp-programming/function-template
+- C++ Class Templates https://www.programiz.com/cpp-programming/class-templates
 
 C++ 模板详解 https://www.runoob.com/w3cnote/c-templates-detail.html
 
