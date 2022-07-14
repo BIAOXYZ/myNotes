@@ -30,6 +30,14 @@ ClickHouse原理解析与应用实战 https://mp.weixin.qq.com/s/Lz0KNr_hNrHfPNu
 - > ◆ 向量化执行引擎
   * > SIMD（Single Instruction Multiple Data）即单条指令操作多条数据，它是通过数据并行以提高性能的一种方式，可以简单理解为在寄存器层面对程序中的数据做并行处理，Clickhouse 在能够提升计算效率的地方大量使用了 SIMD，通过使用 SIMD，基本上能带来几倍的性能提升，像阿里云的 PolarDB-X 也引入了向量化执行引擎，为表达式计算带来了几十倍的性能提升。 ![](https://mmbiz.qpic.cn/mmbiz_png/RQueXibgo0KNZM3R4Dt7sNcwe0xTGV3sMianiciaX3R8EnYRyPC6pcj4ibiaCTz37sg4Nr3wuwicWTIibJmBAGk04driaHA/640)
 
+漫谈SIMD、SSE指令集与ClickHouse向量化执行 https://www.jianshu.com/p/c36f4e142b8a
+- > **前言**
+  * > ClickHouse之所以会像闪电一样快（"blazing fast"），是多方面优化的结果，包括且不限于：高效且磁盘友好的列式存储，高效的数据压缩，精心设计的各类索引，并行分布式查询，运行时代码生成等。
+  * > 另外，ClickHouse为了最大限度地压榨硬件——尤其是CPU——的性能，实现了**向量化查询执行**（vectorized query execution）机制。这个名词相对于上面的那些可能没那么平易近人，但它毫无疑问是CK相对于传统OLAP引擎的大杀器。鉴于现有资料中讲解CK向量化执行的内容很少，本文就来试图探究一下，先从基础知识SIMD说起。
+- > **SIMD**
+- > **SSE指令集**
+- > **ClickHouse向量化执行示例**
+
 ClickHouse学习系列之六【访问权限和账户管理】 https://www.cnblogs.com/zhoujinyi/p/14931219.html
 
 Clickhouse基础知识 https://blog.csdn.net/Yanxu_Jin/article/details/108829848

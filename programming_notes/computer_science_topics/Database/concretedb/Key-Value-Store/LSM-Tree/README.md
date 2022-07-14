@@ -12,3 +12,7 @@ LSM 算法的原理是什么？ - 知乎 https://www.zhihu.com/question/19887265
   * > 5，当每层的磁盘上的SSTable的体积超过一定的大小或者个数，也会周期的进行合并。此步骤也称为`Major Compaction`，这个阶段会真正的清除掉被标记删除掉的数据以及多版本数据的合并，避免浪费空间，注意由于SSTable都是有序的，我们可以直接采用merge sort进行高效合并。
 
 LSM-Tree - LevelDb 源码解析 https://segmentfault.com/a/1190000041864579
+
+【from `LittleMagic`】：
+- LSM Tree-Based存储引擎的compaction策略（feat. RocksDB） https://www.jianshu.com/p/e89cd503c9ae
+- 从B+树到LSM树，及LSM树在HBase中的应用 https://www.jianshu.com/p/f911cb9e42de

@@ -34,3 +34,7 @@ Apache Flink 源码分析系列，基于 git tag 1.1.2 https://github.com/danny0
 
 Apache Flink，流计算？不仅仅是流计算！ https://mp.weixin.qq.com/s/DiE0NEoAAKkJCO7bT1djhQ
 
+Flink RocksDB 状态后端参数调优实践 - Flink 中文社区的文章 - 知乎 https://zhuanlan.zhihu.com/p/256351671 || https://segmentfault.com/a/1190000024522233
+
+数据库/数据仓库 https://www.jianshu.com/nb/41027753
+- Flink RocksDB托管内存机制的幕后——Cache & Write Buffer Manager https://www.jianshu.com/p/47a40259a450 || https://blog.csdn.net/nazeniwaresakini/article/details/124012385
