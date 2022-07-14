@@ -11,6 +11,8 @@ http://blog.csdn.net/defonds/article/details/48471087
 
 吊打 MySQL，MariaDB 到底强在哪？ https://mp.weixin.qq.com/s/kVns-BHGTK-ms1Gh5P8lAg
 
+SQLite 的读写效率很高，有哪些使用其他数据库的理由？ - 知乎 https://www.zhihu.com/question/31417262
+
 # MySQL v.s. PG
 
 MySQL和PostgreSQL在多表连接算法上的差异 https://mp.weixin.qq.com/s/6cYy3lWwpxV4b08Hdb593A
