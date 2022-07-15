@@ -44,3 +44,8 @@ Fedora Linux：计划将 RPM 数据库从 Berkeley DB 迁移到 SQLite https://w
 在Oracle神优化器加持下，秒出数据，现在两个小时都不出数据你敢信？基本断定是卡死了。还有那种with as
 的树状递归select，也是一样的情况。反正切数据库是个巨坑
 ```
+
+# 其他文章
+
+SQLite3 实践教程 https://linux.cn/article-13117-1.html
+- > SQLite 中有五种数据类型（实际上是 储存类别）：

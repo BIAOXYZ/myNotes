@@ -31,6 +31,8 @@ RocksDB 简介 https://docs.pingcap.com/zh/tidb/dev/rocksdb-overview
 - > **WriteStall**
   * > RocksDB 的 L0 与其他层不同，L0 的各个 SST 是按照生成顺序排列，各个 SST 之间的 key 范围存在重叠，因此查询的时候必须依次查询 L0 中的每一个 SST。为了不影响查询性能，当 L0 中的文件数量过多时，会触发 WriteStall 阻塞写入。
 
+RocksDB 笔记 http://alexstocks.github.io/html/rocksdb.html
+
 # 性能
 
 为什么从LevelDB切换到RocksDB？ https://fisco-bcos-documentation.readthedocs.io/zh_CN/v2.8.0/docs/articles/3_features/33_storage/why_switch_to_rocksdb.html || https://www.fisco.com.cn/class_32/349.html
