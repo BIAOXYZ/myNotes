@@ -440,6 +440,10 @@ Microk8s: Kubernetes for workstations and appliances https://microk8s.io/
 
 Microk8s: A kubernetes cluster in a snap https://github.com/ubuntu/microk8s
 
+Install a local Kubernetes with MicroK8s https://ubuntu.com/tutorials/install-a-local-kubernetes-with-microk8s
+
+Canonical 开源 MicroK8：面向工作站和边缘/物联网的零运维Kubernetes https://mp.weixin.qq.com/s/isNZZTjxLJCN3YFRwUhzYw
+
 穷人也能用得起 K8s - VPS 单节点部署 Kubernetes 的方法与对比 https://avnpc.com/pages/kubernetes-for-single-vps
 > 从易用角度来看，microk8s 是安装最简单，门槛最低的；minikube 适合对 minikube 比较熟悉的用户。
 无论以何种方式安装 k8s， 都需要注意安全问题， 因为在 k8s 的设计中， Master 节点是不会暴露到外网的，用户服务都会安装到 Worker 节点，但是在单节点的情况下，k8s 所监听的端口都没有设防，容器的权限也有可能过大，这些安全问题在 minikube 的文档中也有提到， 需要对网络端口设置 iptables 限制可访问的 IP 等方式来提升安全性，如果是安全性敏感的项目，建议放弃单节点 k8s 的方案。
