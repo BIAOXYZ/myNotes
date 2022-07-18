@@ -336,7 +336,9 @@ GitHub 原生支持写数学公式了，亲测有效 https://www.ithome.com/0/61
 - > 需要注意的是：
   * > （1）如果你的公式包含“$”，则需要在前面加上“\”进行转义；
   * > （2）如果在公式之外你的正文也包含“$”，则需要用“`<span></span>`”标记；
-- > 参考链接： https://docs.github.com/cn/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
+- > 参考链接：
+  * https://docs.github.com/cn/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
+  * Math support in Markdown https://github.blog/2022-05-19-math-support-in-markdown/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
