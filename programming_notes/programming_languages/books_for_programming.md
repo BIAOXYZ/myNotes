@@ -30,6 +30,10 @@ it-ebooks https://github.com/it-ebooks || 📚 计算机开放电子书归档 ht
 - 评论区：
   * https://bookist.cc
 
+阿里技术人的“藏经阁” https://developer.aliyun.com/topic/ebook
+- 开放下载！《深入浅出Kubernetes》 https://developer.aliyun.com/article/753196
+- 《零基础入门：从 0 到 1 学会 Apache Flink》 https://developer.aliyun.com/article/753999
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # books online

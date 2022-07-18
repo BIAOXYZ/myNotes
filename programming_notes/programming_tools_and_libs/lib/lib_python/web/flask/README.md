@@ -11,3 +11,7 @@ Articles in this series:
 - Python Web Applications with Flask – Part I https://realpython.com/python-web-applications-with-flask-part-i/
 - Python Web Applications With Flask – Part II https://realpython.com/python-web-applications-with-flask-part-ii/
 - Python Web Applications With Flask – Part III https://realpython.com/python-web-applications-with-flask-part-iii/
+
+# 其他
+
+flask 内能做跨域转发吗？ https://www.v2ex.com/t/866921
