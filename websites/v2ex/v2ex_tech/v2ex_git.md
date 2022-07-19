@@ -1,4 +1,7 @@
 
+公司准备在某些区域禁止互联网 https://www.v2ex.com/t/867330
+- > GitClone https://gitclone.com/
+
 在使用 git 时的一些尴尬场景里的修复方案 https://www.v2ex.com/t/862191
 ```console
 https://ohshitgit.com

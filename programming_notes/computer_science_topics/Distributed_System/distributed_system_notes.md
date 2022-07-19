@@ -159,6 +159,8 @@ Raft 一致性算法论文中文译文 https://mp.weixin.qq.com/s/zMnqOCUVvRLQuJ
 
 Raft：寻找一种易于理解的一致性算法 https://mp.weixin.qq.com/s/u4WUx3C6x-_Wr6Tg87uPNw
 
+深入剖析共识性算法Raft https://mp.weixin.qq.com/s/Fc1mgAsa1aDOpfosUtcJhQ
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Raft实现
