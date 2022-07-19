@@ -114,6 +114,7 @@ vscode 同时编辑多处，多个光标 快捷键 https://blog.csdn.net/Gomeer/
 2、按住Ctrl + Alt，再按键盘上向上或者向下的键，可以使一列上出现多个光标。
 3、选中一段文字，按shift+alt+i，可以在每行末尾出现光标
 ```
+>> //notes：`1、按住alt，用鼠标左键点击，可以出现多个光标，输入的代码可以在光标处同时增加。`  -->  Mac下对应的方法为把 `alt` 换成 `option`（`⌥`） 即可。
 
 VSCode 又酷又实用的多光标编辑 https://www.v2ex.com/t/843239 || https://github.com/tjx666/blog/blob/07ed16b474dfad7a0ba2142c8c4f805645914315/src/VSCode%E5%8F%88%E9%85%B7%E5%8F%88%E5%AE%9E%E7%94%A8%E7%9A%84%E5%A4%9A%E5%85%89%E6%A0%87%E7%BC%96%E8%BE%91.md
 
