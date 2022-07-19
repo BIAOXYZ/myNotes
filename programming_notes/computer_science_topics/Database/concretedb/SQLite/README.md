@@ -65,3 +65,5 @@ Fedora Linux：计划将 RPM 数据库从 Berkeley DB 迁移到 SQLite https://w
 
 SQLite3 实践教程 https://linux.cn/article-13117-1.html
 - > SQLite 中有五种数据类型（实际上是 储存类别）：
+
+SQLite页缓冲区管理 https://www.cnblogs.com/amdb/p/4035614.html || https://blog.csdn.net/apple7912/article/details/101962813
