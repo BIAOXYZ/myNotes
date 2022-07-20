@@ -10,6 +10,14 @@ SQLite https://www.sqlite.org/index.html
 
 Documentation https://www.sqlite.org/docs.html
 - Dynamic Memory Allocation In SQLite https://www.sqlite.org/malloc.html || SQLite中的动态内存分配 https://www.sqlite.net.cn/malloc.html  【这个不一定是中文官网，但是看样子好像翻译得还行。】
+- In-Memory Databases https://www.sqlite.org/inmemorydb.html
+  * > The most common way to force an SQLite database to exist purely in memory is to open the database using the special filename "`:memory:`". In other words, instead of passing the name of a real disk file into one of the `sqlite3_open()`, `sqlite3_open16()`, or `sqlite3_open_v2()` functions, pass in the string "`:memory:`". For example:
+    ```c
+    rc = sqlite3_open(":memory:", &db);
+    ```
+    > When this is done, no disk file is opened. Instead, a new database is created purely in memory. The database ceases to exist as soon as the database connection is closed. Every `:memory:` database is distinct from every other. So, opening two database connections each with the filename "`:memory:`" will create two independent in-memory databases.
+  * > **Temporary Databases**
+- SQLite Shared-Cache Mode https://www.sqlite.org/sharedcache.html
 
 Official Git mirror of the SQLite source tree https://github.com/sqlite/sqlite || SQLite Source Repository https://sqlite.org/src/doc/trunk/README.md
 

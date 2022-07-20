@@ -156,6 +156,12 @@ Linux Namespace系列（04）：mount namespaces (CLONE_NEWNS) https://segmentfa
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## virtual memory
+
+为什么 Linux 需要虚拟内存 https://draveness.me/whys-the-design-os-virtual-memory/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## kernel module
 
 Loadable kernel module https://en.wikipedia.org/wiki/Loadable_kernel_module
