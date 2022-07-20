@@ -319,3 +319,6 @@ c++ 函数前面和后面 使用const 的作用：
   · 前面使用const 表示返回值为const
   · 后面加 const表示函数不可以修改class的成员
 ```
+
+The real difference between struct and class https://www.fluentcpp.com/2017/06/13/the-real-difference-between-struct-class/
+- > The only difference is if you don’t specify the visibility (public, private or protected) of the members, they will be public in the struct and private in the class. And the visibility by default goes just a little further than members: for inheritance if you don’t specify anything then the struct will inherit publicly from its base class:
