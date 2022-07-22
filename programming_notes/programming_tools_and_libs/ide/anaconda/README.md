@@ -75,6 +75,7 @@ How To Install the Anaconda Python Distribution on Debian 9 https://www.digitalo
     # 个人实战用的语句也差不多：
     mkdir packages && cd packages/
     wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+    #// 其他新版本：https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
     bash Anaconda3-2021.05-Linux-x86_64.sh
     
     # 此外，虽然官方推荐 Linux 环境下自动让 anaconda 改 PATH，但是还是选了 no，

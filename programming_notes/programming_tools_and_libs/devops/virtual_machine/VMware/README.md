@@ -40,3 +40,7 @@ VMware Fusion https://en.wikipedia.org/wiki/VMware_Fusion
 
 VMware Fusion Player 个人免费版 https://blog.csdn.net/ZhangWangYang/article/details/110927837
 - > 不要访问中文网站，以下链接都是英文网站，如果之前将该网站的国家设置成中国，请将其设置回美国后再打开链接。
+
+关于VMWARE的【挂起】与【关机】的区别 https://blog.csdn.net/qq_41306795/article/details/78950939
+- > 1.挂起，相当于物理机中的休眠，会将内存中的数据全部存放到对应的休眠文件中，占用的空间为内存大小，并且会对虚拟机执行关机操作。【休眠后的虚拟机不占任何CPU、内存】
+- > 2.区别：挂起相对于关机，只是多了一个和内存大小相同的休眠文件而已。
