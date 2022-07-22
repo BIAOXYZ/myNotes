@@ -132,6 +132,15 @@ VXLAN vs VLAN - 肖宏辉的文章 - 知乎 https://zhuanlan.zhihu.com/p/3616547
 
 # others
 
+### 网络层级模型
+>> //notes：还是维基百科的最靠谱，其他的文章或多或少有不准备的地方。
+
+OSI model https://en.wikipedia.org/wiki/OSI_model
+
+OSI七层模型和TCP/IP五层模型详解 https://www.cnblogs.com/sunweiye/p/11083601.html
+
+一文读懂OSI七层模型与TCP/IP四层的区别/联系 https://blog.csdn.net/qq_39521554/article/details/79894501
+
 ### 交换机 v.s. 路由器
 
 Router vs Switch: Must Know Differences https://www.guru99.com/router-vs-switch-difference.html
