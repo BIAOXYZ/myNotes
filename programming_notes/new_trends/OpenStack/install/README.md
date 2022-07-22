@@ -11,8 +11,6 @@ Ubuntu 20使用devstack快速安装openstack最新版 https://www.cnblogs.com/dy
 
 DevStack安装OpenStack https://changhungtao.github.io/%E6%8A%80%E6%9C%AF/2018/12/26/DevStack%E5%AE%89%E8%A3%85OpenStack.html
 
-Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885
-
 ## 安装遇到的问题第一批
 >> //notes：猜测主要原因是因为原来的虚拟机 Ubuntu 20.04 里 Python 版本乱了。后来重装虚拟机后只有 Python 3.8，所有 Python 版本的问题都没了。剩下的两个问题很好解决。
 
@@ -27,7 +25,11 @@ How to install python-mysqldb for Python 2.7 in Ubuntu 20.04 (Focal Fossa)? http
 
 # 个人实战
 
+【[:star:][`*`]】 Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885
+
 ```sh
+sudo apt-get install bridge-utils git python3-pip -y
+
 sudo useradd -s /bin/bash -d /opt/stack -m stack
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 sudo su - stack
@@ -186,4 +188,43 @@ OS Version: Ubuntu 20.04 focal
 
 2022-07-22 13:29:11.851 | stack.sh completed in 2530 seconds.
 stack@ubuntu:~/devstack$ 
+```
+
+```sh
+cat << EOF > admin-openrc.sh
+export OS_USERNAME=admin
+export OS_PASSWORD=secret
+export OS_PROJECT_NAME=admin
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_AUTH_URL=http://172.16.175.128/identity
+export OS_IDENTITY_API_VERSION=3
+EOF
+
+source admin-openrc.sh
+```
+```
+stack@ubuntu:~/devstack$ nova service-list
+nova CLI is deprecated and will be a removed in a future release
++--------------------------------------+----------------+--------+----------+---------+-------+----------------------------+-----------------+-------------+
+| Id                                   | Binary         | Host   | Zone     | Status  | State | Updated_at                 | Disabled Reason | Forced down |
++--------------------------------------+----------------+--------+----------+---------+-------+----------------------------+-----------------+-------------+
+| ee8349eb-0cb6-465e-9427-1c2e2c1ab7a2 | nova-scheduler | ubuntu | internal | enabled | up    | 2022-07-22T14:04:03.000000 | -               | False       |
+| f1e4a0a2-5243-4686-b595-07031d4789a5 | nova-conductor | ubuntu | internal | enabled | up    | 2022-07-22T14:04:03.000000 | -               | False       |
+| 1dc811e9-131c-4f94-be43-16095079efd6 | nova-conductor | ubuntu | internal | enabled | up    | 2022-07-22T14:04:06.000000 | -               | False       |
+| dc7c381a-7e55-4a45-bef8-8d2d71d3ba75 | nova-compute   | ubuntu | nova     | enabled | up    | 2022-07-22T14:04:02.000000 | -               | False       |
++--------------------------------------+----------------+--------+----------+---------+-------+----------------------------+-----------------+-------------+
+stack@ubuntu:~/devstack$ 
+stack@ubuntu:~/devstack$ openstack network agent list
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
++--------------------------------------+------------------------------+--------+-------------------+-------+-------+----------------------------+
+| ID                                   | Agent Type                   | Host   | Availability Zone | Alive | State | Binary                     |
++--------------------------------------+------------------------------+--------+-------------------+-------+-------+----------------------------+
+| e27abd4e-36da-5ae2-badf-44f70e89d7f3 | OVN Metadata agent           | ubuntu |                   | :-)   | UP    | neutron-ovn-metadata-agent |
+| ba8530be-71b4-451a-9574-996da88a4e7c | OVN Controller Gateway agent | ubuntu |                   | :-)   | UP    | ovn-controller             |
++--------------------------------------+------------------------------+--------+-------------------+-------+-------+----------------------------+
+stack@ubuntu:~/devstack$
 ```
