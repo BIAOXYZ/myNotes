@@ -133,7 +133,7 @@ VXLAN vs VLAN - 肖宏辉的文章 - 知乎 https://zhuanlan.zhihu.com/p/3616547
 # others
 
 ### 网络层级模型
->> //notes：还是维基百科的最靠谱，其他的文章或多或少有不准备的地方。
+>> 【[:star:][`*`]】 //notes：还是维基百科的最靠谱，其他的文章或多或少有不准确的地方。
 
 OSI model https://en.wikipedia.org/wiki/OSI_model
 
@@ -155,6 +155,10 @@ Router vs Switch: Must Know Differences https://www.guru99.com/router-vs-switch-
 Difference between Router and Switch https://www.geeksforgeeks.org/difference-between-router-and-switch/
 
 Switch Vs. Router | Difference between Switch and Router https://www.javatpoint.com/switch-vs-router
+
+交换机和路由器的区别在哪里 一针见血通俗解答 https://www.cnblogs.com/Lynn-Zhang/articles/5754336.html
+
+路由器和交换机的区别，太经典了 https://blog.csdn.net/alpha_love/article/details/76695411
 
 ### localhost versus 127.0.0.1
 
