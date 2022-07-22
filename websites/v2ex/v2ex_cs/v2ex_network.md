@@ -1,4 +1,6 @@
 
+同一个网段的两个 ip 无法互相 ping 通，可能是什么原因呢 https://www.v2ex.com/t/867960
+
 `ethtool -i -1` 如何理解 https://www.v2ex.com/t/839421
 ```console
 偶然一次项目中，用户要求使用 ethtool -i -1 ip -c 1000 来测试服务器之间丢包率，一直很不理解-i -1 这个参数的意义，求解。
