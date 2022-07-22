@@ -132,6 +132,21 @@ VXLAN vs VLAN - 肖宏辉的文章 - 知乎 https://zhuanlan.zhihu.com/p/3616547
 
 # others
 
+### 交换机 v.s. 路由器
+
+Router vs Switch: Must Know Differences https://www.guru99.com/router-vs-switch-difference.html
+- > **KEY DIFFERENCES**
+  * > Routers operate at Layer 3 (Network) of the OSI model whereas Network switches operate at layer two (Data Link Layer) of the OSI model.
+  * > Router store IP address in the routing table whereas Switch store MAC address in a lookup table
+  * > In Router, every port has its own broadcast domain, and the switch has one broadcast domain except VLAN implemented.
+  * > Routers can work within both wired and wireless network situations on the other hand, switches are restricted to wired network connections.
+  * > Router will offer NAT, NetFlow, and QoS Services while Switch will offer none of these services.
+  * > In various types of network environments (MAN/ WAN), the router works faster whereas Switch is faster than a Router in a LAN environment.
+
+Difference between Router and Switch https://www.geeksforgeeks.org/difference-between-router-and-switch/
+
+Switch Vs. Router | Difference between Switch and Router https://www.javatpoint.com/switch-vs-router
+
 ### localhost versus 127.0.0.1
 
 - localhost、127.0.0.1 和 本机IP 三者的区别? - 知乎 https://www.zhihu.com/question/23940717
