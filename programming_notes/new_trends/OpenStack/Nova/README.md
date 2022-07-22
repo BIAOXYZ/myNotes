@@ -20,6 +20,12 @@ OpenStack Nova 总结（01）- 架构及组件详解 https://blog.csdn.net/dyllo
 
 OpenStack —— 计算服务Nova(四) https://developer.aliyun.com/article/434203
 
+【From 听雪落的光阴】：
+- OpenStack入门之核心组件梳理（2）——Nova篇 https://blog.51cto.com/u_14557673/2476104
+- OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.com/u_14557673/2477886
+
+openstack学习笔记之五：nova简介与手动安装部署 https://blog.51cto.com/u_8355320/2492113
+
 # live migration of an instance in Nova
 
 live_migrate.png https://github.com/int32bit/openstack-workflow/blob/master/output/nova/live_migrate.png
