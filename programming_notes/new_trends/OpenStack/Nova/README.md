@@ -7,6 +7,14 @@ OpenStack Compute (Nova). Mirror of code maintained at opendev.org. https://gith
 # 其他
 
 【[:star:][`*`]】 OpenStack的Nova组件详解 https://www.cnblogs.com/mh20131118/p/12939358.html
+- > **三：工作流程**
+  * > ![](https://img2020.cnblogs.com/blog/1610676/202005/1610676-20200523191854485-507945733.png)
+
+openstack中创建一个虚拟机经过的51步 https://blog.51cto.com/arkling/2329742
+- > **一、前言**
+  * > 本文在林海峰老师“openstack创建一个VM所需的29步”基础上进行了补充和修改，文中只用到了openstack六个核心组件，为了便于理解，架构中不同组件内的rabbit mq和db为同一个（可以为每个组件配置单独的db和rabbit mq）。openstack组件之间通过REST调用，组件内通过RPC协议通信，RPC协议又是基于AMQP模型实现的，rabbit mq就是运用该模型的一款软件。
+- > **三、创建VM的过程详解**
+  * > ![](http://s2.51cto.com/images/blog/201812/13/c6c5d91ef3233973e3f8c8baa9fe9948.png)
 
 OpenStack Nova 总结（01）- 架构及组件详解 https://blog.csdn.net/dylloveyou/article/details/80698420
 
@@ -14,7 +22,15 @@ OpenStack —— 计算服务Nova(四) https://developer.aliyun.com/article/4342
 
 # live migration of an instance in Nova
 
+live_migrate.png https://github.com/int32bit/openstack-workflow/blob/master/output/nova/live_migrate.png
+- https://raw.githubusercontent.com/int32bit/openstack-workflow/master/output/nova/live_migrate.png
+
 Live-migrate instances https://docs.openstack.org/nova/pike/admin/live-migration-usage.html
+- > **Addressing migration timeouts¶**
+  * > **Enable post-copy**
+    + > This is a Libvirt feature. ***Libvirt detects that the migration does not progress and responds by activating the virtual machine on the destination host before all its memory has been copied***. Access to missing memory pages result in page faults that are satisfied from the source host.
+
+Configure live migrations https://docs.openstack.org/nova/pike/admin/configuring-migrations.html
 
 Nova/Live Migration https://wiki.openstack.org/wiki/Nova/Live_Migration
 
