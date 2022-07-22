@@ -6,31 +6,6 @@ OpenStack Networking (Neutron). Mirror of code maintained at opendev.org. https:
 
 System for quickly installing an OpenStack cloud from upstream git for testing and development. Mirror of code maintained at opendev.org. https://github.com/openstack/devstack/tree/master || https://opendev.org/openstack/devstack
 
-# 安装
-
-DevStack https://docs.openstack.org/devstack/latest/
-
-Install via Devstack https://docs.openstack.org/tacker/rocky/install/devstack.html
-
-openstack的DevStack安装 https://xn--helloworld-pf2pka.top/archives/178
-
-Ubuntu 20使用devstack快速安装openstack最新版 https://www.cnblogs.com/dyd168/p/14476271.html
-
-DevStack安装OpenStack https://changhungtao.github.io/%E6%8A%80%E6%9C%AF/2018/12/26/DevStack%E5%AE%89%E8%A3%85OpenStack.html
-
-Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885
-
-## 安装遇到的问题
-
-openStack常见报错 https://blog.csdn.net/qq_40907977/article/details/103452775
-
-How to install DevStack when firewall blocks git https://superuser.com/questions/1209894/how-to-install-devstack-when-firewall-blocks-git
-- https://superuser.com/questions/1209894/how-to-install-devstack-when-firewall-blocks-git/1295587#1295587
-
-Openstack devstack installation stalls with git call failure https://stackoverflow.com/questions/25866608/openstack-devstack-installation-stalls-with-git-call-failure
-
-How to install python-mysqldb for Python 2.7 in Ubuntu 20.04 (Focal Fossa)? https://stackoverflow.com/questions/63457213/how-to-install-python-mysqldb-for-python-2-7-in-ubuntu-20-04-focal-fossa
-
 # 源码
 
 【From yikun.github.com】
