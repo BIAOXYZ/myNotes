@@ -30,3 +30,5 @@ KVM+Qemu+Libvirt实战 https://www.cnblogs.com/zhangyinhua/p/7481803.html
 # KVM其他
 
 AWS just announced a move from Xen towards KVM. So what is KVM? https://medium.com/@dbclin/aws-just-announced-a-move-from-xen-towards-kvm-so-what-is-kvm-2091f123991
+
+KVM-Qemu-Libvirt三者之间的关系 https://blog.csdn.net/whatday/article/details/78445932 || https://hsinin.github.io/2017/01/16/KVM-Qemu-Libvirt%E4%B8%89%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/ || https://blog.51cto.com/changfei/1672147

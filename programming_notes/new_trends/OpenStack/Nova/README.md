@@ -36,7 +36,10 @@ Live-migrate instances https://docs.openstack.org/nova/pike/admin/live-migration
   * > **Enable post-copy**
     + > This is a Libvirt feature. ***Libvirt detects that the migration does not progress and responds by activating the virtual machine on the destination host before all its memory has been copied***. Access to missing memory pages result in page faults that are satisfied from the source host.
 
-Configure live migrations https://docs.openstack.org/nova/pike/admin/configuring-migrations.html
+Configure live migrations https://docs.openstack.org/nova/pike/admin/configuring-migrations.html || https://docs.openstack.org/nova/stein/admin/configuring-migrations.html  【为啥 p 版本比 s 版本的更新日期还晚。。。】
+- > **Advanced configuration for KVM and QEMU¶**
+  * > **1.Live migration completion timeout**
+  * > **2.Live migration progress timeout**
 
 Nova/Live Migration https://wiki.openstack.org/wiki/Nova/Live_Migration
 

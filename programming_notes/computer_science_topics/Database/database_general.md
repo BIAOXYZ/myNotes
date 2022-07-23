@@ -337,6 +337,11 @@ SQL是如何在数据库中执行的？ https://segmentfault.com/a/1190000037792
 
 SQL优化之火山模型、向量化、编译执行 https://blog.csdn.net/u011436427/article/details/121805600
 
+向量化引擎对HTAP的价值与技术思考 https://mp.weixin.qq.com/s/cq4tPEBPfKAesrgviEq1CA
+- > 在详细介绍向量化引擎特点前，我们先了解一下火山模型以及火山模型存在的典型问题。在数据库发展早期，由于 IO 速度低下、内存和 CPU 资源非常昂贵，为了避免爆内存的情况出现，每次只计算一行数据的火山模型成为了经典的 SQL 计算引擎。火山模型又叫迭代器模型，正式提出是在 1994 年论文《Volcano—An Extensible and Parallel Query Evaluation System》。早期很多关系型数据库都在使用火山模型，如 Oracle、Db2、SQLServer、MySQL、PostgreSQL、MongoDB 等。
+- > 2005 年，一篇题为《MonetDB/X100: Hyper-Pipelining Query Execution》的论文首次提出“向量化引擎”的概念。不同于传统的火山模型按行迭代的方式，向量化引擎采用批量迭代方式，可以在算子间一次传递一批数据。换句话说，向量化实现了从一次对一个值进行运算，到一次对一组值进行运算的跨越。
+- > 论文《DBMSs On A Modern Processor: Where Does Time Go?》还介绍了分支预测失败对数据库性能的影响。由于 CPU 中断了流水执行，重新刷新流水线，因此分支预测失败对数据库处理性能的影响很大。SIGMOD13 的论文《Micro Adaptivity in Vectorwise》也对分支在不同选择率下的执行效率有详细论述（下图）。
+
 # 故障恢复
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
