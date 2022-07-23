@@ -10,6 +10,7 @@ ns-3 https://www.nsnam.org/
 ns-3 Tutorial https://www.nsnam.org/docs/tutorial/html/
 
 Main Page https://www.nsnam.org/wiki/Main_Page
+- Installation https://www.nsnam.org/wiki/Installation
 
 # 安装
 
