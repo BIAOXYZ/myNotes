@@ -47,12 +47,15 @@ RAID https://zh.wikipedia.org/wiki/RAID
 ## 块存储 vs 文件存储 vs 对象存储
 
 块存储、文件存储、对象存储这三者的本质差别是什么？ - 知乎 https://www.zhihu.com/question/21536660
+- 块存储、文件存储、对象存储这三者的本质差别是什么？ - Alluxio的回答 - 知乎 https://www.zhihu.com/question/21536660/answer/2552351492
 
 干货科普：大火的「对象存储」到底是什么 https://www.ithome.com/0/501/133.htm
 
 文件存储、块存储还是对象存储？ https://www.redhat.com/zh/topics/data-storage/file-block-object-storage
 
 分布式存储：你知道对象存储是如何保存图片文件的吗？ https://zq99299.github.io/note-book/back-end-storage/03/04.html
+
+块存储 https://www.ibm.com/cn-zh/cloud/learn/block-storage
 
 ## disk
 

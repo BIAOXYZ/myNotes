@@ -16,6 +16,11 @@ B站的年轻人，真的有那么好学吗？ https://mp.weixin.qq.com/s/HY_oYg
 
 直死之邪王灼眼--专栏文集 https://space.bilibili.com/14978578/article
 
+7 行代码让B站崩溃 3 小时，竟因“一个诡计多端的 0” https://www.ithome.com/0/631/276.htm
+- > 参考链接：《2021.07.13 我们是这样崩的》by 哔哩哔哩技术 https://mp.weixin.qq.com/s/nGtC5lBX_Iaj57HIdXq3Qg
+- 个人搜集链接:
+  * bilibili lua BUG 本地未复现 https://www.v2ex.com/t/868332
+
 ## ZeroTier
 
 简易利用ZeroTier等工具实现多人稳定游戏联机 https://www.bilibili.com/read/cv5281798/

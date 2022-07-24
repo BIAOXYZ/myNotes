@@ -1,4 +1,7 @@
 
+【[:star:][`*`]】 C++中的数组寻址，是线性时间还是固定时间 https://www.v2ex.com/t/868384
+- > 不学计算机组成，编程处处是魔法
+
 请教一个 shared_ptr 内存泄漏的问题 https://www.v2ex.com/t/851924
 
 C++ for 循环终止条件里面如果写一个数组的 size，会不会优化呢？ https://www.v2ex.com/t/848686
