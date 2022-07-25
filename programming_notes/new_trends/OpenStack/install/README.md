@@ -39,6 +39,10 @@ Openstack devstack installation stalls with git call failure https://stackoverfl
 
 How to install python-mysqldb for Python 2.7 in Ubuntu 20.04 (Focal Fossa)? https://stackoverflow.com/questions/63457213/how-to-install-python-mysqldb-for-python-2-7-in-ubuntu-20-04-focal-fossa
 
+ERROR /opt/stack/devstack/lib/neutron_plugins/ovn_agent:174 Socket https://stackoverflow.com/questions/68001501/error-opt-stack-devstack-lib-neutron-plugins-ovn-agent174-socket
+- https://stackoverflow.com/questions/68001501/error-opt-stack-devstack-lib-neutron-plugins-ovn-agent174-socket/69010263#69010263
+  >> //notes：这个回答的细节不完全适用，因为我机器上的版本没有找到第2步里的 `ovn_agent` 文件。但是在这个回答的启发下，直接把 `/var/run/` 下面的 `ovn` 子目录和 `openvswitch` 删掉，然后再 `./unstack.sh` + `./clean.sh` + 重启虚拟机后再执行 `./stack.sh`，终于可以了。。。
+
 # 个人实战
 
 【[:star:][`*`]】 Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885 || https://www.cnblogs.com/dyd168/p/14476271.html

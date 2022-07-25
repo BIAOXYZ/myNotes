@@ -72,7 +72,7 @@ OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.
 - > **replay exchange**
   * > 在前面虚拟机启动相关的rpc调用函数中提到`cctxt.cast`方法是用于异步rpc调用的，即不会等待被调用方执行完成。
   * > 在openstack中，还有另外一种rpc调用，即同步rpc调用，对应的方法为`cctxt.call`，该方法被执行后，将会等待被调用方执行完成。
-  * > 下面的代码同样来自`nova/compute/rpcapi.py`文件，该方法用于获取计算节点的运行时间。
+  * > 下面的代码同样来自 ***`nova/compute/rpcapi.py`*** 文件，该方法用于获取计算节点的运行时间。
     ```py
     # 获取计算节点的运行时间
     def get_host_uptime(self, ctxt, host):
@@ -91,7 +91,7 @@ OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.
   * > 以`fanout`结尾的exchange的作用是对所有相关的服务进行广播，以nova-scheduler服务为例，当有多个nova-scheduler服务进程时，每个nova-scheduler进程都会生成一个队列并绑定到scheduler_fanout exchange上。
   * > 在通过这个scheduler_fanout进行消息广播时，所有的nova-scheduler进程都将接收到消息。
   * > 使用广播给服务发送消息的方式，***在nova中主要用于通知nova-scheduler服务更新缓存信息***，比如通知所有的nova-scheduler服务进程更新主机可用域信息。在用户调用nova-api接口修改主机所在可用域的时候，nova-api服务就会通过广播的方式将计算节点的可用域信息广播给所有的nova-scheduler服务进程，使得nova-scheduler服务能够及时的更新内存中缓存的可用域信息，以便于正确的完成虚拟机调度。
-  * > 下面的代码来自nova/scheduler/rpcapi.py文件，其作用就是通过广播的方式通知所有nova-scheduler服务进程完成内存数据的更新
+  * > 下面的代码来自 ***`nova/scheduler/rpcapi.py`*** 文件，其作用就是通过广播的方式通知所有nova-scheduler服务进程完成内存数据的更新
     ```py
     def update_aggregates(self, ctxt, aggregates):
         # 通过fanout参数指定操作为广播操作
@@ -102,6 +102,19 @@ OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.
   * > 从图中可以看到，每个nova-scheduler服务都会有一个队列连接到scheduler_fanout exchange上。因此nova-api在进行广播消息时，每个`scheduler_fanout_<uuid>`队列里面都将收到消息，所有的nova-scheduler服务进程都能够处理消息。
 - > **Nova高可用**
   * > nova组件的高可用分为两种，***一种是以暴露端口对外提供http调用的服务，比较典型的是nova-api服务***，另外还有像placement服务和nova-novncproxy服务；***第二种就是像nova-scheduler、nova-conductor这样的服务，这些服务是通过消息队列来接收和处理请求的***。
+  * > 下面的代码来自 ***`nova/scheduler/rpcapi.py`***，其功能就是通过rpc同步调用nova-scheduler完成虚拟机的调度
+    ```py
+    # 1. 通过rpc同步调用nova-scheduler完成虚拟机调度，通常由nova-conductor服务发起调用
+    def select_destinations(self, ctxt, spec_obj, instance_uuids):
+        version = '4.4'
+        #...
+        # 2. 注意这里prepare方法没有指定server参数，因此消息将被发送给scheduler队列。
+        # 如果指定了server=controller01，则消息将被发送给scheduler.controller01队列，此时
+        # 虚拟机调度请求消息将只能被controller01节点上的nova-scheduler服务进程获取并处理。
+        cctxt = self.client.prepare(version=version)
+        # 3. rpc同步调用，等待虚拟机调度结果
+        return cctxt.call(ctxt, 'select_destinations', **msg_args)
+    ```
 
 # 其他文章
 
