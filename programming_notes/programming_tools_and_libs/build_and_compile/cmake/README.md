@@ -69,3 +69,19 @@ CMake设置编译选项的几种方法 https://blog.csdn.net/dreamback1987/artic
     | `PRIVATE`	| 我需要，但是依赖者不需要 |
     | `PUBLIC` | 我和依赖者都需要 |
     | `INTERFACE` | 我不需要，但是依赖者需要 |
+
+## 卸载源码编译安装的 cmake
+
+Remove CMake from standard installation locations. Tested on Ubuntu. https://gist.github.com/datatypevoid/86240308911c901fd198eb4df804cc49
+>> //notes：其实核心就是最后那几句 `rm -rf ......`。注意有的时候 `/usr/local/bin` 下面还有 `cpack` 和 `ctest`，也不知道不删会不会有影响，反正一股脑删了就行！
+```sh
+rm_options="-rf"
+
+rm ${rm_options} /usr/local/share/cmake* \
+  /usr/local/lib/cmake \
+  /usr/local/doc/cmake* \
+  /usr/local/bin/cmake \
+  /usr/local/share/aclocal/cmake.m4
+```
+
+https://askubuntu.com/questions/942713/how-do-i-remove-cmake-after-installing-it-from-source

@@ -22,6 +22,9 @@ OpenStack —— 计算服务Nova(四) https://developer.aliyun.com/article/4342
 
 【From 听雪落的光阴】：
 - OpenStack入门之核心组件梳理（2）——Nova篇 https://blog.51cto.com/u_14557673/2476104
+  * > **2.5 Nova-Conductor**
+    + > Nova核心服务组件。Nova-Conductor 主要是为了使Nova-Compute服务与数据库（云数据库）之间进行交互。也就是说，有了Nova-Conductor，在实际运行中，消除了Nova-Compute服务对云数据库的直接访问，而是通过Nova-Conductor实现对数据库的访问。
+    + > 此外，该组件支持水平扩展到多个节点上同时运行（Nova在水平扩展时采用的是Cell的部署方式），但是不能将之部署到运行Nova-Compute的计算节点上，否则无法实现Nova-Compute与数据库之间的隔离。
 - OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.com/u_14557673/2477886
 
 openstack学习笔记之五：nova简介与手动安装部署 https://blog.51cto.com/u_8355320/2492113
