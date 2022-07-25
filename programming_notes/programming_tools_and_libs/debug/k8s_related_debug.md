@@ -1,4 +1,6 @@
 
+K8s远程调试，你的姿势对了吗？ https://cloud.tencent.com/developer/article/1624638
+
 # Operator-SDK related Debug
 
 How to setup my IDEA to debug the operator in golang locally? https://github.com/operator-framework/operator-sdk/issues/1315

@@ -31,7 +31,7 @@ OpenStack虚拟机创建的50个步骤和100个知识点 https://mp.weixin.qq.co
 
 `17. nova-api分析` https://gtcsq.readthedocs.io/en/latest/openstack/nova_api.html
 
-# 其他
+# 调试
 
 OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.zhihu.com/p/63898351
 
@@ -39,3 +39,9 @@ OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.
 
 `21. OpenStack 调试` https://gtcsq.readthedocs.io/en/latest/openstack/openstack_debug.html
 - 调试 OpenStack http://wsfdl.com/openstack/2013/08/28/%E8%B0%83%E8%AF%95OpenStack.html
+
+# 其他文章
+
+【From 腾讯云TStack】
+- 史上最全全全全的Cell V2干货详解在这！ https://cloud.tencent.com/developer/article/1473057
+- 从消息队列看OpenStack https://cloud.tencent.com/developer/article/1763043
