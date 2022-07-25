@@ -1,6 +1,8 @@
 
 # 官方
 
+ns-3-allinone https://gitlab.com/nsnam/ns-3-allinone
+
 The Network Simulator, Version 3 https://github.com/nsnam/ns-3-dev-git
 - > GitHub read-only mirror of ns-3-dev repository, will be kept in sync with main GitLab.com repository. Please DO NOT file pull requests here; instead, file issues and merge requests at https://gitlab.com/nsnam/ns-3-dev/
 
@@ -17,6 +19,18 @@ Main Page https://www.nsnam.org/wiki/Main_Page
 Ubuntu18.04上安装NS-3 https://www.cnblogs.com/variablex/p/13928867.html
 
 NS-3学习笔记（一）：NS-3的运行环境搭建 https://rainsia.github.io/2018/03/30/ns3-001/
+
+## 个人实战
+
+```sh
+mkdir test
+cd test/
+git clone https://gitlab.com/nsnam/ns-3-allinone.git
+python download.py
+sudo apt update
+sudo apt install -y g++ cmake
+./build.py --enable-examples --enable-tests
+```
 
 # 其他
 

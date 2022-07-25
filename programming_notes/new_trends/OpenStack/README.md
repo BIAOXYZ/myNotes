@@ -29,8 +29,13 @@ OpenStack虚拟机创建的50个步骤和100个知识点 https://mp.weixin.qq.co
 - OpenStack源码阅读－创建虚拟机（二） https://mp.weixin.qq.com/s/Vb-UCl2B61f-ITOpD0luTQ
 - OpenStack源码阅读－创建虚拟机（三） https://mp.weixin.qq.com/s/z-b-jz6DEy-Ivz36KBr8jA
 
+`17. nova-api分析` https://gtcsq.readthedocs.io/en/latest/openstack/nova_api.html
+
 # 其他
 
 OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.zhihu.com/p/63898351
 
 优雅地调试OpenStack https://yikun.github.io/2016/02/22/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%B0%83%E8%AF%95OpenStack/ || https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%B0%83%E8%AF%95OpenStack.md
+
+`21. OpenStack 调试` https://gtcsq.readthedocs.io/en/latest/openstack/openstack_debug.html
+- 调试 OpenStack http://wsfdl.com/openstack/2013/08/28/%E8%B0%83%E8%AF%95OpenStack.html
