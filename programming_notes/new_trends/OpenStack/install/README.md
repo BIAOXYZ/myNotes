@@ -7,9 +7,25 @@ Install via Devstack https://docs.openstack.org/tacker/rocky/install/devstack.ht
 
 openstack的DevStack安装 https://xn--helloworld-pf2pka.top/archives/178
 
-Ubuntu 20使用devstack快速安装openstack最新版 https://www.cnblogs.com/dyd168/p/14476271.html
-
 DevStack安装OpenStack https://changhungtao.github.io/%E6%8A%80%E6%9C%AF/2018/12/26/DevStack%E5%AE%89%E8%A3%85OpenStack.html
+
+Devstack https://huataihuang.gitbooks.io/cloud-atlas/content/iaas/openstack/devstack/deploy_devstack.html
+- > **重启**
+  * > Devstack不是通过服务方式运行的，而是通过screen程序。在成功运行了stack.sh之后，如果需要重启任何openstack服务，使用screen -r来连接screen。例如，要重启nova网络，则连接screen 9来访问nova网络的screen（使用命令CTRL+A和9）。要停止nova网络，使用｀CTRL+C`然后再使用向上键再回车。
+  * > 如果重启了主机，则还是需要再运行一次`stack.sh`脚本。
+- > **devstack环境要求**
+  * > 如果由于意外中断devstack运行（如强制关机），则需要先运行 `./unstack.sh` 清理环境，然后重启运行 `./stack.sh` 脚本重建会话。
+- > **停止DevStack**
+  * > `unstack.sh`将停止所有由`stack.sh`启动的进程。所有进程的停止可以通过命令行设置`UNSTACK_ALL`或在specifying `--all`
+    ```sh
+    ./unstack.sh --all
+    ```
+- > **重启devstack**
+  * > 使用`rejoin-stack.sh`来重启DevStack
+    ```sh
+    ./rejoin-stack.sh &
+    ```
+>> //notes：不知道是不是我这环境的原因，反正用 unstack.sh 脚本没搞成。。。用 clean.sh 也没搞成。看提示貌似都是 openvswitch 的问题。。。
 
 ## 安装遇到的问题第一批
 >> //notes：猜测主要原因是因为原来的虚拟机 Ubuntu 20.04 里 Python 版本乱了。后来重装虚拟机后只有 Python 3.8，所有 Python 版本的问题都没了。剩下的两个问题很好解决。
@@ -25,7 +41,7 @@ How to install python-mysqldb for Python 2.7 in Ubuntu 20.04 (Focal Fossa)? http
 
 # 个人实战
 
-【[:star:][`*`]】 Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885
+【[:star:][`*`]】 Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885 || https://www.cnblogs.com/dyd168/p/14476271.html
 
 ```sh
 sudo apt-get install bridge-utils git python3-pip -y
