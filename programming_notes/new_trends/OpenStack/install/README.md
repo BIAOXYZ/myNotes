@@ -1,5 +1,5 @@
 
-# 安装
+# DevStack
 
 DevStack https://docs.openstack.org/devstack/latest/
 
@@ -27,6 +27,8 @@ Devstack https://huataihuang.gitbooks.io/cloud-atlas/content/iaas/openstack/devs
     ```
 >> //notes：不知道是不是我这环境的原因，反正用 unstack.sh 脚本没搞成。。。用 clean.sh 也没搞成。看提示貌似都是 openvswitch 的问题。。。
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 安装遇到的问题第一批
 >> //notes：猜测主要原因是因为原来的虚拟机 Ubuntu 20.04 里 Python 版本乱了。后来重装虚拟机后只有 Python 3.8，所有 Python 版本的问题都没了。剩下的两个问题很好解决。
 
@@ -43,7 +45,9 @@ ERROR /opt/stack/devstack/lib/neutron_plugins/ovn_agent:174 Socket https://stack
 - https://stackoverflow.com/questions/68001501/error-opt-stack-devstack-lib-neutron-plugins-ovn-agent174-socket/69010263#69010263
   >> //notes：这个回答的细节不完全适用，因为我机器上的版本没有找到第2步里的 `ovn_agent` 文件。但是在这个回答的启发下，直接把 `/var/run/` 下面的 `ovn` 子目录和 `openvswitch` 删掉，然后再 `./unstack.sh` + `./clean.sh` + 重启虚拟机后再执行 `./stack.sh`，终于可以了。。。
 
-# 个人实战
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 个人实战
 
 【[:star:][`*`]】 Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885 || https://www.cnblogs.com/dyd168/p/14476271.html
 
@@ -248,3 +252,13 @@ stack@ubuntu:~/devstack$ openstack network agent list
 +--------------------------------------+------------------------------+--------+-------------------+-------+-------+----------------------------+
 stack@ubuntu:~/devstack$
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Kolla
+
+使用Kolla部署OpenStack Stein版本 https://sunqi.site/2020/10/30/%E4%BD%BF%E7%94%A8Kolla%E9%83%A8%E7%BD%B2OpenStack-Stein%E7%89%88%E6%9C%AC/
+
+OpenStack（二）——使用Kolla部署OpenStack-allinone云平台 https://www.cnblogs.com/diantong/p/11911503.html
+
+Kolla-Ansible 多机部署 V 版 OpenStack https://jckling.github.io/2021/08/31/OpenStack/Kolla-Ansible%20%E5%A4%9A%E6%9C%BA%E9%83%A8%E7%BD%B2/
