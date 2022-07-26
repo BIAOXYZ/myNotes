@@ -18,6 +18,7 @@ Documentation https://www.sqlite.org/docs.html
     > When this is done, no disk file is opened. Instead, a new database is created purely in memory. The database ceases to exist as soon as the database connection is closed. Every `:memory:` database is distinct from every other. So, opening two database connections each with the filename "`:memory:`" will create two independent in-memory databases.
   * > **Temporary Databases**
 - SQLite Shared-Cache Mode https://www.sqlite.org/sharedcache.html
+- SQLite中的限制 https://www.sqlite.net.cn/limits.html || Limits In SQLite https://www.sqlite.org/limits.html
 
 Official Git mirror of the SQLite source tree https://github.com/sqlite/sqlite || SQLite Source Repository https://sqlite.org/src/doc/trunk/README.md
 

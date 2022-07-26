@@ -12,6 +12,12 @@ How to read data from SQLite database? https://stackoverflow.com/questions/39573
 How do I check if a table exists in sqlite3 c++ API? [duplicate] https://stackoverflow.com/questions/3499295/how-do-i-check-if-a-table-exists-in-sqlite3-c-api
 - How do I check in SQLite whether a table exists? https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists
 
+谈一谈sqlite这种小型数据库（1） https://www.cnblogs.com/bwbfight/p/9306293.html
+- > 三、参数绑定：
+  * > 和大多数关系型数据库一样，SQLite的SQL文本也支持变量绑定，以便减少SQL语句被动态 解析的次数，从而提高数据查询和数据操作的效率。要完成该操作，我们需要使用SQLite提 供的另外两个接口APIs，`sqlite3_reset`和`sqlite3_bind`。
+
+C++之Sqlite3 https://segmentfault.com/a/1190000021141956
+
 ## uint64 支持
 
 unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questions/52535100/unsigned-64-bit-value-in-sqlite-with-c-bindings
