@@ -78,3 +78,5 @@ OpenStack实践(十一):Instance Live Migrate and Evacuate https://cloud.tencent
 本地存储条件下的热迁移 https://cloud.tencent.com/developer/article/1357918
 
 基于OpenStack的虚拟机在线迁移 https://cloud.tencent.com/developer/article/2035202
+
+OpenStack 虚拟机冷/热迁移功能实践与流程分析 https://blog.51cto.com/u_15301988/3087833

@@ -31,6 +31,21 @@ OpenStack虚拟机创建的50个步骤和100个知识点 https://mp.weixin.qq.co
 
 `17. nova-api分析` https://gtcsq.readthedocs.io/en/latest/openstack/nova_api.html
 
+OpenStack 虚拟机冷/热迁移的实现原理与代码分析 https://www.cnblogs.com/jmilkfan-fanguiju/p/10589712.html
+
+OPENSTACK之虚机热迁移代码解析 https://www.cnblogs.com/voidy/p/4056329.html
+
+虚拟机迁移之热迁移(live_migrate) https://www.hanbaoying.com/2016/05/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%81%E7%A7%BB%E4%B9%8B%E7%83%AD%E8%BF%81%E7%A7%BB(live_migrate).html
+
+OpenStack源码学习笔记6 https://www.hi-roy.com/posts/openstack%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06/
+
+openstack源码分析 https://blog.csdn.net/comprel/category_8812446.html
+- openstack-nova源码分析(九）冷迁移 https://blog.csdn.net/comprel/article/details/97616533
+
+openstack冷迁移/Resize源码分析（二） https://blog.csdn.net/qq_33909098/article/details/118960184
+
+Nova组件源码分析之冷迁移与Resize https://itcn.blog/p/2010401099.html
+
 # 调试
 
 OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.zhihu.com/p/63898351
