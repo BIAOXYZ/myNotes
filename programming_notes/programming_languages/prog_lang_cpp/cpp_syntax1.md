@@ -120,3 +120,5 @@ What is 1LL or 2LL in C and C++? https://stackoverflow.com/questions/16248221/wh
     + > `long long` was added to the latest C++ standard, I believe. That said, it doesn't matter if you use uppercase `L` or lowercase `l`. Further, there's `u` or `U` for `unsigned` to combine with them.
     + > You are correct. `long long` is an official type in C++11 with at least 64 bits.
     + > Well, it matters for human readability: `11LL` is easier to read than `11ll`. 
+
+C++中 string作为参数的传递（string类型的引用） https://blog.csdn.net/hl_zzl/article/details/83747469
