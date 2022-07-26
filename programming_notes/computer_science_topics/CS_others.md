@@ -37,6 +37,10 @@ runninglinuxkernel_4.0 for 《奔跑吧Linux内核》 《奔跑吧Linux内核入
 
 《奔跑吧Linux内核》 第二版配套实验平台 https://github.com/figozhang/runninglinuxkernel_5.0
 
+kernel_exploring https://github.com/RichardWeiYang/kernel_exploring
+
+KInK(KernelInKernel) https://github.com/gatieme/KernelInKernel
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj

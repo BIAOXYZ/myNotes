@@ -403,6 +403,9 @@ stack@ubuntu:~/devstack$ openstack server create myinstance --image cirros-0.5.2
 stack@ubuntu:~/devstack$ 
 ```
 
+其他参考链接：
+- 374.【openstack】命令行模式创建虚拟机 https://www.jianshu.com/p/2629b49cf0cb
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Kolla

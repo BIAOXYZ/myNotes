@@ -1,4 +1,6 @@
 
+看 pip 的启动脚本看得我人都傻了，还能把 shell 和 py 揉到一起写 https://www.v2ex.com/t/868827
+
 网上流传最广的 Python 单例模式竟然是有问题的？ https://www.v2ex.com/t/861715
 
 Python 日志输出异常的正确姿势？ https://www.v2ex.com/t/861072
