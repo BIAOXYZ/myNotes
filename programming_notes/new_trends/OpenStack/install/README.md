@@ -49,6 +49,8 @@ ERROR /opt/stack/devstack/lib/neutron_plugins/ovn_agent:174 Socket https://stack
 
 ## 个人实战
 
+### 安装以及后续方便操作配置环境变量脚本
+
 【[:star:][`*`]】 Ubuntu 20使用devstack快速安装openstack最新版 https://blog.csdn.net/Q0717168/article/details/114328885 || https://www.cnblogs.com/dyd168/p/14476271.html
 
 ```sh
@@ -251,6 +253,154 @@ stack@ubuntu:~/devstack$ openstack network agent list
 | ba8530be-71b4-451a-9574-996da88a4e7c | OVN Controller Gateway agent | ubuntu |                   | :-)   | UP    | ovn-controller             |
 +--------------------------------------+------------------------------+--------+-------------------+-------+-------+----------------------------+
 stack@ubuntu:~/devstack$
+```
+
+### 创建虚拟机
+>> //notes：openstack 资源需求太高了，虚拟机创建完刚把屏幕上的输出复制好，就开始卡住不动了。。。Mac Pro也开始狂响，不知道这次 VMWare虚机 + 虚机里的openstack 能撑住不。。。
+
+【[:star:][`*`]】 OpenStack命令行操作之虚机管理实现 https://www.sdnlab.com/20489.html
+>> //notes：没有走创建自定义镜像这一步，所以跟原文的步骤有一点点不一样。。。
+
+```sh
+# 创建自定义 flavor
+stack@ubuntu:~/devstack$ openstack flavor create myflavor --ram 256 --disk 1 --vcpus 1 --public
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| description                | None                                 |
+| disk                       | 1                                    |
+| id                         | 67a4cbf8-47b4-4ba6-a1c4-3c4dcfef43ac |
+| name                       | myflavor                             |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 256                                  |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 1                                    |
++----------------------------+--------------------------------------+
+stack@ubuntu:~/devstack$ 
+
+# 创建自定义 network
+stack@ubuntu:~/devstack$ openstack network create mynetwork --external
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
++---------------------------+--------------------------------------+
+| Field                     | Value                                |
++---------------------------+--------------------------------------+
+| admin_state_up            | UP                                   |
+| availability_zone_hints   |                                      |
+| availability_zones        |                                      |
+| created_at                | 2022-07-26T13:27:17Z                 |
+| description               |                                      |
+| dns_domain                | None                                 |
+| id                        | ac4b2563-01ad-409f-bd1a-3864a570f0ac |
+| ipv4_address_scope        | None                                 |
+| ipv6_address_scope        | None                                 |
+| is_default                | False                                |
+| is_vlan_transparent       | None                                 |
+| mtu                       | 1442                                 |
+| name                      | mynetwork                            |
+| port_security_enabled     | True                                 |
+| project_id                | 3611624782254240af9f5fbda4139699     |
+| provider:network_type     | geneve                               |
+| provider:physical_network | None                                 |
+| provider:segmentation_id  | 1659                                 |
+| qos_policy_id             | None                                 |
+| revision_number           | 1                                    |
+| router:external           | External                             |
+| segments                  | None                                 |
+| shared                    | False                                |
+| status                    | ACTIVE                               |
+| subnets                   |                                      |
+| tags                      |                                      |
+| updated_at                | 2022-07-26T13:27:18Z                 |
++---------------------------+--------------------------------------+
+stack@ubuntu:~/devstack$ 
+# 创建自定义 subnet
+stack@ubuntu:~/devstack$ openstack subnet create mynetwork_subnet --allocation-pool start=172.171.5.210,end=172.171.5.213 --subnet-range 172.171.5.0/20 --dns-nameserver 114.114.114.114 --gateway 172.171.0.1 --network mynetwork
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+The option [tenant_id] has been deprecated. Please avoid using it.
++----------------------+--------------------------------------+
+| Field                | Value                                |
++----------------------+--------------------------------------+
+| allocation_pools     | 172.171.5.210-172.171.5.213          |
+| cidr                 | 172.171.0.0/20                       |
+| created_at           | 2022-07-26T13:34:20Z                 |
+| description          |                                      |
+| dns_nameservers      | 114.114.114.114                      |
+| dns_publish_fixed_ip | None                                 |
+| enable_dhcp          | True                                 |
+| gateway_ip           | 172.171.0.1                          |
+| host_routes          |                                      |
+| id                   | e1286c15-c270-4c77-96fb-f5284bd8c216 |
+| ip_version           | 4                                    |
+| ipv6_address_mode    | None                                 |
+| ipv6_ra_mode         | None                                 |
+| name                 | mynetwork_subnet                     |
+| network_id           | ac4b2563-01ad-409f-bd1a-3864a570f0ac |
+| project_id           | 3611624782254240af9f5fbda4139699     |
+| revision_number      | 0                                    |
+| segment_id           | None                                 |
+| service_types        |                                      |
+| subnetpool_id        | None                                 |
+| tags                 |                                      |
+| tenant_id            | 3611624782254240af9f5fbda4139699     |
+| updated_at           | 2022-07-26T13:34:20Z                 |
++----------------------+--------------------------------------+
+stack@ubuntu:~/devstack$ 
+
+# 创建虚拟机（这一步直接用了安装好后本来就有的一个镜像，没有自己再创建了）
+stack@ubuntu:~/devstack$ openstack server create myinstance --image cirros-0.5.2-x86_64-disk --flavor myflavor --nic net-id=mynetwork
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
++-------------------------------------+-----------------------------------------------------------------+
+| Field                               | Value                                                           |
++-------------------------------------+-----------------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                          |
+| OS-EXT-AZ:availability_zone         |                                                                 |
+| OS-EXT-SRV-ATTR:host                | None                                                            |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | None                                                            |
+| OS-EXT-SRV-ATTR:instance_name       |                                                                 |
+| OS-EXT-STS:power_state              | NOSTATE                                                         |
+| OS-EXT-STS:task_state               | scheduling                                                      |
+| OS-EXT-STS:vm_state                 | building                                                        |
+| OS-SRV-USG:launched_at              | None                                                            |
+| OS-SRV-USG:terminated_at            | None                                                            |
+| accessIPv4                          |                                                                 |
+| accessIPv6                          |                                                                 |
+| addresses                           |                                                                 |
+| adminPass                           | 3prqS9y6Dkpj                                                    |
+| config_drive                        |                                                                 |
+| created                             | 2022-07-26T13:38:27Z                                            |
+| flavor                              | myflavor (67a4cbf8-47b4-4ba6-a1c4-3c4dcfef43ac)                 |
+| hostId                              |                                                                 |
+| id                                  | 48620579-0e43-40c3-b0bf-46cb10460597                            |
+| image                               | cirros-0.5.2-x86_64-disk (00d25381-1e62-418e-87bf-9bfe3e582a89) |
+| key_name                            | None                                                            |
+| name                                | myinstance                                                      |
+| progress                            | 0                                                               |
+| project_id                          | 3611624782254240af9f5fbda4139699                                |
+| properties                          |                                                                 |
+| security_groups                     | name='default'                                                  |
+| status                              | BUILD                                                           |
+| updated                             | 2022-07-26T13:38:26Z                                            |
+| user_id                             | b8e74e7cadec4ce8b579b742ad5d5b3e                                |
+| volumes_attached                    |                                                                 |
++-------------------------------------+-----------------------------------------------------------------+
+stack@ubuntu:~/devstack$ 
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
