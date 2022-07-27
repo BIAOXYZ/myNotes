@@ -14,3 +14,27 @@ C语言结构体末端定义空数组 https://blog.csdn.net/Sophisticated_/artic
 - > 使用空数组：
   * > 不需要初始化，数组名直接就是所在的偏移 。
   * > 不占任何空间，指针需要占用4字节（32位）/8字节（64位）长度空间，空数组不占任何空间。
+
+C/C++ 中利用debug宏定义打开/关闭调试输出 https://blog.csdn.net/u012707739/article/details/80217959
+- > **debug宏作为调试开关**
+  * > 在写程序时，为了调试，经常需要加一些输出语句，等调试完成又得注释掉，如果下次还需要调试还得解注释，十分费时费力，为了解决这个麻烦，可以定义一个debug宏作为调试输出的开关。如下面代码所示：
+    ```c
+    #include <stdio.h>
+    int main(void)
+    {
+        int i, sum;
+        for (i = 1, sum = 0; i <= 5; i++)
+        {
+            sum += i;
+    #ifdef DEBUG
+            printf("sum += %d is %d\n", i, sum);
+    #endif
+        }
+        printf("total sum is %d\n", sum);
+    }
+    ```
+  * > 上面代码中，只有定义DEBUG宏时，才会输出相加过程，***我们可以在gcc编译时用`-D`选项定义DEBUG宏来打开这个调试开关***，输出调试信息。
+    ```sh
+    gcc -D DEBUG test.c
+    ```
+    >> 【[:star:][`*`]】 //notes：关键在这里，以前只知道在文件前面用 `#define DEBUG` 来控制，现在才知道可以不改代码，只用 gcc 的 `-D` 参数来达到同样的效果。

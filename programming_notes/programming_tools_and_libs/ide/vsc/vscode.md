@@ -189,6 +189,12 @@ How to do a Diff in VS Code (Compare Files) https://vscode.one/diff-vscode/
 
 vscode左下角显示大纲（显示所有函数方法） https://blog.csdn.net/shuipaopaoJin/article/details/95939081
 
+## 不小心关闭了c/c++代码错误提示（error squiggles），如何重新启用
+
+How can I re-enable error squiggles? #2546 https://github.com/Microsoft/vscode-cpptools/issues/2546
+- https://github.com/Microsoft/vscode-cpptools/issues/2546#issuecomment-502875688
+- https://github.com/Microsoft/vscode-cpptools/issues/2546#issuecomment-584231109
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
