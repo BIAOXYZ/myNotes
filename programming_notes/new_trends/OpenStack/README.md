@@ -11,6 +11,8 @@ System for quickly installing an OpenStack cloud from upstream git for testing a
 Overcommitting CPU and RAM https://docs.openstack.org/arch-design/design-compute/design-compute-overcommit.html
 - > The default CPU allocation ratio of `16:1` means that the scheduler allocates up to `16 virtual cores per physical core`. For example, ***if a physical node has 12 cores, the scheduler sees 192 available virtual cores***. With typical flavor definitions of 4 virtual cores per instance, this ratio would provide 48 instances on a physical node.
 
+REST API Version History https://docs.openstack.org/nova/stein/reference/api-microversion-history.html
+
 # 源码
 
 【From yikun.github.com】
@@ -40,7 +42,9 @@ OpenStack 虚拟机冷/热迁移的实现原理与代码分析 https://www.cnblo
 
 OPENSTACK之虚机热迁移代码解析 https://www.cnblogs.com/voidy/p/4056329.html
 
-虚拟机迁移之热迁移(live_migrate) https://www.hanbaoying.com/2016/05/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%81%E7%A7%BB%E4%B9%8B%E7%83%AD%E8%BF%81%E7%A7%BB(live_migrate).html
+【[:star:][`*`]】 虚拟机迁移之热迁移(live_migrate) https://www.hanbaoying.com/2016/05/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%81%E7%A7%BB%E4%B9%8B%E7%83%AD%E8%BF%81%E7%A7%BB(live_migrate).html
+
+Openstack R版热迁移代码封装实现研究 https://blog.csdn.net/jmz19910110/article/details/115304610 || https://pythontechworld.com/article/detail/YipvODWNhn51
 
 OpenStack源码学习笔记6 https://www.hi-roy.com/posts/openstack%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06/
 
@@ -71,7 +75,7 @@ Nova的Object Model源码分析 https://blog.csdn.net/chengqiuming/article/detai
           return jsonutils.to_primitive(svc)
   ```
 - > nova-computer与nova-conductor部署在同一个节点时，nova-computer将直接通过Object Model的封装操作数据库，并不通过nava-conductor。
-- > Object Model代码位于`nova/objects`目录，里面的每个类都对应数据库中的一个表，比如类ComputeNode对应了数据库的compute_nodes表。
+- > Object Model代码位于`nova/objects`目录，里面的每个类都对应数据库中的一个表，***比如`类ComputeNode`对应了数据库的`compute_nodes`表***。
 - > `nova/objects/base.py`中定义了两个非常重要的修饰函数：`remotable_classmethod`和`remotable`，前者用于修饰类的方法，后者用于修饰类的实例的方法。
   ```py
   def remotable_classmethod(fn):
@@ -187,3 +191,7 @@ Openstack工作原理——消息通讯机制 https://mp.weixin.qq.com/s/f8dTxqA
     + > **`RPC.call`**：发送请求到消息队列，等待返回最终结果。
     + > **`RPC.cast`**：发送请求到消息队列，不需要等待最终返回的结果。
   * > Openstack每个组件都会连接消息服务器，一个组件可能是一个消息发送者Invoker（如API、Scheduler），也可能是一个消息接收者Worker（如compute、volume、network）。***Invoker发送消息有两种方式：同步调用`rpc.call`和异步调用`rpc.cast`***，Worker接受并根据rpc.call的信息返回消息。
+
+Nova Conductor服务 https://blog.csdn.net/li_101357/article/details/53069719
+
+Nova Placement API与Nova调度全解析 https://juejin.cn/post/6844904005131321358
