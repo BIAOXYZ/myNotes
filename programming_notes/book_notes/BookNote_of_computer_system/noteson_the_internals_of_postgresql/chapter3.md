@@ -1,4 +1,7 @@
 
+版本：
+- https://web.archive.org/web/20220713233414/https://www.interdb.jp/pg/pgsql03.html
+
 # [Chapter 3. Query Processing](http://www.interdb.jp/pg/pgsql03.html) || 第3章 查询处理
 
 > 本章包括下列三个部分：

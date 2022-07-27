@@ -51,6 +51,49 @@ openstack冷迁移/Resize源码分析（二） https://blog.csdn.net/qq_33909098
 
 Nova组件源码分析之冷迁移与Resize https://itcn.blog/p/2010401099.html
 
+Nova的Object Model源码分析 https://blog.csdn.net/chengqiuming/article/details/79672973
+- > Object Model应该说是Nova中数据库访问的分水岭，在此之前，对每一个表的操作都放在同一个文件里，比如flavor.py，使用时直接调用这个文件中的函数去修改数据库。而Object Model引入后，新建立了Flavor对象与flavor表相对应，将对flavor表的操作都封装在Flavor对象里，需要通过Flavor对象的函数去进行数据操作。
+- > Object Model并不是一个单独的服务，只是使用面向对象思想对数据库访问进行了包装，Object Model引入之后nova-compute访问数据库的流程发生了变化。
+- > nova-compute需要更新数据库时候，将通过Object Model调用`nova.conductor.rcpapi.ConductorAPI`提供的RPC接口。
+  ```py
+  # nova/conductor/rpcapi.py
+  class ConductorAPI(object):
+      def service_create(self, context, values):
+          cctxt = self.client.prepare()
+          return cctxt.call(context, 'service_create', values=values)
+  ```
+- > nova-conductor接受RPC请求之后，通过本地的Object Model完成数据库更新。
+  ```py
+  #nova/conductor/manager.py
+  class ConductorManager(manager.Manager):
+      def service_create(self, context, values):
+          svc = self.db.service_create(context, values)
+          return jsonutils.to_primitive(svc)
+  ```
+- > nova-computer与nova-conductor部署在同一个节点时，nova-computer将直接通过Object Model的封装操作数据库，并不通过nava-conductor。
+- > Object Model代码位于`nova/objects`目录，里面的每个类都对应数据库中的一个表，比如类ComputeNode对应了数据库的compute_nodes表。
+- > `nova/objects/base.py`中定义了两个非常重要的修饰函数：`remotable_classmethod`和`remotable`，前者用于修饰类的方法，后者用于修饰类的实例的方法。
+  ```py
+  def remotable_classmethod(fn):
+      """Decorator for remotable classmethods."""
+      @functools.wraps(fn)
+      def wrapper(cls, context, *args, **kwargs):
+          if NovaObject.indirection_api:
+              result = NovaObject.indirection_api.object_class_action(
+                  context, cls.obj_name(), fn.__name__, cls.VERSION,
+                  args, kwargs)
+          else:
+              result = fn(cls, context, *args, **kwargs)
+              if isinstance(result, NovaObject):
+                  result._context = context
+          return result
+      # NOTE(danms): Make this discoverable
+      wrapper.remotable = True
+      wrapper.original_fn = fn
+  return classmethod(wrapper)
+  ```
+- > 如果nova-conductor与nova-compute部署在不同节点，nova-compute初始化时会将`NovaObject.indirection_api`初始化为`nova.conductor.rpcapi.ConductorAPI`,此时调用`remotable_classmethod`修饰的函数时，会通过RPC将其交给nova-conductor处理，RPC请求中包括了函数名，nova-conductor接受到RPC请求时会调用对应的Object Model函数完成数据库操作。
+
 # 调试
 
 OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.zhihu.com/p/63898351

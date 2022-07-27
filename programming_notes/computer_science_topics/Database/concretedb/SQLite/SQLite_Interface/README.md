@@ -18,6 +18,10 @@ How do I check if a table exists in sqlite3 c++ API? [duplicate] https://stackov
 
 C++之Sqlite3 https://segmentfault.com/a/1190000021141956
 
+## `sqlite3_bind()`
+
+How does binding parameters work in SQLite3 (with minimal example)? https://stackoverflow.com/questions/31806336/how-does-binding-parameters-work-in-sqlite3-with-minimal-example
+
 ## uint64 支持
 
 unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questions/52535100/unsigned-64-bit-value-in-sqlite-with-c-bindings
