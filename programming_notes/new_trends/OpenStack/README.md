@@ -1,10 +1,15 @@
 
 # 官方
 
-OpenStack Networking (Neutron). Mirror of code maintained at opendev.org. https://github.com/openstack/neutron
-- https://github.com/openstack/neutron/tree/stable/stein
+Mirrors of opendev.org/openstack https://github.com/openstack
+- `stable/stein`
+  * https://github.com/openstack/nova/tree/stable/stein
+  * https://github.com/openstack/neutron/tree/stable/stein
 
 System for quickly installing an OpenStack cloud from upstream git for testing and development. Mirror of code maintained at opendev.org. https://github.com/openstack/devstack/tree/master || https://opendev.org/openstack/devstack
+
+Overcommitting CPU and RAM https://docs.openstack.org/arch-design/design-compute/design-compute-overcommit.html
+- > The default CPU allocation ratio of `16:1` means that the scheduler allocates up to `16 virtual cores per physical core`. For example, ***if a physical node has 12 cores, the scheduler sees 192 available virtual cores***. With typical flavor definitions of 4 virtual cores per instance, this ratio would provide 48 instances on a physical node.
 
 # 源码
 
