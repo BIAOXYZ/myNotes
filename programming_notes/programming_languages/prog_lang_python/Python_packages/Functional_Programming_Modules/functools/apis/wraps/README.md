@@ -81,6 +81,8 @@ Docstring
 
 # `@functools.wraps()` 其他
 
+Python | functools.wraps() function https://www.geeksforgeeks.org/python-functools-wraps-function/
+
 python装饰器的wraps作用 https://blog.csdn.net/hqzxsc2006/article/details/50337865 || https://www.jianshu.com/p/a76f1409c349
 - > Python装饰器（`decorator`）在实现的时候，***被装饰后的函数其实已经是另外一个函数了***（***`函数名`等函数属性会发生改变***），为了不影响，Python的 `functools` 包中提供了一个叫 `wraps` 的`decorator` 来消除这样的副作用。写一个 `decorator` 的时候，最好在实现之前加上 `functools` 的 `wraps`，***它能保留原有函数的名称和docstring***。
   >> //notes：直接从官方例子就能完全说明问题了。

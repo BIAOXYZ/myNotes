@@ -20,6 +20,15 @@ Ubuntu18.04上安装NS-3 https://www.cnblogs.com/variablex/p/13928867.html
 
 NS-3学习笔记（一）：NS-3的运行环境搭建 https://rainsia.github.io/2018/03/30/ns3-001/
 
+# 调试
+
+ns3 + VS Code开发环境配置完美版 https://www.bilibili.com/read/cv9932411/
+- > **对应的视频讲解:** ns3+VSCode开发环境配置完美版 https://www.bilibili.com/video/BV1pU4y1W74Z
+
+ns-3 https://blog.csdn.net/qq_31648921/category_10585790.html
+- Ns3学习手记7——ns-3在ubuntu16.04下的安装以及eclipse结合开发过程记录 https://blog.csdn.net/qq_31648921/article/details/112203554
+- ns3学习手记8——NS-3与eclipse结合的开发调试 https://blog.csdn.net/qq_31648921/article/details/112252346
+
 ## 个人实战
 
 ```sh
