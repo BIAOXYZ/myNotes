@@ -37,7 +37,7 @@ https://www.cnblogs.com/jmilkfan-fanguiju/category/1080478.html
 ## 综合类其他
 
 【From yikun.github.com】
-- OpenStack-Nova虚拟机冷迁移流程解析.md https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/OpenStack-Nova%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%B7%E8%BF%81%E7%A7%BB%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90.md
+- OpenStack-Nova虚拟机冷迁移流程解析.md https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/OpenStack-Nova%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%B7%E8%BF%81%E7%A7%BB%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90.md || https://yikun.github.io/2017/10/11/OpenStack-Nova%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%B7%E8%BF%81%E7%A7%BB%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90/
 - OpenStack-Nova虚拟机创建流程解析.md https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/OpenStack-Nova%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90.md
 - OpenStack源码分析-挂载卷流程.md https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/OpenStack%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E6%8C%82%E8%BD%BD%E5%8D%B7%E6%B5%81%E7%A8%8B.md
 
@@ -67,7 +67,9 @@ OpenStack源码学习笔记6 https://www.hi-roy.com/posts/openstack%E6%BA%90%E7%
 openstack源码分析 https://blog.csdn.net/comprel/category_8812446.html
 - openstack-nova源码分析(九）冷迁移 https://blog.csdn.net/comprel/article/details/97616533
 
-openstack冷迁移/Resize源码分析（二） https://blog.csdn.net/qq_33909098/article/details/118960184
+OpenStack https://blog.csdn.net/qq_33909098/category_9573005.html
+- openstack冷迁移/Resize源码分析（一） https://blog.csdn.net/qq_33909098/article/details/118578133
+- openstack冷迁移/Resize源码分析（二） https://blog.csdn.net/qq_33909098/article/details/118960184 || https://codetreasures.com/blog/detail/emQnwGpRtX
 
 Nova组件源码分析之冷迁移与Resize https://itcn.blog/p/2010401099.html
 
