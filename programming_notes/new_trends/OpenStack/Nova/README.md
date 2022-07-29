@@ -4,6 +4,8 @@
 OpenStack Compute (Nova). Mirror of code maintained at opendev.org. https://github.com/openstack/nova
 - https://github.com/openstack/nova/tree/stable/stein
 
+Block Device Mapping in Nova https://docs.openstack.org/nova/stein/user/block-device-mapping.html
+
 # 其他
 
 【[:star:][`*`]】 OpenStack的Nova组件详解 https://www.cnblogs.com/mh20131118/p/12939358.html
@@ -31,6 +33,20 @@ OpenStack —— 计算服务Nova(四) https://developer.aliyun.com/article/4342
 - OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.com/u_14557673/2477886
 
 openstack学习笔记之五：nova简介与手动安装部署 https://blog.51cto.com/u_8355320/2492113
+
+Nova: 虚机的块设备总结 [Nova Instance Block Device] https://www.cnblogs.com/sammyliu/p/4462718.html || https://developer.aliyun.com/article/378312
+- > **3.Nova 虚机的 `block_device_info` 数据结构**
+  * > 该数据结构是 Nova 中一个重要的数据结构，它的内容包括虚机的所有磁盘和被附加的所有卷。一个示例如下：
+  * > `block_device_mapping` 的信息是由 Nova 在数据库中维护的，数据表是 `block_device_mapping`，它维护着一个虚机曾经有过但是现在被删除的和现有的卷信息：
+- > 参考链接：
+  * BlockDeviceConfig https://wiki.openstack.org/wiki/BlockDeviceConfig
+
+block_device_mapping https://www.hanbaoying.com/2015/02/03/block_device_mapping.html
+- > 在代码中，文档中，接口中经常看见bdm或者block_device_mapping，直译就是块设备映射？但它到底是什么东东？有没有一直心存困惑？让我们来一探究竟。
+- > **块设备**
+  * > 指对其信息的存取以“块”为单位，如通常的光盘、硬磁盘、软磁盘、磁带等
+  * > 本人机器上块设备信息如下：
+  * > Nova服务创建的虚拟机，如何为其指派块设备？猜的没错，***可以通过块设备映射。把原有的一些东东（比如cinder的卷，glance的镜像）映射给虚拟机，作为块设备使用***。
 
 # live migration of an instance in Nova
 
