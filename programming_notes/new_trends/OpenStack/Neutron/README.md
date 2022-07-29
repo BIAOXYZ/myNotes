@@ -25,6 +25,21 @@ Neutron 理解 (3): Open vSwitch + GRE/VxLAN 组网 [Netruon Open vSwitch + GRE/
   * > Neutron 的模型有两种。
   * > 一种是抽象的逻辑模型，比如我们耳熟能详的“Network，Subnet，Port”等等，读者可以参考“https://developer.openstack.org/api-ref/networking/v2/”，有个直观认识。
   * > 另一种模型是这种抽象逻辑模型背后的实现模型。无论一个模型多抽象还是多具体，其归根到底总归要有一个实现它的载体。比如 CloudVPN，OPEN-O 这个开源组织，就通过一系列的网元和一定的组网来实现，如下图所示：
+- > **4.2.2.1.2 `qbr` 及 `br-int`**
+  * > ***VM 与 qbr 之间通过 `TAP` 连接，qbr 与 br-int 之间，通过 `VETH pair` 连接***。TAP， VETH pair，我们就讲述了，您可以参见相关章节。
+  * > qbr 与 br-int 都是 bridge。***`qbr` 的实现载体是 Linux Bridge***，就是我们说的“X86/Linux”原生实现。br-int 的实现载体，也是“X86/Linux”实现，只是不能算作“原生”实现，***因为 `br-int` 的实现载体是 `OVS`（Open vSwitch）***，OVS 是在“X86/Linux”的基础上，又做了一层封装（可以用封装这个词，虽然它写了很多代码）。关于 OVS 笔者也写了相关文章，笔者这里就不再啰嗦。（其实，关于 OVS，我还没有写完，^_^）
+  * > 这里强调一点，并不是绝对地说，qbr 就一定是 Linux Bridge，br-int 就一定是 OVS，您也可以用自己的实现方式来替换他们，只不过，这样的实现方式，是当前 OpenStack 解决方案的经典方式而已。在没有更好地实现方式之前，这个也可以说是唯一的实现方式。
+  * > ***`qbr` 这个缩写比较有意思，它是 `Quantum Bridge` 的缩写***，而 OpenStack 网络组件的前一个商标名就是Quantum，只不过由于版权的原因，才改为 Neutron。从这个称呼我们也能看到 Neutron 里面 Quantum 的影子。
+  * > ***`br-int`，表示的是 `Integration Bridge`， `综合网桥`。到底“综合”了哪些内容，我们这里先不纠结，我们就当作它是一个普通的 bridge，不过实现载体是 OVS 而已***。
+  * > 这里面有个问题：***为什么需要两层 bridge？***<ins>***VM 先接 `qbr`（Linux Bridge），`qbr` 再接 `br-int`（OVS）***</ins>，为什么不是 VM 直接接入 br-int？这个原因是：
+    + > （1）如果只有一个 qbr，由于 qbr 仅仅是一个 Linux Bridge，它的功能不能满足实际场景的需求（具体哪些场景，我们在后面涉及到时会点到）。毕竟，br-int 的名号，不是瞎取的，^_^
+    + > （2）如果只有一个 br-int，由于 br-int 实际是一个 OVS，而 OVS 比较任性，它到现在竟然还不支持基于 iptables 规则的安全组功能，而 OpenStack 偏偏是要基 iptables 规则来实现安全组功能！
+  + > 所以，OpenStack 引入 qbr，其目的主要就是辅助 iptables 来实现 security group功能（qbr 有时候也被称为`安全网桥`）;引入 br-int，才是真正为了实现一个`综合网桥`的功能。
+- > **4.2.2.1.3 `br-ethx`**
+  * > ***`br-ethx` 也是一个 bridge，也是一个 OVS，它的含义是：`Bridge, Ethernet, External`***。顾名思义，br-ethx 负责与“外”部通信，这里的“外”部指的是 Host 外部，但是属于一个 Network（这个 Network 指的是 Neutron 的概念）的内部，对于本小节而已，指的是 VLAN 内部。这非常关键，后面我们还会涉及到“外”部另外的概念。
+  * > 值得注意的是，br-ethx 上的接口（图中是“G”），是一个真正的 Host 的网卡接口（NIC Interface， Interface in Network Interface Card）。网卡接口，是网卡物理口上的一个 Interface。确实也应该这样，不然，网络流量如何才能进出一个 Host 呢？
+- > **4.2.2.1.4 VLAN 转换**
+  * > 我们在“VM 及 VLANID”那一小节中，讲述了 VLANID 有内外之别，这里我们讲述一下这个内外 VLANID 的转换。如下图所示：
 
 深度探索 OpenStack Neutron：Neutron 架构分析（2） https://mp.weixin.qq.com/s/seB1h0NbD5H1RVZgZ5uxdQ
 - > **3.3 Neutron 的 Agents**

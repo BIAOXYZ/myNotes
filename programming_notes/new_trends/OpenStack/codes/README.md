@@ -98,6 +98,42 @@ Neutron https://www.aboutyun.com/forum-192-1.html
 
 # 其他
 
+OpenStack Nova 架构及源码分析 https://jckling.github.io/2021/05/23/OpenStack/OpenStack%20Nova/
+- > **整体架构**
+  * > nova 和其他组件之间的交互使用 HTTP 请求
+  * > 内部组件之间使用 `oslo_messaging` 库实现 RPC 调用，这里还涉及消息队列 `RabbitMQ` ，遵循 AMQP 协议
+  * > 大部分 nova 组件都可以运行在多个服务器上，然后使用一个管理器监听 RPC 消息
+  * > 而 nova-compute 是运行在计算主机上的单进程，用于管理计算资源
+  * > nova 内部组件共享本地数据库，通过对象层访问，确保兼容性和安全性
+  * > nova-compute 访问数据库由 nova-conductor 代理
+  * > 当用户发起一个新的请求时，该请求会先在 nova-api 中处理。nova-api 会对请求进行一系列检查，包括请求是否合法，配额是否足够等；当检查用过后，nova-api 就会为该请求分配一个唯一的虚拟机 ID ，并在数据库中新建对应的项来记录虚拟机的状态；然后，nova-api 会将请求发送给 nova-conductor 处理。
+  * > nova-conductor 主要管理服务之间的通信并进行任务处理。它在接收到请求之后，会为 nova-scheduler 创建一个 RequestSpec 对象用来包装与调度相关的所有请求信息，然后调用 nova-scheduler 服务的 select_destination 接口。
+  * > nova-scheduler 通过接收到的 RequestSpec 对象，首先将 RequestSpec 对象转换成 ResourceRequest 对象，并将该对象发送给 Placement 进行一次预筛选，然后会根据数据库中最新的系统状态做出调度决定，并告诉 nova-conductor 把该请求调度到合适的计算节点上。
+  * > nova-conductor 在得知调度决定后，会把请求发送给对应的 nova-compute 服务。
+  * > 每个 nova-compute 服务都有独立的资源监视器（Resource Tracker）用来监视本地主机的资源使用情况。当计算节点接收到请求时，资源监视器能够检查主机是否有足够的资源。
+- > **RPC**
+  * > nova 使用 AMQP 中的直连（direct）、扇型（fanout）、主题（topic）交换；
+  * > nova 使用适配器类（adapter）将消息封装和解封从而调用函数，实现了两种 RPC 调用
+    + > rpc.call：请求 + 响应，api 作为消费者（consumer）
+    + > rpc.cast：单向，api 作为发布者（publisher）
+  * > 每个 nova 内部组件都连接到消息代理，根据不同的作用，把消息队列作为：
+    + > 调用者（Invoker）：nova-api、nova-scheduler；通过 rpc.call 和 rpc.cast 向消息队列发送消息
+    + > 工作者（Worker）：nova-compute；从消息队列接收消息，根据 rpc.call 进行响应
+- > **API 请求路由**
+  * > nova-api 读取 `etc/nova/api-paste.ini` 并加载 WSGI 程序，最终 API 入口点都位于 `nova.api.openstack.compute` 中
+  * > `nova/api/openstack/compute/routes.py` 中的 `APIRouterV21` 主要用来完成路由规则的创建，其中 ROUTE_LIST 保存了 URL 与 Controller 之间的映射关系。
+  * > APIRouterV21 基于 ROUTE_LIST，使用 Routes 模块作为 URL 映射的工具，将各个模块所实现的 API 对应的 URL 注册到 mapper 中，并把每个资源都封装成 `nova.api.openstack.wsgi.Resource` 对象，当解析 URL 请求时，可以通过 URL 映射找到 API 对应的 Resource 对象。
+  * > `nova/api/wsgi.py` 解析 URL 映射，通过 `_dispatch` 回调，调用 Resource 对象的 `_call_` 方法，最终通过请求调用 API 对应的模块中的方法。
+- > **API 实现**
+  * > `nova/api/openstack/compute/` 目录包含每个 API 对应的 `Controller` 实现，Resource 对象将请求的 API 映射到相应的 `Controller` 方法上。
+- > **`nova-conductor`**
+  * > 使用 RPC 的子组件通常包含以下文件：
+    + > api.py 对 RPC 接口进行封装，类似提供 SDK
+    + > rpcapi.py 暴露给其他内部组件的 RPC 接口，RPC 客户端
+    + > manager.py 处理 RPC API 调用
+  * > nova-compute 访问数据库的操作都要由 nova-conductor 代理，用 `nova/conductor/manager.py` 的 `ConductorManager` 类完成，出于安全性考虑，nova-conductor 和 nova-compute 不能部署在同一服务器上。
+  * > `nova/objects` 定义了 nova object，***封装数据库 CURD 操作，每个类对应数据库中的一张表***。
+
 `17. nova-api分析` https://gtcsq.readthedocs.io/en/latest/openstack/nova_api.html
 
 Nova的Object Model源码分析 https://blog.csdn.net/chengqiuming/article/details/79672973
