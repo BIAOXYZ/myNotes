@@ -73,6 +73,9 @@ OpenStack https://blog.csdn.net/qq_33909098/category_9573005.html
 
 Nova组件源码分析之冷迁移与Resize https://itcn.blog/p/2010401099.html
 
+OpenStack内存迁移简介 https://blog.csdn.net/huang987246510/article/details/110535704
+- > OpenStack引入WSGI（Web Server Gateway Interface）用来将HTTP到后端对应操作的映射以一种标准的接口实现，在WSGI中，每个资源被抽象成一个Controller对象，它包含很多操作，每个操作对应一个HTTP请求和响应。当HTTP请求到达时，WSGI首先将其路由到对应的Controller，调用Controller对应的操作函数，这是一个通用的操作。对于想要添加一个API的开发者来说，它会将其对应的实现封装成Controller的子类，在WSGI框架的调用流程中，会根据HTTP请求的不同最终调用到开发者自己提供的接口。
+
 # 网络
 
 Nova中VIF的实现 http://niusmallnan.com/_build/html/_templates/openstack/nova_vif.html
