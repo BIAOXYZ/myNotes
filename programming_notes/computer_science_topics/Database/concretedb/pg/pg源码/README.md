@@ -46,6 +46,22 @@ postgres的initdb解析——从一次插件升级失败说起 https://www.cnblo
 
 PostgreSQL执行引擎简介 http://www.leehao.org/postgresql-executioneng/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # husthxd
 
 数据库 http://blog.itpub.net/6906/cid-184206/list-1/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# mingjie https://cloud.tencent.com/developer/user/2061863
+
+Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/article/2000622
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 王果壳 https://cloud.tencent.com/developer/article/1127404
+
+原 PostgreSQL源码中的List和ListCell的说明 https://cloud.tencent.com/developer/article/1127404
+
+PostgreSQL数据库透明数据加密概述 https://cloud.tencent.com/developer/article/1516612
