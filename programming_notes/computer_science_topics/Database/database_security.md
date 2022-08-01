@@ -37,6 +37,15 @@ PG透明加密（from 公众号）：
 - 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/Uyjkx1Op4e-bDW0S9q8ckA 【2020.08.30】 || 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/TaxE1u3nJH5Dm6OPjcOXiw 【2019.10.09】
 - 原创|搞懂PostgreSQL数据库透明数据加密之PG中的TDE https://mp.weixin.qq.com/s/TmciHCEDRMpdNgWfUf4zDw 【2020.08.31】
 - 原创|搞懂PostgreSQL数据库透明数据加密之密钥管理介绍 https://mp.weixin.qq.com/s/gPQ5FJDfkeOWn7seVXczYQ 【2020.08.31】
+- Transparent Data Encryption https://wiki.postgresql.org/wiki/Transparent_Data_Encryption
+- A Guide to Transparent Data Encryption in PostgreSQL https://arctype.com/blog/transparent-data-encryption/
+- Thread: Transparent Data Encryption in PostgreSQL? https://postgrespro.com/list/thread-id/2527981
+  * > `There is at least one fork with TDE, which maybe is what your colleague is thinking of, but it doesn't exist in the community code today. Various people are interested in merging the feature.  At this point I'd lay odds against it being ready for v14, but perhaps it will happen for v15. regards, tom lane`
+  * > `Oh, Cybertec has an open source version of Postgres 12.3 with TDE:`
+    + > https://www.cybertec-postgresql.com/en/products/postgresql-transparent-data-encryption/
+    + > https://www.cybertec-postgresql.com/en/transparent-data-encryption-installation-guide/
+    > `and Postgres 12.3 was released on 2020-05-14, and their TDE version was packaged on 2020-07-10, based on the tarball file dates. Their TDE feature is not part of community Postgres, and I don't if that will ever happen.`
+  * > `Yeah, we could get the key management into PG 14, but it wouldn't do anything, so it would have to be hidden so it didn't confuse people, so what's the point of adding it now?  Also, I don't know anyone who is currently working on the data encryption stage, which is the next step.`
 
 PostgreSQL Transparent Data Encryption tool development https://github.com/nec-postgres/tdeforpg
 - Transparent Data Encryption for PostgreSQL `PostgreSQLのセキュリティや保守運用を支えるサブスクリプション` https://jpn.nec.com/tdeforpg/

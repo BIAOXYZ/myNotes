@@ -63,5 +63,3 @@ Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/art
 # 王果壳 https://cloud.tencent.com/developer/article/1127404
 
 原 PostgreSQL源码中的List和ListCell的说明 https://cloud.tencent.com/developer/article/1127404
-
-PostgreSQL数据库透明数据加密概述 https://cloud.tencent.com/developer/article/1516612
