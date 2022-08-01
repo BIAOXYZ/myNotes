@@ -22,3 +22,15 @@ croc: Easily and securely send things from one computer to another 🐊 📦 htt
 
 screego/server https://github.com/screego/server
 - > Screego is an addition to existing software and only helps to share your screen. Nothing else (:.
+
+# 代码画流程图
+
+程序员特有的画图方式——语绘工具小入门 https://segmentfault.com/a/1190000022573007 || https://liutos.github.io/2020/05/07/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%89%B9%E6%9C%89%E7%9A%84%E7%94%BB%E5%9B%BE%E6%96%B9%E5%BC%8F%E2%80%94%E2%80%94%E8%AF%AD%E7%BB%98%E5%B7%A5%E5%85%B7%E5%B0%8F%E5%85%A5%E9%97%A8/
+- > **时序图**
+  * > 我画得最多的当属时序图。在旧文《时序图绘制工具走马观花》中，提到了三个工具：
+    + > [WebSequenceDiagrams](https://www.websequencediagrams.com/)，一个在线绘制时序图的网站；
+    + > [sdedit](http://sdedit.sourceforge.net/)，一个本地的命令行兼GUI绘图工具；
+    + > [SequenceDiagram](https://sequencediagram.org/)，也是一个网站。
+- > 当时倾向于使用`sdedit`。时过境迁，如今的WebSequenceDiagrams变得更好看了，而我也选择了`PlantUML`作为绘制时序图的主力工具。下面这张图是PlantUML官网给出的例子
+- > **UML类图**
+  * > 如果要画类图，首选的工具是`mermaid`。跟PlantUML一样，`mermaid`也是一个大而全的东西，除了画UML类图，也可以画流程图、时序图，以及UML状态图等。
