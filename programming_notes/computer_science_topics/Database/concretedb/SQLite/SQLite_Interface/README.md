@@ -3,14 +3,16 @@
 
 An Introduction To The SQLite C/C++ Interface https://www.sqlite.org/cintro.html
 
+C-language Interface Specification for SQLite https://sqlite.org/c3ref/intro.html
+- List Of Objects: https://sqlite.org/c3ref/objlist.html
+- List Of Constants: https://sqlite.org/c3ref/constlist.html
+- List Of Functions: https://sqlite.org/c3ref/funclist.html
+
 C++ with SQLite3: Part 5: Encapsulating Database Objects https://videlais.com/2018/12/14/c-with-sqlite3-part-5-encapsulating-database-objects/
 
 SQLite C https://zetcode.com/db/sqlitec/
 
 How to read data from SQLite database? https://stackoverflow.com/questions/3957343/how-to-read-data-from-sqlite-database
-
-How do I check if a table exists in sqlite3 c++ API? [duplicate] https://stackoverflow.com/questions/3499295/how-do-i-check-if-a-table-exists-in-sqlite3-c-api
-- How do I check in SQLite whether a table exists? https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists
 
 谈一谈sqlite这种小型数据库（1） https://www.cnblogs.com/bwbfight/p/9306293.html
 - > 三、参数绑定：
@@ -34,6 +36,41 @@ unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questi
 ## 其他接口
 
 How do I check in SQLite whether a database exists C# https://stackoverflow.com/questions/21159790/how-do-i-check-in-sqlite-whether-a-database-exists-c-sharp
+
+How do I check if a table exists in sqlite3 c++ API? [duplicate] https://stackoverflow.com/questions/3499295/how-do-i-check-if-a-table-exists-in-sqlite3-c-api
+- https://stackoverflow.com/questions/3499295/how-do-i-check-if-a-table-exists-in-sqlite3-c-api/3501527#3501527
+  * > Variation on another given answer:
+    ```sql
+    select count(type) from sqlite_master where type='table' and name='TABLE_NAME_TO_CHECK';
+    ```
+    > Will return 0 if table does not exist, 1 if it does.
+  * 个人小实战（主要是为了说明sqlite对表名的大小写处理有点魔幻。。。虽然也能想通其中的道理：毕竟一个是直接用 `Cars/cars`，一个是把这两个放到引号里用 `'Cars'`/`'cars'`）：
+    ```sql
+    sqlite> .tables
+    COMPANY  Cars   
+    sqlite> 
+    sqlite> select count(type) from sqlite_master where type = 'table' and name = 'Cars';
+    1
+    sqlite> 
+    sqlite> select count(type) from sqlite_master where type = 'table' and name = 'cars';
+    0
+    sqlite> 
+    sqlite> select count(*) from Cars;
+    5
+    sqlite> select count(*) from cars;
+    5
+    sqlite> 
+    ```
+
+How do I check in SQLite whether a table exists? https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists
+- https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists/1601172#1601172
+  * > See [(7) How do I list all tables/indices contained in an SQLite database](http://sqlite.org/faq.html#q7) in the SQLite FAQ:
+    ```sql
+    SELECT name FROM sqlite_master
+    WHERE type='table'
+    ORDER BY name;
+    ```
+- https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists/1604121#1604121
 
 # Python
 
