@@ -98,5 +98,24 @@ OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.c
 - > **5.4防火墙Firewall**
 
 透过现象看本质——谈谈ML2 plugin这回事儿 https://blog.51cto.com/u_14557673/2478779
+- > **Neutron Plugin是个什么鬼？**
+  * > 我们知道，在OpenStack中，总的来说插件的作用可以理解为：
+    + > 处理Neutron Server发来的请求；
+    + > 维护OpenStack中网络的状态；
+    + > 调用agent处理请求；
+  * > 由此也可以明白，在OpenStack Neutron项目中，插件和代理服务是相对应的，而且plugin解决的是在数据库中存放网络信息，需要解决的是网络请求时需要什么配置的问题，而agent解决的是如何具体配置网络的问题，而agent处理时需要通过Neutron provider（网络提供者）提供虚拟或物理网络（Linux Bridge或OVS或其他的物理交换机），也可以说这三者需要配套使用。
+  * > 细的来说，Neutron Plugin 有两种，一种是Core Plugin——核心插件,主要是在数据库中维护network、subnet和port的状态，并负责调用相应的agent在network provider上执行相关操作，比如创建network；另一种是Service Plugin——服务插件，主要是在数据库中维护router、load balance、security group等资源的状态，并负责调用相应的agent在network provider上执行相关操作，比如创建router。
+
+透过现象看本质——谈谈L2 agent 这回事儿 https://blog.51cto.com/u_14557673/2479123
+- > **（1）基于Linux Bridge的单一flat网络**
+  * >  Linux Bridge需要和虚拟机实例建立网络连接，就需要通过一个设备（接口）作为介质，这个设备（接口）就是`tap`。***其实`tap`经常与`tun`一起谈及，二者都属于操作系统内核中的虚拟网络设备（注意！linux中一切皆文件），只不过`tap`位于二层，而`tun`位于三层，而它们之间的差别仅仅在于数据结构封装中的flag不一样而已，这也是如何区分它们的方法，但是它们二者所承载的功能相差甚远***。本文篇幅有限，就不继续深究了。只需要知道tap所对应的数据链路层协议为以太网协议（IEEE 802.3），因此tap设备有时候也被称为"虚拟以太设备"。
+  * > `tap`实现linux网桥与虚拟机实例之间的网络通信，构建了整个基于Linux Bridge的单一`flat网络`。
+- > **（2）基于Linux Bridge 的vlan网络**
+- > **（3）基于OVS的vlan网络**
 
 Openstack Neutron网络实验-03 http://lprincewhn.github.io/2016/04/04/neutron03.html
+
+GRE与Vxlan网络详解 https://www.cnblogs.com/xingyun/p/4620727.html
+- > **1.2 Neutron中的GRE**
+- > **2.2 Neutron中的vxlan**
+  * > ( http://www.opencloudblog.com/?p=300 ) vxlan的br-tun流表与上面GRE类似。

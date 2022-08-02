@@ -104,6 +104,12 @@ c++截取部分字符串(类似python的切片) https://blog.csdn.net/qq_3597544
 
 C++字符串分割方法总结 https://www.jianshu.com/p/5876a9f49413
 
+# 字符串拼接
+
+C/C++ 语言中如何优雅地拼接多段字符串？ - 知乎 https://www.zhihu.com/question/324816304
+
+c++拼接字符串效率比较（+=、append、stringstream、sprintf） https://www.cnblogs.com/james6176/p/3222671.html
+
 # 其他
 
 c++ 中 char 与 string 之间的相互转换问题 https://www.cnblogs.com/devilmaycry812839668/p/6353807.html
