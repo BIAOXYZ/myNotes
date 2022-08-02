@@ -229,6 +229,8 @@ Practical Vim https://book.douban.com/subject/10599776/
 - Learn Vimscript the Hard Way http://learnvimscriptthehardway.stevelosh.com/
 - 笨方法学Vimscript http://learnvimscriptthehardway.onefloweroneworld.com/
 
+How To Use Vim for Advanced Editing of Plain Text or Code on a VPS https://www.digitalocean.com/community/tutorials/how-to-use-vim-for-advanced-editing-of-plain-text-or-code-on-a-vps-2
+
 ----------------------------------------------------------------------------------------------------
 # 3.vim多窗口操作:
 ----------------------------------------------------------------------------------------------------
