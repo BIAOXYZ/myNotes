@@ -70,5 +70,33 @@ Neutron 理解 (3): Open vSwitch + GRE/VxLAN 组网 [Netruon Open vSwitch + GRE/
 # 其他
 
 OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.com/u_14557673/2477886
+- > **4.1 network**
+  * > **flat**
+​    + > flat网络是无vlan tagging的网络。flat网络中的instance能与位于同一网络的instance通信，并且可以跨多个节点。
+  * > **vlan**
+    + > vlan网络是具有802.1q tagging的网络。vlan是一个二层的广播域，同一vlan中的instance可以通信，不同vlan只能通过router通信。vlan网络可以跨节点，是应用最广泛的网络类型。
+  * > **vxlan**
+    + > vxlan是基于隧道技术的overlay网络。vxlan网络通过唯一的segmentation ID（也叫VNI）与其他vxlan网络区分。vxlan中数据包会通过VNI封装成UPD包进行传输。因为二层的包通过封装在三层传输，能够克服vlan和物理网络基础设施的限制。
+    + > vxlan和vlan相比的优势：
+      ```console
+      租户数量从4K增加到16M——支持数量增大；
+      租户内部通信可以跨越任意IP网络，支持虚拟机任意迁移——跨网络通信；
+      一般来说，每个租户逻辑上都有一个网关实例，IP地址可以在租户间进行复用——重复使用不冲突；
+      能够结合SDN技术对流量进行优化——支持与其他技术结合应用
+      ```
+  * > **gre**
+    + > gre是与vxlan类似的一种overlay网络。主要区别在于使用IP包而非UDP进行封装。
+    + > 不同network之间在二层上是隔离的。
+- > **五、Neutron的主要功能**
+- > **5.1二层交换VSwitch**
+  * > Neutron支持多种虚拟交换机，包括Linux原生的Linux Bridge和Open vSwitch。
+  * > Open vSwitch（OVS）是一个开源的虚拟交换机，它支持标准的管理接口和协议。
+  * > 利用Linux Bridge和OVS，Neutron除了可以创建传统的VLAN网络，还可以创建基于隧道技术的Overlay网络，比如VxLAN和GRE（Linux Bridge目前只支持VxLAN）。
+- > **5.2三层路由VRouter**
+  * > 实例可以配置不同网段的IP，Neutron的VRouter（虚拟路由器）实现实例可跨网段通信。一般可以通过IP forwarding、iptables等技术来实现路由和NAT。
+- > **5.3负载均衡Load Balance**
+- > **5.4防火墙Firewall**
+
+透过现象看本质——谈谈ML2 plugin这回事儿 https://blog.51cto.com/u_14557673/2478779
 
 Openstack Neutron网络实验-03 http://lprincewhn.github.io/2016/04/04/neutron03.html
