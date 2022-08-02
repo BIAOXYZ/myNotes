@@ -67,6 +67,10 @@ Neutron 理解 (3): Open vSwitch + GRE/VxLAN 组网 [Netruon Open vSwitch + GRE/
   * > 当一个 RPC 请求过来时，比如 port_update 消息，OVS Agent 所要做的是配置对应 bridge 上的内外 VLANID 的转换规则，如下图所示：
 - > **第四节 Neutron 的总体架构**
 
+深度探索 OpenStack Neutron：Neutron Server（1） https://mp.weixin.qq.com/s/QWZeBBm_lc4AwhUrut6q7g
+
+深度探索 OpenStack Neutron：Plugin（6） https://mp.weixin.qq.com/s/ugLRjMGvW25diUUmqhXOjw
+
 # 其他
 
 OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.com/u_14557673/2477886

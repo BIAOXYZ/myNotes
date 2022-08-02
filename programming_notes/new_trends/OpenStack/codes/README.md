@@ -89,9 +89,9 @@ Neutron Core Plugins - ML2 https://blog.mazhangjing.com/2021/06/22/neutron-plugi
 
 openstack开发实践（六）：Neutron源码解析 https://blog.csdn.net/weixin_41977332/article/details/104856575
 
-OpenStack中创建路由过程，代码和Linux主机的分析。 OpenStack中创建路由过程，代码和Linux主机的分析。
+OpenStack中创建路由过程，代码和Linux主机的分析。 https://blog.csdn.net/mr1jie/article/details/102669333
 
-OpenStack干货分享 | Neutron源码分析之L3 https://www.sohu.com/a/122957372_573950 || https://icode.best/i/16560143163894
+OpenStack干货分享 | Neutron源码分析之L3 https://mp.weixin.qq.com/s/HuozAW0fvOr5JeX4PRwyZQ || https://www.sohu.com/a/122957372_573950 || https://icode.best/i/16560143163894
 
 openstack系列之--neutronclient源码分析 https://mp.weixin.qq.com/s/dTxfSlfCASSJt4c8yfPSfg
 
