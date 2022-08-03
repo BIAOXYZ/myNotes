@@ -110,6 +110,8 @@ C/C++ 语言中如何优雅地拼接多段字符串？ - 知乎 https://www.zhih
 
 c++拼接字符串效率比较（+=、append、stringstream、sprintf） https://www.cnblogs.com/james6176/p/3222671.html
 
+C++中4种方式把字符串和数字连接起来 - 阿贵的文章 - 知乎 https://zhuanlan.zhihu.com/p/54074787 || https://blog.csdn.net/PROGRAM_anywhere/article/details/63720261
+
 # 其他
 
 c++ 中 char 与 string 之间的相互转换问题 https://www.cnblogs.com/devilmaycry812839668/p/6353807.html

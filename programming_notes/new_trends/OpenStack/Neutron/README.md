@@ -10,6 +10,9 @@ Neutron https://wiki.openstack.org/wiki/Neutron
 
 # 系列文章
 
+深入理解 Neutron -- OpenStack 网络实现 https://github.com/yeasy/openstack_understand_Neutron
+- > 在线阅读：[GitBook](https://www.gitbook.io/book/yeasy/openstack_understand_Neutron) 或 [Github](https://github.com/yeasy/openstack_understand_Neutron/blob/master/SUMMARY.md)。
+
 ## `世民谈云计算`
 
 Neutron 理解 (2): 使用 Open vSwitch + VLAN 组网 [Neutron Open vSwitch + VLAN Virtual Network] https://www.cnblogs.com/sammyliu/p/4626419.html
