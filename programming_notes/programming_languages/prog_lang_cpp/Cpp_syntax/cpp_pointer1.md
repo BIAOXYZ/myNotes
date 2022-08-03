@@ -6,3 +6,7 @@ C: Cannot initialize variable with an rvalue of type void* https://stackoverflow
 # pointer vs reference
 
 What are the differences between a pointer variable and a reference variable in C++? https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
+
+# pointer vs array
+
+C++：指针与数组 https://blog.csdn.net/netyeaxi/article/details/83186301

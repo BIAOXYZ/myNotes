@@ -58,6 +58,12 @@ why there is no find for vector in C++ https://stackoverflow.com/questions/29940
   ```
   > If your vector is sorted, you can use `std::binary_search()` to test whether a value is present in the vector, and `std::equal_range()` to get begin and end iterators to the range of elements in the vector that have that value.
 
+## 其他
+
+C++：如何高效的使用std::vector？ https://blog.csdn.net/netyeaxi/article/details/83277810
+
+C++：关于std::vector两个方法operator[]和at使用上的区别 https://blog.csdn.net/netyeaxi/article/details/82765703
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `.assign()`
@@ -106,6 +112,8 @@ c++11 之emplace_back 与 push_back的区别 https://ppipp.blog.csdn.net/article
 - > 引入了右值引用，转移构造函数后，push_back()右值时就会调用构造函数和转移构造函数,如果可以在插入的时候直接构造，就只需要构造一次即可。这就是c++11 新加的emplace_back。
 
 emplace_back() 和 push_back 的区别 https://blog.csdn.net/xiaolewennofollow/article/details/52559364
+
+C++：使用std::vector.emplace_back后为什么还是会调用对象的拷贝构造函数？ https://blog.csdn.net/netyeaxi/article/details/83242362
 
 ## 能否完全取代 push_back
 
