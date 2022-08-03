@@ -116,6 +116,14 @@ OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.c
     + > 调用agent处理请求；
   * > 由此也可以明白，在OpenStack Neutron项目中，插件和代理服务是相对应的，而且plugin解决的是在数据库中存放网络信息，需要解决的是网络请求时需要什么配置的问题，而agent解决的是如何具体配置网络的问题，而agent处理时需要通过Neutron provider（网络提供者）提供虚拟或物理网络（Linux Bridge或OVS或其他的物理交换机），也可以说这三者需要配套使用。
   * > 细的来说，Neutron Plugin 有两种，一种是Core Plugin——核心插件,主要是在数据库中维护network、subnet和port的状态，并负责调用相应的agent在network provider上执行相关操作，比如创建network；另一种是Service Plugin——服务插件，主要是在数据库中维护router、load balance、security group等资源的状态，并负责调用相应的agent在network provider上执行相关操作，比如创建router。
+- > **ML2 Core Plugin又是个什么鬼？**
+  * > **2、ML2 Core Plugin 是怎么解决传统Core Plugin的问题的？**
+    + > ML2 Core Plugin提供了一个允许在OpenStack网络中同时使用多种Layer 2 网络技术的框架，这样可以使不同的节点可以使用不同的网络实现机制。如下图所示：![](https://s2.51cto.com/images/blog/202003/16/1c35e63f723dd86771cb5b1d664a1584.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=)
+    + > 通过上图所示，在采用ML2核心插件之后，可以在不同的节点服务器上分别部署不同的Agent。并且，ML2不仅支持这样的部署方式，而且可以实现与Agent的无缝集成，也就是说，之前所使用的agent不需要更改，只需要将原来的Neutron Server上的传统的核心插件换为ML2插件即可。
+  * > **3、瞅一瞅ML2的架构**
+    + > ML2对二层网络进行的抽象和建模，引入了type driver和mechansim driver，分别对应类型驱动和机制驱动。在讲述这两个驱动之前，先来瞅一眼ML2插件的架构图：![](https://s2.51cto.com/images/blog/202003/16/ace864c0354240ec26c3a6ae1ed34d4a.jpg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=)
+    + > （1）**Type Driver** <br> type driver——类型驱动，显然从上图就可以明白，Neutron支持的每一种网络类型都有与之对应的ML2的类型驱动。 <br> 类型驱动主要负责维护网络类型的状态，执行验证创建网络等。这些网络类型可以参考上一篇文章。
+    + > （2）**Mechansim Driver** <br> Mechansim Driver——机制驱动，Neutron支持的每一种网络机制都有一个对应的ML2 机制驱动。（有的可能没听说过，本文暂且忽略） <br> 机制驱动主要负责获取由Type Driver维护的网络状态，并确保在相应的网络设备（物理或虚拟）上正确实现这些状态。
 
 透过现象看本质——谈谈L2 agent 这回事儿 https://blog.51cto.com/u_14557673/2479123
 - > **（1）基于Linux Bridge的单一flat网络**

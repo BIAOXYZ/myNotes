@@ -41,6 +41,11 @@ https://www.cnblogs.com/jmilkfan-fanguiju/category/1080478.html
 - OpenStack-Nova虚拟机创建流程解析.md https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/OpenStack-Nova%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90.md
 - OpenStack源码分析-挂载卷流程.md https://github.com/Yikun/yikun.github.com/blob/hexo/source/_posts/OpenStack%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E6%8C%82%E8%BD%BD%E5%8D%B7%E6%B5%81%E7%A8%8B.md
 
+OpenStack https://blog.csdn.net/bill_xiang_/category_6444961.html
+- 开启OpenStack社区贡献之路 https://blog.csdn.net/Bill_Xiang_/article/details/52719234
+- OpenStack公共组件oslo之六——oslo.messaging https://blog.csdn.net/Bill_Xiang_/article/details/78500769
+- OpenStack Trove组件WSGI和RPC调用流程 https://blog.csdn.net/Bill_Xiang_/article/details/72909927
+
 # 创建虚拟机
 
 OpenStack创建虚拟机流程 https://www.cnblogs.com/luohaixian/p/12368164.html
@@ -88,6 +93,11 @@ Nova中VIF的实现 http://niusmallnan.com/_build/html/_templates/openstack/nova
 Neutron Core Plugins - ML2 https://blog.mazhangjing.com/2021/06/22/neutron-plugin/
 
 openstack开发实践（六）：Neutron源码解析 https://blog.csdn.net/weixin_41977332/article/details/104856575
+- > 从中我们可以看出Neutron中的组件可以分为4种
+  * > 2.**Plugins**: 负责管理Agents，Neutron Plugin继承自`neutron/neutron_plugin_base.py`，代码如下图所示，实现其中定义的CRUD操作。在Neutron的早期版本种有很多针对各种底层交换机实现的Plugins，比如Linux Bridge Plugin、Open vSwitch Plugin等，如今的Neutron版本中引入了ML2 Plugin，各个交换机相关的代码转移到ML2 Plugin下一级的Mechanism Drivers中。ML2 Plugin的Driver分为两种：`Type Drivers`和`Mechanism Drivers`。***Type Drivers定义了Neutron的网络类型***，Neutron目前支持的网络类型包括Local网络（类似VirtualBox中的Host-only网络），Flat网络（所有虚机都处在同一个二层网络中），VLAN网络（网络拓扑结构和Flat模式类似，但是每个玩网络都带有VLAN ID），VXLAN网络（可以使用VxLAN协议在计算节点之间建立Overlay网络），GRE网络（使用GRE协议在计算节点之间建立Overlay网络）。***Mechanism Drivers可以对接各种二层网络技术和物理交换设备***。Neutron支持在一个虚拟网络中同时使用多种Type Driver和Mechanism Drivers。
+  * > 3.**Agents**：向虚拟机提供二层和三层的网络联通，处理逻辑网络和物理网络之间的转换、同时也提供一些拓展服务。***Agents包括提供二层网络联通服务的Layer 2 agents，比如`Linux Bridge`和`OVS`；提供三层IP和路由服务的Layer 3 agents，比如`L3`和`DHCP`；***提供一些杂项服务的Miscellaneous agents，比如Metadata；
+- > 上图所示为neutron源码的目录结构，这里主要讲解一下plugins、agent，里面包含了neutron中plugins和agent实现源码。plugins目录如下所示，在Neutron中，实现一个插件包括两部分内容，一部分是与数据库db打交道的，称为plugin，另一部分是调用具体的网络设备真正干活的，称为agent。与db交互的plugin在功能上有很多重复，所以在代码上有很多重复，因此ml2目录下提供了一个与数据库交互的公共plugin，即`plugins/ml2/db.py`，部分代码截图如下所示
+- > **Neutron启动分析**
 
 OpenStack中创建路由过程，代码和Linux主机的分析。 https://blog.csdn.net/mr1jie/article/details/102669333
 

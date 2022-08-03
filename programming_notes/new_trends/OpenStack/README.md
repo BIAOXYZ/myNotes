@@ -13,6 +13,8 @@ Overcommitting CPU and RAM https://docs.openstack.org/arch-design/design-compute
 
 REST API Version History https://docs.openstack.org/nova/stein/reference/api-microversion-history.html
 
+Oslo/Messaging https://wiki.openstack.org/wiki/Oslo/Messaging
+
 # 调试
 
 OpenStack断点调试方法总结 - int32bit的文章 - 知乎 https://zhuanlan.zhihu.com/p/63898351
