@@ -71,6 +71,10 @@ Neutron 理解 (3): Open vSwitch + GRE/VxLAN 组网 [Netruon Open vSwitch + GRE/
 
 深度探索 OpenStack Neutron：Plugin（6） https://mp.weixin.qq.com/s/ugLRjMGvW25diUUmqhXOjw
 
+深度探索 OpenStack Neutron：Plugin（10） https://mp.weixin.qq.com/s/HFf9Zf8C-VfywOe1yJ0OUg
+- > Neutron Plugin 一共写了 10 篇文章，合计 2 万余字。关注微信公众号“标哥说天下”，进入公众号后，点击菜单“Neutron 代码剖析”，可以看到全部 10 篇文章。
+  >> 【[:star:][`*`]】 //notes：可以在浏览器里打开这个链接（ http://mp.weixin.qq.com/mp/homepage?__biz=MzAwNDAxOTM5Mw==&hid=7 ），方便直接看。
+
 # 其他
 
 OpenStack入门之核心组件梳理（5）——Neutron篇 https://blog.51cto.com/u_14557673/2477886

@@ -1,6 +1,10 @@
 
 # air travel general
 
+航班实时追踪：
+- Flightradar24: Live Flight Tracker - Real-Time Flight Tracker Map https://www.flightradar24.com/
+- FlightAware https://flightaware.com/ || https://zh.flightaware.com/
+
 航旅纵横 让旅行更幸福 http://www.umetrip.com/mskyweb/about/download.html
 > 何时安卓才能有pro？除了华为应用市场外。
 
