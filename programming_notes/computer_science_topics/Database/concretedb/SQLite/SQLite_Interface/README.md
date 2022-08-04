@@ -72,6 +72,12 @@ How do I check in SQLite whether a table exists? https://stackoverflow.com/quest
     ```
 - https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists/1604121#1604121
 
+# C++
+
+SQLiteC++ https://github.com/SRombauts/SQLiteCpp || http://srombauts.github.io/SQLiteCpp/
+
+基于sqlitecpp的sqlite3 c++封装 https://www.cnblogs.com/pandamohist/p/13457499.html
+
 # Python
 
 sqlite3 --- SQLite 数据库 DB-API 2.0 接口模块 https://docs.python.org/zh-cn/3/library/sqlite3.html
