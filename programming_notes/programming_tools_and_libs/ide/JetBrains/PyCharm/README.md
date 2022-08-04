@@ -35,6 +35,15 @@ https://www.zhihu.com/question/37787004
 喏，你们要的 PyCharm 快速上手指南
 https://zhuanlan.zhihu.com/p/26066151
 
+## 设置多行标签
+
+【PyCharm中文教程 12】开启多行标签页 https://blog.csdn.net/weixin_36338224/article/details/114596450
+
+## 设置可打开的最大标签数
+
+pycharm 常用设置，打开文件数量 https://www.cnblogs.com/mxh1099/p/5102086.html
+- > `File --> Settings -->Editor -->General --> Editor Tabs --> Tab limit 然后输入你想打开的文件最大数量。`
+
 # pycharm问题
 
 Pycharm下运行程序查看每个变量的值的方法（类似于Spyder和MATLAB）
