@@ -4,6 +4,7 @@
 你见过最好的Makefile学习实例是什么？ - 极智视界的回答 - 知乎 https://www.zhihu.com/question/55488701/answer/2251580268
 
 ```sh
+apt update && apt install -y libsqlite3-dev
 mkdir test && cd test/
 mkdir -p proj_root/src/level1/level2/test/test_sqlite/
 mkdir -p proj_root/src/level1/level2/sqlite/{include,src}
