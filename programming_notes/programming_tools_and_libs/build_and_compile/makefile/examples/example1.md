@@ -4,6 +4,18 @@
 你见过最好的Makefile学习实例是什么？ - 极智视界的回答 - 知乎 https://www.zhihu.com/question/55488701/answer/2251580268
 
 ```sh
+mkdir test && cd test/
+mkdir -p proj_root/src/level1/level2/test/test_sqlite/
+mkdir -p proj_root/src/level1/level2/sqlite/{include,src}
+
+cat << EOF > proj_root/src/level1/level2/test/test_sqlite/basic_sqlite_api_test.cpp
+EOF
+# Makefile 里 $ 太多了，就不搞 HereDoc 了，自己手动复制粘贴吧- -
+cat << EOF > proj_root/src/level1/level2/sqlite/include/sqlite_apis.h
+EOF
+cat << EOF > proj_root/src/level1/level2/sqlite/src/sqlite_apis.cpp
+EOF
+
 # 目录结构和使用
 $ tree
 .
@@ -75,10 +87,15 @@ int create_db(const string &db_path);
 int delete_db(const string &db_path);
 sqlite3 *open_db(const string &db_path);
 int close_db(sqlite3 *db);
+bool check_db_existence(const string &db_path);
+bool check_table_existence(const string &table, const string &db_path);
 int create_tb_from_sql(const string &sql, const string &db_path);
+int create_tb_from_name(const string &table, const string &db_path);
 int execute_sql_without_returned_data(const string &sql, const string &db_path);
 int execute_sql_with_returned_data(const string &sql, const string &db_path, vector<string> &rs, pair<int, int> &shape);
 int execute_binded_sql(const string &sql, const string &db_path, int index, const string &value);
+int execute_binded_sql2(const string &sql, const string &db_path, int index, const vector<uint64_t> &values);
+int execute_binded_sql3(const string &sql, const string &db_path, int index1, const vector<uint64_t> &values1, int index2, const vector<uint64_t> &values2);
 ```
 
 **`sqlite_apis.cpp`**
@@ -150,6 +167,33 @@ int close_db(sqlite3 *db)
     return 0;
 }
 
+bool check_db_existence(const string & db_path)
+{   
+    FILE* file;
+    if (file = fopen(db_path.c_str(), "r")) {
+        fclose(file);
+        return true;
+    }
+    return false;
+}
+
+bool check_table_existence(const string & table, const string & db_path)
+{
+    if (!check_db_existence(db_path)) {
+        fprintf(stderr, "Both the database and the table do not exist!");
+        exit(-1);        
+    }
+    string sql_start = "select count(type) from sqlite_master where type = 'table' and name = '";
+    string sql_end = "';";
+    string sql = sql_start + table + sql_end;
+    vector<string> rs = {};
+    pair<int, int> shape;
+    execute_sql_with_returned_data(sql, db_path, rs, shape);
+    if (rs[1] == "1") {
+        return true;
+    }
+    return false;
+}
 
 static int callback(void *data, int n_columns, char **col_value, char **col_name){
    int i;
@@ -194,6 +238,23 @@ int create_tb_from_sql(const string &sql, const string &db_path)
         fprintf(stdout, "Table created successfully\n");
     }
     sqlite3_close(db);
+    return 0;
+}
+
+/**
+  * Note that this function will automatically create a database in 
+  * parameter db_path, the effect of which is indeed the one we expected.
+  * And the Schema is (row, column, value).
+  */
+int create_tb_from_name(const string &table, const string &db_path)
+{
+    string sql_start = "create table ";
+    string sql_end = " (row INT, col INT, val TEXT)";
+    string sql = sql_start + table + sql_end;
+    int rc = execute_sql_without_returned_data(sql, db_path);
+    if (rc != 0) {
+        fprintf(stderr, "There is error occured in func create_tb_from_name(): \n");
+    }
     return 0;
 }
 
@@ -348,10 +409,109 @@ int execute_binded_sql(const string &sql, const string &db_path, int index, cons
     sqlite3_close(db);
     return 0;
 }
+
+int execute_binded_sql2(const string &sql, const string &db_path, int index, const vector<uint64_t>& values)
+{
+    if (sql.size() == 0) {
+        fprintf(stderr, "The sql statement cannot be empty!");
+        exit(-1);
+    }
+    if (db_path.size() == 0) {
+        fprintf(stderr, "The database path cannot be empty!");
+        exit(-1);
+    }
+
+    sqlite3 *db;
+    char *zErrMsg = 0;
+    int rc;
+
+    /* Open database */
+    rc = sqlite3_open(db_path.c_str(), &db);
+    if (rc) {
+        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        exit(0);
+    } else {
+        fprintf(stdout, "Opened database successfully\n");
+    }
+
+    /* Execute SQL statement */
+    sqlite3_stmt *stmt;
+    rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, NULL);
+
+    #ifdef _DEBUG_
+    printf("The statement %s has %d parameter(s).\n", sql.c_str(), sqlite3_bind_parameter_count(stmt));
+    #endif
+
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "Failed to execute statement: %s\n", sqlite3_errmsg(db));
+    } else {
+        for (int value : values) {
+            printf("The binded value = %d\n", value);
+            sqlite3_bind_int(stmt, index, value);
+            sqlite3_step(stmt);
+            sqlite3_reset(stmt);
+        }
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return 0;
+}
+
+int execute_binded_sql3(const string &sql, const string &db_path, int index1, const vector<uint64_t>& values1,
+     int index2, const vector<uint64_t> &values2)
+{
+    if (sql.size() == 0) {
+        fprintf(stderr, "The sql statement cannot be empty!");
+        exit(-1);
+    }
+    if (db_path.size() == 0) {
+        fprintf(stderr, "The database path cannot be empty!");
+        exit(-1);
+    }
+
+    sqlite3 *db;
+    char *zErrMsg = 0;
+    int rc;
+
+    /* Open database */
+    rc = sqlite3_open(db_path.c_str(), &db);
+    if (rc) {
+        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        exit(0);
+    } else {
+        fprintf(stdout, "Opened database successfully\n");
+    }
+
+    /* Execute SQL statement */
+    sqlite3_stmt *stmt;
+    rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, NULL);
+
+    #ifdef _DEBUG_
+    printf("The statement %s has %d parameter(s).\n", sql.c_str(), sqlite3_bind_parameter_count(stmt));
+    #endif
+
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "Failed to execute statement: %s\n", sqlite3_errmsg(db));
+    } else {
+        for (int v1 : values1) {
+            for (int v2 : values2) {
+                printf("The 1st binded value v1 = %d, the 2nd binded value v2 = %d\n", v1, v2);
+                sqlite3_bind_int(stmt, 1, v1);
+                sqlite3_bind_int(stmt, 2, v2);
+                sqlite3_step(stmt);
+                sqlite3_reset(stmt);
+            }
+        }
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return 0;
+}
 ```
 
 **`basic_sqlite_api_test.cpp`**
 ```cpp
+#include <iostream>
 #include "src/level1/level2/sqlite/include/sqlite_apis.h"
 
 void test_create_db()
@@ -430,17 +590,59 @@ void test_bind_sql() {
     sql = "SELECT Id, Name, Price FROM Cars WHERE Id = ?";
     int rt = execute_binded_sql(sql, path, 1, "4");
     printf("rt is %d\n", rt);
+    
+    string sql2 = "Insert into Cars values (99,99,?);";
+    std::vector<uint64_t> vec = {11,12,13,14,15};
+    rt = execute_binded_sql2(sql2, path, 1, vec);
+    printf("rt is %d\n", rt);
+    
+    string sql3 = "Insert into Cars values (1010101,?,?);";
+    std::vector<uint64_t> vec1 = {111,222};
+    std::vector<uint64_t> vec2 = {11,12,13,14,15};
+    rt = execute_binded_sql3(sql3, path, 1, vec1, 2, vec2);
+    printf("rt is %d\n", rt);
     printf("Test binded_sql() succeeds\n"); 
+}
+void test_check_db_existence() {
+    const string path = "./test_db";
+    bool rt = false;
+    rt = check_db_existence(path);
+    printf("rt is %d because the database really exists.\n", (int)rt);
+    if (rt) {
+        printf("Test check_db_existence() succeeds\n"); 
+    }
+}
+void test_check_table_existence() {
+    const string path = "./test_db";
+    const string table = "Cars";
+    bool rt = false;
+    rt = check_table_existence(table, path);
+    printf("rt is %d because the database and table both really exists.\n", (int)rt);
+    if (rt) {
+        printf("Test check_table_existence() succeeds\n"); 
+    }  
 }
 int main()
 {
+    std::cout << "********** Tests Start **********" << std::endl;
     test_create_db();
+    std::cout << "********** Split Line **********" << std::endl;
     test_delete_db();
+    std::cout << "********** Split Line **********" << std::endl;
     test_open_and_close_db();
+    std::cout << "********** Split Line **********" << std::endl;
     test_create_tb_sql();
+    std::cout << "********** Split Line **********" << std::endl;
     test_insert_sql();
+    std::cout << "********** Split Line **********" << std::endl;
     test_select_sql();
+    std::cout << "********** Split Line **********" << std::endl;
     test_bind_sql();
+    std::cout << "********** Split Line **********" << std::endl;
+    test_check_db_existence();
+    std::cout << "********** Split Line **********" << std::endl;
+    test_check_table_existence();
+    std::cout << "********** Tests End **********" << std::endl;
     return 0;
 }
 ```
