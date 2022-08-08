@@ -35,7 +35,7 @@ PostgreSQL用户密码安全策略管理 https://www.modb.pro/db/21476
 
 PG透明加密（from 公众号）：
 - 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/Uyjkx1Op4e-bDW0S9q8ckA 【2020.08.30】 || 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/TaxE1u3nJH5Dm6OPjcOXiw 【2019.10.09】
-- 原创|搞懂PostgreSQL数据库透明数据加密之PG中的TDE https://mp.weixin.qq.com/s/TmciHCEDRMpdNgWfUf4zDw 【2020.08.31】
+- 原创|搞懂PostgreSQL数据库透明数据加密之PG中的TDE https://mp.weixin.qq.com/s/TmciHCEDRMpdNgWfUf4zDw 【2020.08.31】【和上面知乎那个是同一篇】
 - 原创|搞懂PostgreSQL数据库透明数据加密之密钥管理介绍 https://mp.weixin.qq.com/s/gPQ5FJDfkeOWn7seVXczYQ 【2020.08.31】
 - Transparent Data Encryption https://wiki.postgresql.org/wiki/Transparent_Data_Encryption
 - A Guide to Transparent Data Encryption in PostgreSQL https://arctype.com/blog/transparent-data-encryption/

@@ -128,3 +128,9 @@ go-memdb https://github.com/hashicorp/go-memdb
 
 malbrain/database https://github.com/malbrain/database  【主要原因是这老哥的 Github 主页介绍里说自己是有 50 年基础设施编程经验的程序员：`I have 50 years of experience developing programming frameworks to efficiently solve problems.` —— 所以回头看看他写的数据库什么水平。】
 - > Key-Value/Document store database library with btree and ARTree indexing methods, SSN-MVCC concurrency
+
+Hyrise is a research in-memory database. https://github.com/hyrise/hyrise || https://hpi.de/plattner/projects/hyrise.html
+- > Hyrise is a research in-memory database system that has been developed [by HPI since 2009](https://www.vldb.org/pvldb/vol4/p105-grund.pdf) and has been entirely [rewritten in 2017](https://openproceedings.org/2019/conf/edbt/EDBT19_paper_152.pdf). Our goal is to provide a clean and flexible platform for research in the area of in-memory data management. Its architecture allows us, our students, and other researchers to conduct experiments around new data management concepts. To enable realistic experiments, Hyrise features comprehensive SQL support and performs powerful query plan optimizations. Well-known benchmarks, such as TPC-H or TPC-DS, can be executed with a single command and without any preparation.
+
+rqlite -- The lightweight, distributed relational database built on SQLite https://github.com/rqlite/rqlite || https://www.philipotoole.com/tag/rqlite/
+- > rqlite is an easy-to-use, lightweight, distributed relational database, which uses SQLite as its storage engine. rqlite is simple to deploy, operating it is very straightforward, and its clustering capabilities provide you with fault-tolerance and high-availability. rqlite is available for Linux, macOS, and Microsoft Windows.

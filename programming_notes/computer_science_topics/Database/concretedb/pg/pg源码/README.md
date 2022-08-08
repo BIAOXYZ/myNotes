@@ -17,6 +17,8 @@ https://searchcode.com/codesearch/view/5324466/
 <<PG 内存上下文>>
 http://www.zhangxiaojian.name/pg-%E5%86%85%E5%AD%98%E4%B8%8A%E4%B8%8B%E6%96%87/
 
+图解PostgreSQL--MemoryContext(1) - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/350049053
+
 postgresql内核开发 https://blog.csdn.net/postgres20/category_6538868.html
 - postgresql源码阅读快速上手 http://blog.csdn.net/postgres20/article/details/53354330
 - postgresql内核语法解析器详解 https://blog.csdn.net/postgres20/article/details/54709860

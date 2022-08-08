@@ -24,6 +24,8 @@ http://www.postgresqltutorial.com/
 --------------------------------------------------
 
 PostgreSQL内核开发学习资料 - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/98021328
+- 回复里的：
+  * > 官方的maillist和git commit记录也是学习pg功能设计，掌握内核开发的重要途径吧，只是很多人没兴趣好好翻一下git记录，毕竟英文劝退。另外阿里也有postgresql的数据库内核月报，也很有深度。2ndQuadrant的blog可以看看。C语言有一定基础后我选择《深入理解计算机系统》
 
 ## PG releted blog
 
