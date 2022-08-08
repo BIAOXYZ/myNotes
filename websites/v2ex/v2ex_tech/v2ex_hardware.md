@@ -1,4 +1,6 @@
 
+Linux 高速写入的性能问题 https://www.v2ex.com/t/871334
+
 不懂就问： 32 位操作系统是如何突破 4G 内存限制的？ https://www.v2ex.com/t/713933
 
 SSD 有风险，存储重要数据需谨慎。 https://www.v2ex.com/t/695160

@@ -1,4 +1,14 @@
 
+初学者问一个略显深入的问题： K8S 如何查看 Pod 的 Cgroup https://www.v2ex.com/t/871379
+- > 下面这个方式是可以拿到的，AWS EKS 1.22
+  ```bash
+  kubectl get pods -n namespace -o wide
+
+  ssh ...
+  ps -ax | grep nginx | grep -v grep
+  cat /proc/$pid/cgroup
+  ```
+
 k8s pod 莫名奇妙异常 https://www.v2ex.com/t/862678
 
 k8s pod 可以作为固定的 jenkins agent 吗 https://www.v2ex.com/t/855002

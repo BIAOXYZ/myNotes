@@ -1,4 +1,9 @@
 
+数据库事务 原子性和隔离性的疑问 https://www.v2ex.com/t/871401
+- > RC 级别，一个事务里每次 select 可以获取到其他事务已经提交的数据。 <br> RR 级别，一个事务里每次 select 获取的数据都是快照，可以重复读。 <br> update 、delete 、select .... for update 里 where 后边的查询都是取得当前读，也就是最新的数据。
+- > 建议把 pg 的隔离等级文档看一下，就比较清楚了 http://www.postgres.cn/docs/12/transaction-iso.html
+- > 这些事情自己开两个 session 试一下就知道了，有现成的代码，https://github.com/ept/hermitage
+
 操作数据库 update 忘了加 where https://www.v2ex.com/t/829615
 
 关于外键，为什么国内基本都不推荐使用，国外基本都推荐使用？ https://www.v2ex.com/t/799876
