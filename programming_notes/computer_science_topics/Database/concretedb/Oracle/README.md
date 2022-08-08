@@ -45,4 +45,5 @@ https://blog.csdn.net/leshami/article/details/6100429
 
 # Oracle others
 
-程序员吐槽：我永远不会再为 Oracle 工作了 - Oracle 甲骨文 - cnBeta.COM https://www.cnbeta.com/articles/tech/789179.htm
+程序员吐槽：我永远不会再为 Oracle 工作了 - Oracle 甲骨文 - cnBeta.COM https://www.cnbeta.com/articles/tech/789179.htm || https://cloud.tencent.com/developer/news/356372 || Oracle 程序员吐槽：永远不会再为 Oracle 工作了 ！ https://mp.weixin.qq.com/s/qdSlOb4JaECwUIOdspVYjQ || https://www.sohu.com/a/276319163_465914
+- > 近日，某网友在 Hacker News 上发起了一个 “[你见过的最糟糕的代码是什么？](https://news.ycombinator.com/item?id=18442637)” 的问题，引起了广泛关注和讨论，评论数已接近600条。其中，一位 ID 为“oraguy”的程序员对 Oracle 数据库代码的吐槽，更是引发热议。内容大意如下： 
