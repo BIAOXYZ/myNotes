@@ -159,6 +159,34 @@ vector的几种初始化及赋值方式 https://blog.csdn.net/yjunyu/article/det
 
 vector 的六种 创建和初始化方法 https://blog.csdn.net/veghlreywg/article/details/80400382
 
+在C++中，初始化 vector 为1-n https://blog.csdn.net/qq_43657442/article/details/116190200
+```cpp
+#include <algorithm>     //这是 random_shuffle 的头文件
+#include <iostream>
+#include <numeric>     //这是 iota 的头文件
+#include <vector>
+using namespace std;
+int main() {
+    vector<int> v(10);
+    iota(v.begin(), v.end(), -1);
+    for (auto i : v) {
+        cout << i << ' ';
+    }
+    cout << '\n';
+    std::random_shuffle(v.begin(), v.end());
+    cout << "Contents of the list, shuffled: ";
+    for (auto i : v) {
+        cout << i << ' ';
+    }
+    cout << '\n';
+}
+```
+```console
+-1 0 1 2 3 4 5 6 7 8 
+Contents of the list, shuffled: 3 2 6 7 -1 4 1 0 5 8 
+```
+- > 更多方法请参考StackOverflow上的此问题：[use std::fill to populate vector with increasing numbers](https://stackoverflow.com/questions/17694579/use-stdfill-to-populate-vector-with-increasing-numbers)
+
 # vector元素访问
 
 C++获得vector最后一个元素 https://blog.csdn.net/mitu405687908/article/details/51148107
@@ -180,6 +208,13 @@ vectorT.back();
 方法三：
 *vectorT.rbegin();
 ```
+
+## 额外的问题：`vec.begin()` 和 `std::begin(vec)` 的区别
+
+Difference between `vector::begin()` and `std::begin()` https://stackoverflow.com/questions/26290316/difference-between-vectorbegin-and-stdbegin
+- https://stackoverflow.com/questions/26290316/difference-between-vectorbegin-and-stdbegin/26290337#26290337
+  * > `std::begin()` was added in `C++11` to make it easier to write generic code (e.g. in templates). The most obvious reason for it is that plain C-style arrays do not have methods, hence no `.begin()`. So you can use `std::begin()` with C-style arrays, as well as STL-style containers having their own `begin()` and `end()`.
+  * > If you're writing code which is not a template, you can ignore `std::begin()`; your fellow programmers would probably find it odd if you suddenly started using it everywhere just because it's new.
 
 # 对 vector 做一些操作可能会使得当前迭代器失效 
 >> //notes：起因是在用C++做leetcode第27题时，想用类似python的倒序遍历删除，发现不行。

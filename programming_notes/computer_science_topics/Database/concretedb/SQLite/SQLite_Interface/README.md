@@ -24,6 +24,20 @@ C++之Sqlite3 https://segmentfault.com/a/1190000021141956
 
 How does binding parameters work in SQLite3 (with minimal example)? https://stackoverflow.com/questions/31806336/how-does-binding-parameters-work-in-sqlite3-with-minimal-example
 
+sqlite3：sqlite3_bind 函数 https://blog.csdn.net/u012351051/article/details/90644067
+- > 常用的sqlite3_bind函数：
+  ```c
+  int sqlite3_bind_int(sqlite3_stmt*, int, int);
+  int sqlite3_bind_doubule(sqlite3_stmt*, int, double);
+  int sqlite3_bind_text(sqlite3_stmt*, int, const char*, int, void(*)(void*));
+  参数：
+      sqlite3_stmt: 准备语句变量指针。
+      第2个形参： sqlite3_stmt变量参数的序号索引值，规定最左侧的SQL参数的索引值为 1，也就是说参数索引值从1开始。
+      第3个形参： 是要绑定给第2个形参指向的 变量参数的 实际值。第2个形参可以指向不同的索引值。
+      第4个形参： 对于有4个形参的函数，第4个形参一般是第3个形参的长度。
+      第5个形参： 是用于BLOB和字符串绑定后的 析构函数，用于在sqlite处理完blob或字符串之后处理它，一般可以设置为NULL。
+  ```
+
 ## uint64 支持
 
 unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questions/52535100/unsigned-64-bit-value-in-sqlite-with-c-bindings
