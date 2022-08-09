@@ -44,6 +44,10 @@
 
 即热式电热水器和储水式电热水器怎么选，坐标深圳 https://www.v2ex.com/t/815443
 
+# 家具
+
+逆袭冲击百亿规模，源氏木语向上生长！ https://mp.weixin.qq.com/s/GmvLKhfQFWxvm9qWKztSBA
+
 # 其他
 
 戴森发布新旗舰无线吸尘器V15：激光技术加持 https://news.mydrivers.com/1/747/747057.htm
