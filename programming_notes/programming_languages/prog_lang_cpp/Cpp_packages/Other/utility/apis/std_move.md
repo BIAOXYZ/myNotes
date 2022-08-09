@@ -79,3 +79,10 @@ std:move基本用法和理解 https://blog.csdn.net/swartz_lubel/article/details
   * > 自定义自己的类对象支持moved from 操作,需要实现 Move Constructors and Move Assignment Operators
 
 第14课 移动语义(std::move) https://www.cnblogs.com/5iedu/p/11318729.html
+
+## 函数返回值不需要move
+
+c++11：函数内部返回对象使用move语义 https://blog.csdn.net/zzhongcy/article/details/86703619
+- > 一句话，直接返回即可，一般不用任何特殊写法。
+
+C++函数返回值拷贝问题？ - 知乎 https://www.zhihu.com/question/29511959

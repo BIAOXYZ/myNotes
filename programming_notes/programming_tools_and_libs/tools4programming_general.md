@@ -18,10 +18,12 @@ Record and share your terminal sessions, the right way. https://asciinema.org/
 
 docker-wine: Docker image that includes Wine and Winetricks for running Windows applications on Linux and macOS https://github.com/scottyhardy/docker-wine
 
-croc: Easily and securely send things from one computer to another 🐊 📦 https://github.com/schollz/croc
-
 screego/server https://github.com/screego/server
 - > Screego is an addition to existing software and only helps to share your screen. Nothing else (:.
+
+# 文件共享/传输/同步
+
+【[:star:][`*`]】【其实这个是跨平台的，并且实测过可以在 killercoda 的 Ubuntu Playground 虚机与（可能有一定网络隔离的）“集体PC”（个人PC应该更不在话下了）之间成功互相收发单个文件】 croc: Easily and securely send things from one computer to another 🐊 📦 https://github.com/schollz/croc
 
 # 代码画流程图
 

@@ -369,6 +369,11 @@ ToDesk 个人免费极致流畅的远程协助软件 https://www.todesk.com/
 
 # 文件共享/同步
 
+## Syncthing
+>> //notes：这个只能局域网同步。Resilio Sync 可以非局域网同步，但是好像不免费了，而且被禁；croc 倒是试过了，而且穿透能力不错，但是只试了单个小文件，见这里的[笔记](../programming_notes/programming_tools_and_libs/tools4programming_general.md)。
+
+Syncthing https://github.com/syncthing/syncthing || https://syncthing.net/
+
 Syncthing – 数据同步利器---自己的网盘，详细安装配置指南，内网使用，发现服务器配置，更新docker https://www.cnblogs.com/jackadam/p/8568833.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
