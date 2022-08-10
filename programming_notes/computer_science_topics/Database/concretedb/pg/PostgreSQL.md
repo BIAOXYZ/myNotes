@@ -162,6 +162,17 @@ https://blog.csdn.net/wlwlwlwl015/article/details/52493197
 postgreSQL常用维护命令
 https://blog.csdn.net/aoerqileng/article/details/39721845
 
+### PG cursor (游标)
+
+WITH HOLD CURSORS AND TRANSACTIONS IN POSTGRESQL https://www.cybertec-postgresql.com/en/with-hold-cursors-and-transactions-in-postgresql/
+- > **Cursors in PostgreSQL**
+  * > When a query is ready for execution, PostgreSQL creates a `portal` from which the result rows can be fetched. During normal query execution, you receive the whole result set in one step. In contrast, a cursor allows you to fetch the result rows one by one. A cursor marks a position within a result set. Cursors are particularly useful in procedural code on the client or in the database, because they allow you to loop through the query results. Another advantage is that a cursor allows you to have more than one SQL statement running at the same time, which is normally not possible in a single database session.
+
+介绍PostgreSQL游标(Cursor) https://blog.csdn.net/neweastsun/article/details/90645200
+- > **概述**
+  * > PostgreSQL游标可以封装查询并对其中每一行记录进行单独处理。当我们想对大量结果集进行分批处理时可以使用游标，因为一次性处理可能造成内存溢出。
+  * > 另外我们可以定义函数返回游标类型变量，这是函数返回大数据集的有效方式，函数调用者根据返回游标对结果进行处理。
+
 ## PG存储
 
 <<数据库系统概念笔记之存储和文件系统及PostgreSQL实现>>
