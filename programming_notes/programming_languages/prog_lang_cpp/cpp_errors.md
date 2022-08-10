@@ -1,4 +1,57 @@
 
+# 打印二维vector时的 Segmentation fault
+>> 【[:star:][`*`]】 //notes：如果内层vector（也就是“列”）下标超了，表现行为依赖具体的编译器；如果外层vector（也就是“行”）下标超了，就会出现Segmentation fault。例子如下：
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+vector<vector<int>> func1() {
+    vector<vector<int>> vec = {{1,2,3,4},{5,6,7,8}};
+    return vec;
+}
+int main() {
+    vector<vector<int>> v;
+    v = func1();
+    cout << "**********Start**********" << endl;
+    cout << "**********1.normal print**********" << endl;
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            cout << v[i][j] << " ";
+        } 
+        cout << endl;
+    }
+    cout << "**********2.print more index of inner vector**********" << endl;
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 6; ++j) {
+            cout << v[i][j] << " ";
+        } 
+        cout << endl;
+    }
+    cout << "**********3.print more index of outter vector (will segmentation fault)**********" << endl;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            cout << v[i][j] << " ";
+        } 
+        cout << endl;
+    }
+    cout << "**********End**********" << endl;
+    return 0;
+}
+```
+```console
+**********Start**********
+**********1.normal print**********
+1 2 3 4 
+5 6 7 8 
+**********2.print more index of inner vector**********
+1 2 3 4 0 0 
+5 6 7 8 0 0 
+**********3.print more index of outter vector (will segmentation fault)**********
+1 2 3 4 
+5 6 7 8 
+Segmentation fault
+```
+
 # `error: invalid initialization of non-const reference`
 >> //notes：起因是之前一个函数可以正常用，但是后来发现会报错。查了下报错信息，又对比了对的用法和错的用法的区别，知道为啥了。
 ```cpp
