@@ -15,8 +15,12 @@
 
 ### 
 
-有理有据的胡说八道：由DB圈的一桩陈年公案看大数据时代的数据科学 https://chuansongme.com/n/973130252192
+有理有据的胡说八道：由DB圈的一桩陈年公案看大数据时代的数据科学 https://chuansongme.com/n/973130252192 || https://mp.weixin.qq.com/s/q2hYPuKRWrf9Uyv1Z35VSg
 > 果不其然，新加坡国立大学的Anthony Tung发表了他的研究情况，一样的数据一样的分析，唯一不同的是在整个分析里面把所有用到mean的地方统统都换成了median。原文同样附上，有兴趣的可以好好读读。 http://www.comp.nus.edu.sg/~atung/DB_detail.pdf 这次结论完全翻转过来了。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Vread https://www.vreadtech.com/
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
