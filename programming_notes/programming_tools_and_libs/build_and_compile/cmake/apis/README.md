@@ -1,4 +1,34 @@
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# cmake命令
+
+`cmake-commands(7)¶` https://cmake.org/cmake/help/v3.24/manual/cmake-commands.7.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `aux_source_directory()`
+
+aux_source_directory https://cmake.org/cmake/help/latest/command/aux_source_directory.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `find_library()`
+
+find_library https://cmake.org/cmake/help/latest/command/find_library.html
+
+Package vs Library https://stackoverflow.com/questions/23832339/package-vs-library
+- https://stackoverflow.com/questions/23832339/package-vs-library/23838081#23838081
+  * > Imagine you want to use zlib in your project, you need to find the header file `zlib.h`, and the library `libz.so` (on Linux). You can use the low-level cmake commands `find_path` and `find_library` to find them, or you can use `find_package(ZLIB)`. The later command will try to find out all what is necessary to use zlib. It can be extra macro definitions, or dependencies.
+  * > **Update, more detail about `find_package`**: when the CMake command `find_package(SomeThing)` is called, [as in the documentation](https://cmake.org/cmake/help/v3.0/command/find_package.html), there are two possible modes that cmake can run:
+    + > the module mode (that searches for a file `FindSomeThing.cmake`)
+    + > or the config mode (that searches for a file named `SomeThingConfig.cmake`)
+  * > For ZLIB, there is a module named `FindZLIB`, shipped with CMake itself (on my Linux machine that is the file `/usr/share/cmake/Modules/FindZLIB.cmake`). That module is a CMake script that uses the CMake API to search for ZLIB files in default locations, or ask the user for the location if it cannot be found automatically.
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `set()`
+
 set https://cmake.org/cmake/help/v3.0/command/set.html
 - > Set a CMake, cache or environment variable to a given value.
   ```cmake
@@ -23,3 +53,7 @@ set https://cmake.org/cmake/help/v3.0/command/set.html
     + > The code ‘set(FOO “x”)’ sets the normal variable ‘FOO’. It does not touch the cache, but it will hide any existing cache value ‘FOO’.
     + > The code ‘set(FOO “x” CACHE …)’ checks for ‘FOO’ in the cache, ignoring any normal variable of the same name. If ‘FOO’ is in the cache then nothing happens to either the normal variable or the cache variable. If ‘FOO’ is not in the cache, then it is added to the cache.
   * > Finally, whenever a cache variable is added or modified by a command, CMake also removes the normal variable of the same name from the current scope so that an immediately following evaluation of it will expose the newly cached value.
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
