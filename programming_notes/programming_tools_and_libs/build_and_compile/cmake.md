@@ -6,11 +6,6 @@ CMake https://github.com/Kitware/CMake
 
 CMake Tutorial https://cmake.org/cmake/help/v3.19/guide/tutorial/index.html
 
-CMake Reference Documentation https://cmake.org/cmake/help/v3.24/index.html
-- > **Reference Manuals¶**
-  * > **cmake-env-variables(7)** https://cmake.org/cmake/help/v3.24/manual/cmake-env-variables.7.html
-  * > **cmake-variables(7)** https://cmake.org/cmake/help/v3.24/manual/cmake-variables.7.html
-
 # 中文版（应该是机翻）
 
 CMake 3.21 (中文) https://runebook.dev/zh-CN/docs/cmake/-index-
