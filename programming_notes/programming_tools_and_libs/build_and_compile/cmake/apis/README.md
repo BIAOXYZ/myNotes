@@ -11,6 +11,8 @@
 
 aux_source_directory https://cmake.org/cmake/help/latest/command/aux_source_directory.html
 
+【[:star:][`*`]】 Cmake命令之add_subdirectory介绍 https://www.jianshu.com/p/07acea4e86a3
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## `find_library()`

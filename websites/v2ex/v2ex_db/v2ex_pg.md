@@ -1,4 +1,9 @@
 
+怎么对比 postgres 数据库数据变化 https://www.v2ex.com/t/872353
+- > audit.audit_table
+- > 我觉得是需要的是 CDC(change data capture), 可以使用类似 WAL 或者 audit_table 这类；还是类似版本管理的那种
+- > 感觉你需要的是 CDC -- https://airbyte.com/blog/change-data-capture-definition-methods-and-benefits
+
 请教各位老哥， PostgreSQL、PostGIS 基于地理空间的查询如何优化速度？ https://www.v2ex.com/t/852771
 
 PostgreSQL 分页查询 CPU 吃满的问题 https://www.v2ex.com/t/797877

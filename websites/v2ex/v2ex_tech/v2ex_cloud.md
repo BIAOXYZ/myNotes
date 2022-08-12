@@ -1,4 +1,7 @@
 
+Client-Go 免费视频教程来来来了。 https://www.v2ex.com/t/872451
+- > 视频地址：https://www.bilibili.com/video/BV1FW4y1m7qH
+
 初学者问一个略显深入的问题： K8S 如何查看 Pod 的 Cgroup https://www.v2ex.com/t/871379
 - > 下面这个方式是可以拿到的，AWS EKS 1.22
   ```bash
