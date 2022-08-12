@@ -12,6 +12,12 @@ CMake Reference Documentation https://cmake.org/cmake/help/v3.24/index.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## `CMAKE_CURRENT_SOURCE_DIR`
+
+Difference between CMAKE_CURRENT_SOURCE_DIR and CMAKE_CURRENT_LIST_DIR https://stackoverflow.com/questions/15662497/difference-between-cmake-current-source-dir-and-cmake-current-list-dir
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## `PROJECT_NAME`
 
 `PROJECT_NAME` https://cmake.org/cmake/help/v3.24/variable/PROJECT_NAME.html
@@ -20,6 +26,51 @@ CMake Reference Documentation https://cmake.org/cmake/help/v3.24/index.html
 
 Difference between CMAKE_PROJECT_NAME and PROJECT_NAME? https://stackoverflow.com/questions/38938315/difference-between-cmake-project-name-and-project-name
 - 【[:star:][`*`]】 https://stackoverflow.com/questions/38938315/difference-between-cmake-project-name-and-project-name/38940669#38940669
+  * > The difference is that `CMAKE_PROJECT_NAME` is the name from the last `project` call from ***the root CMakeLists.txt***, while `PROJECT_NAME` is from the last `project` call, regardless from the location of the file containing the command. The difference is recognizable from the following test.
+  * > File structure:
+    ```console
+    |-CMakeLists.txt
+    \-test2
+      |-CMakeLists.txt
+      \-test3
+        \-CMakeLists.txt
+    ```
+  * > `CMakeLists.txt`:
+    ```cmake
+    cmake_minimum_required(VERSION 3.0)
+    project(A)
+    message("< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    project(B)
+    message("< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    add_subdirectory(test2)
+    message("< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    project(C)
+    message("< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    ```
+  * > `test2/CMakeLists.txt`:
+    ```cmake
+    project(D)
+    message("<< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    add_subdirectory(test3)
+    project(E)
+    message("<< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    ```
+  * > `test2/test3/CMakeLists.txt`:
+    ```cmake
+    project(F)
+    message("<<< ${CMAKE_PROJECT_NAME} / ${PROJECT_NAME}")
+    ```
+  * > The relevant output is:
+    ```console
+    < A / A
+    < B / B
+    << B / D
+    <<< B / F
+    << B / E
+    < B / B
+    < C / C
+    ```
+  * > In the sub-directories, always B is the value for `CMAKE_PROJECT_NAME`.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
