@@ -12,13 +12,17 @@ CMake Reference Documentation https://cmake.org/cmake/help/v3.24/index.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## `CMAKE_CURRENT_SOURCE_DIR`
+## `CMAKE_CURRENT_SOURCE_DIR`、`CMAKE_SOURCE_DIR`
+
+`CMAKE_CURRENT_SOURCE_DIR` https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_SOURCE_DIR.html
+
+`CMAKE_SOURCE_DIR` https://cmake.org/cmake/help/latest/variable/CMAKE_SOURCE_DIR.html
 
 Difference between CMAKE_CURRENT_SOURCE_DIR and CMAKE_CURRENT_LIST_DIR https://stackoverflow.com/questions/15662497/difference-between-cmake-current-source-dir-and-cmake-current-list-dir
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## `PROJECT_NAME`
+## `CMAKE_PROJECT_NAME`、`PROJECT_NAME`
 
 `PROJECT_NAME` https://cmake.org/cmake/help/v3.24/variable/PROJECT_NAME.html
 - > Name of the project given to the project command.

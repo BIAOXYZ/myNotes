@@ -24,6 +24,14 @@ Release编译有什么特点？我的程序用Debug编译能运行但是用Relea
 
 Debug模式下不崩溃， Release模式下偶尔发生崩溃的解决思路 https://www.cnblogs.com/azbane/p/12500715.html
 
+### 个人经验1
+>> 【[:star:][`*`]】 //notes：今天碰到了一个现象：***<ins>Debug版本编译和执行都没问题；Release版本编译没问题</ins>，执行时会出 coredump，报错说 double free***。但是明明没有找到 double free 啊，不管是肉眼查还是用了 `valgrind` 去查，都没有找到。还用了 `ldd <your_prog_name>` 和 `objdump -x <your_prog_name> | grep NEEDED` 查是不是依赖库的问题，都没有发现什么端倪（当然，方法还没有用尽，还可以 `gdb` 单步调试一步一步执行下看变量和堆栈排查问题）。最后是怎么解决的呢？是偶然看到下面这个帖子里的`“规则 8”`，想到是不是有哪些小细节没注意，这些小细节在debug版本下不会出现，但是在release版本会出现。
+>>> 进而想到，***那第一步应该就是保证debug版本编译告警清零，如果还有告警，可以先看看是不是debug版本的编译告警处引起的***。结果沿着这条思路一下子就发现问题了，有个返回值类型为 `int` 的函数最后没有 `return` 语句去返回一个整型值导致的。。。直接加了个 `return 0;` 就好了：debug版本告警消失了，release版本coredump没了。
+
+Debug 运行正常，Release版本不能正常运行总结（转） https://www.cnblogs.com/chensheng-zhou/p/6732068.html
+- > **规则 8**:
+  * > 如果关闭Release模式的优化选项可以使您的应用程序运行正常，而打开优化选项则出现问题的化，原因多半在于您的不良编码习惯造成的. 这意味着必须仔细检查您的代码，清理出那些错误的假设，悬空指针等等. 等同的这告诉您，在Debug模式和关闭优化选项的Release模式下您的应用程序工作正常全是因为系统隐含的运气，您必须着手更正存在隐患的代码，否则在日后可能会造成巨大的损失。
+
 ## 编译器优化
 
 [翻译]C++编译器中的优化 https://fuzhe1989.github.io/2020/01/22/optimizations-in-cpp-compilers/
