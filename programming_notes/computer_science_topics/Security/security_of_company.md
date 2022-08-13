@@ -290,7 +290,17 @@ Privacy-Preserving XGBoost Inference https://github.com/awslabs/privacy-preservi
 
 安全多方计算代码python版本 https://blog.csdn.net/zhuiyunzhugang/article/details/108983850
 
+Concrete Numpy is an open-source set of tools which aims to simplify the use of fully homomorphic encryption (FHE) for data scientists. https://github.com/zama-ai/concrete-numpy
+
+### MPC and DB
+
 Conclave https://github.com/multiparty/conclave
 - (EuroSys '19) Conclave: secure multi-party computation on big data https://dl.acm.org/doi/10.1145/3302424.3303982
+- https://cs.paperswithcode.com/paper/conclave-secure-multi-party-computation-on
 
-Concrete Numpy is an open-source set of tools which aims to simplify the use of fully homomorphic encryption (FHE) for data scientists. https://github.com/zama-ai/concrete-numpy
+(Usenix Security 2021) Senate: A Maliciously-Secure MPC Platform for Collaborative Analytics https://www.usenix.org/conference/usenixsecurity21/presentation/poddar  【又是 Raluca Ada Popa 组的数据库相关的。。。】
+
+(VLDB 2017) smcql: Secure Querying for Federated Databases http://www.vldb.org/pvldb/vol10/p673-rogers.pdf
+
+Secrecy: Secure collaborative analytics on secret-shared data https://arxiv.org/abs/2102.01048
+- Secrecy: Secure collaborative analytics on secret-shared data #42 https://github.com/pentium3/sys_reading/issues/42
