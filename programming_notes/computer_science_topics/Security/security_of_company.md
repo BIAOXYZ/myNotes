@@ -216,6 +216,14 @@ Angel PowerFL 安全联合计算 https://cloud.tencent.com/solution/powerfl
 同态加密技术及其在机器学习中的应用 https://www.infoq.cn/article/ihal9cagg9fy7algmpuy
 - > 除了 Paillier 和 CKKS，未来我们将测试更多的同态加密算法效率，以便为同态加密的应用提供参考，欢迎查看 GitHub 项目主页： https://github.com/Di-Chai/he-benchmark
 
+## 字节
+
+安全计算，云厂商新必争之地 https://mp.weixin.qq.com/s/QZ4egckqcRISQHAW_MA1kg
+- > “今年4月，我收到了IEEE Symposium on Security and Privacy大会组委会的邮件通知。”火山引擎副总裁张鑫没想到，十年前发表于信息安全领域顶会IEEE Security and Privacy的论文，现在又获得了评奖门槛极其严苛的IEEE“Test of Time”奖（时间沉淀奖）。
+- > IEEE认定，在这个层面上，以张鑫为一作的《SCION: Scalalbility, Control, and Isolation on Next Generation Networks（2011）》（SCION：下一代网络上的可扩展性、控制和隔离）对互联网安全的意义，与论文《Unleashing Mayhem on Binary Code (2012)》（释放二进制代码上的混乱 ）对二进制范式的演进、《Click Trajectories: End-to-End Analysis of the Spam Value Chain》（点击轨迹：垃圾邮件价值链的端到端分析）对垃圾邮件的意义相似。
+- > 张鑫当时的导师Adrian Perrig解释道，“SCION承诺，在分布式拒绝服务攻击的情况下，也能根除路由攻击并提供通信保证。”Adrian Perrig如今在苏黎世联邦理工学院工作。前段时间，该校专门发了新闻，庆贺Adrian Perrig之前指导的论文获得IEEE时间沉淀奖。
+- > 时移世易，当初人们眼中的冷门研究，近些年已经成为互联网安全领域的热门，火山引擎也给出了自己的隐私计算解决方案——Jeddak。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他项目
