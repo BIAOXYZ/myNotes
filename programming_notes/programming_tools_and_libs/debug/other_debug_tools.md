@@ -5,6 +5,19 @@
 
 ***参见strace命令专门文件***
 
+## crash
+
+Linux kernel crash utility https://github.com/crash-utility/crash || https://crash-utility.github.io/
+
+crash(8) — Linux manual page https://man7.org/linux/man-pages/man8/crash.8.html
+
+使用crash分析linux内核崩溃转储文件vmcore https://www.jianshu.com/p/824908137f59
+- > crash工具，跟gdb很类似，它可以交互的分析运行中的内核，也可以分析由kdump、netdump、diskdump、xendump产生的core dump文件。
+
+linux内核调试之 crash分析dump文件 - 小乐叔叔的文章 - 知乎 https://zhuanlan.zhihu.com/p/280751207
+
+Ubuntu 20.04 Kdump + Crash 初体验 https://www.ebpf.top/post/ubuntu_kdump_crash/
+
 # debug tool for microservices
 
 Debugging microservices - Squash vs. Telepresence https://www.weave.works/blog/debugging-microservices-squash-vs-telepresence
