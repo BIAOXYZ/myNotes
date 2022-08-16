@@ -77,6 +77,38 @@ C++中vector容器 assign()用法 https://blog.csdn.net/liyuan_669/article/detai
 
 # `.data()`
 
+`std::vector::data` https://cplusplus.com/reference/vector/vector/data/
+- > **Access data**
+  * > Because elements in the vector are guaranteed to be stored in contiguous storage locations in the same order as represented by the vector, ***the pointer retrieved can be <ins>offset</ins> to access any element in the array***.
+    >> 【[:star:][`*`]】 //notes：这个 "<ins>***offset***</ins>" 再加上下面的例子，让我对数组的索引有了一个不同的认识：比如 `arr[0]`，以前的想法就是“***数组arr的第一个元素***”；现在觉得是不是当成“***数组arr（or 数组arr代表的指针arr）为基准，偏移0个位置的元素***”更好。
+- > **Example**
+  ```cpp
+  // vector::data
+  #include <iostream>
+  #include <vector>
+  int main ()
+  {
+    std::vector<int> myvector (5);
+    int* p = myvector.data();
+
+    *p = 10;
+    ++p;
+    *p = 20;
+    p[2] = 100;
+
+    std::cout << "myvector contains:";
+    for (unsigned i=0; i<myvector.size(); ++i)
+      std::cout << ' ' << myvector[i];
+    std::cout << '\n';
+    return 0;
+  }
+  ```
+  > Output:
+  ```console
+  myvector contains: 10 20 0 100 0
+  ```
+  >> //notes：这里官方的例子也是依赖了编译器的实现吧。。。最好还是直接写成 `myvector (5, 0)` 比较好。。。
+
 STL vector中的data方法(21) https://blog.csdn.net/qq844352155/article/details/38610645
 - > 原文地址:http://www.cplusplus.com/reference/vector/vector/data/
 - > 返回一个直接指向内存中存储vector元素位置的指针。
