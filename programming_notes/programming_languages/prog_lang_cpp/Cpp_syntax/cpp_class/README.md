@@ -123,7 +123,7 @@ How to properly overload the << operator for an ostream? https://stackoverflow.c
 c++类的成员变量初始化 https://www.jianshu.com/p/497b4fc4a310
 - > 普通成员变量的初始化可以在构造函数中进行赋值， 也可以在初始化列表中进行赋值。
 - > 静态成员变量必须在类外进行初始化, 且初始化时不加static前缀。
-- > const变量在初始化列表中进行初始化。
+- > ***`const`变量在初始化列表中进行初始化***。
 - > 引用成员变量也需要在初始化列表中进行初始化， 类似于const型。
 
 类的成员变量初始化总结 https://blog.csdn.net/tham_/article/details/44938731
@@ -185,6 +185,12 @@ C++创建对象时区分圆括号( )和大括号{ } - emin的文章 - 知乎 htt
 C++如何实现用大括号初始化vector https://www.jianshu.com/p/ffbb7d6403b3
 
 C++ Morsels: Initializer List Execution Order https://web.archive.org/web/20171220211003/http://xenon.arcticus.com/c-morsels-initializer-list-execution-order
+
+## 起因：子类如何初始化父类的私有成员变量
+
+c++ 子类构造函数初始化及父类构造初始化 https://blog.csdn.net/sevenjoin/article/details/82222895
+
+C++ 子类构造函数初始化列表与基类关系 https://www.cnblogs.com/impw/p/15678308.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
