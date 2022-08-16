@@ -45,6 +45,8 @@ kubectl -n stocktrader create rolebinding ibm-anyuid-clusterrole-rolebinding --c
 
 KubiScan: A tool to scan Kubernetes cluster for risky permissions https://github.com/cyberark/KubiScan
 
+Kyverno -- Kubernetes Native Policy Management https://github.com/kyverno/kyverno/ || https://kyverno.io/
+
 # k8s and 机密计算
 
 Gartner 2020 云安全新兴技术成熟度曲线：机密计算将在 5 年至 10 年得到普遍使用 https://mp.weixin.qq.com/s/cXfxkK1Rs1QSP_PxhhaVuA
