@@ -72,6 +72,9 @@ What's difference between those two std::vector's assign methods? https://stacko
 
 C++中vector容器 assign()用法 https://blog.csdn.net/liyuan_669/article/details/22104421
 
+**LeetCode相关题目**：
+- `1656. 设计有序流` https://leetcode.cn/submissions/detail/350886066/
+
 # `.data()`
 
 STL vector中的data方法(21) https://blog.csdn.net/qq844352155/article/details/38610645
