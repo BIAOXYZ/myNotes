@@ -36,6 +36,10 @@ Postgres Explain Visualizer 2 https://github.com/dalibo/pev2
 - > A VueJS component to show a graphical vizualization of a PostgreSQL execution plan.
 - > Dalibo service (recommended): https://explain.dalibo.com/
 
+PostgreSQL online editor https://onecompiler.com/postgresql/
+
+PostgreSQL online https://extendsclass.com/postgresql-online.html
+
 # 异构数据同步工具
 
 异构数据库双向同步调研 https://blog.csdn.net/jingya_charmworker/article/details/81365604

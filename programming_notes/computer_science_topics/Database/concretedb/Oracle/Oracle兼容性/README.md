@@ -19,9 +19,24 @@ Oracle 的兼容性功能 https://www.ibm.com/docs/zh/ias?topic=compatibility-fe
 - 匿名块实现：https://github.com/IvorySQL/IvorySQL/commit/832d23781ba1827bbd3a82cce3480208099f081d
 - 不用CALL就能调用函数：https://github.com/IvorySQL/IvorySQL/commit/eb035aac4afb34cfbcdd77468f520f9cefff54ed
 
+Group By https://www.ivorysql.org/zh-CN/docs/Compatibillity_Features/groupby
+- > 当 `compatible_mode` 为 `oracle` 时，即使group by子句中有主键列，目标列也必须存在于group by子句中。
+  ```sql
+  set compatible_mode to oracle;
+
+  create table students(student_id varchar(20) primary key ,
+  student_name varchar(40),
+  student_pid int);
+
+  select student_id,student_name from students group by student_id;
+  ERROR:  column "students.student_name" must appear in the GROUP BY clause or be used in an aggregate function
+  ```
+
 ## 其他
 
 Postgres兼容Oracle语法研究-extension https://www.jianshu.com/p/cdb84a9f49a1
+
+What's the equivalent to Oracle Packages in PostgreSQL https://stackoverflow.com/questions/35043957/whats-the-equivalent-to-oracle-packages-in-postgresql
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
