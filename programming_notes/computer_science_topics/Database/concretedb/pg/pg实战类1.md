@@ -17,4 +17,10 @@ PostgreSQL WAL 文件数量长期持续增加问题排查 https://mp.weixin.qq.c
 
 不同数据库间的闪回方案对比 - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/109132267
 
-PostgreSQL flashback(闪回) 功能实现与介绍 https://developer.aliyun.com/article/228267
+PostgreSQL flashback(闪回) 功能实现与介绍 https://developer.aliyun.com/article/228267 || https://billtian.github.io/digoal.blog/2017/10/10/01.html || PgSQL · Application Case · PostgreSQL flashback (flashback) function implementation and introduction https://programmersought.com/article/95471342087/  【我日了，这里还有个把德哥的中文版原文翻译成英文版的。。。可见天下文章一大抄，都是抄来抄去- -】
+
+PostgreSQL 块级 snapshot (flash back) - postgrespro improvement https://github.com/digoal/blog/blob/master/201809/20180909_01.md || https://billtian.github.io/digoal.blog/2018/09/09/01.html
+
+Implementation of Oracle Flashback like functionality in PostgreSQL. https://gist.github.com/dmitry-vsl/4587694
+
+PostgreSQL插件之pg_dirtyread "闪回查询" https://bbs.huaweicloud.com/blogs/198871 || 技术实践丨PostgreSQL插件之pg_dirtyread “闪回查询“ https://blog.csdn.net/devcloud/article/details/109382374

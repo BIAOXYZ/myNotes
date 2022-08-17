@@ -54,6 +54,10 @@ pg_extension https://pgpedia.info/p/pg_extension.html
   * > `\dx` lists the available extensions
   * > `\dx+` lists all objects in each extension.
 
+未来数据库方向 - PostgreSQL 有价值的插件、可改进功能、开放接口 (202005) https://github.com/digoal/blog/blob/master/202005/20200527_06.md || https://www.modb.pro/db/25598
+
+PostgreSQL 最常用的插件 https://github.com/digoal/blog/blob/master/202009/20200915_01.md
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他

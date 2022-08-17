@@ -1,5 +1,6 @@
 
 21 Oracle兼容性 https://github.com/digoal/blog/blob/master/class/21.md
+- PostgreSQL , EDB EPAS PPAS(兼容Oracle) , Oracle 对比（兼容性、特性优劣势） - 企业去O,去IOE https://github.com/digoal/blog/blob/master/201903/20190301_01.md
 
 漫谈数据库的 Oracle 兼容 - 唐僧的文章 - 知乎 https://zhuanlan.zhihu.com/p/69347701
 - > 原文链接：https://zedware.github.io/ORACLE-COMPATIBILITY/
