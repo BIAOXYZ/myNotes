@@ -1,4 +1,18 @@
 
+# 编译debug版本
+
+cmake 管理debug release - spiritsaway的文章 - 知乎 https://zhuanlan.zhihu.com/p/116953293
+- > `CMAKE_BUILD_TYPE` 只能指定 `single configuration` 类型的项目配置， 无法指定 `multi configuration` 的项目配置。`multi configuration`的项目配置是在使用者手动指定的时候修改的，默认都是`Debug`。但是对于`multi configuration`的项目，我们可以在触发编译的时候指定是`Debug`还是`Release`:
+
+如何使用Cmake生成debug版本和release版本的程序 https://blog.csdn.net/a794226986/article/details/18605903
+
+## 个人实战1
+```sh
+cmake . -DCMAKE_BUILD_TYPE=Debug
+```
+
+# 清除cmake缓存
+
 cmake清除缓存的操作（类似 make clean） https://blog.csdn.net/daijingxin/article/details/111826612
 - > 通过查看cmake命令的help发现可以通过创建一个额外的文件夹的方式实现：
   ```sh
