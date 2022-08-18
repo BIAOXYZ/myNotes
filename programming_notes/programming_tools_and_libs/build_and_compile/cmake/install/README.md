@@ -43,3 +43,19 @@ mount | grep snapd
     ```py
     pip install -U cmake==3.17.3
     ```
+
+## 卸载源码编译安装的 cmake
+
+Remove CMake from standard installation locations. Tested on Ubuntu. https://gist.github.com/datatypevoid/86240308911c901fd198eb4df804cc49
+>> //notes：其实核心就是最后那几句 `rm -rf ......`。注意有的时候 `/usr/local/bin` 下面还有 `cpack` 和 `ctest`，也不知道不删会不会有影响，反正一股脑删了就行！
+```sh
+rm_options="-rf"
+
+rm ${rm_options} /usr/local/share/cmake* \
+  /usr/local/lib/cmake \
+  /usr/local/doc/cmake* \
+  /usr/local/bin/cmake \
+  /usr/local/share/aclocal/cmake.m4
+```
+
+https://askubuntu.com/questions/942713/how-do-i-remove-cmake-after-installing-it-from-source
