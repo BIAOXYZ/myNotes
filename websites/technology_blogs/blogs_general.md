@@ -190,7 +190,7 @@ aoho's blog - Golang http://blueskykong.com/categories/Golang/
 
 ## 华校专blog
 
-huaxz1986 https://github.com/huaxz1986 || http://www.huaxiaozhuan.com/
+【[:star:][`*`]】 huaxz1986 https://github.com/huaxz1986 || http://www.huaxiaozhuan.com/
 - 《算法导论》中算法的C++实现 https://github.com/huaxz1986/cplusplus-_Implementation_Of_Introduction_to_Algorithms
   * > 本项目中的所有算法均来自于《算法导论》第三版 另：本人搜集了个人笔记并整理成册，命名为《AI算法工程师手册》，详见: www.huaxiaozhuan.com
 - 《UNIX环境高级编程》第三版中文笔记 https://github.com/huaxz1986/APUE_notes
