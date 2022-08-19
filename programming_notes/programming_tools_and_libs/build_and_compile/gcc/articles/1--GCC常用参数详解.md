@@ -111,6 +111,12 @@
 # 其他
 
 gcc 编译 选项 汇总 - 沃德锅的文章 - 知乎 https://zhuanlan.zhihu.com/p/347611674
+- > **警告信息控制选项**
+  * > `-W` 不建议使用此开关；请改用 `-Wextra`
+    >> //notes：一般用 `-Wall` 全部开启，然后再用 `-Wno-xxxxxx` 禁用掉一些，比如：`-Wall -Wno-sign-compare -Wno-parentheses`。
+- > **杂项**
+  * > `-WX` 将警告视为错误 treat warnings as errors
+  * > `-w` 禁用所有警告 disable all warnings
 
 gcc/g++常用编译选项和gdb常用调试命令 https://andrewpqc.github.io/2018/11/25/gcc-and-gdb/
 
