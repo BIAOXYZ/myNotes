@@ -288,6 +288,8 @@ Implementation of protocols in Falcon https://github.com/snwagh/falcon-public
 - > Primihub开源官网：http://docs.primihub.com/
 - > GitHub开源地址：https://github.com/primihub/primihub
 
+PrimiHub快速上手：5分钟运行一个MPC应用 https://mp.weixin.qq.com/s/p9j7Aup297bFtuetXRX8mA
+
 ## 小型项目
 
 GBDT_Simple_Tutorial（梯度提升树简易教程） https://github.com/Freemanzxp/GBDT_Simple_Tutorial
