@@ -1,4 +1,9 @@
 
+在 PostgreSQL 上面有么有类似美团 SQLAdvisor 的工具？ https://www.v2ex.com/t/874067
+```console
+基于 MySQL 原生态词法解析，结合分析 SQL 中的 where 条件、聚合条件、多表 Join 关系 给出索引优化建议。 https://github.com/Meituan-Dianping/SQLAdvisor
+```
+
 怎么对比 postgres 数据库数据变化 https://www.v2ex.com/t/872353
 - > audit.audit_table
 - > 我觉得是需要的是 CDC(change data capture), 可以使用类似 WAL 或者 audit_table 这类；还是类似版本管理的那种

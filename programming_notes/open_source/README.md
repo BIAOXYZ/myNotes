@@ -24,3 +24,8 @@ InfoWorld 公布 2019 年最佳开源软件榜单，有你熟悉的吗？ https:
 
 开源项目的名称背后都有这些故事 https://www.ithome.com/0/470/654.htm
 - > 名称“Ansible”直接来自科幻小说。Ursula Le Guin的著作《罗坎农的世界》（Rocannon's World）中， 有一种设备允许即时（比光速更快）通信，它被称为ansible（从“answerable”一词派生）。 Ansible 也成为了科幻小说的构成要素，包括在Orson Scott Card的《安德的游戏》（Ender's Game）中，该设备远程控制了许多太空飞船。 对于控制分布式机器的软件来说，这似乎是一个很好的模型，因此Ansible的创建者Michael DeHaan借用了这个名字。
+
+# open source projects
+
+libunwind https://github.com/libunwind/libunwind || https://www.nongnu.org/libunwind/
+- > libunwind official github repo (in need of new / additional maintainer, mail/open issue if interested)
