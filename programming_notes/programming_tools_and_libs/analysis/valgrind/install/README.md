@@ -1,7 +1,5 @@
 
-# 安装
-
-## Debian 9
+# Debian 9
 
 ~~Install valgrind on Debian https://snapcraft.io/install/valgrind/debian~~  -->  NND写了一堆，最后运行不起来！总是提示 memcheck 工具找不到，搞毛线！
 ```
@@ -34,7 +32,9 @@ make
 make install
 ```
 
-## Ubuntu
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Ubuntu
 
 Install valgrind on Ubuntu https://snapcraft.io/install/valgrind/ubuntu
 ```sh
@@ -82,42 +82,4 @@ valgrind: no program specified
 valgrind: Use --help for more information.
 ```
 
-# 文章
-
-Linux 性能分析valgrind（一）之memcheck使用 - Xin Lee的文章 - 知乎 https://zhuanlan.zhihu.com/p/92074597
-- > **Valgrind 怎么用**
-  * > 2.运行
-    + > `valgrind --tool=toolname args-val program args-pro`
-- > **使用 Valgrind Memcheck**
-  * > memcheck工具的使用方式如下:
-    + > `valgrind --tool=memcheck ./a.out`
-- > **工程实践注意**：
-  * > 需要测试***运行中***的内存泄漏问题，可以使用如下命令：
-    + > `valgrind --log-file=valgrind.log --tool=memcheck --leak-check=full --show-leak-kinds=all ./your_app arg1 arg2`
-- > **该工具可以检测下列与内存相关的问题**:
-  ```console
-  未释放内存的使用
-  对释放后内存的读/写
-  对已分配内存块尾部的读/写
-  内存泄露
-  不匹配的使用malloc/new/new[] 和 free/delete/delete[]
-  重复释放内存
-  ```
-
-实例介绍利用valgrind定位内存异常释放问题（double free 和wrong free） https://blog.csdn.net/stpeace/article/details/61624382
-
-C++内存泄漏检查工具——Valgrind（--tool = memcheck） https://www.cnblogs.com/developing/articles/10979109.html
-
-C/C++ 内存泄漏检测工具：Valgrind https://murphypei.github.io/blog/2019/04/valgrind-memory-leaky
-
-调不尽的内存泄漏，用不完的 Valgrind https://phenix3443.github.io/notebook/software-engineering/debug/valgrind-practices.html || https://github.com/phenix3443/notebook/blob/master/docs/software-engineering/debug/valgrind-practices.html
-
-valgrind排查内存泄露 - 涛哥的文章 - 知乎 https://zhuanlan.zhihu.com/p/111530078
-
-使用 Valgrind 检测 C++ 内存泄漏 http://senlinzhan.github.io/2017/12/31/valgrind/
-
-# 相关软件
-
-## KCachegrind 
-
-GUI to profilers such as Valgrind https://github.com/KDE/kcachegrind
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
