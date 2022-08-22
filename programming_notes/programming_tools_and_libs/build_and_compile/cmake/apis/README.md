@@ -29,6 +29,26 @@ Package vs Library https://stackoverflow.com/questions/23832339/package-vs-libra
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## `include_directories()`
+
+include_directories https://cmake.org/cmake/help/v3.24/command/include_directories.html
+- > The include directories are added to the `INCLUDE_DIRECTORIES` directory property for the current CMakeLists file. They are also added to the `INCLUDE_DIRECTORIES` target property for each target in the current CMakeLists file. The target property values are the ones used by the generators.
+
+### 如何打印出当前 include_directories 后的头文件包含目录？
+
+Listing include_directories in CMake https://stackoverflow.com/questions/6902149/listing-include-directories-in-cmake
+- 【[:star:][`*`]】 https://stackoverflow.com/questions/6902149/listing-include-directories-in-cmake/6904431#6904431
+  * > You can use the `get_property` command to retrieve the value of the directory property `INCLUDE_DIRECTORIES`. Something like this:
+    ```cmake
+    get_property(dirs DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
+    foreach(dir ${dirs})
+      message(STATUS "dir='${dir}'")
+    endforeach()
+    ```
+  * > The value of this directory property only tracks the `include_directories` commands that have occurred previously in the same CMakeLists file, or that have been inherited from previous occurrences in a parent CMakeLists file. If your `find_package` and `include_directories` commands are scattered about throughout many subdirectories, this becomes a challenging issue.
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## `set()`
 
 set https://cmake.org/cmake/help/v3.0/command/set.html
