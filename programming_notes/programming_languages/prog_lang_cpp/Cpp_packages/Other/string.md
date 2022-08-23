@@ -194,6 +194,8 @@ C++ string to int Conversion https://www.programiz.com/cpp-programming/string-in
 
 How can I convert a std::string to int? https://stackoverflow.com/questions/7663709/how-can-i-convert-a-stdstring-to-int
 
+C++ double 转string方法 精度保持到小数点15位 https://blog.csdn.net/y396397735/article/details/92825667
+
 # 问题
 
 Empty character constant in c++ https://stackoverflow.com/questions/31193454/empty-character-constant-in-c
