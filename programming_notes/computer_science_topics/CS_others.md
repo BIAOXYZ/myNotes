@@ -127,6 +127,8 @@ CEO 亲自写代码登上热榜，从零开始打造“裸金属”树莓派 htt
 
 Getting started with static program analysis. 静态程序分析入门教程。 https://github.com/RangerNJU/Static-Program-Analysis-Book
 
+Hypervisor From Scratch https://github.com/SinaKarvandi/Hypervisor-From-Scratch
+
 ## programming language project
 
 Single-file public-domain/open source libraries with minimal dependencies https://github.com/nothings/single_file_libs
@@ -162,6 +164,8 @@ The System Design Primer https://github.com/donnemartin/system-design-primer
 - 系统设计入门 https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md
 
 System design interview for IT companies https://github.com/checkcheckzz/system-design-interview
+
+System Design Course https://github.com/karanpratapsingh/system-design
 
 PershingSquared https://www.zhihu.com/column/c_1253614849646895104
 - 读书笔记 | System Design Interview Alex Xu Pt. 1 - 水心记的文章 - 知乎 https://zhuanlan.zhihu.com/p/439908039

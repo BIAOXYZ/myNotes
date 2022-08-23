@@ -13,6 +13,12 @@ http://blog.csdn.net/defonds/article/details/48471087
 
 SQLite 的读写效率很高，有哪些使用其他数据库的理由？ - 知乎 https://www.zhihu.com/question/31417262
 
+TPC B/C/H Benchmark for PostgreSQL https://github.com/Vonng/pgtpc
+- > Figures, Numbers, Benchmarks about how fast can PostgreSQL go!
+  * > `pgbench`： Meaure PostgreSQL performence on different hardwares.
+  * > `sysbench`：Compare PostgreSQL performence with MySQL & other databases
+  * > tpc-h：Measure PostgreSQL Analysis performence and compare to other AP systems
+
 # MySQL v.s. PG
 
 MySQL和PostgreSQL在多表连接算法上的差异 https://mp.weixin.qq.com/s/6cYy3lWwpxV4b08Hdb593A
