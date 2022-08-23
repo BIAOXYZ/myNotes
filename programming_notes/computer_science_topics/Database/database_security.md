@@ -32,6 +32,13 @@ PostgreSQL用户密码安全策略管理 https://www.modb.pro/db/21476
 - > PostgreSQL提供了一个插件passwordcheck可以满足简单的密码复杂度测验，防止使用过短，或者与包含用户名的密码。
 
 一文读懂PostgreSQL数据库透明数据加密 - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/84829027 || PostgreSQL数据库透明数据加密概述 https://cloud.tencent.com/developer/article/1516612
+- > **加密等级**
+  * > 社区经过多次讨论，目前由于设计难易度以及开发成本的角度，选择了 ***集簇级加密*** 作为TDE的第一个方案。
+- > **数据库中如何选择加密模式**
+  * > 开发成本：使用openssl自带的加密算法，加密算法开发成本低；其中除ECB外都需要额外的使用向量或计数器，开发成本相当；***<ins>由于CBC和ECB需要进行填充数据</ins>***，考虑到WAL流复制过程，不推荐使用。最优选择为CFB，OFB和CTR。 安全性：ECB不予考虑，其他皆可。 性能：由于是在刷写磁盘时进行加解密，那么考虑到读取和写入的并行要求，以及加密算法的性能，CTR mode是最优选择。 易用性：在此不需要考虑。
+    >> 【[:star:][`*`]】 //notes：这里之所以后面三个（`CFB`、`OFB`、`CTR`）不需要padding，是因为它们是 ***<ins>先完成Encrypt，最后一步是XOR</ins>***；而`ECB`和`CBC`是先XOR，最后放进Encrypt函数。
+    >>> 我开始也没想明白这点，是看了这个帖子后来才想到的： Why does a padding block exist for ECB and CBC modes? https://crypto.stackexchange.com/questions/71365/why-does-a-padding-block-exist-for-ecb-and-cbc-modes
+  * > 以上，从各个层面来说，CTR都是最优的加密mode，社区同样选择了`CTR mode`作为加密模式。
 
 PG透明加密（from 公众号）：
 - 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/Uyjkx1Op4e-bDW0S9q8ckA 【2020.08.30】 || 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/TaxE1u3nJH5Dm6OPjcOXiw 【2019.10.09】

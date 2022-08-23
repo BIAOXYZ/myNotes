@@ -195,6 +195,28 @@ C++ string to int Conversion https://www.programiz.com/cpp-programming/string-in
 How can I convert a std::string to int? https://stackoverflow.com/questions/7663709/how-can-i-convert-a-stdstring-to-int
 
 C++ double 转string方法 精度保持到小数点15位 https://blog.csdn.net/y396397735/article/details/92825667
+- > 注意：经测试设置精度到20位实际准确只有15位，后面的数据就不可靠了。
+- 个人文章实战：
+```cpp
+#include <iostream>
+#include <sstream>
+#include <iomanip>
+int main(int argc, char *argv[])
+{
+    double d = 3.1415926535897932384;
+    std::string str = std::to_string(d);
+    std::cout << str << std::endl; // 3.141593
+    std::stringstream ss;
+    ss << std::setprecision(15) << d;
+    str = ss.str(); 
+    std::cout << str << std::endl; //3.14159265358979
+    return 0;
+}
+```
+```console
+3.141593
+3.14159265358979
+```
 
 # 问题
 
