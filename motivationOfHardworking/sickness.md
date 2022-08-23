@@ -28,6 +28,10 @@ Adobe与中国公司合作之后：特供版Flash默认搜集用户隐私 https:
 
 # from wechat
 
+年轻人的工资，正在被父母们的退休金狂虐 https://mp.weixin.qq.com/s/aVWiYuL4Ru1SXMJ7MWp77A
+- > 互联网就是个优胜劣汰、以时尚年轻为趋向的地方，制造业越老越吃香，这些人肯去吗？
+  >> //note：主要就是为了记录一下这个傻逼公众号（`功夫财经`）。。。
+
 ## from 全天候科技
 
 点融郭宇航：我们不缺钱 再给点时间 https://mp.weixin.qq.com/s/qSQEYxayXabz1mgv4jc6aA
