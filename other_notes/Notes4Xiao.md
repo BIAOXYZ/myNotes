@@ -269,6 +269,16 @@ sk2的前男友面膜到底为什么那么神奇？ - 知乎 https://www.zhihu.c
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# projects
+
+无人机资源汇总 https://github.com/apachecn/awesome-drones-zh
+
+Detection and Prevention of Security Attacks in VANET. https://github.com/naveenrj98/Security_Attacks_VANET
+
+【转载】FragAttacks：USENIX 2021 安全会议演讲议题视频 https://www.bilibili.com/video/BV18Q4y1R7NJ
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # others
 
 刚刚，42也被人类写成了三个整数的立方和！ https://mp.weixin.qq.com/s/itwhUF6gDMD4yHR7QrJb9Q
