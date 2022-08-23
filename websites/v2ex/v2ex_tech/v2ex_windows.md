@@ -1,4 +1,6 @@
 
+win 下的 Linux 环境选择 https://www.v2ex.com/t/874664
+
 WSL 网络突然不可用了，真的是得远离瘟到死 https://www.v2ex.com/t/808578
 ```console
 之前一切正常，最近也没有安装啥更新的
