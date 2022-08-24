@@ -75,3 +75,11 @@ Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/art
 # 王果壳 https://cloud.tencent.com/developer/article/1127404
 
 原 PostgreSQL源码中的List和ListCell的说明 https://cloud.tencent.com/developer/article/1127404
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Zhenglong Li (SmartKeyerror)
+
+PostgreSQL 中的 MVCC (01)——基本可见性判断 https://smartkeyerror.com/PostgreSQL-MVCC-01
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
