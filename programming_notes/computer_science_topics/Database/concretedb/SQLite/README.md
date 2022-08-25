@@ -41,6 +41,10 @@ SQLite权威指南 (The Definitive Guide to SQLite) https://wizardforcel.gitbook
     + > 在一些情况下SQLite可能不如大型数据库快，但大多数这些情况是可理解的。SQLite是一个内嵌式的数据库，设计用于中小规模的应用程序。这些限制是符合设计目的的。很多新用户错误地假设使用SQLite可以代替大型关系型数据库，这有时行，但有时不行，依赖于你准备用SQLite来做什么。一般情况下，SQLite在三个主要的方面具有局限性：
 - 第5章 设计和概念 https://wizardforcel.gitbooks.io/the-definitive-guide-to-sqlite/content/7.html
 
+# SQLite SQL
+
+SQLite INSERT OR REPLACE使用 https://www.jianshu.com/p/bfa617a0b9b1
+
 # 在 CMake 中使用 SQLite
 
 FindSQLite3 https://cmake.org/cmake/help/latest/module/FindSQLite3.html  【PS：尽管官方有这种更现成的方式，但是我用 `apt install -y libsqlite3-dev` 装的貌似只有一个头文件，用这种方式找不到。。。回头再看看了。】

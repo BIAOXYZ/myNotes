@@ -29,6 +29,9 @@ HLola: a Very Functional Tool for Extensible Stream Runtime Verification https:/
 
 Formal Verification of ROS-Based Robotic Applications Using Timed-Automata https://ieeexplore.ieee.org/document/7967992 || https://www.academia.edu/80665150/Formal_Verification_of_ROS_Based_Robotic_Applications_Using_Timed_Automata
 
+基于运行时验证的无人飞行系统安全威胁检测方法 https://dl.ccf.org.cn/article/articleDetail.html?type=qkwz&_ack=1&id=5099354701203456
+- ArduPilot Project https://github.com/ArduPilot/ardupilot
+
 Runtime verification of cryptographic protocols https://trustworthy.systems/publications/nicta_full_text/3924.pdf
 
 Publications of Runtime Verification, Inc. https://github.com/runtimeverification/publications

@@ -175,6 +175,27 @@ gdb打印的命令为：
 p **matrix@3@3
 ```
 
+gdb打印技巧 https://www.jianshu.com/p/98c923a671ae
+- > **打印数组中任意连续元素值**
+  * > 在gdb中，如果要打印数组中任意连续元素的值，可以使用 ***`p array[index]@num`*** 命令（p是print命令的缩写）。其中index是数组索引（从0开始计数），num是连续多少个元素。
+  * > 如果要打印从数组开头连续元素的值，也可使用这个命令：***`p *array@num`***
+- > **打印静态变量的值**
+  * > 你可以显式地指定文件名（上下文）：
+    ```sh
+    (gdb) p 'static-1.c'::var
+    $1 = 1
+    (gdb) p 'static-2.c'::var
+    $2 = 2
+    ```
+
+gdb调试打印 `void*` 或者 `void **` 类型的成员方法 https://blog.csdn.net/ljb825802164/article/details/106301826
+- > linux gdb调试时，使用p命令打印一个 `(void *)` 变量时会报错：`Attempt to dereference a generic pointer.`
+- > 此时，只需要将 `(void *)` 变量强制类型转化成需要打印的类型，使用p命令即可打印。例如，需要打印 `(int *)` 型entries变量，则使用命令格式：
+  ```console
+  (gdb) p *(int *)map->entries
+  $38 = 0
+  ```
+
 ## 较系统攻略
 
 GDB调试指南 https://www.yanbinghu.com/2019/04/20/41283.html  || https://github.com/yanbinghu/yanbinghu.github.io/blob/master/2019/04/20/41283.html || https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI2OTA3NTk3Ng==&action=getalbum&album_id=1337122386575147009 || GDB调试入门指南 - 守望的文章 - 知乎 https://zhuanlan.zhihu.com/p/74897601
