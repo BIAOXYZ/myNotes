@@ -47,6 +47,8 @@ unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questi
 在SQLite数据库中存储64位无符号整数，既有趣又有益 https://juejin.cn/post/7114625032919203848
 - Storing 64-bit unsigned integers in SQLite databases, for fun and profit http://ivory.idyll.org/blog/2022-storing-ulong-in-sqlite-sourmash.html
 
+SQLite, 64-bit integers, and the impossible number http://jakegoulding.com/blog/2011/02/06/sqlite-64-bit-integers/
+
 ## 其他接口
 
 How do I check in SQLite whether a database exists C# https://stackoverflow.com/questions/21159790/how-do-i-check-in-sqlite-whether-a-database-exists-c-sharp
