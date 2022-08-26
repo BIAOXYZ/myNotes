@@ -45,6 +45,8 @@ SQLite权威指南 (The Definitive Guide to SQLite) https://wizardforcel.gitbook
 
 SQLite INSERT OR REPLACE使用 https://www.jianshu.com/p/bfa617a0b9b1
 
+SQLite 触发器（Trigger） https://www.runoob.com/sqlite/sqlite-trigger.html
+
 # 在 CMake 中使用 SQLite
 
 FindSQLite3 https://cmake.org/cmake/help/latest/module/FindSQLite3.html  【PS：尽管官方有这种更现成的方式，但是我用 `apt install -y libsqlite3-dev` 装的貌似只有一个头文件，用这种方式找不到。。。回头再看看了。】
