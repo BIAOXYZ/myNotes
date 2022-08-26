@@ -26,6 +26,12 @@ http://www.zhangxiaojian.name/pg-%E5%86%85%E5%AD%98%E4%B8%8A%E4%B8%8B%E6%96%87/
   * > 下图为 VC6 编译器在进行 `malloc` 调用时返回的结果的内存布局，其中 Debug Header 只有在 Debug 模式下才会出现，***但是所分配内存区域的首、尾两端的 Cookie 却必不可少，因为它记录了一次 `malloc` 所分配的总内存，总计占用 8 Bytes***。
   * > 也就是说，我们每次使用 `malloc()` 申请 24 Bytes 的内存，系统最少消耗 32 Bytes 的内存，那么对于应用程序来说，内存的实际使用率为 24/32 = 0.75。如果我们有 100 万个 `malloc` 调用，那么将会有非常多的内存用于 Cookie 中，如此一来内存使用效率将会非常之低。
   * > 因此，PostgreSQL 使用了一种名为 Region-Based Memory Management 的内存管理方式，原理其实非常简单: 使用 `malloc` 申请较大的内存块，然后将该内存块切割成一个一个的小的内存片，将内存片返回给调用方。***当调用方使用完毕返还时，并不会直接返回给操作系统，而是添加至 Free List 这一空闲链表的指定区域内，以用于下一次的内存分配***。
+- > **5. 关于内存上下文的切换**
+  * > 我们能够在源码中经常看到 `MemoryContextSwitchTo()` 这个函数的调用，其作用就是将当前内存上下文切换至指定的内存上下文之中。
+  * > 一个简单的例子就是系统表的缓存内存申请。当我们执行一个 Query 并且需要使用 System Catalog 时，通常会将读取到的 Catalog 缓存到内存中，以便下次更快地读取。那么这部分的内存就肯定需要在 `CacheMemoryContext` 这一内存上下文中申请，而不能在 `MessageContext` 或者是 `CurTransactionContext` 等内存上下文中申请。
+- 回复里的：
+  * > 大佬你好 好奇一下图是用什么软件绘制的哦
+    >> Hi 我是用 https://app.diagrams.net/ 这个在线网站进行绘图的，字体使用的是 `Comic Sans MS`，最近也有在用 `monospace` 字体。【//PS：主要就是记录一下这个字体】
 
 An introduction to Memory Contexts https://www.pgcon.org/2019/schedule/attachments/514_introduction-memory-contexts.pdf
 
