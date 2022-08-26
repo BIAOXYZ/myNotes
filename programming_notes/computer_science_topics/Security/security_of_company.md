@@ -61,6 +61,16 @@ TF-Encrypted MPC 多方计算代码阅读 - 哈利法的文章 - 知乎 https://
 在 TensorFlow 中使用安全计算实现隐私保护机器学习 - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/396553029
 - > 文章下载地址： Private Machine Learning in TensorFlow using Secure Computation https://arxiv.org/pdf/1810.08130v2.pdf
 
+## Intel
+
+HE Transformer for nGraph https://github.com/IntelAI/he-transformer
+
+## Google
+
+Private Join and Compute https://github.com/Google/private-join-and-compute
+
+Helping organizations do more without collecting more data https://security.googleblog.com/2019/06/helping-organizations-do-more-without-collecting-more-data.html
+
 ## 华控清交
 
 PrivPy：实现规模化通用隐私保护机器学习 - 雪琪的文章 - 知乎 https://zhuanlan.zhihu.com/p/115574680
