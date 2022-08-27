@@ -81,6 +81,17 @@ Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/art
 # 王果壳 https://cloud.tencent.com/developer/article/1127404
 
 原 PostgreSQL源码中的List和ListCell的说明 https://cloud.tencent.com/developer/article/1127404
+- > 1、其中如果这是一个由 `int` 或者 `Oid` 构成的 `List`，那么 `ListCell` 直接存储 `int` 或者 `Oid`。若不是，则使用 `void*` 来存储，这样可以存储的类型就多了。一般用的时候直接使用强制转换为 `(Type *)` 即可使用。
+- > 接下来是有 `ListCell` 组成的 `List`，`List`，没有将整个链存储起来，仅仅将由 `ListCell` 组成的线性链表的头和尾。在做查询的时候，也仅仅是通过头进行向后查询。同时还存储了链的两个属性：（1）ListCell的个数；（2）List的类型（T_List, T_IntList, or T_OidList）。
+- > List的类型是在构建List的时候指定的：
+- > 遍历List的方法为：
+  ```c
+  #define foreach(cell, l)	\
+  	for ((cell) = list_head(l); (cell) != NULL; (cell) = lnext(cell))
+  #define for_each_cell(cell, initcell)	\
+  	for ((cell) = (initcell); (cell) != NULL; (cell) = lnext(cell))
+  ```
+- > 方法有许多，可以参考 `pg_list.h`。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
