@@ -1,4 +1,6 @@
 
+Python gui 的疑问 https://www.v2ex.com/t/875625
+
 【[:star:][`*`]】 Python for 循环的效率是这么差么？还是别的什么原因？ https://www.v2ex.com/t/869981
 ```console
 三种写法，耗时从高到低，如下面代码所示，输出结果一样。各位大佬帮忙看下原因？
