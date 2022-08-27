@@ -1,4 +1,14 @@
 
+科学家捕获到 45 年前发射的旅行者 1 号的信号，后者正在驶出太阳系 https://www.ithome.com/0/637/472.htm
+- 回复里的：
+  * > 1990年，旅行者1号于距地球64亿公里处最后一次回望母星，拍摄下这张照片。`“我们成功地拍摄了这张照片，当你看它，会看到一个小点。那就是这里，那就是家园，那就是我们。你所爱的每个人，认识的每个人，听说过的每个人，历史上的每个人，都在它上面活过了一生。我们物种历史上的所有欢乐和痛苦，千万种言之凿凿的宗教和经济思想，所有狩猎者和采集者，所有英雄和懦夫，所有文明的创造者和毁灭者，所有的皇帝和农夫，所有热恋中的年轻人，所有的父母、满怀希望的孩子、发明者和探索者，所有道德导师，所有 ‘超级明星’，所有圣徒和罪人——都发生在这颗悬浮在太阳光中的尘埃上。”`
+  * > 出自卡尔萨根的著名演讲，直接搜“暗淡蓝点 卡尔萨根”。以下是英文原文：`That's here. That's home. That's us. On it, everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species, lived there, on a mote of dust, suspended in a sunbeam.` — Carl Sagan, in Cosmos: A Spacetime Odyssey (S01E13) Unafraid of the Dark
+  * > 银河系都还没出
+    >> 太阳系都没出。银河系，更不可能。
+    >>> 出不了银河系，最快速度14km/s，第四宇宙速度要110-120km/s
+    >>>> 第三宇宙速度是多少
+    >>>>> 记得好像是16.7km/s
+
 最新发现神秘“休眠黑洞”，距地球约 16 万光年 https://www.ithome.com/0/630/487.htm
 - > 北京时间 7 月 20 日上午消息，据国外媒体报道，目前，天文学家在距离地球 16 万光年的区域发现一个“休眠黑洞”，其质量至少是太阳的 9 倍，它环绕一颗恒星运行。
 - > 一支被称为“黑洞警察”的研究团队通过搜索剑鱼座狼蛛星云大约 1000 颗恒星，最终确认了该发现，他们指出，这是在银河系外探测到的第一个“恒星质量”休眠黑洞，恒星质量黑洞是当较大质量恒星到达生命尽头，并在自身引力下坍缩时形成的。***如果黑洞不积极地吞噬物质，就会被描述为“休眠黑洞”，该状态下它不释放任何光或者其他辐射***。
