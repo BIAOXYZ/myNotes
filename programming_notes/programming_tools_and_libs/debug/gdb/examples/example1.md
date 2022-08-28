@@ -91,3 +91,7 @@
 - > 参考资料
 
 ## 个人实战部分
+
+# 2
+
+GDB: Attempt to dereference generic pointer https://stackoverflow.com/questions/20414699/gdb-attempt-to-dereference-generic-pointer

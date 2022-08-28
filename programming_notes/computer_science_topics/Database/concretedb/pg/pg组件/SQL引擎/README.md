@@ -77,3 +77,7 @@ PostgreSQL 优化器的初步分析：query_planner() https://github.com/davidzw
   	rel = make_rel_from_joinlist(root, joinlist);
   ```
 - > 实例：
+
+# 执行器
+
+Queries in PostgreSQL: 1. Query execution stages https://postgrespro.com/blog/pgsql/5969262
