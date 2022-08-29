@@ -35,7 +35,11 @@ Group By https://www.ivorysql.org/zh-CN/docs/Compatibillity_Features/groupby
 
 ## 其他
 
-Postgres兼容Oracle语法研究-extension https://www.jianshu.com/p/cdb84a9f49a1
+https://www.jianshu.com/u/aaa5eddef78e
+- Postgres兼容Oracle语法研究-extension https://www.jianshu.com/p/cdb84a9f49a1
+- Postgres兼容Oracle语法研究-extension（续） https://www.jianshu.com/p/a6164ed189ef
+- Postgres兼容Oracle研究——orafce调研 https://www.jianshu.com/p/3b8e1c47fecf
+  * > orafce源码：https://github.com/orafce/orafce
 
 What's the equivalent to Oracle Packages in PostgreSQL https://stackoverflow.com/questions/35043957/whats-the-equivalent-to-oracle-packages-in-postgresql
 

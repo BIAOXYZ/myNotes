@@ -100,3 +100,5 @@ Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/art
 PostgreSQL 中的 MVCC (01)——基本可见性判断 https://smartkeyerror.com/PostgreSQL-MVCC-01
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+PostgreSQL查询SQL的语法分析（1）——词法分析 https://www.jianshu.com/p/1c8183d93eae
