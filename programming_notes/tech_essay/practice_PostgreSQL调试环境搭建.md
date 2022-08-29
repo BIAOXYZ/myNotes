@@ -253,6 +253,53 @@ b exec_simple_query
 yum install -y ddd
 ```
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## CentOS 7 容器中的 pg8.4 环境搭建
+
+```sh
+# 宿主机上执行
+docker run --name pgdev -itd --privileged centos:7 bash
+docker exec -it pgdev bash
+```
+```sh
+# 容器里执行
+yum install -y bison flex readline-devel zlib-devel git gcc make epel-release cgdb
+
+useradd pguser
+echo 123456 | passwd --stdin pguser
+su - pguser
+
+mkdir ~/pgdir && cd pgdir/
+git clone https://github.com/postgres/postgres.git
+cd postgres/
+git checkout -b REL8_4_STABLE origin/REL8_4_STABLE
+
+./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+make -sj
+make install
+
+cd /home/pguser/pgdir/pgsql/bin/
+./initdb -D /home/pguser/pgdir/pgdata
+./pg_ctl start -D /home/pguser/pgdir/pgdata
+
+# 如果要直接手动贴，就别用反斜杠转义了。
+cat << EOF >> ~/.bashrc
+export PGHOME=/home/pguser/pgdir/pgsql
+export PGDATA=/home/pguser/pgdir/pgdata
+export LD_LIBRARY_PATH=\${LD_LIBRARY_PATH}:\${PGHOME}/lib
+export PATH=\${PATH}:\${PGHOME}/bin
+EOF
+```
+```sh
+# 安装完成后像往常一样准备 root 去 cgdb attach 上进行调试，结果 attach 进程后说读不到符号表，提示如下信息：
+# `Missing separate debuginfos, use: debuginfo-install glibc-2.17-326.el7_9.x86_64`
+# 基本是因为容器环境精简了，安装一下即可。
+debuginfo-install -y glibc-2.17-326.el7_9.x86_64
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Ubuntu安装 pg8.4.1（这是《PostgreSQL数据库内核分析》书里用的版本）
 
 ```sh
@@ -309,7 +356,9 @@ after upgrade gdb won't attach to process https://askubuntu.com/questions/41629/
     kernel.yama.ptrace_scope = 0
     ```
 
-# Dockerfile
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## Dockerfile
 
 //notes：一个教训就是千万不要忘了，任何相对路径（哪怕只是为了使用相对路径上的软件，比如 `./configure` 那句）都别涉及。
 
@@ -397,6 +446,8 @@ ENV PATH=${PATH}:${PGHOME}/bin
 WORKDIR /home/pguser/pgdir/pgsql/bin/
 RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # New
 
