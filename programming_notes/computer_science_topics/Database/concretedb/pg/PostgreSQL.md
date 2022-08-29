@@ -328,6 +328,9 @@ PostgreSQL修炼之道 - 从小工到专家 http://www.gaofi.cn/book/detail/892
 
 PostgreSQL Server Programming http://pdf.th7.cn/down/files/1312/PostgreSQL%20Server%20Programming.pdf
 
+PostgreSQL好书推荐 https://mp.weixin.qq.com/s/-dqSiJWCMVAYaQZUX0MW6Q
+- > 另外postgrespro于最近出了一本书《PostgreSQL 14 Internals》， https://edu.postgrespro.com/postgresql_internals-14_parts1-2_en.pdf
+  >> PostgreSQL 14 Internals https://postgrespro.com/community/books/internals
 
 ### PG待整理？
 
