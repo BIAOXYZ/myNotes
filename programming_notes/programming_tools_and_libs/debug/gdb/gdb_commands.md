@@ -230,6 +230,8 @@ GDB调试指南 https://www.yanbinghu.com/2019/04/20/41283.html  || https://gith
     (gdb) 
     ```
 
+gdb学习笔记 https://github.com/yifengyou/gdb
+
 ## 其他实战或配置参考部分(包含了一个.gdbinit设置的例子，看起来设置得更整洁，不过还是习惯了断点文件叫bps.cfg- -)
 
 ### 调试实战

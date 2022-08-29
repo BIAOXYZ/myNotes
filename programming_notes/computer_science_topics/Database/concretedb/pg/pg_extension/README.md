@@ -99,3 +99,5 @@ pg_query_state: Tool for query progress monitoring in PostgreSQL https://github.
 PgSQL · 特性分析 · Plan Hint http://mysql.taobao.org/monthly/2016/01/09/
 
 PostgreSQL SQL HINT的使用(pg_hint_plan) https://billtian.github.io/digoal.blog/2016/02/03/01.html
+
+PostgresML https://github.com/postgresml/postgresml
