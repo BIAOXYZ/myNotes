@@ -1,4 +1,9 @@
 
+8 小时转职 Golang 工程师(如果你想低成本学习 Go 语言) https://www.v2ex.com/t/876104
+```console
+视频链接： https://www.bilibili.com/video/BV1gf4y1r79E 文章链接: https://www.yuque.com/aceld/mo95lb/dsk886
+```
+
 go mod tidy 可能会修改指定的依赖版本号？ https://www.v2ex.com/t/854360
 
 女同事问了一个 golang 的技术问题，没答上来，溴大了 https://www.v2ex.com/t/773635

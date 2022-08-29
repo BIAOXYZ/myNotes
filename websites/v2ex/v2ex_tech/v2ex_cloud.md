@@ -1,4 +1,14 @@
 
+开源 k8s 的教程，全实战引导！顺带问各位大佬一个问题～ https://www.v2ex.com/t/876087
+```console
+这份教程的优点在于：
+- 教学镜像是基于 golang 编写的基础代码，只要有代码基础的人都能看懂！
+- 教学镜像做过多次优化，目前是用打包成二进制的方式运行在 base image 中，压缩到 dockerhub 中仅 10MB ！非常适合练习使用！
+- 实战代码很全，不是像其他教程一样理论说一大堆，最后来个 hello world 的 pod 。
+- 不仅是 k8s 的教程，后面会加上一些高级用法，例如 helm, k9s 等待。
+repository: https://github.com/guangzhengli/k8s-tutorials
+```
+
 Client-Go 免费视频教程来来来了。 https://www.v2ex.com/t/872451
 - > 视频地址：https://www.bilibili.com/video/BV1FW4y1m7qH
 
