@@ -25,6 +25,8 @@ Official Git mirror of the SQLite source tree https://github.com/sqlite/sqlite |
 Why SQLite Does Not Use Git https://sqlite.org/whynotgit.html
 - > SQLite does not use the Git version control system. SQLite uses Fossil instead, which is a version control system that was specifically designed and written to support SQLite.
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他较权威链接
 
 SQLite https://en.wikipedia.org/wiki/SQLite
@@ -41,11 +43,43 @@ SQLite权威指南 (The Definitive Guide to SQLite) https://wizardforcel.gitbook
     + > 在一些情况下SQLite可能不如大型数据库快，但大多数这些情况是可理解的。SQLite是一个内嵌式的数据库，设计用于中小规模的应用程序。这些限制是符合设计目的的。很多新用户错误地假设使用SQLite可以代替大型关系型数据库，这有时行，但有时不行，依赖于你准备用SQLite来做什么。一般情况下，SQLite在三个主要的方面具有局限性：
 - 第5章 设计和概念 https://wizardforcel.gitbooks.io/the-definitive-guide-to-sqlite/content/7.html
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 # SQLite SQL
 
 SQLite INSERT OR REPLACE使用 https://www.jianshu.com/p/bfa617a0b9b1
 
 SQLite 触发器（Trigger） https://www.runoob.com/sqlite/sqlite-trigger.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# SQLite 命令
+
+不需要进入sqlite3命令的方法 https://blog.csdn.net/zhouzhenhe2008/article/details/79407072
+- > `sqlite3 xxx.db "sql语句"`
+  >> 【[:star:][`*`]】 //notes：实际上这种方式不但能执行SQL（比如：`sqlite3 ./1234 "select * from mytable;"`），也可以执行命令（比如：`sqlite3 ./1234 ".tables"`）
+
+The SQLite command line https://datacarpentry.org/sql-socialsci/08-sqlite-command-line/index.html
+- > create a file `commands.sql` containing the following content:
+  ```console
+  result.csv
+  .mode csv
+  .output results.csv
+  .open SQL_SAFI.sqlite
+  SELECT * from Farms where A09_village='God';
+  ```
+- > run the sqlite3 program in the following way
+  ```sh
+  $ sqlite3 < commands.sql
+  ```
+  > Notice that there is no output to the screen and that the shell is closed. The results of running the query have been placed in the `results.csv` file.
+
+## 导入/导出
+
+SQLite - Import Data from a CSV File https://www.quackit.com/sqlite/tutorial/import_data_from_csv_file.cfm
+
+SQLite - Export Data to a CSV File https://www.quackit.com/sqlite/tutorial/export_data_to_csv_file.cfm
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 在 CMake 中使用 SQLite
 
@@ -67,6 +101,8 @@ cmake 如何引入本地已安装软件 https://www.jianshu.com/p/9bf66d8d306e
 
 How can I link CMake and SQLite without an external script? https://stackoverflow.com/questions/41640029/how-can-i-link-cmake-and-sqlite-without-an-external-script
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # SQLite连接池（是否需要都不一定，只是随便记一下）
 
 sqlite需要连接池吗？ https://segmentfault.com/q/1010000040020650/
@@ -74,6 +110,8 @@ sqlite需要连接池吗？ https://segmentfault.com/q/1010000040020650/
 sqlite连接池的简单实现 https://www.cnblogs.com/ngxianyu/archive/2013/06/08/3126543.html
 
 SQLite/C# Connection Pooling and Prepared Statement Confusion https://stackoverflow.com/questions/10703814/sqlite-c-connection-pooling-and-prepared-statement-confusion
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # SQLite新闻
 
@@ -86,9 +124,13 @@ Fedora Linux：计划将 RPM 数据库从 Berkeley DB 迁移到 SQLite https://w
 的树状递归select，也是一样的情况。反正切数据库是个巨坑
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他文章
 
 SQLite3 实践教程 https://linux.cn/article-13117-1.html
 - > SQLite 中有五种数据类型（实际上是 储存类别）：
 
 SQLite页缓冲区管理 https://www.cnblogs.com/amdb/p/4035614.html || https://blog.csdn.net/apple7912/article/details/101962813
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
