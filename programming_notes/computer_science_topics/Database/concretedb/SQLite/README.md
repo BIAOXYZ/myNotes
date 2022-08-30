@@ -54,6 +54,10 @@ SQLite 触发器（Trigger） https://www.runoob.com/sqlite/sqlite-trigger.html
 
 # SQLite 命令
 
+Command Line Shell For SQLite https://www.sqlite.org/cli.html
+- > **4.3. Dot-command execution**
+  * > The dot-commands are interpreted by the sqlite3.exe command-line program, not by SQLite itself. ***So none of the dot-commands will work as an argument to SQLite interfaces such as `sqlite3_prepare()` or `sqlite3_exec()`***.
+
 不需要进入sqlite3命令的方法 https://blog.csdn.net/zhouzhenhe2008/article/details/79407072
 - > `sqlite3 xxx.db "sql语句"`
   >> 【[:star:][`*`]】 //notes：实际上这种方式不但能执行SQL（比如：`sqlite3 ./1234 "select * from mytable;"`），也可以执行命令（比如：`sqlite3 ./1234 ".tables"`）
@@ -72,6 +76,31 @@ The SQLite command line https://datacarpentry.org/sql-socialsci/08-sqlite-comman
   $ sqlite3 < commands.sql
   ```
   > Notice that there is no output to the screen and that the shell is closed. The results of running the query have been placed in the `results.csv` file.
+
+5 Ways to Run an SQL Script from a File in SQLite https://database.guide/5-ways-to-run-sql-script-from-file-sqlite/
+- > The `cat` Command
+  ```sh
+  cat create_table.sql | sqlite3 Test.db
+  ```
+- > The `.read` Command
+  ```console
+  .read insert_data.sql
+  ```
+- > Use the `.read` Command Without Opening SQLite
+  ```sh
+  sqlite3 Test.db ".read insert_data.sql"
+  ```
+- > Redirect the Input to the Database when Connecting to SQLite
+  ```sh
+  sqlite3 Test.db < insert_data.sql
+  ```
+- > The `-init` Option
+  ```sh
+  sqlite3 Test.db -init insert_data.sql
+  ```
+  >> //notes：这个不是很好，因为执行完 sqlite3 命令行还是打开的状态。。。
+
+Execute SQLite script https://stackoverflow.com/questions/11643611/execute-sqlite-script
 
 ## 导入/导出
 
