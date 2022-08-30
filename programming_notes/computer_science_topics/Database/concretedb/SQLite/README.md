@@ -82,6 +82,14 @@ The SQLite command line https://datacarpentry.org/sql-socialsci/08-sqlite-comman
   ```sh
   cat create_table.sql | sqlite3 Test.db
   ```
+  >> 【[:star:][`*`]】 //notes：实际上不论是这个，还是下面的重定向方式，都无法解决一个问题：如果我的 sql 脚本是在程序里拼接成的，但是我又不想让这个脚本落盘（尽管我可以落盘后，执行一下，再删除），该怎么办。经过验证，用下面的办法：
+  ```sh
+  root# echo -e ".tables\n.tables\n.tables" | sqlite3 ./1234
+  mytable
+  mytable
+  mytable
+  ```
+  >>> //notes：如果拼接好后用 `os.system(cmd)` 或 `subprocess.call(cmd, shell=True)` 来执行的话，需要注意把 `echo` 的 `-e` 参数去掉。
 - > The `.read` Command
   ```console
   .read insert_data.sql
