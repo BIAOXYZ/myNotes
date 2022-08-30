@@ -8,6 +8,10 @@ PostgreSQL WAL 文件数量长期持续增加问题排查 https://mp.weixin.qq.c
 
 在PostgreSQL中构建基础类型 - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/129063238
 
+Hacking Postgres 内核系列之四 - 小楷的文章 - 知乎 https://zhuanlan.zhihu.com/p/492086787
+
+PostgreSQL内核-添加自定义系统函数 https://linbo-lin.github.io/2020/05/07/PostgreSQL%E5%86%85%E6%A0%B8-%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B3%BB%E7%BB%9F%E5%87%BD%E6%95%B0/
+
 ## 闪回
 
 从PostgreSQL实现Flashback谈如何内核开发
