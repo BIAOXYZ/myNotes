@@ -13,3 +13,5 @@ Greenplum 6.0： 从 OLAP 到 HTAP https://mp.weixin.qq.com/s/Z1MBsqMBZM0UI8dNAg
   Update:           7,000 tps
   ```
 - > 这个性能可以满足很多 OLTP 的业务场景。当然 Greenplum HTAP 的现阶段目标不是处理极致的 OLTP 场景，而是希望达到单个 PostgreSQL 的能力，根据该评测，目前 Greenplum 6.0 和单节点的 PostgreSQL 的OLTP能力在同一个数量级上。
+
+Greenplum ：基于 PostgreSQL 的分布式数据库内核揭秘 (上篇) https://www.infoq.cn/article/3ij7l8hvr2mxhqaqi2ra
