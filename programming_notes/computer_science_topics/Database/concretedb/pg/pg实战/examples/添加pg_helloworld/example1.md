@@ -1,5 +1,7 @@
 
 # `REL8_4_STABLE`
+- postgresql内核开发之HelloWorld入门 https://blog.csdn.net/postgres20/article/details/53366995
+- 如何向pg内核中添加函数 https://blog.csdn.net/chunchengli0734/article/details/101024616
 
 ```sh
 ri_triggers.c:256:12: warning: variable 'old_row' set but not used [-Wunused-but-set-variable]
@@ -13,11 +15,21 @@ make: *** [all] Error 2
 [pguser@a603a469073b postgres]$
 ```
 
+看起来是生成的 ***`src/backend/utils/fmgrtab.c`*** 里的函数名字有些问题，本来 Oid `9999` 那行函数名字应该是 `"helloworld"` 的，不知道为什么变成了 `"_null_"`。看了下生产这个文件的脚本 ***`src/backend/utils/Gen_fmgrtab.sh`***，一时没有细看下去，回头再说吧。
+```c
+  { 3774, "regdictionarysend", 1, true, false, regdictionarysend },
+  { 9999, "_null_", 0, false, false, _null_ },
+  /* dummy entry is easier than getting rid of comma after last real one */
+  /* (not that there has ever been anything wrong with *having* a
+     comma after the last field in an array initializer) */
+  { 0, NULL, 0, false, false, NULL }
+};
+```
+
 # `REL_12_STABLE` (`12.12`，也就是有 `src/include/catalog/pg_proc.dat` 的情形)
 
 ## 参考文章
 - PostgreSQL如何添加内核函数 https://mp.weixin.qq.com/s/0MxZXiororNBZLNxACR2ug || https://www.modb.pro/db/104291
-
 
 ```sh
 [pguser@a603a469073b postgres]$ psql -d postgres
