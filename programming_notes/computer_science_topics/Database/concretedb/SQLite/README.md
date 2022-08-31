@@ -163,10 +163,41 @@ Fedora Linux：计划将 RPM 数据库从 Berkeley DB 迁移到 SQLite https://w
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# 其他文章
+# SQLite类型
 
 SQLite3 实践教程 https://linux.cn/article-13117-1.html
 - > SQLite 中有五种数据类型（实际上是 储存类别）：
+
+## 反人类的动态类型列- -
+
+Datatypes In SQLite https://www.sqlite.org/datatype3.html
+- > **3. Type Affinity**
+  * > SQL database engines that use rigid typing will usually try to automatically convert values to the appropriate datatype. Consider this:
+    ```sql
+    CREATE TABLE t1(a INT, b VARCHAR(10));
+    INSERT INTO t1(a,b) VALUES('123',456);
+    ```
+
+SQLite3's dynamic typing https://stackoverflow.com/questions/2489936/sqlite3s-dynamic-typing
+
+**个人实验**：
+```console
+sqlite> .open ./12345
+sqlite> create table t (col1, col2);
+sqlite> insert into t values (1, 'a');
+sqlite> insert into t values (2, 2);
+sqlite> select * from t;
+1|a
+2|2
+sqlite> select typeof(col1), typeof(col2) from t;
+integer|text
+integer|integer
+sqlite> 
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他文章
 
 SQLite页缓冲区管理 https://www.cnblogs.com/amdb/p/4035614.html || https://blog.csdn.net/apple7912/article/details/101962813
 

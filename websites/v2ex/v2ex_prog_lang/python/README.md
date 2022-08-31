@@ -1,4 +1,11 @@
 
+你们说 Python 这个是 Bug 还是 Feature？ https://www.v2ex.com/t/876494
+- > [当年 1.6 亿美金估值的公司—— Digg 是如何被一句 Python 函数可变默参 毁掉的](https://www.v2ex.com/t/467817)
+- https://www.v2ex.com/t/467817
+  * > 我一个四五年没用过 python 的人都知道不宜用 mutable 做默认参数。
+  * > Python陷阱：为什么不能用可变对象作为默认参数的值 https://foofish.net/python-tricks.html
+  * > https://mg.pov.lt/objgraph/ 调试内存泄漏挺有用的, 前阵子升级碰到 celery 4.2 的一个内存泄漏问题, 光看代码真看不出来
+
 Python gui 的疑问 https://www.v2ex.com/t/875625
 
 【[:star:][`*`]】 Python for 循环的效率是这么差么？还是别的什么原因？ https://www.v2ex.com/t/869981
