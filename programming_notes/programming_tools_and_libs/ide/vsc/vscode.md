@@ -319,6 +319,13 @@ VSCode debugger conditional breakpoints https://stackoverflow.com/questions/4331
 
 VSCODE设置命令行参数，带参数调试程序（python的argv） https://blog.csdn.net/Wuli_jiejie/article/details/98342731
 
+VSCode -- how to set working directory for debugging a Python program https://stackoverflow.com/questions/38623138/vscode-how-to-set-working-directory-for-debugging-a-python-program
+- https://stackoverflow.com/questions/38623138/vscode-how-to-set-working-directory-for-debugging-a-python-program/55072246#55072246
+  * > In `launch.json`, specify a dynamic working directory (i.e. the directory where the currently-open Python file is located) using:
+    ```json
+    "cwd": "${fileDirname}"
+    ```
+
 ***--------------------------------------------------分割线--------------------------------------------------***
 
 ## vsc Python test
