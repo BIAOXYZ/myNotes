@@ -2,6 +2,68 @@
 # 1
 
 Postgresql 编写自定义 C 函数 https://zhmin.github.io/posts/postgresql-c-function/
+- > **前言**
+  * > postgresql 支持自定义函数，并且还支持多种语言进行编写， 极大的提高了可扩展性。postgresql 支持使用 pgSQL(postgresql提供的类sql语言)，python 和 c 语言来编写函数，本篇主要讲解 c 语言，因为它的性能是最好的。
+- > **示例**
+  * > 编写 c 函数分为三部分：
+    + > 编写 c 文件，定义函数实现
+    + > 编译程序，需要编译成共享库
+    + > 在 postgresql 中执行 CREATE FUNCTION注册函数
+  * > 下面展示一个简单的函数，用于两数相加。通过这个简单的例子，来看看操作流程。
+- > **编写函数**
+  * > 创建一个 `my_add_func.c` 文件，内容如下
+    ```c
+    #include "postgres.h"
+    #include "fmgr.h"
+
+    PG_MODULE_MAGIC;
+
+    PG_FUNCTION_INFO_V1(my_add_func);
+    Datum my_add_func(PG_FUNCTION_ARGS)
+    {
+        int32 a = PG_GETARG_INT32(0);
+        int32 b = PG_GETARG_INT32(1);
+        int64 result = a + b;
+        PG_RETURN_INT64(result);
+    }
+    ```
+  * > 这里面的函数很简单，只不过调用了一些莫名其妙的宏，所以会觉得疑惑。这些宏的原理在后面会讲到，这里先简单的介绍下作用。
+    + > `PG_MODULE_MAGIC` 宏必须要使用，后面编译生成的库才可以被 postgresql 加载。
+    + > `PG_FUNCTION_INFO_V1` 宏声明了函数的版本，这个也必须要使用，目前postgresql 只支持 v1 版本的函数。
+    + > `PG_FUNCTION_ARGS` 宏定义了参数类型和名称，等于 `FunctionCallInfo fcinfo`，这个函数名称会在取参数值会用到。
+    + > `PG_GETARG_INT32` 宏表示取出指定位置的参数，并且转换为 int32 类型。
+    + > `PG_RETURN_INT64` 宏表示将 int64 类型的数值，转换为Datum并且返回。
+- > **编译函数**
+  * > 上述的 c 文件，包含了 postgresql 里的头文件，所以在编译的时候需要指定头文件的位置。通过 `pg_config --includedir-server` 命令就可以找到。我是通过 yum 在 Centos 上装的 postgresql，执行情况如下：
+    ```sh
+    [root@host1]# /usr/pgsql-9.6/bin/pg_config --includedir-server
+    /usr/pgsql-9.6/include/server
+    ```
+  * > 然后执行编译命令，记住这个生成共享库（so 结尾的文件）的路径，在创建函数时会用到
+    ```
+    gcc -fPIC -c my_add_func.c -I/usr/pgsql-9.6/include/server/  # 生成my_add_func.o文件
+    gcc -shared -o my_add_func.so my_add_func.o            # 生成共享库
+    ```
+- > **创建函数**
+  * > 然后在 postgresql 命令行执行 `CREATE FUNCTION` 命令
+    ```sql
+    CREATE FUNCTION my_add(a integer, b integer) RETURNS integer
+         AS '/var/lib/pgsql/my_add_func.so', 'my_add_func' LANGUAGE C STRICT;
+    ```
+  * > 接下来我们尝试使用 `my_add` 函数
+    ```sql
+    test=# select my_add(1, 2);
+     my_add 
+    --------
+          3
+    (1 row)
+
+    test=# select my_add(id, price), id, price from orders ;
+     my_add | id | price 
+    --------+----+-------
+        124 |  1 |   123
+    (1 row)
+    ```
 
 ## 个人实战
 
