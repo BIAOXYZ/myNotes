@@ -116,3 +116,45 @@ postgres=# select (my_tuple_func(t1)).* from t1 where id = 1;
 
 postgres=#
 ```
+>> 【[:star:][`*`]】 //notes：额外试了下如何调试这个函数，也比较直观：
+1. 编译动态库的时候加上 `-g`。在本例子中即为：
+   ```sh
+   gcc -fPIC my_tuple_func.c -I`pg_config --includedir-server` -shared -o my_tuple_func.so -g
+   ```
+2. create function 语句不变。
+3. gdb attach 上进程之后断点直接打到函数上，即：
+   ```sh
+   (gdb) b my_tuple_func
+   Breakpoint 1 at 0x7fa9d98929ab: file my_tuple_func.c, line 8.
+   (gdb) c
+   Continuing.
+
+   ```
+4. 然后执行一个带这个函数的查询，就能看到在断点停住了，代码也出来了，可以开始单不调试了。
+   ```sql
+   postgres=# select (my_tuple_func(t1)).* from t1;
+
+   ```
+   ```sh
+   Breakpoint 1, my_tuple_func (fcinfo=0x2848748) at my_tuple_func.c:8
+   (gdb) bt
+   #0  my_tuple_func (fcinfo=0x2848748) at my_tuple_func.c:8
+   #1  0x0000000000700596 in ExecMakeFunctionResultSet (fcache=0x28481a0, econtext=0x28474b8, argContext=0x28510a0, isNull=0x28480f0, isDone=0x2848180) at execSRF.c:614
+   #2  0x000000000072fe36 in ExecProjectSRF (node=0x28473a0, continuing=false) at nodeProjectSet.c:175
+   #3  0x000000000072fce7 in ExecProjectSet (pstate=0x28473a0) at nodeProjectSet.c:105
+   #4  0x00000000006fd085 in ExecProcNodeFirst (node=0x28473a0) at execProcnode.c:445
+   #5  0x00000000006f1ffd in ExecProcNode (node=0x28473a0) at ../../../src/include/executor/executor.h:242
+   #6  0x00000000006f482b in ExecutePlan (estate=0x2847148, planstate=0x28473a0, use_parallel_mode=false, operation=CMD_SELECT, sendTuples=true, numberTuples=0, direction=ForwardScanDirection, dest=0x2888f20, execute_once=true) at execMain.c:1632
+   #7  0x00000000006f2632 in standard_ExecutorRun (queryDesc=0x2884ad8, direction=ForwardScanDirection, count=0, execute_once=true) at execMain.c:350
+   #8  0x00000000006f2463 in ExecutorRun (queryDesc=0x2884ad8, direction=ForwardScanDirection, count=0, execute_once=true) at execMain.c:294
+   #9  0x00000000008fa429 in PortalRunSelect (portal=0x27d1ca8, forward=true, count=0, dest=0x2888f20) at pquery.c:938
+   #10 0x00000000008fa0c6 in PortalRun (portal=0x27d1ca8, count=9223372036854775807, isTopLevel=true, run_once=true, dest=0x2888f20, altdest=0x2888f20, completionTag=0x7fff9da5e8f0 "") at pquery.c:779
+   #11 0x00000000008f40fc in exec_simple_query (query_string=0x276bcd8 "select my_tuple_func(t1) from t1;") at postgres.c:1214
+   #12 0x00000000008f836e in PostgresMain (argc=1, argv=0x2795e48, dbname=0x2795c80 "postgres", username=0x2769ab8 "pguser") at postgres.c:4281
+   #13 0x000000000084aef7 in BackendRun (port=0x278dbb0) at postmaster.c:4510
+   #14 0x000000000084a6ae in BackendStartup (port=0x278dbb0) at postmaster.c:4193
+   #15 0x0000000000846a52 in ServerLoop () at postmaster.c:1725
+   #16 0x0000000000846303 in PostmasterMain (argc=3, argv=0x2767a10) at postmaster.c:1398
+   #17 0x0000000000763625 in main (argc=3, argv=0x2767a10) at main.c:228
+   (gdb)
+   ```
