@@ -67,6 +67,27 @@ Postgresql 编写自定义 C 函数 https://zhmin.github.io/posts/postgresql-c-f
 - > **数据类型**
   * > 通过上面的例子，可以看到创建一个 c 函数并不难，不过还有些细节需要注意到，***就是数据是如何在 postgresql 和函数之间传递的***。
   * > postgresql 支持的数据类型有多种，基本类型 int，char，double 等，还有复杂类型，比如字符串，结构体等。***这些数据传递时都是由 `Datum` 类型表示，<ins>也就是指针类型</ins>***。指针长度根据平台不同而不一样，有32位或64位。那么它是如何能够表示这么多类型的数据呢。下面分为两种情形来分析，基本数据类型和复杂数据类型。
+- > **基本数据传递**
+  * > 基本数据类型包含 int8，int16，int32，int64，float等数值型。因为 `Datum` 的长度根据系统的不同，可能是 4个字节 或 8个字节。如果基本类型的长度小于等于 `Datum`，那么将它的值直接存储在 `Datum`。如果大于 `Datum`，就需要分配堆内存，然后将内存地址存储在 `Datum`。
+  * > 我们以 int16 类型的数值 `-1` 为例，它的二进制位 `1111 1111 1111 1111`。这里假设 `Datum` 的长度为 4 个字节，将其转换为 `Datum` 之后的二进制位 `0000 0000 0000 0000 1111 1111 1111 1111`。这里只是在高位填充0。当从 `Datum` 转换 int16 类型时，直接取对应的低位。这里转换规则和我们平时接触的不太一样，在 c 语言中如果是负数，会在高位填充1，正数才会填充0，目前还不太清楚原因。
+  * > 再来看看 int64 数据类型，`Int64GetDatum` 定义了转换规则。如果 `Datum` 的长度等于 8 个字节，那么就定义了 `USE_FLOAT8_BYVAL` 宏，也就是直接存储到 `Datum` 里。如果 `Datum` 的长度小于 8 个字节，那么则分配堆内存，然后将内存地址存储在 `Datum`。
+    ```c
+    #ifdef USE_FLOAT8_BYVAL
+    #define Int64GetDatum(X) ((Datum) (X))
+    #else
+    extern Datum Int64GetDatum(int64 X);
+    #endif
+
+    Datum Int64GetDatum(int64 X)
+    {
+        // 使用palloc分配堆内存，palloc的作用同malloc一样，在它基础之上增加了内存管理
+    	int64	   *retval = (int64 *) palloc(sizeof(int64));
+        // 设置堆内存值
+    	*retval = X;
+        // 将内存地址存储在Datum
+    	return PointerGetDatum(retval);
+    }
+    ```
 
 ## 个人实战
 
@@ -159,7 +180,7 @@ postgres=# select * from t1;
 (2 rows)
 
 postgres=#
-postgres=# select my_tuple_func(t1) from t1;;
+postgres=# select my_tuple_func(t1) from t1;
  my_tuple_func
 ---------------
  (hello,1)
