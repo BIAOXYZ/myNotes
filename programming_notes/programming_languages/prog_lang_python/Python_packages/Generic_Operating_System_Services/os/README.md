@@ -43,6 +43,28 @@ print('上上级目录')
 print(os.path.abspath(os.path.join(os.getcwd(), "../..")))
 ```
 
+Python3获取文件路径，文件名，文件类型 https://blog.csdn.net/bryanwang_3099/article/details/115217013
+```py
+import os
+file_path = "C:/Users/Public/yellow.jpg"
+
+# 获取文件所在目录和完整文件名
+dir_name, full_file_name = os.path.split(file_path)
+print("文件所在目录: {}".format(dir_name))
+print("完整文件名: {}".format(full_file_name ))
+
+# 获取不带后缀的文件名和文件类型
+file_name, file_ext = os.path.splittext(full_file_name)
+print("不带后缀的文件名: {}".format(file_name))
+print("文件类型（即文件后缀）: {}".format(file_ext))
+```
+```console
+文件所在目录: C:/Users/Public
+完整文件名: yellow.jpg
+不带后缀的文件名: yellow
+文件类型（即文件后缀）: .jpg
+```
+
 How to set the current working directory? [duplicate] https://stackoverflow.com/questions/1810743/how-to-set-the-current-working-directory/1810760
 - https://stackoverflow.com/questions/1810743/how-to-set-the-current-working-directory/34971949#34971949
   * > To set the working directory:
@@ -63,3 +85,30 @@ How do I find out my PYTHONPATH using Python? https://stackoverflow.com/question
     except KeyError:
         user_paths = []
     ```
+
+5.11 文件路径名的操作 https://python3-cookbook.readthedocs.io/zh_CN/latest/c05/p11_manipulating_pathnames.html
+```py
+>>> import os
+>>> path = '/Users/beazley/Data/data.csv'
+
+>>> # Get the last component of the path
+>>> os.path.basename(path)
+'data.csv'
+
+>>> # Get the directory name
+>>> os.path.dirname(path)
+'/Users/beazley/Data'
+
+>>> # Join path components together
+>>> os.path.join('tmp', 'data', os.path.basename(path))
+'tmp/data/data.csv'
+
+>>> # Expand the user's home directory
+>>> path = '~/Data/data.csv'
+>>> os.path.expanduser(path)
+'/Users/beazley/Data/data.csv'
+
+>>> # Split the file extension
+>>> os.path.splitext(path)
+('~/Data/data', '.csv')
+```
