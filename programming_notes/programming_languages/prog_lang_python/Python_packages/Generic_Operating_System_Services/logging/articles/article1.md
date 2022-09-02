@@ -21,3 +21,13 @@ logger = logging.getLogger("storage")
 2022-09-02 08:43:08,923 DEBUG sqlite_manager.py 35 2294580 echo '.mode csv\n.import ./input_data.csv t_input_data' | sqlite3 ./12345
 2022-09-02 08:43:08,933 DEBUG sqlite_manager.py 74 2294580 echo '.header off\n.mode csv\n.once ./output_data.csv\nselect * from t_input_data;' | sqlite3 ./12345
 ```
+```console
+# 更推荐在合适的地方加上中括号之类，更容易看，比如上面设置格式那句可以这么写：
+# logger_format = "[%(asctime)-15s %(levelname)s %(filename)s %(lineno)d %(process)d] %(message)s"
+# 打印效果更好：
+
+[2022-09-02 08:55:23,481 DEBUG sqlite_manager.py 35 2301177] echo '.mode csv\n.import ./input_data.csv t1' | sqlite3 ./12345
+[2022-09-02 08:55:23,492 DEBUG sqlite_manager.py 61 2301177] create table t_input_data (col1, col2, col3);
+[2022-09-02 08:55:23,501 DEBUG sqlite_manager.py 35 2301177] echo '.mode csv\n.import ./input_data.csv t_input_data' | sqlite3 ./12345
+[2022-09-02 08:55:23,511 DEBUG sqlite_manager.py 74 2301177] echo '.header off\n.mode csv\n.once ./output_data.csv\nselect * from t_input_data;' | sqlite3 ./12345
+```
