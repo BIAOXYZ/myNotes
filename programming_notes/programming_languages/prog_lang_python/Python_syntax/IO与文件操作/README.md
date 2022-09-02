@@ -48,3 +48,10 @@ def create_file_if_not_exist(local_file_path):
             os.makedirs(prefix_dirs)
         os.system(r"touch {}".format(abs_path))
 ```
+
+PS：补充下 `os.path.exists()` 和 `os.path.isdir()` 的区别（其实看名字大概就能想到了。。。）：
+
+pros and cons between os.path.exists vs os.path.isdir https://stackoverflow.com/questions/15077424/pros-and-cons-between-os-path-exists-vs-os-path-isdir
+- https://stackoverflow.com/questions/15077424/pros-and-cons-between-os-path-exists-vs-os-path-isdir/15077441#15077441
+  * > `os.path.exists` will also return True if there's a regular file with that name.
+  * > `os.path.isdir` will only return True if that path exists and is a directory, or a symbolic link to a directory.
