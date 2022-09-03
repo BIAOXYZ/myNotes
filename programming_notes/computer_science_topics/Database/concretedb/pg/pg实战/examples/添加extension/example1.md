@@ -58,6 +58,10 @@ EOF
 ```sh
 # 这部分 C 代码里 #ifdef 总觉得用得怪怪的（一般都是直接一行 PG_MODULE_MAGIC; 就可以了）。
 # 但是偏偏能 work（我改成 #ifndef 也还能work；我三行全注释掉也能 work。。。），先不管了就。
+# update: 三行全注释掉是不能work的，更具体地说：执行 \sf test_add_fun 还是能查到函数 test_add_fun，
+#   但是使用这个函数时（比如执行 select test_add_fun(2,3); 时）会报错
+#   ERROR:  incompatible library "/home/pguser/pgdir/pgsql/lib/test.so": missing magic block
+#   HINT:  Extension libraries are required to use the PG_MODULE_MAGIC macro.
 cat << EOF > test.c
 #include "postgres.h"
 #include "fmgr.h"
