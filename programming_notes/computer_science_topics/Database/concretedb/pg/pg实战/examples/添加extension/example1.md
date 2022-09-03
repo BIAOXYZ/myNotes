@@ -1,4 +1,6 @@
 
+>> 注：这种（通过扩展的方式）和直接通过加载自己编译的动态库来加载函数的方式（比如[这里](../加载动态库方式添加函数/example1.md)）实质其实是类似的，只是用扩展的方式更系统化一些，能做的事也更多些（比如还能在加载扩展的时候建表）。
+
 # 1
 
 ## 参考文章
@@ -97,6 +99,9 @@ Makefile  test--1.0.sql  test.c  test.control
 ```
 
 ```diff
+# 修改一下 contrib/ 目录下的代码库里本身的 Makefile。
+[pguser@a603a469073b test]$ cd ../..
+[pguser@a603a469073b postgres]$ vi contrib/Makefile
 [pguser@a603a469073b postgres]$ git diff
 diff --git a/contrib/Makefile b/contrib/Makefile
 index 92184ed..524459d 100644
@@ -214,8 +219,8 @@ postgres=#
 ## 其他参考文章
 PostgreSQL 扩展开发基础教程 http://joshuais.me/postgresql-extension-develop/ || https://github.com/nxy105/my-new-blog/blob/gh-pages/_posts/2017-04-20-postgresql-extension-develop.md
 - > **开发扩展**
-  * > 我们要开发什么
-    + > 我们打算在这个扩展中支持一个新的函数，用于为给定的数组中插入元素。如果插入的元素已经存在数组中，则不再重复插入，否则插入到数组的末尾。设计的函数如下：jsonb array_ext_append(jsonb arr, int elm)。这是我们扩展函数中最简单的一个，用于基础的教程再合适不过。
+  * > **我们要开发什么**
+    + > 我们打算在这个扩展中支持一个新的函数，用于为给定的数组中插入元素。如果插入的元素已经存在数组中，则不再重复插入，否则插入到数组的末尾。设计的函数如下：`jsonb array_ext_append(jsonb arr, int elm)`。这是我们扩展函数中最简单的一个，用于基础的教程再合适不过。
   * > **编写代码**
     + > 接下来，我们开始编写 `jsonb array_ext_append(jsonb arr, int elm)` 函数的实现代码。
       ```c
