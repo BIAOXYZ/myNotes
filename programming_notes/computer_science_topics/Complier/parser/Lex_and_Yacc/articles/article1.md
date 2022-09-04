@@ -7,6 +7,10 @@
 Writing Your Own Toy Compiler Using Flex, Bison and LLVM https://gnuu.org/2009/09/18/writing-your-own-toy-compiler/
 - > Update (March 19 2010): this article was updated for LLVM 2.6 thanks to a great patch by John Harrison. He rocks!
 
+Yacc 与 Lex 快速入门（词法分析和语法分析） https://blog.csdn.net/hguisu/article/details/7490027
+
+yacc / lex 在linux 下 使用指南 https://blog.csdn.net/ruglcc/article/details/7817619
+
 lex-tutorial https://github.com/jengelsma/lex-tutorial
 - > Source code for my lex/flex tutorial on [YouTube](https://www.youtube.com/watch?v=54bo1qaHAfk).
 
