@@ -35,3 +35,16 @@ Formal Verification of ROS-Based Robotic Applications Using Timed-Automata https
 Runtime verification of cryptographic protocols https://trustworthy.systems/publications/nicta_full_text/3924.pdf
 
 Publications of Runtime Verification, Inc. https://github.com/runtimeverification/publications
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 形式化验证
+
+如何学习形式化验证？ - 知乎 https://www.zhihu.com/question/329390814
+- 如何学习形式化验证？ - 肥猪千里冰封的回答 - 知乎 https://www.zhihu.com/question/329390814/answer/715787418
+- 如何学习形式化验证？ - Nodawa的回答 - 知乎 https://www.zhihu.com/question/329390814/answer/716866269
+- 如何学习形式化验证？ - namasikanam的回答 - 知乎 https://www.zhihu.com/question/329390814/answer/2642565108
+
+形式化方法书目 https://www.douban.com/doulist/239658/
+
+形式化方法导论 https://book.douban.com/subject/26928529/

@@ -39,6 +39,8 @@ https://zhuanlan.zhihu.com/p/22594180
 
 2PC之踵？是时候升级二阶段提交协议了 https://mp.weixin.qq.com/s/fHyvviHGBzYfOugPpbJ2lA
 
+分布式一致性算法 - 2PC、二阶段提交协议 https://www.bilibili.com/video/BV1hP411L7hS
+
 ## Seata
 
 由Seata看分布式事务取舍 https://www.jianshu.com/p/917cb4bdaa03 【:star:】
