@@ -1,6 +1,10 @@
 
 # 阿里
 
+再获国际顶会认可！阿里云数据库7篇论文入选VLDB https://mp.weixin.qq.com/s/CIRoulMIS3ZNegErrI5gQw
+- > 《Operon: An Encrypted Database for Ownership-Preserving Data Management》介绍了基于高级密码学、TEE可信硬件等技术实现的全加密功能背后的系统设计，提出了保护数据所有权的数据库范式(Owner-Preserving Database Paradigm)，是业界首个覆盖数据使用全生命周期，允许数据拥有者唯一控制其数据所有权的数据管理系统。阿里云数据库多款产品已实现全加密功能，是全球唯二实现了全加密数据库云服务商业化输出的云厂商之一。
+- > 作为全球数据库领导者，阿里云数据库团队近年来有50篇论文被国际顶级会议和期刊收录，获得了近千项专利，实现了存储计算分离、三层解耦、多主架构、HTAP、Serverless、一体化分布式、全加密、智能与自治化等创新能力。2020年和2021年，阿里云作为中国唯一的科技厂商连续两年成功进入Gartner全球数据库领导者象限。目前已服务互联网、政务、零售、金融、电信、制造、物流等多个领域的15万客户。IDC最新数据显示，阿里云位居中国关系型数据库市场第一。
+
 5篇论文入选国际顶会SIGMOD，阿里云&达摩院数据库技术研究再获认可 https://mp.weixin.qq.com/s/BsBglKMSAY7JmhAXvEM55A
 
 达摩院加持，阿里云数据库前沿技术研究获三大国际顶会认可 https://mp.weixin.qq.com/s/kQVzysuQOnbVOV1zgEitCA
