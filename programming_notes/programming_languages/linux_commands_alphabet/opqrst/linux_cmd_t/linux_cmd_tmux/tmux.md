@@ -15,7 +15,7 @@ Tmux 使用教程 https://www.ruanyifeng.com/blog/2019/10/tmux.html
 
 【[:star:][`*`]】 Linux终端复用神器-Tmux使用梳理 https://www.cnblogs.com/kevingrace/p/6496899.html
 - > **需要注意的几点**
-  * > 1）进入tmux面板后，一定要先按ctrl+b，然后松开，再按其他的组合键才生效。
+  * > 1）进入 `tmux` 面板后，一定要先按 `ctrl+b`，然后松开，再按其他的组合键才生效。
 - > **tmux的常规运维命令**
   ```sh
   2）默认创建一个会话，以数字命名。（不推荐）
@@ -31,6 +31,10 @@ Tmux 使用教程 https://www.ruanyifeng.com/blog/2019/10/tmux.html
   5）登录一个已知会话。即从终端环境进入会话。
   第一个参数a也可以写成attach。后面的aaa是会话名称。
   [root@Centos6 ~]# tmux a -t aaa 
+
+  6）退出会话不是关闭：
+  登到某一个会话后，依次按键ctrl-b + d，这样就会退化该会话，但不会关闭会话。
+  如果直接ctrl + d，就会在退出会话的通话也关闭了该会话！
   ```
 - > **tmux的远程批量操作的shell脚本**
   * > 在使用SSH或telnet远程连接服务器时，可能都遇到为一些长时间运行的任务而头疼，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为他们执行的时间太长了。必须等待它执行完毕，在此期间可不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。也许 `nohup` 命令可以达到这个目的，如果程序的标准输出/标准错误是终端，`nohup` 默认将其重定向到 `nohup.out` 文件。值得注意的是 `nohup` 命令只是使得程序忽略 `SIGHUP` 信号，还需要使用标记 `&` 把它放在后台运行。
@@ -85,6 +89,14 @@ Tmux 使用教程 https://www.ruanyifeng.com/blog/2019/10/tmux.html
     ssh -p22 root@$i 'tmux new -d -s kevin_session && tmux send -t kevin_session '/usr/local/bin/main' ENTER'
     done
     ```
+
+tmux常用命令与快捷键 https://www.jianshu.com/p/71999b35ead7
+- > **修改tmux的组合键**
+- > **session指的是按下tmux命令后 存在的连接便是session**
+- > **window在session里，可以有N个window，并且window可以在不同的session里移动**
+- > **pane在window里，可以有N个pane，并且pane可以在不同的window里移动、合并、拆分**
+
+tmux常用命令 https://www.cnblogs.com/lizhang4/p/7325086.html
 
 Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixin.qq.com/s/sc5XKrwrDh6RD1HCM1D1PQ
 - 回复里的：
