@@ -341,3 +341,7 @@ Docker Pattern: The Build Container https://medium.com/@alexeiled/docker-pattern
 Build, Package, and Run Spring Boot Apps With Docker https://dzone.com/articles/build-package-and-run-spring-boot-apps-with-docker
 
 【docker官方搞得，目前还是预览阶段，可以关注下】 Development Environments Preview https://docs.docker.com/desktop/dev-environments/
+
+how to rsync from a host computer to docker container using docker cp https://stackoverflow.com/questions/45723891/how-to-rsync-from-a-host-computer-to-docker-container-using-docker-cp
+- https://stackoverflow.com/questions/45723891/how-to-rsync-from-a-host-computer-to-docker-container-using-docker-cp/45725191#45725191
+  >> //notes：项目大了以后每次都 `docker cp` 全量复制的话，既慢又对磁盘不好，于是想到能不能增量复制。上面这个回答应该是给了一些思路（核心是要 `-v` 挂载，这样其实等价于在两个主机磁盘目录上 `rsync`）。但是我实在是太忙了，回头试吧。

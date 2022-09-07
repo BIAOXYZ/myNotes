@@ -13,6 +13,12 @@ Big Data, Hadoop, and Spark Basics https://learning.edx.org/course/course-v1:IBM
 
 Spark 2.2.x 中文官方参考文档 https://github.com/jackiehff/spark-reference-doc-cn/blob/master/index.rst || https://spark-reference-doc-cn.readthedocs.io/zh_CN/latest/index.html
 
+spark https://blog.csdn.net/lisenyeahyeah/category_8281549.html
+- Spark-SQL解析 https://blog.csdn.net/lisenyeahyeah/article/details/83539105
+- Spark-SQL绑定 https://blog.csdn.net/lisenyeahyeah/article/details/83587705
+- Spark-SQL优化 https://blog.csdn.net/lisenyeahyeah/article/details/89095441
+- Spark-SQL物理执行 https://blog.csdn.net/lisenyeahyeah/article/details/89331669
+
 # PySpark
 
 子雨大数据之Spark入门教程(Python版) http://dblab.xmu.edu.cn/blog/1709-2/
