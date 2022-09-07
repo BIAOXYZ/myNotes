@@ -14,8 +14,17 @@ CTF Wiki https://github.com/ctf-wiki/ctf-wiki/ || https://ctf-wiki.github.io/ctf
 # PKCS
 
 PKCS https://en.wikipedia.org/wiki/PKCS || 公钥密码学标准 https://zh.wikipedia.org/wiki/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A0%87%E5%87%86
+- > PKCS #5 Password-based Encryption Standard See RFC 8018 and [`PBKDF2`](https://en.wikipedia.org/wiki/PBKDF2).
 - PKCS 11 https://en.wikipedia.org/wiki/PKCS_11
   * > The correct title of this article is `PKCS #11`. The omission of the `#` is due to technical restrictions.
+
+PBKDF2 https://cryptobook.nakov.com/mac-and-key-derivation/pbkdf2
+- > PBKDF2 is a simple cryptographic key derivation function, which is resistant to dictionary attacks and rainbow table attacks. It is based on iteratively deriving HMAC many times with some padding. The PBKDF2 algorithm is described in the Internet standard RFC 2898 (PKCS #5).
+- > PBKDF2 takes several input parameters and produces the derived key as output:
+  ```console
+  key = pbkdf2(password, salt, iterations-count, hash-function, derived-key-len)
+  ```
+  >> 【[:star:][`*`]】 //notes：其实 PBKDF 的核心就是把 password 和一个 salt 放到哈希函数里，迭代制定的轮数，然后从最后结果截取一定位数作为输出的密钥。
 
 # Library
 
