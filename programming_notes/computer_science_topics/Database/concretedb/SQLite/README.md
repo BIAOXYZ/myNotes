@@ -195,6 +195,42 @@ integer|integer
 sqlite> 
 ```
 
+### 一大坏处就是有些SQL语义都不正常了
+
+What is the sqlite default column type? https://stackoverflow.com/questions/36782671/what-is-the-sqlite-default-column-type
+- https://stackoverflow.com/questions/36782671/what-is-the-sqlite-default-column-type/49574690#49574690
+  * > https://www.sqlite.org/datatype3.html
+    ```console
+    3.1. Determination Of Column Affinity
+    If the declared type for a column contains the string "BLOB" or if no type is specified then the column has affinity BLOB.
+    ```
+    > So we can assume that default type is a `BLOB`.
+
+***下面这个例子就说明了如果没有显式指定类型，又恰好被 type affinity 搞成了 `BLOB`，那么 `where` 过滤就失效了。***
+```console
+sqlite> .open 12345
+sqlite> .table
+t1            t_input_data
+sqlite> .schema
+CREATE TABLE t1 (row int, col int, val text);
+CREATE TABLE t_input_data (col1, col2, col3);
+sqlite> 
+sqlite> select * from t1;
+7|8|9
+8|9|10
+9|10|11
+sqlite> select * from t1 where row > 8;
+9|10|11
+sqlite> select * from t_input_data;
+7|8|9
+8|9|10
+9|10|11
+sqlite> select * from t_input_data where col1 > 8;
+7|8|9
+8|9|10
+9|10|11
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他文章
