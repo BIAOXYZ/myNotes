@@ -67,6 +67,9 @@ https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%8
 
 https://www.cnblogs.com/craftor/archive/2012/11/04/2754149.html
 
+Can git do a diff of the working copy with stash https://stackoverflow.com/questions/8058611/can-git-do-a-diff-of-the-working-copy-with-stash
+- https://stackoverflow.com/questions/8058611/can-git-do-a-diff-of-the-working-copy-with-stash/8058684#8058684
+  * > If it was your most recent stash, `git diff stash@{0}` will do it. If not, you can use `git stash list` to get the index of which stash you want to compare to.
 
 你可能不知道的关于 Git stash 的技巧 - KenChoi的文章 - 知乎 http://zhuanlan.zhihu.com/p/33435204
 
