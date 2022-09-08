@@ -98,6 +98,8 @@ SQLiteC++ https://github.com/SRombauts/SQLiteCpp || http://srombauts.github.io/S
 
 sqlite3 --- SQLite 数据库 DB-API 2.0 接口模块 https://docs.python.org/zh-cn/3/library/sqlite3.html
 
+解决Python3 No module named '_sqlite3'错误 https://www.jianshu.com/p/dd4532457b9f
+
 使用SQLite https://www.liaoxuefeng.com/wiki/1016959663602400/1017801751919456
 
 How to set SQLite isolation levels, using Python https://stackoverflow.com/questions/34000868/how-to-set-sqlite-isolation-levels-using-python

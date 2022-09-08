@@ -116,6 +116,13 @@ SQLite - Import Data from a CSV File https://www.quackit.com/sqlite/tutorial/imp
 
 SQLite - Export Data to a CSV File https://www.quackit.com/sqlite/tutorial/export_data_to_csv_file.cfm
 
+## 其他
+
+sqlite显示查询所消耗时间 https://www.cnblogs.com/ftrako/p/5294691.html
+```console
+sqlite>.timer on　　　　　　　　// 打开显示执行操作所消耗时间
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 在 CMake 中使用 SQLite
