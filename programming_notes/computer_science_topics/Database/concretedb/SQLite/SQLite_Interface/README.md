@@ -88,6 +88,8 @@ How do I check in SQLite whether a table exists? https://stackoverflow.com/quest
     ```
 - https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists/1604121#1604121
 
+How to count number of columns in a table in SQLITE? https://stackoverflow.com/questions/4301320/how-to-count-number-of-columns-in-a-table-in-sqlite
+
 # C++
 
 SQLiteC++ https://github.com/SRombauts/SQLiteCpp || http://srombauts.github.io/SQLiteCpp/
