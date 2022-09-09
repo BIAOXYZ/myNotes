@@ -38,3 +38,16 @@ SQLite performance tuning https://gist.github.com/phiresky/978d8e204f77feaa0ab5c
 Sqlite大批量导入数据提高效率的几种方式 https://www.cnblogs.com/HPAHPA/articles/7662268.html
 
 Fast Bulk Inserts into SQLite http://blog.quibb.org/2010/08/fast-bulk-inserts-into-sqlite/
+- > **Inserts within a Transaction**
+- > **PRAGMA Statements**
+  * > PRAGMA statements control the behavior of SQLite as a whole. They can be used to tweak options such as how often the data is flushed to disk of the size of the cache. These are some that are commonly used for performance. The SQLite documentation fully explains what they do and the implications of using them. For example, synchronous off will cause SQLite to not stop and wait for the data to get written to the hard drive. In the event of a crash or power failure, it is more likely the database could be corrupted.
+    ```c
+    sqlite3_exec(mDb, "PRAGMA synchronous=OFF", NULL, NULL, &errorMessage);
+    sqlite3_exec(mDb, "PRAGMA count_changes=OFF", NULL, NULL, &errorMessage);
+    sqlite3_exec(mDb, "PRAGMA journal_mode=MEMORY", NULL, NULL, &errorMessage);
+    sqlite3_exec(mDb, "PRAGMA temp_store=MEMORY", NULL, NULL, &errorMessage);
+    ```
+    >> //notes：最关键的是第一个 `PRAGMA synchronous = OFF`，也就是关闭同步写。其他三个还没试。
+    >>> //notes2：实际上 ***关闭同步写 + 开启事务 + Prepared语句*** 三个优化一上就基本已经够用了。
+- > **Prepared Statements**
+- > **Storing Data as Binary Blob**
