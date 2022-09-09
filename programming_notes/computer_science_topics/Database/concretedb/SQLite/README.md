@@ -116,6 +116,12 @@ SQLite - Import Data from a CSV File https://www.quackit.com/sqlite/tutorial/imp
 
 SQLite - Export Data to a CSV File https://www.quackit.com/sqlite/tutorial/export_data_to_csv_file.cfm
 
+How to use SQLite3 C interface to load CSV file into a main memory database? https://stackoverflow.com/questions/36046828/how-to-use-sqlite3-c-interface-to-load-csv-file-into-a-main-memory-database
+- https://stackoverflow.com/questions/36046828/how-to-use-sqlite3-c-interface-to-load-csv-file-into-a-main-memory-database/36165138#36165138
+  * > The SQLite 3 C - API can be used to import csv into an Sqlite3 database.
+    + > Your C code needs to open the CSV file, read in each line of the CSV file, making sure to store the column values (in the current row) in an appropriate container (i.e. column boundaries determined by comma separator).
+    + > These column values can be bound to parameters in a prepared statement and then committed to the database. Here is a useful link: http://blog.quibb.org/2010/08/fast-bulk-inserts-into-sqlite/
+
 ## 其他
 
 sqlite显示查询所消耗时间 https://www.cnblogs.com/ftrako/p/5294691.html

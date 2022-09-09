@@ -36,3 +36,5 @@ Improve INSERT-per-second performance of SQLite https://stackoverflow.com/questi
 SQLite performance tuning https://gist.github.com/phiresky/978d8e204f77feaa0ab5cca08d2d5b27
 
 Sqlite大批量导入数据提高效率的几种方式 https://www.cnblogs.com/HPAHPA/articles/7662268.html
+
+Fast Bulk Inserts into SQLite http://blog.quibb.org/2010/08/fast-bulk-inserts-into-sqlite/
