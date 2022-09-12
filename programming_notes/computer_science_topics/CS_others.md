@@ -3,6 +3,8 @@
 
 ## os project
 
+OS67 https://github.com/SilverRainZ/OS67
+
 陈莉君教授《Linux内核分析与应用》课程课件、动手实践源代码、实验手册、实验源代码 https://github.com/ljrcore/linuxmooc
 -> Linux内核之旅网站 http://kerneltravel.net/
 -> Linux内核之旅微信公众号
