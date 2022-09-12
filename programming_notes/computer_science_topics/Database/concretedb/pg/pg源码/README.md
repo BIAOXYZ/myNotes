@@ -72,6 +72,13 @@ PostgreSQL执行引擎简介 http://www.leehao.org/postgresql-executioneng/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 那海蓝蓝
+
+数据库 https://blog.csdn.net/fly2nn/category_806804.html
+- 深入理解缓冲区（九） https://blog.csdn.net/fly2nn/article/details/6854316
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # mingjie https://cloud.tencent.com/developer/user/2061863
 
 Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/article/2000622

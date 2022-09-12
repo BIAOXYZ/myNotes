@@ -86,3 +86,26 @@ MySQL ifnull()函数 https://www.yiibai.com/mysql/ifnull.html
 # 其他
 
 python写多行sql换行，并传递参数 https://blog.csdn.net/qiudechao1/article/details/89150712
+
+## 执行计划缓存
+
+执行计划缓存 https://docs.pingcap.com/zh/tidb/v5.4/sql-prepared-plan-cache
+- > TiDB 支持对 `Prepare` / `Execute` 请求的执行计划缓存。其中包括以下两种形式的预处理语句：
+- > 当开启执行计划缓存后，每条 Prepare 语句的第一次 Execute 会检查当前查询是否可以使用执行计划缓存，如果可以则将生成的执行计划放进一个由 LRU 链表构成的缓存中；在后续的 Execute 中，会先从缓存中获取执行计划，并检查是否可用，如果获取和检查成功则跳过生成执行计划这一步，否则重新生成执行计划并放入缓存中。
+- > LRU 链表是设计成 session 级别的缓存，因为 Prepare / Execute 不能跨 session 执行。LRU 链表的每个元素是一个 key-value 对，value 是执行计划，key 由如下几部分组成：
+  * > 执行 Execute 时所在数据库的名字；
+  * > Prepare 语句的标识符，即紧跟在 PREPARE 关键字后的名字；
+  * > 当前的 schema 版本，每条执行成功的 DDL 语句会修改 schema 版本；
+  * > 执行 Execute 时的 SQL Mode；
+  * > 当前设置的时区，即系统变量 time_zone 的值；
+  * > 系统变量 sql_select_limit 的值；
+- > key 中任何一项变动（如切换数据库，重命名 `Prepare` 语句，执行 DDL，或修改 SQL Mode / time_zone 的值），或 LRU 淘汰机制触发都会导致 Execute 时无法命中执行计划缓存。
+- > 成功从缓存中获取到执行计划后，TiDB 会先检查执行计划是否依然合法，如果当前 Execute 在显式事务里执行，并且引用的表在事务前序语句中被修改，而缓存的执行计划对该表访问不包含 UnionScan 算子，则它不能被执行。
+- > 在通过合法性检测后，会根据当前最新参数值，对执行计划的扫描范围做相应调整，再用它执行获取数据。
+
+谈一谈SQL Server中的执行计划缓存（上） https://www.cnblogs.com/CareySon/archive/2013/05/04/plancacheinsqlserver.html
+
+MySQL · 特性分析 · 执行计划缓存设计与实现 http://mysql.taobao.org/monthly/2016/09/04/ || https://developer.aliyun.com/article/71928
+
+执行计划缓存 - 晓彬SQL的文章 - 知乎 https://zhuanlan.zhihu.com/p/360390117
+- > 计划缓存是一个典型的 Key-Value 结构，Key 就是参数化后的 SQL 字符串，Value 就是该条 SQL 所对应的执行计划。在 OceanBase 数据库的计划缓存中，SQL 的执行计划可以分为本地计划、远程计划和分布式计划三种类型。在计划缓存中，同一条 SQL 根据其需要访问的数据不同，可能同时具有三种执行计划。
