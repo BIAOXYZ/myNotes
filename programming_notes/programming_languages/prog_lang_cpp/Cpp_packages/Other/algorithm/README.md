@@ -131,6 +131,8 @@ random_shuffle 和 shuffle的区别 https://www.jianshu.com/p/9613c764447f
 
 # 其他
 
+Conditionally replace values in a vector in C++ https://www.techiedelight.com/conditionally-replace-values-in-a-vector-in-cpp/
+
 ## min、max相关
 
 C++数组或vector求最大值最小值 https://www.cnblogs.com/Tang-tangt/p/9352093.html

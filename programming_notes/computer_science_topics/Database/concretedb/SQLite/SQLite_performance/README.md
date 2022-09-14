@@ -51,3 +51,9 @@ Fast Bulk Inserts into SQLite http://blog.quibb.org/2010/08/fast-bulk-inserts-in
     >>> //notes2：实际上 ***关闭同步写 + 开启事务 + Prepared语句*** 三个优化一上就基本已经够用了。
 - > **Prepared Statements**
 - > **Storing Data as Binary Blob**
+
+关闭SQLite3中的journal暂存档 https://blog.csdn.net/chinaclock/article/details/50358439
+- > 第一种方法:在系统开机后第一次开启或每一次使用SQLite数据库时，先检查是否已经存在journal档案了，如果是则透过程序自动去删除该journal档案。但是这有个问题，因为自动删除该journal档案，导致没有Rollback (还原)作用，无法保障数据完整与一致性。缺点二:有时候会发生程序无法自动删除(如:journal档案严重损毁)，而导致上面的问题(无法开启数据库)[问题1]再度发生。
+- > 第二种方法:使用"`PRAGMA journal_mode = OFF`"指令，这个指令能关闭自动产生journal暂存档动作。但是如此一来当在写入数据库的过程，一旦发生意外状况，将会导致SQLite数据库无法保障数据完整与一致性。***缺点二:journal_mode设定为OFF时，无法使用交易模式(Transaction)进行操作***。第二种方法的缺点二在如果需要使用交易模式(Transaction)进行操作时，可以透过"`PRAGMA journal_mode = DELETE`"指令，修改回原本的journal模式(journal_mode)，就可以使用交易模式(Transaction)。
+
+Sqlite3的synchronous的模式选择 https://blog.csdn.net/chinaclock/article/details/48622243
