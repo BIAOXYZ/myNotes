@@ -44,6 +44,8 @@ RAID https://zh.wikipedia.org/wiki/RAID
 
 关于存储技术的入门科普 https://www.ithome.com/0/500/495.htm
 
+存储技术的前世今生：从打孔卡到硬盘，信息技术爆炸式发展 https://www.ithome.com/0/640/888.htm
+
 ## 块存储 vs 文件存储 vs 对象存储
 
 块存储、文件存储、对象存储这三者的本质差别是什么？ - 知乎 https://www.zhihu.com/question/21536660

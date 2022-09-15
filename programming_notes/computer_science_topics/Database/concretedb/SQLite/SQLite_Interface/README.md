@@ -47,7 +47,42 @@ unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questi
 在SQLite数据库中存储64位无符号整数，既有趣又有益 https://juejin.cn/post/7114625032919203848
 - Storing 64-bit unsigned integers in SQLite databases, for fun and profit http://ivory.idyll.org/blog/2022-storing-ulong-in-sqlite-sourmash.html
 
-SQLite, 64-bit integers, and the impossible number http://jakegoulding.com/blog/2011/02/06/sqlite-64-bit-integers/
+【[:star:][`*`]】 SQLite, 64-bit integers, and the impossible number http://jakegoulding.com/blog/2011/02/06/sqlite-64-bit-integers/
+- > We recently tackled an issue that seemed rather impossible – an unsigned 64-bit value was greater than the maximum value that a 64-bit value can hold. What unfolded was a dark, gritty look at the underbelly of everything we hold dear (or a normal debugging session, as we like to call them).
+- > First off, lets create a table with some big numbers:
+  ```sql
+  CREATE TABLE big_numbers (i INTEGER, r REAL, t TEXT, b BLOB);
+  INSERT INTO big_numbers VALUES (9223372036854775807, 9223372036854775807, 9223372036854775807, 9223372036854775807); -- 2^63 - 1
+  INSERT INTO big_numbers VALUES (9223372036854775808, 9223372036854775808, 9223372036854775808, 9223372036854775808); -- 2^63
+  ```
+- > Let’s sanity check our data to make sure it looks like what we would expect:
+  ```sql
+  > SELECT * FROM big_numbers;
+  i                     r                     t                     b
+  --------------------  --------------------  --------------------  --------------------
+  9223372036854775807   9.22337203685478e+18  9223372036854775807   9223372036854775807
+  9.22337203685478e+18  9.22337203685478e+18  9.22337203685478e+18  9.22337203685478e+18
+  ```
+- > Huh. We definitely were not expecting most of those floating point numbers, so let’s see what types are being returned:
+  ```sql
+  > SELECT typeof(i),typeof(r),typeof(t),typeof(b) FROM big_numbers;
+  typeof(i)   typeof(r)   typeof(t)   typeof(b)
+  ----------  ----------  ----------  ----------
+  integer     real        text        integer
+  real        real        text        real
+  ```
+- > Sure enough, the numeric types in the second row are all reals. Let’s do a nice simple addition operation on our data:
+  ```sql
+  > SELECT i+1,r+1,t+1,b+1 FROM big_numbers;
+  i+1                   r+1                   t+1                   b+1
+  --------------------  --------------------  --------------------  --------------------
+  -9223372036854775808  9.22337203685478e+18  -9223372036854775808  -9223372036854775808
+  9.22337203685478e+18  9.22337203685478e+18  9.22337203685478e+18  9.22337203685478e+18
+  ```
+- > Woah, what happened here? Those familiar with signed and unsigned integers are already nodding and going “Mmm-hmm”. For everyone else, I suggest brushing up on [two’s compliment](http://en.wikipedia.org/wiki/Two's_complement) notation. Suffice it to say that integers are usually represented by a fixed number of bits, and once you run out of bits you roll over back to the beginning, in this case a large negative number.
+- > As it turns out, SQLite is pretty straight-forward about this. From the [datatype reference](http://www.sqlite.org/datatype3.html) in SQLite (emphasis mine): `INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.`
+- > That is, you can only store values from `-2**63` to (`2**63-1`). What does SQLite do for a value outside of this range? As we saw earlier, it switches over into floating point. Again, quoting from the SQLite reference: `REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.`
+- > Many programmers are familiar with this type under the name [double](http://en.wikipedia.org/wiki/Double_precision_floating-point_format).
 
 ## 其他接口
 
