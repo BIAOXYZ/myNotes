@@ -11,5 +11,8 @@
 - > Another option is to exclude specific workspace directories from the VS Code file watcher with the `files.watcherExclude` [setting](https://code.visualstudio.com/docs/getstarted/settings).
 
 VSCode出现"Visual Studio Code is unable to watch for file changes in this large workspace"警告的解决方法 https://blog.csdn.net/davidhopper/article/details/79620425
+- > 今天，在使用VSCode打开Apollo项目文件夹时，弹出一条警告信息：“`Visual Studio Code is unable to watch for file changes in this large workspace`”，如下图所示：
+- > 上述内容的大意是指，目前文件监控的实际数目已超出当前设置值。可以通过修改配置文件的方式，增加文件监控数目，来避免出现警告信息。524288是可设置的最大文件监控数目，一般情况下不应当设置这么大的值，因为每监控一个文件大约会消耗540字节（32位机）或1kB（64位机）的内存，监控524288个文件则大约会消耗256MB（32位机）或512MB（64位机）的内存。
+- > 下面将操作方法记录下来，以便今后备查。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

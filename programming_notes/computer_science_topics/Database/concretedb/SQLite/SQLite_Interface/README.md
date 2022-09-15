@@ -84,6 +84,9 @@ unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questi
 - > That is, you can only store values from `-2**63` to (`2**63-1`). What does SQLite do for a value outside of this range? As we saw earlier, it switches over into floating point. Again, quoting from the SQLite reference: `REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.`
 - > Many programmers are familiar with this type under the name [double](http://en.wikipedia.org/wiki/Double_precision_floating-point_format).
 
+How to read Int64 values from sqlite database? https://stackoverflow.com/questions/17858652/how-to-read-int64-values-from-sqlite-database
+- https://stackoverflow.com/questions/17858652/how-to-read-int64-values-from-sqlite-database/17860562#17860562
+
 ## 其他接口
 
 How do I check in SQLite whether a database exists C# https://stackoverflow.com/questions/21159790/how-do-i-check-in-sqlite-whether-a-database-exists-c-sharp
