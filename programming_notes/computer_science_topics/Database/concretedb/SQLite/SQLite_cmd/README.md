@@ -57,11 +57,23 @@ The SQLite command line https://datacarpentry.org/sql-socialsci/08-sqlite-comman
 
 Execute SQLite script https://stackoverflow.com/questions/11643611/execute-sqlite-script
 
-## 导入/导出
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 导入/导出相关命令
 
 SQLite - Import Data from a CSV File https://www.quackit.com/sqlite/tutorial/import_data_from_csv_file.cfm
+```console
+.mode csv
+.import /Users/quackit/sqlite/dumps/genres.csv Genres
+```
 
 SQLite - Export Data to a CSV File https://www.quackit.com/sqlite/tutorial/export_data_to_csv_file.cfm
+```console
+.header on
+.mode csv
+.once /Users/quackit/sqlite/dumps/artists.csv
+SELECT * FROM Artists;
+```
 
 How to use SQLite3 C interface to load CSV file into a main memory database? https://stackoverflow.com/questions/36046828/how-to-use-sqlite3-c-interface-to-load-csv-file-into-a-main-memory-database
 - https://stackoverflow.com/questions/36046828/how-to-use-sqlite3-c-interface-to-load-csv-file-into-a-main-memory-database/36165138#36165138
@@ -69,7 +81,38 @@ How to use SQLite3 C interface to load CSV file into a main memory database? htt
     + > Your C code needs to open the CSV file, read in each line of the CSV file, making sure to store the column values (in the current row) in an appropriate container (i.e. column boundaries determined by comma separator).
     + > These column values can be bound to parameters in a prepared statement and then committed to the database. Here is a useful link: http://blog.quibb.org/2010/08/fast-bulk-inserts-into-sqlite/
 
-## 其他
+## 导入数据不带header
+
+csv import without header row https://sqlite.org/forum/forumpost/9366feb243
+- (2) By Larry Brasfield (LarryBrasfield) on 2020-06-10 01:31:32
+  * > Study this session scrape:
+    ```sh
+    sqlite> create table Pets (name text, species text);
+    sqlite> insert into Pets values('Fido', 'dog');
+    sqlite> insert into Pets values('Fluffy', 'cat');
+    sqlite> insert into Pets values('Hiss', 'serpent');
+    sqlite> .mode csv
+    sqlite> .header on
+    sqlite> .once pets.csv
+    sqlite> select * from Pets;
+    sqlite> create table Beasts (name text, species text);
+    sqlite> .import --csv --skip 1 pets.csv Beasts
+    sqlite> select * from Beasts;
+    name,species
+    Fido,dog
+    Fluffy,cat
+    Hiss,serpent
+    sqlite>
+    ```
+
+How do I use the SQLite CLI's "--skip 1" option? https://stackoverflow.com/questions/61981598/how-do-i-use-the-sqlite-clis-skip-1-option
+- https://stackoverflow.com/questions/61981598/how-do-i-use-the-sqlite-clis-skip-1-option/61981659#61981659
+  * > According to the sqlite release notes, the `--skip` option was implemented in `3.32.0`:
+  * > SQLite Release `3.32.0` On 2020-05-29 ... 9. Enhancements to the CLI: (a) Add options to the `.import` command: `--csv`, `--ascii`, `--skip`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他
 
 sqlite显示查询所消耗时间 https://www.cnblogs.com/ftrako/p/5294691.html
 ```console
