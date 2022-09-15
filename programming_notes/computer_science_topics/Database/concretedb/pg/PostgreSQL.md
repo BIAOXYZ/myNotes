@@ -260,48 +260,6 @@ C 中调用 PostgreSQL 内置动态加载函数的方法
 http://blog.csdn.net/davidzwb/article/details/53172453
 ```
 
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
-# PGXC
-
-## pgxc官方
-
-Postgres-XC https://wiki.postgresql.org/wiki/Postgres-XC
-
-~~Postgres-XC https://sourceforge.net/projects/postgres-xc/~~  -->  // 从2015年开始迁移到了Github，并改名为`pgx2`，但是实际上Github上的`pgx2`在2016年末也停止开发了。
-
-Master Postgres-XC source repository https://github.com/postgres-x2/postgres-x2
-> This project used the name `Postgres-XC` originally, it is renamed to `Postges-X2` from 2015 after it was moved to Github. In many of the documents and code, we still use Postgres-XC.
-
-<<Postgres-XC 1.1 Documentation>> http://postgres-xc.sourceforge.net/docs/1_1/index.html
-
-## pgxc其他
-
-<<PGXC两阶段提交与事务一致性（1）>>
-http://www.cnblogs.com/databaseaffair/p/6864070.html
-
-<<PostgreSQL-XC : Data Replication or Distribution ? >>
-http://francs3.blog.163.com/blog/static/4057672720125453315201/
-
-# PGXL
-
-## pgxl官方
-
-Postgres-XL https://en.wikipedia.org/wiki/Postgres-XL
-> Postgres-XL is based on Postgres-XC, an earlier distributed PostgreSQL system developed by NTT Data and EnterpriseDB. In 2012, the cloud database startup StormDB adopted Postgres-XC and developed some proprietary extensions and improvements to it. In 2013, StormDB was acquired by TransLattice, and the improved software was open-sourced under the name "Postgres-XL" in 2014. Since 2015, Postgres-XL development has also been supported by 2ndQuadrant.
-
-Postgres-XL https://www.postgres-xl.org/
-
-Postgres-XL 10r1.1 Documentation https://www.postgres-xl.org/documentation/index.html
-
-## pgxl其他
-
-Postgres-XL https://www.2ndquadrant.com/en/resources/postgres-xl/
-
-:couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
-
-
 ## PG books
 
 Become a Postgres Expert with Free Training https://www.enterprisedb.com/free-postgres-training
