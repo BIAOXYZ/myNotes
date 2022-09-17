@@ -43,6 +43,13 @@ PostgreSQL用户密码安全策略管理 https://www.modb.pro/db/21476
   * > 我查了一个帖子，不知道是不是您说的社区讨论，感觉内容很相似，包括里面提到的威胁模型、双层加密之类的，帖子名称为：[[Proposal] Table-level Transparent Data Encryption (TDE) and Key Management Service (KMS)](https://www.postgresql.org/message-id/031401d3f41d$5c70ed90$1552c8b0$@lab.ntt.co.jp)
     >> 这个帖子就是社区加密的原贴。现在换到别的地方了。你可以找找相关的wiki。关于你说的blob的加密，而且是一部分的，我想这没什么问题，索引之所以有风险是因为他的顺序暴露些信息。
 
+[[Proposal] Table-level Transparent Data Encryption (TDE) and Key Management Service (KMS)](https://www.postgresql.org/message-id/031401d3f41d$5c70ed90$1552c8b0$@lab.ntt.co.jp)
+- > In `KMIP protocol` and most KMS manage keys by string IDs. We can get keys by key ID from KMS. <br> So in my proposal, all master keys are distinguished by its ID, called "master key ID". <br> The master key ID is made, for example, using the database oid and a sequence number, like `<OID>_<SeqNo>`. And they are managed in PostgreSQL. <br> When database startup, all master key ID is ***loaded to shared memory***, and they are protected by `LWLock`. <br> When it comes time to rotate the master keys, run this query.
+- > If we encrypt all WAL records, performance overhead can be significant. <br> Therefore, this proposes a method to encrypt only WAL record excluding WAL header when writing WAL on the WAL buffer, instead of encrypting a whole WAL record.
+- 回复邮件：
+  * Re: [Proposal] Table-level Transparent Data Encryption (TDE) and Key Management Service (KMS) at 2018-05-29 06:22:31 from Antonin Houska https://www.postgresql.org/message-id/4968.1527574951%40localhost
+    + > This patch seems to implement some of the features you propose, especially encryption of buffers and WAL. I recommend you to check so that no effort is duplicated: [WIP: Data at rest encryption](https://www.postgresql.org/message-id/CA+CSw_tb3bk5i7if6inZFc3yyf+9HEVNTy51QFBoeUk7UE_V=w@mail.gmail.com)
+
 PG透明加密（from 公众号）：
 - 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/Uyjkx1Op4e-bDW0S9q8ckA 【2020.08.30】 || 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/TaxE1u3nJH5Dm6OPjcOXiw 【2019.10.09】
 - 原创|搞懂PostgreSQL数据库透明数据加密之PG中的TDE https://mp.weixin.qq.com/s/TmciHCEDRMpdNgWfUf4zDw 【2020.08.31】【和上面知乎那个是同一篇】
