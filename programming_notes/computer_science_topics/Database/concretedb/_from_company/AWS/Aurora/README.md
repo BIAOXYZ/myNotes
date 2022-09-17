@@ -22,3 +22,4 @@ Amazon Aurora —— 为云计算而生的关系型数据库 https://www.bilibil
 # 其他
 
 Amazon Aurora 深度探索 - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/33603518
+- > 作者简介：李海翔，腾讯金融云数据库技术专家。网名`那海蓝蓝`，熟悉PostgreSQL、MySQL、Informix等。数据库内核技术。腾讯金融云数据库技术专家。著有《数据库查询优化器的艺术》，即将出版新书《数据库事务处理的艺术》。
