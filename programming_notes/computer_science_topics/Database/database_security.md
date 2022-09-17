@@ -39,6 +39,9 @@ PostgreSQL用户密码安全策略管理 https://www.modb.pro/db/21476
     >> 【[:star:][`*`]】 //notes：这里之所以后面三个（`CFB`、`OFB`、`CTR`）不需要padding，是因为它们是 ***<ins>先完成Encrypt，最后一步是XOR</ins>***；而`ECB`和`CBC`是先XOR，最后放进Encrypt函数。
     >>> 我开始也没想明白这点，是看了这个帖子后来才想到的： Why does a padding block exist for ECB and CBC modes? https://crypto.stackexchange.com/questions/71365/why-does-a-padding-block-exist-for-ecb-and-cbc-modes
   * > 以上，从各个层面来说，CTR都是最优的加密mode，社区同样选择了`CTR mode`作为加密模式。
+- 回复里的：
+  * > 我查了一个帖子，不知道是不是您说的社区讨论，感觉内容很相似，包括里面提到的威胁模型、双层加密之类的，帖子名称为：[[Proposal] Table-level Transparent Data Encryption (TDE) and Key Management Service (KMS)](https://www.postgresql.org/message-id/031401d3f41d$5c70ed90$1552c8b0$@lab.ntt.co.jp)
+    >> 这个帖子就是社区加密的原贴。现在换到别的地方了。你可以找找相关的wiki。关于你说的blob的加密，而且是一部分的，我想这没什么问题，索引之所以有风险是因为他的顺序暴露些信息。
 
 PG透明加密（from 公众号）：
 - 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/Uyjkx1Op4e-bDW0S9q8ckA 【2020.08.30】 || 原创|搞懂PostgreSQL数据库透明数据加密之加密算法介绍 https://mp.weixin.qq.com/s/TaxE1u3nJH5Dm6OPjcOXiw 【2019.10.09】
