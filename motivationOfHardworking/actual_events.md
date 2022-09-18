@@ -52,6 +52,9 @@
 
 ## 2022
 
+被剩在深山里的守矿人 https://mp.weixin.qq.com/s/0IgBrZ8jEgmTrqcPy0Jj6g || 深山里的守矿人 https://mp.weixin.qq.com/s/XLYP2S7zEJ2nSJVx9agNfA
+- > 一个夏天，在燥热的车间里高强度工作了一晚上，杨世贵回家想让妻子买些肉来做。妻子没有动身，只和他说家里没有钱了。“我前一天才给了她我的工资。”杨世贵没说什么就进了屋。他不会为了一些小事和妻子吵架，但他知道这份感情在慢慢变淡。
+
 中国首次通过基因治疗治愈成人重型地贫 瑞风生物参与 | 创新事 https://mp.weixin.qq.com/s/j-OkWAvfisLXowqIwKMQKw
 
 对话“流调中最辛苦的中国人”：来北京找儿子，凌晨打零工补贴家用 https://mp.weixin.qq.com/s/cefZR9URd0MjtjNLiSxE4w || https://www.guancha.cn/politics/2022_01_20_622900.shtml

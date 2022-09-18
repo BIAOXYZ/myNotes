@@ -85,3 +85,9 @@ Chess.com https://www.chess.com/zh
 
 胡荣华的顺炮绝招，第一步棋就套路满满，心理战的代表作 https://www.bilibili.com/video/BV1Mt411m74a/
 
+## [四郎讲棋](https://space.bilibili.com/291377718)
+
+千古名局单马擒王 20年后重现江湖 全程都在弃子 https://www.bilibili.com/video/BV1Dt4y1L7mf
+
+胡司令得意之作 弃双车 置之死地而后生 激情解说 让你热血沸腾 https://www.bilibili.com/video/BV1Kf4y1B7mt
+- > 这盘棋是我以前的作品！当时还不知道这盘棋的来龙去脉！其实这盘棋并不是胡司令下的，这盘棋红方为蔡伟林，黑方为徐乃基，实战结果是和局，事后经胡司令拆解可以赢棋。这盘棋确实很传奇！

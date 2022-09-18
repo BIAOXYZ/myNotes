@@ -16,6 +16,10 @@
 
 【6.11】日本拉面全解析 https://mp.weixin.qq.com/s/tKISPACIRk_UPPoQHndiXw
 
+# 北京吃货小分队
+
+别再问萨莉亚，有没有倒闭了 https://mp.weixin.qq.com/s/EU-TGld0q_SdlY2TTkyRWw
+
 # 水产
 
 北京冷链食品追溯平台正式启用：可通过微信支付宝扫描电子追溯码查询 https://www.ithome.com/0/516/976.htm
