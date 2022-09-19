@@ -19,11 +19,13 @@ spark https://blog.csdn.net/lisenyeahyeah/category_8281549.html
 - Spark-SQL优化 https://blog.csdn.net/lisenyeahyeah/article/details/89095441
 - Spark-SQL物理执行 https://blog.csdn.net/lisenyeahyeah/article/details/89331669
 
+万字长文，带你轻松学习 Spark https://www.cnblogs.com/datadance/p/16294406.html
+
 # PySpark
 
 子雨大数据之Spark入门教程(Python版) http://dblab.xmu.edu.cn/blog/1709-2/
 
-3万字长文 PySpark入门级学习教程，框架思维 - 小晨说数据的文章 - 知乎 https://zhuanlan.zhihu.com/p/395431025
+3万字长文 PySpark入门级学习教程，框架思维 - 小晨说数据的文章 - 知乎 https://zhuanlan.zhihu.com/p/395431025 || https://cloud.tencent.com/developer/article/1861236
 
 大数据入门与实战-PySpark的使用教程 https://www.jianshu.com/p/5a42fe0eed4d
 

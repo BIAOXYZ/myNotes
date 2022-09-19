@@ -8,6 +8,16 @@ SQLite https://www.sqlite.org/index.html
   * > See also the [Introduction To The SQLite C/C++ Interface](https://www.sqlite.org/cintro.html) for an introductory overview and roadmap to the dozens of SQLite interface functions.
   * > See the [How To Compile SQLite](https://www.sqlite.org/howtocompile.html) document for instructions and hints on how to compile the program shown above.
 
+Appropriate Uses For SQLite https://www.sqlite.org/whentouse.html
+- > **Situations Where A Client/Server RDBMS May Work Better**
+  * > **Client/Server Applications**
+  * > **High-volume Websites**
+  * > **Very large datasets**
+    + > An SQLite database is limited in size to `281 terabytes` (2<sup>48</sup> bytes, `256 tibibytes`). And even if it could handle larger databases, ***SQLite stores the entire database in a single disk file and many filesystems limit the maximum size of files to something less than this***. So if you are contemplating databases of this magnitude, you would do well to consider using a client/server database engine that spreads its content across multiple disk files, and perhaps across multiple volumes.
+    >> //notes：所以目前看最大支持数据量为 281 T。
+  * > **High Concurrency**
+    + > SQLite supports an ***unlimited number of simultaneous readers***, but it will only allow ***one writer at any instant in time***. For many situations, this is not a problem. Writers queue up. Each application does its database work quickly and moves on, and no lock lasts for more than a few dozen milliseconds. But there are some applications that require more concurrency, and those applications may need to seek a different solution.
+
 Documentation https://www.sqlite.org/docs.html
 - Dynamic Memory Allocation In SQLite https://www.sqlite.org/malloc.html || SQLite中的动态内存分配 https://www.sqlite.net.cn/malloc.html  【这个不一定是中文官网，但是看样子好像翻译得还行。】
 - In-Memory Databases https://www.sqlite.org/inmemorydb.html
