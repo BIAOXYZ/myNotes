@@ -3,7 +3,6 @@
 
 使用Flex Bison 和LLVM编写自己的编译器 https://haoel.blog.csdn.net/article/details/4789364
 - > 本文由赵锟翻译，酷壳发布，转载请注明译者和出处，请勿用于商业用途 <br> 原文出处：http://gnuu.org/2009/09/18/writing-your-own-toy-compiler
-- > 
 
 【[:star:][`*`]】 Writing Your Own Toy Compiler Using Flex, Bison and LLVM https://gnuu.org/2009/09/18/writing-your-own-toy-compiler/
 - > **Update (March 19 2010)**: this article was updated for **LLVM 2.6** thanks to a great patch by [John Harrison](https://github.com/ashgti/my_toy_compiler). He rocks!
@@ -327,8 +326,29 @@
     %%
     ```
 - > **Generating Our Code**
-  * > So we have our “***`tokens.l`***” file for `Flex` and our “***`parser.y`***” file for `Bison`. To generate our C++ source files from these definition files we need to pass them through the tools. Note that `Bison` will also be creating a “***`parser.hpp`***” header file for `Flex`; it does this because of the `–d` switch, which separates our token declarations from the source so we can include and use those tokens elsewhere. The following commands should create our ***`parser.cpp`***, ***`parser.hpp`*** and ***`tokens.cpp`*** source files. || `||` `现在我们有了Flex的token.l文件和Bison的parser.y文件。我们需要将这两个文件传递给工具，并由工具来生成c++代码文件。注意Bison同时会为Flex生成parser.hpp头文件；这样做是通过-d开关实现的，这个开关是的我们的标记声明和源文件分开，这样就是的我们可以让这些token标记被其他的程序使用。下面的命令创建parser.cpp，parser.hpp和tokens.cpp源文件。`
+  * > So we have our “***`tokens.l`***” file for `Flex` and our “***`parser.y`***” file for `Bison`. To generate our C++ source files from these definition files we need to pass them through the tools. Note that `Bison` will also be creating a “***`parser.hpp`***” header file for `Flex`; it does this because of the `–d` switch, which separates our token declarations from the source so we can include and use those tokens elsewhere. The following commands should create our ***`parser.cpp`***, ***`parser.hpp`*** and ***`tokens.cpp`*** source files. `||` `现在我们有了Flex的token.l文件和Bison的parser.y文件。我们需要将这两个文件传递给工具，并由工具来生成c++代码文件。注意Bison同时会为Flex生成parser.hpp头文件；这样做是通过-d开关实现的，这个开关是的我们的标记声明和源文件分开，这样就是的我们可以让这些token标记被其他的程序使用。下面的命令创建parser.cpp，parser.hpp和tokens.cpp源文件。`
     ```sh
     $ bison -d -o parser.cpp parser.y
     $ lex -o tokens.cpp tokens.l
     ```
+  * > If everything went well we should now have ***2 out of 3*** parts of our compiler. If you want to test this, create a short main function in a `main.cpp` file:
+  * > Listing of `main.cpp`:
+    ```cpp
+    #include <iostream>
+    #include "node.h"
+    extern NBlock* programBlock;
+    extern int yyparse();
+
+    int main(int argc, char **argv)
+    {
+        yyparse();
+        std::cout << programBlock << std::endl;
+        return 0;
+    }
+    ```
+  * > You can then compile your source files:
+    ```sh
+    $ g++ -o parser parser.cpp tokens.cpp main.cpp
+    ```
+  * > You will need to have installed `LLVM` by now for the `llvm::Value` reference in “***`node.h`***”. If you don't want to go that far just yet, you can comment out the `codeGen()` methods in ***`node.h`*** to test just your lexer/parser combo. `||` `现在你需要安装LLVM了，因为llvm::Value被node.h引用了。如果你不想这么做，只是想测试一下Flex和Bison部分，你可以注释掉node.h中codeGen()方法。`
+  * > If all goes well you should now have a “parser” binary that takes source in `stdin` and prints out a hopefully ***nonzero address representing the root node*** of our AST in memory. `||` `如果上述工作都完成了，你现在将有一个语法分析器，这个语法分析器将从标准输入读入，并打出在内存中代表抽象语法树跟节点的内存非零地址。`
