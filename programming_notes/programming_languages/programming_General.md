@@ -464,6 +464,8 @@ http://zhuanlan.zhihu.com/p/35057341
 
 如何给老婆解释什么是RPC - 柳树的文章 - 知乎 https://zhuanlan.zhihu.com/p/36427583
 
+【from `小白debug`】 既然有 HTTP 协议，为什么还要有 RPC https://www.ithome.com/0/641/957.htm || https://mp.weixin.qq.com/s/0QWxFylodn7T6nvcS6HsDg
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 序列化和反序列化

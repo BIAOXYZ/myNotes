@@ -92,6 +92,57 @@ sqlite连接池的简单实现 https://www.cnblogs.com/ngxianyu/archive/2013/06/
 
 SQLite/C# Connection Pooling and Prepared Statement Confusion https://stackoverflow.com/questions/10703814/sqlite-c-connection-pooling-and-prepared-statement-confusion
 
+## 其他连接问题
+
+Python 操作 SQLite 异常 https://www.v2ex.com/t/881675
+```py
+# coding=utf-8
+import sqlite3
+import random
+import threading
+import time
+
+db_path = "./test.sqlite"
+connection = sqlite3.connect(db_path, check_same_thread=False)
+CREATE_SQL = """CREATE TABLE IF NOT EXISTS test_table (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)"""
+write_count = 0
+
+def write_handle():
+    while True:
+        connection.cursor().execute("INSERT INTO test_table (name) VALUES ('%s')" % random.random())
+        connection.commit()
+        global write_count
+        write_count += 1
+        print(str(int(time.time())) + "Insert_" + str(write_count))
+
+def read_handle():
+    while True:
+        res = connection.cursor().execute("SELECT * FROM test_table LIMIT 1").fetchone()
+        if res is None or res[0] is None:
+            continue
+        print(str(int(time.time())) + "Read")
+
+if __name__ == '__main__':
+    c = connection.cursor()
+    c.execute(CREATE_SQL)
+    connection.commit()
+    time.sleep(1)
+    threading.Thread(target=write_handle).start()
+    threading.Thread(target=read_handle).start()
+    time.sleep(1000)
+```
+```console
+代码缩进没有了 ... 总结就是两个线程循环执行，
+一个线程执行 `connection.cursor().execute("INSERT INTO test_table (name) VALUES ('%s')" % random.random())`
+一个线程去读 然后程序必定崩溃 ...
+```
+- > 又遇到字符串拼接 SQL 语句：`connection.cursor().execute("INSERT INTO test_table (name) VALUES ('%s')" % random.random())` 有 SQL 注入的风险 <br> 明明 `.execute()` 就有占位符功能的，为何不用呢？ https://docs.python.org/3/library/sqlite3.html#sqlite3-placeholders
+- > 似乎 `connection` 非 threadsafe
+  >> 但是 Google 了一圈，网上基本都是说 <多写> 是非 ThreadSafe ，我这个场景是 单读单写 按道理没问题呀 ...
+- > 我这里测试没崩啊 Windows 10 Python 3.10 PyCharm 2021 <br> 另外，根据[文档](https://sqlite.org/isolation.html)所说，你不应该在同一个连接内同时读写数据库，此行为未定义 <br> 最后，贴代码起码用下 Markdown 啊。回复用不了就算了，帖子还不用。。
+  >> 9 楼给的官方文档说了，一个 `connection` 内同时读写的行为是未定义的。即，按道理，是有问题的 你试试每个线程一个 `connection` ？
+  >>> 可以了！程序总算不崩溃了！感谢大佬！每个线程一个 Connect 就可以了
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # SQLite新闻
