@@ -352,3 +352,16 @@
     ```
   * > You will need to have installed `LLVM` by now for the `llvm::Value` reference in “***`node.h`***”. If you don't want to go that far just yet, you can comment out the `codeGen()` methods in ***`node.h`*** to test just your lexer/parser combo. `||` `现在你需要安装LLVM了，因为llvm::Value被node.h引用了。如果你不想这么做，只是想测试一下Flex和Bison部分，你可以注释掉node.h中codeGen()方法。`
   * > If all goes well you should now have a “parser” binary that takes source in `stdin` and prints out a hopefully ***nonzero address representing the root node*** of our AST in memory. `||` `如果上述工作都完成了，你现在将有一个语法分析器，这个语法分析器将从标准输入读入，并打出在内存中代表抽象语法树跟节点的内存非零地址。`
+
+## 个人实战
+
+```sh
+# 开始还以为 CentOS 装 g++ 的语句是：yum install -y g++ 
+yum install -y gcc-c++
+yum install -y clang clang-devel llvm-devel
+
+# 然和各种编不过，太生草了。。。这个文章时间太落后了，比如 node.h 头文件包含里的 Value.h 位置都变了。。。
+# 现在应该是 #include "llvm/IR/Value.h" 而不是 #include "llvm/Value.h" 了。 https://llvm.org/doxygen/classllvm_1_1Value.html
+# 然而还是不行，烦死了。猜测是目前 llvm 版本远超写文章时的 2.6 版本造成的。。。先不管了，没那么多时间。
+g++ -o parser parser.cpp tokens.cpp main.cpp `llvm-config --libs core jit native --cxxflags --ldflags`
+```
