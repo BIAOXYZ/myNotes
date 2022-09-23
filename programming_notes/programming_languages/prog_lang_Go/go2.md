@@ -185,3 +185,7 @@ Go语言参数传递是传值还是传引用 https://www.flysnow.org/2018/02/24/
 # 其他
 
 骏马金龙--Go语言系列文章 https://www.cnblogs.com/f-ck-need-u/p/9832538.html
+
+## Golang技术分享`
+
+- 简洁的 Go 多版本管理机制 https://www.ithome.com/0/642/559.htm

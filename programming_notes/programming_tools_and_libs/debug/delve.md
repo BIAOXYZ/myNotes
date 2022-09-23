@@ -296,7 +296,7 @@ Debugging GoLang tests with Visual Studio Code and Delve https://www.klefz.se/de
 
 # 调试 Go core dump
 
-如何保留 Go 程序崩溃现场 https://www.ithome.com/0/642/301.htm || https://mp.weixin.qq.com/s/RktnMydDtOZFwEFLLYzlCA
+如何保留 Go 程序崩溃现场 https://www.ithome.com/0/642/301.htm || https://mp.weixin.qq.com/s/RktnMydDtOZFwEFLLYzlCA  【from `Golang技术分享`】
 - 回复里的：
   * > 没用过go，不明白go如何拥有c++的指针特性并且不会像c++那样宕机的，哪个go大佬能说下嘛。
     >> go一般不会直接操作指针，对指针操作有很大的限制，取地址也是语法糖封装后，直接操作对象。操作指针需要unsafe包，这个大部分情况用不到
