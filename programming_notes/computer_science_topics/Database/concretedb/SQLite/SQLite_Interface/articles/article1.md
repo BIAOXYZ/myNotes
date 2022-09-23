@@ -25,14 +25,47 @@ sudo apt-get install -y libsqlite3-dev
 
 SQLite C 教程 https://geek-docs.com/sqlite/sqlite-tutorial/sqlitec.html
 
+# 4
+
+Executing a Statement https://riptutorial.com/sqlite/example/19405/executing-a-statement
+- > A statement is constructed with a function such as [`sqlite3_prepare_v2()`](http://www.sqlite.org/c3ref/prepare.html).
+- > A prepared statement object **must** be cleaned up with [`sqlite3_finalize()`](http://www.sqlite.org/c3ref/finalize.html). Do not forget this in case of an error.
+- > If [parameters](http://www.sqlite.org/lang_expr.html#varparam) are used, set their values with the [`sqlite3_bind_xxx()`](http://www.sqlite.org/c3ref/bind_blob.html) functions.
+- > The actual execution happens when [`sqlite3_step()`](http://www.sqlite.org/c3ref/step.html) is called.
+  ```c
+  const char *sql = "INSERT INTO MyTable(ID, Name) VALUES (?, ?)";
+  sqlite3_stmt *stmt;
+  int err;
+
+  err = sqlite3_prepare_v2(db, sql, -1, &stmt, NULL);
+  if (err != SQLITE_OK) {
+      printf("prepare failed: %s\n", sqlite3_errmsg(db));
+      return /* failure */;
+  }
+
+  sqlite3_bind_int (stmt, 1, 42);                          /* ID */
+  sqlite3_bind_text(stmt, 2, "Bob", -1, SQLITE_TRANSIENT); /* name */
+
+  err = sqlite3_step(stmt);
+  if (err != SQLITE_DONE) {
+      printf("execution failed: %s\n", sqlite3_errmsg(db));
+      sqlite3_finalize(stmt);
+      return /* failure */;
+  }
+
+  sqlite3_finalize(stmt);
+  return /* success */;
+  ```
+
 Reading Data from a Cursor https://riptutorial.com/sqlite/example/19406/reading-data-from-a-cursor
 >> 【[:star:][`*`]】 //notes：之前 `sqlite3_prepare_v2()` 都是 insert 多个元素的时候 prepare 一下。这个例子是一个比较好的 select 时候用 prepare 的例子。 select 之所以以前不用 prepare 是因为都是一把梭哈的用法，只是简单的执行一下，假定内存能装下所有的返回结果。
-- > A SELECT query is executed like any other statement. To read the returned data, call sqlite3_step() in a loop. It returns:
+>>> 【[:star:][`*`]】 //notes：另外，对比上面那个帖子，你会发现 sqlite 最二的地方：<ins>***进行 bind 的时候，列的 index 是从 `1` 开始计数的；但是获取结果时，列的 index 是从 `0` 开始计数的***</ins>。太生草了。。。
+- > A `SELECT` query is [executed](https://riptutorial.com/sqlite/example/19405/executing-a-statement) like any other statement. To read the returned data, call [`sqlite3_step()`](http://www.sqlite.org/c3ref/step.html) in a loop. It returns:
   * > `SQLITE_ROW`: if the data for the next row is available, or
   * > `SQLITE_DONE`: if there are no more rows, or
   * > any error code.
 - > If a query does not return any rows, the very first step returns `SQLITE_DONE`.
-- > To read the data from the current row, call the `sqlite3_column_xxx()` functions:
+- > To read the data from the current row, call the [`sqlite3_column_xxx()`](http://www.sqlite.org/c3ref/column_blob.html) functions:
   ```c
   const char *sql = "SELECT ID, Name FROM MyTable";
   sqlite3_stmt *stmt;
