@@ -148,7 +148,7 @@ LINE 1: SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmnam...
 postgres=#
 ```
 
-## 1.3 用 mysql 试了试发现这作者说的也不对啊，mysql5.7（但是后来 mysql8.0 也试了，一样的） 和 pg 的表现是一样的：只要有“聚合”出现，select 的列同样必须满足`在聚合函数内`或`在group by内`
+## 1.3 用 mysql 试了试发现这作者说的也不对啊，mysql5.7（但是后来 mysql8.0 也试了，一样的） 和 pg 的表现是一样的：只要有“聚合”出现，select 的列同样必须满足`在聚合函数内`或`在group by内`  -->  后来破案了，是因为 mysql 的 sql_mode 可以选 `'ansi'` 或者 `traditional`。前者会和 pg 一样报错，后者是能执行的。详情参见 《CMU 15-445/645 Database Systems》 Fall/2019 的[笔记](https://github.com/BIAOXYZ/paperRelatedRepository/blob/master/notes/CourseNotes/from_university/CMU/database/CMU_15-445/fall2019/01--10.md#%E7%AC%94%E8%AE%B0-1)。
 
 ```sh
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -itd mysql:5.7
