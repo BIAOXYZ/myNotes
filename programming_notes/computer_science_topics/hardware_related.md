@@ -94,6 +94,10 @@ IT之家学院：SSD 固态硬盘求真记 https://www.ithome.com/0/468/724.htm
 
 固态硬盘的PCIE，SATA，M2，NVMe，AHCI https://www.cnblogs.com/yi-mu-xi/p/10469458.html
 
+SSD中，SATA、m2、PCIE和NVME各有什么意义呢？ - 知乎 https://www.zhihu.com/question/48972075
+
+固态硬盘技术：什么是NVMe？有什么特点？ - 知乎用户fB10GU的文章 - 知乎 https://zhuanlan.zhihu.com/p/55236054
+
 ### 闪存
 
 固态硬盘SSD与闪存（Flash Memory） https://www.cnblogs.com/ghj1976/p/3642260.html
