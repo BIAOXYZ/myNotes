@@ -1,4 +1,8 @@
 
+postgresql 里面的事务，明明又错误为什么也执行了？ https://www.v2ex.com/t/882893
+- > 没毛病，两条语句都执行成功了，所以事物成功了。第一条更新 1 条记录，第二条更新 0 条记录，都执行成功。
+你问的应该是，怎么让更新 0 条记录的时候 update 语句失败，而不是成功。你可以在 update 之后加 returning id ，返回受到更新影响的行的主键。这时候 0 条记录更新的情况下，会直接失败。
+
 在 PostgreSQL 上面有么有类似美团 SQLAdvisor 的工具？ https://www.v2ex.com/t/874067
 ```console
 基于 MySQL 原生态词法解析，结合分析 SQL 中的 where 条件、聚合条件、多表 Join 关系 给出索引优化建议。 https://github.com/Meituan-Dianping/SQLAdvisor
