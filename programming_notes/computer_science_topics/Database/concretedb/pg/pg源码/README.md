@@ -130,3 +130,8 @@ PostgreSQL 中的 MVCC (01)——基本可见性判断 https://smartkeyerror.com
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 PostgreSQL查询SQL的语法分析（1）——词法分析 https://www.jianshu.com/p/1c8183d93eae
+
+从Raw parse tree 到Query tree — PostgreSQL 查询处理第一步（1） https://jnxnj.wordpress.com/2008/04/20/%E4%BB%8Eraw-parse-tree-%E5%88%B0query-tree-postgresql-%E6%9F%A5%E8%AF%A2%E5%A4%84%E7%90%86%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%881-%EF%BC%89/
+
+Following a Select Statement Through Postgres Internals https://patshaughnessy.net/2014/10/13/following-a-select-statement-through-postgres-internals || https://www.cloudbees.com/blog/following-a-select-statement-through-postgres-internals
+- > This is the third of a series of four posts based on a presentation I did at the Barcelona Ruby Conference called “20,000 Leagues Under ActiveRecord.” (posts: [one](https://patshaughnessy.net/2014/9/17/20000-leagues-under-activerecord) [two](https://patshaughnessy.net/2014/9/23/how-arel-converts-ruby-queries-into-sql-statements) [four](https://patshaughnessy.net/2014/11/11/discovering-the-computer-science-behind-postgres-indexes) and [video](https://www.youtube.com/watch?v=rnLnRPZZ1Q4)).

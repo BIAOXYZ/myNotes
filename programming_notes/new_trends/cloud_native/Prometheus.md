@@ -35,6 +35,8 @@ prometheus-for-developers -- Practical introduction to Prometheus for developers
 
 # Prometheus其他
 
+Prometheus 监控学习教程推荐 https://wsgzao.github.io/post/prometheus/
+
 Kubernetes 集群健康监控 https://supereagle.github.io/2019/05/26/k8s-health-monitoring/
 > Kubernetes + Prometheus: `* Kubernetes 必须容器化部署 * 依赖 Prometheus`
 
