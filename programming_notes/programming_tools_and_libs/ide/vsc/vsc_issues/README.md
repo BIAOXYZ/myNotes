@@ -15,4 +15,26 @@ VSCode出现"Visual Studio Code is unable to watch for file changes in this larg
 - > 上述内容的大意是指，目前文件监控的实际数目已超出当前设置值。可以通过修改配置文件的方式，增加文件监控数目，来避免出现警告信息。524288是可设置的最大文件监控数目，一般情况下不应当设置这么大的值，因为每监控一个文件大约会消耗540字节（32位机）或1kB（64位机）的内存，监控524288个文件则大约会消耗256MB（32位机）或512MB（64位机）的内存。
 - > 下面将操作方法记录下来，以便今后备查。
 
+inotify resources exhausted https://www.cnblogs.com/brookin/p/6139073.html
+- > **inotify resources exhausted**
+  ```sh
+  tail -f /var/log/kubelet.log
+  tail: inotify resources exhausted
+  tail: inotify cannot be used, reverting to polling
+  ```
+- > **debug**
+  ```sh
+  cat /proc/sys/fs/inotify/max_user_watches
+  8192
+  ```
+- > **resolved**
+  * > Add the following line to either `/etc/sysctl.conf` file or ***a new `*.conf` file*** (e.g. idea.conf) under `/etc/sysctl.d/` directory:
+    ```console
+    fs.inotify.max_user_watches = 524288
+    ```
+  * > Then run this command to apply the change:
+    ```sh
+    sudo sysctl -p --system
+    ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
