@@ -28,6 +28,10 @@ http://blog.csdn.net/r91987/article/details/6887731
 C语言运算符优先级（超详细）
 http://blog.csdn.net/yuliying/article/details/72898132
 
+C 语言运算符优先级（记忆口诀） https://blog.csdn.net/u013630349/article/details/47444939
+
+
+
 # C语法知识
 
 ## C内联函数

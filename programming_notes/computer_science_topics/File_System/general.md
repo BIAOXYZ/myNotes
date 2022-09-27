@@ -7,6 +7,8 @@
 
 Linux 下用哪个文件系统格式最好？ EXT4 VS Btrfs VS XFS https://www.v2ex.com/t/837770
 
+你管这叫文件系统？ https://www.ithome.com/0/643/446.htm || https://mp.weixin.qq.com/s/bYUGs-KBBzPafvZ7EbZJ1Q  【from `低并发编程`】
+
 # NFS
 
 NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)

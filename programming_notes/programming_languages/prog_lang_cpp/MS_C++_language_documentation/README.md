@@ -30,6 +30,8 @@ C + + 内置运算符、优先级和结合性 https://docs.microsoft.com/zh-cn/c
 
 C++ 运算符优先级 https://zh.cppreference.com/w/cpp/language/operator_precedence
 
+C和C++运算符 https://zh.wikipedia.org/wiki/C%E5%92%8CC%2B%2B%E9%81%8B%E7%AE%97%E5%AD%90
+
 ## 作用域解析运算符： `::`
 
 https://docs.microsoft.com/zh-cn/cpp/cpp/scope-resolution-operator
