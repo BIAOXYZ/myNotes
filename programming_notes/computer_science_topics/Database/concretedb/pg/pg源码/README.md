@@ -96,8 +96,9 @@ postgresql源码阅读快速上手 https://blog.csdn.net/postgres20/article/deta
   errmsg(const char *fmt,...)
   elog_finish(int elevel, const char *fmt,...)
   ```
-  > 找到这两个两个函数分别下断点，就能断到所有的内核报错信息，下面举个简单例子：`select *from txx;`   --txx表不存在，会报错，我们看堆栈。如图，在errmsg处被断到了。
-- > 对于 `errmsg` 和 `elog_finish` 这两个报错接口的区别，大家可能有些疑问，我稍微介绍下。在代码中，`errmsg` 被包成了 `ereport` 函数使用，`elog_finish` 被包成了 `elog` 函数使用，***对于ERROR级别的错误，`ereport`报的错是正常的错误，而`elog`报的错则是不正常的的错误***。那么正常的错误，不正常的错误是什么意思？就拿上面的例子来说，我查一个表，这个表不存在，这就是正常的错误，但是如果一个值，按照设计只可能有三种值，比方说switch case1 case2 case3分别对应处理了，然后为了程序健壮性我们对其它所情况都报错，就应该用elog报，因为这是正常情况下不应该出现的错误，很可能是一个未初始化的值引发的。举个通俗点的例子，打篮球时别人进攻我防守不小心打手了，这犯规了，这种犯规就是正常的错误（用 `ereport`)，但是别人投球时我突然把篮筐扯掉不让人进，这肯定也犯规了，但这是非正常犯规，规则中没办法定义但的确又犯规（用 `elog`)。
+  > 找到这两个两个函数分别下断点，就能断到所有的内核报错信息，下面举个简单例子：`select *from txx;`   --txx表不存在，会报错，我们看堆栈。如图，在 `errmsg` 处被断到了。
+- > 【[:star:][`*`]】 对于 `errmsg` 和 `elog_finish` 这两个报错接口的区别，大家可能有些疑问，我稍微介绍下。在代码中，`errmsg` 被包成了 `ereport` 函数使用，`elog_finish` 被包成了 `elog` 函数使用，***对于ERROR级别的错误，`ereport`报的错是正常的错误，而`elog`报的错则是不正常的的错误***。那么正常的错误，不正常的错误是什么意思？就拿上面的例子来说，我查一个表，这个表不存在，这就是正常的错误，但是如果一个值，按照设计只可能有三种值，比方说switch case1 case2 case3分别对应处理了，然后为了程序健壮性我们对其它所情况都报错，就应该用elog报，因为这是正常情况下不应该出现的错误，很可能是一个未初始化的值引发的。举个通俗点的例子，打篮球时别人进攻我防守不小心打手了，这犯规了，这种犯规就是正常的错误（用 `ereport`)，但是别人投球时我突然把篮筐扯掉不让人进，这肯定也犯规了，但这是非正常犯规，规则中没办法定义但的确又犯规（用 `elog`)。
+  >> //notes：注意，可以 `b	errmsg` 和 `b	elog_finish` 成功打断点；但是它俩的封装（`ereport` 和 `elog`）是打不上断点的。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -135,3 +136,5 @@ PostgreSQL查询SQL的语法分析（1）——词法分析 https://www.jianshu.
 
 Following a Select Statement Through Postgres Internals https://patshaughnessy.net/2014/10/13/following-a-select-statement-through-postgres-internals || https://www.cloudbees.com/blog/following-a-select-statement-through-postgres-internals
 - > This is the third of a series of four posts based on a presentation I did at the Barcelona Ruby Conference called “20,000 Leagues Under ActiveRecord.” (posts: [one](https://patshaughnessy.net/2014/9/17/20000-leagues-under-activerecord) [two](https://patshaughnessy.net/2014/9/23/how-arel-converts-ruby-queries-into-sql-statements) [four](https://patshaughnessy.net/2014/11/11/discovering-the-computer-science-behind-postgres-indexes) and [video](https://www.youtube.com/watch?v=rnLnRPZZ1Q4)).
+- > **The Big Picture**
+  * > In the first step, Postgres parses our SQL statement and converts it into a series of C memory structures, a ***`parse tree`***. Next Postgres analyzes and rewrites our query, optimizing and simplifying it using a series of complex algorithms. After that, Postgres generates a ***`plan`*** for finding our data. Like an obsessive compulsive person who won’t leave home without every suitcase packed perfectly, Postgres doesn’t run our query until it has a plan. Finally, Postgres actually executes our query. In this presentation I’ll briefly touch on the first three topics, and then focus more on the last step: Execute.
