@@ -1,4 +1,9 @@
 
+哈希冲撞的可能性 https://www.v2ex.com/t/883524
+- > 哈希冲突的相关信息可以看这里： https://en.wikipedia.org/wiki/Hash_collision <br> 这里有一些 SHA-256 的哈希冲突的例子： https://crypto.stackexchange.com/questions/52578/are-there-any-well-known-examples-of-sha-256-collisions <br> 同样地，MD5 会更简单： https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
+  >> 【[:star:][`*`]】 //notes：这个哥们给的链接是不错，但是回答的容易误解。目前【`2022.09.28`】为止，SHA-256 还是没有找到任何一对碰撞。
+- > https://www.mscs.dal.ca/~selinger/md5collision/
+
 国密标准推行不太顺利的样子？ https://www.v2ex.com/t/848968
 - > SM2 、SM3 、SM4 都是有在 IANA 注册的，由 RFC8998 定义，也就是说在特定系统上使用这些算法是没有障碍的。包括 TLS1.3 密码套件（ TLS_SM4_GCM_SM3 ，TLS_SM4_CCM_SM3 ），签名模式 sm2sig_sm3 ，群 curveSM2 。至少 openssl 支持这个是无压力的，实际上一些银行 U 盾也有用这个。
   * > 但民用市场得考虑软件兼容性，你没有靠谱的办法让 XP 上的 Schannel SSP （ Windows 上的默认 SSL/TLS 实现）支持 TLS1.3 和 SM 系列，要知道 TLS 可以自动协商用什么密码套件，但证书种类可没法协商，客户端不支持就直接终止连接了。这也是为啥现在那么多网站证书还用 RSA2048 而不是 ECC 一样。

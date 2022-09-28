@@ -113,3 +113,67 @@ type = struct Node {
     NodeTag type;
 } *
 ```
+
+```sh
+# postgres/src/backend/parser/analyze.c
+case T_SelectStmt:
+                        {
+                                SelectStmt *n = (SelectStmt *) parseTree;
+# 后面代码省略。
+
+(gdb) p parseTree
+$44 = (Node *) 0x1e3ab10
+(gdb) p n
+$45 = (SelectStmt *) 0x1e3ab10
+# Node* 类型去解引用就得不到什么东西。
+(gdb) p	*parseTree
+$46 = {type = T_SelectStmt}
+# 但是用强制转换后的 SelectStmt* 类型去解引用就可以把结构的其他成员显示出来。
+(gdb) p	*n
+$47 = {type = T_SelectStmt, distinctClause = 0x0, intoClause = 0x0, targetList = 0x1e3a7e8, fromClause = 0x1e3a8c0, whereClause = 0x1e3aa30, groupClause = 0x0, havingClause = 0x0, windowClause = 0x0, valuesLists = 0x0, sortClause = 0x1e3ad88, limitOffs
+et = 0x0, limitCount = 0x1e3adc0, lockingClause = 0x0, withClause = 0x0, op = SETOP_NONE, all = false, larg = 0x0, rarg = 0x0}
+
+(gdb) p	n->targetList
+$50 = (List *) 0x1e3a7e8
+(gdb) p n->targetList->head
+$51 = (ListCell *) 0x1e3a7c0
+(gdb) p n->targetList->head->data
+$52 = {ptr_value = 0x1e3a768, int_value = 31696744, oid_value = 31696744}
+(gdb) p n->targetList->head->data->ptr_value
+$53 = (void *) 0x1e3a768
+# ListCell 的特点，如果“真正的成员”（因为 data 是个 union 类型）是在 ptr_value 上，那么必须对 void* 类型的 ptr_value 进行正确的强制类型转换。
+(gdb) p	*n->targetList->head->data->ptr_value
+Attempt to dereference a generic pointer.
+(gdb) p*(ResTarget*)n->targetList->head->data->ptr_value
+$54 = {type = T_ResTarget, name = 0x0, indirection = 0x0, val =	0x1e3a6b0, location = 7}
+(gdb)
+# 但是比较有意思的是即使转错了，可能有些成员也能打印出来- -
+(gdb) p*(ColumnRef*)n->targetList->head->data->ptr_value
+$55 = {type = T_ResTarget, fields = 0x0, location = 0}
+(gdb) p*(SortBy*)n->targetList->head->data->ptr_value
+$57 = {type = T_ResTarget, node = 0x0, sortby_dir = SORTBY_DEFAULT, sortby_nulls = SORTBY_NULLS_DEFAULT, useOp = 0x1e3a6b0, location = 7}
+```
+
+# `.gdbinit` for pg debug
+
+Tip 15: get GDB to print your structures https://modelingwithdata.org/arch/00000065.htm
+
+```console
+define nt
+  p *(Node*)$arg0
+end
+
+define tr
+  p *(($arg0*)$arg1)
+end
+
+define plist
+  p ((List*)$arg0)->length
+  set $n = ((List*)$arg0)->length
+  set $i = 0
+  while($i < $n)
+    p ((List*)$arg0)->elements[$i]
+    set $i = $i + 1
+  end
+end
+```
