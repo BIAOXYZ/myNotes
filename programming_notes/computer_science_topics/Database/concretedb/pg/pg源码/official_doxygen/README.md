@@ -14,7 +14,8 @@ $19 = {type = T_RangeTblEntry, rtekind = RTE_RELATION, relid = 24576, relkind = 
 Attempt to dereference a generic pointer.
 (gdb) p *(RangeTblEntry*)pstate->p_rtable->head->data->ptr_value.relid
 Attempt to dereference a generic pointer.
-# 上面两个打印失败就是因为就 C 语言运算符优先级来说有： `.` 高于 `->` 高于 `(type)` 高于 `*`（结构体）。
+# 上面两个打印失败就是因为就 C 语言运算符优先级来说有：
+# `.` 高于 `->` 高于 `(type)` 高于 `*`（也就是说： `以对象方式访问成员` > `以指针方式访问成员` > `强制类型转换` > `解引用`）。
 # 于是它们等于是最后把 relid 强转成 RangeTblEntry* 类型，最后再解引用。当然是不对的，因为 relid 是 Oid 类型的。
 (gdb) p (*(RangeTblEntry*)pstate->p_rtable->head->data->ptr_value).relid
 $18 = 24576
