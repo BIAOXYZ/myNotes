@@ -154,6 +154,8 @@ $55 = {type = T_ResTarget, fields = 0x0, location = 0}
 $57 = {type = T_ResTarget, node = 0x0, sortby_dir = SORTBY_DEFAULT, sortby_nulls = SORTBY_NULLS_DEFAULT, useOp = 0x1e3a6b0, location = 7}
 
 # 接下来继续往下打印
+# 第一个打印明明没有做解引用操作但是为什么也会报 “Attempt to dereference a generic pointer.” 呢？我猜是因为：
+## n->targetList->head->data->ptr_value 是个 void* 类型；虽然没有显式地解引用，但是试图对 void* 类型变量取成员也算是隐式解引用了。
 (gdb) p n->targetList->head->data->ptr_value->val
 Attempt to dereference a generic pointer.
 (gdb) p (ResTarget*)n->targetList->head->data->ptr_value->val
