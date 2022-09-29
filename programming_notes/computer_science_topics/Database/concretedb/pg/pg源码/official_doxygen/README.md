@@ -152,6 +152,16 @@ $54 = {type = T_ResTarget, name = 0x0, indirection = 0x0, val =	0x1e3a6b0, locat
 $55 = {type = T_ResTarget, fields = 0x0, location = 0}
 (gdb) p*(SortBy*)n->targetList->head->data->ptr_value
 $57 = {type = T_ResTarget, node = 0x0, sortby_dir = SORTBY_DEFAULT, sortby_nulls = SORTBY_NULLS_DEFAULT, useOp = 0x1e3a6b0, location = 7}
+
+# 接下来继续往下打印
+(gdb) p n->targetList->head->data->ptr_value->val
+Attempt to dereference a generic pointer.
+(gdb) p (ResTarget*)n->targetList->head->data->ptr_value->val
+Attempt to dereference a generic pointer.
+(gdb) p	((ResTarget*)n->targetList->head->data->ptr_value)->val
+$73 = (Node *) 0x1e3a6b0
+(gdb) p	*((ResTarget*)n->targetList->head->data->ptr_value)->val
+$74 = {type = T_ColumnRef}
 ```
 
 # `.gdbinit` for pg debug
