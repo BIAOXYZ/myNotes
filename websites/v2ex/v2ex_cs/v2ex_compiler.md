@@ -1,4 +1,43 @@
 
+非 CS, 想弄弄编译, 还啃龙书吗? https://www.v2ex.com/t/883710
+- > 我当前学习的路线供参考
+  ```console
+  一
+  - Computer Systems: A Programmer's Perspective
+  - Crafting Interpreters （替代 自己动手实现 Lua 虚拟机、编译器和标准库）
+  - 程序员的自我修养：链接、装载与库（替代 上面的 CSAPP ）
+
+  二
+  - 清华大学的《数据结构（ C++ 语言版）》邓俊辉（看了一部分，很棒！）学习中
+
+  三
+  - **南京大学 软件分析 [**https://tai-e.pascal-lab.net/**](https://tai-e.pascal-lab.net/) 国内顶级的静态分析课程，最近看完了所有的视频，也完成了 OJ 作业，非常棒的课程**
+  - Compilers: Principles, Techniques, and Tools （以下几章可以算是上面的软件分析的下一步学习的扩展）
+  - 6.2 Three-Address Code
+  - 8 Code Generation
+  - 9 Machine-Independent Optimizations
+  - 12 Interprocedural Analysis （还没开始看）计划待看
+  - CS 6120: Advanced Compilers γ https://www.cs.cornell.edu/courses/cs6120/2020fa/ 看了一半搁置了
+
+  四
+  - **LLVM Techniques, Tips, and Best Practices Clang and Middle-End Libraries 上手 LLVM 前一定要看**
+  - https://github.com/banach-space/llvm-tutor ​学习中
+  - Learn LLVM 12: A Beginner's Guide to Learning LLVM Compiler Tools and Core Libraries With C++
+
+  其他参考
+  - [编译高级教程｜学习笔记]( https://leiblog.wang/%E7%BC%96%E8%AF%91%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BD%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/)
+  - [2019 EuroLLVM Developers’ Meeting: V. Bridgers & F. Piovezan “LLVM IR Tutorial - Phis, GEPs ...”](https://www.youtube.com/watch?v=m8G_S5LwlTo)
+  - [Creating the Bolt Complier 系列]( https://mukulrathi.com/create-your-own-programming-language/intro-to-compiler/)
+  ```
+- > 我推荐一下哈工大姜守旭老师的编译原理视频课程吧，思路清晰，这门课靠他的讲述拿了个不错的分
+- > 推荐 https://book.douban.com/review/13617730/ 已经有中文版。
+- > 看 crafting interpreter 就够了 还有龙书太重 parse 了 你不搞学术的话 搞懂 recursive decent 就行了 后面可能也是用 antlr 之类的多
+- > 看了 OP 13 楼的进一步说明，那就 https://craftinginterpreters.com/
+- > 啃龙书没啥意义。
+  * > 如果你想整体了解编译，不要在 parser 上浪费时间，parser 是一个非常“符合直觉”的事情，本质上就是如何把一段文本变成结构化的数据，所以不要被各种名词唬住，自己写一个简单的表达式解析器，就能大概明白了。同时 parser 在整个编译过程中只占了很小的一部分，基本没啥值得关注的东西。
+  * > 编译整体看是一个不断 lower （ desuger ）的过程，用简单代替复杂，具体代替抽象。所以整体看的话，你需要大概了解一下体系结构和指令集，也就是编译的终点是什么样的。中间的过程不管是 AST 也好，IR 也好，no-target machine code 还是 target machine code ，从认知上来讲，都不是必须的（你完全可以设计一个非常简单的表达式语言，然后直接翻译成汇编指令），这些步骤只是为了满足某种需求（ native code or Interpreter ？ JIT or AOT ？ interprocedural or intraprocedural ？）而增加的、便于使用的中间层。
+  * > 明确输入（语言、特性、功能）和输出（目标指令集），剩下的就是取舍和拼接。现在编译体系复杂之处在于为了某些目标（性能、功能、复杂的语言特性）而在不同层次间不得不产生耦合，使用某些约定（而不是设计）。当这种情况越多，原本清晰的结构就会变成一坨。。。
+
 【[:star:][`*`]】 C++ 利用条件编译来避免重复引用为什么需要手写？编译器不能自动做这件事情吗？ https://www.v2ex.com/t/842838
 - > 说一个会的人都知道但没学过可能无法想象的事：c++的编译器只会处理「一个文件」，include 的作用是把所有<>里的文件全都拼在一起。字面意思，拼在一起。include 两次就拼两次。
 - > 微软干过这种事情.发明了 `#progma once` <br> 后来人们发现头文件是个憨批设定，严重影响了编译速度。已经在 C++20 里开始推进 module 了。

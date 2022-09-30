@@ -13,6 +13,3 @@
 图数据库杂谈 https://zhuanlan.zhihu.com/graphdbs
 
 数据系统论文阅读小组 https://zhuanlan.zhihu.com/db-readings
-
-PostgreSQL内核 https://www.zhihu.com/column/c_1274634244451307520
-- PostgreSQL的事务及其实现机制 - movead的文章 - 知乎 https://zhuanlan.zhihu.com/p/147605189 || https://www.modb.pro/db/28286
