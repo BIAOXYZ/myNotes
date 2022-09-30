@@ -289,6 +289,12 @@ PostgreSQL Server Programming http://pdf.th7.cn/down/files/1312/PostgreSQL%20Ser
 PostgreSQL好书推荐 https://mp.weixin.qq.com/s/-dqSiJWCMVAYaQZUX0MW6Q
 - > 另外postgrespro于最近出了一本书《PostgreSQL 14 Internals》， https://edu.postgrespro.com/postgresql_internals-14_parts1-2_en.pdf
   >> PostgreSQL 14 Internals https://postgrespro.com/community/books/internals
+- > 10.《PostgreSQL查询引擎源码技术探析》：李浩著，主要介绍查询引擎的运行原理和实现技术细节，其中包括：基础数据结构、SQL词法语法分析及查询语法树、查询分析及查询重写、子链接及子查询处理、查询访问路径创建、查询计划生成等。作者现在是 StoneDB的首席架构师，推荐指数 ☆☆☆，阅读需要一定基础 ⚠️
+- > 11.《PostgreSQL技术内幕查询优化深度探索》：两部曲，张树杰著，揭示了PostgreSQL数据库中查询优化的实现技术细节，推荐指数 ☆☆☆，阅读需要一定基础 ⚠️
+- > 12.《PostgreSQL技术内幕事务处理深度探索》：两部曲，张树杰著，分析了PostgreSQL数据库事务的实现机制和原理。推荐指数 ☆☆☆☆
+- 个人补充：
+  * PostgreSQL技术内幕：查询优化深度探索 https://book.douban.com/subject/30256561/
+  * PostgreSQL技术内幕：事务处理深度探索 https://book.douban.com/subject/35543446/
 
 ### PG待整理？
 
