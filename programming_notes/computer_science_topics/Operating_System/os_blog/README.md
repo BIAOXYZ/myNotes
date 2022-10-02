@@ -1,4 +1,6 @@
 
+Linux 0.11 第 3 回 | 做好访问内存的最基础准备工作 https://www.ithome.com/0/644/583.htm || https://mp.weixin.qq.com/s/90QBJ-lP_-du2qQJxNF-Fw
+
 Linux 0.11 第 2 回 | 从 0x7c00 到 0x90000 https://www.ithome.com/0/644/371.htm || https://mp.weixin.qq.com/s/U-txDYt0YqLh5EeFOcB4NQ  【from `低并发编程`】
 
 Linux 0.11 第一回 | 最开始的两行代码 https://www.ithome.com/0/644/055.htm  【from `低并发编程`】
