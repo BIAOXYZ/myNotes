@@ -1,4 +1,6 @@
 
+Linux 0.11 第五回 | 进入保护模式前的最后一次折腾内存 https://www.ithome.com/0/644/932.htm || https://mp.weixin.qq.com/s/5s_nmrWRZbA_4mkNKOQ2Cg
+
 Linux 0.11 第 4 回 | 把全部的操作系统代码从硬盘搬到内存 https://www.ithome.com/0/644/814.htm || https://mp.weixin.qq.com/s/hStc-y-sabP-KwJUDUesTw
 
 Linux 0.11 第 3 回 | 做好访问内存的最基础准备工作 https://www.ithome.com/0/644/583.htm || https://mp.weixin.qq.com/s/90QBJ-lP_-du2qQJxNF-Fw
