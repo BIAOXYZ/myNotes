@@ -1,4 +1,6 @@
 
+一个整数＋1 引发的灾难 https://www.ithome.com/0/645/040.htm || https://mp.weixin.qq.com/s/hFWSItFYIzWLr_RFne2lBA
+
 CPU 瞒着内存竟干出这种事 https://www.ithome.com/0/644/894.htm || https://mp.weixin.qq.com/s/Pm_jdPUB_9Aq8hhpbrF5QA
 
 可怕！CPU 竟成了黑客的帮凶 https://www.ithome.com/0/644/724.htm || https://mp.weixin.qq.com/s/XEDCCQntIRghWhfigciWSA  【from `编程技术宇宙`】
