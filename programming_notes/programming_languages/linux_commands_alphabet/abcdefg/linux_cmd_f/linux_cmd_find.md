@@ -98,6 +98,11 @@ total 4
 -rw-r--r--. 1 root root 195 Jun  7 00:50 local-repository-0.repo
 ```
 
+Linux下如何删除指定路径下所有的__pycache__文件夹？ https://cloud.tencent.com/developer/article/1732251
+```sh
+find . -name '__pycache__' -type d -exec rm -rf {} \;
+```
+
 # 通过 `find` 把某个目录及其子目录添加到 `PATH` 环境变量
 
 How can I set all subdirectories of a directory into $PATH? https://unix.stackexchange.com/questions/17715/how-can-i-set-all-subdirectories-of-a-directory-into-path || 如何将目录的所有子目录设置为$ PATH？ https://qastack.cn/unix/17715/how-can-i-set-all-subdirectories-of-a-directory-into-path

@@ -1,4 +1,10 @@
 
+C++一个指针，我怎么知道传进来的地址是在堆上还是在栈上？ https://www.v2ex.com/t/884939
+- > 真的写出这种代码的话给调用者带来的迷惑不是一点半点... <br> 堆栈生长方向不一样，你随便把这个指针和局部变量比大小就行，毕竟是 caller 传给你的 <br> 但是不要这么做，最好要么始终不转移所有权，要么始终转移所有权，要么用智能指针
+- > https://stackoverflow.com/questions/15376175/accessing-the-vm-areas-of-a-process
+- > 判断一个内存段是否属于 heap ，需要借用 `mm_struct` 里面的 `start_brk`(heap 内存段的开始位置) 和 `brk`(heap 内存段的结束位置)。vma 的开始和结束地址在 `mm_struct` 的 `start_brk` 和 `brk` 之间，则说明地址在 heap 内存中。
+  >> 写内核模块才能这样搞，用户态进程肯定不行。 <br> 解析 `/proc/[pid]/maps` 文件，从这个文件中可以知道进程的虚拟地址空间布局，包括 stack 和 heap 的地址范围。
+
 【[:star:][`*`]】 C++中的数组寻址，是线性时间还是固定时间 https://www.v2ex.com/t/868384
 - > 不学计算机组成，编程处处是魔法
 
