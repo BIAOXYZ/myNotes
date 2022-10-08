@@ -13,6 +13,10 @@ Yacc https://en.wikipedia.org/wiki/Yacc || yacc https://zh.wikipedia.org/wiki/Ya
 - > yacc（Yet Another Compiler Compiler），是Unix/Linux上一个用来生成编译器的编译器（编译器代码生成器）。yacc生成的编译器主要是用C语言写成的语法解析器（Parser），需要与词法解析器 [Lex]() 一起使用，再把两部分产生出来的C程序一并编译。yacc本来只在（类）Unix系统上才有，但现时已普遍移植往Windows及其他平台。
 - > yacc最初由AT&T的Steven C. Johnson为Unix操作系统开发，后来一些兼容的程序如Berkeley Yacc，[GNU bison]()，MKS yacc和Abraxas yacc陆续出现。它们都在原先基础上做了少许改进或者增加，但是基本概念是相同的。
 
+# 视频
+
+Tutorial on lex/yacc https://www.bilibili.com/video/BV1mE411h7oo/
+
 # 其他
 
 USING LEX WITH YACC https://silcnitc.github.io/ywl.html
@@ -28,3 +32,11 @@ Flex(scanner)/Bison(parser)工作原理 - 扬眉的文章 - 知乎 https://zhuan
   * > （注意：Schmidt曾是google的CEO）
   * > bison的前身是yacc。yacc是由贝尔实验室的S.C.Johnson基于Knuth大神的LR语法分析理论，于1975～1978年写成。大约1985年，UC Berkeley 的研究生Bob Corbett使用改进的内部算法实现了伯克利yacc，来自FSF的Richard Stallman改写了伯克利yacc并将其用于GNU项目，添加了很多特性，形成了今天的GNU Bison。bison现在作为FSF的项目被维护，基于GNU公共许可证发布，[Bison](http://www.gnu.org/software/bison/manual/)是兼容yacc的free的语法生成器。
   * > 早期Unix的Lex/YACC，发展为FLex/Bison，新版本的程序是向上兼容的(即兼容老版本)
+
+YACC program to implement a Calculator and recognize a valid Arithmetic expression https://www.geeksforgeeks.org/yacc-program-to-implement-a-calculator-and-recognize-a-valid-arithmetic-expression
+
+## 类似的库
+
+https://www.dabeaz.com/software.html
+- SLY (Sly Lex Yacc) https://sly.readthedocs.io/en/latest/ || https://github.com/dabeaz/sly
+- PLY (Python Lex-Yacc) https://www.dabeaz.com/ply/ply.html || https://github.com/dabeaz/ply
