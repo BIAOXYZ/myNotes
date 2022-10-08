@@ -1,4 +1,6 @@
 
+就为了一个原子操作，其他 CPU 核心罢工了 https://www.ithome.com/0/645/439.htm || https://mp.weixin.qq.com/s/jx0EajGXGrM3fR14P9Bm7Q
+
 一个整数＋1 引发的灾难 https://www.ithome.com/0/645/040.htm || https://mp.weixin.qq.com/s/hFWSItFYIzWLr_RFne2lBA
 
 CPU 瞒着内存竟干出这种事 https://www.ithome.com/0/644/894.htm || https://mp.weixin.qq.com/s/Pm_jdPUB_9Aq8hhpbrF5QA
