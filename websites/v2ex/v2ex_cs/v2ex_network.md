@@ -1,4 +1,22 @@
 
+ubuntu 有什么命令可以关闭网络，不然上网的？ https://www.v2ex.com/t/885457
+- > 禁用网卡驱动应该可以吧？ `ifconfig [网卡名称] Down/Up`
+  >> 还是 v 友给力！现在的搜索引擎出来都是一个结果，还有内容农场。导致知识获取效率低下。
+- > `iptables -A OUTPUT -o eth1 -j DROP`
+- > 我不信 关掉它们还不行 `systemctl disable --now NetworkManager network`
+  >> 是失败了，不知道为啥。用一楼的哥们的命令就可以了
+- > 
+  ```sh
+  sudo ufw default deny incoming
+  sudo ufw default deny outgoing
+  sudo ufw default deny routed
+  ```
+- > 你直接把机器 IP 配成一个不可用的 IP 不就行了
+- > 直接把网卡配置删除
+- > 关网卡太暴力了，还是像 2 楼的防火墙控制一下吧… 你要想确保不能访问外网、但是可以访问内网的话也可以做到的
+- > 推荐用 `ip` 命令 `sudo ip link set eth0 down`
+- > 更加暴力点 `rmmod` 把网卡驱动卸了？或者破坏掉 `/proc` 中和网卡相关的？或者 `lspci` 看下网卡，把网卡所在的 `pci-e` 给干掉
+
 同一个网段的两个 ip 无法互相 ping 通，可能是什么原因呢 https://www.v2ex.com/t/867960
 
 `ethtool -i -1` 如何理解 https://www.v2ex.com/t/839421
