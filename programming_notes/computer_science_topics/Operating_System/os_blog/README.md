@@ -1,4 +1,6 @@
 
+你管这叫 IO 多路复用？ https://www.ithome.com/0/645/683.htm || https://mp.weixin.qq.com/s/YdIdoZ_yusVWza1PU7lWaw  【from `低并发编程`】
+
 Linux 0.11 第 6 回 | 段寄存器的历史包袱 https://www.ithome.com/0/645/025.htm || https://mp.weixin.qq.com/s/p1a6QxYZyMpJF__uBSE1Kg
 
 Linux 0.11 第五回 | 进入保护模式前的最后一次折腾内存 https://www.ithome.com/0/644/932.htm || https://mp.weixin.qq.com/s/5s_nmrWRZbA_4mkNKOQ2Cg
