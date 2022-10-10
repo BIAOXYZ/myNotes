@@ -87,9 +87,9 @@ LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4M
 
 动态规划之背包问题系列 - SMON的文章 - 知乎 https://zhuanlan.zhihu.com/p/93857890
 
-图解 | 你管这叫动态规划 https://www.ithome.com/0/645/532.htm
+图解 | 你管这叫动态规划 https://www.ithome.com/0/645/532.htm || https://mp.weixin.qq.com/s/MgNGAWfKp9O0j4lwsx4qLA
 - > **3**
-  * > 有一个背包，可以装载重量为 5kg 的物品。有 4 个物品，他们的重量和价值如下。
+  * > 有一个背包，可以装载重量为 5kg 的物品。有 4 个物品，他们的重量和价值如下。![](https://img.ithome.com/newsuploadfiles/2022/10/6891cacd-3099-4aca-8654-4577be39df16.jpg)
   * > 那么请问，在不得超过背包的承重的情况下，将哪些物品放入背包，可以使得总价值最大？
   * > 假如我们用 **F(W,i)** 表示用载重为 W 的背包，装前 i 件物品的最大价值。 <br> 那本题其实就是用载重为 5kg 的背包，装前 4 件物品的最大价值。其实就是求解 **F(5,4)**。
 
