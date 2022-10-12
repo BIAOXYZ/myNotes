@@ -1,5 +1,9 @@
 
-# pip, pipenv and others
+# pip官方
+
+pip - The Python Package Installer https://github.com/pypa/pip
+
+pip https://pip.pypa.io/en/stable/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

@@ -1,4 +1,12 @@
 
+为什么有 HTTP 协议，还要有 websocket 协议 https://www.ithome.com/0/645/884.htm  【from `小白debug`】
+
+--------------------------------------------------
+
+万字长文爆肝路由协议！ https://www.ithome.com/0/645/890.htm || https://mp.weixin.qq.com/s/1TRVhg1iiK0dNtV157yrQw  【from `程序员cxuan`】
+
+--------------------------------------------------
+
 最多能创建多少个 TCP 连接？ https://www.ithome.com/0/645/438.htm || https://mp.weixin.qq.com/s/X6c_H5_4OInR8nFQVn7IMA  【from `低并发编程`】
 
 --------------------------------------------------
