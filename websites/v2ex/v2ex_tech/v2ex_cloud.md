@@ -1,4 +1,8 @@
 
+k8s 的练习环境 https://www.v2ex.com/t/886707
+- > minikube colima k3s microk8s <br> 太多了，用下来 colima 体验不错
+- > 有 docker 么，就可以。 可以参考 https://github.com/ysicing/kind <br> 忘记说了，这个 https://www.okteto.com/ 可以体验 k8s
+
 开源 k8s 的教程，全实战引导！顺带问各位大佬一个问题～ https://www.v2ex.com/t/876087
 ```console
 这份教程的优点在于：
