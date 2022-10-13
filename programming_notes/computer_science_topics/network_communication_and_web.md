@@ -147,6 +147,8 @@ Switch Vs. Router | Difference between Switch and Router https://www.javatpoint.
 
 路由器和交换机的区别，太经典了 https://blog.csdn.net/alpha_love/article/details/76695411
 
+一篇搞懂二三层网络互联设备 https://www.ithome.com/0/646/452.htm
+
 ### localhost versus 127.0.0.1
 
 - localhost、127.0.0.1 和 本机IP 三者的区别? - 知乎 https://www.zhihu.com/question/23940717
