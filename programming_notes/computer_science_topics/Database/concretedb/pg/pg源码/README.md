@@ -19,7 +19,7 @@ http://www.zhangxiaojian.name/pg-%E5%86%85%E5%AD%98%E4%B8%8A%E4%B8%8B%E6%96%87/
 
 图解PostgreSQL--MemoryContext(1) - 王硕的文章 - 知乎 https://zhuanlan.zhihu.com/p/350049053
 
-深入理解 PostgreSQL 中的内存上下文（MmeoryContext） https://smartkeyerror.com/PostgreSQL-MemoryContext || MemoryContext.pdf https://github.com/SmartKeyerror/Psyduck/blob/master/database/PostgreSQL/MemoryContext.pdf
+【[:star:][`*`]】 深入理解 PostgreSQL 中的内存上下文（MmeoryContext） https://smartkeyerror.com/PostgreSQL-MemoryContext || MemoryContext.pdf https://github.com/SmartKeyerror/Psyduck/blob/master/database/PostgreSQL/MemoryContext.pdf
 - > **3.1 Region-Based Memory Management**
   * > 这里就有必要对 PostgreSQL 的内存管理进行进一步地说明。PostgreSQL 将内存分为`内存块（Block）`和`内存片（Chunk）`，其中内存块是通过 `malloc()` 这一系统调用取得的。而一个内存块中将会有一个或者多个内存片，内存片才是 PostgreSQL 的最小存储单元。简单的理解就是 PostgreSQL 首先向操作系统要一块比较大的内存（Block），然后在对这一块大内存进行切割（Chunk），把切割之后的内存返回给调用方。
   * > 这么做的目的一方面是为了减少系统调用，在下一次的内存分配时即可直接返回给调用方，而无需进行系统调用。另一个作用就是减少额外的系统内存占用，因为 `malloc()` 所返回的内存必须要有 ***Header（或者叫 Cookie）*** 记录其内存总大小， 否则 `free()` 将无法正常工作。
@@ -121,7 +121,7 @@ postgresql源码阅读快速上手 https://blog.csdn.net/postgres20/article/deta
 
 # Zhenglong Li (SmartKeyerror)
 
-PostgreSQL 中的 MVCC (01)——基本可见性判断 https://smartkeyerror.com/PostgreSQL-MVCC-01
+PostgreSQL 中的 MVCC (01)——基本可见性判断 https://smartkeyerror.com/PostgreSQL-MVCC-01 || https://github.com/SmartKeyerror/Psyduck/blob/master/database/PostgreSQL/PostgreSQL%20%E4%B8%AD%E7%9A%84%20MVCC.pdf
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

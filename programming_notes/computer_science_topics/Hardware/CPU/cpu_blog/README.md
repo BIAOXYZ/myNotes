@@ -1,4 +1,8 @@
 
+中断还是轮询？取个数据包真麻烦 || https://mp.weixin.qq.com/s/QmZP0P4BrSJ1p6YI6cmyVQ
+
+什么？一个核同时执行两个线程？ https://www.ithome.com/0/646/476.htm || https://mp.weixin.qq.com/s/HwDqCk8vtMdSEVSCLHAsbg
+
 就为了一个原子操作，其他 CPU 核心罢工了 https://www.ithome.com/0/645/439.htm || https://mp.weixin.qq.com/s/jx0EajGXGrM3fR14P9Bm7Q
 
 一个整数＋1 引发的灾难 https://www.ithome.com/0/645/040.htm || https://mp.weixin.qq.com/s/hFWSItFYIzWLr_RFne2lBA
