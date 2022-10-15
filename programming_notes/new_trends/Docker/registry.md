@@ -40,3 +40,5 @@ Harbor中的用户密码加密机制探究 http://phantom0301.cc/2017/02/08/harb
 ## harbor其他
 
 A CLI tool for the Docker Registry Harbor https://github.com/int32bit/python-harborclient
+
+Containerd 对接私有镜像仓库 Harbor https://mp.weixin.qq.com/s/ZqLu97S6VluRc1Mu0jL1Uw
