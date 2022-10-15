@@ -228,6 +228,11 @@ Angel PowerFL 安全联合计算 https://cloud.tencent.com/solution/powerfl
 
 ## 字节
 
+Jeddak亮相2022世界人工智能大会|隐私计算的实践与探索 https://mp.weixin.qq.com/s/gPShSYeOII6HcJcB0n-28w
+- > `安全研究团队  字节跳动安全中心  2022-09-16 17:18 发表于北京`
+- > **Jeddak-MPC在联合查询与统计场景的实战**
+  * > 在面对需要利用多方数据进行联合查询时，Jeddak-MPC也有不俗实力。比如一方拥有人群的特征数据，另一方拥有购买标签数据，需要联合分析广告的投放效果。首先MPC的底层实现对用户是透明的，用户通过使用常规的SQL发起任务，Jeddak将SQL重写技术与MPC算子结合，从而实现在各方数据均不出域的情况下实现联合查询，***目前Jeddak-MPC已支持亿级的联合查询***。
+
 安全计算，云厂商新必争之地 https://mp.weixin.qq.com/s/QZ4egckqcRISQHAW_MA1kg
 - > “今年4月，我收到了IEEE Symposium on Security and Privacy大会组委会的邮件通知。”火山引擎副总裁张鑫没想到，十年前发表于信息安全领域顶会IEEE Security and Privacy的论文，现在又获得了评奖门槛极其严苛的IEEE“Test of Time”奖（时间沉淀奖）。
 - > IEEE认定，在这个层面上，以张鑫为一作的《SCION: Scalalbility, Control, and Isolation on Next Generation Networks（2011）》（SCION：下一代网络上的可扩展性、控制和隔离）对互联网安全的意义，与论文《Unleashing Mayhem on Binary Code (2012)》（释放二进制代码上的混乱 ）对二进制范式的演进、《Click Trajectories: End-to-End Analysis of the Spam Value Chain》（点击轨迹：垃圾邮件价值链的端到端分析）对垃圾邮件的意义相似。
