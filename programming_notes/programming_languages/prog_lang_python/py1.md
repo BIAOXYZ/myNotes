@@ -58,8 +58,11 @@ http://www.jb51.net/article/89425.htm
 > ~~Python并行编程 中文版 https://python-parallel-programmning-cookbook.readthedocs.io/zh_CN/latest/index.html~~
 >> //已转移。
 
-Python 黑魔法手册 https://github.com/iswbm/magic-python || http://magic.iswbm.com/zh/latest/
+【[:star:][`*`]】 Python 黑魔法手册 https://github.com/iswbm/magic-python || http://magic.iswbm.com/zh/latest/
 > 这哥们还有一本Go的入门书也可以：https://github.com/iswbm/GolangCodingTime || http://golang.iswbm.com/en/latest/
+
+python-tutorial https://github.com/shibing624/python-tutorial
+- > Python实用教程，包括：Python基础，Python高级特性，面向对象编程，多线程，数据库，数据科学，Flask，爬虫开发教程。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

@@ -235,3 +235,9 @@ git pull remoterepo master:branch2 -- 只会把branch2更新到最新。
 >> notes: 一个没有什么用的命令，比如你有个文件`1.md`，想把它放到另外一个目录里。我过去都是直接剪切过去，然后`git add .`，最后`git commit -m "some commit information"`。用`git mv`不过就是达到了无需`git add .`，直接commit就可以。但是最关键的`.git`目录下的空间还是膨胀了。。。所以还是得研究下git gc之类减小仓库空间的命令。
 
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
+
+# git 相关工具
+
+gitwatch https://github.com/gitwatch/gitwatch
+- > Watch a file or folder and automatically commit changes to a git repo easily.
+  >> //notes：这不就是我过去（硕士）写毕业论文时候想做没做的嘛。。。

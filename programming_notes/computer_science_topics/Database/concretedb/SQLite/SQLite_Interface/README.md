@@ -143,3 +143,8 @@ sqlite3 --- SQLite 数据库 DB-API 2.0 接口模块 https://docs.python.org/zh-
 使用SQLite https://www.liaoxuefeng.com/wiki/1016959663602400/1017801751919456
 
 How to set SQLite isolation levels, using Python https://stackoverflow.com/questions/34000868/how-to-set-sqlite-isolation-levels-using-python
+
+# sqlite to postgresql
+
+pgsqlite https://github.com/bitdotioinc/pgsqlite
+- > Load sqlite databases into Postgres databases

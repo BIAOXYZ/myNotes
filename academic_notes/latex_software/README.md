@@ -1,4 +1,11 @@
 
+# 其他
+
+latexify_py https://github.com/google/latexify_py
+- > A Python package that generates LaTeX math description from Python functions.
+
+# MiKTeX
+
 CTeX的MiKTeX出现No Data: Data: Get host by name failed in tcp_connect()错误解决 https://blog.csdn.net/bluehatihati/article/details/99744291
 - > 原因是CTeX中自带的MiKTeX组件版本过低，无法连接服务器进行更新，手动更新会出现错误提示：
   ```console
