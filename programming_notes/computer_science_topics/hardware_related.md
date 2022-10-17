@@ -162,9 +162,23 @@ AMD 与群联演示 PCIe 5.0 M.2 SSD，顺序读写破 10GB/s https://www.ithome
 
 Intel 傲腾是怎样工作的，为什么叫做内存，配合机械盘能不能媲美 NAND SSD ？ - 知乎 https://www.zhihu.com/question/58976033
 
-# RDMA
+# DMA
 
-Remote direct memory access https://en.wikipedia.org/wiki/Remote_direct_memory_access
+Direct memory access https://en.wikipedia.org/wiki/Direct_memory_access || 直接内存访问 https://zh.wikipedia.org/wiki/%E7%9B%B4%E6%8E%A5%E8%A8%98%E6%86%B6%E9%AB%94%E5%AD%98%E5%8F%96
+- > 直接内存访问（Direct Memory Access，DMA）是计算机科学中的一种内存访问技术。它允许某些电脑内部的硬件子系统（电脑外设），可以独立地直接读写系统内存，而不需中央处理器（CPU）介入处理 。在同等程度的处理器负担下，DMA是一种快速的数据传送方式。很多硬件的系统会使用DMA，包含硬盘控制器、绘图显卡、网卡和声卡。
+
+太慢不能忍，CPU 又拿硬盘和网卡开刀了 https://www.ithome.com/0/647/043.htm  【from `编程技术宇宙`】
+
+DMA 技术是什么，在哪里用？看完绝对有收获 https://www.jianshu.com/p/3a26e8c9f402
+
+DMA & RDMA 基本概念 https://zdyxry.github.io/2020/03/02/RDMA-%E6%A6%82%E5%BF%B5/
+
+RDMA技术详解——DMA和RDMA概念 https://blog.csdn.net/u013253075/article/details/119842869
+
+## RDMA
+
+Remote direct memory access https://en.wikipedia.org/wiki/Remote_direct_memory_access || 远程直接内存访问 https://zh.wikipedia.org/wiki/%E8%BF%9C%E7%A8%8B%E7%9B%B4%E6%8E%A5%E5%86%85%E5%AD%98%E8%AE%BF%E9%97%AE
+- > 在数据中心领域，远程直接内存访问（英语：remote direct memory access，RDMA）是一种绕过远程主机操作系统内核访问其内存中数据的技术，由于不经过操作系统，不仅节省了大量CPU资源，同样也提高了系统吞吐量、降低了系统的网络通信延迟，尤其适合在大规模并行计算机集群中有广泛应用。在基于NVMe over Fabric的数据中心中，RDMA可以配合高性能的NVMe SSD构建高性能、低延迟的存储网络。
 
 深入浅出全面解析RDMA - 围城的文章 - 知乎 https://zhuanlan.zhihu.com/p/37669618
 

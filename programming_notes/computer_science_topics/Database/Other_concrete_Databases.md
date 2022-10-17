@@ -20,6 +20,8 @@ Database of Databases
 
 redis7.0 中文注释 https://github.com/CN-annotation-team/redis7.0-chinese-annotated
 
+Redis 为什么那么快 https://www.ithome.com/0/647/129.htm || https://mp.weixin.qq.com/s/keVI4Fn8N42VhIhODkuqBA
+
 ## Redis实现分布式锁
 
 redis分布式锁3种实现方式对比分析总结 https://young17.github.io/backup/2020-1-28-redis_distributed_locks/
