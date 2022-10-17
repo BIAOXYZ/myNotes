@@ -178,6 +178,16 @@ $
   * 第一是编译速度不会慢很多，因为利用 `apt`/`yum` 之类的包管理工具和/或其他工具，准备编译环境的过程中所涉及的镜像层docker会缓存，所以每次新的 commit 合入后再build新镜像时，前面的大部分步骤都直接过了。
   * 第二是这种方式真的更加灵活，容器就是一个独立环境，里面随便搞，随时可以删除再启动一个（甚至镜像也可以重新再build，或者带着你当前的改动再build）。当想编译代码的时候，既可以进到容器内部，修改代码，然后在容器内部进行编译（为了方便，需要vsc连接到容器进行开发，可以参考相应部分，已经比较完美地解决了）；也可以在外部（也就是宿主机）修改代码，直接在外部通过build新镜像来编译（需要仓库里有编译脚本，或者Dockerfile里有编译相关语句）
   * 此外，可以参考 vs code 目录下的 [container 部分](../../../programming_tools_and_libs/ide/vsc/vsc_docker/README.md)，里面记录了如何巧用 vsc 的相关插件达到各种方便的效果。
+- 【`2022.10.17`再次补充】：现在有个更加灵活的建议：只 build 编译镜像，每次从编译镜像启动容器，但是在启动容器时，***用 `-v` 挂载（只与这个容器对应的）一份宿主机上代码仓库的副本***，这样就把所有的优点都吸取了 —— 既可以 ***每个容器保持自己的一份环境***（从而克服了前面第一条思路的缺点）；也 ***不用像上面第二条思路一样每次需要用 `docker cp` 在宿主机和容器之间复制来复制去***（因为有些环境可能有特殊情况限制，导致容器里那份仓库代码没法 push commit 甚至没法 pull commit）。更具体地说，大概是这样操作的：
+  ```sh
+  # host 上的代码仓库在 my-github-project/
+  # 容器 11 里有一份自己的代码仓库版本，要同步代码时就算容器里不能同步，可以去宿主机对应目录同步
+  cp -r my-github-project/ 11-my-github-project/
+  docker run --name 11 -itd -v /home/xxx/yyy/11-my-github-project/:/proj_root/ yourbuildimage:v1 bash
+  # 容器 22 也是类似的
+  cp -r my-github-project/ 22-my-github-project/
+  docker run --name 22 -itd -v /home/xxx/yyy/22-my-github-project/:/proj_root/ yourbuildimage:v1 bash
+  ```
 
 ***实战过程***：
 ```sh
