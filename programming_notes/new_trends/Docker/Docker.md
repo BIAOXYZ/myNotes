@@ -140,6 +140,8 @@ Docker学习：Image的本地存储结构 https://segmentfault.com/a/11900000175
 - Docker---(2)docker pull 下来的镜像存储在哪里 https://blog.csdn.net/weixin_39800144/article/details/79019503
 - docker 镜像与容器存储目录结构精讲 https://blog.csdn.net/wanglei_storage/article/details/50299491
 
+Where are my container's files? Inspecting container filesystems https://blog.px.dev/container-filesystems/
+
 ### 修改docker镜像和容器的位置
 
 - 两个修改Docker本地镜像与容器的存储位置的方法 https://www.jianshu.com/p/e98ef6d6cfb4

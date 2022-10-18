@@ -11,6 +11,8 @@
 
 --------------------------------------------------
 
+为什么服务端程序都需要先 listen 一下？ https://www.ithome.com/0/647/291.htm || https://mp.weixin.qq.com/s/hv2tmtVpxhVxr6X-RNWBsQ
+
 图解 Linux 网络包接收过程 https://www.ithome.com/0/645/789.htm || https://mp.weixin.qq.com/s/GoYDsfy9m0wRoXi_NCfCmg
 
 万字多图，搞懂 Nginx 高性能网络工作原理！ https://www.ithome.com/0/645/041.htm || https://mp.weixin.qq.com/s/AX6Fval8RwkgzptdjlU5kg
