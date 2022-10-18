@@ -79,3 +79,41 @@ How do I unlock a SQLite database? https://stackoverflow.com/questions/151026/ho
 - > 上面的介绍可以看出Sqlite其实是一个客户端嵌入数据库，在高并发的服务器上是无法适用的，同事百度后，发现连接串中加入 "`Journal Mode=WAL;`"可以缓解并发压力，可是客户生产环境仍然出现“database is locked”错误。
 - > 解决办法：
   * > 事实证明Sqlite不支持并发执行写入操作，即使是不同的表，只支持库级锁，而且这个Sqlite本身没有实现，必须自己实现这个库级锁。
+
+你不得不知的SQLite https://www.googleplus.party/2017/10/20/%E4%BD%A0%E4%B8%8D%E5%BE%97%E4%B8%8D%E7%9F%A5%E7%9A%84SQLite/
+- > **那SQLite如何优化了？**
+  * > FMDB是基于SQLite封装的。早期的FMDB是不支持并发的，但是后来的版本中，FMDB已经解决了在并发问题。
+  * > 四种锁：
+    ```console
+    共享锁（shared lock）
+    预留锁（reserved lock）
+    未决锁（pending lock）
+    排他锁（exclusive lock）
+    ```
+  * > SQLite读操作（如：select），可以并发的读取数据库，如果有一个读存在，那么就不允许写
+  * > SQLite写操作（如：insert/update/delete）
+    + > 1.它首先会申请一个预留锁（reserved lock），在启用预留锁后，如果已存在的读操作可以继续，新的读请求也可以有；
+    + > 2.然后，它会把需要更新的数据写到缓冲区中；
+    + > 3.需要写到缓冲区的更新写完以后，就需要将更新刷到硬盘DB了，但是此时它会申请未决锁（pending lock），申请了该锁后，就不能再有新的共享锁被申请了，也就是阻止了新的读操作。但是已经存在的读操作还是可以继续读的。然后它就等待读操作全部完毕后，它就会申请排他锁（exclusive lock），此时不能再有其他的锁存在了，然后就进行commit操作，最后，将缓冲区的数据写到DB中。
+  * > 事务，就是一组SQL语句操作让它们顺序执行，要么都成功了，要么只要有一个错误，全部操作回滚；它们的特点如下，一般都是四个命令来控制，begin transaction，commit或者end transaction，rollback：
+    ```console
+    原子性（Atomicity）：确保工作单位内的所有操作都成功完成，否则，事务会在出现故障的地方终止，并且回滚到以前的状态
+    一致性（Consistency）：确保数据库在成功提交的事务上正确的改变状态
+    隔离性（Isolation）：使事务操作相互独立和透明
+    持久性（Durability）：确保已提交事务的结果或效果在系统发生故障的情况下仍然存在
+    ```
+- > **SQLite优化要点**
+  * > 1.设计数据库时遵循三范式
+    + > 第一范式：每个字段（每一列）都不可再分，意思就是说：一列就是一个数据类型并且存储一种类型的值
+    + > 第二范式：满足第一范式的情况下，我们还需要保证一条数据在表中有一个主键（唯一标识），不一定是id，也可以是身份证号（只要表示唯一性就行）
+    + > 第三范式：满足第二范式的情况下，我们要确保数据表中的每一列数据都和主键有直接关系，而不是简介关系
+  * > 2.数据量比较大的话，可以对数据表（data table）进行分片（sharding）
+  * > 3.从业务上可以分离，且数据量也较大的话，也可以分库（sub-database）
+  * > 4.查询数据太频繁的地方，不建议使用连表查询
+  * > 对数据表进行分片，对数据库也分子库
+    + > https://stackoverflow.com/questions/15778716/sqlite-insert-speed-slows-as-number-of-records-increases-due-to-an-index/17110004#17110004
+    + > https://stackoverflow.com/questions/128919/extreme-sharding-one-sqlite-database-per-user
+- > **读写死锁案例**
+- > **关系型数据库**
+  * > [SQLCiper 加密](https://github.com/sqlcipher/sqlcipher)
+  * > [FMDB 包含SQLCiper，多线程安全的](https://github.com/ccgus/fmdb)
