@@ -138,6 +138,8 @@ http://www.cnblogs.com/gaojian/p/3164792.html
 
 SQL优化（六） MVCC PostgreSQL实现事务和多版本并发控制的精华 http://www.jasongj.com/sql/mvcc/
 
+关于PostgreSQL的事务快照的延迟 https://developer.aliyun.com/article/464008 || http://lmlm.blog.chinaunix.net/uid-28911492-id-5052002.html
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 ### 临时表和unlogged table

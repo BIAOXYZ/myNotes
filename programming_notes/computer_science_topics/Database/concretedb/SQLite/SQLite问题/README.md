@@ -114,6 +114,24 @@ How do I unlock a SQLite database? https://stackoverflow.com/questions/151026/ho
     + > https://stackoverflow.com/questions/15778716/sqlite-insert-speed-slows-as-number-of-records-increases-due-to-an-index/17110004#17110004
     + > https://stackoverflow.com/questions/128919/extreme-sharding-one-sqlite-database-per-user
 - > **读写死锁案例**
+  >> //notes：这里作者原文没有用 `begin;` 开启事务，于是就复现不了。下面是我自己手动试的，两个窗口都用 `begin;` 开启下事务就可以了。反正感觉（作者文章这里）还是有些问题的，需要后续再看看。
+  ```console
+  sqlite> begin;
+  sqlite> select * from t1;
+  1|a
+  2|b
+  3|c
+  sqlite> insert into t1 values (5, "a");
+  Error: database is locked
+  sqlite> 
+  ```
+  ```console
+  sqlite> begin;
+  sqlite> insert into t1 values (6,"c");
+  sqlite> commit;
+  Error: database is locked
+  sqlite> 
+  ```
 - > **关系型数据库**
   * > [SQLCiper 加密](https://github.com/sqlcipher/sqlcipher)
   * > [FMDB 包含SQLCiper，多线程安全的](https://github.com/ccgus/fmdb)
