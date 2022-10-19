@@ -20,6 +20,38 @@ Python 代码调试神器：PySnooper https://www.cnblogs.com/wongbingming/p/139
 
 PySnooper 源码阅读 https://zdyxry.github.io/2019/04/27/PySnooper-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/
 
+# `q` (and `logging`?)
+>> 【[:star:][`*`]】 //notes：其实开始是想利用 logging 之类的日志库，***把每一步运行完当前所有的变量值、代码到哪一行了之类的信息全都打印到日志里，这样其实就能起到 gdb 的效果了***（虽然日志文件一定会很大，但是可以只关注自己想关注的那几行代码或者函数执行前后的变量/返回值变化就行。）
+
+In python, is there a way to automatically log information any time you create a variable? https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a
+- https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a/62844789#62844789
+
+q https://github.com/zestyping/q
+- > Quick and dirty debugging output for tired programmers. ⛺
+- > **Other projects inspired by this one**
+  * [`q` for golang](https://github.com/y0ssar1an/q)
+  * [`qq` for elixir](https://github.com/mandarvaze/q)
+  * [`ic` for Python](https://github.com/gruns/icecream) - Similar library for Python, inspired by `q`.
+- > The following [Lightning Talk](http://pyvideo.org/video/1858/sunday-evening-lightning-talks#t=25m15s) shows how powerful using q can be.
+
+How to log a variable's name and value? https://stackoverflow.com/questions/19317770/how-to-log-a-variables-name-and-value
+- https://stackoverflow.com/questions/19317770/how-to-log-a-variables-name-and-value/19318417#19318417
+  * > If the tool you need is only for developing and debugging, there's a useful package called [q](https://github.com/zestyping/q).
+  * > It has been submitted to pypi, it can be installed with `pip install q` or `easy_install q`.
+    ```py
+    import q; q(foo)
+
+    # use @q to trace a function's arguments and return value
+    @q
+    def bar():
+       ...
+
+    # to start an interactive console at any point in your code:
+    q.d()
+    ```
+  * > The results are output to the file `/tmp/q` (or any customized paths) by default, so they won't be mixed with stdout and normal logs. You can check the output with `tail -f /tmp/q`. The output is highlighted with different colors.
+  * > The author introduced his library in a lightning talk of PyconUS 2013. The video is [here](https://youtu.be/OL3De8BAhME), begins at [25:15](https://www.youtube.com/watch?v=OL3De8BAhME&t=1515s).
+
 # 其他
 
 Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-boss/
