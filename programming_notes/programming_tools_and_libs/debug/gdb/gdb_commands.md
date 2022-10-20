@@ -4,7 +4,7 @@
 GDB: The GNU Project Debugger https://www.gnu.org/software/gdb/
 
 GDB Documentation https://www.gnu.org/software/gdb/documentation/
-- Debugging with GDB https://sourceware.org/gdb/current/onlinedocs/gdb/
+- 【[:star:][`*`]】 Debugging with GDB https://sourceware.org/gdb/current/onlinedocs/gdb/ || https://sourceware.org/gdb/onlinedocs/gdb/index.html
 - https://sourceware.org/gdb/download/onlinedocs/
   * Debugging with gdb https://sourceware.org/gdb/download/onlinedocs/gdb.pdf
 

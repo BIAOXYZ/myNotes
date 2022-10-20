@@ -52,6 +52,7 @@ $77 = {data = {ptr_value = 0x2ae4a08, int_value = 44976648, oid_value = 44976648
 ```
 
 ```sh
+# 发现一个可能有用的点，对于某个结构，可以先用 ptype 打印一下，这样至少能很快知道该结构里的成员有哪些，从而更方便打印相应的成员
 (gdb) ptype parsetree_list
 type = struct List {
     NodeTag type;

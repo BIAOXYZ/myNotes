@@ -15,3 +15,11 @@ Greenplum 6.0： 从 OLAP 到 HTAP https://mp.weixin.qq.com/s/Z1MBsqMBZM0UI8dNAg
 - > 这个性能可以满足很多 OLTP 的业务场景。当然 Greenplum HTAP 的现阶段目标不是处理极致的 OLTP 场景，而是希望达到单个 PostgreSQL 的能力，根据该评测，目前 Greenplum 6.0 和单节点的 PostgreSQL 的OLTP能力在同一个数量级上。
 
 Greenplum ：基于 PostgreSQL 的分布式数据库内核揭秘 (上篇) https://www.infoq.cn/article/3ij7l8hvr2mxhqaqi2ra
+
+Greenplum 分布式数据库内核揭秘(下篇) https://cn.greenplum.org/greenplum-distributed-database-kernel-2/
+
+【[:star:][`*`]】 Greenplum 编译安装和调试 https://cn.greenplum.org/greenplum-compile-install/ || https://cn.greenplum.org/wp-content/uploads/2020/08/10.-Greenplum%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E5%92%8C%E8%B0%83%E8%AF%95-For-%E5%8F%91%E5%B8%83.pdf
+- > 4.调试 Greenplum MPP 数据库
+  * > 4.1 调试 Master 节点Backend进程
+  * > 4.2 调试 Segment 节点Backend进程 （QE)
+  * > 4.3 使用 IDE 调试
