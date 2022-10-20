@@ -1,4 +1,9 @@
 
+Python 的生成器太奇怪了吧，传递的居然不是变量的内存地址指针，而是变量符号 https://www.v2ex.com/t/888402
+- > 应该不是传了符号，而是 generator 本身是 lazy 的，在调用 list(l_f1)的时候才真正执行了运算，这时 l 已经指向第二个值了
+- > l_f1 = 和 l_f2 = 后面如果是「小括号」是惰性求值的，你不 print 它就不计算。改成「方括号」就没问题了。基础姿势。
+- > https://docs.python.org/zh-cn/3/reference/expressions.html?highlight=yield%20send#generator-expressions 辛苦看看文档吧，生成器表达式是惰性求值
+
 你们说 Python 这个是 Bug 还是 Feature？ https://www.v2ex.com/t/876494
 - > [当年 1.6 亿美金估值的公司—— Digg 是如何被一句 Python 函数可变默参 毁掉的](https://www.v2ex.com/t/467817)
 - https://www.v2ex.com/t/467817

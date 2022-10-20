@@ -32,6 +32,11 @@ SGX技术的分析和研究 http://www.jos.org.cn/html/2018/9/5594.htm
 Intel SGX背景、其他可信计算技术和TEE技术（翻译自Intel SGX Explained） https://blog.csdn.net/clh14281055/article/details/107248252
 - > 强烈推荐《Intel SGX Explained》 作者对Intel SGX进行了详细的教科书般的讲解 <br> Costan V, Devadas S. Intel SGX Explained[J]. IACR Cryptol. ePrint Arch., 2016, 2016(86): 1-118. http://css.csail.mit.edu/6.858/2020/readings/costan-sgx.pdf
 
+CPU 有个禁区，内核权限也无法进入！ https://www.ithome.com/0/647/857.htm
+- 回复里的：
+  * > 问题好像在Win 11系统或者英特尔Alder Lake上，SGX支持被停用了。 <br> CyberLink：想看 4K 蓝光光碟，请不要使用英特尔 11/12 代酷睿处理器 https://www.ithome.com/0/598/773.htm
+    >> //notes：这是官方打自己脸吗？- -    
+
 ## Occlum (蚂蚁金服)
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum || https://occlum.io/
