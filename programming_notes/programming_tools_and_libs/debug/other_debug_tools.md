@@ -18,6 +18,10 @@ linux内核调试之 crash分析dump文件 - 小乐叔叔的文章 - 知乎 http
 
 Ubuntu 20.04 Kdump + Crash 初体验 https://www.ebpf.top/post/ubuntu_kdump_crash/
 
+# nsenter
+
+巧用 Nsenter 调取宿主机工具调试容器内程序 https://cloud.tencent.com/developer/article/1730699
+
 # debug tool for microservices
 
 Debugging microservices - Squash vs. Telepresence https://www.weave.works/blog/debugging-microservices-squash-vs-telepresence
