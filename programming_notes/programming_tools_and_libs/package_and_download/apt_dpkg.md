@@ -89,13 +89,13 @@ How To Add Apt Repository In Ubuntu https://linuxize.com/post/how-to-add-apt-rep
   ```
 - > **Adding Repositories with `add-apt-repository`**
   * > The basic syntax of the `add-apt-repository` command is as follows:
-  ```sh
-  add-apt-repository [options] repository
-  ```
-  >> //notes：个人实战如下：
-  ```sh
-  sudo apt-add-repository 'deb http://ftp.us.debian.org/debian stretch main contrib non-free'
-  ```
+    ```sh
+    add-apt-repository [options] repository
+    ```
+    >> //notes：个人实战如下：
+    ```sh
+    sudo apt-add-repository 'deb http://ftp.us.debian.org/debian stretch main contrib non-free'
+    ```
   * > **Adding PPA Repositories**
 
 How to Add a Package Repository to Debian https://linuxhint.com/how-to-add-a-package-repository-to-debian/
@@ -111,6 +111,27 @@ Ubuntu20.04软件源更换 - 舟公的文章 - 知乎 https://zhuanlan.zhihu.com
 
 How can I check the available version of a package in the repositories? https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories
 - https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories/340536#340536
+  * > Use the command:
+    ```sh
+    apt-cache policy <packageName>
+    ```
+  * > This gives you information of all available package versions. Example:
+    ```sh
+    alaa@aa-lu:~$ apt-cache policy vlc
+    vlc:
+      Installed: 2.0.8-0ubuntu0.13.04.1
+      Candidate: 2.0.8-0ubuntu0.13.04.1
+      Version table:
+     *** 2.0.8-0ubuntu0.13.04.1 0
+            500 http://ae.archive.ubuntu.com/ubuntu/ raring-updates/universe i386 Packages
+            500 http://security.ubuntu.com/ubuntu/ raring-security/universe i386 Packages
+            100 /var/lib/dpkg/status
+         2.0.6-1 0
+            500 http://ae.archive.ubuntu.com/ubuntu/ raring/universe i386 Packages
+    ```
+    + > From the output, you can see that there are two versions available: `2.0.8-0ubuntu0.13.04.1` and `2.0.6-1`. It also tells you which repositories they are coming from.
+    + > `Installed:` tells you the version you have installed. If you don't have the package installed, you'll see `(none)`.
+    + > `Candidate:` is the version that will be installed if you use `apt-get install vlc`. If you want to install the other version, you would do `apt-get install vlc=2.0.6-1`.
 
 How do I find out which repository a package comes from? https://askubuntu.com/questions/8560/how-do-i-find-out-which-repository-a-package-comes-from
 
