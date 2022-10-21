@@ -577,3 +577,5 @@ C++ 教程 | C11 智能指针 https://aiden-dong.github.io/2020/01/26/cpp%E6%99%
     + > 不能直接用智能指针给普通指针赋值，因为普通指针没有辅助指针。
     + > 一个普通指针最多给一个智能指针赋值，否则会出现多个辅助指针。
     + > 智能指针之间可以相互赋值，共同指向辅助指针即可。
+
+shared_ptr的一切(本质、make_shared) https://www.cnblogs.com/chaohacker/p/14802112.html
