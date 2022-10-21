@@ -62,13 +62,15 @@ apt-key finger              - 列出所有验证指纹
 apt-key adv                 - 设置key的高级配置, Pass advanced options to gpg
 ```
 
-# apt换源/增加源
+# apt源相关
+
+## apt换源/增加源
 
 How To Add Apt Repository In Ubuntu https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/
 - > An APT repository is a ***network server*** or a ***local directory*** containing ***`deb` packages*** and ***metadata files*** that are readable by the APT tools.
 - > In this tutorial, we will show you two ways to add ***apt repository*** on Ubuntu and Debian systems. The first method is by using the `add-apt-repository` command and the second one is to manually add the repository using a text editor.
 - > **Apt Sources**
-  * > On Ubuntu and all other Debian based distributions, the `apt` software repositories are defined in the `/etc/apt/sources.list` file or in separate files under the `/etc/apt/sources.list.d/` directory.
+  * > On Ubuntu and all other Debian based distributions, the `apt` software repositories are defined in the ***`/etc/apt/sources.list`*** file or in separate files under the ***`/etc/apt/sources.list.d/`*** directory.
   * > The names of the repository files inside the `/etc/apt/sources.list.d/` directory must end with `.list`.
   * > The general syntax of the `/etc/apt/sources.list` file takes the following format:
     ```console
@@ -81,9 +83,36 @@ How To Add Apt Repository In Ubuntu https://linuxize.com/post/how-to-add-apt-rep
   * > The format for the files under the `/etc/apt/sources.list.d/` directory is the same as for the regular `sources.list` file.
   * > Most repositories are providing a public key to authenticate downloaded packages which need to be downloaded and imported.
 - > **Installing `add-apt-repository` (`add-apt-repository` command not found)**
+  ```sh
+  sudo apt update
+  sudo apt install software-properties-common
+  ```
 - > **Adding Repositories with `add-apt-repository`**
+  * > The basic syntax of the `add-apt-repository` command is as follows:
+  ```sh
+  add-apt-repository [options] repository
+  ```
+  >> //notes：个人实战如下：
+  ```sh
+  sudo apt-add-repository 'deb http://ftp.us.debian.org/debian stretch main contrib non-free'
+  ```
+  * > **Adding PPA Repositories**
+
+How to Add a Package Repository to Debian https://linuxhint.com/how-to-add-a-package-repository-to-debian/
+- > **Adding a Package Repository Using apt on Debian**
+  * > You can also remove a PPA or a package repository with the following command:
+    ```sh
+    $ sudo apt-add-repository -r YOUR_REPOSITORY
+    ```
 
 Ubuntu20.04软件源更换 - 舟公的文章 - 知乎 https://zhuanlan.zhihu.com/p/142014944
+
+## 查看某个版本的软件属于哪一个源
+
+How can I check the available version of a package in the repositories? https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories
+- https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories/340536#340536
+
+How do I find out which repository a package comes from? https://askubuntu.com/questions/8560/how-do-i-find-out-which-repository-a-package-comes-from
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
