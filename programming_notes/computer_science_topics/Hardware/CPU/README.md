@@ -26,6 +26,10 @@
   * > 一个常见标准机架，高度尺寸通常是 42U。U 是一种表示服务器外部尺寸的单位，是 unit 的缩略语，1U 等于 4.445cm。机架宽度的话，有 600mm 或 800mm。
   * > 机架的深度有很多种，包括 600mm、800mm、900mm、1000mm、1200mm 等。通常来说，IT 设备（服务器）机架的深度更深（1100mm 或 1200mm），而通信设备的深度会浅一些（600mm）。
 
+秒懂 1U、2U、4U 和 42U 服务器 https://www.ithome.com/0/648/315.htm
+- 回复里的：
+  * > 这很简单理解，数据中心干过的都知道机柜上一格就是1u，也就是根据高度其实是可以看出来的，一般有42u的机柜，整个机柜都是服务器的就是42u服务器，一般都是厂商提供的一整套方案的机柜才是42u服务器。
+
 IBM 的 POWER 处理器的架构比 X86 强吗？ - 知乎 https://www.zhihu.com/question/22587769
 
 What is the impact of running the CPU at 100% for long periods at a time? [duplicate] https://superuser.com/questions/431309/what-is-the-impact-of-running-the-cpu-at-100-for-long-periods-at-a-time
