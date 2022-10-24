@@ -170,3 +170,14 @@ Python实现二分查找与bisect模块详解 https://www.jb51.net/article/10289
    return mid 
    return None
   ```
+
+# 高级用法
+
+## bisect 查找时也可以带key，并且可以查找复合型的元素
+
+https://docs.python.org/zh-cn/3.9/library/bisect.html#other-examples
+
+LeetCode相关题目：
+- `LC1235. 规划兼职工作` https://leetcode.cn/problems/maximum-profit-in-job-scheduling/
+  * https://leetcode.cn/problems/maximum-profit-in-job-scheduling/solution/gui-hua-jian-zhi-gong-zuo-by-leetcode-so-gu0e/
+  * https://leetcode.cn/problems/maximum-profit-in-job-scheduling/solution/dong-tai-gui-hua-er-fen-cha-zhao-you-hua-zkcg/
