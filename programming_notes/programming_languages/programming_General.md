@@ -356,11 +356,16 @@ Memory-mapped file https://en.wikipedia.org/wiki/Memory-mapped_file
 
 内存映射服务的列表 https://www.ibm.com/support/knowledgecenter/zh/ssw_aix_71/com.ibm.aix.genprogc/ls_mem_mapping_srvcs.htm
 
-认真分析mmap：是什么 为什么 怎么用 https://www.cnblogs.com/huxiao-tee/p/4660352.html
+认真分析mmap：是什么 为什么 怎么用 https://www.cnblogs.com/huxiao-tee/p/4660352.html || https://cloud.tencent.com/developer/article/1354167
+- > **`mmap`基础概念**
+  * > `mmap`是一种内存映射文件的方法，即将一个文件或者其它对象映射到进程的地址空间，实现文件磁盘地址和进程虚拟地址空间中一段虚拟地址的一一对映关系。实现这样的映射关系后，进程就可以采用指针的方式读写操作这一段内存，***<ins>而系统会自动回写脏页面到对应的文件磁盘上</ins>***，即完成了对文件的操作而不必再调用read,write等系统调用函数。相反，内核空间对这段区域的修改也直接反映用户空间，从而可以实现不同进程间的文件共享。如下图所示：
+    >> 【[:star:][`*`]】 //notes：所以`Andy Pavlo`的CMU数据库课程里提到数据库必须自己管理这一套，而不能用 `mmap`（否则看起来连最基本的 WAL 都做不到，因为你刚改完 page，还没改 log 呢，结果 `mmap` 机制直接把脏页给你落盘了。。。）。
 
 操作系统：图文详解 内存映射 https://www.jianshu.com/p/719fc4758813
 
 Linux 中 mmap() 函数的内存映射问题理解？ - 知乎 https://www.zhihu.com/question/48161206
+
+阿里二面：什么是mmap？ - 艾小仙的文章 - 知乎 https://zhuanlan.zhihu.com/p/357820303
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
