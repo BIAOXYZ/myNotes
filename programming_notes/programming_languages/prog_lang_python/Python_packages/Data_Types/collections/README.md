@@ -25,9 +25,3 @@ Python库的实用技巧专栏 https://juejin.cn/post/6844903992904908813
     counter = {i: test_list.count(i) for i in set(test_list)}
     # 返回值: {1: 7, 2: 5, 3: 3}
     ```
-
-# namedtuple
-
-Write Pythonic and Clean Code With namedtuple https://realpython.com/python-namedtuple/
-
-Namedtuple in Python https://www.geeksforgeeks.org/namedtuple-in-python/
