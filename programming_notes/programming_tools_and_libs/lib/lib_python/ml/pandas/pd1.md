@@ -44,9 +44,8 @@ Pandas https://www.kaggle.com/learn/pandas
   * > So a CSV file is a table of values separated by commas. Hence the name: "Comma-Separated Values", or CSV.
 - Indexing, Selecting & Assigning https://www.kaggle.com/residentmario/indexing-selecting-assigning
 
-Using Pandas and Python to Explore Your Dataset https://realpython.com/pandas-python-explore-dataset/
-
-Python pandas Tutorial | Introduction with Examples https://sparkbyexamples.com/python-pandas-tutorial-for-beginners/
-- Pandas – Convert DataFrame to Dictionary (Dict) https://sparkbyexamples.com/pandas/pandas-convert-dataframe-to-dictionary/
+【from `realpython`】
+- Using Pandas and Python to Explore Your Dataset https://realpython.com/pandas-python-explore-dataset/
+- Pandas: How to Read and Write Files https://realpython.com/pandas-read-write-files/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
