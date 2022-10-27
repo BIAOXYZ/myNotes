@@ -167,6 +167,9 @@ $73 = (Node *) 0x1e3a6b0
 $74 = {type = T_ColumnRef}
 ```
 
+sinvaladt.c https://doxygen.postgresql.org/sinvaladt_8c_source.html
+- GetNextLocalTransactionId() https://doxygen.postgresql.org/sinvaladt_8c.html#ab2c7e4dafedb1f32f7b62d1d050134f5
+
 # `.gdbinit` for pg debug
 
 Tip 15: get GDB to print your structures https://modelingwithdata.org/arch/00000065.htm

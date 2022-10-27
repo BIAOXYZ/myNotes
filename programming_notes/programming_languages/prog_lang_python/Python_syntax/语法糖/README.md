@@ -117,3 +117,5 @@ Python如何一行写完if elif else列表推导式 https://www.jianshu.com/p/65
 LeetCode相关题目：
 - `521. 最长特殊序列 Ⅰ` https://leetcode-cn.com/problems/longest-uncommon-subsequence-i/
   * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/401-600/000521/README.md#%E8%AF%AD%E6%B3%95%E7%82%B9%E5%8D%95%E8%A1%8C%E7%9A%84%E4%B8%89%E9%87%8D%E7%94%9A%E8%87%B3%E6%98%AF%E5%A4%9A%E9%87%8Dif%E8%A1%A8%E8%BE%BE%E5%BC%8F
+- `1822. 数组元素积的符号` https://leetcode.cn/problems/sign-of-the-product-of-an-array/
+  * https://leetcode.cn/submissions/detail/376815360/ || https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1801-2000/001822/001822_handmovedoghead.py3

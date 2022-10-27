@@ -135,3 +135,97 @@ How do I unlock a SQLite database? https://stackoverflow.com/questions/151026/ho
 - > **关系型数据库**
   * > [SQLCiper 加密](https://github.com/sqlcipher/sqlcipher)
   * > [FMDB 包含SQLCiper，多线程安全的](https://github.com/ccgus/fmdb)
+
+### `ImportError: /usr/local/lib/python3.7/_sqlite3.so: undefined symbol: _Py_ZeroStruct`
+
+**症状**：
+```sh
+$ python3
+Python 3.7.10 (default, Oct 27 2022, 14:20:05)
+[GCC 6.3.0 20170516] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sqlite3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python3.7/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.7/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ImportError: /usr/local/lib/python3.7/_sqlite3.so: undefined symbol: _Py_ZeroStruct
+>>>
+```
+
+**处理过程（参考了`【1】`、`【2】`、`【3】`，主要是`【3】`吧）**：
+
+1.在源码编译安装 Python，执行完 `make` 时，会在屏幕上打印类似下面这段信息（提示这几个库没有编译安装）。
+```console
+Python build finished successfully!
+The necessary bits to build these optional modules were not found:
+_curses               _curses_panel         _dbm
+_gdbm                 _lzma                 _tkinter
+_uuid                 readline
+To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+```
+
+2.以其中的 `_lzma` 和 `readline` 为例，执行了下述语句安装。
+```sh
+apt install -y liblzma-dev
+apt install -y libreadline-dev
+```
+
+3.再次在 Python 源码目录执行 `make`，会发现 `_lzma` 和 `readline` 这次就好了（不提示了）。然后重新 `sudo make install` 一次就可以了。
+```console
+Python build finished successfully!
+The necessary bits to build these optional modules were not found:
+_curses               _curses_panel         _dbm
+_gdbm                 _tkinter              _uuid
+To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+```
+
+4.同样的操作对 `sqlite3` 却不行，后来参考`【4】`，发现可能是因为之前用 `apt install -y python3-dev` 装过 python3.5，以及其他杂七杂八的原因，导致我的机器上相应的库路径（`/usr/local/lib/python3.7/site-packages`）里虽然有 `_sqlite3.so`，但是 import 就是不对。最后是灵机一动，把已有的两个都重命名了一下，然后再次 `sudo make install`，最后终于可以了。
+```sh
+$ python3
+Python 3.7.10 (default, Oct 27 2022, 14:31:48)
+[GCC 6.3.0 20170516] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import site; site.getsitepackages()
+['/usr/local/lib/python3.7/site-packages']
+>>>
+```
+```sh
+$ cd usr/local/lib/
+$ sudo mv python3.5/ python3.5-bak/
+$ sudo mv python3.7/ python3.7-bak/
+# 回到 Python 源码目录再安装一次。
+```
+```sh
+$ python3
+Python 3.7.10 (default, Oct 27 2022, 14:31:48)
+[GCC 6.3.0 20170516] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sqlite3
+>>> 
+```
+
+**相关帖子**：
+- Building Python and more on missing modules https://stackoverflow.com/questions/6171210/building-python-and-more-on-missing-modules  `【1】`
+- How can I add the sqlite3 module to Python? https://stackoverflow.com/questions/19530974/how-can-i-add-the-sqlite3-module-to-python  `【2】`
+- 解决办法：Python3.x UserWarning: Could not import the lzma module. Your installed Python is incomplete https://blog.csdn.net/dietime1943/article/details/120658063  `【3】`
+  * > **原因分析**：出现该错误的原因，是因为在依次执行完./configure 和 sudo make 的时候出现了错误提示，被忽略了。
+  * > 如果发现在执行make的时候出现类似下面的错误提示，那么就是因为依赖包没有提前安装好，需要提前安装好。
+  * > 提示如下：
+    ```console
+    Python build finished successfully!
+    The necessary bits to build these optional modules were not found:
+    _dbm                  _gdbm                 _lzma              nis
+    To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+    ```
+- Python安装sqlite3 https://www.cnblogs.com/yanzi-meng/p/8353729.html  `【4】`
+  * > 1.查看是Python是否有该库
+    + > 使用http://django-china.cn/topic/413/ 查看自己Python库的路径，
+      ```py
+      >>> import site; site.getsitepackages()
+      ['/home/user/usr/python/python2.7/lib/python2.7/site-packages', '/home/user/usr/python/python2.7/lib/site-python']
+      ```
+    + > 进入 `/home/user/usr/python/python2.7/lib/python2.7/lib-dynload` 看看是否有 `_sqlite3.so` 这个文件，发现没有这个文件，说明没有安装此扩展。
+- https://flaggo.github.io/python3-source-code-analysis/preface/unix-linux-build/
