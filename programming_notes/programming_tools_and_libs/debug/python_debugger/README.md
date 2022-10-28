@@ -21,7 +21,6 @@ Python 代码调试神器：PySnooper https://www.cnblogs.com/wongbingming/p/139
 PySnooper 源码阅读 https://zdyxry.github.io/2019/04/27/PySnooper-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/
 
 # `q` (and `logging`?)
->> 【[:star:][`*`]】 //notes：其实开始是想利用 logging 之类的日志库，***把每一步运行完当前所有的变量值、代码到哪一行了之类的信息全都打印到日志里，这样其实就能起到 gdb 的效果了***（虽然日志文件一定会很大，但是可以只关注自己想关注的那几行代码或者函数执行前后的变量/返回值变化就行。）
 
 In python, is there a way to automatically log information any time you create a variable? https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a
 - https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a/62844789#62844789
@@ -51,6 +50,27 @@ How to log a variable's name and value? https://stackoverflow.com/questions/1931
     ```
   * > The results are output to the file `/tmp/q` (or any customized paths) by default, so they won't be mixed with stdout and normal logs. You can check the output with `tail -f /tmp/q`. The output is highlighted with different colors.
   * > The author introduced his library in a lightning talk of PyconUS 2013. The video is [here](https://youtu.be/OL3De8BAhME), begins at [25:15](https://www.youtube.com/watch?v=OL3De8BAhME&t=1515s).
+
+# debug with records and logs by `logging` or other modules
+>> 【[:star:][`*`]】 //notes：其实开始是想利用 `logging` 之类的日志库，***把每一步运行完当前所有的变量值、代码到哪一行了之类的信息全都打印到日志里，这样其实就能起到 `gdb` 的效果了***（虽然日志文件一定会巨大，但是可以只关注自己想关注的那几行代码或者函数执行前后的变量/返回值变化就行。）。后来发现了 `q` 这个库，但是这个库不见得能 100% 达到我想要的效果，而且就算能，自己也可以写写试试。
+
+目前看来能起到帮助的函数、模块等包括：
+- `dir()`，以及 `globals()`，`locals()`，`vars()`
+- `pprint.pprint()`
+- `ast.literal_eval()`
+- `traceback.print_exc()`，`traceback.format_exc()`
+- `sys._getframe().f_code.co_name`，`sys._getframe().f_code.co_filename`，`sys._getframe().f_lineno`
+- `sys._getframe(1).f_globals.get()`
+
+## 打印所有变量
+- Viewing all defined variables in Python https://www.geeksforgeeks.org/viewing-all-defined-variables-in-python/
+- How to get a list of variables in specific Python module? https://stackoverflow.com/questions/9759820/how-to-get-a-list-of-variables-in-specific-python-module
+- Viewing all defined variables [duplicate] https://stackoverflow.com/questions/633127/viewing-all-defined-variables
+- Enumerate or list all variables in a program of [your favorite language here] [closed] https://stackoverflow.com/questions/430811/enumerate-or-list-all-variables-in-a-program-of-your-favorite-language-here
+
+## 打印文件名、函数名、行号等
+- Python之sys._getframe() https://www.cnblogs.com/hester/articles/4767152.html
+- Python sys._getframe() Examples https://www.programcreek.com/python/example/283/sys._getframe
 
 # 其他
 

@@ -9,6 +9,8 @@ logging --- Python 的日志记录工具 https://docs.python.org/zh-cn/3/library
 
 Logging in Python https://realpython.com/python-logging/
 
+Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/logging-in-python-a-developers-guide/
+
 Python之日志处理（logging模块） https://www.cnblogs.com/yyds/p/6901864.html
 
 Python + logging 输出到屏幕，将log日志写入文件 https://www.cnblogs.com/nancyzhu/p/8551506.html
