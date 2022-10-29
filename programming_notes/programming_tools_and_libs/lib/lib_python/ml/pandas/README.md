@@ -181,9 +181,29 @@ Pandas Tutorial: DataFrames in Python https://www.datacamp.com/community/tutoria
 
 ## Series
 
+Pandas DataFrame: How to print single row horizontally? https://stackoverflow.com/questions/40622796/pandas-dataframe-how-to-print-single-row-horizontally
+- https://stackoverflow.com/questions/40622796/pandas-dataframe-how-to-print-single-row-horizontally/40625100#40625100
+  * > use the `to_frame` method then transpose with `T`
+    ```py
+    df = pd.DataFrame([[100,200,300],[400,500,600]])
+    for index, row in df.iterrows():
+        print(row.to_frame().T)
+
+         0    1    2
+    0  100  200  300
+         0    1    2
+    1  400  500  600
+    ```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 下标和索引
+
+Pandas中loc和iloc函数用法详解（源码+实例） https://blog.csdn.net/W_weiying/article/details/81411257 || https://www.cnblogs.com/Summer-skr--blog/p/13707213.html
+- > `loc`函数：通过行索引 "Index" 中的具体值来取行数据（如取"Index"为"A"的行）
+- > `iloc`函数：通过行号来取行数据（如取第二行的数据）
+
+Pandas中at、iat函数详解 https://blog.csdn.net/W_weiying/article/details/84787423
 
 How are iloc, ix and loc different? https://stackoverflow.com/questions/31593201/how-are-iloc-ix-and-loc-different
 
