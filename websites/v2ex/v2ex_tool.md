@@ -127,10 +127,6 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 - > 34L +1 ，Python requests+openpyxl （如果有反爬就用 selenium 代替 requests） <br> 上个月刚好在弄，https://www.v2ex.com/t/827117 <br> 前几天又把 LOL 过往每个英雄的 KDA 都按日期统计出来了 https://imgur.com/8nCZuAD <br> 看楼主描述，实现这需求不难
 - > UI.Vision RPA 浏览器自动化工具 可以读 Excel,进行自动化查询,然后自动保存到表格
 
-**WindTerm**:
-- 迫于正版化需求，求一个免费的 Terminal/SSH/SFTP 工具 https://www.v2ex.com/t/824167
-- 最近发现一款不错的 SSH 客户端 WindTerm https://www.v2ex.com/t/801168
-
 Linux 能不能用虚拟机跑双系统呢 https://www.v2ex.com/t/799906
 ```console
 就是有点像 parallel+bootcamp 这样的，用 bootcamp 安装 windows 之后，既可以宿主机启动两种系统，又可以在 mac 里通过虚拟机启动 windows
