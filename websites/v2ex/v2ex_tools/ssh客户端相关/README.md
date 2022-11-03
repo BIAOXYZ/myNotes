@@ -1,4 +1,6 @@
 
+大佬都爱用什么远程管理工具呢？ https://www.v2ex.com/t/891950
+
 在 MAC 上使用的 SSH 客户端 https://www.v2ex.com/t/891314
 - > termius
   >> termius 挺好的！主要价格确实有点贵，有点难以接受！
