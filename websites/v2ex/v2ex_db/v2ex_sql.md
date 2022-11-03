@@ -1,4 +1,8 @@
 
+【[:star:][`*`]】 SQL 中 on 条件与 where 条件的区别 https://www.v2ex.com/t/892254
+- > 实际上一棍子打死还是不行的，总得看是什么类型的数据库，然后看其优化的逻辑；我干了 6 年一直用 Oracle ，实际用下来，很多场景中，其实 CBO 优化器都已经帮忙计算好了执行计划，两者基本没有差距；但是在复杂的语句（动辄百行以上），CBO 分析不过来的时候，on 能更好的帮助确定过滤集。
+- > A join B, on 与 where 效果是一致的 <br> A left join B, on 与 where 就有差别了，on 是过滤临时表的，B 表中的数据不满足 on 条件时会只返回 A 表数据(B 表数据为 null)，where 是对整个结果进行过滤
+
 逻辑大量的写在 sql 语句里 https://www.v2ex.com/t/835439
 
 求 sql 优化才几万数据查询都破 1s 了 https://www.v2ex.com/t/782918
