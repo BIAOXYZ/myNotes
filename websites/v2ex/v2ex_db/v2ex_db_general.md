@@ -1,5 +1,5 @@
 
-《DDIA 逐章精读》小册和逐章分享 https://www.v2ex.com/t/876038
+【[:star:][`*`]】 《DDIA 逐章精读》小册和逐章分享 https://www.v2ex.com/t/876038
 - > 在理解[《 Designing Data-Intensive Applications 》英文原文](https://dataintensive.net/)的基础上，结合我的几年存储和数据库开发工作经验，进行一些相应的解读和扩展，并参考 github 上 [Vonng 的中文翻译版](https://github.com/Vonng/ddia)，对每一章用中文逐句翻译、梳理、重新组织，作为每次分享的文字稿，在此 集结为一本开源小册：[《DDIA 逐章精读》](https://ddia.qtmuniao.com/)，希望可以对喜欢分布式系统、数据系统、系统设计的同学有所帮助. 水平所限，精力所囿，难免疏漏，如发现有任何有误之处，欢迎在 [repo](https://github.com/DistSysCorp/ddia) 中提 issue 和 PR ，这里是每次分享的[录屏](https://space.bilibili.com/30933812/channel/collectiondetail?sid=240551)。
 
 数据库事务 原子性和隔离性的疑问 https://www.v2ex.com/t/871401
