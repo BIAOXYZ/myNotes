@@ -41,3 +41,6 @@
 gdb调试coredump(使用篇) http://blog.csdn.net/sunxiaopengsun/article/details/72974548
 
 Linux生成core文件、core文件路径设置 https://blog.csdn.net/u011417820/article/details/71435031
+
+ulimit -c unlimited 详解 https://www.cnblogs.com/qq78292959/archive/2012/05/08/2490443.html || https://blog.csdn.net/phmatthaus/article/details/107182265
+- > 查看限制情况 `ulimit -a`
