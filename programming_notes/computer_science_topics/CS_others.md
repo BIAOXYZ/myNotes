@@ -65,8 +65,10 @@ craftinginterpreters_zh https://github.com/GuoYaxiang/craftinginterpreters_zh
 
 ## DB project
 
+SimpleDB
 - Database Design and Implementation Second Edition https://link.springer.com/book/10.1007/978-3-030-33836-7
 - The SimpleDB Database System -- Edward Sciore, Computer Science Department, Boston College http://www.cs.bc.edu/~sciore/simpledb/
+  * > [Note: The SimpleDB database system is completely unrelated to the "Amazon SimpleDB Web Service" distributed by Amazon.com.]
 
 MYDB https://github.com/CN-GuoZiyang/MYDB
 - > MYDB 是一个 Java 实现的简单的数据库，部分原理参照自 MySQL、PostgreSQL 和 SQLite。实现了以下功能：

@@ -1,4 +1,8 @@
 
+# 源码
+
+kafka3.3 中文注释 https://github.com/CN-annotation-team/kafka3.3-chinese-annotated
+
 # 系列文章
 
 Kafka 设计解析（六）：Kafka 高性能关键技术解析 https://www.infoq.cn/news/kafka-analysis-part-6
