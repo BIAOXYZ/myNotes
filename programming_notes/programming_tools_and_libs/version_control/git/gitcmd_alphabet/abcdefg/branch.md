@@ -19,4 +19,11 @@ git-branch - List, create, or delete branches https://git-scm.com/docs/git-branc
 
 # 其他帖子
 
+git查看某个commit属于哪个分支 https://blog.csdn.net/yang1349day/article/details/112171438
+- > 由于业务需求量很大,所以项目分支很多,有时候有些功能点没有合并到某一个分支,当找到commit id之后,如何知道某个提交对应的分支呢?
+  ```sh
+  git branch --contains commit-id
+  git branch --contains commit-id --all
+  ```
+
 # 个人实战

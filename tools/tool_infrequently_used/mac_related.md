@@ -156,6 +156,13 @@ Mac中Git忽略.DS_Store文件 https://orianna-zzo.github.io/sci-tech/2018-01/ma
 
 # `#` MacBook Pro 操作&设置&快捷键
 
+## 安装、卸载软件
+
+如何在 Mac 上卸载 App https://support.apple.com/zh-cn/HT202235
+- > **使用“启动台”删除应用**
+  * > 点按要删除的 App 旁边的“删除”按钮 ，然后点按“删除”进行确认。这个 App 将立即被删除。 没有显示 ❎ 的 App 要么并非来自 App Store，要么就是 Mac 的必备 App。***要删除并非来自 App Store 的 App，请改用“访达”***。
+- > **使用“访达”删除应用**
+
 ## 自带截屏
 
 在 Mac 上拍摄截屏 https://support.apple.com/zh-cn/HT201361
