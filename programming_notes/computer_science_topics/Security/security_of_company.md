@@ -177,6 +177,20 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
   * > 隐语是蚂蚁集团历时 6 年自主研发，以安全、开放为核心设计理念打造的可信隐私计算技术框架，涵盖了当前几乎所有主流隐私计算技术。
 - 隐私计算框架之——隐语secretflow（上） - AI架构师之路的文章 - 知乎 https://zhuanlan.zhihu.com/p/527469578
 
+隐语 PSI benchmark 白皮书，新鲜出炉 https://mp.weixin.qq.com/s/TvY4morH-dRsaCm5JI6eig
+- > 4.生成数据
+  * > 把脚本 generate_psi.py：https://github.com/secretflow/spu/blob/main/spu/psi/tools/generate_psi.py 传到alice机器的root目录下
+- > 5.限制宽带/延迟
+  ```sh
+  #100Mbps 20ms
+  tc qdisc add dev eth0 root handle 1: tbf rate 100mbit burst 256kb latency 800ms 
+  tc qdisc add dev eth0 parent 1:1 handle 10: netem delay 20msec limit 8000
+  清除限制
+  tc qdisc del dev eth0 root
+  查看已有配置
+  tc qdisc show dev eth0
+  ```
+
 ### 双子座实验室
 
 https://alibaba-gemini-lab.github.io/

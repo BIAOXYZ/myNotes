@@ -360,6 +360,14 @@ Kubernetes对象之ConfigMap https://www.jianshu.com/p/cf8705a93c6b
 - Kubernetes的ConfigMap解析 https://jimmysong.io/posts/kubernetes-configmap-introduction/
 - Kubernetes ConfigMap热更新测试 https://jimmysong.io/posts/kubernetes-configmap-hot-update/
 
+## kubernetes Volume
+
+emptyDir与hostPath https://www.cnblogs.com/breezey/p/9827570.html
+- > **`emptyDir`**
+  * > emptyDir类型的volume在pod分配到node上时被创建，kubernetes会在node上自动分配 一个目录，因此无需指定宿主机node上对应的目录文件。这个目录的初始内容为空，当Pod从node上移除时，emptyDir中的数据会被永久删除。emptyDir Volume主要用于某些应用程序无需永久保存的临时目录，多个容器的共享目录等。
+- > **`hostPath`**
+  * > hostPath Volume为pod挂载宿主机上的目录或文件，使得容器可以使用宿主机的高速文件系统进行存储。缺点是，在k8s中，pod都是动态在各node节点上调度。当一个pod在当前node节点上启动并通过hostPath存储了文件到本地以后，下次调度到另一个节点上启动时，就无法使用在之前节点上存储的文件。
+
 ## kubernetes StorageClass
 - 改变默认 StorageClass https://v1-18.docs.kubernetes.io/zh/docs/tasks/administer-cluster/change-default-storage-class/ || Change the default StorageClass https://v1-18.docs.kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/
 - Storage Classes https://v1-18.docs.kubernetes.io/zh/docs/concepts/storage/storage-classes/

@@ -21,6 +21,8 @@ B站的年轻人，真的有那么好学吗？ https://mp.weixin.qq.com/s/HY_oYg
 - 个人搜集链接:
   * bilibili lua BUG 本地未复现 https://www.v2ex.com/t/868332
 
+推荐一些我认为认真搞技术的 up 主 https://www.v2ex.com/t/893469
+
 ## ZeroTier
 
 简易利用ZeroTier等工具实现多人稳定游戏联机 https://www.bilibili.com/read/cv5281798/
