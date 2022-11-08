@@ -18,4 +18,9 @@
 
 scp和sftp常用操作 https://www.cnblogs.com/ggjucheng/archive/2012/08/19/2646031.html
 
+How to use SCP (secure copy) with ssh key authentication https://www.techrepublic.com/article/how-to-use-secure-copy-with-ssh-key-authentication/
+- > **Using scp with your key**
+  * > `scp -i ~/.ssh/id_rsa.pub FILENAME USER@SERVER:/home/USER/FILENAME`
+    >> //notes：这点和标准的 `ssh -i <your_key_path>` 是一样的用法。
+
 # 个人实战
