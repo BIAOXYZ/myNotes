@@ -29,12 +29,13 @@ Visual Studio Code 1.26 发布，大量新特性来袭 - Microsoft Visual Studio
 
 mac下vscode快捷键 https://www.jianshu.com/p/5c71b9fd7485
 - > **通用快捷键**
-```console
-⇧⌘P, F1 显示控制台
-⌘P 快速打开，快速查找并进入文件
-⇧⌘N 新建窗口(不是文件)
-⌘W 关闭窗口
-```
+  ```console
+  ⇧⌘P, F1 显示控制台
+  ⌘P 快速打开，快速查找并进入文件
+  ⇧⌘N 新建窗口(不是文件)
+  ⌘W 关闭窗口
+  ```
+  >> 【[:star:][`*`]】 //notes：尤其是 `⌘ + P` 快速查找文件好用。
 
 ## 打开配置文件 `setting.json`
 
