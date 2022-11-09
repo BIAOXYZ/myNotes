@@ -152,3 +152,105 @@ What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-
     > The Python GIL is often regarded as a mysterious and difficult topic. But keep in mind that as a Pythonista ***you’re usually only affected by it if you are <ins>writing C extensions</ins> or if you’re using <ins>CPU-bound multi-threading</ins> in your programs***.
     > 
     > In that case, this article should give you everything you need to understand what the GIL is and how to deal with it in your own projects. And if you want to understand the low-level inner workings of GIL, I’d recommend you watch the [Understanding the Python GIL](https://www.youtube.com/watch?v=Obt-vMVdM8s) talk by David Beazley.
+
+## 个人实战该文章
+
+***普通版本（无任何并发）***：
+```py
+import time
+COUNT = 300000000
+
+def countdown(n):
+    print("inner function start")
+    t1 = time.time()
+    while n>0:
+        n -= 1
+    t2 = time.time()
+    print("inner function end")
+    print("time in inner function is: ", t2 - t1)
+
+start = time.time()
+countdown(COUNT)
+end = time.time()
+print('Time taken in seconds -', end - start)
+```
+```console
+# 可以看到，单进程单线程版本的程序跑完，约需要 12 秒。
+inner function start
+inner function end
+time in inner function is:  12.570079565048218
+Time taken in seconds - 12.570316791534424
+```
+
+***多线程版本***：
+```py
+import time
+from threading import Thread
+COUNT = 300000000
+
+def countdown(n):
+    print("inner function start")
+    t1 = time.time()
+    while n>0:
+        n -= 1
+    t2 = time.time()
+    print("inner function end")
+    print("time in inner function is: ", t2 - t1)
+
+t1 = Thread(target=countdown, args=(COUNT//2,))
+t2 = Thread(target=countdown, args=(COUNT//2,))
+
+start = time.time()
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+end = time.time()
+print('Time taken in seconds -', end - start)
+```
+```console
+# 跑两遍（防止结果不稳定，这里只贴了最后一次的，两次时间差不多），发现提升很小（其实真实情况是还下降了。。。因为有切换线程的开销）。
+inner function start
+inner function start
+inner function end
+time in inner function is:  13.094752311706543
+inner function end
+time in inner function is:  13.15324592590332
+Time taken in seconds - 13.164145469665527
+```
+
+***多进程版本***：
+```py
+from multiprocessing import Pool
+import time
+COUNT = 300000000
+
+def countdown(n):
+    print("inner function start")
+    t1 = time.time()
+    while n>0:
+        n -= 1
+    t2 = time.time()
+    print("inner function end")
+    print("time in inner function is: ", t2 - t1)
+
+if __name__ == '__main__':
+    pool = Pool(processes=2)
+    start = time.time()
+    r1 = pool.apply_async(countdown, [COUNT//2])
+    r2 = pool.apply_async(countdown, [COUNT//2])
+    pool.close()
+    pool.join()
+    end = time.time()
+    print('Time taken in seconds -', end - start)
+```
+```console
+# 同样跑两遍（防止结果不稳定，这里只贴了最后一次的，两次时间差不多），可以看到明显的提升。
+inner function start
+inner function start
+inner function end
+time in inner function is:  6.18486475944519
+inner function end
+time in inner function is:  6.192872524261475
+Time taken in seconds - 6.215625047683716
+```
