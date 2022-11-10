@@ -36,6 +36,8 @@
 - Bracket Pair Colorizer 2 https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
 - Edit csv https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv
   * > If you don't have vs code to hand, you can use the online version at https://edit-csv.net
+- Debug Visualizer https://marketplace.visualstudio.com/items?itemName=hediet.debug-visualizer || https://github.com/hediet/vscode-debug-visualizer
+- Python C++ Debugger https://marketplace.visualstudio.com/items?itemName=benjamin-simmonds.pythoncpp-debug || https://github.com/benibenj/vscode-pythonCpp
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
