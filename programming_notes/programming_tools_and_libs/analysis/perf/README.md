@@ -23,3 +23,7 @@ perf Examples https://www.brendangregg.com/perf.html
 Linux 性能诊断 perf使用指南 https://developer.aliyun.com/article/65255
 
 Linux性能分析工具Perf简介 https://segmentfault.com/a/1190000021465563
+
+火焰图（Flame Graphs）的安装和基本用法 https://www.cnblogs.com/wx170119/p/11459995.html
+- > 火焰图（flame graph）是性能分析的利器，通过它可以快速定位性能瓶颈点。
+- > perf 命令（performance 的缩写）是 Linux 系统原生提供的性能分析工具，会返回 CPU 正在执行的函数名以及调用栈（stack）。

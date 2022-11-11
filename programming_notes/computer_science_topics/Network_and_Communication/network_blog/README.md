@@ -1,4 +1,6 @@
 
+502 问题怎么排查？ https://www.ithome.com/0/653/236.htm || https://mp.weixin.qq.com/s/98Vr1MkFte7oZcQk2t-f_A  【from `小白debug`】
+
 为什么有 HTTP 协议，还要有 websocket 协议 https://www.ithome.com/0/645/884.htm  【from `小白debug`】
 
 --------------------------------------------------

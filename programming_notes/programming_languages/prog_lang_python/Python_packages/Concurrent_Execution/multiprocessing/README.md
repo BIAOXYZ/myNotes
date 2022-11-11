@@ -15,3 +15,5 @@ multiprocessing --- 基于进程的并行 https://docs.python.org/zh-cn/3/librar
 多进程 https://www.liaoxuefeng.com/wiki/1016959663602400/1017628290184064
 
 多进程multiprocess https://www.liujiangblog.com/course/python/82
+
+Python Multiprocessing Example https://www.digitalocean.com/community/tutorials/python-multiprocessing-example
