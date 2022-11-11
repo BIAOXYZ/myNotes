@@ -1,4 +1,6 @@
 
+主板上这家伙，要当 CPU 和内存的中间商 https://www.ithome.com/0/652/903.htm || https://mp.weixin.qq.com/s/UKPagzvcwyY5RzOLWIff5g
+
 中断还是轮询？取个数据包真麻烦 || https://mp.weixin.qq.com/s/QmZP0P4BrSJ1p6YI6cmyVQ
 
 什么？一个核同时执行两个线程？ https://www.ithome.com/0/646/476.htm || https://mp.weixin.qq.com/s/HwDqCk8vtMdSEVSCLHAsbg
