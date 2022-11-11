@@ -30,6 +30,7 @@ https://gitee.com/likexia/Evolve
 - https://shimo.im/sheets/tg6VPQgCKhrYW9QG
   * https://toscode.gitee.com/by22dgb/evolvescript/blob/master/evolve_automation.user.js
   * ~~https://github.com/pengminxuan/new-tmvictor-chn/blob/main/main.user.js~~  -->  https://github.com/by22dgb/evolvescript/blob/master/evolve_automation.user.js
+    + `3.3.1.100` https://github.com/by22dgb/evolvescript/blob/295670f006bc3d06f935688ccc7fd0686251a50f/evolve_automation.user.js
 
 Git游戏 https://likexia.gitee.io/game/
 

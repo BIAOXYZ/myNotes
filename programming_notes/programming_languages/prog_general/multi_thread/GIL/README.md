@@ -11,3 +11,6 @@ Python的GIL是什么鬼，多线程性能究竟如何 http://cenalulu.github.io
 
 Understanding the Python GIL http://www.dabeaz.com/GIL/
 - Inside the Python GIL http://www.dabeaz.com/python/GIL.pdf
+
+`#Cython 从入门到精通` https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NTczMDU2Mg==&action=getalbum&album_id=2513963764346486784
+- 为什么会有 GIL？如何释放 GIL 实现并行？ https://mp.weixin.qq.com/s/9i2tx038SPQ6bCy0g7b5dw
