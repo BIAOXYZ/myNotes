@@ -3,6 +3,13 @@
 
 ## os project
 
+The Linux Kernel Module Programming Guide https://github.com/sysprog21/lkmpg
+- > This project keeps the Linux Kernel Module Programming Guide up to date, with [working examples](examples/) for recent 5.x kernel versions.
+The guide has been around since 2001 and most copies of it on the web only describe old 2.6.x kernels.
+- > The book can be freely accessed via https://sysprog21.github.io/lkmpg/ or [latest PDF file](https://github.com/sysprog21/lkmpg/releases).
+The original guide may be found at [Linux Documentation Project](http://www.tldp.org/LDP/lkmpg/).
+You may check other [freely available programming books](https://ebookfoundation.github.io/free-programming-books-search/) listed by The [Free Ebook Foundation](https://ebookfoundation.org/) or [Linux online books](https://onlinebooks.library.upenn.edu/webbin/book/browse?type=lcsubc&key=Linux) collected by [The Online Books Page](https://onlinebooks.library.upenn.edu/).
+
 OS67 https://github.com/SilverRainZ/OS67
 
 陈莉君教授《Linux内核分析与应用》课程课件、动手实践源代码、实验手册、实验源代码 https://github.com/ljrcore/linuxmooc
@@ -64,6 +71,9 @@ craftinginterpreters_zh https://github.com/GuoYaxiang/craftinginterpreters_zh
 - > 这是一个还在进行中的翻译项目，原项目是[craftinginterpreters](https://github.com/munificent/craftinginterpreters)，同时还有配套的英文书，可免费[在线阅读](http://www.craftinginterpreters.com/)。
 
 ## DB project
+
+Naive Query Engine (Toy for Learning) https://github.com/Veeupup/naive-query-engine
+- > This is a Query Engine which support SQL interface. And it is only a Toy for learn query engine only. You can check TODO to check the progress now.
 
 SimpleDB
 - Database Design and Implementation Second Edition https://link.springer.com/book/10.1007/978-3-030-33836-7

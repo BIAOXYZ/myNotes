@@ -101,3 +101,8 @@ PgSQL · 特性分析 · Plan Hint http://mysql.taobao.org/monthly/2016/01/09/
 PostgreSQL SQL HINT的使用(pg_hint_plan) https://billtian.github.io/digoal.blog/2016/02/03/01.html
 
 PostgresML https://github.com/postgresml/postgresml
+
+pgAudit -- Open Source PostgreSQL Audit Logging https://github.com/pgaudit/pgaudit
+
+Wasmer Postgres https://github.com/wasmerio/wasmer-postgres
+- > A complete and mature WebAssembly runtime for Postgres based on [Wasmer](https://wasmer.io/). It's an original way to extend your favorite database capabilities.
