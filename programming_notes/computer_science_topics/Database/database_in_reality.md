@@ -1,6 +1,8 @@
 
 # 待分类
 
+每秒最多 6.5 万个事务，我们的 PostgreSQL 12 迁移之路 https://mp.weixin.qq.com/s/jNlbyLUFEGk5LMsQjrKkuw
+
 ~~国产数据库里程碑事件：4.2 亿、易鲸捷中标「贵阳银行」核心业务系统，替换 Oracle https://mp.weixin.qq.com/s/gC1wlVHtNNFuYdLlTKY-5A~~  -->  4.2 亿、贵阳银行「国产数据库」大单：易鲸捷替掉 IBM Informix https://mp.weixin.qq.com/s/Cf75dMz6b6IzPJUEm83g_Q
 
 国产数据库的里程碑式新突破：贵阳银行核心系统4.2亿订单采购易鲸捷 https://www.modb.pro/db/34022
