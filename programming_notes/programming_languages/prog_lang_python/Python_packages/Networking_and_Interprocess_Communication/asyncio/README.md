@@ -4,13 +4,17 @@
 asyncio --- 异步 I/O https://docs.python.org/zh-cn/3/library/asyncio.html
 - 协程与任务 https://docs.python.org/zh-cn/3/library/asyncio-task.html
 
+# 视频
+
+Python Asynchronous Programming - AsyncIO & Async/Await https://www.youtube.com/watch?v=t5Bo1Je9EmE
+
 # 其他
 
 Awesome asyncio https://github.com/timofurrer/awesome-asyncio
 
 Getting Started With Async Features in Python https://realpython.com/python-async-features/
 
-Async IO in Python: A Complete Walkthrough https://realpython.com/async-io-python/
+~~Async IO in Python: A Complete Walkthrough https://realpython.com/async-io-python/~~  【//已转移】
 
 从0到1，Python异步编程的演进之路 - tonnie的文章 - 知乎 https://zhuanlan.zhihu.com/p/25228075
 
