@@ -44,6 +44,10 @@ C++ Sort Array by 2nd Value https://stackoverflow.com/questions/69038256/c-sort-
   4	20
   ```
 
+**LeetCode相关题目**：
+- `1710. 卡车上的最大单元数` https://leetcode.cn/problems/maximum-units-on-a-truck/
+  * https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1601-1800/001710--weekly222_1/tran/222_1.cpp
+
 ## 其他帖子
 
 sort (C++) https://en.wikipedia.org/wiki/Sort_(C%2B%2B)
