@@ -37,6 +37,10 @@ python 一篇搞定所有的异常处理 https://www.cnblogs.com/wj-1314/p/87078
 
 ## 多重`exception`
 
+raise 与 raise ... from 的区别 - weapon的文章 - 知乎 https://zhuanlan.zhihu.com/p/52091476
+- > **禁止异常关联**
+  * > `from` 还有个特别的用法：`raise ... from None` ，它通过设置 `__suppress_context__` 属性指定来明确禁止异常关联：
+
 How to raise a ValueError in Python https://www.kite.com/python/answers/how-to-raise-a-valueerror-in-python
 - > Use the syntax `raise exception` with `exception` as `ValueError(text)` to throw a `ValueError` exception with the error message `text`.
   ```py
