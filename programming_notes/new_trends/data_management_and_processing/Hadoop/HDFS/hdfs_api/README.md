@@ -110,3 +110,9 @@ How to write Map/Reduce tasks in Golang? https://stackoverflow.com/questions/318
 Golang Client Examples https://golang.hotexamples.com/examples/github.com.colinmarc.hdfs/Client/-/golang-client-class-examples.html
 
 A Simple MapReduce in Go https://levelup.gitconnected.com/a-simple-mapreduce-in-go-42c929b000c5
+
+# HDFS application develop (Python)
+
+PyArrow - Apache Arrow Python bindings https://arrow.apache.org/docs/python/index.html
+
+arrow/python/pyarrow/ https://github.com/apache/arrow/tree/master/python/pyarrow
