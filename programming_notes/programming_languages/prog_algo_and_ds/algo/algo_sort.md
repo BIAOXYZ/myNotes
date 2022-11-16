@@ -169,3 +169,32 @@ print(lis, ordered, res)
   ②因为睡眠时间和数据大小有直接关系，因此数据不能太大 ，若数据很大时，睡眠时间要很久，程序运行很长；
   ③睡眠时间不能为负数，如果排序数据中存在负数，需要按照一定的规律把对应的睡眠时间转换成正数，比如说在设置睡眠时间时，把每一项都加上一个正数（该正数的绝对值要比最小负数的绝对值要打）。
   ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 多维数组排序
+
+How to sort 2-D array by multiple columns? https://groups.google.com/g/comp.lang.fortran/c/jSoWLNMib8Y
+- https://groups.google.com/g/comp.lang.fortran/c/jSoWLNMib8Y/m/woiLq20qAgAJ 
+  * > A quick-and-dirty approach that could work, depending on the ranges of the columns, is to create a column that gives much more weight to columns that should be sorted first, for example `1e6*column_1 + 1e3*column2 + column3`, and sort by it. It would be more careful to compute ranks of each columns and create a weighted rank.
+  * > The best approach is to create subsets based on column 1, then create sub-subsets based on column 2, and to sort the sub-subsets baesd on column 3. It is not conceptually hard but requires bookkeeping. I wonder if a recursive subroutine could be used.
+- > https://groups.google.com/g/comp.lang.fortran/c/jSoWLNMib8Y/m/476Zhd0yAgAJ
+  * > One way is to use a stable sort algorithm. A stable sort does not change the order of items with the same value. You then sort the whole file in the least significant field, then the next, and finally the most significant.
+    >> 【[:star:][`*`]】 //notes：这里就是`基数排序`的思想了。
+  * > However, the faster sort algorithms, such as Quicksort, are not stable. C's qsort(), which may or may not actually use quicksort, is not meant to imply a stable sort.
+  * > The Java sort routines are documented as stable, and commonly use a merge sort algorithm that is stable, and also fast. (It is O(n log n), though maybe not as fast as Quicksort.)
+  * > The other way is to use a sort routine where you supply the comparison function, and have the function compare elements as appropriate. Returning a value to indicate greater, equal, or lesser based first on the most significant, and then if equal, lesser significant members.
+
+Most efficient way to sort a 2d array with sorted rows into 1d sorted array https://stackoverflow.com/questions/23241800/most-efficient-way-to-sort-a-2d-array-with-sorted-rows-into-1d-sorted-array
+- 【[:star:][`*`]】 https://stackoverflow.com/questions/23241800/most-efficient-way-to-sort-a-2d-array-with-sorted-rows-into-1d-sorted-array/23241891#23241891 【//notes：这个回答里提到主要还是用`归并排序`。】
+
+Sorting Algorithms in Python https://realpython.com/sorting-algorithms-python/
+- > **The Timsort Algorithm in Python**
+  * > The **Timsort** algorithm is considered a **hybrid** sorting algorithm because ***it employs a best-of-both-worlds <ins>combination of `insertion sort` and `merge sort`</ins>***. Timsort is near and dear to the Python community because it was created by Tim Peters in 2002 to be used as the [standard sorting algorithm of the Python language](https://en.wikipedia.org/wiki/Timsort).
+    >> 【[:star:][`*`]】 //notes：所以 Python 是自己实现了一个混合了`插入排序`和`归并排序`的算法。
+  * > The main characteristic of Timsort is that it takes advantage of already-sorted elements that exist in most real-world datasets. These are called **natural runs**. The algorithm then iterates over the list, collecting the elements into runs and merging them into a single sorted list.
+
+About Python's built in sort() method https://stackoverflow.com/questions/1517347/about-pythons-built-in-sort-method
+- https://stackoverflow.com/questions/1517347/about-pythons-built-in-sort-method/1517363#1517363
+  * > Sure! The code's [here](https://github.com/python/cpython/blob/master/Objects/listobject.c), starting with function `islt` and proceeding for QUITE a while;-). As Chris's comment suggests, it's C code. You'll also want to read [this](https://github.com/python/cpython/blob/master/Objects/listsort.txt) text file for a textual explanation, results, etc etc.
+    >> 【[:star:][`*`]】 //notes：看了下 CPython 里的排序实现，光那个[说明文件](https://github.com/python/cpython/blob/main/Objects/listsort.txt)都 800 多行。。。直接不看了- -
