@@ -42,6 +42,24 @@ Python中的注解“@” https://www.jianshu.com/p/7a644520418b
 
 10 Fabulous Python Decorators https://towardsdatascience.com/10-fabulous-python-decorators-ab674a732871
 
+装饰器 https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584
+- 回复里的：
+  * > 装饰器实现计时器
+    ```py
+    import time
+    import functools
+
+    def metric(func):
+        @functools.wraps(func)
+        def count_time(*args,**kwargs):
+           start =  time.time()
+           x = func(*args,**kwargs)
+           end = time.time()
+           print("函数%s运行总用时为：%d"%(func.__name__,end - start))
+           return x
+        return count_time
+    ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `@property`
