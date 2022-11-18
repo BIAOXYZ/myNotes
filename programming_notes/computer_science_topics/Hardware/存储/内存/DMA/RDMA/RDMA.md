@@ -37,3 +37,13 @@ RDMA 能给数据中心带来什么 https://www.ithome.com/0/654/857.htm || http
     + > iWARP 只要求网卡支持 RDMA，不需要专用交换机和路由器，建网成本介于 InfiniBand 和 RoCE 之间。
   * > Infiniband 技术先进，但是价格高昂，应用局限在 HPC 高性能计算领域，随着 RoCE 和 iWARPC 的出现，降低了 RDMA 的使用成本，推动了 RDMA 技术普及。
   * > 在高性能存储、计算数据中心中采用这三类 RDMA 网络，都可以大幅度降低数据传输时延，并为应用程序提供更高的 CPU 资源可用性。其中 InfiniBand 网络为数据中心带来极致的性能，传输时延低至百纳秒，比以太网设备延时要低一个量级。RoCE 和 iWARP 网络为数据中心带来超高性价比，基于以太网承载 RDMA，充分利用了 RDMA 的高性能和低 CPU 使用率等优势，同时网络建设成本也不高。基于 UDP 协议的 RoCE 比基于 TCP 协议的 iWARP 性能更好，结合无损以太网的流控技术，解决了丢包敏感的问题，RoCE 网络已广泛应用于各行业高性能数据中心中。
+
+RDMA(远程直接内存访问)技术浅析 https://www.sohu.com/a/150642645_632967
+- > 因此，RDMA可以简单理解为利用相关的硬件和网络技术，服务器1的网卡可以直接读写服务器2的内存，最终达到高带宽、低延迟和低资源利用率的效果。如下图所示，应用程序不需要参与数据传输过程，只需要指定内存读写地址，开启传输并等待传输完成即可。![](http://img.mp.itc.cn/upload/20170621/e3ee5e0006754fc594ab69f207c56430.jpg)
+
+RDMA-远程直接内存访问-00-overview https://houbb.github.io/2019/11/20/rdma-00-overview
+
+# 其他
+
+https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAwMDc2NjQ4Nw==&action=getalbum&album_id=2063493827914416129
+- 在Linux和K8S上实现RDMA https://mp.weixin.qq.com/s/3sEYkmMbza8uL4IiVmnSgQ

@@ -1,4 +1,6 @@
 
+CPU 加了缓存后，有人急了～ https://www.ithome.com/0/654/674.htm || https://mp.weixin.qq.com/s/pntcKUaCyetWHDsOZHwU2Q
+
 主板上这家伙，要当 CPU 和内存的中间商 https://www.ithome.com/0/652/903.htm || https://mp.weixin.qq.com/s/UKPagzvcwyY5RzOLWIff5g
 
 中断还是轮询？取个数据包真麻烦 || https://mp.weixin.qq.com/s/QmZP0P4BrSJ1p6YI6cmyVQ

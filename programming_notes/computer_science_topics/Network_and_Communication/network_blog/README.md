@@ -1,4 +1,6 @@
 
+IPv4：超网，你是我的“神” https://www.ithome.com/0/654/991.htm || https://mp.weixin.qq.com/s/W7ORERpCqQD__5-KEcU64g
+
 502 问题怎么排查？ https://www.ithome.com/0/653/236.htm || https://mp.weixin.qq.com/s/98Vr1MkFte7oZcQk2t-f_A  【from `小白debug`】
 - > **HTTP 状态码**
   * > 一般来说，前端并不存储太多数据，大部分时候都需要从后端服务器那获取数据。于是前后端之间需要通过 TCP 协议去建立连接，然后在 TCP 的基础上传输数据。而 TCP 是基于数据流的协议，传输数据时，并不会为每个消息加入数据边界，直接使用裸的 TCP 进行数据传输会有 "粘包" 问题。
