@@ -372,6 +372,10 @@ Thank you! Your ballot has been successfully submitted. https://www.internationa
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+### 世萌2022（最后一届）
+
+关于最后一届世萌，你想知道的都在这里【2022世萌】 https://www.bilibili.com/video/BV1og411Y7JQ
+
 ## 萌战角色
 
 ### 炮姐

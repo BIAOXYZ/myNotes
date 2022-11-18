@@ -198,3 +198,5 @@ About Python's built in sort() method https://stackoverflow.com/questions/151734
 - https://stackoverflow.com/questions/1517347/about-pythons-built-in-sort-method/1517363#1517363
   * > Sure! The code's [here](https://github.com/python/cpython/blob/master/Objects/listobject.c), starting with function `islt` and proceeding for QUITE a while;-). As Chris's comment suggests, it's C code. You'll also want to read [this](https://github.com/python/cpython/blob/master/Objects/listsort.txt) text file for a textual explanation, results, etc etc.
     >> 【[:star:][`*`]】 //notes：看了下 CPython 里的排序实现，光那个[说明文件](https://github.com/python/cpython/blob/main/Objects/listsort.txt)都 800 多行。。。直接不看了- -
+
+Sorting a multidimensional array using merge sort? https://stackoverflow.com/questions/67786912/sorting-a-multidimensional-array-using-merge-sort
