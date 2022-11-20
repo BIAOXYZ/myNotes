@@ -39,3 +39,49 @@ Breakpoint 1, main () at testcout.cpp:4
 10	}
 (gdb)
 ```
+
+### 1.4.3　读取数量不定的输入数据
+
+> `while` 循环条件的求值就是执行表达式 `std::cin >> value`。此表达式从标准输入读取下一个数，保存在value中。输入运算符（参见1.2节，第7页）返回其左侧运算对象，在本例中是`std：：cin`。因此，此循环条件实际上检测的是`std：：cin`。
+> 
+> 当我们使用一个`istream`对象作为条件时，其效果是检测流的状态。如果流是有效的，即流未遇到错误，那么检测成功。***当遇到文件结束符（end-of-file），或遇到一个无效输入时（例如读入的值不是一个整数）***，`istream`对象的状态会变为无效。处于无效状态的`istream`对象会使条件变为假。
+
+个人实战：
+```cpp
+#include <iostream>
+int main() {
+    int sum = 0, value = 0;
+    while (std::cin >> value)
+        sum += value;
+    std::cout << "Sum is: " << sum << std::endl;
+    return 0;
+}
+```
+```sh
+$ g++ test.cpp -o test 
+
+# 用 Ctrl + C 相当于把程序强行结束了，不打印结果。
+$ ./test 
+1
+2
+^C
+$ 
+
+# 用 Ctrl + D（也就是 EOF）正常结束掉 std::cin，打印结果。 
+$ ./test 
+1
+2
+3
+
+Sum is: 6
+$ 
+
+# 用字母（非数字）正常结束掉 std::cin，打印结果。
+$ ./test 
+1
+2
+3
+a
+Sum is: 6
+$ 
+```
