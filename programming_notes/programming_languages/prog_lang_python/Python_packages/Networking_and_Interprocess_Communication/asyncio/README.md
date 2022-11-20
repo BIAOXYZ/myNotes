@@ -2,11 +2,22 @@
 # 官方
 
 asyncio --- 异步 I/O https://docs.python.org/zh-cn/3/library/asyncio.html
-- 协程与任务 https://docs.python.org/zh-cn/3/library/asyncio-task.html
+- > **高层级 API**
+  * 协程与任务 https://docs.python.org/zh-cn/3/library/asyncio-task.html
+- > **低层级 API**
+- > **指南与教程**
+  * 用 asyncio 开发 https://docs.python.org/zh-cn/3/library/asyncio-dev.html
 
 # 视频
 
 Python Asynchronous Programming - AsyncIO & Async/Await https://www.youtube.com/watch?v=t5Bo1Je9EmE
+
+# debug异步程序
+
+Debugging with asyncio https://pymotw.com/3/asyncio/debugging.html
+- > First, the event loop uses `logging` to emit status messages as it runs. Some of these are available if `logging` is enabled in an application. Others can be turned on by telling the loop to emit more debugging messages. Call ***`set_debug()`*** passing a boolean value indicating whether or not debugging should be enabled.
+
+Python debugger does not halt on exceptions in async coroutines #1309 https://github.com/microsoft/vscode-python/issues/1309
 
 # 其他
 
