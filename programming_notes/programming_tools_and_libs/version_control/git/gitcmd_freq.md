@@ -102,6 +102,7 @@ git checkout -- file //是把当前最新的编辑去掉，使file变为一个�
 ```
 ```
 git reset HEAD file //去掉已经加入暂存区中的修改（这个命令的本意是“恢复版本”，所以就是恢复到本地仓库的版本，因此可以去掉暂存区的修改。）
+# 也有用 git reset -- file 的
 ```
 
 https://my.oschina.net/xdev/blog/114383 （以上那俩可以参照这个页面的基本用法那里的 ）

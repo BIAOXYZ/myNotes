@@ -120,6 +120,17 @@ rsync 一个文件夹到另一台服务器，同步完成后刚好多 40kb，是
 
 # 个人实战1：rsync + crontab 自动同步目录A的变更到目录B
 >> //notes：一个典型的应用场景如下：有时候，代码仓库里的 Python 代码是通过 `setup.py` 之类的手段打包安装到机器的 Python `site-packages` 目录的。此时在项目里修改了还得再安装一下，比较麻烦。实际上可以直接手动 `cp` 过去替换就行。既然这样，那何不用 `rsync + 定时任务` 来自动同步呢。
+>>> 【[:star:][`*`]】 //notes：注意，如果改动的文件不是很多，尽量不要同步整个目录——速度的原因倒还在其次，主要怕把原来的一些东西覆盖了找不回来了，这是同步python lib时的血泪教训。所以下面实战部分同步目录的语句，后来改成了类似：
+```sh
+#!/bin/bash
+src1=/home/<your_user_name>/prefix1/prefix2/....../pythonlib1
+dst1=/home/<your_user_name>/.local/lib/python3.7/site-packages/pythonlib1
+src2=/home/<your_user_name>/prefix1/prefix2/....../pythonlib2
+dst2=/home/<your_user_name>/.local/lib/python3.7/site-packages/pythonlib2
+rsync -a $src1/file1.py $dst1/file1.py
+rsync -a $src1/file2.py $dst1/file2.py
+...
+```
 
 ## 参考链接
 
