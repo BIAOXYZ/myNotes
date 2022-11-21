@@ -1,4 +1,10 @@
 
+# 常规下载器
+
+Motrix A full-featured download manager https://github.com/agalwood/Motrix || https://motrix.app/zh-CN/
+
+Free Download Manager https://www.freedownloadmanager.org/
+
 # 网站类下载器
 
 ## 国内
@@ -15,5 +21,11 @@
 ## 国外
 
 savefrom.net https://en.savefrom.net/
+
+SSS TWITTER https://ssstwitter.com/
+
+X2Twitter.com https://x2twitter.com/
+
+Video Downloader for reddit - Redditsave https://chrome.google.com/webstore/detail/video-downloader-for-redd/hhienkkjhkcdeaolmcniloflgpjhdefi
 
 # 其他下载器
