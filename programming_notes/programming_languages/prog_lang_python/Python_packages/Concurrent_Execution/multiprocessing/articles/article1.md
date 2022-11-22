@@ -15,3 +15,5 @@
     + > 由于Python中GIL的原因，对于计算密集型任务，Python下比较好的并行方式是使用多进程，这样可以非常有效的使用CPU资源。
     + > 同一时间执行的进程数量取决你电脑的CPU核心数。
   * > 测试函数：
+
+python多进程总结 https://www.cnblogs.com/fengf233/p/11506337.html

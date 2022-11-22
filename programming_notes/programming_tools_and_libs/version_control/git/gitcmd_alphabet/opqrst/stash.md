@@ -52,7 +52,23 @@ How to see stashed changes using git stash https://howto.lintel.in/how-to-see-st
     ```sh
     $ git show stash@{0}:<file_name>
     ```
-  >> //notes：感觉 `git show stash@{0}` 或者等价的 ***`git show stash`*** 就差不多够用了- -
-  >>> //notes：注意，***`git show stash`*** 和上一部分的 `git stash show` 本质上是完全不同的命令。。。
+  >> //notes：感觉 `git show stash@{0}` 或者等价的 ***`git show stash`*** 就差不多够用了- -注意，***`git show stash`*** 和上一部分里的 `git stash show` 本质上是完全不同的命令。。。一个的核心是 `show`，另一个的核心是 `stash`。
+  >>> 【[:star:][`*`]】 //notes2：因此一个比较好的用法是先 `git stash show` （不用带 `-p`）看看有哪些文件改动；然后 `git show stash -- file_path` 看具体的改动。
+    ```sh
+    # 这里不是 git stash show 的结果错了，而是一共6个文件改动，只复制（因为还得改名字- -）整理了4个- -
+    $ git stash show
+     src/prefix1/prefix2/xxxxx.py                          |  14 +++++++++++++-
+     src/prefix1/prefix2/test/yyyyyyyyyyyy.py              |  24 ++++++++++++++++++++++++
+     src/prefix1/prefix2/zzz.sh                            |  40 ++++++++++++++++++++--------------------
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------
+     src/prefix111/aaaaaaaaaaabbbbbbbbbbbbbbbbccccccccc.py |   8 +++++++-
+     6 files changed, 192 insertions(+), 70 deletions(-)
+    $
+    # 这里改动详情略
+    $ git show stash -- src/prefix1/prefix2/xxxxx.py
+    ...
+    ...
+    ...
+    ```
 - > **Command `git diff`**
 - > **Command `git difftool`**
