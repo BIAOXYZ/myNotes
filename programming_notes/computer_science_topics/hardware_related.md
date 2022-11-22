@@ -142,19 +142,34 @@ AMD 与群联演示 PCIe 5.0 M.2 SSD，顺序读写破 10GB/s https://www.ithome
 
 内存寻址 https://liam.page/2016/05/01/Introduction-to-Memory-Addressing/
 
-***内存寻址中一个经典问题，之前就知道，但是其实没完全想清楚***：一个bit有0和1两种取值，那么32位机器能表示的内存是`2^32 {bit}`，但是我们平时说的`GB`可是`(B)byte`啊，不应该是`2^32 {bit} = (2^32)/8 {byte} = 0.5GB`才对吗？
-- 详解为什么32位系统只能用4G内存 https://blog.csdn.net/nvd11/article/details/8749375
-  * > 但是问题来了，我刚说了内存里的格子数量非常巨大，如果cpu要读出某个指定的数据，怎么去找呢？1个1个格子去遍历吗，其实稍微接触过数据结构的都知道，遍历虽然实现简单，但是在海量数据面前简直是自杀行为。所以实际上内存是把8个bit排成1组，每1组成为1个单位，大小是1byte(字节），cpu每一次只能访问1个byte，而不能单独去访问具体的1个小格子(bit). 1个byte字节就是内存的最小的IO单位.
-  * > 那么内存地址的长度是多少呢? 这个就是这篇文章标题所涉及的. 在32位操作系统中, 内存的地址就是32位的2进制数, 
-  * > 那么2^32到底是多少个？2^32 = 4 * 1024(G) * 1024(M) * 1024(K) = 4294967296, 就是4G啊, 而每1个地址对应1个1个字节，容量就是1byte，所以2^32个地址就总共能对应应4GB的内存容量啊，这里的B指的是byte字节啊。
-- Why does a 32-bit OS support 4 GB of RAM? https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram
-```
-  1. 32bits can represent numbers 0..2^32 = 0..4,294,967,296
-  2. 32bits can address up to 2^32Bytes (assuming Byte-size blocks)
-  3. 2^32Bytes is the max size
-2^32B = 4,194,304KiB = 4,194MiB = 4GiB
-```
->> notes：从这两个回答里简单总结下就是：CPU访问内存的**最小单位是byte而不是bit**；32位就是**32条地址总线**，一共能表示**2^32个数字**，这里每个数字对应到一个**内存地址**；每一个内存地址**对应一个字节（而不是每一个内存地址对应一个bit，这是根因所在）**。所以能表示的最大内存是**2^32个字节**，也就是4GB。
+### 32位系统4GB内存限制
+>> ***内存寻址中一个经典问题***：一个bit有0和1两种取值，那么32位机器能表示的内存是`2^32 {bit}`，但是我们平时说的`GB`可是`(B)byte`啊，不应该是`2^32 {bit} = (2^32)/8 {byte} = 0.5GB`才对吗？
+>>> 【[:star:][`*`]】 //notes：实际上会造成这种误解的原因是，32位确实代表了能在内存里寻找的地址总数是 ***$2^32$*** 个，但是每个CPU所能寻找的 ***<ins>地址对应的不是一个`bit`</ins>，而是一个（`8-bit`长度的）`byte`/`B`***。
+
+Why does a 32-bit OS support 4 GB of RAM? https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram
+- https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram/56204895#56204895
+  ```console
+    1. 32bits can represent numbers 0..2^32 = 0..4,294,967,296
+    2. 32bits can address up to 2^32Bytes (assuming Byte-size blocks)
+    3. 2^32Bytes is the max size
+  2^32B = 4,194,304KiB = 4,194MiB = 4GiB
+  ```
+  >> notes：从这两个回答里简单总结下就是：CPU访问内存的**最小单位是byte而不是bit**；32位就是**32条地址总线**，一共能表示**2^32个数字**，这里每个数字对应到一个**内存地址**；每一个内存地址**对应一个字节（而不是每一个内存地址对应一个bit，这是根因所在）**。所以能表示的最大内存是**2^32个字节**，也就是4GB。
+- https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram/40269262#40269262
+  * > If you have a 4-bit system, this means **the address for each `byte` is 4 binary digits**, the probability of all your address will range from `0000` through `1111` which is `2^4 = 16` (2 because there is either 0 or 1), with four bits it's possible to create `16` different values of zeros and ones, If you have 16 different addr. each represent a `byte` then you can have a max of `16 bytes`
+  * > 4-bit system will look like this: ![](https://i.stack.imgur.com/G5V4v.png)
+
+详解为什么32位系统只能用4G内存 https://blog.csdn.net/nvd11/article/details/8749375
+- > 但是问题来了，我刚说了内存里的格子数量非常巨大，如果cpu要读出某个指定的数据，怎么去找呢？1个1个格子去遍历吗，其实稍微接触过数据结构的都知道，遍历虽然实现简单，但是在海量数据面前简直是自杀行为。所以实际上内存是把8个bit排成1组，每1组成为1个单位，大小是1byte(字节），cpu每一次只能访问1个byte，而不能单独去访问具体的1个小格子(bit). 1个byte字节就是内存的最小的IO单位.
+- > 那么内存地址的长度是多少呢? 这个就是这篇文章标题所涉及的. 在32位操作系统中, 内存的地址就是32位的2进制数, 
+- > 那么2^32到底是多少个？2^32 = 4 * 1024(G) * 1024(M) * 1024(K) = 4294967296, 就是4G啊, ***而每1个地址对应1个1个字节，容量就是1byte***，所以2^32个地址就总共能对应应4GB的内存容量啊，这里的B指的是byte字节啊。
+
+为什么32位是4GB 啊，一个字节不是有8位么，这样说理论管理的内存不是应该是512mb么 https://www.imooc.com/qadetail/94609
+- > 请注意32是“**地址**”总线的宽度，即可以寻址的**地址个数**是2的32次方个，而计算机中以字节位单位存储和解释信息，**<ins>每个地址（即每个门牌号）指示的空间是一个字节B</ins>**（即每个门牌号指示的房间大小是一个字节B），那么就是2的32次方个B的房间
+
+给32位系统装8g内存条能用吗？为什么？ https://mp.weixin.qq.com/s/UL4PrirfMIsoSAfD4E2enQ || https://xiaobaidebug.top/2022/03/09/%E5%9B%BE%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E7%BB%9932%E4%BD%8D%E7%B3%BB%E7%BB%9F%E8%A3%858g%E5%86%85%E5%AD%98%E6%9D%A1%E8%83%BD%E7%94%A8%E5%90%97%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/
+
+为什么内存地址是以字节为单位? https://blog.csdn.net/zhangyanfei01/article/details/100970421 || https://www.jianshu.com/p/bc8252f18ecf 
 
 ## 傲腾Optane
 

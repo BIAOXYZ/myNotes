@@ -17,3 +17,7 @@
   * > 测试函数：
 
 python多进程总结 https://www.cnblogs.com/fengf233/p/11506337.html
+
+Python Multiprocessing: The Complete Guide https://superfastpython.com/multiprocessing-in-python/
+
+Template for Python multiprocessing and multithreading https://gist.github.com/blaylockbk/8b469f2c79660ebdd18915202e0802a6
