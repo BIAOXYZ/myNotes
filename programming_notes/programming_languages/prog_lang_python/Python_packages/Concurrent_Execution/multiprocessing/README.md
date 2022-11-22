@@ -3,6 +3,10 @@
 
 multiprocessing --- 基于进程的并行 https://docs.python.org/zh-cn/3/library/multiprocessing.html
 
+# 视频
+
+Python multiprocessing 5 进程池 pool (多进程 多核运算 教学教程tutorial) https://www.youtube.com/watch?v=w7SG9hhhwvI
+
 # 其他
 
 一篇文章搞定Python多进程(全) - 南山南的文章 - 知乎 https://zhuanlan.zhihu.com/p/64702600
