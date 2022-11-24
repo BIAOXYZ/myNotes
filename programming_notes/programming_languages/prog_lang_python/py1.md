@@ -64,6 +64,8 @@ http://www.jb51.net/article/89425.htm
 python-tutorial https://github.com/shibing624/python-tutorial
 - > Python实用教程，包括：Python基础，Python高级特性，面向对象编程，多线程，数据库，数据科学，Flask，爬虫开发教程。
 
+PYTHON 高性能编程 http://wujiawen.xyz/archives/python%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # python项目类
