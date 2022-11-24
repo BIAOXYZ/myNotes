@@ -144,7 +144,7 @@ AMD 与群联演示 PCIe 5.0 M.2 SSD，顺序读写破 10GB/s https://www.ithome
 
 ### 32位系统4GB内存限制
 >> ***内存寻址中一个经典问题***：一个bit有0和1两种取值，那么32位机器能表示的内存是`2^32 {bit}`，但是我们平时说的`GB`可是`(B)byte`啊，不应该是`2^32 {bit} = (2^32)/8 {byte} = 0.5GB`才对吗？
->>> 【[:star:][`*`]】 //notes：实际上会造成这种误解的原因是，32位确实代表了能在内存里寻找的地址总数是 ***$2^32$*** 个，但是每个CPU所能寻找的 ***<ins>地址对应的不是一个`bit`</ins>，而是一个（`8-bit`长度的）`byte`/`B`***。
+>>> 【[:star:][`*`]】 //notes：实际上会造成这种误解的原因是，32位确实代表了能在内存里寻找的地址总数是 ***$2^{32}$*** 个，但是每个CPU所能寻找的 ***<ins>地址对应的不是一个`bit`</ins>，而是一个（`8-bit`长度的）`byte`/`B`***。
 
 Why does a 32-bit OS support 4 GB of RAM? https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram
 - https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram/56204895#56204895
@@ -167,7 +167,7 @@ Why does a 32-bit OS support 4 GB of RAM? https://stackoverflow.com/questions/11
 为什么32位是4GB 啊，一个字节不是有8位么，这样说理论管理的内存不是应该是512mb么 https://www.imooc.com/qadetail/94609
 - > 请注意32是“**地址**”总线的宽度，即可以寻址的**地址个数**是2的32次方个，而计算机中以字节位单位存储和解释信息，**<ins>每个地址（即每个门牌号）指示的空间是一个字节B</ins>**（即每个门牌号指示的房间大小是一个字节B），那么就是2的32次方个B的房间
 
-给32位系统装8g内存条能用吗？为什么？ https://mp.weixin.qq.com/s/UL4PrirfMIsoSAfD4E2enQ || https://xiaobaidebug.top/2022/03/09/%E5%9B%BE%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E7%BB%9932%E4%BD%8D%E7%B3%BB%E7%BB%9F%E8%A3%858g%E5%86%85%E5%AD%98%E6%9D%A1%E8%83%BD%E7%94%A8%E5%90%97%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/
+给32位系统装8g内存条能用吗？为什么？ https://mp.weixin.qq.com/s/UL4PrirfMIsoSAfD4E2enQ 【`小白debug`】 || https://xiaobaidebug.top/2022/03/09/%E5%9B%BE%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E7%BB%9932%E4%BD%8D%E7%B3%BB%E7%BB%9F%E8%A3%858g%E5%86%85%E5%AD%98%E6%9D%A1%E8%83%BD%E7%94%A8%E5%90%97%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/
 
 为什么内存地址是以字节为单位? https://blog.csdn.net/zhangyanfei01/article/details/100970421 || https://www.jianshu.com/p/bc8252f18ecf 
 

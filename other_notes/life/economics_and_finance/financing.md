@@ -20,6 +20,8 @@
 谁能讲讲资管、信托、银行、券商、基金之间的区别吗？ - 知乎 https://www.zhihu.com/question/291583486
 - 谁能讲讲资管、信托、银行、券商、基金之间的区别吗？ - 大海的回答 - 知乎 https://www.zhihu.com/question/291583486/answer/476774362
 
+2021年证券公司分类评级来了！AA级15家，海通连降两级成“最惨”头部券商 https://www.jiemian.com/article/6396290.html
+
 ## 回撤
 
 什么是基金回调和最大回撤？ - 投基的基多哥的回答 - 知乎 https://www.zhihu.com/question/439941675/answer/1686146987
