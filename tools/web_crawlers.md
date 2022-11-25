@@ -9,3 +9,5 @@ python爬虫例子,对新手比较友好。淘宝模拟登录,淘宝商品爬虫
 Collection of China illegal cases about web crawler 本项目用来整理所有中国大陆爬虫开发者涉诉与违规相关的新闻、资料与法律法规。致力于帮助在中国大陆工作的爬虫行业从业者了解我国相关法律，避免触碰数据合规红线。 https://github.com/HiddenStrawberry/Crawler_Illegal_Cases_In_China
 
 爬虫养成记--千军万马来相见（详解多线程） https://www.v2ex.com/t/667149
+
+世界杯到了，写个爬虫获取球员数据吧 https://www.ithome.com/0/656/708.htm
