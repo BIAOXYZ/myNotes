@@ -587,3 +587,5 @@ shared_ptr 原理及事故 https://heleifz.github.io/14696398760857.html
     + > 智能指针之间可以相互赋值，共同指向辅助指针即可。
 
 shared_ptr的一切(本质、make_shared) https://www.cnblogs.com/chaohacker/p/14802112.html
+
+shared_ptr https://www.kancloud.cn/wizardforcel/beyond-stl/114997

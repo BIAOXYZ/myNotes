@@ -6,10 +6,16 @@ git-diff - Show changes between commits, commit and working tree, etc https://gi
 # 参数解析
 
 ## `--stat` `--name-stat`
+>> 【[:star:][`*`]】 //notes：之所以想到这个参数是因为可以先用 `git diff --stat` 看看（`工作区`相比`版本库`）有哪些文件改变了；然后用 `git diff -- file` ***只看某个想看的文件的改动*** —— 否则，如果直接 `git diff` 基本都要找啊找半天。
+>>> 此外，加上 `--cached` 就是对比`暂存区`和`版本库`里文件的区别，无需赘述了，命令就是：`git diff --cached --stat` 和 `git diff --cached -- file`。
 
 Git如何获得两个版本间所有变更的文件列表 https://segmentfault.com/q/1010000000133613
 - > `git diff --name-status HEAD~2 HEAD~3`
 - > `git diff commit-SHA1 commit-SHA2 --stat`
+
+Can I make 'git diff' only display the line numbers AND changed file names? https://stackoverflow.com/questions/9848347/can-i-make-git-diff-only-display-the-line-numbers-and-changed-file-names
+- > `git diff --stat`
+- > `git diff --name-only`
 
 # 其他帖子
 
