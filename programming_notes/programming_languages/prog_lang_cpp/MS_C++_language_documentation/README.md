@@ -37,6 +37,10 @@ C和C++运算符 https://zh.wikipedia.org/wiki/C%E5%92%8CC%2B%2B%E9%81%8B%E7%AE%
 https://docs.microsoft.com/zh-cn/cpp/cpp/scope-resolution-operator
 - > 没有范围限定符的范围解析运算符表示全局命名空间。
 
+# `指针`
+
+如何：创建和使用 shared_ptr 实例 https://learn.microsoft.com/zh-cn/cpp/cpp/how-to-create-and-use-shared-ptr-instances
+
 # 待分类
 
 decltype (C++) https://docs.microsoft.com/en-us/cpp/cpp/decltype-cpp

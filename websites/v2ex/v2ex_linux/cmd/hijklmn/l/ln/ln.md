@@ -2,7 +2,6 @@
 ln -s 软链接的问题 https://www.v2ex.com/t/898104
 ```console
 1.代码仓库是 /codebase/test_version 2.代码访问路径是 /code/test
-
 现在想要的目的是把 test_version 代码软链接到 test 下 但是操作出来的效果是 /code/test/test_version 所以想知道正确的命令是什么
 ```
 - > `ln -s /codebase/test_version /code/test`
