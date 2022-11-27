@@ -1,4 +1,12 @@
 
+翻译微软独立研究员 Anthony Shaw 的《CPython Internals》-《CPython 实现原理》 https://www.v2ex.com/t/898194
+```console
+第一版本：纯翻译 ing ，这本书是基于 Python 3.8 写的，大家如果感兴趣欢迎阅读或者一起贡献；
+第二个版本（纯想法阶段）：基于这个 v1.0 在扩写 v2.0 ，大家代码走读和总结的都比较多了，在写类似文章好像价值不大，想想有没有
+    可能将 Python 语言演进过程的一些思考都纳入进去，v2.0 改名叫《 CPython 的前世今生》？
+文档链接地址： https://hai-shi.gitbook.io/cpython-internals
+```
+
 Python 的生成器太奇怪了吧，传递的居然不是变量的内存地址指针，而是变量符号 https://www.v2ex.com/t/888402
 - > 应该不是传了符号，而是 generator 本身是 lazy 的，在调用 list(l_f1)的时候才真正执行了运算，这时 l 已经指向第二个值了
 - > l_f1 = 和 l_f2 = 后面如果是「小括号」是惰性求值的，你不 print 它就不计算。改成「方括号」就没问题了。基础姿势。

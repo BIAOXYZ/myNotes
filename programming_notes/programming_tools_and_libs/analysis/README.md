@@ -29,7 +29,7 @@ If vs. Switch Speed https://stackoverflow.com/questions/445067/if-vs-switch-spee
 - > 在微处理器中，单指令流多数据流技术则是一个控制器控制多个平行的处理微元，例如 Intel 的 [MMX](https://zh.wikipedia.org/wiki/MMX) 或 [SSE](https://zh.wikipedia.org/wiki/SSE)，以及 AMD 的 [3D Now!](https://zh.wikipedia.org/wiki/3DNow!) 指令集。
 - > 图形处理器（GPU）拥有强大的并发处理能力和可编程流水线，面对单指令流多数据流时，运算能力远超传统CPU。[OpenCL](https://zh.wikipedia.org/wiki/OpenCL) 和 [CUDA](https://zh.wikipedia.org/wiki/CUDA) 分别是目前最广泛使用的开源和专利通用图形处理器（GPGPU）运算语言。
 
-因为一个循环，CPU 搞了个新技术！ https://www.ithome.com/0/656/472.htm || https://mp.weixin.qq.com/s/dllxt-uSAvgkyMNrgqhC7Q  【from `编程技术宇宙`】
+【[:star:][`*`]】 因为一个循环，CPU 搞了个新技术！ https://www.ithome.com/0/656/472.htm || https://mp.weixin.qq.com/s/dllxt-uSAvgkyMNrgqhC7Q  【from `编程技术宇宙`】
 - > **一个简单的循环**
   * > 那天，我们遇到了一段代码：
     ```c
