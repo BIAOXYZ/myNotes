@@ -21,3 +21,12 @@ Python multiprocessing 5 进程池 pool (多进程 多核运算 教学教程tuto
 多进程multiprocess https://www.liujiangblog.com/course/python/82
 
 Python Multiprocessing Example https://www.digitalocean.com/community/tutorials/python-multiprocessing-example
+
+# 问题
+
+## `multiprocessing` 里无法使用 lambda 函数或者非 “top-module level” 的函数
+
+AttributeError: Can't pickle local object in Multiprocessing https://stackoverflow.com/questions/72766345/attributeerror-cant-pickle-local-object-in-multiprocessing
+- https://stackoverflow.com/questions/72766345/attributeerror-cant-pickle-local-object-in-multiprocessing/72776044#72776044
+
+`AttributeError: Can't pickle local object '<locals>.<lambda>'` https://stackoverflow.com/questions/72339545/attributeerror-cant-pickle-local-object-locals-lambda 
