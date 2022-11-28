@@ -11,7 +11,8 @@ Python 的魔术方法 https://old-panda.com/2018/12/16/python-magic-methods/
 - > 在[上一篇文章](https://old-panda.com/2018/12/09/my-python-dict/)中实现了一个非常简陋的 MyDict 类，仅仅可以 get 、set ，其他的各种功能都没有，甚至连在 Python shell 中正常的表示都做不到。这篇文章将会继续完善这个字典类，并同时简单介绍用到的 Python 魔术方法。
   >> 不用 Python 自带的 Dict 实现自己的 HashTable https://old-panda.com/2018/12/09/my-python-dict/  -->  [`LC706. 设计哈希映射`](https://leetcode-cn.com/problems/)design-hashmap/
 
-I don't understand this python `__del__` behaviour https://stackoverflow.com/questions/6104535/i-dont-understand-this-python-del-behaviour
+A Guide to Python's Magic Methods https://rszalski.github.io/magicmethods/
+- > A PDF version of this guide can be obtained from [my site](http://www.rafekettler.com/magicmethods.pdf) or [Github](https://github.com/RafeKettler/magicmethods/raw/master/magicmethods.pdf). The magic methods guide has a git repository at http://www.github.com/RafeKettler/magicmethods. Any issues can be reported there, along with comments, (or even contributions!).
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -25,6 +26,8 @@ Python魔法方法漫游指南：构造与析构 https://mp.weixin.qq.com/s/V3i3
 关于使用 Python 析构函数的正确姿势 https://mp.weixin.qq.com/s/2p61386F_TkS6Dh2KOCm2w || https://www.infoq.cn/article/osyi8uidzioy2934uzce
 - > **4 解决方案**
   * > 首先，我们可以使用 close() 方法来代替析构函数，但是这类方法并不是绝对安全的，不光是因为它们很容易在编码时忘记去正确调用改方法，而且当程序需要抛出异常时，显式调用 close() 方法就会变得非常麻烦。
+
+I don't understand this python `__del__` behaviour https://stackoverflow.com/questions/6104535/i-dont-understand-this-python-del-behaviour
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
