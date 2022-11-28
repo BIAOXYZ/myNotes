@@ -38,6 +38,10 @@ etcd 使用入门 https://cizixs.com/2016/08/02/intro-to-etcd/
 raft 学习笔记 https://github.com/lkk2003rty/notes/blob/master/raft.md
 > "raft 从何学起呢？工欲善其事，必先利其器。当然首先看 paper 啦。主要的 paper 有两个 raft 和 thesis。相关的资料站点为 https://raft.github.io/。要是嫌弃这个站点 raft 的可视化做得不带好，还有一个比较详细的 http://thesecretlivesofdata.com/raft/ 可以看。"
 
+深入解读Raft算法与etcd工程实现 https://mp.weixin.qq.com/s/x-AdmN0UN5KT58XWO1BCOA
+
+彻底理解 Raft 共识算法及 etcd/raft 源码解析 https://mp.weixin.qq.com/s/KGQYNayiSWeqs2hGyRACWw
+
 Etcd 架构与实现解析 http://jolestar.com/etcd-architecture/
 
 高可用分布式存储 etcd 的实现原理 https://draveness.me/etcd-introduction

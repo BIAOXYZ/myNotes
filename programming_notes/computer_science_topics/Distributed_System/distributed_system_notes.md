@@ -151,17 +151,21 @@ Raft算法解析 https://www.jianshu.com/p/d5ac9eaeab30
 
 Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.com/s/ulbJ6nb8GncqMizJCQKweg
 
-分布式一致性算法：Raft 算法（论文翻译） https://www.cnblogs.com/linbingdong/p/6442673.html
+深入剖析共识性算法Raft https://mp.weixin.qq.com/s/Fc1mgAsa1aDOpfosUtcJhQ
 
-寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
+## Raft论文
+
+【[:star:][`*`]】 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
 
 寻找一种易于理解的一致性算法（扩展版） https://leeweir.github.io/posts/raft/
+
+分布式一致性算法：Raft 算法（论文翻译） https://www.cnblogs.com/linbingdong/p/6442673.html
 
 Raft 一致性算法论文中文译文 https://mp.weixin.qq.com/s/zMnqOCUVvRLQuJUwvM3QRA
 
 Raft：寻找一种易于理解的一致性算法 https://mp.weixin.qq.com/s/u4WUx3C6x-_Wr6Tg87uPNw
 
-深入剖析共识性算法Raft https://mp.weixin.qq.com/s/Fc1mgAsa1aDOpfosUtcJhQ
+Raft算法论文翻译 https://mp.weixin.qq.com/s/XcH7Ay96I0zU_Lp0mMw5OQ
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
