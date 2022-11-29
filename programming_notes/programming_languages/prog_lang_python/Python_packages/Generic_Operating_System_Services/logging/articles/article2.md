@@ -153,6 +153,79 @@
     ```
     > Upon running the above code, you’ll see that the log file now contains information on those events when the execution was successful as well as the error when the exception occurred. <br> ![](https://images.ctfassets.net/em6l9zw4tzag/4s0fWlp7YWsr4tAP571KPC/265b2967991a65ba8a6448e7f4ecb229/logging-in-python-image11.png)
 - > **Customizing Logging with Custom Loggers, Handlers, and Formatters**
+  * > Next, let’s refactor the existing code. We’ll define a separate function `test_division`.
+    ```py
+    def test_division(x,y):
+        try:
+            x/y
+            logger2.info(f"x/y successful with result: {x/y}.")
+        except ZeroDivisionError as err:
+            logger2.exception("ZeroDivisionError")
+    ```
+    > We’ll have the above function definition inside the `test_div` module. In the `main` module, we’ll only have the function calls. Let’s configure custom loggers in both the `main` and the `test_div` modules.
+  * > ▶️ Configuring a custom logger for the `test_div` module
+    ```py
+    import logging
+
+    logger2 = logging.getLogger(__name__)
+    logger2.setLevel(logging.INFO)
+
+    # configure the handler and formatter for logger2
+    handler2 = logging.FileHandler(f"{__name__}.log", mode='w')
+    formatter2 = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
+
+    # add formatter to the handler
+    handler2.setFormatter(formatter2)
+    # add handler to the logger
+    logger2.addHandler(handler2)
+
+    logger2.info(f"Testing the custom logger for module {__name__}...")
+
+    def test_division(x,y):
+        try:
+            x/y
+            logger2.info(f"x/y successful with result: {x/y}.")
+        except ZeroDivisionError as err:
+            logger2.exception("ZeroDivisionError") 
+    ```
+  * > ▶️ Configuring a custom logger for the `main` module
+    ```py
+    import logging
+    from test_div import test_division 
+
+    # get a custom logger & set the logging level
+    py_logger = logging.getLogger(__name__)
+    py_logger.setLevel(logging.INFO)
+
+    # configure the handler and formatter as needed
+    py_handler = logging.FileHandler(f"{__name__}.log", mode='w')
+    py_formatter = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
+
+    # add formatter to the handler
+    py_handler.setFormatter(py_formatter)
+    # add handler to the logger
+    py_logger.addHandler(py_handler)
+
+    py_logger.info(f"Testing the custom logger for module {__name__}...")
+
+    x_vals = [2,3,6,4,10]
+    y_vals = [5,7,12,0,1]
+
+    for x_val,y_val in zip(x_vals,y_vals):
+        x,y = x_val, y_val
+        # call test_division
+        test_division(x,y)
+        py_logger.info(f"Call test_division with args {x} and {y}")
+    ```
+  * > Let’s parse what the above code for configuring custom loggers does.
+  * > As a first step, we set up the logger and the logging level. `logging.getLogger(name)` returns the logger with that name, if it exists; else, it creates ***the `name` logger***. In practice, you’ll set the name of the logger to the special variable `__name__`, which corresponds to the name of the module. We assign the logger object to a variable. We then set the desired logging level using `logging.setLevel(level)`.
+  * > Next, we configure a handler. As we’d like to log events to a file, we configure a `FileHandler`. `logging.FileHandler(filename)` returns a file handler object. In addition to the name of the log file, you may optionally specify the mode. In this example, we set the mode to write. ***There are other handlers such as `StreamHandler`, `HTTPHandler`, `SMTPHandler`, and more***.
+  * > We then create a formatter object using the syntax: `logging.Formatter(format)`. In this example, we place `%(names)s`, the name of the logger (a string), before the log record format we had earlier.
+  * > Next, we add the formatter to the handler using `<handler>.setFormatter(<formatter>)`. Finally, we add the handler to the logger object using `<logger>.addHandler(<handler>)`.
+  * > You can then run the `main` module and examine the generated log files.
+  * > ![](https://images.ctfassets.net/em6l9zw4tzag/698JzSRblC9VqV8zq6MBP9/92493c5fd3da93119933a9fe89eb94c9/logging-in-python-image12.png)
+  * > ![](https://images.ctfassets.net/em6l9zw4tzag/4WHxTgcvlXErTuRoQPSj0v/bcfaf38fbfd83dd074776e26502e34e3/logging-in-python-image10.png)
+- > **Python Logging: Best Practices**
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
