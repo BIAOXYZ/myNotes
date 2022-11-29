@@ -9,8 +9,6 @@ logging --- Python 的日志记录工具 https://docs.python.org/zh-cn/3/library
 
 Logging in Python https://realpython.com/python-logging/
 
-Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/logging-in-python-a-developers-guide/
-
 Python Logging Module https://www.askpython.com/python-modules/python-logging-module
 - > **Logging from multiple modules**
   * > Since the log-file object and the handlers ***<ins>provide the same context</ins> in multiple modules***, we can use them directly in other modules.
