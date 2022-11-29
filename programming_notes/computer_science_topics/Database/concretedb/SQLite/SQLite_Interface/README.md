@@ -87,6 +87,10 @@ unsigned 64 bit value in sqlite with c bindings https://stackoverflow.com/questi
 How to read Int64 values from sqlite database? https://stackoverflow.com/questions/17858652/how-to-read-int64-values-from-sqlite-database
 - https://stackoverflow.com/questions/17858652/how-to-read-int64-values-from-sqlite-database/17860562#17860562
 
+## `sqlite3_config()`
+
+配置SQLite库 https://www.sqlite.net.cn/c3ref/config.html || Configuring The SQLite Library https://www.sqlite.org/c3ref/config.html
+
 ## 其他接口
 
 How do I check in SQLite whether a database exists C# https://stackoverflow.com/questions/21159790/how-do-i-check-in-sqlite-whether-a-database-exists-c-sharp

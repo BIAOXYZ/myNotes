@@ -43,6 +43,8 @@ Atomic Commit In SQLite https://sqlite.org/atomiccommit.html
 
 The SQLite Query Optimizer Overview https://www.sqlite.org/optoverview.html || SQLite查询优化器概述 https://www.sqlite.net.cn/optoverview.html
 
+PRAGMA Statements https://www.sqlite.org/pragma.html || PRAGMA声明 https://www.sqlite.net.cn/pragma.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他较权威链接

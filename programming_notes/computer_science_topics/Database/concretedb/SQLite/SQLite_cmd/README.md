@@ -112,6 +112,14 @@ How do I use the SQLite CLI's "--skip 1" option? https://stackoverflow.com/quest
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# PRAGMA 相关命令
+
+How and When to Execute PRAGMA statement in SQLite? https://stackoverflow.com/questions/53027770/how-and-when-to-execute-pragma-statement-in-sqlite
+- https://stackoverflow.com/questions/53027770/how-and-when-to-execute-pragma-statement-in-sqlite/53028722#53028722
+  * > `PRAGMA journal_mode = OFF` will return a result of off. `PRAGMA journal_mode` will return the current value without affecting it.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 sqlite显示查询所消耗时间 https://www.cnblogs.com/ftrako/p/5294691.html

@@ -57,3 +57,5 @@ Fast Bulk Inserts into SQLite http://blog.quibb.org/2010/08/fast-bulk-inserts-in
 - > 第二种方法:使用"`PRAGMA journal_mode = OFF`"指令，这个指令能关闭自动产生journal暂存档动作。但是如此一来当在写入数据库的过程，一旦发生意外状况，将会导致SQLite数据库无法保障数据完整与一致性。***缺点二:journal_mode设定为OFF时，无法使用交易模式(Transaction)进行操作***。第二种方法的缺点二在如果需要使用交易模式(Transaction)进行操作时，可以透过"`PRAGMA journal_mode = DELETE`"指令，修改回原本的journal模式(journal_mode)，就可以使用交易模式(Transaction)。
 
 Sqlite3的synchronous的模式选择 https://blog.csdn.net/chinaclock/article/details/48622243
+
+SQLite3开启事务和关闭事务模式下，性能测试对比 https://blog.csdn.net/thomashtq/article/details/45029889
