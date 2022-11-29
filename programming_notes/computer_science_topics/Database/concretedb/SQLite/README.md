@@ -35,6 +35,14 @@ Official Git mirror of the SQLite source tree https://github.com/sqlite/sqlite |
 Why SQLite Does Not Use Git https://sqlite.org/whynotgit.html
 - > SQLite does not use the Git version control system. SQLite uses Fossil instead, which is a version control system that was specifically designed and written to support SQLite.
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 官方文章
+
+Atomic Commit In SQLite https://sqlite.org/atomiccommit.html
+
+The SQLite Query Optimizer Overview https://www.sqlite.org/optoverview.html || SQLite查询优化器概述 https://www.sqlite.net.cn/optoverview.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他较权威链接
