@@ -61,7 +61,9 @@
   * > OK, it is good to use logging tools to display appropriate messages, but can I format my messages better that help me do betting logging of my code? The answer is YES. Let’s read the next section to format our logging messages better (and in a more meaningful way).
 - > **Formatting Logging Messages**
 
-Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/logging-in-python-a-developers-guide/
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+【[:star:][`*`]】 Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/logging-in-python-a-developers-guide/
 - > **Getting Started with Logging in Python**
   * > The following code snippet shows how you can use all the five logging levels with the syntax:
     ```py
@@ -77,8 +79,9 @@ Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/loggi
     ERROR:root:An ERROR
     CRITICAL:root:A message of CRITICAL severity
     ```
-    > This is because, by default, only messages corresponding to a logging level of `warning` and above are logged onto the console. However, you can modify this by configuring the logger to start logging from a specific level of your choosing.
-  * > Note: In the example explained in this tutorial, all code is in the `main.py` file and when we refactor existing code or add new modules, we explicitly state `<module-name>.py` to help you follow along.
+    > This is because, ***by default, only messages corresponding to a logging level of `warning` and above are logged onto the console***. However, you can modify this ***by configuring the logger to <ins>start logging from a specific level of your choosing</ins>***.
+    >> 【[:star:][`*`]】 //notes：1.不设置日志级别时，相当于默认的 logging level 是 `warning`，此时 `warning` 以下的 `info` 和 `debug` 不会打印到控制台；2.手动设置日志级别后，所有 ***大于等于*** 你设定的日志级别的会生效。
+  * > **Note**: In the example explained in this tutorial, all code is in the `main.py` file and when we refactor existing code or add new modules, we explicitly state `<module-name>.py` to help you follow along.
 - > **How to Log to a File in Python**
   * > To set up basic logging onto a file, you can use the `basicConfig()` constructor, as shown below.
     ```py
@@ -93,7 +96,7 @@ Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/loggi
   * > Next, let’s parse the above syntax for configuring ***the `root` logger***.
     + > `level`: This is the level you’d like to start logging at. ***If this is set to `info`, then all messages corresponding to `debug` are ignored***.
     + > `filename`: The parameter filename denotes the file handler object. You can specify the name of the file to log onto.
-    + > `filemode`: This is an optional parameter specifying the mode in which you’d like to work with the log file specified by the parameter `filename`. Setting the `filemode` to it write (`w`) will overwrite the logs every time the module is run. The default `filemode` is append (`a`) which means you’ll have a log record of events across all runs of the program.
+    + > `filemode`: This is an optional parameter specifying the mode in which you’d like to work with the log file specified by the parameter `filename`. Setting the `filemode` to write (`w`) will overwrite the logs every time the module is run. ***The default `filemode` is append (`a`)*** which means you’ll have a log record of events across all runs of the program.
   * > After running the `main` module, you’ll see that the log file `py_log.log` has been created in the current working directory. <br> ![](https://images.ctfassets.net/em6l9zw4tzag/7sfKpSWxY3M1naUcXnUISi/b25557aa7d2bc00796c6d9e48a8b03e4/logging-in-python-image3.png)
   * > Since we set the logging level to `info`, the log record now contains the message corresponding to `INFO`. <br> ![](https://images.ctfassets.net/em6l9zw4tzag/5Grtb1S0BFPgyut4T3nTd7/e7ffad26b8fa052e0b797079026347b9/logging-in-python-image1.png)
   * > The logs in the log file are of the format: `<logging-level>:<name-of-the-logger>:<message>`. The `<name-of-the-logger>` is by default ***the `root` logger***, as we haven’t yet configured custom loggers. <br> ![](https://images.ctfassets.net/em6l9zw4tzag/5Qgo39czWWL1c1yd2wkAKA/c5a6a61024a3443af3aed34cadc825dd/logging-in-python-image2.png)
@@ -111,3 +114,46 @@ Logging in Python: A Developer’s Guide https://blog.sentry.io/2022/07/19/loggi
   * > There are many other [log record attributes](https://docs.python.org/3/library/logging.html#logrecord-attributes) you can use to customize the way the messages appear in the log file. While setting up the `root` logger as explained above, ***please be sure to run `logging.basicConfig()` only once*** — typically at the beginning of the program before logging. Subsequent calls do not change anything unless you set the parameter `force` to `True`.
 - > **Logging Variables and Exceptions in Python**
   * > Now, let’s modify the `main.py` file. Say, there are two variables x and y, and we’d like to compute the value of x/y. We know that we’ll run into `ZeroDivisionError` when y = 0. We can handle this as an exception using the `try` and `except` blocks.
+  * > Next, we’d like to ***log the exception along with the stack trace***. To do this, you can use `logging.error(message, exc_info=True)`. Run the following code to see that the values of variables and the result are logged as `INFO`, indicating that the code works as expected.
+    ```py
+    x = 3
+    y = 4
+    logging.info(f"The values of x and y are {x} and {y}.")
+    try:
+        x/y
+        logging.info(f"x/y successful with result: {x/y}.")
+    except ZeroDivisionError as err:
+        logging.error("ZeroDivisionError",exc_info=True)
+    ```
+    > ![](https://images.ctfassets.net/em6l9zw4tzag/8uX8FPmGot9BoZvcVgpfi/91e81bfdfca01fd08f52acdf733f79de/logging-in-python-image5.png)
+  * > Next, set the value of y to zero and run the module again. When you examine the log file `pylog.log`, you can see that ***an exception has been recorded along with the stack trace***.
+    ```py
+    x = 4
+    y = 0
+    logging.info(f"The values of x and y are {x} and {y}.")
+    try:
+        x/y
+        logging.info(f"x/y successful with result: {x/y}.")
+    except ZeroDivisionError as err:
+        logging.error("ZeroDivisionError",exc_info=True)
+    ```
+    > ![](https://images.ctfassets.net/em6l9zw4tzag/7C47YmUsyGNC8HSLXsOaaW/c433a4a30f80767df4cb1a3e07c56b54/logging-in-python-image9.png)
+  * > As a next step, let’s modify our code to have a list of x and y values for which we’d like to compute the quotient x/y. To log an exception, you can also use `logging.exception(<message>)`.
+    ```py
+    x_vals = [2,3,6,4,10]
+    y_vals = [5,7,12,0,1]
+    for x_val,y_val in zip(x_vals,y_vals):
+        x,y = x_val,y_val
+        logging.info(f"The values of x and y are {x} and {y}.")
+        try:
+            x/y
+            logging.info(f"x/y successful with result: {x/y}.")
+        except ZeroDivisionError as err:
+            logging.exception("ZeroDivisionError")
+    ```
+    > Upon running the above code, you’ll see that the log file now contains information on those events when the execution was successful as well as the error when the exception occurred. <br> ![](https://images.ctfassets.net/em6l9zw4tzag/4s0fWlp7YWsr4tAP571KPC/265b2967991a65ba8a6448e7f4ecb229/logging-in-python-image11.png)
+- > **Customizing Logging with Custom Loggers, Handlers, and Formatters**
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
