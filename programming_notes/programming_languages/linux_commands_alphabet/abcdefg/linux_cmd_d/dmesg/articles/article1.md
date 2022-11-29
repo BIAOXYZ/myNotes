@@ -41,10 +41,10 @@
     E　　信号不能被捕获
     F　　信号不能被忽略
     ```
-- > 如果默认处理动作是C（coredump），那么就会生成coredump，然后终止进程，在上一篇文章[《啊，我的程序为啥卡住啦》](http://www.cnblogs.com/xybaby/p/8025435.html)中，提到用`kill -11 pid`来终止、调试卡住的程序，这个`11`就是指信号`SIGSEGV`。
-- > 注意 **`SIGKILL` `SIGSTOP`这两个信号，既不可以被捕获，也不能被忽略**，就是说收到这两个信号，程序就会不留痕迹地终止。
+  * > 如果默认处理动作是C（coredump），那么就会生成coredump，然后终止进程，在上一篇文章[《啊，我的程序为啥卡住啦》](http://www.cnblogs.com/xybaby/p/8025435.html)中，提到用`kill -11 pid`来终止、调试卡住的程序，这个`11`就是指信号`SIGSEGV`。
+  * > 注意 **`SIGKILL` `SIGSTOP`这两个信号，既不可以被捕获，也不能被忽略**，就是说收到这两个信号，程序就会不留痕迹地终止。
 - > **到底是什么信号**
-  * > 从上面，我们可以看到，有很多信号都可以终止进程，如果我们没有针对某种信号指定处理函数，那么我们怎么知道进程是被哪一个进程kill掉了呢，那就是`strace`。
+  * > 从上面，我们可以看到，有很多信号都可以终止进程，如果我们没有针对某种信号指定处理函数，那么我们怎么知道进程是被哪一个进程`kill`掉了呢，那就是`strace`。
   * > 我们以一段简单的Python代码为例：
     ```py
     # -*- coding: utf-8 -*-
@@ -138,4 +138,75 @@
     ```
   * > 由于进程使用内存最多，而且没有设置保护机制，所以32122这个python进程就被`kill`掉了。
   * > 所以，如果机器内存使用率较高，那么当进程消失的时候不妨用`dmesg`看看。
+- > **谁发的信号**
+  * > 更普遍的，即使我们知道进程被`SIGKILL`干掉了，这没有什么用。关键是得找出谁发送的这个信号，是故意的还是意外，也许是新手写的脚本误伤，也许是老手故意搞破坏。
+  * > 最简单的，那就是查看[`last`](http://man7.org/linux/man-pages/man1/last.1.html)与[`history`](http://man7.org/linux/man-pages/man3/history.3.html)，`last`看看谁登陆到了系统，然后再用`history`看看相关的操作记录。可是，操作记录是可以被清除的，`history -c`可以清除本终端上的操作记录，也可以直接清空、删除`.bash_history`，也许有更高级的手段来禁止清空操作记录，但到底是道高一尺魔高一丈，还是魔高一尺道高一丈，我也就不清楚了。
+- > **`systemtap`**
+  * > 在 [who-killed-my-process-and-why](https://stackoverflow.com/questions/726690/who-killed-my-process-and-why) 中，指出了其中的一种办法，使用[`systemtap`](https://sourceware.org/systemtap/)，笔者也是第一次听说这个家伙，据说非常强大。官方给出了捕获信号的[示例代码](https://sourceware.org/systemtap/examples/process/sigmon.stp)。
+    ```console
+    probe begin
+    {
+      printf("%-8s %-16s %-5s %-16s %6s %-16s\n",
+             "SPID", "SNAME", "RPID", "RNAME", "SIGNUM", "SIGNAME")
+    }
 
+    probe signal.send 
+    {
+      if (sig_name == @1 && sig_pid == target())
+        printf("%-8d %-16s %-5d %-16s %-6d %-16s\n", 
+          pid(), execname(), sig_pid, pid_name, sig, sig_name)
+    }
+    ```
+    > 将上述代码保存为`sigmon.stp`文件，然后查看待监控的进程的`pid`，使用下述命令监控发送到该进程的`SIGKILL`信号
+    ```sh
+    stap -x pid sigmon.stp SIGKILL
+    ```
+    > 不过这种方法，我并没有实验成功，`systemtap`的安装太麻烦了。。。
+- > **`audit`**
+  * > 在 [Who sends a SIGKILL to my process mysteriously on ubuntu server](https://stackoverflow.com/questions/26285133/who-sends-a-sigkill-to-my-process-mysteriously-on-ubuntu-server) 中，提到了另外一个更加简单的方法，那就是使用`audit`
+  * > 安装很简单：`sudo apt-get install auditd`
+  * > 启动服务并查看状态：`service auditd start & service auditd status`
+  * > 然后通过`auditctrl`添加规则：`auditctl -a exit,always -F arch=b64 -S kill -F a1=9`
+  * > 启动然后`kill`掉Python程序
+    ```sh
+    $ python run_forever.py &
+    [1] 24067
+    $ kill -9 24067
+    ```
+  * > 使用`ausearch`搜索结果：`ausearch -sc kill`。结果如下　
+    ```console
+    time->Mon Dec 25 19:52:55 2017
+    type=PROCTITLE msg=audit(1514202775.088:351): proctitle="bash"
+    type=OBJ_PID msg=audit(1514202775.088:351): opid=24067 日uid=-1 ouid=3010 oses=-1 ocomm="python"
+    type=SYSCALL msg=audit(1514202775.088:351): arch=c000003e syscall=62 success=yes exit=0 a0=5e03 a1=9 a2=0 a3=7ffc0d9f7b90 items=0 ppid=1349 pid=1350  uid=3010 gid=3010 euid=3010 suid=3010 fsuid=3010 egid=3010 sgid=3010 fsgid=3010 tty=pts0 comm="bash" exe="/bin/bash" key=(null)
+    ```
+    > 可以看到，信号的目标进程是一个python程序，`pid`是24067，启动该进程的用户的`id`是3010。`kill`进程的信号被用户3010在`pid`为1350的bash中发出。
+- > **案例与总结**
+  * > 我遇到过的，进程悄无声息消失的情况，有以下几种
+    + > （1）进程确实是crash了，不过用于core file size设置的问题，没有生成coredump，这里可以通过`ulimit -c`确认
+    + > （2）oom，代码bug导致进程占用内存过多，被操作系统干掉
+    + > （3）进程被父进程，或者监控进程（watchdog）给`kill`掉，这个在使用框架的时候容易出现
+    + > （4）进程被误杀，诸如这样的脚本 
+      ```sh
+      kill -9 `ps aux | grep python | awk '{print $2}'`
+      ```
+      > 杀掉所有的python进程，这是非常粗暴的方法，非常容易误杀
+    + > （5）`top`，`top`命令也能杀掉进程，are you kidding me？ No
+      - > ![](https://images2017.cnblogs.com/blog/1089769/201712/1089769-20171226184404620-968248493.png)
+      - > 如上图所示，进程9603是一个Python程序，`top -c`默认按照CPU使用量排序，所以这个CPU 100%的进程在最前面。当按下`K键`的时候，就会给进程发信号，default pid就是在第一行的进程，当然这里也可以输入`pid`。直接回车，结果如下图
+      - > ![](https://images2017.cnblogs.com/blog/1089769/201712/1089769-20171226184810463-1672550063.png) 
+      - > 可以看到，默认的信号是`SIGTERM`（`15`），也可以输入信号。在敲回车之后，这个进程就被`kill`了
+      - > 即使查看`history`命令，也只有一个`top`命令，完全看不出什么，所以使用`top`命令也要小心啊，捕获`SIGTERM`也是一个不错的主意。
+  * > 当然，做好权限控制，就能减少进程被意外Kill，特别是在线上服务器，适当的监控也是必要的。
+  * > 那么当进程消失的时候，可以按照下列步骤排查
+    ```console
+    （1）看日志
+    （2）查看有没有coredump，查看ulimit -c
+    （3）看系统内存使用量，用dmesg看是不是OOM
+    （4）看last与history，crontab
+    （5）也许一切都在运维的掌控之中 
+    ```
+- > **references**
+  * Taming the OOM killer https://lwn.net/Articles/317814/
+  * who-killed-my-process-and-why https://stackoverflow.com/questions/726690/who-killed-my-process-and-why
+  * Who sends a SIGKILL to my process mysteriously on ubuntu server https://stackoverflow.com/questions/26285133/who-sends-a-sigkill-to-my-process-mysteriously-on-ubuntu-server
