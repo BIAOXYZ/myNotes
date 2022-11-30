@@ -15,7 +15,9 @@
   ```
 - > https://cockpit-project.org/
 - 个人补充链接：
-  * Netdata https://github.com/netdata/netdata
+  *  【[`star`][`*`]】 Netdata https://github.com/netdata/netdata
+  * Munin https://munin-monitoring.org/ || https://github.com/munin-monitoring/munin
+  * Monit https://mmonit.com/monit/ || https://bitbucket.org/tildeslash/monit/src/master/
 
 我有两台不在同一局域网的内网 Linux 机器 A, B, 还有一个公网服务器 C, A 可以 ssh 到 C, B 也可以, 我有什么办法通过 C 来实现 A B 通信么? 或者 A 直接拷贝文件给 B https://www.v2ex.com/t/867836
 - > 我说个简单的, 通过 ssh tunnel 来 scp

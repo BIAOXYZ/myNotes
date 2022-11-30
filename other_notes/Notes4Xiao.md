@@ -294,6 +294,8 @@ A Security Site https://asecuritysite.com/
 
 # libs
 
+进程间通信——共享内存（Shared Memory） https://blog.csdn.net/ypt523/article/details/79958188
+
 柏拉图支持算法列表 https://github.com/Tencent/plato/blob/3b9f15dbd59498b05cefbc27e853cab726ed1be2/doc/ALGOs.md
 
 Delegated PSI Cardinality & Contact Tracing https://github.com/nitrieu/delegated-psi-ca
