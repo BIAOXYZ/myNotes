@@ -1,4 +1,22 @@
 
+求助： Linux 资源监控面板寻找 https://www.v2ex.com/t/899160
+- > https://alternativeto.net/software/nodequery/
+  >> Nodequery 不过现在官网都没了
+- > zabbix ？
+- > prometheus + node_exporter + grafana. tcp 连接数, 网络收发包, 磁盘 IO 等等都能查.
+- > Netdata? 他家有在线版
+- > 
+  ```console
+  https://monika.hyperjump.tech/guides/probes
+  https://github.com/firehol/netdata
+  https://mmonit.com/monit/
+  http://munin-monitoring.org/
+  https://github.com/hyperjumptech/monika
+  ```
+- > https://cockpit-project.org/
+- 个人补充链接：
+  * Netdata https://github.com/netdata/netdata
+
 我有两台不在同一局域网的内网 Linux 机器 A, B, 还有一个公网服务器 C, A 可以 ssh 到 C, B 也可以, 我有什么办法通过 C 来实现 A B 通信么? 或者 A 直接拷贝文件给 B https://www.v2ex.com/t/867836
 - > 我说个简单的, 通过 ssh tunnel 来 scp
   ```

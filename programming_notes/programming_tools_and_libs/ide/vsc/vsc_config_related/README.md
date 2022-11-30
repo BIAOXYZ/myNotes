@@ -18,3 +18,7 @@ How to reset settings in Visual Studio Code? https://stackoverflow.com/questions
 
 How to exclude folder from "Explore" tab? https://stackoverflow.com/questions/33258543/how-to-exclude-folder-from-explore-tab
 - https://stackoverflow.com/questions/33258543/how-to-exclude-folder-from-explore-tab/55556206#55556206
+
+# 首次安装后配置
+
+Windows下VSCode配置C++环境 - 小红花的文章 - 知乎 https://zhuanlan.zhihu.com/p/105135431
