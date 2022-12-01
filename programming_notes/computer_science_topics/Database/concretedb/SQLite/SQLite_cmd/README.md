@@ -114,6 +114,8 @@ How do I use the SQLite CLI's "--skip 1" option? https://stackoverflow.com/quest
 
 # PRAGMA 相关命令
 
+SQLite PRAGMA https://www.runoob.com/sqlite/sqlite-pragma.html
+
 How and When to Execute PRAGMA statement in SQLite? https://stackoverflow.com/questions/53027770/how-and-when-to-execute-pragma-statement-in-sqlite
 - https://stackoverflow.com/questions/53027770/how-and-when-to-execute-pragma-statement-in-sqlite/53028722#53028722
   * > `PRAGMA journal_mode = OFF` will return a result of off. `PRAGMA journal_mode` will return the current value without affecting it.

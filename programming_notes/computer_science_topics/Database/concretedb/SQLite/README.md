@@ -45,6 +45,18 @@ The SQLite Query Optimizer Overview https://www.sqlite.org/optoverview.html || S
 
 PRAGMA Statements https://www.sqlite.org/pragma.html || PRAGMA声明 https://www.sqlite.net.cn/pragma.html
 
+预写日志 https://www.sqlite.net.cn/wal.html || Write-Ahead Logging https://www.sqlite.org/wal.html
+- > 使用WAL代替回滚日志有优点和缺点。优势包括：
+  * > 在大多数情况下，WAL的速度明显更快。
+  * > WAL提供更多的并发性，因为读者不会阻止作者，而作家也不会阻止读者。读写可以同时进行。
+  * > 使用WAL时，磁盘I / O操作趋于顺序化。
+  * > WAL使用的fsync（）操作少得多，因此，在fsync（）系统调用中断的系统上，它不易受到问题的影响。
+- > **2. WAL的工作方式**
+  * > 传统的回滚日志的工作方式是将原始未更改的数据库内容的副本写入单独的回滚日志文件，然后将更改直接写入数据库文件。如果发生崩溃或ROLLBACK，则回滚日志中包含的原始内容将被回放到数据库文件中，以将数据库文件还原为原始状态。该COMMIT当回滚日志被删除时。
+  * > WAL的方法反过来了。原始内容保留在数据库文件中，而更改将附加到单独的WAL文件中。甲COMMIT当指示一个提交一个特殊的记录被追加到WAL发生。因此，即使不写入原始数据库也可以进行COMMIT，这允许读者在更改同时提交到WAL的同时继续从原始未更改的数据库进行操作。可以将多个事务附加到单个WAL文件的末尾。
+
+4.0回滚日志 https://www.sqlite.net.cn/lockingv3.html#rollback || 4.0 The Rollback Journal https://www.sqlite.org/lockingv3.html#rollback
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他较权威链接
