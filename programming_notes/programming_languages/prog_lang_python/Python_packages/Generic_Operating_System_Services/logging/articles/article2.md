@@ -137,6 +137,18 @@
     except ZeroDivisionError as err:
         logging.error("ZeroDivisionError",exc_info=True)
     ```
+    >> 【[:star:][`*`]】 //notes：也可以结合 `traceback` 库里的一些方法，比如下面两种：
+      ```py
+      except Exception as e:
+          traceback.print_exc()
+          my_top_logger.error("[var1:{}] [var2:{}] in this position we catch exception: {}".format(var1, var2, e.with_traceback))
+
+      ```
+      ```py
+      except Exception:
+          err_msg = str(traceback.format_exc())
+          my_top_logger.error("your module: get 500 %s", err_msg)
+      ```
     > ![](https://images.ctfassets.net/em6l9zw4tzag/7C47YmUsyGNC8HSLXsOaaW/c433a4a30f80767df4cb1a3e07c56b54/logging-in-python-image9.png)
   * > As a next step, let’s modify our code to have a list of x and y values for which we’d like to compute the quotient x/y. To log an exception, you can also use `logging.exception(<message>)`.
     ```py
@@ -225,7 +237,13 @@
   * > You can then run the `main` module and examine the generated log files.
   * > ![](https://images.ctfassets.net/em6l9zw4tzag/698JzSRblC9VqV8zq6MBP9/92493c5fd3da93119933a9fe89eb94c9/logging-in-python-image12.png)
   * > ![](https://images.ctfassets.net/em6l9zw4tzag/4WHxTgcvlXErTuRoQPSj0v/bcfaf38fbfd83dd074776e26502e34e3/logging-in-python-image10.png)
+    >> 【[:star:][`*`]】 //notes：也可以定义一个全局的 my_top_logger，然后各个（想集中记日志的）模块都 import 这个 my_top_logger，并且把想记的内容都用它来记。***这样就能达到不同module的日志聚合到一个文件里的效果***。
 - > **Python Logging: Best Practices**
+  * > So far, we’ve covered how to log variables, exceptions, and set up custom loggers. Next, let’s enumerate some of the best practices for logging.
+    + > **Set the optimal logging level**: Logs are helpful only when you can use them to track down important errors that need to be fixed. Depending on the specific application, be sure to set the optimal logging level. Logging too many events can be suboptimal from a debugging viewpoint as it’s difficult to filter through the logs to identify errors that require immediate attention.
+    + > **Configure loggers at the module level**: When you’re working on an application with multiple modules, you should consider configuring a logger for each module. Setting the name of the logger to `__name__` helps identify the modules in your application that have issues you need to fix.
+    + > **Include timestamps and ensure consistent formatting**: Always include timestamps in logs as they’re helpful in tracing back to when an error occurred. Format your logs consistently across the different modules in your application.
+    + > **Rotate the log files to facilitate easier debugging**: When working on large applications with several modules, it’s likely that your log files will be very large in size. As it’s challenging to filter through such large logs to detect errors, you should consider rotating the log files. You can do this by using the `RotatingFileHandler` with the syntax: `logging.handlers.RotatingFileHandler(filename, maxBytes,backupCount)`. When the current log file reaches the size `maxBytes`, the subsequent logs roll over to the next files depending on the value of `backupCount`. If you set the `backupCount` to K, you get K back-up files.
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
