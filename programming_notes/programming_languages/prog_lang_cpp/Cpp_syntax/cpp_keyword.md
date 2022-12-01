@@ -47,6 +47,8 @@ Why isn't 'nullptr' in the 'std' namespace? https://stackoverflow.com/questions/
     ```
     > 所以不能将`NULL`定义为`(void*)0`。
 
+C++11 nullptr：初始化空指针 http://c.biancheng.net/view/7887.html
+
 # `static_cast`
 
 static_cast conversion https://en.cppreference.com/w/cpp/language/static_cast

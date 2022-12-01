@@ -15,7 +15,7 @@
   ```
 - > https://cockpit-project.org/
 - 个人补充链接：
-  *  【[`star`][`*`]】 Netdata https://github.com/netdata/netdata
+  *  【[:star:][`*`]】 Netdata https://github.com/netdata/netdata
   * Munin https://munin-monitoring.org/ || https://github.com/munin-monitoring/munin
   * Monit https://mmonit.com/monit/ || https://bitbucket.org/tildeslash/monit/src/master/
 
