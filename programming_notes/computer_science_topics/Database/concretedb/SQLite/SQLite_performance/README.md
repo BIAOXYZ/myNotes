@@ -155,3 +155,7 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
 sqlite多进程并发读写模式下，返回SQLITE_BUSY错误的处理方法 https://blog.csdn.net/lijinqi1987/article/details/51754846
 
 Python+SQLite数据库实现服务端高并发写入 https://cloud.tencent.com/developer/article/1771861
+
+sqlite解决并发性问题 https://blog.csdn.net/feiyeyangyang/article/details/71632048
+- > 验证了sqlite脚本的并发性，弱爆了，一个脚本写，一个脚本查询，查询的脚本运行down掉了。
+- > 如何处理这种并发性问题？使用linux系统中的**消息队列**完美解决，将写、查询操作都放到一个消息队列中，获取消息队列中数据进行先进先出的数据库读写操作
