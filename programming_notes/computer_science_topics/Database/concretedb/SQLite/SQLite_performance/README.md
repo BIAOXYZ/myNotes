@@ -152,6 +152,20 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
 
 # SQLite性能之多线程/多进程
 
+14 | 存储优化（下）：数据库SQLite的使用和优化 https://blog.yorek.xyz/android/paid/master/storage_3/
+- > 所以当时微信专门开展了一个重度用户优化的专项。一开始的时候我们集中在 SQLite 使用上的优化，例如表结构、索引等。但很快就发现由于系统版本的不同，SQLite 的实现也有所差异，经常会出现一些兼容性问题，并且也考虑到加密的诉求，我们决定单独引入自己的 SQLite 版本。
+- > “源码在手，天下我有”，从此开启了一条研究数据库的“不归路”。那时我们投入了几个人专门去深入研究 SQLite 的源码，从 SQLite 的 PRAGMA 编译选项、Cursor 实现优化，到 SQLite 源码的优化，最后打造出从实验室到线上的整个监控体系。
+- > 在 2017 年，我们开源了内部使用的 SQLite 数据库WCDB。这里多说两句，看一个开源项目是否靠谱，就看这个项目对产品本身有多重要。微信开源坚持内部与外部使用同一个版本，虽然我现在已经离开了微信团队，但还是欢迎有需要的同学使用 WCDB。
+- > 在开始学习前我要提醒你，SQLite 的优化同样也很难通过一两篇文章就把每个细节都讲清楚。今天的内容我选择了一些比较重要的知识点，并且为你准备了大量的参考资料，遇到陌生或者不懂的地方需要结合参考资料反复学习。
+- > **多进程并发**
+- > **多线程并发**
+- > **索引优化**
+- > **页大小与缓存大小**
+- 本文相关链接：
+  * WCDB https://github.com/Tencent/wcdb/wiki
+  * 微信WCDB进化之路 - 开源与开始 https://mp.weixin.qq.com/s/tzy-fr55t1zqTbxOeKg4RA
+  * 微信移动端数据库组件WCDB系列（二） — 数据库修复三板斧 https://mp.weixin.qq.com/s/Ln7kNOn3zx589ACmn5ESQA
+
 sqlite多进程并发读写模式下，返回SQLITE_BUSY错误的处理方法 https://blog.csdn.net/lijinqi1987/article/details/51754846
 
 Python+SQLite数据库实现服务端高并发写入 https://cloud.tencent.com/developer/article/1771861
