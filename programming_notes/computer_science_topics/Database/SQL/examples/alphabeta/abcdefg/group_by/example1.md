@@ -271,7 +271,7 @@ SQL中GROUP BY的用法 https://blog.csdn.net/liitdar/article/details/85272035
     mysql>
     ```
     > 上述查询结果能够看到，***当不使用聚合函数时，`GROUP BY`的结果是分组内容中的第一组查询结果***。当然，在实际使用中，我们通常都需要**将聚合函数与 `GROUP BY` 用法结合使用，来实现某种目的**。
-    >> 【[:star:][`*`]】 //notes：怀疑这篇文章里 mysql 的 `sql_mode` 是 `'traditional'`。
+    >> 【[:star:][`*`]】 //notes：后来又经过了一些查找和学习，估计这篇文章里 mysql 的 `sql_mode` 是 `'traditional'`，此时其他几个列（`role_id, occupation, register_time`）虽然既没有在聚合函数里，也没有在`group by`里（此时对于列 `camp` 里的某一个具体值 —— 比如 'alliance' 或 'horde' —— 有多个可能的行可选），但是数据库采取了 ***选择满足条件的第一个行的策略***。
   * > 例如，我们想查找“联盟和部落阵营中所有角色最早的注册时间”，则可以通过如下语句实现：
     ```sql
     mysql> select camp,MIN(register_time) as register_time from roles group by camp;
