@@ -148,7 +148,7 @@ LINE 1: SELECT cname, wmname, avg FROM makerar GROUP BY cname, wmnam...
 postgres=#
 ```
 
-## 1.3 用 mysql 试了试发现这作者说的也不对啊，mysql5.7（但是后来 mysql8.0 也试了，一样的） 和 pg 的表现是一样的：只要有“聚合”出现，select 的列同样必须满足`在聚合函数内`或`在group by内`  -->  后来破案了，是因为 mysql 的 sql_mode 可以选 `'ansi'` 或者 `traditional`。前者会和 pg 一样报错，后者是能执行的。详情参见 《CMU 15-445/645 Database Systems》 Fall/2019 的[笔记](https://github.com/BIAOXYZ/paperRelatedRepository/blob/master/notes/CourseNotes/from_university/CMU/database/CMU_15-445/fall2019/01--10.md#%E7%AC%94%E8%AE%B0-1)。
+## 1.3 用 mysql 试了试发现这作者说的也不对啊，mysql5.7（但是后来 mysql8.0 也试了，一样的） 和 pg 的表现是一样的：只要有“聚合”出现，select 的列同样必须满足`在聚合函数内`或`在group by内`  -->  后来破案了，是因为 mysql 的 sql_mode 可以选 `'ansi'` 或者 `'traditional'`。前者会和 pg 一样报错，后者是能执行的。详情参见 《CMU 15-445/645 Database Systems》 Fall/2019 的[笔记](https://github.com/BIAOXYZ/paperRelatedRepository/blob/master/notes/CourseNotes/from_university/CMU/database/CMU_15-445/fall2019/01--10.md#%E7%AC%94%E8%AE%B0-1)。
 
 ```sh
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -itd mysql:5.7
@@ -236,6 +236,26 @@ mysql>
 # 2
 
 SQL中GROUP BY的用法 https://blog.csdn.net/liitdar/article/details/85272035
+- > **2 常见用法**
+  * > 现有一数据库表，内容如下：
+    ```console
+    mysql> select * from roles;
+    +---------+------------+----------+---------------------+
+    | role_id | occupation | camp     | register_time       |
+    +---------+------------+----------+---------------------+
+    |       1 | mage       | alliance | 2018-12-03 16:11:28 |
+    |       2 | paladin    | alliance | 2018-11-30 16:11:28 |
+    |       3 | rogue      | horde    | 2018-12-01 16:11:28 |
+    |       4 | priest     | alliance | 2018-12-02 16:11:28 |
+    |       5 | shaman     | horde    | NULL                |
+    |       6 | warrior    | alliance | NULL                |
+    |       7 | warlock    | horde    | 2018-12-04 16:11:28 |
+    |       8 | hunter     | horde    | NULL                |
+    +---------+------------+----------+---------------------+
+    8 rows in set (0.00 sec)
+     
+    mysql> 
+    ```
 - > **2.1 结合聚合函数**
   * > 首先，不使用聚合函数，只使用 `GROUP BY`，查询结果如下：
     ```sql
@@ -251,6 +271,7 @@ SQL中GROUP BY的用法 https://blog.csdn.net/liitdar/article/details/85272035
     mysql>
     ```
     > 上述查询结果能够看到，***当不使用聚合函数时，`GROUP BY`的结果是分组内容中的第一组查询结果***。当然，在实际使用中，我们通常都需要**将聚合函数与 `GROUP BY` 用法结合使用，来实现某种目的**。
+    >> 【[:star:][`*`]】 //notes：怀疑这篇文章里 mysql 的 `sql_mode` 是 `'traditional'`。
   * > 例如，我们想查找“联盟和部落阵营中所有角色最早的注册时间”，则可以通过如下语句实现：
     ```sql
     mysql> select camp,MIN(register_time) as register_time from roles group by camp;
