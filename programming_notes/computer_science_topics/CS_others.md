@@ -70,6 +70,10 @@ craftinginterpreters_zh https://github.com/GuoYaxiang/craftinginterpreters_zh
 - > 手撸解释器教程《Crafting Interpreters》中文翻译。
 - > 这是一个还在进行中的翻译项目，原项目是[craftinginterpreters](https://github.com/munificent/craftinginterpreters)，同时还有配套的英文书，可免费[在线阅读](http://www.craftinginterpreters.com/)。
 
+### JIT
+
+Brainfuck JIT 虚拟机教程 https://github.com/Nugine/bfjit || https://nugine.github.io/bfjit/
+
 ## DB project
 
 Naive Query Engine (Toy for Learning) https://github.com/Veeupup/naive-query-engine

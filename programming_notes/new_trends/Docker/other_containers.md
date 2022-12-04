@@ -119,3 +119,11 @@ gVisor：谷歌发布的一个用于提供安全隔离的轻量级容器运行�
 # LightVM
 
 启动仅需2.3ms比Docker还快的新技术，能否改变容器市场格局？ https://www.kubernetes.org.cn/3222.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+"Distroless" Container Images https://github.com/GoogleContainerTools/distroless
+- > "Distroless" images contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution.
+- > **Why should I use distroless images?**
+  * > Restricting what's in your runtime container to precisely what's necessary for your app is a best practice employed by Google and other tech giants that have used containers in production for many years. It improves the signal to noise of scanners (e.g. CVE) and reduces the burden of establishing provenance to just what you need.
+  * > Distroless images are _very small_. The smallest distroless image, `gcr.io/distroless/static-debian11`, is around `2 MiB`. That's about `50%` of the size of `alpine` (`~5 MiB`), and less than `2%` of the size of `debian` (`124 MiB`).
