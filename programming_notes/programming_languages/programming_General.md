@@ -620,21 +620,6 @@ Big Endian与Little Endian区别 https://blog.csdn.net/wyzxg/article/details/534
 
 # 小知识
 
-### for循环大小变量内外层的问题
-
-第 120 题：为什么for循环嵌套顺序会影响性能？ https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/235
-- > 两个循环的次数的是一样的，但是 j 与 k 的初始化次数是不一样的
-  * > 第一个循环的 j 的初始化次数是 100 次，k 的初始化次数是 10w 次
-  * > 第二个循环的 j 的初始化次数是 1w 次， k 的初始化次数是 1000w 次
-  * > 所以相同循环次数，外层越大，越影响性能
-- > 循环次数少的放在外层，减少内层变量的操作(初始化，比较，自增等)次数吧。
-
-Why is a big loop within a small loop faster than a small loop within a big one? https://stackoverflow.com/questions/23107563/why-is-a-big-loop-within-a-small-loop-faster-than-a-small-loop-within-a-big-one
-
-A big loop within a small loop always faster than a small loop within a big one? https://stackoverflow.com/questions/23914350/a-big-loop-within-a-small-loop-always-faster-than-a-small-loop-within-a-big-one
-
-在有循环嵌套时, 要把大循环写在内, 小循环写在外, 原因在此 https://blog.csdn.net/xiaohuh421/article/details/44056189
-
 ### `len()` 或 `size()` 之类的函数的复杂度为什么大都是 `O(1)`？
 
 Time Complexity of finding the length of an array https://stackoverflow.com/questions/45093097/time-complexity-of-finding-the-length-of-an-array

@@ -21,3 +21,8 @@ Installing packages using pip and virtual environments https://packaging.python.
     ```py
     python3 -m venv env
     ```
+
+# 其他
+
+如何在Ubuntu 18.04服务器上安装Python 3并建立本地编程环境 https://www.digitalocean.com/community/tutorials/ubuntu-18-04-python-3-1-zh
+>> //notes：其实并不是因为 `venv` 的原因，而是因为 digitalocean 本来文章写得不错了，竟然都出中文的了。。。什么是业界良心- -
