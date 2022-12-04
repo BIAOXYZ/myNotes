@@ -160,11 +160,30 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
 - > **多进程并发**
 - > **多线程并发**
 - > **索引优化**
+  * > 正确使用索引在大部分的场景可以大大降低查询速度，微信的数据库优化也是通过索引开始。下面是索引使用非常简单的一个例子，我们先从索引表找到数据对应的 rowid，然后再从原数据表直接通过 rowid 查询结果。 <br> ![](https://blog.yorek.xyz/assets/images/android/master/storage_3_1.gif)
+  * > 关于 SQLite 索引的原理网上有很多文章，在这里我推荐一些参考资料给你：
+    + > [SQLite 索引的原理](https://www.cnblogs.com/huahuahu/p/sqlite-suo-yin-de-yuan-li-ji-ying-yong.html)
+    + > 官方文档：[Query Planning](https://www.sqlite.org/queryplanner.html#searching)
+    + > [MySQL 索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
+  * > 这里的关键在于如何正确的建立索引，很多时候我们以为已经建立了索引，但事实上并没有真正生效。例如使用了 `BETWEEN`、`LIKE`、`OR` 这些操作符、使用`表达式`或者 `case when` 等。更详细的规则可参考官方文档 [The SQLite Query Optimizer Overview](https://www.sqlite.org/optoverview.html)，下面是一个通过优化转换达到使用索引目的的例子。
+    ```sql
+    ## BETWEEN：myfiedl索引无法生效
+    SELECT * FROM mytable WHERE myfield BETWEEN 10 and 20;
+    ## 转换成：myfiedl索引可以生效
+    SELECT * FROM mytable WHERE myfield >= 10 AND myfield <= 20;
+    ```
+  * > 建立索引是有代价的，需要一直维护索引表的更新。比如对于一个很小的表来说就没必要建索引；如果一个表经常是执行插入更新操作，那么也需要节制的建立索引。总的来说有几个原则：
+    + > 建立正确的索引。这里不仅需要确保索引在查询中真正生效，我们还希望可以选择最高效的索引。如果一个表建立太多的索引，那么在查询的时候 SQLite 可能不会选择最好的来执行。
+    + > 单列索引、多列索引与复合索引的选择。索引要综合数据表中不同的查询与排序语句一起考虑，如果查询结果集过大，还是希望可以通过复合索引直接在索引表返回查询结果。
+    + > 索引字段的选择。整型类型索引效率会远高于字符串索引，而对于主键 SQLite 会默认帮我们建立索引，所以主键尽量不要用复杂字段。
+  * > **总的来说索引优化是 SQLite 优化中最简单同时也是最有效的，但是它并不是简单的建一个索引就可以了，有的时候我们需要进一步调整查询语句甚至是表的结构，这样才能达到最好的效果**。
 - > **页大小与缓存大小**
 - 本文相关链接：
   * WCDB https://github.com/Tencent/wcdb/wiki
   * 微信WCDB进化之路 - 开源与开始 https://mp.weixin.qq.com/s/tzy-fr55t1zqTbxOeKg4RA
   * 微信移动端数据库组件WCDB系列（二） — 数据库修复三板斧 https://mp.weixin.qq.com/s/Ln7kNOn3zx589ACmn5ESQA
+
+Sqlite事务模型、性能优化Tips、常见误区 https://www.51cto.com/article/603560.html
 
 sqlite多进程并发读写模式下，返回SQLITE_BUSY错误的处理方法 https://blog.csdn.net/lijinqi1987/article/details/51754846
 
