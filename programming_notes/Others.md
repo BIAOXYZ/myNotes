@@ -3,6 +3,28 @@
 - https://segmentfault.com/a/1190000006207600
 - https://segmentfault.com/a/1190000005744529
 
+为什么大家这么讨厌 Electron? https://www.v2ex.com/t/899773
+```console
+小弟最近搞了个新项目：https://he3.app 然后来 V2 发了一个贴：https://www.v2ex.com/t/899531#reply79 然后发现下面好多人非常讨厌 Electron，说要换 Tauri。
+我在开发前也是了解 Tauri 的，而且自己也用 Tauri 写过项目。觉得 Tauri 挺好的，对 Tauri 也没有特别爱。觉得 Electron 也挺好的，技术成熟，跨平台兼容性好。但是发现好多人特别反感 Electron。
+```
+- > 体积大、重、启动慢、占用多。看看你电脑上装了多少个 chromium 了，除了少数开源且适配 electron 新版本快的应用可以复用一下，其他的每个应用都带一份 chromium ，用户当然讨厌了。
+- > html 不是问题，问题是明明系统 webview 已经挺好用了还要自带一个 chrome ，浪费硬盘和内存
+- > 缺点除了大之外还对客户端市场造成了不良影响 <br> 举个例子，某笔记团队本来是用的原生开发的，使用体验尚可，后来为了节约成本换 electron ，公司倒是省了用户就无语了，占用资源多偶尔还卡死，而这样干的当然不止这一家公司 <br> 所以大家也是苦 electron 久矣，如果能有替代品出现自然免不了一番吐槽 不过对于 tauri 能否担负起这个重担还是持怀疑态度
+- > 不是码农，对 Electron 没有恶意，反而对用 mac 的我来说，Electron 使得跨平台更容易，这使得 mac 上的可用的软件得以扩充，现在好几个常用的都是如此。我想对于 mac 和其他小众操作系统来说，先解决有没有的问题才是最重要的吧。
+- > 因为 electron 又大又慢还对系统支持不好
+  ```console
+  - electron 的窗口是自绘的，因此无法自适应系统主题、控制按钮扩展以及透明效果
+  - electron 自己带一个 chromium ，然而明明系统里本身就有 WebView 控件，属于脱裤子放屁浪费磁盘，说兼容性的难道打包发布不都是直接 target 到 ES6 吗
+  - electron 的主进程也是 js 写的，然而主进程涉及到消息事件循环等 CPU 较为密集的场景，性能非常烂，更别提浏览器进程和主进程相互 RPC 的性能就更拉了
+  ```
+  > 而 tauri 虽然也是 web 方案，却没有 electron 的问题
+  ```console
+  - tauri 的窗口仍然是系统的原生窗口
+  - tauri 直接调用系统自带的 WebView
+  - tauri 主进程是 rust 写的，对于 CPU 密集的场景也没有性能问题
+  ```
+
 # Vue.js
 
 如何快速上手 vue？ https://www.v2ex.com/t/837468
