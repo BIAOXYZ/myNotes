@@ -57,7 +57,7 @@ ssh 一分钟被打 1000 次， fail2ban 有用吗？ https://www.v2ex.com/t/848
     + Fail2Ban https://github.com/fail2ban/fail2ban
     + 保护 EC2 实例的开源工具 – Fail2Ban https://aws.amazon.com/cn/blogs/china/open-source-tool-to-protect-ec2-instances-fail2ban/
   * Cockpit：
-    + Cockpit https://cockpit-project.org/
+    + Cockpit https://cockpit-project.org/ || https://github.com/cockpit-project/cockpit
   * UFW：
     + UFW Essentials: Common Firewall Rules and Commands https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
 

@@ -67,9 +67,34 @@ HE Transformer for nGraph https://github.com/IntelAI/he-transformer
 
 ## Google
 
-Private Join and Compute https://github.com/Google/private-join-and-compute
+### Private Join and Compute
 
 Helping organizations do more without collecting more data https://security.googleblog.com/2019/06/helping-organizations-do-more-without-collecting-more-data.html
+
+Private Join and Compute https://github.com/Google/private-join-and-compute
+- > This project contains an implementation of the "Private Join and Compute" functionality. This functionality allows two users, each holding an input file, to privately compute the sum of associated values for records that have common identifiers.
+- > In more detail, suppose a Server has a file containing the following
+identifiers:
+
+  Identifiers |
+  ----------- |
+  Sam         |
+  Ada         |
+  Ruby        |
+  Brendan     |
+
+- > And a Client has a file containing the following identifiers, paired with
+associated integer values:
+
+  Identifiers | Associated Values
+  ----------- | -----------------
+  Ruby        | 10
+  Ada         | 30
+  Alexander   | 5
+  Mika        | 35
+
+- > Then the Private Join and Compute functionality would allow the Client to learn that the input files had *2* identifiers in common, and that the associated values summed to *40*. It does this *without* revealing which specific identifiers were in common (Ada and Ruby in the example above), or revealing anything additional about the other identifiers in the two parties' data set.
+- > Private Join and Compute is a variant of the well-studied Private Set Intersection functionality. We sometimes also refer to Private Join and Compute as Private Intersection-Sum.
 
 ## 华控清交
 

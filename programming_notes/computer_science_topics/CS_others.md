@@ -75,7 +75,7 @@ craftinginterpreters_zh https://github.com/GuoYaxiang/craftinginterpreters_zh
 Naive Query Engine (Toy for Learning) https://github.com/Veeupup/naive-query-engine
 - > This is a Query Engine which support SQL interface. And it is only a Toy for learn query engine only. You can check TODO to check the progress now.
 
-SimpleDB
+**SimpleDB**（【//notes：这个数据库配套的有本书，不过水平怎么样暂时不清楚哈】）：
 - Database Design and Implementation Second Edition https://link.springer.com/book/10.1007/978-3-030-33836-7
 - The SimpleDB Database System -- Edward Sciore, Computer Science Department, Boston College http://www.cs.bc.edu/~sciore/simpledb/
   * > [Note: The SimpleDB database system is completely unrelated to the "Amazon SimpleDB Web Service" distributed by Amazon.com.]
@@ -95,7 +95,7 @@ MYDB https://github.com/CN-GuoZiyang/MYDB
 
 Let's make a SQL parser so we can provide a familiar interface to non-sql datastores! https://github.com/mozilla/moz-sql-parser
 
-BusTub https://github.com/cmu-db/bustub || https://15445.courses.cs.cmu.edu/
+BusTub -- The BusTub Relational Database Management System (Educational) https://github.com/cmu-db/bustub || https://15445.courses.cs.cmu.edu/
 - > BusTub is a relational database management system built at Carnegie Mellon University for the Introduction to Database Systems (15-445/645) course. This system was developed for educational purposes and should not be used in production environments.
 
 原文链接： https://cstack.github.io/db_tutorial/parts/part1.html
@@ -111,7 +111,7 @@ VLDB Summer School 2021 Labs https://github.com/vldbss-2021/vldb-2021-labs
 
 一份硬核计算机科学CS自学计划 https://github.com/spring2go/cs_study_plan
 - > 产出目标：参考[vanilladb项目](https://github.com/vanilladb/vanillacore)，使用golang语言实现clone版的vanilladb（原项目是Java实现的）。
-  >> //notes： VanillaDB https://www.vanilladb.org/
+  * VanillaDB https://www.vanilladb.org/ || VanillaCore https://github.com/vanilladb/vanillacore  【//notes：可惜是 Java 写的，估计不怎么会看了。】
 
 ## network project
 

@@ -218,6 +218,29 @@ int main(int argc, char *argv[])
 3.14159265358979
 ```
 
+## `char` 和 `int` 互转
+
+C++ Program For char to int Conversion https://www.geeksforgeeks.org/cpp-program-for-char-to-int-conversion/
+- > If a numeric character needs to be typecasted into the integer value then either we can subtract `48` or `'0'` and then typecast the numeric character into int.
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+      char ch = '5';
+
+      // Subtracting 48 will produce desired results
+      cout << int(ch) - 48 << "\n";
+
+      // Also subtracting '0' will result in same output
+      cout << int(ch - '0');
+      return 0;
+  }
+  ```
+
+LeetCode题目：
+- `1796. 字符串中第二大的数字` https://leetcode.cn/problems/second-largest-digit-in-a-string/  
+
 # 问题
 
 Empty character constant in c++ https://stackoverflow.com/questions/31193454/empty-character-constant-in-c
