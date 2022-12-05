@@ -277,6 +277,9 @@ Detection and Prevention of Security Attacks in VANET. https://github.com/naveen
 
 【转载】FragAttacks：USENIX 2021 安全会议演讲议题视频 https://www.bilibili.com/video/BV18Q4y1R7NJ
 
+A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks https://github.com/hendrycks/error-detection
+- > Implementations of the experiments found in ***`A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks`*** by Dan Hendrycks and Kevin Gimpel. https://arxiv.org/abs/1610.02136
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # others
