@@ -193,4 +193,7 @@ sqlite解决并发性问题 https://blog.csdn.net/feiyeyangyang/article/details/
 - > 验证了sqlite脚本的并发性，弱爆了，一个脚本写，一个脚本查询，查询的脚本运行down掉了。
 - > 如何处理这种并发性问题？使用linux系统中的**消息队列**完美解决，将写、查询操作都放到一个消息队列中，获取消息队列中数据进行先进先出的数据库读写操作
 
-Sqlite数据库多线程并发问题 https://blog.csdn.net/wsmrcool/article/details/8287904
+SQLite在多线程环境下的应用 https://blog.csdn.net/diyagoanyhacker/article/details/7209888
+- Sqlite数据库多线程并发问题 https://blog.csdn.net/wsmrcool/article/details/8287904
+
+sqlite3 多线程和锁 ，优化插入速度及性能优化 https://www.cnblogs.com/jaejaking/p/5383403.html || https://blog.csdn.net/majiakun1/article/details/79193658

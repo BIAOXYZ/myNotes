@@ -152,3 +152,16 @@ How to set SQLite isolation levels, using Python https://stackoverflow.com/quest
 
 pgsqlite https://github.com/bitdotioinc/pgsqlite
 - > Load sqlite databases into Postgres databases
+
+# sqlite to Pandas Dataframe
+
+第九章 https://wizardforcel.gitbooks.io/pandas-official-tut-zh/content/pandas-cookbook/9.html
+- https://github.com/jvns/pandas-cookbook/blob/master/cookbook/Chapter%209%20-%20Loading%20data%20from%20SQL%20databases.ipynb
+
+Pandas 读写sqlite数据库 https://geek-docs.com/pandas/pandas-read-write/sqlite-pandas-speaking-reading-and-writing-database.html
+
+用Pandas和SQLite提升超大数据的读取速度 https://cloud.tencent.com/developer/article/1628825
+
+pandas 操作 sqlite3 - 华哥股票复盘的文章 - 知乎 https://zhuanlan.zhihu.com/p/339415960
+
+Pandas与SQL的超强结合，爆赞！ https://www.51cto.com/article/710784.html
