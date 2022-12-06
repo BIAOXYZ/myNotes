@@ -173,7 +173,7 @@ Different theme per window in Visual Studio Code https://stackoverflow.com/quest
 - > Select the `Workspace Settings` tab at the top of the settings screen. Anything you edit in here will now be specific to this workspace.
 - > Search for `colorTheme` and select the color theme you would like for this specific workspace.
 
-## vscode文件标签栏折叠
+## 【[:star:][`*`]】 vscode文件标签栏折叠
 
 vscode 文件标签栏多行显示 https://blog.csdn.net/mj475002864/article/details/115456004
 - > 设置步骤

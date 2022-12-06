@@ -312,6 +312,8 @@ ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215
   >> 【[:star:][`*`]】 //notes：一共 `15` 条优化器规则，官网链接如下：
   >>> 8 Using the Rule-Based Optimizer https://docs.oracle.com/cd/B10501_01/server.920/a96533/rbo.htm
 
+24 Optimization of Joins https://docs.oracle.com/cd/F49540_01/DOC/server.815/a67781/c20c_joi.htm
+
 # 执行引擎
 
 【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46
