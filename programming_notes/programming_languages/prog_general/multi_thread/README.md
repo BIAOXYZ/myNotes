@@ -23,6 +23,11 @@
   * > `MPI（Message Passing Interface）`定义了一组消息传递函数库的编程接口标准。1994年发布了MPI第1版MPI-1,1997年发布了扩充版MPI-2，2012年发布了MPI-3标准。有多种支持MPI标准的函数库实现，开源实现有MPICH（由Argonne National Laboratory (ANL) 和Mississippi State University开发）、Open MPI 和LAM/MPI（由Ohio超算中心开发）等；商业实现来自于Intel、Microsoft、HP公司等。MPI编译器用于编译和链接MPI程序，支持C、C++、Fortran语言，如mpicc支持C语言、mpic++支持C++语言、mpif90支持Fortran90。MPI具有高可移植性和易用性，对运行的硬件要求简单，是目前国际上最流行的并行编程环境之一。
   * > 在`MPI`编程模型中，计算由一个或多个通过调用库函数进行消息收/发通信的进程所组成。在绝大部分MPI实现中，一组固定的进程在程序初始化时生成，在一个处理器核上通常只生成一个进程。这些进程可以执行相同或不同的程序（相应地称为单程序多数据（SPMD)或多程序多数据（MPMD)模式）。进程间的通信可以是点到点的或者集合（Collective）的。MPI只是为程序员提供了一个并行环境库，程序员用标准串行语言编写代码，并在其中调用MPI的库函数来实现消息通信，进行并行处理。
 
+# tutorials
+
+Visual C++ 中的并行编程 https://learn.microsoft.com/zh-cn/cpp/parallel/parallel-programming-in-visual-cpp
+- Visual C++ 中的 OpenMP https://learn.microsoft.com/zh-cn/cpp/parallel/openmp/openmp-in-visual-cpp
+
 # courses
 
 Python 异步编程入门 https://www.lanqiao.cn/courses/1278 【`蓝桥云课`，即原`实验楼`】
