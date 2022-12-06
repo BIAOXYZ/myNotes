@@ -27,7 +27,7 @@ sqlite3数据库最大可以是多大？可以存放多少数据？读写性能�
   ```
 - > **SQLite大数据测试**
 
-每天4亿行SQLite订单大数据测试（源码） https://developer.aliyun.com/article/385232
+每天4亿行SQLite订单大数据测试（源码） https://developer.aliyun.com/article/385232 || https://www.cnblogs.com/nnhy/p/BigData.html || https://github.com/nnhy/BigData
 
 Sqlite 数据库的性能 https://www.jianshu.com/p/facd602175ce
 

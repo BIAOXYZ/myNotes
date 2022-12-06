@@ -30,3 +30,41 @@ AttributeError: Can't pickle local object in Multiprocessing https://stackoverfl
 - https://stackoverflow.com/questions/72766345/attributeerror-cant-pickle-local-object-in-multiprocessing/72776044#72776044
 
 `AttributeError: Can't pickle local object '<locals>.<lambda>'` https://stackoverflow.com/questions/72339545/attributeerror-cant-pickle-local-object-locals-lambda 
+
+### 解决
+
+Ways to Solve Can’t Pickle local object Error https://www.pythonpool.com/cant-pickle-local-object/
+- > **Example 2: Attribute error while multiprocessing – can’t pickle local objects**
+  ```py
+  import multiprocessing
+  def function():
+      a="string"
+      def fun1():
+          print(a)
+      var1=multiprocessing.Process(target=fun1,args=(a))
+      if __name__ == "__main__":
+          var1.start()
+          var1.join()
+  function()
+  print("Program finished")
+  ```
+  > In this program, we are going to see how to rectify the attribute error while multiprocessing. Import multiprocessing. Create a function. We are trying to process the function by declaring it as a local object. But it shows an error. So that we are trying to pickle an object as a global object.
+- > **Example 2: Solving Attribute Error**
+  ```py
+  import multiprocessing
+  def function():
+      global fun1
+      a="string"
+      def fun1():
+          print(a)
+      var1=multiprocessing.Process(target=fun1,args=(a))
+      if __name__ == "__main__":
+          var1.start()
+          var1.join()
+  function()
+  print("Program finished")
+  ```
+  > Now we are declaring it as global so that we can pickle objects easily. Now the program will run properly without any errors.
+  >> //notes：所以（还是想写成闭包函数的样子的话）其实定义成 `global` 的就行- -
+
+AttributeError: Can't pickle local object 解决办法 https://blog.csdn.net/qq_39314099/article/details/83822593

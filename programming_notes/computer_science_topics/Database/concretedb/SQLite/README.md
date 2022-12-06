@@ -57,6 +57,8 @@ PRAGMA Statements https://www.sqlite.org/pragma.html || PRAGMA声明 https://www
 
 4.0回滚日志 https://www.sqlite.net.cn/lockingv3.html#rollback || 4.0 The Rollback Journal https://www.sqlite.org/lockingv3.html#rollback
 
+Run-Time Loadable Extensions https://www.sqlite.org/loadext.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他较权威链接
