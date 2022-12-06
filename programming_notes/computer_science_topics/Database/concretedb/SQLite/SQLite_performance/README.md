@@ -152,7 +152,7 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
 
 # SQLite性能之多线程/多进程
 
-14 | 存储优化（下）：数据库SQLite的使用和优化 https://blog.yorek.xyz/android/paid/master/storage_3/
+【[:star:][`*`]】 14 | 存储优化（下）：数据库SQLite的使用和优化 https://blog.yorek.xyz/android/paid/master/storage_3/
 - > 所以当时微信专门开展了一个重度用户优化的专项。一开始的时候我们集中在 SQLite 使用上的优化，例如表结构、索引等。但很快就发现由于系统版本的不同，SQLite 的实现也有所差异，经常会出现一些兼容性问题，并且也考虑到加密的诉求，我们决定单独引入自己的 SQLite 版本。
 - > “源码在手，天下我有”，从此开启了一条研究数据库的“不归路”。那时我们投入了几个人专门去深入研究 SQLite 的源码，从 SQLite 的 PRAGMA 编译选项、Cursor 实现优化，到 SQLite 源码的优化，最后打造出从实验室到线上的整个监控体系。
 - > 在 2017 年，我们开源了内部使用的 SQLite 数据库WCDB。这里多说两句，看一个开源项目是否靠谱，就看这个项目对产品本身有多重要。微信开源坚持内部与外部使用同一个版本，虽然我现在已经离开了微信团队，但还是欢迎有需要的同学使用 WCDB。
@@ -183,7 +183,51 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
   * 微信WCDB进化之路 - 开源与开始 https://mp.weixin.qq.com/s/tzy-fr55t1zqTbxOeKg4RA
   * 微信移动端数据库组件WCDB系列（二） — 数据库修复三板斧 https://mp.weixin.qq.com/s/Ln7kNOn3zx589ACmn5ESQA
 
-Sqlite事务模型、性能优化Tips、常见误区 https://www.51cto.com/article/603560.html
+【[:star:][`*`]】 Sqlite事务模型、性能优化Tips、常见误区 https://www.51cto.com/article/603560.html
+- > **2.1 sqlite多进程安全及Linux & windows文件锁**
+  * > 关于`建议锁(advisory lock)`和`强制锁(mandatory lock)`
+    + > 建议锁并不由内核强制实行，如果有进程不检查目标文件是否已经由别的进程加了锁就往其中写入数据，内核也不会加以阻拦。因此，建议锁并不能阻止进程对文件的访问，而是需要进程事先对锁的状态做一个约定，并根据锁的当前状态和相互关系来确定其他进程是否能对文件执行指定的操作。
+    + > 强制锁是由内核强制采用的 ***`文件锁`***——由于内核对每个read()和write()操作都会检查相应的锁，会降低系统性能。
+  * > 典型的建议锁
+    + > 锁文件; 锁文件是最简单的对文件加锁的方法，每个需要加锁的数据文件都有一个锁文件(lock file)。但这种方式存在比较大的问题是无法强制保护需要加锁的文件，并且当加锁进程非正常退出之后，会造成其他进程的死锁。
+    + > 记录锁; `System V`和`BSD4.3`引入了 ***`记录锁`***，相应的系统调用为`lockf()`和`flock()`。而POSIX对于记录锁提供了另外一种机制，其系统调用为`fcntl()`。记录锁和锁文件有两个很重要的区别：1)记录锁可以对文件的任何一部分加锁，这对DBMS有极大的帮助，2)记录锁的另一个优点就是它由进程持有，而不是文件系统持有，当进程结束时，所有的锁也随之释放。对于一个进程本身而言，多个锁绝不会冲突。(Windows中的锁都是强制锁，具体不是很熟，***只知道在由于windows上文锁的限制，sqlite多进程下的并发性会受影响***)。
+- > **2.2 事务模型(Without WAL)**
+  * > sqlite对每个连接设计了五钟锁的状态(`UNLOCKED, PENDING, SHARED, RESERVED, EXCLUSIVE`), sqlite的事务模型中通过锁的状态保证读写事务(包括显式的事务和隐式的事务)的一致性和读写安全。sqlite官方提供的事务生命周期如下图所示，我在这里稍微加了一些个人的理解： <br> ![](https://s3.51cto.com/oss/201909/26/3b12e86e9bdef741a3ed0d13f7380db0.jpeg)
+  * > 这里有几点需要注意：
+    + > `UNLOCKED、PENDING、SHARED、RESERVED`状态是非独占的，也就是说同一个连接中多个线程并发只读不会被阻塞。
+    + > 写操作的数据修改会先写入page cache，内容包括journal日志、b-tree的修改等;正是由于page cache的存在，很多耗时的“重”操作都可以不干扰其他连接和当前连接的读操作，真正意义上保证了sqlite可以同时处理一个写连接和多个读连接。
+    + > 连接由`RESERVED`状态进入`EXCLUSIVE`状态，需要等待读线程释放`SHARED`锁，也即写操作会被读操作阻塞
+    + > 连接由`RESERVED`状态进入`EXCLUSIVE`状态后(***显式或隐式的调用commit***)，数据库进入独占状态，其他任何连接都无法由`UNLOCK`状态进入`SHARED`状态;也即写操作会阻塞所有连接的读操作(***不包括已经进入SHARED状态的操作***)，直到page caches写入数据库文件(成功或失败)。
+    + > 数据库独占状态越久，其他操作的等待时间越久，即`SQLITE_BUSY`产生的一个原因。
+- > **2.3 WAL对事务模型的影响**
+- > **2.3.1 结论**
+  * > 只有开了WAL，再使用读写(连接)分离才能有较大的性能提升。
+  * > ***WAL本质上是将部分随机写操作(数据库文件和journal日志)变成了串行写WAL文件，并进行了锁分离***。
+  * > WAL文件的大小设置很关键，过大的WAL文件，会让查找操作从B-Tree查找退化成线性查找(WAL中page连续存储);但大的WAL文件对写操作较友好。
+- > **3，性能优化tips**
+- > **3.1 合理使用事务**
+- > **3.2 启用WAL + 读写(连接)分离**
+- > **3.3 针对具体业务场景，设置合适的WAL SIZE**
+- > **3.4 针对业务场景分库分表**
+- > **3.5 其他**
+  * > 包括WAL checkpoint策略、WAL size优化、page size优化等，均需要根据具体的业务场景设置。
+- > **4，常见问题 & 误区**
+- > **4.1 线程安全设置及误区**
+  * > sqlites configuration options: https://sqlite.org/c3ref/c_config_getmalloc.html
+  * > 按照sqlite文档，sqlite线程安全模式有以下三种：
+    + > SQLITE_CONFIG_SINGLETHREAD(单线程模式) <br> This option sets the threading mode to Single-thread. In other words, it disables all mutexing and puts SQLite into a mode where it can only be used by a single thread.
+    + > SQLITE_CONFIG_MULTITHREAD(多线程模式) <br> This option sets the threading mode to Multi-thread. In other words, it disables mutexing on database connection and prepared statement objects. The application is responsible for serializing access to database connections and prepared statements. But other mutexes are enabled so that SQLite will be safe to use in a multi-threaded environment as long as no two threads attempt to use the same database connection at the same time.
+    + > SQLITE_CONFIG_SERIALIZED(串行模式) <br> This option sets the threading mode to Serialized. In other words, this option enables all mutexes including the recursive mutexes on database connection and prepared statement objects. In this mode (which is the default when SQLite is compiled with SQLITE_THREADSAFE=1) the SQLite library will itself serialize access to database connections and prepared statements so that the application is free to use the same database connection or the same prepared statement in different threads at the same time.
+  * > **4.1.1 误区一：多线程模式是线程安全的**
+    + > 产生这个误区主的主要原因是官方文档里的最后一句话：`SQLite will be safe to use in a multi-threaded environment as long as no two threads attempt to use the same database connection at the same time.`
+    + > 但大家往往忽略了前面的一句话：`it disables mutexing on database connection and prepared statement objects`
+    + > 即对于单个连接的读、写操作，包括创建出来的prepared statement操作，都没有线程安全的保护。也即在多线程模式下，对单个连接的操作，仍需要在业务层进行锁保护。
+  * > **4.1.2 误区二：多线程模式下，并发读操作是安全的**
+    + > 关于这一点，#2.4给出了具体的解释;多线程模式下(SQLITE_CONFIG_MULTITHREAD)对prepared statement、connection的操作都不是线程安全的
+  * > **4.1.3 误区三：串行模式下，所有数据库操作都是串行执行**
+    + > 这个问题比较笼统;即使在串行模式下，所有的数据库操作仍需遵循事务模型;而事务模型已经将数据库操作的锁进行了非常细粒度的分离，串行模式的锁也是在上层保证了事务模型的完整性。
+  * > **4.1.4 误区四：多线程模式性能最好，串行模式性能差**
+    + > 多线程模式下，仍需要业务上层进行锁保护，串行模式则是在sqlite内部进行了锁保护;认为多线程模式性能好的兄弟哪来的自信认为业务层的锁实现比sqlite内部锁实现性能更高?  
 
 sqlite多进程并发读写模式下，返回SQLITE_BUSY错误的处理方法 https://blog.csdn.net/lijinqi1987/article/details/51754846
 
