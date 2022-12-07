@@ -29,9 +29,15 @@ http://python.jobbole.com/tag/anaconda/
 - Anaconda使用总结 http://python.jobbole.com/86236/
 - 致Python初学者：Anaconda入门使用指南 http://python.jobbole.com/87522/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Anaconda 换源
+
 <<Anaconda修改国内镜像源>> https://jingyan.baidu.com/article/1876c8527be1c3890a137645.html
 
-<<清华大学开源软件镜像站 - Anaconda>> https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+Anaconda 镜像使用帮助 https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+
+conda换源 - 假的刘看山的文章 - 知乎 https://zhuanlan.zhihu.com/p/87123943
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
