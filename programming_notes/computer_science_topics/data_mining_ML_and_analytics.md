@@ -1,6 +1,19 @@
 
+# 机器学习环境搭建
+
+## cog
+
 Cog: Containers for machine learning https://github.com/replicate/cog
 - > Cog is an open-source tool that lets you package machine learning models in a standard, production-ready container.
+
+## Deepo
+
+Deepo -- Setup and customize deep learning environment in seconds. https://github.com/ufoym/deepo || http://ufoym.com/deepo
+
+PyCharm + Docker+ Deepo 远程调试环境搭建教程 https://github.com/ruifenggong/docker_pycharm
+- > **六、创建可以远程访问的容器**
+
+GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://www.jiqizhixin.com/articles/2017-12-18-4 || 资源 | GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
 
 # Apache MADlib
 

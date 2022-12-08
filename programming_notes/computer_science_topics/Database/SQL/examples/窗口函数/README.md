@@ -34,11 +34,34 @@ Clickhouse 分析函数 window functions 窗口函数 https://blog.csdn.net/vkin
 
 SQL 窗口函数的优化和执行 - Eric Fu的文章 - 知乎 https://zhuanlan.zhihu.com/p/80051518 || https://juejin.cn/post/6969371973717590052
 
-Task05：SQL高级处理.md https://github.com/datawhalechina/team-learning-sql/blob/main/Task05%EF%BC%9ASQL%E9%AB%98%E7%BA%A7%E5%A4%84%E7%90%86.md
+【[:star:][`*`]】 Task05：SQL高级处理.md https://github.com/datawhalechina/team-learning-sql/blob/main/Task05%EF%BC%9ASQL%E9%AB%98%E7%BA%A7%E5%A4%84%E7%90%86.md
+- > **5.1.1 窗口函数概念及基本的使用方法**
+  * > 常规的 `SELECT` 语句都是对整张表进行查询，***而窗口函数可以让我们有选择的去某一部分数据进行汇总、计算和排序***。窗口函数的通用形式：
+    ```sql
+    <窗口函数> OVER ([PARTITION BY <列名>]
+                         ORDER BY <排序用列名>)  
+    ```
+    > *[]中的内容可以省略。
+  * > 窗口函数最关键的是搞明白关键字 **`PARTITON BY`** 和 **`ORDER BY`** 的作用。
+  * > **`PARTITON BY`** 是用来分组，***<ins>即选择要看哪个窗口</ins>，类似于 `GROUP BY` 子句的分组功能，但是 `PARTITION BY` 子句<ins>并不具备 `GROUP BY` 子句的汇总功能</ins>，<ins>并不会改变原始表中记录的行数</ins>***。
+  * > **`ORDER BY`** 是用来排序，即决定窗口内，是按那种规则(字段)来排序的。
+  * > 举个栗子:
+    ```sql
+    SELECT product_name
+           ,product_type
+           ,sale_price
+           ,RANK() OVER (PARTITION BY product_type
+                             ORDER BY sale_price) AS ranking
+      FROM product  
+    ```
+  * > 得到的结果是: <br> ![](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch05/ch0501.png)
+  * > 我们先忽略生成的新列 - [ranking]， 看下原始数据在 `PARTITION BY` 和 `ORDER BY` 关键字的作用下发生了什么变化。
+  * > `PARTITION BY` 能够设定窗口对象范围。本例中，为了按照商品种类进行排序，我们指定了 product_type。即一个商品种类就是一个小的"窗口"。
+  * > `ORDER BY` 能够指定按照哪一列、何种顺序进行排序。为了按照销售单价的升序进行排列，我们指定了sale_price。此外，窗口函数中的 `ORDER BY` 与 `SELECT` 语句末尾的 `ORDER BY` 一样，可以通过关键字 `ASC/DESC` 来指定升序/降序。省略该关键字时会默认按照ASC，也就是升序进行排序。本例中就省略了上述关键字 。 <br> ![](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch05/ch0502.png)
 
 # 个人实战1
 
-需求来源：某一个单列表（只有一列，列名就叫 `id`），里面如果元素出现次数大于1，就返回其频率减一的行数；如果等于1就忽略掉。最终是在 SQLite 里用 window function + 子查询解决了。核心思想是
+需求来源：某一个单列表（只有一列，列名就叫 `id`），里面如果元素出现次数大于1，就返回其频率减一的行数；如果等于1就忽略掉（比如，表里是 `{a, a, b, c, d, a, c}`，查询结果为 `{a, a, c}` —— `a` 出现三次，结果里剩两次；`c` 出现两次，结果里剩一次；其他元素只出现了一次，结果里就不出现）。最终是在 SQLite 里用 window function + 子查询解决了。核心思想是用窗口函数编号后，把行号等于1的舍弃掉。
 ```sql
 sqlite> .schema t3
 CREATE TABLE t3 (id int);
