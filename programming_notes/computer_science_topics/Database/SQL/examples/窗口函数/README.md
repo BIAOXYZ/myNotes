@@ -58,6 +58,8 @@ SQL 窗口函数的优化和执行 - Eric Fu的文章 - 知乎 https://zhuanlan.
   * > 我们先忽略生成的新列 - [ranking]， 看下原始数据在 `PARTITION BY` 和 `ORDER BY` 关键字的作用下发生了什么变化。
   * > `PARTITION BY` 能够设定窗口对象范围。本例中，为了按照商品种类进行排序，我们指定了 product_type。即一个商品种类就是一个小的"窗口"。
   * > `ORDER BY` 能够指定按照哪一列、何种顺序进行排序。为了按照销售单价的升序进行排列，我们指定了sale_price。此外，窗口函数中的 `ORDER BY` 与 `SELECT` 语句末尾的 `ORDER BY` 一样，可以通过关键字 `ASC/DESC` 来指定升序/降序。省略该关键字时会默认按照ASC，也就是升序进行排序。本例中就省略了上述关键字 。 <br> ![](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch05/ch0502.png)
+- > **5.2 窗口函数种类**
+  * > 大致来说，窗口函数可以分为两类。一是 将 `SUM`、`MAX`、`MIN` 等聚合函数用在窗口函数中 二是 `RANK`、`DENSE_RANK` 等排序用的专用窗口函数
 
 # 个人实战1
 

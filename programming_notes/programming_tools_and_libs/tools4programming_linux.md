@@ -248,6 +248,8 @@ SSH PORT FORWARDING EXAMPLE https://www.ssh.com/ssh/tunneling/example
 
 How to Create SSH Tunneling or Port Forwarding in Linux https://www.tecmint.com/create-ssh-tunneling-port-forwarding-in-linux/
 
+【[:star:][`*`]//已转移】 ~~A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding https://iximiuz.com/en/posts/ssh-tunnels/~~
+
 ### ssh config文件
 
 Win10下vscode新版去连接remote机器的时候，这次提示了一下是用哪个ssh config，我就选了第一个`c:> Users > LiangLiu > .ssh > config`，然后就自动打开了这个文件的内容。第一个就是个例子，第二个是实际的，我估计HOST那一行的内容9.46.86.154完全可以随便填个好记的名字（看前面例子里就是随便用个alias）。
