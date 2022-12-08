@@ -35,3 +35,30 @@ Clickhouse 分析函数 window functions 窗口函数 https://blog.csdn.net/vkin
 SQL 窗口函数的优化和执行 - Eric Fu的文章 - 知乎 https://zhuanlan.zhihu.com/p/80051518 || https://juejin.cn/post/6969371973717590052
 
 Task05：SQL高级处理.md https://github.com/datawhalechina/team-learning-sql/blob/main/Task05%EF%BC%9ASQL%E9%AB%98%E7%BA%A7%E5%A4%84%E7%90%86.md
+
+# 个人实战1
+
+需求来源：某一个单列表（只有一列，列名就叫 `id`），里面如果元素出现次数大于1，就返回其频率减一的行数；如果等于1就忽略掉。最终是在 SQLite 里用 window function + 子查询解决了。核心思想是
+```sql
+sqlite> .schema t3
+CREATE TABLE t3 (id int);
+sqlite> select * from t3;
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+2
+3
+3
+sqlite> select id from (select id, row_number() over (partition by id) as row_num from t3) as sub where sub.row_num != 1;
+2
+3
+3
+sqlite> 
+```

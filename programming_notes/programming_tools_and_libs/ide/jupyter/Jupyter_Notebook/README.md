@@ -7,6 +7,27 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Jupyter install
+
+How To Set Up Jupyter Notebook with Python 3 on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-with-python-3-on-ubuntu-18-04
+```sh
+# 简单总结（和一点小改动后）的版本
+sudo apt update
+sudo apt install -y python3-pip python3-dev
+pip3 install --upgrade pip
+pip3 install jupyter
+```
+- > SSH Tunneling with a Mac or Linux
+  ```sh
+  ssh -L 8888:localhost:8888 your_server_username@your_server_ip
+  ```
+  > For example, for the username `sammy` and the server address `203.0.113.0`, the command would be:
+  ```sh
+  ssh -L 8888:localhost:8888 sammy@203.0.113.0
+  ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Jupter general
 
 jupyter notebook 可以做哪些事情？ - 知乎 https://www.zhihu.com/question/46309360
