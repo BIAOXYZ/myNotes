@@ -5,6 +5,9 @@ Motrix A full-featured download manager https://github.com/agalwood/Motrix || ht
 
 Free Download Manager https://www.freedownloadmanager.org/
 
+aria2 - The ultra fast download utility https://github.com/aria2/aria2 || https://aria2.github.io/
+- Aria2 for Chrome https://chrome.google.com/webstore/detail/aria2-for-chrome/mpkodccbngfoacfalldjimigbofkhgjn
+
 # 网站类下载器
 
 ## 国内
