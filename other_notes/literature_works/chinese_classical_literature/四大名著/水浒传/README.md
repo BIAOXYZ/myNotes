@@ -5,6 +5,8 @@
 - 水滸傳 (120回本) https://zh.wikisource.org/wiki/%E6%B0%B4%E6%BB%B8%E5%82%B3_(120%E5%9B%9E%E6%9C%AC)
 - 水浒传 (70回本) https://zh.wikisource.org/zh-hans/%E6%B0%B4%E6%BB%B8%E5%82%B3_(70%E5%9B%9E%E6%9C%AC)
 
+一百单八将 https://zh.wikipedia.org/wiki/%E4%B8%80%E7%99%BE%E5%8D%95%E5%85%AB%E5%B0%86
+
 # 水浒传人物
 
 如何评价《水浒传》中的没羽箭张清？ - 知乎 https://www.zhihu.com/question/66693568

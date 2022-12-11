@@ -4,4 +4,5 @@ Learning Containers, Kubernetes, and Backend Development with Ivan Velichko http
 # [Series](https://iximiuz.com/en/series/)
 
 Computer Networking Fundamentals Learning Series https://iximiuz.com/en/series/computer-networking-fundamentals/
-- 【[:star:][`*`]】 A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding https://iximiuz.com/en/posts/ssh-tunnels/
+
+Writing Web Server in Python Learning Series https://iximiuz.com/en/series/writing-python-web-server/
