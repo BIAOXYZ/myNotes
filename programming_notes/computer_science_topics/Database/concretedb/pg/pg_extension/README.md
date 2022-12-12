@@ -106,3 +106,7 @@ pgAudit -- Open Source PostgreSQL Audit Logging https://github.com/pgaudit/pgaud
 
 Wasmer Postgres https://github.com/wasmerio/wasmer-postgres
 - > A complete and mature WebAssembly runtime for Postgres based on [Wasmer](https://wasmer.io/). It's an original way to extend your favorite database capabilities.
+
+pg_profile https://github.com/zubkov-andrei/pg_profile
+
+pg_meta https://github.com/aquameta/pg_meta

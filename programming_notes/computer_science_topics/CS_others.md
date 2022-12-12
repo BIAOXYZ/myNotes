@@ -145,6 +145,8 @@ zkrypt: Zero-Knowledge Proof Toolbox https://github.com/guanzhi/zkrypt
 
 ## other project
 
+RVM-Tutorial https://github.com/equation314/RVM-Tutorial
+
 【 From: https://github.com/yifengyou 】
 - Qemu KVM(Kernel Virtual Machine)学习笔记 https://github.com/yifengyou/learn-kvm
 - 《一个64位操作系统的设计与实现》学习笔记 https://github.com/yifengyou/The-design-and-implementation-of-a-64-bit-os
