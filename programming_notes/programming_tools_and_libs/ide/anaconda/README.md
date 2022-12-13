@@ -21,6 +21,39 @@ Frequently asked questions https://docs.anaconda.com/anaconda/user-guide/faq/
     ```
   * > Note: If your username includes spaces, as is common on Windows systems, you should not accept the default path. See "[In what folder should I install Anaconda on Windows?]()"
 
+Managing environments https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Anaconda常用语句
+
+```sh
+# 环境管理
+conda create -n <your_env_name> python=3.6  # 例：conda create -n py27 python=2.7 // -n 等于 --name
+conda env remove -n <your_env_name>  # 例：conda env remove --name bio-env // 等于 conda remove -n bio-env --all
+conda env list
+conda info --envs  # 似乎等于上面那个语句，反正差不多吧
+conda info -e  # 也等于上面那句
+conda activate <your_env_name>
+conda deactivate
+
+# 包管理
+conda list  # 查看（当前环境里）已经安装的包
+conda list -n <your_env_name>  # 查看某个环境里已经安装的包
+conda install <package_name>  # 在当前环境中安装某个包
+conda install --name <your_env_name> <package_name>  # 在指定环境中安装某个包
+conda remove <package_name>  # 删除当前环境中的某个包
+conda remove -n <your_env_name> <package1> <package2>  # 例：conda remove --name bio-env toolz boltons
+conda remove -n <your_env_name> --all  # 例：conda remove -n bio-env --all // 这句会直接把这个虚环境给删掉，等于前面的 conda env remove --name bio-env
+
+# 源管理
+## 某一个源可能channel不止一个
+conda config --add channels <channel_name1>
+conda config --add channels <channel_name2>
+...
+conda config --set show_channel_urls yes
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Anaconda general
@@ -38,6 +71,22 @@ http://python.jobbole.com/tag/anaconda/
 Anaconda 镜像使用帮助 https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 
 conda换源 - 假的刘看山的文章 - 知乎 https://zhuanlan.zhihu.com/p/87123943
+
+Anaconda换国内源(清华源、中科大源) https://blog.csdn.net/wujialaoer/article/details/84977796
+```sh
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge 
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config --set show_channel_urls yes
+
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/
+conda config --set show_channel_urls yes
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
@@ -161,35 +210,11 @@ How To Install the Anaconda Python Distribution on Debian 9 https://www.digitalo
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# Anaconda常用语句
-
-Managing environments https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
-
-```sh
-# 环境管理
-conda create -n <your_env_name> python=3.6  # 例：conda create -n py27 python=2.7 // -n 等于 --name
-conda env remove -n <your_env_name>  # 例：conda env remove --name bio-env // 等于 conda remove -n bio-env --all
-conda env list
-conda info --envs  # 似乎等于上面那个语句，反正差不多吧
-conda info -e  # 也等于上面那句
-conda activate <your_env_name>
-conda deactivate
-
-# 包管理
-conda list  # 查看（当前环境里）已经安装的包
-conda list -n <your_env_name>  # 查看某个环境里已经安装的包
-conda install <package_name>  # 在当前环境中安装某个包
-conda install --name <your_env_name> <package_name>  # 在指定环境中安装某个包
-conda remove <package_name>  # 删除当前环境中的某个包
-conda remove -n <your_env_name> <package1> <package2>  # 例：conda remove --name bio-env toolz boltons
-conda remove -n <your_env_name> --all  # 例：conda remove -n bio-env --all // 这句会直接把这个虚环境给删掉，等于前面的 conda env remove --name bio-env
-```
-
 anaconda修改国内源 https://www.cnblogs.com/yuvejxke/p/13169172.html
 
 conda国内镜像修改（最新版） - Python与算法社区的文章 - 知乎 https://zhuanlan.zhihu.com/p/95100538
 
-```
+```sh
 # 添加国内源（以中科大源为例）
 
 (base) C:\Users\LiangLiu>conda config --show channels
