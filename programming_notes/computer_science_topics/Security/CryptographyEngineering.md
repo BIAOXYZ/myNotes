@@ -38,6 +38,17 @@ cryptoTools https://github.com/ladnir/cryptoTools   -->  //注意：别和这个
 
 The Apache Milagro Cryptographic Library (AMCL) https://github.com/miracl/amcl || https://milagro.apache.org/docs/amcl-overview.html
 
+libsodium -- A modern, portable, easy to use crypto library. https://github.com/jedisct1/libsodium || https://doc.libsodium.org/
+- > Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing, and more.
+- > It is a portable, cross-compilable, installable, and packageable fork of [NaCl](http://nacl.cr.yp.to/), with a compatible but extended API to improve usability even further.
+
+# 商密相关
+
+Linux 6.2 fscrypt 文件系统加密框架新增支持我国的 SM4 分组密码标准 https://www.ithome.com/0/660/730.htm
+- > SMS4 是我国无线局域网标准 WAPI 中所采用的分组密码标准，随后被我国商用密码标准采用，又名 SM4（***SM 是“商密”的缩写***，目前公布的其它商密标准包括 SM2 椭圆曲线公钥密码、SM3 密码杂凑算法）。
+- > SMS4 的密钥长度和分组长度均为 128 比特，其设计安全性等同于 AES-128，***但是近年来的一些密码分析表明 SMS4 的安全性略弱于 AES-128***。由于 SMS4 的密钥长度固定为 128 比特，并未提供更长的可选密钥长度，因此 SMS4 不适用于保护需长期保密的数据，如需 50 年才能解密的保密文档。
+- > IT之家了解到，负责支持 FSCRYPT SM4 的是阿里巴巴。在问及在 FSCRYPT 中加入 SM4 的好处时，阿里巴巴解释道：`我们希望为用户提供使用 SM4-XTS 加密磁盘和文件的能力，签署 SM2/3 的能力，以及使用 TLS 的 SM4-GCM / CCM 的能力（当然这属于其它部分），相当多的用户需要这些功能。`
+
 # SSL or TLS attack
 
 TLS 1.2协议现漏洞 近3000网站或受影响 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/817339.htm
