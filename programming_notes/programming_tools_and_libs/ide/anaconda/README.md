@@ -45,6 +45,7 @@ conda install --name <your_env_name> <package_name>  # 在指定环境中安装�
 conda remove <package_name>  # 删除当前环境中的某个包
 conda remove -n <your_env_name> <package1> <package2>  # 例：conda remove --name bio-env toolz boltons
 conda remove -n <your_env_name> --all  # 例：conda remove -n bio-env --all // 这句会直接把这个虚环境给删掉，等于前面的 conda env remove --name bio-env
+conda update -n base -c defaults conda  # 升级 conda 本身
 
 # 源管理
 ## 某一个源可能channel不止一个

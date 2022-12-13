@@ -70,3 +70,8 @@ constexpr https://zh.wikipedia.org/wiki/Constexpr
   constexpr int get_five() {return 5;}
   int some_value[get_five() + 7]; // Create an array of 12 integers. Valid C++11
   ```
+
+C++ const 和 constexpr 的区别？ - 知乎 https://www.zhihu.com/question/35614219
+- C++ const 和 constexpr 的区别？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/35614219/answer/798370856
+  * > `constexpr` 是 C++11 引入的，一方面是为了引入更多的编译时计算能力，另一方面也是解决 C++98 的 `const` 的双重语义问题。
+  * > 在 C 里面，`const` 很明确只有「**只读**」一个语义，不会混淆。C++ 在此基础上增加了「**常量**」语义，也由 `const` 关键字来承担，引出来一些奇怪的问题。C++11 把「常量」语义拆出来，交给新引入的 `constexpr` 关键字。

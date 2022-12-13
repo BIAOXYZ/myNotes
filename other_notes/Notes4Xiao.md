@@ -279,6 +279,12 @@ Detection and Prevention of Security Attacks in VANET. https://github.com/naveen
 
 A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks https://github.com/hendrycks/error-detection
 - > Implementations of the experiments found in ***`A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks`*** by Dan Hendrycks and Kevin Gimpel. https://arxiv.org/abs/1610.02136
+- A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks https://paperswithcode.com/paper/a-baseline-for-detecting-misclassified-and
+  * TEXT Open Intent Recognition (TEXTOIR) https://github.com/thuiar/textoir
+    + https://anaconda.org/conda-forge/mkl_fft
+    + https://anaconda.org/intel/mkl-fft
+    + https://pypi.org/project/mkl-fft/
+  * TEXTOIR: An Integrated and Visualized Platform for Text Open Intent Recognition https://github.com/thuiar/textoir-demo
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

@@ -21,9 +21,40 @@ docker-wine: Docker image that includes Wine and Winetricks for running Windows 
 screego/server https://github.com/screego/server
 - > Screego is an addition to existing software and only helps to share your screen. Nothing else (:.
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 文件共享/传输/同步
 
 【[:star:][`*`]】【其实这个是跨平台的，并且实测过可以在 killercoda 的 Ubuntu Playground 虚机与（可能有一定网络隔离的）“集体PC”（个人PC应该更不在话下了）之间成功互相收发单个文件】 croc: Easily and securely send things from one computer to another 🐊 📦 https://github.com/schollz/croc
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 远程共享/远程局域网
+
+## ZeroTier
+
+ZeroTier - Global Area Networking https://github.com/zerotier/ZeroTierOne || https://www.zerotier.com/
+
+A List of Awesome ZeroTier Things https://github.com/zerotier/awesome-zerotier
+
+ZeroTier https://en.wikipedia.org/wiki/ZeroTier
+
+内网穿透神器ZeroTier使用教程 https://muzihuaner.github.io/2021/09/22/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E7%A5%9E%E5%99%A8ZeroTier%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/
+- > 随着可用的公网 IPv4 地址越来越少，现在的运营商基本不给家用宽带分配公网 IP 了。如果你想通过外网访问到内网的资源，目前只能采用内网穿透的软件来实现。而一般常规的内网穿透软件都需要一个公网 IP 才能正常工作，比如：「[FRP](https://mp.weixin.qq.com/s/8HeeDC5x5xozElN8GzQLLw)」 或 「[Ngork](https://mp.weixin.qq.com/s/dWtIwTeN3Gg7OXWjO8SeZg)」 等。这样你就不得不租用一个拥有公网 IP 的服务器才能实现上述需求，显然增加了不少使用成本。
+- > 做为一个月薪 3000 的屌丝怎么可能折腾得起呢？今天，我们就来介绍一款不需要公网 IP 实现内网穿透的工具 `ZeroTier` 。***`ZeroTier` 是一个专门用来建立点对点虚拟专用网（P2P VPN）的工具***，它提供在线管理界面和全平台的客户端，不需要复杂设置，只要安装客户端并加入到自己创建的网络即可。
+- 文章里的链接：
+  * 推荐一款很好用的内网穿透工具--FRP https://mp.weixin.qq.com/s/8HeeDC5x5xozElN8GzQLLw
+  * CentOS下部署Ngrok服务器 https://mp.weixin.qq.com/s/dWtIwTeN3Gg7OXWjO8SeZg
+
+## cpolar
+
+cpolar极点云: 公开一个本地Web站点至公网 https://www.cpolar.com/
+
+cpolar-内网穿透神器 https://www.lyseky.com/page?article_id=78
+
+没有公网IP，快速免费内网穿透 https://blog.csdn.net/CpolarLisa/article/details/124734760
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 代码画流程图
 
