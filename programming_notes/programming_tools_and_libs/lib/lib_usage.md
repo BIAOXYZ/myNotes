@@ -178,9 +178,8 @@ Google 宣布创建 OpenSSL 分支：BoringSSL https://www.oschina.net/news/5304
 
 ### [GmSSL](https://github.com/guanzhi/GmSSL)
 
-The GmSSL Project - 支持国密SM2/SM3/SM4/SM9的密码工具箱 http://gmssl.org/
-> "GmSSL项目由北京大学关志副研究员的密码学研究组开发维护" 
->> https://github.com/guanzhi
+The GmSSL Project - 支持国密SM2/SM3/SM4/SM9的密码工具箱 http://gmssl.org/ || https://github.com/guanzhi
+- > "GmSSL项目由北京大学关志副研究员的密码学研究组开发维护" 
 
 GmSSL的命令行接口和SDK接口使用方式是怎样的？ - 李安然的回答 - 知乎 https://www.zhihu.com/question/43567665/answer/101573864
 

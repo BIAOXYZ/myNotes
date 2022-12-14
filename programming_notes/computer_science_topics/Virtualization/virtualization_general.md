@@ -35,6 +35,8 @@ libvirt https://zh.wikipedia.org/wiki/Libvirt || https://en.wikipedia.org/wiki/L
 
 Libvirt (简体中文) https://wiki.archlinux.org/index.php/Libvirt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
+libvirt https://wiki.archlinuxcn.org/wiki/Libvirt
+
 Libvirt 虚拟化库剖析 https://www.ibm.com/developerworks/cn/linux/l-libvirt/index.html
 
 # libvirt 文章
