@@ -21,6 +21,16 @@ A Crash Course in C++ https://web.stanford.edu/class/cs193d/handouts/04-A-Crash-
 
 C++知识点 —— 整合（持续更新中） https://blog.csdn.net/bb807777/article/details/102882980
 
+极大提高你开发效率的C++ tricks（不定期更新） - 程序员阿德的文章 - 知乎 https://zhuanlan.zhihu.com/p/346465585
+- > **2、万能头文件**
+  * > 使用 C++ 进行开发时，每用到一个库函数，就需要在代码中 include 该库函数的头文件，比如 string, vector, fstream, thread, list, algorithm......
+  * > 有时候光头文件就占了十多行，看起来比较冗长，这里有个万能头文件 bits/stdc++.h，它基本上包括所有的 C++ 标准库，所以在代码中只需要包含这一个头文件即可。
+    ```cpp
+    #include <bits/stdc++.h>
+    ```
+  * > 可以查看万能文件的源码：[bits/stdc++.h header file](https://link.zhihu.com/?target=https%3A//gist.github.com/Einstrasse/ac0fe7d7450621a39364ed3b05cacd11)
+  * > 缺点还是有的，它会包含许多代码可能不需要的文件，这会增加编译时间，和程序文件的大小。
+
 # `++i` 与 `i++`
 
 在C++中，为什么部分程序员喜欢在loop写‘++i’而不是‘i++’？ - 知乎 https://www.zhihu.com/question/316271945

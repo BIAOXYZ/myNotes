@@ -4,6 +4,22 @@
 # cmake命令
 
 `cmake-commands(7)¶` https://cmake.org/cmake/help/v3.24/manual/cmake-commands.7.html
+- > **Scripting Commands¶**
+  * > `find_library`
+  * > `set`
+- > **Project Commands¶**
+  * > `add_subdirectory`
+  * > `aux_source_directory`
+  * > `include_directories`
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+## `add_subdirectory()`
+
+How to write "CMakeLists.txt" for a big project with multiple subdirectories? https://stackoverflow.com/questions/47162766/how-to-write-cmakelists-txt-for-a-big-project-with-multiple-subdirectories
+- https://stackoverflow.com/questions/47162766/how-to-write-cmakelists-txt-for-a-big-project-with-multiple-subdirectories/47163326#47163326
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
