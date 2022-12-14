@@ -281,9 +281,13 @@ A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neura
 - > Implementations of the experiments found in ***`A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks`*** by Dan Hendrycks and Kevin Gimpel. https://arxiv.org/abs/1610.02136
 - A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks https://paperswithcode.com/paper/a-baseline-for-detecting-misclassified-and
   * TEXT Open Intent Recognition (TEXTOIR) https://github.com/thuiar/textoir
-    + https://anaconda.org/conda-forge/mkl_fft
-    + https://anaconda.org/intel/mkl-fft
-    + https://pypi.org/project/mkl-fft/
+    + **`mkl_fft`**
+      - https://anaconda.org/conda-forge/mkl_fft
+      - https://anaconda.org/intel/mkl-fft
+      - https://pypi.org/project/mkl-fft/
+      - `mkl_fft` -- a NumPy-based Python interface to Intel (R) MKL FFT functionality https://github.com/IntelPython/mkl_fft  【//notes：这个包（以及其相关的包）也太坑了吧- -最后还是在 `Deepo` 的 CPU 容器里，用官方 github 仓库里的语句搞定的。。。】
+    + **`mkl_random`**
+      - ~~`mkl_random` -- a NumPy-based Python interface to Intel (R) MKL Random Number Generation functionality~~  【//notes：这个库也出问题，怎么也装不了指定版本 `ERROR: Could not find a version that satisfies the requirement mkl-random==1.2.0 (from versions: 1.2.2)  ERROR: No matching distribution found for mkl-random==1.2.0`。后来想了想，可能新版的说不定不需要呢？于是注释掉了 `requirements.txt` 里的两行 `#mkl-random==1.2.0` `#mkl-service==2.3.0`（是的，`mkl-service` 也跟着注释掉了，压根就没试它），然后按 `TEXTOIR` README 里的步骤，终于通了。。。所以，***<ins>这个库跑的时候实际上没有安装!!!!!!!!!!</ins>*** 只是列出了下官方仓库地址。】
   * TEXTOIR: An Integrated and Visualized Platform for Text Open Intent Recognition https://github.com/thuiar/textoir-demo
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
