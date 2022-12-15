@@ -59,6 +59,9 @@ C++知识点 —— 整合（持续更新中） https://blog.csdn.net/bb807777/a
             std::this_thread::sleep_for(std::chrono::seconds(2));
         }
         auto end = std::chrono::system_clock::now();
+        // notes：个人推荐最后的这个时间差 elapsed 还是写完整版本吧，
+        // 不然 0.336351s 会打印成 336351s，明显不好看。。。
+        // std::chrono::duration<double> elapsed = end - start;
         auto elapsed = end - start;
         std::cout << "Elapsed time: " << elapsed.count() << "s";
         return 0;
