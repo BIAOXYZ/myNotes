@@ -244,3 +244,13 @@ postgres=#
 # 其他
 
 SQL之CASE WHEN用法详解 https://blog.csdn.net/rongtaoup/article/details/82183743
+
+# `end` / `end as`
+
+SQL之case when then用法 https://www.cnblogs.com/richardzhu/p/3571670.html
+- > 1、上表结果中的"sex"是用代码表示的，希望将代码用中文表示。可在语句中使用case语句：
+- > 2、如果不希望列表中出现"sex"列，语句如下：
+
+SQL中的case when then else end用法 https://segmentfault.com/a/1190000020877471
+
+SQL- case when then else end 用法经验总结 https://www.cnblogs.com/Formulate0303/p/11962254.html
