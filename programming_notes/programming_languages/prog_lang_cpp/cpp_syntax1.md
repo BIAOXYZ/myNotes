@@ -30,6 +30,41 @@ C++知识点 —— 整合（持续更新中） https://blog.csdn.net/bb807777/a
     ```
   * > 可以查看万能文件的源码：[bits/stdc++.h header file](https://link.zhihu.com/?target=https%3A//gist.github.com/Einstrasse/ac0fe7d7450621a39364ed3b05cacd11)
   * > 缺点还是有的，它会包含许多代码可能不需要的文件，这会增加编译时间，和程序文件的大小。
+- > **3、`auto` 关键字**
+  * > 使用 `auto` 关键字可以让编译器在编译时自动推导出变量的数据类型，而不需要你手动指定。比如这篇文章：[你的程序慢不慢？如何优雅地统计C++代码耗时 - 程序员阿德的文章 - 知乎](https://zhuanlan.zhihu.com/p/269982520)
+  * > 我在介绍计时器和时钟时，里面涉及到的的数据类型名称都非常长，下面简单实现了一个计时器：
+    ```cpp
+    #include <iostream>
+    #include <chrono>
+    #include <thread>
+    int main() {
+        std::chrono::time_point<std::chrono::system_clock> start = std::chrono::system_clock::now();
+        {   
+            std::this_thread::sleep_for(std::chrono::seconds(2));
+        }
+        std::chrono::time_point<std::chrono::system_clock> end = std::chrono::system_clock::now();
+        std::chrono::duration<double> elapsed = end - start;
+        std::cout << "Elapsed time: " << elapsed.count() << "s";
+        return 0;
+    }
+    ```
+    > start 和 end 变量的数据类型很复杂，下面是使用 `auto` 关键字的代码，看起来就简洁了很多。
+    ```cpp
+    #include <iostream>
+    #include <chrono>
+    #include <thread>
+    int main() {
+        auto start = std::chrono::system_clock::now();
+        {   
+            std::this_thread::sleep_for(std::chrono::seconds(2));
+        }
+        auto end = std::chrono::system_clock::now();
+        auto elapsed = end - start;
+        std::cout << "Elapsed time: " << elapsed.count() << "s";
+        return 0;
+    }
+    ```
+    > 还有使用容器的场景，比如 `map<string, vector<pair<int, int>>>` 之类的数据类型，使用 `auto` 就非常方便。
 
 # `++i` 与 `i++`
 

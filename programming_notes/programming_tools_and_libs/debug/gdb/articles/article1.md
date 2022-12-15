@@ -35,3 +35,5 @@
 - > windows `windbg`，linux gdb <br> 开发阶段 vs ，codeblock 之类 ide 也不错
 - > gdb 配 https://github.com/hugsy/gef <br> 大型项目根本没什么机会直接挂调试器……几乎都在看 core dump 了 <br> 建议提供点更详细的信息，平台、项目组织形式（比如你要调 lib 还是 executable ，有没有单测和 mock 等等）
   >> https://github.com/hugsy/gef
+
+调试 C++ 的七大技巧 https://blog.jetbrains.com/zh-hans/clion/2022/05/7-top-tips-for-debugging-cpp/ || 7 Top Tips for Debugging C++ https://blog.jetbrains.com/clion/2021/06/7-top-tips-for-debugging-cpp/
