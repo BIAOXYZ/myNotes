@@ -356,6 +356,8 @@ https://zhuanlan.zhihu.com/p/33211414
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## ToDesk
+
 微软全新远程桌面安卓版 10.0.6 发布 https://www.ithome.com/0/499/895.htm
 - > teamviewer没得白嫖了。。。只能允许两个
 - > 试试anydesk
@@ -364,6 +366,24 @@ https://zhuanlan.zhihu.com/p/33211414
 ToDesk - 免费流畅不限速的远程控制软件 (国内免费向日葵/TeamViewer 替代品) https://www.iplaysoft.com/todesk.html
 
 ToDesk 个人免费极致流畅的远程协助软件 https://www.todesk.com/
+
+真的是珍爱生命，远离 todesk，动不动就不给你连接 https://www.v2ex.com/t/903102
+- > parsec 用起来挺流畅的
+- > tailscale 加自带远程桌面吧
+  >> 同意这个 我最近用这个太爽了。
+- > rustdesk 不错可以尝试一下
+- > anydesk 端口直连 效果很棒
+- > 组网 VPN 用 rdp ，客户端用自带远程或商店下载 remote desktop
+- > rdp 当然第一，各种远程都试过，目前为止没有发现任何一款能取代 rdp 的产品 <br> 备选可以用 anydesk ，老版本 anydesk 关闭更新检查端口直连体验也可以
+- > Zerotier+RemoteDesktop/Anydesk
+- > VPN+RDP ，好像只有 RDP 能在远程时保持被控端锁屏
+- > tailscale+rdp
+- > macOS ，ssh+vnc <br> windowns ，rdp
+- > 试试网易 uu 远程，支持高帧率
+- > frp+mstsc 稳定多年了
+- > mac <--> mac ，frp+访达 vnc ，windows <--> windows ，frp+rdp
+- > 要不要试试 zerotier, docker 自建 planet 完全没问题了 <br> https://github.com/Jonnyan404/zerotier-planet
+- > 我现在是用 zerotier 和 n2n, 一般用 ssh, 偶尔用 anydesk 直连
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
