@@ -1,4 +1,8 @@
 
+# 综合
+
+Privacy-Preserving-Machine-Learning-Resources https://github.com/Ye-D/PPML-Resource
+
 # 抗量子密码学
 
 IBM Cloud 声称量子安全密码学是首创 https://www.ithome.com/0/522/857.htm
@@ -356,15 +360,24 @@ Privacy-Preserving XGBoost Inference https://github.com/awslabs/privacy-preservi
 
 Concrete Numpy is an open-source set of tools which aims to simplify the use of fully homomorphic encryption (FHE) for data scientists. https://github.com/zama-ai/concrete-numpy
 
-### MPC and DB
+## MPC and DB
 
 Conclave https://github.com/multiparty/conclave
 - (EuroSys '19) Conclave: secure multi-party computation on big data https://dl.acm.org/doi/10.1145/3302424.3303982
 - https://cs.paperswithcode.com/paper/conclave-secure-multi-party-computation-on
 
-(Usenix Security 2021) Senate: A Maliciously-Secure MPC Platform for Collaborative Analytics https://www.usenix.org/conference/usenixsecurity21/presentation/poddar  【又是 Raluca Ada Popa 组的数据库相关的。。。】
+Senate 【又是 Raluca Ada Popa 组的数据库相关的。。。关键又没找到源码】
+- (Usenix Security 2021) Senate: A Maliciously-Secure MPC Platform for Collaborative Analytics https://www.usenix.org/conference/usenixsecurity21/presentation/poddar
+- https://crossminds.ai/video/usenix-security-21-senate-a-maliciously-secure-mpc-platform-for-collaborative-analytics-61a4fa1141c1645262b809a6/
+- https://cs.paperswithcode.com/paper/senate-a-maliciously-secure-mpc-platform-for
+- https://iacr.org/submit/files/slides/2021/rwc/rwc2021/33/slides.pdf
 
-(VLDB 2017) smcql: Secure Querying for Federated Databases http://www.vldb.org/pvldb/vol10/p673-rogers.pdf
+SMCQL : Secure Querying for Federated Databases https://github.com/smcql/smcql
+- (VLDB 2017) smcql: Secure Querying for Federated Databases http://www.vldb.org/pvldb/vol10/p673-rogers.pdf
+- SMCSQL：一种用于安全查询的联合数据库 https://www.cnblogs.com/neumy/p/14998594.html
+- **ObliVM**:
+  * ObliVM : A Programming Framework for Secure Computation (The compiler) https://github.com/oblivm/ObliVMLang
+  * ObliVM - Djvu的文章 - 知乎 https://zhuanlan.zhihu.com/p/148300132
 
 Secrecy: Secure collaborative analytics on secret-shared data https://arxiv.org/abs/2102.01048
 - Secrecy: Secure collaborative analytics on secret-shared data #42 https://github.com/pentium3/sys_reading/issues/42
