@@ -1,4 +1,19 @@
 
+如何用 Python 实现类似 Linux 的 watch 功能并且保证刷新时不闪烁 https://www.v2ex.com/t/903670
+```py
+# 现在的实现思路是：
+import os, sys, time
+while True:
+    output = str(time.time())
+    os.system('clear')
+    sys.stdout.write(output)
+    sys.stdout.flush()
+    time.sleep(1)
+# 但发现每次刷新的时候都会闪一下，而 watch 是不会的，求教有办法改进吗
+```
+- > 可以看看 watch 的源代码，比如 busybox 的 watch https://git.busybox.net/busybox/tree/procps/watch.c 就只是 printf(ESC"[H" ESC"[J"); 而 procps-ng 的 watch 则复杂很多 https://gitlab.com/procps-ng/procps/-/blob/master/src/watch.c
+  >> 非常感谢，我把 os.system('clear')改成了 print('\033[H\033[J')就不闪了
+
 翻译微软独立研究员 Anthony Shaw 的《CPython Internals》-《CPython 实现原理》 https://www.v2ex.com/t/898194
 ```console
 第一版本：纯翻译 ing ，这本书是基于 Python 3.8 写的，大家如果感兴趣欢迎阅读或者一起贡献；
