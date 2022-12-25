@@ -1,4 +1,7 @@
 
+国内怎么配置代理下载 git 项目？ https://www.v2ex.com/t/904559
+- > https://ghproxy.com
+
 请问 Github 如何设置单独只能访问一个库的秘钥？ https://www.v2ex.com/t/900872
 - > 现在正在 beta 的 api 密钥可以设置指定仓库的 <br> `Settings->Developer settings->Personal access tokens->Fine-grained tokens`
 - > 如果希望以 api 方式来提交，那就如 #2 ；如果希望以 git 方式提交，那就 deploy key: https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys
