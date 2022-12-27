@@ -7,6 +7,8 @@ std::thread http://www.cplusplus.com/reference/thread/thread/
   * `std::thread::join` https://www.cplusplus.com/reference/thread/thread/join/
 
 std::thread https://en.cppreference.com/w/cpp/thread/thread
+- > **Observers**
+  * std::thread::hardware_concurrency https://en.cppreference.com/w/cpp/thread/thread/hardware_concurrency
 
 # wiki类
 

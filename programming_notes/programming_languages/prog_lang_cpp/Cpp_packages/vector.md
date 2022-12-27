@@ -222,6 +222,27 @@ Contents of the list, shuffled: 3 2 6 7 -1 4 1 0 5 8
 ```
 - > 更多方法请参考StackOverflow上的此问题：[use std::fill to populate vector with increasing numbers](https://stackoverflow.com/questions/17694579/use-stdfill-to-populate-vector-with-increasing-numbers)
 
+C++ vector中所有元素快速置零 https://blog.csdn.net/qq_42080098/article/details/124356341
+- > vector元素置零方法有很多种，其中比较快的是`std::fill`
+  ```cpp
+  const int n = 10000;
+  vector<int> v(n, 0);
+  std::fill(v.begin(), v.end(), 0);
+  ```
+- > 当然还可以使用iterator迭代置零，或者assign置零，memset置零
+  ```cpp
+  const int n = 10000;
+  vector<int> v(n, 0);
+
+  memset(&v[0], 0, v.size() * sizeof v[0]);
+  //or
+  v.assign(v.size(), 0);
+  //or	
+  for (auto it=v.begin(); it!=v.end(); ++it) {
+     *it = 0;
+  }
+  ```
+
 # vector元素访问
 
 C++获得vector最后一个元素 https://blog.csdn.net/mitu405687908/article/details/51148107
