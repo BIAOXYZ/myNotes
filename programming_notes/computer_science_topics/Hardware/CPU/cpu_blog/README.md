@@ -1,4 +1,7 @@
 
+计算机死机的时候，它在干什么？ https://www.ithome.com/0/657/119.htm || https://mp.weixin.qq.com/s/XR3k0Ka2klg6LpOVw_EASg
+- > 2、中断能抢到 CPU，但发现没有线程可以调度
+
 我是 Redis，MySQL 大哥被我害惨了！ https://www.ithome.com/0/657/002.htm || https://mp.weixin.qq.com/s/FLqhzfVkakwBjLqIJ-1ezA
 - > **我是 Redis**
   * > 你好，我是 Redis，一个叫 Antirez 的男人把我带到了这个世界上。

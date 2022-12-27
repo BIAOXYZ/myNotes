@@ -154,3 +154,15 @@ CMake设置编译选项的几种方法 https://blog.csdn.net/dreamback1987/artic
     | `PRIVATE`	| 我需要，但是依赖者不需要 |
     | `PUBLIC` | 我和依赖者都需要 |
     | `INTERFACE` | 我不需要，但是依赖者需要 |
+
+## 在编译时指定宏
+
+CMake添加-D_DEBUG宏 https://blog.csdn.net/jq0123/article/details/9497575
+- > Linux下Debug版不会自动添加 `_DEBUG` 宏，只有 `NDEBUG` 宏可用。
+  ```sh
+  cmake ../src _DCMAKE_BUILD_TYPE=Debug -D_DEBUG
+  ```
+- > 会报错：`-D_DEBUG should be: VAR:type=value`
+- > 需要 `-D_DEBUG=1`
+
+How to define a C++ preprocessor macro through the command line with CMake? https://stackoverflow.com/questions/8564337/how-to-define-a-c-preprocessor-macro-through-the-command-line-with-cmake
