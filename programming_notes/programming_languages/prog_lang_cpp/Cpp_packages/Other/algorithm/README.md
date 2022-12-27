@@ -9,6 +9,7 @@ Standard Template Library: Algorithms http://www.cplusplus.com/reference/algorit
 - **Modifying sequence operations:**
   * std::copy https://www.cplusplus.com/reference/algorithm/copy/
   * std::transform https://cplusplus.com/reference/algorithm/transform/
+  * std::fill https://cplusplus.com/reference/algorithm/fill/
   * std::unique https://www.cplusplus.com/reference/algorithm/unique/
   * std::random_shuffle https://www.cplusplus.com/reference/algorithm/random_shuffle/
   * std::shuffle https://www.cplusplus.com/reference/algorithm/shuffle/
@@ -30,6 +31,7 @@ Algorithms library https://en.cppreference.com/w/cpp/algorithm
   * std::count, std::count_if https://en.cppreference.com/w/cpp/algorithm/count
   * std::find, std::find_if, std::find_if_not https://en.cppreference.com/w/cpp/algorithm/find
 - **Modifying sequence operations**
+  * std::fill https://en.cppreference.com/w/cpp/algorithm/fill
   * std::transform https://en.cppreference.com/w/cpp/algorithm/transform
   * std::random_shuffle, std::shuffle https://en.cppreference.com/w/cpp/algorithm/random_shuffle
 - **Sorting operations**

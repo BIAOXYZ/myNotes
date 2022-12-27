@@ -5,10 +5,11 @@ std::thread http://www.cplusplus.com/reference/thread/thread/
 - > **Member functions**
   * `std::thread::joinable` http://www.cplusplus.com/reference/thread/thread/joinable/
   * `std::thread::join` https://www.cplusplus.com/reference/thread/thread/join/
+  * `std::thread::hardware_concurrency` https://cplusplus.com/reference/thread/thread/hardware_concurrency/
 
 std::thread https://en.cppreference.com/w/cpp/thread/thread
 - > **Observers**
-  * std::thread::hardware_concurrency https://en.cppreference.com/w/cpp/thread/thread/hardware_concurrency
+  * `std::thread::hardware_concurrency` https://en.cppreference.com/w/cpp/thread/thread/hardware_concurrency
 
 # wiki类
 
