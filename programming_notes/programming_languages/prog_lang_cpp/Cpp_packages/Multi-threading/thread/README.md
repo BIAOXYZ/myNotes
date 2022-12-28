@@ -57,3 +57,9 @@ C++ 多线程 - 李尧的文章 - 知乎 https://zhuanlan.zhihu.com/p/348492524
 # 问题解决
 
 Emplace back thread on vector https://stackoverflow.com/questions/39266461/emplace-back-thread-on-vector
+
+## 多线程重载函数
+
+Is it possible to pass overloaded method to std::thread https://stackoverflow.com/questions/45966603/is-it-possible-to-pass-overloaded-method-to-stdthread
+
+why does std::thread throws an error when it's asked to run an overloaded function? https://stackoverflow.com/questions/67660976/why-does-stdthread-throws-an-error-when-its-asked-to-run-an-overloaded-functi

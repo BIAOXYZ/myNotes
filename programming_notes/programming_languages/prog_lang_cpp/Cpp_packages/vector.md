@@ -344,6 +344,12 @@ Slicing a vector in C++ https://stackoverflow.com/questions/50549611/slicing-a-v
   v2 = std::vector<int>(v1.begin() + 1, v1.end());
   ```
 
+Sub-vector of 2D vector https://stackoverflow.com/questions/58669481/sub-vector-of-2d-vector
+
+Get a slice or a sub-vector from a vector in C++ https://www.techiedelight.com/get-slice-sub-vector-from-vector-cpp/
+
+how to change values of a 2d C++ vector by manipulating its slice? https://stackoverflow.com/questions/74936546/how-to-change-values-of-a-2d-c-vector-by-manipulating-its-slice
+
 # 获取vector的下标
 
 Find the index of an element in vector in C++ https://www.techiedelight.com/find-index-element-vector-cpp/
@@ -518,3 +524,35 @@ Sort an array in descending order in C++ https://www.techiedelight.com/sort-arra
 
 LeetCode题目：
 - `1996. 游戏中弱角色的数量` https://leetcode-cn.com/problems/the-number-of-weak-characters-in-the-game/
+
+# 其他
+
+2D Vectors in C++ - A Practical Guide 2D Vectors https://www.digitalocean.com/community/tutorials/2d-vectors-in-c-plus-plus
+- > **Iterators for 2D vectors**
+  * > Instead of traversing a 2D vector using indices, C++ has a provision of iterators for every specific STL data structure.
+    ```cpp
+    #include<iostream>
+    #include<vector>
+    using namespace std;
+    int main(){
+    	vector<vector<int>> v {{1, 0, 1}, {0, 1}, {1, 0, 1}}; 
+
+    	// Iterator for the 2-D vector
+    	vector<vector<int>>::iterator it1;
+    	// Iterator for each vector inside the 2-D vector
+    	vector<int>::iterator it2;
+
+    	// Traversing a 2-D vector using iterators
+    	for(it1 = v.begin();it1 != v.end();it1++){
+    		for(it2 = it1->begin();it2 != it1->end();it2++)
+    			cout<<*it2<<" ";
+    		cout<<endl;
+    	}					   
+    }
+    ```
+  * > Output:
+    ```console
+    1 0 1 
+    0 1 
+    1 0 1
+    ```
