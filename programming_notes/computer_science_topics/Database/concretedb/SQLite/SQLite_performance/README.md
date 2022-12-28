@@ -241,3 +241,7 @@ SQLite在多线程环境下的应用 https://blog.csdn.net/diyagoanyhacker/artic
 - Sqlite数据库多线程并发问题 https://blog.csdn.net/wsmrcool/article/details/8287904
 
 sqlite3 多线程和锁 ，优化插入速度及性能优化 https://www.cnblogs.com/jaejaking/p/5383403.html || https://blog.csdn.net/majiakun1/article/details/79193658
+
+# SQLite性能之索引
+
+Squeezing Performance from SQLite: Indexes? Indexes! https://medium.com/@JasonWyatt/squeezing-performance-from-sqlite-indexes-indexes-c4e175f3c346
