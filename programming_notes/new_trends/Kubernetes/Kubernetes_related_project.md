@@ -156,6 +156,11 @@ Kubernetes Operator 快速入门教程（Kubernetes Operator 101） https://gith
 
 operator sdk 教程 https://github.com/xujiyou/blog-data/blob/88c463ab26/%E4%BA%91%E5%8E%9F%E7%94%9F/Kubernetes/Kubernetes%E6%89%A9%E5%B1%95%E6%9C%BA%E5%88%B6/Operator/operator-sdk%E6%95%99%E7%A8%8B.md
 
+如何从零开发Kubernetes Operator？ https://mp.weixin.qq.com/s/X7WZW2s_eBK5mPG2wiiuKg
+- > 如果需要浏览完整代码，请访问： https://github.com/leovct/kubernetes-operator-tutorial
+
+给 K8s 中的 Operator 添加 Webhook 功能【保姆级】 https://mp.weixin.qq.com/s/w3Hh9l2vfw_5vXjOJPwgtg
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## operator源码相关
@@ -219,6 +224,8 @@ Building your own kubernetes CRDs https://itnext.io/building-your-own-kubernetes
 使用kubebuilder开发kubernetes CRD https://juejin.im/post/6844903898222690311
 - > 注意你得先有个kubernetes集群，一步安装走你
   >> 一条命令部署 Kubernetes 高可用集群 👋 https://github.com/fanux/sealos
+
+使用kubebuilder开发简单的Operator https://mp.weixin.qq.com/s/uhOIPfTs4o5MDKbdhh_kEQ
 
 ## kind
 

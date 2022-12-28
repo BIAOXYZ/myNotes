@@ -5,6 +5,10 @@ Python 中如何直接 import 某个 dll https://www.v2ex.com/t/741469
 
 Python3 如何调用 C 语言代码 https://blog.csdn.net/yilovexing/article/details/117527246
 
+# C & Rust
+
+从 Rust 调用 C 库函数 | Linux 中国 https://mp.weixin.qq.com/s/nQ4daibiQZ_k9G6QGyNJ7g
+
 # C++ & Python
 
 python 调用 C++ code https://blog.csdn.net/abcjennifer/article/details/49374307
