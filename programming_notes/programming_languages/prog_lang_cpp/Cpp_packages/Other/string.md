@@ -104,6 +104,11 @@ c++截取部分字符串(类似python的切片) https://blog.csdn.net/qq_3597544
 
 C++字符串分割方法总结 https://www.jianshu.com/p/5876a9f49413
 
+在 C++ 中分割字符串 https://liam.page/2017/08/03/split-a-string-in-Cpp/
+
+**LeetCode相关题目**：
+- `2042. 检查句子中的数字是否递增` https://leetcode.cn/problems/check-if-numbers-are-ascending-in-a-sentence/
+
 # 字符串拼接
 
 C/C++ 语言中如何优雅地拼接多段字符串？ - 知乎 https://www.zhihu.com/question/324816304
