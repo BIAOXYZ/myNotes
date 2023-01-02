@@ -150,6 +150,8 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
   * > The above is taken from: http://www.sqlite.org/wal.html
   * > If that is not enough, you can still then invoke PRAGMA database.wal_checkpoint; when you want to be certain that your writes are not only written to disk, but also "integrated" to your DB. Check the following for more information: http://www.sqlite.org/pragma.html#pragma_wal_checkpoint
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # SQLite性能之多线程/多进程
 
 【[:star:][`*`]】 14 | 存储优化（下）：数据库SQLite的使用和优化 https://blog.yorek.xyz/android/paid/master/storage_3/
@@ -241,6 +243,20 @@ SQLite在多线程环境下的应用 https://blog.csdn.net/diyagoanyhacker/artic
 - Sqlite数据库多线程并发问题 https://blog.csdn.net/wsmrcool/article/details/8287904
 
 sqlite3 多线程和锁 ，优化插入速度及性能优化 https://www.cnblogs.com/jaejaking/p/5383403.html || https://blog.csdn.net/majiakun1/article/details/79193658
+
+多线程 SQLite with C++ 踩坑汇总 https://diverse.space/2020/01/using-sqlite-with-multi-threads-cpp
+
+SQLite线程模式探讨 https://wereadteam.github.io/2016/08/19/SQLite/
+
+## python版本
+
+Python sqlite3 server using multiprocessing.managers https://gist.github.com/lemon24/1f35deed9da79dc20d9c538aa0f5e0cc
+
+python 多线程如何同时读写 sqlite？ https://www.v2ex.com/t/102067
+- > `sq = sqlite3.connect("xxxxx",check_same_thread = False)`
+- > sqlite 是线程安全的，python推荐用apsw <br> https://www.sqlite.org/threadsafe.html <br> https://code.google.com/p/apsw/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # SQLite性能之索引
 

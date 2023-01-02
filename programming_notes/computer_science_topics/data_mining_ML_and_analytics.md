@@ -15,6 +15,8 @@ PyCharm + Docker+ Deepo 远程调试环境搭建教程 https://github.com/ruifen
 
 GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://www.jiqizhixin.com/articles/2017-12-18-4 || 资源 | GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Apache MADlib
 
 ## MADlib官网
@@ -26,6 +28,8 @@ Mirror of Apache MADlib https://github.com/apache/madlib
 ## MADlib其他
 
 The MADlib Analytics Library https://blog.acolyer.org/2015/01/23/the-madlib-analytics-library/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Kaggle
 
@@ -40,3 +44,11 @@ Kaggle实战——点击率预估 - 程世东的文章 - 知乎 https://zhuanlan
 - > 项目地址： kaggle_criteo_ctr_challenge- https://github.com/chengstone/kaggle_criteo_ctr_challenge-
 
 GBDT+LR CTR预估-Kaggle实例[有数据集] https://www.jianshu.com/p/73adce3fd975
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# from github
+
+首个“开源 ChatGPT ”来了：基于谷歌 5400 亿参数大模型，网友吐槽：这谁能跑 https://www.ithome.com/0/664/547.htm || https://mp.weixin.qq.com/s/PQYLIddEVOsuhf5po6pPyw
+- PaLM-rlhf-pytorch 主页： https://github.com/lucidrains/PaLM-rlhf-pytorch
+- Open Assistant 主页： https://github.com/LAION-AI/Open-Assistant
