@@ -3,6 +3,8 @@
 
 ## os project
 
+Teach you how to code an OS by yourself. https://github.com/lcdzhao/operating_system
+
 The Linux Kernel Module Programming Guide https://github.com/sysprog21/lkmpg
 - > This project keeps the Linux Kernel Module Programming Guide up to date, with [working examples](examples/) for recent 5.x kernel versions.
 The guide has been around since 2001 and most copies of it on the web only describe old 2.6.x kernels.

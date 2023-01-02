@@ -14,6 +14,10 @@ C,C++安全指南.md https://github.com/Tencent/secguide/blob/main/C%2CC%2B%2B%E
 Security PPT https://github.com/FeeiCN/Security-PPT
 - > Security-related Slide Presentation（大安全各领域各公司各会议分享的PPT）
 
+Get a job from Xuanwu Lab in 365 days https://github.com/Vancir/365-days-get-xuanwulab-job
+- > Day8 [Linux内核及其内在机理](https://github.com/Vancir/365-days-get-xuanwulab-job/blob/master/weeks/week2.md)
+- > Day147-148 [训练NLP模型针对Twitter数据过滤出我更感兴趣的资讯](https://github.com/Vancir/365-days-get-xuanwulab-job/blob/master/weeks/week19.md)
+
 # Security News
 
 Linux 基金会联合厂商成立开源安全基金会 https://www.ithome.com/0/501/388.htm
