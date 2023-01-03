@@ -1,4 +1,27 @@
 
+【[:star:][`*`]】 Linux 的防火墙， iptables， firewalld 和 netfilter 这些东西到底是什么关系啊？ https://www.v2ex.com/t/906174
+- > `netfilter`：里世界，实际应用规则的人，但不能直接操作， <br> `iptables`：因为不能直接操作里世界，所以在表世界映射成 iptables 供用户使用， <br> `firewall`、`ufw`：让用户使用更爽的一层 iptables 封装。
+  >> 最新的 firewalld 不使用 iptables 了，使用的是 `nftables`。不直接使用 iptables ，使用 firewalld 是因为：firewalld 是有状态的，可以实现有状态运维管理（基于 ansible + git 的代码化运维）
+- > 个人理解，netfilter 是内核提供的 API ，允许其他模块 hook 网络流量，iptables 通过调用 netfilter API 来实现各种功能。 <br> firewalld 是用户模式的 iptables 管理工具，通过一些简化的语法来生成对应复杂的 iptables 规则。
+- >
+  * > --------先给你解释 iptable 和 firewalld 的关系
+    + > 假设实际的防火墙规则是一条条内核中的记录, 那么 iptable-save 就是用自己格式输出、保存的防火墙规则, iptabale 的其他命令行工具能对防火墙规则进行增删改查
+    + > iptable 本质就是清空防火墙规则 保存防火墙规则 推送保存的防火墙规则的工具
+    + > 由于 iptable 对复杂规则的使用不够友好,所以设计了 firewalld 这个以 xml 存储防火墙规则的程序
+    + > 但是无论是 iptable 还是 firewalld,最后操作的都是内核中的记录,所以无论使用 firewalld 还是 iptable, 修改、列出的规则都是内核中的规则
+    + > ***现在都是尽量避免使用 `iptable` 来操作防火墙,都是用 `firewalld` 来配置***
+  * > -------这里解释容器相关防火墙
+    + > 容器实现靠的是操作系统的 namespace,每个 namespace 有自己的路由和防火墙规则
+    + > 默认所有操作都在 default namespace 中, 你直接执行 iptable-save 导出的是 default namespace 的防火墙规则
+    + > default namespace 是系统中所有正常启动的进程所在的 namespace
+    + > 你想获取容器中的防火墙规则,需要切换到指定容器对应的 namespace 中执行 iptable-save，具体的 namespace exce 命令随便查下就知道了
+- > 防火墙本体是内核的 NetFilter 。iptables 是 mysql-cli, firewalld 是 navicat, ufw 是 heidisql
+- > https://isno.github.io/chapter3/iptables-example.html
+- > 最底层的是 NetFilter, 然后实际操作层是 iptables, 而 firewall 我认为是 iptables 命令简化版的 gui <br> ***作为 12 年的运维工程师，还是更偏向于 `iptables`*** <br> ***新生代更偏向于用 `firewall` ，因为命令更简单，通俗易懂***. <br> ***现在基于 ubuntu 的程序员更多，所以他们更喜欢用傻瓜相机版的 `ufw`***
+- > ufw 不知道, filewall 本质还是 iptable <br> 比如 filewall 标准语法不能描述的规则都用 direct 实现, direct 里面都是 iptable 的语法 <br> 话说前端娱乐圈搞那么多状态管理.... linux 搞两三个防火墙管理怎么了！！才两三个你们就叫,写前端不得疯
+- > `因为安装 linkerd 出现一个容器启动错误，说是没有 modprobe` --> 宿主机上把需要的内核模块先装上。用户态不同版本一般没关系。
+- > netfilter 是个框架，iptables 是用户态工具(iptables 之类的命令）+内核模块（ `lsmod|grep -i ipt` )，在 netfilter 有几个 iptables 的 hook ，firewalld 就是一个 iptables 规则生成器。 <br> ***不过这个年代别学 `iptables` 了，马上就被 `nft` 替代了***，你看到的 iptables-legacy 就是传统 iptables ，***在新的发行版本里面 iptables 就是 nftable 的一层皮***
+
 ubuntu 有什么命令可以关闭网络，不然上网的？ https://www.v2ex.com/t/885457
 - > 禁用网卡驱动应该可以吧？ `ifconfig [网卡名称] Down/Up`
   >> 还是 v 友给力！现在的搜索引擎出来都是一个结果，还有内容农场。导致知识获取效率低下。
