@@ -27,3 +27,5 @@ MegPeak—让你更懂你的处理器 https://www.v2ex.com/t/900266
 - > **测试指令峰值**
 - > **测试指令延迟**
 - > **用 MegPeak 测到的数据，可以用来干什么**
+
+Linux如何查看与测试磁盘IO性能 https://www.cnblogs.com/mauricewei/p/10502539.html
