@@ -64,6 +64,14 @@ cpolar-内网穿透神器 https://www.lyseky.com/page?article_id=78
 
 没有公网IP，快速免费内网穿透 https://blog.csdn.net/CpolarLisa/article/details/124734760
 
+## tailscale
+
+让NAS无处不在——使用Tailscale实现远程访问 https://post.smzdm.com/p/a83ggrg7/
+
+Tailscale：让你可以随时随地用NAS和家里的电脑 https://post.smzdm.com/p/akxxq7rr/ || https://sspai.com/post/66822
+
+tailscale：个人认为比zerotier更好 https://www.xiaoji.la/d/2407
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 代码画流程图

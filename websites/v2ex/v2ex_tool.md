@@ -1,6 +1,15 @@
 
 # 远程共享/访问专题
 
+你们都用什么内网穿透免费服务！能推荐一下么？ https://www.v2ex.com/t/906572
+- > tailscale
+- > natapp
+- > 一开始用 zerotier ，SSH 都卡得不行，直接买服务器搭 FRP 了。
+- > cpolar
+- > zerotier 免费但是卡 <br> natapp 勉强 <br> 看看你的网络可以公网访问就 弄个 ddns <br> 有 ipv6 的好像大部分可以公网访问
+- > CloudFlare tunnel 很好用，刚从 frp 换过来。需要准备一个域名，不过免费域名就可以。
+- > tailscale + 自建 zerotier+frp
+
 ssh 端口转发不需要额外装软件， 为啥还是这么多人选择 frp 或者 ngrok 来做穿透呢？ https://www.v2ex.com/t/807807
 
 目前内网远程控制最好的方案就是 VNC 吗？最近试了 teamviewer 和 anydesk，都不太爽 https://www.v2ex.com/t/745358
