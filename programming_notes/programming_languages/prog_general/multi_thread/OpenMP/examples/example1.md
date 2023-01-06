@@ -127,3 +127,89 @@ m is: 10000 n is: 100000
 Elapsed time is: 1.65952s
 $ 
 ```
+
+# 2
+
+在C++中使用openmp进行多线程编程 https://blog.csdn.net/acaiwlj/article/details/49818965
+
+## 启用 openmp，所有线程都会打印一遍；否则就只打一遍。
+
+```cpp
+#include <bits/stdc++.h>
+int main() {
+    #pragma omp parallel
+    {
+        std::cout << "parallel run!!!\n";
+    }
+}
+```
+```sh
+$ g++ test2.cpp -fopenmp -o test2
+$ ./test2
+parallel run!!!
+parallel run!!!
+parallel run!!!
+parallel run!!!
+parallel run!!!
+parallel run!!!
+parallel run!!!
+parallel run!!!
+```
+
+```cpp
+#include <bits/stdc++.h>
+int main() {
+    // #pragma omp parallel
+    {
+        std::cout << "parallel run!!!\n";
+    }
+}
+```
+```console
+$ g++ test2.cpp -fopenmp -o test2
+$ ./test2
+parallel run!!!
+```
+
+## 启用 openmp 就（绝大部分情况下）是乱序的；否则就是正常序列。
+
+```cpp
+#include <bits/stdc++.h>
+int main() {
+    #pragma omp parallel for
+    for (int i = 0; i < 10; ++i) {
+        printf("%d-", i);
+    }
+    printf("\n");
+}
+```
+```sh
+$ g++ test2.cpp -fopenmp -o test2
+$ ./test2
+7-6-2-3-5-9-8-0-1-4-
+$ ./test2
+0-9-1-4-2-5-6-7-3-8-
+$ ./test2
+0-1-8-5-6-7-2-3-4-9-
+```
+
+```cpp
+#include <bits/stdc++.h>
+int main() {
+    // #pragma omp parallel for
+    for (int i = 0; i < 10; ++i) {
+        printf("%d-", i);
+    }
+    printf("\n");
+}
+```
+```sh
+$ g++ test2.cpp -fopenmp -o test2
+$ ./test2
+0-1-2-3-4-5-6-7-8-9-
+$ ./test2
+0-1-2-3-4-5-6-7-8-9-
+$ ./test2
+0-1-2-3-4-5-6-7-8-9-
+$ 
+```
