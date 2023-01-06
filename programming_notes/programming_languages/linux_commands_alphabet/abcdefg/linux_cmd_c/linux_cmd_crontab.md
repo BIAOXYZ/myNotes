@@ -18,3 +18,16 @@ How to Run Cron Every 5 Minutes, Seconds, Hours, Days, Months https://www.thegee
 ‘crontab’ in Linux with Examples https://www.geeksforgeeks.org/crontab-in-linux-with-examples/
 
 linux定时任务的设置 crontab 配置指南 https://blog.csdn.net/xiyuan1999/article/details/8160998
+
+linux crontab & 每隔10秒执行一次 https://www.cnblogs.com/juandx/archive/2015/11/24/4992465.html || https://www.cnblogs.com/aaronLinux/p/8918047.html
+- > 很多时候，我们计划任务需要精确到秒来执行，根据以下方法，可以很容易地以秒执行任务。以下方法将**每10秒执行一次**
+  ```sh
+  # crontab -e
+  * * * * * /bin/date >>/tmp/date.txt
+  * * * * * sleep 10; /bin/date >>/tmp/date.txt
+  * * * * * sleep 20; /bin/date >>/tmp/date.txt
+  * * * * * sleep 30; /bin/date >>/tmp/date.txt
+  * * * * * sleep 40; /bin/date >>/tmp/date.txt
+  * * * * * sleep 50; /bin/date >>/tmp/date.txt
+  ```
+  >> //notes：核心就是一分钟内重复6次，从而达到每10秒一次的效果。
