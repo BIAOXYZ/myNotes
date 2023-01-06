@@ -22,6 +22,11 @@ Python multiprocessing 5 进程池 pool (多进程 多核运算 教学教程tuto
 
 Python Multiprocessing Example https://www.digitalocean.com/community/tutorials/python-multiprocessing-example
 
+Python并行编程(Multiprocessing)与实例 http://zhaoxuhui.top/blog/2018/07/19/PythonMultiprocessing.html
+- > **3.最优并行进程数**
+  * > 这便很明显地反应了进程数与效率之间的关系，随着进程数的增加，耗时急剧下降，但随着进程数的持续增加，效率的提升就不是这么明显了。甚至当进程数大于某一数值后，随着进程数的增加，耗时反而增加了。出现这种情况的原因在于，当进程数过多后，进程间通信将变得更加复杂，相比于进程数增加带来的效率提升，其增加带来的副作用(进程调度、通信等复杂操作)更大了，所以导致了效率的下降。
+- > **4.最优进程数自动选择**
+
 # 问题
 
 ## `multiprocessing` 里无法使用 lambda 函数或者非 “top-module level” 的函数
