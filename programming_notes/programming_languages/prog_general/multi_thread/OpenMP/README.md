@@ -21,7 +21,12 @@ openMP 函数总结（并行程序设计导论） https://www.jianshu.com/p/ec76
 OpenMP | Hello World program https://www.geeksforgeeks.org/openmp-hello-world-program/
 
 OpenMP并行编程笔记 http://zhaoxuhui.top/blog/2017/12/02/OpenMP%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0.html
-- > 并行区里每个线程执行的代码是一样的，计算机若有N个核，相当于同时重复执行了N次，并没有提高效率、节省时间。 我们希望的是把同一工作分配给不同线程来做，每个线程完成一部分，这样运行速率才会快。这就需要对for并行了。 而对于for循环，可以使用for制导语句，将for循环分配给各个线程执行，这里要求数据不存在依赖。 当编译器发现`#pragma omp parallel for`后，自动将下面的for循环分成N份，(N为电脑CPU核数)，然后把每份指派给一个核去执行，而且多核之间为并行执行。形式为：
+- > **二、OpenMP的用法**
+  * > 并行区里每个线程执行的代码是一样的，计算机若有N个核，相当于同时重复执行了N次，并没有提高效率、节省时间。 我们希望的是把同一工作分配给不同线程来做，每个线程完成一部分，这样运行速率才会快。这就需要对for并行了。 而对于for循环，可以使用for制导语句，将for循环分配给各个线程执行，这里要求数据不存在依赖。 当编译器发现`#pragma omp parallel for`后，自动将下面的for循环分成N份，(N为电脑CPU核数)，然后把每份指派给一个核去执行，而且多核之间为并行执行。形式为：
+  * > 此外可以包含`omp.h`，从而使用更多OpenMP相关函数。
+    + > `omp_get_num_procs()`：获取处理器个数
+    + > `omp_get_thread_num()`：获得每个线程的ID
+    + > `omp_set_num_threads()`：设置并行线程数
 
 OpenMP的简单使用教程 https://www.cnblogs.com/wxquare/p/5584662.html
 - > **编写OpenMP程序**
