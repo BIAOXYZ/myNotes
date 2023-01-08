@@ -9,6 +9,9 @@ How End-to-End Encryption Paves the Way for Zero Knowledge https://bitwarden.com
 
 [SOLVED] Is Bitwarden truly zero-knowledge? https://community.bitwarden.com/t/solved-is-bitwarden-truly-zero-knowledge/29745
 
+Encryption https://bitwarden.com/help/what-encryption-is-used/
+- > Bitwarden **always** encrypts and/or hashes your data on your local device before anything is sent to cloud servers for storage. **Bitwarden servers are only used for storing encrypted data**. For more information, see [Storage](https://bitwarden.com/help/data-storage/).
+
 # 其他相关项目
 
 ## Bitwarden_rs

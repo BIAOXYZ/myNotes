@@ -37,6 +37,8 @@ conda info -e  # 也等于上面那句
 conda activate <your_env_name>
 conda deactivate
 
+conda create --name myclone --clone myenv  # 从 myenv 环境克隆一个（一样的）新环境 myclone 出来  https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#cloning-an-environment
+
 # 包管理
 conda list  # 查看（当前环境里）已经安装的包
 conda list -n <your_env_name>  # 查看某个环境里已经安装的包
