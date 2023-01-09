@@ -7,11 +7,13 @@
 
 # 新仙剑
 
-《新仙剑奇侠传》实况流程 主线+支线(三大结局，全CG，全BOSS战，全技能收录) https://www.bilibili.com/video/BV1nW411o79i
+《新仙剑奇侠传》实况流程 主线+支线(三大结局，全CG，全BOSS战，全技能收录) https://www.bilibili.com/video/BV1nW411o79i || https://www.bilibili.com/video/av31406616/
 
 【新仙剑奇侠传】steam版实况流程（全结局 支线 对话 CG） https://www.bilibili.com/video/BV1Zg4y1v7ao
 
 [新仙剑奇侠传]steam版实况流程 高清重制（全结局 支线） https://www.bilibili.com/video/BV1L44y1z7ny
+
+盘点【新仙剑】优化后还不如旧版的地方 https://www.bilibili.com/video/BV1XT411E72j
 
 # 仙剑2
 
