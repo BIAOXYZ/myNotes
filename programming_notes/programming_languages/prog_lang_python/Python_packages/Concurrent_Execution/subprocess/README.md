@@ -21,6 +21,19 @@ python subprocess.call() not working as expected https://askubuntu.com/questions
     subprocess.call("(cd ~/catkin_ws/src && catkin_make)", shell=True)
     ```
 
+Python—执行系统命令的四种方法（os.system、os.popen、commands、subprocess） https://www.cnblogs.com/liuhaidon/p/12077007.html || https://www.cnblogs.com/2018shawn/p/16767583.html || https://blog.csdn.net/qq_41204553/article/details/123870179
+- > **四、subprocess模块**
+  * > Subprocess是一个功能强大的子进程管理模块，是替换os.system ,os.spawn* 等方法的一个模块。
+  * > 当执行命令的参数或者返回中包含了中文文字，那么建议使用subprocess。
+    ```py
+    import subprocess
+    res = subprocess.Popen('cat /etc/passwd', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) # 使用管道
+    # print res.stdout.read()  # 标准输出
+    for line in res.stdout.readlines():
+        print line
+    res.stdout.close()         # 关闭
+    ```
+
 # 问题
 
 ## 与 `echo -e` 无法兼容的问题

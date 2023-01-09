@@ -22,6 +22,18 @@ Can I make 'git diff' only display the line numbers AND changed file names? http
 git 比较同一文件的不同的两个版本之间的差异 https://segmentfault.com/q/1010000005974787
 - > `git diff commit_id1 commit_id2 -- index.html`
 
+Git diff Command – How to Compare Changes in Your Code https://www.freecodecamp.org/news/git-diff-command/
+- > **Understanding `git diff`'s Results – Line by Line**
+- > **4 Diff Comparisons You Need to Know**
+  * > You can run the below commands to compare the changes for specific file:
+    ```console
+    git diff HEAD <file_name>
+    git diff <file_name>
+    git diff --staged <file_name> or  git diff --cached <file_name>,
+    git diff <branch_name1> <branch_name2> <file_name>
+    git diff <commit_hash> <commit_hash> <file_name>
+    ```
+
 # 个人实战
 
 ## 当仓库是干净状态时，`git diff HEAD^ HEAD` = `git diff HEAD^`。
