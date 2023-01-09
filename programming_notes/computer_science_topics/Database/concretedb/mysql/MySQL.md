@@ -26,6 +26,8 @@ MYSQL-B+TREE索引原理 https://www.jianshu.com/p/486a514b0ded
 MySQL中的读锁和写锁 https://blog.csdn.net/u013063153/article/details/53432468
 - > MyISAM 在执行查询语句(SELECT)前,会自动给涉及的所有表加读锁,在执行更新操作 (UPDATE、DELETE、INSERT 等)前，会自动给涉及的表加写锁，这个过程并不需要用户干预，因此，用户一般不需要直接用LOCK TABLE命令给MyISAM表显式加锁。
 
+2万字+30张图，彻底搞懂MySQL加行级锁！ https://mp.weixin.qq.com/s/sebKS5CGM7lUJstUWAKxEg
+
 # mysql待分类
 
 字节三面：详解一条 SQL 的执行过程 https://mp.weixin.qq.com/s/xVWq3u-rekmg6HNGKRncng || 执行一条SQL后MySQL做了哪些事情.md https://github.com/allentofight/easy-cs/blob/main/MySQL/%E6%89%A7%E8%A1%8C%E4%B8%80%E6%9D%A1SQL%E5%90%8EMySQL%E5%81%9A%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BA%8B%E6%83%85.md

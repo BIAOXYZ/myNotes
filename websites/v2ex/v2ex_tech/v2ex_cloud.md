@@ -1,4 +1,6 @@
 
+Alan 的 Docker 容器学习笔记 https://www.v2ex.com/t/907739
+
 istio 的主要问题是资源消耗，次要问题是基本只支持 HTTP https://www.v2ex.com/t/893464
 
 k8s 的练习环境 https://www.v2ex.com/t/886707
