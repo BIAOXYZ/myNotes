@@ -6,3 +6,7 @@ Why is a list comprehension so much faster than appending to a list? https://sta
 Are list-comprehensions and functional functions faster than "for loops"? https://stackoverflow.com/questions/22108488/are-list-comprehensions-and-functional-functions-faster-than-for-loops
 
 List Comprehensions vs. For Loops: It Is Not What You Think https://towardsdatascience.com/list-comprehensions-vs-for-loops-it-is-not-what-you-think-34071d4d8207
+
+# IO performance
+
+I/O performance in Python https://rabexc.org/posts/io-performance-in-python
