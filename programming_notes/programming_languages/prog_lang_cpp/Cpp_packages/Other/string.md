@@ -223,6 +223,8 @@ int main(int argc, char *argv[])
 3.14159265358979
 ```
 
+C++字符串转换（stoi；stol；stoul；stoll；stoull；stof；stod；stold） https://blog.csdn.net/baidu_34884208/article/details/88342844
+
 ## `char` 和 `int` 互转
 
 C++ Program For char to int Conversion https://www.geeksforgeeks.org/cpp-program-for-char-to-int-conversion/

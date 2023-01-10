@@ -1,4 +1,12 @@
 
+为什么我们家里的 IP 都是 192.168 开头的 https://www.ithome.com/0/666/834.htm || https://mp.weixin.qq.com/s/DKqUtFXpne4GrEKSHqyKug
+- 回复里的：
+  * > 补充:中小型局域网用`192.168`和`172.16`只有一段。大型的普遍用`10.`段。特殊单位用A类地址，我们就是`125.`段。
+    >> 公安网以前用`10`段的 现在改成`41`段了
+  * > 码农路过。这玩意天天上班都要用科普下 常见私有地址分为三个 `10.0.0.0/8` `172.16.0.0/12` `192.168.0.0/16` 所以有这三个段的内网都是正常的。之前在某大厂摸鱼，设备之多，网络大到`10./8`都用完了，开始强制使用 ipv6 了
+    >> 真大厂
+    >>> 1千6百万个ip都用完了？
+
 IPv4：超网，你是我的“神” https://www.ithome.com/0/654/991.htm || https://mp.weixin.qq.com/s/W7ORERpCqQD__5-KEcU64g
 
 502 问题怎么排查？ https://www.ithome.com/0/653/236.htm || https://mp.weixin.qq.com/s/98Vr1MkFte7oZcQk2t-f_A  【from `小白debug`】
