@@ -290,6 +290,8 @@ A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neura
       - ~~`mkl_random` -- a NumPy-based Python interface to Intel (R) MKL Random Number Generation functionality~~  【//notes：这个库也出问题，怎么也装不了指定版本 `ERROR: Could not find a version that satisfies the requirement mkl-random==1.2.0 (from versions: 1.2.2)  ERROR: No matching distribution found for mkl-random==1.2.0`。后来想了想，可能新版的说不定不需要呢？于是注释掉了 `requirements.txt` 里的两行 `#mkl-random==1.2.0` `#mkl-service==2.3.0`（是的，`mkl-service` 也跟着注释掉了，压根就没试它），然后按 `TEXTOIR` README 里的步骤，终于通了。。。所以，***<ins>这个库跑的时候实际上没有安装!!!!!!!!!!</ins>*** 只是列出了下官方仓库地址。】
   * TEXTOIR: An Integrated and Visualized Platform for Text Open Intent Recognition https://github.com/thuiar/textoir-demo
 
+Anomalib -- A library for benchmarking, developing and deploying deep learning anomaly detection algorithms https://github.com/openvinotoolkit/anomalib
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # others

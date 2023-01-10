@@ -72,3 +72,70 @@ How to see stashed changes using git stash https://howto.lintel.in/how-to-see-st
     ```
 - > **Command `git diff`**
 - > **Command `git difftool`**
+
+【[:star:][`*`]】 Git stash https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+- > **Stashing untracked or ignored files**
+- > **Managing multiple stashes**
+- > **Viewing stash diffs**
+- > **Partial stashes**
+  * > You can also choose to ***stash just a single file, a collection of files, or individual changes from within files***. If you pass the `-p` option (or `--patch`) to `git stash`, it will iterate through each changed "hunk" in your working copy and ask whether you wish to stash it:
+    ```diff
+    $ git stash -p
+    diff --git a/style.css b/style.css
+    new file mode 100644
+    index 0000000..d92368b
+    --- /dev/null
+    +++ b/style.css
+    @@ -0,0 +1,3 @@
+    +* {
+    +  text-decoration: blink;
+    +}
+    Stash this hunk [y,n,q,a,d,/,e,?]? y
+    diff --git a/index.html b/index.html
+    index 9daeafb..ebdcbd2 100644
+    --- a/index.html
+    +++ b/index.html
+    @@ -1 +1,2 @@
+    +<link rel="stylesheet" href="style.css"/>
+    Stash this hunk [y,n,q,a,d,/,e,?]? n
+    ```
+- > **Creating a branch from your stash**
+  * > If the changes on your branch diverge from the changes in your stash, you may run into conflicts when popping or applying your stash. Instead, you can use `git stash branch` to create a new branch to apply your stashed changes to:
+    ```sh
+    $ git stash branch add-stylesheet stash@{1}
+    Switched to a new branch 'add-stylesheet'
+    On branch add-stylesheet
+    Changes to be committed:
+
+        new file:   style.css
+
+    Changes not staged for commit:
+
+        modified:   index.html
+
+    Dropped refs/stash@{1} (32b3aa1d185dfe6d57b3c3cc3b32cbf3e380cc6a)
+    ```
+    > This checks out a new branch based on the commit that you created your stash from, and then pops your stashed changes onto it.
+- > **Cleaning up your stash**
+  * > If you decide you no longer need a particular stash, you can delete it with `git stash drop`:
+    ```sh
+    $ git stash drop stash@{1}
+    Dropped stash@{1} (17e2697fd8251df6163117cb3d58c1f62a5e7cdb)
+    ```
+  * > Or you can delete all of your stashes with:
+    ```sh
+    $ git stash clear
+    ```
+- > **How git stash works**
+  * > If you just wanted to know how to use `git stash`, you can stop reading here. But if you're curious about how Git (and `git stash`) works under the hood, read on!
+  * > ***Stashes are actually encoded in your repository as commit objects***. The special ref at `.git/refs/stash` points to your most recently created stash, and previously created stashes are referenced by the stash ref's reflog. This is why you refer to stashes by `stash@{n}:` you're actually referring to the nth reflog entry for the `stash` ref. Since a stash is just a commit, you can inspect it with `git log`:
+    ```sh
+    $ git log --oneline --graph stash@{0}
+    *-.   953ddde WIP on main: 5002d47 our new homepage
+    |\ \ 
+    | | * 24b35a1 untracked files on main: 5002d47 our new homepage
+    | * 7023dd4 index on main: 5002d47 our new homepage
+    |/ 
+    * 5002d47 our new homepage
+    ```
+  * > Depending on what you stashed, a single `git stash` operation creates either two or three new commits. The commits in the diagram above are:

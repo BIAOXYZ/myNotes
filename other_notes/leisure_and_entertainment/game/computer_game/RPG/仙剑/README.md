@@ -1,4 +1,8 @@
 
+仙剑奇侠传系列 https://zh.wikipedia.org/wiki/%E4%BB%99%E5%8A%8D%E5%A5%87%E4%BF%A0%E5%82%B3%E7%B3%BB%E5%88%97
+
+仙剑奇侠传系列角色列表 https://zh.wikipedia.org/wiki/%E4%BB%99%E5%89%91%E5%A5%87%E4%BE%A0%E4%BC%A0%E7%B3%BB%E5%88%97%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8
+
 # 仙剑1
 
 【怀旧】仙剑奇侠传一流程【完结】 https://www.bilibili.com/video/BV1Xx411C7uk
