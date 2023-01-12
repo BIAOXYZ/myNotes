@@ -42,6 +42,11 @@ std::to_string https://en.cppreference.com/w/cpp/string/basic_string/to_string
 
 std::basic_string<CharT,Traits,Allocator>::npos https://en.cppreference.com/w/cpp/string/basic_string/npos
 
+# 偶然发现的一个网站，可以各种数据类型转换提供示例代码
+
+【[:website:][:star:][`*`]】 ConvertDataTypes.com https://www.convertdatatypes.com/
+- https://www.convertdatatypes.com/Convert-char-Array-to-uint-in-C.html
+
 # `.c_str()`
 
 std::string::c_str http://www.cplusplus.com/reference/string/string/c_str/  --> URL is: http://cpp.sh/6kfx
