@@ -5,6 +5,8 @@ os.path --- 常用路径操作 https://docs.python.org/zh-cn/3/library/os.path.h
 
 # 其他
 
+Python os.path 模块 https://www.runoob.com/python/python-os-path.html
+
 Python | os.path.expanduser() method https://www.geeksforgeeks.org/python-os-path-expanduser-method/
 
 # 个人实战
