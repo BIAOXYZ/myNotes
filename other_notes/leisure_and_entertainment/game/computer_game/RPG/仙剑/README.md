@@ -9,6 +9,8 @@
 
 【仙剑奇侠传新春会】如果赵灵儿亲自玩98速通？【仙剑脑洞小剧场】 https://www.bilibili.com/video/BV1AP4y1P7Dx
 
+经典单机《仙剑奇侠传》主流打法，当年我们用得最多的招式是什么 https://www.ithome.com/0/667/371.htm || https://mp.weixin.qq.com/s/f9eKIhrYm52OXPW7ke3daw
+
 # 新仙剑
 
 《新仙剑奇侠传》实况流程 主线+支线(三大结局，全CG，全BOSS战，全技能收录) https://www.bilibili.com/video/BV1nW411o79i || https://www.bilibili.com/video/av31406616/
@@ -33,3 +35,11 @@
 - 回复里的：
   * > 我只认李逍遥这条故事线，其他的都不叫仙剑
   * > 记得玩仙一，得知林月如去世的时候，我感觉要比找到赵灵儿去世还要震撼的多
+
+# 仙剑速通
+
+仙剑速通 http://www.palspeed.com/
+
+仙剑98速通 136.02 https://www.bilibili.com/video/BV1aT411M7C8
+
+仙剑98柔情版：游戏速通只需2个多小时，看完比赛感觉自己白玩了 https://www.163.com/dy/article/GSTR2H9P0552LX6A.html
