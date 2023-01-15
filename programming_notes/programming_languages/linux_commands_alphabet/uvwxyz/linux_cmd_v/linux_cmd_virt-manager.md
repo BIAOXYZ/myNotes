@@ -25,6 +25,8 @@ KVM系统学习笔记11（libvirt和virt-manager的应用） https://www.bilibil
 
 # 其他博客类链接
 
+【[:star:][`*`]】 如何使用 virt-manager 来操控虚拟机 https://zh.fedoracommunity.org/2019/07/23/full-virtualization-system-on-fedora-workstation-30.html || How to run virtual machines with virt-manager https://fedoramagazine.org/full-virtualization-system-on-fedora-workstation-30/
+
 `4.2. virt-manager` https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/7/html/virtualization_getting_started_guide/sect-virtualization_getting_started-tools-virt-manager
 
 使用 Virtual Machine Manager 管理虚拟机 https://www.ibm.com/developerworks/cn/cloud/library/cl-managingvms/index.html
