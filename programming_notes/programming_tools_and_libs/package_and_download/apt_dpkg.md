@@ -178,3 +178,6 @@ Ubuntu下deb包的安装方法 https://blog.csdn.net/kevinhg/article/details/593
 How to install a deb file, by dpkg -i or by apt? https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt
 
 3 Command Line Tools to Install Local Debian (.DEB) Packages https://www.tecmint.com/install-local-deb-packages-in-debian-ubuntu-linux-mint/
+
+What do the various dpkg flags like 'ii' 'rc' mean? https://askubuntu.com/questions/18804/what-do-the-various-dpkg-flags-like-ii-rc-mean
+- https://askubuntu.com/questions/18804/what-do-the-various-dpkg-flags-like-ii-rc-mean/18807#18807

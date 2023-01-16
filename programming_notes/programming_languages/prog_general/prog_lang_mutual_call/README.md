@@ -21,6 +21,8 @@ A simple example demonstrating how to call C++ from Go https://github.com/arriet
 
 通过 C 代码调用 Go - 尼不要逗了的文章 - 知乎 https://zhuanlan.zhihu.com/p/32066522
 
+Go 与 C 的桥梁：cgo 入门，剖析与实践 - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/349197066
+
 # C++ & Rust
 
 CXX — safe FFI between Rust and C++ https://github.com/dtolnay/cxx

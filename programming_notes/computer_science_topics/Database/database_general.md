@@ -314,6 +314,22 @@ ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215
 
 24 Optimization of Joins https://docs.oracle.com/cd/F49540_01/DOC/server.815/a67781/c20c_joi.htm
 
+优化规则与表达式下推的黑名单 https://docs.pingcap.com/zh/tidb/stable/blocklist-control-plan
+
+| **优化规则** | **规则名称** | **简介** |
+|--|--|--|
+| 列裁剪 | column_prune | 对于上层算子不需要的列，不在下层算子输出该列，减少计算 |
+| 子查询去关联|decorrelate | 尝试对相关子查询进行改写，将其转换为普通 join 或 aggregation 计算 |
+| 聚合消除 | aggregation_eliminate | 尝试消除执行计划中的某些不必要的聚合算子 |
+| 投影消除 | projection_eliminate | 消除执行计划中不必要的投影算子 |
+| 最大最小消除 | max_min_eliminate | 改写聚合中的 max/min 计算，转化为 `order by` + `limit 1` |
+| 谓词下推 | predicate_push_down | 尝试将执行计划中过滤条件下推到离数据源更近的算子上 |
+| 外连接消除 | outer_join_eliminate | 尝试消除执行计划中不必要的 left join 或者 right join |
+| 分区裁剪 | partition_processor | 将分区表查询改成为用 union all，并裁剪掉不满足过滤条件的分区 |
+| 聚合下推 | aggregation_push_down | 尝试将执行计划中的聚合算子下推到更底层的计算节点 |
+| TopN 下推 | topn_push_down | 尝试将执行计划中的 TopN 算子下推到离数据源更近的算子上 |
+| Join 重排序 | join_reorder | 对多表 join 确定连接顺序 |
+
 # 执行引擎
 
 【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46
