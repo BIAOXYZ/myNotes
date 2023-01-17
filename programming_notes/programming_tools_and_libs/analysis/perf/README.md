@@ -11,7 +11,7 @@ perf: Linux profiling with performance counters https://perf.wiki.kernel.org/ind
 
 perf(1) — Linux manual page https://man7.org/linux/man-pages/man1/perf.1.html
 
-perf Examples https://www.brendangregg.com/perf.html
+【[:star:][`*`]】 perf Examples https://www.brendangregg.com/perf.html  【from： [Overview](https://www.brendangregg.com/overview.html)】
 
 # perf 文章
 

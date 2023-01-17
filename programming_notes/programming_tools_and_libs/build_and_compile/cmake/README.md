@@ -36,6 +36,8 @@ CMake：
 
 # 其他攻略
 
+CMake: How to Inspect and Configure the Compiler https://dane-bulat.medium.com/cmake-how-to-inspect-and-configure-the-compiler-877e6cb0317f
+
 【使用CMake组织C++工程】2：CMake 常用命令和变量 https://elloop.github.io/tools/2016-04-10/learning-cmake-2-commands
 
 使用CMake https://frostime.github.io/2019/03/30/%E4%BD%BF%E7%94%A8CMake/

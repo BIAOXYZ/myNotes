@@ -75,6 +75,31 @@ Difference between CMAKE_PROJECT_NAME and PROJECT_NAME? https://stackoverflow.co
     ```
   * > In the sub-directories, always B is the value for `CMAKE_PROJECT_NAME`.
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## `CMAKE_VERBOSE_MAKEFILE`
+
+`CMAKE_VERBOSE_MAKEFILE` https://cmake.org/cmake/help/latest/variable/CMAKE_VERBOSE_MAKEFILE.html
+
+cmake, print compile/link commands https://stackoverflow.com/questions/3379207/cmake-print-compile-link-commands
+
+cmake使用笔记 https://www.cnblogs.com/ailumiyana/p/10721123.html
+- > **`CMAKE_VERBOSE_MAKEFILE`**
+  * > 显示详细的原始编译信息，主要用于定位一些链接错误，看看库路径什么的是否配置对。
+    ```cmake
+    # print compile info
+    set(CMAKE_VERBOSE_MAKEFILE ON)
+    ```
+  * > 或者执行 `make` 时
+    ```sh
+    $ make VERBOSE=1
+    ```
+    > 或者
+    ```sh
+    $ export VERBOSE=1
+    $ make
+    ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Variables for Languages¶
