@@ -3,6 +3,9 @@
 
 Privacy-Preserving-Machine-Learning-Resources https://github.com/Ye-D/PPML-Resource
 
+一文剖析2022年“全球隐私计算开源现状” https://mp.weixin.qq.com/s/nwqmycUGUycAvmC4heFtgg
+- > （2）面向学术研究的开源项目。这部分的开源项目最多，呈持续繁荣的态势。其中MP-SPDZ支持最为丰富和全面的各种MPC安全协议，同时对通信部分进行了并行优化，提升总体框架效率；MPC4j是面向Java的旨在为研究人员提供MPC相关协议的库, 可对许多主流协议进行公平的性能比较；FudanMPL是国内首个由高校主导的开源的基于安全多方计算的机器学习框架，支持丰富的机器学习模型和场景；EzPC 主要支持神经网络的安全推理，并针对性地进行优化；ABY、ABY3、Cheetah等开源项目主要是针对相关论文的协议实现，通常作为底层协议被集 成在工业应用的开源框架中。
+
 # 抗量子密码学
 
 IBM Cloud 声称量子安全密码学是首创 https://www.ithome.com/0/522/857.htm
