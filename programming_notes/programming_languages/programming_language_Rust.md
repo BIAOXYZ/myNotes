@@ -24,7 +24,8 @@ Rust语言圣经 (The Course) https://github.com/sunface/rust-course
 Rust By Practice https://github.com/sunface/rust-by-practice  https://practice.rs/why-exercise.html || Rust语言实战 https://github.com/sunface/rust-by-practice/blob/master/zh-CN/src/why-exercise.md  https://zh.practice.rs/why-exercise.html
 - > Part of our examples and exercises are borrowed from [Rust By Example](https://github.com/rust-lang/rust-by-example), thanks for your great works!
 
-Rust By Example https://github.com/rust-lang/rust-by-example
+通过例子学 Rust -- Rust By Example 中文版(包含在线代码编辑器) https://github.com/rust-lang-cn/rust-by-example-cn
+- Rust By Example https://github.com/rust-lang/rust-by-example
 
 Rust 程序设计语言 简体中文版 https://kaisery.github.io/trpl-zh-cn/ || https://github.com/KaiserY/trpl-zh-cn
 - > 本书的 HTML 版本可以在 https://doc.rust-lang.org/stable/book/ （[简体中文译本](https://kaisery.github.io/trpl-zh-cn/title-page.html)）在线阅读，离线版则包含在通过 `rustup` 安装的 Rust 中；运行 `rustup docs --book` 可以打开。

@@ -363,6 +363,8 @@ Privacy-Preserving XGBoost Inference https://github.com/awslabs/privacy-preservi
 
 Concrete Numpy is an open-source set of tools which aims to simplify the use of fully homomorphic encryption (FHE) for data scientists. https://github.com/zama-ai/concrete-numpy
 
+MPCFormer: fast, performant, and private transformer inference with MPC. https://github.com/MccRee177/MPCFormer
+
 ## MPC and DB
 
 Conclave https://github.com/multiparty/conclave

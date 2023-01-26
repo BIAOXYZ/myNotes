@@ -34,6 +34,10 @@ IBM 的 POWER 处理器的架构比 X86 强吗？ - 知乎 https://www.zhihu.com
 
 What is the impact of running the CPU at 100% for long periods at a time? [duplicate] https://superuser.com/questions/431309/what-is-the-impact-of-running-the-cpu-at-100-for-long-periods-at-a-time
 
+# CPU原理
+
+【硬件科普】带你认识CPU第05期——CPU是怎么计算乘法的 https://www.bilibili.com/video/BV1AB4y1p7ax
+
 # 多核相关
 
 多核 CPU 和多个 CPU 有何区别？ - 知乎 https://www.zhihu.com/question/20998226
