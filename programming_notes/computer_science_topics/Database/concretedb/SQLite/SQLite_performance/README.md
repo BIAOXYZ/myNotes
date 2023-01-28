@@ -150,6 +150,8 @@ How can I synchronize to disk SQLite database with PRAGMA synchronous=OFF https:
   * > The above is taken from: http://www.sqlite.org/wal.html
   * > If that is not enough, you can still then invoke PRAGMA database.wal_checkpoint; when you want to be certain that your writes are not only written to disk, but also "integrated" to your DB. Check the following for more information: http://www.sqlite.org/pragma.html#pragma_wal_checkpoint
 
+Improve INSERT-per-second performance of SQLite https://stackoverflow.com/questions/1711631/improve-insert-per-second-performance-of-sqlite?rq=1
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # SQLite性能之多线程/多进程

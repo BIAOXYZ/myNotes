@@ -110,6 +110,40 @@ How do I use the SQLite CLI's "--skip 1" option? https://stackoverflow.com/quest
   * > According to the sqlite release notes, the `--skip` option was implemented in `3.32.0`:
   * > SQLite Release `3.32.0` On 2020-05-29 ... 9. Enhancements to the CLI: (a) Add options to the `.import` command: `--csv`, `--ascii`, `--skip`
 
+## 导入数据时只导入部分列（只导入部分行很简单）
+
+Only import two columns from a CSV https://stackoverflow.com/questions/14933691/only-import-two-columns-from-a-csv
+```console
+I have a CSV file with 20 columns and 100s of rows. I want to create an SQLite database using 
+just two of the columns - the date in column 1 and temperature is column 10. I have modified 
+some example code I found, but am not sure how to get it to just use these two columns.
+```
+```py
+import csv, sqlite3
+import sys
+
+filename = sys.argv[-1]
+
+con = sqlite3.connect("my.db")
+con.execute("create table stats(date, temperature)")                               
+cur = con.cursor()
+
+stats = csv.reader(open(filename))
+
+con.executemany("insert into stats(date, temperature) values (?, ?)", stats)
+
+con.commit()
+```
+- https://stackoverflow.com/questions/14933691/only-import-two-columns-from-a-csv/14933711#14933711
+  * >
+    ```py
+    con.executemany("insert into stats(date, temperature) values (?, ?)",
+                    ((rec[0], rec[9]) for rec in stats))
+    ```
+    >> //notes：其实核心就是
+
+Omitting columns when importing CSV into Sqlite https://stackoverflow.com/questions/31822174/omitting-columns-when-importing-csv-into-sqlite
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # PRAGMA 相关命令
