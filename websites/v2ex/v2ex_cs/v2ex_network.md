@@ -1,4 +1,6 @@
 
+实验室想要实现让一台机器只能访问内网不能访问公网，应该用什么技术实现？ https://www.v2ex.com/t/910930
+
 【[:star:][`*`]】 Linux 的防火墙， iptables， firewalld 和 netfilter 这些东西到底是什么关系啊？ https://www.v2ex.com/t/906174
 - > `netfilter`：里世界，实际应用规则的人，但不能直接操作， <br> `iptables`：因为不能直接操作里世界，所以在表世界映射成 iptables 供用户使用， <br> `firewall`、`ufw`：让用户使用更爽的一层 iptables 封装。
   >> 最新的 firewalld 不使用 iptables 了，使用的是 `nftables`。不直接使用 iptables ，使用 firewalld 是因为：firewalld 是有状态的，可以实现有状态运维管理（基于 ansible + git 的代码化运维）
