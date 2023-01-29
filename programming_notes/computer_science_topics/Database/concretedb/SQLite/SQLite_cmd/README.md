@@ -140,7 +140,7 @@ con.commit()
     con.executemany("insert into stats(date, temperature) values (?, ?)",
                     ((rec[0], rec[9]) for rec in stats))
     ```
-    >> //notes：其实核心就是
+    >> //notes：其实核心就是 `csv.reader()` 形成的变量里可以用索引来标识列，于是想要哪列就直接取出来当 `INSERT` 语句的插入值就行。
 
 Omitting columns when importing CSV into Sqlite https://stackoverflow.com/questions/31822174/omitting-columns-when-importing-csv-into-sqlite
 
