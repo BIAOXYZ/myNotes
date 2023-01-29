@@ -263,3 +263,20 @@ python 多线程如何同时读写 sqlite？ https://www.v2ex.com/t/102067
 # SQLite性能之索引
 
 Squeezing Performance from SQLite: Indexes? Indexes! https://medium.com/@JasonWyatt/squeezing-performance-from-sqlite-indexes-indexes-c4e175f3c346
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# SQLite性能之其他
+
+## WITHOUT ROWID table
+>> //notes：如果要用这种表，则必须要显示指定主键。多个列一起做主键可能效果不一定好。PS：多个列上创建主键的语句是：[Sqlite primary key on multiple columns](https://stackoverflow.com/questions/734689/sqlite-primary-key-on-multiple-columns/734704#734704)
+```sql
+CREATE TABLE something (
+  column1, 
+  column2, 
+  column3, 
+  PRIMARY KEY (column1, column2)
+);
+```
+
+Faster SQLite Lookup Using Without Rowid Optimization https://medium.com/swlh/faster-sqlite-lookup-using-without-rowid-optimization-118c89d31b1e
