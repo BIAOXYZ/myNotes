@@ -29,6 +29,17 @@ Python并行编程(Multiprocessing)与实例 http://zhaoxuhui.top/blog/2018/07/1
 
 Python多进程详解 - 叶底藏花的文章 - 知乎 https://zhuanlan.zhihu.com/p/521283266
 
+# `multiprocessing.Queue`
+
+【python】详解multiprocessing多进程-Queue、Pipe进程间通信（三） https://blog.csdn.net/brucewong0516/article/details/85796073
+- > **Queue 用来在多个进程间通信。Queue 有两个方法，get 和 put：
+  * > put：放数据，Queue.put( )默认有block=True和timeout两个参数。当block=True时，写入是阻塞式的，阻塞时间由timeout确定。当队列q被（其他线程）写满后，这段代码就会阻塞，直至其他线程取走数据。Queue.put（）方法加上 block=False 的参数，即可解决这个隐蔽的问题。但要注意，非阻塞方式写队列，当队列满时会抛出 exception Queue.Full 的异常
+  * > get：取数据(默认阻塞),Queue.get([block[, timeout]])获取队列，timeout等待时间
+
+Multiprocessing Queue in Python https://superfastpython.com/multiprocessing-queue-in-python/
+
+How to use multiprocessing queue in Python? https://stackoverflow.com/questions/11515944/how-to-use-multiprocessing-queue-in-python
+
 # 问题
 
 ## `multiprocessing` 里无法使用 lambda 函数或者非 “top-module level” 的函数
