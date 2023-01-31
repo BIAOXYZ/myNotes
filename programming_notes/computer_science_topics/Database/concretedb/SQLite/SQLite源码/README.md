@@ -15,6 +15,17 @@ SQLite入门与分析(三)---内核概述(1) https://www.cnblogs.com/hustcat/arc
 
 How can I analyse a Sqlite query execution? https://stackoverflow.com/questions/1454188/how-can-i-analyse-a-sqlite-query-execution
 
+# SQLite页面结构
+
+SQLite数据库文件格式 - Coldwind的文章 - 知乎 https://zhuanlan.zhihu.com/p/132694244
+
+sqlite3存储分析 https://blog.51cto.com/u_15859002/5821776
+
+sqlite 页面结构分析 https://www.cnblogs.com/chencheng/archive/2012/07/11/2585534.html
+
 # 其他
 
 SQlite源码分析 https://huili.github.io/ || The pages for github.com/huili sqlite 3.7 源代码阅读注释 https://github.com/HuiLi/huili.github.io
+
+《sqlite3.36版本 btree实现》系列文章：
+- sqlite3.36版本 btree实现（一）- 管理页面缓存 https://www.codedump.info/post/20211217-sqlite-btree-1-pagecache/

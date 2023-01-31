@@ -153,6 +153,13 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 深入剖析共识性算法Raft https://mp.weixin.qq.com/s/Fc1mgAsa1aDOpfosUtcJhQ
 
+Raft算法原理 https://www.codedump.info/post/20180921-raft/
+- > **概述**
+  * > 本文是博客解析raft算法及etcd raft库实现的系列三篇文章之一，之所以详细结合etcd实现解析raft算法原理及实现，因为etcd的raft实现是最接近论文本身的，结合论文原理一起阅读十分酸爽。这个系列文章的索引如下：
+  * > 另外，我个人还针对etcd 3.1.10版本的raft相关代码实现做了一些代码的注释笔记，地址在此：[etcd-3.1.10-codedump](https://github.com/lichuang/etcd-3.1.10-codedump)。
+- > **简介**
+  * > 关于Raft算法，有两篇经典的论文，一篇是《In search of an Understandable Consensus Algorithm》，这是作者最开始讲述Raft算法原理的论文，但是这篇论文太简单了，很多算法的细节没有涉及到。更详细的论文是《Consensus: Bridging Theory and Practice》，除了包括第一篇论文的内容以外，还加上了很多细节的描述。在我阅读完etcd raft算法库的实现之后，发现这个库的代码基本就是按照后一篇论文来写的，甚至有部分测试用例的注释里也写明了是针对这篇论文的某一个小节的情况做验证。
+
 ## Raft论文
 
 【[:star:][`*`]】 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
