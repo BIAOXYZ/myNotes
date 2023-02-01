@@ -358,6 +358,24 @@ SQL优化之火山模型、向量化、编译执行 https://blog.csdn.net/u01143
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html
 
+一文带你了解 RTO 和 RPO https://leehao.me/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3-RTO-%E5%92%8C-RPO/ || https://blog.csdn.net/lihao21/article/details/103950110
+- > ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9sZWVoYW8ub3NzLWNuLXNoZW56aGVuLmFsaXl1bmNzLmNvbS8yMDIwLTAxLTEyLTE0MDA0My5qcGc)
+- > **RTO**
+  * > RTO，Recovery time objective，恢复时间目标，是指所能容忍的业务系统停止服务的最长时间，也就是灾难发生到业务系统恢复服务功能所需要的最短时间，即如上图所示，How long to recover? 所标示灾难发生到系统服务恢复的时间。
+  * > 例如，如果 RTO 为 1 小时，这意味着能容忍业务系统停止服务的时间为 1 小时，即虽然业务系统在这 1 小时内不能提供服务，但业务可以正常维持进行。如果业务系统在 1 小时后仍不能恢复，则业务可能会遭受无法弥补的损失。
+- > **RPO**
+  * > RPO，Recovery point objective，恢复点目标，是指业务系统所能容忍的数据丢失量，即如上图所示，How far back? 所标示的灾难发生到最近数据一次备份的时间。
+  * > 例如，业务系统数据在每天零点进行备份，在某天上午 8 点发生事故，导致有 8 个小时间数据丢失。如果原先设置的业务系统 RPO 为 24 小时，则并无大碍，但如果 RPO 为 4 小时，则会导致业务受到影响以致造成损失。
+- > **相同点与不同点**
+  * > RTO 和 RPO 都是使用时间来度量。对于 RTO 时间，是指灾难发生到服务恢复的时间，这个时间也包含了数据恢复的时间。对于 RPO 时间，是指灾难发生到数据上一次备份的时间。
+  * > 虽然 RTO 和 RPO 都使用时间来度量，但是使用它们的目的却不相同。RTO 关注于应用或系统的可用性，RTO 虽然包含数据恢复的时间，但更多地是描述应用停机的时间限制。
+  * > RPO 关注于数据的完整性，描述所能容忍的最大数据丢失限制。业务系统服务不可用会带来经济损失，但如果丢失的是客户交易数据则导致的损失更是灾难性的。
+  * > 在制定企业的容灾计划时，需要考虑 RTO 和 RPO 目标，然而 RTO 和 RPO 目标的成本存在差异。***维护一个高要求的 RTO 目标的成本可能比 RPO 目标的成本要高，这是因为 RTO 涉及到整个业务基础架构，而不仅仅是数据***。
+  * > 要实现 RPO 目标，只需要以正确的时间间隔执行数据备份，数据备份可以很容易地自动化实现，因此自动化的 RPO 策略很容易实现。另一方面，由于 RTO 涉及恢复所有 IT 操作，因此完全自动化的 RTO 策略实现更复杂。
+
+携程DBA负责人俞榕刚：OceanBase在携程的落地和实践 https://www.163.com/dy/article/GULGPE7P0552THQJ.html
+- > OceanBase 使用优化的 paxos 协议结合物理日志复制强保证多数派的数据一致性，也就是三副本情况下强保证至少两个副本数据一致性，使用 OceanBase 保证了 `RPO=0`，实际测试下来`RTO＜30s`，满足携程金融业务的数据一致性的要求。
+
 # OLAP
 
 列存（Column-Oriented）数据库学习笔记：内存数据压缩 https://www.jianshu.com/p/2e169006798f

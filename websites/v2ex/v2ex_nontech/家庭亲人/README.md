@@ -1,6 +1,4 @@
 
-生娃了，大家有什么想问的吗 https://www.v2ex.com/t/885675
-
 在临终关怀医院呆了 20 天，深知照顾老人的不容易 https://www.v2ex.com/t/885433
 
 肺癌晚期能活多久？ https://www.v2ex.com/t/881757
@@ -22,3 +20,11 @@
 # 结婚
 
 结了婚的老哥们进来聊聊呗 https://www.v2ex.com/t/906551
+
+# 生子
+
+2022 年 12 月的女宝宝，赐教各位 V 友 https://www.v2ex.com/t/911981
+- > http://xiaosang.net/gushi_namer/
+- > 忆初,英文名 overflow
+
+生娃了，大家有什么想问的吗 https://www.v2ex.com/t/885675
