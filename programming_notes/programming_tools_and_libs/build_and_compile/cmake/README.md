@@ -110,7 +110,24 @@ What is the difference between include_directories and target_include_directorie
 
 cmake 之 PUBLIC|PRIVATE|INTERFACE 关键字 https://ravenxrz.ink/archives/e40194d1.html
 
-cmake：`target_**` 中的 PUBLIC，PRIVATE，INTERFACE - 大川搬砖的文章 - 知乎 https://zhuanlan.zhihu.com/p/82244559
+【[:star:][`*`]】 cmake：`target_**` 中的 PUBLIC，PRIVATE，INTERFACE - 大川搬砖的文章 - 知乎 https://zhuanlan.zhihu.com/p/82244559
+- > **2. 指令讲解**
+  * > 测试工程目录结构：
+- > **3. `include_directories(dir)`**
+  * > `target_include_directories()` 的功能完全可以使用 `include_directories()` 实现。但是我还是建议使用 `target_include_directories()`。为什么？保持清晰！
+  * > `include_directories(header-dir)` 是一个全局包含，向下传递。什么意思呢？就是说如果某个目录的 `CMakeLists.txt` 中使用了该指令，其下所有的子目录默认也包含了 `header-dir` 目录。
+  * > 上述例子中，如果在顶层的 `cmake-test/CMakeLists.txt` 中加入：
+    ```cmake
+    include_directories(hello-world)
+    include_directories(hello-world/hello)
+    include_directories(hello-world/world)
+    ```
+    > 那么整个工程的源文件在编译时都会增加：
+    ```console
+    -I hello-world -I hello-world/hello -I hello-world/world ...
+    ```
+    > 各级子目录中无需使用 `target_include_directories()` 或者 `include_directories()` 了。***如果此时查看详细的编译过程（`make VERBOSE=1`）就会发现编译过程是一大坨，很不舒服***。
+  * > 当然了，***在最终子目录的 `CMakeLists.txt` 文件中，使用 `include_directories()` 和 `target_include_directories()` 的效果是相同的***。
 
 CMake target_include_directories meaning of scope https://stackoverflow.com/questions/26243169/cmake-target-include-directories-meaning-of-scope
 - https://stackoverflow.com/questions/26243169/cmake-target-include-directories-meaning-of-scope/28305481#28305481
