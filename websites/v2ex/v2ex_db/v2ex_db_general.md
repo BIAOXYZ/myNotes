@@ -1,4 +1,29 @@
 
+【[:star:][`*`]】 数据库/存储学习路径推荐 https://www.v2ex.com/t/913147
+```console
+必看课程
+  - CMU-15445 和 CMU-15721 https://www.youtube.com/@CMUDatabaseGroup
+  - 这两个不用多说，经典的数据库入门教程，由数据库的大佬 Andy Pavlo 亲自授课。可以了解到数据库的基本概念，例如存储、BufferPool 管理、索引、优化器、执行器、事务、MVCC 等。
+  - 15445 的实验部分是基于其开源的教学项目 bustub，补全其中几个重要的部分，这个项目是 C++ 写的，如果对 C++ 不熟悉的话，那么我觉得实验部分可以暂时跳过，有多余的精力再来搞，毕竟我们是来学数据库的，而不是学 C++ 的。
+
+存储小项目
+  - 学习教学课程的同时，顺便可以了解下存储方面的内容，例如 B+ 树，bitcask ，LSM Tree ，以及 LSM Tree 的优化 Wisckey ，不用专门去学，找几篇文章看看，了解下基本概念，或者直接看看论文。
+  - 然后自己去实践写一个，例如写一个简单的 bitcask 、B+ 树存储引擎，或者 LSM 存储引擎。
+  - 之所以推荐写存储类的小项目，主要是因为存储层的 KV 一般比较好实现，同时又能够了解到一些数据库的基本设计理念。
+  - 这里推荐下我的两个项目：
+      * https://github.com/flower-corp/rosedb
+      * https://github.com/flower-corp/lotusdb
+
+事务 /MVCC
+
+分布式
+  - 这部分内容首推 Mit.6824 ，分布式系统入门的首选课程。 https://www.youtube.com/@6.824/videos 有精力的话可以跟着把实验部分做完。
+  - 然后可以挑战下 PingCAP 的 talent plan 中的 TinyKV ，它和 6824 的实验部分比较类似，实现一个基于 raft 的分布式 KV 存储系统，难度比较大，但是代码框架已经搭好了，只需要往里面添加内容即可，测试也比较完备。 https://github.com/talent-plan/tinykv
+  - 如果还有时间的话，可以再上一个台阶，挑战下 PingCAP talent plan 的 TinySQL 项目，主要是实现一个简单的分布式数据库项目，有完备的文字教程 https://github.com/talent-plan/tinysql
+```
+- > 分享一本关于数据库事务的书，Jim Gray 的《 Transaction Processing: Concepts and Techniques 》
+- > 另外，TiDB 的这个整理也挺好的 https://github.com/pingcap/awesome-database-learning <br> 以及里面提到的一些书： https://drive.google.com/drive/folders/1x7SaYLmcdQb3kkk0_ZMIHDgDDE-YwNge?usp=sharing
+
 【[:star:][`*`]】 《DDIA 逐章精读》小册和逐章分享 https://www.v2ex.com/t/876038
 - > 在理解[《 Designing Data-Intensive Applications 》英文原文](https://dataintensive.net/)的基础上，结合我的几年存储和数据库开发工作经验，进行一些相应的解读和扩展，并参考 github 上 [Vonng 的中文翻译版](https://github.com/Vonng/ddia)，对每一章用中文逐句翻译、梳理、重新组织，作为每次分享的文字稿，在此 集结为一本开源小册：[《DDIA 逐章精读》](https://ddia.qtmuniao.com/)，希望可以对喜欢分布式系统、数据系统、系统设计的同学有所帮助. 水平所限，精力所囿，难免疏漏，如发现有任何有误之处，欢迎在 [repo](https://github.com/DistSysCorp/ddia) 中提 issue 和 PR ，这里是每次分享的[录屏](https://space.bilibili.com/30933812/channel/collectiondetail?sid=240551)。
 
