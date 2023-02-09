@@ -1,4 +1,7 @@
 
+当我拿到一台全新 Linux 服务器我会做什么 https://www.v2ex.com/t/913860
+- > 如果是局域网，那么我会装上 `avahi` ，这样我可以用 `$hostname.local` 域名直接访问
+
 Linux 系统上如何设置让某一个用户创建的进程几乎完全不影响到系统上其它用户进程的调度？ https://www.v2ex.com/t/885004
 
 inode 没满,但是会随机报磁盘空间不足是啥问题? https://www.v2ex.com/t/833195
