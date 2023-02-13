@@ -31,3 +31,10 @@ NDS怀旧游戏专辑（不定期更新） https://www.bilibili.com/video/BV1Qx4
 PS怀旧游戏专辑（不定期更新） https://www.bilibili.com/video/BV11x41157L1
 
 街机怀旧游戏专辑（不定期更新） https://www.bilibili.com/video/BV1Dx411V7bt
+
+# 知识类
+
+经典街机游戏中费血技能盘点 https://www.ithome.com/0/672/601.htm || 经典街机游戏中，那些不需要本钱的费血技能 https://mp.weixin.qq.com/s/CiOOEavhruXGOrSPtGuUIQ
+- > **1.免费费血技能、打箱子都不费血**
+- > **2.免费费血技能，打箱子掉血**
+- > **3.需要本钱的费血技能**
