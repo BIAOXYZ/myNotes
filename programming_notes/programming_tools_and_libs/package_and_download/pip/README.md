@@ -113,3 +113,15 @@ Python 打包自己的库到 PYPI （可pip安装） - 霾大的文章 - 知乎 
 
 - pip报错“subprocess.CalledProcessError...lsb_release” - 老K的文章 - 知乎 https://zhuanlan.zhihu.com/p/150492500
 - ubuntu 中pip 安装软件报错：“Command 'lsb_release -a' returned non-zero exit status 1.” https://www.jianshu.com/p/3a2877edebe8
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# pip小技巧
+
+## 直接在python脚本里安装需要的包
+
+Installing python module within code https://stackoverflow.com/questions/12332975/installing-python-module-within-code
+
+How to install a missing python package from inside the script that needs it? https://stackoverflow.com/questions/17271444/how-to-install-a-missing-python-package-from-inside-the-script-that-needs-it
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

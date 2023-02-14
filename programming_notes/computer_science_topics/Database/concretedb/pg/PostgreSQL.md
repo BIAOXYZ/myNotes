@@ -194,6 +194,14 @@ http://www.postgres.cn/news/viewone/1/241
 
 一文搞懂PostgreSQL中所有的锁 https://www.modb.pro/db/70021
 
+## PG用户和角色
+
+Managing PostgreSQL users and roles https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/
+
+PostgreSQL roles versus users, grant permissions https://dba.stackexchange.com/questions/82271/postgresql-roles-versus-users-grant-permissions
+- https://dba.stackexchange.com/questions/82271/postgresql-roles-versus-users-grant-permissions/82277#82277
+  * > A role is an entity that can function as a user and/or as a group. A role WITH LOGIN can be used as a user, i.e. you can log in with it. Any role can function as a group, including roles that you can also log in as. So "user" and "group" are essentially terms that indicate the intended usage of a role, there's no real distinction between them. Even in the PostgreSQL flavour of SQL the two are used more or less as synonyms. For example, the documentation on CREATE USER says: **`CREATE USER is now an alias for CREATE ROLE.`**
+
 ## PG BUGs
 
 https://stackoverflow.com/questions/25071360/row-number-0-is-out-of-range-0-1-returned-when-using-setsinglerowmode-libpq

@@ -37,3 +37,7 @@ unittest --- 单元测试框架 https://docs.python.org/zh-cn/3/library/unittest
 - > **复用已有的测试代码¶**
 
 # 其他
+
+Python unittest - unit test example https://www.digitalocean.com/community/tutorials/python-unittest-unit-test-example
+
+单元测试 https://www.liaoxuefeng.com/wiki/1016959663602400/1017604210683936
