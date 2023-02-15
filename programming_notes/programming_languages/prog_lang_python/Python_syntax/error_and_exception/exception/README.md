@@ -18,7 +18,7 @@
 
 # 其他
 
-~~Python Exceptions: An Introduction https://realpython.com/python-exceptions/~~  -->  参加 realpython 部分的笔记吧。
+~~Python Exceptions: An Introduction https://realpython.com/python-exceptions/~~  -->  参见 realpython 部分的笔记吧。
 
 https://www.cnblogs.com/IPrograming/p/Python_error_handler.html
 
