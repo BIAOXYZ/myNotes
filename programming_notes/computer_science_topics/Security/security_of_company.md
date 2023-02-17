@@ -316,6 +316,8 @@ ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
 
 安全多方计算基础——ABY框架（Arithmetic部分） https://blog.csdn.net/qq_37963864/article/details/120169331
 
+隐私计算框架之ABY开发指南(一) - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/491626700
+
 ABY开发指南(三) - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/495374615
 
 ## MPyC

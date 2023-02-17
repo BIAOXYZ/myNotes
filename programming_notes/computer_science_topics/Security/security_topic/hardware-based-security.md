@@ -37,6 +37,9 @@ CPU 有个禁区，内核权限也无法进入！ https://www.ithome.com/0/647/8
   * > 问题好像在Win 11系统或者英特尔Alder Lake上，SGX支持被停用了。 <br> CyberLink：想看 4K 蓝光光碟，请不要使用英特尔 11/12 代酷睿处理器 https://www.ithome.com/0/598/773.htm
     >> //notes：这是官方打自己脸吗？- -    
 
+英特尔修补大量 SGX 安全漏洞，请尽快更新补丁 https://www.ithome.com/0/673/952.htm
+- > 目前 SGX 已进入它生命周期中的第八个年头，虽然一直“漏洞百出”，但实际上该工具已在第 11 代和第 12 代酷睿等消费级处理器中弃用。
+
 ## Occlum (蚂蚁金服)
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum || https://occlum.io/
