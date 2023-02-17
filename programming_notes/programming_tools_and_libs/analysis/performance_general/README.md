@@ -40,3 +40,10 @@ Visual comparison chart: http://i.imgur.com/k0t1e.png
 # 编程语言性能对比
 
 performance of hello world in c vs c++ https://github.com/smason/lemire-hello
+
+我们选择了Rust，因为它太快了 https://mp.weixin.qq.com/s/YdxNbueReCMAAnEdj-LKUQ
+- > 正如你在上图中看到的，Rust在性能方面的表现几乎与C和C++持平，而CPython（我们大多数人所使用的）尽管使用量很大，但仅比最后一名好上一些。你可以点击这个GitHub上的项目`[1]`来了解更多，结果会不时地更新。
+- > 你可能记得以下这个表格，来自于Pereira等人发表的一篇论文`[2]`。
+- > 相关链接：
+  * > 1. https://niklas-heer.github.io/speed-comparison/
+  * > 2. https://repositorium.uminho.pt/bitstream/1822/69044/1/paper.pdf
