@@ -38,6 +38,8 @@
 
 # 生子
 
+孩子数学考了 85 分 哎 怎样才能提高孩子的数学水平啊 https://www.v2ex.com/t/916488
+
 2022 年 12 月的女宝宝，赐教各位 V 友 https://www.v2ex.com/t/911981
 - > http://xiaosang.net/gushi_namer/
 - > 忆初,英文名 overflow
