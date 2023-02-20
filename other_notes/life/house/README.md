@@ -21,6 +21,11 @@
 “撸房价小助手”使用指南 https://mp.weixin.qq.com/s/YGSPH-qlned6Yu3Uq5JqoQ
 - > “撸房价小助手”是撸房价推出的微信比价机器人 <br> 打开手机贝壳、链家......分享二手房源给机器人 <br> 即可查询二手房历史调价记录
 
+全国二手房数据可视化分析 https://www.ershoufangdata.com/
+- 富力城A区 https://www.ershoufangdata.com/map?city=bj&community=%E5%AF%8C%E5%8A%9B%E5%9F%8EA%E5%8C%BA
+
+几套房 https://jitaofang.com/  【这个可以查经纪人的成交数据】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 2021北京首批集中供地地图 https://m.leju.com/house/bj/map/
