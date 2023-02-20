@@ -1,4 +1,7 @@
 
+《这一次， Python 真的有望告别 GIL 锁了？》 https://www.v2ex.com/t/917597
+- > 如果有人是 pytorch 的重度用户，看这篇文章可以理解下 nogil 能有什么用。 <br> 为什么 Python 的 GIL 问题一直让人诟病，Python 社区却不解决？ - Yuxin Wu 的回答 - 知乎 https://www.zhihu.com/question/323812020/answer/2217457493
+
 如何用 Python 实现类似 Linux 的 watch 功能并且保证刷新时不闪烁 https://www.v2ex.com/t/903670
 ```py
 # 现在的实现思路是：
