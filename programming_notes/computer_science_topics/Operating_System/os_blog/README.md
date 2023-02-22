@@ -1,6 +1,18 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+Linux 中 CPU 利用率是如何算出来的 https://www.ithome.com/0/675/129.htm || https://mp.weixin.qq.com/s/40KWGKNBoa35s533YGWYIQ
+- > **二、top 命令使用数据在哪儿**
+  * > 接下来我们把每一步都展开来详细看看。
+  * > 通过使用 `strace` 跟踪 `top` 命令的各种系统调用，可以看的到它对该文件的调用。
+    ```sh
+    # strace top
+
+    openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 4
+    openat(AT_FDCWD, "/proc/2351514/stat", O_RDONLY) = 8
+    openat(AT_FDCWD, "/proc/2393539/stat", O_RDONLY) = 8
+    ```
+
 Linux 中的负载高低和 CPU 开销并不完全对应 https://www.ithome.com/0/667/128.htm || https://mp.weixin.qq.com/s/1Pl4tT_Nq-fEZrtRpILiig
 - > **一、理解负载查看过程**
   * > 我们经常用 `top` 命令查看 Linux 系统的负载情况。一个典型的 `top` 命令输出的负载如下所示。

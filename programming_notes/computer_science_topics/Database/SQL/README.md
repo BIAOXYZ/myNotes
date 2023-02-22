@@ -36,6 +36,8 @@ What are "SQL-Hints"? https://stackoverflow.com/questions/262004/what-are-sql-hi
 
 # Join
 
+An overview of SQL Join types with examples https://blog.quest.com/an-overview-of-sql-join-types-with-examples/
+
 【[:star:][`*`]】 What is the difference between "INNER JOIN" and "OUTER JOIN"? https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
 - https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join/38578#38578
 

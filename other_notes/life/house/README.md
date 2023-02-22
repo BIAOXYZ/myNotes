@@ -131,6 +131,14 @@
 
 北京，每月2万工资可以贷款最多多少？ https://bj.lianjia.com/wenda/xiangqing/296036.html || https://bj.ke.com/wenda/xiangqing/296036.html
 
+情侣关系可以共同贷款买房吗 https://www.loupan.com/bk/105589.html
+
+情侣双方计划在北京共同贷款购房，怎样操作是最优解？ - 知乎 https://www.zhihu.com/question/411320266
+
+买房可以两个人贷吗? - 北京贷款行家的回答 - 知乎 https://www.zhihu.com/question/490662514/answer/2162223433
+
+未婚情侣可共同申请公积金贷款买房吗？ https://bj.lianjia.com/wenda/xiangqing/220332.html
+
 ## 各种房价之外的费用（比如土地出让金，还不少）
 
 北京买房税费全知道 - 房产的那些事儿的文章 - 知乎 https://zhuanlan.zhihu.com/p/340638277
