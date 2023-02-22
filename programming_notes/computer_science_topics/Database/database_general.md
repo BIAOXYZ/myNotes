@@ -330,6 +330,8 @@ ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215
 | TopN 下推 | topn_push_down | 尝试将执行计划中的 TopN 算子下推到离数据源更近的算子上 |
 | Join 重排序 | join_reorder | 对多表 join 确定连接顺序 |
 
+StarRocks 技术内幕 | Join 查询优化 - StarRocks的文章 - 知乎 https://zhuanlan.zhihu.com/p/580164199
+
 # 执行引擎
 
 【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46

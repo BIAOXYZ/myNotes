@@ -54,6 +54,10 @@ Why select from multiple tables without join https://stackoverflow.com/questions
 
 Why isn't SQL ANSI-92 standard better adopted over ANSI-89? https://stackoverflow.com/questions/334201/why-isnt-sql-ansi-92-standard-better-adopted-over-ansi-89
 
+## join顺序相关
+
+Are left outer joins associative? https://stackoverflow.com/questions/20022196/are-left-outer-joins-associative
+
 # Limit
 
 SQL LIMIT https://www.sqltutorial.org/sql-limit/
