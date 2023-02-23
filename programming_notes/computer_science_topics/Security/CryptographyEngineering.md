@@ -89,6 +89,10 @@ Ed25519: high-speed high-security signatures https://ed25519.cr.yp.to/
 
 ge25519 https://pkg.go.dev/github.com/oasisprotocol/ed25519/internal/ge25519
 
+## Ristretto255
+
+Replacing Curve25519 with Ristretto255 https://crypto.stackexchange.com/questions/101373/replacing-curve25519-with-ristretto255
+
 # MPC
 
 安全多方计算（MPC）从入门到精通 https://blog.csdn.net/juzhenyuan/article/category/7777533
