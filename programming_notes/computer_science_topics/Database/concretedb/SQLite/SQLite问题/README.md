@@ -65,6 +65,28 @@ $ file /usr/bin/sqlite3
 /usr/bin/sqlite3: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f8a2bb2b99fe8eae437455d74347d1750d7018dc, for GNU/Linux 3.2.0, stripped
 ```
 
+### 老版本 sqlite3 二进制不支持 right join 和 (full) outer join
+
+```sql
+sqlite> select * from ta left join tb on ta.id = tb.id left join tc on ta.id = tc.id;
+1|11|1|111|1|1111
+1|11|1|111|1|1111
+1|11|1|111|1|1111
+1|11|1|111|1|1111
+2|22|2|222|2|2222
+2|22|2|222|2|2222
+2|22|2|222|2|2222
+2|22|2|222|2|2222
+3|33|||3|3333
+sqlite> select * from ta left join (tb outer join tc on tb.id = tc.id) as bc on ta.id = tc.id;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
+sqlite> select * from ta left join (tb full outer join tc on tb.id = tc.id) as bc on ta.id = tc.id;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
+sqlite>
+```
+
+FULL OUTER JOIN with SQLite https://stackoverflow.com/questions/1923259/full-outer-join-with-sqlite  【SQLite 3.39.0 支持了，但是之前只能自己模拟】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ### `ImportError: /usr/local/lib/python3.7/_sqlite3.so: undefined symbol: _Py_ZeroStruct`
