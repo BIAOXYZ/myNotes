@@ -66,7 +66,7 @@ How to install pip with Python 3? https://stackoverflow.com/questions/6587507/ho
 ## pip安装指定版本的软件
 
 ```sh
-sudo pip install cmake=3.21.1
+sudo pip install cmake==3.21.1
 
 # 或者加上 -U，应该是表示已有的话就升级。
 sudo pip install -U cmake==xxx

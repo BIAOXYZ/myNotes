@@ -62,6 +62,8 @@ apt-key finger              - 列出所有验证指纹
 apt-key adv                 - 设置key的高级配置, Pass advanced options to gpg
 ```
 
+How To Delete A Repository And GPG Key In Ubuntu https://ostechnix.com/how-to-delete-a-repository-and-gpg-key-in-ubuntu/
+
 # apt源相关
 
 ## apt换源/增加源
