@@ -11,3 +11,5 @@ Learn C++ With Me #16 - Tuples https://www.youtube.com/watch?v=T9-agjKW4PQ
 >> //notes：`00:10--00:20` 这个博主（`Tech With Tim`）看起来就是个老美，所以肯定是 native speaking 的，但是他说他也不知道 tuple 正确的读音到底是哪一个。。。
 
 How to pronounce "tuple"? https://english.stackexchange.com/questions/12980/how-to-pronounce-tuple
+
+Pronunciation of "quasi-" https://english.stackexchange.com/questions/70664/pronunciation-of-quasi
