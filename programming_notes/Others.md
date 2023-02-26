@@ -25,10 +25,6 @@
   - tauri 主进程是 rust 写的，对于 CPU 密集的场景也没有性能问题
   ```
 
-# Vue.js
-
-如何快速上手 vue？ https://www.v2ex.com/t/837468
-
 # 其他
 
 Python web UI 也来了 https://www.v2ex.com/t/897007
