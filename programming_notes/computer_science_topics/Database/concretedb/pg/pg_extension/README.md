@@ -101,6 +101,7 @@ PgSQL · 特性分析 · Plan Hint http://mysql.taobao.org/monthly/2016/01/09/
 PostgreSQL SQL HINT的使用(pg_hint_plan) https://billtian.github.io/digoal.blog/2016/02/03/01.html
 
 PostgresML https://github.com/postgresml/postgresml
+- > PostgresML is an end-to-end machine learning system. It enables you to train models and make online predictions using only SQL, without your data ever leaving your favorite database.
 
 pgAudit -- Open Source PostgreSQL Audit Logging https://github.com/pgaudit/pgaudit
 
