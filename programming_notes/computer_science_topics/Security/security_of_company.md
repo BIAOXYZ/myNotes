@@ -388,3 +388,5 @@ SMCQL : Secure Querying for Federated Databases https://github.com/smcql/smcql
 
 Secrecy: Secure collaborative analytics on secret-shared data https://arxiv.org/abs/2102.01048
 - Secrecy: Secure collaborative analytics on secret-shared data #42 https://github.com/pentium3/sys_reading/issues/42
+
+Cerebro: A Platform for Multi-Party Cryptographic Collaborative Learning https://www.usenix.org/conference/usenixsecurity21/presentation/zheng
