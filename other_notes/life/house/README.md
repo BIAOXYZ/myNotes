@@ -139,6 +139,10 @@
 
 未婚情侣可共同申请公积金贷款买房吗？ https://bj.lianjia.com/wenda/xiangqing/220332.html
 
+## 次要贷款
+
+欲贷款25w用于装修，房抵贷、装修贷、信用贷哪种贷款比较好？ - 知乎 https://www.zhihu.com/question/493750738
+
 ## 各种房价之外的费用（比如土地出让金，还不少）
 
 北京买房税费全知道 - 房产的那些事儿的文章 - 知乎 https://zhuanlan.zhihu.com/p/340638277

@@ -66,3 +66,12 @@ Ubuntu使用apt安装的mysql用户名密码及修改方法(转) https://blog.cs
     ```
 
 Ubuntu 18.04 安装mysql 查看默认密码以及修改密码 https://blog.csdn.net/qq_41251963/article/details/117264959
+
+# 结果列垂直（以竖行）显示，类似 `psql` 的 `\x`
+
+mysql查询结果格式化输出 https://www.cnblogs.com/panbin2006/p/16534702.html
+- > **使用`\G`输出结果按行垂直显示结果**
+  * > 当使用命令 select 结果，如果表属性特别多的时候，查看起来非常难受，在 select 语句后使用`\G`(必须大写)，可以让结果按行垂直显示：
+    ```sql
+    select * from user \G
+    ```
