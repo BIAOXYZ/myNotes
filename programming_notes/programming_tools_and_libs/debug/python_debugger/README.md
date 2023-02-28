@@ -72,6 +72,33 @@ How to log a variable's name and value? https://stackoverflow.com/questions/1931
 - Python之sys._getframe() https://www.cnblogs.com/hester/articles/4767152.html
 - Python sys._getframe() Examples https://www.programcreek.com/python/example/283/sys._getframe
 
+Python's __FILE__, __FUNC__ and __LINE__ - 李辉的文章 - 知乎 https://zhuanlan.zhihu.com/p/58840146
+>> //notes：书中代码个人实战（效果一般吧，函数名打印得不好，回头改进一个）：
+  ```py
+  def file_func_line():
+      """Return the line number from which this functions got called.
+      http://stackoverflow.com/q/6810999"""
+      import inspect
+      frame = inspect.stack()[1][0]
+      info = inspect.getframeinfo(frame)
+      return inspect.__file__, info.function, info.lineno
+
+  print(file_func_line())
+
+  for i in range(5):
+      print(file_func_line())
+  ```
+  ```console
+  ('/usr/local/lib/python3.7/inspect.py', '<module>', 9)
+  ('/usr/local/lib/python3.7/inspect.py', '<module>', 12)
+  ('/usr/local/lib/python3.7/inspect.py', '<module>', 12)
+  ('/usr/local/lib/python3.7/inspect.py', '<module>', 12)
+  ('/usr/local/lib/python3.7/inspect.py', '<module>', 12)
+  ('/usr/local/lib/python3.7/inspect.py', '<module>', 12)
+  ```
+
+Python equivalent to C++ __LINE__ https://stackoverflow.com/questions/56762491/python-equivalent-to-c-line
+
 # 其他
 
 Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-boss/
