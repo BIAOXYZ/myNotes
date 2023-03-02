@@ -11,6 +11,12 @@ Some materials about in-place POD resource update:
 
 设置 Pod CPU 和内存限制 https://kubernetes.io/zh/docs/tasks/administer-cluster/cpu-memory-limit/
 
+Pod 原地垂直伸缩 - 一个四年的KEP和两年的PR https://mp.weixin.qq.com/s/Vw3e0dWwqZGpO2pzKvdmKA
+- 回复里的：
+  * > 喜大普奔，19年腾讯云讲降本增效的时候就期待这个功能，比较神奇的事昨天还在内部讨论腾讯云上这个Pod 原地升降配功能如果能开源就好了，今天就看到了这篇文章
+  * > kata container 是不是之前就做过类似的工作哦
+    >> kata没怎么了解
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # k8s + jenkins (+其他) 直接将github项目编译构建完成发布

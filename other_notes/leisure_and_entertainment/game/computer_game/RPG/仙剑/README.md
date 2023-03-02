@@ -43,3 +43,7 @@
 仙剑98速通 136.02 https://www.bilibili.com/video/BV1aT411M7C8
 
 仙剑98柔情版：游戏速通只需2个多小时，看完比赛感觉自己白玩了 https://www.163.com/dy/article/GSTR2H9P0552LX6A.html
+
+# 仙剑Bug
+
+盘点《仙剑奇侠传》中打破常规的邪派玩法 https://www.ithome.com/0/676/738.htm || 《仙剑奇侠传》打破常规的邪派玩法，NPC 和 BOSS 都给整崩溃了 https://mp.weixin.qq.com/s/8zuLpi1gpR8R20VZad-hHw
