@@ -83,6 +83,8 @@ $top
 在top基本视图中，按键盘数字“1”，可监控每个逻辑CPU的状况；
 ```
 
+top命令输出详解 https://www.cnblogs.com/makelu/p/11169270.html
+
 # 个人实战
 
 ## top后按1显示多核cpu各个核心负载情况的信息

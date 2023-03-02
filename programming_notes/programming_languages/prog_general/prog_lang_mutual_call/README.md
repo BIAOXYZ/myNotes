@@ -15,6 +15,8 @@ python 调用 C++ code https://blog.csdn.net/abcjennifer/article/details/4937430
 
 C++调用python https://blog.csdn.net/abcjennifer/article/details/49377123
 
+Write a C++ extension module for Python https://opensource.com/article/22/11/extend-c-python
+
 # C++ & Go
 
 A simple example demonstrating how to call C++ from Go https://github.com/arrieta/golang-cpp-basic-example
