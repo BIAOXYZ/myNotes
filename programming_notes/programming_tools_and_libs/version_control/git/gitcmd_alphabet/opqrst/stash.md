@@ -139,3 +139,34 @@ How to see stashed changes using git stash https://howto.lintel.in/how-to-see-st
     * 5002d47 our new homepage
     ```
   * > Depending on what you stashed, a single `git stash` operation creates either two or three new commits. The commits in the diagram above are:
+
+A practical guide to using the git stash command https://opensource.com/article/21/4/git-stash
+- > **Checking out to a new branch**
+  * > You might come across a situation where the changes in a branch and your stash diverge, causing a conflict when you attempt to reapply the stash. A clean fix for this is to use the command `git stash branch <new_branch_name stash_id>`, which creates a new branch based on the commit the stash was created from and pops the stashed changes to it:
+    ```console
+    $ git stash branch test_2 stash@{0}
+    Switched to a new branch 'test_2'
+    On branch test_2
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+    modified: .graphqlrc.yml
+    modified: generated-frontend.ts
+    modified: package.json
+    no changes added to commit (use "git add" and/or "git commit -a")
+    Dropped stash@{0} (fe4bf8f79175b8fbd3df3c4558249834ecb75cd1)
+    ```
+- > **Stashing without disturbing the stash reflog**
+  * > In rare cases, you might need to create a stash while keeping the stash reference log (reflog) intact. These cases might arise when you need a script to stash as an implementation detail. This is achieved by the `git stash create` command; it creates a stash entry and returns its object name without pushing it to the stash reflog:
+    ```sh
+    $ git stash create "sample stash" 
+    63a711cd3c7f8047662007490723e26ae9d4acf9
+    ```
+  * > Sometimes, you might decide to push the stash entry created via `git stash create` to the stash reflog:
+    ```sh
+    $ git stash store -m "sample stash testing.." "63a711cd3c7f8047662007490723e26ae9d4acf9"
+    $ git stash list
+    stash @{0}: sample stash testing..
+    ```
+
+How would I extract a single file (or changes to a file) from a git stash? https://stackoverflow.com/questions/1105253/how-would-i-extract-a-single-file-or-changes-to-a-file-from-a-git-stash
