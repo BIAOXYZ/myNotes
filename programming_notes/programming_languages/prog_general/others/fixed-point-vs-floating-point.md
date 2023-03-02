@@ -1,4 +1,9 @@
 
+`15. 浮点算术：争议和限制` https://docs.python.org/zh-cn/3.10/tutorial/floatingpoint.html
+
+为什么 0.1 + 0.2 = 0.300000004 https://draveness.me/whys-the-design-floating-point-arithmetic/
+- > 其实有上述问题的不止 JavaScript 一门编程语言，几乎所有现代的编程语言都会遇到上述问题，包括 Java、Ruby、Python、Swift 和 Go 等等，你可以在 https://0.30000000000000004.com/ 中找到常见的编程语言在计算上述表达式的结果3。这不是因为它们在计算时出现了错误，而是因为浮点数计算标准的要求。
+
 Fixed-point arithmetic https://en.wikipedia.org/wiki/Fixed-point_arithmetic || 定点数运算 https://zh.wikipedia.org/wiki/%E5%AE%9A%E9%BB%9E%E6%95%B8%E9%81%8B%E7%AE%97
 - > 在电脑中，定点数（英语：fixed-point number）是指用固定整数字数表达分数的格式，属于实数数据类型中一种。***例如美元常会表示到二位小数，以分来表示，即为一种定点数***。有时定点数也会要求要有固定的整数字数。定点数与更复杂的浮点数相对。
 
