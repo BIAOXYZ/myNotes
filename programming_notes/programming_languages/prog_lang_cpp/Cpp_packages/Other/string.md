@@ -106,13 +106,32 @@ c++截取部分字符串(类似python的切片) https://blog.csdn.net/qq_3597544
   * > 参数1：pos是必填参数
   * > 参数2：n是可参数，***表示取多少个字符，不填表示截取到末尾***
   * > 该函数功能为：返回从pos开始的n个字符组成的字符串，原字符串不被改变
+    ```cpp
+    // 原文代码不对，这个是改过的
+    #include <iostream>
+    #include <string>
+    using namespace std;
+    int main()
+    {
+        const string image_name = "0170.bmp";
+        string slice = image_name.substr(0, 4);
+        cout << slice << endl;
+        return 0;
+    }
+    ```
+    ```console
+    0170
+    ```
 
 C++字符串分割方法总结 https://www.jianshu.com/p/5876a9f49413
 
 在 C++ 中分割字符串 https://liam.page/2017/08/03/split-a-string-in-Cpp/
 
+C++ string类（C++字符串）完全攻略 http://c.biancheng.net/view/400.html
+
 **LeetCode相关题目**：
 - `2042. 检查句子中的数字是否递增` https://leetcode.cn/problems/check-if-numbers-are-ascending-in-a-sentence/
+- `1487. 保证文件名唯一` https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1401-1600/001487--weekly194_2/tran/194_2.cpp || https://leetcode.cn/submissions/detail/408740312/
 
 # 字符串拼接
 
