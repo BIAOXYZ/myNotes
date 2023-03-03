@@ -7,6 +7,8 @@
 
 re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || re — Regular expression operations https://docs.python.org/3/library/re.html
 
+正则表达式HOWTO https://docs.python.org/zh-cn/dev/howto/regex.html
+
 # 其他
 
 【From realpython】
@@ -27,3 +29,5 @@ learnbyexample https://learnbyexample.github.io/
 - 正则表达式 - 语法 https://www.runoob.com/regexp/regexp-syntax.html
 
 Python标准库01 正则表达式 (re包) https://www.cnblogs.com/vamei/archive/2012/08/31/2661870.html
+
+根据正则表达式反向生成对应的字符串现有工具(包)总结 https://blog.csdn.net/yue530tomtom/article/details/83618286
