@@ -196,6 +196,19 @@ PE （市盈率）是什么意思？ - 知乎 https://www.zhihu.com/question/202
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 海外银行
+
+https://wise.com/zh-cn/blog/
+- BOA 开户指南：美国银行如何远程开户？最新开户奖励 https://wise.com/zh-cn/blog/open-boa-account
+- 瑞士银行开户攻略：普通中国人如何办理瑞士银行卡 https://wise.com/zh-cn/blog/open-bank-account-in-switzerland
+- 英国银行卡办理指南：怎么选择银行开户口？ https://wise.com/zh-cn/blog/open-bank-account-in-the-uk
+- 新加坡开银行户口：外国人可以在新加坡开银行户口吗？ https://wise.com/zh-cn/blog/open-bank-account-in-singapore
+- 香港银行开户攻略：大陆人如何拥有香港银行卡？ 汇丰、中国银行等开户要求 https://wise.com/zh-cn/blog/open-bank-account-in-hongkong
+- PayPal 怎么收款？PayPal 个人账户可以收款吗？ https://wise.com/zh-cn/blog/receive-money-on-paypal
+- PayPal 怎么付款？用 PayPal 付款要手续费吗？ https://wise.com/zh-cn/blog/pay-with-paypal
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 招行
 
 ## 朝招金
