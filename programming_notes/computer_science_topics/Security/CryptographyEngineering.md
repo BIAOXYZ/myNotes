@@ -7,6 +7,8 @@ Awesome Cryptography -- A curated list of cryptography resources and links. http
 - > Awesome HE – A curated list of homomorphic encryption libraries, software and resources. https://github.com/jonaschn/awesome-he
 - > Cryptography Playground - A simple web tool to play and learn basic concepts of cryptography like, hashing, symmetric, asymmetric, zkp etc. https://vishwas1.github.io/crypto/index.html#/crypto
 
+Awesome crypto-articles https://github.com/CPerezz/Awesome-crypto-articles
+
 CTF Wiki https://github.com/ctf-wiki/ctf-wiki/ || https://ctf-wiki.github.io/ctf-wiki/
 - 格概述 https://wiki.x10sec.org/crypto/asymmetric/lattice/overview/ || https://ctf-wiki.github.io/ctf-wiki/crypto/asymmetric/lattice/overview-zh/
 - 整数域上的离散对数 https://wiki.x10sec.org/crypto/asymmetric/discrete-log/integer_field/
@@ -93,6 +95,8 @@ ge25519 https://pkg.go.dev/github.com/oasisprotocol/ed25519/internal/ge25519
 
 Replacing Curve25519 with Ristretto255 https://crypto.stackexchange.com/questions/101373/replacing-curve25519-with-ristretto255
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # MPC
 
 安全多方计算（MPC）从入门到精通 https://blog.csdn.net/juzhenyuan/article/category/7777533
@@ -121,6 +125,8 @@ Sha256 Algorithm Explained https://github.com/dmarman/sha256algorithm
 XMSS reference code https://github.com/XMSS/xmss-reference
 
 (PQCrypto 2011) XMSS - A Practical Forward Secure Signature Scheme Based on Minimal Security Assumptions https://link.springer.com/chapter/10.1007/978-3-642-25405-5_8 || https://eprint.iacr.org/2011/484.pdf
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # others
 
@@ -156,3 +162,5 @@ AES256 CBC vs AES256 GCM performance? https://stackoverflow.com/questions/730672
 # attack
 
 crypto-attacks -- Python implementations of cryptographic attacks and utilities. https://github.com/jvdsn/crypto-attacks
+
+Cryptapals -- Learn how to break block ciphers https://github.com/mimoo/blockbreakers
