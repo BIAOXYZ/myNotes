@@ -111,3 +111,13 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 # ZKP
 
 ZK｜零知识证明研究综述 https://mp.weixin.qq.com/s/HZdYyFTTv4CtgV-R5ytdBQ || 零知识证明研究综述及其在区块链领域应用生态整理 https://mp.weixin.qq.com/s/2570UHJ3K91ZF8awsIpxkA
+
+万神殿 Patheon：零知识证明开发框架评测平台 https://mp.weixin.qq.com/s/1M8C2SokJl2A1xkKBfFmFg
+- > **证明系统**
+  * > 近年来，我们观察到零知识证明系统激增。跟上该领域所有激动人心的进步是具有挑战性的，我们根据成熟度和开发者采用情况精心挑选了以下证明系统作为测试对象。我们的目标是提供不同前端/后端组合的代表性样本。
+    + > `Circom + snarkjs / rapidsnark`: Circom 是一种流行的 DSL，用于编写电路和生成 R1CS 约束，而 snarkjs 能够为 Circom 生成 Groth16 或 Plonk 证明。Rapidsnark 也是 Circom 的证明器，它生成 Groth16 证明，并且由于使用了 ADX 扩展，它通常比 snarkjs 快得多，并尽可能并行化证明生成。
+    + > `gnark`: gnark 是来自 Consensys 的综合 Golang 框架，支持 Groth16、Plonk 和许多更高级的功能。
+    + > `Arkworks`: Arkworks 是一个用于 zk-SNARKs 的综合 Rust 框架。
+    + > `Halo2 (KZG)`: Halo2 是 Zcash 与 Plonk 的 zk-SNARK 实现。它配备了高度灵活的 Plonkish 算术，支持许多有用的原语，例如自定义网关和查找表。我们使用具有以太坊基金会和 Scroll 支持的 KZG 的 Halo2 分叉。
+    + > `Plonky2`: Plonky2 是基于来自 Polygon Zero 的 PLONK 和 FRI 技术的 SNARK 实现。Plonky2 使用小的 Goldilocks 字段并支持高效的递归。在我们的性能测试中，我们以 100 位推测的安全性为目标，并使用为性能测试工作产生最佳证明时间的参数。具体来说，我们使用了 28 Merkle 查询、8 的放大系数和 16 位工作量证明挑战。此外，我们设置 num_of_wires = 60 和 num_routed_wires = 60。
+    + > `Starky`: Starky 是 Polygon Zero 的高性能 STARK 框架。在我们的性能测试中，我们以 100 位推测的安全性为目标，并使用产生最佳证明时间的参数。具体来说，我们使用了 90 Merkle 查询、2 倍放大系数和 10 位工作量证明挑战。

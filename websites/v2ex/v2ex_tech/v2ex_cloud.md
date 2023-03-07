@@ -1,4 +1,12 @@
 
+使用 Harbor 创建 containerd 私有镜像仓库必须要 Docker Compose 环境么？ https://www.v2ex.com/t/921682
+```console
+众所周知,k8s 在 v1.25 版本及之后就采用了 containerd 作为容器运行时。由于项目需要，要离线创建 1 个 containerd 私有镜像仓库（不安装 docker 环境的情况下）。
+搜了官网，发现安装 Harbor 本身就需要 docker 和 docker-compose 环境，这怎么破？
+```
+- > nerdctl 了解一下。
+- > nerdctl +1
+
 已经做好的 docker 容器，如何在 docker start 容器时，里面的 ssh 服务也跟随启动？ https://www.v2ex.com/t/919605
 - > 可以通过 `--init` 的方式将启动脚本和主进程绑定起来 https://docs.docker.com/engine/reference/run/
 - > 看下 entrypoint 是什么，一层层排查，docker 本身应该没什么区别，可能容器内残留文件影响了
