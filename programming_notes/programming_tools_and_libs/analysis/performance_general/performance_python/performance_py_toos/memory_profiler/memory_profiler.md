@@ -4,6 +4,10 @@
 # 其他
 
 Python memory profiler 上手实践 - Insutanto的文章 - 知乎 https://zhuanlan.zhihu.com/p/121003986
+- > 也可以查看火焰图：
+  ```sh
+  mprof plot --flame mprofile_20200329173152.dat
+  ```
 
 用memory_profiler对Python代码进行剖析 https://juejin.cn/post/6976518357353201701
 

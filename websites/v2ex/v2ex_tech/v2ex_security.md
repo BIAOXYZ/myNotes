@@ -1,4 +1,15 @@
 
+以前感觉 HTTPS 很安全，现在有一点点改变看法了。 https://www.v2ex.com/t/922534
+```console
+HTTPS 安全是因为有 SSL 加密，网管直接抓包是看不到具体内容的。
+但是，我发现 chrome 会把很安全的 SSL 密钥导出到明文，仅仅只需要设置一个系统环境变量(SSLKEYLOGFILE)，就能轻易做到！
+这意味着，公司网管只要在我机器上简简单单配置一个环境变量，我电脑上 chrome 浏览的所有网站，用户密码，他都能直接看到。并且 chrome 浏览器毫无风险提示信息，让人非常没有安全感。
+```
+- > 这压根不是 HTTPS 的职责范围。你都突破物理隔离了，即便不用环境变量装个抓包证书就可以吧，或者替换个加了后门的魔改版浏览器也可以吧。 <br> HTTPS 有效的前提是你信任你的浏览器和操作系统。
+- > 文不对题，不安全的明明是 Chrome 这个具体浏览器的密钥日志行为，又不是 HTTPS 本身。
+- > 都能设置环境变量了，也就没什么隐私了把
+- > 不来个 LD_PRELOAD 呢
+
 哈希冲撞的可能性 https://www.v2ex.com/t/883524
 - > 哈希冲突的相关信息可以看这里： https://en.wikipedia.org/wiki/Hash_collision <br> 这里有一些 SHA-256 的哈希冲突的例子： https://crypto.stackexchange.com/questions/52578/are-there-any-well-known-examples-of-sha-256-collisions <br> 同样地，MD5 会更简单： https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
   >> 【[:star:][`*`]】 //notes：这个哥们给的链接是不错，但是回答的容易误解。目前【`2022.09.28`】为止，SHA-256 还是没有找到任何一对碰撞。
