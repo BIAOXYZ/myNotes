@@ -11,6 +11,10 @@ Memray is a memory profiler for Python https://github.com/bloomberg/memray || ht
 - > 参考链接
   * > 如何读懂火焰图 https://www.ruanyifeng.com/blog/2017/09/flame-graph.html
 
+# filprofiler
+
+filprofiler -- The Fil memory profiler for Python https://github.com/pythonspeed/filprofiler
+
 # 其他
 
 有没有开源的工具对 Python 运行的类或函数 性能时间分析的工具 https://www.v2ex.com/t/902990
