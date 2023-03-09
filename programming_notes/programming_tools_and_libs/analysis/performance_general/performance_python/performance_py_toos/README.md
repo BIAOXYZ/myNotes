@@ -39,3 +39,10 @@ filprofiler -- The Fil memory profiler for Python https://github.com/pythonspeed
       - > 项目地址：[austin](https://github.com/P403n1x87/austin)，[austin-tui](https://github.com/p403n1x87/austin-tui)
     + > 其它项目
   * 【[:star:][`*`]】 VizTracer https://github.com/gaogaotiantian/viztracer
+
+Top 5 Python Memory Profilers https://stackify.com/top-5-python-memory-profilers/
+- Pympler
+- Guppy3
+- Memory Profiler
+- Fil
+- Blackfire

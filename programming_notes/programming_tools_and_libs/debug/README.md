@@ -38,7 +38,36 @@ linux上如何分辨一个二进制可执行文件是debug还是release的 https
 # 方便debug的宏
 
 C++ 中 `__FILE__`, `__LINE__`, `__FUNCTION__` 含义 https://blog.csdn.net/weixin_39681471/article/details/109612681
+```cpp
+__LINE__  // 是内置宏，代表该行代码的所在行号
+__FUNCTION__　// 是内置宏，代表代码所在的函数
+__FILE__ // 是内置宏，代表代码所在的文件
+```
+测试：
+```cpp
+#include <iostream>
+using namespace std;
+void func()
+{
+    printf("source file \"%s\", line %d, in function %s" ,__FILE__, __LINE__, __FUNCTION__);
+}
+int main()
+{
+    func();
+    return 0;
+}
+```
+输出：
+```console
+source file "/home/vscode/log/main.cpp", line 10, in function func
+```
 
 `__FILE__`, `__LINE__`, and `__FUNCTION__` usage in C++ https://stackoverflow.com/questions/597078/file-line-and-function-usage-in-c
 
 `__FILE__`, `__LINE__`, `FUNCTION__` 实现代码跟踪调试（linux下c语言编程 ）(转自IT博客） https://www.cnblogs.com/nufangrensheng/archive/2012/11/16/2774046.html
+
+`__func__`, `__FUNCTION__`, `__PRETTY_FUNCTION__` https://www.jianshu.com/p/7cd2b1c8542a
+- > `__func__` 是C99标准的一部分
+- > `__FUNCTION__` 跟 `__func__` 效果一样，只是为了兼容旧版的GCC
+- > `__PRETTY_FUNCTION__` 在 c++ 中，`__PRETTY_FUNCTION__` 既包含函数的签名，也包含函数的名称。
+- > 结论：尽量使用 `__PRETTY_FUNCTION__` 可以打印完整的方法签名，无论是调试还是记录log都很有用
