@@ -9,6 +9,8 @@ Linux 下用哪个文件系统格式最好？ EXT4 VS Btrfs VS XFS https://www.v
 
 你管这叫文件系统？ https://www.ithome.com/0/643/446.htm || https://mp.weixin.qq.com/s/bYUGs-KBBzPafvZ7EbZJ1Q  【from `低并发编程`】
 
+一口气搞懂「文件系统」，就靠这 25 张图了 - 小林coding的文章 - 知乎 https://zhuanlan.zhihu.com/p/183238194
+
 # NFS
 
 NFS (简体中文) https://wiki.archlinux.org/index.php/NFS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
@@ -39,3 +41,8 @@ Ceph介绍及原理架构分享 https://www.jianshu.com/p/cc3ece850433
 # 其他
 
 Facebook’s Tectonic Filesystem: Efficiency from Exascale - Lancer的文章 - 知乎 https://zhuanlan.zhihu.com/p/353383767
+
+关于 Curve https://github.com/opencurve/curve/blob/master/README_cn.md
+- > Curve 是网易主导自研的现代化存储系统, 目前支持文件存储(CurveFS)和块存储(CurveBS)。现作为沙箱项目托管于CNCF。
+- > 对接 PolarDB | PG
+  * > 作为存算分离形态分布式数据库 [PolarDB | PG](https://github.com/ApsaraDB/PolarDB-for-PostgreSQL) 底层存储底座, 为上层数据库应用提供数据一致性保证, 极致弹性, 高性能HTAP。部署详见[PolarDB | PG 进阶部署(CurveBS)](https://apsaradb.github.io/PolarDB-for-PostgreSQL/zh/deploying/storage-curvebs.html)。
