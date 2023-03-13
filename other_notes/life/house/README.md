@@ -89,6 +89,12 @@
 
 未婚情侣可共同申请公积金贷款买房吗？ https://bj.lianjia.com/wenda/xiangqing/220332.html
 
+男女朋友关系，没领证登记，两个人在北京都有购房资格，贷款买？ https://bj.lianjia.com/wenda/xiangqing/308969.html
+- > 只要两个人都有购房资格就可以一起贷款买房，可以共同共有也可以按份额共有，看双方协商，部分银行或公积金需要做份额公证，***但贷款政策从严，比如一个人是首套一个人是二套，那么就按二套计算***，希望能帮到您！
+  >> 【[:star:][`*`]】 //notes：所以虽然能一起买，但是看来还是不能共同办贷款。。。
+
+夫妻共同买房，可以只写一方为贷款人吗 https://bj.ke.com/wenda/xiangqing/285522.html
+
 ## 公积金贷款or组合贷
 
 北京买房全流程攻略（北京的贷款政策） https://mp.weixin.qq.com/s/xysYJYmGHT1tRo1U-jmmrw  【from `京千平`】
