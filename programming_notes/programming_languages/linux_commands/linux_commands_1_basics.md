@@ -577,6 +577,10 @@ https://www.cnblogs.com/bluefrog/archive/2012/07/07/2580928.html
 <</dev/random和/dev/urandom的一点备忘>>
 http://blog.csdn.net/ohmygirl/article/details/40385083
 
+Is a rand from /dev/urandom secure for a login key? https://security.stackexchange.com/questions/3936/is-a-rand-from-dev-urandom-secure-for-a-login-key
+
+/dev/random vs /dev/urandom and are they secure? https://linuxhint.com/dev_random_vs_dev_urandom/
+
 ***延伸：*** 
 使用dd命令快速生成大文件或者小文件的方法 - CSDN博客 https://blog.csdn.net/cywosp/article/details/9674757
 ```shell

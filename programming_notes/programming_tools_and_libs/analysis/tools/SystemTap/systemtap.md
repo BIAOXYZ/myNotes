@@ -13,3 +13,5 @@ SystemTap https://sourceware.org/systemtap/
 内核探测工具systemtap简介 https://www.cnblogs.com/hazir/p/systemtap_introduction.html
 
 systemtap从入门到放弃（一） - 小乐叔叔的文章 - 知乎 https://zhuanlan.zhihu.com/p/347313289
+
+SYSTEMTAP在应急排查中的应用 http://blog.nsfocus.net/systemtap/
