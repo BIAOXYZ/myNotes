@@ -59,6 +59,10 @@ json --- JSON 编码和解码器 https://docs.python.org/zh-cn/3/library/json.ht
   Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
   ```
 
+# `json.loads() / json.dumps()` vs `json.load() / json.dump()`
+
+Loading a JSON File in Python – How to Read and Parse JSON https://www.freecodecamp.org/news/loading-a-json-file-in-python-how-to-read-and-parse-json/
+
 # 其他
 
 Python List to JSON https://pythonexamples.org/python-list-to-json/
