@@ -3,6 +3,10 @@
 
 Flask (web framework) https://en.wikipedia.org/wiki/Flask_(web_framework)
 
+Welcome to Flask’s documentation. https://flask.palletsprojects.com/en/2.2.x/
+
+欢迎阅读 Flask 的文档。 https://dormousehole.readthedocs.io/en/2.1.2/index.html
+
 # from RealPython
 
 Deploying a Python Flask Example Application Using Heroku https://realpython.com/flask-by-example-part-1-project-setup/
