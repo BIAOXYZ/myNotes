@@ -20,6 +20,14 @@ Python 代码调试神器：PySnooper https://www.cnblogs.com/wongbingming/p/139
 
 PySnooper 源码阅读 https://zdyxry.github.io/2019/04/27/PySnooper-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/
 
+史上最方便的Python Debug工具|腾讯技术说 - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/65750184
+
+# birdseye
+
+birdseye https://github.com/alexmojaki/birdseye
+
+Birdseye 极其强大的Python调试工具 https://juejin.cn/post/7127830197407072270 || https://cloud.tencent.com/developer/article/1825280 || https://zhuanlan.zhihu.com/p/421961147
+
 # `q` (and `logging`?)
 
 In python, is there a way to automatically log information any time you create a variable? https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a
