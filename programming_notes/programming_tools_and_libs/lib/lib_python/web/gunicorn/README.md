@@ -3,6 +3,8 @@
 
 Gunicorn https://gunicorn.org/ || https://github.com/benoitc/gunicorn
 
+Gunicorn - WSGI server https://docs.gunicorn.org/en/stable/index.html
+
 Gunicorn https://en.wikipedia.org/wiki/Gunicorn
 
 # 其他
