@@ -16,3 +16,13 @@
 
 被救助的雪豹，“离开了妈妈，不能独立生存” https://mp.weixin.qq.com/s/bqjDaFn6mku27VSnPChdOw || 西宁野生动物园救助雪豹“凌夏”：离开了妈妈，不能独立生存 https://www.thepaper.cn/newsDetail_forward_13396563
 - > ![](https://imagecloud.thepaper.cn/thepaper/image/140/356/483.jpg)
+
+# 其他萌物
+
+佛系动物水豚是动物界最强的交际花 https://www.ithome.com/0/680/186.htm || 这种会吃粑粑的佛系动物，是动物界最强的交际花 https://mp.weixin.qq.com/s/f3a9hMviRiN5xxEDz4Ulvw
+- > 目前在网上对它最有「意见」的可能就是鹈鹕，因为它总是吃不到水豚。 <br> ![](https://img.ithome.com/newsuploadfiles/2023/3/16d7ef5e-0079-4de3-8d4d-bf4cf84579f9.gif)
+- > 感觉像是在用筷子捞火锅里的鱼丸，努力了半天，毛都夹不起来。 <br> ![](https://img.ithome.com/newsuploadfiles/2023/3/fd9db68c-aab8-444e-b686-d2be69d89f8a.gif)
+- 回复里的：
+  * > 上个月去了动物园，就它，没有栏杆，傻傻的站在水边，谁来了摸一把都无所谓的样子
+- 回复里的2：
+  * > 保留野性的水豚很多还是很有攻击性的哦，动物园里尤其是日本的很多都驯化了才和人亲近，像红山动物园就比较重视保留野性，绝大部分时间是机警而且大牙容易伤人，不太好靠近的
