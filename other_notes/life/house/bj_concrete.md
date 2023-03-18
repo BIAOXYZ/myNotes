@@ -35,13 +35,22 @@
     + 西山洋房（TODO：为什么这个会这么便宜？看了看交通算挺方便，所以就是周边配套不行？此外还有一梯四户的原因？）
   * **西三旗**：
     + 建材城东二里
+  * **世纪城**： https://bj.ke.com/xiaoqu/shijicheng/
+    + 晴波园 https://bj.ke.com/xiaoqu/1111027378782/
+    + 晴雪园 https://bj.ke.com/xiaoqu/1111027378941/
+  * **四季青**：
+  * **西北旺**： https://bj.ke.com/xiaoqu/xibeiwang/
+    + `中海枫涟山庄` https://bj.ke.com/xiaoqu/1111027382464/
+    + 百旺茉莉园 https://bj.ke.com/xiaoqu/1111027376153
+  * **颐和园**：
+    + 骚子营 https://bj.ke.com/xiaoqu/1111027379734
 - **丰台**
   * **青塔**： https://bj.lianjia.com/xiaoqu/qingta1/ || https://bj.ke.com/ershoufang/qingta1/
-    + `建邦枫景`（青塔）
+    + ~~`建邦枫景`（青塔）~~
     + 万科紫苑（青塔）
     + 万科中粮假日风景（青塔）
     + 保利和光逸境（青塔）
-    + 青塔秀园
+    + ~~青塔秀园~~
   * **玉泉营**： https://bj.lianjia.com/xiaoqu/yuquanying/
     + `万年花城`（玉泉营）
     + 三环新城（玉泉营）
@@ -91,8 +100,6 @@
     + `时代国际嘉园`  【 (朝阳) 东柏街10号院 https://bj.ke.com/xiaoqu/1111027379153/ 】
     + `华腾园`  【 (朝阳) 东三环南路54号院 https://bj.ke.com/xiaoqu/1111027375333/ 】
     + `百环家园`
-    + ~~建外soho东区~~
-    + ~~建外soho西区~~
     + 和谐雅园  https://bj.ke.com/xiaoqu/1111027375407/
     + `富力城` 【 https://bj.ke.com/xiaoqu/rs%E5%AF%8C%E5%8A%9B%E5%9F%8E/ 】
       - `富力城A区`  【 (朝阳) 广渠门外大街1号院 https://bj.ke.com/xiaoqu/1111027374272/ 】
@@ -112,6 +119,8 @@
     + 双井北里  https://bj.ke.com/xiaoqu/1111027379315/
     + ~~东三环南路~~
   * **CBD**：
+    + ~~建外soho东区~~
+    + ~~建外soho西区~~
     + 金地国际花园  【 https://bj.ke.com/xiaoqu/1111027377052/ 】
     + ~~阳光100~~  【TODO: 确定一下是不是只有公寓】
   * **潘家园**：【https://bj.ke.com/xiaoqu/panjiayuan1/】
@@ -143,11 +152,15 @@
   * **甜水园**：【 https://bj.ke.com/xiaoqu/tianshuiyuan/ 】
     + 公园五号  【 https://bj.ke.com/xiaoqu/1111027374826/ 】
   * **百子湾**：
+  * **四惠**： https://bj.ke.com/xiaoqu/sihui/
+    + 双兴小区 https://bj.ke.com/xiaoqu/1111027379618
   * 其他
     + ~~保利嘉园~~
 - **东城区**
   * **永定门**：
     + `华龙美晟`  【 https://bj.ke.com/xiaoqu/1111027375142/ 】
+  * **陶然亭**：
+    + 中海紫御公馆 https://bj.ke.com/xiaoqu/1111027382485/
 - **西城区**
   * **广安门（不卷的`达官营`地铁站）**：
     + `丽水莲花`  【 https://bj.ke.com/xiaoqu/1111027378073/ 】
