@@ -90,6 +90,54 @@ About Google https://www.levels.fyi/salary/Google/
 >> 高端跨境工作站：http://www.topworker.cn
 >> Topworker跨境收付款专业博客: pay.topworker.cn
 
+Upwork vs Freelancer.com: 2023 comparison https://www.techrepublic.com/article/upwork-vs-freelancer-com/
+- > **Pros and cons of Upwork**
+  * > **Pros**
+    + > Gigs and talent are easy to find.
+    + > There are numerous freelance fields available.
+    + > Upwork handles contracts, billing, invoicing and mediation
+    + > Freelancers can make considerable money.
+    + > Upwork includes higher-paying gigs than many other sites.
+    + > Freelancers often get hired quickly.
+    + > The payment process is simple.
+    + > Remote work gigs are available.
+    + > Upwork recruiters make it easy for businesses to hire the right candidates.
+    + > Many Fortune 500 companies are Upwork clients.
+  * > **Cons**
+    + > The Connects system can be expensive.
+    + > Commission fees can get costly.
+    + > Clients must remain on the platform for a minimum of two years.
+    + > Most gigs are low paying.
+    + > Freelancer.com has a poor website user experience.
+    + > Every payment made is accompanied by a 3% fee.
+    + > There is an initial 20% service fee for a freelance hire.
+    + > Freelancers must be exclusive to Upwork for at least two years unless a client pays a Conversion Fee, which is calculated by taking the freelancer’s highest hourly rate and multiplying it by 2,080 (40 hours per week × 52 weeks).
+- > **Pros and cons of Freelancer.com**
+  * > **Pros**
+    + > Freelancer.com is one of the largest freelancing marketplaces available.
+    + > Freelancer.com offers a wide range of services.
+    + > Contests are a unique way of finding talent and earning money.
+    + > There are numerous freelance fields available.
+    + > Freelancer.com offers real-time chat between freelancers and employers.
+    + > Base pricing is cheap when not adding extra features.
+    + > Recruiting officers make connecting gigs to freelancers simple.
+    + > The preferred Freelancer Program is reserved only for the most skilled freelancers.
+    + > With every accomplished project, freelancers gain experience points and credits that can be used in the Credit Shop.
+  * > **Cons**
+    + > Fees for hourly projects are considerably high.
+    + > Freelancers must pay fees, even before they receive payment for a gig.
+    + > Freelancers can only apply for eight gigs a month before having to upgrade to a paid plan.
+    + > Accounts can be banned for no reason.
+    + > Withdrawing funds can take up to 14 days.
+    + > Costs can skyrocket with added features.
+    + > Recruiting officer feature is an add-on expense.
+    + > There are too many low-paying gigs.
+    + > There are too many spam bids.
+- > **How to decide between these freelance platforms**
+  * > If you’re an employer looking to hire a freelance worker, Upwork is much easier to use, it offers more transparent fees, and thanks to its vetting process, the quality of freelancers you can hire might be better.
+  * > From my experience, I found Upwork clients to be more reliable, pay better and are more likely to offer long-term gigs than Freelancer.com clients. And although the service fees on Upwork might seem higher, you won’t have to spend extra to get added features.
+  * > In the end, if I had to recommend one freelancer service over the other, Upwork gets the nod every time.
+
 ### Freelancer
 
 - https://www.freelancer.com/
