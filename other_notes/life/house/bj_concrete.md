@@ -42,6 +42,9 @@
   * **西北旺**： https://bj.ke.com/xiaoqu/xibeiwang/
     + `中海枫涟山庄` https://bj.ke.com/xiaoqu/1111027382464/
     + 百旺茉莉园 https://bj.ke.com/xiaoqu/1111027376153
+  * **马连洼**： https://bj.ke.com/xiaoqu/malianwa/
+    + 万科西山庭院 https://bj.ke.com/xiaoqu/1111027380066/
+    + 百旺家苑 https://bj.ke.com/xiaoqu/1111027376136/
   * **颐和园**：
     + 骚子营 https://bj.ke.com/xiaoqu/1111027379734
 - **丰台**
@@ -154,6 +157,8 @@
   * **百子湾**：
   * **四惠**： https://bj.ke.com/xiaoqu/sihui/
     + 双兴小区 https://bj.ke.com/xiaoqu/1111027379618
+  * **亚运村小营**：
+    + 远洋万和城A区 https://bj.ke.com/xiaoqu/1111027382219
   * 其他
     + ~~保利嘉园~~
 - **东城区**
