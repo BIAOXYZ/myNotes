@@ -1,4 +1,15 @@
 
+Python 进阶疑惑 https://www.v2ex.com/t/925719
+- > fluent python 强推，据说最新第二版中文四月出
+- > Fluent Python 有涉及 Cpython 吗 求问.
+  >> 有一本书叫 CPython Internals ，算是比较新的详解 Python 解析器的资料。
+- > 流畅的 python 在我看来更像是菜谱类书籍，有高级用法的实例，但是貌似没有涉及源码和解释器相关的内容？推荐一本陈儒写的 python 源码分析，是一本十多年前的书了，基于 python2 写的，有些高级功能自然是没有，但是非常深入，并不过时
+- > 由于看不到 github 所以不知道你现在的水平。结合 Python 的发展趋势我觉得可以从 3 个方面提升:
+  * > CRUD 水平: 熟练掌握 单元测试 /AsyncIO/Typing
+  * > Python 开源项目: 熟悉 PyO3 ，使用 PyO3 编写高性能 Python 库
+  * > Python 核心优化: 学习 Cinder/Pyston ，我觉得 Pyhton 下一步的大动作估计就是集成 JIT
+- > 1.python 要高级的写法 这两本书 fluent python 和 python cookbook 都介绍的比较详细 <br> 2.学习 cpython 直接看源码不就好了吗 ( https://github.com/python/cpython) 前提是你要有 c 的基础
+
 有办法提取 python3.11 pyc 文件源码吗？ https://www.v2ex.com/t/919275
 
 Python asyncio 求助，要被搞疯了 https://www.v2ex.com/t/919246

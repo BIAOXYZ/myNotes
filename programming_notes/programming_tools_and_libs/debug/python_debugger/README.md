@@ -33,13 +33,29 @@ Birdseye 极其强大的Python调试工具 https://juejin.cn/post/71278301974070
 In python, is there a way to automatically log information any time you create a variable? https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a
 - https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a/62844789#62844789
 
-q https://github.com/zestyping/q
+q https://github.com/zestyping/q || https://pypi.org/project/q/
 - > Quick and dirty debugging output for tired programmers. ⛺
+- > Install `q` with `pip install -U q`.
+- > All output goes to `/tmp/q` (or on Windows, to `$HOME/tmp/q`). You can watch the output with this shell command while your program is running:
+  ```sh
+  tail -f /tmp/q
+  ```
+- > To trace a function (showing its arguments, return value, and running time), insert this above the `def`:
+  ```py
+  import q
+  @q
+  ```
+- > To start an interactive console at any point in your code, call `q.d()`:
+  ```py
+  import q; q.d()
+  ```
 - > **Other projects inspired by this one**
   * [`q` for golang](https://github.com/y0ssar1an/q)
   * [`qq` for elixir](https://github.com/mandarvaze/q)
   * [`ic` for Python](https://github.com/gruns/icecream) - Similar library for Python, inspired by `q`.
 - > The following [Lightning Talk](http://pyvideo.org/video/1858/sunday-evening-lightning-talks#t=25m15s) shows how powerful using q can be.
+
+How does q work? https://www.pythoninsight.com/2018/05/how-does-q-work/
 
 How to log a variable's name and value? https://stackoverflow.com/questions/19317770/how-to-log-a-variables-name-and-value
 - https://stackoverflow.com/questions/19317770/how-to-log-a-variables-name-and-value/19318417#19318417
