@@ -1,4 +1,6 @@
 
+VScode, Python 如何多线程 debug 代码 https://www.v2ex.com/t/926645
+
 Python 进阶疑惑 https://www.v2ex.com/t/925719
 - > fluent python 强推，据说最新第二版中文四月出
 - > Fluent Python 有涉及 Cpython 吗 求问.

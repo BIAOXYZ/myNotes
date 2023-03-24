@@ -1,4 +1,10 @@
 
+memcpy 绝对是 C++里的史前巨坑！ https://www.v2ex.com/t/926553
+- > 我觉得 memcpy 不检查边界这件事情对 C 程序员来说应该是常识来着的
+- > 确实要注意下, memmove 如果碰到 src 地址小于 dest, 会从尾巴地方往后处理, 这样就避免了 overlapping 数据
+- > asan msan tsan lsan ubsan 五管齐下 可以用工具检测
+- > 有重叠用 memmove ，没有重叠用 memcpy ，memcpy 都让传长度了，有没有溢出肯定程序员负责的。刚学 C 的时候，一看这俩函数功能差不多，就仔细查一下它们的区别。
+
 C++ 中引用指针指向的变量会有问题吗？ https://www.v2ex.com/t/912900
 
 c/c++多线程读写问题，怎么反驳? https://www.v2ex.com/t/887229
