@@ -63,8 +63,11 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 其他
 
-【浙江大学张秉晟分享】RAM模型下的多方隐私函数评估 https://mp.weixin.qq.com/s/wyT2zCf2h3HkCTOVdi9I5g
+【浙江大学张秉晟分享】RAM模型下的多方隐私函数评估 https://mp.weixin.qq.com/s/wyT2zCf2h3HkCTOVdi9I5g || https://mp.weixin.qq.com/s/h3GCoApggBSX02CYYUdMMA || https://www.leiphone.com/category/industrynews/Lw965LWvOUHo3Mnj.html
 - > 大家好，我是浙江大学的张秉晟。今天跟大家分享一个我们组和蚂蚁摩斯最新的合作研究成果《RAM模型下的多方隐私函数评估》。什么是RAM模型，什么是隐私函数评估？在这个Talk中我会慢慢跟大家介绍。
+- > **目的与场景**
+  * > 我们这次想要做的一个工作是在RAM模型下去实现一个Private Function Evaluation。也就是说我们这个安全多方计算系统再也不用被编译成电路就能支持RAM的计算结构。如果你有一个死循环，你有一个While Loop，甚至你的While Loop里面的Condition是一个不确定的Condition。比如说一个死循环里面，你有一个基于私密数据的隐私保护数据的条件，那么我们这个模型也能够去支持，并且我们这个模型会保护你的算法。我们的做法大致讲来是把一些高级语言(比如C++语言或者Java等)用编译器(比如用LLVM的编译器)编译成TinyRAM的指令集，为什么是TinyRAM呢？因为我们需要一个精简指令集，如果指令集太复杂了我们整个系统的开销就会非常的大。所以我们就选了一个精简指令集，TinyRAM。当然RISC-V也是可以的，我们对程序和输入都进行隐私保护。具体来说我们都进行秘密分享，我后面会一一和大家解释具体操作。
+- > **MPC分布式ORAM**
 - Multi-party Private Function Evaluation for RAM https://eprint.iacr.org/2022/939.pdf
 
 2022年隐私计算6个蛮有意思的话题 https://mp.weixin.qq.com/s/hMx3n3sFhdQKc4KBMKxTPQ
