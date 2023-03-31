@@ -84,6 +84,11 @@ Loaded image: busybox:1
       ```
       > above example shows all files inside build folder are copying to app folder inside container
 
+### 其他
+
+如何方便地从容器传文件到本地 - hugulas的文章 - 知乎 https://zhuanlan.zhihu.com/p/349362112
+- > 好麻烦，有没有省事的办法？- 有, 用 `lrzsz` 传输吧
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他docker常用命令

@@ -102,6 +102,8 @@ root# perf report -i perf.data
 
 # 2
 
+【[:star:][`*`]】 用Perf寻找程序中的性能热点 - hugulas的文章 - 知乎 https://zhuanlan.zhihu.com/p/134721612
+
 perf的基本使用方法 https://blog.csdn.net/jasonactions/article/details/109332167 || https://www.coonote.com/vim-note/perf-usage.html
 
 如何用perf工具 https://www.cnblogs.com/mysky007/p/12307642.html
