@@ -165,3 +165,54 @@ Pandas 读写sqlite数据库 https://geek-docs.com/pandas/pandas-read-write/sqli
 pandas 操作 sqlite3 - 华哥股票复盘的文章 - 知乎 https://zhuanlan.zhihu.com/p/339415960
 
 Pandas与SQL的超强结合，爆赞！ https://www.51cto.com/article/710784.html
+
+Printing a properly formatted SQLite table in Python https://stackoverflow.com/questions/37051516/printing-a-properly-formatted-sqlite-table-in-python
+- https://stackoverflow.com/questions/37051516/printing-a-properly-formatted-sqlite-table-in-python/37053530#37053530
+  * > You can use pandas for this:
+    ```py
+    print pd.read_sql_query("SELECT * FROM stu", conn)
+    ```
+  * > Sample program (python 2.7.6, pandas 0.18.0):
+    ```py
+    import sqlite3
+    import pandas as pd
+
+    conn = sqlite3.connect(':memory:')
+    c = conn.cursor()
+
+    c.execute('create table stu ( ID, Name, ShoeSize, Course, IQ, Partner )')
+    conn.commit()
+    c.executemany('insert into stu VALUES (?, ?, ?, ?, ?, ?)',
+        [(1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None),
+         (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None)])
+    conn.commit()
+
+    # Ugly way
+    print list(c.execute("SELECT * FROM stu"))
+
+    # Pretty way
+    print pd.read_sql_query("SELECT * FROM stu", conn)
+    ```
+  * > Result, which includes both the ugly and the pretty output:
+    ```console
+    [(1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None), (1234567890, u'John Doe', 3852, u'DEGR-AA', 4, None)]
+               ID      Name  ShoeSize   Course  IQ Partner
+    0  1234567890  John Doe      3852  DEGR-AA   4    None
+    1  1234567890  John Doe      3852  DEGR-AA   4    None
+    2  1234567890  John Doe      3852  DEGR-AA   4    None
+    3  1234567890  John Doe      3852  DEGR-AA   4    None
+    4  1234567890  John Doe      3852  DEGR-AA   4    None
+    5  1234567890  John Doe      3852  DEGR-AA   4    None
+    6  1234567890  John Doe      3852  DEGR-AA   4    None
+    7  1234567890  John Doe      3852  DEGR-AA   4    None
+    8  1234567890  John Doe      3852  DEGR-AA   4    None
+    9  1234567890  John Doe      3852  DEGR-AA   4    None
+    ```
