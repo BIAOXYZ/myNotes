@@ -67,6 +67,19 @@ Run-Time Loadable Extensions https://www.sqlite.org/loadext.html
 SQLite: Past, Present, and Future https://dl.acm.org/doi/abs/10.14778/3554821.3554842 || https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf
 
 SQLite: Past, Present, and Future - 约修亚的文章 - 知乎 https://zhuanlan.zhihu.com/p/566166416
+- > SQLite 对事务的支持有两种模式：
+  * > 回滚模式 (`Rollback mode`)。在事务处理中，***SQLite 把`原本的页`写入到`回滚日志`中并且把`修改的页`写入到`数据库文件`中***。该模式同时支持 `DELETE` 和 `TRUNCATE` 两种子模式。
+  * > 预写式日志模式 (`Write-ahead log mode`)。在事务处理中，***不修改原本的页而是把`修改的页`追加写到`单独的预写式日志文件`中***。
+- > ***预写式日志模式可以支持更高的并发度并且常常有更好的性能。但是相较于回滚模式，预写式日志模式不能用于网络文件系统并会增加整体文件管理的复杂度***。
+- > 说了这么多SQLite的优势，那么SQLite可以直接用于OLAP的场景吗？会有多少的性能劣势呢？论文中，作者们比较了 SQLite 和 `DuckDB` (***昵称 `SQLite for analytics`***) 在 OLTP、OLAP、和 blob I/O 三个场景下的性能，并比较了它们的资源消耗。
+- > **1 OLTP**
+  * > 首先，作者们用 TATP benchmark 比较了 SQLite-WAL、SQLITE-DELETE、和 DuckDB 在 OLTP 场景下的性能。结果如下图所示。可以看出，无论是云服务器还是树莓派，SQLite 在 OLTP 场景下性能都显著的优于 DuckDB。当然这也是可以预见的，毕竟 SQLite 就是为了 OLTP 场景设计的，而 DuckDB 则是为了 OLAP。
+- > **2 OLAP**
+  * > 那么在 OLAP 的场景下呢？SQLite 和 DuckDB 分别表现又如何呢？下图是在 SSB 测试集下的结果。从图中可以看出，DuckDB 对数据分析型查询的性能要远优于 SQLite。当然，类似于上面的 OLTP 场景下的对比，这个结果也是可以预见的。毕竟 SQLite 的设计并不是为了大规模的数据查询。
+  * > 既然 SQLite 在 OLAP下表现不佳，那么有没有什么方法能帮助我们改善呢？SQLite 对于 OLAP 场景的性能瓶颈又在哪里呢？论文中，作者们对查询的执行进行了性能剖析，发现了 `SeekRowid` 和 `Column` 两个指令花费了绝大部分时间。SeekRowid 指令用于搜索一个给定 row ID 的对应 B-tree 索引。Column 指令用于提取给定行中的具体某一列。针对这两个性能瓶颈，作者们提出了两种优化方法：
+    + > 避免无谓的 B-tree 查询 (Avoiding unnecessary B-tree probes)
+    + > 流水线化值的提取 (Streamlining value extraction)
+  * > 对于第一种方法，作者们使用了一个布隆过滤器 (Bloom filter) 来首先判断给定的一个键值是否在列中存在。比如下图就是一个例子。
 
 Kevin Gaffney | SQLite: Past, Present, and Future | #11 https://www.youtube.com/watch?v=ha6cfJYEzr4
 
