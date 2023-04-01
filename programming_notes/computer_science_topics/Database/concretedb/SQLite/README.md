@@ -61,6 +61,15 @@ PRAGMA Statements https://www.sqlite.org/pragma.html || PRAGMA声明 https://www
 
 Run-Time Loadable Extensions https://www.sqlite.org/loadext.html
 
+## 论文
+>> 【[:star:][`*`]】 //notes：人家都已经是全世界使用最广泛的数据库了，结果到22年才写论文。。。境界啊- -
+
+SQLite: Past, Present, and Future https://dl.acm.org/doi/abs/10.14778/3554821.3554842 || https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf
+
+SQLite: Past, Present, and Future - 约修亚的文章 - 知乎 https://zhuanlan.zhihu.com/p/566166416
+
+Kevin Gaffney | SQLite: Past, Present, and Future | #11 https://www.youtube.com/watch?v=ha6cfJYEzr4
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他较权威链接
