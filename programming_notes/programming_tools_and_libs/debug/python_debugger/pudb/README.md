@@ -17,6 +17,26 @@ Shells https://documen.tician.de/pudb/shells.html
 - > External shells
   * > To open the external shell, press the `!` key while debugging. Unlike the internal shell, external shells close the debugger UI while the shell is active. Press `Ctrl-d` at any time to exit the shell and return to the debugger.
 
+# 常用快捷键
+
+注：一下均是在 `pudb` 的调试界面的命令，也就是用 `python -m pudb my-script.py` 启动后进入的那个界面。
+```sh
+# 打一下这个，很多就知道了。
+?
+
+# 常规 debuger 里会用到的。
+n
+s
+c
+f
+
+# 退出
+q
+
+# 输出不会在 pudb 的界面里显示，可以按 o 回到 shell 看下输出，然后回车返回 pudb 界面。
+o
+```
+
 # 实战
 
 ## 1.基本调试
