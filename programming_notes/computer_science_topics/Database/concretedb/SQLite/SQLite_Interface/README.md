@@ -148,6 +148,37 @@ sqlite3 --- SQLite 数据库 DB-API 2.0 接口模块 https://docs.python.org/zh-
 
 How to set SQLite isolation levels, using Python https://stackoverflow.com/questions/34000868/how-to-set-sqlite-isolation-levels-using-python
 
+# sqlite 和 sqlalchemy
+
+## 如何在 sqlalchemy 中为 sqlite 表创建自增字段？
+>> //notes：一般情况（比如 mysql 的时候）下 sqlalchemy 是在 `Column` 里指定 `autoincrement=True`，但是对 sqlite 来说，是在 `Table` 里指定 `sqlite_autoincrement=True` 来实现的。
+
+https://docs.sqlalchemy.org/en/20/dialects/sqlite.html
+```py
+Table('sometable', metadata,
+        Column('id', Integer, primary_key=True),
+        sqlite_autoincrement=True)
+```
+
+https://docs.sqlalchemy.org/en/14/orm/declarative_tables.html
+>> //notes：可以用 `__table_args__` 指定，或者直接定义好表结构，再用 `__table__`。
+```py
+class MyClass(Base):
+    __tablename__ = "sometable"
+    __table_args__ = {"schema": "some_schema"}
+```
+```py
+class User(Base):
+    __table__ = Table(
+        "user",
+        Base.metadata,
+        Column("id", Integer, primary_key=True),
+        Column("name", String),
+        Column("fullname", String),
+        Column("nickname", String),
+    )
+```
+
 # sqlite to postgresql
 
 pgsqlite https://github.com/bitdotioinc/pgsqlite
