@@ -212,6 +212,8 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
 - 隐私计算框架之——隐语secretflow（上） - AI架构师之路的文章 - 知乎 https://zhuanlan.zhihu.com/p/527469578
 - 隐语v0.7.18版本更新，构建跨机构分布式底座RayFed https://mp.weixin.qq.com/s/rXLFHwD68q_J6aMlD5eI-Q || https://blog.csdn.net/m0_69580723/article/details/128633322
 - 隐语分布式底座: 基于Ray的分布式联邦执行引擎 https://mp.weixin.qq.com/s/a4fd2WKuFOGTs6UAAQhHuQ
+- SCQL https://github.com/secretflow/scql
+  * > SCQL (Secure Collaborative Query Language) is a system that allows multiple distrusting parties to run joint analysis without revealing their private data.
 
 隐语 PSI benchmark 白皮书，新鲜出炉 https://mp.weixin.qq.com/s/TvY4morH-dRsaCm5JI6eig
 - > 4.生成数据

@@ -193,6 +193,11 @@ C implementation of the Raft consensus protocol https://github.com/canonical/raf
 
 Raft protocol implementation in C https://github.com/postgrespro/raft
 
+Openraft https://github.com/datafuselabs/openraft
+- > Advanced Raft in Rust using Tokio.
+- > Raft is not yet good enough. This project intends to improve raft as the next-generation consensus protocol for distributed data storage systems (SQL, NoSQL, KV, Streaming, Graph ... or maybe something more exotic).
+- > Currently, openraft is the consensus engine of meta-service cluster in databend.
+
 ## SOFAJRaft
 
 SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm. https://github.com/alipay/sofa-jraft
