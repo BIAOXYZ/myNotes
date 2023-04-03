@@ -35,6 +35,10 @@ q
 
 # 输出不会在 pudb 的界面里显示，可以按 o 回到 shell 看下输出，然后回车返回 pudb 界面。
 o
+
+# 其他
+ctrl + x
+ctrl + p
 ```
 
 # 实战
@@ -58,3 +62,15 @@ o
   You can also set the attribute _MODULE_SOURCE_CODE in the module in which this func 
   was compiled to a string containing the code. 
 ```
+
+# 设置
+
+## 更换主题
+
+How can I select or change the theme on pudb (Python Debugger)? How can I select or change the theme on pudb (Python Debugger)?
+
+## 调试多进程
+
+Cannot use pudb for multiprocessing https://stackoverflow.com/questions/47967490/cannot-use-pudb-for-multiprocessing
+
+Use puDB to Debug Python Multiprocessing Code https://auro-227.medium.com/use-pudb-to-debug-python-multiprocessing-code-c0c5551d010c
