@@ -205,6 +205,10 @@ How can I re-enable error squiggles? #2546 https://github.com/Microsoft/vscode-c
 - https://github.com/Microsoft/vscode-cpptools/issues/2546#issuecomment-502875688
 - https://github.com/Microsoft/vscode-cpptools/issues/2546#issuecomment-584231109
 
+## 移除最近打开的目录
+
+How to delete recent opened file session on Visual Studio Code? https://stackoverflow.com/questions/37111181/how-to-delete-recent-opened-file-session-on-visual-studio-code
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
