@@ -598,6 +598,11 @@ IT之家公告：完成阿里云至百度云站点迁移工作 https://www.ithom
   * > 三位董事的薪资占到营收的84%，厉害
     >> 商纣王连口汤都不给你留
 
+CETC 龙哥事件：
+- 清明加班，中国电科成都员工深夜在公司群怒骂领导，截图沸腾蹿火 https://www.163.com/dy/article/I1I0DPDU0541K8U1.html
+- 员工因“连续加班”怒怼领导引关注，涉事国企员工：不便评价 https://www.thepaper.cn/newsDetail_forward_22585715 || https://www.163.com/dy/article/I1INR4R20514R9P4.html
+- 在中国电科（CETC）工作是一种怎样的体验？ - 知乎 https://www.zhihu.com/question/56098315/answer/2968559268
+
 # job others
 
 ## 豆瓣工作相关小组
