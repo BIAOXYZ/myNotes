@@ -37,6 +37,8 @@ RAY: AN OPEN-SOURCE API FOR EASY, SCALABLE DISTRIBUTED COMPUTING IN PYTHON – P
     > Then we have a series of port forwardings, these are a combination of those which are needed for our local environment container (i.e., ***in windows we want port 8888 so we can use jupyter***) and for the server (i.e., in linux we open `8265` so we can access the Ray dashboard, `6379` so we can add nodes to this cluster, and `10001` so we can use this cluster, to be explained more below). You can be more refined/secure and open up only the ports needed.
     >> 【[:star:][`*`]】 //notes：所以 8888 端口不是必须的，但是剩下三个端口都是必须的（当然你可以换成其他端口号）。***`6379` 不用多说了，想添加节点需要用；`8265` 之前踩过坑了，不暴露这个端口，容器外面看不了 ray dashboard；`10001` 这个是因为不暴露这个，容器外面（不管你是在 host 还是远端）无法用 ray 集群执行任务***。
 
+PS：从[官方文档](https://docs.ray.io/en/latest/ray-observability/ray-metrics.html)来看，是不是 `9090`（for `Prometheus`）和 `3000`（for `Grafana`）最好也暴露下。。。
+
 ***个人文章实战***：
 ```sh
 docker pull rayproject/ray

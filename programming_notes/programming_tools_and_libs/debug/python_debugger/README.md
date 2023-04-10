@@ -1,4 +1,7 @@
 
+PythonDebuggingTools https://wiki.python.org/moin/PythonDebuggingTools
+- DebuggingWithGdb https://wiki.python.org/moin/DebuggingWithGdb
+
 # pdb++
 
 pdb++, a drop-in replacement for pdb https://github.com/pdbpp/pdbpp
