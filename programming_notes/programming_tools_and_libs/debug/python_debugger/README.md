@@ -12,6 +12,27 @@ Python 程序如何高效地调试？ - Rui L的回答 - 知乎 https://www.zhih
 
 Python 程序如何高效地调试？ - 小明的回答 - 知乎 https://www.zhihu.com/question/21572891/answer/123220574
 
+# remote-pdb
+
+Remote vanilla PDB (over TCP sockets). https://github.com/ionelmc/python-remote-pdb
+
+# 调试多进程程序
+
+How to attach debugger to a python subproccess? https://stackoverflow.com/questions/4716533/how-to-attach-debugger-to-a-python-subproccess/23654936#23654936
+- https://stackoverflow.com/questions/4716533/how-to-attach-debugger-to-a-python-subproccess/72532079#72532079
+  * > Just use PuDB that gives you an awesome TUI (GUI on terminal) and supports multiprocessing as follow:
+    ```py
+    from pudb import forked; forked.set_trace()
+    ```
+    >> 【[:star:][`*`]】 //notes：尽管这个答案很短，并且也没被选为最佳答案，但是其实这个里的办法是最好的（我没有完全照搬，因为 Python 后来引入了官方的 `breakpoint()` 语法，用改环境变量的方式更好，参见：https://documen.tician.de/pudb/starting.html#using-the-debugger-after-forking ）。
+- https://stackoverflow.com/questions/4716533/how-to-attach-debugger-to-a-python-subproccess/60123764#60123764
+  >> //notes：这个回答里提到的 `remote_pdb` 大致看了看，没有试，回头也可以试试。
+
+How to use ipdb.set_trace in a forked process https://stackoverflow.com/questions/26289153/how-to-use-ipdb-set-trace-in-a-forked-process
+
+Debug Multiprocessing In Python https://unbiased-coder.com/debug-multiprocessing-in-python/
+- > **5. Use Inter Process Communication**
+
 # PySnooper
 
 PySnooper - Never use print for debugging again https://github.com/cool-RR/PySnooper

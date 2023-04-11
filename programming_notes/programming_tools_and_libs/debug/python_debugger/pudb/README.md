@@ -4,6 +4,9 @@
 PuDB: a console-based visual debugger for Python https://github.com/inducer/pudb
 
 Getting Started https://documen.tician.de/pudb/starting.html
+- > **Debugging from a separate terminal**
+- > **Remote debugging**
+- > **Using the debugger after forking**
 
 Installing https://documen.tician.de/pudb/misc.html
 - > Install PuDB using the command:
@@ -35,6 +38,10 @@ q
 
 # 输出不会在 pudb 的界面里显示，可以按 o 回到 shell 看下输出，然后回车返回 pudb 界面。
 o
+# 直接运行到指定行
+t
+# 遍历 module（主要方便打断点用？比如：https://github.com/inducer/pudb/issues/405 ）
+m
 
 # 其他
 ctrl + x
