@@ -8,6 +8,9 @@ ray-project https://github.com/ray-project
 - Ray Educational Materials https://github.com/ray-project/ray-educational-materials
 - RayFed https://github.com/ray-project/rayfed
 
+Welcome to the Ray documentation https://docs.ray.io/en/latest/
+- Ray Clusters Overview https://docs.ray.io/en/master/cluster/getting-started.html
+
 # 其他
 
 Ray 分布式计算框架介绍 - lipi的文章 - 知乎 https://zhuanlan.zhihu.com/p/111340572

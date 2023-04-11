@@ -78,6 +78,87 @@ How to scale Python multiprocessing to a cluster with one line of code https://m
       print("Finished in: {:.2f}s".format(time.time()-start))
   ```
 
+## 个人实战
+
+***`approximate_pi.py`***
+```py
+import math
+import random
+import time
+
+def sample(num_samples):
+    num_inside = 0
+    for _ in range(num_samples):
+        x, y = random.uniform(-1, 1), random.uniform(-1, 1)
+        if math.hypot(x, y) <= 1:
+            num_inside += 1
+    return num_inside
+
+def approximate_pi(num_samples):
+    start = time.time()
+    num_inside = sample(num_samples)
+    
+    print("pi ~= {}".format((4*num_inside)/num_samples))
+    print("Finished in: {:.2f}s".format(time.time()-start))
+
+n = 10000 * 1000
+approximate_pi(n)
+```
+
+***`approximate_pi_parallel.py`***
+```py
+import math
+import random
+import time
+
+def sample(num_samples):
+    num_inside = 0
+    for _ in range(num_samples):
+        x, y = random.uniform(-1, 1), random.uniform(-1, 1)
+        if math.hypot(x, y) <= 1:
+            num_inside += 1
+    return num_inside
+
+def approximate_pi_parallel(num_samples):
+    from multiprocessing.pool import Pool
+    pool = Pool()
+    
+    start = time.time()
+    num_inside = 0
+    sample_batch_size = 100000
+    for result in pool.map(sample, [sample_batch_size for _ in range(num_samples//sample_batch_size)]):
+        num_inside += result
+        
+    print("pi ~= {}".format((4*num_inside)/num_samples))
+    print("Finished in: {:.2f}s".format(time.time()-start))
+
+n = 10000 * 1000
+approximate_pi_parallel(n)
+```
+
+```sh
+$ python3 approximate_pi.py 
+pi ~= 3.1417872
+Finished in: 6.47s
+$ python3 approximate_pi_parallel.py 
+pi ~= 3.1407948
+Finished in: 0.36s
+$ 
+$ python3 approximate_pi.py 
+pi ~= 3.1415004
+Finished in: 6.69s
+$ python3 approximate_pi_parallel.py 
+pi ~= 3.14152
+Finished in: 0.35s
+$ 
+$ python3 approximate_pi.py 
+pi ~= 3.1414748
+Finished in: 6.62s
+$ python3 approximate_pi_parallel.py 
+pi ~= 3.1411876
+Finished in: 0.34s
+```
+
 # 2
 
 python分布式多进程框架 Ray https://blog.csdn.net/luanpeng825485697/article/details/88242020
