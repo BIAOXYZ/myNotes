@@ -59,3 +59,5 @@ $ python3 pyarrow-pandas.py
 9.3859224319458
 54.53367304801941
 ```
+
+Pandas vs. PyArrow file reading speed comparison https://github.com/tirthajyoti/Machine-Learning-with-Python/blob/master/Pandas%20and%20Numpy/Read_data_various_sources/Pandas%20CSV%20vs.%20PyArrow%20parquet%20reading%20speed.ipynb

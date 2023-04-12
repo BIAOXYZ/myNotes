@@ -213,7 +213,7 @@ SQLite3 实践教程 https://linux.cn/article-13117-1.html
 
 ## 反人类的动态类型列- -
 
-Datatypes In SQLite https://www.sqlite.org/datatype3.html
+Datatypes In SQLite https://www.sqlite.org/datatype3.html || SQLite版本3中的数据类型 https://www.sqlite.net.cn/datatype3.html
 - > **3. Type Affinity**
   * > SQL database engines that use rigid typing will usually try to automatically convert values to the appropriate datatype. Consider this:
     ```sql

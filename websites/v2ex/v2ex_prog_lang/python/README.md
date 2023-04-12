@@ -1,4 +1,15 @@
 
+Python 内存优化问题 https://www.v2ex.com/t/931691
+```console
+我发现 import pymongo 就会占用 6M 内存。 我有 100 个独立运行的脚本，如果他们都需要 import pymongo ，那么就会产生 100*6=600M 内存。
+可以实现一个 import 缓存，独立运行的脚本都可以优先复用缓存的包，缓存没有才重新导包。 想问问这个 import 缓存能实现吗
+```
+- > 按需加载 `from pymongo import xxx`
+- > 你试了没有？确定不同进程 import 同一个库，该库的可执行代码的部分没有共用？
+  >> 不共用的，试过了
+- > 麻烦, 自己倒腾个 ipc 算了, 就几行原生代码, 我是照抄官网的 asyncio 和 struct 自己搭个 Unix domain socket 就完事了, 你这情况都用不着这么复杂, 我那是抗上万并发用的
+- > 可以通过使用 Python 的 importlib 和 sys 模块来实现 import 缓存。可以将已经导入的模块对象存储在一个字典中，每次导入模块时先检查该字典中是否已经存在该模块对象，如果存在则直接使用该对象，否则重新导入并将导入结果存储到字典中。以下是一个简单的实现示例
+
 VScode, Python 如何多线程 debug 代码 https://www.v2ex.com/t/926645
 
 Python 进阶疑惑 https://www.v2ex.com/t/925719
