@@ -11,6 +11,8 @@
 
 经典单机《仙剑奇侠传》主流打法，当年我们用得最多的招式是什么 https://www.ithome.com/0/667/371.htm || https://mp.weixin.qq.com/s/f9eKIhrYm52OXPW7ke3daw
 
+《仙剑1》装备无尘剑也没见多厉害，难道武器都是摆设 https://www.163.com/dy/article/GKLFMVKN0526FAFP.html
+
 # 新仙剑
 
 《新仙剑奇侠传》实况流程 主线+支线(三大结局，全CG，全BOSS战，全技能收录) https://www.bilibili.com/video/BV1nW411o79i || https://www.bilibili.com/video/av31406616/

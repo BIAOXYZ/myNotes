@@ -24,7 +24,10 @@ How to attach debugger to a python subproccess? https://stackoverflow.com/questi
     ```py
     from pudb import forked; forked.set_trace()
     ```
-    >> 【[:star:][`*`]】 //notes：尽管这个答案很短，并且也没被选为最佳答案，但是其实这个里的办法是最好的（我没有完全照搬，因为 Python 后来引入了官方的 `breakpoint()` 语法，用改环境变量的方式更好，参见：https://documen.tician.de/pudb/starting.html#using-the-debugger-after-forking ）。
+    >> 【[:star:][`*`]】 //notes：尽管这个答案很短，并且也没被选为最佳答案，但是其实这个回答里的办法是最好的（我没有完全照搬，因为 Python 后来引入了官方的 `breakpoint()` 语法，用改环境变量的方式来灵活调用需要的 debugger 更好，参见：https://documen.tician.de/pudb/starting.html#using-the-debugger-after-forking ）。于是最简单快速的用法就是代码里（多进程执行的函数的某个位置）添加 `breakpoint()`，然后执行（当然也可以把 `export PYTHONBREAKPOINT=pudb.forked.set_trace` 放在 `~/.bashrc` 里，这样不用每次都输入了）：
+    ```sh
+    PYTHONBREAKPOINT=pudb.forked.set_trace python script.py
+    ```
 - https://stackoverflow.com/questions/4716533/how-to-attach-debugger-to-a-python-subproccess/60123764#60123764
   >> //notes：这个回答里提到的 `remote_pdb` 大致看了看，没有试，回头也可以试试。
 
