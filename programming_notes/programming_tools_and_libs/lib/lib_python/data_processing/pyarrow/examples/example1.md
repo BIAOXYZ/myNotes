@@ -61,3 +61,5 @@ $ python3 pyarrow-pandas.py
 ```
 
 Pandas vs. PyArrow file reading speed comparison https://github.com/tirthajyoti/Machine-Learning-with-Python/blob/master/Pandas%20and%20Numpy/Read_data_various_sources/Pandas%20CSV%20vs.%20PyArrow%20parquet%20reading%20speed.ipynb
+
+Stop Using Pandas to Read/Write Data — This Alternative is 7 Times Faster https://towardsdatascience.com/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
