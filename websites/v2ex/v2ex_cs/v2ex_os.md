@@ -1,6 +1,7 @@
 
 Linux 内核该怎么学啊？ https://www.v2ex.com/t/932062
 - > 同济大学赵炯编著的《 Linux 内核完全注释》 <br> 中文版：www.oldlinux.org/download/CLK-5.0-WithCover.pdf <br> 英文版：www.oldlinux.org/download/ECLK-5.0-WithCover.pdf
+  >> 【[:star:][`*`]】 //notes：这两本书是真的牛，都是一千多页。。。
 - > 看 xv6?
 - > 1.跟着 mit 6.s081 做完 lab ，主要学 `gdb` 怎么用 `qemu` 调试内核，还有一些 C 的语法，启动、RV ISA 相关的感觉可以跳过。 <br> 2.南大的 ICS Lab 也不错，如果 xv6 感觉语言有困难的话，可以先看看 ICS 。 <br> 3.熟悉了简化的内核后，可以基于 upstream kernel 写几个内核模块，比如通过 sysfs 操作 GPIO 点亮跑马灯啥的。 https://sysprog21.github.io/lkmpg/ <br> 4.之后就看你有啥需求了，实现需求。 <br> 书大多都很老，分析代码最好跟着 upstream kernel 的代码自己一点点分析，用到啥分析啥就行。工具的话，vscode + `ripgrep` + `fdfind` 足够了。
 
