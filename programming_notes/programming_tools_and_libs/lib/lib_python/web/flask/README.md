@@ -30,6 +30,11 @@ Flask入门---@app.route()使用 https://blog.csdn.net/qq_44864833/article/detai
 
 Flask 从入门到放弃2: 深入理解@app.route() https://lvraikkonen.github.io/2017/07/26/Flask%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%832:%20%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3@app.route()/
 
+# debug Flask
+>> //notes：更多内容可以参考 gunicorn 部分那里的 debug。
+
+How to Debug Flask Applications in VS Code https://towardsdatascience.com/how-to-debug-flask-applications-in-vs-code-c65c9bdbef21
+
 # 其他
 
 flask 内能做跨域转发吗？ https://www.v2ex.com/t/866921

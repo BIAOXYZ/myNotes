@@ -13,3 +13,5 @@ Python HTTP 框架咨询 https://www.v2ex.com/t/892601
 - > 看实际情况，如果只是自己玩玩或者简单的增删改查的话 fastapi flask 都可以，上手非常容易；如果有复杂需求，比如复杂鉴权复杂业务等，无脑 Django 。fastapi flask 小而简单上手快，Django 重而全上手相对难。
 - > Django 吧，结构明确，功能齐全，省心省力。flask 随着功能的增加会越来越笨重，坑还不少。还有个最关键的，俩框架的文档完全不在一个水平上
   >> 文档确实不在一个水平上，Django 把文档过一遍的功夫，我能把 Flask 的源码读上七八遍了。本来想看一下 Django 的，两千七百多页的 pdf 文档把我劝退了。
+
+Securely Deploy a Django App With Gunicorn, Nginx, & HTTPS https://realpython.com/django-nginx-gunicorn/
