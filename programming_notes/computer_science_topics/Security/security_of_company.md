@@ -358,10 +358,13 @@ MPyC -- Secure Multiparty Computation in Python https://github.com/lschoe/mpyc
 SecMML https://github.com/FudanMPL/SecMML
 - > SecMML是FudanMPL(Multi-Party Computation + Machine Learning)的一个分支，是用于训练机器学习模型的高效可扩展的安全多方计算（MPC）框架，基于BGW协议实现。此框架可以应用到三个及以上参与方联合训练的场景中。目前，SecMML能够支持几种当前流行的机器学习模型，包括线性回归模型，逻辑回归模型，BP神经网络和LSTM神经网络模型。
 
-## Falcon
+## 其他 paper 相关项目
 
 Implementation of protocols in Falcon https://github.com/snwagh/falcon-public
 - (PETS 2021) Falcon: Honest-Majority Maliciously Secure Framework for Private Deep Learning https://arxiv.org/pdf/2004.02229.pdf
+
+BLAZE: Blazing Fast Privacy-Preserving Machine Learning https://www.ndss-symposium.org/ndss-paper/blaze-blazing-fast-privacy-preserving-machine-learning/
+- > BLAZE achieves the stronger guarantee of `fairness` (all honest servers get the output whenever the corrupt server obtains the same).
 
 ## Primihub
 

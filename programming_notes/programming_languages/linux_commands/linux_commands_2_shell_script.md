@@ -95,6 +95,12 @@ https://segmentfault.com/u/vvpale/articles
 
 Linux工具快速教程 https://github.com/me115/linuxtools_rst || https://linuxtools-rst.readthedocs.io/zh_CN/latest/
 
+Shell脚本编程30分钟入门 https://github.com/qinjx/30min_guides/blob/master/shell.md
+- > **参考资料**
+  * [Advanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/)，非常详细，非常易读，大量example，既可以当入门教材，也可以当做工具书查阅
+  * [Unix Shell Programming](http://www.tutorialspoint.com/unix/unix-shell.htm)
+  * [Linux Shell Scripting Tutorial - A Beginner's handbook](http://bash.cyberciti.biz/guide/Main_Page)
+
 # shell脚本调试
 
 Shell脚本调试技术 https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
