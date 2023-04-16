@@ -42,6 +42,7 @@
   * **西北旺**： https://bj.ke.com/xiaoqu/xibeiwang/
     + `中海枫涟山庄` https://bj.ke.com/xiaoqu/1111027382464/
     + 百旺茉莉园 https://bj.ke.com/xiaoqu/1111027376153
+    + 亿城·西山公馆 https://bj.ke.com/xiaoqu/1111042959484/  【当年觉得这个贼贵了，而且买这儿的话上班也太方便了。。。现在看，还没有马连洼的`亿城西山华府`贵了；而且没有地铁，其实就那样吧。】
   * **马连洼**： https://bj.ke.com/xiaoqu/malianwa/
     + 万科西山庭院 https://bj.ke.com/xiaoqu/1111027380066/
     + 百旺家苑 https://bj.ke.com/xiaoqu/1111027376136/
@@ -108,7 +109,7 @@
     + `百环家园`
     + 和谐雅园  https://bj.ke.com/xiaoqu/1111027375407/
     + `富力城` 【 https://bj.ke.com/xiaoqu/rs%E5%AF%8C%E5%8A%9B%E5%9F%8E/ 】
-      - `富力城A区`  【 (朝阳) 广渠门外大街1号院 https://bj.ke.com/xiaoqu/1111027374272/ 】
+      - `富力城A区`  【 (朝阳) 广渠门外大街1号院 https://bj.ke.com/xiaoqu/1111027374272/ 】【 https://beijing.anjuke.com/community/view/79902 -- https://beijing.anjuke.com/community/view/79902/jiedu/ 这里有一些介绍，能有一点点额外信息吧，但是重复的内容太多了- -不过到时候也要一条一条看完～】
       - `富力城B区`
       - `富力城C区`  【 https://bj.ke.com/xiaoqu/1111027374274/ 】
       - `富力城D区`

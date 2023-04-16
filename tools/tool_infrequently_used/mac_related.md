@@ -269,3 +269,6 @@ os.mknod() fails on MacOS? https://stackoverflow.com/questions/32115715/os-mknod
 # 其他人发现的bug
 
 【[:star:][`*`]】 如果你不想天天被 bug 气到，就不要买 Mac https://www.v2ex.com/t/826753
+
+Mac Pro 扬声器杂音如何解决？ - 知乎 https://www.zhihu.com/question/48505161
+- Mac Pro 扬声器杂音如何解决？ - Jqgsninimo的回答 - 知乎 https://www.zhihu.com/question/48505161/answer/1880619227

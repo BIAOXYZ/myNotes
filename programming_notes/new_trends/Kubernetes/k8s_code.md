@@ -47,6 +47,7 @@ kubelet 源码分析：启动流程 https://cizixs.com/2017/06/06/kubelet-source
 - 使用 Golang 自定义 Kubernetes Ingress Controller https://www.qikqiak.com/post/custom-k8s-ingress-controller-with-go/
 - 深入理解 Kubernetes Admission Webhook https://www.qikqiak.com/post/k8s-admission-webhook/
 - Kubernetes Operator 快速入门教程 https://www.qikqiak.com/post/k8s-operator-101/
+- Kubernetes 调度器实现原理 https://mp.weixin.qq.com/s/pRnXeRGw-5YpEDAjk5HF6g
 
 【by Kubernetes 源码研习社 https://github.com/cloudnativeto/sig-k8s-source-code】
 - Kubernetes 源码研习社一期 kickoff 回顾 https://mp.weixin.qq.com/s/fMNsXqwMImSicYsroMuOTQ || 【云原生学院】Kubernetes 源码研习会第一期 kickoff 视频 https://www.bilibili.com/video/BV1vh411Z7cb
