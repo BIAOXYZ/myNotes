@@ -8,6 +8,8 @@ MySQL资源大全中文版 https://github.com/jobbole/awesome-mysql-cn
 - MySQL 索引设计概要 https://draveness.me/sql-index-intro
 - MySQL 索引性能分析概要 https://draveness.me/sql-index-performance
 
+《图解MySQL》 https://xiaolincoding.com/mysql/ || 图解MySQL介绍 https://github.com/xiaolincoder/CS-Base/blob/main/mysql/README.md
+
 # mysql存储
 
 MYSQL INNODB 三大特性之双写 https://blog.csdn.net/bohu83/article/details/81252045

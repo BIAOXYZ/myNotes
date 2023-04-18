@@ -196,6 +196,9 @@ k8s、docker源码分析、读书笔记 https://github.com/Kevin-fqh/learning-k8
 🚀 fullstack tutorial 2019，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试 https://github.com/frank-lam/fullstack-tutorial
 > https://frank-lam.github.io/fullstack-tutorial/
 
+小林 x 图解计算机基础 https://github.com/xiaolincoder/CS-Base || 小林coding https://xiaolincoding.com/
+- 《图解MySQL》 https://xiaolincoding.com/mysql/ || 图解MySQL介绍 https://github.com/xiaolincoder/CS-Base/blob/main/mysql/README.md
+
 # 系统设计
 
 The System Design Primer https://github.com/donnemartin/system-design-primer
