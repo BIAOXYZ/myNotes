@@ -75,8 +75,8 @@ Linus Torvalds https://en.wikiquote.org/wiki/Linus_Torvalds || 林纳斯·托瓦
 - `Talk is cheap. Show me the code.` -- Torvalds, Linus (2000-08-25) at https://lkml.org/lkml/2000/8/25/132
   - Talk is cheap. Show me the PPT. -- Liang Liu (2018-06-06) at Bian's Village~~ wahaha
 - `Portability is for people who cannot write new programs.` || `可移植性是提供给不会编写新程式的那些人。`
-  * > 塔能鲍姆-托瓦兹辩论 https://zh.wikipedia.org/wiki/%E5%A1%94%E8%83%BD%E9%AE%91%E5%A7%86-%E6%89%98%E7%93%A6%E8%8C%B2%E8%BE%AF%E8%AB%96
-    >> 托瓦兹进一步说，可移植性是那些写不出新程序的人才需要的（Portability is for people who cannot write new programs）。
+  * > 塔能鲍姆-托瓦兹辩论 https://zh.wikipedia.org/wiki/%E5%A1%94%E8%83%BD%E9%AE%91%E5%A7%86-%E6%89%98%E7%93%A6%E8%8C%B2%E8%BE%AF%E8%AB%96 || Tanenbaum–Torvalds debate https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate
+    >> 托瓦兹进一步说，***可移植性是那些写不出新程序的人才需要的***（`Portability is for people who cannot write new programs`）。
 
 理查德·费曼 https://zh.wikiquote.org/zh/%E8%B2%BB%E6%9B%BC || Richard Feynman https://en.wikiquote.org/wiki/Richard_Feynman
 - > `“我不能創造的東西，我就不瞭解。”` 原文：`"What I cannot create, I do not understand."`
@@ -112,3 +112,13 @@ Jerry Sanders: `Real men have fabs`
 - Real men have fabs…or do they? https://www.eetimes.com/real-men-have-fabsor-do-they/
 - 破灭与新生，2008 年危机中的半导体产业回顾 https://www.ithome.com/0/627/587.htm
   * > 2008 年 10 月 7 日，AMD 正式宣布将剥离其晶圆制造业务，转型 Fabless 模式，这家以“好汉都有晶圆厂”而闻名的企业，为半导体商业模式变革树立了一座里程碑。
+
+`永远不要低估一辆满载着磁带在高速公路上飞驰的旅行车的带宽。`：
+- Andrew S. Tanenbaum https://en.wikiquote.org/wiki/Andrew_S._Tanenbaum
+  * > `Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.` -- Computer Networks, 3rd ed., p. 83. (paraphrasing Dr. Warren Jackson, Director, University of Toronto Computing Services (UTCS) circa 1985)
+- 如何理解「永远不要忽略一辆载满磁带的在高速公路上飞驰的卡车的带宽」？ - 知乎 https://www.zhihu.com/question/20548494
+  * 如何理解「永远不要忽略一辆载满磁带的在高速公路上飞驰的卡车的带宽」？ - NyanPasu的回答 - 知乎 https://www.zhihu.com/question/20548494/answer/104481428
+    + > 这句话的出处应该是`《计算机网络第五版》（Andrew S.Tanenbaum&David J.Wetherall著）`，看完书中完整的表述，自然会理解这种说法。[计算机网络（第5版）(豆瓣)](https://book.douban.com/subject/10510747/)在引导性传输介质一节中这样写道：
+      - > `将数据从一台机器传输到另一台机器的最常见办法是将数据写到磁带或其他可擦写介质上（例如可刻录DVD），然后用物理的方法将磁带或者磁盘运送到目标机器，再将数据从磁带或磁盘里读出来。虽然这种方法不像使用地球同步通信卫星那么复杂，但它却更加有效，尤其适合于那些高宽带或者单个比特传输成本是关键因素的应用系统。`
+      - > `用一个简单的计算就能很容易看清楚这一点。工业标准的Ultrium磁带可以容纳800GB。一个60cmx60cmx60cm大小的盒子可以装下1000个这样的磁带，因此盒子的总容量为800TB，或者6400Tb（即6.4Pb）。通过联邦快递或者其他快递公司，在24小时之内可以将这一盒磁带快递到美国的任何一个地方。这样一次传输的有效带宽是6400Tb/86400秒，或者70Gbps。如果开车到目的地只需要一个小时，则有效带宽将超过1700Gbps，到目前为止，还没有一个计算机网络能接近这样的传输能力。当然，网络速度正在变得越来越快，但磁带密度也同样在不断增长中。`
+      - > `如果我们现在来看一下成本，可以发现类似的情形。Ultrium磁带批量购买的价格大约是每盘40美元。一盘磁带至少可以重复使用10次，所以一盒磁带每次使用的代价差不多是4000美元。加上额外1000美元的运输费用（可能还会更少一些），计算得出运送800TB的成本大约是5000美元。这样算来，运输1GB数据的费用还不到半个美分，这样的低成本还没有一个网络能与之抗衡。这个例子的寓意在于：永远不要低估一辆满载着磁带在高速公路上飞驰的旅行车的带宽。`

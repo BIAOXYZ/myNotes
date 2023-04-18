@@ -294,8 +294,6 @@ windows 不能命名文件为 con https://www.v2ex.com/t/715678
 
 关于 RSA 的一些趣事 https://www.v2ex.com/t/655096
 
-有无计算机组成原理相关的课程和书推荐 https://www.v2ex.com/t/625781
-
 做一个基础很扎实的程序员是一种什么感受啊 https://www.v2ex.com/t/561411
 - > 现在开始学基础也不会晚。最近也一直在看计算机基础相关圣经。我整理了一个计算机基础书单，可以参考参考 https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md
 
