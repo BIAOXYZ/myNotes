@@ -36,6 +36,12 @@
 
 结了婚的老哥们进来聊聊呗 https://www.v2ex.com/t/906551
 
+# 婚后
+
+这样子的老婆是不是不太懂事 https://www.v2ex.com/t/933893
+- > "就因为我不满足老公的生理需求，他就要和我离婚，我该怎么办？" https://www.zhihu.com/question/595293167
+- > @superedlimited #74 这就去买 体验一下瞬吸干
+
 # 生子
 
 孩子数学考了 85 分 哎 怎样才能提高孩子的数学水平啊 https://www.v2ex.com/t/916488

@@ -49,6 +49,13 @@ ssh 端口转发不需要额外装软件， 为啥还是这么多人选择 frp �
 
 # 在线工具/环境
 
+收集了 10000 多个软件安装包，一个奇怪的癖好。 https://www.v2ex.com/t/933863
+```console
+传了一份软件清单到网上，有兴趣可以交流一下，我还花了挺长时间做分类和命名的。现在基本上找到一个新软件都能找到一个可以安排的子目录类别。
+https://blog.cineray.net/software/list.txt
+```
+- > http://www.oldversion.com/ -- 楼主模仿着搞个国内的网站。
+
 请教下有什么好的命令、代码存储工具？ https://www.v2ex.com/t/815979
 - > https://snapcraft.io/cacher cacher
   >> //notes：补充，除了各个平台的客户端，还有网页版： https://app.cacher.io/  也没有觉得特别好，想起来可以随便用用。

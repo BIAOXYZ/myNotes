@@ -414,3 +414,13 @@ ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that 
 mysql> 
 mysql>
 ```
+
+# 3
+
+SELECT https://www.sqlite.org/lang_select.html
+- 2.5. Bare columns in an aggregate query https://www.sqlite.org/lang_select.html#bare_columns_in_an_aggregate_query
+  * > The usual case is that all column names in an aggregate query are either arguments to aggregate functions or else appear in the GROUP BY clause. A result column which contains a column name that is not within an aggregate function and that does not appear in the GROUP BY clause (if one exists) is called a "bare" column. Example:
+    ```sql
+    SELECT a, b, sum(c) FROM tab1 GROUP BY a;
+    ```
+  * > In the query above, the "a" column is part of the GROUP BY clause and so each row of the output contains one of the distinct values for "a". The "c" column is contained within the sum() aggregate function and so that output column is the sum of all "c" values in rows that have the same value for "a". But what is the result of the bare column "b"? The answer is that the "b" result will be the value for "b" in one of the input rows that form the aggregate. The problem is that you usually do not know which input row is used to compute "b", and so in many cases the value for "b" is undefined.

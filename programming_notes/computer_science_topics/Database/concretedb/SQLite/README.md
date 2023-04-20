@@ -39,6 +39,12 @@ Why SQLite Does Not Use Git https://sqlite.org/whynotgit.html
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 官方 SQL 文档
+
+SELECT https://www.sqlite.org/lang_select.html
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## 官方文章
 
 Atomic Commit In SQLite https://sqlite.org/atomiccommit.html
