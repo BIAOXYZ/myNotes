@@ -70,6 +70,14 @@ gdb的多线程调试 https://www.cnblogs.com/the-capricornus/p/10059223.html
 - > 在开始之前先说一些技巧吧：
   * > 1 如果你在程序没运行前想设置 `scheduler-locking` 的状态，总是给出如下的提示：`Target 'exec' cannot support this command.` <br> 那你可以先在 main 函数处打个断点，break main ，等待运行后停在断点处，再执行你的设置。其实可以在任何断点停住的地方进行设置。
 
+Multiprocess debugging in GDB https://undo.io/resources/gdb-watchpoint/multiprocess-debugging-gdb/
+- > **Catching the Write Syscall**
+  * > We can create two bash sessions, echo $$ to get the Process ID in one and in the other open a GDB session on that PID.
+    ```sh
+    $ echo $$
+    1633190
+    ```
+
 # 旧的
 
 fork 多进程调试

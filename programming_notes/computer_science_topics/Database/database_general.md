@@ -302,6 +302,24 @@ What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [
 Hash join算法原理 https://www.cnblogs.com/qlee/archive/2011/04/11/2012572.html
 - > 自从oracke 7.3以来，oracle提供了一种新的join技术，就是hash join。Hash Join只能用于相等连接，且只能在CBO优化器模式下。相对于nested loop join，hash join更适合处理大型结果集。Hash join不需要在驱动表上存在索引。
 
+## 关系代数
+
+Relational algebra https://en.wikipedia.org/wiki/Relational_algebra
+
+Relational Algebraic Equivalence Transformation Rules https://www.postgresql.org/message-id/attachment/32513/EquivalenceRules.pdf
+
+Relational algebra -- Basic Operations Algebra of Bags http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/ra.pdf
+
+### 证明两个SQL相当或者说语意是一样的
+
+Mathematical equality of two SQL statements https://dba.stackexchange.com/questions/96865/mathematical-equality-of-two-sql-statements
+
+Introducing Cosette https://medium.com/@uwdb/introducing-cosette-527898504bd6
+
+Check if two "select"s are equivalent https://stackoverflow.com/questions/5727882/check-if-two-selects-are-equivalent
+
+automated check if two SQL queries are semantically equal https://stackoverflow.com/questions/36304088/automated-check-if-two-sql-queries-are-semantically-equal
+
 ## 优化器
 
 ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215.html

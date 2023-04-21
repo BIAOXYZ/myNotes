@@ -48,6 +48,9 @@ PostgreSQL 与 MySQL 相比，优势何在？ - 知乎 https://www.zhihu.com/que
 - 千万级数据下的Mysql优化 https://blog.csdn.net/shmnh/article/details/80753279
 - PostgreSQL 如何潇洒的处理每天上百TB的数据增量 https://developer.aliyun.com/article/8528 || https://www.modb.pro/db/93340
 
+MariaDB 市值暴跌，收入不足以支持运营 https://www.v2ex.com/t/934297
+- > PG 的写入效率实在没法让人拒绝， https://www.liuquanhao.com/posts/postgresql-14-vs-mariadb-10.6-vs-mysql-8-benchmark/
+
 # TPC
 
 ## tpcc
