@@ -15,6 +15,8 @@ docker源码学习和注解(基于docker 1.2.0) https://github.com/yifengyou/doc
 
 【Docker 基础知识】存储驱动overlay和overlay2 https://blog.csdn.net/zhonglinzhang/article/details/80970411
 
+Docker镜像存储-overlayfs https://www.cnblogs.com/wdliu/p/10483252.html
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## `/var/run/docker.sock`
