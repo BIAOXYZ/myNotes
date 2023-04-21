@@ -17,6 +17,32 @@ lsof https://en.wikipedia.org/wiki/Lsof
     NODE：索引节点(文件在磁盘上的标识)
     NAME：打开文件的确切名称
     ```
+- > **查看被打开的与网络相关的文件**
+  * >
+    ```console 
+    -i 选项用来查看被打开的和网络相关的文件，其参数的格式如下：
+    [46][protocol][@hostname|hostaddr][:service|port]
+    46 表示 IP 协议的版本
+    protocol 表示网络协议的名称，比如 TCP 或 UDP  
+    hostname 或 hostaddr 表示主机地址
+    service 指 /etc/services 中的名称，比如 smtp 或多个服务的列表
+    port 表示端口号，可以指定一个或多个
+    ```
+  * > `-i` 选项默认会同时输出 IPv4 和 IPv6 打开的文件：
+    ```sh
+    $ sudo lsof -i
+    ```
+  * > **列出与 22 号端口相关的文件**
+    ```sh
+    $ sudo lsof -i:22
+    ```
+- > **查看某个用户打开的所有文件**
+  * > **杀掉某个用户打开了文件的所有进程**
+    ```sh
+    $ kill -9 $(lsof -t -u nick)
+    ```
+    > 该命令中的 `-t` 选项让 lsof 命令只输出进程的 PID：![](https://img2018.cnblogs.com/blog/952033/201901/952033-20190115132038422-864167888.png)
+    >> 【[:star:][`*`]】 //notes：实测可以用类似 `kill -9 $(lsof -i:12345 -t)` 命令一键杀掉所有正在使用 `12345` 端口的进程。
 
 3.lsof 一切皆文件 https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html
 - > 实例3：列出某个用户打开的文件信息

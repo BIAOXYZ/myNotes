@@ -55,6 +55,10 @@ LeetCode力扣 #动态规划 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4M
 
 力扣上的 DP 问题分类汇总 https://leetcode-cn.com/circle/article/NfHhXD/
 
+精华文章汇总 https://mp.weixin.qq.com/s/4d3DDck0wbodwzD9qz1mHw  【from `码农的荒岛求生`】
+- 彻底理解动态规划1：最长公共超序列 https://mp.weixin.qq.com/s/3LzuUduVYouQ1jLWD2LAVA
+- 彻底理解动态规划：编辑距离 https://mp.weixin.qq.com/s/6mNpXvnoG8XedeQTmjy6rQ
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 动态规划之空间优化与总结回顾 https://www.cxyxiaowu.com/7848.html

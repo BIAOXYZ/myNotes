@@ -206,10 +206,23 @@ SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 分布式一致性hash
+
+分布式系统中一致性哈希算法 https://www.cnblogs.com/jajian/p/10896624.html
+- > **基本思想原理**
+  * > 既然 hash的计算结果是 int 类型，而 java 中 int 的最小值是 `-2^31`，最大值是 `2^31-1`。意味着任何通过哈希取模之后的无符号值都会在 `0 ~ 2^31-1` 范围之间，共 `2^32` 个数。那我们是否可以不对服务器的数量进行取模而是直接对 `2^32` 取模。这就形成了一致性哈希的基本算法思想，什么意思呢？
+  * > 简单来说，一致性Hash算法将整个哈希值空间组织成一个虚拟的圆环，如假设某哈希函数 H 的值空间为 `0 ~ 2^32-1`（即哈希值是一个32位无符号整形），整个哈希环如下：
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # SnowFlake算法
+
+雪花算法 https://zh.wikipedia.org/wiki/%E9%9B%AA%E8%8A%B1%E7%AE%97%E6%B3%95 || Snowflake ID https://en.wikipedia.org/wiki/Snowflake_ID
 
 理解分布式id生成算法SnowFlake https://segmentfault.com/a/1190000011282426
 
 分布式唯一id：snowflake算法思考 https://juejin.im/post/6844903562007314440
 
 忘掉 Snowflake，感受一下性能高出 587 倍的全局唯一 ID 生成算法 https://juejin.im/post/6846687584324681735
+
+Twitter的雪花算法（snowflake）分布式&自增ID https://github.com/cloudyan/snowflake
