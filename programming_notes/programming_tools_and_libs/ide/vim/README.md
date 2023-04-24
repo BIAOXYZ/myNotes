@@ -256,3 +256,13 @@ How To Use Vim for Advanced Editing of Plain Text or Code on a VPS https://www.d
 Vim Games – Games You Can Play with the Vim Editor https://linuxhint.com/vim_editor_games/
 - Vim Adventures
   * https://vim-adventures.com/
+
+新手该如何入门 vim 达到能基本使用它作为生产力 https://www.v2ex.com/t/934910
+- > 我用 vim 两三年，能坚持下来原因是 vim 的宏和快捷键太香了，像把 vim 搞成 ide 不如直接用 ide 配个 vim 插件来得方便。教程推荐一个 [简明 Vim 练级攻略](https://coolshell.cn/articles/5426.html) 我初学时就是看这个。
+- > 敲 vimtutor,花一个小时好好练习一下
+- > 2333 ，趁着年轻的时候折腾一下吧，年纪大了之后只想开箱即用。
+- > 编辑器装 vim 插件，我之前是在微信读书上看的《Vim 实用技巧》
+- > 最开始是使用同事的 vimrc： https://github.com/apemost/vimrc ,开箱即用。用了几年之后，慢慢开始构建自己的 vimrc
+- > 我是在 VSCode 里面装了 Vim 插件，这样既能够使用 VSCode 的全部功能，又能用 Vim 的方式编辑代码。 <br> 至于学习路径，我是参照着 VSCode 中 Vim 插件所提供的功能（ https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md ），然后把这个教程（ https://github.com/iggredible/Learn-Vim ）中 Vim 插件实现了的功能的相关快捷键过一遍，基本上就 OK 了。
+- > vim 大冒险，边玩边学 https://vim-adventures.com/
+- > vimtutor 走一遍，然后对着这个自己玩： https://vim.rtorr.com/lang/zh_cn

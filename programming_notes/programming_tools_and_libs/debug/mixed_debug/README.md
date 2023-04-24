@@ -11,3 +11,5 @@ Debugging mixed Python C++ in VS Code. Can't enter sudo password https://stackov
 
 VS Code Python C++ Debug https://github.com/benibenj/vscode-pythonCpp
 - Python C++ Debugger https://marketplace.visualstudio.com/items?itemName=benjamin-simmonds.pythoncpp-debug
+
+Debugging Mixed Python/C++ code in Visual Studio Code https://gist.github.com/kongdd/f49fabdbf0af20ec7fd6b4f8cd1f450d

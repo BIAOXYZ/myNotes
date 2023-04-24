@@ -12,6 +12,15 @@ Python 程序如何高效地调试？ - Rui L的回答 - 知乎 https://www.zhih
 
 Python 程序如何高效地调试？ - 小明的回答 - 知乎 https://www.zhihu.com/question/21572891/answer/123220574
 
+# ~~ptvsd~~  -->  debugpy
+
+debugpy - a debugger for Python https://github.com/microsoft/debugpy
+
+🛑 ᴘᴛᴠsᴅ ɪs ᴅᴇᴘʀᴇᴄᴀᴛᴇᴅ 🛑 https://github.com/microsoft/ptvsd
+- > A replacement implementation of DAP for Python is [debugpy](https://pypi.org/project/debugpy/), which is based on the development branch (5.x) of ptvsd. All future development is going to be happening in debugpy; there will be no further commits to or releases of ptvsd.
+
+Remote Debugging https://donjayamanne.github.io/pythonVSCodeDocs/docs/debugging_remote-debugging/
+
 # remote-pdb
 
 Remote vanilla PDB (over TCP sockets). https://github.com/ionelmc/python-remote-pdb
