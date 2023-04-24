@@ -304,11 +304,13 @@ Hash join算法原理 https://www.cnblogs.com/qlee/archive/2011/04/11/2012572.ht
 
 ## 关系代数
 
-Relational algebra https://en.wikipedia.org/wiki/Relational_algebra
+Relational algebra https://en.wikipedia.org/wiki/Relational_algebra || 关系代数 (数据库) https://zh.wikipedia.org/wiki/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0_(%E6%95%B0%E6%8D%AE%E5%BA%93)
 
 Relational Algebraic Equivalence Transformation Rules https://www.postgresql.org/message-id/attachment/32513/EquivalenceRules.pdf
 
 Relational algebra -- Basic Operations Algebra of Bags http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/ra.pdf
+
+数据库笔记（十）——关系代数 https://www.jianshu.com/p/f7f9440e30a5
 
 ### 证明两个SQL相当或者说语意是一样的
 

@@ -173,6 +173,9 @@ operator sdk 教程 https://github.com/xujiyou/blog-data/blob/88c463ab26/%E4%BA%
 
 https://github.com/operator-framework/operator-sdk/blob/05a106abd9ff94bb2f0cc84b5054d0a603c9474f/doc/user-guide.md
 
+Kubernetes Operator 最佳实践 http://www.yunweipai.com/43312.html
+- > 链接：https://cloud.redhat.com/blog/kubernetes-operators-best-practices
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 各种operator项目
