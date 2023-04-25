@@ -24,6 +24,8 @@ How can I debug a Flask App using gunicorn https://stackoverflow.com/questions/6
 Enabling the Flask Interactive Debugger in Development with gunicorn https://nickjanetakis.com/blog/enabling-the-flask-interactive-debugger-in-development-with-gunicorn#enabling-the-interactive-debugger-with-gunicorn
 - > If you’re looking for a complete working example, you can find one in the open source version of my [Build a SAAS App with Flask course on GitHub](https://github.com/nickjj/build-a-saas-app-with-flask) which is updated for Flask 1.0.
 
+How does one use the VSCode debugger to debug a Gunicorn worker process? https://stackoverflow.com/questions/39842422/how-does-one-use-the-vscode-debugger-to-debug-a-gunicorn-worker-process
+
 ## 实战过的
 
 PYTHON : Debugging a Flask app running in Gunicorn https://www.youtube.com/watch?v=0iF203dj1Ps

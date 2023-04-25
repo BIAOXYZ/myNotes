@@ -74,3 +74,5 @@ Fixed Point and Floating Point Number Representations https://www.tutorialspoint
   * > 我们已经知道 ***32位二进制*** 可以表示的信息量有 **$2^{32}\approx 4*10^9$**，但是很多语言都会宣称它们的 ***32位单精度浮点数*** 的数值范围约为 **$-3.4*10^{38} ～ 3.4*10^{38}$**（左右边界），这是因为采用了浮点数格式。
 - > **3. IEEE 754 标准的浮点数**
   * > IEEE 二进制浮点数算术标准（IEEE 754）是广泛使用的浮点数运算标准，是大多数高级语言的现行浮点运算标准，例如C/C++、Java、JavaScript等。
+
+什么是定点数？ - Kaito的文章 - 知乎 https://zhuanlan.zhihu.com/p/338588296 || https://cloud.tencent.com/developer/article/1805432

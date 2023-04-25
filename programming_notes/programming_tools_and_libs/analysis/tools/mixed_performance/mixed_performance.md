@@ -1,6 +1,8 @@
 
 How to profile combined python and c code https://stackoverflow.com/questions/4051117/how-to-profile-combined-python-and-c-code
 
+Allow the linux perf profiler to see Python calls #96143 https://github.com/python/cpython/issues/96143
+
 # Palanteer
 
 Look into Palanteer and get an omniscient view of your program https://github.com/dfeneyrou/palanteer

@@ -1,4 +1,8 @@
 
+# from 官方
+
+The SQLite Query Optimizer Overview https://www.sqlite.org/optoverview.html || SQLite查询优化器概述 https://www.sqlite.net.cn/optoverview.html
+
 # SQLite性能之`PRAGMA`
 
 【[:star:][`*`]】 Sqlite3写性能优化-每秒百万条写入 https://blog.csdn.net/Ango_/article/details/122074816
