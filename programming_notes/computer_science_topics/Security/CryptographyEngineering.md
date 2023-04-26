@@ -95,6 +95,13 @@ ge25519 https://pkg.go.dev/github.com/oasisprotocol/ed25519/internal/ge25519
 
 Replacing Curve25519 with Ristretto255 https://crypto.stackexchange.com/questions/101373/replacing-curve25519-with-ristretto255
 
+Why Ristretto? https://ristretto.group/why_ristretto.html
+- > **Background**
+  * > On the other hand, prime-order curves provide the correct abstraction, but their formulas are slower and more difficult to implement in constant time. A clean solution to this dilemma is Mike Hamburg's [Decaf proposal](https://eprint.iacr.org/2015/673.pdf), which shows how to use a cofactor-4 curve to provide a prime-order group – with no additional cost.
+
+(CRYPTO 2015) Decaf: Eliminating cofactors through point compression https://eprint.iacr.org/2015/673.pdf
+- > “Let G be a group of prime order q.” This defines the requirements for the main group in many cryptographic systems,
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # MPC
