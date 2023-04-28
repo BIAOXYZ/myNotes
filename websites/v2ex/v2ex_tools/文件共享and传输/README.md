@@ -1,4 +1,30 @@
 
+局域网内传输文件最快的方案或软件是什么? https://www.v2ex.com/t/936118
+- > 这个完全得看场景吧，自己的两台机器，小文件直接 scp ，大文件走 NFS ；要是和同事互传可能就用 `nc`
+- > smb
+- > LocalSend https://github.com/localsend/localsend
+- > 我一直在用 node 的命令， `http-server -p=8081`
+- > 局域网内最快的方案，先升级 2.5G 网口的路由器+交换机+机箱上的网卡也升级成带有 2.5G 网口，或者用一个 2.5G 网口的 USB 千兆网卡（ RTL 部分网卡，还要某些特定版本的驱动才能满速）
+局域网共享文件夹 _，
+- > smb 共享文件夹，跑满。
+- > netsend ，能跑满内网带宽 https://github.com/williamnie/netSend
+- > `python -m http.server`
+- > dukto
+- > sftp
+- > 个人感觉，smb 不如 webdav ，推荐一个轻量化 webdav 软件 <br> https://github.com/docblue/chfsgui
+- > rsync <br> windows 用 hfs
+- > ftp
+- > `croc`
+- > 答案是 resilio sync, 你们说的都是中心化，P2P 才是最快的
+- > https://github.com/KOHGYLW/kiftd 公司局域网找了台机器搭了一个这个，挺好用
+- > 自荐： https://github.com/songquanpeng/go-file
+- > https://github.com/blenderskool/blaze?ref=appinn <br> webrtc,直接网页就可以 p2p 了
+- > iSCSI 挂载 LUN 到本地然后复制
+- > 用 `sshfs` 挂载后就跟本地文件夹一样用
+  >> //notes：感觉这个好像不错，回头可以试试。但是查了下（ https://github.com/libfuse/sshfs ）好像已经不维护了- -
+- > https://github.com/LANDrop/LANDrop 这个也行
+- > https://mongoose.ws/binary/ 92kb 的服务器(比 python 的同步服务器好)
+
 跨网，不安装任何软件、服务，怎么传输文件呢？ https://www.v2ex.com/t/882592
 ```console
 单靠浏览器，跨网，不安装任何软件、服务，怎么传输文件呢？ 局域网 drop.ioiox.com 比较靠谱，跨网 file.pizza 根本无法下载。 有好用的跨网传输？
