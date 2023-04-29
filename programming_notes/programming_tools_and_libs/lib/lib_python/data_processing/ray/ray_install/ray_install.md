@@ -24,6 +24,15 @@ pip3 install 'ray[default]'
 ray start --head --include-dashboard 1 --dashboard-host 0.0.0.0
 ## 其他节点执行
 ray start --address='<your_node_ip>:6379'
+
+# 选装的包
+## ip
+sudo apt install -y iproute2
+## ping
+sudo apt install -y iputils-ping
+## nc
+sudo apt install -y netcat
+sudo apt install -y lsof
 ```
 
 ## 1.2

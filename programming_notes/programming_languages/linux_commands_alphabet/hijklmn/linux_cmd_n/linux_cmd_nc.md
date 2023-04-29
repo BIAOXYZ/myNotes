@@ -22,3 +22,28 @@
 NetCat 命令 https://www.cnblogs.com/liangjingfu/p/10437834.html
 
 # 个人实战
+
+## 使用 nc 传输文件
+
+使用nc命令传输文件和文件夹 https://www.cnblogs.com/toSeek/p/6559734.html
+
+nc用法2，使用nc传输文件和目录 https://blog.csdn.net/mtj66/article/details/74959287
+
+使用nc命令通过网络传送文件 https://blog.csdn.net/qq_37858281/article/details/105348107
+
+```sh
+# 接收端
+$ lsof -i:1234
+$ nc -l 1234 > file_recv.txt
+......
+......
+
+# 发送端
+## （按理说我预期发送端发送完成后会自己结束的，结果并没有，还是我 Ctrl + C）
+$ nc 172.17.0.5 1234 < file.txt
+^C
+
+# 接收端
+$ cat file_recv.txt
+abcd1234
+```
