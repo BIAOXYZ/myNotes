@@ -32,6 +32,7 @@ sudo apt install -y iproute2
 sudo apt install -y iputils-ping
 ## nc
 sudo apt install -y netcat
+## 其他（包名和二进制一致的那种）
 sudo apt install -y lsof
 ```
 
