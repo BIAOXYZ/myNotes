@@ -5,6 +5,10 @@ Task00：绪论 - 环境搭建.md https://github.com/datawhalechina/team-learnin
 
 MySQL常用操作指令大全 https://blog.csdn.net/weixin_41105242/article/details/109108573
 
+# apt 方式安装
+
+How to Install MySQL on Debian 10 https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
+
 # 登陆密码问题
 
 ## 1

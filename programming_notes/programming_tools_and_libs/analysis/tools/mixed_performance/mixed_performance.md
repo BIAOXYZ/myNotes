@@ -11,3 +11,7 @@ Look into Palanteer and get an omniscient view of your program https://github.co
 # NVTX
 
 NVIDIA Tools Extension API: An Annotation Tool for Profiling Code in Python and C/C++ https://developer.nvidia.com/blog/nvidia-tools-extension-api-nvtx-annotation-tool-for-profiling-code-in-python-and-c-c/
+
+# py-spy
+
+Profiling Native Python Extensions https://www.benfrederickson.com/profiling-native-python-extensions-with-py-spy/
