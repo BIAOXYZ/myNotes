@@ -17,10 +17,18 @@ Vampire Gaze https://diablo2.diablowiki.net/Vampire_Gaze
 
 暗黑破坏神2你所挑战的关卡BOSS都有什么关系？ - 暗黑达人的文章 - 知乎 https://zhuanlan.zhihu.com/p/259914290
 
-# 其他
+# 暗黑技能
 
-暗黑2通关后不得不做的事——挑战隐藏6BOSS - 暗黑达人的文章 - 知乎 https://zhuanlan.zhihu.com/p/114007215
+http://bbs.anhei2.com/skill.html
 
 # 攻略
 
 【合金萝卜】暗黑2开荒快乐指南【暗黑2重制版】 https://www.bilibili.com/video/BV1a44y147g1
+
+# 其他
+
+暗黑2通关后不得不做的事——挑战隐藏6BOSS - 暗黑达人的文章 - 知乎 https://zhuanlan.zhihu.com/p/114007215
+
+# 其他2
+
+暗黑破坏神2 https://www.macappbox.com/a/diablo2-for-mac.html
