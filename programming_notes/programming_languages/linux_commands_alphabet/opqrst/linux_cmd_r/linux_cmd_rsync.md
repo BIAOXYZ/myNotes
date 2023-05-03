@@ -183,3 +183,7 @@ $ crontab -l
 * * * * * export PASSWORD="2018" && nohup code-server --host 0.0.0.0 --port 9999 > /dev/null 2 >&1 &
 */2 * * * * /home/<your_user_name>/tmpfiles/crontabfiles/sync_python_lib.sh
 ```
+
+# rsync + ssh 实现两台远程机器之间同步
+
+How to rsync files between two remotes? https://unix.stackexchange.com/questions/183504/how-to-rsync-files-between-two-remotes
