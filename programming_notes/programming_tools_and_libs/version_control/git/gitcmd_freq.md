@@ -105,8 +105,6 @@ git reset HEAD file //去掉已经加入暂存区中的修改（这个命令的�
 # 也有用 git reset -- file 的
 ```
 
-https://my.oschina.net/xdev/blog/114383 （以上那俩可以参照这个页面的基本用法那里的 ）
-
 ```
 git rm --cached file //去除已加入追踪的file。此外，git rm -f file是连file都直接删除了
 ```
@@ -115,6 +113,17 @@ git rm --cached -r dir //目录的话加-r，递归删除
 ```
 
 *PS：切换分支（在未冲突的情况下），untracked文件，工作区和暂存区都会保存。也就是git的各个分支之间是共用这些区域的。*
+
+#### 多个加入暂存区的修改一次 unstage 掉
+
+How to unstage large number of files without deleting the content https://stackoverflow.com/questions/7103631/how-to-unstage-large-number-of-files-without-deleting-the-content
+- https://stackoverflow.com/questions/7103631/how-to-unstage-large-number-of-files-without-deleting-the-content/24542753#24542753
+  * > If all you want is to undo an overzealous "git add" run:
+    ```sh
+    git reset
+    ```
+    > Your changes will be unstaged and ready for you to re-add as you please.
+  * > DO NOT RUN `git reset --hard`. It will not only unstage your added files, but will revert any changes you made in your working directory. If you created any new files in working directory, it will not delete them though.
 
 ### 撤销提交 git reset 和 git revert
 
