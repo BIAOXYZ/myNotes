@@ -85,3 +85,26 @@ tailscale：个人认为比zerotier更好 https://www.xiaoji.la/d/2407
 - > 当时倾向于使用`sdedit`。时过境迁，如今的WebSequenceDiagrams变得更好看了，而我也选择了`PlantUML`作为绘制时序图的主力工具。下面这张图是PlantUML官网给出的例子
 - > **UML类图**
   * > 如果要画类图，首选的工具是`mermaid`。跟PlantUML一样，`mermaid`也是一个大而全的东西，除了画UML类图，也可以画流程图、时序图，以及UML状态图等。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# AI for coding
+
+格斗之王！AI写出来的AI竟然这么强！ https://www.bilibili.com/video/BV1DT411H7ph || https://www.youtube.com/watch?v=B7bYZ5ZFbl0
+```console
+我让 AI 写了个 AI，终于打败了街霸里的 AI，还意外发现了一段游戏史上的黑暗秘密！
+项目链接：https://github.com/linyiLYi/street-fighter-ai
+Timestamp:
+00:00 街头霸王挑战
+01:02 让AI来写AI
+03:00 胆怯的AI
+04:01 AI学习助手
+05:57 与AI合作改进AI
+08:03 处理过拟合
+09:09 最终决战
+```
+
+AI Code Tools: The Ultimate Guide in 2023 https://codesubmit.io/blog/ai-code-tools/
+
+GitHub 放大招，CEO 现场挑战 18 分钟开发小游戏，人还在台上网友已经玩到了 https://www.ithome.com/0/690/732.htm
+- > 贪吃蛇小游戏： https://hubberboss.github.io/cobra/
