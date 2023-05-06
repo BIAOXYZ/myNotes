@@ -32,7 +32,7 @@ endif
 
 ## 将vim打造成IDE
 
-如何在 Linux 上使用 Vundle 管理 Vim 插件 https://linux.cn/article-9416-1.html
+~~如何在 Linux 上使用 Vundle 管理 Vim 插件 https://linux.cn/article-9416-1.html~~  【//notes：Vundle可能已经过时了】
 
 use vim as IDE https://github.com/yangyangwithgnu/use_vim_as_ide
 
@@ -57,3 +57,9 @@ Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
   * 《Vim 中文速查表》 https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt
 
 2020年vim的C/C++配置 https://www.jianshu.com/p/249850f2cc64
+
+2022 年 vim 的 C/C++ 配置 https://martins3.github.io/My-Linux-Config/docs/nvim.html
+- > **入门 vim**
+  * > 其实关于 vim 的基本知识教程有很多，这里我推荐两个网站
+    + > [openvim](https://www.openvim.com/tutorial.html): 交互式的学习 vim
+    + > [vim check sheet](https://vim.rtorr.com/lang/zh_cn): vim 常用快捷键清单

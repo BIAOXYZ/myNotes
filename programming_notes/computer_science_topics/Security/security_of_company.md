@@ -304,6 +304,10 @@ Jeddak亮相2022世界人工智能大会|隐私计算的实践与探索 https://
 - > 张鑫当时的导师Adrian Perrig解释道，“SCION承诺，在分布式拒绝服务攻击的情况下，也能根除路由攻击并提供通信保证。”Adrian Perrig如今在苏黎世联邦理工学院工作。前段时间，该校专门发了新闻，庆贺Adrian Perrig之前指导的论文获得IEEE时间沉淀奖。
 - > 时移世易，当初人们眼中的冷门研究，近些年已经成为互联网安全领域的热门，火山引擎也给出了自己的隐私计算解决方案——Jeddak。
 
+## TikTok
+
+DPCA-PSI Protocol for Privacy-Preserving Set Intersection and Compute https://github.com/tiktok-privacy-innnovation/DPCA-PSI
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他项目

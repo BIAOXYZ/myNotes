@@ -162,7 +162,8 @@ Raft算法原理 https://www.codedump.info/post/20180921-raft/
 
 ## Raft论文
 
-【[:star:][`*`]】 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
+Raft一致性算法论文的中文翻译 https://github.com/maemual/raft-zh_cn
+- 【[:star:][`*`]】 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
 
 寻找一种易于理解的一致性算法（扩展版） https://leeweir.github.io/posts/raft/
 
