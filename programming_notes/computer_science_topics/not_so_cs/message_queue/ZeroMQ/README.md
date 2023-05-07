@@ -15,8 +15,6 @@ ZMQ 指南 https://wizardforcel.gitbooks.io/zmq-guide/content/index.html
 
 # 其他
 
-Share data between C and Python with this messaging library https://opensource.com/article/20/3/zeromq-c-python
-
 ZeroMQ简介及应用场景分析 https://blog.csdn.net/mysunshinexia01/article/details/80871694
 
 消息队列库——ZeroMQ https://www.cnblogs.com/chenny7/p/6245236.html
