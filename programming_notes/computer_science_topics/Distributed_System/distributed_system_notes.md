@@ -181,8 +181,6 @@ Raft算法论文翻译 https://mp.weixin.qq.com/s/XcH7Ay96I0zU_Lp0mMw5OQ
 
 一个Raft开源项目的结构分析 https://mp.weixin.qq.com/s/1_KAMAx6je8fLsMG1cM-wQ
 
-Golang implementation of the Raft consensus protocol https://github.com/hashicorp/raft
-
 A feature complete and high performance multi-group Raft library in Go. https://github.com/lni/dragonboat || https://github.com/lni/dragonboat/blob/master/README.CHS.md
 - 大规模Go项目几乎必踏的几个坑 - Dragonboat为例 - 我做分布式系统的文章 - 知乎 https://zhuanlan.zhihu.com/p/53284649
 
@@ -198,6 +196,15 @@ Openraft https://github.com/datafuselabs/openraft
 - > Advanced Raft in Rust using Tokio.
 - > Raft is not yet good enough. This project intends to improve raft as the next-generation consensus protocol for distributed data storage systems (SQL, NoSQL, KV, Streaming, Graph ... or maybe something more exotic).
 - > Currently, openraft is the consensus engine of meta-service cluster in databend.
+
+## hashicorp raft
+
+Consensus Protocol https://developer.hashicorp.com/consul/docs/architecture/consensus
+- > Consul uses a [consensus protocol](https://en.wikipedia.org/wiki/Consensus_(computer_science)) to provide [Consistency (as defined by CAP)](https://en.wikipedia.org/wiki/CAP_theorem). The consensus protocol is based on ["Raft: In search of an Understandable Consensus Algorithm"](https://raft.github.io/raft.pdf). For a visual explanation of Raft, see [The Secret Lives of Data](http://thesecretlivesofdata.com/raft).
+
+Golang implementation of the Raft consensus protocol https://github.com/hashicorp/raft
+
+🔥 技术笔记 ( 高性能/分布式/kubernetes/golang/kv引擎等 ) https://github.com/rfyiamcool/notes
 
 ## SOFAJRaft
 
