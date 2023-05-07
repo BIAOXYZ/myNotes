@@ -1,4 +1,10 @@
 
+如何学习虚拟化相关技术？ https://www.v2ex.com/t/937955
+- > 可参考 https://zhuanlan.zhihu.com/p/400088344 <br> 南大的 NEMU 实验应该比较对口
+- > 不知道楼主想了解哪块儿？有看到一个课程 https://github.com/tandasat/Hypervisor-101-in-Rust ，不知道是不是你需要的
+- > 从业方向刚好就这一块，搞过 RHEV 、OpenStack 和纯 Libvirt 集群，建议从 KVM 开始学起，Domain 的 XML 关键字段，基本的 CRUD 这些然后再慢慢深入网络这一块。
+- > 可以看看那些运维培训的 KVM 课程，那种课程看完下来基本上算是入门了。
+
 老哥们知道怎么远程 ssh 到 KVM 的 guest 系统吗？ https://www.v2ex.com/t/909004
 - >
   ```

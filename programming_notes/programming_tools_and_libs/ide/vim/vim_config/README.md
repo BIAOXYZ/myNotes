@@ -24,6 +24,18 @@ endif
    :set mouse-=a
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 开箱即用vim配置
+
+The ultimate Vim configuration (vimrc) https://github.com/amix/vimrc
+- https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
+
+搭建基于 Vim 的 C++和 Python 开发环境[持续更新] https://juejin.cn/post/6844903844736925703
+- > 我的 `.vimrc` 参考： https://github.com/cposture/my-vim
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # old
 
 ## Vim配置
@@ -48,6 +60,10 @@ Vim 配置入门 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
     + > **The Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your `~/.vimrc` and you will have a good basic setup
 
 【B站的vim-vide】Lightest vimrc, while strong enough. 最轻的vim配置，却足够强！ https://github.com/bilibili/vim-vide
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
 
