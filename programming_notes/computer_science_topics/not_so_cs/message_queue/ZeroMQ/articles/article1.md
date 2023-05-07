@@ -1,7 +1,7 @@
 
 # 1
 
-Share data between C and Python with this messaging library https://opensource.com/article/20/3/zeromq-c-python
+【[:star:][`*`]】 Share data between C and Python with this messaging library https://opensource.com/article/20/3/zeromq-c-python
 
 ## 文章个人实战
 
@@ -161,11 +161,18 @@ with zmq.Context() as context:
 ```
 
 ```sh
+# 实际上这次用的是 docker
+docker run -itd --name testzmq ubuntu:20.04 bash
+docker exec -it testzmq bash
+mkdir testzmq
+cd testzmq/
+
 apt update
 apt install -y clang libzmq5 libzmq3-dev python3 python3-zmq
 
-apt install -y python3-pip
-python3 -m pip install zmq
+# 这两个没用，因为前面已经装了 python3-zmq 了。
+# apt install -y python3-pip
+# python3 -m pip install zmq
 
 $ ls
 hw_interface.c  libfancyhw.h  online_analysis.py
