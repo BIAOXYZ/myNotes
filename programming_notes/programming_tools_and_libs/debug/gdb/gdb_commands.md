@@ -8,6 +8,8 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 - https://sourceware.org/gdb/download/onlinedocs/
   * Debugging with gdb https://sourceware.org/gdb/download/onlinedocs/gdb.pdf
 
+10.5 Output Formats https://sourceware.org/gdb/onlinedocs/gdb/Output-Formats.html
+
 ## GDB原理
 
 一文看懂 | GDB 底层实现原理 https://mp.weixin.qq.com/s/TYqXPtanCKmBa-UeWoJLDA
@@ -174,6 +176,14 @@ gdb调试打印 `void*` 或者 `void **` 类型的成员方法 https://blog.csdn
   (gdb) p *(int *)map->entries
   $38 = 0
   ```
+
+GDB print all values in char array https://stackoverflow.com/questions/29528732/gdb-print-all-values-in-char-array
+- https://stackoverflow.com/questions/29528732/gdb-print-all-values-in-char-array/29528983#29528983
+  * > `x/19bc 变量名`
+
+What is the x command in GDB? https://www.educative.io/answers/what-is-the-x-command-in-gdb
+
+x command https://visualgdb.com/gdbreference/commands/x
 
 ## 较系统攻略
 

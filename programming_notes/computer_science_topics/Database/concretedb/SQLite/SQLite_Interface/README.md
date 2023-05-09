@@ -132,6 +132,10 @@ How do I check in SQLite whether a table exists? https://stackoverflow.com/quest
 
 How to count number of columns in a table in SQLITE? https://stackoverflow.com/questions/4301320/how-to-count-number-of-columns-in-a-table-in-sqlite
 
+How to get a list of column names on Sqlite3 database? https://stackoverflow.com/questions/947215/how-to-get-a-list-of-column-names-on-sqlite3-database
+- https://stackoverflow.com/questions/947215/how-to-get-a-list-of-column-names-on-sqlite3-database/948204#948204
+  * > `PRAGMA table_info(table_name);`
+
 # C++
 
 SQLiteC++ https://github.com/SRombauts/SQLiteCpp || http://srombauts.github.io/SQLiteCpp/
