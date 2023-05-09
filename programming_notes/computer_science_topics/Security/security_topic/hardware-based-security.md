@@ -40,6 +40,14 @@ CPU 有个禁区，内核权限也无法进入！ https://www.ithome.com/0/647/8
 英特尔修补大量 SGX 安全漏洞，请尽快更新补丁 https://www.ithome.com/0/673/952.htm
 - > 目前 SGX 已进入它生命周期中的第八个年头，虽然一直“漏洞百出”，但实际上该工具已在第 11 代和第 12 代酷睿等消费级处理器中弃用。
 
+技术门槛高？来看Intel机密计算技术在龙蜥社区的实践 |龙蜥技术 https://ost.51cto.com/posts/16645
+- > 机密计算通过在基于硬件的可信执行环境（TEE）中执行计算的方式来保护使用中的数据。这些安全的、隔离的环境可防止对使用中的应用程序和数据进行未经授权的访问或篡改，从而提升相关组织在管理敏感数据和受监管数据方面的安全级别。TEE目前流行的技术有 Intel 的`SGX`、`TDX`，AMD 的 `SEV` 及 ARM 的 `TrustZone` 等等。
+
+解构隐私计算技术路线与形态 https://www.infoq.cn/article/4w9iuclqe847yqb80ln9
+- > **可信执行环境（TEE）的分类**
+  * > 目前 TEE 环境总体分为私密性和非私密性：私密性的 TEE，比如 SGX，不仅能抗运行时攻击，也能抗物理攻击，任何离开寄存器的数据都会被自动、强制加密；非私密性的 TEE，比如 TrustZone，其依赖特权级的控制实现运行时保护(低优先级程序不能访问高优先级程序的资源)，但是其内存不做任何加解密控 制，可以被多种物理方式攻击。
+  * > 基于隐私计算的场景诉求，非私密 TEE 是不可用的。目前可用的私密性 TEE 主要是 Intel 的 SGX 以及国产的`海光 SEV` 等产品，尤其以 Intel 的 SGX 为业界主流，其安全性和性能都得到了实践认证。  
+
 ## Occlum (蚂蚁金服)
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum || https://occlum.io/
