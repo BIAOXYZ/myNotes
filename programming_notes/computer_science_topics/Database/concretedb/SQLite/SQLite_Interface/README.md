@@ -95,6 +95,8 @@ How to read Int64 values from sqlite database? https://stackoverflow.com/questio
 
 How do I check in SQLite whether a database exists C# https://stackoverflow.com/questions/21159790/how-do-i-check-in-sqlite-whether-a-database-exists-c-sharp
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 How do I check if a table exists in sqlite3 c++ API? [duplicate] https://stackoverflow.com/questions/3499295/how-do-i-check-if-a-table-exists-in-sqlite3-c-api
 - https://stackoverflow.com/questions/3499295/how-do-i-check-if-a-table-exists-in-sqlite3-c-api/3501527#3501527
   * > Variation on another given answer:
@@ -130,11 +132,37 @@ How do I check in SQLite whether a table exists? https://stackoverflow.com/quest
     ```
 - https://stackoverflow.com/questions/1601151/how-do-i-check-in-sqlite-whether-a-table-exists/1604121#1604121
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 How to count number of columns in a table in SQLITE? https://stackoverflow.com/questions/4301320/how-to-count-number-of-columns-in-a-table-in-sqlite
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 How to get a list of column names on Sqlite3 database? https://stackoverflow.com/questions/947215/how-to-get-a-list-of-column-names-on-sqlite3-database
 - https://stackoverflow.com/questions/947215/how-to-get-a-list-of-column-names-on-sqlite3-database/948204#948204
   * > `PRAGMA table_info(table_name);`
+
+***更好的做法是用这个接口：***
+How to get a list of column names https://stackoverflow.com/questions/685206/how-to-get-a-list-of-column-names
+- https://stackoverflow.com/questions/685206/how-to-get-a-list-of-column-names/57658111#57658111
+  * > You can use pragma related commands in sqlite like below
+    ```sql
+    pragma table_info("table_name")
+    --Alternatively
+    select * from pragma_table_info("table_name")
+    ```
+    >> 【[:star:][`*`]】 //notes：原因是 pragma 类型的语句在使用 legacy 的接口 `sqlite3_get_table(t1)` 时，在某些 OS 下有问题。但是用 `select * from pragma_table_info('t1')` 不会有问题。
+    >>> 【[:star:][`*`]】 //notes：表名用双引号引起来有时候有问题，用单引号貌似是没有任何问题的。
+    ```sh
+    $ sqlite3 1234 "select * from pragma_table_info("empty_table");"
+    Error: no such column: empty_table
+    $ sqlite3 1234 "select * from pragma_table_info(empty_table);"
+    Error: no such column: empty_table
+    $ sqlite3 1234 "select * from pragma_table_info('empty_table');"
+    0|row|INT|0||0
+    1|col|INT|0||0
+    2|val|TEXT|0||0
+    ```
 
 # C++
 
