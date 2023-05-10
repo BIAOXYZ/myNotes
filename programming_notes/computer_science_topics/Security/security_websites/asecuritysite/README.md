@@ -8,6 +8,8 @@
 - **Quick Jump (Others)**
   * Database SQL Analyser: Tutorial 1 (SQL statements) https://asecuritysite.com/database1/db/  【这网站甚至有SQL教程。。。】
 
+Bill Buchanan OBE https://www.youtube.com/@BillBuchanan
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
@@ -46,3 +48,8 @@ Cracking Elliptic Curves with the MOV Attack https://asecuritysite.com/pairing/m
 Tripartite Diffie-Hellman algorithm BN256 in Go https://asecuritysite.com/pairing/go_bn256
 
 BLS signatures and Crypto Pairing https://asecuritysite.com/pairing/js_bls
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+Ring Signatures And Anonymisation https://medium.com/asecuritysite-when-bob-met-alice/ring-signatures-and-anonymisation-c9640f08a193
+- Ring Signatures https://asecuritysite.com/encryption/ring_sig

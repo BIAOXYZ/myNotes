@@ -12,3 +12,7 @@
 https://www.zhihu.com/people/shang-shang-qian-67-10/posts
 - 《性能之巅》学习笔记之Dtrace - 上上谦的文章 - 知乎 https://zhuanlan.zhihu.com/p/71437161
 - 《性能之巅》学习笔记之内存和文件系统 其三 vm_area_struct 与 虚拟内存 - 上上谦的文章 - 知乎 https://zhuanlan.zhihu.com/p/79554619
+
+《性能之巅》学习笔记之Dtrace - 上上谦的文章 - 知乎 https://zhuanlan.zhihu.com/p/71437161
+- 【[:star:][`*`]】 动态追踪技术漫谈 https://blog.csdn.net/scdxmoe/article/details/73326099
+- 【[:star:][`*`]】 Linux内核调试技术——kprobe使用与实现 https://blog.csdn.net/luckyapple1028/article/details/52972315

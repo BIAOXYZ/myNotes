@@ -409,3 +409,10 @@ SSH tunnel https://www.ssh.com/ssh/tunneling/
 # 7. ssh连接复用（or 长连接）
 
 ssh复用连接配置 https://github.com/int32bit/dotfiles/blob/master/ssh/README.md
+
+# 8. 防止ssh自动断开
+
+保持ssh服务连接不断开的方法 https://ngwind.github.io/2019/01/25/%E4%BF%9D%E6%8C%81ssh%E6%9C%8D%E5%8A%A1%E8%BF%9E%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/
+>> //notes：还是 `ssh -o ServerAliveInterval=60 ${USER}@${HOST}` 最好用。
+
+SSH 保持连接不断开 https://www.jianshu.com/p/a84a6abf76c9

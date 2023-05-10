@@ -58,6 +58,10 @@ Shell Integration https://iterm2.com/documentation-shell-integration.html
 
 Utilities https://iterm2.com/documentation-utilities.html
 
+### 存储和恢复窗口
+
+How can I save tabs in iTerm 2 so they restore the next time the app is run? https://apple.stackexchange.com/questions/22445/how-can-i-save-tabs-in-iterm-2-so-they-restore-the-next-time-the-app-is-run
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac vnc

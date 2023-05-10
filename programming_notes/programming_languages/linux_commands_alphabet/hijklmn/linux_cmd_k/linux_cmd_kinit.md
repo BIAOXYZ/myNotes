@@ -31,7 +31,7 @@ $ cat login.sh
 #!/bin/bash
 CURR_DIR=$(dirname $0)
 $CURR_DIR/remoteMachine.exp
-ssh <your_user_name_on_remote_machine>@<your_ip_or_host_name>
+ssh -o ServerAliveInterval=60 <your_user_name_on_remote_machine>@<your_ip_or_host_name>
 $ 
 $ cat remoteMachine.exp
 #!/usr/bin/expect
