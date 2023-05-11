@@ -170,3 +170,7 @@ A practical guide to using the git stash command https://opensource.com/article/
     ```
 
 How would I extract a single file (or changes to a file) from a git stash? https://stackoverflow.com/questions/1105253/how-would-i-extract-a-single-file-or-changes-to-a-file-from-a-git-stash
+
+# 恢复丢失的 stash
+
+How do I recover a dropped stash in Git? https://stackoverflow.com/questions/89332/how-do-i-recover-a-dropped-stash-in-git
