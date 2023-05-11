@@ -307,6 +307,14 @@ Detection and Prevention of Security Attacks in VANET. https://github.com/naveen
 
 【转载】FragAttacks：USENIX 2021 安全会议演讲议题视频 https://www.bilibili.com/video/BV18Q4y1R7NJ
 
+## OOD
+
+out-of-distribution-detection https://github.com/topics/out-of-distribution-detection
+- OpenOOD: Benchmarking Generalized OOD Detection https://github.com/Jingkang50/OpenOOD
+- Generalized Out-of-Distribution Detection: A Survey https://github.com/Jingkang50/OODSurvey
+
+Single Layer Predictive Normalized Maximum Likelihood for Out-of-Distribution Detection https://github.com/kobybibas/pnml_ood_detection || https://arxiv.org/pdf/2110.09246.pdf
+
 A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks https://github.com/hendrycks/error-detection
 - > Implementations of the experiments found in ***`A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks`*** by Dan Hendrycks and Kevin Gimpel. https://arxiv.org/abs/1610.02136
 - A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks https://paperswithcode.com/paper/a-baseline-for-detecting-misclassified-and
