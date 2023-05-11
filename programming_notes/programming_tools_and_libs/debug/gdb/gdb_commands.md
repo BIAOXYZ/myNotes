@@ -360,6 +360,9 @@ https://stackoverflow.com/questions/9573683/where-is-gdbinit-is-located-and-how-
 上面那个帖子和这个帖子都说了可以对不同程序使用不同的.gdbinit文件。但是我没有自己试过。
 ```
 
+Buffer overflow works in gdb but not without it https://stackoverflow.com/questions/17775186/buffer-overflow-works-in-gdb-but-not-without-it
+- https://stackoverflow.com/questions/17775186/buffer-overflow-works-in-gdb-but-not-without-it/17775280#17775280
+
 ## 旧的GDB知识总结
 
 <<使用GDB命令行调试器调试C/C++程序>>
