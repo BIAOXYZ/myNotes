@@ -32,3 +32,5 @@
   * [x] **`本地(Mac)`** 浏览器（等远端docker容器起来后）输入 `远端ip:19999` + **`远端(Linux)`** 直接用官方github里的语句启动容器。PS：感觉那个面板挺不错的。
 - ray dashboard
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** 启动 ray 集群，需要在启动命令里指定一些控制面板相关的参数，如：`ray start --head --include-dashboard 1 --dashboard-host 0.0.0.0 --dashboard-port 8877`
+- ~~GoAccess~~
+  * GoAccess is a real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems or through your browser. https://github.com/allinurl/goaccess || https://goaccess.io/

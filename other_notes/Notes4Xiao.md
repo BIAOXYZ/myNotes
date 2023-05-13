@@ -309,9 +309,14 @@ Detection and Prevention of Security Attacks in VANET. https://github.com/naveen
 
 ## OOD
 
-out-of-distribution-detection https://github.com/topics/out-of-distribution-detection
+`#out-of-distribution-detection` https://github.com/topics/out-of-distribution-detection
 - OpenOOD: Benchmarking Generalized OOD Detection https://github.com/Jingkang50/OpenOOD
 - Generalized Out-of-Distribution Detection: A Survey https://github.com/Jingkang50/OODSurvey
+
+`#ood-detection` https://www.caotao.fun:8089/topics/ood-detection
+- PyTorch Out-of-Distribution Detection https://github.com/kkirchheim/pytorch-ood
+- Robust Out-of-distribution Detection in Neural Networks https://www.caotao.fun:8089/jfc43/robust-ood-detection || https://arxiv.org/abs/2003.09711
+- awesome-out-of-distribution-detection https://www.caotao.fun:8089/miniHuiHui/awesome-out-of-distribution-detection
 
 Single Layer Predictive Normalized Maximum Likelihood for Out-of-Distribution Detection https://github.com/kobybibas/pnml_ood_detection || https://arxiv.org/pdf/2110.09246.pdf
 

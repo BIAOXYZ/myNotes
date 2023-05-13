@@ -1,4 +1,12 @@
 
+这是我开发的编程语言 nature https://www.v2ex.com/t/939430
+```console
+当正式版本发布时，nature 会有稳定语法 API 、类型系统、GC 、协程、泛型、包管理、基础标准库。
+nature 支持交叉编译，可以编译到 linux/darwin & amd64/riscv64/wasm ，同样也可以解释到 nature-vm 执行。
+这是官网 https://nature-lang.org 你可以在这里得到更多的信息以及它的文档
+代码仓库 https://github.com/nature-lang/nature
+```
+
 非 CS, 想弄弄编译, 还啃龙书吗? https://www.v2ex.com/t/883710
 - > 我当前学习的路线供参考
   ```console
