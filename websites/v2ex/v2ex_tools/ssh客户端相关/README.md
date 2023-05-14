@@ -1,4 +1,6 @@
 
+你的终端管理软件是什么？ https://www.v2ex.com/t/939408
+
 大佬都爱用什么远程管理工具呢？ https://www.v2ex.com/t/891950
 
 在 MAC 上使用的 SSH 客户端 https://www.v2ex.com/t/891314
