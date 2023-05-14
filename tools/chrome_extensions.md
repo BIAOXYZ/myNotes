@@ -97,6 +97,9 @@ Chrome 键盘快捷键 https://support.google.com/chrome/answer/157179?hl=zh-Han
 | 关闭当前窗口【这个和Windows下不一致？】	| ⌘ + Shift + w |
 | 退出 Google Chrome	| ⌘ + q 【这个和Windows快捷键下不一致】 |
 
+下一个Tab: Control + Tab 
+前一个Tab: Control + Shift + Tab
+
 ## chrome其他功能
 
 谷歌(chrome)浏览器快速将网页保存为pdf文件 https://jingyan.baidu.com/article/5bbb5a1b1d857413eaa17946.html

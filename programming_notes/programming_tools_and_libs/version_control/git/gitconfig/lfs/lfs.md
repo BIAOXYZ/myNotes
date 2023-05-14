@@ -50,3 +50,5 @@ Git LFS https://www.atlassian.com/git/tutorials/git-lfs
 - > **Installing Git LFS**
 
 Git Large File Storage (LFS) https://docs.gitlab.com/ee/topics/git/lfs/
+
+详解 Git 大文件存储（Git LFS） - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/146683392

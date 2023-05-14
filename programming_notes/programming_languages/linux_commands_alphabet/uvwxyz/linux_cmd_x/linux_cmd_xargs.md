@@ -9,4 +9,5 @@
 
 # 其他博客类链接
 
-xargs 命令教程 http://www.ruanyifeng.com/blog/2019/08/xargs-tutorial.html
+xargs 命令教程 https://www.ruanyifeng.com/blog/2019/08/xargs-tutorial.html
+- > **五、`-p` 参数，`-t` 参数**

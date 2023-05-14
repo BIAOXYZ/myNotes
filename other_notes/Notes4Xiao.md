@@ -309,6 +309,8 @@ Detection and Prevention of Security Attacks in VANET. https://github.com/naveen
 
 ## OOD
 
+Towards Total Recall in Industrial Anomaly Detection https://github.com/amazon-science/patchcore-inspection
+
 `#out-of-distribution-detection` https://github.com/topics/out-of-distribution-detection
 - OpenOOD: Benchmarking Generalized OOD Detection https://github.com/Jingkang50/OpenOOD
 - Generalized Out-of-Distribution Detection: A Survey https://github.com/Jingkang50/OODSurvey
