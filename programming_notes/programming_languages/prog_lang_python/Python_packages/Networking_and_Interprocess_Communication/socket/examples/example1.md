@@ -113,3 +113,79 @@ Connected by  ('127.0.0.1', 62768)
 - > **七层网络模型——OSI标准**
   * > 于这七层模型，有一个记忆口诀： `All People Seem To Need Data Processing`
   * > 翻译成英语是“似乎所有人都需要数据处理”。这一句话由七个英语单词组成，每一个的首字母正好是按第 7 层到第 1 层的首字母的顺序。
+
+# 3
+
+How to convert bytes data into a python pandas dataframe? https://stackoverflow.com/questions/47379476/how-to-convert-bytes-data-into-a-python-pandas-dataframe
+
+**`server.py`**
+```py
+import socket
+import pandas as pd
+from io import BytesIO
+
+# 创建一个 socket 对象
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# 监听端口
+host = '127.0.0.1'
+port = 8003
+server_socket.bind((host, port))
+server_socket.listen(1)
+
+# 等待客户端连接
+print('等待客户端连接...')
+conn, addr = server_socket.accept()
+
+print('连接成功，客户端地址：', addr)
+
+# 接收数据
+data = conn.recv(1024)
+df = pd.read_csv(BytesIO(data))
+print(df)
+
+# 关闭连接
+conn.close()
+server_socket.close()
+print('客户端连接断开...')
+```
+
+**`client.py`**
+```py
+import socket
+import pandas as pd
+
+# 创建一个 socket 对象
+host = '127.0.0.1'
+port = 8003
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# 连接服务端
+client_socket.connect((host, port))
+
+# 发送数据
+df = pd.DataFrame({'name': ['Alice', 'Bob', 'Charlie'], 'age': [25, 30, 35]})
+data = df.to_json().encode('utf8')
+client_socket.sendall(data)
+
+# 关闭连接
+client_socket.close()
+```
+
+```sh
+# 1.客户端
+$ python3 server3.py 
+等待客户端连接...
+
+# 2.服务端
+$ python3 client3.py
+
+# 3.客户端
+等待客户端连接...
+连接成功，客户端地址： ('127.0.0.1', 41758)
+Empty DataFrame
+Columns: [{"name":{"0":"Alice", 1:"Bob", 2:"Charlie"}, age:{"0":25, 1:30, 2:35}}]
+Index: []
+客户端连接断开...
+$
+```
