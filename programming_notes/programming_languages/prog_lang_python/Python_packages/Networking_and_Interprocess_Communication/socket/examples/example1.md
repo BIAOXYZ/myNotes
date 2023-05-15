@@ -118,6 +118,8 @@ Connected by  ('127.0.0.1', 62768)
 
 How to convert bytes data into a python pandas dataframe? https://stackoverflow.com/questions/47379476/how-to-convert-bytes-data-into-a-python-pandas-dataframe
 
+## 个人文章实战
+
 **`server.py`**
 ```py
 import socket
@@ -186,6 +188,88 @@ $ python3 client3.py
 Empty DataFrame
 Columns: [{"name":{"0":"Alice", 1:"Bob", 2:"Charlie"}, age:{"0":25, 1:30, 2:35}}]
 Index: []
+客户端连接断开...
+$
+```
+
+### 改进版
+>> //notes：原因是上面的方法好像反序列化后结果是不对的（注意看打印的内容，是个空的 DataFrame，应该是把数据也给搞到列名里了- -）
+
+**`server.py`**
+```py
+import socket
+import pandas as pd
+# from io import BytesIO
+import pickle
+
+# 创建一个 socket 对象
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# 监听端口
+host = '127.0.0.1'
+port = 8003
+server_socket.bind((host, port))
+server_socket.listen(1)
+
+# 等待客户端连接
+print('等待客户端连接...')
+conn, addr = server_socket.accept()
+
+print('连接成功，客户端地址：', addr)
+
+# 接收数据
+data = conn.recv(1024)
+# df = pd.read_csv(BytesIO(data))
+df = pickle.loads(data)
+print(type(df))
+print(df)
+
+# 关闭连接
+conn.close()
+server_socket.close()
+print('客户端连接断开...')
+```
+
+**`client.py`**
+```py
+import socket
+import pandas as pd
+import pickle
+
+# 创建一个 socket 对象
+host = '127.0.0.1'
+port = 8003
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# 连接服务端
+client_socket.connect((host, port))
+
+# 发送数据
+df = pd.DataFrame({'name': ['Alice', 'Bob', 'Charlie'], 'age': [25, 30, 35]})
+# data = df.to_json().encode('utf8')
+data = pickle.dumps(df)
+client_socket.sendall(data)
+
+# 关闭连接
+client_socket.close()
+```
+
+```sh
+# 1.客户端
+$ python3 server4.py 
+等待客户端连接...
+
+# 2.服务端
+$ python3 client4.py
+
+# 3.客户端
+等待客户端连接...
+连接成功，客户端地址： ('127.0.0.1', 53710)
+<class 'pandas.core.frame.DataFrame'>
+      name  age
+0    Alice   25
+1      Bob   30
+2  Charlie   35
 客户端连接断开...
 $
 ```
