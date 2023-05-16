@@ -13,6 +13,30 @@ Pandas `iloc[]` Usage with Examples https://sparkbyexamples.com/pandas/pandas-il
     + > By not providing stop, `iloc[]` selects all rows/columns from the start index.
     + > Providing both start and stop, selects all rows/columns in between.
 
+# `.append()`
+
+How do I combine two dataframes? https://stackoverflow.com/questions/12850345/how-do-i-combine-two-dataframes
+- https://stackoverflow.com/questions/12850345/how-do-i-combine-two-dataframes/12850453#12850453
+  * > Use `append`:
+    ```py
+    df_merged = df1.append(df2, ignore_index=True)
+    ```
+    > And to keep their indexes, set `ignore_index=False`.
+- https://stackoverflow.com/questions/12850345/how-do-i-combine-two-dataframes/30557040#30557040
+  * > Use `pd.concat` to join multiple dataframes:
+    ```py
+    df_merged = pd.concat([df1, df2], ignore_index=True, sort=False)
+    ```
+- https://stackoverflow.com/questions/12850345/how-do-i-combine-two-dataframes/39634150#39634150
+  * > Merge across rows:
+    ```py
+    df_row_merged = pd.concat([df_a, df_b], ignore_index=True)
+    ```
+  * > Merge across columns:
+    ```py
+    df_col_merged = pd.concat([df_a, df_b], axis=1)
+    ```
+
 # `.groupby()`
 
 # `isin()`
