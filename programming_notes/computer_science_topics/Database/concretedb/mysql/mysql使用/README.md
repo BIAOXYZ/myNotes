@@ -9,6 +9,18 @@ MySQL常用操作指令大全 https://blog.csdn.net/weixin_41105242/article/deta
 
 How to Install MySQL on Debian 10 https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 
+## 完全卸载
+
+How do I uninstall MySQL? https://askubuntu.com/questions/172514/how-do-i-uninstall-mysql
+```sh
+# sudo apt-get remove --purge -s 'mysql*'
+sudo apt-get remove --purge mysql*
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo rm -rf /var/lib/mysql
+sudo rm -rf /etc/mysql
+```
+
 # 登陆密码问题
 
 ## 1
