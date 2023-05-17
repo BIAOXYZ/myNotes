@@ -115,6 +115,7 @@ Connected by  ('127.0.0.1', 62768)
   * > 翻译成英语是“似乎所有人都需要数据处理”。这一句话由七个英语单词组成，每一个的首字母正好是按第 7 层到第 1 层的首字母的顺序。
 
 # 3
+>> //notes：主要是支持发送和接收 pandas 的 Dataframe。
 
 How to convert bytes data into a python pandas dataframe? https://stackoverflow.com/questions/47379476/how-to-convert-bytes-data-into-a-python-pandas-dataframe
 
@@ -273,3 +274,7 @@ $ python3 client4.py
 客户端连接断开...
 $
 ```
+
+# 其他
+
+Receive all data in socket buffer (python) https://gist.github.com/daryltucker/9b1058e76de616c9bb88

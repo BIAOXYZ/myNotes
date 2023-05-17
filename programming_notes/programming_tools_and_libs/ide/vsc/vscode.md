@@ -166,6 +166,17 @@ vscode 跳转到函数之后怎么跳转回之前的位置 https://www.v2ex.com/
 然后里面其实只改了两项"editor.background"和"sideBar.background"似乎就够了。
 ```
 
+## 拖拽条颜色修改
+
+vscode拖拽条看不清配色修改 https://blog.csdn.net/qq_43243842/article/details/125718175
+```json
+    "workbench.colorCustomizations": {
+        "scrollbarSlider.background": "#bba76d",
+        "scrollbarSlider.hoverBackground": "#cfb56a",
+        "scrollbarSlider.activeBackground": "#fbdd86"
+    }
+```
+
 ## vscode每个工作空间单独主题
 
 Different theme per window in Visual Studio Code https://stackoverflow.com/questions/52514491/different-theme-per-window-in-visual-studio-code || VS Code: different color themes for different projects https://dev.to/mkubdev/visual-studio-code-different-color-themes-for-different-projects-467k
