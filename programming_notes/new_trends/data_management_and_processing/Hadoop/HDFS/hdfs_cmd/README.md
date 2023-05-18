@@ -13,7 +13,7 @@ HDFS Commands: Hadoop Shell Commands to Manage HDFS https://www.edureka.co/blog/
   ```
 - > 其中命令2已经废弃，大家不要再使用了。fs和dfs的区别简要说一下，fs属于一个更抽象的概念，可以操作任何文件系统；而dfs只能操作HDFS文件系统相关（包括与Local FS间的操作）。比如，Hadoop本地模式中fs是local file system，这个时候dfs就不能用，只能用fs。
 
-## hdfs命令
+# hdfs命令
 
 Hadoop - hdfs dfs常用命令的使用 https://www.cnblogs.com/lizm166/p/13355183.html
 ```sh
@@ -33,6 +33,12 @@ hdfs dfs -rm -skipTrash hdfs://${your_server_name}/opt/tmp/test/1.log
 hdfs dfs -rm -r hdfs://${your_server_name}/opt/tmp/test/
 ```
 
+BASIC HDFS FILE OPERATIONS COMMANDS https://www.alluxio.io/learn/hdfs/basic-file-operations-commands/
+
+12 frequently used Hadoop HDFS Commands with Examples & usage https://data-flair.training/blogs/hdfs-hadoop-commands/
+
+## `-text`
+
 https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/FileSystemShell.html#text
 - > **text**
   ```console
@@ -40,3 +46,7 @@ https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/FileSyst
   Takes a source file and outputs the file in text format. The allowed formats are zip and TextRecordInputStream.
   ```
   >> //notes：`hdfs dfs -text hdfs://${your_server_name}/${file_path}/filename.tsv`。之前碰到过一个 `.tsv` 文件，下载下来后 `cat` 是一堆乱码，但是用 `-text` 参数就可以正确读。
+
+## `-getmerge`
+
+Merging multiple files into one within Hadoop https://stackoverflow.com/questions/3548259/merging-multiple-files-into-one-within-hadoop
