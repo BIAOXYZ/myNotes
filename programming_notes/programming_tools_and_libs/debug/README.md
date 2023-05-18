@@ -37,6 +37,14 @@ linux上如何分辨一个二进制可执行文件是debug还是release的 https
 
 # 方便debug的宏
 
+## 个人总结
+
+```c
+printf("[[c | in source file:\"%s\" | function:\"%s()\" | line:%d]]\n", __FILE__, __FUNCTION__, __LINE__);
+```
+
+## 参考
+
 C++ 中 `__FILE__`, `__LINE__`, `__FUNCTION__` 含义 https://blog.csdn.net/weixin_39681471/article/details/109612681
 ```cpp
 __LINE__  // 是内置宏，代表该行代码的所在行号
