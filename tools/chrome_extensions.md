@@ -133,6 +133,13 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 
 - Checker Plus for Gmail™ https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj 【除了邮件提醒外可以直接标记已读，这点很方便。】
 
+这个插件真是太好用了：沉浸式翻译 https://www.v2ex.com/t/941217
+- 个人补充链接：
+  * 沉浸式翻译 https://chrome.google.com/webstore/detail/immersive-translate/bpoadfkcbjbfhfodiogcnhhhpibjhbnh?hl=zh-CN || https://greasyfork.org/zh-CN/scripts/457196-immersive-translate
+  * 使用教程 https://immersive-translate.owenyoung.com/start/step-3/
+  * 如何使用？ https://immersive-translate.owenyoung.com/usage
+  * 沉浸式双语网页翻译扩展 https://github.com/immersive-translate/immersive-translate/
+
 ### 油猴专区
 
 - Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/
