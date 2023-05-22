@@ -1,4 +1,11 @@
 
+让 chatgpt 讲解 Go 的核心源代码 https://www.v2ex.com/t/941688
+```console
+通过 openai 提供的接口，令其解释 Go 源码中每个文件，每个变量，每个 func 和 struct 的作用。
+效果不错，见后面几张图。由于接口有每分钟 3 次的限制，所以需要花些时间。目前仅限于 runtime 包，后续会完善 sync ，cmd/go 等核心包。有兴趣可以关注下，持续更新。
+「问 chatgptGo 核心源码中每个文件，变量，结构体，方法的作用」 https://github.com/cuishuang/explain-source-code-by-chatgpt
+```
+
 8 小时转职 Golang 工程师(如果你想低成本学习 Go 语言) https://www.v2ex.com/t/876104
 ```console
 视频链接： https://www.bilibili.com/video/BV1gf4y1r79E 文章链接: https://www.yuque.com/aceld/mo95lb/dsk886
