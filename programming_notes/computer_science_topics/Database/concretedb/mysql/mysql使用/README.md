@@ -91,3 +91,17 @@ mysql查询结果格式化输出 https://www.cnblogs.com/panbin2006/p/16534702.h
     ```sql
     select * from user \G
     ```
+
+# 不登陆直接执行命令
+
+不登陆数据库执行 MySQL 命令 https://blog.csdn.net/u010649766/article/details/78694318
+- > 有的时候需要查看数据库的某些信息，然后继续接下来的 shell 命令操作，登录数据库在退出嫌麻烦可以使用这招：
+- > 例 1：列出所有数据库
+```sh
+mysql -h host_name -P3306 -u user_name -p'password' -se "show databases;"
+```
+- > 例 2：列出 database 下的所有表
+```sh
+mysql -h host_name -P3306 -u user_name -p'password' -D database -se "show tables;"
+```
+>> //notes：`-h` 和 `-P` （大写P）可以不用；`-se` 还不如 `-e` 显示的效果好看。
