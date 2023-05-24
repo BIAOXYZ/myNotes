@@ -144,6 +144,12 @@ con.commit()
 
 Omitting columns when importing CSV into Sqlite https://stackoverflow.com/questions/31822174/omitting-columns-when-importing-csv-into-sqlite
 
+## 使用 `ATTACH` 连接两个sqlite数据库
+
+How to copy data from one SQLite database to another https://www.educative.io/answers/how-to-copy-data-from-one-sqlite-database-to-another
+
+SQLite - How to copy data from one database to another? https://tableplus.com/blog/2018/07/sqlite-how-to-copy-table-to-another-database.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # PRAGMA 相关命令
