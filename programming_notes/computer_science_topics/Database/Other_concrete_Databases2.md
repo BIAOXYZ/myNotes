@@ -214,6 +214,19 @@ PingCAPers Make Their Debut at VLDB https://pingcap.com/blog/pingcapers-make-the
 
 # 字节
 
+打破 45 年树型可验证数据结构模型，字节跳动论文入选SIGMOD https://mp.weixin.qq.com/s/jlMQY-e5eDGVDuMLFryWGw
+- > 近日，字节跳动与新加坡国立大学（NUS）合作的技术论文《VeDB：A Software and Hardware Enabled Trusted Relational Database》，成功入选SIGMOD Industrial论文。
+- > 在《VeDB：A Software and Hardware Enabled Trusted Relational Database》论文中，字节跳动提出创新的可验证数据结构（Authenticated data structures，ADS），首次通过一维数组实现可验证数据结构，打破了 45 年来基于树型可验证数据结构模型。创新的可验证数据结构简单易用，算法性能得到本质性提升，写入性能超过传统树型方法 70 倍。字节跳动基础架构部门资深技术专家杨新颖，也是此次创新技术提出和论文撰写的主要负责人，他告诉 51CTO，此创新技术已经在字节跳动内部的数字版权业务中应用。
+- > 值得注意的是，在今年的 SIGMOD 会议上，首次加入了VDBS(Verifiable database system) Workshop，杨新颖作为 Workshop 的PC co-chair，也是唯一来自工业界的代表，另外两个 chair 均来自学术界，足以证明可信账本数据库在数据库行业中的地位以及其未来发展的重要性。
+
+字节跳动基础架构团队参会报告：一文看懂VLDB'22技术趋势及精选论文 https://www.infoq.cn/article/cBGu3PG7figVhcLZQOev || https://mp.weixin.qq.com/s/qc1nmDwdFpssRp2XjRlcnw || https://www.sohu.com/a/591532990_355140
+- > 今年的 VLDB 在 9 月 5 号到 9 号，在澳大利亚悉尼举办。字节跳动有三篇论文被 VLDB 接收：其中两篇来自 Graph 团队 ，一篇 ByteHTAP 系统。应 VLDB 组委会邀请，字节相关团队来到悉尼，与世界各地的数据领域专家学者分享交流。
+- > **字节跳动论文介绍**
+  * > ByteGraph: A High Performance Distributed Graph Database in ByteDance 论文链接：https://www.vldb.org/pvldb/vol15/p3306-li.pdf
+  * > ByteGNN: Efficient Graph Neural Network Training at Large Scale 论文链接：https://www.vldb.org/pvldb/vol15/p1228-zheng.pdf
+  * > ByteHTAP: ByteDance’s HTAP System with High Data Freshness and Strong Data Consistency 论文链接：https://www.vldb.org/pvldb/vol15/p3411-chen.pdf
+    * > ByteHTAP 的高层架构如下图所示，***在共享存储系统上搭建了两个彼此分离的计算引擎。ByteHTAP 使用了字节的自研 OLTP 数据库 `ByteNDB` 作为 OLTP 负载的计算和存储引擎，并使用 `Apache Flink` 作为 OLAP 负载的计算引擎***。ByteHTAP 支持一个统一的，兼容 ANSI SQL 标准的用户入口并拥有一个智能代理层，DML，DDL 和 OLTP 负载的典型查询（如点查）会被发送给 OLTP 计算引擎，而复杂查询（如多重联接，大量聚合）会被发送给 OLAP 的计算引擎。这样的组织架构将 OLTP 和 OLAP 负载发给更合适的处理引擎，并能够有效防止这两类负载之间的串扰。
+
 TerarkDB - 我们发布了一款划时代的存储引擎 - 郭宽的文章 - 知乎 https://zhuanlan.zhihu.com/p/21493877 【这个最早是个初创公司】
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

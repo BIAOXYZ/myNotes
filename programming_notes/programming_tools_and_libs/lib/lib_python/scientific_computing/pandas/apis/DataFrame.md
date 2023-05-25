@@ -39,6 +39,23 @@ How do I combine two dataframes? https://stackoverflow.com/questions/12850345/ho
 
 # `.groupby()`
 
+Pandas教程 | 超好用的Groupby用法详解 - 易执的文章 - 知乎 https://zhuanlan.zhihu.com/p/101284491
+
+pandas.MultiIndex.droplevel https://pandas.pydata.org/docs/reference/api/pandas.MultiIndex.droplevel.html
+
+https://stackoverflow.com/questions/53414028/pandas-how-to-create-multiple-columns-in-groupby-with-conditional
+
+https://stackoverflow.com/questions/43172970/python-pandas-groupby-aggregate-on-multiple-columns-then-pivot
+
+# `.agg()`
+
+pandas.DataFrame.aggregate https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.aggregate.html
+
+如何使用agg函数对数据进行分组聚合 - 弦桐韵韵的文章 - 知乎 https://zhuanlan.zhihu.com/p/109820274
+
+Pandas .agg() convert to list but skip nans https://stackoverflow.com/questions/70650545/pandas-agg-convert-to-list-but-skip-nans
+- https://stackoverflow.com/questions/70650545/pandas-agg-convert-to-list-but-skip-nans/70650565#70650565
+
 # `isin()`
 
 pandas中isin()函数及其逆函数使用 https://blog.csdn.net/lzw2016/article/details/80472649
