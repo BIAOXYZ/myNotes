@@ -50,3 +50,17 @@ https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/FileSyst
 ## `-getmerge`
 
 Merging multiple files into one within Hadoop https://stackoverflow.com/questions/3548259/merging-multiple-files-into-one-within-hadoop
+
+### 合并远程的文件，且本地不下载
+
+How can I merge files in directory in hdfs without using get merge command? https://stackoverflow.com/questions/41116074/how-can-i-merge-files-in-directory-in-hdfs-without-using-get-merge-command
+- https://stackoverflow.com/questions/41116074/how-can-i-merge-files-in-directory-in-hdfs-without-using-get-merge-command/41118618#41118618
+  * > `hadoop fs -cat [dir]/* | hadoop fs -put - [destination file]`
+    >> //notes：个人实战成功的命令为：`hdfs dfs -cat hdfs://xxx/yyy/zzz/* | hdfs dfs -put - hdfs://xxx/yyy/zzz/merged.txt`
+    >>> //notes2：会自动创建 `merged.txt`，如果这个文件已经存在，命令会执行失败。
+
+Hadoop fs getmerge to remote server/machine due to low disk space https://stackoverflow.com/questions/27627535/hadoop-fs-getmerge-to-remote-server-machine-due-to-low-disk-space
+
+## `-appendToFile`
+
+HDFS Command Line Append https://stackoverflow.com/questions/13365604/hdfs-command-line-append
