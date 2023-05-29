@@ -36,3 +36,5 @@ Hadoop文档 https://hadoop.apache.org/docs/r1.0.4/cn/index.html
 Hadoop之HDFS简介 https://mp.weixin.qq.com/s/39gkTDLyumUYK_eFlM2Pzg || https://www.infoq.cn/article/rudfbprmb5vwfpydus5r
 
 HDFS介绍(一) https://juejin.cn/post/6979117624978325534
+
+HDFS读写流程原理 https://juejin.cn/post/6844904153597083656
