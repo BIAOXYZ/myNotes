@@ -214,6 +214,14 @@ PingCAPers Make Their Debut at VLDB https://pingcap.com/blog/pingcapers-make-the
 
 # 字节
 
+字节跳动开源其云原生数据仓库 ByConity https://mp.weixin.qq.com/s/lm2ppWf3UDhu1nFyeOSfVw
+- > **项目背景**
+  * > ByConity 的背景可以追溯到 2018 年，当时字节跳动开始在内部使用 ClickHouse，因为业务的发展，要服务于大量的用户，数据规模变得越来越巨大。由于 ClickHouse 是 Shared-Nothing 的架构，每个节点是独立的，不会共享存储资源等，因而计算资源和存储资源是紧耦合的，这使得 ClickHouse 在使用过程中会遇到以下情况：
+    + > 首先，这导致扩缩容成本变高，且会涉及到数据迁移，使我们不能实时按需的扩缩容，从而导致资源的浪费；
+    + > 其次，ClickHouse 紧耦合的架构会导致多租户在共享集群环境相互影响，同时由于读写在同一个节点完成，导致读写相互影响；
+    + > 最后，ClickHouse 在复杂查询上例如多表 Join 等操作的性能支持并不是很好。
+  * > 基于这些痛点，字节在 ClickHouse 架构基础上进行了升级，于 2020 年在内部启动了 ByConity 项目，并于 2023 年 1 月发布 Beta 版本，5月底正式对外开源。
+
 打破 45 年树型可验证数据结构模型，字节跳动论文入选SIGMOD https://mp.weixin.qq.com/s/jlMQY-e5eDGVDuMLFryWGw
 - > 近日，字节跳动与新加坡国立大学（NUS）合作的技术论文《VeDB：A Software and Hardware Enabled Trusted Relational Database》，成功入选SIGMOD Industrial论文。
 - > 在《VeDB：A Software and Hardware Enabled Trusted Relational Database》论文中，字节跳动提出创新的可验证数据结构（Authenticated data structures，ADS），首次通过一维数组实现可验证数据结构，打破了 45 年来基于树型可验证数据结构模型。创新的可验证数据结构简单易用，算法性能得到本质性提升，写入性能超过传统树型方法 70 倍。字节跳动基础架构部门资深技术专家杨新颖，也是此次创新技术提出和论文撰写的主要负责人，他告诉 51CTO，此创新技术已经在字节跳动内部的数字版权业务中应用。

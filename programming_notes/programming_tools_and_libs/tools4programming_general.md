@@ -90,7 +90,10 @@ tailscale：个人认为比zerotier更好 https://www.xiaoji.la/d/2407
 
 # AI for coding
 
-格斗之王！AI写出来的AI竟然这么强！ https://www.bilibili.com/video/BV1DT411H7ph || https://www.youtube.com/watch?v=B7bYZ5ZFbl0
+AI 打 LeetCode 周赛进入前 10%，秘诀：自然语言编程 https://www.ithome.com/0/695/914.htm
+- > 用 AI 助手 Claude 参加第 103 场周赛，共四道题，均完成了 AC，能达到参与者前 10% 的成绩。
+
+【[:star:][`*`]】 格斗之王！AI写出来的AI竟然这么强！ https://www.bilibili.com/video/BV1DT411H7ph || https://www.youtube.com/watch?v=B7bYZ5ZFbl0
 ```console
 我让 AI 写了个 AI，终于打败了街霸里的 AI，还意外发现了一段游戏史上的黑暗秘密！
 项目链接：https://github.com/linyiLYi/street-fighter-ai

@@ -7,6 +7,8 @@ Hadoop集群搭建 https://hadoop.apache.org/docs/r1.0.4/cn/cluster_setup.html
 
 docker-compose快速搭建hadoop https://www.jianshu.com/p/9b548517abbb  【已验证】
 
+`docker-hadoop/docker-compose.yml` https://github.com/big-data-europe/docker-hadoop/blob/master/docker-compose.yml || Docker-Compose搭建Hadoop集群 https://juejin.cn/post/7102410832729882638
+
 ## 二进制方式
 
 Hadoop: Setting up a Single Node Cluster. https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Installing_Software 【`-->` 官方文档反而几乎没有去参考，直接用别的文档了。】
