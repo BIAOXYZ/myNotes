@@ -59,3 +59,19 @@ Python—执行系统命令的四种方法（os.system、os.popen、commands、s
 0
 >>> 
 ```
+
+## 获取命令执行后返回的结果
+
+Assign output of os.system to a variable and prevent it from being displayed on the screen [duplicate] https://stackoverflow.com/questions/3503879/assign-output-of-os-system-to-a-variable-and-prevent-it-from-being-displayed-on
+- https://stackoverflow.com/questions/3503879/assign-output-of-os-system-to-a-variable-and-prevent-it-from-being-displayed-on/3503909#3503909
+  * > From this question which I asked a long time ago, what you may want to use is popen:
+    ```py
+    os.popen('cat /etc/services').read()
+    ```
+  * > Here's the corresponding code for subprocess:
+    ```py
+    import subprocess
+    proc = subprocess.Popen(["cat", "/etc/services"], stdout=subprocess.PIPE, shell=True)
+    (out, err) = proc.communicate()
+    print("program output:", out)
+    ```
