@@ -56,11 +56,36 @@ Merging multiple files into one within Hadoop https://stackoverflow.com/question
 How can I merge files in directory in hdfs without using get merge command? https://stackoverflow.com/questions/41116074/how-can-i-merge-files-in-directory-in-hdfs-without-using-get-merge-command
 - https://stackoverflow.com/questions/41116074/how-can-i-merge-files-in-directory-in-hdfs-without-using-get-merge-command/41118618#41118618
   * > `hadoop fs -cat [dir]/* | hadoop fs -put - [destination file]`
-    >> //notes：个人实战成功的命令为：`hdfs dfs -cat hdfs://xxx/yyy/zzz/* | hdfs dfs -put - hdfs://xxx/yyy/zzz/merged.txt`
-    >>> //notes2：会自动创建 `merged.txt`，如果这个文件已经存在，命令会执行失败。
+    >> 【[:star:][`*`]】 //notes：个人实战成功的命令为：`hdfs dfs -cat hdfs://xxx/yyy/zzz/* | hdfs dfs -put - hdfs://xxx/yyy/zzz/merged.txt`
+    >>> 【[:star:][`*`]】 //notes2：会自动创建 `merged.txt`，***如果这个文件已经存在，命令会执行失败***——要想能不止一次合并，***且不经过本地文件***（这个是核心点所在，否则如果允许经过本地文件，那 `-getmerge` 本身就可以合并，然后下载合并后的文件到本地），可以参考 `-appendToFile` 部分的实战。
 
 Hadoop fs getmerge to remote server/machine due to low disk space https://stackoverflow.com/questions/27627535/hadoop-fs-getmerge-to-remote-server-machine-due-to-low-disk-space
+
+Best way to merge multi part file into single file? https://community.cloudera.com/t5/Support-Questions/Best-way-to-merge-multi-part-file-into-single-file/m-p/104773
+
+How to join multiple csv files in folder to one output file? https://community.cloudera.com/t5/Support-Questions/How-to-join-multiple-csv-files-in-folder-to-one-output-file/td-p/181377
 
 ## `-appendToFile`
 
 HDFS Command Line Append https://stackoverflow.com/questions/13365604/hdfs-command-line-append
+
+Can I change the contents of a file present inside HDFS? If Yes, how and what are the Pros and cons ? https://community.cloudera.com/t5/Support-Questions/Can-I-change-the-contents-of-a-file-present-inside-HDFS-If/td-p/221122
+- https://community.cloudera.com/t5/Support-Questions/Can-I-change-the-contents-of-a-file-present-inside-HDFS-If/m-p/221123#M182997
+  * > Yes, you can append some rows to the existing text file in hdfs `appendToFile`
+  * > Usage: `hdfs dfs -appendToFile <localsrc> ... <dst>`
+  * > Append single src, or multiple srcs from local file system to the destination file system. Also reads input from stdin and appends to destination file system.
+    ```sh
+    hdfs dfs -appendToFile localfile /user/hadoop/hadoopfile
+    hdfs dfs -appendToFile localfile1 localfile2 /user/hadoop/hadoopfile
+    hdfs dfs -appendToFile localfile hdfs://nn.example.com/hadoop/hadoopfile
+    hdfs dfs -appendToFile - hdfs://nn.example.com/hadoop/hadoopfile Reads the input from stdin.
+    echo "hi"|hdfs dfs -appendToFile - /user/hadoop/hadoopfile
+    ```
+  * > pros: A small file is one which is significantly smaller than the HDFS block sizeEvery file, Directory and block in HDFS is represented as an object in the namenode’s memory, the problem is that HDFS can’t handle lots of files, it is good to have large files in HDFS instead of small files.
+  * > Cons: When we wants append to hdfs file we must need to obtain a lease which is essentially a lock, to ensure the single writer semantics.
+
+***个人实战：***
+>> 【[:star:][`*`]】 //notes：实际上即使是 `-appendToFile`，标准的用法也是把一个本地文件的内容追加到一个远程文件里。但是综合考虑 `-appendToFile` 和 `-getmerge` 里的例子，最终还是解决了（下面这个命令可以多次执行，不会因为执行一次后 `merged.txt` 已经存在了报错）：
+```sh
+hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | hdfs dfs -appendToFile - hdfs://xxx/yyy/zzz/merged.txt
+```

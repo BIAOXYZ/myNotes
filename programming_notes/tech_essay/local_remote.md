@@ -34,3 +34,5 @@
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)`** 启动 ray 集群，需要在启动命令里指定一些控制面板相关的参数，如：`ray start --head --include-dashboard 1 --dashboard-host 0.0.0.0 --dashboard-port 8877`
 - ~~GoAccess~~
   * GoAccess is a real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems or through your browser. https://github.com/allinurl/goaccess || https://goaccess.io/
+- Hadoop/HDFS
+  * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)上多个容器`** 用 docker-compose 方式启动的 hadoop 集群。从而可以在本地的浏览器里访问 `http://远端ip:9870/` 看到面板。
