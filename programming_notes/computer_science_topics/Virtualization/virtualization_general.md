@@ -136,6 +136,10 @@ QEMU (简体中文) https://wiki.archlinux.org/index.php/QEMU_(%E7%AE%80%E4%BD%9
 
 在qemu中模拟设备 - 知乎用户G0K17q的文章 - 知乎 https://zhuanlan.zhihu.com/p/57526565
 
+Qemu tutorial https://linuxhint.com/qemu-tutorial/
+
+How To Use QEMU From the Linux Command-Line https://www.baeldung.com/linux/qemu-from-terminal
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Xen
