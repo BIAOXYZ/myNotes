@@ -34,6 +34,13 @@ How can I 'nohup' a command and log the output of 'time' https://stackoverflow.c
 
 How do I use nohup and time together? https://stackoverflow.com/questions/65468796/how-do-i-use-nohup-and-time-together
 
+## 已经启动的程序，没有 `nohup`
+
+耗时很长的程序忘加nohup就运行了怎么办？ - ipid君的回答 - 知乎 https://www.zhihu.com/question/586298694/answer/2991647868
+- > 总结：Ctrl + Z、bg、disown 三连即可！当你熟练之后，甚至可以直接在终端里面敲下 bg;disown，这样不仅一次能执行两条命令，还不会被程序的输出干扰。
+- > 上述方案的最大问题，就是关掉终端后就再也看不到命令输出了，而且除非一直 ps，否则根本不知道这条命令到底执行完了没有。
+- > 所以…还是要记得加上 nohup，或者养成使用 tmux、screen 的好习惯啊！
+
 # 个人实战
 
 ## 1

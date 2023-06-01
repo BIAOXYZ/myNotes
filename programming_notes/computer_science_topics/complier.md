@@ -174,6 +174,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 /opt/rh/devtoolset-7/root/usr/bin/gcc
 ```
 
+Linux升级gcc到最新版本gcc-11.2.0 https://blog.csdn.net/qq_41054313/article/details/119453611
+
 # gcc/g++错误处理
 
 ### `libstdc++.so.6: error adding symbols: DSO missing from command line`

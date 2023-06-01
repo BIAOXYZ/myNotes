@@ -1,7 +1,7 @@
 
 # 升级高版本GCC
 
-## 编译安装
+## 编译安装方式升级GCC
 
 1. 先按这个帖子来： [How to Install GCC on Debian 9](https://linuxhostsupport.com/blog/how-to-install-gcc-on-debian-9/) ，然后会出现报错：`error: Cannot download mpfr-3.1.4.tar.bz2 from ftp://gcc.gnu.org/pub/gcc/infrastructure/`。
 2. 上面那个报错是因为下载方式的原因，可以手动下载 gcc 脚本里自动下载失败的包，参考：[Re: Regarding download_prerequisite](https://gcc.gnu.org/legacy-ml/gcc-help/2018-05/msg00123.html)
