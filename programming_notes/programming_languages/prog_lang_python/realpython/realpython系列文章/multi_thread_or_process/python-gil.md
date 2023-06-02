@@ -1,4 +1,15 @@
 
+# GIL终结
+
+Real Multithreading is Coming to Python - Learn How You Can Use It Now https://martinheinz.dev/blog/97
+- > `May 14, 2023`
+- > Python is 32 years old language, yet it still doesn't have proper, true parallelism/concurrency. This is going to change soon, thanks to introduction of a "Per-Interpreter GIL" (Global Interpreter Lock) which will land in `Python 3.12`. While release of Python 3.12 is some months away, the code is already there, so let's take an early peek at how we can use it to write truly concurrent Python code using sub-interpreters API.
+- > **Conclusion**
+  * > I'm very happy to see that this change is finally coming to CPython and I want to highlight the amazing work and perseverance by Eric Snow, who made [this happen](https://github.com/python/cpython/pull/104210).
+  * > With that said - as you could see here - the API isn't exactly easy to use, so unless you have C expertise or very urgent need for sub-interpreters, ***you might be better off waiting for proper support (hopefully) in `Python 3.13`***. We have waited for many years, what's one more, right? Alternatively, you could try extrainterpreters project which provides a friendlier Python API to sub-interpreters.
+
+# GIL终结前
+
 What Is the Python Global Interpreter Lock (GIL)? https://realpython.com/python-gil/
 - > The Python ***`Global Interpreter Lock`*** or [GIL](https://wiki.python.org/moin/GlobalInterpreterLock), in simple words, is a mutex (or a lock) that ***allows only one [thread](https://realpython.com/intro-to-python-threading/) to hold the control of the Python interpreter***.
 - > This means that ***only one thread can be in a state of execution at any point in time***. The impact of the GIL isn’t visible to developers who execute single-threaded programs, but it can be a ***performance bottleneck in <ins>CPU-bound and multi-threaded</ins> code***.
