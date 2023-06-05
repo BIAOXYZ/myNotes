@@ -19,3 +19,9 @@ SQL-92 https://en.wikipedia.org/wiki/SQL-92 || https://zh.wikipedia.org/wiki/SQL
 ISO/IEC 9075:1992 Information technology — Database languages — SQL https://www.iso.org/standard/16663.html
 
 International Standard ISO/IEC 9075:1992 https://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt
+
+# SQL-2023
+
+SQL:2023 is finished: Here is what's new http://peter.eisentraut.org/blog/2023/04/04/sql-2023-is-finished-here-is-whats-new
+
+SQL:2023标准正式发布！ https://mp.weixin.qq.com/s/UU60aygMQAsMNirlisSqqA
