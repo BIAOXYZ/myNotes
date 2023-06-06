@@ -89,3 +89,7 @@ Can I change the contents of a file present inside HDFS? If Yes, how and what ar
 ```sh
 hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | hdfs dfs -appendToFile - hdfs://xxx/yyy/zzz/merged.txt
 ```
+>>> 【[:star:][`*`]】 //notes：上面那句会把表头都 append 过去，如果想要省略表头，可以先经过 `| tail -n +2` 过滤一下——这个还是 ChatGPT 出的主意，真的还不错呢。
+```sh
+hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | tail -n +2 | hdfs dfs -appendToFile - hdfs://xxx/yyy/zzz/merged.txt
+```
