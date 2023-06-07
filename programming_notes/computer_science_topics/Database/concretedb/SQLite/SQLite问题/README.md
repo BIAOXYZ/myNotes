@@ -182,3 +182,15 @@ Type "help", "copyright", "credits" or "license" for more information.
       ```
     + > 进入 `/home/user/usr/python/python2.7/lib/python2.7/lib-dynload` 看看是否有 `_sqlite3.so` 这个文件，发现没有这个文件，说明没有安装此扩展。
 - https://flaggo.github.io/python3-source-code-analysis/preface/unix-linux-build/
+
+# `Failed to prepare statement: database or disk is full`
+
+"database or disk is full" with in-memory database. Suggested next steps? https://sqlite.org/forum/forumpost/d592a0554b
+
+sqlite3.OperationalError: database or disk is full. https://sqlite.org/forum/info/da7042310fd0e8c1098df013e3d64ef913f310b8d0cd35ef62d829730c1973db
+
+"sqlite3.OperationalError: database or disk is full" on Lustre https://stackoverflow.com/questions/16685016/sqlite3-operationalerror-database-or-disk-is-full-on-lustre
+
+SQLITE3 VACUUM, "database or disk is full" https://stackoverflow.com/questions/23249843/sqlite3-vacuum-database-or-disk-is-full
+
+Sqlite drop table error: database or disk is full https://stackoverflow.com/questions/69568108/sqlite-drop-table-error-database-or-disk-is-full
