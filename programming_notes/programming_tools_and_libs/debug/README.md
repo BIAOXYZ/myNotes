@@ -35,15 +35,61 @@ linux上如何分辨一个二进制可执行文件是debug还是release的 https
   ```
 - > 如果，该文件是release的，一般将不会打印出任何信息。
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 方便debug的宏
 
-## 个人总结
+## 个人总结 C 语言版
+>> //notes：写成函数的形式是不行的，因为打印的永远是函数所在文件名、函数名和固定的行号。
 
+1.一行的版本：
 ```c
-printf("[[c | in source file:\"%s\" | function:\"%s()\" | line:%d]]\n", __FILE__, __FUNCTION__, __LINE__);
+printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]]\n", __FILE__, __FUNCTION__, __LINE__);
+```
+```c
+#include<stdio.h>
+int main() {
+    printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]]\n", __FILE__, __FUNCTION__, __LINE__);
+    printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]]\n", __FILE__, __FUNCTION__, __LINE__);
+    printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]]\n", __FILE__, __FUNCTION__, __LINE__);
+}
+```
+```sh
+$ gcc test.cpp -o test
+$ ./test 
+[[c-lang | in source file:"test.cpp" | function:"main()" | line:3]]
+[[c-lang | in source file:"test.cpp" | function:"main()" | line:4]]
+[[c-lang | in source file:"test.cpp" | function:"main()" | line:5]]
 ```
 
-## 参考
+2.总结成宏（函数不行貌似）的版本
+```c
+#define DEBUG_PRINT printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]] %s\n", __FILE__, __func__, __LINE__)
+// or 顺带打印变量的版本
+#define DEBUG_PRINT(msg) printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]] %s\n", __FILE__, __func__, __LINE__, msg)
+```
+```c
+#include <stdio.h>
+#define DEBUG_PRINT(msg) \
+    printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]] %s\n", \
+        __FILE__, __func__, __LINE__, msg)
+int main() {
+    char *str = "hello world";
+    DEBUG_PRINT(str);
+    DEBUG_PRINT(str);
+    DEBUG_PRINT(str);
+    return 0;
+}
+```
+```sh
+$ gcc test.cpp -o test
+$ ./test 
+[[c-lang | in source file:"test.cpp" | function:"main()" | line:7]] hello world
+[[c-lang | in source file:"test.cpp" | function:"main()" | line:8]] hello world
+[[c-lang | in source file:"test.cpp" | function:"main()" | line:9]] hello world
+```
+
+### 参考
 
 C++ 中 `__FILE__`, `__LINE__`, `__FUNCTION__` 含义 https://blog.csdn.net/weixin_39681471/article/details/109612681
 ```cpp
@@ -79,3 +125,76 @@ source file "/home/vscode/log/main.cpp", line 10, in function func
 - > `__FUNCTION__` 跟 `__func__` 效果一样，只是为了兼容旧版的GCC
 - > `__PRETTY_FUNCTION__` 在 c++ 中，`__PRETTY_FUNCTION__` 既包含函数的签名，也包含函数的名称。
 - > 结论：尽量使用 `__PRETTY_FUNCTION__` 可以打印完整的方法签名，无论是调试还是记录log都很有用
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 个人总结 C++ 语言版
+
+```cpp
+std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
+```
+```cpp
+#include <iostream>
+int main() {
+    std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
+    std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
+    std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
+    return 0;
+}
+```
+```sh
+$ g++ test.cpp -o test
+$ ./test 
+[[cpp-lang | in source file:"test.cpp" | function:"main()" | line:3]] 
+[[cpp-lang | in source file:"test.cpp" | function:"main()" | line:4]] 
+[[cpp-lang | in source file:"test.cpp" | function:"main()" | line:5]]
+```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 个人总结 Python 语言版
+
+```py
+# 这个貌似就不错，只需要用到 sys，不需要用到 inspect。
+print("[[py-lang | in source file:\"{}\" | function:\"{}()\" | line:{}]]".format(__file__, sys._getframe().f_code.co_name, sys._getframe().f_lineno))
+```
+```py
+import inspect
+import sys
+def debug_print(msg=''):
+    cur_frame = inspect.currentframe()
+    if cur_frame is not None:
+        frame_info = inspect.getframeinfo(cur_frame.f_back)
+        print("[[py-lang | in source file:\"{}\" | function:\"{}\" | line:{}]] {}".format(frame_info.filename, inspect.stack()[1][3], frame_info.lineno, msg))
+    else:
+        print("[[py-lang | ERROR: Failed to get current frame]]")
+
+def foo():
+    print('*'*50)
+    print("[[py-lang | in source file:\"{}\" | function:\"{}()\" | line:{}]]".format(__file__, sys._getframe().f_code.co_name, sys._getframe().f_lineno))
+    debug_print("this is a debug message")
+    print('*'*50)
+
+if __name__ == '__main__':
+    foo()
+    foo()
+    print("[[py-lang | in source file:\"{}\" | function:\"{}()\" | line:{}]]".format(__file__, sys._getframe().f_code.co_name, sys._getframe().f_lineno))
+    print("[[py-lang | in source file:\"{}\" | function:\"{}()\" | line:{}]]".format(__file__, sys._getframe().f_code.co_name, sys._getframe().f_lineno))
+    debug_print(12345)
+    debug_print(67890)
+```
+```sh
+$ python3 general_test.py 
+**************************************************
+[[py-lang | in source file:"general_test.py" | function:"foo()" | line:13]]
+[[py-lang | in source file:"general_test.py" | function:"foo" | line:14]] this is a debug message
+**************************************************
+**************************************************
+[[py-lang | in source file:"general_test.py" | function:"foo()" | line:13]]
+[[py-lang | in source file:"general_test.py" | function:"foo" | line:14]] this is a debug message
+**************************************************
+[[py-lang | in source file:"general_test.py" | function:"<module>()" | line:20]]
+[[py-lang | in source file:"general_test.py" | function:"<module>()" | line:21]]
+[[py-lang | in source file:"general_test.py" | function:"<module>" | line:22]] 12345
+[[py-lang | in source file:"general_test.py" | function:"<module>" | line:23]] 67890
+```

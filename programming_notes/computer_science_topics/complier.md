@@ -174,7 +174,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 /opt/rh/devtoolset-7/root/usr/bin/gcc
 ```
 
-Linux升级gcc到最新版本gcc-11.2.0 https://blog.csdn.net/qq_41054313/article/details/119453611
+Linux升级gcc到最新版本gcc-11.2.0 https://blog.csdn.net/qq_41054313/article/details/119453611 || Linux升级gcc到最新版本gcc-11.2.0 - 淡淡的心的文章 - 知乎
+https://zhuanlan.zhihu.com/p/548099120
 
 # gcc/g++错误处理
 
