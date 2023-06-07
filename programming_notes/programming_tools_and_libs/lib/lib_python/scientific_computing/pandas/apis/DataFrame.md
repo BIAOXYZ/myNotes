@@ -37,6 +37,10 @@ How do I combine two dataframes? https://stackoverflow.com/questions/12850345/ho
     df_col_merged = pd.concat([df_a, df_b], axis=1)
     ```
 
+# `.apply()`
+
+pandas apply() 函数用法 https://www.jianshu.com/p/4fdd6eee1b06
+
 # `.groupby()`
 
 Pandas教程 | 超好用的Groupby用法详解 - 易执的文章 - 知乎 https://zhuanlan.zhihu.com/p/101284491

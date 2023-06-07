@@ -16,7 +16,7 @@
 - > 刺猬是一种杂食性动物，它们的主要食物以昆虫为主，偶尔也会吃植物的果实。虽然从表面上看，刺猬属于一种比较常见的动物。但是，目前刺猬已经被列入了国家二级保护动物之中，它们的数量由于人类的活动以及农药的使用逐渐下降。
 - > 从刺猬的食性上看，它是虫子的克星。一只成年的刺猬一晚上就能吃掉200克虫子，而通常一只3公分左右的虫子体重在2克左右，也就是说刺猬一晚上就能吃掉至少100条大虫子。而且刺猬经常捕猎的地点就在农田当中，所以它对于我们来说是一种益兽。
 
-被救助的雪豹，“离开了妈妈，不能独立生存” https://mp.weixin.qq.com/s/bqjDaFn6mku27VSnPChdOw || 西宁野生动物园救助雪豹“凌夏”：离开了妈妈，不能独立生存 https://www.thepaper.cn/newsDetail_forward_13396563
+被救助的雪豹，“离开了妈妈，不能独立生存” https://mp.weixin.qq.com/s/bqjDaFn6mku27VSnPChdOw || 西宁野生动物园救助雪豹“凌夏”：离开了妈妈，不能独立生存 https://www.thepaper.cn/newsDetail_forward_13396563 || https://news.sina.com.cn/c/2021-07-02/doc-ikqciyzk3107821.shtml
 - > ![](https://imagecloud.thepaper.cn/thepaper/image/140/356/483.jpg)
 
 # 其他萌物

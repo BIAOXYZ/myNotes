@@ -154,8 +154,8 @@ $ ./test
 
 ## 个人总结 Python 语言版
 
+>> //notes：这个貌似就不错，只需要用到 `sys`，不需要用到 `inspect`。
 ```py
-# 这个貌似就不错，只需要用到 sys，不需要用到 inspect。
 print("[[py-lang | in source file:\"{}\" | function:\"{}()\" | line:{}]]".format(__file__, sys._getframe().f_code.co_name, sys._getframe().f_lineno))
 ```
 ```py

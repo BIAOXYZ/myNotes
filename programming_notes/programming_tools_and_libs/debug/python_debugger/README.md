@@ -128,7 +128,7 @@ How to log a variable's name and value? https://stackoverflow.com/questions/1931
 - Viewing all defined variables [duplicate] https://stackoverflow.com/questions/633127/viewing-all-defined-variables
 - Enumerate or list all variables in a program of [your favorite language here] [closed] https://stackoverflow.com/questions/430811/enumerate-or-list-all-variables-in-a-program-of-your-favorite-language-here
 
-## 打印文件名、函数名、行号等
+## 打印文件名、函数名、行号等 --> 参见[这里的总结](../README.md#个人总结-python-语言版)。
 - Python之sys._getframe() https://www.cnblogs.com/hester/articles/4767152.html
 - Python sys._getframe() Examples https://www.programcreek.com/python/example/283/sys._getframe
 
@@ -158,6 +158,10 @@ Python's `__FILE__`, `__FUNC__` and `__LINE__` - 李辉的文章 - 知乎 https:
   ```
 
 Python equivalent to C++ `__LINE__` https://stackoverflow.com/questions/56762491/python-equivalent-to-c-line
+
+Python获取当前位置所在行数以及函数名 https://cloud.tencent.com/developer/article/2171927
+
+python笔记19-获取当前运行函数名称和类方法名称 https://www.cnblogs.com/yoyoketang/p/9231320.html
 
 # 其他
 
