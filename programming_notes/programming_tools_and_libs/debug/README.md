@@ -137,6 +137,9 @@ std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" 
 std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << var << std::endl;
 ```
 ```cpp
+std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << " cpp value of [v]: " << v << std::endl;
+```
+```cpp
 #include <iostream>
 int main() {
     std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
@@ -202,3 +205,9 @@ $ python3 general_test.py
 [[py-lang | in source file:"general_test.py" | function:"<module>" | line:22]] 12345
 [[py-lang | in source file:"general_test.py" | function:"<module>" | line:23]] 67890
 ```
+
+Print current call stack from a method in code https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code
+- https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code/56897183#56897183
+  ```py
+  import inspect;print(*['{:40}| {}:{}\n'.format(x.function, x.filename, x.lineno) for x in inspect.stack()])
+  ```
