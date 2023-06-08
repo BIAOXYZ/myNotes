@@ -5,6 +5,10 @@ logging --- Python 的日志记录工具 https://docs.python.org/zh-cn/3/library
 
 日志常用指引 https://docs.python.org/zh-cn/3/howto/logging.html || Logging HOWTO https://docs.python.org/3/howto/logging.html
 
+# root logger
+
+Python root logger 解密 https://www.jianshu.com/p/cad8a77762b3
+
 # 其他
 
 Logging in Python https://realpython.com/python-logging/

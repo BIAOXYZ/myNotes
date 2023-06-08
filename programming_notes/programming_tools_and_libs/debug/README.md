@@ -134,6 +134,9 @@ source file "/home/vscode/log/main.cpp", line 10, in function func
 std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
 ```
 ```cpp
+std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << var << std::endl;
+```
+```cpp
 #include <iostream>
 int main() {
     std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << std::endl;
@@ -150,11 +153,12 @@ $ ./test
 [[cpp-lang | in source file:"test.cpp" | function:"main()" | line:5]]
 ```
 
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 个人总结 Python 语言版
 
->> //notes：这个貌似就不错，只需要用到 `sys`，不需要用到 `inspect`。
+>> //notes：这个（一行的版本）貌似就不错，只需要用到 `sys`，不需要用到 `inspect`。
 ```py
 print("[[py-lang | in source file:\"{}\" | function:\"{}()\" | line:{}]]".format(__file__, sys._getframe().f_code.co_name, sys._getframe().f_lineno))
 ```
