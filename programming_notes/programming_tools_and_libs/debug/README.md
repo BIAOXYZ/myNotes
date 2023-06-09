@@ -137,7 +137,7 @@ std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" 
 std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << var << std::endl;
 ```
 ```cpp
-std::cout << "[[cpp-lang | in source file:\"" << __FILE__ << "\" | function:\"" << __FUNCTION__ << "()\" | line:" << __LINE__ << "]] " << " cpp value of [v]: " << v << std::endl;
+std::cout<<"[[cpp-lang | in source file:\""<<__FILE__<<"\" | function:\""<<__FUNCTION__<<"()\" | line:"<<__LINE__<<"]] "<<" cpp-value of [v]: "<<v<<std::endl;
 ```
 ```cpp
 #include <iostream>
@@ -160,6 +160,11 @@ $ ./test
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 个人总结 Python 语言版
+
+最常用版：
+```py
+import sys;print(f"[[py-lang | file:\"{__file__}\" | func:\"{sys._getframe().f_code.co_name}()\" | line:{sys._getframe().f_lineno}]]")
+```
 
 >> //notes：这个（一行的版本）貌似就不错，只需要用到 `sys`，不需要用到 `inspect`。
 ```py
