@@ -22,3 +22,12 @@ PostgreSQL CTID是Oracle ROWID的替代 https://mp.weixin.qq.com/s/S9N3eNcsp71hk
 # 2022.01
 
 提高 PostgreSQL 插入性能的 13 个技巧 https://mp.weixin.qq.com/s/96GWy2lf5-sxsHxF86PQCA
+
+# `PostgreSQL学徒`
+
+PostgreSQL分布式数据库总览 https://mp.weixin.qq.com/s/EZARyn_-xN4dBI4yKPm8Xw
+- > **GuassDB**
+  * > 在2019年10月左右，华为 GaussDB 的命名再次调整：
+    + > GaussDB 100 ，更名为 GaussDB T ，以 OLTP 和集群为方向；
+    + > GaussDB 200 合并 300 的部分设计，更名为 GaussDB A，以分析型为主方向；
+    + > GaussDB 300，型号取消，涉及功能并入 100 或 200 。

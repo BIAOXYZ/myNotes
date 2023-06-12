@@ -173,6 +173,14 @@ print (n_zero, n_one)
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
+## 打印时不打印行号/index
+
+How to print pandas DataFrame without index https://stackoverflow.com/questions/24644656/how-to-print-pandas-dataframe-without-index
+- https://stackoverflow.com/questions/24644656/how-to-print-pandas-dataframe-without-index/32662331#32662331
+  * > `print(df.to_string(index=False))`
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## Dataframe
 
 Pandas Tutorial: DataFrames in Python https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
