@@ -48,4 +48,7 @@ Pandas https://www.kaggle.com/learn/pandas
 - Using Pandas and Python to Explore Your Dataset https://realpython.com/pandas-python-explore-dataset/
 - Pandas: How to Read and Write Files https://realpython.com/pandas-read-write-files/
 
+Principles and Techniques of Data Science UC Berkeley https://ds100.org/
+- Data 100 https://ds100.org/fa21/resources/ || Data 100 Summer 2021 website https://github.com/DS-100/fa21
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
