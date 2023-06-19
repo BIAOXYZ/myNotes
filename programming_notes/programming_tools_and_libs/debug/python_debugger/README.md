@@ -58,6 +58,8 @@ PySnooper 源码阅读 https://zdyxry.github.io/2019/04/27/PySnooper-%E6%BA%90%E
 
 史上最方便的Python Debug工具|腾讯技术说 - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/65750184
 
+Python 代码调试神器：PySnooper https://www.cnblogs.com/wongbingming/p/13974982.html
+
 # birdseye
 
 birdseye https://github.com/alexmojaki/birdseye

@@ -56,6 +56,14 @@ ssh 端口转发不需要额外装软件， 为啥还是这么多人选择 frp �
 
 # 在线工具/环境
 
+【[:star:][`*`]】 有没有让你发出 "WC，还有这样的网站" 的网站？ https://www.v2ex.com/t/949936
+- > https://command-not-found.com
+  >> //notes：这个挺不错的，有各种命令的安装方式
+- > http://www.heyzxz.me/pcol/
+  >> //notes：台球游戏
+- > https://theuselessweb.com  【//notes：随机游戏】
+  * > https://maze.toys/mazes/medium/daily/
+
 收集了 10000 多个软件安装包，一个奇怪的癖好。 https://www.v2ex.com/t/933863
 ```console
 传了一份软件清单到网上，有兴趣可以交流一下，我还花了挺长时间做分类和命名的。现在基本上找到一个新软件都能找到一个可以安排的子目录类别。
