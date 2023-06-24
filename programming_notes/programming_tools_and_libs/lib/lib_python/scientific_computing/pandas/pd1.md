@@ -52,3 +52,23 @@ Principles and Techniques of Data Science UC Berkeley https://ds100.org/
 - Data 100 https://ds100.org/fa21/resources/ || Data 100 Summer 2021 website https://github.com/DS-100/fa21
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# pandas文章
+
+Pandas50个高级操作，秀起来！ https://mp.weixin.qq.com/s/cq2bDqHZ_7ntgzdW_VoLhg
+- > 01、复杂查询
+  * > 5、查询`df.query()`
+  * > 6、筛选`df.filter()`
+- > 02、数据类型转换
+  * > 3、类型转换`astype()`
+- > 04、添加修改
+  * > 8、执行表达式`df.eval()`
+- > 07、函数应用
+  * > 2、`apply()`
+    + > 应用在DataFrame的行或列中，默认为列。
+  * > 3、`applymap()`
+    + > 应用在DataFrame的每个元素中。
+  * > 5、`agg()`
+  * > 6、`transform()`
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

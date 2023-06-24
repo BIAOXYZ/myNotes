@@ -49,3 +49,9 @@ LearnCpp.com https://www.learncpp.com/
 
 Fluent {C++} https://www.fluentcpp.com/
 - Posts https://www.fluentcpp.com/posts/
+
+# C++新闻
+
+C++ 26 时间表发布，据称在“并发和并行性方面有重大改进” https://www.ithome.com/0/701/443.htm
+- > 在本次会议上，委员会采纳了首批共计 40 份变更文件，其中的变更都相当小，IT之家的小伙伴们[可以在这里找到变更的内容](https://herbsutter.com/2023/06/16/trip-report-summer-iso-c-standards-meeting-varna-bulgaria/)。
+- > ***C++ 版本遵循三年开发周期，并以发布年份命名，C++ 在临发布一年前会进入“功能冻结期（feature freeze）”，即版本开发进入半稳定状态，不再添加重大功能及特性，着重于修复各种 BUG***。因此直到 2025 年初，C++26 都会增加新内容。

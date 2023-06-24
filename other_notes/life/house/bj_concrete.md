@@ -467,6 +467,19 @@
   * > 今年置换到了富力城A区，希望下次有机会换到富力十号
     >> 其实换十号不如换D区的楼王
 
+富力城物业换成碧桂园的！！！【还有小红书等网站也搜一下回头！】
+- 碧桂园物业服务怎么样啊？ - 知乎 https://www.zhihu.com/question/26635017
+  * 碧桂园物业服务怎么样啊？ - 闻武的回答 - 知乎 https://www.zhihu.com/question/26635017/answer/2634163254
+    + > 2021年碧桂园服务在收并购上更是豪掷近200亿，拿下了四川嘉宝服务、新华正达、湖南天环物业、国瑞物业、`富力物业`、安徽诚和物业、彩生活等公司。
+      >> 【[:star:][`*`]】 //notes：靠，原来2021年就收购了，所以这么看两年过去了，是不是还凑合？——我也不知道啊啊啊——为什么这个世界上总有这种搅屎棍子存在呢？！
+- 碧桂园的物业服务是不是很差？ - 知乎 https://www.zhihu.com/question/429688487
+- 碧桂园房子是不错，但是物业怎么样呢？ - 知乎 https://www.zhihu.com/question/371118196
+- 有人知道碧桂园房子和物业咋样嘛？ - 知乎 https://www.zhihu.com/question/378411639
+- 碧桂园物业咋样呀，是不是自己的物业，服务怎么样？ - 知乎 https://www.zhihu.com/question/511362554
+- 有人知道碧桂园房子和物业咋样嘛？ - 知乎 https://www.zhihu.com/question/378411639
+- 都说碧桂园的物业好，到底好在哪里？ - 知乎 https://www.zhihu.com/question/511340034
+- 碧桂园物业谁都敢忽悠 https://www.bilibili.com/video/BV1zX4y1z7ze
+
 ### 周边配套
 
 盒马鲜生 https://www.freshippo.com/
