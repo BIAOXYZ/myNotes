@@ -90,6 +90,9 @@ tailscale：个人认为比zerotier更好 https://www.xiaoji.la/d/2407
 
 # AI for coding
 
+开源模型 PrivateGPT 上线，可本地搭建、避免信息外泄 https://www.ithome.com/0/701/777.htm
+- > https://github.com/imartinez/privateGPT
+
 AI 打 LeetCode 周赛进入前 10%，秘诀：自然语言编程 https://www.ithome.com/0/695/914.htm
 - > 用 AI 助手 Claude 参加第 103 场周赛，共四道题，均完成了 AC，能达到参与者前 10% 的成绩。
 
