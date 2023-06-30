@@ -90,6 +90,9 @@ tailscale：个人认为比zerotier更好 https://www.xiaoji.la/d/2407
 
 # AI for coding
 
+ChatGLM2-6B 有点儿厉害啊，笔记本就可以运行起来，个人 AI 助手的时代是不是要来了？ https://www.v2ex.com/t/952810
+- > 那就比较实用了，之前跑过 privateGPT ，关联度差，速度奇慢
+
 开源模型 PrivateGPT 上线，可本地搭建、避免信息外泄 https://www.ithome.com/0/701/777.htm
 - > https://github.com/imartinez/privateGPT
 

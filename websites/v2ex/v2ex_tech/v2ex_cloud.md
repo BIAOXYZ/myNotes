@@ -1,4 +1,6 @@
 
+聊聊 K8s 中的 Sidecar 设计模式 · 第 1 篇 https://www.v2ex.com/t/952837
+
 使用 Harbor 创建 containerd 私有镜像仓库必须要 Docker Compose 环境么？ https://www.v2ex.com/t/921682
 ```console
 众所周知,k8s 在 v1.25 版本及之后就采用了 containerd 作为容器运行时。由于项目需要，要离线创建 1 个 containerd 私有镜像仓库（不安装 docker 环境的情况下）。

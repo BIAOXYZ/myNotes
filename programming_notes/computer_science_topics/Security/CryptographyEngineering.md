@@ -166,6 +166,12 @@ Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flag
 
 AES256 CBC vs AES256 GCM performance? https://stackoverflow.com/questions/73067225/aes256-cbc-vs-aes256-gcm-performance
 
+## performance 单机
+
+Non-cryptography hashing methods https://asecuritysite.com/hash/non_crypto
+
+Comparison of hash functions and performance benchmarks https://greenrobot.org/essentials/features/performant-hash-functions-for-java/comparison-of-hash-functions/
+
 # attack
 
 crypto-attacks -- Python implementations of cryptographic attacks and utilities. https://github.com/jvdsn/crypto-attacks
