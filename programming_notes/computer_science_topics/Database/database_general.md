@@ -377,6 +377,10 @@ SQL优化之火山模型、向量化、编译执行 https://blog.csdn.net/u01143
 - > 2005 年，一篇题为《MonetDB/X100: Hyper-Pipelining Query Execution》的论文首次提出“向量化引擎”的概念。不同于传统的火山模型按行迭代的方式，向量化引擎采用批量迭代方式，可以在算子间一次传递一批数据。换句话说，向量化实现了从一次对一个值进行运算，到一次对一组值进行运算的跨越。
 - > 论文《DBMSs On A Modern Processor: Where Does Time Go?》还介绍了分支预测失败对数据库性能的影响。由于 CPU 中断了流水执行，重新刷新流水线，因此分支预测失败对数据库处理性能的影响很大。SIGMOD13 的论文《Micro Adaptivity in Vectorwise》也对分支在不同选择率下的执行效率有详细论述（下图）。
 
+执行模型: 火山模型和向量化 https://github.com/talent-plan/tinysql/blob/course/courses/proj5-part1-README-zh_CN.md
+
+分布式技术专题」三种常见的数据库查询引擎执行模型 https://www.modb.pro/db/45265
+
 # 故障恢复
 
 容灾管理中的RTO与RPO的关系 https://www.cnblogs.com/kouryoushine/p/8301372.html

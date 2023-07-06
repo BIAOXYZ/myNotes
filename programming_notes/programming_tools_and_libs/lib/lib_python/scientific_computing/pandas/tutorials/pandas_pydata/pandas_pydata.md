@@ -5,3 +5,5 @@ pandas documentation https://pandas.pydata.org/pandas-docs/stable/index.html
 `pandas.DataFrame.reset_index` https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reset_index.html
 
 `pandas.NamedAgg` https://pandas.pydata.org/docs/reference/api/pandas.NamedAgg.html
+
+`pandas.Series.apply` https://pandas.pydata.org/pandas-docs/version/0.18/generated/pandas.Series.apply.html

@@ -117,3 +117,7 @@ AI Code Tools: The Ultimate Guide in 2023 https://codesubmit.io/blog/ai-code-too
 
 GitHub 放大招，CEO 现场挑战 18 分钟开发小游戏，人还在台上网友已经玩到了 https://www.ithome.com/0/690/732.htm
 - > 贪吃蛇小游戏： https://hubberboss.github.io/cobra/
+
+## AI for coding chrome extensions
+
+- 【[:star:][`*`]】 MaxAI.me: ChatGPT AI Copilot (UseChatGPT.AI) https://chrome.google.com/webstore/detail/maxaime-chatgpt-ai-copilo/mhnlakgilnojmhinhkckjpncpbhabphi || https://www.usechatgpt.ai/ || https://www.maxai.me/
