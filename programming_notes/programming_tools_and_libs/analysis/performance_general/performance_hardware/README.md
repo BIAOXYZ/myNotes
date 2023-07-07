@@ -1,4 +1,9 @@
 
+最大顺序读写 10000 MB/s，威刚推出 LEGEND 970 PCIe Gen5 SSD https://www.ithome.com/0/704/113.htm
+- 回复里的：
+  * > 一顿顺读一万五，一看4K二十五
+  * > 顺序读写再快体感已经不显著了，4K快才是真的快
+
 AMD 与群联演示 PCIe 5.0 M.2 SSD，顺序读写破 10GB/s https://www.ithome.com/0/633/012.htm
 - > 据报道，本次展示的 PCIe 5.0 SSD 为 M.2 规格，采用的是美光 232 层 B58R TLC 闪存，由于这款闪存还在调整阶段，这款 SSD 的速度仅突破 10GB / s，最终成品应该可以实现 12/11 GB / s 的顺序读 / 写速度。
 - 回复里的：
@@ -28,4 +33,16 @@ MegPeak—让你更懂你的处理器 https://www.v2ex.com/t/900266
 - > **测试指令延迟**
 - > **用 MegPeak 测到的数据，可以用来干什么**
 
+## 磁盘性能测试
+
 Linux如何查看与测试磁盘IO性能 https://www.cnblogs.com/mauricewei/p/10502539.html
+
+How to Test Disk Speed Using the Linux Command Line?|(Measure Disk Performance with fio,dd and Graphical Method) https://cloudzy.com/blog/test-disk-speed-in-linux/
+- > **Test disk speed in Linux using commands**
+  * > **Test Disk Speed in Linux using `dd`**
+- > **Test your HDD, SSD Read Speed using `Hdparm`**
+- > **Better Test Disk Speed in Linux via `fio`**
+
+How to check hard disk performance https://askubuntu.com/questions/87035/how-to-check-hard-disk-performance
+
+Disk Speed Test (Read/Write): HDD, SSD Performance in Linux https://gist.github.com/ntamvl/84d234a48fa22a83449b3c1e39db06b8

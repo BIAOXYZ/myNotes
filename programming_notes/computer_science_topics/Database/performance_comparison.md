@@ -55,6 +55,10 @@ MariaDB 市值暴跌，收入不足以支持运营 https://www.v2ex.com/t/934297
 - > 我们测过 pg 的性能，相同配置的实例，在某些统计上比 mysql 快很多，但是一般的查询并没有比 mysql 快很多，甚至有些还慢，所以最终也没有用 pg 替换 MySQL 。 <br> lz 的需求，也是我们目前碰到的，并没有太好的办法。只能建立 Hadoop 数仓，实时导数据进去，然后定期删除 MySQL 的历史数据。
   >> 当然，原理上也不可能性能差很多啊。。。很多 pg 的索引其实都利用不上，我觉得适合是因为分布式和楼主需要数据库。普通用户用 mysql 就行，有 OLAP ，物理视图，想要时序数据库，存 json ，又怕麻烦，就可以选择 PG 。 <br> pg 跑 a 股历史分钟级数据应该没啥问题。DuckDB 线性回归预测股价的例子 https://github.com/digoal/blog/blob/master/202209/20220902_01.md <br> 选 PG 主要是有 https://github.com/digoal/blog
 
+# SQLite v.s. DuckDB
+
+DuckDB Profiling 1: vs SQLite3.md https://github.com/jtommaney/blog/blob/blog/posts/DuckDB%20Profiling%201%3A%20%20vs%20SQLite3.md
+
 # TPC
 
 ## tpcc

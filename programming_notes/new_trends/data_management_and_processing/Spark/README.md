@@ -4,6 +4,10 @@ Spark Internals https://github.com/JerryLead/SparkInternals
 
 spark ml 算法原理剖析以及具体的源码实现分析 https://github.com/endymecy/spark-ml-source-analysis
 
+# 论文
+
+(HotCloud 2010) Spark: Cluster Computing with Working Sets https://cs.stanford.edu/people/matei/papers/2010/hotcloud_spark.pdf
+
 # 课程
 
 Big Data, Hadoop, and Spark Basics https://learning.edx.org/course/course-v1:IBM+BD0225EN+2T2021/home
