@@ -234,3 +234,13 @@ SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm
 忘掉 Snowflake，感受一下性能高出 587 倍的全局唯一 ID 生成算法 https://juejin.im/post/6846687584324681735
 
 Twitter的雪花算法（snowflake）分布式&自增ID https://github.com/cloudyan/snowflake
+
+# Jepsen
+
+Jepsen https://jepsen.io/
+- > 【[:star:][`*`]】 Consistency Models https://jepsen.io/consistency
+  * > This clickable map (adapted from [Bailis, Davidson, Fekete et al](http://www.vldb.org/pvldb/vol7/p181-bailis.pdf) and [Viotti & Vukolic](https://arxiv.org/pdf/1512.00168.pdf)) shows the relationships between common consistency models for concurrent systems. Arrows show the relationship between consistency models. ***For instance, `strict serializable` implies both `serializability` and `linearizability`***, linearizability implies sequential consistency, and so on. Colors show how available each model is, for a distributed system on an asynchronous network.
+    >> //notes： What is the difference between linearizability and serializability? https://stackoverflow.com/questions/4179587/what-is-the-difference-between-linearizability-and-serializability
+
+Jepsen https://github.com/jepsen-io/jepsen
+- > A framework for distributed systems verification, with fault injection

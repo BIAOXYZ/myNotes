@@ -93,6 +93,16 @@ Amazon DynamoDB https://en.wikipedia.org/wiki/Amazon_DynamoDB
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# DuckDB
+
+Efficient SQL on Pandas with DuckDB https://duckdb.org/2021/05/14/sql-on-pandas.html
+- > TLDR: DuckDB, a free and open source analytical data management system, can efficiently ***run SQL queries directly on Pandas DataFrames***.
+- > Recently, an article was published [advocating for using SQL for Data Analysis](https://hakibenita.com/sql-for-data-analysis).
+- > **SQL on Pandas**
+- > **SQL on Pandas Performance**
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # not full-fledged DBs
 
 Dolt is Git for data! https://github.com/liquidata-inc/dolt
