@@ -74,7 +74,11 @@ ctrl + p
 
 ## 更换主题
 
-How can I select or change the theme on pudb (Python Debugger)? How can I select or change the theme on pudb (Python Debugger)?
+How can I select or change the theme on pudb (Python Debugger)? https://stackoverflow.com/questions/63491724/how-can-i-select-or-change-the-theme-on-pudb-python-debugger
+- https://stackoverflow.com/questions/63491724/how-can-i-select-or-change-the-theme-on-pudb-python-debugger/63881896#63881896
+  * > There is a config menu `Ctrl + p` and there you can select a theme.
+- https://stackoverflow.com/questions/63491724/how-can-i-select-or-change-the-theme-on-pudb-python-debugger/75304600#75304600
+  * > I edited the pudb config file at `~/.config/pudb/pudb.cfg` and set `theme = dark vim`. For example, here is the snippet from my `pudb.cfg`:
 
 ## 调试多进程
 

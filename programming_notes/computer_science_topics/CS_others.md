@@ -52,6 +52,10 @@ kernel_exploring https://github.com/RichardWeiYang/kernel_exploring
 
 KInK(KernelInKernel) https://github.com/gatieme/KernelInKernel
 
+泰晓科技发布 Linux Lab v1.2 正式版，支持龙芯 LoongArch 虚拟开发板 https://www.ithome.com/0/705/303.htm
+- > 自去年 12 月份发布 Linux Lab v1.1 后，v1.2 正式版目前已经发布于 [GitHub](https://github.com/tinyclub/linux-lab) 及 [Gitee](https://gitee.com/tinylab/linux-lab) 中，同时也迎来了 Cloud Lab v0.9-rc2，两者需同步升级配合使用，有兴趣的小伙伴们可以进行了解。
+- > 据悉，Linux Lab v1.2 升级部分内核到 v6.3.6，升级部分 QEMU 版本到 v8.0.2，新增 nolibc 和 NOMMU 开发支持，值得注意的是，该版本中对于 loongarch / virt 提供了虚拟开发板支持，另外也新增了 ppc / ppce500、arm / virt、loongarch / virt、s390x / s390-ccw-virtio 这几款虚拟开发板。
+
 ## complier project
 
 A Compiler Writing Journey https://github.com/DoctorWkt/acwj

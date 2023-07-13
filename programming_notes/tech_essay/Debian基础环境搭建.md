@@ -69,3 +69,27 @@ linux 彻底删除python https://juejin.cn/s/linux%20%E5%BD%BB%E5%BA%95%E5%88%A0
     > 这些步骤应该可以彻底删除在 Linux 系统上安装的 Python。请注意，删除文件和目录时需要谨慎，以免意外删除其他重要文件。
 
 How to remove all traces of python from Ubuntu https://askubuntu.com/questions/1321421/how-to-remove-all-traces-of-python-from-ubuntu  【这个回答的意思是不要删，因为系统会依赖自带的 Python，而是用虚环境来解决。】
+
+# 安装 docker 和 docker-compose
+
+Install Docker Engine on Debian https://docs.docker.com/engine/install/debian/
+
+Linux post-installation steps for Docker Engine https://docs.docker.com/engine/install/linux-postinstall/
+- > **Manage Docker as a non-root user**
+  * > Create the `docker` group.
+    ```sh
+    sudo groupadd docker
+    ```
+  * > Add your user to the `docker` group.
+    ```sh
+    sudo usermod -aG docker $
+    ```
+  * > Log out and log back in so that your group membership is re-evaluated. If you’re running Linux in a virtual machine, it may be necessary to restart the virtual machine for changes to take effect.
+  * > You can also run the following command to activate the changes to groups:
+    ```sh
+    newgrp docker
+    ```
+  * > Verify that you can run `docker` commands without `sudo`.
+    ```sh
+    docker run hello-world
+    ```
