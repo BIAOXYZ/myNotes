@@ -76,6 +76,17 @@ IG上最近字节期权交易对应估值降到了均价2600亿美元，对应17
 
 # 脉脉搞笑
 
+华为上班可以穿jk吗？ https://maimai.cn/web/gossip_detail?gid=32464905&egid=71487c69339540699bcd415520c11c07
+- > 我一般都是长裙配黑丝，到工位把裙子一撩，谁敢不帮我改 bug？
+- > 大家都穿黑丝，你穿JK，难怪你绩效C嘞
+  >> 你穿jk，你根本没资格打绩效！
+  >>> 我绩效打完，谁赞成，谁反对？
+  >>>> 我反对（我穿白丝）
+  >>>>> 你穿JK，你没资格沟通绩效，回家等通知去吧
+  >>>>>> 我们都是穿黑丝、肉丝，你穿JK，怪不得你要毕业
+  >>>>>>> 有没有有一种可能黑丝他也穿了？黑丝和jk不冲突。
+  >>>>>>>> 那得给A绩效
+
 被PUA到抑郁，一开口就是你是一个P7… https://maimai.cn/web/gossip_detail?encode_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjcwNjMyMjcsImlhdCI6MTU5Nzk3Njg2Nn0.rL2qho9FXu-eaQe15jq7tyIMBtWqinNqiOgUvY3vWwk
 - > p7 lives matter
 

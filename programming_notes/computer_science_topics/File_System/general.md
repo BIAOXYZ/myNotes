@@ -38,6 +38,14 @@ Ceph介绍及原理架构分享 https://www.jianshu.com/p/cc3ece850433
 
 【MIT 6.824】学习笔记 3: GFS - 多颗糖的文章 - 知乎 https://zhuanlan.zhihu.com/p/354450124
 
+# 文件系统性能
+
+Performance Comparison of Operations in the File System and in Embedded Key-Value Databases https://knowledge.e.southern.edu/crd/2022/noncompetingsessionpm/3/ || https://knowledge.e.southern.edu/cgi/viewcontent.cgi?article=1110&context=crd
+
+Understanding KeyValue embedded datastore vs FileSystem https://stackoverflow.com/questions/25715559/understanding-keyvalue-embedded-datastore-vs-filesystem
+
+Embedded key-value db vs. just storing one file per key? https://stackoverflow.com/questions/49744812/embedded-key-value-db-vs-just-storing-one-file-per-key
+
 # 其他
 
 Facebook’s Tectonic Filesystem: Efficiency from Exascale - Lancer的文章 - 知乎 https://zhuanlan.zhihu.com/p/353383767
