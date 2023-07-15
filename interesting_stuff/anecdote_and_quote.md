@@ -21,6 +21,9 @@ https://zh.wikiquote.org/wiki/%E6%B1%9F%E6%B3%BD%E6%B0%91
 https://zh.wikiquote.org/zh-hans/%E6%AF%9B%E6%B3%BD%E4%B8%9C
 - > `谁是我们的敌人？谁是我们的朋友？这个问题是革命的首要问题。` || https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19251201.htm
 
+You Cannot Fool All the People All the Time https://quoteinvestigator.com/2013/12/11/cannot-fool/
+- > Abraham Lincoln? Jacques Abbadie? Denis Diderot? Anonymous?
+
 # ACG圈
 
 ## 名侦探柯南
