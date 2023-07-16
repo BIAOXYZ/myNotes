@@ -63,3 +63,18 @@ $ python3 pyarrow-pandas.py
 Pandas vs. PyArrow file reading speed comparison https://github.com/tirthajyoti/Machine-Learning-with-Python/blob/master/Pandas%20and%20Numpy/Read_data_various_sources/Pandas%20CSV%20vs.%20PyArrow%20parquet%20reading%20speed.ipynb
 
 Stop Using Pandas to Read/Write Data — This Alternative is 7 Times Faster https://towardsdatascience.com/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
+
+# 2
+
+Pandas : Reading first n rows from parquet file? https://stackoverflow.com/questions/53982871/pandas-reading-first-n-rows-from-parquet-file
+- https://stackoverflow.com/questions/53982871/pandas-reading-first-n-rows-from-parquet-file/69888274#69888274
+  * > The accepted answer is out of date. It is now possible to read only the first few lines of a parquet file into pandas, though it is a bit messy and backend dependent.
+  * > To read using PyArrow as the backend, follow below:
+    ```py
+    from pyarrow.parquet import ParquetFile
+    import pyarrow as pa 
+
+    pf = ParquetFile('file_name.pq') 
+    first_ten_rows = next(pf.iter_batches(batch_size = 10)) 
+    df = pa.Table.from_batches([first_ten_rows]).to_pandas() 
+    ```

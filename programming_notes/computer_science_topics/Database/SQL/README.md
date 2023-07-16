@@ -89,6 +89,12 @@ PostgreSQL SUM Function https://www.postgresqltutorial.com/postgresql-sum-functi
 
 MySQL ifnull()函数 https://www.yiibai.com/mysql/ifnull.html
 
+## 聚合函数无法嵌套，只能通过子查询、CTE等来达到类似的功能
+
+How to Combine Two Aggregate Functions in SQL https://learnsql.com/blog/two-aggregate-functions-sql/
+- > **Real Solution 2: CTE**
+  * > ***Unlike nesting the subquery, using the CTE allows you to use the aggregate functions in the logical order***: first SUM(), then AVG(). The ‘inner’ function is used in the CTE, while the second SELECT statement is for the ‘outer’ aggregate function.
+
 # 其他
 
 python写多行sql换行，并传递参数 https://blog.csdn.net/qiudechao1/article/details/89150712
