@@ -1,4 +1,6 @@
 
+编码，加密，与密码哈希演进简史 https://www.v2ex.com/t/957713
+
 以前感觉 HTTPS 很安全，现在有一点点改变看法了。 https://www.v2ex.com/t/922534
 ```console
 HTTPS 安全是因为有 SSL 加密，网管直接抓包是看不到具体内容的。
