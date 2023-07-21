@@ -1,4 +1,14 @@
 
+深度学习，人工智能，请问哪本书可以入门，感谢 https://www.v2ex.com/t/957914
+- > Sklearn 与 TensorFlow 机器学习实用指南第二版 https://hands1ml.apachecn.org/#/
+- > https://playground.tensorflow.org/ 甚至可以直接让孩子当小游戏玩。
+- > 同推荐 吴恩达在 Coursera 上的两门课程
+- > 楼上推荐的这些都是做算法设计类的 如果是做应用 你可以 B 站看看 yolov5 大多数应该都是直接用 github 上开源的算法加上自己的数据集
+  >> Yolov8 更简单, 源码 clone 下来, 一行命令就能跑
+- > Keras 那本我觉得很不错
+- > B 站大学 李宏毅。。。
+- > 李沐的动手学深度学习！ https://zh.d2l.ai/
+
 ChatGPT 还不是最可怕的 https://www.v2ex.com/t/899927
 ```console
 ChatGPT 有多牛逼，大家应该知道了。
