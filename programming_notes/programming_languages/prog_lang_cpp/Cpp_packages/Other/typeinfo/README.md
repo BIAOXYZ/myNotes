@@ -10,6 +10,7 @@ type_info https://www.cplusplus.com/reference/typeinfo/type_info/
   * `std::type_info::name` https://www.cplusplus.com/reference/typeinfo/type_info/name/
 
 std::type_info https://en.cppreference.com/w/cpp/types/type_info
+- `typeid` operator https://en.cppreference.com/w/cpp/language/typeid
 
 type_info 类 https://docs.microsoft.com/zh-cn/cpp/cpp/type-info-class
 

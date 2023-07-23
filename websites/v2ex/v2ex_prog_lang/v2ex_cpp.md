@@ -1,4 +1,9 @@
 
+求教如何在 C++中优雅地实现在 C 中的 `void *` 所能实现的部分功能 https://www.v2ex.com/t/958698
+- > 如果是这些结构体数据成员不同，但要实现相似（但不相同）的行为，可以用继承搭配虚函数。 <br> 如果是单纯想把不一样的数据存在一起，可以用 `std::variant` (C++17). <br> 如果这些数据逻辑上不需要统一管理，放在一起只是为了复用代码，那可以考虑引入模板，然后不同类型各管各的，利用模板复用同一套代码。
+- > https://en.cppreference.com/w/cpp/utility/variant 把所有可能的类型都写上去 然后处理函数可以做成重载，或者用 https://en.cppreference.com/w/cpp/utility/variant/visit 里提示的 overloaded 方法
+- > 有共性就继承，没有就 `std::any`，直接用 `void*` 也没啥不行的。
+
 C++ 项目，出现了匪夷所思的 bug，在 vector 中添加对象，会导致 vector 崩溃，进而整个程序崩溃。 https://www.v2ex.com/t/941007
 - > compiler explorer 没有问题，所以是其他部分 bug
 - > gdb 运行。然后崩溃的地方看下 info threads ，看下是不是多线程操作 vector 了
