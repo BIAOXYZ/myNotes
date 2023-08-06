@@ -37,6 +37,14 @@ How do I combine two dataframes? https://stackoverflow.com/questions/12850345/ho
     df_col_merged = pd.concat([df_a, df_b], axis=1)
     ```
 
+Pandas DataFrame concat vs append https://stackoverflow.com/questions/15819050/pandas-dataframe-concat-vs-append
+- https://stackoverflow.com/questions/15819050/pandas-dataframe-concat-vs-append/51436106#51436106
+  * > Pandas concat vs append vs join vs merge
+    + > Concat gives the flexibility to join based on the axis(all rows or all columns)
+    + > Append is the specific case(`axis=0, join='outer'`) of concat (being deprecated use concat)
+    + > Join is based on the indexes (set by set_index) on how variable = `['left','right','inner','couter']`
+    + > Merge is based on any particular column each of the two dataframes, this columns are variables on like `'left_on', 'right_on', 'on'`
+
 # `.apply()`
 
 pandas apply() 函数用法 https://www.jianshu.com/p/4fdd6eee1b06

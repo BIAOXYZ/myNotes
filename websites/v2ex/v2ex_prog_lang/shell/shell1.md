@@ -1,4 +1,8 @@
 
+练习 shell 脚本有啥好的视频 或者网站 或者工具吗？ https://www.v2ex.com/t/962664
+- > 别用是最好的，需要用的时候就问 GPT 。最好用 python/julia : https://github.com/ninjaaron/replacing-bash-scripting-with-python  https://github.com/ninjaaron/administrative-scripting-with-julia
+  * Replacing Bash Scripting with Python https://github.com/ninjaaron/replacing-bash-scripting-with-python
+
 Linux 中为什么有些程序正常运行可以在标准输出中打印，用了重定向>或者管道|后，重定向文件及管道中无任何输入？ https://www.v2ex.com/t/899729
 ```console
 有些程序直接运行 COMMAND ，就能在屏幕中打 log 。
