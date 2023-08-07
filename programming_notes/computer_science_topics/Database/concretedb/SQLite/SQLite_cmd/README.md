@@ -81,6 +81,9 @@ How to use SQLite3 C interface to load CSV file into a main memory database? htt
     + > Your C code needs to open the CSV file, read in each line of the CSV file, making sure to store the column values (in the current row) in an appropriate container (i.e. column boundaries determined by comma separator).
     + > These column values can be bound to parameters in a prepared statement and then committed to the database. Here is a useful link: http://blog.quibb.org/2010/08/fast-bulk-inserts-into-sqlite/
 
+Upload A CSV File (Or Any Data File) To SQLite Using Python https://www.youtube.com/watch?v=UZIhVmkrAEs
+>> //notes：这个视频的核心点是用 pandas 的 `df.to_sql()` 方法进行导入。
+
 ## 导入数据不带header
 
 csv import without header row https://sqlite.org/forum/forumpost/9366feb243
@@ -144,11 +147,56 @@ con.commit()
 
 Omitting columns when importing CSV into Sqlite https://stackoverflow.com/questions/31822174/omitting-columns-when-importing-csv-into-sqlite
 
+## 导入数据时因为索引问题慢
+
+slow import of CSV files https://sqlite.org/forum/info/292d3cc4868ca032
+- > This is extremely faked, but notice the difference between in-order insertion and out-of-order insertion:
+  ```sql
+  >sqlite sample.db
+  SQLite version 3.34.0 2020-09-26 18:58:45
+  Enter ".help" for usage hints.
+  sqlite> create table x(x text primary key not null);
+  sqlite> .timer on
+  sqlite> pragma cache_size=1000;
+  Run Time: real 0.000 user 0.000000 sys 0.000000
+  sqlite> insert into x select random() from wholenumber where value between 1 and 10000000;
+  Run Time: real 197.973 user 36.953125 sys 160.046875
+  sqlite> .exit
+  >dir sample.db
+  2020-09-26  18:22       601,960,448 sample.db
+  >del sample.db
+  >sqlite sample.db
+  SQLite version 3.34.0 2020-09-26 18:58:45
+  Enter ".help" for usage hints.
+  sqlite> pragma cache_size=1000;
+  sqlite> create table x(x text primary key not null);
+  sqlite> .timer on
+  sqlite> insert into x select random() from wholenumber where value between 1 and 10000000 order by 1;
+  Run Time: real 14.937 user 17.078125 sys 2.843750
+  ```
+  * > In the first case the insertion is in "random" order, meaning that the index structures must be continually updated and the B-Tree rebalanced as the insert progresses.
+  * > In the second case the insertion is "in-order" so the B-Tree is always built in-order with a minimum of rebalancing as the insert progresses.
+  * > Note that I have reduced the cache to itty-bitty (which is the default) since this will have an devastatingly huge impact on the amount of I/O performed (I have a cruise-ship-load of RAM for caching, so without this the difference is less noticeable).
+  * > Even with the sort (order by clause) the in-order insertion is more than 10 times faster than the out-of-order insertion.
+
 ## 使用 `ATTACH` 连接两个sqlite数据库
 
 How to copy data from one SQLite database to another https://www.educative.io/answers/how-to-copy-data-from-one-sqlite-database-to-another
 
 SQLite - How to copy data from one database to another? https://tableplus.com/blog/2018/07/sqlite-how-to-copy-table-to-another-database.html
+
+SQLite - Backup a Database to File https://www.quackit.com/sqlite/tutorial/backup_a_database_to_file.cfm
+- > The `.backup` Command
+  * > This will create a file called backup.db containing a backup of the database. You can attach this back into the SQLite3 command-line shell if required (then do a `.databases` to view the list of database connections):
+    ```sql
+    sqlite> ATTACH DATABASE 'mybackup.db' AS MyBackup;
+    sqlite> .databases
+    seq  name             file                                                      
+    ---  ---------------  ----------------------------------------------------------
+    0    main             /Users/quackit/sqlite/music.db                            
+    1    temp                                                                       
+    2    MyBackup         /Users/quackit/sqlite/mybackup.db  
+    ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
