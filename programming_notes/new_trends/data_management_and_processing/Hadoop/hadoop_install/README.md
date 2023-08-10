@@ -9,7 +9,33 @@ docker-compose快速搭建hadoop https://www.jianshu.com/p/9b548517abbb  【已�
 
 `docker-hadoop/docker-compose.yml` https://github.com/big-data-europe/docker-hadoop/blob/master/docker-compose.yml || Docker-Compose搭建Hadoop集群 https://juejin.cn/post/7102410832729882638
 
-https://hub.docker.com/r/dockerq/docker-hdfs/  【已验证】
+https://hub.docker.com/r/dockerq/docker-hdfs/  【已验证】【最简单版本，一句命令即可】
+>> 【[:star:][`*`]】 //notes：有的[帖子](https://segmentfault.com/q/1010000006719529)里说需要显式的把 hdfs 需要的 9000 端口暴露出去：`-p 9000:9000`，但是我这边用原版的命令就可以。
+```sh
+# 宿主机上
+$ docker run -d --net host --name hdfs dockerq/docker-hdfs
+$ docker exec -it hdfs bash
+
+# 在容器内
+/# echo 123 > 123.log
+/# hdfs dfs -put 123.log /123.log
+/# hdfs dfs -ls /
+Found 1 items
+-rw-r--r--   1 root supergroup          4 2023-08-10 09:38 /123.log
+/# exit
+
+# 宿主机上
+$ hdfs dfs -ls hdfs://127.0.0.1:9000/
+Found 1 items
+-rw-r--r--   1 root supergroup          4 2023-08-10 17:38 hdfs://127.0.0.1:9000/123.log
+$ hdfs dfs -ls hdfs://localhost:9000/
+Found 1 items
+-rw-r--r--   1 root supergroup          4 2023-08-10 17:38 hdfs://127.0.0.1:9000/123.log
+## 但是下面这句换成对外的 IP 就不行，可能是公司网不通的问题吧。
+$ hdfs dfs -ls hdfs://{hostIP}:9000/
+## 不加 9000 也不行。
+$ hdfs dfs -ls hdfs://localhost/
+```
 
 ## 二进制方式
 
