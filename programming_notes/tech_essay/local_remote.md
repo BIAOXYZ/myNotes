@@ -37,4 +37,4 @@
 - Hadoop/HDFS
   * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)上多个容器`** 用 docker-compose 方式启动的 hadoop 集群。从而可以在本地的浏览器里访问 `http://远端ip:9870/` 看到面板。
 - Hadoop/HDFS2
-  * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)上单个容器`** 这个镜像（ https://hub.docker.com/r/dockerq/docker-hdfs/ ）只需要一个命令（并且不需要 docker-compose）就可以在远端Linux启动，本地的浏览器里访问 `http://远端ip:50070/` 就可以看到HDFS的面板。 <br> 但是如果想在远端的 Linux 宿主机上（而不是在远端容器里）访问，貌似只能用类似 `hdfs dfs -ls hdfs://localhost:9000/` 的命令？
+  * [x] **`本地(Mac)`** 浏览器 + **`远端(Linux)上单个容器`** 这个镜像（ https://hub.docker.com/r/dockerq/docker-hdfs/ ）只需要一个命令（并且不需要 docker-compose）就可以在远端Linux启动，本地的浏览器里访问 `http://远端ip:50070/` 就可以看到HDFS的面板。 <br> 但是如果想在远端的 Linux 宿主机上（而不是在远端容器里）访问，貌似只能用类似 `hdfs dfs -ls hdfs://localhost:9000/` 的命令？——反正我试了试用 `hdfs dfs -ls hdfs://{宿主机ip}:9000/` 是不行的。。。

@@ -21,3 +21,21 @@ Python2.x与3​​.x版本区别 http://www.runoob.com/python/python-2x-3x.html
 # `print`
 
 print从语句改成函数(Python3.0) https://www.jianshu.com/p/f9d2ebb4ba64
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他
+
+- 每个 Python 文件头部都增加如下代码（尽量保证此 import 位于任何其他 import 之前）：
+```py
+# coding: utf-8
+from __future__ import absolute_import, division, print_function, unicode_literals
+```
+- Python2 与 Python3 不兼容的代码，尽量使用 `six` 模块做兼容。比如 Python2 和 Python3 下 `range` 函数行为不一致，统一使用 `six.moves.range` 可以保证兼容性。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# six
+
+Six: Python 2 and 3 Compatibility Library https://six.readthedocs.io/
+- Supported renames:
