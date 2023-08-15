@@ -64,6 +64,8 @@ Pandas vs. PyArrow file reading speed comparison https://github.com/tirthajyoti/
 
 Stop Using Pandas to Read/Write Data — This Alternative is 7 Times Faster https://towardsdatascience.com/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
 
+The fastest way to read a CSV in Pandas https://pythonspeed.com/articles/pandas-read-csv-fast/
+
 # 2
 
 Pandas : Reading first n rows from parquet file? https://stackoverflow.com/questions/53982871/pandas-reading-first-n-rows-from-parquet-file
