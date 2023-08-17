@@ -241,9 +241,52 @@ postgres-#   else type end;
 postgres=#
 ```
 
+# 3
+>> //notes：根据列名二次聚合。
+
+```sql
+/* SQLite 下可用 */
+CREATE TABLE data ("sum(col1)" int, "count(col2)" INTEGER, "max(col3)" int);
+insert into data values (1, 2, 66);
+insert into data values (2, 3, 15);
+insert into data values (4, 7, 9);
+
+
+-- SELECT 
+--   *,
+--   CASE
+--     WHEN 'sum(col1)'
+--     THEN (SELECT SUM(col2) FROM data WHERE col1 = 'sum(xxx)')
+--     WHEN col = 'max(yyy)'
+--     THEN (SELECT MAX(col2) FROM data WHERE col1 = 'max(yyy)')
+--   END AS result
+-- FROM
+--   data
+-- GROUP BY
+--   col1;
+```
+```sql
+sqlite> CREATE TABLE data ("sum(col1)" int, "count(col2)" INTEGER, "max(col3)" int);
+sqlite> insert into data values (1, 2, 66);
+sqlite> insert into data values (2, 3, 15);
+sqlite> insert into data values (4, 7, 9);
+sqlite> select * from data;
+1|2|66
+2|3|15
+4|7|9
+sqlite> .schema
+CREATE TABLE data ("sum(col1)" int, "count(col2)" INTEGER, "max(col3)" int);
+sqlite> 
+sqlite> select sum("sum(col1)"), count("count(col2)"), max("max(col3)") from data;
+7|3|66
+sqlite> 
+```
+
 # 其他
 
 SQL之CASE WHEN用法详解 https://blog.csdn.net/rongtaoup/article/details/82183743
+
+SQLite CASE Expression https://database.guide/sqlite-case-expression%EF%BF%BC/
 
 # `end` / `end as`
 
