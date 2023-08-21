@@ -40,6 +40,10 @@ FBPCF (Facebook Private Computation Framework) https://github.com/facebookresear
 - (CCSW '21) Privacy-Preserving Randomized Controlled Trials: A Protocol for Industry Scale Deployment https://dl.acm.org/doi/10.1145/3474123.3486764
 - Private Computation Framework 2.0 https://research.facebook.com/publications/private-computation-framework-2-0/
 
+FBPCP (Facebook Private Computation Platform) https://github.com/facebookresearch/fbpcp/tree/main
+- https://github.com/facebookresearch/fbpcp/blob/main/docs/PrivateScaling.md
+  * ![](https://github.com/facebookresearch/fbpcp/raw/main/docs/ShardingDesignFB.jpg)
+
 ## Oasis Labs
 
 https://www.oasislabs.com/
