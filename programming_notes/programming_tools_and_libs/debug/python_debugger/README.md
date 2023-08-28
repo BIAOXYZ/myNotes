@@ -48,6 +48,11 @@ Debug Multiprocessing In Python https://unbiased-coder.com/debug-multiprocessing
 # PySnooper
 
 PySnooper - Never use print for debugging again https://github.com/cool-RR/PySnooper
+- Advanced Usage https://github.com/cool-RR/PySnooper/blob/0f1e67b26b94584e7c7e7e463cf43d506135fe4c/ADVANCED_USAGE.md
+  * > The output is colored for easy viewing by default, except on Windows. Disable colors like so:
+    ```py
+    @pysnooper.snoop(color=False)
+    ```
 
 实时可视化Debug：VS Code 开源新工具，一键解析代码结构 - 机器之心的文章 - 知乎 https://zhuanlan.zhihu.com/p/109212146
 - > 之前机器之心曾介绍过极简 DeBug 工具 [PySnooper]() ，我们只需要向感兴趣的函数增加一个装饰器，就能得到该函数的详细 log，包含哪行代码能运行、什么时候运行以及本地变量变化的确切时间等等。

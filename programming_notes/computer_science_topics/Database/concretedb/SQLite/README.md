@@ -217,6 +217,8 @@ Fedora Linux：计划将 RPM 数据库从 Berkeley DB 迁移到 SQLite https://w
 SQLite3 实践教程 https://linux.cn/article-13117-1.html
 - > SQLite 中有五种数据类型（实际上是 储存类别）：
 
+【[:star:][`*`]】 ~~SQLite, 64-bit integers, and the impossible number https://jakegoulding.com/blog/2011/02/06/sqlite-64-bit-integers/~~  【//已转移】
+
 ## 反人类的动态类型列- -
 
 Datatypes In SQLite https://www.sqlite.org/datatype3.html || SQLite版本3中的数据类型 https://www.sqlite.net.cn/datatype3.html
