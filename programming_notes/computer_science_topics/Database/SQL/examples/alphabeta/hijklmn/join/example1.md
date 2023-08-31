@@ -422,3 +422,7 @@ d1=# select * from ta left join (tb full outer join tc on tb.idb = tc.idc) as bc
  111 | abc   | 111 | bac   | 111 | cab
 (18 rows)
 ```
+
+# 其他参考链接
+
+Are left outer joins associative? https://stackoverflow.com/questions/20022196/are-left-outer-joins-associative
