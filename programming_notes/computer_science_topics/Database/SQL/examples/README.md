@@ -146,14 +146,16 @@ eef56cb5d207 :)
 ## 4
 
 ```sql
-create table filter_input_a (uid int, val int, t int, diag varchar(255), time int) ENGINE = TinyLog;
+-- create table filter_input_a (uid int, val int, t int, diag varchar(255), time int) ENGINE = TinyLog;
+create table filter_input_a (uid int, val int, t int, diag varchar(255), time int);
 insert into filter_input_a values (44969473, 2, 1, 'hd', 23);
 insert into filter_input_a values (1234182, 77, 1, 'aids', 24);
 insert into filter_input_a values (30274561, 1, 2, 'hd', 17);
 insert into filter_input_a values (56520193, 12, 2, 'hd', 29);
 insert into filter_input_a values (11262273, 8, 1, 'aids', 25);
 
-create table filter_input_b (device_id int, age varchar(255), gender varchar(255), date int, y int, med varchar(255), time int) ENGINE = TinyLog;
+-- create table filter_input_b (device_id int, age varchar(255), gender varchar(255), date int, y int, med varchar(255), time int) ENGINE = TinyLog;
+create table filter_input_b (device_id int, age varchar(255), gender varchar(255), date int, y int, med varchar(255), time int);
 insert into filter_input_b values (2245633, '24-30', 'female', 20211130, 1, 'aspirin', 4);
 insert into filter_input_b values (2463745, '50+', 'male', 20211130, 2, 'aspirin', 7);
 insert into filter_input_b values (8897537, '50+', 'male', 20211130, 3, 'hplc', 3);
@@ -164,6 +166,7 @@ insert into filter_input_b values (56520193, '24-30', 'male', 20211130, 3, 'aspi
 insert into filter_input_b values (60876801, '18-23', 'female', 20211130, 1, 'aspirin', 8);
 insert into filter_input_b values (86262273, '24-30', 'male', 20211130, 2, 'aspirin', 2);
 insert into filter_input_b values (44969473, '50+', 'female', 20211130, 1, 'aspirin', 5);
+insert into filter_input_b values (56520193, '18-23', 'female', 20211130, 3, 'aspirin', 7);
 
 --select filter_input_a.val, filter_input_a.t from (
     select filter_input_a.val, filter_input_a.t, filter_input_b.y, sum(filter_input_b.y), count(filter_input_a.t), count(distinct filter_input_b.y), 
