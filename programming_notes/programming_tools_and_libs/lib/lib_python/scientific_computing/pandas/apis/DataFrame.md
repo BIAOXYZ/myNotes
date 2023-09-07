@@ -51,6 +51,8 @@ pandas apply() 函数用法 https://www.jianshu.com/p/4fdd6eee1b06
 
 # `.groupby()`
 
+pandas GroupBy: Your Guide to Grouping Data in Python https://realpython.com/pandas-groupby/
+
 Pandas教程 | 超好用的Groupby用法详解 - 易执的文章 - 知乎 https://zhuanlan.zhihu.com/p/101284491
 
 pandas.MultiIndex.droplevel https://pandas.pydata.org/docs/reference/api/pandas.MultiIndex.droplevel.html
