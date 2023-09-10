@@ -61,6 +61,11 @@ https://stackoverflow.com/questions/53414028/pandas-how-to-create-multiple-colum
 
 https://stackoverflow.com/questions/43172970/python-pandas-groupby-aggregate-on-multiple-columns-then-pivot
 
+5 Pandas Groupby Tricks to Know in Python https://builtin.com/data-science/pandas-groupby
+- > 1.NUMBER OF GROUPS
+  * > However, when you already have a GroupBy object, you can directly use the method `ngroups`, which gives you the answer you are looking for: 
+- > 4.GET GROUPS
+
 # `.agg()`
 
 pandas.DataFrame.aggregate https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.aggregate.html
