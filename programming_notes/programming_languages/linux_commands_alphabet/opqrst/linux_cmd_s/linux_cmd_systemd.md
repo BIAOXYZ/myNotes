@@ -18,3 +18,7 @@ How To Use Systemctl to Manage Systemd Services and Units https://www.digitaloce
 
 运行 systemctl status 或 service status 后如何不等待输入 / 输出。 https://www.v2ex.com/t/659530
 > --no-pager <br> Do not pipe output into a pager.
+
+# systemd 视频
+
+Linux Systemd完全入门 ｜ 一个视频搞懂systemd的使用 https://www.bilibili.com/video/BV1Tz4y1s7QW

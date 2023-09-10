@@ -1,4 +1,24 @@
 
+有多少人完全使用命令行管理 git 得 https://www.v2ex.com/t/972261
+- > 开发用 (Neo)Vim ，但敲 Git 命令感觉很麻烦，也不直观。所以一直用的 `lazygit` 这种 terminal UI ，既能保证无缝的纯键盘操作体验，又有直观的 UI 显示各种 branch 和 commit 信息，一些要 rebase -i 的常用操作也都直接集成了快捷键一键完成
+- > `lazygit` 比敲命令舒服
+- > 命令行 + https://git-fork.com/ <br> 命令行用于提交和拉取代码，fork 用于查看记录、对比
+- > 我用的 `gitui`, TUI 类型的，怎么着也比纯命令行强吧。
+- > 玩意不是哪个方便，哪个清楚用哪个？
+  ```sh
+  git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  ```
+- > 
+  ```sh
+  git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %C(yellow)[%ae]%Creset' --abbrev-commit --date=iso
+  ```
+  * > 可以建一个 `git alias`:
+    ```sh
+    git config --global alias.clog "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %C(yellow)[%ae]%Creset' --abbrev-commit --date=iso"
+    ```
+  	> 以后就可以直接 `git clog`
+
+
 国内怎么配置代理下载 git 项目？ https://www.v2ex.com/t/904559
 - > https://ghproxy.com
 
