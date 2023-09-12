@@ -8,6 +8,10 @@ pandas documentation https://pandas.pydata.org/pandas-docs/stable/index.html
 
 `pandas.Series.apply` https://pandas.pydata.org/pandas-docs/version/0.18/generated/pandas.Series.apply.html
 
+# User Guide
+
+Working with missing data https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
+
 # `Input/output`
 
 `Input/output` https://pandas.pydata.org/docs/reference/io.html

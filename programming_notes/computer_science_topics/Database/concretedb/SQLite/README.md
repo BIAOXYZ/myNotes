@@ -29,6 +29,11 @@ Documentation https://www.sqlite.org/docs.html
   * > **Temporary Databases**
 - SQLite Shared-Cache Mode https://www.sqlite.org/sharedcache.html
 - SQLite中的限制 https://www.sqlite.net.cn/limits.html || Limits In SQLite https://www.sqlite.org/limits.html
+- SQLite和其他数据库引擎中的NULL处理 https://www.sqlite.net.cn/nulls.html || NULL Handling in SQLite Versus Other Database Engines https://www.sqlite.org/nulls.html
+  * > Update 2003-07-13: Since this document was originally written some of the database engines tested have been updated and users have been kind enough to send in corrections to the chart below. ***The original data showed a wide variety of behaviors, but over time the range of behaviors has converged toward the PostgreSQL/Oracle model***. The only significant difference is that Informix and MS-SQL both treat NULLs as indistinct in a UNIQUE column. || `2003年7月13日更新： 自从本文档最初编写以来，一些经过测试的数据库引擎已经更新，并且用户已经足够友好地发送对以下图表的更正。原始数据显示了各种各样的行为，但是随着时间的流逝，行为的范围已经趋向于PostgreSQL / Oracle模型。唯一的显着区别是Informix和MS-SQL都将NULL视为UNIQUE列中的NULL。`
+  * > The fact that NULLs are distinct for UNIQUE columns but are indistinct for SELECT DISTINCT and UNION continues to be puzzling. It seems that NULLs should be either distinct everywhere or nowhere. And the SQL standards documents suggest that NULLs should be distinct everywhere. Yet as of this writing, no SQL engine tested treats NULLs as distinct in a SELECT DISTINCT statement or in a UNION. || `NULL对于UNIQUE列是不同的，而对于SELECT DISTINCT和UNION却不明显，这一事实仍然令人困惑。似乎NULL应该在任何地方都没有区别，或者在任何地方都没有区别。SQL标准文档建议NULL在任何地方都应该是不同的。但是，在撰写本文时，没有经过测试的SQL引擎在SELECT DISTINCT语句或UNION中将NULL视为不同的。`
+  * 相关的个人补充链接：
+    + Working with missing data https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
 
 Official Git mirror of the SQLite source tree https://github.com/sqlite/sqlite || SQLite Source Repository https://sqlite.org/src/doc/trunk/README.md
 
