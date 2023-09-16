@@ -1,8 +1,6 @@
 
 # PostgreSQL
 
-<<Postgres Changelog - All Versions>> https://bucardo.org/postgres_all_versions.html
-
 ![PostgreSQL](https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png)
 
 A Tour of PostgreSQL Internals https://www.postgresql.org/files/developer/tour.pdf
