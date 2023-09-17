@@ -29,6 +29,9 @@ Python魔法方法漫游指南：构造与析构 https://mp.weixin.qq.com/s/V3i3
 
 I don't understand this python `__del__` behaviour https://stackoverflow.com/questions/6104535/i-dont-understand-this-python-del-behaviour
 
+Why isn't the `__del__` method called？ https://stackoverflow.com/questions/46957542/why-isnt-the-del-method-called
+- https://stackoverflow.com/questions/46957542/why-isnt-the-del-method-called/46966357#46966357
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `__new__()`
