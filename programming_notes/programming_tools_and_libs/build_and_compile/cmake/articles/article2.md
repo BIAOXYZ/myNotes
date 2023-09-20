@@ -24,3 +24,8 @@ CMake构建系统 - fangcun的文章 - 知乎 https://zhuanlan.zhihu.com/p/56167
       PRIVATE serialization
     )
     ```
+
+CMake入门笔记系列（一）：CMake编译过程详解 | Micro CMake for C++ - Sky Shaw的文章 - 知乎 https://zhuanlan.zhihu.com/p/620839692
+- > **1、 你好，CMake**
+  * > **1.2 CMake设计初衷是为了什么？**
+    + > 两个概念需要区分：`<build tree>` 和 `<source tree>`，分别对应`构建树`和`源码树`；构建树是目标/输出目录的路径，源码树是源码所在的路径。

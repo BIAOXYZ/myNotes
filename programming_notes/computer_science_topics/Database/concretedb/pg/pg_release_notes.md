@@ -29,3 +29,5 @@
       - > `any_value函数`不仅提供了查询的便利性，***而且只从每个分组获取一个值***，降低了计算成本，也提升了性能。
 
 PostgreSQL16新特性解读 https://mp.weixin.qq.com/s/Jniz0016bxbzRwhxSgeIbw
+
+PostgreSQL 16发布，原来华人贡献者有这么多！ https://mp.weixin.qq.com/s/YAW4fwDSIn3e6RsRwe1VDQ

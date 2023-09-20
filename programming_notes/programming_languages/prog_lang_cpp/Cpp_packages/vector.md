@@ -445,6 +445,8 @@ C++ - Vector 计算 均值(mean) 和 方差(variance) https://blog.csdn.net/Miss
 
 C++ Vector : Print all elements – (6 Ways) https://thispointer.com/cpp-vector-print-all-elements/
 
+The C++ template for Printing the Vector/List/Set/Map by Overriding the cout Operator? https://helloacm.com/the-c-template-for-printing-the-vector-list-set-map-by-overriding-the-cout-operator/
+
 # vector作为参数
 
 C++：vector小指南（附带一些新手错误） - Feng的文章 - 知乎 https://zhuanlan.zhihu.com/p/336492399

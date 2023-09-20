@@ -63,3 +63,7 @@ IPv4：超网，你是我的“神” https://www.ithome.com/0/654/991.htm || ht
 漫画 | 理解了 TCP 连接的实现以后，客户端的并发也爆发了 https://www.ithome.com/0/644/714.htm || https://mp.weixin.qq.com/s/ta6upubg0o1w03YGUo8Trg  【from `开发内功修炼`】
 
 漫画 | 一台 Linux 服务器最多能支撑多少个 TCP 连接？ https://www.ithome.com/0/644/631.htm || https://mp.weixin.qq.com/s/Lkyj42NtvqEj63DoCY5btQ  【from `开发内功修炼`】
+
+开发内功修炼 https://www.zhihu.com/column/c_1147478886047719424
+- 深度理解 Linux 读取文件过程！ - 张彦飞的文章 - 知乎 https://zhuanlan.zhihu.com/p/371574406
+- 万字图文 | 你写的代码是如何跑起来的？ - 张彦飞的文章 - 知乎 https://zhuanlan.zhihu.com/p/593681119
