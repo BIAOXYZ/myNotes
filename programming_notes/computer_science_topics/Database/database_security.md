@@ -9,11 +9,15 @@ https://blog.csdn.net/shaoyiwenet/article/details/79377068
 Cryptdb学习笔记（0）——初识 - CSDN博客
 https://blog.csdn.net/liuyueyi1995/article/details/54892399
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # other secure DBs
 
 Jana: Private Data as a Service https://galois.com/project/jana-private-data-as-a-service/
 
 SentinelDB https://logsentinel.com/sentineldb/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Database Firewall
 
@@ -21,6 +25,8 @@ SentinelDB https://logsentinel.com/sentineldb/
 - Imperva https://www.imperva.com/
 - HexaTier http://www.hexatier.com/
 - 安华云安全(其实就是安华金和) http://www.dbscloud.cn/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Security of Famous DBs
 
@@ -72,6 +78,47 @@ Row-level security on distributed tables https://www.citusdata.com/updates/v11-0
 - > Postgres provides [row security policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html) that restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted by data modification commands. This feature is also known as Row-Level Security.
 - > With Citus 11.0, this feature is available for distributed tables as well.
 
+## DB Security of MySQL
+
+图文实录｜MySQL技术分享：MySQL的数据加密 https://mp.weixin.qq.com/s/SqW8kExiuLRcBy8KbeFXiw
+- > 本文金句：为了保证数据安全，MySQL支持了`透明加密`，`函数加密`等特性，其中尤其是透明加密为所有落盘数据提供了充分的安全保障。
+- > **1 数据加密简介**
+  * > MySQL也提供了多种方式的加密来保证数据安全，主要包括：
+    + > 函数加密：通过提供若干加密函数的方式来对敏感数据进行编码处理，防止明文数据泄露；下图即为MySQL企业级函数加密的示意图。
+    + > `透明数据加密`：在存储引擎中对数据进行加密，用户无感知。所有落盘数据都可加密。这个特性是MySQL在安全方面非常重要的一个特性，后面的分享我们将会对这一特性的原理和实现方法进行详细的介绍。
+- > **2 数据加密详解**
+  * > 透明数据加密原理（总体设计）：
+    + > `MySQL5.7.11`开始支持单表数据透明加密，***`8.0`版本支持所有数据（redo，binlog，relay log等所有落盘数据）加密***。
+  * > 总体架构上来说，MySQL采用了双层秘钥的设计：
+    + > Tablespace key：表空间秘钥，用于加解密每个数据页，加密后存放于每个表空间数据ibd文件的第一个页；
+    + > Master key：主秘钥，用于加解密各个tablespace key，存储于oracle key vault或者秘钥文件中。
+  * > 双层秘钥的最大好处在于秘钥轮转（key rotation）的时候，不需要把所有数据都解密后再重新加密，而只需要重新加密tablespace key即可。
+  * > `Keyring plugin`插件：
+    + > 秘钥接口插件，用于从`Oracle key vault`或`秘钥文件`中获取master key，并提供接口给存储引擎以获取master key。
+  * > 加解密流程：
+    ```console
+    如下图所示，透明数据加密的主要流程是：
+    1.读取秘钥：InnoDB调用keyring插件接口获取master key并用之解密存储于ibd文件第一页的Tablespace key。解密后的tablespace key置于表空间内存对象fil_space_t中；
+    2.加密：在写入每一个数据页的时候，使用fil_space_t对象中的表空间秘钥加密数据页的数据部分；
+    3.解密：在读取每一个数据页的时候，使用fil_space_t对象中的表空间秘钥解密数据页的数据部分；
+    ```
+  * > 其他细节问题：
+    + > Master key rotate：由于采用了双层秘钥设计，rotate的时候，只需要使用新的master key将所有表空间的tablespace key重新加密并写入ibd文件的第一页。
+    + > 加密表的import/export：在export的时候随机生成一个临时的transfer_key，把现有的 tablespace_key用transfer_key加密，并将两者同时写入.cfp的文件中。Import时会读取transfer_key用来解密tablespace_key，然后执行正常的import 操作即可。
+- > **3 透明数据加密的问题**
+  * > 问题1：性能问题：
+    + > 5.7早期版本如果使用yassl性能下降严重，最高>30%。
+    + > 8.0采用openssl后，总体对性能影响不大，但在某些场景下性能影响也比较大，比如：oltp_read_only低并发可能会>10%
+    + > 如下图所示：（数据来源：阿里云RDS MySQL TDE测试报告）
+  * > 问题2：数据安全问题
+    + > Tablespace key放在ibd文件的固定位置，虽然是经过加密，但也有泄漏的可能；
+    + > import/export生成的临时transfer_key保存在.cfp文件中，也有泄漏的可能。
+- > **4 Q&A**
+  * > q1：key rotate 如何保证原子性？
+  * > a1：如之前所描述的，key rotate是将各个tablespace key重新加密并写入ibd文件的第一个页面的，而这个过程是会记录redo log的。InnoDB除了写入相关的redo log外，还会将当前表的加密信息也写入redo log，比如说master key的版本号等。所以，在发生crash时，可以在recovery的过程中，通过redo log中记录的相关信息来保证key rotate的一致性状态。
+  * > q2：Klustron在加密这块做了哪些工作？
+  * > a2：Klustron除了支持MySQL已经提供的加密特性外，还实现了落盘数据（包括数据，日志，备份等等）的全流程加密。另外，KunlunBase正在实现对国五加密标准的支持。
+
 ## DB Security of Oracle
 
 Oracle数据安全解决方案透明数据加密TDE
@@ -112,3 +159,5 @@ https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-co
 华为云GaussDB（for openGauss）完成中国信通院首个防篡改数据库产品评测 https://bbs.csdn.net/topics/606844977 || https://bbs.huaweicloud.com/forum/forum.php?mod=viewthread&tid=188842
 
 账本数据库机制 https://www.bookstack.cn/read/openGauss-2.1-zh/CharacteristicDescription-%E8%B4%A6%E6%9C%AC%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%BA%E5%88%B6.md
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
