@@ -90,11 +90,11 @@ Row-level security on distributed tables https://www.citusdata.com/updates/v11-0
   * > 透明数据加密原理（总体设计）：
     + > `MySQL5.7.11`开始支持单表数据透明加密，***`8.0`版本支持所有数据（redo，binlog，relay log等所有落盘数据）加密***。
   * > 总体架构上来说，MySQL采用了双层秘钥的设计：
-    + > Tablespace key：表空间秘钥，用于加解密每个数据页，加密后存放于每个表空间数据ibd文件的第一个页；
-    + > Master key：主秘钥，用于加解密各个tablespace key，存储于oracle key vault或者秘钥文件中。
-  * > 双层秘钥的最大好处在于秘钥轮转（key rotation）的时候，不需要把所有数据都解密后再重新加密，而只需要重新加密tablespace key即可。
+    + > Tablespace key：表空间秘钥，用于加解密每个数据页，***加密后存放于每个表空间数据`ibd文件`的第一个页***；
+    + > Master key：主秘钥，用于加解密各个tablespace key，***存储于`oracle key vault`或者`秘钥文件`中***。
+  * > ***双层秘钥的最大好处在于秘钥轮转（key rotation）的时候，不需要把所有数据都解密后再重新加密，而只需要重新加密tablespace key即可***。
   * > `Keyring plugin`插件：
-    + > 秘钥接口插件，用于从`Oracle key vault`或`秘钥文件`中获取master key，并提供接口给存储引擎以获取master key。
+    + > 秘钥接口插件，用于从`Oracle key vault`或`秘钥文件`中获取master key，***并提供接口给存储引擎以获取master key***。
   * > 加解密流程：
     ```console
     如下图所示，透明数据加密的主要流程是：
@@ -104,18 +104,18 @@ Row-level security on distributed tables https://www.citusdata.com/updates/v11-0
     ```
   * > 其他细节问题：
     + > Master key rotate：由于采用了双层秘钥设计，rotate的时候，只需要使用新的master key将所有表空间的tablespace key重新加密并写入ibd文件的第一页。
-    + > 加密表的import/export：在export的时候随机生成一个临时的transfer_key，把现有的 tablespace_key用transfer_key加密，并将两者同时写入.cfp的文件中。Import时会读取transfer_key用来解密tablespace_key，然后执行正常的import 操作即可。
+    + > 加密表的 import/export：在export的时候随机生成一个临时的 `transfer_key`，***把现有的 tablespace_key 用 transfer_key 加密，<ins>并将两者同时写入 `.cfp` 的文件中</ins>***。Import时会读取transfer_key用来解密tablespace_key，然后执行正常的 import 操作即可。
 - > **3 透明数据加密的问题**
   * > 问题1：性能问题：
-    + > 5.7早期版本如果使用yassl性能下降严重，最高>30%。
+    + > 5.7早期版本如果使用`yassl`性能下降严重，最高>30%。
     + > 8.0采用openssl后，总体对性能影响不大，但在某些场景下性能影响也比较大，比如：oltp_read_only低并发可能会>10%
     + > 如下图所示：（数据来源：阿里云RDS MySQL TDE测试报告）
   * > 问题2：数据安全问题
-    + > Tablespace key放在ibd文件的固定位置，虽然是经过加密，但也有泄漏的可能；
-    + > import/export生成的临时transfer_key保存在.cfp文件中，也有泄漏的可能。
+    + > `Tablespace key` 放在 `ibd文件` 的固定位置，虽然是经过加密，但也有泄漏的可能；
+    + > import/export生成的临时 `transfer_key` 保存在 `.cfp文件` 中，也有泄漏的可能。
 - > **4 Q&A**
   * > q1：key rotate 如何保证原子性？
-  * > a1：如之前所描述的，key rotate是将各个tablespace key重新加密并写入ibd文件的第一个页面的，而这个过程是会记录redo log的。InnoDB除了写入相关的redo log外，还会将当前表的加密信息也写入redo log，比如说master key的版本号等。所以，在发生crash时，可以在recovery的过程中，通过redo log中记录的相关信息来保证key rotate的一致性状态。
+  * > a1：如之前所描述的，key rotate是将各个tablespace key重新加密并写入ibd文件的第一个页面的，***而这个过程是会记录redo log的***。InnoDB除了写入相关的redo log外，还会将当前表的加密信息也写入redo log，比如说master key的版本号等。所以，在发生crash时，可以在recovery的过程中，通过redo log中记录的相关信息来保证key rotate的一致性状态。
   * > q2：Klustron在加密这块做了哪些工作？
   * > a2：Klustron除了支持MySQL已经提供的加密特性外，还实现了落盘数据（包括数据，日志，备份等等）的全流程加密。另外，KunlunBase正在实现对国五加密标准的支持。
 
