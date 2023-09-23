@@ -124,6 +124,28 @@ netstat -anp | grep 80
 lsof -i:80 
 ```
 
+### 修改主机名
+*总结*
+```shell
+# 查询linux机器的 hostname 命令很简单，大家应该都会用：使用root用户登录时，前面的登录符就是了
+
+# 修改分为两种：1.暂时修改；2.永久修改
+## 1.暂时修改
+$ hostname newname
+
+### newname即要设置的新的hostname，运行后立即生效，但是在系统重启后会丢失所做的修改，如果要永久更改系统的hostname，就要修改相关的设置文件。
+
+## 2.永久修改
+### suse操作系统是保存在 /etc/HOSTNAME 中的，修改该文件中的内容，重启之后就会生效。（重启时其实执行的 /etc/rc.d/boot.localnet 脚本，生效 hostname ）
+### 如果想不重启永久修改主机名，需要做如下操作：
+### 1.修改 /etc/HOSTNAME 文件
+### 2.修改当前的 $HOSTNAME 变量
+### 3.停掉 /etc/rc.d/boot.localnet
+### 4.启动 /etc/rc.d/boot.localnet
+```
+- Linux hostname主机名配置文件/etc/hosts详解 http://www.jb51.net/LINUXjishu/77329.html
+- IP、主机名和域名 http://blog.csdn.net/houjixin/article/details/52604941
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 软件系统类
@@ -212,16 +234,16 @@ Adding user bugmaster to group testing
 
 ***最终证明还是如下两种方法靠谱：以`添加test用户到docker用户组`为例***
 ```shell
-usermod -aG docker test   //usermod -aG ${组名} ${用户名}
-gpasswd -a test docker   //gpasswd -a ${用户名} ${组名}
+usermod -aG docker test   # usermod -aG ${组名} ${用户名}
+gpasswd -a test docker    # gpasswd -a ${用户名} ${组名}
 ```
 
 ```shell
 # 这几个或多或少有些毛病，别用就是了！！！
 
-usermod -a docker test   //不能单独用-a参数
-usermod -g docker test   //这个似乎是把用户所有组里第一个替换成命令里的组
-usermod -G docker test   //这个似乎是把用户所有组里最后一个替换成命令里的组
+usermod -a docker test   # 不能单独用-a参数
+usermod -g docker test   # 这个似乎是把用户所有组里第一个替换成命令里的组
+usermod -G docker test   # 这个似乎是把用户所有组里最后一个替换成命令里的组
 
 # 初始时test用户属于testgr和test两个用户组。实验一下小g参数，发现docker组替换掉了第一个testgr组：
 root@cloudsec1 ~ $ groups test
@@ -241,6 +263,7 @@ test : testgr docker
 ### 查看某个user所在的组，以及组内成员
 `groups ${user}` 
 ```shell
+# 用户 test 在三个组：test组、wheel组、docker组
 [root@dhcp-9-186-54-39 ~]# groups test
 test : test wheel docker
 [root@dhcp-9-186-54-39 ~]# groups root
@@ -251,4 +274,8 @@ root : root
 >> //notes：灵活点，从 `cat /etc/passwd` 想想就明白了：
 ```shell
 cat /etc/group
+
+# 嫌内容多的话可以 grep 再过滤下：
+$ cat /etc/group | grep docker
+docker:x:998:biaoxyz
 ```
