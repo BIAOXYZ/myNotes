@@ -99,6 +99,25 @@ hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | tail -n +2 | hdfs dfs -appendToFile -
 ## `-tail`
 
 Why is there no 'hadoop fs -head' shell command? https://stackoverflow.com/questions/19778137/why-is-there-no-hadoop-fs-head-shell-command
+```sh
+A fast method for inspecting files on HDFS is to use tail:
+
+$ hadoop fs -tail /path/to/file
+
+This displays the last kilobyte of data in the file, which is extremely helpful. 
+However, the opposite command head does not appear to be part of the shell command collections. I find this very surprising.
+```
+- https://stackoverflow.com/questions/19778137/why-is-there-no-hadoop-fs-head-shell-command/19779388#19779388
+  * > I would say it's more to do with efficiency - ***a head can easily be replicated by piping the output of a `hadoop fs -cat` through the linux `head` command***.
+    ```sh
+    hadoop fs -cat /path/to/file | head
+    ```
+  * > This is efficient as ***`head` will close out the underlying stream after the desired number of lines have been output***
+  * > Using `tail` in this manner would be considerably less efficient - as you'd have to stream over the entire file (all HDFS blocks) to find the final x number of lines.
+    ```sh
+    hadoop fs -cat /path/to/file | tail
+    ```
+  * > The `hadoop fs -tail` command as you note works on the last kilobyte - ***hadoop can efficiently find the last block and skip to the position of the final kilobyte, then stream the output***. Piping via tail can't easily do this.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
