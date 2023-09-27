@@ -200,6 +200,33 @@ XORBoost: Tree Boosting in the Multiparty Computation Setting https://eprint.iac
 
 DataTrust https://dp.alibaba.com/product/datatrust
 
+### 双子座实验室
+
+https://alibaba-gemini-lab.github.io/
+- PVC Security: An Intermediary-free Solution to Safe Data Sharing Between Rational Parties https://alibaba-gemini-lab.github.io/docs/blog/pvc/
+
+(USENIX Security 2022) Cheetah: Lean and Fast Secure Two-Party Deep Neural Network Inference (Full Version) https://eprint.iacr.org/2022/207.pdf
+- 相关文章：
+  * Cheetah: Lean and Fast Secure Two-Party Deep Neural Network Inference - 云中雨雾的文章 - 知乎 https://zhuanlan.zhihu.com/p/476525705
+  * G.O.S.S.I.P 学术论文推荐 2022-03-16 Cheetah https://mp.weixin.qq.com/s/qYJvF34i0OId3hTef1sHow
+
+全同态加密开源库Seal发布4.0版，增加阿里贡献的BGV模块 https://mp.weixin.qq.com/s/Klq1FKPIPQZkqM7T6BhdTA
+
+### 阿里妈妈
+
+广告营销场景下的隐私计算实践：阿里妈妈营销隐私计算平台SDH https://mp.weixin.qq.com/s/UYhgRzgRLD5XDcx2M4Vg5Q
+- > **一、概览**
+  * > 如何在营销场景下安全合规的使用数据，维护在线广告商业模型的核心运作，成为当下广告生态中各企业亟需解决的问题。阿里妈妈一直注重对于隐私数据的安全合规使用，最大限度地保护用户隐私和数据安全。本篇分享阿里妈妈在保护数据安全和用户隐私方向的Data Clean Room实践产品 ***营销隐私计算平台Secure Data Hub（以下简称“SDH”）***，欢迎阅读交流。
+- > **1.1 产品介绍**
+  * > 营销隐私计算平台SDH（Secure Data Hub）是由阿里妈妈提供的一套面向广告引擎、广告主、第三方检测公司在隐私安全环境下进行数据融合、隐私计算、联合建模的Data Clean Room解决方案。
+  * > SDH基于多方安全计算（Secure Multi-Party Computation, MPC）、隐私保护机器学习（Privacy-Preserving Machine Learning, PPML）等隐私增强计算技术，立足于广告营销场景，贯穿广告投放的跟踪、采集、激活和衡量的全流程，实现对隐私数据的安全合规使用。在营销场景下的数据处理、人群洞察、投放优化、归因衡量、增效度量、触达监测等流程中严格保障多方数据的隐私安全和数据合规，为品牌提供跨域安全一致的数据决策能力。
+  * > SDH已于2022年12月份通过了中国信通院第七批“可信隐私计算”评测，并获得多方安全计算（MPC）和联邦学习（Federated Learning, FL）的基础能力专项评测的两项评测证书。
+- > **关于我们**
+  * > 阿里妈妈SDS（Strategic Data Solutions）团队致力于用数据让商家和平台的增长战略更加科学有效。我们为阿里妈妈全线广告客户提供营销洞察、营销策略、价值量化、效果归因、隐私计算的技术服务。我们将持续在营销场景下的数据隐私安全和解决方案方向进行探索和落地，欢迎各业务方关注与合作。
+  * > 阿里巴巴智能引擎算法平台团队负责为阿里巴巴的广告搜索推荐等核心商业提供AI工程平台和隐私增强计算服务。我们长期追踪各类广告营销以及搜索推荐场景所需的超大规模计算存储、稀疏及多模态深度学习、联邦学习及隐私增强计算等领域前沿，欢迎进行技术交流。
+
+## 蚂蚁金服
+
 Antchain-MPC https://github.com/alipay/Antchain-MPC
 - MORSE STF快速开始 https://github.com/alipay/Antchain-MPC/wiki/MORSE-STF%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B
 - MORSE STF使用手册 https://github.com/alipay/Antchain-MPC/wiki/MORSE-STF%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C
@@ -238,31 +265,6 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
 SecretFlow-SPU: A  Performant and User-Friendly Framework for Privacy-Preserving Machine Learning - 酸菜鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/650002283
 - > 此次介绍是蚂蚁隐语团队Junming Ma和Yancheng Zheng等人发表在USENIX ATC'2023的SecretFlow-SPU，论文链接如下： https://www.usenix.org/conference/atc23/presentation/ma
 - > SecretFlow-SPU开源代码链接如下： https://github.com/secretflow/spu
-
-### 双子座实验室
-
-https://alibaba-gemini-lab.github.io/
-- PVC Security: An Intermediary-free Solution to Safe Data Sharing Between Rational Parties https://alibaba-gemini-lab.github.io/docs/blog/pvc/
-
-(USENIX Security 2022) Cheetah: Lean and Fast Secure Two-Party Deep Neural Network Inference (Full Version) https://eprint.iacr.org/2022/207.pdf
-- 相关文章：
-  * Cheetah: Lean and Fast Secure Two-Party Deep Neural Network Inference - 云中雨雾的文章 - 知乎 https://zhuanlan.zhihu.com/p/476525705
-  * G.O.S.S.I.P 学术论文推荐 2022-03-16 Cheetah https://mp.weixin.qq.com/s/qYJvF34i0OId3hTef1sHow
-
-全同态加密开源库Seal发布4.0版，增加阿里贡献的BGV模块 https://mp.weixin.qq.com/s/Klq1FKPIPQZkqM7T6BhdTA
-
-### 阿里妈妈
-
-广告营销场景下的隐私计算实践：阿里妈妈营销隐私计算平台SDH https://mp.weixin.qq.com/s/UYhgRzgRLD5XDcx2M4Vg5Q
-- > **一、概览**
-  * > 如何在营销场景下安全合规的使用数据，维护在线广告商业模型的核心运作，成为当下广告生态中各企业亟需解决的问题。阿里妈妈一直注重对于隐私数据的安全合规使用，最大限度地保护用户隐私和数据安全。本篇分享阿里妈妈在保护数据安全和用户隐私方向的Data Clean Room实践产品 ***营销隐私计算平台Secure Data Hub（以下简称“SDH”）***，欢迎阅读交流。
-- > **1.1 产品介绍**
-  * > 营销隐私计算平台SDH（Secure Data Hub）是由阿里妈妈提供的一套面向广告引擎、广告主、第三方检测公司在隐私安全环境下进行数据融合、隐私计算、联合建模的Data Clean Room解决方案。
-  * > SDH基于多方安全计算（Secure Multi-Party Computation, MPC）、隐私保护机器学习（Privacy-Preserving Machine Learning, PPML）等隐私增强计算技术，立足于广告营销场景，贯穿广告投放的跟踪、采集、激活和衡量的全流程，实现对隐私数据的安全合规使用。在营销场景下的数据处理、人群洞察、投放优化、归因衡量、增效度量、触达监测等流程中严格保障多方数据的隐私安全和数据合规，为品牌提供跨域安全一致的数据决策能力。
-  * > SDH已于2022年12月份通过了中国信通院第七批“可信隐私计算”评测，并获得多方安全计算（MPC）和联邦学习（Federated Learning, FL）的基础能力专项评测的两项评测证书。
-- > **关于我们**
-  * > 阿里妈妈SDS（Strategic Data Solutions）团队致力于用数据让商家和平台的增长战略更加科学有效。我们为阿里妈妈全线广告客户提供营销洞察、营销策略、价值量化、效果归因、隐私计算的技术服务。我们将持续在营销场景下的数据隐私安全和解决方案方向进行探索和落地，欢迎各业务方关注与合作。
-  * > 阿里巴巴智能引擎算法平台团队负责为阿里巴巴的广告搜索推荐等核心商业提供AI工程平台和隐私增强计算服务。我们长期追踪各类广告营销以及搜索推荐场景所需的超大规模计算存储、稀疏及多模态深度学习、联邦学习及隐私增强计算等领域前沿，欢迎进行技术交流。
 
 ## 百度
 

@@ -93,3 +93,13 @@ hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | hdfs dfs -appendToFile - hdfs://xxx/y
 ```sh
 hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | tail -n +2 | hdfs dfs -appendToFile - hdfs://xxx/yyy/zzz/merged.txt
 ```
+
+# 不常用命令
+
+## `distcp`
+
+DistCp Guide https://hadoop.apache.org/docs/stable/hadoop-distcp/DistCp.html || https://hadoop.apache.org/docs/r1.2.1/distcp.html
+
+DistCp https://hadoop.org.cn/docs/hadoop-distcp/DistCp.html
+
+HDFS并行复制Distcp https://www.cnblogs.com/skyl/p/4744676.html
