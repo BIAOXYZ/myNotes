@@ -44,6 +44,8 @@ FBPCP (Facebook Private Computation Platform) https://github.com/facebookresearc
 - https://github.com/facebookresearch/fbpcp/blob/main/docs/PrivateScaling.md
   * ![](https://github.com/facebookresearch/fbpcp/raw/main/docs/ShardingDesignFB.jpg)
 
+案例丨Meta如何提高密码安全性并保护用户隐私 https://mp.weixin.qq.com/s/v66OmdIdWA1efRCywPIuLQ
+
 ## Oasis Labs
 
 https://www.oasislabs.com/
@@ -232,6 +234,10 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
   查看已有配置
   tc qdisc show dev eth0
   ```
+
+SecretFlow-SPU: A  Performant and User-Friendly Framework for Privacy-Preserving Machine Learning - 酸菜鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/650002283
+- > 此次介绍是蚂蚁隐语团队Junming Ma和Yancheng Zheng等人发表在USENIX ATC'2023的SecretFlow-SPU，论文链接如下： https://www.usenix.org/conference/atc23/presentation/ma
+- > SecretFlow-SPU开源代码链接如下： https://github.com/secretflow/spu
 
 ### 双子座实验室
 

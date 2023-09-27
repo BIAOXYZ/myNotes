@@ -6,6 +6,12 @@ code-server -- VS Code in the browser https://github.com/cdr/code-server/
 - issues：
   * How to exit from code-server #1257 https://github.com/cdr/code-server/issues/1257
 
+## https://vscode.dev
+>> //notes：微软后来自己搞了一套（注意，和 [github.dev](https://github.dev/github/dev) 就算背后的技术一样，至少形式上不一样）。感觉这样并不好，水至清则无鱼啊，不能自己啥都做了。。。
+
+Visual Studio Code for the Web https://code.visualstudio.com/docs/editor/vscode-web
+- > Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. To get started, go to https://vscode.dev in your browser.
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # code-server实战

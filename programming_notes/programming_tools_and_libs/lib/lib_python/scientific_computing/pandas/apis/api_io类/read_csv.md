@@ -16,6 +16,10 @@ how to NOT read_csv if csv is empty https://stackoverflow.com/questions/42143249
     ```
   * > This will attempt to read each file, and if unsuccessful continue to the next file.
 
+# 分块读
+
+Python学习笔记：pandas.read_csv分块读取大文件(chunksize、iterator=True)  https://www.cnblogs.com/hider/p/15263528.html
+
 # 读的过程中过滤（且希望最好能用类似迭代器的方式，而不是一下子就全加载到内存里）
 
 How can I filter lines on load in Pandas read_csv function? https://stackoverflow.com/questions/13651117/how-can-i-filter-lines-on-load-in-pandas-read-csv-function
