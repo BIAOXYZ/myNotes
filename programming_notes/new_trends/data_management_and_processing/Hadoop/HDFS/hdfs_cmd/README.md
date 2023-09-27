@@ -13,6 +13,8 @@ HDFS Commands: Hadoop Shell Commands to Manage HDFS https://www.edureka.co/blog/
   ```
 - > 其中命令2已经废弃，大家不要再使用了。fs和dfs的区别简要说一下，fs属于一个更抽象的概念，可以操作任何文件系统；而dfs只能操作HDFS文件系统相关（包括与Local FS间的操作）。比如，Hadoop本地模式中fs是local file system，这个时候dfs就不能用，只能用fs。
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # hdfs命令
 
 Hadoop - hdfs dfs常用命令的使用 https://www.cnblogs.com/lizm166/p/13355183.html
@@ -93,6 +95,12 @@ hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | hdfs dfs -appendToFile - hdfs://xxx/y
 ```sh
 hdfs dfs -cat hdfs://xxx/yyy/zzz/111.txt | tail -n +2 | hdfs dfs -appendToFile - hdfs://xxx/yyy/zzz/merged.txt
 ```
+
+## `-tail`
+
+Why is there no 'hadoop fs -head' shell command? https://stackoverflow.com/questions/19778137/why-is-there-no-hadoop-fs-head-shell-command
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 不常用命令
 

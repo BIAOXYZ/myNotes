@@ -59,6 +59,18 @@ Python中的注解“@” https://www.jianshu.com/p/7a644520418b
            return x
         return count_time
     ```
+    > 个人实战版本：
+    ```py
+    import time
+    def timer(func):
+        def func_in(*args, **kwargs):
+            start_time = time.time()
+            res = func(*args, **kwargs)
+            end_time = time.time()
+            print(f"****** func [{func.__qualname__}]'s total time is: {end_time - start_time}")
+            return res
+        return func_in
+    ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
