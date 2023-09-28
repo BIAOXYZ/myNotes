@@ -31,3 +31,6 @@
 PostgreSQL16新特性解读 https://mp.weixin.qq.com/s/Jniz0016bxbzRwhxSgeIbw
 
 PostgreSQL 16发布，原来华人贡献者有这么多！ https://mp.weixin.qq.com/s/YAW4fwDSIn3e6RsRwe1VDQ
+
+PostgreSQL 16 正式登场，拓数派代码贡献揭示中国顶尖技术实力 https://mp.weixin.qq.com/s/k4vUMesCTjJ4CM-vgBZFxg
+- > 本次发布，拓数派团队以其卓越的技术实力和专业精神，在这 33 位贡献者中占据了 5 个席位，这五位贡献者分别为：
