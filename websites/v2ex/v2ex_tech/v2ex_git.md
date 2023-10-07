@@ -1,4 +1,8 @@
 
+【[:star:][`*`]】 Github 强制开启两步验证了，请问大家用的什么验证器？ https://www.v2ex.com/t/969213
+>> //notes：SB Github，祝早日完蛋！
+- > 我是不想下载个 app ，就用的谷歌浏览器插件 https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai
+
 有多少人完全使用命令行管理 git 得 https://www.v2ex.com/t/972261
 - > 开发用 (Neo)Vim ，但敲 Git 命令感觉很麻烦，也不直观。所以一直用的 `lazygit` 这种 terminal UI ，既能保证无缝的纯键盘操作体验，又有直观的 UI 显示各种 branch 和 commit 信息，一些要 rebase -i 的常用操作也都直接集成了快捷键一键完成
 - > `lazygit` 比敲命令舒服
