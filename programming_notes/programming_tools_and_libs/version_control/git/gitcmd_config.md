@@ -1,4 +1,27 @@
 
+# git config 命令
+
+1.6 起步 - 初次运行 Git 前的配置 https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE
+- > 你可以通过以下命令查看所有的配置以及它们所在的文件：
+  ```sh
+  $ git config --list --show-origin
+  ```
+- > **检查配置信息**
+  * > 如果想要检查你的配置，可以使用 `git config --list` 命令来列出所有 Git 当时能找到的配置。
+  * > 你可能会看到重复的变量名，因为 Git 会从不同的文件中读取同一个配置（例如：`/etc/gitconfig` 与 `~/.gitconfig`）。 这种情况下，Git 会使用它找到的每一个变量的最后一个配置。
+  * > 你可以通过输入 `git config <key>` 来检查 Git 的某一项配置
+    ```sh
+    $ git config user.name
+    John Doe
+    ```
+  * > Note: 由于 Git 会从多个文件中读取同一配置变量的不同值，因此你可能会在其中看到意料之外的值而不知道为什么。 此时，你可以查询 Git 中该变量的**原始**值，***它会告诉你哪一个配置文件最后设置了该值***：
+    ```sh
+    $ git config --show-origin rerere.autoUpdate
+    file:/home/johndoe/.gitconfig	false
+    ```
+
+git config https://www.atlassian.com/zh/git/tutorials/setting-up-a-repository/git-config
+
 # 2.Git设置类and插件类等（非原生git包含有）
 
 ### 配置git (git config)
@@ -159,7 +182,7 @@ https://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typi
 
 
 > 实战过程。注意：1.必须先建立一个新的remote repo，叫all或者both或者随便的名字都行，才能使用`git remote set-url --add <仓库名> <新的push仓库的地址>`来添加新的只上传的仓库。2.如果不带`--add`参数则是修改原来仓库的地址，也就是从仓库1改到仓库2。
-```
+```sh
 LL@daxian-pc MINGW64 /e/githubrep/myNotes (master)
 $ git remote -v
 bit     git@bitbucket.org:BIAOXYZ/mynotes.git (fetch)
