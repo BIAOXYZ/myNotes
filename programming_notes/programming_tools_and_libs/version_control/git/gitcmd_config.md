@@ -318,6 +318,47 @@ origin  https://biaoxyz:{MYPASSWORD}@github.com/BIAOXYZ/paperRelatedRepository.g
 ***后来补充***：Github将会自`2021年8月31日`起停止支持`account/passwords`方式的访问，坑货。。。但是我理解应该还可以用`账户名 + access token`的方式，所以后面会补充一个。
 - Token authentication requirements for Git operations https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
 
+```sh
+# 参考链接：
+# https://stackoverflow.com/questions/68193573/git-push-returns-missing-or-invalid-credentials-code-econnrefused-remote-r/68195586#68195586
+
+# 1. 首先新建一个源 all，并且设置为 github 对应的仓库。
+$ git remote add all https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git
+$ git remote -v
+all     https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (fetch)
+all     https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (push)
+origin  https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (fetch)
+origin  https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (push)
+
+# 2. 给源 all 添加 gitlab 对应的仓库。
+$ export MYPASSWORD=<这里填上你的密码>
+$ echo $MYPASSWORD
+$ git remote set-url --add all https://biaoxyz:${MYPASSWORD}@gitlab.com/BIAOXYZ/variousCodes.git
+$ git remote -v                                                                                 
+all     https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (fetch)
+all     https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (push)
+all     https://biaoxyz:<MYPASSWORD>@gitlab.com/BIAOXYZ/variousCodes.git (push)
+origin  https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (fetch)
+origin  https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (push)
+$ git push all
+...
+...
+
+# 3. 给源 all 添加 bitbucket 对应的仓库
+# （bitbucket不能用登陆密码了，于是去生成了一个token，但是还是有问题，最终还是回到最原始的 ssh key 的形式了）。
+$ git remote set-url --add all git@bitbucket.org:biaoxyz/variousCodes.git
+$ git remote -v                                                          
+all     https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (fetch)
+all     https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (push)
+all     https://biaoxyz:<MYPASSWORD>@gitlab.com/BIAOXYZ/variousCodes.git (push)
+all     git@bitbucket.org:biaoxyz/variousCodes.git (push)
+origin  https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (fetch)
+origin  https://<YOUR_GITHUB_ACCESS_TOKEN>@github.com/BIAOXYZ/variousCodes.git (push)
+$ git push all
+...
+...
+```
+
 ----------------------------------------------------------------------------------------------------
 
 ### git拉取远程分支
