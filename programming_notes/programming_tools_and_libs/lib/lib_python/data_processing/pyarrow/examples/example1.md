@@ -114,3 +114,30 @@ Pandas : Reading first n rows from parquet file? https://stackoverflow.com/quest
     first_ten_rows = next(pf.iter_batches(batch_size = 10)) 
     df = pa.Table.from_batches([first_ten_rows]).to_pandas() 
     ```
+
+【未实战】 Pyarrow iter_batches as python native iterable https://gist.github.com/grantmwilliams/143fd60b3891959a733d0ce5e195f71d
+```py
+import s3fs
+import pyarrow as pa
+import pyarrow.parquet as pq
+
+from itertools import chain
+from typing import Tuple, Any
+
+def iter_parquet(s3_uri: str, columns = None, batch_size=1_000) -> Tuple[Any]:
+
+    # create file system for file interface objects from S3
+    fs = s3fs.S3FileSystem()
+
+    # open a file interface object
+    with fs.open(s3_uri) as fp:
+
+        # convert the python file object into a ParquetFile object for iterating
+        parquet_file = pq.ParquetFile(fp)
+
+        # an iterator of pyarrow.RecordBatch
+        record_batches = parquet_file.iter_batches(batch_size=batch_size, columns=columns)
+
+        # convert from columnar format of pyarrow arrays to a row format of python objects (yields tuples)
+        yield from chain.from_iterable(zip(*map(lambda col: col.to_pylist(), batch.columns)) for batch in record_batches)
+```
