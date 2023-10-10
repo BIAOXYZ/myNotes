@@ -29,11 +29,12 @@ python3 -m line_profiler test_line_profiler.py.lprof
 # SnakeViz https://jiffyclub.github.io/snakeviz/
 pip install snakeviz
 
-# 则可以不加参数使用 kernprof，此时会生成另外一种后缀的性能分析文件： xxx.py.prof
+# 则可以不加参数使用 kernprof，此时会生成另外一种后缀的性能分析文件： xxx.py.prof，这个文件比前面那个 .lprof 文件大很多
+## 注意：此时的 python 文件里函数上面的装饰器 @profile 也得去掉！
 kernprof test_line_profiler.py
 
 # 可以使用可视化工具展示
-snakeviz test_line_profiler.py.lprof
+snakeviz test_line_profiler.py.prof
 ```
 
 ### 用法1实战
@@ -187,6 +188,7 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 
 $ 
 
+# 也可以直接从生成的 xxx.py.lprof 来看运行的时间
 $ python3 -m line_profiler test_line_profiler.py.lprof 
 Timer unit: 1e-06 s
 
