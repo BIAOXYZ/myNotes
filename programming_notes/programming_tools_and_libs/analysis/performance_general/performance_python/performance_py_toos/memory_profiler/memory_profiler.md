@@ -1,6 +1,10 @@
 
 # 官方
 
+Monitor Memory usage of Python code https://github.com/pythonprofilers/memory_profiler
+
+memory-profiler 0.61.0 https://pypi.org/project/memory-profiler/
+
 # 其他
 
 Python memory profiler 上手实践 - Insutanto的文章 - 知乎 https://zhuanlan.zhihu.com/p/121003986

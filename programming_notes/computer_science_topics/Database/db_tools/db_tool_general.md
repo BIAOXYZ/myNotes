@@ -40,6 +40,8 @@ PostgreSQL online editor https://onecompiler.com/postgresql/
 
 PostgreSQL online https://extendsclass.com/postgresql-online.html
 
+SQLite Online https://sqliteonline.com/  【这个感觉挺好用的～也有 pg 和 mysql】
+
 # 异构数据同步工具
 
 异构数据库双向同步调研 https://blog.csdn.net/jingya_charmworker/article/details/81365604
