@@ -58,6 +58,8 @@ Chess.com https://www.chess.com/zh
 
 中国象棋开局编号 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B%E5%BC%80%E5%B1%80%E7%BC%96%E5%8F%B7
 
+象棋胜和定式 https://zh.wikipedia.org/wiki/%E8%B1%A1%E6%A3%8B%E5%8B%9D%E5%92%8C%E5%AE%9A%E5%BC%8F
+
 # `#` from zhihu
 
 林东方今日头条号：林东方象棋 分享象棋布局、残局以及顶尖特大对局等 https://www.zhihu.com/people/lin-dong-fang-75/activities
