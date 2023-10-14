@@ -266,3 +266,10 @@ Vim Games – Games You Can Play with the Vim Editor https://linuxhint.com/vim_e
 - > 我是在 VSCode 里面装了 Vim 插件，这样既能够使用 VSCode 的全部功能，又能用 Vim 的方式编辑代码。 <br> 至于学习路径，我是参照着 VSCode 中 Vim 插件所提供的功能（ https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md ），然后把这个教程（ https://github.com/iggredible/Learn-Vim ）中 Vim 插件实现了的功能的相关快捷键过一遍，基本上就 OK 了。
 - > vim 大冒险，边玩边学 https://vim-adventures.com/
 - > vimtutor 走一遍，然后对着这个自己玩： https://vim.rtorr.com/lang/zh_cn
+
+Vim 上远程开发有什么方案？ https://www.v2ex.com/t/981763
+- > smb 挂载远程目录，在本地开发？
+- > 用 emacs + evil + tramp
+- > ssh -X 或者 nomachine 远程控制 或者在 vscode remote 的终端里用 vim?
+- > 还有 sshfs 也行，服务器也不用另外配置文件服务
+- > 试试用 UDP 的 mosh (mobile shell) 会不会降低一点网络延迟?
