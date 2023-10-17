@@ -49,6 +49,10 @@ Debug Multiprocessing In Python https://unbiased-coder.com/debug-multiprocessing
 
 PySnooper - Never use print for debugging again https://github.com/cool-RR/PySnooper
 - Advanced Usage https://github.com/cool-RR/PySnooper/blob/0f1e67b26b94584e7c7e7e463cf43d506135fe4c/ADVANCED_USAGE.md
+  * > Start all snoop lines with a prefix, to grep for them easily:
+    ```py
+    @pysnooper.snoop(prefix='ZZZ ')
+    ```
   * > The output is colored for easy viewing by default, except on Windows. Disable colors like so:
     ```py
     @pysnooper.snoop(color=False)

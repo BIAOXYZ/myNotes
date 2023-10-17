@@ -91,6 +91,9 @@ Ed25519: high-speed high-security signatures https://ed25519.cr.yp.to/
 
 ge25519 https://pkg.go.dev/github.com/oasisprotocol/ed25519/internal/ge25519
 
+Curve25519曲线是什么？ - 知乎 https://www.zhihu.com/question/290541183
+- https://www.zhihu.com/question/290541183/answer/2514279783
+
 ## Ristretto255
 
 Replacing Curve25519 with Ristretto255 https://crypto.stackexchange.com/questions/101373/replacing-curve25519-with-ristretto255

@@ -37,7 +37,7 @@ CRYPTEN: 当安全多方计算邂逅机器学习 https://mp.weixin.qq.com/s/xRf3
 CrypTen: A framework for Privacy Preserving Machine Learning https://github.com/facebookresearch/CrypTen
 
 FBPCF (Facebook Private Computation Framework) https://github.com/facebookresearch/fbpcf
-- (CCSW '21) Privacy-Preserving Randomized Controlled Trials: A Protocol for Industry Scale Deployment https://dl.acm.org/doi/10.1145/3474123.3486764
+- (CCSW '21) Privacy-Preserving Randomized Controlled Trials: A Protocol for Industry Scale Deployment https://dl.acm.org/doi/10.1145/3474123.3486764 || https://dl.acm.org/doi/pdf/10.1145/3474123.3486764
 - Private Computation Framework 2.0 https://research.facebook.com/publications/private-computation-framework-2-0/
 
 FBPCP (Facebook Private Computation Platform) https://github.com/facebookresearch/fbpcp/tree/main
