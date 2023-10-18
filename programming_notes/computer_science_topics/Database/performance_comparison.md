@@ -2,14 +2,7 @@
 HBase vs. MongoDB vs. MySQL vs. Oracle vs. Redis，三大主流开源 NoSQL 数据库的 PK 两大主流传统 SQL 数据库 
 http://blog.csdn.net/defonds/article/details/48471087
 
-“王者对战”之 MySQL 8 vs PostgreSQL 10 - MySQL - cnBeta.COM https://www.cnbeta.com/articles/tech/737331.htm
-- Why Uber Engineering Switched from Postgres to MySQL https://eng.uber.com/mysql-migration/
-- MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
-- A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
-
 主流云数仓性能对比分析 https://mp.weixin.qq.com/s/uZtBaECX1FU7K39El5Tx-Q
-
-吊打 MySQL，MariaDB 到底强在哪？ https://mp.weixin.qq.com/s/kVns-BHGTK-ms1Gh5P8lAg
 
 SQLite 的读写效率很高，有哪些使用其他数据库的理由？ - 知乎 https://www.zhihu.com/question/31417262
 
@@ -18,6 +11,18 @@ TPC B/C/H Benchmark for PostgreSQL https://github.com/Vonng/pgtpc
   * > `pgbench`： Meaure PostgreSQL performence on different hardwares.
   * > `sysbench`：Compare PostgreSQL performence with MySQL & other databases
   * > tpc-h：Measure PostgreSQL Analysis performence and compare to other AP systems
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# MySQL、MariaDB
+
+吊打 MySQL，MariaDB 到底强在哪？ https://mp.weixin.qq.com/s/kVns-BHGTK-ms1Gh5P8lAg
+
+~~MySQL 单机 QPS 是多少？ https://www.v2ex.com/t/983276~~  【//已转移】
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # MySQL v.s. PG
 
@@ -59,9 +64,18 @@ MySQL & PostgreSQL 终极大比拼 https://www.bilibili.com/video/BV1qG411m7Tg
 - 回复里的：
   * > 专业。mysql很好，但是pg太优秀，我只说一个pg比较接地气的小优点，varchar不用指定长度，而且比指定长度更节省空间。
 
+“王者对战”之 MySQL 8 vs PostgreSQL 10 - MySQL - cnBeta.COM https://www.cnbeta.com/articles/tech/737331.htm
+- Why Uber Engineering Switched from Postgres to MySQL https://eng.uber.com/mysql-migration/
+- MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
+- A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # SQLite v.s. DuckDB
 
 DuckDB Profiling 1: vs SQLite3.md https://github.com/jtommaney/blog/blob/blog/posts/DuckDB%20Profiling%201%3A%20%20vs%20SQLite3.md
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # TPC
 
@@ -93,3 +107,7 @@ The primary change in this major revision is to adjust the Price/Performance met
 ## TPC-DS
 
 TPC-DS https://www.tpc.org/tpcds/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

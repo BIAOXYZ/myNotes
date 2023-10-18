@@ -1,4 +1,21 @@
 
+MySQL 单机 QPS 是多少？ https://www.v2ex.com/t/983276
+```console
+在一篇博客中看到 MySQL 不适合高并发，2000QPS 就开始报警，真是这样的吗？ MySQL 单机的 QPS 在怎样的一个范围？
+
+mysql 这么重的数据库，压根儿设计不是让你玩儿高并发的，虽然也可以玩儿，但是天然支持不好。mysql 单机支撑到 2000QPS 也开始容易报警了。
+https://doocs.gitee.io/advanced-java/#/docs/high-concurrency/why-cache
+```
+- > 这不得看机器配置么。而且数据库不仅要看 QPS ，也得看 TPS 。明天看看华为给的手册再回复你，mark 一下。
+- > QPS 的话，MariaDB 达到过 100 万 qps https://mariadb.org/10-1-mio-qps/ <br> TPS 的话，2000 压力其实挺大了
+- > https://help.aliyun.com/zh/rds/support/test-results-of-apsaradb-rds-instances-that-run-mysql-8 哥们,这个是阿里云的 mysql 性能测试, 你可以看下, 不同的机器表现不同. 我查了一下,腾讯云和华为云的性能差不多. 在高级 SSD 加成的情况下, 1 核 1G 的机器都可以到 40 万 QPS. <br> 这个问题,你也可以实际安装一个 mysql 看下. 跑一些脚本很快的. 要是只有 windows 机器, 你可以花 1000 块钱买一个 7 年前的 macbook air 专门用来做类 unix 的性能测试什么的. 这个测试的过程会让你学到很多. 自己测出来的数据,你也会更加理解这些数据的意义.
+  >> 感谢老哥，这个很有参考价值
+- > 我们用的 rds mysql 最低配要到 2w qps 才会 cpu 100% <br> 日常几千 qps 吧
+- 个人补充链接：
+  * MariaDB 10.1 can do 1 million queries per second https://mariadb.org/10-1-mio-qps/
+  * MySQL 8.0测试结果 https://help.aliyun.com/zh/rds/support/test-results-of-apsaradb-rds-instances-that-run-mysql-8
+    + > 根据业务场景的不同，RDS MySQL 8.0的测试结果可能会低于RDS MySQL 5.7，属于正常现象。
+
 公司数据库数据被我更新成 null 了，救命！ https://www.v2ex.com/t/865464
 ```console
 数据库有些数据值为: "保密"
