@@ -238,6 +238,8 @@ Is there a difference between the '&&' and ';' symbols in a standard BASH termin
 
 ## /dev/null 2>&1
 
+【[:star:][`*`]】 ~~Linux命令中的重定向(>)和管道(|) https://murphypei.github.io/blog/2018/04/linux-redirect-pipe~~  【//已转移】
+
 <<shell程序中 2> /dev/null 代表什么意思？>> https://www.zhihu.com/question/53295083
 - /dev/null 2>&1 解释 http://blog.163.com/liang8421@126/blog/static/89481957200926105219622/
 - [Linux] 文件描述符 https://www.jianshu.com/p/b1c10674a789
