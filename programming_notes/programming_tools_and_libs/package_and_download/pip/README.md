@@ -72,6 +72,26 @@ sudo pip install cmake==3.21.1
 sudo pip install -U cmake==xxx
 ```
 
+## pip直接从 github 等安装软件
+
+How to install Python package from GitHub? [duplicate]
+- https://stackoverflow.com/questions/15268953/how-to-install-python-package-from-github/15268990#15268990
+  * > You need to use the proper git URL:
+    ```sh
+    pip install git+https://github.com/jkbr/httpie.git#egg=httpie
+    ```
+  * > Also see the [VCS Support section](https://pip.pypa.io/en/stable/topics/vcs-support/) of the pip documentation.
+  * > Don’t forget to include the `egg=<projectname>` part to [explicitly name the project](https://pip.pypa.io/en/stable/cli/pip_install/#working-out-the-name-and-version); this way `pip` can track metadata for it without having to have run the `setup.py` script.
+  * 回复里的：
+    + > Another [installation option](https://github.com/jkbr/httpie#installation) that doesn't require Git installed: `pip install --upgrade https://github.com/jkbr/httpie/tarball/master`
+
+```sh
+# 但是我其实用了最简单的形式就可以：
+$ docker run --name py3 -itd python bash
+$ docker exec -it py3 bash
+root@4294e0586b6f:/# pip install git+https://github.com/jkbr/httpie
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `requirement.txt`
