@@ -9,6 +9,8 @@ Spark 读取csv文件操作，option参数解释 https://blog.csdn.net/OldDirver
 
 ## pyspark 读取 HDFS 文件
 
+PySpark 从PySpark读取HDFS中的文件 https://geek-docs.com/pyspark-docs/pyspark-questions/322_pyspark_reading_a_file_in_hdfs_from_pyspark.html
+
 Spark Read Files from HDFS (TXT, CSV, AVRO, PARQUET, JSON) https://sparkbyexamples.com/spark/spark-read-write-files-from-hdfs-txt-csv-avro-parquet-json/
 
 How to read data from HDFS in Pyspark https://www.projectpro.io/recipes/read-data-from-hdfs-pyspark

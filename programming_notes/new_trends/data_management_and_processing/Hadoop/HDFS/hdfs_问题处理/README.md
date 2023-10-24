@@ -59,6 +59,8 @@ HDFS的读写流程 https://www.cnblogs.com/feiyumo/p/12541296.html
 
 《hadoop权威指南》笔记二： hdfs读写过程剖析 https://cloud.tencent.com/developer/article/1500068
 
+一种hdfs多线程并行下载方法 https://patents.google.com/patent/CN104462324A/zh
+
 ## 4. libhdfs内存泄露
 
 Hdfs FileSystem 使用姿势不对导致的内存泄露 https://blog.csdn.net/u013332124/article/details/89302271
