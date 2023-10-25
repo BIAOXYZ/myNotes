@@ -11,3 +11,7 @@
 
 新世界译本/新译本：
 - http://www.godcom.net/xinyiben/
+
+# 相关工具
+
+圣经家谱 http://biblefamilytree.info/chinese.html

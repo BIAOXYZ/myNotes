@@ -22,6 +22,8 @@ spark https://blog.csdn.net/lisenyeahyeah/category_8281549.html
 - Spark-SQL优化 https://blog.csdn.net/lisenyeahyeah/article/details/89095441
 - Spark-SQL物理执行 https://blog.csdn.net/lisenyeahyeah/article/details/89331669
 
+第 1 章 Spark 概述 https://zhenchao125.github.io/bigdata_spark-project_atguigu/
+
 万字长文，带你轻松学习 Spark https://www.cnblogs.com/datadance/p/16294406.html
 
 Spark By Examples | Learn Spark Tutorial with Examples https://sparkbyexamples.com/
