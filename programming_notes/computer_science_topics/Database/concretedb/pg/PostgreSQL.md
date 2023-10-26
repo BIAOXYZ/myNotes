@@ -272,7 +272,7 @@ http://blog.csdn.net/davidzwb/article/details/53172453
 
 Become a Postgres Expert with Free Training https://www.enterprisedb.com/free-postgres-training
 
-<<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu http://www.interdb.jp/pg/
+【[:star:][`*`]】 <<The Internals of PostgreSQL - for database administrators and system developers>> by SUZUKI Hironobu http://www.interdb.jp/pg/
 
 <<PostgreSQL: Introduction and Concepts >> http://momjian.us/main/writings/pgsql/aw_pgsql_book/ || http://www.banshujiang.cn/e_books/1484
 
@@ -304,6 +304,8 @@ PostgreSQL好书推荐 https://mp.weixin.qq.com/s/-dqSiJWCMVAYaQZUX0MW6Q
   * PostgreSQL技术内幕：查询优化深度探索 https://book.douban.com/subject/30256561/
   * PostgreSQL技术内幕：事务处理深度探索 https://book.douban.com/subject/35543446/
   * 后来在这个B站的视频（[PostgreSQL的昨天、今天和明天【PGConf 2021】](https://www.bilibili.com/video/BV1xF411z7TB/)）里发现张树杰应该是跳槽去华为后又写了本新书：《openGauss数据库源码解析》（ https://item.jd.com/13417284.html || https://book.douban.com/subject/35598444/ ）
+  * 【[:star:][`*`]】 PostgreSQL 14 Internals -- A deep dive into the server mechanics https://postgrespro.com/community/books/internals
+    + https://edu.postgrespro.com/postgresql_internals-14_en.pdf
 
 ### PG待整理？
 

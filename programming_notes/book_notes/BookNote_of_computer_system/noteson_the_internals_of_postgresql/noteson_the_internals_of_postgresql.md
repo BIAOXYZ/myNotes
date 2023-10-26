@@ -3,6 +3,10 @@
 
 The Internals of PostgreSQL http://www.interdb.jp/pg/index.html
 
+【一个网友自己存的备份，估计也是怕作者的主站有一天不在了。。。】 https://github.com/liuqian1990/The-Internals-of-PostgreSQL
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # [Introduction](http://www.interdb.jp/pg/index.html)
 
 The Chinese version of this document has been published in May 2019.
@@ -22,6 +26,8 @@ Contents
   • Chapter 10. Base Backup and Point-In-Time Recovery (PITR)
   • Chapter 11. Streaming Replication
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Chapter 1. Database Cluster, Databases, and Tables](http://www.interdb.jp/pg/pgsql01.html) || 第1章 数据库集簇、数据库和数据表
 
@@ -242,3 +248,7 @@ sampledb=# SELECT ctid, data FROM sampletbl WHERE ctid = '(0,1)';
 (1 row)
 ```
 > Index-Only-Scan will be described in details in `Chapter 7`.
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
