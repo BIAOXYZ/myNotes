@@ -15,3 +15,7 @@
 # 相关工具
 
 圣经家谱 http://biblefamilytree.info/chinese.html
+
+研读辅助工具 https://www.churchofjesuschrist.org/study/scriptures/study-helps?lang=zhs
+- 圣经地图 https://www.churchofjesuschrist.org/study/scriptures/bible-maps?lang=zhs
+- 年代表 https://www.churchofjesuschrist.org/study/scriptures/chronology?lang=zhs
