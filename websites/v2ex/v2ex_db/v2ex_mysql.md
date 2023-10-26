@@ -1,5 +1,9 @@
 
-MySQL 单机 QPS 是多少？ https://www.v2ex.com/t/983276
+自定义表单在数据库中要怎么储存？ https://www.v2ex.com/t/985627
+- > mysql 5.7 以上 支持 json 类型，要么这种自定义结构存类型 要不使用 meta 元数据表和字段 <br> 你可以看看 wordpress 的表结构是如何扩展的 https://codex.wordpress.org/Database_Description
+- > text 改成 json 吧 不然不好做搜索，但是要支持搜索还是得用 es ck 啥的
+
+【[:star:][`*`]】 MySQL 单机 QPS 是多少？ https://www.v2ex.com/t/983276
 ```console
 在一篇博客中看到 MySQL 不适合高并发，2000QPS 就开始报警，真是这样的吗？ MySQL 单机的 QPS 在怎样的一个范围？
 
