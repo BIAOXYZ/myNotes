@@ -1,4 +1,38 @@
 
+mysql 这个查询速度正常吗，怎么优化？ https://www.v2ex.com/t/986389
+- > `count(journal_pub_year)` 试一试？或者 `count(pm_id)` 试一试？
+- > 500 万行 = 5M 行, 你要是不需要 InnoDB 的特性，试试用 MyISAM 。一般这种静态表可以不用 InnoDB ，如果必须要 InnoDB 看看增大 `innodb_buffer_pool_size` 。
+- > 我测试了一下，甚至 sqlite3 也没有这么慢
+  ```sh
+  $ sqlite3 test.db
+  SQLite version 3.40.1 2022-12-28 14:03:47
+  Enter ".help" for usage hints.
+  sqlite> create table random_data as
+  with recursive tmp(x) as (
+  select random()
+  union all
+  select random() from tmp
+  limit 5000000
+  )
+  sqlite> select count(1) from random_data;
+  5000000
+
+  $ time sqlite3 test.db 'select count(1) from random_data;'
+  5000000
+
+  real 0m0.175s
+  user 0m0.124s
+  sys 0m0.051s
+  ```
+- > mysql 的全表 count 就是这么慢的, 你要么换 sql server 或者 oracle, 表 count 瞬间返回
+- > 缺少数据库参数，`innodb_buffer_pool_size` 是多少
+- > 无语…才四千万你优化它干毛
+- > 肯定是用了默认的 InnoDB 存储引擎，***InnoDB 的 `count` 是需要全表扫描的，如果不需要用到事务，建议换成 `myisam` 存储引擎，元数据直接记录表的记录数的***；另外，***不要 `count(1)`，`count(pm_id)`，`count("主键")`是最快的了***。
+- > 这个 count 语句相等于扫描全表了，慢是正常的。
+  * > 1.MySQL 单表数量上限很高，这种数据量级不算大。
+  * > 2.建议根据具体场景优化，比如针对这个 SQL ，如果不考虑删除，那么可以 count 1 次，然后用缓存计数，后面就不用 count 了；或者加一个自增 id 字段，设置从当前 count 之后开始自增，这样只需要记录新增后的自增 id 值就行了。
+- > 你这 4000 万数据不用分表，直接查询，count 一定要代条件，建议为时间建立索引，只 count 最近几天的，就能快非常多。
+
 自定义表单在数据库中要怎么储存？ https://www.v2ex.com/t/985627
 - > mysql 5.7 以上 支持 json 类型，要么这种自定义结构存类型 要不使用 meta 元数据表和字段 <br> 你可以看看 wordpress 的表结构是如何扩展的 https://codex.wordpress.org/Database_Description
 - > text 改成 json 吧 不然不好做搜索，但是要支持搜索还是得用 es ck 啥的

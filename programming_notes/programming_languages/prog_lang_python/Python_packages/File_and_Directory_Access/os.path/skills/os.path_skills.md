@@ -24,6 +24,6 @@ How to add pandas data to an existing csv file? https://stackoverflow.com/questi
 # 变量 data_csv 对应的 csv 文件为： /home/biaoxyz/tmptest/data.csv
 
 same_name_csv = os.path.abspath(__file__)[:-3] + ".csv"
-same_name_csv_dir = os.path.dirname(__file__)
+same_name_csv_dir = os.path.dirname(__file__)   # 这里应该看情况，最好是 __file__ 也用 os.path.abspath 包一下，否则从不同路径启动结果不一样- -
 data_csv = os.path.join(same_name_csv_dir, "data.csv")
 ```
