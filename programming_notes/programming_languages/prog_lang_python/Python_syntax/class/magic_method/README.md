@@ -34,6 +34,12 @@ Why isn't the `__del__` method called？ https://stackoverflow.com/questions/469
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# `__getattr__` v.s. `__getattribute__`
+
+Understanding the difference between `__getattr__` and `__getattribute__` https://stackoverflow.com/questions/4295678/understanding-the-difference-between-getattr-and-getattribute
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `__new__()`
 
 python的__new__方法 https://www.jianshu.com/p/08d7956601de

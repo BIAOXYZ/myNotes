@@ -7,6 +7,8 @@
 
 大数据入门指南 https://github.com/heibaiying/BigData-Notes
 
+一文看懂大数据的技术生态圈，Hadoop，hive，spark都有了 https://mp.weixin.qq.com/s/Jt-WLRHsKDK_lIESxhgkqQ || 如何用形象的比喻描述大数据的技术生态？Hadoop、Hive、Spark 之间是什么关系？ - Xiaoyu Ma的回答 - 知乎 https://www.zhihu.com/question/27974418/answer/38965760
+
 # Spark v.s. Flink
 
 Spark比拼Flink：下一代大数据计算引擎之争 - 夜城的文章 - 知乎 https://zhuanlan.zhihu.com/p/40402793
