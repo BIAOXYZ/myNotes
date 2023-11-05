@@ -121,7 +121,8 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
   * https://microsoftedge.microsoft.com/addons/detail/extension-manager/bhahgfgngfghgjhnpplmemebhenieijb
 
 - 恢复关闭标签 https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE/fcjlmbbejgnfpcgiigpgfacipckopdkf 【这个实际上=`Ctrl + Shift + t`】
-- SimpleUndoClose https://chrome.google.com/webstore/detail/simpleundoclose/emhohdghchmjepmigjojkehidlielknj
+- ~~SimpleUndoClose https://chrome.google.com/webstore/detail/simpleundoclose/emhohdghchmjepmigjojkehidlielknj~~  【这个已经废了，各种不好用，用下面那个吧（然而我看了下两个是一家出的： https://blandlifedev.blogspot.com/ ，先不管了反正）】
+- SimpleUndoRecents https://chrome.google.com/webstore/detail/simpleundorecents/kaiblbjjcealhldhdnjhpjmckgclnbca
 
 - Proxy SwitchyOmega https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 
