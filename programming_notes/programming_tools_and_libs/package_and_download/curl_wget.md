@@ -274,12 +274,16 @@ REST 入门介绍 http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html
 
 ## `PUT` v.s. `POST`
 
-REST – PUT vs POST https://restfulapi.net/rest-put-vs-post/
+【[:star:][`*`]】 REST – PUT vs POST https://restfulapi.net/rest-put-vs-post/
 - > **1. Difference between `PUT` and `POST`**
   * > `PUT` method is [idempotent](https://restfulapi.net/idempotent-rest-apis/). So if we retry a request multiple times, that should be equivalent to a single request invocation.
     > 
     > `POST` is NOT idempotent. So if we retry the request N times, we will end up having N resources with N different URIs created on the server.
-- > **2. PUT vs POST with Example**
+- > **2. Choosing Between PUT and POST**
+  * > To decide between HTTP PUT and POST, it’s essential to consider your specific use case:
+    + > Use HTTP `PUT` when you want to update or create a specific resource at a known URI in an idempotent manner. This is suitable for scenarios where you have full control over resource replacement.
+    + > Use HTTP `POST` when you need to submit data for processing, create new resources without specifying a URI, or perform non-idempotent operations.
+- > **3. PUT vs POST with Example**
   * > Let’s say we are designing a network application. Let’s list down a few URIs and their purpose to get a better understanding of when to use POST and when to use PUT operations.
     ```console
     GET 	/device-management/devices       : Get all devices
@@ -290,6 +294,8 @@ REST – PUT vs POST https://restfulapi.net/rest-put-vs-post/
     DELETE	/device-management/devices/{id}   : Delete device by "id"
     ```
     > Follow similar URI design practices for other resources as well.
+    >> 【[:star:][`*`]】 //notes：快速记法：***`PUT` 既有 `P` 又有 `U`，所以对应了 update；那么 `POST` 只能对应 create***。
+    >>> //notes2：此外，假定网络卡了，会多次执行。多次执行**创建新对象**的动作<ins>更加不可能</ins>幂等，所以 create 对应了 `POST` 这个不幂等的动作；而多次执行**更新对象**的动作则<ins>更加可能</ins>幂等，所以 update 对应了 `PUT` 这个幂等的动作。
 
 What is the difference between POST and PUT in HTTP? https://stackoverflow.com/questions/630453/what-is-the-difference-between-post-and-put-in-http
 
