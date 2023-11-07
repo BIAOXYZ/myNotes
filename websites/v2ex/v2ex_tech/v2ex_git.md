@@ -1,4 +1,9 @@
 
+被 Microsoft Authenticator 坑惨了，所有 2FA 全丢了 https://www.v2ex.com/t/989278
+```console
+感谢 @D33109 的建议，已换开源的 https://github.com/jamie-mh/AuthenticatorPro
+```
+
 【[:star:][`*`]】 Github 强制开启两步验证了，请问大家用的什么验证器？ https://www.v2ex.com/t/969213
 >> //notes：SB Github，祝早日完蛋！
 - > 我是不想下载个 app ，就用的谷歌浏览器插件 https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai
