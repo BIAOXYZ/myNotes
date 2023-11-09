@@ -3,6 +3,19 @@
 
 【[`*`][:star:]】 白话 Kubernetes Runtime https://mp.weixin.qq.com/s/8RvbcvWFSq1snfLorLyhEA || https://aleiwu.com/post/cncf-runtime-landscape/ || https://zhuanlan.zhihu.com/p/58784095
 
+【[`*`][:star:]】 The differences between Docker, containerd, CRI-O and runc https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/
+- > **A bird’s eye view**
+  * > ![](https://www.tutorialworks.com/assets/images/container-ecosystem.drawio.png)
+- > **How the Docker stack works**
+  * > ![](https://www.tutorialworks.com/assets/images/container-ecosystem-docker.drawio.png)
+  * > **What are the lower-level tools in the Docker stack?**
+    + > (Lowest-level) The low-level container runtime. [`runc`](https://github.com/opencontainers/runc) is a low-level container runtime. It uses the native features of Linux to create and run containers. It follows the OCI standard, and it includes [`libcontainer`](https://pkg.go.dev/github.com/opencontainers/runc/libcontainer), a Go library for creating containers.
+    + > The high-level container runtime. [`containerd`](https://containerd.io/) sits above the low-level runtime, and adds a bunch of features, like transferring images, storage, and networking. It also fully supports the OCI spec.
+    + > The Docker daemon. [`dockerd`](https://docs.docker.com/engine/reference/commandline/dockerd/) is a daemon process (a long-running process that stays running in the background) which provides a standard API, and talks to the container runtime.
+    + > (Highest level) The Docker CLI tool. Finally, [`docker-cli`](https://github.com/docker/cli) gives you the power to interact with the Docker daemon using `docker` ... commands. This lets you control containers without needing to understand the lower levels.
+    + > So, in reality, when you run a container with `docker`, you’re actually running it ***through the `Docker daemon`***, which ***calls `containerd`***, which then ***uses `runc`***.
+      >> 【[`*`][:star:]】 //notes：所以其实用 docker 运行容器的过程就是：`docker cli -> docker daemon（也就是 dockerd） -> containerd -> runc`
+
 Container runtimes: clarity https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3
 - > As a maintainer of the CRI-O container runtime for kubernetes I often get asked the following questions at conferences and meetups:
   ```

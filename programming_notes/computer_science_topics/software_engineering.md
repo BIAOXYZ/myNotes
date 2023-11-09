@@ -107,7 +107,7 @@ General Availability (GA) https://www.techopedia.com/definition/32284/general-av
 
 Software release life cycle https://en.wikipedia.org/wiki/Software_release_life_cycle  【[软件版本周期](https://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F)】
 
-Alpha、Beta、RC、GA版本的区别 http://www.blogjava.net/RomulusW/archive/2008/05/04/197985.html
+Alpha、Beta、RC、GA版本的区别 http://www.blogjava.net/RomulusW/archive/2008/05/04/197985.html || https://www.jianshu.com/p/36cd2fdd949d
 ```
 Alpha：是内部测试版,一般不向外部发布,会有很多Bug.一般只有测试人员使用。
 
@@ -136,6 +136,8 @@ RTL：Retail(零售版)是真正的正式版，正式上架零售版。在安装
 大部分的不完善之处，但仍有可能还存在缺陷和漏洞，一般只提供给特定的用户群来测试使用；λ是第三个阶段，此时产品已经
 相当成熟，只需在个别地方再做进一步的优化处理即可上市发行。
 ```
+
+Alpha、Beta、RC、GA版本的区别 - lreel的文章 - 知乎 https://zhuanlan.zhihu.com/p/420745873
 
 ### PMC member
 
