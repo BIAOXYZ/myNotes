@@ -15,6 +15,14 @@
     + > (Highest level) The Docker CLI tool. Finally, [`docker-cli`](https://github.com/docker/cli) gives you the power to interact with the Docker daemon using `docker` ... commands. This lets you control containers without needing to understand the lower levels.
     + > So, in reality, when you run a container with `docker`, you’re actually running it ***through the `Docker daemon`***, which ***calls `containerd`***, which then ***uses `runc`***.
       >> 【[`*`][:star:]】 //notes：所以其实用 docker 运行容器的过程就是：`docker cli -> docker daemon（也就是 dockerd） -> containerd -> runc`
+- > **Does Kubernetes use Docker?**
+  * > Docker Engine, being a project older than Kubernetes, doesn’t implement CRI. So to help with the transition, the Kubernetes project included a component called **dockershim**, which allowed Kubernetes to run containers with the Docker runtime.
+  * > **What is a shim?**
+    + > a washer or thin strip of material used to align parts, make them fit, or reduce wear.
+    + > So in tech terms, ***a `shim` is a component in a software system, which acts as a bridge between different APIs, or as a compatibility layer***. A shim is sometimes added when you want to use a third-party component, but you need a little bit of glue code to make it work.
+  * > **Death of the shim**
+    + > But, as of `Kubernetes 1.24`, the dockershim component was removed completely, and Kubernetes no longer supports Docker as a container runtime. Instead, you need to choose a container runtime that implements CRI.
+    + > The logical successor to Docker Engine in Kubernetes clusters is… `containerd`. (10 points if you got that correct!) Or you can use an alternative runtime, like `CRI-O`.
 
 Container runtimes: clarity https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3
 - > As a maintainer of the CRI-O container runtime for kubernetes I often get asked the following questions at conferences and meetups:

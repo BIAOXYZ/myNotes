@@ -175,6 +175,12 @@ Raft：寻找一种易于理解的一致性算法 https://mp.weixin.qq.com/s/u4W
 
 Raft算法论文翻译 https://mp.weixin.qq.com/s/XcH7Ay96I0zU_Lp0mMw5OQ
 
+## Raft视频
+
+Raft lecture (Raft user study) https://www.youtube.com/watch?v=YbZ3zDzDnrw || https://www.bilibili.com/video/BV1ub411B7bk?p=2
+
+解读共识算法Raft（1）简介和状态简化 https://www.bilibili.com/video/BV1BZ4y1U774
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Raft实现
