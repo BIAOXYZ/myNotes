@@ -162,7 +162,7 @@ information; the information is provided directly by the kernel from its in-memo
 
 Docker背后的内核知识：命名空间资源隔离 https://linux.cn/article-5057-5.html
 
-Linux Namespace : Mount https://www.cnblogs.com/sparkdev/p/9424649.html 【from sparkdev】
+Linux Namespace : Mount https://www.cnblogs.com/sparkdev/p/9424649.html 【from `sparkdev`】
 
 Linux Namespace系列（04）：mount namespaces (CLONE_NEWNS) https://segmentfault.com/a/1190000006912742 【from wuyangchun】
 

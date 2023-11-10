@@ -177,6 +177,13 @@ vscode拖拽条看不清配色修改 https://blog.csdn.net/qq_43243842/article/d
     }
 ```
 
+## 关闭引号的自动补全（其实主要是为了关闭``的自动补全）
+>> //notes：实际上没有改配置文件，而是 `Preferences` --> `Settings` --> 搜索关键词 quote --> `Editor: Auto Closing Quotes` 值选择 `never` 即可。
+
+Autoclose single and double quotes vscode https://stackoverflow.com/questions/45808557/autoclose-single-and-double-quotes-vscode
+- https://stackoverflow.com/questions/45808557/autoclose-single-and-double-quotes-vscode/56130328#56130328
+  * > It's worth noting that vscode has a separate editor setting for auto closing quotes from that of brackets. If you have: `"editor.autoClosingQuotes": "never"` in your settings, then vscode will never close quotes. On the other hand, if you have `"editor.autoClosingQuotes": "always"`, then it will always add the extra closing quote.
+
 ## vscode每个工作空间单独主题
 
 Different theme per window in Visual Studio Code https://stackoverflow.com/questions/52514491/different-theme-per-window-in-visual-studio-code || VS Code: different color themes for different projects https://dev.to/mkubdev/visual-studio-code-different-color-themes-for-different-projects-467k
