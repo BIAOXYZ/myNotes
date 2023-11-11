@@ -60,6 +60,8 @@ Chess.com https://www.chess.com/zh
 
 象棋胜和定式 https://zh.wikipedia.org/wiki/%E8%B1%A1%E6%A3%8B%E5%8B%9D%E5%92%8C%E5%AE%9A%E5%BC%8F
 
+中国象棋/让棋规则 https://zh.wikibooks.org/zh-hans/%E4%B8%AD%E5%9C%8B%E8%B1%A1%E6%A3%8B/%E8%AE%93%E6%A3%8B%E8%A6%8F%E5%89%87
+
 # `#` from zhihu
 
 林东方今日头条号：林东方象棋 分享象棋布局、残局以及顶尖特大对局等 https://www.zhihu.com/people/lin-dong-fang-75/activities
