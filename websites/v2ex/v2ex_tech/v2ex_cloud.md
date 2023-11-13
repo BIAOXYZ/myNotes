@@ -1,4 +1,12 @@
 
+阿里云挂了，导致阿里全都挂 https://www.v2ex.com/t/991562
+- > 阿里云实际上挂的是控制台, 实际上底下业务都好好的
+  >> 并不 oss 访问鉴权有问题
+  >>> ***你瞎猜的吧，我这里停车场业务都停摆了，车辆都堵 1 公里了，用到的有 ecs oss 存储 车牌 ocr ，总之就是被骂了好久***
+  >>>> 阿里云对事故影响范围的说明：<br> 事件进展 2023-11-12 23:51 (GMT+8) <br> 前述故障影响范围说明：云产品控制台、管控 API 等功能受到影响，大部分产品如 ECS 、RDS 、网络等的实际运行不受影响。OSS 、OTS 、SLS 、MNS 等产品的服务受到影响。 <br> https://status.aliyun.com/
+- > 鉴权依赖 API,如果不鉴权应该还是能访问的. <br> 然后 SLA 的保证上一般都不保证 API 的可用性,而说的是整个产品本身.所以不知道下个月 SLA 赔付时到底会赔什么. <br> 上次腾讯云 API 挂掉后申请 COS 的 SLA 赔付用的就是"存储桶的访问不影响，但是控制台存在影响的可能",而拒绝赔付,给了 20 代金券.
+- > 具体赔偿在这里查看 https://help.aliyun.com/document_detail/56773.html <br> 这次不达 99.9%的 SLA,基本就是 10~15%
+
 聊聊 K8s 中的 Sidecar 设计模式 · 第 1 篇 https://www.v2ex.com/t/952837
 
 使用 Harbor 创建 containerd 私有镜像仓库必须要 Docker Compose 环境么？ https://www.v2ex.com/t/921682
