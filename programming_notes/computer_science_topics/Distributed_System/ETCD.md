@@ -27,10 +27,6 @@ Etcd官方文档中文版 http://etcd.doczh.cn/ ||| from 技术文档中文版 h
 - 为什么是etcd? http://etcd.doczh.cn/documentation/learning/why.html || etcd versus other key-value stores https://etcd.io/docs/v3.3.12/learning/why/
   * > 『"etcd"这个名字源于两个想法，即　unix "/etc" 文件夹和分布式系统"d"istibuted。 "/etc" 文件夹为单个系统存储配置数据的地方，而 etcd 存储大规模分布式系统的配置信息。因此，"d"istibuted　的 "/etc" ，是为 "etcd"。』
 
-Etcd 使用入门 https://www.hi-linux.com/posts/40915.html
-
-etcd 使用入门 https://cizixs.com/2016/08/02/intro-to-etcd/
-
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ETCD源码
@@ -48,11 +44,33 @@ Etcd 架构与实现解析 http://jolestar.com/etcd-architecture/
 
 etcd分布式锁的实现方式 https://www.myway5.com/index.php/2019/10/09/etcd%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81%e7%9a%84%e5%ae%9e%e7%8e%b0%e6%96%b9%e5%bc%8f/
 
+## 原理
+
+彻底搞懂etcd raft选举、数据同步 https://cloud.tencent.com/developer/article/1683582
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ETCD related projects
 
 Kine (Kine is not etcd) -- Run Kubernetes on MySQL, Postgres, sqlite, dqlite, not etcd. https://github.com/rancher/kine
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# ETCD使用
+
+Etcd 使用入门 https://www.hi-linux.com/posts/40915.html
+
+etcd 使用入门 https://cizixs.com/2016/08/02/intro-to-etcd/
+
+你想了解的关于ETCD都在这了 https://www.cnblogs.com/xinzhiyu/p/17021433.html
+
+etcd使用经验总结 https://alexstocks.github.io/html/etcd.html
+- > **0 说明**
+  * > 为分布式集群提供一致性服务的组件，先有 google 内部的 Chubby，后有 hadoop 生态的 zookeeper。***基于 Java 的 zookeeper 保证 CP，但是廉颇老矣，以往曾有同事曾经测试过在三千左右的客户端的频繁读写情况下 zookeeper 会频繁死掉***。和 zookeeper 等同类产品相比，coreos 开发的同样保证 CP 的 etcd 与其功能几乎雷同，但是 zookeeper 的设计和实现都很繁琐，而采用了 gRPC 作为底层通信框架的 etcd 几乎有所有主流语言的客户端支持。zookeeper 的通信协议是自定制的 Jute RPC 协议，而 etcd 使用的 gRPC 可以接收通过 HTTP 发来的 JSON 请求，通过 curl 工具就可以对etcd 进行测试。容器时代的王者 kubernets 依赖它可实现上万个容器的管理。
+
+etcd 最佳实践 https://juicefs.com/docs/zh/community/etcd_best_practices/
+- > **数据规模**
+  * > etcd 默认设置了 `2GB` 的存储配额，大概能够支撑存储两百万文件的元数据，可以通过 `--quota-backend-bytes` 选项进行调整，***官方建议不要超过 `8GB`***。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

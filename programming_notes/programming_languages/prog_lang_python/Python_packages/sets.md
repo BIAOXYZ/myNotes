@@ -8,7 +8,7 @@
 
 # 其他
 
-Sets in Python https://realpython.com/python-sets/
+~~Sets in Python https://realpython.com/python-sets/~~  【//已转移】
 
 Sets in Python https://www.geeksforgeeks.org/sets-in-python/
 

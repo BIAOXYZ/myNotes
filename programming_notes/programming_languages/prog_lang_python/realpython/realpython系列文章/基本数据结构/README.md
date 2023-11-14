@@ -5,7 +5,7 @@
 
 Lists and Tuples in Python https://realpython.com/python-lists-tuples/
 
-Sets in Python https://realpython.com/python-sets/
+~~Sets in Python https://realpython.com/python-sets/~~  【//已转移】
 
 # 未记录
 
