@@ -156,6 +156,8 @@ https://bruno-simon.com  各种交互各种炫
 
 # 生活信息
 
+裸辞 965 的程序员工作 4 年之后，我找到一份 776 的保安工作 https://www.v2ex.com/t/992244
+
 父亲被拖欠工资，如何维权 https://www.v2ex.com/t/935885
 ```console
 同步下最新的进展：父亲的工资要回来了。

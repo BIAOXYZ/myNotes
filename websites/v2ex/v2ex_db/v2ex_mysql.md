@@ -1,4 +1,11 @@
 
+解密 MySQL：索引—优化数据库性能的关键（二） https://www.v2ex.com/t/992179
+```console
+参考资料
+- 高性能 MySQL(第三版)
+- MySQL 官方手册
+```
+
 mysql 这个查询速度正常吗，怎么优化？ https://www.v2ex.com/t/986389
 - > `count(journal_pub_year)` 试一试？或者 `count(pm_id)` 试一试？
 - > 500 万行 = 5M 行, 你要是不需要 InnoDB 的特性，试试用 MyISAM 。一般这种静态表可以不用 InnoDB ，如果必须要 InnoDB 看看增大 `innodb_buffer_pool_size` 。
