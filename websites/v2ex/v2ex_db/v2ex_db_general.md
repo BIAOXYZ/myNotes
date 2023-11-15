@@ -1,4 +1,8 @@
 
+关于存储选型问题 https://www.v2ex.com/t/991770
+- > 没事别玩 hbase,你把握不住
+  >> 哈哈哈，HBase 确实容易出问题
+
 【[:star:][`*`]】 数据库/存储学习路径推荐 https://www.v2ex.com/t/913147
 ```console
 必看课程
