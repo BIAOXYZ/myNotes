@@ -15,6 +15,16 @@ Gunicorn使用详解 https://www.cnblogs.com/shijingjing07/p/9110619.html
 - > Gunicorn是一个`WSGI` HTTP服务器,python自带的有个web服务器，叫做`wsgiref`
 - > Gunicorn的优势在于，它使用了pre-fork worker模式，gunicorn在启动时，会在主进程中预先fork出指定数量的worker进程来处理请求
 
+## 重启 gunicorn
+
+A better way to restart/reload Gunicorn (via Upstart) after 'git pull'ing my Django projects https://stackoverflow.com/questions/9881819/a-better-way-to-restart-reload-gunicorn-via-upstart-after-git-pulling-my-dja
+- https://stackoverflow.com/questions/9881819/a-better-way-to-restart-reload-gunicorn-via-upstart-after-git-pulling-my-dja/27890485#27890485
+  * > For those not using supervisord: what Rob said, it works with ps as well,
+    ```sh
+    ps aux | grep gunicorn | grep projectname | awk '{ print $2 }' | xargs kill -HUP
+    ```
+    >> //notes：或者用 `kill -1`，因为 `-HUP` 对应的数字就是 `1`。
+
 # debug flask in gunicorn
 
 How to debug gunicorn application? https://stackoverflow.com/questions/45123699/how-to-debug-gunicorn-application
