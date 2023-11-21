@@ -1,6 +1,26 @@
 
 # git tag
 
+git笔记：tag常用操作，查询，拉取，合并，推送，创建，删除 https://www.cnblogs.com/Wind-stormger/p/17381535.html
+```console
+git tag -l  列出所有tag
+git tag -d <tagname>  删除本地指定tag
+git fetch <remote> --prune  从远程拉取所有信息
+git ls-remote --tags <remote>  查询远程tags
+git fetch <remote> --tags  从远程拉取所有tags
+~~git fetch <remote> --tags <tagname> 从远程拉取指定tags~~  -->  这个还是拉取所有tag了，正确的应该是： git fetch <remote> tag <tagname>
+git pull <remote> --tags  合并远程的所有tags到本地
+git pull <remote> --tags <tagname>  合并远程的指定tags到本地
+git push <remote> --tags  推送所有本地tag到远程
+git push <remote> --tags <tagname>  推送指定本地tag到远程
+git push <remote> :refs/tags/<tagname>  删除远程tag版本
+git branch -a --contains <tagname>  看看哪个分支包含这个 tag/commit
+git tag -l <tagname>  列出符合条件的tag（筛选作用），例如 v1.*
+git tag <tagname>  创建轻量tag（无-m标注信息）
+git tag -a <tagname>  创建含注解的tag
+git show <tagname>  显示指定tag详细信息
+```
+
 易百教程 -- git tag命令 https://www.yiibai.com/git/git_tag.html
 
 廖雪峰git教程 -- 标签管理 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013762144381812a168659b3dd4610b4229d81de5056cc000
@@ -73,3 +93,10 @@ Get the commit hash for a tag https://stackoverflow.com/questions/16818025/get-t
 
 How to tell which commit a tag points to in Git? https://stackoverflow.com/questions/1862423/how-to-tell-which-commit-a-tag-points-to-in-git
 - https://stackoverflow.com/questions/1862423/how-to-tell-which-commit-a-tag-points-to-in-git/1862542#1862542
+
+## 最常见流程：先从远端 fetch 某个（而不是全部）特定 tag，再本地基于该 tag 创建一个新分支
+```sh
+$ git fetch origin tag r1.9.0
+$ git checkout -b r1.9.0 tags/r1.9.0
+Switched to a new branch 'r1.9.0'
+```

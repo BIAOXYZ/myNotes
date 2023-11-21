@@ -5,6 +5,8 @@ Navicat vs DataGrip vs TablePlus - Quick Comparison https://tableplus.com/blog/2
 
 Hue -- Hue is a mature open source SQL Assistant for querying any Databases & Data Warehouses and collaborating: https://github.com/cloudera/hue || https://gethue.com/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # DBeaver
 
 DBeaver Community https://dbeaver.io/
@@ -12,6 +14,8 @@ DBeaver Community https://dbeaver.io/
 Download https://dbeaver.io/download/
 - > Mac OS X
   * > Brew Cask (`brew install --cask dbeaver-community`)
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## DBeaver快捷键
 
@@ -59,3 +63,19 @@ ctrl + shift + E 执行计划
 command + shift + X 将选定的sql转换成大写字母
 command + shift + Y 将选定的sql转换成小写字母
 ```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Chat2DB
+
+V 友们 你们使用的数据库管理工具是什么 https://www.v2ex.com/t/993341
+- > 之前看到过一个帖子 Chat2DB： https://www.v2ex.com/t/985049 有人使用过吗 感觉怎么样
+  >> chat2db 垃圾
+- > https://tableplus.com
+
+Chat2DB -- 🔥 🔥 🔥 An intelligent and versatile general-purpose SQL client and reporting tool for databases which integrates ChatGPT capabilities.(智能的通用数据库SQL客户端和报表工具) https://github.com/chat2db/Chat2DB/tree/main
+>> //notes：看描述的有点太好了，不是100%信，回头试试吧。。。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

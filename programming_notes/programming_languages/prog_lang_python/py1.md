@@ -13,7 +13,7 @@ Online resources for Python Crash Course (Second Edition), from No Starch Press 
 
 PEP 0 – Index of Python Enhancement Proposals (PEPs) https://peps.python.org/pep-0000/
 - PEP 1 – PEP Purpose and Guidelines https://peps.python.org/pep-0001/
-- PEP 8 – Style Guide for Python Code https://peps.python.org/pep-0008/
+- PEP 8 – Style Guide for Python Code https://peps.python.org/pep-0008/ || https://github.com/python/peps/blob/main/peps/pep-0008.rst || 个人补充：[PEP 8 -- Python 代码风格指南](https://github.com/kernellmd/Knowledge/blob/master/Translation/PEP%208%20%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91.md)
 
 PEP 1 -- PEP Purpose and Guidelines -- What is a PEP? https://www.python.org/dev/peps/pep-0001/#what-is-a-pep
 - > PEP stands for `Python Enhancement Proposal`. A PEP is a design document providing information to the Python community, or describing a new feature for Python or its processes or environment. The PEP should provide a concise technical specification of the feature and a rationale for the feature.
