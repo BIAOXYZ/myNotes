@@ -37,11 +37,11 @@ CRYPTEN: 当安全多方计算邂逅机器学习 https://mp.weixin.qq.com/s/xRf3
 CrypTen: A framework for Privacy Preserving Machine Learning https://github.com/facebookresearch/CrypTen
 
 FBPCF (Facebook Private Computation Framework) https://github.com/facebookresearch/fbpcf
-- (CCSW '21) Privacy-Preserving Randomized Controlled Trials: A Protocol for Industry Scale Deployment https://dl.acm.org/doi/10.1145/3474123.3486764 || https://dl.acm.org/doi/pdf/10.1145/3474123.3486764
+- 【[:star:][`*`]】 (CCSW '21) Privacy-Preserving Randomized Controlled Trials: A Protocol for Industry Scale Deployment https://dl.acm.org/doi/10.1145/3474123.3486764 || https://dl.acm.org/doi/pdf/10.1145/3474123.3486764
 - Private Computation Framework 2.0 https://research.facebook.com/publications/private-computation-framework-2-0/
 
 FBPCP (Facebook Private Computation Platform) https://github.com/facebookresearch/fbpcp/tree/main
-- https://github.com/facebookresearch/fbpcp/blob/main/docs/PrivateScaling.md
+- 【[:star:][`*`]】 https://github.com/facebookresearch/fbpcp/blob/main/docs/PrivateScaling.md
   * ![](https://github.com/facebookresearch/fbpcp/raw/main/docs/ShardingDesignFB.jpg)
 
 案例丨Meta如何提高密码安全性并保护用户隐私 https://mp.weixin.qq.com/s/v66OmdIdWA1efRCywPIuLQ
