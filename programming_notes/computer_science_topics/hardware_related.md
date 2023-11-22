@@ -155,6 +155,16 @@ efferz2019-9-12 17:59:10
 Dhrystone很容易编译器过度优化，我在E5 2620v4上用icc 2019 O3，单核3.0G，一秒可以跑62160064次，折合为DMIPS是35378DMIPS，11.8DMIPS/MHz。SKL可以跑到13.7DMIPS/MHz。
 ```
 
+## 大机（大型机、Mainframe）
+
+世界最强计算机，极少人见过，让程序员高薪工作一辈子！ https://mp.weixin.qq.com/s/0yMZ8P_kj2ZIBmHe6l1d8g
+- 回复里的：
+  * > 之前给大机写监控程序，硬是啃了2个月的操作文档，大机上是没有内存这个概念的，他们的内存不叫内存，叫系统池，一台机器上有32个slot可用于配置系统池，cpu也不是以进程作为运行单位，全部叫job，真的是很有意思的操作系统
+  * > 以前在保险公司，他们用的小机，我有一次登进去一看，uptime3000多天，服务跑的好好的，从来没出过问题
+  * > 人在某外资银行，大型机仍然是战略方向，无法替换
+  * > X86的高可用还是问题多，基本属于用软件实现的，和主机硬件实现的方式没法比
+  * > 以前在美篇上看过大型机退休人员写的回忆录，确实是人生赢家。
+
 # HCI (Hyper Converged Infrastructure / 超融合基础架构)
 
 Hyper-converged infrastructure https://en.wikipedia.org/wiki/Hyper-converged_infrastructure
