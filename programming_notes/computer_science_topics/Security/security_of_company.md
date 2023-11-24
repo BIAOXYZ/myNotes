@@ -266,6 +266,8 @@ SecretFlow-SPU: A  Performant and User-Friendly Framework for Privacy-Preserving
 - > 此次介绍是蚂蚁隐语团队Junming Ma和Yancheng Zheng等人发表在USENIX ATC'2023的SecretFlow-SPU，论文链接如下： https://www.usenix.org/conference/atc23/presentation/ma
 - > SecretFlow-SPU开源代码链接如下： https://github.com/secretflow/spu
 
+隐语小课｜隐私求交是个宝，安全规范不能少！一文详解DH协议在隐私计算中的误用 https://mp.weixin.qq.com/s/_bVFlJ1mbTfVykPMe7VdJQ
+
 ## 百度
 
 PrivC—A Framework for Efficient Secure Two-Party Computation https://link.springer.com/chapter/10.1007/978-3-030-37231-6_23
@@ -304,6 +306,8 @@ Angel PowerFL 安全联合计算 https://cloud.tencent.com/solution/powerfl
 - > 除了 Paillier 和 CKKS，未来我们将测试更多的同态加密算法效率，以便为同态加密的应用提供参考，欢迎查看 GitHub 项目主页： https://github.com/Di-Chai/he-benchmark
 
 ## 字节
+
+iDASH 2023国际大赛 | 字节Jeddak Team获得优异成绩 https://mp.weixin.qq.com/s/R8MT3eTjlVY3BwYzLH_3rA
 
 Jeddak亮相2022世界人工智能大会|隐私计算的实践与探索 https://mp.weixin.qq.com/s/gPShSYeOII6HcJcB0n-28w
 - > `安全研究团队  字节跳动安全中心  2022-09-16 17:18 发表于北京`

@@ -1,4 +1,6 @@
 
+postgres 咨询锁性能问题 https://www.v2ex.com/t/994540
+
 Postgresql 升级问题 https://www.v2ex.com/t/906314
 
 postgresql 里面的事务，明明又错误为什么也执行了？ https://www.v2ex.com/t/882893

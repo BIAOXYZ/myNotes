@@ -3,6 +3,8 @@
 
 # postgresql 16 release notes
 
+PostgreSQL国际社区授予PG 16版本贡献者荣誉奖章 https://mp.weixin.qq.com/s/_O7FI-O7JKlN-Piss6yLsw
+
 请不要固步自封，升级到 PostgreSQL 16 的 7 大理由！ https://www.modb.pro/db/1702125315795537920
 - > 1.生命周期
   * > PostgreSQL 16 是第三十个发行版本，您可以找到它的发布说明。 https://www.postgresql.org/about/news/postgresql-16-released-2715/
