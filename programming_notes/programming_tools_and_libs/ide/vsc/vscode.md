@@ -77,7 +77,7 @@ English环境下
 点击菜单栏 View--> Toggle Word Wrap 选项.
 或者直接 快捷键 : alt + Z
 ```
->> //notes：补充：在Mac下快捷键为：`Option + Z`
+>> 【[:star:][`*`]】 //notes：补充：在Mac下快捷键为：`Option + Z`
 
 ## 向下复制一行代码
 
@@ -87,6 +87,8 @@ vscode 向下复制当前行（即visual studio 中的Ctrl + D）功能快捷键
 
 双击快捷键，输入自己想要的快捷组合，如Ctrl+D，然后回车即可设置自己的组合了
 ```
+>> 【[:star:][`*`]】 //notes：补充：在Mac下快捷键为：`Shift + Option + ↓`
+>>> //notes2：向上复制一行的话之需要把方向键换成向上即可（但是用处不大- -）。
 
 ## 代码块整体左移右移
 
