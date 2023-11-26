@@ -4,6 +4,13 @@
 HDFS Commands: Hadoop Shell Commands to Manage HDFS https://www.edureka.co/blog/hdfs-commands-hadoop-shell-command
 - > **expunge**: HDFS Command that makes the trash empty.
 
+BASIC HDFS FILE OPERATIONS COMMANDS https://www.alluxio.io/learn/hdfs/basic-file-operations-commands/
+- > `touchz`: Creates an empty file in HDFS.
+  ```sh
+  $ hadoop fs -touchz URI
+  ```
+- > `test`: Test an HDFS file’s existence of an empty file or if it is a directory or not.
+
 常用HDFS命令 https://www.jianshu.com/p/64a92a96fe3c
 - > 关于HDFS的文件操作，主要使用以下3个命令：
   ```sh
@@ -118,6 +125,22 @@ However, the opposite command head does not appear to be part of the shell comma
     hadoop fs -cat /path/to/file | tail
     ```
   * > The `hadoop fs -tail` command as you note works on the last kilobyte - ***hadoop can efficiently find the last block and skip to the position of the final kilobyte, then stream the output***. Piping via tail can't easily do this.
+
+## `-touchz`
+
+How to create an empty file in Hadoop https://www.edureka.co/community/88364/how-to-create-an-empty-file-in-hadoop
+
+## `-test -[defsz]`
+```
+参数说明：
+-d: 检查指定的路径是否存在且是一个目录
+-e: 检查路径是否存在
+-f: 检查指定的路径是否存在且是一个文件
+-s: 检查文件大小是否大于0（即文件非空）
+-z: 检查文件是否为零长度
+
+如果文件存在，命令返回0；如果文件不存在，命令返回1。根据需要，你还可以使用其他选项来检查文件的类型、大小和其他属性。
+```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
