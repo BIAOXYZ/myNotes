@@ -1,4 +1,15 @@
 
+高通 CPU 浮点这么快吗。。。 https://www.v2ex.com/t/994966
+```console
+wget https://github.com/xiexiexx/PPLA/raw/main/billionsort/billionsort.cpp
+clang++ -O3 billionsort.cpp
+./a.out
+
+redmi note12t 7+gen2 16+1t miui14.0.25 termux witout root
+有没有 8gen3 和 9300 的老哥跑一下让我长长见识
+```
+- > 我不知道你是不是了解 CPU 性能，了解代码。你这个代码只能测出 CPU 跑 std::sort 这样的单线程负载的性能，速度受到 Memory, Cache 的影响
+
 mac 的 SSD 快的不可思议，难怪是金子做的 https://www.v2ex.com/t/953371
 - > RAM 缓存+SLC 缓存，4K 单线程才是标准
 - > 除了带缓存的顺序读写好点（持续写能保持多久未可知），并不强
