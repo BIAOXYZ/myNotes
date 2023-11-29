@@ -1,4 +1,6 @@
 
+库存扣减时，出现 MySQL 死锁是什么原因？ https://www.v2ex.com/t/995866
+
 解密 MySQL：索引—优化数据库性能的关键（二） https://www.v2ex.com/t/992179
 ```console
 参考资料

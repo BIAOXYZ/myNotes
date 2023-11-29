@@ -46,6 +46,14 @@ SQLite Online https://sqliteonline.com/  【这个感觉挺好用的～也有 pg
 
 异构数据库双向同步调研 https://blog.csdn.net/jingya_charmworker/article/details/81365604
 
+mysql 同步数据到 SQLite 和 SQLserver https://www.v2ex.com/t/995814
+- > Debezium
+- > 这个帖子 https://www.v2ex.com/t/995792 第 13 点
+- > 阿里开源的 canal ， 自带一个 adapter 可以写 SQL 的方式同步 但性能效率非常差，因为代码质量很差， 同时也提供 client ，可以自定义解析过来的 SQL
+- > 定时同步用阿里的 datax ，实时同步用 canal
+- > 直接用阿里的 DTS, 或者自己写一个, 模拟 mysql 从数据库订阅 mysql 的 binlog, 解析 binlog, 生成变更前后字段值, 再转换成 sqlite 和 sqlserver 的语法
+- > datax 实时就 flink cdc 这些
+
 ## SymmetricDS
 
 SymmetricDS https://www.symmetricds.org/

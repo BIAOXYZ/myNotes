@@ -142,6 +142,13 @@ How to create an empty file in Hadoop https://www.edureka.co/community/88364/how
 如果文件存在，命令返回0；如果文件不存在，命令返回1。根据需要，你还可以使用其他选项来检查文件的类型、大小和其他属性。
 ```
 
+## 按时间顺序显示 ls 的文件
+
+How can we list files in HDFS directory as per timestamp https://www.edureka.co/community/3134/how-can-we-list-files-in-hdfs-directory-as-per-timestamp
+```sh
+hdfs dfs -ls /tmp | sort -k6,7
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 不常用命令
