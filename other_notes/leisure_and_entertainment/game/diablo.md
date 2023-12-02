@@ -1,6 +1,8 @@
 
 # 暗黑装备
 
+【游戏】暗黑2物品留存讲解-暗金武器 https://www.bilibili.com/video/BV1654y1F7Tn/
+
 ## 乔丹之石
 
 Stone of Jordan (Diablo II) https://diablo.fandom.com/wiki/Stone_of_Jordan_(Diablo_II)
