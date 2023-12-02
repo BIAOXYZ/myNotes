@@ -75,7 +75,7 @@ Why does a 32-bit OS support 4 GB of RAM? https://stackoverflow.com/questions/11
     3. 2^32Bytes is the max size
   2^32B = 4,194,304KiB = 4,194MiB = 4GiB
   ```
-  >> notes：从这两个回答里简单总结下就是：CPU访问内存的**最小单位是byte而不是bit**；32位就是**32条地址总线**，一共能表示**2^32个数字**，这里每个数字对应到一个**内存地址**；每一个内存地址**对应一个字节（而不是每一个内存地址对应一个bit，这是根因所在）**。所以能表示的最大内存是**2^32个字节**，也就是4GB。
+  >> 【[:star:][`*`]】 //notes：从这两个回答里简单总结下就是：CPU访问内存的**最小单位是byte而不是bit**；32位就是**32条地址总线**，一共能表示**2^32个数字**，这里每个数字对应到一个**内存地址**；每一个内存地址**对应<ins>一个字节</ins>（而不是每一个内存地址对应<ins>一个bit</ins>，这是根因所在）**。所以能表示的最大内存是**2^32个字节**，也就是`4GB`。
 - https://stackoverflow.com/questions/1119278/why-does-a-32-bit-os-support-4-gb-of-ram/40269262#40269262
   * > If you have a 4-bit system, this means **the address for each `byte` is 4 binary digits**, the probability of all your address will range from `0000` through `1111` which is `2^4 = 16` (2 because there is either 0 or 1), with four bits it's possible to create `16` different values of zeros and ones, If you have 16 different addr. each represent a `byte` then you can have a max of `16 bytes`
   * > 4-bit system will look like this: ![](https://i.stack.imgur.com/G5V4v.png)

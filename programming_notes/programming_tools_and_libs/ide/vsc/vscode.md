@@ -37,6 +37,47 @@ mac下vscode快捷键 https://www.jianshu.com/p/5c71b9fd7485
   ```
   >> 【[:star:][`*`]】 //notes：尤其是 `⌘ + P` 快速查找文件好用。
 
+【[:star:][`*`]】 VS Code 高级使用技巧整理 https://medium.com/@idtimw/vs-code-%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E6%95%B4%E7%90%86-c34509846502 || https://idtimw.com/vs-code-gao-ji-shi-yong-ji-qiao-zheng-li/
+- > **多光标选择**
+  ```console
+  Mac: opt+cmd+up or opt+cmd+down
+  Windows: ctrl+alt+up or ctrl+alt+down
+  Linux: alt+shift+up or alt+shift+down
+  ```
+- > **文件内快速定位**
+  ```console
+  Mac: cmd+shift+o
+  Windows / Linux: ctrl+shift+o
+  ```
+  >> 【[:star:][`*`]】 //notes：查找函数和类，并快速跳转过去。估计查找其他的也会方便很多～
+- > **在项目内快速定位**
+  ```console
+  Mac: cmd+t
+  Windows / Linux: ctrl+t
+  ```
+- > **跳转到指定行**
+  ```console
+  Mac: ctrl+g or cmd+p, :
+  Windows / Linux: ctrl+g
+  ```
+- > **返回光标位置**
+  ```console
+  Mac: cmd+u
+  Windows / Linux: ctrl+u
+  ```
+- > **代码格式化 当前选中代码**
+  ```console
+  Mac: cmd+k, cmd+f
+  Windows / Linux: ctrl+k, ctrl+f
+  ```
+- > **跳转到文件顶部/尾部**
+  ```console
+  Mac: cmd+up and cmd+down
+  Windows: ctrl+up and ctrl+down
+  Linux: ctrl+home and ctrl+end
+  ```
+  >> //notes：其实本来只是想找这个功能，无意间发现了更多～
+
 ## 打开配置文件 `setting.json`
 
 User and Workspace Settings https://code.visualstudio.com/docs/getstarted/settings
