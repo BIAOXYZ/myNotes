@@ -10,7 +10,7 @@ asyncio --- 异步 I/O https://docs.python.org/zh-cn/3/library/asyncio.html
 
 # 视频
 
-Python Asynchronous Programming - AsyncIO & Async/Await https://www.youtube.com/watch?v=t5Bo1Je9EmE
+~~Python Asynchronous Programming - AsyncIO & Async/Await https://www.youtube.com/watch?v=t5Bo1Je9EmE~~  【//已转移】
 
 # debug异步程序
 

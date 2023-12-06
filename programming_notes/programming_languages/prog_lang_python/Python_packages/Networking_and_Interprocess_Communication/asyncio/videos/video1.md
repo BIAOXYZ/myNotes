@@ -164,3 +164,16 @@ if __name__ == "__main__":
 ...
 ...
 ```
+
+# 2
+
+Python Asynchronous Programming - AsyncIO & Async/Await https://www.youtube.com/watch?v=t5Bo1Je9EmE
+
+# 3
+
+高级Python编程知识 https://www.youtube.com/playlist?list=PLvQDgAXJ4ADMzlySkwIGomEA9j1Vgq5uS
+- 高级Python编程知识-21.异步IO-协程 https://www.youtube.com/watch?v=iwg_O1q4z70
+- 高级Python编程知识-22.异步IO-创建任务 https://www.youtube.com/watch?v=YRocKEfLMTk
+- 高级Python编程知识-23.异步IO-任务进阶 https://www.youtube.com/watch?v=G5dBku_NDns
+
+python_advance https://github.com/stevencn76/python_advance

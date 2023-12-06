@@ -1,4 +1,6 @@
 
+MYSQL 高并发下，记录变动后余额怎么统计才能更准确？ https://www.v2ex.com/t/997702
+
 库存扣减时，出现 MySQL 死锁是什么原因？ https://www.v2ex.com/t/995866
 
 解密 MySQL：索引—优化数据库性能的关键（二） https://www.v2ex.com/t/992179
