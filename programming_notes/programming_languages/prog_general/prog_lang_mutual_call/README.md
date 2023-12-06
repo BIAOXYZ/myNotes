@@ -9,6 +9,11 @@ Python3 如何调用 C 语言代码 https://blog.csdn.net/yilovexing/article/det
 
 从 Rust 调用 C 库函数 | Linux 中国 https://mp.weixin.qq.com/s/nQ4daibiQZ_k9G6QGyNJ7g
 
+# C++ & Java
+
+JNI/NDK 开发指南 https://doc.yonyoucloud.com/doc/wiki/project/jni-ndk-developer-guide/index.html
+- > 出处地址: JNI/NDK开发指南（开山篇） https://blog.csdn.net/xyang81/article/details/41759643
+
 # C++ & Python
 
 python 调用 C++ code https://blog.csdn.net/abcjennifer/article/details/49374307

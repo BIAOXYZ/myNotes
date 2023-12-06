@@ -168,6 +168,9 @@ insert into filter_input_b values (86262273, '24-30', 'male', 20211130, 2, 'aspi
 insert into filter_input_b values (44969473, '50+', 'female', 20211130, 1, 'aspirin', 5);
 insert into filter_input_b values (56520193, '18-23', 'female', 20211130, 3, 'aspirin', 7);
 
+create table input_a as select * from filter_input_a;
+create table input_b as select * from filter_input_b;
+
 --select filter_input_a.val, filter_input_a.t from (
     select filter_input_a.val, filter_input_a.t, filter_input_b.y, sum(filter_input_b.y), count(filter_input_a.t), count(distinct filter_input_b.y), 
     quantile(0.2)(filter_input_b.y), quantile(0.8)(filter_input_b.y)

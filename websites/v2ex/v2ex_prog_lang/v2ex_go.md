@@ -1,4 +1,6 @@
 
+有么有 go 相关的比较好的播客或者网站推荐学习 https://www.v2ex.com/t/997877
+
 用 Go 基于 epoll 实现一个最小化 IO 库 https://www.v2ex.com/t/945616
 
 一个内存地址的问题 https://www.v2ex.com/t/945581
