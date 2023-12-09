@@ -1,4 +1,19 @@
 
+PHP 跑 Python 比 Python 更快！ https://www.v2ex.com/t/998654
+```console
+原文 https://github.com/swoole/phpy/blob/main/docs/benchmark.md
+```
+- > 凡事编程语言跑分，***python 一看到 for 就直接宣布比赛结束了***。
+- > 另外 `my_dict["key-" + str(i)] = i * 3` 改成 `my_dict["key-%s"% i] = i * 3` 我这里会从 5.6 秒变 4.6 秒。
+  >> 换成 `my_dict[b"key-%d"% i] = i * 3` 变成 3.6 秒。结论：字符串是个体力活。
+- > 试试
+  ```py
+  my_dict = {f"key-{i}": i*3 for i in range(n)}
+  ...
+  total = sum(my_dict.values())
+  ```
+  > 我没环境测试，最想不通在无需过滤的情况下，求 total 为什么要跑个 for 累加器，抓着痛处打？
+
 requests 为什么慢 urllib3 如此之多？ https://www.v2ex.com/t/995381
 
 【[:ok:][:star:][`*`]】 请问 Python 3.11 版本是对线程安全做了什么更改吗？ https://www.v2ex.com/t/965954
