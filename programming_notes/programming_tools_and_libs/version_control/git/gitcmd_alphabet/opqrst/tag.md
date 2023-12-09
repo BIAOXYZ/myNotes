@@ -96,6 +96,8 @@ How to tell which commit a tag points to in Git? https://stackoverflow.com/quest
 
 ## 最常见流程：先从远端 fetch 某个（而不是全部）特定 tag，再本地基于该 tag 创建一个新分支
 ```sh
+# 先列举一下远程有哪些 tag
+$ git ls-remote --tags origin
 $ git fetch origin tag r1.9.0
 $ git checkout -b r1.9.0 tags/r1.9.0
 Switched to a new branch 'r1.9.0'

@@ -75,6 +75,21 @@ pandas.DataFrame.aggregate https://pandas.pydata.org/docs/reference/api/pandas.D
 Pandas .agg() convert to list but skip nans https://stackoverflow.com/questions/70650545/pandas-agg-convert-to-list-but-skip-nans
 - https://stackoverflow.com/questions/70650545/pandas-agg-convert-to-list-but-skip-nans/70650565#70650565
 
+## `ValueError: no results`
+
+No Results in DataFrame Resample (pandas) https://stackoverflow.com/questions/45253910/no-results-in-dataframe-resample-pandas
+- https://stackoverflow.com/questions/45253910/no-results-in-dataframe-resample-pandas/45253971#45253971
+  * > You need cast to `float` first by [`astype`](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.astype.html):
+    ```py
+    df['Temp'] = df['Temp'].astype(float)
+    df2 = df.resample('H')['Temp'].agg(['mean','std'])
+    ```
+  * > If some bad data (like `strings`) use [`to_numeric`](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_numeric.html) for replace them to `NaN`s:
+    ```py
+    df['Temp'] = pd.to_numeric(df['Temp'], errors='coerce')
+    df2 = df.resample('H')['Temp'].agg(['mean','std'])
+    ```
+
 # `isin()`
 
 pandas中isin()函数及其逆函数使用 https://blog.csdn.net/lzw2016/article/details/80472649

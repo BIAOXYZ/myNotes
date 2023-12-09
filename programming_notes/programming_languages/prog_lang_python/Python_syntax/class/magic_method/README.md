@@ -50,4 +50,6 @@ python的__new__方法 https://www.jianshu.com/p/08d7956601de
 
 一文让你彻底搞懂Python中`__str__`和`__repr__`? https://segmentfault.com/a/1190000022266368
 
+How To Use the `__str__()` and `__repr__()` Methods in Python https://www.digitalocean.com/community/tutorials/python-str-repr-functions
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

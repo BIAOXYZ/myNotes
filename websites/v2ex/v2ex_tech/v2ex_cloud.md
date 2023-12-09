@@ -1,4 +1,10 @@
 
+【[:star:][`*`]】 马上 4202 了，你还没学会 k8s 吗（k8s 教程） https://www.v2ex.com/t/998891
+```
+https://github.com/chaseSpace/k8s-tutorial-cn/tree/main
+- Kubernetes 进阶教程 https://github.com/chaseSpace/k8s-tutorial-cn/blob/main/doc_tutorial_senior.md
+```
+
 从外部 ssh 到 k8s 的 pod 里面 https://www.v2ex.com/t/998329
 
 阿里云挂了，导致阿里全都挂 https://www.v2ex.com/t/991562
