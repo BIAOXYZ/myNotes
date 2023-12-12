@@ -1,4 +1,6 @@
 
+公司准备从腾讯云迁到华为云，想问下华为云有什么坑吗？ https://www.v2ex.com/t/999326
+
 【[:star:][`*`]】 马上 4202 了，你还没学会 k8s 吗（k8s 教程） https://www.v2ex.com/t/998891
 ```
 https://github.com/chaseSpace/k8s-tutorial-cn/tree/main
