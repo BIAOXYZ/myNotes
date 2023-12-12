@@ -53,6 +53,12 @@
 
 # From Wechat
 
+## 2023
+
+高耀洁离世
+- 悼念高耀洁｜即使黑暗中无人看见光亮，但在岁月的长河中照耀后人 https://mp.weixin.qq.com/s/8MbXxak9LU1Q-BfE_pXMNA
+- 高耀洁医生，一路走好 https://mp.weixin.qq.com/s/fVjA8cLDVLMRPesnHo_enA
+
 ## 2022
 
 被剩在深山里的守矿人 https://mp.weixin.qq.com/s/0IgBrZ8jEgmTrqcPy0Jj6g || 深山里的守矿人 https://mp.weixin.qq.com/s/XLYP2S7zEJ2nSJVx9agNfA
