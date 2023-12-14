@@ -10,6 +10,9 @@
 - 阮一峰的网络日志(搜狗微信版) https://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97
 - 阮一峰的网络日志(Github版) https://github.com/ruanyf
 
+`过去几年，我做了一个周刊，每周介绍一些不错的软件工具，累计已经超过2500个项目了。网友将它们都整理出来，做成一个搜索引擎，提供语义搜索。如果寻找软件工具，不妨用它试试。`
+- Awesome Productivity Tools https://www.apigpts.dev/tools
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # :star:阮一峰系列教程

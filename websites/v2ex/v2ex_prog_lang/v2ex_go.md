@@ -1,4 +1,29 @@
 
+【[:star:][`*`]】 问一个并发程序可见性的问题， golang 语言 https://www.v2ex.com/t/999936
+```go
+Go 官网有一段代码例子：
+
+var c = make(chan int)
+var a string
+
+func f() {
+	a = "hello, world"
+	<-c
+}
+
+func main() {
+	go f()
+	c <- 0
+	print(a)
+}
+
+官网说使用了 channel 后，这段代码可以确保能正常打印出"hello, world"，原因是什么？
+```
+- > Java 到底搞了些什么玩意，写代码也是有边界的啊，写个业务代码还去考虑 CPU 缓存？那要不要考虑不同 CPU 架构的差异呢？
+- > 推荐阅读：Memory Barriers: a Hardware View for Software Hackers
+- > 搜 MemoryModel ，类似 https://go.dev/ref/mem Java Memory Model 做为入门读物最佳
+- > 汇编在这里，去掉了 fmt 换成了 println 免得太长影响视线： https://gist.github.com/lesismal/3673322106d032abc10a2a06ee138f9b
+
 有么有 go 相关的比较好的播客或者网站推荐学习 https://www.v2ex.com/t/997877
 
 用 Go 基于 epoll 实现一个最小化 IO 库 https://www.v2ex.com/t/945616
