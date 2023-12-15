@@ -140,6 +140,8 @@ Qemu tutorial https://linuxhint.com/qemu-tutorial/
 
 How To Use QEMU From the Linux Command-Line https://www.baeldung.com/linux/qemu-from-terminal
 
+用 qemu-user 在arm linux机器上运行amd64/x86程序 https://www.cnblogs.com/bamanzi/p/run-x86-linux-progs-with-qemu-user-on-arm.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Xen

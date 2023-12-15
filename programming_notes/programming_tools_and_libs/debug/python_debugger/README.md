@@ -189,6 +189,36 @@ Python获取当前位置所在行数以及函数名 https://cloud.tencent.com/de
 
 python笔记19-获取当前运行函数名称和类方法名称 https://www.cnblogs.com/yoyoketang/p/9231320.html
 
+## 每一行代码都打印一下（pysnooper里可能也是这么实现的？）
+
+python tracing a segmentation fault https://stackoverflow.com/questions/2663841/python-tracing-a-segmentation-fault/2664232#2664232
+- https://stackoverflow.com/questions/2663841/python-tracing-a-segmentation-fault/2663863#2663863
+  * > Here's a way to output the filename and line number of every line of Python your code runs:
+    ```py
+    import sys
+
+    def trace(frame, event, arg):
+        print("%s, %s:%d" % (event, frame.f_code.co_filename, frame.f_lineno))
+        return trace
+
+    def test():
+        print("Line 8")
+        print("Line 9")
+
+    sys.settrace(trace)
+    test()
+    ```
+  * > Output:
+    ```console
+    call, Main.py:7
+    line, Main.py:8
+    Line 8
+    line, Main.py:9
+    Line 9
+    return, Main.py:9
+    ```
+  * > (You'd probably want to write the trace output to a file, of course.)
+
 # 其他
 
 Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-boss/
