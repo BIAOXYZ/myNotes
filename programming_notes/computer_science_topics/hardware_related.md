@@ -173,6 +173,12 @@ Hyper-converged infrastructure https://en.wikipedia.org/wiki/Hyper-converged_inf
 
 什么条件下适合使用超融合架构产品，包括Nutanix等？ - 知乎 https://www.zhihu.com/question/44203035
 
+# 半导体
+
+半导体芯片，到底是如何工作的？ https://www.ithome.com/0/739/820.htm || https://mp.weixin.qq.com/s/m3ncMHGcYxZjd_BsCOgjow  【from `鲜枣课堂`】
+
+写给小白的芯片半导体科普 https://mp.weixin.qq.com/s/AUzwT5jxV9HvM3Kv4ym9Ow
+
 # 其他
 
 再次拯救摩尔定律：一文了然 GAA 芯片技术 https://www.ithome.com/0/513/206.htm

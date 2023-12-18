@@ -47,6 +47,10 @@ The Algorithms - Rust https://github.com/TheAlgorithms/Rust
 
 # Rust相关新闻
 
+为庆祝 10 周年，热门多人生存游戏《Rust》半价促销：80.5 元 https://www.ithome.com/0/739/791.htm
+- > rust不讲武德，竟然靠这种方式抢我C++份额
+  >> 坐等C++上架steam
+
 [评论]Go语言的成功也预示着Rust的成功 - 软件和应用 - cnBeta.COM https://www.cnbeta.com/articles/tech/789181.htm
 
 # Rust语法点
