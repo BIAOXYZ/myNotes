@@ -200,6 +200,9 @@ XORBoost: Tree Boosting in the Multiparty Computation Setting https://eprint.iac
 
 DataTrust https://dp.alibaba.com/product/datatrust
 
+mpc4j https://github.com/alibaba-edu/mpc4j
+- > (ICDE 2022) Scape: Scalable Collaborative Analytics System on Private Database with Malicious Security https://ieeexplore.ieee.org/author/37086477025
+
 ### 双子座实验室
 
 https://alibaba-gemini-lab.github.io/
@@ -235,38 +238,6 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
 - 产品简介 https://help.aliyun.com/document_detail/356689.html
 - 用户指南 https://help.aliyun.com/document_detail/364171.html
   * 脚本文件管理 https://help.aliyun.com/document_detail/364175.htm
-
-隐语 SecretFlow
-- SecretFlow https://github.com/secretflow/secretflow
-- 隐语SecretFlow https://space.bilibili.com/2073575923/
-- 蚂蚁集团开源可信隐私计算框架「隐语」：开放、通用 https://www.jiqizhixin.com/articles/2022-07-05-4
-  * > 7 月 4 日，蚂蚁集团宣布面向全球开发者正式开源可信隐私计算框架 “隐语”。
-  * > 隐语是蚂蚁集团历时 6 年自主研发，以安全、开放为核心设计理念打造的可信隐私计算技术框架，涵盖了当前几乎所有主流隐私计算技术。
-- 隐私计算框架之——隐语secretflow（上） - AI架构师之路的文章 - 知乎 https://zhuanlan.zhihu.com/p/527469578
-- 隐语v0.7.18版本更新，构建跨机构分布式底座RayFed https://mp.weixin.qq.com/s/rXLFHwD68q_J6aMlD5eI-Q || https://blog.csdn.net/m0_69580723/article/details/128633322
-- 隐语分布式底座: 基于Ray的分布式联邦执行引擎 https://mp.weixin.qq.com/s/a4fd2WKuFOGTs6UAAQhHuQ
-- SCQL https://github.com/secretflow/scql
-  * > SCQL (Secure Collaborative Query Language) is a system that allows multiple distrusting parties to run joint analysis without revealing their private data.
-
-隐语 PSI benchmark 白皮书，新鲜出炉 https://mp.weixin.qq.com/s/TvY4morH-dRsaCm5JI6eig
-- > 4.生成数据
-  * > 把脚本 generate_psi.py：https://github.com/secretflow/spu/blob/main/spu/psi/tools/generate_psi.py 传到alice机器的root目录下
-- > 5.限制宽带/延迟
-  ```sh
-  #100Mbps 20ms
-  tc qdisc add dev eth0 root handle 1: tbf rate 100mbit burst 256kb latency 800ms 
-  tc qdisc add dev eth0 parent 1:1 handle 10: netem delay 20msec limit 8000
-  清除限制
-  tc qdisc del dev eth0 root
-  查看已有配置
-  tc qdisc show dev eth0
-  ```
-
-SecretFlow-SPU: A  Performant and User-Friendly Framework for Privacy-Preserving Machine Learning - 酸菜鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/650002283
-- > 此次介绍是蚂蚁隐语团队Junming Ma和Yancheng Zheng等人发表在USENIX ATC'2023的SecretFlow-SPU，论文链接如下： https://www.usenix.org/conference/atc23/presentation/ma
-- > SecretFlow-SPU开源代码链接如下： https://github.com/secretflow/spu
-
-隐语小课｜隐私求交是个宝，安全规范不能少！一文详解DH协议在隐私计算中的误用 https://mp.weixin.qq.com/s/_bVFlJ1mbTfVykPMe7VdJQ
 
 ## 百度
 
