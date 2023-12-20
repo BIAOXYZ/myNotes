@@ -82,6 +82,8 @@ Brainfuck JIT 虚拟机教程 https://github.com/Nugine/bfjit || https://nugine.
 
 ## DB project
 
+Getting started with database development https://www.reddit.com/r/databasedevelopment/comments/unj8d1/getting_started_with_database_development/
+
 Naive Query Engine (Toy for Learning) https://github.com/Veeupup/naive-query-engine
 - > This is a Query Engine which support SQL interface. And it is only a Toy for learn query engine only. You can check TODO to check the progress now.
 

@@ -5,6 +5,9 @@ The Internals of PostgreSQL http://www.interdb.jp/pg/index.html
 
 【一个网友自己存的备份，估计也是怕作者的主站有一天不在了。。。】 https://github.com/liuqian1990/The-Internals-of-PostgreSQL
 
+Internet Archive Wayback Machine
+- https://web.archive.org/web/20231216142503/https://www.interdb.jp/pg/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Introduction](http://www.interdb.jp/pg/index.html)
