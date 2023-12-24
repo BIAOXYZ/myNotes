@@ -15,7 +15,7 @@
 
 # 金庸作品在线参考（是的，不是“阅读”，因为早就超越了“阅读”）
 
-【[:star:][`*`]】 金庸网 http://www.jinyongshuwu.com/
+【[:star:][`*`]】 金庸网 ~~http://www.jinyongshuwu.com/~~  -->  https://www.jinyongwang.net/ || http://www.jinyongshuku.com/
 >> //notes：这个网站之所以厉害是因为：1.三个版本（连载版、修订版、新修版）都有，甚至（已有的）英文版也有；2.有金庸作品里的各种数据统计。
 
 【[:star:][`*`]】 金庸图书馆 https://www.jinyongbook.com/index.htm

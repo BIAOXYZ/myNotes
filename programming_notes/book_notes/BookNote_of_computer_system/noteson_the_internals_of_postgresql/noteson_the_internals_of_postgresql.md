@@ -8,6 +8,8 @@ The Internals of PostgreSQL http://www.interdb.jp/pg/index.html
 Internet Archive Wayback Machine
 - https://web.archive.org/web/20231216142503/https://www.interdb.jp/pg/
 
+《PostgreSQL技术内幕——原理探索》 https://pg-internal.vonng.com/#/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [Introduction](http://www.interdb.jp/pg/index.html)

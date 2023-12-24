@@ -179,6 +179,26 @@ How does collections.defaultdict work? https://stackoverflow.com/questions/59005
 
 Python Defaultdict – Int and List as a Default Factory https://data-flair.training/blogs/python-defaultdict/
 
+# defaultdict问题
+
+How to use a specific data structure as the default_factory for a defaultdict? https://stackoverflow.com/questions/31723719/how-to-use-a-specific-data-structure-as-the-default-factory-for-a-defaultdict
+- https://stackoverflow.com/questions/31723719/how-to-use-a-specific-data-structure-as-the-default-factory-for-a-defaultdict/31723862#31723862
+  * > You just need to define your default_factory as a function that returns the dictionary you want to default to:
+    ```py
+    from collections import defaultdict, Counter
+    d = defaultdict(lambda: {'counter': Counter(), 'name': ''})
+    d['x']['counter']['b'] += 1
+    d['x']['counter']['c'] += 1
+    print(d)
+    ```
+  * > If you are not familiar with lambdas, this is the same thing as:
+    ```py
+    def my_factory():
+        aDict = {'counter': Counter(), 'name':''}
+        return aDict
+    d = defaultdict(my_factory)
+    ```
+
 # defaultdict个人实战
 
 ```py
