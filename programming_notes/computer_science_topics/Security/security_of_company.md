@@ -230,6 +230,9 @@ https://alibaba-gemini-lab.github.io/
 
 ## 蚂蚁金服
 
+探索安全可信技术前沿，2023年蚂蚁14篇论文被国际顶会顶刊收录 https://mp.weixin.qq.com/s/dqJjd583E_m6YJeEX4PBlQ
+- > 2023年即将进入尾声，跟大家汇报一些今年我们在探索安全可信技术前沿方面的工作，涵盖了隐私计算、数据安全、网络安全、AI安全、系统安全等领域，Usenix Security、ACM CCS 、Usenix ATC等国际顶会顶刊，共收录了14篇相关论文研究成果。这些研究很多已在蚂蚁集团的应用场景中得到应用，相关技术开源项目正成为高校学术研究重要平台 。
+
 Antchain-MPC https://github.com/alipay/Antchain-MPC
 - MORSE STF快速开始 https://github.com/alipay/Antchain-MPC/wiki/MORSE-STF%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B
 - MORSE STF使用手册 https://github.com/alipay/Antchain-MPC/wiki/MORSE-STF%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C
