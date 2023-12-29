@@ -171,6 +171,19 @@ A practical guide to using the git stash command https://opensource.com/article/
 
 How would I extract a single file (or changes to a file) from a git stash? https://stackoverflow.com/questions/1105253/how-would-i-extract-a-single-file-or-changes-to-a-file-from-a-git-stash
 
+# 个人实战
+
+## 只apply单个stashed文件
+
+How to unstash only certain files? https://stackoverflow.com/questions/15264553/how-to-unstash-only-certain-files
+```sh
+# 先查看下 stash 了哪些文件，主要是为了确定要apply的那个文件的路径
+#（因为你既然已经准备要apply单个文件了，你肯定已经知道**这个stash里的这个文件可以无脑apply下去**）
+git stash show
+# 用 checkout 恢复你想 apply 的那个文件
+git checkout stash@{0} src/prefix1/prefix2/conf.yaml
+```
+
 # 恢复丢失的 stash
 
 How do I recover a dropped stash in Git? https://stackoverflow.com/questions/89332/how-do-i-recover-a-dropped-stash-in-git
