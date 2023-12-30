@@ -5,6 +5,17 @@ git-branch - List, create, or delete branches https://git-scm.com/docs/git-branc
 
 # 参数解析
 
+## `-m`
+```sh
+-m
+--move
+Move/rename a branch, together with its config and reflog.
+
+-M
+`--move --force`的快捷方式。
+```
+>> //notes：主要用于重命名分支：`git branch -m [branch1] branch2`，`branch1` 如果省略的话是重命名当前分支。
+
 ## `--set-upstream` 与 `--set-upstream-to`
 
 `git push --set-upstream vs --set-upstream-to` https://stackoverflow.com/questions/45580960/git-push-set-upstream-vs-set-upstream-to
