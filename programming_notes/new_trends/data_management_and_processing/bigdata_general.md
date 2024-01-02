@@ -44,6 +44,9 @@ Data lake https://en.wikipedia.org/wiki/Data_lake
 
 批处理计算与流处理计算的区别是什么？ - 知乎 https://www.zhihu.com/question/313869609
 - 批处理计算与流处理计算的区别是什么？ - DataPipeline数见科技的回答 - 知乎 https://www.zhihu.com/question/313869609/answer/829714737
+  * > **三、`Lambda架构`是批流一体化的必然要求**
+    + > 目前在做这样的平台时，业界比较公认的有两种架构：一种是`Lambda架构`，`Lambda架构`的核心是按需使用批量和流式的处理框架，分别针对批式和流式数据提供相应的处理逻辑。最终通过一个服务层进行对外服务的输出。
+    + > 为什么我们认为Lambda架构是批流一体化的必然要求？这好像看起来是矛盾的（与之相对，还有一种架构叫`Kappa架构`，即用一个流式处理引擎解决所有问题）。
 - 批处理计算与流处理计算的区别是什么？ - 大数据羊说的回答 - 知乎 https://www.zhihu.com/question/313869609/answer/2398291030
 
 批处理和流处理 https://www.jianshu.com/p/5cc07eae1a0c

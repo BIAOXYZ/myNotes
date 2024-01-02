@@ -1,4 +1,8 @@
 
+# From 其他
+
+河北光棍哥：不结婚不生子，小病治大病死，大家觉得这样的活法可行吗？ https://user.guancha.cn/main/content?id=1148290 || 不结婚不生子，小病治大病死 https://www.douyin.com/video/7312232649584577833
+
 # From IT media
 
 湖南夫妻抚养弃婴12年，富豪爸爸强行认回，养女拒见养父母 https://www.sohu.com/a/548188078_121035212 || 2006年湖南夫妻抚养弃婴12年，富豪爸爸强行认回，养女拒见养父母 https://www.163.com/dy/article/H7JIET630543MXKX.html

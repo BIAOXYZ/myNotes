@@ -1,4 +1,11 @@
 
+【[:star:][`*`]】 准备跨年了，再推一次我的 K8s 教程 https://www.v2ex.com/t/1004863
+```console
+继上一次我的K8s 教程帖子发布之后，得到了兄弟们的热情回帖和 Star ，但没有一个兄弟发 Issue 给反馈呀？不会真进入收藏夹吃灰了吧😅 😅 😅 ，我还一直在更新呢！！
+
+- 马上 4202 了，你还没学会 k8s 吗（k8s 教程） https://www.v2ex.com/t/998891
+```
+
 k8s 某个 deployment 如何自动伸缩到 node 的数量 https://www.v2ex.com/t/999755
 - > 1.Deployment -> DaemonSet <br> 2.hpa 最小为 node 数量，并开启 pod 节点反亲和
   >> 2 是多余的吧
