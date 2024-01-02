@@ -17,6 +17,10 @@ Apache Flink 中文文档 https://github.com/apachecn/flink-doc-zh
 
 Apache Flink 源码分析系列，基于 git tag 1.1.2 https://github.com/danny0405/flink-source-code-analysis
 
+# Flink 构架相关
+
+批处理计算与流处理计算的区别是什么？ - 大数据羊说的回答 - 知乎 https://www.zhihu.com/question/313869609/answer/2398291030
+
 # Flink others
 
 阿里 7 亿元收购 Apache Flink 商业公司 DataArtisans https://mp.weixin.qq.com/s/MTEhwnfMAN9hCE749G_6uA

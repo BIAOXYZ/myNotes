@@ -31,11 +31,26 @@ Data lake https://en.wikipedia.org/wiki/Data_lake
 
 数据湖Delta Lake 进入 Linux 基金会 https://www.ithome.com/0/451/179.htm
 
-# 其他
+# 流处理 v.s. 批处理
+
+流处理和批处理讲解、主流框架对比、流批一体架构 http://www.lzhpo.com/article/1649890657303629826
+- > **什么是流批一体架构？**
+  * > 以前很多系统的架构都是采用的`Lambda架构`，它将所有的数据分成了三个层次：批处理层、服务层和速率层，每个层次都有自己的功能和目的。
+  * > 这种架构，需要一套流处理平台和一套批处理平台，这就可能导致了一些问题：
+    + > 资源浪费：一般来说，白天是流计算的高峰期，此时需要更多的计算资源，相对来说，批计算就没有严格的限制，可以选择凌晨或者白天任意时刻，***但是，流计算和批计算的资源无法进行混合调度，无法对资源进行错峰使用，这就会导致资源的浪费***。
+    + > 成本高：流计算和批计算使用的是不同的技术，意味着需要维护两套代码，不论是学习成本还是维护成本都会更高。
+    + > 数据一致性：两套平台都是不一样的，可能会导致数据不一致的问题。
+- > **有哪些流处理的框架？**
+
+批处理计算与流处理计算的区别是什么？ - 知乎 https://www.zhihu.com/question/313869609
+- 批处理计算与流处理计算的区别是什么？ - DataPipeline数见科技的回答 - 知乎 https://www.zhihu.com/question/313869609/answer/829714737
+- 批处理计算与流处理计算的区别是什么？ - 大数据羊说的回答 - 知乎 https://www.zhihu.com/question/313869609/answer/2398291030
 
 批处理和流处理 https://www.jianshu.com/p/5cc07eae1a0c
 
 Big Data Battle : Batch Processing vs Stream Processing https://medium.com/@gowthamy/big-data-battle-batch-processing-vs-stream-processing-5d94600d8103
+
+# 其他
 
 数据埋点是什么？设置埋点的意义是什么？ - Yuki的回答 - 知乎 https://www.zhihu.com/question/36411025/answer/147581103
 - > 所谓`埋点`就是**在应用中特定的流程收集一些信息，用来跟踪应用使用的状况，后续用来进一步优化产品或是提供运营的数据支撑**，包括访问数（Visits），访客数（Visitor），停留时长（Time On Site），页面浏览数（Page Views）和跳出率（Bounce Rate）。这样的信息收集可以大致分为两种：页面统计（track this virtual page view），统计操作行为（track this button by an event）。 
