@@ -1,4 +1,23 @@
 
+[困惑] 写好的 Python 应用如何分发？ https://www.v2ex.com/t/1005684
+- > pyinstaller+1, 环境什么的都集成进去了, 方便快捷
+- > pyinstaller 分别打 win 平台和 linux 平台的包
+- > 可以使用 Cython 将 Python 源文件 编译成 动态链接库(`.pyd`|`.so`)，再使用一个入口文件（不需要编译）去调用你的 app 的启动方法。
+  * > main.py
+    ```python
+    import sys
+    import my_app
+
+    sys.exit(my_app.run())
+    ```
+  * > main.py 可以使用 Pyinstaller 单独打包成可执行文件，然后把使用 Cython 编译好的 动态链接库 放到可执行文件的同级目录下，就可以运行了。
+- > 程序整体用 pyinstaller 的打包的分发的话会有被反编译的风险（很容易被反编译） <br> 结合楼上说的用 Cython 将 py 编译成动态链接库(`.pyd`/`.so`)外，楼主如果想进一步保护 py 分发程序，还可以考虑针对 Python 解释器单独进行加密混淆。
+- > cython 可以编译成.so ，但是就是没法跨平台，你得分开编译。
+- > Nuitka 吧，简单高效全平台
+  >> 之前用过这个，打包没有 pyinstaller 方便，不知道现在怎么样了
+- > pywebio 做成网页
+- > pyarmor 加密后,打包个镜像
+
 PHP 跑 Python 比 Python 更快！ https://www.v2ex.com/t/998654
 ```console
 原文 https://github.com/swoole/phpy/blob/main/docs/benchmark.md

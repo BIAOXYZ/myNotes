@@ -42,9 +42,20 @@ cryptoTools https://github.com/ladnir/cryptoTools   -->  //注意：别和这个
 
 The Apache Milagro Cryptographic Library (AMCL) https://github.com/miracl/amcl || https://milagro.apache.org/docs/amcl-overview.html
 
+## libsodium
+
 libsodium -- A modern, portable, easy to use crypto library. https://github.com/jedisct1/libsodium || https://doc.libsodium.org/
 - > Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing, and more.
 - > It is a portable, cross-compilable, installable, and packageable fork of [NaCl](http://nacl.cr.yp.to/), with a compatible but extended API to improve usability even further.
+
+pysodium 0.7.17 https://pypi.org/project/pysodium/
+
+## ipp-crypto
+
+ipp-crypto https://github.com/intel/ipp-crypto/tree/develop
+- > Intel® Integrated Performance Primitives Cryptography
+
+ipp-crypto 2021.9.0 https://pypi.org/project/ipp-crypto/
 
 # 国密/商密相关
 
