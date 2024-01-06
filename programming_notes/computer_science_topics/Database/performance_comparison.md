@@ -99,10 +99,10 @@ have a specific task in which I need to measure the performance of each query an
 ## TPCH
 
 TPC-H Vesion 2 and Version 3 https://www.tpc.org/tpch/
-- > Over the past few years the industry has seen increases in performance and decreases in costs of computer and database systems.
-The TPC is introducing V3.0 of the TPC-H Benchmark to accommodate these trends and maintain the relevance of the Price/Performance metric.
-The primary change in this major revision is to adjust the Price/Performance metric by a multiplier of 1,000.
+- > Over the past few years the industry has seen increases in performance and decreases in costs of computer and database systems. <br> The TPC is introducing V3.0 of the TPC-H Benchmark to accommodate these trends and maintain the relevance of the Price/Performance metric. <br> The primary change in this major revision is to adjust the Price/Performance metric by a multiplier of 1,000.
 - > The results shown for TPC-H V3 contain results that were converted from TPC-H V2 to the new specification.
+
+TPC-H表结构与22条查询SQL语句介绍 - 大数据研学社的文章 - 知乎 https://zhuanlan.zhihu.com/p/458228811
 
 ## TPC-DS
 

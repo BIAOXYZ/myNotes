@@ -510,6 +510,8 @@ http://hao.jobbole.com/gitjk/
 ### git flow
 http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
 
+Gitflow workflow https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
 ### gitk
 
 ### git hooks
