@@ -7,6 +7,8 @@ Python3 如何调用 C 语言代码 https://blog.csdn.net/yilovexing/article/det
 
 构建 Python C 扩展模块 - 爬虫工程师陈祥安的文章 - 知乎 https://zhuanlan.zhihu.com/p/164598060
 
+ctypes --- Python 的外部函数库 https://docs.python.org/zh-cn/3/library/ctypes.html
+
 # C & Rust
 
 从 Rust 调用 C 库函数 | Linux 中国 https://mp.weixin.qq.com/s/nQ4daibiQZ_k9G6QGyNJ7g
@@ -15,6 +17,10 @@ Python3 如何调用 C 语言代码 https://blog.csdn.net/yilovexing/article/det
 
 JNI/NDK 开发指南 https://doc.yonyoucloud.com/doc/wiki/project/jni-ndk-developer-guide/index.html
 - > 出处地址: JNI/NDK开发指南（开山篇） https://blog.csdn.net/xyang81/article/details/41759643
+
+JNI本身会降低效率吗？ - 知乎 https://www.zhihu.com/question/38509124
+
+NDK(20)JNI的5大性能缺陷及优化技巧 https://www.cnblogs.com/sjjg/p/4750955.html
 
 # C++ & Python
 

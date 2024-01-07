@@ -170,6 +170,18 @@ print(lis, ordered, res)
   ③睡眠时间不能为负数，如果排序数据中存在负数，需要按照一定的规律把对应的睡眠时间转换成正数，比如说在设置睡眠时间时，把每一项都加上一个正数（该正数的绝对值要比最小负数的绝对值要打）。
   ```
 
+## 双调排序(Bitonic sort)
+
+Batcher归并网络 https://zh.wikipedia.org/zh-cn/Batcher%E5%BD%92%E5%B9%B6%E7%BD%91%E7%BB%9C
+
+双调排序 https://www.yiibai.com/data_structure/bitonic-sort.html
+
+排序算法（五）-双调排序 https://www.sakuratears.top/blog/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%94%EF%BC%89-%E5%8F%8C%E8%B0%83%E6%8E%92%E5%BA%8F.html
+
+双调排序的并行实现 https://hellolzc.github.io/2018/04/bitonic-sort-without-padding/
+
+segmentedBitonicSort https://github.com/imtypist/segmentedBitonicSort
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 多维数组排序
