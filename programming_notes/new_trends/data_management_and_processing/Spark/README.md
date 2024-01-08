@@ -26,9 +26,6 @@ spark https://blog.csdn.net/lisenyeahyeah/category_8281549.html
 
 万字长文，带你轻松学习 Spark https://www.cnblogs.com/datadance/p/16294406.html
 
-Spark By Examples | Learn Spark Tutorial with Examples https://sparkbyexamples.com/
-- SparkSession vs SparkContext https://sparkbyexamples.com/spark/sparksession-vs-sparkcontext/
-
 # Opaque
 
 Opaque - Secure Apache Spark SQL https://github.com/mc2-project/opaque

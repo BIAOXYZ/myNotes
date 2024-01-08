@@ -410,6 +410,10 @@ SQL优化之火山模型、向量化、编译执行 https://blog.csdn.net/u01143
 
 列存（Column-Oriented）数据库学习笔记：内存数据压缩 https://www.jianshu.com/p/2e169006798f
 
+## PAX
+
+PAX：一个 Cache 友好高效的行列混存方案 https://cn.pingcap.com/blog/pax/
+
 # 其他
 
 ## 数据库面试

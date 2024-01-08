@@ -34,6 +34,10 @@
 
 8旬老妪等人去山外捎馒头，捎不到就饿着 https://www.acfun.cn/a/ac11386231 || https://kuaibao.qq.com/s/20191009A0HHYB00
 
+# From Bilibili
+
+合肥农民工生存实录：凌晨4点开始等活，有人380元医保没钱交 https://www.bilibili.com/video/BV1T64y1J7QV
+
 # From Zhihu
 
 中国真的有很多穷人吗？ - 知乎 https://www.zhihu.com/question/30277318
