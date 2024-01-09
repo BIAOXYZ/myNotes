@@ -92,3 +92,20 @@ docker-compose up -d
 ```
 
 Bitnami Docker Image for Apache Spark https://github.com/bitnami/bitnami-docker-spark
+
+# 2
+>> //notes：这个很容易部署起来，美中不足的是没有对外（除了localhost外）暴露端口。
+
+spark-hadoop-docker https://github.com/s1mplecc/spark-hadoop-docker
+
+# 3
+>> //notes：这个部署更容易，且向外暴漏了端口
+
+https://github.com/zq2599/blog_demos/blob/e0212b2be61832de0f97d2c9984db44228b29aa3/sparkdockercomposefiles/docker-compose.yml
+
+docker下，极速搭建spark集群(含hdfs集群) https://juejin.cn/post/6844903879004389384
+```sh
+wget https://raw.githubusercontent.com/zq2599/blog_demos/master/sparkdockercomposefiles/docker-compose.yml \
+&& wget https://raw.githubusercontent.com/zq2599/blog_demos/master/sparkdockercomposefiles/hadoop.env \
+&& docker-compose up -d
+```
