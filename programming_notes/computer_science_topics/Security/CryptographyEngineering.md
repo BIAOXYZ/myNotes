@@ -42,6 +42,12 @@ cryptoTools https://github.com/ladnir/cryptoTools   -->  //注意：别和这个
 
 The Apache Milagro Cryptographic Library (AMCL) https://github.com/miracl/amcl || https://milagro.apache.org/docs/amcl-overview.html
 
+## NTL
+
+NTL: A Library for doing Number Theory https://libntl.org/index.html
+- > I've finally created a GitHub page for NTL! This will hopefully make it easier for others to contribute. I'm not an expert Git user, but if you have simple, small pull requests that do not require too much reviewing, I should be able to process them. If you want to make a more extensive pull request for some feature or behavior, we should discuss this is advance. https://github.com/libntl/ntl
+  >> //notes：后面 Victor Shoup 如果不维护了，这库是不是基本就结束生命周期了。很多软件都会有这种问题啊。。。
+
 ## libsodium
 
 libsodium -- A modern, portable, easy to use crypto library. https://github.com/jedisct1/libsodium || https://doc.libsodium.org/
