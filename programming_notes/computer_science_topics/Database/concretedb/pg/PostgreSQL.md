@@ -227,13 +227,6 @@ Patroni: A Template for PostgreSQL HA with ZooKeeper, etcd or Consul https://git
 
 ### PG扩展
 
-#### Citus
-
-微软收购Citus Data | 再次肯定对开源的承诺，并加速了Azure PostgreSQL的性能和扩展 https://mp.weixin.qq.com/s/gu4H2JNV4SIbTOGv3kDPPg
-
-v11.0 (Jun 2022) https://www.citusdata.com/updates/v11-0/
-- > Citus is now fully open source!
-
 #### PG自定义函数
 ```
 <<使用C语言写PostgreSQL函数>>
