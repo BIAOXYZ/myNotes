@@ -184,7 +184,12 @@ surjection = surjective function = onto mapping ; injection = injective function
 
 ***参考链接：***
 
-- https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection
+单射、满射与双射 https://zh.wikipedia.org/zh-hans/%E5%8D%95%E5%B0%84%E3%80%81%E6%BB%A1%E5%B0%84%E4%B8%8E%E5%8F%8C%E5%B0%84
+- > 单射（one to one 或 injection）
+- > 满射（onto 或 surjection）
+- > 双射（bijection）
+
+- Bijection, injection and surjection https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection
 ```
 维基百科里的这个提供了最标准的用法：
 injective (one-to-one)

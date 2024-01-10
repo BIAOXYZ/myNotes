@@ -160,4 +160,8 @@ https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-co
 
 账本数据库机制 https://www.bookstack.cn/read/openGauss-2.1-zh/CharacteristicDescription-%E8%B4%A6%E6%9C%AC%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%BA%E5%88%B6.md
 
+### 全密态数据库
+
+全密态数据库 https://docs-opengauss.osinfra.cn/zh/docs/3.1.0/docs/BriefTutorial/%E5%85%A8%E5%AF%86%E6%80%81%E6%95%B0%E6%8D%AE%E5%BA%93.html
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
