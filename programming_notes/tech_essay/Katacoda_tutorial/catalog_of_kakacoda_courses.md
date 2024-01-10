@@ -1,8 +1,12 @@
 
+# Katacoda Alternatives
+
 再见 KataCoda——O'Reilly 宣布其将在六月份关闭 https://mp.weixin.qq.com/s/oT9qch7OUjH6oYjLsxxcIQ  【[:star:][`*`]】【`2022.05.16`号官方就[通知](https://www.oreilly.com/online-learning/leveraging-katacoda-technology.html)了其实。唉，没办法，太良心了导致亏损严重吧。】
 - > KataCoda 关闭之后怎么办？KataCoda 上的很多免费课程其实都有在 GitHub 上开源，只有有另一个平台来托管，这些课程就可以继续使用。KataCoda 关闭后，还有众多交互式课程平台可以选择，比如下面这两个：
   * > Killercoda: https://killercoda.com/
   * > CloudYuga: https://cloudyuga.guru/
+
+SadServers: Troubleshoot and make a sad server happy! "Like LeetCode for Linux" https://sadservers.com/  【感觉这个挺有趣的～】
 
 # 各种playground
 
