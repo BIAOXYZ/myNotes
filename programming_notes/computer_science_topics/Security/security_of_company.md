@@ -296,7 +296,14 @@ Jeddak亮相2022世界人工智能大会|隐私计算的实践与探索 https://
 
 ## TikTok
 
-DPCA-PSI Protocol for Privacy-Preserving Set Intersection and Compute https://github.com/tiktok-privacy-innnovation/DPCA-PSI
+~~DPCA-PSI Protocol for Privacy-Preserving Set Intersection and Compute https://github.com/tiktok-privacy-innnovation/DPCA-PSI~~  -->  PrivacyGo https://github.com/tiktok-privacy-innovation/PrivacyGo
+
+PETAce https://github.com/tiktok-privacy-innovation/PETAce
+- https://github.com/tiktok-privacy-innovation/PETAce-Solo
+- https://github.com/tiktok-privacy-innovation/PETAce-Verse
+- https://github.com/tiktok-privacy-innovation/PETAce-Duet
+- https://github.com/tiktok-privacy-innovation/PETAce-SetOps
+- https://github.com/tiktok-privacy-innovation/PETAce-Network
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
