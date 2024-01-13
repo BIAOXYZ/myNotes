@@ -25,11 +25,3 @@ spark https://blog.csdn.net/lisenyeahyeah/category_8281549.html
 第 1 章 Spark 概述 https://zhenchao125.github.io/bigdata_spark-project_atguigu/
 
 万字长文，带你轻松学习 Spark https://www.cnblogs.com/datadance/p/16294406.html
-
-# Opaque
-
-Opaque - Secure Apache Spark SQL https://github.com/mc2-project/opaque
-
-(NSDI 2017) Opaque: An Oblivious and Encrypted Distributed Analytics Platform https://people.eecs.berkeley.edu/~wzheng/opaque.pdf || https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/zheng
-
-Opaque: A Data Analytics Platform with Strong Security https://databricks.com/session/opaque-a-data-analytics-platform-with-strong-security

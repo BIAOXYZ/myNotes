@@ -142,12 +142,24 @@ How to create an empty file in Hadoop https://www.edureka.co/community/88364/how
 如果文件存在，命令返回0；如果文件不存在，命令返回1。根据需要，你还可以使用其他选项来检查文件的类型、大小和其他属性。
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 已验证技巧
+
 ## 按时间顺序显示 ls 的文件
 
 How can we list files in HDFS directory as per timestamp https://www.edureka.co/community/3134/how-can-we-list-files-in-hdfs-directory-as-per-timestamp
 ```sh
 hdfs dfs -ls /tmp | sort -k6,7
 ```
+
+## 查看某个目录里所有文件大小的总和
+
+hdfs查看目录文件的大小 https://blog.csdn.net/Aying_seeyou/article/details/109988019
+- > 3.第三种方式：查看指定目录的总大小
+  ```sh
+  hdfs dfs -du -s -h /目录
+  ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
