@@ -3,6 +3,8 @@
 
 Apache Calcite https://github.com/apache/calcite
 
+Apache Calcite https://en.wikipedia.org/wiki/Apache_Calcite
+
 # Apache Calcite 其他
 
 Apache Calcite 为什么能这么流行 - 秦夏的文章 - 知乎 https://zhuanlan.zhihu.com/p/67560995
