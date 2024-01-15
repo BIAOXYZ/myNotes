@@ -334,3 +334,14 @@ ubuntu $ diff LabeledExprBaseVisitor.java ~/test/forked--db-practice/src/main/ca
 ```
 
 ```
+
+# 2
+
+语法解析器ANTLR4从入门到实践 https://juejin.cn/post/7018521754125467661
+- > **简介**
+  * > 所有编程语言的语法，都可以用ANTLR来定义。ANTLR提供了大量的[官方 grammar 示例](https://github.com/antlr/grammars-v4/)，包含了各种常见语言，比如Java、SQL、Javascript、PHP等等。
+- > **其他的语法解析器**
+  * > **YACC**
+    + > `YACC`(`Yet Another Compiler-Compiler`): 1975 年由贝尔实验室 Mike Lesk & Eric Schmidt 开发，UNIX 标准实用工具 (utility)。
+- > **定义语法和词法**
+  * > 需要创建一个`.g4`文件，用于定义词法分析器（lexer）和语法解析器(Parser)。具体语法参见[官方文档](https://github.com/antlr/antlr4/blob/master/doc/grammars.md)。下面是一个简单的例子：`Hello.g4`。
