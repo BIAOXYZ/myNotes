@@ -13,6 +13,9 @@ Spark RDD vs DataFrame vs Dataset https://sparkbyexamples.com/spark/spark-rdd-vs
   |Performance | Low-level API with more control over the data, but lower-level optimizations compared to DataFrames and Datasets. | Optimized for performance, with high-level API, Catalyst optimizer, and code generation. | Datasets are faster than DataFrames because they use JVM bytecode generation to perform operations on data. This means that Datasets can take advantage of the JVM’s optimization capabilities, such as just-in-time (JIT) compilation, to speed up processing.|
   | Programming Language Support | RDD APIs are available in Java, Scala, Python, and R languages. Hence, this feature provides flexibility to the developers. | Available In 4 languages like Java, Python, Scala, and R. | Only available in Scala and Java. |
 
+Difference Between Spark Worker vs Executor https://sparkbyexamples.com/spark/difference-between-spark-worker-vs-executor/
+- > In Spark, executors can be dynamically adjusted based on the workload of the application. For example, if the application is running low on resources, Spark can dynamically add more executors to the cluster to help distribute the workload. Conversely, if the application is running with too many resources, Spark can remove some of the executors to free up resources.
+
 # 数据结构/数据类型
 
 ## RDD
