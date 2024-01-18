@@ -26,7 +26,7 @@ SQL:2023 is finished: Here is what's new http://peter.eisentraut.org/blog/2023/0
 
 SQL:2023标准正式发布！ https://mp.weixin.qq.com/s/UU60aygMQAsMNirlisSqqA
 
-世界知名专家 Andy Pavlo 教授带你回顾数据库的 2023 年 https://mp.weixin.qq.com/s/0JlQ8ZE0NbxYpVwyPZPVxA
+世界知名专家 Andy Pavlo 教授带你回顾数据库的 2023 年 https://mp.weixin.qq.com/s/0JlQ8ZE0NbxYpVwyPZPVxA || [翻译][数据库年报] Database in 2023: A Year in Review - 八哥福瑞的文章 - 知乎 https://zhuanlan.zhihu.com/p/676514002
 - > 01
   * > 有趣的是，与 DBMS 支持 JSON 的速度相比，向量搜索的支持要快上许多。原生存储 JSON 的 NoSQL 系统在 2000 年代末开始流行（例如 MongoDB 和 CouchDB），但过了好几年之后，关系型 DBMS 才添加对 JSON 的支持（例如 PostgreSQL、Oracle 和 MySQL 的支持时间分别是在 2012 年、2014 年和 2015 年）。***SQL 标准在 `SQL:2016` 中引入了对 JSON 数据进行操作的函数，但直到 `SQL:2023` 才正式将 JSON 数据类型添加进来***。鉴于许多关系 DBMS 早已支持概念上类似的 XML 数据类型，这样的滞后的确令人感到意外。
 - > 02

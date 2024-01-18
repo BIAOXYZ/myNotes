@@ -15,6 +15,8 @@ CTF Wiki https://github.com/ctf-wiki/ctf-wiki/ || https://ctf-wiki.github.io/ctf
 
 Block cipher mode of operation https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # PKCS
 
 PKCS https://en.wikipedia.org/wiki/PKCS || 公钥密码学标准 https://zh.wikipedia.org/wiki/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A0%87%E5%87%86
@@ -29,6 +31,19 @@ PBKDF2 https://cryptobook.nakov.com/mac-and-key-derivation/pbkdf2
   key = pbkdf2(password, salt, iterations-count, hash-function, derived-key-len)
   ```
   >> 【[:star:][`*`]】 //notes：其实 PBKDF 的核心就是把 password 和一个 salt 放到哈希函数里，迭代制定的轮数，然后从最后结果截取一定位数作为输出的密钥。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# White box cryptography
+
+White box https://en.wikipedia.org/wiki/White_box
+- White box cryptography https://en.wikipedia.org/wiki/Obfuscation#White_box_cryptography
+
+WBC: protecting cryptographic keys in software applications https://www.whiteboxcrypto.com/
+- > WBC could be seen as a special purpose code generator that turns a given cipher into a robust representation. A representation where the operations on the secret key are combined with random data and code, in such a way that the random data cannot be distinguished from key information.
+- > The figure below depicts a conceptual high-level overview of WBC, for the case of a fixed key implementation. ***In such an implementation, the key will be hard-coded into the code***. On the left hand side is the description of a cryptographic cipher and the key. White-box transformations will then generate the code for an application that is semantically the same, but for which it is hard to extract the key that is embedded into the code.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Library
 
@@ -63,6 +78,8 @@ ipp-crypto https://github.com/intel/ipp-crypto/tree/develop
 
 ipp-crypto 2021.9.0 https://pypi.org/project/ipp-crypto/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 国密/商密相关
 
 Linux 6.2 fscrypt 文件系统加密框架新增支持我国的 SM4 分组密码标准 https://www.ithome.com/0/660/730.htm
@@ -90,6 +107,8 @@ SM3 https://zh.wikipedia.org/zh-hans/SM3
 
 SM4 国密算法入门介绍 https://houbb.github.io/2020/06/17/althgorim-cryptograph-04-sm4
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # SSL or TLS attack
 
 TLS 1.2协议现漏洞 近3000网站或受影响 - 安全 - cnBeta.COM https://www.cnbeta.com/articles/tech/817339.htm
@@ -97,6 +116,8 @@ TLS 1.2协议现漏洞 近3000网站或受影响 - 安全 - cnBeta.COM https://w
 Lessons Learned From Previous SSL/TLS Attacks: A Brief Chronology Of Attacks And Weaknesses https://eprint.iacr.org/2013/049.pdf
 
 Summarizing Known Attacks on Transport Layer Security (TLS) and Datagram TLS (DTLS) https://tools.ietf.org/html/rfc7457
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ECC
 
@@ -143,6 +164,8 @@ Why Ristretto? https://ristretto.group/why_ristretto.html
 安全多方计算（MPC）从入门到精通 https://blog.csdn.net/juzhenyuan/article/category/7777533
 - 安全多方计算（MPC）从入门到精通：经典案例 https://blog.csdn.net/juzhenyuan/article/details/80929900
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # ZKP
 
 zkpblog -- 零知识证明相关的一些总结 https://github.com/huyuguang/zkpblog
@@ -151,10 +174,14 @@ PrivateBin is a minimalist, open source online pastebin where the server has zer
 - > This is a fork of ZeroBin, originally developed by Sébastien Sauvage. ZeroBin was refactored to allow easier and cleaner extensions. PrivateBin has many more features than the original ZeroBin. It is, however, still fully compatible to the original ZeroBin 0.19 data storage scheme. Therefore, such installations can be upgraded to PrivateBin without losing any data.
   >> ZeroBin https://github.com/sebsauvage/ZeroBin
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Hash
 
 Sha256 Algorithm Explained https://github.com/dmarman/sha256algorithm
 - > Sha256 algorithm explained online step by step visually https://sha256algorithm.com/ This website will help you understand how a sha256 hash is calculated from start to finish.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Quantum Cryptography
 
@@ -194,6 +221,8 @@ awesome-cryptography -- A curated list of cryptography resources and links. http
 Crypto 101, the introductory book on cryptography. https://github.com/crypto101/book
 > CRYPTO101 https://www.crypto101.io/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # performance related
 
 Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flags https://panthema.net/2008/0714-cryptography-speedtest-comparison/
@@ -205,6 +234,8 @@ AES256 CBC vs AES256 GCM performance? https://stackoverflow.com/questions/730672
 Non-cryptography hashing methods https://asecuritysite.com/hash/non_crypto
 
 Comparison of hash functions and performance benchmarks https://greenrobot.org/essentials/features/performant-hash-functions-for-java/comparison-of-hash-functions/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # attack
 

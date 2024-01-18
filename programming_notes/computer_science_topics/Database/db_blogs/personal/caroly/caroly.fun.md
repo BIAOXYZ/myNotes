@@ -45,6 +45,9 @@
 
 分布式数据库（九） https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%9D
 - > **查询执行引擎**
-  * > 
+  * > 查询执行引擎是否高效与其采用的模型有直接关系，模型主要有三种：`火山模型`、`向量化模型`和`代码生成`。
+  * > **`火山模型`**
+  * > **`向量化：TiDB&CockroachDB`**
+  * > **`代码生成：OceanBase`**
 - > **RUM 猜想**
   * > RUM 猜想来自论文 "[Designing Access Methods: The RUM Conjecture](https://stratos.seas.harvard.edu/files/stratos/files/rum.pdf)"（Manos Athanassoulis et al.(2016)），***同时被 SIGMOD 和 EDBT 收录***。它说的是，***对任何数据结构来说，在 Read Overhead（读）、Update Overhead（写） 和 Memory or Storage Overhead（存储）中，同时优化两项时，需要以另一项劣化作为代价***。论文用一幅图展示了常见数据结构在这三个优化方向中的位置。
