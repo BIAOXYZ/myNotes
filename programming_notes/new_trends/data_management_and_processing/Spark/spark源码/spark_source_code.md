@@ -31,6 +31,8 @@ Spark源码系列（十）spark源码解析大全 https://www.cnblogs.com/huangh
 
 # 3
 
+源码解析Spark中的Parquet向量化读取，性能提速9倍！ https://mp.weixin.qq.com/s/KjkCZ8LpgwJ-xdB7DHLuEw
+
 Spark SQL 查询计划是如何执行的，深入探究Spark QueryExecution执行过程 https://mp.weixin.qq.com/s/-kNDup4prWl02N27_SYBTw
 
 爆赞！2023往期文章汇总 https://mp.weixin.qq.com/s/KyhEjmnr8R-751IgV1KxMg
