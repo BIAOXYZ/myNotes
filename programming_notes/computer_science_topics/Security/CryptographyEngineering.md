@@ -57,6 +57,8 @@ cryptoTools https://github.com/ladnir/cryptoTools   -->  //注意：别和这个
 
 The Apache Milagro Cryptographic Library (AMCL) https://github.com/miracl/amcl || https://milagro.apache.org/docs/amcl-overview.html
 
+List of Pairing Libraries https://gist.github.com/artjomb/f2d720010506569d3a39 || 【这个是自己把原始 gist 自己 clone 了一下】 https://gist.github.com/BIAOXYZ/4ef6eb9e4a238dfc0dee3d5914995cc6
+
 ## NTL
 
 NTL: A Library for doing Number Theory https://libntl.org/index.html
