@@ -69,6 +69,12 @@ MySQL & PostgreSQL 终极大比拼 https://www.bilibili.com/video/BV1qG411m7Tg
 - MySQL Might Be Right for Uber, but Not for You https://dzone.com/articles/on-ubers-choice-of-databases
 - A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
 
+## 非性能对比
+
+Postgres 在中国还能起来么？ https://www.v2ex.com/t/1010986
+- > 这是 aws 里面对比 pg 和 mysql 的文章。 https://aws.amazon.com/cn/compare/the-difference-between-mysql-vs-postgresql/ <br> 然后对于 pg 和 mysql 来说，我在部分场景下，有发现老版本的 mysql 不严谨的地方，比如说数据类型太多，pg 的数据类型很单一很明确，减少了混淆的可能。例如 pg 的 text 和 mysql 的各种 text 的区别。。 <br> 再就是数据库字符集的问题，pg 默认是 utf8 ，mysql 里面的则需要自己改成 utf8 ，而且 utf8 还分了好几个类别。。。
+  >> `utf8mb4` hahhahahah
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # SQLite v.s. DuckDB
