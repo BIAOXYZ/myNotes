@@ -80,6 +80,12 @@ ipp-crypto https://github.com/intel/ipp-crypto/tree/develop
 
 ipp-crypto 2021.9.0 https://pypi.org/project/ipp-crypto/
 
+## CIRCL
+
+CIRCL: Cloudflare Interoperable Reusable Cryptographic Library https://github.com/cloudflare/circl
+
+Introducing CIRCL: An Advanced Cryptographic Library https://blog.cloudflare.com/introducing-circl
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 国密/商密相关
