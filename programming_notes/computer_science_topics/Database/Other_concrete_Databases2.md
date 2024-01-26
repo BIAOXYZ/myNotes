@@ -140,6 +140,8 @@ GeaBase，中国首个金融级分布式图数据库诞生记 https://www.infoq.
 
 华为发布了 GaussDB， V 站的朋友们怎么看 https://www.v2ex.com/t/564464
 
+~~简单介绍一下GaussDB家族 https://mp.weixin.qq.com/s/M8jkoctFJTvqHiDPtbg5rA~~  【//已转移】
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## openGauss
