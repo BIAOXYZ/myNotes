@@ -11,3 +11,7 @@
 泰兰德·语风 https://warcraft.huijiwiki.com/wiki/%E6%B3%B0%E5%85%B0%E5%BE%B7%C2%B7%E8%AF%AD%E9%A3%8E
 
 阿克蒙德 https://warcraft.huijiwiki.com/wiki/%E9%98%BF%E5%85%8B%E8%92%99%E5%BE%B7
+
+# 魔兽历史
+
+【魔兽世界编年史】01 艾泽拉斯：起源之泰坦创世神话 https://www.bilibili.com/video/BV1nb411F7ZN
