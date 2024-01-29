@@ -2,6 +2,12 @@
 # 官方
 
 ANTLR https://www.antlr.org/
+- > Quick Start
+  * > To try ANTLR immediately, jump to the new ANTLR Lab! http://lab.antlr.org/
+  * > To install locally, use [`antlr4-tools`](https://github.com/antlr/antlr4-tools), which installs Java and ANTLR if needed and creates `antlr4` and `antlr4-parse` executables:
+    ```sh
+    $ pip install antlr4-tools
+    ```
 
 ANTLR v4 https://github.com/antlr/antlr4
 - Getting Started with ANTLR v4 https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
@@ -22,6 +28,17 @@ ANTLR https://zh.wikipedia.org/wiki/ANTLR
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 安装
+
+## 新方式（快速方便）
+
+antlr4-tools https://github.com/antlr/antlr4-tools
+- > ***Tools to run antlr4 w/o needing to install java or antlr4! The only requirement is Python3***, which is typically installed on all developer machines on all operating systems.
+- > **Install**
+  ```sh
+  $ pip install antlr4-tools
+  ```
+
+## 旧方式（不够快速，但是生产环境应该还是要用这种）
 
 Getting Started with ANTLR v4 https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
 - > **Installation**
@@ -50,6 +67,8 @@ antlr4-python3-runtime https://anaconda.org/conda-forge/antlr4-python3-runtime
 
 ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content/ || ANTLR 4简明教程 https://github.com/dohkoos/antlr4-short-course
 - > 《The Definitive ANTLR 4 Reference》中译版书籍已出（和我无关），所以此项目已被放弃……
+
+《ANTLR 4 权威指南》学习笔记 https://github.com/kun-song/the-definitive-antlr4-reference
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

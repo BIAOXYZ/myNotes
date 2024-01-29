@@ -366,3 +366,7 @@ yum install -y clang clang-devel llvm-devel
 # 然而还是不行，烦死了。猜测是目前 llvm 版本远超写文章时的 2.6 版本造成的。。。看到有人说折腾 llvm 折腾了一天，算了，先不管了，没那么多时间。
 g++ -o parser parser.cpp tokens.cpp main.cpp `llvm-config --libs core jit native --cxxflags --ldflags`
 ```
+
+# 2
+
+TiDB SQL Parser 的实现 https://cn.pingcap.com/blog/tidb-source-code-reading-5/ || https://cloud.tencent.com/developer/article/1070299
