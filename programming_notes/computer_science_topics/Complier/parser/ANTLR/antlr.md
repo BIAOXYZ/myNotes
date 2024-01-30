@@ -70,6 +70,9 @@ ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content
 
 《ANTLR 4 权威指南》学习笔记 https://github.com/kun-song/the-definitive-antlr4-reference
 
+ANTLR-4-Resource-Code https://github.com/GaoGian/ANTLR-4-Resource-Code
+- > ANTLR4 权威指南源代码
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他

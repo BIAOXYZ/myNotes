@@ -8,6 +8,10 @@ git-pull Documentation - Git https://git-scm.com/docs/git-pull
   >> //notes：有个现象是：就算pull的时候明确指定了远端的分支（比如 `git pull origin dev`）但是还是有可能两个本地分支都变了（一个分支，比如 `branch1` 会生成一个merge commit；pull语句参数里被拉的远端分支，这里当然就是`dev`了，会更新到最新——但是这个情况也不是必然发生的），这个还得再看看，貌似不同的git版本表现也不一样。
 - > Default values for `<repository>` and `<branch>` are read from the "remote" and "merge" configuration for the current branch as set by [git-branch[1]]() `--track`.
 
+git-pull https://git-scm.com/docs/git-pull/zh_HANS-CN
+- > 描述
+  * > 更确切地说，`git pull` 运行 `git fetch` 并给出参数，然后根据配置选项或命令行标志，调用 `git rebase` 或 `git merge` 来协调不同的分支。
+
 # 参数解析
 
 ## `--rebase`
