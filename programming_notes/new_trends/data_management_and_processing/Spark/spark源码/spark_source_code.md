@@ -36,3 +36,11 @@ Spark源码系列（十）spark源码解析大全 https://www.cnblogs.com/huangh
 Spark SQL 查询计划是如何执行的，深入探究Spark QueryExecution执行过程 https://mp.weixin.qq.com/s/-kNDup4prWl02N27_SYBTw
 
 爆赞！2023往期文章汇总 https://mp.weixin.qq.com/s/KyhEjmnr8R-751IgV1KxMg
+
+# 4
+
+Spark核心原理 - 消息通信分析 https://blog.csdn.net/OiteBody/article/details/80504260
+- > 参考：
+  * > Spark RPC通信层设计原理分析 http://shiyanjun.cn/archives/1536.html
+
+Spark消息通信原理（三）——Spark运行时消息通信 https://www.cnblogs.com/SysoCjs/p/11345395.html
