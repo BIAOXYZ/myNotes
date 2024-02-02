@@ -7,6 +7,8 @@ ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content
 
 Antlr4系列（一）：语法分析器学习 - 先锋的文章 - 知乎 https://zhuanlan.zhihu.com/p/483679676
 
+Antlr4系列（三）：实现SQL Parser - 先锋的文章 - 知乎 https://zhuanlan.zhihu.com/p/611682602
+
 # 3
 
 100 Languages Speedrun
