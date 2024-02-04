@@ -13,3 +13,5 @@ VS Code Python C++ Debug https://github.com/benibenj/vscode-pythonCpp
 - Python C++ Debugger https://marketplace.visualstudio.com/items?itemName=benjamin-simmonds.pythoncpp-debug
 
 Debugging Mixed Python/C++ code in Visual Studio Code https://gist.github.com/kongdd/f49fabdbf0af20ec7fd6b4f8cd1f450d
+
+Debugging a Mixed Python and C Language Stack https://developer.nvidia.com/blog/debugging-mixed-python-and-c-language-stack/

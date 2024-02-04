@@ -1,7 +1,7 @@
 
 # 1
 
-Write text parsers with yacc and lex https://developer.ibm.com/tutorials/au-lexyacc/
+Write text parsers with yacc and lex https://developer.ibm.com/tutorials/au-lexyacc/ || https://web.archive.org/web/20231122150753/https://developer.ibm.com/tutorials/au-lexyacc/
 
 lex and yacc tutorials? https://www.reddit.com/r/C_Programming/comments/kn71qq/lex_and_yacc_tutorials/
 - > LEX & YACC TUTORIAL by Tom Niemann http://ftp.mozgan.me/Compiler_Manuals/LexAndYaccTutorial.pdf || LEX & YACC by Tom Niemann https://epaperpress.com/lexandyacc/download/LexAndYacc.pdf https://www.epaperpress.com/lexandyacc/index.html
