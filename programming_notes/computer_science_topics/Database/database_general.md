@@ -277,7 +277,7 @@ SQL编程大赛总结 https://blog.csdn.net/yzsind/article/details/6328864
 
 17 Sites for SQL Practice https://www.databasestar.com/sql-practice/
 - SQLZoo
-- HackerRank
+- HackerRank https://www.hackerrank.com/domains/sql
 - Oracle Live SQL
 
 【from datacamp】
