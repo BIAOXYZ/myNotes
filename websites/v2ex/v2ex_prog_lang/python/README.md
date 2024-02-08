@@ -1,4 +1,6 @@
 
+Python 类继承时覆盖类属性的问题 https://www.v2ex.com/t/1014897
+
 [困惑] 写好的 Python 应用如何分发？ https://www.v2ex.com/t/1005684
 - > pyinstaller+1, 环境什么的都集成进去了, 方便快捷
 - > pyinstaller 分别打 win 平台和 linux 平台的包
