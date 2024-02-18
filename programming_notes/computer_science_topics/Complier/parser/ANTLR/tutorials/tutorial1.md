@@ -16,3 +16,9 @@ Antlr4系列（三）：实现SQL Parser - 先锋的文章 - 知乎 https://zhua
 - 100 Languages Speedrun: Episode 74: Python ANTLR 4 https://dev.to/taw/100-languages-speedrun-episode-74-python-antlr-4-234l
 - 100 Languages Speedrun: Episode 75: Abstract Syntax Trees with Python ANTLR 4 https://dev.to/taw/100-languages-speedrun-episode-75-abstract-syntax-trees-with-python-antlr-4-54j4
 - 100 Languages Speedrun: Episode 76: Python SLY https://dev.to/taw/100-languages-speedrun-episode-76-python-sly-5bfb
+
+# 4
+
+Build SQL parser using ANTLR4 -Part1 https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part1-2044916a8406
+
+Build SQL parser using ANTLR4 -Part2 https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part2-1f8cdb011721
