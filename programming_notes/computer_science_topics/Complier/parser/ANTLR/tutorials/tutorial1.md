@@ -22,3 +22,5 @@ Antlr4系列（三）：实现SQL Parser - 先锋的文章 - 知乎 https://zhua
 Build SQL parser using ANTLR4 -Part1 https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part1-2044916a8406
 
 Build SQL parser using ANTLR4 -Part2 https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part2-1f8cdb011721
+- > **Flow**
+  * > We will for now focus on the listener. In the code generated earlier, we can see a listener class generated as ***`pocketsListener`***. Take a look at the class and ***see <ins>all the rules are defined as functions with `enter`/`exit` prefix</ins> which means <ins>every time we walk through the tree and enter/exit a node, we can perform required actions</ins>***.

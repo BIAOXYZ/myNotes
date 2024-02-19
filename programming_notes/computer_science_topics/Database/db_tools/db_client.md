@@ -5,6 +5,11 @@ Navicat vs DataGrip vs TablePlus - Quick Comparison https://tableplus.com/blog/2
 
 Hue -- Hue is a mature open source SQL Assistant for querying any Databases & Data Warehouses and collaborating: https://github.com/cloudera/hue || https://gethue.com/
 
+PostgreSQL 有类似 phpmyadmin 类的远端 WEB 管理工具吗？ https://www.v2ex.com/t/1016129
+- > 可以试试 `SQL Studio` ，我跑在 docker 里，主要为了 WEB 端连接 MSSQL 。
+- > 就给你推荐两个, 一个是最强的: `dbeaver` 非常强,支持非常广泛, 参数非常全!! 一个是最方便的: `adminer` , 只有单 PHP 文件,简洁好用. 两个都是 支持多种 DB 的管理工具.
+- > 试一下 [ServBay.dev](http://servbay.dev/) ，自带了 pgsql 的环境和工具
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # DBeaver

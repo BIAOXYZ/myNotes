@@ -16,3 +16,13 @@ PyParsing https://pyparsing-docs.readthedocs.io/en/latest/HowToUsePyparsing.html
 # 其他
 
 PLY (Python Lex-Yacc) http://www.dabeaz.com/ply/
+
+# Algorithms
+
+## LL
+
+LL parser https://en.wikipedia.org/wiki/LL_parser
+
+`LL(*)`的概念与实现 https://pfmiles.github.io/blog/concept-and-implementation-of-ll-star/
+
+How do `LL(*)` parsers work? https://stackoverflow.com/questions/2943885/how-do-ll-parsers-work
