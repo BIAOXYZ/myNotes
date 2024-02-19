@@ -27,43 +27,7 @@ ANTLR https://zh.wikipedia.org/wiki/ANTLR
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# 安装
-
-## 新方式（快速方便）
-
-antlr4-tools https://github.com/antlr/antlr4-tools
-- > ***Tools to run antlr4 w/o needing to install java or antlr4! The only requirement is Python3***, which is typically installed on all developer machines on all operating systems.
-- > **Install**
-  ```sh
-  $ pip install antlr4-tools
-  ```
-
-## 旧方式（不够快速，但是生产环境应该还是要用这种）
-
-Getting Started with ANTLR v4 https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
-- > **Installation**
-  * > **UNIX**
-    ```sh
-    # 0.Install Java (version 1.7 or higher)
-    cd /usr/local/lib
-    curl -O https://www.antlr.org/download/antlr-4.9-complete.jar
-    export CLASSPATH=".:/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
-    alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
-    alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
-    ```
-
-## 纯Python使用的话可以 anaconda 下直接用命令装
-
-antlr4-python3-runtime https://anaconda.org/conda-forge/antlr4-python3-runtime
-- > To install this package with conda run one of the following:
-  ```sh
-  conda install -c conda-forge antlr4-python3-runtime
-  conda install -c conda-forge/label/broken antlr4-python3-runtime
-  ```
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
-# books
+# antlr books
 
 ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content/ || ANTLR 4简明教程 https://github.com/dohkoos/antlr4-short-course
 - > 《The Definitive ANTLR 4 Reference》中译版书籍已出（和我无关），所以此项目已被放弃……
@@ -72,6 +36,29 @@ ANTLR 4简明教程 https://wizardforcel.gitbooks.io/antlr4-short-course/content
 
 ANTLR-4-Resource-Code https://github.com/GaoGian/ANTLR-4-Resource-Code
 - > ANTLR4 权威指南源代码
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# antlr tools
+
+vscode-antlr4 https://github.com/mike-lischke/vscode-antlr4/tree/master || ANTLR4 grammar syntax support https://marketplace.visualstudio.com/items?itemName=mike-lischke.vscode-antlr4
+- Graphical Visualizations https://github.com/mike-lischke/vscode-antlr4/blob/master/doc/graphical-visualizations.md
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# antlr 相关概念
+
+## ATN
+
+ANTLR4 what does ATN stand for? https://stackoverflow.com/questions/41306505/antlr4-what-does-atn-stand-for
+- https://stackoverflow.com/questions/41306505/antlr4-what-does-atn-stand-for/41306655#41306655
+  * > Augmented Transition Networks, the description in the context of ANTLR could be found e.g. here http://www.antlr.org/papers/LL-star-PLDI11.pdf
+
+How to understand ATN graph generated for ANTLR grammar? https://stackoverflow.com/questions/45473333/how-to-understand-atn-graph-generated-for-antlr-grammar
+
+## 其他概念
+
+What's the difference between ExitRule and EnterRule in Antlr4? https://stackoverflow.com/questions/68316550/whats-the-difference-between-exitrule-and-enterrule-in-antlr4
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
