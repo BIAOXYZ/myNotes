@@ -56,6 +56,13 @@ ANTLR4 what does ATN stand for? https://stackoverflow.com/questions/41306505/ant
 
 How to understand ATN graph generated for ANTLR grammar? https://stackoverflow.com/questions/45473333/how-to-understand-atn-graph-generated-for-antlr-grammar
 
+## invokingState
+
+What is invokingState in RuleContext class implementations? https://stackoverflow.com/questions/50680438/what-is-invokingstate-in-rulecontext-class-implementations
+- https://stackoverflow.com/questions/50680438/what-is-invokingstate-in-rulecontext-class-implementations/50693658#50693658
+
+What is the meaning of different values of invokingState? #1455 https://github.com/antlr/antlr4/issues/1455
+
 ## 其他概念
 
 What's the difference between ExitRule and EnterRule in Antlr4? https://stackoverflow.com/questions/68316550/whats-the-difference-between-exitrule-and-enterrule-in-antlr4
