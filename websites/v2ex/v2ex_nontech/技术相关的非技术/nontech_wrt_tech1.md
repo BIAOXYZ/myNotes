@@ -32,3 +32,11 @@
 - > 就是 postgres ，但是他用的 postgres 的版本太老了，很多特性不支持，比如 on duplicate 就不支持，很难用。
   >> on duplicate 不是 mysql 方言么，pg 最新版本支持了？...你是否想说 ON CONFLICT
   >>> 对 ON CONFLICT 。。
+
+# 其他
+
+写一句你所知的计算机界名言名句。 https://www.v2ex.com/t/1017108
+- > Software is like sex, it's better when it's free. -Linus Torvalds
+- > Rule 34, If it exists, there is porn of it – no exceptions 算么
+- > Across the Great Wall, we can reach every corner in the world”（越过长城，走向世界每个角落）
+- > 永远不要低估一辆装满磁带在高速公路上飞驰的小货车的传输带宽。 —— 安德鲁·谭宁邦（ Andrew Tanenbaum ，1981 ）

@@ -86,6 +86,11 @@ CIRCL: Cloudflare Interoperable Reusable Cryptographic Library https://github.co
 
 Introducing CIRCL: An Advanced Cryptographic Library https://blog.cloudflare.com/introducing-circl
 
+## FourQlib
+
+FourQlib v3.1 (C Edition) https://github.com/microsoft/FourQlib/tree/master
+- > FourQlib is an efficient and portable cryptographic library that provides functions for computing elliptic curve based operations on the high-performance FourQ curve.
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 国密/商密相关
