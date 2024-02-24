@@ -6,7 +6,6 @@ create table input_a (col1 int, col2 varchar(50));
 insert into input_a (col1, col2) values (1, 'data1');
 insert into input_a (col1, col2) values (2, 'data2');
 
-
 create table input_b (col1 int, col3 decimal(10, 2));
 insert into input_b (col1, col3) values (1, 100.00);
 insert into input_b (col1, col3) values (3, 200.00);
@@ -20,8 +19,9 @@ tb_b as (
 )
 select * from tb_a inner join tb_b on tb_a.col1 = tb_b.col1;
 
+-- 使用CTE进行查询2
 with tb_a as (
-        select * from input_a
+    select * from input_a
 )
 select * from tb_a;
 ```
