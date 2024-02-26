@@ -17,3 +17,9 @@ Adrian Zecha丨安缦创始人传奇永续，奋斗不已 - 设计赛事研究�
 ## 法云安缦
 
 6000多一晚的安缦酒店，像住进了农家乐，还是闹鬼的那种。兰若寺分寺，槽点多到数不清。 https://www.bilibili.com/video/BV1fR4y1775q
+
+## Amanpuri 安缦璞瑞
+
+设计酒店57 | Amanpuri：全球第一家安缦，永远年轻 https://www.archiposition.com/items/1228486022 || Amanpuri：全球第一家安缦，永远年轻 | 设计酒店57 https://mp.weixin.qq.com/s/CsA62nEoDF8afa8eFKGD4w
+- > 全球第一家安缦酒店——安缦璞瑞（Amanpuri）在完成全面翻新后，宣布于8月1日重新开业。这家最早揭幕于1988年的酒店，是如今风靡全球的安缦的起点；由设计师Edward Tuttle与安缦创始人Adrian Zecha联手打造，安缦璞瑞的出现改变了奢华度假酒店的风向，其设计至今被奉为经典。
+- > ***安缦璞瑞占据了普吉岛的整个半岛***，掩映在茂密的椰林中，朝向美丽的安达曼海。Edward Tuttle的设计充分利用这有利的选址，让建筑群最大限度地与自然相拥。尽管酒店如今已有30余年历史，还是一如既往地引人注目。
