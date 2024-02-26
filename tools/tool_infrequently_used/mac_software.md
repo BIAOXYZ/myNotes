@@ -223,6 +223,36 @@ Download https://dbeaver.io/download/
 - > Mac OS X
   * > Brew Cask (`brew install --cask dbeaver-community`)
 
+### `java`
+
+```sh
+brew install java
+...
+...
+...
+==> Caveats
+==> openjdk
+For the system Java wrappers to find this JDK, symlink it with
+  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
+openjdk is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides similar software and installing this software in
+parallel can cause all kinds of trouble.
+
+If you need to have openjdk first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openjdk you may need to set:
+  export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+==> code-server
+The launchd service runs on http://127.0.0.1:8080. Logs are located at /usr/local/var/log/code-server.log.
+
+To restart code-server after an upgrade:
+  brew services restart code-server
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/code-server/bin/code-server
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac Anaconda
