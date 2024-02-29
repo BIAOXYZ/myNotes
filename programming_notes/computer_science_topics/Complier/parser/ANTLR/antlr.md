@@ -44,6 +44,10 @@ ANTLR-4-Resource-Code https://github.com/GaoGian/ANTLR-4-Resource-Code
 vscode-antlr4 https://github.com/mike-lischke/vscode-antlr4/tree/master || ANTLR4 grammar syntax support https://marketplace.visualstudio.com/items?itemName=mike-lischke.vscode-antlr4
 - Graphical Visualizations https://github.com/mike-lischke/vscode-antlr4/blob/master/doc/graphical-visualizations.md
 
+## grun
+
+GRUN for Antlr4: How to use? https://stackoverflow.com/questions/69001510/grun-for-antlr4-how-to-use
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # antlr 相关概念
@@ -66,6 +70,14 @@ What is the meaning of different values of invokingState? #1455 https://github.c
 ## 其他概念
 
 What's the difference between ExitRule and EnterRule in Antlr4? https://stackoverflow.com/questions/68316550/whats-the-difference-between-exitrule-and-enterrule-in-antlr4
+
+Get original text of an Antlr rule https://stackoverflow.com/questions/7443860/get-original-text-of-an-antlr-rule?noredirect=1&lq=1
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# antlr for Non-SQL
+
+“轻量级” C++ Parser 方案 - Ubp.a的文章 - 知乎 https://zhuanlan.zhihu.com/p/157661251
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

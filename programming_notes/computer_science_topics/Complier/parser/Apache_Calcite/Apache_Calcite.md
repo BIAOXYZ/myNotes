@@ -3,7 +3,13 @@
 
 Apache Calcite https://github.com/apache/calcite
 
+Downloads https://calcite.apache.org/downloads/ 
+
 Apache Calcite https://en.wikipedia.org/wiki/Apache_Calcite
+
+# Apache Calcite 文章
+
+Apache Calcite精简入门与学习指导 https://blog.51cto.com/xpleaf/2639844
 
 # Apache Calcite 其他
 
