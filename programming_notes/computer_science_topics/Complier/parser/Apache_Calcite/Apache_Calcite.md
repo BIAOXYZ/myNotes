@@ -7,6 +7,12 @@ Downloads https://calcite.apache.org/downloads/
 
 Apache Calcite https://en.wikipedia.org/wiki/Apache_Calcite
 
+# Apache Calcite 官方文档
+
+Adapters https://calcite.apache.org/docs/adapter.html
+
+SQL language https://calcite.apache.org/docs/reference.html
+
 # Apache Calcite 文章
 
 Apache Calcite精简入门与学习指导 https://blog.51cto.com/xpleaf/2639844

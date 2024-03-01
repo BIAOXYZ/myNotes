@@ -15,3 +15,13 @@ Apache Calcite 学习文档 https://github.com/quxiucheng/apache-calcite-tutoria
 
 Calcite tutorial at BOSS 2021 https://www.youtube.com/watch?v=meI0W12f_nw&t=532s
 - calcite-tutorial https://github.com/zabetak/calcite-tutorial
+
+# 4
+
+Apache Calcite原理与实践 https://liebing.org.cn/collections/calcite/
+- Apache Calcite整体架构及处理流程 https://liebing.org.cn/apache-calcite-overview.html
+- Apache Calcite SQL解析及语法扩展 https://liebing.org.cn/apache-calcite-sql-parser.html
+
+# 5
+
+Apache Calcite Code Reading Part 1 https://medium.com/@masayuki/calcite-code-reading-part-1-4ff7cdc56959

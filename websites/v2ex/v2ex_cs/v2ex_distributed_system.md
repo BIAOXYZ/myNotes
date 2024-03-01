@@ -1,4 +1,6 @@
 
+分布式事务，怎么感觉不需要那么复杂 https://www.v2ex.com/t/1019248
+
 关于持久化的一点疑问 https://www.v2ex.com/t/825944
 - > https://github.com/dreamhead/patterns-of-distributed-systems/blob/master/content/write-ahead-log.md <br> 这个名词叫做 Write-Ahead Log
 
