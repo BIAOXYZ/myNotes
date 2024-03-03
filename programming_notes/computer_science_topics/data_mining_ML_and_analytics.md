@@ -47,6 +47,18 @@ GBDT+LR CTR预估-Kaggle实例[有数据集] https://www.jianshu.com/p/73adce3fd
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Hugging Face
+
+Hugging Face https://huggingface.co/
+- HuggingChat https://huggingface.co/chat/
+
+免费的 AI 漫画书生成器上线了， https://aicomicgenerator.net/ https://www.v2ex.com/t/1019715
+- > 生成图的服务是自己买服务器搭的？
+  >> 暂时用的 https://huggingface.co/
+- > https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # from github
 
 首个“开源 ChatGPT ”来了：基于谷歌 5400 亿参数大模型，网友吐槽：这谁能跑 https://www.ithome.com/0/664/547.htm || https://mp.weixin.qq.com/s/PQYLIddEVOsuhf5po6pPyw

@@ -13,6 +13,10 @@ Adapters https://calcite.apache.org/docs/adapter.html
 
 SQL language https://calcite.apache.org/docs/reference.html
 
+# Apache Calcite paper
+
+(SIGMOD 2018) Apache Calcite: A Foundational Framework for Optimized Query Processing Over Heterogeneous Data Sources https://dl.acm.org/doi/pdf/10.1145/3183713.3190662
+
 # Apache Calcite 文章
 
 Apache Calcite精简入门与学习指导 https://blog.51cto.com/xpleaf/2639844

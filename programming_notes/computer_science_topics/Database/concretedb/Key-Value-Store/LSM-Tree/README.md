@@ -16,3 +16,7 @@ LSM-Tree - LevelDb 源码解析 https://segmentfault.com/a/1190000041864579
 【from `LittleMagic`】：
 - LSM Tree-Based存储引擎的compaction策略（feat. RocksDB） https://www.jianshu.com/p/e89cd503c9ae
 - 从B+树到LSM树，及LSM树在HBase中的应用 https://www.jianshu.com/p/f911cb9e42de
+
+# LSM-Tree videos
+
+Dissecting, Designing, and Optimizing LSM-based Data Stores (Tutorial at SIGMOD 2022) https://www.youtube.com/watch?v=hkMkBZn2mGs
