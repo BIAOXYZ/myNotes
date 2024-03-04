@@ -1,4 +1,15 @@
 
+请问如何在一台 Linux 上加载另一台 Linux https://www.v2ex.com/t/1020395
+- > 看你对隔离的要求？如果只要隔离磁盘，进程和网络不需要隔离，直接 chroot 。如果需要沙盒环境，可以尝试用 Docker ？ root 设置为你的 Gentoo 。
+- > `chroot` 就行，即使你在 x86 跑 arm 发行版都没问题
+- > 找一下 gentoo handbook ，是类似 mount o bind dev, mount t proc, chroot, source 这样的。
+- > 需要两个系统都能作为主系统启动就用 chroot 或虚拟机通真实分区 不需要就用容器, 例如 distrobox
+- > docker kvm
+- > 虚拟机直通硬盘
+  >> 正解，我经常这样子干
+- > systemd-nspawn
+- > qemu
+
 Linux 系统中可以限制 root 的权限？ https://www.v2ex.com/t/992162
 ```console
 又到一年等保季，又是这种狗屁倒灶的事情，前年查我 HTTP 方法
