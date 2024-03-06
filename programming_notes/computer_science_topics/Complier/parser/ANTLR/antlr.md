@@ -41,6 +41,9 @@ ANTLR-4-Resource-Code https://github.com/GaoGian/ANTLR-4-Resource-Code
 
 # antlr tools
 
+https://www.antlr.org/tools.html
+- ANTLR v4 https://plugins.jetbrains.com/plugin/7358-antlr-v4
+
 vscode-antlr4 https://github.com/mike-lischke/vscode-antlr4/tree/master || ANTLR4 grammar syntax support https://marketplace.visualstudio.com/items?itemName=mike-lischke.vscode-antlr4
 - Graphical Visualizations https://github.com/mike-lischke/vscode-antlr4/blob/master/doc/graphical-visualizations.md
 

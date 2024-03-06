@@ -24,3 +24,15 @@ Build SQL parser using ANTLR4 -Part1 https://medium.com/@sasidharc/build-sql-par
 Build SQL parser using ANTLR4 -Part2 https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part2-1f8cdb011721
 - > **Flow**
   * > We will for now focus on the listener. In the code generated earlier, we can see a listener class generated as ***`pocketsListener`***. Take a look at the class and ***see <ins>all the rules are defined as functions with `enter`/`exit` prefix</ins> which means <ins>every time we walk through the tree and enter/exit a node, we can perform required actions</ins>***.
+
+# 5
+
+ANTLR快餐教程(1) - 有好多现成例子啊 https://www.jianshu.com/p/4bedad8dd70a
+
+ANTLR快餐教程(2) - ANTLR其实很简单 https://www.jianshu.com/p/1f5e72156075 || https://blog.csdn.net/lusing/article/details/62043826
+
+# 6
+
+【ANTLR学习笔记】4：语法导入和访问者(Visitor)模式 https://lauzyhou.blog.csdn.net/article/details/106331151
+
+【ANTLR学习笔记】5：使用监听器构建翻译程序，在g4文件中定制语法分析过程 https://lauzyhou.blog.csdn.net/article/details/106362871
