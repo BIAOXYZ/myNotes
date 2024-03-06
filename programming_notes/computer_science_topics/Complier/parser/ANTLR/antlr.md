@@ -48,6 +48,20 @@ vscode-antlr4 https://github.com/mike-lischke/vscode-antlr4/tree/master || ANTLR
 
 GRUN for Antlr4: How to use? https://stackoverflow.com/questions/69001510/grun-for-antlr4-how-to-use
 
+### 个人实战
+
+```sh
+$ grun Hello r -gui
+hello bob
+^D
+# 弹出生成的图片
+
+$ cd 1-hello/
+$ grun Hello r -gui testhello.txt                    
+# 弹出生成的图片
+$
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # antlr 相关概念

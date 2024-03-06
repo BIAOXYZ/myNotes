@@ -25,6 +25,14 @@ Hilton Hotels and Resorts https://www.hilton.com/en/hilton/ || 希尔顿酒店�
 希尔顿荣誉客会 - 酒店奖励计划 https://hiltonhonors3.hilton.com/zh_CN/index.html || 【切成英文版跳转到这个链接了】 https://www.hilton.com/en/hilton-honors/
 - 会员礼遇 https://hiltonhonors3.hilton.com/zh_CN/explore/benefits/index.html
 
+希尔顿荣誉客会适用条款 https://www.hilton.com/zh-hans/hilton-honors/terms/
+- > **生效日期：2023 年 8 月 16 日。下列条款将取代所有之前的适用条款。在生效日期之后参加或继续参加此计划，即表明您同意下列条款：**
+- > **终身钻石会籍条款与细则**
+  * > 特定希尔顿荣誉客会会员将获得终身钻石会籍，即已拥有钻石会籍至少 10 年（无需连续），并且付费和/或奖励住宿总计 1,000 晚以上；或者已拥有钻石会籍至少 10 年（无需连续），并且作为会员已获得至少 2 百万基本积分，依据标准希尔顿荣誉客会条款与细则。取得资格后，适用标准希尔顿荣誉客会条款与细则。终身钻石会籍由 Hilton Honors Worldwide, LLC 自行确认，可能由希尔顿荣誉客会在有、无通知或补偿的情况下，单方予以终止或更改。
+  * > 会员须拥有钻石会籍 365 天，方可计为“一年”。例如，会员在 十一月 1, 2020 取得钻石会籍（当时年份，或次年保持会籍），直至 十一月 1, 2021 方可计为“拥有钻石会籍一年”。如果会员拥有钻石会籍至未来的某个截止日期（比如钻石会籍于 2020年3月31日 失效），那么只有当未来的拥有会籍时间结束时，方可计入“终身钻石会籍条件”。
+- > **礼赠尊贵会籍**
+  * > 在一个日历年内累积满 60 个合资格房晚的会员，将获得资格可以为自己选择的另一位会员赠送金会籍。***在一个日历年内累积满 `100` 个合资格房晚的会员，将获得资格向自己选择的另一位会员赠送钻石会籍***。
+
 ## 希尔顿各个酒店官网
 
 西安高新希尔顿酒店 https://www.hilton.com.cn/zh-cn/hotel/Xian/hilton-xian-high-tech-zone-XIYCHHI/index.html || WELCOME TO HILTON XI'AN HIGH-TECH ZONE https://hiltonwifi.hiltonapps.com/xiychhi-en-cn/ 【连上高新希尔顿wifi后打开的首页。。。】
