@@ -1,6 +1,9 @@
 
 # projects
 
+Programming Tutorials https://programmingtutorials.top/  【//notes：这个是 v2ex 一个网友自己做的。其实核心是下面的另一个 github 仓库】
+- Project Based Learning https://github.com/practical-tutorials/project-based-learning
+
 ## os project
 
 Teach you how to code an OS by yourself. https://github.com/lcdzhao/operating_system
