@@ -31,6 +31,13 @@
 
 # 结婚/婚前
 
+女生怎么追程序员？ https://www.v2ex.com/t/1022288
+- > 中老年人回头看，恋爱其实挺简单，每周末约他去做点啥事情，看展，逛公园，xxx ，如果每次赴约那有戏，屡次推托不来那就对你没兴趣，约会个 10 次 8 次 的，意思很明显了，要么成了，要么就是装傻不想成
+- > 我也和前男友程序员谈了 4 年准备要结婚的时候分手的。如果你的智商和他有差距，其实，他们的精神世界挺难理解的。即使我理解了很久，也总是会被说数学不够他好。真的是同类人是不需要追求的。因为送礼物这种，我感觉其实都太普通了。有同样的精神世界的人，3 句话之类，就能知道对方是否是同类。稀少的人，不愿意将就的人，是绝对不会将就的。好不容易找到同类的人，是会彼此吸引的。根本不用追。灵魂伴侣。他们需要的是，灵魂伴侣。灵魂伴侣无法假装，只可能，大家真的是同类。因为互相太过于吸引，以至于毕业于什么学校，前任如何，这种问题都不用问。真的可以感觉到了。是同类终将在一起的。真的分不开的。不是同类的话，你需要讨好的是他的父母，这将是很高的要求。因为一个人，不可能永远假装自己是另外一个人，在父母面前是无法做真实的自我的。如果能做到的话，也是很厉害。 给父母面前假装，是地球上最困难的一件事了。
+  >> 男人大部分都是看外表，并不是因为灵魂。
+  >>> 对对 外表是要达到基本的程度。这个是前提，忘记写了。
+- > 以下内容摘自维基百科，讲的是 linus 的老婆当年怎么追求他的。 <br> `Torvalds is married to Tove Torvalds (née Monni), a six-time Finnish national karate champion, whom he met in late 1993. He was running introductory computer laboratory exercises for students and instructed the course attendees to send him an e-mail as a test, to which Tove responded with an e-mail asking for a date.[7] They were later married and have three daughters, two of whom were born in the United States.[57] The Linux kernel's reboot system call accepts their dates of birth (written in hexadecimal) as magic values.[58][59]` <br> linus 是公认的全世界最伟大的程序员之一，linus 的老婆在追程序员这方面可以说是最成功的一位，你要是问怎么追男生我无法回答，但怎么追程序员可以参考这个 ，直接跟他表白吧。
+
 千辛万苦拿到某大厂 offer，但是很难受，求各 v 友支招 https://www.v2ex.com/t/1017736
 
 如果得不到喜欢的人，你会和其他人凑活结婚吗 https://www.v2ex.com/t/1012033
