@@ -46,8 +46,6 @@ MySQL和PostgreSQL的自增序列探讨 https://mp.weixin.qq.com/s/5V5nYaYawnGlY
   * > PG支持Windows太晚了。有多晚呢？直到2005年，才原生支持Windows，2005年啊，比PG支持SQL晚了十年，比互联网在中国兴起，繁荣，泡沫戳破也晚了好几年。想想最重要的2000年前后，多少懵懂的站长都在使用Windows，PG错过了Windows就错过了最重要的一批在互联网上尝到甜头的人，从此一步错步步错（这个“错”不是“错误”的意思，而是“错过”的意思）。
   * > LAMP的崛起，继续将PG边缘化。现在很少有人提LAMP这个缩写了，最早它是Linux/Apache/MySQL/PHP的意思。我第一次听到这个缩写是08年，那年我还在读大二。可以想象一下这个缩写有多火，连一个大二的学生都听过，而且那年我还无数次的给同学们安利这套技术，因为它看起来真的很时髦。而直到我参加工作的几年后，才第一次听说PG，等在项目中正式使用PG，已是2015年之后的事了。（一不小心，又是十年）
 
-PostgreSQL 与 MySQL 相比，优势何在？ - 知乎 https://www.zhihu.com/question/20010554
-
 千万量级数据：
 - MYSQL - 算一算1000万条数据大概占了多大磁盘空间 https://blog.csdn.net/u010235716/article/details/86629756
 - 千万级数据下的Mysql优化 https://blog.csdn.net/shmnh/article/details/80753279
@@ -70,6 +68,11 @@ MySQL & PostgreSQL 终极大比拼 https://www.bilibili.com/video/BV1qG411m7Tg
 - A PostgreSQL Response to Uber http://thebuild.com/presentations/uber-perconalive-2017.pdf
 
 ## 非性能对比
+
+postgresql也很强大，为何在中国大陆，mysql成为主流，postgresql屈居二线呢？ - 知乎 https://www.zhihu.com/question/31955622 || 为何在国内MySQL成为主流，PG只能屈居二线？ https://mp.weixin.qq.com/s/_3pE0gTVgpOX7JXxYXArDg
+- postgresql也很强大，为何在中国大陆，mysql成为主流，postgresql屈居二线呢？ - 大宽宽的回答 - 知乎 https://www.zhihu.com/question/31955622/answer/1625152059
+
+PostgreSQL 与 MySQL 相比，优势何在？ - 知乎 https://www.zhihu.com/question/20010554
 
 Postgres 在中国还能起来么？ https://www.v2ex.com/t/1010986
 - > 这是 aws 里面对比 pg 和 mysql 的文章。 https://aws.amazon.com/cn/compare/the-difference-between-mysql-vs-postgresql/ <br> 然后对于 pg 和 mysql 来说，我在部分场景下，有发现老版本的 mysql 不严谨的地方，比如说数据类型太多，pg 的数据类型很单一很明确，减少了混淆的可能。例如 pg 的 text 和 mysql 的各种 text 的区别。。 <br> 再就是数据库字符集的问题，pg 默认是 utf8 ，mysql 里面的则需要自己改成 utf8 ，而且 utf8 还分了好几个类别。。。
