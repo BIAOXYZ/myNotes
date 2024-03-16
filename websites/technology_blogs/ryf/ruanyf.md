@@ -17,6 +17,12 @@
 
 # :star:阮一峰系列教程
 
+## C语言
+
+《C 语言入门教程》发布了 https://www.ruanyifeng.com/blog/2021/09/c-language-tutorial.html
+
+C 语言教程 https://wangdoc.com/clang/
+
 ## Systemd
 
 **// 参见systemd命令那个文件**。
