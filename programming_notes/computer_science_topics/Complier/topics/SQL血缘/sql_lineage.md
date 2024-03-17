@@ -2,6 +2,8 @@
 # 文章
 
 基于antlr4实现hiveSQL的解析[表血缘和字段血缘] http://ganjiacheng.cn/article/2020/article_14_%E5%9F%BA%E4%BA%8Eantlr4%E5%AE%9E%E7%8E%B0HQL%E7%9A%84%E8%A7%A3%E6%9E%90-%E8%A1%A8%E8%A1%80%E7%BC%98%E5%92%8C%E5%AD%97%E6%AE%B5%E8%A1%80%E7%BC%98/
+- > **前言**
+  * > 代码实现参考：https://github.com/webgjc/sql-parser/
 
 分类 SQL解析与数据血缘 下的文章 https://makeyourchoice.cn/category/sql_parse_lineage/
 - 从事SQL血缘解析一年后，谈谈我对它的理解 https://makeyourchoice.cn/archives/568/

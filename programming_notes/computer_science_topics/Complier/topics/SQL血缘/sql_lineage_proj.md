@@ -8,11 +8,14 @@ SQL血缘解析（业界产品） - david的文章 - 知乎 https://zhuanlan.zhi
 SQLLineage https://github.com/reata/sqllineage
 - > SQL Lineage Analysis Tool powered by Python
 
+https://reata.github.io/sqllineage/
+
 SQLLineage: SQL Lineage Analysis Tool Powered by Python https://sqllineage.readthedocs.io/en/latest/
 
 SQLLineage: 基于Python的SQL血缘分析工具 https://reata.github.io/blog/sqllineage-a-sql-lineage-analysis-tool/
 
 SQLLineage v1.3：迈向字段血缘 https://reata.github.io/blog/sqllineage-towards-column-lineage/
+- > v1.2版本，随着React+MaterialUI的引入，SQLLineage成为了一个独立的Web App，我部署了一个[DEMO](https://reata.github.io/sqllineage/)站点，这样即使没有Python背景的人， 也可以使用SQLLineage了，进一步增强了易用性。（关于在Python Package里发布前端代码，感兴趣可以看这篇博客）
 
 ## 其他
 
