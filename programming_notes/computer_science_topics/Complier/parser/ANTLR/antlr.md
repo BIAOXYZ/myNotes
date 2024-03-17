@@ -90,6 +90,8 @@ What's the difference between ExitRule and EnterRule in Antlr4? https://stackove
 
 Get original text of an Antlr rule https://stackoverflow.com/questions/7443860/get-original-text-of-an-antlr-rule
 
+~~关于SQL解析，为何编程语言解析器ANTLR更胜一筹？ https://juejin.cn/post/6844903699060359176 || https://dbaplus.cn/news-155-2261-1.html~~  【//已转移】
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # antlr for Non-SQL
