@@ -64,6 +64,17 @@ apt-key adv                 - 设置key的高级配置, Pass advanced options to
 
 How To Delete A Repository And GPG Key In Ubuntu https://ostechnix.com/how-to-delete-a-repository-and-gpg-key-in-ubuntu/
 
+MySQL: An error occurred during the signature verification [duplicate] https://askubuntu.com/questions/1389928/mysql-an-error-occurred-during-the-signature-verification
+- https://askubuntu.com/questions/1389928/mysql-an-error-occurred-during-the-signature-verification/1389929#1389929
+  * > You will want to import the missing GPG keys for the repository like this:
+    ```sh
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <the_PUBKEY_in_error_message>
+    ```
+  * > Then update:
+    ```sh
+    sudo apt update
+    ```
+
 # apt源相关
 
 ## apt换源/增加源

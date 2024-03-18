@@ -157,6 +157,7 @@ A practical guide to using the git stash command https://opensource.com/article/
     Dropped stash@{0} (fe4bf8f79175b8fbd3df3c4558249834ecb75cd1)
     ```
 - > **Stashing without disturbing the stash reflog**
+  >> //notes：感觉这个功能很坑，轻易别用。。。
   * > In rare cases, you might need to create a stash while keeping the stash reference log (reflog) intact. These cases might arise when you need a script to stash as an implementation detail. This is achieved by the `git stash create` command; it creates a stash entry and returns its object name without pushing it to the stash reflog:
     ```sh
     $ git stash create "sample stash" 
@@ -172,6 +173,13 @@ A practical guide to using the git stash command https://opensource.com/article/
 How would I extract a single file (or changes to a file) from a git stash? https://stackoverflow.com/questions/1105253/how-would-i-extract-a-single-file-or-changes-to-a-file-from-a-git-stash
 
 # 个人实战
+
+## 自定义 stash message
+
+```sh
+# git stash save <description_msg>
+git stash save "stash for latest xxx-feature"
+```
 
 ## 只apply单个stashed文件
 

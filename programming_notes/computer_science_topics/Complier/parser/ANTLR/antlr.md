@@ -98,6 +98,9 @@ Get original text of an Antlr rule https://stackoverflow.com/questions/7443860/g
 
 “轻量级” C++ Parser 方案 - Ubp.a的文章 - 知乎 https://zhuanlan.zhihu.com/p/157661251
 
+~~Parser 解析重写 SQL https://www.victorchu.info/posts/c3d08049/~~  【//已转移】
+>> //notes：这个是解析 json 的。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
