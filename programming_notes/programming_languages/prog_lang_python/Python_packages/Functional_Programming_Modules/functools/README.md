@@ -64,6 +64,10 @@ Python Functools – lru_cache() https://www.geeksforgeeks.org/python-functools-
 
 ## `cache`
 
+Difference between functool's cache and lru_cache https://stackoverflow.com/questions/70301475/difference-between-functools-cache-and-lru-cache
+- https://stackoverflow.com/questions/70301475/difference-between-functools-cache-and-lru-cache/70301476#70301476
+  * > So, in short: `cache` and `lru_cache(maxsize=None)` are exactly the same ([link](https://github.com/python/cpython/blob/3.9/Lib/functools.py#L646) to cpython source). But in cases where you don't want to limit the cache size, using `cache` may make the code clearer, since a least recently used cache without limit doesn't make much sense.
+
 ### LeetCode中用到这个的
 - `131. 分割回文串` https://leetcode-cn.com/problems/palindrome-partitioning/
 

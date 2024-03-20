@@ -1,4 +1,10 @@
 
+gcc 是怎么找到 system 函数的定义（实现）的？ https://www.v2ex.com/t/1025303
+- > system 是标准库函数，链接的时侯默认是带标准库的，所以找到了。 <br> C 语言没有函数重载，不需要复杂的名称修饰，int system(…); 和 int system(char const *); 链接的时候去找的是同一个符号，前者是隐式声明的结果，后者是标准库的声明，故隐式声明的调用可以链接到标准库函数。
+  >> #2 更正：隐式声明是 `int system();`
+- > `int add(int a, int b)` 和 `float add(float a, int b, int c)` 的符号是同一个，运行的时候函数会通过栈传递参数。编译的时候是通过符号来链接的，如果在头文件定义了这个函数，类型不匹配编译会出错，而如果头文件不定义，只要符号对上了编译就会成功，只会报警告。
+- > 推荐你看一下编译之后的汇编,可以清楚的看出来系统是怎么找到 system 的
+
 还是不太理解 C 静态库和动态库？ https://www.v2ex.com/t/1022210
 - > 静态或者动态库和 c 没关系，每个操作系统规则都不太一样。不严格地说，同一个动态库被加载之后只在内存里存一份，如果硬件支持内存管理，会被映射到调用进程的各自内存空间；不同进程都能共享这同一份被加载的库。或者还有一种场景是同个进程各个被调用的库循环依赖某个动态链接库，也只需要加载一份。
   >> 前段时间看到 Shilon 大佬的视频：[Linkers, Loaders and Shared Libraries in Windows, Linux, and C++ - Ofek Shilon - CppCon 2023](https://www.youtube.com/watch?v=_enXuIxuNV4)
