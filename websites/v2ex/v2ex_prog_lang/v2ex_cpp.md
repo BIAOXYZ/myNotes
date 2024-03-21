@@ -1,7 +1,44 @@
 
-为什么大佬都建议写 c++不要写 using namespace std https://www.v2ex.com/t/979593
+【[:star:][`*`]】 关于 C++读取大小为 2.51 GB (2,701,131,776 字节)到 `char* yuanshuju` 数组中去 https://www.v2ex.com/t/1025635
+```console
+发现问题了。 问题代码：
+qint64 dataSize = 2701131776;
+char* yuanshuju = new char[dataSize];
+
+可行代码：
+char* yuanshuju = new char[2701131776];
+
+c++,牛 我反正是没搞懂
+```
+- > 用 memory mapping ，不要手动去读它。
+- > 不知道一次性读 2.51GB 数据的应用场景是什么
+  >> 光谱数据处理，体谅挺大的
+- > `new char[2,701,131,776]` 会分配长度是 776 个元素的 `char` 数组，不是你期待的 2.51 GB。`int main() { new char[2701131776] { }; }` 这个程序在我的电脑上编译为 64 位的话可以正常运行，并且确实占用了 2.51 GB 内存，如果用 32 位编译器则编译失败，因为分配的数组规模超过了 `size_t`。抛出 `std::bad_alloc` 的意思就是分配失败，或许你的页面文件和实体内存不够大。 <br> ***如果数据来自于文件，可以用内存映射文件***，Windows 的文档是 https://learn.microsoft.com/en-us/windows/win32/memory/file-mapping POSIX 的文档是 https://pubs.opengroup.org/onlinepubs/9699919799/functions/mmap.html
+- > 我用 malloc ，别说是 malloc(2701131776) 可以, 就算 malloc(4701131776) 也行。应该只是你内存不够的原因。”不够“不是说总剩余内存不够，而是无法分配一块巨大内存。
+- > 建议发一下编译器的版本 或者试试看这样写
+  ```cpp
+  auto alloc = vector<int64_t>(2701131776 / 8 + 1);
+  char* yuanshuju = reinterpret_cast<char*>(alloc.data());
+  ```
+- > https://github.com/vimpunk/mio
+- > C++ 标准不支持“柔性数组/变长数组”，数组大小是变量的情况，应该用 `vector` 一定要使用变量作数组长度的话，换 C 语言 (`C99`) 吧
+  >> 他这个不是变长数组呀，用了 new 分配在堆上的，变长数组指的是分配在栈上的
+- > 根据你给的附言，推测可能是你 `qtglobal` 头文件引入的有问题，导致 `qint64` 被认为是 `int32_t` 。因为 `2701131776 > INT_MAX(1 << 32 - 1)`，这个值在 assign 给 int32_t dataSize 之后被认为是一个负数，导致 bad_alloc 。
+- > 这么大文件为什么不 mmap?
+- > 试试用 `constexpr qint64 dataSize = 2701131776;` 行不行？
+- > 动态长度用 `vector`，或者定义一个 `char*` ,然后 `malloc` 分配内存空间。
+- > 等等，为什么要用 new 直接创建呢？最后还得手动 delete。不如用 `std::vector` 或者 `std::make_unique<char[]>(数据长度)` 这两个好多了 <br> `std::vector` 已经有人发了，那么 `make_unique` 的用法是：
+  ```cpp
+  size_t data_size{2701131776};
+  std::unique_ptr<char[]> raw_data_ptr = std::make_unique<char[]>(data_size);
+  char* raw_data = raw_data_ptr.get();
+  ```
+  * > 在我的 Windows 11 + VS2022 测了下，很成功，没任何报错。
+  * > ***另外呢，直接用 `malloc` 、`new` 创建的空间，按照 C 语言留下来的“惯例”，是需要手动初始化的。通常会用 `memset` 初始化为零，用 `std::fill` 也可以。<ins>如果改用 `std::vector` 或者 `std::make_unique`，就可以跳过这一步，它们都会自动初始化</ins>***。
+
+为什么大佬都建议写 c++不要写 `using namespace std` https://www.v2ex.com/t/979593
 - > ....因为你整个命名空间就会是 std 了
-- > 因为有些系统 API 的名字恰好跟 std 内的相同，比如最常见的之一，`bind()` <br> using namespace 之后，就会出问题： https://stackoverflow.com/questions/8980384/libc-naming-conflict-for-bind
+- > ***因为有些系统 API 的名字恰好跟 `std` 内的相同，比如最常见的之一，`bind()`*** <br> using namespace 之后，就会出问题： https://stackoverflow.com/questions/8980384/libc-naming-conflict-for-bind
 - > 可以把命名空间理解成一个村，using namespace A;就是用 A 村的人，using namespace B;就是用 B 村的人，std 也是个村，这三个不同的村里面有同名的人，比如张三，A 村的张三是厨师，B 村的张三是木匠，std 村的张三是电工；你现在准备做一大桌菜，所以想叫 A 村的张三这个厨师，但是你却写了 using namespace std; 那就是本来是 A::张三，现在变成了 std::张三，也就是叫来了 std 的张三这个电工，你让电工来给你做饭，那肯定就错了啊，using namespace 可以理解成是不同村的势力范围
 - > 举个例子，`socket` 里面有一个 `bind` 函数用来绑定某个端口，C++ 有个 `std::bind`，你用了 using namespace std 的话，你输 bind ，IDE 不一定知道是到底是哪个 bind 。
 - > 调内置库函数时加一个 `std::前缀`非常有仪式感，不加就显得很土😇
