@@ -147,6 +147,11 @@ https://bruno-simon.com  各种交互各种炫
 
 # 生活信息
 
+上周末跑了两天外卖，写了一篇感想《美团骑手转职指南》，欢迎讨论 https://www.v2ex.com/t/1025993
+```console
+美团骑手转职指南 https://digua.moe/posts/20240311-meituan-rider.html
+```
+
 裸辞 965 的程序员工作 4 年之后，我找到一份 776 的保安工作 https://www.v2ex.com/t/992244
 
 父亲被拖欠工资，如何维权 https://www.v2ex.com/t/935885

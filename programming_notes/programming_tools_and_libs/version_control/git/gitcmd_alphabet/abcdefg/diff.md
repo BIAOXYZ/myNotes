@@ -11,7 +11,7 @@ git-diff - Show changes between commits, commit and working tree, etc https://gi
 
 Git如何获得两个版本间所有变更的文件列表 https://segmentfault.com/q/1010000000133613
 - > `git diff --name-status HEAD~2 HEAD~3`
-- > `git diff commit-SHA1 commit-SHA2 --stat`
+- > ***`git diff commit-SHA1 commit-SHA2 --stat`***
 
 Can I make 'git diff' only display the line numbers AND changed file names? https://stackoverflow.com/questions/9848347/can-i-make-git-diff-only-display-the-line-numbers-and-changed-file-names
 - > `git diff --stat`
@@ -20,7 +20,7 @@ Can I make 'git diff' only display the line numbers AND changed file names? http
 # 其他帖子
 
 git 比较同一文件的不同的两个版本之间的差异 https://segmentfault.com/q/1010000005974787
-- > `git diff commit_id1 commit_id2 -- index.html`
+- > ***`git diff commit_id1 commit_id2 -- index.html`***
 
 Git diff Command – How to Compare Changes in Your Code https://www.freecodecamp.org/news/git-diff-command/
 - > **Understanding `git diff`'s Results – Line by Line**
