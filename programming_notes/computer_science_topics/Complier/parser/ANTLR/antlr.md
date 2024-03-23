@@ -20,6 +20,7 @@ ANTLR v4 https://github.com/antlr/antlr4
     ```sh
     $ antlr4 -Dlanguage=Python3 MyGrammar.g4
     ```
+- Grammar Structure https://github.com/antlr/antlr4/blob/master/doc/grammars.md
 
 grammars-v4 https://github.com/antlr/grammars-v4
 

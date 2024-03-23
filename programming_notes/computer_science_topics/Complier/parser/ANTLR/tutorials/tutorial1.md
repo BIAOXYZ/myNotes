@@ -29,7 +29,22 @@ Build SQL parser using ANTLR4 -Part2 https://medium.com/@sasidharc/build-sql-par
 
 ANTLR快餐教程(1) - 有好多现成例子啊 https://www.jianshu.com/p/4bedad8dd70a
 
-ANTLR快餐教程(2) - ANTLR其实很简单 https://www.jianshu.com/p/1f5e72156075 || https://blog.csdn.net/lusing/article/details/62043826
+【[:star:][`*`]】 ANTLR快餐教程(2) - ANTLR其实很简单 https://www.jianshu.com/p/1f5e72156075 || https://blog.csdn.net/lusing/article/details/62043826
+- > ANTLR是通过递归下降的方式来解析一个语法的。所谓的递归下降，其实很简单，不过就是一些模式匹配而己。
+- > **简单的模式匹配**
+  * > 我们看下官方的一个简单的例子，这是一个赋值表达式的例子。语法这样写：
+    ```g4
+    assign : ID '=' expr ';' ;
+    ```
+  * > 解析器的代码类似于下面这样：
+    ```c
+    void assign() {
+      match(ID);
+      match('=');
+      expr();
+      match(';');
+    ```
+  * > 解析只分为两种情况：第一种情况是直接模式匹配，第二种情况是调用其它函数继续分析。
 
 # 6
 
