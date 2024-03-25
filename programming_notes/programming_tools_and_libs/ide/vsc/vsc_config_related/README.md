@@ -19,6 +19,12 @@ How to reset settings in Visual Studio Code? https://stackoverflow.com/questions
 How to exclude folder from "Explore" tab? https://stackoverflow.com/questions/33258543/how-to-exclude-folder-from-explore-tab
 - https://stackoverflow.com/questions/33258543/how-to-exclude-folder-from-explore-tab/55556206#55556206
 
+## 去掉行尾空格
+
+Vs Code使用 - 保存时自动删除多余空格 - Ailson Jack的文章 - 知乎 https://zhuanlan.zhihu.com/p/623565363
+- > 打开设置界面，`File -> Preferences -> Settings`：
+- > 在搜索框中输入：`trim trailing whitespace`，然后勾选上 `Files:Trim Trailing Whitespace`：
+
 # 首次安装后配置
 
 Windows下VSCode配置C++环境 - 小红花的文章 - 知乎 https://zhuanlan.zhihu.com/p/105135431
