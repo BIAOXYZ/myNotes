@@ -1,6 +1,8 @@
 
 # git源码/原理
 
+10.7 Git 内部原理 - 维护与数据恢复 https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E7%BB%B4%E6%8A%A4%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D
+
 这才是真正的Git——Git内部原理揭秘！ - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/96631135
 > 感谢大家的喜欢，我是本文作者。上文提到的将Git可视化出来除了文中提到的文章外，这里补充一个工具 http://onlywei.github.io/explain-git-with-d3/#commit 了解了基础概念之后，再来看这些可视化就很容易将其内化成自己的知识。
 >> notes：这个作者回复的git可视化工具不错，原地址为：
