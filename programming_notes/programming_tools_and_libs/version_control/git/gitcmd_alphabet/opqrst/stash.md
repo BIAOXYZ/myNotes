@@ -75,8 +75,12 @@ How to see stashed changes using git stash https://howto.lintel.in/how-to-see-st
 
 【[:star:][`*`]】 Git stash https://www.atlassian.com/git/tutorials/saving-changes/git-stash
 - > **Stashing untracked or ignored files**
+  * > Adding the `-u` option (or `--include-untracked`) tells `git stash` to also stash your untracked files:
 - > **Managing multiple stashes**
+  * > To provide a bit more context, it's good practice to annotate your stashes with a description, using `git stash save "message"`:
 - > **Viewing stash diffs**
+  * > You can view a summary of a stash with `git stash show`:
+  * > Or pass the `-p` option (or `--patch`) to view the full diff of a stash:
 - > **Partial stashes**
   * > You can also choose to ***stash just a single file, a collection of files, or individual changes from within files***. If you pass the `-p` option (or `--patch`) to `git stash`, it will iterate through each changed "hunk" in your working copy and ask whether you wish to stash it:
     ```diff
