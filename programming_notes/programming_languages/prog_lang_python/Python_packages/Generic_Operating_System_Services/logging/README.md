@@ -9,6 +9,19 @@ logging --- Python 的日志记录工具 https://docs.python.org/zh-cn/3/library
 
 Python root logger 解密 https://www.jianshu.com/p/cad8a77762b3
 
+# 问题
+
+## 各种 import 一堆后，当前文件内的 logging 模块不打印了
+
+Python logging not outputting anything https://stackoverflow.com/questions/7016056/python-logging-not-outputting-anything/51843943#51843943
+- https://stackoverflow.com/questions/7016056/python-logging-not-outputting-anything/51843943#51843943
+  * > Maybe try this? It seems the problem is solved after remove all the handlers in my case.
+    ```py
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+    logging.basicConfig(filename='output.log', level=logging.INFO)
+    ```
+
 # 其他
 
 Logging in Python https://realpython.com/python-logging/

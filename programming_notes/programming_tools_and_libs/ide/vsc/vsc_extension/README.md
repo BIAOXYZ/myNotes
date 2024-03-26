@@ -34,6 +34,8 @@
 ## 个人出品
 - Markdown All in One https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 - Bracket Pair Colorizer 2 https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+- Code Spell Checker https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker  【用来检查单词拼写错误，拼写错误的单词会有浅蓝色的波浪线】
+- GitLens https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 - Edit csv https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv
   * > If you don't have vs code to hand, you can use the online version at https://edit-csv.net
 - Debug Visualizer https://marketplace.visualstudio.com/items?itemName=hediet.debug-visualizer || https://github.com/hediet/vscode-debug-visualizer
