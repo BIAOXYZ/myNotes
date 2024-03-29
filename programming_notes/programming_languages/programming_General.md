@@ -92,7 +92,7 @@ OnlineGDB https://www.onlinegdb.com/
 - https://www.onlinegdb.com/online_python_compiler
 - https://www.onlinegdb.com/online_c_compiler
 
-Compiler Explorer https://github.com/compiler-explorer/compiler-explorer || https://godbolt.org/
+Compiler Explorer https://github.com/compiler-explorer/compiler-explorer || https://godbolt.org/  【业界良心，除了C/C++，支持很多其他语言；在线就能用编译器和看汇编。】
 
 OneCompiler https://onecompiler.com/ || https://github.com/onecompiler
 - PostgreSQL online editor https://onecompiler.com/postgresql/

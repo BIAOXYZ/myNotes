@@ -24,6 +24,27 @@ Build SQL parser using ANTLR4 -Part1 https://medium.com/@sasidharc/build-sql-par
 Build SQL parser using ANTLR4 -Part2 https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part2-1f8cdb011721 || https://web.archive.org/web/20220903041130/https://medium.com/@sasidharc/build-sql-parser-using-antlr4-part2-1f8cdb011721
 - > **Flow**
   * > We will for now focus on the listener. In the code generated earlier, we can see a listener class generated as ***`pocketsListener`***. Take a look at the class and ***see <ins>all the rules are defined as functions with `enter`/`exit` prefix</ins> which means <ins>every time we walk through the tree and enter/exit a node, we can perform required actions</ins>***.
+- > **Project**
+  * > then we can override the required function where we need to perform actions as shown below.
+    ```py
+    class SQLParser(pocketsListener):
+        def __init__(self):
+            self.tokens = None
+
+        def parse_sql(self, sql: str):
+            print(f"Parsing SQL: {sql}")
+            data = InputStream(sql)
+            lexer = pocketsLexer(data)
+            stream = CommonTokenStream(lexer)
+            self.tokens = stream
+            parser = pocketsParser(stream)
+            tree = parser.pocket()
+            walker = ParseTreeWalker()
+            walker.walk(self, tree)
+
+        def exitCreate(self, ctx:pocketsParser.CreateContext):
+            print(f"Inside the create method - SQL Context:{self.tokens.getText(ctx.start, ctx.stop)}")
+    ```
 
 # 5
 
