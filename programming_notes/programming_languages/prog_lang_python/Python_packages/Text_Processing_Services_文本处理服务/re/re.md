@@ -15,7 +15,17 @@ re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || 
 - Regular Expressions: Regexes in Python (Part 1) https://realpython.com/regex-python/
 - Regular Expressions: Regexes in Python (Part 2) https://realpython.com/regex-python-part-2/
 
+Python正则表达式操作指南 http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97
+
 `5. 正则表达式` https://pythonhowto.readthedocs.io/zh-cn/latest/regular.html
+
+🇨🇳 翻译: 学习正则表达式的简单方法 https://github.com/cdoco/learn-regex-zh
+
+正则表达式解析，让你一次明白正则表达式 https://segmentfault.com/a/1190000038392952
+
+python——正则表达式(re模块)详解 https://cloud.tencent.com/developer/article/2086208 || https://blog.csdn.net/guo_qingxia/article/details/113979135
+
+Python正则表达式re模块详解(建议收藏!) https://www.jb51.net/article/254212.htm
 
 Python之re模块 https://www.cnblogs.com/shenjianping/p/11647473.html
 

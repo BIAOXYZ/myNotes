@@ -159,10 +159,6 @@ z = url.split("/", 1)
 print(z)        #['www.google.com', 'login/ex']
 ```
 
-<<Python中使用多个分隔符分隔字符串re.split>> http://blog.csdn.net/programmer_at/article/details/77409507
-
-<Python正则表达式操作指南> http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97
-
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## None 和 None类型
