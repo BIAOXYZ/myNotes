@@ -115,6 +115,19 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ZK｜零知识证明研究综述 https://mp.weixin.qq.com/s/HZdYyFTTv4CtgV-R5ytdBQ || 零知识证明研究综述及其在区块链领域应用生态整理 https://mp.weixin.qq.com/s/2570UHJ3K91ZF8awsIpxkA
 
+What Is a Zero-Knowledge Proof? https://chain.link/education/zero-knowledge-proof-zkp
+- > **Types of Zero-Knowledge Proofs**
+  * > There are various implementations of ZKPs, with each having its own trade-offs of proof size, prover time, verification time, and more. They include:
+  * > **zk-SNARKs**
+    + > SNARKs, which stands for “succinct non-interactive argument of knowledge”, are small in size and easy to verify. They generate a cryptographic proof using elliptical curves, which is more gas-efficient than the hashing function method used by STARKS.
+  * > **zk-STARKs**
+    + > STARK stands for “scalable transparent argument of knowledge”. STARK-based proofs require minimal interaction between the prover and the verifier, making them much faster than SNARKs.
+  * > **PLONK**
+    + > Standing for “permutations over Lagrange-bases for oecumenical noninteractive arguments of knowledge,” PLONKs use a universal trusted setup that can be used with any program and can include a large number of participants.
+  * > **Bulletproofs**
+    + > Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup. They are designed to enable private transactions for cryptocurrencies.
+  * > There are already a number of zero-knowledge projects using these technologies, including StarkNet, zkSync, and Loopring.
+
 万神殿 Patheon：零知识证明开发框架评测平台 https://mp.weixin.qq.com/s/1M8C2SokJl2A1xkKBfFmFg
 - > **证明系统**
   * > 近年来，我们观察到零知识证明系统激增。跟上该领域所有激动人心的进步是具有挑战性的，我们根据成熟度和开发者采用情况精心挑选了以下证明系统作为测试对象。我们的目标是提供不同前端/后端组合的代表性样本。
