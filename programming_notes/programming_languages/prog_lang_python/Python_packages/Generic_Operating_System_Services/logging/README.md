@@ -22,6 +22,21 @@ Python logging not outputting anything https://stackoverflow.com/questions/70160
     logging.basicConfig(filename='output.log', level=logging.INFO)
     ```
 
+Set logging levels https://stackoverflow.com/questions/38537905/set-logging-levels
+- https://stackoverflow.com/questions/38537905/set-logging-levels/38537983#38537983
+  * > What Python version? That works for me in 3.4. But note that [`basicConfig()`](https://docs.python.org/3.4/library/logging.html#logging.basicConfig) won't affect the root handler if it's already setup: `This function does nothing if the root logger already has handlers configured for it.`
+  * > ***To set the level on root explicitly do `logging.getLogger().setLevel(logging.DEBUG)`. But ensure you've called `basicConfig()` before hand so the root logger initially has some setup***. I.e.:
+    ```py
+    import logging
+    logging.basicConfig()
+    logging.getLogger().setLevel(logging.DEBUG)
+    logging.getLogger('foo').debug('bah')
+    logging.getLogger().setLevel(logging.INFO)
+    logging.getLogger('foo').debug('bah')
+    ```
+    >> 【[:star:][`*`]】 //notes：和上面的思路类似的其实，核心都是上层logger（大概率是 root logger）影响了我的打印和调试，我就干脆只在我的代码部分禁用掉/重置一下logger。这里其实一般只需要 `logging.getLogger().setLevel(logging.INFO)` 这句就可以了。
+  * > ***Also note that "Loggers" and their "Handlers" both have distinct independent log levels. So if you've previously explicitly loaded some complex logger config in you Python script, and that has messed with the root logger's handler(s), then this can have an effect, and just changing the loggers log level with `logging.getLogger().setLevel(..)` may not work***. This is because the attached handler may have a log level set independently. This is unlikely to be the case and not something you'd normally have to worry about.
+
 # 其他
 
 Logging in Python https://realpython.com/python-logging/
