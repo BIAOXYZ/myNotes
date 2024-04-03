@@ -226,15 +226,6 @@ please always to “Squash and Merge” to reduce the number of commits in maste
 ```
 >> //note：总体而言，一般好像还是用`Squash and merge`的居多。默认选项是用的越来越少了，因为会把仓库分支搞得很乱。
 
-如何快速查看github代码库中第一次commit的记录 https://www.cnblogs.com/saysmy/p/7292177.html
-```console
-点击一次older发现url格式为：
-
-https://github.com/lodash/lodash/commits/master?after=c2616dd4f3ab267d000a2b4f564e1c76fc8b8378+34
-
-后面的after即代表展示 SHA为c2616dd4f3ab267d000a2b4f564e1c76fc8b8378 的后面第35条commit。
-```
-
 GitHub 防黑客新措施：弃用账密验证 Git 操作，改用 token 或 SSH 密钥，今晚 0 点执行 https://www.ithome.com/0/569/298.htm
 - 回复：
   * > 用了GCM Core后，从没管我要过凭据
