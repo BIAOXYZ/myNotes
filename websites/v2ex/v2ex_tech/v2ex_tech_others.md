@@ -18,6 +18,20 @@ Excel 内容转成 CSV，容量大了一倍 https://www.v2ex.com/t/956953
 - > 老夫优化程序 20 年，因为分支预测导致的性能显著下降的案例只在教学示例中遇到过，新一些的处理器（ 2 ，3 代至强）分支预测基本上>98%正确率；可以说影响现代计算密集型程序性能的主要因素已不在程序逻辑而在于结构体设计。
 
 最近在练习正则,大家有没有什么在线的类似于用正则实现的通关类打怪练习正则的在线网站吗? https://www.v2ex.com/t/875808
+```console
+统一回复:感谢诸位的推荐 下面是收集大家推荐的网址,方便需要的朋友
+https://www.hackerrank.com/domains/regex
+https://callumacrae.github.io/regex-tuesday/challenge20.html
+https://regexlearn.com/
+http://alf.nu/RegexGolf
+https://regexone.com/
+https://regexcrossword.com/
+https://regex101.com/
+https://t.me/LDList/654
+https://store.steampowered.com/app/1489660/Copy_Editor_A_RegEx_Puzzle/
+https://ihateregex.io/playground/
+https://github.com/Bowen7/regex-vis
+```
 
 base64 编码图片一般会使体积变大多少？ https://www.v2ex.com/t/847238
 ```console
