@@ -4,6 +4,13 @@
 Programming Tutorials https://programmingtutorials.top/  【//notes：这个是 v2ex 一个网友自己做的。其实核心是下面的另一个 github 仓库】
 - Project Based Learning https://github.com/practical-tutorials/project-based-learning
 
+## hardware project
+
+excelCPU
+- Excel 16-Bit CPU https://github.com/InkboxSoftware/excelCPU
+- Building a 16-bit CPU in a spreadsheet is Excel-lent engineering https://www.theregister.com/2024/02/02/16_bit_cpu_excel/
+- Functional 16-bit CPU built and runs in Excel, 3Hz processor includes 128KB of RAM, 16-color display, and a custom assembly language https://www.tomshardware.com/pc-components/cpus/functional-16-bit-cpu-built-and-runs-in-excel-including-128kb-of-ram-16-color-display-and-a-custom-assembly-language
+
 ## os project
 
 Teach you how to code an OS by yourself. https://github.com/lcdzhao/operating_system
