@@ -77,3 +77,5 @@ Clickhouse建表语法、视图语法、数据表DDL（数据定义语言）、�
   >> https://clickhouse.com/docs/en/faq/general/dbms-naming/
 - > 我们公司日志系统从 es 换到了 ck ，感觉查询语法更丰富，性能更强。估计每天就得上百 tb 的日志数据。
 - > 上周测试环境 zk 炸了连带 ck 全崩了，重建数据搞得怀疑人生
+
+DorisDB,ClickHouse,TiDB的对比与选型分析 https://itinycheng.github.io/
