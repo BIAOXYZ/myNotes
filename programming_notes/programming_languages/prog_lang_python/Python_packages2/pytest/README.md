@@ -13,3 +13,8 @@ Welcome to pytest-cov’s documentation! https://pytest-cov.readthedocs.io/en/la
 
 Calmcode -- pytest
 - pytest: introduction https://calmcode.io/pytest/introduction.html
+
+# 问题
+
+## pytest 中 logging 模块不打印
+>> //notes：可以通过在 pytest 命令行工具中增加参数 `--log-level=INFO` 来使 logging 生效。

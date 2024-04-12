@@ -93,3 +93,12 @@ Linux post-installation steps for Docker Engine https://docs.docker.com/engine/i
     ```sh
     docker run hello-world
     ```
+
+# jdk
+
+## Debian 10 装 java8
+```sh
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 8.0.382-albba
+```
