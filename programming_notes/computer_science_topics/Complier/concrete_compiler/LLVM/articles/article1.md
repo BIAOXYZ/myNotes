@@ -60,6 +60,24 @@
     ```
   * > 查看preprocessor(预处理)的结果: `$ clang -E main.m`
   * > 这个命令敲出，终端就会打印许多信息，大致如下：
+    ```c
+    # 1 "main.m"
+    # 1 "<built-in>" 1
+    # 1 "<built-in>" 3
+    # 353 "<built-in>" 3
+    # 1 "<command line>" 1
+    # 1 "<built-in>" 2
+    # 1 "main.m" 2
+    .
+    .
+    .
+      int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        NSLog(@"Hello, World!");
+    }
+    return 0;
+    }
+    ```
 - > **词法分析**
   * > 词法分析，生成Token:  `$ clang -fmodules -E -Xclang -dump-tokens main.m`
   * > 将代码分成一个个小单元（token） 举例如下：
@@ -91,7 +109,7 @@
     r_brace '}'  [StartOfLine]  Loc=<main.m:20:1>
     eof ''      Loc=<main.m:20:2>
     ```
-    > 可以看出，词法分析的时候，将上面的代码拆分一个个token，后面数字表示某一行的第几个字符，例如第一个void，表示第18行第一个字符。
+    > 可以看出，词法分析的时候，将上面的代码拆分一个个token，***后面数字表示某一行的第几个字符，例如第一个`void`，表示`第18行` `第一个`字符***。
 - > **语法树-AST**
   * > 语法分析，生成语法树(AST，Abstract Syntax Tree): `$ clang -fmodules -fsyntax-only -Xclang -ast-dump main.m`
   * > 通过语法树，我们能知道这个代码是做什么的。
