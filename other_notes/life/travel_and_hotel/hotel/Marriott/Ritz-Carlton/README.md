@@ -66,6 +66,8 @@ tag:西安丽思卡尔顿 https://www.flyertea.com/tag/%E8%A5%BF%E5%AE%89%E4%B8%
 
 天津丽思卡尔顿/三亚海棠湾天房洲际终于卖出去了 | HA https://mp.weixin.qq.com/s/PEUp6XZUWYMEdWoXAD0RXw
 
+满足你的城堡梦！3k一晚行政套房，一天五顿行政酒廊是什么体验？ https://www.bilibili.com/video/BV1zp4y1L7xq/
+
 ## 待分类
 
 酒店体验 篇一：【多图预警】上海浦东丽思卡尔顿套房深度评测 https://post.smzdm.com/p/a6lnween/
