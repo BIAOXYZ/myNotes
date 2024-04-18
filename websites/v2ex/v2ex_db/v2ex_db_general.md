@@ -1,4 +1,26 @@
 
+对数据库感兴趣，但完全接受不了 cpp https://www.v2ex.com/t/1032919
+```console
+看 CMU 的 15445/645 课程，结果整个项目基于 BusTub （一个 C++写的教学数据库），对于 CPP 我是真的提不起一丁点兴趣，
+看它各种操蛋语法很是痛苦，什么 move constructors 、左右值、&&，我感觉很难快速掌握这个“工具”去学习我想学的，反而会在工具上花费大量时间...
+
+想问下各位大佬们有什么建议吗？贴一下在看的资料：
+• 15445/645：主要看这个课程，但是项目因为 CPP 卡住
+• Architecture of a Database System：当作大纲来看，很多细节内容完全不了解
+• Database system concepts：本科数据库课程的教材，来拿当字典翻概念
+• Designing Data-Intensive Applications：导师强力推荐的书，在一点点看
+```
+- > 可以跟着这个教程学一下，c 比 cpp 简单多了: https://github.com/akerdi/buildyourowndatabase
+- > 叶公好龙
+- > https://github.com/risingwavelabs/risingwave
+- > MIT 6.5830
+- > https://github.com/cmu-db/15445-bootcamp 不如趁还在学校的时候先学 c++，早晚也要学的
+- > https://cs186berkeley.net/ 你需要这个，这是 java 实现的版本。不喜欢 cpp 就先绕过，先直奔目标学会基础
+- > 推荐 2 个课程：CS186 ，他的实验是基于 Java 的。清华大学的数据库课程 https://www.bilibili.com/video/BV15u4y1Q71R/ 楼主有空可以看下，我也比较纠结选择哪个课程
+- > 传统数据库实现可以看《 Database System Implementation 》，《 Designing Data-Intensive Applications 》和实现关系不大，主要讲应用层怎么做技术选型的。
+- > try this https://cstack.github.io/db_tutorial/ Writing a sqlite clone from scratch in C
+- > 纯 Java 的数据库，学习够用了 https://github.com/lealone/Lealone
+
 【[:star:][`*`]】 数据库事务隔离级别问题 https://www.v2ex.com/t/1026735
 ```console
 可能我这个问题提的有点儿肤浅，大佬们别嘲笑。我有个疑问，可重读级别下，读的数据可能是个假的，是个老版本的，这到底有啥作用。
@@ -70,7 +92,7 @@
 - > 没事别玩 hbase,你把握不住
   >> 哈哈哈，HBase 确实容易出问题
 
-【[:star:][`*`]】 数据库/存储学习路径推荐 https://www.v2ex.com/t/913147
+~~数据库/存储学习路径推荐 https://www.v2ex.com/t/913147~~
 ```console
 必看课程
   - CMU-15445 和 CMU-15721 https://www.youtube.com/@CMUDatabaseGroup
@@ -82,8 +104,8 @@
   - 然后自己去实践写一个，例如写一个简单的 bitcask 、B+ 树存储引擎，或者 LSM 存储引擎。
   - 之所以推荐写存储类的小项目，主要是因为存储层的 KV 一般比较好实现，同时又能够了解到一些数据库的基本设计理念。
   - 这里推荐下我的两个项目：
-      * https://github.com/flower-corp/rosedb
-      * https://github.com/flower-corp/lotusdb
+      * ~~https://github.com/flower-corp/rosedb~~
+      * ~~https://github.com/flower-corp/lotusdb~~
 
 事务 /MVCC
 

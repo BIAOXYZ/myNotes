@@ -1,7 +1,7 @@
 
 # 1
 
-【[:star:][`*`]】 深入浅出让你理解什么是LLVM https://www.jianshu.com/p/1367dad95445
+【[:star:][`*`]】 深入浅出让你理解什么是LLVM https://www.jianshu.com/p/1367dad95445 || https://web.archive.org/web/20230511220751/https://www.jianshu.com/p/1367dad95445
 - > 美国计算机协会 (ACM) 将其2012 年软件系统奖项颁给了LLVM，之前曾经获得此奖项的软件和技术包括:Java、Apache、 Mosaic、the World Wide Web、Smalltalk、UNIX、Eclipse等等
 创始人:Chris Lattner，亦是Swift之父
 - > 趣闻：Chris Latter本来只是想写一个底层的虚拟机，这也是LLVM名字的由来，`low level virtual machine`，跟Java的JVM虚拟机一样，可是后来，llvm从来没有被用作过虚拟机，哪怕LLVM的名气已经传开了。所以人们决定仍然叫他LLVM，更多的时候只是当作“商标”一样的感觉在使用，其实它跟虚拟机没有半毛钱关系。官方描述如下：`The name "LLVM" itself is not an acronym; it is the full name of the project.` “LLVM”这个名称本身不是首字母缩略词; 它是项目的全名。

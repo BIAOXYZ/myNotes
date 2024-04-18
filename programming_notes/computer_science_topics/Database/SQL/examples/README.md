@@ -146,6 +146,11 @@ eef56cb5d207 :)
 ## 4
 
 ```sql
+-- 此外有些数据库（比如 Hive），可能 time 和 date 是关键词，所以建表会失败。可以在建表语句里 time 和 date 后面随便加个1
+---- create table filter_input_a (uid int, val int, t int, diag varchar(255), time1 int);
+---- create table filter_input_b (device_id int, age varchar(255), gender varchar(255), date1 int, y int, med varchar(255), time1 int);
+
+
 -- create table filter_input_a (uid int, val int, t int, diag varchar(255), time int) ENGINE = TinyLog;
 create table filter_input_a (uid int, val int, t int, diag varchar(255), time int);
 insert into filter_input_a values (44969473, 2, 1, 'hd', 23);

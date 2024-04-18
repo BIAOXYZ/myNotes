@@ -32,7 +32,7 @@ CPack 入门指南 https://www.v2ex.com/t/673146
 
 # huiwang520
 
-我的 2023 年，关于工作、开源、副业 https://www.v2ex.com/t/1002813
+~~我的 2023 年，关于工作、开源、副业 https://www.v2ex.com/t/1002813~~
 - > 去年六月份加入到现在的公司，目前已经一年多了，今年全年的时间，逐步深入的参与到数据库内核的一些 feature 开发中来，做了非常多的事情，包括：
   * > 支持数据库中的并发创建索引（ Create Index Concurrently 和 Reindex Concurrently ），主要是参考了 Postgres 的做法，达到的基本效果是在索引创建和重建期间，不阻塞数据表的 DML 操作
   * > 为数据库引入了 pgvector 和 kafka fdw 插件，支持向量搜索和 Kafka 外部数据源
