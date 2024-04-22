@@ -1,4 +1,8 @@
 
+Memory used 很高 但是 top 却查不到高消耗的进程 https://www.v2ex.com/t/1034590
+- > 可能有硬件驱动，直接 map 了物理内存，看 `directmap` 能看出来。以前碰到过类似的问题，因为 huge page，网卡驱动有 bug，ringbuf 占用了大量物理内存。
+- > ***在操作系统角度来看，物理内存除了分配给用户空间进程使用***，还要给内核任务、硬件外设和 cpu 交换（ `dma` ）、文件系统 buffer/cache 、内核内存算法还有开销。 <br> ***所以只看资源管理器或 `top` 里面的用户进程不一定能查到内存消耗在哪里了***。那个设备的内核内存开销也不正常，`cat /proc/slabinfo` 看看。
+
 Linux 内核该怎么学啊？ https://www.v2ex.com/t/932062
 - > 同济大学赵炯编著的《 Linux 内核完全注释》 <br> 中文版：www.oldlinux.org/download/CLK-5.0-WithCover.pdf <br> 英文版：www.oldlinux.org/download/ECLK-5.0-WithCover.pdf
   >> 【[:star:][`*`]】 //notes：这两本书是真的牛，都是一千多页。。。
