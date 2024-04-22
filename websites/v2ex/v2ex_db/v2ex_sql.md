@@ -1,4 +1,11 @@
 
+哪里有 sql 的练习可以做 https://www.v2ex.com/t/1034135
+- > 你需要的是这个： https://www.sql-practice.com/
+  >> 这个挺好，不用自己建表了，还是多张表关联，日常用到的都涵盖了。
+- > 《 SQL 解惑（第二版）》，里面有 75 个问题，并用 SQL 编程解决。跟着做完，SQL 能力肯定能提升很多。。
+- > 不知道有没有过时 sqlzoo
+- > hackerrank
+
 【[:star:][`*`]】 大家喜欢用 ORM 还是直接写 SQL https://www.v2ex.com/t/1004383
 - > 投 SQL92 一票。小项目怎么顺手怎么来。大项目特别是有性能要求的，ORM hold 不 hold 得住先？
 - > 都用，***简单的 orm ，复杂的 sql***

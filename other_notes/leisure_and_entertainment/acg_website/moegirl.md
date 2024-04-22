@@ -65,3 +65,15 @@ LoveLive!学园偶像祭， 是编辑数量最多的条目，共有4612次更改
 
 萌娘共享 https://commons.moegirl.org/Mainpage
 - 文件:智慧的眼神.png https://commons.moegirl.org/File:%E6%99%BA%E6%85%A7%E7%9A%84%E7%9C%BC%E7%A5%9E.png
+
+# 萌百镜像站
+  
+## 因为《葬送的芙莉莲》发现的：
+- 葬送的芙莉莲 https://moegirl.icu/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
+- 葬送的芙莉莲 https://moegirl.uk/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
+
+https://moegirl.icu  【这个可能是萌百官方的镜像站】
+- 萌娘百科:镜像站 https://moegirl.uk/%E8%90%8C%E5%A8%98%E7%99%BE%E7%A7%91:%E9%95%9C%E5%83%8F%E7%AB%99
+
+https://moegirl.uk  【这个可能是第三方的镜像站】
+- 首页 https://moegirl.uk/%E9%A6%96%E9%A1%B5
