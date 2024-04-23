@@ -1,4 +1,8 @@
 
+最近发现的 C++ 笑话： switch(a){ case 1: return 1;} https://www.v2ex.com/t/1034939
+- > 本质的核心问题是 C++ 没有真正的 exhaustive 的 enum ，导致编译器无法限定 `E` 的值在一个可优化的 immedate value 范围内，无法将其在 comptime 求出来，所以将其放到参数里无法做编译期生成。为什么 `to_runtime` 又能 work 了？因为在当前场景下，编译器推导出来对于 `consteval` 函数 `flattern`，可行的值是有限的，所以能够正常编译。把最后一个分支改为 `f(_e)`，编译器会报错 `f` 为一个 `consteval function`，但是参数是 comptime unknown 的。对于有 exhaustive enum 的语言（ rust 、zig 等），要实现这种需求应该是 trivial 的。
+  >> 补一句，通过 template + if constexpr + static_assert 可能可以将这个 `to_runtime` 自动化生成出来，不过我也好久没写过 C++ 了，如果不行当我没说。
+
 【[:star:][`*`]】 关于 C++读取大小为 2.51 GB (2,701,131,776 字节)到 `char* yuanshuju` 数组中去 https://www.v2ex.com/t/1025635
 ```console
 发现问题了。 问题代码：
