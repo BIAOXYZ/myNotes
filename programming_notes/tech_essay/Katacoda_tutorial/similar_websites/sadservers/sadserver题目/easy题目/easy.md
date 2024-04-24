@@ -48,17 +48,17 @@ https://sadservers.com/newserver/saskatoon
 
 实战过程：
 ```sh
-admin@ip-172-31-27-155:/$ cat /home/admin/access.log | wc -l
+$ cat /home/admin/access.log | wc -l
 10000
-admin@ip-172-31-27-155:/$ 
-admin@ip-172-31-27-155:/$ head -n 5 /home/admin/access.log 
+$ 
+$ head -n 5 /home/admin/access.log 
 83.149.9.216 - - [17/May/2015:10:05:03 +0000] "GET /presentations/logstash-monitorama-2013/images/kibana-search.png HTTP/1.1" 200 203023 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"
 83.149.9.216 - - [17/May/2015:10:05:43 +0000] "GET /presentations/logstash-monitorama-2013/images/kibana-dashboard3.png HTTP/1.1" 200 171717 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"
 83.149.9.216 - - [17/May/2015:10:05:47 +0000] "GET /presentations/logstash-monitorama-2013/plugin/highlight/highlight.js HTTP/1.1" 200 26185 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"
 83.149.9.216 - - [17/May/2015:10:05:12 +0000] "GET /presentations/logstash-monitorama-2013/plugin/zoom-js/zoom.js HTTP/1.1" 200 7697 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"
 83.149.9.216 - - [17/May/2015:10:05:07 +0000] "GET /presentations/logstash-monitorama-2013/plugin/notes/notes.js HTTP/1.1" 200 2892 "http://semicomplete.com/presentations/logstash-monitorama-2013/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"
-admin@ip-172-31-27-155:/$
-admin@ip-172-31-27-155:/$ awk '{print $1}' /home/admin/access.log | head
+$
+$ awk '{print $1}' /home/admin/access.log | head
 83.149.9.216
 83.149.9.216
 83.149.9.216
@@ -69,13 +69,26 @@ admin@ip-172-31-27-155:/$ awk '{print $1}' /home/admin/access.log | head
 83.149.9.216
 83.149.9.216
 83.149.9.216
-admin@ip-172-31-27-155:/$
-admin@ip-172-31-27-155:/$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort -r | head -1
+$
+$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort -r | head -1
     482 66.249.73.135
-admin@ip-172-31-27-155:/$ 
-
+$ 
 # 或者等价的： 
-admin@ip-172-31-27-155:/$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort | tail -1
+$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort | tail -1
     482 66.249.73.135
-admin@ip-172-31-27-155:/$
+$
+
+# 然后再次用 awk 提取 '482 66.249.73.135' 中的 ip 地址，并写入最终文件 
+$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort -r | head -1 | awk '{print $2}'
+66.249.73.135
+$
+
+# 最终形成一行搞定的版本
+$ awk '{print $1}' /home/admin/access.log | sort | uniq -c | sort -r | head -1 | awk '{print $2}' | xargs echo > /home/admin/highestip.txt
+$ 
+$ cat /home/admin/highestip.txt
+66.249.73.135
+$
+$ sha1sum /home/admin/highestip.txt
+6ef426c40652babc0d081d438b9f353709008e93  /home/admin/highestip.txt
 ```
