@@ -1,4 +1,15 @@
 
+【[:star:][`*`]】 在 git 分支名上面加斜杠真的太恶心了 https://www.v2ex.com/t/1035964
+- > 因为分支加斜杠，会在图形化 git 工具是显示为文件夹（入行时某位前辈说的）
+- > https://dev.to/basementdevs/be-a-better-developer-with-these-git-good-practices-2dim
+- > 我同事写了个对比 git 俩分支然后生成 releasenote 的工具，结果因为这种分支名，在最后生成结果的时候报错，找不到路径，笑死
+- > 这不是正常的 git flow 流程吗
+- > https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+- > ***会在 `.git` 下面生成对应的目录 <br> 例如分支：`feature/mytest` `.git/refs/heads/feature/mytest`***
+- > 不光 git 分支名的斜杠支持文件夹折叠，redis 的 key 也是这样（在某些 gui 里
+- > 哈哈哈哈，恭喜 LZ 被一群 GUI 工具党教育了。。。。。。我也是习惯 CLI ，但是的确这个命令对有歧义的地方处理得很糟糕。。。
+- > 感觉 git 本身就是这么设计的啊，分支就是文件夹。分支分为本地分支和远程分支，本地分支在 `.git/refs/heads` 下，以斜杠为目录存储，比如 main 、feat/feat1 ；远程分支在 `.git/refs/remotes` 下，以远程名与分支名用斜杠分隔，按目录来存，比如 origin/main 、upstream/feat/feat1 。远程名里也是可以包含斜杠的，所以你的上游不仅可以叫 origin 、upstream ，也可以叫 upstream/cn 、upstream/us 。所以远程分支也可以是 upstream/cn/feat/feat1 ，其中 upstream/cn 是远程名，feat/feat1 是分支名。 <br> 不过，这个确实可能会存在冲突的问题，比如你本地一个分支名就可以叫做 origin/main ，这样就会和 remotes/origin/main 冲突，在 git checkout origin/main 的时候就会收到警告：warning: refname 'origin/main' is ambiguous.。这时候实际上切换到的是本地的分支，要切换到远程分支进入 detached HEAD 状态，需要指定 git checkout remotes/origin/main 。而如果本地有个分支叫做 remotes/origin/main 的话，又会冲突，那要切到远程分支就要指定 refs/remotes/origin/main 。如果本地又有了 refs/remotes/origin/main 分支了，emmmm ，应该就没办法直接用分支名来切换了。
+
 被 Microsoft Authenticator 坑惨了，所有 2FA 全丢了 https://www.v2ex.com/t/989278
 ```console
 感谢 @D33109 的建议，已换开源的 https://github.com/jamie-mh/AuthenticatorPro
