@@ -9,6 +9,12 @@ re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || 
 
 正则表达式HOWTO https://docs.python.org/zh-cn/dev/howto/regex.html
 
+# 正则表达式在线
+
+regular expressions 101 https://regex101.com/
+
+Regex Vis https://regex-vis.com/
+
 # 其他
 
 【From realpython】
@@ -18,8 +24,6 @@ re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || 
 Python正则表达式操作指南 http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97
 
 `5. 正则表达式` https://pythonhowto.readthedocs.io/zh-cn/latest/regular.html
-
-🇨🇳 翻译: 学习正则表达式的简单方法 https://github.com/cdoco/learn-regex-zh
 
 正则表达式解析，让你一次明白正则表达式 https://segmentfault.com/a/1190000038392952
 

@@ -1,4 +1,8 @@
 
+30分钟入门 Hive SQL（HQL 入门篇） - 钟林子钰的文章 - 知乎 https://zhuanlan.zhihu.com/p/195836631
+- > **2.5 窗口函数**
+  * > 其它更丰富的窗口函数，我这不赘述，篇幅太大，完全可以重开一篇新的文章。建议参考阿里云 MaxCompute 的这份「[窗口函数](https://help.aliyun.com/zh/maxcompute/user-guide/window-functions-1)」的文档，写得非常详细，强烈推荐！
+
 # hive sql 语法
 
 ## Lateral View explode

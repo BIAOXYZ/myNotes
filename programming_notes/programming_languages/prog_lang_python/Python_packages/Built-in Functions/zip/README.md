@@ -50,9 +50,14 @@ Python zip() https://www.programiz.com/python-programming/methods/built-in/zip
   c = ('x', 'y', 'z')
   v = (3, 4, 5)
   ```
-  >> 【[:star:][`*`]】 //notes：注意，这里其实就相当于把二维矩阵的列给取出来了，是一个常用的小技巧。
-
-zip() in Python https://www.geeksforgeeks.org/zip-in-python/
+  >> 【[:star:][`*`]】 //notes：注意，这里其实就相当于把二维矩阵的列给取出来了，是一个常用的小技巧。leetcode 里经常用到，比如：
+  ```py
+  # 求矩阵的所有列的时候用到了一个技巧 `zip(*grid)`
+  # 此外，解包后里面的元素（也就是矩阵的列）已经是 tuple 类型了，比如：
+  grid = [[4,3,2,1],[44,33,22,11],[444,333,222,111]]
+  cols_list = list(zip(*grid)) 
+  print(cols_list)  # [(4, 44, 444), (3, 33, 333), (2, 22, 222), (1, 11, 111)]
+  ```
 
 Python zip() 函数 https://www.runoob.com/python/python-func-zip.html
 - > zip 方法在 Python 2 和 Python 3 中的不同：在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。如果需要了解 Pyhton3 的应用，可以参考 Python3 zip()。
@@ -84,3 +89,5 @@ Python zip()用法，看这一篇就够了 https://blog.csdn.net/PaulZhn/article
 
 # LeetCode题目
 - `LC944. 删列造序` https://leetcode.cn/problems/delete-columns-to-make-sorted/ 【用 `zip(*mtx)` 返回矩阵 mtx 的列组成的 `list`，这个是取矩阵列的常用技巧。】
+- `LC2352. 相等行列对` https://github.com/BIAOXYZ/variousCodes/blob/72617b47df800eee750a689df639794687af2d19/_CodeTopics/LeetCode/2201-2400/002352/002352.py3
+- `LC2639. 查询网格图中每一列的宽度` https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/2601-2800/002639/002639.py3

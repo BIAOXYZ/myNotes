@@ -48,7 +48,7 @@
 
 # 葬送的芙莉莲
 
-《葬送的芙莉莲》相关链接： 【From: https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode_contest/weekly/weekly2024/394-absent-16-bj/README.md】
+《葬送的芙莉莲》相关链接： 【From: https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode_contest/weekly/weekly2024/394-absent-16-bj/README.md 】
 - 葬送的芙莉莲 https://zh.moegirl.org.cn/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
 - 萌娘百科的两个新镜像站（似乎一个是萌百官方的，一个是第三方的）
   * 葬送的芙莉莲 https://moegirl.icu/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
