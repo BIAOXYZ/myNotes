@@ -11,9 +11,11 @@ re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || 
 
 # 正则表达式在线
 
-regular expressions 101 https://regex101.com/
+regular expressions 101 https://regex101.com/ || Regex101 https://github.com/firasdib/Regex101
 
-Regex Vis https://regex-vis.com/
+Regex Vis https://regex-vis.com/ || Regex-Vis https://github.com/Bowen7/regex-vis
+
+RegexLearn https://regexlearn.com/ || 🔓 regexlearn.com: Unlock the Secrets of Regex https://github.com/aykutkardas/regexlearn.com
 
 # 其他
 

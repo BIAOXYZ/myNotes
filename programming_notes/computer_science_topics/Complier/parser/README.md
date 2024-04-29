@@ -39,6 +39,14 @@ LL parser https://en.wikipedia.org/wiki/LL_parser
 
 How do `LL(*)` parsers work? https://stackoverflow.com/questions/2943885/how-do-ll-parsers-work
 
+## 递归下降
+
+递归下降解析器 https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92%E4%B8%8B%E9%99%8D%E8%A7%A3%E6%9E%90%E5%99%A8
+
+编译原理：递归下降分析 https://moyangsensei.github.io/2019/04/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%EF%BC%9A%E9%80%92%E5%BD%92%E4%B8%8B%E9%99%8D%E5%88%86%E6%9E%90/
+
+2.19 实现一个简单的递归下降分析器 https://python3-cookbook.readthedocs.io/zh-cn/latest/c02/p19_writing_recursive_descent_parser.html
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

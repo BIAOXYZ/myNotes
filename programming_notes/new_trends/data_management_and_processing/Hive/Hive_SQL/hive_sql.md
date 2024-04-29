@@ -7,6 +7,13 @@
 
 ## Lateral View explode
 
+LanguageManual LateralView https://cwiki.apache.org/confluence/display/hive/languagemanual+lateralview
+- > Lateral View Syntax
+  ```sql
+  lateralView: LATERAL VIEW udtf(expression) tableAlias AS columnAlias (',' columnAlias)*
+  fromClause: FROM baseTable (lateralView)*
+  ```
+
 【Hive】split()、explode()、lateral view用法和区别 https://blog.csdn.net/qq_32727095/article/details/120367400
 
 Hive SQL语法Explode 和 Lateral View https://www.cnblogs.com/pandaly/p/16397215.html
@@ -29,6 +36,78 @@ Hive SQL语法Explode 和 Lateral View https://www.cnblogs.com/pandaly/p/1639721
 ```
 
 Hive列转行 (Lateral View + explode)详解 - 考研大魔王的文章 - 知乎 https://zhuanlan.zhihu.com/p/115913870
+
+### 个人实战
+
+```sql
+CREATE TABLE Students (ID INT, Name STRING, Hobbies ARRAY<STRING>) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+
+INSERT INTO Students VALUES (1, 'John', array('Reading', 'Swimming')), (2, 'Mary', array('Dancing', 'Singing')), (3, 'David', array('Football', 'Basketball'));
+
+SELECT s.ID, s.Name, h.hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby;
+
+SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby;
+```
+```sql
+-- 结论就是 LATERAL VIEW 这个的结构【 LATERAL VIEW udtf(expression) tableAlias AS columnAlias (',' columnAlias)* 】非常固定：
+--- 1. 试着在 tableAlias 前加个 as ；或者去掉 tableAlias。都是不行的。
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby;
+INFO  : Compiling command(queryId=hive_20240428092628_0adda7de-5ab2-49b7-8824-f49bd2cfa6da): SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Created Hive schema: Schema(fieldSchemas:[FieldSchema(name:id, type:int, comment:null), FieldSchema(name:name, type:string, comment:null), FieldSchema(name:hobby, type:string, comment:null)], properties:null)
+INFO  : Completed compiling command(queryId=hive_20240428092628_0adda7de-5ab2-49b7-8824-f49bd2cfa6da); Time taken: 0.042 seconds
+INFO  : Concurrency mode is disabled, not creating a lock manager
+INFO  : Executing command(queryId=hive_20240428092628_0adda7de-5ab2-49b7-8824-f49bd2cfa6da): SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby
+INFO  : Completed executing command(queryId=hive_20240428092628_0adda7de-5ab2-49b7-8824-f49bd2cfa6da); Time taken: 0.001 seconds
++-----+--------+-------------+
+| id  |  name  |    hobby    |
++-----+--------+-------------+
+| 1   | John   | Reading     |
+| 1   | John   | Swimming    |
+| 2   | Mary   | Dancing     |
+| 2   | Mary   | Singing     |
+| 3   | David  | Football    |
+| 3   | David  | Basketball  |
++-----+--------+-------------+
+6 rows selected (0.069 seconds)
+0: jdbc:hive2://localhost:10000/>
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) as h AS hobby;
+Error: Error while compiling statement: FAILED: ParseException line 1:71 cannot recognize input near 'as' 'h' 'AS' in table alias (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000/>
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) AS hobby;
+Error: Error while compiling statement: FAILED: ParseException line 1:71 cannot recognize input near 'AS' 'hobby' '<EOF>' in table alias (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000/>
+
+--- 2. 试着把 columnAlias 前的 as 去掉；或者去掉 as + columnAlias；甚至去掉得只剩 explode() 结尾。同样都不行。
+INFO  : Compiling command(queryId=hive_20240428092743_ae8d4f7f-68c8-47c0-9b27-9f821e5e1cf0): SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Created Hive schema: Schema(fieldSchemas:[FieldSchema(name:id, type:int, comment:null), FieldSchema(name:name, type:string, comment:null), FieldSchema(name:hobby, type:string, comment:null)], properties:null)
+INFO  : Completed compiling command(queryId=hive_20240428092743_ae8d4f7f-68c8-47c0-9b27-9f821e5e1cf0); Time taken: 0.03 seconds
+INFO  : Concurrency mode is disabled, not creating a lock manager
+INFO  : Executing command(queryId=hive_20240428092743_ae8d4f7f-68c8-47c0-9b27-9f821e5e1cf0): SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby
+INFO  : Completed executing command(queryId=hive_20240428092743_ae8d4f7f-68c8-47c0-9b27-9f821e5e1cf0); Time taken: 0.0 seconds
++-----+--------+-------------+
+| id  |  name  |    hobby    |
++-----+--------+-------------+
+| 1   | John   | Reading     |
+| 1   | John   | Swimming    |
+| 2   | Mary   | Dancing     |
+| 2   | Mary   | Singing     |
+| 3   | David  | Football    |
+| 3   | David  | Basketball  |
++-----+--------+-------------+
+6 rows selected (0.052 seconds)
+0: jdbc:hive2://localhost:10000/>
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h hobby;
+Error: Error while compiling statement: FAILED: ParseException line 1:73 extraneous input 'hobby' expecting EOF near '<EOF>' (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000/>
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h;
+Error: Error while compiling statement: FAILED: SemanticException [Error 10004]: Line 1:17 Invalid table alias or column reference 'hobby': (possible column names are: s.id, s.name, s.hobbies, h.col) (state=42000,code=10004)
+0: jdbc:hive2://localhost:10000/>
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies);
+Error: Error while compiling statement: FAILED: ParseException line 1:70 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in table alias (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000/>
+```
 
 # hive sql 问题
 
