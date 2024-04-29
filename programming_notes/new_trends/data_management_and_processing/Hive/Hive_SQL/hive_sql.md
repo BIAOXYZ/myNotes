@@ -79,6 +79,7 @@ Error: Error while compiling statement: FAILED: ParseException line 1:71 cannot 
 0: jdbc:hive2://localhost:10000/>
 
 --- 2. 试着把 columnAlias 前的 as 去掉；或者去掉 as + columnAlias；甚至去掉得只剩 explode() 结尾。同样都不行。
+0: jdbc:hive2://localhost:10000/> SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby;
 INFO  : Compiling command(queryId=hive_20240428092743_ae8d4f7f-68c8-47c0-9b27-9f821e5e1cf0): SELECT ID, Name, hobby FROM Students s LATERAL VIEW explode(s.Hobbies) h AS hobby
 INFO  : Semantic Analysis Completed (retrial = false)
 INFO  : Created Hive schema: Schema(fieldSchemas:[FieldSchema(name:id, type:int, comment:null), FieldSchema(name:name, type:string, comment:null), FieldSchema(name:hobby, type:string, comment:null)], properties:null)

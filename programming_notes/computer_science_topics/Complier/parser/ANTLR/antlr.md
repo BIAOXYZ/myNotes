@@ -104,6 +104,19 @@ Get original text of an Antlr rule https://stackoverflow.com/questions/7443860/g
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# antlr 问题
+
+## antlr rule 的 mutually left-recursive 相关问题
+
+Antlr4: The following sets of rules are mutually left-recursive https://stackoverflow.com/questions/41017948/antlr4-the-following-sets-of-rules-are-mutually-left-recursive
+- https://stackoverflow.com/questions/41017948/antlr4-the-following-sets-of-rules-are-mutually-left-recursive/41034641#41034641
+  * > ANTLR4 supports only direct left recursion (which is already an improvement over previous versions). That means you can have left recursion in a single rule, but not over multiple rules (e.g. rule `a` uses rule `b` which uses `a` as the first rule in an alternative.
+
+Antlr4 left recursive rule contains a left recursive alternative which can be followed by the empty string https://stackoverflow.com/questions/39714079/antlr4-left-recursive-rule-contains-a-left-recursive-alternative-which-can-be-fo
+- https://stackoverflow.com/questions/39714079/antlr4-left-recursive-rule-contains-a-left-recursive-alternative-which-can-be-fo/39718867#39718867
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 如何学习ANTLR? - 知乎 https://www.zhihu.com/question/437337408
