@@ -6,6 +6,8 @@
   * > 代码实现参考：https://github.com/webgjc/sql-parser/
 
 分类 SQL解析与数据血缘 下的文章 https://makeyourchoice.cn/category/sql_parse_lineage/
+- 基于Antlr对PostgreSql血缘解析（表、列），并存入Atlas https://makeyourchoice.cn/archives/523/
+  * > 注意：ANTLR的运行库提供了两种遍历树的机制：监听器机制与访问器机制。***与访问器不同的是，监听器的方法会被ANTLR提供的遍历器对象（比如ParseTreeWalker）自动调用，而在访问器的方法中，必须显示调用visit方法来访问子节点。如果没有调用visit方法就会导致对应的子树不被访问***。而且监听器方法是没有返回值的（即返回类型是void）。
 - 从事SQL血缘解析一年后，谈谈我对它的理解 https://makeyourchoice.cn/archives/568/
 
 SQL血缘解析原理 https://blog.csdn.net/shy_snow/article/details/133373567

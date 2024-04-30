@@ -3,6 +3,9 @@
 
 Getting Started With Apache Hive Software https://hive.apache.org/developement/gettingstarted/
 
+LanguageManual UDF https://cwiki.apache.org/confluence/display/Hive/LanguageManual%20UDF
+- https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-Built-inTable-GeneratingFunctions(UDTF)
+
 # Hive 其他
 
 Hive – INSERT INTO vs INSERT OVERWRITE Explained https://sparkbyexamples.com/apache-hive/hive-insert-into-vs-insert-overwrite/

@@ -23,6 +23,42 @@ GitHub上README写法暨GFM语法解读 https://blog.csdn.net/guodongxiaren/arti
 
 ***--------------------------------------------------分割线--------------------------------------------------***
 
+Basic writing and formatting syntax https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- > **Alerts**
+  ```console
+  > [!NOTE]
+  > Useful information that users should know, even when skimming content.
+
+  > [!TIP]
+  > Helpful advice for doing things better or more easily.
+
+  > [!IMPORTANT]
+  > Key information users need to know to achieve their goal.
+
+  > [!WARNING]
+  > Urgent info that needs immediate user attention to avoid problems.
+
+  > [!CAUTION]
+  > Advises about risks or negative outcomes of certain actions.
+  ```
+- > Here are the rendered alerts:
+  
+  > [!NOTE]
+  > Useful information that users should know, even when skimming content.
+
+  > [!TIP]
+  > Helpful advice for doing things better or more easily.
+
+  > [!IMPORTANT]
+  > Key information users need to know to achieve their goal.
+
+  > [!WARNING]
+  > Urgent info that needs immediate user attention to avoid problems.
+
+  > [!CAUTION]
+  > Advises about risks or negative outcomes of certain actions.
+
+
 Complete list of github markdown emoji markup https://gist.github.com/rxaviers/7360908 
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:

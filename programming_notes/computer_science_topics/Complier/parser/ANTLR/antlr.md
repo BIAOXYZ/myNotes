@@ -48,6 +48,11 @@ https://www.antlr.org/tools.html
 vscode-antlr4 https://github.com/mike-lischke/vscode-antlr4/tree/master || ANTLR4 grammar syntax support https://marketplace.visualstudio.com/items?itemName=mike-lischke.vscode-antlr4
 - Graphical Visualizations https://github.com/mike-lischke/vscode-antlr4/blob/master/doc/graphical-visualizations.md
 
+Eclipse Java development tools (JDT)  【//notes：但是已经都不维护了】
+- Debugging your grammars https://antlrv3ide.sourceforge.net/doc/gettingstarted/basictutorial/debuggingantlrgrammars.html
+- https://github.com/jknack/antlr-ide
+- https://github.com/antlr4ide/antlr4ide
+
 ## grun
 
 GRUN for Antlr4: How to use? https://stackoverflow.com/questions/69001510/grun-for-antlr4-how-to-use

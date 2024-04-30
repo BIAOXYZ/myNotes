@@ -6,10 +6,16 @@ Programming Tutorials https://programmingtutorials.top/  【//notes：这个是 
 
 ## hardware project
 
+网友从头开始“手搓” GPU，坦言项目难度要比预期更高 https://www.ithome.com/0/765/193.htm
+- > tiny-gpu https://github.com/adam-maj/tiny-gpu
+
 excelCPU
 - Excel 16-Bit CPU https://github.com/InkboxSoftware/excelCPU
 - Building a 16-bit CPU in a spreadsheet is Excel-lent engineering https://www.theregister.com/2024/02/02/16_bit_cpu_excel/
 - Functional 16-bit CPU built and runs in Excel, 3Hz processor includes 128KB of RAM, 16-color display, and a custom assembly language https://www.tomshardware.com/pc-components/cpus/functional-16-bit-cpu-built-and-runs-in-excel-including-128kb-of-ram-16-color-display-and-a-custom-assembly-language
+- 在 Excel 中构建 16 位 CPU！国外大牛极限“整活”：128KB RAM、16 色显示，还有自定义汇编 https://mp.weixin.qq.com/s/Mkg_g1KVQc75d843SB1PwQ
+  * > 在这个 Excel CPU 项目中，最为引人注目的成就之一是 Inkbox 为了这款实用的 Excel CPU，设计了一门功能完整的汇编语言。他把这门汇编语言命名为 `Excel-ASM 16`。***这门汇编语言包含了 23 种不同的指令，并支持变量、标签以及二进制文件。虽然这些都是汇编语言的基础功能，但对于运行在 Microsoft Excel 上的 16 位 CPU 来说，已经是相当完备的功能了***。
+  * > 强烈建议你观看作者发布的原始视频，这将帮助你深入理解 Excel 的底层功能，以及如何利用这些功能创建出功能完备的 16 位 CPU。Inkbox 详尽地解释了构建 16 位 Excel CPU 的每一个步骤，成功地演示了 CPU 的基础功能。虽然这些功能演示的时间被大幅度压缩——因为该 CPU 不超过 3 Hz 实际运行速度极慢，但依然足够给观众展示 CPU 内部的运行机制。
 
 ## os project
 
