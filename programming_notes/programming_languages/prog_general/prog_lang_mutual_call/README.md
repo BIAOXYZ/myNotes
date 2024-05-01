@@ -41,3 +41,7 @@ Go 与 C 的桥梁：cgo 入门，剖析与实践 - 腾讯技术工程的文章 
 # C++ & Rust
 
 CXX — safe FFI between Rust and C++ https://github.com/dtolnay/cxx
+
+# Java -> C
+
+Suggestions needed: Effective Java to C source code converter [closed] https://stackoverflow.com/questions/15912745/suggestions-needed-effective-java-to-c-source-code-converter
