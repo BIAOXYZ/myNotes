@@ -91,6 +91,7 @@ Postgresql源码（25）子事务可见性判断和性能问题 https://blog.csd
 
 postgresql内核开发 https://blog.csdn.net/postgres20/category_6538868.html
 - postgresql源码阅读快速上手 https://blog.csdn.net/postgres20/article/details/53354330
+- postgresql内核语法解析器详解 https://blog.csdn.net/postgres20/article/details/54709860
 
 postgresql源码阅读快速上手 https://blog.csdn.net/postgres20/article/details/53354330  
 - > 上面说的是运行中中断，实际使用中这样的操作场景可能比较少，更多的往往是出错情况下，想深究错误原因需要调试下。比方说执行某个语句，没有得出想要的结果，报错了,给出的错误信息不满意，或者说就是要看下执行流程，需要研究下代码，如何下手？下断点！当然，要在合适的地方下断点。pg内核报错接口已经封装好，只要在报错函数那下断点，所有错误都能断到，断到之后再看代码执行流程就很容易了，错误入口函数有这两个

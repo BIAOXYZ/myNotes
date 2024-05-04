@@ -58,6 +58,19 @@
   * 随便扯两句 https://movie.douban.com/review/15691548/
   * 《葬送的芙莉莲·第一季》台词摘录 https://movie.douban.com/review/15839742/
 
+连续两年震撼业界的新人监督，工作到无法正常走路的斋藤圭一郎是何许人也？丨动画起源志「咔」 https://www.bilibili.com/video/BV13r421n7mW/
+
+合集·「葬送的芙莉莲志」 https://space.bilibili.com/172085/channel/collectiondetail?sid=1831201
+- 动画人气投票：阿乌拉第二？芙莉莲第五！你们二次元是懂气人的丨葬送的芙莉莲志「咔」 https://www.bilibili.com/video/BV1px4y1e7Ua/  【//notes：这个视频里两次投票的结果就充分地说明了：一些狂热粉丝对事实的影响了。。。所以一人一票才是公平的- -】
+- 业界前辈指出的漫画致命伤，动画组用逆天改命的创意拯救丨葬送的芙莉莲志「咔」 https://www.bilibili.com/video/BV1Tz421Z7GB/
+
+合集·葬送的芙莉莲 https://space.bilibili.com/216844/channel/collectiondetail?sid=1776677
+- 一集封神！这就是动画改编巅峰！制作组曝经费无上限？！【葬送的芙莉莲】第26集表现？【1月新番】 https://www.bilibili.com/video/BV12D42177sy/
+
+一口气看完，葬送的芙莉莲1-115集！强烈推荐！最好看的10月新番 https://www.bilibili.com/video/BV1r94y1G73J/
+
+面对芙莉莲原作最拉跨的篇章，动画组的选择是？ https://www.bilibili.com/video/BV1KJ4m1h7xF/
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 干物妹小埋
