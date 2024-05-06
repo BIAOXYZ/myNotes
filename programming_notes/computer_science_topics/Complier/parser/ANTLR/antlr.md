@@ -40,10 +40,13 @@ ANTLR-4-Resource-Code https://github.com/GaoGian/ANTLR-4-Resource-Code
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# antlr tools
+# antlr 相关工具
 
 https://www.antlr.org/tools.html
+- ANTLR Lab http://lab.antlr.org/
 - ANTLR v4 https://plugins.jetbrains.com/plugin/7358-antlr-v4
+
+## various IDE extensions
 
 vscode-antlr4 https://github.com/mike-lischke/vscode-antlr4/tree/master || ANTLR4 grammar syntax support https://marketplace.visualstudio.com/items?itemName=mike-lischke.vscode-antlr4
 - Graphical Visualizations https://github.com/mike-lischke/vscode-antlr4/blob/master/doc/graphical-visualizations.md
@@ -59,7 +62,13 @@ GRUN for Antlr4: How to use? https://stackoverflow.com/questions/69001510/grun-f
 
 ### 个人实战
 
+实战1：官方简单的例子
 ```sh
+# 必须先编译生成相应的 java class 才能 debug，哪怕你用其他语言的 binding 也一样。
+$ cd 1-hello/
+$ antlr4 Hello.g4
+$ javac Hello*.java
+
 $ grun Hello r -gui
 hello bob
 ^D
@@ -70,6 +79,91 @@ $ grun Hello r -gui testhello.txt
 # 弹出生成的图片
 $
 ```
+
+实战2：hive官方语法文件
+```sh
+# https://github.com/apache/hive/blob/master/hplsql/src/main/antlr4/org/apache/hive/hplsql/Hplsql.g4
+$ mkdir test_hive_official_grammar
+$ cd test_hive_official_grammar/
+$ antlr4 Hplsql.g4 
+$ javac Hplsql*.java
+
+# 只输出 token
+$ grun Hplsql block -tokens
+select * from tb1;
+^D
+[@0,0:5='select',<T_SELECT>,1:0]
+[@1,7:7='*',<'*'>,1:7]
+[@2,9:12='from',<T_FROM>,1:9]
+[@3,14:16='tb1',<L_ID>,1:14]
+[@4,17:17=';',<';'>,1:17]
+[@5,19:18='<EOF>',<EOF>,2:0]
+
+# 输出 token 和 rule
+$ grun Hplsql block -tokens -trace
+select * from tb1;
+^D
+[@0,0:5='select',<T_SELECT>,1:0]
+[@1,7:7='*',<'*'>,1:7]
+[@2,9:12='from',<T_FROM>,1:9]
+[@3,14:16='tb1',<L_ID>,1:14]
+[@4,17:17=';',<';'>,1:17]
+[@5,19:18='<EOF>',<EOF>,2:0]
+enter   block, LT(1)=select
+enter   stmt, LT(1)=select
+enter   select_stmt, LT(1)=select
+enter   fullselect_stmt, LT(1)=select
+enter   fullselect_stmt_item, LT(1)=select
+enter   subselect_stmt, LT(1)=select
+consume [@0,0:5='select',<257>,1:0] rule subselect_stmt
+enter   select_list, LT(1)=*
+enter   select_list_item, LT(1)=*
+enter   select_list_asterisk, LT(1)=*
+consume [@1,7:7='*',<363>,1:7] rule select_list_asterisk
+exit    select_list_asterisk, LT(1)=from
+exit    select_list_item, LT(1)=from
+exit    select_list, LT(1)=from
+enter   from_clause, LT(1)=from
+consume [@2,9:12='from',<119>,1:9] rule from_clause
+enter   from_table_clause, LT(1)=tb1
+enter   from_table_name_clause, LT(1)=tb1
+enter   table_name, LT(1)=tb1
+enter   qident, LT(1)=tb1
+enter   ident, LT(1)=tb1
+consume [@3,14:16='tb1',<372>,1:14] rule ident
+exit    ident, LT(1)=;
+exit    qident, LT(1)=;
+exit    table_name, LT(1)=;
+exit    from_table_name_clause, LT(1)=;
+exit    from_table_clause, LT(1)=;
+exit    from_clause, LT(1)=;
+exit    subselect_stmt, LT(1)=;
+exit    fullselect_stmt_item, LT(1)=;
+exit    fullselect_stmt, LT(1)=;
+exit    select_stmt, LT(1)=;
+exit    stmt, LT(1)=;
+enter   stmt, LT(1)=;
+enter   semicolon_stmt, LT(1)=;
+consume [@4,17:17=';',<370>,1:17] rule semicolon_stmt
+exit    semicolon_stmt, LT(1)=<EOF>
+exit    stmt, LT(1)=<EOF>
+exit    block, LT(1)=<EOF>
+$ 
+$ grun Hplsql block -gui          
+select * from tb1;
+^D
+# 弹出生成的图片
+$
+```
+
+## antlr4-tools
+>> //notes：这个从能提供的功能角度看好像和 `grun` 差不多。好处就是：***`grun` 必须要把各种 java class 给编译出来（<ins>哪怕你用的是 antlr 的 python binding，如果想用 `grun` 去 debug，也得编</ins>。。。），但是这个 antlr4-tools 不用去编译那些 java 类***。但是这个似乎会自动下载一个 java 或者改 java 的路径，所以总觉得怕影响已有环境——但是docker里用是不错的。
+
+antlr4-tools https://github.com/antlr/antlr4-tools
+
+## not realiable but interesting tools
+
+antlr-grun-web https://github.com/xiaoiver/antlr-grun-web
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
