@@ -149,7 +149,7 @@ exit    semicolon_stmt, LT(1)=<EOF>
 exit    stmt, LT(1)=<EOF>
 exit    block, LT(1)=<EOF>
 $ 
-$ grun Hplsql block -gui          
+$ grun Hplsql block -gui
 select * from tb1;
 ^D
 # 弹出生成的图片
@@ -160,6 +160,69 @@ $
 >> //notes：这个从能提供的功能角度看好像和 `grun` 差不多。好处就是：***`grun` 必须要把各种 java class 给编译出来（<ins>哪怕你用的是 antlr 的 python binding，如果想用 `grun` 去 debug，也得编</ins>。。。），但是这个 antlr4-tools 不用去编译那些 java 类***。但是这个似乎会自动下载一个 java 或者改 java 的路径，所以总觉得怕影响已有环境——但是docker里用是不错的。
 
 antlr4-tools https://github.com/antlr/antlr4-tools
+
+### 个人实战
+
+```g4
+grammar Expr;
+prog:	expr EOF ;
+expr:	expr ('*'|'/') expr
+    |	expr ('+'|'-') expr
+    |	INT
+    |	'(' expr ')'
+    ;
+NEWLINE : [\r\n]+ -> skip;
+INT     : [0-9]+ ;
+```
+```sh
+$ mkdir test_Expr
+$ cd test_Expr/
+$ ls
+Expr.g4
+
+# 注意，antlr4-tools 这里接的是语法文件（带有 .g4 后缀的）；但是 grun 接的是语法名称（没有 .g4 后缀）
+# 此外，antlr4-tools 明显没有去显示地编译出那些 java class（虽然我猜大概率后台编译了）
+$ antlr4-parse Expr.g4 prog -tree
+1+2*3-4
+^D
+(prog:1 (expr:2 (expr:2 (expr:3 1) + (expr:1 (expr:3 2) * (expr:3 3))) - (expr:3 4)) <EOF>)
+$
+$ antlr4-parse Expr.g4 prog -tokens -trace
+1+2*3-4
+^D
+[@0,0:0='1',<INT>,1:0]
+[@1,1:1='+',<'+'>,1:1]
+[@2,2:2='2',<INT>,1:2]
+[@3,3:3='*',<'*'>,1:3]
+[@4,4:4='3',<INT>,1:4]
+[@5,5:5='-',<'-'>,1:5]
+[@6,6:6='4',<INT>,1:6]
+[@7,8:7='<EOF>',<EOF>,2:0]
+enter   prog, LT(1)=1
+enter   expr, LT(1)=1
+consume [@0,0:0='1',<8>,1:0] rule expr
+enter   expr, LT(1)=+
+consume [@1,1:1='+',<3>,1:1] rule expr
+enter   expr, LT(1)=2
+consume [@2,2:2='2',<8>,1:2] rule expr
+enter   expr, LT(1)=*
+consume [@3,3:3='*',<1>,1:3] rule expr
+enter   expr, LT(1)=3
+consume [@4,4:4='3',<8>,1:4] rule expr
+exit    expr, LT(1)=-
+exit    expr, LT(1)=-
+enter   expr, LT(1)=-
+consume [@5,5:5='-',<4>,1:5] rule expr
+enter   expr, LT(1)=4
+consume [@6,6:6='4',<8>,1:6] rule expr
+exit    expr, LT(1)=<EOF>
+exit    expr, LT(1)=<EOF>
+consume [@7,8:7='<EOF>',<-1>,2:0] rule prog
+exit    prog, LT(1)=<EOF>
+$
+
+# 因为是在 docker 容器里实战的，生成图的那个就不弄了，基本和前面是类似的
+```
 
 ## not realiable but interesting tools
 
