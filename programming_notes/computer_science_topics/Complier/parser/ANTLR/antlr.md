@@ -62,7 +62,14 @@ GRUN for Antlr4: How to use? https://stackoverflow.com/questions/69001510/grun-f
 
 ### 个人实战
 
-实战1：官方简单的例子
+实战1：官方简单的例子（ https://github.com/antlr/antlr4/blob/master/doc/getting-started.md#a-first-example ）
+```g4
+// Define a grammar called Hello
+grammar Hello;
+r  : 'hello' ID ;         // match keyword hello followed by an identifier
+ID : [a-z]+ ;             // match lower-case identifiers
+WS : [ \t\r\n]+ -> skip ; // skip spaces, tabs, newlines
+```
 ```sh
 # 必须先编译生成相应的 java class 才能 debug，哪怕你用其他语言的 binding 也一样。
 $ cd 1-hello/
@@ -81,8 +88,11 @@ $
 ```
 
 实战2：hive官方语法文件
+```console
+语法文件链接：
+https://github.com/apache/hive/blob/master/hplsql/src/main/antlr4/org/apache/hive/hplsql/Hplsql.g4
+```
 ```sh
-# https://github.com/apache/hive/blob/master/hplsql/src/main/antlr4/org/apache/hive/hplsql/Hplsql.g4
 $ mkdir test_hive_official_grammar
 $ cd test_hive_official_grammar/
 $ antlr4 Hplsql.g4 
