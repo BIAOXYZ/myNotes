@@ -24,6 +24,15 @@ https://zh.wikiquote.org/zh-hans/%E6%AF%9B%E6%B3%BD%E4%B8%9C
 You Cannot Fool All the People All the Time https://quoteinvestigator.com/2013/12/11/cannot-fool/
 - > Abraham Lincoln? Jacques Abbadie? Denis Diderot? Anonymous?
 
+约翰·肯尼迪 https://zh.wikiquote.org/wiki/%E7%B4%84%E7%BF%B0%C2%B7%E7%94%98%E8%BF%BA%E8%BF%AA
+- > `不要问国家可以为你做什么，你应该要问自己可以为国家做什么。` || `"Ask not what your country can do for you --ask what you can do for your country."` ——1961年1月20日的讲话
+
+John F. Kennedy https://en.wikiquote.org/wiki/John_F._Kennedy
+- > `And so, my fellow Americans: ask not what your country can do for you — ask what you can do for your country. My fellow citizens of the world: ask not what America will do for you, but what together we can do for the freedom of man.`
+
+Talk:John F. Kennedy https://en.wikiquote.org/wiki/Talk:John_F._Kennedy
+- > "Ask not..."
+
 # ACG圈
 
 ## 名侦探柯南

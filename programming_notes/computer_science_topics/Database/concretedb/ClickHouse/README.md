@@ -16,6 +16,9 @@ SQL参考 https://clickhouse.com/docs/zh/sql-reference/
 - JSON函数 https://clickhouse.com/docs/zh/sql-reference/functions/json-functions/
 - quantile https://clickhouse.com/docs/zh/sql-reference/aggregate-functions/reference/quantile/
 - 采样子句 https://clickhouse.com/docs/zh/sql-reference/statements/select/sample
+- 数据类型 https://clickhouse.com/docs/zh/sql-reference/data-types
+  * `Map(key, value)` https://clickhouse.com/docs/zh/sql-reference/data-types/map
+  * `数组(T)` https://clickhouse.com/docs/zh/sql-reference/data-types/array
 
 # Parser
 
