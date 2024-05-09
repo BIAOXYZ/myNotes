@@ -1,6 +1,8 @@
 
 # 1
 
+ANTLR4 Mega Tutorial https://github.com/gabriele-tomassetti/antlr-mega-tutorial
+
 【[:star:][`*`]】 The ANTLR Mega Tutorial https://tomassetti.me/antlr-mega-tutorial/ || https://web.archive.org/web/20240209042355/https://tomassetti.me/antlr-mega-tutorial/
 - > **What is ANTLR?**
   * > Notice that technically what you get from ANTLR is a parse tree rather than an AST. ***The difference is that a parse tree is exactly what comes out of the parser, while the AST is a more refined version of the parse tree***. You create the AST by manipulating the parse tree, in order to get something that is easier to use by subsequent parts of your program. ***<ins>These changes are sometimes necessary because a parse tree might be organized in a way that make parsing easier or better performing. However, you might prefer something more user friendly in the rest of the program</ins>***.
