@@ -7,8 +7,6 @@
 
 re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || re — Regular expression operations https://docs.python.org/3/library/re.html
 
-正则表达式HOWTO https://docs.python.org/zh-cn/dev/howto/regex.html
-
 # 正则表达式在线
 
 regular expressions 101 https://regex101.com/ || Regex101 https://github.com/firasdib/Regex101
@@ -20,8 +18,8 @@ RegexLearn https://regexlearn.com/ || 🔓 regexlearn.com: Unlock the Secrets of
 # 其他
 
 【From realpython】
-- Regular Expressions: Regexes in Python (Part 1) https://realpython.com/regex-python/
-- Regular Expressions: Regexes in Python (Part 2) https://realpython.com/regex-python-part-2/
+- ~~Regular Expressions: Regexes in Python (Part 1) https://realpython.com/regex-python/~~
+- ~~Regular Expressions: Regexes in Python (Part 2) https://realpython.com/regex-python-part-2/~~
 
 Python正则表达式操作指南 http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97
 

@@ -7,6 +7,9 @@ Home https://cwiki.apache.org/confluence/display/Hive/
 - LanguageManual UDF https://cwiki.apache.org/confluence/display/Hive/LanguageManual%20UDF
   * https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-Built-inTable-GeneratingFunctions(UDTF)
 - LanguageManual Types https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Types
+- LanguageManual Select https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select
+  * LanguageManual LateralView https://cwiki.apache.org/confluence/display/Hive/LanguageManual+LateralView
+  * LanguageManual WindowingAndAnalytics https://cwiki.apache.org/confluence/display/Hive/LanguageManual+WindowingAndAnalytics
 
 # Hive 其他
 

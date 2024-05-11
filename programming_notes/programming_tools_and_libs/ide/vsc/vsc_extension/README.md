@@ -30,6 +30,7 @@
 ## 个人出品（合集类）
 - Python Extension Pack https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack
 - Docker Extension Pack https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-extension-pack
+- VSCode Essentials https://marketplace.visualstudio.com/items?itemName=jabacchetta.vscode-essentials  【***这个感觉里面用不到的也很多，所以不用贸然下，就时不时看看里面有什么好用的就行***】
 
 ## 个人出品
 - Markdown All in One https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
