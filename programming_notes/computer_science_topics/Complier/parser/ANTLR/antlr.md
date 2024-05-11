@@ -20,7 +20,10 @@ ANTLR v4 https://github.com/antlr/antlr4
     ```sh
     $ antlr4 -Dlanguage=Python3 MyGrammar.g4
     ```
+- Actions and Attributes https://github.com/antlr/antlr4/blob/master/doc/actions.md
 - Grammar Structure https://github.com/antlr/antlr4/blob/master/doc/grammars.md
+- Parser Rules https://github.com/antlr/antlr4/blob/master/doc/parser-rules.md
+- Semantic Predicates https://github.com/antlr/antlr4/blob/master/doc/predicates.md
 
 grammars-v4 https://github.com/antlr/grammars-v4
 
@@ -123,6 +126,16 @@ Antlr4: The following sets of rules are mutually left-recursive https://stackove
 
 Antlr4 left recursive rule contains a left recursive alternative which can be followed by the empty string https://stackoverflow.com/questions/39714079/antlr4-left-recursive-rule-contains-a-left-recursive-alternative-which-can-be-fo
 - https://stackoverflow.com/questions/39714079/antlr4-left-recursive-rule-contains-a-left-recursive-alternative-which-can-be-fo/39718867#39718867
+
+## 词法\语法歧义
+
+Antrl grammar to map a token to multiple lexer rules https://groups.google.com/g/antlr-discussion/c/_JbKlFDQ4m4
+- > Recall that ***ANTLR lexers are greedy, matching the longest possible input sequence for each token recognized***. Further, when 2 (or more) Lexer rules match exactly the same input sequence; ANTLR disambiguates this collision by selecting the Lexer rule that appears first in the Lexer grammar.
+
+Lexer Mode in Antlr https://stackoverflow.com/questions/18243283/lexer-mode-in-antlr
+- https://stackoverflow.com/questions/18243283/lexer-mode-in-antlr/18250148#18250148
+  * > Lexer modes are only available in Lexer grammars and not in compound grammars (Lexer + Parser). See [Lexer Rules](https://github.com/antlr/antlr4/blob/master/doc/lexer-rules.md) for some poor documentation and check [XML Parser](https://github.com/antlr/grammars-v4/tree/master/xml) implementation at github for an example.
+  * > You should have been able to understand this in very informative `errorType=MODE_NOT_IN_LEXER` message in error prints :)
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

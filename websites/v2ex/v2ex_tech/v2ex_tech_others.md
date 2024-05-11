@@ -1,4 +1,10 @@
 
+多线程分段下载文件时，为什么不下载到同一个大文件中？而是要分别下载到单独的文件然后再合并。 https://www.v2ex.com/t/1039715
+- > 没有为什么，就是写代码的太菜，连 pre-allocate+seek 都不会
+- > 实际上除了 IDM 主流下载器都是不需要合并的
+- > 首先，迅雷、FDM ，都是下载到同一个大文件里的。这种方式，首先需要申请这个文件的空间，也就是你刚开始下载 10g 的文件，立刻就要在硬盘里创建 10g 的文件。然后，写数据是一个持续的过程，多线程需要自己调度好文件占用的问题。你 demo 是等 10 秒后一次性写入。分段需要处理临时文件，各有优劣，看自己更熟悉哪种方式了。
+  >> 我以前做过多线程下载器，关于文件分配，直接向 OS 申请预分配一块存储空间就行了，预写入 10G 那是 HDD 时代老 Windows 的东西。关于线程调度，直接开个 `BlockingQueue<<Index, ByteBuffer>>` 然后由专门的 Writer 负责写就行了，其他下载线程只需要负责把下到的 block(比如设定每个 block 为 512K)挂到 queue 上就完事 <br> IDM 那种分文件下载再合并，对于大文件下载来说是不可接受的开销。除了菜逼我不知道还有什么理由会这样做
+
 Excel 内容转成 CSV，容量大了一倍 https://www.v2ex.com/t/956953
 
 【[:star:][`*`]】 条件传送指令，就比条件转移指令要好吗？ https://www.v2ex.com/t/900026
@@ -76,7 +82,7 @@ base64 编码图片一般会使体积变大多少？ https://www.v2ex.com/t/8472
   3. Promise / Future：java, scala, js, 比 callback 好多了，目前是主流技术之一。缺点是要仔细管理闭包的嵌套。
   4. event loop：一般 c/c++ libev libuv ，还有 python gevent 。心智负担比上述三种都大，但是可以更精细操作、更高效。底层实现一般为 kqueue 和 linux 上的 epoll ，或者 fallback 到 select 。
   大名鼎鼎 nginx 就靠 event loop 暴打同时代。
-  5. 协程。
+  1. 协程。
   
   协程一般用 event loop 实现，这种协程就是对 event loop 的抽象。要理解协程，建议稍微学习一下 event loop 。
   ```

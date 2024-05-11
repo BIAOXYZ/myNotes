@@ -14,3 +14,7 @@ ANTLR4 Mega Tutorial https://github.com/gabriele-tomassetti/antlr-mega-tutorial
   * > ***So you forbid the internet to use comments in HTML: problem solved***.
     >> //notes：可以，解决不了注释就解决写注释的（行为）。。。
   * > Or alternatively you use `ANTLR`, whatever seems simpler to you.
+
+# 2
+
+Lexical Analysis with ANTLR https://web.mit.edu/dmaze/school/6.824/antlr-2.7.0/doc/lexer.html || https://web.archive.org/web/20240429043931/https://web.mit.edu/dmaze/school/6.824/antlr-2.7.0/doc/lexer.html
