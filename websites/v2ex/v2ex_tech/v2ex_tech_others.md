@@ -82,7 +82,7 @@ base64 编码图片一般会使体积变大多少？ https://www.v2ex.com/t/8472
   3. Promise / Future：java, scala, js, 比 callback 好多了，目前是主流技术之一。缺点是要仔细管理闭包的嵌套。
   4. event loop：一般 c/c++ libev libuv ，还有 python gevent 。心智负担比上述三种都大，但是可以更精细操作、更高效。底层实现一般为 kqueue 和 linux 上的 epoll ，或者 fallback 到 select 。
   大名鼎鼎 nginx 就靠 event loop 暴打同时代。
-  1. 协程。
+  5. 协程。
   
   协程一般用 event loop 实现，这种协程就是对 event loop 的抽象。要理解协程，建议稍微学习一下 event loop 。
   ```

@@ -21,8 +21,22 @@ https://zh.wikiquote.org/wiki/%E6%B1%9F%E6%B3%BD%E6%B0%91
 https://zh.wikiquote.org/zh-hans/%E6%AF%9B%E6%B3%BD%E4%B8%9C
 - > `谁是我们的敌人？谁是我们的朋友？这个问题是革命的首要问题。` || https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19251201.htm
 
+### Abraham Lincoln
+
+亚伯拉罕·林肯 https://zh.wikiquote.org/wiki/%E4%BA%9E%E4%BC%AF%E6%8B%89%E7%BD%95%C2%B7%E6%9E%97%E8%82%AF
+- > **有争议**
+  * > `你可以在一时蒙骗所有人，也可以在长时间蒙骗一些人，但不可能在长时间蒙骗所有的人。` || `You can fool all the people some of the time, some of the people all the time, but you cannot fool all the people all the time.`
+
+Abraham Lincoln https://en.wikiquote.org/wiki/Abraham_Lincoln
+
+Talk:Abraham Lincoln https://en.wikiquote.org/wiki/Talk:Abraham_Lincoln
+- > **You can X Y of the people Z of the time**
+  * > `"You can fool some of the people all of the time, and all of the people some of the time, but you can't fool ALL of the people ALL of the time."`
+
 You Cannot Fool All the People All the Time https://quoteinvestigator.com/2013/12/11/cannot-fool/
 - > Abraham Lincoln? Jacques Abbadie? Denis Diderot? Anonymous?
+
+### John F. Kennedy
 
 约翰·肯尼迪 https://zh.wikiquote.org/wiki/%E7%B4%84%E7%BF%B0%C2%B7%E7%94%98%E8%BF%BA%E8%BF%AA
 - > `不要问国家可以为你做什么，你应该要问自己可以为国家做什么。` || `"Ask not what your country can do for you --ask what you can do for your country."` ——1961年1月20日的讲话
@@ -31,7 +45,7 @@ John F. Kennedy https://en.wikiquote.org/wiki/John_F._Kennedy
 - > `And so, my fellow Americans: ask not what your country can do for you — ask what you can do for your country. My fellow citizens of the world: ask not what America will do for you, but what together we can do for the freedom of man.`
 
 Talk:John F. Kennedy https://en.wikiquote.org/wiki/Talk:John_F._Kennedy
-- > "Ask not..."
+- > "Ask not..."  【//notes：关于这句话的历史，以及和纪伯伦的关系，回头总结吧】
 
 # ACG圈
 
@@ -117,7 +131,7 @@ Grace Hopper https://en.wikipedia.org/wiki/Grace_Hopper || [格蕾丝·赫柏](h
 1. David Wheeler的原话是：`All problems in computer science can be solved by another level of indirection.`。
 2. 但是Butler Lampson这个图灵奖得主在引用的时候没有一字一句对照，变成了：`We can solve any problem by introducing an extra level of indirection.`。于是这两种说法都有了，但是好歹两种说法里都是用的`level of indirection`。
 3. 然后`level of indirection`又经常被众口相传成`abstraction layer`，包括（几乎）所有的中译版。
-4. David Wheeler这哥们还有两句名言，参照上面他的wiki词条吧。
+4. David Wheeler这哥们还有两句名言，参照上面他的wiki词条吧。这哥们是剑桥大学的教授，有个更有名的学生叫 `Bjarne Stroustrup`。
 
 Jerry Sanders: `Real men have fabs`
 - Real men have fabs https://www.wired.com/2008/10/real-men-have-f/
