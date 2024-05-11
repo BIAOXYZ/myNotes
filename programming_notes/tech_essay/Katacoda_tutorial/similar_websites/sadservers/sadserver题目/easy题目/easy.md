@@ -3,13 +3,18 @@
 - Description: A developer created a testing program that is continuously writing to a log file /var/log/bad.log and filling up disk. You can check for example with tail -f /var/log/bad.log. This program is no longer needed. Find it and terminate it.
 - 题目描述：***文件 `/var/log/bad.log` 在不停地被某个程序写入，找到写内容的程序并结束它***。
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 官方答案
+
 https://sadservers.com/newserver/saint-john
 1. You can use ps to list all processes and see if you see something related, for example with: `ps auxf`. Ignore system processes [in brackets]. <br> A better way is to use the command to list open files: `lsof`.
 2. Find the name (first column) and Process ID (PID, second column) of the process related to /var/log/bad.log by running lsof and filtering the rows to the one(s) containing bad.log. <br> You can also use the "fuser" command to quickly find the offending process: `fuser /var/log/bad.log`.
 3. Run: ***`lsof | grep bad.log`*** and get the PID (second column). <br> With the PID of the process, it's not necessary but we can find its current working directory (program location) by doing `pwdx PID` or for more detail: `lsof -p PID` and check the cwd row. This will allow us to check its ownership and perhaps inspect its offending code if it's a script (not a binary). <br> (Open window once more to see the complete solution).
 4. Solution: Using the PID found, terminate (kill) the process with `kill -9 PID`.
 
-实战过程：
+## 实战过程
+
 ```sh
 # 所以用 ps 再 grep 不太行，还是 lsof 好一些。
 $ ps -auxf | grep bad.log
@@ -36,9 +41,15 @@ $ lsof | grep bad.log
 $ 
 ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 2 "Saskatoon": counting IPs.
 - Description: There's a web server access log file at /home/admin/access.log. The file consists of one line per HTTP request, with the requester's IP address at the beginning of each line. <br> Find what's the IP address that has the most requests in this file (there's no tie; the IP is unique). Write the solution into a file /home/admin/highestip.txt. For example, if your solution is "1.2.3.4", you can do echo "1.2.3.4" > /home/admin/highestip.txt
 - 题目描述：***文件 `/home/admin/access.log` 是一些 http 请求的日志，这些日志的每一行都以 ip 地址开头；找到请求次数最多的 ip***。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 官方答案
 
 https://sadservers.com/newserver/saskatoon
 1. To get the first field (IP) of the file, you can do `awk '{print $1}' access.log` or ***using "cut" with delimiter of space (-d' ') and picking the first field (-f1): `cat access.log | cut -d' ' -f1`***. You may want to append a pipe | head or | tail as you construct the command to see how your filters are working.
@@ -46,7 +57,8 @@ https://sadservers.com/newserver/saskatoon
 3. Now you want to do the count with "uniq -c", so we have so far: `awk '{print $1}' access.log | sort | uniq -c`
 4. Finally you want to sort the results with "sort" (goes in ascending order) and get the latest one (with "tail -1" for example), or sort in reverse order with "sort -r" and get the top result: `awk '{print $1}' access.log| sort | uniq -c | sort -r | head -1`.
 
-实战过程：
+## 实战过程
+
 ```sh
 $ cat /home/admin/access.log | wc -l
 10000
@@ -92,3 +104,5 @@ $
 $ sha1sum /home/admin/highestip.txt
 6ef426c40652babc0d081d438b9f353709008e93  /home/admin/highestip.txt
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
