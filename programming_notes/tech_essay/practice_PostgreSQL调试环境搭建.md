@@ -131,7 +131,7 @@ sudo apt-get install texinfo || yum install -y texinfo
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# katacoda的Centos环境再走一遍pg12的安装，主要就是步骤比较集中列出来，方便快速复制。
+# 三、katacoda的Centos环境再走一遍pg12的安装（主要就是步骤比较集中列出来，方便快速复制）
 
 > 环境： https://www.katacoda.com/courses/centos/playground
 
@@ -255,7 +255,7 @@ yum install -y ddd
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## CentOS 7 容器中的 pg8.4 环境搭建
+## 3.1 CentOS 7 容器中的 pg8.4 环境搭建
 
 ```sh
 # 宿主机上执行
@@ -300,7 +300,7 @@ debuginfo-install -y glibc-2.17-326.el7_9.x86_64
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# Ubuntu安装 pg8.4.1（这是《PostgreSQL数据库内核分析》书里用的版本）
+# 四、Ubuntu安装 pg8.4.1（这是《PostgreSQL数据库内核分析》书里用的版本）
 
 ```sh
 # docker run --name pgdebug -it --privileged ubuntu:16.04 bash
@@ -445,6 +445,53 @@ ENV PATH=${PATH}:${PGHOME}/bin
 
 WORKDIR /home/pguser/pgdir/pgsql/bin/
 RUN /home/pguser/pgdir/pgsql/bin/initdb -D /home/pguser/pgdir/pgdata
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 容器（ubuntu 22.04） + postgresql 16.0
+
+```sh
+# 宿主机
+docker run --name pgdebug -it --privileged ubuntu:22.04 bash
+
+# 容器内
+apt update
+## 在Ubuntu 22.04中，libreadline6包已经被更新和替换。因此，你需要安装更新版本的libreadline库。你可以使用libreadline8代替libreadline6。
+## 在Ubuntu 22.04中，开发版本的readline库包名称确实有所不同。应该安装libreadline-dev而不是libreadline8-dev。以下是具体的步骤：
+apt install -y libreadline8 libreadline-dev zlib1g zlib1g-dev bison flex git gcc make cgdb
+## PG16 会提示需要这个库，除非 configure 的时候指定 --without-icu 才可以不装
+apt install -y libicu-dev
+## 装完 libicu-dev 还是不行，后来搜了下（ https://viggy28.dev/article/postgres-v16-icu-installation-issue/ ），大致是需要配置好环境变量 PKG_CONFIG_PATH 里 libicu 相关的路径。
+## 但我发现容器里竟然没装 pkg-config，然后我只是在容器里安装了一下，没有去手动设置 PKG_CONFIG_PATH，但是也可以了。
+apt install -y pkg-config
+
+useradd -m -d /home/pguser pguser
+echo "pguser:test1234TEMP" | chpasswd
+su - pguser
+
+mkdir ~/pgdir
+cd pgdir/
+git clone https://github.com/postgres/postgres.git
+cd postgres/
+git checkout -b REL_16_STABLE origin/REL_16_STABLE
+
+./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+make -sj8
+make install
+
+cat << EOF >> ~/.bashrc
+export PGHOME=/home/pguser/pgdir/pgsql
+export PGDATA=/home/pguser/pgdir/pgdata
+export LD_LIBRARY_PATH=\${LD_LIBRARY_PATH}:\${PGHOME}/lib
+export PATH=\${PATH}:\${PGHOME}/bin
+EOF
+
+cd /home/pguser/pgdir/pgsql/bin/
+./initdb -D /home/pguser/pgdir/pgdata
+./pg_ctl -D /home/pguser/pgdir/pgdata -l logfile start
+
+./psql -d postgres
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

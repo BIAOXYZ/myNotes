@@ -1,4 +1,17 @@
 
+请教一个 winodows 下 cpu 核心配分问题 https://www.v2ex.com/t/1041235
+```console
+windos10 环境下,有一颗 10 核心 20 线程的 cpu.为什么每次启动不同任务的时候,核心 1 总是负载很高?
+注意哈,我的意思是我启动不同的任务的时候,他总是搞不犹豫的选择核心 1!
+正常来说,核心 1 上已经有负载了,不应该到负载低的核心上吗?
+再不济,你随机选一个核心也行啊?为什么非得选择核心 1 呢?
+有什么那么一个程序,可以让我每次启动的时候,随机分配一个核心跑?
+```
+- > 如果你启动的程序不是启动器之类的还要启动主要程序，直接写一个 bat 批处理就能随机分配核心，所需指令 start /affinity 。bat 伪随机数怎么生成直接网上 copy 代码
+- > 为啥纠结这种问题。Windows 使用复杂的算法来决定哪个进程或线程应该在哪个核心上运行，某些应用程序可能被设计为更倾向于使用特定的可用的核心，而不是随机选择。
+- > 一般来讲，使用 Windows API 亲和性函数 SetProcessAffinityMask 来将当前进程绑定到选定的核心上
+- > 命令行：`START /AFFINITY 1 "C:\Path\To\YourProgram.exe"` <br> Ref: https://stackoverflow.com/questions/7759948/set-affinity-with-start-affinity-command-on-windows-7
+
 Memory used 很高 但是 top 却查不到高消耗的进程 https://www.v2ex.com/t/1034590
 - > 可能有硬件驱动，直接 map 了物理内存，看 `directmap` 能看出来。以前碰到过类似的问题，因为 huge page，网卡驱动有 bug，ringbuf 占用了大量物理内存。
 - > ***在操作系统角度来看，物理内存除了分配给用户空间进程使用***，还要给内核任务、硬件外设和 cpu 交换（ `dma` ）、文件系统 buffer/cache 、内核内存算法还有开销。 <br> ***所以只看资源管理器或 `top` 里面的用户进程不一定能查到内存消耗在哪里了***。那个设备的内核内存开销也不正常，`cat /proc/slabinfo` 看看。
