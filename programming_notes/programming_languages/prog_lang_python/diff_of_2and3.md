@@ -14,6 +14,27 @@ Python2.x与3​​.x版本区别 http://www.runoob.com/python/python-2x-3x.html
 
 简单总结下就是：2.x里`int/int=int (7/10=0)`，但是3.X里`int/int=float (7/10=0.7)`。若想在3.x达到一样的效果，应该用两个/，即`int//int=int`。这个是有血泪教训的，参见LeetCode 002的代码：[000002_Add_Two_Numbers_algo1.py](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000002_Add_Two_Numbers/000002_Add_Two_Numbers_algo1.py)
 
+>> //notes：来自chatgpt的总结（更到位了）：
+```cosnole
+Python 2:
+/ 是整数除法（假设操作数都是整数）。如果有一个操作数是浮点数，则执行浮点数除法。
+// 是整数除法（地板除）。
+
+Python 3:
+/ 是浮点数除法，即使操作数是整数，结果也是浮点数。
+// 是整数除法（地板除）。
+```
+```py
+# Python 3 示例
+print(5 / 2)  # 输出: 2.5
+print(5 // 2)  # 输出: 2
+
+# Python 2 示例
+print 5 / 2  # 输出: 2
+print 5.0 / 2  # 输出: 2.5
+print 5 // 2  # 输出: 2
+```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

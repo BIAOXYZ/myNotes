@@ -15,7 +15,10 @@ ANTLR4 Mega Tutorial https://github.com/gabriele-tomassetti/antlr-mega-tutorial
     >> //notes：可以，解决不了注释就解决写注释的（行为）。。。
   * > Or alternatively you use `ANTLR`, whatever seems simpler to you.
 - > **6. Lexers and Parsers**
-  * > The most interesting part is at the end, the lexer rule that defines the WHITESPACE token. It’s interesting because it shows how to indicate to ANTLR to ignore something. Consider how ignoring whitespace simplifies parser rules: if we couldn’t say to ignore WHITESPACE we would have to include it between every single sub-rule of the parser, to let the user puts spaces where they want. Like this:
+  * > The most interesting part is at the end, the lexer rule that defines the **WHITESPACE** token. ***It’s interesting because it shows how to indicate to ANTLR to ignore something***. Consider how ignoring whitespace simplifies parser rules: if we couldn’t say to ignore WHITESPACE we would have to include it between every single sub-rule of the parser, to let the user puts spaces where they want. Like this:
+    ```g4
+    operation  : WHITESPACE* NUMBER WHITESPACE* '+' WHITESPACE* NUMBER;
+    ```
 - > **9. Lexer Rules**
   * > In this example we use rules **`fragments`**: they are ***reusable building blocks for lexer rules*** . You define them and then you refer to them in lexer rules. If you define them but do not include them in lexer rules, they simply have no effect.
     >> //notes：所以可以认为 fragments 是比词法规则（lexer rules）还要小的“规则单元”。
