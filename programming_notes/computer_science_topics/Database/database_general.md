@@ -322,6 +322,41 @@ Check if two "select"s are equivalent https://stackoverflow.com/questions/572788
 
 automated check if two SQL queries are semantically equal https://stackoverflow.com/questions/36304088/automated-check-if-two-sql-queries-are-semantically-equal
 
+### 关系代数的劣势
+
+Limitations of Relational Algebra in Dbms https://unacademy.com/content/jee/study-material/mathematics/limitations-of-relational-algebra-in-dbms/
+- > Limitations
+  * > Arithmetic operations are not possible with relational algebra.
+  * > ***It can’t perform aggregation operations and can’t even compute transitive closure***.
+  * > It is unable to change the data in the database.
+
+Relational Algebra Is the Root of SQL Problems https://www.datasciencecentral.com/relational-algebra-is-the-root-of-sql-problems/
+
+Why is relational algebra not Turing complete? https://www.quora.com/Why-is-relational-algebra-not-Turing-complete
+
+### 关系代数算子有限（比如聚合都无法支持）
+>> //notes：原因来自下面 Quora 里的回答，个人简单总结下：
+1. 关系模型的发明者`埃德加·科德`（`Edgar Frank Codd`）在提出关系模型/关系代数时，是参照了`一阶逻辑`的。因为`一阶逻辑`具有`完备性`，这样会使得关系模型的理论基础更坚实。
+2. 之所以关系代数里不能有聚合，是因为`一阶逻辑`中不能有聚合类操作，否则就变成了`高阶逻辑`，而`高阶逻辑`是不具有完备性的，会削弱关系模型的理论基础。
+>> //notes2：不直接来自下面 quora 那个回答，而是自己又额外搜的：
+1. 后来有很多其他人为了支持聚合，就搞了各种各样的 Extended Relational Algebra（参见各种数据库教材，如：`《Database System Concepts》`），但是认可度跟原始的关系代数是没法比的。
+2. 其实原始的关系代数里，操作的对象是关系，输出的结果也是关系；但是聚合操作的结果是值，而不是关系。从这里也能看出来聚合不是关系代数里的一个操作。
+
+Why do we not have aggregation operations in relational algebra? https://www.quora.com/Why-do-we-not-have-aggregation-operations-in-relational-algebra
+- > When Codd introduced the relational algebra he motivated it by comparing it to first-order logic, or to be more precise, to query languages based on first-order logic. He showed that these are equivalent in expressive power. Since classical first-order logic does not cover aggregation, this was not considered at that point.
+- > Of course aggregation is essential for practical databases, and so query languages in real DBMSs support aggregation operators. To match this in the theoretical model several proposals have been made to extend the relational algebra and the calculus. See for example the paper Extending relational algebra and relational calculus with set-valued attributes and aggregate functions. Most database textbooks will give you at least one version of this, usually by introducing an additional operator that operates on a single relation and specifies (1) the columns on which we group and (2) one or more aggregation operators and the column(s) on which they operate.
+- > So why is it not considered part of the (core) algebra? There are actually a few reasons:
+  * > Historical: it was not part of the initial proposal by Codd.
+  * > Practical: There is no full consensus on how it should exactly look.
+  * > Theoretical elegance: It is harder to define than the classical operators, and has fewer interesting algebraic identities.
+  * > Theoretical depth: There is no wide consensus on what the corresponding extension of first-order logic should look like. There are candidates for this, such as in the paper mentioned earlier and more recently in http://homepages.inf.ed.ac.uk/libkin/papers/jacm-lics99.pdf but they are less widely accepted and well-understood than classical first-order logic.
+
+Relational algebra https://en.wikipedia.org/wiki/Relational_algebra
+- > Furthermore, computing various functions on a column, like the summing up of its elements, is also not possible using the relational algebra introduced so far.
+
+一阶逻辑 https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91
+- > 在通常的语义下，一阶逻辑是可靠（所有可证的叙述皆为真）且完备（所有为真的叙述皆可证）的。
+
 ## 优化器
 
 ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215.html
