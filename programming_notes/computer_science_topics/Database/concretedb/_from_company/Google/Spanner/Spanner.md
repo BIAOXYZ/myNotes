@@ -12,3 +12,5 @@ Spanner：Google 的全球分布式数据库 https://www.lenshood.dev/2020/11/06
 # 其他
 
 Google Spanner https://levy5307.github.io/blog/spanner/
+
+Google Spanner原理：地球上最大的单一数据库 https://cloud.tencent.com/developer/article/1131036

@@ -12,6 +12,8 @@ Bigtable: A Distributed Storage System for Structured Data https://static.google
 
 Bigtable 论文详述 - 呆呆的文章 - 知乎 https://zhuanlan.zhihu.com/p/35687103
 
+[译] [论文] Bigtable: A Distributed Storage System for Structured Data (OSDI 2006) https://arthurchiao.art/blog/google-bigtable-zh/
+
 # 其他
 
 浅析 Bigtable 和 LevelDB 的实现 https://draveness.me/bigtable-leveldb/
