@@ -200,6 +200,13 @@ git stash show  # 如果不是最上层的那个stash，需要指定stash的序�
 git checkout stash@{0} src/prefix1/prefix2/conf.yaml
 ```
 
+```sh
+# 查看 stash 里所有文件的详细更改
+git stash show -p stash@{0}
+# 查看 stash 里单个文件的详细更改
+git diff stash@{0} -- path/to/yourfile.txt
+```
+
 # 恢复丢失的 stash
 
 How do I recover a dropped stash in Git? https://stackoverflow.com/questions/89332/how-do-i-recover-a-dropped-stash-in-git
