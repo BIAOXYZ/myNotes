@@ -34,9 +34,14 @@ postgresql编译安装与调试（二）https://www.cnblogs.com/flying-tiger/p/5
 
 # 健哥的数据花园
 
+健哥的数据花园 https://www.cnblogs.com/gaojian/
+- PostgreSQL索引页 http://www.cnblogs.com/gaojian/p/topindex.html
+
 PostgreSQL内部结构与源代码研究索引页 https://www.cnblogs.com/gaojian/p/internalindex.html
 
 tag: initdb https://www.cnblogs.com/gaojian/tag/initdb/
+
+PostgreSQL 的 语法分析的理解(五) https://www.cnblogs.com/gaojian/archive/2012/09/05/2671925.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

@@ -200,6 +200,8 @@ git stash show  # 如果不是最上层的那个stash，需要指定stash的序�
 git checkout stash@{0} src/prefix1/prefix2/conf.yaml
 ```
 
+## 查看 stash 里具体的改动
+
 ```sh
 # 查看 stash 里所有文件的详细更改
 git stash show -p stash@{0}

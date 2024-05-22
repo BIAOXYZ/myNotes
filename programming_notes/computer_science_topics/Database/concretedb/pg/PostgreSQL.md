@@ -29,9 +29,6 @@ PostgreSQL内核开发学习资料 - 王硕的文章 - 知乎 https://zhuanlan.z
 
 由社区志愿者谭峰整理的PostgreSQL资料集锦，值得收藏 http://www.postgres.cn/news/viewone/1/101
 
-健哥的数据花园 https://www.cnblogs.com/gaojian/
-- PostgreSQL索引页 http://www.cnblogs.com/gaojian/p/topindex.html
-
 深入理解PostgreSQL https://blog.csdn.net/beiigang 或 http://beigang.iteye.com/
 - PostgreSQL内核 https://blog.csdn.net/beiigang/article/category/947307
 - PostgreSQL接口编程 https://blog.csdn.net/beiigang/article/category/947320
