@@ -466,6 +466,9 @@ apt install -y libicu-dev
 ## 但我发现容器里竟然没装 pkg-config，然后我只是在容器里安装了一下，没有去手动设置 PKG_CONFIG_PATH，但是也可以了。
 apt install -y pkg-config
 
+# 这个纯是因为更换了更复杂的 configure 参数
+apt-get install -y libssl-dev
+
 useradd -m -d /home/pguser pguser
 echo "pguser:test1234TEMP" | chpasswd
 su - pguser
@@ -476,8 +479,11 @@ git clone https://github.com/postgres/postgres.git
 cd postgres/
 git checkout -b REL_16_STABLE origin/REL_16_STABLE
 
-./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
-make -sj8
+# ./configure --prefix=/home/pguser/pgdir/pgsql --enable-debug CFLAGS="-O0" --enable-profiling --enable-cassert
+# make -sj8
+./configure --prefix=/home/pguser/pgdir/pgsql  --enable-depend --enable-cassert --enable-debug --with-openssl CFLAGS="-ggdb3 -O0 -g3 -fno-omit-frame-pointer" CXXFLAGS="-ggdb3 -O0 -g3 -fno-omit-frame-pointer"
+# 这里不能启用并行编译了，不然会有 openssl 链接冲突的问题
+make
 make install
 
 cat << EOF >> ~/.bashrc
