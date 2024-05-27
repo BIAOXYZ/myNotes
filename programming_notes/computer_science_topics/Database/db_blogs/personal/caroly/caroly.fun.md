@@ -1,5 +1,5 @@
 
-分类/分布式数据库 https://caroly.fun/categories/disdatabase
+分类/分布式数据库 https://caroly.fun/categories/disdatabase || https://web.archive.org/web/20231205122403/https://caroly.fun/categories/disdatabase
 - 【[:star:][`*`]】 分布式数据库（七） https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%83
 
 【[:star:][`*`]】 分布式数据库（七） https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%83 || https://web.archive.org/web/20231002183937/https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%83
