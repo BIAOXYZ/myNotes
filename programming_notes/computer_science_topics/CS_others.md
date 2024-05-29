@@ -92,6 +92,9 @@ craftinginterpreters_zh https://github.com/GuoYaxiang/craftinginterpreters_zh
 - > 手撸解释器教程《Crafting Interpreters》中文翻译。
 - > 这是一个还在进行中的翻译项目，原项目是[craftinginterpreters](https://github.com/munificent/craftinginterpreters)，同时还有配套的英文书，可免费[在线阅读](http://www.craftinginterpreters.com/)。
 
+自己动手写编译器 https://pandolia.net/tinyc/index.html
+- > 欢迎阅读本书《自己动手写编译器》，本书将介绍一个非常简单的编译器（ TinyC 编译器）的实现，用简单和易于实现的实例来描述基本的编译原理及过程，希望能为学习编译原理的读者提供一些参考。
+
 ### JIT
 
 Brainfuck JIT 虚拟机教程 https://github.com/Nugine/bfjit || https://nugine.github.io/bfjit/
