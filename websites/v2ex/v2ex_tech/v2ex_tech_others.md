@@ -1,4 +1,14 @@
 
+要对单个 6.20TB 的超大 csv 文件保持顺序的情况下进行去除重复行，有什么好思路？显然不可能加载进内存 https://www.v2ex.com/t/1046023
+- > duckdb 值得拥有
+  >> 看错了，还以为是 6GB 的 csv 文件在线处理呢，那确实不适合 duckdb 。还是上 spark 吧，硬盘配大点就行。203 亿行 csv 有那么大吗，我们每天备份全量的 17 亿行信息，保留几十天，用 orc 存储，也就几百 G 。
+- > 行数是 203 亿，平均行长 335 <br> 去重是基于整行文本 <br> 前缀重复度不高，没有 ID <br> 最高可以弄到 256GB 内存的服务器
+- > 感觉可以试试 clickhouse 。
+- > 直接存入 kvrocks (硬盘版 redis)
+- > https://www.emeditor.com/text-editor-features/large-file-support/files-up-to-248gb/
+- > 可以试试 polars streaming + file sink ？ https://www.rhosignal.com/posts/streaming-in-polars/
+- > 惊了～ 竟然没人提到 RocksDB 吗？ 本地的文件型 KV 存储库，内置 bloomfilter ，磁盘空间够用，应该很简单的
+
 多线程分段下载文件时，为什么不下载到同一个大文件中？而是要分别下载到单独的文件然后再合并。 https://www.v2ex.com/t/1039715
 - > 没有为什么，就是写代码的太菜，连 pre-allocate+seek 都不会
 - > 实际上除了 IDM 主流下载器都是不需要合并的
@@ -82,7 +92,7 @@ base64 编码图片一般会使体积变大多少？ https://www.v2ex.com/t/8472
   3. Promise / Future：java, scala, js, 比 callback 好多了，目前是主流技术之一。缺点是要仔细管理闭包的嵌套。
   4. event loop：一般 c/c++ libev libuv ，还有 python gevent 。心智负担比上述三种都大，但是可以更精细操作、更高效。底层实现一般为 kqueue 和 linux 上的 epoll ，或者 fallback 到 select 。
   大名鼎鼎 nginx 就靠 event loop 暴打同时代。
-  5. 协程。
+  1. 协程。
   
   协程一般用 event loop 实现，这种协程就是对 event loop 的抽象。要理解协程，建议稍微学习一下 event loop 。
   ```
