@@ -1,4 +1,15 @@
 
+V 友们，系统的深入学习 golang 有没有好点儿的资料 https://www.v2ex.com/t/1046635
+- > https://book.douban.com/subject/35720728/ 这个上下两本推荐看看，个人感觉还不错。
+  >> 这本书作者和极客时间 《 go 语言核心 36 讲》 是一样的
+- > https://geektutu.com/post/gee.html 7 天系列
+- > 我老大之前推荐的 https://geektutu.com/post/quick-golang.html
+- > （纯好奇，非引战）深入学习 go 是指什么？因为 go 的官方手册都不是很长来着，感觉 go 是一门设计相对简单的语言？
+  >> 应该是指的 go GMP 调度细节，runtime 高级用法，mutex chan 具体实现，goroutine 实现，runtime 内存分配策略这方面的东西。
+  >>> go 用起来简单, 但是你不了解底层就很难过面试了. 我不知道是 golang 的失败还是面试有问题. 一般来讲, 如果我用一个工具, 了解底层实现才能用好, 说明这个东西设计有问题了. (文档解决不了) 我在面试的时候仅仅提我也能写 golang, 面试官就问问 go routine 实现...
+- > 读标准库的代码 另外 https://book.douban.com/subject/35720728/ 的作者和 go 语言核心 36 讲的作者不是同一个, 不过作者在极客时间上也有个课程 Go 语言第一课 推荐作者的一篇文章: https://tonybai.com/2017/04/20/go-coding-in-go-way/
+- > 我是看的“深入 Go 底层原理，重写 Redis 中间件实战” https://coding.imooc.com/class/576.html ，然后结合着看《 Go 专家编程》，https://space.bilibili.com/317473362 和 https://space.bilibili.com/373073810
+
 【[:star:][`*`]】 问一个并发程序可见性的问题， golang 语言 https://www.v2ex.com/t/999936
 ```go
 Go 官网有一段代码例子：

@@ -1,4 +1,11 @@
 
+有没有 Python asyncio 的资料推荐？ https://www.v2ex.com/t/1046772
+- > 深入理解Python异步编程（上） https://cloud.tencent.com/developer/article/1187407
+- > 有好几篇收藏的协程的博文，基本全灭了，只有下面这篇了😂 从 IO 模型到协程（一） 什么是 IO ，用户进程与内核 https://www.zbpblog.com/blog-209.html
+- > Python异步编程详解 https://hatboy.github.io/2019/02/16/Python%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E8%AF%A6%E8%A7%A3/ 几年前看的，写的不错
+- > 自荐一波，先是原理，再是根据源码分析，中间可能有点跳跃 https://so1n.me/categories/Python-Asyncio/
+- > 读透 eventlet 的源码就懂协程了, asyncio 一个道理 <br> eventlet 纯 python 更好读
+
 Python 类继承时覆盖类属性的问题 https://www.v2ex.com/t/1014897
 
 [困惑] 写好的 Python 应用如何分发？ https://www.v2ex.com/t/1005684

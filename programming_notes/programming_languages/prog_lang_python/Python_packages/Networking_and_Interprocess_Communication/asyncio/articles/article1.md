@@ -314,3 +314,9 @@ Simplest async/await example possible in Python https://stackoverflow.com/questi
   * > **5.1 串行执行**
   * > **5.2 并行执行**
   * > **5.3 并行与串行的结合**
+
+# 3
+
+https://hatboy.github.io/tags/asyncio/
+- Python异步编程详解 https://hatboy.github.io/2019/02/16/Python%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E8%AF%A6%E8%A7%A3/
+- asyncio之调试asyncio https://hatboy.github.io/2017/12/21/asyncio%E4%B9%8B%E8%B0%83%E8%AF%95asyncio/
