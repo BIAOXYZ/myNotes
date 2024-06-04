@@ -34,6 +34,11 @@ PS怀旧游戏专辑（不定期更新） https://www.bilibili.com/video/BV11x41
 
 # 知识类
 
+盘点 FC 游戏的那些良性 BUG 彩蛋 https://www.ithome.com/0/772/597.htm
+- > **《超级玛丽》**
+  * > 当年就有玩家们曾经猜想过，这款游戏到底能不能两个人一起上场呢？答案是可以的
+  * > 其实这种可能性在很多年前就已经被实现了。在红白机末期就有玩家已经玩到了双人合作的版本。不过当时并没有广泛流传，也是在网络盛行的年代玩家们才渐渐熟知这个玩法。
+
 CAPCOM 经典街机游戏大合集，原来当年我们玩到的只是皮毛 https://www.ithome.com/0/691/126.htm
 
 经典街机游戏中费血技能盘点 https://www.ithome.com/0/672/601.htm || 经典街机游戏中，那些不需要本钱的费血技能 https://mp.weixin.qq.com/s/CiOOEavhruXGOrSPtGuUIQ

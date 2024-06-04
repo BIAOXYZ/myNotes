@@ -1,4 +1,14 @@
 
+关于 C 语言的相关问题 https://www.v2ex.com/t/1046163
+- > C 语言本身内容较少，而且抽象层次很低，属于“系统编程语言”，也就导致，网络、IO 、GUI 这些功能在其他编程语言中可能已经抽象到标准库中了，但 C 语言标准库不包含这些，要用的话应该学习操作系统提供的 API 。不同的操作系统提供的 API 是不同的，需要分别去学，或者使用一些别人封装好的跨平台库。
+  ```console
+  Linux 推荐 Linux/UNIX 系统编程手册 https://book.douban.com/subject/25809330/
+  Windows 推荐 Windows 系统编程 https://book.douban.com/subject/5323432/
+  关于库的底层实现的 程序员的自我修养 https://book.douban.com/subject/3652388/
+  ```
+  > 看了这些你能理解一些网络库的底层实现原理了，当然实际应用中可能更多会使用别人的开源库。比如 libuv 、mysql 的 C 接口、GTK 等等，那就去看具体的库的文档。
+- > https://build-your-own.org/ 编译器，关系数据库，KV 数据库，web 服务器。一般搞点具体的可以维持学习兴趣
+
 `char *s = "0123"` 和 `char s[] = "0123"` 的区别 https://www.v2ex.com/t/1028174
 - > 因为 `char s[] = "0123"`，是语法糖。"0123" 是常量字符串，不能修改。但是使用字符数组编译器会把 "0123" 在栈上复制一份，并把首地址赋值给数组名。
 - > https://www.gnu.org/software/c-intro-and-ref/manual/html_node/String-Constants.html
