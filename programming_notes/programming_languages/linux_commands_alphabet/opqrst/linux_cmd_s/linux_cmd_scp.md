@@ -39,3 +39,226 @@ How to use SCP (secure copy) with ssh key authentication https://www.techrepubli
   ```
 
 # 个人实战
+
+## 1 `cp`、`scp`和`rsync` 命令如果是处理目录时，根据`源地址`和`目标地址`末尾带不带斜杠，可以分成四种情况
+
+**准备数据：**
+```sh
+mkdir -p ~/test_cp_scp_rsync/{test_cp,test_scp,test_rsync}
+
+# 在每个测试目录中创建四个子目录
+mkdir -p ~/test_cp_scp_rsync/test_cp/{src_slash_dst_slash,src_slash_dst_no_slash,src_no_slash_dst_slash,src_no_slash_dst_no_slash}
+mkdir -p ~/test_cp_scp_rsync/test_scp/{src_slash_dst_slash,src_slash_dst_no_slash,src_no_slash_dst_slash,src_no_slash_dst_no_slash}
+mkdir -p ~/test_cp_scp_rsync/test_rsync/{src_slash_dst_slash,src_slash_dst_no_slash,src_no_slash_dst_slash,src_no_slash_dst_no_slash}
+
+# 在每个源目录中创建示例文件和子目录
+for dir in src_slash_dst_slash src_slash_dst_no_slash src_no_slash_dst_slash src_no_slash_dst_no_slash; do
+    mkdir -p ~/test_cp_scp_rsync/test_cp/$dir/source_dir/sub_dir
+    echo "file1" > ~/test_cp_scp_rsync/test_cp/$dir/source_dir/file1.txt
+    echo "file2" > ~/test_cp_scp_rsync/test_cp/$dir/source_dir/file2.txt
+    echo "file3" > ~/test_cp_scp_rsync/test_cp/$dir/source_dir/sub_dir/file3.txt
+
+    mkdir -p ~/test_cp_scp_rsync/test_scp/$dir/source_dir/sub_dir
+    echo "file1" > ~/test_cp_scp_rsync/test_scp/$dir/source_dir/file1.txt
+    echo "file2" > ~/test_cp_scp_rsync/test_scp/$dir/source_dir/file2.txt
+    echo "file3" > ~/test_cp_scp_rsync/test_scp/$dir/source_dir/sub_dir/file3.txt
+
+    mkdir -p ~/test_cp_scp_rsync/test_rsync/$dir/source_dir/sub_dir
+    echo "file1" > ~/test_cp_scp_rsync/test_rsync/$dir/source_dir/file1.txt
+    echo "file2" > ~/test_cp_scp_rsync/test_rsync/$dir/source_dir/file2.txt
+    echo "file3" > ~/test_cp_scp_rsync/test_rsync/$dir/source_dir/sub_dir/file3.txt
+done
+```
+```sh
+# 执行完上述语句后
+$ tree ~/test_cp_scp_rsync/
+/home/tiger/test_cp_scp_rsync/
+├── test_cp
+│   ├── src_no_slash_dst_no_slash
+│   │   └── source_dir
+│   │       ├── file1.txt
+│   │       ├── file2.txt
+│   │       └── sub_dir
+│   │           └── file3.txt
+│   ├── src_no_slash_dst_slash
+│   │   └── source_dir
+│   │       ├── file1.txt
+│   │       ├── file2.txt
+│   │       └── sub_dir
+│   │           └── file3.txt
+│   ├── src_slash_dst_no_slash
+│   │   └── source_dir
+│   │       ├── file1.txt
+│   │       ├── file2.txt
+│   │       └── sub_dir
+│   │           └── file3.txt
+│   └── src_slash_dst_slash
+│       └── source_dir
+│           ├── file1.txt
+│           ├── file2.txt
+│           └── sub_dir
+│               └── file3.txt
+├── test_rsync
+│   ├── src_no_slash_dst_no_slash
+│   │   └── source_dir
+│   │       ├── file1.txt
+│   │       ├── file2.txt
+│   │       └── sub_dir
+│   │           └── file3.txt
+│   ├── src_no_slash_dst_slash
+│   │   └── source_dir
+│   │       ├── file1.txt
+│   │       ├── file2.txt
+│   │       └── sub_dir
+│   │           └── file3.txt
+│   ├── src_slash_dst_no_slash
+│   │   └── source_dir
+│   │       ├── file1.txt
+│   │       ├── file2.txt
+│   │       └── sub_dir
+│   │           └── file3.txt
+│   └── src_slash_dst_slash
+│       └── source_dir
+│           ├── file1.txt
+│           ├── file2.txt
+│           └── sub_dir
+│               └── file3.txt
+└── test_scp
+    ├── src_no_slash_dst_no_slash
+    │   └── source_dir
+    │       ├── file1.txt
+    │       ├── file2.txt
+    │       └── sub_dir
+    │           └── file3.txt
+    ├── src_no_slash_dst_slash
+    │   └── source_dir
+    │       ├── file1.txt
+    │       ├── file2.txt
+    │       └── sub_dir
+    │           └── file3.txt
+    ├── src_slash_dst_no_slash
+    │   └── source_dir
+    │       ├── file1.txt
+    │       ├── file2.txt
+    │       └── sub_dir
+    │           └── file3.txt
+    └── src_slash_dst_slash
+        └── source_dir
+            ├── file1.txt
+            ├── file2.txt
+            └── sub_dir
+                └── file3.txt
+
+39 directories, 36 files
+```
+
+**进行四种组合的测试：**
+```sh
+# cp 命令测试
+# 1. 源地址带斜杠，目标地址带斜杠：
+cp -r ~/test_cp_scp_rsync/test_cp/src_slash_dst_slash/source_dir/ ~/test_cp_scp_rsync/test_cp/src_slash_dst_slash/target_dir/
+
+# 2. 源地址带斜杠，目标地址不带斜杠：
+cp -r ~/test_cp_scp_rsync/test_cp/src_slash_dst_no_slash/source_dir/ ~/test_cp_scp_rsync/test_cp/src_slash_dst_no_slash/target_dir
+
+# 3. 源地址不带斜杠，目标地址带斜杠：
+cp -r ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_slash/source_dir ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_slash/target_dir/
+
+# 4. 源地址不带斜杠，目标地址不带斜杠：
+cp -r ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_no_slash/source_dir ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_no_slash/target_dir
+```
+```sh
+# scp 命令测试（假设本地和远程机器都是同一台机器，仅用于测试目的）
+# 1. 源地址带斜杠，目标地址带斜杠：
+scp -r ~/test_cp_scp_rsync/test_scp/src_slash_dst_slash/source_dir/ localhost:~/test_cp_scp_rsync/test_scp/src_slash_dst_slash/target_dir/
+
+# 2. 源地址带斜杠，目标地址不带斜杠：
+scp -r ~/test_cp_scp_rsync/test_scp/src_slash_dst_no_slash/source_dir/ localhost:~/test_cp_scp_rsync/test_scp/src_slash_dst_no_slash/target_dir
+
+# 3. 源地址不带斜杠，目标地址带斜杠：
+scp -r ~/test_cp_scp_rsync/test_scp/src_no_slash_dst_slash/source_dir localhost:~/test_cp_scp_rsync/test_scp/src_no_slash_dst_slash/target_dir/
+
+# 4. 源地址不带斜杠，目标地址不带斜杠：
+scp -r ~/test_cp_scp_rsync/test_scp/src_no_slash_dst_no_slash/source_dir localhost:~/test_cp_scp_rsync/test_scp/src_no_slash_dst_no_slash/target_dir
+```
+```sh
+# rsync 命令测试
+# 1. 源地址带斜杠，目标地址带斜杠：
+rsync -av ~/test_cp_scp_rsync/test_rsync/src_slash_dst_slash/source_dir/ ~/test_cp_scp_rsync/test_rsync/src_slash_dst_slash/target_dir/
+
+# 2. 源地址带斜杠，目标地址不带斜杠：
+rsync -av ~/test_cp_scp_rsync/test_rsync/src_slash_dst_no_slash/source_dir/ ~/test_cp_scp_rsync/test_rsync/src_slash_dst_no_slash/target_dir
+
+# 3. 源地址不带斜杠，目标地址带斜杠：
+rsync -av ~/test_cp_scp_rsync/test_rsync/src_no_slash_dst_slash/source_dir ~/test_cp_scp_rsync/test_rsync/src_no_slash_dst_slash/target_dir/
+
+# 4. 源地址不带斜杠，目标地址不带斜杠：
+rsync -av ~/test_cp_scp_rsync/test_rsync/src_no_slash_dst_no_slash/source_dir ~/test_cp_scp_rsync/test_rsync/src_no_slash_dst_no_slash/target_dir
+```
+```sh
+# 验证结果
+# cp 命令测试结果：
+tree ~/test_cp_scp_rsync/test_cp/src_slash_dst_slash/target_dir/
+tree ~/test_cp_scp_rsync/test_cp/src_slash_dst_no_slash/target_dir
+tree ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_slash/target_dir/
+tree ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_no_slash/target_dir
+
+# scp 命令测试结果：
+tree ~/test_cp_scp_rsync/test_scp/src_slash_dst_slash/target_dir/
+tree ~/test_cp_scp_rsync/test_scp/src_slash_dst_no_slash/target_dir
+tree ~/test_cp_scp_rsync/test_scp/src_no_slash_dst_slash/target_dir/
+tree ~/test_cp_scp_rsync/test_scp/src_no_slash_dst_no_slash/target_dir
+
+# rsync 命令测试结果：
+tree ~/test_cp_scp_rsync/test_rsync/src_slash_dst_slash/target_dir/
+tree ~/test_cp_scp_rsync/test_rsync/src_slash_dst_no_slash/target_dir
+tree ~/test_cp_scp_rsync/test_rsync/src_no_slash_dst_slash/target_dir/
+tree ~/test_cp_scp_rsync/test_rsync/src_no_slash_dst_no_slash/target_dir
+```
+
+```sh
+# 1. 源地址带斜杠，目标地址带斜杠：
+$ tree ~/test_cp_scp_rsync/test_cp/src_slash_dst_slash/target_dir/
+/home/tiger/test_cp_scp_rsync/test_cp/src_slash_dst_slash/target_dir/
+├── file1.txt
+├── file2.txt
+└── sub_dir
+    └── file3.txt
+
+1 directory, 3 files
+
+# 2. 源地址带斜杠，目标地址不带斜杠：
+tiger@n199-020-021:~$ tree ~/test_cp_scp_rsync/test_cp/src_slash_dst_no_slash/target_dir
+/home/tiger/test_cp_scp_rsync/test_cp/src_slash_dst_no_slash/target_dir
+├── file1.txt
+├── file2.txt
+└── sub_dir
+    └── file3.txt
+
+1 directory, 3 files
+
+# 3. 源地址不带斜杠，目标地址带斜杠：
+tiger@n199-020-021:~$ tree ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_slash/target_dir/
+/home/tiger/test_cp_scp_rsync/test_cp/src_no_slash_dst_slash/target_dir/
+├── file1.txt
+├── file2.txt
+└── sub_dir
+    └── file3.txt
+
+1 directory, 3 files
+
+# 4. 源地址不带斜杠，目标地址不带斜杠：
+tiger@n199-020-021:~$ tree ~/test_cp_scp_rsync/test_cp/src_no_slash_dst_no_slash/target_dir
+/home/tiger/test_cp_scp_rsync/test_cp/src_no_slash_dst_no_slash/target_dir
+├── file1.txt
+├── file2.txt
+└── sub_dir
+    └── file3.txt
+
+1 directory, 3 files
+```
+
+TODO：scp 和 rsync 的因为要 localhost 建互信（但是单位的机器不行），所以不测了。
+```sh
+
+```

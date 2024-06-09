@@ -1,4 +1,11 @@
 
+分享一下油管刷到的 nb 课程[How To Build A Complete Distributed File Storage In Golang] https://www.v2ex.com/t/1047861
+```console
+How To Build A Complete Distributed File Storage In Golang https://www.youtube.com/watch?v=bymQakvTY40
+
+link to the GitHub REPO: https://github.com/anthdm/distributedfilesystemgo
+```
+
 《零基础 SICP》：又一个学 SICP 的契机 https://www.v2ex.com/t/1023677
 ```console
 墨干理工套件是使用 C++ 和 Scheme 的自由的开源软件。墨客实验室上线了《零基础 SICP 》这门公开课，目的是
