@@ -104,6 +104,82 @@ Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixi
 
 # 个人实战
 
+## `tmux`常用命令总结
+
+| 命令说明                               | 命令                                    | 等价命令或备注                              |
+|----------------------------------------|-----------------------------------------|---------------------------------------------|
+| 查看所有 session                       | `tmux ls`                                |                                             |
+| 创建匿名 session                       | `tmux`                                   | 等价于： `tmux new`                            |
+| 创建匿名 session 且放到后台              | `tmux new -d`                            |                                               |
+| 创建自定义名字的 session                 | `tmux new -s <your_session_name>`       | 等价于：`tmux new-session -s <your_session_name>` |
+| 创建自定义名字的 session 且放到后台       | `tmux new -s <your_session_name> -d`     |                                             |
+| 进入 session                           | `tmux a -t <your_session_name>`         | 等价于：`tmux attach -t <your_session_name>` 或 `tmux attach-session -t <your_session_name>` |
+| 进入 session （无参数，此时会 attach 上次进入的那个 session） | `tmux a` （or `tmux attach`） | **这样的行为使得在大多数情况下，你可以简单地运行 tmux attach，而不必记住会话的名称或 ID。这在频繁地切换会话时非常方便。** |
+| 【在 session 内操作】退出 session（方法1） | `ctrl-b d`                              | 先同时按下 CTRL 和 b，然后同时放开，并在放开的一瞬间快速按一下 d |
+| 【在 session 内操作】退出 session（方法2） | `tmux det` （or `tmux detach`）          | 比较推荐方法2，因为方法1同时按 CTRL 和 b 然后再按 d 其实容易操作失败 |
+| 结束所有 session                      | `tmux kill-server`                         |                                             |
+| 结束某个 session                      | `tmux kill-session -t <your_session_name>` |                                             |
+
+
+## `tmux`常用命令具体实战
+
+```sh
+$ tmux ls
+no server running on /tmp/tmux-1001/default
+
+# 创建自定义名字的 session
+$ tmux new -s ccc
+[detached (from session ccc)]
+$ tmux ls
+ccc: 1 windows (created Tue Jun 11 15:47:21 2024) [254x56]
+
+# 创建匿名 session
+$ tmux
+[detached (from session 1)]
+$ tmux ls
+1: 1 windows (created Tue Jun 11 15:49:14 2024) [254x56]
+ccc: 1 windows (created Tue Jun 11 15:47:21 2024) [254x56]
+$ tmux
+[detached (from session 2)]
+$ tmux ls
+1: 1 windows (created Tue Jun 11 15:49:14 2024) [254x56]
+2: 1 windows (created Tue Jun 11 15:49:33 2024) [254x56]
+ccc: 1 windows (created Tue Jun 11 15:47:21 2024) [254x56]
+```
+
+```sh
+# 一键结束所有 session
+$ tmux ls
+1: 1 windows (created Tue Jun 11 15:49:14 2024) [254x56]
+2: 1 windows (created Tue Jun 11 15:49:33 2024) [254x56]
+3: 1 windows (created Tue Jun 11 15:49:44 2024) [254x56]
+ccc: 1 windows (created Tue Jun 11 15:47:21 2024) [254x56]
+$ tmux kill-server
+$ tmux ls
+no server running on /tmp/tmux-1001/default
+```
+
+```sh
+# 准备三个 session
+$ tmux
+$ tmux new -s ccc -d
+$ tmux
+$ tmux ls
+0: 1 windows (created Wed Jun 12 01:03:03 2024) [254x56]
+2: 1 windows (created Wed Jun 12 01:04:33 2024) [254x56]
+ccc: 1 windows (created Wed Jun 12 01:03:33 2024) [80x24]
+
+# 根据数字名字杀掉 session 0
+$ tmux kill-session -t 0
+$ tmux ls
+2: 1 windows (created Wed Jun 12 01:04:33 2024) [254x56]
+ccc: 1 windows (created Wed Jun 12 01:03:33 2024) [80x24]
+# 根据自定义名字杀掉 session
+$ tmux kill-session -t ccc
+$ tmux ls
+2: 1 windows (created Wed Jun 12 01:04:33 2024) [254x56]
+```
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
