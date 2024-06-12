@@ -113,10 +113,11 @@ Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixi
 | 创建匿名 session 且放到后台              | `tmux new -d`                            |                                               |
 | 创建自定义名字的 session                 | `tmux new -s <your_session_name>`       | 等价于：`tmux new-session -s <your_session_name>` |
 | 创建自定义名字的 session 且放到后台       | `tmux new -s <your_session_name> -d`     |                                             |
+| **创建自定义名字、且执行某命令的 session 且放到后台** | `tmux new -d -s <your_session_name> "<your_command>"` | **这个是最核心功能，替代 nohup 就是因为这个** |
 | 进入 session                           | `tmux a -t <your_session_name>`         | 等价于：`tmux attach -t <your_session_name>` 或 `tmux attach-session -t <your_session_name>` |
 | 进入 session （无参数，此时会 attach 上次进入的那个 session） | `tmux a` （or `tmux attach`） | **这样的行为使得在大多数情况下，你可以简单地运行 tmux attach，而不必记住会话的名称或 ID。这在频繁地切换会话时非常方便。** |
 | 【在 session 内操作】退出 session（方法1） | `ctrl-b d`                              | 先同时按下 CTRL 和 b，然后同时放开，并在放开的一瞬间快速按一下 d |
-| 【在 session 内操作】退出 session（方法2） | `tmux det` （or `tmux detach`）          | 比较推荐方法2，因为方法1同时按 CTRL 和 b 然后再按 d 其实容易操作失败 |
+| 【在 session 内操作】退出 session（方法2） | `tmux det` （or `tmux detach`）          | 比较推荐方法2，因为方法1同时按 CTRL 和 b 然后再按 d 其实容易操作失败 <br> 但是如果是某些特殊情形，比如终端一直在不停打印，不好输入 `tmux det`，那还是方法1吧。。。 |
 | 结束所有 session                      | `tmux kill-server`                         |                                             |
 | 结束某个 session                      | `tmux kill-session -t <your_session_name>` |                                             |
 
@@ -145,6 +146,34 @@ $ tmux ls
 1: 1 windows (created Tue Jun 11 15:49:14 2024) [254x56]
 2: 1 windows (created Tue Jun 11 15:49:33 2024) [254x56]
 ccc: 1 windows (created Tue Jun 11 15:47:21 2024) [254x56]
+```
+
+**`tmux` 能替换 `nohup` 的原因：**
+```sh
+# 创建一个执行 ping 命令的 session 并放到后台
+$ tmux new -d -s myping "ping www.qq.com"
+$ tmux ls
+myping: 1 windows (created Wed Jun 12 02:28:53 2024) [80x24]
+$
+# attach 进去看看
+$ tmux attach
+[detached (from session myping)]
+$
+
+# 注意这是在 myping 这个 session 里了
+64 bytes from 42.81.179.153 (42.81.179.153): icmp_seq=490 ttl=51 time=4.27 ms
+64 bytes from 42.81.179.153 (42.81.179.153): icmp_seq=491 ttl=51 time=4.30 ms
+64 bytes from 42.81.179.153 (42.81.179.153): icmp_seq=492 ttl=51 time=4.28 ms
+64 bytes from 42.81.179.153 (42.81.179.153): icmp_seq=493 ttl=51 time=4.28 ms
+64 bytes from 42.81.179.153 (42.81.179.153): icmp_seq=494 ttl=51 time=4.31 ms
+64 bytes from 42.81.179.153 (42.81.179.153): icmp_seq=495 ttl=51 time=4.26 ms
+...
+...
+# 退出 myping 这个 session
+`ctrl-b d`
+
+$ tmux ls
+myping: 1 windows (created Wed Jun 12 02:28:53 2024) [254x56]
 ```
 
 ```sh
