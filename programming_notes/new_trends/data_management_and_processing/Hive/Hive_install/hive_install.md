@@ -45,6 +45,53 @@ https://hive.apache.org/developement/quickstart/
 
 # 已验证
 
+## 1 官方文档纯 docker 方式改成 docker-compose 方式
+
+**`docker-compose.yml`**
+```yaml
+version: '3.7'
+
+services:
+  hive-server:
+    image: apache/hive:4.0.0-beta-1
+    container_name: hive-server
+    environment:
+      SERVICE_NAME: hiveserver2
+    ports:
+      - "10000:10000"  # HiveServer2 JDBC
+      - "10002:10002"  # HiveServer2 HTTP
+    depends_on:
+      - hive-metastore
+    command: >
+      bash -c "
+        sleep 10;
+        hiveserver2
+      "
+    restart: always
+
+  hive-metastore:
+    image: apache/hive:4.0.0-beta-1
+    container_name: hive-metastore
+    environment:
+      SERVICE_NAME: metastore
+      HIVE_METASTORE_DB_TYPE: derby
+    ports:
+      - "9083:9083"  # Hive Metastore
+    volumes:
+      - ./metastore_db:/opt/hive/metastore_db
+    command: >
+      bash -c "
+        schematool -initSchema -dbType derby;
+        start-metastore
+      "
+    restart: always
+```
+
+**连接 hive server**
+```sh
+docker exec -it hive-server beeline -u 'jdbc:hive2://localhost:10000/'
+```
+
 # 其他
 
 基于docker快速搭建hive环境 https://cloud.tencent.com/developer/article/1668927
