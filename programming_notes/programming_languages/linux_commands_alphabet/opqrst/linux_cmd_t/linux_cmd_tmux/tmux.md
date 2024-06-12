@@ -102,6 +102,10 @@ Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixi
 - 回复里的：
   * > 会 `ctrl-b d`，`tmux attach-session` 就得了，够用
 
+# 相关问题
+
+How do I rename a session in tmux? https://superuser.com/questions/428016/how-do-i-rename-a-session-in-tmux
+
 # 个人实战
 
 ## `tmux`常用命令总结
@@ -115,15 +119,18 @@ Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixi
 | 创建自定义名字的 session 且放到后台       | `tmux new -s <your_session_name> -d`     |                                             |
 | **创建自定义名字、且执行某命令的 session 且放到后台** | `tmux new -d -s <your_session_name> "<your_command>"` | **这个是最核心功能，替代 nohup 就是因为这个** |
 | 进入 session                           | `tmux a -t <your_session_name>`         | 等价于：`tmux attach -t <your_session_name>` 或 `tmux attach-session -t <your_session_name>` |
-| 进入 session （无参数，此时会 attach 上次进入的那个 session） | `tmux a` （or `tmux attach`） | **这样的行为使得在大多数情况下，你可以简单地运行 tmux attach，而不必记住会话的名称或 ID。这在频繁地切换会话时非常方便。** |
-| 【在 session 内操作】退出 session（方法1） | `ctrl-b d`                              | 先同时按下 CTRL 和 b，然后同时放开，并在放开的一瞬间快速按一下 d |
+| 进入 session （**无参数，此时会 attach 上次进入的那个 session**） | `tmux a` （or `tmux attach`） | **这样的行为使得在大多数情况下，你可以简单地运行 `tmux attach`，而不必记住会话的名称或 ID。这在频繁地切换会话时非常方便。** |
+| 【在 session 内操作】退出 session（方法1） | `ctrl-b d` （如果直接 `ctrl d` 就退出并结束 session 了） | 先同时按下 CTRL 和 b，然后同时放开，并在放开的一瞬间快速按一下 d |
 | 【在 session 内操作】退出 session（方法2） | `tmux det` （or `tmux detach`）          | 比较推荐方法2，因为方法1同时按 CTRL 和 b 然后再按 d 其实容易操作失败 <br> 但是如果是某些特殊情形，比如终端一直在不停打印，不好输入 `tmux det`，那还是方法1吧。。。 |
 | 结束所有 session                      | `tmux kill-server`                         |                                             |
 | 结束某个 session                      | `tmux kill-session -t <your_session_name>` |                                             |
-
+|====================|====================|====================|
+| **切换 session**                       | `tmux swi -t <your_session_name>` | 等价于：`tmux switch -t <your_session_name>`         |
+| 重命名某个 session                      | `tmux rename -t <old_session_name> <new_session_name>` | 等价于：`tmux rename-session -t <old_session_name> <new_session_name>` |
 
 ## `tmux`常用命令具体实战
 
+**创建session：**
 ```sh
 $ tmux ls
 no server running on /tmp/tmux-1001/default
@@ -148,7 +155,7 @@ $ tmux ls
 ccc: 1 windows (created Tue Jun 11 15:47:21 2024) [254x56]
 ```
 
-**`tmux` 能替换 `nohup` 的原因：**
+**<ins>`tmux` 能替换 `nohup` 的原因</ins>：**
 ```sh
 # 创建一个执行 ping 命令的 session 并放到后台
 $ tmux new -d -s myping "ping www.qq.com"
@@ -176,6 +183,7 @@ $ tmux ls
 myping: 1 windows (created Wed Jun 12 02:28:53 2024) [254x56]
 ```
 
+**结束 session：**
 ```sh
 # 一键结束所有 session
 $ tmux ls

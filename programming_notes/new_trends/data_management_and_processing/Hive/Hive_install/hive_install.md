@@ -47,7 +47,7 @@ https://hive.apache.org/developement/quickstart/
 
 ## 1 官方文档纯 docker 方式改成 docker-compose 方式
 
-**`docker-compose.yml`**
+**`docker-compose.yml`（这个不太好，没有持久化数据，一旦 `docker-compose down` 结束，里面表就没了- -）**
 ```yaml
 version: '3.7'
 
@@ -90,6 +90,49 @@ services:
 **连接 hive server**
 ```sh
 docker exec -it hive-server beeline -u 'jdbc:hive2://localhost:10000/'
+```
+
+**TODO:这里准备搞一个能持久化的数据的，但是还没搞完，不得不打断先搞别的**
+```yml
+version: '0.1'
+
+services:
+  hive-server:
+    image: apache/hive:4.0.0-beta-1
+    container_name: hive-server
+    environment:
+      SERVICE_NAME: hiveserver2
+    ports:
+      - "10000:10000"  # HiveServer2 JDBC
+      - "10002:10002"  # HiveServer2 HTTP
+    depends_on:
+      - hive-metastore
+    volumes:
+      - hive_data:/opt/hive/warehouse  # 持久化 Hive 数据
+    command: bash -c "sleep 10; hiveserver2"
+    restart: always
+
+  hive-metastore:
+    image: apache/hive:4.0.0-beta-1
+    container_name: hive-metastore
+    environment:
+      SERVICE_NAME: metastore
+      HIVE_METASTORE_DB_TYPE: derby
+      DERBY_LOG: /opt/hive/logs/derby.log
+      DERBY_DATA: /opt/hive/metastore_db
+    ports:
+      - "9083:9083"  # Hive Metastore
+    volumes:
+      - derby_data:/opt/hive/metastore_db
+      - hive_data:/opt/hive/warehouse  # 持久化 Hive 数据
+      - logs:/opt/hive/logs
+    command: bash -c "schematool -initSchema -dbType derby; start-metastore"
+    restart: always
+
+volumes:
+  derby_data:
+  hive_data:
+  logs:
 ```
 
 # 其他
