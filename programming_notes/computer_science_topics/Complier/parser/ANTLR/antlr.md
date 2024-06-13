@@ -139,6 +139,14 @@ Lexer Mode in Antlr https://stackoverflow.com/questions/18243283/lexer-mode-in-a
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# antlr 性能
+
+Improving the performance of an ANTLR parser https://tomassetti.me/improving-the-performance-of-an-antlr-parser/
+
+Article on improving the performance of ANTLR parsers https://groups.google.com/g/antlr-discussion/c/PpgPQU5jA3Q
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 如何学习ANTLR? - 知乎 https://www.zhihu.com/question/437337408

@@ -102,6 +102,10 @@ Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixi
 - 回复里的：
   * > 会 `ctrl-b d`，`tmux attach-session` 就得了，够用
 
+操作服务器的神奇工具Tmux https://www.cnblogs.com/bugs-in-life/p/16670718.html
+
+把一个运行的进程放到 tmux 会话中 https://wgzhao.github.io/notes/tips/move-running-process-into-tmux/
+
 # 相关问题
 
 How do I rename a session in tmux? https://superuser.com/questions/428016/how-do-i-rename-a-session-in-tmux
@@ -181,6 +185,10 @@ $
 
 $ tmux ls
 myping: 1 windows (created Wed Jun 12 02:28:53 2024) [254x56]
+```
+
+```sh
+# TODO:把已经运行起来的程序放到 tmux 里
 ```
 
 **结束 session：**
