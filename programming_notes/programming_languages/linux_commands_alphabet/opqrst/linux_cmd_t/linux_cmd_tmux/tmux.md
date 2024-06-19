@@ -125,7 +125,7 @@ How do I rename a session in tmux? https://superuser.com/questions/428016/how-do
 | 进入 session                           | `tmux a -t <your_session_name>`         | 等价于：`tmux attach -t <your_session_name>` 或 `tmux attach-session -t <your_session_name>` |
 | 进入 session （**无参数，此时会 attach 上次进入的那个 session**） | `tmux a` （or `tmux attach`） | **这样的行为使得在大多数情况下，你可以简单地运行 `tmux attach`，而不必记住会话的名称或 ID。这在频繁地切换会话时非常方便。** |
 | 【在 session 内操作】退出 session（方法1） | `ctrl-b d` （如果直接 `ctrl d` 就退出并结束 session 了） | 先同时按下 CTRL 和 b，然后同时放开，并在放开的一瞬间快速按一下 d |
-| 【在 session 内操作】退出 session（方法2） | `tmux det` （or `tmux detach`）          | 比较推荐方法2，因为方法1同时按 CTRL 和 b 然后再按 d 其实容易操作失败 <br> 但是如果是某些特殊情形，比如终端一直在不停打印，不好输入 `tmux det`，那还是方法1吧。。。 |
+| 【在 session 内操作】退出 session（方法2） | `tmux det` （or `tmux detach`）          | 比较推荐方法2，因为方法1同时按 CTRL 和 b 然后再按 d 其实容易操作失败 <br> ***但是如果是某些特殊情形，比如终端一直在不停打印，不好输入 `tmux det`，那还是方法1吧***。。。 |
 | 结束所有 session                      | `tmux kill-server`                         |                                             |
 | 结束某个 session                      | `tmux kill-session -t <your_session_name>` |                                             |
 |====================|====================|====================|
