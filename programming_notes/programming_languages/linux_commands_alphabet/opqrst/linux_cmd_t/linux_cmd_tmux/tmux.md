@@ -104,7 +104,19 @@ Linux 终端复用神器 Tmux 使用详解，看完我飘了～ https://mp.weixi
 
 操作服务器的神奇工具Tmux https://www.cnblogs.com/bugs-in-life/p/16670718.html
 
+## 已经运行的程序放入 tmux
+
 把一个运行的进程放到 tmux 会话中 https://wgzhao.github.io/notes/tips/move-running-process-into-tmux/
+
+Move a running process into a tmux session https://xai.sh/2020/10/16/Move-running-process-into-tmux-session.html
+
+Migrate a running process into tmux https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/
+- > Then type in the following command as root.
+  ```sh
+  % echo 0 > /proc/sys/kernel/yama/ptrace_scope
+  ```
+
+Transfer current command to a detachable session (tmux/screen) https://superuser.com/questions/623432/transfer-current-command-to-a-detachable-session-tmux-screen
 
 # 相关问题
 
