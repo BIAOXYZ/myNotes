@@ -12,3 +12,5 @@ git checkout .   # 或者 git checkout -- .
 # 文章
 
 7 Git tricks that changed my life https://opensource.com/article/20/10/advanced-git-tips
+
+git 不常见的操作技巧 https://wgzhao.github.io/notes/tips/git-tips/
