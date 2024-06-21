@@ -90,6 +90,9 @@ tailscale：个人认为比zerotier更好 https://www.xiaoji.la/d/2407
 
 # AI for coding
 
+B站开源轻量级 Index-1.9B 系列模型：2.8T 训练数据，支持角色扮演 https://www.ithome.com/0/776/419.htm
+- > 项目地址： https://github.com/bilibili/Index-1.9B/blob/main/README.md
+
 ChatGLM2-6B 有点儿厉害啊，笔记本就可以运行起来，个人 AI 助手的时代是不是要来了？ https://www.v2ex.com/t/952810
 - > 那就比较实用了，之前跑过 privateGPT ，关联度差，速度奇慢
 
