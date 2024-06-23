@@ -1,4 +1,21 @@
 
+现在 Linux 上有啥危险命令提示的工具吗 https://www.v2ex.com/t/1051025
+- > 搞个函数包装一下原始命令，比如包装一下 rm 命令,
+  ```sh
+  rm() {
+  echo “Are you sure you want to delete? (y/n)”
+  read answer
+  if [ “$answer” == “y” ]; then
+  command rm “$@”
+  else
+  echo “Delete aborted!”
+  fi
+  }
+  ```
+  > 执行 rm 命令之前，添加了一个询问用户是否确认删除的逻辑。只有在用户确认删除时，才会执行原始的 rm 命令。
+  >> 额，也许 `alias rm="rm -i"` 更简单一些？
+- > 你硬要上插件，也是有解决方案，这个插件可以拦截任何有风险的 shell 命令（默认或由您定义）并提示进行双重验证 https://github.com/kaplanelad/shellfirm
+
 练习 shell 脚本有啥好的视频 或者网站 或者工具吗？ https://www.v2ex.com/t/962664
 - > 别用是最好的，需要用的时候就问 GPT 。最好用 python/julia : https://github.com/ninjaaron/replacing-bash-scripting-with-python  https://github.com/ninjaaron/administrative-scripting-with-julia
   * Replacing Bash Scripting with Python https://github.com/ninjaaron/replacing-bash-scripting-with-python

@@ -1,4 +1,8 @@
 
+# 指标
+
+肌酐正常值 https://baike.baidu.com/item/%E8%82%8C%E9%85%90%E6%AD%A3%E5%B8%B8%E5%80%BC/6238617
+
 # 肾衰竭
 
 慢性肾脏病 https://zh.wikipedia.org/zh-hans/%E6%85%A2%E6%80%A7%E8%82%BE%E8%84%8F%E7%97%85
