@@ -14,3 +14,5 @@
 SecretFlow-SPU: A  Performant and User-Friendly Framework for Privacy-Preserving Machine Learning - 酸菜鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/650002283
 - > 此次介绍是蚂蚁隐语团队Junming Ma和Yancheng Zheng等人发表在USENIX ATC'2023的SecretFlow-SPU，论文链接如下： https://www.usenix.org/conference/atc23/presentation/ma
 - > SecretFlow-SPU开源代码链接如下： https://github.com/secretflow/spu
+
+隐私计算技术路线介绍及对比 https://www.yuque.com/secret-flow/admin/exgixt72drdvdsy3
