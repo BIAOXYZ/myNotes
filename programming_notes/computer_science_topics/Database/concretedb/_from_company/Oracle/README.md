@@ -45,5 +45,13 @@ https://blog.csdn.net/leshami/article/details/6100429
 
 # Oracle others
 
+Oracle 砍掉 5000 人 https://mp.weixin.qq.com/s/ZSzd5KZr3isnGDmZ-2ZBPA
+- > 2024 年 6 月 24 日，Oracle 在发布的 2024 财年年报，2024 财年收入 530 亿美元，比 2023 财年增长 6.0%；净收益 105 亿美元，比 2023 财年猛增 23%；利润率 20%，比 2023 财年增长 17%。利润率增长来自更高的收入。
+- > 年报中承认，美国封禁 TikTok 会损害这家软件公司的收入和利润。
+- > 独立投资银行公司 Evercore ISI 的分析师 Kirk Materne 估计，Oracle 来自 TikTok 的年收入可能在 4.8 亿美元至 8 亿美元之间。
+- > Oracle 为 TikTok 提供云基础设施，而 TikTok 在美国拥有逾 1.5 亿用户。
+- > 截至 2024 年 5 月 31 日，Oracle 雇有约 159000 名全日职员工，其中约 58000 人在美国，约 101000 人在全球其他国家。
+- > 相比之下，在 2023 财年（截至 2023 年 5 月 31 日），Oracle 雇有约 164000 名全日职员工，其中约 62000 人在美国，约 102000 人在全球其他国家。
+
 程序员吐槽：我永远不会再为 Oracle 工作了 - Oracle 甲骨文 - cnBeta.COM https://www.cnbeta.com/articles/tech/789179.htm || https://cloud.tencent.com/developer/news/356372 || Oracle 程序员吐槽：永远不会再为 Oracle 工作了 ！ https://mp.weixin.qq.com/s/qdSlOb4JaECwUIOdspVYjQ || https://www.sohu.com/a/276319163_465914
 - > 近日，某网友在 Hacker News 上发起了一个 “[你见过的最糟糕的代码是什么？](https://news.ycombinator.com/item?id=18442637)” 的问题，引起了广泛关注和讨论，评论数已接近600条。其中，一位 ID 为“oraguy”的程序员对 Oracle 数据库代码的吐槽，更是引发热议。内容大意如下： 

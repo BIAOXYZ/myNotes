@@ -1,4 +1,21 @@
 
+想问下大家平时用 Python 中 asyncio 库的时候，有什么技巧？或者说用了哪些 high level 或 low level 的 api？ https://www.v2ex.com/t/1053369
+```console
+比如下面我经常用的
+
+asyncio.run(coro) 运行顶层的协程，直到完成，适合简单的脚本和测试。
+asyncio.create_task(coro) 创建一个异步任务，用于并行执行协程。
+asyncio.gather(*coros, return_exceptions=False) 并行运行多个协程，收集它们的结果。
+asyncio.Lock 异步锁，用于同步访问共享资源。
+asyncio.Event 异步事件，用于在协程间通信。
+asyncio.Semaphore 和 asyncio.BoundedSemaphore 条件变量，允许协程等待某个条件成立。
+
+看看大家平时还用了什么 API ？获取能学到新东西
+```
+- > 如果你除了结果，还关注状态或异常等信息，以及返回时机的控制，可以用 `asyncio.wait` 取代 `asyncio.gather` 。 <br> `asyncio.to_thread` 可以把同步调用转成异步。 <br> `asyncio.Queue` 可以实现并发控制，比如预先分配 10 个资源，那么只有 10 个协程能 get 资源，其他的会被阻塞，直到用完资源的协程把资源放回队列。
+- > 官方文档过一遍全是技巧 <br> 比如还有加入 debug 选项看调试 <br> 结构化并发 TaskGroup
+- > 以前用得多的时候，设计项目代码经常会参考 scrapy/twisted <br> 感觉 asyncio/gevent/twisted 核心的 api 功能都差不多，毕竟系统层面的依赖都是一样的，所以经常去另外两个的项目里找灵感..
+
 有没有 Python asyncio 的资料推荐？ https://www.v2ex.com/t/1046772
 - > 深入理解Python异步编程（上） https://cloud.tencent.com/developer/article/1187407
 - > 有好几篇收藏的协程的博文，基本全灭了，只有下面这篇了😂 从 IO 模型到协程（一） 什么是 IO ，用户进程与内核 https://www.zbpblog.com/blog-209.html
