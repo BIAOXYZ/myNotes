@@ -23,3 +23,4 @@ python异步编程模块asyncio学习(二) - 爬虫工程师陈祥安的文章 -
 
 协程系列之Event-Loop - 爬虫工程师陈祥安的文章 - 知乎 https://zhuanlan.zhihu.com/p/66752170
 
+深入理解Python异步编程（上） https://cloud.tencent.com/developer/article/1187407 || https://aju.space/2017/07/31/Drive-into-python-asyncio-programming-part-1.html || https://github.com/denglj/aiotutorial
