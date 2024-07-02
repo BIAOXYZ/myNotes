@@ -155,7 +155,7 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 深入剖析共识性算法Raft https://mp.weixin.qq.com/s/Fc1mgAsa1aDOpfosUtcJhQ
 
-Raft算法原理 https://www.codedump.info/post/20180921-raft/
+【[:star:][`*`]】 Raft算法原理 https://www.codedump.info/post/20180921-raft/ || https://web.archive.org/web/20240412203834/https://www.codedump.info/post/20180921-raft/
 - > **概述**
   * > 本文是博客解析raft算法及etcd raft库实现的系列三篇文章之一，之所以详细结合etcd实现解析raft算法原理及实现，因为etcd的raft实现是最接近论文本身的，结合论文原理一起阅读十分酸爽。这个系列文章的索引如下：
   * > 另外，我个人还针对etcd 3.1.10版本的raft相关代码实现做了一些代码的注释笔记，地址在此：[etcd-3.1.10-codedump](https://github.com/lichuang/etcd-3.1.10-codedump)。
@@ -164,8 +164,20 @@ Raft算法原理 https://www.codedump.info/post/20180921-raft/
 
 ## Raft论文
 
+[译] [论文] Raft 共识算法（及 etcd/raft 源码解析）（USENIX, 2014） https://arthurchiao.art/blog/raft-paper-zh/
+- > 与原文的可理解性目标类似，此译文也是出于更好地理解 Raft 算法这一目的。 因此，除了翻译时调整排版并加入若干小标题以方便网页阅读，***本文还对照了 `etcd/raft v0.4` 的实现，这个版本已经实现了 Raft 协议的大部分功能，但还未做工程优化， 函数、变量等大体都能对应到论文中，对理解算法有很大帮助***。
+
 Raft一致性算法论文的中文翻译 https://github.com/maemual/raft-zh_cn
 - 【[:star:][`*`]】 寻找一种易于理解的一致性算法（扩展版） https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
+- > Raft一致性算法论文的中文翻译
+  * > 英文[论文地址](https://ramcloud.atlassian.net/wiki/download/attachments/6586375/raft.pdf)
+  * > 中文[翻译地址](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
+
+Raft 博士论文的翻译 https://github.com/OneSizeFitsQuorum/raft-thesis-zh_cn
+- > 在 ATC2014 会议上发表的 Raft 论文已有较好的[翻译](https://github.com/maemual/raft-zh_cn)，但 Raft 作者的博士毕业论文暂还没有较好的翻译。
+- > 实际上 Raft 作者的博士毕业论文对 Raft 算法描述的更为仔细，描述了很多会议版没有讲到的细节，对于进一步理解 Raft 算法有重要意义。因此此仓库的目标就是翻译完此博士毕业论文（参考了部分会议版翻译）。
+  * > [英文论文](https://github.com/ongardie/dissertation/blob/master/stanford.pdf)
+  * > [中文翻译](https://github.com/LebronAl/raft-thesis-zh_cn/blob/master/raft-thesis-zh_cn.md)
 
 寻找一种易于理解的一致性算法（扩展版） https://leeweir.github.io/posts/raft/
 
