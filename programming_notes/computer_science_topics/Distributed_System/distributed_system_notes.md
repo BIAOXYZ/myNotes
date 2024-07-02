@@ -164,7 +164,7 @@ Raft 为什么是更易理解的分布式一致性算法 https://mp.weixin.qq.co
 
 ## Raft论文
 
-[译] [论文] Raft 共识算法（及 etcd/raft 源码解析）（USENIX, 2014） https://arthurchiao.art/blog/raft-paper-zh/
+[译] [论文] Raft 共识算法（及 etcd/raft 源码解析）（USENIX, 2014） https://arthurchiao.art/blog/raft-paper-zh/ || https://web.archive.org/web/20240228173318/https://arthurchiao.art/blog/raft-paper-zh/
 - > 与原文的可理解性目标类似，此译文也是出于更好地理解 Raft 算法这一目的。 因此，除了翻译时调整排版并加入若干小标题以方便网页阅读，***本文还对照了 `etcd/raft v0.4` 的实现，这个版本已经实现了 Raft 协议的大部分功能，但还未做工程优化， 函数、变量等大体都能对应到论文中，对理解算法有很大帮助***。
 
 Raft一致性算法论文的中文翻译 https://github.com/maemual/raft-zh_cn
