@@ -118,17 +118,17 @@ Error: Error while compiling statement: FAILED: ParseException line 1:70 cannot 
 
 ```sql
 -- 本来非分区表，五个列都在表名后面的括号里；如果是分区表，分区列反而不能出现在那个括号里了，需要独立到 partitioned by 后面的括号里。
-create table filter_input_ap (uid int, val int, t int, diag varchar(255)) partitioned by (time1 int);
-insert into filter_input_ap values (44969473, 2, 1, 'hd', 23);
-insert into filter_input_ap values (1234182, 77, 1, 'aids', 24);
-insert into filter_input_ap values (30274561, 1, 2, 'hd', 17);
-insert into filter_input_ap values (56520193, 12, 2, 'hd', 29);
-insert into filter_input_ap values (11262273, 8, 1, 'aids', 25);
+create table input_ap (uid int, val int, t int, diag varchar(255)) partitioned by (time1 int);
+insert into input_ap values (44969473, 2, 1, 'hd', 23);
+insert into input_ap values (1234182, 77, 1, 'aids', 24);
+insert into input_ap values (30274561, 1, 2, 'hd', 17);
+insert into input_ap values (56520193, 12, 2, 'hd', 29);
+insert into input_ap values (11262273, 8, 1, 'aids', 25);
 ```
 
 ```sql
 -- 从这里虽然也能看出来分区列，但是不知道多个分区列时会怎么样；另外也不清楚 api 方式调用时返回值时什么样
-0: jdbc:hive2://localhost:10000/> show partitions filter_input_ap;
+0: jdbc:hive2://localhost:10000/> show partitions input_ap;
 +------------+
 | partition  |
 +------------+
@@ -140,7 +140,7 @@ insert into filter_input_ap values (11262273, 8, 1, 'aids', 25);
 +------------+
 
 -- 这个本来是获取所有列的语句，但是意外发现会单独显示下分区列——不过用 api 方式调用时好像不会？
-0: jdbc:hive2://localhost:10000/> describe filter_input_ap;
+0: jdbc:hive2://localhost:10000/> describe input_ap;
 +--------------------------+---------------+----------+
 |         col_name         |   data_type   | comment  |
 +--------------------------+---------------+----------+
