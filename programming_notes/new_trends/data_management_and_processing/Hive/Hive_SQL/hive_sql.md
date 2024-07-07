@@ -116,6 +116,8 @@ Error: Error while compiling statement: FAILED: ParseException line 1:70 cannot 
 
 ## 分区表
 
+### 单个分区的例子
+
 ```sql
 -- 本来非分区表，五个列都在表名后面的括号里；如果是分区表，分区列反而不能出现在那个括号里了，需要独立到 partitioned by 后面的括号里。
 create table input_ap (uid int, val int, t int, diag varchar(255)) partitioned by (time1 int);
@@ -154,6 +156,30 @@ insert into input_ap values (11262273, 8, 1, 'aids', 25);
 | # col_name               | data_type     | comment  |
 | time1                    | int           |          |
 +--------------------------+---------------+----------+
+```
+
+## 两个分区的例子
+
+```sql
+CREATE TABLE input_a_partition (uid INT, val INT, t INT, diag VARCHAR(255)) PARTITIONED BY (date STRING, hour INT);
+
+SET hive.exec.dynamic.partition=true;
+SET hive.exec.dynamic.partition.mode=nonstrict;
+insert into input_a_partition values 
+  (1, 100, 10, 'diagnosis1', '20240707', 10),
+  (2, 200, 20, 'diagnosis2', '20240707', 10),
+  (3, 150, 15, 'diagnosis3', '20240708', 10),
+  (4, 250, 25, 'diagnosis4', '20240708', 10),
+  (5, 300, 30, 'diagnosis5', '20240708', 11),
+  (6, 350, 35, 'diagnosis6', '20240708', 11),
+  (7, 400, 40, 'diagnosis7', '20240709', 10),
+  (8, 450, 45, 'diagnosis8', '20240709', 10),
+  (9, 500, 50, 'diagnosis9', '20240709', 11),
+  (10, 550, 55, 'diagnosis10', '20240709', 11),
+  (11, 600, 60, 'diagnosis11', '20240709', 12),
+  (12, 650, 65, 'diagnosis12', '20240709', 12),
+  (13, 700, 70, 'diagnosis13', '20240709', 13),
+  (14, 750, 75, 'diagnosis14', '20240709', 13);
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
