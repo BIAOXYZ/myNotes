@@ -1,4 +1,19 @@
 
+收集下各位 Linux 下所使用的那些好用的工具 https://www.v2ex.com/t/1055592
+```console
+我目前已经记录的有：
+
+ag: 文件内容搜索
+axel：多线程下载
+inxi： 硬件查看神器
+asciinema： 终端记录神器
+dbcli：数据库命令客户端，可以实现自动命令不全，仓库包含 mycli、pgcli 、litecli
+sysdig: 系统性能监控和故障诊断工具
+```
+- > https://kkovacs.eu/cool-but-obscure-unix-tools/
+- > https://github.com/agarrharr/awesome-cli-apps  `vim/neovim/yazi/zoxide/lazygit/fzf/bat/ripgrep/btop/hyperfine/hexyl/fd`
+- > https://github.com/ibraheemdev/modern-unix
+
 Linux 下有没有简单的可视化工具？ https://www.v2ex.com/t/864318
 - > https://github.com/aristocratos/btop
   >> NIUBILITY ，好像就是我要找的东西！！！

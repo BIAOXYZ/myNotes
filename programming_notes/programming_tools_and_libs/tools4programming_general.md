@@ -124,3 +124,9 @@ GitHub 放大招，CEO 现场挑战 18 分钟开发小游戏，人还在台上�
 ## AI for coding chrome extensions
 
 - 【[:star:][`*`]】 MaxAI.me: ChatGPT AI Copilot (UseChatGPT.AI) https://chrome.google.com/webstore/detail/maxaime-chatgpt-ai-copilo/mhnlakgilnojmhinhkckjpncpbhabphi || https://www.usechatgpt.ai/ || https://www.maxai.me/
+
+## 反面（尤其是大语言模型翻车的案例）
+
+联创用 ChatGPT 写的一行代码让公司损失上万美元！网友：老板自己写的，找不到人背锅了 https://mp.weixin.qq.com/s/O-F1CGMLHaCBpTTNIwRqwQ || https://mp.weixin.qq.com/s/pi_auz_WvcgsLahn8Yu8Bg
+
+ChatGPT 无法取代人类程序员： IEEE 35 页论文测出困难编码正确率仅为 0.66% https://www.ithome.com/0/780/401.htm
