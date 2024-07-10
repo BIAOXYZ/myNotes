@@ -45,6 +45,14 @@ WBC: protecting cryptographic keys in software applications https://www.whitebox
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# Standard
+
+NIST Cryptographic Standards and Guidelines https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines
+
+RFC 9497 Oblivious Pseudorandom Functions (OPRFs) Using Prime-Order Groups https://www.rfc-editor.org/rfc/rfc9497.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # Library
 
 Advanced Crypto Software Collection (ACSC) http://hms.isi.jhu.edu/acsc/
