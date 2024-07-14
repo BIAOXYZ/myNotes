@@ -93,6 +93,7 @@ Linux post-installation steps for Docker Engine https://docs.docker.com/engine/i
     ```sh
     docker run hello-world
     ```
+  * > If you initially ran Docker CLI commands using sudo before adding your user to the docker group, you may see the following error:
 
 # jdk
 

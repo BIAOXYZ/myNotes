@@ -371,6 +371,9 @@ Setup VPN http://desktopclient.net/gw/index.html#/setupvpn
 
 # 浏览器新闻类
 
+Chromium 浏览器被曝设置私有 API，谷歌旗下服务享受监控 PC 信息特权 https://www.ithome.com/0/781/003.htm
+- > IT之家 7 月 11 日消息，开发者卢卡・卡萨纳托（Luca Casonato）于 7 月 9 日发布系列推文，表示谷歌在 Chromium 浏览器中预留了私有 API，可以让谷歌旗下域名（如 *.google.com）独家访问详细的系统信息。
+
 Firefox 将提供导出密码至本地的功能 https://www.ithome.com/0/490/347.htm
 > Mozilla 官方的 bug 报告页面 Bugzilla  显示，导出或是备份密码的请求早在 16 年前就有人提出。该编号为 249801  的问题终于在前两天被关闭，并标识为 “已解决”。
 >> `Bug 249801 Opened 16 years ago Closed 5 days ago` 【目前时间是2020.06.03，五天前就是5月30左右的样子】 Ability to export/backup saved passwords https://bugzilla.mozilla.org/show_bug.cgi?id=249801
