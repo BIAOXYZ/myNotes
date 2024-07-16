@@ -1,4 +1,22 @@
 
+2024 年 Python 实现定时任务和延时任务，性价比较高的方案是什么？ https://www.v2ex.com/t/1057323
+- > python 也就 celery 和 apscheduler 能用
+- > celery 和 apscheduler 都能满足，而且 apscheduler 支持动态添加周期任务，celery 更偏向生产-消费模型
+- > celery 和 apscheduler celery 相对稳定，建议搭配 rabbitmq 使用，apscheduler 适合简单场景，要额外处理多进程并发问题，实际使用起来或多或少都有一些问题
+- > 大项目用 mq ，小项目用 asyncio.create_task 跑一个 task：
+  ```python
+      while True:
+          try:
+              await asyncio.sleep(1)  # Check every 1 second
+              # Your cleanup code here
+          except asyncio.CancelledError:
+              logging.info("Cleanup task cancelled")
+              break
+          except Exception as e:
+              logging.error(f"Error in cleanup task: {e}", "ERROR")
+  ```
+- > 微：asyncio 中小：Celery 大：Temporal
+
 想问下大家平时用 Python 中 asyncio 库的时候，有什么技巧？或者说用了哪些 high level 或 low level 的 api？ https://www.v2ex.com/t/1053369
 ```console
 比如下面我经常用的
