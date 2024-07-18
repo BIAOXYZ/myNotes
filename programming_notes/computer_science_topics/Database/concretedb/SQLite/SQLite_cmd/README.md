@@ -1,4 +1,13 @@
 
+# 常用命令总结
+
+```sh
+.tables
+.schema <table_name>
+.header on
+.mode column
+```
+
 # SQLite 命令
 
 Command Line Shell For SQLite https://www.sqlite.org/cli.html

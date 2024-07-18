@@ -1,4 +1,11 @@
 
+有没有懂 PG 数据库的，新项目要使用 PG 数据库，是使用多库单模式，还是使用单库多模式？ https://www.v2ex.com/t/1057710
+- > 生产上就是一套实例一个库。其他环境在一台机器上，不同环境用库划分，不同业务用 schema 划分。postgres 库和 public 模式禁止使用。
+  >> 大佬 为什么禁止使用 public （刚接触 pg 库
+  >>> 应该反问：为什么要用 public 库?
+  >>>> 使用 public 的话，后端微服务就不用指定模式了（大概？）就和 mysql 一样用了 这样看起来也体现不出来啥区别，感觉也没有啥问题
+  >>>>> 有种东西叫 search_path ，不用特意设置。不带表名，也会默认访问和修改自己 schema 的表。
+
 postgres 咨询锁性能问题 https://www.v2ex.com/t/994540
 
 Postgresql 升级问题 https://www.v2ex.com/t/906314

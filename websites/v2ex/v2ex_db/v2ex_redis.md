@@ -1,4 +1,13 @@
 
+线上服务 redis 查询超时排查求教 https://www.v2ex.com/t/1058091
+```console
+一年前给某单位做了个门户类的服务，SpringBoot 项目，单节点 redis 、mysql 当时就是几个人瞎写，堆成一堆屎山，现在不知道为什么几乎每隔一两周 redis 都会查询超时，服务报错： java.lang.RuntimeException: org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 10 second(s) 稍微有点头绪的话就是有个功能会往 redis 里存大量的数据，使用的是 map ，并且取的频率还是挺高的，但是不知道该怎么确定就是这个错，没法找到证据 线上排错这方面自己也没经验，请问应该怎么入手
+```
+- > 可能是大 key 太多，导致操作缓慢，可以搞个主从读写分离或者 cluster ，看看是不是内存占满了 开启 lru 也会变慢
+- > 具体分析一下这个请求包有没有发出去，看是哪里耗时过多了
+- > 1.redis 有慢查询 log ；2.首先要排查有没有 `keys *` 查询；
+- > https://redis.io/docs/latest/commands/slowlog-get/
+
 Redis 加上密码后，整体性能下降 20%？ https://www.v2ex.com/t/1040022
 - > 真的吗？我本地测了一下，不保证正确
   >> 我去，厉害了...怎么做到的，老哥有脚本啥的吗

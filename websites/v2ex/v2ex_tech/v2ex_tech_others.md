@@ -1,4 +1,6 @@
 
+瀑布模型为项目带来节奏感 https://www.v2ex.com/t/1057978
+
 2024 年了，之前搞微服务的公司你们还好么 https://www.v2ex.com/t/1057052
 - > 链路追踪没做好吧，通常一个 traceid 查一下就知道哪里异常
 - > 可以上 apm 监控，skywalking ，pinpoint 之类
