@@ -61,12 +61,6 @@ func2 Result: 6
 
 # PySnooper官方
 
-PySnooper - Never use print for debugging again https://github.com/cool-RR/pysnooper
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
-# PySnooper文章
-
 PySnooper - Never use print for debugging again https://github.com/cool-RR/PySnooper
 - Advanced Usage https://github.com/cool-RR/PySnooper/blob/0f1e67b26b94584e7c7e7e463cf43d506135fe4c/ADVANCED_USAGE.md
   * > Start all snoop lines with a prefix, to grep for them easily:
@@ -78,6 +72,10 @@ PySnooper - Never use print for debugging again https://github.com/cool-RR/PySno
     @pysnooper.snoop(color=False)
     ```
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# PySnooper文章
+
 理解Python的神器PySnooper调试程序 https://www.byto.top/article/PySnooper-basis/
 - > **高级用法**
   * > 默认情况下，变量和异常被截断为100个字符。您可以自定义：
@@ -87,7 +85,9 @@ PySnooper - Never use print for debugging again https://github.com/cool-RR/PySno
     > 您也可以使用 `max_variable_length=None` 它从不截断它们。
 
 实时可视化Debug：VS Code 开源新工具，一键解析代码结构 - 机器之心的文章 - 知乎 https://zhuanlan.zhihu.com/p/109212146
+- > 项目地址： https://github.com/hediet/vscode-debug-visualizer
 - > 之前机器之心曾介绍过极简 DeBug 工具 [PySnooper]() ，我们只需要向感兴趣的函数增加一个装饰器，就能得到该函数的详细 log，包含哪行代码能运行、什么时候运行以及本地变量变化的确切时间等等。
+- > 效果上确实非常惊艳，它与之前的 DeBug 方式采用完全不同的展现形式。目前该 VS Code Debug Visualizer 在 JavaScript/TypeScript 上有比较好的效果，在 C#、Java 和 PHP 上也正在积极测试，其它语言也还都能用。
 
 Python 代码调试神器：PySnooper https://www.cnblogs.com/wongbingming/p/13974982.html
 
