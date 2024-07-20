@@ -40,6 +40,7 @@
 - Edit csv https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv
   * > If you don't have vs code to hand, you can use the online version at https://edit-csv.net
 - Debug Visualizer https://marketplace.visualstudio.com/items?itemName=hediet.debug-visualizer || https://github.com/hediet/vscode-debug-visualizer
+  * 实时可视化Debug：VS Code 开源新工具，一键解析代码结构 - 机器之心的文章 - 知乎 https://zhuanlan.zhihu.com/p/109212146
 - Python C++ Debugger https://marketplace.visualstudio.com/items?itemName=benjamin-simmonds.pythoncpp-debug || https://github.com/benibenj/vscode-pythonCpp
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
