@@ -51,6 +51,21 @@ iTerm2多个窗口同时输入命令 https://blog.csdn.net/fangfu123/article/det
 - > 关闭其实也很简单。再次输入刚刚打开的那个命令就行了。
   * > `⌘(command) + ⇧(shift) + i`
 
+### 滚屏内容设置成无限
+```console
+在 macOS 的 iTerm2 中，您可以通过以下步骤来增加可保存的滚动内容：
+
+- 打开 iTerm2。
+- 在菜单栏中，点击 iTerm2，然后选择 Preferences（偏好设置）。
+- 在偏好设置窗口中，选择 Profiles（配置文件）选项卡。
+- 选择您正在使用的配置文件（例如，Default）。
+- 在右侧的选项中，找到 Terminal（终端）部分。
+- 找到 Scrollback buffer（滚动缓冲区）设置。您会看到一个选项叫 Scrollback lines（滚动行数）。
+- 将这个值增加到您需要的行数。例如，可以设置为 10000 或更多。
+- 确保勾选 "Unlimited scrollback"（无限滚动），如果您希望没有限制。
+- 完成这些设置后，iTerm2 将能够保存更多的输出内容，您可以通过滚动条查看之前的内容。
+```
+
 ### 官方增强插件（脚本）
 
 Shell Integration https://iterm2.com/documentation-shell-integration.html

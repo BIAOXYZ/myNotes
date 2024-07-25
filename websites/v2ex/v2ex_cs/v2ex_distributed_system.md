@@ -1,4 +1,6 @@
 
+关于 2PC/3PC https://www.v2ex.com/t/1059730
+
 分布式事务，怎么感觉不需要那么复杂 https://www.v2ex.com/t/1019248
 
 关于持久化的一点疑问 https://www.v2ex.com/t/825944
