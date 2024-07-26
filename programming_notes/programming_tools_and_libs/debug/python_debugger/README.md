@@ -2,15 +2,21 @@
 PythonDebuggingTools https://wiki.python.org/moin/PythonDebuggingTools
 - DebuggingWithGdb https://wiki.python.org/moin/DebuggingWithGdb
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # pdb++
 
 pdb++, a drop-in replacement for pdb https://github.com/pdbpp/pdbpp
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ipdb
 
 Python 程序如何高效地调试？ - Rui L的回答 - 知乎 https://www.zhihu.com/question/21572891/answer/26046582
 
 Python 程序如何高效地调试？ - 小明的回答 - 知乎 https://www.zhihu.com/question/21572891/answer/123220574
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # ~~ptvsd~~  -->  debugpy
 
@@ -21,9 +27,13 @@ debugpy - a debugger for Python https://github.com/microsoft/debugpy
 
 Remote Debugging https://donjayamanne.github.io/pythonVSCodeDocs/docs/debugging_remote-debugging/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # remote-pdb
 
 Remote vanilla PDB (over TCP sockets). https://github.com/ionelmc/python-remote-pdb
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 调试多进程程序
 
@@ -45,59 +55,7 @@ How to use ipdb.set_trace in a forked process https://stackoverflow.com/question
 Debug Multiprocessing In Python https://unbiased-coder.com/debug-multiprocessing-in-python/
 - > **5. Use Inter Process Communication**
 
-# `Cyberbrain`
-
-Cyberbrain: Python debugging, redefined. https://github.com/laike9m/Cyberbrain
-- > Cyberbrain consists of a Python library and various editor/IDE integrations. Currently it supports VS Code and Gitpod. See our plan on expanding the support.
-
-Cyberbrain: Python debugging, redefined. https://marketplace.visualstudio.com/items?itemName=laike9m.cyberbrain
-
-# `q` (and `logging`?)
-
-In python, is there a way to automatically log information any time you create a variable? https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a
-- https://stackoverflow.com/questions/62844130/in-python-is-there-a-way-to-automatically-log-information-any-time-you-create-a/62844789#62844789
-
-q https://github.com/zestyping/q || https://pypi.org/project/q/
-- > Quick and dirty debugging output for tired programmers. ⛺
-- > Install `q` with `pip install -U q`.
-- > All output goes to `/tmp/q` (or on Windows, to `$HOME/tmp/q`). You can watch the output with this shell command while your program is running:
-  ```sh
-  tail -f /tmp/q
-  ```
-- > To trace a function (showing its arguments, return value, and running time), insert this above the `def`:
-  ```py
-  import q
-  @q
-  ```
-- > To start an interactive console at any point in your code, call `q.d()`:
-  ```py
-  import q; q.d()
-  ```
-- > **Other projects inspired by this one**
-  * [`q` for golang](https://github.com/y0ssar1an/q)
-  * [`qq` for elixir](https://github.com/mandarvaze/q)
-  * [`ic` for Python](https://github.com/gruns/icecream) - Similar library for Python, inspired by `q`.
-- > The following [Lightning Talk](http://pyvideo.org/video/1858/sunday-evening-lightning-talks#t=25m15s) shows how powerful using q can be.
-
-How does q work? https://www.pythoninsight.com/2018/05/how-does-q-work/
-
-How to log a variable's name and value? https://stackoverflow.com/questions/19317770/how-to-log-a-variables-name-and-value
-- https://stackoverflow.com/questions/19317770/how-to-log-a-variables-name-and-value/19318417#19318417
-  * > If the tool you need is only for developing and debugging, there's a useful package called [q](https://github.com/zestyping/q).
-  * > It has been submitted to pypi, it can be installed with `pip install q` or `easy_install q`.
-    ```py
-    import q; q(foo)
-
-    # use @q to trace a function's arguments and return value
-    @q
-    def bar():
-       ...
-
-    # to start an interactive console at any point in your code:
-    q.d()
-    ```
-  * > The results are output to the file `/tmp/q` (or any customized paths) by default, so they won't be mixed with stdout and normal logs. You can check the output with `tail -f /tmp/q`. The output is highlighted with different colors.
-  * > The author introduced his library in a lightning talk of PyconUS 2013. The video is [here](https://youtu.be/OL3De8BAhME), begins at [25:15](https://www.youtube.com/watch?v=OL3De8BAhME&t=1515s).
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # debug with records and logs by `logging` or other modules
 >> 【[:star:][`*`]】 //notes：其实开始是想利用 `logging` 之类的日志库，***把每一步运行完当前所有的变量值、代码到哪一行了之类的信息全都打印到日志里，这样其实就能起到 `gdb` 的效果了***（虽然日志文件一定会巨大，但是可以只关注自己想关注的那几行代码或者函数执行前后的变量/返回值变化就行。）。后来发现了 `q` 这个库，但是这个库不见得能 100% 达到我想要的效果，而且就算能，自己也可以写写试试。
@@ -181,6 +139,8 @@ python tracing a segmentation fault https://stackoverflow.com/questions/2663841/
     ```
   * > (You'd probably want to write the trace output to a file, of course.)
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他
 
 Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-boss/
@@ -188,3 +148,21 @@ Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-bos
 
 ApacheCN Python 译文集 https://github.com/apachecn/apachecn-python-zh
 - 七、测试和调试分布式应用 （Distributed Computing with Python） https://github.com/apachecn/apachecn-python-zh/blob/8707a37451/docs/py-dist-comp/8.md || https://py.apachecn.org/#/docs/py-dist-comp/8
+
+All Python Debugging Tools You Need to Know in 2020 https://medium.com/swlh/all-python-debugging-tools-you-need-to-know-in-2020-e3ff66b8f318
+- > **`icecream`**
+  * icecream https://github.com/gruns/icecream
+- > **`objprint`**
+  * https://github.com/gaogaotiantian/objprint
+- > **`loguru`**
+- > **`structlog`**
+- > **`colorlog`**
+- > **`PySnooper`**
+- > **`hunter`**
+  * python-hunter https://github.com/ionelmc/python-hunter
+- > **`Watchpoints`**
+- > **`VizTracer`**
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
