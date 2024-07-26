@@ -20,7 +20,8 @@ q https://github.com/zestyping/q || https://pypi.org/project/q/
 - > **Other projects inspired by this one**
   * [`q` for golang](https://github.com/y0ssar1an/q)
   * [`qq` for elixir](https://github.com/mandarvaze/q)
-  * [`ic` for Python](https://github.com/gruns/icecream) - Similar library for Python, inspired by `q`.
+  * ***[`ic` for Python](https://github.com/gruns/icecream) - Similar library for Python, inspired by `q`***.
+    >> 【[:star:]】//notes：但是 `icecream` 仓库里没有提到这一点。。。
 - > The following [Lightning Talk](http://pyvideo.org/video/1858/sunday-evening-lightning-talks#t=25m15s) shows how powerful using q can be.
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
