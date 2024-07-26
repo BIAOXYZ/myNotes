@@ -45,11 +45,12 @@ How to use ipdb.set_trace in a forked process https://stackoverflow.com/question
 Debug Multiprocessing In Python https://unbiased-coder.com/debug-multiprocessing-in-python/
 - > **5. Use Inter Process Communication**
 
-# birdseye
+# `Cyberbrain`
 
-birdseye https://github.com/alexmojaki/birdseye
+Cyberbrain: Python debugging, redefined. https://github.com/laike9m/Cyberbrain
+- > Cyberbrain consists of a Python library and various editor/IDE integrations. Currently it supports VS Code and Gitpod. See our plan on expanding the support.
 
-Birdseye 极其强大的Python调试工具 https://juejin.cn/post/7127830197407072270 || https://cloud.tencent.com/developer/article/1825280 || https://zhuanlan.zhihu.com/p/421961147
+Cyberbrain: Python debugging, redefined. https://marketplace.visualstudio.com/items?itemName=laike9m.cyberbrain
 
 # `q` (and `logging`?)
 
@@ -184,9 +185,6 @@ python tracing a segmentation fault https://stackoverflow.com/questions/2663841/
 
 Debugging Python Like a Boss https://zapier.com/engineering/debugging-python-boss/
 - pydbgr
-
-Cyberbrain: Python debugging, redefined. https://github.com/laike9m/Cyberbrain
-- > Cyberbrain consists of a Python library and various editor/IDE integrations. Currently it supports VS Code and Gitpod. See our plan on expanding the support.
 
 ApacheCN Python 译文集 https://github.com/apachecn/apachecn-python-zh
 - 七、测试和调试分布式应用 （Distributed Computing with Python） https://github.com/apachecn/apachecn-python-zh/blob/8707a37451/docs/py-dist-comp/8.md || https://py.apachecn.org/#/docs/py-dist-comp/8

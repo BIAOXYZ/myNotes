@@ -251,6 +251,10 @@ PingCAPers Make Their Debut at VLDB https://pingcap.com/blog/pingcapers-make-the
 
 # 字节
 
+字节跳动基础架构四篇论文入选 VLDB 2024 https://mp.weixin.qq.com/s/pN7Y76swkuYotvIAnrZEQQ
+- > SecuDB: An In-enclave Privacy-preserving and Tamper-resistant Relational Database
+数据库安全是数据库商业化产品与研究领域的重要方向。随着可信硬件环境（Trusted Execution Environment）硬件技术的发展，数据库可以整体运行在 TEE 中，为数据库安全生态带来了全新的机遇与挑战。字节数据库研究团队提出了基于可见性分析的细粒度隐私保护与改进时序表的防篡改功能，性能损耗分别控制在 5% 与 20% 以内，较传统的基于 TEE 与软件方案的隐私保护与防篡改数据库功能通用性强，性能更高。
+
 字节跳动开源其云原生数据仓库 ByConity https://mp.weixin.qq.com/s/lm2ppWf3UDhu1nFyeOSfVw
 - > **项目背景**
   * > ByConity 的背景可以追溯到 2018 年，当时字节跳动开始在内部使用 ClickHouse，因为业务的发展，要服务于大量的用户，数据规模变得越来越巨大。由于 ClickHouse 是 Shared-Nothing 的架构，每个节点是独立的，不会共享存储资源等，因而计算资源和存储资源是紧耦合的，这使得 ClickHouse 在使用过程中会遇到以下情况：
