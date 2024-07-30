@@ -1,4 +1,9 @@
 
+Github 如何让 Fork 的 repository 自动合并原始 repository 的代码提交？ https://www.v2ex.com/t/1060966
+- > 听起来是已有的 feature 啊 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork
+- > github 的网页上有一个按钮，点一下就同步代码了。
+- > 抄下这个 action, 反正我直接用没问题. https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/blob/main/.github/workflows/sync.yml
+
 【[:star:][`*`]】 在 git 分支名上面加斜杠真的太恶心了 https://www.v2ex.com/t/1035964
 - > 因为分支加斜杠，会在图形化 git 工具是显示为文件夹（入行时某位前辈说的）
 - > https://dev.to/basementdevs/be-a-better-developer-with-these-git-good-practices-2dim
