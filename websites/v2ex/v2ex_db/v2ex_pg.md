@@ -1,4 +1,6 @@
 
+学习 PostgreSQL，有什么资料推荐？ https://www.v2ex.com/t/1062183
+
 有没有懂 PG 数据库的，新项目要使用 PG 数据库，是使用多库单模式，还是使用单库多模式？ https://www.v2ex.com/t/1057710
 - > 生产上就是一套实例一个库。其他环境在一台机器上，不同环境用库划分，不同业务用 schema 划分。postgres 库和 public 模式禁止使用。
   >> 大佬 为什么禁止使用 public （刚接触 pg 库
