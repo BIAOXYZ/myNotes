@@ -1,4 +1,6 @@
 
+github 强制 2fa，有什么替代的吗 https://www.v2ex.com/t/1062879
+
 Github 如何让 Fork 的 repository 自动合并原始 repository 的代码提交？ https://www.v2ex.com/t/1060966
 - > 听起来是已有的 feature 啊 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork
 - > github 的网页上有一个按钮，点一下就同步代码了。
