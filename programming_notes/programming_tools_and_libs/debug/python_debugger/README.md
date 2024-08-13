@@ -139,6 +139,37 @@ python tracing a segmentation fault https://stackoverflow.com/questions/2663841/
     ```
   * > (You'd probably want to write the trace output to a file, of course.)
 
+## 打印类成员
+
+```py
+class MyClass:
+    def __init__(self):
+        self.a = 1
+        self.b = "hello"
+        self.c = [1, 2, 3]
+        self.d = {"x": 10, "y": 20}
+        self.e = {1, 2, 3}
+ins = MyClass()
+
+def print_members(obj):
+    import inspect
+    print(f"---------- type of the obj is: {type(obj)}")
+    members = inspect.getmembers(obj)
+    for name, value in members:
+        if not name.startswith("__"):
+            print(f"member name: {name}; member value: {value}; member type: {type(value)}")
+print_members(ins)
+```
+```console
+$ python3 tests/tmptest.py 
+---------- type of the obj is: <class '__main__.MyClass'>
+member name: a; member value: 1; member type: <class 'int'>
+member name: b; member value: hello; member type: <class 'str'>
+member name: c; member value: [1, 2, 3]; member type: <class 'list'>
+member name: d; member value: {'x': 10, 'y': 20}; member type: <class 'dict'>
+member name: e; member value: {1, 2, 3}; member type: <class 'set'>
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 其他
