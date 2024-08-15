@@ -1,4 +1,8 @@
 
+CPU 关于内存这里的描述是什么意思呢？ https://www.v2ex.com/t/1065015
+- > 和内存寻址方式以及内存颗粒有关：DRAM channel ＞ DIMM ＞ rank ＞ chip ＞ bank ＞ row/column https://www.cnblogs.com/zhemeshenqi/p/12524492.html
+- > 1r 就是单通道，2r 就是双通道，这个意思 <br> 16x4 显示 64 啊，是 32+32 的双通道，但是 ddr5 的话我的建议两条就行了，不然频率上不去 <br> 还有一件事，你买 x3d 是来打游戏的吧，打游戏建议 7800x3d ，90 的 x3d 两个 ccd 6+6 的，导致不如 7800x3d 单 ccd <br> 你买东西别研究几个槽了 总结就是 dd5 两根内存就行了 7900x3d 不如 7800x3d ，干活的话普通版本就行了 <br> intel 的话建议买 i5 就行了 <br> 就这样 12400f ，12600k 这两个香喷喷
+
 高通 CPU 浮点这么快吗。。。 https://www.v2ex.com/t/994966
 ```console
 wget https://github.com/xiexiexx/PPLA/raw/main/billionsort/billionsort.cpp

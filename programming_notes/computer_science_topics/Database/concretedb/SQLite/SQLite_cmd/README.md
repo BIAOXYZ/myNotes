@@ -1,11 +1,41 @@
 
 # 常用命令总结
 
+| 命令 | 作用 | 其他 |
+| --- | --- | --- |
+| `.help` |  |  |
+| `.tables` | 列出当前数据库中所有的表名 | |
+| `.schema <table_name>` | 显示指定表的创建 schema，如果不指定表名则显示所有表的 schema | |
+| `.header on` | 打开结果集显示表头的功能 | 关闭自然就是 `.header off` |
+| `.timer on` | 打开查询计时功能 | 关闭自然就是 `.timer off` |
+| `.mode column` | 将结果集以列格式显示，更加易读 | |
+| `.show` | 显示当前 SQLite 的各种设置 | |
+|||
+
+
 ```sh
-.tables
-.schema <table_name>
-.header on
-.mode column
+# .show -- 这会显示当前 SQLite 设置的各种信息,包括 .header 的状态。
+sqlite> .show
+        echo: off
+         eqp: off
+     explain: auto
+     headers: on
+        mode: list
+   nullvalue: ""
+      output: stdout
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width:
+    filename: tmph_eztm7e
+```
+
+```sh
+# 从这里可见 sqlite 的查询还是有点乱的。。。
+sqlite> .mode
+current output mode: list
+sqlite> .header
+Usage: .headers on|off
 ```
 
 # SQLite 命令
