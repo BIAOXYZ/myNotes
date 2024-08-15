@@ -36,6 +36,8 @@
 - Markdown All in One https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 - Bracket Pair Colorizer 2 https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
 - Code Spell Checker https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker  【用来检查单词拼写错误，拼写错误的单词会有浅蓝色的波浪线】
+- Python Test Explorer for Visual Studio Code https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter  【装了这个 vscode 里就能达到类似 pycharm 的只运行单个测试用例的效果了——过去官方好像是默认支持的，但是现在不是默认的了，此外这个插件的效果更好】
+  * Test Explorer UI https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer  【貌似是上一个插件会用到？但是不需要单独装，所以这里就是记录下】
 - GitLens https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 - Edit csv https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv
   * > If you don't have vs code to hand, you can use the online version at https://edit-csv.net

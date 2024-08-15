@@ -3,13 +3,13 @@
 
 | 命令 | 作用 | 其他 |
 | --- | --- | --- |
-| `.help` |  |  |
+| **`.help`** |  |  |
 | `.tables` | 列出当前数据库中所有的表名 | |
 | `.schema <table_name>` | 显示指定表的创建 schema，如果不指定表名则显示所有表的 schema | |
 | `.header on` | 打开结果集显示表头的功能 | 关闭自然就是 `.header off` |
 | `.timer on` | 打开查询计时功能 | 关闭自然就是 `.timer off` |
-| `.mode column` | 将结果集以列格式显示，更加易读 | |
-| `.show` | 显示当前 SQLite 的各种设置 | |
+| `.mode column` | 将结果集以列格式显示，更加易读 | ***更清晰的查询结果显示方式是 `.mode line`***，类似 psql 的 `\x` |
+| **`.show`** | 显示当前 SQLite 的各种设置 | |
 |||
 
 
