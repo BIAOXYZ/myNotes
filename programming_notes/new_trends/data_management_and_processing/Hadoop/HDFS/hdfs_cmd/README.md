@@ -1,4 +1,17 @@
 
+# `hdfs`常用命令总结
+
+| 命令 | 作用 | 其他 |
+| --- | --- | --- |
+| `hdfs getconf -confKey fs.defaultFS` | 获取 HDFS 路径的默认前缀。||
+||||
+
+
+```sh
+$ hdfs getconf -confKey fs.defaultFS  
+hdfs://hdfs:9000
+```
+
 # 命令
 
 HDFS Commands: Hadoop Shell Commands to Manage HDFS https://www.edureka.co/blog/hdfs-commands-hadoop-shell-command

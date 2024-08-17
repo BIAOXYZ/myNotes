@@ -179,6 +179,8 @@ Raft 博士论文的翻译 https://github.com/OneSizeFitsQuorum/raft-thesis-zh_c
   * > [英文论文](https://github.com/ongardie/dissertation/blob/master/stanford.pdf)
   * > [中文翻译](https://github.com/LebronAl/raft-thesis-zh_cn/blob/master/raft-thesis-zh_cn.md)
 
+【6.824】万字详解Raft一致性算法 - 林恩LeyN的文章 - 知乎 https://zhuanlan.zhihu.com/p/522435604
+
 寻找一种易于理解的一致性算法（扩展版） https://leeweir.github.io/posts/raft/
 
 分布式一致性算法：Raft 算法（论文翻译） https://www.cnblogs.com/linbingdong/p/6442673.html
