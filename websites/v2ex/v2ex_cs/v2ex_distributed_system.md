@@ -1,4 +1,8 @@
 
+分布式事务到是什么 https://www.v2ex.com/t/1066563
+- > https://pdai.tech/md/arch/arch-z-transection.html 不知道楼主面试的是什么岗位，这些八股文还是多准备下比较好
+- > 才疏学浅，至今没用过分布式事务，我来个八股文链接，一起学习下： https://github.com/doocs/advanced-java/blob/main/docs/distributed-system/distributed-transaction.md
+
 关于 2PC/3PC https://www.v2ex.com/t/1059730
 
 分布式事务，怎么感觉不需要那么复杂 https://www.v2ex.com/t/1019248

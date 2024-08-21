@@ -28,6 +28,8 @@ Paxos和Raft的前世今生 https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 《分布式系统模式》中文版 https://github.com/dreamhead/patterns-of-distributed-systems
 
+一致性协议算法-2PC、3PC、Paxos、Raft、ZAB、NWR超详细解析 https://cloud.tencent.com/developer/article/1763152 || https://mp.weixin.qq.com/s/ZmRS9Gjh9P-4lPLZ9jWk_A
+
 :couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple::couple:
 
 # distributed transaction system
