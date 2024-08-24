@@ -245,8 +245,14 @@ https://www.zhihu.com/question/648215689/answer/3432678754
 
 # 其他
 
+在你一生中有什么一直影响你的名言吗 https://www.v2ex.com/t/1067237
+```console
+没有边界的心软，只会让对方得寸进尺；毫无原则的仁慈，只会让对方为所欲为。 --《教父》
+```
+- > 应该也不算名言吧。懂的越多，相信的越少。
+
 写一句你所知的计算机界名言名句。 https://www.v2ex.com/t/1017108
-- > Software is like sex, it's better when it's free. -Linus Torvalds
+- > `Software is like sex, it's better when it's free.` -Linus Torvalds
 - > Rule 34, If it exists, there is porn of it – no exceptions 算么
 - > Across the Great Wall, we can reach every corner in the world”（越过长城，走向世界每个角落）
 - > 永远不要低估一辆装满磁带在高速公路上飞驰的小货车的传输带宽。 —— 安德鲁·谭宁邦（ Andrew Tanenbaum ，1981 ）

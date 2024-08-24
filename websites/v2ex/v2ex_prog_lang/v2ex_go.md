@@ -1,4 +1,18 @@
 
+golang 如何远程调试服务 https://www.v2ex.com/t/1067166
+- > 用 github.com/go-delve/delve
+  ```console
+  在 dockerFile 里：
+  RUN go install github.com/go-delve/delve/cmd/dlv@v1.22.1
+  # 构建 Go 应用程序
+  RUN go build -gcflags="-N -l" -o test .
+  # 声明服务端口
+  EXPOSE 8080 2345
+  # 指定容器启动命令
+  CMD ["dlv", "--listen=:2345", "--headless=true", "--api-version=2", "exec", "./test"]
+  远程上启动后在 goland 里配置下 go remote 就行了
+  ```
+
 V 友们，系统的深入学习 golang 有没有好点儿的资料 https://www.v2ex.com/t/1046635
 - > https://book.douban.com/subject/35720728/ 这个上下两本推荐看看，个人感觉还不错。
   >> 这本书作者和极客时间 《 go 语言核心 36 讲》 是一样的
