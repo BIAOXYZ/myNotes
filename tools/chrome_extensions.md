@@ -141,6 +141,12 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
   * 如何使用？ https://immersive-translate.owenyoung.com/usage
   * 沉浸式双语网页翻译扩展 https://github.com/immersive-translate/immersive-translate/
 
+记得在 V2EX 上看到过一个网页翻译工具但是不记得叫什么了 https://www.v2ex.com/t/1068437
+- > relingo 和 trancy 功能差不多，不知道哪个更好用。
+- > 我是用 Glarity ，翻译，提炼总结万精油
+- > https://github.com/fishjar/kiss-translator 这个？
+  >> 这个好用，且开源免费。
+
 ### 油猴专区
 
 - Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/
