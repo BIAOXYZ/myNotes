@@ -1,4 +1,9 @@
 
+goland 自动切换对应 dlv 版本调试程序，同时调试不同 go 版本的项目再也不用担心版本问题 https://www.v2ex.com/t/1069120
+- > 用最新版的 dlv 就行吧，高版本的 dlv 应该是兼容低版本 go 程序调试吧？
+  >> 要是能兼容我也不会想这办法了，网上搜到的都是 goland 新版自带 dlv 调试自己的项目有问题额。
+- > `go install delve@latest` 然后替换掉 goland 目录下的 dlv 就行了
+
 golang 如何远程调试服务 https://www.v2ex.com/t/1067166
 - > 用 github.com/go-delve/delve
   ```console
