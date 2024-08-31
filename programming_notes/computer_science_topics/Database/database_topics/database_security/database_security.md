@@ -168,7 +168,7 @@ https://blogs.msdn.microsoft.com/sqlsecurity/2017/10/05/enabling-confidential-co
 
 # SQL注入
 
-预编译SQL为什么能够防止SQL注入 https://www.cnblogs.com/Createsequence/p/16963891.html
+~~预编译SQL为什么能够防止SQL注入 https://www.cnblogs.com/Createsequence/p/16963891.html~~  【//已转移】
 
 预编译与sql注入 https://fushuling.com/index.php/2023/10/27/%E9%A2%84%E7%BC%96%E8%AF%91%E4%B8%8Esql%E6%B3%A8%E5%85%A5/
 
