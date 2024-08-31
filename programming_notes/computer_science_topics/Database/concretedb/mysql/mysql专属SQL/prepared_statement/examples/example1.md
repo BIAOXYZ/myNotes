@@ -19,6 +19,18 @@
 预编译语句(Prepared Statements)介绍，以MySQL为例 https://www.cnblogs.com/micrari/p/7112781.html
 
 ## 个人实战
+```sql
+MariaDB [ppsql]> select * from books;
++------+-------+
+| isbn | price |
++------+-------+
+|    1 |    10 |
+|    2 |    20 |
+|    3 |    30 |
+|    4 |    40 |
++------+-------+
+4 rows in set (0.001 sec)
+```
 
 ```sql
 ----- 基本使用（只绑定值）以及取消prepare的语句。
@@ -64,7 +76,7 @@ MariaDB [ppsql]>
 MariaDB [ppsql]> prepare query from 'select * from ? where isbn = ?';
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? where isbn = ?' at line 1
 
--- 更近一步，即使不涉及列只涉及表也是不行的。
+-- 更进一步，即使不涉及某个具体的列，只涉及表也是不行的。
 MariaDB [ppsql]> prepare query from 'select * from ?';
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1
 ```
