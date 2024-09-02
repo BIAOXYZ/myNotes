@@ -1,4 +1,14 @@
 
+mysql 有啥推荐的视频或书籍嘛 https://www.v2ex.com/t/1069253
+- > 《 MySQL 是怎样运行的：从根儿上理解 MySQL 》
+- > 高性能 MySQL 第四版
+- > 从易到难看完一楼的看三楼的，最后看 mysql45 讲
+- > 如果是从零开始的话可以在油管里面关注 “尚硅谷 IT 培训学校” 视频都是免费的,我一直在这里学习
+- > High Performance MySQL, 4th Edition
+- > 这个图灵课堂的周瑜，MySQL 讲的贼好，看这个课的索引的部分： https://www.bilibili.com/video/BV1Ys4y1J7iY?t=2.2
+- > 如果我现在重头学的话，我会只看极客时间的 MySQL 实战 45 讲，围绕碰到的问题去和 AI 深究
+- > 书：MySQL 技术内幕 InnoDB 存储引擎 第 2 版；视频推荐 B 站 up：知春路遇上八里桥，付费讲解 mysql 源码； 看了 up 的操作系统源码讲解，感觉成长很多～
+
 请教一个 Mysql 并发查询的问题（与可重复读相关？） https://www.v2ex.com/t/1046741
 
 MySQL 数据上亿以后，查询分页问题 https://www.v2ex.com/t/1008741

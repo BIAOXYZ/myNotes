@@ -1,4 +1,6 @@
 
+Linux 写时复制问题 https://www.v2ex.com/t/1069433
+
 请教一个 winodows 下 cpu 核心配分问题 https://www.v2ex.com/t/1041235
 ```console
 windos10 环境下,有一颗 10 核心 20 线程的 cpu.为什么每次启动不同任务的时候,核心 1 总是负载很高?
