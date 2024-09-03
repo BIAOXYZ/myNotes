@@ -1,4 +1,10 @@
 
+有没有人在生产用过 sqlite+nas 分布式存储的？ https://www.v2ex.com/t/1069791
+- > 题外话，sqlite 不适合独立出来做数据服务器，适合嵌入在程序中， 这种就算用 sqlite 需要魔改，当然市面上已经有了这种魔改 sqlite 作为数据库引擎的高性能分布式数据库 (bloomberg 出的 `comdb2`) https://github.com/bloomberg/comdb2
+- > 考虑 https://github.com/rqlite/rqlite 么？
+- > SQLite 不适合分布式写入。要有高的写并发，就得利用 WAL ，尽可能缓冲多点事务，再落盘写入。而官方说，WAL 模式要求所有进程在同一主机上，不能在网络文件系统上工作：`All processes using a database must be on the same host computer; WAL does not work over a network filesystem. This is because WAL requires all processes to share a small amount of memory and processes on separate host machines obviously cannot share memory with each other.`
+- > SQLite 的锁是基于文件系统的，所以官方也不建议你把数据库文件扔 NFS 里，主要是有些 NFS 文件系统实现的时候锁的机制做的不好，多线程或多进程访问的时候有可能损坏你的数据库文件。 <br> 但有些文件系统的实现是明确说过支持全部的锁机制，没记错的话 AWS 的 EBS 就可以。这种情况下你把 SQLite 文件放上去共享也没问题。
+
 c++对大量图片进行序列化和反序列化 https://www.v2ex.com/t/1031297
 ```console
 工作中开发的软件有这样一个需求：

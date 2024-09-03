@@ -1,4 +1,10 @@
 
+ClickHouse JIT 源码分析 https://www.ihnfsa.com/database/clickhouse-jit-source-code/
+
+ClickHouse 源码解析（二）：SQL 的一生（中） https://cloud.tencent.com/developer/article/2168061
+
+ClickHouse 源码解析（三）：SQL 的一生（下） https://cloud.tencent.com/developer/article/2195535
+
 # 测试
 
 ## 测试用例
