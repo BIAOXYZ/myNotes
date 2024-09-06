@@ -13,6 +13,18 @@ import pysnooper
 ## 2
 
 ```py
+# 指定log文件的版本，然后即使在是docker里，也可以直接看，语句类似：
+# alias logd1="docker exec -it <your_container1> tail -f /tmp/runtime.log"
+# alias logd2="docker exec -it <your_container2> tail -f /tmp/runtime.log"
+logfile = "/tmp/runtime.log"
+sd = lambda func: __import__('pysnooper').snoop(
+    color=True, prefix="##########", max_variable_length=None, depth=3, output=logfile)(func)
+
+# 如果想最简单的（同时）取消（多处装饰器），不用删除后面的 @sd，直接再最前面加一行：
+# sd = lambda func: func
+```
+
+```py
 # sd 是自己起的名字 snoop_decorator 的缩写
 sd = lambda func: __import__('pysnooper').snoop(color=False, prefix="##########", max_variable_length=None)(func)
 

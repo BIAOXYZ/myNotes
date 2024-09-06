@@ -1,4 +1,7 @@
 
+从原理上分析，把明文进行 100 轮 [SHA512->SHA256] 这样哈希计算，随机性会比直接 SHA256 更差吗？运算后结果可能性不都是 2^256 种吗？照这么说的话加 salt 也会影响随机性？ https://www.v2ex.com/t/1070316
+- > 多轮 hash 不增加熵，所以只要输入固定就不影响"随机性"，影响的只是攻击者的成本 https://www.google.com/search?q=site%3Acrypto.stackexchange.com+KDF+entropy
+
 基于 GPU 加密的时光机 https://www.v2ex.com/t/1061501
 ```console
 发送者对消息加密后，任何人都无法立即解密，必须经过预定的时间才能解开，从而将消息发送到未来。
