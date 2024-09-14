@@ -1,4 +1,6 @@
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 零、OpenSSL调试环境搭建
 
 ## 快速安装语句总结
@@ -753,3 +755,24 @@ CTRL+X+A            //cgdb当然就不用了，可以直接开始调试
 ## 其他调试类攻略
 
 下载、编译、安装、使用、调试openssl最新版 https://cloud.tencent.com/developer/article/1468839
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# docker方式搭建openssl调试环境（ ubuntu22.04 + openssl1.1.1 ）
+
+参考链接：
+- https://github.com/openssl/openssl/blob/openssl-3.4/INSTALL.md
+
+```sh
+# 宿主机
+mkdir -p ~/githubs
+cd ~/githubs
+git clone https://github.com/openssl/openssl.git
+cd openssl/
+git checkout -b openssl-3.4 origin/openssl-3.4
+docker run --name openssldebug -v $PWD:/root/openssl -it --privileged ubuntu:22.04 bash
+
+# 容器内
+cd /root/openssl
+apt update && apt install -y git build-essential libssl-dev
+```

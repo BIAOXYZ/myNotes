@@ -19,7 +19,8 @@ https://zh.wikiquote.org/wiki/%E6%B1%9F%E6%B3%BD%E6%B0%91
   ```
 
 https://zh.wikiquote.org/zh-hans/%E6%AF%9B%E6%B3%BD%E4%B8%9C
-- > `谁是我们的敌人？谁是我们的朋友？这个问题是革命的首要问题。` || https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19251201.htm
+- > `谁是我们的敌人？谁是我们的朋友？这个问题是革命的首要问题。` || 中国社会各阶级的分析（一九二五年十二月一日） https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19251201.htm
+- > `先进的人们，共产党人，各民主党派，觉悟了的工人，青年学生，进步的知识分子，有责任去团结人民中国内部的中间阶层、中间派、各阶层中的落后分子、一切还在动摇犹豫的人们......叫他们丢掉幻想，准备斗争。` || 丢掉幻想，准备斗争（一九四九年八月十四日） https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19490814.htm
 
 ### Abraham Lincoln
 

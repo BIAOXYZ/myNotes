@@ -38,3 +38,10 @@
   * > ![](https://mmbiz.qpic.cn/mmbiz_jpg/3x2Jeh0NclqfSODOK6ibTzccBcmc4pibibeRribgsgVFGubpydia2DL8Myw4dYmc6Lq2hiaKVoasIIDDpbVU5cfMciaSA/640) 套房独立式浴缸
 
 厦门双子塔康莱德酒店入住体验 https://www.bilibili.com/video/BV1LR4y1V7vm/
+
+后提拉米苏期的厦门康莱德 https://www.flyert.com.cn/forum.php?mod=viewthread&tid=3732428
+- > 预定完之后，也没有和酒店谈心，佛系心态，但是提前一天接到酒店电话给升级到超豪海客房，可能是因为国庆过后酒店房态比较空；当天下午3点多到酒店，前台给安排了08房，当即提出能否给一个06房，前台说要等，遂即去酒廊坐等06房了，下午5点左右才给出一间06房；
+- > 进门之后就觉得，等待还是值得的，景观绝了，超大落地窗，特别享受神情呆滞地坐在窗边，什么都不用想，看着窗外无边海景，对着鼓浪屿的女孩唱着对面的女孩看过来（暴露年龄了)，夏康景观真的是厦门头把交椅，不接受反驳；
+- > 浴缸真的适合拍照，180度无死角，能够容纳两个人；minibar有几款软饮，中老年人还是适合去酒廊让小姐姐来一杯普洱，加点枸杞最好！洗漱台也是双人的（但不适合多人洗漱）；
+
+海上明珠！厦门康莱德探店 https://www.bilibili.com/video/BV1KUH3exE6p/
