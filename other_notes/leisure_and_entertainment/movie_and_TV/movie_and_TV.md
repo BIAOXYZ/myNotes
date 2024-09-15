@@ -25,6 +25,13 @@ Bruce Wayne : You still haven't given up on me?
 Alfred Pennyworth : Never.
 ```
 
+Batman/Quote https://nolan-batman.fandom.com/wiki/Batman/Quote
+```console
+"You'd rather protect an outlaw vigilante than the lives of citizens?"
+"The Batman is an outlaw. That's not why we demand he turn himself in, we're doing it because we're scared. We've been happy to let Batman clean up our streets till now."
+―Citizen and Harvey Dent
+```
+
 ## 甲方乙方
 
 “我为党国立过功，我为委座流过血。你们不能这样。我要见师座！”的出处是什么？ https://zhidao.baidu.com/question/503682837.html
