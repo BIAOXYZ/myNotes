@@ -99,6 +99,8 @@ Sylar https://www.gosugamers.net/dota2/players/16113-sylar
 
 # Dota2 Wiki类
 
+Dota 2国际邀请赛 https://zh.wikipedia.org/zh-hans/Dota_2%E5%9B%BD%E9%99%85%E9%82%80%E8%AF%B7%E8%B5%9B
+
 ## Dota_2_Wiki from gamepedia.com
 
 Dota_2_Wiki https://dota2-zh.gamepedia.com/Dota_2_Wiki
