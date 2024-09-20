@@ -6,6 +6,12 @@
 Pohlig https://www.howtopronounce.com/pohlig 【起因：Pohlig–Hellman algorithm】
 
 中国程序员容易发音错误的单词 https://github.com/shimohq/chinese-programmer-wrong-pronunciation
+- enum 读音 #310 https://github.com/shimohq/chinese-programmer-wrong-pronunciation/issues/310
+  * > enumerate 和 enum 读起来一样吗？
+  * > `/ɪˈnʌm/`
+  * 其他：
+    + How to Pronounce Enums https://www.youtube.com/watch?v=K8EFmjTxyXw
+    + enum https://www.howtopronounce.com/enum
 
 Learn C++ With Me #16 - Tuples https://www.youtube.com/watch?v=T9-agjKW4PQ
 >> //notes：`00:10--00:20` 这个博主（`Tech With Tim`）看起来就是个老美，所以肯定是 native speaking 的，但是他说他也不知道 tuple 正确的读音到底是哪一个。。。
