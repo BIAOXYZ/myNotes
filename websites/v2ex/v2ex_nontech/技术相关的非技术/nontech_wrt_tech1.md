@@ -195,6 +195,8 @@ https://www.zhihu.com/question/648215689/answer/3432678754
 
 # 信创
 
+公司要进行国产化数据库替代，之前公司所有项目采用的是 Mysql，各位 V 友有没有建议的国产化平替方案 https://www.v2ex.com/t/1074987
+
 有老哥搞过国产化数据库吗 https://www.v2ex.com/t/1064442
 ```console
 目前有个项目要给单位私有化，项目技术栈是 springboot+mysql+redis ，单位那边主要是数据库选型是海量数据库，redis 和服务器倒是没啥问题。
