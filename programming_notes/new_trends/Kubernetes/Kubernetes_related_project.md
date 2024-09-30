@@ -93,7 +93,7 @@ Operator Framework Special Interest Group https://commons.openshift.org/sig/Open
 
 Operators based on Helm charts https://docs.okd.io/latest/operators/osdk-helm.html
 
-【[:white_check_mark:][`podset-operator`]】 Writing Your First Kubernetes Operator https://medium.com/faun/writing-your-first-kubernetes-operator-8f3df4453234
+【[ :white_check_mark: ][`podset-operator`]】 Writing Your First Kubernetes Operator https://medium.com/faun/writing-your-first-kubernetes-operator-8f3df4453234
 - etcd operator creates/configures/manages etcd clusters atop Kubernetes https://coreos.com/blog/introducing-the-etcd-operator.html || https://github.com/coreos/etcd-operator
 
 Extending Kubernetes: Create Controllers for Core and Custom Resources https://medium.com/@trstringer/create-kubernetes-controllers-for-core-and-custom-resources-62fc35ad64a3
