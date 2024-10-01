@@ -1,4 +1,9 @@
 
+各位 V 友大佬们下午好，请教个算法的小白问题，关于 SM2 算法。 https://www.v2ex.com/t/1077150
+- > 国标和国际 SM2 的参数有点区别
+- > 国密改造的吧？ sm2 对接有两个坑，一个是 sm2 有 c1c2c3 模式和 c1c3c2 模式，还有一个是加密后的字符串需不需要去除 04 前缀
+- > 签名最后有两个 BigInteger r 和 s 这两个 有很多种编码规则 比如转成 byte 数组 32 位对齐，也有使用默认的 standarddsa 具体看双方要求 https://mp.weixin.qq.com/s/6kXOb92I-ZqpwR1mLaI3AQ
+
 从原理上分析，把明文进行 100 轮 [SHA512->SHA256] 这样哈希计算，随机性会比直接 SHA256 更差吗？运算后结果可能性不都是 2^256 种吗？照这么说的话加 salt 也会影响随机性？ https://www.v2ex.com/t/1070316
 - > 多轮 hash 不增加熵，所以只要输入固定就不影响"随机性"，影响的只是攻击者的成本 https://www.google.com/search?q=site%3Acrypto.stackexchange.com+KDF+entropy
 
