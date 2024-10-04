@@ -42,7 +42,14 @@ Chess.com https://www.chess.com/zh
 
 # `#` 棋谱
 
-永乐象棋棋谱网 -- 橘中秘 http://www.xiangqiqipu.com/Category/List-129-1.html
+永乐象棋棋谱网 -- 象棋名著 https://www.xiangqiqipu.com/Category-2.html
+- 永乐象棋棋谱网 -- 自出洞来无敌手 https://www.xiangqiqipu.com/Category/list-130.html
+- 永乐象棋棋谱网 -- 橘中秘 http://www.xiangqiqipu.com/Category/List-129-1.html
+
+象棋谱 -- 残局古谱 https://www.xqipu.com/canjugupu  【这个有微信公众号和小程序，叫`亚艾元象棋谱`】
+- 适情雅趣的棋谱 https://www.xqipu.com/canjugupu/1547
+- 桔中秘的棋谱 https://www.xqipu.com/canjugupu/1548
+- 自出洞来无敌手的棋谱 https://www.xqipu.com/canjugupu/1573
 
 东萍象棋网 -- 象棋谱大全 http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/
 - 象棋谱大全-现代棋书专集
