@@ -50,6 +50,7 @@ Chess.com https://www.chess.com/zh
 - 适情雅趣的棋谱 https://www.xqipu.com/canjugupu/1547
 - 桔中秘的棋谱 https://www.xqipu.com/canjugupu/1548
 - 自出洞来无敌手的棋谱 https://www.xqipu.com/canjugupu/1573
+- 梅花谱的棋谱 https://www.xqipu.com/canjugupu/1581
 
 东萍象棋网 -- 象棋谱大全 http://www.dpxq.com/hldcg/share/chess_%E8%B1%A1%E6%A3%8B%E8%B0%B1%E5%A4%A7%E5%85%A8/
 - 象棋谱大全-现代棋书专集
