@@ -25,6 +25,18 @@ Vs Code使用 - 保存时自动删除多余空格 - Ailson Jack的文章 - 知�
 - > 打开设置界面，`File -> Preferences -> Settings`：
 - > 在搜索框中输入：`trim trailing whitespace`，然后勾选上 `Files:Trim Trailing Whitespace`：
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 首次安装后配置
 
 Windows下VSCode配置C++环境 - 小红花的文章 - 知乎 https://zhuanlan.zhihu.com/p/105135431
+
+## mac下 `code` 命令找不到
+
+Visual Studio Code on macOS https://code.visualstudio.com/docs/setup/mac
+- > **Launching from the command line**
+  * > You can also run VS Code from the terminal by typing 'code' after adding it to the path:
+    + > Launch VS Code.
+    + > Open the **Command Palette** (`Cmd+Shift+P`) and type 'shell command' to find the `Shell Command: Install 'code' command in PATH` command.
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
