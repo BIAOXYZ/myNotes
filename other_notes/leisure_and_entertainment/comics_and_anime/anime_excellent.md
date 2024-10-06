@@ -50,33 +50,6 @@
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# 葬送的芙莉莲
-
-《葬送的芙莉莲》相关链接： 【From: https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode_contest/weekly/weekly2024/394-absent-16-bj/README.md 】
-- 葬送的芙莉莲 https://zh.moegirl.org.cn/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
-- 萌娘百科的两个新镜像站（似乎一个是萌百官方的，一个是第三方的）
-  * 葬送的芙莉莲 https://moegirl.icu/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
-  * 葬送的芙莉莲 https://moegirl.uk/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
-- 葬送的芙莉莲 葬送のフリーレン (2023) https://movie.douban.com/subject/36093351/
-  * 持续更新～[记一些有趣小细节]比如主角团名字的对应含义+ED花田魔法（更新官方解释！） https://movie.douban.com/review/15495255/
-  * 随便扯两句 https://movie.douban.com/review/15691548/
-  * 《葬送的芙莉莲·第一季》台词摘录 https://movie.douban.com/review/15839742/
-
-连续两年震撼业界的新人监督，工作到无法正常走路的斋藤圭一郎是何许人也？丨动画起源志「咔」 https://www.bilibili.com/video/BV13r421n7mW/
-
-合集·「葬送的芙莉莲志」 https://space.bilibili.com/172085/channel/collectiondetail?sid=1831201
-- 动画人气投票：阿乌拉第二？芙莉莲第五！你们二次元是懂气人的丨葬送的芙莉莲志「咔」 https://www.bilibili.com/video/BV1px4y1e7Ua/  【//notes：这个视频里两次投票的结果就充分地说明了：一些狂热粉丝对事实的影响了。。。所以一人一票才是公平的- -】
-- 业界前辈指出的漫画致命伤，动画组用逆天改命的创意拯救丨葬送的芙莉莲志「咔」 https://www.bilibili.com/video/BV1Tz421Z7GB/
-
-合集·葬送的芙莉莲 https://space.bilibili.com/216844/channel/collectiondetail?sid=1776677
-- 一集封神！这就是动画改编巅峰！制作组曝经费无上限？！【葬送的芙莉莲】第26集表现？【1月新番】 https://www.bilibili.com/video/BV12D42177sy/
-
-一口气看完，葬送的芙莉莲1-115集！强烈推荐！最好看的10月新番 https://www.bilibili.com/video/BV1r94y1G73J/
-
-面对芙莉莲原作最拉跨的篇章，动画组的选择是？ https://www.bilibili.com/video/BV1KJ4m1h7xF/
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
 # 干物妹小埋
 
 干物妹小埋 https://www.douban.com/note/560451775/ 【其实就是第一集的分集剧情简介】
