@@ -1,4 +1,15 @@
 
+推荐自己翻译的《自己动手写 Git》 教程 https://www.v2ex.com/t/1077983
+```console
+本教程将介绍如何使用 Python 从头开始实现简化版 Git ，目的是通过构建一个包含 init 、add 、commit 和 log 等基本命令的基本版本，帮助读者理解 Git 的核心原理。
+本教程只需了解一些基本的 Git 、Python 和 shell 知识即可学习。
+
+教程地址：http://wyag-zh.hanyujie.xyz/
+
+Github 仓库：https://github.com/hanyujie2002/wyag-zh
+```
+- > 突然发现评论区不支持 Markdown 😂 原文仓库链接是 https://github.com/thblt/write-yourself-a-git
+
 github 强制 2fa，有什么替代的吗 https://www.v2ex.com/t/1062879
 
 Github 如何让 Fork 的 repository 自动合并原始 repository 的代码提交？ https://www.v2ex.com/t/1060966
