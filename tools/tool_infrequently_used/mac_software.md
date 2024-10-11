@@ -77,6 +77,10 @@ Utilities https://iterm2.com/documentation-utilities.html
 
 How can I save tabs in iTerm 2 so they restore the next time the app is run? https://apple.stackexchange.com/questions/22445/how-can-i-save-tabs-in-iterm-2-so-they-restore-the-next-time-the-app-is-run
 
+### 同步配置
+
+iTerm2 配置和美化 https://sspai.com/post/63241
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac vnc
