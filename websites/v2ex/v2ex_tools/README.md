@@ -57,3 +57,8 @@ Windows 上有哪些实用的小工具？ https://www.v2ex.com/t/916516
 - > https://github.com/version-fox/vfox <br> win 可以用 vfox，其它系统可以用 nix，不过要是想一键搭建 docker 是最方便的
 - > 你是否在找 mise https://github.com/jdx/mise 及 direnv https://github.com/direnv/direnv 上述两者可以做到设置 文件夹级别 的开发环境及环境变量
 - > 有一个新出的工具，vfox 跨平台的兼容 linux windows ，刚切过来，感觉还不错 https://vfox.lhan.me/
+
+# 性能测试
+
+Linux 下测试硬件稳定性有什么软件推荐？ https://www.v2ex.com/t/1079487
+- > `stress-ng`, `fio`, `memtester`, `gpu-burn`
