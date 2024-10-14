@@ -42,7 +42,10 @@
 
 盘点进击的巨人动画第二季中令人印象深刻的台词 https://www.bilibili.com/read/cv7129771/ || A snapshot was captured. Visit page: https://web.archive.org/web/20240927081548/https://www.bilibili.com/read/cv7129771/ || A screenshot was captured. View screenshot: https://web.archive.org/web/20240927081548/http://web.archive.org/screenshot/https://www.bilibili.com/read/cv7129771/
 - > 10.人类只有放弃战斗，才会迎来真正的败北。只要仍在继续战斗，就还没有输。（选自第一集米克）
+- > 12.我想你们都明白，今天是对人类而言最糟糕的一天，然后也是，人类有史以来最应该奋起的时刻，正是现在！（选自第一集纳拿巴）
 - > 13.相信米克吧，他可是调查兵团中实力仅次于利威尔兵长的人，一定能杀出血路，平安归来！（选自第一集格鲁噶）
+- > 22.只有履行义务的人，才有资格接受他人的恩惠。（选自第二集萨沙的父亲）
+- > 23.世界是一个整体，我们必须接受这一点。（选自第二集萨沙的父亲）
 
 盘点进击的巨人动画第三季Part.1中令人印象深刻的台词 https://www.bilibili.com/read/cv8686817/ || https://web.archive.org/web/20240927082516/https://www.bilibili.com/read/cv8686817/
 
