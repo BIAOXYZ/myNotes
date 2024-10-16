@@ -3,6 +3,18 @@
 
 ## 当仓库里文件数量过多时（一般在远程连接时不小心打开了很大的目录时会出现），修改代码时无法被vscode “watch”和显示出来
 
+```sh
+# 有时候用 sudo 都不行，于是就干脆切换成 root 来改。
+$ sudo -i
+
+root# cat /proc/sys/fs/inotify/max_user_watches
+8192
+root# echo 524288 > /proc/sys/fs/inotify/max_user_watches
+root# sudo sysctl -p
+root# cat /proc/sys/fs/inotify/max_user_watches
+524288
+```
+
 "Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC) https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
 - > The limit can be increased to its maximum by editing `/etc/sysctl.conf` (except on Arch Linux, read below) and adding this line to the end of the file:
   ```console

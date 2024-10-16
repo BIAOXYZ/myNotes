@@ -293,6 +293,13 @@ Relational Algebra Is the Root of SQL Problems https://www.datasciencecentral.co
 
 Why is relational algebra not Turing complete? https://www.quora.com/Why-is-relational-algebra-not-Turing-complete
 
+Is SQL or even TSQL Turing Complete? https://stackoverflow.com/questions/900055/is-sql-or-even-tsql-turing-complete
+- https://stackoverflow.com/questions/900055/is-sql-or-even-tsql-turing-complete/7580013#7580013
+  * > ***It turns out that SQL can be Turing Complete even without a true 'scripting' extension such as PL/SQL or PSM*** (which are designed to be true programming languages, so that's kinda cheating).
+  * > ***In this set of slides Andrew Gierth proves that with `CTE` and `Windowing` SQL is Turing Complete***, by constructing a cyclic tag system, which has been proved to be Turing Complete. The CTE feature is the important part however -- it allows you to create named sub-expressions that can refer to themselves, and thereby recursively solve problems.
+  * > The interesting thing to note is that CTE was not really added to turn SQL into a programming language -- just to turn a declarative querying language into a more powerful declarative querying language. Sort of like in C++, whose templates turned out to be Turing complete even though they weren't intended to create a meta programming language.
+  * > Oh, the Mandelbrot set in SQL example is very impressive, as well :)
+
 ### 关系代数算子有限（比如聚合都无法支持）
 >> //notes：原因来自下面 Quora 里的回答，个人简单总结下：
 1. 关系模型的发明者`埃德加·科德`（`Edgar Frank Codd`）在提出关系模型/关系代数时，是参照了`一阶逻辑`的。因为`一阶逻辑`具有`完备性`，这样会使得关系模型的理论基础更坚实。
