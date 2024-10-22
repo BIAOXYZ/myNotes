@@ -1,4 +1,14 @@
 
+计算机组成原理推荐看哪个学校的 https://www.v2ex.com/t/1082496
+- > 哈工大的 CSAPP 课
+- > nand2tries
+- > computer organization and design: the hardware/software interface
+  >> 4 楼的那本书是非常好的选择。这本书是很有名的黑砖系列中的一本，目前有两个版本，讲 MIPS 和 RISCV 的。MIPS 版本非常经典可以看一下，当然时代变化 RISCV 的版本可能会更加适应潮流。我自己看过的是 MIPS 的版本，感觉对整个 CPU 的设计有了一个非常系统的了解，里面难度曲线比较合理，只包含了一点逻辑的内容，正常都能看懂。书里的资料可以帮助你完成一个简单的 CPU 。所以说楼主有需求的话可以考虑一下这本书。
+- 个人补充链接：
+  * nand2tetris -- The Elements of Computing Systems : Building a Modern Computer from First Principles https://www.nand2tetris.org/
+  * nand2tetris -- 《计算机系统要素-从零开始构建现代计算机》 https://github.com/ReionChan/nand2tetris || https://reionchan.github.io/2015/08/27/the-elements-of-computing-systems/
+  * 计算机系统要素 https://book.douban.com/subject/1998341/
+
 6.828 课程的 RISC-V 版本建议选哪年的？ https://www.v2ex.com/t/1062198
 ```console
 目前了解到，6.828 课程从 2019 开始就是使用的 RISC-V 版本了。
