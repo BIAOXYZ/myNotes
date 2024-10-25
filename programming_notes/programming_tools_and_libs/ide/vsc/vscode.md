@@ -406,6 +406,23 @@ VSCode -- how to set working directory for debugging a Python program https://st
 ## vsc Python test
 
 Python testing in Visual Studio Code https://code.visualstudio.com/docs/python/testing
+- > **Configure tests**
+  * > If both frameworks are enabled, then the Python extension will only run `pytest`.
+    >> 【[ :star: ][`*`]】 //notes：这是我成功的（用 unittest 而不用 pytest）一个配置。
+    ```conf
+    {
+        "python.testing.unittestArgs": [
+            "-v",
+            "-s",
+            "./tests",
+            "-p",
+            "test_*.py"
+        ],
+        "python.testing.pytestEnabled": false,
+        "python.testing.unittestEnabled": true
+    }
+    ```
+- > **Test discovery**
 
 Visual Studio Code test sidebar button disappeared https://stackoverflow.com/questions/67071773/visual-studio-code-test-sidebar-button-disappeared
 
