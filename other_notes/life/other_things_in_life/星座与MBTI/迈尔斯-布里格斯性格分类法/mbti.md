@@ -11,6 +11,8 @@ ESFP https://zh.wikipedia.org/zh-hans/ESFP
 
 # 文章
 
+物流师 “ISTJ-A” 人格与“ ISTJ-T” 人格的区别 https://mp.weixin.qq.com/s/kxO90URqUFPLmXZ3uMSrcQ
+
 MBTI 中的“-A”和“-T”有什么不同？ https://mp.weixin.qq.com/s/WKcDe9qhdYD5yCPty3iDaA
 - > 这些字母分别从以下四个维度去分析你的人格类型，我们简单地回顾一下：
   * > `I人和E人`——`社交能量的区别`。`I人（Introverted）`喜欢单独活动，在社会交往中会感到疲惫。一般来说，他们对外界刺激(如声音、视觉或嗅觉)相当敏感。`E人（Extraverted）`喜欢集体活动，通过社会互动获得活力。他们往往比内向的人更热情，更容易兴奋。
