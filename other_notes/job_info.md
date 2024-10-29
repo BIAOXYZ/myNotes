@@ -554,6 +554,14 @@ IBM 一销售经理被非法开除：获赔 7228​ 万元 https://mp.weixin.qq.
 - 中芯国际内讧真相 https://mp.weixin.qq.com/s/O3LLDSCnKLfgRy3QHmPMeg
 - 中芯国际深夜传奇大瓜，两尊半导体大神不和：一个来了，一个要走，他们曾是台积电上下属 https://www.ithome.com/0/524/984.htm
 
+## 其他非泛IT公司相关新闻
+
+消息称宁德时代施行 896 工作制，向员工发出“奋斗 100 天”号召 https://www.ithome.com/0/775/711.htm
+- > 另外，搜狐财经晒图显示还有补充通知说明：外籍员工不强制，按照他们的意愿。
+
+已经全球第一了，为什么还要“奋斗100天”啊？ https://mp.weixin.qq.com/s/IASGejVelzYoUKLyBiEnGw
+- > 最近，“宁德时代奋斗100天”登上热搜，让围困在“996”的打工人集体破防。
+
 ## 小公司相关新闻
 
 如何看待西贝创始人「 715 工作制」言论引发争议后，西贝回应称「不是硬性标准，不要过分解读」？ - 知乎 https://www.zhihu.com/question/419462374
@@ -602,9 +610,6 @@ CETC 龙哥事件：
 - 清明加班，中国电科成都员工深夜在公司群怒骂领导，截图沸腾蹿火 https://www.163.com/dy/article/I1I0DPDU0541K8U1.html
 - 员工因“连续加班”怒怼领导引关注，涉事国企员工：不便评价 https://www.thepaper.cn/newsDetail_forward_22585715 || https://www.163.com/dy/article/I1INR4R20514R9P4.html
 - 在中国电科（CETC）工作是一种怎样的体验？ - 知乎 https://www.zhihu.com/question/56098315/answer/2968559268
-
-消息称宁德时代施行 896 工作制，向员工发出“奋斗 100 天”号召 https://www.ithome.com/0/775/711.htm
-- > 另外，搜狐财经晒图显示还有补充通知说明：外籍员工不强制，按照他们的意愿。
 
 # job others
 
