@@ -109,3 +109,7 @@ wget https://raw.githubusercontent.com/zq2599/blog_demos/master/sparkdockercompo
 && wget https://raw.githubusercontent.com/zq2599/blog_demos/master/sparkdockercomposefiles/hadoop.env \
 && docker-compose up -d
 ```
+
+# 4
+
+Install Spark On Ubuntu- A Beginners Tutorial for Apache Spark https://data-flair.training/blogs/install-spark-ubuntu/
