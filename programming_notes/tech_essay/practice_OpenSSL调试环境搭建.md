@@ -770,9 +770,21 @@ cd ~/githubs
 git clone https://github.com/openssl/openssl.git
 cd openssl/
 git checkout -b openssl-3.4 origin/openssl-3.4
-docker run --name openssldebug -v $PWD:/root/openssl -it --privileged ubuntu:22.04 bash
+docker run --name openssldebug -v ~/githubs/openssl:/root/openssl -it --privileged ubuntu:22.04 bash
 
 # 容器内
-cd /root/openssl
+mkdir openssldir
+cd openssldir/
+cp -r /root/openssl/ .
+cd openssl/
 apt update && apt install -y git build-essential libssl-dev
+
+# 之前用 ./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug，装完有 lib 找不到的问题，
+#       不管是改 LD_LIBRARY_PATH 还是 ldconfig 新增一个配置文件都不行。
+# 最终还是选择先 make uninstall 卸载，然后 make clean 清理（这步不能少！）清理一下，
+#       接着用下面的 config 语句就可以了。
+# 主要是后面 no-shared 参数的原因，直接用净态库了。
+./config --prefix=/opt/newssl --openssldir=/opt/newssl -Wl,-rpath=/opt/newssl/lib --debug no-shared
+make -j8
+make install
 ```
