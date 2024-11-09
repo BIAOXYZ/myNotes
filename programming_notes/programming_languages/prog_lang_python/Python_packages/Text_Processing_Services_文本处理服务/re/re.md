@@ -7,6 +7,8 @@
 
 re --- 正则表达式操作 https://docs.python.org/zh-cn/3/library/re.html || re — Regular expression operations https://docs.python.org/3/library/re.html
 
+正则表达式指南 https://docs.python.org/zh-cn/3.12/howto/regex.html
+
 # 正则表达式在线
 
 regular expressions 101 https://regex101.com/ || Regex101 https://github.com/firasdib/Regex101
