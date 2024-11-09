@@ -1,4 +1,10 @@
 
+你见过哪些好玩又花里胡哨的代码呢 https://www.v2ex.com/t/1087931
+- > ![](https://i.imgur.com/M5bTOFR.png) Y 组合子, 虽然不是代码, 但是可以十分简单的解释停机问题
+- 个人补充链接：
+  * 从 x(x) 到 Y : 用 python 构建和理解 Y 算子（Y combinator） https://www.hugchange.life/posts/202305_y_combinator.html
+  * 魂断不动点——Y组合子的前世今生 https://deathking.github.io/2015/03/21/all-about-y-combinator/
+
 有没有打算做量子计算的公司或同学, 想找点茬. https://www.v2ex.com/t/864074
 - > 巧了，我也是业余爱好者，陪你玩玩，请问一下 如果用量子计算去算 76x76 矩阵的积和式。该怎么算
   >> 今年 arxiv 刚出一篇 A fast quantum algorithm for computing matrix permanent https://arxiv.org/pdf/2205.01328

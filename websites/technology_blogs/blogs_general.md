@@ -216,6 +216,27 @@ AI算法工程师手册 http://www.huaxiaozhuan.com/
 
 bcc/ebpf 安装及示例（2019） https://arthurchiao.art/blog/bcc-ebpf-tutorial-zh/
 
+## 【[ :star: ][`*`]】 Change https://www.hugchange.life/
+
+从 x(x) 到 Y : 用 python 构建和理解 Y 算子（Y combinator） https://www.hugchange.life/posts/202305_y_combinator.html
+
+数理逻辑及其 python 实现:0 https://www.hugchange.life/posts/2023_mathlogicpy/index.html
+
+递归⤵动态规划⤴和语言 parsing🌲 https://www.hugchange.life/posts/202312_recur_dp_parsing.html
+
+矩阵分解视角下的线性代数 https://www.hugchange.life/posts/202402_linear_notes.html
+
+图灵机上的编程语言、解释器和应用 https://www.hugchange.life/posts/202405_turing_machine.html
+- > python 模拟实现图灵机代码见： https://github.com/metaescape/numbers/blob/main/turing_machine/op_extend.py
+
+以函数为中心：lambda 演算和组合子逻辑 https://www.hugchange.life/posts/202407_lambda_calculus.html
+
+## DeathKing https://deathking.github.io/ || https://github.com/DeathKing
+
+魂断不动点——Y组合子的前世今生 https://deathking.github.io/2015/03/21/all-about-y-combinator/
+
+编译Rust是NP困难的 https://deathking.github.io/2021/07/08/compiling-rust-is-np-hard/
+
 --------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
