@@ -1,4 +1,9 @@
 
+[经验总结] 我跑通了全球收付款的流程 https://www.v2ex.com/t/1088415
+```console
+完整内容请移步公众号文章阅读： https://mp.weixin.qq.com/s/y_XRFa8pzkgV-GqttSotqw
+```
+
 卖了套房 50 万，感觉牛市来了，进军股市！ [第 11 天记录]，杀入欧菲光！ https://www.v2ex.com/t/1086352
 
 卖了套房 50 万，感觉牛市来了，进军股市！ [第 6 天记录]，卖出上海贝岭 https://www.v2ex.com/t/1084875
