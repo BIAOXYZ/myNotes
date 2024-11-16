@@ -55,6 +55,9 @@ C 语言刷 150 道 LeetCode 经验谈 https://www.v2ex.com/t/405467
 
 # 算法与数据结构（非技术部分）
 
+现在程序员是不是没必要刷 leetcode 了 https://www.v2ex.com/t/1090040
+- > 在 AI 出现前，也没多少工作要直接写算法，但 leetcode 算法训练的思维是长期有价值的。推荐刷 leetcode 的同时，有空也刷下 LabEx https://labex.io 的 Linux ，DevOps ，Cybersecurity 的 Hands-on Labs ，会锻炼不同的思维 :-)
+
 最近负责 Java 面试，吐槽下 https://www.v2ex.com/t/861954
 ```console
 出了个编程题作为第一题，题目很简单就是一个列表找最大值：

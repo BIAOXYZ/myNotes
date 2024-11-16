@@ -8,6 +8,12 @@
 The Peninsula Hotels https://en.wikipedia.org/wiki/The_Peninsula_Hotels
 - > The Peninsula Hotels is a chain of luxury hotels ***operated by `Hongkong and Shanghai Hotels`. Founded by `the Kadoorie family`***, the first hotel opened in `1928` and now stands as the oldest in Hong Kong.
 
+香港上海大酒店 https://zh.wikipedia.org/wiki/%E9%A6%99%E6%B8%AF%E4%B8%8A%E6%B5%B7%E5%A4%A7%E9%85%92%E5%BA%97
+- > 香港上海大酒店有限公司（英语：The Hongkong and Shanghai Hotels, Limited）是一家在香港交易所上市的酒店公司。主要业务是酒店投资管理服务、物业投资及发展、经营餐厅、会所管理等。
+- > **历史**
+  * > 于1866年3月2日创办`香港大酒店有限公司`，旗下的`香港大酒店`于1890年代开始由犹太人`嘉道理家族`持有，1922年合并上海大酒店并于翌年使用现名香港上海大酒店。***旗下的半岛酒店集团，在世界各地管理多家豪华酒店，包括香港尖沙咀半岛酒店***。
+  * > 2009年1月20日香港上海大酒店向卡塔尔投资局购入法国巴黎Majestic酒店项目的20%股权，总代价1.5亿欧元，相当于约15.36亿港元，并将该酒店重新发展为`巴黎半岛酒店`，总代价包括以1亿欧元（约10.24亿港元）买入20%股权，及5,000万欧元（约5.12亿港元）翻新成本，并拥有30年管理权。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 半岛video
