@@ -2,6 +2,8 @@
 分类/分布式数据库 https://caroly.fun/categories/disdatabase || https://web.archive.org/web/20231205122403/https://caroly.fun/categories/disdatabase
 - 【[:star:][`*`]】 分布式数据库（七） https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%83
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 【[:star:][`*`]】 分布式数据库（七） https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%83 || https://web.archive.org/web/20231002183937/https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%83
 - > **HTAP 的两种存储设计**
   * > **Spanner：存储合一**
@@ -43,6 +45,8 @@
   * > **计算下推**
     + > 将计算节点的逻辑推送到存储节点执行，避免了大量的数据传输，也达到了计算并行执行的效果。这个思路还是很好理解的，用一个例子来具体说明下。
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 分布式数据库（九） https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%9D || https://web.archive.org/web/20231002180958/https://caroly.fun/archives/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%9D
 - > **查询执行引擎**
   * > 查询执行引擎是否高效与其采用的模型有直接关系，模型主要有三种：`火山模型`、`向量化模型`和`代码生成`。
@@ -51,3 +55,5 @@
   * > **`代码生成：OceanBase`**
 - > **RUM 猜想**
   * > RUM 猜想来自论文 "[Designing Access Methods: The RUM Conjecture](https://stratos.seas.harvard.edu/files/stratos/files/rum.pdf)"（Manos Athanassoulis et al.(2016)），***同时被 SIGMOD 和 EDBT 收录***。它说的是，***对任何数据结构来说，在 Read Overhead（读）、Update Overhead（写） 和 Memory or Storage Overhead（存储）中，同时优化两项时，需要以另一项劣化作为代价***。论文用一幅图展示了常见数据结构在这三个优化方向中的位置。
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
