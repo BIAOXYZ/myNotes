@@ -195,6 +195,8 @@ https://www.zhihu.com/question/648215689/answer/3432678754
 
 # 信创
 
+信创服务器选型 https://www.v2ex.com/t/1090454
+
 公司要进行国产化数据库替代，之前公司所有项目采用的是 Mysql，各位 V 友有没有建议的国产化平替方案 https://www.v2ex.com/t/1074987
 
 有老哥搞过国产化数据库吗 https://www.v2ex.com/t/1064442

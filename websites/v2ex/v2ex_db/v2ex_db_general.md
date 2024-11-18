@@ -1,4 +1,9 @@
 
+有什么数据库扛断电能力最强吗? https://www.v2ex.com/t/1090399
+- > 把 innodb_flush_log_at_trx_commit 设成 1 看看，redo log 直接落盘
+- > 打开 double_write 试试
+- > sqlite 开启 SyncFull
+
 对数据库感兴趣，但完全接受不了 cpp https://www.v2ex.com/t/1032919
 ```console
 看 CMU 的 15445/645 课程，结果整个项目基于 BusTub （一个 C++写的教学数据库），对于 CPP 我是真的提不起一丁点兴趣，
