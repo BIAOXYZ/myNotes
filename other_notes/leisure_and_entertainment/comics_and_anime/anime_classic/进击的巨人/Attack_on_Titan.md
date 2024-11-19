@@ -66,7 +66,7 @@
 含剧透|试着分析一下阿尔敏与阿尼之间的复杂感情及其产生缘由 https://www.douban.com/group/topic/204666808
 - > 分享一下外网找到的明尼冰火人对称 <br> ![](https://img3.doubanio.com/view/group_topic/l/public/p375167643.webp)
 - > 发张Reddit上的表情包：
-  * > 阿尼的卡片：已经知道这是个陷阱 “我不会告诉其他人的，你们自己好好努力吧。” 阿尔敏的卡片：“那你对我来说就是个坏人了。” 
+  * > 阿尼的卡片：已经知道这是个陷阱 “我不会告诉其他人的，你们自己好好努力吧。” 阿尔敏的卡片：“那你对我来说就是个坏人了。” <br> ![](https://img9.doubanio.com/view/group_topic/l/public/p375170014.webp)
 - > 还有这个
   * > 从前的阿尼：帕拉迪岛的威胁 我刚刚和进击巨与阿克曼们打了架；现在的阿尼：狼吞虎咽 能坐在我旁边吗，阿尔敏？ <br> ![](https://img9.doubanio.com/view/group_topic/l/public/p375170094.webp)
 - > 顺便一提，明尼二人喜欢的东西和追求的目标都是很纯粹很美好的。
