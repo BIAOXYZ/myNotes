@@ -5,6 +5,8 @@ Getting Started With Apache Hive Software https://hive.apache.org/developement/g
 
 Home https://cwiki.apache.org/confluence/display/Hive/
 - LanguageManual UDF https://cwiki.apache.org/confluence/display/Hive/LanguageManual%20UDF
+  * https://cwiki.apache.org/confluence/display/hive/languagemanual+udf#LanguageManualUDF-Built-inFunctions
+  * https://cwiki.apache.org/confluence/display/hive/languagemanual+udf#LanguageManualUDF-Built-inAggregateFunctions(UDAF)
   * https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-Built-inTable-GeneratingFunctions(UDTF)
 - LanguageManual Types https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Types
 - LanguageManual Select https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select
