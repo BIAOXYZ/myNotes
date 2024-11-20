@@ -17,7 +17,7 @@
 
 # from 豆瓣
 
-《巨人》感情线从头细数之二 阿尔敏与亚妮 https://www.douban.com/group/topic/227418547
+《巨人》感情线从头细数之二 阿尔敏与亚妮 https://www.douban.com/group/topic/227418547 || https://web.archive.org/web/20210830065423/https://www.douban.com/group/topic/227418547/
 - > 这是系列的第二篇，讲解阿尔敏与亚妮（通常称呼为明尼、敏妮、AruAni、アルアニ等），阿尔敏的翻译也有爱尔敏、阿明，亚妮的翻译也有阿妮、阿尼等。
 - > 第一篇，希斯特利亚与尤弥尔，可以见 https://www.douban.com/group/topic/222403003/
 - > **一，阿尔敏和亚妮各自的性格**
@@ -64,6 +64,7 @@
     >> 这样是我很感动的一点，***阿尼从小到大一直被逼迫着做自己不愿意做的事，从没有如己所愿的活过，而现在阿尔敏尊重阿尼的选择，对阿尔敏来说，阿尼只需要做自己就好***，他能共情她的立场，也能肯定她的本真，即使真正的她脆弱也好自私也好，那也是真正的她。阿尔敏爱情的表达方式真的很温柔。
 
 含剧透|试着分析一下阿尔敏与阿尼之间的复杂感情及其产生缘由 https://www.douban.com/group/topic/204666808
+- > 转载自百度贴吧，原帖地址：https://tieba.baidu.com/p/6900195303
 - > 分享一下外网找到的明尼冰火人对称 <br> ![](https://img3.doubanio.com/view/group_topic/l/public/p375167643.webp)
 - > 发张Reddit上的表情包：
   * > 阿尼的卡片：已经知道这是个陷阱 “我不会告诉其他人的，你们自己好好努力吧。” 阿尔敏的卡片：“那你对我来说就是个坏人了。” <br> ![](https://img9.doubanio.com/view/group_topic/l/public/p375170014.webp)
