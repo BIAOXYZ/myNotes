@@ -29,4 +29,6 @@ Ray for the Curious https://medium.com/distributed-computing-with-ray/ray-for-th
 
 # ray 实践
 
-
+字节跳动基于 Ray 的大规模多模态数据处理框架 https://mp.weixin.qq.com/s/PtlQ-SYQKTNXY8kAhsZhbA
+- > RayCore 提供了强大的分布式计算能力，比如Actor、Task，使用RayCore可以方便的开发分布式应用程序，构建数据处理pipeline。但是RayCore提供的是low level的API，直接使用它进行开发需要自行处理很多问题，包括不限于：1) 数据切片和分片管理，需要手动管理数据分片和分布，这无疑增加了复杂性；2）数据读取和加载效率低的问题，缺乏高效的自动化数据读取和加载机制，会影响整体效率；3）缺乏高级数据操作功能，需要手动实现常见的数据操作，开发成本高。
+- > 所以我们开始在Pipeline中使用`RayData`，它提供了一系列开箱即用的算子，和丰富的多模态数据DataSource支持，自动管理数据分片能力，同时具有自动扩缩容的能力，极大的减少了开发成本。

@@ -782,7 +782,7 @@ apt update && apt install -y git build-essential libssl-dev
 # 之前用 ./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug，装完有 lib 找不到的问题，
 #       不管是改 LD_LIBRARY_PATH 还是 ldconfig 新增一个配置文件都不行。
 # 最终还是选择先 make uninstall 卸载，然后 make clean 清理（这步不能少！）一下，
-#       接着用下面的 config 语句就可以了。主要是后面 no-shared 参数的原因，相当于直接用静态库了。
+#       接着用下面的 config 语句就可以了。能 work 主要是后面 no-shared 参数的原因，相当于直接用静态库了。
 # ./config --prefix=/opt/newssl --openssldir=/opt/newssl -Wl,-rpath=/opt/newssl/lib --debug no-shared
 #
 # 补充：后来发现其实是因为用动态库的话，装出来的 lib 是在 /opt/newssl/lib64 下，而不是原以为的 /opt/newssl/lib 下。
@@ -796,6 +796,7 @@ export LD_LIBRARY_PATH=/opt/newssl/lib64:$LD_LIBRARY_PATH
 ```
 
 ```sh
+# export 前：
 root@83b34a21e2fc:/openssldir/openssl# /usr/bin/openssl version
 OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
 root@83b34a21e2fc:/openssldir/openssl#
@@ -828,7 +829,7 @@ root@83b34a21e2fc:/openssldir/openssl# ldd /opt/newssl/bin/openssl
 	/lib64/ld-linux-x86-64.so.2 (0x00007f08f52bb000)
 root@83b34a21e2fc:/openssldir/openssl#
 
-
+# export 后：
 root@83b34a21e2fc:/openssldir/openssl# export LD_LIBRARY_PATH=/opt/newssl/lib64:$LD_LIBRARY_PATH
 root@83b34a21e2fc:/openssldir/openssl#
 root@83b34a21e2fc:/openssldir/openssl# /usr/bin/openssl version
@@ -852,3 +853,5 @@ root@83b34a21e2fc:/openssldir/openssl# ldd /opt/newssl/bin/openssl
 	/lib64/ld-linux-x86-64.so.2 (0x00007f9877885000)
 root@83b34a21e2fc:/openssldir/openssl#
 ```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

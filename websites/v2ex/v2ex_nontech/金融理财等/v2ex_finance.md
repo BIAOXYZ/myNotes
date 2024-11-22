@@ -1,4 +1,8 @@
 
+A 股有交易 API 吗 https://www.v2ex.com/t/1091638
+- > 我只知道券商 200w 达标可以有 QMT 的权限
+- > 可以搜索 QMT
+
 [经验总结] 我跑通了全球收付款的流程 https://www.v2ex.com/t/1088415
 ```console
 完整内容请移步公众号文章阅读： https://mp.weixin.qq.com/s/y_XRFa8pzkgV-GqttSotqw
