@@ -781,10 +781,74 @@ apt update && apt install -y git build-essential libssl-dev
 
 # 之前用 ./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug，装完有 lib 找不到的问题，
 #       不管是改 LD_LIBRARY_PATH 还是 ldconfig 新增一个配置文件都不行。
-# 最终还是选择先 make uninstall 卸载，然后 make clean 清理（这步不能少！）清理一下，
-#       接着用下面的 config 语句就可以了。
-# 主要是后面 no-shared 参数的原因，直接用静态库了。
-./config --prefix=/opt/newssl --openssldir=/opt/newssl -Wl,-rpath=/opt/newssl/lib --debug no-shared
+# 最终还是选择先 make uninstall 卸载，然后 make clean 清理（这步不能少！）一下，
+#       接着用下面的 config 语句就可以了。主要是后面 no-shared 参数的原因，相当于直接用静态库了。
+# ./config --prefix=/opt/newssl --openssldir=/opt/newssl -Wl,-rpath=/opt/newssl/lib --debug no-shared
+#
+# 补充：后来发现其实是因为用动态库的话，装出来的 lib 是在 /opt/newssl/lib64 下，而不是原以为的 /opt/newssl/lib 下。
+#      所以之前 export LD_LIBRARY_PATH=/opt/newssl/lib:$LD_LIBRARY_PATH 是不行的。。。而是应该用：
+#               export LD_LIBRARY_PATH=/opt/newssl/lib64:$LD_LIBRARY_PATH
+./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
 make -j8
 make install
+
+export LD_LIBRARY_PATH=/opt/newssl/lib64:$LD_LIBRARY_PATH
+```
+
+```sh
+root@83b34a21e2fc:/openssldir/openssl# /usr/bin/openssl version
+OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# /opt/newssl/bin/openssl version
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libssl.so.3: version `OPENSSL_3.4.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libssl.so.3: version `OPENSSL_3.2.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.0.9' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.3.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.4.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.2.0' not found (required by /opt/newssl/bin/openssl)
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# ldd /usr/bin/openssl
+	linux-vdso.so.1 (0x00007fff20ff4000)
+	libssl.so.3 => /lib/x86_64-linux-gnu/libssl.so.3 (0x00007fd3d0599000)
+	libcrypto.so.3 => /lib/x86_64-linux-gnu/libcrypto.so.3 (0x00007fd3d0155000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd3cff2c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd3d0739000)
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# ldd /opt/newssl/bin/openssl
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libssl.so.3: version `OPENSSL_3.4.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libssl.so.3: version `OPENSSL_3.2.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.0.9' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.3.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.4.0' not found (required by /opt/newssl/bin/openssl)
+/opt/newssl/bin/openssl: /lib/x86_64-linux-gnu/libcrypto.so.3: version `OPENSSL_3.2.0' not found (required by /opt/newssl/bin/openssl)
+	linux-vdso.so.1 (0x00007ffd151e7000)
+	libssl.so.3 => /lib/x86_64-linux-gnu/libssl.so.3 (0x00007f08f50d1000)
+	libcrypto.so.3 => /lib/x86_64-linux-gnu/libcrypto.so.3 (0x00007f08f4c8d000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f08f4a64000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f08f52bb000)
+root@83b34a21e2fc:/openssldir/openssl#
+
+
+root@83b34a21e2fc:/openssldir/openssl# export LD_LIBRARY_PATH=/opt/newssl/lib64:$LD_LIBRARY_PATH
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# /usr/bin/openssl version
+OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.4.0-beta1-dev )
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# /opt/newssl/bin/openssl version
+OpenSSL 3.4.0-beta1-dev  (Library: OpenSSL 3.4.0-beta1-dev )
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# ldd /usr/bin/openssl
+	linux-vdso.so.1 (0x00007ffef58ff000)
+	libssl.so.3 => /opt/newssl/lib64/libssl.so.3 (0x00007f2190d57000)
+	libcrypto.so.3 => /opt/newssl/lib64/libcrypto.so.3 (0x00007f21906fc000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f21904d0000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f2190fae000)
+root@83b34a21e2fc:/openssldir/openssl#
+root@83b34a21e2fc:/openssldir/openssl# ldd /opt/newssl/bin/openssl
+	linux-vdso.so.1 (0x00007ffeeafe1000)
+	libssl.so.3 => /opt/newssl/lib64/libssl.so.3 (0x00007f98775e4000)
+	libcrypto.so.3 => /opt/newssl/lib64/libcrypto.so.3 (0x00007f9876f89000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f9876d5d000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f9877885000)
+root@83b34a21e2fc:/openssldir/openssl#
 ```

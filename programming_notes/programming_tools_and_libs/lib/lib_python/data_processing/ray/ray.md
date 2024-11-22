@@ -26,3 +26,7 @@ Ray从理论到实战 - xiedidan的文章 - 知乎 https://zhuanlan.zhihu.com/p/
 How Ray Uses gRPC (and Arrow) to Outperform gRPC https://medium.com/distributed-computing-with-ray/how-ray-uses-grpc-and-arrow-to-outperform-grpc-43ec368cb385
 
 Ray for the Curious https://medium.com/distributed-computing-with-ray/ray-for-the-curious-fa0e019e17d3
+
+# ray 实践
+
+
