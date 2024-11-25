@@ -758,7 +758,7 @@ CTRL+X+A            //cgdb当然就不用了，可以直接开始调试
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# docker方式搭建openssl调试环境（ ubuntu22.04 + openssl1.1.1 ）
+# 三、docker方式搭建openssl调试环境（ ubuntu22.04 + openssl1.1.1 ）
 
 参考链接：
 - https://github.com/openssl/openssl/blob/openssl-3.4/INSTALL.md
@@ -770,7 +770,7 @@ cd ~/githubs
 git clone https://github.com/openssl/openssl.git
 cd openssl/
 git checkout -b openssl-3.4 origin/openssl-3.4
-docker run --name openssldebug -v ~/githubs/openssl:/root/openssl -it --privileged ubuntu:22.04 bash
+docker run --name openssldebug -v ~/githubs/openssl:/root/openssl -itd --privileged ubuntu:22.04 bash
 
 # 容器内
 mkdir openssldir
@@ -791,8 +791,9 @@ apt update && apt install -y git build-essential libssl-dev
 ./config --prefix=/opt/newssl --openssldir=/opt/newssl --debug
 make -j8
 make install
-
 export LD_LIBRARY_PATH=/opt/newssl/lib64:$LD_LIBRARY_PATH
+
+apt install -y cgdb vim
 ```
 
 ```sh
@@ -852,6 +853,53 @@ root@83b34a21e2fc:/openssldir/openssl# ldd /opt/newssl/bin/openssl
 	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f9876d5d000)
 	/lib64/ld-linux-x86-64.so.2 (0x00007f9877885000)
 root@83b34a21e2fc:/openssldir/openssl#
+```
+
+## 3.1 示例调试代码
+
+```sh
+cd /openssldir/
+mkdir my-test-files
+gcc -g -o rsa_gen rsa_gen.c -I/opt/newssl/include -L/opt/newssl/lib64 -lssl -lcrypto
+```
+
+***`rsa_gen.c`***：
+```c
+#include <stdio.h>
+#include <openssl/rsa.h>
+#include <openssl/pem.h>
+
+int main() {
+    RSA *rsa = RSA_generate_key(2048, RSA_F4, NULL, NULL);
+    if (rsa == NULL) {
+        fprintf(stderr, "Error generating RSA key\n");
+        return 1;
+    }
+
+    FILE *fp = fopen("private_key.pem", "wb");
+    if (fp == NULL) {
+        fprintf(stderr, "Error opening file for writing\n");
+        return 1;
+    }
+
+    if (PEM_write_RSAPrivateKey(fp, rsa, NULL, NULL, 0, NULL, NULL) == 0) {
+        fprintf(stderr, "Error writing private key to file\n");
+        fclose(fp);
+        return 1;
+    }
+
+    fclose(fp);
+    RSA_free(rsa);
+    printf("RSA key generated and saved to private_key.pem\n");
+    return 0;
+}
+```
+
+## 3.2 其他代码
+
+```sh
+apt install -y lldb
+git clone https://github.com/danbev/learning-openssl.git
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
