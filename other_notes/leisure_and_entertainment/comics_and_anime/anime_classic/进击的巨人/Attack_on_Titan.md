@@ -75,9 +75,15 @@
   * > ***阿尼喜欢甜食，喜欢可爱的东西（比如猫）***，支撑着她战斗的唯一理由也是回到家乡与爱着她的父亲团聚。
   * > 可以说这两个人本质上都挺纯真的 
 
-# 其他
+# from 知乎
 
 现代科技能否完虐《进击的巨人》里面的巨人？ - 知乎 https://www.zhihu.com/question/35194570
 - 现代科技能否完虐《进击的巨人》里面的巨人？ - loser的回答 - 知乎 https://www.zhihu.com/question/35194570/answer/2467061462
 
 如果进击的巨人，地鸣发生的话，按现实中一战的人类水平，能打过地鸣吗？ - 知乎 https://www.zhihu.com/question/433673067
+
+# 其他
+
+《进击的巨人》阿尔敏和亚妮：两人间的对称细节｜抒发浅谈 https://chelleblog.com/attack-on-titan-armin-annie-symmetry/ || https://web.archive.org/web/20240316091947/https://chelleblog.com/attack-on-titan-armin-annie-symmetry/
+- > 谏山创可谓是公认的对称狂魔，使《进击的巨人》里处处藏着巧妙的对称细节。
+- > 而今天我想谈的阿尔敏和亚妮，***作为在巨人的世界里为数不多得以善终的CP***。或许掀起了不小的争议，但静下心来深入作品，却有着完整且合理的对称轨迹。

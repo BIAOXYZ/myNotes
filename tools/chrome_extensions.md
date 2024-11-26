@@ -70,6 +70,8 @@ How to Turn Translation On or Off in Chrome https://www.howtogeek.com/407924/how
 | **关闭当前标签页**	| Ctrl + w 或 Ctrl + F4 |
 | 关闭所有打开的标签页和浏览器	| Ctrl + Shift + w |
 | 退出 Google Chrome	| Ctrl + Shift + q 或 Alt + F4 |
+| ======================================== | ======================================== |
+| **恢复关闭的标签页**	| `Ctrl + Shift + t` |
 
 Chrome 浏览器上实用的快捷键有哪些？ - Topbook的回答 - 知乎 https://www.zhihu.com/question/19555789/answer/635867591
 - > 在一个已经打开的浏览器上，你可能想要打开一个新的标签页，那就摁下【Ctrl+T】，不用死记硬背，T 的意思，大概是 Tab ，也就是标签页；如果刚刚不小心关闭了一个或者多个标签页，随时摁下【Ctrl+Shift+T】，一切都回来了，多摁一次，就会恢复更早前的一批。
@@ -101,6 +103,7 @@ Chrome 键盘快捷键 https://support.google.com/chrome/answer/157179?hl=zh-Han
 | ======================================== | ======================================== |
 | 下一个Tab | Control + Tab |
 | 前一个Tab | Control + Shift + Tab |
+| **恢复关闭的标签页**	| `⌘ + Shift + t` |
 
 ### 网页快捷键
 
