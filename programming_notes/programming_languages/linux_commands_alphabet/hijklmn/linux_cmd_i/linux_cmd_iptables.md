@@ -25,6 +25,6 @@ Linux Firewall Tutorial: IPTables Tables, Chains, Rules Fundamentals https://www
 
 Linux命令大全搜索工具 - iptables https://wangchujiang.com/linux-command/c/iptables.html
 
-【from 朱双印个人日志】iptables详解系列 http://www.zsythink.net/archives/tag/iptables/
+~~【from `朱双印个人日志`】iptables详解系列 http://www.zsythink.net/archives/tag/iptables/~~  【//已转移】
 
 iptables命令大全linux教程 https://www.cnblogs.com/ytkah/articles/10904577.html
