@@ -7,7 +7,7 @@ Learning OpenSSL https://github.com/danbev/learning-openssl
 
 # 视频
 
-第二集 分析openssl的bio和bio_method的结构体定义。 马弓手C/C++编程 https://www.bilibili.com/video/BV1ZZ421U7iw/
+合集·Linux C/C++程序员进阶之路，openssl源码介绍 https://space.bilibili.com/3546591447222658/channel/collectiondetail?sid=2392281
 
 # 文章
 
