@@ -1,4 +1,27 @@
 
+Linux 下有什么办法准确测出磁盘的读写 https://www.v2ex.com/t/1093978
+```console
+最近入了英睿达 t705,想测一下读写速率，但 dd 好像有瓶颈，写入只跑了 3.5g 每秒？，有什么办法可以测出它的真是速率呢
+```
+- > 你这要的不是真实速率。。。你这要的是“符合你的预期的真实速率”。。。 https://www.tomshardware.com/pc-components/ssds/crucial-t705-2tb-ssd-review/2 toms 这个图挺清楚的了，无缓性能就是 4g 左右
+- > `fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=test --filename=test --size 100GB --bs=4m --iodepth=1 --readwrite=write`
+- > 注意你要测试的设备名 https://cloud.google.com/compute/docs/disks/benchmarking-pd-performance-linux
+- > `fio` 试试
+- > `iozone`
+- > 影响速率的因素特别多。顺序还是随机，块大小，文件系统，缓内缓外，剩余容量等等等等等。
+
+Linux 上使用 tail -f 查看日志会影响服务器性能吗 https://www.v2ex.com/t/1093874
+```console
+昨晚上夜班，没什么事就一直 tail -f 查看日志，早上被技术 leader 看到了。很着急的让我赶紧关了，说会影响性能。之前就说过不让我们 tail-f 看日志，最好下载下来看。
+Java 项目，公司刚上线的内部使用的管理系统，只部署了一台服务器 16 核 32G 。spring+logback 因为打印了很多 sql ，每天会产生 10G 左右的日子，流量比较平均，晚上也一样有很多请求。如果我在部署的服务器上用 tail -f 查看实时日志，会影响性能吗，大约影响多少。
+```
+- > 你领导比较菜
+- > 不是哥们，***你下载下来的性能损耗不是比 tail -f 更大吗***？首先你下载下来 10 个 G, 磁盘都要读取 10G, 网卡和带宽都要占据 10 个 G 的总流量。一个 tail-f 能占据多少，隔着闹呢。。。。。。。
+- > 理论上下载下来看性能影响更大。 <br> ***一直开着 tail -f 的情况下，<ins>程序输出日志后数据还在缓存中就被 tail 读取并显示，不需要读硬盘</ins>。而且日志输出速率一般不会太大，短时间不会占用过高 CPU***。 <br> 而下载的话，首先日志开头部分需要读盘，其次日志从头读到尾，速率是硬盘速度，硬盘读取速度显然是会比日志输出速度高的，CPU 需要处理加密等操作，短时间内占用率变高。
+- > ***tail -f 不是 grep ，基本上不消耗 CPU ，也不消耗内存，每天才 10G ，由于是顺序读，且大概率在 VFS cache 中，也不消耗磁盘 IO*** 。那么唯一的消耗就是带宽，大概占用 2M-3M 带宽，如果服务器带宽小于 10M ，可能能观测到性能差异。但是直接下载，不是更消耗带宽么？
+- > 没影响，我们一天 500G 日志，照样 grep ，tail
+- > tail -f 能到影响性能的程度，那你服务器该扩容了
+
 请问如何在一台 Linux 上加载另一台 Linux https://www.v2ex.com/t/1020395
 - > 看你对隔离的要求？如果只要隔离磁盘，进程和网络不需要隔离，直接 chroot 。如果需要沙盒环境，可以尝试用 Docker ？ root 设置为你的 Gentoo 。
 - > `chroot` 就行，即使你在 x86 跑 arm 发行版都没问题

@@ -1,4 +1,14 @@
 
+# wiki
+
+进击的巨人 https://zh.moegirl.org.cn/%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA
+
+进击的巨人 https://zh.wikipedia.org/wiki/%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA
+
+进击的巨人 (动画) https://zh.wikipedia.org/wiki/%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA_(%E5%8B%95%E7%95%AB)
+
+进击的巨人集数列表 https://zh.wikipedia.org/wiki/%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
+
 # 视频
 
 【虎扑】《进击的巨人》角色及相关评分，你最喜欢哪个角色？ https://www.bilibili.com/video/BV1A9p4ewEFJ/
