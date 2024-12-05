@@ -12,3 +12,6 @@
 - 涉及文件：
   * `crypto/bio/bss_file.c`: `static const BIO_METHOD methods_filep`、`BIO *BIO_new_file()`
   * `crypto/bio/bio_lib.c`: `BIO_read()`、`bio_read_intern()`、`BIO_write()`、`bio_write_intern()`
+
+第四集 openssl为什么要封装file或者其他类型的BIO？ https://www.bilibili.com/video/BV1u2421A7iF/
+- > `00:25`: `BIO_s_file` https://docs.openssl.org/master/man3/BIO_s_file/

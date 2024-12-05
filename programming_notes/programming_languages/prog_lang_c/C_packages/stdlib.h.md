@@ -13,6 +13,28 @@
 
 `std::getenv` https://en.cppreference.com/w/cpp/utility/program/getenv
 
+# `malloc` 
+
+malloc https://en.cppreference.com/w/c/memory/malloc
+
+C动态内存分配 https://zh.wikipedia.org/wiki/C%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D
+- > 函数概述
+
+  | 函数 | 描述 |
+  | --- | --- |
+  | malloc	| 分配指定数量的字节 |
+  | realloc | 调整指定内存块的大小，必要时会重新分配 |
+  | calloc | 分配指定数量的字节，并初始化为 0 |
+  | free | 释放指定的内存块 |
+
+- > **类型安全**
+  * > `malloc` 所执行的内存分配基于字节数而不是类型，其返回类型为 void 指针 `（void *）`，表示该指针所指向区域的数据类型未知。C++ 由于其强类型系统，***实际使用该指针时需要进行强制类型转换***，而 C 语言中则不必进行。
+    ```c
+    int * ptr;
+    ptr = malloc(10 * sizeof(int));		/* 不进行强制类型转换 */
+    ptr = (int *)malloc(10 * sizeof(int));	/* 进行强制类型转换 */
+    ```
+
 # `qsort()`
 
 qsort http://www.cplusplus.com/reference/cstdlib/qsort/
