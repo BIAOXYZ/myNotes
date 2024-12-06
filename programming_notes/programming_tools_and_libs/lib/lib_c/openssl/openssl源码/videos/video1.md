@@ -15,3 +15,10 @@
 
 第四集 openssl为什么要封装file或者其他类型的BIO？ https://www.bilibili.com/video/BV1u2421A7iF/
 - > `00:25`: `BIO_s_file` https://docs.openssl.org/master/man3/BIO_s_file/
+- > `05:30`: `BIO_f_buffer` https://docs.openssl.org/master/man3/BIO_f_buffer/
+
+第五集 demo程序演示如何使用file和buffer类型的BIO https://www.bilibili.com/video/BV1SH4y1Y7Bh/
+
+# 2
+
+Getting Started with OpenSSL - JuniorDevSG Code and Tell https://www.youtube.com/watch?v=K4iJ6iK4xPE

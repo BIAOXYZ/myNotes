@@ -3,6 +3,11 @@
 
 ossl-guide-introduction https://docs.openssl.org/master/man7/ossl-guide-introduction/
 
+OpenSSL libraries https://docs.openssl.org/master/man3/
+- > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
+
+OpenSSL overviews https://docs.openssl.org/master/man7/
+
 # wiki
 
 Comparison of cryptography libraries https://en.wikipedia.org/wiki/Comparison_of_cryptography_libraries

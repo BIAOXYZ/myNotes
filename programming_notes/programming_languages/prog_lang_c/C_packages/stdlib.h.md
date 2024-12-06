@@ -5,7 +5,10 @@
 - **String conversion**
   * atoi http://www.cplusplus.com/reference/cstdlib/atoi/
 - **Dynamic memory management**
+  * calloc https://cplusplus.com/reference/cstdlib/calloc/
+  * free https://cplusplus.com/reference/cstdlib/free/
   * malloc http://www.cplusplus.com/reference/cstdlib/malloc/
+  * realloc https://cplusplus.com/reference/cstdlib/realloc/
 - **Integer arithmetics**
   * abs http://www.cplusplus.com/reference/cstdlib/abs/
 - **Environment**
@@ -14,6 +17,9 @@
 `std::getenv` https://en.cppreference.com/w/cpp/utility/program/getenv
 
 # `malloc` 
+
+malloc http://www.cplusplus.com/reference/cstdlib/malloc/
+- > `void* malloc (size_t size);`
 
 malloc https://en.cppreference.com/w/c/memory/malloc
 
