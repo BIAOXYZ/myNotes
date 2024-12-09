@@ -15,7 +15,7 @@ Comparison of cryptography libraries https://en.wikipedia.org/wiki/Comparison_of
 # 其他
 
 https://opensource.com/tags/security
-- 【[:star:][`*`]】 Getting started with OpenSSL: Cryptography basics https://opensource.com/article/19/6/cryptography-basics-openssl-part-1
+- 【[ :star: ][`*`]】 Getting started with OpenSSL: Cryptography basics https://opensource.com/article/19/6/cryptography-basics-openssl-part-1
 - How to use OpenSSL: Hashes, digital signatures, and more https://opensource.com/article/19/6/cryptography-basics-openssl-part-2
 
 OPENSSL编程入门学习 https://www.cnblogs.com/littlehann/p/3741907.html
