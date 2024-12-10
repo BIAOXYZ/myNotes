@@ -20,6 +20,15 @@
 
 malloc http://www.cplusplus.com/reference/cstdlib/malloc/
 - > `void* malloc (size_t size);`
+- > **Allocate memory block**
+  * > Allocates a block of `size` bytes of memory, returning a pointer to the beginning of the block.
+  * > ***The content of the newly allocated block of memory is not initialized***, remaining with indeterminate values.
+  * > If size is zero, the return value depends on the particular library implementation (it may or may not be a null pointer), but the returned pointer shall not be dereferenced.
+- > **Return Value**
+  * > On success, a pointer to the memory block allocated by the function.
+  * > ***The type of this pointer is always `void*`***, which can be cast to the desired type of data pointer in order to be dereferenceable.
+    >> //notes：所以 `malloc` 返回的指针需要进行强制类型转换后才能解引用。
+  * > If the function ***failed to allocate*** the requested block of memory, a **null pointer** is returned.
 
 malloc https://en.cppreference.com/w/c/memory/malloc
 
