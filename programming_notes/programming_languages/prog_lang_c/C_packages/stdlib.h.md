@@ -25,7 +25,7 @@ calloc https://cplusplus.com/reference/cstdlib/calloc/
 - > **Allocate and zero-initialize array**
   * > Allocates a block of memory for an array of `num` elements, each of them `size` bytes long, ***and initializes all its bits to zero***.
   * > The effective result is ***the allocation of a zero-initialized memory block of (`num*size`) bytes***.
-  * > If size is zero, the return value depends on the particular library implementation (it may or may not be a null pointer), but the returned pointer shall not be dereferenced.
+  * > If size is zero, the return value depends on the particular library implementation (it may or may not be a ***null pointer***), but the returned pointer shall not be dereferenced.
 - > **Return Value**
   * > On success, a pointer to the memory block allocated by the function.
   * > ***The type of this pointer is always `void*`***, which can be cast to the desired type of data pointer in order to be dereferenceable.
@@ -43,7 +43,7 @@ calloc https://cplusplus.com/reference/cstdlib/calloc/
     int * pData;
     printf ("Amount of numbers to be entered: ");
     scanf ("%d",&i);
-    pData = (int*) calloc (i,sizeof(int));
+    pData = (int*) calloc (i, sizeof(int));
     if (pData==NULL) exit (1);
     for (n=0;n<i;n++)
     {
@@ -79,8 +79,8 @@ free https://cplusplus.com/reference/cstdlib/free/
   {
     int * buffer1, * buffer2, * buffer3;
     buffer1 = (int*) malloc (100*sizeof(int));
-    buffer2 = (int*) calloc (100,sizeof(int));
-    buffer3 = (int*) realloc (buffer2,500*sizeof(int));
+    buffer2 = (int*) calloc (100, sizeof(int));
+    buffer3 = (int*) realloc (buffer2, 500*sizeof(int));
     free (buffer1);
     free (buffer3);
     return 0;
