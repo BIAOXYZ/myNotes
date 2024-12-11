@@ -93,7 +93,7 @@ gcc -g -o bio5_2 bio5_2.c -I/opt/newssl/include -L/opt/newssl/lib64 -lssl -lcryp
 ./bio5_2
 ```
 ```console
-
+# 无输出
 ```
 
 **`bio5_3.c`**
@@ -135,6 +135,49 @@ hello, world
 ```
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+第六集 demo测试过滤类型BIO和源目的类型BIO如何结合使用的。 https://www.bilibili.com/video/BV1gm411X7kK/
+
+第七集 分析buffer类型的BIO的初始化函数 https://www.bilibili.com/video/BV17m411D7HZ/
+```console
+分析buffer类型的BIO和file类型的BIO的初始化函数
+```
+- 涉及文件：
+  * `crypto/bio/bf_buff.c`:
+    + `static int buffer_new(BIO *bi)`
+    + `#define DEFAULT_BUFFER_SIZE     4096`
+    >> //notes：这个文件（也就是 buffer 类型 BIO）里的 `buffer_free()` 函数，里面虽然是两个临时变量，但是变量名直接 a, b 是不是有点...- -
+      ```c
+       static int buffer_free(BIO *a)
+       {
+           BIO_F_BUFFER_CTX *b;
+
+           if (a == NULL)
+               return 0;
+           b = (BIO_F_BUFFER_CTX *)a->ptr;
+           OPENSSL_free(b->ibuf);
+           OPENSSL_free(b->obuf);
+           OPENSSL_free(a->ptr);
+           a->ptr = NULL;
+           a->init = 0;
+           a->flags = 0;
+           return 1;
+       }
+      ```
+  * `crypto/bio/bss_file.c`:
+    + `static int file_new(BIO *bi)`
+
+第八集 分析openssl的buffer和file类型BIO的write函数的特别之处，为以后学习SSL/TLS通信打下基础。 https://www.bilibili.com/video/BV1SA4m1G7JA/
+- 涉及文件：
+  * `crypto/bio/bf_buff.c`:
+    + `static int buffer_write(BIO *b, const char *in, int inl)`
+    + 查找某个定义在哪个头文件：
+      ```sh
+      root@83b34a21e2fc:/openssldir/openssl# find . -name "*.h" | xargs grep BIO_F_BUFFER_CTX
+      ./crypto/bio/bio_local.h:} BIO_F_BUFFER_CTX;
+      ```
+  * `crypto/bio/bss_file.c`:
+    + `static int file_write(BIO *b, const char *in, int inl)`
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
