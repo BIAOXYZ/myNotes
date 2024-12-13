@@ -146,7 +146,7 @@ hello, world
   * `crypto/bio/bf_buff.c`:
     + `static int buffer_new(BIO *bi)`
     + `#define DEFAULT_BUFFER_SIZE     4096`
-    >> 【[ :star: ][`*`]】 //notes：这个文件（也就是 buffer 类型 BIO）里的 `buffer_free()` 函数，里面虽然是两个临时变量，但是变量名直接 a, b 是不是有点...- -
+    >> 【[ :star: ][`*`]】 //notes：这个文件（也就是 buffer 类型 BIO）里的 `buffer_free()` 函数，里面虽然是两个临时变量，但是变量名直接 a, b 是不是有点...- - PS：用 i, j 做变量名（尤其是 for 循环的时候）我觉得没啥问题，因为已经成为一种约定俗成了。
       ```c
        static int buffer_free(BIO *a)
        {
@@ -204,7 +204,6 @@ hello, world
            int obuf_off;               /* write/read offset */
        } BIO_F_BUFFER_CTX;
       ```
-      >> 【[ :star: ][`*`]】 //notes：`obuf_len` 的注释明显是复制 `ibuf_len` 的并且没有改。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 

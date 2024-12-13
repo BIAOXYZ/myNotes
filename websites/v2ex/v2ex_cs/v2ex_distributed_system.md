@@ -1,4 +1,11 @@
 
+求教，有状态的分布式系统应该如何设计 https://www.v2ex.com/t/1097140
+- > 为什么要把问题搞这么复杂，为什么不用消息队列
+  >> 消息队列用了，但是用来处理业务中产出的各种数据实时推送... 没想好记录任务在哪个节点这个层面怎么用...
+- > 这很简单，你改成 pub/sub ，比如 mqtt 。接到任务的节点会自己订阅相关 topic ，其他的节点不会订阅。你发布任务的时候也无需关心到底目的地在哪。
+  >> 貌似跟 1 楼提的消息队列方式很像，我思考一下怎么设计
+- > 不是，你为什么关心认为在哪个节点 a 有任务扔进队列，c 去捡了执行，执行完了再扔个消息，a 受到走完后面流程，就这么简单的事
+
 分布式事务到是什么 https://www.v2ex.com/t/1066563
 - > https://pdai.tech/md/arch/arch-z-transection.html 不知道楼主面试的是什么岗位，这些八股文还是多准备下比较好
 - > 才疏学浅，至今没用过分布式事务，我来个八股文链接，一起学习下： https://github.com/doocs/advanced-java/blob/main/docs/distributed-system/distributed-transaction.md
