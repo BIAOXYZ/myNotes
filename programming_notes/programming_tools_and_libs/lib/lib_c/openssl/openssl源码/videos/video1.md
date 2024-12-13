@@ -146,7 +146,7 @@ hello, world
   * `crypto/bio/bf_buff.c`:
     + `static int buffer_new(BIO *bi)`
     + `#define DEFAULT_BUFFER_SIZE     4096`
-    >> //notes：这个文件（也就是 buffer 类型 BIO）里的 `buffer_free()` 函数，里面虽然是两个临时变量，但是变量名直接 a, b 是不是有点...- -
+    >> 【[ :star: ][`*`]】 //notes：这个文件（也就是 buffer 类型 BIO）里的 `buffer_free()` 函数，里面虽然是两个临时变量，但是变量名直接 a, b 是不是有点...- -
       ```c
        static int buffer_free(BIO *a)
        {
@@ -178,6 +178,33 @@ hello, world
       ```
   * `crypto/bio/bss_file.c`:
     + `static int file_write(BIO *b, const char *in, int inl)`
+  * `crypto/bio/bio_local.h`:
+    + `typedef struct bio_f_buffer_ctx_struct {。。。} BIO_F_BUFFER_CTX;`
+      ```c
+       typedef struct bio_f_buffer_ctx_struct {
+           /*-
+            * Buffers are setup like this:
+            *
+            * <---------------------- size ----------------------->
+            * +---------------------------------------------------+
+            * | consumed | remaining          | free space        |
+            * +---------------------------------------------------+
+            * <-- off --><------- len ------->
+            */
+           /*- BIO *bio; *//*
+            * this is now in the BIO struct
+            */
+           int ibuf_size;              /* how big is the input buffer */
+           int obuf_size;              /* how big is the output buffer */
+           char *ibuf;                 /* the char array */
+           int ibuf_len;               /* how many bytes are in it */
+           int ibuf_off;               /* write/read offset */
+           char *obuf;                 /* the char array */
+           int obuf_len;               /* how many bytes are in it */
+           int obuf_off;               /* write/read offset */
+       } BIO_F_BUFFER_CTX;
+      ```
+      >> 【[ :star: ][`*`]】 //notes：`obuf_len` 的注释明显是复制 `ibuf_len` 的并且没有改。
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
