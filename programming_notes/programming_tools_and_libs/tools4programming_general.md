@@ -18,6 +18,9 @@ Record and share your terminal sessions, the right way. https://asciinema.org/
 
 docker-wine: Docker image that includes Wine and Winetricks for running Windows applications on Linux and macOS https://github.com/scottyhardy/docker-wine
 
+Windows https://github.com/dockur/windows
+- > Windows inside a Docker container.
+
 screego/server https://github.com/screego/server
 - > Screego is an addition to existing software and only helps to share your screen. Nothing else (:.
 
