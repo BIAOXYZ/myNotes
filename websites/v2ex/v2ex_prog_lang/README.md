@@ -39,6 +39,8 @@
 - > 你说得对，但是《 Golang 》是一门由 Google 自主研发的全新编程语言，语言发生在一个被称作「 goroutine 」的幻想世界，在这里，被 func 选中的人将被授予「 pointer 」，导引 GO111MODULE 之力，你将扮演一位名为「 20060102150405 」的神秘角色，在自由的 interface 中邂逅性格各异、能力独特的 struct 们，和他们一起击败 err ，找回失散的泛型——同时，逐步发掘「 panic 」的真相。
 - > http://esolangs.org/wiki/Main_Page 去集齐这些语言的缺点吧
   >> 回答 esolangs 多少有点算跑题了 核心还是让各种语言特性相互冲突和耦合 建议直接干掉过程的形参列表，类型系统随便乱来
+- 个人补充链接：
+  * Go 的时间格式化为什么是 2006-01-02 15:04:05？ https://polarisxu.studygolang.com/posts/go/why-time-use-2006/
 
 你遇到过哪些比较难理解的编程语言概念 https://www.v2ex.com/t/1069983
 
