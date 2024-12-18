@@ -1,4 +1,6 @@
 
+有一个对数据库疑惑的问题，场景如下 https://www.v2ex.com/t/1098352
+
 有什么数据库扛断电能力最强吗? https://www.v2ex.com/t/1090399
 - > 把 innodb_flush_log_at_trx_commit 设成 1 看看，redo log 直接落盘
 - > 打开 double_write 试试
