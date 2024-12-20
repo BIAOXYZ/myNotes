@@ -46,6 +46,10 @@ FBPCP (Facebook Private Computation Platform) https://github.com/facebookresearc
 
 案例丨Meta如何提高密码安全性并保护用户隐私 https://mp.weixin.qq.com/s/v66OmdIdWA1efRCywPIuLQ
 
+Private Matching for Compute https://eprint.iacr.org/2020/599.pdf  【//notes：google也有一个类似的，但是只有 github 项目（下面有记录项目链接：https://github.com/Google/private-join-and-compute ），没有论文。此外，从功能上看谷歌的只能在不泄漏交集的情况下求和。】
+- > We revisit the problem of two-party private set intersection for aggregate computation which we refer to as private matching for compute. In this problem, two parties want to perform various downstream computation on the intersection of their two datasets according to a previously agreed-upon identifier. We observe that prior solutions to this problem have important limitations. For example, any change or update to the records in either party’s dataset triggers a rerun of the private matching component; and it is not clear how to support a streaming arrival of one party’s set in small batches without revealing the match rate for each individual batch.
+- > We introduce two new formulations of the private matching for compute problem meeting these requirements, called `private-ID and streaming private secret shared set intersection` (`PS3I`), and design new DDH-based constructions for both. Our implementation shows that when taking advantage of the inherent parallelizability of these solutions, we can execute the matching for datasets of size upto 100 million records within an hour.
+
 ## Oasis Labs
 
 https://www.oasislabs.com/
@@ -109,7 +113,7 @@ associated integer values:
   Mika        | 35
 
 - > Then the Private Join and Compute functionality would allow the Client to learn that the input files had *2* identifiers in common, and that the associated values summed to *40*. It does this *without* revealing which specific identifiers were in common (Ada and Ruby in the example above), or revealing anything additional about the other identifiers in the two parties' data set.
-- > Private Join and Compute is a variant of the well-studied Private Set Intersection functionality. We sometimes also refer to Private Join and Compute as Private Intersection-Sum.
+- > Private Join and Compute is a variant of the well-studied Private Set Intersection functionality. We sometimes also refer to `Private Join and Compute` as `Private Intersection-Sum`.
 
 ## 华控清交
 
