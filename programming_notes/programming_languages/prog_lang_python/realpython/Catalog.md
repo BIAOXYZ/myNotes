@@ -23,7 +23,7 @@ Python KeyError Exceptions and How to Handle Them https://realpython.com/python-
 - > Learning how to read a Python traceback and understanding what it is telling you is crucial to improving as a Python programmer. To learn more on Python tracebacks, check out [Understanding the Python Traceback](https://realpython.com/python-traceback/).
   >> Understanding the Python Traceback https://realpython.com/python-traceback/
 
-Your Guide to the CPython Source Code https://realpython.com/cpython-source-code-guide/
+~~Your Guide to the CPython Source Code https://realpython.com/cpython-source-code-guide/~~  【//已转移】
 
 Python Keywords: An Introduction https://realpython.com/python-keywords/
 

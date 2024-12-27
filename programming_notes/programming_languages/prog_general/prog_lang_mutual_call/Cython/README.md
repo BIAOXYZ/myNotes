@@ -7,6 +7,8 @@ Cython: C-Extensions for Python https://cython.org/
 
 Welcome to Cython’s Documentation https://cython.readthedocs.io/en/latest/
 
+欢迎使用 Cython 文档¶ https://cython-docs.pythonlang.cn/en/latest/index.html
+
 # 其他
 
 Cython 基础教程 - 谭九鼎的文章 - 知乎 https://zhuanlan.zhihu.com/p/373236956
