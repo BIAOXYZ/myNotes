@@ -96,7 +96,8 @@ Bitnami Docker Image for Apache Spark https://github.com/bitnami/bitnami-docker-
 # 2
 >> //notes：这个很容易部署起来，美中不足的是没有对外（除了localhost外）暴露端口。
 
-spark-hadoop-docker https://github.com/s1mplecc/spark-hadoop-docker
+使用 Docker 快速部署 Spark + Hadoop 大数据集群 https://s1mple.cc/2021/10/12/%E4%BD%BF%E7%94%A8-Docker-%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2-Spark-Hadoop-%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%BE%A4/
+- spark-hadoop-docker https://github.com/s1mplecc/spark-hadoop-docker
 
 # 3
 >> //notes：这个部署更容易，且向外暴漏了端口
