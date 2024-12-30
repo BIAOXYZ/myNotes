@@ -175,6 +175,9 @@ C语言内存泄露很严重，如何应对？ https://juejin.im/post/6867355456
 
 内存中为什么分堆和栈，能否只用一种模型呢？为什么每个线程都有单独的栈 https://blog.csdn.net/jinking01/article/details/111657034
 
+内存划分为什么要分为堆和栈，当初设计这两个的时候分别是要解决什么问题？ - 知乎 https://www.zhihu.com/question/447017261
+- 内存划分为什么要分为堆和栈，当初设计这两个的时候分别是要解决什么问题？ - 尼布甲尼撒的回答 - 知乎 https://www.zhihu.com/question/447017261/answer/3546212021
+
 为什么c++中要分为heap（堆）和stack（栈）? - 知乎 https://www.zhihu.com/question/281940376
 - 为什么c++中要分为heap（堆）和stack（栈）? - 朱元的回答 - 知乎 https://www.zhihu.com/question/281940376/answer/425123578
   * > 栈让你分配和释放简单化，但是他有一个重大缺点：释放的次序是固定的，必须是分配次序的反序。
