@@ -205,10 +205,53 @@ hello, world
        } BIO_F_BUFFER_CTX;
       ```
 
+第九集 通过openssl的buffer类型的BIO，学习内存的惯用管理方法。 https://www.bilibili.com/video/BV1oy421h7t5/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+第12集 分析openssl的BIO封装的control函数的亮点和特别之处。 https://www.bilibili.com/video/BV19u4m1w7RX/
+```console
+分析openssl为什么封装BIO的ctrl函数，从整体上查看file和buffer类型的ctrl函数。
+```
+- 涉及文件：
+  * `crypto/bio/bss_file.c`:
+    + `static long file_ctrl(BIO *b, int cmd, long num, void *ptr)`
+  * `crypto/bio/bf_buff.c`:
+    + `static long buffer_ctrl(BIO *b, int cmd, long num, void *ptr)`
+- 涉及文档：  
+  * BIO_s_file https://docs.openssl.org/master/man3/BIO_s_file/
+    + > **SYNOPSIS**
+      ```c
+      #include <openssl/bio.h>
+
+      const BIO_METHOD *BIO_s_file(void);
+      BIO *BIO_new_file(const char *filename, const char *mode);
+      BIO *BIO_new_fp(FILE *stream, int flags);
+
+      BIO_set_fp(BIO *b, FILE *fp, int flags);
+      BIO_get_fp(BIO *b, FILE **fpp);
+
+      int BIO_read_filename(BIO *b, char *name);
+      int BIO_write_filename(BIO *b, char *name);
+      int BIO_append_filename(BIO *b, char *name);
+      int BIO_rw_filename(BIO *b, char *name);
+      ```
+
+第13集 分析openssl的buffer过滤类型的BIO如何执行constrl函数的。 https://www.bilibili.com/video/BV1qA4m137Fh/
+```console
+buffer过滤类型的BIO通过cmd执行维护的BIO链表。
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 2
 
 Getting Started with OpenSSL - JuniorDevSG Code and Tell https://www.youtube.com/watch?v=K4iJ6iK4xPE
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 3
+
+基于openssl的C++实战加密与解密 https://www.bilibili.com/video/BV1N84y1A7Gt/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
