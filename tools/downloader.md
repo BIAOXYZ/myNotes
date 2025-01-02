@@ -38,6 +38,8 @@ Video Downloader for reddit - Redditsave https://chrome.google.com/webstore/deta
 
 Twitter Video Downloader https://twittervideodownloader.com/
 
+YouTube高清视频下载 https://youtube.iiilab.com/
+
 # 其他下载器
 
 cobalt https://github.com/wukko/cobalt || https://cobalt.tools/
