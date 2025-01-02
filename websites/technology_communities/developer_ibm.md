@@ -1,7 +1,7 @@
 
 # [Security] (https://developer.ibm.com/technologies/security/)
 
-Secure programming with the OpenSSL API https://developer.ibm.com/tutorials/l-openssl/
+~~Secure programming with the OpenSSL API https://developer.ibm.com/tutorials/l-openssl/~~  【//已转移】
 
 Protect cloud-based health data with an encrypted database https://developer.ibm.com/tutorials/hyper-protect-your-data/
 
