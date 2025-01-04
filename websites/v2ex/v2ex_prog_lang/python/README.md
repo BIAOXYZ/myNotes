@@ -1,4 +1,27 @@
 
+有什么好办法限制 Python 的内存分配吗？ https://www.v2ex.com/t/1102427
+```console
+这是一段会吃掉几乎所有可用内存的代码：
+
+def Decompress_Gzip_With_Progress_Bar(gzip_path, output_path):
+    with gzip.open(gzip_path, 'rb') as f_in:
+        with open(output_path, 'wb') as f_out:
+            file_size = Get_Uncompressed_Size(gzip_path)
+            chunk_size = 1024 * 1024
+            with tqdm(total=file_size, unit='B', unit_scale=True, desc="Decompressing " + gzip_path) as pbar:
+                for block in iter(lambda: f_in.read(chunk_size), b''):
+                    f_out.write(block)
+                    pbar.update(len(block))
+
+它被用于解压一个解压后大概 4G 大小的文件。
+直接在我的 16G 内存的开发虚拟机上运行，它会吃掉所有的内存。
+但是，如果我把它放到一个分配 1G 内存的容器里，它不仅能运行，甚至还能运行得更快。
+我试过用 resource 限制内存分配，但是它还是会吃满所有内存。
+有没有什么能直接写到 Python 代码里的限制内存分配的方法呢？
+```
+- > 那说明基本都是 cache 啊，如果 rss 常驻内存应该早 oom 了
+- > 吃满内存的行为是操作系统的缓存吧, 如果其他程序再需要,会清理内容?
+
 2024 年 Python 实现定时任务和延时任务，性价比较高的方案是什么？ https://www.v2ex.com/t/1057323
 - > python 也就 celery 和 apscheduler 能用
 - > celery 和 apscheduler 都能满足，而且 apscheduler 支持动态添加周期任务，celery 更偏向生产-消费模型
