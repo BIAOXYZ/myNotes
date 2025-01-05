@@ -103,3 +103,95 @@ Secure programming with the OpenSSL API https://developer.ibm.com/tutorials/l-op
   * > After the context structure is created, a trust certificate store must be loaded. This is absolutely necessary for verification of the peer certificate to succeed. If the certificate cannot be verified for trust, OpenSSL flags the certificate as invalid (but the connection can still continue). || 创建上下文结构后，必须加载信任证书存储。这对于成功验证对等证书是绝对必要的。如果无法验证证书的信任度，OpenSSL 会将证书标记为无效（***但连接仍可以继续***）。
   * > OpenSSL comes with a set of trust certificates. They are in the `certs` directory of the source tree. Each certificate is a separate file, though -- meaning that each one must be loaded separately. There is also a subfolder under certs with expired certificates. Attempting to load these will cause errors. || OpenSSL 附带一组信任证书。它们位于源树的 `certs` 目录中。不过，每个证书都是一个单独的文件——这意味着每个证书都必须单独加载。certs下还有一个包含过期证书的子文件夹。尝试加载这些将导致错误。
   * > You can load each file individually if you like, but for the sake of simplicity, the trust certificates from the latest OpenSSL distribution are included in the source code archive in a single file called `"TrustStore.pem."` If you already have a trust store file that will be used for your particular project, simply replace "TrustStore.pem" in Listing 8 with your file (***or load both of them with separate function calls***). || 如果您愿意，可以单独加载每个文件，但为了简单起见，最新 OpenSSL 发行版的信任证书包含在名为 `“TrustStore.pem”` 的单个文件的源代码存档中。如果您已经有一个将用于您的特定项目的信任存储文件，只需将 清单 8 中的“TrustStore.pem”替换为您的文件（或者使用单独的函数调用加载它们）。
+  * > Call `SSL_CTX_load_verify_locations` to load the trust store file. This takes three parameters: the context pointer, the path and the filename of the trust store file, and a path to a directory of certificates. One of either the trust store file or directory of certificates must be specified. It returns 1 on success, else 0 if there was a problem. || 调用 `SSL_CTX_load_verify_locations` 加载信任存储文件。***这需要三个参数：`上下文指针`、`信任存储文件的路径和文件名`以及`证书目录的路径`***。必须指定信任存储文件或证书目录之一。***如果成功则返回 1，如果出现问题则返回 0***。
+  * > Listing 8. Loading a trust store || 清单 8. 加载信任存储
+    ```c
+    if(! SSL_CTX_load_verify_locations(ctx, "/path/to/TrustStore.pem", NULL))
+    {
+        / Handle failed load here /
+    }
+    ```
+  * > If you are going to use a directory to store the trust store, the files must be named in a certain way. The OpenSSL documentation spells out what this is, but there is a tool that comes with OpenSSL called `c_rehash` that prepares a folder for use as the path parameter to `SSL_CTX_load_verify_locations`. || ***如果要使用目录来存储信任存储，则必须以某种方式命名文件***。OpenSSL 文档详细说明了这是什么，***但 OpenSSL 附带了一个名为 `c_rehash` 的工具，它可以准备一个文件夹用作 `SSL_CTX_load_verify_locations` 的路径参数***。
+  * > Listing 9. Preparing a certificate folder and using it || 清单 9. 准备证书文件夹并使用它
+    ```c
+    / Use this at the command line /
+    c_rehash /path/to/certfolder
+
+
+    / Then call this from within the application /
+    if(! SSL_CTX_load_verify_locations(ctx, NULL, "/path/to/certfolder"))
+    {
+        / Handle error here /
+    }
+    ```
+  * > You can name as many separate files or folders as necessary to specify all of the verification certificates you may need. You can also specify a file and a folder at the same time. || 您可以根据需要命名任意多个单独的文件或文件夹，以指定您可能需要的所有验证证书。您还可以同时指定文件和文件夹。
+- > **Creating the connection 创建连接**
+  * > The `BIO object` is created using `BIO_new_ssl_connect`, taking the `pointer to the SSL context` as its only parameter. The pointer to the SSL structure also needs to be retrieved. In this article, this pointer is only used with the `SSL_set_mode` function. That function is used to set the `SSL_MODE_AUTO_RETRY` flag. With this option set, if the server suddenly wants a new handshake, OpenSSL handles it in the background. Without this option, any read or write operation will return an error if the server wants a new handshake, setting the retry flag in the process. || `BIO 对象`是使用 `BIO_new_ssl_connect` 创建的，***将指向 `SSL 上下文的指针`作为其唯一参数***。还需要检索指向 SSL 结构的指针。在本文中，该指针仅与 `SSL_set_mode` 函数一起使用。该函数用于设置 `SSL_MODE_AUTO_RETRY` 标志。设置此选项后，如果服务器突然需要新的握手，OpenSSL 会在后台处理它。如果没有此选项，如果服务器想要新的握手，则任何读取或写入操作都将返回错误，并在此过程中设置重试标志。
+  * > Listing 10. Setting up the BIO object || 清单 10. 设置 BIO 对象
+    ```c
+    bio = BIO_new_ssl_connect(ctx);
+    BIO_get_ssl(bio, & ssl);
+    SSL_set_mode(ssl, SSL_MODE_AUTO_RETRY);
+    ```
+  * > With the SSL context structure set up, the connection can be created. The hostname is set using the `BIO_set_conn_hostname` function. The hostname and port are specified in the same format as above. This function also opens the connection to the host. A call to `BIO_do_connect` must still be performed to verify that the connection was opened successfully. This same call also performs the handshake to set up the secure communication. || 设置 SSL 上下文结构后，就可以创建连接了。主机名是使用 `BIO_set_conn_hostname` 函数设置的。主机名和端口的指定格式与上面相同。该函数还打开与主机的连接。仍必须执行对`BIO_do_connect` 调用来验证连接是否已成功打开。此同一调用还执行握手以建立安全通信。
+  * > Listing 11. Opening a secure connection || 清单 11. 打开安全连接
+    ```c
+    / Attempt to connect /
+    BIO_set_conn_hostname(bio, "hostname:port");
+
+    / Verify the connection opened and perform the handshake /
+    if(BIO_do_connect(bio) <= 0)
+    {
+        / Handle failed connection /
+    }
+    ```
+  * > Once the connection is established, the certificate should be checked to see that it is valid. Actually, OpenSSL does this for us. If there are fatal problems with the certificate -- for instance, if the hash values are not valid -- then the connection simply won't happen. But if there are non-fatal problems with the certificate -- as when it has expired or is not yet valid -- the connection can still be used. || 建立连接后，应检查证书以确保其有效。实际上，OpenSSL 为我们做到了这一点。***如果证书存在致命问题（例如，如果哈希值无效），则连接根本不会发生。但是，如果证书存在非致命问题（例如证书已过期或尚未有效），则仍然可以使用连接***。
+  * > To find out if the certificate checked out okay with OpenSSL, call `SSL_get_verify_result` with the `SSL structure` as the only parameter. If the certificate passed OpenSSL's internal checks, including checking for trust, then it returns `X509_V_OK`. If something was wrong, it returns an error code that is documented under the verify option for the command-line tool. || 要查明证书是否可以通过 OpenSSL 检查，请调用 `SSL_get_verify_result`，并将 `SSL 结构`作为唯一参数。如果证书通过了 OpenSSL 的内部检查（包括信任检查），则它返回 `X509_V_OK`。如果出现问题，它会返回一个错误代码，该代码记录在命令行工具的verify选项下。
+  * > It should be noted that a failed verification does not mean the connection cannot be used. Whether or not the connection should be used is dependent upon the verification result and security considerations. For example, a failed trust verification could simply mean that the trust certificate is not available. The connection can still be used, just with heightened security in mind. || 需要注意的是，***验证失败并不意味着连接无法使用***。是否应使用连接取决于验证结果和安全考虑。例如，失败的信任验证可能仅仅意味着信任证书不可用。连接仍然可以使用，只是考虑到更高的安全性。
+  * > Listing 12. Checking if a certificate is valid || 清单 12. 检查证书是否有效
+    ```c
+    if(SSL_get_verify_result(ssl) != X509_V_OK)
+    {
+        / Handle the failed verification /
+    }
+    ```
+  * > And that is all that is required. Any communication with the server is as normal using `BIO_read` and `BIO_write`. Closing the connection requires a simple call to `BIO_free_all` or `BIO_reset`, depending on whether the `BIO` will be reused. || 这就是所需要的全部。使用 `BIO_read` 和 `BIO_write` 与服务器进行任何通信都是正常的。关闭连接需要简单地调用 `BIO_free_all` 或 `BIO_reset`，具体取决于 `BIO` 是否会被重用。
+  * > At some point before the end of the application, the `SSL context` structure must be released. Call `SSL_CTX_free` to free the structure. || 在应用程序结束之前的某个时刻，必须释放 `SSL 上下文`结构。调用 `SSL_CTX_free` 释放该结构。
+  * > Listing 13. Cleaning up the SSL context || 清单 13. 清理 SSL 上下文
+    ```c
+    SSL_CTX_free(ctx);
+    ```
+- > **Error detection 错误检测**
+  * > So OpenSSL has thrown an error of some kind. What does it mean? First you need to get the error code itself; `ERR_get_error` does this. Then you need to turn that code into an error string, which is a pointer to a string permanently loaded into memory by `SSL_load_error_strings` or `ERR_load_BIO_strings`. This can be done in a nested call. || 所以 OpenSSL 抛出了某种错误。这是什么意思？首先你需要获取错误代码本身；`ERR_get_error` 就是这样做的。然后，您需要将该代码转换为错误字符串，它是指向由 `SSL_load_error_strings` 或 `ERR_load_BIO_strings` 永久加载到内存中的字符串的指针。这可以在嵌套调用中完成。
+  * > Table 1 outlines the ways to retrieve an error from the error stack. Listing 14 shows how to print out the last error message in a text string. || 表 1 概述了从错误堆栈中检索错误的方法。清单 14 显示了如何打印文本字符串中的最后一条错误消息。
+  * > Table 1. Retrieving errors from the stack || 表 1. 从堆栈中检索错误
+
+  |||
+  |:--|:--|
+  | ERR_reason_error_string	| Returns a pointer to a static string, which can then be displayed on the screen, written to a file, or whatever you wish to do with it. 返回指向静态字符串的指针，然后可以将其显示在屏幕上、写入文件或执行任何您希望对其执行的操作。 |
+  | ERR_lib_error_string | Tells in which library the error occurred. 告诉哪个库发生了错误。 |
+  | ERR_func_error_string	| Returns the OpenSSL function that caused the error. 返回导致错误的 OpenSSL 函数。 |
+
+  * > Listing 14. Printing out the last error || 清单 14. 打印出最后一个错误
+    ```c
+    printf("Error: %s\n", ERR_reason_error_string(ERR_get_error()));
+    ```
+  * > You can also have the library give you a preformatted error string. Call `ERR_error_string` to achieve this. It takes the error code and a pre-allocated buffer as its parameters. The buffer must be `256 bytes` long. If this parameter is `NULL`, OpenSSL writes the string to a static buffer that is `256 bytes` in length, and returns a pointer to that buffer. Otherwise, it will return the pointer you provided. If you choose the static buffer option, that buffer will be overwritten with the next call to `ERR_error_string`. || 您还可以让库为您提供预先格式化的错误字符串。调用 `ERR_error_string` 来实现此目的。它以错误代码和预分配的缓冲区作为参数。缓冲区的长度必须为 `256 字节`。***如果此参数为 `NULL`，OpenSSL 会将字符串写入长度为 `256 字节`的静态缓冲区，并返回指向该缓冲区的指针。否则，它将返回您提供的指针***。如果您选择静态缓冲区选项，则下次调用 `ERR_error_string` 时将覆盖该缓冲区。
+  * > Listing 15. Retrieving a preformatted error string || 清单 15. 检索预先格式化的错误字符串
+    ```c
+    printf("%s\n", ERR_error_string(ERR_get_error(), NULL));
+    ```
+  * > You can also dump the entire error queue into either a `file` or `BIO`. This is achieved through `ERR_print_errors` or `ERR_print_errors_fp`. The queue is dumped in a readable format. The first sends the queue to a `BIO`, while the second sends it to a `FILE`. The string is formatted in this manner (from the OpenSSL documentation): || 您还可以将整个错误队列转储到文件或 BIO 中。这是通过 `ERR_print_errors` 或 `ERR_print_errors_fp` 实现的。队列以可读格式转储。***第一个将队列发送到 `BIO`，而第二个将其发送到`FILE`***。该字符串的格式如下（来自 OpenSSL 文档）：
+    ```console
+    [pid]:error:[error code]:[library name]:[function name]:[reason string]:[file name]:[line]:[optional text message]
+    ```
+  * > where `[pid]` is the process ID, `[error code]` is an 8-digit hexadecimal code, `[file name]` is the source code file in the OpenSSL library, and `[line]` is the line number in that source file. || 其中，`[pid]` 是进程 ID，`[error code]` 是 8 位十六进制代码，`[file name]` 是 OpenSSL 库中的源代码文件，`[line]` 是该源文件中的行号。
+  * > Listing 16. Dumping the error queue || 清单 16. 转储错误队列
+    ```c
+    ERR_print_errors_fp(FILE);
+    ERR_print_errors(BIO);
+    ```
+- > **Get started 开始使用**
+  * > Creating a basic connection with OpenSSL is not difficult, but the documentation can be a little intimidating when trying to figure out how to do it. This article introduced you to the basics, but there is quite a bit of flexibility with OpenSSL yet to be discovered, and advanced settings that you may need to adequately implement SSL functionality for your project. || 使用 OpenSSL 创建基本连接并不困难，但在尝试弄清楚如何做到这一点时，文档可能有点令人生畏。本文向您介绍了基础知识，但 OpenSSL 还有相当多的灵活性有待发现，以及您可能需要为项目充分实现 SSL 功能的高级设置。
+  * > There are two samples included in this article. One shows an unsecured connection, while the other shows a secured SSL connection to verisign.com. Both connect to the server and download the home page. There are no security checks and all settings within the library are the default so you should only use these samples for educational purposes. || 本文包含两个示例。一个显示不安全的连接，而另一个显示与 verisign.com 的安全 SSL 连接。两者都连接到服务器并下载主页。没有安全检查，库中的所有设置都是默认设置，因此您应该仅将这些示例用于教育目的。
+  * > The source code should readily compile on any supported system, but it is recommended that you have the latest version of OpenSSL. At the time of this writing, the latest version is 0.9.7d. || 源代码应该可以在任何受支持的系统上轻松编译，但建议您使用最新版本的 OpenSSL。在撰写本文时，最新版本是 0.9.7d。
