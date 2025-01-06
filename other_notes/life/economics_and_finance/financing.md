@@ -1,11 +1,4 @@
 
-# tools
-
-英为财情Investing.com https://cn.investing.com/
-- 纳斯达克100指数 (NDX) https://cn.investing.com/indices/nq-100-historical-data
-- 美国标准普尔500指数 (SPX) https://cn.investing.com/indices/us-spx-500-historical-data || https://cn.investing.com/indices/us-spx-500
-- Invesco QQQ Trust (QQQ) https://cn.investing.com/etfs/powershares-qqqq
-
 # economics
 
 谁能讲讲资管、信托、银行、券商、基金之间的区别吗？ - 知乎 https://www.zhihu.com/question/291583486
