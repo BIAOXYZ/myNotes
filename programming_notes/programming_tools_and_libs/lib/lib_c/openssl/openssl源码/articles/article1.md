@@ -2,6 +2,8 @@
 # 1
 
 Secure programming with the OpenSSL API https://developer.ibm.com/tutorials/l-openssl/
+- > **What you will need 你需要什么**
+  * > If you will be using OpenSSL to make certificate requests and digital certificates, then a configuration file must be created. A template file called `openssl.cnf` is available in the `apps` folder of the OpenSSL package. I won't be discussing this, as the file is not required for the scope of this article. However, the template file is very well annotated and an Internet search will lead you to many tutorials which discuss modification of this file. || 如果您将使用 OpenSSL 发出证书请求和数字证书，则必须创建配置文件。OpenSSL 包的 `apps` 文件夹中提供了一个名为 `openssl.cnf` 的模板文件。我不会讨论这个，因为本文的范围不需要该文件。然而，模板文件有很好的注释，互联网搜索将引导您找到许多讨论修改此文件的教程。
 - > **Headers and initialization 标头和初始化**
   * > There are only three headers that will be used by this tutorial: `ssl.h, bio.h, and err.h`. All are in the openssl subdirectory, and all three will be required for developing your project. There are also only three lines necessary to initialize the OpenSSL library. All are listed in Listing 1. Other headers and/or initialization functions may be required for other features. || 本教程仅使用三个标头：`ssl.h、bio.h 和 err.h`。所有这些都位于 openssl 子目录中，开发项目时需要所有三个。初始化 OpenSSL 库也只需要三行。清单 1 中列出了所有内容。其他功能可能需要其他标头和/或初始化函数。
   * > Listing 1. Required headers || 清单 1. 必需的标头
