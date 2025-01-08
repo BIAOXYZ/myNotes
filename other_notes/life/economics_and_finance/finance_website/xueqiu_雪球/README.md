@@ -45,7 +45,7 @@ TQQQ不是长持的投资标的 https://xueqiu.com/7105878870/211205417
 
 如何满仓QQQ https://xueqiu.com/7105878870/210686265
 
-# 爱睡de长寿龟的专栏
+## 爱睡de长寿龟的专栏
 
 PE、PB和PS知识和运用汇总 https://xueqiu.com/1950009919/173846179
 

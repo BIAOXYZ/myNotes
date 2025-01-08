@@ -17,7 +17,7 @@ Invesco QQQ Trust (QQQ) https://cn.investing.com/etfs/powershares-qqqq
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# MacroMicro 财经M平方
+# MacroMicro 财经M平方 https://sc.macromicro.me/
 
 MacroMicroGPT for Econ Knowledge https://sc.macromicro.me/mm-gpt
 
