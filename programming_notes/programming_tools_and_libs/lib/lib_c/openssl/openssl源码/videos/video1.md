@@ -213,6 +213,7 @@ hello, world
 ```console
 分析openssl为什么封装BIO的ctrl函数，从整体上查看file和buffer类型的ctrl函数。
 ```
+- > `00:25`: "首先为什么会封装 control 这个函数？比如 file_ctrl 这个函数。因为 method 这个结构体，它里边的函数数量是有限的，每一种类型的 BIO 都有一些自己独特的函数，是其他类型的 BIO 不存在的。为了解决这个问题，BIO 就封装了一个 control 函数。"
 - 涉及文件：
   * `crypto/bio/bss_file.c`:
     + `static long file_ctrl(BIO *b, int cmd, long num, void *ptr)`
@@ -236,6 +237,13 @@ hello, world
       int BIO_append_filename(BIO *b, char *name);
       int BIO_rw_filename(BIO *b, char *name);
       ```
+      >> //notes：根据这个文档自己找到的代码：
+      - `include/openssl/bio.h.in`
+        ```c
+        /* BIO_s_file() */
+        # define BIO_set_fp(b,fp,c)      BIO_ctrl(b,BIO_C_SET_FILE_PTR,c,(char *)(fp))
+        # define BIO_get_fp(b,fpp)       BIO_ctrl(b,BIO_C_GET_FILE_PTR,0,(char *)(fpp))
+        ```
 
 第13集 分析openssl的buffer过滤类型的BIO如何执行constrl函数的。 https://www.bilibili.com/video/BV1qA4m137Fh/
 ```console

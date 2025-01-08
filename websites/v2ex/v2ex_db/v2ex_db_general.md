@@ -1,4 +1,7 @@
 
+关于分库分表的一点疑惑 https://www.v2ex.com/t/1103304
+- > 我找到了一篇相当不错的文章解决了部分疑问: https://tech.meituan.com/2016/11/18/dianping-order-db-sharding.html
+
 有一个对数据库疑惑的问题，场景如下 https://www.v2ex.com/t/1098352
 
 有什么数据库扛断电能力最强吗? https://www.v2ex.com/t/1090399
