@@ -7,14 +7,18 @@ OpenSSL overviews https://docs.openssl.org/master/man7/
 OpenSSL libraries https://docs.openssl.org/master/man3/
 - > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 笔记
+
+## ossl-guide-libraries-introduction
 
 ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/
 - > **INTRODUCTION**
   * > OpenSSL supplies two libraries that can be used by applications known as `libcrypto` and `libssl`. OpenSSL 提供了两个可供应用程序使用的库：`libcrypto` 和 `libssl`。
 - > **PROVIDERS**
   * > If you don't load a provider explicitly (either in program code or via config) then the OpenSSL built-in "default" provider will be automatically loaded. 如果您没有显式加载提供程序（无论是在程序代码中还是通过配置），那么 OpenSSL 内置的“默认”提供程序将自动加载。
-  * > Loading and unloading providers is quite an expensive operation. It is normally done once, early on in the application lifecycle and those providers are kept loaded for the duration of the application execution. 加载和卸载提供程序是一项相当昂贵的操作。它通常在应用程序生命周期的早期完成一次，并且这些提供程序在应用程序执行期间保持加载状态。
+  * > Loading and unloading providers is quite an expensive operation. It is normally done once, early on in the application lifecycle and those providers are kept loaded for the duration of the application execution. ***加载和卸载提供程序是一项相当昂贵的操作。它通常在应用程序生命周期的早期完成一次，并且这些提供程序在应用程序执行期间保持加载状态***。
 - > **LIBRARY CONTEXTS**
   * > Many OpenSSL API functions make use of a `library context`. A library context can be thought of as a "scope" within which configuration options take effect. When a provider is loaded, it is only loaded within the scope of a given library context. In this way it is possible for different components of a complex application to each use a different library context and have different providers loaded with different configuration settings. 许多 OpenSSL API 函数都使用`库上下文`。库上下文可以被认为是配置选项生效的“范围”。当加载提供程序时，它仅在给定库上下文的范围内加载。通过这种方式，复杂应用程序的不同组件可以各自使用不同的库上下文，并让不同的提供程序加载不同的配置设置。
   * > If an application does not explicitly create a library context then the "default" library context will be used. 如果应用程序没有显式创建库上下文，则将使用“默认”库上下文。
@@ -37,6 +41,20 @@ ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guid
   * > OpenSSL supplies a set of error handling functions to query the error stack. See ERR_get_error(3) for information about the functions available for querying error data. Also see `ERR_print_errors`(3) for information on some simple helper functions for printing error data. Finally look at `ERR_clear_error`(3) for how to clear old errors from the error stack. OpenSSL 提供了一组错误处理函数来查询错误堆栈。有关可用于查询错误数据的函数的信息，请参阅 `ERR_get_error`(3) 。另请参阅 `ERR_print_errors`(3) 以获取有关打印错误数据的一些简单辅助函数的信息。最后查看 `ERR_clear_error`(3) 以了解如何从错误堆栈中清除旧错误。
 - > **OPENSSL PROVIDERS**
   * > The algorithms available in each of these providers may vary due to build time configuration options. The `openssl-list`(1) command can be used to list the currently available algorithms. 每个提供程序中可用的算法可能因构建时配置选项而异。`openssl-list`(1) 命令可用于列出当前可用的算法。
+    >> //notes：实际上准确的命令是（此外，可以用 ***`openssl help list`*** 来查看具体用法和有哪些参数。）：
+      ```sh
+      $ openssl list -mac-algorithms
+      Provided MACs:
+        POLY1305 @ default
+        { 1.3.6.1.4.1.1722.12.2.2, BLAKE2SMAC } @ default
+        CMAC @ default
+        { 1.0.9797.3.4, GMAC } @ default
+        HMAC @ default
+        { 2.16.840.1.101.3.4.2.19, KMAC-128, KMAC128 } @ default
+        { 2.16.840.1.101.3.4.2.20, KMAC-256, KMAC256 } @ default
+        SIPHASH @ default
+        { 1.3.6.1.4.1.1722.12.2.1, BLAKE2BMAC } @ default
+      ```  
   * > **Default provider**
   * > **Base provider**
   * > **FIPS provider**
@@ -58,3 +76,14 @@ ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guid
 - > **DEMO APPLICATIONS**
   * > OpenSSL is distributed with a set of demo applications which provide some examples of how to use the various API functions. To look at them download the OpenSSL source code from the OpenSSL website ( https://www.openssl.org/source/ ). Extract the downloaded `.tar.gz` file for the version of OpenSSL that you are using and ***look at the various files in the `demos` sub-directory***. OpenSSL 随一组演示应用程序一起分发，这些应用程序提供了一些如何使用各种 API 函数的示例。要查看它们，请从 OpenSSL 网站 ( https://www.openssl.org/source/ ) 下载 OpenSSL 源代码。解压下载的 `.tar.gz` 文件以获取您正在使用的 OpenSSL 版本，***并查看 `demos` 子目录中的各个文件***。
   * > The `Makefiles` in the subdirectories give instructions on how to build and run the demo applications. 子目录中的 `Makefile` 提供了有关如何构建和运行演示应用程序的说明。
+
+## ossl-guide-libcrypto-introduction
+
+ossl-guide-libcrypto-introduction https://docs.openssl.org/master/man7/ossl-guide-libcrypto-introduction/
+- > **INTRODUCTION**
+  * > The OpenSSL cryptography library ( `libcrypto` ) enables access to a wide range of cryptographic algorithms used in various Internet standards. The services provided by this library are used by the OpenSSL implementations of `TLS` and `CMS`, and they have also been used to implement many other third party products and protocols. OpenSSL 加密库 ( `libcrypto` ) 允许访问各种 Internet 标准中使用的各种加密算法。该库提供的服务由 `TLS` 和 `CMS` 的 OpenSSL 实现使用，并且还用于实现许多其他第三方产品和协议。
+  * > The functionality includes symmetric encryption, public key cryptography, key agreement, certificate handling, cryptographic hash functions, cryptographic pseudo-random number generators, message authentication codes (MACs), key derivation functions (KDFs), and various utilities. 其功能包括对称加密、公钥加密、密钥协商、证书处理、加密散列函数、加密伪随机数生成器、消息认证码 (MAC)、密钥派生函数 (KDF) 和各种实用程序。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
