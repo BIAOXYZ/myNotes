@@ -145,9 +145,17 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 > Saladict https://github.com/crimx/ext-saladict/wiki
 >> :warning:（重要）初次使用注意事项！！！ https://github.com/crimx/ext-saladict/wiki/Instructions
 
+- 身份验证器 https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai
+  >> //notes：垃圾 github 2FA！本来并不需要这个东西，硬生生变成了刚需！
+
 - Webtime Tracker https://chrome.google.com/webstore/detail/webtime-tracker/ppaojnbmmaigjmlpjaldnkgnklhicppk 【对时间统计兴趣一般，其实主要是发现完全可以把它的时间统计结果里的网站链接当个简易的常用链接书签】
 
 - Checker Plus for Gmail™ https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj 【除了邮件提醒外可以直接标记已读，这点很方便。】
+
+- 捕捉网页截图 - FireShot的 https://chromewebstore.google.com/detail/%E6%8D%95%E6%8D%89%E7%BD%91%E9%A1%B5%E6%88%AA%E5%9B%BE-fireshot%E7%9A%84/mcbpblocgmgfnpjjppndjkmgjaogfceg
+
+- Monica: ChatGPT AI助手 | GPT-4o, Claude 3.5, Gemini 1.5, o1 及更多模型 https://chromewebstore.google.com/detail/monica-chatgpt-ai%E5%8A%A9%E6%89%8B-gpt-4/ofpnmcalabcbjgholdjcjblkibolbppb
+- Sider: ChatGPT 侧边栏 + GPT-4o, Claude 3.5, Gemini 1.5 & AI工具 https://chromewebstore.google.com/detail/sider-chatgpt-%E4%BE%A7%E8%BE%B9%E6%A0%8F-+-gpt-4/difoiogjjojoaoomphldepapgpbgkhkb
 
 这个插件真是太好用了：沉浸式翻译 https://www.v2ex.com/t/941217
 - 个人补充链接：
@@ -190,11 +198,13 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 - Open in Colab https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo
 - FeHelper(前端助手) https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad || https://www.baidufe.com/
 - Bookmark Sidebar https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh
-- 身份验证器 https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai
 
 ## 考察中
 
 Pinbox - 网络收藏夹 https://chrome.google.com/webstore/detail/pinbox-%E7%BD%91%E7%BB%9C%E6%94%B6%E8%97%8F%E5%A4%B9/kmijeangnajdcaomdfjohhbmnbhnhjjd
+
+Language Reactor https://chromewebstore.google.com/detail/language-reactor/hoombieeljmmljlkjmnheibnpciblicm
+>> //notes：主要觉得它的视频双语翻译还不如 Sider。
 
 ## github专用
 

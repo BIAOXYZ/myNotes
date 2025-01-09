@@ -1,12 +1,12 @@
 
 # openssl官方
 
-ossl-guide-introduction https://docs.openssl.org/master/man7/ossl-guide-introduction/
+OpenSSL overviews https://docs.openssl.org/master/man7/
+- ossl-guide-introduction https://docs.openssl.org/master/man7/ossl-guide-introduction/
+- ossl-guide-libssl-introduction¶ https://docs.openssl.org/master/man7/ossl-guide-libssl-introduction/
 
 OpenSSL libraries https://docs.openssl.org/master/man3/
 - > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
-
-OpenSSL overviews https://docs.openssl.org/master/man7/
 
 # wiki
 
