@@ -249,6 +249,22 @@ hello, world
 ```console
 buffer过滤类型的BIO通过cmd执行维护的BIO链表。
 ```
+- > `02:25`: "这个就是 buffer 类型（过滤类型）的 BIO 的一个共性：每一个执行的命令都会运行它下级的 BIO 的 ctrl 函数。只要是在链表里的 BIO，ctrl 函数都会执行。"
+- 涉及文件：
+  * `crypto/bio/bf_buff.c`:
+    + `static long buffer_ctrl(BIO *b, int cmd, long num, void *ptr)`
+
+第14集 学习如何设定buffer BIO的维护内存的大小。 https://www.bilibili.com/video/BV1d4421F78f/
+```console
+通过调用buffer size函数设定buffer维护内存的大小。
+```
+- 涉及文件：
+  * `crypto/bio/bf_buff.c`:
+    + `static long buffer_ctrl(BIO *b, int cmd, long num, void *ptr)`
+  * `include/openssl/bio.h.in`
+    + `# define BIO_set_buffer_size(b,size)     BIO_ctrl(b,BIO_C_SET_BUFF_SIZE,size,NULL)`
+  * `include/openssl/bio.h`
+    + `# define BIO_set_buffer_size(b,size)     BIO_ctrl(b,BIO_C_SET_BUFF_SIZE,size,NULL)`
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
