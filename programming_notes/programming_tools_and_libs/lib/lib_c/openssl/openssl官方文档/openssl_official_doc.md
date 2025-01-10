@@ -2,6 +2,7 @@
 OpenSSL overviews https://docs.openssl.org/master/man7/
 - ossl-guide-introduction https://docs.openssl.org/master/man7/ossl-guide-introduction/
 - ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/
+- ossl-guide-libcrypto-introduction https://docs.openssl.org/master/man7/ossl-guide-libcrypto-introduction/
 - ossl-guide-libssl-introduction https://docs.openssl.org/master/man7/ossl-guide-libssl-introduction/
 
 OpenSSL libraries https://docs.openssl.org/master/man3/
@@ -146,8 +147,107 @@ ossl-guide-libcrypto-introduction https://docs.openssl.org/master/man7/ossl-guid
     EVP_MD_free(md);
     ```
 - > **USING ALGORITHMS IN APPLICATIONS**
-  * > Cryptographic algorithms are made available to applications through use of the `"EVP"` APIs. Each of the various operations such as encryption, digesting, message authentication codes, etc., have a set of `EVP` function calls that can be invoked to use them. See the `evp(7)` page for further details. ***通过使用 `“EVP”`API，应用程序可以使用加密算法。加密、摘要、消息认证码等各种操作中的每一个都有一组可以调用的 `EVP` 函数调用来使用它们***。有关更多详细信息，请参阅 `evp(7)` 页面。
-  * > Most of these follow a common pattern. A "context" object is first created. For example for a digest operation you would use an EVP_MD_CTX, and for an encryption/decryption operation you would use an EVP_CIPHER_CTX. The operation is then initialised ready for use via an "init" function - optionally passing in a set of parameters (using the OSSL_PARAM(3) type) to configure how the operation should behave. Next data is fed into the operation in a series of "update" calls. The operation is finalised using a "final" call which will typically provide some kind of output. Finally the context is cleaned up and freed. 其中大多数都遵循共同的模式。首先创建“上下文”对象。例如，对于摘要操作，您将使用 **`EVP_MD_CTX`**，对于加密/解密操作，您将使用 **`EVP_CIPHER_CTX`**。然后，该操作通过“init”函数进行初始化，可供使用 - 可以选择传入一组参数（使用OSSL_PARAM(3)类型）来配置操作的行为方式。接下来的数据通过一系列“更新”调用输入到操作中。该操作是使用“最终”调用来完成的，该调用通常会提供某种输出。最后，上下文被清理并释放。
+  * > Cryptographic algorithms are made available to applications through use of the `"EVP"` APIs. Each of the various operations such as encryption, digesting, message authentication codes, etc., have a set of `EVP` function calls that can be invoked to use them. See the `evp(7)` page for further details. ***<ins>通过使用 `“EVP”`API，应用程序可以使用加密算法</ins>。加密、摘要、消息认证码等各种操作中的每一个都有一组可以调用的 `EVP` 函数调用来使用它们***。有关更多详细信息，请参阅 `evp(7)` 页面。
+  * > Most of these follow a common pattern. A "context" object is first created. For example for a digest operation you would use an **`EVP_MD_CTX`**, and for an encryption/decryption operation you would use an **`EVP_CIPHER_CTX`**. The operation is then initialised ready for use via an "init" function - optionally passing in a set of parameters (using the [`OSSL_PARAM(3)`]() type) to configure how the operation should behave. Next data is fed into the operation in a series of "update" calls. The operation is finalised using a "final" call which will typically provide some kind of output. Finally the context is cleaned up and freed. ***其中大多数都遵循共同的模式。首先创建“上下文”对象***。例如，对于摘要操作，您将使用 **`EVP_MD_CTX`**，对于加密/解密操作，您将使用 **`EVP_CIPHER_CTX`**。***然后，该操作通过“init”函数进行初始化，可供使用*** - 可以选择传入一组参数（使用 [`OSSL_PARAM(3)`]() 类型）来配置操作的行为方式。***接下来的数据通过一系列“更新”调用输入到操作中***。该操作是使用“最终”调用来完成的，该调用通常会提供某种输出。***最后，上下文被清理并释放***。
+  * > The following shows a complete example for doing this process for digesting data using `SHA256`. The process is similar for other operations such as encryption/decryption, signatures, message authentication codes, etc. Additional examples can be found in the OpenSSL demos (see "DEMO APPLICATIONS" in ossl-guide-libraries-introduction(7)). ***下面显示了使用 `SHA256` 执行此过程以摘要数据的完整示例。该过程与其他操作类似，例如加密/解密、签名、消息身份验证代码等***。其他示例可以在 OpenSSL 演示中找到（请参阅[ossl-guide-libraries-introduction(7)]() 中的“演示应用程序” ）。
+    ```c
+    #include <stdio.h>
+    #include <openssl/evp.h>
+    #include <openssl/bio.h>
+    #include <openssl/err.h>
+
+    int main(void)
+    {
+        EVP_MD_CTX *ctx = NULL;
+        EVP_MD *sha256 = NULL;
+        const unsigned char msg[] = {
+            0x00, 0x01, 0x02, 0x03
+        };
+        unsigned int len = 0;
+        unsigned char *outdigest = NULL;
+        int ret = 1;
+
+        /* Create a context for the digest operation */
+        ctx = EVP_MD_CTX_new();
+        if (ctx == NULL)
+            goto err;
+
+        /*
+         * Fetch the SHA256 algorithm implementation for doing the digest. We're
+         * using the "default" library context here (first NULL parameter), and
+         * we're not supplying any particular search criteria for our SHA256
+         * implementation (second NULL parameter). Any SHA256 implementation will
+         * do.
+         * In a larger application this fetch would just be done once, and could
+         * be used for multiple calls to other operations such as EVP_DigestInit_ex().
+         */
+        sha256 = EVP_MD_fetch(NULL, "SHA256", NULL);
+        if (sha256 == NULL)
+            goto err;
+
+       /* Initialise the digest operation */
+       if (!EVP_DigestInit_ex(ctx, sha256, NULL))
+           goto err;
+
+        /*
+         * Pass the message to be digested. This can be passed in over multiple
+         * EVP_DigestUpdate calls if necessary
+         */
+        if (!EVP_DigestUpdate(ctx, msg, sizeof(msg)))
+            goto err;
+
+        /* Allocate the output buffer */
+        outdigest = OPENSSL_malloc(EVP_MD_get_size(sha256));
+        if (outdigest == NULL)
+            goto err;
+
+        /* Now calculate the digest itself */
+        if (!EVP_DigestFinal_ex(ctx, outdigest, &len))
+            goto err;
+
+        /* Print out the digest result */
+        BIO_dump_fp(stdout, outdigest, len);
+
+        ret = 0;
+
+     err:
+        /* Clean up all the resources we allocated */
+        OPENSSL_free(outdigest);
+        EVP_MD_free(sha256);
+        EVP_MD_CTX_free(ctx);
+        if (ret != 0)
+           ERR_print_errors_fp(stderr);
+        return ret;
+    }
+    ```
+- > **ENCODING AND DECODING KEYS 密钥编码和解码**
+  * > Many algorithms require the use of a key. Keys can be generated dynamically using the `EVP APIs` (for example see `EVP_PKEY_Q_keygen(3)`). However it is often necessary to save or load keys (or their associated parameters) to or from some external format such as `PEM` or `DER` (see [openssl-glossary(7)]()). OpenSSL uses `encoders` and `decoders` to perform this task. ***许多算法需要使用密钥。可以使用 `EVP API` 动态生成密钥***（例如，请参阅 `EVP_PKEY_Q_keygen(3)` ）。然而，***通常需要在某些外部格式（例如 `PEM` 或 `DER`）之间保存或加载密钥（或其相关参数）***（请参阅 [openssl-glossary(7)]() ）。***OpenSSL 使用`编码器`和`解码器`来执行此任务***。
+  * > Encoders and decoders are just algorithm implementations in the same way as any other algorithm implementation in OpenSSL. They are implemented by providers. The OpenSSL encoders and decoders are available in the default provider. They are also duplicated in the base provider. ***编码器和解码器只是算法实现，就像 OpenSSL 中任何其他算法实现一样。它们由提供商实施***。OpenSSL 编码器和解码器在默认提供程序中可用。它们也在基础提供者中重复。
+  * > For information about encoders see `OSSL_ENCODER_CTX_new_for_pkey(3)`. For information about decoders see `OSSL_DECODER_CTX_new_for_pkey(3)`. 有关编码器的信息，请参阅 `OSSL_ENCODER_CTX_new_for_pkey(3)`。有关解码器的信息，请参阅`OSSL_DECODER_CTX_new_for_pkey(3)`。
+  * > As well as using encoders/decoders directly there are also some helper functions that can be used for certain well known and commonly used formats. For example see `PEM_read_PrivateKey(3)` and `PEM_write_PrivateKey(3)` for information about reading and writing key data from `PEM` encoded files. ***除了直接使用编码器/解码器之外，还有一些辅助函数可用于某些众所周知和常用的格式***。例如，有关从 `PEM` 编码文件读取和写入密钥数据的信息，请参阅 `PEM_read_PrivateKey(3)` 和 `PEM_write_PrivateKey(3)`。
+
+## ossl-guide-libssl-introduction
+
+ossl-guide-libssl-introduction https://docs.openssl.org/master/man7/ossl-guide-libssl-introduction/
+- > **INTRODUCTION 介绍**
+  * > The OpenSSL `libssl` library provides implementations of several secure network communications protocols. Specifically it provides `SSL/TLS` (SSLv3, TLSv1, TLSv1.1, TLSv1.2 and TLSv1.3), `DTLS` (DTLSv1 and DTLSv1.2) and `QUIC` (client side only). The library depends on `libcrypto` for its underlying cryptographic operations (see [ossl-guide-libcrypto-introduction(7)]()). ***OpenSSL `libssl` 库提供了多种安全网络通信协议的实现***。具体来说，它提供 `SSL/TLS`（SSLv3、TLSv1、TLSv1.1、TLSv1.2 和 TLSv1.3）、`DTLS`（DTLSv1 和 DTLSv1.2）和 `QUIC`（***仅限客户端***）。该库依赖于 `libcrypto` 进行底层加密操作（请参阅 [ossl-guide-libcrypto-introduction(7)]() ）。
+  * > The set of APIs supplied by `libssl` is common across all of these different network protocols, so a developer familiar with writing applications using one of these protocols should be able to transition to using another with relative ease. ***`libssl` 提供的 API 集在所有这些不同的网络协议中都是通用的，因此熟悉使用其中一种协议编写应用程序的开发人员应该能够相对轻松地过渡到使用另一种协议***。
+  * > An application written to use `libssl` will include the `<openssl/ssl.h>` header file and will typically use two main data structures, i.e. **`SSL`** and **`SSL_CTX`**. 编写使用 `libssl` 应用程序将包含 `<openssl/ssl.h>` 头文件，***并且通常会使用两个主要数据结构***，即 **`SSL`** 和 **`SSL_CTX`**。
+  * > An `SSL object` is used to ***represent a connection to a remote peer***. Once a connection with a remote peer has been established data can be exchanged with that peer. `SSL对象` 用于表示与远程对等点的连接。一旦与远程对等点建立了连接，就可以与该对等点交换数据。
+  * > When using `DTLS` any data that is exchanged uses "datagram" semantics, i.e. ***<ins>the packets of data can be delivered in any order, and they are not guaranteed to arrive at all</ins>***. In this case the `SSL object` used for the connection is also used for exchanging data with the peer. 当使用 `DTLS` 时，交换的任何数据都使用“数据报”语义，***<ins>即数据包可以以任何顺序传送，并且根本不保证它们到达</ins>***。在这种情况下，用于连接的 `SSL对象` 也用于与对等方交换数据。
+  * > Both TLS and QUIC support the concept of a "stream" of data. Data sent via a stream is guaranteed to be delivered in order without any data loss. A stream can be uni- or bi-directional. ***`TLS` 和 `QUIC` 都支持数据“流”的概念。<ins>通过流发送的数据保证按顺序传送，不会丢失任何数据</ins>。流可以是单向的或双向的***。
+  * > `SSL/TLS` only supports one stream of data per connection and it is always bi-directional. In this case the `SSL object` used for the connection also represents that stream. See [ossl-guide-tls-introduction(7)]() for more information. ***`SSL/TLS` 仅支持每个连接一个数据流，并且始终是双向的。在这种情况下，用于连接的 `SSL对象` 也代表该流***。请参阅 [ossl-guide-tls-introduction(7)]() 了解更多信息。
+  * > The `QUIC` protocol can support multiple streams per connection and they can be uni- or bi-directional. In this case an `SSL object` can represent the underlying connection, or a stream, or both. Where multiple streams are in use a separate `SSL object` is used for each one. See [ossl-guide-quic-introduction(7)]() for more information. ***`QUIC` 协议可以支持每个连接多个流，并且它们可以是单向或双向的***。在这种情况下，***`SSL对象`可以代表底层连接或流，或两者。当使用多个流时，每个流都会使用一个单独的 `SSL对象`***。请参阅 [ossl-guide-quic-introduction(7)]() 了解更多信息。
+  * > An **`SSL_CTX`** object is used to create the **`SSL`** object for the underlying connection. A single `SSL_CTX` object can be used to create many connections (each represented by a separate `SSL` object). Many API functions in `libssl` exist in two forms: one that takes an `SSL_CTX` and one that takes an `SSL`. Typically settings that you apply to the `SSL_CTX` will then be inherited by any `SSL` object that you create from it. Alternatively you can apply settings directly to the `SSL` object without affecting other `SSL` objects. Note that you should not normally make changes to an `SSL_CTX` after the first `SSL` object has been created from it. **`SSL_CTX`** 对象用于为底层连接创建 **`SSL`** 对象。***单个 `SSL_CTX` 对象可用于创建多个连接（每个连接由一个单独的 `SSL` 对象表示）。`libssl` 中的许多 API 函数以两种形式存在：一种采用 `SSL_CTX` ，另一种采用 `SSL`***。通常，***您应用于 `SSL_CTX` 的设置将被您从其创建的任何 `SSL` 对象继承。或者，您可以将设置直接应用于 `SSL` 对象，而不影响其他 `SSL` 对象***。请注意，***<ins>在创建第一个`SSL` 对象后，通常不应对其进行更改</ins>***。
+- > **DATA STRUCTURES 数据结构**
+  * > As well as **`SSL_CTX`** and **`SSL`** there are a number of other data structures that an application may need to use. They are summarised below. 除了 **`SSL_CTX`** 和 **`SSL`** 之外，应用程序还可能需要使用许多其他数据结构。它们总结如下。
+  * > **`SSL_METHOD`** （`SSL 方法`）
+    + > This structure is used to indicate the kind of connection you want to make, e.g. whether it is to represent the client or the server, and whether it is to use `SSL/TLS`, `DTLS` or `QUIC` (client only). It is passed as a parameter when creating the `SSL_CTX`. ***该结构用于指示您想要建立的连接类型，例如是代表客户端还是服务器，以及是否使用 `SSL/TLS`、`DTLS` 或 `QUIC`（仅限客户端）。创建 `SSL_CTX` 时它作为参数传递***。
+  * > **`SSL_SESSION`** （`SSL 会话`）
+    + > After establishing a connection with a peer the agreed cryptographic material can be reused to create future connections with the same peer more rapidly. The set of data used for such a future connection establishment attempt is collected together into an **`SSL_SESSION`** object. A single successful connection with a peer may generate zero or more such **`SSL_SESSION`** objects for use in future connection attempts. ***与对等点建立连接后，可以重复使用商定的加密材料，以便更快地与同一对等点创建未来的连接。用于此类未来连接建立尝试的数据集被收集到 `SSL_SESSION` 对象中***。与对等方的单个成功连接可能会生成零个或多个此类 `SSL_SESSION` 对象，以供将来的连接尝试使用。
+  * > **`SSL_CIPHER`** （`SSL 密码`）
+    + > During connection establishment the client and server agree upon cryptographic algorithms they are going to use for encryption and other uses. A single set of cryptographic algorithms that are to be used together is known as a `ciphersuite`. Such a set is represented by an **`SSL_CIPHER`** object. 在连接建立期间，客户端和服务器就它们将用于加密和其他用途的加密算法达成一致。一起使用的一组密码算法称为`密码套件`。这样的集合由 **`SSL_CIPHER`** 对象表示。
+    + > The set of available ciphersuites that can be used are configured in the **`SSL_CTX`** or **`SSL`**. 可以使用的可用密码套件集在 **`SSL_CTX`** 或 **`SSL`** 中配置。
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
