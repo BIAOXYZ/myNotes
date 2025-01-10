@@ -27,7 +27,7 @@ ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guid
   * > Similarly when the application exits, the default library context is automatically destroyed. No explicit de-initialisation steps need to be taken. 同样，当应用程序退出时，默认库上下文将自动销毁。不需要采取明确的反初始化步骤。
 - > **PROPERTY QUERY STRINGS**
   * > In some cases the available providers may mean that more than one implementation of any given algorithm might be available. For example the OpenSSL FIPS provider supplies alternative implementations of many of the same algorithms that are available in the OpenSSL default provider. 在某些情况下，可用的提供者可能意味着任何给定算法的不止一种实现可能是可用的。例如，OpenSSL FIPS 提供程序提供了 OpenSSL 默认提供程序中可用的许多相同算法的替代实现。
-  * > The process of selecting an algorithm implementation is known as "fetching". When OpenSSL fetches an algorithm to use it is possible to specify a "property query string" to guide the selection process. For example a property query string of `"provider=default"` could be used to force the selection to only consider algorithm implementations in the default provider. 选择算法实现的过程称为“获取”。当 OpenSSL 获取要使用的算法时，可以指定“属性查询字符串”来指导选择过程。例如，属性查询字符串 `“provider=default”` 可用于强制选择仅考虑默认提供程序中的算法实现。
+  * > The process of selecting an algorithm implementation is known as "fetching". When OpenSSL fetches an algorithm to use it is possible to specify a `"property query string"` to guide the selection process. For example a property query string of `"provider=default"` could be used to force the selection to only consider algorithm implementations in the default provider. 选择算法实现的过程称为“获取”。***当 OpenSSL 获取要使用的算法时，可以指定`“属性查询字符串”`来指导选择过程***。例如，属性查询字符串 `“provider=default”` 可用于强制选择仅考虑默认提供程序中的算法实现。
   * > Property query strings can be specified explicitly as an argument to a function. It is also possible to specify a default property query string for the whole library context using the `EVP_set_default_properties`(3) or `EVP_default_properties_enable_fips`(3) functions. Where both default properties and function specific properties are specified then they are combined. Function specific properties will override default properties where there is a conflict. 属性查询字符串可以显式指定为函数的参数。还可以使用 `EVP_set_default_properties`(3) 或 `EVP_default_properties_enable_fips`(3) 函数为整个库上下文指定默认属性查询字符串。如果指定了默认属性和特定于功能的属性，则将它们组合起来。如果存在冲突，函数特定属性将覆盖默认属性。
 - > **MULTI-THREADED APPLICATIONS**
   * > As long as OpenSSL has been built with support for threads (the default case on most platforms) then most OpenSSL functions are thread-safe in the sense that it is safe to call the same function from multiple threads at the same time. However most OpenSSL data structures are not thread-safe. For example the BIO_write(3) and BIO_read(3) functions are thread safe. However it would not be thread safe to call BIO_write() from one thread while calling BIO_read() in another where both functions are passed the same BIO object since both of them may attempt to make changes to the same BIO object. ***只要 OpenSSL 构建时支持线程（大多数平台上的默认情况），那么大多数 OpenSSL函数都是线程安全的，因为同时从多个线程调用同一函数是安全的。然而，大多数 OpenSSL数据结构都不是线程安全的***。例如，`BIO_write`(3) 和 `BIO_read`(3) 函数是线程安全的。然而，从一个线程调用 `BIO_write()` 而在另一个线程中调用 `BIO_read()` 则不是线程安全的，其中两个函数都传递同一个 BIO 对象，因为它们都可能尝试对同一个 BIO 对象进行更改。
@@ -83,6 +83,71 @@ ossl-guide-libcrypto-introduction https://docs.openssl.org/master/man7/ossl-guid
 - > **INTRODUCTION**
   * > The OpenSSL cryptography library ( `libcrypto` ) enables access to a wide range of cryptographic algorithms used in various Internet standards. The services provided by this library are used by the OpenSSL implementations of `TLS` and `CMS`, and they have also been used to implement many other third party products and protocols. OpenSSL 加密库 ( `libcrypto` ) 允许访问各种 Internet 标准中使用的各种加密算法。该库提供的服务由 `TLS` 和 `CMS` 的 OpenSSL 实现使用，并且还用于实现许多其他第三方产品和协议。
   * > The functionality includes symmetric encryption, public key cryptography, key agreement, certificate handling, cryptographic hash functions, cryptographic pseudo-random number generators, message authentication codes (MACs), key derivation functions (KDFs), and various utilities. 其功能包括对称加密、公钥加密、密钥协商、证书处理、加密散列函数、加密伪随机数生成器、消息认证码 (MAC)、密钥派生函数 (KDF) 和各种实用程序。
+  * > **Algorithms**
+    + > Cryptographic primitives such as the SHA256 digest, or AES encryption are referred to in OpenSSL as "algorithms". Each algorithm may have multiple implementations available for use. For example the RSA algorithm is available as a "default" implementation suitable for general use, and a "fips" implementation which has been validated to FIPS 140 standards for situations where that is important. It is also possible that a third party could add additional implementations such as in a hardware security module (HSM). ***SHA256 摘要或 AES 加密等加密原语在 OpenSSL 中称为“算法”***。每个算法可能有多种可供使用的实现。例如，RSA 算法可作为适合一般用途的“默认”实现，以及已根据 FIPS 140 标准进行验证的“fips”实现，适用于重要的情况。第三方也有可能添加额外的实现，例如在硬件安全模块 (HSM) 中。
+    + > ***Algorithms are implemented in `providers`***. See [`ossl-guide-libraries-introduction(7)`](https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/) for information about providers. ***算法在提供者中实现***。有关提供程序的信息，请参阅 [`ossl-guide-libraries-introduction(7)`](https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/)。
+  * > **Operations**
+    + > Different algorithms can be grouped together by their purpose. For example there are algorithms for encryption, and different algorithms for digesting data. ***These different groups are known as "operations" in OpenSSL***. Each operation has a different set of functions associated with it. For example to perform an encryption operation using AES (or any other encryption algorithm) you would use the encryption functions detailed on the [EVP_EncryptInit(3)]() page. Or to perform a digest operation using SHA256 then you would use the digesting functions on the [EVP_DigestInit(3)]() page. ***不同的算法可以按其目的分组在一起***。例如，有用于加密的算法，以及用于消化数据的不同算法。***这些不同的组在 OpenSSL 中称为“操作”***。每个操作都有一组不同的与其关联的功能。例如，要使用 AES（或任何其他加密算法）执行加密操作，您可以使用 [EVP_EncryptInit(3)]() 页上详细介绍的加密函数。或者要使用 SHA256 执行摘要操作，则可以使用 [EVP_DigestInit(3)]() 页面上的摘要函数。
+- > **ALGORITHM FETCHING**
+  * > In order to use an algorithm an implementation for it must first be "fetched". Fetching is the process of looking through the available implementations, applying selection criteria (via a property query string), and finally choosing the implementation that will be used. ***为了使用算法，必须首先“获取”算法的实现***。获取是查看可用实现、应用选择标准（通过属性查询字符串）并最终选择将使用的实现的过程。
+  * > Two types of fetching are supported by OpenSSL - "Explicit fetching" and "Implicit fetching". ***OpenSSL 支持两种类型的获取 - “显式获取”和“隐式获取”***。
+  * > **Explicit fetching**
+    + > Explicit fetching involves directly calling a specific API to fetch an algorithm implementation from a provider. This fetched object can then be passed to other APIs. These explicit fetching functions usually have the name `APINAME_fetch`, where `APINAME` is the name of the operation. For example `EVP_MD_fetch(3)` can be used to explicitly fetch a digest algorithm implementation. The user is responsible for freeing the object returned from the `APINAME_fetch` function using `APINAME_free` when it is no longer needed. 显式获取涉及直接调用特定 API 以从提供者获取算法实现。然后可以将此获取的对象传递给其他 API。***这些显式获取函数通常具有名称 `APINAME_fetch`，其中 `APINAME` 是操作的名称***。例如，***`EVP_MD_fetch(3)` 可用于显式获取摘要算法实现***。用户负责在不再需要时使用 `APINAME_free` 释放从 `APINAME_fetch` 函数返回的对象。
+    + > These fetching functions follow a fairly common pattern, where three arguments are passed: ***这些获取函数遵循相当常见的模式，<ins>其中传递三个参数</ins>***：
+      - > The `library context`
+      - > An identifier
+      - > A `property query string`
+    + > The algorithm implementation that is fetched can then be used with other diverse functions that use them. For example the `EVP_DigestInit_ex(3)` function takes as a parameter an `EVP_MD` object which may have been returned from an earlier call to `EVP_MD_fetch(3)`. 然后，获取的算法实现可以与使用它们的其他不同函数一起使用。例如，***`EVP_DigestInit_ex(3)` 函数将 `EVP_MD` 对象作为参数，该对象可能是从先前调用 `EVP_MD_fetch(3)` 返回的***。
+  * > **Implicit fetching**
+    + > OpenSSL has a number of functions that return an algorithm object with no associated implementation, such as `EVP_sha256(3)`, `EVP_aes_128_cbc(3)`, `EVP_get_cipherbyname(3)` or `EVP_get_digestbyname(3)`. These are present for compatibility with OpenSSL before version 3.0 where explicit fetching was not available. ***OpenSSL 有许多函数返回没有关联实现的算法对象***，例如 `EVP_sha256(3) `、 `EVP_aes_128_cbc(3)` 、 `EVP_get_cipherbyname(3)` 或 `EVP_get_digestbyname(3)` 。***这些是为了与 3.0 版本之前的 OpenSSL 兼容而存在，其中`显式获取`不可用***。
+    + > When they are used with functions like `EVP_DigestInit_ex(3)` or `EVP_CipherInit_ex(3)`, the actual implementation to be used is fetched implicitly using default search criteria (which uses `NULL` for the library context and property query string). 当它们与 `EVP_DigestInit_ex(3)` 或 `EVP_CipherInit_ex(3)` 等函数一起使用时，将使用默认搜索条件（对库上下文和属性查询字符串使用 `NULL`）隐式获取要使用的实际实现。
+    + > In some cases implicit fetching can also occur when a `NULL` algorithm parameter is supplied. In this case an algorithm implementation is implicitly fetched using default search criteria and an algorithm name that is consistent with the context in which it is being used. ***在某些情况下，当提供 `NULL` 算法参数时，也可能会发生隐式获取***。在这种情况下，使用默认搜索条件和与其使用上下文一致的算法名称隐式获取算法实现。
+    + > Functions that use an **`EVP_PKEY_CTX`** or an `EVP_PKEY(3)`, such as `EVP_DigestSignInit(3)`, all fetch the implementations implicitly. Usually the algorithm to fetch is determined based on the type of key that is being used and the function that has been called. 使用 **`EVP_PKEY_CTX`** 或 `EVP_PKEY(3)` 的函数（例如 `EVP_DigestSignInit(3)` ）都会`隐式获取`实现。通常，获取的算法是根据正在使用的密钥类型和已调用的函数来确定的。
+  * > **Performance**
+    + > If you perform the same operation many times with the same algorithm then it is recommended to use a single explicit fetch of the algorithm and then reuse the explicitly fetched algorithm each subsequent time. This will typically be faster than implicitly fetching the algorithm every time you use it. See an example of Explicit fetching in "USING ALGORITHMS IN APPLICATIONS". ***如果您使用相同的算法多次执行相同的操作，则建议使用该算法的单次显式获取，然后每次后续重复使用显式获取的算法。这通常比每次使用算法时隐式获取算法要快***。请参阅“在应用程序中使用算法”中的显式获取示例。
+    + > If an explicitly fetched object is not passed to an operation, then any implicit fetch will use an internally cached prefetched object, but it will still be slower than passing the explicitly fetched object directly. ***如果未将`显式获取`的对象传递给操作，则任何`隐式获取`都将使用内部缓存的预取对象，但它仍然比直接传递显式获取的对象慢***。
+    + > The following functions can be used for explicit fetching: 以下函数可用于显式获取：
+- > **FETCHING EXAMPLES**
+  * > The following section provides a series of examples of fetching algorithm implementations. 以下部分提供了一系列获取算法实现的示例。
+  * > Fetch any available implementation of `SHA2-256` in the default context. Note that some algorithms have aliases. So `"SHA256"` and `"SHA2-256"` are synonymous: 在默认上下文中获取 `SHA2-256` 的任何可用实现。***请注意，某些算法有别名。所以 `“SHA256”` 和 `“SHA2-256”` 是同义词***：
+    ```c
+    EVP_MD *md = EVP_MD_fetch(NULL, "SHA2-256", NULL);
+    ...
+    EVP_MD_free(md);
+    ```
+  * > Fetch any available implementation of `AES-128-CBC` in the default context: 在默认上下文中获取 `AES-128-CBC` 的任何可用实现：
+    ```c
+    EVP_CIPHER *cipher = EVP_CIPHER_fetch(NULL, "AES-128-CBC", NULL);
+    ...
+    EVP_CIPHER_free(cipher);
+    ```
+  * > Fetch an implementation of `SHA2-256` from the default provider in the default context: 从默认上下文中的默认提供程序获取 `SHA2-256` 的实现：
+    ```c
+    EVP_MD *md = EVP_MD_fetch(NULL, "SHA2-256", "provider=default");
+    ...
+    EVP_MD_free(md);
+    ```
+  * > Fetch an implementation of `SHA2-256` that is not from the default provider in the default context: 获取不是来自默认上下文中的默认提供程序的 `SHA2-256` 实现：
+    ```c
+    EVP_MD *md = EVP_MD_fetch(NULL, "SHA2-256", "provider!=default");
+    ...
+    EVP_MD_free(md);
+    ```
+  * > Fetch an implementation of `SHA2-256` that is preferably from the FIPS provider in the default context: 获取 `SHA2-256` 的实现，该实现最好来自默认上下文中的 FIPS 提供程序：
+    ```c
+    EVP_MD *md = EVP_MD_fetch(NULL, "SHA2-256", "provider=?fips");
+    ...
+    EVP_MD_free(md);
+    ```
+  * > Fetch an implementation of `SHA2-256` from the default provider in the specified library context: 从指定库上下文中的默认提供程序获取 `SHA2-256` 的实现：
+    ```c
+    EVP_MD *md = EVP_MD_fetch(libctx, "SHA2-256", "provider=default");
+    ...
+    EVP_MD_free(md);
+    ```
+- > **USING ALGORITHMS IN APPLICATIONS**
+  * > Cryptographic algorithms are made available to applications through use of the `"EVP"` APIs. Each of the various operations such as encryption, digesting, message authentication codes, etc., have a set of `EVP` function calls that can be invoked to use them. See the `evp(7)` page for further details. ***通过使用 `“EVP”`API，应用程序可以使用加密算法。加密、摘要、消息认证码等各种操作中的每一个都有一组可以调用的 `EVP` 函数调用来使用它们***。有关更多详细信息，请参阅 `evp(7)` 页面。
+  * > Most of these follow a common pattern. A "context" object is first created. For example for a digest operation you would use an EVP_MD_CTX, and for an encryption/decryption operation you would use an EVP_CIPHER_CTX. The operation is then initialised ready for use via an "init" function - optionally passing in a set of parameters (using the OSSL_PARAM(3) type) to configure how the operation should behave. Next data is fed into the operation in a series of "update" calls. The operation is finalised using a "final" call which will typically provide some kind of output. Finally the context is cleaned up and freed. 其中大多数都遵循共同的模式。首先创建“上下文”对象。例如，对于摘要操作，您将使用 **`EVP_MD_CTX`**，对于加密/解密操作，您将使用 **`EVP_CIPHER_CTX`**。然后，该操作通过“init”函数进行初始化，可供使用 - 可以选择传入一组参数（使用OSSL_PARAM(3)类型）来配置操作的行为方式。接下来的数据通过一系列“更新”调用输入到操作中。该操作是使用“最终”调用来完成的，该调用通常会提供某种输出。最后，上下文被清理并释放。
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 

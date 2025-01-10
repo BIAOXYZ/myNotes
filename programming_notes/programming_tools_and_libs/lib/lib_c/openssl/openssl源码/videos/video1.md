@@ -170,16 +170,16 @@ hello, world
 第八集 分析openssl的buffer和file类型BIO的write函数的特别之处，为以后学习SSL/TLS通信打下基础。 https://www.bilibili.com/video/BV1SA4m1G7JA/
 - 涉及文件：
   * `crypto/bio/bf_buff.c`:
-    + `static int buffer_write(BIO *b, const char *in, int inl)`
+    + **`static int buffer_write(BIO *b, const char *in, int inl)`**
     + 查找某个定义在哪个头文件：
       ```sh
       root@83b34a21e2fc:/openssldir/openssl# find . -name "*.h" | xargs grep BIO_F_BUFFER_CTX
       ./crypto/bio/bio_local.h:} BIO_F_BUFFER_CTX;
       ```
   * `crypto/bio/bss_file.c`:
-    + `static int file_write(BIO *b, const char *in, int inl)`
+    + **`static int file_write(BIO *b, const char *in, int inl)`**
   * `crypto/bio/bio_local.h`:
-    + `typedef struct bio_f_buffer_ctx_struct {。。。} BIO_F_BUFFER_CTX;`
+    + **`typedef struct bio_f_buffer_ctx_struct {。。。} BIO_F_BUFFER_CTX;`**
       ```c
        typedef struct bio_f_buffer_ctx_struct {
            /*-
@@ -206,6 +206,10 @@ hello, world
       ```
 
 第九集 通过openssl的buffer类型的BIO，学习内存的惯用管理方法。 https://www.bilibili.com/video/BV1oy421h7t5/
+>> 【[ :star: ][`*`]】 //notes：这一集以及后面的第10、11集，都是讲 **`buffer_write()`** 函数的。讲得一般（最主要讲得也不全，没有涵盖该函数的所有内容），自己看下 **`static int buffer_write(BIO *b, const char *in, int inl)`** 源码就好。
+- 涉及文件：
+  * `crypto/bio/bf_buff.c`:
+    + `static int buffer_write(BIO *b, const char *in, int inl)`
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -213,12 +217,12 @@ hello, world
 ```console
 分析openssl为什么封装BIO的ctrl函数，从整体上查看file和buffer类型的ctrl函数。
 ```
-- > `00:25`: "首先为什么会封装 control 这个函数？比如 file_ctrl 这个函数。因为 method 这个结构体，它里边的函数数量是有限的，每一种类型的 BIO 都有一些自己独特的函数，是其他类型的 BIO 不存在的。为了解决这个问题，BIO 就封装了一个 control 函数。"
+- > `00:25`: "首先为什么会封装 control 这个函数？比如 `file_ctrl()` 这个函数。因为 method 这个结构体，它里边的函数数量是有限的，每一种类型的 BIO 都有一些自己独特的函数，是其他类型的 BIO 不存在的。为了解决这个问题，BIO 就封装了一个 control 函数。"
 - 涉及文件：
   * `crypto/bio/bss_file.c`:
-    + `static long file_ctrl(BIO *b, int cmd, long num, void *ptr)`
+    + **`static long file_ctrl(BIO *b, int cmd, long num, void *ptr)`**
   * `crypto/bio/bf_buff.c`:
-    + `static long buffer_ctrl(BIO *b, int cmd, long num, void *ptr)`
+    + **`static long buffer_ctrl(BIO *b, int cmd, long num, void *ptr)`**
 - 涉及文档：  
   * BIO_s_file https://docs.openssl.org/master/man3/BIO_s_file/
     + > **SYNOPSIS**
@@ -261,10 +265,20 @@ buffer过滤类型的BIO通过cmd执行维护的BIO链表。
 - 涉及文件：
   * `crypto/bio/bf_buff.c`:
     + `static long buffer_ctrl(BIO *b, int cmd, long num, void *ptr)`
+      - `case BIO_C_SET_BUFF_SIZE:`
+        >> //notes：也就只讲了 `buffer_ctrl()` 函数里这一个分支的实现，并且也不全......回头把 `buffer_ctrl()` 和 `file_ctrl()` 的源码都细看一下。
   * `include/openssl/bio.h.in`
     + `# define BIO_set_buffer_size(b,size)     BIO_ctrl(b,BIO_C_SET_BUFF_SIZE,size,NULL)`
   * `include/openssl/bio.h`
     + `# define BIO_set_buffer_size(b,size)     BIO_ctrl(b,BIO_C_SET_BUFF_SIZE,size,NULL)`
+
+第15集 分析openssl源码学习buffer read函数如何读取数据 https://www.bilibili.com/video/BV1LC411x7FC/
+```console
+分析openssl源码，学习buffer read函数如何从链表BIO中读取数据。
+```
+- 涉及文件：
+  * `crypto/bio/bf_buff.c`:
+    + **`static int buffer_read(BIO *b, char *out, int outl)`**
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
