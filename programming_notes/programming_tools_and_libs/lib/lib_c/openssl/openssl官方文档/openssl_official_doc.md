@@ -14,6 +14,8 @@ OpenSSL libraries https://docs.openssl.org/master/man3/
 
 # 笔记
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## ossl-guide-libraries-introduction
 
 ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/
@@ -79,6 +81,8 @@ ossl-guide-libraries-introduction https://docs.openssl.org/master/man7/ossl-guid
 - > **DEMO APPLICATIONS**
   * > OpenSSL is distributed with a set of demo applications which provide some examples of how to use the various API functions. To look at them download the OpenSSL source code from the OpenSSL website ( https://www.openssl.org/source/ ). Extract the downloaded `.tar.gz` file for the version of OpenSSL that you are using and ***look at the various files in the `demos` sub-directory***. OpenSSL 随一组演示应用程序一起分发，这些应用程序提供了一些如何使用各种 API 函数的示例。要查看它们，请从 OpenSSL 网站 ( https://www.openssl.org/source/ ) 下载 OpenSSL 源代码。解压下载的 `.tar.gz` 文件以获取您正在使用的 OpenSSL 版本，***并查看 `demos` 子目录中的各个文件***。
   * > The `Makefiles` in the subdirectories give instructions on how to build and run the demo applications. 子目录中的 `Makefile` 提供了有关如何构建和运行演示应用程序的说明。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## ossl-guide-libcrypto-introduction
 
@@ -228,6 +232,8 @@ ossl-guide-libcrypto-introduction https://docs.openssl.org/master/man7/ossl-guid
   * > For information about encoders see `OSSL_ENCODER_CTX_new_for_pkey(3)`. For information about decoders see `OSSL_DECODER_CTX_new_for_pkey(3)`. 有关编码器的信息，请参阅 `OSSL_ENCODER_CTX_new_for_pkey(3)`。有关解码器的信息，请参阅`OSSL_DECODER_CTX_new_for_pkey(3)`。
   * > As well as using encoders/decoders directly there are also some helper functions that can be used for certain well known and commonly used formats. For example see `PEM_read_PrivateKey(3)` and `PEM_write_PrivateKey(3)` for information about reading and writing key data from `PEM` encoded files. ***除了直接使用编码器/解码器之外，还有一些辅助函数可用于某些众所周知和常用的格式***。例如，有关从 `PEM` 编码文件读取和写入密钥数据的信息，请参阅 `PEM_read_PrivateKey(3)` 和 `PEM_write_PrivateKey(3)`。
 
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
 ## ossl-guide-libssl-introduction
 
 ossl-guide-libssl-introduction https://docs.openssl.org/master/man7/ossl-guide-libssl-introduction/
@@ -250,6 +256,8 @@ ossl-guide-libssl-introduction https://docs.openssl.org/master/man7/ossl-guide-l
   * > **`SSL_CIPHER`** （`SSL 密码`）
     + > During connection establishment the client and server agree upon cryptographic algorithms they are going to use for encryption and other uses. A single set of cryptographic algorithms that are to be used together is known as a `ciphersuite`. Such a set is represented by an **`SSL_CIPHER`** object. 在连接建立期间，客户端和服务器就它们将用于加密和其他用途的加密算法达成一致。一起使用的一组密码算法称为`密码套件`。这样的集合由 **`SSL_CIPHER`** 对象表示。
     + > The set of available `ciphersuites` that can be used are configured in the **`SSL_CTX`** or **`SSL`**. 可以使用的可用`密码套件集`在 **`SSL_CTX`** 或 **`SSL`** 中配置。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## ossl-guide-tls-introduction
 
@@ -291,7 +299,7 @@ ossl-guide-tls-introduction https://docs.openssl.org/master/man7/ossl-guide-tls-
   * > You are expecting to see a list of files, typically with the suffix ".pem" or ".0". If they exist then you already have a suitable trusted certificate store. 您期望看到文件列表，**通常带有后缀 `“.pem”` 或 `“.0”`**。如果它们存在，那么您已经拥有合适的受信任证书存储。
   * > If you are running your version of OpenSSL on Windows then OpenSSL (from version 3.2 onwards) will use the default Windows set of trusted CAs. 如果您在 Windows 上运行 OpenSSL 版本，则 OpenSSL（从版本 `3.2` 开始）将使用默认的 Windows 受信任 CA 集。
   * > If you have built your version of OpenSSL from source, or obtained it from some other location and it does not have a set of trusted CA certificates then you will have to obtain them yourself. One such source is the Curl project. See the page https://curl.se/docs/caextract.html where you can download trusted certificates in a single file. Rename the file to "cert.pem" and store it directly in OPENSSLDIR. For example if OPENSSLDIR is "/usr/local/ssl", then save it as "/usr/local/ssl/cert.pem". ***如果您从源代码构建了 OpenSSL 版本，或者从其他位置获取了它，并且它没有一组受信任的 CA 证书，那么您必须自己获取它们***。Curl 项目就是这样的来源之一。请参阅页面 https://curl.se/docs/caextract.html ，您可以在其中下载单个文件中的受信任证书。将文件重命名为 `“cert.pem”` 并将其直接存储在 **`OPENSSLDIR`** 中。例如，如果 **`OPENSSLDIR`** 是 `“/usr/local/ssl”`，则将其保存为 `“/usr/local/ssl/cert.pem”`。
-  * > You can also use environment variables to override the default location that OpenSSL will look for its trusted certificate store. Set the SSL_CERT_PATH environment variable to give the directory where OpenSSL should looks for its certificates or the SSL_CERT_FILE environment variable to give the name of a single file containing all of the certificates. See openssl-env(7) for further details about OpenSSL environment variables. For example you could use this capability to have multiple versions of OpenSSL all installed on the same system using different values for OPENSSLDIR but all using the same trusted certificate store. 您还可以使用`环境变量`来覆盖 OpenSSL 将查找其受信任证书存储的默认位置。设置 **`SSL_CERT_PATH`** 环境变量以提供 OpenSSL 应在其中查找其证书的目录，或设置 **`SSL_CERT_FILE`** 环境变量以提供包含所有证书的单个文件的名称。有关 OpenSSL 环境变量的更多详细信息，请参阅 [openssl-env(7)]()。例如，***您可以使用此功能将 OpenSSL 的多个版本全部安装在同一系统上，使用不同的 `OPENSSSLDIR` 值，但全部使用相同的受信任证书存储***。
+  * > You can also use `environment variables` to override the default location that OpenSSL will look for its trusted certificate store. Set the **`SSL_CERT_PATH`** environment variable to give the directory where OpenSSL should looks for its certificates or the **`SSL_CERT_FILE`** environment variable to give the name of a single file containing all of the certificates. See [openssl-env(7)]() for further details about OpenSSL environment variables. For example you could use this capability to have multiple versions of OpenSSL all installed on the same system using different values for OPENSSLDIR but all using the same trusted certificate store. 您还可以使用`环境变量`来覆盖 OpenSSL 将查找其受信任证书存储的默认位置。设置 **`SSL_CERT_PATH`** 环境变量以提供 OpenSSL 应在其中查找其证书的目录，或设置 **`SSL_CERT_FILE`** 环境变量以提供包含所有证书的单个文件的名称。有关 OpenSSL 环境变量的更多详细信息，请参阅 [openssl-env(7)]()。例如，***您可以使用此功能将 OpenSSL 的多个版本全部安装在同一系统上，使用不同的 `OPENSSSLDIR` 值，但全部使用相同的受信任证书存储***。
   * > You can test that your trusted certificate store is setup correctly by using it via the OpenSSL command line. Use the following command to connect to a TLS server: 您可以通过 OpenSSL 命令行使用受信任的证书存储来测试其设置是否正确。使用以下命令连接到 TLS 服务器：
     ```sh
     openssl s_client www.openssl.org:443
@@ -309,25 +317,94 @@ ossl-guide-tls-introduction https://docs.openssl.org/master/man7/ossl-guide-tls-
   * > The "unable to get local issuer certificate" error means that OpenSSL has been unable to find a trusted CA for the chain of certificates provided by the server in its trusted certificate store. Check your trusted certificate store configuration again. “无法获取本地颁发者证书”错误意味着 OpenSSL 无法在其受信任的证书存储中为服务器提供的证书链找到受信任的 CA。***再次检查您的受信任证书存储配置***。
   * > Note that s_client is a testing tool and will still allow you to connect to the TLS server regardless of the verification error. Most applications should not do this and should abort the connection in the event of a verification error. 请注意，***`s_client` 是一个测试工具，无论验证错误如何，仍然允许您连接到 TLS 服务器。<ins>大多数应用程序不应该这样做，并且应该在出现验证错误时中止连接</ins>***。
 - > **IMPORTANT OBJECTS FOR AN OPENSSL TLS APPLICATION¶ OPENSSL TLS 应用程序的重要对象**
-  * > A TLS connection is represented by the **`SSL object`** in an OpenSSL based application. Once a connection with a remote peer has been established an endpoint can "write" data to the SSL object to send data to the peer, or "read" data from it to receive data from the server. TLS 连接由基于 OpenSSL 的应用程序中的 **`SSL对象`** 表示。***一旦与远程对等点建立连接，端点就可以将数据“写入” SSL对象 以将数据发送到对等点，或从中“读取”数据以从服务器接收数据***。
-  * > A new SSL object is created from an SSL_CTX object. Think of an SSL_CTX as a "factory" for creating SSL objects. You can create a single SSL_CTX object and then create multiple connections (i.e. SSL objects) from it. Typically you can set up common configuration options on the SSL_CTX so that all the SSL object created from it inherit the same configuration options. 从 **`SSL_CTX`** 对象创建一个新的 `SSL对象`。将 **`SSL_CTX`** 视为创建 `SSL对象` 的“工厂”。***您可以创建单个 `SSL_CTX` 对象，然后从中创建多个连接（即 `SSL对象`）***。通常，***您可以在 `SSL_CTX` 上设置通用配置选项，以便从它创建的所有 `SSL对象` 都继承相同的配置选项***。
+  * > A `TLS connection` is represented by the **`SSL object`** in an OpenSSL based application. Once a connection with a remote peer has been established an endpoint can "write" data to the SSL object to send data to the peer, or "read" data from it to receive data from the server. `TLS 连接`由基于 OpenSSL 的应用程序中的 **`SSL对象`** 表示。***一旦与远程对等点建立连接，端点就可以将数据“写入” SSL对象 以将数据发送到对等点，或从中“读取”数据以从服务器接收数据***。
+  * > A new `SSL object` is created from an **`SSL_CTX`** object. Think of an **`SSL_CTX`** as a "factory" for creating `SSL objects`. You can create a single `SSL_CTX` object and then create multiple connections (i.e. `SSL objects`) from it. Typically you can set up common configuration options on the `SSL_CTX` so that all the `SSL object` created from it inherit the same configuration options. 从 **`SSL_CTX`** 对象创建一个新的 `SSL对象`。将 **`SSL_CTX`** 视为创建 `SSL对象` 的“工厂”。***您可以创建单个 `SSL_CTX` 对象，然后从中创建多个连接（即 `SSL对象`）***。通常，***您可以在 `SSL_CTX` 上设置通用配置选项，以便从它创建的所有 `SSL对象` 都继承相同的配置选项***。
   * > Note that internally to OpenSSL various items that are shared between multiple SSL objects are cached in the SSL_CTX for performance reasons. Therefore it is considered best practice to create one SSL_CTX for use by multiple SSL objects instead of having one SSL_CTX for each SSL object that you create. 请注意，***出于性能原因，在 OpenSSL 内部，多个 `SSL对象` 之间共享的各种项目都缓存在 `SSL_CTX` 中。因此，<ins>最好的做法是创建一个 `SSL_CTX` 以供多个 `SSL对象` 使用，而不是为您创建的每个 `SSL对象` 创建一个 `SSL_CTX`</ins>***。
   * > Each SSL object is also associated with two BIO objects. A BIO object is used for sending or receiving data from the underlying transport layer. For example you might create a BIO to represent a TCP socket. The SSL object uses one BIO for reading data and one BIO for writing data. In most cases you would use the same BIO for each direction but there could be some circumstances where you want them to be different. ***每个 `SSL对象` 还与 `两个BIO对象` 关联***。`BIO对象`用于从底层传输层发送或接收数据。例如，您可以创建一个`BIO`来表示 TCP 套接字。***`SSL对象`使用1个BIO来读取数据，使用1个BIO来写入数据。<ins>在大多数情况下，您会为每个方向使用相同的BIO，但在某些情况下您可能希望它们不同</ins>***。
   * > It is up to the application programmer to create the BIO objects that are needed and supply them to the SSL object. See [ossl-guide-tls-client-block(7)]() and [ossl-guide-tls-server-block(7)]() for usage examples. ***由应用程序程序员创建所需的 `BIO对象` 并将它们提供给 `SSL对象`***。有关使用示例，请参阅 [ossl-guide-tls-client-block(7)]() 和 [ossl-guide-tls-server-block(7)]()。
-  * > Finally, an endpoint can establish a `"session"` with its peer. The session holds various TLS parameters about the connection between the client and the server. The session details can then be reused in a subsequent connection attempt to speed up the process of connecting. This is known as `"resumption"`. Sessions are represented in OpenSSL by the SSL_SESSION object. In TLSv1.2 there is always exactly one session per connection. In TLSv1.3 there can be any number per connection including none. 最后，***端点可以与其对等点建立`“会话”`。会话保存有关客户端和服务器之间连接的各种 TLS 参数。然后，可以在后续连接尝试中重用会话详细信息，以加快连接过程。这称为`“恢复”`***。会话在 OpenSSL 中由 **`SSL_SESSION`** 对象表示。***在 `TLSv1.2` 中，每个连接始终只有一个会话。在 `TLSv1.3` 中，每个连接可以有任意数量，包括没有***。
+  * > Finally, an endpoint can establish a `"session"` with its peer. The session holds various TLS parameters about the connection between the client and the server. The session details can then be reused in a subsequent connection attempt to speed up the process of connecting. This is known as `"resumption"`. Sessions are represented in OpenSSL by the SSL_SESSION object. In TLSv1.2 there is always exactly one session per connection. In TLSv1.3 there can be any number per connection including none. 最后，***端点可以与其对等点建立`“会话”`。会话保存有关客户端和服务器之间连接的各种 TLS 参数。然后，可以在后续连接尝试中重用会话详细信息，以加快连接过程。这称为`“恢复”`***。会话在 OpenSSL 中由 **`SSL_SESSION`** 对象表示。***<ins>在 `TLSv1.2` 中，每个连接始终只有一个会话。在 `TLSv1.3` 中，每个连接可以有任意数量，包括没有</ins>***。
 - > **PHASES OF A TLS CONNECTION¶ TLS 连接的阶段**
   * > A TLS connection starts with an initial "set up" phase. The endpoint creates the `SSL_CTX` (if one has not already been created) and configures it. ***TLS 连接从初始“设置”阶段开始。端点创建 `SSL_CTX`（如果尚未创建）并对其进行配置***。
-  * > A client then creates an `SSL object` to represent the new TLS connection. Any connection specific configuration parameters are then applied and the underlying socket is created and associated with the SSL via `BIO objects`. ***然后，客户端创建一个`SSL对象`来表示新的 TLS 连接。然后应用任何连接特定的配置参数，并创建底层套接字并通过`BIO对象`与SSL关联***。
+  * > A client then creates an `SSL object` to represent the new `TLS connection`. Any connection specific configuration parameters are then applied and the underlying socket is created and associated with the SSL via `BIO objects`. ***然后，客户端创建一个`SSL对象`来表示新的 `TLS 连接`。然后应用任何连接特定的配置参数，并创建底层套接字并通过`BIO对象`与SSL关联***。
   * > A server will create a socket for listening for incoming connection attempts from clients. Once a connection attempt is made the server will create an `SSL object` in the same way as for a client and associate it with a `BIO` for the newly created incoming socket. ***服务器将创建一个套接字来侦听来自客户端的传入连接尝试。一旦尝试进行连接，服务器将以与客户端相同的方式创建`SSL对象`，并将其与新创建的传入套接字的`BIO`关联起来***。
-  * > After set up is complete the `TLS "handshake" phase` begins. ***A TLS handshake consists of the client and server exchanging a series of TLS handshake messages to establish the connection***. The client starts by sending a `"ClientHello"` handshake message and the server responds with a `"ServerHello"`. The handshake is complete once an endpoint has sent its last message (known as the `"Finished"` message) and received a Finished message from its peer. ***Note that this might occur at slightly different times for each peer***. For example ***in `TLSv1.3` the server always sends its `Finished message` before the client***. The client later responds with its Finished message. ***<ins>At this point the client has completed the handshake because it has both sent and received a `Finished message`</ins>. The server has sent its Finished message but the Finished message from the client may still be in-flight, <ins>so the server is still in the handshake phase</ins>***. It is even possible that the server will fail to complete the handshake (if it considers there is some problem with the messages sent from the client), even though the client may have already progressed to sending application data. In `TLSv1.2` this can happen the other way around, i.e. the server finishes first and the client finishes second. 设置完成后，TLS“握手”阶段开始。***TLS 握手包括客户端和服务器交换一系列 TLS 握手消息以建立连接***。客户端首先发送`“ClientHello”`握手消息，服务器以`“ServerHello”`响应。一旦端点发送了最后一条消息（称为`“完成”`消息）并从其对等方收到完成消息，握手即完成。***请注意，每个对等点发生这种情况的时间可能略有不同***。例如，***在 `TLSv1.3` 中，服务器始终在客户端之前发送其 `Finished 消息`***。客户端随后用 Finished 消息进行响应。***<ins>此时客户端已完成握手，因为它已发送并接收了 `Finished 消息`</ins>。服务器已发送其 Finished 消息，但来自客户端的 Finished 消息可能仍在传输中，<ins>因此服务器仍处于握手阶段</ins>***。即使客户端可能已经开始发送应用程序数据，服务器甚至可能无法完成握手（如果它认为客户端发送的消息存在一些问题）。***在 `TLSv1.2` 中，这可能会以相反的方式发生，即服务器首先完成，客户端第二完成***。
+  * > After set up is complete the `TLS "handshake" phase` begins. ***A TLS handshake consists of the client and server exchanging a series of TLS handshake messages to establish the connection***. The client starts by sending a `"ClientHello"` handshake message and the server responds with a `"ServerHello"`. The handshake is complete once an endpoint has sent its last message (known as the `"Finished"` message) and received a Finished message from its peer. ***Note that this might occur at slightly different times for each peer***. For example ***in `TLSv1.3` the server always sends its `Finished message` before the client***. The client later responds with its Finished message. ***<ins>At this point the client has completed the handshake because it has both sent and received a `Finished message`</ins>. The server has sent its Finished message but the Finished message from the client may still be in-flight, <ins>so the server is still in the handshake phase</ins>***. It is even possible that the server will fail to complete the handshake (if it considers there is some problem with the messages sent from the client), even though the client may have already progressed to sending application data. In `TLSv1.2` this can happen the other way around, i.e. the server finishes first and the client finishes second. 设置完成后，`TLS“握手”阶段`开始。***TLS 握手包括客户端和服务器交换一系列 TLS 握手消息以建立连接***。客户端首先发送`“ClientHello”`握手消息，服务器以`“ServerHello”`响应。一旦端点发送了最后一条消息（称为`“完成”`消息）并从其对等方收到完成消息，握手即完成。***请注意，每个对等点发生这种情况的时间可能略有不同***。例如，***在 `TLSv1.3` 中，服务器始终在客户端之前发送其 `Finished 消息`***。客户端随后用 Finished 消息进行响应。***<ins>此时客户端已完成握手，因为它已发送并接收了 `Finished 消息`</ins>。服务器已发送其 Finished 消息，但来自客户端的 Finished 消息可能仍在传输中，<ins>因此服务器仍处于握手阶段</ins>***。即使客户端可能已经开始发送应用程序数据，服务器甚至可能无法完成握手（如果它认为客户端发送的消息存在一些问题）。***在 `TLSv1.2` 中，这可能会以相反的方式发生，即服务器首先完成，客户端第二完成***。
   * > Once the handshake is complete the application data transfer phase begins. Strictly speaking there are some situations where the client can start sending application data even earlier (using the `TLSv1.3 "early data"` capability) - but we're going to skip over that for this basic introduction. ***握手完成后，应用程序数据传输阶段开始。<ins>严格来说，在某些情况下，客户端甚至可以更早地开始发送应用程序数据</ins>（使用 `TLSv1.3“早期数据”`功能） - 但我们将在基本介绍中跳过这一点***。
-  * > During application data transfer the client and server can read and write data to the connection freely. The details of this are typically left to some higher level application protocol (for example HTTP). Not all information exchanged during this phase is application data. Some protocol level messages may still be exchanged - so it is not necessarily the case that, just because the underlying socket is "readable", that application data will be available to read. 在应用程序数据传输期间，客户端和服务器可以自由地向连接读取和写入数据。此细节通常留给某些更高级别的应用程序协议（例如 HTTP）。并非在此阶段交换的所有信息都是应用程序数据。某些协议级别的消息可能仍然会被交换 - 因此，不一定是因为底层套接字是“可读的”，应用程序数据就可以读取。
+  * > During application data transfer the client and server can read and write data to the connection freely. The details of this are typically left to some higher level application protocol (for example `HTTP`). Not all information exchanged during this phase is application data. Some protocol level messages may still be exchanged - so it is not necessarily the case that, just because the underlying socket is "readable", that application data will be available to read. 在应用程序数据传输期间，客户端和服务器可以自由地向连接读取和写入数据。此细节通常留给某些更高级别的应用程序协议（例如 `HTTP`）。***并非在此阶段交换的所有信息都是应用程序数据***。某些协议级别的消息可能仍然会被交换 - 因此，***不一定是因为底层套接字是“可读的”，应用程序数据就可以读取***。
   * > When the connection is no longer required then it should be shutdown. A shutdown may be initiated by either the client or the server via a message known as a `"close_notify"` alert. The client or server that receives a `close_notify` may respond with `one` and then the connection is fully closed and application data can no longer be sent or received. ***当不再需要连接时，应将其关闭。关闭可以由客户端或服务器通过称为 `“close_notify”` 警报的消息发起。收到 `close_notify` 的客户端或服务器可能会响应 `1`，然后连接完全关闭，并且无法再发送或接收应用程序数据***。
-  * > Once shutdown is complete a TLS application must clean up by freeing the SSL object. ***关闭完成后，TLS 应用程序必须通过释放 SSL 对象进行清理***。
+  * > Once shutdown is complete a TLS application must clean up by freeing the `SSL object`. ***关闭完成后，TLS 应用程序必须通过释放 `SSL 对象`进行清理***。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## ossl-guide-tls-client-block
 
 ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-block/
+- > **SIMPLE BLOCKING TLS CLIENT EXAMPLE¶ 简单的阻止 TLS 客户端示例**
+  * > This page will present various source code samples demonstrating how to write a simple `TLS client` application which connects to a server, sends an `HTTP/1.0 request` to it, and reads back the response. 本页将提供各种源代码示例，***演示如何编写一个简单的 `TLS 客户端`应用程序，该应用程序连接到服务器、向其发送 `HTTP/1.0 请求`并读回响应***。
+  * > We use a `blocking socket` for the purposes of this example. This means that attempting to read data from a socket that has no data available on it to read will block (<ins>and the function will not return</ins>), until data becomes available. For example, this can happen if we have sent our request, but we are still waiting for the server's response. Similarly any attempts to write to a socket that is not able to write at the moment will block until writing is possible. 出于本示例的目的，我们使用`阻塞套接字`。***<ins>这意味着尝试从没有可用数据读取的套接字读取数据将被阻塞（并且该函数将不会返回），直到数据可用为止</ins>。例如，如果我们已经发送了请求，但仍在等待服务器的响应，则可能会发生这种情况。<ins>同样，任何对当前无法写入的套接字的写入尝试都将被阻塞，直到可以写入为止</ins>***。
+  * > This blocking behaviour simplifies the implementation of a client because you do not have to worry about what happens if data is not yet available. The application will simply wait until it is available. ***这种阻塞行为简化了客户端的实现，因为您不必担心数据尚不可用时会发生什么***。该应用程序将简单地等待，直到它可用。
+  * > The complete source code for this example blocking TLS client is available in the **`demos/guide`** directory of the OpenSSL source distribution in the file `tls-client-block.c`. It is also available online at https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c . 此示例阻塞 TLS 客户端的完整源代码可在 OpenSSL 源代码分发的 **`demos/guide`** 目录中的 `tls-client-block.c` 文件中找到。也可在线获取 https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c 。
+  * > We assume that you already have OpenSSL installed on your system; that you already have some fundamental understanding of OpenSSL concepts and TLS (see [ossl-guide-libraries-introduction(7)]() and [ossl-guide-tls-introduction(7)]()); and that you know how to write and build C code and link it against the `libcrypto` and `libssl` libraries that are provided by OpenSSL. It also assumes that you have a basic understanding of `TCP/IP` and `sockets`. 我们假设您的系统上已经安装了 OpenSSL；您已经对 OpenSSL 概念和 TLS 有一些基本的了解（请参阅 [ossl-guide-libraries-introduction(7)]() 和 [ossl-guide-tls-introduction(7)]() ）；并且您知道如何编写和构建 C 代码并将其链接到 OpenSSL 提供的 `libcrypto` 和 `libssl` 库。它还假设您对 `TCP/IP` 和`套接字`有基本的了解。
+  * > **Creating the `SSL_CTX` and `SSL objects`¶ 创建 `SSL_CTX` 和 `SSL 对象`**
+    + > The first step is to create an `SSL_CTX` object for our client. We use the [`SSL_CTX_new`(3)]() function for this purpose. We could alternatively use SSL_CTX_new_ex(3) if we want to associate the SSL_CTX with a particular OSSL_LIB_CTX (see ossl-guide-libraries-introduction(7) to learn about OSSL_LIB_CTX). We pass as an argument the return value of the function TLS_client_method(3). You should use this method whenever you are writing a TLS client. This method will automatically use TLS version negotiation to select the highest version of the protocol that is mutually supported by both the client and the server. 第一步是为我们的客户端创建一个 **`SSL_CTX`** 对象。为此，我们使用 [`SSL_CTX_new`(3)]() 函数。***如果我们想将 `SSL_CTX` 与特定的 `OSSL_LIB_CTX` 关联起来，我们也可以使用 [`SSL_CTX_new_ex`(3)]()*** （请参阅 [ossl-guide-libraries-introduction(7)]() 了解 **`OSSL_LIB_CTX`** ）。***我们将函数 [`TLS_client_method`(3)]() 的返回值作为参数传递。每当您编写 `TLS 客户端`时都应该使用此方法。此方法将自动使用 TLS 版本协商来选择客户端和服务器相互支持的协议的最高版本***。
+      ```c
+      /*
+       * Create an SSL_CTX which we can use to create SSL objects from. We
+       * want an SSL_CTX for creating clients so we use TLS_client_method()
+       * here.
+       */
+      ctx = SSL_CTX_new(TLS_client_method());
+      if (ctx == NULL) {
+          printf("Failed to create the SSL_CTX\n");
+          goto end;
+      }
+      ```
+    + > Since we are writing a client we must ensure that we verify the server's certificate. We do this by calling the SSL_CTX_set_verify(3) function and pass the SSL_VERIFY_PEER value to it. The final argument to this function is a callback that you can optionally supply to override the default handling for certificate verification. Most applications do not need to do this so this can safely be set to NULL to get the default handling. ***由于我们正在编写客户端，因此我们必须确保验证服务器的证书***。我们通过调用 [`SSL_CTX_set_verify`(3)]() 函数并将 **`SSL_VERIFY_PEER`** 值传递给它来完成此操作。***此函数的最后一个参数是一个回调，您可以选择提供该回调来覆盖证书验证的默认处理。大多数应用程序不需要这样做，因此可以安全地将其设置为 `NULL` 以获得默认处理***。
+      ```c
+      /*
+       * Configure the client to abort the handshake if certificate
+       * verification fails. Virtually all clients should do this unless you
+       * really know what you are doing.
+       */
+      SSL_CTX_set_verify(ctx, SSL_VERIFY_PEER, NULL);
+      ```
+    + > In order for certificate verification to be successful you must have configured where the trusted certificate store to be used is located (see ossl-guide-tls-introduction(7)). In most cases you just want to use the default store so we call SSL_CTX_set_default_verify_paths(3). ***为了使证书验证成功，您必须配置要使用的可信证书存储所在的位置***（请参阅 [ossl-guide-tls-introduction(7)]() ）。***在大多数情况下，您只想使用默认存储，因此我们调用 [`SSL_CTX_set_default_verify_paths`(3)]()***。
+      ```c
+      /* Use the default trusted certificate store */
+      if (!SSL_CTX_set_default_verify_paths(ctx)) {
+          printf("Failed to set the default trusted certificate store\n");
+          goto end;
+      }
+      ```
+    + > We would also like to restrict the TLS versions that we are willing to accept to TLSv1.2 or above. TLS protocol versions earlier than that are generally to be avoided where possible. We can do that using SSL_CTX_set_min_proto_version(3): ***我们还希望将愿意接受的 TLS 版本限制为 `TLSv1.2` 或更高版本。通常应尽可能避免使用早于该版本的 TLS 协议版本。我们可以使用 [`SSL_CTX_set_min_proto_version`(3)]() 来做到这一点***：
+      ```c
+      /*
+       * TLSv1.1 or earlier are deprecated by IETF and are generally to be
+       * avoided if possible. We require a minimum TLS version of TLSv1.2.
+       */
+      if (!SSL_CTX_set_min_proto_version(ctx, TLS1_2_VERSION)) {
+          printf("Failed to set the minimum TLS protocol version\n");
+          goto end;
+      }
+      ```
+    + > That is all the setup that we need to do for the SSL_CTX, so next we need to create an SSL object to represent the TLS connection. In a real application we might expect to be creating more than one TLS connection over time. In that case we would expect to reuse the SSL_CTX that we already created each time. There is no need to repeat those steps. In fact it is best not to since certain internal resources are cached in the SSL_CTX. You will get better performance by reusing an existing SSL_CTX instead of creating a new one each time. ***这就是我们需要对 `SSL_CTX` 进行的所有设置，<ins>因此接下来我们需要创建一个 `SSL对象` 来表示 `TLS 连接`</ins>***。在实际应用程序中，***我们可能希望随着时间的推移创建多个 `TLS 连接`。在这种情况下，<ins>我们希望重用每次已经创建的 `SSL_CTX`</ins>***。无需重复这些步骤。事实上，最好不要这样做，***因为某些内部资源缓存在 `SSL_CTX` 中。通过重用现有的 `SSL_CTX` 而不是每次创建一个新的 `SSL_CTX`，您将获得更好的性能***。
+    + > Creating the SSL object is a simple matter of calling the SSL_new(3) function and passing the SSL_CTX we created as an argument. ***创建`SSL对象`很简单，只需调用 [`SSL_new`(3)]() 函数并将我们创建的 `SSL_CTX` 作为参数传递即可***。
+      ```c
+      /* Create an SSL object to represent the TLS connection */
+      ssl = SSL_new(ctx);
+      if (ssl == NULL) {
+          printf("Failed to create the SSL object\n");
+          goto end;
+      }
+      ```
+  * > **Creating the `socket` and `BIO`¶ 创建`套接字`和 `BIO`**
+  * > **Setting the server's hostname¶ 设置服务器的主机名**
+  * > **Performing the handshake¶ 执行握手**
+  * > **Sending and receiving data¶ 发送和接收数据**
+  * > **Shutting down the connection¶ 关闭连接**
+  * > **Final clean up¶ 最后清理**
+- > **TROUBLESHOOTING¶ 故障排除**
+  * > **Failure to connect the underlying socket¶ 连接底层套接字失败**
+  * > **Verification failure of the server certificate¶ 服务器证书验证失败**
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 

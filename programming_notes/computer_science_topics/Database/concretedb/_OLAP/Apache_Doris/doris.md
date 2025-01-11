@@ -1,4 +1,8 @@
 
+# 新闻
+
+Apache Doris 创始人：何为“现代化”的数据仓库？ https://mp.weixin.qq.com/s/cMeyuOskrrRn5MPvDFcmDQ
+
 # 文章
 
 MPP 是什么？以 Doris 为例 https://www.ihnfsa.com/database/mpp-in-doris/
