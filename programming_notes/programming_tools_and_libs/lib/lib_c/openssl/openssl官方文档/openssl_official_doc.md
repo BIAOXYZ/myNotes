@@ -397,11 +397,142 @@ ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-
       }
       ```
   * > **Creating the `socket` and `BIO`¶ 创建`套接字`和 `BIO`**
+    + > Once the `socket` has been created and connected we need to associate it with a `BIO object`: ***创建并连接`套接字`后，我们需要将其与 `BIO 对象`关联***：
+      ```c
+      BIO *bio;
+
+      /* Create a BIO to wrap the socket */
+      bio = BIO_new(BIO_s_socket());
+      if (bio == NULL) {
+          BIO_closesocket(sock);
+          return NULL;
+      }
+
+      /*
+       * Associate the newly created BIO with the underlying socket. By
+       * passing BIO_CLOSE here the socket will be automatically closed when
+       * the BIO is freed. Alternatively you can use BIO_NOCLOSE, in which
+       * case you must close the socket explicitly when it is no longer
+       * needed.
+       */
+      BIO_set_fd(bio, sock, BIO_CLOSE);
+      ```
+    + > Finally we associate the SSL object we created earlier with the BIO using the SSL_set_bio(3) function. Note that this passes ownership of the BIO object to the SSL object. Once ownership is passed the SSL object is responsible for its management and will free it automatically when the SSL is freed. So, once SSL_set_bio(3) has been been called, you should not call BIO_free(3) on the BIO. 最后，***我们使用 [SSL_set_bio(3)]() 函数将之前创建的 `SSL对象` 与 `BIO` 关联起来***。请注意，***这会将 `BIO对象` 的所有权传递给 `SSL对象`。一旦所有权被传递，`SSL 对象`就负责对其管理，并在释放 `SSL` 时自动释放它。因此，<ins>一旦调用了 [SSL_set_bio(3)]() ，您就不应该在 `BIO` 上调用 [BIO_free(3)]()</ins>***。
+      ```c
+      SSL_set_bio(ssl, bio, bio);
+      ```
   * > **Setting the server's hostname¶ 设置服务器的主机名**
+    + > We have already connected our underlying socket to the server, but the client still needs to know the server's hostname. It uses this information for 2 key purposes and we need to set the hostname for each one. 我们已经将底层套接字连接到服务器，但客户端仍然需要知道服务器的主机名。它将此信息用于两个关键目的，我们需要为每个目的设置主机名。
+    + > Firstly, the server's hostname is included in the initial `ClientHello` message sent by the client. This is known as the `Server Name Indication` (`SNI`). ***This is important because it is common for multiple hostnames to be fronted by a single server that handles requests for all of them. In other words a single server may have multiple hostnames associated with it and it is important to indicate which one we want to connect to***. Without this information we may get a handshake failure, or we may get connected to the "default" server which may not be the one we were expecting. 首先，服务器的主机名包含在客户端发送的初始 `ClientHello` 消息中。这称为`服务器名称指示` (`SNI`)。这很重要，***因为多个主机名通常由一个服务器处理所有主机名的请求。换句话说，<ins>一台服务器可能有多个与之关联的主机名</ins>，并且指示我们要连​​接到哪一个主机名非常重要***。如果没有这些信息，我们可能会出现握手失败，或者我们可能会连接到“默认”服务器，而该服务器可能不是我们期望的服务器。
+    + > All of the above steps must happen before we attempt to perform the handshake otherwise they will have no effect. ***上述所有步骤都必须在我们尝试执行握手之前进行，否则它们将不起作用***。
   * > **Performing the handshake¶ 执行握手**
+    + > Before we can start sending or receiving application data over a TLS connection the TLS handshake must be performed. We can do this explicitly via the [SSL_connect(3)]() function. ***在我们开始通过 TLS 连接发送或接收应用程序数据之前，必须执行 TLS 握手***。我们可以通过 [SSL_connect(3)]() 函数显式地执行此操作。
+      ```c
+      /* Do the handshake with the server */
+      if (SSL_connect(ssl) < 1) {
+          printf("Failed to connect to the server\n");
+          /*
+           * If the failure is due to a verification error we can get more
+           * information about it from SSL_get_verify_result().
+           */
+          if (SSL_get_verify_result(ssl) != X509_V_OK)
+              printf("Verify error: %s\n",
+                  X509_verify_cert_error_string(SSL_get_verify_result(ssl)));
+          goto end;
+      }
+      ```
+    + > The SSL_connect(3) function can return 1, 0 or less than 0. Only a return value of 1 is considered a success. For a simple blocking client we only need to concern ourselves with whether the call was successful or not. Anything else indicates that we have failed to connect to the server. [SSL_connect(3)]() 函数可以返回 `1`、`0` 或`小于 0`。***只有返回值 `1` 才被视为成功。对于简单的阻塞客户端，我们只需要关心调用是否成功。其他任何情况都表明我们无法连接到服务器***。
+    + > A common cause of failures at this stage is due to a problem verifying the server's certificate. For example if the certificate has expired, or it is not signed by a CA in our trusted certificate store. We can use the SSL_get_verify_result(3) function to find out more information about the verification failure. A return value of X509_V_OK indicates that the verification was successful (so the connection error must be due to some other cause). Otherwise we use the X509_verify_cert_error_string(3) function to get a human readable error message. ***此阶段失败的常见原因是验证服务器证书时出现问题***。例如，如果证书已过期，或者未由我们可信证书存储中的 CA 签名。我们可以使用 [SSL_get_verify_result(3)]() 函数来查找有关验证失败的更多信息。返回值 **`X509_V_OK`** 表明验证成功（***因此连接错误肯定是由于其他原因造成的***）。否则，我们使用 [X509_verify_cert_error_string(3)]() 函数来获取人类可读的错误消息。
   * > **Sending and receiving data¶ 发送和接收数据**
+    + > To send data to the server we use the SSL_write_ex(3) function and to receive data from the server we use the SSL_read_ex(3) function. In HTTP 1.0 the client always writes data first. Our HTTP request will include the hostname that we are connecting to. For simplicity, we write the HTTP request in three chunks. First we write the start of the request. Secondly we write the hostname we are sending the request to. Finally we send the end of the request. ***要将数据发送到服务器，我们使用 [SSL_write_ex(3)]() 函数；要从服务器接收数据，我们使用 [SSL_read_ex(3)]() 函数。在 `HTTP 1.0` 中，客户端总是先写入数据***。我们的 HTTP 请求将包含我们要连接的主机名。为简单起见，我们将 HTTP 请求分为三个块。首先我们写下请求的开头。其次，我们写入要发送请求的主机名。最后我们发送请求结束。
+      ```c
+      size_t written;
+      const char *request_start = "GET / HTTP/1.0\r\nConnection: close\r\nHost: ";
+      const char *request_end = "\r\n\r\n";
+
+      /* Write an HTTP GET request to the peer */
+      if (!SSL_write_ex(ssl, request_start, strlen(request_start), &written)) {
+          printf("Failed to write start of HTTP request\n");
+          goto end;
+      }
+      if (!SSL_write_ex(ssl, hostname, strlen(hostname), &written)) {
+          printf("Failed to write hostname in HTTP request\n");
+          goto end;
+      }
+      if (!SSL_write_ex(ssl, request_end, strlen(request_end), &written)) {
+          printf("Failed to write end of HTTP request\n");
+          goto end;
+      }
+      ```
+    + > The SSL_write_ex(3) function returns 0 if it fails and 1 if it is successful. If it is successful then we can proceed to waiting for a response from the server. ***如果失败，[SSL_write_ex(3)]() 函数返回 `0`；如果成功，则返回 `1`。如果成功，那么我们可以继续等待服务器的响应***。
+      ```c
+      size_t readbytes;
+      char buf[160];
+
+      /*
+       * Get up to sizeof(buf) bytes of the response. We keep reading until the
+       * server closes the connection.
+       */
+      while (SSL_read_ex(ssl, buf, sizeof(buf), &readbytes)) {
+          /*
+          * OpenSSL does not guarantee that the returned data is a string or
+          * that it is NUL terminated so we use fwrite() to write the exact
+          * number of bytes that we read. The data could be non-printable or
+          * have NUL characters in the middle of it. For this simple example
+          * we're going to print it to stdout anyway.
+          */
+          fwrite(buf, 1, readbytes, stdout);
+      }
+      /* In case the response didn't finish with a newline we add one now */
+      printf("\n");
+      ```
+    + > We use the SSL_read_ex(3) function to read the response. We don't know exactly how much data we are going to receive back so we enter a loop reading blocks of data from the server and printing each block that we receive to the screen. The loop ends as soon as SSL_read_ex(3) returns 0 - meaning that it failed to read any data. 我们使用 [SSL_read_ex(3)]() 函数来读取响应。***我们不确切知道将接收回多少数据，因此我们进入一个循环***，从服务器读取数据块并将接收到的每个数据块打印到屏幕上。***一旦 [SSL_read_ex(3)]() 返回 `0`，循环就会结束 - 这意味着它无法读取任何数据***。
+    + > A failure to read data could mean that there has been some error, or it could simply mean that server has sent all the data that it wants to send and has indicated that it has finished by sending a `"close_notify"` alert. This alert is a TLS protocol level message indicating that the endpoint has finished sending all of its data and it will not send any more. Both of these conditions result in a `0` return value from [SSL_read_ex(3)]() and we need to use the function [SSL_get_error(3)]() to determine the cause of the 0 return value. ***<ins>读取数据失败可能意味着出现了一些错误，或者可能只是意味着服务器已发送了它想要发送的所有数据，并通过发送 `“close_notify”` 警报表明它已完成</ins>。此警报是一条 TLS 协议级别消息，指示端点已完成发送所有数据，并且不会再发送。这两种情况都会导致 [SSL_read_ex(3)]() 返回 `0` 值，我们需要使用函数 [SSL_get_error(3]() 来确定返回值 `0` 的原因***。
   * > **Shutting down the connection¶ 关闭连接**
+    + > Once we have finished reading data from the server then we are ready to close the connection down. We do this via the SSL_shutdown(3) function which has the effect of sending a TLS protocol level message (a `"close_notify" alert`) to the server saying that we have finished writing data: ***一旦我们完成从服务器读取数据，就准备关闭连接。我们通过 [SSL_shutdown(3)]() 函数执行此操作***，该函数的作用是向服务器发送一条 TLS 协议级消息（`“close_notify”警报`），表明我们已完成数据写入：
+      ```c
+      /*
+       * The peer already shutdown gracefully (we know this because of the
+       * SSL_ERROR_ZERO_RETURN above). We should do the same back.
+       */
+      ret = SSL_shutdown(ssl);
+      if (ret < 1) {
+          /*
+           * ret < 0 indicates an error. ret == 0 would be unexpected here
+           * because that means "we've sent a close_notify and we're waiting
+           * for one back". But we already know we got one from the peer
+           * because of the SSL_ERROR_ZERO_RETURN above.
+           */
+          printf("Error shutting down\n");
+          goto end;
+      }
+      ```
+    + > The SSL_shutdown(3) function will either return 1, 0, or less than 0. A return value of 1 is a success, and a return value less than 0 is an error. More precisely a return value of 1 means that we have sent a "close_notify" alert to the server, and that we have also received one back. A return value of 0 means that we have sent a "close_notify" alert to the server, but we have not yet received one back. Usually in this scenario you would call SSL_shutdown(3) again which (with a blocking socket) would block until the "close_notify" is received. However in this case we already know that the server has sent us a "close_notify" because of the SSL_ERROR_ZERO_RETURN that we received from the call to SSL_read_ex(3). So this scenario should never happen in practice. We just treat it as an error in this example. [SSL_shutdown(3)]() 函数将返回 `1`、`0` 或`小于 0`。返回值 `1` 表示成功，返回值小于 `0` 表示错误。***更准确地说，返回值 `1` 意味着我们已向服务器发送了`“close_notify”`警报，并且我们也收到了返回值。返回值 0 表示我们已向服务器发送了`“close_notify”`警报，但尚未收到回复***。通常在这种情况下，您会再次调用 [SSL_shutdown(3)]()，该调用（使用阻塞套接字）将阻塞，直到收到`“close_notify”`为止。然而，在这种情况下，我们已经知道服务器已向我们发送了`“close_notify”`，因为我们从 [SSL_read_ex(3)]() 调用中收到了 **`SSL_ERROR_ZERO_RETURN`**。所以这种情况在实践中绝对不应该发生。在本例中我们只是将其视为错误。
   * > **Final clean up¶ 最后清理**
+    + > Before the application exits we have to clean up some memory that we allocated. If we are exiting due to an error we might also want to display further information about that error if it is available to the user: ***在应用程序退出之前，我们必须清理我们分配的一些内存***。如果我们由于错误而退出，我们可能还想显示有关该错误的更多信息（如果用户可以使用）：
+      ```c
+         /* Success! */
+         res = EXIT_SUCCESS;
+      end:
+         /*
+          * If something bad happened then we will dump the contents of the
+          * OpenSSL error stack to stderr. There might be some useful diagnostic
+          * information there.
+          */
+         if (res == EXIT_FAILURE)
+             ERR_print_errors_fp(stderr);
+
+         /*
+          * Free the resources we allocated. We do not free the BIO object here
+          * because ownership of it was immediately transferred to the SSL object
+          * via SSL_set_bio(). The BIO will be freed when we free the SSL object.
+          */
+         SSL_free(ssl);
+         SSL_CTX_free(ctx);
+         return res;
+      ```
+    + > To display errors we make use of the ERR_print_errors_fp(3) function which simply dumps out the contents of any errors on the OpenSSL error stack to the specified location (in this case `stderr`). 为了显示错误，我们使用 [ERR_print_errors_fp(3)]() 函数，***该函数只需将 OpenSSL 错误堆栈上的任何错误内容转储到指定位置***（在本例中为`stderr`）。
+    + > We need to free up the **`SSL`** object that we created for the connection via the [SSL_free(3)]() function. Also, since we are not going to be creating any more `TLS connections` we must also free up the **`SSL_CTX`** via a call to [SSL_CTX_free(3)](). 我们需要通过 [SSL_free(3)]() 函数释放为连接创建的 **`SSL对象`**。另外，由于我们不会再创建任何 `TLS 连接`，因此我们还必须通过调用 [SSL_CTX_free(3)]() 来释放 **`SSL_CTX`** 。
 - > **TROUBLESHOOTING¶ 故障排除**
   * > **Failure to connect the underlying socket¶ 连接底层套接字失败**
   * > **Verification failure of the server certificate¶ 服务器证书验证失败**
