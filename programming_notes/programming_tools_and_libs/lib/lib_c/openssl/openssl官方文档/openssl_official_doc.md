@@ -6,6 +6,7 @@ OpenSSL overviews https://docs.openssl.org/master/man7/
   * ossl-guide-libssl-introduction https://docs.openssl.org/master/man7/ossl-guide-libssl-introduction/
   * ossl-guide-tls-introduction https://docs.openssl.org/master/man7/ossl-guide-tls-introduction/
   * ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-block/
+  * ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-non-block/
 
 OpenSSL libraries https://docs.openssl.org/master/man3/
 - > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
@@ -336,13 +337,14 @@ ossl-guide-tls-introduction https://docs.openssl.org/master/man7/ossl-guide-tls-
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## ossl-guide-tls-client-block
+>> 【[ :star: ][`*`]】 //notes：官方示例完整代码： https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c
 
 ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-block/
 - > **SIMPLE BLOCKING TLS CLIENT EXAMPLE¶ 简单的阻止 TLS 客户端示例**
   * > This page will present various source code samples demonstrating how to write a simple `TLS client` application which connects to a server, sends an `HTTP/1.0 request` to it, and reads back the response. 本页将提供各种源代码示例，***演示如何编写一个简单的 `TLS 客户端`应用程序，该应用程序连接到服务器、向其发送 `HTTP/1.0 请求`并读回响应***。
   * > We use a `blocking socket` for the purposes of this example. This means that attempting to read data from a socket that has no data available on it to read will block (<ins>and the function will not return</ins>), until data becomes available. For example, this can happen if we have sent our request, but we are still waiting for the server's response. Similarly any attempts to write to a socket that is not able to write at the moment will block until writing is possible. 出于本示例的目的，我们使用`阻塞套接字`。***<ins>这意味着尝试从没有可用数据读取的套接字读取数据将被阻塞（并且该函数将不会返回），直到数据可用为止</ins>。例如，如果我们已经发送了请求，但仍在等待服务器的响应，则可能会发生这种情况。<ins>同样，任何对当前无法写入的套接字的写入尝试都将被阻塞，直到可以写入为止</ins>***。
   * > This blocking behaviour simplifies the implementation of a client because you do not have to worry about what happens if data is not yet available. The application will simply wait until it is available. ***这种阻塞行为简化了客户端的实现，因为您不必担心数据尚不可用时会发生什么***。该应用程序将简单地等待，直到它可用。
-  * > The complete source code for this example blocking TLS client is available in the **`demos/guide`** directory of the OpenSSL source distribution in the file `tls-client-block.c`. It is also available online at https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c . 此示例阻塞 TLS 客户端的完整源代码可在 OpenSSL 源代码分发的 **`demos/guide`** 目录中的 `tls-client-block.c` 文件中找到。也可在线获取 https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c 。
+  * > The complete source code for this example blocking TLS client is available in the **`demos/guide`** directory of the OpenSSL source distribution in the file **`tls-client-block.c`**. It is also available online at https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c . 此示例阻塞 TLS 客户端的完整源代码可在 OpenSSL 源代码分发的 **`demos/guide`** 目录中的 **`tls-client-block.c`** 文件中找到。也可在线获取 https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-block.c 。
   * > We assume that you already have OpenSSL installed on your system; that you already have some fundamental understanding of OpenSSL concepts and TLS (see [ossl-guide-libraries-introduction(7)]() and [ossl-guide-tls-introduction(7)]()); and that you know how to write and build C code and link it against the `libcrypto` and `libssl` libraries that are provided by OpenSSL. It also assumes that you have a basic understanding of `TCP/IP` and `sockets`. 我们假设您的系统上已经安装了 OpenSSL；您已经对 OpenSSL 概念和 TLS 有一些基本的了解（请参阅 [ossl-guide-libraries-introduction(7)]() 和 [ossl-guide-tls-introduction(7)]() ）；并且您知道如何编写和构建 C 代码并将其链接到 OpenSSL 提供的 `libcrypto` 和 `libssl` 库。它还假设您对 `TCP/IP` 和`套接字`有基本的了解。
   * > **Creating the `SSL_CTX` and `SSL objects`¶ 创建 `SSL_CTX` 和 `SSL 对象`**
     + > The first step is to create an `SSL_CTX` object for our client. We use the [`SSL_CTX_new`(3)]() function for this purpose. We could alternatively use SSL_CTX_new_ex(3) if we want to associate the SSL_CTX with a particular OSSL_LIB_CTX (see ossl-guide-libraries-introduction(7) to learn about OSSL_LIB_CTX). We pass as an argument the return value of the function TLS_client_method(3). You should use this method whenever you are writing a TLS client. This method will automatically use TLS version negotiation to select the highest version of the protocol that is mutually supported by both the client and the server. 第一步是为我们的客户端创建一个 **`SSL_CTX`** 对象。为此，我们使用 [`SSL_CTX_new`(3)]() 函数。***如果我们想将 `SSL_CTX` 与特定的 `OSSL_LIB_CTX` 关联起来，我们也可以使用 [`SSL_CTX_new_ex`(3)]()*** （请参阅 [ossl-guide-libraries-introduction(7)]() 了解 **`OSSL_LIB_CTX`** ）。***我们将函数 [`TLS_client_method`(3)]() 的返回值作为参数传递。每当您编写 `TLS 客户端`时都应该使用此方法。此方法将自动使用 TLS 版本协商来选择客户端和服务器相互支持的协议的最高版本***。
@@ -536,6 +538,41 @@ ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-
 - > **TROUBLESHOOTING¶ 故障排除**
   * > **Failure to connect the underlying socket¶ 连接底层套接字失败**
   * > **Verification failure of the server certificate¶ 服务器证书验证失败**
+    + > A server certificate verification failure could be caused for a number of reasons. For example 服务器证书验证失败可能由多种原因引起。例如
+    + > Failure to correctly setup the trusted certificate store 无法正确设置受信任的证书存储
+    + > Unrecognised CA 无法识别的 CA
+    + > Missing intermediate CAs 缺少中间 CAs
+    + > Mismatched hostname 主机名不匹配
+    + > Expired certificate 证书过期
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+# ossl-guide-tls-client-non-block
+>> 【[ :star: ][`*`]】 //notes：官方示例完整代码： https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-non-block.c
+
+ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-non-block/
+- > **SIMPLE NONBLOCKING TLS CLIENT EXAMPLE¶ 简单的非阻塞 TLS 客户端示例**
+  * > This page will build on the example developed on the [ossl-guide-tls-client-block(7)]() page which demonstrates how to write a simple blocking TLS client. On this page we will amend that demo code so that it supports a `nonblocking socket`. 本页面将基于 [ossl-guide-tls-client-block(7)]() 页面上开发的示例构建，该示例演示了如何编写简单的阻塞 TLS 客户端。***在此页面上，我们将修改该演示代码，以便它支持`非阻塞套接字`***。
+  * > The complete source code for this example nonblocking TLS client is available in the **`demos/guide`** directory of the OpenSSL source distribution in the file **`tls-client-non-block.c`**. It is also available online at https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-non-block.c . 此示例非阻塞 TLS 客户端的完整源代码可在 OpenSSL 源代码分发的 **`demos/guide`** 目录中的 **`tls-client-non-block.c`** 文件中找到。也可在线获取 https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-non-block.c 。
+  * > As we saw in the previous example a `blocking socket` is one which waits (blocks) until data is available to read if you attempt to read from it when there is no data yet. Similarly it waits when writing if the socket is currently unable to write at the moment. This can simplify the development of code because you do not have to worry about what to do in these cases. The execution of the code will simply stop until it is able to continue. However in many cases you do not want this behaviour. Rather than stopping and waiting your application may need to go and do other tasks whilst the socket is unable to read/write, for example updating a GUI or performing operations on some other socket. ***正如我们在上一个示例中看到的那样，如果您在还没有数据时尝试从中读取数据，则`阻塞套接字`会等待（阻塞）直到有数据可供读取。同样，如果套接字当前无法写入，则写入时会等待***。这可以简化代码的开发，因为您不必担心在这些情况下该怎么做。代码的执行将停止，直到能够继续。***然而，在许多情况下，您不希望出现这种行为。当套接字无法读/写时，您的应用程序可能需要去执行其他任务，例如更新 GUI 或在其他套接字上执行操作，而不是停止和等待***。
+  * > With a `nonblocking socket` attempting to read or write to a socket that is currently unable to read or write will return immediately with a non-fatal error. Although OpenSSL does the reading/writing to the socket this nonblocking behaviour is propagated up to the application so that OpenSSL I/O functions such as [SSL_read_ex(3)]() or [SSL_write_ex(3)]() will not block. ***对于`非阻塞套接字`，尝试读取或写入当前无法读取或写入的套接字将立即返回，并出现非致命错误***。尽管 OpenSSL 对套接字进行读/写操作，***但这种非阻塞行为会传播到应用程序，以便 OpenSSL I/O 函数（例如 [SSL_read_ex(3)]() 或 [SSL_write_ex(3)]()）不会阻塞***。
+  * > Since this page is building on the example developed on the [ossl-guide-tls-client-block(7)]() page we assume that you are familiar with it and we only explain how this example differs. 由于此页面是基于 [ossl-guide-tls-client-block(7)]()页面上开发的示例构建的，因此我们假设您熟悉它，我们仅解释此示例的不同之处。
+  * > **Setting the socket to be nonblocking¶ 将套接字设置为非阻塞**
+    + > The first step in writing an application that supports nonblocking is to set the socket into `nonblocking mode`. A socket will be default be `blocking`. The exact details on how to do this can differ from one platform to another. Fortunately OpenSSL offers a portable function that will do this for you: ***编写支持非阻塞的应用程序的第一步是将套接字设置为`非阻塞模式`。<ins>套接字默认是`阻塞的`</ins>***。不同平台的具体操作细节可能有所不同。幸运的是，OpenSSL 提供了一个可移植的函数，可以为您执行此操作：
+      ```c
+      /* Set to nonblocking mode */
+      if (!BIO_socket_nbio(sock, 1)) {
+          sock = -1;
+          continue;
+      }
+      ```
+  * > **Performing work while waiting for the socket¶ 等待套接字时执行工作**
+  * > **Handling errors from OpenSSL I/O functions¶ 处理来自 OpenSSL I/O 函数的错误**
+  * > **Creating the SSL_CTX and SSL objects¶ 创建 SSL_CTX 和 SSL 对象**
+  * > **Performing the handshake¶ 执行握手**
+  * > **Sending and receiving data¶ 发送和接收数据**
+  * > **Shutting down the connection¶ 关闭连接**
+  * > **Final clean up¶ 最后清理**
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
