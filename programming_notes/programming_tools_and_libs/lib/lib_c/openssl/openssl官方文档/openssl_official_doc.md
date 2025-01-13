@@ -8,6 +8,7 @@ OpenSSL overviews https://docs.openssl.org/master/man7/
   * ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-block/
   * ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-non-block/
   * ossl-guide-tls-server-block https://docs.openssl.org/master/man7/ossl-guide-tls-server-block/
+  * ossl-guide-quic-introduction https://docs.openssl.org/master/man7/ossl-guide-quic-introduction/
 
 OpenSSL libraries https://docs.openssl.org/master/man3/
 - > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
@@ -633,10 +634,167 @@ ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-# ossl-guide-tls-server-block
+## ossl-guide-tls-server-block
 >> 【[ :star: ][`*`]】 //notes：官方示例完整代码： https://github.com/openssl/openssl/blob/master/demos/guide/tls-server-block.c
 
 ossl-guide-tls-server-block https://docs.openssl.org/master/man7/ossl-guide-tls-server-block/
+- > **SIMPLE BLOCKING TLS SERVER EXAMPLE¶ 简单的阻止 TLS 服务器示例**
+  * > This page will present various source code samples demonstrating how to write a simple, non-concurrent, TLS "echo" server application which accepts one client connection at a time, echoing input from the client back to the same client. Once the current client disconnects, the next client connection is accepted. ***本页将展示各种源代码示例，演示如何编写一个简单的、非并发的 TLS“回显”服务器应用程序，该应用程序一次接受一个客户端连接，将客户端的输入回显到同一客户端。一旦当前客户端断开连接，就会接受下一个客户端连接***。
+  * > Both the `acceptor socket` and `client connections` are "blocking". A more typical server might use nonblocking sockets with an event loop and callbacks for I/O events. `接受器套接字`和`客户端连接`都是“阻塞”的。更典型的服务器可能会使用带有事件循环和 I/O 事件回调的非阻塞套接字。
+  * > The complete source code for this example blocking TLS server is available in the **`demos/guide`** directory of the OpenSSL source distribution in the file **`tls-server-block.c`**. It is also available online at https://github.com/openssl/openssl/blob/master/demos/guide/tls-server-block.c . 此示例阻止 TLS 服务器的完整源代码可在 OpenSSL 源代码分发的 **`demos/guide`** 目录中的 **`tls-server-block.c`** 文件中找到。也可在线获取 https://github.com/openssl/openssl/blob/master/demos/guide/tls-server-block.c 。
+  * > **Creating the SSL_CTX and SSL objects¶ 创建 SSL_CTX 和 SSL 对象**
+    + > The first step is to create an SSL_CTX object for our server. We use the SSL_CTX_new(3) function for this purpose. We could alternatively use SSL_CTX_new_ex(3) if we want to associate the SSL_CTX with a particular OSSL_LIB_CTX (see ossl-guide-libraries-introduction(7) to learn about OSSL_LIB_CTX). We pass as an argument the return value of the function TLS_server_method(3). You should use this method whenever you are writing a TLS server. This method will automatically use TLS version negotiation to select the highest version of the protocol that is mutually supported by both the server and the client. 第一步是为我们的服务器创建一个 **`SSL_CTX`** 对象。为此，我们使用 [SSL_CTX_new(3)]() 函数。如果我们想将 **`SSL_CTX`** 与特定的 **`OSSL_LIB_CTX`** 关联起来，我们也可以使用 [SSL_CTX_new_ex(3)]() （请参阅 [ossl-guide-libraries-introduction(7)]() 了解 **`OSSL_LIB_CTX`** ）。我们将函数 [`TLS_server_method`(3)]() 的返回值作为参数传递。***每当您编写 TLS 服务器时都应该使用此方法。该方法会自动使用TLS版本协商来选择服务器和客户端相互支持的最高协议版本***。
+      ```c
+      /*
+       * An SSL_CTX holds shared configuration information for multiple
+       * subsequent per-client SSL connections.
+       */
+      ctx = SSL_CTX_new(TLS_server_method());
+      if (ctx == NULL) {
+          ERR_print_errors_fp(stderr);
+          errx(res, "Failed to create server SSL_CTX");
+      }
+      ```
+    + > We would also like to restrict the TLS versions that we are willing to accept to TLSv1.2 or above. TLS protocol versions earlier than that are generally to be avoided where possible. We can do that using SSL_CTX_set_min_proto_version(3): 我们还希望将愿意接受的 TLS 版本限制为 `TLSv1.2` 或更高版本。通常应尽可能避免使用早于该版本的 TLS 协议版本。我们可以使用 [SSL_CTX_set_min_proto_version(3)]() 来做到这一点：
+      ```c
+      /*
+       * TLS versions older than TLS 1.2 are deprecated by IETF and SHOULD
+       * be avoided if possible.
+       */
+      if (!SSL_CTX_set_min_proto_version(ctx, TLS1_2_VERSION)) {
+          SSL_CTX_free(ctx);
+          ERR_print_errors_fp(stderr);
+          errx(res, "Failed to set the minimum TLS protocol version");
+      }
+      ```
+    + > Next we configure some option flags, see SSL_CTX_set_options(3) for details: 接下来我们配置一些选项标志，详细信息请参见 [SSL_CTX_set_options(3)]()：
+    + > Servers need a private key and certificate. Though `anonymous ciphers` (no server certificate) are possible in TLS 1.2, they are rarely applicable, and are not currently defined for TLS 1.3. Additional intermediate issuer CA certificates are often also required, and both the server (end-entity or EE) certificate and the issuer ("chain") certificates are most easily configured in a single "chain file". Below we load such a chain file (the EE certificate must appear first), and then load the corresponding private key, checking that it matches the server certificate. No checks are performed to check the integrity of the chain (CA signatures or certificate expiration dates, for example). ***服务器需要私钥和证书。尽管 `TLS 1.2` 中可以使用`匿名密码`（无服务器证书），但它们很少适用，并且当前未针对 `TLS 1.3` 进行定义***。通常还需要其他中间颁发者 CA 证书，并且服务器（终端实体或 EE）证书和颁发者（“链”）证书最容易在单个“链文件”中配置。下面我们加载这样一个链文件（EE证书必须首先出现），然后加载相应的私钥，检查它是否与服务器证书匹配。不执行任何检查来检查链的完整性（例如 CA 签名或证书到期日期）。
+    + > Next we enable `session caching`, which makes it possible for clients to more efficiently make additional TLS connections after completing an initial full TLS handshake. With TLS 1.3, session resumption typically still performs a fresh key agreement, but the certificate exchange is avoided. ***接下来，我们启用会话缓存，这使得客户端可以在完成初始完整 TLS 握手后更有效地建立额外的 TLS 连接。<ins>使用 `TLS 1.3`，会话恢复通常仍执行新的密钥协商，但避免了证书交换</ins>***。
+    + > Most servers, including this one, do not solicit client certificates. We therefore do not need a "trust store" and allow the handshake to complete even when the client does not present a certificate. Note: Even if a client did present a trusted ceritificate, for it to be useful, the server application would still need custom code to use the verified identity to grant nondefault access to that particular client. Some servers grant access to all clients with certificates from a private CA, this then requires processing of certificate revocation lists to deauthorise a client. It is often simpler and more secure to instead keep a list of authorised public keys. 大多数服务器（包括这台服务器）不请求客户端证书。因此，我们不需要“信任存储”，即使客户端没有提供证书也可以完成握手。注意：即使客户端确实提供了受信任的证书，为了使其有用，服务器应用程序仍然需要自定义代码来使用经过验证的身份来向该特定客户端授予非默认访问权限。某些服务器向具有私有 CA 的证书的所有客户端授予访问权限，然后需要处理证书吊销列表以取消对客户端的授权。保留授权公钥列表通常更简单、更安全。
+    + > Though this is the default setting, we explicitly call the SSL_CTX_set_verify(3) function and pass the SSL_VERIFY_NONE value to it. The final argument to this function is a callback that you can optionally supply to override the default handling for certificate verification. Most applications do not need to do this so this can safely be set to NULL to get the default handling. 尽管这是默认设置，但我们显式调用 [SSL_CTX_set_verify(3)]() 函数并将 **`SSL_VERIFY_NONE`** 值传递给它。此函数的最后一个参数是一个回调，您可以选择提供该回调来覆盖证书验证的默认处理。大多数应用程序不需要这样做，因此可以安全地将其设置为 `NULL` 以获得默认处理。
+      ```c
+      /*
+       * Clients rarely employ certificate-based authentication, and so we don't
+       * require "mutual" TLS authentication (indeed there's no way to know
+       * whether or how the client authenticated the server, so the term "mutual"
+       * is potentially misleading).
+       *
+       * Since we're not soliciting or processing client certificates, we don't
+       * need to configure a trusted-certificate store, so no call to
+       * SSL_CTX_set_default_verify_paths() is needed.  The server's own
+       * certificate chain is assumed valid.
+       */
+      SSL_CTX_set_verify(ctx, SSL_VERIFY_NONE, NULL);
+      ```
+    + > That is all the setup that we need to do for the SSL_CTX. Next we create an acceptor BIO on which to accept client connections. This just records the intended port (and optional "host:" prefix), without actually creating the socket. This delayed processing allows the programmer to specify additional behaviours before the listening socket is actually created. 这就是我们需要为 **`SSL_CTX`** 做的所有设置。接下来我们创建一个接受器 `BIO` 来接受客户端连接。这只是记录预期的端口（和可选的“host：”前缀），而不实际创建套接字。这种延迟处理允许程序员在实际创建侦听套接字之前指定其他行为。
+      ```c
+      /*
+       * Create a listener socket wrapped in a BIO.
+       * The first call to BIO_do_accept() initialises the socket
+       */
+      acceptor_bio = BIO_new_accept(hostport);
+      if (acceptor_bio == NULL) {
+          SSL_CTX_free(ctx);
+          ERR_print_errors_fp(stderr);
+          errx(res, "Error creating acceptor bio");
+      }
+      ```
+    + > Servers almost always want to use the "SO_REUSEADDR" option to avoid startup failures if there are still lingering client connections, so we do that before making the first call to BIO_do_accept(3) which creates the listening socket, without accepting a client connection. Subsequent calls to the same function will accept new connections. 如果仍有延迟的客户端连接，服务器几乎总是希望使用 `“SO_REUSEADDR”` 选项来避免启动失败，因此我们在第一次调用 [BIO_do_accept(3)]() 之前执行此操作，该调用创建侦听套接字，而不接受客户端连接。对同一函数的后续调用将接受新连接。
+      ```c
+      BIO_set_bind_mode(acceptor_bio, BIO_BIND_REUSEADDR);
+      if (BIO_do_accept(acceptor_bio) <= 0) {
+          SSL_CTX_free(ctx);
+          ERR_print_errors_fp(stderr);
+          errx(res, "Error setting up acceptor socket");
+      }
+      ```
+  * > **Server loop¶ 服务器循环**
+    + > The server now enters a "forever" loop handling one client connection at a time. Before each connection we clear the OpenSSL error stack, so that any error reports are related to just the new connection. ***服务器现在进入“永远”循环，一次处理一个客户端连接。在每次连接之前，我们都会清除 OpenSSL 错误堆栈，以便任何错误报告都仅与新连接相关***。
+      ```c
+      /* Pristine error stack for each new connection */
+      ERR_clear_error();
+      ```
+    + > At this point the server blocks to accept the next client: 此时服务器会阻止接受下一个客户端：
+      ```c
+      /* Wait for the next client to connect */
+      if (BIO_do_accept(acceptor_bio) <= 0) {
+          /* Client went away before we accepted the connection */
+          continue;
+      }
+      ```
+    + > On success the accepted client connection has been wrapped in a fresh `BIO` and pushed onto the end of the acceptor `BIO chain`. We pop it off returning the acceptor BIO to its initial state. ***成功后，接受的客户端连接将被包装在新的 `BIO` 中，并推送到接受者 `BIO 链`的末尾。我们将其弹出，将接受器 BIO 返回到其初始状态***。
+      ```c
+      /* Pop the client connection from the BIO chain */
+      client_bio = BIO_pop(acceptor_bio);
+      fprintf(stderr, "New client connection accepted\n");
+      ```
+    + > Next, we create an `SSL object` by calling the SSL_new(3) function and passing the SSL_CTX we created as an argument. The client connection BIO is configured as the I/O conduit for this SSL handle. SSL_set_bio transfers ownership of the BIO or BIOs involved (our client_bio) to the SSL handle. 接下来，我们通过调用 [SSL_new(3)]() 函数并将我们创建的 **`SSL_CTX`** 作为参数传递来创建 `SSL对象`。客户端连接 BIO 配置为该 SSL 句柄的 I/O 管道。 `SSL_set_bio` 将涉及的 BIO 或 BIO（我们的 client_bio ）的所有权转移到 SSL 句柄。
+      ```c
+      /* Associate a new SSL handle with the new connection */
+      if ((ssl = SSL_new(ctx)) == NULL) {
+          ERR_print_errors_fp(stderr);
+          warnx("Error creating SSL handle for new connection");
+          BIO_free(client_bio);
+          continue;
+      }
+      SSL_set_bio(ssl, client_bio, client_bio);
+      ```
+    + > And now we're ready to attempt the SSL handshake. With a `blocking socket` OpenSSL will perform all the read and write operations required to complete the handshake (or detect and report a failure) before returning. 现在我们准备尝试 SSL 握手。对于`阻塞套接字`，OpenSSL 将在返回之前执行完成握手（或检测并报告故障）所需的所有读写操作。
+      ```c
+      /* Attempt an SSL handshake with the client */
+      if (SSL_accept(ssl) <= 0) {
+          ERR_print_errors_fp(stderr);
+          warnx("Error performing SSL handshake with client");
+          SSL_free(ssl);
+          continue;
+      }
+      ```
+    + > With the handshake complete, the server loops echoing client input back to the client: 握手完成后，服务器循环将客户端输入回显给客户端：
+      ```c
+      while (SSL_read_ex(ssl, buf, sizeof(buf), &nread) > 0) {
+          if (SSL_write_ex(ssl, buf, nread, &nwritten) > 0 &&
+              nwritten == nread) {
+              total += nwritten;
+              continue;
+          }
+          warnx("Error echoing client input");
+          break;
+      }
+      ```
+    + > Once the client closes its connection, we report the number of bytes sent to stderr and free the SSL handle, which also frees the client_bio and closes the underlying socket. 一旦客户端关闭其连接，我们就会报告发送到 `stderr` 的字节数并释放 SSL 句柄，这也会释放 client_bio 并关闭底层套接字。
+      ```c
+      fprintf(stderr, "Client connection closed, %zu bytes sent\n", total);
+      SSL_free(ssl);
+      ```
+    + > The server is now ready to accept the next client connection. 服务器现在已准备好接受下一个客户端连接。
+  * > **Final clean up¶ 最后清理**
+    + > If the server could somehow manage to break out of the infinite loop, and be ready to exit, it would first deallocate the constructed SSL_CTX. 如果服务器能够以某种方式设法摆脱无限循环并准备退出，它将首先释放构造的 **`SSL_CTX`** 。
+      ```c
+      /*
+       * Unreachable placeholder cleanup code, the above loop runs forever.
+       */
+      SSL_CTX_free(ctx);
+      return EXIT_SUCCESS;
+      ```
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## ossl-guide-quic-introduction
+
+ossl-guide-quic-introduction https://docs.openssl.org/master/man7/ossl-guide-quic-introduction/
+- > **INTRODUCTION¶ 介绍¶**
+  * > This page will provide an introduction to some basic `QUIC` concepts and background and how it is used within OpenSSL. It assumes that you have a basic understanding of `UDP/IP` and sockets. It also assumes that you are familiar with some OpenSSL and TLS fundamentals (see [ossl-guide-libraries-introduction(7)]() and [ossl-guide-tls-introduction(7)]()). 本页面将介绍一些基本的 `QUIC` 概念和背景以及如何在 OpenSSL 中使用它。它假设您对 `UDP/IP` 和`套接字`有基本的了解。它还假设您熟悉一些 OpenSSL 和 TLS 基础知识（请参阅 [ossl-guide-libraries-introduction(7)]() 和 [ossl-guide-tls-introduction(7)]() ）。
+- > **WHAT IS QUIC?¶ 什么是 QUIC？¶**
+  * > `QUIC` is a general purpose protocol for enabling applications to securely communicate over a network. It is defined in RFC9000 (see https://datatracker.ietf.org/doc/rfc9000/ ). `QUIC` integrates parts of the TLS protocol for connection establishment but independently protects packets. It provides similar security guarantees to TLS such as `confidentiality`, `integrity` and `authentication` (see [ossl-guide-tls-introduction(7)]() ). `QUIC` 是一种通用协议，使应用程序能够通过网络安全地进行通信。它在 `RFC9000` 中定义（请参阅 https://datatracker.ietf.org/doc/rfc9000/ ）。 `QUIC` 集成了部分 TLS 协议来建立连接，但独立保护数据包。它提供与 TLS 类似的安全保证，例如`机密性`、`完整性`和`身份验证`（请参阅 [ossl-guide-tls-introduction(7)]() ）。
+  * > `QUIC` delivers a number of advantages: `QUIC` 具有许多优势：
+    + > **Multiple streams 多个流**
+    + > **`HTTP/3`**
+    + > **Fast connection initiation 快速连接启动**
+    + > **Connection migration 连接迁移**
+    + > **Datagram based use cases 基于数据报的用例**
+    + > **Implemented as application library 作为应用程序库实现**
+    + > **Multiplexing over a single `UDP socket` 通过单个 `UDP 套接字`进行多路复用**
+- > **QUIC TIME BASED EVENTS¶ 基于快速时间的事件**
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
