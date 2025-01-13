@@ -37,6 +37,10 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ## 开放隐私计算
 
+### 2025.01
+
+全同态加密：现状与未来 https://mp.weixin.qq.com/s/ZPWLGXLVikGyYIxujlBZIA
+
 ### 2022.03
 
 终于有人讲明白隐私计算是什么了 https://mp.weixin.qq.com/s/yB1XJxO5v7UUjP-kM2Zllg || 隐私计算发展浅析 https://mp.weixin.qq.com/s/9btDgLCxMtyJ855n4c7aig
