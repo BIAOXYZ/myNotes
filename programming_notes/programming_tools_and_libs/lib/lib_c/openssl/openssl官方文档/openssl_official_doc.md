@@ -7,6 +7,7 @@ OpenSSL overviews https://docs.openssl.org/master/man7/
   * ossl-guide-tls-introduction https://docs.openssl.org/master/man7/ossl-guide-tls-introduction/
   * ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-block/
   * ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-non-block/
+  * ossl-guide-tls-server-block https://docs.openssl.org/master/man7/ossl-guide-tls-server-block/
 
 OpenSSL libraries https://docs.openssl.org/master/man3/
 - > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
@@ -547,7 +548,7 @@ ossl-guide-tls-client-block https://docs.openssl.org/master/man7/ossl-guide-tls-
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-# ossl-guide-tls-client-non-block
+## ossl-guide-tls-client-non-block
 >> 【[ :star: ][`*`]】 //notes：官方示例完整代码： https://github.com/openssl/openssl/blob/master/demos/guide/tls-client-non-block.c
 
 ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-tls-client-non-block/
@@ -567,12 +568,75 @@ ossl-guide-tls-client-non-block https://docs.openssl.org/master/man7/ossl-guide-
       }
       ```
   * > **Performing work while waiting for the socket¶ 等待套接字时执行工作**
+    + > In a `nonblocking` application you will need work to perform in the event that we want to read or write to the socket, but we are currently unable to. In fact this is the whole point of using a `nonblocking socket`, i.e. to give the application the opportunity to do something else. Whatever it is that the application has to do, it must also be prepared to come back and retry the operation that it previously attempted periodically to see if it can now complete. Ideally it would only do this in the event that the state of the underlying socket has actually changed (e.g. become readable where it wasn't before), but this does not have to be the case. It can retry at any time. ***在`非阻塞`应用程序中，如果我们想要读取或写入套接字，但目前无法执行，则需要执行一些工作。事实上，这就是使用`非阻塞套接字`的全部意义，即为应用程序提供执行其他操作的机会***。无论应用程序必须做什么，它还必须准备好返回并定期重试之前尝试的操作，以查看现在是否可以完成。***理想情况下，它只会在底层套接字的状态实际上发生变化的情况下执行此操作（例如，以前不可读的地方变得可读），但情况并非必须如此。它可以随时重试***。
+    + > ***Note that it is important that you retry exactly the same operation that you tried last time***. You cannot start something new. For example ***if you were attempting to write the text "Hello World" and the operation failed because the socket is currently unable to write, then you cannot then attempt to write some other text when you retry the operation***. 请注意，重试与上次尝试完全相同的操作非常重要。你无法开始新的事情。例如，***如果您尝试写入文本“Hello World”，但由于套接字当前无法写入而操作失败，那么当您重试该操作时，您将无法尝试写入其他文本***。
+    + > In this demo application we will create a helper function which simulates doing other work. In fact, for the sake of simplicity, it will do nothing except wait for the state of the socket to change. 在此演示应用程序中，我们将创建一个模拟执行其他工作的辅助函数。事实上，为了简单起见，它除了等待套接字状态改变之外什么也不做。
+    + > We call our function wait_for_activity() because all it does is wait until the underlying socket has become readable or writeable when it wasn't before. 我们将函数称为 `wait_for_activity()` 因为它所做的只是等待底层套接字变得可读或可写（而之前不是这样）。
+      ```c
+      static void wait_for_activity(SSL *ssl, int write)
+      {
+          fd_set fds;
+          int width, sock;
+
+          /* Get hold of the underlying file descriptor for the socket */
+          sock = SSL_get_fd(ssl);
+
+          FD_ZERO(&fds);
+          FD_SET(sock, &fds);
+          width = sock + 1;
+
+          /*
+           * Wait until the socket is writeable or readable. We use select here
+           * for the sake of simplicity and portability, but you could equally use
+           * poll/epoll or similar functions
+           *
+           * NOTE: For the purposes of this demonstration code this effectively
+           * makes this demo block until it has something more useful to do. In a
+           * real application you probably want to go and do other work here (e.g.
+           * update a GUI, or service other connections).
+           *
+           * Let's say for example that you want to update the progress counter on
+           * a GUI every 100ms. One way to do that would be to add a 100ms timeout
+           * in the last parameter to "select" below. Then, when select returns,
+           * you check if it did so because of activity on the file descriptors or
+           * because of the timeout. If it is due to the timeout then update the
+           * GUI and then restart the "select".
+           */
+          if (write)
+              select(width, NULL, &fds, NULL, NULL);
+          else
+              select(width, &fds, NULL, NULL, NULL);
+      }
+      ```
+    + > In this example we are using the `select` function because it is very simple to use and is available on most Operating Systems. However you could use any other similar function to do the same thing. `select` waits for the state of the underlying socket(s) to become readable/writeable before returning. It also supports a "timeout" (as do most other similar functions) so in your own applications you can make use of this to periodically wake up and perform work while waiting for the socket state to change. But we don't use that timeout capability in this example for the sake of simplicity. 在本例中，我们使用 `select` 函数，因为它使用起来非常简单，并且在大多数操作系统上都可用。但是，您可以使用任何其他类似的函数来执行相同的操作。`select` 在返回之前等待底层套接字的状态变为可读/可写。它还支持“超时”（与大多数其他类似功能一样），因此在您自己的应用程序中，您可以利用它来定期唤醒并在等待套接字状态更改时执行工作。但为了简单起见，我们在本示例中没有使用超时功能。
   * > **Handling errors from OpenSSL I/O functions¶ 处理来自 OpenSSL I/O 函数的错误**
+    + > SSL_read_ex(3) and SSL_write_ex(3) will return 0 to indicate an error and SSL_read(3) and SSL_write(3) will return 0 or a negative value to indicate an error. SSL_shutdown(3) will return a negative value to incidate an error. [SSL_read_ex(3)]() 和 [SSL_write_ex(3)]() 将返回 `0` 来指示错误，[SSL_read(3)]() 和 [SSL_write(3)]() 将返回 `0` 或`负值`来指示错误。[SSL_shutdown(3)]() 将返回`负值`以指示错误。
   * > **Creating the SSL_CTX and SSL objects¶ 创建 SSL_CTX 和 SSL 对象**
+    + > In order to connect to a server we must create SSL_CTX and SSL objects for this. The steps do this are the same as for a blocking client and are explained on the ossl-guide-tls-client-block(7) page. We won't repeat that information here. 为了连接到服务器，我们必须为此创建 `SSL_CTX` 和 `SSL对象`。***执行此操作的步骤与阻塞客户端相同，并在 [ossl-guide-tls-client-block(7)]() 页面上进行了说明。我们不会在这里重复该信息***。
   * > **Performing the handshake¶ 执行握手**
+    + > As in the demo for a blocking TLS client we use the SSL_connect(3) function to perform the TLS handshake with the server. Since we are using a `nonblocking socket` it is very likely that calls to this function will fail with a non-fatal error while we are waiting for the server to respond to our handshake messages. In such a case we must retry the same SSL_connect(3) call at a later time. In this demo we this in a loop: 正如在阻塞 TLS 客户端的演示中一样，我们使用 [SSL_connect(3)]() 函数与服务器执行 TLS 握手。由于我们使用的是`非阻塞套接字`，因此在等待服务器响应握手消息时，对此函数的调用很可能会失败并出现非致命错误。在这种情况下，我们必须稍后重试相同的 [SSL_connect(3)]() 调用。在这个演示中，我们循环执行：
+      ```c
+      /* Do the handshake with the server */
+      while ((ret = SSL_connect(ssl)) != 1) {
+          if (handle_io_failure(ssl, ret) == 1)
+              continue; /* Retry */
+          printf("Failed to connect to server\n");
+          goto end; /* Cannot retry: error */
+      }
+      ```
+    + > We continually call SSL_connect(3) until it gives us a success response. Otherwise we use the handle_io_failure() function that we created earlier to work out what we should do next. Note that we do not expect an EOF to occur at this stage, so such a response is treated in the same way as a fatal error. 我们不断调用 [SSL_connect(3)]() 直到它给我们一个成功响应。否则，我们使用之前创建的 `handle_io_failure()` 函数来确定下一步应该做什么。请注意，我们不希望在此阶段发生 EOF，因此此类响应将被视为致命错误。
   * > **Sending and receiving data¶ 发送和接收数据**
+    + > As with the blocking TLS client demo we use the SSL_write_ex(3) function to send data to the server. As with SSL_connect(3) above, because we are using a `nonblocking socket`, this call could fail with a non-fatal error. In that case we should retry exactly the same SSL_write_ex(3) call again. Note that the parameters must be exactly the same, i.e. the same pointer to the buffer to write with the same length. You must not attempt to send different data on a retry. An optional mode does exist (**`SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER`**) which will configure OpenSSL to allow the buffer being written to change from one retry to the next. However, in this case, you must still retry exactly the same data - even though the buffer that contains that data may change location. See SSL_CTX_set_mode(3) for further details. As in the TLS client blocking tutorial (ossl-guide-tls-client-block(7)) we write the request in three chunks. 与阻塞 TLS 客户端演示一样，我们使用 [SSL_write_ex(3)]() 函数将数据发送到服务器。与上面的 [SSL_connect(3)]() 一样，***因为我们使用`非阻塞套接字`，所以此调用可能会失败并出现非致命错误***。在这种情况下，我们应该再次重试完全相同的 [SSL_write_ex(3)]() 调用。***注意，参数必须完全相同，即指向要写入的缓冲区的相同指针，具有相同的长度。您不得尝试在重试时发送不同的数据***。确实存在一种可选模式（ **`SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER`** ），它将配置 OpenSSL 以允许写入的缓冲区从一次重试更改为下一次重试。但是，在这种情况下，您仍然必须重试完全相同的数据 - 即使包含该数据的缓冲区可能会更改位置。有关更多详细信息，请参阅 [SSL_CTX_set_mode(3)]()。正如 TLS 客户端阻止教程 ( [ossl-guide-tls-client-block(7)]() ) 中一样，我们将请求分为三个块。
   * > **Shutting down the connection¶ 关闭连接**
   * > **Final clean up¶ 最后清理**
+    + > As with the blocking TLS client example, once our connection is finished with we must free it. The steps to do this for this example are the same as for the blocking example, so we won't repeat it here. 与阻塞 TLS 客户端示例一样，一旦连接完成，我们必须释放它。***此示例的执行步骤与阻塞示例相同，因此我们在此不再重复***。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+# ossl-guide-tls-server-block
+>> 【[ :star: ][`*`]】 //notes：官方示例完整代码： https://github.com/openssl/openssl/blob/master/demos/guide/tls-server-block.c
+
+ossl-guide-tls-server-block https://docs.openssl.org/master/man7/ossl-guide-tls-server-block/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
