@@ -10,6 +10,7 @@ OpenSSL overviews https://docs.openssl.org/master/man7/
   * ossl-guide-tls-server-block https://docs.openssl.org/master/man7/ossl-guide-tls-server-block/
   * ossl-guide-quic-introduction https://docs.openssl.org/master/man7/ossl-guide-quic-introduction/
   * ossl-guide-quic-client-block https://docs.openssl.org/master/man7/ossl-guide-quic-client-block/
+  * ossl-guide-quic-multi-stream https://docs.openssl.org/master/man7/ossl-guide-quic-multi-stream/
 
 OpenSSL libraries https://docs.openssl.org/master/man3/
 - > This is the OpenSSL API for the SSL and Crypto libraries. The ssl and crypto manpages are general overviews of those libraries.
@@ -805,16 +806,16 @@ ossl-guide-quic-introduction https://docs.openssl.org/master/man7/ossl-guide-qui
 - > **QUIC TIME BASED EVENTS¶ 基于快速时间的事件**
   * > A key difference between the TLS implementation and the QUIC implementation in OpenSSL is how time is handled. The `QUIC protocol` requires various actions to be performed on a regular basis regardless of whether application data is being transmitted or received. ***OpenSSL 中 `TLS 实现`和 `QUIC 实现`之间的主要区别在于时间的处理方式。`QUIC 协议`要求定期执行各种操作，无论应用程序数据是否正在传输或接收***。
   * > OpenSSL introduces a new function SSL_handle_events(3) that will automatically process any outstanding time based events that must be handled. Alternatively calling any I/O function such as SSL_read_ex(3) or SSL_write_ex(3) will also process these events. There is also SSL_get_event_timeout(3) which tells an application the amount of time that remains until SSL_handle_events(3) (or any I/O function) must be called. ***OpenSSL 引入了一个新函数 [SSL_handle_events(3)]()，它将自动处理任何必须处理的未完成的基于时间的事件***。或者，调用任何 I/O 函数（例如 [SSL_read_ex(3)]() 或 [SSL_write_ex(3)]()）也将处理这些事件。还有 [SSL_get_event_timeout(3)]()，它告诉应用程序在必须调用 [SSL_handle_events(3)]() （或任何 I/O 函数）之前剩余的时间量。
-  * > Fortunately a `blocking application` that does not leave the `QUIC connection` idle, and is regularly calling I/O functions does not typically need to worry about this. However if you are developing a `nonblocking application` or one that may leave the `QUIC connection` idle for a period of time then you will need to arrange to call these functions. ***幸运的是，`阻塞应用程序`不会让 `QUIC 连接`处于空闲状态，并且定期调用 I/O 函数，通常不需要担心这一点***。但是，***如果您正在开发一个`非阻塞应用程序`或可能使 `QUIC 连接`空闲一段时间的应用程序，那么您将需要安排调用这些函数***。
+  * > Fortunately a `blocking application` that does not leave the `QUIC connection` idle, and is regularly calling I/O functions does not typically need to worry about this. However if you are developing a `nonblocking application` or one that may leave the `QUIC connection` idle for a period of time then you will need to arrange to call these functions. ***幸运的是，一个不会让 `QUIC 连接`处于空闲状态，并且定期调用 I/O 函数的`阻塞应用程序`，通常不需要担心这一点***。但是，***如果您正在开发一个`非阻塞应用程序`或可能使 `QUIC 连接`空闲一段时间的应用程序，那么您将需要安排调用这些函数***。
   * > OpenSSL provides an optional `"thread assisted mode"` that will automatically create a background thread and will regularly call [SSL_handle_events(3)]() in a thread safe manner. This provides a simple way for an application to satisfy the `QUIC` requirements for time based events without having to implement special logic to accomplish it. ***OpenSSL 提供了一个可选的`“线程辅助模式”`，它将自动创建后台线程，并以线程安全的方式定期调用 [SSL_handle_events(3)]() 。这为应用程序提供了一种简单的方法来满足基于时间的事件的 `QUIC` 要求，而无需实现特殊的逻辑来完成它***。
 - > **QUIC AND TLS¶ QUIC 和 TLS**
   * > QUIC reuses parts of the TLS protocol in its implementation. Specifically the TLS handshake also exists in QUIC. The TLS handshake messages are wrapped up in QUIC protocol messages in order to send them to the peer. Once the TLS handshake is complete all application data is sent entirely using QUIC protocol messages without using TLS - although some `TLS handshake messages` may still be sent in some circumstances. ***<ins>`QUIC` 在其实现中重用了 `TLS` 协议的部分内容</ins>。具体来说，`TLS 握手`也存在于 `QUIC` 中。`TLS 握手消息`封装在 `QUIC` 协议消息中，以便将其发送给对等方。<ins>TLS 握手完成后，所有应用程序数据都将完全使用 QUIC 协议消息发送，而不使用 TLS - 尽管在某些情况下仍可能发送某些 `TLS 握手消息`</ins>***。
   * > This relationship between QUIC and TLS means that many of the API functions in OpenSSL that apply to TLS connections also apply to QUIC connections and applications can use them in exactly the same way. Some functions do not apply to QUIC at all, and others have altered semantics. You should refer to the documentation pages for each function for information on how it applies to QUIC. Typically if QUIC is not mentioned in the manual pages then the functions apply to both TLS and QUIC. ***`QUIC` 和 `TLS` 之间的这种关系意味着 OpenSSL 中适用于 TLS 连接的许多 API 函数也适用于 QUIC 连接，并且应用程序可以以完全相同的方式使用它们***。有些函数根本不适用于 QUIC，而其他函数则改变了语义。您应参阅每个函数的文档页面，了解有关其如何应用于 QUIC 的信息。***<ins>通常，如果手册页中未提及 QUIC，则这些函数适用于 TLS 和 QUIC</ins>***。
 - > **`QUIC STREAMS`¶ `QUIC 流`**
   * > QUIC introduces the concept of `"streams"`. A stream provides a reliable mechanism for sending and receiving application data between the endpoints. The bytes transmitted are guaranteed to be received in the same order they were sent without any loss of data or reordering of the bytes. A TLS application effectively has one bi-directional stream available to it per TLS connection. A QUIC application can have multiple uni-directional or bi-directional streams available to it for each connection. ***`QUIC` 引入了`“流”`的概念。流提供了一种在端点之间发送和接收应用程序数据的可靠机制。保证所传输的字节按照发送时的顺序接收，不会丢失任何数据或对字节进行重新排序。<ins>`TLS` 应用程序实际上为每个 `TLS 连接`提供一个可用的双向流。`QUIC` 应用程序可以为每个连接提供多个可用的单向或双向流</ins>***。
-  * > In OpenSSL an SSL object is used to represent both connections and streams. A QUIC application creates an initial SSL object to represent the connection (known as the `connection SSL object`). Once the connection is complete additional SSL objects can be created to represent streams (known as `stream SSL objects`). Unless configured otherwise, a "default" stream is also associated with the connection SSL object so you can still write data and read data to/from it. Some OpenSSL API functions can only be used with connection SSL objects, and some can only be used with stream SSL objects. Check the documentation for each function to confirm what type of SSL object can be used in any particular context. A connection SSL object that has a default stream attached to it can be used in contexts that require a connection SSL object or in contexts that require a stream SSL object. ***在 OpenSSL 中，`SSL对象`用于表示`连接`和`流`。`QUIC` 应用程序创建一个初始`SSL对象`来表示`连接`（称为<ins>`连接SSL对象`</ins>）。连接完成后，可以创建其他`SSL对象`来表示`流`（称为<ins>`流SSL对象`</ins>）。除非另有配置，否则`“默认”流`也会与`连接SSL对象`关联，因此您仍然可以向其中写入数据或从中读取数据。某些 OpenSSL API 函数只能与连接SSL对象一起使用，而某些函数只能与流SSL对象一起使用***。检查每个函数的文档，以确认在任何特定上下文中可以使用什么类型的SSL对象。***附加了默认流的连接SSL对象可以在需要连接SSL对象的上下文或需要流SSL对象的上下文中使用***。
+  * > In OpenSSL an SSL object is used to represent both `connections` and `streams`. A QUIC application creates an `initial SSL object` to represent the `connection` (known as the <ins>`connection SSL object`</ins>). Once the connection is complete additional SSL objects can be created to represent `streams` (known as <ins>`stream SSL objects`</ins>). Unless configured otherwise, a `"default" stream` is also associated with the `connection SSL object` so you can still write data and read data to/from it. Some OpenSSL API functions can only be used with `connection SSL objects`, and some can only be used with `stream SSL objects`. Check the documentation for each function to confirm what type of SSL object can be used in any particular context. A `connection SSL object` that has a `default stream` attached to it can be used in contexts that require a `connection SSL object` or in contexts that require a `stream SSL object`. ***在 OpenSSL 中，`SSL对象`用于表示`连接`和`流`。`QUIC` 应用程序创建一个`初始SSL对象`来表示`连接`（称为<ins>`连接SSL对象`</ins>）。连接完成后，可以创建其他`SSL对象`来表示`流`（称为<ins>`流SSL对象`</ins>）。除非另有配置，否则`“默认”流`也会与`连接SSL对象`关联，因此您仍然可以向其中写入数据或从中读取数据。某些 OpenSSL API 函数只能与`连接SSL对象`一起使用，而某些函数只能与`流SSL对象`一起使用***。检查每个函数的文档，以确认在任何特定上下文中可以使用什么类型的SSL对象。***附加了`默认流`的`连接SSL对象`可以在需要`连接SSL对象`的上下文或需要`流SSL对象`的上下文中使用***。
 - > **SOCKETS AND BLOCKING¶ 套接字和阻塞**
-  * > TLS assumes `"stream"` type semantics for its underlying transport layer protocol (usually achieved by using TCP). However QUIC assumes "datagram" type semantics by using UDP. An OpenSSL application using QUIC is responsible for creating a BIO to represent the underlying transport layer. This BIO must support datagrams and is typically BIO_s_datagram(3), but other BIO choices are available. See bio(7) for an introduction to OpenSSL's **`BIO`** concept. ***`TLS` 为其底层传输层协议假定`“流”类型`语义（通常通过使用 `TCP` 实现）。然而，`QUIC` 通过使用 UDP 假定`“数据报”类型`语义。<ins>使用 QUIC 的 OpenSSL 应用程序负责创建 BIO 来表示底层传输层。该 BIO 必须支持数据报，通常为 [BIO_s_datagram(3)]() ，但也可以使用其他BIO选择</ins>***。有关 OpenSSL 的 **`BIO`** 概念的介绍，请参阅 [bio(7)]() 。
+  * > TLS assumes `"stream" type` semantics for its underlying transport layer protocol (usually achieved by using TCP). However QUIC assumes `"datagram" type` semantics by using UDP. An OpenSSL application using QUIC is responsible for creating a BIO to represent the underlying transport layer. This BIO must support datagrams and is typically BIO_s_datagram(3), but other BIO choices are available. See bio(7) for an introduction to OpenSSL's **`BIO`** concept. ***`TLS` 为其底层传输层协议假定`“流”类型`语义（通常通过使用 `TCP` 实现）。然而，`QUIC` 通过使用 UDP 假定`“数据报”类型`语义。<ins>使用 QUIC 的 OpenSSL 应用程序负责创建 BIO 来表示底层传输层。该 BIO 必须支持数据报，通常为 [BIO_s_datagram(3)]() ，但也可以使用其他BIO选择</ins>***。有关 OpenSSL 的 **`BIO`** 概念的介绍，请参阅 [bio(7)]() 。
   * > A significant difference between OpenSSL TLS applications and OpenSSL QUIC applications is the way that blocking is implemented. In TLS if your application expects blocking behaviour then you configure the underlying socket for blocking. Conversely if your application wants nonblocking behaviour then the underlying socket is configured to be nonblocking. ***<ins>`OpenSSL TLS 应用程序`和 `OpenSSL QUIC 应用程序`之间的显着区别在于阻塞的实现方式</ins>。在 TLS 中，如果您的应用程序期望阻塞行为，那么您可以将底层套接字配置为阻塞。相反，如果您的应用程序需要非阻塞行为，则底层套接字将配置为非阻塞***。
   * > With an OpenSSL QUIC application the underlying socket must always be configured to be nonblocking. Howevever the SSL object will, by default, still operate in blocking mode. So, from an application's perspective, calls to functions such as SSL_read_ex(3), SSL_write_ex(3) and other I/O functions will still block. OpenSSL itself provides that blocking capability for QUIC instead of the socket. If nonblocking behaviour is desired then the application must call SSL_set_blocking_mode(3). ***<ins>对于 `OpenSSL QUIC 应用程序`，底层套接字必须始终配置为非阻塞</ins>。然而，默认情况下，`SSL对象`仍将在阻止模式下运行***。因此，从应用程序的角度来看，对 [SSL_read_ex(3)]() 、[SSL_write_ex(3)]() 等函数以及其他 I/O 函数的调用仍然会阻塞。***OpenSSL 本身为 QUIC 而不是套接字提供了阻塞功能。如果需要非阻塞行为，则应用程序必须调用 [SSL_set_blocking_mode(3)]()*** 。
 
@@ -824,6 +825,111 @@ ossl-guide-quic-introduction https://docs.openssl.org/master/man7/ossl-guide-qui
 >> 【[ :star: ][`*`]】 //notes：官方示例完整代码： https://github.com/openssl/openssl/blob/master/demos/guide/quic-client-block.c
 
 ossl-guide-quic-client-block https://docs.openssl.org/master/man7/ossl-guide-quic-client-block/
+- > **SIMPLE `BLOCKING` QUIC CLIENT EXAMPLE¶ 简单阻止 QUIC 客户端示例**
+  * > This page will present various source code samples demonstrating how to write a simple blocking `QUIC client` application which connects to a server, sends an `HTTP/1.0` request to it, and reads back the response. Note that `HTTP/1.0` over `QUIC` is non-standard and will not be supported by real world servers. This is for demonstration purposes only. ***本页将提供各种源代码示例，演示如何编写一个简单的阻塞 `QUIC 客户端`应用程序，该应用程序连接到服务器、向其发送 `HTTP/1.0` 请求并读回响应***。请注意，***基于 `QUIC` 的 `HTTP/1.0` 是非标准，并且不会受到现实世界服务器的支持。这仅用于演示目的***。
+  * > We assume that you already have OpenSSL installed on your system; that you already have some fundamental understanding of OpenSSL concepts, TLS and QUIC (see ossl-guide-libraries-introduction(7), ossl-guide-tls-introduction(7) and ossl-guide-quic-introduction(7)); and that you know how to write and build C code and link it against the libcrypto and libssl libraries that are provided by OpenSSL. It also assumes that you have a basic understanding of UDP/IP and sockets. The example code that we build in this tutorial will amend the blocking TLS client example that is covered in ossl-guide-tls-client-block(7). Only the differences between that client and this one will be discussed so we also assume that you have run through and understand that tutorial. 我们假设您的系统上已经安装了 OpenSSL；您已经对 OpenSSL 概念、`TLS` 和 `QUIC` 有一些基本的了解（请参阅 [ossl-guide-libraries-introduction(7)]() 、[ossl-guide-tls-introduction(7)]() 和 [ossl-guide-quic-introduction(7)]() ）；并且您知道如何编写和构建 C 代码并将其链接到 OpenSSL 提供的 `libcrypto` 和 `libssl` 库。它还假设您对 `UDP/IP` 和`套接字`有基本的了解。***我们在本教程中构建的示例代码将修改 [ossl-guide-tls-client-block(7)]() 中介绍的`阻塞 TLS 客户端`示例***。将仅讨论该客户端与此客户端之间的差异，因此我们还假设您已经完成并理解该教程。
+  * > For this tutorial our client will be using a `single QUIC stream`. A subsequent tutorial will discuss how to write a `multi-stream client` (see [ossl-guide-quic-multi-stream(7)]()). ***在本教程中，我们的客户端将使用`单个 QUIC 流`***。后续教程将讨论如何编写`多流客户端`（请参阅 [ossl-guide-quic-multi-stream(7)]() ）。
+  * > The complete source code for this example `blocking QUIC client` is available in the **`demos/guide`** directory of the OpenSSL source distribution in the file **`quic-client-block.c`**. It is also available online at https://github.com/openssl/openssl/blob/master/demos/guide/quic-client-block.c . 此示例`阻塞 QUIC 客户端`的完整源代码可在 OpenSSL 源代码分发的 **`demos/guide`** 目录中的 **`quic-client-block.c`** 文件中找到。也可在线获取 https://github.com/openssl/openssl/blob/master/demos/guide/quic-client-block.c 。
+  * > **Creating the SSL_CTX and SSL objects¶ 创建 SSL_CTX 和 SSL 对象**
+    + > In the TLS tutorial (ossl-guide-tls-client-block(7)) we created an SSL_CTX object for our client and used it to create an SSL object to represent the TLS connection. A QUIC connection works in exactly the same way. We first create an SSL_CTX object and then use it to create an SSL object to represent the QUIC connection. 在 TLS 教程 ( [ossl-guide-tls-client-block(7)]() ) 中，我们为客户端创建了一个 **`SSL_CTX`** 对象，并使用它来创建一个 `SSL对象` 来表示 `TLS 连接`。 ***`QUIC 连接`的工作方式完全相同。我们首先创建一个 `SSL_CTX` 对象，然后使用它创建一个 `SSL对象` 来表示 `QUIC 连接`***。
+    + > As in the TLS example the first step is to create an SSL_CTX object for our client. This is done in the same way as before except that we use a different `"method"`. OpenSSL offers two different QUIC client methods, i.e. OSSL_QUIC_client_method(3) and OSSL_QUIC_client_thread_method(3). ***与 TLS 示例一样，第一步是为我们的客户端创建 `SSL_CTX` 对象。这与之前的方式相同，只是我们使用了不同的`“方法”`***。OpenSSL 提供两种不同的 `QUIC 客户端方法`，***即 [`OSSL_QUIC_client_method`(3)]() 和 [`OSSL_QUIC_client_thread_method`(3)]()*** 。
+    + > The first one is the equivalent of TLS_client_method(3) but for the QUIC protocol. The second one is the same, but it will additionally create a background thread for handling time based events (known as `"thread assisted mode"`, see ossl-guide-quic-introduction(7)). For this tutorial we will be using OSSL_QUIC_client_method(3) because we will not be leaving the QUIC connection idle in our application and so thread assisted mode is not needed. ***第一个相当于 [TLS_client_method(3)]()，但适用于 `QUIC` 协议。第二个是相同的，但它会另外创建一个后台线程来处理基于时间的事件（称为`“线程辅助模式”`，请参阅 [ossl-guide-quic-introduction(7)]() ）***。在本教程中，我们将使用 [OSSL_QUIC_client_method(3)]()，因为我们不会让应用程序中的 `QUIC 连接`处于空闲状态，因此不需要线程辅助模式。
+      ```c
+      /*
+       * Create an SSL_CTX which we can use to create SSL objects from. We
+       * want an SSL_CTX for creating clients so we use OSSL_QUIC_client_method()
+       * here.
+       */
+      ctx = SSL_CTX_new(OSSL_QUIC_client_method());
+      if (ctx == NULL) {
+          printf("Failed to create the SSL_CTX\n");
+          goto end;
+      }
+      ```
+    + > The other setup steps that we applied to the SSL_CTX for TLS also apply to QUIC except for restricting the TLS versions that we are willing to accept. The QUIC protocol implementation in OpenSSL currently only supports TLSv1.3. There is no need to call SSL_CTX_set_min_proto_version(3) or SSL_CTX_set_max_proto_version(3) in an OpenSSL QUIC application, and any such call will be ignored. ***除了限制我们愿意接受的 TLS 版本之外，我们应用于 TLS 的 `SSL_CTX` 的其他设置步骤也适用于 QUIC。<ins>OpenSSL 中的 QUIC 协议实现目前仅支持 `TLSv1.3`</ins>。无需在 OpenSSL QUIC 应用程序中调用 [SSL_CTX_set_min_proto_version(3)]() 或 [SSL_CTX_set_max_proto_version(3)]() ，任何此类调用都将被忽略***。
+    + > Once the SSL_CTX is created, the SSL object is constructed in exactly the same way as for the TLS application. ***创建 `SSL_CTX` 后，`SSL对象`的构造方式与 `TLS 应用程序`完全相同***。
+  * > **Creating the socket and BIO¶ 创建套接字和 BIO**
+    + > A major difference between TLS and QUIC is the underlying transport protocol. TLS uses TCP while QUIC uses UDP. The way that the QUIC socket is created in our example code is much the same as for TLS. We use the BIO_lookup_ex(3) and BIO_socket(3) helper functions as we did in the previous tutorial except that we pass `SOCK_DGRAM` as an argument to indicate UDP (instead of `SOCK_STREAM` for TCP). ***TLS 和 QUIC 之间的主要区别在于底层传输协议。`TLS` 使用 `TCP`，而 `QUIC` 使用 `UDP`***。在我们的示例代码中创建 `QUIC 套接字`的方式与 TLS 非常相似。我们使用 [BIO_lookup_ex(3]() 和 [BIO_socket(3)]() 辅助函数，就像我们在上一个教程中所做的那样，***只是我们传递 `SOCK_DGRAM` 作为参数来指示 `UDP`（而不是 `TCP` 的 `SOCK_STREAM`）***。
+    + > You may notice a couple of other differences between this code and the version that we used for TLS. 您可能会注意到此代码与我们用于 TLS 的版本之间还有一些其他差异。
+    + > Firstly, we set the `socket` into `nonblocking` mode. This must always be done for an OpenSSL QUIC application. This may be surprising considering that we are trying to write a blocking client. Despite this the SSL object will still have blocking behaviour. See ossl-guide-quic-introduction(7) for further information on this. ***首先，我们将`套接字`设置为`非阻塞`模式。<ins>对于 OpenSSL QUIC 应用程序，必须始终执行此操作</ins>***。考虑到我们正在尝试编写一个阻塞客户端，这可能会令人惊讶。尽管如此，***`SSL对象`仍然具有阻塞行为***。有关详细信息，请参阅 [ossl-guide-quic-introduction(7)]() 。
+    + > Secondly, we take note of the IP address of the peer that we are connecting to. We store that information away. We will need it later. 其次，我们记下要连接的对等方的 IP 地址。我们将这些信息存储起来。我们稍后会需要它。
+    + > As for our TLS client, once the socket has been created and connected we need to associate it with a BIO object: 类似于我们的 TLS 客户端，一旦创建并连接了套接字，我们需要将其与 BIO 对象关联：
+      ```c
+      BIO *bio;
+
+      /* Create a BIO to wrap the socket */
+      bio = BIO_new(BIO_s_datagram());
+      if (bio == NULL) {
+          BIO_closesocket(sock);
+          return NULL;
+      }
+
+      /*
+       * Associate the newly created BIO with the underlying socket. By
+       * passing BIO_CLOSE here the socket will be automatically closed when
+       * the BIO is freed. Alternatively you can use BIO_NOCLOSE, in which
+       * case you must close the socket explicitly when it is no longer
+       * needed.
+       */
+      BIO_set_fd(bio, sock, BIO_CLOSE);
+      ```
+    + > Note the use of BIO_s_datagram(3) here as opposed to BIO_s_socket(3) that we used for our TLS client. This is again due to the fact that QUIC uses UDP instead of TCP for its transport layer. See BIO_new(3), BIO_s_datagram(3) and BIO_set_fd(3) for further information on these functions. ***请注意此处使用的是 [BIO_s_datagram(3)]()，而不是我们用于 TLS 客户端的[BIO_s_socket(3)]()*** 。这又是由于 QUIC 使用 UDP 而不是 TCP 作为其传输层。有关这些函数的更多信息，请参见 [BIO_new(3)]() 、[BIO_s_datagram(3)]() 和 [BIO_set_fd(3)]() 。
+  * > **Setting the server's hostname¶ 设置服务器的主机名**
+    + > As in the TLS tutorial we need to set the server's hostname both for SNI (Server Name Indication) and for certificate validation purposes. The steps for this are identical to the TLS tutorial and won't be repeated here. 正如在 TLS 教程中一样，我们需要为 `SNI`（`服务器名称指示`）和证书验证目的设置服务器的主机名。***此步骤与 TLS 教程相同，此处不再重复***。
+  * > **Setting the `ALPN`¶ 设置 `ALPN`**
+    + > ALPN (Application-Layer Protocol Negotiation) is a feature of TLS that enables the application to negotiate which protocol will be used over the connection. For example, if you intend to use HTTP/3 over the connection then the ALPN value for that is "h3" (see https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xml#alpn-protocol-ids ). OpenSSL provides the ability for a client to specify the ALPN to use via the SSL_set_alpn_protos(3) function. This is optional for a TLS client and so our simple client that we developed in ossl-guide-tls-client-block(7) did not use it. However QUIC mandates that the TLS handshake used in establishing a QUIC connection must use ALPN. ***`ALPN`（`应用程序层协议协商`）是 TLS 的一项功能，使应用程序能够协商在连接上使用哪个协议***。例如，如果您打算通过连接使用 HTTP/3，则 ALPN 值为“h3”（请参阅​​ https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xml#alpn-protocol-ids ）。OpenSSL 使客户端能够通过 [SSL_set_alpn_protos(3)]() 函数指定要使用的 `ALPN`。这对于 TLS 客户端来说是可选的，因此我们在 [ossl-guide-tls-client-block(7)]() 中开发的简单客户端没有使用它。***然而，`QUIC` 要求建立 `QUIC 连接`时使用的 `TLS 握手`必须使用 `ALPN`***。
+      ```c
+      unsigned char alpn[] = { 8, 'h', 't', 't', 'p', '/', '1', '.', '0' };
+
+      /* SSL_set_alpn_protos returns 0 for success! */
+      if (SSL_set_alpn_protos(ssl, alpn, sizeof(alpn)) != 0) {
+          printf("Failed to set the ALPN for the connection\n");
+          goto end;
+      }
+      ```
+    + > The ALPN is specified using a length prefixed array of unsigned chars (it is not a NUL terminated string). Our original TLS blocking client demo was using HTTP/1.0. We will use the same for this example. Unlike most OpenSSL functions SSL_set_alpn_protos(3) returns zero for success and nonzero for failure. `ALPN` 使用长度前缀的无符号字符数组指定（它不是 NUL 终止的字符串）。我们最初的 TLS 阻止客户端演示使用的是 HTTP/1.0。我们将在本示例中使用相同的内容。***与大多数 OpenSSL 函数不同， [SSL_set_alpn_protos(3)]() 成功时返回零，失败时返回非零***。
+  * > **Setting the peer address¶ 设置对端地址**
+    + > An OpenSSL QUIC application must specify the target address of the server that is being connected to. In "Creating the socket and BIO" above we saved that address away for future use. Now we need to use it via the SSL_set1_initial_peer_addr(3) function. ***`OpenSSL QUIC 应用程序`必须指定要连接的服务器的目标地址***。在上面的“创建套接字和 BIO”中，我们保存了该地址以供将来使用。现在我们需要通过 [SSL_set1_initial_peer_addr(3)]() 函数使用它。
+      ```c
+      /* Set the IP address of the remote peer */
+      if (!SSL_set1_initial_peer_addr(ssl, peer_addr)) {
+          printf("Failed to set the initial peer address\n");
+          goto end;
+      }
+      ```
+    + > Note that we will need to free the peer_addr value that we allocated via BIO_ADDR_dup(3) earlier: 请注意，我们需要释放之前通过 [BIO_ADDR_dup(3)]() 分配的 `peer_addr` 值：
+      ```c
+      BIO_ADDR_free(peer_addr);
+      ```
+  * > **The handshake and application data transfer¶ 握手和应用程序数据传输**
+    + > Once initial setup of the SSL object is complete then we perform the handshake via SSL_connect(3) in exactly the same way as we did for the TLS client, so we won't repeat it here. 一旦`SSL对象`的初始设置完成，我们就通过 [SSL_connect(3)]() 执行握手，其方式与我们对 `TLS 客户端`所做的完全相同，因此我们在此不再重复。
+    + > We can also perform data transfer using a `default QUIC stream` that is automatically associated with the `SSL object` for us. We can transmit data using SSL_write_ex(3), and receive data using SSL_read_ex(3) in the same way as for TLS. The main difference is that we have to account for failures slightly differently. With QUIC the stream can be reset by the peer (which is fatal for that stream), but the underlying connection itself may still be healthy. 我们还可以使用自动与`SSL对象`关联的`默认 QUIC 流`执行数据传输。我们可以使用 [SSL_write_ex(3)]() 传输数据，并使用 [SSL_read_ex(3)]() 接收数据，方式与 TLS 相同。主要区别在于我们对失败的解释略有不同。***使用 QUIC，流可以由对等方重置（这对于该流来说是致命的），但底层连接本身可能仍然是健康的***。
+    + > In the above code example you can see that SSL_ERROR_SSL indicates a stream fatal error. We can use SSL_get_stream_read_state(3) to determine whether the stream has been reset, or if some other fatal error has occurred. 在上面的代码示例中，您可以看到 **`SSL_ERROR_SSL`** 指示流致命错误。我们可以使用 [SSL_get_stream_read_state(3)]() 来确定流是否已重置，或者是否发生了其他致命错误。
+  * > **Shutting down the connection¶ 关闭连接**
+    + > In the TLS tutorial we knew that the server had finished sending data because SSL_read_ex(3) returned 0, and SSL_get_error(3) returned SSL_ERROR_ZERO_RETURN. The same is true with QUIC except that SSL_ERROR_ZERO_RETURN should be interpreted slightly differently. With TLS we knew that this meant that the server had sent a `"close_notify" alert`. No more data will be sent from the server on that connection. ***在 TLS 教程中，我们知道服务器已完成发送数据，因为 [SSL_read_ex(3)]() 返回 `0`，并且 [SSL_get_error(3)]() 返回 `SSL_ERROR_ZERO_RETURN`。QUIC 也是如此，只是 `SSL_ERROR_ZERO_RETURN` 的解释应该略有不同***。通过 TLS，我们知道这意味着服务器已发送`“close_notify”警报`。该连接上的服务器将不再发送任何数据。
+    + > With QUIC it means that the server has indicated `"FIN"` on the stream, meaning that it will no longer send any more data on that stream. However this only gives us information about the stream itself and does not tell us anything about the underlying connection. More data could still be sent from the server on some other stream. Additionally, although the server will not send any more data to the client, it does not prevent the client from sending more data to the server. ***对于 QUIC，这意味着服务器已在流上指示`“FIN”`，这意味着它将不再在该流上发送任何更多数据。然而，这仅向我们提供有关流本身的信息，并没有告诉我们有关底层连接的任何信息。更多数据仍可以通过其他流从服务器发送***。另外，***虽然服务器不会再向客户端发送更多的数据，但这并不妨碍客户端向服务器发送更多的数据***。
+    + > In this tutorial, once we have finished reading data from the server on the one stream that we are using, we will close the connection down. As before we do this via the SSL_shutdown(3) function. This example for QUIC is very similar to the TLS version. However the SSL_shutdown(3) function will need to be called more than once: 在本教程中，一旦我们在正在使用的一个流上从服务器读取数据后，我们将关闭连接。***和之前一样，我们通过 [SSL_shutdown(3)]() 函数执行此操作。QUIC 的此示例与 TLS 版本非常相似。然而 [SSL_shutdown(3)]() 函数需要被多次调用***：
+      ```c
+      /*
+       * Repeatedly call SSL_shutdown() until the connection is fully
+       * closed.
+       */
+      do {
+          ret = SSL_shutdown(ssl);
+          if (ret < 0) {
+              printf("Error shutting down: %d\n", ret);
+              goto end;
+          }
+      } while (ret != 1);
+      ```
+    + > The shutdown process is in two stages. In the first stage we wait until all the data we have buffered for sending on any stream has been successfully sent and acknowledged by the peer, and then we send a CONNECTION_CLOSE to the peer to indicate that the connection is no longer usable. This immediately closes the connection and no more data can be sent or received. SSL_shutdown(3) returns `0` once the first stage has been completed. ***关闭过程分两个阶段。在第一阶段，我们等待，直到我们缓冲的用于在任何流上发送的所有数据都已成功发送并被对等方确认，然后我们向对等方发送 `CONNECTION_CLOSE` 以指示该连接不再可用。<ins>这会立即关闭连接，并且无法发送或接收更多数据</ins>。第一阶段完成后，[SSL_shutdown(3)]() 返回 `0`***。
+    + > In the second stage the connection enters a `"closing"` state. Application data cannot be sent or received in this state, but late arriving packets coming from the peer will be handled appropriately. Once this stage has completed successfully SSL_shutdown(3) will return `1` to indicate success. ***在第二阶段，连接进入`“关闭”`状态。<ins>在此状态下无法发送或接收应用程序数据，但来自对等方的迟到数据包将得到适当处理</ins>。一旦此阶段成功完成，[SSL_shutdown(3)]() 将返回 `1` 表示成功***。
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## ossl-guide-quic-multi-stream
+
+ossl-guide-quic-multi-stream https://docs.openssl.org/master/man7/ossl-guide-quic-multi-stream/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
