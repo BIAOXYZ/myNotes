@@ -39,7 +39,7 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 
 ### 2025.01
 
-全同态加密：现状与未来 https://mp.weixin.qq.com/s/ZPWLGXLVikGyYIxujlBZIA
+全同态加密：现状与未来 https://mp.weixin.qq.com/s/ZPWLGXLVikGyYIxujlBZIA || 全同态加密理论、生态现状与未来展望（上） https://blog.csdn.net/mutourend/article/details/145101069
 
 ### 2022.03
 

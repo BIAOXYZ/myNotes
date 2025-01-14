@@ -151,7 +151,7 @@ Linux安全体系学习笔记 OpenSSL源代码分析(1) https://www.linuxidc.com
 
 测试蝈蝈 -- openssl https://www.cnblogs.com/testlife007/category/953160.html
 - Openssl源代码整理学习 https://www.cnblogs.com/testlife007/p/6699566.html
-- Openssl编程--源码分析 https://www.cnblogs.com/testlife007/p/6738506.html
+- ~~Openssl编程--源码分析 https://www.cnblogs.com/testlife007/p/6738506.html~~  【//已转移】
 
 艾-小小雨 -- openssl https://blog.csdn.net/aixiaoxiaoyu/article/category/7346344
 - 13.openssl编程——ASN1库 https://blog.csdn.net/aixiaoxiaoyu/article/details/79175837
