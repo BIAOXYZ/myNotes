@@ -81,7 +81,11 @@ PostgreSQL执行引擎简介 http://www.leehao.org/postgresql-executioneng/
 
 # mingjie https://cloud.tencent.com/developer/user/2061863
 
-Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/article/2000622
+Postgresql源码分析 https://cloud.tencent.com/developer/column/95448
+
+pgsql https://blog.csdn.net/jackgo73/category_8879705.html
+
+~~Postgresql源码（1）Tuple组装工厂 https://cloud.tencent.com/developer/article/2000622~~  【//已转移】
 
 Postgresql源码（25）子事务可见性判断和性能问题 https://blog.csdn.net/jackgo73/article/details/122363386
 
