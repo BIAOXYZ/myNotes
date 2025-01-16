@@ -9,6 +9,13 @@ https://blog.csdn.net/shaoyiwenet/article/details/79377068
 Cryptdb学习笔记（0）——初识 - CSDN博客
 https://blog.csdn.net/liuyueyi1995/article/details/54892399
 
+Cryptdb的设计与实现 https://yiwenshao.github.io/categories/Cryptdb%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/
+- Cryptdb原理概述(1) https://yiwenshao.github.io/2017/05/01/Cryptdb%E5%8E%9F%E7%90%86%E6%A6%82%E8%BF%B0/
+- CryptDB代码分析5-底层加密库与加密层 https://yiwenshao.github.io/2018/03/25/CryptDB%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%905-%E5%BA%95%E5%B1%82%E5%8A%A0%E5%AF%86%E5%BA%93%E4%B8%8E%E5%8A%A0%E5%AF%86%E5%B1%82/
+
+Re-implementing CryptDB https://medium.com/princeton-systems-course/re-implementing-cryptdb-dbb8c582e9d9
+- The source code for our project can be found at https://github.com/somanayr/cs518-cryptdb .
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # other secure DBs

@@ -248,6 +248,41 @@ Antchain-MPC https://github.com/alipay/Antchain-MPC
 - 用户指南 https://help.aliyun.com/document_detail/364171.html
   * 脚本文件管理 https://help.aliyun.com/document_detail/364175.htm
 
+PSI based on ECDH https://datatracker.ietf.org/doc/draft-ecdh-psi/
+- https://www.ietf.org/archive/id/draft-ecdh-psi-00.html
+  ```console
+                A(data_A,sk_A)                  B(data_B,sk_B)
+  -----------------------------------------------------------------------
+  Step 1:             |                               |
+                      |                               |
+              p_A=scalar_mul(sk_A,            p_B=scalar_mul(sk_B,
+              hash_to_curve(data_A))          hash_to_curve(data_B))
+                      |                               |
+  Step 2:             |                               |
+                      |                               |
+                      |-------------p_A-------------->|
+                      |<------------p_B---------------|
+                      |                               |
+  Step 3:             |                               |
+                      |                               |
+         p_AB=scalar_mul(sk_A,p_B)     p_BA = scalar_mul(sk_B,p_A)
+                      |                               |
+                      |                               |
+                      |                               |
+  Step 4:             |                               |
+                      |                               |
+                      |-------------p_AB------------->|
+                      |<------------p_BA--------------|
+                      |                               |
+  Step 5:             |                               |
+                      |                               |
+           set_A=intersect(p_AB,p_BA)      set_B=intersect(p_BA,p_AB)
+                      |                               |
+                      |                               |
+           output match(set_A,data_A)      output match(set_B,data_B)
+  ```
+  > Figure 1: A Simplified Protocol Flow of ECDH-PSI
+
 ## 百度
 
 PrivC—A Framework for Efficient Secure Two-Party Computation https://link.springer.com/chapter/10.1007/978-3-030-37231-6_23
