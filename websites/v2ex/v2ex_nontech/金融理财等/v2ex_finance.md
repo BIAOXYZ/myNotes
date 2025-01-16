@@ -1,4 +1,6 @@
 
+国内如何收美金？ https://www.v2ex.com/t/1105193
+
 A 股有交易 API 吗 https://www.v2ex.com/t/1091638
 - > 我只知道券商 200w 达标可以有 QMT 的权限
 - > 可以搜索 QMT
