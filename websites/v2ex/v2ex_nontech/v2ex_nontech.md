@@ -158,6 +158,11 @@
 
 # 休闲娱乐
 
+大家有没有让人上头的小游戏，简单而且让人上瘾 https://www.v2ex.com/t/1105675
+- > https://minesweeper.cn/
+- > 数独 https://sudoku.com/zh
+- > https://xingye.me/game/FlowersVsZombies/
+
 你最希望拍成影视剧的小说是哪一部？不限题材 https://www.v2ex.com/t/1104589
 
 兄弟们，求剧(动漫) https://www.v2ex.com/t/1097235
