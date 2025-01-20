@@ -41,3 +41,107 @@
 - 【史诗/进击的巨人夺回篇·下】竭尽全力对抗这残酷的世界！ https://www.bilibili.com/video/BV13t411L7Tn/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 音乐类
+
+（更新至完结篇后篇最新OP/ED）进击的巨人/自由之翼 全四季OP/ED/插曲合集 1080P NCOP/ED https://www.bilibili.com/video/BV1As411P78o/
+
+【中字现场全收录/分P】泽野弘之 进击的巨人动画插入歌Live合集 https://www.bilibili.com/video/BV1Np4y1h7iR/
+
+【进击的巨人】插曲歌词（中文对照） https://www.bilibili.com/opus/584665673142796944
+
+## from `小小佐仓千代`
+
+合集·进击的巨人音乐盘点合集 https://space.bilibili.com/14577351/channel/collectiondetail?sid=1855821
+- 《进击的巨人》第一季插曲&BGM全回顾（永久珍藏） https://www.bilibili.com/video/BV1p94y1V7CH/
+- 《进击的巨人》第二季插曲&BGM全回顾（永久珍藏） https://www.bilibili.com/video/BV1UN4y1S7KD/
+- 《进击的巨人》第三季插曲&BGM全回顾（永久珍藏） https://www.bilibili.com/video/BV1Wb4y1g7iY/
+
+【TOP25】进击的巨人全系列音乐人气排行榜，第一名是它？ https://www.bilibili.com/video/BV1o94y1z7bz/
+- 回复：
+  * > 跳转目录
+    ```console
+    25《自由之翼》00:31
+    24《Name of Love》01:45
+    23《So ist es immer（总是这样）》03:16
+    22《Vogel im Kafig（笼中鸟）》06:10
+    21《憧憬与尸骸之路》09:17
+    20《Red Swan》10:51
+    19《Bauklotze（积木）》12:52
+    18《黄昏之鸟》16:00
+    17《美丽又残酷的世界》17:32
+    16《eye-water》18:24
+    15《The Reluctant Heroes》20:52
+    14《拂晓的镇魂歌》22:33
+    13《at'aek ON taitn（变身神曲）》24:11
+    12《Call your name<GV>》27:07
+    11《冲击》29:09
+    10《The Rumbling》30:56
+    9《叛变神曲》32:15
+    8《Call your name（堵门神曲）》 33:50
+    7《zero Eclipse（摔爹神曲）》35:14
+    6《Barricades》38:43
+    5《Call of Silence（星空神曲）》40:35
+    4《我的战争》42:54
+    3《献出心脏》44:20
+    2《恶魔之子》45:47
+    1《红莲之弓矢》49:19
+    ```
+
+二次元演唱会第六期：进击的巨人篇（巨人十大神曲live现场，每一个都是堪称神级现场） https://www.bilibili.com/video/BV1wf421m78T/
+- 回复：
+  * > 【献给喜欢巨人的你】十年青春一场梦，要是巨人永不完结就好了。曲目表：
+    ```console
+    1.地鸣
+    2.星空/重生神曲
+    3.叛变神曲
+    4.变身神曲
+    5.堵门神曲
+    6.摔爹神曲
+    7.女王华尔兹
+    8.献出心脏
+    9.红莲的弓矢
+    10.11.压轴 + 彩蛋
+    ```
+    > 晚安，艾伦。
+
+## `Attack on Titan`
+
+进击的巨人最燃神曲！「ətˈæk 0N tάɪtn 」歌词版 https://www.bilibili.com/video/BV1wa411b7fX/
+```console
+https://www.bilibili.com/video/BV1kt4y1q7GE/
+“Attack on Titan” suite 
+「ətˈæk 0N tάɪtn <WMId>」 
+Vocal : Eliana 
+Lyrics : Rie
+```
+- 回复：
+  * > `「ətˈæk 0N tάɪtn <WMId>」`收录于 “Attack on Titan” 第三季Part2，由`Eliana`演唱。
+    >> 小林版的好听点
+    >>> 小林差多了
+    >>>> 最强版本 无限循环
+  * > 我觉得`eliana`这版最好，比如Wille那里只有`eliana`用真声顶上去了。
+  * > 个人感觉这个版本比小林的好
+  * > 听了各个版本的，***这版跟其他都不是一个维度的，只能说碾压其他任何版本***
+  * > 代入感很强，已经塔塔开了
+  * > 比谭晶的好了不是一点半点
+  * > 这秒杀了原唱一个维度。。。。。。。。
+
+小林未郁演唱会，进击的巨人主题曲《ət'æk 0N tάɪtn》 https://www.bilibili.com/video/BV1Y4411t733/
+
+墙裂预警！谭晶携Echo合唱团震撼献唱《attack ON titan》炸场来袭！ https://www.bilibili.com/video/BV1Yo4y1C77M/
+
+## `恶魔之子`
+
+【樋口爱】《恶魔之子》世界残酷 而我爱你【BML2024单品】 https://www.bilibili.com/video/BV1hS411c7ap/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 剧情向视频
+
+合集·进击的巨人战役 https://space.bilibili.com/3493128598194677/channel/collectiondetail?sid=4369580
+- 当年有多少人是被这个神级开头所吸引入坑的？进击的巨人 https://www.bilibili.com/video/BV1XHcEeeErc/
+  * 回复：
+    - 01:23 我永远忘不了这里，因为当时我还问我朋友这是哪个番，他和我说这里都说了，是未闻花名，单纯的我信了 ![](https://i0.hdslb.com/bfs/new_dyn/431f735973770d8b444a33ab0fdf2c20104920061.png)
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
