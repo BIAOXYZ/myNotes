@@ -8,6 +8,8 @@ Free Download Manager https://www.freedownloadmanager.org/
 aria2 - The ultra fast download utility https://github.com/aria2/aria2 || https://aria2.github.io/
 - Aria2 for Chrome https://chrome.google.com/webstore/detail/aria2-for-chrome/mpkodccbngfoacfalldjimigbofkhgjn
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 网站类下载器
 
 ## 国内
@@ -26,6 +28,8 @@ aria2 - The ultra fast download utility https://github.com/aria2/aria2 || https:
 - 字幕弹幕
   * 轻松免费下载哔哩哔哩字幕 https://www.feiyudo.com/caption/subtitle/bilibili
   * 轻松免费下载YouTube字幕 https://www.feiyudo.com/caption/subtitle/youtube
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 国外
 
@@ -46,6 +50,19 @@ Twitter Video Downloader https://twittervideodownloader.com/
 
 YouTube高清视频下载 https://youtube.iiilab.com/
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # 其他下载器
 
 cobalt https://github.com/wukko/cobalt || https://cobalt.tools/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 不太成熟的下载器
+
+Hitomi-Downloader https://github.com/KurtBestor/Hitomi-Downloader
+- Chrome Extension https://github.com/KurtBestor/Hitomi-Downloader/wiki/Chrome-Extension
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:

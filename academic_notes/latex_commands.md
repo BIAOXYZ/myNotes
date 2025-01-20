@@ -18,7 +18,9 @@ Compiling documents online https://tex.stackexchange.com/questions/3/compiling-d
 - LaTeX Base https://latexbase.com/
 
 LaTeX.Online https://latexonline.cc/
-> https://github.com/aslushnikov/latex-online
+- https://github.com/aslushnikov/latex-online
+- Stand-Alone Version https://hub.docker.com/r/aslushnikov/latex-online/
+  * https://github.com/aslushnikov/latex-online#deploy-with-docker
 
 Online Latex Editor (TeX Live 2016) https://www.tutorialspoint.com/online_latex_editor.php
 
