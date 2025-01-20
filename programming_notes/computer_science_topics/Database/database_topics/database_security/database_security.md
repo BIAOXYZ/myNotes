@@ -16,6 +16,10 @@ Cryptdb的设计与实现 https://yiwenshao.github.io/categories/Cryptdb%E7%9A%8
 Re-implementing CryptDB https://medium.com/princeton-systems-course/re-implementing-cryptdb-dbb8c582e9d9
 - The source code for our project can be found at https://github.com/somanayr/cs518-cryptdb .
 
+## 其他全密态数据库
+
+全密态数据库性能测试报告 https://help.aliyun.com/zh/rds/apsaradb-rds-for-postgresql/performance-testing-reports-of-fully-encrypted-databases
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # other secure DBs

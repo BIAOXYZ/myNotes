@@ -21,6 +21,12 @@ aria2 - The ultra fast download utility https://github.com/aria2/aria2 || https:
 
 视频鱼 http://www.shipinyu.com/
 
+飞鱼视频下载助手: 免费视频下载工具 https://www.feiyudo.com/
+- 视频解析 https://www.feiyudo.com/extract
+- 字幕弹幕
+  * 轻松免费下载哔哩哔哩字幕 https://www.feiyudo.com/caption/subtitle/bilibili
+  * 轻松免费下载YouTube字幕 https://www.feiyudo.com/caption/subtitle/youtube
+
 ## 国外
 
 savefrom.net https://en.savefrom.net/
