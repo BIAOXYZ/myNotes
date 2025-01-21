@@ -81,6 +81,13 @@ How can I save tabs in iTerm 2 so they restore the next time the app is run? htt
 
 iTerm2 配置和美化 https://sspai.com/post/63241
 
+## [WindTerm](https://github.com/kingToolbox/WindTerm)
+
+WindTerm https://github.com/kingToolbox/WindTerm
+- Linux binary, MacOS binary and Windows binary: https://github.com/kingToolbox/WindTerm/releases
+
+WindTerm最详细的使用教程 - 运维圈子的文章 - 知乎 https://zhuanlan.zhihu.com/p/468501270
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # mac vnc
