@@ -240,6 +240,8 @@ SOFAJRAFT -- An industrial-grade java implementation of RAFT consensus algorithm
 
 # 分布式一致性hash
 
+【from `朱双印个人日志`】 白话解析：一致性哈希算法 consistent hashing https://www.zsythink.net/archives/1182
+
 分布式系统中一致性哈希算法 https://www.cnblogs.com/jajian/p/10896624.html
 - > **基本思想原理**
   * > 既然 hash的计算结果是 int 类型，而 java 中 int 的最小值是 `-2^31`，最大值是 `2^31-1`。意味着任何通过哈希取模之后的无符号值都会在 `0 ~ 2^31-1` 范围之间，共 `2^32` 个数。那我们是否可以不对服务器的数量进行取模而是直接对 `2^32` 取模。这就形成了一致性哈希的基本算法思想，什么意思呢？
