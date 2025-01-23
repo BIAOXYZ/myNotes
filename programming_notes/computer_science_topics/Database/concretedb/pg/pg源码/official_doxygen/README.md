@@ -170,6 +170,136 @@ $74 = {type = T_ColumnRef}
 sinvaladt.c https://doxygen.postgresql.org/sinvaladt_8c_source.html
 - GetNextLocalTransactionId() https://doxygen.postgresql.org/sinvaladt_8c.html#ab2c7e4dafedb1f32f7b62d1d050134f5
 
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 2025.01 (PG 16)
+
+PostgreSQL 源码解读（204）- 查询#117(数据结构SelectStmt&Value) https://blog.itpub.net/6906/viewspace-2647991/ || https://blog.csdn.net/cuichao1900/article/details/100394894
+```sh
+(gdb) p *(RawStmt *)(raw_parsetree_list->head.data->ptr_value)
+$7 = {type = T_RawStmt, stmt = 0x1a48c00, stmt_location = 0, stmt_len = 232}
+(gdb) p *((RawStmt *)(raw_parsetree_list->head.data->ptr_value))->stmt
+$8 = {type = T_SelectStmt}
+###### 实际类型SelectStmt 
+(gdb)  p *(SelectStmt *)((RawStmt *)(raw_parsetree_list->head.data->ptr_value))->stmt
+$16 = {type = T_SelectStmt, distinctClause = 0x0, intoClause = 0x0, targetList = 0x1a47b18, 
+  fromClause = 0x1a48900, whereClause = 0x1a48b40, groupClause = 0x0, havingClause = 0x0, windowClause = 0x0, 
+  valuesLists = 0x0, sortClause = 0x1afd858, limitOffset = 0x0, limitCount = 0x1afd888, lockingClause = 0x0, 
+  withClause = 0x0, op = SETOP_NONE, all = false, larg = 0x0, rarg = 0x0}
+```
+
+```sh
+# pg 16 版本 List 连 head 成员都没有了。。。还好能用 list_head() 函数。
+# 此外，下面这些出错和正确的根因是 -> 比 * 优先级高，所以要加括号。
+>>> p *list_head(parsetree_list)->ptr_value 
+Attempt to dereference a generic pointer.
+>>> p (*list_head(parsetree_list))->ptr_value
+$21 = (void *) 0xaaaaf968c640
+>>> 
+>>> p *(*list_head(parsetree_list))->ptr_value
+Attempt to dereference a generic pointer.
+>>> p list_head(parsetree_list)->ptr_value
+$23 = (void *) 0xaaaaf968c640
+
+# 然后得转成 RawStmt 才能进一步打印
+>>> ptype (RawStmt*)list_head(parsetree_list)->ptr_value
+type = struct RawStmt {
+    NodeTag type;
+    Node *stmt;
+    int stmt_location;
+    int stmt_len;
+} *
+>>> p ((RawStmt*)list_head(parsetree_list)->ptr_value)->type
+$30 = T_RawStmt
+
+# 此外，可以活用 gdb 的 set 命令
+>>> set $head = list_head(parsetree_list)
+>>> p head
+No symbol "head" in current context.
+>>> p $head
+$35 = (ListCell *) 0xaaaaf968c688 
+>>> p ((RawStmt*)$head->ptr_value)->stmt->type
+$41 = T_SelectStmt
+>>> set $root = ((RawStmt*)$head->ptr_value)->stmt
+>>> p $root->type
+$42 = T_SelectStmt
+
+>>> p $root
+$43 = (Node *) 0xaaaaf968c530
+>>> p (SelectStmt*)$root
+$44 = (SelectStmt *) 0xaaaaf968c530
+>>> p *(SelectStmt*)$root
+$45 = {
+  type = T_SelectStmt,
+  distinctClause = 0x0,
+  intoClause = 0x0,
+  targetList = 0xaaaaf968c408,
+  fromClause = 0xaaaaf968c4c0,
+  whereClause = 0x0,
+  groupClause = 0x0,
+  groupDistinct = false,
+  havingClause = 0x0,
+  windowClause = 0x0,
+  valuesLists = 0x0,
+  sortClause = 0x0,
+  limitOffset = 0x0,
+  limitCount = 0x0,
+  limitOption = LIMIT_OPTION_COUNT,
+  lockingClause = 0x0,
+  withClause = 0x0,
+  op = SETOP_NONE,
+  all = false,
+  larg = 0x0,
+  rarg = 0x0
+}
+
+>> set $selectroot = (SelectStmt*)$root
+>>> p $selectroot   
+$58 = (SelectStmt *) 0xaaaaf968c530
+>>> p *$selectroot
+$59 = {
+  type = T_SelectStmt,
+  distinctClause = 0x0,
+  intoClause = 0x0,
+  targetList = 0xaaaaf968c408,
+  fromClause = 0xaaaaf968c4c0,
+  whereClause = 0x0,
+  groupClause = 0x0,
+  groupDistinct = false,
+  havingClause = 0x0,
+  windowClause = 0x0,
+  valuesLists = 0x0,
+  sortClause = 0x0,
+  limitOffset = 0x0,
+  limitCount = 0x0,
+  limitOption = LIMIT_OPTION_COUNT,
+  lockingClause = 0x0,
+  withClause = 0x0,
+  op = SETOP_NONE,
+  all = false,
+  larg = 0x0,
+  rarg = 0x0
+}
+```
+
+```sh
+>>> p (SelectStmt*)$root->type
+$48 = (SelectStmt *) 0x7b
+>>> p ((SelectStmt*)$root)->type
+$49 = T_SelectStmt
+
+第一个表达式 (SelectStmt*)$root->type:
+    先执行 ->type
+    然后对结果做类型转换
+    这是错误的用法
+第二个表达式 ((SelectStmt*)$root)->type:
+    先把 $root 转换为 SelectStmt*
+    然后访问 type 成员
+    这是正确的用法
+```
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # `.gdbinit` for pg debug
 
 Tip 15: get GDB to print your structures https://modelingwithdata.org/arch/00000065.htm
