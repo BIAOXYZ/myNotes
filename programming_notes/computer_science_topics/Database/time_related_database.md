@@ -88,11 +88,17 @@ TDengine https://github.com/taosdata/TDengine
 
 TDengine | Time-Series Database for Industrial IoT https://tdengine.com/
 
-## GreptimeDB
+## 格睿科技
 
 GreptimeDB https://github.com/GreptimeTeam/greptimedb
 
 Greptime https://greptime.com/
+
+Greptime https://greptime.cn/
+- https://greptime.cn/about
+  * > 格睿科技成立于2022年，致力于帮助各行业挖掘和使用他们的时序数据，无论是指标、日志还是事件。我们帮助车联网（CV）、物联网（IoT）和可观测领域的企业高效地、实时地挖掘数据的潜在价值。
+  * > GreptimeDB 于 2022 年 11 月在 GitHub 上开源，并迅速在 GitHub 全球趋势中排名第一，持续了数天。从那时起，来自全球 10 多个国家和地区的贡献者加入了我们，开源社区仍在不断壮大。
+  * > 格睿科技团队来自世界顶尖的科技公司，拥有超过十五年的数据基础设施和大规模监控系统开发的丰富经验。
 
 ## CnosDB
 

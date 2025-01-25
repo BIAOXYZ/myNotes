@@ -174,6 +174,8 @@ sinvaladt.c https://doxygen.postgresql.org/sinvaladt_8c_source.html
 
 # 2025.01 (PG 16)
 
+PostgreSQL 源码解读（19）- 查询语句#4（ParseTree详解） https://blog.itpub.net/6906/viewspace-2374897/
+
 PostgreSQL 源码解读（204）- 查询#117(数据结构SelectStmt&Value) https://blog.itpub.net/6906/viewspace-2647991/ || https://blog.csdn.net/cuichao1900/article/details/100394894
 ```sh
 (gdb) p *(RawStmt *)(raw_parsetree_list->head.data->ptr_value)
@@ -213,6 +215,9 @@ type = struct RawStmt {
 $30 = T_RawStmt
 
 # 此外，可以活用 gdb 的 set 命令
+# 这里设置了两个变量：
+# - 第一个变量 $head：将 parsetree_list 的第一个节点赋给 head 变量。
+# - 第二个变量 $root：将 head 变量对应的节点的 stmt 成员赋给 root 变量。
 >>> set $head = list_head(parsetree_list)
 >>> p head
 No symbol "head" in current context.
@@ -253,6 +258,7 @@ $45 = {
   rarg = 0x0
 }
 
+# 再加一个新的变量 $selectroot 。
 >> set $selectroot = (SelectStmt*)$root
 >>> p $selectroot   
 $58 = (SelectStmt *) 0xaaaaf968c530
@@ -296,6 +302,28 @@ $49 = T_SelectStmt
     先把 $root 转换为 SelectStmt*
     然后访问 type 成员
     这是正确的用法
+```
+
+```sh
+##################################################
+###  p *node 类型会打出来一个T_开头的枚举型
+###  然后把node强转成T_后面那个结构体名就能打出来了
+##################################################
+>>> p ((ResTarget*)$selectroot->targetList->elements->ptr_value)->val
+$74 = (Node *) 0xaaaaf968c320
+>>> p *((ResTarget*)$selectroot->targetList->elements->ptr_value)->val
+$75 = {
+  type = T_ColumnRef
+}
+
+# 再加一个新变量 $columnnode
+>>> set $columnnode = ((ResTarget*)$selectroot->targetList->elements->ptr_value)->val
+>>> p $columnnode
+$81 = (Node *) 0xaaaaf968c320
+>>> p *$columnnode
+$82 = {
+  type = T_ColumnRef
+}
 ```
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
