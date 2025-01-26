@@ -5,6 +5,9 @@ The Internals of PostgreSQL http://www.interdb.jp/pg/index.html
 
 【一个网友自己存的备份，估计也是怕作者的主站有一天不在了。。。】 https://github.com/liuqian1990/The-Internals-of-PostgreSQL
 
+其他版本的翻译：
+- 《PostgreSQL内部机制剖析(译)》适用于数据库管理员和系统开发人员 https://github.com/liuyuanyuan/PostgresInternals/tree/master
+
 Internet Archive Wayback Machine
 - https://web.archive.org/web/20231216142503/https://www.interdb.jp/pg/
 

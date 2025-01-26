@@ -326,6 +326,28 @@ $82 = {
 }
 ```
 
+```sh
+(gdb) p $columnnode
+$11 = (Node *) 0xaaaacd2e12c0
+(gdb) p *$columnnode
+$12 = {type = T_ColumnRef}
+(gdb) p (ColumnRef*)$columnnode
+$13 = (ColumnRef *) 0xaaaacd2e12c0
+(gdb) p *(ColumnRef*)$columnnode
+$14 = {type = T_ColumnRef, fields = 0xaaaacd2e1308, location = 7}
+
+(gdb) p (ColumnRef*)$columnnode->fields
+There is no member named fields.
+(gdb) p ((ColumnRef*)$columnnode)->fields
+$15 = (List *) 0xaaaacd2e1308
+
+(gdb) set $fieldshead=list_head(((ColumnRef*)$columnnode)->fields)
+(gdb) p $fieldshead
+$17 = (ListCell *) 0xaaaacd2e1320
+(gdb) p *$fieldshead
+$18 = {ptr_value = 0xaaaacd2e12f0, int_value = -852618512, oid_value = 3442348784, xid_value = 3442348784}
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # `.gdbinit` for pg debug

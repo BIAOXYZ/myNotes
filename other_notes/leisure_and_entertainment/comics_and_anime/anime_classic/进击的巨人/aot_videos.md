@@ -50,6 +50,8 @@
 
 【进击的巨人】插曲歌词（中文对照） https://www.bilibili.com/opus/584665673142796944
 
+【总榜】进击的巨人系列音乐人气排行榜！那些神曲你都还记得吗？ https://www.bilibili.com/video/BV1LufoYgEjD/
+
 ## from `小小佐仓千代`
 
 合集·进击的巨人音乐盘点合集 https://space.bilibili.com/14577351/channel/collectiondetail?sid=1855821
