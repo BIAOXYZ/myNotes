@@ -125,6 +125,8 @@ VSCode调试PostgreSQL配置 https://blog.csdn.net/weixin_39540651/article/detai
 
 使用vscode+docker开箱即用调试postgresql代码 https://blog.csdn.net/qq_40608763/article/details/120582333
 
+postgresql源码学习（26）—— Windows vscode远程调试Linux上的postgresql https://blog.51cto.com/u_13631369/7939614
+
 ## 1.3 个人实战
 
 1. 自己 clone 一个 pg 的官方仓库，比如：https://github.com/BIAOXYZ/postgres/tree/master ，然后从这个仓库的 web 页面启动 Codespaces。因为没改 devcontainer 配置，所以用的就是官方默认的配置（ https://github.com/microsoft/vscode-dev-containers/blob/dfba31dbee/containers/codespaces-linux/README.md ）
