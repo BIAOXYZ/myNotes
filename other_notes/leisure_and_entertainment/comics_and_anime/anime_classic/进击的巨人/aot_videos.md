@@ -52,6 +52,10 @@
 
 【总榜】进击的巨人系列音乐人气排行榜！那些神曲你都还记得吗？ https://www.bilibili.com/video/BV1LufoYgEjD/
 
+合集·泽野弘之LIVE合集 https://space.bilibili.com/2135507948/lists/3250516
+- 【全场中字】进击的巨人十周年演出「Attack 音 体感 Final」Attack On Titan 10Th Anniversary “Attack Fes" https://www.bilibili.com/video/BV1hbzrYkEfv/
+- 【中字】恭送艾伦！史诗级大编制交响乐现场-进击的巨人：镇魂曲(ATTACK ON TITAN  REQUIEM) https://www.bilibili.com/video/BV1fH4y1q7KQ/
+
 ## from `小小佐仓千代`
 
 合集·进击的巨人音乐盘点合集 https://space.bilibili.com/14577351/channel/collectiondetail?sid=1855821
