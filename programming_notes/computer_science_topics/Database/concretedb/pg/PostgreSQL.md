@@ -182,13 +182,6 @@ http://blog.csdn.net/xabc3000/article/details/7658439
 
 【转发博文】：WAL日志文件名称格式详解 http://www.postgres.cn/news/viewone/1/96
 
-## PG锁
-
-PostgreSQL中的锁
-http://www.postgres.cn/news/viewone/1/241
-
-一文搞懂PostgreSQL中所有的锁 https://www.modb.pro/db/70021
-
 ## PG用户和角色
 
 Managing PostgreSQL users and roles https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/
