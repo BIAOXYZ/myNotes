@@ -2,6 +2,14 @@
 # 0
 
 PostgreSQL中的锁 http://www.postgres.cn/news/viewone/1/241
+- > **2.`spinLock`使用场景分析.**
+  * > 下面我们讨论对于spinlock的使用场景，***spinlock属于轻量级的锁，适用于对某个share object操作较多，并且占用时间不长的情景下使用***，即我们在较小的代码中使用，对于复杂场景下的使用我们一般不采用spinlock，而采取其他方式。实例代码如下：
+  * > 从上述的使用可以看出，spinlock所包含的临界区通常较小，通常为数行代码范围内，正是由于spinlock的特点要求我们在临界区内进行快进快出的操作；相反，如果临界区属于一大段具有复杂逻辑关系的代码则不适合使用spinlock进行。首先，大段临界区代码需要执行较长的时间，而spinlock又属于wait-and-loop方式，从而使得大量的CPU处于空转状态严重消耗资源；再者，在一大段逻辑复杂的临界区内当执行发生异常程序流程跳转后，不容易确定spinlock释放的正确位置，容易造成死锁。而spinlock又不存在死锁检查机制来消除死锁。因此，我们需要一种能够解决上述问题的一种新的锁。幸好，Postgres提供了`轻量锁（Light Weight Lock）`-`LWLock`；
+- > **3.`LWLock`原理分析.**
+  * > ***`LigthWeight Lock`我们称为`轻量锁`***，其主要是以互斥访问的方式用来保护共享内存数据结构，下面是Postgres对于LWLock的说明，从中我们可以清楚的看到该种类型的锁的目的和作用以及执行保护的方式。其提供两种锁访问方式：共享锁和独享锁。其相应的代码分别在：`storage/lmgr/lwlock.xxx`文件中。 与`spinlock`相比较而言，`LWLock`又是基于什么样的机制来实现的呢？ 在早期的`LwLock`实现过程中使用了 `spinlock` 作为其底层实现。我们可以从其相应如下的数据结构可以看出。在早期的版本中：`LWLock`使用一个链表( `PGPROC *head ,PGPROC *tail` )来保存那些正在争取访问锁而暂时无法得到满足的进程，我们称之为 Waiting List；同时，使用shared来描述先在共同持有该共享锁的进程数，`LWlock`在所有已知的平台下其大小在16-32个字节。
+  * > 但在最新的版本中，我们可以其已经将`spinlock`从`LWLock`的定义中移除，去而代之是一个uint32类型的状态-state。与spinlock的机制相似我们通过对该state对象的操作来实现高效的锁机制，可以说其实质也是由spinlock来支持的。相应的waiting list也将链表形式由直接通过指针访问方式改为通过进程编号在PGPROC进程链表中获取链表节点的方式来获取是哪个进程处于等待锁的状态。
+  * > 除了上述的独享和共享模式之外，LWLock也可以用来执行对某个变量满足特定条件的等待操作，LWLockWaitForVar。
+  * > ***为了系统在访问LWLock时的速度，我们通常将LWLock的大小限制为2的幂保证每个LWLock对象不会跨越cache line边界，因而可以降低了cache竞争***；在9.4版本之前，每个LWLock将会保存在一个单独的数组中并存放于主共享内存中（Main Shared Memory），但在最新的版本中我们还可以将LWLock保存动态共享内存段中（Dynamic Shared Segment，DSM），最后形成一个含有32槽（Lock Tranches）的锁槽，LWLockTranche。其中有：main，buffer_mapping，lock_manager，predicate_lock_mangaer等。
 
 【[ :star: ][`*`]】 一文搞懂PostgreSQL中所有的锁 https://mp.weixin.qq.com/s/a3xmcJSzLQV4cUxNJGXaiQ || https://www.modb.pro/db/70021
 - > **锁**
@@ -48,9 +56,24 @@ PostgreSQL中的锁 http://www.postgres.cn/news/viewone/1/241
 # 1
 
 Postgres Locks — A Deep Dive https://medium.com/@hnasr/postgres-locks-a-deep-dive-9fc158a5641c || https://web.archive.org/web/20241115114426/https://medium.com/@hnasr/postgres-locks-a-deep-dive-9fc158a5641c
+- > **Table Locks 表锁**
+- > **Row Locks 行锁**
+  * > Worth noting that INSERTed tuples don’t require row locks in postgres because they are only visible to the transaction that creates them. One reason probably why Postgres doesn’t support read uncommitted isolation level. 值得注意的是，***`INSERT` 元组不需要 postgres 中的行锁，因为它们仅对创建它们的事务可见***。 Postgres 不支持读未提交隔离级别的原因之一可能是。
 
 Postgresql源码（69）常规锁细节分析 https://blog.csdn.net/jackgo73/article/details/126260915
 
 ~~PostgreSQL中的锁 https://mp.weixin.qq.com/s/JCKKM8vDkBlq0-PlPqfh7Q || https://pigsty.cc/zh/blog/dev/pg-lock/~~  【//已转移】
 
 ~~PostgreSQL技术内幕12：PostgreSQL事务原理解析-锁管理 https://mp.weixin.qq.com/s/qvMRW4fiwZaiLuasUK3ktg~~  【//已转移】
+
+PostgreSQL locking, part 3: lightweight locks https://www.percona.com/blog/postgresql-locking-part-3-lightweight-locks/
+- > Potential heavy contention places
+  * > `WALInsertLock`: protects WAL buffers. You can increase the number of wal buffers to get a slight improvement. Incidentally, `synchronous_commit=off` increases pressure on the lock even more, but it’s not a bad thing. `full_page_writes=off` reduces contention, but it’s generally not recommended.
+  * > `WALWriteLock`: accrued by PostgreSQL processes while WAL records are flushed to disk or during a WAL segments switch. `synchronous_commit=off` removes the wait for disk flush, `full_page_writes=off` reduces the amount of data to flush.
+  * > `LockMgrLock`: appears in top waits during a read-only workload. It latches relations regardless of its size. It’s not a single lock, but at least 16 partitions. Thus it’s important to use multiple tables during benchmarks and avoid single table anti-pattern in production.
+  * > `ProcArrayLock`: Protects the ProcArray structure. Before PostgreSQL 9.0, every transaction acquired this lock exclusively before commit.
+  * > `CLogControlLock`: protects CLogControl structure, if it shows on the top of pg_stat_activity, you should check the location of $PGDATA/pg_clog—it should be on a buffered file system.
+  * > `SInvalidReadLock`: protects sinval array. Readers using shared lock. SICleanupQueue, and other array-wide updates, requires an exclusive lock. It shows at the top of the pg_stat_activity when the shared buffer pool is under stress. Using a higher number of shared_buffers helps to reduce contention.
+  * > `BufMappingLocks`: protects regions of buffers. Sets 128 regions (16 before 9.5) of buffers to handle the whole buffer cache.
+- > **Spinlocks**
+  * > The lowest level for locking is spinlocks. Therefore, it’s implemented within CPU-specific instructions. PostgreSQL is trying to change an atomic variable value in a loop. If the value is changed from zero to one – the process obtained a spinlock. If it’s not possible to get a spinlock immediately, the process will increase its wait delay exponentially.  There is no monitoring on spinlocks and it’s not possible to release all accrued spinlocks at once. Due to the single state change, it’s also an exclusive lock. In order to simplify the porting of PostgreSQL to exotic CPU and OS variants, PostgreSQL uses OS semaphores for its spinlocks implementation. Of course, it’s significantly slower compared to native CPU instructions port.
