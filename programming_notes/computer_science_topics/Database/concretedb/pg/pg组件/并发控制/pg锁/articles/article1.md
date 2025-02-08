@@ -98,18 +98,79 @@ Postgres Locks — A Deep Dive https://medium.com/@hnasr/postgres-locks-a-deep-d
       ```
     + > This lock type only conflicts with the ACCESS EXCLUSIVE which makes it easy to understand, if run a transaction that does a select you can’t do a VACUUM FULL (normal VACUUM is fine). The reason is VACUUM FULL or any of the commands that acquire ACCESS EXCLUSIVE does sergical changes to the layout of the table which will break consistency when selects are running. For example VACUUM FULL actually changes tuple ids, purging tables and reshuffling data, we can’t be having people reading the table while this is happening. This is as opposed to normal VACUUM which really (almost) act like both update and deletes. ***这种锁类型仅与`ACCESS EXCLUSIVE`冲突***，这使得它很容易理解，如果运行执行选择的事务，则不能执行 `VACUUM FULL`（***普通 `VACUUM` 可以***）。原因是`VACUUM FULL`或任何获取 `ACCESS EXCLUSIVE` 的命令对表的布局进行了连续更改，这将在运行选择时破坏一致性。例如，`VACUUM FULL` 实际上会更改元组 ID、清除表并重新排列数据，我们不能让人们在发生这种情况时读取表。***这与普通的 `VACUUM` 不同，后者实际上（几乎）表现得像更新和删除***。
   * > **`EXCLUSIVE`**
-    + > The EXCLUSIVE (or ExclusiveLock) is very similar to the ACCESS EXCLUSIVE except it doesn’t conflict with reads acquired by ACCESS SHARE. This means you can do selects while an EXCLUSIVE table lock is on the table. `EXCLUSIVE` （或`ExclusiveLock` ）与 `ACCESS EXCLUSIVE` 非常相似，只是它不与 `ACCESS SHARE` 获取的读取冲突。这意味着您可以在表上有独占表锁时执行选择。
-    + > The odd thing I only found one command (`REFRESH MATERIALIZED VIEW CONCURRENTLY`) that acquires this lock. If I had to guess, this lock type was added because people wanted a way to refresh their materialized views and select from the table at the same time. The Refresh materialized view acquires an ACCESS EXCLUSIVE blocking selects, so Postgres added both a new lock type Exclusive which conflicts with everything except ACCESS SHARE and then made a new command to allow refreshing the view concurrently. I’m sure more methods will fit into this slot lock type. 奇怪的是，我只发现一个命令（`同时刷新物化视图`）获取此锁。如果我不得不猜测，添加这种锁类型是因为人们想要一种刷新其物化视图并同时从表中进行选择的方法。刷新物化视图获取ACCESS EXCLUSIVE阻塞选择，因此 Postgres 添加了一个新的锁定类型 Exclusive，它与除ACCESS SHARE之外的所有内容冲突，然后创建了一个新命令以允许同时刷新视图。我确信更多的方法将适合这种槽锁类型。
+    + > The EXCLUSIVE (or ExclusiveLock) is very similar to the ACCESS EXCLUSIVE except it doesn’t conflict with reads acquired by ACCESS SHARE. This means you can do selects while an EXCLUSIVE table lock is on the table. ***`EXCLUSIVE` （或`ExclusiveLock` ）与 `ACCESS EXCLUSIVE` 非常相似，只是它不与 `ACCESS SHARE` 获取的读取冲突。这意味着您可以在表上有独占表锁时执行 SELECT***。
+    + > The odd thing I only found one command (`REFRESH MATERIALIZED VIEW CONCURRENTLY`) that acquires this lock. If I had to guess, this lock type was added because people wanted a way to refresh their materialized views and select from the table at the same time. The Refresh materialized view acquires an ACCESS EXCLUSIVE blocking selects, so Postgres added both a new lock type Exclusive which conflicts with everything except ACCESS SHARE and then made a new command to allow refreshing the view concurrently. I’m sure more methods will fit into this slot lock type. 奇怪的是，***我只发现一个命令（`并行刷新物化视图`）获取此锁***。如果我不得不猜测，添加这种锁类型是因为人们想要一种刷新其物化视图并同时从表中进行选择的方法。刷新物化视图获取ACCESS EXCLUSIVE阻塞选择，因此 Postgres 添加了一个新的锁定类型 Exclusive，它与除ACCESS SHARE之外的所有内容冲突，然后创建了一个新命令以允许同时刷新视图。我确信更多的方法将适合这种槽锁类型。
       ```sql
       --LIST OF POSTGRES COMMANDS THAT OBTAIN EXCLUSIVE lock
       REFRESH MATERIALIZED VIEW CONCURRENTLY
       ```
     + > So you if you refresh your materialized view concurrently your table can’t be edited but can be read. 因此，如果您同时刷新物化视图，您的表将无法编辑，但可以读取。
   * > **`ROW SHARE`**
+    + > Buckle up the names only get more confusing from here on. ROW SHARE (or RowShareLock) is similar to ACCESS SHARE but was designed for the SELECT FORs command family. That is probably why it has the name ROW in it. While SELECT FOR UPDATE, SELECT FOR SHARE and others work on rows remember this is still a table lock. So these kind of commands actually acquire two types of locks row locks (will see later) and the ROW SHARE row locks. 从现在开始，把名字系好只会变得更加混乱。***`ROW SHARE` （或`RowShareLock` ）与 `ACCESS SHARE` 类似，但专为 `SELECT FOR` 命令系列而设计***。这可能就是它名为 ROW 的原因。***虽然`SELECT FOR UPDATE`、`SELECT FOR SHARE`和其他操作对行进行操作，但请记住这仍然是`表锁`***。因此，这类命令实际上获取两种类型的锁：行锁（稍后会看到）和 ROW SHARE 行锁。
+      >> //notes：最后一句错了吧，应该是 `ROW SHARE 表锁`。
+    + > This lock type conflicts with ACCESS EXCLUSIVE and the EXCLUSIVE lock. Which means anything that is acquired by the ACCESS EXCLUSIVE + our refresh materialized view concurrently. ***此锁类型与 `ACCESS EXCLUSIVE` 和 `EXCLUSIVE锁` 冲突***。这意味着通过 ACCESS EXCLUSIVE + 我们同时刷新物化视图获取的任何内容。
+    + > Here is a list of commands that acquire `ROW SHARE`. 以下是获取 `ROW SHARE` 的命令列表。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN ROW SHARE table lock
+      SELECT FOR UPDATE
+      SELECT FOR NO KEY SHARE
+      SELECT FOR SHARE
+      SELECT FOR KEY SHARE
+      ```
+    + > So while true you can do normal SELECTs while refreshing your materialized view concurrently, you can’t really do a SELECT FOR SHARE for instance. ***因此，虽然您可以在`并行刷新物化视图`的同时执行正常的 `SELECT`，但您实际上无法执行 `SELECT FOR SHARE`等操作***。  
   * > **`ROW EXCLUSIVE`**
+    + > The ROW EXCLUSIVE (or RowExclusiveLock) is obtained by DMLs (Insert, Update, Delete, Merge and Copy From. If you care about write latency to your table watch out for operations that conflict with this lock. Thus the name ROW in the lock name because methods often operates on rows. ***`ROW EXCLUSIVE`（或`RowExclusiveLock` ）是通过 DML（`Insert`、`Update`、`Delete`、`Merge`和`Copy From`）获得的***。如果您关心表的写入延迟，请注意与此锁冲突的操作。***因此，锁名称中的名称为 ROW 因为方法通常对行进行操作***。
+    + > Gotta watch out again, you might you a update or a delete that end touching no rows, the ROW EXCLUSIVE lock is still acquired. So if you have long running transactions watch out for blocks. 再次要注意，您可能会在更新或删除结束时不触及任何行，但仍会获取 `ROW EXCLUSIVE 锁`。因此，如果您有长时间运行的交易，请注意区块。
+    + > The methods acquiring ROW EXCLUSIVE are as follows 获取`ROW EXCLUSIVE`的方法如下
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN ROW EXCLUSIVE table lock
+      UPDATE
+      DELETE
+      INSERT
+      MERGE
+      COPY FROM
+      ```
   * > **`SHARE ROW EXCLUSIVE`**
+    + > SHARE ROW EXCLUSIVE (or ShareRowExclusiveLock) is similar to EXCLUSIVE but is relaxed so that ROW SHAREs don’t conflict, so you may do the SELECT FORs with this type of lock but you still can’t do any modifications through DMLs. So methods that obtain this type of locks want to allow reads even the SELECT FORs but block writes. In case you had the question why not just use EXCLUSIVE that is why. It is all about relaxing and minimizing blocks. ***`SHARE ROW EXCLUSIVE` （或`ShareRowExclusiveLock` ）与`EXCLUSIVE`类似，但比较宽松，因此 `ROW SHARE` 不会发生冲突，因此您可以使用这种类型的锁执行 `SELECT FOR`，但仍然无法通过 DML 进行任何修改***。因此，***获取此类锁的方法希望允许读取（甚至允许 `SELECT FOR`）但阻止写入***。如果您有疑问为什么不直接使用 `EXCLUSIVE`，这就是原因。这一切都是为了放松和最小化障碍。
+    + > What is interesting about SHARE ROW EXCLUSIVE is it does conflict with it self which means only one operation of this lock type can run so for instance you can’t run two create triggers (which is a method that acquire SHARE ROW EXCLUSIVE) at the same time on the same table, my guess is one create trigger might modify rows in the table and the other create trigger might also change the table and we don’t want that. ***`SHARE ROW EXCLUSIVE` 的有趣之处在于它确实与其自身冲突，这意味着这种锁类型只能运行一个操作，因此例如您不能同时运行两个`创建触发器`***（这是一种获取 `SHARE ROW EXCLUSIVE` 的方法）在同一张表上的时间，我的猜测是一个创建触发器可能会修改表中的行，而另一个创建触发器也可能会更改表，但我们不希望出现这种情况。
+    + > Again remember if a transaction obtains a SHARE ROW EXCLUSIVE it can still make modifications to rows, other transactions can’t. ***再次记住，如果事务获得 `SHARE ROW EXCLUSIVE`，它仍然可以对行进行修改，而其他事务则不能***。
+    + > Here are the methods that obtain this type. 以下是获取该类型的方法。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN SHARE ROW EXCLUSIVE table lock
+      CREATE TRIGGER
+      ALTER TABLE ADD FOREIGN KEY
+      ALTER TABLE ENABLE/DISABLE TRIGGER
+      ```
   * > **`SHARE`**
+    + > The SHARE (ShareLock) is similar to the SHARE ROW EXCLUSIVE in a sense it blocks concurrent modifications but it doesn’t conflict with itself. Only CREATE INDEX obtain this type of lock, which means while creating an index you can’t change the data (because the index is reading the table and building the b+tree) but technically nothing stopping 7 different transactions from running 7 CREATE INDEX on the same table, so if you are blocking writes to create indexes, you can technically create them all at the same time. Of course you can also use the CREATE INDEX Concurrently which allows concurrent modifications but that doesn’t run in a transaction. ***`SHARE` (`ShareLock`) 与`SHARE ROW EXCLUSIVE`类似，在某种意义上它会阻止并发修改，但与自身并不冲突。只有`CREATE INDEX`获得这种类型的锁***，这意味着在创建索引时您无法更改数据（因为索引正在读取表并构建 b+tree），但从技术上讲，没有什么可以阻止 7 个不同的事务在 7 CREATE INDEX 上运行同一张表，因此如果您阻止写入来创建索引，从技术上讲您可以同时创建它们。当然，您也可以使用 `CREATE INDEX Concurrently`，它允许并发修改，但不能在事务中运行。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN SHARE table lock
+      CREATE INDEX
+      ```
   * > **`SHARE UPDATE EXCLUSIVE`**
+    + > The SHARE UPDATE EXCLUSIVE (or ShareUpdateExclusiveLock) is designed for methods who want to allow concurrent writes and reads but prevent schema changes and VACUUM runs. Normal VACUUM for instance acquire this lock which is why you can run VACUUM and still do edit to your table otherwise it will be a disaster. ***`SHARE UPDATE EXCLUSIVE` （或`ShareUpdateExclusiveLock` ）专为希望允许并发写入和读取但阻止架构更改和 `VACUUM` 运行的方法而设计***。例如，***`普通 VACUUM` 会获取此锁，这就是为什么您可以运行 `VACUUM` 并仍然对表进行编辑，否则这将是一场灾难***。
+    + > CREATE INDEX CONCURRENTLY is another interesting one where you can create an index and allow writes. This lock conflict with itself so no two VACUUMs can run concurrently and no two CREATE INDEX CONCURRENTLY as well. This also explains why many forms of ALTER TABLE commands acquire this type of lock, you want to allow edits but no two alters at the same time. `CREATE INDEX CONCURRENTLY`是另一个有趣的方法，您可以在其中创建索引并允许写入。***此锁与其自身冲突，因此没有两个 `VACUUM` 可以同时运行，也没有两个 `CREATE INDEX` 同时运行***。这也解释了为什么许多形式的 ALTER TABLE 命令获取这种类型的锁，您希望允许编辑但不允许同时进行两个更改。
+    + > Following are the commands that acquire SHARE UPDATE EXCLUSIVE. 以下是获取 `SHARE UPDATE EXCLUSIVE` 的命令。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN SHARE UPDATE EXCLUSIVE table lock
+      VACUUM
+      REINDEX CONCURRENTLY
+      CREATE STATISTICS
+      CREATE INDEX CONCURRENTLY
+      COMMENT ON
+      ANALYZE
+      ALTER TABLE VALIDATE CONSTRAINT
+      ALTER TABLE SET WITHOUT CLUSTER
+      ALTER TABLE SET TOAST
+      ALTER TABLE SET STATISTICS
+      ALTER TABLE SET N_DISTINCT
+      ALTER TABLE SET FILLFACTOR
+      ALTER TABLE SET AUTOVACUUUM
+      ALTER TABLE DETACH PARTITION
+      ALTER TABLE CLUSTER ON
+      ALTER TABLE ATTACH PARTITION (PARENT)
+      ALTER INDEX (RENAME)
+      ```
   * > **Table Lock Matrix 表锁矩阵**
     + > This is the matrix from the doc, it helps us understand what locks conflicts with what. 这是文档中的矩阵，它可以帮助我们了解哪些锁与哪些锁发生冲突。
       ```console
@@ -124,6 +185,7 @@ Postgres Locks — A Deep Dive https://medium.com/@hnasr/postgres-locks-a-deep-d
       | EXCL.              |              |     X     |     X     |          X         |   X   |        X        |   X   |       X      |
       | ACCESS EXCL.       |       X      |     X     |     X     |          X         |   X   |        X        |   X   |       X      |
       ```
+    + > To me however the methods and commands that acquire the locks are more important than the locks themselves. Which is why I wrote this tool to dynamically show which method’s conflicts with what commands and what commands are allowed concurrently. You will see it referenced all over this blog. 然而对我来说，***获取锁的方法和命令比锁本身更重要***。这就是为什么我编写了这个[工具](https://postgres-locks.husseinnasser.com/?pglock=ShareRowExclusiveLock)来动态显示哪个方法与哪些命令冲突以及允许同时执行哪些命令。您会在这个博客中看到它的引用。
 - > **Row Locks 行锁**
   * > Worth noting that INSERTed tuples don’t require row locks in postgres because they are only visible to the transaction that creates them. One reason probably why Postgres doesn’t support read uncommitted isolation level. 值得注意的是，***`INSERT` 元组不需要 postgres 中的行锁，因为它们仅对创建它们的事务可见***。 Postgres 不支持读未提交隔离级别的原因之一可能是。
   * > The methods that lock rows are limited to DELETE, UPDATE (NO KEY), UPDATE (KEY), and all the SELECT FORs. 锁定行的方法仅限于`DELETE`、`UPDATE (NO KEY)`、`UPDATE (KEY)`和所有 `SELECT FOR`。
@@ -193,6 +255,9 @@ Postgres Locks — A Deep Dive https://medium.com/@hnasr/postgres-locks-a-deep-d
   * > Another example with row locks 行锁的另一个例子
   * > Another dead lock example from the doc. 文档中的另一个死锁示例。
 - > **Advisory Locks 咨询锁**
+- > **Weak Locks 弱锁**
+  * > 6/21/2023 — I added this additional paragraph to mention weak locks, something I recently learned in Postgres. Postgres has weak locks, those are table locks that rarely conflicts , acquired by DMLs, they are mainly AccessShareLock, RowShareLock, RowExclusiveLock. 2023 年 6 月 21 日 — 我添加了这段附加段落来提及弱锁，这是我最近在 Postgres 中学到的东西。***Postgres有`弱锁`，那些很少发生冲突的表锁，由DML获取，它们主要是`AccessShareLock`，`RowShareLock`，`RowExclusiveLock`***。
+  * > Because they are common, and weak, Postgres manages them through a `fast path` a data structure in the process as oppose through the normal lock manager. But it can’t just use that data structure with no limit, it has a limit and that limit is 16 weak locks per backend process according to the constant FP_LOCK_SLOTS_PER_BACKEND which can’t be changed unless you recompile postgres alas. If you don’t know `backend process == connection` in postgres. So if your data model is heavily normalized OR you are using partitioning and your queries are scanning multiple partitioning in a long transaction watch out not to exceed that. otherwise you hit the lock manager and contention is created. ***因为它们很常见，而且很弱，Postgres 通过进程中的数据结构的快速路径来管理它们，而不是通过普通的锁管理器。但它不能无限制地使用该数据结构，它有一个限制，根据常量`FP_LOCK_SLOTS_PER_BACKEND` ，该限制是每个后端进程 `16` 个弱锁，除非您重新编译 postgres，否则无法更改***。如果你不知道 postgres 中的`后端进程==连接`。因此，如果您的数据模型高度规范化，或者您正在使用分区，并且您的查询在长事务中扫描多个分区，请注意不要超过这个范围。否则，您会点击锁定管理器并创建争用。
 
 Postgresql源码（69）常规锁细节分析 https://blog.csdn.net/jackgo73/article/details/126260915
 
@@ -211,3 +276,7 @@ PostgreSQL locking, part 3: lightweight locks https://www.percona.com/blog/postg
   * > `BufMappingLocks`: protects regions of buffers. Sets 128 regions (16 before 9.5) of buffers to handle the whole buffer cache.
 - > **Spinlocks**
   * > The lowest level for locking is spinlocks. Therefore, it’s implemented within CPU-specific instructions. PostgreSQL is trying to change an atomic variable value in a loop. If the value is changed from zero to one – the process obtained a spinlock. If it’s not possible to get a spinlock immediately, the process will increase its wait delay exponentially.  There is no monitoring on spinlocks and it’s not possible to release all accrued spinlocks at once. Due to the single state change, it’s also an exclusive lock. In order to simplify the porting of PostgreSQL to exotic CPU and OS variants, PostgreSQL uses OS semaphores for its spinlocks implementation. Of course, it’s significantly slower compared to native CPU instructions port.
+
+# 2
+
+进阶数据库系列（八）：PostgreSQL 锁机制 https://cloud.tencent.com/developer/article/2315270 || https://mp.weixin.qq.com/s/9s8ILVsmFo68Cp364KwcaQ
