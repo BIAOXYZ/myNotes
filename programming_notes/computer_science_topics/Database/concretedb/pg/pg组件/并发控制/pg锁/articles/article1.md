@@ -57,6 +57,73 @@ PostgreSQL中的锁 http://www.postgres.cn/news/viewone/1/241
 
 Postgres Locks — A Deep Dive https://medium.com/@hnasr/postgres-locks-a-deep-dive-9fc158a5641c || https://web.archive.org/web/20241115114426/https://medium.com/@hnasr/postgres-locks-a-deep-dive-9fc158a5641c
 - > **Table Locks 表锁**
+  * > **`ACCESS EXCLUSIVE`**
+    + > ACCESS EXCLUSIVE (or AccessExclusiveLock in the code) is the most aggressive table lock. If a command obtains this lock type on a table nothing can be done to this table as this lock type conflicts with all other table locks. You can’t do DMLs so select, update or delete rows are blocked. You can’t do DDLs, alter a column, create an index and even system operation such as VACUUM cannot execute on the table. It is a complete block. ***`ACCESS EXCLUSIVE`（或代码中的`AccessExClusivelock`）是最具侵略性的表锁***。如果命令在表上获得此锁定类型，则该表与所有其他表锁发生冲突，因此该表无法完成该表。您不能进行DML，因此选择，更新或删除行被阻止。您不能执行DDL，更改列，创建索引，甚至是系统操作（例如 `VACUUM`）无法在表上执行。这是一个完整的块。
+    + > What operations and commands in Postgres obtain this lock? I went through the doc pages and found all commands that obtain this kind of lock. Here they are, when anything in this list run, you can’t do anything to this table. Postgres 中哪些操作和命令可以获得此锁？我浏览了文档页面并找到了获得这种锁的所有命令。它们在这里，当此列表中的任何内容运行时，您无法对此表执行任何操作。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN ACCESS EXCLUSIVE TABLE LOCK
+      DROP TABLE
+      TRUNCATE
+      REINDEX
+      CLUSTER
+      VACUUM FULL
+      REFRESH MATERIALIZED VIEW
+      ALTER INDEX SET TABLESPACE
+      ALTER INDEX ATTACH PARTITION
+      ALTER INDEX SET FILLFACTOR
+      ALTER TABLE ADD COLUMN
+      ALTER TABLE DROP COLUMN
+      ALTER TABLE SET DATA TYPE
+      ALTER TABLE SET/DROP DEFAULT
+      ALTER TABLE DROP EXPRESSION
+      ALTER TABLE SET SEQUENCE
+      ALTER TABLE SET STORAGE
+      ALTER TABLE SET COMPRESSION
+      ALTER TABLE ALTER CONSTRAINT 
+      ALTER TABLE DROP CONSTRAINT
+      ALTER TABLE ENABLE/DISABLE RULE
+      ALTER TABLE ENABLE/DISABLE ROW LEVEL SECURITY
+      ALTER TABLE SET TABLESPACE
+      ALTER TABLE RESET STORAGE
+      ALTER TABLE INHERIT PARENT
+      ALTER TABLE RENAME
+      ```
+    + > This means for example, if you run VACUUM FULL for instance on a table, you can’t select or update to this table. 这意味着，例如，如果您在表上运行 `VACUUM FULL` ，则无法选择或更新该表。  
+  * > **`ACCESS SHARE`**
+    + > ACCESS SHARE (or AccessShareLock) is the lightest weight lock type. Only two commands that I’m aware of acquire this lock and those are SELECT and COPY TO. It is an indication that someone is reading the table, whether it is a single row, all the rows and yes even no rows if you do a query on a table that returned nothing, that lock is also acquired (I tested it). ***`ACCESS SHARE` （或`AccessShareLock`）是最轻量级的锁类型***。据我所知，只有两个命令获取此锁，即`SELECT`和`COPY TO`。这表明有人正在读取该表，无论是单行、所有行，甚至没有行，如果您对没有返回任何内容的表进行查询，也会获取该锁（我测试过）。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN ACCESS SHARE TABLE LOCK
+      SELECT
+      COPY TO
+      ```
+    + > This lock type only conflicts with the ACCESS EXCLUSIVE which makes it easy to understand, if run a transaction that does a select you can’t do a VACUUM FULL (normal VACUUM is fine). The reason is VACUUM FULL or any of the commands that acquire ACCESS EXCLUSIVE does sergical changes to the layout of the table which will break consistency when selects are running. For example VACUUM FULL actually changes tuple ids, purging tables and reshuffling data, we can’t be having people reading the table while this is happening. This is as opposed to normal VACUUM which really (almost) act like both update and deletes. ***这种锁类型仅与`ACCESS EXCLUSIVE`冲突***，这使得它很容易理解，如果运行执行选择的事务，则不能执行 `VACUUM FULL`（***普通 `VACUUM` 可以***）。原因是`VACUUM FULL`或任何获取 `ACCESS EXCLUSIVE` 的命令对表的布局进行了连续更改，这将在运行选择时破坏一致性。例如，`VACUUM FULL` 实际上会更改元组 ID、清除表并重新排列数据，我们不能让人们在发生这种情况时读取表。***这与普通的 `VACUUM` 不同，后者实际上（几乎）表现得像更新和删除***。
+  * > **`EXCLUSIVE`**
+    + > The EXCLUSIVE (or ExclusiveLock) is very similar to the ACCESS EXCLUSIVE except it doesn’t conflict with reads acquired by ACCESS SHARE. This means you can do selects while an EXCLUSIVE table lock is on the table. `EXCLUSIVE` （或`ExclusiveLock` ）与 `ACCESS EXCLUSIVE` 非常相似，只是它不与 `ACCESS SHARE` 获取的读取冲突。这意味着您可以在表上有独占表锁时执行选择。
+    + > The odd thing I only found one command (`REFRESH MATERIALIZED VIEW CONCURRENTLY`) that acquires this lock. If I had to guess, this lock type was added because people wanted a way to refresh their materialized views and select from the table at the same time. The Refresh materialized view acquires an ACCESS EXCLUSIVE blocking selects, so Postgres added both a new lock type Exclusive which conflicts with everything except ACCESS SHARE and then made a new command to allow refreshing the view concurrently. I’m sure more methods will fit into this slot lock type. 奇怪的是，我只发现一个命令（`同时刷新物化视图`）获取此锁。如果我不得不猜测，添加这种锁类型是因为人们想要一种刷新其物化视图并同时从表中进行选择的方法。刷新物化视图获取ACCESS EXCLUSIVE阻塞选择，因此 Postgres 添加了一个新的锁定类型 Exclusive，它与除ACCESS SHARE之外的所有内容冲突，然后创建了一个新命令以允许同时刷新视图。我确信更多的方法将适合这种槽锁类型。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN EXCLUSIVE lock
+      REFRESH MATERIALIZED VIEW CONCURRENTLY
+      ```
+    + > So you if you refresh your materialized view concurrently your table can’t be edited but can be read. 因此，如果您同时刷新物化视图，您的表将无法编辑，但可以读取。
+  * > **`ROW SHARE`**
+  * > **`ROW EXCLUSIVE`**
+  * > **`SHARE ROW EXCLUSIVE`**
+  * > **`SHARE`**
+  * > **`SHARE UPDATE EXCLUSIVE`**
+  * > **Table Lock Matrix 表锁矩阵**
+    + > This is the matrix from the doc, it helps us understand what locks conflicts with what. 这是文档中的矩阵，它可以帮助我们了解哪些锁与哪些锁发生冲突。
+      ```console
+      |                    | ACCESS SHARE | ROW SHARE | ROW EXCL. | SHARE UPDATE EXCL. | SHARE | SHARE ROW EXCL. | EXCL. | ACCESS EXCL. |
+      |--------------------|--------------|-----------|-----------|--------------------|-------|-----------------|-------|--------------|
+      | ACCESS SHARE       |              |           |           |                    |       |                 |       |       X      |
+      | ROW SHARE          |              |           |           |                    |       |                 |   X   |       X      |
+      | ROW EXCL.          |              |           |           |                    |   X   |        X        |   X   |       X      |
+      | SHARE UPDATE EXCL. |              |           |           |          X         |   X   |        X        |   X   |       X      |
+      | SHARE              |              |           |     X     |          X         |       |        X        |   X   |       X      |
+      | SHARE ROW EXCL.    |              |           |     X     |          X         |   X   |        X        |   X   |       X      |
+      | EXCL.              |              |     X     |     X     |          X         |   X   |        X        |   X   |       X      |
+      | ACCESS EXCL.       |       X      |     X     |     X     |          X         |   X   |        X        |   X   |       X      |
+      ```
 - > **Row Locks 行锁**
   * > Worth noting that INSERTed tuples don’t require row locks in postgres because they are only visible to the transaction that creates them. One reason probably why Postgres doesn’t support read uncommitted isolation level. 值得注意的是，***`INSERT` 元组不需要 postgres 中的行锁，因为它们仅对创建它们的事务可见***。 Postgres 不支持读未提交隔离级别的原因之一可能是。
   * > The methods that lock rows are limited to DELETE, UPDATE (NO KEY), UPDATE (KEY), and all the SELECT FORs. 锁定行的方法仅限于`DELETE`、`UPDATE (NO KEY)`、`UPDATE (KEY)`和所有 `SELECT FOR`。
