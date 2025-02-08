@@ -59,6 +59,73 @@ Postgres Locks — A Deep Dive https://medium.com/@hnasr/postgres-locks-a-deep-d
 - > **Table Locks 表锁**
 - > **Row Locks 行锁**
   * > Worth noting that INSERTed tuples don’t require row locks in postgres because they are only visible to the transaction that creates them. One reason probably why Postgres doesn’t support read uncommitted isolation level. 值得注意的是，***`INSERT` 元组不需要 postgres 中的行锁，因为它们仅对创建它们的事务可见***。 Postgres 不支持读未提交隔离级别的原因之一可能是。
+  * > The methods that lock rows are limited to DELETE, UPDATE (NO KEY), UPDATE (KEY), and all the SELECT FORs. 锁定行的方法仅限于`DELETE`、`UPDATE (NO KEY)`、`UPDATE (KEY)`和所有 `SELECT FOR`。
+  * > UPDATE (NO KEY) is an update to a column that doesn’t have a unique index while UPDATE (KEY) is an update to a column that does have a unique index. Those two acquire different locks that is why they are spelled out. ***<ins>`UPDATE (NO KEY)` 是对没有唯一索引的列的更新，而 `UPDATE (KEY)` 是对具有唯一索引的列的更新</ins>。这两者获得不同的锁，这就是它们被拼写出来的原因***。
+  * > Here are four row locks in Postgres we discuss them here. 这里有 Postgres 中的四个行锁，我们在这里讨论它们。
+  * > **`FOR UPDATE`**
+    + > FOR UPDATE is the highest row lock, when a row is locked FOR UPDATE you cannot delete or update it or do a SELECT FOR UPDATE on it. However you can still read it through a normal SELECT, if you want your selects to be blocked if someone is touching a row you may use SELECT FOR KEY SHARE instead which conflicts. ***`FOR UPDATE` 是最高的行锁，当一行被锁定为 `FOR UPDATE` 时，您不能删除或更新它，也不能对其执行 `SELECT FOR UPDATE`。但是，您仍然可以通过普通的 SELECT 来读取它***，如果您希望在有人触摸某一行时阻止您的选择，您可以使用 `SELECT FOR KEY SHARE` 来代替，这会发生冲突。
+    + > The following commands acquire a FOR UPDATE row lock. 以下命令获取 FOR UPDATE 行锁。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN FOR UPDATE row lock
+      DELETE
+      UPDATE (KEY) -- UPDATE TO A COLUMN WITH A UNIQUE INDEX
+      SELECT
+      ```
+  * > **`FOR NO KEY UPDATE`**
+    + > This lock is acquired by UPDATES to columns without unique index, so it is weaker than `FOR UPDATE` as it allows `SELECT FOR KEY SHARE`. ***此锁是通过对没有唯一索引的列进行 UPDATES 获取的，因此它比 `FOR UPDATE` 弱，因为它允许 `SELECT FOR KEY SHARE`***。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN FOR NO KEY UPDATE ROW LOCK
+      UPDATE (NO KEY) -- UPDATE TO A COLUMN WITH NO INDEX OR REGULAR INDEX (NON-UNIQUE)
+      ```
+  * > **`FOR SHARE`**
+    + > This is the true shared lock, transactions can acquire multiple FOR SHARE locks on a row. When a row is FOR SHAREd no DML can modify it. ***这就是真正的共享锁，事务可以在一行上获取多个 `FOR SHARE锁`。当一行是 `FOR SHAREd` 时，任何 DML 都无法修改它***。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN FOR SHARE 
+      SELECT FOR SHARE
+      ```
+  * > **`FOR KEY SHARE`**
+    + > The weakest row lock, behaves like FOR SHARE but allows updates to columns without unique indexes. ***最弱的行锁，行为类似于 `FOR SHARE`，但允许更新没有唯一索引的列***。
+      ```sql
+      --LIST OF POSTGRES COMMANDS THAT OBTAIN FOR SHARE 
+      SELECT FOR KEY SHARE
+      ```
+  * > **Row Lock Matrix 行锁矩阵**
+    + > This matrix shows the 4 row locks and how they conflict with each other. The tool I wrote gives more visibility to the commands that block each other. 该矩阵显示了 4 个行锁以及它们如何相互冲突。我编写的工具可以更清楚地显示相互阻塞的命令。
+      ```console
+      |                   | FOR KEY SHARE | FOR SHARE | FOR NO KEY UPDATE | FOR UPDATE |
+      |-------------------|---------------|-----------|-------------------|------------|
+      | FOR KEY SHARE     |               |           |                   |      X     |
+      | FOR SHARE         |               |           |         X         |      X     |
+      | FOR NO KEY UPDATE |               |     X     |         X         |      X     |
+      | FOR UPDATE        |       X       |     X     |         X         |      X     |
+      ```
+    + > Postgres table locks are in memory, row locks are stored in the tuple (xmax system field), which saves memory at a cost of potential disk writes. This isn’t so bad for deletes or updates because we are technically touching the row but select for updates for instance, those read operations can now cause pages to get dirty which will trigger the background writer to flush them to disk. ***Postgres表锁位于内存中，行锁存储在元组（xmax系统字段）中，这以潜在的磁盘写入为代价节省了内存***。这对于删除或更新来说并不是那么糟糕，因为我们在技术上接触行，但选择更新例如，这些读取操作现在可能会导致页面变脏，这将触发后台写入器将它们刷新到磁盘。
+      >> //notes：这里提到的`行锁存储在元组（xmax系统字段）中`应该是指多个事务试图同时更新同一行时，只有一个能改 xmax。
+- > **Page locks 页面锁**
+- > **Dead Locks 死锁**
+  * > Here is an example (while unlikely it can happen) 这是一个例子（虽然不太可能发生）
+    ```sql
+    Tx1 
+    BEGIN;
+    -- ACQUIRES AccessSharelock (OK
+    SELECT * FROM TEST 
+                                        Tx2
+                                        BEGIN;
+                                        -- ACQUIRES AccessSharelock (OK)
+                                        SELECT * FROM TEST;
+                                        -- Attempts to acquire
+                                        -- AccessExlusiveLock get blocked by tx1
+                                        ALTER TABLE ADD COLUMN A TEXT;
+    --Attempts to acquire Access
+    --Exclusive blocks by tx2 
+    --dead lock
+    TRUNCATE TABLE TEST;
+
+    ---DEAD LOCK X_X
+    ```
+  * > Another example with row locks 行锁的另一个例子
+  * > Another dead lock example from the doc. 文档中的另一个死锁示例。
+- > **Advisory Locks 咨询锁**
 
 Postgresql源码（69）常规锁细节分析 https://blog.csdn.net/jackgo73/article/details/126260915
 
