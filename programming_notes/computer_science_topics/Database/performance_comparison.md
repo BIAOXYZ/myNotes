@@ -78,6 +78,31 @@ Postgres 在中国还能起来么？ https://www.v2ex.com/t/1010986
 - > 这是 aws 里面对比 pg 和 mysql 的文章。 https://aws.amazon.com/cn/compare/the-difference-between-mysql-vs-postgresql/ <br> 然后对于 pg 和 mysql 来说，我在部分场景下，有发现老版本的 mysql 不严谨的地方，比如说数据类型太多，pg 的数据类型很单一很明确，减少了混淆的可能。例如 pg 的 text 和 mysql 的各种 text 的区别。。 <br> 再就是数据库字符集的问题，pg 默认是 utf8 ，mysql 里面的则需要自己改成 utf8 ，而且 utf8 还分了好几个类别。。。
   >> `utf8mb4` hahhahahah
 
+过来人说说， postgresql 和 mysql 究竟怎么选 https://www.v2ex.com/t/1109357
+- > 看业务，如果未来业务对 json 需求高的可以上 pg ，如果不高就 mysql 又成熟又稳 <br> 以基础框架为例，优先适配、测试用例覆盖更全的也是 mysql ，找库也好找些
+- > 那么必须是扩展有几百个的 pg 啊。装一个扩展，就变身了！！！
+- > mysql 的时序支持度不如 pgsql ，所以 pgsql 完爆 mysql
+- > sql server 2000 转 pg 8 后从没用过其它数据库，pg 实在太省心了
+- > 秒选 postgres ，信创的东西都是 postgres 翻版
+  >> 也不全是，oceanbase 不是吧，虽然是分布式， 但是符合信创，且兼容 mysql 的程序 ：）
+- > PG 原生支持 全文搜索, 数据统计物化视图洗数据, AI 支持空间数据'向量数据,中文分词,免费,大量的开源扩展.
+- > 我用的 pg ，如果要让我重新选的话，我肯定会用 mysql 。***因为 pg 占用内存太高了，买机器都要多花点钱***。
+- > 这里有个类似的讨论 https://www.reddit.com/r/node/comments/rv6u8u/why_do_you_choose_mysql_over_postgres/
+- > 没人说 pg 的 sql 语句更严格吗 需要把 groupby 后面的字段都出现在 select 子句里 <br> mysql 我一直以来都把 sql_mode 设为空
+- > 我在国内的时候如果自建几乎都是 MySQL ，来了硅谷发现他们都用 Postgres （以上均不分大厂小厂），我也不是很理解……
+  >> 因为国内 mysql 的 DBA 多，好招人
+- > ***之前在 12306  互联网层用的是 MySQL  客票底层用的是 PG***
+- > 能说说为什么国产信创大多用 pg 吗？
+  >> 因为国内有 HighGo 啊
+  >>> pg 的源码写的好，易读易修改
+  >>>> 许可证不同，基于 MySQL 做二开对外发布，理论上是需要开放所有源代码的（如果要脸的话），PG 的许可证宽松很多，二开后允许闭源
+- > pg，用过 pg+citus 你就懂了，处理大数据分片很方便，也不需要额外引入一个 TiDB 。处理 GIS 又有 PostGIS ，各种空间几何运算，很方便。
+- > 必须 MySQL , pg 和 mysql 占有率不是一个量级的
+- > pg ，说实话 my 会死锁这个设计始终非常弱智，但是 pg 的 vacuum 有时候有写入性能和占用空间的坑，上个透明压缩会好很多。
+- > ***讲一个事情，500w 级别的表数据，三表联查，pg 毫无压力，mysql cpu,内存打满，响应是六七倍的耗时***。。。
+- > 有足够技术自信 、 有用到 pg 特性而 mysql 没有的、对性能有要求的， 三者符合一个选 pg ，其余情况用 mysql
+- > 我们项目中用到了 pg 做归档，好几年了，我翻代码从来没有触碰过这一块，所以稳定性上还是不错的。坐等大佬发言，学习下
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # SQLite v.s. DuckDB

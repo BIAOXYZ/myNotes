@@ -1,4 +1,9 @@
 
+C++入门书籍，我是不是被坑了？ https://www.v2ex.com/t/1109496
+- > 推荐个网站： https://www.learncpp.com/ ，很清晰，入门很友好，还会很自然地引入一些 Modern C++ 的特性，作者还会在评论区答疑
+- > 偏向阅读书籍的话，如果有其他编程语言的基础，那么可以过一遍 C++之父的 A Tour of C++（中文版叫《 C++之旅》），时间足够的话还可以看看他的 The C++ Programming Language （中文版叫做《 C++程序设计语言》，电商平台查找时注意看作者栏，同名书籍过多） <br> 更推荐的是楼上提供的 learncpp 网站，内容新得多
+- > 有编程经验的话, 可以看 `a tour of cpp` 及 `cs106L`
+
 C 怎么进阶学 C++呀 https://www.v2ex.com/t/1093126
 
 请教一个 C++性能问题 https://www.v2ex.com/t/1087884
