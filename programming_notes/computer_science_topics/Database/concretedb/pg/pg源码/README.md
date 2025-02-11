@@ -66,27 +66,6 @@ PostgreSQL执行引擎简介 http://www.leehao.org/postgresql-executioneng/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
-# husthxd
-
-数据库 http://blog.itpub.net/6906/cid-184206/list-1/
-- PostgreSQL 源码解读（19）- 查询语句#4（ParseTree详解） https://blog.itpub.net/6906/viewspace-2374897/
-- PostgreSQL 源码解读（20）- 查询语句#5（查询树Query详解） https://blog.itpub.net/6906/viewspace-2374896/
-- PostgreSQL 源码解读（204）- 查询#117(数据结构SelectStmt&Value) https://blog.itpub.net/6906/viewspace-2647991/ || https://blog.csdn.net/cuichao1900/article/details/100394894
-  ```sh
-  (gdb) p *(RawStmt *)(raw_parsetree_list->head.data->ptr_value)
-  $7 = {type = T_RawStmt, stmt = 0x1a48c00, stmt_location = 0, stmt_len = 232}
-  (gdb) p *((RawStmt *)(raw_parsetree_list->head.data->ptr_value))->stmt
-  $8 = {type = T_SelectStmt}
-  ###### 实际类型SelectStmt 
-  (gdb)  p *(SelectStmt *)((RawStmt *)(raw_parsetree_list->head.data->ptr_value))->stmt
-  $16 = {type = T_SelectStmt, distinctClause = 0x0, intoClause = 0x0, targetList = 0x1a47b18, 
-    fromClause = 0x1a48900, whereClause = 0x1a48b40, groupClause = 0x0, havingClause = 0x0, windowClause = 0x0, 
-    valuesLists = 0x0, sortClause = 0x1afd858, limitOffset = 0x0, limitCount = 0x1afd888, lockingClause = 0x0, 
-    withClause = 0x0, op = SETOP_NONE, all = false, larg = 0x0, rarg = 0x0}
-  ```
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
 # 那海蓝蓝
 
 数据库 https://blog.csdn.net/fly2nn/category_806804.html
