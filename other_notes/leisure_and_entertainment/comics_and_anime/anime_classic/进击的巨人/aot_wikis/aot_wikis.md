@@ -20,12 +20,46 @@
 
 Attack on Titan (進撃の巨人 Shingeki no Kyojin?)  https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki
 
-## music
+## Music https://attackontitan.fandom.com/wiki/Category:Music
+
+### `"Attack on Titan" Original Soundtrack` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Original_Soundtrack
+
+`Ətˈæk 0N tάɪtn` https://attackontitan.fandom.com/wiki/%C6%8Ft%CB%88%C3%A6k_0N_t%CE%AC%C9%AAtn
+- > All occurrences
+  * > TV Anime
+    + > Episode 2 - The `Armored Titan` appears
+    + > Episodes 4 and 13.5 - The Colossal Titan appears for the first time in five years
+    + > Episode 8 - Titans surround the HQ
+    + > Episode 9:
+      - > Opening narration
+      - > Eren remembers his fathers order to find the basement
+  * > OVAs
+  * > Movies
+
+### `"Attack on Titan" Original Soundtrack II` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Original_Soundtrack_II
+
+### `"Attack on Titan" Season 2 Original Soundtrack` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Season_2_Original_Soundtrack
+
+Barricades https://attackontitan.fandom.com/wiki/Barricades
+- > All occurrences
+  * > Episode 28 - Conny and the Scouts leave Ragako
+  * > Episode 37 - Historia shows her resolve
+  * > Episode 81 - The Scouts annihilate the last remaining Titans in Shiganshina District
+
+### `"Attack on Titan" Season 3 Original Soundtrack` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Season_3_Original_Soundtrack
 
 SymphonicSuite[AoT]Part2-5th:Apple Seed https://attackontitan.fandom.com/wiki/Apple_Seed
 - > Musical motifs
   * > The track is a remix of [YouSeeBIGGIRL/T:T](https://attackontitan.fandom.com/wiki/YouSeeBIGGIRL/T:T).
 - > All occurrences
   * > `Episode 52` - `Mikasa` attacks `Bertholdt`, and he transforms into the `Colossal Titan`
+
+### `"Attack on Titan" The Final Season Original Soundtrack 02` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_The_Final_Season_Original_Soundtrack_02
+
+`Ətˈæk 0N tάɪtn＜TFSv＞` https://attackontitan.fandom.com/wiki/%C6%8Ft%CB%88%C3%A6k_0N_t%CE%AC%C9%AAtn%EF%BC%9CTFSv%EF%BC%9E
+- > All occurrences
+  * > Episode 87 - The Rumbling arrives in Marley
+  * > Special 1 and Episode 90 - The airship unit is shot down by Zeke
+  * > Special 2 and Episode 92 - Levi beheads Zeke, stopping the Rumbling
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
