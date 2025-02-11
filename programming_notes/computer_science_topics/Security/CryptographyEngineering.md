@@ -262,6 +262,8 @@ Speedtest and Comparsion of Open-Source Cryptography Libraries and Compiler Flag
 
 AES256 CBC vs AES256 GCM performance? https://stackoverflow.com/questions/73067225/aes256-cbc-vs-aes256-gcm-performance
 
+CPU的睿频、超线程、SIMD指令集等特性对密码算法性能的影响 https://crypto2020.blog.csdn.net/article/details/127748103
+
 ## performance 单机
 
 Non-cryptography hashing methods https://asecuritysite.com/hash/non_crypto
