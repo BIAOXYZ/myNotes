@@ -1,16 +1,4 @@
 
-# wiki
-
-进击的巨人 https://zh.moegirl.org.cn/%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA
-
-进击的巨人 https://zh.wikipedia.org/wiki/%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA
-
-进击的巨人 (动画) https://zh.wikipedia.org/wiki/%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA_(%E5%8B%95%E7%95%AB)
-
-进击的巨人集数列表 https://zh.wikipedia.org/wiki/%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
-
-:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
-
 # from 豆瓣
 
 《巨人》感情线从头细数之二 阿尔敏与亚妮 https://www.douban.com/group/topic/227418547 || https://web.archive.org/web/20210830065423/https://www.douban.com/group/topic/227418547/
