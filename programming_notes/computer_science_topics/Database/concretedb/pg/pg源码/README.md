@@ -116,3 +116,13 @@ PostgreSQL 中的 MVCC (01)——基本可见性判断 https://smartkeyerror.com
 PostgreSQL查询SQL的语法分析（1）——词法分析 https://www.jianshu.com/p/1c8183d93eae
 
 从Raw parse tree 到Query tree — PostgreSQL 查询处理第一步（1） https://jnxnj.wordpress.com/2008/04/20/%E4%BB%8Eraw-parse-tree-%E5%88%B0query-tree-postgresql-%E6%9F%A5%E8%AF%A2%E5%A4%84%E7%90%86%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%881-%EF%BC%89/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+postgres代码解析 https://www.zhihu.com/column/c_1660357508995837952
+- postgres外存管理之fsm - 朝闻夕死的文章 - 知乎 https://zhuanlan.zhihu.com/p/649713391
+- postgres外存管理之vm - 朝闻夕死的文章 - 知乎 https://zhuanlan.zhihu.com/p/649717804
+- postgres查询分析(parser) - 朝闻夕死的文章 - 知乎 https://zhuanlan.zhihu.com/p/656626486
+- page prune - 朝闻夕死的文章 - 知乎 https://zhuanlan.zhihu.com/p/665245660
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
