@@ -34,6 +34,19 @@ Attack on Titan (進撃の巨人 Shingeki no Kyojin?)  https://attackontitan.fan
     + > Episode 9:
       - > Opening narration
       - > Eren remembers his fathers order to find the basement
+      - > The Garrison is horrified to see Eren's half-formed Titan
+    + > Episode 10 - The opening narration
+    + > Episode 11 - Commander Pyxis's speech
+    + > Episode 12 - Armin arrives to help Eren get back in control
+    + > Episode 13 - Opening recap
+    + > Episode 17 - Jean attacks the Female Titan
+    + > Episode 18 - Opening recap
+    + > Episode 21 - Eren vs The Female Titan
+    + > Episode 24 - Eren transforms into his Titan form
+    + > Episode 25 - Eren vs the Female Titan round 2
+    + > Episode 26 - Miche Zacharius's last stand
+    + > Episode 28 - Titans appear in the night
+    + > Episode 29 - Opening recap
   * > OVAs
     + > OVA 1 - Ilse runs into the Titan (mixed with the cóunter・attàck-m'ænkάɪnd glissando)
     + > OVA 2 - Jean and Sasha cook
