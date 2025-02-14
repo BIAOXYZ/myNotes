@@ -25,6 +25,7 @@ Attack on Titan (進撃の巨人 Shingeki no Kyojin?)  https://attackontitan.fan
 ### `"Attack on Titan" Original Soundtrack` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Original_Soundtrack
 
 `Ətˈæk 0N tάɪtn` https://attackontitan.fandom.com/wiki/%C6%8Ft%CB%88%C3%A6k_0N_t%CE%AC%C9%AAtn
+- > Musical motifs
 - > All occurrences
   * > TV Anime
     + > Episode 2 - The `Armored Titan` appears
@@ -34,13 +35,24 @@ Attack on Titan (進撃の巨人 Shingeki no Kyojin?)  https://attackontitan.fan
       - > Opening narration
       - > Eren remembers his fathers order to find the basement
   * > OVAs
+    + > OVA 1 - Ilse runs into the Titan (mixed with the cóunter・attàck-m'ænkάɪnd glissando)
+    + > OVA 2 - Jean and Sasha cook
   * > Movies
+    + > Attack on Titan Part 1: Guren no Yumiya - The Colossal Titan appears
+    + > Attack on Titan: Roar of Awakening:
+      - > Miche Zacharius's last stand
+      - > Titans appear in the night
+
+`Bauklötze` https://attackontitan.fandom.com/wiki/Baukl%C3%B6tze
+- > All occurrences
+  * > Episode 19 - Levi's Squad repents for not trusting Eren
+  * > Special 1 and Episode 89 - Hange sacrifices themselves to buy the group time to lift off
 
 ### `"Attack on Titan" Original Soundtrack II` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Original_Soundtrack_II
 
 ### `"Attack on Titan" Season 2 Original Soundtrack` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Season_2_Original_Soundtrack
 
-Barricades https://attackontitan.fandom.com/wiki/Barricades
+`Barricades` https://attackontitan.fandom.com/wiki/Barricades
 - > All occurrences
   * > Episode 28 - Conny and the Scouts leave Ragako
   * > Episode 37 - Historia shows her resolve
@@ -48,7 +60,7 @@ Barricades https://attackontitan.fandom.com/wiki/Barricades
 
 ### `"Attack on Titan" Season 3 Original Soundtrack` https://attackontitan.fandom.com/wiki/%22Attack_on_Titan%22_Season_3_Original_Soundtrack
 
-SymphonicSuite[AoT]Part2-5th:Apple Seed https://attackontitan.fandom.com/wiki/Apple_Seed
+`SymphonicSuite[AoT]Part2-5th:Apple Seed` https://attackontitan.fandom.com/wiki/Apple_Seed
 - > Musical motifs
   * > The track is a remix of [YouSeeBIGGIRL/T:T](https://attackontitan.fandom.com/wiki/YouSeeBIGGIRL/T:T).
 - > All occurrences
