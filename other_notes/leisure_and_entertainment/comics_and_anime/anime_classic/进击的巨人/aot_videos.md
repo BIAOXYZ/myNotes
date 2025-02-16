@@ -54,6 +54,32 @@
 
 合集·泽野弘之LIVE合集 https://space.bilibili.com/2135507948/lists/3250516
 - 【全场中字】进击的巨人十周年演出「Attack 音 体感 Final」Attack On Titan 10Th Anniversary “Attack Fes" https://www.bilibili.com/video/BV1hbzrYkEfv/
+  * 回复：
+    + > 曲目合集：
+      ```console
+      0:12:23 at‘aek ON titan <WMId>
+      0:16:34 Before Lights Out(APETITAN)
+      0:19:02 K2-
+      0:21:26 YouSeeBIGGIRL/T:T(后半)
+      0:24:45 counter・attack-m’aenkaind
+      0:27:42 Apple Seed
+      0:30:39 Bauklotze
+      0:34:55 Call of Silence
+      0:37:59 The Reluctant Heroes
+      0:42:44 theDOGS
+      0:47:35 Zero Eclipse
+      1:35:50 Ashes on the Fire
+      1:40:44 The Other Side of the Sea
+      1:45:53 Memory Lane
+      1:49:28 The Warriors
+      1:53:43 Footsteps of Doom
+      1:59:04 An Ordinary Day
+      2:05:07 Splinter Wolf
+      2:10:42 ət'aek till we are Ashes
+      2:15:32 Ashes on the Fire(Epic Finale Version)（cover）
+      2:18:02 Guilty Hero
+      2:22:36 TRAITOR
+      ```
 - 【中字】恭送艾伦！史诗级大编制交响乐现场-进击的巨人：镇魂曲(ATTACK ON TITAN  REQUIEM) https://www.bilibili.com/video/BV1fH4y1q7KQ/
 
 ## from `小小佐仓千代`
