@@ -1,4 +1,26 @@
 
+各位大佬，有个奇葩的技术问题 https://www.v2ex.com/t/1112124
+```console
+客户买了一套闭源的程序用于运营。MySQL 数据库用的是 CDB ，但是现在遇到一个问题：
+因为那套程序对于数据库的优化明显不足，有一些很要命的慢查询拖慢整个库。于是，我们加了 2 个索引。性能问题暂时是解决了。
+
+但是奇葩的是，这套程序会主动检测索引，然后给 DROP 掉。频繁的掉索引，我们就写了个定时任务去加索引。
+于是这套程序就是在不断的 add index 和 drop index, 因为刚开始频率不是很高，所以勉强能用。
+
+但是最近每天的频率越来越高，导致不可用时间占比越来越多。到了无法忍受的地步。
+我想的解决办法：给 CDB 这个用户去除索引的权限。但是程序会报错，无法运行。
+现在想求教，有没有类似的中间件，可以在不修改代码的情况下，欺骗客户端，丢弃掉 drop index 的操作而不会报错？
+```
+```console
+已经通过 ProxySQL 的 Query Rewrite 功能实现了。感谢各位大佬的帮助。
+
+INSERT INTO mysql_query_rules (rule_id, active, match_pattern, replace_pattern) VALUES (1, 1, '^DROP INDEX .* ON .*$', 'select 1');
+```
+- > 查了下 `ProxySql` 和 `MaxScale` 可以主动拦截掉指定语句
+- > 使用 SQL 代理中间件（如 `ProxySQL` ）拦截并忽略 DROP INDEX 语句
+- > 明显是要你们加钱。推荐 ProxySQL
+- > 承包今日笑点
+
 乐了，全 post 接口设计意想不到的妙用 https://www.v2ex.com/t/1069936
 ```console
 某个老项目，只有一两个陈年接口是 get ，其余全是 post 。
