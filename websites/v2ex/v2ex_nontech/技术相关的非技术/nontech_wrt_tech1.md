@@ -201,6 +201,8 @@ https://www.zhihu.com/question/648215689/answer/3432678754
 
 # 信创延伸
 
+Harmony OS Next 是不是要凉了... https://www.v2ex.com/t/1113345
+
 有在从事鸿蒙开发的吗，可以说一下体验，给一些建议吗 https://www.v2ex.com/t/1060919
 - > 我瞧不起开发鸿蒙的程序员
   >> 都是赚钱 开发什么不寒碜 这个也有歧视链吗 😭
