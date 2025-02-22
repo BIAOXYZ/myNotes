@@ -67,6 +67,39 @@ $ ./test
 #define DEBUG_PRINT printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]] %s\n", __FILE__, __func__, __LINE__)
 // or 顺带打印变量的版本
 #define DEBUG_PRINT(msg) printf("[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]] %s\n", __FILE__, __func__, __LINE__, msg)
+// or 打印变量的版本2，比上面那个好用
+#define DEBUG_PRINT(var) \
+fprintf(stdout, "[[c-lang | in source file:\"%s\" | function:\"%s()\" | line:%d]] %s = %s\n", \
+        __FILE__, __func__, __LINE__, #var, var)
+// or 打印变量的版本3，不但支持更多类型，而已有颜色（就是太长了，而且似乎会额外引入一些告警）
+#define DEBUG_PRINT(var) \
+    do { \
+        fprintf(stdout, \
+            "[[c-lang | file:'\033[96m%s\033[0m' " \
+            "| func:'\033[94m%s()\033[0m' " \
+            "| lno:\033[93m%d\033[0m]] %s = ", \
+            __FILE__, __func__, __LINE__, #var); \
+        if (__builtin_types_compatible_p(typeof(var), int)) { \
+            fprintf(stdout, "%d\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), float)) { \
+            fprintf(stdout, "%f\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), double)) { \
+            fprintf(stdout, "%lf\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), long)) { \
+            fprintf(stdout, "%ld\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), short)) { \
+            fprintf(stdout, "%hd\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), char)) { \
+            fprintf(stdout, "%c\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), const char *) || \
+                   __builtin_types_compatible_p(typeof(var), char *)) { \
+            fprintf(stdout, "%s\n", (var)); \
+        } else if (__builtin_types_compatible_p(typeof(var), void *)) { \
+            fprintf(stdout, "%p\n", (var)); \
+        } else { \
+            fprintf(stdout, "[unsupported type]\n"); \
+        } \
+    } while (0)
 ```
 ```c
 #include <stdio.h>

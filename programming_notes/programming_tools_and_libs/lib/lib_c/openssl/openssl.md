@@ -31,3 +31,15 @@ OpenSSL 入门：密码学基础知识 - Linux中国的文章 - 知乎 https://z
 TLS完全指南 https://github.com/k8sp/tls
 
 ssl协议学习及工具使用 https://github.com/yifengyou/learn-ssl
+
+# openssl 国密相关
+
+OpenSSL 1.1.1 新特性: 全面支持国密SM2/SM3/SM4加密算法 https://blog.csdn.net/hbcbgcx/article/details/88900129
+- > OpenSSL项目最近6个月添加了许多新特性, 包括对中国SM2/SM3/SM4算法的支持:
+  ```console
+  SM2椭圆曲线: https://github.com/openssl/openssl/pull/4793
+  SM3哈希摘要: https://github.com/openssl/openssl/pull/4616
+  SM4对称加密: https://github.com/openssl/openssl/pull/4552
+  ```
+
+芯技术 | 基于兆芯处理器的国密算法加速指令使用说明 https://www.zhaoxin.com/prodshow_view.aspx?id=483&nid=31

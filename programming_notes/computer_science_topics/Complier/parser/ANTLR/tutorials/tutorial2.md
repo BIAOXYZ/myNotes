@@ -5,4 +5,4 @@
 
 # 2
 
-ANTLR 解析器生成器 https://github.com/Peefy/CompileDragonBook/blob/master/doc/NOTE_ANTLR.md
+【[ :star: ][`*`]】 ANTLR 解析器生成器 https://github.com/Peefy/CompileDragonBook/blob/master/doc/NOTE_ANTLR.md
