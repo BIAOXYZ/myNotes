@@ -53,7 +53,7 @@
 【总榜】进击的巨人系列音乐人气排行榜！那些神曲你都还记得吗？ https://www.bilibili.com/video/BV1LufoYgEjD/
 
 合集·泽野弘之LIVE合集 https://space.bilibili.com/2135507948/lists/3250516
-- 【全场中字】进击的巨人十周年演出「Attack 音 体感 Final」Attack On Titan 10Th Anniversary “Attack Fes" https://www.bilibili.com/video/BV1hbzrYkEfv/
+- ~~【全场中字】进击的巨人十周年演出「Attack 音 体感 Final」Attack On Titan 10Th Anniversary “Attack Fes" https://www.bilibili.com/video/BV1hbzrYkEfv/~~ || 【全场中字】进击的巨人十周年音乐会 https://www.bilibili.com/video/BV1CRAzeJEiX/
   * 回复：
     + > 曲目合集：
       ```console
