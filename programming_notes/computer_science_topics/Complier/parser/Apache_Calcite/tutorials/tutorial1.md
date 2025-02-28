@@ -18,12 +18,12 @@ Calcite tutorial at BOSS 2021 https://www.youtube.com/watch?v=meI0W12f_nw&t=532s
 
 # 4
 
-Apache Calcite原理与实践 https://liebing.org.cn/collections/calcite/
+Apache Calcite原理与实践 https://liebing.org.cn/collections/calcite/ || https://web.archive.org/web/20240722043315/https://liebing.org.cn/collections/calcite/
 - Apache Calcite整体架构及处理流程 https://liebing.org.cn/apache-calcite-overview.html
 - Apache Calcite SQL解析及语法扩展 https://liebing.org.cn/apache-calcite-sql-parser.html
 
-Apache Calcite整体架构及处理流程 https://liebing.org.cn/apache-calcite-overview.html
-- > Apache Calcite是一个动态的数据管理框架, 它可以实现SQL的`解析`, `验证`, `优化`和`执行`. ***称之为”动态”是因为Calcite是模块化和插件式的, 上述任何一个步骤在Calcite中都对应着一个相对独立的模块. 用户可以选择使用其中的一个或多个模块, 也可以对任意模块进行定制化的扩展***. 正是这种灵活性使得Calcite可以在现有的存储或计算系统上方便地构建SQL访问层, 甚至在已有SQL能力的系统中也可引入Calcite中的某个模块实现相应的功能, ***比如`Apche Hive`就仅使用了Calcite进行优化, 但却有自己的SQL解析器***. Calcite的这种特性使其在大数据系统中得到了广泛的运用, 比如`Apache Flink`, `Apache Drill`等都大量使用了Calcite, 因此理解Calcite的原理已经成为理解大数据系统中SQL访问层实现原理的必备条件.
+Apache Calcite整体架构及处理流程 https://liebing.org.cn/apache-calcite-overview.html || https://web.archive.org/web/20241127060400/https://liebing.org.cn/apache-calcite-overview.html
+- > Apache Calcite是一个动态的数据管理框架, 它可以实现SQL的`解析`, `验证`, `优化`和`执行`. ***称之为”动态”是因为Calcite是模块化和插件式的, 上述任何一个步骤在Calcite中都对应着一个相对独立的模块. 用户可以选择使用其中的一个或多个模块, 也可以对任意模块进行定制化的扩展***. 正是这种灵活性使得Calcite可以在现有的存储或计算系统上方便地构建SQL访问层, 甚至在已有SQL能力的系统中也可引入Calcite中的某个模块实现相应的功能, ***<ins>比如`Apche Hive`就仅使用了Calcite进行优化, 但却有自己的SQL解析器</ins>***. Calcite的这种特性使其在大数据系统中得到了广泛的运用, 比如`Apache Flink`, `Apache Drill`等都大量使用了Calcite, 因此理解Calcite的原理已经成为理解大数据系统中SQL访问层实现原理的必备条件.
 - > **Calcite整体架构**
   * > Calcite的整体架构如下图(图片来自[Calcite论文](https://dl.acm.org/doi/pdf/10.1145/3183713.3190662))所示, 它包含以下组成部分:
   * > ![](https://liebing.org.cn/apache-calcite-overview/arch.png)

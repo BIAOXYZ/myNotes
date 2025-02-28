@@ -213,6 +213,11 @@ http://ibm-research.jobs/job/ibm-japan-postdoctoral-researcher-security-research
 
 http://www.research.ibm.com/labs/china/
 
+【`2025.02.28`】
+- IBM中国投资公司及分公司将于3月1日停止运营 https://mp.weixin.qq.com/s/o9JBduYI8g0ojeDAz2gV5g
+- IBM 中国投资公司及分公司将于 3 月 1 日停止运营 https://www.ithome.com/0/834/396.htm
+- IBM 回应“中国投资公司停止运营”：全球范围整合，未退出中国市场 https://www.ithome.com/0/834/413.htm
+
 ### Microsoft
 
 https://careers.microsoft.com/us/en/actioncenter
