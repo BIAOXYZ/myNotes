@@ -15,6 +15,12 @@ PyCharm + Docker+ Deepo 远程调试环境搭建教程 https://github.com/ruifen
 
 GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://www.jiqizhixin.com/articles/2017-12-18-4 || 资源 | GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
 
+## ollama
+
+本地部署大模型？看这篇就够了，Ollama 部署和实战 https://www.53ai.com/news/LargeLanguageModel/2024081317230.html
+- > 3.文末福利
+  * > 相信看到这里的你，已经基本可以玩转 Ollama 了。只不过觉得上述流程略显麻烦？没问题，你的困惑早有人帮你搞定了，GitHub 上有开发者做了 docker-compose 一键整合安装包：传送门： https://github.com/valiantlynx/ollama-docker
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Apache MADlib

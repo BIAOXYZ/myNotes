@@ -206,6 +206,8 @@ http://zhuanlan.zhihu.com/p/34280674
 
 你以为我在玩游戏？其实我在学编程！ https://mp.weixin.qq.com/s/2njySI6EgW1MyQR0Cu6ELg
 
+Codédex | Start Your Coding Adventure https://www.codedex.io/
+
 ## programming visualization
 
 VISUALGO https://visualgo.net/
