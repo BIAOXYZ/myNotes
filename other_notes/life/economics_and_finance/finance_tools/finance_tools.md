@@ -21,6 +21,18 @@ Invesco QQQ Trust (QQQ) https://cn.investing.com/etfs/powershares-qqqq
 
 MacroMicroGPT for Econ Knowledge https://sc.macromicro.me/mm-gpt
 
+## 基金
+
 Invesco-纳斯达克100指数ETF[QQQ] https://sc.macromicro.me/etf/us/intro/QQQ
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# Google财经
+
+纳斯达克100指数 https://www.google.com/finance/quote/NDX:INDEXNASDAQ
+
+纳斯达克综合指数 https://www.google.com/finance/quote/.IXIC:INDEXNASDAQ
+
+上海证券交易所综合股价指数 https://www.google.com/finance/quote/000001:SHA
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
