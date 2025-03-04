@@ -350,11 +350,17 @@ PETAce https://github.com/tiktok-privacy-innovation/PETAce
 
 # 其他项目
 
-## ABY2.0
+## SecureML
 
-(USENIX Security 2021) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。】
+SecureML: A System for Scalable Privacy-Preserving Machine Learning https://eprint.iacr.org/2017/396.pdf
 
-ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
+Secure Machine Learning https://github.com/shreya-28/Secure-ML
+
+（阅读笔记）SecureML: A System for Scalable Privacy-Preserving Machine Learning https://blog.csdn.net/qq_42328228/article/details/109697929
+
+SecureML: A System for Scalable Privacy-Preserving Machine Learning - 铃铃铃铃屋什造啊的文章 - 知乎 https://zhuanlan.zhihu.com/p/483203938
+
+论文阅读笔记：SecureML: A System for Scalable Privacy-Preserving Machine Learning - 风起的文章 - 知乎 https://zhuanlan.zhihu.com/p/474142624
 
 ## ABY<sup>3</sup>
 
@@ -362,6 +368,8 @@ ABY 3 and Applications https://github.com/ladnir/aby3
 - ***Paper***:
   * (CCS 2018) ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf || https://dl.acm.org/doi/10.1145/3243734.3243760
     + > `[46] Fast and Secure Three-party Computation: The Garbled Circuit Approach` https://dl.acm.org/doi/10.1145/2810103.2813705 || https://eprint.iacr.org/2015/931.pdf
+
+ABY3: A Mixed Protocol Framework for Machine Learning - 酸菜鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/402420978
 
 （阅读笔记）ABY3: A Mixed Protocol Framework for Machine Learning https://blog.csdn.net/qq_42328228/article/details/109563447
 
@@ -373,13 +381,25 @@ ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation http
 - ***Paper***:
   * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
 
-ABY和ABY2.0 https://mp.weixin.qq.com/s/anUD56tYxupe8Pwd9sE58A
+(阅读笔记)ABY: A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://blog.csdn.net/qq_42328228/article/details/124918275
+
+安全多方计算——ABY框架 - Patronuss的文章 - 知乎 https://zhuanlan.zhihu.com/p/475610774
 
 安全多方计算基础——ABY框架（Arithmetic部分） https://blog.csdn.net/qq_37963864/article/details/120169331
 
 隐私计算框架之ABY开发指南(一) - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/491626700
 
 ABY开发指南(三) - 六三的文章 - 知乎 https://zhuanlan.zhihu.com/p/495374615
+
+ABY-PPLP：面向位置保护的隐私距离计算与近邻检测 https://github.com/primihub/hackathon/blob/master/winning-project/ABY/README.md
+
+## ABY2.0
+
+(USENIX Security 2021) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。】
+
+ABY和ABY2.0 https://mp.weixin.qq.com/s/FC-OlJBgQEJw9iCtnl5sew
+
+隐语小课｜两方安全计算 ABY2.0 高效的 2PC 协议 https://xie.infoq.cn/article/8fc83431b0b5458b03a7a8388
 
 ## MPyC
 
