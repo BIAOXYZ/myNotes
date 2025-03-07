@@ -83,3 +83,13 @@ Linux 内核 101：NUMA架构 - 廖长江的文章 - 知乎 https://zhuanlan.zhi
   * > 从最简单的开始，一个 CPU（注意：这里指的是物理 CPU，不是核。需要注意的一点是NUMA 是针对多物理 CPU 而言的，而不是多核。），通过 bus 和 RAM 相连。
   * > 接下来多CPU 出现了（再说一次，不是多核单CPU！），如果还是像之前那样将所有的CPU 通过一个 BUS 和 RAM 相连，BUS 会成为性能的杀手。而且，加的 CPU 越多，性能损耗会越高。
   * > 这时候 NUMA 架构就展露身手了：通过把 CPU 和临近的 RAM 当做一个 node，CPU 会优先访问距离近的 RAM。同时，CPU 直接有一个快速通道连接，所以 每个CPU 还是访问到所有的 RAM 位置（只是速度会有差异）。
+
+什么是NUMA，我们为什么要了解NUMA - linux的文章 - 知乎 https://zhuanlan.zhihu.com/p/643610982
+- > **3、NUMA架构下的编程**
+  * > NUMA架构显著的特点就是CPU访问本地内存快，访问远程内存慢。所以我们在NUMA架构下编写程序，要扬长避短，多核多线程编程中，我们要尽可能的利用CPU Core的亲和性，将线程绑定到对应的CPU上，并且该线程从该CPU对应的本地内存上去申请内存，这样才能最大限度发挥NUMA架构的优势，达到比较好的处理性能。
+  * > 简单来说，就是本地的处理器、本地的内存来处理本地的设备上产生的数据。如果有一个PCI设备（比如网卡）在Node0上，就用Node0上的核来处理该设备，处理该设备用到的数据结构和数据缓冲区都从Node0上分配。
+  * > 在`DPDK`中，有一个`rte_socket_id()`函数，可以获取当前线程所在的NUMA Node，在使用DPDK提供申请内存的接口中，一般都需要传入参数NUMA id，也是基于提高NUMA架构下的报文转发性能考虑。
+
+NUMA Balance实现浅析 https://chiichen.github.io/posts/Linux%E5%86%85%E6%A0%B8/NUMA%20Balance%E5%AE%9E%E7%8E%B0%E6%B5%85%E6%9E%90.html || https://blog.csdn.net/faxiang1230/article/details/123709414
+
+irqbalance详解 - 无产阶级老百姓的文章 - 知乎 https://zhuanlan.zhihu.com/p/335504099
