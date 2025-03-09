@@ -24,3 +24,8 @@ MPP 是什么？以 Doris 为例 https://www.ihnfsa.com/database/mpp-in-doris/
   * > Apache Doris 源码阅读与解析系列直播——第四讲 一条SQL的执行过程 https://www.bilibili.com/video/BV1Kr4y117SC/
   * > Apache Doris 源码阅读与解析系列直播—— 第八讲 查询优化器详解 https://www.bilibili.com/video/BV1Lr4y1Q7Ho/
 - 合集·《Apache Doris 源码阅读与解析》 系列直播 https://space.bilibili.com/362350065/channel/collectiondetail?sid=296007
+
+# 现实案例
+
+从 ClickHouse 到 Apache Doris：在网易云音乐日增万亿日志数据场景下的落地 https://mp.weixin.qq.com/s/F4d34ihLjhQZwy1v0Mm8lw
+- > 为寻找更优质解决方案，结合当前的业务需求，网易云音乐引入 Apache Doris 作为日志库新方案，替换了 ClickHouse。目前已经稳定运行 3 个季度，规模达到 50 台服务器，`2PB` 数据，每天新增日志量超过`万亿`条，峰值写入吞吐达 `6GB/s`。本文将介绍从 ClickHouse 到 Apache Doris 的迁移思考及调优实践，并分享网易云音乐如何在运维效率、并发能力、查询响应以及存储性能上实现全方位提升。
