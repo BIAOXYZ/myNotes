@@ -170,6 +170,8 @@ Gitako - 优雅、开源、免费的 GitHub 文件树插件 https://www.v2ex.com
 
 # 待分类
 
+Windows 大家有什么实用技巧❓ https://www.v2ex.com/t/1117268
+
 关于办公自动化的一个案例，求教下实现的方向 https://www.v2ex.com/t/831492
 - > 用 pyautogui 的时候推荐使用 snipaste 加快写脚本的速度。
 - > python + selenium 搭配即可。
