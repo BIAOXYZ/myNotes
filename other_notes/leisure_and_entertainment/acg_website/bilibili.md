@@ -23,6 +23,14 @@ B站的年轻人，真的有那么好学吗？ https://mp.weixin.qq.com/s/HY_oYg
 
 推荐一些我认为认真搞技术的 up 主 https://www.v2ex.com/t/893469
 
+## Hucci写代码
+
+合集·pythonic练习生 https://space.bilibili.com/1318868/lists?sid=2943140
+- 为什么要写 `__init__.py` ? | Python https://www.bilibili.com/video/BV1QA94YPEMK/
+
+合集·用好工具事半功倍 https://space.bilibili.com/1318868/lists/4349555
+- 只用python，也能全栈 | gradio | devbox | 前端 | 部署 | 运维 https://www.bilibili.com/video/BV18iqbYaEoP/
+
 ## ZeroTier
 
 简易利用ZeroTier等工具实现多人稳定游戏联机 https://www.bilibili.com/read/cv5281798/
