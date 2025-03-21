@@ -31,6 +31,26 @@ B站的年轻人，真的有那么好学吗？ https://mp.weixin.qq.com/s/HY_oYg
 合集·用好工具事半功倍 https://space.bilibili.com/1318868/lists/4349555
 - 只用python，也能全栈 | gradio | devbox | 前端 | 部署 | 运维 https://www.bilibili.com/video/BV18iqbYaEoP/
 
+只用python，也能全栈 | gradio | devbox | 前端 | 部署 | 运维 https://www.bilibili.com/video/BV18iqbYaEoP/
+```console
+使用 python 库 gradio 和云开发工具 devbox 快速开发一个 app 并部署
+Devbox 链接：https://cloud.sealos.run/?uid=j2Y_5Qpy1q
+```
+- 回复：
+  * > 感觉用 Gradio 的话可以看看这个库：https://modelscope.cn/studios/modelscope/modelscope-studio-beta
+  * > 之前问 ai大概给我推荐了solara这个库，也是前后端一套代码的，磕磕绊绊还在开发者社区沟通和反馈问题，总算开发了一些东西，最近也有要上线的了。但中途做到To c 展示的内容就还是需要做 css调整 ，然后单独去学了一些……但对于这个支持程度和硬性还是不太满意， gradio 有能做成商业产品程度的潜力么？有考虑要不要切换一个有潜力的技术栈
+    >> gradio更多还是用来做实验，比较少作为最终产品，但如果你的项目比较小，也可以用它。你可以先看下文档，确认你需要实现的东西能不能通过它来实现
+  * > gradio现在不行了，听说已经停止维护了。得换一个了。而且，没有响应式变量，文档写的也很迷，功能也找不到在哪（低版本能使用的组件，在文档中找不到，也不知道删掉的理由）如果写简单的确实快，但如果想要一点点点点点功能，就会把自己搞爆炸！
+    >> 是的，开箱即用是gr的优点，偏偏文档差得离谱，兼容性轮子各种不兼容，没有更新
+    >>> 10月份的时候还更新了一个大版本5.0呢，怎么停止维护了？
+    >>>> Gradio 是 `Hugging Face` 旗下的，现在 HF 如日中天，80%的 Space 都是 Gradio 写的，你确定不行吗
+  * > 目前使用streamlit更多，想问下和gradio的对比
+    >> gradio配置起来更快，`streamlit`可定制项更多
+    >>> 确实看了很多网上的文章也没看出对比，个人使用streamlit已经成习惯了，还是非常好用的。
+    >>>> 我用两个都做过几个ai应用，st界面更漂亮更像一个应用，但是全局刷新机制很多场景让人迷惑。gr界面相对单一很素像一个demo，原型开发展示非常快，做成应用比较难
+  * > 这些都只是原型验证和数据分析的, 如果是构建网站, `nicegui`和`fasthtml`都不错
+  * > 最近用了Streamlit Taipy 和Dash。目前相对比较推荐Taipy，然后是Dash，最后Streamlit
+
 ## ZeroTier
 
 简易利用ZeroTier等工具实现多人稳定游戏联机 https://www.bilibili.com/read/cv5281798/
