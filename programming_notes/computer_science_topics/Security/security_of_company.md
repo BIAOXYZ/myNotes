@@ -50,6 +50,11 @@ Private Matching for Compute https://eprint.iacr.org/2020/599.pdf  【//notes：
 - > We revisit the problem of two-party private set intersection for aggregate computation which we refer to as private matching for compute. In this problem, two parties want to perform various downstream computation on the intersection of their two datasets according to a previously agreed-upon identifier. We observe that prior solutions to this problem have important limitations. For example, any change or update to the records in either party’s dataset triggers a rerun of the private matching component; and it is not clear how to support a streaming arrival of one party’s set in small batches without revealing the match rate for each individual batch.
 - > We introduce two new formulations of the private matching for compute problem meeting these requirements, called `private-ID and streaming private secret shared set intersection` (`PS3I`), and design new DDH-based constructions for both. Our implementation shows that when taking advantage of the inherent parallelizability of these solutions, we can execute the matching for datasets of size upto 100 million records within an hour.
 
+Gloo https://github.com/facebookincubator/gloo
+- > Gloo is a collective ***communications library***. It comes with a number of collective algorithms useful for machine learning applications. These include a barrier, broadcast, and allreduce.
+
+`pytorch/third_party/gloo.BUILD` https://github.com/pytorch/pytorch/blob/aeac7f4203a9a80d21d27a385fbca8ecfe6ec6e0/third_party/gloo.BUILD
+
 ## Oasis Labs
 
 https://www.oasislabs.com/
