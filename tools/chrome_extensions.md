@@ -170,6 +170,50 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 - > https://github.com/fishjar/kiss-translator 这个？
   >> 这个好用，且开源免费。
 
+有哪些必装的 Chrome 扩展？ https://www.v2ex.com/t/1120254
+```console
+看了一下自己的扩展，必装且一直保持开启状态的是：
+
+1. 简悦：沉浸化阅读网页内容
+2. 篡改猴：装载脚本
+3. uBlock Origin：去广告
+4. OneTab：收起自己临时要关闭的标签页
+5. 扩展管理器：直接在里面搜索和启动、关闭扩展
+6. 网费很贵：查看自己每天摸鱼的网站时长
+7. Auto Copy Pro：可以实现划过网页文本即复制
+8. 恢复关闭的标签：点击即可恢复关闭的标签页，并且可以查看最近关闭的几十个标签页
+9. Copy as Markdown：将网页标题复制为 Markdown 模式，有类似脚本但这个可以复制所有在浏览标签的标题
+10. TapToTab：实现浏览网页时双击链接即可不离开本页而在后台打开链接
+11. Bookmarkie - 在弹窗中查看、管理你的书签
+
+会通过扩展管理器根据使用场景搜索开启的扩展：
+
+1. LeechBlock NG：限制自己工作时候打开某些摸鱼网站
+2. Media Harvest : twitter Media Downloader：推特图片下载
+3. SingleFile：将网页保存为 html
+4. 滚动屏幕截图工具和屏幕捕获
+5. 浮图秀：浮动查看图片和复制
+6. 强悍搜索：多引擎搜索
+7. Separate Window：裁剪网页的部分区域进行固定，类似截图贴图
+8. Dualless for Browser：更快的分屏浏览
+9. RSSHub Radar
+10. TinySnap：人人会用的屏幕截图软件
+11. ZLibrary Searcher
+12. 图片助手(ImageAssistant) 批量图片下载器
+13. 小窗打开 - 微博抖音小红书
+14. AI 摘要生成器
+15. Follow it later
+16. GoFullPage - Full Page Screen Capture
+17. Obsidian Web Clipper
+18. 必隐搜:侧边栏预览搜索结果
+19. Douban Book+
+20. 快速滾動頁面
+21. 电子书全网搜
+22. 缩放 for Google Chrome
+
+大概还有一百个扩展很少用到但删了又浪费了自己的探索的就不提了，不知道 v 友又有哪些必装的扩展呢？
+```
+
 ### 油猴专区
 
 - Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/

@@ -1,4 +1,6 @@
 
+新手提问， Go 作为一个 GC 语言，为什么要设计成带指针类型的呢？ https://www.v2ex.com/t/1120099
+
 golang, 开发效率低执行效率高的语言? https://www.v2ex.com/t/1101972
 - > 不好的就是 feature 是故意这样设计,是你们逼的 <br> 好的也是 feature 是故意这样设计,但跟你们无关
 
