@@ -352,6 +352,8 @@ $18 = {ptr_value = 0xaaaacd2e12f0, int_value = -852618512, oid_value = 344234878
 
 # `.gdbinit` for pg debug
 
+## 1
+
 Tip 15: get GDB to print your structures https://modelingwithdata.org/arch/00000065.htm
 
 ```console
@@ -371,5 +373,51 @@ define plist
     p ((List*)$arg0)->elements[$i]
     set $i = $i + 1
   end
+end
+```
+
+## 2
+
+```sh
+# p *node 类型会打出来一个T_开头的枚举型
+# 然后把node强转成T_后面那个结构体名就能打出来了
+```
+```sh
+# 主要用 nt和tr就行 很方便
+# 直接跟地址
+# 还一个plist 有这三个就够了
+```
+```sh
+$ cat ~/.gdbinit
+set $USECOLOR = 1
+
+define nt
+p *(Node*)$arg0
+end
+
+define tr
+p *(($arg0*)$arg1)
+end
+
+define plist
+  p ((List*)$arg0)->length
+  set $n = ((List*)$arg0)->length
+  set $i = 0
+  while($i < $n)
+    p ((List*)$arg0)->elements[$i]
+    set $i = $i + 1
+  end
+end
+
+define pstrl
+  set $i=0
+  while($i<($arg1))
+    printf "%c",$arg0[$i++]
+  end
+  printf "\n"
+end
+
+define pnode
+  p elog_node_display(LOG, "pnode", $arg0, true)
 end
 ```
