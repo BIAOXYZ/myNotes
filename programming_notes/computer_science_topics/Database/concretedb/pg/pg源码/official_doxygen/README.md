@@ -388,6 +388,34 @@ end
 # 还一个plist 有这三个就够了
 ```
 ```sh
+(gdb) p parsetree
+$5 = (RawStmt *) 0xaaab0e003570
+(gdb) p *parsetree
+$6 = {type = T_RawStmt, stmt = 0xaaab0e003460, stmt_location = 0, stmt_len = 19}
+
+(gdb) nt parsetree
+$7 = {type = T_RawStmt}
+(gdb) tr RawStmt parsetree
+$8 = {type = T_RawStmt, stmt = 0xaaab0e003460, stmt_location = 0, stmt_len = 19}
+
+# 注：这个内存地址是成员 stmt（类型为 SelectStmt）的地址
+(gdb) nt 0xaaab0e003460
+$9 = {type = T_SelectStmt}
+(gdb) tr SelectStmt 0xaaab0e003460
+$10 = {type = T_SelectStmt, distinctClause = 0x0, intoClause = 0x0, targetList = 0xaaab0e003338, fromClause = 0xaaab0e0033f0, whereClause = 0x0,
+  groupClause = 0x0, groupDistinct = false, havingClause = 0x0, windowClause = 0x0, valuesLists = 0x0, sortClause = 0x0, limitOffset = 0x0,
+  limitCount = 0x0, limitOption = LIMIT_OPTION_COUNT, lockingClause = 0x0, withClause = 0x0, op = SETOP_NONE, all = false, larg = 0x0, rarg = 0x0}
+# 注：这个内存地址是成员 targetList 的地址
+(gdb) plist 0xaaab0e003338
+$11 = 1
+$12 = {ptr_value = 0xaaab0e0032e8, int_value = 234894056, oid_value = 234894056, xid_value = 234894056}
+# 注：这个内存地址是成员 ptr_value 的地址
+(gdb) nt 0xaaab0e0032e8
+$13 = {type = T_ResTarget}
+(gdb) tr ResTarget 0xaaab0e0032e8
+$14 = {type = T_ResTarget, name = 0x0, indirection = 0x0, val = 0xaaab0e003250, location = 7}
+```
+```sh
 $ cat ~/.gdbinit
 set $USECOLOR = 1
 
