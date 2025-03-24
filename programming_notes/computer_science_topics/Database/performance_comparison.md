@@ -111,6 +111,17 @@ DuckDB Profiling 1: vs SQLite3.md https://github.com/jtommaney/blog/blob/blog/po
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# OLAP 对比
+
+新型OLAP引擎（Doris、StarRocks）调研与对比 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/714079192
+
+Detailed Comparison Between StarRocks and Apache Doris https://medium.com/starrocks-engineering/detailed-comparison-between-starrocks-and-apache-doris-81ddd34be527
+- > ***Four years ago, a handful of Apache Doris PMC members made the decision to fork the project***. The goal was to address the escalating challenges in data analytics that Doris, with its priorities and set feature roadmap, was not in a position to address. ***This marked the inception of what would become the StarRocks project***. Given the history between these two projects, it’s common for users to ask how they differ today. This article will provide a detailed comparison that explores various categories, including deployment and management, performance optimizations, query capabilities, and governance so that by the end of this article, you’ll have a clear understanding of how these two systems compare and which is the best fit for your needs.
+
+System Properties Comparison Apache Doris vs. ClickHouse vs. StarRocks https://db-engines.com/en/system/Apache+Doris%3BClickHouse%3BStarRocks
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # TPC
 
 ## tpcc
