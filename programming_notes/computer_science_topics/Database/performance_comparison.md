@@ -114,6 +114,10 @@ DuckDB Profiling 1: vs SQLite3.md https://github.com/jtommaney/blog/blob/blog/po
 # OLAP 对比
 
 新型OLAP引擎（Doris、StarRocks）调研与对比 - 温正湖的文章 - 知乎 https://zhuanlan.zhihu.com/p/714079192
+- > **Doris vs StarRocks**
+  * > 不讨论Doris和StarRocks是否能够完全取代其他OLAP引擎，凭借目前已经具备的全面能力以及还在高速发展的现实，可以确定的是他们至少能够在数据湖仓分析场景占有重要的一席之地。下面梳理下他们的发展脉络：
+- > **融资金额**
+  * > 2020年5月成立`鼎石纵横科技`，B轮，目前的投资方包括神策数据、明势资本和Atypical Ventures。`SelectDB`于2021年12月作为基于Apache Doris的商业化公司成立，Pre-A轮融资，总融资近10亿元，投资方包括IDG资本、红杉中国等，相对来说，SelectDB的投资方更有名。关键事件汇总如下：
 
 Detailed Comparison Between StarRocks and Apache Doris https://medium.com/starrocks-engineering/detailed-comparison-between-starrocks-and-apache-doris-81ddd34be527
 - > ***Four years ago, a handful of Apache Doris PMC members made the decision to fork the project***. The goal was to address the escalating challenges in data analytics that Doris, with its priorities and set feature roadmap, was not in a position to address. ***This marked the inception of what would become the StarRocks project***. Given the history between these two projects, it’s common for users to ask how they differ today. This article will provide a detailed comparison that explores various categories, including deployment and management, performance optimizations, query capabilities, and governance so that by the end of this article, you’ll have a clear understanding of how these two systems compare and which is the best fit for your needs.
