@@ -355,6 +355,14 @@ ORACLE优化器RBO与CBO介绍总结 https://www.cnblogs.com/kerrycode/p/3842215
 
 StarRocks 技术内幕 | Join 查询优化 - StarRocks的文章 - 知乎 https://zhuanlan.zhihu.com/p/580164199
 
+玩一玩PG里的开心消消乐 https://mp.weixin.qq.com/s/7sInt52JGvwqFw8qK-zCzQ
+- > **一、`IS NOT NULL`和`IS NULL`冗余消除**
+- > **二、`IS [NOT] UNKNOWN`分区裁剪**
+- > **三、互斥条件冗余消除**
+- > **四、Group By多列自适应重排**
+- > **五、DISTINCT关键字排序优化**
+- > **六、唯一索引消除冗余GROUP BY列**
+
 # 执行引擎
 
 【[:star:][`*`]】 数据库内核杂谈（顾仲贤） https://www.infoq.cn/theme/46
