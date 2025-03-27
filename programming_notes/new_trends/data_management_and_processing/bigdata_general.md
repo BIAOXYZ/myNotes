@@ -49,6 +49,11 @@ Data lake https://en.wikipedia.org/wiki/Data_lake
     + > 为什么我们认为Lambda架构是批流一体化的必然要求？这好像看起来是矛盾的（与之相对，还有一种架构叫`Kappa架构`，即用一个流式处理引擎解决所有问题）。
 - 批处理计算与流处理计算的区别是什么？ - 大数据羊说的回答 - 知乎 https://www.zhihu.com/question/313869609/answer/2398291030
 
+告别「补丁」时代！全新批流一体 Domino 架构终结“批流缝合” https://mp.weixin.qq.com/s/jOTA9DO1MGWJ6nZ2w4X8DQ
+- > **2. Lambda-Kappa**
+  * > **`Lambda 架构`**
+  * > **`Kappa 架构`**
+
 批处理和流处理 https://www.jianshu.com/p/5cc07eae1a0c
 
 Big Data Battle : Batch Processing vs Stream Processing https://medium.com/@gowthamy/big-data-battle-batch-processing-vs-stream-processing-5d94600d8103
