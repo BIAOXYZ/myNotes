@@ -213,6 +213,12 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 
 大概还有一百个扩展很少用到但删了又浪费了自己的探索的就不提了，不知道 v 友又有哪些必装的扩展呢？
 ```
+- 个人总结：
+  * Auto Copy Pro https://chromewebstore.google.com/detail/auto-copy-pro/dggjedhladcgnhkehemidebdddebfkad
+
+求推荐好用的浏览器划词翻译插件 https://www.v2ex.com/t/972058
+- > https://hcfy.app/ 这个，用了快 4 年了
+  * 划词翻译 https://chromewebstore.google.com/detail/%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/ikhdkkncnoglghljlkmcimlnlhkeamad
 
 ### 油猴专区
 
