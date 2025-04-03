@@ -1,4 +1,7 @@
 
+请教一个面试题： MQ 顺序消费时出错，怎么处理？ https://www.v2ex.com/t/1122760
+- > 主流 MQ 都有顺序保证机制的，比如 `Kafka` 的 `Message Key` 。如果消费侧配置的没问题，就可以确保同一 Message Key 下的消息消费是有序的。
+
 关于 ZeroMQ 的若干问题 https://www.v2ex.com/t/908968
 - > **新的解决方案**
   * > 不清楚什么时候在哪儿看到过 RPC(Remote Procedure Call)的概念, 然后经过一番谷噜，看到了这篇博客 https://opensource.com/article/20/3/zeromq-c-python 作者开头提到的困境跟我现在经历的差不多（其实给 Python 写扩展还好啦，Python 生态就是这样来的，反过来把 Python 当成库用才更头疼）。作者提到 ZeroMQ 是这种问题的解决方案（ ZeroMQ 我是在 V2 看到过相关讨论的，虽然当时可能并不清楚这东西多有用）。经过翻阅一些文档看了一些例子，我对以上背景问题也有了以下基于 ZeroMQ 的设想方案:
