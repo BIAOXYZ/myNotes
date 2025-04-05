@@ -21,6 +21,14 @@ GitHub新项目Deepo：一键安装11项深度学习框架与环境 https://www.
 - > 3.文末福利
   * > 相信看到这里的你，已经基本可以玩转 Ollama 了。只不过觉得上述流程略显麻烦？没问题，你的困惑早有人帮你搞定了，GitHub 上有开发者做了 docker-compose 一键整合安装包：传送门： https://github.com/valiantlynx/ollama-docker
 
+## dify
+
+deepseek+dify零成本部署本地知识库保姆级教程 - 檐下初逢的文章 - 知乎 https://zhuanlan.zhihu.com/p/23494322441
+- > url地址填写：
+  ```sh
+  http://host.docker.internal:11434
+  ```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Apache MADlib
