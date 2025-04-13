@@ -43,6 +43,8 @@ RDMA(远程直接内存访问)技术浅析 https://www.sohu.com/a/150642645_6329
 
 RDMA-远程直接内存访问-00-overview https://houbb.github.io/2019/11/20/rdma-00-overview
 
+关于RDMA你想知道的一切：深入解析与技术洞见（SNIA网络研讨会） https://mp.weixin.qq.com/s/C9hSTCAUgpdzSbB4IDfkQA
+
 # 其他
 
 https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAwMDc2NjQ4Nw==&action=getalbum&album_id=2063493827914416129
