@@ -154,7 +154,8 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 
 - 捕捉网页截图 - FireShot的 https://chromewebstore.google.com/detail/%E6%8D%95%E6%8D%89%E7%BD%91%E9%A1%B5%E6%88%AA%E5%9B%BE-fireshot%E7%9A%84/mcbpblocgmgfnpjjppndjkmgjaogfceg
 
-- Monica: ChatGPT AI助手 | GPT-4o, Claude 3.5, Gemini 1.5, o1 及更多模型 https://chromewebstore.google.com/detail/monica-chatgpt-ai%E5%8A%A9%E6%89%8B-gpt-4/ofpnmcalabcbjgholdjcjblkibolbppb
+- Monica: ChatGPT AI助手 | GPT-4o, Claude 3.5, Gemini 1.5, o1 及更多模型 https://chromewebstore.google.com/detail/monica-chatgpt-ai%E5%8A%A9%E6%89%8B-gpt-4/ofpnmcalabcbjgholdjcjblkibolbppb || https://monica.im/
+- DeepSider™:AI侧边栏| DeepSeek, Gemini, Claude, GPT https://chromewebstore.google.com/detail/deepsiderai%E4%BE%A7%E8%BE%B9%E6%A0%8F-deepseek-g/dfbnddndcmilnhdfmmaolepiaefacnpo || https://deepsider.ai/
 - Sider: ChatGPT 侧边栏 + GPT-4o, Claude 3.5, Gemini 1.5 & AI工具 https://chromewebstore.google.com/detail/sider-chatgpt-%E4%BE%A7%E8%BE%B9%E6%A0%8F-+-gpt-4/difoiogjjojoaoomphldepapgpbgkhkb
 
 这个插件真是太好用了：沉浸式翻译 https://www.v2ex.com/t/941217
