@@ -7,6 +7,8 @@
 
 纳斯达克100指数 (NDX) https://cn.investing.com/indices/nq-100-historical-data
 
+纳斯达克100指数期货 https://cn.investing.com/indices/nq-100-futures
+
 ## 股票
 
 招商银行 https://cn.investing.com/equities/merchants-bank
