@@ -9,6 +9,19 @@
 
 SetupVPN http://desktopclient.net/gw/index.html#/ || https://setupvpn.com/download/
 - > 重要的：我们确实有两个版本的桌面客户端，0.4.0版本是用登录和密码登录，而0.5.0及以上的版本只支持authcode。只支持0.5.0及以上版本的注册。
+- SetupVPN - Lifetime Free VPN https://chromewebstore.google.com/detail/setupvpn-lifetime-free-vp/oofgbpoabipfcfjapgnbbjjaenockbdp
+
+Proton VPN
+- https://protonvpn.com/
+- Proton VPN: Fast & Secure https://chromewebstore.google.com/detail/proton-vpn-fast-secure/jplgfhpmjnbigmhklmmbgecoobifkmpa
+
+1VPN
+- https://1vpn.org/
+- 免费VPN - Free VPN - 1VPN https://chromewebstore.google.com/detail/%E5%85%8D%E8%B4%B9vpn-free-vpn-1vpn/akcocjjpkmlniicdeemdceeajlmoabhg
+
+Hola VPN
+- https://hola.org/
+- Hola VPN - Your Website Unblocker https://chromewebstore.google.com/detail/hola-vpn-your-website-unb/gkojfkhlekighikafcpjkiklfbnlmeio/reviews
 
 Lantern https://github.com/getlantern/download
 
