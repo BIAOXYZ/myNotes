@@ -1,4 +1,6 @@
 
+存储过程真的是洪水猛兽吗？ https://www.v2ex.com/t/1130319
+
 分享您的 SQL 故事，获取《SQL 实战》赠书！ https://www.v2ex.com/t/1119609
 - > 今年还真遇到了。开发一个小程序，做 ETF 基金和股票的交易记录，没买数据服务器，用的免费的数据库，最开始用的 wsfdb 的 mysql ，大小只有 10M ，用了一段时间，太小了后来存不进去数据了。只好又找啊找啊，找到了 MemFireDB 网站，提供 1G 容量的 PostgreSQL ，从没有用过这种数据库，于是晚上又边学习边改代码，PostgreSQL 不区分大小写，坑了一个星期，后来才知道要加引号，花了差不多一个月刚好，MemFireDB 又不免费了，只好再找免费云数据库，重新换回了 mysql 。
   >> https://aiven.io/ 有免费的 mysql <br> 1 dedicated VM <br> 1 CPU per VM <br> 1GB RAM per VM <br> 5 GB total storage

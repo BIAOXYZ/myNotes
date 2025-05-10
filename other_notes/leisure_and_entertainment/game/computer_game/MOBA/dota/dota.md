@@ -210,6 +210,29 @@ Dota 2 Cheats: Complete List and Ingame Commands https://dota2freaks.com/cheats/
   
 How do dota 2 bots pick their heroes? https://gaming.stackexchange.com/questions/80219/how-do-dota-2-bots-pick-their-heroes
 
+Open Hyper AI - 中文介绍 https://steamcommunity.com/workshop/filedetails/discussion/3246316298/4764334012740794651/
+```console
+机器人角色、路线和定位
+1. 在本地大厅中，机器人的位置与大厅中的槽位顺序一致：从上到下依次为1、2、3、4、5。
+2. 在游戏中，你可以输入：!pos X 来与某个机器人交换位置。例如：输入 "!pos 2" 来与中路的机器人交换角色和路线。
+2.1 你可以输入 “!Xpos Y” 来给别的玩家交换位置而不改变自己的位置。例如：输入 !3pos 5 来让队伍里第3个机器人去玩位置5.
+3. 在英雄选择阶段，你可以输入：!pick XXX 来选择英雄。例如：输入 "!pick puck" 来选择帕克作为盟友。
+4. 你可以输入：/all !pick XXX 来为敌方选择英雄。例如：输入 "/all !pick puck" 来为敌方选择帕克。
+5. 对于复杂的英雄名字或可能适用于多个英雄的名字，请使用完整的内部代码名称。例如：输入 "!pick npc_dota_hero_keeper_of_the_light"。你可以在这里找到英雄名字列表：https://steamcommunity.com/workshop/filedetails/discussion/3246316298/4848777260032086340/
+6. 你可以输入：!ban XXX 来禁用某个英雄，防止机器人选择该英雄。例如：输入 !ban puck 来防止机器人选择帕克。
+Pos1和Pos5机器人去安全路。Pos3和Pos4机器人去劣势路。Pos2机器人去中路。
+7. 机器人可以轻松定制。例如，你可以更改机器人的禁选、名字等。请查看 <bots_root_directory>/Customize/general.lua 文件。
+```
+
+天地星AI · 固定搭配 https://steamcommunity.com/sharedfiles/filedetails/?id=1627071163
+```console
+另外如果不创建房间,直接通过主界面的机器人对抗赛开始游戏会触发V社的历史遗留bug,导致机器人失效.
+如果电脑性能可以尽量选择自己做主机,更好发挥机器人性能. NEW (交流QQ三群:244375519)
+支持全英雄选择, 加速模式, 单挑模式, 单中模式, 不支持队长模式.
+如果不想走中请在创建房间时加入2-5楼, 不要在默认的1楼.(如果是夜魇方不想走中需要加群下载安装补丁) 
+天地星AI·固定搭配, 五个固定位置只会挑选比较适合阵容搭配对应位置的英雄.
+```
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # Dota2新闻消息类
