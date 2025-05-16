@@ -10,6 +10,16 @@ CentOS/RHEL 开发环境之 devtoolset http://blog.fungo.me/2016/03/centos-devel
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# 综合类
+
+## chsrc
+
+chsrc -- 全平台通用换源工具与框架. Change Source everywhere for every software https://github.com/RubyMetric/chsrc
+
+chsrc https://chsrc.run/
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # apk (for [Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux))
 
 ```
