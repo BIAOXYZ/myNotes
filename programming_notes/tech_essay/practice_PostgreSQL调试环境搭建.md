@@ -471,6 +471,8 @@ apt-get install -y libssl-dev
 
 useradd -m -d /home/pguser pguser
 echo "pguser:test1234TEMP" | chpasswd
+# 至少 ubuntu 22.04 里，pguser 默认 shell 是 sh，用这个切换默认 shell 到 bash
+chsh -s /bin/bash pguser
 su - pguser
 
 mkdir ~/pgdir
