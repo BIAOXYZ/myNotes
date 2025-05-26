@@ -320,6 +320,10 @@ Chrome十岁了你只当它浏览器？这些神玩法知多少 - Google Chrome 
 
 震惊! 这么实用的 chrome 扩展你居然没用过! - 余腾靖的文章 - 知乎 https://zhuanlan.zhihu.com/p/61605124
 
+汇总第三方Chrome插件下载市场 - 软件小编的文章 - 知乎 https://zhuanlan.zhihu.com/p/76634823
+- > `扩展迷` 地址：https://extfans.com
+- > `Crx4Chrome` 官网：https://www.crx4chrome.com
+
 --------------------------------------------------
 ## From chromecj
 --------------------------------------------------
