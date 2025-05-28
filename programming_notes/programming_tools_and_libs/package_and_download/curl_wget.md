@@ -299,6 +299,25 @@ REST 入门介绍 http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html
 
 What is the difference between POST and PUT in HTTP? https://stackoverflow.com/questions/630453/what-is-the-difference-between-post-and-put-in-http
 
+## http状态码
+
+HTTP 响应状态码 https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Status
+- > HTTP 响应状态码用来表明特定 HTTP 请求是否成功完成。响应被归为以下五大类：
+  ```console
+  1.信息响应 (100–199)
+  2.成功响应 (200–299)
+  3.重定向消息 (300–399)
+  4.客户端错误响应 (400–499)
+  5.服务端错误响应 (500–599)
+  ```
+- > 以下状态码由 [`section 10 of RFC 2616`](https://datatracker.ietf.org/doc/html/rfc2616#section-10) 定义。你可以在 [`RFC 7231`](https://datatracker.ietf.org/doc/html/rfc7231#section-6) 中找到更新后的规范。
+
+401 Unauthorized https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Status/401
+
+403 Forbidden https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Status/403
+- > 状态码 `403 Forbidden` 代表客户端错误，指的是服务器端有能力处理该请求，但是拒绝授权访问。
+- > 这个状态类似于 `401`，***但进入 `403` 状态后即使重新验证也不会改变该状态***。该访问是长期禁止的，并且与应用逻辑密切相关（例如没有足够的权限访问该资源）。
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # [wget](https://www.gnu.org/software/wget/)
