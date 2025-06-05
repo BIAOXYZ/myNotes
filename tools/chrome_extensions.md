@@ -216,6 +216,7 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 ```
 - 个人总结：
   * Auto Copy Pro https://chromewebstore.google.com/detail/auto-copy-pro/dggjedhladcgnhkehemidebdddebfkad
+  * codebox-一键复制代码/下载文章 https://chromewebstore.google.com/detail/codebox-%E4%B8%80%E9%94%AE%E5%A4%8D%E5%88%B6%E4%BB%A3%E7%A0%81%E4%B8%8B%E8%BD%BD%E6%96%87%E7%AB%A0/acnnhjllgegbndgknlliobjlekgilbdf || https://github.com/027xiguapi/code-box
 
 求推荐好用的浏览器划词翻译插件 https://www.v2ex.com/t/972058
 - > https://hcfy.app/ 这个，用了快 4 年了
