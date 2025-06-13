@@ -250,6 +250,11 @@
     >> B7879应该是全球唯一一架注册号和机型一样的飞机
   * > 返航后国航更换了一架空客 A330 型客机执行了该航班
 
+【`2025.06.12`】
+- 波音787第一次坠毁背后 https://mp.weixin.qq.com/s/v8Ke49NeB0QVOiB7WLC9eA
+- 全球剩下的"0坠机"客机只剩这 5 款 https://mp.weixin.qq.com/s/aC2FP3ZGeRuGbEdxfmw69g
+  * > 参考：Aviation Safety Network事故数据库、各制造商年度安全报告
+
 ### 737 Max、787、空客A220
 
 部分波音 737 Max、787 和空客 A220 飞机被曝使用伪造证明材料的钛制零件 https://www.ithome.com/0/775/768.htm
