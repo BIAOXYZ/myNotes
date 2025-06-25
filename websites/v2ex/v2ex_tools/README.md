@@ -1,4 +1,18 @@
 
+推荐一下大伙用过的免费好用的服务 https://www.v2ex.com/t/1140599
+```console
+Github Pages：免费托管静态网站
+Cloudflare CDN：免费 CDN 服务
+Cloudflare Pages：免费托管静态网站
+Cloudflare R2：对象存储服务，免费 10GB 存储
+Vercel：支持 Serverless Functions ，尤其是跟 Next.js 配合更是天衣无缝，可以免费实现一些动态服务
+Supabase：免费一个 PostgreSQL 数据库
+ClawCloud：容器云平台，每月免费 5$
+```
+- > 昨天刚找到一个免费资源的项目分享. https://mp.weixin.qq.com/s/QEPwV_Gupis2Yhw4I_qZ_Q
+- > 腾讯出的 cnb.cool 挺不错的，最近小 Demo 都用它那个在线 IDE （ VSCode ）
+- > https://github.com/ripienaar/free-for-dev
+
 收集下各位 Linux 下所使用的那些好用的工具 https://www.v2ex.com/t/1055592
 ```console
 我目前已经记录的有：

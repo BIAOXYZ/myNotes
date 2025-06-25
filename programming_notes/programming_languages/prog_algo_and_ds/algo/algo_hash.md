@@ -73,6 +73,8 @@ Spark之BloomFilter有趣的bitwise运算 - 翟士丹的文章 - 知乎 https://
 
 Bloom filter variant https://cs.stackexchange.com/questions/24217/bloom-filter-variant
 
+深入浅出BloomFilter原理 - 刘训灼的文章 - 知乎 https://zhuanlan.zhihu.com/p/140545941
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 哈希表
