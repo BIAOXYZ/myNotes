@@ -386,6 +386,9 @@ ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation http
 - ***Paper***:
   * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
 
+Efficient Circuit-based PSI via Cuckoo Hashing https://github.com/encryptogroup/2DCuckooHashing
+- > The proof-of-concept implementation of our PSI-CAT protocol based on 2D Cuckoo hashing developed as part of our EUROCRYPT'18 paper [Efficient Circuit-based PSI via Cuckoo Hashing](https://encrypto.de/papers/PSWW18.pdf) is available as an example in the [ABY repository](https://github.com/encryptogroup/ABY/tree/public/src/examples/psi_2D_CH).
+
 (阅读笔记)ABY: A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://blog.csdn.net/qq_42328228/article/details/124918275
 
 安全多方计算——ABY框架 - Patronuss的文章 - 知乎 https://zhuanlan.zhihu.com/p/475610774
