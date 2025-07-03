@@ -439,6 +439,9 @@ Implementation of protocols in Falcon https://github.com/snwagh/falcon-public
 BLAZE: Blazing Fast Privacy-Preserving Machine Learning https://www.ndss-symposium.org/ndss-paper/blaze-blazing-fast-privacy-preserving-machine-learning/
 - > BLAZE achieves the stronger guarantee of `fairness` (all honest servers get the output whenever the corrupt server obtains the same).
 
+MOTION - A Framework for Mixed-Protocol Multi-Party Computation https://github.com/encryptogroup/MOTION
+- > Check out our [paper](https://ia.cr/2020/1137) (published at ACM TOPS'22) for details.
+
 ## Primihub
 
 重磅 | 企业级开源隐私计算平台—Primihub正式开源 https://mp.weixin.qq.com/s/Y4-Qhwpwr4wPpPuxodkgXw
