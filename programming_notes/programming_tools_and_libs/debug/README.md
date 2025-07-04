@@ -194,6 +194,15 @@ $ ./test
 
 ## 个人总结 Python 语言版
 
+最常用自定义了函数的版本：
+```py
+def myprint(*args, **kwargs):
+    import sys
+    """自定义打印函数，自动添加调试信息"""
+    debug_info = f"[[py-lang | file:\"{__file__}\" | func:\"{sys._getframe(1).f_code.co_name}()\" | line:{sys._getframe(1).f_lineno}]]"
+    print(debug_info, *args, **kwargs)
+```
+
 最常用版：
 ```py
 import sys;print(f"[[py-lang | file:\"{__file__}\" | func:\"{sys._getframe().f_code.co_name}()\" | line:{sys._getframe().f_lineno}]]")
