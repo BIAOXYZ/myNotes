@@ -29,7 +29,7 @@ SQL血缘解析原理 https://blog.csdn.net/shy_snow/article/details/133373567
 
 基于Calcite解析Flink SQL列级数据血缘 https://blog.csdn.net/nazeniwaresakini/article/details/121652104
 
-FlinkSQL的字段血缘解决方案 https://mp.weixin.qq.com/s/aBPbITpUDCWgWvOLLcscqg || https://www.sohu.com/a/674488599_121124371
+FlinkSQL的字段血缘解决方案 https://mp.weixin.qq.com/s/aBPbITpUDCWgWvOLLcscqg || https://www.sohu.com/a/674488599_121124371 || FlinkSQL的字段血缘解决方案 - DataFunTalk的文章 - 知乎 https://zhuanlan.zhihu.com/p/628376451
 - > **01 Apache Calcite 简介**
   * > ![](https://mmbiz.qpic.cn/sz_mmbiz_png/EBaibcQicPxgxShNO0S5sMbD4EpVRsz8czUEIsrZPiaz2YiaTwFXSH4llhd9cbVGwhyjemKICb9Gxbxs4BmdyuZRgQ/640)
 
