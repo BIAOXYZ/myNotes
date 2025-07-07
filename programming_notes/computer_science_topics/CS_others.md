@@ -17,6 +17,10 @@ excelCPU
   * > 在这个 Excel CPU 项目中，最为引人注目的成就之一是 Inkbox 为了这款实用的 Excel CPU，设计了一门功能完整的汇编语言。他把这门汇编语言命名为 `Excel-ASM 16`。***这门汇编语言包含了 23 种不同的指令，并支持变量、标签以及二进制文件。虽然这些都是汇编语言的基础功能，但对于运行在 Microsoft Excel 上的 16 位 CPU 来说，已经是相当完备的功能了***。
   * > 强烈建议你观看作者发布的原始视频，这将帮助你深入理解 Excel 的底层功能，以及如何利用这些功能创建出功能完备的 16 位 CPU。Inkbox 详尽地解释了构建 16 位 Excel CPU 的每一个步骤，成功地演示了 CPU 的基础功能。虽然这些功能演示的时间被大幅度压缩——因为该 CPU 不超过 3 Hz 实际运行速度极慢，但依然足够给观众展示 CPU 内部的运行机制。
 
+Chipyard https://slice.eecs.berkeley.edu/projects/chipyard/
+- Chipyard Framework https://github.com/ucb-bar/chipyard
+- Welcome to Chipyard’s documentation (version “1.11.0”)! https://chipyard.readthedocs.io/en/stable/
+
 ## os project
 
 Teach you how to code an OS by yourself. https://github.com/lcdzhao/operating_system
