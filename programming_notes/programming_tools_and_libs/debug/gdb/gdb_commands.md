@@ -14,6 +14,22 @@ GDB Documentation https://www.gnu.org/software/gdb/documentation/
 
 一文看懂 | GDB 底层实现原理 https://mp.weixin.qq.com/s/TYqXPtanCKmBa-UeWoJLDA
 
+天天写程序，连调试器工作原理都不懂？一个动画帮你搞懂！ https://www.bilibili.com/video/  【from `轩辕的编程宇宙`】
+- 回复：
+  * > 这个好，之前面试字节被问到过有没有了解过gdb怎么做的
+    >> 后来看过`vxworks`的调试命令，大致明白调试器的watch和断点是怎么实现的
+  * > 说实话没有插件的gdb真的很难用，我就一直在用`pwndbg`, `gef`这些插件。。。。
+  * > 那是怎么将cpu指令与对应代码关联起来的呀
+    >> source map
+    >>> 编译的时候会加入符号表（调试信息）
+    >>>> 一般调试信息都按照dwarf的标准编进去的，你可以看dwarf就明白了
+    >>>>> 编译有调试信息，里面有map信息，每个符号的作用域和对应的源文件函数以及函数中的对应位置都有参照符号，这些都对应了目标的地址，当然如果有优化的话可能部分代码会被优化了可能没有调试点。
+    >>>>>> gcc -g进行debug构建，生成的二进制文件就会特意保留源代码。
+  * > 您好，可以问一下这样的动画是如何制作的嘛，感觉好流畅
+    >> `keynote`哈
+  * > 统一回复，动画用的`keynote`做的
+    >> 没有mac的话，恐怕ppt是更好的选择。
+
 ## GDB一般性知识
 
 ## 我的gdb配置(.gdbinit， bps.cfg， .gdb_history全都在~目录下)和调试
