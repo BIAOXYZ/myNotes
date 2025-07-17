@@ -7,6 +7,16 @@ Hue -- Hue is a mature open source SQL Assistant for querying any Databases & Da
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# DbGate
+
+DbGate - (no)SQL database client https://github.com/dbgate/dbgate
+
+DbGate Community https://dbgate.org/
+
+免费全开源，功能强大的多连接数据库管理工具：DbGate - 臻源的文章 - 知乎 https://zhuanlan.zhihu.com/p/691141797
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # DBeaver
 
 DBeaver Community https://dbeaver.io/
