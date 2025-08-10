@@ -222,6 +222,10 @@ Gmail邮箱标记所有未读邮件为已读 https://jingyan.baidu.com/article/c
 - > https://hcfy.app/ 这个，用了快 4 年了
   * 划词翻译 https://chromewebstore.google.com/detail/%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/ikhdkkncnoglghljlkmcimlnlhkeamad
 
+大家的 Chrome 浏览器有哪些推荐的插件呢? https://www.v2ex.com/t/1116957
+
+再开一个浏览器扩展推荐贴 https://www.v2ex.com/t/1151179
+
 ### 油猴专区
 
 - Tampermonkey https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo || https://www.tampermonkey.net/

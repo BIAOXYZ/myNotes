@@ -22,6 +22,10 @@ JNI本身会降低效率吗？ - 知乎 https://www.zhihu.com/question/38509124
 
 NDK(20)JNI的5大性能缺陷及优化技巧 https://www.cnblogs.com/sjjg/p/4750955.html
 
+Java Native Interface(JNI)从零开始详细教程 https://blog.csdn.net/createchance/article/details/53783490
+- > 首先声明：这边文章是我翻译的文章（看了很多关于JNI的介绍，只有这篇个人认为最好，因此忍不住想要翻译给国内的各位），请勿随意转载，尊重文章原作者。
+- > 文章原始链接： https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInterface.html 这是南洋理工大学的在线学习note，有兴趣的同学可以直接看原文。如果你对E文比较头疼的话，可以直接看下面我翻译的，我会尽量使用平实的语言去翻译这篇文章，另外本人水平有限，如有翻译不当之处还请各位赐教。
+
 # C++ & Python
 
 python 调用 C++ code https://blog.csdn.net/abcjennifer/article/details/49374307
