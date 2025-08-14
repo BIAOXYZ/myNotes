@@ -11,6 +11,23 @@ C/C++ https://www.youtube.com/playlist?list=PLzREP1p8eayK9kwb9B_HuEjecr-ldkKK5
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
+# vsc debug 文章
+
+vscode上python进行debug大全 - 牧羊人的文章 - 知乎 https://zhuanlan.zhihu.com/p/673525708
+- > **二、为你的debug配置参数（进阶**
+  * > **1 创建多个调试配置**
+  * > **2 相对路径设置**
+    + > 如果程序里面涉及到了相对路径，可能会报错，解决办法是添加参数
+    + > `cwd`：启动程序时的根目录配置
+      ```json
+      "cwd":"${fileDirname}"  // 设置相对路径，在debug时可以切换到当前文件所在的目录。
+      ```
+  * > **4 调试时传入命令行参数**
+  * > **5 调试外部代码**
+- > **三、分布式程序调试**
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
 # vscode debug 其他
 
 VSCode — how to set working directory for debug https://stackoverflow.com/questions/38623138/vscode-how-to-set-working-directory-for-debug
