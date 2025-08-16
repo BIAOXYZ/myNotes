@@ -7,6 +7,14 @@ Hulo 编程语言开发 —— 从源代码到 AST 的魔法转换 https://www.v
 
 解析器可以说是源代码到目标语言最重要的基础，它负责将结构化的文本实例化为抽象语法树(AST)，这个过程也被称之为编译前端。解析器通过词法分析器(Lexer)将源代码分解为标记流(Token Stream)，再通过语法分析器(Parser)将标记流转换为抽象语法树，最终将人类可读的源代码转换为机器可处理的树形数据结构。这个树形结构保留了源代码的语法结构信息，为后续的语义分析、类型检查、优化和代码生成等编译后端阶段提供了必要的数据基础。
 ```
+- > 为什么需要一种脚本编译成另一种脚本？ 自身的定位就是脚本，那支持跨平台不就可以了吗？
+  >> 因为 bash powershell batch vbs 直接与操作系统捆绑着，他们自带 runtime ，其他语言如 python 、js 都需要安装运行时。而且 bash 在 linux 上面的地位有目共睹，大部分的批处理基本上都用 bash 实现。
+- > 木兰项目用 rply 生成 python 语法树： https://gitee.com/MulanRevive/mulan-rework 项目源码用中文命名，方便阅览： ![分析器]( https://pic1.zhimg.com/80/v2-09c2cd22c6908f3869fc53900100280f_1440w.webp?source=2c26e567)
+  >> Hulo 使用 ANTLR4 生成语法树 https://github.com/hulo-lang/hulo/blob/main/syntax/hulo/parser/grammar/huloParser.g4 使用 ANTLR4 有很高的容错性，一旦语法树解析错误也能继续递归，这种机制使其在处理不完整或有误的输入时仍能保持一定的解析能力（例如 IDE 中的实时语法检查）
+- > https://github.com/goplus/xgo 怎么感觉跟这个的功能有点重合，直接编译到机器码得了？
+- > 还有 Julia1.12 也会开始实验支持编译类型稳定代码到小体积二进制了
+  >> 这差的很多吧，Hulo 的目标是编译成 Bash 、Powershell 、VBS 、Batch 统一批处理脚本，***作为批处理脚本的中间语言，你可以理解成批处理脚本的 LLVM*** ，然后在写一个提升器，将 Bash 转化成 Hulo ，就可以实现 Hulo 到其他批处理脚本的转换
+  >>> 几年前试过一点 antlr： https://zhuanlan.zhihu.com/p/32792684 https://zhuanlan.zhihu.com/p/32939695
 
 打算设计一门集所有语言的缺点短板于一体的语言，可能从哪里开始或者有哪些功能建议呢？ https://www.v2ex.com/t/1097722
 ```console
