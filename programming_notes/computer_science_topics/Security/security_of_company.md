@@ -120,6 +120,12 @@ associated integer values:
 - > Then the Private Join and Compute functionality would allow the Client to learn that the input files had *2* identifiers in common, and that the associated values summed to *40*. It does this *without* revealing which specific identifiers were in common (Ada and Ruby in the example above), or revealing anything additional about the other identifiers in the two parties' data set.
 - > Private Join and Compute is a variant of the well-studied Private Set Intersection functionality. We sometimes also refer to `Private Join and Compute` as `Private Intersection-Sum`.
 
+谷歌MPC应用：隐私交集求和PIS - PrimiHub原语科技的文章 - 知乎 https://zhuanlan.zhihu.com/p/366783162
+- > 以下资料中有更详细的信息，有兴趣可以深入研究：
+  * > 油管上的视频：https://www.youtube.com/watch?v=mPMLY6UzvsI&t=33s
+  * > 论文：[On Deploying Secure Computing: Private Intersection-Sum-with-Cardinality](https://eprint.iacr.org/2019/723)
+  * > 谷歌安全Blog：[Helping organizations do more without collecting more data](https://security.googleblog.com/2019/06/helping-organizations-do-more-without-collecting-more-data.html)
+
 ## 华控清交
 
 PrivPy：实现规模化通用隐私保护机器学习 - 雪琪的文章 - 知乎 https://zhuanlan.zhihu.com/p/115574680
