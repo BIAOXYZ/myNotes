@@ -81,6 +81,12 @@ CPU 有个禁区，内核权限也无法进入！ https://www.ithome.com/0/647/8
   * > 目前 TEE 环境总体分为私密性和非私密性：私密性的 TEE，比如 SGX，不仅能抗运行时攻击，也能抗物理攻击，任何离开寄存器的数据都会被自动、强制加密；非私密性的 TEE，比如 TrustZone，其依赖特权级的控制实现运行时保护(低优先级程序不能访问高优先级程序的资源)，但是其内存不做任何加解密控 制，可以被多种物理方式攻击。
   * > 基于隐私计算的场景诉求，非私密 TEE 是不可用的。目前可用的私密性 TEE 主要是 Intel 的 SGX 以及国产的`海光 SEV` 等产品，尤其以 Intel 的 SGX 为业界主流，其安全性和性能都得到了实践认证。  
 
+Intel SGX 入门到精（fang）通（qi）—— DCAP 认证 - zeus的文章 - 知乎 https://zhuanlan.zhihu.com/p/425763870
+- > **SGX Keys**
+  * > remote attestation from [Intel SGX Explained](https://eprint.iacr.org/2016/086.pdf)
+- 链接：
+  * 【[ :star: ][`*`]】 Intel SGX Explained https://eprint.iacr.org/2016/086.pdf
+
 ## Occlum (蚂蚁金服)
 
 Occlum is a memory-safe, multi-process library OS for Intel SGX https://github.com/occlum/occlum || https://occlum.io/
