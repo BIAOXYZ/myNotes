@@ -1,4 +1,9 @@
 
+代码有没有必要备份到多个远程仓库？比如 github 和 codeup。有必要的话最好怎么备份？ https://www.v2ex.com/t/1157424
+- > 我直接用 github ，然后家里跑一个 https://github.com/AkashRajpurohit/git-sync 备份（不但备份我自己的仓库，还备份了所有我 star 了的仓库）
+  >> 我也是用类似的脚本，定期 nas 自动备份自己的 github 。不记得是哪一年，github 把识别出的哪个国家的账号全封了，真吓人。
+  >>> 好像是这个事。 https://www.oschina.net/news_beta/125752 引用 zorm 作者的一句话:开源没有国界,开发者却有自己的祖国.
+
 推荐自己翻译的《自己动手写 Git》 教程 https://www.v2ex.com/t/1077983
 ```console
 本教程将介绍如何使用 Python 从头开始实现简化版 Git ，目的是通过构建一个包含 init 、add 、commit 和 log 等基本命令的基本版本，帮助读者理解 Git 的核心原理。
