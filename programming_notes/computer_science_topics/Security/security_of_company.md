@@ -380,7 +380,7 @@ SecureML: A System for Scalable Privacy-Preserving Machine Learning - 铃铃铃�
 
 ABY 3 and Applications https://github.com/ladnir/aby3
 - ***Paper***:
-  * (CCS 2018) ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf || https://dl.acm.org/doi/10.1145/3243734.3243760
+  * (`CCS 2018`) ABY<sup>3</sup>: A Mixed Protocol Framework for Machine Learning https://eprint.iacr.org/2018/403.pdf || https://dl.acm.org/doi/10.1145/3243734.3243760
     + > `[46] Fast and Secure Three-party Computation: The Garbled Circuit Approach` https://dl.acm.org/doi/10.1145/2810103.2813705 || https://eprint.iacr.org/2015/931.pdf
 
 ABY3: A Mixed Protocol Framework for Machine Learning - 酸菜鱼的文章 - 知乎 https://zhuanlan.zhihu.com/p/402420978
@@ -393,7 +393,7 @@ ABY3: A Mixed Protocol Framework for Machine Learning https://slideplayer.com/sl
 
 ABY - A Framework for Efficient Mixed-protocol Secure Two-party Computation https://github.com/encryptogroup/ABY  【这个和ABY<sup>3</sup>貌似不是一个单位搞的】
 - ***Paper***:
-  * (NDSS 2015) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/
+  * (`NDSS 2015`) ABY – A Framework for Efficient Mixed-Protocol Secure Two-Party Computation https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/aby-framework-efficient-mixed-protocol-secure-two-party-computation/ || https://encrypto.de/papers/DSZ15.pdf
 
 Efficient Circuit-based PSI via Cuckoo Hashing https://github.com/encryptogroup/2DCuckooHashing
 - > The proof-of-concept implementation of our PSI-CAT protocol based on 2D Cuckoo hashing developed as part of our EUROCRYPT'18 paper [Efficient Circuit-based PSI via Cuckoo Hashing](https://encrypto.de/papers/PSWW18.pdf) is available as an example in the [ABY repository](https://github.com/encryptogroup/ABY/tree/public/src/examples/psi_2D_CH).
@@ -412,7 +412,7 @@ ABY-PPLP：面向位置保护的隐私距离计算与近邻检测 https://github
 
 ## ABY2.0
 
-(USENIX Security 2021) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。】
+(`USENIX Security 2021`) ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation (Full Version) https://eprint.iacr.org/2020/1225.pdf || https://www.usenix.org/conference/usenixsecurity21/presentation/patra 【这个似乎又是另外一拨人。。。PS：`ABY` 和 `ABY2.0` 是有一位作者两篇都参与了的：`Thomas Schneider`；但是 `ABY3` 的作者和这两篇完全没有重叠；此外时间顺序上 `ABY3` 反而处于 `ABY` 和 `ABY2.0` 之间。】
 
 ABY和ABY2.0 https://mp.weixin.qq.com/s/FC-OlJBgQEJw9iCtnl5sew
 
