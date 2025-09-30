@@ -60,6 +60,10 @@ kubernetes 源码分析 https://zhuanlan.zhihu.com/c_1195294063723929600
 
 标签：深入k8s https://www.luozhiyun.com/archives/tag/%e6%b7%b1%e5%85%a5k8s
 
+【by 小唐的技术日志】
+- 可视化阅读Kubelet（一）：从宏观架构到启动全流程 https://mp.weixin.qq.com/s/IhAR0JJ2mC6gnzoi-gLxBw
+- 可视化阅读Kubelet（二）: Pod 的诞生 https://mp.weixin.qq.com/s/TaTv0ZKwrQ5JWV4C5HLXQA
+
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
 # 源码分析视频
