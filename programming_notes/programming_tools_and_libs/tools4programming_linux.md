@@ -293,6 +293,16 @@ Settings->Configuration->Terminal
 
 免费开源SSH客户端神器MobaXterm，是时候puttty、Xshell和SecureCRT说Byebye了 https://www.freebuf.com/column/163631.html
 
+### Tabby
+
+tabby多个窗口同时执行插件 https://blog.csdn.net/weixin_49390750/article/details/138609683
+```
+一、插件名称 quick-cmds
+二、使用 
+点击右上角图标，选中命令单机即可。快捷键 `ALT+Q` 唤出列表，不用每次用鼠标点击右上角，巴适的板。
+`ctrl + enter` 发送全部
+```
+
 # linux下远程连接软件
 
 https://github.com/FreeRDP
