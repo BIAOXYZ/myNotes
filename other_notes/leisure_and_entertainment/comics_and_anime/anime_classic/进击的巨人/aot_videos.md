@@ -93,6 +93,8 @@
   泽野弘之的神作，满满都是情怀。快来感受热血与悲伤交织的巨人世界，欢迎点赞投币加关注哦，仅试听，侵删。
   ```
 
+【进击的巨人】中日双语 无画面字  全OP/ED合集 https://www.bilibili.com/video/BV1f9WtzpEfi/
+
 ## from `小小佐仓千代`
 
 合集·进击的巨人音乐盘点合集 https://space.bilibili.com/14577351/channel/collectiondetail?sid=1855821
