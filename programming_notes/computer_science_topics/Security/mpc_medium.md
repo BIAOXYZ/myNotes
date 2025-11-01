@@ -35,6 +35,11 @@ MPC 与金融应用场景 https://mp.weixin.qq.com/s/GbYLANgvb5ifa-iFSGPc-Q
 - > 从MPC协议上看，华控清交采用了一种半诚实安全模型下的安全协议—PrivPy。该协议安全性具备严格的密码学证明，相关成果已公开发表于国际知名会议（KDD2019）。PrivPy在参与计算节点为半诚实的安全假设下，满足《技术规范》中要求的数据隐私安全和计算结果的正确性。
 - > 从计算平台上看，华控清交PrivPy多方计算平台具有通用性、可扩展性，与《技术规范》中的要求相呼应，具体包括如下方面。
 
+## 蚂蚁密算
+
+由蚂蚁集团牵头制定的“隐私保护计算安全分级”IEEE国际标准已正式发布！ https://mp.weixin.qq.com/s/AKClPSqACKWXzUEyWimzAw
+- > 2025年10月17日，IEEE SA（‌Institute of Electrical and Electronics Engineers‌- Standards Association电气电子工程师协会-标准协会）正式发布了 IEEE 3169-2025 “IEEE Standard for Security Requirement of Privacy-Preserving Computation”国际标准，该标准由蚂蚁集团牵头，超过30家高校、企业和研究机构等共同参与了编制工作，标准对多方安全计算、联邦学习、可信执行环境等多种技术路线下隐私保护计算的安全隐患进行分析，并对多种路线下的隐私保护计算技术统一划分1-5级的安全防护要求，为隐私保护计算提供安全分级的标准规范。
+
 ## 开放隐私计算
 
 ### 2025.01
