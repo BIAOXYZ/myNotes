@@ -16,3 +16,8 @@ CTeX的MiKTeX出现No Data: Data: Get host by name failed in tcp_connect()错误
 - > 另外也可以在winedit10.3中编译过程中，通过弹出的窗口自动安装。
 
 Manage your TeX installation with MiKTeX Console https://miktex.org/howto/miktex-console
+
+# overleaf 相关工具
+
+Overleaf-Bib-Helper ~~https://github.com/Arvid-pku/Overleaf-Bib-Helper~~  -->  https://github.com/MLNLP-World/Overleaf-Bib-Helper || https://greasyfork.org/zh-CN/scripts/532304-overleaf-bib-helper
+- > Enhances Overleaf by allowing article searches and BibTeX retrieval from DBLP and Google Scholar | 通过允许从 DBLP 和 Google Scholar 进行文章搜索和获取 BibTeX 来增强 Overleaf。
