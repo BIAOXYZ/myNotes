@@ -150,6 +150,10 @@
     ```
     > 晚安，艾伦。
 
+## from `澤野弘之_nZk`（`泽野弘之`的官方账号）
+
+泽野弘之 / Project【emU】“Attack on Titan”suite【官方投稿】 https://www.bilibili.com/video/BV1kt4y1q7GE/
+
 ## `Attack on Titan`
 
 进击的巨人最燃神曲！「ətˈæk 0N tάɪtn 」歌词版 https://www.bilibili.com/video/BV1wa411b7fX/
@@ -175,6 +179,12 @@ Lyrics : Rie
 小林未郁演唱会，进击的巨人主题曲《ət'æk 0N tάɪtn》 https://www.bilibili.com/video/BV1Y4411t733/
 
 墙裂预警！谭晶携Echo合唱团震撼献唱《attack ON titan》炸场来袭！ https://www.bilibili.com/video/BV1Yo4y1C77M/
+
+## `Call Your Name`
+
+《进击的巨人》泽野弘之 Call your name【Hi-Res百万级录音棚试听】 https://www.bilibili.com/video/BV1xa4y1Q7EQ/
+
+【进击的巨人】OST - Call Your Name ＜Gv＞ Gemie https://www.bilibili.com/video/BV19x411o7Lm/
 
 ## `恶魔之子`
 
