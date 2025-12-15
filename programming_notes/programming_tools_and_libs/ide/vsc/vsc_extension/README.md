@@ -25,6 +25,9 @@
   * > Getting Started with GitHub Copilot in Visual Studio Code https://github.com/github/copilot-docs/blob/main/docs/visualstudiocode/gettingstarted.md#getting-started-with-github-copilot-in-visual-studio-code
   * > GitHub Copilot 可以写帮我写中文文章了 https://www.v2ex.com/t/814689
 
+- GitHub Theme https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme
+  * >> //notes：目前只用了其中的 `Github Dark`，感觉已经是所有 vscode 黑暗主题里最好的了。
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 个人出品（合集类）
