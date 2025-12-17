@@ -18,3 +18,5 @@ StarRocks vs Doris，是否青出于蓝胜于蓝？浅析StarRocks功能改进 -
     + > 对于7.4G的裸数据，各自压缩的大小如下所示，可以看到，在这个数据集中四个压缩算法的压缩率排名为：`zlib > zstd > Snappy > LZ4`
 - > **性能测试**
   * > **TPCH性能测试**
+
+Doris vs StarRocks：一文看懂两大国产 OLAP 引擎的异同与选择指南 https://mp.weixin.qq.com/s/DNsvp7TDIMwmGEC63-FLpg
