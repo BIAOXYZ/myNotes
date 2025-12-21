@@ -44,3 +44,7 @@ Spark核心原理 - 消息通信分析 https://blog.csdn.net/OiteBody/article/de
   * > Spark RPC通信层设计原理分析 http://shiyanjun.cn/archives/1536.html
 
 Spark消息通信原理（三）——Spark运行时消息通信 https://www.cnblogs.com/SysoCjs/p/11345395.html
+
+# 5
+
+90%的Spark开发者没搞懂的Stage划分细节？逐行拆解，从源码中找答案 https://mp.weixin.qq.com/s/7CLJ-ecPkGpaWJdK69renA
