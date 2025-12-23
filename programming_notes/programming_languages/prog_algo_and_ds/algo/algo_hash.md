@@ -22,13 +22,19 @@ Cuckoo hashing https://en.wikipedia.org/wiki/Cuckoo_hashing
 
 (ICALP 2008) History-Independent Cuckoo Hashing https://eprint.iacr.org/2008/358.pdf || https://link.springer.com/chapter/10.1007/978-3-540-70583-3_51
 
-Cuckoo Hashing Visualization http://www.lkozma.net/cuckoo_hashing_visualization/
+【[ :star: ][`*`]】 Cuckoo Hashing Visualization http://www.lkozma.net/cuckoo_hashing_visualization/
 
 Cuckoo Hashing – Worst case O(1) Lookup! https://www.geeksforgeeks.org/cuckoo-hashing/
 
 Cuckoo Hashing的应用及性能优化 https://developer.aliyun.com/article/563053
 
 Bloom filter or cuckoo hashing? https://stackoverflow.com/questions/867099/bloom-filter-or-cuckoo-hashing
+
+布谷鸟哈希（Cuckoo hash） - 双榆树周主任的文章 - 知乎 https://zhuanlan.zhihu.com/p/594818514
+- > 布谷鸟哈希在查找时如何向量化？
+  * > 每个鸟蛋有两个可能的巢穴，要么在h1(x)，要么在h2(x)，或者都不在，***但引入分支的话会让代码不能向量化执行***，工程上可以采用mask的技巧消除分支
+
+Cuckoo Hash https://www.cnblogs.com/pam-sh/p/16047585.html
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
