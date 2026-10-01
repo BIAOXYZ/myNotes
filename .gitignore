@@ -149,7 +149,7 @@ fabric.properties
 # from https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
 ##################################################
 .vscode/*
-!.vscode/settings.json
+# !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
